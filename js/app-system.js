@@ -3930,6 +3930,17 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.83', date: 'September 2026', title: 'Volume sweep, Challenges round 1 — 162 cards, ten new decks', audience: 'dev',
+    items: [
+      'The seven packs where Challenges needed a decision rather than just filling. All seven now stand at the spec: <strong>5 decks, 40 cards</strong>.',
+      '<strong>Role Based Humour got its five decks back.</strong> They are built from the pack\'s own Single Strategy inputs, and the pack made it easy: all seven roles answer the same eleven ordinary lines, so grouping those gives the categories — <em>Something Small Has Gone Wrong</em>, <em>They Are Complaining About Something</em>, <em>There Is Work Coming</em>, <em>Something Has Run Out</em>, <em>They Have Suggested Something</em>. The two opposite roles, Super Generous and Super Stingy, share the shortage deck, exactly as the Collections deck <em>Generous or Stingy</em> already does.',
+      '<strong>Show Understanding — Pt. 2</strong> got the three decks approved in round 9 — <em>A Long Account Has Ended</em>, <em>You Might Have It Wrong</em>, <em>Two Things That Belong Together</em> — and <em>You Agreed With Something You Do Not Believe</em> became <strong>They Are Upset About a Principle</strong>, a situation rather than a mistake, with a new description to match.',
+      '<strong>Setup Statement</strong> gained <em>Everyone Already Knows Each Other</em>. Its four existing decks are all about the other person being difficult; its inputs are full of arriving somewhere the group is already formed, and no deck covered it.',
+      '<strong>Giving Examples</strong> gained <em>They Want Proof, Not a Story</em>, replacing the lifted <em>Too Many Examples</em>.',
+      'The three strategies from pass 0 took their places: <em>Where Your Knowledge Ends</em> in two Explain Things 2 decks, <em>Ask for Time</em> in three Receiving Feedback decks, and <em>Say What Was Not Okay</em> in three Validation decks — <strong>deliberately not in <em>You Think They Are Wrong</em></strong>, where the pack\'s own rule says you should not say it.',
+    ],
+  },
+  {
     version: 'v1.28.82', date: 'September 2026', title: 'Volume sweep, pass 0 — three new strategies', audience: 'dev',
     items: [
       'The volume sweep opens with the three strategies the name batches asked for, because a new strategy adds cards to Single Strategy, Mindset and Memorize at once &mdash; built later, parts of those passes would be rewritten.',

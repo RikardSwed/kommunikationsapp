@@ -383,6 +383,10 @@ const challengesCollections = {
         { q: "They keep giving short, closed replies.", a: "\"No pressure to chat, I'm bad at this too. I've just started running — do you do anything to unwind?\" [Action Setup]", guideBack: "What you're doing, then theirs", bundle: 'pro' },
         { q: "You opened, they answered, and it's gone quiet again.", a: "\"I came from work and my brain's fried. Where are you coming from?\" [Arrival Setup]", guideBack: "Your run-up, then theirs", bundle: 'pro' },
         { q: "Every question gets a \"yeah\" and nothing more.", a: "\"I'll make it easy — I'm here for the free coffee, honestly. What about you?\" [Purpose Setup]", guideBack: "Your reason, then theirs", bundle: 'pro' },
+        { q: "Your third attempt has got three words back.", a: "\"I'll stop asking questions — I'm here because a friend made me. How about you?\" [Purpose Setup]", guideBack: "Your reason, then theirs", bundle: 'pro' },
+        { q: "They give short answers but have not walked away.", a: "\"I'm halfway through a house move, so my conversation is patchy. What's your week been?\" [Action Setup]", guideBack: "What you're doing, then theirs", bundle: 'pro' },
+        { q: "A closed reply and then a long pause.", a: "\"I got here about a minute ago and I'm still catching up. Been here long?\" [Arrival Setup]", guideBack: "Your run-up, then theirs", bundle: 'pro' },
+        { q: "You cannot tell whether they want to talk at all.", a: "\"I'm happy to stand here quietly too, honestly. It's been a long day. You?\" [Feeling Setup]", guideBack: "How you are, then how they are", bundle: 'pro' },
       ]
     },
     {
@@ -394,6 +398,11 @@ const challengesCollections = {
         { q: "The whole room feels flat and low-energy.", a: "\"Everyone looks how I feel right now, honestly. Long week for you too?\" [Feeling Setup]", guideBack: "How you are, then how they are", bundle: 'pro' },
         { q: "Nobody's talking and the mood is heavy.", a: "\"I'm running on empty today, not going to lie. How's your day been?\" [Feeling Setup]", guideBack: "How you are, then how they are", bundle: 'pro' },
         { q: "It's early and everyone's half-asleep.", a: "\"I need three more coffees to be a person. You holding up?\" [Feeling Setup]", guideBack: "How you are, then how they are", bundle: 'pro' },
+        { q: "It is the last session of a long week and nobody is speaking.", a: "\"I've got about four words left in me today. How are you doing?\" [Feeling Setup]", guideBack: "How you are, then how they are", bundle: 'pro' },
+        { q: "The group is subdued and you would rather not force cheer.", a: "\"I'm not going to pretend I'm full of energy. Long one for you too?\" [Feeling Setup]", guideBack: "How you are, then how they are", bundle: 'pro' },
+        { q: "Everyone is quiet and you have come straight from something heavy.", a: "\"I came out of a long meeting and I'm still recovering. Where have you come from?\" [Arrival Setup]", guideBack: "Your run-up, then theirs", bundle: 'pro' },
+        { q: "The mood is low and small talk would feel wrong.", a: "\"Quiet one tonight. Suits me, actually. Are you here most weeks?\" [Opinion Setup]", guideBack: "Your view, then theirs", bundle: 'pro' },
+        { q: "Nobody has spoken for a while and you decide to go first.", a: "\"I'm halfway through a very boring admin day. What have you been up to?\" [Action Setup]", guideBack: "What you're doing, then theirs", bundle: 'pro' },
       ]
     },
     {
@@ -405,6 +414,11 @@ const challengesCollections = {
         { q: "You've frozen and can't think of anything clever.", a: "\"I've got nothing smart to open with, so — I'm here for the free food. You?\" [Purpose Setup]", guideBack: "Your reason, then theirs", bundle: 'pro' },
         { q: "Your mind goes blank the second you should speak.", a: "\"Okay, no clever line — I just came to meet a few people. What brings you?\" [Purpose Setup]", guideBack: "Your reason, then theirs", bundle: 'pro' },
         { q: "You feel pressure to say something impressive.", a: "\"I'll skip the small talk — I'm honestly just here to enjoy this. Are you?\" [Opinion Setup]", guideBack: "Your view, then theirs", bundle: 'pro' },
+        { q: "You have opened your mouth and nothing has come.", a: "\"Right — no clever opener. I'm here because I said I would be. You?\" [Purpose Setup]", guideBack: "Your reason, then theirs", bundle: 'pro' },
+        { q: "You are overthinking the first sentence.", a: "\"I'll just say the boring true thing: I've come from work and I'm hungry. You?\" [Arrival Setup]", guideBack: "Your run-up, then theirs", bundle: 'pro' },
+        { q: "Everyone else seems to have something to say.", a: "\"I've got nothing interesting, I'm afraid. Just finished a long project. What about you?\" [Action Setup]", guideBack: "What you're doing, then theirs", bundle: 'pro' },
+        { q: "You have been silent long enough that it is becoming a thing.", a: "\"I've left that far too long, haven't I. Starting again — how's your evening been?\" [Feeling Setup]", guideBack: "How you are, then how they are", bundle: 'pro' },
+        { q: "You feel you should be impressive and cannot be.", a: "\"I'll skip the impressive bit. This coffee's genuinely good. Have you tried it?\" [Opinion Setup]", guideBack: "Your view, then theirs", bundle: 'pro' },
       ]
     },
     {
@@ -416,6 +430,27 @@ const challengesCollections = {
         { q: "The person is clearly distracted by their phone.", a: "\"I'll compete with the phone — I just got back from Portugal. Been anywhere good lately?\" [Arrival Setup]", guideBack: "Your run-up, then theirs", bundle: 'pro' },
         { q: "They keep glancing around the room.", a: "\"Busy in here, right? I nearly didn't find a seat. Where did you come in from?\" [Arrival Setup]", guideBack: "Your run-up, then theirs", bundle: 'pro' },
         { q: "They seem only half in the conversation.", a: "\"I'll be quick and interesting, promise — I've just started climbing. Do you do anything like that?\" [Action Setup]", guideBack: "What you're doing, then theirs", bundle: 'pro' },
+        { q: "They are half-watching something across the room.", a: "\"Something interesting over there? I've just got in and I've missed all of it.\" [Arrival Setup]", guideBack: "Your run-up, then theirs", bundle: 'pro' },
+        { q: "Their phone keeps lighting up.", a: "\"I'll be quick, then — I've been sorting a broken boiler all day. You had a better one?\" [Action Setup]", guideBack: "What you're doing, then theirs", bundle: 'pro' },
+        { q: "They answer but are clearly somewhere else.", a: "\"You look like you've got a lot on. I've had that kind of week too.\" [Feeling Setup]", guideBack: "How you are, then how they are", bundle: 'pro' },
+        { q: "They keep checking the door.", a: "\"Waiting for someone? I came on my own and I'm slightly regretting it.\" [Purpose Setup]", guideBack: "Your reason, then theirs", bundle: 'pro' },
+        { q: "You are competing with a room full of noise.", a: "\"It's loud in here, isn't it. I nearly didn't come. Are you glad you did?\" [Opinion Setup]", guideBack: "Your view, then theirs", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Everyone Already Knows Each Other",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You have arrived somewhere the group is already formed — a club, a class, a party where you know the host and nobody else. Nobody is being difficult; they simply have each other and you have nobody yet.\n\nWhat it usually looks like:\n\n• It is your first time and everyone else's fifth.\n• You know one person and they are busy.\n• People are standing in twos and threes with their backs half-turned.\n\nThree ways through:\n1. Purpose Setup — say why you came, then ask.\n2. Arrival Setup — say what brought you here, then ask.\n3. Opinion Setup — a small view about the place, then ask.\n\nMindset: being new is information, not a weakness. Saying it out loud is quicker than waiting to stop being new.",
+      inputs: [
+        { q: "First time at a hobby club where everyone seems to know each other.", a: "\"It's my first one of these, so I'm working out how it goes. Have you been coming long?\" [Purpose Setup]", guideBack: "Your reason, then theirs", bundle: 'pro' },
+        { q: "You arrive at a party and only know the host, who is busy.", a: "\"I came with Sara and she's vanished into the kitchen. How do you know her?\" [Arrival Setup]", guideBack: "Your run-up, then theirs", bundle: 'pro' },
+        { q: "Everyone at the language evening is already in pairs.", a: "\"I came to practise and I've been quiet for ten minutes. Shall we?\" [Purpose Setup]", guideBack: "Your reason, then theirs", bundle: 'pro' },
+        { q: "A networking event where people are standing in tight groups.", a: "\"I came straight from work and I don't know a soul here. What about you?\" [Arrival Setup]", guideBack: "Your run-up, then theirs", bundle: 'pro' },
+        { q: "You joined a group class and everyone greets each other by name.", a: "\"I'm the new one. I picked this because I needed something out of the house. You?\" [Purpose Setup]", guideBack: "Your reason, then theirs", bundle: 'pro' },
+        { q: "A book club you were invited to, where the others have years of history.", a: "\"I'm three books behind everyone, clearly. How long has this been going?\" [Opinion Setup]", guideBack: "Your view, then theirs", bundle: 'pro' },
+        { q: "First day and the team already has its rhythm.", a: "\"I've come from a much smaller place, so this is all new. How long have you been here?\" [Arrival Setup]", guideBack: "Your run-up, then theirs", bundle: 'pro' },
+        { q: "A shared table where everyone else already seems to be chatting.", a: "\"Nice spot, this. I only found it last week — do you come in often?\" [Opinion Setup]", guideBack: "Your view, then theirs", bundle: 'pro' },
       ]
     },
   ],
@@ -960,6 +995,9 @@ const challengesCollections = {
         { q: "You can see the part they have got backwards.", a: "\"With what you knew at the time, that's the obvious read.\" [Acknowledge the Perspective]", guideBack: "Why their choice made sense", bundle: 'pro' },
         { q: "You want to correct the facts before anything else.", a: "\"That sounds genuinely frustrating. Can I ask about one bit of it?\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
         { q: "They ask outright whether you agree.", a: "\"I see it a bit differently. But I can see exactly how you got there.\" [Acknowledge the Perspective]", guideBack: "Why their choice made sense", bundle: 'pro' },
+        { q: "You agree with none of it and they are still upset.", a: "\"I'd have read it differently. Doesn't change that you've had a rotten week.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
+        { q: "You can see exactly where the misunderstanding started.", a: "\"From where you were sitting, that's what it looked like. I can see that.\" [Acknowledge the Perspective]", guideBack: "Why their choice made sense", bundle: 'pro' },
+        { q: "They want you to say the other person was awful.", a: "\"I can't say that. I can say most people would have been annoyed.\" [Normalise the Reaction]", guideBack: "Their reaction, called ordinary", bundle: 'pro' },
       ]
     },
     {
@@ -973,6 +1011,9 @@ const challengesCollections = {
         { q: "You are about to say something vague and warm.", a: "\"Your frustration is completely understandable.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
         { q: "Both people in a dispute think you are on their side.", a: "\"I think both of you had fair reasons. That's not me dodging it.\" [Acknowledge the Perspective]", guideBack: "Why their choice made sense", bundle: 'pro' },
         { q: "They are building your comment into a case.", a: "\"I meant the feeling, not the verdict. Those are different.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
+        { q: "They repeat your words back with more force than you used.", a: "\"I said it made sense that you were annoyed. That's what I'm standing behind.\" [Acknowledge the Perspective]", guideBack: "Why their choice made sense", bundle: 'pro' },
+        { q: "You want to validate without joining the campaign.", a: "\"Your reaction I understand completely. What to do about it is yours, not mine.\" [Normalise the Reaction]", guideBack: "Their reaction, called ordinary", bundle: 'pro' },
+        { q: "They are about to tell somebody else that you agreed.", a: "\"Careful quoting me. I said the feeling was reasonable, not that he was wrong.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
       ]
     },
     {
@@ -986,6 +1027,9 @@ const challengesCollections = {
         { q: "You feel the pull to agree with whoever is in front of you.", a: "\"Your reasoning holds up. I'd say the same about hers, for what it's worth.\" [Acknowledge the Perspective]", guideBack: "Why their choice made sense", bundle: 'pro' },
         { q: "They push you for a verdict on the other person.", a: "\"I'm not going to referee it. What you felt was completely reasonable, though.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
         { q: "They say: \"So you're on her side.\"", a: "\"I'm not on a side. I think you were both reacting in ways that make sense.\" [Acknowledge the Perspective]", guideBack: "Why their choice made sense", bundle: 'pro' },
+        { q: "They ask outright whether the other person was out of order.", a: "\"One bit of it, yes — deciding it without telling you wasn't fair.\" [Say What Was Not Okay]", guideBack: "The specific thing that should not have happened", bundle: 'pro' },
+        { q: "Both of them are waiting to hear what you think.", a: "\"I'm not refereeing it. You were both left guessing, and that's the real mess.\" [Normalise the Reaction]", guideBack: "Their reaction, called ordinary", bundle: 'pro' },
+        { q: "You do not know enough to take a side.", a: "\"I've only heard one half. What I can say is that it clearly knocked you.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
       ]
     },
     {
@@ -999,6 +1043,9 @@ const challengesCollections = {
         { q: "Your response could have been said to anyone.", a: "\"The bit that would get me is finding out from the client.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
         { q: "They visibly deflate after something you said.", a: "\"Sorry, that was a bit generic. What actually happened with the meeting?\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
         { q: "You do not know the details well enough to be specific.", a: "\"Tell me the part that's bothering you most and I'll shut up.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
+        { q: "Your last three responses could have been said to anybody.", a: "\"Let me be specific: being told after the others was the part that wasn't on.\" [Say What Was Not Okay]", guideBack: "The specific thing that should not have happened", bundle: 'pro' },
+        { q: "You are reaching for something warm and general.", a: "\"I'll skip the nice version. Anyone would be furious about that.\" [Normalise the Reaction]", guideBack: "Their reaction, called ordinary", bundle: 'pro' },
+        { q: "They have heard the same reassurance from three people.", a: "\"I'm not going to tell you it'll be fine. It's a bad situation.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
       ]
     },
     {
@@ -1012,6 +1059,9 @@ const challengesCollections = {
         { q: "They say: \"You're only saying that.\"", a: "\"What would you want me to see here?\" [Acknowledge the Perspective]", guideBack: "Why their choice made sense", bundle: 'pro' },
         { q: "Your reflection of the feeling landed wrong.", a: "\"Wrong word, maybe. Whatever it is, it's been sitting with you all week.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
         { q: "They brush off a normalising line.", a: "\"Okay, I'll stop saying it. Your reasons for being this annoyed are sound ones.\" [Acknowledge the Perspective]", guideBack: "Why their choice made sense", bundle: 'pro' },
+        { q: "They say your sympathy is empty.", a: "\"Then here's the blunt version: what they did wasn't okay.\" [Say What Was Not Okay]", guideBack: "The specific thing that should not have happened", bundle: 'pro' },
+        { q: "They reject the feeling word you offered.", a: "\"Wrong word, then. You pick it — I'm not going to argue about your own week.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
+        { q: "They say you cannot possibly understand.", a: "\"Probably not all of it. What I can see is that anyone would be sitting here angry.\" [Normalise the Reaction]", guideBack: "Their reaction, called ordinary", bundle: 'pro' },
       ]
     },
   ],
@@ -1258,6 +1308,9 @@ const challengesCollections = {
         { q: "They say your example is nothing like the current situation.", a: "\"Smaller version, then: you send one message and get three different answers.\" [The Everyday Example]", guideBack: "Common experience, not yours specifically", bundle: 'pro' },
         { q: "You realise the example proves more than you meant.", a: "\"That proves more than I meant. Honestly it's just: I lost an afternoon to it in March.\" [From Your Own Experience]", guideBack: "A thing that actually happened to you", bundle: 'pro' },
         { q: "The example has made someone anxious.", a: "\"I overdid that. It's more like missing a bus — annoying, not a crisis.\" [The Everyday Example]", guideBack: "Common experience, not yours specifically", bundle: 'pro' },
+        { q: "Your example has more drama in it than the point does.", a: "\"Forget the drama. It's the same thing as a parcel that says 'sometime this week'.\" [The Everyday Example]", guideBack: "Common experience, not yours specifically", bundle: 'pro' },
+        { q: "They have taken your worst case as your claim.", a: "\"I'm not saying that'll happen. I am saying I lost a morning to it once.\" [From Your Own Experience]", guideBack: "A thing that actually happened to you", bundle: 'pro' },
+        { q: "You want to keep the point and lose the scale.", a: "\"Smaller: imagine one person books the room twice. That's all this is.\" [The Imagined Case]", guideBack: "A situation to try the idea in", bundle: 'pro' },
       ]
     },
     {
@@ -1271,6 +1324,9 @@ const challengesCollections = {
         { q: "You are three sentences into explaining your own example.", a: "\"Bad example. Mine's simpler: I once rewrote a page because nobody told me it existed.\" [From Your Own Experience]", guideBack: "A thing that actually happened to you", bundle: 'pro' },
         { q: "They say \"that's never happened to me\".", a: "\"Fair enough. Then imagine it did — what would you want to be in place?\" [The Imagined Case]", guideBack: "A situation to try the idea in", bundle: 'pro' },
         { q: "They say your comparison does not fit their situation.", a: "\"Try it as a hypothetical instead: suppose nobody told you the room had moved. What then?\" [The Imagined Case]", guideBack: "A situation to try the idea in", bundle: 'pro' },
+        { q: "Your example is from a job they have never had.", a: "\"Out of work, then: it's like a group chat where the plan changes and nobody says.\" [The Everyday Example]", guideBack: "Common experience, not yours specifically", bundle: 'pro' },
+        { q: "They are too young for the reference.", a: "\"Before your time, that one. Same idea as autocorrect confidently getting it wrong.\" [The Shared Example]", guideBack: "A reference you both recognise", bundle: 'pro' },
+        { q: "The example needs three sentences of setup.", a: "\"Too much setup. Mine's shorter: I turned up to a meeting that had moved.\" [From Your Own Experience]", guideBack: "A thing that actually happened to you", bundle: 'pro' },
       ]
     },
     {
@@ -1284,6 +1340,9 @@ const challengesCollections = {
         { q: "Someone repeats your uncertain figure as fact.", a: "\"Careful with that one — it was my rough guess, not a real number.\" [Numbers and Evidence]", guideBack: "A figure, with its uncertainty attached", bundle: 'pro' },
         { q: "Your figure is old.", a: "\"That's last year's. The direction's probably right, the size might not be.\" [Numbers and Evidence]", guideBack: "A figure, with its uncertainty attached", bundle: 'pro' },
         { q: "They ask you to be precise and you cannot.", a: "\"I can be precise by Thursday. Right now I'd only be inventing.\" [Numbers and Evidence]", guideBack: "A figure, with its uncertainty attached", bundle: 'pro' },
+        { q: "You are about to round a figure in your own favour.", a: "\"Nearly half — no, I'll be honest, it was closer to a third.\" [Numbers and Evidence]", guideBack: "A figure, with its uncertainty attached", bundle: 'pro' },
+        { q: "The number is right but the sample was tiny.", a: "\"Eight out of ten. Out of ten. That's a very small ten.\" [Numbers and Evidence]", guideBack: "A figure, with its uncertainty attached", bundle: 'pro' },
+        { q: "They ask what the figure actually measures.", a: "\"Good question, and I'd want to check before I answered it.\" [Numbers and Evidence]", guideBack: "A figure, with its uncertainty attached", bundle: 'pro' },
       ]
     },
     {
@@ -1297,6 +1356,25 @@ const challengesCollections = {
         { q: "Someone else brings up the example about the person present.", a: "\"Take it as a hypothetical. Say somebody sends it without checking — what happens then?\" [The Imagined Case]", guideBack: "A situation to try the idea in", bundle: 'pro' },
         { q: "You want to use their example and they are right there.", a: "\"I'll use my own instead — I sent a half-finished draft to a client once.\" [From Your Own Experience]", guideBack: "A thing that actually happened to you", bundle: 'pro' },
         { q: "You have already said it and they have gone quiet.", a: "\"That came out as a dig, sorry. I'll use mine: I did the same thing in March.\" [From Your Own Experience]", guideBack: "A thing that actually happened to you", bundle: 'pro' },
+        { q: "The person concerned has just walked in.", a: "\"I'll switch mine out — say somebody sends the wrong draft. What happens then?\" [The Imagined Case]", guideBack: "A situation to try the idea in", bundle: 'pro' },
+        { q: "Everyone knows who you mean even without the name.", a: "\"Not naming anyone isn't helping here, is it. I'll use mine: I did it in March.\" [From Your Own Experience]", guideBack: "A thing that actually happened to you", bundle: 'pro' },
+        { q: "The best example in the room is about somebody in the room.", a: "\"I'll take the good one off the table. Picture a form that goes out unchecked — same thing.\" [The Imagined Case]", guideBack: "A situation to try the idea in", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "They Want Proof, Not a Story",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You gave an example and it did not settle anything. They are not disputing the story — they are asking whether it means anything. How often, how many, says who. That is a fair question, and the honest answer is usually smaller than the one you want to give.\n\nWhat it usually looks like:\n\n• \"Is it really that often?\"\n• \"That's one case.\"\n• \"Where's that from?\"\n\nThree ways through:\n1. Numbers and Evidence — a figure, with its uncertainty attached.\n2. From Your Own Experience — one case, offered as one case.\n3. The Shared Example — something you both already recognise.\n\nMindset: an example proves a thing is possible, not that it is common. Say which of the two you are claiming.",
+      inputs: [
+        { q: "They ask how often it actually happens.", a: "\"I counted for a fortnight: nine days out of ten. Small sample, but it was consistent.\" [Numbers and Evidence]", guideBack: "A figure, with its uncertainty attached", bundle: 'pro' },
+        { q: "They say your example is just one case.", a: "\"It is one case. It's mine, and it cost me a day, which is why I keep bringing it up.\" [From Your Own Experience]", guideBack: "A thing that actually happened to you", bundle: 'pro' },
+        { q: "They want a source and you do not have one.", a: "\"I can't source that. What I can tell you is what happened here in March.\" [From Your Own Experience]", guideBack: "A thing that actually happened to you", bundle: 'pro' },
+        { q: "They ask whether it is really a pattern.", a: "\"Two isn't a pattern, agreed. Three in six weeks is starting to look like one.\" [Numbers and Evidence]", guideBack: "A figure, with its uncertainty attached", bundle: 'pro' },
+        { q: "Your story has been waved away as an anecdote.", a: "\"Fair. Then take cookie banners — everyone clicks accept without reading. Same mechanism.\" [The Shared Example]", guideBack: "A reference you both recognise", bundle: 'pro' },
+        { q: "They ask for a number and you only have a feeling.", a: "\"I don't have a number. I'd be inventing one, and you'd quote it back at me.\" [Numbers and Evidence]", guideBack: "A figure, with its uncertainty attached", bundle: 'pro' },
+        { q: "They say it would not happen to them.", a: "\"Maybe not. It happened to me somewhere with better systems than this.\" [From Your Own Experience]", guideBack: "A thing that actually happened to you", bundle: 'pro' },
+        { q: "They want to know how big the problem actually is.", a: "\"Tens of people, not hundreds. Small enough to fix by hand, big enough to notice.\" [Numbers and Evidence]", guideBack: "A figure, with its uncertainty attached", bundle: 'pro' },
       ]
     },
   ],
@@ -1610,6 +1688,9 @@ const challengesCollections = {
         { q: "They say: \"You didn't tell anyone.\" You told them on Thursday.", a: "\"I did send it, but clearly it didn't reach you — that's the same problem.\" [Reflect Openly]", guideBack: "Where you actually stand, uncertainty included", bundle: 'pro' },
         { q: "A criticism includes a detail that is simply wrong.", a: "\"That's not quite how I remember it, but I want to hear the rest.\" [Reflect Openly]", guideBack: "Where you actually stand, uncertainty included", bundle: 'pro' },
         { q: "You are told you were dismissive when you thought you were being efficient.", a: "\"I see it differently, but I'd rather understand than argue about it.\" [Reflect Openly]", guideBack: "Where you actually stand, uncertainty included", bundle: 'pro' },
+        { q: "You can feel the correction forming and it will not land well.", a: "\"Let me not answer that now. Can I come back to you tomorrow?\" [Ask for Time]", guideBack: "A pause, with a return time on it", bundle: 'pro' },
+        { q: "The criticism is half right and you only want to argue the wrong half.", a: "\"The half that's right I'll take. The rest I'd want to talk through properly.\" [Reflect Openly]", guideBack: "Where you actually stand, uncertainty included", bundle: 'pro' },
+        { q: "They have described your intention wrongly.", a: "\"That wasn't what I meant by it. I can see how it read that way, though.\" [See Their Side]", guideBack: "Their view, put in your words", bundle: 'pro' },
       ]
     },
     {
@@ -1623,6 +1704,9 @@ const challengesCollections = {
         { q: "Someone criticises your idea in a group chat everyone reads.", a: "\"Good points. I'll work through them and come back.\" [Look Ahead]", guideBack: "A change, or something you'll consider", bundle: 'pro' },
         { q: "A colleague corrects you publicly in a meeting.", a: "\"Thanks — noted.\" [The Short Response]", guideBack: "The whole reply, in a sentence", bundle: 'pro' },
         { q: "You are told off in front of people and want to explain yourself.", a: "\"Let's go through it properly after this.\" [Look Ahead]", guideBack: "A change, or something you'll consider", bundle: 'pro' },
+        { q: "You are criticised publicly and want to respond in full.", a: "\"Noted. Can we go through it properly after?\" [Ask for Time]", guideBack: "A pause, with a return time on it", bundle: 'pro' },
+        { q: "The room has gone quiet and everyone is waiting.", a: "\"Fair point. I'll fix the numbers before it goes out.\" [The Short Response]", guideBack: "The whole reply, in a sentence", bundle: 'pro' },
+        { q: "Somebody criticises you in a thread everybody reads.", a: "\"Good catch — I'll sort it and repost.\" [Look Ahead]", guideBack: "A change, or something you'll consider", bundle: 'pro' },
       ]
     },
     {
@@ -1636,6 +1720,9 @@ const challengesCollections = {
         { q: "They say: \"People have been saying things.\"", a: "\"That's hard to do anything with as it stands.\" [Reflect Openly]", guideBack: "Where you actually stand, uncertainty included", bundle: 'pro' },
         { q: "A colleague says your tone was wrong but will not say where.", a: "\"Next time it happens, will you flag the actual line?\" [Look Ahead]", guideBack: "A change, or something you'll consider", bundle: 'pro' },
         { q: "You get a general complaint with no example attached.", a: "\"Give me one example and I'll know what to change.\" [Look Ahead]", guideBack: "A change, or something you'll consider", bundle: 'pro' },
+        { q: "You are told it just isn't working, with nothing else.", a: "\"I'll go back over the last two and see what you might mean. Tell me if I'm miles off.\" [Look Ahead]", guideBack: "A change, or something you'll consider", bundle: 'pro' },
+        { q: "They say a few people have mentioned it.", a: "\"I don't know what to do with that yet. I'd want something concrete before I change anything.\" [Reflect Openly]", guideBack: "Where you actually stand, uncertainty included", bundle: 'pro' },
+        { q: "The feedback is a feeling rather than a fact.", a: "\"So it's more about how it comes across than what's in it. Have I got that right?\" [See Their Side]", guideBack: "Their view, put in your words", bundle: 'pro' },
       ]
     },
     {
@@ -1649,6 +1736,9 @@ const challengesCollections = {
         { q: "You feel yourself starting to over-apologise.", a: "\"Thank you for saying it. I'll think about it properly.\" [Acknowledge the Feedback]", guideBack: "Thanks, or an acceptance that it was fair to say", bundle: 'pro' },
         { q: "The criticism is something a previous manager said too.", a: "\"It's the second time I've heard that, which tells me something.\" [Reflect Openly]", guideBack: "Where you actually stand, uncertainty included", bundle: 'pro' },
         { q: "You want to go cold and end the conversation.", a: "\"I'm taking it in, I'm just quiet. Give me a second.\" [Reflect Openly]", guideBack: "Where you actually stand, uncertainty included", bundle: 'pro' },
+        { q: "They have named the thing you are most defensive about.", a: "\"That one's close to home. Give me till tomorrow and I'll have something useful to say.\" [Ask for Time]", guideBack: "A pause, with a return time on it", bundle: 'pro' },
+        { q: "You are about to explain yourself at length.", a: "\"I want to sit with that rather than defend it.\" [Reflect Openly]", guideBack: "Where you actually stand, uncertainty included", bundle: 'pro' },
+        { q: "The comment was kind and it still stung.", a: "\"Thanks for saying it kindly. It's landed anyway, which probably means it's true.\" [Acknowledge the Feedback]", guideBack: "Thanks, or an acceptance that it was fair to say", bundle: 'pro' },
       ]
     },
     {
@@ -1662,6 +1752,9 @@ const challengesCollections = {
         { q: "The same lateness comes up for the third time.", a: "\"It's a pattern, not a one-off. I can hear that.\" [Reflect Openly]", guideBack: "Where you actually stand, uncertainty included", bundle: 'pro' },
         { q: "They sound tired of having to raise it.", a: "\"I'll put it in the calendar rather than rely on remembering.\" [Look Ahead]", guideBack: "A change, or something you'll consider", bundle: 'pro' },
         { q: "You want to explain why this time was different.", a: "\"There's a reason, but it's the third reason, so it doesn't count for much.\" [Reflect Openly]", guideBack: "Where you actually stand, uncertainty included", bundle: 'pro' },
+        { q: "It is the third time and you have nothing new to say.", a: "\"You're right that I haven't changed it. This time it goes in the calendar.\" [Look Ahead]", guideBack: "A change, or something you'll consider", bundle: 'pro' },
+        { q: "They sound resigned rather than annoyed.", a: "\"You've stopped expecting it to change. That's fair, given the record.\" [See Their Side]", guideBack: "Their view, put in your words", bundle: 'pro' },
+        { q: "You want to list the reasons it keeps happening.", a: "\"The reasons don't help you. What would is me actually doing it.\" [Reflect Openly]", guideBack: "Where you actually stand, uncertainty included", bundle: 'pro' },
       ]
     },
   ],
@@ -3283,19 +3376,73 @@ const challengesCollections = {
         { q: "Your story raised a question worth asking them.", a: "\"Mine ended badly, which is why I'm asking — is yours still fixable?\" [Share and Return]", guideBack: "Your bit, then the floor back to them", bundle: 'pro' },
         { q: "You realise you have matched every point with one of your own.", a: "\"I keep answering with my own version. Tell me about yours properly.\" [Share and Return]", guideBack: "Your bit, then the floor back to them", bundle: 'pro' },
         { q: "You want to say more and probably should not.", a: "\"There's more but it's not the point. Yours is the one with a decision in it.\" [Share and Return]", guideBack: "Your bit, then the floor back to them", bundle: 'pro' },
+        { q: "You told your story well and it landed better than theirs.", a: "\"Mine got the laugh and yours is the one that matters. Go on.\" [Share and Return]", guideBack: "Your bit, then the floor back to them", bundle: 'pro' },
+        { q: "You started answering a question they never asked.", a: "\"That was me answering myself. What did you actually want to know?\" [Share and Return]", guideBack: "Your bit, then the floor back to them", bundle: 'pro' },
+        { q: "You notice they have stopped offering anything.", a: "\"I've been doing the talking for ten minutes. Your turn, properly.\" [Share and Return]", guideBack: "Your bit, then the floor back to them", bundle: 'pro' },
       ]
     },
     {
-      name: "You Agreed With Something You Do Not Believe",
+      name: "They Are Upset About a Principle",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "You named a shared value in the moment because it was the warm thing to say, and you do not actually hold it. This gets found out, usually in the next conversation, and it costs more than the disagreement would have.\n\nWhat it usually looks like:\n\n• You agreed quickly and slightly too warmly.\n• You are hoping the subject does not come back.\n• You would say something different to somebody else.\n\nTwo ways through:\n1. Separate the value from the conclusion — you can often agree with one honestly.\n2. Say the honest half — \"I'd have minded too, though I'd probably have done nothing about it.\"\n\nMindset: agree with what is true. There is nearly always a true version of agreement available, and it is worth more than the generous one.",
+      description: "They are not upset about the outcome, they are upset that a principle was quietly dropped — a promise, a rule, an ordinary courtesy. The thing itself is often small and the principle is not.\n\nWhat it usually looks like:\n\n• A promise was let go without anyone saying so.\n• They found out afterwards rather than at the time.\n• They are angrier than the size of the thing explains.\n\nThree ways through:\n1. Shared Value — agree with the principle, whatever you think of the outcome.\n2. Shared Feeling — you have been on that side of it too.\n3. Check Your Version — work out which part of it they actually mind.\n\nMindset: you can hold the principle with them without signing up to what they plan to do about it.",
       inputs: [
         { q: "You agreed with a principle you do not actually hold.", a: "\"Honestly, I'd have let that one go. What I do share is not wanting to be taken for granted.\" [Shared Value]", guideBack: "The principle you both hold", bundle: 'pro' },
         { q: "You agree with the value but not the conclusion.", a: "\"I'm with you on the principle. Whether leaving is the answer, I'm less sure.\" [Shared Value]", guideBack: "The principle you both hold", bundle: 'pro' },
         { q: "You agreed too quickly to move the conversation on.", a: "\"I said that a bit fast. What I do agree with is the being-told part.\" [Shared Value]", guideBack: "The principle you both hold", bundle: 'pro' },
         { q: "You would say something different to somebody else.", a: "\"I'll say the awkward version: I think it was careless, not malicious. But being told matters to me too.\" [Shared Value]", guideBack: "The principle you both hold", bundle: 'pro' },
         { q: "They are looking for agreement you cannot give.", a: "\"I can't tell you they were wrong. I can tell you I'd have been just as annoyed.\" [Shared Feeling]", guideBack: "The same emotion, from your side", bundle: 'pro' },
+        { q: "They are angry that nobody told them, not about the decision.", a: "\"It's the being told afterwards. That matters to me too.\" [Shared Value]", guideBack: "The principle you both hold", bundle: 'pro' },
+        { q: "A promise was quietly dropped and they noticed.", a: "\"Saying you'll do something and then not saying you won't — yes, that bothers me as well.\" [Shared Value]", guideBack: "The principle you both hold", bundle: 'pro' },
+        { q: "You are not sure which part of it they mind most.", a: "\"Is it the change, or that it happened without you? I'd guess the second.\" [Check Your Version]", guideBack: "Your reading, offered to be corrected", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Long Account Has Ended",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "They have talked for a while and stopped, and the silence is yours to fill. The temptation is to answer the last thing they said, which is almost always the least important part of it.\n\nWhat it usually looks like:\n\n• They have finished and are waiting for something.\n• The account had four or five parts and you are holding two.\n• The last sentence was small and the middle was not.\n\nThree ways through:\n1. Sum It Up — the main points, in order, short.\n2. Check Your Version — say it back as a question and let them fix it.\n3. Shared Feeling — when the account was really about a feeling, answer that instead.\n\nMindset: the first thing you say after a long account tells them whether it was worth telling.",
+      inputs: [
+        { q: "They have talked for five minutes and stopped.", a: "\"So: the rota changed, nobody told you, and now you're covering Saturdays.\" [Sum It Up]", guideBack: "Their whole account, in short", bundle: 'pro' },
+        { q: "You have the shape of it but not the details.", a: "\"I've got the main thing — it's the not being asked, more than the hours. Yes?\" [Check Your Version]", guideBack: "Your reading, offered to be corrected", bundle: 'pro' },
+        { q: "The account ended on something small.", a: "\"The last bit's the least of it, isn't it. The real thing is being left out of the decision.\" [Check Your Version]", guideBack: "Your reading, offered to be corrected", bundle: 'pro' },
+        { q: "They finished and looked straight at you.", a: "\"That's a lot for one week. Three things went wrong and two of them weren't yours.\" [Sum It Up]", guideBack: "Their whole account, in short", bundle: 'pro' },
+        { q: "The whole account was really about how it felt.", a: "\"I know that one. Being the last to find out is a horrible feeling.\" [Shared Feeling]", guideBack: "The same emotion, from your side", bundle: 'pro' },
+        { q: "You want to check before you respond to any of it.", a: "\"Before I say anything — have I got the order right? Email first, then the meeting?\" [Check Your Version]", guideBack: "Your reading, offered to be corrected", bundle: 'pro' },
+        { q: "They trailed off rather than finished.", a: "\"So where it leaves you is waiting on him to answer. That's the bit that's stuck.\" [Sum It Up]", guideBack: "Their whole account, in short", bundle: 'pro' },
+        { q: "Your only reaction is about the feeling, not the facts.", a: "\"I've had a version of that. It's the not knowing that gets you, not the outcome.\" [Shared Feeling]", guideBack: "The same emotion, from your side", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "You Might Have It Wrong",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "What they said can be read two ways, or you have already missed once and are about to guess again. This is the situation the pack's first strategy exists for, and the cheapest repair available in a conversation.\n\nWhat it usually looks like:\n\n• Their sentence had two possible meanings.\n• You corrected yourself once already.\n• You are about to answer a version you invented.\n\nThree ways through:\n1. Check Your Version — offer a reading and let them correct it.\n2. Sum It Up — say the order back and see whether it holds.\n3. Link to Earlier — use something from before to test the reading.\n\nMindset: a wrong version that is offered costs nothing. A wrong version that is defended costs the rest of the conversation.",
+      inputs: [
+        { q: "Their sentence could mean two quite different things.", a: "\"Do you mean she said it to you, or about you? Those are different.\" [Check Your Version]", guideBack: "Your reading, offered to be corrected", bundle: 'pro' },
+        { q: "You got it wrong once already in this conversation.", a: "\"Last try: it's the timing, not the work itself. Is that closer?\" [Check Your Version]", guideBack: "Your reading, offered to be corrected", bundle: 'pro' },
+        { q: "You are about to answer a version you made up.", a: "\"Before I go off on one — is this about the money, or about the notice?\" [Check Your Version]", guideBack: "Your reading, offered to be corrected", bundle: 'pro' },
+        { q: "They said it was fine in a way that was not fine.", a: "\"I'll say it back and you tell me how wrong I am: it's not fine, it's just finished.\" [Check Your Version]", guideBack: "Your reading, offered to be corrected", bundle: 'pro' },
+        { q: "You have the pieces but maybe not the order.", a: "\"So he asked, you said no, and it got booked anyway. That order?\" [Sum It Up]", guideBack: "Their whole account, in short", bundle: 'pro' },
+        { q: "Something they said earlier suggests you have this wrong.", a: "\"You said last week you didn't mind the shifts. Has that changed, or am I misreading it?\" [Link to Earlier]", guideBack: "Now and earlier, tied together", bundle: 'pro' },
+        { q: "They corrected you and moved straight on.", a: "\"Hang on — so it was both of them, not just her? That's the part I had wrong.\" [Check Your Version]", guideBack: "Your reading, offered to be corrected", bundle: 'pro' },
+        { q: "You cannot tell whether they want advice or an ear.", a: "\"Checking before I get it wrong — do you want me to think about it, or just listen?\" [Check Your Version]", guideBack: "Your reading, offered to be corrected", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Two Things That Belong Together",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Two things they have said at different moments are connected, and they may not have put them side by side yet. Linking them is what shows you have followed the whole conversation rather than the last minute of it.\n\nWhat it usually looks like:\n\n• Something now echoes something from earlier.\n• Two things they said do not sit together.\n• A detail from last week explains this week.\n\nThree ways through:\n1. Link to Earlier — join the two out loud.\n2. Check Your Version — offer the link as a question, in case it is not one.\n3. Sum It Up — name the thread that runs through all of it.\n\nMindset: a link is a guess about their life. Offer it, do not announce it.",
+      inputs: [
+        { q: "They mention something that echoes what they said ten minutes ago.", a: "\"That's the second time the handover's come up. Is that the thread here?\" [Link to Earlier]", guideBack: "Now and earlier, tied together", bundle: 'pro' },
+        { q: "Two things they have said do not sit together.", a: "\"You said you were fine with Fridays, and now Fridays are the problem. What changed?\" [Link to Earlier]", guideBack: "Now and earlier, tied together", bundle: 'pro' },
+        { q: "Something from last week explains this week.", a: "\"This is the same shape as the rota, isn't it. Decided, then announced.\" [Link to Earlier]", guideBack: "Now and earlier, tied together", bundle: 'pro' },
+        { q: "They have given you two complaints that share a cause.", a: "\"Both of those are about being told afterwards. That's one problem, not two.\" [Link to Earlier]", guideBack: "Now and earlier, tied together", bundle: 'pro' },
+        { q: "You can see the link but are not sure it is real.", a: "\"I might be joining things that don't join — is this the same as the move last year?\" [Check Your Version]", guideBack: "Your reading, offered to be corrected", bundle: 'pro' },
+        { q: "A word they dropped in passing matters more than they think.", a: "\"You said 'again' back there. How many times has this happened?\" [Link to Earlier]", guideBack: "Now and earlier, tied together", bundle: 'pro' },
+        { q: "The account has three parts and one thing connects them.", a: "\"The money, the timing and the email all come back to nobody asking you first.\" [Sum It Up]", guideBack: "Their whole account, in short", bundle: 'pro' },
+        { q: "They have just contradicted something they told you last month.", a: "\"Last month you'd have taken it. Something's shifted — what?\" [Link to Earlier]", guideBack: "Now and earlier, tied together", bundle: 'pro' },
       ]
     },
   ],
@@ -3624,6 +3771,9 @@ const challengesCollections = {
         { q: "They have asked the same question twice.", a: "\"I'm answering the wrong bit. Which part is unclear — what it does, or whether you'd want one?\" [The W They Need]", guideBack: "The answer they're really after, or a check", bundle: 'pro' },
         { q: "You are about to repeat the definition more slowly.", a: "\"Let me come at it differently: it's for people with more than one calendar.\" [The W They Need]", guideBack: "The answer they're really after, or a check", bundle: 'pro' },
         { q: "They asked in a shop, deciding between two.", a: "\"For what you'd use it for, they're the same. The difference only matters if you carry it daily.\" [The W They Need]", guideBack: "The answer they're really after, or a check", bundle: 'pro' },
+        { q: "You answered the literal question and kept going past what you know.", a: "\"That's the bit I'm sure of. Why it's set up that way, I couldn't tell you.\" [Where Your Knowledge Ends]", guideBack: "The part you know, and the line after it", bundle: 'pro' },
+        { q: "They ask a follow-up you cannot answer.", a: "\"The first part I can do. The second one you'd need Anna for.\" [Where Your Knowledge Ends]", guideBack: "The part you know, and the line after it", bundle: 'pro' },
+        { q: "You are filling the gap rather than admitting it.", a: "\"I'm guessing now, and it won't sound like it. So: I don't know.\" [Where Your Knowledge Ends]", guideBack: "The part you know, and the line after it", bundle: 'pro' },
       ]
     },
     {
@@ -3637,6 +3787,9 @@ const challengesCollections = {
         { q: "You can hear yourself going on.", a: "\"That's more than you asked for. Do you want the rest or is that plenty?\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
         { q: "You started with the history of the thing.", a: "\"Skip all that — what it does is give every task one name against it.\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
         { q: "Someone asked a small question and got four minutes.", a: "\"Short answer, which I should have led with: yes, and it takes ten seconds.\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
+        { q: "They asked for a summary and you are giving the full version.", a: "\"One sentence, then: it's a shared calendar with reminders. Want the rest?\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
+        { q: "You have three more points and they have stopped nodding.", a: "\"I'll stop there. That's the main thing — ask if you want the detail.\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
+        { q: "You are explaining the second thing before they understood the first.", a: "\"Let me do one at a time. First bit: it replaces the spreadsheet.\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
       ]
     },
     {
@@ -3650,6 +3803,9 @@ const challengesCollections = {
         { q: "You are describing something you love to someone who would not use it.", a: "\"I'm biased. For your setup it'd be solving a problem you don't have.\" [Who It Is For]", guideBack: "Who it suits, and who can skip it", bundle: 'pro' },
         { q: "They ask if they should get one and you are not sure.", a: "\"It depends on one thing — do you carry it daily? If not, no.\" [Who It Is For]", guideBack: "Who it suits, and who can skip it", bundle: 'pro' },
         { q: "Every sentence has been a benefit.", a: "\"Honestly, it's for people who can wait a week before it pays off.\" [Who It Is For]", guideBack: "Who it suits, and who can skip it", bundle: 'pro' },
+        { q: "You have recommended it to somebody who clearly does not need it.", a: "\"Honestly, it's not for you. You'd be paying for a problem you don't have.\" [Who It Is For]", guideBack: "Who it suits, and who can skip it", bundle: 'pro' },
+        { q: "They ask whether everyone on the team should use it.", a: "\"Two of them, probably. The rest can carry on as they are.\" [Who It Is For]", guideBack: "Who it suits, and who can skip it", bundle: 'pro' },
+        { q: "You are selling rather than explaining.", a: "\"Who it's actually for: people who have to hand over often. Is that you?\" [Who It Is For]", guideBack: "Who it suits, and who can skip it", bundle: 'pro' },
       ]
     },
     {
@@ -3663,6 +3819,9 @@ const challengesCollections = {
         { q: "They ask what it's for after a clear description.", a: "\"Fair — it belongs to the booking bit. Everything before that stays the same.\" [Where It Belongs]", guideBack: "The setting it fits into", bundle: 'pro' },
         { q: "The thing has no obvious category.", a: "\"It sits where a kitchen timer would, but for people rather than food.\" [Where It Belongs]", guideBack: "The setting it fits into", bundle: 'pro' },
         { q: "They cannot tell whether it is a tool or a service.", a: "\"It belongs with services, even though it looks like a tool.\" [Where It Belongs]", guideBack: "The setting it fits into", bundle: 'pro' },
+        { q: "They have understood every word and still ask what it is.", a: "\"Put it next to a to-do list. Same shelf, different job.\" [Where It Belongs]", guideBack: "The setting it fits into", bundle: 'pro' },
+        { q: "The thing sits between two categories.", a: "\"It's closer to a service than a tool, if you had to file it somewhere.\" [Where It Belongs]", guideBack: "The setting it fits into", bundle: 'pro' },
+        { q: "You described the features and none of them stuck.", a: "\"Think of the drawer you keep chargers in. It's that, for documents.\" [Where It Belongs]", guideBack: "The setting it fits into", bundle: 'pro' },
       ]
     },
     {
@@ -3676,6 +3835,9 @@ const challengesCollections = {
         { q: "You have no idea what they already know.", a: "\"How much of this do you already deal with? I'll start from there.\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
         { q: "You are explaining to two people with very different backgrounds.", a: "\"I'll do the simple version, and grab me afterwards for the detail.\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
         { q: "You simplified so hard it sounded evasive.", a: "\"That was too neat. The honest version is messier — there are two systems and they don't quite agree.\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
+        { q: "You have gone deeper than your own knowledge goes.", a: "\"I've gone past what I actually know. Back to what I'm sure of: it runs monthly.\" [Where Your Knowledge Ends]", guideBack: "The part you know, and the line after it", bundle: 'pro' },
+        { q: "The detail you added was plausible and unverified.", a: "\"I said that with more confidence than I have. Treat it as a guess.\" [Where Your Knowledge Ends]", guideBack: "The part you know, and the line after it", bundle: 'pro' },
+        { q: "They want the technical answer and you only have the practical one.", a: "\"I know what it does, not how. Is what it does enough for now?\" [Where Your Knowledge Ends]", guideBack: "The part you know, and the line after it", bundle: 'pro' },
       ]
     },
   ],
@@ -3743,6 +3905,88 @@ const challengesCollections = {
         { q: "You are still deciding and it is your turn now.", a: "\"Right — this is about a bike, and I'll work out why as I go.\" [Pick One Fast]", guideBack: "A small story, chosen quickly", bundle: 'pro' },
         { q: "You know the story is good but not how to begin it.", a: "\"I'll start in the wrong place and fix it: I ended up carrying a wardrobe.\" [Pick One Fast]", guideBack: "A small story, chosen quickly", bundle: 'pro' },
         { q: "The moment has passed and you are annoyed about it.", a: "\"Going back — mine's the same thing but with a bike, and it's short.\" [Pick One Fast]", guideBack: "A small story, chosen quickly", bundle: 'pro' },
+      ]
+    },
+  ],
+  rolebasedhumour: [
+    {
+      name: "Something Small Has Gone Wrong",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Somebody mentions a small mishap — a forgotten thing, a breakage, a mistake that costs nobody very much. It is the most common opening for a role, and the one where the check matters most, because a real problem dressed as a small one wants sympathy rather than a bit.\n\nWhat it usually looks like:\n\n• They forgot something and are mildly annoyed about it.\n• Something has broken and it is replaceable.\n• The same small thing has happened to them before.\n\nFour ways through:\n1. The Bossy Leader — appoint yourself in charge of the clean-up.\n2. The Rule Breaker — reach straight for the loophole.\n3. The Invincible Hero — make it sound like nothing at a ridiculous scale.\n4. The Lazy One — find the way out of the effort entirely.\n\nMindset: the joke only works if losing the thing genuinely does not matter. Check their face first, then commit.",
+      inputs: [
+        { q: "A classmate says they forgot their homework again.", a: "\"Right. Sit down. You're doing it now and I'm supervising.\" [The Bossy Leader]", guideBack: "An order nobody needs", bundle: 'pro' },
+        { q: "Somebody's laptop has died two days before a deadline.", a: "\"We'll say it was stolen. I'll cry at the meeting if it helps.\" [The Rule Breaker]", guideBack: "A way round, offered instantly", bundle: 'pro' },
+        { q: "A friend has locked themselves out for the second time this month.", a: "\"I've been locked out on three continents. This is nothing.\" [The Invincible Hero]", guideBack: "A feat at an impossible scale", bundle: 'pro' },
+        { q: "They mention they forgot to send the form.", a: "\"Honestly? Best outcome. Now nobody has to read it.\" [The Lazy One]", guideBack: "The least possible response", bundle: 'pro' },
+        { q: "Somebody has broken a mug in the office kitchen.", a: "\"Leave it. Nobody saw. We walk away separately.\" [The Rule Breaker]", guideBack: "A way round, offered instantly", bundle: 'pro' },
+        { q: "A colleague says they've saved over the wrong file.", a: "\"Step aside. I'm taking over the folder structure from here.\" [The Bossy Leader]", guideBack: "An order nobody needs", bundle: 'pro' },
+        { q: "They forgot to bring the thing they promised you.", a: "\"You forgot the thing. But did you forget me?\" [The Mock-Offended One]", guideBack: "Injured dignity, held one beat too long", bundle: 'pro' },
+        { q: "Somebody's bike has a puncture on the way in.", a: "\"I rode eleven miles on a flat once. In snow. Uphill both ways.\" [The Invincible Hero]", guideBack: "A feat at an impossible scale", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "They Are Complaining About Something",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "A grumble about food, weather, a device, a queue. Nothing is at stake and nobody is asking for help, which is exactly why a role fits: the complaint has nowhere to go, and a character gives it somewhere.\n\nWhat it usually looks like:\n\n• They are grumbling about something nobody can change.\n• The complaint has been made twice already.\n• It is a real irritation and a small one.\n\nFour ways through:\n1. The Mock-Offended One — be wounded by it, especially if it is yours.\n2. The Invincible Hero — nothing is difficult, at an impossible scale.\n3. The Bossy Leader — take charge of a complaint nobody filed.\n4. The Super Stingy One — guard yours from the complainer.\n\nMindset: a complaint is an invitation to join in. A role joins in without agreeing that the thing is actually bad.",
+      inputs: [
+        { q: "They say the food is bland and you made it.", a: "\"I'm going to need a moment. I made that with my hands.\" [The Mock-Offended One]", guideBack: "Injured dignity, held one beat too long", bundle: 'pro' },
+        { q: "Somebody complains about the rain for the fourth time.", a: "\"Rain? I've walked through weather that took a fence down.\" [The Invincible Hero]", guideBack: "A feat at an impossible scale", bundle: 'pro' },
+        { q: "A colleague grumbles about the coffee again.", a: "\"Put the cup down. I'm running this kitchen from now on.\" [The Bossy Leader]", guideBack: "An order nobody needs", bundle: 'pro' },
+        { q: "They say the queue is unbearable.", a: "\"Then you're not having my place in it. This spot is spoken for.\" [The Super Stingy One]", guideBack: "A refusal over nothing", bundle: 'pro' },
+        { q: "Somebody complains that the office is freezing.", a: "\"Take my jumper. Take my chair. Take my whole side of the room.\" [The Super Generous One]", guideBack: "An offer well past reason", bundle: 'pro' },
+        { q: "A friend says the film was far too long.", a: "\"Too long? I sat through a four-hour opera. Standing.\" [The Invincible Hero]", guideBack: "A feat at an impossible scale", bundle: 'pro' },
+        { q: "They complain that the app has changed again.", a: "\"There's an old version if you know where to look. You didn't hear it here.\" [The Rule Breaker]", guideBack: "A way round, offered instantly", bundle: 'pro' },
+        { q: "Somebody says the walk over was miserable.", a: "\"Honestly, I'd have stayed in bed. I very nearly did.\" [The Lazy One]", guideBack: "The least possible response", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "There Is Work Coming",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "They have named something ahead of them — a deadline, a set of tests, a meeting that has moved. Nothing has gone wrong yet; the weight is all in front. A role takes the edge off without pretending the thing is not there.\n\nWhat it usually looks like:\n\n• A date has been named and it is close.\n• Several things land in the same week.\n• They are looking at a list rather than a problem.\n\nFour ways through:\n1. The Lazy One — the least possible response to the whole prospect.\n2. The Invincible Hero — you have done far worse, easily.\n3. The Bossy Leader — take command of somebody else's workload.\n4. The Rule Breaker — find the corner that can be cut.\n\nMindset: the dread is real and the joke is about the size of it, not about whether it matters.",
+      inputs: [
+        { q: "A classmate says there are three tests next week.", a: "\"Three? I'll be doing mine from bed with the book open.\" [The Lazy One]", guideBack: "The least possible response", bundle: 'pro' },
+        { q: "Somebody mentions the meeting has moved to Friday.", a: "\"Excellent. I'll be chairing it. Bring notepads.\" [The Bossy Leader]", guideBack: "An order nobody needs", bundle: 'pro' },
+        { q: "They say there's a full day of training tomorrow.", a: "\"I did four days of this once and came out stronger.\" [The Invincible Hero]", guideBack: "A feat at an impossible scale", bundle: 'pro' },
+        { q: "A colleague is dreading a long report.", a: "\"Write three pages and put the rest in an appendix nobody opens.\" [The Rule Breaker]", guideBack: "A way round, offered instantly", bundle: 'pro' },
+        { q: "They mention two deadlines in the same week.", a: "\"Two. I'm exhausted just having heard about it.\" [The Lazy One]", guideBack: "The least possible response", bundle: 'pro' },
+        { q: "Somebody says they have to present on Monday.", a: "\"You'll be fine. I've presented to four hundred people with no slides.\" [The Invincible Hero]", guideBack: "A feat at an impossible scale", bundle: 'pro' },
+        { q: "A friend says the weekend is full of jobs.", a: "\"Cancel one. Nobody has ever checked.\" [The Rule Breaker]", guideBack: "A way round, offered instantly", bundle: 'pro' },
+        { q: "They are staring at a long list of tasks.", a: "\"Give it here. I'm reorganising this into columns.\" [The Bossy Leader]", guideBack: "An order nobody needs", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Something Has Run Out",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "A shortage, or a need — the coffee is finished, the phone is dying, somebody wants to borrow a pen. It is the one situation in the pack where the answer is an offer or a refusal, which is why the two opposite roles both live here.\n\nWhat it usually looks like:\n\n• Something ordinary has run out and somebody has announced it.\n• They need to borrow a thing of no value.\n• A shortage is about to become somebody's job to fix.\n\nFour ways through:\n1. The Super Generous One — offer far past what anyone needs.\n2. The Super Stingy One — guard something worthless as a treasure.\n3. The Rule Breaker — there is a supply somewhere and a way to it.\n4. The Bossy Leader — a rota nobody asked for.\n\nMindset: the two opposite roles are funniest in the same situation. Whichever you pick, go further than the shortage deserves.",
+      inputs: [
+        { q: "Somebody announces the coffee has run out.", a: "\"Take mine. Take the cup. Take the kettle, I'll manage.\" [The Super Generous One]", guideBack: "An offer well past reason", bundle: 'pro' },
+        { q: "They ask to borrow a pen.", a: "\"I have one pen and it has been with me since 2019.\" [The Super Stingy One]", guideBack: "A refusal over nothing", bundle: 'pro' },
+        { q: "A friend says their phone is on its last legs.", a: "\"Have mine. Have the charger. I'll communicate by post.\" [The Super Generous One]", guideBack: "An offer well past reason", bundle: 'pro' },
+        { q: "The printer is out of paper again.", a: "\"There's a stack in the room nobody locks. You didn't hear it from me.\" [The Rule Breaker]", guideBack: "A way round, offered instantly", bundle: 'pro' },
+        { q: "Somebody needs a charger and you have one.", a: "\"You can have four minutes of it. I'm counting.\" [The Super Stingy One]", guideBack: "A refusal over nothing", bundle: 'pro' },
+        { q: "They say there's no milk left.", a: "\"Right. I'm drawing up a rota. Names on the board by lunch.\" [The Bossy Leader]", guideBack: "An order nobody needs", bundle: 'pro' },
+        { q: "A colleague has run out of the form they need.", a: "\"I've got a photocopy of a photocopy. It's basically legal.\" [The Rule Breaker]", guideBack: "A way round, offered instantly", bundle: 'pro' },
+        { q: "Somebody mentions they're short of chairs for the meeting.", a: "\"Have mine. I'll stand. For the whole hour. It's fine.\" [The Super Generous One]", guideBack: "An offer well past reason", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "They Have Suggested Something",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "An invitation or a plan — a run, a holiday, an evening out. The suggestion is real, so the role has to be worn lightly: the joke is the reaction, and the yes or no comes straight after it.\n\nWhat it usually looks like:\n\n• They have proposed something that involves effort.\n• The plan is good and you are not sure you want it.\n• The suggestion arrives early in the morning or late in the week.\n\nFour ways through:\n1. The Lazy One — horror at the effort, then agree anyway.\n2. The Invincible Hero — you have done a far bigger version of it.\n3. The Mock-Offended One — be wounded by the terms of the invitation.\n4. The Rule Breaker — propose the version with the work removed.\n\nMindset: never leave the role sitting on top of a real answer. React in character, then say yes or no as yourself.",
+      inputs: [
+        { q: "A friend suggests going for a run.", a: "\"A run. I'll be supporting you from the sofa, loudly.\" [The Lazy One]", guideBack: "The least possible response", bundle: 'pro' },
+        { q: "Somebody says they need to book a holiday.", a: "\"I've booked eleven this year. Two of them by accident.\" [The Invincible Hero]", guideBack: "A feat at an impossible scale", bundle: 'pro' },
+        { q: "They propose an early start on Saturday.", a: "\"Early? On a Saturday? I'm going to need to sit down.\" [The Mock-Offended One]", guideBack: "Injured dignity, held one beat too long", bundle: 'pro' },
+        { q: "A colleague suggests an extra meeting.", a: "\"Or we don't have it, and nobody notices for a fortnight.\" [The Rule Breaker]", guideBack: "A way round, offered instantly", bundle: 'pro' },
+        { q: "Somebody suggests a long walk in bad weather.", a: "\"I did twenty miles once in a storm. Loved it. Never again.\" [The Invincible Hero]", guideBack: "A feat at an impossible scale", bundle: 'pro' },
+        { q: "They suggest cooking something complicated.", a: "\"Complicated? I'm out. Wake me when there's a plate.\" [The Lazy One]", guideBack: "The least possible response", bundle: 'pro' },
+        { q: "A friend describes a plan that leaves you out by accident.", a: "\"So I'm not invited. That's fine. I'll be here. Alone.\" [The Mock-Offended One]", guideBack: "Injured dignity, held one beat too long", bundle: 'pro' },
+        { q: "They suggest doing the thing properly this time.", a: "\"Or we do it the quick way and tell everyone it was properly.\" [The Rule Breaker]", guideBack: "A way round, offered instantly", bundle: 'pro' },
       ]
     },
   ],
