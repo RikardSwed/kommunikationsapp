@@ -466,6 +466,9 @@ const challengesCollections = {
         { q: "You are about to apologise a second time, harder.", a: "\"Saying it louder won't help. What was it actually like for you?\" [Name What They Felt]", guideBack: "Their feeling, named or asked about", bundle: 'pro' },
         { q: "You have explained your reasons and they are unmoved.", a: "\"I've been explaining and not listening. Tell me how it landed.\" [Name What They Felt]", guideBack: "Their feeling, named or asked about", bundle: 'pro' },
         { q: "You want to restart the conversation properly.", a: "\"Can I start that again? I did it in the wrong order.\" [Say Their Feelings Matter]", guideBack: "What you care about, said plainly", bundle: 'pro' },
+        { q: "You have apologised three times and they are still cold.", a: "\"I'll stop saying sorry. What I think happened is that you were left holding it.\" [Name What They Felt]", guideBack: "Their feeling, named or asked about", bundle: 'pro' },
+        { q: "They say the apology felt automatic.", a: "\"It probably did. Anyone would be annoyed at being told last.\" [Show You Understand Why]", guideBack: "The reason anyone would have felt it", bundle: 'pro' },
+        { q: "You want to start again without saying sorry first.", a: "\"Can I try that again? You matter more to me than the decision did.\" [Say Their Feelings Matter]", guideBack: "What you care about, said plainly", bundle: 'pro' },
       ]
     },
     {
@@ -479,6 +482,9 @@ const challengesCollections = {
         { q: "You are about to apologise for something you do not regret.", a: "\"I can see it landed badly. I'm not going to pretend I'd do it differently, though.\" [Name What They Felt]", guideBack: "Their feeling, named or asked about", bundle: 'pro' },
         { q: "They want you to agree you were wrong and you do not.", a: "\"I don't think I was wrong about the thing. I do think I handled it badly.\" [Show You Understand Why]", guideBack: "The reason anyone would have felt it", bundle: 'pro' },
         { q: "Nothing about it is yours at all.", a: "\"I'm sorry it's landed like this. I don't think I did anything I'd change, and I'd rather say that than pretend.\" [Say Their Feelings Matter]", guideBack: "What you care about, said plainly", bundle: 'pro' },
+        { q: "You would make the same decision again tomorrow.", a: "\"I'd do it again. I should have told you myself, and I didn't.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
+        { q: "They want an apology for the outcome, not for your conduct.", a: "\"I can't say the decision was wrong. I can say you found out badly.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
+        { q: "You are being asked to apologise for somebody else's part.", a: "\"That bit isn't mine to apologise for. How it landed on you, though — I can see it.\" [Show You Understand Why]", guideBack: "The reason anyone would have felt it", bundle: 'pro' },
       ]
     },
     {
@@ -492,6 +498,9 @@ const challengesCollections = {
         { q: "You are tempted to point out that you have apologised.", a: "\"I'll leave it with you. The bit that matters is what happens next time anyway.\" [Say What You'll Do Differently]", guideBack: "A change someone could watch you make", bundle: 'pro' },
         { q: "They say they need time.", a: "\"Take it. I'm not going to keep bringing it up.\" [Say Their Feelings Matter]", guideBack: "What you care about, said plainly", bundle: 'pro' },
         { q: "They may never accept it.", a: "\"I understand. I'd still rather have said it than not.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
+        { q: "They accept the words and nothing changes between you.", a: "\"I won't keep asking. From now on you hear it from me first.\" [Say What You'll Do Differently]", guideBack: "A change someone could watch you make", bundle: 'pro' },
+        { q: "They say they need to think about it.", a: "\"Take as long as you want. This matters more to me than being forgiven quickly.\" [Say Their Feelings Matter]", guideBack: "What you care about, said plainly", bundle: 'pro' },
+        { q: "You are about to ask whether you are forgiven.", a: "\"I'm not going to ask you to be all right with it. I'm sorry I went round you.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
       ]
     },
     {
@@ -505,6 +514,9 @@ const challengesCollections = {
         { q: "You are about to say something about valuing the relationship.", a: "\"I don't want to be someone you have to double-check on.\" [Say Their Feelings Matter]", guideBack: "What you care about, said plainly", bundle: 'pro' },
         { q: "They say \"this sounds rehearsed\".", a: "\"It is a bit — I've been thinking about how to say it all week.\" [Say Their Feelings Matter]", guideBack: "What you care about, said plainly", bundle: 'pro' },
         { q: "You have used three feeling words and none of them is specific.", a: "\"Let me just say the plain version: I'm sorry I said it in the meeting.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
+        { q: "You have used a phrase you read somewhere.", a: "\"Plainly: I said I'd call and then I didn't, for three days.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
+        { q: "Your acknowledgement could apply to anybody.", a: "\"You'd been waiting on that answer all week. That's the bit I got wrong.\" [Name What They Felt]", guideBack: "Their feeling, named or asked about", bundle: 'pro' },
+        { q: "They can hear you assembling it as you go.", a: "\"I'm doing this badly. The truth is I'd have been furious.\" [Show You Understand Why]", guideBack: "The reason anyone would have felt it", bundle: 'pro' },
       ]
     },
     {
@@ -518,6 +530,9 @@ const challengesCollections = {
         { q: "They keep saying it is fine and they seem to mean it.", a: "\"Then I'll take that. Sorry again and I'll shut up about it.\" [Say What You'll Do Differently]", guideBack: "A change someone could watch you make", bundle: 'pro' },
         { q: "You want to check whether it needs the full version.", a: "\"Is this a small thing or has it been sitting with you?\" [Name What They Felt]", guideBack: "Their feeling, named or asked about", bundle: 'pro' },
         { q: "It was your embarrassment rather than their injury.", a: "(say the short version, once, and move on) [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
+        { q: "You have built a small thing into a conversation.", a: "\"Short version: I forgot, and I'm sorry. That's all it needs.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
+        { q: "They say it honestly does not matter and they mean it.", a: "\"Fine. I'll set a reminder so it doesn't happen again.\" [Say What You'll Do Differently]", guideBack: "A change someone could watch you make", bundle: 'pro' },
+        { q: "You are apologising to feel better rather than to repair.", a: "\"I'll stop. This is me wanting to be forgiven, and it wasn't much of a thing.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
       ]
     },
   ],
@@ -1077,6 +1092,9 @@ const challengesCollections = {
         { q: "You are about to explain your suggestion better.", a: "\"Forget the suggestion. Tell me the rest.\" [Just Listen]", guideBack: "A small sign to go on, or silence", bundle: 'pro' },
         { q: "They seem irritated by your helpfulness.", a: "\"I'm doing the thing where I solve instead of listen. Sorry.\" [Work Out What They Need]", guideBack: "A check on what would help", bundle: 'pro' },
         { q: "You have offered three ideas and none has landed.", a: "\"What would actually help? I'm clearly guessing badly.\" [Work Out What They Need]", guideBack: "A check on what would help", bundle: 'pro' },
+        { q: "You can hear yourself starting another sentence with have you tried.", a: "\"Ignore me. What's the worst part of it at the moment?\" [Work Out What They Need]", guideBack: "A check on what would help", bundle: 'pro' },
+        { q: "They wanted company and you gave them a plan.", a: "\"You didn't come here for a plan, did you. I'll just listen.\" [Just Listen]", guideBack: "A small sign to go on, or silence", bundle: 'pro' },
+        { q: "Your advice was good and it landed badly anyway.", a: "\"That was fair enough to be annoyed at. I jumped in too fast.\" [Respond With Validation]", guideBack: "Why the feeling fits", bundle: 'pro' },
       ]
     },
     {
@@ -1090,6 +1108,9 @@ const challengesCollections = {
         { q: "They deflect with a joke.", a: "\"Alright. I'm around Thursday if you fancy a coffee.\" [Respond With a Suggestion]", guideBack: "An option, offered lightly", bundle: 'pro' },
         { q: "You are about to ask a second time.", a: "(leave it — and follow up in a few days) [Just Listen]", guideBack: "A small sign to go on, or silence", bundle: 'pro' },
         { q: "They come back to you a week later.", a: "\"I'm glad you said. Tell me properly.\" [Just Listen]", guideBack: "A small sign to go on, or silence", bundle: 'pro' },
+        { q: "They say it is nothing and change the subject twice.", a: "\"Mm. I'm around if it turns out to be something.\" [Just Listen]", guideBack: "A small sign to go on, or silence", bundle: 'pro' },
+        { q: "You have noticed something and are not sure whether to say it.", a: "\"You've been quiet this week. Anything, or shall I leave it?\" [Work Out What They Need]", guideBack: "A check on what would help", bundle: 'pro' },
+        { q: "They admit it is not fine and then stop.", a: "\"Makes sense you'd not want to go into it. It sounds heavy.\" [Respond With Validation]", guideBack: "Why the feeling fits", bundle: 'pro' },
       ]
     },
     {
@@ -1103,6 +1124,9 @@ const challengesCollections = {
         { q: "They ask whether they were in the wrong.", a: "\"Do you want honest, or do you want me on your side? Both are fine.\" [Work Out What They Need]", guideBack: "A check on what would help", bundle: 'pro' },
         { q: "They have asked for honesty and you have one thing to say.", a: "\"The message at eleven at night is the bit I'd have done differently. Nothing else.\" [Respond With a Suggestion]", guideBack: "An option, offered lightly", bundle: 'pro' },
         { q: "They are clearly not ready to hear it.", a: "\"Let's leave that for another day. How are you doing now?\" [Respond With Validation]", guideBack: "Why the feeling fits", bundle: 'pro' },
+        { q: "You can see that they made the situation worse.", a: "\"It's a rotten position to be in, whatever got you there.\" [Respond With Validation]", guideBack: "Why the feeling fits", bundle: 'pro' },
+        { q: "They ask directly whether you think they handled it badly.", a: "\"Do you want the honest version, or do you want to vent first?\" [Work Out What They Need]", guideBack: "A check on what would help", bundle: 'pro' },
+        { q: "You have said your piece and they have gone quiet.", a: "\"You've handled harder things than this one. I'm not worried about you.\" [Respond With Encouragement]", guideBack: "Evidence they can manage it", bundle: 'pro' },
       ]
     },
     {
@@ -1116,6 +1140,9 @@ const challengesCollections = {
         { q: "You are tempted to avoid them because it is awkward.", a: "\"I've been putting off messaging because I didn't know what to write. I'm thinking of you.\" [Respond With Validation]", guideBack: "Why the feeling fits", bundle: 'pro' },
         { q: "They are crying and you feel useless.", a: "(stay, say nothing) [Just Listen]", guideBack: "A small sign to go on, or silence", bundle: 'pro' },
         { q: "You want to offer something concrete rather than words.", a: "\"Can I bring food round on Thursday? You don't have to talk to me.\" [Respond With a Suggestion]", guideBack: "An option, offered lightly", bundle: 'pro' },
+        { q: "There is no comfort available and you know it.", a: "\"I've got nothing useful. I'm here, though, for as long as you want.\" [Just Listen]", guideBack: "A small sign to go on, or silence", bundle: 'pro' },
+        { q: "You are afraid of saying the wrong thing.", a: "\"I don't know what to say to that. It's just awful.\" [Respond With Validation]", guideBack: "Why the feeling fits", bundle: 'pro' },
+        { q: "They are exhausted and there is a practical thing you could do.", a: "\"I'll do the school run Thursday. Don't argue, it's booked.\" [Respond With a Suggestion]", guideBack: "An option, offered lightly", bundle: 'pro' },
       ]
     },
     {
@@ -1129,6 +1156,9 @@ const challengesCollections = {
         { q: "You are about to offer advice on something serious.", a: "\"I don't want to give you bad advice on something this big. Can we find out who would know?\" [Work Out What They Need]", guideBack: "A check on what would help", bundle: 'pro' },
         { q: "They say they do not want to talk to anyone else.", a: "\"That's your call. I'll ask again in a while, because I'd like you to.\" [Respond With Validation]", guideBack: "Why the feeling fits", bundle: 'pro' },
         { q: "You are worried and do not know what to do next.", a: "\"Can I check in on you tomorrow? Not to fix anything — just to check.\" [Respond With a Suggestion]", guideBack: "An option, offered lightly", bundle: 'pro' },
+        { q: "You are out of your depth and they keep talking.", a: "\"I want to keep listening. I also think this is bigger than me.\" [Work Out What They Need]", guideBack: "A check on what would help", bundle: 'pro' },
+        { q: "They mention they have not slept properly for a fortnight.", a: "\"A fortnight is a long time. Would you talk to a doctor if I came with you?\" [Respond With a Suggestion]", guideBack: "An option, offered lightly", bundle: 'pro' },
+        { q: "You are worried and do not want to leave it there.", a: "\"You've got through worse than this. Can I check in tomorrow?\" [Respond With Encouragement]", guideBack: "Evidence they can manage it", bundle: 'pro' },
       ]
     },
   ],
@@ -1621,6 +1651,9 @@ const challengesCollections = {
         { q: "They say everyone else does it too.", a: "\"Maybe. I'm only talking about your part of it.\" [Name the Behaviour]", guideBack: "The specific thing they did", bundle: 'pro' },
         { q: "They turn it round onto something you did.", a: "\"Happy to talk about that separately. Can we finish this first?\" [Choose the Size]", guideBack: "One sentence, a conversation, or nothing", bundle: 'pro' },
         { q: "The conversation is heating up and going nowhere.", a: "\"Let's skip the history. What would make it easier to hit the date?\" [Suggest What to Do Instead]", guideBack: "Something they could do next time", bundle: 'pro' },
+        { q: "They have started explaining before you finished the sentence.", a: "\"Let me get the whole thing out: three came in late and the last one blocked Ana.\" [Explain the Impact]", guideBack: "What follows from it, for others", bundle: 'pro' },
+        { q: "They are arguing about one instance rather than the pattern.", a: "\"Take that one off the list. There are four others, and that's the part I mind.\" [Name the Behaviour]", guideBack: "The specific thing they did", bundle: 'pro' },
+        { q: "The conversation is defensive and you want to lower it.", a: "\"I'm not building a case. I'd just like the Wednesday version instead.\" [Suggest What to Do Instead]", guideBack: "Something they could do next time", bundle: 'pro' },
       ]
     },
     {
@@ -1634,6 +1667,9 @@ const challengesCollections = {
         { q: "You want to open without any evaluation at all.", a: "\"I want to go through the last two with you.\" [Choose the Size]", guideBack: "One sentence, a conversation, or nothing", bundle: 'pro' },
         { q: "They have already sensed the compliment coming and tensed up.", a: "\"I'm not going to soften this — I'd rather just say it plainly.\" [Name the Behaviour]", guideBack: "The specific thing they did", bundle: 'pro' },
         { q: "The only true positive is very small.", a: "\"You always answer quickly, which genuinely helps.\" [Start With Something Real]", guideBack: "A true positive, said briefly", bundle: 'pro' },
+        { q: "You are about to invent a compliment.", a: "\"I'm not going to soften this with something I don't mean. Here's the thing itself.\" [Choose the Size]", guideBack: "One sentence, a conversation, or nothing", bundle: 'pro' },
+        { q: "The only honest positive is about the effort, not the result.", a: "\"You've put hours into this, which is true and not the issue.\" [Start With Something Real]", guideBack: "A true positive, said briefly", bundle: 'pro' },
+        { q: "You want to open neutrally rather than positively.", a: "\"You've had a lot on this month. Can I raise one thing anyway?\" [Start With Something Real]", guideBack: "A true positive, said briefly", bundle: 'pro' },
       ]
     },
     {
@@ -1647,6 +1683,9 @@ const challengesCollections = {
         { q: "They say they wish they had known earlier.", a: "\"That's fair. I'll tell you the same week next time.\" [Encourage and Offer Support]", guideBack: "Confidence in them, plus a concrete offer", bundle: 'pro' },
         { q: "You are worried this will feel like an ambush.", a: "\"This isn't a list. It's one thing that's been on my mind.\" [Choose the Size]", guideBack: "One sentence, a conversation, or nothing", bundle: 'pro' },
         { q: "They ask why you did not mention it before.", a: "\"Because I kept thinking it would sort itself out. That was a mistake.\" [Start With Something Real]", guideBack: "A true positive, said briefly", bundle: 'pro' },
+        { q: "You have six months of examples and want to raise one.", a: "\"One thing, from last week: the notes came in after the meeting.\" [Name the Behaviour]", guideBack: "The specific thing they did", bundle: 'pro' },
+        { q: "They ask why nobody said anything sooner.", a: "\"That's fair. If we do it in the week it happens, neither of us has to store it up.\" [Say What Improves If They Do]", guideBack: "The gain, if they change it", bundle: 'pro' },
+        { q: "The list is long and you have to choose.", a: "\"The one that matters is the handover. The rest I'd let go.\" [Choose the Size]", guideBack: "One sentence, a conversation, or nothing", bundle: 'pro' },
       ]
     },
     {
@@ -1660,6 +1699,9 @@ const challengesCollections = {
         { q: "It is a friend's decision and none of your business.", a: "(say nothing) [Choose the Size]", guideBack: "One sentence, a conversation, or nothing", bundle: 'pro' },
         { q: "You have standing only for the part that affects you.", a: "\"I can only speak for my bit — from here it arrives too late to use.\" [Explain the Impact]", guideBack: "What follows from it, for others", bundle: 'pro' },
         { q: "You want to raise something upwards without it sounding like a complaint.", a: "\"Would it help if I flagged the ones that come in after Thursday? Then you'd see it too.\" [Suggest What to Do Instead]", guideBack: "Something they could do next time", bundle: 'pro' },
+        { q: "You have no authority and it affects your work daily.", a: "\"Small thing from my side: when it lands after four, I can't finish it.\" [Explain the Impact]", guideBack: "What follows from it, for others", bundle: 'pro' },
+        { q: "It is a friend's choice and you have an opinion.", a: "\"Not my business, so I'll say it once and then shut up.\" [Say It Lightly]", guideBack: "The whole thing, in one line", bundle: 'pro' },
+        { q: "You want to raise it with somebody senior.", a: "\"Could the timing move by a day? It'd take the crunch out of Fridays.\" [Suggest What to Do Instead]", guideBack: "Something they could do next time", bundle: 'pro' },
       ]
     },
     {
@@ -1673,6 +1715,9 @@ const challengesCollections = {
         { q: "They apologise again in the same words.", a: "\"I believe you mean it. What I need is a different result, not a different apology.\" [Suggest What to Do Instead]", guideBack: "Something they could do next time", bundle: 'pro' },
         { q: "You want to find out what is actually in the way.", a: "\"Something's stopping this and I don't think it's willingness. What is it?\" [Suggest What to Do Instead]", guideBack: "Something they could do next time", bundle: 'pro' },
         { q: "It is genuinely not going to change and you need to plan around it.", a: "\"Then let's assume Thursday won't happen and build the plan on Monday instead.\" [Suggest What to Do Instead]", guideBack: "Something they could do next time", bundle: 'pro' },
+        { q: "The same thing has happened for the third time.", a: "\"It's happened three times since we spoke. What's actually in the way?\" [Name the Behaviour]", guideBack: "The specific thing they did", bundle: 'pro' },
+        { q: "You realise you have never said what good would look like.", a: "\"What I'm after is the draft on Wednesday, even if it's rough.\" [Suggest What to Do Instead]", guideBack: "Something they could do next time", bundle: 'pro' },
+        { q: "You have decided to stop raising it and plan around it.", a: "\"You'll get there. I'll build a spare day in for now, and drop it when you do.\" [Encourage and Offer Support]", guideBack: "Confidence in them, plus a concrete offer", bundle: 'pro' },
       ]
     },
   ],
@@ -2561,6 +2606,9 @@ const challengesCollections = {
         { q: "You are about to say \"I'm fine\" for the third time.", a: "\"I'm not fine, I just haven't got the word yet. Give me a minute.\" [Announce the Pause]", guideBack: "The moment you're taking, said out loud", bundle: 'pro' },
         { q: "You feel awful and cannot explain why.", a: "\"My chest is tight and I can't settle to anything. That's all I've got.\" [Describe the Signals]", guideBack: "What happened in your body or head", bundle: 'pro' },
         { q: "Someone asks what is wrong and you go blank.", a: "\"Something about this morning is still sitting with me.\" [Name the Situation]", guideBack: "The context, before any feeling", bundle: 'pro' },
+        { q: "You know it is not anger but that is the only word to hand.", a: "\"It's not anger. Something more like being quietly dismissed.\" [Label the Emotion]", guideBack: "A feeling word, as accurate as you can", bundle: 'pro' },
+        { q: "The feeling has been there all day with no name.", a: "\"I've been off since the morning meeting. That's where it started.\" [Name the Situation]", guideBack: "The context, before any feeling", bundle: 'pro' },
+        { q: "You are being asked and have nothing but physical signs.", a: "\"I don't have a word for it. My jaw's been tight since two o'clock, though.\" [Describe the Signals]", guideBack: "What happened in your body or head", bundle: 'pro' },
       ]
     },
     {
@@ -2574,6 +2622,9 @@ const challengesCollections = {
         { q: "The argument is moving faster than you can think.", a: "\"Can we pause? I want to answer properly rather than quickly.\" [Announce the Pause]", guideBack: "The moment you're taking, said out loud", bundle: 'pro' },
         { q: "You are about to send a message you might regret.", a: "\"I'm going to leave this until the morning before I reply.\" [Announce the Pause]", guideBack: "The moment you're taking, said out loud", bundle: 'pro' },
         { q: "You need to step away but do not want it read as storming off.", a: "\"I'm not walking out — I just need ten minutes and I'll come back.\" [Announce the Pause]", guideBack: "The moment you're taking, said out loud", bundle: 'pro' },
+        { q: "You have started the same sentence three times and stopped.", a: "\"Give me a minute. I'll say it better after a walk round the block.\" [Announce the Pause]", guideBack: "The moment you're taking, said out loud", bundle: 'pro' },
+        { q: "Your heart is going and the meeting is continuing.", a: "\"My heart's going, honestly. Can we come back to this point last?\" [Describe the Signals]", guideBack: "What happened in your body or head", bundle: 'pro' },
+        { q: "You will regret whatever you say in the next thirty seconds.", a: "\"I'm going to stop there and pick it up tomorrow morning.\" [Announce the Pause]", guideBack: "The moment you're taking, said out loud", bundle: 'pro' },
       ]
     },
     {
@@ -2587,6 +2638,9 @@ const challengesCollections = {
         { q: "Everyone else seems calm and you do not want to be the one who says it.", a: "\"Is it just me finding this one nerve-wracking?\" [Label the Emotion]", guideBack: "A feeling word, as accurate as you can", bundle: 'pro' },
         { q: "Your hands are visibly shaking and you are pretending they are not.", a: "\"My hands are going — ignore them, I'm fine to carry on.\" [Describe the Signals]", guideBack: "What happened in your body or head", bundle: 'pro' },
         { q: "You feel you should push through without mentioning it.", a: "\"Quick pause and some water, then I'll be much better.\" [Announce the Pause]", guideBack: "The moment you're taking, said out loud", bundle: 'pro' },
+        { q: "You are the most senior person in the room and you are nervous.", a: "\"I'm nervous about this one, which is probably a good sign.\" [Label the Emotion]", guideBack: "A feeling word, as accurate as you can", bundle: 'pro' },
+        { q: "Saying it out loud feels like handing over an advantage.", a: "\"I'd rather say I'm rattled than have you wonder why I'm short with you.\" [Label the Emotion]", guideBack: "A feeling word, as accurate as you can", bundle: 'pro' },
+        { q: "You are performing calm and it is costing you.", a: "\"I'm going to take a proper minute rather than sit here pretending.\" [Announce the Pause]", guideBack: "The moment you're taking, said out loud", bundle: 'pro' },
       ]
     },
     {
@@ -2600,6 +2654,9 @@ const challengesCollections = {
         { q: "They say: \"It wasn't a big deal.\"", a: "\"It might not have been. I was still awake at three thinking about it.\" [Describe the Signals]", guideBack: "What happened in your body or head", bundle: 'pro' },
         { q: "You feel yourself about to argue the facts to justify the feeling.", a: "\"I don't want to argue the details. I just wanted you to know how it felt.\" [Name the Situation]", guideBack: "The context, before any feeling", bundle: 'pro' },
         { q: "They dismiss it and you can feel yourself getting heated.", a: "\"Let's leave it there for now — I'd rather not push it into a row.\" [Announce the Pause]", guideBack: "The moment you're taking, said out loud", bundle: 'pro' },
+        { q: "They laugh and change the subject.", a: "\"I'll say it once more and then leave it: that one landed badly.\" [Label the Emotion]", guideBack: "A feeling word, as accurate as you can", bundle: 'pro' },
+        { q: "They tell you nobody else had a problem with it.", a: "\"Maybe not. I went quiet for the afternoon, which is usually a sign with me.\" [Describe the Signals]", guideBack: "What happened in your body or head", bundle: 'pro' },
+        { q: "You are about to escalate to make the feeling believable.", a: "\"Let's leave this here. I'll come back to it when I'm less wound up.\" [Announce the Pause]", guideBack: "The moment you're taking, said out loud", bundle: 'pro' },
       ]
     },
     {
@@ -2613,6 +2670,9 @@ const challengesCollections = {
         { q: "You realise mid-sentence that you have misjudged it.", a: "\"Ignore me, I'm guessing. Tell me what it actually was.\" [Label Their Emotion]", guideBack: "A tentative name for what they felt", bundle: 'pro' },
         { q: "They correct you and you feel the urge to defend the guess.", a: "\"You're right, that's a better word for it.\" [Label Their Emotion]", guideBack: "A tentative name for what they felt", bundle: 'pro' },
         { q: "You have offered two words and neither fit.", a: "\"I'll stop guessing. What was the worst part of it?\" [Label Their Emotion]", guideBack: "A tentative name for what they felt", bundle: 'pro' },
+        { q: "You said frustrated and they said no, tired.", a: "\"Tired, then. That's a different thing entirely — sorry.\" [Label Their Emotion]", guideBack: "A tentative name for what they felt", bundle: 'pro' },
+        { q: "They accept the word but without any conviction.", a: "\"I might be off. What would you call it?\" [Label Their Emotion]", guideBack: "A tentative name for what they felt", bundle: 'pro' },
+        { q: "You are about to explain why your guess was reasonable.", a: "\"Doesn't matter why I thought it. What was it actually like?\" [Label Their Emotion]", guideBack: "A tentative name for what they felt", bundle: 'pro' },
       ]
     },
   ],
@@ -2628,6 +2688,9 @@ const challengesCollections = {
         { q: "You are about to say \"you made me feel small\".", a: "\"I felt small standing there.\" [Name Your Feeling]", guideBack: "A feeling, owned as yours", bundle: 'pro' },
         { q: "You are about to describe what they intended.", a: "\"You said it in front of everyone. I don't know what you meant by it.\" [Say What Happened]", guideBack: "The event, as a camera would see it", bundle: 'pro' },
         { q: "They have started arguing with your description of them.", a: "\"Leave that word out. The bit I care about is being asked first.\" [Say What You Need]", guideBack: "The need underneath", bundle: 'pro' },
+        { q: "You have used the word obviously about their motives.", a: "\"Let me take the interpretation out: you replied to the group and not to me.\" [Say What Happened]", guideBack: "The event, as a camera would see it", bundle: 'pro' },
+        { q: "Your first sentence contains an adjective about them.", a: "\"Cutting the adjective: the message went out on Thursday without my name on it.\" [Say What Happened]", guideBack: "The event, as a camera would see it", bundle: 'pro' },
+        { q: "They have asked you to say what you actually saw.", a: "\"What I saw was the door shut and the meeting start. That's the whole of it.\" [Say What Happened]", guideBack: "The event, as a camera would see it", bundle: 'pro' },
       ]
     },
     {
@@ -2641,6 +2704,9 @@ const challengesCollections = {
         { q: "They ask what you want them to do.", a: "\"Just check it on your way up. That's the whole thing.\" [Make a Request]", guideBack: "A request they could say yes to", bundle: 'pro' },
         { q: "You are not sure what you actually need.", a: "\"I'm still working out why it got to me. Give me a minute.\" [Say What You Need]", guideBack: "The need underneath", bundle: 'pro' },
         { q: "You have made it clear something is wrong and left it there.", a: "\"I've said what's wrong and not what I'd like. What I'd like is a text.\" [Make a Request]", guideBack: "A request they could say yes to", bundle: 'pro' },
+        { q: "You have named the feeling twice and asked for nothing.", a: "\"What I need is to know before it's decided, not after.\" [Say What You Need]", guideBack: "The need underneath", bundle: 'pro' },
+        { q: "They are waiting and you are hoping they will guess.", a: "\"Could you send me a line before you answer for both of us next time?\" [Make a Request]", guideBack: "A request they could say yes to", bundle: 'pro' },
+        { q: "Your request was so vague they cannot act on it.", a: "\"Concretely: a message on the day, not the week after.\" [Make a Request]", guideBack: "A request they could say yes to", bundle: 'pro' },
       ]
     },
     {
@@ -2654,6 +2720,9 @@ const challengesCollections = {
         { q: "It is late and you are both exhausted.", a: "\"This'll go badly if we do it now. Tomorrow morning?\" [Make a Request]", guideBack: "A request they could say yes to", bundle: 'pro' },
         { q: "You said you would come back to it and the day has arrived.", a: "\"I said I'd bring this up today. Can I?\" [Say What Happened]", guideBack: "The event, as a camera would see it", bundle: 'pro' },
         { q: "You are avoiding it rather than deferring it.", a: "\"I keep putting this off. When I came down on Tuesday the door was unlocked.\" [Say What Happened]", guideBack: "The event, as a camera would see it", bundle: 'pro' },
+        { q: "The children are in the next room.", a: "\"Not now — can we do this after eight, when it's just us?\" [Make a Request]", guideBack: "A request they could say yes to", bundle: 'pro' },
+        { q: "You are about to raise it as they walk out of the door.", a: "\"This will keep. Can we take twenty minutes tonight?\" [Make a Request]", guideBack: "A request they could say yes to", bundle: 'pro' },
+        { q: "You have waited a week for the right moment and it has not come.", a: "\"There's something from last Tuesday I still want to say. Is now all right?\" [Say What Happened]", guideBack: "The event, as a camera would see it", bundle: 'pro' },
       ]
     },
     {
@@ -2667,6 +2736,9 @@ const challengesCollections = {
         { q: "You have finished and their thing is still waiting.", a: "\"Right — now say yours. Properly.\" [Ask What They Felt]", guideBack: "An invitation to tell it their way", bundle: 'pro' },
         { q: "You are about to dismiss theirs to protect yours.", a: "\"I don't want to talk you out of that. I do want to finish this bit.\" [Say What You Need]", guideBack: "The need underneath", bundle: 'pro' },
         { q: "Theirs turns out to be bigger than yours.", a: "\"That's more important than mine. Start there.\" [Ask What They Felt]", guideBack: "An invitation to tell it their way", bundle: 'pro' },
+        { q: "They open with something from three months ago.", a: "\"I want to hear that one. Can I finish this first, and then it's yours?\" [Make a Request]", guideBack: "A request they could say yes to", bundle: 'pro' },
+        { q: "Both of you are now describing each other.", a: "\"Back to what happened: the shift changed and I heard it from Ella.\" [Say What Happened]", guideBack: "The event, as a camera would see it", bundle: 'pro' },
+        { q: "Their grievance has landed and you still have yours.", a: "\"How did it feel for you when I did that?\" [Ask What They Felt]", guideBack: "An invitation to tell it their way", bundle: 'pro' },
       ]
     },
     {
@@ -2680,6 +2752,9 @@ const challengesCollections = {
         { q: "You have accused them of something they did not do.", a: "\"I got that wrong and I'm sorry — I'd assumed.\" [Say What Happened]", guideBack: "The event, as a camera would see it", bundle: 'pro' },
         { q: "The need stands even though the incident does not.", a: "\"The Tuesday thing wasn't what I thought. I'd still like to be told earlier.\" [Say What You Need]", guideBack: "The need underneath", bundle: 'pro' },
         { q: "You are about to defend your version rather than hear theirs.", a: "\"Go on. I'd rather have it right than be right.\" [Ask What They Felt]", guideBack: "An invitation to tell it their way", bundle: 'pro' },
+        { q: "Their version explains everything except how you felt.", a: "\"That does change it. I still felt shut out, and I'd rather say so than pretend.\" [Name Your Feeling]", guideBack: "A feeling, owned as yours", bundle: 'pro' },
+        { q: "You have realised halfway through that you had the day wrong.", a: "\"I've got the day wrong, which weakens most of that. The part I meant stands.\" [Say What Happened]", guideBack: "The event, as a camera would see it", bundle: 'pro' },
+        { q: "You are about to keep going rather than admit the mistake.", a: "\"What was it like from where you were? I think I've built this wrong.\" [Ask What They Felt]", guideBack: "An invitation to tell it their way", bundle: 'pro' },
       ]
     },
   ],

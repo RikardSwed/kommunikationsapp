@@ -3930,6 +3930,14 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.84', date: 'September 2026', title: 'Volume sweep, Challenges round 2 — five packs filled', audience: 'dev',
+    items: [
+      '<strong>Conflict Emotions</strong>, <strong>Emotion Labelling and Regulation</strong>, <strong>Supporting Conversations</strong>, <strong>Apologizing — Pt. 2</strong> and <strong>Giving Criticism</strong>: every Challenges deck goes from five cards to eight. 75 cards, all carrying one of the pack\'s own strategies and inheriting its back guide.',
+      'No new decks and no category decisions in this round — the five packs already had the right five situations, they were simply three cards short in each.',
+      'Challenges now stands at 40 cards in twelve of the twenty-two packs under spec. 154 cards left in the pass, across ten packs.',
+    ],
+  },
+  {
     version: 'v1.28.83', date: 'September 2026', title: 'Volume sweep, Challenges round 1 — 162 cards, ten new decks', audience: 'dev',
     items: [
       'The seven packs where Challenges needed a decision rather than just filling. All seven now stand at the spec: <strong>5 decks, 40 cards</strong>.',
