@@ -1042,6 +1042,22 @@ const mindsetCollections = {
         { q: "You said something warm and they deflated.", a: "\"Too generic. Name the actual thing and try again.\"", bundle: 'pro' },
       ]
     },
+    {
+      name: "The Naming It Costs Something Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind the fourth move: the pack's other three cost you nothing, and this one does.\n\nReflecting a feeling, normalising a reaction and crediting a perspective can all be done sincerely without taking a position on what happened. That is what makes them safe, and it is also why they sometimes fall flat — the person can hear that you have not said anything about the thing itself.\n\nThe three thoughts that cause the trouble:\n1. \"If I say it was wrong I'm taking sides\" — you are, about one named action.\n2. \"I don't know the whole story\" — then say which part you are speaking to.\n3. \"It'll get repeated back to me\" — name the action rather than the person and you can stand behind it.\n\nMindset: say it only when you mean it. A hedged version of this move is worse than not making it.",
+      inputs: [
+        { q: "You can see it was unfair but you stay on the feeling.", a: "\"The feeling isn't the only thing that's true here. I can say the rest.\"", bundle: 'free' },
+        { q: "Saying it was wrong feels like picking a side.", a: "\"It is picking a side, about one action. That's allowed.\"", bundle: 'free' },
+        { q: "You don't know the whole story.", a: "\"Then I'll name the part I do know about and leave the rest open.\"", bundle: 'free' },
+        { q: "You worry it will be quoted back at you.", a: "\"Then I'll say what was done, not what somebody is.\"", bundle: 'free' },
+        { q: "You hedge it into something that means nothing.", a: "\"A hedged version is worse than none. Either I mean it or I don't say it.\"", bundle: 'free' },
+        { q: "Your sympathy keeps landing as politeness.", a: "\"Because I've validated everything except the thing that happened.\"", bundle: 'pro' },
+        { q: "You would say it to them but not about them.", a: "\"Then it's true enough to say out loud here.\"", bundle: 'pro' },
+        { q: "They are defending the person who did it.", a: "\"I can hold both — that he had reasons, and that this part wasn't on.\"", bundle: 'pro' },
+      ]
+    },
   ],
   supportingconversations: [
     {
@@ -1650,6 +1666,22 @@ const mindsetCollections = {
         { q: "You promise a change just to end the conversation.", a: "\"A promise I make to escape isn't one I'll keep. Better to say I'll think.\"", bundle: 'pro' },
         { q: "You defend yourself because silence feels worse.", a: "\"Thinking out loud beats defending. 'I hadn't seen it that way' is honest.\"", bundle: 'pro' },
         { q: "You worry that taking time looks like avoiding it.", a: "\"Naming when I'll come back is what makes the pause honest instead of evasive.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Time Is Not Avoidance Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind asking for time: a pause with a date on it is the opposite of avoidance.\n\nMost people swallow the request because they think it looks evasive, and answer immediately instead. The immediate answer is almost always either a defence or a promise, and both are worse than the one they would have given the next morning.\n\nThe three thoughts that cause the trouble:\n1. \"Asking for time looks like I can't take it\" — it looks like you intend to take it seriously.\n2. \"If I don't answer now they'll think I disagree\" — say when you will answer and they will not.\n3. \"I'll sound like I'm stalling\" — only if you leave the date out.\n\nMindset: the return time is what separates thinking about it from burying it.",
+      inputs: [
+        { q: "You feel you have to respond in the moment.", a: "\"A good answer tomorrow beats a defensive one now.\"", bundle: 'free' },
+        { q: "Asking for time feels like weakness.", a: "\"It's the opposite. It says I intend to do something with this.\"", bundle: 'free' },
+        { q: "You worry the silence will be read as disagreement.", a: "\"Then I'll say when I'm coming back. That's what removes the doubt.\"", bundle: 'free' },
+        { q: "You have said \"I'll think about it\" and not meant it before.", a: "\"Then this time it gets a day attached to it.\"", bundle: 'free' },
+        { q: "The feedback landed hard and you want to leave the room.", a: "\"Leaving with a return time is fine. Leaving without one isn't.\"", bundle: 'free' },
+        { q: "You think asking will annoy them.", a: "\"Most people would rather wait a day than be managed on the spot.\"", bundle: 'pro' },
+        { q: "You are tempted to promise something to end the conversation.", a: "\"A promise I haven't thought about is a second problem, not a solution.\"", bundle: 'pro' },
+        { q: "You are worried you will lose your nerve overnight.", a: "\"Then I'll say the one thing I already agree with before I go.\"", bundle: 'pro' },
       ]
     },
   ],
@@ -3795,6 +3827,22 @@ const mindsetCollections = {
         { q: "They ask where it fits after you have finished.", a: "\"That question means I explained the thing and not its place. Answer it first next time.\"", bundle: 'pro' },
         { q: "You have described something accurately and it floated away.", a: "\"Accurate and unplaced. What does it come after, and what comes next?\"", bundle: 'pro' },
         { q: "You are about to open with how it works.", a: "\"Shelf first. Where it belongs and who it is for, then the mechanics.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Edge Is Part of the Answer",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind marking the edge: a clear limit makes the rest of an answer usable.\n\nThe fear is that saying \"I don't know\" makes you look unprepared. What it actually does is the opposite — an answer with no stated edge has to be taken whole or not at all, and most listeners quietly choose not at all.\n\nThe three thoughts that cause the trouble:\n1. \"Admitting the gap undermines the rest\" — it does the reverse; it tells them which part to trust.\n2. \"They asked me, so I should have an answer\" — they asked you for what you know, not for a complete one.\n3. \"A guess is better than nothing\" — not when it arrives in the same voice as the facts.\n\nMindset: the edge is part of the answer, not a hole in it.",
+      inputs: [
+        { q: "You are about to keep talking past what you know.", a: "\"The useful bit is the part I'm sure of. I'll stop there.\"", bundle: 'free' },
+        { q: "Admitting the gap feels like admitting incompetence.", a: "\"Knowing where my knowledge stops is knowing my subject.\"", bundle: 'free' },
+        { q: "You think a guess is better than nothing.", a: "\"Not if they can't hear that it's a guess. Then it's worse than nothing.\"", bundle: 'free' },
+        { q: "They asked you specifically and you feel you owe them all of it.", a: "\"They asked for what I know. That's what I'll give them.\"", bundle: 'free' },
+        { q: "You worry the answer sounds thin without the extra bit.", a: "\"A short true answer beats a long one they have to check.\"", bundle: 'free' },
+        { q: "You have just been caught out on something you invented.", a: "\"That's the cost. Next time I say where I stop.\"", bundle: 'pro' },
+        { q: "Somebody senior is in the room and you do not want to look unsure.", a: "\"Being precise about the limit reads as confidence, not doubt.\"", bundle: 'pro' },
+        { q: "You are tempted to hand over rather than answer at all.", a: "\"I can still give them the two thirds I have. That's not nothing.\"", bundle: 'pro' },
       ]
     },
   ],

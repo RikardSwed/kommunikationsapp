@@ -3930,6 +3930,16 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.82', date: 'September 2026', title: 'Volume sweep, pass 0 — three new strategies', audience: 'dev',
+    items: [
+      'The volume sweep opens with the three strategies the name batches asked for, because a new strategy adds cards to Single Strategy, Mindset and Memorize at once &mdash; built later, parts of those passes would be rewritten.',
+      '<strong>Where Your Knowledge Ends</strong> (Explain Things &mdash; Pt. 2): answer as far as you actually know and mark the line after it, instead of letting the sentence drift into guesswork. The pack goes from five strategies to six.',
+      '<strong>Ask for Time</strong> (Receiving Feedback and Criticism): say you want to think, and say when you will come back. Four sequence steps had been waiting for it since batch 4 &mdash; <em>Say you need time</em> and <em>Name when you will come back</em> now carry its guide.',
+      '<strong>Say What Was Not Okay</strong> (Validation): name the specific part of what happened that was wrong &mdash; the event, not the feeling. The pack had three strategies, all of which validate how somebody felt, reacted or thought; none said anything about what was done to them. It is the only move in the pack that involves agreeing, so it names an action rather than a person.',
+      'Each brought 8 Single Strategy cards, a Mindset deck and a Memorize deck &mdash; 72 cards. The Core Idea decks were updated where they counted the pack\'s moves.',
+    ],
+  },
+  {
     version: 'v1.28.81', date: 'September 2026', title: 'Names and guides, batch 6 — the last one', audience: 'dev',
     items: [
       'The final batch: <strong>Story Banter</strong>, <strong>Role Based Humour</strong>, <strong>Reframing</strong>, plus the 64 cards in <strong>Storytelling with the Six W\'s</strong> that never received their inherited back guide. All 20 strategies now have their own guide pair. <strong>Every strategy in all 52 release packs has one.</strong>',

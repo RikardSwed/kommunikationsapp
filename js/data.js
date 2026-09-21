@@ -1619,6 +1619,22 @@ const collections = {
         { q: "They say: \"Everyone keeps telling me I handled it badly.\"", a: "\"You were trying to keep it from blowing up. That's a legitimate thing to aim for.\"", bundle: 'pro' },
       ]
     },
+    {
+      name: "Say What Was Not Okay",
+      guideFront: "Say which part of it was not okay when...",
+      guideBack: "The specific thing that should not have happened",
+      description: "Name the specific part of what happened that was not okay — the event, not the feeling. \"Being told afterwards wasn't fair on you.\"\n\nIt works because the other three moves validate how they felt, how they reacted and how they thought. None of them says anything about what was actually done to them, and sometimes that is the only thing that will land.\n\nThe rule that keeps it safe is the pack's own: name the object. \"That was out of order\" is a verdict on a person and can be quoted back at you. \"Deciding it without telling you wasn't fair\" is a verdict on one action, and it is one you can stand behind.\n\nUse it only where you mean it. This is the one move in the pack that does involve agreeing, so a vague version of it is worse than none.\n\nTypical phrases: \"That part wasn't fair.\", \"They shouldn't have done that bit.\", \"Whatever else is going on, being left out of it was wrong.\", \"I can't speak to the rest, but that wasn't okay.\"\n\nThree ways to keep it specific:\n\n1. Name one action — \"Deciding it without telling you wasn't fair.\"\n\n2. Separate it from the rest — \"I don't know the whole story. That bit I do know about, and it wasn't on.\"\n\n3. Say what should have happened instead — \"You should have been on that email.\"\n\nMindset: validating a feeling costs you nothing. Saying that something was wrong does cost something, which is exactly why it carries weight when it is true.",
+      inputs: [
+        { q: "A friend was told about the restructure after everyone else.", a: "\"Being told last wasn't fair on you. That bit's straightforward.\"", bundle: 'free' },
+        { q: "They are describing it and waiting to see whether you will say it.", a: "\"I'll say it: that shouldn't have happened.\"", bundle: 'free' },
+        { q: "You only know one part of the story but that part is clear.", a: "\"I don't know the rest. Leaving you off the email was wrong, though.\"", bundle: 'free' },
+        { q: "You want to say it without making it about the person.", a: "\"I'm not going to call him anything. Changing it without asking you wasn't on.\"", bundle: 'free' },
+        { q: "They keep asking whether they overreacted.", a: "\"You didn't. What they did wasn't okay, and the reaction fits it.\"", bundle: 'free' },
+        { q: "Your validation has sounded like sympathy and they want more.", a: "\"It's not just that it's hard. It was unfair, and I'd say so to them.\"", bundle: 'pro' },
+        { q: "You agree about one part and not about the rest.", a: "\"The meeting thing I'd defend you on. The rest I'd want to hear both sides of.\"", bundle: 'pro' },
+        { q: "They are minimising something that was not small.", a: "\"You're making that sound smaller than it was. Being moved without notice isn't nothing.\"", bundle: 'pro' },
+      ]
+    },
   ],
   supportingconversations: [
     {
@@ -2403,6 +2419,22 @@ const collections = {
         { q: "Your manager says: \"You take on too much and then miss deadlines.\"", a: "\"That's landed. I think you might be right about the taking on part.\"", bundle: 'pro' },
         { q: "A friend says: \"You get defensive whenever anyone gives you feedback.\"", a: "\"That's an uncomfortable one. I'd like to think about it properly.\"", bundle: 'pro' },
         { q: "A colleague says: \"You're hard to reach when things get busy.\"", a: "\"I see it a bit differently, but I don't want to dismiss it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for Time",
+      guideFront: "Ask for time before you answer when...",
+      guideBack: "A pause, with a return time on it",
+      description: "Say that you want time before you answer, and say when you will come back. \"Can I think about that and come back to you tomorrow?\"\n\nIt works because the worst answers to criticism are the fast ones. A request for time turns a defensive reflex into a considered reply, and naming the return stops the pause being read as avoidance.\n\nThe return time is the whole thing. \"I'll think about it\" with no date is how feedback gets buried, and both of you know it.\n\nTypical phrases: \"Can I sit with that?\", \"Give me till tomorrow and I'll have something useful to say.\", \"I want to answer properly rather than quickly.\", \"Can we pick this up on Thursday?\"\n\nThree ways to ask:\n\n1. Name the time — \"Tomorrow morning? I'll have thought about it by then.\"\n\n2. Say why — \"I'd rather not answer that badly. Let me think.\"\n\n3. Take the first step now — \"You're right about the deadline. The rest I need to sit with.\"\n\nNot the same as Announce the Pause in Emotion Labelling, which steadies a feeling in the middle of something. This one buys a better answer, and the feeling can carry on.\n\nMindset: asking for time is not a stalling tactic and it is not an admission. It is the difference between a reply you mean and a reply you produced under pressure.",
+      inputs: [
+        { q: "Your manager has just given you something big and you feel your face go hot.", a: "\"Can I think about that and come back to you tomorrow?\"", bundle: 'free' },
+        { q: "A friend says something true and you want to argue instead.", a: "\"I want to answer that properly. Give me till the weekend.\"", bundle: 'free' },
+        { q: "The feedback came at the end of a long day.", a: "\"I'm not at my best right now. Can we pick it up on Thursday?\"", bundle: 'free' },
+        { q: "You agree with part of it and need time on the rest.", a: "\"You're right about the deadline. The rest I need to sit with.\"", bundle: 'free' },
+        { q: "You said \"I'll think about it\" last time and never went back.", a: "\"I'll think about it — and I'll come and find you on Friday.\"", bundle: 'free' },
+        { q: "They are waiting for a reaction and you have none yet.", a: "\"Honestly, I don't know what I think yet. Can I tell you Monday?\"", bundle: 'pro' },
+        { q: "You can feel a defensive sentence forming.", a: "\"Let me not answer that now. I'd only be defending myself.\"", bundle: 'pro' },
+        { q: "The conversation needs to end but the subject does not.", a: "\"Let's leave it there for today. I'll bring it back up next week.\"", bundle: 'pro' },
       ]
     },
     {
@@ -5797,6 +5829,22 @@ const collections = {
         { q: "You cannot tell which part they are stuck on.", a: "\"Do you want what it is, or what it's for? I'll do either.\"", bundle: 'pro' },
         { q: "You gave the definition and they still look blank.", a: "\"That was the what and it didn't help. The point of it is that you stop chasing people.\"", bundle: 'pro' },
         { q: "They asked a broad question ten seconds before a meeting.", a: "\"One line: it's the form that gets you a room. The rest can wait.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Where Your Knowledge Ends",
+      guideFront: "Answer as far as you know when...",
+      guideBack: "The part you know, and the line after it",
+      description: "Answer the part you actually know, and mark clearly where your knowledge stops, instead of letting the sentence drift into guesswork. Example: \"It ends up in the shared folder. How it gets there I couldn't tell you.\"\n\nIt works because an explanation with a stated edge is more useful than one without. The listener knows which part to rely on and which part to check, and they stop having to guess how sure you are.\n\nThe failure it prevents is the slow slide: you answer confidently, keep going past what you know, and the guess arrives in the same tone of voice as the fact. Nobody can hear the join.\n\nTypical phrases: \"Up to there I'm sure. After that, no idea.\", \"That much I know — the rest you'd have to ask…\", \"I could guess, but it would be a guess.\", \"Two of the three, anyway.\"\n\nThree ways to mark the edge:\n\n1. Answer, then stop — \"It goes to the shared folder. How it gets there I couldn't tell you.\"\n\n2. Split it — \"The what I can do. The why is somebody else's.\"\n\n3. Flag the guess as a guess — \"I think it's monthly. Don't build anything on that.\"\n\nMindset: saying where you stop is not an admission that you do not know your subject. It is the thing that makes the rest of what you said usable.",
+      inputs: [
+        { q: "Somebody asks how the payroll system actually calculates the tax.", a: "\"I know it comes out on the 25th. How it's worked out I couldn't tell you.\"", bundle: 'free' },
+        { q: "You have answered two thirds of the question well.", a: "\"That's the what and the when. The why you'd have to ask Anna.\"", bundle: 'free' },
+        { q: "You can feel yourself about to guess at a number.", a: "\"I think it's about a third. That's a guess, so don't quote me.\"", bundle: 'free' },
+        { q: "They ask where a rule came from and you only know the rule.", a: "\"That's the rule, anyway. Where it came from, no idea.\"", bundle: 'free' },
+        { q: "You explained the part you know and they are waiting for more.", a: "\"That's genuinely the end of what I know about it.\"", bundle: 'free' },
+        { q: "Your answer was right and then drifted into invention.", a: "\"Ignore the last bit — I was filling in. The first part stands.\"", bundle: 'pro' },
+        { q: "They want certainty you do not have.", a: "\"I can tell you what usually happens. I can't promise it for Friday.\"", bundle: 'pro' },
+        { q: "Somebody else in the room knows the rest.", a: "\"I'm at the edge of mine. Kalle does this bit properly.\"", bundle: 'pro' },
       ]
     },
   ],

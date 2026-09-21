@@ -1662,8 +1662,8 @@ const memorizeCollections = {
       cards: [
         { q: "What is validation?", a: "Acknowledging someone's thoughts, feelings and experiences as understandable and reasonable.", bundle: 'free' },
         { q: "Does validating mean agreeing?", a: "No. It's about acknowledging, not agreeing — you can validate someone you think is mistaken.", bundle: 'free' },
-        { q: "What are the three moves in this pack?", a: "Reflect the Feeling, Normalise the Reaction, Acknowledge the Perspective.", bundle: 'free' },
-        { q: "What are the three things you can validate?", a: "What they felt, how they reacted, and how they thought. One move for each.", bundle: 'free' },
+        { q: "What are the four moves in this pack?", a: "Reflect the Feeling, Normalise the Reaction, Acknowledge the Perspective, Say What Was Not Okay.", bundle: 'free' },
+        { q: "What are the four things you can validate?", a: "What they felt, how they reacted, how they thought, and what was done to them. One move for each.", bundle: 'free' },
         { q: "What does validation actually do?", a: "Builds trust, reduces defensiveness, encourages openness and supports emotional regulation.", bundle: 'pro' },
         { q: "Which move works when you disagree with them?", a: "Acknowledge the Perspective — you validate the route without endorsing the destination.", bundle: 'pro' },
         { q: "What is the most common mistake?", a: "Validating the feeling when someone is defending a decision. They want their thinking credited, not their emotions handled.", bundle: 'pro' },
@@ -1701,6 +1701,20 @@ const memorizeCollections = {
         { q: "Why is it the move for disagreement?", a: "You're validating the route, not the destination. That can be honest even when you think the call was wrong.", bundle: 'free' },
         { q: "What are the three ways to acknowledge it?", a: "Validate the choice, the reasoning, or the priority.", bundle: 'pro' },
         { q: "When is it the right move over reflecting the feeling?", a: "When someone is defending a decision — they want to hear their thinking wasn't stupid.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say What Was Not Okay",
+      description: "The theory behind the fourth move: validating the event rather than the feeling, and the rule that keeps it safe.",
+      cards: [
+        { q: "What is Say What Was Not Okay?", a: "Naming the specific part of what happened that was not acceptable — the event, not the feeling.", bundle: 'free' },
+        { q: "What does it sound like?", a: "\"Being told afterwards wasn't fair on you.\"", bundle: 'free' },
+        { q: "Why does the pack need it?", a: "The other three validate how they felt, reacted and thought. None of them says anything about what was done to them.", bundle: 'free' },
+        { q: "What is the rule that keeps it safe?", a: "Name the action, not the person. \"That decision wasn't fair\" can be stood behind; \"he's out of order\" cannot.", bundle: 'free' },
+        { q: "What are the three ways to keep it specific?", a: "Name one action, separate it from the rest of the story, or say what should have happened instead.", bundle: 'free' },
+        { q: "How is it different from the other three moves?", a: "It is the only one that involves agreeing, so it costs something — which is why it carries weight.", bundle: 'pro' },
+        { q: "When should you not use it?", a: "When you do not mean it. A hedged version of this move is worse than not making it.", bundle: 'pro' },
+        { q: "What if you only know part of the story?", a: "Say which part you are speaking to and leave the rest open. That is still a real thing to have said.", bundle: 'pro' },
       ]
     },
   ],
@@ -2596,6 +2610,7 @@ const memorizeCollections = {
         { q: "What is the goal when you receive criticism?", a: "Take it in without becoming defensive, show you understood, and get something useful out of it.", bundle: 'free' },
         { q: "What are the four steps of the response process?", a: "Acknowledge the feedback, show you understand their view, reflect openly, look ahead.", bundle: 'free' },
         { q: "What is the fifth move in this pack?", a: "The Short Response — the whole thing in one line, for small or passing feedback.", bundle: 'free' },
+        { q: "What is the sixth move?", a: "Ask for Time — say you want to think about it, and say when you will come back.", bundle: 'free' },
         { q: "What is the core mindset?", a: "Feedback is about behaviour, not your worth. Stay calm and open even when it's unexpected.", bundle: 'free' },
         { q: "Do you have to agree with feedback to respond well?", a: "No. You can run all four steps honestly and still say you see it differently at step three.", bundle: 'pro' },
         { q: "What is the most common mistake?", a: "Jumping straight to a promise or a defence, before the person feels heard.", bundle: 'pro' },
@@ -2655,6 +2670,20 @@ const memorizeCollections = {
         { q: "When do you use it?", a: "When the feedback is light, and running four steps would make it heavier than it was.", bundle: 'free' },
         { q: "What stops it sounding dismissive?", a: "Tone, not length. A warm one-liner reads fine; a flat one reads as a brush-off.", bundle: 'pro' },
         { q: "When is it the wrong choice?", a: "When someone worked up the nerve to say something — then a one-liner feels like a brush-off.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for Time",
+      description: "The theory behind buying time: why fast answers to criticism are bad ones, and what makes a pause land as intent rather than avoidance.",
+      cards: [
+        { q: "What is Ask for Time?", a: "Saying you want to think before you answer, and naming when you will come back.", bundle: 'free' },
+        { q: "What does it sound like?", a: "\"Can I think about that and come back to you tomorrow?\"", bundle: 'free' },
+        { q: "Which part of it does the work?", a: "The return time. \"I'll think about it\" with no date is how feedback gets buried.", bundle: 'free' },
+        { q: "What are the three ways to ask?", a: "Name the time, say why, or take the first step now and hold the rest.", bundle: 'free' },
+        { q: "Why are fast answers to criticism bad?", a: "They are almost always a defence or a promise, and neither has been thought about.", bundle: 'free' },
+        { q: "How is it different from Announce the Pause in Emotion Labelling?", a: "That one steadies a feeling mid-conversation. This one buys a better answer; the feeling can carry on.", bundle: 'pro' },
+        { q: "When does it read as stalling?", a: "When the date is missing. With a date it reads as intent.", bundle: 'pro' },
+        { q: "What can you do before you leave?", a: "Concede the part you already agree with, so the pause is not read as resistance to all of it.", bundle: 'pro' },
       ]
     },
   ],
@@ -6021,6 +6050,7 @@ const memorizeCollections = {
         { q: "Which three does this pack cover?", a: "When it comes up, where it belongs and who it is for.", bundle: 'free' },
         { q: "What do the first three do, and what do these three do?", a: "The first three make something understandable; these three make it placed — they answer whether it has anything to do with the listener.", bundle: 'pro' },
         { q: "Do you use all six every time?", a: "No. They are a menu. Serving them in order is how an explanation becomes a lecture.", bundle: 'pro' },
+        { q: "What does this pack add beyond the three W's?", a: "Where Your Knowledge Ends — answering as far as you know and marking the line after it.", bundle: 'pro' },
         { q: "What is the difference from Storytelling with the Six W's?", a: "There the six describe an event. Here they explain a thing or an idea.", bundle: 'pro' },
       ]
     },
@@ -6082,6 +6112,20 @@ const memorizeCollections = {
         { q: "Someone is about to use the thing. Which W?", a: "How.", bundle: 'pro' },
         { q: "Someone is deciding whether to buy it. Which W?", a: "Who and When.", bundle: 'pro' },
         { q: "What is the six-word repair when you cannot tell?", a: "\"What it is, or what for?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Where Your Knowledge Ends",
+      description: "The concepts behind marking the edge of what you know: why a stated limit makes an answer usable, and the three ways to mark it.",
+      cards: [
+        { q: "What is Where Your Knowledge Ends?", a: "Answering as far as you actually know, and saying clearly where that stops.", bundle: 'free' },
+        { q: "What does it sound like?", a: "\"It ends up in the shared folder. How it gets there I couldn't tell you.\"", bundle: 'free' },
+        { q: "What failure does it prevent?", a: "The slow slide — answering past what you know, so the guess arrives in the same tone as the fact.", bundle: 'free' },
+        { q: "What are the three ways to mark the edge?", a: "Answer then stop, split it into the part you have and the part you don't, or flag the guess as a guess.", bundle: 'free' },
+        { q: "Why does a stated limit help the listener?", a: "They know which part to rely on and which to check, instead of guessing how sure you are.", bundle: 'free' },
+        { q: "Why is an unflagged guess worse than no answer?", a: "It is indistinguishable from the facts around it, so it contaminates them.", bundle: 'pro' },
+        { q: "When is this move most needed?", a: "When you know some of an answer well and the rest not at all — which is most of the time.", bundle: 'pro' },
+        { q: "How does it relate to Short Version First?", a: "Both cut the answer down. That one cuts for length; this one cuts for certainty.", bundle: 'pro' },
       ]
     },
   ],

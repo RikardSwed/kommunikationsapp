@@ -2967,8 +2967,8 @@ const multiStepCollections = {
           situation: "A friend tells you something true about yourself that you did not want to hear.",
           steps: [
             { front: "Step 1 · The Short Response — they say: \"You get defensive every time anyone gives you feedback.\"", back: "\"Okay. Thank you for saying it.\"", guideFront: "Answer small feedback in one line when...", guideBack: "The whole reply, in a sentence" },
-            { front: "Step 2 · Say you need time — you can feel yourself wanting to argue", back: "\"That's a hard one to hear. I'd like to think about it properly rather than answer now.\"" },
-            { front: "Step 3 · Name when you will come back — they look unsure whether it landed", back: "\"I'm not brushing it off. Can we pick it up at the weekend?\"" },
+            { front: "Step 2 · Ask for Time — you can feel yourself wanting to argue", back: "\"That's a hard one to hear. I'd like to think about it properly rather than answer now.\"", guideFront: "Ask for time before you answer when...", guideBack: "A pause, with a return time on it" },
+            { front: "Step 3 · Ask for Time — they look unsure whether it landed", back: "\"I'm not brushing it off. Can we pick it up at the weekend?\"", guideFront: "Ask for time before you answer when...", guideBack: "A pause, with a return time on it" },
           ]
         },
         {
@@ -2976,8 +2976,8 @@ const multiStepCollections = {
           situation: "Your manager criticises something you had worked very hard on.",
           steps: [
             { front: "Step 1 · The Short Response — they say: \"Honestly, this isn't close to what we needed.\"", back: "\"Right. Thanks for being straight with me.\"", guideFront: "Answer small feedback in one line when...", guideBack: "The whole reply, in a sentence" },
-            { front: "Step 2 · Say you need time — you can feel the heat rising", back: "\"I put a lot into this, so I need a bit of time before I respond properly.\"" },
-            { front: "Step 3 · Name when you will come back — they are waiting", back: "\"Can I come back to you tomorrow morning with what I'd change?\"" },
+            { front: "Step 2 · Ask for Time — you can feel the heat rising", back: "\"I put a lot into this, so I need a bit of time before I respond properly.\"", guideFront: "Ask for time before you answer when...", guideBack: "A pause, with a return time on it" },
+            { front: "Step 3 · Ask for Time — they are waiting", back: "\"Can I come back to you tomorrow morning with what I'd change?\"", guideFront: "Ask for time before you answer when...", guideBack: "A pause, with a return time on it" },
           ]
         },
       ]
