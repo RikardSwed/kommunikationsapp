@@ -6158,7 +6158,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Tell It With the Feeling In It",
+      name: "Put the Feeling In",
       description: "The theory behind the emotional telling.",
       cards: [
         { q: "Why does the feeling matter more than the events?", a: "Listeners follow feeling more closely than they follow events. Without it an account is a report.", bundle: 'free' },

@@ -3930,6 +3930,16 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.80', date: 'September 2026', title: 'Names and guides, batch 5 — questions and stories', audience: 'dev',
+    items: [
+      'Batch 5: <strong>Deep Questions</strong>, <strong>Listening Through Questions</strong>, <strong>Stories in Conversation</strong> and <strong>Building a Story</strong>. All 25 strategies get their own guide pair, 176 Collections and Challenges cards inherit their strategy\'s back guide, and <strong>73 of 74 sequence steps</strong> now carry theirs &mdash; up from 24.',
+      'One rename: <em>Tell It With the Feeling In It</em> &rarr; <strong>Put the Feeling In</strong>.',
+      '<strong>89 labels were invalid across two packs.</strong> 39 were the strategy in shorthand (<em>[detail]</em>, <em>[why]</em>, <em>[opening]</em>, <em>[turn]</em>) and translated straight across; 42 more were repair moves whose replies already did one of the pack\'s strategies. Four replies in Building a Story taught abandoning the story &mdash; which is <em>Cut It Loose</em> in the neighbouring pack &mdash; and were rewritten onto this pack\'s own moves.',
+      '<strong>Listening Through Questions lost four challenge cards.</strong> They answered an interview that had stalled by putting the question down and offering something instead. Seven question strategies in a row is how a conversation becomes an interrogation, but the answer is not an eighth question strategy: the material is lifted out as the seed of a pack about the border between asking and talking.',
+      'Sequence steps in three packs were the strategies in lowercase shorthand &mdash; <em>Detail</em>, <em>Why</em>, <em>Open</em>, <em>Turn</em>, <em>Takeaway</em>. 49 were renamed to the strategy they are, so they now inherit its guide like every other step.',
+    ],
+  },
+  {
     version: 'v1.28.79', date: 'September 2026', title: 'Names and guides, batch 4 — criticism, feedback, negotiation, examples', audience: 'dev',
     items: [
       'Batch 4: <strong>Giving Criticism</strong>, <strong>Receiving Feedback and Criticism</strong>, <strong>Negotiation and Compromise</strong> and <strong>Giving Examples</strong>. All 25 strategies were sharing one guide row per pack &mdash; <em>This is the step you are on. Say your version out loud.</em> and the like, which describe the exercise rather than the move. All 25 now have their own pair, 185 Collections and Challenges cards inherit their strategy\'s back guide, and 70 sequence steps carry theirs.',

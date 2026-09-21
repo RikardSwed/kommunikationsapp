@@ -724,11 +724,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "They reply in three words and hand you nothing back — no detail to build on. The training is to read it as a material problem rather than a rejection: go back to easy factual questions until something usable appears, then link to it. Best handled with Start with Simple Questions and Link and Go Deeper.\n\nWhat it usually sounds like:\n\n• \"Yeah, fine.\" and nothing after it.\n• One-word answers to everything you try.\n• \"It was alright I suppose.\"\n\nTwo ways through:\n1. Start with Simple Questions — go easier, not deeper. \"Okay, easier one — where did you grow up?\"\n2. Link and Go Deeper — use the one word they did give. \"You said alright — what would have made it good?\"\n\nMindset: read it as a material problem, not a rejection. Short answers usually mean they have not warmed up yet, not that they want you to stop.",
       inputs: [
-        { q: "You ask how their weekend was and get: \"Yeah, fine.\"", a: "\"Did you get to do anything, or was it all admin?\" [Start with Simple Questions]", bundle: 'pro' },
-        { q: "They answer every question with one word.", a: "\"Okay, easier one — where did you grow up?\" [Start with Simple Questions]", bundle: 'pro' },
-        { q: "They say: \"It was alright I suppose.\" and stop.", a: "\"You said alright — what would have made it good?\" [Link and Go Deeper]", bundle: 'pro' },
-        { q: "A new colleague gives you almost nothing to work with.", a: "\"What were you doing before you came here?\" [Start with Simple Questions]", bundle: 'pro' },
-        { q: "They answer: \"Work. That is about it.\"", a: "\"You said that is about it — is work eating everything at the moment?\" [Link and Go Deeper]", bundle: 'pro' },
+        { q: "You ask how their weekend was and get: \"Yeah, fine.\"", a: "\"Did you get to do anything, or was it all admin?\" [Start with Simple Questions]", guideBack: "A question anyone could answer", bundle: 'pro' },
+        { q: "They answer every question with one word.", a: "\"Okay, easier one — where did you grow up?\" [Start with Simple Questions]", guideBack: "A question anyone could answer", bundle: 'pro' },
+        { q: "They say: \"It was alright I suppose.\" and stop.", a: "\"You said alright — what would have made it good?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
+        { q: "A new colleague gives you almost nothing to work with.", a: "\"What were you doing before you came here?\" [Start with Simple Questions]", guideBack: "A question anyone could answer", bundle: 'pro' },
+        { q: "They answer: \"Work. That is about it.\"", a: "\"You said that is about it — is work eating everything at the moment?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
       ]
     },
     {
@@ -737,11 +737,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You want to ask something real, but you have known them four minutes and a big question would land as intrusive. The training is to notice you have not earned it yet and go one notch deeper instead of five. Best handled with Start with Simple Questions and Link and Go Deeper.\n\nWhat it usually looks like:\n\n• You have known them four minutes.\n• They mention something heavy in passing, very early.\n• You want to ask about family, health or money.\n\nTwo ways through:\n1. Start with Simple Questions — build the runway first. \"What made you come along tonight?\"\n2. Link and Go Deeper — go one notch deeper, not five. \"You said lately — is it a busy stretch?\"\n\nMindset: the question will still be there in ten minutes. Depth that arrives before trust does reads as prying, however kindly it is meant.",
       inputs: [
-        { q: "You have just met and want to ask something meaningful.", a: "\"What made you come along tonight?\" [Start with Simple Questions]", bundle: 'pro' },
-        { q: "You are tempted to ask a stranger about their family.", a: "\"Have you lived around here long?\" [Start with Simple Questions]", bundle: 'pro' },
-        { q: "They mention a divorce in passing, five minutes in.", a: "\"You said you moved recently — how is the new place?\" [Link and Go Deeper]", bundle: 'pro' },
-        { q: "A colleague you barely know mentions being tired lately.", a: "\"You said lately — is it a busy stretch at work?\" [Link and Go Deeper]", bundle: 'pro' },
-        { q: "You want to ask a big values question but it is far too early.", a: "\"What do you do when you are not at things like this?\" [Start with Simple Questions]", bundle: 'pro' },
+        { q: "You have just met and want to ask something meaningful.", a: "\"What made you come along tonight?\" [Start with Simple Questions]", guideBack: "A question anyone could answer", bundle: 'pro' },
+        { q: "You are tempted to ask a stranger about their family.", a: "\"Have you lived around here long?\" [Start with Simple Questions]", guideBack: "A question anyone could answer", bundle: 'pro' },
+        { q: "They mention a divorce in passing, five minutes in.", a: "\"You said you moved recently — how is the new place?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
+        { q: "A colleague you barely know mentions being tired lately.", a: "\"You said lately — is it a busy stretch at work?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
+        { q: "You want to ask a big values question but it is far too early.", a: "\"What do you do when you are not at things like this?\" [Start with Simple Questions]", guideBack: "A question anyone could answer", bundle: 'pro' },
       ]
     },
     {
@@ -750,11 +750,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "They open a door onto something painful or private, and your next question decides whether they feel safe. The training is to let them set the depth — ask what it was like rather than for details, or step back to something lighter. Best handled with Explore Experiences and Start with Simple Questions.\n\nWhat it usually sounds like:\n\n• An illness, a death or a rift mentioned in passing.\n• \"It's been a strange year, honestly.\"\n• They touch on something and then change the subject.\n\nTwo ways through:\n1. Explore Experiences — ask what it was like, not for details. \"What was that time like for you?\"\n2. Start with Simple Questions — take the exit they offered. \"Fair enough. What were you saying about the new job?\"\n\nMindset: let them set the depth. Asking what something was like leaves them free to answer in one sentence or twenty.",
       inputs: [
-        { q: "They mention: \"That was around the time my mum was ill.\"", a: "\"That is a lot at once — what was that time like for you?\" [Explore Experiences]", bundle: 'pro' },
-        { q: "They say: \"I do not really speak to my brother anymore.\"", a: "\"How long has that been the way of things?\" [Explore Experiences]", bundle: 'pro' },
-        { q: "They mention losing a job and go quiet.", a: "\"Sounds like a rough stretch. What are you doing now?\" [Start with Simple Questions]", bundle: 'pro' },
-        { q: "They say: \"It has been a strange year, honestly.\"", a: "\"You said strange — good strange or hard strange?\" [Link and Go Deeper]", bundle: 'pro' },
-        { q: "They touch on their health and then change the subject.", a: "\"Fair enough. What were you saying about the new job?\" [Start with Simple Questions]", bundle: 'pro' },
+        { q: "They mention: \"That was around the time my mum was ill.\"", a: "\"That is a lot at once — what was that time like for you?\" [Explore Experiences]", guideBack: "A question about something they lived through", bundle: 'pro' },
+        { q: "They say: \"I do not really speak to my brother anymore.\"", a: "\"How long has that been the way of things?\" [Explore Experiences]", guideBack: "A question about something they lived through", bundle: 'pro' },
+        { q: "They mention losing a job and go quiet.", a: "\"Sounds like a rough stretch. What are you doing now?\" [Start with Simple Questions]", guideBack: "A question anyone could answer", bundle: 'pro' },
+        { q: "They say: \"It has been a strange year, honestly.\"", a: "\"You said strange — good strange or hard strange?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
+        { q: "They touch on their health and then change the subject.", a: "\"Fair enough. What were you saying about the new job?\" [Start with Simple Questions]", guideBack: "A question anyone could answer", bundle: 'pro' },
       ]
     },
     {
@@ -763,11 +763,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You have asked four questions in a row and it has turned into a questionnaire — they answer, you fire again. The training is to hear the rhythm and fix it with linking, so the next question clearly comes out of what they just said instead of off a list in your head. Best handled with Link and Go Deeper and Explore Experiences.\n\nWhat it usually sounds like:\n\n• Four questions in a row with no reaction from you.\n• They answer, you immediately fire the next one.\n• They start giving shorter answers and look slightly cornered.\n\nTwo ways through:\n1. Link and Go Deeper — make the question come out of their answer. \"You said you did it for years — what kept you there?\"\n2. Explore Experiences — react first, then ask. \"That one surprised me — what was the reaction at home?\"\n\nMindset: what makes it an interview is not the number of questions, it is that none of them came from the answers.",
       inputs: [
-        { q: "You have asked four questions in a row with no reaction from you.", a: "\"You said you did it for years — what kept you there?\" [Link and Go Deeper]", bundle: 'pro' },
-        { q: "Your questions are starting to feel like a list.", a: "\"Wait, go back — the boat thing. How did that start?\" [Link and Go Deeper]", bundle: 'pro' },
-        { q: "They give short answers and look slightly cornered.", a: "\"Sorry, I am firing questions. What was the trip like, though?\" [Explore Experiences]", bundle: 'pro' },
-        { q: "You realise you have not reacted to a single answer yet.", a: "\"That one surprised me — what was the reaction at home?\" [Explore Experiences]", bundle: 'pro' },
-        { q: "It has become question, answer, next question.", a: "\"You mentioned the village earlier — what pulled you away from it?\" [Link and Go Deeper]", bundle: 'pro' },
+        { q: "You have asked four questions in a row with no reaction from you.", a: "\"You said you did it for years — what kept you there?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
+        { q: "Your questions are starting to feel like a list.", a: "\"Wait, go back — the boat thing. How did that start?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
+        { q: "They give short answers and look slightly cornered.", a: "\"Sorry, I am firing questions. What was the trip like, though?\" [Explore Experiences]", guideBack: "A question about something they lived through", bundle: 'pro' },
+        { q: "You realise you have not reacted to a single answer yet.", a: "\"That one surprised me — what was the reaction at home?\" [Explore Experiences]", guideBack: "A question about something they lived through", bundle: 'pro' },
+        { q: "It has become question, answer, next question.", a: "\"You mentioned the village earlier — what pulled you away from it?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
       ]
     },
     {
@@ -776,11 +776,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "The obvious questions are used up and your head is empty. The training is to stop hunting for a new subject and mine what they already told you — pick any detail from earlier and open it up. Best handled with Link and Go Deeper and Explore Values.\n\nWhat it usually looks like:\n\n• Work, home and the weekend are all covered.\n• A pause where neither of you speaks.\n• You start hunting for a brand new subject.\n\nTwo ways through:\n1. Link and Go Deeper — mine something from earlier. \"Earlier you said you had just moved — what made you pick here?\"\n2. Explore Values — go wide instead of new. \"What is the part of your week you actually look forward to?\"\n\nMindset: you do not need a new topic, you need one word from the last twenty minutes. They have already given you more material than you used.",
       inputs: [
-        { q: "You have covered work, home and the weekend and have nothing left.", a: "\"Earlier you said you had just moved — what made you pick here?\" [Link and Go Deeper]", bundle: 'pro' },
-        { q: "The conversation goes quiet and your mind is blank.", a: "\"What is the part of your week you actually look forward to?\" [Explore Values]", bundle: 'pro' },
-        { q: "You have asked everything obvious about their job.", a: "\"You said you fell into it — what would you do instead?\" [Link and Go Deeper]", bundle: 'pro' },
-        { q: "They finish an answer and neither of you speaks.", a: "\"What matters most to you outside all of that?\" [Explore Values]", bundle: 'pro' },
-        { q: "You are stuck for anything to ask next.", a: "\"You mentioned your brother earlier — what is he like?\" [Link and Go Deeper]", bundle: 'pro' },
+        { q: "You have covered work, home and the weekend and have nothing left.", a: "\"Earlier you said you had just moved — what made you pick here?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
+        { q: "The conversation goes quiet and your mind is blank.", a: "\"What is the part of your week you actually look forward to?\" [Explore Values]", guideBack: "A question about what matters to them", bundle: 'pro' },
+        { q: "You have asked everything obvious about their job.", a: "\"You said you fell into it — what would you do instead?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
+        { q: "They finish an answer and neither of you speaks.", a: "\"What matters most to you outside all of that?\" [Explore Values]", guideBack: "A question about what matters to them", bundle: 'pro' },
+        { q: "You are stuck for anything to ask next.", a: "\"You mentioned your brother earlier — what is he like?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
       ]
     },
   ],
@@ -1389,11 +1389,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "The most common moment for a story, and the one where the pull to compete is strongest. Their story ends, yours arrives fully formed, and it is bigger.\n\nAnswer Don't Outdo is the strategy. The size of your story is a decision, not a fact — you can tell the small version of almost anything, and the small version keeps this a conversation rather than a contest.\n\nRead the Room First matters here too, because sometimes the right move is no story at all. Someone who told theirs carefully may want a question about it rather than a matching one.\n\nMindset: theirs still has to be standing when yours is finished.",
       inputs: [
-        { q: "Their story ends and yours is bigger.", a: "\"Yours is worse than mine, but you've reminded me of something.\" [Answer, Don't Outdo]", bundle: 'pro' },
-        { q: "You are about to say \"that's nothing\".", a: "\"That's a good one. Mine's the same thing but smaller.\" [Answer, Don't Outdo]", bundle: 'pro' },
-        { q: "They told something they seemed nervous about telling.", a: "(ask about theirs first — the story can wait) [Read the Room First]", bundle: 'pro' },
-        { q: "The group has topped each other three times running.", a: "\"We're turning this into a competition. What happened after yours?\" [Answer, Don't Outdo]", bundle: 'pro' },
-        { q: "You want to tell yours and keep them as the source.", a: "\"You've just reminded me of a thing that happened in Malmö.\" [Answer, Don't Outdo]", bundle: 'pro' },
+        { q: "Their story ends and yours is bigger.", a: "\"Yours is worse than mine, but you've reminded me of something.\" [Answer, Don't Outdo]", guideBack: "A story that answers, not one that wins", bundle: 'pro' },
+        { q: "You are about to say \"that's nothing\".", a: "\"That's a good one. Mine's the same thing but smaller.\" [Answer, Don't Outdo]", guideBack: "A story that answers, not one that wins", bundle: 'pro' },
+        { q: "They told something they seemed nervous about telling.", a: "(ask about theirs first — the story can wait) [Read the Room First]", guideBack: "A story, or staying where you are", bundle: 'pro' },
+        { q: "The group has topped each other three times running.", a: "\"We're turning this into a competition. What happened after yours?\" [Answer, Don't Outdo]", guideBack: "A story that answers, not one that wins", bundle: 'pro' },
+        { q: "You want to tell yours and keep them as the source.", a: "\"You've just reminded me of a thing that happened in Malmö.\" [Answer, Don't Outdo]", guideBack: "A story that answers, not one that wins", bundle: 'pro' },
       ]
     },
     {
@@ -1402,11 +1402,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "More people means more ways to lose it. Someone is always half-listening, side conversations start, and the story has to work for the person who came in late as well as the one who knows the background.\n\nAsk for the Floor does more work here than anywhere — in a group, nobody has agreed to listen unless somebody asks. And Watch Them While You Tell It becomes watching several people, where the rule is to read the least engaged one rather than the most.\n\nGiving it back matters more too. In a group, a story that ends without a handover leaves an awkward beat that somebody has to fill.\n\nMindset: read the quietest face in the group, not the friendliest one.",
       inputs: [
-        { q: "Nobody has agreed to listen and you are about to start.", a: "\"Can I tell you all a short one? Two minutes.\" [Ask for the Floor]", bundle: 'pro' },
-        { q: "A side conversation has started while you are talking.", a: "\"I'll land this: the dog was fine, the fence wasn't.\" [Watch Them While You Tell It]", bundle: 'pro' },
-        { q: "One person is enjoying it and two clearly are not.", a: "\"Fast version, and I'll give you the rest later.\" [Watch Them While You Tell It]", bundle: 'pro' },
-        { q: "You finish and there is an awkward beat.", a: "\"That's mine. Somebody must have a worse one.\" [Give It Back]", bundle: 'pro' },
-        { q: "One person in the group has not said anything all evening.", a: "\"Sara, you've been in worse situations than that.\" [Give It Back]", bundle: 'pro' },
+        { q: "Nobody has agreed to listen and you are about to start.", a: "\"Can I tell you all a short one? Two minutes.\" [Ask for the Floor]", guideBack: "A request for the floor, with a length on it", bundle: 'pro' },
+        { q: "A side conversation has started while you are talking.", a: "\"I'll land this: the dog was fine, the fence wasn't.\" [Watch Them While You Tell It]", guideBack: "A cut or a continuation, based on their face", bundle: 'pro' },
+        { q: "One person is enjoying it and two clearly are not.", a: "\"Fast version, and I'll give you the rest later.\" [Watch Them While You Tell It]", guideBack: "A cut or a continuation, based on their face", bundle: 'pro' },
+        { q: "You finish and there is an awkward beat.", a: "\"That's mine. Somebody must have a worse one.\" [Give It Back]", guideBack: "The floor, passed back", bundle: 'pro' },
+        { q: "One person in the group has not said anything all evening.", a: "\"Sara, you've been in worse situations than that.\" [Give It Back]", guideBack: "The floor, passed back", bundle: 'pro' },
       ]
     },
     {
@@ -1415,11 +1415,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You are inside a story that is not working. The room is polite, you can feel it, and the instinct is to keep going and hope the ending rescues it. It will not.\n\nCut It Loose is the strategy, and the light version is almost always the right one. Naming it is a relief for everyone and usually gets a better reaction than the story would have.\n\nIf you are close to the end, Finish on Purpose instead — give the ending flat, in one sentence, and stop. A flat ending is a proper ending. Trailing off is not.\n\nMindset: abandoning early costs almost nothing. Finishing stubbornly costs a lot.",
       inputs: [
-        { q: "Three sentences in and it is clearly not working.", a: "\"This is going nowhere. Anyway — how was Denmark?\" [Cut It Loose]", bundle: 'pro' },
-        { q: "You have lost your own thread.", a: "\"I've completely lost the thread of my own story.\" [Cut It Loose]", bundle: 'pro' },
-        { q: "You are nearly at the end and it has died.", a: "\"He'd taken the wrong car. That's the whole thing.\" [Finish on Purpose]", bundle: 'pro' },
-        { q: "Somebody says \"and then what?\" out of pure kindness.", a: "\"Honestly, nothing. That's the disappointing part.\" [Cut It Loose]", bundle: 'pro' },
-        { q: "You are continuing out of stubbornness.", a: "(stop — the extra four sentences cost more than the abandon) [Cut It Loose]", bundle: 'pro' },
+        { q: "Three sentences in and it is clearly not working.", a: "\"This is going nowhere. Anyway — how was Denmark?\" [Cut It Loose]", guideBack: "The story dropped, without ceremony", bundle: 'pro' },
+        { q: "You have lost your own thread.", a: "\"I've completely lost the thread of my own story.\" [Cut It Loose]", guideBack: "The story dropped, without ceremony", bundle: 'pro' },
+        { q: "You are nearly at the end and it has died.", a: "\"He'd taken the wrong car. That's the whole thing.\" [Finish on Purpose]", guideBack: "The last line, and then silence", bundle: 'pro' },
+        { q: "Somebody says \"and then what?\" out of pure kindness.", a: "\"Honestly, nothing. That's the disappointing part.\" [Cut It Loose]", guideBack: "The story dropped, without ceremony", bundle: 'pro' },
+        { q: "You are continuing out of stubbornness.", a: "(stop — the extra four sentences cost more than the abandon) [Cut It Loose]", guideBack: "The story dropped, without ceremony", bundle: 'pro' },
       ]
     },
     {
@@ -1428,11 +1428,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "Someone cuts in mid-story, or finishes it for you because they were there, or asks a question that jumps three steps ahead. Losing the thread here is normal, and so is quietly resenting it.\n\nThe strategies are the same ones, used differently. Watch Them While You Tell It tells you whether the interruption is interest — in which case take it — or a takeover. Finish on Purpose is how you get the ending back if you still want it. And Give It Back is often the best answer to someone who was clearly waiting for their turn.\n\nA question that jumps ahead is usually a compliment. It means they are in the story far enough to guess.\n\nMindset: an interruption is information about how they are listening, not only about their manners.",
       inputs: [
-        { q: "They ask a question that jumps ahead of you.", a: "\"You've guessed it. Yes — that's exactly what happened.\" [Watch Them While You Tell It]", bundle: 'pro' },
-        { q: "Someone who was there starts finishing it for you.", a: "\"You tell it, you were closer to the fence than I was.\" [Give It Back]", bundle: 'pro' },
-        { q: "You have been cut off and still want the ending in.", a: "\"One line and I'm done: he'd taken the wrong car.\" [Finish on Purpose]", bundle: 'pro' },
-        { q: "Someone is visibly waiting to tell theirs.", a: "\"I'll stop there — you've clearly got one.\" [Give It Back]", bundle: 'pro' },
-        { q: "The interruption has killed the momentum completely.", a: "\"That's ruined it, and honestly it wasn't going anywhere.\" [Cut It Loose]", bundle: 'pro' },
+        { q: "They ask a question that jumps ahead of you.", a: "\"You've guessed it. Yes — that's exactly what happened.\" [Watch Them While You Tell It]", guideBack: "A cut or a continuation, based on their face", bundle: 'pro' },
+        { q: "Someone who was there starts finishing it for you.", a: "\"You tell it, you were closer to the fence than I was.\" [Give It Back]", guideBack: "The floor, passed back", bundle: 'pro' },
+        { q: "You have been cut off and still want the ending in.", a: "\"One line and I'm done: he'd taken the wrong car.\" [Finish on Purpose]", guideBack: "The last line, and then silence", bundle: 'pro' },
+        { q: "Someone is visibly waiting to tell theirs.", a: "\"I'll stop there — you've clearly got one.\" [Give It Back]", guideBack: "The floor, passed back", bundle: 'pro' },
+        { q: "The interruption has killed the momentum completely.", a: "\"That's ruined it, and honestly it wasn't going anywhere.\" [Cut It Loose]", guideBack: "The story dropped, without ceremony", bundle: 'pro' },
       ]
     },
     {
@@ -1441,11 +1441,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "The place where none of this applies. Some stories belong to someone else — a friend's diagnosis, a colleague's divorce, something told to you in confidence, or an anecdote where the funny part is at the expense of somebody who is not in the room.\n\nNo amount of good telling makes those alright, and \"they wouldn't mind\" is a decision you are making on someone else's behalf. The test is simple: would you tell it exactly like this with them sitting here?\n\nRead the Room First is the only strategy that applies, and the answer it gives is no. If you want the material, the honest route is asking the person whether you may tell it.\n\nMindset: a good story is not a good enough reason. It was not given to you for this.",
       inputs: [
-        { q: "The funniest part is at the expense of someone not in the room.", a: "(do not tell it — you would not tell it with them here) [Read the Room First]", bundle: 'pro' },
-        { q: "It was told to you in confidence and it is a great story.", a: "(it was not given to you for this) [Read the Room First]", bundle: 'pro' },
-        { q: "It is someone else's news and it has not been announced.", a: "\"That's not mine to tell, I'm afraid.\" [Read the Room First]", bundle: 'pro' },
-        { q: "You have started before realising whose story it is.", a: "\"Actually — that's not my story to be telling. Forget I started.\" [Cut It Loose]", bundle: 'pro' },
-        { q: "You genuinely want to use it and think they would be fine.", a: "(ask them — it costs one message and settles it) [Read the Room First]", bundle: 'pro' },
+        { q: "The funniest part is at the expense of someone not in the room.", a: "(do not tell it — you would not tell it with them here) [Read the Room First]", guideBack: "A story, or staying where you are", bundle: 'pro' },
+        { q: "It was told to you in confidence and it is a great story.", a: "(it was not given to you for this) [Read the Room First]", guideBack: "A story, or staying where you are", bundle: 'pro' },
+        { q: "It is someone else's news and it has not been announced.", a: "\"That's not mine to tell, I'm afraid.\" [Read the Room First]", guideBack: "A story, or staying where you are", bundle: 'pro' },
+        { q: "You have started before realising whose story it is.", a: "\"Actually — that's not my story to be telling. Forget I started.\" [Cut It Loose]", guideBack: "The story dropped, without ceremony", bundle: 'pro' },
+        { q: "You genuinely want to use it and think they would be fine.", a: "(ask them — it costs one message and settles it) [Read the Room First]", guideBack: "A story, or staying where you are", bundle: 'pro' },
       ]
     },
   ],
@@ -3282,11 +3282,9 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "Your questions are good and unconnected — each one comes from your head rather than from their last answer. The other person can feel it within two or three questions, and their answers start getting shorter.\n\nWhat it usually looks like:\n\n• Their answers are getting shorter while your questions stay the same length.\n• You asked something that had nothing to do with what they just said.\n• You have learned four separate facts and followed none of them.\n\nTwo ways through:\n1. Use a word from their last answer — the fastest repair there is.\n2. Give something of your own — a question after a small disclosure lands completely differently.\n\nMindset: the repair is not a better question. It is a question built out of their answer.",
       inputs: [
-        { q: "You have asked four unconnected questions and answers are shortening.", a: "\"You said something about the second flat — what happened with that?\" [use their word]", bundle: 'pro' },
-        { q: "You realise you have been working through a mental list.", a: "\"I'm interrogating you. My version of that is much less impressive, by the way.\" [give something]", bundle: 'pro' },
-        { q: "Your last question changed the subject entirely.", a: "\"Ignore that, I jumped. Go back to the bit about your brother.\" [use their word]", bundle: 'pro' },
-        { q: "They are answering politely and volunteering nothing.", a: "\"I'll stop firing questions. That sounds like it was a long month, though.\" [give something]", bundle: 'pro' },
-        { q: "You have asked two questions in a row without responding to either answer.", a: "\"That's a much better story than the one I was about to ask about.\" [use their word]", bundle: 'pro' },
+        { q: "You have asked four unconnected questions and answers are shortening.", a: "\"You said something about the second flat — what happened with that?\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
+        { q: "Your last question changed the subject entirely.", a: "\"Ignore that, I jumped. Go back to the bit about your brother.\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
+        { q: "You have asked two questions in a row without responding to either answer.", a: "\"That's a much better story than the one I was about to ask about.\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
       ]
     },
     {
@@ -3295,11 +3293,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You asked about feelings before you had the story, and it landed as intrusive rather than interested. The order matters more than the question: the same sentence is welcome once someone can tell you have followed what they said.\n\nWhat it usually looks like:\n\n• A pause, and then a short answer.\n• You asked how something felt about an event you could not picture.\n• You barely know the person and the question was about their inner life.\n\nTwo ways through:\n1. Go back to the facts — ask for the sequence and rebuild.\n2. Narrow it to a moment — \"what did you think when he said it\" is answerable where \"how did you feel about all that\" is not.\n\nMindset: earn the deep questions with the ordinary ones. Three facts, then a feeling.",
       inputs: [
-        { q: "You asked how they felt and got a short answer and a pause.", a: "\"Sorry — back up. What actually happened on the Tuesday?\" [back to facts]", bundle: 'pro' },
-        { q: "The feeling question was too broad.", a: "\"Let me ask that better: what went through your head when she actually said it?\" [narrow it]", bundle: 'pro' },
-        { q: "You barely know them and asked something quite personal.", a: "\"That's a big question from someone you met an hour ago. What happened next, though?\" [back to facts]", bundle: 'pro' },
-        { q: "You asked about a feeling in a story you cannot picture.", a: "\"Actually — who else was involved in all this?\" [back to facts]", bundle: 'pro' },
-        { q: "They deflected with a joke.", a: "\"Fair. What did you do straight afterwards?\" [narrow it]", bundle: 'pro' },
+        { q: "You asked how they felt and got a short answer and a pause.", a: "\"Sorry — back up. What actually happened on the Tuesday?\" [Ask What Happened Next]", guideBack: "The next step in the account", bundle: 'pro' },
+        { q: "The feeling question was too broad.", a: "\"Let me ask that better: what went through your head when she actually said it?\" [Ask How It Felt]", guideBack: "Their reaction, asked for directly", bundle: 'pro' },
+        { q: "You barely know them and asked something quite personal.", a: "\"That's a big question from someone you met an hour ago. What happened next, though?\" [Ask What Happened Next]", guideBack: "The next step in the account", bundle: 'pro' },
+        { q: "You asked about a feeling in a story you cannot picture.", a: "\"Actually — who else was involved in all this?\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
+        { q: "They deflected with a joke.", a: "\"Fair. What did you do straight afterwards?\" [Ask What Happened Next]", guideBack: "The next step in the account", bundle: 'pro' },
       ]
     },
     {
@@ -3308,11 +3306,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You asked \"why did you do that?\" and it landed as \"why on earth did you do that?\". The content was fine; the framing carried an accusation. Two words fix it.\n\nWhat it usually looks like:\n\n• They started justifying rather than explaining.\n• You used \"why did you\" rather than \"what made you\".\n• The answer came back defensive and slightly longer than it needed to be.\n\nTwo ways through:\n1. Reframe it — \"what made you…\" asks for a reason, not a defence.\n2. Say the assumption out loud — \"not a criticism, I'd probably have done the same.\"\n\nMindset: \"why did you\" asks them to justify. \"What made you\" asks them to explain. The difference is entirely in the framing.",
       inputs: [
-        { q: "They started justifying rather than explaining.", a: "\"Not a criticism — I'd probably have done the same. What made it the right call at the time?\" [say the assumption]", bundle: 'pro' },
-        { q: "You asked \"why did you do that?\" and it landed badly.", a: "\"That came out wrong. I meant what was going on that made it the obvious thing.\" [reframe]", bundle: 'pro' },
-        { q: "Your perspective question sounded like a lesson.", a: "\"I'm not saying she was right — I'm just curious what her version sounds like.\" [say the assumption]", bundle: 'pro' },
-        { q: "They have gone defensive about a decision.", a: "\"You don't have to defend it to me. I'm just nosy about how it happened.\" [say the assumption]", bundle: 'pro' },
-        { q: "You are about to ask \"why didn't you just…\".", a: "\"Was there a reason the obvious route wasn't available?\" [reframe]", bundle: 'pro' },
+        { q: "They started justifying rather than explaining.", a: "\"Not a criticism — I'd probably have done the same. What made it the right call at the time?\" [Ask Why It Happened]", guideBack: "The reason behind it", bundle: 'pro' },
+        { q: "You asked \"why did you do that?\" and it landed badly.", a: "\"That came out wrong. I meant what was going on that made it the obvious thing.\" [Ask Why It Happened]", guideBack: "The reason behind it", bundle: 'pro' },
+        { q: "Your perspective question sounded like a lesson.", a: "\"I'm not saying she was right — I'm just curious what her version sounds like.\" [Ask How It Looked From Elsewhere]", guideBack: "The same thing from another side", bundle: 'pro' },
+        { q: "They have gone defensive about a decision.", a: "\"You don't have to defend it to me. I'm just nosy about how it happened.\" [Ask Why It Happened]", guideBack: "The reason behind it", bundle: 'pro' },
+        { q: "You are about to ask \"why didn't you just…\".", a: "\"Was there a reason the obvious route wasn't available?\" [Ask Why It Happened]", guideBack: "The reason behind it", bundle: 'pro' },
       ]
     },
     {
@@ -3321,11 +3319,9 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "Your questions are getting one-word answers. Sometimes the person does not want to talk, and that is an answer worth respecting — but more often the questions have been too big, and a smaller one gets a real reply.\n\nWhat it usually looks like:\n\n• \"Fine\", \"yeah\", \"not much\", three times running.\n• Your questions have all been broad ones.\n• They have not asked you anything either.\n\nTwo ways through:\n1. Make it smaller and more concrete — \"what happened next\" beats \"how was it\".\n2. Read it as a no and change register — some conversations are not the moment.\n\nMindset: one-word answers are usually a question that was too big, not a person who does not want to talk. Try smaller once, then let it go.",
       inputs: [
-        { q: "Three broad questions have got three short answers.", a: "\"Let me ask something easier — what did you actually do on the Saturday?\" [smaller]", bundle: 'pro' },
-        { q: "They said the trip was \"fine\" and nothing else.", a: "\"Where did you stay?\" [smaller]", bundle: 'pro' },
-        { q: "You have asked twice and got very little both times.", a: "\"I'll stop digging. Mine was mostly rain and an argument about a map.\" [change register]", bundle: 'pro' },
-        { q: "They are clearly not in the mood to talk about it.", a: "\"We can leave it. How's everything else?\" [change register]", bundle: 'pro' },
-        { q: "The question needed too much of an answer.", a: "\"Actually, simpler — who else was there?\" [smaller]", bundle: 'pro' },
+        { q: "Three broad questions have got three short answers.", a: "\"Let me ask something easier — what did you actually do on the Saturday?\" [Ask What Happened Next]", guideBack: "The next step in the account", bundle: 'pro' },
+        { q: "They said the trip was \"fine\" and nothing else.", a: "\"Where did you stay?\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
+        { q: "The question needed too much of an answer.", a: "\"Actually, simpler — who else was there?\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
       ]
     },
     {
@@ -3334,11 +3330,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "They gave you an answer with something obviously unfinished in it and you moved on. Half the good material in any conversation is one question past where most people stop.\n\nWhat it usually looks like:\n\n• They said something surprising and you said \"oh, nice\" and changed the subject.\n• A half-sentence went past that clearly had more behind it.\n• You have got a fact where there was a story available.\n\nTwo ways through:\n1. Go back to it — even a minute later. \"You said something earlier about…\"\n2. Ask the obvious next one — \"and then what?\" is usually the question that was waiting.\n\nMindset: one more question. Most conversations end one question before the interesting part.",
       inputs: [
-        { q: "They mentioned something surprising and you let it pass.", a: "\"Hang on, go back — you said you'd never actually met him?\" [go back]", bundle: 'pro' },
-        { q: "You got a fact where there was clearly a story.", a: "\"There's more to that, isn't there. What happened?\" [ask the next one]", bundle: 'pro' },
-        { q: "A half-sentence went by that had something behind it.", a: "\"You said 'the second time'. There was a first time?\" [go back]", bundle: 'pro' },
-        { q: "You changed the subject and immediately regretted it.", a: "\"Sorry — I want to come back to the thing about your old job.\" [go back]", bundle: 'pro' },
-        { q: "Their answer stopped somewhere odd.", a: "\"And then what? That can't be the end of it.\" [ask the next one]", bundle: 'pro' },
+        { q: "They mentioned something surprising and you let it pass.", a: "\"Hang on, go back — you said you'd never actually met him?\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
+        { q: "You got a fact where there was clearly a story.", a: "\"There's more to that, isn't there. What happened?\" [Ask What Happened Next]", guideBack: "The next step in the account", bundle: 'pro' },
+        { q: "A half-sentence went by that had something behind it.", a: "\"You said 'the second time'. There was a first time?\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
+        { q: "You changed the subject and immediately regretted it.", a: "\"Sorry — I want to come back to the thing about your old job.\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
+        { q: "Their answer stopped somewhere odd.", a: "\"And then what? That can't be the end of it.\" [Ask What Happened Next]", guideBack: "The next step in the account", bundle: 'pro' },
       ]
     },
   ],
@@ -3757,11 +3753,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You are two minutes in and nothing has happened yet. Everybody who needed to be introduced has been introduced, and the room has quietly gone. It is the most common failure in the pack and it always has the same cause: explaining before starting.\n\nWhat it usually looks like:\n\n• You are still describing who people are.\n• Somebody has said \"right\" twice while you set the scene.\n• The interesting bit is still two sentences away.\n\nTwo ways through:\n1. Jump to the turn — say it now and backfill only what is needed.\n2. Restart the opening out loud — costs nothing and usually gets a laugh.\n\nMindset: context can arrive late. Attention cannot.",
       inputs: [
-        { q: "You are two minutes in and nothing has happened.", a: "\"Right, I'm burying this — the point is the lift stopped with four of us in it.\" [jump to the turn]", bundle: 'pro' },
-        { q: "You are still explaining who everyone is.", a: "\"You don't need any of that. Someone I work with had already told them.\" [jump to the turn]", bundle: 'pro' },
-        { q: "Somebody has said \"right\" twice during your setup.", a: "\"Let me start again properly: I got locked out of the building with my laptop inside.\" [restart]", bundle: 'pro' },
-        { q: "The story needs context but not this much.", a: "\"One thing you need: my brother had the only key. That's it, that's the background.\" [restart]", bundle: 'pro' },
-        { q: "You can hear yourself explaining rather than telling.", a: "\"I'll do this the other way round — here's what happened, then I'll explain.\" [jump to the turn]", bundle: 'pro' },
+        { q: "You are two minutes in and nothing has happened.", a: "\"Right, I'm burying this — the point is the lift stopped with four of us in it.\" [Name the Turn]", guideBack: "The thing that went wrong, or changed", bundle: 'pro' },
+        { q: "You are still explaining who everyone is.", a: "\"You don't need any of that. Someone I work with had already told them.\" [Name the Turn]", guideBack: "The thing that went wrong, or changed", bundle: 'pro' },
+        { q: "Somebody has said \"right\" twice during your setup.", a: "\"Let me start again properly: I got locked out of the building with my laptop inside.\" [Open It in One Sentence]", guideBack: "One sentence that opens it", bundle: 'pro' },
+        { q: "The story needs context but not this much.", a: "\"One thing you need: my brother had the only key. That's it, that's the background.\" [Open It in One Sentence]", guideBack: "One sentence that opens it", bundle: 'pro' },
+        { q: "You can hear yourself explaining rather than telling.", a: "\"I'll do this the other way round — here's what happened, then I'll explain.\" [Name the Turn]", guideBack: "The thing that went wrong, or changed", bundle: 'pro' },
       ]
     },
     {
@@ -3770,11 +3766,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You have told a sequence of events and nothing in it changed. It was a day, described. Sometimes the story genuinely has no turn, and the honest move is to say so rather than keep hoping one arrives.\n\nWhat it usually looks like:\n\n• You are still adding events, hoping one lands.\n• The listener is waiting politely for the point.\n• You have said \"and then\" four times.\n\nTwo ways through:\n1. Find the smallest turn in it — a realisation counts, and so does a decision.\n2. Abandon it lightly — \"this is going nowhere\" is a better ending than eight more sentences.\n\nMindset: if you cannot name the moment it changed, you have an anecdote about a day. That is allowed — just do not tell it as though it has a punchline coming.",
       inputs: [
-        { q: "You are adding events hoping one of them lands.", a: "\"None of this is going anywhere, is it. Anyway — how was Denmark?\" [abandon]", bundle: 'pro' },
-        { q: "The story is a description of an afternoon.", a: "\"The bit that actually got me was realising I'd been in the wrong queue the whole time.\" [find the turn]", bundle: 'pro' },
-        { q: "You have said \"and then\" four times.", a: "\"Let me get to the thing: none of it mattered because the office was shut.\" [find the turn]", bundle: 'pro' },
-        { q: "There is genuinely no turn in it.", a: "\"That's it, that's the story. It was a very ordinary Thursday.\" [abandon]", bundle: 'pro' },
-        { q: "The listener is waiting for a point you do not have.", a: "\"You had to be there. You weren't. I've oversold this.\" [abandon]", bundle: 'pro' },
+        { q: "You are adding events hoping one of them lands.", a: "\"Let me find the actual moment: it was realising the shop had been shut the whole time.\" [Name the Turn]", guideBack: "The thing that went wrong, or changed", bundle: 'pro' },
+        { q: "The story is a description of an afternoon.", a: "\"The bit that actually got me was realising I'd been in the wrong queue the whole time.\" [Name the Turn]", guideBack: "The thing that went wrong, or changed", bundle: 'pro' },
+        { q: "You have said \"and then\" four times.", a: "\"Let me get to the thing: none of it mattered because the office was shut.\" [Name the Turn]", guideBack: "The thing that went wrong, or changed", bundle: 'pro' },
+        { q: "There is genuinely no turn in it.", a: "\"So that's it: a very ordinary Thursday with one wrong bus in it.\" [Land the Resolution]", guideBack: "The ending, said plainly", bundle: 'pro' },
+        { q: "The listener is waiting for a point you do not have.", a: "\"I oversold that. The honest ending is I just went home.\" [Land the Resolution]", guideBack: "The ending, said plainly", bundle: 'pro' },
       ]
     },
     {
@@ -3783,11 +3779,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You had the laugh you wanted three sentences ago and now you are winding down rather than landing. The ending arrives as an afterthought and the listener cannot tell whether you are finished.\n\nWhat it usually looks like:\n\n• \"…anyway, yeah.\"\n• You explained the ending instead of saying it.\n• Somebody said \"right\" and you both moved on awkwardly.\n\nTwo ways through:\n1. Say the last line on purpose — the one you told it for, put last.\n2. Land it flat — \"so we drove home, that's it\" is a perfectly good ending.\n\nMindset: the ending is what they remember. Say it, then stop talking.",
       inputs: [
-        { q: "You are about to say \"anyway, yeah\".", a: "\"…and that's how I ended up carrying a door through town.\" [say the last line]", bundle: 'pro' },
-        { q: "You never actually said how it ended.", a: "\"Oh — and it was fine. She'd taken it home by mistake.\" [land it]", bundle: 'pro' },
-        { q: "The story has no punchline and you are searching for one.", a: "\"So we drove home. That's genuinely it.\" [land it flat]", bundle: 'pro' },
-        { q: "You explained the ending rather than saying it.", a: "\"Short version of that: he still says it wasn't his fault.\" [say the last line]", bundle: 'pro' },
-        { q: "You have wound down instead of finishing.", a: "\"I've never parked there since. That's the end of it.\" [land it]", bundle: 'pro' },
+        { q: "You are about to say \"anyway, yeah\".", a: "\"…and that's how I ended up carrying a door through town.\" [Land the Resolution]", guideBack: "The ending, said plainly", bundle: 'pro' },
+        { q: "You never actually said how it ended.", a: "\"Oh — and it was fine. She'd taken it home by mistake.\" [Land the Resolution]", guideBack: "The ending, said plainly", bundle: 'pro' },
+        { q: "The story has no punchline and you are searching for one.", a: "\"So we drove home. That's genuinely it.\" [Land the Resolution]", guideBack: "The ending, said plainly", bundle: 'pro' },
+        { q: "You explained the ending rather than saying it.", a: "\"Short version of that: he still says it wasn't his fault.\" [Land the Resolution]", guideBack: "The ending, said plainly", bundle: 'pro' },
+        { q: "You have wound down instead of finishing.", a: "\"I've never parked there since. That's the end of it.\" [Land the Resolution]", guideBack: "The ending, said plainly", bundle: 'pro' },
       ]
     },
     {
@@ -3796,11 +3792,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "The story was fine and then you added a lesson it did not have. A forced takeaway makes an honest anecdote sound like a parable, and everybody can hear the seam.\n\nWhat it usually looks like:\n\n• \"I suppose what it taught me was…\" after a story about a lift.\n• The lesson is more general than the story.\n• You added it because the ending felt too small.\n\nTwo ways through:\n1. Take it off — say there is no lesson, which is often the better ending.\n2. Swap it for the honest one — usually smaller and more specific than the invented version.\n\nMindset: an ending does not need to mean anything. \"It was just a strange day\" is a complete sentence.",
       inputs: [
-        { q: "You have attached a lesson to a story that has none.", a: "\"I was making that mean something. It doesn't. It was just funny.\" [take it off]", bundle: 'pro' },
-        { q: "The moral is much bigger than the story.", a: "\"That's overclaiming. What actually changed is I check the bag now.\" [swap it]", bundle: 'pro' },
-        { q: "You added a lesson because the ending felt thin.", a: "\"There's no moral. That's genuinely the whole thing and I liked it.\" [take it off]", bundle: 'pro' },
-        { q: "The real takeaway is less flattering than the invented one.", a: "\"The honest version is it was my fault and I knew at the time.\" [swap it]", bundle: 'pro' },
-        { q: "You are about to say \"I suppose what it taught me was\".", a: "\"No lesson. Just a very odd Tuesday.\" [take it off]", bundle: 'pro' },
+        { q: "You have attached a lesson to a story that has none.", a: "\"I was making that mean something. It doesn't. It was just funny.\" [Say the Takeaway]", guideBack: "One line about what it left you with — or none", bundle: 'pro' },
+        { q: "The moral is much bigger than the story.", a: "\"That's overclaiming. What actually changed is I check the bag now.\" [Say the Takeaway]", guideBack: "One line about what it left you with — or none", bundle: 'pro' },
+        { q: "You added a lesson because the ending felt thin.", a: "\"There's no moral. That's genuinely the whole thing and I liked it.\" [Say the Takeaway]", guideBack: "One line about what it left you with — or none", bundle: 'pro' },
+        { q: "The real takeaway is less flattering than the invented one.", a: "\"The honest version is it was my fault and I knew at the time.\" [Say the Takeaway]", guideBack: "One line about what it left you with — or none", bundle: 'pro' },
+        { q: "You are about to say \"I suppose what it taught me was\".", a: "\"No lesson. Just a very odd Tuesday.\" [Say the Takeaway]", guideBack: "One line about what it left you with — or none", bundle: 'pro' },
       ]
     },
     {
@@ -3809,11 +3805,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You had something worth telling and by the time you had decided which story and how to start it, the conversation had moved. Nearly all missed stories are lost here rather than to a shortage of material.\n\nWhat it usually looks like:\n\n• You are still choosing between two while the subject changes.\n• You wanted the best one rather than the first one.\n• The moment has gone and you are quietly annoyed about it.\n\nTwo ways through:\n1. Take it back — \"going back a bit\" costs nothing and works.\n2. Next time, start before you have finished choosing — the shape will carry it.\n\nMindset: fifteen seconds. Then start, even if you have not worked out the ending yet.",
       inputs: [
-        { q: "The subject changed while you were choosing.", a: "\"Going back a bit — this is what your bus thing reminded me of.\" [take it back]", bundle: 'pro' },
-        { q: "You were picking the best story instead of the first.", a: "\"I've got a smaller one that's actually more to the point.\" [take it back]", bundle: 'pro' },
-        { q: "You are still deciding and it is your turn now.", a: "\"Right — this is about a bike, and I'll work out why as I go.\" [start anyway]", bundle: 'pro' },
-        { q: "You know the story is good but not how to begin it.", a: "\"I'll start in the wrong place and fix it: I ended up carrying a wardrobe.\" [start anyway]", bundle: 'pro' },
-        { q: "The moment has passed and you are annoyed about it.", a: "\"That reminds me of something from earlier that I never said. Can I?\" [take it back]", bundle: 'pro' },
+        { q: "The subject changed while you were choosing.", a: "\"Going back a bit — this is what your bus thing reminded me of.\" [Pick One Fast]", guideBack: "A small story, chosen quickly", bundle: 'pro' },
+        { q: "You were picking the best story instead of the first.", a: "\"I've got a smaller one that's actually more to the point.\" [Pick One Fast]", guideBack: "A small story, chosen quickly", bundle: 'pro' },
+        { q: "You are still deciding and it is your turn now.", a: "\"Right — this is about a bike, and I'll work out why as I go.\" [Pick One Fast]", guideBack: "A small story, chosen quickly", bundle: 'pro' },
+        { q: "You know the story is good but not how to begin it.", a: "\"I'll start in the wrong place and fix it: I ended up carrying a wardrobe.\" [Pick One Fast]", guideBack: "A small story, chosen quickly", bundle: 'pro' },
+        { q: "The moment has passed and you are annoyed about it.", a: "\"Going back — mine's the same thing but with a bike, and it's short.\" [Pick One Fast]", guideBack: "A small story, chosen quickly", bundle: 'pro' },
       ]
     },
   ],
