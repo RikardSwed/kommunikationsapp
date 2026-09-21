@@ -3930,6 +3930,15 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.79', date: 'September 2026', title: 'Names and guides, batch 4 — criticism, feedback, negotiation, examples', audience: 'dev',
+    items: [
+      'Batch 4: <strong>Giving Criticism</strong>, <strong>Receiving Feedback and Criticism</strong>, <strong>Negotiation and Compromise</strong> and <strong>Giving Examples</strong>. All 25 strategies were sharing one guide row per pack &mdash; <em>This is the step you are on. Say your version out loud.</em> and the like, which describe the exercise rather than the move. All 25 now have their own pair, 185 Collections and Challenges cards inherit their strategy\'s back guide, and 70 sequence steps carry theirs.',
+      'Four renames, all to shorten: <em>Show You Understand Their View</em> &rarr; <strong>See Their Side</strong> in Receiving Feedback, and in Negotiation <em>Show You Understood Theirs</em> &rarr; <strong>Say Theirs Back</strong>, <em>Offer Something That Includes Both</em> &rarr; <strong>Build From Both</strong>, <em>Say What You Cannot Move On</em> &rarr; <strong>Name Your Limit</strong>. Negotiation now reads as a series of seven short moves.',
+      '<strong>Receiving Feedback had 0 of 22 sequence steps naming a strategy</strong> &mdash; the steps were the strategies in lowercase shorthand (<em>Acknowledge</em>, <em>Reflect openly</em>, <em>Look ahead</em>). 18 were renamed to the strategy they are. The remaining four ask for time before answering, which the pack has no strategy for; they wait for <em>Ask for Time</em> in the volume sweep.',
+      '<strong>Giving Examples challenges had 25 labels and not one of them a strategy.</strong> 11 replies already did one and were relabelled &mdash; all five of <em>The Number Is Shaky</em> are Numbers and Evidence done honestly, which is what that strategy is about. Nine replies were rewritten. The deck <em>Too Many Examples</em> teaches when to stop rather than how to give an example, so it is lifted out to the content-gap list and replaced in the volume sweep.',
+    ],
+  },
+  {
     version: 'v1.28.78', date: 'September 2026', title: 'Names and guides, batch 3 — the four emotion packs', audience: 'dev',
     items: [
       'Batch 3: <strong>Conflict Emotions</strong>, <strong>Emotion Labelling and Regulation</strong>, <strong>Validation</strong> and <strong>Supporting Conversations</strong>. All 18 strategies now have their own detailed guide pair, 182 Collections and Challenges cards inherit their strategy\'s back guide, and 46 sequence steps carry theirs.',

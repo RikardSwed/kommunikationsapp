@@ -2614,10 +2614,10 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Show You Understand Their View",
+      name: "See Their Side",
       description: "The theory behind the step that stops the contest.",
       cards: [
-        { q: "What is Show You Understand Their View?", a: "Saying in your own words how it looked from where they stood, without yet agreeing.", bundle: 'free' },
+        { q: "What is See Their Side?", a: "Saying in your own words how it looked from where they stood, without yet agreeing.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"I can see how you'd feel that way.\" or \"From your side it must have looked careless.\"", bundle: 'free' },
         { q: "Why does it calm things down?", a: "Once people hear their view has landed, they stop pushing to be understood.", bundle: 'free' },
         { q: "What are the three ways to do it?", a: "Name their feeling, name their view of what happened, or grant the part that's fair.", bundle: 'pro' },
@@ -3242,7 +3242,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Show You Understood Theirs",
+      name: "Say Theirs Back",
       description: "The move that stops the same argument being repeated louder.",
       cards: [
         { q: "What are the two useful outcomes of saying their position back?", a: "Either you have it confirmed, or you get corrected — both are useful.", bundle: 'free' },
@@ -3266,7 +3266,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Offer Something That Includes Both",
+      name: "Build From Both",
       description: "The strategy that builds an arrangement people defend.",
       cards: [
         { q: "Why does a genuine combination hold better than a midpoint?", a: "Both people got something they wanted, so both defend it.", bundle: 'free' },
@@ -3290,7 +3290,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Say What You Cannot Move On",
+      name: "Name Your Limit",
       description: "The strategy that keeps compromise from becoming slow concession.",
       cards: [
         { q: "Why does a negotiation need limits?", a: "Without them it is a slow concession, and the conceding person ends up resentful.", bundle: 'free' },

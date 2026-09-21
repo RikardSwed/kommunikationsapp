@@ -2822,24 +2822,24 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A teammate has missed three of the last five internal deadlines. The work is good when it arrives. You have asked to sit down with them for ten minutes.",
           steps: [
-            { front: "Step 1 · Start With Something Real — open with one true sentence.", back: "\"The work itself is good — the last piece was the strongest thing we sent out.\"", guideFront: "True and short. One sentence, or it becomes a sandwich." },
-            { front: "Step 2 · Name the Behaviour — say what actually happened, no verdict.", back: "\"Three of the last five came in after the date, though.\"", guideFront: "Could a camera have recorded it?" },
-            { front: "Step 3 · Explain the Impact — say what it causes.", back: "\"When it slips, everyone else's part sits waiting, and it all lands on the Friday.\"", guideFront: "Who is affected, and how?" },
-            { front: "Step 4 · Suggest What to Do Instead — offer something concrete.", back: "\"What if we put a checkpoint halfway instead of one date at the end?\"", guideFront: "Small enough to try tomorrow." },
-            { front: "Step 5 · Say What Improves If They Do — name the gain.", back: "\"Then we'd get the last few days to tidy it rather than panic.\"", guideFront: "Something they would actually want." },
-            { front: "Step 6 · Encourage and Offer Support — close with confidence and an offer.", back: "\"I'm not worried about it. Send me where you're up to on Wednesday and I'll read it.\"", guideFront: "Mean the confidence. Keep the offer." },
+            { front: "Step 1 · Start With Something Real — open with one true sentence.", back: "\"The work itself is good — the last piece was the strongest thing we sent out.\"", guideFront: "Open with something true and good when...", guideBack: "A true positive, said briefly" },
+            { front: "Step 2 · Name the Behaviour — say what actually happened, no verdict.", back: "\"Three of the last five came in after the date, though.\"", guideFront: "Say what happened, without a verdict, when...", guideBack: "The specific thing they did" },
+            { front: "Step 3 · Explain the Impact — say what it causes.", back: "\"When it slips, everyone else's part sits waiting, and it all lands on the Friday.\"", guideFront: "Say what it causes when...", guideBack: "What follows from it, for others" },
+            { front: "Step 4 · Suggest What to Do Instead — offer something concrete.", back: "\"What if we put a checkpoint halfway instead of one date at the end?\"", guideFront: "Offer a concrete alternative when...", guideBack: "Something they could do next time" },
+            { front: "Step 5 · Say What Improves If They Do — name the gain.", back: "\"Then we'd get the last few days to tidy it rather than panic.\"", guideFront: "Name what gets better when...", guideBack: "The gain, if they change it" },
+            { front: "Step 6 · Encourage and Offer Support — close with confidence and an offer.", back: "\"I'm not worried about it. Send me where you're up to on Wednesday and I'll read it.\"", guideFront: "Say you back them, and offer something, when...", guideBack: "Confidence in them, plus a concrete offer" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague repeatedly answers questions that were put to someone else. They are not doing it unkindly and almost certainly have not noticed.",
           steps: [
-            { front: "Step 1 · Start With Something Real — open with one true sentence.", back: "\"You're quick, and in most meetings that's exactly what we need.\"", guideFront: "True and short." },
-            { front: "Step 2 · Name the Behaviour — one specific occasion, plainly.", back: "\"In yesterday's session you answered twice when the question had gone to Sara.\"", guideFront: "A moment, not a character trait." },
-            { front: "Step 3 · Explain the Impact — say what it causes.", back: "\"She's stopped offering things. That's the bit that worries me.\"", guideFront: "Who is affected, and how?" },
-            { front: "Step 4 · Suggest What to Do Instead — offer something concrete.", back: "\"Could you leave a beat after a question lands? She'll get there.\"", guideFront: "Small enough to try tomorrow." },
-            { front: "Step 5 · Say What Improves If They Do — name the gain.", back: "\"We'd get her ideas, and some of them are better than ours.\"", guideFront: "Something they would actually want." },
-            { front: "Step 6 · Encourage and Offer Support — close warmly.", back: "\"It's an easy fix and I'd not have mentioned it otherwise. Nudge me if I do it too.\"", guideFront: "Leave them with confidence, not fault." },
+            { front: "Step 1 · Start With Something Real — open with one true sentence.", back: "\"You're quick, and in most meetings that's exactly what we need.\"", guideFront: "Open with something true and good when...", guideBack: "A true positive, said briefly" },
+            { front: "Step 2 · Name the Behaviour — one specific occasion, plainly.", back: "\"In yesterday's session you answered twice when the question had gone to Sara.\"", guideFront: "Say what happened, without a verdict, when...", guideBack: "The specific thing they did" },
+            { front: "Step 3 · Explain the Impact — say what it causes.", back: "\"She's stopped offering things. That's the bit that worries me.\"", guideFront: "Say what it causes when...", guideBack: "What follows from it, for others" },
+            { front: "Step 4 · Suggest What to Do Instead — offer something concrete.", back: "\"Could you leave a beat after a question lands? She'll get there.\"", guideFront: "Offer a concrete alternative when...", guideBack: "Something they could do next time" },
+            { front: "Step 5 · Say What Improves If They Do — name the gain.", back: "\"We'd get her ideas, and some of them are better than ours.\"", guideFront: "Name what gets better when...", guideBack: "The gain, if they change it" },
+            { front: "Step 6 · Encourage and Offer Support — close warmly.", back: "\"It's an easy fix and I'd not have mentioned it otherwise. Nudge me if I do it too.\"", guideFront: "Say you back them, and offer something, when...", guideBack: "Confidence in them, plus a concrete offer" },
           ]
         },
       ]
@@ -2854,20 +2854,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You have said three deadlines slipped, and the reply is a list of reasons.",
           steps: [
-            { front: "Step 2 · Name the Behaviour — they say, \"Two of those were because of the client, not me.\"", back: "\"That's fair on those two. The third one wasn't, though.\"" },
-            { front: "Step 3 · Explain the Impact — they say, \"It was one late thing, really.\"", back: "\"It's the waiting that costs us. Four people held their bit for a week.\"" },
-            { front: "Step 4 · Suggest What to Do Instead — they say, \"So what do you want me to do?\"", back: "\"Tell me early when it's slipping. That's genuinely all I need.\"" },
-            { front: "Step 6 · Encourage and Offer Support — they say, \"I can do that.\"", back: "\"Then we're fine. And come to me before it's a problem, not after.\"" },
+            { front: "Step 2 · Name the Behaviour — they say, \"Two of those were because of the client, not me.\"", back: "\"That's fair on those two. The third one wasn't, though.\"", guideFront: "Say what happened, without a verdict, when...", guideBack: "The specific thing they did" },
+            { front: "Step 3 · Explain the Impact — they say, \"It was one late thing, really.\"", back: "\"It's the waiting that costs us. Four people held their bit for a week.\"", guideFront: "Say what it causes when...", guideBack: "What follows from it, for others" },
+            { front: "Step 4 · Suggest What to Do Instead — they say, \"So what do you want me to do?\"", back: "\"Tell me early when it's slipping. That's genuinely all I need.\"", guideFront: "Offer a concrete alternative when...", guideBack: "Something they could do next time" },
+            { front: "Step 6 · Encourage and Offer Support — they say, \"I can do that.\"", back: "\"Then we're fine. And come to me before it's a problem, not after.\"", guideFront: "Say you back them, and offer something, when...", guideBack: "Confidence in them, plus a concrete offer" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You have raised something small and the other person has gone quiet and started apologising repeatedly.",
           steps: [
-            { front: "Step 1 · Start With Something Real — they say, \"God, I'm so sorry, I'm useless at this.\"", back: "\"You're not useless at it — you've carried the whole reporting side since March.\"" },
-            { front: "Step 3 · Explain the Impact — they say, \"I've made everything harder for everyone.\"", back: "\"It's one step in one process. Nobody's week has been ruined.\"" },
-            { front: "Step 5 · Say What Improves If They Do — they say, \"I'll fix it, I promise.\"", back: "\"It's a five-second change and then it's done. That's the whole scale of it.\"" },
-            { front: "Step 6 · Encourage and Offer Support — they say, \"Okay. Sorry again.\"", back: "\"No more sorries. It's said, it's small, and I'm not going to raise it again.\"" },
+            { front: "Step 1 · Start With Something Real — they say, \"God, I'm so sorry, I'm useless at this.\"", back: "\"You're not useless at it — you've carried the whole reporting side since March.\"", guideFront: "Open with something true and good when...", guideBack: "A true positive, said briefly" },
+            { front: "Step 3 · Explain the Impact — they say, \"I've made everything harder for everyone.\"", back: "\"It's one step in one process. Nobody's week has been ruined.\"", guideFront: "Say what it causes when...", guideBack: "What follows from it, for others" },
+            { front: "Step 5 · Say What Improves If They Do — they say, \"I'll fix it, I promise.\"", back: "\"It's a five-second change and then it's done. That's the whole scale of it.\"", guideFront: "Name what gets better when...", guideBack: "The gain, if they change it" },
+            { front: "Step 6 · Encourage and Offer Support — they say, \"Okay. Sorry again.\"", back: "\"No more sorries. It's said, it's small, and I'm not going to raise it again.\"", guideFront: "Say you back them, and offer something, when...", guideBack: "Confidence in them, plus a concrete offer" },
           ]
         },
       ]
@@ -2882,18 +2882,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A colleague keeps sending files without the date in the name and you keep opening the wrong version.",
           steps: [
-            { front: "Step 1 · Say It Lightly — one sentence, framed as a request.", back: "\"Could you put the date in the filename? I keep opening the old one.\"", guideFront: "The size of the problem. One sentence." },
-            { front: "Step 2 · Explain the Impact — they say, \"Oh — does it matter?\"", back: "\"Only that I've twice worked off the wrong version.\"" },
-            { front: "Step 3 · Encourage and Offer Support — they say, \"Right, sorry, will do.\"", back: "\"No drama. Cheers.\"", guideFront: "Close it. Do not add more." },
+            { front: "Step 1 · Say It Lightly — one sentence, framed as a request.", back: "\"Could you put the date in the filename? I keep opening the old one.\"", guideFront: "Say it in one polite sentence when...", guideBack: "The whole thing, in one line" },
+            { front: "Step 2 · Explain the Impact — they say, \"Oh — does it matter?\"", back: "\"Only that I've twice worked off the wrong version.\"", guideFront: "Say what it causes when...", guideBack: "What follows from it, for others" },
+            { front: "Step 3 · Encourage and Offer Support — they say, \"Right, sorry, will do.\"", back: "\"No drama. Cheers.\"", guideFront: "Say you back them, and offer something, when...", guideBack: "Confidence in them, plus a concrete offer" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A friend has been about twenty minutes late the last three times you have met.",
           steps: [
-            { front: "Step 1 · Say It Lightly — one sentence, framed as a preference.", back: "\"Could you aim for on time? I end up standing about.\"", guideFront: "One sentence. It is a small thing." },
-            { front: "Step 3 · Explain the Impact — they say, \"Am I that bad?\"", back: "\"Twenty minutes, last three times. It's not a crisis, I'd just rather not wait outside.\"" },
-            { front: "Step 4 · Suggest What to Do Instead — they say, \"Fair enough.\"", back: "\"Just text me when you leave and I'll time it better.\"" },
+            { front: "Step 1 · Say It Lightly — one sentence, framed as a preference.", back: "\"Could you aim for on time? I end up standing about.\"", guideFront: "Say it in one polite sentence when...", guideBack: "The whole thing, in one line" },
+            { front: "Step 3 · Explain the Impact — they say, \"Am I that bad?\"", back: "\"Twenty minutes, last three times. It's not a crisis, I'd just rather not wait outside.\"", guideFront: "Say what it causes when...", guideBack: "What follows from it, for others" },
+            { front: "Step 4 · Suggest What to Do Instead — they say, \"Fair enough.\"", back: "\"Just text me when you leave and I'll time it better.\"", guideFront: "Offer a concrete alternative when...", guideBack: "Something they could do next time" },
           ]
         },
       ]
@@ -2904,26 +2904,26 @@ const multiStepCollections = {
       name: "The Open Response",
       guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
-      description: "The full four-step process, in order. Steps: 1) Acknowledge the Feedback — show you heard it, 2) Show You Understand Their View — say how it looked from their side, 3) Reflect Openly — say what you make of it, 4) Look Ahead — say what you will do.\n\nEach step does one job, and the order matters: people need to feel heard before they can hear what you plan to do about it.\n\nThe shape of the whole thing:\n1. \"Thanks for telling me.\"\n2. \"I can see how you'd feel that way.\"\n3. \"That gives me something to think about.\"\n4. \"Next time I'll try to...\"\n\nMindset: you are not on trial. Running the steps is not an admission — it is a calm way of handling a normal part of working and living with people.",
+      description: "The full four-step process, in order. Steps: 1) Acknowledge the Feedback — show you heard it, 2) See Their Side — say how it looked from their side, 3) Reflect Openly — say what you make of it, 4) Look Ahead — say what you will do.\n\nEach step does one job, and the order matters: people need to feel heard before they can hear what you plan to do about it.\n\nThe shape of the whole thing:\n1. \"Thanks for telling me.\"\n2. \"I can see how you'd feel that way.\"\n3. \"That gives me something to think about.\"\n4. \"Next time I'll try to...\"\n\nMindset: you are not on trial. Running the steps is not an admission — it is a calm way of handling a normal part of working and living with people.",
       inputs: [
         {
           bundle: 'pro',
           situation: "Your manager tells you your part of yesterday's presentation ran badly over time.",
           steps: [
-            { front: "Step 1 · Acknowledge — they say: \"Your section ran about ten minutes over.\"", back: "\"Thanks for telling me — I knew it felt long.\"" },
-            { front: "Step 2 · Show you understand — they say: \"It meant we had to rush the questions.\"", back: "\"I can see how that landed. The part people came for got squeezed.\"" },
-            { front: "Step 3 · Reflect openly — they say: \"I just want it tighter next time.\"", back: "\"That's fair. I think I tried to fit too much in.\"" },
-            { front: "Step 4 · Look ahead — they wait to see what you will do", back: "\"I'll cut it to eight minutes and run it past you beforehand.\"" },
+            { front: "Step 1 · Acknowledge the Feedback — they say: \"Your section ran about ten minutes over.\"", back: "\"Thanks for telling me — I knew it felt long.\"", guideFront: "Show you heard it, before answering, when...", guideBack: "Thanks, or an acceptance that it was fair to say" },
+            { front: "Step 2 · See Their Side — they say: \"It meant we had to rush the questions.\"", back: "\"I can see how that landed. The part people came for got squeezed.\"", guideFront: "Say how it looked from their side when...", guideBack: "Their view, put in your words" },
+            { front: "Step 3 · Reflect Openly — they say: \"I just want it tighter next time.\"", back: "\"That's fair. I think I tried to fit too much in.\"", guideFront: "Say honestly what it does to your thinking when...", guideBack: "Where you actually stand, uncertainty included" },
+            { front: "Step 4 · Look Ahead — they wait to see what you will do", back: "\"I'll cut it to eight minutes and run it past you beforehand.\"", guideFront: "Name what you'll do differently when...", guideBack: "A change, or something you'll consider" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A friend tells you that you were on your phone most of the evening you spent together.",
           steps: [
-            { front: "Step 1 · Acknowledge — they say: \"You were on your phone a lot last night.\"", back: "\"Fair enough. Thanks for saying it rather than stewing.\"" },
-            { front: "Step 2 · Show you understand — they say: \"It felt like you'd rather be somewhere else.\"", back: "\"I get that. From where you were sitting it must have looked exactly like that.\"" },
-            { front: "Step 3 · Reflect openly — they say: \"I know it's a small thing.\"", back: "\"It's not that small. Honestly, I hadn't noticed I was doing it.\"" },
-            { front: "Step 4 · Look ahead — the air has cleared", back: "\"Next time it stays in my bag. And tell me if I slip.\"" },
+            { front: "Step 1 · Acknowledge the Feedback — they say: \"You were on your phone a lot last night.\"", back: "\"Fair enough. Thanks for saying it rather than stewing.\"", guideFront: "Show you heard it, before answering, when...", guideBack: "Thanks, or an acceptance that it was fair to say" },
+            { front: "Step 2 · See Their Side — they say: \"It felt like you'd rather be somewhere else.\"", back: "\"I get that. From where you were sitting it must have looked exactly like that.\"", guideFront: "Say how it looked from their side when...", guideBack: "Their view, put in your words" },
+            { front: "Step 3 · Reflect Openly — they say: \"I know it's a small thing.\"", back: "\"It's not that small. Honestly, I hadn't noticed I was doing it.\"", guideFront: "Say honestly what it does to your thinking when...", guideBack: "Where you actually stand, uncertainty included" },
+            { front: "Step 4 · Look Ahead — the air has cleared", back: "\"Next time it stays in my bag. And tell me if I slip.\"", guideFront: "Name what you'll do differently when...", guideBack: "A change, or something you'll consider" },
           ]
         },
       ]
@@ -2932,26 +2932,26 @@ const multiStepCollections = {
       name: "When You Do Not Agree",
       guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
-      description: "The same four steps, used when you think the criticism is wrong. Steps: 1) Acknowledge the Feedback — thank them anyway, 2) Show You Understand Their View — say how it looked from their side, 3) Reflect Openly — say honestly that you see it differently, 4) Look Ahead — offer what you will do anyway.\n\nThe trick is that only step 3 changes. You can run the whole process honestly without ever pretending to agree.\n\nWhere the disagreement goes:\n1. Not in step 1 — thanking them costs you nothing.\n2. Not in step 2 — you are describing their view, not endorsing it.\n3. Here, in step 3 — \"I see it differently, and here is how.\"\n4. Then step 4 — something small you will still do, so it does not end in a standoff.\n\nMindset: disagreeing calmly at step 3 is far stronger than defending at step 1. The steps before it are what make you sound reasonable rather than dismissive.",
+      description: "The same four steps, used when you think the criticism is wrong. Steps: 1) Acknowledge the Feedback — thank them anyway, 2) See Their Side — say how it looked from their side, 3) Reflect Openly — say honestly that you see it differently, 4) Look Ahead — offer what you will do anyway.\n\nThe trick is that only step 3 changes. You can run the whole process honestly without ever pretending to agree.\n\nWhere the disagreement goes:\n1. Not in step 1 — thanking them costs you nothing.\n2. Not in step 2 — you are describing their view, not endorsing it.\n3. Here, in step 3 — \"I see it differently, and here is how.\"\n4. Then step 4 — something small you will still do, so it does not end in a standoff.\n\nMindset: disagreeing calmly at step 3 is far stronger than defending at step 1. The steps before it are what make you sound reasonable rather than dismissive.",
       inputs: [
         {
           bundle: 'pro',
           situation: "A teammate says you ignored their ideas during group work, and you do not think you did.",
           steps: [
-            { front: "Step 1 · Acknowledge — they say: \"You didn't listen to any of my ideas in there.\"", back: "\"Okay. I appreciate you telling me instead of letting it sit.\"" },
-            { front: "Step 2 · Show you understand — they say: \"I brought up the timeline twice.\"", back: "\"You did. And I moved past it both times, so I see how that looked.\"" },
-            { front: "Step 3 · Say it honestly — they wait for your answer", back: "\"I did hear it — I thought we'd settled it earlier. But clearly you didn't feel heard.\"" },
-            { front: "Step 4 · Look ahead — the disagreement is on the table calmly", back: "\"Next time I'll say out loud why I'm parking something, instead of just moving on.\"" },
+            { front: "Step 1 · Acknowledge the Feedback — they say: \"You didn't listen to any of my ideas in there.\"", back: "\"Okay. I appreciate you telling me instead of letting it sit.\"", guideFront: "Show you heard it, before answering, when...", guideBack: "Thanks, or an acceptance that it was fair to say" },
+            { front: "Step 2 · See Their Side — they say: \"I brought up the timeline twice.\"", back: "\"You did. And I moved past it both times, so I see how that looked.\"", guideFront: "Say how it looked from their side when...", guideBack: "Their view, put in your words" },
+            { front: "Step 3 · Reflect Openly — they wait for your answer", back: "\"I did hear it — I thought we'd settled it earlier. But clearly you didn't feel heard.\"", guideFront: "Say honestly what it does to your thinking when...", guideBack: "Where you actually stand, uncertainty included" },
+            { front: "Step 4 · Look Ahead — the disagreement is on the table calmly", back: "\"Next time I'll say out loud why I'm parking something, instead of just moving on.\"", guideFront: "Name what you'll do differently when...", guideBack: "A change, or something you'll consider" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague says you changed the plan without telling anyone, and you think you did tell them.",
           steps: [
-            { front: "Step 1 · Acknowledge — they say: \"You changed the plan and nobody knew.\"", back: "\"Thanks for raising it rather than grumbling about it.\"" },
-            { front: "Step 2 · Show you understand — they say: \"I found out from the client.\"", back: "\"That's a horrible way to find out. I'd be annoyed too.\"" },
-            { front: "Step 3 · Say it honestly — they wait", back: "\"I did put it in Thursday's thread, so I saw it as covered. But clearly it didn't reach you.\"" },
-            { front: "Step 4 · Look ahead — you are both calmer", back: "\"I'll message you directly on anything client-facing, not just the thread.\"" },
+            { front: "Step 1 · Acknowledge the Feedback — they say: \"You changed the plan and nobody knew.\"", back: "\"Thanks for raising it rather than grumbling about it.\"", guideFront: "Show you heard it, before answering, when...", guideBack: "Thanks, or an acceptance that it was fair to say" },
+            { front: "Step 2 · See Their Side — they say: \"I found out from the client.\"", back: "\"That's a horrible way to find out. I'd be annoyed too.\"", guideFront: "Say how it looked from their side when...", guideBack: "Their view, put in your words" },
+            { front: "Step 3 · Reflect Openly — they wait", back: "\"I did put it in Thursday's thread, so I saw it as covered. But clearly it didn't reach you.\"", guideFront: "Say honestly what it does to your thinking when...", guideBack: "Where you actually stand, uncertainty included" },
+            { front: "Step 4 · Look Ahead — you are both calmer", back: "\"I'll message you directly on anything client-facing, not just the thread.\"", guideFront: "Name what you'll do differently when...", guideBack: "A change, or something you'll consider" },
           ]
         },
       ]
@@ -2966,7 +2966,7 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend tells you something true about yourself that you did not want to hear.",
           steps: [
-            { front: "Step 1 · Acknowledge, briefly — they say: \"You get defensive every time anyone gives you feedback.\"", back: "\"Okay. Thank you for saying it.\"" },
+            { front: "Step 1 · The Short Response — they say: \"You get defensive every time anyone gives you feedback.\"", back: "\"Okay. Thank you for saying it.\"", guideFront: "Answer small feedback in one line when...", guideBack: "The whole reply, in a sentence" },
             { front: "Step 2 · Say you need time — you can feel yourself wanting to argue", back: "\"That's a hard one to hear. I'd like to think about it properly rather than answer now.\"" },
             { front: "Step 3 · Name when you will come back — they look unsure whether it landed", back: "\"I'm not brushing it off. Can we pick it up at the weekend?\"" },
           ]
@@ -2975,7 +2975,7 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "Your manager criticises something you had worked very hard on.",
           steps: [
-            { front: "Step 1 · Acknowledge, briefly — they say: \"Honestly, this isn't close to what we needed.\"", back: "\"Right. Thanks for being straight with me.\"" },
+            { front: "Step 1 · The Short Response — they say: \"Honestly, this isn't close to what we needed.\"", back: "\"Right. Thanks for being straight with me.\"", guideFront: "Answer small feedback in one line when...", guideBack: "The whole reply, in a sentence" },
             { front: "Step 2 · Say you need time — you can feel the heat rising", back: "\"I put a lot into this, so I need a bit of time before I respond properly.\"" },
             { front: "Step 3 · Name when you will come back — they are waiting", back: "\"Can I come back to you tomorrow morning with what I'd change?\"" },
           ]
@@ -3516,22 +3516,22 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You want a project to start in October. Your colleague wants December. Both of you have said so once and neither has moved.",
           steps: [
-            { front: "State What You Want — they have said December and are waiting.", back: "\"I'd like October, and I'll say why in a second. That's where I'm starting from.\"" },
-            { front: "Show You Understood Theirs — they say, \"December gives us breathing room.\"", back: "\"So it's the room you want, not the date itself.\"" },
-            { front: "Ask What Matters Most — they say, \"Partly. And I don't want to tell the client twice.\"", back: "\"Which of those two is the bigger one for you?\"" },
-            { front: "Offer Something That Includes Both — they say, \"Honestly, the client conversation.\"", back: "\"Then what if we start in October and only tell them in December, when it's certain?\"" },
-            { front: "Refine It Together — they say, \"That could work, actually.\"", back: "\"Is there anything about it you'd still change?\"" },
+            { front: "State What You Want — they have said December and are waiting.", back: "\"I'd like October, and I'll say why in a second. That's where I'm starting from.\"", guideFront: "Say plainly what you'd like when...", guideBack: "Your preference, before any hedging" },
+            { front: "Say Theirs Back — they say, \"December gives us breathing room.\"", back: "\"So it's the room you want, not the date itself.\"", guideFront: "Say their position back when...", guideBack: "Their position, as they'd recognise it" },
+            { front: "Ask What Matters Most — they say, \"Partly. And I don't want to tell the client twice.\"", back: "\"Which of those two is the bigger one for you?\"", guideFront: "Find which part they care about when...", guideBack: "A question about priorities, theirs or yours" },
+            { front: "Build From Both — they say, \"Honestly, the client conversation.\"", back: "\"Then what if we start in October and only tell them in December, when it's certain?\"", guideFront: "Build from both positions when...", guideBack: "An option made of both, not the middle" },
+            { front: "Refine It Together — they say, \"That could work, actually.\"", back: "\"Is there anything about it you'd still change?\"", guideFront: "Treat the first solution as a draft when...", guideBack: "A check that it actually holds" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Your study group is split between two project topics and the discussion has gone in circles for twenty minutes.",
           steps: [
-            { front: "Split It Up — they are all repeating themselves.", back: "\"We're arguing about the topic and the method as if they're the same thing. They're not.\"" },
-            { front: "Ask What Matters Most — they say, \"I just want one with data we can actually get.\"", back: "\"So it's the data, not the subject. Is that right for everyone?\"" },
-            { front: "Offer Something That Includes Both — they say, \"Pretty much.\"", back: "\"Then your topic with the method I suggested — that's got the data and the angle.\"" },
-            { front: "Show You Understood Theirs — they say, \"Would that be too much work?\"", back: "\"You're worried about the size of it rather than the idea.\"" },
-            { front: "Refine It Together — they say, \"Yes, that's the bit.\"", back: "\"Then let's cut the third section and see if it still works.\"" },
+            { front: "Split It Up — they are all repeating themselves.", back: "\"We're arguing about the topic and the method as if they're the same thing. They're not.\"", guideFront: "Separate the argument into parts when...", guideBack: "The disagreement, taken one piece at a time" },
+            { front: "Ask What Matters Most — they say, \"I just want one with data we can actually get.\"", back: "\"So it's the data, not the subject. Is that right for everyone?\"", guideFront: "Find which part they care about when...", guideBack: "A question about priorities, theirs or yours" },
+            { front: "Build From Both — they say, \"Pretty much.\"", back: "\"Then your topic with the method I suggested — that's got the data and the angle.\"", guideFront: "Build from both positions when...", guideBack: "An option made of both, not the middle" },
+            { front: "Say Theirs Back — they say, \"Would that be too much work?\"", back: "\"You're worried about the size of it rather than the idea.\"", guideFront: "Say their position back when...", guideBack: "Their position, as they'd recognise it" },
+            { front: "Refine It Together — they say, \"Yes, that's the bit.\"", back: "\"Then let's cut the third section and see if it still works.\"", guideFront: "Treat the first solution as a draft when...", guideBack: "A check that it actually holds" },
           ]
         },
       ]
@@ -3546,20 +3546,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You and a colleague have each repeated your position three times and nothing has moved.",
           steps: [
-            { front: "Split It Up — they say, \"I just don't think it's the right call.\"", back: "\"We're going round. There are three things in this — which one are we actually stuck on?\"" },
-            { front: "Ask What Matters Most — they say, \"The cost, mainly.\"", back: "\"Right. If the cost were solved, would the rest of it be fine?\"" },
-            { front: "Offer Something That Includes Both — they say, \"Probably, yes.\"", back: "\"Then let's do the smaller version this year and the rest next, if it pays for itself.\"" },
-            { front: "Refine It Together — they say, \"That I could live with.\"", back: "\"Live with, or actually want? I'd rather sort it now.\"" },
+            { front: "Split It Up — they say, \"I just don't think it's the right call.\"", back: "\"We're going round. There are three things in this — which one are we actually stuck on?\"", guideFront: "Separate the argument into parts when...", guideBack: "The disagreement, taken one piece at a time" },
+            { front: "Ask What Matters Most — they say, \"The cost, mainly.\"", back: "\"Right. If the cost were solved, would the rest of it be fine?\"", guideFront: "Find which part they care about when...", guideBack: "A question about priorities, theirs or yours" },
+            { front: "Build From Both — they say, \"Probably, yes.\"", back: "\"Then let's do the smaller version this year and the rest next, if it pays for itself.\"", guideFront: "Build from both positions when...", guideBack: "An option made of both, not the middle" },
+            { front: "Refine It Together — they say, \"That I could live with.\"", back: "\"Live with, or actually want? I'd rather sort it now.\"", guideFront: "Treat the first solution as a draft when...", guideBack: "A check that it actually holds" },
           ]
         },
         {
           bundle: 'pro',
           situation: "The other person has agreed to everything and you suspect they are conceding to end the conversation.",
           steps: [
-            { front: "Refine It Together — they say, \"No, it's fine, we'll do it your way.\"", back: "\"You've said fine three times. Is it fine, or are you just done with this?\"" },
-            { front: "Ask What Matters Most — they say, \"It's not my favourite, but it's alright.\"", back: "\"What's the bit that isn't right? I'd rather know now.\"" },
-            { front: "Show You Understood Theirs — they say, \"The timing lands badly for my team.\"", back: "\"So it's not the plan, it's when it starts.\"" },
-            { front: "Offer Something That Includes Both — they say, \"That's it, yes.\"", back: "\"Then keep the plan and move the start by two weeks. That costs me nothing.\"" },
+            { front: "Refine It Together — they say, \"No, it's fine, we'll do it your way.\"", back: "\"You've said fine three times. Is it fine, or are you just done with this?\"", guideFront: "Treat the first solution as a draft when...", guideBack: "A check that it actually holds" },
+            { front: "Ask What Matters Most — they say, \"It's not my favourite, but it's alright.\"", back: "\"What's the bit that isn't right? I'd rather know now.\"", guideFront: "Find which part they care about when...", guideBack: "A question about priorities, theirs or yours" },
+            { front: "Say Theirs Back — they say, \"The timing lands badly for my team.\"", back: "\"So it's not the plan, it's when it starts.\"", guideFront: "Say their position back when...", guideBack: "Their position, as they'd recognise it" },
+            { front: "Build From Both — they say, \"That's it, yes.\"", back: "\"Then keep the plan and move the start by two weeks. That costs me nothing.\"", guideFront: "Build from both positions when...", guideBack: "An option made of both, not the middle" },
           ]
         },
       ]
@@ -3574,20 +3574,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You are negotiating the shape of a piece of work. The date is fixed by something outside your control.",
           steps: [
-            { front: "Say What You Cannot Move On — they open by proposing a later date.", back: "\"The date I can't move — that one's fixed outside this room. Nearly everything else is open.\"" },
-            { front: "Show You Understood Theirs — they say, \"Then it can't be done properly.\"", back: "\"You're saying the scope doesn't fit the time, not that the date's wrong.\"" },
-            { front: "Ask What Matters Most — they say, \"Exactly that.\"", back: "\"Which parts of the scope would you keep if you could only keep half?\"" },
-            { front: "Offer Something That Includes Both — they say, \"The first two sections, easily.\"", back: "\"Then those two by the date, and the rest afterwards without a deadline on it.\"" },
+            { front: "Name Your Limit — they open by proposing a later date.", back: "\"The date I can't move — that one's fixed outside this room. Nearly everything else is open.\"", guideFront: "Name the part that isn't for trade when...", guideBack: "Your limit, and how small it is" },
+            { front: "Say Theirs Back — they say, \"Then it can't be done properly.\"", back: "\"You're saying the scope doesn't fit the time, not that the date's wrong.\"", guideFront: "Say their position back when...", guideBack: "Their position, as they'd recognise it" },
+            { front: "Ask What Matters Most — they say, \"Exactly that.\"", back: "\"Which parts of the scope would you keep if you could only keep half?\"", guideFront: "Find which part they care about when...", guideBack: "A question about priorities, theirs or yours" },
+            { front: "Build From Both — they say, \"The first two sections, easily.\"", back: "\"Then those two by the date, and the rest afterwards without a deadline on it.\"", guideFront: "Build from both positions when...", guideBack: "An option made of both, not the middle" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A manager is proposing a schedule that includes weekends. You cannot do weekends.",
           steps: [
-            { front: "Say What You Cannot Move On — they lay out the plan.", back: "\"Weekends I can't do — that's childcare rather than preference. Everything else I can look at.\"" },
-            { front: "Show You Understood Theirs — they say, \"The work has to be covered somehow.\"", back: "\"The coverage is the problem, rather than specifically me being there on a Saturday.\"" },
-            { front: "Offer Something That Includes Both — they say, \"Yes, that's what I need.\"", back: "\"I could do two evenings instead, or take the Monday morning handover off whoever does cover it.\"" },
-            { front: "Refine It Together — they say, \"The evenings might work.\"", back: "\"Let's try it for a month and see whether it actually covers what you need.\"" },
+            { front: "Name Your Limit — they lay out the plan.", back: "\"Weekends I can't do — that's childcare rather than preference. Everything else I can look at.\"", guideFront: "Name the part that isn't for trade when...", guideBack: "Your limit, and how small it is" },
+            { front: "Say Theirs Back — they say, \"The work has to be covered somehow.\"", back: "\"The coverage is the problem, rather than specifically me being there on a Saturday.\"", guideFront: "Say their position back when...", guideBack: "Their position, as they'd recognise it" },
+            { front: "Build From Both — they say, \"Yes, that's what I need.\"", back: "\"I could do two evenings instead, or take the Monday morning handover off whoever does cover it.\"", guideFront: "Build from both positions when...", guideBack: "An option made of both, not the middle" },
+            { front: "Refine It Together — they say, \"The evenings might work.\"", back: "\"Let's try it for a month and see whether it actually covers what you need.\"", guideFront: "Treat the first solution as a draft when...", guideBack: "A check that it actually holds" },
           ]
         },
       ]
