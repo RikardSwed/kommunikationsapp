@@ -3930,6 +3930,15 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.85', date: 'September 2026', title: 'Volume sweep — the Challenges pass is finished', audience: 'dev',
+    items: [
+      'Rounds 3 and 4 in one version: <strong>Deep Questions</strong>, <strong>Listening Through Questions</strong>, <strong>Starting Conversations Pt. 3 and Pt. 4</strong>, <strong>Persuasion and Influence — Pt. 2</strong>, <strong>Stories in Conversation</strong>, <strong>Building a Story</strong>, <strong>Story Banter</strong>, <strong>Reframing</strong> and <strong>Negotiation and Compromise</strong>. 154 cards.',
+      '<strong>Every pack in the release scope now has 5 Challenges decks of 8 cards.</strong> 391 cards written across four rounds, each carrying one of its own pack\'s strategies and inheriting that strategy\'s back guide. No pack refers to a strategy it does not have.',
+      'Two packs needed care rather than filling. <strong>Listening Through Questions</strong> was short by nineteen rather than fifteen, because four cards were lifted out in batch 6 — the decks that lost them are rebuilt with questions the pack actually has. <strong>Starting Conversations — Pt. 3</strong> had a deck answered entirely by one strategy; the new cards give it two more.',
+      'Next in the sweep: Mindset, 520 cards.',
+    ],
+  },
+  {
     version: 'v1.28.84', date: 'September 2026', title: 'Volume sweep, Challenges round 2 — five packs filled', audience: 'dev',
     items: [
       '<strong>Conflict Emotions</strong>, <strong>Emotion Labelling and Regulation</strong>, <strong>Supporting Conversations</strong>, <strong>Apologizing — Pt. 2</strong> and <strong>Giving Criticism</strong>: every Challenges deck goes from five cards to eight. 75 cards, all carrying one of the pack\'s own strategies and inheriting its back guide.',

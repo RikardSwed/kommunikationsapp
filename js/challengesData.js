@@ -548,6 +548,9 @@ const challengesCollections = {
         { q: "A compliment could be read as coming on to them.", a: "\"That was a good question you asked in there.\" [Compliment Something Specific]", guideBack: "One detail you noticed and liked", bundle: 'pro' },
         { q: "You realise your remark landed awkwardly.", a: "\"That came out oddly — I meant the jacket's great. Anyway, do you know when this starts?\" [Compliment Something Specific]", guideBack: "One detail you noticed and liked", bundle: 'pro' },
         { q: "You genuinely admire something personal about them but barely know them.", a: "\"You're very calm with all this going on. How do you manage that?\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
+        { q: "You want to praise the work without praising the person.", a: "\"That write-up was properly clear. I read it twice by choice.\" [Compliment Something Specific]", guideBack: "One detail you noticed and liked", bundle: 'pro' },
+        { q: "Anything about how they look would be wrong here.", a: "\"You always ask the question nobody else will. I like that.\" [Compliment Something Specific]", guideBack: "One detail you noticed and liked", bundle: 'pro' },
+        { q: "You have complimented and it has gone quiet.", a: "\"Anyway — what got you into this line of work?\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
       ]
     },
     {
@@ -561,6 +564,9 @@ const challengesCollections = {
         { q: "You guessed their role and got it completely wrong.", a: "\"Right, nothing like it then. What is it you actually do?\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
         { q: "Your guess about their mood was wrong and slightly unflattering.", a: "\"I've misread that completely, sorry. You're clearly enjoying yourself more than I am.\" [Make a Guess]", guideBack: "A guess they can confirm or fix", bundle: 'pro' },
         { q: "They correct you and seem to enjoy doing it.", a: "\"Go on then — what gave me the wrong impression?\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
+        { q: "You guessed the wrong city entirely.", a: "\"Completely wrong, then. Where are you actually from?\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
+        { q: "Your guess was right and they did not enjoy it.", a: "\"Fair enough, I'll stop guessing. What's the real version?\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
+        { q: "You want to guess again after being corrected.", a: "\"Second attempt: you've done this before, haven't you?\" [Make a Guess]", guideBack: "A guess they can confirm or fix", bundle: 'pro' },
       ]
     },
     {
@@ -574,6 +580,9 @@ const challengesCollections = {
         { q: "They have answered everything politely and asked you nothing.", a: "\"I've asked you about six things. Ask me something.\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
         { q: "You realise you know a list of facts about them and nothing else.", a: "\"What's the bit of all that you actually enjoy?\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
         { q: "They look slightly cornered.", a: "\"Anyway — that jumper's excellent, by the way.\" [Compliment Something Specific]", guideBack: "One detail you noticed and liked", bundle: 'pro' },
+        { q: "You have four facts about them and no conversation.", a: "\"You've got the look of somebody who does this every week.\" [Make a Guess]", guideBack: "A guess they can confirm or fix", bundle: 'pro' },
+        { q: "You are about to ask a fifth question.", a: "\"I'll stop quizzing you. That's a good jacket, by the way.\" [Compliment Something Specific]", guideBack: "One detail you noticed and liked", bundle: 'pro' },
+        { q: "They have answered everything and asked nothing.", a: "\"How are you finding it, actually? Properly.\" [Ask How They Really Are]", guideBack: "A real how-are-you", bundle: 'pro' },
       ]
     },
     {
@@ -587,6 +596,9 @@ const challengesCollections = {
         { q: "You have been doing all the talking and all the asking.", a: "\"I'll stop firing questions. I'm mostly here because I said yes without checking the date.\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
         { q: "Two attempts have both landed flat.", a: "\"Anyway — enjoy the rest of it.\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
         { q: "They answer well but never ask anything back.", a: "\"Right, your turn. Ask me something.\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
+        { q: "Two questions, two short answers, no follow-up.", a: "\"You don't look like somebody who wanted to be here tonight.\" [Make a Guess]", guideBack: "A guess they can confirm or fix", bundle: 'pro' },
+        { q: "They seem uncomfortable being asked about themselves.", a: "\"That was a good point you made earlier, for what it's worth.\" [Compliment Something Specific]", guideBack: "One detail you noticed and liked", bundle: 'pro' },
+        { q: "You are running out of ways in.", a: "\"How's the week been? Genuinely.\" [Ask How They Really Are]", guideBack: "A real how-are-you", bundle: 'pro' },
       ]
     },
     {
@@ -600,6 +612,9 @@ const challengesCollections = {
         { q: "You are about to offer advice they have not asked for.", a: "\"Do you want thoughts, or do you just want to say it out loud?\" [Ask How They Really Are]", guideBack: "A real how-are-you", bundle: 'pro' },
         { q: "You want to offer support without it being vague.", a: "\"I'm around Thursday. Shall we get a coffee then, properly?\" [Ask How They Really Are]", guideBack: "A real how-are-you", bundle: 'pro' },
         { q: "It sounds like more than a conversation can carry.", a: "\"This sounds like more than I can help with, and I don't want to leave you with it. Is there someone you can talk to properly?\" [Ask How They Really Are]", guideBack: "A real how-are-you", bundle: 'pro' },
+        { q: "They have said something heavy and you have no answer.", a: "\"How are you doing with all that, really?\" [Ask How They Really Are]", guideBack: "A real how-are-you", bundle: 'pro' },
+        { q: "You want to check without making it a big moment.", a: "\"You've been carrying something for a while, haven't you.\" [Make a Guess]", guideBack: "A guess they can confirm or fix", bundle: 'pro' },
+        { q: "They deflect and you think they need to be asked again.", a: "\"I'll ask once more and then leave it. How are you?\" [Ask How They Really Are]", guideBack: "A real how-are-you", bundle: 'pro' },
       ]
     },
   ],
@@ -779,6 +794,9 @@ const challengesCollections = {
         { q: "They say: \"It was alright I suppose.\" and stop.", a: "\"You said alright — what would have made it good?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
         { q: "A new colleague gives you almost nothing to work with.", a: "\"What were you doing before you came here?\" [Start with Simple Questions]", guideBack: "A question anyone could answer", bundle: 'pro' },
         { q: "They answer: \"Work. That is about it.\"", a: "\"You said that is about it — is work eating everything at the moment?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
+        { q: "They answer with the shortest true thing every time.", a: "\"Easy one, then: where were you before this?\" [Start with Simple Questions]", guideBack: "A question anyone could answer", bundle: 'pro' },
+        { q: "You got one word back and it was an interesting word.", a: "\"You said 'survived'. Was it that kind of week?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
+        { q: "Three questions in and still nothing to build on.", a: "\"What do you actually do with your Saturdays? No wrong answers.\" [Start with Simple Questions]", guideBack: "A question anyone could answer", bundle: 'pro' },
       ]
     },
     {
@@ -792,6 +810,9 @@ const challengesCollections = {
         { q: "They mention a divorce in passing, five minutes in.", a: "\"You said you moved recently — how is the new place?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
         { q: "A colleague you barely know mentions being tired lately.", a: "\"You said lately — is it a busy stretch at work?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
         { q: "You want to ask a big values question but it is far too early.", a: "\"What do you do when you are not at things like this?\" [Start with Simple Questions]", guideBack: "A question anyone could answer", bundle: 'pro' },
+        { q: "You want to ask about their marriage and you met ten minutes ago.", a: "\"How long have you lived round here?\" [Start with Simple Questions]", guideBack: "A question anyone could answer", bundle: 'pro' },
+        { q: "They have opened a door you would like to walk through.", a: "\"You said you moved for work — was that a big decision at the time?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
+        { q: "The question you want to ask needs trust you have not earned yet.", a: "\"Do you think most people move for the job, or for the place?\" [Explore Beliefs]", guideBack: "A question about their view", bundle: 'pro' },
       ]
     },
     {
@@ -805,6 +826,9 @@ const challengesCollections = {
         { q: "They mention losing a job and go quiet.", a: "\"Sounds like a rough stretch. What are you doing now?\" [Start with Simple Questions]", guideBack: "A question anyone could answer", bundle: 'pro' },
         { q: "They say: \"It has been a strange year, honestly.\"", a: "\"You said strange — good strange or hard strange?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
         { q: "They touch on their health and then change the subject.", a: "\"Fair enough. What were you saying about the new job?\" [Start with Simple Questions]", guideBack: "A question anyone could answer", bundle: 'pro' },
+        { q: "They mention something painful and keep going.", a: "\"You said that was a hard year. What was it like at the time?\" [Explore Experiences]", guideBack: "A question about something they lived through", bundle: 'pro' },
+        { q: "You want to follow it without prying.", a: "\"Do you mind me asking about that, or shall we leave it?\" [Start with Simple Questions]", guideBack: "A question anyone could answer", bundle: 'pro' },
+        { q: "They have opened something and then made light of it.", a: "\"You've gone light on it. Was it heavier than that?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
       ]
     },
     {
@@ -818,6 +842,9 @@ const challengesCollections = {
         { q: "They give short answers and look slightly cornered.", a: "\"Sorry, I am firing questions. What was the trip like, though?\" [Explore Experiences]", guideBack: "A question about something they lived through", bundle: 'pro' },
         { q: "You realise you have not reacted to a single answer yet.", a: "\"That one surprised me — what was the reaction at home?\" [Explore Experiences]", guideBack: "A question about something they lived through", bundle: 'pro' },
         { q: "It has become question, answer, next question.", a: "\"You mentioned the village earlier — what pulled you away from it?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
+        { q: "You have asked five and answered none.", a: "\"That's more than I'd have managed. What was the first week like?\" [Explore Experiences]", guideBack: "A question about something they lived through", bundle: 'pro' },
+        { q: "Your last three questions had nothing to do with each other.", a: "\"Back to the boat thing — what does being out there give you?\" [Explore Values]", guideBack: "A question about what matters to them", bundle: 'pro' },
+        { q: "They are answering politely and volunteering nothing.", a: "\"What's the part of it you'd actually miss?\" [Explore Values]", guideBack: "A question about what matters to them", bundle: 'pro' },
       ]
     },
     {
@@ -831,6 +858,9 @@ const challengesCollections = {
         { q: "You have asked everything obvious about their job.", a: "\"You said you fell into it — what would you do instead?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
         { q: "They finish an answer and neither of you speaks.", a: "\"What matters most to you outside all of that?\" [Explore Values]", guideBack: "A question about what matters to them", bundle: 'pro' },
         { q: "You are stuck for anything to ask next.", a: "\"You mentioned your brother earlier — what is he like?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
+        { q: "You have exhausted the obvious topics.", a: "\"What do you think makes somebody good at that job?\" [Explore Beliefs]", guideBack: "A question about their view", bundle: 'pro' },
+        { q: "The silence has gone on a beat too long.", a: "\"What's the best thing you've done this year?\" [Explore Experiences]", guideBack: "A question about something they lived through", bundle: 'pro' },
+        { q: "You want something that is not about work.", a: "\"Is there anything you've changed your mind about lately?\" [Explore Beliefs]", guideBack: "A question about their view", bundle: 'pro' },
       ]
     },
   ],
@@ -1502,6 +1532,9 @@ const challengesCollections = {
         { q: "They told something they seemed nervous about telling.", a: "(ask about theirs first — the story can wait) [Read the Room First]", guideBack: "A story, or staying where you are", bundle: 'pro' },
         { q: "The group has topped each other three times running.", a: "\"We're turning this into a competition. What happened after yours?\" [Answer, Don't Outdo]", guideBack: "A story that answers, not one that wins", bundle: 'pro' },
         { q: "You want to tell yours and keep them as the source.", a: "\"You've just reminded me of a thing that happened in Malmö.\" [Answer, Don't Outdo]", guideBack: "A story that answers, not one that wins", bundle: 'pro' },
+        { q: "Their story was quiet and yours has a punchline.", a: "\"Yours is the better one. Mine's the same thing with a bike in it.\" [Answer, Don't Outdo]", guideBack: "A story that answers, not one that wins", bundle: 'pro' },
+        { q: "You want to add yours without making it a competition.", a: "\"That reminds me of a much smaller version of it. Can I?\" [Ask for the Floor]", guideBack: "A request for the floor, with a length on it", bundle: 'pro' },
+        { q: "The room has moved on and yours has gone.", a: "\"Yours was the one worth hearing anyway. What happened after?\" [Give It Back]", guideBack: "The floor, passed back", bundle: 'pro' },
       ]
     },
     {
@@ -1515,6 +1548,9 @@ const challengesCollections = {
         { q: "One person is enjoying it and two clearly are not.", a: "\"Fast version, and I'll give you the rest later.\" [Watch Them While You Tell It]", guideBack: "A cut or a continuation, based on their face", bundle: 'pro' },
         { q: "You finish and there is an awkward beat.", a: "\"That's mine. Somebody must have a worse one.\" [Give It Back]", guideBack: "The floor, passed back", bundle: 'pro' },
         { q: "One person in the group has not said anything all evening.", a: "\"Sara, you've been in worse situations than that.\" [Give It Back]", guideBack: "The floor, passed back", bundle: 'pro' },
+        { q: "Six people, and you have not said how long it is.", a: "\"Two minutes, and there's a dog in it. All right?\" [Ask for the Floor]", guideBack: "A request for the floor, with a length on it", bundle: 'pro' },
+        { q: "Half the group has heard it before.", a: "\"Some of you know this one — I'll do the short version.\" [Ask for the Floor]", guideBack: "A request for the floor, with a length on it", bundle: 'pro' },
+        { q: "You can see two people checking their phones.", a: "\"I'll jump to the end: he'd taken the wrong car home.\" [Watch Them While You Tell It]", guideBack: "A cut or a continuation, based on their face", bundle: 'pro' },
       ]
     },
     {
@@ -1528,6 +1564,9 @@ const challengesCollections = {
         { q: "You are nearly at the end and it has died.", a: "\"He'd taken the wrong car. That's the whole thing.\" [Finish on Purpose]", guideBack: "The last line, and then silence", bundle: 'pro' },
         { q: "Somebody says \"and then what?\" out of pure kindness.", a: "\"Honestly, nothing. That's the disappointing part.\" [Cut It Loose]", guideBack: "The story dropped, without ceremony", bundle: 'pro' },
         { q: "You are continuing out of stubbornness.", a: "(stop — the extra four sentences cost more than the abandon) [Cut It Loose]", guideBack: "The story dropped, without ceremony", bundle: 'pro' },
+        { q: "You are halfway through and nobody is with you.", a: "\"This isn't going anywhere. Anyway — how was Denmark?\" [Cut It Loose]", guideBack: "The story dropped, without ceremony", bundle: 'pro' },
+        { q: "The ending is good and the middle has lost them.", a: "\"Skipping forward: the point is he still had the keys.\" [Watch Them While You Tell It]", guideBack: "A cut or a continuation, based on their face", bundle: 'pro' },
+        { q: "You are about to add more detail to rescue it.", a: "\"More detail won't save this. I'll stop.\" [Cut It Loose]", guideBack: "The story dropped, without ceremony", bundle: 'pro' },
       ]
     },
     {
@@ -1541,6 +1580,9 @@ const challengesCollections = {
         { q: "You have been cut off and still want the ending in.", a: "\"One line and I'm done: he'd taken the wrong car.\" [Finish on Purpose]", guideBack: "The last line, and then silence", bundle: 'pro' },
         { q: "Someone is visibly waiting to tell theirs.", a: "\"I'll stop there — you've clearly got one.\" [Give It Back]", guideBack: "The floor, passed back", bundle: 'pro' },
         { q: "The interruption has killed the momentum completely.", a: "\"That's ruined it, and honestly it wasn't going anywhere.\" [Cut It Loose]", guideBack: "The story dropped, without ceremony", bundle: 'pro' },
+        { q: "They have told the ending before you got there.", a: "\"You've had it. Go on, you tell it properly.\" [Give It Back]", guideBack: "The floor, passed back", bundle: 'pro' },
+        { q: "The interruption was a good question and you lost your place.", a: "\"Where was I — right, the lift. And then it stopped.\" [Finish on Purpose]", guideBack: "The last line, and then silence", bundle: 'pro' },
+        { q: "Two people are now telling it at once.", a: "\"You do it. You were actually there.\" [Give It Back]", guideBack: "The floor, passed back", bundle: 'pro' },
       ]
     },
     {
@@ -1554,6 +1596,9 @@ const challengesCollections = {
         { q: "It is someone else's news and it has not been announced.", a: "\"That's not mine to tell, I'm afraid.\" [Read the Room First]", guideBack: "A story, or staying where you are", bundle: 'pro' },
         { q: "You have started before realising whose story it is.", a: "\"Actually — that's not my story to be telling. Forget I started.\" [Cut It Loose]", guideBack: "The story dropped, without ceremony", bundle: 'pro' },
         { q: "You genuinely want to use it and think they would be fine.", a: "(ask them — it costs one message and settles it) [Read the Room First]", guideBack: "A story, or staying where you are", bundle: 'pro' },
+        { q: "The story belongs to somebody sitting at the table.", a: "\"That one's not mine to tell. Ask her about the ferry sometime.\" [Read the Room First]", guideBack: "A story, or staying where you are", bundle: 'pro' },
+        { q: "You are three sentences in and it is clearly private.", a: "\"Actually, forget that — it isn't mine to be telling.\" [Cut It Loose]", guideBack: "The story dropped, without ceremony", bundle: 'pro' },
+        { q: "You could tell it with the names taken out.", a: "\"There's a version without names and it's not as good. I'll leave it.\" [Read the Room First]", guideBack: "A story, or staying where you are", bundle: 'pro' },
       ]
     },
   ],
@@ -2143,6 +2188,9 @@ const challengesCollections = {
         { q: "You are about to say \"yes, but\".", a: "\"The bit you're right about is the cost.\" [Acknowledge Before Suggesting]", guideBack: "What's right about theirs, then yours", bundle: 'pro' },
         { q: "They ask why yours is better than theirs.", a: "\"Which would you rather be doing the week before the deadline?\" [Ask a Question Instead]", guideBack: "A question that leads them there", bundle: 'pro' },
         { q: "It has become about who is right.", a: "\"I'd rather get this right than be right. What would you do?\" [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
+        { q: "They have repeated their point with more force.", a: "\"Your version handles the cost better than mine does.\" [Acknowledge Before Suggesting]", guideBack: "What's right about theirs, then yours", bundle: 'pro' },
+        { q: "You are both restating rather than listening.", a: "\"What would have to be true for mine to be worth trying?\" [Ask a Question Instead]", guideBack: "A question that leads them there", bundle: 'pro' },
+        { q: "They have dug in and you want to lower the stakes.", a: "\"It's your call in the end. I've said what I think.\" [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
       ]
     },
     {
@@ -2156,6 +2204,9 @@ const challengesCollections = {
         { q: "They are worried about being stuck with it.", a: "\"If it's worse in a month we go back. Nothing's permanent.\" [Make It Easy to Say Yes]", guideBack: "A smaller, safer ask", bundle: 'pro' },
         { q: "They need someone else's agreement first.", a: "\"Would it help if I wrote it up so you can just forward it?\" [Make It Easy to Say Yes]", guideBack: "A smaller, safer ask", bundle: 'pro' },
         { q: "You have raised it twice and nothing has happened.", a: "\"I'll stop asking. If you want it, tell me and I'll do the setting up.\" [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
+        { q: "They have agreed twice and done nothing.", a: "\"What's actually in the way of starting it?\" [Ask a Question Instead]", guideBack: "A question that leads them there", bundle: 'pro' },
+        { q: "The first step is bigger than it needs to be.", a: "\"Try it on one team for a month. If it's awful, we stop.\" [Make It Easy to Say Yes]", guideBack: "A smaller, safer ask", bundle: 'pro' },
+        { q: "You have pushed as far as is useful.", a: "\"I'll leave it with you. Tell me if you want a hand.\" [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
       ]
     },
     {
@@ -2169,6 +2220,9 @@ const challengesCollections = {
         { q: "They have noticed you are steering.", a: "\"Fair — that was a leading question. Let me just say what I think instead.\" [Acknowledge Before Suggesting]", guideBack: "What's right about theirs, then yours", bundle: 'pro' },
         { q: "You genuinely do not know the answer.", a: "\"How would you do it, if it were yours?\" [Ask a Question Instead]", guideBack: "A question that leads them there", bundle: 'pro' },
         { q: "Their answer goes against you and you want to take it seriously.", a: "\"That's not what I expected. Say more — I might be wrong about this.\" [Acknowledge Before Suggesting]", guideBack: "What's right about theirs, then yours", bundle: 'pro' },
+        { q: "Your question has one acceptable answer and they know it.", a: "\"Let me ask it properly: what would you do with the extra week?\" [Ask a Question Instead]", guideBack: "A question that leads them there", bundle: 'pro' },
+        { q: "They have called out the steering.", a: "\"Fair — I was leading you. Your point about the timing is the strong one.\" [Acknowledge Before Suggesting]", guideBack: "What's right about theirs, then yours", bundle: 'pro' },
+        { q: "Their answer undermines your case.", a: "\"That's a better objection than I expected. Let me think about it.\" [Acknowledge Before Suggesting]", guideBack: "What's right about theirs, then yours", bundle: 'pro' },
       ]
     },
     {
@@ -2182,6 +2236,9 @@ const challengesCollections = {
         { q: "They ask what you would do.", a: "\"I'd take the other one. But I'd not be the one living with it.\" [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
         { q: "You want to leave the door open without pressing.", a: "\"If you ever want to talk it through, I'm around. I'll not bring it up again.\" [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
         { q: "It is their area at work and not yours.", a: "\"It's your bit. I only wanted the other option said out loud once.\" [Acknowledge Before Suggesting]", guideBack: "What's right about theirs, then yours", bundle: 'pro' },
+        { q: "You have an opinion and no standing.", a: "\"Not my call. If it helps, I'd want to know the notice period.\" [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
+        { q: "They keep asking you to decide for them.", a: "\"What's pulling you towards the first one?\" [Ask a Question Instead]", guideBack: "A question that leads them there", bundle: 'pro' },
+        { q: "You want to leave the door open.", a: "\"I'll shut up about it. Ask me again if you ever want the other view.\" [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
       ]
     },
     {
@@ -2195,6 +2252,9 @@ const challengesCollections = {
         { q: "You think a smaller version might still work.", a: "\"Would a much smaller version be a different answer, or is it a no to all of it?\" [Make It Easy to Say Yes]", guideBack: "A smaller, safer ask", bundle: 'pro' },
         { q: "You are about to make the same case again.", a: "\"I've made my case and you've said no. I'll leave it.\" [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
         { q: "You want to leave it somewhere it could return.", a: "\"If anything changes, I'd still be up for it. No pressure either way.\" [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
+        { q: "The no was clear and you want to accept it.", a: "\"Understood. I'll stop asking.\" [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
+        { q: "You do not know what the no was actually about.", a: "\"Can I ask what made it a no? Not to argue — I'd just like to know.\" [Ask a Question Instead]", guideBack: "A question that leads them there", bundle: 'pro' },
+        { q: "A much smaller version might survive.", a: "\"Would a single trial run be a no as well, or just the full thing?\" [Make It Easy to Say Yes]", guideBack: "A smaller, safer ask", bundle: 'pro' },
       ]
     },
   ],
@@ -2210,6 +2270,9 @@ const challengesCollections = {
         { q: "You have given ground on everything so far.", a: "\"I've moved on three things. This one I'd like to keep.\" [Name Your Limit]", guideBack: "Your limit, and how small it is", bundle: 'pro' },
         { q: "You never actually said what you wanted.", a: "\"I've not said my own preference at all. It'd be October.\" [State What You Want]", guideBack: "Your preference, before any hedging", bundle: 'pro' },
         { q: "You agreed last week and it has been bothering you since.", a: "\"Can we go back to Tuesday? I said yes too quickly.\" [Refine It Together]", guideBack: "A check that it actually holds", bundle: 'pro' },
+        { q: "You have agreed to a date that does not work.", a: "\"Actually, no — I said the week after next, and I meant it.\" [State What You Want]", guideBack: "Your preference, before any hedging", bundle: 'pro' },
+        { q: "You gave way before they had even asked.", a: "\"Before we go on: what I'd like is to keep the Thursday.\" [State What You Want]", guideBack: "Your preference, before any hedging", bundle: 'pro' },
+        { q: "You are agreeing to stop the conversation being awkward.", a: "\"Does that actually work for me? No. Let me start again.\" [Refine It Together]", guideBack: "A check that it actually holds", bundle: 'pro' },
       ]
     },
     {
@@ -2223,6 +2286,9 @@ const challengesCollections = {
         { q: "They say it is fine but do not look it.", a: "\"Which part would you change if you could change one?\" [Ask What Matters Most]", guideBack: "A question about priorities, theirs or yours", bundle: 'pro' },
         { q: "They have not stated a preference at all.", a: "\"What would you want, if it were entirely your call?\" [Ask What Matters Most]", guideBack: "A question about priorities, theirs or yours", bundle: 'pro' },
         { q: "They keep saying whatever suits you.", a: "\"It genuinely doesn't suit me if it doesn't suit you. What's your version?\" [Say Theirs Back]", guideBack: "Their position, as they'd recognise it", bundle: 'pro' },
+        { q: "They have said yes to everything in two minutes.", a: "\"Which bit of this do you actually care about?\" [Ask What Matters Most]", guideBack: "A question about priorities, theirs or yours", bundle: 'pro' },
+        { q: "Their agreement came with a flat voice.", a: "\"You said yes fast. Is it genuinely all right?\" [Refine It Together]", guideBack: "A check that it actually holds", bundle: 'pro' },
+        { q: "You are about to take the win and leave.", a: "\"Let me check I've got yours: you'd rather do it in one go, in the autumn.\" [Say Theirs Back]", guideBack: "Their position, as they'd recognise it", bundle: 'pro' },
       ]
     },
     {
@@ -2236,6 +2302,9 @@ const challengesCollections = {
         { q: "The agreed plan has the good parts of both removed.", a: "\"We've cut the bits that made either version work. Shall we pick one properly instead?\" [Build From Both]", guideBack: "An option made of both, not the middle", bundle: 'pro' },
         { q: "You suspect you want different things and could both win.", a: "\"You want the venue and I want the date. We might not be in each other's way at all.\" [Ask What Matters Most]", guideBack: "A question about priorities, theirs or yours", bundle: 'pro' },
         { q: "A settled compromise is clearly not going to hold.", a: "\"That's not going to survive contact with February. Can we redo it?\" [Refine It Together]", guideBack: "A check that it actually holds", bundle: 'pro' },
+        { q: "Halving it leaves both of you with nothing useful.", a: "\"What if we do yours in full, and only announce it in December?\" [Build From Both]", guideBack: "An option made of both, not the middle", bundle: 'pro' },
+        { q: "You have agreed a number neither of you wanted.", a: "\"Which matters more to you — the amount, or when it lands?\" [Ask What Matters Most]", guideBack: "A question about priorities, theirs or yours", bundle: 'pro' },
+        { q: "The compromise removed the point of both plans.", a: "\"Let's take this apart. The date and the scope are two different arguments.\" [Split It Up]", guideBack: "The disagreement, taken one piece at a time", bundle: 'pro' },
       ]
     },
     {
@@ -2249,6 +2318,9 @@ const challengesCollections = {
         { q: "You want to find any piece that might be movable.", a: "\"Can we take just the timing and leave everything else as yours?\" [Split It Up]", guideBack: "The disagreement, taken one piece at a time", bundle: 'pro' },
         { q: "The decision was clearly made before the conversation.", a: "\"It sounds like this is decided. I'd rather you said so than have me negotiating with myself.\" [Say Theirs Back]", guideBack: "Their position, as they'd recognise it", bundle: 'pro' },
         { q: "You need to accept it and want to be clear about what happened.", a: "\"Fine, we'll do it your way. I want to be clear I'm agreeing to it, not persuaded by it.\" [State What You Want]", guideBack: "Your preference, before any hedging", bundle: 'pro' },
+        { q: "Four rounds and the position has not shifted.", a: "\"Is any part of it movable, or is the whole thing fixed?\" [Split It Up]", guideBack: "The disagreement, taken one piece at a time", bundle: 'pro' },
+        { q: "You need to know whether this is a decision or a discussion.", a: "\"So the date's decided. Is the rest still open?\" [Say Theirs Back]", guideBack: "Their position, as they'd recognise it", bundle: 'pro' },
+        { q: "You have accepted it and want one thing on the record.", a: "\"I'll work with it. I can't do the Friday, and that part isn't negotiable.\" [Name Your Limit]", guideBack: "Your limit, and how small it is", bundle: 'pro' },
       ]
     },
     {
@@ -2262,6 +2334,9 @@ const challengesCollections = {
         { q: "You are negotiating towards something you will not be able to live with.", a: "\"I should have said earlier — that part I'd have to say no to.\" [Name Your Limit]", guideBack: "Your limit, and how small it is", bundle: 'pro' },
         { q: "You want to be clear it is a limit rather than a bargaining position.", a: "\"That's not an opening offer. That's where I actually stop.\" [Name Your Limit]", guideBack: "Your limit, and how small it is", bundle: 'pro' },
         { q: "You have said everything is negotiable and it is not.", a: "\"I've been making it sound open. On the safety part it isn't.\" [Name Your Limit]", guideBack: "Your limit, and how small it is", bundle: 'pro' },
+        { q: "You are being asked to split something that cannot be split.", a: "\"This one isn't a trade. I can't sign off something I think is unsafe.\" [Name Your Limit]", guideBack: "Your limit, and how small it is", bundle: 'pro' },
+        { q: "They think you are haggling and you are not.", a: "\"I'm not opening with a high number. That is the number.\" [Name Your Limit]", guideBack: "Your limit, and how small it is", bundle: 'pro' },
+        { q: "You want to say the limit without ending the conversation.", a: "\"That one thing I can't move. Everything else is genuinely open.\" [Name Your Limit]", guideBack: "Your limit, and how small it is", bundle: 'pro' },
       ]
     },
   ],
@@ -3386,6 +3461,11 @@ const challengesCollections = {
         { q: "You have asked four unconnected questions and answers are shortening.", a: "\"You said something about the second flat — what happened with that?\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
         { q: "Your last question changed the subject entirely.", a: "\"Ignore that, I jumped. Go back to the bit about your brother.\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
         { q: "You have asked two questions in a row without responding to either answer.", a: "\"That's a much better story than the one I was about to ask about.\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
+        { q: "You have asked five questions and reacted to none of the answers.", a: "\"Hold on — the Aarhus thing. Who was in the car?\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
+        { q: "Your questions are coming faster than their answers.", a: "\"I'm firing these at you. What was the worst bit of the week?\" [Ask About the Hard Part]", guideBack: "The difficult bit, singled out", bundle: 'pro' },
+        { q: "They are answering politely and offering nothing extra.", a: "\"Let me ask a better one: what did you actually do on the Saturday?\" [Ask What Happened Next]", guideBack: "The next step in the account", bundle: 'pro' },
+        { q: "You have jumped topic three times in two minutes.", a: "\"Ignore that, I jumped. Back to your brother — why did he ring?\" [Ask Why It Happened]", guideBack: "The reason behind it", bundle: 'pro' },
+        { q: "It has become question, answer, next question.", a: "\"I've been interrogating you. How did all that actually feel?\" [Ask How It Felt]", guideBack: "Their reaction, asked for directly", bundle: 'pro' },
       ]
     },
     {
@@ -3399,6 +3479,9 @@ const challengesCollections = {
         { q: "You barely know them and asked something quite personal.", a: "\"That's a big question from someone you met an hour ago. What happened next, though?\" [Ask What Happened Next]", guideBack: "The next step in the account", bundle: 'pro' },
         { q: "You asked about a feeling in a story you cannot picture.", a: "\"Actually — who else was involved in all this?\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
         { q: "They deflected with a joke.", a: "\"Fair. What did you do straight afterwards?\" [Ask What Happened Next]", guideBack: "The next step in the account", bundle: 'pro' },
+        { q: "You asked how it felt before you knew what had happened.", a: "\"Before that — who else was involved in it?\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
+        { q: "They gave you a fact and you asked for a feeling.", a: "\"Let me back up. What happened straight after that?\" [Ask What Happened Next]", guideBack: "The next step in the account", bundle: 'pro' },
+        { q: "The question was too big for ten minutes in.", a: "\"Smaller one: how did the day start?\" [Ask What Happened Next]", guideBack: "The next step in the account", bundle: 'pro' },
       ]
     },
     {
@@ -3412,6 +3495,9 @@ const challengesCollections = {
         { q: "Your perspective question sounded like a lesson.", a: "\"I'm not saying she was right — I'm just curious what her version sounds like.\" [Ask How It Looked From Elsewhere]", guideBack: "The same thing from another side", bundle: 'pro' },
         { q: "They have gone defensive about a decision.", a: "\"You don't have to defend it to me. I'm just nosy about how it happened.\" [Ask Why It Happened]", guideBack: "The reason behind it", bundle: 'pro' },
         { q: "You are about to ask \"why didn't you just…\".", a: "\"Was there a reason the obvious route wasn't available?\" [Ask Why It Happened]", guideBack: "The reason behind it", bundle: 'pro' },
+        { q: "Your why came out as why on earth.", a: "\"What made that the obvious thing at the time?\" [Ask Why It Happened]", guideBack: "The reason behind it", bundle: 'pro' },
+        { q: "They have started listing reasons rather than telling you.", a: "\"I'm not asking you to defend it. What was going on that week?\" [Ask Why It Happened]", guideBack: "The reason behind it", bundle: 'pro' },
+        { q: "You want their side without implying they were wrong.", a: "\"What do you think it looked like from where he was standing?\" [Ask How It Looked From Elsewhere]", guideBack: "The same thing from another side", bundle: 'pro' },
       ]
     },
     {
@@ -3423,6 +3509,11 @@ const challengesCollections = {
         { q: "Three broad questions have got three short answers.", a: "\"Let me ask something easier — what did you actually do on the Saturday?\" [Ask What Happened Next]", guideBack: "The next step in the account", bundle: 'pro' },
         { q: "They said the trip was \"fine\" and nothing else.", a: "\"Where did you stay?\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
         { q: "The question needed too much of an answer.", a: "\"Actually, simpler — who else was there?\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
+        { q: "Three broad questions have got three short answers.", a: "\"Easier one: where did you stay?\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
+        { q: "They said it was fine and nothing else.", a: "\"What did you do on the first day?\" [Ask What Happened Next]", guideBack: "The next step in the account", bundle: 'pro' },
+        { q: "The subject is clearly not one they want to open.", a: "\"Was there a hard part, or was it mostly fine?\" [Ask About the Hard Part]", guideBack: "The difficult bit, singled out", bundle: 'pro' },
+        { q: "Your question needed a paragraph and they had a word.", a: "\"One thing, then: who else was there?\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
+        { q: "They have given you very little and you want one more go.", a: "\"Anything you'd do differently if it came round again?\" [Ask What They Took From It]", guideBack: "What they came away with", bundle: 'pro' },
       ]
     },
     {
@@ -3436,6 +3527,9 @@ const challengesCollections = {
         { q: "A half-sentence went by that had something behind it.", a: "\"You said 'the second time'. There was a first time?\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
         { q: "You changed the subject and immediately regretted it.", a: "\"Sorry — I want to come back to the thing about your old job.\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
         { q: "Their answer stopped somewhere odd.", a: "\"And then what? That can't be the end of it.\" [Ask What Happened Next]", guideBack: "The next step in the account", bundle: 'pro' },
+        { q: "They dropped a name you have never heard.", a: "\"Who's Marek? You said it like I should know.\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
+        { q: "The account ended in the middle.", a: "\"And then? That can't be where it stops.\" [Ask What Happened Next]", guideBack: "The next step in the account", bundle: 'pro' },
+        { q: "They finished and you were about to move on.", a: "\"Before we leave it — what did you take from all that?\" [Ask What They Took From It]", guideBack: "What they came away with", bundle: 'pro' },
       ]
     },
   ],
@@ -3779,6 +3873,9 @@ const challengesCollections = {
         { q: "You answered an absurd plan with a practical objection.", a: "\"You know what, you're right, it'd work perfectly. That's the terrifying part.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
         { q: "There is a small silence after something you said.", a: "\"That was me killing it, sorry. Yes — and the pizzas now arrive by drone.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
         { q: "You are about to say \"but\".", a: "\"Yes, AND — because 'but' is how I lose friends.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
+        { q: "You said that wouldn't work and the room went flat.", a: "\"Ignore me. Yes — and the dog has his own locker now.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
+        { q: "You corrected a detail in something imaginary.", a: "\"Who cares whether it's possible. He's in the fort. Go on.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
+        { q: "You are about to explain why it could not happen.", a: "\"Yes, and it happens twice. On a Tuesday.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
       ]
     },
     {
@@ -3792,6 +3889,9 @@ const challengesCollections = {
         { q: "The story is a list of pleasant things.", a: "\"What if it works so well that they make it your permanent job?\" [What If]", guideBack: "A threat to the plan", bundle: 'pro' },
         { q: "The energy has gone and neither of you has said so.", a: "\"And the dog has been watching this whole plan with open contempt.\" [Bring Someone In]", guideBack: "A new person, animal or object, reacting", bundle: 'pro' },
         { q: "You have added three details and none of them landed.", a: "\"So what happens when someone actually knocks on the fort?\" [Then What Happens]", guideBack: "What must happen now, because of that", bundle: 'pro' },
+        { q: "Three turns in and nothing new has arrived.", a: "\"What if the neighbour's been filming all of this?\" [What If]", guideBack: "A threat to the plan", bundle: 'pro' },
+        { q: "Everyone is agreeing and nobody is adding.", a: "\"Right, and then the council turn up with a clipboard.\" [Bring Someone In]", guideBack: "A new person, animal or object, reacting", bundle: 'pro' },
+        { q: "The idea is good and nobody has raised the stakes.", a: "\"Not one fort. Nine. A whole street of them.\" [Make It Bigger]", guideBack: "The same thing, at an impossible scale", bundle: 'pro' },
       ]
     },
     {
@@ -3805,6 +3905,9 @@ const challengesCollections = {
         { q: "The story has drifted onto something real about them.", a: "\"This has stopped being made up, hasn't it. Right — the dog has moved on to algebra.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
         { q: "You made a joke about something they actually mind.", a: "\"That one was on me and it wasn't funny. So — the council man is back, with a clipboard.\" [Bring Someone In]", guideBack: "A new person, animal or object, reacting", bundle: 'pro' },
         { q: "You are about to aim a what-if at them rather than at the plan.", a: "\"What if I turn up as well and make it twice as bad?\" [What If]", guideBack: "A threat to the plan", bundle: 'pro' },
+        { q: "The invention has drifted onto something real about them.", a: "\"What if it's me who gets caught, though, halfway up the ladder?\" [What If]", guideBack: "A threat to the plan", bundle: 'pro' },
+        { q: "A joke landed too close and the energy dropped.", a: "\"Back to the made-up version — the dog's doing algebra now.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
+        { q: "You used a real detail you should not have.", a: "\"Scrap that. And then a helicopter arrives, obviously.\" [Bring Someone In]", guideBack: "A new person, animal or object, reacting", bundle: 'pro' },
       ]
     },
     {
@@ -3818,6 +3921,9 @@ const challengesCollections = {
         { q: "Someone has checked their phone.", a: "\"I'm going to leave it there while it's still good. The dog got a promotion, the end.\" [Solve It Ridiculously]", guideBack: "An absurd solution, said with confidence", bundle: 'pro' },
         { q: "The story has no natural stopping point.", a: "\"The council just gives you the building. Cheaper than the paperwork. Done.\" [Solve It Ridiculously]", guideBack: "An absurd solution, said with confidence", bundle: 'pro' },
         { q: "You want one more turn and probably should not have it.", a: "\"Last one from me: they name the fort after you. Your ending now.\" [Make It Bigger]", guideBack: "The same thing, at an impossible scale", bundle: 'pro' },
+        { q: "The idea is still funny and everyone is tiring.", a: "\"Right — they give you the building. Cheaper than the paperwork. Done.\" [Solve It Ridiculously]", guideBack: "An absurd solution, said with confidence", bundle: 'pro' },
+        { q: "You have been building for five minutes.", a: "\"So he just moves in permanently. The end.\" [Solve It Ridiculously]", guideBack: "An absurd solution, said with confidence", bundle: 'pro' },
+        { q: "There is one good line left and then it should stop.", a: "\"Final offer: two pounds an hour and a shed. And we leave it there.\" [Solve It Ridiculously]", guideBack: "An absurd solution, said with confidence", bundle: 'pro' },
       ]
     },
     {
@@ -3831,6 +3937,9 @@ const challengesCollections = {
         { q: "You said \"yeah\" and the story stalled.", a: "\"Which means by Friday you're basically nocturnal.\" [Then What Happens]", guideBack: "What must happen now, because of that", bundle: 'pro' },
         { q: "The pause has gone on a beat too long.", a: "\"Okay, but where does the fort actually go? Physically.\" [What If]", guideBack: "A threat to the plan", bundle: 'pro' },
         { q: "Everything you think of feels flat.", a: "\"Yes, and — I don't know where that goes yet, but yes and.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
+        { q: "It is your turn and your head is empty.", a: "\"So then your mum gets home before the boxes do.\" [Then What Happens]", guideBack: "What must happen now, because of that", bundle: 'pro' },
+        { q: "You cannot invent anything new.", a: "\"And the dog — what does the dog make of all this?\" [Bring Someone In]", guideBack: "A new person, animal or object, reacting", bundle: 'pro' },
+        { q: "You want to keep it going without adding much.", a: "\"Yes — and now there's a second one, in the garden.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
       ]
     },
   ],
@@ -3928,6 +4037,9 @@ const challengesCollections = {
         { q: "Somebody has said \"right\" twice during your setup.", a: "\"Let me start again properly: I got locked out of the building with my laptop inside.\" [Open It in One Sentence]", guideBack: "One sentence that opens it", bundle: 'pro' },
         { q: "The story needs context but not this much.", a: "\"One thing you need: my brother had the only key. That's it, that's the background.\" [Open It in One Sentence]", guideBack: "One sentence that opens it", bundle: 'pro' },
         { q: "You can hear yourself explaining rather than telling.", a: "\"I'll do this the other way round — here's what happened, then I'll explain.\" [Name the Turn]", guideBack: "The thing that went wrong, or changed", bundle: 'pro' },
+        { q: "You are still explaining the background.", a: "\"None of that matters. The point is the lift stopped with four of us in it.\" [Name the Turn]", guideBack: "The thing that went wrong, or changed", bundle: 'pro' },
+        { q: "Somebody has asked where this is going.", a: "\"Fair. Starting again: I got locked out with my laptop inside.\" [Open It in One Sentence]", guideBack: "One sentence that opens it", bundle: 'pro' },
+        { q: "You have named five people nobody knows.", a: "\"Forget the names. One of them had the only key and he was in Spain.\" [Name the Turn]", guideBack: "The thing that went wrong, or changed", bundle: 'pro' },
       ]
     },
     {
@@ -3941,6 +4053,9 @@ const challengesCollections = {
         { q: "You have said \"and then\" four times.", a: "\"Let me get to the thing: none of it mattered because the office was shut.\" [Name the Turn]", guideBack: "The thing that went wrong, or changed", bundle: 'pro' },
         { q: "There is genuinely no turn in it.", a: "\"So that's it: a very ordinary Thursday with one wrong bus in it.\" [Land the Resolution]", guideBack: "The ending, said plainly", bundle: 'pro' },
         { q: "The listener is waiting for a point you do not have.", a: "\"I oversold that. The honest ending is I just went home.\" [Land the Resolution]", guideBack: "The ending, said plainly", bundle: 'pro' },
+        { q: "You are three minutes in and nothing has changed.", a: "\"The moment it turned was realising I'd been queueing for the wrong thing.\" [Name the Turn]", guideBack: "The thing that went wrong, or changed", bundle: 'pro' },
+        { q: "The story is a list of events.", a: "\"The bit that got me: none of it mattered, because the office was shut.\" [Name the Turn]", guideBack: "The thing that went wrong, or changed", bundle: 'pro' },
+        { q: "You can feel that the ending is flat and true.", a: "\"It ends quietly. I went home and had toast.\" [Land the Resolution]", guideBack: "The ending, said plainly", bundle: 'pro' },
       ]
     },
     {
@@ -3954,6 +4069,9 @@ const challengesCollections = {
         { q: "The story has no punchline and you are searching for one.", a: "\"So we drove home. That's genuinely it.\" [Land the Resolution]", guideBack: "The ending, said plainly", bundle: 'pro' },
         { q: "You explained the ending rather than saying it.", a: "\"Short version of that: he still says it wasn't his fault.\" [Land the Resolution]", guideBack: "The ending, said plainly", bundle: 'pro' },
         { q: "You have wound down instead of finishing.", a: "\"I've never parked there since. That's the end of it.\" [Land the Resolution]", guideBack: "The ending, said plainly", bundle: 'pro' },
+        { q: "You have said anyway twice.", a: "\"The ending is: she'd had the keys in her bag the whole time.\" [Land the Resolution]", guideBack: "The ending, said plainly", bundle: 'pro' },
+        { q: "You explained the ending instead of saying it.", a: "\"Short version of that: he still says it wasn't his fault.\" [Land the Resolution]", guideBack: "The ending, said plainly", bundle: 'pro' },
+        { q: "The last line is good and you are about to talk past it.", a: "\"And that's how I ended up carrying a door through town.\" [Land the Resolution]", guideBack: "The ending, said plainly", bundle: 'pro' },
       ]
     },
     {
@@ -3967,6 +4085,9 @@ const challengesCollections = {
         { q: "You added a lesson because the ending felt thin.", a: "\"There's no moral. That's genuinely the whole thing and I liked it.\" [Say the Takeaway]", guideBack: "One line about what it left you with — or none", bundle: 'pro' },
         { q: "The real takeaway is less flattering than the invented one.", a: "\"The honest version is it was my fault and I knew at the time.\" [Say the Takeaway]", guideBack: "One line about what it left you with — or none", bundle: 'pro' },
         { q: "You are about to say \"I suppose what it taught me was\".", a: "\"No lesson. Just a very odd Tuesday.\" [Say the Takeaway]", guideBack: "One line about what it left you with — or none", bundle: 'pro' },
+        { q: "You have added a lesson to make it worth telling.", a: "\"There's no lesson. It was just a very odd Tuesday.\" [Say the Takeaway]", guideBack: "One line about what it left you with — or none", bundle: 'pro' },
+        { q: "The real takeaway is smaller than the one you gave.", a: "\"What actually changed is that I check the bag now. That's it.\" [Say the Takeaway]", guideBack: "One line about what it left you with — or none", bundle: 'pro' },
+        { q: "You are about to say what it taught you about life.", a: "\"Nothing profound. I've just never parked there since.\" [Say the Takeaway]", guideBack: "One line about what it left you with — or none", bundle: 'pro' },
       ]
     },
     {
@@ -3980,6 +4101,9 @@ const challengesCollections = {
         { q: "You are still deciding and it is your turn now.", a: "\"Right — this is about a bike, and I'll work out why as I go.\" [Pick One Fast]", guideBack: "A small story, chosen quickly", bundle: 'pro' },
         { q: "You know the story is good but not how to begin it.", a: "\"I'll start in the wrong place and fix it: I ended up carrying a wardrobe.\" [Pick One Fast]", guideBack: "A small story, chosen quickly", bundle: 'pro' },
         { q: "The moment has passed and you are annoyed about it.", a: "\"Going back — mine's the same thing but with a bike, and it's short.\" [Pick One Fast]", guideBack: "A small story, chosen quickly", bundle: 'pro' },
+        { q: "The conversation has moved two topics on.", a: "\"Going back a bit — yours reminded me of a small one with a bike.\" [Pick One Fast]", guideBack: "A small story, chosen quickly", bundle: 'pro' },
+        { q: "You are choosing between three and the pause is getting long.", a: "\"Right, this one's about a wardrobe, and I'll work out why as I go.\" [Pick One Fast]", guideBack: "A small story, chosen quickly", bundle: 'pro' },
+        { q: "You have the story but not the opening line.", a: "\"I'll start in the wrong place and fix it: I ended up on a roof.\" [Open It in One Sentence]", guideBack: "One sentence that opens it", bundle: 'pro' },
       ]
     },
   ],
@@ -4077,6 +4201,9 @@ const challengesCollections = {
         { q: "The upside you named requires ignoring the cost.", a: "\"That upside doesn't pay for the cost, does it. Forget it.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
         { q: "They are now arguing that it really was that bad.", a: "\"It was that bad. I don't want to win an argument about how bad it was.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
         { q: "You reached for a silver lining out of habit.", a: "\"That was a reflex, not a thought. What's actually the hardest part of it?\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "Your upside made the loss sound acceptable and it was not.", a: "\"That doesn't cover the cost of it. Forget the silver lining.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "You reached for a positive by reflex.", a: "\"That was a reflex, not a thought. It's a genuinely bad outcome.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "They have said you are not taking it seriously.", a: "\"You're right. I'll stop finding angles on it.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
       ]
     },
     {
@@ -4090,6 +4217,9 @@ const challengesCollections = {
         { q: "They said \"I know, I know\" and went quiet.", a: "\"I've been trying to fix it and you didn't ask me to. Tell me the rest.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
         { q: "You can see the reframe is right but they are not ready.", a: "\"There's another way of looking at it. Ask me next week if you want it.\" [Offer It, Don't Impose It]", guideBack: "A reframe offered, and left with them", bundle: 'pro' },
         { q: "They have gone quiet after your third helpful angle.", a: "\"I'll stop being useful. That sounds like it's been a horrible week.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "They have been talking for two minutes and you have a reframe ready.", a: "\"There's another way of seeing it. Not now, though — go on.\" [Offer It, Don't Impose It]", guideBack: "A reframe offered, and left with them", bundle: 'pro' },
+        { q: "You started fixing before they had finished describing.", a: "\"I jumped in. Tell me the rest first.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "They came to be heard and you gave them a perspective.", a: "\"That sounds like a horrible week. I'll keep my angle to myself.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
       ]
     },
     {
@@ -4103,6 +4233,9 @@ const challengesCollections = {
         { q: "Your reframe arrived as a lesson.", a: "\"That came out like advice and I didn't mean it to. I might be wrong anyway.\" [Offer It, Don't Impose It]", guideBack: "A reframe offered, and left with them", bundle: 'pro' },
         { q: "You have repeated the same reframe twice.", a: "\"I'll stop. You've heard it and you can do what you like with it.\" [Offer It, Don't Impose It]", guideBack: "A reframe offered, and left with them", bundle: 'pro' },
         { q: "You are about to say \"you need to stop thinking of it as\".", a: "\"Can I offer a different angle? Throw it out if it's no use.\" [Offer It, Don't Impose It]", guideBack: "A reframe offered, and left with them", bundle: 'pro' },
+        { q: "Your reframe arrived as though it settled the matter.", a: "\"That's just one way of reading it. Yours might be right.\" [Offer It, Don't Impose It]", guideBack: "A reframe offered, and left with them", bundle: 'pro' },
+        { q: "They have started defending their own version.", a: "\"I'm not trying to replace yours. Take it or leave it.\" [Offer It, Don't Impose It]", guideBack: "A reframe offered, and left with them", bundle: 'pro' },
+        { q: "You want to offer it without it being a lesson.", a: "\"Want another angle on it, or shall I keep quiet?\" [Offer It, Don't Impose It]", guideBack: "A reframe offered, and left with them", bundle: 'pro' },
       ]
     },
     {
@@ -4116,6 +4249,9 @@ const challengesCollections = {
         { q: "They have gone quiet after your remark.", a: "\"Sorry. Genuinely, though, is it bothering you more than it looks?\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
         { q: "You are about to say \"it's not that big a deal\".", a: "\"It feels enormous right now, I know. From outside it's a spilt glass.\" [The Humorous Reframe]", guideBack: "The thing, sized honestly or comically", bundle: 'pro' },
         { q: "The thing is small but the feeling clearly is not.", a: "\"The thing is small and the feeling isn't. Those can both be true.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "Your joke shrank something that mattered to them.", a: "\"I made that smaller than it is. It clearly isn't.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "They laughed and then went quiet.", a: "\"That was at your expense and I didn't mean it that way.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "The scale joke would work if they were not so raw.", a: "\"From outside it's one spilt glass. It doesn't feel like that from in there.\" [The Humorous Reframe]", guideBack: "The thing, sized honestly or comically", bundle: 'pro' },
       ]
     },
     {
@@ -4129,6 +4265,9 @@ const challengesCollections = {
         { q: "You are told to be grateful for the parts that went well.", a: "\"I am grateful for those. It's still a bad outcome and I'd like to say so.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
         { q: "You have started keeping things to yourself.", a: "\"Can I just tell you about it without us fixing it? That's all I want today.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
         { q: "\"At least it wasn't worse\" has arrived too fast, again.", a: "\"It could have been worse and it's still bad. Both of those are true.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "They have found the upside before you had finished describing it.", a: "\"I know there's a bright side. I'm not ready to stand in it yet.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "They keep saying it could have been worse.", a: "\"It could. It's still bad, and I'd like to say that out loud.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "You are being cheered up and you want to be believed.", a: "\"I don't need this fixed today. I'd just like you to agree it's rubbish.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
       ]
     },
   ],
@@ -5001,6 +5140,9 @@ const challengesCollections = {
         { q: "Your joke could be read as a dig at what they just said.", a: "\"That came out wrong — I meant the situation, not you.\" [Joke About the Situation]", guideBack: "A dry line about what you're both in", bundle: 'pro' },
         { q: "You are about to explain why the joke was funny.", a: "\"Ignore me. Have you been to one of these before?\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
         { q: "You made a joke about the event and they organised it.", a: "\"And now I find out you made it. I'll get my coat.\" [Joke About the Situation]", guideBack: "A dry line about what you're both in", bundle: 'pro' },
+        { q: "Your dry line landed in silence.", a: "\"That was drier than it sounded in my head. How's your evening been?\" [Say How You Feel]", guideBack: "A feeling, said in one line", bundle: 'pro' },
+        { q: "They laughed politely and started to move away.", a: "\"Ignore me. Did you see what happened at the match last night?\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
+        { q: "You made a joke about something they care about.", a: "\"That came out wrong — I came over because I wanted to hear about it.\" [Say Why You Came Over]", guideBack: "The reason you walked up", bundle: 'pro' },
       ]
     },
     {
@@ -5014,6 +5156,9 @@ const challengesCollections = {
         { q: "You are speaking with someone in their second language.", a: "\"This is the slowest queue in the country. Possibly Europe.\" [Joke About the Situation]", guideBack: "A dry line about what you're both in", bundle: 'pro' },
         { q: "They look confused rather than amused.", a: "\"Ignore that. Have you been waiting long?\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
         { q: "You want humour that cannot be misread.", a: "\"I've picked the slow queue again. Every single time.\" [Joke About the Situation]", guideBack: "A dry line about what you're both in", bundle: 'pro' },
+        { q: "Your understatement was taken literally.", a: "\"I was being sarcastic, badly. It's actually a lovely evening.\" [Joke About the Situation]", guideBack: "A dry line about what you're both in", bundle: 'pro' },
+        { q: "They are translating in their head and you are being clever.", a: "\"I get nervous at these things, that's all. Do you?\" [Say How You Feel]", guideBack: "A feeling, said in one line", bundle: 'pro' },
+        { q: "You want something that cannot be misread.", a: "\"Have you seen the queue for coffee? It's gone round the corner.\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
       ]
     },
     {
@@ -5027,6 +5172,9 @@ const challengesCollections = {
         { q: "You realise your opener came out warmer than intended.", a: "\"That sounded odd — I mean I don't know a soul in here.\" [Say Why You Came Over]", guideBack: "The reason you walked up", bundle: 'pro' },
         { q: "A colleague might read a personal approach as something else.", a: "\"I've been meaning to say hello since you joined. How's it going so far?\" [Say Why You Came Over]", guideBack: "The reason you walked up", bundle: 'pro' },
         { q: "You do mean it that way and want to be honest but light.", a: "\"I'd have regretted not coming over, so — hello. I'm...\" [Say Why You Came Over]", guideBack: "The reason you walked up", bundle: 'pro' },
+        { q: "You want to explain the approach plainly.", a: "\"I came over because you're the only person here I haven't met.\" [Say Why You Came Over]", guideBack: "The reason you walked up", bundle: 'pro' },
+        { q: "Your warmth is being read as interest.", a: "\"Honestly, I just didn't want to stand by the crisps on my own.\" [Say How You Feel]", guideBack: "A feeling, said in one line", bundle: 'pro' },
+        { q: "You want to move the conversation onto neutral ground.", a: "\"Did you read about the bridge closing? Everyone's furious.\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
       ]
     },
     {
@@ -5040,6 +5188,9 @@ const challengesCollections = {
         { q: "You are about to say something too big for an opener.", a: "\"It's been a long week, put it that way.\" [Say How You Feel]", guideBack: "A feeling, said in one line", bundle: 'pro' },
         { q: "They responded kindly but you feel exposed.", a: "\"Thanks. Right — tell me something more cheerful than that.\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
         { q: "You want the small version of something big.", a: "\"I'm running on about four hours' sleep, so I'm not at my sharpest.\" [Say How You Feel]", guideBack: "A feeling, said in one line", bundle: 'pro' },
+        { q: "You have told a stranger something you tell friends.", a: "\"That was more than you asked for. Anyway — how do you know everyone here?\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
+        { q: "You can hear yourself over-sharing.", a: "\"I'm tired and talkative, which is a bad combination. How are you?\" [Say How You Feel]", guideBack: "A feeling, said in one line", bundle: 'pro' },
+        { q: "They are being kind about it and you want to move on.", a: "\"I'll stop there. Have you been to one of these before?\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
       ]
     },
     {
@@ -5053,6 +5204,9 @@ const challengesCollections = {
         { q: "You want something with no weight at all.", a: "\"I got on the wrong bus this morning and didn't notice for four stops.\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
         { q: "Something sad has happened locally and it would be strange not to mention it.", a: "\"Awful business this week. Everyone's a bit quiet, I think.\" [Say How You Feel]", guideBack: "A feeling, said in one line", bundle: 'pro' },
         { q: "You started on something heavy and want to move on gracefully.", a: "\"Anyway. Not a topic for a Tuesday morning. Are you here for the whole day?\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
+        { q: "Everyone is talking about the same grim story.", a: "\"I've had enough of the news this week. Seen anything good lately?\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
+        { q: "They raise something political and you would rather not.", a: "\"I'm not going near that one tonight, honestly. Too tired.\" [Say How You Feel]", guideBack: "A feeling, said in one line", bundle: 'pro' },
+        { q: "Something sad has happened and ignoring it would be strange.", a: "\"It'd be odd not to mention it. I came anyway because I wanted the company.\" [Say Why You Came Over]", guideBack: "The reason you walked up", bundle: 'pro' },
       ]
     },
   ],
