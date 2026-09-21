@@ -1307,14 +1307,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "Two minutes in and the listener still does not know what actually happened — you are still explaining the background.\n\nThe training is to notice the moment their attention goes, and to get the event out immediately rather than finishing the run-up you had planned.\n\nWhat it usually looks like:\n\n• A long setup with no event in sight.\n• \"Anyway, so —\" arriving for the third time.\n• Someone asking \"sorry, what happened?\"\n\nTwo ways through:\n1. What — say it now, out of order if necessary. \"Anyway — I lost the whole thing.\"\n2. How — skip straight to the middle. \"Long story short, it ended up under the lockers.\"\n\nMindset: you can always backfill. Nobody has ever minded a story that started at the event and explained itself afterwards.",
       inputs: [
-        { q: "Two minutes of background and nothing has happened yet.", a: "\"Anyway — the short version is I lost my homework completely.\" [What — the Main Event]", bundle: 'pro' },
-        { q: "They ask \"sorry, what actually happened?\"", a: "\"We arrived at the hotel and it did not exist.\" [What — the Main Event]", bundle: 'pro' },
-        { q: "You can see attention going and you are still setting up.", a: "\"Skipping ahead — I ended up sitting on the step for six hours.\" [What — the Main Event]", bundle: 'pro' },
-        { q: "You have explained the whole context twice over.", a: "\"Right, the actual thing: I called my teacher mum, in front of everyone.\" [What — the Main Event]", bundle: 'pro' },
-        { q: "You are three sentences from the event and losing them.", a: "\"I will come back to why — first, I got the job.\" [What — the Main Event]", bundle: 'pro' },
-        { q: "You have introduced four people and nothing has happened.", a: "\"Anyway — the point is the car was gone.\" [What — the Main Event]", bundle: 'pro' },
-        { q: "You are explaining why you were there instead of what happened there.", a: "\"Doesn't matter why. What happened was they'd double-booked us.\" [What — the Main Event]", bundle: 'pro' },
-        { q: "Someone else starts talking because you have not got anywhere.", a: "\"Thirty seconds — I did actually get locked in.\" [What — the Main Event]", bundle: 'pro' },
+        { q: "Two minutes of background and nothing has happened yet.", a: "\"Anyway — the short version is I lost my homework completely.\" [What — the Main Event]", guideBack: "The event, without the run-up", bundle: 'pro' },
+        { q: "They ask \"sorry, what actually happened?\"", a: "\"We arrived at the hotel and it did not exist.\" [What — the Main Event]", guideBack: "The event, without the run-up", bundle: 'pro' },
+        { q: "You can see attention going and you are still setting up.", a: "\"Skipping ahead — I ended up sitting on the step for six hours.\" [What — the Main Event]", guideBack: "The event, without the run-up", bundle: 'pro' },
+        { q: "You have explained the whole context twice over.", a: "\"Right, the actual thing: I called my teacher mum, in front of everyone.\" [What — the Main Event]", guideBack: "The event, without the run-up", bundle: 'pro' },
+        { q: "You are three sentences from the event and losing them.", a: "\"I will come back to why — first, I got the job.\" [What — the Main Event]", guideBack: "The event, without the run-up", bundle: 'pro' },
+        { q: "You have introduced four people and nothing has happened.", a: "\"Anyway — the point is the car was gone.\" [What — the Main Event]", guideBack: "The event, without the run-up", bundle: 'pro' },
+        { q: "You are explaining why you were there instead of what happened there.", a: "\"Doesn't matter why. What happened was they'd double-booked us.\" [What — the Main Event]", guideBack: "The event, without the run-up", bundle: 'pro' },
+        { q: "Someone else starts talking because you have not got anywhere.", a: "\"Thirty seconds — I did actually get locked in.\" [What — the Main Event]", guideBack: "The event, without the run-up", bundle: 'pro' },
       ]
     },
     {
@@ -1323,14 +1323,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You finished the story and got a polite pause. Everything happened, nothing landed.\n\nThe training is to recognise this specific symptom as a missing Why. The events were clear; what was missing was any reason to care about them, which is usually you.\n\nWhat it usually sounds like:\n\n• \"Right… and then what?\"\n• A polite nod and a change of subject.\n• \"Huh.\"\n\nTwo ways through:\n1. Why — say what it meant or what caused it. \"I had failed three times, so it actually meant something.\"\n2. Who — put a person and their reaction in. \"The examiner had failed me twice before and clearly remembered.\"\n\nMindset: a story without a Why is a report. The listener is not asking for a better event, they are asking what it was like to be you in it.",
       inputs: [
-        { q: "You finished and got a polite pause.", a: "\"I had failed three times before that, so it actually meant something.\" [Why — the Reason]", bundle: 'pro' },
-        { q: "The events were clear but nothing landed.", a: "\"The whole thing hinged on a booking nobody had ever made.\" [Why — the Reason]", bundle: 'pro' },
-        { q: "They nodded and changed the subject.", a: "\"I had been saying I would do it for two years and finally got sick of hearing myself.\" [Why — the Reason]", bundle: 'pro' },
-        { q: "Your story sounds like a list of things that occurred.", a: "\"There was one woman who just took over and sorted the whole thing.\" [Who — the People]", bundle: 'pro' },
-        { q: "You told it well but it feels like it was about nobody.", a: "\"I was too embarrassed to ask anyone, which is the actual reason.\" [Why — the Reason]", bundle: 'pro' },
-        { q: "The story is complete but has no reason behind it.", a: "\"I'd promised myself I'd never ask him for anything.\" [Why — the Reason]", bundle: 'pro' },
-        { q: "You told it and realised you did not know why you were telling it.", a: "\"It's stuck with me because nobody said a word about it afterwards.\" [Why — the Reason]", bundle: 'pro' },
-        { q: "They ask what the point was.", a: "\"That was the day I stopped volunteering for things.\" [Why — the Reason]", bundle: 'pro' },
+        { q: "You finished and got a polite pause.", a: "\"I had failed three times before that, so it actually meant something.\" [Why — the Reason]", guideBack: "The motive, or the problem", bundle: 'pro' },
+        { q: "The events were clear but nothing landed.", a: "\"The whole thing hinged on a booking nobody had ever made.\" [Why — the Reason]", guideBack: "The motive, or the problem", bundle: 'pro' },
+        { q: "They nodded and changed the subject.", a: "\"I had been saying I would do it for two years and finally got sick of hearing myself.\" [Why — the Reason]", guideBack: "The motive, or the problem", bundle: 'pro' },
+        { q: "Your story sounds like a list of things that occurred.", a: "\"There was one woman who just took over and sorted the whole thing.\" [Who — the People]", guideBack: "The people, and what they did", bundle: 'pro' },
+        { q: "You told it well but it feels like it was about nobody.", a: "\"I was too embarrassed to ask anyone, which is the actual reason.\" [Why — the Reason]", guideBack: "The motive, or the problem", bundle: 'pro' },
+        { q: "The story is complete but has no reason behind it.", a: "\"I'd promised myself I'd never ask him for anything.\" [Why — the Reason]", guideBack: "The motive, or the problem", bundle: 'pro' },
+        { q: "You told it and realised you did not know why you were telling it.", a: "\"It's stuck with me because nobody said a word about it afterwards.\" [Why — the Reason]", guideBack: "The motive, or the problem", bundle: 'pro' },
+        { q: "They ask what the point was.", a: "\"That was the day I stopped volunteering for things.\" [Why — the Reason]", guideBack: "The motive, or the problem", bundle: 'pro' },
       ]
     },
     {
@@ -1339,14 +1339,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "They are following the story but seeing nothing. It is all events and no scene.\n\nThe training is to notice that you have given a sequence without a setting, and to spend one clause on the place before carrying on.\n\nWhat it usually looks like:\n\n• The whole story happens in a vacuum.\n• You realise you never said where you were.\n• It sounds like it could have happened anywhere.\n\nTwo ways through:\n1. Where — one concrete detail, not a description. \"A hallway full of people trying to get past me.\"\n2. When — anchor it as a real moment. \"February, and it was already going dark.\"\n\nMindset: one detail and the listener builds the rest themselves. You are giving them somewhere to stand, not describing a room.",
       inputs: [
-        { q: "The story is clear but happening nowhere in particular.", a: "\"This was in the hallway outside the science block, everyone pushing past.\" [Where — the Setting]", bundle: 'pro' },
-        { q: "You realise you never said where you were.", a: "\"An empty gravel lot where the hotel was supposed to be.\" [Where — the Setting]", bundle: 'pro' },
-        { q: "It sounds like it could have happened anywhere, any time.", a: "\"Last period on a Friday, when everyone was half asleep.\" [When — the Time]", bundle: 'pro' },
-        { q: "You want them to see the room before the event lands.", a: "\"A glass meeting room where everyone already knew each other.\" [Where — the Setting]", bundle: 'pro' },
-        { q: "The scene is missing and the story feels thin.", a: "\"One of those climbing places in an old warehouse, all echo and chalk dust.\" [Where — the Setting]", bundle: 'pro' },
-        { q: "You said \"at work\" and they have never been there.", a: "\"An open-plan floor where you can hear everything.\" [Where — the Setting]", bundle: 'pro' },
-        { q: "The time of day would explain the whole thing.", a: "\"Half six in the morning, before anyone else was in.\" [When — the Time]", bundle: 'pro' },
-        { q: "You have described the people but not the room.", a: "\"Twelve of us round a table built for eight.\" [Where — the Setting]", bundle: 'pro' },
+        { q: "The story is clear but happening nowhere in particular.", a: "\"This was in the hallway outside the science block, everyone pushing past.\" [Where — the Setting]", guideBack: "Somewhere they can picture", bundle: 'pro' },
+        { q: "You realise you never said where you were.", a: "\"An empty gravel lot where the hotel was supposed to be.\" [Where — the Setting]", guideBack: "Somewhere they can picture", bundle: 'pro' },
+        { q: "It sounds like it could have happened anywhere, any time.", a: "\"Last period on a Friday, when everyone was half asleep.\" [When — the Time]", guideBack: "The moment, or the stretch", bundle: 'pro' },
+        { q: "You want them to see the room before the event lands.", a: "\"A glass meeting room where everyone already knew each other.\" [Where — the Setting]", guideBack: "Somewhere they can picture", bundle: 'pro' },
+        { q: "The scene is missing and the story feels thin.", a: "\"One of those climbing places in an old warehouse, all echo and chalk dust.\" [Where — the Setting]", guideBack: "Somewhere they can picture", bundle: 'pro' },
+        { q: "You said \"at work\" and they have never been there.", a: "\"An open-plan floor where you can hear everything.\" [Where — the Setting]", guideBack: "Somewhere they can picture", bundle: 'pro' },
+        { q: "The time of day would explain the whole thing.", a: "\"Half six in the morning, before anyone else was in.\" [When — the Time]", guideBack: "The moment, or the stretch", bundle: 'pro' },
+        { q: "You have described the people but not the room.", a: "\"Twelve of us round a table built for eight.\" [Where — the Setting]", guideBack: "Somewhere they can picture", bundle: 'pro' },
       ]
     },
     {
@@ -1355,14 +1355,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You have used a name three times and the listener has no idea who they are, so they have stopped following and started guessing.\n\nThe training is to introduce people the first time they appear, in about four words, and to keep the cast small.\n\nWhat it usually looks like:\n\n• A name arriving with no explanation.\n• Four people in the story and no way to tell them apart.\n• \"Sorry, who is Sam?\"\n\nTwo ways through:\n1. Who — introduce them as they arrive. \"My mate Sam, who was crawling under the lockers.\"\n2. Who, trimmed — cut the cast to the ones who matter. \"There were others there, but really it was just me and the driver.\"\n\nMindset: a listener working out who someone is has stopped listening to the story. Four words of introduction buys back the whole rest of it.",
       inputs: [
-        { q: "You have said a name three times with no introduction.", a: "\"Sam — my mate from school, the one who was under the lockers.\" [Who — the People]", bundle: 'pro' },
-        { q: "There are four people in the story and no way to tell them apart.", a: "\"Really it was just me and one very unimpressed taxi driver.\" [Who — the People]", bundle: 'pro' },
-        { q: "They ask who someone is, mid-story.", a: "\"A neighbour I had never spoken to before that day.\" [Who — the People]", bundle: 'pro' },
-        { q: "The people in your story have no reactions.", a: "\"My teacher just carried on as if nothing had happened, which made it worse.\" [Who — the People]", bundle: 'pro' },
-        { q: "You realise the interesting person has not appeared yet.", a: "\"The examiner had failed me twice already and clearly remembered me.\" [Who — the People]", bundle: 'pro' },
-        { q: "The person matters but you have called them \"someone\".", a: "\"The site manager — who had already told us twice.\" [Who — the People]", bundle: 'pro' },
-        { q: "You have described what they did but not who they are to you.", a: "\"My brother, who has never once been early.\" [Who — the People]", bundle: 'pro' },
-        { q: "There are two people and the listener has merged them.", a: "\"Two different people — the driver and the man who owned the van.\" [Who — the People]", bundle: 'pro' },
+        { q: "You have said a name three times with no introduction.", a: "\"Sam — my mate from school, the one who was under the lockers.\" [Who — the People]", guideBack: "The people, and what they did", bundle: 'pro' },
+        { q: "There are four people in the story and no way to tell them apart.", a: "\"Really it was just me and one very unimpressed taxi driver.\" [Who — the People]", guideBack: "The people, and what they did", bundle: 'pro' },
+        { q: "They ask who someone is, mid-story.", a: "\"A neighbour I had never spoken to before that day.\" [Who — the People]", guideBack: "The people, and what they did", bundle: 'pro' },
+        { q: "The people in your story have no reactions.", a: "\"My teacher just carried on as if nothing had happened, which made it worse.\" [Who — the People]", guideBack: "The people, and what they did", bundle: 'pro' },
+        { q: "You realise the interesting person has not appeared yet.", a: "\"The examiner had failed me twice already and clearly remembered me.\" [Who — the People]", guideBack: "The people, and what they did", bundle: 'pro' },
+        { q: "The person matters but you have called them \"someone\".", a: "\"The site manager — who had already told us twice.\" [Who — the People]", guideBack: "The people, and what they did", bundle: 'pro' },
+        { q: "You have described what they did but not who they are to you.", a: "\"My brother, who has never once been early.\" [Who — the People]", guideBack: "The people, and what they did", bundle: 'pro' },
+        { q: "There are two people and the listener has merged them.", a: "\"Two different people — the driver and the man who owned the van.\" [Who — the People]", guideBack: "The people, and what they did", bundle: 'pro' },
       ]
     },
     {
@@ -1371,14 +1371,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You are somewhere in the middle, the story has grown a subplot, and you can feel it sagging.\n\nThe training is to cut rather than to speed up. Talking faster makes a long story a fast long story; dropping W's makes it a short one.\n\nWhat it usually looks like:\n\n• A second story growing inside the first.\n• Nine steps in the How where three would do.\n• \"Anyway, that is not important —\" said out loud.\n\nTwo ways through:\n1. What — jump to the outcome and land it. \"Anyway — we never did find it.\"\n2. How, trimmed — two beats instead of nine. \"Long story short, it took about six hours.\"\n\nMindset: the six W's are a menu, not a checklist. Three or four told well beats all six told exhaustively.",
       inputs: [
-        { q: "A second story has started growing inside the first.", a: "\"That is a whole other thing — anyway, we never did find it.\" [What — the Main Event]", bundle: 'pro' },
-        { q: "You are nine steps into the How and it is sagging.", a: "\"Long story short, six hours on a doorstep in February.\" [How — the Process]", bundle: 'pro' },
-        { q: "You hear yourself say \"anyway, that is not important\".", a: "\"Right, the actual point: the booking had never gone through.\" [Why — the Reason]", bundle: 'pro' },
-        { q: "You have included every detail and the story has flattened.", a: "\"Skipping most of it — I got there, and I got the job.\" [What — the Main Event]", bundle: 'pro' },
-        { q: "You can feel them waiting for it to end.", a: "\"Two attempts, then it just clicked. That was the whole thing.\" [How — the Process]", bundle: 'pro' },
-        { q: "You have started explaining a detail nobody asked about.", a: "\"That doesn't matter — the point is we missed it by four minutes.\" [What — the Main Event]", bundle: 'pro' },
-        { q: "You realise the interesting part is still three minutes away.", a: "\"Skipping to it: the hotel had burnt down.\" [What — the Main Event]", bundle: 'pro' },
-        { q: "The middle has three steps that could be one.", a: "\"Two buses and a long walk later, I got there.\" [How — the Process]", bundle: 'pro' },
+        { q: "A second story has started growing inside the first.", a: "\"That is a whole other thing — anyway, we never did find it.\" [What — the Main Event]", guideBack: "The event, without the run-up", bundle: 'pro' },
+        { q: "You are nine steps into the How and it is sagging.", a: "\"Long story short, six hours on a doorstep in February.\" [How — the Process]", guideBack: "The steps, as they happened", bundle: 'pro' },
+        { q: "You hear yourself say \"anyway, that is not important\".", a: "\"Right, the actual point: the booking had never gone through.\" [Why — the Reason]", guideBack: "The motive, or the problem", bundle: 'pro' },
+        { q: "You have included every detail and the story has flattened.", a: "\"Skipping most of it — I got there, and I got the job.\" [What — the Main Event]", guideBack: "The event, without the run-up", bundle: 'pro' },
+        { q: "You can feel them waiting for it to end.", a: "\"Two attempts, then it just clicked. That was the whole thing.\" [How — the Process]", guideBack: "The steps, as they happened", bundle: 'pro' },
+        { q: "You have started explaining a detail nobody asked about.", a: "\"That doesn't matter — the point is we missed it by four minutes.\" [What — the Main Event]", guideBack: "The event, without the run-up", bundle: 'pro' },
+        { q: "You realise the interesting part is still three minutes away.", a: "\"Skipping to it: the hotel had burnt down.\" [What — the Main Event]", guideBack: "The event, without the run-up", bundle: 'pro' },
+        { q: "The middle has three steps that could be one.", a: "\"Two buses and a long walk later, I got there.\" [How — the Process]", guideBack: "The steps, as they happened", bundle: 'pro' },
       ]
     },
   ],
@@ -2590,73 +2590,6 @@ const challengesCollections = {
       ]
     },
   ],
-  rolebasedhumour: [
-    {
-      name: "The Room Is Not Right",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "You have a role ready and the room is not warm enough for it — someone is tired, tense, or has just said something they meant.\n\nThe training is to check before you commit rather than after. This is the single most useful skill in the pack.\n\nWhat the tells look like:\n\n• They said the thing flatly, not as an opener.\n• Nobody else in the group is joking yet.\n• The subject is something they have actually complained about before.\n\nTwo ways through:\n1. Drop the role and answer straight — the bit will still be there in ten minutes.\n2. The Lazy One — if you want something light, this is the role that cannot offend, because the joke is entirely on you.\n\nMindset: a bit that lands in the wrong room costs more than the laugh was worth. Reading first is not caution, it is the skill.",
-      inputs: [
-        { q: "They say \"I forgot my homework\" flatly and look genuinely worried.", a: "\"Ah. Is it a problem, or is it a shrug?\" (drop the role)", bundle: 'pro' },
-        { q: "They mention the food and you know they cooked it and were nervous.", a: "\"I thought it was good, honestly.\" (drop the role)", bundle: 'pro' },
-        { q: "Nobody in the group has joked yet and you would be first.", a: "\"That sounds like a lot of work. Maybe tomorrow.\" (the lazy one)", bundle: 'pro' },
-        { q: "They have complained about this exact thing seriously before.", a: "\"Is that still going on? That's rubbish.\" (drop the role)", bundle: 'pro' },
-        { q: "The room is tired and a big bit would be work for everyone.", a: "\"Honestly? Same. I'm doing nothing tonight.\" (the lazy one)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "It Landed Badly",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "You committed to a role, and the reaction was a flat look rather than a laugh.\n\nThe training is to get out cleanly and quickly. What makes a misfire memorable is not the joke, it is the four seconds afterwards where somebody keeps going or starts explaining.\n\nWhat it usually looks like:\n\n• A small polite smile and a change of subject.\n• Silence that is one beat too long.\n• They answer your in-character line completely straight.\n\nTwo ways through:\n1. Drop character immediately and answer their actual point — no explanation, no apology.\n2. Turn the bit on yourself — acknowledge the misfire once, lightly, and move on.\n\nMindset: never explain the joke and never repeat it louder. One clean exit and the room forgets it inside a minute.",
-      inputs: [
-        { q: "Your in-character line got a flat look.", a: "\"Anyway — genuinely, do you need a hand with it?\" (drop the role)", bundle: 'pro' },
-        { q: "They answered your bit completely straight.", a: "\"Fair. Ignore me. What were you saying?\" (drop the role)", bundle: 'pro' },
-        { q: "You can feel yourself about to explain the joke.", a: "\"So what's the plan for it?\" (drop the role)", bundle: 'pro' },
-        { q: "The silence has gone one beat too long.", a: "\"That was a swing and a miss. Moving on.\" (turn it on yourself)", bundle: 'pro' },
-        { q: "You went too big and can see it.", a: "\"Too much. I heard it as I said it.\" (turn it on yourself)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "They Took It Personally",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "The role accidentally landed on something real — they heard a comment about themselves rather than a character.\n\nThe training is to name it and step out at once. This is the one failure in the pack worth being unambiguous about: you drop the bit, you say plainly that you were not talking about them, and you do not do it again in that conversation.\n\nWhere it usually happens:\n\n• The Mock-Offended One, when they had just said something sincere.\n• The Bossy Leader, with someone who feels talked over generally.\n• The Super Stingy One, about something they actually needed.\n\nTwo ways through:\n1. Step out and say so directly — \"That was me being an idiot, not a comment about you.\"\n2. Answer their real point properly, and let the humour go for now.\n\nMindset: this is not a moment for another joke. The repair is plain and short, and then the subject changes.",
-      inputs: [
-        { q: "You played mock-offended and they had actually meant what they said.", a: "\"Sorry — that was me messing about, not a comment on you.\" (step out)", bundle: 'pro' },
-        { q: "Your bossy leader bit landed on someone who often gets talked over.", a: "\"Ignore me. What did you want to do?\" (answer properly)", bundle: 'pro' },
-        { q: "You guarded something they genuinely needed.", a: "\"Here, take it, I was being daft. Do you need anything else?\" (answer properly)", bundle: 'pro' },
-        { q: "They went quiet after your line and you are not sure why.", a: "\"Did that land wrong? I didn't mean anything by it.\" (step out)", bundle: 'pro' },
-        { q: "You realise mid-sentence that the role has hit something real.", a: "\"Actually, forget the bit. What's going on with it?\" (step out)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "You Cannot Commit",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "You started the role and delivered it half-heartedly, with a nervous laugh in the middle and a question mark at the end.\n\nThe training is to notice that the delivery is the joke. The same words said with full commitment are funny; said tentatively they are just a confusing sentence.\n\nWhat it usually sounds like:\n\n• A line that trails off before it finishes.\n• A laugh in the middle of your own bit.\n• Going quiet halfway through and abandoning it.\n\nTwo ways through:\n1. Commit to the next line properly, in role, and let it be the whole thing.\n2. The Lazy One — the lowest-commitment role there is, and it works even mumbled.\n\nMindset: half-in is the only way this fails. If you are not going to commit, say the ordinary thing instead — it is a much better outcome than a role delivered apologetically.",
-      inputs: [
-        { q: "Your line trailed off before it finished.", a: "\"No — properly. I'll be taking over the kitchen from here.\" (commit)", bundle: 'pro' },
-        { q: "You laughed in the middle of your own bit.", a: "\"Let me try that again with dignity.\" (commit)", bundle: 'pro' },
-        { q: "You went quiet halfway through and abandoned it.", a: "\"Sorry, what I meant was: absolutely not, and I'm not discussing it further.\" (commit)", bundle: 'pro' },
-        { q: "You do not trust the room enough to go big.", a: "\"That sounds like too much work. Maybe tomorrow.\" (the lazy one)", bundle: 'pro' },
-        { q: "You cannot think of a role and are about to force one.", a: "\"Yeah, that's annoying. What are you going to do?\" (drop the role)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Bit Has Run Out",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "The role got a good laugh, and you are now on the fifth beat of it while the room has quietly moved on.\n\nThe training is to count. Three beats is a bit; the fourth is usually where it turns from funny into something everyone is waiting out.\n\nWhat it usually looks like:\n\n• The laughs are getting smaller each time.\n• You are the only one still in the bit.\n• Someone tries to change the subject and you go back to it.\n\nTwo ways through:\n1. Break character warmly and hand the conversation back with a real question.\n2. Land one final absurd line and get out on it deliberately.\n\nMindset: leave on a laugh, not after one. The best-remembered bits are the ones that ended a beat earlier than they had to.",
-      inputs: [
-        { q: "You are on the fifth beat and the laughs are shrinking.", a: "\"Right, I'm done. What are you actually going to do about it?\" (break character)", bundle: 'pro' },
-        { q: "Someone tried to change the subject and you went back to the bit.", a: "\"Sorry, yes — you were saying?\" (break character)", bundle: 'pro' },
-        { q: "You are the only one still in character.", a: "\"Okay, out of character now. Genuinely, that's a pain.\" (break character)", bundle: 'pro' },
-        { q: "You have one good line left and want to end on it.", a: "\"Two pounds an hour, final offer. Right, moving on.\" (land it and get out)", bundle: 'pro' },
-        { q: "The bit went well and you can feel the temptation to keep going.", a: "\"I'll stop while I'm ahead. What's the plan?\" (break character)", bundle: 'pro' },
-      ]
-    },
-  ],
   masculine2: [
     {
       name: "The Toxic Attack",
@@ -3619,11 +3552,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You answered an invented detail with a fact, and the story stopped. Blocking is almost never meant — it comes out as a reflex to correct something — but the effect is the same, and it is the one failure the form cannot absorb.\n\nWhat it usually looks like:\n\n• \"That wouldn't happen, though.\"\n• \"Well, you couldn't actually do that.\"\n• A small silence, and then somebody changes the subject.\n\nTwo ways through:\n1. Take it back and accept it — out loud, lightly. \"Ignore me. Yes, and…\"\n2. Accept it too hard — over-agree, which repairs the block and is funnier than the original.\n\nMindset: nothing in a made-up story needs to be possible. The only rule is that you build on what you were given.",
       inputs: [
-        { q: "You said \"that wouldn't happen\" and the story stopped.", a: "\"Ignore me, I'm being boring. Yes — and the dog has a locker now.\" [take it back]", bundle: 'pro' },
-        { q: "You corrected a detail out of reflex.", a: "\"Forget the physics. He's in the fort. The fort is the point.\" [accept it]", bundle: 'pro' },
-        { q: "You answered an absurd plan with a practical objection.", a: "\"You know what, you're right, it'd work perfectly. That's the terrifying part.\" [accept it too hard]", bundle: 'pro' },
-        { q: "There is a small silence after something you said.", a: "\"That was me killing it, sorry. Where were we — the pizzas?\" [take it back]", bundle: 'pro' },
-        { q: "You are about to say \"but\".", a: "\"Yes, AND — because 'but' is how I lose friends.\" [accept it]", bundle: 'pro' },
+        { q: "You said \"that wouldn't happen\" and the story stopped.", a: "\"Ignore me, I'm being boring. Yes — and the dog has a locker now.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
+        { q: "You corrected a detail out of reflex.", a: "\"Forget the physics. He's in the fort. The fort is the point.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
+        { q: "You answered an absurd plan with a practical objection.", a: "\"You know what, you're right, it'd work perfectly. That's the terrifying part.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
+        { q: "There is a small silence after something you said.", a: "\"That was me killing it, sorry. Yes — and the pizzas now arrive by drone.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
+        { q: "You are about to say \"but\".", a: "\"Yes, AND — because 'but' is how I lose friends.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
       ]
     },
     {
@@ -3632,11 +3565,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "The last few turns have all been agreeable and nothing is at stake. The story is pleasant, which is the state it dies in. The repair is a problem, not a better joke.\n\nWhat it usually looks like:\n\n• Two or three turns in a row that just add nice things.\n• Both of you waiting for the other to be funny.\n• The energy has dropped and neither of you has said so.\n\nTwo ways through:\n1. Complicate it — What If, aimed at the situation.\n2. Bring someone in — a new person with a reaction restarts it for free.\n\nMindset: a flat story needs a problem, not a punchline. Give the other person something to be funny about.",
       inputs: [
-        { q: "Nothing has gone wrong in the story for three turns.", a: "\"What if your mum's been home the whole time, though?\" [complicate]", bundle: 'pro' },
-        { q: "You are both waiting for the other one to be funny.", a: "\"Right, this is where the neighbour appears at the fence.\" [bring someone in]", bundle: 'pro' },
-        { q: "The story is a list of pleasant things.", a: "\"What if it works so well that they make it your permanent job?\" [complicate]", bundle: 'pro' },
-        { q: "The energy has gone and neither of you has said so.", a: "\"And the dog has been watching this whole plan with open contempt.\" [bring someone in]", bundle: 'pro' },
-        { q: "You have added three details and none of them landed.", a: "\"So what happens when someone actually knocks on the fort?\" [then what]", bundle: 'pro' },
+        { q: "Nothing has gone wrong in the story for three turns.", a: "\"What if your mum's been home the whole time, though?\" [What If]", guideBack: "A threat to the plan", bundle: 'pro' },
+        { q: "You are both waiting for the other one to be funny.", a: "\"Right, this is where the neighbour appears at the fence.\" [Bring Someone In]", guideBack: "A new person, animal or object, reacting", bundle: 'pro' },
+        { q: "The story is a list of pleasant things.", a: "\"What if it works so well that they make it your permanent job?\" [What If]", guideBack: "A threat to the plan", bundle: 'pro' },
+        { q: "The energy has gone and neither of you has said so.", a: "\"And the dog has been watching this whole plan with open contempt.\" [Bring Someone In]", guideBack: "A new person, animal or object, reacting", bundle: 'pro' },
+        { q: "You have added three details and none of them landed.", a: "\"So what happens when someone actually knocks on the fort?\" [Then What Happens]", guideBack: "What must happen now, because of that", bundle: 'pro' },
       ]
     },
     {
@@ -3645,11 +3578,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "A complication landed on the person rather than on the situation — a joke about their laziness rather than about the imaginary week off. The form only works while everything absurd is happening to an invented version of things.\n\nWhat it usually looks like:\n\n• The \"what if\" was about them being bad at something.\n• They laughed a beat late, or not quite.\n• The story is suddenly about a real thing.\n\nTwo ways through:\n1. Move the target back to the situation — immediately, without a speech about it.\n2. Turn it on yourself — the fastest repair there is.\n\nMindset: everything in the story is invented, including the version of them in it. The moment it is about the real person, it stops being banter.",
       inputs: [
-        { q: "Your complication was really a dig at them.", a: "\"Actually scrap that — what if it's me who gets caught, hiding in your fort?\" [turn it on yourself]", bundle: 'pro' },
-        { q: "They laughed half a beat late.", a: "\"Anyway, the pizzas. Thirty of them. That's the real crisis here.\" [back to the situation]", bundle: 'pro' },
-        { q: "The story has drifted onto something real about them.", a: "\"This has stopped being made up, hasn't it. Back to the dog doing maths.\" [back to the situation]", bundle: 'pro' },
-        { q: "You made a joke about something they actually mind.", a: "\"That one was on me and it wasn't funny. Where were we — the council man?\" [take it back]", bundle: 'pro' },
-        { q: "You are about to aim a what-if at them rather than at the plan.", a: "\"What if I turn up as well and make it twice as bad?\" [turn it on yourself]", bundle: 'pro' },
+        { q: "Your complication was really a dig at them.", a: "\"Actually scrap that — what if it's me who gets caught, hiding in your fort?\" [What If]", guideBack: "A threat to the plan", bundle: 'pro' },
+        { q: "They laughed half a beat late.", a: "\"Anyway, the pizzas. Thirty of them. That's the real crisis here.\" [Make It Bigger]", guideBack: "The same thing, at an impossible scale", bundle: 'pro' },
+        { q: "The story has drifted onto something real about them.", a: "\"This has stopped being made up, hasn't it. Right — the dog has moved on to algebra.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
+        { q: "You made a joke about something they actually mind.", a: "\"That one was on me and it wasn't funny. So — the council man is back, with a clipboard.\" [Bring Someone In]", guideBack: "A new person, animal or object, reacting", bundle: 'pro' },
+        { q: "You are about to aim a what-if at them rather than at the plan.", a: "\"What if I turn up as well and make it twice as bad?\" [What If]", guideBack: "A threat to the plan", bundle: 'pro' },
       ]
     },
     {
@@ -3658,11 +3591,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "The best moment has passed and you are both still going. Everyone remembers the four extra minutes; nobody remembers a story that stopped one turn early.\n\nWhat it usually looks like:\n\n• The biggest laugh was three turns ago.\n• You are inventing rather than building.\n• Someone has checked their phone.\n\nTwo ways through:\n1. Land it flat — one sentence that closes it, then a change of subject.\n2. Hand it to them to finish — \"how does this end?\" gets a last line and an exit.\n\nMindset: stop while it is still funny. Ending one turn early is invisible; ending three turns late is the thing people remember.",
       inputs: [
-        { q: "The biggest laugh was three turns ago.", a: "\"Anyway — that's how you end up moving cities. Right, coffee?\" [land it]", bundle: 'pro' },
-        { q: "You are inventing rather than building on each other.", a: "\"Go on, how does this actually end? Give me the last bit.\" [hand it over]", bundle: 'pro' },
-        { q: "Someone has checked their phone.", a: "\"I'm going to leave it there while it's still good. The dog got a promotion, the end.\" [land it]", bundle: 'pro' },
-        { q: "The story has no natural stopping point.", a: "\"Let's stop before the council gets properly involved.\" [land it]", bundle: 'pro' },
-        { q: "You want one more turn and probably should not have it.", a: "\"One more and I ruin it. Your ending, and then we're done.\" [hand it over]", bundle: 'pro' },
+        { q: "The biggest laugh was three turns ago.", a: "\"So they build the new school around the fort. Sorted. Right, coffee?\" [Solve It Ridiculously]", guideBack: "An absurd solution, said with confidence", bundle: 'pro' },
+        { q: "You are inventing rather than building on each other.", a: "\"Right — the dog retires on the proceeds. Your ending if you've got a better one.\" [Solve It Ridiculously]", guideBack: "An absurd solution, said with confidence", bundle: 'pro' },
+        { q: "Someone has checked their phone.", a: "\"I'm going to leave it there while it's still good. The dog got a promotion, the end.\" [Solve It Ridiculously]", guideBack: "An absurd solution, said with confidence", bundle: 'pro' },
+        { q: "The story has no natural stopping point.", a: "\"The council just gives you the building. Cheaper than the paperwork. Done.\" [Solve It Ridiculously]", guideBack: "An absurd solution, said with confidence", bundle: 'pro' },
+        { q: "You want one more turn and probably should not have it.", a: "\"Last one from me: they name the fort after you. Your ending now.\" [Make It Bigger]", guideBack: "The same thing, at an impossible scale", bundle: 'pro' },
       ]
     },
     {
@@ -3671,11 +3604,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "It is your turn, the story is going well, and your mind is completely blank. The mistake is waiting until you think of something clever. Two of the six techniques need no invention at all.\n\nWhat it usually looks like:\n\n• A pause that has gone on a beat too long.\n• You are searching for something funny rather than something next.\n• You say \"yeah\" and the turn passes to nobody.\n\nTwo ways through:\n1. Follow the consequence — \"so then what happens is…\" requires no idea, only their last line.\n2. Ask a playful question — an invitation is always available and always in bounds.\n\nMindset: you do not need an idea. You need a next thing, and their last line already contains one.",
       inputs: [
-        { q: "It is your turn and your mind is blank.", a: "\"So then your mum gets home before the boxes do.\" [follow the consequence]", bundle: 'pro' },
-        { q: "You are hunting for something clever.", a: "\"Wait — what does the dog think about all this?\" [ask a question]", bundle: 'pro' },
-        { q: "You said \"yeah\" and the story stalled.", a: "\"Which means by Friday you're basically nocturnal.\" [follow the consequence]", bundle: 'pro' },
-        { q: "The pause has gone on a beat too long.", a: "\"Okay, but where does the fort actually go? Physically.\" [ask a question]", bundle: 'pro' },
-        { q: "Everything you think of feels flat.", a: "\"Yes, and — I don't know where that goes yet, but yes and.\" [yes and]", bundle: 'pro' },
+        { q: "It is your turn and your mind is blank.", a: "\"So then your mum gets home before the boxes do.\" [Then What Happens]", guideBack: "What must happen now, because of that", bundle: 'pro' },
+        { q: "You are hunting for something clever.", a: "\"Wait — what does the dog think about all this?\" [Bring Someone In]", guideBack: "A new person, animal or object, reacting", bundle: 'pro' },
+        { q: "You said \"yeah\" and the story stalled.", a: "\"Which means by Friday you're basically nocturnal.\" [Then What Happens]", guideBack: "What must happen now, because of that", bundle: 'pro' },
+        { q: "The pause has gone on a beat too long.", a: "\"Okay, but where does the fort actually go? Physically.\" [What If]", guideBack: "A threat to the plan", bundle: 'pro' },
+        { q: "Everything you think of feels flat.", a: "\"Yes, and — I don't know where that goes yet, but yes and.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
       ]
     },
   ],
@@ -3820,11 +3753,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "The positive reading required leaving something out, and the other person noticed. A reframe that ignores part of the facts is not a reframe; it is a request to pretend, and it costs trust rather than helping.\n\nWhat it usually looks like:\n\n• \"Yes, but you're forgetting that…\"\n• They list the things your reading skipped.\n• The conversation has become about whether it was really that bad.\n\nTwo ways through:\n1. Concede the part you skipped — immediately and without defending it.\n2. Drop the reframe entirely — \"you're right, I was making it smaller than it is.\"\n\nMindset: a reframe has to hold every fact that the original one held. If it does not, it is a nicer story rather than a truer one.",
       inputs: [
-        { q: "They pointed out what your reading ignored.", a: "\"You're right — I skipped the money, and the money is the actual problem.\" [concede]", bundle: 'pro' },
-        { q: "You made it sound smaller than it is.", a: "\"I was making that smaller than it is. It's genuinely a mess.\" [drop it]", bundle: 'pro' },
-        { q: "The upside you named requires ignoring the cost.", a: "\"That upside doesn't pay for the cost, does it. Forget it.\" [concede]", bundle: 'pro' },
-        { q: "They are now arguing that it really was that bad.", a: "\"It was that bad. I don't want to win an argument about how bad it was.\" [drop it]", bundle: 'pro' },
-        { q: "You reached for a silver lining out of habit.", a: "\"That was a reflex, not a thought. What's actually the hardest part of it?\" [drop it]", bundle: 'pro' },
+        { q: "They pointed out what your reading ignored.", a: "\"You're right — I skipped the money, and the money is the actual problem.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "You made it sound smaller than it is.", a: "\"I was making that smaller than it is. It's genuinely a mess.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "The upside you named requires ignoring the cost.", a: "\"That upside doesn't pay for the cost, does it. Forget it.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "They are now arguing that it really was that bad.", a: "\"It was that bad. I don't want to win an argument about how bad it was.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "You reached for a silver lining out of habit.", a: "\"That was a reflex, not a thought. What's actually the hardest part of it?\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
       ]
     },
     {
@@ -3833,11 +3766,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "The reading was right and the timing was wrong. Offered before the person has been acknowledged, a reframe is heard as being told how to feel, and the effect is that they stop telling you things.\n\nWhat it usually looks like:\n\n• They repeat the complaint, louder, rather than taking the reframe.\n• \"I know, I know\" and then no engagement.\n• It happened within a few minutes of the event.\n\nTwo ways through:\n1. Go back and acknowledge — late is much better than never.\n2. Park it out loud — \"I've got a thought about it, but not today.\"\n\nMindset: acknowledgement first, always. Most reframes that fail were correct and premature.",
       inputs: [
-        { q: "They repeated the complaint louder instead of taking your reading.", a: "\"I jumped ahead. That's a genuinely rubbish thing to have happened.\" [acknowledge]", bundle: 'pro' },
-        { q: "You offered perspective five minutes after the event.", a: "\"Ignore me, it's far too early for that. How are you doing?\" [park it]", bundle: 'pro' },
-        { q: "They said \"I know, I know\" and went quiet.", a: "\"I've been trying to fix it and you didn't ask me to. Tell me the rest.\" [acknowledge]", bundle: 'pro' },
-        { q: "You can see the reframe is right but they are not ready.", a: "\"There's another way of looking at it. Ask me next week if you want it.\" [park it]", bundle: 'pro' },
-        { q: "They have gone quiet after your third helpful angle.", a: "\"I'll stop being useful. That sounds like it's been a horrible week.\" [acknowledge]", bundle: 'pro' },
+        { q: "They repeated the complaint louder instead of taking your reading.", a: "\"I jumped ahead. That's a genuinely rubbish thing to have happened.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "You offered perspective five minutes after the event.", a: "\"Ignore me, it's far too early for that. How are you doing?\" [Offer It, Don't Impose It]", guideBack: "A reframe offered, and left with them", bundle: 'pro' },
+        { q: "They said \"I know, I know\" and went quiet.", a: "\"I've been trying to fix it and you didn't ask me to. Tell me the rest.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "You can see the reframe is right but they are not ready.", a: "\"There's another way of looking at it. Ask me next week if you want it.\" [Offer It, Don't Impose It]", guideBack: "A reframe offered, and left with them", bundle: 'pro' },
+        { q: "They have gone quiet after your third helpful angle.", a: "\"I'll stop being useful. That sounds like it's been a horrible week.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
       ]
     },
     {
@@ -3846,11 +3779,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "The content was fine and the framing made it a lesson. \"You should look at it as…\" tells somebody their reading is wrong, and people defend a reading they have been told is wrong even when they had not much liked it.\n\nWhat it usually looks like:\n\n• You started with \"you should\" or \"you need to\".\n• You presented the reframe as the correct view rather than another one.\n• They have started defending an interpretation they did not care much about.\n\nTwo ways through:\n1. Mark it as one reading — \"one way to look at it\", not \"the way\".\n2. Own the uncertainty — \"I might be wrong about this.\"\n\nMindset: offer, do not correct. \"Here's another way to see it\" and \"you're seeing it wrong\" contain the same information and produce opposite conversations.",
       inputs: [
-        { q: "You said \"you should see it as a good thing\".", a: "\"Let me say that better — one way to look at it is that it surfaced early.\" [mark it]", bundle: 'pro' },
-        { q: "They are defending a reading they did not seem attached to.", a: "\"I'm not trying to talk you out of yours. Mine's just an option.\" [mark it]", bundle: 'pro' },
-        { q: "Your reframe arrived as a lesson.", a: "\"That came out like advice and I didn't mean it to. I might be wrong anyway.\" [own the uncertainty]", bundle: 'pro' },
-        { q: "You have repeated the same reframe twice.", a: "\"I'll stop. You've heard it and you can do what you like with it.\" [mark it]", bundle: 'pro' },
-        { q: "You are about to say \"you need to stop thinking of it as\".", a: "\"Can I offer a different angle? Throw it out if it's no use.\" [mark it]", bundle: 'pro' },
+        { q: "You said \"you should see it as a good thing\".", a: "\"Let me say that better — one way to look at it is that it surfaced early.\" [Offer It, Don't Impose It]", guideBack: "A reframe offered, and left with them", bundle: 'pro' },
+        { q: "They are defending a reading they did not seem attached to.", a: "\"I'm not trying to talk you out of yours. Mine's just an option.\" [Offer It, Don't Impose It]", guideBack: "A reframe offered, and left with them", bundle: 'pro' },
+        { q: "Your reframe arrived as a lesson.", a: "\"That came out like advice and I didn't mean it to. I might be wrong anyway.\" [Offer It, Don't Impose It]", guideBack: "A reframe offered, and left with them", bundle: 'pro' },
+        { q: "You have repeated the same reframe twice.", a: "\"I'll stop. You've heard it and you can do what you like with it.\" [Offer It, Don't Impose It]", guideBack: "A reframe offered, and left with them", bundle: 'pro' },
+        { q: "You are about to say \"you need to stop thinking of it as\".", a: "\"Can I offer a different angle? Throw it out if it's no use.\" [Offer It, Don't Impose It]", guideBack: "A reframe offered, and left with them", bundle: 'pro' },
       ]
     },
     {
@@ -3859,11 +3792,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You aimed the scale joke at their reaction rather than at the size of the thing, and it came out as \"you're overreacting\". The move is only warm when the target is the event.\n\nWhat it usually looks like:\n\n• A laugh that arrived half a beat late, or not at all.\n• The joke implied the feeling was silly.\n• They have gone quiet or become defensive.\n\nTwo ways through:\n1. Repair it plainly — \"that came out as though I was making fun of you\".\n2. Turn the scale on yourself — the fastest available fix.\n\nMindset: shrink the event, never the reaction. The first is a relief and the second is a criticism with a smile on it.",
       inputs: [
-        { q: "The laugh came half a beat late.", a: "\"That came out wrong — I was aiming at the glass, not at you.\" [repair]", bundle: 'pro' },
-        { q: "Your joke implied the feeling was silly.", a: "\"I'd have been mortified too, for the record. I once did the same thing at a wedding.\" [turn it on yourself]", bundle: 'pro' },
-        { q: "They have gone quiet after your remark.", a: "\"Sorry. Genuinely, though, is it bothering you more than it looks?\" [repair]", bundle: 'pro' },
-        { q: "You are about to say \"it's not that big a deal\".", a: "\"It feels enormous right now, I know. From outside it's a spilt glass.\" [repair]", bundle: 'pro' },
-        { q: "The thing is small but the feeling clearly is not.", a: "\"The thing is small and the feeling isn't. Those can both be true.\" [repair]", bundle: 'pro' },
+        { q: "The laugh came half a beat late.", a: "\"That came out wrong — I was aiming at the glass, not at you.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "Your joke implied the feeling was silly.", a: "\"I'd have been mortified too, for the record. I once did the same thing at a wedding.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "They have gone quiet after your remark.", a: "\"Sorry. Genuinely, though, is it bothering you more than it looks?\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "You are about to say \"it's not that big a deal\".", a: "\"It feels enormous right now, I know. From outside it's a spilt glass.\" [The Humorous Reframe]", guideBack: "The thing, sized honestly or comically", bundle: 'pro' },
+        { q: "The thing is small but the feeling clearly is not.", a: "\"The thing is small and the feeling isn't. Those can both be true.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
       ]
     },
     {
@@ -3872,11 +3805,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You are on the receiving end — every feeling you report comes back as a lesson or a bright side, and you are starting to stop mentioning things. This is worth having a sentence ready for.\n\nWhat it usually looks like:\n\n• \"At least…\" arrives before you have finished a sentence.\n• You leave feeling worse and cannot say why.\n• You have stopped telling them the difficult things.\n\nTwo ways through:\n1. Ask for what you want instead — \"I'd rather just be annoyed about it for a bit.\"\n2. Say the effect plainly — \"when it gets turned into a lesson I stop wanting to say anything.\"\n\nMindset: you are allowed to decline a reframe. \"I know, and I'm not ready to be sensible about it yet\" is a complete sentence.",
       inputs: [
-        { q: "Every complaint comes back as a silver lining.", a: "\"I know there's an upside. I'd like to be fed up about it for one more day first.\" [ask for what you want]", bundle: 'pro' },
-        { q: "They keep turning your feelings into lessons.", a: "\"When it turns into a lesson straight away, I stop wanting to bring things up.\" [say the effect]", bundle: 'pro' },
-        { q: "You are told to be grateful for the parts that went well.", a: "\"I am grateful for those. It's still a bad outcome and I'd like to say so.\" [ask for what you want]", bundle: 'pro' },
-        { q: "You have started keeping things to yourself.", a: "\"Can I just tell you about it without us fixing it? That's all I want today.\" [ask for what you want]", bundle: 'pro' },
-        { q: "\"At least it wasn't worse\" has arrived too fast, again.", a: "\"It could have been worse and it's still bad. Both of those are true.\" [say the effect]", bundle: 'pro' },
+        { q: "Every complaint comes back as a silver lining.", a: "\"I know there's an upside. I'd like to be fed up about it for one more day first.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "They keep turning your feelings into lessons.", a: "\"When it turns into a lesson straight away, I stop wanting to bring things up.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "You are told to be grateful for the parts that went well.", a: "\"I am grateful for those. It's still a bad outcome and I'd like to say so.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "You have started keeping things to yourself.", a: "\"Can I just tell you about it without us fixing it? That's all I want today.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "\"At least it wasn't worse\" has arrived too fast, again.", a: "\"It could have been worse and it's still bad. Both of those are true.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
       ]
     },
   ],

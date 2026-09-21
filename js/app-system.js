@@ -3930,6 +3930,17 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.81', date: 'September 2026', title: 'Names and guides, batch 6 — the last one', audience: 'dev',
+    items: [
+      'The final batch: <strong>Story Banter</strong>, <strong>Role Based Humour</strong>, <strong>Reframing</strong>, plus the 64 cards in <strong>Storytelling with the Six W\'s</strong> that never received their inherited back guide. All 20 strategies now have their own guide pair. <strong>Every strategy in all 52 release packs has one.</strong>',
+      '<strong>Role Based Humour\'s 45 labels were in round brackets and lower case</strong> &mdash; <em>(the super generous one)</em> rather than <em>[The Super Generous One]</em>. The 20 Collections cards converted straight across.',
+      '<strong>All five of its Challenges decks are lifted out.</strong> 22 of their 25 cards taught backing off, stepping out of character and repairing a joke that landed wrong &mdash; calibrating humour, not playing a role. The pack stays about the roles; the material becomes the seed of a pack of its own. Challenges will be rebuilt from the pack\'s own Single Strategy inputs in the volume sweep.',
+      '<strong>Story Banter\'s <em>It Went On Too Long</em> is now the pack\'s own move.</strong> Its five cards ended the bit without naming how; <em>Solve It Ridiculously</em> is described as exactly that release valve, so four replies were rewritten to end the story by solving it absurdly.',
+      '<strong>Reframing\'s two rule strategies did most of the work.</strong> 17 of 25 challenge replies are <em>Know When Not To</em> and six are <em>Offer It, Don\'t Impose It</em> &mdash; which is what a challenges deck about misfired reframes should be.',
+      'Sequence steps: Story Banter 16 of 28, Reframing 18 of 18. Role Based Humour\'s 18 steps name no role and wait for the sequence-step pass.',
+    ],
+  },
+  {
     version: 'v1.28.80', date: 'September 2026', title: 'Names and guides, batch 5 — questions and stories', audience: 'dev',
     items: [
       'Batch 5: <strong>Deep Questions</strong>, <strong>Listening Through Questions</strong>, <strong>Stories in Conversation</strong> and <strong>Building a Story</strong>. All 25 strategies get their own guide pair, 176 Collections and Challenges cards inherit their strategy\'s back guide, and <strong>73 of 74 sequence steps</strong> now carry theirs &mdash; up from 24.',

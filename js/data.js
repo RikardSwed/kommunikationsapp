@@ -3537,8 +3537,8 @@ const collections = {
   rolebasedhumour: [
     {
       name: "The Bossy Leader",
-      guideFront: "They have said something completely ordinary — answer in character.",
-      guideBack: "One way the role could answer.",
+      guideFront: "Take charge of something nobody asked you to run when...",
+      guideBack: "An order nobody needs",
       description: "You answer as someone who has appointed themselves in charge of a situation nobody asked them to run.\n\nThe comedy is in the mismatch of scale. Applying full command authority to whose turn it is to make tea is funny precisely because the stakes are nothing, and it works because you are the one being ridiculous, not them.\n\nTypical lines:\n\n• \"You sit there. Do it my way.\"\n• \"Right. I'm taking over.\"\n• \"Nobody move. I have a system.\"\n\nThree ways to play it:\n1. Issue orders — \"You, kettle. You, mugs. Go.\"\n2. Claim authority you do not have — \"As the senior person in this kitchen…\"\n3. Overrule them warmly — \"Noted, rejected, next item.\"\n\nKeep the orders trivial. A bossy leader taking charge of the biscuits is funny; one taking charge of something the other person actually cares about is just bossy.\n\nMindset: the role has to cost you the status, not them. You are playing a person who is slightly absurd, and everyone should be able to see that you know it.",
       inputs: [
         { q: "They say: \"I forgot my homework.\"", a: "\"Unacceptable. Sit. You're writing it again, and I'm supervising.\"", bundle: 'free' },
@@ -3553,8 +3553,8 @@ const collections = {
     },
     {
       name: "The Lazy One",
-      guideFront: "They have said something completely ordinary — answer in character.",
-      guideBack: "One way the role could answer.",
+      guideFront: "Find the way out of any effort when...",
+      guideBack: "The least possible response",
       description: "You answer as someone whose first instinct is to find a way out of any effort at all, however small.\n\nThis is the safest role in the pack, because the joke lands entirely on you. Nobody is offended by a person who has decided that standing up is a project for next week.\n\nTypical lines:\n\n• \"That sounds like too much work… maybe tomorrow.\"\n• \"Can we do it lying down?\"\n• \"I'm going to need a moment. Or a year.\"\n\nThree ways to play it:\n1. Postpone it — \"Let's revisit this in the spring.\"\n2. Negotiate the effort down — \"What if I did about a fifth of that?\"\n3. Treat the tiny as enormous — \"Walk to the kitchen? On today of all days?\"\n\nThe comedy comes from the gap between the effort required and the effort you are describing. The smaller the actual task, the better it works.\n\nMindset: this is the role to reach for when you are unsure of the room. It is almost impossible to take badly, because the only person it makes fun of is you.",
       inputs: [
         { q: "They say: \"I forgot my homework.\"", a: "\"Honestly? Best outcome. Now neither of us has to think about it.\"", bundle: 'free' },
@@ -3569,8 +3569,8 @@ const collections = {
     },
     {
       name: "The Super Generous One",
-      guideFront: "They have said something completely ordinary — answer in character.",
-      guideBack: "One way the role could answer.",
+      guideFront: "Offer far more than the situation needs when...",
+      guideBack: "An offer well past reason",
       description: "You answer by offering wildly more than the situation could possibly require.\n\nThe mechanism is simple escalation. They mention a small problem and you respond by offering your house, your car and your remaining years, which is funny because generosity is the last thing anyone expects to be excessive.\n\nTypical lines:\n\n• \"Oh, you need a pen? Take my house, my car, and my savings too.\"\n• \"Have all of it. Have mine as well.\"\n• \"Say the word and it's yours. All of it. Forever.\"\n\nThree ways to play it:\n1. Escalate the offer — \"A pen? Take the pen, the desk, the building.\"\n2. Refuse to be thanked — \"Don't be silly, it's only my life savings.\"\n3. Offer things you cannot give — \"Take my seat. Take my name. Take my dog.\"\n\nThe list is where the joke lives. One absurd offer is a line; three in ascending order is a bit.\n\nMindset: warmth with the volume turned all the way up. This is the friendliest role here — it is very hard to be hurt by someone insisting you take their car.",
       inputs: [
         { q: "They say: \"I forgot my homework.\"", a: "\"Take mine. Take my whole folder. Take my education, honestly.\"", bundle: 'free' },
@@ -3585,8 +3585,8 @@ const collections = {
     },
     {
       name: "The Super Stingy One",
-      guideFront: "They have said something completely ordinary — answer in character.",
-      guideBack: "One way the role could answer.",
+      guideFront: "Guard something worthless as a treasure when...",
+      guideBack: "A refusal over nothing",
       description: "You answer by treating something completely worthless as a treasured possession you could not possibly part with.\n\nThis is the mirror of the generous role, and it works the same way in reverse: the joke is the gap between the value of the object and the seriousness of your refusal.\n\nTypical lines:\n\n• \"You want to borrow my pen? Sorry, it's my family treasure.\"\n• \"That biscuit has been in my family for generations.\"\n• \"I'd love to help. I won't, but I'd love to.\"\n\nThree ways to play it:\n1. Give the object a history — \"This pen came over with my grandmother.\"\n2. Refuse with great regret — \"It pains me to say no. But no.\"\n3. Charge for it — \"You can borrow it. Two pounds an hour.\"\n\nPick objects that are obviously worthless. A guarded biro is funny; guarding something the other person actually needs is not a bit, it is just refusing.\n\nMindset: the stinginess has to be about a pen, never about something real. The moment the withheld thing matters, the role stops being a joke and becomes an answer.",
       inputs: [
         { q: "They say: \"I forgot my homework.\"", a: "\"You can look at mine. From over there. Without touching it.\"", bundle: 'free' },
@@ -3601,8 +3601,8 @@ const collections = {
     },
     {
       name: "The Invincible Hero",
-      guideFront: "They have said something completely ordinary — answer in character.",
-      guideBack: "One way the role could answer.",
+      guideFront: "Make nothing sound difficult when...",
+      guideBack: "A feat at an impossible scale",
       description: "You answer as someone for whom nothing is difficult, at a scale that is obviously impossible.\n\nWhere the mock-offended role inflates a problem, this one shrinks it to nothing. Both are jokes about scale, and this is the version where you claim powers you plainly do not have.\n\nTypical lines:\n\n• \"I can lift the whole classroom with one hand.\"\n• \"Three tests? I'll do them all before lunch.\"\n• \"Rain doesn't apply to me.\"\n\nThree ways to play it:\n1. Claim impossible ability — \"I've run further than that in my sleep.\"\n2. Dismiss the difficulty entirely — \"Is that meant to be hard?\"\n3. Offer to fix it single-handedly — \"Stand back. I'll handle the entire thing.\"\n\nThe claim has to be unmistakably impossible. \"I'm quite good at running\" is a boast; \"I once ran to Denmark by accident\" is a bit.\n\nMindset: you are playing someone with no self-awareness, which means you need plenty. The joke only works if it is clear that you know exactly how ridiculous the claim is.",
       inputs: [
         { q: "They say: \"I forgot my homework.\"", a: "\"I did mine twice. Then I did next week's. Then I built a shelf.\"", bundle: 'free' },
@@ -3617,8 +3617,8 @@ const collections = {
     },
     {
       name: "The Mock-Offended One",
-      guideFront: "They have said something completely ordinary — answer in character.",
-      guideBack: "One way the role could answer.",
+      guideFront: "Be wounded by something trivial when...",
+      guideBack: "Injured dignity, held one beat too long",
       description: "You answer as though something completely trivial has wounded you deeply, and hold the injured tone for exactly one beat too long.\n\nThis role is sometimes called the overly sensitive person. The comic move is theatrical offence taken at nothing at all — not a person who genuinely feels things strongly, which is why the target has to be visibly absurd.\n\nTypical lines:\n\n• \"Why would you say that? It hurts my feelings so much!\"\n• \"I'm going to need a moment. And an apology.\"\n• \"After everything I've done for you.\"\n\nThree ways to play it:\n1. Be wounded by nothing — \"You said the food was bad. I made a sandwich once.\"\n2. Escalate the injury — \"First the rain, now this. Is there anything left?\"\n3. Demand disproportionate repair — \"I'll accept a written apology and a biscuit.\"\n\nThis is the one role that needs a check before you use it. If the other person has just said something they were actually sensitive about, playing at being wounded lands as mimicry of them, however well you meant it.\n\nMindset: the offence has to be at something everyone can see is nothing. The instant it could be mistaken for a comment on how they actually feel, it is the wrong bit.",
       inputs: [
         { q: "They say: \"This food tastes bad.\"", a: "\"I'm going to need a moment. That was hurtful and I made the salad.\"", bundle: 'free' },
@@ -3633,8 +3633,8 @@ const collections = {
     },
     {
       name: "The Rule Breaker",
-      guideFront: "They have said something completely ordinary — answer in character.",
-      guideBack: "One way the role could answer.",
+      guideFront: "Reach for the loophole or the exit when...",
+      guideBack: "A way round, offered instantly",
       description: "You answer as someone whose immediate reflex is to look for the loophole, the workaround or the exit.\n\nThe joke is the confident wrongness of the plan. A rule breaker does not argue that the rule is unfair; they simply announce an alternative that is obviously never going to work.\n\nTypical lines:\n\n• \"Homework? Nah, I'll sell it on eBay instead.\"\n• \"There's a way round this. There's always a way round this.\"\n• \"Technically nobody said we couldn't.\"\n\nThree ways to play it:\n1. Propose the absurd workaround — \"We'll just tell them the tests already happened.\"\n2. Find the technicality — \"It says no running. It says nothing about sprinting.\"\n3. Announce the escape — \"I'm going out the window. Cover for me.\"\n\nKeep the schemes clearly impossible. The bit is the confidence, not the plan, and a workaround that might actually work stops being funny and becomes a suggestion.\n\nMindset: this is the role that is funniest when the rule is completely harmless. Applied to something that actually matters it stops being playful and starts sounding like you mean it.",
       inputs: [
         { q: "They say: \"I forgot my homework.\"", a: "\"Perfect. We'll claim it was stolen. I'll cry if needed.\"", bundle: 'free' },
@@ -5623,8 +5623,8 @@ const collections = {
   storybanter: [
     {
       name: "Yes, And",
-      guideFront: "The story so far. Add the next bit.",
-      guideBack: "One line that would keep it going.",
+      guideFront: "Accept it and add on top when...",
+      guideBack: "Their idea, with something built on it",
       description: "Accept what they just added and put something on top of it. It is the engine of the whole thing: nothing gets questioned, everything gets built on. Example: they say you should skip the whole week — \"Yes, and I'll need a pillow fort so big the neighbours complain.\"\n\nIt works because a story built by two people dies the instant one of them starts editing. \"That wouldn't happen\" is technically true and completely fatal, and the person who says it is never invited into the next one.\n\nThe word \"and\" is doing the work. \"Yes, but\" is a rejection wearing agreement's clothes, and everybody hears it.\n\nTypical phrases: \"Yes, and…\", \"Exactly, and then…\", \"Right, so obviously…\", \"And the best part is…\"\n\nThree ways to build:\n\n1. Add one detail — the smallest and most reliable. \"…and the fort has a doorbell.\"\n\n2. Agree with too much enthusiasm — accept it as though it were the plan all along. \"Obviously. That was always the plan.\"\n\n3. Take their idea seriously — treat the ridiculous thing as practical. \"You'd need a permit for a fort that size, mind.\"\n\nMindset: your job is not to be funnier than them. It is to leave them something to build on, which is a different and easier job.",
       inputs: [
         { q: "They say you should just go home and watch films all day.", a: "\"Yes, and I'll need three pizzas to get through the afternoon.\"", bundle: 'free' },
@@ -5639,8 +5639,8 @@ const collections = {
     },
     {
       name: "What If",
-      guideFront: "The story so far. Add the next bit.",
-      guideBack: "One line that would keep it going.",
+      guideFront: "Add a complication nobody asked for when...",
+      guideBack: "A threat to the plan",
       description: "Introduce a complication nobody asked for. Where \"yes, and\" adds to the plan, \"what if\" adds a threat to it — and a threat is what stops a story becoming a list of nice things. Example: \"What if your mum comes home and finds ten empty pizza boxes?\"\n\nIt works because a story needs a problem. Two people building a happy afternoon run out of material in about four exchanges; two people building an afternoon with a mother arriving unexpectedly can go on for ten minutes.\n\nAim the complication at the situation, never at them. \"What if you're just bad at this?\" is not a twist, it is a dig with a question mark on it.\n\nTypical phrases: \"What if…?\", \"And then what happens when…?\", \"Wait — what about…\", \"Have you thought about what the neighbours…\"\n\nThree kinds of complication:\n\n1. Someone finds out — the most reliable one there is. \"What if your mum comes home?\"\n\n2. The plan works too well — funnier than failure, usually. \"What if nobody notices you're gone? Ever?\"\n\n3. Something ordinary goes wrong — small and domestic beats dramatic. \"What if the pizza place recognises your voice?\"\n\nMindset: give them a problem to solve rather than a nicer version of the plan. The problem is what they get to be funny about.",
       inputs: [
         { q: "They have described a perfect week off school.", a: "\"What if your mum comes home and finds ten empty pizza boxes?\"", bundle: 'free' },
@@ -5655,8 +5655,8 @@ const collections = {
     },
     {
       name: "Make It Bigger",
-      guideFront: "The story so far. Add the next bit.",
-      guideBack: "One line that would keep it going.",
+      guideFront: "Inflate it past the point of sense when...",
+      guideBack: "The same thing, at an impossible scale",
       description: "Take whatever was just said and inflate it past the point of sense. It is the same exaggeration as in Responsive Humour, but pointed at a shared invention instead of at a real sentence. Example: \"Not three pizzas — enough to feed the entire city.\"\n\nIt works because scale is instantly readable. Nobody has to decode anything: the gap between what was said and what you said is the joke, and the bigger the gap the safer it is, because nobody could mistake it for a real claim.\n\nIf you are wondering whether it is too much, it is not enough. A cautious exaggeration sounds like a correction.\n\nTypical phrases: \"Not X — X hundred.\", \"The entire…\", \"Every single…\", \"In recorded history.\"\n\nThree ways to inflate:\n\n1. The number — easiest and always available. \"Three pizzas? Thirty.\"\n\n2. The time — stretch it past a lifetime. \"You'd still be in that fort in 2040.\"\n\n3. The stakes — make something trivial world-historical. \"The council would have to redraw the map.\"\n\nMindset: go past sensible in one jump. Halfway is where it stops being play and starts sounding like an argument about the facts.",
       inputs: [
         { q: "They say you'd order three pizzas.", a: "\"Three? You'd need enough to feed the whole city.\"", bundle: 'free' },
@@ -5671,8 +5671,8 @@ const collections = {
     },
     {
       name: "Bring Someone In",
-      guideFront: "The story so far. Add the next bit.",
-      guideBack: "One line that would keep it going.",
+      guideFront: "Add a character with an opinion when...",
+      guideBack: "A new person, animal or object, reacting",
       description: "Add a character — a person, an animal, an inanimate object with opinions. New people bring reactions, and a reaction is the most reliable source of comedy available. Example: \"Then your dog takes your place in maths and nobody notices.\"\n\nIt works because a story with only the two of you in it has a ceiling. Every new character can want something, disapprove of something, or turn up at the wrong moment, and each of those restarts the story for free.\n\nThe best additions are people who would obviously never be involved. A neighbour, a headteacher, a delivery driver, someone's grandmother.\n\nTypical phrases: \"And then your dog…\", \"Meanwhile the neighbour…\", \"This is when your gran turns up…\", \"The delivery driver has opinions about this.\"\n\nThree kinds of character:\n\n1. Someone from the real situation — the teacher, the boss, the neighbour. Instantly recognisable.\n\n2. Someone absurdly out of place — a vet, a referee, a man from the council.\n\n3. An animal or an object with a personality — the safest of all, because nobody can be offended on its behalf.\n\nMindset: a new person is a new problem, and a new problem is more story. Bring them in before it runs out.",
       inputs: [
         { q: "The story about skipping maths needs something new.", a: "\"Then your dog takes your place in class and nobody notices.\"", bundle: 'free' },
@@ -5687,8 +5687,8 @@ const collections = {
     },
     {
       name: "Then What Happens",
-      guideFront: "The story so far. Add the next bit.",
-      guideBack: "One line that would keep it going.",
+      guideFront: "Follow the last idea to its consequence when...",
+      guideBack: "What must happen now, because of that",
       description: "Follow the last idea to its consequence. Not a new invention — the thing that must now happen because of what they just said. Example: they skip maths for a week; \"the teacher shows up at your house with a giant calculator.\"\n\nIt works because a chain of consequences is what makes a made-up story feel like a story rather than a list of jokes. Each turn is caused by the one before it, and the shape that produces is the shape of an actual anecdote.\n\nIt is also the easiest technique when you have no idea what to say. You do not need an invention — you need to ask what would follow, and the answer usually arrives on its own.\n\nTypical phrases: \"So then…\", \"Which means…\", \"And now obviously…\", \"That's how you end up…\"\n\nThree ways to follow it:\n\n1. The immediate result — one step, straight ahead. \"So the school rings your mum.\"\n\n2. The delayed result — much funnier. \"And two years later it comes up in a job interview.\"\n\n3. The consequence for someone else — spreads the story outwards. \"Which means the dog now has a detention.\"\n\nMindset: when you are stuck, ask what happens next rather than what would be funny. The consequence is usually funnier than anything you would have invented.",
       inputs: [
         { q: "They say you'd skip the whole week of school.", a: "\"So the teacher turns up at your house with a giant calculator.\"", bundle: 'free' },
@@ -5703,8 +5703,8 @@ const collections = {
     },
     {
       name: "Solve It Ridiculously",
-      guideFront: "The story so far. Add the next bit.",
-      guideBack: "One line that would keep it going.",
+      guideFront: "Fix it in a way that could not work when...",
+      guideBack: "An absurd solution, said with confidence",
       description: "Fix the problem in a way that could not possibly work, said with complete confidence. It is the release valve of the form: after several turns of escalation, a solution that is obviously absurd lets the story breathe without ending it. Example: \"Don't worry about missing maths — just download the formulas straight into your brain.\"\n\nIt works because confidence is the joke. The plan does not need to be plausible; it needs to be delivered as though the only remaining question is logistics.\n\nIt is also how you rescue a story that has painted itself into a corner. The corner is not a problem — it is the setup for the silliest possible exit.\n\nTypical phrases: \"Easy — you just…\", \"That's fine, you can just…\", \"There's a simple fix for that.\", \"Don't worry about that bit, because…\"\n\nThree kinds of ridiculous solution:\n\n1. The impossible technology — the classic. \"You download the maths directly.\"\n\n2. The obviously illegal or insane logistics — said as admin. \"You'd just need a second identical dog.\"\n\n3. The solution that makes it worse — the funniest of the three. \"Simple: skip next week as well and it evens out.\"\n\nMindset: say it like it is the obvious answer. Hesitation is what makes an absurd solution land as nonsense rather than as a bit.",
       inputs: [
         { q: "They ask how you'd catch up on a week of maths.", a: "\"Easy — you just download the formulas straight into your brain.\"", bundle: 'free' },
@@ -5901,8 +5901,8 @@ const collections = {
   reframing: [
     {
       name: "The Positive Reframe",
-      guideFront: "Same facts. What is another way to see them?",
-      guideBack: "One reframe that would hold up.",
+      guideFront: "Find the true upside when...",
+      guideBack: "A real upside that was overlooked",
       description: "Find the true upside in something that has been presented as bad. Not a cheerful spin — the reading that is genuinely available and has been overlooked. Example: \"We wasted three months\" becomes \"we found out in three months rather than in a year.\"\n\nIt works because most negative framings are one reading presented as the only one, and the alternative is usually already in the facts. Nobody has to be persuaded of anything; they only have to be shown the other reading.\n\nThe rule that keeps it honest: **it has to be true.** A positive reframe that requires ignoring something is not a reframe, it is a denial, and everybody present can tell which one they are being handed.\n\nTypical phrases: \"One way to look at it is…\", \"It also means…\", \"The other reading is…\", \"That's true, and it's also the case that…\"\n\nThree kinds of upside:\n\n1. What was learned — the most reliable, because it is nearly always true. \"We know now, and we didn't before.\"\n\n2. What was avoided — the one people miss. \"That would have been much worse in December.\"\n\n3. What it makes possible — for things that closed a door. \"It frees up the whole autumn, which we didn't have.\"\n\nMindset: find the reading that is true and unused. If you have to leave something out to make it work, you are not reframing, you are covering.",
       inputs: [
         { q: "\"We've wasted three months on this.\"", a: "\"Or we found out in three months rather than in a year. That's not nothing.\"", bundle: 'free' },
@@ -5917,8 +5917,8 @@ const collections = {
     },
     {
       name: "The Context Reframe",
-      guideFront: "Same facts. What is another way to see them?",
-      guideBack: "One reframe that would hold up.",
+      guideFront: "Change the setting it's judged in when...",
+      guideBack: "The same trait, in a room where it fits",
       description: "Keep the behaviour exactly as described and change the setting it is being judged in. The same trait is a fault in one room and precisely what is wanted in another. Example: \"You're too stubborn\" becomes \"in a negotiation that is exactly the quality you want on your side.\"\n\nIt works because most criticisms of a person are context-blind — they name a behaviour and treat it as universally bad, when what is actually true is that it does not fit this particular situation. Naming the situation where it fits restores the proportion.\n\nIt is the most useful of the four for handling labels, because it concedes nothing and denies nothing. The behaviour is agreed; only the verdict moves.\n\nTypical phrases: \"In here, maybe. Put it in a…\", \"That's a problem on a Tuesday and an asset in a crisis.\", \"Depends where you're standing.\", \"That's exactly what you'd want if…\"\n\nThree ways to move the context:\n\n1. Another setting — the standard. \"That's a liability in small talk and an asset in a negotiation.\"\n\n2. Another time — for things that were right once. \"That was the correct instinct five years ago. The situation moved.\"\n\n3. Another observer — when the verdict is one person's. \"Your manager calls it slow. The client called it thorough.\"\n\nMindset: do not argue about the behaviour. Move the room it is being judged in and the verdict moves with it.",
       inputs: [
         { q: "\"You're too stubborn.\"", a: "\"In a queue, maybe. In a negotiation it's exactly what you'd want on your side.\"", bundle: 'free' },
@@ -5933,8 +5933,8 @@ const collections = {
     },
     {
       name: "The Meaning Reframe",
-      guideFront: "Same facts. What is another way to see them?",
-      guideBack: "One reframe that would hold up.",
+      guideFront: "Change what it's taken to mean when...",
+      guideBack: "The same facts, a different conclusion",
       description: "Leave the event untouched and change what it is taken to mean. Nothing about the facts moves — only the conclusion drawn from them. Example: \"She didn't reply\" means \"she is ignoring me\" or \"she has had a week from hell\", and both fit the same silence.\n\nIt works because the meaning is almost always the invented part. What happened is usually one sentence long, and everything painful attached to it is an interpretation that arrived so fast it felt like part of the event.\n\nThe test is whether the alternative meaning fits the same facts. If it requires different facts, it is not a reframe — it is wishful thinking, and it will not survive the next thing that happens.\n\nTypical phrases: \"Or it means…\", \"That's one explanation. Here's another that fits.\", \"What if it isn't about you at all?\", \"Same facts, different conclusion.\"\n\nThree ways to change the meaning:\n\n1. A different cause — the most common by far. \"Or she's had a terrible week and hasn't opened anything.\"\n\n2. Not about you — the one that resolves most of it. \"It might not be about you at all.\"\n\n3. A different verdict on yourself — for self-directed meanings. \"Nervous doesn't mean unprepared. It usually means it matters.\"\n\nMindset: separate what happened from what it means. The first is short and the second is a story, and only one of them is fixed.",
       inputs: [
         { q: "\"She didn't reply, so she's clearly annoyed with me.\"", a: "\"Or she's had a week from hell and hasn't opened her messages. Same silence, different reason.\"", bundle: 'free' },
@@ -5949,8 +5949,8 @@ const collections = {
     },
     {
       name: "The Humorous Reframe",
-      guideFront: "Same facts. What is another way to see them?",
-      guideBack: "One reframe that would hold up.",
+      guideFront: "Put it at an absurd scale when...",
+      guideBack: "The thing, sized honestly or comically",
       description: "Take the sting out by putting the thing at an absurd scale — usually smaller than the person is treating it, occasionally so much bigger that it becomes ridiculous. Example: \"I've ruined the whole evening\" becomes \"you knocked over a glass. They'll speak of little else for generations.\"\n\nIt works because most distress about a small thing comes from a scale error, and scale is the easiest thing to hear. You do not have to argue that it was not a disaster; you only have to say it in a size everyone can hear is wrong.\n\nThis is not the same as making a joke. The humorous reframe is aimed at the proportion, and it is warm — it says *this is smaller than it feels*, not *your reaction is silly*. Aimed at the person rather than the scale it stops working instantly.\n\nTypical phrases: \"In fifty years they'll still be talking about it.\", \"Historians will be kind.\", \"That's a Tuesday problem, not a life problem.\", \"You've committed a minor crime against a glass.\"\n\nThree ways to use scale:\n\n1. Shrink it by naming it plainly — the driest and safest. \"You sent an email to the wrong person. That's it. That's the crime.\"\n\n2. Inflate it absurdly — for things the person has already inflated. \"There'll be an inquiry. Possibly a statue.\"\n\n3. Give it a comically wrong category — \"that's a paperwork problem, not a moral one.\"\n\nMindset: aim at the size of the thing, never at the person's reaction. The moment it reads as \"you're overreacting\" it has become a criticism with a smile on it.",
       inputs: [
         { q: "\"I've completely ruined the evening.\"", a: "\"You knocked over one glass. They'll speak of little else for generations.\"", bundle: 'free' },
@@ -5965,8 +5965,8 @@ const collections = {
     },
     {
       name: "Reframe What They Said About You",
-      guideFront: "Same facts. What is another way to see them?",
-      guideBack: "One reframe that would hold up.",
+      guideFront: "Take their word and read it differently when...",
+      guideBack: "Their label, given your reading",
       description: "Somebody has put a label on you and you take the same word and give it a different reading, calmly and without arguing. It is the everyday use of the whole pack, and the safest, because the frame you are changing is your own. Example: \"You're always so serious\" — \"I take the things that matter seriously. I'd rather be that than the alternative.\"\n\nIt works because arguing with a label keeps you inside it. Deny it and you are the person defending themselves against being too serious, which is a losing position and takes ten minutes. Reframe it and the conversation moves to your reading, which you chose.\n\nAgree with the observation, disagree with the verdict. That split is the whole move: yes I do that, and here is what I make of it.\n\nTypical phrases: \"I'd call it…\", \"True, and I'm fine with it.\", \"That's one word for it. Mine would be…\", \"Guilty. It's served me well.\"\n\nThree ways to answer a label:\n\n1. Rename it — the same behaviour, your word. \"Stubborn, or committed. I know which one I'd use.\"\n\n2. Own it plainly — the strongest, and it ends the exchange. \"Yes. I'm completely at peace with that.\"\n\n3. Name where it comes from — for labels with something behind them. \"I check things twice because I've been burnt. It's a scar, not a personality.\"\n\nMindset: accept the behaviour, decline the verdict. That is the reframe, and it is much harder to argue with than a denial.",
       inputs: [
         { q: "\"You're always so serious.\"", a: "\"I take the things that matter seriously. I'd rather have that than the other way round.\"", bundle: 'free' },
@@ -5981,8 +5981,8 @@ const collections = {
     },
     {
       name: "Offer It, Don't Impose It",
-      guideFront: "Same facts. What is another way to see them?",
-      guideBack: "One reframe that would hold up.",
+      guideFront: "Give it as one reading among others when...",
+      guideBack: "A reframe offered, and left with them",
       description: "Give the reframe as one reading among others, after the person has been heard, and let them keep their own. It is the delivery rule for the entire pack, and it is what separates a reframe that helps from one that annoys. Example: \"That sounds genuinely rubbish. Can I offer another way of looking at it, or do you just want to be annoyed for a bit?\"\n\nIt works because a reframe handed to someone who has not yet been acknowledged is heard as a correction, and people defend against corrections. Two sentences of acknowledgement first and the same reframe lands as an offer.\n\nAsk, when it is not your own frame you are changing. \"Do you want a different angle on it?\" costs four seconds and it moves the whole thing from being told how to feel to being offered something.\n\nTypical phrases: \"That sounds hard. Want another angle on it, or not right now?\", \"One way to look at it — take it or leave it.\", \"I might be wrong about this.\", \"You don't have to buy it.\"\n\nThree parts to the delivery:\n\n1. Acknowledge first, properly — one true sentence about how it actually is. \"That's a rubbish way to find out.\"\n\n2. Ask before offering — especially if they are upset. \"Do you want a different reading of it?\"\n\n3. Hold it loosely — offer, then stop. \"That's just how it looks from here.\"\n\nMindset: acknowledge, then offer, then let it go. A reframe repeated is an argument about whose reading is correct, and nobody has ever won that.",
       inputs: [
         { q: "A friend is upset and you can see another reading.", a: "\"That sounds genuinely rubbish. Do you want another angle on it, or not right now?\"", bundle: 'free' },
@@ -5997,8 +5997,8 @@ const collections = {
     },
     {
       name: "Know When Not To",
-      guideFront: "Same facts. What is another way to see them?",
-      guideBack: "One reframe that would hold up.",
+      guideFront: "Leave it alone when...",
+      guideBack: "No reframe — the situation, taken straight",
       description: "Recognise the moments when a reframe is the wrong move and say nothing, or say something else. Some situations are simply bad, some people need to be heard rather than helped, and some feelings are the correct response to what happened. Example: somebody's plan has just collapsed an hour ago — the reframe is not wrong, it is early.\n\nIt works because the failure mode of this whole pack is real and has a name. Reframing someone else's feeling before they have been heard is what the literature calls toxic positivity, and the effect is not that they cheer up — it is that they stop telling you things.\n\nThree situations where the answer is no: when the thing is genuinely bad and a positive reading would require ignoring most of it; when the feeling is the accurate response and does not need adjusting; and when they want company rather than perspective, which is most of the time in the first hour.\n\nTypical phrases: \"That's just bad. I'm not going to try to make it better.\", \"You're allowed to be furious about this.\", \"I don't have a silver lining for this one.\", \"That's the correct reaction, honestly.\"\n\nThree tests:\n\n1. Would the positive reading require leaving something out? Then it is denial, not a reframe.\n\n2. Has the feeling been acknowledged yet? If not, that comes first and might be all that is needed.\n\n3. Is the feeling accurate? Grief, anger at something genuinely unfair, dread about something that is actually coming — none of those are frames that need changing.\n\nMindset: some things do not need a better angle. \"That's just bad, and I'm sorry\" is a complete response, and it is the right one more often than this pack might suggest.",
       inputs: [
         { q: "Something genuinely bad has just happened to them.", a: "\"That's just bad. I'm not going to try to find an upside for it.\"", bundle: 'free' },
@@ -10112,14 +10112,14 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The three W's that carry the story rather than decorate it.\n\nIf you only have thirty seconds, these are the three to spend it on. A story with What, How and Why is a complete story; one missing any of the three has a hole a listener will notice even if they cannot name it.\n\nThe three options:\n1. What — the main event. \"I lost my homework.\"\n2. How — the process. \"I checked my bag, my locker, the whole hallway.\"\n3. Why — the reason underneath. \"I was in a rush and did not check properly.\"\n\nThe order matters less than the presence. Whichever way round you tell them, a listener needs all three before the story is finished.\n\nMindset: these are the three that do the work. When you have to cut, cut from the other three first.",
       inputs: [
-        { q: "You have set the scene and nothing has happened yet.", a: "\"So I lost my homework. Not forgot it — actually lost it.\" [What — the Main Event]", bundle: 'pro' },
-        { q: "You have said what happened and they are waiting for more.", a: "\"I checked my bag, then my locker, then the whole hallway.\" [How — the Process]", bundle: 'pro' },
-        { q: "You have told the whole thing and it landed as \"and?\"", a: "\"I was in a rush that morning and did not check properly.\" [Why — the Reason]", bundle: 'pro' },
-        { q: "You have described a lot of searching but not what was lost.", a: "\"I locked myself out of the flat for six hours.\" [What — the Main Event]", bundle: 'pro' },
-        { q: "Your story jumps straight from the problem to the ending.", a: "\"I tried the neighbour, then the letting agent, then sat on the step.\" [How — the Process]", bundle: 'pro' },
-        { q: "The events are clear but the point is not.", a: "\"I had changed jackets, and the spare key was in the other one.\" [Why — the Reason]", bundle: 'pro' },
-        { q: "You have said what happened but not what you actually did about it.", a: "\"I rang round every garage in town until one of them said yes.\" [How — the Process]", bundle: 'pro' },
-        { q: "They keep asking why that mattered.", a: "\"Because it was the only day that week I could have got there.\" [Why — the Reason]", bundle: 'pro' },
+        { q: "You have set the scene and nothing has happened yet.", a: "\"So I lost my homework. Not forgot it — actually lost it.\" [What — the Main Event]", guideBack: "The event, without the run-up", bundle: 'pro' },
+        { q: "You have said what happened and they are waiting for more.", a: "\"I checked my bag, then my locker, then the whole hallway.\" [How — the Process]", guideBack: "The steps, as they happened", bundle: 'pro' },
+        { q: "You have told the whole thing and it landed as \"and?\"", a: "\"I was in a rush that morning and did not check properly.\" [Why — the Reason]", guideBack: "The motive, or the problem", bundle: 'pro' },
+        { q: "You have described a lot of searching but not what was lost.", a: "\"I locked myself out of the flat for six hours.\" [What — the Main Event]", guideBack: "The event, without the run-up", bundle: 'pro' },
+        { q: "Your story jumps straight from the problem to the ending.", a: "\"I tried the neighbour, then the letting agent, then sat on the step.\" [How — the Process]", guideBack: "The steps, as they happened", bundle: 'pro' },
+        { q: "The events are clear but the point is not.", a: "\"I had changed jackets, and the spare key was in the other one.\" [Why — the Reason]", guideBack: "The motive, or the problem", bundle: 'pro' },
+        { q: "You have said what happened but not what you actually did about it.", a: "\"I rang round every garage in town until one of them said yes.\" [How — the Process]", guideBack: "The steps, as they happened", bundle: 'pro' },
+        { q: "They keep asking why that mattered.", a: "\"Because it was the only day that week I could have got there.\" [Why — the Reason]", guideBack: "The motive, or the problem", bundle: 'pro' },
       ]
     },
     {
@@ -10128,14 +10128,14 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The three W's that place the story rather than drive it.\n\nThese are the ones that let a listener see it. They are also the ones you can afford to drop when time is short — which is exactly why people forget them entirely and end up telling stories nobody can picture.\n\nThe three options:\n1. When — the time. \"About ten minutes before the lesson.\"\n2. Where — the setting. \"In the hallway outside the science block.\"\n3. Who — the people. \"My teacher was waiting, and my mate was under the lockers.\"\n\nOne clause each is usually the right amount. These W's set a scene; they are not the scene.\n\nMindset: cheap and powerful. Three short clauses turn a report into something the listener can actually watch.",
       inputs: [
-        { q: "The story is clear but the listener cannot picture any of it.", a: "\"In the hallway outside the science block, with everyone pushing past.\" [Where — the Setting]", bundle: 'pro' },
-        { q: "You have used a name nobody has been introduced to.", a: "\"My mate Sam — he was the one crawling under the lockers.\" [Who — the People]", bundle: 'pro' },
-        { q: "The story sounds like a general habit rather than one event.", a: "\"This was yesterday, about ten minutes before the lesson.\" [When — the Time]", bundle: 'pro' },
-        { q: "The events happen but nobody else seems to be there.", a: "\"There was a neighbour I had never spoken to, who ended up making me tea.\" [Who — the People]", bundle: 'pro' },
-        { q: "You want the listener to see the room before anything happens.", a: "\"One of those climbing places in an old warehouse, all echo and chalk dust.\" [Where — the Setting]", bundle: 'pro' },
-        { q: "The timing is actually the funny part and you have not said it.", a: "\"The day before the deadline, of course.\" [When — the Time]", bundle: 'pro' },
-        { q: "The listener does not know whose house this happened in.", a: "\"This was at my aunt's — she had about nine cats.\" [Who — the People]", bundle: 'pro' },
-        { q: "You have said what happened but not where it put you.", a: "\"Right in the middle of the supermarket, with a full trolley.\" [Where — the Setting]", bundle: 'pro' },
+        { q: "The story is clear but the listener cannot picture any of it.", a: "\"In the hallway outside the science block, with everyone pushing past.\" [Where — the Setting]", guideBack: "Somewhere they can picture", bundle: 'pro' },
+        { q: "You have used a name nobody has been introduced to.", a: "\"My mate Sam — he was the one crawling under the lockers.\" [Who — the People]", guideBack: "The people, and what they did", bundle: 'pro' },
+        { q: "The story sounds like a general habit rather than one event.", a: "\"This was yesterday, about ten minutes before the lesson.\" [When — the Time]", guideBack: "The moment, or the stretch", bundle: 'pro' },
+        { q: "The events happen but nobody else seems to be there.", a: "\"There was a neighbour I had never spoken to, who ended up making me tea.\" [Who — the People]", guideBack: "The people, and what they did", bundle: 'pro' },
+        { q: "You want the listener to see the room before anything happens.", a: "\"One of those climbing places in an old warehouse, all echo and chalk dust.\" [Where — the Setting]", guideBack: "Somewhere they can picture", bundle: 'pro' },
+        { q: "The timing is actually the funny part and you have not said it.", a: "\"The day before the deadline, of course.\" [When — the Time]", guideBack: "The moment, or the stretch", bundle: 'pro' },
+        { q: "The listener does not know whose house this happened in.", a: "\"This was at my aunt's — she had about nine cats.\" [Who — the People]", guideBack: "The people, and what they did", bundle: 'pro' },
+        { q: "You have said what happened but not where it put you.", a: "\"Right in the middle of the supermarket, with a full trolley.\" [Where — the Setting]", guideBack: "Somewhere they can picture", bundle: 'pro' },
       ]
     },
     {
@@ -10144,14 +10144,14 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The full set of six, used as a diagnostic rather than a checklist.\n\nMost stories that fall flat are missing one specific thing, and the six W's are a fast way to find which. The listener's reaction usually tells you which one to reach for.\n\nThe six, and the symptom each one fixes:\n1. What — they are waiting for something to happen. \"I lost my homework.\"\n2. How — it jumped from problem to ending. \"I checked my bag, then my locker.\"\n3. Why — they said \"and?\" at the end. \"I was in a rush and did not check.\"\n4. When — it sounds like a habit, not an event. \"This was yesterday.\"\n5. Where — they cannot picture any of it. \"In the hallway outside the science block.\"\n6. Who — a name turned up with no owner. \"My mate Sam, who was under the lockers.\"\n\nMindset: a flat story is almost never a boring story. It is usually a story with one missing W, and finding it takes a few seconds.",
       inputs: [
-        { q: "You have been talking for a while and nothing has happened yet.", a: "\"So I called my teacher mum. Out loud. In front of everyone.\" [What — the Main Event]", bundle: 'pro' },
-        { q: "They cannot picture where any of this took place.", a: "\"Front of the classroom, with about thirty people listening.\" [Where — the Setting]", bundle: 'pro' },
-        { q: "Your story ended and they said \"right, and?\"", a: "\"I was tired, and she had just been talking to me exactly like my mum does.\" [Why — the Reason]", bundle: 'pro' },
-        { q: "You mentioned a name and they looked confused.", a: "\"A friend of mine who does it every week and found it hilarious.\" [Who — the People]", bundle: 'pro' },
-        { q: "The story leaps from the setup straight to the outcome.", a: "\"It came out before I could stop it, and then I heard myself say it.\" [How — the Process]", bundle: 'pro' },
-        { q: "It sounds like something that happens often, not once.", a: "\"Last period on a Friday, when everyone was half asleep.\" [When — the Time]", bundle: 'pro' },
-        { q: "They are following along but nothing has landed as the point.", a: "\"I had failed three times, so this one actually meant something.\" [Why — the Reason]", bundle: 'pro' },
-        { q: "The scene is vivid but the actual event is still unclear.", a: "\"We arrived at the hotel and it did not exist.\" [What — the Main Event]", bundle: 'pro' },
+        { q: "You have been talking for a while and nothing has happened yet.", a: "\"So I called my teacher mum. Out loud. In front of everyone.\" [What — the Main Event]", guideBack: "The event, without the run-up", bundle: 'pro' },
+        { q: "They cannot picture where any of this took place.", a: "\"Front of the classroom, with about thirty people listening.\" [Where — the Setting]", guideBack: "Somewhere they can picture", bundle: 'pro' },
+        { q: "Your story ended and they said \"right, and?\"", a: "\"I was tired, and she had just been talking to me exactly like my mum does.\" [Why — the Reason]", guideBack: "The motive, or the problem", bundle: 'pro' },
+        { q: "You mentioned a name and they looked confused.", a: "\"A friend of mine who does it every week and found it hilarious.\" [Who — the People]", guideBack: "The people, and what they did", bundle: 'pro' },
+        { q: "The story leaps from the setup straight to the outcome.", a: "\"It came out before I could stop it, and then I heard myself say it.\" [How — the Process]", guideBack: "The steps, as they happened", bundle: 'pro' },
+        { q: "It sounds like something that happens often, not once.", a: "\"Last period on a Friday, when everyone was half asleep.\" [When — the Time]", guideBack: "The moment, or the stretch", bundle: 'pro' },
+        { q: "They are following along but nothing has landed as the point.", a: "\"I had failed three times, so this one actually meant something.\" [Why — the Reason]", guideBack: "The motive, or the problem", bundle: 'pro' },
+        { q: "The scene is vivid but the actual event is still unclear.", a: "\"We arrived at the hotel and it did not exist.\" [What — the Main Event]", guideBack: "The event, without the run-up", bundle: 'pro' },
       ]
     },
   ],
@@ -10941,12 +10941,12 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The two opposite exaggerations of the same axis: how much you are willing to give.\n\nBoth work on any statement involving a thing, a need or a favour, and they are worth learning as a pair because the choice is nearly always available.\n\nThe two options:\n1. The Super Generous One — offer absurdly too much. \"Take my house, my car, and my savings too.\"\n2. The Super Stingy One — refuse to part with something worthless. \"Sorry, it's my family treasure.\"\n\nWhat decides it is the mood you want. Generous keeps the room warm and is very hard to take badly; stingy is sharper and slightly funnier, but only when the object is obviously nothing.\n\nMindset: if the thing they mentioned actually matters to them, go generous. Stinginess is only a joke when the withheld object is a biro.",
       inputs: [
-        { q: "They say: \"I need a new phone.\"", a: "\"Take mine. And my charger, and my number, and my contacts.\" (the super generous one)", bundle: 'pro' },
-        { q: "They say: \"Can I borrow a pen?\"", a: "\"This pen came over with my grandmother.\" (the super stingy one)", bundle: 'pro' },
-        { q: "They say: \"It's raining outside.\"", a: "\"Take my coat. Take my umbrella. Take my shoes, I'll manage.\" (the super generous one)", bundle: 'pro' },
-        { q: "They say: \"We're out of coffee.\"", a: "\"There's one left. It's mine. It has my name on it in spirit.\" (the super stingy one)", bundle: 'pro' },
-        { q: "They say: \"I forgot my homework.\"", a: "\"Take mine. Take my whole folder. Take my education, honestly.\" (the super generous one)", bundle: 'pro' },
-        { q: "They say: \"We have three tests next week.\"", a: "\"I'd share my notes, but they're sacred.\" (the super stingy one)", bundle: 'pro' },
+        { q: "They say: \"I need a new phone.\"", a: "\"Take mine. And my charger, and my number, and my contacts.\" [The Super Generous One]", guideBack: "An offer well past reason", bundle: 'pro' },
+        { q: "They say: \"Can I borrow a pen?\"", a: "\"This pen came over with my grandmother.\" [The Super Stingy One]", guideBack: "A refusal over nothing", bundle: 'pro' },
+        { q: "They say: \"It's raining outside.\"", a: "\"Take my coat. Take my umbrella. Take my shoes, I'll manage.\" [The Super Generous One]", guideBack: "An offer well past reason", bundle: 'pro' },
+        { q: "They say: \"We're out of coffee.\"", a: "\"There's one left. It's mine. It has my name on it in spirit.\" [The Super Stingy One]", guideBack: "A refusal over nothing", bundle: 'pro' },
+        { q: "They say: \"I forgot my homework.\"", a: "\"Take mine. Take my whole folder. Take my education, honestly.\" [The Super Generous One]", guideBack: "An offer well past reason", bundle: 'pro' },
+        { q: "They say: \"We have three tests next week.\"", a: "\"I'd share my notes, but they're sacred.\" [The Super Stingy One]", guideBack: "A refusal over nothing", bundle: 'pro' },
       ]
     },
     {
@@ -10955,12 +10955,12 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The other axis in the pack: what you do to the size of the problem.\n\nEvery one of the practice statements contains something mildly inconvenient, and there are two comic directions available. You can treat it as nothing whatsoever, or as a catastrophe.\n\nThe two options:\n1. The Invincible Hero — shrink it to nothing. \"Three tests? I'll do them all before lunch.\"\n2. The Mock-Offended One — inflate it enormously. \"Why would you even tell me that?\"\n\nInflating usually gets the bigger laugh and carries the bigger risk, because being theatrically wounded can be misread as commenting on how they feel. Shrinking is the safer of the two.\n\nMindset: read the statement first. If they sound even slightly like they mean it, shrink rather than inflate — the hero role never lands as mockery.",
       inputs: [
-        { q: "They say: \"We have three tests next week.\"", a: "\"Three? I'll sit them all on Monday and take the week off.\" (the invincible hero)", bundle: 'pro' },
-        { q: "They say: \"This food tastes bad.\"", a: "\"I need a moment. That was hurtful and I made the salad.\" (the mock-offended one)", bundle: 'pro' },
-        { q: "They say: \"Let's go for a run.\"", a: "\"Sure. I usually do forty kilometres before breakfast.\" (the invincible hero)", bundle: 'pro' },
-        { q: "They say: \"The meeting's been moved to Friday.\"", a: "\"Moved. Without consulting me. After everything I've given.\" (the mock-offended one)", bundle: 'pro' },
-        { q: "They say: \"My laptop died.\"", a: "\"Hand it here. I fix these with my thumbs.\" (the invincible hero)", bundle: 'pro' },
-        { q: "They say: \"I need a new phone.\"", a: "\"A new one. Right in front of the old one. Unbelievable.\" (the mock-offended one)", bundle: 'pro' },
+        { q: "They say: \"We have three tests next week.\"", a: "\"Three? I'll sit them all on Monday and take the week off.\" [The Invincible Hero]", guideBack: "A feat at an impossible scale", bundle: 'pro' },
+        { q: "They say: \"This food tastes bad.\"", a: "\"I need a moment. That was hurtful and I made the salad.\" [The Mock-Offended One]", guideBack: "Injured dignity, held one beat too long", bundle: 'pro' },
+        { q: "They say: \"Let's go for a run.\"", a: "\"Sure. I usually do forty kilometres before breakfast.\" [The Invincible Hero]", guideBack: "A feat at an impossible scale", bundle: 'pro' },
+        { q: "They say: \"The meeting's been moved to Friday.\"", a: "\"Moved. Without consulting me. After everything I've given.\" [The Mock-Offended One]", guideBack: "Injured dignity, held one beat too long", bundle: 'pro' },
+        { q: "They say: \"My laptop died.\"", a: "\"Hand it here. I fix these with my thumbs.\" [The Invincible Hero]", guideBack: "A feat at an impossible scale", bundle: 'pro' },
+        { q: "They say: \"I need a new phone.\"", a: "\"A new one. Right in front of the old one. Unbelievable.\" [The Mock-Offended One]", guideBack: "Injured dignity, held one beat too long", bundle: 'pro' },
       ]
     },
     {
@@ -10969,14 +10969,14 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The full choice between all seven.\n\nAny of them will work on any ordinary statement — that is the whole point of the exercise. But one usually fits best, and the fit depends on what the statement is about.\n\nThe seven, and what each one is best on:\n1. The Bossy Leader — anything involving a plan. \"Nobody move. I have a system.\"\n2. The Lazy One — anything involving effort. \"Maybe tomorrow. Maybe autumn.\"\n3. The Super Generous One — anything involving a need. \"Take mine. Take all of it.\"\n4. The Super Stingy One — anything involving a small object. \"It's a family treasure.\"\n5. The Invincible Hero — anything difficult. \"Is that meant to be hard?\"\n6. The Mock-Offended One — anything mildly critical. \"I'll need a moment.\"\n7. The Rule Breaker — anything involving a rule. \"There's a way round this.\"\n\nMindset: there is no wrong role, only a lazier and a sharper one. The skill being trained is speed of choice, not correctness.",
       inputs: [
-        { q: "They say: \"Let's go for a run.\"", a: "\"That sounds like a lot of work. Maybe tomorrow.\" (the lazy one)", bundle: 'pro' },
-        { q: "They say: \"I forgot my homework.\"", a: "\"We'll claim it was stolen. I'll cry if needed.\" (the rule breaker)", bundle: 'pro' },
-        { q: "They say: \"This food tastes bad.\"", a: "\"Put the fork down. I'll be taking over the kitchen.\" (the bossy leader)", bundle: 'pro' },
-        { q: "They say: \"We're out of coffee.\"", a: "\"I stopped needing coffee in 2019. Pure resolve now.\" (the invincible hero)", bundle: 'pro' },
-        { q: "They say: \"Can I borrow a pen?\"", a: "\"You can. Two pounds an hour.\" (the super stingy one)", bundle: 'pro' },
-        { q: "They say: \"It's raining outside.\"", a: "\"Take my coat, my umbrella, my shoes. I'll manage.\" (the super generous one)", bundle: 'pro' },
-        { q: "They say: \"The meeting's been moved to Friday.\"", a: "\"Is it though? I never saw an invite. I see no invite.\" (the rule breaker)", bundle: 'pro' },
-        { q: "They say: \"My laptop died.\"", a: "\"Yours died and mine is fine, and now I live with that guilt.\" (the mock-offended one)", bundle: 'pro' },
+        { q: "They say: \"Let's go for a run.\"", a: "\"That sounds like a lot of work. Maybe tomorrow.\" [The Lazy One]", guideBack: "The least possible response", bundle: 'pro' },
+        { q: "They say: \"I forgot my homework.\"", a: "\"We'll claim it was stolen. I'll cry if needed.\" [The Rule Breaker]", guideBack: "A way round, offered instantly", bundle: 'pro' },
+        { q: "They say: \"This food tastes bad.\"", a: "\"Put the fork down. I'll be taking over the kitchen.\" [The Bossy Leader]", guideBack: "An order nobody needs", bundle: 'pro' },
+        { q: "They say: \"We're out of coffee.\"", a: "\"I stopped needing coffee in 2019. Pure resolve now.\" [The Invincible Hero]", guideBack: "A feat at an impossible scale", bundle: 'pro' },
+        { q: "They say: \"Can I borrow a pen?\"", a: "\"You can. Two pounds an hour.\" [The Super Stingy One]", guideBack: "A refusal over nothing", bundle: 'pro' },
+        { q: "They say: \"It's raining outside.\"", a: "\"Take my coat, my umbrella, my shoes. I'll manage.\" [The Super Generous One]", guideBack: "An offer well past reason", bundle: 'pro' },
+        { q: "They say: \"The meeting's been moved to Friday.\"", a: "\"Is it though? I never saw an invite. I see no invite.\" [The Rule Breaker]", guideBack: "A way round, offered instantly", bundle: 'pro' },
+        { q: "They say: \"My laptop died.\"", a: "\"Yours died and mine is fine, and now I live with that guilt.\" [The Mock-Offended One]", guideBack: "Injured dignity, held one beat too long", bundle: 'pro' },
       ]
     },
   ],
@@ -11754,12 +11754,12 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The two techniques that keep a story alive without changing its direction: Yes And, which accepts and adds, and Then What Happens, which follows the last idea forward. Between them they cover most turns, and neither requires you to have an idea of your own — you only have to take theirs seriously.\n\nThe two options:\n1. Yes, And — accept and put one thing on top. \"Yes, and the fort needs a doorbell.\"\n2. Then What Happens — follow it forward. \"So the school rings your mum.\"\n\nReach for these when the story is working and you just have to not drop it. Most turns are this.\n\nMindset: neither of these needs an idea. That is why they are the two to have ready when your mind is blank.",
       inputs: [
-        { q: "They say you should skip the whole week.", a: "\"Yes, and I'll need three pizzas just for Monday.\" [yes and]", bundle: 'pro' },
-        { q: "They say the dog goes to class instead of you.", a: "\"So now the dog's got homework and you're doing it at midnight.\" [then what]", bundle: 'pro' },
-        { q: "They add a doorbell to the imaginary fort.", a: "\"Yes, and there's a bell rota. It's very organised in there.\" [yes and]", bundle: 'pro' },
-        { q: "They say nobody would notice you were gone.", a: "\"Which means they keep paying you for years. You become a rumour.\" [then what]", bundle: 'pro' },
-        { q: "You have gone blank and the story is waiting for you.", a: "\"So what happens is your mum gets home before the boxes go out.\" [then what]", bundle: 'pro' },
-        { q: "They have made your excuse bigger than you meant it.", a: "\"Yes, and I've already told my manager, so we're committed now.\" [yes and]", bundle: 'pro' },
+        { q: "They say you should skip the whole week.", a: "\"Yes, and I'll need three pizzas just for Monday.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
+        { q: "They say the dog goes to class instead of you.", a: "\"So now the dog's got homework and you're doing it at midnight.\" [Then What Happens]", guideBack: "What must happen now, because of that", bundle: 'pro' },
+        { q: "They add a doorbell to the imaginary fort.", a: "\"Yes, and there's a bell rota. It's very organised in there.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
+        { q: "They say nobody would notice you were gone.", a: "\"Which means they keep paying you for years. You become a rumour.\" [Then What Happens]", guideBack: "What must happen now, because of that", bundle: 'pro' },
+        { q: "You have gone blank and the story is waiting for you.", a: "\"So what happens is your mum gets home before the boxes go out.\" [Then What Happens]", guideBack: "What must happen now, because of that", bundle: 'pro' },
+        { q: "They have made your excuse bigger than you meant it.", a: "\"Yes, and I've already told my manager, so we're committed now.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
       ]
     },
     {
@@ -11768,12 +11768,12 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The three techniques that raise the stakes: Make It Bigger, which inflates what is already there; What If, which adds a threat; and Bring Someone In, which adds a person with opinions. These are for the moment the story is pleasant and going nowhere.\n\nThe three options:\n1. Make It Bigger — inflate past sense. \"Three pizzas? Enough for the city.\"\n2. What If — add a complication. \"What if your mum comes home?\"\n3. Bring Someone In — a new character with a reaction. \"Then your gran turns up.\"\n\nThe tell that you need one of these is that the last two turns were both agreeable. A story with no problem in it runs out fast.\n\nMindset: pleasant is the enemy. Give it a problem, a person or a bigger number.",
       inputs: [
-        { q: "The story has become a list of nice things.", a: "\"What if the neighbours have started a group chat about it?\" [what if]", bundle: 'pro' },
-        { q: "They say you would sleep in a bit.", a: "\"A bit? They'd find you in the spring.\" [bigger]", bundle: 'pro' },
-        { q: "The story only has the two of you in it.", a: "\"This is where a man from the council knocks, holding a clipboard.\" [bring someone in]", bundle: 'pro' },
-        { q: "They describe a small mess.", a: "\"Small? They're naming a warning label after you.\" [bigger]", bundle: 'pro' },
-        { q: "The plan in the story is going suspiciously well.", a: "\"What if it works perfectly and now it's your job forever?\" [what if]", bundle: 'pro' },
-        { q: "The story is flagging and needs a reaction.", a: "\"And the headteacher has been watching all of this from a parked car.\" [bring someone in]", bundle: 'pro' },
+        { q: "The story has become a list of nice things.", a: "\"What if the neighbours have started a group chat about it?\" [What If]", guideBack: "A threat to the plan", bundle: 'pro' },
+        { q: "They say you would sleep in a bit.", a: "\"A bit? They'd find you in the spring.\" [Make It Bigger]", guideBack: "The same thing, at an impossible scale", bundle: 'pro' },
+        { q: "The story only has the two of you in it.", a: "\"This is where a man from the council knocks, holding a clipboard.\" [Bring Someone In]", guideBack: "A new person, animal or object, reacting", bundle: 'pro' },
+        { q: "They describe a small mess.", a: "\"Small? They're naming a warning label after you.\" [Make It Bigger]", guideBack: "The same thing, at an impossible scale", bundle: 'pro' },
+        { q: "The plan in the story is going suspiciously well.", a: "\"What if it works perfectly and now it's your job forever?\" [What If]", guideBack: "A threat to the plan", bundle: 'pro' },
+        { q: "The story is flagging and needs a reaction.", a: "\"And the headteacher has been watching all of this from a parked car.\" [Bring Someone In]", guideBack: "A new person, animal or object, reacting", bundle: 'pro' },
       ]
     },
     {
@@ -11782,13 +11782,13 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The full set. Most turns take more than one, but one is usually obvious: accept and add when the story is working, follow the consequence when you are stuck, inflate when it is too small, complicate when it is too pleasant, add a person when it is too empty, and solve it ridiculously when it has nowhere left to go.\n\nThe six, with the cue for each:\n1. Yes, And — it is working. \"Yes, and…\"\n2. Then What Happens — you are stuck. \"So then…\"\n3. Make It Bigger — it is too small. \"Not three. Three hundred.\"\n4. What If — it is too pleasant. \"What if…?\"\n5. Bring Someone In — it is too empty. \"And then your gran…\"\n6. Solve It Ridiculously — it is cornered. \"Easy, you just…\"\n\nMindset: there is no wrong move, only a dropped one. Any of the six beats a pause where you were trying to think of something clever.",
       inputs: [
-        { q: "They have just added a good detail and it is your turn.", a: "\"Yes, and now the fort needs a postcode.\" [yes and]", bundle: 'pro' },
-        { q: "You are completely stuck for an idea.", a: "\"So the school rings your mum, obviously.\" [then what]", bundle: 'pro' },
-        { q: "The last thing they said was too modest.", a: "\"Three pizzas? You'd need enough for the whole street.\" [bigger]", bundle: 'pro' },
-        { q: "Everything in the story is going well and it is dull.", a: "\"What if the delivery driver knows your mum?\" [what if]", bundle: 'pro' },
-        { q: "There is nobody in the story but the two of you.", a: "\"Then the cat gets involved, and she is furious.\" [bring someone in]", bundle: 'pro' },
-        { q: "The story has hit a problem with no way out.", a: "\"Easy — you just download the whole term directly into your head.\" [ridiculous solution]", bundle: 'pro' },
-        { q: "They have raised the stakes and it needs following.", a: "\"Which means two years later it comes up in a job interview.\" [then what]", bundle: 'pro' },
+        { q: "They have just added a good detail and it is your turn.", a: "\"Yes, and now the fort needs a postcode.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
+        { q: "You are completely stuck for an idea.", a: "\"So the school rings your mum, obviously.\" [Then What Happens]", guideBack: "What must happen now, because of that", bundle: 'pro' },
+        { q: "The last thing they said was too modest.", a: "\"Three pizzas? You'd need enough for the whole street.\" [Make It Bigger]", guideBack: "The same thing, at an impossible scale", bundle: 'pro' },
+        { q: "Everything in the story is going well and it is dull.", a: "\"What if the delivery driver knows your mum?\" [What If]", guideBack: "A threat to the plan", bundle: 'pro' },
+        { q: "There is nobody in the story but the two of you.", a: "\"Then the cat gets involved, and she is furious.\" [Bring Someone In]", guideBack: "A new person, animal or object, reacting", bundle: 'pro' },
+        { q: "The story has hit a problem with no way out.", a: "\"Easy — you just download the whole term directly into your head.\" [Solve It Ridiculously]", guideBack: "An absurd solution, said with confidence", bundle: 'pro' },
+        { q: "They have raised the stakes and it needs following.", a: "\"Which means two years later it comes up in a job interview.\" [Then What Happens]", guideBack: "What must happen now, because of that", bundle: 'pro' },
       ]
     },
   ],
@@ -11889,12 +11889,12 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The core set: positive, context, meaning and humorous. Each changes something different — the upside, the setting, the conclusion, or the scale — while leaving the facts alone.\n\nThe four options:\n1. Positive — the true upside that was overlooked. \"We found out in three months, not a year.\"\n2. Context — the same behaviour in a different room. \"Stubborn in a queue, ideal in a negotiation.\"\n3. Meaning — the same event, a different conclusion. \"Or she's had a terrible week.\"\n4. Humorous — the same thing at its actual size. \"You knocked over a glass.\"\n\nChoose by what is wrong with the current frame: a missing upside, a missing setting, an invented conclusion, or a scale error.\n\nMindset: the facts never move. Only the frame around them.",
       inputs: [
-        { q: "\"We've wasted three months on this.\"", a: "\"Or we found out in three months rather than in a year.\" [positive]", bundle: 'pro' },
-        { q: "\"You're too stubborn.\"", a: "\"In a queue, maybe. In a negotiation it's exactly what you'd want.\" [context]", bundle: 'pro' },
-        { q: "\"She didn't reply, so she's annoyed with me.\"", a: "\"Or she's had a week from hell and hasn't opened anything.\" [meaning]", bundle: 'pro' },
-        { q: "\"I've completely ruined the evening.\"", a: "\"You knocked over one glass. There is no permanent record.\" [humorous]", bundle: 'pro' },
-        { q: "\"He's too slow for this team.\"", a: "\"Slow in a sprint, careful in an audit. Which are we doing?\" [context]", bundle: 'pro' },
-        { q: "\"The project got cancelled.\"", a: "\"It frees up the whole autumn, which you didn't have before.\" [positive]", bundle: 'pro' },
+        { q: "\"We've wasted three months on this.\"", a: "\"Or we found out in three months rather than in a year.\" [The Positive Reframe]", guideBack: "A real upside that was overlooked", bundle: 'pro' },
+        { q: "\"You're too stubborn.\"", a: "\"In a queue, maybe. In a negotiation it's exactly what you'd want.\" [The Context Reframe]", guideBack: "The same trait, in a room where it fits", bundle: 'pro' },
+        { q: "\"She didn't reply, so she's annoyed with me.\"", a: "\"Or she's had a week from hell and hasn't opened anything.\" [The Meaning Reframe]", guideBack: "The same facts, a different conclusion", bundle: 'pro' },
+        { q: "\"I've completely ruined the evening.\"", a: "\"You knocked over one glass. There is no permanent record.\" [The Humorous Reframe]", guideBack: "The thing, sized honestly or comically", bundle: 'pro' },
+        { q: "\"He's too slow for this team.\"", a: "\"Slow in a sprint, careful in an audit. Which are we doing?\" [The Context Reframe]", guideBack: "The same trait, in a room where it fits", bundle: 'pro' },
+        { q: "\"The project got cancelled.\"", a: "\"It frees up the whole autumn, which you didn't have before.\" [The Positive Reframe]", guideBack: "A real upside that was overlooked", bundle: 'pro' },
       ]
     },
     {
@@ -11903,12 +11903,12 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The two moves for something aimed at you: renaming the label somebody has put on you, and changing the meaning you have put on yourself. Both are safe in a way the others are not, because the frame you are changing is your own.\n\nThe two options:\n1. Reframe What They Said About You — accept the behaviour, decline the verdict. \"I'd call it particular.\"\n2. The Meaning Reframe, turned inwards — the conclusion you drew about yourself. \"Nervous means it mattered.\"\n\nArguing with a label keeps you inside it. Renaming it moves the conversation to your word, which is a much better place to be standing.\n\nMindset: agree with the observation, disagree with the verdict. Almost nobody argues with that.",
       inputs: [
-        { q: "\"You're always so serious.\"", a: "\"I take the things that matter seriously. I'd rather be that way round.\" [label]", bundle: 'pro' },
-        { q: "\"I was nervous, so I wasn't ready.\"", a: "\"Nervous usually means it mattered. Different thing entirely.\" [meaning]", bundle: 'pro' },
-        { q: "\"You worry too much.\"", a: "\"I plan for things going wrong. Dull, and it's saved us twice.\" [label]", bundle: 'pro' },
-        { q: "\"I got one wrong, so I'm bad at this.\"", a: "\"One wrong. 'Bad at this' is a much bigger claim than the evidence supports.\" [meaning]", bundle: 'pro' },
-        { q: "\"You're too quiet in meetings.\"", a: "\"I say things once I've thought about them. That's on purpose.\" [label]", bundle: 'pro' },
-        { q: "\"Nobody commented, so it must have been bad.\"", a: "\"Or it was fine, and people say almost nothing about fine.\" [meaning]", bundle: 'pro' },
+        { q: "\"You're always so serious.\"", a: "\"I take the things that matter seriously. I'd rather be that way round.\" [Reframe What They Said About You]", guideBack: "Their label, given your reading", bundle: 'pro' },
+        { q: "\"I was nervous, so I wasn't ready.\"", a: "\"Nervous usually means it mattered. Different thing entirely.\" [The Meaning Reframe]", guideBack: "The same facts, a different conclusion", bundle: 'pro' },
+        { q: "\"You worry too much.\"", a: "\"I plan for things going wrong. Dull, and it's saved us twice.\" [Reframe What They Said About You]", guideBack: "Their label, given your reading", bundle: 'pro' },
+        { q: "\"I got one wrong, so I'm bad at this.\"", a: "\"One wrong. 'Bad at this' is a much bigger claim than the evidence supports.\" [The Meaning Reframe]", guideBack: "The same facts, a different conclusion", bundle: 'pro' },
+        { q: "\"You're too quiet in meetings.\"", a: "\"I say things once I've thought about them. That's on purpose.\" [Reframe What They Said About You]", guideBack: "Their label, given your reading", bundle: 'pro' },
+        { q: "\"Nobody commented, so it must have been bad.\"", a: "\"Or it was fine, and people say almost nothing about fine.\" [The Meaning Reframe]", guideBack: "The same facts, a different conclusion", bundle: 'pro' },
       ]
     },
     {
@@ -11917,12 +11917,12 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The two moves that decide whether a reframe belongs in this moment: offering it properly, and recognising when the answer is no. These matter more than the four types, because a well-chosen reframe delivered at the wrong moment does damage that a badly chosen one delivered well does not.\n\nThe two options:\n1. Offer It, Don't Impose It — acknowledge, ask, hold it loosely. \"Want another angle, or not right now?\"\n2. Know When Not To — some things are just bad. \"I'm not going to try to find an upside for this.\"\n\nThe test is simple and worth memorising: has the feeling been heard yet, and would the new reading require leaving something out?\n\nMindset: acknowledge first, offer second, and be willing to have no reframe at all.",
       inputs: [
-        { q: "A friend is upset and you can see another reading.", a: "\"That sounds genuinely rubbish. Want another angle, or not right now?\" [offer]", bundle: 'pro' },
-        { q: "Something genuinely bad has just happened to them.", a: "\"That's just bad. I'm not going to find an upside for it.\" [don't]", bundle: 'pro' },
-        { q: "You are about to say \"look on the bright side\".", a: "\"That's a horrible way to find out. There is one other reading, if you want it.\" [offer]", bundle: 'pro' },
-        { q: "They are angry about something that was actually unfair.", a: "\"You're allowed to be furious. It was unfair.\" [don't]", bundle: 'pro' },
-        { q: "They have rejected your reframe.", a: "\"Fair enough. It was just how it looked from here.\" [offer]", bundle: 'pro' },
-        { q: "They want company rather than perspective.", a: "\"I'll just be annoyed about it with you, then.\" [don't]", bundle: 'pro' },
+        { q: "A friend is upset and you can see another reading.", a: "\"That sounds genuinely rubbish. Want another angle, or not right now?\" [Offer It, Don't Impose It]", guideBack: "A reframe offered, and left with them", bundle: 'pro' },
+        { q: "Something genuinely bad has just happened to them.", a: "\"That's just bad. I'm not going to find an upside for it.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "You are about to say \"look on the bright side\".", a: "\"That's a horrible way to find out. There is one other reading, if you want it.\" [Offer It, Don't Impose It]", guideBack: "A reframe offered, and left with them", bundle: 'pro' },
+        { q: "They are angry about something that was actually unfair.", a: "\"You're allowed to be furious. It was unfair.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "They have rejected your reframe.", a: "\"Fair enough. It was just how it looked from here.\" [Offer It, Don't Impose It]", guideBack: "A reframe offered, and left with them", bundle: 'pro' },
+        { q: "They want company rather than perspective.", a: "\"I'll just be annoyed about it with you, then.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
       ]
     },
   ],

@@ -5672,8 +5672,8 @@ const multiStepCollections = {
             { front: "Step 1 · Trigger — open with something small and true", back: "\"I'm so tired I've read the same line four times.\"" },
             { front: "Step 2 · Their invitation — they ask \"so what are you going to do instead?\"", back: "\"Go home, get into bed, and stay there until Thursday.\"" },
             { front: "Step 3 · They build — \"you'd need snacks for that\"", back: "\"Yes, and three pizzas. Delivered on a schedule.\"" },
-            { front: "Step 4 · Escalate — take it further yourself", back: "\"By Friday I'd be more pizza than person. They'd have to notify someone.\"" },
-            { front: "Step 5 · Land it — stop while it is still funny", back: "\"And that's how I got banned from the good place. Anyway. Back to it.\"" },
+            { front: "Step 4 · Make It Bigger — take it further yourself", back: "\"By Friday I'd be more pizza than person. They'd have to notify someone.\"", guideFront: "Inflate it past the point of sense when...", guideBack: "The same thing, at an impossible scale" },
+            { front: "Step 5 · Solve It Ridiculously — stop while it is still funny", back: "\"And that's how I got banned from the good place. Anyway. Back to it.\"", guideFront: "Fix it in a way that could not work when...", guideBack: "An absurd solution, said with confidence" },
           ]
         },
         {
@@ -5683,8 +5683,8 @@ const multiStepCollections = {
             { front: "Step 1 · Trigger — small and true", back: "\"I've been standing here so long I've started making plans for the shelter.\"" },
             { front: "Step 2 · Their invitation — they ask \"what sort of plans?\"", back: "\"Curtains. A small rug. Nothing extravagant.\"" },
             { front: "Step 3 · They build — \"you'd need a kettle\"", back: "\"Yes, and a doorbell, so people know not to just wander in.\"" },
-            { front: "Step 4 · Escalate — go past sensible", back: "\"Give it a month and I'm on the council for this shelter. Unopposed.\"" },
-            { front: "Step 5 · Land it — a flat last line", back: "\"And then the bus comes and I have to give it all up. Tragic.\"" },
+            { front: "Step 4 · Make It Bigger — go past sensible", back: "\"Give it a month and I'm on the council for this shelter. Unopposed.\"", guideFront: "Inflate it past the point of sense when...", guideBack: "The same thing, at an impossible scale" },
+            { front: "Step 5 · Solve It Ridiculously — a flat last line", back: "\"And then the bus comes and I have to give it all up. Tragic.\"", guideFront: "Fix it in a way that could not work when...", guideBack: "An absurd solution, said with confidence" },
           ]
         },
       ]
@@ -5700,9 +5700,9 @@ const multiStepCollections = {
           situation: "A friend says they are too tired to face the rest of the week.",
           steps: [
             { front: "Step 1 · Invite — a playful open question", back: "\"So what are you going to do instead? Realistically.\"" },
-            { front: "Step 2 · Build — they say \"hide at home with films\"", back: "\"Yes, and you'd need enough pizza to see the whole week out.\"" },
-            { front: "Step 3 · Complicate — add a threat to the plan", back: "\"What if your mum comes home and finds ten empty boxes?\"" },
-            { front: "Step 4 · Bring someone in — a new reaction", back: "\"And the dog gives you away immediately. He has no loyalty.\"" },
+            { front: "Step 2 · Yes, And — they say \"hide at home with films\"", back: "\"Yes, and you'd need enough pizza to see the whole week out.\"", guideFront: "Accept it and add on top when...", guideBack: "Their idea, with something built on it" },
+            { front: "Step 3 · What If — add a threat to the plan", back: "\"What if your mum comes home and finds ten empty boxes?\"", guideFront: "Add a complication nobody asked for when...", guideBack: "A threat to the plan" },
+            { front: "Step 4 · Bring Someone In — a new reaction", back: "\"And the dog gives you away immediately. He has no loyalty.\"", guideFront: "Add a character with an opinion when...", guideBack: "A new person, animal or object, reacting" },
             { front: "Step 5 · Hand it back — let them land it", back: "\"So how does this end? I need to know how you get out of it.\"" },
           ]
         },
@@ -5711,9 +5711,9 @@ const multiStepCollections = {
           situation: "A colleague announces they have far too much to do tonight.",
           steps: [
             { front: "Step 1 · Invite — ask for the plan", back: "\"How are you actually going to get through all that?\"" },
-            { front: "Step 2 · Build — they say \"coffee and denial\"", back: "\"Yes, and a whiteboard. Nobody's ever solved anything without one.\"" },
-            { front: "Step 3 · Complicate — a small domestic disaster", back: "\"What if the coffee machine picks tonight to break?\"" },
-            { front: "Step 4 · Bring someone in — someone unhelpful", back: "\"And then your neighbour knocks. He wants to talk about the bins.\"" },
+            { front: "Step 2 · Yes, And — they say \"coffee and denial\"", back: "\"Yes, and a whiteboard. Nobody's ever solved anything without one.\"", guideFront: "Accept it and add on top when...", guideBack: "Their idea, with something built on it" },
+            { front: "Step 3 · What If — a small domestic disaster", back: "\"What if the coffee machine picks tonight to break?\"", guideFront: "Add a complication nobody asked for when...", guideBack: "A threat to the plan" },
+            { front: "Step 4 · Bring Someone In — someone unhelpful", back: "\"And then your neighbour knocks. He wants to talk about the bins.\"", guideFront: "Add a character with an opinion when...", guideBack: "A new person, animal or object, reacting" },
             { front: "Step 5 · Hand it back — their ending", back: "\"Go on then. Do you survive this or not?\"" },
           ]
         },
@@ -5730,9 +5730,9 @@ const multiStepCollections = {
           situation: "A banter story about a week off has become a list of pleasant things.",
           steps: [
             { front: "Step 1 · Notice — nothing has gone wrong in the story for two turns", back: "(the energy has gone; it needs a problem, not a better joke)" },
-            { front: "Step 2 · Complicate — add the threat", back: "\"What if the neighbours have already noticed you're home all week?\"" },
-            { front: "Step 3 · Add a reaction — someone with opinions", back: "\"There's a group chat about it. You're in it, which is worse.\"" },
-            { front: "Step 4 · Land it — while it is still funny", back: "\"Anyway, that's how you end up moving cities. Right, coffee?\"" },
+            { front: "Step 2 · What If — add the threat", back: "\"What if the neighbours have already noticed you're home all week?\"", guideFront: "Add a complication nobody asked for when...", guideBack: "A threat to the plan" },
+            { front: "Step 3 · Bring Someone In — someone with opinions", back: "\"There's a group chat about it. You're in it, which is worse.\"", guideFront: "Add a character with an opinion when...", guideBack: "A new person, animal or object, reacting" },
+            { front: "Step 4 · Solve It Ridiculously — while it is still funny", back: "\"Anyway, that's how you end up moving cities. Right, coffee?\"", guideFront: "Fix it in a way that could not work when...", guideBack: "An absurd solution, said with confidence" },
           ]
         },
         {
@@ -5740,9 +5740,9 @@ const multiStepCollections = {
           situation: "A story about a bus shelter has run out of ideas and there is a pause coming.",
           steps: [
             { front: "Step 1 · Notice — you are both waiting for the other to be funny", back: "(nobody has added a problem for two turns)" },
-            { front: "Step 2 · Complicate — something ordinary goes wrong", back: "\"What if someone else moves in? Do you share, or is it war?\"" },
-            { front: "Step 3 · Add a reaction — a character with a view", back: "\"The man from the council arrives with a clipboard. He is not sympathetic.\"" },
-            { front: "Step 4 · Land it — flat and warm", back: "\"And that's the last time I'm early for anything. Here's the bus.\"" },
+            { front: "Step 2 · What If — something ordinary goes wrong", back: "\"What if someone else moves in? Do you share, or is it war?\"", guideFront: "Add a complication nobody asked for when...", guideBack: "A threat to the plan" },
+            { front: "Step 3 · Bring Someone In — a character with a view", back: "\"The man from the council arrives with a clipboard. He is not sympathetic.\"", guideFront: "Add a character with an opinion when...", guideBack: "A new person, animal or object, reacting" },
+            { front: "Step 4 · Solve It Ridiculously — flat and warm", back: "\"And that's the last time I'm early for anything. Here's the bus.\"", guideFront: "Fix it in a way that could not work when...", guideBack: "An absurd solution, said with confidence" },
           ]
         },
       ]
@@ -5925,18 +5925,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend has found out they were left out of something at work.",
           steps: [
-            { front: "Step 1 · Acknowledge — the true, hard sentence", back: "\"That's a horrible way to find out. I'd be livid.\"" },
-            { front: "Step 2 · Ask — hand them the choice", back: "\"Do you want another angle on it, or do you want to be angry for a bit first?\"" },
-            { front: "Step 3 · Offer, then stop", back: "\"It'd have come out eventually, and better now than in six months. That's all I've got.\"" },
+            { front: "Step 1 · Offer It, Don't Impose It — the true, hard sentence", back: "\"That's a horrible way to find out. I'd be livid.\"", guideFront: "Give it as one reading among others when...", guideBack: "A reframe offered, and left with them" },
+            { front: "Step 2 · Offer It, Don't Impose It — hand them the choice", back: "\"Do you want another angle on it, or do you want to be angry for a bit first?\"", guideFront: "Give it as one reading among others when...", guideBack: "A reframe offered, and left with them" },
+            { front: "Step 3 · Offer It, Don't Impose It", back: "\"It'd have come out eventually, and better now than in six months. That's all I've got.\"", guideFront: "Give it as one reading among others when...", guideBack: "A reframe offered, and left with them" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague is convinced a presentation went badly.",
           steps: [
-            { front: "Step 1 · Acknowledge — do not skip it", back: "\"It clearly didn't feel good in there.\"" },
-            { front: "Step 2 · Ask — check they want it", back: "\"Can I tell you what it looked like from the back of the room?\"" },
-            { front: "Step 3 · Offer, then stop", back: "\"Two people on phones, one real question. That's a normal Tuesday, not a disaster.\"" },
+            { front: "Step 1 · Offer It, Don't Impose It — do not skip it", back: "\"It clearly didn't feel good in there.\"", guideFront: "Give it as one reading among others when...", guideBack: "A reframe offered, and left with them" },
+            { front: "Step 2 · Offer It, Don't Impose It — check they want it", back: "\"Can I tell you what it looked like from the back of the room?\"", guideFront: "Give it as one reading among others when...", guideBack: "A reframe offered, and left with them" },
+            { front: "Step 3 · Offer It, Don't Impose It", back: "\"Two people on phones, one real question. That's a normal Tuesday, not a disaster.\"", guideFront: "Give it as one reading among others when...", guideBack: "A reframe offered, and left with them" },
           ]
         },
       ]
@@ -5951,18 +5951,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "Somebody at work has called you fussy about detail, in front of others.",
           steps: [
-            { front: "Step 1 · Agree with the behaviour", back: "\"That's fair, I do go over things twice.\"" },
-            { front: "Step 2 · Rename it", back: "\"I'd call it particular. It's why the last audit was boring.\"" },
-            { front: "Step 3 · Own it and move", back: "\"Entirely guilty and quite happy about it. Right — where were we?\"" },
+            { front: "Step 1 · Reframe What They Said About You", back: "\"That's fair, I do go over things twice.\"", guideFront: "Take their word and read it differently when...", guideBack: "Their label, given your reading" },
+            { front: "Step 2 · Reframe What They Said About You", back: "\"I'd call it particular. It's why the last audit was boring.\"", guideFront: "Take their word and read it differently when...", guideBack: "Their label, given your reading" },
+            { front: "Step 3 · Reframe What They Said About You", back: "\"Entirely guilty and quite happy about it. Right — where were we?\"", guideFront: "Take their word and read it differently when...", guideBack: "Their label, given your reading" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A friend says you take everything too seriously.",
           steps: [
-            { front: "Step 1 · Agree with the behaviour", back: "\"I do, yeah. I've always been like that.\"" },
-            { front: "Step 2 · Rename it", back: "\"I take the things that matter seriously. That's the version I'd use.\"" },
-            { front: "Step 3 · Own it and move", back: "\"I'd rather have that problem than the other one. Anyway, tell me about Friday.\"" },
+            { front: "Step 1 · Reframe What They Said About You", back: "\"I do, yeah. I've always been like that.\"", guideFront: "Take their word and read it differently when...", guideBack: "Their label, given your reading" },
+            { front: "Step 2 · Reframe What They Said About You", back: "\"I take the things that matter seriously. That's the version I'd use.\"", guideFront: "Take their word and read it differently when...", guideBack: "Their label, given your reading" },
+            { front: "Step 3 · Reframe What They Said About You", back: "\"I'd rather have that problem than the other one. Anyway, tell me about Friday.\"", guideFront: "Take their word and read it differently when...", guideBack: "Their label, given your reading" },
           ]
         },
       ]
@@ -5977,18 +5977,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend's plan has fallen apart the same afternoon.",
           steps: [
-            { front: "Step 1 · Name it as bad", back: "\"That's just bad. I'm not going to look for an upside today.\"" },
-            { front: "Step 2 · Say the feeling fits", back: "\"You're allowed to be gutted about it. Anyone would be.\"" },
-            { front: "Step 3 · Ask what helps", back: "\"What would actually help right now — company, or a plan, or neither?\"" },
+            { front: "Step 1 · Know When Not To", back: "\"That's just bad. I'm not going to look for an upside today.\"", guideFront: "Leave it alone when...", guideBack: "No reframe — the situation, taken straight" },
+            { front: "Step 2 · Know When Not To", back: "\"You're allowed to be gutted about it. Anyone would be.\"", guideFront: "Leave it alone when...", guideBack: "No reframe — the situation, taken straight" },
+            { front: "Step 3 · Know When Not To", back: "\"What would actually help right now — company, or a plan, or neither?\"", guideFront: "Leave it alone when...", guideBack: "No reframe — the situation, taken straight" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Somebody is dreading something that genuinely is going to be hard.",
           steps: [
-            { front: "Step 1 · Name it honestly", back: "\"It probably will be as bad as you think. I'm not going to pretend.\"" },
-            { front: "Step 2 · Say the feeling fits", back: "\"Dreading it is the sensible response, not a failure of attitude.\"" },
-            { front: "Step 3 · Ask what helps", back: "\"Do you want to talk about the day itself, or think about something else entirely?\"" },
+            { front: "Step 1 · Know When Not To", back: "\"It probably will be as bad as you think. I'm not going to pretend.\"", guideFront: "Leave it alone when...", guideBack: "No reframe — the situation, taken straight" },
+            { front: "Step 2 · Know When Not To", back: "\"Dreading it is the sensible response, not a failure of attitude.\"", guideFront: "Leave it alone when...", guideBack: "No reframe — the situation, taken straight" },
+            { front: "Step 3 · Know When Not To", back: "\"Do you want to talk about the day itself, or think about something else entirely?\"", guideFront: "Leave it alone when...", guideBack: "No reframe — the situation, taken straight" },
           ]
         },
       ]
