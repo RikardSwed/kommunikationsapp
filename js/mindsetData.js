@@ -1071,6 +1071,9 @@ const mindsetCollections = {
         { q: "If I don't help, what am I even here for?", a: "You're the person they said it to. That's not nothing, it's most of it.", bundle: 'pro' },
         { q: "They keep going round in circles, I should intervene.", a: "Circling is how people think out loud. Let them get round again.", bundle: 'pro' },
         { q: "I can see the answer clearly.", a: "Then it'll still be there in ten minutes, when they're ready for it.", bundle: 'pro' },
+        { q: "They asked what I'd do, so they want advice.", a: "Sometimes. Ask whether they want the answer or the company first.", bundle: 'pro' },
+        { q: "Sitting there saying nothing feels lazy.", a: "Staying is work. It's just work that doesn't look like anything.", bundle: 'pro' },
+        { q: "If I don't offer something useful I've failed them.", a: "The useful thing was somebody hearing the whole of it without flinching.", bundle: 'pro' },
       ]
     },
     {
@@ -1084,6 +1087,9 @@ const mindsetCollections = {
         { q: "They're a practical person, they'd rather I got to it.", a: "Even practical people want to know the problem registered.", bundle: 'pro' },
         { q: "I'll acknowledge it after I've explained the fix.", a: "By then they've stopped listening. Do it in that order and see.", bundle: 'pro' },
         { q: "They asked what to do, so they want advice.", a: "Probably. Ten words of acknowledgement first still improves it.", bundle: 'pro' },
+        { q: "I can see the answer and it'll take ten seconds.", a: "Ten seconds, and it'll land as dismissal. Spend one sentence first.", bundle: 'pro' },
+        { q: "They know I care, I don't have to say it.", a: "They know it in general. They need it in this conversation.", bundle: 'pro' },
+        { q: "Getting to the practical part respects their time.", a: "Not if they have to tell you again next week because it didn't land.", bundle: 'pro' },
       ]
     },
     {
@@ -1097,6 +1103,9 @@ const mindsetCollections = {
         { q: "I feel useless just sitting here.", a: "Useless is how it feels from inside. It's rarely how it looks from outside.", bundle: 'pro' },
         { q: "I should have said something wiser.", a: "Nobody remembers what was said. They remember who stayed.", bundle: 'pro' },
         { q: "It's still not sorted, so nothing I did mattered.", a: "Sorted wasn't available. Company was.", bundle: 'pro' },
+        { q: "They're no better off than when they arrived.", a: "They're less alone with it. That was the improvement available.", bundle: 'pro' },
+        { q: "I should have known what to say.", a: "Nobody knows what to say. Staying is the part available to everyone.", bundle: 'pro' },
+        { q: "I feel useless just sitting here.", a: "Useless is how it feels from inside. It isn't how it looks from theirs.", bundle: 'pro' },
       ]
     },
     {
@@ -1110,6 +1119,25 @@ const mindsetCollections = {
         { q: "They'd find the question odd.", a: "Try it once. The usual reaction is \"oh — vent, please\".", bundle: 'pro' },
         { q: "It puts the work back on them.", a: "It gives them the choice. That's different, and it's theirs to make.", bundle: 'pro' },
         { q: "I'll just try something and see.", a: "You can. Asking is the same thing without the misfire.", bundle: 'pro' },
+        { q: "Asking what they need breaks the flow.", a: "One question, six words. It saves twenty minutes of guessing wrong.", bundle: 'pro' },
+        { q: "They might not know what they need.", a: "Then you've found that out too, which is also worth knowing.", bundle: 'pro' },
+        { q: "It's obvious they just want to vent.", a: "Usually. Checking costs nothing and occasionally saves the whole conversation.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "You Are the One People Come To",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "The belief in this deck is not a mistake. Being the person others bring things to is a real thing to be, and most people who are it have been told so kindly and often.\n\nSo this deck does not argue with it. It reads the meter.\n\nAvailability that is never declined stops being a gift and becomes a fixture. Nobody asks whether tonight is a good night, because the answer has always been yes — so what they get is the tired version, and neither of you can say so.\n\nMindset: being available is yours to give. Pretending it costs nothing is what turns it into something you eventually withdraw.",
+      inputs: [
+        { q: "I'm the one people come to. I'd never turn somebody away.", a: "The people who never turn anyone away are the ones who eventually stop answering.", bundle: 'pro' },
+        { q: "I'd rather be tired than unavailable.", a: "Tired attention is what they get, and they can tell. That's the bill.", bundle: 'pro' },
+        { q: "It would be selfish to say I haven't got it in me tonight.", a: "Half-listening is less honest than saying so. Most people would take the rescheduling.", bundle: 'pro' },
+        { q: "I never tell anyone I'm at capacity.", a: "So nobody knows when they've got the good version of you and when they haven't.", bundle: 'pro' },
+        { q: "Being needed isn't a burden.", a: "It isn't. Pretending it weighs nothing is what turns it into one.", bundle: 'pro' },
+        { q: "If I don't help with this, who will?", a: "Somebody better placed, if you say you're out of your depth. You're holding that door shut.", bundle: 'pro' },
+        { q: "I've always been the steady one.", a: "And nobody has asked how you are in a while, because you made it unnecessary.", bundle: 'pro' },
+        { q: "I'd feel guilty putting it off until tomorrow.", a: "Tomorrow's version of you is more use to them. Guilt isn't the measure of help.", bundle: 'pro' },
       ]
     },
   ],
@@ -2091,6 +2119,9 @@ const mindsetCollections = {
         { q: "I want to come out of this ahead.", a: "Ahead of what? You still have to work with them on Monday.", bundle: 'pro' },
         { q: "Conceding makes me look weak.", a: "Trading something you don't need for something you do is the whole skill.", bundle: 'pro' },
         { q: "They'll take advantage if I'm reasonable.", a: "Some will. Most reciprocate, and you'll know within one exchange.", bundle: 'pro' },
+        { q: "They've made it a contest, so I have to compete.", a: "One of you can stop. It's cheaper than both defending for an hour.", bundle: 'pro' },
+        { q: "Backing off now would look weak.", a: "It looks like you're after an answer, which reads as confidence everywhere else.", bundle: 'pro' },
+        { q: "I've argued this for ten minutes, I can't drop it now.", a: "The ten minutes is the reason to drop it, not the reason to continue.", bundle: 'pro' },
       ]
     },
     {
@@ -2104,6 +2135,9 @@ const mindsetCollections = {
         { q: "It's obvious what they want, they've said it four times.", a: "They've said their position four times. You still don't know what it's for.", bundle: 'pro' },
         { q: "There's no room, we're too far apart.", a: "Too far apart on the positions. Check the needs before you conclude that.", bundle: 'pro' },
         { q: "Finding all that out takes too long.", a: "One question. It's faster than another twenty minutes of the same argument.", bundle: 'pro' },
+        { q: "They want the opposite of what I want.", a: "They want the opposite position. Find out what it's protecting.", bundle: 'pro' },
+        { q: "There's no version where we both get it.", a: "There might be. Neither need has been described out loud yet.", bundle: 'pro' },
+        { q: "Asking what matters most sounds like a tactic.", a: "It is one, if you use the answer against them. Don't, and it isn't.", bundle: 'pro' },
       ]
     },
     {
@@ -2117,6 +2151,9 @@ const mindsetCollections = {
         { q: "I don't want to seem inflexible.", a: "Say what you want and that you're flexible. Both in the same breath.", bundle: 'pro' },
         { q: "If I ask for what I want I'll seem selfish.", a: "A negotiation where only one side has preferences isn't a negotiation.", bundle: 'pro' },
         { q: "I'll go along and mention it if it matters.", a: "It'll be settled by then, and you'll be annoyed about something nobody knew.", bundle: 'pro' },
+        { q: "I'll wait and see what's on the table.", a: "Then the table is theirs. Put one sentence on it first.", bundle: 'pro' },
+        { q: "Saying it plainly feels like an opening bid.", a: "It's a starting point, which is what everybody else brought.", bundle: 'pro' },
+        { q: "I don't want to anchor it too high.", a: "Anchoring low by saying nothing is also anchoring.", bundle: 'pro' },
       ]
     },
     {
@@ -2130,6 +2167,57 @@ const mindsetCollections = {
         { q: "I don't want to seem difficult at the last minute.", a: "The last minute is exactly when it's cheap to fix.", bundle: 'pro' },
         { q: "It's good enough, and I'm tired.", a: "Fair. Then say that, and agree to look at it again next week.", bundle: 'pro' },
         { q: "Pointing out my remaining problem seems petty.", a: "It'll be less petty now than in March, when it's stopped working.", bundle: 'pro' },
+        { q: "They agreed, so we're finished.", a: "They agreed quickly. Ask once whether it actually works.", bundle: 'pro' },
+        { q: "Reopening it will look like I'm not satisfied.", a: "You're not. Better now than in six weeks with the plan half-built.", bundle: 'pro' },
+        { q: "It's ninety per cent right, which is good enough.", a: "Name the ten per cent now. It's the part that breaks first.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being the Reasonable One",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "Reasonableness is a virtue and this deck does not dispute it. The people who hold this belief are genuinely easy to deal with, and they have been told so for years.\n\nWhat the deck does is show where the money went.\n\nFlexibility that is never withheld gets priced in. People stop asking what you would prefer, because the answer has stopped mattering to the outcome — and the halfway point you keep meeting at has been drifting for a long time.\n\nThis is the belief behind the pack's first challenge, conceding too fast. It does not feel like conceding from the inside. It feels like being nice.\n\nMindset: going first is generous. Going every time is a habit somebody else is budgeting for.",
+      inputs: [
+        { q: "I'm easy to deal with. People like negotiating with me.", a: "They do. Some of them now plan around the fact that you'll move.", bundle: 'pro' },
+        { q: "I always meet people halfway.", a: "Every time. Which means the halfway point has been drifting for years.", bundle: 'pro' },
+        { q: "I'd rather keep the relationship than win the point.", a: "Nobody's asking you to win. They're asking you to say what you want.", bundle: 'pro' },
+        { q: "Being difficult isn't worth it over small things.", a: "Twenty small things isn't a small thing. It's your week.", bundle: 'pro' },
+        { q: "I don't need much, so it's easy to give ground.", a: "Then say so as a choice. Given quietly, it reads as having no preference.", bundle: 'pro' },
+        { q: "Somebody has to be the flexible one.", a: "Somebody has to go first. That isn't the same as going every time.", bundle: 'pro' },
+        { q: "It's not in my nature to push.", a: "You're not pushing, you're answering. They asked what you wanted.", bundle: 'pro' },
+        { q: "I get on well with everybody I work with.", a: "You do. Ask how many of them know what you'd have preferred.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Splitting the Difference",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Halving it feels like fairness, and it is the fastest way to end a disagreement. It is also the reason so many agreements quietly stop working a month later.\n\nThe midpoint is arrived at without anybody finding out what either side actually needed, so it removes the part each of them cared about and leaves the parts neither did. Both people agree to it and neither defends it afterwards.\n\nMindset: the middle is where you go when you have not asked. Two questions first, and the answer is usually better than the middle for both of you.",
+      inputs: [
+        { q: "Half each is the fair answer.", a: "It's the quick answer. Fair would be finding out what each half is worth to you.", bundle: 'pro' },
+        { q: "Meeting in the middle is what reasonable people do.", a: "Reasonable people find out what matters first. The middle is where you go when you haven't.", bundle: 'pro' },
+        { q: "If we give up the same amount it's even.", a: "Even isn't the goal. Both of you being able to live with it is.", bundle: 'pro' },
+        { q: "The midpoint at least ends the argument.", a: "It ends the conversation. The argument returns when neither plan works.", bundle: 'pro' },
+        { q: "Anything cleverer takes too long.", a: "Two questions take four minutes. Redoing this in March takes a week.", bundle: 'pro' },
+        { q: "Splitting it is the only thing we'll both accept.", a: "You haven't asked yet. Ask which part they'd trade.", bundle: 'pro' },
+        { q: "A compromise means neither of us gets what we wanted.", a: "A bad one does. A good one is built from the parts you each care about.", bundle: 'pro' },
+        { q: "We're too far apart for anything clever.", a: "Far apart on the position. You haven't checked the needs underneath.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Naming a Limit",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "A limit said out loud feels like an act of aggression, so people keep theirs back and hope the conversation does not reach it. It always reaches it, and by then the limit arrives as a refusal rather than as information.\n\nThe other half of the fear is that naming one ends the negotiation. It does the opposite: a limit tells the other person the shape of the space they are working in, which is easier than guessing at its edges.\n\nMindset: an early limit is information. A late one is a problem.",
+      inputs: [
+        { q: "Saying I can't do that will sound aggressive.", a: "A limit stated early is information. Stated after you've broken it, it's a problem.", bundle: 'pro' },
+        { q: "If I name a limit they'll stop negotiating.", a: "They'll negotiate around it, which is easier than guessing where it is.", bundle: 'pro' },
+        { q: "Flexibility is what makes this work.", a: "Flexibility about everything is the same as having no position.", bundle: 'pro' },
+        { q: "I'll keep it in reserve in case I need it.", a: "Then they'll build a plan on the assumption it isn't there.", bundle: 'pro' },
+        { q: "It feels like an ultimatum.", a: "An ultimatum has a threat in it. \"I can't do Fridays\" just has a Friday in it.", bundle: 'pro' },
+        { q: "They'll think I'm being difficult.", a: "They'll think you're being clear. Difficult is finding out at the end.", bundle: 'pro' },
+        { q: "I should be able to make this work somehow.", a: "Some things you can. You've already told yourself three times that this isn't one.", bundle: 'pro' },
+        { q: "If I say it's not negotiable the conversation ends.", a: "Say what is, in the same breath. Then it's a shape, not a wall.", bundle: 'pro' },
       ]
     },
   ],
@@ -4032,6 +4120,9 @@ const mindsetCollections = {
         { q: "You cannot see any other reading.", a: "\"Then start with the smallest one: what would somebody who liked me say about this?\"", bundle: 'pro' },
         { q: "The meaning feels like part of the event.", a: "\"What happened is one sentence. Everything else I've added.\"", bundle: 'pro' },
         { q: "You are certain about what somebody's silence meant.", a: "\"I have their silence. I don't have their week.\"", bundle: 'pro' },
+        { q: "The obvious reading is obvious for a reason.", a: "\"It arrived first. That's a fact about speed, not about truth.\"", bundle: 'pro' },
+        { q: "You have already decided what it meant.", a: "\"Then hold the same facts and a different ending for one minute.\"", bundle: 'pro' },
+        { q: "Reframing is just telling yourself a story.", a: "\"So is the first reading. The question is which one the facts support.\"", bundle: 'pro' },
       ]
     },
     {
@@ -4045,6 +4136,9 @@ const mindsetCollections = {
         { q: "You would not say this in a month's time.", a: "\"Then it isn't true now either. It's just something to say.\"", bundle: 'pro' },
         { q: "The kinder version requires ignoring one fact.", a: "\"It has to hold every fact the first one held. Otherwise it's a nicer story.\"", bundle: 'pro' },
         { q: "You want to make somebody feel better quickly.", a: "\"Quickly is what makes it hollow. Accurate takes another minute and lasts.\"", bundle: 'pro' },
+        { q: "You are sure there's a silver lining somewhere.", a: "\"Not always. A reframe that needs one invented isn't one.\"", bundle: 'pro' },
+        { q: "You left out the bit that doesn't fit.", a: "\"Then it's spin. Put it back and see whether the reading survives.\"", bundle: 'pro' },
+        { q: "It sounds better without mentioning the cost.", a: "\"Anything sounds better with the cost removed. That's the tell.\"", bundle: 'pro' },
       ]
     },
     {
@@ -4058,6 +4152,9 @@ const mindsetCollections = {
         { q: "The feeling seems out of proportion to you.", a: "\"Anger at something unfair is not a distortion. It's the correct reading.\"", bundle: 'pro' },
         { q: "You have a genuinely good reframe and they are in bits.", a: "\"Good and premature. Offer it in a week and it'll land.\"", bundle: 'pro' },
         { q: "You feel useless just listening.", a: "\"Listening is the useful thing. The clever angle is the optional extra.\"", bundle: 'pro' },
+        { q: "Sitting with it does not feel like doing anything.", a: "\"It's the thing they asked for. Doing something is for me.\"", bundle: 'pro' },
+        { q: "Somebody should say something hopeful.", a: "\"Later. Today the useful sentence is that it's just bad.\"", bundle: 'pro' },
+        { q: "Without an angle you have nothing to give.", a: "\"I've got agreement. That's rarer than an angle.\"", bundle: 'pro' },
       ]
     },
     {
@@ -4071,6 +4168,57 @@ const mindsetCollections = {
         { q: "You are about to begin with \"you should\".", a: "\"Swap it for 'one way to look at it'. Same content, completely different conversation.\"", bundle: 'pro' },
         { q: "You think they are being stubborn about a good reading.", a: "\"Or it doesn't fit their facts, which they know better than I do.\"", bundle: 'pro' },
         { q: "You want them to agree with your version.", a: "\"Wanting agreement means I'm arguing, not offering.\"", bundle: 'pro' },
+        { q: "They didn't take it, so you explained it better.", a: "\"Explaining it better is pushing it harder. They understood.\"", bundle: 'pro' },
+        { q: "You know this reading would help them.", a: "\"It might. It's still theirs to accept or leave.\"", bundle: 'pro' },
+        { q: "Asking first makes it sound tentative.", a: "\"It makes it an offer. An offer is the only version anybody takes.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Labels Other People Put on You",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "Somebody has described you in a word, and part of it is accurate. That is what makes these the hardest beliefs in the pack to shift: a flat denial would be dishonest, and you know it, so the whole label stays.\n\nWhat this deck separates is the observation from the verdict. Intense, particular, quiet, slow — these are usually true. The words too, overly and difficult are additions, and they came from somebody standing somewhere specific.\n\nExample of the shift — instead of \"she said I'm too intense and she's right\", you keep the intensity and give back the \"too\".\n\nMindset: keep what they saw. Hand back what they concluded.",
+      inputs: [
+        { q: "She said I'm too intense, and she's right.", a: "\"Intense, yes. 'Too' is her word, and I've been carrying it as though it were mine.\"", bundle: 'pro' },
+        { q: "I'm the difficult one in this team.", a: "\"I'm the one who asks. That's true, and 'difficult' is what somebody attached to it.\"", bundle: 'pro' },
+        { q: "He's right that I overthink everything.", a: "\"I do think things through. 'Everything' and 'over' came from him.\"", bundle: 'pro' },
+        { q: "I'm not good with people. Everybody says so.", a: "\"I'm quiet in groups. That's the true half; the rest is a conclusion somebody drew.\"", bundle: 'pro' },
+        { q: "They called me fussy, and I am fussy.", a: "\"Particular, and it's why the work is right. Fussy is the same trait, badly named.\"", bundle: 'pro' },
+        { q: "I was told I take things too personally.", a: "\"I notice things. Whether that's too much rather depends on who's counting.\"", bundle: 'pro' },
+        { q: "Somebody said I'm hard to read.", a: "\"True. 'And therefore cold' is the part they added, not me.\"", bundle: 'pro' },
+        { q: "My old boss said I don't push hard enough.", a: "\"I don't push. Where I worked before, that was a virtue — he means it isn't here.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Making It Smaller",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Shrinking something is the fastest reframe there is, and the one most likely to land on the person rather than the problem. Said from outside, at the right moment, it is a relief. Said too early it is a verdict on how much they should be feeling.\n\nThe tell is the two seconds after the laugh. People laugh to be kind long before they feel better, and the quiet that follows is the actual answer.\n\nMindset: perspective from outside always shrinks it. That is exactly why it can read as being told you are overreacting.",
+      inputs: [
+        { q: "Making it funny will take the sting out.", a: "\"For me, maybe. Check whether it takes the sting out for them first.\"", bundle: 'pro' },
+        { q: "They laughed, so it landed.", a: "\"People laugh to be kind. Watch the two seconds after.\"", bundle: 'pro' },
+        { q: "It was one spilt glass, and I said so.", a: "\"True from outside. The size isn't the part they're struggling with.\"", bundle: 'pro' },
+        { q: "Humour is how I show it isn't a disaster.", a: "\"It's also how people hear that I think they're overreacting.\"", bundle: 'pro' },
+        { q: "I'd want somebody to make me laugh about it.", a: "\"You might. Ask, or wait until they joke about it first.\"", bundle: 'pro' },
+        { q: "A bit of perspective never hurts.", a: "\"Perspective from outside always shrinks it. That's what makes it feel dismissive.\"", bundle: 'pro' },
+        { q: "It was obviously affectionate.", a: "\"Obvious to me. If they went quiet, it wasn't obvious to them.\"", bundle: 'pro' },
+        { q: "Apologising for a joke makes it worse.", a: "\"One sentence, no explanation. Explaining is what makes it worse.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "When Somebody Does It to You",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The pack works from the other side too, and this deck is about being on the receiving end of a reframe you did not ask for.\n\nThe belief that keeps people quiet is that objecting would be ungrateful. It would not: the person cheering you up has no way of knowing it is not what you need unless somebody tells them, and most of them are relieved to find out.\n\nMindset: you can take the intention and decline the angle. Both in the same sentence.",
+      inputs: [
+        { q: "They're trying to help, so I should take it.", a: "\"I can take the intention and still say it isn't what I needed.\"", bundle: 'pro' },
+        { q: "Objecting would be ungrateful.", a: "\"'Not today' isn't ingratitude. It's information they can use.\"", bundle: 'pro' },
+        { q: "Maybe they're right and I am being negative.", a: "\"Maybe. I can work that out tomorrow, without an audience.\"", bundle: 'pro' },
+        { q: "They keep finding the bright side and I can't say anything.", a: "\"I can. 'I know — I'd like to be fed up a bit longer' is a whole sentence.\"", bundle: 'pro' },
+        { q: "If I push back they'll stop asking how I am.", a: "\"Most people are relieved to be told what actually helps.\"", bundle: 'pro' },
+        { q: "Everybody reframes. It's what people do.", a: "\"It is. And the ones who ask first are the ones I go back to.\"", bundle: 'pro' },
+        { q: "I don't want to make it awkward.", a: "\"It's already slightly awkward. Saying what I want is what ends that.\"", bundle: 'pro' },
+        { q: "They said it could be worse and now I feel wrong for minding.", a: "\"It could be worse and it's still bad. Both are allowed.\"", bundle: 'pro' },
       ]
     },
   ],

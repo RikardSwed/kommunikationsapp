@@ -3930,6 +3930,17 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.87', date: 'September 2026', title: 'Volume sweep, Mindset round 2 — obstacles read out of the Challenges decks', audience: 'dev',
+    items: [
+      '<strong>Supporting Conversations</strong> (5 decks), <strong>Negotiation and Compromise</strong> (7) and <strong>Reframing</strong> (7) now meet the spec in Mindset. Seven new decks, 92 cards.',
+      'The rule is that a mindset deck is one obstacle, not one strategy — the deck count only matches the strategy count as a volume measure. So the new decks were found by reading each pack\'s <em>Challenges</em> decks, which already name its problems, rather than by looking for strategies without a deck.',
+      '<strong>Being the Reasonable One</strong> (Negotiation, the price) comes straight out of the challenge <em>You Are Conceding Too Fast</em>: <em>"I always meet people halfway"</em> &rarr; <em>"Every time. Which means the halfway point has been drifting for years."</em>',
+      '<strong>Labels Other People Put on You</strong> (Reframing, two truths) fills the gap behind <em>Reframe What They Said About You</em>, where a flat denial would be dishonest: <em>"She said I\'m too intense, and she\'s right"</em> &rarr; <em>"Intense, yes. \'Too\' is her word, and I\'ve been carrying it as though it were mine."</em>',
+      '<strong>You Are the One People Come To</strong> (Supporting Conversations, the price) is the belief behind <em>It Is Beyond You</em>. The other four new decks use the swap: <em>Splitting the Difference</em>, <em>Naming a Limit</em>, <em>Making It Smaller</em> and <em>When Somebody Does It to You</em>.',
+      'Mindset now stands at 13 of 33 new decks and 164 of 520 cards.',
+    ],
+  },
+  {
     version: 'v1.28.86', date: 'September 2026', title: 'Volume sweep, Mindset round 1 — and the two card forms that had never been used', audience: 'dev',
     items: [
       '<strong>Giving Criticism</strong> (8 decks, 64 cards) and <strong>Building a Story</strong> (6 decks, 48 cards) now meet the spec in Mindset. Six new decks, 72 cards.',
