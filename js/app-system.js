@@ -3930,6 +3930,16 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.95', date: 'September 2026', title: 'Memorize, round 2 \u2014 twelve packs done, ten to go', audience: 'dev',
+    items: [
+      'Six more packs are complete in Memorize: <strong>Deep Questions</strong>, <strong>Show Understanding \u2014 Pt. 2</strong>, <strong>Negotiation and Compromise</strong>, <strong>Emotion Labelling and Regulation</strong>, <strong>Building a Story</strong> and <strong>Receiving Feedback and Criticism</strong>. 290 cards, 24 new decks.',
+      'The observation line at the end of each mode deck is doing the work again. <em>Negotiation</em>: three of its seven mindset decks are about agreements you should not have made. <em>Show Understanding</em>: the first three moves cost nothing, the other three cost airtime, which is why each has a rule attached. <em>Deep Questions</em>: four of the five challenge repairs are going back down a rung rather than finding a better question.',
+      '<strong>Building a Story</strong> got the sharpest one: four of its five challenges are about the shape, and the fifth is about being too slow \u2014 which is where most stories are actually lost.',
+      'Another stale strategy name turned up and is fixed: <em>Receiving Feedback</em>\u2019s Core Idea still listed \u201cshow you understand their view\u201d, renamed to <em>See Their Side</em> in batch 4. A full pass over every data file found no others.',
+      'All twelve finished packs also got a proper Core Idea description \u2014 they were all under the 150-character minimum.',
+    ],
+  },
+  {
     version: 'v1.28.94', date: 'September 2026', title: 'Memorize, round 1 \u2014 the four decks that ask about the other modes', audience: 'dev',
     items: [
       'Six packs are now complete in Memorize: <strong>Setup Statement</strong>, <strong>Role Based Humour</strong>, <strong>Giving Criticism</strong>, <strong>Stories in Conversation</strong>, <strong>Listening Through Questions</strong> and <strong>Reframing</strong>. 341 cards, and 25 new decks.',
