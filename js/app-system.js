@@ -3930,6 +3930,17 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.88', date: 'September 2026', title: 'Volume sweep, Mindset round 3 — four packs finished', audience: 'dev',
+    items: [
+      '<strong>Stories in Conversation</strong> (7 decks), <strong>Story Banter</strong> (6), <strong>Validation</strong> (5) and <strong>Persuasion and Influence — Pt. 2</strong> (4) now meet the spec in Mindset. Five new decks, 92 cards.',
+      'A fourth source was added to the hunt for obstacles: <strong>the <em>Mindset:</em> line that ends every strategy description</strong>. Stories in Conversation\'s <em>Answer, Don\'t Outdo</em> ends with <em>put yours beside theirs, not on top of it</em> &mdash; and no mindset deck covered the belief behind that, so <strong>Always Having One Ready</strong> was written from it, in the price form: <em>"People enjoy my stories"</em> &rarr; <em>"They do. Ask when you last heard one of theirs all the way through."</em>',
+      '<strong>Not Being Quick</strong> (Story Banter, two truths) answers the challenge <em>You Have Nothing</em>. The belief is half right and saying so is the point: <em>"You think you are not quick enough for this"</em> &rarr; <em>"True, at inventing. Following what they just said needs no speed at all."</em>',
+      'Three swap decks joined them: <em>Ending It Early</em> and <em>Stories That Are Not Yours</em> in Stories in Conversation, and <em>Adding the Wrong Thing</em> in Story Banter.',
+      'A bundle error from the volume sweep\'s first pass was fixed: the three mindset decks built alongside the new strategies had a 5 free / 3 pro split. Mindset is pro-only throughout, so all 15 cards are now pro.',
+      'Mindset stands at 18 of 33 new decks and 256 of 520 cards. Nine packs are finished; thirteen remain.',
+    ],
+  },
+  {
     version: 'v1.28.87', date: 'September 2026', title: 'Volume sweep, Mindset round 2 — obstacles read out of the Challenges decks', audience: 'dev',
     items: [
       '<strong>Supporting Conversations</strong> (5 decks), <strong>Negotiation and Compromise</strong> (7) and <strong>Reframing</strong> (7) now meet the spec in Mindset. Seven new decks, 92 cards.',
