@@ -3930,6 +3930,16 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.92', date: 'September 2026', title: 'Collections and Sequences, round 1 \u2014 and the deck that was not a choice', audience: 'dev',
+    items: [
+      'Eleven packs now meet the spec in Collections and Sequences: 43 cards and 40 new scenarios across <strong>Reframing</strong>, <strong>Explain Things \u2014 Pt. 2</strong>, <strong>Show Understanding \u2014 Pt. 2</strong>, <strong>Deep Questions</strong>, <strong>Emotion Labelling</strong>, <strong>Setup Statement</strong>, <strong>Validation</strong>, <strong>Giving Examples</strong>, <strong>Starting Conversations \u2014 Pt. 3</strong> and <strong>Pt. 4</strong>, and <strong>Receiving Feedback</strong>.',
+      'The three strategies added in the volume sweep had reached every mode except Collections. Fixing that turned up an older fault: <strong>How Much To Say</strong> in Explain Things had the same label on all six answers, so it trained no choice at all. Its two new cards carry <em>Where Your Knowledge Ends</em>, and the deck is now a real decision \u2014 how much, against how far.',
+      '<strong>Validation</strong> was restructured around the fourth strategy. <em>Any of the Three</em> becomes <strong>Any of the Four</strong> and takes two <em>Say What Was Not Okay</em> cards; <em>Emotion or Reasoning</em> becomes <strong>Without Taking a Side</strong> \u2014 the three moves that acknowledge without judging what happened, kept deliberately separate from the one that does.',
+      '<strong>Setup Statement</strong> had only two sequence decks. The third, <strong>Feeling, Ask, Match</strong>, uses the Feeling Setup and trains the step people skip: meeting a small admission at the size it was offered rather than topping it.',
+      'No Collections deck in the release scope now answers with a single strategy.',
+    ],
+  },
+  {
     version: 'v1.28.91', date: 'September 2026', title: 'Mindset complete \u2014 the last six packs, and the composure that costs something', audience: 'dev',
     items: [
       'The Mindset sweep is finished. <strong>Emotion Labelling and Regulation</strong>, <strong>Explain Things \u2014 Pt. 2</strong>, <strong>Giving Examples</strong>, <strong>Receiving Feedback and Criticism</strong> and <strong>Starting Conversations \u2014 Pt. 3</strong> and <strong>Pt. 4</strong> now meet the spec. Four new decks, 112 cards. Every release pack has one Mindset deck per strategy, eight cards each.',

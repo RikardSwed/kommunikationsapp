@@ -9540,6 +9540,8 @@ const collectionsModeData = {
         { q: "The mood in the room is low and everyone's flagging.", a: "\"I'm running on fumes today, honestly. How are you doing?\" [Feeling Setup]", guideBack: "How you are, then how they are", bundle: 'pro' },
         { q: "Someone sits next to you at a talk that hasn't started.", a: "\"I heard good things about this speaker. Seen them before?\" [Opinion Setup]", guideBack: "Your view, then theirs", bundle: 'pro' },
         { q: "You're both waiting, clearly tired, early in the morning.", a: "\"I need three coffees to be a person right now. You surviving?\" [Feeling Setup]", guideBack: "How you are, then how they are", bundle: 'pro' },
+        { q: "Everyone is standing about waiting for the room to open.", a: "\"I always find the first ten minutes of these the hardest bit.\" [Feeling Setup]", guideBack: "How you are, then how they are", bundle: 'pro' },
+        { q: "Somebody asks why you signed up for the course.", a: "\"I came mostly to steal ideas, if I'm honest.\" [Purpose Setup]", guideBack: "Your reason, then theirs", bundle: 'pro' },
       ]
     },
     {
@@ -9554,6 +9556,8 @@ const collectionsModeData = {
         { q: "You join a networking event and someone turns to you.", a: "\"I mostly came to meet people outside my own team. Why are you here?\" [Purpose Setup]", guideBack: "Your reason, then theirs", bundle: 'pro' },
         { q: "Catching up with someone after a long time.", a: "\"I've been training for a half marathon — terrible idea. What have you been up to?\" [Action Setup]", guideBack: "What you're doing, then theirs", bundle: 'pro' },
         { q: "You sit down at a dinner having come straight from something else.", a: "\"I've come straight from work, still in that mindset. What's your day been?\" [Arrival Setup]", guideBack: "Your run-up, then theirs", bundle: 'pro' },
+        { q: "You have sat down next to somebody at a conference session.", a: "\"I'm really here for the afternoon one. This is a warm-up.\" [Purpose Setup]", guideBack: "Your reason, then theirs", bundle: 'pro' },
+        { q: "Somebody asks what you have been up to lately.", a: "\"I've had a bike in pieces on the kitchen floor for about six weeks.\" [Action Setup]", guideBack: "What you're doing, then theirs", bundle: 'pro' },
       ]
     },
     {
@@ -9634,6 +9638,7 @@ const collectionsModeData = {
         { q: "Someone dealt with a difficult person very smoothly.", a: "\"You were good with him just then. That could have gone badly.\" [Compliment Something Specific]", guideBack: "One detail you noticed and liked", bundle: 'pro' },
         { q: "Someone new looks slightly lost but is pretending not to be.", a: "\"First time? You've got the exact face I had.\" [Make a Guess]", guideBack: "A guess they can confirm or fix", bundle: 'pro' },
         { q: "Someone plays something and one moment stands out.", a: "\"The bit where you slowed down — that's what made it.\" [Compliment Something Specific]", guideBack: "One detail you noticed and liked", bundle: 'pro' },
+        { q: "They have arrived with a helmet under their arm, shaking off the rain.", a: "\"Let me guess — you're the one who cycles in all weathers.\" [Make a Guess]", guideBack: "A guess they can confirm or fix", bundle: 'pro' },
       ]
     },
     {
@@ -9649,6 +9654,7 @@ const collectionsModeData = {
         { q: "You have met someone a few times and know nothing about them.", a: "\"What do you do when you're not here?\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
         { q: "Someone has come back after a period away.", a: "\"Good to see you. How are you doing, actually?\" [Ask How They Really Are]", guideBack: "A real how-are-you", bundle: 'pro' },
         { q: "They mentioned something in passing that sounded interesting.", a: "\"You said you'd only been doing it a year — what were you doing before?\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
+        { q: "A colleague who is normally chatty has been short with everyone this week.", a: "\"You don't seem yourself this week. How are you doing, really?\" [Ask How They Really Are]", guideBack: "A real how-are-you", bundle: 'pro' },
       ]
     },
     {
@@ -9664,6 +9670,7 @@ const collectionsModeData = {
         { q: "Someone said something in a meeting that was worth saying.", a: "\"That was a good point. Nobody else was going to make it.\" [Compliment Something Specific]", guideBack: "One detail you noticed and liked", bundle: 'pro' },
         { q: "You have been chatting for a minute and want to go a step in.", a: "\"How did you end up in this line of work?\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
         { q: "Someone looks like they are enduring the evening rather than enjoying it.", a: "\"You look like you're counting down. Am I close?\" [Make a Guess]", guideBack: "A guess they can confirm or fix", bundle: 'pro' },
+        { q: "Somebody you have seen at the class three times now sits down next to you.", a: "\"You've been coming a while — what got you started?\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
       ]
     },
   ],
@@ -9780,6 +9787,8 @@ const collectionsModeData = {
         { q: "They mention: \"I changed career about three years ago.\"", a: "\"You changed career — what made it time?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
         { q: "A new colleague has just joined your lunch table.", a: "\"Where were you before you came here?\" [Start with Simple Questions]", guideBack: "A question anyone could answer", bundle: 'pro' },
         { q: "They say: \"My grandmother taught me to cook.\"", a: "\"Your grandmother — what else did she pass on?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
+        { q: "You have just been introduced and know nothing about them.", a: "\"How do you know everyone here?\" [Start with Simple Questions]", guideBack: "A question anyone could answer", bundle: 'pro' },
+        { q: "They mentioned that they moved here from Gothenburg three years ago.", a: "\"Three years — what made you move?\" [Link and Go Deeper]", guideBack: "Their detail, turned into a bigger question", bundle: 'pro' },
       ]
     },
     {
@@ -9794,6 +9803,8 @@ const collectionsModeData = {
         { q: "They say: \"I volunteer at the food bank twice a month.\"", a: "\"Why is that one important to you?\" [Explore Values]", guideBack: "A question about what matters to them", bundle: 'pro' },
         { q: "They say: \"I have been through two restructures here.\"", a: "\"How did those change the way you work?\" [Explore Experiences]", guideBack: "A question about something they lived through", bundle: 'pro' },
         { q: "They say: \"I never let the kids have screens on weekdays.\"", a: "\"Do you think it really changes how they are?\" [Explore Beliefs]", guideBack: "A question about their view", bundle: 'pro' },
+        { q: "They have said they left a well-paid job for a smaller one.", a: "\"What did the smaller one give you that the money didn't?\" [Explore Values]", guideBack: "A question about what matters to them", bundle: 'pro' },
+        { q: "They say most people are better at their jobs than they get credit for.", a: "\"Do you think that's most workplaces, or the ones you've been in?\" [Explore Beliefs]", guideBack: "A question about their view", bundle: 'pro' },
       ]
     },
     {
@@ -9926,13 +9937,15 @@ const collectionsModeData = {
         { q: "They say: \"I feel a bit pathetic being this nervous.\"", a: "\"It's a big thing. It'd be strange not to be nervous.\" [Normalise the Reaction]", guideBack: "Their reaction, called ordinary", bundle: 'pro' },
         { q: "They say: \"I keep going over the conversation in my head.\"", a: "\"It sounds like it's still sitting with you.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
         { q: "They say: \"I should be over it by now.\"", a: "\"There's no timetable for that. Most people take longer than they expect.\" [Normalise the Reaction]", guideBack: "Their reaction, called ordinary", bundle: 'pro' },
+        { q: "They say: \"I can't stop thinking about how it must have looked.\"", a: "\"That's the part that stays, isn't it — the picture of it.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
+        { q: "They say: \"It's silly to still be annoyed about something from March.\"", a: "\"It isn't silly. Things that never got dealt with stay live.\" [Normalise the Reaction]", guideBack: "Their reaction, called ordinary", bundle: 'pro' },
       ]
     },
     {
-      name: "Emotion or Reasoning",
+      name: "Without Taking a Side",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The second choice: are they upset, or are they defending a decision?\n\nThis is the one people get wrong most often. Somebody explaining why they made a choice does not want their feelings validated — it lands as being handled. They want to hear that their thinking was sound.\n\nThe two options:\n1. Reflect the Feeling — the emotion is what is on the table. \"That must have been genuinely upsetting.\"\n2. Acknowledge the Perspective — a choice or a view is what is on the table. \"I can see why you approached it that way.\"\n\nListen for what the sentence is doing. \"I felt awful about it\" is a feeling. \"I only did it because they needed an answer\" is a case being made, and a case wants a verdict on the reasoning.\n\nMindset: validating a feeling when somebody is defending a decision reads as changing the subject. Answer the thing they actually put in front of you.",
+      description: "The three moves that acknowledge without judging what happened.\n\nReflecting, normalising and acknowledging the perspective have one thing in common: none of them says whether anybody was right. That is what makes them usable on somebody you disagree with.\n\nThe three, with the cue for each:\n1. Reflect the Feeling — they named an emotion. \"That must have been genuinely upsetting.\"\n2. Acknowledge the Perspective — they are defending a choice. \"I can see why you approached it that way.\"\n3. Normalise the Reaction — they are worried the feeling is too big. \"Anyone would have.\"\n\nListen for what the sentence is doing. \"I felt awful about it\" is a feeling. \"I only did it because they needed an answer\" is a case being made, and a case wants a verdict on the reasoning.\n\nMindset: none of these three commits you to a view about the facts. Say What Was Not Okay does, and that is a separate decision.",
       inputs: [
         { q: "They say: \"I said yes because they needed an answer that day.\"", a: "\"That makes sense. Waiting would have cost more.\" [Acknowledge the Perspective]", guideBack: "Why their choice made sense", bundle: 'pro' },
         { q: "They say: \"I was really looking forward to it and now it's off.\"", a: "\"That's genuinely disappointing. You'd built the week round it.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
@@ -9940,22 +9953,24 @@ const collectionsModeData = {
         { q: "They say: \"I've been dreading this all week.\"", a: "\"A week of that in your head is exhausting.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
         { q: "They say: \"Everyone keeps telling me I handled it badly.\"", a: "\"You were trying to stop it blowing up. That's a legitimate aim.\" [Acknowledge the Perspective]", guideBack: "Why their choice made sense", bundle: 'pro' },
         { q: "They say: \"I felt like nobody was on my side in there.\"", a: "\"Being the only one holding a position is lonely.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
+        { q: "They say: \"I probably shouldn't have minded as much as I did.\"", a: "\"Most people would have minded. It wasn't a small thing.\" [Normalise the Reaction]", guideBack: "Their reaction, called ordinary", bundle: 'pro' },
+        { q: "They say: \"Everyone else seems completely fine about it.\"", a: "\"You're not the only one. People just say less than you'd think.\" [Normalise the Reaction]", guideBack: "Their reaction, called ordinary", bundle: 'pro' },
       ]
     },
     {
-      name: "Any of the Three",
+      name: "Any of the Four",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The full choice between the three things you can validate.\n\nThe three moves are not variations of one another — they validate different objects. Getting the right one is mostly a matter of noticing which of the three they have put in front of you.\n\nThe three, with the cue for each:\n1. Reflect the Feeling — they named an emotion. \"That sounds frustrating, and fairly so.\"\n2. Normalise the Reaction — they are worried the emotion is too big. \"Anyone would have felt that.\"\n3. Acknowledge the Perspective — they are defending a choice or a view. \"I see why you did it that way.\"\n\nWhen more than one fits, reflecting is the safest opening and acknowledging the perspective is the one that works when you disagree.\n\nMindset: validation is about acknowledging, not agreeing. All three of these work perfectly well on somebody you think is mistaken.",
+      description: "The full choice between the four things you can do with what they have told you.\n\nThe first three acknowledge. The fourth takes a position on what happened, which is a different kind of move and the one people withhold longest.\n\nThe four, with the cue for each:\n1. Reflect the Feeling — they named an emotion. \"That sounds frustrating, and fairly so.\"\n2. Normalise the Reaction — they are worried the emotion is too big. \"Anyone would have felt that.\"\n3. Acknowledge the Perspective — they are defending a choice or a view. \"I see why you did it that way.\"\n4. Say What Was Not Okay — one part of it was plainly wrong and they are waiting for somebody to say so.\n\nWhen more than one fits, reflecting is the safest opening. The fourth is for when acknowledging on its own would read as ducking it.\n\nMindset: the first three work on somebody you think is mistaken. The fourth does not, so be sure before you reach for it.",
       inputs: [
         { q: "They say: \"I burst into tears, which was embarrassing.\"", a: "\"After a day like that? Completely understandable.\" [Normalise the Reaction]", guideBack: "Their reaction, called ordinary", bundle: 'pro' },
         { q: "They say: \"I decided not to tell anyone, and people think that was wrong.\"", a: "\"I can see why you didn't. You had no idea how it'd be taken.\" [Acknowledge the Perspective]", guideBack: "Why their choice made sense", bundle: 'pro' },
         { q: "They say: \"I don't even know why it upset me so much.\"", a: "\"It clearly landed hard. That's reason enough for it to matter.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
-        { q: "They say: \"Everyone else seemed fine about the change.\"", a: "\"I doubt that. It came out of nowhere.\" [Normalise the Reaction]", guideBack: "Their reaction, called ordinary", bundle: 'pro' },
+        { q: "They say: \"I found out about the restructure from someone in another team.\"", a: "\"Hearing it from another team was wrong. That bit isn't complicated.\" [Say What Was Not Okay]", guideBack: "The specific thing that should not have happened", bundle: 'pro' },
         { q: "They defend a decision you privately think was wrong.", a: "\"I can see how you got there. With what you knew then, it follows.\" [Acknowledge the Perspective]", guideBack: "Why their choice made sense", bundle: 'pro' },
         { q: "They say: \"It's probably silly to be this bothered.\"", a: "\"It isn't silly. Something about it hit a nerve.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
         { q: "They say: \"My family think I'm making a fuss.\"", a: "\"I'd have made a fuss too. It's a reasonable thing to mind.\" [Normalise the Reaction]", guideBack: "Their reaction, called ordinary", bundle: 'pro' },
-        { q: "They say: \"I put the family first and the job suffered.\"", a: "\"That's a fair thing to put first.\" [Acknowledge the Perspective]", guideBack: "Why their choice made sense", bundle: 'pro' },
+        { q: "They are describing it and clearly waiting to see whether you will say it.", a: "\"You're waiting for somebody to say it, so: that wasn't okay.\" [Say What Was Not Okay]", guideBack: "The specific thing that should not have happened", bundle: 'pro' },
       ]
     },
   ],
@@ -10120,6 +10135,7 @@ const collectionsModeData = {
         { q: "They suspect you are exaggerating the cost.", a: "\"I bought the cheap one twice. That's the whole argument.\" [From Your Own Experience]", guideBack: "A thing that actually happened to you", bundle: 'pro' },
         { q: "They ask for a figure you do not have.", a: "\"I don't have one. I'd rather say that than invent something.\" [Numbers and Evidence]", guideBack: "A figure, with its uncertainty attached", bundle: 'pro' },
         { q: "They ask whether you have ever been on the other side of this.", a: "\"I argued against it for a month, and I was wrong.\" [From Your Own Experience]", guideBack: "A thing that actually happened to you", bundle: 'pro' },
+        { q: "You want to say how common the problem is and you only half-remember the figure.", a: "\"It was somewhere around a third last year — I'd want to check it before anyone quotes me.\" [Numbers and Evidence]", guideBack: "A figure, with its uncertainty attached", bundle: 'pro' },
       ]
     },
     {
@@ -10135,6 +10151,7 @@ const collectionsModeData = {
         { q: "You want to show that people skip instructions.", a: "\"How many people read the manual first? It's almost nobody.\" [The Everyday Example]", guideBack: "Common experience, not yours specifically", bundle: 'pro' },
         { q: "You want to make a point about small friction.", a: "\"It's the extra click. That's all it takes for people to give up.\" [The Everyday Example]", guideBack: "Common experience, not yours specifically", bundle: 'pro' },
         { q: "You want an example you can both see right now.", a: "\"Like this meeting. Six of us, two needed.\" [The Shared Example]", guideBack: "A reference you both recognise", bundle: 'pro' },
+        { q: "You are explaining why small delays pile up.", a: "\"It's one late train at rush hour. Everything behind it is late too.\" [The Everyday Example]", guideBack: "Common experience, not yours specifically", bundle: 'pro' },
       ]
     },
     {
@@ -10150,6 +10167,7 @@ const collectionsModeData = {
         { q: "They still are not convinced it is worth the delay.", a: "\"Remember the audit? We paid for that fortnight for months afterwards.\" [The Shared Example]", guideBack: "A reference you both recognise", bundle: 'pro' },
         { q: "A friend asks why you gave up on a habit app.", a: "\"I used it for three weeks and opened it twice in the fourth.\" [From Your Own Experience]", guideBack: "A thing that actually happened to you", bundle: 'pro' },
         { q: "They ask whether that is just you.", a: "\"Everyone I know has a fitness app they used in January.\" [The Everyday Example]", guideBack: "Common experience, not yours specifically", bundle: 'pro' },
+        { q: "You are arguing for a change and have no case to point at yet.", a: "\"Say somebody opens that screen for the first time — what do they click?\" [The Imagined Case]", guideBack: "A situation to try the idea in", bundle: 'pro' },
       ]
     },
   ],
@@ -10360,6 +10378,8 @@ const collectionsModeData = {
         { q: "Your manager sits you down: \"We need to talk about your deadlines.\"", a: "\"Okay. Thanks for raising it directly.\" [Acknowledge the Feedback]", guideBack: "Thanks, or an acceptance that it was fair to say", bundle: 'pro' },
         { q: "Someone says as they walk past: \"Your reply was a bit blunt.\"", a: "\"Noted. Thanks for saying.\" [The Short Response]", guideBack: "The whole reply, in a sentence", bundle: 'pro' },
         { q: "A family member says: \"This has been bothering me for months.\"", a: "\"I'm glad you're telling me. Thank you.\" [Acknowledge the Feedback]", guideBack: "Thanks, or an acceptance that it was fair to say", bundle: 'pro' },
+        { q: "Your manager gives you a small correction in passing on the stairs.", a: "\"Noted, thanks. I'll sort it this afternoon.\" [The Short Response]", guideBack: "The whole reply, in a sentence", bundle: 'pro' },
+        { q: "The criticism is a big one and it is four minutes before your next meeting.", a: "\"I want to give that a proper answer. Can we take ten minutes tomorrow?\" [Ask for Time]", guideBack: "A pause, with a return time on it", bundle: 'pro' },
       ]
     },
     {
@@ -10390,7 +10410,7 @@ const collectionsModeData = {
         { q: "Your manager says you take on too much. You have shown you understand.", a: "\"That's landed. You might be right about the taking on part.\" [Reflect Openly]", guideBack: "Where you actually stand, uncertainty included", bundle: 'pro' },
         { q: "You have heard out and considered your colleague's point about your email.", a: "\"I'll rewrite it with the ask at the top and resend.\" [Look Ahead]", guideBack: "A change, or something you'll consider", bundle: 'pro' },
         { q: "A neighbour says: \"Your music was loud on Saturday.\"", a: "\"I'm glad you said something rather than sitting on it.\" [Acknowledge the Feedback]", guideBack: "Thanks, or an acceptance that it was fair to say", bundle: 'pro' },
-        { q: "A classmate says lightly: \"You talk quite fast when you present.\"", a: "\"I do. I'll slow it down.\" [The Short Response]", guideBack: "The whole reply, in a sentence", bundle: 'pro' },
+        { q: "Your manager raises something big at five to five on a Friday.", a: "\"I'd like to give that a proper answer. Can we take twenty minutes on Monday?\" [Ask for Time]", guideBack: "A pause, with a return time on it", bundle: 'pro' },
         { q: "You have thanked your teammate and want to answer the substance.", a: "\"Honestly, I hadn't realised it came across that way.\" [Reflect Openly]", guideBack: "Where you actually stand, uncertainty included", bundle: 'pro' },
       ]
     },
@@ -10902,6 +10922,8 @@ const collectionsModeData = {
         { q: "You feel awful and every word you try sounds wrong.", a: "\"My chest is tight and I can't settle to anything. That's all I've got.\" [Describe the Signals]", guideBack: "What happened in your body or head", bundle: 'pro' },
         { q: "You are stuck on a task and getting nowhere.", a: "\"I'm frustrated — not with you, with the whole thing.\" [Label the Emotion]", guideBack: "A feeling word, as accurate as you can", bundle: 'pro' },
         { q: "You want to explain how the joke actually landed.", a: "\"I laughed along, and then thought about it for the rest of the day.\" [Describe the Signals]", guideBack: "What happened in your body or head", bundle: 'pro' },
+        { q: "Somebody asks how you took the news and you cannot find the word.", a: "\"I read it three times and then couldn't start anything else all morning.\" [Describe the Signals]", guideBack: "What happened in your body or head", bundle: 'pro' },
+        { q: "You want to say something more accurate than \"it was annoying\".", a: "\"I think it was closer to humiliated, actually.\" [Label the Emotion]", guideBack: "A feeling word, as accurate as you can", bundle: 'pro' },
       ]
     },
     {
@@ -10916,6 +10938,8 @@ const collectionsModeData = {
         { q: "You are nervous and it is starting to affect how you come across.", a: "\"I'm nervous and excited and I can't separate them.\" [Label the Emotion]", guideBack: "A feeling word, as accurate as you can", bundle: 'pro' },
         { q: "A colleague describes being corrected in front of everyone.", a: "\"It sounds like you felt embarrassed — what was the worst part?\" [Label Their Emotion]", guideBack: "A tentative name for what they felt", bundle: 'pro' },
         { q: "You need to explain why you went quiet earlier.", a: "\"I went quiet because I was more hurt than I wanted to show.\" [Label the Emotion]", guideBack: "A feeling word, as accurate as you can", bundle: 'pro' },
+        { q: "They are describing what happened and have not named anything yet.", a: "\"That sounds like it stung more than you're letting on.\" [Label Their Emotion]", guideBack: "A tentative name for what they felt", bundle: 'pro' },
+        { q: "You can feel a sharp answer forming and the conversation is still going.", a: "\"Give me a second — I'd rather answer this properly than quickly.\" [Announce the Pause]", guideBack: "The moment you're taking, said out loud", bundle: 'pro' },
       ]
     },
     {
@@ -11597,6 +11621,8 @@ const collectionsModeData = {
         { q: "Two separate complaints seem to have one cause.", a: "\"The travel and the tiredness — same problem?\" [Link to Earlier]", guideBack: "Now and earlier, tied together", bundle: 'pro' },
         { q: "Their point could be read two ways.", a: "\"Do you mean you don't want to, or that you can't?\" [Check Your Version]", guideBack: "Your reading, offered to be corrected", bundle: 'pro' },
         { q: "They have been round the same three points.", a: "\"Is it those three, or is there a fourth you haven't said?\" [Sum It Up]", guideBack: "Their whole account, in short", bundle: 'pro' },
+        { q: "They have described two meetings and you think the second one is the real subject.", a: "\"So Monday was fine — it's Thursday's that you're still chewing on?\" [Check Your Version]", guideBack: "Your reading, offered to be corrected", bundle: 'pro' },
+        { q: "They have been going for four minutes and have just stopped.", a: "\"So: the deadline, the handover, and nobody answering the thread.\" [Sum It Up]", guideBack: "Their whole account, in short", bundle: 'pro' },
       ]
     },
     {
@@ -11611,6 +11637,8 @@ const collectionsModeData = {
         { q: "They say they felt stupid asking for help.", a: "\"I recognise that. It never feels like the small thing it is.\" [Shared Feeling]", guideBack: "The same emotion, from your side", bundle: 'pro' },
         { q: "They stayed late to help someone and are playing it down.", a: "\"You and I are the same on that one.\" [Shared Value]", guideBack: "The principle you both hold", bundle: 'pro' },
         { q: "You realise you have been talking about yourself.", a: "\"I've hijacked this. Where had you got to?\" [Share and Return]", guideBack: "Your bit, then the floor back to them", bundle: 'pro' },
+        { q: "They say they hate being the one who has to chase people.", a: "\"I find that the worst part of any job. It never feels neutral, however you word it.\" [Shared Feeling]", guideBack: "The same emotion, from your side", bundle: 'pro' },
+        { q: "They have said something personal and the pause has gone on a beat too long.", a: "\"I had something not unlike that two years ago — but go on, what happened next?\" [Share and Return]", guideBack: "Your bit, then the floor back to them", bundle: 'pro' },
       ]
     },
     {
@@ -11626,6 +11654,7 @@ const collectionsModeData = {
         { q: "They describe refusing to cut corners.", a: "\"I'd want it done properly too, even when nobody's checking.\" [Shared Value]", guideBack: "The principle you both hold", bundle: 'pro' },
         { q: "You have offered your own case and they have gone quiet.", a: "\"That wasn't me changing the subject. What were you going to say?\" [Share and Return]", guideBack: "Your bit, then the floor back to them", bundle: 'pro' },
         { q: "You have got their meaning wrong once already.", a: "\"So I had that backwards. Is it that she asked, or that she didn't?\" [Check Your Version]", guideBack: "Your reading, offered to be corrected", bundle: 'pro' },
+        { q: "They mentioned their commute last week and are now talking about being exhausted.", a: "\"You said the travel had got heavy — is this the same thing?\" [Link to Earlier]", guideBack: "Now and earlier, tied together", bundle: 'pro' },
       ]
     },
   ],
@@ -11853,6 +11882,8 @@ const collectionsModeData = {
         { q: "Someone asks whether a running watch is worth it.", a: "\"Training for something, definitely. Just running, your phone does it.\" [Who It Is For]", guideBack: "Who it suits, and who can skip it", bundle: 'pro' },
         { q: "Someone asks when they'd use a folding bike.", a: "\"When part of the journey is a train.\" [When It Comes Up]", guideBack: "The moment it's for", bundle: 'pro' },
         { q: "A friend asks where a mortar and pestle belongs.", a: "\"Kitchen, but by the spices rather than the pans.\" [Where It Belongs]", guideBack: "The setting it fits into", bundle: 'pro' },
+        { q: "Somebody asks what a mortgage broker actually does.", a: "\"They sit between you and the banks — you'd see one after you've found a flat and before you apply.\" [Where It Belongs]", guideBack: "The setting it fits into", bundle: 'pro' },
+        { q: "A new colleague asks what the Tuesday review is.", a: "\"It's for people who own a project. If you're not running one yet, you can skip it.\" [Who It Is For]", guideBack: "Who it suits, and who can skip it", bundle: 'pro' },
       ]
     },
     {
@@ -11868,6 +11899,7 @@ const collectionsModeData = {
         { q: "A friend asks whether the course is aimed at them.", a: "\"It's for beginners. You'd spend two days on things you can already do.\" [Who It Is For]", guideBack: "Who it suits, and who can skip it", bundle: 'pro' },
         { q: "Someone asks where the new step sits in the process.", a: "\"Straight after the draft, before anyone else sees it.\" [Where It Belongs]", guideBack: "The setting it fits into", bundle: 'pro' },
         { q: "Someone asks what the form actually is, right before a meeting.", a: "\"It's the thing that gets you a room. That's all you need for now.\" [The W They Need]", guideBack: "The answer they're really after, or a check", bundle: 'pro' },
+        { q: "You have explained what the tool does twice and they still look blank.", a: "\"Let me try a different angle — you'd open it on the Monday when the numbers don't add up.\" [When It Comes Up]", guideBack: "The moment it's for", bundle: 'pro' },
       ]
     },
     {
@@ -11882,6 +11914,8 @@ const collectionsModeData = {
         { q: "They have said \"right\" twice while you were talking.", a: "\"I'll stop there. Shout if you want the rest.\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
         { q: "A child asks how a fridge works.", a: "\"It moves the heat from inside to outside.\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
         { q: "Someone leans in and asks a specific question.", a: "\"That's the interesting bit, actually — so what happens is…\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
+        { q: "They ask a follow-up that goes past what you actually know.", a: "\"I can tell you how it works up to the billing part. After that I'd be guessing.\" [Where Your Knowledge Ends]", guideBack: "The part you know, and the line after it", bundle: 'pro' },
+        { q: "You have given the short version and they ask for a specific number.", a: "\"The short answer is yes. The exact figure I'd have to look up.\" [Where Your Knowledge Ends]", guideBack: "The part you know, and the line after it", bundle: 'pro' },
       ]
     },
   ],
@@ -11943,6 +11977,8 @@ const collectionsModeData = {
         { q: "\"I've completely ruined the evening.\"", a: "\"You knocked over one glass. There is no permanent record.\" [The Humorous Reframe]", guideBack: "The thing, sized honestly or comically", bundle: 'pro' },
         { q: "\"He's too slow for this team.\"", a: "\"Slow in a sprint, careful in an audit. Which are we doing?\" [The Context Reframe]", guideBack: "The same trait, in a room where it fits", bundle: 'pro' },
         { q: "\"The project got cancelled.\"", a: "\"It frees up the whole autumn, which you didn't have before.\" [The Positive Reframe]", guideBack: "A real upside that was overlooked", bundle: 'pro' },
+        { q: "A friend says their flat is too small to have anyone over.", a: "\"It's a twenty-minute tidy and everybody ends up in one room. That's a party, not a problem.\" [The Meaning Reframe]", guideBack: "The same facts, a different conclusion", bundle: 'pro' },
+        { q: "Somebody is mortified that they talked too much at dinner.", a: "\"You carried the whole middle hour. The rest of us were coasting behind you.\" [The Humorous Reframe]", guideBack: "The thing, sized honestly or comically", bundle: 'pro' },
       ]
     },
     {
@@ -11957,6 +11993,8 @@ const collectionsModeData = {
         { q: "\"I got one wrong, so I'm bad at this.\"", a: "\"One wrong. 'Bad at this' is a much bigger claim than the evidence supports.\" [The Meaning Reframe]", guideBack: "The same facts, a different conclusion", bundle: 'pro' },
         { q: "\"You're too quiet in meetings.\"", a: "\"I say things once I've thought about them. That's on purpose.\" [Reframe What They Said About You]", guideBack: "Their label, given your reading", bundle: 'pro' },
         { q: "\"Nobody commented, so it must have been bad.\"", a: "\"Or it was fine, and people say almost nothing about fine.\" [The Meaning Reframe]", guideBack: "The same facts, a different conclusion", bundle: 'pro' },
+        { q: "A colleague says you are obsessed with that spreadsheet.", a: "\"Obsessed is strong. I'd say devoted. It has a name now.\" [The Humorous Reframe]", guideBack: "The thing, sized honestly or comically", bundle: 'pro' },
+        { q: "Your brother says you can never just relax on holiday.", a: "\"Relaxing is the one thing I'm genuinely bad at. Give me a list and I'm the happiest man alive.\" [The Humorous Reframe]", guideBack: "The thing, sized honestly or comically", bundle: 'pro' },
       ]
     },
     {
@@ -11971,6 +12009,8 @@ const collectionsModeData = {
         { q: "They are angry about something that was actually unfair.", a: "\"You're allowed to be furious. It was unfair.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
         { q: "They have rejected your reframe.", a: "\"Fair enough. It was just how it looked from here.\" [Offer It, Don't Impose It]", guideBack: "A reframe offered, and left with them", bundle: 'pro' },
         { q: "They want company rather than perspective.", a: "\"I'll just be annoyed about it with you, then.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "A friend has just heard the news and has not finished the sentence yet.", a: "\"That's rotten. I'm not going to go looking for an angle on it.\" [Know When Not To]", guideBack: "No reframe — the situation, taken straight", bundle: 'pro' },
+        { q: "They have been low all week and have just started making jokes about it themselves.", a: "\"You got through a genuinely bad week without dropping anything. That isn't nothing.\" [The Positive Reframe]", guideBack: "A real upside that was overlooked", bundle: 'pro' },
       ]
     },
   ],
@@ -12744,6 +12784,7 @@ const collectionsModeData = {
         { q: "Something has just gone visibly wrong with the arrangements.", a: "\"Well, this is going beautifully.\" [Joke About the Situation]", guideBack: "A dry line about what you're both in", bundle: 'pro' },
         { q: "You want to give them something easy to have an opinion about.", a: "\"Apparently it's meant to be twenty degrees on Thursday. In November.\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
         { q: "You have picked the slowest queue for the second time.", a: "\"It's a gift. I find the slow one every time.\" [Joke About the Situation]", guideBack: "A dry line about what you're both in", bundle: 'pro' },
+        { q: "You are both looking at a departures board that has not changed in ten minutes.", a: "\"They've gone home and left it on, I think.\" [Joke About the Situation]", guideBack: "A dry line about what you're both in", bundle: 'pro' },
       ]
     },
     {
@@ -12759,6 +12800,7 @@ const collectionsModeData = {
         { q: "You are genuinely looking forward to what is about to happen.", a: "\"I've been waiting for this one for months.\" [Say How You Feel]", guideBack: "A feeling, said in one line", bundle: 'pro' },
         { q: "Something specific about them made you come over.", a: "\"You're the only other person who laughed. I had to come and find you.\" [Say Why You Came Over]", guideBack: "The reason you walked up", bundle: 'pro' },
         { q: "You want to admit what half the room is feeling.", a: "\"Is anyone else terrified, or is it just me?\" [Say How You Feel]", guideBack: "A feeling, said in one line", bundle: 'pro' },
+        { q: "You have decided to walk over to the one person standing on their own.", a: "\"I came over because standing by the door on my own was getting grim.\" [Say Why You Came Over]", guideBack: "The reason you walked up", bundle: 'pro' },
       ]
     },
     {
@@ -12774,6 +12816,7 @@ const collectionsModeData = {
         { q: "You want to say the thing everyone is thinking after a talk.", a: "\"Nobody was going to ask a question, were they.\" [Joke About the Situation]", guideBack: "A dry line about what you're both in", bundle: 'pro' },
         { q: "You are new at a club and everyone else knows each other.", a: "\"First time here. I decided standing by the door was worse.\" [Say Why You Came Over]", guideBack: "The reason you walked up", bundle: 'pro' },
         { q: "You are genuinely glad to be here and want to say so.", a: "\"I've been looking forward to this all week, weirdly.\" [Say How You Feel]", guideBack: "A feeling, said in one line", bundle: 'pro' },
+        { q: "The conversation has stalled and you want to put something new on the table.", a: "\"Did you see they're closing the bridge for the whole summer?\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
       ]
     },
   ],
