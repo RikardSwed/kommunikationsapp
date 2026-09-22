@@ -3930,6 +3930,16 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.86', date: 'September 2026', title: 'Volume sweep, Mindset round 1 — and the two card forms that had never been used', audience: 'dev',
+    items: [
+      '<strong>Giving Criticism</strong> (8 decks, 64 cards) and <strong>Building a Story</strong> (6 decks, 48 cards) now meet the spec in Mindset. Six new decks, 72 cards.',
+      '<strong>Archetype 9b, written in September, had never been applied anywhere.</strong> It gives Mindset three card forms, not one: the swap (a limiting thought, then what is true instead), the price (a belief that feels like a virtue, then what it quietly costs), and two truths (a half-true belief, then which part to keep). A check of all 376 deck guide pairs found every single deck on the swap.',
+      '<strong>Being the Easy-Going One</strong> in Giving Criticism is the first deck built on <em>the price</em>. Its fronts are not mistakes — <em>"I pick my battles"</em>, <em>"I\'m being generous by letting it go"</em> — so the backs do not correct them, they add up the bill: <em>"You\'ve picked none this year. That isn\'t picking."</em> The deck declares the form through its own guide pair, <em>A belief that feels like a strength / What it quietly costs</em>.',
+      '<strong>Some Days Are Not Stories</strong> in Building a Story is the first deck built on <em>two truths</em>. <em>"Most of what happens to me isn\'t worth telling"</em> is half right, so a flat contradiction would be dishonest: <em>"True. And \'so I\'ve got nothing\' is the part I added."</em> Guide pair: <em>Something true, taken too far / The part to keep, and the part to drop</em>.',
+      'The other four new decks use the swap, as will most of the pass. One deck holds one form; a pack may mix — which is now true of both of these packs.',
+    ],
+  },
+  {
     version: 'v1.28.85', date: 'September 2026', title: 'Volume sweep — the Challenges pass is finished', audience: 'dev',
     items: [
       'Rounds 3 and 4 in one version: <strong>Deep Questions</strong>, <strong>Listening Through Questions</strong>, <strong>Starting Conversations Pt. 3 and Pt. 4</strong>, <strong>Persuasion and Influence — Pt. 2</strong>, <strong>Stories in Conversation</strong>, <strong>Building a Story</strong>, <strong>Story Banter</strong>, <strong>Reframing</strong> and <strong>Negotiation and Compromise</strong>. 154 cards.',

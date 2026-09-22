@@ -1577,6 +1577,9 @@ const mindsetCollections = {
         { q: "Someone else will say something.", a: "They're thinking the same about you. That's how nobody ever does.", bundle: 'pro' },
         { q: "They'll work it out themselves.", a: "Almost nobody does. That's what feedback is for.", bundle: 'pro' },
         { q: "I'd rather just work around it.", a: "You can. You'll be doing it in a year, and so will everyone else.", bundle: 'pro' },
+        { q: "They'll hear it from someone eventually.", a: "From somebody with less goodwill than you, in a worse room.", bundle: 'pro' },
+        { q: "I don't want to be the bad guy.", a: "The bad guy is the one who let it run. That role is still open.", bundle: 'pro' },
+        { q: "They're doing their best.", a: "Probably. Their best is aimed at the wrong thing and nobody's said so.", bundle: 'pro' },
       ]
     },
     {
@@ -1590,6 +1593,9 @@ const mindsetCollections = {
         { q: "They need to hear what I really think of the pattern.", a: "They need the pattern, with instances. That's different from a verdict.", bundle: 'pro' },
         { q: "It's obviously an attitude problem.", a: "You can't fix an attitude in a ten-minute conversation. You can fix a behaviour.", bundle: 'pro' },
         { q: "I want them to know how frustrating this is.", a: "Say the impact. That's the honest version of the same thing.", bundle: 'pro' },
+        { q: "This is about who they are, not one mistake.", a: "You can only ever say the mistakes. The pattern is made of them.", bundle: 'pro' },
+        { q: "I want them to see the whole picture of themselves.", a: "Nobody takes that in. Give them one thing they can move.", bundle: 'pro' },
+        { q: "Naming instances feels like a list of charges.", a: "One instance isn't a list. Bring one.", bundle: 'pro' },
       ]
     },
     {
@@ -1603,6 +1609,9 @@ const mindsetCollections = {
         { q: "I've got four examples, I should use them all.", a: "Use one. Four is a case, and people defend against cases.", bundle: 'pro' },
         { q: "This deserves a proper conversation.", a: "Does it still matter in a month? If not, it's a sentence.", bundle: 'pro' },
         { q: "I want to make sure it doesn't happen again.", a: "One clear sentence does that. Volume doesn't.", bundle: 'pro' },
+        { q: "I'll book a meeting so it's taken properly.", a: "A booked meeting says serious. Check that's the message you want.", bundle: 'pro' },
+        { q: "If I don't explain the background it'll sound harsh.", a: "Short and warm isn't harsh. Long and careful is what frightens people.", bundle: 'pro' },
+        { q: "I've rehearsed an opening and I should use it.", a: "The opening is usually the part they don't need. Say the thing.", bundle: 'pro' },
       ]
     },
     {
@@ -1616,6 +1625,73 @@ const mindsetCollections = {
         { q: "If I ask, I'll get excuses.", a: "You might get the actual obstacle, which is the thing you want.", bundle: 'pro' },
         { q: "Asking makes me sound unsure.", a: "It makes you sound like you want it fixed rather than acknowledged.", bundle: 'pro' },
         { q: "I've already worked out the solution.", a: "Offer it second. Ask what would help first — they might have a better one.", bundle: 'pro' },
+        { q: "I've seen this enough times to know the cause.", a: "You've seen the outside enough times. The cause is still theirs to tell.", bundle: 'pro' },
+        { q: "Asking why sounds like I'm giving them an out.", a: "It sounds like you want it fixed. An out is what you give by not asking.", bundle: 'pro' },
+        { q: "They'll just say they were busy.", a: "Then ask what specifically. Busy is a summary, not a reason.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being the Easy-Going One",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "The beliefs in this deck are not mistakes, which is why correcting them does not work. Being relaxed about things is a real virtue, and most people who hold it have been told so more than once.\n\nSo this deck does not argue. It adds up the bill.\n\nEvery thing you decide is not worth mentioning still happens. Somebody absorbs it — a colleague reorders their week, a friend covers for you, the quiet person in the group says nothing again. They did not agree to carry it, and they usually do not know they are.\n\nMindset: you are allowed to be the easy-going one. You are not allowed to be easy-going with somebody else's time.",
+      inputs: [
+        { q: "I'm the easy-going one. I don't make things into a thing.", a: "Everything you don't make into a thing lands on somebody who didn't choose it.", bundle: 'pro' },
+        { q: "I'd rather absorb it than make it awkward.", a: "You can absorb it. So will the next person in your seat, and the one after.", bundle: 'pro' },
+        { q: "I don't sweat the small stuff.", a: "Nor does anybody else. That's why the small stuff is still here.", bundle: 'pro' },
+        { q: "People find me easy to work with.", a: "They do. Some of them are also quietly working around the same thing you are.", bundle: 'pro' },
+        { q: "I pick my battles.", a: "You've picked none this year. That isn't picking.", bundle: 'pro' },
+        { q: "It's not worth the conflict.", a: "The conflict you avoided today is the conversation somebody has in six months, worse.", bundle: 'pro' },
+        { q: "I'd hate to be the person who complains.", a: "One sentence in the week it happens isn't complaining. Six months of it is.", bundle: 'pro' },
+        { q: "I'm being generous by letting it go.", a: "Generous with your own time is generous. Generous with Ana's isn't yours to give.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "There Is Never a Good Moment",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Timing is the most respectable way to not have a conversation. There is always a reason today is wrong: they are busy, it is late, the week has been hard, it has only happened twice.\n\nEach reason is true. The sum of them is avoidance.\n\nThe test is whether you have named a day. A deferred conversation has a date; an avoided one has a reason.\n\nMindset: waiting for a good moment is fine. Waiting for a comfortable one means never.",
+      inputs: [
+        { q: "Now isn't a good time.", a: "Name the time that is, or it isn't a delay.", bundle: 'pro' },
+        { q: "They've had a rough week.", a: "Next week they'll have had a rough fortnight. Say the small version now.", bundle: 'pro' },
+        { q: "I'll mention it next time it happens.", a: "You said that last time. That's twice you've watched it go past.", bundle: 'pro' },
+        { q: "It's too late to bring it up now.", a: "Late and honest beats never. Say that it's late as you say it.", bundle: 'pro' },
+        { q: "I don't want to ruin the mood.", a: "One sentence doesn't ruin a mood. Storing it up does.", bundle: 'pro' },
+        { q: "It's only happened twice.", a: "Twice is the easiest moment there is. The fifth is much harder.", bundle: 'pro' },
+        { q: "I'll wait until I'm calmer about it.", a: "Fair. Put a day on it before the feeling fades and takes the conversation with it.", bundle: 'pro' },
+        { q: "It'll probably sort itself out.", a: "It hasn't yet, and that's the only information you actually have.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "When It Is Not Your Place",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Standing is a real constraint and also the most over-used excuse in the pack. You often do not have the right to tell somebody how to do their job. You almost always have the right to say what happens to yours.\n\nThe part that is yours is the impact, and it is available whatever the hierarchy. A question is available too, at every level.\n\nMindset: you are not commenting on their work. You are reporting your own.",
+      inputs: [
+        { q: "It's not my place to say anything.", a: "The part that lands on you is yours to describe. Start there.", bundle: 'pro' },
+        { q: "They're senior to me.", a: "Then don't advise them. Tell them what happens at your end.", bundle: 'pro' },
+        { q: "It's another team's business.", a: "Their business, your Friday. The Friday is the bit you raise.", bundle: 'pro' },
+        { q: "I'd be overstepping.", a: "Asking is not overstepping. Instructing would be.", bundle: 'pro' },
+        { q: "Somebody above me should handle this.", a: "They can't see it. You can, and only you can say what it costs you.", bundle: 'pro' },
+        { q: "It's a friend's decision and none of mine.", a: "The decision is theirs. One sentence of what you can see is still allowed.", bundle: 'pro' },
+        { q: "I'll look like I'm complaining upwards.", a: "Not if you bring the impact and one suggestion. That's a proposal.", bundle: 'pro' },
+        { q: "I don't have the authority to ask for a change.", a: "You have the authority to ask a question. Most changes start as one.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Raising It Twice",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Nothing has changed since the last conversation, and the second one feels harder than the first. It sounds like nagging, and it admits the first one did not work.\n\nIt did not fail. Most behaviour takes more than one conversation, and the second is where the actual obstacle appears — because by then you both know the polite version was not enough.\n\nMindset: the second conversation is not a repeat. It is the one where you find out why.",
+      inputs: [
+        { q: "I've already said this once.", a: "Once is where most things start. The second time is where they change.", bundle: 'pro' },
+        { q: "Saying it again makes me a nag.", a: "A fifth time might. The second is following up.", bundle: 'pro' },
+        { q: "They'll think I've been keeping score.", a: "You have. That's what noticing looks like — say it plainly and move on.", bundle: 'pro' },
+        { q: "The first conversation clearly didn't work.", a: "Or something's in the way that neither of you named. Ask this time.", bundle: 'pro' },
+        { q: "I softened it last time and I'll soften it again.", a: "That's the thing to change. Same content, fewer cushions.", bundle: 'pro' },
+        { q: "Maybe I wasn't clear enough.", a: "Possible. Say what good looks like this time, in one sentence.", bundle: 'pro' },
+        { q: "It's awkward to raise the same thing.", a: "Less awkward than the third time, which is where this is heading.", bundle: 'pro' },
+        { q: "If it hasn't changed by now it won't.", a: "Then say that out loud, and plan around it honestly.", bundle: 'pro' },
       ]
     },
   ],
@@ -3858,6 +3934,9 @@ const mindsetCollections = {
         { q: "You are waiting for a better moment to tell it.", a: "\"The better moment doesn't come. This one is here.\"", bundle: 'pro' },
         { q: "You compare your story to the one just told.", a: "\"It's not a competition — a smaller one next to theirs is a conversation.\"", bundle: 'pro' },
         { q: "You are looking for a dramatic story and have none.", a: "\"The locked door story is the one people will remember. Use that.\"", bundle: 'pro' },
+        { q: "You are saving the good one for a better audience.", a: "\"The better audience is hypothetical. This one is here.\"", bundle: 'pro' },
+        { q: "It only takes thirty seconds, so it cannot be worth much.", a: "\"Thirty seconds is the whole advantage. Use it.\"", bundle: 'pro' },
+        { q: "Nothing about the day stands out.", a: "\"One thing was mildly annoying. That's a story.\"", bundle: 'pro' },
       ]
     },
     {
@@ -3871,6 +3950,9 @@ const mindsetCollections = {
         { q: "You are worried it will not make sense without context.", a: "\"They'll ask if they need it. They almost never need it.\"", bundle: 'pro' },
         { q: "You have three sentences of background ready.", a: "\"One clause of it, at most. The rest can arrive later or not at all.\"", bundle: 'pro' },
         { q: "You have lost the room in the setup.", a: "\"Jump to the turn now. The setup can follow it.\"", bundle: 'pro' },
+        { q: "You want to explain why you were even there.", a: "\"They don't need why. They need what happened.\"", bundle: 'pro' },
+        { q: "The first line feels too abrupt.", a: "\"Abrupt is the point. It makes them ask.\"", bundle: 'pro' },
+        { q: "You have started with the date and the weather.", a: "\"Cut both. Start at the moment it went wrong.\"", bundle: 'pro' },
       ]
     },
     {
@@ -3884,6 +3966,9 @@ const mindsetCollections = {
         { q: "Naming the feeling seems a bit dramatic.", a: "\"'I was mortified' is not dramatic. It's information.\"", bundle: 'pro' },
         { q: "The feeling was ordinary and unimpressive.", a: "\"'Mostly I was just tired' is honest, and honest is what lands.\"", bundle: 'pro' },
         { q: "You are telling a funny story about something that was not funny.", a: "\"Both versions are true. Choose the one this room can take.\"", bundle: 'pro' },
+        { q: "You have told it accurately and it fell flat.", a: "\"Accurate is a report. Put one feeling in it.\"", bundle: 'pro' },
+        { q: "Saying you were frightened feels like too much.", a: "\"'I was properly rattled' is one clause. That isn't too much.\"", bundle: 'pro' },
+        { q: "The feeling was embarrassment and you would rather not.", a: "\"That's the one that lands. Everybody has been there.\"", bundle: 'pro' },
       ]
     },
     {
@@ -3897,6 +3982,41 @@ const mindsetCollections = {
         { q: "You cannot tell whether you have finished.", a: "\"Then they can't either. Say the last line and stop talking.\"", bundle: 'pro' },
         { q: "Nobody has stopped you so you keep going.", a: "\"Nobody stops a story out loud. Land it before they have to.\"", bundle: 'pro' },
         { q: "The lesson you are about to give is not the true one.", a: "\"The honest one is smaller and better. Say that instead.\"", bundle: 'pro' },
+        { q: "You are not sure it has an ending.", a: "\"Then say the last true thing and stop.\"", bundle: 'pro' },
+        { q: "You want to trail off rather than land it.", a: "\"Trailing off tells them it wasn't worth telling. It was.\"", bundle: 'pro' },
+        { q: "You are about to explain what you meant by it.", a: "\"Don't. The line before was the ending.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Some Days Are Not Stories",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "The beliefs in this deck are half right, which is why arguing with them does not work. Most of your days genuinely are not stories. Most things that happen have no turn in them, and telling them anyway is how people become tiring.\n\nWhat this deck separates out is the part you added. The true half is a judgement about the material. The added half is a conclusion about you.\n\nExample of the shift — instead of \"nothing worth telling happens to me, so I have nothing\", you keep the first clause and drop the second.\n\nMindset: keep the judgement, drop the conclusion.",
+      inputs: [
+        { q: "Most of what happens to me isn't worth telling.", a: "\"True. And 'so I've got nothing' is the part I added.\"", bundle: 'pro' },
+        { q: "That one had no real point to it.", a: "\"Right, no point. Which is why it takes twenty seconds, not two minutes.\"", bundle: 'pro' },
+        { q: "Other people have better material than me.", a: "\"Some of them do. That's about their week, not about my telling.\"", bundle: 'pro' },
+        { q: "I'd be boring people with it.", a: "\"You would, at four minutes. Not at thirty seconds.\"", bundle: 'pro' },
+        { q: "Nothing dramatic has happened to me this year.", a: "\"Nothing dramatic, no. Something odd happened on Tuesday, though.\"", bundle: 'pro' },
+        { q: "I can never remember a story when I need one.", a: "\"True, under pressure. Which is why the small recent one is the one to take.\"", bundle: 'pro' },
+        { q: "My stories don't have endings.", a: "\"Some genuinely don't. 'And then we drove home' is an ending.\"", bundle: 'pro' },
+        { q: "I'm not a natural storyteller.", a: "\"Probably not. The turn and the last line are learnable anyway.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Choosing Takes Too Long",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The moment is short and choosing is slow. While you sort through three candidates looking for the best one, the subject changes and the story goes with it.\n\nThe skill is not recall. It is committing to something small before it is obviously the right choice. A story you start badly and fix is worth more than the better one you never began.\n\nExample of the shift — instead of searching for the best story you have, you take the most recent small one and start.\n\nMindset: pick in fifteen seconds. Fixing it while telling it is allowed.",
+      inputs: [
+        { q: "You are choosing between three of them.", a: "\"Take the most recent. It's fresh, and fresh is enough.\"", bundle: 'pro' },
+        { q: "You want the best one you have.", a: "\"The best one is the one you start. Go.\"", bundle: 'pro' },
+        { q: "The moment has passed while you were deciding.", a: "\"Say 'going back a bit' and take it anyway.\"", bundle: 'pro' },
+        { q: "You cannot remember how yours started.", a: "\"Start in the middle. Nobody will notice.\"", bundle: 'pro' },
+        { q: "You are waiting to be sure it fits.", a: "\"It doesn't have to fit. It has to arrive.\"", bundle: 'pro' },
+        { q: "Somebody else has started talking.", a: "\"Fine. Keep it — it'll do next time.\"", bundle: 'pro' },
+        { q: "You are afraid of committing to the wrong one.", a: "\"You can abandon it in one sentence. The cost is tiny.\"", bundle: 'pro' },
+        { q: "You have no idea where the story is going.", a: "\"Start it and find out. Most people do.\"", bundle: 'pro' },
       ]
     },
   ],
