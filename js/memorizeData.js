@@ -951,7 +951,7 @@ const memorizeCollections = {
   apologizing2: [
     {
       name: "Core Idea",
-      description: "The shape of the pack: five steps in an order that decides whether the apology works.",
+      description: "The shape of the pack: five steps in an order that decides whether the apology works, with the word sorry arriving fourth rather than first — and the test for whether the full version is the right size at all.",
       cards: [
         { q: "What are the five steps in this pack?", a: "Name what they felt, show you understand why, say their feelings matter, apologise for what you did, say what you'll do differently.", bundle: 'free' },
         { q: "Where does the word sorry sit?", a: "Fourth, not first.", bundle: 'free' },
@@ -959,6 +959,8 @@ const memorizeCollections = {
         { q: "Why does sorry come fourth?", a: "An apology delivered before you have shown understanding is heard as wanting the conversation to end.", bundle: 'pro' },
         { q: "What is the commonest failure in a serious apology?", a: "Going straight to sorry.", bundle: 'pro' },
         { q: "What makes an apology sound sincere?", a: "Specifics — the detail that proves you thought about it, not feeling words.", bundle: 'pro' },
+        { q: "Which step is the only one that is not words about the past?", a: "Say What You'll Do Differently.", bundle: 'pro' },
+        { q: "Which step do people find most exposing?", a: "Say Their Feelings Matter — the one that says why you are bothering with the conversation.", bundle: 'pro' },
       ]
     },
     {
@@ -971,6 +973,8 @@ const memorizeCollections = {
         { q: "Why is this step risky if you stop there?", a: "Naming a feeling and never apologising looks like technique, which is worse than saying nothing.", bundle: 'pro' },
         { q: "What do you do when you genuinely do not know how it landed?", a: "Ask — \"I don't want to guess, how did that feel?\"", bundle: 'pro' },
         { q: "Why does this move carry more weight from you than from anyone else?", a: "Because you caused it, so the acknowledgement is the first real evidence.", bundle: 'pro' },
+        { q: "Which challenge does it answer?", a: "You Went Straight to Sorry. This is the step that got skipped.", bundle: 'pro' },
+        { q: "What is the risk of stopping here?", a: "Naming a feeling and never apologising looks like technique, which is worse than saying nothing.", bundle: 'pro' },
       ]
     },
     {
@@ -983,6 +987,8 @@ const memorizeCollections = {
         { q: "Why can this step not be faked?", a: "It requires you to have actually reconstructed their side.", bundle: 'pro' },
         { q: "What is the strongest version?", a: "Naming what they were entitled to expect — \"you had every reason to think I'd be there\".", bundle: 'pro' },
         { q: "What do you say if they call their own reaction an overreaction?", a: "Disagree, if you think so — \"it was the third time, and that changes it\".", bundle: 'pro' },
+        { q: "What is the difference from the step before?", a: "The first says the feeling registered. This says it was reasonable.", bundle: 'pro' },
+        { q: "Why can it not be faked?", a: "It requires you to have actually reconstructed their side.", bundle: 'pro' },
       ]
     },
     {
@@ -995,6 +1001,8 @@ const memorizeCollections = {
         { q: "Why is \"I don't want to be the friend who always cancels\" often better than \"you matter to me\"?", a: "It is specific and names something real rather than a sentiment.", bundle: 'pro' },
         { q: "How do you do this step in a professional relationship?", a: "Keep it about the working relationship — \"I'd rather you told me when I do this\".", bundle: 'pro' },
         { q: "Which step do people find most exposing?", a: "This one.", bundle: 'pro' },
+        { q: "Which collections is it in?", a: "Their Side First, and The Apology Itself — it belongs to the apology, not only to the run-up.", bundle: 'pro' },
+        { q: "What makes it fail?", a: "Anything abstract. It sounds like a script.", bundle: 'pro' },
       ]
     },
     {
@@ -1007,6 +1015,8 @@ const memorizeCollections = {
         { q: "How do you apologise when you still think you were right?", a: "Apologise precisely for your part — the tone, the timing, the audience — and hold the substance separately.", bundle: 'pro' },
         { q: "Why is \"I'm sorry you feel that way\" a non-apology?", a: "It relocates the problem into the other person's feelings.", bundle: 'pro' },
         { q: "What do you do if literally nothing is yours?", a: "Say so kindly rather than performing regret you do not feel.", bundle: 'pro' },
+        { q: "Which three words make it not an apology?", a: "\"If\", \"but\" and \"you\" — as in sorry if, sorry but, sorry you felt.", bundle: 'pro' },
+        { q: "What do you do if literally nothing is yours?", a: "Say so kindly, rather than performing regret you do not feel.", bundle: 'pro' },
       ]
     },
     {
@@ -1019,6 +1029,64 @@ const memorizeCollections = {
         { q: "What is wrong with \"I'll be better\"?", a: "It promises nothing and cannot be checked.", bundle: 'pro' },
         { q: "Why does giving them a way to stop it work well?", a: "It hands them some control instead of asking them to trust and wait.", bundle: 'pro' },
         { q: "What do you say when they will not accept the apology?", a: "Leave it with them, and let the change do the rest.", bundle: 'pro' },
+        { q: "Which challenge is it the answer to?", a: "They Do Not Accept It. The change is what does the rest of the work.", bundle: 'pro' },
+        { q: "Why does giving them a way to stop it work?", a: "It hands them some control instead of asking them to trust and wait.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Their Side First** — the three steps that come before the word sorry\n• **The Apology Itself** — the apology, the plan, and why you are having the conversation\n• **All Five** — the whole thing, in order\n\nThree of the five steps happen before you apologise. That is the whole design of the pack.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Their Side First, The Apology Itself, and All Five.", bundle: 'pro' },
+        { q: "Which three steps are in Their Side First?", a: "Name What They Felt, Show You Understand Why, and Say Their Feelings Matter.", bundle: 'pro' },
+        { q: "Where does the word sorry sit?", a: "Fourth, not first.", bundle: 'pro' },
+        { q: "They have gone quiet since Thursday. Which move?", a: "Name What They Felt. Say what you observed, rather than guessing at a word.", bundle: 'pro' },
+        { q: "They said it was fine and it clearly was not. Which move?", a: "Show You Understand Why. Name what they were entitled to expect.", bundle: 'pro' },
+        { q: "You are about to say \"sorry if that upset you\". Which move fixes it?", a: "Apologise for What You Did. Sorry for the action, not for their reaction.", bundle: 'pro' },
+        { q: "They ask what will be different next time. Which move?", a: "Say What You'll Do Differently — small enough to be believed, specific enough to be checked.", bundle: 'pro' },
+        { q: "Why do three of the five happen before the apology?", a: "An apology delivered before you have shown understanding is heard as wanting the conversation to end.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and what each one runs:\n\n1. **The Full Five Steps** — a continuous piece, said as one\n2. **When They Are Still Angry** — an exchange, because an apology does not always resolve on delivery\n3. **When It Was a Long Time Ago** — naming the delay before anything else\n\nThe first is a monologue. The other two are not, and that is what makes them harder.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Full Five Steps, When They Are Still Angry, and When It Was a Long Time Ago.", bundle: 'pro' },
+        { q: "What is different about The Full Five Steps?", a: "It is a monologue. You say all five as one continuous piece before they answer.", bundle: 'pro' },
+        { q: "They say sorry does not make it fine. What is the move?", a: "Agree. \"I'm not expecting it to be fine because I said something.\"", bundle: 'pro' },
+        { q: "They say you have done this before. What do you do with that?", a: "Concede it, and use it. It is exactly why sorry on its own is not worth much here.", bundle: 'pro' },
+        { q: "What opens the long-ago version?", a: "Naming the delay and asking permission. \"This is very late and you may have put it down entirely.\"", bundle: 'pro' },
+        { q: "They would rather not reopen it. What then?", a: "One sentence and stop. \"I was in the wrong, and I'm sorry.\"", bundle: 'pro' },
+        { q: "The conversation widens into other grievances. What do you do?", a: "Hear the bigger thing, and keep the specific apology intact. \"I'm sorry for yesterday regardless.\"", bundle: 'pro' },
+        { q: "What must never happen in any of the three?", a: "The injured person ends up comforting you.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five ways an apology goes wrong:\n\n• **You Went Straight to Sorry** — the commonest failure, and it does not feel like one\n• **You Do Not Think You Were Wrong** — and you have still hurt somebody\n• **They Do Not Accept It** — perhaps not yet, perhaps not ever\n• **It Sounds Like a Script** — the steps can be heard as steps\n• **This Should Have Been Quicker** — five steps over a forgotten attachment\n\nTwo of the five are about doing too little. Two are about doing too much.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "You Went Straight to Sorry, You Do Not Think You Were Wrong, They Do Not Accept It, It Sounds Like a Script, and This Should Have Been Quicker.", bundle: 'pro' },
+        { q: "Why does going straight to sorry not feel like a failure?", a: "It feels like the fastest route to resolution. It is heard as wanting the conversation to end.", bundle: 'pro' },
+        { q: "You still think your position was right. What do you apologise for?", a: "Your part precisely — the tone, the timing, the audience — and you hold the substance separately.", bundle: 'pro' },
+        { q: "They have not accepted it. What do you do?", a: "Leave it with them, and let the change do the rest.", bundle: 'pro' },
+        { q: "It is starting to sound like a script. What is the fix?", a: "Specifics. Detail is what makes it sound like you rather than like a structure.", bundle: 'pro' },
+        { q: "What does running the full version over something small do?", a: "Makes the other person the injured party in something they had already forgotten.", bundle: 'pro' },
+        { q: "Which two of the five are about doing too much?", a: "It Sounds Like a Script, and This Should Have Been Quicker.", bundle: 'pro' },
+        { q: "What is the test for whether this pack applies at all?", a: "Whether somebody was genuinely hurt. Everyday mistakes need a sentence, not five steps.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The five beliefs and stances in this pack:\n\n• **Sorry Comes After Understanding** — the instinct is to lead with it\n• **Specific Beats Sincere** — sincerity is not transmitted by trying harder\n• **The Plan Is the Proof** — the only part that costs you anything later\n• **Do Not Make Them Comfort You** — a long distressed apology inverts the roles\n• **I Would Be Guessing** — naming their feeling feels presumptuous\n\nThe fourth is the one people never see themselves doing.",
+      cards: [
+        { q: "What are the five mindset areas in this pack?", a: "Sorry Comes After Understanding, Specific Beats Sincere, The Plan Is the Proof, Do Not Make Them Comfort You, and I Would Be Guessing.", bundle: 'pro' },
+        { q: "Why does leading with the apology feel right?", a: "It looks like the fastest route to resolution, which is exactly why it is the commonest failure.", bundle: 'pro' },
+        { q: "How is sincerity actually communicated?", a: "By detail. Knowing which part mattered is what proves you thought about it.", bundle: 'pro' },
+        { q: "Which part of an apology costs you something in future?", a: "The sentence about what will be different.", bundle: 'pro' },
+        { q: "What happens in a long, distressed apology?", a: "The injured person ends up reassuring the one who caused it.", bundle: 'pro' },
+        { q: "Naming their feeling feels presumptuous. What do you do instead?", a: "Ask. \"I don't want to guess — how did that feel?\"", bundle: 'pro' },
+        { q: "Which of the five do people never notice themselves doing?", a: "Do Not Make Them Comfort You.", bundle: 'pro' },
+        { q: "Can you apologise well and still disagree?", a: "Yes. Apologise precisely for your part, and keep the substance separate.", bundle: 'pro' },
       ]
     },
   ],
@@ -1879,7 +1947,7 @@ const memorizeCollections = {
   supportingconversations: [
     {
       name: "Core Idea",
-      description: "The shape of the pack: five responses, and the judgement about which one this person needs.",
+      description: "The shape of the pack: five responses and the judgement about which one this person needs — listening, validating, encouraging, suggesting, and the question you ask when you cannot tell which of the four it is.",
       cards: [
         { q: "What are the five responses in this pack?", a: "Work out what they need, just listen, respond with validation, respond with encouragement, respond with a suggestion.", bundle: 'free' },
         { q: "What is this pack actually about?", a: "The choosing. The responses themselves are simple; reading which one is needed is the skill.", bundle: 'free' },
@@ -1887,6 +1955,8 @@ const memorizeCollections = {
         { q: "What is the safe default when you cannot tell what they need?", a: "Acknowledgement first, then ask.", bundle: 'pro' },
         { q: "What is the general order that works?", a: "Meet them where they are, then move them — never the other way round.", bundle: 'pro' },
         { q: "What is the measure of a good supportive conversation?", a: "Whether they felt less alone with it, not whether it got solved.", bundle: 'pro' },
+        { q: "Which response is the diagnostic one?", a: "Work Out What They Need. The other four are what you do once you know.", bundle: 'pro' },
+        { q: "What is the boundary against the Validation pack?", a: "There, validation is the whole subject. Here it is one of five responses, chosen by what this person needs.", bundle: 'pro' },
       ]
     },
     {
@@ -1899,6 +1969,8 @@ const memorizeCollections = {
         { q: "Name two ways to work out what they need.", a: "Any two of: ask directly, listen to the verb, notice whether they have stopped, default to acknowledgement and check.", bundle: 'pro' },
         { q: "What does it mean if they are still in full flow?", a: "They want to be heard, not interrupted with a solution.", bundle: 'pro' },
         { q: "Is asking outright a failure of intuition?", a: "No — it is faster and more accurate than guessing, and almost nobody minds.", bundle: 'pro' },
+        { q: "Which challenge is it the repair for?", a: "You Gave Advice They Did Not Want.", bundle: 'pro' },
+        { q: "What does it sound like?", a: "\"Do you want thoughts, or do you just want to say it out loud?\"", bundle: 'pro' },
       ]
     },
     {
@@ -1911,6 +1983,8 @@ const memorizeCollections = {
         { q: "What is the mindset line for this move?", a: "Your discomfort with the silence is not a sign that they need you to speak.", bundle: 'pro' },
         { q: "What is the boundary against Show Understanding?", a: "Looping and rephrasing belong there. Here it is minimal — silence, \"mm\", \"go on\".", bundle: 'pro' },
         { q: "What do you do when they apologise for going on?", a: "Tell them to keep going.", bundle: 'pro' },
+        { q: "Which challenge is it the move for?", a: "They Say They Are Fine — the pause is what gets answered, not the question.", bundle: 'pro' },
+        { q: "What is the tell that you are about to break it?", a: "Your own discomfort with the silence. That is not a signal about them.", bundle: 'pro' },
       ]
     },
     {
@@ -1923,6 +1997,8 @@ const memorizeCollections = {
         { q: "Can you validate a feeling you think is based on a wrong account?", a: "Yes. Validating a feeling is not endorsing a conclusion.", bundle: 'pro' },
         { q: "What do you say to someone apologising for being upset?", a: "That they do not need to — it is a reasonable reaction.", bundle: 'pro' },
         { q: "What is the strongest version of validation?", a: "Naming why it makes sense — \"you'd been preparing for a month, of course it stings\".", bundle: 'pro' },
+        { q: "Which challenge is it the move for?", a: "You Think They Are Wrong. You can validate a feeling without endorsing a conclusion.", bundle: 'pro' },
+        { q: "What is the strongest version?", a: "Naming why it makes sense — \"you'd been preparing for a month, of course it stings\".", bundle: 'pro' },
       ]
     },
     {
@@ -1935,6 +2011,8 @@ const memorizeCollections = {
         { q: "What is wrong with \"you'll be fine\"?", a: "It is a reflex and everyone knows it. \"You did this in March and it went fine\" is evidence.", bundle: 'pro' },
         { q: "What is the cost of empty reassurance?", a: "It is heard as not listening, and it devalues the next true thing you say.", bundle: 'pro' },
         { q: "How do you encourage after something genuinely failed?", a: "Without pretending — \"it went badly, and you'd still do it better next time than someone who never tried\".", bundle: 'pro' },
+        { q: "What makes it work?", a: "Being specific and true. Evidence rather than reflex.", bundle: 'pro' },
+        { q: "How do you encourage after something genuinely went badly?", a: "Without pretending. \"It went badly, and you'd still do it better next time than somebody who never tried.\"", bundle: 'pro' },
       ]
     },
     {
@@ -1947,6 +2025,64 @@ const memorizeCollections = {
         { q: "Why does the same suggestion land differently before and after acknowledgement?", a: "Before, it says the feeling is not the point. After, it is welcome and often what they wanted.", bundle: 'pro' },
         { q: "Why ask what they have already tried?", a: "It respects the fact that they have thought about it, and stops you repeating the obvious.", bundle: 'pro' },
         { q: "What is often more useful than advice?", a: "Offering to do something with them — \"do you want me to look at it with you?\"", bundle: 'pro' },
+        { q: "How many times do you make the same suggestion?", a: "Once. A suggestion repeated is a criticism.", bundle: 'pro' },
+        { q: "What is often more useful than advice?", a: "Offering to do something with them.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Comfort or Forward** — staying with it, or moving them on\n• **Reading the Signals** — the diagnostic move against the four responses\n• **All Five** — everything, with only the moment as a cue\n\nFour of the five are responses. The fifth is the question you ask when you cannot tell which.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Comfort or Forward, Reading the Signals, and All Five.", bundle: 'pro' },
+        { q: "What does Comfort or Forward make you choose between?", a: "Staying with the feeling — listening and validating — or moving them on with encouragement or a suggestion.", bundle: 'pro' },
+        { q: "They have just started describing something upsetting. Which move?", a: "Just Listen. A small sign to go on, and nothing else.", bundle: 'pro' },
+        { q: "They say \"so what do you reckon I should do?\" Which move?", a: "Respond With a Suggestion — offered as a question.", bundle: 'pro' },
+        { q: "They know what to do and doubt they can do it. Which move?", a: "Respond With Encouragement. Evidence, not reflex.", bundle: 'pro' },
+        { q: "You genuinely cannot tell what they want. Which move?", a: "Work Out What They Need. \"Do you want thoughts, or do you just want to say it out loud?\"", bundle: 'pro' },
+        { q: "What is the safe default when there is no time to ask?", a: "Validation. Nobody is made worse by having their reaction taken seriously.", bundle: 'pro' },
+        { q: "What is the general order?", a: "Meet them where they are, then move them. Never the other way round.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and what each one runs:\n\n1. **Reading It Right** — a loop: they say something, you choose, and their next line tells you whether you read it\n2. **When You Get It Wrong** — noticing the misread and switching\n3. **When They Want Your Honest View** — the one case where criticism belongs here\n\nThe third needs an invitation. The other two are about noticing you did not have one.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Reading It Right, When You Get It Wrong, and When They Want Your Honest View.", bundle: 'pro' },
+        { q: "What is the loop in Reading It Right?", a: "They say something, you choose a response, and what they do next tells you whether you read it correctly.", bundle: 'pro' },
+        { q: "You suggested something and they went flat. What is the repair?", a: "Notice it, name it lightly, and switch. \"I've gone straight to fixing it, haven't I.\"", bundle: 'pro' },
+        { q: "You reassured and they got more frustrated. What does that mean?", a: "The reassurance was automatic. Ask what is actually worrying them.", bundle: 'pro' },
+        { q: "What does the honest-view sequence require first?", a: "An invitation. Unasked-for criticism in a supportive conversation is a betrayal of what it was for.", bundle: 'pro' },
+        { q: "How do you check the invitation is real?", a: "Offer both. \"Do you want honest, or do you want me on your side? Both are available.\"", bundle: 'pro' },
+        { q: "How much honesty do you give once invited?", a: "One thing. Then back to encouragement.", bundle: 'pro' },
+        { q: "What makes a misread recoverable?", a: "Naming it. Carrying on regardless is the only thing that makes it worse.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five hardest situations in this pack:\n\n• **You Gave Advice They Did Not Want** — something went flat\n• **They Say They Are Fine** — and it visibly is not\n• **You Think They Are Wrong** — validating feels like collusion\n• **You Have Nothing to Say** — everything sounds trite\n• **It Is Beyond You** — bigger than a conversation between friends\n\nThe last one is the only one where the right move is not a response but a handover.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "You Gave Advice They Did Not Want, They Say They Are Fine, You Think They Are Wrong, You Have Nothing to Say, and It Is Beyond You.", bundle: 'pro' },
+        { q: "The advice went flat. What was the mistake?", a: "The timing, usually. It arrived before they felt heard.", bundle: 'pro' },
+        { q: "They say they are fine and visibly are not. What do you do?", a: "Leave the door open without pushing. Say you are around, and mean it.", bundle: 'pro' },
+        { q: "You think they were the one at fault. What can you still do?", a: "Validate the feeling without endorsing the conclusion. Those are separate.", bundle: 'pro' },
+        { q: "Nothing you can think of sounds adequate. What do you say?", a: "That nothing sounds adequate. Saying that is better than saying nothing.", bundle: 'pro' },
+        { q: "What is the move when it is beyond a conversation between friends?", a: "Stay with them, say plainly that this is bigger than you, and help them find somebody whose job it is.", bundle: 'pro' },
+        { q: "Which of the five is not answered with one of the five responses?", a: "It Is Beyond You.", bundle: 'pro' },
+        { q: "What do the first four have in common?", a: "They are all moments where doing less, and saying so, is the move.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The five beliefs and stances in this pack:\n\n• **Being Heard Is Usually the Ask** — they often do not want it solved\n• **Advice Before Acknowledgement Does Not Land** — the same sentence, two effects\n• **You Do Not Have to Fix It** — the discomfort of feeling responsible\n• **Asking Is Allowed** — the idea that a good friend should just know\n• **You Are the One People Come To** — a real thing to be, and what it costs\n\nThree of the five are about the urge to be useful, which is what makes this pack hard.",
+      cards: [
+        { q: "What are the five mindset areas in this pack?", a: "Being Heard Is Usually the Ask, Advice Before Acknowledgement Does Not Land, You Do Not Have to Fix It, Asking Is Allowed, and You Are the One People Come To.", bundle: 'pro' },
+        { q: "What do people usually want when they bring you a problem?", a: "To say it out loud in front of somebody who is not going to do anything about it.", bundle: 'pro' },
+        { q: "What does the same suggestion do before and after acknowledgement?", a: "Before, it says the feeling is not the point. After, it is often exactly what they wanted.", bundle: 'pro' },
+        { q: "Where does most of the discomfort in supporting somebody come from?", a: "Feeling responsible for the outcome, as though leaving them still upset is a failure.", bundle: 'pro' },
+        { q: "Is asking what they need an admission of failure?", a: "No. It is faster and more accurate than guessing, and almost nobody minds being asked.", bundle: 'pro' },
+        { q: "What does being the one people come to cost?", a: "It is a real thing to be — and it is easy to end up carrying it in one direction only.", bundle: 'pro' },
+        { q: "Which three of the five are about the urge to be useful?", a: "Being Heard Is Usually the Ask, Advice Before Acknowledgement, and You Do Not Have to Fix It.", bundle: 'pro' },
+        { q: "What is the measure of a good supportive conversation?", a: "Whether they felt less alone with it, not whether it got solved.", bundle: 'pro' },
       ]
     },
   ],
@@ -2214,7 +2350,7 @@ const memorizeCollections = {
   givingexamples: [
     {
       name: "Core Idea",
-      description: "The shape of the pack: five example types and the rules for choosing between them honestly.",
+      description: "The shape of the pack: five example types and the rules for choosing between them honestly — what you can vouch for, what they already know, and what to do when you have nothing real to point at.",
       cards: [
         { q: "What are the five example types in this pack?", a: "Your own experience, the everyday example, the imagined case, the shared example, numbers and evidence.", bundle: 'free' },
         { q: "How many examples should you give at a time?", a: "One, chosen well.", bundle: 'free' },
@@ -2222,6 +2358,8 @@ const memorizeCollections = {
         { q: "What is the single rule about numbers?", a: "Only use one you actually know, and say where it came from. Otherwise use a different type.", bundle: 'pro' },
         { q: "What decides which example type to use?", a: "What this listener will accept, not which example you like best.", bundle: 'pro' },
         { q: "What is the boundary against Disagreeing?", a: "There an example is one supporting line; here choosing and building examples is the skill.", bundle: 'pro' },
+        { q: "Which type is the only one you build rather than remember?", a: "The Imagined Case.", bundle: 'pro' },
+        { q: "What do you do when an example has been challenged?", a: "Concede what is fair, then narrow the claim or change type. Defending it moves the argument onto the example.", bundle: 'pro' },
       ]
     },
     {
@@ -2233,6 +2371,8 @@ const memorizeCollections = {
         { q: "What is the mindset line for this type?", a: "Keep it small — one specific incident beats a summary of ten.", bundle: 'free' },
         { q: "Why is \"the time you were wrong\" a strong example?", a: "Because it costs you something, which makes it credible.", bundle: 'pro' },
         { q: "What do you do when they say your case is not typical?", a: "Concede what is fair and narrow the claim, or switch example type.", bundle: 'pro' },
+        { q: "What makes a real experience feel real?", a: "The detail an invented one lacks — a place, a time, a small awkward fact.", bundle: 'pro' },
+        { q: "Which challenge is it hardest in?", a: "The Example Is About Someone Present — the best one is often not yours to use.", bundle: 'pro' },
         { q: "What makes a real experience feel real?", a: "The detail an invented one lacks — a place, a time, a small awkward fact.", bundle: 'pro' },
       ]
     },
@@ -2246,6 +2386,8 @@ const memorizeCollections = {
         { q: "What is a \"familiar comparison\"?", a: "Borrowing a mechanism the listener already understands, like a queue or a default setting.", bundle: 'pro' },
         { q: "What do you do when your everyday example is not everyday for them?", a: "Switch types. Do not explain the example.", bundle: 'pro' },
         { q: "Why is explaining an example a bad sign?", a: "It means it was the wrong example — the whole advantage was recognition.", bundle: 'pro' },
+        { q: "Which challenge is it the failure mode of?", a: "They Cannot Relate To It.", bundle: 'pro' },
+        { q: "What is a familiar comparison?", a: "Borrowing a mechanism they already understand — a queue, a default setting, a late train.", bundle: 'pro' },
       ]
     },
     {
@@ -2258,6 +2400,8 @@ const memorizeCollections = {
         { q: "What does \"the reversal\" mean?", a: "Flipping who it happens to — imagine they had sent us that.", bundle: 'pro' },
         { q: "When is the imagined case the only honest option?", a: "When you have no evidence and would otherwise be dressing a guess up as experience.", bundle: 'pro' },
         { q: "What does \"the extreme version\" test?", a: "The shape of the idea — imagine everyone did it.", bundle: 'pro' },
+        { q: "Which sequence is it the answer in?", a: "When You Have No Example.", bundle: 'pro' },
+        { q: "What does the reversal test?", a: "How it looks from the other side. \"Imagine they had sent us that.\"", bundle: 'pro' },
       ]
     },
     {
@@ -2270,6 +2414,8 @@ const memorizeCollections = {
         { q: "What is the caution with well-known public examples?", a: "Describe what actually happened rather than putting words in real people's mouths.", bundle: 'pro' },
         { q: "What is \"the thing in front of you\"?", a: "An example both of you can see right now — the room, the meeting, the queue you are in.", bundle: 'pro' },
         { q: "Why can a familiar story work as an example?", a: "The idea is already carried in it, so the point arrives with the reference.", bundle: 'pro' },
+        { q: "What is the test that a reference is shared?", a: "If you have to explain it, it was not.", bundle: 'pro' },
+        { q: "What is the safest shared example of all?", a: "The thing in front of you — the room, the meeting, the queue you are both in.", bundle: 'pro' },
       ]
     },
     {
@@ -2282,6 +2428,64 @@ const memorizeCollections = {
         { q: "Why is an invented statistic worse than no statistic?", a: "When it is checked, everything else you said goes with it.", bundle: 'pro' },
         { q: "What is \"order of magnitude\" for?", a: "When the precise number does not matter — tens rather than hundreds.", bundle: 'pro' },
         { q: "What should you do if someone repeats your rough guess as fact?", a: "Correct the record straight away and say it was a guess.", bundle: 'pro' },
+        { q: "Which challenge is it the failure mode of?", a: "The Number Is Shaky.", bundle: 'pro' },
+        { q: "What do you do if somebody repeats your rough guess as fact?", a: "Correct the record straight away and say it was a guess.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **What You Can Vouch For** — your own experience against a number\n• **What They Already Know** — the everyday example against the shared reference\n• **All Five** — everything, including the imagined case\n\nThe choice is about what this listener will accept, not about which example you like best.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "What You Can Vouch For, What They Already Know, and All Five.", bundle: 'pro' },
+        { q: "Which two types are in What You Can Vouch For?", a: "From Your Own Experience and Numbers and Evidence.", bundle: 'pro' },
+        { q: "Which two are in What They Already Know?", a: "The Everyday Example and The Shared Example.", bundle: 'pro' },
+        { q: "Which type appears only in All Five?", a: "The Imagined Case.", bundle: 'pro' },
+        { q: "You are about to use a figure you half-remember. Which move?", a: "Numbers and Evidence — hedged, with the uncertainty attached.", bundle: 'pro' },
+        { q: "You have no real case at all. Which move?", a: "The Imagined Case, marked as imagined. \"Say somebody…\"", bundle: 'pro' },
+        { q: "You have to explain your shared reference. What does that tell you?", a: "It was not shared. Switch types rather than explaining it.", bundle: 'pro' },
+        { q: "What decides which type to use?", a: "What this listener will accept.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and what each one runs:\n\n1. **One Point, Several Angles** — one claim, different example types as they push on different parts\n2. **When the Example Is Challenged** — concede what is fair, then narrow or switch\n3. **When You Have No Example** — say so, and offer the imagined case instead\n\nThe commonest failure in the first is three examples of the same type.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "One Point Several Angles, When the Example Is Challenged, and When You Have No Example.", bundle: 'pro' },
+        { q: "What is the commonest failure in One Point, Several Angles?", a: "Three examples of the same type. If your own experience did not land, another one will not either.", bundle: 'pro' },
+        { q: "What should each example answer?", a: "The specific doubt just raised — not the original point, louder.", bundle: 'pro' },
+        { q: "A challenged example is not a failed one. What is it usually?", a: "A sign that the listener is engaging.", bundle: 'pro' },
+        { q: "What are the two moves when an example is challenged?", a: "Concede what is fair, then either narrow the claim or bring a different type.", bundle: 'pro' },
+        { q: "What protects everything else you say?", a: "Saying you have nothing here, when you have nothing here.", bundle: 'pro' },
+        { q: "What do you offer when there is no real case?", a: "The imagined one, marked as imagined and offered as a way of testing the idea rather than as evidence.", bundle: 'pro' },
+        { q: "What does defending a challenged example cost?", a: "The conversation. The argument moves onto your example and away from your point.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five ways an example goes wrong:\n\n• **The Example Is Too Big** — it swallows the point\n• **They Cannot Relate To It** — your everyday is not theirs\n• **The Number Is Shaky** — the failure that does the most damage\n• **The Example Is About Someone Present** — and using it would put them on the spot\n• **They Want Proof, Not a Story** — a fair question, honestly answered\n\nFour are about the example. The fifth is about what an example is for.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "The Example Is Too Big, They Cannot Relate To It, The Number Is Shaky, The Example Is About Someone Present, and They Want Proof Not a Story.", bundle: 'pro' },
+        { q: "Why does a dramatic example fail?", a: "The listener remembers the story and forgets what it was for — or objects that your case is extreme and therefore proves nothing.", bundle: 'pro' },
+        { q: "Your everyday example is not everyday for them. What do you do?", a: "Switch types. Do not explain the example.", bundle: 'pro' },
+        { q: "Why is a shaky number the most damaging failure?", a: "A wrong number does not just fail — it discredits everything around it.", bundle: 'pro' },
+        { q: "The best example is something a person in the room did. What are the options?", a: "Abstract it until they are unrecognisable, or ask them first.", bundle: 'pro' },
+        { q: "They want proof and you have a story. What is the honest answer?", a: "Say which one you have. An example shows what you mean; it does not count how often.", bundle: 'pro' },
+        { q: "Which of the five is a fair question rather than a mistake?", a: "They Want Proof, Not a Story.", bundle: 'pro' },
+        { q: "What is the repair that runs through most of them?", a: "Making the example smaller, or changing its type.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The five beliefs and stances in this pack:\n\n• **Small Beats Impressive** — the dramatic example invites the objection\n• **Do Not Invent** — every invented detail is a debt\n• **One Is Enough** — a second example answers a question nobody asked\n• **Your Own Life Counts** — one real thing beats a half-remembered statistic\n• **It Does Not Prove Anything** — true, and not a reason to go quiet\n\nTwo of the five are about not reaching for more. Two are about not reaching for less.",
+      cards: [
+        { q: "What are the five mindset areas in this pack?", a: "Small Beats Impressive, Do Not Invent, One Is Enough, Your Own Life Counts, and It Does Not Prove Anything.", bundle: 'pro' },
+        { q: "Why does the dull example land harder?", a: "Nobody argues about whether it is typical.", bundle: 'pro' },
+        { q: "What is every invented detail?", a: "A debt. When one is checked and found wrong, everything true you said goes with it.", bundle: 'pro' },
+        { q: "They have not agreed after one example. What do they need?", a: "Not a second example. Usually a question about what the actual objection is.", bundle: 'pro' },
+        { q: "Why do people reach for a half-remembered statistic over their own experience?", a: "They discount their own as one case. It is usually stronger and always more checkable.", bundle: 'pro' },
+        { q: "An example is not evidence. Is that a reason to go quiet?", a: "No. It shows what you mean, which has to come first, and you can say plainly which of the two you are offering.", bundle: 'pro' },
+        { q: "Which two of the five are about not reaching for more?", a: "One Is Enough and Small Beats Impressive.", bundle: 'pro' },
+        { q: "Which two are about not reaching for less?", a: "Your Own Life Counts and It Does Not Prove Anything.", bundle: 'pro' },
       ]
     },
   ],
@@ -4594,7 +4798,7 @@ const memorizeCollections = {
   conflictemotions: [
     {
       name: "Core Idea",
-      description: "The shape of the pack: four steps that build one expression, plus the move that makes it a conversation.",
+      description: "The shape of the pack: four steps that build one expression — what happened, what you felt, what you need, what you would like — plus the question that turns it from a statement into a conversation.",
       cards: [
         { q: "What are the five strategies in this pack?", a: "Say what happened, name your feeling, say what you need, make a request, ask what they felt.", bundle: 'free' },
         { q: "What does a feeling point at?", a: "A need — respect, safety, cooperation, trust, privacy, being kept informed.", bundle: 'free' },
@@ -4602,6 +4806,8 @@ const memorizeCollections = {
         { q: "Where do most of these go wrong?", a: "Stopping after the feeling, which leaves a problem with no handle on it.", bundle: 'pro' },
         { q: "What is the boundary against Emotion Labelling?", a: "There you name and regulate your own feeling for your own sake. Here you express it to someone, with the need attached.", bundle: 'pro' },
         { q: "Why is the last strategy not optional?", a: "Without it you have delivered a statement, not had a conversation.", bundle: 'pro' },
+        { q: "Which strategy is the one people leave out?", a: "Say What You Need. Without it the other person knows there was an argument but not what was being asked for.", bundle: 'pro' },
+        { q: "Which strategy turns a statement into a conversation?", a: "Ask What They Felt.", bundle: 'pro' },
       ]
     },
     {
@@ -4614,6 +4820,8 @@ const memorizeCollections = {
         { q: "Where does the interpretation usually hide?", a: "In a single word — an adverb, an adjective, or a verb describing intent.", bundle: 'pro' },
         { q: "Turn \"you were dismissive\" into an account.", a: "\"You answered before I'd finished the sentence.\"", bundle: 'pro' },
         { q: "Why does an interpretation stop the feeling being heard?", a: "The conversation becomes about whether the interpretation is fair.", bundle: 'pro' },
+        { q: "Which challenge is it the repair for?", a: "The Account Has a Judgement In It.", bundle: 'pro' },
+        { q: "Where does the interpretation usually hide?", a: "In a single word — an adverb, an adjective, or a verb describing intent.", bundle: 'pro' },
       ]
     },
     {
@@ -4626,6 +4834,8 @@ const memorizeCollections = {
         { q: "Why is the second word you reach for often better?", a: "The first is usually bigger than the truth.", bundle: 'pro' },
         { q: "What is worth reaching for under an obvious feeling?", a: "The quieter one underneath — irritation often sits on top of worry or fear.", bundle: 'pro' },
         { q: "Turn \"you made me feel stupid\" into an owned feeling.", a: "\"I felt stupid, standing there.\"", bundle: 'pro' },
+        { q: "What is the difference between \"I felt\" and \"you made me feel\"?", a: "One is something you know. The other is a claim about them, and it will be argued with.", bundle: 'pro' },
+        { q: "Why is the second word you reach for often better?", a: "The first is usually bigger than the truth.", bundle: 'pro' },
       ]
     },
     {
@@ -4638,6 +4848,8 @@ const memorizeCollections = {
         { q: "Why do conflicts repeat when the need is missing?", a: "Both people know there was an argument; neither knows what was being asked for.", bundle: 'pro' },
         { q: "What is the difference between \"I need to be kept in the loop\" and \"you shut me out\"?", a: "They point at the same thing and go to completely different places.", bundle: 'pro' },
         { q: "What do you say when you cannot identify the need?", a: "Say that, and work it out out loud — \"I'm still working out why it got to me\".", bundle: 'pro' },
+        { q: "Which challenge is it the repair for?", a: "You Stopped After the Feeling.", bundle: 'pro' },
+        { q: "What do you say when you cannot identify the need?", a: "Say that, and work it out out loud. \"I'm still working out why it got to me.\"", bundle: 'pro' },
       ]
     },
     {
@@ -4650,6 +4862,8 @@ const memorizeCollections = {
         { q: "Why do people apologise and change nothing?", a: "Usually because nobody said what the change was.", bundle: 'pro' },
         { q: "What is the difference between a request and a demand?", a: "A request is something they can say no to.", bundle: 'pro' },
         { q: "Turn \"be more considerate\" into a request.", a: "\"Text me if you're going to be more than half an hour late.\"", bundle: 'pro' },
+        { q: "What is the difference between a request and a demand?", a: "A request is something they can say no to.", bundle: 'pro' },
+        { q: "Why do people apologise and change nothing?", a: "Usually because nobody said what the change was.", bundle: 'pro' },
       ]
     },
     {
@@ -4662,6 +4876,64 @@ const memorizeCollections = {
         { q: "What is the mindset line for this strategy?", a: "A question asked with the answer already prepared is not a question.", bundle: 'pro' },
         { q: "What do you do when their answer changes the facts?", a: "Update the facts, keep the feeling, and say which is which.", bundle: 'pro' },
         { q: "Which version of the question is bravest and most productive?", a: "Asking how you came across.", bundle: 'pro' },
+        { q: "Which sequence is built entirely on this move?", a: "When They Bring It to You — the same skill from the other chair.", bundle: 'pro' },
+        { q: "Which version is bravest and most productive?", a: "Asking how you came across.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Your Side** — what happened, what you felt, what you need\n• **Making It a Conversation** — the request, the need, and the question that hands it over\n• **All Five** — the whole expression, with only the moment as a cue\n\nThe first three are a monologue. The last two are what stop it being one.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Your Side, Making It a Conversation, and All Five.", bundle: 'pro' },
+        { q: "Which three moves are in Your Side?", a: "Say What Happened, Name Your Feeling, and Say What You Need.", bundle: 'pro' },
+        { q: "You are about to say \"you're so careless\". Which move?", a: "Say What Happened. The camera version.", bundle: 'pro' },
+        { q: "Which moves are in Making It a Conversation?", a: "Make a Request, Ask What They Felt, and Say What You Need.", bundle: 'pro' },
+        { q: "You have named the feeling and the need and they look stuck. Which move?", a: "Make a Request. Something small and doable tomorrow.", bundle: 'pro' },
+        { q: "You have said your piece and they have gone quiet. Which move?", a: "Ask What They Felt. Otherwise you have delivered a statement.", bundle: 'pro' },
+        { q: "Which move do people most often leave out?", a: "Say What You Need. A feeling with no need attached has no handle on it.", bundle: 'pro' },
+        { q: "What is the order in the full expression?", a: "What happened, what you felt, what you need, what you would like, then their side.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and what each one runs:\n\n1. **The Whole Thing** — four steps said as one piece, then their side\n2. **When It Gets Warm** — they defend, counter, or raise the temperature\n3. **When They Bring It to You** — the same skill from the other chair\n\nThe first thirty seconds of the third one decide whether it is a conversation or a row.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Whole Thing, When It Gets Warm, and When They Bring It to You.", bundle: 'pro' },
+        { q: "How much of The Whole Thing is a monologue?", a: "The first four steps. You say them as one continuous piece before they answer.", bundle: 'pro' },
+        { q: "They counter with a grievance of their own. What is the move?", a: "Concede what is fair, keep your own account unchanged, and offer to take theirs separately.", bundle: 'pro' },
+        { q: "They say you are making a thing out of nothing. What do you not do?", a: "Argue about the size. \"It's what I felt\" is not a claim they can correct.", bundle: 'pro' },
+        { q: "What is the move in the first thirty seconds when it comes to you?", a: "Do not defend. Ask for the rest of it.", bundle: 'pro' },
+        { q: "What do you look for when somebody brings a feeling to you?", a: "The need underneath it — the thing that can actually be met.", bundle: 'pro' },
+        { q: "What is the last beat when it comes to you?", a: "A request of your own, so the conversation ends with something to do.", bundle: 'pro' },
+        { q: "What makes all three of these work?", a: "Keeping the account and the feeling separate from the argument about who is right.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five ways this goes wrong:\n\n• **The Account Has a Judgement In It** — it looks like a feeling and contains a verdict\n• **You Stopped After the Feeling** — the nerve ran out at the exposed part\n• **It Is Not the Moment** — mid-argument, in public, or at half past eleven\n• **They Counter With Their Own** — sometimes deflection, often a real grievance\n• **You Might Be Wrong About It** — the message was sent after all\n\nOnly the third is about timing. The other four are about what you do once you have started.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "The Account Has a Judgement In It, You Stopped After the Feeling, It Is Not the Moment, They Counter With Their Own, and You Might Be Wrong About It.", bundle: 'pro' },
+        { q: "\"I felt hurt when you were dismissive.\" What is wrong with it?", a: "It contains a verdict. They will answer the verdict rather than the feeling.", bundle: 'pro' },
+        { q: "You stopped after the feeling. Why?", a: "That was the exposed part, and the nerve ran out. The need and the request are what was left.", bundle: 'pro' },
+        { q: "When is it not the moment?", a: "Mid-argument, in front of other people, late at night, or when either of you is too tired to do it well.", bundle: 'pro' },
+        { q: "They counter with their own grievance. Is it deflection?", a: "Sometimes. Often it is a real one that has been waiting. Either way it gets its own turn, not this one.", bundle: 'pro' },
+        { q: "It turns out you had the facts wrong. What do you do?", a: "Update the facts, keep the feeling, and say which is which.", bundle: 'pro' },
+        { q: "Which of the five is about timing?", a: "It Is Not the Moment.", bundle: 'pro' },
+        { q: "What is the repair that runs through most of them?", a: "Separating what happened from what you concluded about it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The five beliefs and stances in this pack:\n\n• **A Feeling Points at a Need** — feelings in conflict are signals, not noise\n• **Describe, Do Not Diagnose** — one word turns a point into a row\n• **Finish the Sentence** — the pull to stop once the hard part is out\n• **They Have a Version Too** — a prepared account feels like the whole truth\n• **One Word Is Not Enough** — \"frustrated\" sounds thin next to what it was\n\nThe middle three are all about the same moment: the sentence you are halfway through.",
+      cards: [
+        { q: "What are the five mindset areas in this pack?", a: "A Feeling Points at a Need, Describe Do Not Diagnose, Finish the Sentence, They Have a Version Too, and One Word Is Not Enough.", bundle: 'pro' },
+        { q: "What is a feeling in a conflict?", a: "A signal. It points at something that matters to you — being consulted, trusted, kept informed.", bundle: 'pro' },
+        { q: "How does a reasonable point become a row?", a: "One word. Dismissive, careless, thoughtless — each is a claim about them rather than about what happened.", bundle: 'pro' },
+        { q: "Why do people stop halfway?", a: "The exposed part is out and the nerve goes. What is left is the need and the request, which is the useful half.", bundle: 'pro' },
+        { q: "What does preparing an account cost you?", a: "By the time you speak it feels like the whole truth, and theirs has not been written yet.", bundle: 'pro' },
+        { q: "\"I felt frustrated\" sounds thin. What is the fix?", a: "A second, more accurate word — or the quieter feeling underneath the obvious one.", bundle: 'pro' },
+        { q: "Which three of the five are about the same moment?", a: "Describe Do Not Diagnose, Finish the Sentence, and One Word Is Not Enough. All three are about the sentence you are halfway through.", bundle: 'pro' },
+        { q: "What is the boundary against Emotion Labelling?", a: "There you name and steady your own feeling for your own sake. Here you express it to somebody, with the need attached.", bundle: 'pro' },
       ]
     },
   ],
@@ -6732,8 +7004,8 @@ const memorizeCollections = {
   ],
   storybanter: [
     {
-      name: "The Arc",
-      description: "The six beats of a banter story, and what each one is for.",
+      name: "Core Idea",
+      description: "The six beats of a banter story and the six moves that build them — what the trigger has to be, why the wrap-up is a deliberate move rather than the story running out, and whose story it is once it has started.",
       cards: [
         { q: "What are the six beats of a banter story?", a: "Trigger, invitation, exaggerated response, building together, escalating, and the wrap-up.", bundle: 'free' },
         { q: "What kind of thing should the trigger be?", a: "Small, everyday and true — a real frustration or observation. It is the only realistic line in the whole thing.", bundle: 'free' },
@@ -6741,6 +7013,8 @@ const memorizeCollections = {
         { q: "Why must the trigger stay small?", a: "The absurdity is built from it. If the opening line is already ridiculous there is nowhere to escalate to.", bundle: 'pro' },
         { q: "What is the wrap-up for?", a: "Stopping while it is still funny — and it is a deliberate move, not the story running out.", bundle: 'pro' },
         { q: "Whose story is it?", a: "Both people's. Nobody owns it, and the measure is whether it kept going, not who got the laughs.", bundle: 'pro' },
+        { q: "What are the six moves in this pack?", a: "Yes And, What If, Make It Bigger, Bring Someone In, Then What Happens, and Solve It Ridiculously.", bundle: 'pro' },
+        { q: "Which two moves need no idea of your own?", a: "Yes And and Then What Happens. Both are built entirely from the last thing that was said.", bundle: 'pro' },
       ]
     },
     {
@@ -6753,6 +7027,8 @@ const memorizeCollections = {
         { q: "How do you repair a block?", a: "Take it back lightly and accept the idea twice as hard. The repair is usually funnier than the original turn.", bundle: 'pro' },
         { q: "Does anything in the story have to be possible?", a: "No. The only rule is that you build on what you were given.", bundle: 'pro' },
         { q: "What is the smallest reliable build?", a: "One added detail. It does not have to be clever.", bundle: 'pro' },
+        { q: "Which challenge is it the repair for?", a: "You Blocked It.", bundle: 'pro' },
+        { q: "Which collection is it in?", a: "Keep It Moving, with Then What Happens and Bring Someone In.", bundle: 'pro' },
       ]
     },
     {
@@ -6765,6 +7041,8 @@ const memorizeCollections = {
         { q: "Name two kinds of complication.", a: "Any two of: someone finds out, the plan works too well, something ordinary goes wrong.", bundle: 'pro' },
         { q: "Why is \"the plan works too well\" funny?", a: "Success is a more surprising complication than failure, and it usually traps the character in something.", bundle: 'pro' },
         { q: "What is the tell that a story needs one?", a: "The last two or three turns were all agreeable.", bundle: 'pro' },
+        { q: "Which challenge is it the repair for?", a: "It Went Flat.", bundle: 'pro' },
+        { q: "Where does it come in When It Stalls?", a: "First. Complicate it before you add a person.", bundle: 'pro' },
       ]
     },
     {
@@ -6777,6 +7055,8 @@ const memorizeCollections = {
         { q: "Name three things you can inflate.", a: "The number, the time, and the stakes.", bundle: 'pro' },
         { q: "How is this different from exaggeration in Responsive Humour?", a: "There it is aimed at a real sentence someone meant. Here it is aimed at a shared invention.", bundle: 'pro' },
         { q: "Why is a huge exaggeration safe?", a: "Nobody could mistake it for a real claim about anyone.", bundle: 'pro' },
+        { q: "Which challenge does it run into?", a: "It Got Personal — if the exaggeration lands on them rather than on the invention.", bundle: 'pro' },
+        { q: "What is the test that it is big enough?", a: "Nobody could mistake it for a real claim about anybody.", bundle: 'pro' },
       ]
     },
     {
@@ -6789,6 +7069,8 @@ const memorizeCollections = {
         { q: "What does a new person do to a story that is running out?", a: "Restarts it for free — they can want something, disapprove of something, or arrive at the wrong moment.", bundle: 'pro' },
         { q: "What should you do with a character the other person introduced?", a: "Ask about them rather than moving on. \"Is the dog enjoying maths?\" is a whole turn.", bundle: 'pro' },
         { q: "When should you bring someone in?", a: "Before the story runs out, not after.", bundle: 'pro' },
+        { q: "Where does it come in When It Stalls?", a: "Second, after the complication.", bundle: 'pro' },
+        { q: "Which new character is safest?", a: "An animal or an object. Nobody can be offended on its behalf.", bundle: 'pro' },
       ]
     },
     {
@@ -6801,6 +7083,8 @@ const memorizeCollections = {
         { q: "What does a chain of consequences do for the story?", a: "Makes it feel like a story rather than a list of jokes, because each turn is caused by the one before it.", bundle: 'pro' },
         { q: "What should you ask yourself when you go blank?", a: "What happens next — not what would be funny.", bundle: 'pro' },
         { q: "How can a consequence tie the story together?", a: "By landing on a detail from several turns earlier, which is the most satisfying ending available.", bundle: 'pro' },
+        { q: "Which challenge is it the answer to?", a: "You Have Nothing. It needs no idea of your own.", bundle: 'pro' },
+        { q: "What do you ask yourself instead of \"what would be funny\"?", a: "What happens next.", bundle: 'pro' },
       ]
     },
     {
@@ -6813,6 +7097,64 @@ const memorizeCollections = {
         { q: "Which kind is funniest?", a: "The solution that makes the situation worse.", bundle: 'pro' },
         { q: "Name two kinds.", a: "Any two of: impossible technology, insane logistics said as admin, and the fix that makes it worse.", bundle: 'pro' },
         { q: "Does it end the story?", a: "Not necessarily — it releases the pressure and lets the story breathe, which often produces another round.", bundle: 'pro' },
+        { q: "Which challenge is it the answer to?", a: "It Went On Too Long — it is the exit.", bundle: 'pro' },
+        { q: "Does the story have to end there?", a: "No. It releases the pressure and often produces another round.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Keep It Moving** — accept and add, follow the consequence, bring somebody in\n• **Make It Bigger** — the complication, the exaggeration, the new character\n• **All Six** — everything, including the ending\n\nTwo of the six moves need no idea at all. Those are the ones for when your mind is blank.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Keep It Moving, Make It Bigger, and All Six.", bundle: 'pro' },
+        { q: "Which moves are in Keep It Moving?", a: "Yes And, Then What Happens, and Bring Someone In.", bundle: 'pro' },
+        { q: "They have just added a good detail and it is your turn. Which move?", a: "Yes, And. Accept it and add one thing.", bundle: 'pro' },
+        { q: "Which three are in Make It Bigger?", a: "What If, Make It Bigger, and Bring Someone In.", bundle: 'pro' },
+        { q: "Everything in the story is going well and it is dull. Which move?", a: "What If. Add a threat to the plan.", bundle: 'pro' },
+        { q: "There is nobody in the story but the two of you. Which move?", a: "Bring Someone In — a person, an animal or an object, reacting.", bundle: 'pro' },
+        { q: "Which move appears only in All Six?", a: "Solve It Ridiculously — the ending.", bundle: 'pro' },
+        { q: "Which two moves need no idea at all?", a: "Then What Happens and Yes And. Both are built entirely out of what was just said.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and what each one runs:\n\n1. **Your Turn to Start** — you throw out the small complaint and carry it\n2. **Their Turn to Start** — they complain and you keep it going\n3. **When It Stalls** — the three moves that restart a flat story, in order\n\nThe second is the harder role and the more useful one, because it is the one people freeze in.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Your Turn to Start, Their Turn to Start, and When It Stalls.", bundle: 'pro' },
+        { q: "What is the first beat in both starting sequences?", a: "Something small and true. It is the only realistic line in the whole thing.", bundle: 'pro' },
+        { q: "Which of the two roles is harder?", a: "Theirs to start. You are the one who has to keep it going, and that is the role people freeze in.", bundle: 'pro' },
+        { q: "What is the order of moves in When It Stalls?", a: "Complicate it, add a person, then follow the consequence — in that order.", bundle: 'pro' },
+        { q: "What tells you a story has gone flat?", a: "Two turns with nothing at stake. Pleasant is the state a banter story dies in.", bundle: 'pro' },
+        { q: "What does the last beat of both starting sequences do?", a: "Stops it while it is still funny. The wrap-up is a move, not the story running out.", bundle: 'pro' },
+        { q: "Why does the trigger have to stay small?", a: "The absurdity is built from it. If the opening is already ridiculous there is nowhere to escalate to.", bundle: 'pro' },
+        { q: "What is the measure of a banter story?", a: "Whether it kept going, not who got the laughs.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five ways this goes wrong:\n\n• **You Blocked It** — you answered an invented detail with a fact\n• **It Went Flat** — several agreeable turns and nothing at stake\n• **It Got Personal** — the complication landed on them, not the situation\n• **It Went On Too Long** — the best moment has passed\n• **You Have Nothing** — your turn, and your mind is blank\n\nBlocking and going personal are the only two that actually damage anything. The other three are a story ending badly.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "You Blocked It, It Went Flat, It Got Personal, It Went On Too Long, and You Have Nothing.", bundle: 'pro' },
+        { q: "What is blocking?", a: "Answering an invented detail with a fact. It is a reflex to correct, and it stops the story dead.", bundle: 'pro' },
+        { q: "How do you repair a block?", a: "Accept the thing you just corrected and add to it. One sentence undoes it.", bundle: 'pro' },
+        { q: "The story has gone flat. What does it need?", a: "A problem, not a better joke.", bundle: 'pro' },
+        { q: "The complication landed on the person. What was the aiming error?", a: "It went at them rather than at the situation. The form only works aimed at the imaginary.", bundle: 'pro' },
+        { q: "What does everybody remember about a story that ran long?", a: "The four extra minutes. Nobody remembers one that stopped a turn early.", bundle: 'pro' },
+        { q: "Your mind is blank and it is your turn. What do you reach for?", a: "Then What Happens or Yes And. Neither needs an idea — both are built from what was just said.", bundle: 'pro' },
+        { q: "Which two of the five actually damage something?", a: "You Blocked It and It Got Personal.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The six beliefs and stances in this pack:\n\n• **Build, Do Not Perform** — two people make this, and the measure is whether it kept going\n• **Yes, And — Never Yes, But** — everything offered is accepted\n• **Absurd Is Safer Than Clever** — an impossible idea cannot be mistaken for a judgement\n• **Stop While It Is Good** — nobody remembers a story that stopped early\n• **Not Being Quick** — half right, and the true half is worth keeping\n• **Adding the Wrong Thing** — the fear that your turn is the one that kills it\n\nThe last two are why people stay silent. The first four are about what happens once they do not.",
+      cards: [
+        { q: "What are the six mindset areas in this pack?", a: "Build Do Not Perform, Yes And Never Yes But, Absurd Is Safer Than Clever, Stop While It Is Good, Not Being Quick, and Adding the Wrong Thing.", bundle: 'pro' },
+        { q: "What is the measure of a turn?", a: "Whether the story kept going — not whether your line was the funny one.", bundle: 'pro' },
+        { q: "Why is \"but\" a problem inside an invented story?", a: "It is a correction, and there is nothing to correct. Everything offered is accepted.", bundle: 'pro' },
+        { q: "Why is absurd safer than clever?", a: "An obviously impossible idea cannot be mistaken for a judgement about anybody. A clever remark can.", bundle: 'pro' },
+        { q: "Are the people who are good at this quick?", a: "Mostly not. They are not inventing — they are taking what was just said and adding one thing.", bundle: 'pro' },
+        { q: "What is the fear behind hedged, careful additions?", a: "That your turn will be the one that kills it. A small careful addition is what actually does.", bundle: 'pro' },
+        { q: "When should a story stop?", a: "One turn before you want it to.", bundle: 'pro' },
+        { q: "Which two beliefs keep people silent?", a: "Not Being Quick and Adding the Wrong Thing.", bundle: 'pro' },
       ]
     },
   ],

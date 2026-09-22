@@ -3930,6 +3930,16 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.96', date: 'September 2026', title: 'Memorize, round 3 \u2014 seventeen packs down, five to go', audience: 'dev',
+    items: [
+      'Five more packs complete: <strong>Story Banter</strong>, <strong>Supporting Conversations</strong>, <strong>Apologizing \u2014 Pt. 2</strong>, <strong>Conflict Emotions</strong> and <strong>Giving Examples</strong>. 222 cards, 20 new decks.',
+      '<strong>Story Banter\u2019s</strong> overview deck was called <em>The Arc</em> \u2014 the only pack in the library not using <em>Core Idea</em>, and the content was exactly that. Renamed, and its two new cards name the six moves, which no card in the pack did before.',
+      'The observation lines this round: <em>Story Banter</em> \u2014 blocking and going personal are the only two failures that damage anything; the other three are a story ending badly. <em>Supporting Conversations</em> \u2014 three of its five mindset decks are about the urge to be useful, which is what makes the pack hard. <em>Apologizing</em> \u2014 two of its five challenges are about doing too little and two about doing too much.',
+      '<strong>Conflict Emotions</strong> got the one that ties its mindset decks together: three of the five are about the same moment \u2014 the sentence you are halfway through.',
+      'Four more Core Idea descriptions brought up to the template length. One round left: Explain Things \u2014 Pt. 2, Persuasion Pt. 2, Starting Conversations Pt. 3 and Pt. 4, and Validation.',
+    ],
+  },
+  {
     version: 'v1.28.95', date: 'September 2026', title: 'Memorize, round 2 \u2014 twelve packs done, ten to go', audience: 'dev',
     items: [
       'Six more packs are complete in Memorize: <strong>Deep Questions</strong>, <strong>Show Understanding \u2014 Pt. 2</strong>, <strong>Negotiation and Compromise</strong>, <strong>Emotion Labelling and Regulation</strong>, <strong>Building a Story</strong> and <strong>Receiving Feedback and Criticism</strong>. 290 cards, 24 new decks.',
