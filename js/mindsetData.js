@@ -2892,6 +2892,10 @@ const mindsetCollections = {
         { q: "You want the laugh more than you want the room comfortable.", a: "\"A laugh I have to spend someone else's comfort on is too expensive.\"", bundle: 'pro' },
         { q: "You wonder whether a bit is going too far.", a: "\"Would I be fine with them doing this back to me? If not, don't.\"", bundle: 'pro' },
         { q: "You worry that playing a character makes you look silly.", a: "\"That's the point. The role costs me the status, and that's what makes it safe.\"", bundle: 'pro' },
+        { q: "The role you want fits them a bit too well.", a: "\"Then it's a description, not a character. Pick one that fits nobody here.\"", bundle: 'pro' },
+        { q: "You think they will know it is affectionate.", a: "\"They'll know if it costs me. If it costs them, affection isn't the signal.\"", bundle: 'pro' },
+        { q: "Somebody else in the group does this to people.", a: "\"That's teasing. Different skill, different risk, and I should know which I'm doing.\"", bundle: 'pro' },
+        { q: "You are playing a role and feel slightly exposed.", a: "\"Good. Exposed is the price, and it's what makes it safe for them.\"", bundle: 'pro' },
       ]
     },
     {
@@ -2904,6 +2908,10 @@ const mindsetCollections = {
         { q: "You laugh in the middle of your own bit.", a: "\"The delivery is the joke. Straight face, and let them laugh.\"", bundle: 'pro' },
         { q: "You add a nervous question mark at the end.", a: "\"No permission needed mid-line. Land it, then read the room.\"", bundle: 'pro' },
         { q: "You do not trust the room enough to commit.", a: "\"Then don't do the bit. Ordinary is a completely fine answer.\"", bundle: 'pro' },
+        { q: "You are going to test it with half a line first.", a: "\"Half a line is the version that dies. Say the whole thing.\"", bundle: 'pro' },
+        { q: "You are watching their face while you deliver it.", a: "\"Deliver first, watch second. Watching mid-line is what hedges it.\"", bundle: 'pro' },
+        { q: "You start the bit and then explain it.", a: "\"Explaining is the opposite of committing. Let it stand or let it go.\"", bundle: 'pro' },
+        { q: "You want to signal that you are joking.", a: "\"The signal is the size, not a wink. Go big enough and nobody's confused.\"", bundle: 'pro' },
       ]
     },
     {
@@ -2916,6 +2924,10 @@ const mindsetCollections = {
         { q: "You want to use mock offence right after they said something real.", a: "\"Not now. That reads as mimicking them, whatever I meant.\"", bundle: 'pro' },
         { q: "You are about to guard something they actually need.", a: "\"Stinginess is only funny about a biro. Give them the thing.\"", bundle: 'pro' },
         { q: "You notice the laugh would come at their expense.", a: "\"Then it's teasing, not a role, and I should know which I'm doing.\"", bundle: 'pro' },
+        { q: "The bit only works if you use a real detail about them.", a: "\"Then it doesn't work. Invent the detail.\"", bundle: 'pro' },
+        { q: "You are the most senior person in the room.", a: "\"Then the roles where I'm the idiot are the only ones available.\"", bundle: 'pro' },
+        { q: "They laughed but something crossed their face.", a: "\"Trust the face. Step out and say something ordinary.\"", bundle: 'pro' },
+        { q: "You want to do mock offence about something they actually said.", a: "\"Only if what they said was nothing. If it was something, don't.\"", bundle: 'pro' },
       ]
     },
     {
@@ -2928,6 +2940,58 @@ const mindsetCollections = {
         { q: "The bit is going well and you want to keep going.", a: "\"Leave on a laugh, not after one. Three beats and out.\"", bundle: 'pro' },
         { q: "It misfired and you want to explain what you meant.", a: "\"Never explain it. One clean exit and the room forgets in a minute.\"", bundle: 'pro' },
         { q: "You are not sure whether the bit has finished.", a: "\"If I'm asking, it has. Hand the conversation back.\"", bundle: 'pro' },
+        { q: "The bit has been running for five exchanges.", a: "\"Three is the number. Land it and hand the conversation back.\"", bundle: 'pro' },
+        { q: "You are enjoying it more than they are.", a: "\"That's the moment. Out now, while it's still theirs too.\"", bundle: 'pro' },
+        { q: "Somebody tried to change the subject and you went back in.", a: "\"They've exited. Follow them — the bit is over.\"", bundle: 'pro' },
+        { q: "You are worried that dropping the role will be awkward.", a: "\"'Right, seriously though' has never once been awkward.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Not Being a Performer",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "The belief is half right, and pretending otherwise is why this pack can feel closed to people. You are not a performer. Most people are not, including nearly everybody who does this well.\n\nWhat the deck separates out is what the roles actually require. Not a voice, not an accent, not holding a room — one ordinary sentence, said straight, for about four seconds.\n\nExample of the shift — instead of \"I couldn't do that\", you keep the honest assessment and drop a requirement that was never there.\n\nMindset: keep the self-knowledge, drop the audition.",
+      inputs: [
+        { q: "You think you are not the sort of person who does this.", a: "\"Probably not. Four seconds of a straight face isn't doing a character, though.\"", bundle: 'pro' },
+        { q: "You would feel ridiculous.", a: "\"I would, for a moment. The role is supposed to make me look silly — that's the mechanism.\"", bundle: 'pro' },
+        { q: "Funny people can do this and you cannot.", a: "\"They're quicker. The line itself is one sentence anybody could say.\"", bundle: 'pro' },
+        { q: "You cannot do voices or accents.", a: "\"Nor does this need any. Flat delivery is the correct delivery.\"", bundle: 'pro' },
+        { q: "You would never keep it up.", a: "\"Three beats and out. Keeping it up is the mistake, not the skill.\"", bundle: 'pro' },
+        { q: "You are not a natural entertainer.", a: "\"True. This isn't entertaining — it's answering an ordinary line oddly.\"", bundle: 'pro' },
+        { q: "People would think you were trying too hard.", a: "\"If I commit, no. Trying too hard is what the half version looks like.\"", bundle: 'pro' },
+        { q: "You tried it once and it did not work.", a: "\"Once. The exit costs one sentence, which is what makes trying cheap.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Picking the Role",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Seven roles are not interchangeable. The Lazy One is almost impossible to take badly, because the only person it makes fun of is you. Mock offence, said a second after somebody meant something sincerely, reads as mimicry whatever you intended.\n\nMost misfires in this pack are not delivery problems. They are the wrong role in the right moment.\n\nMindset: when you are unsure of the room, the safe roles are the ones where you are the fool.",
+      inputs: [
+        { q: "You have one role and you always use it.", a: "\"Then the room decides whether it fits, and often it doesn't. Pick for the moment.\"", bundle: 'pro' },
+        { q: "You are not sure how this group will take it.", a: "\"Unsure means The Lazy One. Nobody's ever been hurt by me admitting I'm idle.\"", bundle: 'pro' },
+        { q: "They have just said something sincere and you have a line.", a: "\"Not mock offence, then. That one reads as mimicking them.\"", bundle: 'pro' },
+        { q: "The obvious role is the one that describes them.", a: "\"That's a comment wearing a costume. Take a different one.\"", bundle: 'pro' },
+        { q: "You want the biggest laugh available.", a: "\"The biggest one here is at somebody's expense. Take the second biggest.\"", bundle: 'pro' },
+        { q: "You are guarding something they genuinely need.", a: "\"Stinginess is funny about a biro. Give them the thing and pick another role.\"", bundle: 'pro' },
+        { q: "The group is tired and you were going to go big.", a: "\"Big costs them energy. Small and lazy costs nothing.\"", bundle: 'pro' },
+        { q: "You are with people you do not know well.", a: "\"Then the ones where I'm the idiot. Generous and lazy are the safest two.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being the One Who Lifts the Mood",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "Lightening a room is a real ability, and the people who have it are usually glad of it. It is also the belief most likely to keep somebody in character after the room has stopped wanting one.\n\nThis deck does not argue with it. It shows what happens to what comes back.\n\nIf every ordinary sentence gets a bit, the sentences that are not ordinary stop being said to you. People learn where things land and route around it without ever mentioning it.\n\nMindset: lifting the mood is a gift. Doing it every time teaches people which things not to bring you.",
+      inputs: [
+        { q: "You are the one who keeps things light.", a: "\"I am. Which is why the heavy things get taken somewhere else.\"", bundle: 'pro' },
+        { q: "Every room is better for a bit of this.", a: "\"Most rooms. The one where somebody is about to say something real isn't.\"", bundle: 'pro' },
+        { q: "Nobody has ever asked you to stop.", a: "\"Nobody asks. They just stop starting.\"", bundle: 'pro' },
+        { q: "Being funny is how you show you are comfortable.", a: "\"It's also how I avoid the other thing. Both are true.\"", bundle: 'pro' },
+        { q: "You would rather make somebody laugh than sit in silence.", a: "\"Silence is sometimes what they came for. The laugh is for me then.\"", bundle: 'pro' },
+        { q: "You can always find the light in something.", a: "\"Always is the problem. Some things don't have one and shouldn't get one.\"", bundle: 'pro' },
+        { q: "People rely on you for that.", a: "\"For that. Worth asking what they don't come to me for, and why.\"", bundle: 'pro' },
+        { q: "It costs nothing to keep it playful.", a: "\"It costs one conversation at a time — the one that was about to be serious.\"", bundle: 'pro' },
       ]
     },
   ],
@@ -3584,6 +3648,9 @@ const mindsetCollections = {
         { q: "You want to ask something impressive.", a: "\"'Who was there?' has started more real conversations than anything clever.\"", bundle: 'pro' },
         { q: "The conversation feels like hard work.", a: "\"Because I'm generating instead of following. Pick a word from what they just said.\"", bundle: 'pro' },
         { q: "You are worried about the silence while you think.", a: "\"A beat before a question that follows beats a fast one that doesn't.\"", bundle: 'pro' },
+        { q: "You are searching for a new subject.", a: "\"There isn't one needed. They named a place, a person and a month.\"", bundle: 'pro' },
+        { q: "Their answer was short and gave you nothing.", a: "\"It gave me one noun. Ask about the noun.\"", bundle: 'pro' },
+        { q: "You have a good question saved for later.", a: "\"Saved questions arrive out of nowhere. Use what's on the table.\"", bundle: 'pro' },
       ]
     },
     {
@@ -3597,6 +3664,9 @@ const mindsetCollections = {
         { q: "You have learned four facts and followed none of them.", a: "\"Four facts, no conversation. Pick one and go into it.\"", bundle: 'pro' },
         { q: "You want to cover more ground.", a: "\"Ground isn't the point. One thing, properly, is what they'll remember.\"", bundle: 'pro' },
         { q: "You asked two questions in a row.", a: "\"Answer the first one myself, or react to it. Two in a row is a form.\"", bundle: 'pro' },
+        { q: "You have a question you want to get to.", a: "\"Get there through their answers, or don't get there.\"", bundle: 'pro' },
+        { q: "They have answered and you are already moving on.", a: "\"React first. One sentence, then the next question.\"", bundle: 'pro' },
+        { q: "The conversation is jumping about and you are steering.", a: "\"Stop steering. Pick their last word and follow it.\"", bundle: 'pro' },
       ]
     },
     {
@@ -3610,6 +3680,9 @@ const mindsetCollections = {
         { q: "You worry the question is too simple.", a: "\"Simple is the point. The conversation happens in their answer.\"", bundle: 'pro' },
         { q: "You want to seem interesting rather than interested.", a: "\"Interested is what they'll remember. Interesting is what I'll remember.\"", bundle: 'pro' },
         { q: "You are stuck between two questions.", a: "\"Ask the easier one. It gets a longer answer anyway.\"", bundle: 'pro' },
+        { q: "You want a question that shows you were paying attention.", a: "\"'What happened next' shows it better than anything clever.\"", bundle: 'pro' },
+        { q: "Your question sounds childish.", a: "\"Simple questions get long answers. That's the trade.\"", bundle: 'pro' },
+        { q: "You are rehearsing the wording.", a: "\"They won't notice the wording. They'll notice being asked.\"", bundle: 'pro' },
       ]
     },
     {
@@ -3623,6 +3696,57 @@ const mindsetCollections = {
         { q: "You changed the subject at the first pause.", a: "\"A pause is where people stop, not where the subject ends.\"", bundle: 'pro' },
         { q: "You feel you have asked enough about this.", a: "\"One more, then move. That's usually the one they wanted to be asked.\"", bundle: 'pro' },
         { q: "The account has reached a natural stopping point.", a: "\"Ask what's changed since. That closes it properly instead of dropping it.\"", bundle: 'pro' },
+        { q: "The subject seems finished.", a: "\"Ask what's different now. That finishes it properly.\"", bundle: 'pro' },
+        { q: "You are about to move on to your own thing.", a: "\"One more first. The one after the last is usually the good one.\"", bundle: 'pro' },
+        { q: "There was a detail two minutes ago that you skipped.", a: "\"Go back. 'You said something earlier' works at any distance.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "How a Question Lands",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The same question, worded two ways, asks for two different things. \"Why did you do that?\" asks for a defence. \"What made you?\" asks for a reason. Nobody hears the difference while asking, and everybody hears it while answering.\n\nThe tell is in the answer. If they start justifying rather than telling you, the question carried an accusation you did not mean to put in it.\n\nMindset: you are asking for the story, not for the case. Word it so they can hear which.",
+      inputs: [
+        { q: "You asked why and they went defensive.", a: "\"Why asks them to justify. Ask what made them, and they'll explain instead.\"", bundle: 'pro' },
+        { q: "You only asked a question.", a: "\"A question can still carry a verdict. Their answer tells me which one I asked.\"", bundle: 'pro' },
+        { q: "You want to ask whether they considered the other side.", a: "\"That's a lesson with a question mark. Ask how it looked from there instead.\"", bundle: 'pro' },
+        { q: "You are about to ask why they did not just do the obvious thing.", a: "\"Ask whether the obvious route was available. Same information, no accusation.\"", bundle: 'pro' },
+        { q: "They started explaining themselves and you had not asked them to.", a: "\"Then say so. 'Not a criticism' costs three words and takes it back.\"", bundle: 'pro' },
+        { q: "You think the question was perfectly neutral.", a: "\"Neutral from here. They're the ones who heard it.\"", bundle: 'pro' },
+        { q: "You want them to notice what they did.", a: "\"Then I'm not asking, I'm teaching. Pick one.\"", bundle: 'pro' },
+        { q: "You want to ask about a decision they regret.", a: "\"Ask what was going on that week. The decision comes out on its own.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Asking Feels Like Prying",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "The belief is half right, and the half that is right is worth keeping. Some questions are prying. Asking a stranger about their marriage is prying; asking about a feeling in a story you cannot yet picture is prying.\n\nWhat the deck separates out is the conclusion. The judgement about which questions is sound. That the answer is therefore to ask nothing is the part you added, and it leaves people talking to somebody who seems uninterested.\n\nExample of the shift — instead of \"I don't want to pry, so I'll leave it\", you keep the caution and ask the smaller question.\n\nMindset: keep the instinct, drop the silence.",
+      inputs: [
+        { q: "You do not want to pry, so you leave it.", a: "\"The instinct is right. 'Who else was there?' isn't prying, though.\"", bundle: 'pro' },
+        { q: "They might not want to talk about it.", a: "\"They might not. Asking gives them the choice; not asking makes it for them.\"", bundle: 'pro' },
+        { q: "It is not your place to ask.", a: "\"Some of it isn't. The part they just said out loud is.\"", bundle: 'pro' },
+        { q: "You barely know them.", a: "\"True. Then ask about the events, not the feelings. That's the whole adjustment.\"", bundle: 'pro' },
+        { q: "A follow-up would be nosy.", a: "\"Picking up a word they offered is the opposite of nosy. They offered it.\"", bundle: 'pro' },
+        { q: "You would not want to be asked that.", a: "\"Fair. Ask what I would want to be asked, and ask that.\"", bundle: 'pro' },
+        { q: "They changed the subject, so the door is shut.", a: "\"On that one. There were three other things in what they said.\"", bundle: 'pro' },
+        { q: "Silence is more respectful.", a: "\"Sometimes. Mostly it reads as not being interested, which isn't what I mean.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What If They Actually Tell Me",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Behind a lot of unasked questions is the quiet worry that the answer will be big. They say the year was awful, and then what? You have opened something you cannot close and you have nothing to offer.\n\nYou do not have to offer anything. A question is not a promise to fix what it uncovers, and the next question is always available: what happened, what was hardest, what changed since.\n\nMindset: asking is not taking responsibility. Staying in the conversation is the whole job.",
+      inputs: [
+        { q: "You are afraid the answer will be too big.", a: "\"Then I ask the next question. That's all that's required of me.\"", bundle: 'pro' },
+        { q: "If they tell you something serious you will not know what to say.", a: "\"'That sounds like a lot' plus a question has never failed anyone.\"", bundle: 'pro' },
+        { q: "You would be opening something you cannot close.", a: "\"They've been carrying it open. I'm not the one who opened it.\"", bundle: 'pro' },
+        { q: "You are worried about making it heavy.", a: "\"They decide how much to say. The question doesn't set the weight.\"", bundle: 'pro' },
+        { q: "You have no advice to give.", a: "\"Nobody wanted advice. They wanted the second question.\"", bundle: 'pro' },
+        { q: "They might get upset.", a: "\"They might. Being asked is usually why people are glad afterwards.\"", bundle: 'pro' },
+        { q: "You would rather keep it light.", a: "\"For me or for them? Worth knowing which before I choose.\"", bundle: 'pro' },
+        { q: "You asked, and now you want to leave.", a: "\"Stay for one more. Leaving right after the answer is the part that stings.\"", bundle: 'pro' },
       ]
     },
   ],

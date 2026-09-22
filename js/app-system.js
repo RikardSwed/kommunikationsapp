@@ -3930,6 +3930,17 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.89', date: 'September 2026', title: 'Volume sweep, Mindset round 4 — the belief that keeps people out of a pack', audience: 'dev',
+    items: [
+      '<strong>Role Based Humour</strong> and <strong>Listening Through Questions</strong> now meet the spec in Mindset, 7 decks each. Six new decks, 76 cards.',
+      'Both packs turned out to be missing the same kind of deck: the belief that stops somebody using the pack at all. <strong>Not Being a Performer</strong> (two truths) is the one for Role Based Humour — <em>"You cannot do voices or accents"</em> &rarr; <em>"Nor does this need any. Flat delivery is the correct delivery."</em> The assessment is accurate; the requirement it assumes was never there.',
+      '<strong>Asking Feels Like Prying</strong> does the same job for Listening Through Questions, and it is the clearest case yet for the form: some questions genuinely are prying, so a flat contradiction would be wrong. <em>"It is not your place to ask"</em> &rarr; <em>"Some of it isn\'t. The part they just said out loud is."</em>',
+      '<strong>Being the One Who Lifts the Mood</strong> (the price) is the belief that keeps a bit running after the room has stopped wanting one: <em>"Nobody has ever asked you to stop"</em> &rarr; <em>"Nobody asks. They just stop starting."</em>',
+      'Three swap decks joined them: <em>Picking the Role</em>, <em>How a Question Lands</em> and <em>What If They Actually Tell Me</em> — the last of these being the worry that an honest answer will be too big to handle, which is what most unasked questions are actually about.',
+      'Mindset stands at 24 of 33 new decks and 332 of 520 cards. Eleven packs finished, eleven to go.',
+    ],
+  },
+  {
     version: 'v1.28.88', date: 'September 2026', title: 'Volume sweep, Mindset round 3 — four packs finished', audience: 'dev',
     items: [
       '<strong>Stories in Conversation</strong> (7 decks), <strong>Story Banter</strong> (6), <strong>Validation</strong> (5) and <strong>Persuasion and Influence — Pt. 2</strong> (4) now meet the spec in Mindset. Five new decks, 92 cards.',
