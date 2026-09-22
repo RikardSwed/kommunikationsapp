@@ -9591,6 +9591,7 @@ const collectionsModeData = {
         { q: "They said it was fine but it clearly was not.", a: "\"You'd raised it twice already. Anyone would be fed up by the third time.\" [Show You Understand Why]", guideBack: "The reason anyone would have felt it", bundle: 'pro' },
         { q: "You want to name what you do not want to be.", a: "\"It matters to me that you get heard in those meetings.\" [Say Their Feelings Matter]", guideBack: "What you care about, said plainly", bundle: 'pro' },
         { q: "You genuinely do not know how it landed for them.", a: "\"I don't want to guess. How did that actually feel?\" [Name What They Felt]", guideBack: "Their feeling, named or asked about", bundle: 'pro' },
+        { q: "They have said it is fine and gone back to their screen.", a: "\"I'd rather not leave it there. That looked like it stung.\" [Name What They Felt]", guideBack: "Their feeling, named or asked about", bundle: 'pro' },
       ]
     },
     {
@@ -9606,6 +9607,7 @@ const collectionsModeData = {
         { q: "Part of it is yours and part is not.", a: "\"The way I said it was wrong. The decision I'd still defend.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
         { q: "You want to hand them some control over whether it recurs.", a: "\"If I start doing it again, just say the word and I'll stop.\" [Say What You'll Do Differently]", guideBack: "A change someone could watch you make", bundle: 'pro' },
         { q: "You knew at the time that it was wrong.", a: "\"I knew as it came out of my mouth. That makes it worse, not better.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
+        { q: "You want them to know why you are bothering with this at all.", a: "\"You being able to trust what I say matters more to me than being right about Friday.\" [Say Their Feelings Matter]", guideBack: "What you care about, said plainly", bundle: 'pro' },
       ]
     },
     {
@@ -9621,6 +9623,7 @@ const collectionsModeData = {
         { q: "They ask what happens next time.", a: "\"If I disagree with you, it happens in private first. Every time.\" [Say What You'll Do Differently]", guideBack: "A change someone could watch you make", bundle: 'pro' },
         { q: "They say their reaction was an overreaction.", a: "\"I don't think it was. It was the third time, and that changes it.\" [Show You Understand Why]", guideBack: "The reason anyone would have felt it", bundle: 'pro' },
         { q: "You have apologised and they are still guarded.", a: "\"That's fair. The change is the bit that'll matter, not this conversation.\" [Say What You'll Do Differently]", guideBack: "A change someone could watch you make", bundle: 'pro' },
+        { q: "You are about to start explaining why you did it.", a: "\"I'm sorry I did it. The reasons can wait.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
       ]
     },
   ],
@@ -9988,6 +9991,7 @@ const collectionsModeData = {
         { q: "They are mid-flow and you have a solution ready.", a: "\"Mm. Go on.\" [Just Listen]", guideBack: "A small sign to go on, or silence", bundle: 'pro' },
         { q: "They are berating themselves for a reasonable reaction.", a: "\"That's not an overreaction. It's the third time it's happened.\" [Respond With Validation]", guideBack: "Why the feeling fits", bundle: 'pro' },
         { q: "They are stuck and have clearly been heard already.", a: "\"Would it help to just do the one thing you're dreading and leave the rest?\" [Respond With a Suggestion]", guideBack: "An option, offered lightly", bundle: 'pro' },
+        { q: "You cannot tell whether they want ideas or not.", a: "\"Do you want me to think about it with you, or just hear it?\" [Work Out What They Need]", guideBack: "A check on what would help", bundle: 'pro' },
       ]
     },
     {
@@ -10003,6 +10007,7 @@ const collectionsModeData = {
         { q: "You genuinely cannot tell what they want.", a: "\"Do you want thoughts, or do you just want to say it out loud?\" [Work Out What They Need]", guideBack: "A check on what would help", bundle: 'pro' },
         { q: "They keep asking what they should do but reject every idea.", a: "\"I don't think you want fixing on this one. Am I right?\" [Work Out What They Need]", guideBack: "A check on what would help", bundle: 'pro' },
         { q: "They say they are dreading something they have done before.", a: "\"You've done this. It went fine last time.\" [Respond With Encouragement]", guideBack: "Evidence they can manage it", bundle: 'pro' },
+        { q: "They have said the same sentence three times in different words.", a: "\"That's the bit that's stuck, isn't it. Go on.\" [Just Listen]", guideBack: "A small sign to go on, or silence", bundle: 'pro' },
       ]
     },
     {
@@ -10018,6 +10023,7 @@ const collectionsModeData = {
         { q: "A friend is describing something and you cannot tell what they want.", a: "\"Do you want ideas or do you want to vent?\" [Work Out What They Need]", guideBack: "A check on what would help", bundle: 'pro' },
         { q: "They say they just needed to say it out loud.", a: "\"Then say it. I'm not going anywhere.\" [Just Listen]", guideBack: "A small sign to go on, or silence", bundle: 'pro' },
         { q: "They are nervous about tomorrow and know exactly what to do.", a: "\"You'll be fine once you start. It's the waiting you hate.\" [Respond With Encouragement]", guideBack: "Evidence they can manage it", bundle: 'pro' },
+        { q: "They are dreading a conversation they have already rehearsed twice.", a: "\"You've worked out what to say. The hard part of this is done.\" [Respond With Encouragement]", guideBack: "Evidence they can manage it", bundle: 'pro' },
       ]
     },
   ],
@@ -10235,6 +10241,7 @@ const collectionsModeData = {
         { q: "You are about to say \"that's nothing\".", a: "\"That's a good one. Mine's the same thing but smaller.\" [Answer, Don't Outdo]", guideBack: "A story that answers, not one that wins", bundle: 'pro' },
         { q: "The story genuinely needs some setup.", a: "\"This one needs a bit of a run-up. Bear with me.\" [Ask for the Floor]", guideBack: "A request for the floor, with a length on it", bundle: 'pro' },
         { q: "You have thought of something but they are mid-sentence.", a: "\"That reminds me of something — finish yours first, though.\" [Read the Room First]", guideBack: "A story, or staying where you are", bundle: 'pro' },
+        { q: "Somebody has just told a short one and looked at you.", a: "\"That's happened to me too, on a much smaller scale.\" [Answer, Don't Outdo]", guideBack: "A story that answers, not one that wins", bundle: 'pro' },
       ]
     },
     {
@@ -10250,6 +10257,7 @@ const collectionsModeData = {
         { q: "The point only makes sense if you were there.", a: "\"You had to be there. You weren't. It was funnier then.\" [Cut It Loose]", guideBack: "The story dropped, without ceremony", bundle: 'pro' },
         { q: "You are about to say \"anyway, yeah\".", a: "(cut it — the sentence before it was the ending) [Finish on Purpose]", guideBack: "The last line, and then silence", bundle: 'pro' },
         { q: "They are asking questions and leaning in.", a: "(keep going — the detail is landing) [Watch Them While You Tell It]", guideBack: "A cut or a continuation, based on their face", bundle: 'pro' },
+        { q: "You have landed it and somebody else clearly has one.", a: "\"Mattias — you had one about a boiler. Go on.\" [Give It Back]", guideBack: "The floor, passed back", bundle: 'pro' },
       ]
     },
     {
@@ -10265,6 +10273,7 @@ const collectionsModeData = {
         { q: "You have lost your own thread.", a: "\"I've completely lost the thread of my own story.\" [Cut It Loose]", guideBack: "The story dropped, without ceremony", bundle: 'pro' },
         { q: "The story has no punchline.", a: "\"So we drove home. That's genuinely it.\" [Finish on Purpose]", guideBack: "The last line, and then silence", bundle: 'pro' },
         { q: "You have told two in a row.", a: "\"That's me done. Someone else's turn.\" [Give It Back]", guideBack: "The floor, passed back", bundle: 'pro' },
+        { q: "You are about to start and somebody has just looked at the time.", a: "\"I'll save that one — people are moving.\" [Read the Room First]", guideBack: "A story, or staying where you are", bundle: 'pro' },
       ]
     },
   ],
@@ -10332,6 +10341,7 @@ const collectionsModeData = {
         { q: "You have raised something in passing twice with no change.", a: "\"I've said this in passing a couple of times. Can we sit down with it?\" [Choose the Size]", guideBack: "One sentence, a conversation, or nothing", bundle: 'pro' },
         { q: "A friend was late once and apologised.", a: "(say nothing) [Choose the Size]", guideBack: "One sentence, a conversation, or nothing", bundle: 'pro' },
         { q: "Someone's updates are hard to follow.", a: "\"I think it'd be better with the decision at the top.\" [Say It Lightly]", guideBack: "The whole thing, in one line", bundle: 'pro' },
+        { q: "You have decided this one needs sitting down, and you want to open without an ambush.", a: "\"Before anything else — the reporting side has been rock solid since March.\" [Start With Something Real]", guideBack: "A true positive, said briefly", bundle: 'pro' },
       ]
     },
     {
@@ -10347,6 +10357,7 @@ const collectionsModeData = {
         { q: "You want to explain why the interrupting matters.", a: "\"She's stopped putting things forward. That's the effect.\" [Explain the Impact]", guideBack: "What follows from it, for others", bundle: 'pro' },
         { q: "You want them to own the fix rather than take yours.", a: "\"What would make that easier to hit?\" [Suggest What to Do Instead]", guideBack: "Something they could do next time", bundle: 'pro' },
         { q: "You are about to say someone is careless.", a: "\"There were four typos in the version that went out.\" [Name the Behaviour]", guideBack: "The specific thing they did", bundle: 'pro' },
+        { q: "You have named it and they are waiting for the useful part.", a: "\"What if the draft came to me on the Wednesday instead?\" [Suggest What to Do Instead]", guideBack: "Something they could do next time", bundle: 'pro' },
       ]
     },
     {
@@ -10362,6 +10373,7 @@ const collectionsModeData = {
         { q: "They say they are trying but it keeps happening.", a: "\"What if there were a checkpoint halfway rather than one date?\" [Suggest What to Do Instead]", guideBack: "Something they could do next time", bundle: 'pro' },
         { q: "They are considering it and you want to name the gain.", a: "\"You'd stop getting chased about it, which I imagine is the worst bit.\" [Say What Improves If They Do]", guideBack: "The gain, if they change it", bundle: 'pro' },
         { q: "You are closing and want them to leave with something other than fault.", a: "\"I'm not worried about it. Send me the plan Wednesday and I'll read it.\" [Encourage and Offer Support]", guideBack: "Confidence in them, plus a concrete offer", bundle: 'pro' },
+        { q: "It is one small thing and it does not need a meeting.", a: "\"Could you put the date in the filename? I keep opening the old one.\" [Say It Lightly]", guideBack: "The whole thing, in one line", bundle: 'pro' },
       ]
     },
   ],
@@ -10629,6 +10641,7 @@ const collectionsModeData = {
         { q: "You held their view until fairly recently.", a: "\"I'd have said the same a month ago. The March run changed it.\" [Acknowledge Before Suggesting]", guideBack: "What's right about theirs, then yours", bundle: 'pro' },
         { q: "You want them to improve the plan rather than accept yours.", a: "\"How would you do it if it were entirely up to you?\" [Ask a Question Instead]", guideBack: "A question that leads them there", bundle: 'pro' },
         { q: "You are about to say \"I hear you, but\".", a: "\"The thing you're right about is the cost.\" [Acknowledge Before Suggesting]", guideBack: "What's right about theirs, then yours", bundle: 'pro' },
+        { q: "You have made the point twice and they are still weighing it.", a: "\"That's everything I've got on it. Your shout.\" [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
       ]
     },
     {
@@ -10644,6 +10657,7 @@ const collectionsModeData = {
         { q: "They say they have not got time to think about it.", a: "\"Ten minutes Thursday. If you're not interested I'll drop it.\" [Make It Easy to Say Yes]", guideBack: "A smaller, safer ask", bundle: 'pro' },
         { q: "You have raised it twice already.", a: "\"I've said it twice. I'll leave it with you.\" [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
         { q: "They cannot agree without someone else's sign-off.", a: "\"Would it help if I wrote it up so you can just forward it?\" [Make It Easy to Say Yes]", guideBack: "A smaller, safer ask", bundle: 'pro' },
+        { q: "They are worried about what their own team will say.", a: "\"Try it with two people and nobody else needs to know yet.\" [Make It Easy to Say Yes]", guideBack: "A smaller, safer ask", bundle: 'pro' },
       ]
     },
     {
@@ -10659,6 +10673,7 @@ const collectionsModeData = {
         { q: "Their objection is the best point anyone has made.", a: "\"That's the strongest argument against it, and I can't answer it.\" [Acknowledge Before Suggesting]", guideBack: "What's right about theirs, then yours", bundle: 'pro' },
         { q: "They have already decided against and you want one question in.", a: "\"What would have to happen for you to change your mind?\" [Ask a Question Instead]", guideBack: "A question that leads them there", bundle: 'pro' },
         { q: "You notice you are about to raise it for the fourth time.", a: "(say nothing — the case is made) [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
+        { q: "They have raised an objection you had not thought about.", a: "\"That's a fair point and I hadn't considered it. Give me a day.\" [Acknowledge Before Suggesting]", guideBack: "What's right about theirs, then yours", bundle: 'pro' },
       ]
     },
   ],
@@ -10676,6 +10691,7 @@ const collectionsModeData = {
         { q: "You are not sure what they actually mind about.", a: "\"Is it the date itself, or telling people it moved?\" [Say Theirs Back]", guideBack: "Their position, as they'd recognise it", bundle: 'pro' },
         { q: "You want to name your own priority to invite theirs.", a: "\"For me it's the timing. The rest I don't mind about.\" [Ask What Matters Most]", guideBack: "A question about priorities, theirs or yours", bundle: 'pro' },
         { q: "They have said several things and you want the one that counts.", a: "\"If you could only have one of those, which would it be?\" [Ask What Matters Most]", guideBack: "A question about priorities, theirs or yours", bundle: 'pro' },
+        { q: "They have set out their position and you want to check you have it.", a: "\"So you'd rather have less of it done properly than all of it rushed.\" [Say Theirs Back]", guideBack: "Their position, as they'd recognise it", bundle: 'pro' },
       ]
     },
     {
@@ -10691,6 +10707,7 @@ const collectionsModeData = {
         { q: "The money question is blocking everything else.", a: "\"Can we park the cost and see if we agree on the rest?\" [Split It Up]", guideBack: "The disagreement, taken one piece at a time", bundle: 'pro' },
         { q: "They agreed very quickly and you are not convinced.", a: "\"You said yes fast. Is it genuinely alright?\" [Refine It Together]", guideBack: "A check that it actually holds", bundle: 'pro' },
         { q: "A midpoint would satisfy neither of you.", a: "\"Splitting the difference gives us both something we didn't want.\" [Build From Both]", guideBack: "An option made of both, not the middle", bundle: 'pro' },
+        { q: "The agreement is made and you can feel something left unsaid.", a: "\"What's the bit of this you'd change if you could?\" [Refine It Together]", guideBack: "A check that it actually holds", bundle: 'pro' },
       ]
     },
     {
@@ -10706,6 +10723,7 @@ const collectionsModeData = {
         { q: "You now know both priorities.", a: "\"Your date, my scope. We both get the bit we cared about.\" [Build From Both]", guideBack: "An option made of both, not the middle", bundle: 'pro' },
         { q: "You are still stuck on part of it.", a: "\"Let's park that piece and settle the rest first.\" [Split It Up]", guideBack: "The disagreement, taken one piece at a time", bundle: 'pro' },
         { q: "You have an agreement and want it to survive.", a: "\"Anything about that you'd still change?\" [Refine It Together]", guideBack: "A check that it actually holds", bundle: 'pro' },
+        { q: "The argument has folded three separate questions into one.", a: "\"Let's do the date first and the budget after. They're not the same argument.\" [Split It Up]", guideBack: "The disagreement, taken one piece at a time", bundle: 'pro' },
       ]
     },
   ],
@@ -10973,6 +10991,7 @@ const collectionsModeData = {
         { q: "The first feeling word you reached for is too big.", a: "\"Not furious. Just properly fed up.\" [Name Your Feeling]", guideBack: "A feeling, owned as yours", bundle: 'pro' },
         { q: "The conflict keeps recurring and never resolves.", a: "\"It's not about the dishes. It's about us doing what we agreed.\" [Say What You Need]", guideBack: "The need underneath", bundle: 'pro' },
         { q: "You are about to say \"you made me feel stupid\".", a: "\"I felt stupid, standing there.\" [Name Your Feeling]", guideBack: "A feeling, owned as yours", bundle: 'pro' },
+        { q: "You are about to say \"you never help round here\".", a: "\"The last four times the bins went out, I did them.\" [Say What Happened]", guideBack: "The event, as a camera would see it", bundle: 'pro' },
       ]
     },
     {
@@ -10988,6 +11007,7 @@ const collectionsModeData = {
         { q: "The change would take real effort on their side.", a: "\"What would make that easy to do?\" [Make a Request]", guideBack: "A request they could say yes to", bundle: 'pro' },
         { q: "You want to know how you came across in it.", a: "\"How did I come across? I'd rather know.\" [Ask What They Felt]", guideBack: "An invitation to tell it their way", bundle: 'pro' },
         { q: "They apologised and nothing has changed.", a: "\"I'm not after an apology. Could you just ask me first next time?\" [Make a Request]", guideBack: "A request they could say yes to", bundle: 'pro' },
+        { q: "They have asked what the actual problem is.", a: "\"I need to know the plan before the day itself. That's the whole of it.\" [Say What You Need]", guideBack: "The need underneath", bundle: 'pro' },
       ]
     },
     {
@@ -11003,6 +11023,7 @@ const collectionsModeData = {
         { q: "You have finished and it is their turn.", a: "\"What was going on for you, though? You'd had a long day.\" [Ask What They Felt]", guideBack: "An invitation to tell it their way", bundle: 'pro' },
         { q: "You are about to say \"you never think about anyone else\".", a: "\"It's happened three times this month.\" [Say What Happened]", guideBack: "The event, as a camera would see it", bundle: 'pro' },
         { q: "They ask why you did not just say so at the time.", a: "\"I need to be able to bring things up without it turning into a row.\" [Say What You Need]", guideBack: "The need underneath", bundle: 'pro' },
+        { q: "You have said your piece and want to know how it came out.", a: "\"Did that land as an accusation? I didn't want it to.\" [Ask What They Felt]", guideBack: "An invitation to tell it their way", bundle: 'pro' },
       ]
     },
   ],
@@ -11019,6 +11040,8 @@ const collectionsModeData = {
         { q: "They say: \"We're out of coffee.\"", a: "\"There's one left. It's mine. It has my name on it in spirit.\" [The Super Stingy One]", guideBack: "A refusal over nothing", bundle: 'pro' },
         { q: "They say: \"I forgot my homework.\"", a: "\"Take mine. Take my whole folder. Take my education, honestly.\" [The Super Generous One]", guideBack: "An offer well past reason", bundle: 'pro' },
         { q: "They say: \"We have three tests next week.\"", a: "\"I'd share my notes, but they're sacred.\" [The Super Stingy One]", guideBack: "A refusal over nothing", bundle: 'pro' },
+        { q: "They say: \"Shall we just split the bill?\"", a: "\"Nobody pays anything until I've done the maths. Sit down.\" [The Bossy Leader]", guideBack: "An order nobody needs", bundle: 'pro' },
+        { q: "They say: \"I've forgotten my lunch.\"", a: "\"Have mine. Have my fork. Have my chair, I'll stand.\" [The Super Generous One]", guideBack: "An offer well past reason", bundle: 'pro' },
       ]
     },
     {
@@ -11033,6 +11056,8 @@ const collectionsModeData = {
         { q: "They say: \"The meeting's been moved to Friday.\"", a: "\"Moved. Without consulting me. After everything I've given.\" [The Mock-Offended One]", guideBack: "Injured dignity, held one beat too long", bundle: 'pro' },
         { q: "They say: \"My laptop died.\"", a: "\"Hand it here. I fix these with my thumbs.\" [The Invincible Hero]", guideBack: "A feat at an impossible scale", bundle: 'pro' },
         { q: "They say: \"I need a new phone.\"", a: "\"A new one. Right in front of the old one. Unbelievable.\" [The Mock-Offended One]", guideBack: "Injured dignity, held one beat too long", bundle: 'pro' },
+        { q: "They say: \"We should tidy this whole room.\"", a: "\"That's a two-day job. Let's admire it instead.\" [The Lazy One]", guideBack: "The least possible response", bundle: 'pro' },
+        { q: "They say: \"The lift's out of order.\"", a: "\"Eight floors? Two at a time and I'll still be up before you.\" [The Invincible Hero]", guideBack: "A feat at an impossible scale", bundle: 'pro' },
       ]
     },
     {
@@ -11575,6 +11600,8 @@ const collectionsModeData = {
         { q: "They gave you the ending and none of the middle.", a: "\"How did you get from there to there?\" [Ask What Happened Next]", guideBack: "The next step in the account", bundle: 'pro' },
         { q: "They used an odd word that did not fit the sentence.", a: "\"You said 'reluctantly'. Why reluctantly?\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
         { q: "The same problem has now happened three times.", a: "\"What keeps causing it? Same thing each time?\" [Ask Why It Happened]", guideBack: "The reason behind it", bundle: 'pro' },
+        { q: "They say the meeting was moved twice and then cancelled.", a: "\"Who kept moving it?\" [Ask About the Detail]", guideBack: "One detail, asked about", bundle: 'pro' },
+        { q: "They say they nearly did not go at all.", a: "\"What changed your mind?\" [Ask Why It Happened]", guideBack: "The reason behind it", bundle: 'pro' },
       ]
     },
     {
@@ -11589,6 +11616,8 @@ const collectionsModeData = {
         { q: "They mention their project was cancelled.", a: "\"Was that a relief or the opposite?\" [Ask How It Felt]", guideBack: "Their reaction, asked for directly", bundle: 'pro' },
         { q: "They say the move went fine in the end.", a: "\"What was the worst day of it?\" [Ask About the Hard Part]", guideBack: "The difficult bit, singled out", bundle: 'pro' },
         { q: "They are too close to a problem to see round it.", a: "\"If a friend told you this, what would you say to them?\" [Ask How It Looked From Elsewhere]", guideBack: "The same thing from another side", bundle: 'pro' },
+        { q: "They have described a long week and ended with \"anyway, it's done now\".", a: "\"Which day of it would you least like to repeat?\" [Ask About the Hard Part]", guideBack: "The difficult bit, singled out", bundle: 'pro' },
+        { q: "They are describing a decision their manager made that they clearly disagree with.", a: "\"What do you think she was weighing up?\" [Ask How It Looked From Elsewhere]", guideBack: "The same thing from another side", bundle: 'pro' },
       ]
     },
     {
@@ -11837,6 +11866,8 @@ const collectionsModeData = {
         { q: "They say nobody would notice you were gone.", a: "\"Which means they keep paying you for years. You become a rumour.\" [Then What Happens]", guideBack: "What must happen now, because of that", bundle: 'pro' },
         { q: "You have gone blank and the story is waiting for you.", a: "\"So what happens is your mum gets home before the boxes go out.\" [Then What Happens]", guideBack: "What must happen now, because of that", bundle: 'pro' },
         { q: "They have made your excuse bigger than you meant it.", a: "\"Yes, and I've already told my manager, so we're committed now.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
+        { q: "The story about the fort has only the two of you in it.", a: "\"And now your sister wants in, and she's brought a sleeping bag.\" [Bring Someone In]", guideBack: "A new person, animal or object, reacting", bundle: 'pro' },
+        { q: "They say they would never leave the flat again.", a: "\"Yes, and the post starts piling up against the door like a snowdrift.\" [Yes, And]", guideBack: "Their idea, with something built on it", bundle: 'pro' },
       ]
     },
     {
@@ -11851,6 +11882,8 @@ const collectionsModeData = {
         { q: "They describe a small mess.", a: "\"Small? They're naming a warning label after you.\" [Make It Bigger]", guideBack: "The same thing, at an impossible scale", bundle: 'pro' },
         { q: "The plan in the story is going suspiciously well.", a: "\"What if it works perfectly and now it's your job forever?\" [What If]", guideBack: "A threat to the plan", bundle: 'pro' },
         { q: "The story is flagging and needs a reaction.", a: "\"And the headteacher has been watching all of this from a parked car.\" [Bring Someone In]", guideBack: "A new person, animal or object, reacting", bundle: 'pro' },
+        { q: "They say they would only need a few days off.", a: "\"A few days? You'd come back to a new manager and a statue.\" [Make It Bigger]", guideBack: "The same thing, at an impossible scale", bundle: 'pro' },
+        { q: "Everything in the plan is working out suspiciously neatly.", a: "\"What if the person who sits opposite you notices first?\" [What If]", guideBack: "A threat to the plan", bundle: 'pro' },
       ]
     },
     {
@@ -11866,6 +11899,7 @@ const collectionsModeData = {
         { q: "There is nobody in the story but the two of you.", a: "\"Then the cat gets involved, and she is furious.\" [Bring Someone In]", guideBack: "A new person, animal or object, reacting", bundle: 'pro' },
         { q: "The story has hit a problem with no way out.", a: "\"Easy — you just download the whole term directly into your head.\" [Solve It Ridiculously]", guideBack: "An absurd solution, said with confidence", bundle: 'pro' },
         { q: "They have raised the stakes and it needs following.", a: "\"Which means two years later it comes up in a job interview.\" [Then What Happens]", guideBack: "What must happen now, because of that", bundle: 'pro' },
+        { q: "The bit has run long and needs a way out.", a: "\"Simple — you move to a different country and start again.\" [Solve It Ridiculously]", guideBack: "An absurd solution, said with confidence", bundle: 'pro' },
       ]
     },
   ],
@@ -11932,6 +11966,8 @@ const collectionsModeData = {
         { q: "The story is drifting and needs its first sentence back.", a: "\"I was so nervous I nearly didn't go in.\" [Open It in One Sentence]", guideBack: "One sentence that opens it", bundle: 'pro' },
         { q: "You are about to trail off.", a: "\"…and that's how I ended up carrying a wardrobe through town.\" [Land the Resolution]", guideBack: "The ending, said plainly", bundle: 'pro' },
         { q: "The turn is a decision rather than an event.", a: "\"I had four seconds to decide whether to say anything.\" [Name the Turn]", guideBack: "The thing that went wrong, or changed", bundle: 'pro' },
+        { q: "You have started with the year and the place and nothing has happened yet.", a: "\"Short version: I ended up on a stage I wasn't supposed to be on.\" [Open It in One Sentence]", guideBack: "One sentence that opens it", bundle: 'pro' },
+        { q: "The ending is flat and you keep adding to it.", a: "\"And then we all went home. That's it.\" [Land the Resolution]", guideBack: "The ending, said plainly", bundle: 'pro' },
       ]
     },
     {
@@ -11946,6 +11982,8 @@ const collectionsModeData = {
         { q: "The story ended with something you now do differently.", a: "\"I ring first now. Always.\" [Say the Takeaway]", guideBack: "One line about what it left you with — or none", bundle: 'pro' },
         { q: "You are hunting for your best story while the moment passes.", a: "\"Nothing dramatic — this happened Tuesday and I'm still annoyed.\" [Pick One Fast]", guideBack: "A small story, chosen quickly", bundle: 'pro' },
         { q: "You want to slow down at the important moment.", a: "\"And then there was a pause. Quite a long one.\" [Put the Feeling In]", guideBack: "The feeling, in the words themselves", bundle: 'pro' },
+        { q: "You have told the events and none of your own reaction.", a: "\"I genuinely did not know what to do with my face.\" [Put the Feeling In]", guideBack: "The feeling, in the words themselves", bundle: 'pro' },
+        { q: "Somebody says \"neighbours\" and you have four seconds.", a: "\"The man who knocked at eleven at night about a washing machine.\" [Pick One Fast]", guideBack: "A small story, chosen quickly", bundle: 'pro' },
       ]
     },
     {
@@ -11961,6 +11999,7 @@ const collectionsModeData = {
         { q: "The story has finished and there is something in it.", a: "\"I'd been treating a scheduling problem as if it were personal.\" [Say the Takeaway]", guideBack: "One line about what it left you with — or none", bundle: 'pro' },
         { q: "It is nearly your turn in a round of stories.", a: "\"I've got one. It's not as good as yours but it's shorter.\" [Pick One Fast]", guideBack: "A small story, chosen quickly", bundle: 'pro' },
         { q: "The ending is unsatisfying and you want to own it.", a: "\"And then nothing happened. I've built that up far too much.\" [Land the Resolution]", guideBack: "The ending, said plainly", bundle: 'pro' },
+        { q: "The story has finished and you are reaching for a moral it does not have.", a: "\"I don't think it taught me anything. It was just an odd day.\" [Say the Takeaway]", guideBack: "One line about what it left you with — or none", bundle: 'pro' },
       ]
     },
   ],

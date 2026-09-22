@@ -3930,6 +3930,25 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.94', date: 'September 2026', title: 'Memorize, round 1 \u2014 the four decks that ask about the other modes', audience: 'dev',
+    items: [
+      'Six packs are now complete in Memorize: <strong>Setup Statement</strong>, <strong>Role Based Humour</strong>, <strong>Giving Criticism</strong>, <strong>Stories in Conversation</strong>, <strong>Listening Through Questions</strong> and <strong>Reframing</strong>. 341 cards, and 25 new decks.',
+      'Every pack was missing the same four: <strong>Collections</strong>, <strong>Sequences</strong>, <strong>Challenges</strong> and <strong>Mindset</strong> \u2014 the decks that ask theory questions about the other modes\u2019 content. They are the reason Memorize had to come last, and they can be written now because the last two versions finished what they ask about.',
+      'Each one lists the pack\u2019s decks in that mode and ends on an observation rather than a summary. <em>Giving Criticism</em>: four of its eight mindset decks are reasons not to speak at all. <em>Stories in Conversation</em>: three of the seven strategies happen before you say a word. <em>Role Based Humour</em>: the size of the role goes down as the stakes go up.',
+      '<strong>Choose the Size</strong> in Giving Criticism finally has its own Memorize deck \u2014 the strategy has existed since the pack was built and the theory deck was never written.',
+      'Sixteen packs left, in three rounds.',
+    ],
+  },
+  {
+    version: 'v1.28.93', date: 'September 2026', title: 'Collections and Sequences complete \u2014 only Memorize left', audience: 'dev',
+    items: [
+      'The last eleven packs are done: 39 cards and 34 scenarios across <strong>Role Based Humour</strong>, <strong>Giving Criticism</strong>, <strong>Listening Through Questions</strong>, <strong>Stories in Conversation</strong>, <strong>Negotiation and Compromise</strong>, <strong>Building a Story</strong>, <strong>Story Banter</strong>, <strong>Supporting Conversations</strong>, <strong>Persuasion and Influence \u2014 Pt. 2</strong>, <strong>Apologizing \u2014 Pt. 2</strong> and <strong>Conflict Emotions</strong>. Every release pack now stands at 3 \u00d7 8 in Collections and 3 \u00d7 3 in Sequences.',
+      'Seven decks that offered a choice between two strategies now offer three, using the same number of cards. <em>Keep It Moving</em> gains <em>Bring Someone In</em>, <em>Generous or Stingy</em> gains <em>The Bossy Leader</em>, <em>The Apology Itself</em> gains <em>Say Their Feelings Matter</em>, and so on \u2014 in each case a strategy that already belonged under that heading and had simply never been used there.',
+      '<strong>Closing a Subject Well</strong> in Listening Through Questions had a single scenario where every other sequence deck in the release scope had two. It now has three, like the rest.',
+      'Four of the six modes are now complete across all 52 release packs. Memorize is the only one left: 1 065 cards, and its four mode decks per pack ask about exactly the content these last two versions finished.',
+    ],
+  },
+  {
     version: 'v1.28.92', date: 'September 2026', title: 'Collections and Sequences, round 1 \u2014 and the deck that was not a choice', audience: 'dev',
     items: [
       'Eleven packs now meet the spec in Collections and Sequences: 43 cards and 40 new scenarios across <strong>Reframing</strong>, <strong>Explain Things \u2014 Pt. 2</strong>, <strong>Show Understanding \u2014 Pt. 2</strong>, <strong>Deep Questions</strong>, <strong>Emotion Labelling</strong>, <strong>Setup Statement</strong>, <strong>Validation</strong>, <strong>Giving Examples</strong>, <strong>Starting Conversations \u2014 Pt. 3</strong> and <strong>Pt. 4</strong>, and <strong>Receiving Feedback</strong>.',
