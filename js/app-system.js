@@ -765,7 +765,7 @@ applyInputCounterVisibility();
     }
     if (cfg.minLevel === 'complete') return 'hidden';
     if (cfg.minLevel === 'extended') {
-      if (!getExtendedOwned().includes(progId)) return 'hidden';
+      if (!ownsExtended(progId)) return 'hidden';
       // Extended purchases still need an active Pro plan (yearly Pro model)
       return level === 'pro' ? 'available' : 'locked';
     }
@@ -827,6 +827,7 @@ applyInputCounterVisibility();
     // leak through any of the paths below.
     expireBetaGrant();
     expirePackGrants();
+    expireUnlockGrants();
     // v1.26.75 — DEFAULT IS NOW freemium, not complete. A fresh install used
     // to see the entire library, which would have made the beta test say
     // nothing at all about the paid model. This is the primary of five sites;
@@ -904,9 +905,72 @@ applyInputCounterVisibility();
       notAfter: '2026-12-31',
       label: 'Biblical Counseling 1 & 2 unlocked in full for 180 days.',
     },
+    // v1.28.97 \u2014 three blanket codes, all running to the turn of the year.
+    // They do not raise the LEVEL: they hand out the two things a Pro user can
+    // still be missing. EXTENDED26 grants ownership of everything in the
+    // extended store, which behaves exactly like a purchase and therefore still
+    // needs an active Pro plan to use. PROGRAMS26 counts every programme
+    // checkpoint as passed, so nothing inside a programme is waiting on a test.
+    // ALLACCESS26 is both at once.
+    EXTENDED26: {
+      kind: 'unlock', unlocks: ['extended'],
+      until: '2026-12-31', notAfter: '2026-12-31',
+      label: 'Extended store unlocked until the end of the year. Needs Pro to use.',
+    },
+    PROGRAMS26: {
+      kind: 'unlock', unlocks: ['programs'],
+      until: '2026-12-31', notAfter: '2026-12-31',
+      label: 'Every programme checkpoint counts as passed, until the end of the year.',
+    },
+    ALLACCESS26: {
+      kind: 'unlock', unlocks: ['extended', 'programs'],
+      until: '2026-12-31', notAfter: '2026-12-31',
+      label: 'Extended store and all programme parts unlocked until the end of the year.',
+    },
   };
   const GRANT_KEY  = 'ds_beta_grant';    // { level, until, code }
   const PACKS_KEY  = 'ds_pack_grants';   // { packKey: { until, code } }
+  const UNLOCK_KEY = 'ds_unlock_grants'; // { extended: {until,code}, programs: {until,code} }
+
+  // ── Blanket unlocks (v1.28.97) ───────────────────────────────────────────
+  // A third kind of grant, next to the level grant and the pack grants. It
+  // does not change the level and it does not name packs: it switches off one
+  // specific gate for as long as it lasts.
+  //
+  //   extended \u2014 everything in the extended store counts as owned. Ownership
+  //              is not the same as access: an extended item still needs Pro,
+  //              exactly as a bought one does.
+  //   programs \u2014 every programme checkpoint counts as passed, so no Part is
+  //              waiting on a test. Parts that need Pro still need Pro.
+  function readUnlocks() {
+    try { return JSON.parse(localStorage.getItem(UNLOCK_KEY)) || {}; }
+    catch { return {}; }
+  }
+  function writeUnlocks(o) {
+    try { localStorage.setItem(UNLOCK_KEY, JSON.stringify(o)); } catch (e) {}
+  }
+  function expireUnlockGrants() {
+    const g = readUnlocks();
+    const now = Date.now();
+    let changed = false;
+    Object.keys(g).forEach(k => {
+      if (!g[k] || !g[k].until || g[k].until <= now) { delete g[k]; changed = true; }
+    });
+    if (changed) writeUnlocks(g);
+  }
+  function unlockActive(kind) {
+    const g = readUnlocks()[kind];
+    return !!(g && g.until && g.until > Date.now());
+  }
+  // The single ownership test for extended items \u2014 packs, programs and the
+  // `pack::bundle` ids. Everything that used to read ds_extended_owned
+  // directly goes through here, so the grant reaches all of them at once.
+  function ownsExtended(id) {
+    if (unlockActive('extended')) return true;
+    return getExtendedOwned().includes(id);
+  }
+  // Used by the programme route here and by isCheckpointPassed in app-ui.js.
+  function checkpointsUnlocked() { return unlockActive('programs'); }
 
   function readGrant() {
     try { return JSON.parse(localStorage.getItem(GRANT_KEY)) || null; }
@@ -976,6 +1040,12 @@ applyInputCounterVisibility();
       out.push({ kind: 'pack', pack: k, code: pg[k].code,
                  days: Math.max(0, Math.ceil((pg[k].until - Date.now()) / 86400000)) });
     });
+    const ug = readUnlocks();
+    Object.keys(ug).forEach(k => {
+      if (!ug[k] || !ug[k].until) return;
+      out.push({ kind: 'unlock', unlock: k, code: ug[k].code,
+                 days: Math.max(0, Math.ceil((ug[k].until - Date.now()) / 86400000)) });
+    });
     if (!out.length) return null;
     // Backwards compatible: callers that expect the old single object still
     // get the level grant's fields, with the full list on `.all`.
@@ -993,14 +1063,17 @@ applyInputCounterVisibility();
   function clearGrant() {
     const hadLevel = !!readGrant();
     const packs    = Object.keys(readPackGrants());
+    const unlocks  = Object.keys(readUnlocks());
     localStorage.removeItem(GRANT_KEY);
     localStorage.removeItem(PACKS_KEY);
+    localStorage.removeItem(UNLOCK_KEY);
     if (hadLevel) {
       localStorage.setItem(LEVEL_KEY, 'freemium');
       localStorage.setItem('dev_level_forced', 'true');
     }
-    if (hadLevel || packs.length) applyAccessLevel();
-    return { level: hadLevel, packs: packs, any: hadLevel || packs.length > 0 };
+    if (hadLevel || packs.length || unlocks.length) applyAccessLevel();
+    return { level: hadLevel, packs: packs, unlocks: unlocks,
+             any: hadLevel || packs.length > 0 || unlocks.length > 0 };
   }
 
   // Returns { ok, message }. Never throws — it is wired to a text field.
@@ -1017,7 +1090,21 @@ applyInputCounterVisibility();
       return { ok: false, message: 'That code has expired.' };
     }
 
-    const until = Date.now() + def.days * 86400000;
+    // A code either runs for a number of days from redemption, or to a fixed
+    // date \u2014 which is what makes a year-end code mean the same thing whenever
+    // it is entered.
+    const until = def.until ? Date.parse(def.until + 'T23:59:59')
+                            : Date.now() + def.days * 86400000;
+    if (!(until > Date.now())) return { ok: false, message: 'That code has expired.' };
+
+    if (def.kind === 'unlock') {
+      const g = readUnlocks();
+      (def.unlocks || []).forEach(k => { g[k] = { until: until, code: code }; });
+      writeUnlocks(g);
+      applyAccessLevel();
+      return { ok: true, message: def.label || 'Unlocked.' };
+    }
+
 
     if (def.kind === 'pack') {
       if (def.requiresPro) {
@@ -1069,7 +1156,8 @@ applyInputCounterVisibility();
     if (typeof programsData === 'undefined' || !Array.isArray(programsData)) return state;
     let progress = {};
     try { progress = JSON.parse(localStorage.getItem('ds_program_progress')) || {}; } catch {}
-    const cpPassed = (progId, cpId) => !!(progress[progId] && progress[progId][cpId]);
+    const cpPassed = (progId, cpId) =>
+      checkpointsUnlocked() || !!(progress[progId] && progress[progId][cpId]);
     const level   = getLevel();
     const isProUp = level === 'pro' || level === 'complete';
     programsData.forEach(prog => {
@@ -1131,7 +1219,7 @@ applyInputCounterVisibility();
     if (cfg) {
       if (cfg.minLevel === 'extended') {
         // Extended packs require BOTH purchase and an active Pro plan
-        if (!getExtendedOwned().includes(packKey)) standalone = 'hidden';
+        if (!ownsExtended(packKey)) standalone = 'hidden';
         else standalone = isProUp ? 'available' : 'locked';
       } else if (cfg.minLevel === 'complete') {
         standalone = 'hidden';
@@ -1366,8 +1454,10 @@ applyInputCounterVisibility();
       const c = document.querySelector('.collection-card[data-key="' + k + '"]');
       return (c && c.dataset.label) || k;
     };
-    const line = x => (x.kind === 'pack' ? nameOf(x.pack)
-                                         : (x.level === 'pro' ? 'Pro access' : x.level)) +
+    const UNLOCK_LABEL = { extended: 'Extended store', programs: 'All programme parts' };
+    const line = x => (x.kind === 'pack'   ? nameOf(x.pack)
+                     : x.kind === 'unlock' ? (UNLOCK_LABEL[x.unlock] || x.unlock)
+                     : (x.level === 'pro' ? 'Pro access' : x.level)) +
       ' \u2014 ' + (x.days === 0 ? 'expires today' : x.days + ' days left');
     const text = msg || (g ? (g.all || [g]).map(line).join('  \u00b7  ') : '');
     el.textContent = text;
@@ -1401,6 +1491,8 @@ applyInputCounterVisibility();
       if (res.level) parts.push('level code');
       if (res.packs.length) parts.push(res.packs.length + ' pack grant'
         + (res.packs.length === 1 ? '' : 's'));
+      if (res.unlocks && res.unlocks.length) parts.push(res.unlocks.length + ' unlock code'
+        + (res.unlocks.length === 1 ? '' : 's'));
 
       const store = (() => {
         try { return (JSON.parse(localStorage.getItem('ds_redeemed_codes')) || []).length; }
@@ -1437,13 +1529,19 @@ applyInputCounterVisibility();
     btn.addEventListener('click', () => {
       const res = clearGrant();
       loadDevLevelUI();
+      // v1.28.97 \u2014 tre sorters grant nu, sa meddelandet byggs av delar
+      // i stallet for att rakna upp kombinationerna.
+      const bits = [];
+      if (res.level) bits.push('level code');
+      if (res.packs.length) bits.push(res.packs.length + ' pack grant'
+        + (res.packs.length === 1 ? '' : 's'));
+      if (res.unlocks && res.unlocks.length) bits.push(res.unlocks.length + ' unlock code'
+        + (res.unlocks.length === 1 ? '' : 's'));
       let msg = 'No access code to clear.';
-      if (res.level && res.packs.length)
-        msg = 'Level code and ' + res.packs.length + ' pack grant'
-            + (res.packs.length === 1 ? '' : 's') + ' cleared \u2014 back to freemium.';
-      else if (res.level) msg = 'Level code cleared \u2014 back to freemium.';
-      else if (res.packs.length)
-        msg = res.packs.join(', ') + ' locked again. Your level is unchanged.';
+      if (bits.length) {
+        msg = 'Cleared: ' + bits.join(', ') + '.'
+            + (res.level ? ' Back to freemium.' : ' Your level is unchanged.');
+      }
       renderGrantStatus(msg);
       // v1.27.60 \u2014 2,5 s var for kort: knappen sag ut att inte gora
       // nagot alls, for meddelandet hann forsvinna innan man last det.
@@ -1489,7 +1587,7 @@ applyInputCounterVisibility();
   // past them to the next test. Both now ask this instead.
   function programRoutePending(packKey) { return !!_programState(packKey).pendingOpenRoute; }
 
-  window.accessLevel = { getLevel, canAccess, badgeLabel, applyModeLocks, updateNavUpgradeBtn, packVisibility, programVisibility, sectionVisibility, programRoutePending, applyAccessLevel, redeemCode, grantStatus, clearGrant, packGranted, packGrantFull, codes: ACCESS_CODES };
+  window.accessLevel = { getLevel, canAccess, badgeLabel, applyModeLocks, updateNavUpgradeBtn, packVisibility, programVisibility, sectionVisibility, programRoutePending, applyAccessLevel, redeemCode, grantStatus, clearGrant, packGranted, packGrantFull, ownsExtended, checkpointsUnlocked, codes: ACCESS_CODES };
   window._applyAccessLevel = applyAccessLevel;
 
   // Init
@@ -3070,8 +3168,10 @@ function getActiveBundles(packKey) {
     catch { return []; }
   })();
 
+  const ownsExt = (id) => (window.accessLevel && window.accessLevel.ownsExtended)
+    ? window.accessLevel.ownsExtended(id) : extOwned.includes(id);
   const isExtendedBundleOwned = (bundleId) =>
-    level === 'complete' || extOwned.includes(`${packKey}::${bundleId}`);
+    level === 'complete' || ownsExt(`${packKey}::${bundleId}`);
 
   // v1.27.56 — a pack opened by a `fullAccess` code counts as pro for its own
   // bundles. Extended bundles stay out: those are bought, not granted.
@@ -3280,7 +3380,9 @@ window.renderBundleSection = function(containerEl, packKey) {
     if (tier === 'free') return true;
     if (tier === 'pro' || tier === 'pro-opt') return level === 'pro' || level === 'complete';
     if (tier === 'extended') return level === 'complete' ||
-      (level === 'pro' && extOwned.includes(`${packKey}::${bundleId}`));
+      (level === 'pro' && ((window.accessLevel && window.accessLevel.ownsExtended)
+        ? window.accessLevel.ownsExtended(`${packKey}::${bundleId}`)
+        : extOwned.includes(`${packKey}::${bundleId}`)));
     return false;
   };
 
@@ -3929,6 +4031,17 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  {
+    version: 'v1.28.97', date: 'September 2026', title: 'Three blanket access codes', audience: 'dev',
+    items: [
+      'Three new codes for the Settings field, all running to <strong>31 December 2026</strong> whenever they are entered \u2014 a fixed date rather than a number of days, so a code redeemed in November is not still live in February.',
+      '<strong>EXTENDED26</strong> \u2014 everything in the extended store counts as owned: the extended packs, the extended programmes and the extended bundles inside packs. Ownership is not access, exactly as with a real purchase, so it takes effect in Pro; at freemium the items show as locked rather than opening.',
+      '<strong>PROGRAMS26</strong> \u2014 every programme checkpoint counts as passed, so nothing inside a programme is waiting on a test. Parts that need Pro still need Pro; the code removes the checkpoint gate, not the tier gate.',
+      '<strong>ALLACCESS26</strong> \u2014 both at once.',
+      'They are a third kind of grant next to the level codes and the pack codes, stored in <code>ds_unlock_grants</code> and shown in the Settings status row with the days left. <strong>Reset access</strong> and <strong>Clear code</strong> in developer settings both take them back, and say how many they took.',
+      'Neither code writes anything into the purchase list, so clearing it leaves no trace of a purchase that never happened. 18 new checks in test-codes cover the two gates separately, the freemium case, the reset and the year-end expiry.',
+    ],
+  },
   {
     version: 'v1.28.96', date: 'September 2026', title: 'Memorize, round 3 \u2014 seventeen packs down, five to go', audience: 'dev',
     items: [

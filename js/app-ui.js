@@ -2228,6 +2228,11 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   function saveProgress(p) { localStorage.setItem(PROG_KEY, JSON.stringify(p)); }
 
   function isCheckpointPassed(programId, checkpointId) {
+    // v1.28.97 \u2014 an unlock grant (PROGRAMS26 / ALLACCESS26) counts every
+    // checkpoint as passed, so no Part is waiting on a test. It says nothing
+    // about tier: a Part behind Pro still needs Pro.
+    if (window.accessLevel && window.accessLevel.checkpointsUnlocked
+        && window.accessLevel.checkpointsUnlocked()) return true;
     const p = getProgress();
     return !!(p[programId] && p[programId][checkpointId]);
   }
@@ -3038,6 +3043,11 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   }
 
   function isOwned(id) {
+    // v1.28.97 \u2014 EXTENDED26 / ALLACCESS26 make every store item count as
+    // owned. Owned is not the same as usable: an extended item still needs an
+    // active Pro plan, exactly as a bought one does.
+    if (window.accessLevel && window.accessLevel.ownsExtended
+        && window.accessLevel.ownsExtended(id)) return true;
     return getOwned().includes(id);
   }
 
