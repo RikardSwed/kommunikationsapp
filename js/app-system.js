@@ -3930,6 +3930,27 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.91', date: 'September 2026', title: 'Mindset complete \u2014 the last six packs, and the composure that costs something', audience: 'dev',
+    items: [
+      'The Mindset sweep is finished. <strong>Emotion Labelling and Regulation</strong>, <strong>Explain Things \u2014 Pt. 2</strong>, <strong>Giving Examples</strong>, <strong>Receiving Feedback and Criticism</strong> and <strong>Starting Conversations \u2014 Pt. 3</strong> and <strong>Pt. 4</strong> now meet the spec. Four new decks, 112 cards. Every release pack has one Mindset deck per strategy, eight cards each.',
+      '<strong>The Keeping It Together Mindset</strong> (the price) is the one Emotion Labelling was missing: composure is a real skill, and never naming anything is what it costs. <em>"Nobody can tell when you are annoyed"</em> &rarr; <em>"So nobody adjusts, and I carry it alone. That\u2019s the deal I made."</em>',
+      '<strong>The Taking It Well Mindset</strong> does the same for Receiving Feedback \u2014 taking it well can become its own way of not engaging. <em>"You have had this feedback before and took it well then too"</em> &rarr; <em>"Taken well twice, changed nothing once. That\u2019s the bit they\u2019ll notice."</em>',
+      '<strong>Answering What Was Asked</strong> (two truths) covers the most ordinary obstacle in Explain Things: they asked what it is, and answering what somebody asked is not a fault. The addition is assuming the words are the whole question.',
+      '<strong>It Does Not Prove Anything</strong> is for the person who goes quiet because an example is not evidence. It isn\u2019t \u2014 it shows what you mean, and you can say which of the two you are offering.',
+      'Sixteen existing Mindset decks across the six packs were filled out to eight cards.',
+    ],
+  },
+  {
+    version: 'v1.28.90', date: 'September 2026', title: 'Volume sweep, Mindset round 5 — the virtue that keeps you quiet', audience: 'dev',
+    items: [
+      '<strong>Setup Statement</strong>, <strong>Show Understanding \u2014 Pt. 2</strong> and <strong>Deep Questions</strong> now meet the spec in Mindset. Five new decks, 84 cards.',
+      '<strong>Being a Good Listener</strong> (the price) is the one this pack needed most: preferring to listen is a real virtue, and it is also why every person you meet has to be the one who opens. <em>"I would rather hear about them than talk about me"</em> &rarr; <em>"Then every conversation you have starts with somebody else deciding to work."</em>',
+      '<strong>Getting It Wrong Out Loud</strong> (two truths) covers saying a version back and having it be wrong. A wrong version really does show you missed something, so flatly denying that would be dishonest \u2014 the back keeps the judgement and drops the conclusion.',
+      '<strong>Nothing Interesting to Offer</strong>, <strong>Only Catching Half</strong> and <strong>The Staying With It Mindset</strong> are swap decks. The last one comes straight out of the pack\u2019s challenge <em>A Sensitive Area</em>: the instinct to back out is what makes it awkward, not the subject.',
+      'Fourteen existing Mindset decks in the three packs were filled out to eight cards.',
+    ],
+  },
+  {
     version: 'v1.28.89', date: 'September 2026', title: 'Volume sweep, Mindset round 4 — the belief that keeps people out of a pack', audience: 'dev',
     items: [
       '<strong>Role Based Humour</strong> and <strong>Listening Through Questions</strong> now meet the spec in Mindset, 7 decks each. Six new decks, 76 cards.',
