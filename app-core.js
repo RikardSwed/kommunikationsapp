@@ -1,0 +1,1082 @@
+// app-core.js — globals, navigation, mode registry, feedback storage
+// Part of Deckstack v1.25.0
+//
+// Per-mode state, rendering, and gestures now live in mode-engine.js
+// (DS.createCardMode / DS.createHandsfreeMode) and are declared in
+// app-modes.js and app-handsfree.js.
+
+const VERSION = 'v1.28.93';
+
+// Keep every version label in the UI in sync with VERSION (v1.26.44).
+// The hardcoded strings in index.html are only fallbacks — this runs at
+// startup so version bumps never need manual edits of those divs again.
+document.querySelectorAll('.settings-version').forEach(el => {
+  const t = el.textContent.trim();
+  if (!t || /^v\d/.test(t)) el.textContent = VERSION;
+});
+
+// v1.27.10 — mark the native build. In a browser the page has browser chrome
+// above it; in the Capacitor web view it is full screen and the top row ends up
+// crowded against the status bar. The extra spacing lives in style.css under
+// `.ds-native` so the browser is untouched, and one variable there tunes it.
+try {
+  const native = !!(window.Capacitor && (
+    (typeof window.Capacitor.isNativePlatform === 'function' && window.Capacitor.isNativePlatform()) ||
+    window.Capacitor.isNative === true
+  ));
+  if (native) document.documentElement.classList.add('ds-native');
+} catch (e) {}
+
+// Pack icon map — global so both dashboard and favorites can use it
+const PACK_ICONS = {
+  assertive:          'ti-messages',
+  conversational:     'ti-mood-happy',
+  humour:             'ti-mood-smile',
+  teasing:            'ti-mood-wink',
+  criticism:          'ti-message-2',
+  conversationaldepth:'ti-book',
+  compliments:        'ti-heart',
+  selfhumour:         'ti-mood-laugh',
+  startingconnecting: 'ti-users',
+  listeningresponding:'ti-ear',
+  influenceframing:   'ti-bulb',
+  storytelling:       'ti-book',
+  humourpractise:     'ti-mood-smile',
+  setupstatement: 'ti-message-circle',
+  apologizing2: 'ti-heart-handshake',
+  startingconversations3: 'ti-message',
+  endingconversations: 'ti-door',
+  reactingtounexpectedstatements: 'ti-alert-triangle',
+  deepquestions: 'ti-question-mark',
+  howtointerrupt: 'ti-microphone',
+  handleinterruptions: 'ti-shield',
+  validation: 'ti-heart',
+  supportingconversations: 'ti-friends',
+  describethings: 'ti-eye',
+  explainthings: 'ti-bulb',
+  givingexamples: 'ti-puzzle',
+  storytellingwiththesixws: 'ti-book',
+  storiesinconversation: 'ti-quote',
+  praiseandencouragement: 'ti-star',
+  givingcriticism: 'ti-thumb-down',
+  receivingfeedbackandcriticism: 'ti-thumb-up',
+  apologizing1: 'ti-refresh',
+  agreeing: 'ti-check',
+  disagreeing: 'ti-x',
+  persuasionandinfluence1: 'ti-target',
+  persuasionandinfluence2: 'ti-target',
+  negotiationandcompromise: 'ti-scale',
+  brokenrecord: 'ti-repeat',
+  respondingtopassiveaggression: 'ti-mask',
+  makingrequests: 'ti-hand-move',
+  sayingno: 'ti-hand-stop',
+  emotionlabellingandregulation: 'ti-mood-smile',
+  conflictemotions: 'ti-flame',
+  rolebasedhumour: 'ti-mood-happy',
+  masculine2: 'ti-shield',
+  masculine3: 'ti-shield',
+  masculine4: 'ti-shield',
+  masculine5: 'ti-shield',
+  masculine6: 'ti-shield',
+  masculinesv: 'ti-shield',
+  parenting1: 'ti-heart',
+  parenting2: 'ti-heart',
+  parenting3: 'ti-heart',
+  parenting4: 'ti-heart',
+  parenting5: 'ti-heart',
+  praxframe1: 'ti-target',
+  praxframe2: 'ti-target',
+  praxframe3: 'ti-target',
+  praxframe4: 'ti-target',
+  praxframe5: 'ti-target',
+  praxdread1: 'ti-target',
+  praxdread2: 'ti-target',
+  praxdread3: 'ti-target',
+  praxdread4: 'ti-target',
+  praxdread5: 'ti-target',
+  listeningthroughquestions: 'ti-question-mark',
+  showunderstanding2: 'ti-ear',
+  setupquestion: 'ti-message-circle',
+  givingcounterexamples: 'ti-arrow-back-up',
+  discussing: 'ti-messages',
+  storybanter: 'ti-mood-wink',
+  explainthings2: 'ti-bulb',
+  buildingastory: 'ti-book-2',
+  reframing: 'ti-rotate',
+  danbacon1: 'ti-flame',
+  danbacon2: 'ti-flame',
+  danbacon3: 'ti-flame',
+  danbacon4: 'ti-flame',
+  oconnor1: 'ti-shield',
+  oconnor2: 'ti-shield',
+  oconnor3: 'ti-shield',
+  oconnor4: 'ti-shield',
+  oconnor5: 'ti-shield',
+  oconnor6: 'ti-shield',
+  oconnor7: 'ti-shield',
+  jimmy1: 'ti-heart',
+  jimmy2: 'ti-heart',
+  jimmy3: 'ti-heart',
+  jimmy4: 'ti-heart',
+  jimmy5: 'ti-heart',
+  jimmy6: 'ti-heart',
+  toddv1: 'ti-target',
+  toddv2: 'ti-target',
+  toddv3: 'ti-target',
+  toddv4: 'ti-target',
+  toddv5: 'ti-target',
+  firststrategies: 'ti-cards',
+  jfisher1: 'ti-shield-bolt',
+  jfisher2: 'ti-messages',
+  talkingaboutyourself: 'ti-cards',
+  startingconversations1: 'ti-cards',
+  startingconversations2: 'ti-cards',
+  startingconversations4: 'ti-cards',
+  showunderstanding: 'ti-cards',
+  exploringatopic: 'ti-cards',
+  changingtopics: 'ti-cards',
+  complimenting: 'ti-cards',
+  responsivehumour: 'ti-cards',
+  assertivecomm1: 'ti-cards',
+  assertivecomm2: 'ti-cards',
+  assertivecommadv: 'ti-cards',
+  integratedmaster: 'ti-cards',
+  counseling1: 'ti-cards',
+  counseling2: 'ti-cards',
+  seenandtrusted2careshedidnotaskf: 'ti-cards',
+  seenandtrusted3askingtobetrusted: 'ti-cards',
+  seenandtrusted1thesafetyshereads: 'ti-cards',
+  masculine1: 'ti-cards',
+};
+function packIcon(key) {
+  const name = PACK_ICONS[key] || 'ti-cards';
+  return `<i class="ti ${name}" aria-hidden="true"></i>`;
+}
+
+// ─── SCREENS ──────────────────────────────────────────────────────────────────
+const homeScreen = document.getElementById('homeScreen');
+const modeScreen = document.getElementById('modeScreen');
+
+// Filled in by the mode engine as modes are created (all 12 training screens).
+const TRAINING_SCREENS = [];
+
+function hideAll() {
+  [homeScreen, modeScreen,
+   ...TRAINING_SCREENS.map(id => document.getElementById(id))
+  ].forEach(el => { if (el) el.style.display = 'none'; });
+}
+
+// Track whether mode screen was opened from dashboard or library
+let _modeOrigin = 'library';
+
+// ─── NAVIGATION CONTEXT (v1.27.12) ───────────────────────────────────────────
+//
+// The forward arrow on the mode screen walks a list that is captured when the
+// pack is opened. What that list IS depends on where you opened the pack from,
+// and getting it wrong is invisible: the arrow still works, it just takes you
+// somewhere that has nothing to do with what you were looking at.
+//
+// The list is a list of STEPS, not packs, because a program is not a flat run
+// of packs — it is packs interrupted by checkpoints. A step is either:
+//
+//   { type: 'pack',       key, label }
+//   { type: 'checkpoint', programId, sectionIndex, label }
+//
+// Library, Topics and Folders produce pack-only lists. Programs produce the
+// interleaved one, built in app-ui.js, which is what makes the arrow able to
+// hand you a test at the right moment instead of skipping past it.
+let _packContext = null; // { kind, steps: [...], index: N } | null
+
+function navToHome() {
+  // Layered stack: make the origin tab active/visible BEFORE the slide-out,
+  // so it is already sitting behind the departing mode screen (no blank flash).
+  const origin = (typeof TAB_SCREENS !== 'undefined' && TAB_SCREENS[_modeOrigin]) ? _modeOrigin : 'library';
+  if (typeof showTab === 'function') showTab(origin);
+  modeScreen.classList.remove('slide-in-right', 'slide-out-right');
+  void modeScreen.offsetWidth;
+  modeScreen.classList.add('slide-out-right');
+  setTimeout(() => {
+    modeScreen.style.display = 'none';
+    modeScreen.classList.remove('slide-out-right');
+  }, 320);
+}
+
+function navToMode() {
+  const activeTab = document.querySelector('.nav-tab.active');
+  _modeOrigin = activeTab ? activeTab.dataset.tab : 'library';
+  // Layered stack: the origin tab screen stays visible underneath.
+  // modeScreen is opaque and later in the DOM, so it covers the origin
+  // while sliding in and reveals it again while sliding out.
+  modeScreen.style.display = 'flex';
+  modeScreen.classList.remove('slide-in-right', 'slide-out-right');
+  void modeScreen.offsetWidth;
+  modeScreen.classList.add('slide-in-right');
+  hideBottomNav();
+}
+
+// v1.27.08 — the six handsfree screens, so navToTraining can tell which of the
+// two first-run guides to offer. Standard screens are everything else.
+const HANDSFREE_SCREENS = ['hfScreen', 'hfMemScreen', 'hfChallScreen',
+                           'hfFlowScreen', 'hfMindScreen', 'hfCollScreen'];
+
+function navToTraining(id) {
+  // Layered stack: do NOT touch modeScreen here. Whatever is underneath
+  // (mode screen, or the dashboard for Continue-card launches) stays put,
+  // and the opaque training screen simply slides in over it.
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.style.display = 'flex';
+
+  // v1.27.08 — first time on a training screen of this kind, explain it.
+  // Hooked here rather than in each mode's show(): this is the one place every
+  // training screen passes through, standard and handsfree alike, so a new
+  // mode gets the guide without anyone remembering to wire it.
+  //
+  // v1.27.09 — if a guide opens, suppress the screen's slide-in. Otherwise the
+  // training screen animates up and the guide lands on top of it a moment
+  // later, which flickers. _noTrainingAnim is consumed by the check directly
+  // below, so the screen is simply in place behind the guide and is revealed
+  // when the guide closes.
+  if (window.maybeShowGuide) {
+    const guideId = HANDSFREE_SCREENS.indexOf(id) > -1 ? 'handsfree-basics' : 'training-basics';
+    if (maybeShowGuide(guideId)) window._noTrainingAnim = true;
+  }
+  if (window._noTrainingAnim) {
+    window._noTrainingAnim = false;
+    el.classList.remove('slide-in-bottom', 'slide-out-bottom');
+    return;
+  }
+  el.classList.remove('slide-in-bottom', 'slide-out-bottom');
+  void el.offsetWidth;
+  el.classList.add('slide-in-bottom');
+
+  // Uppgift 17 — "Tap to learn" hint for first 10 training screen openings
+  try {
+    const TAP_HINT_KEY = 'ds_tap_hint_count';
+    const count = parseInt(localStorage.getItem(TAP_HINT_KEY) || '0');
+    if (count < 10) {
+      localStorage.setItem(TAP_HINT_KEY, count + 1);
+      setTimeout(() => {
+        const screen = document.getElementById(id);
+        if (!screen || screen.style.display === 'none') return;
+        const titleEl = screen.querySelector('[id$="StrategyName"],[id="strategyName"],[id="memStrategyName"]')
+          || screen.querySelector('.card-title, .strat-title');
+        if (!titleEl || !titleEl.textContent.trim()) return;
+        let hint = document.getElementById('ds-tap-hint');
+        if (!hint) {
+          hint = document.createElement('div');
+          hint.id = 'ds-tap-hint';
+          hint.style.cssText = [
+            'position:fixed','left:0','right:0','text-align:center',
+            'font-size:12px','color:var(--ds-txt3)','pointer-events:none',
+            'opacity:0','transition:opacity 0.4s ease','z-index:500',
+            'padding:4px 0'
+          ].join(';');
+          hint.textContent = '\u2191  Tap the name to learn more  \u2191';
+          document.body.appendChild(hint);
+        }
+        // Place hint well below the title element
+        const rect = titleEl.getBoundingClientRect();
+        hint.style.top = (rect.bottom + 32) + 'px';
+
+        // Arrows flanking the title TEXT (not the element, which is a
+        // full-width block — measuring it puts the arrows at the screen
+        // edges). A Range around the text nodes gives the real text box.
+        const arrowId = 'ds-tap-arrows';
+        let arrows = document.getElementById(arrowId);
+        if (!arrows) {
+          arrows = document.createElement('div');
+          arrows.id = arrowId;
+          arrows.style.cssText = [
+            'position:fixed','pointer-events:none',
+            'opacity:0','transition:opacity 0.4s ease','z-index:500',
+            'font-size:14px','color:var(--ds-txt3)','top:0','left:0'
+          ].join(';');
+          document.body.appendChild(arrows);
+        }
+        let textRect;
+        try {
+          const range = document.createRange();
+          range.selectNodeContents(titleEl);
+          textRect = range.getBoundingClientRect();
+        } catch (err) { textRect = titleEl.getBoundingClientRect(); }
+        const midY = textRect.top + textRect.height / 2;
+        arrows.innerHTML =
+          '<span style="position:fixed;top:' + (midY - 10) + 'px;left:' + (textRect.left - 22) + 'px;">\u2192</span>' +
+          '<span style="position:fixed;top:' + (midY - 10) + 'px;left:' + (textRect.right + 8) + 'px;">\u2190</span>';
+
+        // Restore fade transition in case hideTapHint(true) disabled it
+        hint.style.transition = 'opacity 0.4s ease';
+        arrows.style.transition = 'opacity 0.4s ease';
+        hint.style.opacity = '1';
+        arrows.style.opacity = '1';
+        clearTimeout(hint._t);
+        hint._t = setTimeout(() => { hint.style.opacity = '0'; arrows.style.opacity = '0'; }, 2500);
+      }, 450); // wait for slide-in to finish
+    }
+  } catch (e) {}
+}
+
+// Instantly remove the tap hint + arrows (used when leaving a training
+// screen so they never linger over the mode screen).
+function hideTapHint() {
+  ['ds-tap-hint', 'ds-tap-arrows'].forEach(hid => {
+    const el = document.getElementById(hid);
+    if (!el) return;
+    if (el._t) { clearTimeout(el._t); el._t = null; }
+    el.style.transition = 'none';
+    el.style.opacity = '0';
+  });
+}
+window.hideTapHint = hideTapHint;
+
+function navFromTraining(id) {
+  hideTapHint();
+  window._returningFromTraining = true;
+  if (window.progEndSession) progEndSession();
+  // Reveal the mode screen underneath (no animation). The origin tab
+  // screen below it is left untouched so the whole stack stays intact.
+  modeScreen.style.display = 'flex';
+  modeScreen.classList.remove('slide-in-right', 'slide-out-right');
+  const el = document.getElementById(id);
+  el.classList.remove('slide-in-bottom', 'slide-out-bottom');
+  void el.offsetWidth;
+  el.classList.add('slide-out-bottom');
+  setTimeout(() => {
+    el.style.display = 'none';
+    el.classList.remove('slide-out-bottom');
+  }, 300);
+}
+
+// ─── STATE — SHARED ───────────────────────────────────────────────────────────
+let activeCollectionKey   = null;
+let activeCollectionLabel = null;
+
+// v1.26.47: mirror these onto window so the window.* readers in app-system.js
+// (pack-intro replay on tapping the pack name, alKey autolog keys, and the
+// pack-settings header) see the live value. They are script-scoped `let`s, so
+// window.activeCollectionKey/Label were previously always undefined. The
+// getter/setter keeps the lexical binding (read bare elsewhere, e.g.
+// app-modes.js) and the window view in sync in both directions.
+Object.defineProperty(window, 'activeCollectionKey',   { get: () => activeCollectionKey,   set: v => { activeCollectionKey   = v; } });
+Object.defineProperty(window, 'activeCollectionLabel', { get: () => activeCollectionLabel, set: v => { activeCollectionLabel = v; } });
+
+// ─── NAVIGATION ──────────────────────────────────────────────────────────────
+function showHome() {
+  navToHome();
+}
+
+// Simple toast for in-app notifications
+function showToast(msg, duration) {
+  let el = document.getElementById('ds-toast');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = 'ds-toast';
+    el.style.cssText = 'position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#333;color:#fff;padding:10px 18px;border-radius:20px;font-size:14px;z-index:9999;pointer-events:none;transition:opacity .3s;white-space:nowrap;max-width:85vw;text-align:center;';
+    document.body.appendChild(el);
+  }
+  el.textContent = msg;
+  el.style.opacity = '1';
+  clearTimeout(el._t);
+  el._t = setTimeout(() => { el.style.opacity = '0'; }, duration || 2800);
+}
+window.showToast = showToast;
+
+function showModeScreen(key, label, opts) {
+  // v1.27.46 — the programme route. A pack in an unlocked Part is trainable
+  // inside the programme straight away; it only spreads to the Packs tab,
+  // Topics and search once that Part's own checkpoint is passed. The
+  // programme screen has already made that decision with its own
+  // isSectionUnlocked, so it says so with opts.viaProgram and this guard
+  // steps aside. Every other caller keeps the plain canAccess answer, and
+  // programRoutePending() refuses anyway unless the Part really is open.
+  const viaProgram = !!(opts && opts.viaProgram)
+    && !!(window.accessLevel && window.accessLevel.programRoutePending
+          && window.accessLevel.programRoutePending(key));
+  // Block if pack is locked for current access level
+  if (!viaProgram && window.accessLevel && !window.accessLevel.canAccess(key)) {
+    const badge = window.accessLevel.badgeLabel ? window.accessLevel.badgeLabel(key) : null;
+    const tier  = badge ? badge.text : 'Pro';
+    showToast('This pack requires ' + tier + '. Upgrade to unlock it.');
+    return;
+  }
+  activeCollectionKey   = key;
+  activeCollectionLabel = label;
+  document.getElementById('modeCollectionName').textContent = label;
+  // Save last pack and record training time for favorites sorting
+  try {
+    const _lpExisting = JSON.parse(localStorage.getItem('dash_last_pack') || 'null');
+    const _lpPct = (_lpExisting && _lpExisting.key === key) ? (_lpExisting.progressPct || 0) : 0;
+    localStorage.setItem('dash_last_pack', JSON.stringify({ key, label, progressPct: _lpPct }));
+    if (window.recordPackTrained) recordPackTrained(key);
+    if (window._favRenderDash) _favRenderDash();
+  } catch {}
+  // Navigation context: callers (Library, Folders, Programs) set their own
+  // just before this call. Anyone else (dashboard favorites, recommended,
+  // search) falls back to the library pack list, so the next-arrow always
+  // has a sensible, fresh context instead of a stale one.
+  if (!_contextJustSet) setPackContext(_buildLibPackList(), key);
+  _contextJustSet = false;
+  // Progress: end previous session, start new one
+  if (window.progEndSession) progEndSession();
+  navToMode();
+  if (window.progStartSession) progStartSession(key, label);
+  // Pack intro (v1.26.44): first 3 opens of a pack with an intro defined
+  // v1.27.59 — the mode screen is the first place the six modes are visible,
+  // so the guide that explains them runs here, once, and hands over to the
+  // pack's own intro when it closes. Both use the same screen, so they have to
+  // be sequential — showing them together would put one on top of the other.
+  const _startPackIntro = () => { if (window.maybeShowPackIntro) maybeShowPackIntro(key); };
+  if (!(window.maybeShowGuide && window.maybeShowGuide('modes-overview', _startPackIntro)))
+    _startPackIntro();
+}
+
+// Set the navigation context (called by Library, Topics, Folders, Programs)
+let _contextJustSet = false;
+
+// The general form. `kind` is for readability and tests; the behaviour is
+// entirely in the steps.
+function setNavContext(steps, currentKey, kind) {
+  const list  = (steps || []).filter(Boolean);
+  const index = list.findIndex(s => s.type === 'pack' && s.key === currentKey);
+  _packContext = (index >= 0 && list.length > 1)
+    ? { kind: kind || 'library', steps: list, index }
+    : null;
+  _contextJustSet = true;
+  updateNextBtn();
+}
+window.setNavContext = setNavContext;
+
+// The old shape — a plain array of packs. Kept because Folders and the
+// library fallback both speak it, and it reads better at those call sites.
+function setPackContext(packs, currentKey, kind) {
+  setNavContext(
+    (packs || []).map(p => ({ type: 'pack', key: p.key, label: p.label })),
+    currentKey,
+    kind || 'library'
+  );
+}
+
+// Find the next reachable step. Locked packs are skipped so the arrow never
+// runs into an upgrade toast. Checkpoints are always reachable — the program
+// step list is built with the unreachable ones already left out.
+function _nextAccessibleIndex() {
+  if (!_packContext) return -1;
+  // v1.27.46 — inside a programme, a pack whose Part is open but whose
+  // checkpoint is unpassed counts as reachable. Without this the arrow walked
+  // a freemium user straight from Part 1 to the Part 2 test, skipping the two
+  // packs the test is about.
+  const inProgram = _packContext.kind === 'program';
+  const reachable = key => !window.accessLevel || accessLevel.canAccess(key)
+    || (inProgram && accessLevel.programRoutePending && accessLevel.programRoutePending(key));
+  for (let i = _packContext.index + 1; i < _packContext.steps.length; i++) {
+    const s = _packContext.steps[i];
+    if (s.type === 'checkpoint') return i;
+    if (reachable(s.key)) return i;
+  }
+  return -1;
+}
+
+// Show/hide the next-pack arrow based on context
+function updateNextBtn() {
+  const btn = document.getElementById('modeNextBtn');
+  if (!btn) return;
+  btn.style.visibility = (_nextAccessibleIndex() >= 0) ? 'visible' : 'hidden';
+}
+
+// Arrowing onto a checkpoint leaves the mode screen the ordinary way and lands
+// in the program, with the quiz on top of it. Doing it any other way would
+// leave the mode screen sitting underneath the quiz, and "Continue" would drop
+// the user back into a pack they had already finished with.
+function _goToCheckpoint(step) {
+  if (typeof showLibraryTab === 'function') showLibraryTab('programs');
+  _modeOrigin = 'library';
+  if (window.progEndSession) progEndSession();
+  navToHome();
+  // navToHome's slide-out is 320ms; start the quiz once it has landed.
+  setTimeout(() => {
+    if (window.dsStartCheckpoint) dsStartCheckpoint(step.programId, step.sectionIndex);
+  }, 340);
+}
+
+// Navigate to the next step in context — the next pack, or the next checkpoint
+function goNextPack() {
+  if (!_packContext) return;
+  // Skip locked packs entirely — jump to the next accessible one
+  const nextIdx = _nextAccessibleIndex();
+  if (nextIdx < 0) return;
+  const next = _packContext.steps[nextIdx];
+  _packContext.index = nextIdx;
+  if (next.type === 'checkpoint') { _goToCheckpoint(next); return; }
+  // Snapshot the current mode screen as a static ghost underneath, so the
+  // incoming mode screen slides in OVER it instead of revealing the tab
+  // screen behind. IDs are stripped so getElementById never hits the ghost.
+  const _ms = document.getElementById('modeScreen');
+  if (_ms && _ms.parentNode) {
+    const ghost = _ms.cloneNode(true);
+    ghost.removeAttribute('id');
+    ghost.querySelectorAll('[id]').forEach(n => n.removeAttribute('id'));
+    ghost.classList.remove('slide-in-right', 'slide-out-right');
+    ghost.style.display = 'flex';
+    _ms.parentNode.insertBefore(ghost, _ms);
+    setTimeout(() => { if (ghost.parentNode) ghost.parentNode.removeChild(ghost); }, 360);
+  }
+  // Update state without triggering navToMode (avoids Library flash)
+  activeCollectionKey   = next.key;
+  activeCollectionLabel = next.label;
+  document.getElementById('modeCollectionName').textContent = next.label;
+  try {
+    const _lpExisting = JSON.parse(localStorage.getItem('dash_last_pack') || 'null');
+    const _lpPct = (_lpExisting && _lpExisting.key === next.key) ? (_lpExisting.progressPct || 0) : 0;
+    localStorage.setItem('dash_last_pack', JSON.stringify({ key: next.key, label: next.label, progressPct: _lpPct }));
+    if (window.recordPackTrained) recordPackTrained(next.key);
+    if (window._favRenderDash) _favRenderDash();
+  } catch {}
+  if (window.progEndSession) progEndSession();
+  if (window.progStartSession) progStartSession(next.key, next.label);
+  // Animate modeScreen sliding in from right, no Library behind
+  const ms = document.getElementById('modeScreen');
+  if (ms) {
+    ms.classList.remove('slide-in-right', 'slide-out-right');
+    void ms.offsetWidth;
+    ms.classList.add('slide-in-right');
+  }
+  updateNextBtn();
+  // Refresh mode-card locks for the new pack
+  if (window.accessLevel && window.accessLevel.applyModeLocks) accessLevel.applyModeLocks();
+  // Pack intro (v1.26.44): arrow-navigation counts as opening the pack too
+  if (window.maybeShowPackIntro) maybeShowPackIntro(next.key);
+}
+
+// Save which training mode was last used for a pack
+function saveLastMode(packKey, modeName) {
+  try {
+    const modes = JSON.parse(localStorage.getItem('ds_last_modes') || '{}');
+    modes[packKey] = modeName;
+    localStorage.setItem('ds_last_modes', JSON.stringify(modes));
+  } catch {}
+}
+function getLastMode(packKey) {
+  try {
+    const modes = JSON.parse(localStorage.getItem('ds_last_modes') || '{}');
+    return modes[packKey] || null;
+  } catch { return null; }
+}
+
+// ─── MODE REGISTRY ────────────────────────────────────────────────────────────
+function addModeListener(id, fn) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  let mStartY = 0, mMoved = false, didTouch = false;
+  const launch = () => {
+    if (el.classList.contains('mode-card--locked')) {
+      if (window.showToast) showToast('This mode requires Pro. Upgrade to unlock it.');
+      return;
+    }
+    saveLastMode(activeCollectionKey, id); fn();
+  };
+  el.addEventListener('touchstart', e => { mStartY = e.touches[0].clientY; mMoved = false; didTouch = true; }, { passive: true });
+  el.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientY - mStartY) > 8) mMoved = true; }, { passive: true });
+  el.addEventListener('touchend',   e => { if (!mMoved) { launch(); } });
+  el.addEventListener('click',      e => { if (didTouch) { didTouch = false; return; } launch(); });
+}
+
+// Map mode id to launch function — used by Continue card to jump straight in
+const MODE_LAUNCHERS = {};
+function registerMode(id, fn) {
+  MODE_LAUNCHERS[id] = fn;
+  addModeListener(id, fn);
+}
+
+function launchLastMode(packKey, packLabel) {
+  const lastMode = getLastMode(packKey);
+  const _lastModeEl = lastMode ? document.getElementById(lastMode) : null;
+  const _lastModeLocked = _lastModeEl && _lastModeEl.classList.contains('mode-card--locked');
+  if (lastMode && MODE_LAUNCHERS[lastMode] && !_lastModeLocked) {
+    // Set up state without showing Library (homeScreen) at all
+    activeCollectionKey   = packKey;
+    activeCollectionLabel = packLabel;
+    document.getElementById('modeCollectionName').textContent = packLabel;
+    try {
+      const existing = JSON.parse(localStorage.getItem('dash_last_pack') || 'null');
+      const progressPct = (existing && existing.key === packKey) ? (existing.progressPct || 0) : 0;
+      localStorage.setItem('dash_last_pack', JSON.stringify({ key: packKey, label: packLabel, progressPct }));
+      if (window.recordPackTrained) recordPackTrained(packKey);
+      if (window._favRenderDash) _favRenderDash();
+    } catch {}
+    if (window.progEndSession) progEndSession();
+    if (window.progStartSession) progStartSession(packKey, packLabel);
+    // Mark origin as dashboard so closing modeScreen returns there
+    _modeOrigin = 'dashboard';
+    // Layered stack: keep the dashboard visible underneath. Hide the mode
+    // screen during the slide-up so only the training screen animates, then
+    // activate the mode screen silently behind it once it has landed.
+    const modeEl = document.getElementById('modeScreen');
+    if (modeEl) {
+      modeEl.style.display = 'none';
+      modeEl.classList.remove('slide-in-right', 'slide-out-right');
+    }
+    hideBottomNav();
+    setPackContext(_buildLibPackList(), packKey);
+    _contextJustSet = false;
+    saveLastMode(packKey, lastMode);
+    MODE_LAUNCHERS[lastMode]();
+    setTimeout(() => { if (modeEl) modeEl.style.display = 'flex'; }, 380);
+  } else {
+    showModeScreen(packKey, packLabel);
+  }
+}
+
+// Build ordered pack list from #libTabPacks for next/prev navigation
+function _buildLibPackList() {
+  return Array.from(document.querySelectorAll('#libTabPacks .collection-card'))
+    .map(c => ({ key: c.dataset.key, label: c.dataset.label }))
+    .filter(p => p.key && p.label);
+}
+
+// ─── TOPICS TAB (data-driven, v1.26.45) ───────────────────────────────
+// Render #libTabTopics from the TOPICS array (tagsData.js). Each pack
+// card mirrors its canonical card in #libTabPacks (single source of truth
+// for name/meta/label), so the two tabs can never drift. This MUST run
+// before the .collection-card binding loop below, before app-system's
+// applyAccessLevel, and before app-ui's initTopics — all three then pick
+// up the rendered cards exactly as they did the old static markup.
+// Alphabetical order everywhere in the Library (v1.26.62).
+// Both tabs used to show whatever order things were added in, which put every
+// new pack at the bottom. Sorting happens at RENDER time rather than in the
+// data files, so a pack added later lands in the right place by itself.
+// localeCompare with 'en' keeps &, punctuation and case out of the way.
+function dsAlpha(a, b) { return String(a).localeCompare(String(b), 'en', { sensitivity: 'base' }); }
+
+function sortPackCards() {
+  const host = document.querySelector('#libTabPacks');
+  if (!host) return;
+  // Sort within each container, so any grouping in the markup survives.
+  const groups = new Set();
+  host.querySelectorAll('.collection-card[data-key]').forEach(c => groups.add(c.parentElement));
+  groups.forEach(parent => {
+    const cards = Array.from(parent.querySelectorAll(':scope > .collection-card[data-key]'));
+    if (cards.length < 2) return;
+    const name = c => (c.querySelector('.collection-name') || {}).textContent || c.dataset.label || c.dataset.key;
+    cards.sort((a, b) => dsAlpha(name(a), name(b))).forEach(c => parent.appendChild(c));
+  });
+}
+sortPackCards();
+
+function renderTopics() {
+  if (typeof TOPICS === 'undefined' || !Array.isArray(TOPICS)) return;
+  const host = document.querySelector('#libTabTopics .topic-accordion');
+  if (!host) return;
+  const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+  // Look up a pack's display name so topics sort by what the user actually
+  // reads, not by the internal key.
+  const packName = key => {
+    const src = document.querySelector(`#libTabPacks .collection-card[data-key="${key}"]`);
+    const n = src && src.querySelector('.collection-name');
+    return (n && n.textContent) || key;
+  };
+  const ordered = TOPICS.slice().sort((a, b) => dsAlpha(a.title, b.title));
+  host.innerHTML = ordered.map(topic => {
+    const keys = (Array.isArray(topic.packs) ? topic.packs.slice() : [])
+      .sort((a, b) => dsAlpha(packName(a), packName(b)));
+    if (!keys.length) {
+      return `
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="${esc(topic.id)}">
+        <div class="topic-title">${esc(topic.title)}</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>`;
+    }
+    const cards = keys.map(key => {
+      const src = document.querySelector(`#libTabPacks .collection-card[data-key="${key}"]`);
+      if (!src) { console.warn('[topics] no pack card in #libTabPacks for key:', key); return ''; }
+      const name = src.querySelector('.collection-name');
+      const meta = src.querySelector('.collection-meta');
+      const label = esc(src.getAttribute('data-label') || '');
+      const ext = src.classList.contains('collection-card--extended') ? ' collection-card--extended' : '';
+      return `
+        <div class="collection-card${ext}" data-key="${key}" data-label="${label}">
+          <div><div class="collection-name">${name ? name.innerHTML : key}</div><div class="collection-meta">${meta ? meta.innerHTML : ''}</div></div>
+          <div class="collection-arrow">›</div>
+        </div>`;
+    }).join('');
+    const n = keys.length;
+    return `
+    <div class="topic-group">
+      <div class="topic-header" data-topic="${esc(topic.id)}">
+        <div class="topic-title">${esc(topic.title)}</div>
+        <div class="topic-count">${n} pack${n === 1 ? '' : 's'}</div>
+        <div class="topic-chevron">›</div>
+      </div>
+      <div class="topic-packs" id="topic${cap(topic.id)}">${cards}
+      </div>
+    </div>`;
+  }).join('\n');
+}
+renderTopics();
+
+// Which list should the forward arrow walk for THIS card?
+//
+// A card opened from inside a topic must walk that topic, not the library.
+// It used to walk the library, because topics were lumped in with the Packs
+// tab here — so opening "Handling Criticism" from the Listening topic and
+// pressing → gave you whatever happened to come next alphabetically in the
+// whole library. Folders and programs set their own context at their own
+// click sites and are left alone.
+function _setContextForCard(el, key) {
+  const topicList = el.closest('.topic-packs');
+  if (topicList) {
+    const packs = Array.from(topicList.querySelectorAll('.collection-card[data-key]'))
+      .filter(c => c.style.display !== 'none')
+      .map(c => ({ key: c.dataset.key, label: c.dataset.label }))
+      .filter(p => p.key && p.label);
+    setPackContext(packs, key, 'topic');
+    return true;
+  }
+  if (el.closest('#libTabPacks')) {
+    setPackContext(_buildLibPackList(), key, 'library');
+    return true;
+  }
+  return false;
+}
+
+document.querySelectorAll('.collection-card').forEach(el => {
+  const key   = el.dataset.key;
+  const label = el.dataset.label;
+  let cStartY = 0, cMoved = false, cDidTouch = false;
+  el.addEventListener('touchstart', e => { cStartY = e.touches[0].clientY; cMoved = false; cDidTouch = true; }, { passive: true });
+  el.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientY - cStartY) > 8) cMoved = true; }, { passive: true });
+  el.addEventListener('touchend',   e => {
+    if (!cMoved) {
+      _setContextForCard(el, key);
+      showModeScreen(key, label);
+    }
+  });
+  el.addEventListener('click', () => {
+    if (cDidTouch) { cDidTouch = false; return; }
+    _setContextForCard(el, key);
+    showModeScreen(key, label);
+  });
+});
+
+document.getElementById('modeBackBtn').addEventListener('click', showHome);
+document.getElementById('modeNextBtn') && document.getElementById('modeNextBtn').addEventListener('click', goNextPack);
+
+// Pack settings button — re-render training when overlay closes (bundle may have changed)
+(function() {
+  const btn     = document.getElementById('modePackSettingsBtn');
+  const overlay = document.getElementById('packSettingsOverlay');
+  const close   = document.getElementById('packSettingsClose');
+  if (btn && overlay) {
+    // v1.27.18 — THE SECOND HANDLER ON THIS BUTTON. app-system.js binds the
+    // other one, which fills the panel in; this one only opens it and reloads
+    // training afterwards, because a bundle may have changed.
+    //
+    // Both now have to know that the gear can be present but silent: with no
+    // feedback mode on it is drawn as nothing and belongs to the three-tap
+    // gesture that opens the pack note. Without this guard a single tap on
+    // blank space opened an empty settings panel — which is exactly what
+    // happened, and what the test caught.
+    btn.addEventListener('click', () => {
+      if (btn.classList.contains('mode-gear--silent')) return;
+      overlay.classList.add('open');
+    });
+    if (close) close.addEventListener('click', () => {
+      overlay.classList.remove('open');
+      // Re-run the current training mode so bundle changes take effect immediately
+      DS.reloadActive();
+    });
+    // Also catch Done tap via MutationObserver in case closed another way
+    new MutationObserver(() => {
+      if (!overlay.classList.contains('open')) DS.reloadActive();
+    }).observe(overlay, { attributes: true, attributeFilter: ['class'] });
+  }
+})();
+
+// Beta section removed in v1.26.13
+
+// Handsfree flip toggle
+(function initHfToggle() {
+  const toggle = document.getElementById('modeHfToggle');
+  const label  = document.getElementById('modeHfToggleLabel');
+  const inners = document.querySelectorAll('.mode-flip-inner');
+  let hfActive = false;
+
+  function flip() {
+    hfActive = !hfActive;
+    inners.forEach(el => el.classList.toggle('flipped', hfActive));
+    toggle.classList.toggle('active', hfActive);
+    label.textContent = hfActive ? 'Switch to Standard' : 'Switch to Handsfree';
+  }
+
+  function resetInstant() {
+    if (!hfActive) return;
+    // Disable transition, reset, re-enable — all while screen is hidden
+    inners.forEach(el => el.classList.add('no-transition'));
+    hfActive = false;
+    inners.forEach(el => el.classList.remove('flipped'));
+    toggle.classList.remove('active');
+    label.textContent = 'Switch to Handsfree';
+    // Re-enable transition after a frame
+    requestAnimationFrame(() => {
+      inners.forEach(el => el.classList.remove('no-transition'));
+    });
+  }
+
+  // Set the toggle to a specific variant WITHOUT animation. Used when
+  // returning from a training screen so the mode screen shows the same
+  // variant you were just in (handsfree stays handsfree). v1.26.63
+  function setState(on) {
+    if (on === hfActive) return;
+    inners.forEach(el => el.classList.add('no-transition'));
+    hfActive = on;
+    inners.forEach(el => el.classList.toggle('flipped', on));
+    toggle.classList.toggle('active', on);
+    label.textContent = on ? 'Switch to Standard' : 'Switch to Handsfree';
+    requestAnimationFrame(() => {
+      inners.forEach(el => el.classList.remove('no-transition'));
+    });
+  }
+  window._setHfToggle = setState;
+
+  toggle.addEventListener('click', flip);
+  toggle.addEventListener('touchend', e => { e.preventDefault(); flip(); }, { passive: false });
+
+  // Reset instantly when mode-screen opens fresh (not when returning from training)
+  const modeScreenEl = document.getElementById('modeScreen');
+  if (modeScreenEl) {
+    let _prevDisplay = 'none';
+    new MutationObserver(() => {
+      const cur = modeScreenEl.style.display;
+      if (cur === 'flex' && _prevDisplay !== 'flex') {
+        // Only reset if NOT returning from a training screen
+        if (!window._returningFromTraining) resetInstant();
+        window._returningFromTraining = false;
+      }
+      _prevDisplay = cur;
+    }).observe(modeScreenEl, { attributes: true, attributeFilter: ['style'] });
+  }
+})();
+
+// Back from a training screen to the mode screen
+function closeTraining(screenId) {
+  navFromTraining(screenId);
+  document.getElementById('modeCollectionName').textContent = activeCollectionLabel;
+  // Leave the mode screen on the same variant you were just in, so closing a
+  // handsfree mode keeps handsfree selected and you can pick another handsfree
+  // mode straight away (and standard likewise). v1.26.63
+  const m = window.DS && DS.modesByScreen && DS.modesByScreen[screenId];
+  if (m && window._setHfToggle) window._setHfToggle(m.kind === 'handsfree');
+}
+
+// ── FEEDBACK STORAGE KEYS ─────────────────────────────────────────────────────
+// Key format: fb_{collection}_{screen}_{comboOrStratId}_{cardId}_{side}
+
+function fbKey(screen, comboId, cardId, side) {
+  return `fb_${activeCollectionKey}_${screen}_${comboId}_${cardId}_${side}`;
+}
+window.fbKey = fbKey;
+
+function fbGet(key) {
+  return localStorage.getItem(key) ? parseInt(localStorage.getItem(key)) : null;
+}
+
+function fbSet(key, val) {
+  localStorage.setItem(key, val);
+}
+
+// v1.26.91 — undo a rating. Tapping the same circle again clears it, because
+// these are easy to hit by accident while flipping or swiping a card, and
+// there was no way back once one was set.
+function fbClear(key) {
+  localStorage.removeItem(key);
+}
+
+// ── PER-CARD NOTES (v1.27.03) ─────────────────────────────────────────────────
+// Key format: note_{collection}_{screen}_{comboOrStratId}_{cardId}_{side}
+//
+// Deliberately the SAME shape as fbKey, differing only in the prefix. That is
+// what lets the export put a rating and a note for the same card side on the
+// same row without any matching logic: swap the prefix and you have the other
+// one. Change one format and you must change both.
+function noteKey(screen, comboId, cardId, side) {
+  return `note_${activeCollectionKey}_${screen}_${comboId}_${cardId}_${side}`;
+}
+window.noteKey = noteKey;
+
+function noteGet(key) {
+  return localStorage.getItem(key) || '';
+}
+function noteSet(key, text) {
+  // An empty note is no note. Storing '' would leave a key that the export has
+  // to filter out later, so it is removed instead.
+  if (text && text.trim()) localStorage.setItem(key, text);
+  else localStorage.removeItem(key);
+}
+window.noteGet = noteGet;
+window.noteSet = noteSet;
+
+// ── SCOPE NOTES: one note for a whole pack, one for a whole programme ────────
+// (v1.27.18)
+//
+// A card note answers "what do I think of THIS card". These answer "what do I
+// think of this pack" and "how is this programme going", which is the question
+// a beta tester actually has after training for twenty minutes and which had
+// nowhere to go.
+//
+// The key shapes mirror the rating keys that already exist beside them —
+// `fb_pack_<packKey>` has been there since the pack rating bar was built — so
+// a rating and a note for the same thing are again one prefix apart, exactly
+// as noteKey/fbKey are for a card. THREE segments, where a card note has six:
+// that difference is what the export parser uses to tell them apart, so do not
+// put an underscore-separated id in here.
+function packNoteKey(packKey) { return 'note_pack_' + (packKey || ''); }
+function packFbKey(packKey)   { return 'fb_pack_'   + (packKey || ''); }
+function progNoteKey(progId)  { return 'note_prog_' + (progId  || ''); }
+function progFbKey(progId)    { return 'fb_prog_'   + (progId  || ''); }
+window.packNoteKey = packNoteKey;
+window.packFbKey   = packFbKey;
+window.progNoteKey = progNoteKey;
+window.progFbKey   = progFbKey;
+
+// ── THREE TAPS ───────────────────────────────────────────────────────────────
+// The gesture that opens a note where there is no button to press. It already
+// existed inline in mode-engine.js for the hint line under a card; this is the
+// same thing, lifted out so the mode screen and the programme view use one
+// implementation rather than three copies that drift.
+//
+// 1200 ms is the window between taps, matched to the original deliberately: a
+// gesture that behaves differently in two places is worse than no gesture.
+function dsTripleTap(el, fn) {
+  if (!el || el._dsTripleTap) return;
+  el._dsTripleTap = true;
+  let taps = 0, timer = null;
+  el.addEventListener('click', e => {
+    e.stopPropagation();
+    taps++;
+    clearTimeout(timer);
+    timer = setTimeout(() => { taps = 0; }, 1200);
+    if (taps >= 3) { taps = 0; fn(e); }
+  });
+}
+window.dsTripleTap = dsTripleTap;
+
+// ── FEEDBACK BAR RENDER ───────────────────────────────────────────────────────
+
+function fbRender(barId, key) {
+  const bar = document.getElementById(barId);
+  if (!bar) return;
+  // Store current key on the bar so click handlers always use the latest
+  bar.dataset.fbKey = key;
+  const saved = fbGet(key);
+  bar.querySelectorAll('.fb-btn').forEach(btn => {
+    const v = parseInt(btn.dataset.val);
+    btn.classList.remove('fb-selected', 'fb-dimmed');
+    if (saved === null) return;
+    if (v === saved) btn.classList.add('fb-selected');
+    else btn.classList.add('fb-dimmed');
+  });
+}
+window.fbRender = fbRender;
+
+// Bind click handlers once per bar at startup
+function fbInitBar(barId) {
+  const bar = document.getElementById(barId);
+  if (!bar) return;
+  bar.querySelectorAll('.fb-btn').forEach(btn => {
+    const handler = e => {
+      e.stopPropagation();
+      const key = bar.dataset.fbKey;
+      if (!key) return;
+      const v = parseInt(btn.dataset.val);
+      // Same circle again = undo. Any other circle = change the rating.
+      if (fbGet(key) === v) fbClear(key);
+      else fbSet(key, v);
+      fbRender(barId, key);
+    };
+    btn.addEventListener('click', handler);
+    btn.addEventListener('touchend', e => { e.preventDefault(); e.stopPropagation(); handler(e); }, { passive: false });
+  });
+}
+
+fbInitBar('fb-single-front');
+fbInitBar('fb-single-back');
+fbInitBar('fb-mem-front');
+fbInitBar('fb-mem-back');
+fbInitBar('fb-flow-front');
+fbInitBar('fb-flow-back');
+fbInitBar('fb-chall-front');
+fbInitBar('fb-chall-back');
+fbInitBar('fb-mind-front');
+fbInitBar('fb-mind-back');
+fbInitBar('fb-coll-front');
+fbInitBar('fb-coll-back');
+
+/* ─── ROTATION CLEAN-UP (v1.27.57, rewritten v1.27.59) ───────────────────────
+   Rikard, 2026-08-28: after the phone had been turned sideways and back, parts
+   of the app that are meant to be fixed could be dragged up and down — the top
+   banner, the bottom nav, the mode screen, and every screen reached from them.
+   A scrollbar appeared down the right edge.
+
+   Six boxes are `height: 100dvh` with `overflow-y: auto` on the same element:
+   `.app`, `.home-screen`, `.mode-screen`, `.upgrade-screen`, `.settings-screen`
+   and `.extended-screen`. `dvh` is resolved by the browser, and after a
+   rotation iOS can keep handing back the landscape value. The box is then
+   taller than the window, so the WHOLE screen — banner and nav included, since
+   they live inside it — becomes a scroll area.
+
+   v1.27.57 tried to fix this by forcing a reflow. It did not work: the stale
+   `dvh` survives a reflow, because nothing has told the browser the value is
+   wrong. So this version stops asking. On the first orientation change it
+   measures the window itself and pins the six boxes to that number in pixels,
+   through `--ds-vh` and the `ds-vh-pinned` class. `dvh` is no longer consulted.
+
+   WHY IT IS NOT PINNED FROM THE START. `dvh` is the right answer while the
+   iOS toolbar is collapsing and expanding — it tracks that, and a pixel value
+   would not. A device that is never rotated therefore behaves exactly as it
+   did before this block existed: the class is never added. The pin is the
+   price of having rotated, not the default.
+
+   `visualViewport.height` is preferred over `innerHeight` because it is the
+   genuinely visible height, which is what `dvh` means. It is only read on
+   orientationchange, never on plain resize — the keyboard shrinks it, and
+   pinning to a keyboard-sized window would squash every screen. */
+(function dsRotationReset() {
+  if (!window.addEventListener) return;
+  var timer = null;
+
+  function viewportHeight() {
+    var vv = window.visualViewport;
+    return Math.round((vv && vv.height) || window.innerHeight || 0);
+  }
+
+  function clampStrays() {
+    var els = document.querySelectorAll('[class*="-screen"], .app, .topic-packs');
+    Array.prototype.forEach.call(els, function (el) {
+      // Only the boxes that should not be scrollable at all.
+      if (el.scrollTop && el.scrollHeight <= el.clientHeight + 2) el.scrollTop = 0;
+    });
+    if (window.scrollY) window.scrollTo(0, 0);
+    if (document.documentElement.scrollTop) document.documentElement.scrollTop = 0;
+    if (document.body.scrollTop) document.body.scrollTop = 0;
+  }
+
+  function pin() {
+    var h = viewportHeight();
+    if (!h) return;
+    var root = document.documentElement;
+    root.style.setProperty('--ds-vh', h + 'px');
+    root.classList.add('ds-vh-pinned');
+    setTimeout(clampStrays, 60);
+  }
+
+  window.addEventListener('orientationchange', function () {
+    clearTimeout(timer);
+    // Two passes: iOS reports the old size for a while after the event, and
+    // the second measurement is the one that is actually right.
+    timer = setTimeout(function () { pin(); setTimeout(pin, 400); }, 350);
+  });
+})();
