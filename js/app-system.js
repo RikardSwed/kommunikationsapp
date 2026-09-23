@@ -4032,6 +4032,16 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.98', date: 'September 2026', title: 'The volume sweep is finished \u2014 all six modes, all 52 release packs', audience: 'dev',
+    items: [
+      'The last five packs are complete in Memorize: <strong>Explain Things \u2014 Pt. 2</strong>, <strong>Persuasion and Influence \u2014 Pt. 2</strong>, <strong>Starting Conversations Pt. 3</strong> and <strong>Pt. 4</strong>, and <strong>Validation</strong>. 210 cards, 20 new decks.',
+      '<strong>That closes the sweep that started at v1.28.82.</strong> 2 140 cards across six passes \u2014 three new strategies, 391 Challenges cards, 520 Mindset cards, 82 Collections cards, 74 Sequences scenarios and 1 063 Memorize cards. Every one of the 52 release packs now stands complete in all six modes.',
+      'Two more leftovers from earlier in the sweep, both fixed: <strong>Validation\u2019s</strong> Core Idea still described \u201cthe three things you can validate\u201d, from before the fourth strategy was added in pass 0 \u2014 while the cards underneath it already said four. And five more Core Idea descriptions were under the template minimum.',
+      'The observation lines this round: <em>Explain Things</em> \u2014 none of its five challenges is about being wrong; all five are about being unusable. <em>Persuasion</em> \u2014 two of its three sequences end without agreement on purpose, because that is the realistic outcome and the one people practise least. <em>Starting Conversations Pt. 3</em> \u2014 only two of its five challenges are mistakes; the other three are the openers doing exactly what they are for.',
+      'What remains on the list is cleanup rather than content: sequence step fronts that name no strategy, the Mindset deck-name sweep, and the first-person / second-person voice difference between packs in Mindset.',
+    ],
+  },
+  {
     version: 'v1.28.97', date: 'September 2026', title: 'Three blanket access codes', audience: 'dev',
     items: [
       'Three new codes for the Settings field, all running to <strong>31 December 2026</strong> whenever they are entered \u2014 a fixed date rather than a number of days, so a code redeemed in November is not still live in February.',
