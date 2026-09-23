@@ -4531,27 +4531,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A disagreement is escalating and you can feel a sharp reply forming.",
           steps: [
-            { front: "Step 1 · Buy the time — they say: \"I don't see what the problem is.\"", back: "\"Can we pause a second? I want to answer this properly rather than quickly.\"" },
-            { front: "Step 2 · Put a word on it — they wait, and the heat drops a little", back: "\"Okay. I'm frustrated, and I think a bit embarrassed too.\"" },
-            { front: "Step 3 · Say what set it off — they say: \"Embarrassed about what?\"", back: "\"The bit in front of everyone. That's the part that got me, not the decision.\"" },
+            { front: "Step 1 · Announce the Pause — they say: \"I don't see what the problem is.\"", back: "\"Can we pause a second? I want to answer this properly rather than quickly.\"", guideFront: "Say you need a moment, and take it, when...", guideBack: "The moment you're taking, said out loud" },
+            { front: "Step 2 · Label the Emotion — they wait, and the heat drops a little", back: "\"Okay. I'm frustrated, and I think a bit embarrassed too.\"", guideFront: "Name and explain the feeling when...", guideBack: "A feeling word, as accurate as you can" },
+            { front: "Step 3 · Name the Situation — they say: \"Embarrassed about what?\"", back: "\"The bit in front of everyone. That's the part that got me, not the decision.\"", guideFront: "Say plainly what happened when...", guideBack: "The context, before any feeling" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are twenty minutes from a performance and the nerves are climbing.",
           steps: [
-            { front: "Step 1 · Buy the time — someone asks if you are ready", back: "\"Give me two minutes outside — I need to breathe for a second.\"" },
-            { front: "Step 2 · Put a word on it — they follow you out", back: "\"I'm nervous and excited at the same time and I can't separate them.\"" },
-            { front: "Step 3 · Say what set it off — they say: \"You've done this loads of times.\"", back: "\"I know. It's the front row being people I actually know that's done it.\"" },
+            { front: "Step 1 · Announce the Pause — someone asks if you are ready", back: "\"Give me two minutes outside — I need to breathe for a second.\"", guideFront: "Say you need a moment, and take it, when...", guideBack: "The moment you're taking, said out loud" },
+            { front: "Step 2 · Label the Emotion — they follow you out", back: "\"I'm nervous and excited at the same time and I can't separate them.\"", guideFront: "Name and explain the feeling when...", guideBack: "A feeling word, as accurate as you can" },
+            { front: "Step 3 · Name the Situation — they say: \"You've done this loads of times.\"", back: "\"I know. It's the front row being people I actually know that's done it.\"", guideFront: "Say plainly what happened when...", guideBack: "The context, before any feeling" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A family discussion about money has turned and you can feel yourself going.",
           steps: [
-            { front: "Step 1 · Buy the time — they say: \"It's not complicated, you just don't want to deal with it.\"", back: "\"Hold on — give me a minute. I don't want to say the first thing I think.\"" },
-            { front: "Step 2 · Put a word on it — they wait", back: "\"Right. I'm angry, and underneath it I think I feel got at.\"" },
-            { front: "Step 3 · Say what set it off — they say: \"Got at by who?\"", back: "\"The 'you just don't want to deal with it' part. That's the bit, not the money.\"" },
+            { front: "Step 1 · Announce the Pause — they say: \"It's not complicated, you just don't want to deal with it.\"", back: "\"Hold on — give me a minute. I don't want to say the first thing I think.\"", guideFront: "Say you need a moment, and take it, when...", guideBack: "The moment you're taking, said out loud" },
+            { front: "Step 2 · Label the Emotion — they wait", back: "\"Right. I'm angry, and underneath it I think I feel got at.\"", guideFront: "Name and explain the feeling when...", guideBack: "A feeling word, as accurate as you can" },
+            { front: "Step 3 · Name the Situation — they say: \"Got at by who?\"", back: "\"The 'you just don't want to deal with it' part. That's the bit, not the money.\"", guideFront: "Say plainly what happened when...", guideBack: "The context, before any feeling" },
           ]
         },
       ]
@@ -4722,27 +4722,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend suggests a run and you decide to play the lazy one.",
           steps: [
-            { front: "Step 1 · Answer in role — they say: \"Let's go for a run.\"", back: "\"That sounds like an enormous amount of work. Maybe tomorrow.\"" },
-            { front: "Step 2 · Hold it — they say: \"You said that yesterday.\"", back: "\"Tomorrow me is a completely different and much stronger person.\"" },
-            { front: "Step 3 · Break out warmly — they laugh and wait", back: "\"Right, fine. Give me ten minutes and I'm in.\"" },
+            { front: "Step 1 · Answer in role — they say: \"Let's go for a run.\"", back: "\"That sounds like an enormous amount of work. Maybe tomorrow.\"", guideFront: "Answer as the role, not as yourself, when...", guideBack: "The role's reply, not yours" },
+            { front: "Step 2 · Hold it — they say: \"You said that yesterday.\"", back: "\"Tomorrow me is a completely different and much stronger person.\"", guideFront: "Hold the role when they react to it, when...", guideBack: "The same role, one beat further" },
+            { front: "Step 3 · Break character warmly — they laugh and wait", back: "\"Right, fine. Give me ten minutes and I'm in.\"", guideFront: "Drop the role warmly and land it when...", guideBack: "Your own voice again, kindly" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague mentions the coffee has run out and you play the invincible hero.",
           steps: [
-            { front: "Step 1 · Answer in role — they say: \"We're out of coffee.\"", back: "\"I stopped needing coffee in 2019. I run on pure resolve now.\"" },
-            { front: "Step 2 · Hold it — they say: \"You had two this morning.\"", back: "\"Those were for flavour. Not need. Never need.\"" },
-            { front: "Step 3 · Break out warmly — they are grinning", back: "\"Okay, I'm going to the shop. Do you want one?\"" },
+            { front: "Step 1 · Answer in role — they say: \"We're out of coffee.\"", back: "\"I stopped needing coffee in 2019. I run on pure resolve now.\"", guideFront: "Answer as the role, not as yourself, when...", guideBack: "The role's reply, not yours" },
+            { front: "Step 2 · Hold it — they say: \"You had two this morning.\"", back: "\"Those were for flavour. Not need. Never need.\"", guideFront: "Hold the role when they react to it, when...", guideBack: "The same role, one beat further" },
+            { front: "Step 3 · Break character warmly — they are grinning", back: "\"Okay, I'm going to the shop. Do you want one?\"", guideFront: "Drop the role warmly and land it when...", guideBack: "Your own voice again, kindly" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A friend says the shop has stopped doing your usual thing and you play the mock-offended one.",
           steps: [
-            { front: "Step 1 · Answer in role — they say: \"They've stopped doing the oat ones.\"", back: "\"Stopped. After everything that shop and I have been through.\"" },
-            { front: "Step 2 · Hold it — they say: \"It's milk.\"", back: "\"It was never just milk. Not to me.\"" },
-            { front: "Step 3 · Break out warmly — they are laughing", back: "\"Right, what's the second best one? I'll survive.\"" },
+            { front: "Step 1 · Answer in role — they say: \"They've stopped doing the oat ones.\"", back: "\"Stopped. After everything that shop and I have been through.\"", guideFront: "Answer as the role, not as yourself, when...", guideBack: "The role's reply, not yours" },
+            { front: "Step 2 · Hold it — they say: \"It's milk.\"", back: "\"It was never just milk. Not to me.\"", guideFront: "Hold the role when they react to it, when...", guideBack: "The same role, one beat further" },
+            { front: "Step 3 · Break character warmly — they are laughing", back: "\"Right, what's the second best one? I'll survive.\"", guideFront: "Drop the role warmly and land it when...", guideBack: "Your own voice again, kindly" },
           ]
         },
       ]
@@ -4792,27 +4792,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend starts playing the bossy leader about who makes the tea.",
           steps: [
-            { front: "Step 1 · Match it — they say: \"You sit there. I'm running this kitchen.\"", back: "\"Absolutely not. I have seniority in this kitchen.\"" },
-            { front: "Step 2 · Hold it — they say: \"On what grounds?\"", back: "\"I've been standing here since before you arrived. That's the law.\"" },
-            { front: "Step 3 · Drop out together — they crack", back: "\"Shall we just both make one?\"" },
+            { front: "Step 1 · Match it — they say: \"You sit there. I'm running this kitchen.\"", back: "\"Absolutely not. I have seniority in this kitchen.\"", guideFront: "Answer with a role that fits theirs when...", guideBack: "A role that meets theirs" },
+            { front: "Step 2 · Hold it — they say: \"On what grounds?\"", back: "\"I've been standing here since before you arrived. That's the law.\"", guideFront: "Hold both roles one beat longer when...", guideBack: "The bit, kept alive" },
+            { front: "Step 3 · Drop out together — they crack", back: "\"Shall we just both make one?\"", guideFront: "Come out of it together when...", guideBack: "Both of you, back to normal" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague goes into the invincible hero about fixing the printer.",
           steps: [
-            { front: "Step 1 · Play it straight — they say: \"Stand back. I fix these with my hands.\"", back: "\"Okay. It's the paper tray, I think.\"" },
-            { front: "Step 2 · Stay straight — they say: \"I've fixed hundreds of these.\"", back: "\"Great. It's still the paper tray.\"" },
-            { front: "Step 3 · Let them land it — the printer starts", back: "\"Extraordinary. Genuinely. Well done.\"" },
+            { front: "Step 1 · Match it — play it completely straight: they say: \"Stand back. I fix these with my hands.\"", back: "\"Okay. It's the paper tray, I think.\"", guideFront: "Answer with a role that fits theirs when...", guideBack: "A role that meets theirs" },
+            { front: "Step 2 · Hold it — they say: \"I've fixed hundreds of these.\"", back: "\"Great. It's still the paper tray.\"", guideFront: "Hold both roles one beat longer when...", guideBack: "The bit, kept alive" },
+            { front: "Step 3 · Drop out together — the printer starts", back: "\"Extraordinary. Genuinely. Well done.\"", guideFront: "Come out of it together when...", guideBack: "Both of you, back to normal" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A friend starts playing the super stingy one about the last biscuit.",
           steps: [
-            { front: "Step 1 · Match it — they say: \"That one's spoken for.\"", back: "\"Spoken for by whom? I'd want that in writing.\"" },
-            { front: "Step 2 · Hold it — they say: \"By me. This morning. Verbally.\"", back: "\"Verbal agreements are worth the paper they're written on.\"" },
-            { front: "Step 3 · Drop out together — they crack", back: "\"Split it?\"" },
+            { front: "Step 1 · Match it — they say: \"That one's spoken for.\"", back: "\"Spoken for by whom? I'd want that in writing.\"", guideFront: "Answer with a role that fits theirs when...", guideBack: "A role that meets theirs" },
+            { front: "Step 2 · Hold it — they say: \"By me. This morning. Verbally.\"", back: "\"Verbal agreements are worth the paper they're written on.\"", guideFront: "Hold both roles one beat longer when...", guideBack: "The bit, kept alive" },
+            { front: "Step 3 · Drop out together — they crack", back: "\"Split it?\"", guideFront: "Come out of it together when...", guideBack: "Both of you, back to normal" },
           ]
         },
       ]
@@ -5776,27 +5776,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend has finished telling you about a hard year at work.",
           steps: [
-            { front: "Step 1 · Ask What They Took From It", back: "\"What's different now, compared to when it started?\"", guideFront: "Close it by asking what changed when...", guideBack: "What they came away with" },
-            { front: "Step 2 · Ask What They Took From It", back: "\"What would you tell someone heading into the same thing?\"", guideFront: "Close it by asking what changed when...", guideBack: "What they came away with" },
-            { front: "Step 3 · Let it land", back: "\"That's a good way of putting it.\" (and then let the subject rest)" },
+            { front: "Step 1 · Ask What They Took From It — ask what is different now", back: "\"What's different now, compared to when it started?\"", guideFront: "Close it by asking what changed when...", guideBack: "What they came away with" },
+            { front: "Step 2 · Ask What They Took From It — ask what they would tell somebody else", back: "\"What would you tell someone heading into the same thing?\"", guideFront: "Close it by asking what changed when...", guideBack: "What they came away with" },
+            { front: "Step 3 · Let It End — acknowledge it, then leave the subject closed", back: "\"That's a good way of putting it.\" (and then let the subject rest)", guideFront: "Let the subject finish when...", guideBack: "A short acknowledgement, and no new question" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague has finished describing a project that went badly wrong.",
           steps: [
-            { front: "Step 1 · Ask What They Took From It", back: "\"What would you do differently if it came round again?\"" },
-            { front: "Step 2 · Ask What They Took From It", back: "\"And what would you keep exactly as it was?\"" },
-            { front: "Step 3 · Let it land", back: "\"That's a fair reading of it.\" (and then let the subject rest)" },
+            { front: "Step 1 · Ask What They Took From It — ask what is different now", back: "\"What would you do differently if it came round again?\"", guideFront: "Close it by asking what changed when...", guideBack: "What they came away with" },
+            { front: "Step 2 · Ask What They Took From It — ask what they would tell somebody else", back: "\"And what would you keep exactly as it was?\"", guideFront: "Close it by asking what changed when...", guideBack: "What they came away with" },
+            { front: "Step 3 · Let It End — acknowledge it, then leave the subject closed", back: "\"That's a fair reading of it.\" (and then let the subject rest)", guideFront: "Let the subject finish when...", guideBack: "A short acknowledgement, and no new question" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A friend has finished telling you about the end of a long relationship.",
           steps: [
-            { front: "Step 1 · Ask What They Took From It", back: "\"What do you know now that you didn't at the start of it?\"" },
-            { front: "Step 2 · Ask What They Took From It", back: "\"What would you say to somebody right at the beginning of the same thing?\"" },
-            { front: "Step 3 · Let it land", back: "\"That's worth having, even at that price.\" (and then let the subject rest)" },
+            { front: "Step 1 · Ask What They Took From It — ask what is different now", back: "\"What do you know now that you didn't at the start of it?\"", guideFront: "Close it by asking what changed when...", guideBack: "What they came away with" },
+            { front: "Step 2 · Ask What They Took From It — ask what they would tell somebody else", back: "\"What would you say to somebody right at the beginning of the same thing?\"", guideFront: "Close it by asking what changed when...", guideBack: "What they came away with" },
+            { front: "Step 3 · Let It End — acknowledge it, then leave the subject closed", back: "\"That's worth having, even at that price.\" (and then let the subject rest)", guideFront: "Let the subject finish when...", guideBack: "A short acknowledgement, and no new question" },
           ]
         },
       ]
@@ -5848,27 +5848,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend has separately mentioned a long commute and constant tiredness.",
           steps: [
-            { front: "Step 1 · Name both", back: "\"You said earlier the travel had got heavy.\"" },
-            { front: "Step 2 · Connect and check", back: "\"And now the tiredness. Are those the same problem, do you think?\"" },
-            { front: "Step 3 · Leave the space", back: "(say nothing while they think — the pause is the move)" },
+            { front: "Step 1 · Link to Earlier — name the first thing they said", back: "\"You said earlier the travel had got heavy.\"", guideFront: "Join two things they've said when...", guideBack: "Now and earlier, tied together" },
+            { front: "Step 2 · Check Your Version — ask whether the two are the same problem", back: "\"And now the tiredness. Are those the same problem, do you think?\"", guideFront: "Say it back as a question when...", guideBack: "Your reading, offered to be corrected" },
+            { front: "Step 3 · Let Them Take It — say nothing while they work it out", back: "(say nothing while they think — the pause is the move)", guideFront: "Leave the silence when...", guideBack: "The pause, left where it fell" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague has complained about the rota and, separately, about not being consulted.",
           steps: [
-            { front: "Step 1 · Name both", back: "\"The rota came up earlier, and now the not-being-asked.\"" },
-            { front: "Step 2 · Connect and check", back: "\"Is the rota actually the issue, or is it who decides it?\"" },
-            { front: "Step 3 · Leave the space", back: "\"Take your time — I've just realised I've asked you something quite big.\"" },
+            { front: "Step 1 · Link to Earlier — name the first thing they said", back: "\"The rota came up earlier, and now the not-being-asked.\"", guideFront: "Join two things they've said when...", guideBack: "Now and earlier, tied together" },
+            { front: "Step 2 · Check Your Version — ask whether the two are the same problem", back: "\"Is the rota actually the issue, or is it who decides it?\"", guideFront: "Say it back as a question when...", guideBack: "Your reading, offered to be corrected" },
+            { front: "Step 3 · Let Them Take It — say nothing while they work it out", back: "\"Take your time — I've just realised I've asked you something quite big.\"", guideFront: "Leave the silence when...", guideBack: "The pause, left where it fell" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague has mentioned a new manager and, separately, that they have stopped volunteering for things.",
           steps: [
-            { front: "Step 1 · Name both", back: "\"You mentioned the new manager earlier.\"" },
-            { front: "Step 2 · Connect and check", back: "\"And now that you've stopped putting your hand up. Are those the same thing?\"" },
-            { front: "Step 3 · Leave the space", back: "(say nothing — they are deciding whether to answer that honestly)" },
+            { front: "Step 1 · Link to Earlier — name the first thing they said", back: "\"You mentioned the new manager earlier.\"", guideFront: "Join two things they've said when...", guideBack: "Now and earlier, tied together" },
+            { front: "Step 2 · Check Your Version — ask whether the two are the same problem", back: "\"And now that you've stopped putting your hand up. Are those the same thing?\"", guideFront: "Say it back as a question when...", guideBack: "Your reading, offered to be corrected" },
+            { front: "Step 3 · Let Them Take It — say nothing while they work it out", back: "(say nothing — they are deciding whether to answer that honestly)", guideFront: "Leave the silence when...", guideBack: "The pause, left where it fell" },
           ]
         },
       ]
@@ -5883,27 +5883,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A colleague has spent several minutes on a problem and stopped.",
           steps: [
-            { front: "Step 1 · Summarise in three", back: "\"So: the timing, the workload, and finding out after everyone else.\"" },
-            { front: "Step 2 · Invite the correction", back: "\"Have I missed anything, or got the weight wrong?\"" },
-            { front: "Step 3 · Respond to the corrected version", back: "\"Then the one worth sorting first is the finding-out-last, isn't it.\"" },
+            { front: "Step 1 · Sum It Up — three things, in their order", back: "\"So: the timing, the workload, and finding out after everyone else.\"", guideFront: "Give the main points in order when...", guideBack: "Their whole account, in short" },
+            { front: "Step 2 · Check Your Version — ask what you missed", back: "\"Have I missed anything, or got the weight wrong?\"", guideFront: "Say it back as a question when...", guideBack: "Your reading, offered to be corrected" },
+            { front: "Step 3 · Respond to the Corrected Version — answer the version they just fixed", back: "\"Then the one worth sorting first is the finding-out-last, isn't it.\"", guideFront: "Answer the corrected version when...", guideBack: "Your response, to their version" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A friend has finished a long account of a family situation.",
           steps: [
-            { front: "Step 1 · Summarise the shape", back: "\"It started as a practical thing and it's turned into something older.\"" },
-            { front: "Step 2 · Invite the correction", back: "\"Is that fair, or am I making it neater than it is?\"" },
-            { front: "Step 3 · Respond to the corrected version", back: "\"Then it's not really about the house at all. No wonder it's hard to talk about.\"" },
+            { front: "Step 1 · Sum It Up — name the shape it took", back: "\"It started as a practical thing and it's turned into something older.\"", guideFront: "Give the main points in order when...", guideBack: "Their whole account, in short" },
+            { front: "Step 2 · Check Your Version — ask what you missed", back: "\"Is that fair, or am I making it neater than it is?\"", guideFront: "Say it back as a question when...", guideBack: "Your reading, offered to be corrected" },
+            { front: "Step 3 · Respond to the Corrected Version — answer the version they just fixed", back: "\"Then it's not really about the house at all. No wonder it's hard to talk about.\"", guideFront: "Answer the corrected version when...", guideBack: "Your response, to their version" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A family member has talked for several minutes about a dispute with a neighbour.",
           steps: [
-            { front: "Step 1 · Summarise in three", back: "\"So: the fence, then six months of nothing, then the letter.\"" },
-            { front: "Step 2 · Invite the correction", back: "\"Is that the right order, or have I put the weight in the wrong place?\"" },
-            { front: "Step 3 · Respond to the corrected version", back: "\"Then it's the letter that changed it. Everything before that you could live with.\"" },
+            { front: "Step 1 · Sum It Up — three things, in their order", back: "\"So: the fence, then six months of nothing, then the letter.\"", guideFront: "Give the main points in order when...", guideBack: "Their whole account, in short" },
+            { front: "Step 2 · Check Your Version — ask what you missed", back: "\"Is that the right order, or have I put the weight in the wrong place?\"", guideFront: "Say it back as a question when...", guideBack: "Your reading, offered to be corrected" },
+            { front: "Step 3 · Respond to the Corrected Version — answer the version they just fixed", back: "\"Then it's the letter that changed it. Everything before that you could live with.\"", guideFront: "Answer the corrected version when...", guideBack: "Your response, to their version" },
           ]
         },
       ]
@@ -6276,39 +6276,39 @@ const multiStepCollections = {
       name: "Their Turn to Start",
       guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
-      description: "The same arc from the other side — they complain, and you are the one who keeps it going. This is the harder role and the more useful one, because it is the one most people freeze in. Steps: 1) Invite, 2) Build on their answer, 3) Complicate it, 4) Bring someone in, 5) Hand the ending to them.\n\nThe shape of the whole thing:\n1. \"So what are you going to do about it?\"\n2. \"Yes, and you'd need enough pizza to see the week out.\"\n3. \"What if your mum comes home and finds the boxes?\"\n4. \"This is where the dog gives you away, obviously.\"\n5. \"So how does this end? I need to know.\"\n\nWhy this order: your first move is a question, because an invitation costs you no ideas and buys you a whole turn to think. After that you are building on material they have already given you rather than inventing from nothing.\n\nMindset: when it is not your story, ask first. A playful open question is always available and it is never the wrong move.",
+      description: "The same arc from the other side — they complain, and you are the one who keeps it going. This is the harder role and the more useful one, because it is the one most people freeze in. Steps: 1) Invite — a playful open question, 2) Yes, And, 3) What If, 4) Bring Someone In, 5) Hand it back — the ending is theirs to land.\n\nThe shape of the whole thing:\n1. \"So what are you going to do about it?\"\n2. \"Yes, and you'd need enough pizza to see the week out.\"\n3. \"What if your mum comes home and finds the boxes?\"\n4. \"This is where the dog gives you away, obviously.\"\n5. \"So how does this end? I need to know.\"\n\nWhy this order: your first move is a question, because an invitation costs you no ideas and buys you a whole turn to think. After that you are building on material they have already given you rather than inventing from nothing.\n\nMindset: when it is not your story, ask first. A playful open question is always available and it is never the wrong move.",
       inputs: [
         {
           bundle: 'pro',
           situation: "A friend says they are too tired to face the rest of the week.",
           steps: [
-            { front: "Step 1 · Invite — a playful open question", back: "\"So what are you going to do instead? Realistically.\"" },
+            { front: "Step 1 · Invite — a playful open question", back: "\"So what are you going to do instead? Realistically.\"", guideFront: "Ask a playful open question when...", guideBack: "An invitation, not an idea" },
             { front: "Step 2 · Yes, And — they say \"hide at home with films\"", back: "\"Yes, and you'd need enough pizza to see the whole week out.\"", guideFront: "Accept it and add on top when...", guideBack: "Their idea, with something built on it" },
             { front: "Step 3 · What If — add a threat to the plan", back: "\"What if your mum comes home and finds ten empty boxes?\"", guideFront: "Add a complication nobody asked for when...", guideBack: "A threat to the plan" },
             { front: "Step 4 · Bring Someone In — a new reaction", back: "\"And the dog gives you away immediately. He has no loyalty.\"", guideFront: "Add a character with an opinion when...", guideBack: "A new person, animal or object, reacting" },
-            { front: "Step 5 · Hand it back — let them land it", back: "\"So how does this end? I need to know how you get out of it.\"" },
+            { front: "Step 5 · Hand it back — let them land it", back: "\"So how does this end? I need to know how you get out of it.\"", guideFront: "Hand the ending to them when...", guideBack: "The last move, left to them" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague announces they have far too much to do tonight.",
           steps: [
-            { front: "Step 1 · Invite — ask for the plan", back: "\"How are you actually going to get through all that?\"" },
+            { front: "Step 1 · Invite — ask for the plan", back: "\"How are you actually going to get through all that?\"", guideFront: "Ask a playful open question when...", guideBack: "An invitation, not an idea" },
             { front: "Step 2 · Yes, And — they say \"coffee and denial\"", back: "\"Yes, and a whiteboard. Nobody's ever solved anything without one.\"", guideFront: "Accept it and add on top when...", guideBack: "Their idea, with something built on it" },
             { front: "Step 3 · What If — a small domestic disaster", back: "\"What if the coffee machine picks tonight to break?\"", guideFront: "Add a complication nobody asked for when...", guideBack: "A threat to the plan" },
             { front: "Step 4 · Bring Someone In — someone unhelpful", back: "\"And then your neighbour knocks. He wants to talk about the bins.\"", guideFront: "Add a character with an opinion when...", guideBack: "A new person, animal or object, reacting" },
-            { front: "Step 5 · Hand it back — their ending", back: "\"Go on then. Do you survive this or not?\"" },
+            { front: "Step 5 · Hand it back — their ending", back: "\"Go on then. Do you survive this or not?\"", guideFront: "Hand the ending to them when...", guideBack: "The last move, left to them" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague says they have three meetings today that could all have been emails.",
           steps: [
-            { front: "Step 1 · Invite — a playful open question", back: "\"What would you be doing instead? Be specific.\"" },
-            { front: "Step 2 · Yes, And — they say \"staring out of the window\"", back: "\"Yes, and keeping a log. Weather, birds, that sort of thing.\"" },
-            { front: "Step 3 · What If — add a threat to the plan", back: "\"What if somebody asks to see the log?\"" },
-            { front: "Step 4 · Bring Someone In — a new reaction", back: "\"And your manager finds it genuinely fascinating. Now it's a project.\"" },
-            { front: "Step 5 · Hand it back — let them land it", back: "\"So where does that end? I need to know if you get out of it.\"" },
+            { front: "Step 1 · Invite — a playful open question", back: "\"What would you be doing instead? Be specific.\"", guideFront: "Ask a playful open question when...", guideBack: "An invitation, not an idea" },
+            { front: "Step 2 · Yes, And — they say \"staring out of the window\"", back: "\"Yes, and keeping a log. Weather, birds, that sort of thing.\"", guideFront: "Accept it and add on top when...", guideBack: "Their idea, with something built on it" },
+            { front: "Step 3 · What If — add a threat to the plan", back: "\"What if somebody asks to see the log?\"", guideFront: "Add a complication nobody asked for when...", guideBack: "A threat to the plan" },
+            { front: "Step 4 · Bring Someone In — a new reaction", back: "\"And your manager finds it genuinely fascinating. Now it's a project.\"", guideFront: "Add a character with an opinion when...", guideBack: "A new person, animal or object, reacting" },
+            { front: "Step 5 · Hand it back — let them land it", back: "\"So where does that end? I need to know if you get out of it.\"", guideFront: "Hand the ending to them when...", guideBack: "The last move, left to them" },
           ]
         },
       ]
@@ -6398,27 +6398,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You have defined the thing and they still look blank.",
           steps: [
-            { front: "Step 1 · Notice", back: "(they nodded, and nothing happened behind it)" },
-            { front: "Step 2 · Name what you gave", back: "\"That was the what, and it clearly didn't help.\"" },
-            { front: "Step 3 · Different W", back: "\"The point of it is that you stop chasing people for updates.\"" },
+            { front: "Step 1 · Notice It Did Not Land — read what the nod actually meant", back: "(they nodded, and nothing happened behind it)", guideFront: "Register that it did not land when...", guideBack: "What you noticed, not what you said" },
+            { front: "Step 2 · Name What You Gave — say which W you answered with", back: "\"That was the what, and it clearly didn't help.\"", guideFront: "Say which W you already gave when...", guideBack: "The W you answered with" },
+            { front: "Step 3 · The W They Need — give a different one", back: "\"The point of it is that you stop chasing people for updates.\"", guideFront: "Give the piece they're missing when...", guideBack: "The answer they're really after, or a check" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Someone asks what a tool is while holding it in a shop.",
           steps: [
-            { front: "Step 1 · Notice", back: "(they do not need to know what it is — they can see it)" },
-            { front: "Step 2 · Name what you gave", back: "\"I was about to tell you what it's called, which you can read.\"" },
-            { front: "Step 3 · Different W", back: "\"It's for people who cook most days. Twice a week and it lives in a cupboard.\"" },
+            { front: "Step 1 · Notice It Did Not Land — read what the nod actually meant", back: "(they do not need to know what it is — they can see it)", guideFront: "Register that it did not land when...", guideBack: "What you noticed, not what you said" },
+            { front: "Step 2 · Name What You Gave — say which W you answered with", back: "\"I was about to tell you what it's called, which you can read.\"", guideFront: "Say which W you already gave when...", guideBack: "The W you answered with" },
+            { front: "Step 3 · The W They Need — give a different one", back: "\"It's for people who cook most days. Twice a week and it lives in a cupboard.\"", guideFront: "Give the piece they're missing when...", guideBack: "The answer they're really after, or a check" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A friend asks why everyone at your work is talking about the new rota.",
           steps: [
-            { front: "Step 1 · Notice", back: "(they are not asking how it works — they are asking why it is the only subject)" },
-            { front: "Step 2 · Name what you gave", back: "\"I was about to explain the system, which isn't what you asked.\"" },
-            { front: "Step 3 · Different W", back: "\"It decides who works Christmas. That's why it's the only thing anyone's talking about.\"" },
+            { front: "Step 1 · Notice It Did Not Land — read what the nod actually meant", back: "(they are not asking how it works — they are asking why it is the only subject)", guideFront: "Register that it did not land when...", guideBack: "What you noticed, not what you said" },
+            { front: "Step 2 · Name What You Gave — say which W you answered with", back: "\"I was about to explain the system, which isn't what you asked.\"", guideFront: "Say which W you already gave when...", guideBack: "The W you answered with" },
+            { front: "Step 3 · The W They Need — give a different one", back: "\"It decides who works Christmas. That's why it's the only thing anyone's talking about.\"", guideFront: "Give the piece they're missing when...", guideBack: "The answer they're really after, or a check" },
           ]
         },
       ]
@@ -6433,27 +6433,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "Explaining a work tool to someone outside your team.",
           steps: [
-            { front: "Step 1 · Where", back: "\"It's an office thing. Nobody would have one at home.\"" },
-            { front: "Step 2 · Who", back: "\"It's for teams where several people book the same rooms.\"" },
-            { front: "Step 3 · How", back: "\"You claim a slot and it goes grey for everyone else.\"" },
+            { front: "Step 1 · Where It Belongs — put it in a world they already know", back: "\"It's an office thing. Nobody would have one at home.\"", guideFront: "Place it in a setting when...", guideBack: "The setting it fits into" },
+            { front: "Step 2 · Who It Is For — say who would own one", back: "\"It's for teams where several people book the same rooms.\"", guideFront: "Say who needs it when...", guideBack: "Who it suits, and who can skip it" },
+            { front: "Step 3 · How It Works — one sentence on the mechanics", back: "\"You claim a slot and it goes grey for everyone else.\"", guideFront: "Give the mechanics, now it has a place, when...", guideBack: "How it is used, in one sentence" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Explaining an unfamiliar kitchen object to a friend.",
           steps: [
-            { front: "Step 1 · Where", back: "\"It lives by the spices rather than the pans, which is the clue.\"" },
-            { front: "Step 2 · Who", back: "\"Anyone who cooks with whole spices. Otherwise it's an ornament.\"" },
-            { front: "Step 3 · How", back: "\"You put them in and lean on it. That's genuinely all there is.\"" },
+            { front: "Step 1 · Where It Belongs — put it in a world they already know", back: "\"It lives by the spices rather than the pans, which is the clue.\"", guideFront: "Place it in a setting when...", guideBack: "The setting it fits into" },
+            { front: "Step 2 · Who It Is For — say who would own one", back: "\"Anyone who cooks with whole spices. Otherwise it's an ornament.\"", guideFront: "Say who needs it when...", guideBack: "Who it suits, and who can skip it" },
+            { front: "Step 3 · How It Works — one sentence on the mechanics", back: "\"You put them in and lean on it. That's genuinely all there is.\"", guideFront: "Give the mechanics, now it has a place, when...", guideBack: "How it is used, in one sentence" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Explaining an unfamiliar instrument to someone who does not play.",
           steps: [
-            { front: "Step 1 · Where", back: "\"It's in the same family as a flute, just much bigger and much lower.\"" },
-            { front: "Step 2 · Who", back: "\"Orchestras, mostly. Nobody owns one by accident.\"" },
-            { front: "Step 3 · How", back: "\"You blow across the hole rather than into it, which is the whole difficulty.\"" },
+            { front: "Step 1 · Where It Belongs — put it in a world they already know", back: "\"It's in the same family as a flute, just much bigger and much lower.\"", guideFront: "Place it in a setting when...", guideBack: "The setting it fits into" },
+            { front: "Step 2 · Who It Is For — say who would own one", back: "\"Orchestras, mostly. Nobody owns one by accident.\"", guideFront: "Say who needs it when...", guideBack: "Who it suits, and who can skip it" },
+            { front: "Step 3 · How It Works — one sentence on the mechanics", back: "\"You blow across the hole rather than into it, which is the whole difficulty.\"", guideFront: "Give the mechanics, now it has a place, when...", guideBack: "How it is used, in one sentence" },
           ]
         },
       ]
@@ -6511,7 +6511,7 @@ const multiStepCollections = {
             { front: "Step 1 · Pick One Fast — first small one, not best one", back: "(the night the taxi never came — not the whole interrailing summer)", guideFront: "Choose in fifteen seconds and start when...", guideBack: "A small story, chosen quickly" },
             { front: "Step 2 · Open It in One Sentence — one sentence", back: "\"There was a night in Portugal when the taxi just never came.\"", guideFront: "Open with a line that makes them curious when...", guideBack: "One sentence that opens it" },
             { front: "Step 3 · Name the Turn — get there fast", back: "\"And we realised the last bus had gone about an hour before we started waiting.\"", guideFront: "Say the moment it became a story when...", guideBack: "The thing that went wrong, or changed" },
-            { front: "Step 4 · Land the Resolution", back: "\"So we walked eight kilometres in the dark and it was the best night of the trip.\"", guideFront: "Say what you did and how it ended when...", guideBack: "The ending, said plainly" },
+            { front: "Step 4 · Land the Resolution — land it short", back: "\"So we walked eight kilometres in the dark and it was the best night of the trip.\"", guideFront: "Say what you did and how it ended when...", guideBack: "The ending, said plainly" },
           ]
         },
         {
@@ -6521,17 +6521,17 @@ const multiStepCollections = {
             { front: "Step 1 · Pick One Fast — recent beats impressive", back: "(the message about my boss, sent to my boss, last month)", guideFront: "Choose in fifteen seconds and start when...", guideBack: "A small story, chosen quickly" },
             { front: "Step 2 · Open It in One Sentence — the hook", back: "\"I once sent a message about my boss to my boss.\"", guideFront: "Open with a line that makes them curious when...", guideBack: "One sentence that opens it" },
             { front: "Step 3 · Name the Turn — the moment of noticing", back: "\"I watched the little 'read' appear underneath it. Nothing I could do.\"", guideFront: "Say the moment it became a story when...", guideBack: "The thing that went wrong, or changed" },
-            { front: "Step 4 · Land the Resolution", back: "\"She replied 'fair'. We've never mentioned it since.\"", guideFront: "Say what you did and how it ended when...", guideBack: "The ending, said plainly" },
+            { front: "Step 4 · Land the Resolution — land it short", back: "\"She replied 'fair'. We've never mentioned it since.\"", guideFront: "Say what you did and how it ended when...", guideBack: "The ending, said plainly" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Somebody says \"neighbours\" and it is nearly your turn.",
           steps: [
-            { front: "Step 1 · Pick One Fast — first small one, not best one", back: "(the man who knocked at eleven about a washing machine — not the whole two years)" },
-            { front: "Step 2 · Open It in One Sentence — one sentence", back: "\"A man knocked on my door at eleven at night about a washing machine.\"" },
-            { front: "Step 3 · Name the Turn — get there fast", back: "\"It wasn't my washing machine. It wasn't even my building.\"" },
-            { front: "Step 4 · Land the Resolution", back: "\"He was one street off. He comes to our summer thing now.\"" },
+            { front: "Step 1 · Pick One Fast — first small one, not best one", back: "(the man who knocked at eleven about a washing machine — not the whole two years)", guideFront: "Choose in fifteen seconds and start when...", guideBack: "A small story, chosen quickly" },
+            { front: "Step 2 · Open It in One Sentence — one sentence", back: "\"A man knocked on my door at eleven at night about a washing machine.\"", guideFront: "Open with a line that makes them curious when...", guideBack: "One sentence that opens it" },
+            { front: "Step 3 · Name the Turn — get there fast", back: "\"It wasn't my washing machine. It wasn't even my building.\"", guideFront: "Say the moment it became a story when...", guideBack: "The thing that went wrong, or changed" },
+            { front: "Step 4 · Land the Resolution — land it short", back: "\"He was one street off. He comes to our summer thing now.\"", guideFront: "Say what you did and how it ended when...", guideBack: "The ending, said plainly" },
           ]
         },
       ]
@@ -6546,30 +6546,30 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "The interview you were late for because you went to the wrong building.",
           steps: [
-            { front: "Step 1 · Put the Feeling In", back: "\"I had an interview, I went to the wrong building, I was twenty minutes late.\"", guideFront: "Let the emotion be in the telling when...", guideBack: "The feeling, in the words themselves" },
-            { front: "Step 2 · Put the Feeling In", back: "\"I sat confidently in the wrong reception for forty minutes. Nobody questioned me.\"", guideFront: "Let the emotion be in the telling when...", guideBack: "The feeling, in the words themselves" },
-            { front: "Step 3 · Put the Feeling In", back: "\"I'd wanted that job for two years and I lost it in a lobby.\"", guideFront: "Let the emotion be in the telling when...", guideBack: "The feeling, in the words themselves" },
-            { front: "Step 4 · Pick One Fast", back: "\"For a party, the first one. For someone who knows me, the second.\"", guideFront: "Choose in fifteen seconds and start when...", guideBack: "A small story, chosen quickly" },
+            { front: "Step 1 · Put the Feeling In — tell it flat, just what happened", back: "\"I had an interview, I went to the wrong building, I was twenty minutes late.\"", guideFront: "Let the emotion be in the telling when...", guideBack: "The feeling, in the words themselves" },
+            { front: "Step 2 · Put the Feeling In — tell it for the laugh", back: "\"I sat confidently in the wrong reception for forty minutes. Nobody questioned me.\"", guideFront: "Let the emotion be in the telling when...", guideBack: "The feeling, in the words themselves" },
+            { front: "Step 3 · Put the Feeling In — tell it for what it cost", back: "\"I'd wanted that job for two years and I lost it in a lobby.\"", guideFront: "Let the emotion be in the telling when...", guideBack: "The feeling, in the words themselves" },
+            { front: "Step 4 · Pick One Fast — choose which version this room gets", back: "\"For a party, the first one. For someone who knows me, the second.\"", guideFront: "Choose in fifteen seconds and start when...", guideBack: "A small story, chosen quickly" },
           ]
         },
         {
           bundle: 'pro',
           situation: "The week your car broke down twice.",
           steps: [
-            { front: "Step 1 · Put the Feeling In", back: "\"The car broke down on the Tuesday and again on the Friday.\"", guideFront: "Let the emotion be in the telling when...", guideBack: "The feeling, in the words themselves" },
-            { front: "Step 2 · Put the Feeling In", back: "\"The same mechanic, twice in one week. He'd started waving.\"", guideFront: "Let the emotion be in the telling when...", guideBack: "The feeling, in the words themselves" },
-            { front: "Step 3 · Put the Feeling In", back: "\"It was the week I worked out I couldn't afford to keep it.\"", guideFront: "Let the emotion be in the telling when...", guideBack: "The feeling, in the words themselves" },
-            { front: "Step 4 · Pick One Fast", back: "\"Depends entirely who's asking, and whether they've got ten minutes.\"", guideFront: "Choose in fifteen seconds and start when...", guideBack: "A small story, chosen quickly" },
+            { front: "Step 1 · Put the Feeling In — tell it flat, just what happened", back: "\"The car broke down on the Tuesday and again on the Friday.\"", guideFront: "Let the emotion be in the telling when...", guideBack: "The feeling, in the words themselves" },
+            { front: "Step 2 · Put the Feeling In — tell it for the laugh", back: "\"The same mechanic, twice in one week. He'd started waving.\"", guideFront: "Let the emotion be in the telling when...", guideBack: "The feeling, in the words themselves" },
+            { front: "Step 3 · Put the Feeling In — tell it for what it cost", back: "\"It was the week I worked out I couldn't afford to keep it.\"", guideFront: "Let the emotion be in the telling when...", guideBack: "The feeling, in the words themselves" },
+            { front: "Step 4 · Pick One Fast — choose which version this room gets", back: "\"Depends entirely who's asking, and whether they've got ten minutes.\"", guideFront: "Choose in fifteen seconds and start when...", guideBack: "A small story, chosen quickly" },
           ]
         },
         {
           bundle: 'pro',
           situation: "The day you locked yourself out with the shopping still in the car.",
           steps: [
-            { front: "Step 1 · Put the Feeling In", back: "\"I locked myself out, the shopping was in the car, and the car keys were inside.\"" },
-            { front: "Step 2 · Put the Feeling In", back: "\"I sat on my own doorstep guarding a car I couldn't open, for two hours.\"" },
-            { front: "Step 3 · Put the Feeling In", back: "\"It was the end of a week where nothing had worked, and that was the bit that finished me.\"" },
-            { front: "Step 4 · Pick One Fast", back: "\"The funny one for most people. The other one for about three of them.\"" },
+            { front: "Step 1 · Put the Feeling In — tell it flat, just what happened", back: "\"I locked myself out, the shopping was in the car, and the car keys were inside.\"", guideFront: "Let the emotion be in the telling when...", guideBack: "The feeling, in the words themselves" },
+            { front: "Step 2 · Put the Feeling In — tell it for the laugh", back: "\"I sat on my own doorstep guarding a car I couldn't open, for two hours.\"", guideFront: "Let the emotion be in the telling when...", guideBack: "The feeling, in the words themselves" },
+            { front: "Step 3 · Put the Feeling In — tell it for what it cost", back: "\"It was the end of a week where nothing had worked, and that was the bit that finished me.\"", guideFront: "Let the emotion be in the telling when...", guideBack: "The feeling, in the words themselves" },
+            { front: "Step 4 · Pick One Fast — choose which version this room gets", back: "\"The funny one for most people. The other one for about three of them.\"", guideFront: "Choose in fifteen seconds and start when...", guideBack: "A small story, chosen quickly" },
           ]
         },
       ]
@@ -6588,7 +6588,7 @@ const multiStepCollections = {
           steps: [
             { front: "Step 1 · Offer It, Don't Impose It — the true, hard sentence", back: "\"That's a horrible way to find out. I'd be livid.\"", guideFront: "Give it as one reading among others when...", guideBack: "A reframe offered, and left with them" },
             { front: "Step 2 · Offer It, Don't Impose It — hand them the choice", back: "\"Do you want another angle on it, or do you want to be angry for a bit first?\"", guideFront: "Give it as one reading among others when...", guideBack: "A reframe offered, and left with them" },
-            { front: "Step 3 · Offer It, Don't Impose It", back: "\"It'd have come out eventually, and better now than in six months. That's all I've got.\"", guideFront: "Give it as one reading among others when...", guideBack: "A reframe offered, and left with them" },
+            { front: "Step 3 · Offer It, Don't Impose It — offer it once and stop", back: "\"It'd have come out eventually, and better now than in six months. That's all I've got.\"", guideFront: "Give it as one reading among others when...", guideBack: "A reframe offered, and left with them" },
           ]
         },
         {
@@ -6597,16 +6597,16 @@ const multiStepCollections = {
           steps: [
             { front: "Step 1 · Offer It, Don't Impose It — do not skip it", back: "\"It clearly didn't feel good in there.\"", guideFront: "Give it as one reading among others when...", guideBack: "A reframe offered, and left with them" },
             { front: "Step 2 · Offer It, Don't Impose It — check they want it", back: "\"Can I tell you what it looked like from the back of the room?\"", guideFront: "Give it as one reading among others when...", guideBack: "A reframe offered, and left with them" },
-            { front: "Step 3 · Offer It, Don't Impose It", back: "\"Two people on phones, one real question. That's a normal Tuesday, not a disaster.\"", guideFront: "Give it as one reading among others when...", guideBack: "A reframe offered, and left with them" },
+            { front: "Step 3 · Offer It, Don't Impose It — offer it once and stop", back: "\"Two people on phones, one real question. That's a normal Tuesday, not a disaster.\"", guideFront: "Give it as one reading among others when...", guideBack: "A reframe offered, and left with them" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A friend's job application has been turned down without an interview.",
           steps: [
-            { front: "Step 1 · Offer It, Don't Impose It — the true, hard sentence", back: "\"No interview at all is the worst version of it.\"" },
-            { front: "Step 2 · Offer It, Don't Impose It — hand them the choice", back: "\"Do you want my read on it, or is it too soon for that?\"" },
-            { front: "Step 3 · Offer It, Don't Impose It", back: "\"A no at that stage is usually about the pile, not about you. That's all I've got.\"" },
+            { front: "Step 1 · Offer It, Don't Impose It — the true, hard sentence", back: "\"No interview at all is the worst version of it.\"", guideFront: "Give it as one reading among others when...", guideBack: "A reframe offered, and left with them" },
+            { front: "Step 2 · Offer It, Don't Impose It — hand them the choice", back: "\"Do you want my read on it, or is it too soon for that?\"", guideFront: "Give it as one reading among others when...", guideBack: "A reframe offered, and left with them" },
+            { front: "Step 3 · Offer It, Don't Impose It — offer it once and stop", back: "\"A no at that stage is usually about the pile, not about you. That's all I've got.\"", guideFront: "Give it as one reading among others when...", guideBack: "A reframe offered, and left with them" },
           ]
         },
       ]
@@ -6621,27 +6621,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "Somebody at work has called you fussy about detail, in front of others.",
           steps: [
-            { front: "Step 1 · Reframe What They Said About You", back: "\"That's fair, I do go over things twice.\"", guideFront: "Take their word and read it differently when...", guideBack: "Their label, given your reading" },
-            { front: "Step 2 · Reframe What They Said About You", back: "\"I'd call it particular. It's why the last audit was boring.\"", guideFront: "Take their word and read it differently when...", guideBack: "Their label, given your reading" },
-            { front: "Step 3 · Reframe What They Said About You", back: "\"Entirely guilty and quite happy about it. Right — where were we?\"", guideFront: "Take their word and read it differently when...", guideBack: "Their label, given your reading" },
+            { front: "Step 1 · Reframe What They Said About You — they say: \"You're so fussy about all this.\"", back: "\"That's fair, I do go over things twice.\"", guideFront: "Take their word and read it differently when...", guideBack: "Their label, given your reading" },
+            { front: "Step 2 · Reframe What They Said About You — rename it in your own word", back: "\"I'd call it particular. It's why the last audit was boring.\"", guideFront: "Take their word and read it differently when...", guideBack: "Their label, given your reading" },
+            { front: "Step 3 · Reframe What They Said About You — own it, then change the subject", back: "\"Entirely guilty and quite happy about it. Right — where were we?\"", guideFront: "Take their word and read it differently when...", guideBack: "Their label, given your reading" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A friend says you take everything too seriously.",
           steps: [
-            { front: "Step 1 · Reframe What They Said About You", back: "\"I do, yeah. I've always been like that.\"", guideFront: "Take their word and read it differently when...", guideBack: "Their label, given your reading" },
-            { front: "Step 2 · Reframe What They Said About You", back: "\"I take the things that matter seriously. That's the version I'd use.\"", guideFront: "Take their word and read it differently when...", guideBack: "Their label, given your reading" },
-            { front: "Step 3 · Reframe What They Said About You", back: "\"I'd rather have that problem than the other one. Anyway, tell me about Friday.\"", guideFront: "Take their word and read it differently when...", guideBack: "Their label, given your reading" },
+            { front: "Step 1 · Reframe What They Said About You — they say: \"You take everything too seriously.\"", back: "\"I do, yeah. I've always been like that.\"", guideFront: "Take their word and read it differently when...", guideBack: "Their label, given your reading" },
+            { front: "Step 2 · Reframe What They Said About You — rename it in your own word", back: "\"I take the things that matter seriously. That's the version I'd use.\"", guideFront: "Take their word and read it differently when...", guideBack: "Their label, given your reading" },
+            { front: "Step 3 · Reframe What They Said About You — own it, then change the subject", back: "\"I'd rather have that problem than the other one. Anyway, tell me about Friday.\"", guideFront: "Take their word and read it differently when...", guideBack: "Their label, given your reading" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A family member says you are always the one who makes things complicated.",
           steps: [
-            { front: "Step 1 · Reframe What They Said About You", back: "\"I do complicate things, yeah. I've heard that before.\"" },
-            { front: "Step 2 · Reframe What They Said About You", back: "\"I'd call it asking the second question. It saved us a holiday once.\"" },
-            { front: "Step 3 · Reframe What They Said About You", back: "\"Happy to be that person. Right — what time are we leaving?\"" },
+            { front: "Step 1 · Reframe What They Said About You — they say: \"You always make things complicated.\"", back: "\"I do complicate things, yeah. I've heard that before.\"", guideFront: "Take their word and read it differently when...", guideBack: "Their label, given your reading" },
+            { front: "Step 2 · Reframe What They Said About You — rename it in your own word", back: "\"I'd call it asking the second question. It saved us a holiday once.\"", guideFront: "Take their word and read it differently when...", guideBack: "Their label, given your reading" },
+            { front: "Step 3 · Reframe What They Said About You — own it, then change the subject", back: "\"Happy to be that person. Right — what time are we leaving?\"", guideFront: "Take their word and read it differently when...", guideBack: "Their label, given your reading" },
           ]
         },
       ]
@@ -6656,27 +6656,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend's plan has fallen apart the same afternoon.",
           steps: [
-            { front: "Step 1 · Know When Not To", back: "\"That's just bad. I'm not going to look for an upside today.\"", guideFront: "Leave it alone when...", guideBack: "No reframe — the situation, taken straight" },
-            { front: "Step 2 · Know When Not To", back: "\"You're allowed to be gutted about it. Anyone would be.\"", guideFront: "Leave it alone when...", guideBack: "No reframe — the situation, taken straight" },
-            { front: "Step 3 · Know When Not To", back: "\"What would actually help right now — company, or a plan, or neither?\"", guideFront: "Leave it alone when...", guideBack: "No reframe — the situation, taken straight" },
+            { front: "Step 1 · Know When Not To — say plainly that it is bad", back: "\"That's just bad. I'm not going to look for an upside today.\"", guideFront: "Leave it alone when...", guideBack: "No reframe — the situation, taken straight" },
+            { front: "Step 2 · Know When Not To — say the reaction fits", back: "\"You're allowed to be gutted about it. Anyone would be.\"", guideFront: "Leave it alone when...", guideBack: "No reframe — the situation, taken straight" },
+            { front: "Step 3 · Know When Not To — ask what would actually help", back: "\"What would actually help right now — company, or a plan, or neither?\"", guideFront: "Leave it alone when...", guideBack: "No reframe — the situation, taken straight" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Somebody is dreading something that genuinely is going to be hard.",
           steps: [
-            { front: "Step 1 · Know When Not To", back: "\"It probably will be as bad as you think. I'm not going to pretend.\"", guideFront: "Leave it alone when...", guideBack: "No reframe — the situation, taken straight" },
-            { front: "Step 2 · Know When Not To", back: "\"Dreading it is the sensible response, not a failure of attitude.\"", guideFront: "Leave it alone when...", guideBack: "No reframe — the situation, taken straight" },
-            { front: "Step 3 · Know When Not To", back: "\"Do you want to talk about the day itself, or think about something else entirely?\"", guideFront: "Leave it alone when...", guideBack: "No reframe — the situation, taken straight" },
+            { front: "Step 1 · Know When Not To — say plainly that it is bad", back: "\"It probably will be as bad as you think. I'm not going to pretend.\"", guideFront: "Leave it alone when...", guideBack: "No reframe — the situation, taken straight" },
+            { front: "Step 2 · Know When Not To — say the reaction fits", back: "\"Dreading it is the sensible response, not a failure of attitude.\"", guideFront: "Leave it alone when...", guideBack: "No reframe — the situation, taken straight" },
+            { front: "Step 3 · Know When Not To — ask what would actually help", back: "\"Do you want to talk about the day itself, or think about something else entirely?\"", guideFront: "Leave it alone when...", guideBack: "No reframe — the situation, taken straight" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Somebody's dog has died and they are describing the last week of it.",
           steps: [
-            { front: "Step 1 · Know When Not To", back: "\"That's just sad. There's no good way to read it.\"" },
-            { front: "Step 2 · Know When Not To", back: "\"Of course you're wrecked. Fifteen years is most of a life.\"" },
-            { front: "Step 3 · Know When Not To", back: "\"Do you want to talk about her, or think about something else for an hour?\"" },
+            { front: "Step 1 · Know When Not To — say plainly that it is bad", back: "\"That's just sad. There's no good way to read it.\"", guideFront: "Leave it alone when...", guideBack: "No reframe — the situation, taken straight" },
+            { front: "Step 2 · Know When Not To — say the reaction fits", back: "\"Of course you're wrecked. Fifteen years is most of a life.\"", guideFront: "Leave it alone when...", guideBack: "No reframe — the situation, taken straight" },
+            { front: "Step 3 · Know When Not To — ask what would actually help", back: "\"Do you want to talk about her, or think about something else for an hour?\"", guideFront: "Leave it alone when...", guideBack: "No reframe — the situation, taken straight" },
           ]
         },
       ]
@@ -8203,7 +8203,7 @@ const multiStepCollections = {
       name: "When the Joke Does Not Land",
       guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
-      description: "You make a joke and get nothing — a polite half-smile, or a blank look, or worse, they take it seriously. This is the risk that stops people using humour at all.\n\nThe recovery is short and cheap: do not explain it, do not repeat it, and do not apologise at length. Move to a plainer opener and carry on as though nothing happened, because from the outside, nothing has.\n\nMindset: a missed joke costs about two seconds. Explaining it costs considerably more.",
+      description: "You make a joke and get nothing — a polite half-smile, or a blank look, or worse, they take it seriously. This is the risk that stops people using humour at all.\n\nThe recovery is short and cheap: do not explain it, do not repeat it, and do not apologise at length. Move to a plainer opener and carry on as though nothing happened, because from the outside, nothing has.\n\nTwo of the step names here are recovery beats rather than strategies. Ask about the situation instead is the plain question you fall back to when the joke got nothing, and Read it and stop is the decision to end it warmly rather than try a third time.\n\nMindset: a missed joke costs about two seconds. Explaining it costs considerably more.",
       inputs: [
         {
           bundle: 'pro',
@@ -8220,19 +8220,19 @@ const multiStepCollections = {
           situation: "You are in a long queue. You make an exaggerated joke to the person behind you and it lands on nothing.",
           steps: [
             { front: "Step 1 · Joke About the Situation — exaggerate the wait.", back: "\"I think we've been here long enough to claim residency.\"", guideFront: "Exaggerate or understate the moment when...", guideBack: "A dry line about what you're both in" },
-            { front: "Step 2 · Ask about the situation instead — they smile faintly and say nothing.", back: "\"Do you know if there's more than one desk open?\"", guideFront: "Do not explain the joke. Switch to something plain." },
+            { front: "Step 2 · Ask about the situation instead — they smile faintly and say nothing.", back: "\"Do you know if there's more than one desk open?\"", guideFront: "Do not explain the joke. Switch to something plain.", guideBack: "A plain question about where you both are" },
             { front: "Step 3 · Bring Something In — they say, \"I think there's one round the side.\"", back: "\"Of course there is. Same thing happened to me at the airport last month.\"", guideFront: "Put an outside topic on the table when...", guideBack: "A topic from beyond the room" },
-            { front: "Step 4 · Read it and stop — they say, \"Mm,\" and look at their phone.", back: "\"Fair enough. Good luck with it.\"", guideFront: "Two flat replies is an answer. Leave warmly." },
+            { front: "Step 4 · Read it and stop — they say, \"Mm,\" and look at their phone.", back: "\"Fair enough. Good luck with it.\"", guideFront: "Two flat replies is an answer. Leave warmly.", guideBack: "A short, friendly ending" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are in a lift that has stopped at every floor. Your dry remark gets nothing.",
           steps: [
-            { front: "Step 1 · Joke About the Situation — say the dry version.", back: "\"Scenic route, this.\"" },
-            { front: "Step 2 · Ask about the situation instead — they give a small nod and nothing else.", back: "\"Do you know if the other one's working?\"" },
-            { front: "Step 3 · Bring Something In — they say, \"It's been out since Monday, I think.\"", back: "\"Since Monday. They said the same about the heating in March.\"" },
-            { front: "Step 4 · Read it and stop — they say, \"Mm,\" and watch the numbers.", back: "\"Right — have a good one.\"" },
+            { front: "Step 1 · Joke About the Situation — say the dry version.", back: "\"Scenic route, this.\"", guideFront: "Exaggerate or understate the moment when...", guideBack: "A dry line about what you're both in" },
+            { front: "Step 2 · Ask about the situation instead — they give a small nod and nothing else.", back: "\"Do you know if the other one's working?\"", guideFront: "Do not explain the joke. Switch to something plain.", guideBack: "A plain question about where you both are" },
+            { front: "Step 3 · Bring Something In — they say, \"It's been out since Monday, I think.\"", back: "\"Since Monday. They said the same about the heating in March.\"", guideFront: "Put an outside topic on the table when...", guideBack: "A topic from beyond the room" },
+            { front: "Step 4 · Read it and stop — they say, \"Mm,\" and watch the numbers.", back: "\"Right — have a good one.\"", guideFront: "Two flat replies is an answer. Leave warmly.", guideBack: "A short, friendly ending" },
           ]
         },
       ]

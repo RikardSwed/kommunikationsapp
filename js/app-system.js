@@ -4032,6 +4032,17 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.29.00', date: 'September 2026', title: 'Sequence steps that ask for something \u2014 the first cleanup round', audience: 'dev',
+    items: [
+      '<strong>81 step fronts in five packs said nothing but a label.</strong> \u201cStep 1 \u00b7 Put the Feeling In\u201d, three times in a row, with no stimulus and no task \u2014 so there was nothing to produce an answer from. \u00a711b-VIII has required a stimulus or a concrete task since July; these had neither. All 81 now carry one.',
+      'The worst of them was <strong>Same Story, Different Feeling</strong> in Building a Story. The deck asks for one event told three ways \u2014 flat, funny, and honest \u2014 but all three fronts read \u201cPut the Feeling In\u201d, so there was no way to know which version was wanted. The fronts now say <em>tell it flat</em>, <em>tell it for the laugh</em>, <em>tell it for what it cost</em>.',
+      '<strong>Ten step names that named nothing</strong> are gone. Six became real strategies out of their own pack \u2014 \u201cBuy the time\u201d is now <strong>Announce the Pause</strong>, \u201cPut a word on it\u201d is <strong>Label the Emotion</strong>, \u201cName both\u201d is <strong>Link to Earlier</strong>, \u201cWhere / Who\u201d are <strong>Where It Belongs</strong> and <strong>Who It Is For</strong>. The rest are defined in their deck description, which is what \u00a711f requires.',
+      '<strong>Play Along</strong> in Role Based Humour named its three steps differently in different scenarios \u2014 one scenario ran \u201cPlay it straight / Stay straight / Let them land it\u201d while the others ran \u201cMatch it / Hold it / Drop out together\u201d. One set now, in all three.',
+      '<strong>45 steps got the guide they were missing.</strong> A step front is only split into stimulus and strategy name when the step carries its own guide \u2014 without one, the name stayed on the front and answered the card before it was turned. Every step in the ten rebuilt decks now has its strategy\u2019s guide pair.',
+      'No card counts changed. Nothing was renamed above step level, so no saved feedback was orphaned.',
+    ],
+  },
+  {
     version: 'v1.28.99', date: 'September 2026', title: 'Stay on the same card \u2014 an experiment in the training settings', audience: 'dev',
     items: [
       'A new toggle in the settings sheet inside a training session: <strong>Stay on the same card</strong>. Sideways normally means \u201cnext strategy, back to card 1\u201d. With this on it means \u201cnext strategy, same card\u201d \u2014 card 6 of 8 stays card 6 of 8, in both directions.',
