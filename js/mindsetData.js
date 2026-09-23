@@ -629,7 +629,7 @@ const mindsetCollections = {
   ],
   endingconversations: [
     {
-      name: "The Ending Is What They Remember",
+      name: "The Last Minute",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "People remember how a conversation finished far more clearly than what was in the middle of it. A good ten minutes closed abruptly is remembered as odd; a flat ten minutes closed warmly is remembered as fine.\n\nThat is an unusually good deal. Eight seconds of attention at the end does more for how you are remembered than anything you could have said earlier.\n\nMindset: spend the last eight seconds properly. They count more than the rest.",
@@ -645,7 +645,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "You Do Not Need Permission",
+      name: "Permission",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "A surprising number of conversations run twenty minutes longer than either person wanted, because both are waiting for the other to end it. Each assumes leaving would be rude, and neither knows the other is thinking the same thing.\n\nEnding a conversation is not a rejection and does not require the other person's agreement. You are allowed to go.\n\nMindset: somebody has to end it, and it is usually a relief when they do.",
@@ -661,7 +661,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "A Reason Can Be Small",
+      name: "Reasons",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "People invent elaborate reasons for leaving, or stay because they cannot think of a good enough one. But nobody examines your reason. They only need something to attach the ending to, so that it is about your day rather than about them.\n\n\"I should get on\" does the whole job. So does \"I've got a couple of things to sort\".\n\nMindset: any reason works. It only has to exist, not to be impressive.",
@@ -677,7 +677,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Leaving Well Protects the Next Time",
+      name: "The Next Time",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Every ending is also a setup. An abrupt exit makes the next conversation slightly harder to start; a warm one means the next meeting begins somewhere further along.\n\nThat is why the moves in this pack are worth the seconds they cost. Wishing someone well about something specific, or offering to hear the rest on Thursday, is not politeness for its own sake — it is what makes the next conversation easy.\n\nMindset: end in a way that makes the next one easier to begin.",
@@ -1251,7 +1251,7 @@ const mindsetCollections = {
   ],
   describethings: [
     {
-      name: "You Do Not Need the Word",
+      name: "Missing Words",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Missing vocabulary feels like being stuck, and the instinct is to stop and search for the word while the conversation waits. But describing around a word is a normal, respected part of speaking — including for people speaking their own first language.\n\nPurpose, shape and comparison will nearly always get you there, and the listener usually supplies the word themselves.\n\nMindset: talk around it and keep going.",
@@ -1267,7 +1267,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Detail Is Kindness",
+      name: "Detail",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Vague descriptions feel efficient — you are not taking up much of someone's time. In practice they cost the listener far more, because they have to ask three follow-up questions or go and look at the wrong thing.\n\nWhere it shows up:\n1. You round \"dark green with a dent in the lid\" down to \"a green one\".\n2. You leave the size out because you are not sure of the number.\n3. You stop early so as not to go on about it.\n\nMindset: being specific is the considerate option, not the fussy one. One good detail up front saves both of you the round trip.",
@@ -1283,7 +1283,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Choose, Do Not List",
+      name: "Choosing",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "With six categories to hand there is a pull to run through all of them, as if completeness were the goal. It is not. The goal is that the listener ends up with a picture, and too many details blur it.\n\nWhere it goes wrong:\n1. You give every category in order rather than the two that matter.\n2. You add a detail because you have it, not because they need it.\n3. You keep describing after they have already found the thing.\n\nMindset: pick the details this person needs, and leave the rest out. Two or three well-chosen categories beat six recited ones every time.",
@@ -1299,7 +1299,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Look Again Before You Speak",
+      name: "Looking",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Most weak descriptions come from describing a memory rather than a thing. We reach for a general impression — \"a blue bag\" — when a second of actual looking would produce the detail that identifies it.\n\nIf the object is in front of you, look at it properly. If it is not, picture it deliberately before you start.\n\nMindset: describe what is there, not the label you filed it under.",
@@ -1349,7 +1349,7 @@ const mindsetCollections = {
   ],
   explainthings: [
     {
-      name: "Explaining Is Not Performing",
+      name: "Performing",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "A lot of bad explanation comes from wanting to sound like someone who knows the subject. That pulls towards completeness, jargon and length — all three of which make the listener understand less.\n\nThe measure of an explanation is not how much you demonstrated. It is whether the other person can now do or picture the thing.\n\nMindset: you are not being assessed. They are trying to understand something.",
@@ -1365,7 +1365,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Their Confusion Is Information",
+      name: "Their Confusion",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "When someone does not follow, the instinct is to feel either embarrassed or impatient. Both push you to repeat yourself in the same words, slightly louder.\n\nThe three thoughts that cause the trouble:\n1. \"I've explained this badly\" — you have explained the wrong one of the three, which is a different problem.\n2. \"They're not trying\" — a frown is effort, not resistance.\n3. \"If I say it again it'll land\" — the same words at the same level land the same way.\n\nMindset: a frown is data. It tells you which of the three moves you skipped — read it and change the move.",
@@ -1381,7 +1381,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Short Is Not Rude",
+      name: "Length",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Many people over-explain out of politeness — a short answer feels dismissive, so they keep adding. The effect is the opposite of what was intended: the listener has to work harder and often ends up less clear than before.\n\nA short answer respects the other person's time and their intelligence. If they want more, they will ask, and the asking will tell you exactly what to add.\n\nMindset: stop early and leave the door open.",
@@ -1397,7 +1397,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "You Are Allowed Not To Know",
+      name: "Not Knowing",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "There is a strong pull, when someone asks you to explain something, to produce an answer whatever the state of your knowledge. It feels like the helpful thing to do. It is not, because a confident wrong answer travels further than an uncertain one.\n\nMarking the edge of what you know makes everything inside that edge more trustworthy.\n\nMindset: the boundary of your knowledge is part of the explanation.",
@@ -2035,7 +2035,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "The Plan Is the Proof",
+      name: "Proof",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Anyone can say sorry. The only part of an apology that costs you anything in the future is the sentence about what will be different — and to someone who has been let down before, that is the only part with information in it.\n\nThat is also why it must be small. \"I'll be better\" promises nothing and cannot be checked. \"I'll write it down while you're telling me\" is something they can watch happen or not happen.\n\nMindset: end with something checkable, then do it.",
@@ -2051,7 +2051,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Small Things Get Small Apologies",
+      name: "Proportion",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "There is a pull, when you have made a mistake, to make the apology match how bad you feel rather than how much harm was done. It reads as sincerity from the inside and as something else from the outside.\n\nA long apology for a small thing puts the other person in the position of reassuring you, which is the opposite of what an apology is for. Your discomfort is yours to carry.\n\nMindset: apologise for the harm, not for your feelings about the harm.",
@@ -2067,7 +2067,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Say It Straight Away",
+      name: "Timing",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Almost every apology gets harder the longer it waits. The moment passes, it starts to feel odd to bring up, and by the time you get to it you have to explain the delay as well as the thing.\n\nImmediately is easier and costs less, for both of you. And it is one of the few situations where doing it badly and quickly genuinely beats doing it well and late.\n\nMindset: the awkward version now beats the polished version next week.",
@@ -2151,7 +2151,7 @@ const mindsetCollections = {
   ],
   disagreeing: [
     {
-      name: "Disagreement Is Not Conflict",
+      name: "Conflict",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Many people avoid disagreeing because they experience it as the first step towards a row. But two people holding different views is the ordinary state of things, and saying so out loud is usually the least dramatic way to handle it.\n\nThe conflict, when it comes, is nearly always about how it was said or how late it surfaced — not about the difference itself.\n\nMindset: a stated difference is calmer than an unstated one.",
@@ -2167,7 +2167,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "You Do Not Have to Win",
+      name: "Winning",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Treating a disagreement as something to be won turns the other person into an opponent, and opponents defend rather than think. It also makes it very hard for you to change your own mind, because doing so starts to feel like losing.\n\nThe aim is a better shared picture. Sometimes that means they move, sometimes you do, and often both of you end up somewhere neither started.\n\nMindset: the good outcome is a better answer, not your answer.",
@@ -2183,7 +2183,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Say It Early",
+      name: "Timing",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "A disagreement raised at the start is a contribution. The same disagreement raised after a decision is made is an obstacle, and it costs the other person work they have already done.\n\nThe discomfort of speaking up early is small and brief. The cost of speaking up late is carried by everyone.\n\nMindset: the awkward moment gets more expensive the longer you wait.",
@@ -2199,7 +2199,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Their View Came From Somewhere",
+      name: "Their Reasons",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "When someone holds a view that seems obviously wrong, the useful question is not how they could think that but what they have seen that you have not. Almost every opinion has a real experience behind it.\n\nAsking about that experience is more effective than arguing against the conclusion, and it occasionally turns out that they are right.\n\nMindset: look for the reason behind the position, not the flaw in it.",
@@ -2463,7 +2463,7 @@ const mindsetCollections = {
   ],
   brokenrecord: [
     {
-      name: "You Do Not Owe a Reason",
+      name: "Reasons",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Offering a reason feels like the decent thing to do — it treats the other person as reasonable and shows you are not being arbitrary. In the middle of pressure it does the opposite: it hands them the terms of the argument.\n\nOnce a reason is on the table, the question stops being what you decided and becomes whether your reason is good enough. That is a question the other person now gets to answer, and they will answer it in their favour.\n\nMindset: a decision that is yours to make does not require a justification. \"I'd rather not\" is complete.",
@@ -2479,7 +2479,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Repetition Is Not Rudeness",
+      name: "Repetition",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Saying the same sentence four times feels obstinate and slightly absurd, which is why most people rephrase instead — and rephrasing is exactly what keeps the conversation alive.\n\nFrom the outside it does not read as rude. It reads as settled. The other person is not offended by the repetition; they are informed by it, and most stop after the third identical answer because there is visibly nowhere left to go.\n\nMindset: the sameness is the message. It says this is not being decided right now.",
@@ -2495,7 +2495,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Their Discomfort Is Not Your Emergency",
+      name: "Their Discomfort",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "The hardest part of holding a line is not the argument. It is watching someone be disappointed, frustrated or upset and knowing you could end it instantly by giving in.\n\nThat impulse is decent and it is also the mechanism by which people end up doing things they had decided not to do. Someone else's disappointment is uncomfortable and it is survivable, for both of you.\n\nMindset: you are allowed to leave someone disappointed. That is not the same as having wronged them.",
@@ -2511,7 +2511,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Calm Is the Technique",
+      name: "Delivery",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "The words matter far less than the delivery. The same sentence, said with a sigh or a sharpened edge, tells the other person that you are close to breaking or that this has become a fight — and both invite more pressure.\n\nFlat, level and unbothered is what says the decision is not in play. It is also what keeps the relationship intact, because nothing has been said that either of you has to apologise for later.\n\nMindset: nothing to prove, nothing to defend. Just the same sentence, said the same way.",
@@ -4116,7 +4116,7 @@ const mindsetCollections = {
   ],
   givingcounterexamples: [
     {
-      name: "Not Wrong, Just Not Always",
+      name: "The Word \"Always\"",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "The pack-wide stance: the target is the word \"always\", not the sentence. You are making the claim the right size, not knocking it over. Example of the shift — instead of \"that's not true\", you aim at \"that's true most of the time\".\n\nThe three thoughts that cause the trouble:\n1. \"If I have an exception, they're wrong\" — they are usually right, with an edge.\n2. \"One of us has to be correct\" — the useful outcome is a narrower claim you both hold.\n3. \"I need a strong example\" — you need a true one, and small is fine.\n\nMindset: you are taking the word always out. When it is gone, you are finished.",
@@ -4132,7 +4132,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Widen, Do Not Win",
+      name: "Widening",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "The stance about what a counter-example is for: it makes the discussion bigger, not the other person smaller. Used to score a point it produces defensiveness and nothing else; used to widen, it usually produces agreement within a sentence or two. Example of the shift — instead of hunting for the case that will end the argument, you offer the case that adds a room to it.\n\nWhere it goes wrong:\n1. You save your best example for the moment it will land hardest.\n2. You feel a small pleasure when they cannot answer.\n3. You keep going after they have already moved.\n\nMindset: the counter-example is a door, not a hit. If nobody has learned anything, it was an argument in disguise.",
@@ -4148,7 +4148,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Concede First",
+      name: "Order",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "The stance about order: the sentence before the exception decides how the exception is heard. Six words of agreement turn a contradiction into a contribution, and they cost nothing because the general case usually is right. Example of the shift — instead of opening with \"actually\", you open with \"usually, yes\".\n\nWhere the hesitation shows up:\n1. You feel that conceding weakens your point — it is what makes it hearable.\n2. You want to get the exception out before you lose your nerve.\n3. You think agreement will be read as backing down.\n\nMindset: \"usually, yes — though…\" is the whole technique. Everything else in this pack is what goes after the dash.",
@@ -4230,7 +4230,7 @@ const mindsetCollections = {
 ],
   discussing: [
     {
-      name: "Not Trying to Win",
+      name: "Winning",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "The pack-wide stance: a discussion is not a contest with a result. The aim is that both people understand the question better than they did, which is compatible with disagreeing at the end.\n\nThe three thoughts that cause the trouble:\n1. \"One of us has to be right\" — you can both be, about different parts.\n2. \"If I concede I lose\" — conceding accurately makes the rest of you believable.\n3. \"It ended without agreement, so it failed\" — most good ones do.\n\nMindset: aim for two people who understand it better. Agreement is optional and often unavailable.",
@@ -4246,7 +4246,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Say It As Yours",
+      name: "Opinions as Facts",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "The stance behind every Me-Focus move: an opinion stated as a fact invites a fight about the fact. \"I think\" is not a hedge — it is the accurate description of what you are saying, and it makes their disagreement cheap rather than confrontational.\n\nWhere it goes wrong:\n1. You dress a preference up as a principle to make it harder to argue with.\n2. You say \"people think\" when you mean \"I think\".\n3. You avoid the opinion entirely and then resent not being heard.\n\nMindset: own it. It is more honest, and harder to argue with — you are the authority on what you think.",
@@ -4262,7 +4262,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Listen to Hear, Not to Reply",
+      name: "Queueing",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "The stance behind every You-Focus move: while someone is talking you are either taking it in or you are queueing, and the two feel identical from the inside. The qualification you needed usually arrives in their last sentence — the one you talk over.\n\nWhere it shows up:\n1. You have your answer ready before they have finished the point.\n2. You interrupt and the interrupted point comes back twice as long.\n3. You cannot summarise what they said, only whether you agreed.\n\nMindset: whatever you were going to say will still be there in eight seconds, and it will be better for the wait.",
@@ -4278,7 +4278,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Changing Your Mind Is a Result",
+      name: "Changing Your Mind",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "The stance about outcomes: being persuaded is not a defeat, it is the discussion doing what discussions are for. Saying so out loud buys something considerable — people are far more willing to discuss anything with someone who has been seen to move.\n\nWhere the resistance shows up:\n1. You keep arguing a position you have already left.\n2. You concede silently and let them think they lost.\n3. You look for a smaller point to be right about instead.\n\nMindset: say it plainly, and name what did it. \"The night shift bit changed my mind\" is an answer and a compliment at once.",
@@ -5805,7 +5805,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Leaving Them In It",
+      name: "Moving Them On",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "\"Moving the subject on would look like I don't care.\"\n\n**What is true instead:** redirecting gently IS the caring move. You are sparing them, not dodging them — and staying in a subject somebody is struggling with does not help them out of it.\n\n**Why it feels right:** leaving too fast really can read as callous, and the fear is a decent instinct. The fix is the acknowledgement, not staying put.\n\n**What it costs:** you both sit in something uncomfortable that neither of you can do anything about, and the person who raised it now has to manage your discomfort as well as their own.\n\nMindset: you do not have to fix it. Sometimes the kindest thing is to lighten the room.",

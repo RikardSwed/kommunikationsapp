@@ -1368,9 +1368,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The seven beliefs that get in the way here:\n\n• **The Ending Is What They Remember** — the middle is what counts\n• **You Do Not Need Permission** — leaving is a rejection\n• **A Reason Can Be Small** — it has to be a good one\n• **Leaving Well Protects the Next Time** — the ending is just admin\n• **A Phrase Is Not Enough** — four words cannot close this\n• **Later Means Never** — offering more is a small lie\n• **Saying It Was Good Is Too Much** — warmth the relationship cannot carry\n\nThe last three block the three warm moves specifically.",
+      description: "The seven beliefs that get in the way here:\n\n• **The Last Minute** — the middle is what counts\n• **Permission** — leaving is a rejection\n• **Reasons** — it has to be a good one\n• **The Next Time** — the ending is just admin\n• **A Phrase Is Not Enough** — four words cannot close this\n• **Later Means Never** — offering more is a small lie\n• **Saying It Was Good Is Too Much** — warmth the relationship cannot carry\n\nThe last three block the three warm moves specifically.",
       cards: [
-        { q: "What are the seven mindset areas in this pack?", a: "The Ending Is What They Remember, You Do Not Need Permission, A Reason Can Be Small, Leaving Well Protects the Next Time, A Phrase Is Not Enough, Later Means Never, and Saying It Was Good Is Too Much.", bundle: 'pro' },
+        { q: "What are the seven mindset areas in this pack?", a: "The Last Minute, Permission, Reasons, The Next Time, A Phrase Is Not Enough, Later Means Never, and Saying It Was Good Is Too Much.", bundle: 'pro' },
         { q: "Why is the ending an unusually good deal?", a: "Eight seconds at the end does more for how you are remembered than anything you said earlier.", bundle: 'pro' },
         { q: "Why do conversations run twenty minutes longer than either person wanted?", a: "Both are waiting for the other to end it, and each assumes leaving would be rude.", bundle: 'pro' },
         { q: "Does anyone examine your reason?", a: "No. They only need something to attach the ending to.", bundle: 'pro' },
@@ -2341,9 +2341,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The five beliefs that get in the way here:\n\n• **You Do Not Need the Word** — I am stuck without it\n• **Detail Is Kindness** — being specific is fussy\n• **Choose, Do Not List** — completeness is the goal\n• **Look Again Before You Speak** — I already know what it looks like\n• **I'd Have to Be Exact** — a rough figure is worse than none\n\nThree of them produce vagueness, and one produces far too much.",
+      description: "The five beliefs that get in the way here:\n\n• **Missing Words** — I am stuck without the right word\n• **Detail** — being specific is fussy\n• **Choosing** — completeness is the goal\n• **Looking** — I already know what it looks like\n• **I'd Have to Be Exact** — a rough figure is worse than none\n\nThree of them produce vagueness, and one produces far too much.",
       cards: [
-        { q: "What are the five mindset areas in this pack?", a: "You Do Not Need the Word, Detail Is Kindness, Choose Do Not List, Look Again Before You Speak, and I'd Have to Be Exact.", bundle: 'pro' },
+        { q: "What are the five mindset areas in this pack?", a: "Missing Words, Detail, Choosing, Looking, and I'd Have to Be Exact.", bundle: 'pro' },
         { q: "What happens when you stop and hunt for a missing word?", a: "The conversation waits. Describing around it is a normal part of speaking.", bundle: 'pro' },
         { q: "Who usually supplies the missing word?", a: "The listener, once you have described your way close enough.", bundle: 'pro' },
         { q: "Why is a vague description not the efficient option?", a: "It costs them three follow-up questions, or a trip to look at the wrong thing.", bundle: 'pro' },
@@ -2465,9 +2465,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The four beliefs that get in the way here:\n\n• **Explaining Is Not Performing** — sounding like someone who knows\n• **Their Confusion Is Information** — a frown is a verdict on me\n• **Short Is Not Rude** — a brief answer is dismissive\n• **You Are Allowed Not To Know** — I should have an answer\n\nAll four pull in the same direction: longer, more complete, and less use to the listener.",
+      description: "The four beliefs that get in the way here:\n\n• **Performing** — sounding like someone who knows\n• **Their Confusion** — a frown is a verdict on me\n• **Length** — a brief answer is dismissive\n• **Not Knowing** — I should have an answer\n\nAll four pull in the same direction: longer, more complete, and less use to the listener.",
       cards: [
-        { q: "What are the four mindset areas in this pack?", a: "Explaining Is Not Performing, Their Confusion Is Information, Short Is Not Rude, and You Are Allowed Not To Know.", bundle: 'pro' },
+        { q: "What are the four mindset areas in this pack?", a: "Performing, Their Confusion, Length, and Not Knowing.", bundle: 'pro' },
         { q: "What does wanting to sound knowledgeable pull you towards?", a: "Completeness, jargon and length — all three of which make the listener understand less.", bundle: 'pro' },
         { q: "What is an explanation actually measured by?", a: "Whether the other person can now do or picture the thing.", bundle: 'pro' },
         { q: "What does a frown tell you?", a: "Which of the three moves you skipped. It is data, not a verdict.", bundle: 'pro' },
@@ -3528,9 +3528,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The four beliefs that get in the way here:\n\n• **No \"But\"** — the context and the apology in one breath\n• **The Plan Is the Proof** — sorry is the whole apology\n• **Small Things Get Small Apologies** — it should match how bad I feel\n• **Say It Straight Away** — I will do it properly later\n\nEach one is a reasonable thought that produces the wrong sentence.",
+      description: "The four beliefs that get in the way here:\n\n• **No \"But\"** — the context and the apology in one breath\n• **Proof** — sorry is the whole apology\n• **Proportion** — it should match how bad I feel\n• **Timing** — I will do it properly later\n\nEach one is a reasonable thought that produces the wrong sentence.",
       cards: [
-        { q: "What are the four mindset areas in this pack?", a: "No \"But\", The Plan Is the Proof, Small Things Get Small Apologies, and Say It Straight Away.", bundle: 'pro' },
+        { q: "What are the four mindset areas in this pack?", a: "No \"But\", Proof, Proportion, and Timing.", bundle: 'pro' },
         { q: "What does the word \"but\" do to an apology?", a: "Deletes everything before it. What is left is a defence with sorry in front of it.", bundle: 'pro' },
         { q: "Where does the context go, if it genuinely matters?", a: "In a separate sentence, at a different moment, once the apology has landed.", bundle: 'pro' },
         { q: "Why is the plan the proof?", a: "It is the only part that costs you anything in the future. The rest is words about the past.", bundle: 'pro' },
@@ -3776,9 +3776,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The four beliefs that get in the way here:\n\n• **Disagreement Is Not Conflict** — saying so is the first step to a row\n• **You Do Not Have to Win** — this is something to be won\n• **Say It Early** — I will raise it once I am sure\n• **Their View Came From Somewhere** — how could anyone think that\n\nEach one is a reasonable thought that produces either silence or a contest.",
+      description: "The four beliefs that get in the way here:\n\n• **Conflict** — saying so is the first step to a row\n• **Winning** — this is something to be won\n• **Timing** — I will raise it once I am sure\n• **Their Reasons** — how could anyone think that\n\nEach one is a reasonable thought that produces either silence or a contest.",
       cards: [
-        { q: "What are the four mindset areas in this pack?", a: "Disagreement Is Not Conflict, You Do Not Have to Win, Say It Early, and Their View Came From Somewhere.", bundle: 'pro' },
+        { q: "What are the four mindset areas in this pack?", a: "Conflict, Winning, Timing, and Their Reasons.", bundle: 'pro' },
         { q: "Why is a stated difference calmer than an unstated one?", a: "Two people holding different views is the ordinary state of things. It is the silence that builds.", bundle: 'pro' },
         { q: "What does treating a disagreement as winnable do to the other person?", a: "Makes them an opponent, and opponents defend rather than think.", bundle: 'pro' },
         { q: "What does it do to you?", a: "Makes it very hard to change your own mind, because that starts to feel like losing.", bundle: 'pro' },
@@ -4374,9 +4374,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The eight beliefs that get in the way here:\n\n• **You Do Not Owe a Reason** — a decision needs justifying\n• **Repetition Is Not Rudeness** — saying it again is obstinate\n• **Their Discomfort Is Not Your Emergency** — I could end this instantly\n• **Calm Is the Technique** — the words are what matter\n• **I'll Know What to Say** — preparing is over-preparing\n• **This One Deserves an Answer** — the new point is a real point\n• **A Compromise Is a Loss** — offering means the line failed\n• **Stopping Is Giving Up** — leaving without agreement is losing\n\nEach one produces a specific leak in the line.",
+      description: "The eight beliefs that get in the way here:\n\n• **Reasons** — a decision needs justifying\n• **Repetition** — saying it again is obstinate\n• **Their Discomfort** — I could end this instantly\n• **Delivery** — the words are what matter\n• **I'll Know What to Say** — preparing is over-preparing\n• **This One Deserves an Answer** — the new point is a real point\n• **A Compromise Is a Loss** — offering means the line failed\n• **Stopping Is Giving Up** — leaving without agreement is losing\n\nEach one produces a specific leak in the line.",
       cards: [
-        { q: "What are the eight mindset areas in this pack?", a: "You Do Not Owe a Reason, Repetition Is Not Rudeness, Their Discomfort Is Not Your Emergency, Calm Is the Technique, I'll Know What to Say, This One Deserves an Answer, A Compromise Is a Loss, and Stopping Is Giving Up.", bundle: 'pro' },
+        { q: "What are the eight mindset areas in this pack?", a: "Reasons, Repetition, Their Discomfort, Delivery, I'll Know What to Say, This One Deserves an Answer, A Compromise Is a Loss, and Stopping Is Giving Up.", bundle: 'pro' },
         { q: "What does a reason hand the other person?", a: "The terms of the argument, and a vote on whether it is good enough.", bundle: 'pro' },
         { q: "How does repetition actually read from outside?", a: "As settled. People are informed by it rather than offended, and most stop after the third identical answer.", bundle: 'pro' },
         { q: "What is the hardest part of holding a line?", a: "Watching someone be disappointed and knowing you could end it instantly.", bundle: 'pro' },
@@ -7036,9 +7036,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The seven beliefs that get in the way here:\n\n• **Not Wrong, Just Not Always** — an exception means they are wrong\n• **Widen, Do Not Win** — the example is for scoring\n• **Concede First** — agreeing weakens the point\n• **I Don't Have One** — having no case means saying nothing\n• **A Made-Up Case Doesn't Count** — a hypothetical is weaker than a story\n• **Narrowing Isn't Backing Down** — offering a smaller claim is a retreat\n• **Asking Doesn't Mean You Have Nothing** — a question hands them control",
+      description: "The seven beliefs that get in the way here:\n\n• **The Word \"Always\"** — an exception means they are wrong\n• **Widening** — the example is for scoring\n• **Order** — agreeing weakens the point\n• **I Don't Have One** — having no case means saying nothing\n• **A Made-Up Case Doesn't Count** — a hypothetical is weaker than a story\n• **Narrowing Isn't Backing Down** — offering a smaller claim is a retreat\n• **Asking Doesn't Mean You Have Nothing** — a question hands them control",
       cards: [
-        { q: "What are the seven mindset areas in this pack?", a: "Not Wrong Just Not Always, Widen Do Not Win, Concede First, I Don't Have One, A Made-Up Case Doesn't Count, Narrowing Isn't Backing Down, and Asking Doesn't Mean You Have Nothing.", bundle: 'pro' },
+        { q: "What are the seven mindset areas in this pack?", a: "The Word \"Always\", Widening, Order, I Don't Have One, A Made-Up Case Doesn't Count, Narrowing Isn't Backing Down, and Asking Doesn't Mean You Have Nothing.", bundle: 'pro' },
         { q: "What are you actually aiming at?", a: "\"That's true most of the time\" — not \"that's not true\".", bundle: 'pro' },
         { q: "What are the three signs it became an argument in disguise?", a: "Saving your best example for impact, enjoying that they cannot answer, and carrying on after they have already moved.", bundle: 'pro' },
         { q: "How much agreement does the concession need?", a: "About six words. \"Usually, yes — though…\" is the whole technique.", bundle: 'pro' },
@@ -7186,9 +7186,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The six beliefs that get in the way here:\n\n• **Not Trying to Win** — a discussion is a contest with a result\n• **Say It As Yours** — \"I think\" is a hedge\n• **Listen to Hear, Not to Reply** — holding your answer ready is listening\n• **Changing Your Mind Is a Result** — being persuaded is a defeat\n• **Saying It Back Is Conceding** — repeating their view strengthens it\n• **Asking Looks Like I Missed It** — a clarifying question admits inattention\n\nThe first sets the stance; the other five are where it leaks.",
+      description: "The six beliefs that get in the way here:\n\n• **Winning** — a discussion is a contest with a result\n• **Opinions as Facts** — \"I think\" is a hedge\n• **Queueing** — holding your answer ready is listening\n• **Changing Your Mind** — being persuaded is a defeat\n• **Saying It Back Is Conceding** — repeating their view strengthens it\n• **Asking Looks Like I Missed It** — a clarifying question admits inattention\n\nThe first sets the stance; the other five are where it leaks.",
       cards: [
-        { q: "What are the six mindset areas in this pack?", a: "Not Trying to Win, Say It As Yours, Listen to Hear Not to Reply, Changing Your Mind Is a Result, Saying It Back Is Conceding, and Asking Looks Like I Missed It.", bundle: 'pro' },
+        { q: "What are the six mindset areas in this pack?", a: "Winning, Opinions as Facts, Queueing, Changing Your Mind, Saying It Back Is Conceding, and Asking Looks Like I Missed It.", bundle: 'pro' },
         { q: "What is the outcome to aim for?", a: "Two people who understand the question better. Agreement is optional and often unavailable.", bundle: 'pro' },
         { q: "Is \"I think\" a hedge?", a: "No — it is the accurate description of what you are saying, and it makes their disagreement cheap rather than confrontational.", bundle: 'pro' },
         { q: "What are you doing if you are not taking it in?", a: "Queueing. The two feel identical from the inside.", bundle: 'pro' },
@@ -9584,9 +9584,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The four beliefs that keep people stuck in a finished subject:\n\n• **Steering Feels Rude** — changing it is impolite\n• **The Perfect Bridge** — I need a smooth way in first\n• **Leaving Them In It** — moving on looks like not caring\n• **Endurance** — once a topic starts, I have to keep it going\n\nEvery one of them is a good instinct pointed at the wrong target.",
+      description: "The four beliefs that keep people stuck in a finished subject:\n\n• **Steering Feels Rude** — changing it is impolite\n• **The Perfect Bridge** — I need a smooth way in first\n• **Moving Them On** — moving on looks like not caring\n• **Endurance** — once a topic starts, I have to keep it going\n\nEvery one of them is a good instinct pointed at the wrong target.",
       cards: [
-        { q: "What are the four mindset areas in this pack?", a: "Steering Feels Rude, The Perfect Bridge, Leaving Them In It, and Endurance.", bundle: 'pro' },
+        { q: "What are the four mindset areas in this pack?", a: "Steering Feels Rude, The Perfect Bridge, Moving Them On, and Endurance.", bundle: 'pro' },
         { q: "Why does changing the subject feel like interrupting?", a: "They feel similar from the inside — but an interruption takes the turn, and a topic change happens between turns.", bundle: 'pro' },
         { q: "What does politeness cost in a dead topic?", a: "Two people being polite at each other while an evening goes nowhere.", bundle: 'pro' },
         { q: "What is \"by the way\"?", a: "A complete sentence. You do not need a perfect bridge.", bundle: 'pro' },

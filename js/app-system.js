@@ -4032,6 +4032,17 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.29.01', date: 'September 2026', title: 'Mindset deck names that stop answering the card', audience: 'dev',
+    items: [
+      'A mindset card asks <em>what is true instead?</em> — and in 31 decks across twelve packs the heading above it had already said. <strong>Short Is Not Rude</strong>, <strong>Detail Is Kindness</strong>, <strong>You Do Not Have to Win</strong>, <strong>Repetition Is Not Rudeness</strong>: the answer, printed over the question. Those 31 now name the area instead — <strong>Length</strong>, <strong>Detail</strong>, <strong>Winning</strong>, <strong>Repetition</strong> — and the insight stays where it belongs, on the back of the card and in the deck description.',
+      'The rule is from August: a mindset deck is named for the area the beliefs are about, not the insight they lead to. <strong>First Strategies</strong> was rebuilt to it — Speaking First, Questions, Refusals, Modesty, Favours, Pauses — and the rest of the library never followed.',
+      '<strong>Explain Things</strong> shows the whole effect at once. Four decks called Explaining Is Not Performing, Their Confusion Is Information, Short Is Not Rude and You Are Allowed Not To Know are now <strong>Performing</strong>, <strong>Their Confusion</strong>, <strong>Length</strong> and <strong>Not Knowing</strong> — four words where there were seventeen, and not one of them gives the game away.',
+      'Names that state the <em>belief</em> rather than the answer were left alone — <strong>Later Means Never</strong>, <strong>A Compromise Is a Loss</strong>, <strong>I Don’t Have One</strong>. They name the problem, which is what a category name is for. Twenty-three of those are still standing, on purpose.',
+      'The Memorize decks that list each pack’s mindset areas were rewritten to match — 62 references across the same twelve packs, so the theory cards and the training cards still name the same things.',
+      'Saved feedback is keyed on the deck name, so feedback left under the 31 old names is now orphaned. Nothing else moved: no card counts changed, and no card text was touched.',
+    ],
+  },
+  {
     version: 'v1.29.00', date: 'September 2026', title: 'Sequence steps that ask for something \u2014 the first cleanup round', audience: 'dev',
     items: [
       '<strong>81 step fronts in five packs said nothing but a label.</strong> \u201cStep 1 \u00b7 Put the Feeling In\u201d, three times in a row, with no stimulus and no task \u2014 so there was nothing to produce an answer from. \u00a711b-VIII has required a stimulus or a concrete task since July; these had neither. All 81 now carry one.',
