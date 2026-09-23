@@ -4032,6 +4032,15 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.29.02', date: 'September 2026', title: 'Mindset deck names, round two — twelve more packs', audience: 'dev',
+    items: [
+      '30 more decks named for the area rather than the answer, across eight packs. <strong>Saying No</strong> had four in a row — A Clear No Is the Kind One, No Is a Complete Answer, You Are Allowed to Take a Minute, Their Disappointment Is Not Your Fault — now <strong>Softening</strong>, <strong>Explanations</strong>, <strong>The Instant Yes</strong> and <strong>Their Disappointment</strong>.',
+      'Two of the renamed decks were names <strong>First Strategies had already dropped</strong> when the rule was written. <em>Asking Is Not Imposing</em> became Favours there and was still sitting unchanged in Making Requests; it is now <strong>Imposition</strong>. <em>You Don’t Have to Be Interesting</em> became Speaking First there and is now <strong>Being Interesting</strong> in Setup Question.',
+      'Four packs were left entirely alone: <strong>Handle Interruptions</strong>, <strong>How to Interrupt</strong>, <strong>Storytelling with the Six W’s</strong> and <strong>Responsive Humour</strong>. Their names are whole sentences too — Yielding Is Losing, Nothing Happens to Me — but they state the <em>belief</em>, which is the category. Naming the problem is the job; only naming the answer is the fault.',
+      'Same as last round: the Memorize decks that list each pack’s mindset areas were rewritten to match, 60 references in all. No card counts changed, no card text was touched, and feedback saved under the 30 old names is orphaned.',
+    ],
+  },
+  {
     version: 'v1.29.01', date: 'September 2026', title: 'Mindset deck names that stop answering the card', audience: 'dev',
     items: [
       'A mindset card asks <em>what is true instead?</em> — and in 31 decks across twelve packs the heading above it had already said. <strong>Short Is Not Rude</strong>, <strong>Detail Is Kindness</strong>, <strong>You Do Not Have to Win</strong>, <strong>Repetition Is Not Rudeness</strong>: the answer, printed over the question. Those 31 now name the area instead — <strong>Length</strong>, <strong>Detail</strong>, <strong>Winning</strong>, <strong>Repetition</strong> — and the insight stays where it belongs, on the back of the card and in the deck description.',

@@ -743,7 +743,7 @@ const mindsetCollections = {
   ],
   reactingtounexpectedstatements: [
     {
-      name: "You Are Allowed a Second",
+      name: "The Pause",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "There is a strong sense that conversation runs on a clock and that a gap is a failure — that a competent person has a response ready for whatever arrives.\n\nNobody does. Every good answer to something surprising was arrived at, and the arriving takes a couple of seconds. Taking them openly is not a lapse; it is what the answer costs.\n\nMindset: the pause is part of answering well, not a break in it.",
@@ -759,7 +759,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "\"I Don't Know\" Is a Complete Answer",
+      name: "Filling the Gap",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Not knowing what to say feels like failing at the conversation, so people fill the gap — with a stock phrase, a change of subject, or an opinion assembled on the spot.\n\nAll three are worse than the honest version, and the honest version is the one people remember warmly. Someone who has just said something difficult is bracing for a managed response, and plain bewilderment is more welcome than any of the alternatives.\n\nMindset: say it, and stay. The staying is the part that counts.",
@@ -775,7 +775,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "The First Reaction Is Rarely the Best One",
+      name: "The First Reaction",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "The response that arrives instantly is assembled from surprise rather than thought, and it is almost always sharper, more dismissive or more definite than what you actually think.\n\nThat is not a character flaw; it is what surprise does. The useful habit is simply to notice the gap between reacting and answering, and to put a few seconds in it.\n\nMindset: notice the first thing, and do not necessarily say it.",
@@ -791,7 +791,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Coming Back Is Not Weakness",
+      name: "Coming Back Later",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Returning to something a day later feels like conceding that you handled it badly, so people leave the first answer standing even when they no longer believe it.\n\nIn practice it does the opposite of what is feared. Someone who comes back with a considered view is treated as more reliable, not less — because the first answer is now clearly a first answer rather than what they think.\n\nThe condition is that the return actually happens. Deferring and never returning is worse than a poor answer in the moment.\n\nMindset: come back on the day you said, and say what you actually think.",
@@ -1709,7 +1709,7 @@ const mindsetCollections = {
   ],
   praiseandencouragement: [
     {
-      name: "Genuine Beats Perfect",
+      name: "Perfect Wording",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Focus on being genuine rather than perfect. Your tone and sincerity matter more than flawless words, and most unspoken praise is unspoken because the person was still composing it.\n\nThe three thoughts that cause the trouble:\n1. \"I'll say it properly later\" — later is where praise goes to die.\n2. \"It'll sound forced\" — a clumsy true sentence lands; a polished one that sounds prepared does not.\n3. \"They already know\" — they do not, and it costs nothing to say.\n\nMindset: say the imperfect version now rather than the perfect version never.",
@@ -1725,7 +1725,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Say It Out Loud",
+      name: "Unsaid Praise",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Most praise is thought and never said. The moment passes, it starts to feel odd to bring up later, and the person never finds out. Meanwhile people routinely believe their work went unnoticed while three others privately thought it was excellent.\n\nThe cost of saying it is a few seconds of mild awkwardness. The cost of not saying it is that they do not know.\n\nMindset: if you noticed it, say it.",
@@ -1741,7 +1741,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Specific or Not At All",
+      name: "Generality",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "General praise — \"great job\", \"you're amazing\" — is pleasant for a moment and carries no information. The person cannot repeat it, cannot rely on it, and often cannot quite believe it.\n\nThe specific version takes ten seconds longer and does something different: it tells them what worked, so they can do it again on purpose.\n\nMindset: name the thing, not the person.",
@@ -1757,7 +1757,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Give Them Room to Answer",
+      name: "Rushing On",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Not rushing is easy to overlook and matters more than it sounds. Praise puts someone slightly on the spot, and most people need a beat before they can say anything back. If you fill that beat — with another compliment, a joke, a change of subject — you take the moment away from them.\n\nSay the thing, then stop. The silence belongs to them.\n\nMindset: praise, then wait.",
@@ -2217,7 +2217,7 @@ const mindsetCollections = {
   ],
   persuasionandinfluence1: [
     {
-      name: "Their Side Is the Argument",
+      name: "Their Side",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Most proposals are presented entirely from the proposer's point of view — why it matters to you, what you need, what you have worked out. That is the version you have in your head, and it is the least persuasive one available.\n\nWorking out what the other person gains, or avoids, or stops having to worry about, is usually the whole job. And where there is nothing in it for them, knowing that changes what you should say: you are asking a favour, not making a case.\n\nMindset: before you speak, answer the question \"and what does this do for them?\"",
@@ -2233,7 +2233,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Nothing Is Not Free",
+      name: "Doing Nothing",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "People compare any proposal against an imagined alternative in which nothing changes and nothing is spent. That alternative does not exist — the current way has a cost, and it is invisible only because everyone has been paying it long enough to stop noticing.\n\nSaying what it costs is not a scare tactic. It is what makes the comparison honest, and it is the single most commonly missing piece in an argument that ought to have worked.\n\nMindset: name what the current way is already taking.",
@@ -2249,7 +2249,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "One Case at a Time",
+      name: "Stacking Arguments",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "When a first argument does not land, the instinct is to add a second and a third. Four cases in a row is not four times as persuasive — it reads as a presentation, and people brace against presentations rather than considering them.\n\nIt also hides which one was working. A single case, followed by silence, tells you far more about where they actually are.\n\nMindset: make one case properly, then stop and find out what happened.",
@@ -2593,7 +2593,7 @@ const mindsetCollections = {
   ],
   respondingtopassiveaggression: [
     {
-      name: "The Reaction Is the Point",
+      name: "The Bait",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "A passive-aggressive remark is built to provoke a reaction it can then deny provoking. That is the whole mechanism, and it is why the remark is indirect in the first place.\n\nWhich means the least satisfying thing you can do is answer the words and nothing else. Not because you did not notice, but because you have declined to supply the missing half of the exchange.\n\nMindset: you do not owe a reaction to something that was not said.",
@@ -2609,7 +2609,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "You Can Choose Not to Answer",
+      name: "Answering at All",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "There is an idea that every remark requires a response — that leaving one unanswered means accepting it. It does not, and treating each one as something to be handled turns other people's moods into your workload.\n\nChoosing to let something go is a decision, not a defeat. The test is honest and simple: will you still be thinking about it in an hour?\n\nMindset: pick the ones worth answering, and let the rest fall where they land.",
@@ -2625,7 +2625,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Say It Plainly Yourself",
+      name: "Your Own Indirectness",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "The most useful thing in this pack is not a way of handling other people's indirectness — it is noticing your own.\n\nAlmost everyone does it. A sigh instead of a request, \"it's fine\" when it is not, a joke carrying something serious in it. It happens for a decent reason: the direct version felt too big, or too risky, or you were not sure you were entitled to it.\n\nThe plain version is nearly always smaller and easier than it feels, and it gets you what the indirect version was reaching for.\n\nMindset: if you are going to say it sideways, consider saying it straight instead.",
@@ -2641,7 +2641,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "There Is Usually Something Real Underneath",
+      name: "What's Underneath",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Passive aggression is annoying, and it is also almost always a real grievance that could not find a direct route out. The remark is the symptom; the frustration underneath it is normally genuine and often justified.\n\nThat does not make the delivery acceptable, and holding both at once is the useful position: the way it was said is not fine, and the thing it was about may well be.\n\nMindset: take the grievance seriously even while declining the delivery.",
@@ -2691,7 +2691,7 @@ const mindsetCollections = {
   ],
   makingrequests: [
     {
-      name: "Asking Is Not Imposing",
+      name: "Imposition",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "The belief that a request puts someone in a difficult position, and that a considerate person finds a way not to need anything.\n\nIt produces the hint, the sigh, and the quiet struggle — all of which are harder on the other person than the question would have been, because now they are being managed rather than asked.\n\nBeing asked is also, for most people, mildly flattering. It says you thought of them, and that you thought they could.\n\nMindset: a question is not a burden. An unanswerable hint is.",
@@ -2707,7 +2707,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "They Cannot Read Your Mind",
+      name: "Hinting",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "The quiet expectation that someone who cared would work it out — that having to ask spoils it, and that the request only counts if it was not needed.\n\nIt is the belief underneath most hinting, and it is the most reliable source of resentment in close relationships. The other person is not ignoring the request. They have not heard one.\n\nMindset: they are not refusing. They do not know.",
@@ -2723,7 +2723,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "A Refusable Request Is the Only Real One",
+      name: "Room to Refuse",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "The instinct to make a no as difficult as possible — more reasons, more pressure, more visible need — on the theory that this is how you get a yes.\n\nIt works, and that is the problem. A yes produced by pressure is a reluctant one, and reluctant yeses come back later as coldness, as a favour called in, or as a person who stops answering your messages.\n\nMindset: you want a yes you can trust. Leave the no genuinely available.",
@@ -2739,7 +2739,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Their No Costs You Nothing",
+      name: "Their No",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Taking a refusal as information about the relationship rather than about Thursday. It produces the cool tone, the second attempt, and the mental note — all of which the other person notices.\n\nWhat they learn from it is that saying no to you is expensive. From then on you get avoidance or reluctant yeses, and you have lost the ability to ask cleanly.\n\nMindset: they answered the question. That was the point of asking it.",
@@ -2805,7 +2805,7 @@ const mindsetCollections = {
   ],
   sayingno: [
     {
-      name: "A Clear No Is the Kind One",
+      name: "Softening",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Softening a refusal until it is unclear feels like the considerate option. It is the opposite: an unclear answer leaves the other person planning around a maybe, asking again later, and eventually being refused anyway — with less time to find someone else.\n\nThe clearest no is the one that costs them least, even though it is the one that costs you most in the moment.\n\nMindset: be clear now so they can move on.",
@@ -2821,7 +2821,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "No Is a Complete Answer",
+      name: "Explanations",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "There is a strong feeling that a refusal must be justified — that you owe an explanation, and a good one, or the no is not really allowed.\n\nFor requests that are yours to decline, it is not true. \"I can't\" is complete. A reason is a courtesy you may choose to give, particularly with people close to you, and it stops being a courtesy the moment it becomes a thing to be argued with.\n\nMindset: a reason is optional. Clarity is not.",
@@ -2837,7 +2837,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "You Are Allowed to Take a Minute",
+      name: "The Instant Yes",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Almost every regretted yes is said instantly, in the moment, while someone is looking at you. The pressure is small and social and remarkably effective.\n\nNothing obliges you to answer immediately. \"Let me come back to you\" is a normal sentence, and it usually produces an honest answer where the on-the-spot version produces a polite one.\n\nMindset: the pause is the whole technique.",
@@ -2853,7 +2853,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Their Disappointment Is Not Your Fault",
+      name: "Their Disappointment",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "The hardest part of saying no is rarely the sentence. It is watching someone be let down and knowing you could fix it instantly.\n\nThat impulse is decent and it is also the mechanism by which people end up doing things they had decided against, resenting it afterwards, and doing them badly. Someone else's disappointment is uncomfortable and survivable, for both of you.\n\nMindset: you can be the reason someone is disappointed without having done anything wrong.",
@@ -4034,7 +4034,7 @@ const mindsetCollections = {
   ],
   setupquestion: [
     {
-      name: "You Don't Have to Be Interesting",
+      name: "Being Interesting",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "The pack-wide stance: asking first is the cheapest way into a conversation, because it puts no pressure on you to be interesting. Curiosity is available even on a bad day.\n\nThe three thoughts that cause the trouble:\n1. \"I need something worth saying\" — you need a question, and you already have one.\n2. \"Asking is intrusive\" — an ordinary question about the room is not an interrogation.\n3. \"They'll think I'm prying\" — people are far more often glad to be asked than offended.\n\nMindset: you do not have to be interesting. You have to be interested — and then say your own bit afterwards.",
@@ -4066,7 +4066,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "The Boring Question Works",
+      name: "Ordinary Questions",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "The stance about which questions are good enough: the ordinary ones work. \"What brings you here\" has opened more conversations than any clever alternative, and its ordinariness is exactly why it is easy to answer.\n\nWhere the hesitation shows up:\n1. You reject the obvious question because everyone asks it.\n2. You look for an original angle and the moment passes.\n3. You judge your question by how it sounds rather than by how easy it is to answer.\n\nMindset: judge a question by how easy it is to answer, not by how it sounds. The interesting part is their answer, and what you do with it.",
@@ -4082,7 +4082,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "The Whole Room Is Askable",
+      name: "Running Out",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "The stance about running out: there are five types and you always have all of them, so being stuck is nearly always a failure to look. Something is in front of you, you are both here for a reason, the room has a mood, they are doing something with their days, and they came from somewhere.\n\nWhere it goes wrong:\n1. You decide the situation is too boring to ask anything about.\n2. You use the same type every time and it stops fitting.\n3. You go quiet after one exchange instead of asking the obvious second thing.\n\nMindset: five doors, at least one always open. If nothing occurs, run the list.",
@@ -5493,7 +5493,7 @@ const mindsetCollections = {
   ],
   startingconversations2: [
     {
-      name: "Being Asked Is a Compliment",
+      name: "Small Favours",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Most people avoid asking for small favours because it feels like an imposition — as though a stranger's time were being taken. But being asked for something small is one of the more pleasant things that happens in an ordinary day. You are treated as competent, trusted or knowledgeable, and it takes four seconds.\n\nWatch what happens when someone asks you. You almost certainly do not resent it.\n\nMindset: a small request is a gift as often as it is a cost.",
@@ -5509,7 +5509,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Say the Useful Thing",
+      name: "Saying Nothing",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "People notice a broken machine, a shorter queue, a locked door — and say nothing, because speaking to a stranger feels like more of an event than staying quiet does.\n\nBut offering information is the least intrusive thing you can do. It has an obvious reason, it costs them nothing, and even when it goes no further you have made someone's next ten minutes easier.\n\nMindset: if you know something they would want to know, that is reason enough to speak.",
@@ -5525,7 +5525,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Remembering Is the Whole Gift",
+      name: "Remembering",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "People consistently underestimate what it does to be asked a specific question about their own life. Not \"how are you\" but \"how did Thursday go\" — the second one says you were listening, and that you thought about them at some point when they were not there.\n\nIt is a small effort with an unusually large return, and it is the opener people most often skip in favour of a greeting.\n\nMindset: if you remember something, use it. That is what remembering is for.",
@@ -5541,7 +5541,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "You Need Something Real",
+      name: "Inventing It",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "Every opener in this pack depends on something being true — a genuine request, a genuine piece of information, a shared thing that actually happened, a thread you actually remember. That is what makes them work, and it is also their limit.\n\nWhen none of them is true, the honest move is not to manufacture one. It is to use a plainer opener, or to say nothing. Manufactured common ground is easy to spot and worse than a simple hello.\n\nMindset: use the opener that is true. If none is, there are simpler ones.",

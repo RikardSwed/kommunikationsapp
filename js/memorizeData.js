@@ -1505,9 +1505,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The five beliefs that get in the way here:\n\n• **You Are Allowed a Second** — a gap is a failure\n• **\"I Don't Know\" Is a Complete Answer** — it is an admission of defeat\n• **The First Reaction Is Rarely the Best One** — what arrives first is what I think\n• **Coming Back Is Not Weakness** — returning admits I handled it badly\n• **All of It or None of It** — a partial answer is worse than silence\n\nAll five push towards saying something you have not thought.",
+      description: "The five beliefs that get in the way here:\n\n• **The Pause** — a gap is a failure\n• **Filling the Gap** — it is an admission of defeat\n• **The First Reaction** — what arrives first is what I think\n• **Coming Back Later** — returning admits I handled it badly\n• **All of It or None of It** — a partial answer is worse than silence\n\nAll five push towards saying something you have not thought.",
       cards: [
-        { q: "What are the five mindset areas in this pack?", a: "You Are Allowed a Second, \"I Don't Know\" Is a Complete Answer, The First Reaction Is Rarely the Best One, Coming Back Is Not Weakness, and All of It or None of It.", bundle: 'pro' },
+        { q: "What are the five mindset areas in this pack?", a: "The Pause, Filling the Gap, The First Reaction, Coming Back Later, and All of It or None of It.", bundle: 'pro' },
         { q: "Who has a response ready for whatever arrives?", a: "Nobody. Every good answer to something surprising was arrived at, and the arriving takes seconds.", bundle: 'pro' },
         { q: "What do people fill the gap with?", a: "A stock phrase, a change of subject, or an opinion assembled on the spot.", bundle: 'pro' },
         { q: "What is the first reaction assembled from?", a: "Surprise, not thought. It is nearly always sharper and more definite than what you actually think.", bundle: 'pro' },
@@ -3064,9 +3064,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The five beliefs that get in the way here:\n\n• **Genuine Beats Perfect** — I need the right words first\n• **Say It Out Loud** — they probably already know\n• **Specific or Not At All** — \"great job\" is praise\n• **Give Them Room to Answer** — the silence afterwards needs filling\n• **It Sounds Like I'm Their Boss** — encouragement implies rank\n\nThe first two keep praise unspoken. The last three spoil it once it is said.",
+      description: "The five beliefs that get in the way here:\n\n• **Perfect Wording** — I need the right words first\n• **Unsaid Praise** — they probably already know\n• **Generality** — \"great job\" is praise\n• **Rushing On** — the silence afterwards needs filling\n• **It Sounds Like I'm Their Boss** — encouragement implies rank\n\nThe first two keep praise unspoken. The last three spoil it once it is said.",
       cards: [
-        { q: "What are the five mindset areas in this pack?", a: "Genuine Beats Perfect, Say It Out Loud, Specific or Not At All, Give Them Room to Answer, and It Sounds Like I'm Their Boss.", bundle: 'pro' },
+        { q: "What are the five mindset areas in this pack?", a: "Perfect Wording, Unsaid Praise, Generality, Rushing On, and It Sounds Like I'm Their Boss.", bundle: 'pro' },
         { q: "Why is most praise never said?", a: "The person was still composing it, and then the moment passed.", bundle: 'pro' },
         { q: "What does unspoken praise cost?", a: "They do not know. People routinely believe their work went unnoticed while others privately thought it was excellent.", bundle: 'pro' },
         { q: "What lands better — a clumsy true sentence or a polished one?", a: "The clumsy true one. The polished version sounds prepared.", bundle: 'pro' },
@@ -3900,9 +3900,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The four beliefs that get in the way here:\n\n• **Their Side Is the Argument** — my reasons are the case\n• **Nothing Is Not Free** — the status quo costs nothing\n• **One Case at a Time** — if one argument fails, add another\n• **Where Influence Stops** — winning is the point\n\nThe first three are about what you say. The last is about why you are saying it.",
+      description: "The four beliefs that get in the way here:\n\n• **Their Side** — my reasons are the case\n• **Doing Nothing** — the status quo costs nothing\n• **Stacking Arguments** — if one argument fails, add another\n• **Where Influence Stops** — winning is the point\n\nThe first three are about what you say. The last is about why you are saying it.",
       cards: [
-        { q: "What are the four mindset areas in this pack?", a: "Their Side Is the Argument, Nothing Is Not Free, One Case at a Time, and Where Influence Stops.", bundle: 'pro' },
+        { q: "What are the four mindset areas in this pack?", a: "Their Side, Doing Nothing, Stacking Arguments, and Where Influence Stops.", bundle: 'pro' },
         { q: "Why is the version in your head the least persuasive one?", a: "It is entirely from your side — what you need and what you have worked out.", bundle: 'pro' },
         { q: "What question should you answer before you speak?", a: "And what does this do for them?", bundle: 'pro' },
         { q: "What do you do when there is nothing in it for them?", a: "Know it, and ask a favour instead of making a case.", bundle: 'pro' },
@@ -4524,9 +4524,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The six beliefs that get in the way here:\n\n• **The Reaction Is the Point** — the remark deserves an answer\n• **You Can Choose Not to Answer** — leaving one unanswered accepts it\n• **Say It Plainly Yourself** — indirectness is something other people do\n• **There Is Usually Something Real Underneath** — it is just unpleasantness\n• **Taking It Straight Is Letting It Go** — answering the surface is being walked over\n• **Telling Them How It Lands Is Complaining** — saying it got to you hands them the win",
+      description: "The six beliefs that get in the way here:\n\n• **The Bait** — the remark deserves an answer\n• **Answering at All** — leaving one unanswered accepts it\n• **Your Own Indirectness** — indirectness is something other people do\n• **What's Underneath** — it is just unpleasantness\n• **Taking It Straight Is Letting It Go** — answering the surface is being walked over\n• **Telling Them How It Lands Is Complaining** — saying it got to you hands them the win",
       cards: [
-        { q: "What are the six mindset areas in this pack?", a: "The Reaction Is the Point, You Can Choose Not to Answer, Say It Plainly Yourself, There Is Usually Something Real Underneath, Taking It Straight Is Letting It Go, and Telling Them How It Lands Is Complaining.", bundle: 'pro' },
+        { q: "What are the six mindset areas in this pack?", a: "The Bait, Answering at All, Your Own Indirectness, What's Underneath, Taking It Straight Is Letting It Go, and Telling Them How It Lands Is Complaining.", bundle: 'pro' },
         { q: "What is the whole mechanism of a passive-aggressive remark?", a: "It is built to provoke a reaction it can then deny provoking. That is why it is indirect in the first place.", bundle: 'pro' },
         { q: "Do you owe a reaction?", a: "Not to something that was not said.", bundle: 'pro' },
         { q: "What does handling every remark turn into?", a: "Other people's moods becoming your workload.", bundle: 'pro' },
@@ -4687,9 +4687,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The seven beliefs that get in the way here:\n\n• **Asking Is Not Imposing** — a request puts them in a difficult position\n• **They Cannot Read Your Mind** — someone who cared would work it out\n• **A Refusable Request Is the Only Real One** — make the no hard\n• **Their No Costs You Nothing** — the refusal was about me\n• **Being Vague Is Being Polite** — pinning it down is demanding\n• **Asking Twice Is Nagging** — the second ask is pressure\n• **Needing Help Is the Admission** — \"I'm stuck\" is a report on my competence\n\nFour of them stop the question being asked at all.",
+      description: "The seven beliefs that get in the way here:\n\n• **Imposition** — a request puts them in a difficult position\n• **Hinting** — someone who cared would work it out\n• **Room to Refuse** — make the no hard\n• **Their No** — the refusal was about me\n• **Being Vague Is Being Polite** — pinning it down is demanding\n• **Asking Twice Is Nagging** — the second ask is pressure\n• **Needing Help Is the Admission** — \"I'm stuck\" is a report on my competence\n\nFour of them stop the question being asked at all.",
       cards: [
-        { q: "What are the seven mindset areas in this pack?", a: "Asking Is Not Imposing, They Cannot Read Your Mind, A Refusable Request Is the Only Real One, Their No Costs You Nothing, Being Vague Is Being Polite, Asking Twice Is Nagging, and Needing Help Is the Admission.", bundle: 'pro' },
+        { q: "What are the seven mindset areas in this pack?", a: "Imposition, Hinting, Room to Refuse, Their No, Being Vague Is Being Polite, Asking Twice Is Nagging, and Needing Help Is the Admission.", bundle: 'pro' },
         { q: "What is harder on the other person than a question?", a: "A hint, a sigh and a quiet struggle. Now they are being managed rather than asked.", bundle: 'pro' },
         { q: "What is the most reliable source of resentment in close relationships?", a: "The belief that someone who cared would have worked it out.", bundle: 'pro' },
         { q: "What does a yes produced by pressure come back as?", a: "Coldness, a favour called in, or a person who stops answering your messages.", bundle: 'pro' },
@@ -4837,9 +4837,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The six beliefs that get in the way here:\n\n• **A Clear No Is the Kind One** — softening until it is unclear\n• **No Is a Complete Answer** — a refusal has to be justified\n• **You Are Allowed to Take a Minute** — I have to answer now\n• **Their Disappointment Is Not Your Fault** — I could fix this instantly\n• **Understanding First Sounds Like a Yes** — warmth raises their hopes\n• **A Half Offer Is Worse Than Nothing** — the consolation prize\n\nThe first four keep the no from being said. The last two block the moves that make it land.",
+      description: "The six beliefs that get in the way here:\n\n• **Softening** — a blurred no is the kind one\n• **Explanations** — a refusal has to be justified\n• **The Instant Yes** — I have to answer now\n• **Their Disappointment** — I could fix this instantly\n• **Understanding First Sounds Like a Yes** — warmth raises their hopes\n• **A Half Offer Is Worse Than Nothing** — the consolation prize\n\nThe first four keep the no from being said. The last two block the moves that make it land.",
       cards: [
-        { q: "What are the six mindset areas in this pack?", a: "A Clear No Is the Kind One, No Is a Complete Answer, You Are Allowed to Take a Minute, Their Disappointment Is Not Your Fault, Understanding First Sounds Like a Yes, and A Half Offer Is Worse Than Nothing.", bundle: 'pro' },
+        { q: "What are the six mindset areas in this pack?", a: "Softening, Explanations, The Instant Yes, Their Disappointment, Understanding First Sounds Like a Yes, and A Half Offer Is Worse Than Nothing.", bundle: 'pro' },
         { q: "Which no costs them least?", a: "The clearest one — even though it is the one that costs you most in the moment.", bundle: 'pro' },
         { q: "Do you owe a reason?", a: "For requests that are yours to decline, no. A reason is a courtesy; clarity is not.", bundle: 'pro' },
         { q: "When does a reason stop being a courtesy?", a: "The moment it becomes a thing to be argued with.", bundle: 'pro' },
@@ -6873,9 +6873,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The five beliefs that get in the way here:\n\n• **You Don't Have to Be Interesting** — I need something worth saying\n• **Questions Alone Make an Interview** — the question was only for them\n• **The Boring Question Works** — the obvious one is too dull to ask\n• **The Whole Room Is Askable** — there is nothing here to ask about\n• **How Are You Is Not a Question** — those words are only a greeting\n\nThe first and third stop the question being asked; the second stops it becoming a conversation.",
+      description: "The five beliefs that get in the way here:\n\n• **Being Interesting** — I need something worth saying\n• **Questions Alone Make an Interview** — the question was only for them\n• **Ordinary Questions** — the obvious one is too dull to ask\n• **Running Out** — there is nothing here to ask about\n• **How Are You Is Not a Question** — those words are only a greeting\n\nThe first and third stop the question being asked; the second stops it becoming a conversation.",
       cards: [
-        { q: "What are the five mindset areas in this pack?", a: "You Don't Have to Be Interesting, Questions Alone Make an Interview, The Boring Question Works, The Whole Room Is Askable, and How Are You Is Not a Question.", bundle: 'pro' },
+        { q: "What are the five mindset areas in this pack?", a: "Being Interesting, Questions Alone Make an Interview, Ordinary Questions, Running Out, and How Are You Is Not a Question.", bundle: 'pro' },
         { q: "What do you have to be, if not interesting?", a: "Interested — and then say your own bit afterwards. Curiosity is available even on a bad day.", bundle: 'pro' },
         { q: "What are the two ways the mutuality leaks?", a: "Asking a second question before answering the first, and \"yeah, same\" handed straight back.", bundle: 'pro' },
         { q: "How should you judge a question?", a: "By how easy it is to answer, not by how it sounds.", bundle: 'pro' },
@@ -9044,9 +9044,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The four beliefs that get in the way here:\n\n• **Being Asked Is a Compliment** — a request is an imposition\n• **Say the Useful Thing** — speaking to a stranger is an event\n• **Remembering Is the Whole Gift** — a greeting is enough\n• **You Need Something Real** — any opener will do if it is delivered well\n\nThe first three keep people quiet. The last is the limit on all four openers.",
+      description: "The four beliefs that get in the way here:\n\n• **Small Favours** — a request is an imposition\n• **Saying Nothing** — speaking to a stranger is an event\n• **Remembering** — a greeting is enough\n• **Inventing It** — any opener will do if it is delivered well\n\nThe first three keep people quiet. The last is the limit on all four openers.",
       cards: [
-        { q: "What are the four mindset areas in this pack?", a: "Being Asked Is a Compliment, Say the Useful Thing, Remembering Is the Whole Gift, and You Need Something Real.", bundle: 'pro' },
+        { q: "What are the four mindset areas in this pack?", a: "Small Favours, Saying Nothing, Remembering, and Inventing It.", bundle: 'pro' },
         { q: "Why does asking for a small favour feel worse than it is?", a: "It feels like taking someone's time. In practice you are treating them as competent or trusted.", bundle: 'pro' },
         { q: "What is the check on that belief?", a: "Watch what happens when someone asks you. You almost certainly do not resent it.", bundle: 'pro' },
         { q: "Why do people say nothing about the broken machine?", a: "Speaking to a stranger feels like more of an event than staying quiet does.", bundle: 'pro' },
