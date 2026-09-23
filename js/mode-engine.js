@@ -50,6 +50,30 @@ const DS = (function () {
     return filtered.length ? filtered : raw;
   }
 
+  // ── Stay on the same card (v1.28.99) ─────────────────────────────────────
+  // Sideways normally means "next strategy, back to card 1". Some packs are
+  // written so that card N is the SAME situation in every strategy — the six
+  // W's describing one event, seven roles answering one line, four responses
+  // to one piece of feedback. In those packs a sideways swipe that kept the
+  // position would be a different exercise: one situation, several ways to
+  // handle it, which nothing in the app offers today.
+  //
+  // Off by default, because it is only meaningful where the pack was written
+  // that way, and it is read live so the toggle takes effect on the next
+  // swipe rather than on the next reload.
+  const KEEP_POS_KEY = 'ds_keep_card_pos';
+  function keepCardPos() {
+    try { return localStorage.getItem(KEEP_POS_KEY) === 'true'; } catch (e) { return false; }
+  }
+  // The new group may be shorter than the old one, so the position is clamped
+  // rather than wrapped: landing on card 3 of 3 is right, wrapping to card 1
+  // would quietly undo the whole point of the setting.
+  function carryPos(prev, count) {
+    if (!keepCardPos()) return 0;
+    if (!(count > 0)) return 0;
+    return Math.min(prev, count - 1);
+  }
+
   // Attach the standard tap/swipe gesture set to a card element.
   // handlers: { tap, left, right, up, down, enabled? }
   function attachSwipe(el, handlers, opts) {
@@ -520,8 +544,8 @@ const DS = (function () {
     const itemCount = () => mode.itemOrders[mode.groupOrder[mode.gi]].length;
     function nextItem()  { trig('up',    () => { mode.ii = (mode.ii + 1) % itemCount(); render(); }); }
     function prevItem()  { trig('down',  () => { mode.ii = (mode.ii - 1 + itemCount()) % itemCount(); render(); }); }
-    function nextGroup() { trig('left',  () => { info.close(); note.close(); mode.gi = (mode.gi + 1) % mode.groups.length; mode.ii = 0; render(); }); }
-    function prevGroup() { trig('right', () => { info.close(); note.close(); mode.gi = (mode.gi - 1 + mode.groups.length) % mode.groups.length; mode.ii = 0; render(); }); }
+    function nextGroup() { trig('left',  () => { info.close(); note.close(); const p = mode.ii; mode.gi = (mode.gi + 1) % mode.groups.length; mode.ii = carryPos(p, itemCount()); render(); }); }
+    function prevGroup() { trig('right', () => { info.close(); note.close(); const p = mode.ii; mode.gi = (mode.gi - 1 + mode.groups.length) % mode.groups.length; mode.ii = carryPos(p, itemCount()); render(); }); }
 
     attachSwipe(els.card, {
       tap: () => flip(!mode.flipped),
@@ -1516,8 +1540,8 @@ const DS = (function () {
     }
 
     const itemCount = () => items(group()).length;
-    const manNextGroup = () => { trig('left',  () => { mode.gi = (mode.gi + 1) % mode.groups.length; mode.ii = 0; renderManual(); }); };
-    const manPrevGroup = () => { trig('right', () => { mode.gi = (mode.gi - 1 + mode.groups.length) % mode.groups.length; mode.ii = 0; renderManual(); }); };
+    const manNextGroup = () => { trig('left',  () => { const p = mode.ii; mode.gi = (mode.gi + 1) % mode.groups.length; mode.ii = carryPos(p, itemCount()); renderManual(); }); };
+    const manPrevGroup = () => { trig('right', () => { const p = mode.ii; mode.gi = (mode.gi - 1 + mode.groups.length) % mode.groups.length; mode.ii = carryPos(p, itemCount()); renderManual(); }); };
     const manNextItem  = () => { trig('up',    () => { mode.ii = (mode.ii + 1) % itemCount(); renderManual(); }); };
     const manPrevItem  = () => { trig('down',  () => { mode.ii = (mode.ii - 1 + itemCount()) % itemCount(); renderManual(); }); };
 

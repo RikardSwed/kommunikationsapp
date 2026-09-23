@@ -379,8 +379,28 @@ DS.openTrainingSettings = function () {
   }
   // v1.28.63 — spegla det lagrade guidevalet varje gång luckan öppnas.
   if (DS.syncGuideToggles) DS.syncGuideToggles();
+  syncKeepCardPos();
   document.getElementById('settingsOverlay').classList.add('open');
 };
+
+// ─── STAY ON THE SAME CARD (v1.28.99) ─────────────────────────────────────
+// Unlike the two shuffle toggles above it, this one is remembered: it is a
+// way of working rather than a setting for one session. The engine reads the
+// key directly (carryPos in mode-engine.js), so the checkbox only has to keep
+// it up to date.
+const KEEP_CARD_POS_KEY = 'ds_keep_card_pos';
+function syncKeepCardPos() {
+  const cb = document.getElementById('keepCardPos');
+  if (cb) cb.checked = localStorage.getItem(KEEP_CARD_POS_KEY) === 'true';
+}
+(function bindKeepCardPos() {
+  const cb = document.getElementById('keepCardPos');
+  if (!cb) return;
+  syncKeepCardPos();
+  cb.addEventListener('change', () => {
+    try { localStorage.setItem(KEEP_CARD_POS_KEY, cb.checked ? 'true' : 'false'); } catch (e) {}
+  });
+})();
 
 function closeTrainingSettings() {
   document.getElementById('settingsOverlay').classList.remove('open');

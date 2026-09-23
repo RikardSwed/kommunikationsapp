@@ -4032,6 +4032,16 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.99', date: 'September 2026', title: 'Stay on the same card \u2014 an experiment in the training settings', audience: 'dev',
+    items: [
+      'A new toggle in the settings sheet inside a training session: <strong>Stay on the same card</strong>. Sideways normally means \u201cnext strategy, back to card 1\u201d. With this on it means \u201cnext strategy, same card\u201d \u2014 card 6 of 8 stays card 6 of 8, in both directions.',
+      'It matters because some packs are written so that card N is the <em>same situation</em> in every strategy. <strong>Storytelling with the Six W\u2019s</strong> is the clearest: one event, six ways of describing it, the same event on every card number. <strong>Role Based Humour</strong> gives seven roles one line to answer. <strong>Receiving Feedback</strong> gives four strategies the same piece of criticism, word for word. In those packs the sideways swipe becomes an exercise the app has never offered: one situation, several ways to handle it.',
+      'Off by default, and remembered per device rather than per session. It is read live, so it takes effect on the next swipe rather than the next reload.',
+      'Where the next strategy has fewer cards the position is <em>clamped</em>, not wrapped \u2014 card 7 lands on the last card rather than quietly starting over at card 1, which would undo the point of the setting.',
+      'Ten new checks in the new test-cardpos suite: the default, both directions, the clamp, the live read, and the toggle writing its key.',
+    ],
+  },
+  {
     version: 'v1.28.98', date: 'September 2026', title: 'The volume sweep is finished \u2014 all six modes, all 52 release packs', audience: 'dev',
     items: [
       'The last five packs are complete in Memorize: <strong>Explain Things \u2014 Pt. 2</strong>, <strong>Persuasion and Influence \u2014 Pt. 2</strong>, <strong>Starting Conversations Pt. 3</strong> and <strong>Pt. 4</strong>, and <strong>Validation</strong>. 210 cards, 20 new decks.',
