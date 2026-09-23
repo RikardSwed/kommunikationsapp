@@ -2992,7 +2992,7 @@ const mindsetCollections = {
       inputs: [
         { q: "Talking about feelings makes it worse.", a: "A feeling without a need does. Add the need and it becomes solvable.", bundle: 'pro' },
         { q: "It's a small thing, I shouldn't feel this strongly.", a: "The strength is usually about the need, not the incident. Find that.", bundle: 'pro' },
-        { q: "I don't know why it bothered me so much.", a: "Then say that, and work it out out loud. That's allowed.", bundle: 'pro' },
+        { q: "I don't know why it bothered me so much.", a: "Then say that, and work it out, out loud. That's allowed.", bundle: 'pro' },
         { q: "They should just know what I need.", a: "They can't. Most people are guessing, and most guesses are wrong.", bundle: 'pro' },
         { q: "Saying what I need sounds demanding.", a: "\"I need to know the house is locked\" isn't a demand. It's information.", bundle: 'pro' },
         { q: "I know the feeling but not what it's pointing at.", a: "Ask what would have to be true for it to go away. That's the need.", bundle: 'pro' },

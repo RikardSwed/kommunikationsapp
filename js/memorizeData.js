@@ -5044,9 +5044,9 @@ const memorizeCollections = {
         { q: "Which piece do people most often leave out?", a: "The need.", bundle: 'free' },
         { q: "Why do conflicts repeat when the need is missing?", a: "Both people know there was an argument; neither knows what was being asked for.", bundle: 'pro' },
         { q: "What is the difference between \"I need to be kept in the loop\" and \"you shut me out\"?", a: "They point at the same thing and go to completely different places.", bundle: 'pro' },
-        { q: "What do you say when you cannot identify the need?", a: "Say that, and work it out out loud — \"I'm still working out why it got to me\".", bundle: 'pro' },
+        { q: "What do you say when you cannot identify the need?", a: "Say that, and work it out, out loud — \"I'm still working out why it got to me\".", bundle: 'pro' },
         { q: "Which challenge is it the repair for?", a: "You Stopped After the Feeling.", bundle: 'pro' },
-        { q: "What do you say when you cannot identify the need?", a: "Say that, and work it out out loud. \"I'm still working out why it got to me.\"", bundle: 'pro' },
+        { q: "What do you say when you cannot identify the need?", a: "Say that, and work it out, out loud. \"I'm still working out why it got to me.\"", bundle: 'pro' },
       ]
     },
     {
@@ -7211,7 +7211,7 @@ const memorizeCollections = {
         { q: "What is the wrap-up for?", a: "Stopping while it is still funny — and it is a deliberate move, not the story running out.", bundle: 'pro' },
         { q: "Whose story is it?", a: "Both people's. Nobody owns it, and the measure is whether it kept going, not who got the laughs.", bundle: 'pro' },
         { q: "What are the six moves in this pack?", a: "Yes And, What If, Make It Bigger, Bring Someone In, Then What Happens, and Solve It Ridiculously.", bundle: 'pro' },
-        { q: "Which two moves need no idea of your own?", a: "Yes And and Then What Happens. Both are built entirely from the last thing that was said.", bundle: 'pro' },
+        { q: "Which two moves need no idea of your own?", a: "Yes, And and Then What Happens. Both are built entirely from the last thing that was said.", bundle: 'pro' },
       ]
     },
     {

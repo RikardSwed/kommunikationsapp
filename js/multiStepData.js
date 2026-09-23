@@ -3320,8 +3320,8 @@ const multiStepCollections = {
           situation: "A friend tells you something true about yourself that you did not want to hear.",
           steps: [
             { front: "Step 1 · The Short Response — they say: \"You get defensive every time anyone gives you feedback.\"", back: "\"Okay. Thank you for saying it.\"", guideFront: "Answer small feedback in one line when...", guideBack: "The whole reply, in a sentence" },
-            { front: "Step 2 · Ask for Time — you can feel yourself wanting to argue", back: "\"That's a hard one to hear. I'd like to think about it properly rather than answer now.\"", guideFront: "Ask for time before you answer when...", guideBack: "A pause, with a return time on it" },
-            { front: "Step 3 · Ask for Time — they look unsure whether it landed", back: "\"I'm not brushing it off. Can we pick it up at the weekend?\"", guideFront: "Ask for time before you answer when...", guideBack: "A pause, with a return time on it" },
+            { front: "Step 2 · Ask for Time — you can feel yourself wanting to argue", back: "\"That's a hard one to hear. I'd like to think about it properly rather than answer now.\"", guideFront: "Say you will come back to it when...", guideBack: "A pause, with a return time on it" },
+            { front: "Step 3 · Ask for Time — they look unsure whether it landed", back: "\"I'm not brushing it off. Can we pick it up at the weekend?\"", guideFront: "Say you will come back to it when...", guideBack: "A pause, with a return time on it" },
           ]
         },
         {
@@ -3329,8 +3329,8 @@ const multiStepCollections = {
           situation: "Your manager criticises something you had worked very hard on.",
           steps: [
             { front: "Step 1 · The Short Response — they say: \"Honestly, this isn't close to what we needed.\"", back: "\"Right. Thanks for being straight with me.\"", guideFront: "Answer small feedback in one line when...", guideBack: "The whole reply, in a sentence" },
-            { front: "Step 2 · Ask for Time — you can feel the heat rising", back: "\"I put a lot into this, so I need a bit of time before I respond properly.\"", guideFront: "Ask for time before you answer when...", guideBack: "A pause, with a return time on it" },
-            { front: "Step 3 · Ask for Time — they are waiting", back: "\"Can I come back to you tomorrow morning with what I'd change?\"", guideFront: "Ask for time before you answer when...", guideBack: "A pause, with a return time on it" },
+            { front: "Step 2 · Ask for Time — you can feel the heat rising", back: "\"I put a lot into this, so I need a bit of time before I respond properly.\"", guideFront: "Say you will come back to it when...", guideBack: "A pause, with a return time on it" },
+            { front: "Step 3 · Ask for Time — they are waiting", back: "\"Can I come back to you tomorrow morning with what I'd change?\"", guideFront: "Say you will come back to it when...", guideBack: "A pause, with a return time on it" },
           ]
         },
         {
@@ -3338,8 +3338,8 @@ const multiStepCollections = {
           situation: "Somebody close to you says you talk about yourself more than you listen.",
           steps: [
             { front: "Step 1 · The Short Response — they say: \"You do ask questions. You just don't wait for the answers.\"", back: "\"Right. Thank you for telling me.\"", guideFront: "Answer small feedback in one line when...", guideBack: "The whole reply, in a sentence" },
-            { front: "Step 2 · Ask for Time — you can feel yourself lining up examples", back: "\"I want to think about that properly instead of arguing with it now.\"", guideFront: "Ask for time before you answer when...", guideBack: "A pause, with a return time on it" },
-            { front: "Step 3 · Ask for Time — they are waiting to see how it landed", back: "\"I'm not dismissing it. Can we come back to it on Sunday?\"", guideFront: "Ask for time before you answer when...", guideBack: "A pause, with a return time on it" },
+            { front: "Step 2 · Ask for Time — you can feel yourself lining up examples", back: "\"I want to think about that properly instead of arguing with it now.\"", guideFront: "Say you will come back to it when...", guideBack: "A pause, with a return time on it" },
+            { front: "Step 3 · Ask for Time — they are waiting to see how it landed", back: "\"I'm not dismissing it. Can we come back to it on Sunday?\"", guideFront: "Say you will come back to it when...", guideBack: "A pause, with a return time on it" },
           ]
         },
       ]
@@ -3910,7 +3910,7 @@ const multiStepCollections = {
             { front: "State What You Want — they have said December and are waiting.", back: "\"I'd like October, and I'll say why in a second. That's where I'm starting from.\"", guideFront: "Say plainly what you'd like when...", guideBack: "Your preference, before any hedging" },
             { front: "Say Theirs Back — they say, \"December gives us breathing room.\"", back: "\"So it's the room you want, not the date itself.\"", guideFront: "Say their position back when...", guideBack: "Their position, as they'd recognise it" },
             { front: "Ask What Matters Most — they say, \"Partly. And I don't want to tell the client twice.\"", back: "\"Which of those two is the bigger one for you?\"", guideFront: "Find which part they care about when...", guideBack: "A question about priorities, theirs or yours" },
-            { front: "Build From Both — they say, \"Honestly, the client conversation.\"", back: "\"Then what if we start in October and only tell them in December, when it's certain?\"", guideFront: "Build from both positions when...", guideBack: "An option made of both, not the middle" },
+            { front: "Build From Both — they say, \"Honestly, the client conversation.\"", back: "\"Then what if we start in October and only tell them in December, when it's certain?\"", guideFront: "Take a piece from each side when...", guideBack: "An option made of both, not the middle" },
             { front: "Refine It Together — they say, \"That could work, actually.\"", back: "\"Is there anything about it you'd still change?\"", guideFront: "Treat the first solution as a draft when...", guideBack: "A check that it actually holds" },
           ]
         },
@@ -3920,7 +3920,7 @@ const multiStepCollections = {
           steps: [
             { front: "Split It Up — they are all repeating themselves.", back: "\"We're arguing about the topic and the method as if they're the same thing. They're not.\"", guideFront: "Separate the argument into parts when...", guideBack: "The disagreement, taken one piece at a time" },
             { front: "Ask What Matters Most — they say, \"I just want one with data we can actually get.\"", back: "\"So it's the data, not the subject. Is that right for everyone?\"", guideFront: "Find which part they care about when...", guideBack: "A question about priorities, theirs or yours" },
-            { front: "Build From Both — they say, \"Pretty much.\"", back: "\"Then your topic with the method I suggested — that's got the data and the angle.\"", guideFront: "Build from both positions when...", guideBack: "An option made of both, not the middle" },
+            { front: "Build From Both — they say, \"Pretty much.\"", back: "\"Then your topic with the method I suggested — that's got the data and the angle.\"", guideFront: "Take a piece from each side when...", guideBack: "An option made of both, not the middle" },
             { front: "Say Theirs Back — they say, \"Would that be too much work?\"", back: "\"You're worried about the size of it rather than the idea.\"", guideFront: "Say their position back when...", guideBack: "Their position, as they'd recognise it" },
             { front: "Refine It Together — they say, \"Yes, that's the bit.\"", back: "\"Then let's cut the third section and see if it still works.\"", guideFront: "Treat the first solution as a draft when...", guideBack: "A check that it actually holds" },
           ]
@@ -3932,7 +3932,7 @@ const multiStepCollections = {
             { front: "State What You Want — they have said repair and are waiting.", back: "\"I'd rather replace it, and I'll say why. That's my starting point.\"", guideFront: "Say plainly what you'd like when...", guideBack: "Your preference, before any hedging" },
             { front: "Say Theirs Back — they say, \"A repair is two hundred, not eight.\"", back: "\"So it's the outlay this month rather than the machine itself.\"", guideFront: "Say their position back when...", guideBack: "Their position, as they'd recognise it" },
             { front: "Ask What Matters Most — they say, \"I'd just rather not have a big bill now.\"", back: "\"Is it the size of it, or the timing?\"", guideFront: "Find which part they care about when...", guideBack: "A question about priorities, theirs or yours" },
-            { front: "Build From Both — they say, \"The timing, really.\"", back: "\"Then a new one paid over six months. You get the timing, I get the machine.\"", guideFront: "Build from both positions when...", guideBack: "An option made of both, not the middle" },
+            { front: "Build From Both — they say, \"The timing, really.\"", back: "\"Then a new one paid over six months. You get the timing, I get the machine.\"", guideFront: "Take a piece from each side when...", guideBack: "An option made of both, not the middle" },
             { front: "Refine It Together — they say, \"That might work.\"", back: "\"Anything about it you'd still change?\"", guideFront: "Treat the first solution as a draft when...", guideBack: "A check that it actually holds" },
           ]
         },
@@ -3950,7 +3950,7 @@ const multiStepCollections = {
           steps: [
             { front: "Split It Up — they say, \"I just don't think it's the right call.\"", back: "\"We're going round. There are three things in this — which one are we actually stuck on?\"", guideFront: "Separate the argument into parts when...", guideBack: "The disagreement, taken one piece at a time" },
             { front: "Ask What Matters Most — they say, \"The cost, mainly.\"", back: "\"Right. If the cost were solved, would the rest of it be fine?\"", guideFront: "Find which part they care about when...", guideBack: "A question about priorities, theirs or yours" },
-            { front: "Build From Both — they say, \"Probably, yes.\"", back: "\"Then let's do the smaller version this year and the rest next, if it pays for itself.\"", guideFront: "Build from both positions when...", guideBack: "An option made of both, not the middle" },
+            { front: "Build From Both — they say, \"Probably, yes.\"", back: "\"Then let's do the smaller version this year and the rest next, if it pays for itself.\"", guideFront: "Take a piece from each side when...", guideBack: "An option made of both, not the middle" },
             { front: "Refine It Together — they say, \"That I could live with.\"", back: "\"Live with, or actually want? I'd rather sort it now.\"", guideFront: "Treat the first solution as a draft when...", guideBack: "A check that it actually holds" },
           ]
         },
@@ -3961,7 +3961,7 @@ const multiStepCollections = {
             { front: "Refine It Together — they say, \"No, it's fine, we'll do it your way.\"", back: "\"You've said fine three times. Is it fine, or are you just done with this?\"", guideFront: "Treat the first solution as a draft when...", guideBack: "A check that it actually holds" },
             { front: "Ask What Matters Most — they say, \"It's not my favourite, but it's alright.\"", back: "\"What's the bit that isn't right? I'd rather know now.\"", guideFront: "Find which part they care about when...", guideBack: "A question about priorities, theirs or yours" },
             { front: "Say Theirs Back — they say, \"The timing lands badly for my team.\"", back: "\"So it's not the plan, it's when it starts.\"", guideFront: "Say their position back when...", guideBack: "Their position, as they'd recognise it" },
-            { front: "Build From Both — they say, \"That's it, yes.\"", back: "\"Then keep the plan and move the start by two weeks. That costs me nothing.\"", guideFront: "Build from both positions when...", guideBack: "An option made of both, not the middle" },
+            { front: "Build From Both — they say, \"That's it, yes.\"", back: "\"Then keep the plan and move the start by two weeks. That costs me nothing.\"", guideFront: "Take a piece from each side when...", guideBack: "An option made of both, not the middle" },
           ]
         },
         {
@@ -3970,7 +3970,7 @@ const multiStepCollections = {
           steps: [
             { front: "Split It Up — they say, \"I just think it's over-complicated.\"", back: "\"We're arguing about the tool and about who fills it in. Which is it?\"", guideFront: "Separate the argument into parts when...", guideBack: "The disagreement, taken one piece at a time" },
             { front: "Ask What Matters Most — they say, \"Filling it in, mainly. It's always me.\"", back: "\"So if that were shared, the tool itself would be fine?\"", guideFront: "Find which part they care about when...", guideBack: "A question about priorities, theirs or yours" },
-            { front: "Build From Both — they say, \"Probably, yes.\"", back: "\"Then we keep it and each do our own week. That splits the actual problem.\"", guideFront: "Build from both positions when...", guideBack: "An option made of both, not the middle" },
+            { front: "Build From Both — they say, \"Probably, yes.\"", back: "\"Then we keep it and each do our own week. That splits the actual problem.\"", guideFront: "Take a piece from each side when...", guideBack: "An option made of both, not the middle" },
             { front: "Refine It Together — they say, \"Alright, let's try that.\"", back: "\"Try it, or want it? I'd rather sort it now than in a month.\"", guideFront: "Treat the first solution as a draft when...", guideBack: "A check that it actually holds" },
           ]
         },
@@ -3989,7 +3989,7 @@ const multiStepCollections = {
             { front: "Name Your Limit — they open by proposing a later date.", back: "\"The date I can't move — that one's fixed outside this room. Nearly everything else is open.\"", guideFront: "Name the part that isn't for trade when...", guideBack: "Your limit, and how small it is" },
             { front: "Say Theirs Back — they say, \"Then it can't be done properly.\"", back: "\"You're saying the scope doesn't fit the time, not that the date's wrong.\"", guideFront: "Say their position back when...", guideBack: "Their position, as they'd recognise it" },
             { front: "Ask What Matters Most — they say, \"Exactly that.\"", back: "\"Which parts of the scope would you keep if you could only keep half?\"", guideFront: "Find which part they care about when...", guideBack: "A question about priorities, theirs or yours" },
-            { front: "Build From Both — they say, \"The first two sections, easily.\"", back: "\"Then those two by the date, and the rest afterwards without a deadline on it.\"", guideFront: "Build from both positions when...", guideBack: "An option made of both, not the middle" },
+            { front: "Build From Both — they say, \"The first two sections, easily.\"", back: "\"Then those two by the date, and the rest afterwards without a deadline on it.\"", guideFront: "Take a piece from each side when...", guideBack: "An option made of both, not the middle" },
           ]
         },
         {
@@ -3998,7 +3998,7 @@ const multiStepCollections = {
           steps: [
             { front: "Name Your Limit — they lay out the plan.", back: "\"Weekends I can't do — that's childcare rather than preference. Everything else I can look at.\"", guideFront: "Name the part that isn't for trade when...", guideBack: "Your limit, and how small it is" },
             { front: "Say Theirs Back — they say, \"The work has to be covered somehow.\"", back: "\"The coverage is the problem, rather than specifically me being there on a Saturday.\"", guideFront: "Say their position back when...", guideBack: "Their position, as they'd recognise it" },
-            { front: "Build From Both — they say, \"Yes, that's what I need.\"", back: "\"I could do two evenings instead, or take the Monday morning handover off whoever does cover it.\"", guideFront: "Build from both positions when...", guideBack: "An option made of both, not the middle" },
+            { front: "Build From Both — they say, \"Yes, that's what I need.\"", back: "\"I could do two evenings instead, or take the Monday morning handover off whoever does cover it.\"", guideFront: "Take a piece from each side when...", guideBack: "An option made of both, not the middle" },
             { front: "Refine It Together — they say, \"The evenings might work.\"", back: "\"Let's try it for a month and see whether it actually covers what you need.\"", guideFront: "Treat the first solution as a draft when...", guideBack: "A check that it actually holds" },
           ]
         },
@@ -4009,7 +4009,7 @@ const multiStepCollections = {
             { front: "Name Your Limit — they propose the first week of July.", back: "\"That week I can't move — it's fixed by work. Everything else is open.\"", guideFront: "Name the part that isn't for trade when...", guideBack: "Your limit, and how small it is" },
             { front: "Say Theirs Back — they say, \"Then we lose the cheap flights.\"", back: "\"So it's the cost of changing rather than the dates themselves.\"", guideFront: "Say their position back when...", guideBack: "Their position, as they'd recognise it" },
             { front: "Ask What Matters Most — they say, \"Yes, that's the bit.\"", back: "\"If the flights came out the same, would the later week be fine?\"", guideFront: "Find which part they care about when...", guideBack: "A question about priorities, theirs or yours" },
-            { front: "Build From Both — they say, \"Completely fine.\"", back: "\"Then let me look at the later week and cover the difference if there is one.\"", guideFront: "Build from both positions when...", guideBack: "An option made of both, not the middle" },
+            { front: "Build From Both — they say, \"Completely fine.\"", back: "\"Then let me look at the later week and cover the difference if there is one.\"", guideFront: "Take a piece from each side when...", guideBack: "An option made of both, not the middle" },
           ]
         },
       ]

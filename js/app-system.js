@@ -4032,6 +4032,15 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.29.07', date: 'September 2026', title: 'check-pack run across all 52 release packs at once', audience: 'dev',
+    items: [
+      'Every check so far this month was run on the packs being changed. This is the first sweep of <strong>all 52 at once</strong>: <strong>0 errors</strong>, 207 warnings, 29 packs completely clean.',
+      '<strong>124 of the 207 are one harmless class</strong> \u2014 a Memorize strategy deck carrying its own description, which the app never displays because the strategy\u2019s own text is used. Another 60 are descriptions outside the template\u2019s character range. Neither is visible to anyone.',
+      'The rest were small and real, and are fixed here: <strong>three duplicated words</strong> (\u201cwork it out out loud\u201d in Conflict Emotions, in both Mindset and Memorize), and <strong>two guide fronts that repeated their whole strategy name</strong> \u2014 <em>Ask for time before you answer when\u2026</em> and <em>Build from both positions when\u2026</em>, which \u00a711b-VI has never allowed. The replacements propagated to the 15 sequence steps that inherit those pairs.',
+      'What this sweep does <em>not</em> tell us: it is a check on the data, not on the app. Nothing here replaces playing through it.',
+    ],
+  },
+  {
     version: 'v1.29.06', date: 'September 2026', title: 'The user-facing list catches up', audience: 'dev',
     items: [
       '<strong>WHATS_NEW_USER</strong> had not been touched since v1.28.55. Everything between then and here was either internal or already covered by the entry about the six modes — with one exception, which is now written: <strong>Stay on the same card</strong>, the sideways-swipe setting from v1.28.99.',

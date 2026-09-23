@@ -2423,7 +2423,7 @@ const collections = {
     },
     {
       name: "Ask for Time",
-      guideFront: "Ask for time before you answer when...",
+      guideFront: "Say you will come back to it when...",
       guideBack: "A pause, with a return time on it",
       description: "Say that you want time before you answer, and say when you will come back. \"Can I think about that and come back to you tomorrow?\"\n\nIt works because the worst answers to criticism are the fast ones. A request for time turns a defensive reflex into a considered reply, and naming the return stops the pause being read as avoidance.\n\nThe return time is the whole thing. \"I'll think about it\" with no date is how feedback gets buried, and both of you know it.\n\nTypical phrases: \"Can I sit with that?\", \"Give me till tomorrow and I'll have something useful to say.\", \"I want to answer properly rather than quickly.\", \"Can we pick this up on Thursday?\"\n\nThree ways to ask:\n\n1. Name the time — \"Tomorrow morning? I'll have thought about it by then.\"\n\n2. Say why — \"I'd rather not answer that badly. Let me think.\"\n\n3. Take the first step now — \"You're right about the deadline. The rest I need to sit with.\"\n\nNot the same as Announce the Pause in Emotion Labelling, which steadies a feeling in the middle of something. This one buys a better answer, and the feeling can carry on.\n\nMindset: asking for time is not a stalling tactic and it is not an admission. It is the difference between a reply you mean and a reply you produced under pressure.",
       inputs: [
@@ -2851,7 +2851,7 @@ const collections = {
     },
     {
       name: "Build From Both",
-      guideFront: "Build from both positions when...",
+      guideFront: "Take a piece from each side when...",
       guideBack: "An option made of both, not the middle",
       description: "Suggest a solution built from parts of both positions rather than picking one or landing in the middle.\n\nIt works because a genuine combination gives both people something they wanted, which is why they defend it afterwards. A midpoint gives neither of them what they wanted, which is why compromises so often quietly fall apart.\n\nThe best version comes after asking what matters most — you build the solution around the two priorities and let the rest go. Without that, you are guessing which parts to combine.\n\nTypical phrases: \"What if we did X your way and Y mine?\", \"Could we combine them by…?\", \"What about your timing and my scope?\", \"There's a version where we both get the bit we care about.\"\n\nFour ways to build one:\n\n1. Each takes their priority — the classic, and it needs the previous strategy. \"You get the date, I get the shorter scope.\"\n\n2. Sequence it — both, but not at once. \"We do yours first and mine in the new year.\"\n\n3. Take a piece from each — a genuine hybrid. \"Your structure with my two extra sections.\"\n\n4. Try one, keep the other in reserve — for when you cannot both be right. \"We do it your way, and if the numbers look wrong in a month we switch.\"\n\nMindset: build from what each of you needs, not from the middle of what each of you asked for.",
       inputs: [
