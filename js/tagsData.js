@@ -388,6 +388,9 @@ const packTags = {
   seenandtrusted3askingtobetrusted: [
     'relationships', 'respect', 'autonomy', 'asking', 'appreciation', 'withdrawal'
   ],
+  askingforclarity: [
+    'clarifying', 'not understanding', 'asking again', 'jargon', 'mishearing', 'checking what someone meant', 'repair'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -422,7 +425,7 @@ const TOPICS = [
   { id: 'endingconversations',   title: 'Ending Conversations',          packs: ['endingconversations'] },
 
   // ── Being with the other person ───────────────────────────────────
-  { id: 'listening',             title: 'Listening & Understanding',     packs: ['listeningresponding', 'validation', 'listeningthroughquestions', 'showunderstanding2', 'jimmy3', 'showunderstanding'] },
+  { id: 'listening',             title: 'Listening & Understanding',     packs: ['listeningresponding', 'validation', 'listeningthroughquestions', 'showunderstanding2', 'jimmy3', 'showunderstanding', 'askingforclarity'] },
   { id: 'depth',                 title: 'Depth & Connection',            packs: ['conversationaldepth', 'supportingconversations', 'talkingaboutyourself'] },
 
   // ── Holding the floor ─────────────────────────────────────────────

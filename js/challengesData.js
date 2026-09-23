@@ -6440,4 +6440,86 @@ const challengesCollections = {
       ]
     },
   ],
+  askingforclarity: [
+    {
+      name: "Noise and Speed",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You understood nothing, not because it was hard, but because you could not hear it — a loud room, a bad line, someone talking faster than you can follow.\n\nWhat goes wrong is the plain \"what?\", followed by the same sentence again, louder and just as fast. The problem was never the volume.\n\n**Say You Missed It** works when you got nothing — and say why, so they can fix the right thing. **Repeat the Unclear Part** works as soon as some of it came through. **Offer Your Best Guess** works when you half-heard it.\n\nThe one thing to avoid: nodding because it is too loud to bother.\n\nMindset: tell them what went wrong, and they can fix it.",
+      inputs: [
+        { q: "A barista reads your order back over the noise of the grinder.", a: "\"Sorry, I didn't catch that over the grinder — again?\" [Say You Missed It]", bundle: 'pro', guideBack: "A plain request to hear it again" },
+        { q: "The bus driver says something about \"the stop after the—\" as the doors close.", a: "\"After the — after which stop?\" [Repeat the Unclear Part]", bundle: 'pro', guideBack: "Their words, with a question mark" },
+        { q: "A tour guide rushes through the time you all need to be back.", a: "\"Sorry — could you say the time again, slower?\" [Say You Missed It]", bundle: 'pro', guideBack: "A plain request to hear it again" },
+        { q: "On a bad line, a courier says he will come \"around four-ish or—\".", a: "\"Four or — or when?\" [Repeat the Unclear Part]", bundle: 'pro', guideBack: "Their words, with a question mark" },
+        { q: "At a gig, a friend shouts something and points at the bar.", a: "\"The bar — you want a drink?\" [Offer Your Best Guess]", bundle: 'pro', guideBack: "A guess they can say yes to" },
+        { q: "A caller gives you a phone number too fast to write down.", a: "\"Sorry, that was quick — slower, from the start?\" [Say You Missed It]", bundle: 'pro', guideBack: "A plain request to hear it again" },
+        { q: "In a loud kitchen, the chef says, \"Table six wants the—\".", a: "\"Table six wants the what?\" [Repeat the Unclear Part]", bundle: 'pro', guideBack: "Their words, with a question mark" },
+        { q: "A colleague says the meeting is in room fifteen, or fifty — you cannot tell which.", a: "\"Fifteen or fifty?\" [Offer Your Best Guess]", bundle: 'pro', guideBack: "A guess they can say yes to" },
+      ]
+    },
+    {
+      name: "Jargon",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You heard every word. One of them is an abbreviation, a piece of office talk, a family nickname, or an ordinary word used in a way you do not recognise — and the whole sentence hangs on it.\n\nWhat goes wrong is guessing the meaning silently and acting on the guess. Most jargon has a plain meaning that takes five seconds to explain, and the person using it has usually forgotten it is jargon at all.\n\n**Ask About the Word** is the main move here. **Offer Your Best Guess** works when you half-know it. **Own the Miss** helps when you feel you should already know.\n\nThe one thing to avoid: waiting to look it up later. A dictionary cannot tell you what they meant.\n\nMindset: if one word stopped you, ask about that one word.",
+      inputs: [
+        { q: "A new manager says your role will be \"more strategic now\".", a: "\"What does more strategic mean, day to day?\" [Ask About the Word]", bundle: 'pro', guideBack: "A question about the word" },
+        { q: "The bank says your payment is \"pending\".", a: "\"Pending — so it hasn't gone through yet?\" [Offer Your Best Guess]", bundle: 'pro', guideBack: "A guess they can say yes to" },
+        { q: "Your friend's family keep talking about \"doing a Grandpa\".", a: "\"Sorry — what's doing a Grandpa?\" [Ask About the Word]", bundle: 'pro', guideBack: "A question about the word" },
+        { q: "An engineer says the fault is \"intermittent\".", a: "\"Intermittent — so it comes and goes?\" [Offer Your Best Guess]", bundle: 'pro', guideBack: "A guess they can say yes to" },
+        { q: "A colleague says, \"Just loop in legal.\"", a: "\"What do you mean by loop them in?\" [Ask About the Word]", bundle: 'pro', guideBack: "A question about the word" },
+        { q: "A teenager says the film was \"mid\".", a: "\"What's mid?\" [Ask About the Word]", bundle: 'pro', guideBack: "A question about the word" },
+        { q: "Your mortgage adviser mentions \"the LTV\" twice.", a: "\"Sorry — what's the LTV?\" [Ask About the Word]", bundle: 'pro', guideBack: "A question about the word" },
+        { q: "A doctor says there was an \"incidental finding\" on your scan.", a: "\"I don't know that phrase — is it something to worry about?\" [Own the Miss]", bundle: 'pro', guideBack: "The question, with the blame on you" },
+      ]
+    },
+    {
+      name: "The Third Time",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You have asked once, maybe twice, and you still do not have it. They are starting to sound patient in a way that is not quite patience.\n\nWhat goes wrong is one of two things: you stop asking and pretend, or you ask the same open question a third time and get the same explanation a third time. Neither gets you there.\n\n**Offer Your Best Guess** is strongest here — after two explanations you usually have enough to guess, and a guess only needs a yes. **Repeat the Unclear Part** shows how far you got. **Own the Miss** keeps it friendly.\n\nThe one thing to avoid: a third \"sorry, what?\".\n\nMindset: the third question has to be a smaller one.",
+      inputs: [
+        { q: "Your colleague has already explained the plan to you twice.", a: "\"Last time, I promise — so it's Monday, then Mark, then the client?\" [Offer Your Best Guess]", bundle: 'pro', guideBack: "A guess they can say yes to" },
+        { q: "They have given you the directions twice, and you are still lost.", a: "\"It's not going in, and that's on me. Could you draw it?\" [Own the Miss]", bundle: 'pro', guideBack: "The question, with the blame on you" },
+        { q: "The receptionist has spelt your new doctor's name twice.", a: "\"S-H-A — and then what?\" [Repeat the Unclear Part]", bundle: 'pro', guideBack: "Their words, with a question mark" },
+        { q: "Your grandmother has told you the name of the village twice.", a: "\"I'll get it this time — is it the one with the bridge?\" [Offer Your Best Guess]", bundle: 'pro', guideBack: "A guess they can say yes to" },
+        { q: "You can see they are getting tired of explaining.", a: "\"I've got most of it now — it's only the middle bit I lost.\" [Own the Miss]", bundle: 'pro', guideBack: "The question, with the blame on you" },
+        { q: "Third time through the recipe, and you missed the oven temperature again.", a: "\"Two hundred and — what?\" [Repeat the Unclear Part]", bundle: 'pro', guideBack: "Their words, with a question mark" },
+        { q: "You asked twice in the meeting and do not want to ask again in front of everyone.", a: "\"Could I grab you a second? I still didn't get the last point.\" [Come Back to It]", bundle: 'pro', guideBack: "A step back to the earlier point" },
+        { q: "They repeat it in exactly the same words for the third time.", a: "\"So in other words, we wait for their answer first?\" [Offer Your Best Guess]", bundle: 'pro', guideBack: "A guess they can say yes to" },
+      ]
+    },
+    {
+      name: "Someone Senior",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The person talking has power, expertise or status — a boss, a doctor, a client, a head teacher — and they talk as if you already know what they mean.\n\nWhat goes wrong is the fear that the question will make you look less capable, so you leave with a nod and a guess. With these people, a wrong guess tends to cost the most.\n\n**Offer Your Best Guess** shows you were following. **Ask Which One** is short and businesslike. **Own the Miss** puts the gap on you when you feel you should know. **Come Back to It** works when the moment in front of others has passed.\n\nThe one thing to avoid: asking someone else afterwards what they meant.\n\nMindset: people with expertise explain their words all day. It is part of the job.",
+      inputs: [
+        { q: "The director mentions \"the Q3 piece\" as if you should know it.", a: "\"The Q3 piece — the customer report?\" [Offer Your Best Guess]", bundle: 'pro', guideBack: "A guess they can say yes to" },
+        { q: "A consultant uses a term you feel you should know by now.", a: "\"I think I'm missing that one — what's attrition, exactly?\" [Own the Miss]", bundle: 'pro', guideBack: "The question, with the blame on you" },
+        { q: "Your surgeon mentions \"the second option\" and gets up to leave.", a: "\"Sorry — which one is the second option?\" [Ask Which One]", bundle: 'pro', guideBack: "A question about one missing piece" },
+        { q: "The head teacher says your son will be \"moved up a set\".", a: "\"Moved up a set — so a harder maths group?\" [Offer Your Best Guess]", bundle: 'pro', guideBack: "A guess they can say yes to" },
+        { q: "A client asks you to \"send it to the usual people\".", a: "\"Who are the usual people on your side?\" [Ask Which One]", bundle: 'pro', guideBack: "A question about one missing piece" },
+        { q: "Your boss explained the new target quickly and moved on to the next item.", a: "\"Before we move on — is that per week or per month?\" [Come Back to It]", bundle: 'pro', guideBack: "A step back to the earlier point" },
+        { q: "A professor on the phone mentions \"the committee\" as if you know which one.", a: "\"Which committee do you mean?\" [Ask Which One]", bundle: 'pro', guideBack: "A question about one missing piece" },
+        { q: "In front of your team, the director calls the plan \"phase-gated\".", a: "\"Could I ask about something from the meeting — what did you mean by phase-gated?\" [Come Back to It]", bundle: 'pro', guideBack: "A step back to the earlier point" },
+      ]
+    },
+    {
+      name: "The Nod",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You already said \"yes\", \"of course\" or \"got it\" to something you did not understand. Now you have to act on it, or answer a question about it.\n\nWhat goes wrong is carrying on as if you understood, because going back means admitting the nod. That is how a small gap becomes the wrong numbers sent to the wrong person.\n\n**Come Back to It** is the main move — the question is as small as it was, only later. **Own the Miss** makes the admission short and easy. **Offer Your Best Guess** works when you half-caught it.\n\nThe one thing to avoid: acting on a guess you never checked.\n\nMindset: owning a nod takes one sentence. Acting on it can take a week to undo.",
+      inputs: [
+        { q: "You nodded at your landlord's boiler instructions, and now it is beeping.", a: "\"Hi — about the boiler instructions yesterday. Which button was it?\" [Come Back to It]", bundle: 'pro', guideBack: "A step back to the earlier point" },
+        { q: "You said \"yes, of course\" to a name you did not recognise.", a: "\"Sorry, I said yes too fast — who's Jonas?\" [Own the Miss]", bundle: 'pro', guideBack: "The question, with the blame on you" },
+        { q: "You laughed along with a joke you did not get, and now they want your opinion.", a: "\"I have to admit I didn't get it — who's Kevin?\" [Own the Miss]", bundle: 'pro', guideBack: "The question, with the blame on you" },
+        { q: "You agreed to \"the usual arrangement\" and have no idea what it is.", a: "\"Can I go back a step — what's the usual arrangement?\" [Come Back to It]", bundle: 'pro', guideBack: "A step back to the earlier point" },
+        { q: "You nodded when the plumber mentioned \"the stopcock\", and now he has gone.", a: "\"Quick question from earlier — what's the stopcock, and where is it?\" [Come Back to It]", bundle: 'pro', guideBack: "A step back to the earlier point" },
+        { q: "You have nodded through the whole story and still do not know who \"she\" is.", a: "\"I've been nodding, but I've lost who she is.\" [Own the Miss]", bundle: 'pro', guideBack: "The question, with the blame on you" },
+        { q: "You said \"got it\" to a deadline you did not hear.", a: "\"I said got it, but I didn't catch the day — Thursday?\" [Offer Your Best Guess]", bundle: 'pro', guideBack: "A guess they can say yes to" },
+        { q: "A week later, you are about to act on something you never understood.", a: "\"Before I do this, can I check what you meant last week?\" [Come Back to It]", bundle: 'pro', guideBack: "A step back to the earlier point" },
+      ]
+    },
+  ],
 };

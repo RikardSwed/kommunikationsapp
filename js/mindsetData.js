@@ -6837,4 +6837,102 @@ const mindsetCollections = {
       ]
     },
   ],
+  askingforclarity: [
+    {
+      name: "The Clarifying Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I'll work it out in a minute.\" The pack-wide belief that not understanding is a small private problem, best handled quietly.\n\nWhat is true instead: a question now is almost always smaller than the mistake later.\n\nIt feels reasonable because it often works. Most things do become clear, and nobody likes stopping a conversation.\n\nWhat it costs is the times it does not work — the wrong Mark, the wrong door, the wrong day — and by then the question has become a confession.\n\nMindset: ask about the piece you missed while it is still a small question.",
+      inputs: [
+        { q: "I'll work it out in a minute.", a: "\"If I haven't worked it out by the end of this sentence, I won't.\"", bundle: 'pro' },
+        { q: "Asking will slow everything down.", a: "\"One question now is faster than doing the wrong thing all afternoon.\"", bundle: 'pro' },
+        { q: "Everyone else seems to have understood.", a: "\"Half of them are probably nodding for the same reason I am.\"", bundle: 'pro' },
+        { q: "It's probably not important.", a: "\"If it weren't important, I wouldn't still be wondering about it.\"", bundle: 'pro' },
+        { q: "I'll just go along with it and see what happens.", a: "\"Going along without understanding is just guessing, only later.\"", bundle: 'pro' },
+        { q: "I should have understood that the first time.", a: "\"I didn't, so the useful thing now is to ask.\"", bundle: 'pro' },
+        { q: "They'll have to say the whole thing again.", a: "\"Not if I tell them which bit I lost.\"", bundle: 'pro' },
+        { q: "Asking makes it look like I wasn't listening.", a: "\"Asking about one piece shows exactly how closely I was listening.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Looking Slow",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I ask, they'll think I'm slow.\" The fear that a question is a report on your intelligence.\n\nWhat is true instead: people who ask a precise question look like they were paying attention, not like they were lost.\n\nIt feels reasonable because everyone else seems to understand, and you cannot see the people who are nodding for the same reason you are.\n\nWhat it costs is the thing you actually wanted to avoid: getting it wrong later, in public, when the question can no longer be small.\n\nMindset: a precise question is the opposite of looking slow.",
+      inputs: [
+        { q: "If I ask, they'll think I'm slow.", a: "\"People who ask one precise question look like they were paying attention.\"", bundle: 'pro' },
+        { q: "Everyone here knows what that word means.", a: "\"Someone in this room is hoping I'll ask it for them.\"", bundle: 'pro' },
+        { q: "I've been here too long not to know this.", a: "\"The longer I leave it, the stranger the question gets, so I'll ask it today.\"", bundle: 'pro' },
+        { q: "A clever person would get it from context.", a: "\"Clever people ask what the word means and then get on with it.\"", bundle: 'pro' },
+        { q: "I don't want to be the one holding everyone up.", a: "\"Ten seconds of holding them up beats a week of getting it wrong.\"", bundle: 'pro' },
+        { q: "They'll wonder how I got this job.", a: "\"Nobody ever wondered that because someone asked what a word meant.\"", bundle: 'pro' },
+        { q: "The expert will think I'm not up to it.", a: "\"Experts explain their words all day, and to them it's just the job.\"", bundle: 'pro' },
+        { q: "I'll ask someone else afterwards so nobody notices.", a: "\"The person who said it is the only one who knows what they meant.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Nodding Along",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"I can usually pick it up from context.\" A belief that is mostly true — which is exactly what makes it hard to argue with.\n\nWhat is true: you often can, and stopping a good story for every small gap would be tiring for everyone.\n\nWhat gets added is the step from \"usually\" to \"this time\": from \"I don't need every word\" to \"I don't need this one\", even when the sentence hangs on it.\n\nWhat it costs is the nod you have to own later, when the gap has already done its damage.\n\nMindset: keep the patience. Drop the idea that patience means never asking.",
+      inputs: [
+        { q: "I can usually pick things up from context.", a: "\"True, usually — but 'so I don't need to ask this time' is the part I added.\"", bundle: 'pro' },
+        { q: "Stopping someone mid-story to ask is rude.", a: "\"True, mid-flow — but 'so I can never ask' is the part I added.\"", bundle: 'pro' },
+        { q: "Most things become clear if I wait a bit.", a: "\"True, most do — but 'so this one will too' is the part I added.\"", bundle: 'pro' },
+        { q: "Nodding keeps the conversation going.", a: "\"True — but 'so it's fine that I'm lost' is the part I added.\"", bundle: 'pro' },
+        { q: "I don't need to understand every word.", a: "\"True — but 'so I don't need the one it all hangs on' is the part I added.\"", bundle: 'pro' },
+        { q: "They're in a hurry, so I shouldn't hold them up.", a: "\"True, they are — but 'so I'll guess instead' is the part I added.\"", bundle: 'pro' },
+        { q: "I got the gist, and that's enough.", a: "\"True, for most things — but 'so I don't need the name' is the part I added.\"", bundle: 'pro' },
+        { q: "Asking again would embarrass them.", a: "\"True, a little — but 'so I'll stay confused' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Asking Twice",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I already asked once. I can't ask again.\" The belief that every question has a limit of one.\n\nWhat is true instead: there is no limit on asking. There is only a better way to ask the second time — smaller, more precise, often a guess.\n\nIt feels reasonable because the second question does cost more than the first, and you can hear their patience getting thinner.\n\nWhat it costs is pretending on the second round, which is worse than the confusion you had on the first.\n\nMindset: if I ask again, I ask about less.",
+      inputs: [
+        { q: "I already asked once, so I can't ask again.", a: "\"There's no limit on asking, only a better way to ask the second time.\"", bundle: 'pro' },
+        { q: "They'll get annoyed if I ask again.", a: "\"They'll be more annoyed if I get it wrong because I didn't.\"", bundle: 'pro' },
+        { q: "If I didn't get it the first time, that's my fault.", a: "\"Maybe it is, and asking again is how I fix it.\"", bundle: 'pro' },
+        { q: "Asking a third time is just embarrassing.", a: "\"If I guess this time, all they have to say is yes.\"", bundle: 'pro' },
+        { q: "They explained it perfectly well.", a: "\"Then one small question will be easy for them to answer.\"", bundle: 'pro' },
+        { q: "I'll look it up later instead.", a: "\"Nothing I can look up will tell me what they meant.\"", bundle: 'pro' },
+        { q: "I can't keep interrupting.", a: "\"I can ask once at the end, and ask it properly.\"", bundle: 'pro' },
+        { q: "They'll think I wasn't listening the first time.", a: "\"I'll say which part I got, and they'll hear that I was.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Not Making a Fuss",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'm easy-going. I don't need everything spelt out.\" A belief that feels like a good quality, and often is one.\n\nWhat is true instead: every question you do not ask gets answered somewhere — usually by someone else fixing what went wrong.\n\nIt feels reasonable because not making a fuss is genuinely kind in a lot of places, and people like being around someone who does not need everything explained twice.\n\nWhat it costs is quiet and delayed: the wrong form, the wrong day, the three things you agreed to and cannot explain.\n\nMindset: one small question is not a fuss. The mistake it prevents might be.",
+      inputs: [
+        { q: "I'm easy-going; I don't need everything spelt out.", a: "\"And somebody else ends up fixing what I didn't ask about.\"", bundle: 'pro' },
+        { q: "I don't like to bother people with questions.", a: "\"The bother still comes, just later, when I've done the wrong thing.\"", bundle: 'pro' },
+        { q: "I can manage on my own.", a: "\"Managing on my own is how I spent an hour on the wrong form.\"", bundle: 'pro' },
+        { q: "I'm good at reading between the lines.", a: "\"Which is why I sometimes read a whole story that nobody wrote.\"", bundle: 'pro' },
+        { q: "I don't make a fuss about small things.", a: "\"The small thing I didn't ask about is usually the one that grew.\"", bundle: 'pro' },
+        { q: "I'd rather work it out myself than ask.", a: "\"Working it out myself costs me an afternoon, and asking would have cost them ten seconds.\"", bundle: 'pro' },
+        { q: "I never make people repeat themselves.", a: "\"So they never find out that I didn't hear them.\"", bundle: 'pro' },
+        { q: "I keep things moving in meetings.", a: "\"And I leave with three things I agreed to and can't explain.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Guessing Wrong",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I guess and I'm wrong, I'll look silly.\" The fear that stops people using the lightest way to ask.\n\nWhat is true instead: a wrong guess is still useful. It shows them exactly where you went, so they know what to fix.\n\nIt feels reasonable because a guess puts something on the table, and an open \"what?\" does not. Being wrong out loud feels riskier than being vague.\n\nWhat it costs is the extra work you hand to the other person: with no guess to correct, they have to work out what you missed.\n\nMindset: a wrong guess is the second-fastest way to the right answer.",
+      inputs: [
+        { q: "If I guess and I'm wrong, I'll look silly.", a: "\"A wrong guess still shows them exactly where I got lost.\"", bundle: 'pro' },
+        { q: "It's safer to ask an open question.", a: "\"It's safer for me and harder for them, because they have to work out what I missed.\"", bundle: 'pro' },
+        { q: "I shouldn't put words in their mouth.", a: "\"A guess with a question mark is an offer they can turn down.\"", bundle: 'pro' },
+        { q: "What if my guess is something embarrassing?", a: "\"Then they'll correct it, and we'll both know where I was.\"", bundle: 'pro' },
+        { q: "I'd rather they explained it properly.", a: "\"A yes or a no is the quickest proper explanation there is.\"", bundle: 'pro' },
+        { q: "Guessing sounds like I think I know better.", a: "\"'The Tuesday one, you mean?' doesn't sound like I know better.\"", bundle: 'pro' },
+        { q: "After two wrong guesses I should give up.", a: "\"Two wrong guesses have narrowed it down to almost nothing.\"", bundle: 'pro' },
+        { q: "I'll only guess when I'm sure.", a: "\"If I were sure, I wouldn't need to ask.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };

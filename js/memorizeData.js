@@ -11287,4 +11287,174 @@ const memorizeCollections = {
       ]
     },
   ],
+  askingforclarity: [
+    {
+      name: "Core Idea",
+      description: "Seven strategies for asking about something you did not catch or did not understand:\n\n1. Say You Missed It\n2. Ask Which One\n3. Repeat the Unclear Part\n4. Offer Your Best Guess\n5. Ask About the Word\n6. Own the Miss\n7. Come Back to It\n\nThe first five are ways to ask. The last two are for when asking feels awkward, or late.",
+      cards: [
+        { q: "What are the seven strategies in this pack?", a: "Say You Missed It, Ask Which One, Repeat the Unclear Part, Offer Your Best Guess, Ask About the Word, Own the Miss, Come Back to It.", bundle: 'free' },
+        { q: "How do the seven fit together?", a: "The first five are ways to ask. The last two are for when asking feels awkward, or late.", bundle: 'free' },
+        { q: "What should you ask yourself first?", a: "How much did I get? Nothing, part of it, one unclear piece, a likely meaning, or all but one word.", bundle: 'free' },
+        { q: "Which way of asking is most common in real conversations?", a: "Offering a guess. It is also the one that leaves the least work for the other person.", bundle: 'free' },
+        { q: "Why is a bare \"what?\" expensive?", a: "It sends the whole sentence back and makes them guess which part went wrong.", bundle: 'free' },
+        { q: "Where does this pack end and Show Understanding begin?", a: "Here you are missing a piece — a name, a time, a word. Show Understanding checks your reading of their whole point.", bundle: 'pro' },
+        { q: "How is Ask About the Word different from asking what someone means in a discussion?", a: "Here you do not know the word. In a discussion you know it, and you narrow the claim before you argue with it.", bundle: 'pro' },
+        { q: "What does every strategy in this pack do for the other person?", a: "It tells them where the problem is, so they only have to fix that part.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say You Missed It",
+      description: "",
+      cards: [
+        { q: "What is Say You Missed It?", a: "Saying plainly that you did not catch it, and asking for it again.", bundle: 'free' },
+        { q: "How does Say You Missed It sound?", a: "\"Sorry, the printer ate that — could you say it again?\"", bundle: 'free' },
+        { q: "When is Say You Missed It the right one?", a: "When you got nothing to hold on to — not a word, not a name, not the gist.", bundle: 'free' },
+        { q: "How much work does Say You Missed It leave for the other person?", a: "The most of any strategy. They repeat all of it and guess which part went wrong.", bundle: 'free' },
+        { q: "What are the three reasons behind Say You Missed It?", a: "You could not hear, it was too fast, or you were not with them yet.", bundle: 'free' },
+        { q: "When does Say You Missed It go wrong?", a: "When you actually caught most of it. Then it asks them to redo work you already have.", bundle: 'pro' },
+        { q: "What is Say You Missed It better than, and why?", a: "A bare \"what?\". Saying why you missed it tells them what to fix — the noise, the speed or your attention.", bundle: 'pro' },
+        { q: "Which strategy often follows Say You Missed It?", a: "Repeat the Unclear Part — once they say it again, echo the bit that still did not come through.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask Which One",
+      description: "",
+      cards: [
+        { q: "What is Ask Which One?", a: "Asking about one piece of the sentence with a single question word.", bundle: 'free' },
+        { q: "How does Ask Which One sound?", a: "\"Will do — which Mark?\"", bundle: 'free' },
+        { q: "When is Ask Which One the right one?", a: "When you heard it all, but one piece could mean more than one thing.", bundle: 'free' },
+        { q: "How much work does Ask Which One leave for the other person?", a: "Very little. They answer one small question and carry on.", bundle: 'free' },
+        { q: "What are the four question words in Ask Which One?", a: "Who, which, when and where.", bundle: 'free' },
+        { q: "When does Ask Which One go wrong?", a: "When you cannot find the piece. Then you are guessing at the question as well as the answer.", bundle: 'pro' },
+        { q: "What is Ask Which One better than, and why?", a: "Asking them to say it all again. Two words from you save thirty from them.", bundle: 'pro' },
+        { q: "Which strategy often follows Ask Which One?", a: "Offer Your Best Guess — if you already have an idea which one, say it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Repeat the Unclear Part",
+      description: "",
+      cards: [
+        { q: "What is Repeat the Unclear Part?", a: "Saying back the part you caught, with your voice going up where the problem is.", bundle: 'free' },
+        { q: "How does Repeat the Unclear Part sound?", a: "\"Before the — sorry, before what?\"", bundle: 'free' },
+        { q: "When is Repeat the Unclear Part the right one?", a: "When you got part of it and lost the rest — or heard it and cannot quite believe it.", bundle: 'free' },
+        { q: "How much work does Repeat the Unclear Part leave for the other person?", a: "Only the gap. Everything before it they do not need to say again.", bundle: 'free' },
+        { q: "What are the three ways to echo?", a: "Up to the gap, the one word, and the surprise.", bundle: 'free' },
+        { q: "When does Repeat the Unclear Part go wrong?", a: "When it sounds shocked rather than curious — \"Four hundred and FIFTY?\"", bundle: 'pro' },
+        { q: "What is Repeat the Unclear Part better than, and why?", a: "Say You Missed It, whenever some of it came through. The echo shows exactly how far you got.", bundle: 'pro' },
+        { q: "Which strategy often follows Repeat the Unclear Part?", a: "Offer Your Best Guess — once the gap is filled, you usually have enough to guess.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Offer Your Best Guess",
+      description: "",
+      cards: [
+        { q: "What is Offer Your Best Guess?", a: "Saying what you think they meant, as a question.", bundle: 'free' },
+        { q: "How does Offer Your Best Guess sound?", a: "\"The budget meeting, you mean?\"", bundle: 'free' },
+        { q: "When is Offer Your Best Guess the right one?", a: "When you have a likely meaning and only need it confirmed.", bundle: 'free' },
+        { q: "How much work does Offer Your Best Guess leave for the other person?", a: "The least of all. A yes — or a no and the right answer.", bundle: 'free' },
+        { q: "What are the three kinds of guess?", a: "The straight guess, the either-or, and the check on a slip.", bundle: 'free' },
+        { q: "When does Offer Your Best Guess go wrong?", a: "When it is said as a statement. Then it sounds like telling them what they meant.", bundle: 'pro' },
+        { q: "What is Offer Your Best Guess better than, and why?", a: "An open \"what?\". A guess only needs a yes or a no — and in real conversations it is the most common way people ask.", bundle: 'pro' },
+        { q: "Which strategy often follows Offer Your Best Guess?", a: "Ask Which One — if the guess was wrong, the answer usually shows which piece to ask about.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask About the Word",
+      description: "",
+      cards: [
+        { q: "What is Ask About the Word?", a: "Picking out the one word that stopped you and asking what it means.", bundle: 'free' },
+        { q: "How does Ask About the Word sound?", a: "\"Sure — what do you mean by run-rate?\"", bundle: 'free' },
+        { q: "When is Ask About the Word the right one?", a: "When you heard every word and one of them is the problem.", bundle: 'free' },
+        { q: "How much work does Ask About the Word leave for the other person?", a: "One explanation of one word, instead of the whole sentence again.", bundle: 'free' },
+        { q: "What are the three kinds of word to ask about?", a: "The word you do not know, the word only they use, and the ordinary word that could mean two things.", bundle: 'free' },
+        { q: "When does Ask About the Word go wrong?", a: "When it sounds like a challenge — \"what's THAT supposed to mean?\"", bundle: 'pro' },
+        { q: "What is Ask About the Word better than, and why?", a: "Asking about the whole sentence. Most confusion hangs on a single word.", bundle: 'pro' },
+        { q: "Which strategy often follows Ask About the Word?", a: "Offer Your Best Guess — put their explanation into your own situation and check it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Own the Miss",
+      description: "",
+      cards: [
+        { q: "What is Own the Miss?", a: "Asking, and saying the gap is on your side.", bundle: 'free' },
+        { q: "How does Own the Miss sound?", a: "\"That's me — I drifted halfway. What's needed for Tuesday?\"", bundle: 'free' },
+        { q: "When is Own the Miss the right one?", a: "When asking might sound like criticism — someone senior, a third explanation, someone proud of how they put it.", bundle: 'free' },
+        { q: "How much work does Own the Miss leave for the other person?", a: "No more than the question it comes with. It only takes the sting out.", bundle: 'free' },
+        { q: "What are the three ways to own it?", a: "Your attention, your background, and your memory.", bundle: 'free' },
+        { q: "When does Own the Miss go wrong?", a: "When it turns into a long apology. Then the gap looks bigger than it is.", bundle: 'pro' },
+        { q: "What is Own the Miss better than, and why?", a: "A plain question, when the other person might hear it as \"you explained it badly\".", bundle: 'pro' },
+        { q: "Which strategy often follows Own the Miss?", a: "Ask Which One — once the gap is yours, the question itself can be very short.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Come Back to It",
+      description: "",
+      cards: [
+        { q: "What is Come Back to It?", a: "Going back to something you let pass — a few sentences later, at the end of their turn, or the next day.", bundle: 'free' },
+        { q: "How does Come Back to It sound?", a: "\"Quick one about earlier — what's happening on Tuesday?\"", bundle: 'free' },
+        { q: "When is Come Back to It the right one?", a: "When the moment has passed and you still do not know.", bundle: 'free' },
+        { q: "How much work does Come Back to It leave for the other person?", a: "Very little. The question has not grown; it only feels that way.", bundle: 'free' },
+        { q: "What are the three moments to come back?", a: "A few sentences later, at the end of their turn, and later by message or a call.", bundle: 'free' },
+        { q: "When does Come Back to It go wrong?", a: "When you wait until the misunderstanding has already done damage.", bundle: 'pro' },
+        { q: "What is Come Back to It better than, and why?", a: "Never asking at all. Late is almost always better than never.", bundle: 'pro' },
+        { q: "Which strategy often follows Come Back to It?", a: "Own the Miss — going back is easier when the gap is on your side.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Match the Gap** — which of the five ways to ask fits what you missed\n• **Keep It Friendly** — whether the awkward part is the person or the timing\n• **All Seven Strategies** — no cue given, which is the real thing\n\nOne question decides most of it: how much did I get?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Match the Gap, Keep It Friendly, and All Seven Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Match the Gap?", a: "How much did I get? The more you got, the less you need to send back.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Match the Gap?", a: "\"What?\" when you had most of it. It makes them repeat everything to fix one piece.", bundle: 'pro' },
+        { q: "You got nothing at all. Which strategy?", a: "Say You Missed It.", bundle: 'pro' },
+        { q: "You have a likely meaning. Which strategy?", a: "Offer Your Best Guess.", bundle: 'pro' },
+        { q: "What is the question that decides Keep It Friendly?", a: "What makes this awkward — the person, or the timing?", bundle: 'pro' },
+        { q: "The awkward part is the timing. Which strategy?", a: "Come Back to It.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Keep It Friendly?", a: "Saying nothing at all. It feels polite and is almost always the expensive option.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **From Nothing to Yes** — Say You Missed It → Repeat the Unclear Part → Offer Your Best Guess\n2. **Back to the Nod** — Come Back to It → Own the Miss → Ask Which One\n3. **Pin Down the Word** — Ask About the Word → Offer Your Best Guess → Repeat the Unclear Part\n\nIn each one, the question gets smaller as you understand more.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "From Nothing to Yes, Back to the Nod, and Pin Down the Word.", bundle: 'pro' },
+        { q: "What is the order in From Nothing to Yes?", a: "Say You Missed It, Repeat the Unclear Part, Offer Your Best Guess.", bundle: 'pro' },
+        { q: "Why does From Nothing to Yes run in that order?", a: "Each step asks the other person for less than the one before.", bundle: 'pro' },
+        { q: "What is the order in Back to the Nod?", a: "Come Back to It, Own the Miss, Ask Which One.", bundle: 'pro' },
+        { q: "Why does the awkward part come first in Back to the Nod?", a: "Once you have gone back and owned it, the actual question is easy.", bundle: 'pro' },
+        { q: "What is the order in Pin Down the Word?", a: "Ask About the Word, Offer Your Best Guess, Repeat the Unclear Part.", bundle: 'pro' },
+        { q: "Why guess after someone explains a word?", a: "The explanation is general. The guess turns it into what it means for you.", bundle: 'pro' },
+        { q: "What is the usual mistake in all three?", a: "Asking the same open question each time, which asks for everything again.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **Noise and Speed** — you could not hear it\n• **Jargon** — one word is the problem\n• **The Third Time** — you have already asked twice\n• **Someone Senior** — asking feels like a risk\n• **The Nod** — you already said \"got it\"\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Noise and Speed, Jargon, The Third Time, Someone Senior, and The Nod.", bundle: 'pro' },
+        { q: "What goes wrong in Noise and Speed?", a: "\"What?\", followed by the same sentence louder and just as fast. The problem was never the volume.", bundle: 'pro' },
+        { q: "What is the main strategy for Jargon?", a: "Ask About the Word.", bundle: 'pro' },
+        { q: "Why not look jargon up later?", a: "A dictionary cannot tell you what they meant.", bundle: 'pro' },
+        { q: "What is the strongest strategy the third time you ask?", a: "Offer Your Best Guess — after two explanations you usually have enough to guess.", bundle: 'pro' },
+        { q: "What should you avoid with someone senior?", a: "Asking someone else afterwards what they meant.", bundle: 'pro' },
+        { q: "What is the main strategy for The Nod?", a: "Come Back to It — the question is as small as it was, only later.", bundle: 'pro' },
+        { q: "What should you avoid after a nod?", a: "Acting on a guess you never checked.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **The Clarifying Mindset** — I'll work it out in a minute\n• **Looking Slow** — asking shows I'm not clever enough\n• **Nodding Along** — I can pick it up from context\n• **Asking Twice** — one question is the limit\n• **Not Making a Fuss** — I don't need things spelt out\n• **Guessing Wrong** — a wrong guess makes me look silly\n\nMost of them stop a small question being asked while it is still small.",
+      cards: [
+        { q: "What are the six mindsets in this pack?", a: "The Clarifying Mindset, Looking Slow, Nodding Along, Asking Twice, Not Making a Fuss, and Guessing Wrong.", bundle: 'pro' },
+        { q: "What is true instead of \"I'll work it out in a minute\"?", a: "A question now is almost always smaller than the mistake later.", bundle: 'pro' },
+        { q: "What does a precise question look like to other people?", a: "Attention. The opposite of looking slow.", bundle: 'pro' },
+        { q: "What is true about picking things up from context?", a: "Usually you can. What gets added is \"so I don't need to ask this time\".", bundle: 'pro' },
+        { q: "Is there a limit on asking?", a: "No. There is only a better way to ask the second time — smaller, and often a guess.", bundle: 'pro' },
+        { q: "What does not making a fuss quietly cost?", a: "Someone else ends up fixing what you did not ask about.", bundle: 'pro' },
+        { q: "Why is a wrong guess still useful?", a: "It shows them exactly where you went, so they know what to fix.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They stop a small question being asked while it is still small.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

@@ -712,6 +712,7 @@ applyInputCounterVisibility();
     seenandtrusted3askingtobetrusted: { label: 'Seen and Trusted 3 — Asking to Be Trusted', minLevel: 'complete' },
     seenandtrusted1thesafetyshereads: { label: 'Seen and Trusted 1 — The Safety She Reads For', minLevel: 'complete' },
     masculine1: { label: 'The Masculine Blueprint – Part 1', minLevel: 'complete' },
+    askingforclarity: { label: 'Asking for Clarity', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -3141,6 +3142,20 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
+  askingforclarity: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
 };
 window.BUNDLE_DEFS = BUNDLE_DEFS;
 
@@ -4031,6 +4046,15 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  {
+    version: 'v1.29.08', date: 'September 2026', title: 'Asking for Clarity \u2014 the first grid pack', audience: 'dev',
+    items: [
+      'A new pack, <strong>Asking for Clarity</strong> (<code>askingforclarity</code>, Listening &amp; Understanding), imported at <strong>complete</strong> so it sits outside the release scope until its tier is decided. 36 decks, 273 units, <strong>0 errors and 0 warnings</strong> in check-pack.',
+      'Seven strategies for asking about something you did not catch or did not understand, ordered by how much work they leave for the other person: <strong>Say You Missed It</strong>, <strong>Ask Which One</strong>, <strong>Repeat the Unclear Part</strong>, <strong>Offer Your Best Guess</strong>, <strong>Ask About the Word</strong> \u2014 and two for when asking is awkward or late, <strong>Own the Miss</strong> and <strong>Come Back to It</strong>. The structure comes from conversation analysis (other-initiated repair), where offering a guess is the most common form in real talk.',
+      '<strong>Built as a grid pack from the first card</strong> (\u00a711k, row type <em>situation</em>). Single Strategy is 7 \u00d7 8, and card N is the same event in every column \u2014 the manager in the corridor, the receptionist on a bad line, the mechanic\u2019s \u201cfour-fifty\u201d \u2014 written from each strategy\u2019s own angle rather than copied. The Memorize strategy decks follow the same idea: question N is the same question about each strategy.',
+      'Nothing in the code knows it is a grid pack yet: no <code>gridAxis</code> field, no badge, and <em>Shuffle inputs</em> still works against it. Try it with <strong>Stay on the same card</strong> on and shuffle off.',
+    ],
+  },
   {
     version: 'v1.29.07', date: 'September 2026', title: 'check-pack run across all 52 release packs at once', audience: 'dev',
     items: [

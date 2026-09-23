@@ -9972,4 +9972,111 @@ const multiStepCollections = {
       ]
     },
   ],
+  askingforclarity: [
+    {
+      name: "From Nothing to Yes",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Say You Missed It**, then **Repeat the Unclear Part**, then **Offer Your Best Guess**. What to do when you start with nothing and it comes back to you in pieces.\n\n1. **Say You Missed It** — you got none of it, so ask for all of it.\n2. **Repeat the Unclear Part** — some came back; echo it up to where it went.\n3. **Offer Your Best Guess** — now you have enough to guess, so ask for a yes.\n\nEach step asks the other person for less than the one before. That is the whole point of the order: as you understand more, your question should get smaller.\n\nThe usual order is \"what?\" three times, which asks for everything three times.\n\nMindset: every answer you get is something you do not need to ask for again.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "At a busy station, a guard is telling you which train to take instead of the cancelled one. The announcements keep drowning him out.",
+          steps: [
+            { front: "Say You Missed It — an announcement drowns out his whole answer.", back: "\"Sorry, I lost that under the announcement — could you say it again?\"", guideFront: "Ask to hear it again when...", guideBack: "A plain request to hear it again" },
+            { front: "Repeat the Unclear Part — he says, \"Platform nine, change at—\" and another announcement starts.", back: "\"Change at — change at where?\"", guideFront: "Echo the bit you caught when...", guideBack: "Their words, with a question mark" },
+            { front: "Offer Your Best Guess — he says something that sounds like \"Stockport\".", back: "\"Stockport, you mean? And the next train from there?\"", guideFront: "Say what you think they meant when...", guideBack: "A guess they can say yes to" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your elderly neighbour is telling you about a problem with her heating, through a half-open door, with the television on loud behind her.",
+          steps: [
+            { front: "Say You Missed It — she says something and waves towards the kitchen.", back: "\"Sorry, the telly's winning — could you say that again?\"", guideFront: "Ask to hear it again when...", guideBack: "A plain request to hear it again" },
+            { front: "Repeat the Unclear Part — she says, \"The man said the boiler needs a new—\" and the television gets louder.", back: "\"A new — a new what?\"", guideFront: "Echo the bit you caught when...", guideBack: "Their words, with a question mark" },
+            { front: "Offer Your Best Guess — she says, \"The little thing. The pump, I think he said.\"", back: "\"The pump — so the heating's off until he comes back?\"", guideFront: "Say what you think they meant when...", guideBack: "A guess they can say yes to" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A colleague on a video call is explaining a change to the project plan. Their connection keeps freezing.",
+          steps: [
+            { front: "Say You Missed It — their picture freezes for the whole explanation.", back: "\"Sorry, you froze for all of that. Could you start again?\"", guideFront: "Ask to hear it again when...", guideBack: "A plain request to hear it again" },
+            { front: "Repeat the Unclear Part — they say, \"So we're moving the launch to—\" and freeze again.", back: "\"Moving it to — to when?\"", guideFront: "Echo the bit you caught when...", guideBack: "Their words, with a question mark" },
+            { front: "Offer Your Best Guess — they come back: \"…end of the month, after the audit.\"", back: "\"After the audit — so the thirtieth?\"", guideFront: "Say what you think they meant when...", guideBack: "A guess they can say yes to" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Back to the Nod",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Come Back to It**, then **Own the Miss**, then **Ask Which One**. What to do when you nodded along and now you need to know.\n\n1. **Come Back to It** — raise it again, lightly, and name what it was about.\n2. **Own the Miss** — when they say you already agreed, put the gap on your side.\n3. **Ask Which One** — once they start explaining, ask about the one piece you need.\n\nThe order matters because the awkward part comes first. Once you have gone back and owned it, the actual question is easy — and much smaller than it felt all afternoon.\n\nThe usual order is to ask the detail cold, which sounds like you are catching them out.\n\nMindset: going back is a small thing. It only feels big because you waited.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "In this morning's meeting your manager asked you to \"deal with the Harris thing\", and you nodded. It is now the afternoon.",
+          steps: [
+            { front: "Come Back to It — you catch her at the coffee machine.", back: "\"Quick one about this morning — the Harris thing.\"", guideFront: "Go back to it later when...", guideBack: "A step back to the earlier point" },
+            { front: "Own the Miss — she says, \"Yes? You said you were on it.\"", back: "\"I did, and I think I'm missing some background. That's on me.\"", guideFront: "Put the gap on your side when...", guideBack: "The question, with the blame on you" },
+            { front: "Ask Which One — she says, \"The complaint, from last week.\"", back: "\"Got it. Who's expecting to hear from me?\"", guideFront: "Ask about one piece when...", guideBack: "A question about one missing piece" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your partner told you the plan for the weekend while you were half-watching a match. It is now Friday evening.",
+          steps: [
+            { front: "Come Back to It — you are making dinner together.", back: "\"Can I go back to something from Tuesday — the weekend plan?\"", guideFront: "Go back to it later when...", guideBack: "A step back to the earlier point" },
+            { front: "Own the Miss — they say, \"I told you all this.\"", back: "\"You did, and I was watching the match. That's on me.\"", guideFront: "Put the gap on your side when...", guideBack: "The question, with the blame on you" },
+            { front: "Ask Which One — they say, \"We're at your sister's on Saturday.\"", back: "\"Great — when do we need to be there?\"", guideFront: "Ask about one piece when...", guideBack: "A question about one missing piece" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "In your first week, a new teammate explained how to claim expenses. You nodded. Now you have a receipt and no idea what to do with it.",
+          steps: [
+            { front: "Come Back to It — you send them a message.", back: "\"Hi — going back to the expenses thing from my first week.\"", guideFront: "Go back to it later when...", guideBack: "A step back to the earlier point" },
+            { front: "Own the Miss — they reply, \"Sure, what's up?\"", back: "\"I nodded along and didn't take any of it in, sorry. My fault entirely.\"", guideFront: "Put the gap on your side when...", guideBack: "The question, with the blame on you" },
+            { front: "Ask Which One — they reply, \"You just put it through the portal.\"", back: "\"Which portal — is there a link?\"", guideFront: "Ask about one piece when...", guideBack: "A question about one missing piece" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Pin Down the Word",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Ask About the Word**, then **Offer Your Best Guess**, then **Repeat the Unclear Part**. What to do when one word stops you and the explanation brings more with it.\n\n1. **Ask About the Word** — pick out the word and ask what it means.\n2. **Offer Your Best Guess** — put their explanation into your own situation and check it.\n3. **Repeat the Unclear Part** — they add a detail, and you catch only half; echo it.\n\nWhy this order: an explanation of a word is usually general. Your guess turns it into what it means for you, and that is when the real detail comes out — often too fast.\n\nThe usual order is to nod at the explanation, which leaves you with a definition and no idea what to do.\n\nMindset: the word is not the goal. Knowing what to do next is.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "At your first physio appointment, the physio says your back problem is \"mostly postural\" and starts typing.",
+          steps: [
+            { front: "Ask About the Word — she says, \"Mostly postural, so we'll start there.\"", back: "\"Sorry — what does postural mean for me?\"", guideFront: "Ask what one word means when...", guideBack: "A question about the word" },
+            { front: "Offer Your Best Guess — she says, \"It's about how you sit and stand all day.\"", back: "\"So it's the desk, not the running?\"", guideFront: "Say what you think they meant when...", guideBack: "A guess they can say yes to" },
+            { front: "Repeat the Unclear Part — she says, \"Mostly the desk. Do these three times and hold each for—\" and turns to the screen.", back: "\"Hold each for — for how long?\"", guideFront: "Echo the bit you caught when...", guideBack: "Their words, with a question mark" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your teenager asks if they can go to a friend's party on Saturday, and says it is going to be \"lowkey\".",
+          steps: [
+            { front: "Ask About the Word — they say, \"It's lowkey, I promise.\"", back: "\"What does lowkey mean, exactly?\"", guideFront: "Ask what one word means when...", guideBack: "A question about the word" },
+            { front: "Offer Your Best Guess — they say, \"Like, not a big thing.\"", back: "\"So a few people, and her parents are in?\"", guideFront: "Say what you think they meant when...", guideBack: "A guess they can say yes to" },
+            { front: "Repeat the Unclear Part — they say, \"Her mum's home till nine, and then—\" and they stop.", back: "\"And then — then what?\"", guideFront: "Echo the bit you caught when...", guideBack: "Their words, with a question mark" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A new colleague reads your report and says it needs to be \"on brand\" before it goes to the client.",
+          steps: [
+            { front: "Ask About the Word — they say, \"Just make sure it's on brand.\"", back: "\"What does on brand mean here?\"", guideFront: "Ask what one word means when...", guideBack: "A question about the word" },
+            { front: "Offer Your Best Guess — they say, \"The house style, basically.\"", back: "\"So the template with the blue header?\"", guideFront: "Say what you think they meant when...", guideBack: "A guess they can say yes to" },
+            { front: "Repeat the Unclear Part — they say, \"That, and the logo goes in the—\" and someone calls them away.", back: "\"The logo goes in the — where?\"", guideFront: "Echo the bit you caught when...", guideBack: "Their words, with a question mark" },
+          ]
+        },
+      ]
+    },
+  ],
 };

@@ -9348,6 +9348,120 @@ const collections = {
       ]
     },
   ],
+  askingforclarity: [
+    {
+      name: "Say You Missed It",
+      guideFront: "Ask to hear it again when...",
+      guideBack: "A plain request to hear it again",
+      description: "Say plainly that you did not catch it, and ask for it again. \"Sorry, the printer ate that — could you say it again?\" Use it when you have nothing to hold on to: not a word, not a name, not the gist.\n\nIt is the most natural way to ask, and the most expensive one for the other person. \"What?\" sends the whole sentence back and makes them guess which part went wrong. So they repeat all of it, often louder, and often the same way. Saying what happened — the noise, the speed, your attention — gives them something to fix.\n\nTypical phrases: \"Sorry, I missed that.\", \"Could you say that again?\", \"The line broke up — from the start?\", \"Say it again, slower?\"\n\nThree reasons you missed it, and what each sounds like:\n\n1. You could not hear — noise, a bad line. \"Sorry, the bus took that. Again?\"\n\n2. It was too fast — ask for the speed, not just the words. \"Could you say it again, a bit slower?\"\n\n3. You were not with them yet — say so. \"Sorry, I wasn't listening properly yet. Run it past me again?\"\n\nMindset: save this for when you really got nothing. If you caught any of it, one of the other strategies asks for less.",
+      inputs: [
+        { q: "Your manager says something about Mark just as the printer starts up.", a: "\"Sorry, the printer ate that — could you say it again?\"", bundle: 'free' },
+        { q: "The receptionist gives your appointment details and the line crackles.", a: "\"Sorry, the line broke up. Could you say that again from the start?\"", bundle: 'free' },
+        { q: "Your friend's story about the brother and the dog ends as a bus goes past.", a: "\"Hang on, the bus took the ending. What happened?\"", bundle: 'free' },
+        { q: "A new colleague explains how to raise a PO while you are still logging in.", a: "\"Sorry, I wasn't with you yet. Could you run that past me again?\"", bundle: 'free' },
+        { q: "The mechanic explains the problem over the noise of the workshop.", a: "\"Sorry, I didn't catch any of that over the noise. Say it again?\"", bundle: 'free' },
+        { q: "The whole table laughs at a joke you did not hear a word of.", a: "\"I missed that completely — what was the joke?\"", bundle: 'pro' },
+        { q: "The IT person rattles off three steps faster than you can follow.", a: "\"Sorry, that was quick. Could you say it again, slower?\"", bundle: 'pro' },
+        { q: "Your partner calls something about Saturday over their shoulder as the door closes.", a: "\"Wait — I missed that. What did you say?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask Which One",
+      guideFront: "Ask about one piece when...",
+      guideBack: "A question about one missing piece",
+      description: "You heard the sentence, but one piece of it could mean more than one thing. Ask about that piece with one question word — who, which, when, where. \"Which Mark?\"\n\nIt works because it tells the other person exactly where the problem is. They do not repeat the sentence; they answer one small question, and the conversation carries on. Two words from you save thirty from them.\n\nThe trick is to find the piece. Usually it is a name that fits two people, a \"the other one\", a \"the thing\", or a time that could be two times.\n\nTypical phrases: \"Which one?\", \"Who's that?\", \"When was that?\", \"Which way do you mean?\"\n\nFour question words, and what each one pins down:\n\n1. Who — a name or a \"her\" that could be two people. \"Whose brother?\"\n\n2. Which — one of several. \"Which thing with Mum?\"\n\n3. When — a day, a time, \"before\". \"When was the Leeds trip?\"\n\n4. Where — a place, a door, a file. \"Which entrance should I use?\"\n\nMindset: you do not have to understand everything to ask well. You have to know which bit you do not.",
+      inputs: [
+        { q: "Your manager says, \"Get the numbers to Mark.\" There are two Marks.", a: "\"Will do — which Mark?\"", bundle: 'free' },
+        { q: "The receptionist tells you to come in by \"the other entrance\".", a: "\"Sorry — which entrance should I use?\"", bundle: 'free' },
+        { q: "Your friend says, \"Then her brother turned up.\" You lost track of who \"her\" is.", a: "\"Wait, whose brother?\"", bundle: 'free' },
+        { q: "Your new colleague says to send the PO \"to them\" once it is raised.", a: "\"Who do I send it to, exactly?\"", bundle: 'free' },
+        { q: "The mechanic says it might be \"the other one\" instead of the valve.", a: "\"Which other one — what else could it be?\"", bundle: 'free' },
+        { q: "Someone jokes about \"the Leeds trip\", and you do not know when that was.", a: "\"When was the Leeds trip?\"", bundle: 'pro' },
+        { q: "The IT person says to sign in \"with the new one\".", a: "\"Sorry — which one is the new one?\"", bundle: 'pro' },
+        { q: "Your partner says to \"sort the thing with your mum\". There are three things.", a: "\"Which thing with Mum?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Repeat the Unclear Part",
+      guideFront: "Echo the bit you caught when...",
+      guideBack: "Their words, with a question mark",
+      description: "Say back the part you did catch, and let your voice go up where the problem is. \"Before the — sorry, before what?\" or just \"Her brother?\"\n\nIt works because it shows the other person exactly how far you got. Everything before the gap they do not need to say again. Everything after it is what they fill in. It is the quickest form there is, and it sounds like interest rather than confusion.\n\nIt also works for the bit you heard perfectly well but cannot quite believe. \"Four hundred and fifty?\" is a question, even without a question word in it.\n\nTypical phrases: \"The — sorry, the what?\", \"Quarter to what?\", \"Her brother?\", \"Clear the what?\"\n\nThree ways to echo:\n\n1. Up to the gap — repeat what you heard and stop where it went. \"Quarter to — quarter to what?\"\n\n2. The one word — say it back with a question in your voice. \"A PO?\"\n\n3. The surprise — echo the part you did not expect. \"Four hundred and fifty?\"\n\nMindset: an echo is not a sign you were not listening. It is proof of exactly how much you heard.",
+      inputs: [
+        { q: "Your manager says, \"Get the numbers to Mark before the—\" and a phone rings.", a: "\"Before the — sorry, before what?\"", bundle: 'free' },
+        { q: "The receptionist says, \"Come in at quarter to—\" and the line cuts out.", a: "\"Quarter to — quarter to what?\"", bundle: 'free' },
+        { q: "In your friend's story, a brother turns up that you did not know existed.", a: "\"Her brother? I didn't know she had one.\"", bundle: 'free' },
+        { q: "Your colleague says to \"raise a PO\", and you are not sure you heard it right.", a: "\"Raise a PO?\"", bundle: 'free' },
+        { q: "The mechanic says \"four-fifty\", and you were expecting half that.", a: "\"Four hundred and fifty?\"", bundle: 'free' },
+        { q: "Across the table someone says \"the Leeds trip\", and everyone laughs.", a: "\"The Leeds trip?\"", bundle: 'pro' },
+        { q: "The IT person says \"clear the cache\", and you only caught \"clear the\".", a: "\"Clear the — clear the what?\"", bundle: 'pro' },
+        { q: "Your partner says, \"Don't forget Saturday.\" You thought Saturday was free.", a: "\"Saturday? What's on Saturday?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Offer Your Best Guess",
+      guideFront: "Say what you think they meant when...",
+      guideBack: "A guess they can say yes to",
+      description: "Say what you think they meant, as a question. \"The budget meeting, you mean?\" If you are right, they say yes. If you are wrong, they say which one it was — and either way it took one breath.\n\nIt works because it does most of the work for them. An open \"what?\" makes them guess what went wrong. A guess only needs a yes or a no. In recordings of real conversations, this is the most common way people ask about something they did not follow — and the one that gets things back on track fastest.\n\nBeing wrong is fine. A wrong guess still shows them where you went, which tells them what to fix.\n\nTypical phrases: \"You mean…?\", \"The one with…?\", \"Is that the…?\", \"So — the Tuesday one?\"\n\nThree kinds of guess:\n\n1. The straight guess — name what you think it is. \"Sara's brother, you mean?\"\n\n2. The either-or — give them two to pick from. \"The Tuesday meeting or the Friday one?\"\n\n3. The check on a slip — when what they said does not fit. \"Thursday? Or did you mean Tuesday?\"\n\nMindset: a wrong guess is not a mistake. It is the fastest way to the right answer.",
+      inputs: [
+        { q: "Your manager says \"before the thing on Tuesday\". You think it is the budget meeting.", a: "\"The budget meeting, you mean?\"", bundle: 'free' },
+        { q: "The receptionist says \"the other entrance\". You remember one by the car park.", a: "\"The one by the car park?\"", bundle: 'free' },
+        { q: "Your friend's story mentions \"her brother\", and you think it means Sara's.", a: "\"Sara's brother, you mean?\"", bundle: 'free' },
+        { q: "Your colleague says to \"raise a PO\". You think it is some kind of order form.", a: "\"A PO — that's the purchase order form?\"", bundle: 'free' },
+        { q: "The mechanic says \"more if it's the other one\". You think he means the pump.", a: "\"The other one being the pump?\"", bundle: 'free' },
+        { q: "The table laughs about \"the Leeds trip\". You think it is the one with the flat tyre.", a: "\"Is this the trip with the flat tyre?\"", bundle: 'pro' },
+        { q: "The IT person says to sign in \"with the new one\". You think they mean the password.", a: "\"With the new password, you mean?\"", bundle: 'pro' },
+        { q: "Your partner says to sort \"the thing with your mum\" before Saturday. You think it is the birthday present.", a: "\"The birthday present, you mean?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask About the Word",
+      guideFront: "Ask what one word means when...",
+      guideBack: "A question about the word",
+      description: "You heard every word, and one of them is the problem. Pick it out and ask about it. \"Sure — what do you mean by run-rate?\"\n\nIt works because most confusion hangs on a single word. An abbreviation, a piece of office talk, a family joke, or an ordinary word used in a way you do not recognise. Asking about the whole sentence makes them explain everything. Asking about the word makes them explain one thing.\n\nNobody minds explaining their own words. People mostly do not notice they are using one you do not know.\n\nTypical phrases: \"What's AP?\", \"What do you mean by…?\", \"Sorry — what's a …?\", \"Shot meaning what, exactly?\"\n\nThree kinds of word to ask about:\n\n1. The word you do not know — an abbreviation, a technical term. \"What's the cache?\"\n\n2. The word only they use — a nickname, a joke, a place. \"Sorry — what's a Kevin?\"\n\n3. The ordinary word that could mean two things — \"sorted\", \"soon\", \"a bit\". \"What does 'sort it' mean here?\"\n\nMindset: if a word stops you, it will stop you again later. Ask the first time.",
+      inputs: [
+        { q: "Your manager wants \"the run-rate numbers\" for Mark. You do not know the term.", a: "\"Sure — what do you mean by run-rate?\"", bundle: 'free' },
+        { q: "On the phone, the receptionist asks you to bring \"your referral\". You are not sure what counts.", a: "\"Sorry, what do you mean by the referral?\"", bundle: 'free' },
+        { q: "Your friend says it was \"obviously\" over once the dog turned up. You do not see why.", a: "\"What do you mean, obviously?\"", bundle: 'free' },
+        { q: "Your colleague says it has to \"go to AP\" after that.", a: "\"Sorry — what's AP?\"", bundle: 'free' },
+        { q: "The mechanic says the valve is \"shot\".", a: "\"Shot meaning what, exactly? Can I still drive it?\"", bundle: 'free' },
+        { q: "Someone calls the Leeds trip \"a proper Kevin\", and everyone laughs.", a: "\"Sorry — what's a Kevin?\"", bundle: 'pro' },
+        { q: "The IT person says to \"clear the cache\". You have no idea what that is.", a: "\"What's the cache, and where do I find it?\"", bundle: 'pro' },
+        { q: "On the way out, your partner says you need to \"sort\" the thing with your mum.", a: "\"What does 'sort it' mean here?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Own the Miss",
+      guideFront: "Put the gap on your side when...",
+      guideBack: "The question, with the blame on you",
+      description: "Ask, and say the gap is yours. \"That's me — I drifted halfway. What's needed for Tuesday?\" It takes the sting out of asking when asking might sound like criticism.\n\nIt works because \"I don't understand\" can be heard as \"you explained it badly\". Most of the time nobody hears it that way — but with someone senior, someone who has already explained twice, or someone who is proud of how they put it, the risk is real. A few words that put the gap on your side make the question easy to answer.\n\nKeep it light and short. One clause, then the question. A long apology makes the gap bigger than it is.\n\nTypical phrases: \"That's me —\", \"I've lost track —\", \"I think I'm missing some background —\", \"I'm sure you've told me —\"\n\nThree ways to own it:\n\n1. Your attention — \"I drifted halfway, sorry. What was the second part?\"\n\n2. Your background — \"I think I'm missing some history here — what happened in Leeds?\"\n\n3. Your memory — \"That's more than I can hold at once. Can I write the first one down?\"\n\nMindset: owning the miss is not putting yourself down. It is making the question cheap to answer.",
+      inputs: [
+        { q: "Your manager explains the Mark thing, and you drifted halfway through.", a: "\"That's me — I drifted halfway. What's needed for Tuesday?\"", bundle: 'free' },
+        { q: "The receptionist has already explained the entrance twice.", a: "\"I've lost it again, sorry — that's on me. Which entrance?\"", bundle: 'free' },
+        { q: "You lost the thread of your friend's story somewhere between the brother and the dog.", a: "\"I've lost track of who's who — whose brother was it?\"", bundle: 'free' },
+        { q: "Your colleague assumes you know how orders work here.", a: "\"I think I'm missing some background — I've never raised a PO.\"", bundle: 'free' },
+        { q: "The mechanic explains it in detail and you understood none of it.", a: "\"I don't know much about cars, so bear with me — is it safe to drive?\"", bundle: 'free' },
+        { q: "Everyone laughs at the Leeds joke, and you are the only one who was not there.", a: "\"I think I'm missing some history here — what happened in Leeds?\"", bundle: 'pro' },
+        { q: "The IT person gave three steps, and you only held on to one.", a: "\"That's more than I can hold at once — can I write the first one down?\"", bundle: 'pro' },
+        { q: "Your partner mentions Saturday and your mum as if they have told you before.", a: "\"I'm sure you've told me and I've lost it — what's Saturday?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Come Back to It",
+      guideFront: "Go back to it later when...",
+      guideBack: "A step back to the earlier point",
+      description: "The moment passed and you let it. Go back to it anyway — a few sentences later, at the end of their turn, or the next day. \"Quick one about earlier — what's happening on Tuesday?\"\n\nIt works because the question is still just as small. What makes it feel big is the gap in time, and the fear that you should have asked straight away. You should not always have: it is often right to let someone finish a story before asking who the brother was.\n\nThe only rule is to come back before the misunderstanding does any damage. An hour later is fine. After you have sent the wrong numbers to the wrong Mark is not.\n\nTypical phrases: \"Going back a second —\", \"Quick one about earlier —\", \"Before I forget —\", \"Can I check something from yesterday?\"\n\nThree moments to come back:\n\n1. A few sentences later — \"Sorry, going back — whose brother was it?\"\n\n2. At the end of their turn — \"Before we move on — what did you mean by AP?\"\n\n3. Later, by message or a call — \"Hi, just checking what you said earlier about the entrance.\"\n\nMindset: late is almost always better than never. The question has not got bigger. It only feels that way.",
+      inputs: [
+        { q: "You nodded at the thing about Mark and Tuesday. An hour later you still do not know.", a: "\"Quick one about earlier — what's happening on Tuesday?\"", bundle: 'free' },
+        { q: "You have hung up on the receptionist, and you do not know which entrance they meant.", a: "\"Hi, I called a minute ago — which entrance did you say?\"", bundle: 'free' },
+        { q: "Your friend is two sentences past the brother, and you are still lost.", a: "\"Sorry, going back a second — whose brother was it?\"", bundle: 'free' },
+        { q: "Your colleague has moved on to lunch plans. You still do not know what AP is.", a: "\"Before I forget — what did you mean by AP earlier?\"", bundle: 'free' },
+        { q: "You said \"fine\" to the mechanic and hung up without understanding the price.", a: "\"Hi, just checking what you said — is the four-fifty with the valve included?\"", bundle: 'free' },
+        { q: "The table has moved on from the Leeds joke, and you would still like to know.", a: "\"What was the Leeds thing, by the way?\"", bundle: 'pro' },
+        { q: "The IT person has gone, and signing in \"with the new one\" is not working.", a: "\"Sorry, quick one — when you said the new one, which login did you mean?\"", bundle: 'pro' },
+        { q: "Your partner mentioned Saturday and your mum on Tuesday. It is now Friday, and you still do not know.", a: "\"Can I check something from Tuesday — what's happening on Saturday?\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -13606,6 +13720,56 @@ const collectionsModeData = {
         { q: "She hasn't responded to your text in hours and you feel anxious.", a: "\"When I don't hear back from you, I notice I start thinking you're mad at me, and I feel tense.\" [The \"When You...\" Stem]", bundle: 'pro' },
         { q: "You notice your voice is becoming harsh and demanding.", a: "\"Can I get a do-over? My tone came out really harsh just now, and that's not what I intended.\" [The Do-Over]", bundle: 'pro' },
         { q: "She asks for your opinion on a minor decision she is obsessing over.", a: "\"I like the blue one better. That's my preference.\" [Narrowing the Scope]", bundle: 'pro' },
+      ]
+    },
+  ],
+  askingforclarity: [
+    {
+      name: "Match the Gap",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Say You Missed It**, **Ask Which One**, **Repeat the Unclear Part**, **Offer Your Best Guess** and **Ask About the Word** — the five ways to ask, and which one fits what you missed.\n\n• **Say You Missed It** — you got nothing at all\n• **Ask Which One** — you got it, but one piece could be two things\n• **Repeat the Unclear Part** — you got the start and lost the rest\n• **Offer Your Best Guess** — you think you know, and want a yes\n• **Ask About the Word** — one word is the problem\n\nThe question that decides it: how much did I get? The more you got, the less you need to send back.\n\nThe usual wrong choice is \"what?\" when you had most of it. It makes them repeat everything to fix one piece.\n\nMindset: ask about the gap, not the whole sentence.",
+      inputs: [
+        { q: "A waiter reads out the specials, and you catch none of it over the music.", a: "\"Sorry, I didn't catch any of that over the music — again?\" [Say You Missed It]", bundle: 'pro', guideBack: "A plain request to hear it again" },
+        { q: "A colleague says, \"Ask Sam to cover it.\" There are two Sams on the team.", a: "\"Which Sam?\" [Ask Which One]", bundle: 'pro', guideBack: "A question about one missing piece" },
+        { q: "A friend says, \"We're meeting at the—\" and a lorry drowns out the rest.", a: "\"At the — at the what?\" [Repeat the Unclear Part]", bundle: 'pro', guideBack: "Their words, with a question mark" },
+        { q: "Your landlord says someone is coming about \"the thing in the bathroom\".", a: "\"The leak under the sink, you mean?\" [Offer Your Best Guess]", bundle: 'pro', guideBack: "A guess they can say yes to" },
+        { q: "Your doctor says your results are \"unremarkable\".", a: "\"What does unremarkable mean here?\" [Ask About the Word]", bundle: 'pro', guideBack: "A question about the word" },
+        { q: "Your neighbour says the bins go out \"the day after the other ones\".", a: "\"The day after the green ones — so Thursday?\" [Offer Your Best Guess]", bundle: 'pro', guideBack: "A guess they can say yes to" },
+        { q: "Your coach tells you to \"hinge more\", and you do not know the word.", a: "\"What do you mean by hinge?\" [Ask About the Word]", bundle: 'pro', guideBack: "A question about the word" },
+        { q: "Your sister says, \"She's coming too.\" You have no idea who.", a: "\"Who's she?\" [Ask Which One]", bundle: 'pro', guideBack: "A question about one missing piece" },
+      ]
+    },
+    {
+      name: "Keep It Friendly",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Own the Miss**, **Come Back to It** and **Offer Your Best Guess** — for when the question is easy but asking it feels awkward.\n\n• **Own the Miss** — the awkward part is them: someone senior, a third explanation, a proud explainer\n• **Come Back to It** — the awkward part is the time: you nodded, and the moment passed\n• **Offer Your Best Guess** — you have an idea, so a yes is all you need\n\nThe question that decides it: what makes this awkward — the person, or the timing? If it is neither, a guess is the lightest thing you can ask.\n\nThe usual wrong choice is saying nothing at all. It feels like the polite option and is almost always the expensive one.\n\nMindset: the question is small. Make it easy to answer, and ask it.",
+      inputs: [
+        { q: "Your boss has explained the new rota twice, and you still do not get it.", a: "\"That's me, not the explanation — who covers Fridays?\" [Own the Miss]", bundle: 'pro', guideBack: "The question, with the blame on you" },
+        { q: "You nodded through the whole briefing, and now you are at your desk, unsure.", a: "\"Quick one about the briefing — did you want the report by Wednesday?\" [Come Back to It]", bundle: 'pro', guideBack: "A step back to the earlier point" },
+        { q: "A senior colleague uses a phrase you half understand, in front of the team.", a: "\"When you say phase two — that's after the launch?\" [Offer Your Best Guess]", bundle: 'pro', guideBack: "A guess they can say yes to" },
+        { q: "Your father-in-law explains a rule of the card game for the third time.", a: "\"Bear with me, it's not going in tonight — does the ace count high?\" [Own the Miss]", bundle: 'pro', guideBack: "The question, with the blame on you" },
+        { q: "Yesterday a friend mentioned \"the news\", and you pretended to know.", a: "\"Can I go back to yesterday — what was the news you mentioned?\" [Come Back to It]", bundle: 'pro', guideBack: "A step back to the earlier point" },
+        { q: "The expert on the call is clearly proud of the explanation. You are lost.", a: "\"I think I'm missing some background — could you give me the short version?\" [Own the Miss]", bundle: 'pro', guideBack: "The question, with the blame on you" },
+        { q: "A teacher at parents' evening mentions \"the plan\". You think it is the reading plan.", a: "\"The reading plan, you mean?\" [Offer Your Best Guess]", bundle: 'pro', guideBack: "A guess they can say yes to" },
+        { q: "Your colleague said something important at the end of a meeting, and you are both leaving.", a: "\"Before you go — what did you mean about the deadline?\" [Come Back to It]", bundle: 'pro', guideBack: "A step back to the earlier point" },
+      ]
+    },
+    {
+      name: "All Seven Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order real confusion arrives rather than the order they were taught.\n\nThe seven fall into two groups. Five are ways to ask, and they run from sending everything back to asking for a yes: **Say You Missed It**, **Repeat the Unclear Part**, **Ask Which One**, **Ask About the Word** and **Offer Your Best Guess**. Two are about how and when: **Own the Miss** when asking might sound like criticism, and **Come Back to It** when the moment has passed.\n\nIf you are unsure, ask how much you got — and then whether anything makes this awkward.\n\nMindset: the best question is the one that leaves the least for them to do.",
+      inputs: [
+        { q: "A friend leaves a voice message you cannot hear at all over the wind.", a: "\"Your message was all wind — could you say it again?\" [Say You Missed It]", bundle: 'pro', guideBack: "A plain request to hear it again" },
+        { q: "Your manager says, \"Put it in the folder.\" There are four folders.", a: "\"Which folder?\" [Ask Which One]", bundle: 'pro', guideBack: "A question about one missing piece" },
+        { q: "A friend says, \"We sold the—\" and the train goes into a tunnel.", a: "\"You sold the what?\" [Repeat the Unclear Part]", bundle: 'pro', guideBack: "Their words, with a question mark" },
+        { q: "A colleague says, \"Let's do it after the thing.\" You think she means lunch.", a: "\"After lunch, you mean?\" [Offer Your Best Guess]", bundle: 'pro', guideBack: "A guess they can say yes to" },
+        { q: "Your accountant says you will need to \"accrue it\".", a: "\"Sorry — what does accrue mean?\" [Ask About the Word]", bundle: 'pro', guideBack: "A question about the word" },
+        { q: "A trainer has explained the exercise twice already.", a: "\"That's me, I'm not getting it — could you show me once?\" [Own the Miss]", bundle: 'pro', guideBack: "The question, with the blame on you" },
+        { q: "Near the end of a long story, you realise you never found out who Tom was.", a: "\"Before you go on — who was Tom?\" [Come Back to It]", bundle: 'pro', guideBack: "A step back to the earlier point" },
+        { q: "A shop assistant says your size is \"at the other store\".", a: "\"The one on the high street?\" [Offer Your Best Guess]", bundle: 'pro', guideBack: "A guess they can say yes to" },
       ]
     },
   ],
