@@ -4032,6 +4032,14 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.29.06', date: 'September 2026', title: 'The user-facing list catches up', audience: 'dev',
+    items: [
+      '<strong>WHATS_NEW_USER</strong> had not been touched since v1.28.55. Everything between then and here was either internal or already covered by the entry about the six modes — with one exception, which is now written: <strong>Stay on the same card</strong>, the sideways-swipe setting from v1.28.99.',
+      'Nothing else from the cleanup went in, by the list’s own rules: deck names, step fronts and mindset voice are improvements to material that was already there, and the user list carries features rather than corrections.',
+      '<strong>If the toggle moves to developer settings before release, this entry moves with it.</strong> A user-facing note about a switch nobody can find is worse than no note.',
+    ],
+  },
+  {
     version: 'v1.29.05', date: 'September 2026', title: 'Mindset deck names, the last round — twenty-one packs', audience: 'dev',
     items: [
       '<strong>74 decks renamed</strong>, finishing the sweep. Every mindset deck in the release scope is now named for the area its beliefs are about rather than the insight they lead to. <strong>Conflict Emotions</strong> had five in a row — A Feeling Points at a Need, Describe Do Not Diagnose, Finish the Sentence, They Have a Version Too, One Word Is Not Enough — now <strong>Needs</strong>, <strong>Diagnosis</strong>, <strong>Stopping Halfway</strong>, <strong>Their Version</strong> and <strong>The Feeling Word</strong>.',
@@ -4803,6 +4811,14 @@ const WHATS_NEW = [
 //   • Lägg bara till när något nytt är värt att öppna appen för. De flesta
 //     versioner ska ALDRIG stå här.
 const WHATS_NEW_USER = [
+  {
+    date: 'September 2026', title: 'Stay on the same card',
+    items: [
+      'A new switch in the training settings. Swiping sideways normally means <em>next strategy, back to card one</em>. With this on it means <em>next strategy, same card</em> — card six of eight stays card six of eight, in both directions.',
+      'Some packs are written so that the same card number is the same situation in every strategy. <strong>Storytelling with the Six W’s</strong> is the clearest: one event, six ways of telling it. <strong>Role Based Humour</strong> gives seven characters the same line to answer. In those packs a sideways swipe becomes its own exercise — one situation, several ways to handle it, side by side.',
+      'Off to begin with, and remembered on your device.',
+    ],
+  },
   {
     date: 'September 2026', title: 'Choose how much the guide tells you',
     items: [
