@@ -4032,6 +4032,16 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.29.04', date: 'September 2026', title: 'Mindset decks that changed speaker halfway through', audience: 'dev',
+    items: [
+      'Archetype 9 has said since July that a mindset card is <strong>a thought on the front and one sentence you could say to yourself on the back</strong>. The volume sweep filled several four-card decks up to eight in that form — and left the original four in the old one. The result was <strong>19 decks where card 4 was quoted self-talk and card 5 was the coach talking to you</strong>. Two different speakers, two different tenses, one deck.',
+      '<strong>Setup Question</strong> was the clearest case. Card 4: <em>“Curiosity works on a flat day. Being interesting does not.”</em> Card 6: <em>They set the first subject. You set the second.</em> Both true, neither in the same voice.',
+      'All 19 now converge: the front is the thought in his own words, unquoted, and the back is one quoted sentence in the first person. <strong>256 cards across 32 decks</strong>, in seven packs — Agreeing, Handle Interruptions, How to Interrupt, Setup Question, Storytelling with the Six W’s, Describe Things and Giving Counterexamples.',
+      'The thirteen decks that were internally consistent but in the <em>other</em> form went with them, because leaving them would have moved the inconsistency from inside a deck to between decks in the same pack. Those seven packs now run one voice from end to end.',
+      'Measured after: <strong>no deck in the release scope changes speaker mid-deck, and no pack mixes the two forms.</strong> The remaining 32 packs are all consistently in the older form and are a separate job.',
+    ],
+  },
+  {
     version: 'v1.29.03', date: 'September 2026', title: 'The sequence step that answered itself — 271 of them', audience: 'dev',
     items: [
       'A sequence step hides its strategy name: the front carries only the stimulus, and the name reappears in brackets on the back once you turn it. That has been the rule since v1.27.88 — but the split only runs when the step carries <em>its own</em> guide, and <strong>271 steps of 1,692 had none</strong>. Those fronts read “Step 2 · Normalise the Reaction — they say…”: the answer, printed above the question. All 271 now split.',
