@@ -4032,6 +4032,17 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.29.05', date: 'September 2026', title: 'Mindset deck names, the last round — twenty-one packs', audience: 'dev',
+    items: [
+      '<strong>74 decks renamed</strong>, finishing the sweep. Every mindset deck in the release scope is now named for the area its beliefs are about rather than the insight they lead to. <strong>Conflict Emotions</strong> had five in a row — A Feeling Points at a Need, Describe Do Not Diagnose, Finish the Sentence, They Have a Version Too, One Word Is Not Enough — now <strong>Needs</strong>, <strong>Diagnosis</strong>, <strong>Stopping Halfway</strong>, <strong>Their Version</strong> and <strong>The Feeling Word</strong>.',
+      'The packs built during the volume sweep mostly use the <em>The X Mindset</em> form, which archetype 9 asks for. That form is kept — only the X changed where it was an answer rather than an area: <strong>The No Instant Verdict Mindset</strong> is now <strong>The Instant Verdict Mindset</strong>, and <strong>The Thanking Is Not Agreeing Mindset</strong> is <strong>The Thanking Mindset</strong>.',
+      'Two packs needed nothing: <strong>Assertive Communication Pt. 2</strong>, whose four decks are single words — Responsibilities, Consistency, Decisions, Obligations — and <strong>Setup Statement</strong>.',
+      'Names that state the belief stay. <strong>Being the Easy-Going One</strong>, <strong>Not Being Quick</strong>, <strong>Always Having One Ready</strong> — those are the decks built on a belief that feels like a strength, and naming the belief is naming the area.',
+      'The Memorize decks moved with them, 210 references in all, and eleven of their summary lines were rewritten where the old deck name had been doing work in the sentence.',
+      'Across the three rounds: <strong>135 decks renamed in 41 packs.</strong>',
+    ],
+  },
+  {
     version: 'v1.29.04', date: 'September 2026', title: 'Mindset decks that changed speaker halfway through', audience: 'dev',
     items: [
       'Archetype 9 has said since July that a mindset card is <strong>a thought on the front and one sentence you could say to yourself on the back</strong>. The volume sweep filled several four-card decks up to eight in that form — and left the original four in the old one. The result was <strong>19 decks where card 4 was quoted self-talk and card 5 was the coach talking to you</strong>. Two different speakers, two different tenses, one deck.',

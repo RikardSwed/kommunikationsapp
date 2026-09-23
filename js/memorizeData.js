@@ -1077,15 +1077,15 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The five beliefs and stances in this pack:\n\n• **Sorry Comes After Understanding** — the instinct is to lead with it\n• **Specific Beats Sincere** — sincerity is not transmitted by trying harder\n• **The Plan Is the Proof** — the only part that costs you anything later\n• **Do Not Make Them Comfort You** — a long distressed apology inverts the roles\n• **I Would Be Guessing** — naming their feeling feels presumptuous\n\nThe fourth is the one people never see themselves doing.",
+      description: "The five beliefs and stances in this pack:\n\n• **Order** — the instinct is to lead with it\n• **Sincerity** — it is not transmitted by trying harder\n• **The Plan** — the only part that costs you anything later\n• **Your Own Distress** — a long distressed apology inverts the roles\n• **I Would Be Guessing** — naming their feeling feels presumptuous\n\nThe fourth is the one people never see themselves doing.",
       cards: [
-        { q: "What are the five mindset areas in this pack?", a: "Sorry Comes After Understanding, Specific Beats Sincere, The Plan Is the Proof, Do Not Make Them Comfort You, and I Would Be Guessing.", bundle: 'pro' },
+        { q: "What are the five mindset areas in this pack?", a: "Order, Sincerity, The Plan, Your Own Distress, and I Would Be Guessing.", bundle: 'pro' },
         { q: "Why does leading with the apology feel right?", a: "It looks like the fastest route to resolution, which is exactly why it is the commonest failure.", bundle: 'pro' },
         { q: "How is sincerity actually communicated?", a: "By detail. Knowing which part mattered is what proves you thought about it.", bundle: 'pro' },
         { q: "Which part of an apology costs you something in future?", a: "The sentence about what will be different.", bundle: 'pro' },
         { q: "What happens in a long, distressed apology?", a: "The injured person ends up reassuring the one who caused it.", bundle: 'pro' },
         { q: "Naming their feeling feels presumptuous. What do you do instead?", a: "Ask. \"I don't want to guess — how did that feel?\"", bundle: 'pro' },
-        { q: "Which of the five do people never notice themselves doing?", a: "Do Not Make Them Comfort You.", bundle: 'pro' },
+        { q: "Which of the five do people never notice themselves doing?", a: "Your Own Distress.", bundle: 'pro' },
         { q: "Can you apologise well and still disagree?", a: "Yes. Apologise precisely for your part, and keep the substance separate.", bundle: 'pro' },
       ]
     },
@@ -1205,16 +1205,16 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The four beliefs and stances in this pack:\n\n• **Attention Is the Gift** — you do not need to be interesting\n• **Say It Out Loud** — most compliments are thought and never said\n• **Being Wrong Works Too** — aim to be interesting, not accurate\n• **Only Ask If You Want the Answer** — the question carries an obligation\n\nThe first three are about starting. The fourth is the only one that tells you not to.",
+      description: "The four beliefs and stances in this pack:\n\n• **Attention** — you do not need to be interesting\n• **Unsaid Compliments** — most compliments are thought and never said\n• **Guessing Wrong** — aim to be interesting, not accurate\n• **The Passing Greeting** — the question carries an obligation\n\nThe first three are about starting. The fourth is the only one that tells you not to.",
       cards: [
-        { q: "What are the four mindset areas in this pack?", a: "Attention Is the Gift, Say It Out Loud, Being Wrong Works Too, and Only Ask If You Want the Answer.", bundle: 'pro' },
+        { q: "What are the four mindset areas in this pack?", a: "Attention, Unsaid Compliments, Guessing Wrong, and The Passing Greeting.", bundle: 'pro' },
         { q: "What do you have to be, if not interesting?", a: "Paying attention. It is a much lower bar and it works better.", bundle: 'pro' },
         { q: "What does an unsaid compliment cost?", a: "A good thing you noticed simply never existed for the other person.", bundle: 'pro' },
         { q: "What does saying it cost?", a: "About two seconds of mild exposure.", bundle: 'pro' },
         { q: "What should a guess aim at?", a: "Being interesting, not being accurate.", bundle: 'pro' },
         { q: "Why is asking how somebody is on your way past worse than not asking?", a: "You signal interest and then withdraw it, and that is remembered.", bundle: 'pro' },
         { q: "What do you do if you have not got time?", a: "Use the greeting version and mean that instead. Come back later.", bundle: 'pro' },
-        { q: "Which of the four tells you not to start?", a: "Only Ask If You Want the Answer.", bundle: 'pro' },
+        { q: "Which of the four tells you not to start?", a: "The Passing Greeting.", bundle: 'pro' },
       ]
     },
   ],
@@ -1647,16 +1647,16 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The five beliefs and stances in this pack:\n\n• **The Deep Questions Mindset** — curiosity out loud, not an interview\n• **The Patience Mindset** — small talk is the runway\n• **The Listening Mindset** — the next question comes from their last answer\n• **The It Is Okay to Ask Mindset** — asking is a gift, not an intrusion\n• **The Staying With It Mindset** — the instinct to move somewhere safer\n\nThe last one is the only one about what you do after a question has worked.",
+      description: "The five beliefs and stances in this pack:\n\n• **The Deep Questions Mindset** — curiosity out loud, not an interview\n• **The Patience Mindset** — small talk is the runway\n• **The Listening Mindset** — the next question comes from their last answer\n• **The Intrusion Mindset** — asking is a gift, not an intrusion\n• **The Flinch Mindset** — the instinct to move somewhere safer\n\nThe last one is the only one about what you do after a question has worked.",
       cards: [
-        { q: "What are the five mindset areas in this pack?", a: "The Deep Questions Mindset, The Patience Mindset, The Listening Mindset, The It Is Okay to Ask Mindset, and The Staying With It Mindset.", bundle: 'pro' },
+        { q: "What are the five mindset areas in this pack?", a: "The Deep Questions Mindset, The Patience Mindset, The Listening Mindset, The Intrusion Mindset, and The Flinch Mindset.", bundle: 'pro' },
         { q: "What is the difference between curiosity and an interview?", a: "Curiosity is interested in them. An interview is collecting answers.", bundle: 'pro' },
         { q: "Is small talk wasted time?", a: "No. It is the runway. You need a few facts on the table before a deeper question can land.", bundle: 'pro' },
         { q: "Where should your next question come from?", a: "What they just said. If you are composing while they talk, you have stopped listening.", bundle: 'pro' },
         { q: "Is asking about what matters to somebody an intrusion?", a: "Almost never. Most people are rarely asked, and being asked properly is a gift.", bundle: 'pro' },
         { q: "They have touched something painful. What is the instinct?", a: "To move the conversation somewhere safer. That instinct is what makes it awkward.", bundle: 'pro' },
         { q: "What do you do instead?", a: "Stay with it. Ask what it was like and let them set the depth.", bundle: 'pro' },
-        { q: "Which of the five is about what happens after a question works?", a: "The Staying With It Mindset. The other four are about asking.", bundle: 'pro' },
+        { q: "Which of the five is about what happens after a question works?", a: "The Flinch Mindset. The other four are about asking.", bundle: 'pro' },
       ]
     },
   ],
@@ -2062,15 +2062,15 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The five beliefs and stances in this pack:\n\n• **The Validation Mindset** — acknowledging is not agreeing\n• **The Reasonable From There Mindset** — almost every reaction makes sense from inside the situation\n• **The Do Not Dismiss Mindset** — the small comfort that closes the subject\n• **The Specific Beats Kind Mindset** — a generic warm sentence lands as nothing\n• **The Naming It Costs Something Mindset** — saying a thing was wrong takes a position\n\nThe last one is the only one about the fourth strategy, and the only one with a cost attached.",
+      description: "The five beliefs and stances in this pack:\n\n• **The Validation Mindset** — acknowledging is not agreeing\n• **The Overreaction Mindset** — almost every reaction makes sense from inside the situation\n• **The Dismissing Mindset** — the small comfort that closes the subject\n• **The Generic Warmth Mindset** — a generic warm sentence lands as nothing\n• **The Taking a Position Mindset** — saying a thing was wrong takes a position\n\nThe last one is the only one about the fourth strategy, and the only one with a cost attached.",
       cards: [
-        { q: "What are the five mindset areas in this pack?", a: "The Validation Mindset, The Reasonable From There Mindset, The Do Not Dismiss Mindset, The Specific Beats Kind Mindset, and The Naming It Costs Something Mindset.", bundle: 'pro' },
+        { q: "What are the five mindset areas in this pack?", a: "The Validation Mindset, The Overreaction Mindset, The Dismissing Mindset, The Generic Warmth Mindset, and The Taking a Position Mindset.", bundle: 'pro' },
         { q: "What is the sentence the whole pack rests on?", a: "Validation is about acknowledging, not agreeing.", bundle: 'pro' },
         { q: "What are you crediting when you acknowledge a perspective?", a: "The route, not the destination. With what they knew, it follows.", bundle: 'pro' },
         { q: "What does a small comfort do to a subject?", a: "Closes it. \"At least it's over\" ends the conversation rather than the feeling.", bundle: 'pro' },
         { q: "Why is a generic warm sentence worse than a specific one?", a: "It could be said by somebody who was not listening, and it is heard that way.", bundle: 'pro' },
         { q: "What does naming the wrong thing cost?", a: "A position. You have said something about what happened, which the other three moves never do.", bundle: 'pro' },
-        { q: "Which of the five is about the fourth strategy?", a: "The Naming It Costs Something Mindset.", bundle: 'pro' },
+        { q: "Which of the five is about the fourth strategy?", a: "The Taking a Position Mindset.", bundle: 'pro' },
         { q: "What do the other four have in common?", a: "None of them asks you to have a view on the facts.", bundle: 'pro' },
       ]
     },
@@ -2204,15 +2204,15 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The five beliefs and stances in this pack:\n\n• **Being Heard Is Usually the Ask** — they often do not want it solved\n• **Advice Before Acknowledgement Does Not Land** — the same sentence, two effects\n• **You Do Not Have to Fix It** — the discomfort of feeling responsible\n• **Asking Is Allowed** — the idea that a good friend should just know\n• **You Are the One People Come To** — a real thing to be, and what it costs\n\nThree of the five are about the urge to be useful, which is what makes this pack hard.",
+      description: "The five beliefs and stances in this pack:\n\n• **Solving It** — they often do not want it solved\n• **Timing of Advice** — the same sentence, two effects\n• **The Outcome** — the discomfort of feeling responsible\n• **Just Knowing** — the idea that a good friend should just know\n• **You Are the One People Come To** — a real thing to be, and what it costs\n\nThree of the five are about the urge to be useful, which is what makes this pack hard.",
       cards: [
-        { q: "What are the five mindset areas in this pack?", a: "Being Heard Is Usually the Ask, Advice Before Acknowledgement Does Not Land, You Do Not Have to Fix It, Asking Is Allowed, and You Are the One People Come To.", bundle: 'pro' },
+        { q: "What are the five mindset areas in this pack?", a: "Solving It, Timing of Advice, The Outcome, Just Knowing, and You Are the One People Come To.", bundle: 'pro' },
         { q: "What do people usually want when they bring you a problem?", a: "To say it out loud in front of somebody who is not going to do anything about it.", bundle: 'pro' },
         { q: "What does the same suggestion do before and after acknowledgement?", a: "Before, it says the feeling is not the point. After, it is often exactly what they wanted.", bundle: 'pro' },
         { q: "Where does most of the discomfort in supporting somebody come from?", a: "Feeling responsible for the outcome, as though leaving them still upset is a failure.", bundle: 'pro' },
         { q: "Is asking what they need an admission of failure?", a: "No. It is faster and more accurate than guessing, and almost nobody minds being asked.", bundle: 'pro' },
         { q: "What does being the one people come to cost?", a: "It is a real thing to be — and it is easy to end up carrying it in one direction only.", bundle: 'pro' },
-        { q: "Which three of the five are about the urge to be useful?", a: "Being Heard Is Usually the Ask, Advice Before Acknowledgement, and You Do Not Have to Fix It.", bundle: 'pro' },
+        { q: "Which three of the five are about the urge to be useful?", a: "Solving It, Advice Before Acknowledgement, and The Outcome.", bundle: 'pro' },
         { q: "What is the measure of a good supportive conversation?", a: "Whether they felt less alone with it, not whether it got solved.", bundle: 'pro' },
       ]
     },
@@ -2607,16 +2607,16 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The five beliefs and stances in this pack:\n\n• **Small Beats Impressive** — the dramatic example invites the objection\n• **Do Not Invent** — every invented detail is a debt\n• **One Is Enough** — a second example answers a question nobody asked\n• **Your Own Life Counts** — one real thing beats a half-remembered statistic\n• **It Does Not Prove Anything** — true, and not a reason to go quiet\n\nTwo of the five are about not reaching for more. Two are about not reaching for less.",
+      description: "The five beliefs and stances in this pack:\n\n• **The Dramatic Example** — the biggest case invites the objection\n• **Inventing** — every invented detail is a debt\n• **Piling On** — a second example answers a question nobody asked\n• **Your Own Experience** — one real thing beats a half-remembered statistic\n• **It Does Not Prove Anything** — true, and not a reason to go quiet\n\nTwo of the five are about not reaching for more. Two are about not reaching for less.",
       cards: [
-        { q: "What are the five mindset areas in this pack?", a: "Small Beats Impressive, Do Not Invent, One Is Enough, Your Own Life Counts, and It Does Not Prove Anything.", bundle: 'pro' },
+        { q: "What are the five mindset areas in this pack?", a: "The Dramatic Example, Inventing, Piling On, Your Own Experience, and It Does Not Prove Anything.", bundle: 'pro' },
         { q: "Why does the dull example land harder?", a: "Nobody argues about whether it is typical.", bundle: 'pro' },
         { q: "What is every invented detail?", a: "A debt. When one is checked and found wrong, everything true you said goes with it.", bundle: 'pro' },
         { q: "They have not agreed after one example. What do they need?", a: "Not a second example. Usually a question about what the actual objection is.", bundle: 'pro' },
         { q: "Why do people reach for a half-remembered statistic over their own experience?", a: "They discount their own as one case. It is usually stronger and always more checkable.", bundle: 'pro' },
         { q: "An example is not evidence. Is that a reason to go quiet?", a: "No. It shows what you mean, which has to come first, and you can say plainly which of the two you are offering.", bundle: 'pro' },
-        { q: "Which two of the five are about not reaching for more?", a: "One Is Enough and Small Beats Impressive.", bundle: 'pro' },
-        { q: "Which two are about not reaching for less?", a: "Your Own Life Counts and It Does Not Prove Anything.", bundle: 'pro' },
+        { q: "Which two of the five are about not reaching for more?", a: "Piling On and The Dramatic Example.", bundle: 'pro' },
+        { q: "Which two are about not reaching for less?", a: "Your Own Experience and It Does Not Prove Anything.", bundle: 'pro' },
       ]
     },
   ],
@@ -2927,7 +2927,7 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The seven beliefs in this pack:\n\n• **A Story Is a Contribution, Not a Performance** — the pack-wide stance\n• **The Floor Is Borrowed** — a story suspends the conversation\n• **A Flat Story Costs Nothing** — the fear of the anticlimax\n• **They Want to Be In It** — told between people, not at them\n• **Always Having One Ready** — a real asset, and what it costs\n• **Ending It Early** — stopping feels like failing\n• **Stories That Are Not Yours** — the best one in your head is often somebody else's\n\nTwo of the seven are about starting. Five are about what happens once you have.",
+      description: "The seven beliefs in this pack:\n\n• **Performance** — a story has to be worth the attention\n• **The Floor Is Borrowed** — a story suspends the conversation\n• **The Anticlimax** — it will land on nothing\n• **Telling At People** — told between people, not at them\n• **Always Having One Ready** — a real asset, and what it costs\n• **Ending It Early** — stopping feels like failing\n• **Stories That Are Not Yours** — the best one in your head is often somebody else's\n\nTwo of the seven are about starting. Five are about what happens once you have.",
       cards: [
         { q: "How many mindset decks does this pack have, and what do they split into?", a: "Seven. Two are about starting a story; five are about what you do once you have.", bundle: 'pro' },
         { q: "What is a story, in terms of the conversation?", a: "A contribution, not a performance. The floor is borrowed.", bundle: 'pro' },
@@ -3248,7 +3248,7 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The eight beliefs in this pack, and what each one does:\n\n• **Not Saying It Is Not Kind** — the central one\n• **The Behaviour, Not the Person** — where the whole method lives\n• **Less Is Usually Enough** — the case you built and did not need\n• **You Might Be Wrong About Why** — your theory about the cause\n• **Being the Easy-Going One** — a real quality, and what it costs\n• **There Is Never a Good Moment** — timing as respectable avoidance\n• **When It Is Not Your Place** — a real constraint and the best excuse\n• **Raising It Twice** — the second conversation\n\nFour of the eight are reasons not to speak. That is the shape of the problem.",
+      description: "The eight beliefs in this pack, and what each one does:\n\n• **Staying Quiet** — silence feels like the considerate option\n• **Character Judgements** — an observation turns into a verdict\n• **Building a Case** — the case you built and did not need\n• **The Cause** — your theory about the cause\n• **Being the Easy-Going One** — a real quality, and what it costs\n• **There Is Never a Good Moment** — timing as respectable avoidance\n• **When It Is Not Your Place** — a real constraint and the best excuse\n• **Raising It Twice** — the second conversation\n\nFour of the eight are reasons not to speak. That is the shape of the problem.",
       cards: [
         { q: "How many mindset decks does this pack have?", a: "Eight — the most in the library, and four of them are reasons not to speak at all.", bundle: 'pro' },
         { q: "Why is staying quiet not the kind option?", a: "They carry on doing it, other people work around it, and somebody eventually says it worse.", bundle: 'pro' },
@@ -3404,9 +3404,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The six beliefs and stances in this pack:\n\n• **The Receiving-Feedback Mindset** — information about something you did\n• **The Thanking Is Not Agreeing Mindset** — a thank-you commits you to nothing\n• **The Understanding Without Agreeing Mindset** — describing a view is not signing up to it\n• **The No Instant Verdict Mindset** — you do not have to know yet\n• **The Time Is Not Avoidance Mindset** — a pause with a date on it\n• **The Taking It Well Mindset** — composure that quietly replaces the change\n\nThe last one is the only one aimed at somebody who is already good at this.",
+      description: "The six beliefs and stances in this pack:\n\n• **The Receiving-Feedback Mindset** — information about something you did\n• **The Thanking Mindset** — a thank-you commits you to nothing\n• **The Their Side Mindset** — describing a view is not signing up to it\n• **The Instant Verdict Mindset** — you do not have to know yet\n• **The Asking for Time Mindset** — a pause with a date on it\n• **The Taking It Well Mindset** — composure that quietly replaces the change\n\nThe last one is the only one aimed at somebody who is already good at this.",
       cards: [
-        { q: "What are the six mindset areas in this pack?", a: "The Receiving-Feedback Mindset, Thanking Is Not Agreeing, Understanding Without Agreeing, No Instant Verdict, Time Is Not Avoidance, and Taking It Well.", bundle: 'pro' },
+        { q: "What are the six mindset areas in this pack?", a: "The Receiving-Feedback Mindset, The Thanking Mindset, The Their Side Mindset, The Instant Verdict Mindset, The Asking for Time Mindset, and The Taking It Well Mindset.", bundle: 'pro' },
         { q: "What is nearly everything that goes wrong caused by?", a: "Treating feedback as a judgement on your worth rather than information about one thing you did.", bundle: 'pro' },
         { q: "What are the three things a thank-you is not?", a: "Not agreement, not an apology, and not weakness.", bundle: 'pro' },
         { q: "What fear blocks the most useful move in the pack?", a: "That understanding them means losing the argument.", bundle: 'pro' },
@@ -4028,9 +4028,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The four beliefs and stances in this pack:\n\n• **Guide Rather Than Push** — arguing harder almost always produces less\n• **One Go, Then Stop** — people change their minds afterwards, in the quiet\n• **Nobody Has to Be Wrong** — much resistance is about the previous position\n• **Where Influence Stops** — the same moves work on a bad idea\n\nThe last one is a limit on the pack itself, and it is there because the other three work.",
+      description: "The four beliefs and stances in this pack:\n\n• **Pushing Harder** — arguing harder almost always produces less\n• **Repeating It** — people change their minds afterwards, in the quiet\n• **Being Wrong** — much resistance is about the previous position\n• **Where Influence Stops** — the same moves work on a bad idea\n\nThe last one is a limit on the pack itself, and it is there because the other three work.",
       cards: [
-        { q: "What are the four mindset areas in this pack?", a: "Guide Rather Than Push, One Go Then Stop, Nobody Has to Be Wrong, and Where Influence Stops.", bundle: 'pro' },
+        { q: "What are the four mindset areas in this pack?", a: "Pushing Harder, Repeating It, Being Wrong, and Where Influence Stops.", bundle: 'pro' },
         { q: "What does arguing harder usually produce?", a: "More resistance. More reasons and more emphasis almost never move anybody.", bundle: 'pro' },
         { q: "When do people actually change their minds?", a: "Afterwards, in the quiet, without an audience.", bundle: 'pro' },
         { q: "What is a lot of resistance really about?", a: "That agreeing would mean admitting the previous position was wrong.", bundle: 'pro' },
@@ -4198,7 +4198,7 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The seven beliefs and stances in this pack:\n\n• **The Aim Is Not to Win** — the pack-wide stance\n• **Positions Hide Needs** — a position is a conclusion already drawn\n• **Say What You Want First** — the negotiations lost by people who never entered them\n• **Check It Twice** — \"that'll do\" is the dangerous moment\n• **Being the Reasonable One** — a real virtue, and what it costs\n• **Splitting the Difference** — fairness that stops working in a month\n• **Naming a Limit** — a wall said out loud feels like aggression\n\nThree of the seven are about the agreement you should not have made.",
+      description: "The seven beliefs and stances in this pack:\n\n• **Winning** — a contest makes both sides defend positions\n• **Positions** — a position is a conclusion already drawn\n• **Never Entering** — the negotiations lost by people who never entered them\n• **Settling Early** — \"that'll do\" is the dangerous moment\n• **Being the Reasonable One** — a real virtue, and what it costs\n• **Splitting the Difference** — fairness that stops working in a month\n• **Naming a Limit** — a wall said out loud feels like aggression\n\nThree of the seven are about the agreement you should not have made.",
       cards: [
         { q: "How many mindset decks does this pack have?", a: "Seven, and three of them are about agreements you should not have made.", bundle: 'pro' },
         { q: "What happens once a discussion feels like a contest?", a: "Both people defend positions instead of looking for answers, and a position defended for ten minutes is hard to leave.", bundle: 'pro' },
@@ -4979,9 +4979,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The five beliefs and stances in this pack:\n\n• **The Emotion Labelling Mindset** — naming gives you distance, not the wheel\n• **The No Judgement Mindset** — no wrong feeling, only inaccurate words\n• **The Signals Mindset** — the body works it out before you do\n• **The Offering Not Telling Mindset** — a word to try on, not a diagnosis\n• **The Keeping It Together Mindset** — composure, and what it costs\n\nThe last one is the only one that does not dispute the belief. It agrees with it and shows the bill.",
+      description: "The five beliefs and stances in this pack:\n\n• **The Emotion Labelling Mindset** — naming gives you distance, not the wheel\n• **The No Judgement Mindset** — no wrong feeling, only inaccurate words\n• **The Signals Mindset** — the body works it out before you do\n• **The Certainty Mindset** — a word to try on, not a diagnosis\n• **The Keeping It Together Mindset** — composure, and what it costs\n\nThe last one is the only one that does not dispute the belief. It agrees with it and shows the bill.",
       cards: [
-        { q: "What are the five mindset areas in this pack?", a: "The Emotion Labelling Mindset, The No Judgement Mindset, The Signals Mindset, The Offering Not Telling Mindset, and The Keeping It Together Mindset.", bundle: 'pro' },
+        { q: "What are the five mindset areas in this pack?", a: "The Emotion Labelling Mindset, The No Judgement Mindset, The Signals Mindset, The Certainty Mindset, and The Keeping It Together Mindset.", bundle: 'pro' },
         { q: "Does naming a feeling make it bigger?", a: "Usually the opposite. The unnamed one is the one that runs the afternoon.", bundle: 'pro' },
         { q: "Where do people actually get stuck?", a: "One step earlier than the word — deciding whether they are allowed to feel it.", bundle: 'pro' },
         { q: "What does the body do before you do?", a: "Works it out. The tight chest and the replaying arrive well ahead of any word.", bundle: 'pro' },
@@ -5121,15 +5121,15 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The five beliefs and stances in this pack:\n\n• **A Feeling Points at a Need** — feelings in conflict are signals, not noise\n• **Describe, Do Not Diagnose** — one word turns a point into a row\n• **Finish the Sentence** — the pull to stop once the hard part is out\n• **They Have a Version Too** — a prepared account feels like the whole truth\n• **One Word Is Not Enough** — \"frustrated\" sounds thin next to what it was\n\nThe middle three are all about the same moment: the sentence you are halfway through.",
+      description: "The five beliefs and stances in this pack:\n\n• **Needs** — feelings in conflict are signals, not noise\n• **Diagnosis** — one word turns a point into a row\n• **Stopping Halfway** — the pull to stop once the hard part is out\n• **Their Version** — a prepared account feels like the whole truth\n• **The Feeling Word** — \"frustrated\" sounds thin next to what it was\n\nThe middle three are all about the same moment: the sentence you are halfway through.",
       cards: [
-        { q: "What are the five mindset areas in this pack?", a: "A Feeling Points at a Need, Describe Do Not Diagnose, Finish the Sentence, They Have a Version Too, and One Word Is Not Enough.", bundle: 'pro' },
+        { q: "What are the five mindset areas in this pack?", a: "Needs, Diagnosis, Stopping Halfway, Their Version, and The Feeling Word.", bundle: 'pro' },
         { q: "What is a feeling in a conflict?", a: "A signal. It points at something that matters to you — being consulted, trusted, kept informed.", bundle: 'pro' },
         { q: "How does a reasonable point become a row?", a: "One word. Dismissive, careless, thoughtless — each is a claim about them rather than about what happened.", bundle: 'pro' },
         { q: "Why do people stop halfway?", a: "The exposed part is out and the nerve goes. What is left is the need and the request, which is the useful half.", bundle: 'pro' },
         { q: "What does preparing an account cost you?", a: "By the time you speak it feels like the whole truth, and theirs has not been written yet.", bundle: 'pro' },
         { q: "\"I felt frustrated\" sounds thin. What is the fix?", a: "A second, more accurate word — or the quieter feeling underneath the obvious one.", bundle: 'pro' },
-        { q: "Which three of the five are about the same moment?", a: "Describe Do Not Diagnose, Finish the Sentence, and One Word Is Not Enough. All three are about the sentence you are halfway through.", bundle: 'pro' },
+        { q: "Which three of the five are about the same moment?", a: "Diagnosis, Stopping Halfway, and The Feeling Word. All three are about the sentence you are halfway through.", bundle: 'pro' },
         { q: "What is the boundary against Emotion Labelling?", a: "There you name and steady your own feeling for your own sake. Here you express it to somebody, with the need attached.", bundle: 'pro' },
       ]
     },
@@ -5291,7 +5291,7 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The seven beliefs and stances that decide whether this works:\n\n• **The Playing a Role Mindset** — a character, not a person\n• **The Commitment Mindset** — half-in is the only way it fails\n• **The Costs Me Not Them Mindset** — where the line is\n• **The Exit Mindset** — knowing how to end one\n• **Not Being a Performer** — you do not need voices\n• **Picking the Role** — the seven are not interchangeable\n• **Being the One Who Lifts the Mood** — the belief that keeps a bit running too long\n\nThe first four make it work. The last three are the reasons people never start.",
+      description: "The seven beliefs and stances that decide whether this works:\n\n• **The Playing a Role Mindset** — a character, not a person\n• **The Commitment Mindset** — half-in is the only way it fails\n• **The Whose Expense Mindset** — where the line is\n• **The Exit Mindset** — knowing how to end one\n• **Not Being a Performer** — you do not need voices\n• **Picking the Role** — the seven are not interchangeable\n• **Being the One Who Lifts the Mood** — the belief that keeps a bit running too long\n\nThe first four make it work. The last three are the reasons people never start.",
       cards: [
         { q: "How many mindset decks does this pack have, and what is the split?", a: "Seven. Four are about doing it well; three are about why people never begin.", bundle: 'pro' },
         { q: "What is the one rule the whole pack rests on?", a: "You are playing a character, not making fun of a person.", bundle: 'pro' },
@@ -6566,7 +6566,7 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The seven beliefs and stances in this pack:\n\n• **The Question Is In Their Answer** — you never have to invent one\n• **Following Beats Interviewing** — unconnected good questions are a questionnaire\n• **Ordinary Questions Work** — \"what happened next\" beats anything clever\n• **One More Question** — where most conversations stop\n• **How a Question Lands** — the same question, two framings\n• **Asking Feels Like Prying** — half right, and the half that is right matters\n• **What If They Actually Tell Me** — the worry behind most unasked questions\n\nThe last two are why questions never get asked. The first five are about the ones that do.",
+      description: "The seven beliefs and stances in this pack:\n\n• **Inventing Questions** — you never have to invent one\n• **Interviewing** — unconnected good questions are a questionnaire\n• **Ordinary Questions** — \"what happened next\" beats anything clever\n• **One More Question** — where most conversations stop\n• **How a Question Lands** — the same question, two framings\n• **Asking Feels Like Prying** — half right, and the half that is right matters\n• **What If They Actually Tell Me** — the worry behind most unasked questions\n\nThe last two are why questions never get asked. The first five are about the ones that do.",
       cards: [
         { q: "How many mindset decks does this pack have, and what is the split?", a: "Seven. Five about the questions you ask, two about the ones you never do.", bundle: 'pro' },
         { q: "Where is the next question?", a: "In their last sentence. It usually contains three or four.", bundle: 'pro' },
@@ -6722,9 +6722,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The six beliefs and stances in this pack:\n\n• **Understanding Is Checkable** — it is a claim, not a private feeling\n• **Follow the Whole Conversation** — most listening is local\n• **The Feeling, Not the Anecdote** — the recognition is complete in one sentence\n• **Meet the Value, Not Just the Story** — a grievance is usually a value\n• **Getting It Wrong Out Loud** — a corrected version really does reveal you missed something\n• **Only Catching Half** — holding two of its five parts and saying nothing\n\nThe last two are about the discomfort of checking, which is the whole cost of this pack.",
+      description: "The six beliefs and stances in this pack:\n\n• **Checking** — it is a claim, not a private feeling\n• **Local Listening** — most listening is local\n• **The Anecdote** — the recognition is complete in one sentence\n• **The Value Underneath** — a grievance is usually a value\n• **Getting It Wrong Out Loud** — a corrected version really does reveal you missed something\n• **Only Catching Half** — holding two of its five parts and saying nothing\n\nThe last two are about the discomfort of checking, which is the whole cost of this pack.",
       cards: [
-        { q: "What are the six mindset areas in this pack?", a: "Understanding Is Checkable, Follow the Whole Conversation, The Feeling Not the Anecdote, Meet the Value Not Just the Story, Getting It Wrong Out Loud, and Only Catching Half.", bundle: 'pro' },
+        { q: "What are the six mindset areas in this pack?", a: "Checking, Local Listening, The Anecdote, The Value Underneath, Getting It Wrong Out Loud, and Only Catching Half.", bundle: 'pro' },
         { q: "Is understanding a feeling or a claim?", a: "A claim. It can be tested, and the test costs one sentence.", bundle: 'pro' },
         { q: "What is local listening?", a: "Tracking the last sentence and forgetting the rest. Carrying one detail forward is what separates this pack from the first one.", bundle: 'pro' },
         { q: "How long is the recognition?", a: "One sentence. Everything after that is your turn.", bundle: 'pro' },
@@ -7342,9 +7342,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The six beliefs and stances in this pack:\n\n• **Build, Do Not Perform** — two people make this, and the measure is whether it kept going\n• **Yes, And — Never Yes, But** — everything offered is accepted\n• **Absurd Is Safer Than Clever** — an impossible idea cannot be mistaken for a judgement\n• **Stop While It Is Good** — nobody remembers a story that stopped early\n• **Not Being Quick** — half right, and the true half is worth keeping\n• **Adding the Wrong Thing** — the fear that your turn is the one that kills it\n\nThe last two are why people stay silent. The first four are about what happens once they do not.",
+      description: "The six beliefs and stances in this pack:\n\n• **Performing** — two people make this, and the measure is whether it kept going\n• **Blocking** — everything offered is accepted\n• **Clever** — an impossible idea cannot be mistaken for a judgement\n• **Going Too Long** — nobody remembers a story that stopped early\n• **Not Being Quick** — half right, and the true half is worth keeping\n• **Adding the Wrong Thing** — the fear that your turn is the one that kills it\n\nThe last two are why people stay silent. The first four are about what happens once they do not.",
       cards: [
-        { q: "What are the six mindset areas in this pack?", a: "Build Do Not Perform, Yes And Never Yes But, Absurd Is Safer Than Clever, Stop While It Is Good, Not Being Quick, and Adding the Wrong Thing.", bundle: 'pro' },
+        { q: "What are the six mindset areas in this pack?", a: "Performing, Blocking, Clever, Going Too Long, Not Being Quick, and Adding the Wrong Thing.", bundle: 'pro' },
         { q: "What is the measure of a turn?", a: "Whether the story kept going — not whether your line was the funny one.", bundle: 'pro' },
         { q: "Why is \"but\" a problem inside an invented story?", a: "It is a correction, and there is nothing to correct. Everything offered is accepted.", bundle: 'pro' },
         { q: "Why is absurd safer than clever?", a: "An obviously impossible idea cannot be mistaken for a judgement about anybody. A clever remark can.", bundle: 'pro' },
@@ -7498,9 +7498,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The six beliefs and stances in this pack:\n\n• **The Question Under the Question** — what they said is rarely what they asked\n• **Short Is Not Rude** — a one-sentence answer feels dismissive only from the inside\n• **Say Who It Is Not For** — one honest exclusion buys the rest\n• **Give It Neighbours** — people file new things by what they sit next to\n• **The Edge Is Part of the Answer** — a stated limit is not a hole\n• **Answering What Was Asked** — half right, and the half that is right is courtesy\n\nThe last one is the only one that concedes. Answering the question somebody asked is not a fault.",
+      description: "The six beliefs and stances in this pack:\n\n• **The Question Under the Question** — what they said is rarely what they asked\n• **Length** — a one-sentence answer feels dismissive only from the inside\n• **The Wrong Audience** — one honest exclusion buys the rest\n• **Neighbours** — people file new things by what they sit next to\n• **The Edge** — a stated limit is not a hole\n• **Answering What Was Asked** — half right, and the half that is right is courtesy\n\nThe last one is the only one that concedes. Answering the question somebody asked is not a fault.",
       cards: [
-        { q: "What are the six mindset areas in this pack?", a: "The Question Under the Question, Short Is Not Rude, Say Who It Is Not For, Give It Neighbours, The Edge Is Part of the Answer, and Answering What Was Asked.", bundle: 'pro' },
+        { q: "What are the six mindset areas in this pack?", a: "The Question Under the Question, Length, The Wrong Audience, Neighbours, The Edge, and Answering What Was Asked.", bundle: 'pro' },
         { q: "What does \"what is it?\" almost always mean?", a: "Would I ever need this?", bundle: 'pro' },
         { q: "Has anybody ever complained that an explanation was too short?", a: "No. They ask, and then you get to say more to somebody who wants it.", bundle: 'pro' },
         { q: "What does an explanation with no \"not for you\" in it sound like?", a: "A pitch.", bundle: 'pro' },
@@ -7654,9 +7654,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The six beliefs and stances in this pack:\n\n• **Small Stories Are Enough** — the size of the event is almost irrelevant\n• **Start Where It Moves** — the instinct to explain first costs you the room\n• **The Feeling Is the Story** — people follow feeling more closely than events\n• **Finish It on Purpose** — a story is remembered by its last sentence\n• **Some Days Are Not Stories** — half true, and the added half is the problem\n• **Choosing Takes Too Long** — the moment is short and sorting is slow\n\nThe last two are why stories never get told. The first four are about the ones that do.",
+      description: "The six beliefs and stances in this pack:\n\n• **Size** — the size of the event is almost irrelevant\n• **Openings** — the instinct to explain first costs you the room\n• **Feeling** — people follow feeling more closely than events\n• **Endings** — a story is remembered by its last sentence\n• **Some Days Are Not Stories** — half true, and the added half is the problem\n• **Choosing Takes Too Long** — the moment is short and sorting is slow\n\nThe last two are why stories never get told. The first four are about the ones that do.",
       cards: [
-        { q: "What are the six mindset areas in this pack?", a: "Small Stories Are Enough, Start Where It Moves, The Feeling Is the Story, Finish It on Purpose, Some Days Are Not Stories, and Choosing Takes Too Long.", bundle: 'pro' },
+        { q: "What are the six mindset areas in this pack?", a: "Size, Openings, Feeling, Endings, Some Days Are Not Stories, and Choosing Takes Too Long.", bundle: 'pro' },
         { q: "Does the size of the event matter?", a: "Almost not at all. A locked door told sharply beats a dramatic week told vaguely.", bundle: 'pro' },
         { q: "What does the instinct to explain first cost?", a: "The room. Context can arrive late, or not at all.", bundle: 'pro' },
         { q: "What do listeners follow most closely?", a: "The feeling, not the events.", bundle: 'pro' },
@@ -7824,7 +7824,7 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The seven beliefs and stances in this pack:\n\n• **Every Frame Is a Choice** — what happened and what it means are two things\n• **It Has To Be True** — the rule that keeps this from being spin\n• **Not Everything Needs a Better Angle** — what makes the pack safe to own\n• **Offer, Never Impose** — the reframe belongs to whoever receives it\n• **Labels Other People Put on You** — the hardest ones, because part of each is accurate\n• **Making It Smaller** — the fastest reframe, and the one most likely to miss\n• **When Somebody Does It to You** — the receiving end\n\nThree of the seven are limits rather than techniques.",
+      description: "The seven beliefs and stances in this pack:\n\n• **Frames** — what happened and what it means are two things\n• **Truth** — the rule that keeps this from being spin\n• **When Not To** — what makes the pack safe to own\n• **Delivery** — the reframe belongs to whoever receives it\n• **Labels Other People Put on You** — the hardest ones, because part of each is accurate\n• **Making It Smaller** — the fastest reframe, and the one most likely to miss\n• **When Somebody Does It to You** — the receiving end\n\nThree of the seven are limits rather than techniques.",
       cards: [
         { q: "How many mindset decks does this pack have, and what is unusual about them?", a: "Seven, and three of them are limits rather than techniques.", bundle: 'pro' },
         { q: "What are the two things a situation is made of?", a: "What happened, which is fixed, and what it means, which is not.", bundle: 'pro' },
@@ -9172,9 +9172,9 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The four beliefs and stances in this pack:\n\n• **Somebody Has to Go First** — the exposure is real and brief\n• **A Missed Joke Is Cheap** — a half-smile, two seconds, and the conversation continues\n• **Small Feelings, Not Big Ones** — it works because it is small\n• **The Real Reason Works Best** — awkward and true beats smooth and invented\n\nAll four are about the same fear, measured honestly. The cost is smaller than it feels.",
+      description: "The four beliefs and stances in this pack:\n\n• **Going First** — the exposure is real and brief\n• **The Missed Joke** — a half-smile, two seconds, and the conversation continues\n• **Small Feelings** — it works because it is small\n• **Pretexts** — awkward and true beats smooth and invented\n\nAll four are about the same fear, measured honestly. The cost is smaller than it feels.",
       cards: [
-        { q: "What are the four mindset areas in this pack?", a: "Somebody Has to Go First, A Missed Joke Is Cheap, Small Feelings Not Big Ones, and The Real Reason Works Best.", bundle: 'pro' },
+        { q: "What are the four mindset areas in this pack?", a: "Going First, The Missed Joke, Small Feelings, and Pretexts.", bundle: 'pro' },
         { q: "What is everybody in the room doing?", a: "Waiting for somebody else to say the thing.", bundle: 'pro' },
         { q: "What does going first buy the other person?", a: "Permission.", bundle: 'pro' },
         { q: "What actually happens when a joke fails?", a: "A half-smile, two seconds of nothing, and a conversation that continues.", bundle: 'pro' },
