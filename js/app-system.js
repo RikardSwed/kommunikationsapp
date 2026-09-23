@@ -4032,6 +4032,17 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.29.03', date: 'September 2026', title: 'The sequence step that answered itself — 271 of them', audience: 'dev',
+    items: [
+      'A sequence step hides its strategy name: the front carries only the stimulus, and the name reappears in brackets on the back once you turn it. That has been the rule since v1.27.88 — but the split only runs when the step carries <em>its own</em> guide, and <strong>271 steps of 1,692 had none</strong>. Those fronts read “Step 2 · Normalise the Reaction — they say…”: the answer, printed above the question. All 271 now split.',
+      '<strong>212 were filled from the strategy’s own guide pair</strong>, which is where the other steps in the same deck already got theirs. Nothing was invented — the text was sitting in Single Strategy the whole time.',
+      '<strong>59 more are steps that are not strategies</strong> but beats — the moment you notice a bit has gone flat, the pause you leave after asking, the correction you take before answering. Those got a guide pair written for them.',
+      'Along the way <strong>66 step names were replaced by the real strategy</strong> their own deck description already named. <strong>Validation</strong> is the clearest: its three sequences said “Name the feeling / Say it is ordinary / Back their thinking” on the front while the description said Reflect the Feeling, Normalise the Reaction, Acknowledge the Perspective. The bracket on the back now teaches a name the pack actually uses.',
+      '<strong>Setup Statement</strong> gained something it did not have: its opening step said only “Setup” in all three scenarios, where the three are in fact a <strong>Purpose Setup</strong>, a <strong>Feeling Setup</strong> and an <strong>Opinion Setup</strong>. Three different moves under one word.',
+      'Twenty packs touched, no card counts changed, no card text rewritten.',
+    ],
+  },
+  {
     version: 'v1.29.02', date: 'September 2026', title: 'Mindset deck names, round two — twelve more packs', audience: 'dev',
     items: [
       '30 more decks named for the area rather than the answer, across eight packs. <strong>Saying No</strong> had four in a row — A Clear No Is the Kind One, No Is a Complete Answer, You Are Allowed to Take a Minute, Their Disappointment Is Not Your Fault — now <strong>Softening</strong>, <strong>Explanations</strong>, <strong>The Instant Yes</strong> and <strong>Their Disappointment</strong>.',
