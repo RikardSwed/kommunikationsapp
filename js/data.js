@@ -10718,6 +10718,202 @@ const collections = {
       ]
     },
   ],
+  alexandergrace7: [
+    {
+      name: "One Minute, Then I'm Yours",
+      guideFront: "Ask for a moment when...",
+      guideBack: "A short wait, with full attention promised",
+      description: "When she comes to you with something important and you're in the middle of something, ask for a short, specific moment — and promise your full attention after it. \"Give me one minute to finish this, and then I'm all yours.\"\n\nIt works because half-listening is worse than waiting. If you answer while still on the ladder, looking at the screen or finishing the email, she gets a distracted version of you and feels it. If you ignore her, she feels dismissed. A short wait with a clear promise tells her she matters enough to get all of you.\n\nThe promise has to be kept. \"One minute\" that turns into twenty teaches her the phrase means nothing.\n\nTypical phrases: \"One minute, then I'm all yours.\", \"Let me finish this sentence, then I'm listening.\", \"Give me ten seconds — I want to hear this properly.\", \"Hold that — I'll be right there.\"\n\nThree parts:\n\n1. Acknowledge — \"I can see this matters.\"\n\n2. Ask for a short, specific wait — \"One minute.\"\n\n3. Keep it — and then turn fully to her.\n\nMindset: a short wait and my full attention beat instant half-attention.",
+      inputs: [
+        { q: "You're up a ladder fixing a light, and she comes in excited about news from work.", a: "\"I want to hear this properly. Give me ten seconds to get down, then I'm all yours.\"", bundle: 'free' },
+        { q: "You're in the middle of a work email, and she says she needs to talk.", a: "\"One minute to send this, then I'm listening.\"", bundle: 'free' },
+        { q: "You're playing a game online with friends, and she wants to tell you something.", a: "\"Let me finish this round — two minutes — then I'm yours.\"", bundle: 'free' },
+        { q: "You're cooking and something is about to burn when she starts telling you about her sister.", a: "\"Hold that one second — I'll turn this off, and then tell me everything.\"", bundle: 'free' },
+        { q: "You're on the phone to your brother, and she looks upset.", a: "(To your brother.) \"Can I call you back?\" (To her.) \"What's happened?\"", bundle: 'free' },
+        { q: "She says, \"You never listen when I talk to you.\"", a: "\"I want to listen properly. Give me a minute to stop what I'm doing.\"", bundle: 'pro' },
+        { q: "You asked for a minute, and it's now been ten.", a: "\"Sorry — that was more than a minute. Laptop's closed. Go on.\"", bundle: 'pro' },
+        { q: "She says, \"Never mind, it's not important.\"", a: "\"It is to me. I'm here now — tell me.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Set a Time to Talk",
+      guideFront: "Agree a when and a where when...",
+      guideBack: "A time and a place for it",
+      description: "When something needs a proper conversation and now is the wrong moment — in the car, in the supermarket, in front of the children — say you want to talk about it, and agree when. \"I can see you're upset, and I want to get to the bottom of it. Let's get home, put the shopping away, and sit down.\"\n\nIt works because hard conversations go badly in bad places. Distracted, rushed or with an audience, both of you say things badly and hear them worse. Naming a time shows you're taking it seriously, not dodging it. And it gives the feeling somewhere to go.\n\nIt is not \"not now\" on its own. That sounds like a door closing. It's \"not here — at seven, at home\".\n\nTypical phrases: \"Let's talk about it properly at home.\", \"Can we sit down tonight after the kids are in bed?\", \"I want to hear this. Not in the car — at home.\", \"Saturday morning, over coffee?\"\n\nThree parts:\n\n1. Show you've seen it — \"Something's wrong.\"\n\n2. Say you want to talk — \"I want to sort this out.\"\n\n3. Name the time and place — \"At home, after the shopping.\"\n\nMindset: choosing when is taking it seriously, not dodging it.",
+      inputs: [
+        { q: "She's snippy with you in the supermarket, and you both know something is wrong.", a: "\"I can tell you're upset, and I want to hear it. Let's finish here and talk at home.\"", bundle: 'free' },
+        { q: "She brings up money worries while you're driving on the motorway.", a: "\"I want to talk about this properly. Can we do it when we're home, not while I'm driving?\"", bundle: 'free' },
+        { q: "She starts a serious conversation as the children are coming in.", a: "\"This matters. Tonight, after they're in bed?\"", bundle: 'free' },
+        { q: "She messages something upsetting while you're at work.", a: "\"I don't want to do this by text. Can we talk at seven?\"", bundle: 'free' },
+        { q: "You want to raise something about her parents' visit.", a: "\"There's something about the visit I'd like to talk through. Saturday morning, over coffee?\"", bundle: 'free' },
+        { q: "She says, \"You always put things off.\"", a: "\"Not this time. Seven o'clock, kitchen table. I'll be there.\"", bundle: 'pro' },
+        { q: "She says, \"I need to talk now.\"", a: "\"Okay. Give me five minutes to park, and I'm yours.\"", bundle: 'pro' },
+        { q: "Seven o'clock arrives.", a: "\"Okay, I'm ready. Tell me what's been going on.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Let Her Finish, Then Speak",
+      guideFront: "Hear her all the way when...",
+      guideBack: "Her side heard, then yours",
+      description: "In a hard conversation, let her finish her side completely — then ask for your turn. \"Thank you. Can I tell you how it was for me now?\"\n\nIt works because a conversation where both people talk at once is two speeches, not a conversation. If you interrupt to correct her, she stops explaining and starts defending. If you wait, she gets it all out, feels heard, and is far more ready to listen. Asking for your turn out loud makes it clear that your side still matters too.\n\nIt goes both ways. If she interrupts you, \"Can I finish? Then I'm all ears\" is the same rule.\n\nTypical phrases: \"Go on — I'm listening.\", \"Is there more?\", \"Can I have my turn now?\", \"Let me finish, then it's your go.\"\n\nThree parts:\n\n1. Let her finish — no corrections.\n\n2. Check she's done — \"Is there more?\"\n\n3. Ask for your turn — \"Can I say how it was for me?\"\n\nMindset: waiting for my turn is how I make sure I get one.",
+      inputs: [
+        { q: "She's explaining why she's hurt, and you want to correct one detail.", a: "\"Go on. I'll say my bit when you've finished.\"", bundle: 'free' },
+        { q: "She's finished explaining how the party felt for her.", a: "\"Thank you. Is there more? … Okay — can I tell you how it was for me?\"", bundle: 'free' },
+        { q: "She keeps interrupting you when you try to explain.", a: "\"Can I finish this bit? Then I'm all ears.\"", bundle: 'free' },
+        { q: "You feel the urge to jump in with \"That's not what happened.\"", a: "(You wait.) \"I remember it differently. Can I tell you how?\"", bundle: 'free' },
+        { q: "She stops mid-sentence, as if expecting you to argue.", a: "\"Keep going. I'm listening.\"", bundle: 'free' },
+        { q: "She says, \"You never let me finish.\"", a: "\"You're right. Go ahead — I won't interrupt.\"", bundle: 'pro' },
+        { q: "She finishes, then says, \"Well?\"", a: "\"Thanks for telling me all of it. Here's where I was coming from.\"", bundle: 'pro' },
+        { q: "You've had your turn, and she wants to respond.", a: "\"Of course. Your turn.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Same Rules for Both",
+      guideFront: "Name the ground rules when...",
+      guideBack: "A rule that binds you both",
+      description: "Agree, while you're both calm, on a few rules for hard conversations — rules that apply to both of you, especially when one of you is upset. \"Can we agree: no name-calling, no bringing up old stuff, and we're on the same team?\"\n\nIt works because the rules that matter most are the ones that get dropped first. When feelings run high, it's easy to decide that the upset person gets a pass — to shout, to insult, to interrupt. Rules agreed in advance give both of you something to come back to without it being personal. \"We said no name-calling\" is easier to hear than \"you're being nasty\".\n\nThe key word is both. Rules for her alone are control. Rules for both are a shared agreement.\n\nTypical phrases: \"Can we agree some ground rules?\", \"We said no name-calling — that goes for me too.\", \"We're on the same side, remember?\", \"Old stuff stays old — both of us.\"\n\nThree parts:\n\n1. Agree while calm — not in the middle of it.\n\n2. Keep it short — three rules at most.\n\n3. Hold yourself to them first.\n\nMindset: the rules we both keep protect both of us.",
+      inputs: [
+        { q: "It's a calm Sunday, and your last two arguments got nasty.", a: "\"Can we agree a couple of rules for when we argue? No name-calling, and no bringing up old stuff.\"", bundle: 'free' },
+        { q: "In an argument, she brings up something from two years ago.", a: "\"We said old stuff stays old. Can we stick to today?\"", bundle: 'free' },
+        { q: "You catch yourself raising your voice.", a: "\"Sorry — we said no shouting. That goes for me too.\"", bundle: 'free' },
+        { q: "She calls you an idiot in the middle of a disagreement.", a: "\"We agreed no name-calling. Let's keep to that.\"", bundle: 'free' },
+        { q: "The argument is becoming you against her.", a: "\"Hang on — we're on the same team here. Let's work it out together.\"", bundle: 'free' },
+        { q: "She says, \"The rules don't apply when I'm this upset.\"", a: "\"They matter most when we're upset. That's what they're for — for both of us.\"", bundle: 'pro' },
+        { q: "You're tempted to use the rules to win the argument.", a: "(To yourself.) \"The rules are to protect us, not to score points.\"", bundle: 'pro' },
+        { q: "She points out that you broke a rule.", a: "\"You're right, I did. I'm sorry.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Clear Up What You Meant",
+      guideFront: "Correct the motive, gently, when...",
+      guideBack: "What you meant, then her feeling",
+      description: "When she's upset because she's read a motive into something you did that you didn't have, say briefly what you actually meant — and then acknowledge how it felt for her. \"That's not what I meant — I was trying to help. But I get why it felt like criticism.\"\n\nIt works because a wrong reading left uncorrected hardens into a belief about you. But a correction on its own sounds like \"you're wrong to be upset\". Pairing them — the intent, then the feeling — fixes the misunderstanding and still takes her seriously.\n\nOne sentence about your intent is enough. More than that becomes a defence.\n\nTypical phrases: \"That's not what I meant — I was…\", \"I can see why it came across that way.\", \"I wasn't trying to…, and I get that it felt like…\", \"My intention was…, and I'm sorry it landed badly.\"\n\nThree parts:\n\n1. What you meant — one sentence.\n\n2. How it could have felt — \"I can see why.\"\n\n3. Check — \"Does that make sense?\"\n\nMindset: I can correct the reading and still respect the feeling.",
+      inputs: [
+        { q: "She thinks you tidied her desk because you think she's messy.", a: "\"That's not what I meant — I was trying to make space for your new screen. I see why it felt like a dig, though.\"", bundle: 'free' },
+        { q: "She thinks you didn't call because you didn't care.", a: "\"I didn't call because my phone died, not because I didn't care. I understand how worrying that was.\"", bundle: 'free' },
+        { q: "She thinks your joke at dinner was aimed at her.", a: "\"It wasn't meant at you at all. I can see why it sounded like it.\"", bundle: 'free' },
+        { q: "She thinks you're angry because you've gone quiet.", a: "\"I'm not angry with you — I'm just tired. I get why the quiet looked like anger.\"", bundle: 'free' },
+        { q: "She thinks you bought the gym membership because you think she's put on weight.", a: "\"It was for us to do together, not a comment on you. I'm sorry it came across like that.\"", bundle: 'free' },
+        { q: "She says, \"So you're saying I'm wrong to be upset?\"", a: "\"No. You're not wrong to be upset. I just want you to know what I meant.\"", bundle: 'pro' },
+        { q: "You feel like explaining your intent at great length.", a: "\"One sentence: I was trying to help. The rest is about how you felt.\"", bundle: 'pro' },
+        { q: "She says, \"Okay, I believe you.\"", a: "\"Thank you. And I'm sorry it hurt.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What She's Telling Herself",
+      guideFront: "Ask about the story she's hearing when...",
+      guideBack: "A question about what she believes",
+      description: "When an argument seems to be about something small but the feeling is big, ask what she's believing about you, or when this feeling started. \"When did you start feeling like this? What are you telling yourself about me right now?\"\n\nIt works because anger usually sits on top of a story — \"he doesn't respect me\", \"I'm always last on his list\". Arguing about the small thing never reaches it. Asking about the story, calmly and with real curiosity, lets her say what's actually wrong. Often it's something you can reassure her about straight away.\n\nIt must be curiosity, not a trap. You're not trying to catch her out. You're trying to find the real conversation.\n\nTypical phrases: \"When did you start feeling this way?\", \"What are you telling yourself about me?\", \"What does it mean to you that I did that?\", \"What's the worst version you're imagining?\"\n\nThree parts:\n\n1. Notice the size gap — small thing, big feeling.\n\n2. Ask about the story — \"What are you believing about me?\"\n\n3. Answer the story — not the small thing.\n\nMindset: under the small argument there's a bigger story, and I can ask about it.",
+      inputs: [
+        { q: "She's furious you left your shoes in the hall.", a: "\"This feels bigger than shoes. What are you telling yourself about me right now?\"", bundle: 'free' },
+        { q: "She's upset that you didn't text back for two hours.", a: "\"When did you start feeling worried? What did you think was going on?\"", bundle: 'free' },
+        { q: "She reacts strongly to you going out with your friends.", a: "\"What does it mean to you when I go out? I want to understand.\"", bundle: 'free' },
+        { q: "The argument about the dishwasher has been going for twenty minutes.", a: "\"I don't think this is about the dishwasher. When did you start feeling like this?\"", bundle: 'free' },
+        { q: "She says, \"You obviously don't care.\"", a: "\"What have I done that makes you believe that? I'd really like to know.\"", bundle: 'free' },
+        { q: "She says, \"I just feel like I'm always last on your list.\"", a: "\"Thank you for telling me. You're not — and I can see why it's felt that way.\"", bundle: 'pro' },
+        { q: "You're tempted to point out it's only shoes.", a: "\"I'm going to guess it's not really the shoes. What is it?\"", bundle: 'pro' },
+        { q: "She doesn't know what she's telling herself.", a: "\"That's okay. When did this feeling start — today, or before?\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  alexandergrace8: [
+    {
+      name: "Answer the Feeling Behind It",
+      guideFront: "Respond to the worry when...",
+      guideBack: "An answer to what's underneath",
+      description: "When she asks a question that is really about how she feels — \"Do you think I could be a model?\", \"Am I boring?\", \"Do you still fancy me?\" — answer the feeling as well as the words. \"Where's that coming from? Are you feeling a bit unsure of yourself today?\"\n\nIt works because some questions aren't asking for information. They're asking for reassurance, or for someone to notice a worry. Answer only the literal question and you miss the point — whether you say yes to be kind or give an honest no. Answering the feeling shows her you heard what she was really asking, and it opens the actual conversation.\n\nIt isn't avoiding the question. You can still answer it — honestly — once you know what it's for.\n\nTypical phrases: \"Where's that coming from?\", \"Is something making you feel unsure?\", \"Has today been a rough one?\", \"What made you think of that?\"\n\nThree parts:\n\n1. Hear the feeling — not just the words.\n\n2. Ask about it, gently — \"Where's that coming from?\"\n\n3. Answer honestly — the question and the worry.\n\nMindset: some questions are really feelings, and I can answer the feeling.",
+      inputs: [
+        { q: "Out of nowhere she asks, \"Do you think I could be on the cover of a magazine?\"", a: "\"Where's that coming from? Are you feeling a bit unsure of yourself today?\"", bundle: 'free' },
+        { q: "She asks, \"Am I boring?\" after a quiet evening with your friends.", a: "\"Not to me. Did something tonight make you feel that way?\"", bundle: 'free' },
+        { q: "She asks, \"Do you still fancy me?\"", a: "\"Very much. Has something made you wonder?\"", bundle: 'free' },
+        { q: "She asks whether you think her friend is prettier than her.", a: "\"I think you're beautiful. Is something making you compare yourself today?\"", bundle: 'free' },
+        { q: "She asks, \"Would you still love me if I lost my job?\"", a: "\"Of course. Are you worried about work?\"", bundle: 'free' },
+        { q: "She asks the same reassuring question for the third time this week.", a: "\"I'll always answer yes. I'm wondering if something bigger's worrying you.\"", bundle: 'pro' },
+        { q: "She says, \"Just answer the question.\"", a: "\"Yes — I do. And I'd still like to know what's behind it.\"", bundle: 'pro' },
+        { q: "She tells you she's been feeling invisible at work.", a: "\"Thank you for telling me. That sounds really hard.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Praise You Mean",
+      guideFront: "Give honest praise when...",
+      guideBack: "A compliment you'd stand behind",
+      description: "Give compliments freely — but only true ones, and specific enough to show they're real. \"That speech was really good. The bit about your grandmother had the whole room quiet.\"\n\nIt works because praise is only worth something if it's honest. Exaggerated compliments — \"you're the most beautiful woman in the world\", \"you'd win any competition\" — are easy to spot and cheap to give. Once she suspects you say nice things to keep the peace, even your true compliments stop counting. Specific, honest praise is believed, and it lasts.\n\nIt is not holding back. Say every true, good thing you notice. Just don't invent the rest.\n\nTypical phrases: \"I loved the way you…\", \"That was really good — especially…\", \"You were brilliant at…\", \"I noticed you…\"\n\nThree parts:\n\n1. Notice something true — something she did or is.\n\n2. Say what exactly — \"the bit about your grandmother\".\n\n3. Leave it there — no inflation.\n\nMindset: honest praise is the only kind that keeps its value.",
+      inputs: [
+        { q: "She gave a speech at her friend's wedding.", a: "\"That was really good. The bit about your gran had the whole room quiet.\"", bundle: 'free' },
+        { q: "She's tried a new hairstyle.", a: "\"I like it. It shows off your eyes.\"", bundle: 'free' },
+        { q: "She handled a difficult call with a customer while you listened.", a: "\"You were so calm on that call. I'd have lost it.\"", bundle: 'free' },
+        { q: "She cooked a new recipe, and it was good but not perfect.", a: "\"The sauce was brilliant. I'd have that again every week.\"", bundle: 'free' },
+        { q: "She finished a long course she'd been struggling with.", a: "\"You kept going through all of it. I'm proud of you.\"", bundle: 'free' },
+        { q: "She asks, \"Is this the best thing you've ever eaten?\"", a: "\"Not quite — but it's the best thing I've eaten this month, honestly.\"", bundle: 'pro' },
+        { q: "You feel pressure to exaggerate a compliment.", a: "\"It's really good. I don't need to oversell it.\"", bundle: 'pro' },
+        { q: "She says, \"You're only saying that.\"", a: "\"I don't say things I don't mean. I mean this.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Small Disagreement",
+      guideFront: "Differ calmly in passing when...",
+      guideBack: "A different view, no debate",
+      description: "When she says something you see differently — about a film, a friend, the news — say so briefly and pleasantly, without starting a debate. \"I see that one a bit differently, but I love hearing how you think about it.\"\n\nIt works because nodding along to everything slowly makes you invisible. She doesn't know what you think, and you start to feel you can't say it. A small, calm disagreement shows you have a view of your own, and that different views are safe between you. It is not an argument; nobody has to win.\n\nThe skill is in the size. One sentence, a warm tone, and then back to the conversation.\n\nTypical phrases: \"I see it a bit differently.\", \"I'm not sure I agree, but I get your point.\", \"Interesting — I read it the other way.\", \"We'll have to differ on that one.\"\n\nThree parts:\n\n1. Say you see it differently — one sentence.\n\n2. Show you value her view — \"I like hearing yours.\"\n\n3. Let it go — no campaign.\n\nMindset: I can have a different view without starting a fight.",
+      inputs: [
+        { q: "She says a film you both watched was terrible, and you loved it.", a: "\"I actually loved it. I can see why the ending annoyed you, though.\"", bundle: 'free' },
+        { q: "She says her colleague is being completely unreasonable.", a: "\"I might see that one a bit differently. Want to hear why, or just vent?\"", bundle: 'free' },
+        { q: "She says a new restaurant in town is overrated.", a: "\"I thought the food was great, honestly. The service was slow, I'll give you that.\"", bundle: 'free' },
+        { q: "She says the news story proves her point.", a: "\"I read it a bit differently, but I like how you think about it.\"", bundle: 'free' },
+        { q: "She says you should both skip the family reunion this year.", a: "\"I'm not sure I agree — I'd kind of like to go. Can we talk about it?\"", bundle: 'free' },
+        { q: "You notice you've agreed with everything she's said for weeks.", a: "(Next time.) \"Actually, I see that one differently. Just so you know what I think.\"", bundle: 'pro' },
+        { q: "She asks, \"So you think I'm wrong?\"", a: "\"Not wrong — we just see it differently, and that's fine.\"", bundle: 'pro' },
+        { q: "She laughs and says, \"We'll agree to disagree.\"", a: "\"Deal. More wine?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What Done Looks Like",
+      guideFront: "Clarify the standard when...",
+      guideBack: "A question about her expectations",
+      description: "When she hands you a task — \"Can you sort Easter?\", \"Can you do the bathroom?\" — ask what she has in mind before you start. \"Happy to. What does done look like for you? Anything you definitely want, or can I run with it?\"\n\nIt works because most household arguments aren't about who does the task. They're about an unspoken standard. You do it your way, she was picturing hers, and now she's redoing it and you feel criticised. One question at the start makes the standard visible, and lets you both decide how much it matters.\n\nIt also tells you how much freedom you have. Sometimes she has a picture. Sometimes she just wants it off her plate.\n\nTypical phrases: \"What does done look like?\", \"Anything you definitely want?\", \"How hands-off do you want to be?\", \"Do you want to check it, or is it mine?\"\n\nThree parts:\n\n1. Say yes to the task.\n\n2. Ask about the standard — \"What do you have in mind?\"\n\n3. Agree who decides — \"Is it mine to run with?\"\n\nMindset: one question at the start saves an argument at the end.",
+      inputs: [
+        { q: "She asks you to organise Easter lunch for her family.", a: "\"Happy to. What does a good Easter look like for you? Anything I must include?\"", bundle: 'free' },
+        { q: "She asks you to clean the bathroom.", a: "\"Sure. Anything you particularly want done — or can I do it my way?\"", bundle: 'free' },
+        { q: "She asks you to book the holiday.", a: "\"Great. Budget, and must-haves? Then I'll run with it.\"", bundle: 'free' },
+        { q: "She asks you to dry the dog after its walk.", a: "\"Which towel? I don't want to use the good one by mistake.\"", bundle: 'free' },
+        { q: "She asks you to buy a present for her mother.", a: "\"Do you want to see it before I buy it, or do you trust me with it?\"", bundle: 'free' },
+        { q: "She redid the task you'd just finished.", a: "\"Next time, tell me what you have in mind first, and I'll do it that way.\"", bundle: 'pro' },
+        { q: "She says, \"Just do it — you know what I like.\"", a: "\"I might not, actually. Quick version: anything essential?\"", bundle: 'pro' },
+        { q: "She tells you exactly what she wants.", a: "\"Perfect. Leave it with me.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Trade the Load",
+      guideFront: "Rebalance openly when...",
+      guideBack: "One thing given, one thing asked",
+      description: "When one of you is carrying more in some area — the cooking, the social calendar, the money, the planning — say so, and offer a trade instead of carrying it silently. \"I've been doing all the cooking. Could you take over the appointments and birthdays, and I'll keep the kitchen?\"\n\nIt works because silent over-giving turns into resentment, and resentment comes out sideways. Saying it openly, with a trade on offer, turns a grievance into a deal. It also admits that the other person may be carrying things you don't see — the question goes both ways.\n\nThe trade is the key. \"You don't do enough\" starts a fight. \"Can we swap something?\" starts a conversation.\n\nTypical phrases: \"Can we swap something?\", \"I'll keep doing X if you take Y.\", \"What are you carrying that I don't see?\", \"Let's look at who does what.\"\n\nThree parts:\n\n1. Name what you carry — \"I've been doing all the cooking.\"\n\n2. Offer a trade — \"Could you take the birthdays?\"\n\n3. Ask about hers — \"What are you carrying that I'm missing?\"\n\nMindset: saying it with a trade attached is fairer than carrying it in silence.",
+      inputs: [
+        { q: "You've cooked every dinner for two months.", a: "\"I'm happy to keep cooking. Could you take on the food shop in return?\"", bundle: 'free' },
+        { q: "You do all the driving to visit her family.", a: "\"Could we split the drive — I'll do there, you do back?\"", bundle: 'free' },
+        { q: "You handle all the bills and paperwork.", a: "\"I'll keep the bills. Could you take the car stuff — insurance, MOT, that kind of thing?\"", bundle: 'free' },
+        { q: "You feel she organises all the social plans and you do none.", a: "\"You carry all the social planning. Can I take over something — birthdays, maybe?\"", bundle: 'free' },
+        { q: "You've been getting up with the baby every night.", a: "\"I'm shattered. Could we alternate nights, and I'll do the mornings?\"", bundle: 'free' },
+        { q: "You notice resentment building about the housework.", a: "\"Can we look at who does what? I think it's drifted, and I'd rather say so now.\"", bundle: 'pro' },
+        { q: "She says, \"I do loads you don't see.\"", a: "\"I believe you. Tell me what — I'd like to know.\"", bundle: 'pro' },
+        { q: "You agree on a new split.", a: "\"Let's try it for a month and check in.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name the Pattern",
+      guideFront: "Raise the recurring thing when...",
+      guideBack: "A pattern, calmly, outside a fight",
+      description: "When the same thing keeps happening — the same argument, the same way it ends — raise the pattern calmly, at a quiet time, rather than fighting each instance. \"I've noticed our arguments often end with me apologising, even when I'm not sure I was wrong. Can we talk about that?\"\n\nIt works because each single argument can be explained away: she was tired, you were late, it was a bad day. The pattern can't. Naming it outside a fight means neither of you has to defend a position. It turns \"who was right last Tuesday\" into \"how do we want this to go\".\n\nIt must be about \"us\", not about her. A pattern you both contribute to is easier to change than one you've pinned on her.\n\nTypical phrases: \"I've noticed a pattern…\", \"This keeps happening, and I'd like to understand it.\", \"Can we talk about how our arguments go?\", \"What do you think is going on when…?\"\n\nThree parts:\n\n1. Choose a calm time — not during it.\n\n2. Describe the pattern — \"Our arguments often end with…\"\n\n3. Ask together — \"What do you think is happening?\"\n\nMindset: one conversation about the pattern is worth ten about the incidents.",
+      inputs: [
+        { q: "Every argument ends with you apologising, even when you're not sure you were wrong.", a: "\"Can I raise something? Our arguments often end with me saying sorry, even when I'm not sure why. Can we talk about that?\"", bundle: 'free' },
+        { q: "Sunday evenings keep turning into tense evenings.", a: "\"I've noticed Sundays often go a bit wrong. Do you feel that too?\"", bundle: 'free' },
+        { q: "Every visit to her parents ends with the two of you not speaking.", a: "\"Visits to your parents seem to leave us both tense. What do you think's going on?\"", bundle: 'free' },
+        { q: "Your tone gets criticised in every disagreement, whatever the topic.", a: "\"It seems my tone comes up a lot. Can we talk about what you hear in it?\"", bundle: 'free' },
+        { q: "You both agreed to speak kindly, but it stops when things get heated.", a: "\"We agreed to be kind to each other, and it tends to stop when we're upset. Can we look at that together?\"", bundle: 'free' },
+        { q: "She says, \"So it's my fault?\"", a: "\"No — it's something we both do. I want us to figure it out together.\"", bundle: 'pro' },
+        { q: "You're tempted to raise the pattern mid-argument.", a: "(To yourself.) \"Not now. Tomorrow, when we're calm.\"", bundle: 'pro' },
+        { q: "She agrees there's a pattern.", a: "\"Thank you. What do you think would help?\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -15626,6 +15822,106 @@ const collectionsModeData = {
         { q: "You're sitting together in the garden on a warm evening.", a: "\"I'm really happy. You're a big part of that.\" [Tell Her What She Adds]", bundle: 'pro', guideBack: "What your life has because of her" },
         { q: "She listened well when you talked about your brother.", a: "\"Thanks for listening. There's more, if you're up for it.\" [Open Up in Steps]", bundle: 'pro', guideBack: "One more layer, not the whole story" },
         { q: "She sorted the holiday bookings.", a: "\"Thanks for doing all the bookings. I know it took ages.\" [Express Appreciation]", bundle: 'pro', guideBack: "Thanks, with a reason attached" },
+      ]
+    },
+  ],
+  alexandergrace7: [
+    {
+      name: "Setting It Up",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**One Minute, Then I'm Yours**, **Set a Time to Talk** and **Same Rules for Both** — three ways to make sure a hard conversation starts in the right place.\n\n• **One Minute, Then I'm Yours** — she needs you now, and you're mid-task\n• **Set a Time to Talk** — it matters, but here is the wrong place\n• **Same Rules for Both** — you want the next argument to go better\n\nThe question that decides it: is the problem when, where, or how?\n\nThe usual wrong choice is having the conversation anyway — distracted, in the car, with no rules.\n\nMindset: a good conversation starts before the first word.",
+      inputs: [
+        { q: "You're painting the fence, and she wants to talk about her day.", a: "\"Two minutes to finish this panel, then I'm all yours.\" [One Minute, Then I'm Yours]", bundle: 'pro', guideBack: "A short wait, with full attention promised" },
+        { q: "She brings up the wedding budget during dinner with friends.", a: "\"Let's do this at home tomorrow — properly.\" [Set a Time to Talk]", bundle: 'pro', guideBack: "A time and a place for it" },
+        { q: "Your last argument ended with both of you saying cruel things.", a: "\"Can we agree: no insults, whatever happens? Both of us.\" [Same Rules for Both]", bundle: 'pro', guideBack: "A rule that binds you both" },
+        { q: "You're in a work call, and she comes in upset.", a: "(Muting.) \"Five minutes, then I'm done. Is that okay?\" [One Minute, Then I'm Yours]", bundle: 'pro', guideBack: "A short wait, with full attention promised" },
+        { q: "She's upset in the car on the way to her parents'.", a: "\"I want to hear it. Tonight, after we're home?\" [Set a Time to Talk]", bundle: 'pro', guideBack: "A time and a place for it" },
+        { q: "An argument is starting, and she brings up your ex.", a: "\"We said old stuff stays old. Let's stick to this.\" [Same Rules for Both]", bundle: 'pro', guideBack: "A rule that binds you both" },
+        { q: "You're reading the news, and she sits down looking serious.", a: "(You put the phone down.) \"One second — right, I'm here. What's up?\" [One Minute, Then I'm Yours]", bundle: 'pro', guideBack: "A short wait, with full attention promised" },
+        { q: "She texts, \"We need to talk.\"", a: "\"Okay. I'm home at six — can we sit down then?\" [Set a Time to Talk]", bundle: 'pro', guideBack: "A time and a place for it" },
+      ]
+    },
+    {
+      name: "Inside the Conversation",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Let Her Finish, Then Speak**, **Clear Up What You Meant** and **Ask What She's Telling Herself** — three moves for the middle of a hard talk.\n\n• **Let Her Finish, Then Speak** — you want to jump in\n• **Clear Up What You Meant** — she's read a motive you didn't have\n• **Ask What She's Telling Herself** — the feeling is bigger than the topic\n\nThe question that decides it: do I need to wait, to correct, or to ask?\n\nThe usual wrong choice is correcting her before she has finished.\n\nMindset: first hear it all, then correct once, then look underneath.",
+      inputs: [
+        { q: "She's explaining why she felt ignored at the party.", a: "\"Go on — I'll wait until you're done.\" [Let Her Finish, Then Speak]", bundle: 'pro', guideBack: "Her side heard, then yours" },
+        { q: "She thinks you were flirting with the waitress.", a: "\"I was just being polite, not flirting. I see how it looked, though.\" [Clear Up What You Meant]", bundle: 'pro', guideBack: "What you meant, then her feeling" },
+        { q: "She's in tears about a forgotten phone charger.", a: "\"I don't think this is about the charger. What are you telling yourself?\" [Ask What She's Telling Herself]", bundle: 'pro', guideBack: "A question about what she believes" },
+        { q: "She's finished speaking and is looking at you.", a: "\"Thank you. Can I tell you how it was for me?\" [Let Her Finish, Then Speak]", bundle: 'pro', guideBack: "Her side heard, then yours" },
+        { q: "She thinks you cancelled the trip to avoid her family.", a: "\"I cancelled because of work, not your family. I get why it felt that way.\" [Clear Up What You Meant]", bundle: 'pro', guideBack: "What you meant, then her feeling" },
+        { q: "She says, \"You obviously think I'm stupid.\"", a: "\"What have I done that makes you believe that?\" [Ask What She's Telling Herself]", bundle: 'pro', guideBack: "A question about what she believes" },
+        { q: "You want to interrupt with a correction.", a: "(You wait.) \"I remember it differently — can I say how?\" [Let Her Finish, Then Speak]", bundle: 'pro', guideBack: "Her side heard, then yours" },
+        { q: "She thinks you offered to pay because you think she can't afford it.", a: "\"I offered because I wanted to treat you. I can see why it felt odd.\" [Clear Up What You Meant]", bundle: 'pro', guideBack: "What you meant, then her feeling" },
+      ]
+    },
+    {
+      name: "All Six Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order hard talks really go.\n\nThree set it up: **One Minute, Then I'm Yours**, **Set a Time to Talk** and **Same Rules for Both**. Three are for the middle: **Let Her Finish, Then Speak**, **Clear Up What You Meant** and **Ask What She's Telling Herself**.\n\nIf you are unsure, ask: has the conversation properly started yet? If not, sort the when, the where and the rules. If it has, listen to the end, correct once, and look for the story underneath.\n\nThe usual wrong choice is diving in — distracted, in the wrong place, talking over each other.\n\nMindset: set it up well, and the middle goes better.",
+      inputs: [
+        { q: "You're changing a tyre, and she wants to talk about her mother.", a: "\"Five minutes to finish this, then I'm all yours.\" [One Minute, Then I'm Yours]", bundle: 'pro', guideBack: "A short wait, with full attention promised" },
+        { q: "She's explaining why she's upset, and you want to defend yourself.", a: "\"Go on. I'll say my side after.\" [Let Her Finish, Then Speak]", bundle: 'pro', guideBack: "Her side heard, then yours" },
+        { q: "She wants to talk about moving in while you're both at a friend's barbecue.", a: "\"I'd love to talk about it — tonight, just us?\" [Set a Time to Talk]", bundle: 'pro', guideBack: "A time and a place for it" },
+        { q: "She thinks you forgot her birthday dinner on purpose.", a: "\"I'd never do that on purpose — I got the date wrong. I see why it hurt.\" [Clear Up What You Meant]", bundle: 'pro', guideBack: "What you meant, then her feeling" },
+        { q: "She calls you pathetic in the middle of an argument.", a: "\"We agreed no insults, both of us. Let's keep to that.\" [Same Rules for Both]", bundle: 'pro', guideBack: "A rule that binds you both" },
+        { q: "She's very upset about a small comment you made.", a: "\"When did you start feeling this way? I want to understand.\" [Ask What She's Telling Herself]", bundle: 'pro', guideBack: "A question about what she believes" },
+        { q: "She's finished, and it's your turn.", a: "\"Thanks for all of that. Here's how it was for me.\" [Let Her Finish, Then Speak]", bundle: 'pro', guideBack: "Her side heard, then yours" },
+        { q: "She messages you at work about something serious.", a: "\"Let's talk tonight at eight — I want to give it proper attention.\" [Set a Time to Talk]", bundle: 'pro', guideBack: "A time and a place for it" },
+      ]
+    },
+  ],
+  alexandergrace8: [
+    {
+      name: "Honest Words",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Answer the Feeling Behind It**, **Praise You Mean** and **A Small Disagreement** — three ways to stay honest in everyday conversation.\n\n• **Answer the Feeling Behind It** — the question is really a worry\n• **Praise You Mean** — you want to say something good\n• **A Small Disagreement** — you see it differently\n\nThe question that decides it: is she asking, is there something good to say, or do I just think otherwise?\n\nThe usual wrong choice is saying whatever keeps the peace.\n\nMindset: honest words, warmly said.",
+      inputs: [
+        { q: "She asks, \"Do you think I've put on weight?\"", a: "\"You look great to me. Is something making you worried about it?\" [Answer the Feeling Behind It]", bundle: 'pro', guideBack: "An answer to what's underneath" },
+        { q: "She painted the spare room herself.", a: "\"That's a really clean job. The edges are perfect.\" [Praise You Mean]", bundle: 'pro', guideBack: "A compliment you'd stand behind" },
+        { q: "She says a band you like is overrated.", a: "\"I see it differently — but I get why they're not your thing.\" [A Small Disagreement]", bundle: 'pro', guideBack: "A different view, no debate" },
+        { q: "She asks, \"Am I a good mum?\"", a: "\"A really good one. Has something happened today?\" [Answer the Feeling Behind It]", bundle: 'pro', guideBack: "An answer to what's underneath" },
+        { q: "She ran her first half-marathon.", a: "\"You paced it perfectly. I watched you pass half the field in the last mile.\" [Praise You Mean]", bundle: 'pro', guideBack: "A compliment you'd stand behind" },
+        { q: "She says your friend is a bad influence.", a: "\"I don't quite see him that way, but tell me what you've noticed.\" [A Small Disagreement]", bundle: 'pro', guideBack: "A different view, no debate" },
+        { q: "She asks, \"Would you choose me again?\"", a: "\"In a heartbeat. What's got you thinking about that?\" [Answer the Feeling Behind It]", bundle: 'pro', guideBack: "An answer to what's underneath" },
+        { q: "She fixed the leaking tap on her own.", a: "\"You fixed it faster than I would have. Impressive.\" [Praise You Mean]", bundle: 'pro', guideBack: "A compliment you'd stand behind" },
+      ]
+    },
+    {
+      name: "Fair Shares",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Ask What Done Looks Like**, **Trade the Load** and **Name the Pattern** — three ways to keep things fair between you before resentment builds.\n\n• **Ask What Done Looks Like** — a task is being handed over\n• **Trade the Load** — one of you is carrying more\n• **Name the Pattern** — the same thing keeps happening\n\nThe question that decides it: is this about one task, the balance, or a repeat?\n\nThe usual wrong choice is carrying it silently and snapping later.\n\nMindset: fair is something we sort out together, early.",
+      inputs: [
+        { q: "She asks you to plan her birthday party.", a: "\"Love to. What does a great party look like for you?\" [Ask What Done Looks Like]", bundle: 'pro', guideBack: "A question about her expectations" },
+        { q: "You've done all the laundry for a month.", a: "\"Could you take the laundry for a bit, and I'll do the bins and the garden?\" [Trade the Load]", bundle: 'pro', guideBack: "One thing given, one thing asked" },
+        { q: "Every trip starts with an argument about packing.", a: "\"Our trips always start with a packing fight. Can we plan it differently?\" [Name the Pattern]", bundle: 'pro', guideBack: "A pattern, calmly, outside a fight" },
+        { q: "She asks you to deal with the garden.", a: "\"Anything you want kept, or is it mine to sort?\" [Ask What Done Looks Like]", bundle: 'pro', guideBack: "A question about her expectations" },
+        { q: "She seems to handle every doctor's appointment for the kids.", a: "\"You do all the appointments. Can I take those over, and you do the school forms?\" [Trade the Load]", bundle: 'pro', guideBack: "One thing given, one thing asked" },
+        { q: "Every conversation about money ends in silence.", a: "\"Money talks always end with us not speaking. What do you think happens?\" [Name the Pattern]", bundle: 'pro', guideBack: "A pattern, calmly, outside a fight" },
+        { q: "She asks you to choose the new sofa.", a: "\"Do you want to see options, or is it my call?\" [Ask What Done Looks Like]", bundle: 'pro', guideBack: "A question about her expectations" },
+        { q: "You always plan the dates and she never does.", a: "\"Could we take turns planning our nights out? I'd love to be surprised.\" [Trade the Load]", bundle: 'pro', guideBack: "One thing given, one thing asked" },
+      ]
+    },
+    {
+      name: "All Six Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order these moments really come.\n\nThree are about honesty: **Answer the Feeling Behind It**, **Praise You Mean** and **A Small Disagreement**. Three are about fairness: **Ask What Done Looks Like**, **Trade the Load** and **Name the Pattern**.\n\nIf you are unsure, ask: is this about what I say, or about how we share things? What I say — keep it honest and warm. How we share — make it visible and talk about it early.\n\nThe usual wrong choice is keeping the peace now and paying for it later.\n\nMindset: honest and fair, early and calmly.",
+      inputs: [
+        { q: "She asks, \"Do you think I'm too old for this dress?\"", a: "\"No — it suits you. Is something making you doubt it?\" [Answer the Feeling Behind It]", bundle: 'pro', guideBack: "An answer to what's underneath" },
+        { q: "She asks you to paint the hallway.", a: "\"Which colour, and do you want to be there when I choose?\" [Ask What Done Looks Like]", bundle: 'pro', guideBack: "A question about her expectations" },
+        { q: "She says a politician you like is useless.", a: "\"I see him a bit differently. We'll have to differ on that one.\" [A Small Disagreement]", bundle: 'pro', guideBack: "A different view, no debate" },
+        { q: "You've been doing all the school runs this term.", a: "\"Could we split the school runs, and I'll do the packed lunches?\" [Trade the Load]", bundle: 'pro', guideBack: "One thing given, one thing asked" },
+        { q: "She got a promotion after months of hard work.", a: "\"You earned every bit of this. The way you handled the restructure was brilliant.\" [Praise You Mean]", bundle: 'pro', guideBack: "A compliment you'd stand behind" },
+        { q: "Every holiday ends with an argument on the last day.", a: "\"Our last days away always seem to go wrong. Shall we look at why?\" [Name the Pattern]", bundle: 'pro', guideBack: "A pattern, calmly, outside a fight" },
+        { q: "She asks, \"Do you ever regret moving here for me?\"", a: "\"Never. What's making you wonder?\" [Answer the Feeling Behind It]", bundle: 'pro', guideBack: "An answer to what's underneath" },
+        { q: "She asks you to organise the weekly food shop.", a: "\"Happy to. Anything you always want in there?\" [Ask What Done Looks Like]", bundle: 'pro', guideBack: "A question about her expectations" },
       ]
     },
   ],

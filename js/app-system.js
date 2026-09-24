@@ -725,6 +725,8 @@ applyInputCounterVisibility();
     alexandergrace4: { label: 'Alexander Grace 4 — Saying It Early', minLevel: 'complete' },
     alexandergrace5: { label: 'Alexander Grace 5 — Steady Under Criticism', minLevel: 'complete' },
     alexandergrace6: { label: 'Alexander Grace 6 — Letting Her In', minLevel: 'complete' },
+    alexandergrace7: { label: 'Alexander Grace 7 — Hard Talks, Well Timed', minLevel: 'complete' },
+    alexandergrace8: { label: 'Alexander Grace 8 — Honest and Fair', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -3336,6 +3338,34 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
+  alexandergrace7: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  alexandergrace8: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
 };
 window.BUNDLE_DEFS = BUNDLE_DEFS;
 
@@ -4226,6 +4256,7 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.15', date: 'September 2026', title: 'Alexander Grace 7 and 8, from the third source PDF', audience: 'dev', items: ['Alexander Grace 7 — Hard Talks, Well Timed and 8 — Honest and Fair added to Communication in Relationships.', 'Built directly from videos 201–300; only two packs, because about six of the 33 videos had practical material.', 'Every ground rule and move in both packs applies to both partners.'] },
   { version: 'v1.29.14', date: 'September 2026', title: 'Three more Alexander Grace packs, from the second source PDF', audience: 'dev', items: ['Alexander Grace 4 — Saying It Early, 5 — Steady Under Criticism and 6 — Letting Her In added to Communication in Relationships.', 'Built directly from videos 101–200; the practical sections were kept and the commentary about women as a group was left out.', 'Reuses existing moves under their library names: Name It Early, Say How It Lands, Suggest What to Do Instead, Apologise for What You Did, Name the Feeling and Express Appreciation.'] },
   { version: 'v1.29.13', date: 'September 2026', title: 'Three Alexander Grace packs, built from source', audience: 'dev', items: ['Alexander Grace 1 — Saying No, 2 — Fights That End Closer and 3 — Confident Connection added to Communication in Relationships.', 'Built directly from the transcript PDF rather than through Notebook; about a quarter of the source was trainable.', 'All three sit on the complete tier: 6 strategies, 3 collections, 3 sequences, 5 challenges, 6 mindset decks and Memorize each.'] },
   {

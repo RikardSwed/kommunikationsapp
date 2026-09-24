@@ -8111,4 +8111,200 @@ const mindsetCollections = {
       ]
     },
   ],
+  alexandergrace7: [
+    {
+      name: "The Well-Timed Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If she wants to talk, I have to talk now — wherever we are.\" The pack-wide belief that timing is a luxury.\n\nWhat is true instead: when and where a hard conversation happens decides half of how it goes. Choosing a better moment — and keeping it — is taking it seriously.\n\nIt feels reasonable because putting it off can feel like dodging.\n\nWhat it costs is serious conversations had in the car, by text, or half-distracted — and remembered badly by both of you.\n\nMindset: choosing the moment is part of caring about the conversation.",
+      inputs: [
+        { q: "If she wants to talk, I have to talk now.", a: "\"If it matters, it deserves the right moment.\"", bundle: 'pro' },
+        { q: "Putting it off is dodging.", a: "\"Putting it off with a time attached is planning.\"", bundle: 'pro' },
+        { q: "I'll just deal with it in the car.", a: "\"The car is the worst place for it; home is better.\"", bundle: 'pro' },
+        { q: "I can listen and work at the same time.", a: "\"I can't, not properly; she can tell.\"", bundle: 'pro' },
+        { q: "She'll be angrier if I make her wait.", a: "\"A minute's wait with my full attention after is better.\"", bundle: 'pro' },
+        { q: "Timing doesn't matter if we love each other.", a: "\"Timing matters because we love each other.\"", bundle: 'pro' },
+        { q: "I'll wait until she brings it up again.", a: "\"I'll name a time so she doesn't have to.\"", bundle: 'pro' },
+        { q: "There's never a good time.", a: "\"There's a better time, and I can choose it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Punching Bag",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"When she's upset, anything goes.\" The belief that the upset person gets a pass on the rules.\n\nWhat is true instead: being upset explains strong feelings. It doesn't make insults or shouting okay — for either of you.\n\nIt feels reasonable because you want to be supportive, and asking for respect in the middle of her distress feels harsh.\n\nWhat it costs is a relationship where you absorb whatever comes, and where the rules only exist when they're not needed.\n\nMindset: her feelings are welcome. The rules still apply to both of us.",
+      inputs: [
+        { q: "When she's upset, anything goes.", a: "\"When she's upset, feelings are welcome and insults still aren't.\"", bundle: 'pro' },
+        { q: "I should just take it.", a: "\"I can support her without being a punching bag.\"", bundle: 'pro' },
+        { q: "Asking for respect now is heartless.", a: "\"Asking calmly is respect for both of us.\"", bundle: 'pro' },
+        { q: "She doesn't mean it when she's like this.", a: "\"Maybe not, and it's still okay to ask her not to say it.\"", bundle: 'pro' },
+        { q: "Being supportive means accepting everything.", a: "\"Being supportive means staying, not accepting everything.\"", bundle: 'pro' },
+        { q: "The rules are for when things are calm.", a: "\"The rules are for when things aren't.\"", bundle: 'pro' },
+        { q: "It's only fair — I've done it too.", a: "\"Then the rule is for me as much as for her.\"", bundle: 'pro' },
+        { q: "Saying something will make it worse.", a: "\"Saying it gently will make the next one better.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Getting My Point In",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"If I don't jump in now, I'll never get to say it.\" Half true — your point does matter.\n\nWhat is true: your side deserves to be heard, and you shouldn't swallow it.\n\nWhat gets added is that the only way to be heard is to interrupt. Interrupting makes her defend; waiting makes her ready to listen.\n\nWhat it costs is conversations where nobody finishes a sentence.\n\nMindset: keep my point. Drop the need to make it now.",
+      inputs: [
+        { q: "If I don't jump in, I'll never get to say it.", a: "\"True that my point matters — but 'I have to jump in' is the part I added.\"", bundle: 'pro' },
+        { q: "She's got the facts wrong.", a: "\"True, maybe — but 'so I must correct her mid-sentence' is the part I added.\"", bundle: 'pro' },
+        { q: "If I wait, she'll talk forever.", a: "\"True, sometimes — but 'so interrupting is fair' is the part I added.\"", bundle: 'pro' },
+        { q: "She interrupts me, so I'll interrupt her.", a: "\"True that she does — but 'so I should too' is the part I added.\"", bundle: 'pro' },
+        { q: "I need to defend myself right now.", a: "\"True that I want to — but 'right now' is the part I added.\"", bundle: 'pro' },
+        { q: "My side is just as important.", a: "\"True — but 'so it has to come first' is the part I added.\"", bundle: 'pro' },
+        { q: "Letting her finish means agreeing.", a: "\"True that she'll feel heard — but 'that I agree' is the part I added.\"", bundle: 'pro' },
+        { q: "I'll forget my point if I wait.", a: "\"True, perhaps — but 'so I can't wait' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Mind Reader",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I know what she's upset about.\" A belief that feels like understanding her — and sometimes is.\n\nWhat is true instead: you often know the surface. What's underneath — the story she's telling herself about you — is usually only guessable, and often surprising.\n\nIt feels reasonable because you know her well, and the surface looks obvious.\n\nWhat it costs is arguing about the towel when the real subject was feeling like the housekeeper.\n\nMindset: I know her well enough to know I should ask.",
+      inputs: [
+        { q: "I know what she's upset about.", a: "\"I know the surface; the story underneath, I'd have to ask.\"", bundle: 'pro' },
+        { q: "It's obviously about the dishes.", a: "\"It's obviously about the dishes, and maybe not only.\"", bundle: 'pro' },
+        { q: "I can read her like a book.", a: "\"And I still misread the last chapter.\"", bundle: 'pro' },
+        { q: "Asking would be patronising.", a: "\"Guessing wrong is worse.\"", bundle: 'pro' },
+        { q: "I've heard this argument before.", a: "\"And never found out what it was really about.\"", bundle: 'pro' },
+        { q: "She's just tired.", a: "\"Maybe; she'd know better than me.\"", bundle: 'pro' },
+        { q: "I don't need to ask, I'll fix it.", a: "\"And I fix the wrong thing.\"", bundle: 'pro' },
+        { q: "I understand her better than she thinks.", a: "\"Then asking will prove it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Proving My Intentions",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If she believes I meant it badly, I have to convince her otherwise.\" The belief that a misread motive must be argued until she agrees.\n\nWhat is true instead: one clear sentence about what you meant is enough. After that, her feeling is what needs attention — not your case.\n\nIt feels reasonable because being misread feels unjust.\n\nWhat it costs is long arguments about your character while the hurt goes untouched.\n\nMindset: I say what I meant once, then I turn to how she feels.",
+      inputs: [
+        { q: "I have to convince her I meant well.", a: "\"I have to tell her once, then listen.\"", bundle: 'pro' },
+        { q: "If she thinks badly of me, I've failed.", a: "\"If she misread me, one sentence can fix it.\"", bundle: 'pro' },
+        { q: "She's accusing me of something I didn't do.", a: "\"She's hurt by something I didn't mean; both can be true.\"", bundle: 'pro' },
+        { q: "I won't apologise for something I didn't intend.", a: "\"I can be sorry it hurt without being guilty of meaning it.\"", bundle: 'pro' },
+        { q: "She needs to admit she got it wrong.", a: "\"She needs to feel heard more than I need that.\"", bundle: 'pro' },
+        { q: "I'll keep explaining until she gets it.", a: "\"One explanation, then her feelings.\"", bundle: 'pro' },
+        { q: "My reputation with her is at stake.", a: "\"Her trust grows when I listen, not when I argue.\"", bundle: 'pro' },
+        { q: "If I don't defend myself, she'll believe the worst.", a: "\"If I defend less and listen more, she'll believe the best.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Rules Are Control",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Setting ground rules is controlling.\" The belief that agreeing how to argue is unromantic or bossy.\n\nWhat is true instead: rules imposed on one person are control. Rules agreed together and kept by both are protection — for both of you, especially on bad days.\n\nIt feels reasonable because \"rules\" sounds cold, and nobody wants a relationship run like a meeting.\n\nWhat it costs is arguments that go wherever the worst moment takes them.\n\nMindset: rules we both agree to keep us both safe.",
+      inputs: [
+        { q: "Setting ground rules is controlling.", a: "\"Rules for her alone would be; rules for both of us aren't.\"", bundle: 'pro' },
+        { q: "Couples in love don't need rules.", a: "\"Couples in love still have bad days.\"", bundle: 'pro' },
+        { q: "She'll think I'm trying to manage her.", a: "\"Not if I suggest rules that bind me first.\"", bundle: 'pro' },
+        { q: "Rules take the feeling out of it.", a: "\"Rules take the cruelty out of it.\"", bundle: 'pro' },
+        { q: "We should be able to argue naturally.", a: "\"Naturally is how the last one went wrong.\"", bundle: 'pro' },
+        { q: "It's unromantic.", a: "\"Not hurting each other is romantic.\"", bundle: 'pro' },
+        { q: "She'll never agree to rules.", a: "\"She might agree to one: no name-calling.\"", bundle: 'pro' },
+        { q: "I'll only bring up rules when she breaks them.", a: "\"I'll agree them when we're calm, and keep them first.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  alexandergrace8: [
+    {
+      name: "The Honest and Fair Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Being honest will cost me her affection.\" The pack-wide belief that a good partner says whatever keeps things pleasant.\n\nWhat is true instead: honesty said warmly makes affection more real, not less. Praise she can believe, disagreements she can survive, and fairness you can both see keep a relationship steady.\n\nIt feels reasonable because pleasant is easy, and honesty sometimes causes a moment of friction.\n\nWhat it costs is praise she can't trust, opinions she never hears, and resentment about the split.\n\nMindset: warm honesty is worth more than easy peace.",
+      inputs: [
+        { q: "Being honest will cost me her affection.", a: "\"Being honest warmly makes her affection more real.\"", bundle: 'pro' },
+        { q: "It's kinder to say what she wants to hear.", a: "\"It's kinder to say what's true, gently.\"", bundle: 'pro' },
+        { q: "I'll keep the peace.", a: "\"The peace I keep by nodding isn't real peace.\"", bundle: 'pro' },
+        { q: "She won't like me disagreeing.", a: "\"She'll get used to knowing what I think.\"", bundle: 'pro' },
+        { q: "Talking about fairness is petty.", a: "\"Talking about it early is how we avoid being petty later.\"", bundle: 'pro' },
+        { q: "I'd rather avoid any friction.", a: "\"A little friction now saves a lot later.\"", bundle: 'pro' },
+        { q: "Nice guys don't make a fuss.", a: "\"Honest guys say it once, kindly.\"", bundle: 'pro' },
+        { q: "If I'm honest, she'll leave.", a: "\"If I'm honest, she'll know who she's with.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Agreeable One",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'm easy to be with. I go along with things.\" A belief that feels like generosity, and often is.\n\nWhat is true instead: going along with most things is fine. Going along with everything means she never finds out what you think — and you start to vanish from your own relationship.\n\nIt feels reasonable because agreeing keeps things smooth, and your views don't seem important enough to raise.\n\nWhat it costs is a partner who doesn't know you, and a buildup of unspoken preferences.\n\nMindset: easy to be with, and still someone with views.",
+      inputs: [
+        { q: "I'm easy to be with.", a: "\"And she doesn't know what I actually think.\"", bundle: 'pro' },
+        { q: "I go along with things.", a: "\"Including things I don't want.\"", bundle: 'pro' },
+        { q: "My opinion doesn't really matter here.", a: "\"Until I've swallowed so many that I'm resentful.\"", bundle: 'pro' },
+        { q: "I don't mind what we do.", a: "\"I do mind, a bit, and I never say.\"", bundle: 'pro' },
+        { q: "I'm flexible.", a: "\"Flexible, and slowly disappearing.\"", bundle: 'pro' },
+        { q: "Whatever makes her happy.", a: "\"And my happiness is left out of the plan.\"", bundle: 'pro' },
+        { q: "I don't like conflict.", a: "\"And I've made my own view the casualty.\"", bundle: 'pro' },
+        { q: "She's better at deciding.", a: "\"Because I've stopped practising.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Reassurance",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"When she's unsure, I should tell her whatever makes her feel better.\" Half true — reassurance is a kindness.\n\nWhat is true: when she's worried, she deserves warmth and comfort from you.\n\nWhat gets added is that anything goes — exaggerations, compliments you don't mean. Those feel kind for a moment and then stop being believed.\n\nWhat it costs is praise that loses its value, and a worry that never gets looked at.\n\nMindset: keep the comfort. Drop anything I don't mean.",
+      inputs: [
+        { q: "I should tell her whatever makes her feel better.", a: "\"True that she deserves comfort — but 'whatever works' is the part I added.\"", bundle: 'pro' },
+        { q: "A little exaggeration is harmless.", a: "\"True, once — but 'every time' is the part I added.\"", bundle: 'pro' },
+        { q: "She just wants to hear yes.", a: "\"True, perhaps — but 'so I shouldn't ask why' is the part I added.\"", bundle: 'pro' },
+        { q: "Asking what's behind it will upset her.", a: "\"True, maybe for a moment — but 'so I shouldn't ask' is the part I added.\"", bundle: 'pro' },
+        { q: "Honest praise isn't enough.", a: "\"True that she wants more — but 'so I should invent it' is the part I added.\"", bundle: 'pro' },
+        { q: "Reassuring her is my job.", a: "\"True, partly — but 'with any words that work' is the part I added.\"", bundle: 'pro' },
+        { q: "She'll feel rejected if I don't say she's the most beautiful woman alive.", a: "\"True she wants to feel beautiful — but 'the most' is the part I added.\"", bundle: 'pro' },
+        { q: "Keeping her happy is kindness.", a: "\"True — but 'at the cost of honesty' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Keeping Score",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I mention how much I do, I'm keeping score.\" The belief that raising fairness is petty.\n\nWhat is true instead: keeping score in your head, silently, is the petty version. Saying it out loud, with a trade on the table, is how you stop keeping score.\n\nIt feels reasonable because nobody wants to be the partner who counts who did the dishes.\n\nWhat it costs is a silent tally that grows until it comes out as resentment.\n\nMindset: saying it out loud is how I stop counting.",
+      inputs: [
+        { q: "If I mention how much I do, I'm keeping score.", a: "\"If I don't, I'll keep score in my head.\"", bundle: 'pro' },
+        { q: "Real partners don't count.", a: "\"Real partners talk about it before they start counting.\"", bundle: 'pro' },
+        { q: "She'll think I'm petty.", a: "\"Not if I offer a trade, not a complaint.\"", bundle: 'pro' },
+        { q: "It all evens out in the end.", a: "\"It evens out if we talk about it.\"", bundle: 'pro' },
+        { q: "I should just do it without complaining.", a: "\"I can do it and still ask for a fairer split.\"", bundle: 'pro' },
+        { q: "Bringing it up will start a row.", a: "\"A trade starts a conversation, not a row.\"", bundle: 'pro' },
+        { q: "I don't want to seem ungrateful for what she does.", a: "\"I can ask what she carries too.\"", bundle: 'pro' },
+        { q: "It's only the cooking.", a: "\"It's the cooking every day for months.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Every Fight Is New",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Raising a pattern is an attack.\" The belief that you should deal with each fight on its own, and never step back to look at the shape.\n\nWhat is true instead: a pattern raised calmly, as something you both do, is the opposite of an attack. It's the only way to stop having the same fight.\n\nIt feels reasonable because saying \"this always happens\" sounds like a complaint about her.\n\nWhat it costs is the same argument, again and again, never really solved.\n\nMindset: talking about the pattern is how we stop repeating it.",
+      inputs: [
+        { q: "Raising a pattern is an attack.", a: "\"Raising it calmly, as something we both do, isn't.\"", bundle: 'pro' },
+        { q: "Each fight is its own fight.", a: "\"Each fight looks like the last one; that's worth noticing.\"", bundle: 'pro' },
+        { q: "Bringing up old fights is unfair.", a: "\"Bringing up the shape of them, calmly, is fair.\"", bundle: 'pro' },
+        { q: "She'll think I'm blaming her.", a: "\"Not if I say 'we' and ask what she thinks.\"", bundle: 'pro' },
+        { q: "Better to just get through it.", a: "\"Getting through it is how it comes back.\"", bundle: 'pro' },
+        { q: "Talking about patterns is therapy talk.", a: "\"It's just noticing what keeps happening.\"", bundle: 'pro' },
+        { q: "I'll raise it next time it happens.", a: "\"I'll raise it when we're calm, not during.\"", bundle: 'pro' },
+        { q: "It'll stop on its own.", a: "\"It hasn't yet.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Her Mood Is My Job",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If she's unhappy, it's my job to fix it.\" The belief that you are responsible for keeping her mood steady.\n\nWhat is true instead: you can care about how she feels, ask about it, and comfort her. You can't manage her feelings for her — and trying to leads to saying whatever will calm her, true or not.\n\nIt feels reasonable because you love her, and her unhappiness feels like your failure.\n\nWhat it costs is constant scanning of her mood, compliments you don't mean, and never saying what you think.\n\nMindset: I care about her mood. I'm not in charge of it.",
+      inputs: [
+        { q: "If she's unhappy, it's my job to fix it.", a: "\"If she's unhappy, it's my job to care and ask.\"", bundle: 'pro' },
+        { q: "I have to keep her in a good mood.", a: "\"I can't keep anyone in a mood; I can be kind.\"", bundle: 'pro' },
+        { q: "Her bad day means I did something wrong.", a: "\"Her bad day might have nothing to do with me.\"", bundle: 'pro' },
+        { q: "I'll say whatever calms her down.", a: "\"I'll say what's true, calmly.\"", bundle: 'pro' },
+        { q: "I'm always watching how she feels.", a: "\"I can notice without being on guard.\"", bundle: 'pro' },
+        { q: "If she's upset, I've failed.", a: "\"If she's upset, she's a person having a feeling.\"", bundle: 'pro' },
+        { q: "It's my responsibility to make her happy.", a: "\"It's my responsibility to be good to her.\"", bundle: 'pro' },
+        { q: "She'll be fine if I just agree.", a: "\"She'll be fine, and I'll disappear a bit more.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };

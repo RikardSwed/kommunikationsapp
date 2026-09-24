@@ -11360,4 +11360,218 @@ const multiStepCollections = {
       ]
     },
   ],
+  alexandergrace7: [
+    {
+      name: "Not Here, Not Now — But Soon",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Set a Time to Talk**, then **Let Her Finish, Then Speak**, then **Clear Up What You Meant**. How to handle something that blows up in the wrong place.\n\n1. **Set a Time to Talk** — agree when and where.\n2. **Let Her Finish, Then Speak** — when you sit down, let her go first, all the way.\n3. **Clear Up What You Meant** — then correct the misunderstanding, briefly.\n\nWhy this order: the right place gives the conversation a chance. Letting her go first means she's heard before you correct anything. The correction, last and short, lands as information rather than defence.\n\nThe usual order is arguing in the car and correcting her before she's finished.\n\nMindset: later, her first, then me.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She gets upset in the supermarket because she thinks you rolled your eyes at her.",
+          steps: [
+            { front: "Set a Time to Talk — she's glaring at you by the checkout.", back: "\"I can see you're upset. Let's pay, get home, and talk properly.\"", guideFront: "Agree a when and a where when...", guideBack: "A time and a place for it" },
+            { front: "Let Her Finish, Then Speak — at home, she starts explaining.", back: "\"Go on. I'm listening — I'll say my bit after.\"", guideFront: "Hear her all the way when...", guideBack: "Her side heard, then yours" },
+            { front: "Clear Up What You Meant — she finishes.", back: "\"I wasn't rolling my eyes at you — I was annoyed at the queue. I see why it looked like it was you.\"", guideFront: "Correct the motive, gently, when...", guideBack: "What you meant, then her feeling" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She brings up your spending in front of your friends at dinner.",
+          steps: [
+            { front: "Set a Time to Talk — your friends go quiet.", back: "\"Let's talk about the money at home tomorrow — properly.\"", guideFront: "Agree a when and a where when...", guideBack: "A time and a place for it" },
+            { front: "Let Her Finish, Then Speak — the next morning, she explains her worries.", back: "\"Thank you. Is there anything else?\"", guideFront: "Hear her all the way when...", guideBack: "Her side heard, then yours" },
+            { front: "Clear Up What You Meant — she thinks you bought the bike to spite her.", back: "\"I bought it for commuting, not to annoy you. I get why it felt like I didn't care about the budget.\"", guideFront: "Correct the motive, gently, when...", guideBack: "What you meant, then her feeling" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She messages you angrily at work because you liked an old friend's photo.",
+          steps: [
+            { front: "Set a Time to Talk — you're in a meeting in five minutes.", back: "\"I don't want to do this by message. Can we talk at seven?\"", guideFront: "Agree a when and a where when...", guideBack: "A time and a place for it" },
+            { front: "Let Her Finish, Then Speak — at seven, she tells you how it felt.", back: "\"Go on — I want to hear all of it.\"", guideFront: "Hear her all the way when...", guideBack: "Her side heard, then yours" },
+            { front: "Clear Up What You Meant — she's done.", back: "\"It was a picture of her new baby — nothing more. I understand why it worried you.\"", guideFront: "Correct the motive, gently, when...", guideBack: "What you meant, then her feeling" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Small Thing That Isn't",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**One Minute, Then I'm Yours**, then **Ask What She's Telling Herself**, then **Let Her Finish, Then Speak**. How to handle a big reaction to something small.\n\n1. **One Minute, Then I'm Yours** — stop what you're doing, properly.\n2. **Ask What She's Telling Herself** — look for the story under the small thing.\n3. **Let Her Finish, Then Speak** — let her tell you all of it, then respond.\n\nWhy this order: full attention first, because distracted curiosity isn't curiosity. The question finds the real subject. Letting her finish means the real subject gets said all the way through.\n\nThe usual order is arguing about the small thing while still looking at your phone.\n\nMindset: stop, ask, and listen to the end.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You're on your laptop, and she's upset that you left a wet towel on the bed.",
+          steps: [
+            { front: "One Minute, Then I'm Yours — she's standing in the doorway.", back: "\"Give me ten seconds — I'm closing this. Right, I'm here.\"", guideFront: "Ask for a moment when...", guideBack: "A short wait, with full attention promised" },
+            { front: "Ask What She's Telling Herself — she says, \"It's always the same.\"", back: "\"I don't think this is just the towel. What are you telling yourself about me?\"", guideFront: "Ask about the story she's hearing when...", guideBack: "A question about what she believes" },
+            { front: "Let Her Finish, Then Speak — she says she feels like the housekeeper.", back: "\"Go on — I want to hear all of it before I say anything.\"", guideFront: "Hear her all the way when...", guideBack: "Her side heard, then yours" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You're watching football, and she's angry you didn't ask how her interview went.",
+          steps: [
+            { front: "One Minute, Then I'm Yours — she walks past the TV.", back: "(You pause it.) \"Sorry — I'm here now. What's up?\"", guideFront: "Ask for a moment when...", guideBack: "A short wait, with full attention promised" },
+            { front: "Ask What She's Telling Herself — she says, \"You never ask about my stuff.\"", back: "\"When did you start feeling that way? I want to understand.\"", guideFront: "Ask about the story she's hearing when...", guideBack: "A question about what she believes" },
+            { front: "Let Her Finish, Then Speak — she says it's been months.", back: "\"Tell me everything — including the interview.\"", guideFront: "Hear her all the way when...", guideBack: "Her side heard, then yours" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You're cooking, and she's upset that you forgot to buy her favourite yoghurt.",
+          steps: [
+            { front: "One Minute, Then I'm Yours — the pan is hot.", back: "\"One second — heat's off. Okay, I'm listening.\"", guideFront: "Ask for a moment when...", guideBack: "A short wait, with full attention promised" },
+            { front: "Ask What She's Telling Herself — she's close to tears.", back: "\"This seems bigger than yoghurt. What's going on for you?\"", guideFront: "Ask about the story she's hearing when...", guideBack: "A question about what she believes" },
+            { front: "Let Her Finish, Then Speak — she says work has been awful and nobody notices.", back: "\"Keep going. I've got all the time you need.\"", guideFront: "Hear her all the way when...", guideBack: "Her side heard, then yours" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Next Argument",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Same Rules for Both**, then **Let Her Finish, Then Speak**, then **Clear Up What You Meant**. How to use agreed rules when an argument starts.\n\n1. **Same Rules for Both** — bring the conversation back to the rules you agreed.\n2. **Let Her Finish, Then Speak** — take turns, properly.\n3. **Clear Up What You Meant** — when it's your turn, correct the misunderstanding briefly.\n\nWhy this order: the rules stop it getting ugly. Turns stop it becoming two speeches. A short correction, in your turn, is heard rather than fought.\n\nThe usual order is insults, interruptions, and a long defence.\n\nMindset: rules, turns, then my bit.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "An argument about the holidays is getting loud.",
+          steps: [
+            { front: "Same Rules for Both — she says, \"You're so selfish.\"", back: "\"We agreed no labels — both of us. Can we stick to what happened?\"", guideFront: "Name the ground rules when...", guideBack: "A rule that binds you both" },
+            { front: "Let Her Finish, Then Speak — she explains why she wanted her family's place this year.", back: "\"Go on — I'll wait until you're done.\"", guideFront: "Hear her all the way when...", guideBack: "Her side heard, then yours" },
+            { front: "Clear Up What You Meant — it's your turn.", back: "\"I didn't book my parents' to avoid yours — they asked first. I see why it felt like a choice against you.\"", guideFront: "Correct the motive, gently, when...", guideBack: "What you meant, then her feeling" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She brings up your ex during an argument about late nights.",
+          steps: [
+            { front: "Same Rules for Both — she says, \"Just like with her.\"", back: "\"We said old stuff stays old. This is about us.\"", guideFront: "Name the ground rules when...", guideBack: "A rule that binds you both" },
+            { front: "Let Her Finish, Then Speak — she says the late nights make her feel alone.", back: "\"Thank you. Is there more?\"", guideFront: "Hear her all the way when...", guideBack: "Her side heard, then yours" },
+            { front: "Clear Up What You Meant — she's done.", back: "\"I'm working late for the promotion, not to be away from you. I get why it feels lonely.\"", guideFront: "Correct the motive, gently, when...", guideBack: "What you meant, then her feeling" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You raise your voice in an argument about her brother.",
+          steps: [
+            { front: "Same Rules for Both — you hear yourself.", back: "\"Sorry — we said no shouting, and that includes me.\"", guideFront: "Name the ground rules when...", guideBack: "A rule that binds you both" },
+            { front: "Let Her Finish, Then Speak — she says her brother needs the money.", back: "\"Okay. Tell me everything about it.\"", guideFront: "Hear her all the way when...", guideBack: "Her side heard, then yours" },
+            { front: "Clear Up What You Meant — she thinks you don't like her brother.", back: "\"I like him. I'm worried about the money, not about him. I see why it came across wrong.\"", guideFront: "Correct the motive, gently, when...", guideBack: "What you meant, then her feeling" },
+          ]
+        },
+      ]
+    },
+  ],
+  alexandergrace8: [
+    {
+      name: "The Loaded Question",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Answer the Feeling Behind It**, then **Praise You Mean**, then **A Small Disagreement**. How to answer \"Am I…?\" questions honestly and warmly.\n\n1. **Answer the Feeling Behind It** — ask what's behind the question.\n2. **Praise You Mean** — give her something true and specific.\n3. **A Small Disagreement** — if she's harsh about herself, say you see it differently.\n\nWhy this order: the question comes from a feeling, so start there. Honest praise answers the worry with something she can believe. The small disagreement stops her harsh view of herself from being the last word.\n\nThe usual order is a quick, empty \"Of course you are\" — and the worry stays.\n\nMindset: ask, praise truly, and disagree with her unkindness to herself.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She asks, \"Do you think I'm interesting?\" after a dinner where she said little.",
+          steps: [
+            { front: "Answer the Feeling Behind It — you're driving home.", back: "\"Very. Did tonight make you feel like you weren't?\"", guideFront: "Respond to the worry when...", guideBack: "An answer to what's underneath" },
+            { front: "Praise You Mean — she says everyone else had big stories.", back: "\"Your story about the lost suitcase had them laughing the hardest. I watched.\"", guideFront: "Give honest praise when...", guideBack: "A compliment you'd stand behind" },
+            { front: "A Small Disagreement — she says, \"I'm just not a party person.\"", back: "\"I see it differently. You're great in small groups — that one was just loud.\"", guideFront: "Differ calmly in passing when...", guideBack: "A different view, no debate" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She asks, \"Would you still fancy me if I stopped wearing make-up?\"",
+          steps: [
+            { front: "Answer the Feeling Behind It — she's looking in the mirror.", back: "\"Yes. Is something making you worry about that today?\"", guideFront: "Respond to the worry when...", guideBack: "An answer to what's underneath" },
+            { front: "Praise You Mean — she says her skin looks tired.", back: "\"You look like you on a Saturday morning, which is my favourite version.\"", guideFront: "Give honest praise when...", guideBack: "A compliment you'd stand behind" },
+            { front: "A Small Disagreement — she says, \"I look awful without it.\"", back: "\"I disagree — and I'm the one looking at you most.\"", guideFront: "Differ calmly in passing when...", guideBack: "A different view, no debate" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She asks, \"Am I a bad daughter?\" after a phone call with her mother.",
+          steps: [
+            { front: "Answer the Feeling Behind It — she's put the phone down.", back: "\"No. What did your mum say?\"", guideFront: "Respond to the worry when...", guideBack: "An answer to what's underneath" },
+            { front: "Praise You Mean — she says she forgot to call last week.", back: "\"You drove three hours to see her last month when she was ill. That's a good daughter.\"", guideFront: "Give honest praise when...", guideBack: "A compliment you'd stand behind" },
+            { front: "A Small Disagreement — she says, \"I never do enough for her.\"", back: "\"I see it differently. You do a lot — she just doesn't always say so.\"", guideFront: "Differ calmly in passing when...", guideBack: "A different view, no debate" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Redone Task",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Ask What Done Looks Like**, then **Name the Pattern**, then **Trade the Load**. What to do when your work keeps getting redone.\n\n1. **Ask What Done Looks Like** — next time, ask about the standard first.\n2. **Name the Pattern** — if it keeps happening, raise the pattern calmly.\n3. **Trade the Load** — agree who owns what, so it stops.\n\nWhy this order: the question fixes the next instance. Naming the pattern deals with the repeats. The trade ends it — each of you owns a task, done your way.\n\nThe usual order is quietly doing it worse on purpose, or giving up altogether.\n\nMindset: ask, name it, then divide it.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She keeps reloading the dishwasher after you've loaded it.",
+          steps: [
+            { front: "Ask What Done Looks Like — tonight, you're about to load it.", back: "\"Show me how you like it done? I'll do it your way.\"", guideFront: "Clarify the standard when...", guideBack: "A question about her expectations" },
+            { front: "Name the Pattern — she still reloads it the next day.", back: "\"I've noticed the dishwasher gets redone most nights. I'd like to talk about that — it gets to me a bit.\"", guideFront: "Raise the recurring thing when...", guideBack: "A pattern, calmly, outside a fight" },
+            { front: "Trade the Load — she says she's particular about it.", back: "\"Then how about the dishwasher's yours, and I take the pans and the surfaces?\"", guideFront: "Rebalance openly when...", guideBack: "One thing given, one thing asked" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She rewrites every birthday card you've written to her family.",
+          steps: [
+            { front: "Ask What Done Looks Like — her sister's birthday is next week.", back: "\"What do you like in a card to your sister? I'll write it that way.\"", guideFront: "Clarify the standard when...", guideBack: "A question about her expectations" },
+            { front: "Name the Pattern — she rewrites it anyway.", back: "\"The cards always get rewritten. I'd rather know than keep guessing.\"", guideFront: "Raise the recurring thing when...", guideBack: "A pattern, calmly, outside a fight" },
+            { front: "Trade the Load — she laughs and says she likes doing them.", back: "\"Then the cards are yours, and I'll handle the presents.\"", guideFront: "Rebalance openly when...", guideBack: "One thing given, one thing asked" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She re-folds the washing after you've folded it.",
+          steps: [
+            { front: "Ask What Done Looks Like — you're taking the basket upstairs.", back: "\"Quick one — how do you like the towels folded?\"", guideFront: "Clarify the standard when...", guideBack: "A question about her expectations" },
+            { front: "Name the Pattern — it's still being re-folded a week later.", back: "\"I think we both end up doing the washing twice. Can we talk about that?\"", guideFront: "Raise the recurring thing when...", guideBack: "A pattern, calmly, outside a fight" },
+            { front: "Trade the Load — she agrees it's silly.", back: "\"What if you fold, and I do all the washing and drying?\"", guideFront: "Rebalance openly when...", guideBack: "One thing given, one thing asked" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Going Along With It",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**A Small Disagreement**, then **Name the Pattern**, then **Trade the Load**. What to do when you've been agreeing to everything to keep the peace.\n\n1. **A Small Disagreement** — start saying what you actually think, in small doses.\n2. **Name the Pattern** — at a calm time, say you've noticed you always go along.\n3. **Trade the Load** — agree to share the decisions.\n\nWhy this order: small disagreements are practice, and show her you have a view. Naming the pattern explains the change without blame. The trade gives you both a fair share of the choosing.\n\nThe usual order is years of \"whatever you want\", then a sudden outburst.\n\nMindset: small honesty now, one calm talk, then a fair share.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She chooses every holiday, and you've never said what you'd like.",
+          steps: [
+            { front: "A Small Disagreement — she suggests the same beach resort as last year.", back: "\"I'd actually love somewhere different this year. What about the mountains?\"", guideFront: "Differ calmly in passing when...", guideBack: "A different view, no debate" },
+            { front: "Name the Pattern — she looks surprised.", back: "\"I've realised I always go along with the holiday plans, and I haven't told you what I'd like. That's on me.\"", guideFront: "Raise the recurring thing when...", guideBack: "A pattern, calmly, outside a fight" },
+            { front: "Trade the Load — she says, \"You never said.\"", back: "\"Fair. How about we take turns choosing — you this year, me next?\"", guideFront: "Rebalance openly when...", guideBack: "One thing given, one thing asked" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She always picks the restaurant, and you always say \"wherever you like\".",
+          steps: [
+            { front: "A Small Disagreement — she suggests sushi again.", back: "\"I'm not feeling sushi tonight. Curry?\"", guideFront: "Differ calmly in passing when...", guideBack: "A different view, no debate" },
+            { front: "Name the Pattern — later, at home.", back: "\"I've noticed I always say 'wherever you like'. I think I've stopped having opinions.\"", guideFront: "Raise the recurring thing when...", guideBack: "A pattern, calmly, outside a fight" },
+            { front: "Trade the Load — she laughs.", back: "\"Let's alternate — I'll pick next Friday.\"", guideFront: "Rebalance openly when...", guideBack: "One thing given, one thing asked" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She decides every weekend plan, and you've started to dread weekends.",
+          steps: [
+            { front: "A Small Disagreement — she suggests a visit to friends on Saturday.", back: "\"I'd like a quiet one this weekend, if that's okay.\"", guideFront: "Differ calmly in passing when...", guideBack: "A different view, no debate" },
+            { front: "Name the Pattern — Sunday evening.", back: "\"I've realised I agree to every plan and then feel tired. I should say more.\"", guideFront: "Raise the recurring thing when...", guideBack: "A pattern, calmly, outside a fight" },
+            { front: "Trade the Load — she asks what you'd like.", back: "\"One weekend each? You plan one, I plan the next.\"", guideFront: "Rebalance openly when...", guideBack: "One thing given, one thing asked" },
+          ]
+        },
+      ]
+    },
+  ],
 };

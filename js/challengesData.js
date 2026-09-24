@@ -7506,4 +7506,168 @@ const challengesCollections = {
       ]
     },
   ],
+  alexandergrace7: [
+    {
+      name: "Caught Mid-Task",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She needs you — news, a worry, something important — and you're in the middle of something.\n\nWhat goes wrong is half-listening. You answer from behind the screen, and she feels exactly how much of you she's getting.\n\n**One Minute, Then I'm Yours** is the main move. **Set a Time to Talk** if it's bigger than a minute can fix.\n\nThe one thing to avoid: \"Mm-hm\" without looking up.\n\nMindset: a short wait and all of me beats instant half of me.",
+      inputs: [
+        { q: "You're writing an important email, and she wants to tell you something.", a: "\"One minute to send this, then I'm yours.\" [One Minute, Then I'm Yours]", bundle: 'pro', guideBack: "A short wait, with full attention promised" },
+        { q: "You're about to say \"mm-hm\" without looking up.", a: "(You look up.) \"Sorry — one second. Okay, go on.\" [One Minute, Then I'm Yours]", bundle: 'pro', guideBack: "A short wait, with full attention promised" },
+        { q: "You're driving in heavy traffic, and she wants to talk about your relationship.", a: "\"I really want to talk about this. Can we do it when we're parked?\" [Set a Time to Talk]", bundle: 'pro', guideBack: "A time and a place for it" },
+        { q: "You're mid-game, and she sits down next to you looking upset.", a: "\"I'm quitting this now. What's wrong?\" [One Minute, Then I'm Yours]", bundle: 'pro', guideBack: "A short wait, with full attention promised" },
+        { q: "You're on a work deadline, and she wants to plan the wedding.", a: "\"I want to do this properly. Tomorrow evening, after the deadline?\" [Set a Time to Talk]", bundle: 'pro', guideBack: "A time and a place for it" },
+        { q: "You're fixing the bike, hands covered in oil.", a: "\"Let me wash my hands — thirty seconds — then I'm listening.\" [One Minute, Then I'm Yours]", bundle: 'pro', guideBack: "A short wait, with full attention promised" },
+        { q: "You said \"one minute\" ten minutes ago.", a: "\"Sorry, that was longer than a minute. Laptop's shut. Go on.\" [One Minute, Then I'm Yours]", bundle: 'pro', guideBack: "A short wait, with full attention promised" },
+        { q: "She says, \"Forget it, you're busy.\"", a: "\"I'm not too busy for you. Give me one second.\" [One Minute, Then I'm Yours]", bundle: 'pro', guideBack: "A short wait, with full attention promised" },
+      ]
+    },
+    {
+      name: "Wrong Place",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Something serious has come up somewhere it can't be dealt with — in the car, at a party, by text, in front of the children.\n\nWhat goes wrong is either having it out there anyway, or saying \"not now\" and never coming back to it.\n\n**Set a Time to Talk** is the main move. **One Minute, Then I'm Yours** when the wait can be short.\n\nThe one thing to avoid: \"Not now\" with no time attached.\n\nMindset: not here — and here's when.",
+      inputs: [
+        { q: "She starts crying at a family dinner.", a: "(Quietly.) \"Shall we step outside for a minute, just us?\" [Set a Time to Talk]", bundle: 'pro', guideBack: "A time and a place for it" },
+        { q: "She brings up an argument over text while you're at work.", a: "\"I want to talk about this properly. Tonight at seven?\" [Set a Time to Talk]", bundle: 'pro', guideBack: "A time and a place for it" },
+        { q: "You're about to say \"Not now.\"", a: "\"Not here — tonight, when it's just us.\" [Set a Time to Talk]", bundle: 'pro', guideBack: "A time and a place for it" },
+        { q: "The children are listening from the back seat.", a: "\"Let's talk about this after they're asleep.\" [Set a Time to Talk]", bundle: 'pro', guideBack: "A time and a place for it" },
+        { q: "She's upset in the queue at the airport.", a: "\"Let's get through security and find a quiet corner.\" [One Minute, Then I'm Yours]", bundle: 'pro', guideBack: "A short wait, with full attention promised" },
+        { q: "She says, \"You always put things off.\"", a: "\"Not this. Eight o'clock, kitchen table. I'll be there.\" [Set a Time to Talk]", bundle: 'pro', guideBack: "A time and a place for it" },
+        { q: "She starts a serious talk at midnight when you're both exhausted.", a: "\"This matters too much for midnight. First thing tomorrow?\" [Set a Time to Talk]", bundle: 'pro', guideBack: "A time and a place for it" },
+        { q: "You agreed to talk at seven, and it's seven.", a: "\"Right — phone's away. I'm ready when you are.\" [Set a Time to Talk]", bundle: 'pro', guideBack: "A time and a place for it" },
+      ]
+    },
+    {
+      name: "Talking Over Each Other",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You're both talking, nobody's finishing, and each of you is only listening for the gap to jump in.\n\nWhat goes wrong is that the conversation turns into two speeches. Nothing is heard, and both of you leave feeling unheard.\n\n**Let Her Finish, Then Speak** is the main move. **Same Rules for Both** if interrupting has become the pattern.\n\nThe one thing to avoid: talking louder to win the floor.\n\nMindset: waiting my turn is how I get a real one.",
+      inputs: [
+        { q: "You both start talking at the same time.", a: "\"You go first. I'll wait.\" [Let Her Finish, Then Speak]", bundle: 'pro', guideBack: "Her side heard, then yours" },
+        { q: "She interrupts you for the third time.", a: "\"Can I finish this sentence? Then I'm all ears.\" [Let Her Finish, Then Speak]", bundle: 'pro', guideBack: "Her side heard, then yours" },
+        { q: "You're about to raise your voice to be heard.", a: "\"Let's slow down. You first, then me.\" [Let Her Finish, Then Speak]", bundle: 'pro', guideBack: "Her side heard, then yours" },
+        { q: "Every argument ends with you both shouting over each other.", a: "\"Can we agree — one person talks at a time? Both of us.\" [Same Rules for Both]", bundle: 'pro', guideBack: "A rule that binds you both" },
+        { q: "She stops, expecting you to jump in.", a: "\"Keep going. I'm still listening.\" [Let Her Finish, Then Speak]", bundle: 'pro', guideBack: "Her side heard, then yours" },
+        { q: "She finishes her point.", a: "\"Thank you. Can I tell you mine now?\" [Let Her Finish, Then Speak]", bundle: 'pro', guideBack: "Her side heard, then yours" },
+        { q: "You interrupt her with a correction.", a: "\"Sorry — I cut you off. Go on.\" [Let Her Finish, Then Speak]", bundle: 'pro', guideBack: "Her side heard, then yours" },
+        { q: "She says, \"You never let me talk.\"", a: "\"Then let's try: you talk, I listen, then I talk.\" [Same Rules for Both]", bundle: 'pro', guideBack: "A rule that binds you both" },
+      ]
+    },
+    {
+      name: "She Read It Wrong",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She's upset about something you did — and she's read a motive into it that you didn't have.\n\nWhat goes wrong is one of two extremes: you let the wrong reading stand, or you argue about your intentions for an hour and never touch her feeling.\n\n**Clear Up What You Meant** is the main move. **Ask What She's Telling Herself** when the reading reveals a bigger worry.\n\nThe one thing to avoid: \"You're overreacting.\"\n\nMindset: one sentence for my intent, then back to her feeling.",
+      inputs: [
+        { q: "She thinks you cleaned the kitchen to make a point.", a: "\"I cleaned it because I had time, not to make a point. I see why it looked like one.\" [Clear Up What You Meant]", bundle: 'pro', guideBack: "What you meant, then her feeling" },
+        { q: "She thinks you didn't invite her to the work party because you're embarrassed of her.", a: "\"What are you telling yourself about why I didn't ask?\" [Ask What She's Telling Herself]", bundle: 'pro', guideBack: "A question about what she believes" },
+        { q: "You're about to say, \"You're overreacting.\"", a: "\"That's not what I meant. I get why it felt like that, though.\" [Clear Up What You Meant]", bundle: 'pro', guideBack: "What you meant, then her feeling" },
+        { q: "She thinks your silence at dinner means you're angry.", a: "\"I'm not angry — I'm tired. I see why the quiet looked like it.\" [Clear Up What You Meant]", bundle: 'pro', guideBack: "What you meant, then her feeling" },
+        { q: "She thinks you gave her a cookbook because you don't like her cooking.", a: "\"I love your cooking — I thought you'd enjoy it. I'm sorry it felt like a hint.\" [Clear Up What You Meant]", bundle: 'pro', guideBack: "What you meant, then her feeling" },
+        { q: "She says, \"You obviously don't want to marry me.\"", a: "\"What have I done that makes you believe that?\" [Ask What She's Telling Herself]", bundle: 'pro', guideBack: "A question about what she believes" },
+        { q: "You feel like explaining your reasons for ten minutes.", a: "\"One sentence: I meant well. Tell me how it felt for you.\" [Clear Up What You Meant]", bundle: 'pro', guideBack: "What you meant, then her feeling" },
+        { q: "She says, \"So I'm just imagining it?\"", a: "\"No. The feeling's real. I just want you to know what I meant.\" [Clear Up What You Meant]", bundle: 'pro', guideBack: "What you meant, then her feeling" },
+      ]
+    },
+    {
+      name: "Rules Only When Calm",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You've agreed how you'll argue — and then, when one of you is upset, the rules quietly stop applying.\n\nWhat goes wrong is letting the upset person have a pass, or using the rules as weapons to win.\n\n**Same Rules for Both** is the main move. **Let Her Finish, Then Speak** to show you're keeping the rules yourself.\n\nThe one thing to avoid: \"You broke the rules, so I win.\"\n\nMindset: the rules are for both of us, especially when it's hard.",
+      inputs: [
+        { q: "She says, \"I'm too upset to care about rules.\"", a: "\"That's when they matter most — for both of us.\" [Same Rules for Both]", bundle: 'pro', guideBack: "A rule that binds you both" },
+        { q: "You're tempted to point out every rule she's broken.", a: "(To yourself.) \"The rules are to protect us, not to score points.\" [Same Rules for Both]", bundle: 'pro', guideBack: "A rule that binds you both" },
+        { q: "You've just broken a rule yourself.", a: "\"I just did the thing we said we wouldn't. Sorry.\" [Same Rules for Both]", bundle: 'pro', guideBack: "A rule that binds you both" },
+        { q: "She interrupts you, breaking your agreed rule.", a: "\"Can I finish? Then I'll listen to all of yours.\" [Let Her Finish, Then Speak]", bundle: 'pro', guideBack: "Her side heard, then yours" },
+        { q: "You've never agreed any rules.", a: "\"Can we talk about how we argue? When we're both calm.\" [Same Rules for Both]", bundle: 'pro', guideBack: "A rule that binds you both" },
+        { q: "She calls you a name in the heat of it.", a: "\"We said no names — both of us. Let's keep to that.\" [Same Rules for Both]", bundle: 'pro', guideBack: "A rule that binds you both" },
+        { q: "She says, \"The rules are just for you to win.\"", a: "\"They're for me too. Hold me to them.\" [Same Rules for Both]", bundle: 'pro', guideBack: "A rule that binds you both" },
+        { q: "You want to jump in while she's explaining.", a: "(You wait.) \"Go on. My turn after.\" [Let Her Finish, Then Speak]", bundle: 'pro', guideBack: "Her side heard, then yours" },
+      ]
+    },
+  ],
+  alexandergrace8: [
+    {
+      name: "The Loaded Question",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She asks something that sounds like a question but is really a worry — \"Am I pretty?\", \"Do you still love me?\", \"Am I boring?\"\n\nWhat goes wrong is answering only the words: a quick \"of course\" that doesn't reach the worry, or a literal answer that misses the point.\n\n**Answer the Feeling Behind It** is the main move. **Praise You Mean** to give her something true to hold on to.\n\nThe one thing to avoid: \"Why are you asking me that again?\"\n\nMindset: some questions are feelings, and deserve an answer to the feeling.",
+      inputs: [
+        { q: "She asks, \"Do you think I'm pretty?\"", a: "\"Very. Has something made you doubt it today?\" [Answer the Feeling Behind It]", bundle: 'pro', guideBack: "An answer to what's underneath" },
+        { q: "You're about to say, \"Why are you asking me that again?\"", a: "\"I'll always say yes. Is something worrying you?\" [Answer the Feeling Behind It]", bundle: 'pro', guideBack: "An answer to what's underneath" },
+        { q: "She asks, \"Am I too much?\"", a: "\"No. You're a lot, in the best way. Did someone say that?\" [Answer the Feeling Behind It]", bundle: 'pro', guideBack: "An answer to what's underneath" },
+        { q: "She asks, \"Do you think I'm clever?\" after a hard exam.", a: "\"You got through that whole course while working. That's clever.\" [Praise You Mean]", bundle: 'pro', guideBack: "A compliment you'd stand behind" },
+        { q: "She asks, \"Would you leave me for someone younger?\"", a: "\"No. What's made you think about that?\" [Answer the Feeling Behind It]", bundle: 'pro', guideBack: "An answer to what's underneath" },
+        { q: "She asks, \"Am I a good cook?\"", a: "\"Your curry is the best thing I eat all week.\" [Praise You Mean]", bundle: 'pro', guideBack: "A compliment you'd stand behind" },
+        { q: "She asks, \"Are you bored of me?\"", a: "\"Not at all. Have I been distant?\" [Answer the Feeling Behind It]", bundle: 'pro', guideBack: "An answer to what's underneath" },
+        { q: "She says, \"You have to say that.\"", a: "\"I don't say things I don't mean. You were brilliant tonight.\" [Praise You Mean]", bundle: 'pro', guideBack: "A compliment you'd stand behind" },
+      ]
+    },
+    {
+      name: "Nodding Along",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You've noticed that you agree with almost everything she says — about films, friends, plans, the news — whether you agree or not.\n\nWhat goes wrong is slow invisibility. She stops knowing what you think, and you start feeling you can't say it.\n\n**A Small Disagreement** is the main move — one sentence, warmly. **Name the Pattern** if it's become a habit you want to explain.\n\nThe one thing to avoid: a sudden, big disagreement after months of silence.\n\nMindset: small honesty now saves a big outburst later.",
+      inputs: [
+        { q: "She says a show you secretly love is rubbish.", a: "\"I actually really like it. Different tastes!\" [A Small Disagreement]", bundle: 'pro', guideBack: "A different view, no debate" },
+        { q: "She says her friend's new boyfriend is awful.", a: "\"I liked him, actually. Maybe I'm missing something.\" [A Small Disagreement]", bundle: 'pro', guideBack: "A different view, no debate" },
+        { q: "You realise you haven't disagreed with her in months.", a: "\"I've noticed I agree with everything lately. I think I've been holding back.\" [Name the Pattern]", bundle: 'pro', guideBack: "A pattern, calmly, outside a fight" },
+        { q: "She says the new neighbours are rude.", a: "\"I found them friendly, but I haven't met the husband.\" [A Small Disagreement]", bundle: 'pro', guideBack: "A different view, no debate" },
+        { q: "She says you should paint the kitchen grey.", a: "\"I'm not sure about grey. Could we look at a warmer colour?\" [A Small Disagreement]", bundle: 'pro', guideBack: "A different view, no debate" },
+        { q: "She asks, \"Why didn't you say you disagreed before?\"", a: "\"I think I got in the habit of going along. I'd like to stop.\" [Name the Pattern]", bundle: 'pro', guideBack: "A pattern, calmly, outside a fight" },
+        { q: "She says a book you both read was brilliant, and you found it dull.", a: "\"It didn't grab me the same way — what did you love about it?\" [A Small Disagreement]", bundle: 'pro', guideBack: "A different view, no debate" },
+        { q: "She looks surprised when you disagree.", a: "\"It's nice to have a different view, isn't it? I'm not arguing.\" [A Small Disagreement]", bundle: 'pro', guideBack: "A different view, no debate" },
+      ]
+    },
+    {
+      name: "The Hidden Standard",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She asked you to do something. You did it. Now she's redoing it, or she's disappointed — and you didn't know there was a right way.\n\nWhat goes wrong is feeling criticised and either giving up or doing it worse next time.\n\n**Ask What Done Looks Like** is the main move — next time, ask first. **Trade the Load** if the task is better off being hers.\n\nThe one thing to avoid: \"Then do it yourself.\"\n\nMindset: one question first beats a redo afterwards.",
+      inputs: [
+        { q: "She redid the bed you'd just made.", a: "\"Show me how you like it, and I'll do it that way.\" [Ask What Done Looks Like]", bundle: 'pro', guideBack: "A question about her expectations" },
+        { q: "You're about to say, \"Then do it yourself.\"", a: "\"What did you have in mind? I'd rather get it right.\" [Ask What Done Looks Like]", bundle: 'pro', guideBack: "A question about her expectations" },
+        { q: "She was disappointed with the flowers you bought for her mum.", a: "\"Next time, tell me what she likes, and I'll get those.\" [Ask What Done Looks Like]", bundle: 'pro', guideBack: "A question about her expectations" },
+        { q: "She asks you to organise a dinner party.", a: "\"What's your picture of it — casual, or proper?\" [Ask What Done Looks Like]", bundle: 'pro', guideBack: "A question about her expectations" },
+        { q: "She keeps redoing the way you pack the car.", a: "\"How about packing's yours, and I'll load and drive?\" [Trade the Load]", bundle: 'pro', guideBack: "One thing given, one thing asked" },
+        { q: "She asks you to tidy the living room before guests.", a: "\"How tidy — quick once-over, or properly?\" [Ask What Done Looks Like]", bundle: 'pro', guideBack: "A question about her expectations" },
+        { q: "She says, \"You should know how I like it by now.\"", a: "\"I thought I did. Quick reminder, and I'll get it right?\" [Ask What Done Looks Like]", bundle: 'pro', guideBack: "A question about her expectations" },
+        { q: "She re-hangs every picture you put up.", a: "\"Maybe pictures are your department — I'll do the shelves.\" [Trade the Load]", bundle: 'pro', guideBack: "One thing given, one thing asked" },
+      ]
+    },
+    {
+      name: "Carrying More",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You're doing more than your share of something — the cooking, the driving, the night feeds — and it's starting to feel heavy.\n\nWhat goes wrong is carrying it silently until the resentment comes out sideways, in a sharp comment about something else.\n\n**Trade the Load** is the main move. **Name the Pattern** if it's been going on for a long time.\n\nThe one thing to avoid: \"I do everything around here.\"\n\nMindset: a trade said early is fairer than resentment saved up.",
+      inputs: [
+        { q: "You've cooked every meal for six weeks.", a: "\"Could you take two nights a week, and I'll keep the rest?\" [Trade the Load]", bundle: 'pro', guideBack: "One thing given, one thing asked" },
+        { q: "You're about to say, \"I do everything around here.\"", a: "\"Can we look at who does what? I think it's got uneven.\" [Trade the Load]", bundle: 'pro', guideBack: "One thing given, one thing asked" },
+        { q: "You always do the night-time dog walk in the rain.", a: "\"Could we swap — you do the late walk, I'll do the early one?\" [Trade the Load]", bundle: 'pro', guideBack: "One thing given, one thing asked" },
+        { q: "You do all the paperwork, and it's been years.", a: "\"I've done the paperwork for years. Could we share it, or swap for something?\" [Name the Pattern]", bundle: 'pro', guideBack: "A pattern, calmly, outside a fight" },
+        { q: "She says, \"But I do loads you don't see.\"", a: "\"I believe you. What are you carrying that I'm missing?\" [Trade the Load]", bundle: 'pro', guideBack: "One thing given, one thing asked" },
+        { q: "You drive to every family event.", a: "\"Could you drive home from the next one?\" [Trade the Load]", bundle: 'pro', guideBack: "One thing given, one thing asked" },
+        { q: "You notice you're keeping score in your head.", a: "\"I've been keeping score, which isn't good. Can we just talk about the split?\" [Name the Pattern]", bundle: 'pro', guideBack: "A pattern, calmly, outside a fight" },
+        { q: "You agree on a new split.", a: "\"Let's try it for a month, then check in.\" [Trade the Load]", bundle: 'pro', guideBack: "One thing given, one thing asked" },
+      ]
+    },
+    {
+      name: "The Same Fight Again",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You're having an argument you've had before — same topic, same words, same ending.\n\nWhat goes wrong is fighting this instance as if it were new. It gets resolved, or not, and then it happens again next week.\n\n**Name the Pattern** is the main move — at a calm time, not now. **Answer the Feeling Behind It** if the repeat is really about a worry.\n\nThe one thing to avoid: \"Here we go again.\"\n\nMindset: the pattern is the thing to talk about.",
+      inputs: [
+        { q: "It's the third fight this month about your phone at dinner.", a: "(The next day.) \"We keep having the phone argument. Can we talk about what's really going on?\" [Name the Pattern]", bundle: 'pro', guideBack: "A pattern, calmly, outside a fight" },
+        { q: "You're about to say, \"Here we go again.\"", a: "(You don't.) Later: \"This one keeps coming back. Can we look at why?\" [Name the Pattern]", bundle: 'pro', guideBack: "A pattern, calmly, outside a fight" },
+        { q: "Every time you visit your friends, she's quiet afterwards.", a: "\"I've noticed you're often quiet after we see my friends. What's that about?\" [Name the Pattern]", bundle: 'pro', guideBack: "A pattern, calmly, outside a fight" },
+        { q: "She asks, \"Do you even want to be here?\" for the fourth time this month.", a: "\"I do. Is something making you worry about that lately?\" [Answer the Feeling Behind It]", bundle: 'pro', guideBack: "An answer to what's underneath" },
+        { q: "Every budget talk ends with her in tears.", a: "\"Budget talks always seem to upset you. What happens for you in them?\" [Name the Pattern]", bundle: 'pro', guideBack: "A pattern, calmly, outside a fight" },
+        { q: "She says, \"You always make it about me.\"", a: "\"I don't mean to. I think it's something we both do.\" [Name the Pattern]", bundle: 'pro', guideBack: "A pattern, calmly, outside a fight" },
+        { q: "The same argument about her mother starts again.", a: "\"We've been here before. Can we pause and talk about it properly tomorrow?\" [Name the Pattern]", bundle: 'pro', guideBack: "A pattern, calmly, outside a fight" },
+        { q: "She asks, \"Are you still happy with me?\" after every small fight.", a: "\"Yes. I think small fights worry you more than me. Can we talk about that?\" [Answer the Feeling Behind It]", bundle: 'pro', guideBack: "An answer to what's underneath" },
+      ]
+    },
+  ],
 };

@@ -13399,4 +13399,316 @@ const memorizeCollections = {
       ]
     },
   ],
+  alexandergrace7: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for hard conversations, well timed:\n\n1. One Minute, Then I'm Yours\n2. Set a Time to Talk\n3. Let Her Finish, Then Speak\n4. Same Rules for Both\n5. Clear Up What You Meant\n6. Ask What She's Telling Herself\n\nThree set the conversation up. Three are for the middle of it.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "One Minute Then I'm Yours, Set a Time to Talk, Let Her Finish Then Speak, Same Rules for Both, Clear Up What You Meant, and Ask What She's Telling Herself.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Three set the conversation up, and three are for the middle of it.", bundle: 'free' },
+        { q: "What decides half of how a hard conversation goes?", a: "When and where it happens.", bundle: 'free' },
+        { q: "What is worse than waiting?", a: "Half-listening.", bundle: 'free' },
+        { q: "Who do the ground rules apply to?", a: "Both of you.", bundle: 'free' },
+        { q: "How is this pack different from Fights That End Closer?", a: "That one handles a fight already under way. This one sets up the conversation so it goes better.", bundle: 'pro' },
+        { q: "Which strategies set the conversation up?", a: "One Minute Then I'm Yours, Set a Time to Talk, and Same Rules for Both.", bundle: 'pro' },
+        { q: "What usually sits under a big reaction to a small thing?", a: "A story about you.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "One Minute, Then I'm Yours",
+      description: "",
+      cards: [
+        { q: "What is One Minute, Then I'm Yours?", a: "Asking for a short wait and promising your full attention after.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"Give me one minute to finish this, and then I'm all yours.\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When she needs you and you're mid-task.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Acknowledge, ask for a short specific wait, and keep it.", bundle: 'free' },
+        { q: "Why does it work?", a: "Half-listening is worse than waiting.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When one minute turns into twenty.", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "Answering from behind a screen, which she feels.", bundle: 'pro' },
+        { q: "What should you say if the minute ran over?", a: "Sorry, and turn to her fully.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Set a Time to Talk",
+      description: "",
+      cards: [
+        { q: "What is Set a Time to Talk?", a: "Saying you want to talk about it, and agreeing when and where.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"Let's get home, put the shopping away, and sit down.\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When it matters and now is the wrong place.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Show you've seen it, say you want to talk, name the time and place.", bundle: 'free' },
+        { q: "Why does it work?", a: "Hard conversations go badly in bad places.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When \"not now\" has no time attached.", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "Having it in the car, where both of you say things badly.", bundle: 'pro' },
+        { q: "What should you do when the agreed time comes?", a: "Turn up, phone away, ready.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Let Her Finish, Then Speak",
+      description: "",
+      cards: [
+        { q: "What is Let Her Finish, Then Speak?", a: "Letting her finish completely, then asking for your turn.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"Thank you. Can I tell you how it was for me now?\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "In the middle of a hard conversation.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Let her finish, check she's done, ask for your turn.", bundle: 'free' },
+        { q: "What does interrupting make her do?", a: "Defend instead of explain.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When you never ask for your own turn.", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "Talking over each other, which is two speeches.", bundle: 'pro' },
+        { q: "Does the rule go both ways?", a: "Yes — if she interrupts, ask to finish.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Same Rules for Both",
+      description: "",
+      cards: [
+        { q: "What is Same Rules for Both?", a: "Agreeing a few ground rules for hard conversations that apply to both of you.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"Can we agree: no name-calling, no old stuff, and we're on the same team?\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "Agreed when calm, used when it gets hard.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Agree while calm, keep it short, hold yourself to them first.", bundle: 'free' },
+        { q: "When are the rules most needed?", a: "When one of you is upset.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When the rules are used to win the argument.", bundle: 'pro' },
+        { q: "What is the difference between rules and control?", a: "Rules for her alone are control. Rules for both are an agreement.", bundle: 'pro' },
+        { q: "What should you do when you break a rule?", a: "Say so, and apologise.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Clear Up What You Meant",
+      description: "",
+      cards: [
+        { q: "What is Clear Up What You Meant?", a: "Saying briefly what you meant, then acknowledging how it felt for her.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"That's not what I meant — I was trying to help. But I get why it felt like criticism.\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When she's read a motive you didn't have.", bundle: 'free' },
+        { q: "What are the three parts?", a: "What you meant, how it could have felt, and check.", bundle: 'free' },
+        { q: "How long should the correction be?", a: "One sentence.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When the correction grows into a defence.", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "A correction on its own, which says she's wrong to be upset.", bundle: 'pro' },
+        { q: "What should you say if she asks whether she's wrong to be upset?", a: "No — you just want her to know what you meant.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What She's Telling Herself",
+      description: "",
+      cards: [
+        { q: "What is Ask What She's Telling Herself?", a: "Asking what she's believing about you, or when the feeling started.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"What are you telling yourself about me right now?\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When a small thing brings a big feeling.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Notice the size gap, ask about the story, answer the story.", bundle: 'free' },
+        { q: "What sits under the anger, usually?", a: "A story about you.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When it's used as a trap.", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "Arguing about the small thing, which never reaches the real one.", bundle: 'pro' },
+        { q: "What should you ask if she doesn't know?", a: "When the feeling started.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Setting It Up** — when, where, or how\n• **Inside the Conversation** — wait, correct, or ask\n• **All Six Strategies** — no cue given, which is the real thing\n\nOne question sorts most of it: has the conversation properly started yet?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Setting It Up, Inside the Conversation, and All Six Strategies.", bundle: 'pro' },
+        { q: "What question decides Setting It Up?", a: "Is the problem when, where, or how?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Setting It Up?", a: "Having it anyway — distracted, in the car, with no rules.", bundle: 'pro' },
+        { q: "What question decides Inside the Conversation?", a: "Do I need to wait, to correct, or to ask?", bundle: 'pro' },
+        { q: "What is the usual wrong choice inside the conversation?", a: "Correcting her before she's finished.", bundle: 'pro' },
+        { q: "She's read a motive you didn't have. Which strategy?", a: "Clear Up What You Meant.", bundle: 'pro' },
+        { q: "You're mid-task and she needs you. Which strategy?", a: "One Minute, Then I'm Yours.", bundle: 'pro' },
+        { q: "It's serious and you're in the car. Which strategy?", a: "Set a Time to Talk.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Not Here, Not Now — But Soon** — Set a Time to Talk → Let Her Finish, Then Speak → Clear Up What You Meant\n2. **The Small Thing That Isn't** — One Minute, Then I'm Yours → Ask What She's Telling Herself → Let Her Finish, Then Speak\n3. **The Next Argument** — Same Rules for Both → Let Her Finish, Then Speak → Clear Up What You Meant\n\nAll three give her the first full turn.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Not Here Not Now But Soon, The Small Thing That Isn't, and The Next Argument.", bundle: 'pro' },
+        { q: "What is the order in Not Here, Not Now — But Soon?", a: "Set a Time to Talk, Let Her Finish Then Speak, Clear Up What You Meant.", bundle: 'pro' },
+        { q: "Why does the correction come last?", a: "So it lands as information, not defence.", bundle: 'pro' },
+        { q: "What is the order in The Small Thing That Isn't?", a: "One Minute Then I'm Yours, Ask What She's Telling Herself, Let Her Finish Then Speak.", bundle: 'pro' },
+        { q: "Why full attention first?", a: "Distracted curiosity isn't curiosity.", bundle: 'pro' },
+        { q: "What is the order in The Next Argument?", a: "Same Rules for Both, Let Her Finish Then Speak, Clear Up What You Meant.", bundle: 'pro' },
+        { q: "What is the usual order without the rules?", a: "Insults, interruptions, and a long defence.", bundle: 'pro' },
+        { q: "What do all three sequences give her?", a: "The first full turn.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **Caught Mid-Task** — she needs you, you're busy\n• **Wrong Place** — it's serious and you're in the car\n• **Talking Over Each Other** — nobody's finishing\n• **She Read It Wrong** — a motive you didn't have\n• **Rules Only When Calm** — the rules vanish when it's hard\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Caught Mid-Task, Wrong Place, Talking Over Each Other, She Read It Wrong, and Rules Only When Calm.", bundle: 'pro' },
+        { q: "What should you avoid when caught mid-task?", a: "\"Mm-hm\" without looking up.", bundle: 'pro' },
+        { q: "What should you avoid in the wrong place?", a: "\"Not now\" with no time attached.", bundle: 'pro' },
+        { q: "What should you avoid when talking over each other?", a: "Talking louder to win the floor.", bundle: 'pro' },
+        { q: "What should you avoid when she read it wrong?", a: "\"You're overreacting.\"", bundle: 'pro' },
+        { q: "What should you avoid when the rules slip?", a: "\"You broke the rules, so I win.\"", bundle: 'pro' },
+        { q: "What is the main strategy for the wrong place?", a: "Set a Time to Talk.", bundle: 'pro' },
+        { q: "What is the main strategy for talking over each other?", a: "Let Her Finish, Then Speak.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **The Well-Timed Mindset** — I have to talk now, wherever we are\n• **The Punching Bag** — when she's upset, anything goes\n• **Getting My Point In** — I have to jump in now\n• **The Mind Reader** — I know what she's upset about\n• **Proving My Intentions** — I must convince her I meant well\n• **Rules Are Control** — ground rules are bossy\n\nMost of them rush the conversation, or leave it with no shape.",
+      cards: [
+        { q: "What are the six mindsets in this pack?", a: "The Well-Timed Mindset, The Punching Bag, Getting My Point In, The Mind Reader, Proving My Intentions, and Rules Are Control.", bundle: 'pro' },
+        { q: "What is true instead of \"I have to talk now\"?", a: "When and where decides half of how it goes.", bundle: 'pro' },
+        { q: "Does being upset give a pass on the rules?", a: "No — feelings are welcome, insults still aren't.", bundle: 'pro' },
+        { q: "What gets added to \"my point matters\"?", a: "That the only way to be heard is to interrupt.", bundle: 'pro' },
+        { q: "What does being a mind reader quietly cost?", a: "Arguing about the surface when the real subject is underneath.", bundle: 'pro' },
+        { q: "How many sentences should you spend on your intentions?", a: "One.", bundle: 'pro' },
+        { q: "When are ground rules not control?", a: "When they bind both of you.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They rush the conversation, or leave it with no shape.", bundle: 'pro' },
+      ]
+    },
+  ],
+  alexandergrace8: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for being honest and fair with her:\n\n1. Answer the Feeling Behind It\n2. Praise You Mean\n3. A Small Disagreement\n4. Ask What Done Looks Like\n5. Trade the Load\n6. Name the Pattern\n\nThree are about honesty. Three are about fairness.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Answer the Feeling Behind It, Praise You Mean, A Small Disagreement, Ask What Done Looks Like, Trade the Load, and Name the Pattern.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Three are about honesty, and three are about fairness.", bundle: 'free' },
+        { q: "What makes praise keep its value?", a: "Only saying what's true.", bundle: 'free' },
+        { q: "What are most household arguments really about?", a: "An unspoken standard.", bundle: 'free' },
+        { q: "When should a pattern be raised?", a: "At a calm time, not during the fight.", bundle: 'free' },
+        { q: "How is this pack different from Saying No?", a: "That one answers a request. This one is about everyday honesty and a fair split.", bundle: 'pro' },
+        { q: "Which strategies are about fairness?", a: "Ask What Done Looks Like, Trade the Load, and Name the Pattern.", bundle: 'pro' },
+        { q: "What turns a grievance into a deal?", a: "A trade on offer.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Answer the Feeling Behind It",
+      description: "",
+      cards: [
+        { q: "What is Answer the Feeling Behind It?", a: "Answering the worry behind a question, as well as the words.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"Where's that coming from? Are you feeling a bit unsure of yourself today?\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When a question is really about how she feels.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Hear the feeling, ask about it gently, answer honestly.", bundle: 'free' },
+        { q: "Why does it work?", a: "Some questions are asking for reassurance, not information.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When it's used to avoid answering at all.", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "A quick \"of course\", which doesn't reach the worry.", bundle: 'pro' },
+        { q: "What should you do if she says \"just answer the question\"?", a: "Answer it — and still ask what's behind it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Praise You Mean",
+      description: "",
+      cards: [
+        { q: "What is Praise You Mean?", a: "Giving compliments freely, but only true and specific ones.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"That speech was really good. The bit about your grandmother had the whole room quiet.\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "Whenever you notice something good that's true.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Notice something true, say what exactly, and leave it there.", bundle: 'free' },
+        { q: "Why does exaggeration backfire?", a: "Once she suspects it, even true praise stops counting.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When it becomes holding back praise.", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "Inflated compliments, which are easy to spot.", bundle: 'pro' },
+        { q: "What should you say if she says you're only saying it?", a: "That you don't say things you don't mean.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Small Disagreement",
+      description: "",
+      cards: [
+        { q: "What is A Small Disagreement?", a: "Saying briefly and pleasantly that you see something differently.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"I see that one a bit differently, but I love hearing how you think about it.\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When you see something differently and it's not a big deal.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Say you see it differently, show you value her view, let it go.", bundle: 'free' },
+        { q: "What does nodding along to everything do?", a: "It slowly makes you invisible.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When it turns into a campaign.", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "Months of silence, then a big outburst.", bundle: 'pro' },
+        { q: "What should you say if she asks whether you think she's wrong?", a: "Not wrong — you just see it differently.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What Done Looks Like",
+      description: "",
+      cards: [
+        { q: "What is Ask What Done Looks Like?", a: "Asking what she has in mind before you start a task she's handed you.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"What does done look like for you? Anything you definitely want?\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When a task is being handed to you.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Say yes, ask about the standard, agree who decides.", bundle: 'free' },
+        { q: "What else does the question tell you?", a: "How much freedom you have.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When you ask and then do it your way anyway.", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "Guessing, then having it redone.", bundle: 'pro' },
+        { q: "What should you avoid saying if it's redone?", a: "\"Then do it yourself.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Trade the Load",
+      description: "",
+      cards: [
+        { q: "What is Trade the Load?", a: "Saying you carry more in some area, and offering a trade.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"I've been doing all the cooking. Could you take the appointments, and I'll keep the kitchen?\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When one of you is carrying more.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Name what you carry, offer a trade, ask about hers.", bundle: 'free' },
+        { q: "What does silent over-giving turn into?", a: "Resentment.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When it becomes \"You don't do enough.\"", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "Keeping score in your head.", bundle: 'pro' },
+        { q: "What should you do after agreeing a new split?", a: "Try it for a month, then check in.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name the Pattern",
+      description: "",
+      cards: [
+        { q: "What is Name the Pattern?", a: "Raising something that keeps happening, calmly, outside a fight.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"Our arguments often end with me apologising. Can we talk about that?\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When the same fight or ending keeps coming back.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Choose a calm time, describe the pattern, ask together.", bundle: 'free' },
+        { q: "Why does it work?", a: "Each incident can be explained away. The pattern can't.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When it's raised mid-fight, or pinned on her alone.", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "Fighting each instance, which never stops the repeats.", bundle: 'pro' },
+        { q: "What should you say if she asks whether it's her fault?", a: "It's something you both do.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Honest Words** — the worry, the praise, or the different view\n• **Fair Shares** — the task, the balance, or the repeat\n• **All Six Strategies** — no cue given, which is the real thing\n\nOne question sorts most of it: is this about what I say, or how we share things?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Honest Words, Fair Shares, and All Six Strategies.", bundle: 'pro' },
+        { q: "What question decides Honest Words?", a: "Is she asking, is there something good to say, or do I think otherwise?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Honest Words?", a: "Saying whatever keeps the peace.", bundle: 'pro' },
+        { q: "What question decides Fair Shares?", a: "Is this about one task, the balance, or a repeat?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Fair Shares?", a: "Carrying it silently and snapping later.", bundle: 'pro' },
+        { q: "She asks \"Am I pretty?\" Which strategy?", a: "Answer the Feeling Behind It.", bundle: 'pro' },
+        { q: "Your work keeps getting redone. Which strategy?", a: "Ask What Done Looks Like.", bundle: 'pro' },
+        { q: "The same fight keeps coming back. Which strategy?", a: "Name the Pattern.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Loaded Question** — Answer the Feeling Behind It → Praise You Mean → A Small Disagreement\n2. **The Redone Task** — Ask What Done Looks Like → Name the Pattern → Trade the Load\n3. **Going Along With It** — A Small Disagreement → Name the Pattern → Trade the Load\n\nTwo of the three end with a trade.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Loaded Question, The Redone Task, and Going Along With It.", bundle: 'pro' },
+        { q: "What is the order in The Loaded Question?", a: "Answer the Feeling Behind It, Praise You Mean, A Small Disagreement.", bundle: 'pro' },
+        { q: "What do you disagree with in The Loaded Question?", a: "Her harsh view of herself.", bundle: 'pro' },
+        { q: "What is the order in The Redone Task?", a: "Ask What Done Looks Like, Name the Pattern, Trade the Load.", bundle: 'pro' },
+        { q: "How does The Redone Task end?", a: "Each of you owns a task, done your own way.", bundle: 'pro' },
+        { q: "What is the order in Going Along With It?", a: "A Small Disagreement, Name the Pattern, Trade the Load.", bundle: 'pro' },
+        { q: "Why start with a small disagreement?", a: "It's practice, and it shows her you have a view.", bundle: 'pro' },
+        { q: "What is the usual mistake after years of going along?", a: "A sudden outburst.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **The Loaded Question** — a question that's really a worry\n• **Nodding Along** — you agree with everything\n• **The Hidden Standard** — your work gets redone\n• **Carrying More** — the split is uneven\n• **The Same Fight Again** — the argument repeats\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Loaded Question, Nodding Along, The Hidden Standard, Carrying More, and The Same Fight Again.", bundle: 'pro' },
+        { q: "What should you avoid with a loaded question?", a: "\"Why are you asking me that again?\"", bundle: 'pro' },
+        { q: "What should you avoid when nodding along?", a: "A sudden, big disagreement after months of silence.", bundle: 'pro' },
+        { q: "What should you avoid with a hidden standard?", a: "\"Then do it yourself.\"", bundle: 'pro' },
+        { q: "What should you avoid when carrying more?", a: "\"I do everything around here.\"", bundle: 'pro' },
+        { q: "What should you avoid in the same fight again?", a: "\"Here we go again.\"", bundle: 'pro' },
+        { q: "What is the main strategy for carrying more?", a: "Trade the Load.", bundle: 'pro' },
+        { q: "What is the main strategy for nodding along?", a: "A Small Disagreement.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **The Honest and Fair Mindset** — honesty will cost me her affection\n• **The Agreeable One** — I go along with things\n• **Reassurance** — tell her whatever makes her feel better\n• **Keeping Score** — mentioning it is petty\n• **Every Fight Is New** — raising a pattern is an attack\n• **Her Mood Is My Job** — if she's unhappy, I must fix it\n\nMost of them buy peace now with honesty you'll need later.",
+      cards: [
+        { q: "What are the six mindsets in this pack?", a: "The Honest and Fair Mindset, The Agreeable One, Reassurance, Keeping Score, Every Fight Is New, and Her Mood Is My Job.", bundle: 'pro' },
+        { q: "What is true instead of \"honesty will cost me her affection\"?", a: "Warm honesty makes affection more real.", bundle: 'pro' },
+        { q: "What does always going along quietly cost?", a: "A partner who doesn't know you.", bundle: 'pro' },
+        { q: "What gets added to \"reassurance is kind\"?", a: "That anything goes, including things you don't mean.", bundle: 'pro' },
+        { q: "What is the petty version of keeping score?", a: "Keeping it silently, in your head.", bundle: 'pro' },
+        { q: "How is raising a pattern not an attack?", a: "Raised calmly, as something you both do.", bundle: 'pro' },
+        { q: "What is your job when she's unhappy?", a: "To care and ask — not to manage her mood.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They buy peace now with honesty you'll need later.", bundle: 'pro' },
+      ]
+    },
+  ],
 };
