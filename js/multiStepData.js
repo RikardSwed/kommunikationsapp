@@ -10397,4 +10397,325 @@ const multiStepCollections = {
       ]
     },
   ],
+  toneinmessages: [
+    {
+      name: "Before You Send",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Read It as Them**, then **Say Your Tone**, then **Match Their Length**. What to do with a message you are not sure about.\n\n1. **Read It as Them** — reread your draft from their side and rewrite the line that stings.\n2. **Say Your Tone** — they reply unsure; name how you meant it.\n3. **Match Their Length** — they answer briefly; answer at their size.\n\nWhy this order: the rewrite catches most of the trouble before it is sent. Naming the tone handles what gets through. Matching their length keeps a small misreading from growing into a long exchange.\n\nThe usual order is send first, explain in three paragraphs afterwards.\n\nMindset: most tone problems can be fixed in the draft.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your colleague has missed her part of the shared report for the second time, and you are writing to her about it.",
+          steps: [
+            { front: "Read It as Them — your draft says, \"Once again I'm waiting on your section.\"", back: "\"Hi — is your section still on for today? I need it by 4.\"", guideFront: "Check your draft from their side when...", guideBack: "The draft, rewritten" },
+            { front: "Say Your Tone — she replies, \"Sorry, are you annoyed?\"", back: "\"Not annoyed, just tight on time. Honestly.\"", guideFront: "Name how you mean it when...", guideBack: "The message, with its tone spelled out" },
+            { front: "Match Their Length — she replies, \"Ok, sending by 3.\"", back: "\"Perfect, thanks!\"", guideFront: "Answer at their length when...", guideBack: "A reply the right size" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your friend has invited you to her wedding abroad, and you cannot afford to go.",
+          steps: [
+            { front: "Read It as Them — your draft says, \"Sorry, can't justify the cost.\"", back: "\"I'd love to be there, and I'm so sorry — I just can't make the trip work this year.\"", guideFront: "Check your draft from their side when...", guideBack: "The draft, rewritten" },
+            { front: "Say Your Tone — she replies, \"Oh. Ok.\"", back: "\"It's not about you at all, honestly — it's money. I'm gutted.\"", guideFront: "Name how you mean it when...", guideBack: "The message, with its tone spelled out" },
+            { front: "Match Their Length — she replies, \"I get it. Would love a card.\"", back: "\"You'll get a card, and a proper celebration when you're back.\"", guideFront: "Answer at their length when...", guideBack: "A reply the right size" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You need to tell the parents' group chat that the football practice is cancelled, again.",
+          steps: [
+            { front: "Read It as Them — your draft says, \"No practice again, sorry, nothing I can do.\"", back: "\"Hi all — practice is off again this Saturday. The pitch is flooded.\"", guideFront: "Check your draft from their side when...", guideBack: "The draft, rewritten" },
+            { front: "Say Your Tone — one parent replies, \"Third time this month…\"", back: "\"I know, and I'm as fed up as you — not brushing it off.\"", guideFront: "Name how you mean it when...", guideBack: "The message, with its tone spelled out" },
+            { front: "Match Their Length — they reply, \"Fair enough. Thanks.\"", back: "\"Thanks for understanding. See you next week.\"", guideFront: "Answer at their length when...", guideBack: "A reply the right size" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "A Cold Reply",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Read It Kindly**, then **Check Before You Worry**, then **Add the Warmth Back**. What to do when a message you receive sounds cold.\n\n1. **Read It Kindly** — reply to the friendly reading first.\n2. **Check Before You Worry** — if the next one is cold too, ask lightly.\n3. **Add the Warmth Back** — when they explain, answer warmly.\n\nWhy this order: the kind reading first, because it is usually right. The check second, because two cold messages in a row are worth asking about. The warmth last, because once you know what was behind it, a warm reply closes it.\n\nThe usual order is to reply cold to cold, and then wonder why it got worse.\n\nMindset: answer the kind version first. Ask only if it keeps coming.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You texted your friend about meeting up this weekend. Her replies are unusually short.",
+          steps: [
+            { front: "Read It Kindly — she replies, \"maybe.\"", back: "\"No worries — just let me know if you fancy it.\"", guideFront: "Reply to the friendly reading when...", guideBack: "A reply to the kind version" },
+            { front: "Check Before You Worry — the next day she writes, \"can't this weekend.\"", back: "\"Okay. All alright with you? You've seemed quiet.\"", guideFront: "Ask instead of guessing when...", guideBack: "A light check on the tone" },
+            { front: "Add the Warmth Back — she writes, \"Sorry, just a rubbish week at work.\"", back: "\"Oh, I'm sorry. Want to do something low-key next week? My treat.\"", guideFront: "Put back what your voice would add when...", guideBack: "The same message, warmer" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your manager replies to your project update by email.",
+          steps: [
+            { front: "Read It Kindly — she writes, \"Noted.\"", back: "\"Thanks! I'll keep you posted.\"", guideFront: "Reply to the friendly reading when...", guideBack: "A reply to the kind version" },
+            { front: "Check Before You Worry — your next update gets, \"Ok.\"", back: "\"Thanks. Is the project going the way you hoped? Happy to talk.\"", guideFront: "Ask instead of guessing when...", guideBack: "A light check on the tone" },
+            { front: "Add the Warmth Back — she writes, \"Yes, sorry — just swamped. It's going well.\"", back: "\"Great to hear, thank you. Hope the swamp clears soon!\"", guideFront: "Put back what your voice would add when...", guideBack: "The same message, warmer" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You sent your brother photos of your new flat.",
+          steps: [
+            { front: "Read It Kindly — he replies, \"nice.\"", back: "\"Thanks! Come and see it soon.\"", guideFront: "Reply to the friendly reading when...", guideBack: "A reply to the kind version" },
+            { front: "Check Before You Worry — when you invite him over, he replies, \"we'll see.\"", back: "\"All okay? You don't sound yourself.\"", guideFront: "Ask instead of guessing when...", guideBack: "A light check on the tone" },
+            { front: "Add the Warmth Back — he writes, \"Just stressed about money, honestly. Your flat is great.\"", back: "\"Thank you, that means a lot. And I'm here if you want to talk about the money stuff.\"", guideFront: "Put back what your voice would add when...", guideBack: "The same message, warmer" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Too Sharp",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Soften It After**, then **Add the Warmth Back**, then **Check Before You Worry**. What to do when you sent something sharper than you meant.\n\n1. **Soften It After** — name the words and say what you meant.\n2. **Add the Warmth Back** — when they reply, answer warmly, not carefully.\n3. **Check Before You Worry** — if they go quiet, ask lightly rather than send another apology.\n\nWhy this order: the correction first, while it is still fresh. Then warmth, to show the sharp message was the exception. Then a light check, because a second apology usually makes it bigger.\n\nThe usual order is to wait and hope they did not notice.\n\nMindset: replace the sharp message quickly, then move on warmly.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your colleague asked, for the third time, where a file is. You replied, \"It's where it always is.\"",
+          steps: [
+            { front: "Soften It After — you reread your reply a minute later.", back: "\"Sorry, that was snippy. It's in the shared folder, under Reports.\"", guideFront: "Correct your own tone when...", guideBack: "A follow-up that fixes the tone" },
+            { front: "Add the Warmth Back — they reply, \"Thanks, found it.\"", back: "\"Great! Shout if anything else is hiding.\"", guideFront: "Put back what your voice would add when...", guideBack: "The same message, warmer" },
+            { front: "Check Before You Worry — later, they seem quiet in the team chat.", back: "\"All good? I was short with you earlier.\"", guideFront: "Ask instead of guessing when...", guideBack: "A light check on the tone" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your partner asked what you wanted for dinner, and you replied, \"I don't care.\"",
+          steps: [
+            { front: "Soften It After — you see the message sitting there.", back: "\"That came out wrong — I meant anything's fine, not that I don't care.\"", guideFront: "Correct your own tone when...", guideBack: "A follow-up that fixes the tone" },
+            { front: "Add the Warmth Back — they reply, \"Ok, pasta then.\"", back: "\"Pasta sounds perfect. Thank you for sorting it.\"", guideFront: "Put back what your voice would add when...", guideBack: "The same message, warmer" },
+            { front: "Check Before You Worry — they do not reply for an hour.", back: "\"Are we okay? I was grumpy earlier.\"", guideFront: "Ask instead of guessing when...", guideBack: "A light check on the tone" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "In the group chat, you replied to your friend's holiday plan with \"Sounds expensive.\"",
+          steps: [
+            { front: "Soften It After — nobody else replies.", back: "\"That came out wrong — it sounds amazing. I'm just jealous.\"", guideFront: "Correct your own tone when...", guideBack: "A follow-up that fixes the tone" },
+            { front: "Add the Warmth Back — she replies, \"Haha it is expensive, worth it though.\"", back: "\"Definitely worth it. You'll have the best time.\"", guideFront: "Put back what your voice would add when...", guideBack: "The same message, warmer" },
+            { front: "Check Before You Worry — the next day, she is quieter than usual.", back: "\"Hope I didn't put a damper on your plans yesterday. All good?\"", guideFront: "Ask instead of guessing when...", guideBack: "A light check on the tone" },
+          ]
+        },
+      ]
+    },
+  ],
+  replyingandnotreplying: [
+    {
+      name: "Busy Week",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Say You've Seen It**, then **Reply Late, Keep It Short**, then **Close the Thread**. What to do with a message that arrives when you have no time.\n\n1. **Say You've Seen It** — one line now, with a time.\n2. **Reply Late, Keep It Short** — the time slipped; apologise in a line and answer.\n3. **Close the Thread** — when it is settled, end it clearly.\n\nWhy this order: the holding line buys time honestly. When it runs over, a short late reply keeps the lateness small. The closing line stops a thread that started late from dragging on.\n\nThe usual order is silence, then guilt, then a long apology that nobody needed.\n\nMindset: a busy week does not need to mean a silent one.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your friend asks, on Monday, whether you can help her move flat on Saturday. You are swamped all week.",
+          steps: [
+            { front: "Say You've Seen It — her message arrives during a meeting.", back: "\"Seen this — crazy day. I'll tell you tonight.\"", guideFront: "Send a quick holding line when...", guideBack: "A short \"seen it, more soon\"" },
+            { front: "Reply Late, Keep It Short — it is Wednesday, and you forgot to reply.", back: "\"Sorry, I said tonight and it's Wednesday. Yes, I can help Saturday morning.\"", guideFront: "Answer first, apologise briefly when...", guideBack: "One line of sorry, then the answer" },
+            { front: "Close the Thread — she replies, \"Amazing, thank you!! 9am?\"", back: "\"9am it is. See you Saturday.\"", guideFront: "End it clearly when...", guideBack: "A friendly last message" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A client emails a list of changes to your proposal on the day you are travelling.",
+          steps: [
+            { front: "Say You've Seen It — you read it at the airport.", back: "\"Thanks — I've seen this and will send a revised version by Wednesday.\"", guideFront: "Send a quick holding line when...", guideBack: "A short \"seen it, more soon\"" },
+            { front: "Reply Late, Keep It Short — it is Thursday.", back: "\"Sorry for the delay. The revised proposal is attached.\"", guideFront: "Answer first, apologise briefly when...", guideBack: "One line of sorry, then the answer" },
+            { front: "Close the Thread — the client replies, \"Looks good, thanks.\"", back: "\"Great — I'll start on Monday. Thanks again.\"", guideFront: "End it clearly when...", guideBack: "A friendly last message" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your dad messages to ask when you are visiting next.",
+          steps: [
+            { front: "Say You've Seen It — you are in the middle of cooking.", back: "\"Hi Dad! Cooking now — I'll check dates and reply tonight.\"", guideFront: "Send a quick holding line when...", guideBack: "A short \"seen it, more soon\"" },
+            { front: "Reply Late, Keep It Short — it is three days later.", back: "\"Sorry, Dad, I got busy. How about the weekend of the 14th?\"", guideFront: "Answer first, apologise briefly when...", guideBack: "One line of sorry, then the answer" },
+            { front: "Close the Thread — he replies, \"Perfect, I'll tell your mother.\"", back: "\"Great. See you on the 14th!\"", guideFront: "End it clearly when...", guideBack: "A friendly last message" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Out of the Group",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Step Out of the Chat**, then **Say You've Seen It**, then **Answer All of It**. What to do when you leave a busy group, and someone then reaches you directly.\n\n1. **Step Out of the Chat** — leave or mute, and say how to reach you.\n2. **Say You've Seen It** — someone messages you directly; hold if you need to.\n3. **Answer All of It** — reply to everything they asked.\n\nWhy this order: stepping out only works if people know how to reach you, and if you then answer when they do. The last two steps are what make the exit friendly rather than a disappearance.\n\nThe usual order is to mute silently, and then miss the one message that mattered.\n\nMindset: leaving the group is fine, as long as I am easy to find.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "The group chat for your friend's fortieth birthday has hundreds of messages a day.",
+          steps: [
+            { front: "Step Out of the Chat — you cannot keep up.", back: "\"I'm going to mute this — message me directly if you need anything from me!\"", guideFront: "Leave the group kindly when...", guideBack: "A clear, friendly exit" },
+            { front: "Say You've Seen It — the organiser messages you directly at work.", back: "\"Seen — will reply at lunch!\"", guideFront: "Send a quick holding line when...", guideBack: "A short \"seen it, more soon\"" },
+            { front: "Answer All of It — she asks whether you can bring cake, arrive at 6 and chip in for the gift.", back: "\"Yes to cake, yes to 6, and I've sent my share for the gift.\"", guideFront: "Answer every question they asked when...", guideBack: "A reply that covers each question" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are on a busy project email thread that has moved on to a part you are not involved in.",
+          steps: [
+            { front: "Step Out of the Chat — the thread keeps growing.", back: "\"I'll drop off this thread for now — please copy me back in if you need me.\"", guideFront: "Leave the group kindly when...", guideBack: "A clear, friendly exit" },
+            { front: "Say You've Seen It — a colleague emails you directly with a question.", back: "\"Got this — I'll reply after my 2 o'clock.\"", guideFront: "Send a quick holding line when...", guideBack: "A short \"seen it, more soon\"" },
+            { front: "Answer All of It — she asks about the budget, the deadline and who signs off.", back: "\"Budget: unchanged. Deadline: the 20th. Sign-off: Karin.\"", guideFront: "Answer every question they asked when...", guideBack: "A reply that covers each question" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "The sports club parents' chat is full of messages you do not need.",
+          steps: [
+            { front: "Step Out of the Chat — you decide to leave.", back: "\"I'm leaving the chat, but please message me directly about Emma's matches!\"", guideFront: "Leave the group kindly when...", guideBack: "A clear, friendly exit" },
+            { front: "Say You've Seen It — the coach messages you directly as you are driving.", back: "\"Seen — will reply when I'm home.\"", guideFront: "Send a quick holding line when...", guideBack: "A short \"seen it, more soon\"" },
+            { front: "Answer All of It — he asks whether Emma can play Sunday, and whether you can drive two others.", back: "\"Yes, Emma can play, and yes, I can take two more.\"", guideFront: "Answer every question they asked when...", guideBack: "A reply that covers each question" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Back in Touch",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Revive a Dead Thread**, then **Follow Up Once**, then **Answer All of It**. What to do when you pick up an old conversation and it does not catch at first.\n\n1. **Revive a Dead Thread** — name it, and offer a next step.\n2. **Follow Up Once** — if nothing comes back, one light reminder.\n3. **Answer All of It** — when they reply, answer everything they asked.\n\nWhy this order: reviving takes courage, and silence afterwards is easy to read as rejection. One light follow-up usually shows it was just missed. And when they come back with questions, a full answer shows you meant it.\n\nThe usual order is to revive once, hear nothing, and decide they did not want to hear from you.\n\nMindset: one unanswered message is not a verdict.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You and an old friend used to meet every month. You have not spoken for a year.",
+          steps: [
+            { front: "Revive a Dead Thread — you decide to message her.", back: "\"Hi! It's been far too long. Coffee soon? I'm free next week.\"", guideFront: "Pick it back up when...", guideBack: "A fresh start on an old thread" },
+            { front: "Follow Up Once — a week later, no reply.", back: "\"No pressure at all — just bumping this in case it got buried!\"", guideFront: "Ask a second time, plainly, when...", guideBack: "The one reminder" },
+            { front: "Answer All of It — she replies, \"So sorry! Yes! Where, when, and are you still in town?\"", back: "\"Café Nero, Thursday at 10, and yes, same flat!\"", guideFront: "Answer every question they asked when...", guideBack: "A reply that covers each question" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A side project with a former colleague stopped six months ago.",
+          steps: [
+            { front: "Revive a Dead Thread — you email him.", back: "\"Picking this back up — are you still interested in the project? I've got time this autumn.\"", guideFront: "Pick it back up when...", guideBack: "A fresh start on an old thread" },
+            { front: "Follow Up Once — two weeks pass.", back: "\"Following up on my email about the project — no problem if the timing's wrong.\"", guideFront: "Ask a second time, plainly, when...", guideBack: "The one reminder" },
+            { front: "Answer All of It — he replies asking about scope, timing and whether you still have the files.", back: "\"Smaller scope, starting October, and yes, I have all the files.\"", guideFront: "Answer every question they asked when...", guideBack: "A reply that covers each question" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your cousin and you promised to plan a family reunion. Nobody has mentioned it since the funeral last year.",
+          steps: [
+            { front: "Revive a Dead Thread — you message her.", back: "\"Hi — we never did plan that reunion. Shall we try for the summer?\"", guideFront: "Pick it back up when...", guideBack: "A fresh start on an old thread" },
+            { front: "Follow Up Once — she has not replied in ten days.", back: "\"Just checking you saw this — no rush.\"", guideFront: "Ask a second time, plainly, when...", guideBack: "The one reminder" },
+            { front: "Answer All of It — she replies, asking where, when, and whether to invite the Swedish side.", back: "\"At Gran's old village, July, and yes, everyone.\"", guideFront: "Answer every question they asked when...", guideBack: "A reply that covers each question" },
+          ]
+        },
+      ]
+    },
+  ],
+  whentostoptyping: [
+    {
+      name: "Off the Screen",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Reply When You're Calm**, then **Take the Argument Offline**, then **Put It in Writing**. What to do when a message starts a fight.\n\n1. **Reply When You're Calm** — hold your reply, and say so.\n2. **Take the Argument Offline** — when they push, move it to a call or a meeting.\n3. **Put It in Writing** — after you have talked it through, write down what you agreed.\n\nWhy this order: the pause keeps you from sending the first angry reply. Moving it offline takes it out of the channel that makes arguments worse. The summary keeps the peace you made from being remembered differently.\n\nThe usual order is to reply fast, argue in writing for an hour, and never write down how it ended.\n\nMindset: pause, talk, then write it down.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your brother sends a long message saying you never do your share for your mum.",
+          steps: [
+            { front: "Reply When You're Calm — you feel your jaw tighten as you read it.", back: "\"I've read this. I want to reply properly — give me till tomorrow.\"", guideFront: "Wait before you answer when...", guideBack: "A promise of a calmer reply" },
+            { front: "Take the Argument Offline — he replies, \"Typical. You always dodge it.\"", back: "\"I'm not dodging it. I just don't want to do this by text. Can I call you tonight at 8?\"", guideFront: "Stop the fight in the chat when...", guideBack: "A pause, and a time to talk" },
+            { front: "Put It in Writing — after the call, you have agreed to share her Saturdays.", back: "\"Thanks for tonight. So: I take the first and third Saturdays, you the second and fourth.\"", guideFront: "Write down what was agreed when...", guideBack: "A short written summary" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A colleague emails you, copying your boss, to say your part of the project is holding everyone up.",
+          steps: [
+            { front: "Reply When You're Calm — you are furious, and your boss is watching.", back: "\"Thanks — I'll come back to you properly tomorrow morning.\"", guideFront: "Wait before you answer when...", guideBack: "A promise of a calmer reply" },
+            { front: "Take the Argument Offline — she replies to all again: \"We need an answer today.\"", back: "\"Understood. Could we talk at 2 rather than go back and forth here?\"", guideFront: "Stop the fight in the chat when...", guideBack: "A pause, and a time to talk" },
+            { front: "Put It in Writing — after the meeting, you have agreed new dates.", back: "\"Thanks for the chat. As agreed: my part by the 14th, yours by the 20th. Copying Anna so she has it.\"", guideFront: "Write down what was agreed when...", guideBack: "A short written summary" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your friend messages to say she is hurt that you did not invite her to your birthday.",
+          steps: [
+            { front: "Reply When You're Calm — your first reaction is to defend yourself.", back: "\"I've read this, and I don't want to reply too fast. Can I write properly tonight?\"", guideFront: "Wait before you answer when...", guideBack: "A promise of a calmer reply" },
+            { front: "Take the Argument Offline — she writes, \"There's nothing to explain really.\"", back: "\"I'd still like to talk about it, not type it. Coffee tomorrow?\"", guideFront: "Stop the fight in the chat when...", guideBack: "A pause, and a time to talk" },
+            { front: "Put It in Writing — after coffee, you have made it up.", back: "\"Thanks for today. I'm really glad we talked — and dinner's on me next week.\"", guideFront: "Write down what was agreed when...", guideBack: "A short written summary" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Too Many Messages",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Stop at One Message**, then **Move It to a Call**, then **Put It in Writing**. What to do when a practical thread has grown out of control.\n\n1. **Stop at One Message** — pull everything into one clear message.\n2. **Move It to a Call** — if it still does not settle, talk.\n3. **Put It in Writing** — after the call, write down what was decided.\n\nWhy this order: one clear message is the smallest fix, and often enough. If it is not, a call settles in minutes what a thread cannot. The summary makes sure the call does not turn into a new thread.\n\nThe usual order is more messages, then more messages.\n\nMindset: one message, then a call, then one message.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are organising a weekend away with four friends, and the group chat has two hundred messages.",
+          steps: [
+            { front: "Stop at One Message — you are about to add another suggestion.", back: "\"Summing up: two cabins, 12th to 14th, 1,500 each. Who's in?\"", guideFront: "Say it once, then wait when...", guideBack: "Everything in a single message" },
+            { front: "Move It to a Call — three people reply with three different dates.", back: "\"Let's do a ten-minute call tonight at 8 and decide.\"", guideFront: "Suggest talking instead when...", guideBack: "An offer to talk instead" },
+            { front: "Put It in Writing — the call is over, and you have agreed.", back: "\"Decided: the 19th to 21st, the lake cabins, 1,500 each. I'll book tomorrow.\"", guideFront: "Write down what was agreed when...", guideBack: "A short written summary" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You and your co-parent are arranging the children's summer holidays by text.",
+          steps: [
+            { front: "Stop at One Message — you have sent four messages about different weeks.", back: "\"In one message: I'd like weeks 27 and 30. Do those work?\"", guideFront: "Say it once, then wait when...", guideBack: "Everything in a single message" },
+            { front: "Move It to a Call — they reply with a long list of problems.", back: "\"Can we talk on the phone tonight? It'll be quicker.\"", guideFront: "Suggest talking instead when...", guideBack: "An offer to talk instead" },
+            { front: "Put It in Writing — you have agreed on the call.", back: "\"Thanks for the call. So: I have weeks 27 and 31, you have 28 to 30.\"", guideFront: "Write down what was agreed when...", guideBack: "A short written summary" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are sorting out a broken washing machine with the landlord's agent by email.",
+          steps: [
+            { front: "Stop at One Message — you have sent three emails with different details.", back: "\"To bring it together: it stopped on the 2nd, it's leaking, and I'm home Tuesdays.\"", guideFront: "Say it once, then wait when...", guideBack: "Everything in a single message" },
+            { front: "Move It to a Call — the agent replies asking questions you have already answered.", back: "\"Could you ring me? I think we'll sort it faster.\"", guideFront: "Suggest talking instead when...", guideBack: "An offer to talk instead" },
+            { front: "Put It in Writing — the agent has booked an engineer on the phone.", back: "\"Thanks for the call. To confirm: engineer on Tuesday between 8 and 12.\"", guideFront: "Write down what was agreed when...", guideBack: "A short written summary" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Big News",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Say It in Person**, then **Stop at One Message**, then **Put It in Writing**. What to do when you have something big to say, and they want to know now.\n\n1. **Say It in Person** — ask to meet, and hint at the size.\n2. **Stop at One Message** — they push to hear it by text; one calm reply, no more.\n3. **Put It in Writing** — after you have talked, write down anything practical.\n\nWhy this order: the request to meet keeps the news for a moment where they can react and ask. The single calm message keeps their curiosity from pulling it out of you in pieces. The summary keeps the practical details clear once the feelings have been talked about.\n\nThe usual order is to hint, get pushed, and then send it anyway in five rushed messages.\n\nMindset: big news deserves a face. The details can go in writing afterwards.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You have accepted a job in another city, and you have not told your best friend yet.",
+          steps: [
+            { front: "Say It in Person — you message her.", back: "\"I've got some news, good news, and I'd love to tell you in person. Dinner Thursday?\"", guideFront: "Save it for face to face when...", guideBack: "A request to meet about it" },
+            { front: "Stop at One Message — she replies, \"Just tell me!! I can't wait till Thursday.\"", back: "\"It's good, I promise, and it deserves a proper dinner. Thursday at 7.\"", guideFront: "Say it once, then wait when...", guideBack: "Everything in a single message" },
+            { front: "Put It in Writing — at dinner, you have agreed to visit each other monthly.", back: "\"Thanks for tonight. First visit: you, to me, the second weekend in October!\"", guideFront: "Write down what was agreed when...", guideBack: "A short written summary" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You need to tell your manager you are going to resign.",
+          steps: [
+            { front: "Say It in Person — you send her a message.", back: "\"Could I have fifteen minutes with you tomorrow? There's something I'd like to talk about in person.\"", guideFront: "Save it for face to face when...", guideBack: "A request to meet about it" },
+            { front: "Stop at One Message — she replies, \"Is everything okay? Can you give me a hint?\"", back: "\"Nothing's wrong, and I'd rather explain properly. Tomorrow at 10?\"", guideFront: "Say it once, then wait when...", guideBack: "Everything in a single message" },
+            { front: "Put It in Writing — after the meeting, you have agreed your last day.", back: "\"Thank you for today. To confirm: my last day will be 31 October, and I'll hand over to Jonas.\"", guideFront: "Write down what was agreed when...", guideBack: "A short written summary" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You and your partner have decided to separate, and you need to tell your parents.",
+          steps: [
+            { front: "Say It in Person — you text your mum.", back: "\"Could I come over on Sunday? There's something I'd like to tell you and Dad in person.\"", guideFront: "Save it for face to face when...", guideBack: "A request to meet about it" },
+            { front: "Stop at One Message — she replies, \"You're worrying me. What is it?\"", back: "\"I'm okay, I promise. I'd just rather tell you properly. Sunday at 2?\"", guideFront: "Say it once, then wait when...", guideBack: "Everything in a single message" },
+            { front: "Put It in Writing — after the visit, they have offered to help with the move.", back: "\"Thank you for Sunday. Dad, the van on the 15th would be amazing.\"", guideFront: "Write down what was agreed when...", guideBack: "A short written summary" },
+          ]
+        },
+      ]
+    },
+  ],
 };

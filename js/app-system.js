@@ -716,6 +716,9 @@ applyInputCounterVisibility();
     calibratinghumour: { label: 'Calibrating Humour', minLevel: 'complete' },
     brokenpromises: { label: 'Broken Promises and Trust', minLevel: 'complete' },
     askingpermission: { label: 'Asking for Permission', minLevel: 'complete' },
+    toneinmessages: { label: 'Tone in Messages', minLevel: 'complete' },
+    replyingandnotreplying: { label: 'Replying and Not Replying', minLevel: 'complete' },
+    whentostoptyping: { label: 'When to Stop Typing', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -3201,6 +3204,48 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
+  toneinmessages: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  replyingandnotreplying: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  whentostoptyping: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
 };
 window.BUNDLE_DEFS = BUNDLE_DEFS;
 
@@ -4091,6 +4136,16 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  {
+    version: 'v1.29.12', date: 'September 2026', title: 'A new topic: Messages & Writing \u2014 three packs', audience: 'dev',
+    items: [
+      'A new topic, <strong>Messages &amp; Writing</strong> (<code>written</code>), with three packs, all imported at <strong>complete</strong>, all <strong>0 errors and 0 warnings</strong> in check-pack, and all built as <strong>grid packs</strong> (row type <em>situation</em>).',
+      '<strong>Tone in Messages</strong> \u2014 how it sounds without a voice. Add the Warmth Back, Say Your Tone, Read It Kindly, Check Before You Worry, Match Their Length, Read It as Them, Soften It After.',
+      '<strong>Replying and Not Replying</strong> \u2014 what happens to a thread. Say You\u2019ve Seen It, Reply Late Keep It Short, Answer All of It, Close the Thread, Follow Up Once (shared with Making Requests), Revive a Dead Thread, Step Out of the Chat.',
+      '<strong>When to Stop Typing</strong> \u2014 choosing the channel. Move It to a Call, Say It in Person, Take the Argument Offline, Stop at One Message, Reply When You\u2019re Calm \u2014 and Put It in Writing, for when writing is the right channel after a conversation.',
+      'The area is the one place where a card front is not an approximation of the situation: the incoming message <em>is</em> the situation, quoted word for word.',
+    ],
+  },
   {
     version: 'v1.29.11', date: 'September 2026', title: 'Asking for Permission \u2014 the third grid pack', audience: 'dev',
     items: [

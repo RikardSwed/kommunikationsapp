@@ -7229,4 +7229,298 @@ const mindsetCollections = {
       ]
     },
   ],
+  toneinmessages: [
+    {
+      name: "The Tone Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"They'll know what I meant.\" The pack-wide belief that the reader hears your message the way you wrote it.\n\nWhat is true instead: they only have the words. Your voice, your face and your mood stayed with you.\n\nIt feels reasonable because you know exactly how you meant it, and the people you write to usually know you.\n\nWhat it costs is the small misreadings that pile up — the colleague who thinks you are annoyed, the friend who thinks you do not care.\n\nMindset: I write the words, and they supply the voice. I make sure the words carry enough.",
+      inputs: [
+        { q: "They'll know what I meant.", a: "\"They'll know what I wrote, and that's all they've got.\"", bundle: 'pro' },
+        { q: "It's obvious I'm joking.", a: "\"It's obvious in my head; on a screen, it's just the words.\"", bundle: 'pro' },
+        { q: "They know me, so tone doesn't matter.", a: "\"They know my voice, and my voice isn't in the message.\"", bundle: 'pro' },
+        { q: "I haven't got time to think about tone.", a: "\"One warm word takes a second, and a misreading takes a day.\"", bundle: 'pro' },
+        { q: "If they read it wrong, that's on them.", a: "\"If it can be read wrong, I can write it so it can't.\"", bundle: 'pro' },
+        { q: "Good writing is short writing.", a: "\"Short is good, as long as it isn't cold.\"", bundle: 'pro' },
+        { q: "I never have problems with texts.", a: "\"I might not know about the ones that went wrong.\"", bundle: 'pro' },
+        { q: "Tone is only a problem with strangers.", a: "\"The people closest to me read my short messages the most.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Short Is Efficient",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"Short messages are just efficient.\" True, and exactly why it is easy to stop there.\n\nWhat is true: short is often the kindest thing in a busy day. Nobody wants a paragraph where a line would do.\n\nWhat gets added is \"so it doesn't matter how it sounds\". A short message can be efficient and warm, or efficient and cold — and the difference is often one word.\n\nWhat it costs is the reputation of being curt, earned one efficient message at a time.\n\nMindset: keep it short. Keep one word of warmth in it.",
+      inputs: [
+        { q: "Short messages are just efficient.", a: "\"True — but 'so they can sound however they sound' is the part I added.\"", bundle: 'pro' },
+        { q: "Nobody wants a long email.", a: "\"True — but 'so no thanks at all' is the part I added.\"", bundle: 'pro' },
+        { q: "At work, you get to the point.", a: "\"True — but 'so no greeting' is the part I added.\"", bundle: 'pro' },
+        { q: "Emojis and exclamation marks are unprofessional.", a: "\"True, in some places — but 'so full stops only' is the part I added.\"", bundle: 'pro' },
+        { q: "I don't have time for small talk in messages.", a: "\"True — but 'so not even one warm word' is the part I added.\"", bundle: 'pro' },
+        { q: "The facts are what matter.", a: "\"True — but 'so how it lands doesn't' is the part I added.\"", bundle: 'pro' },
+        { q: "Everyone writes short replies.", a: "\"True — but 'so nobody reads them as cold' is the part I added.\"", bundle: 'pro' },
+        { q: "A one-word answer answers the question.", a: "\"True — but 'so it says nothing else' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Reading Between the Lines",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"That 'ok' means they're annoyed.\" The belief that you can read someone's mood from a short message.\n\nWhat is true instead: a short message tells you almost nothing about mood. Most of them are written fast, between other things.\n\nIt feels reasonable because you are good at reading people face to face, and it feels like the same skill.\n\nWhat it costs is the replies you send to a mood that was never there — and the evenings spent worrying about it.\n\nMindset: a short message is short. If I really need to know, I ask.",
+      inputs: [
+        { q: "That \"ok\" means they're annoyed.", a: "\"That 'ok' means they read it; the rest I'm making up.\"", bundle: 'pro' },
+        { q: "No exclamation mark means something's wrong.", a: "\"No exclamation mark usually means they were typing on the bus.\"", bundle: 'pro' },
+        { q: "They took ages to reply, so they're upset.", a: "\"They took ages to reply, so they were busy.\"", bundle: 'pro' },
+        { q: "I can tell from the way she wrote it.", a: "\"I can tell how I'd feel if I'd written it, which isn't the same.\"", bundle: 'pro' },
+        { q: "The full stop at the end was deliberate.", a: "\"The full stop was probably just a full stop.\"", bundle: 'pro' },
+        { q: "If they were fine, they'd have said more.", a: "\"If they weren't fine, they'd probably have said that.\"", bundle: 'pro' },
+        { q: "I've been reading the message over and over.", a: "\"Reading it again won't add information, but asking would.\"", bundle: 'pro' },
+        { q: "I'm good at reading people, so I'm right.", a: "\"I'm good at reading faces, and there isn't one here.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being Direct",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'm just direct. People know that about me.\" A belief that feels honest and efficient — and often is.\n\nWhat is true instead: directness in person comes with a face and a voice that soften it. In writing, the same directness arrives bare.\n\nIt feels reasonable because being direct saves time, avoids games, and people you work closely with may like it.\n\nWhat it costs is the people who do not know you well — or who are having a bad day — reading your direct message as a cold one.\n\nMindset: I can be direct and still put the warmth in writing.",
+      inputs: [
+        { q: "I'm just direct; people know that about me.", a: "\"The people who know me do, and the new colleague doesn't.\"", bundle: 'pro' },
+        { q: "I say what I mean.", a: "\"In writing, I say what I mean without the smile that came with it.\"", bundle: 'pro' },
+        { q: "I don't play games with my messages.", a: "\"No games, but some of my messages read as anger when they're not.\"", bundle: 'pro' },
+        { q: "People appreciate honesty.", a: "\"They appreciate it more when it doesn't sound like a telling-off.\"", bundle: 'pro' },
+        { q: "I don't waste words.", a: "\"Sometimes the words I save are the ones that made it friendly.\"", bundle: 'pro' },
+        { q: "If they're upset by a plain message, that's their problem.", a: "\"It becomes my problem when they stop replying.\"", bundle: 'pro' },
+        { q: "Softening things is dishonest.", a: "\"Adding the warmth I actually feel isn't dishonest.\"", bundle: 'pro' },
+        { q: "My messages are always clear.", a: "\"Clear about the facts, and sometimes unclear about how I feel.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sounding Fake",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I add warmth on purpose, I'm being fake.\" The belief that thinking about tone makes a message less genuine.\n\nWhat is true instead: adding back the warmth you actually feel is not fake. It is translating it into words, because the voice cannot come along.\n\nIt feels reasonable because \"Hope you're well!\" can sound empty, and nobody wants to write like a customer service script.\n\nWhat it costs is sending messages that are more honest about the facts and less honest about you.\n\nMindset: if I feel it, writing it down is honest.",
+      inputs: [
+        { q: "If I add warmth on purpose, I'm being fake.", a: "\"If I feel it, writing it down is just honest.\"", bundle: 'pro' },
+        { q: "Exclamation marks feel false.", a: "\"One exclamation mark is what my voice would have done.\"", bundle: 'pro' },
+        { q: "\"Hope you're well\" is empty.", a: "\"Then I'll write something true about them instead.\"", bundle: 'pro' },
+        { q: "Checking my tone is overthinking.", a: "\"Reading it once from their side is five seconds, not overthinking.\"", bundle: 'pro' },
+        { q: "Real friends don't need nice wording.", a: "\"Real friends still read 'fine' as annoyed on a bad day.\"", bundle: 'pro' },
+        { q: "I'd rather be blunt than fake.", a: "\"There's a warm version that isn't fake, and it's the one I mean.\"", bundle: 'pro' },
+        { q: "Saying \"not annoyed\" makes it sound like I am.", a: "\"Saying it clears it up; leaving it lets them guess.\"", bundle: 'pro' },
+        { q: "I don't want to sound like a customer service email.", a: "\"Then I'll write it the way I'd say it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Fixing It After",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I bring it up, I'll make it a bigger deal.\" The belief that a sharp message is best left alone.\n\nWhat is true instead: a sharp message does not fade on its own. It sits on their screen, and a short follow-up is the smallest way to replace it.\n\nIt feels reasonable because they might not have noticed, and drawing attention to it feels risky.\n\nWhat it costs is the sharp message becoming the last word — and the thing they remember about the exchange.\n\nMindset: a short follow-up makes it smaller, not bigger.",
+      inputs: [
+        { q: "If I bring it up, I'll make it a bigger deal.", a: "\"One short line makes it smaller; leaving it lets it sit there.\"", bundle: 'pro' },
+        { q: "They probably didn't notice.", a: "\"If I noticed, they probably did.\"", bundle: 'pro' },
+        { q: "It wasn't that bad.", a: "\"It wasn't that bad to write; I'll check how it reads.\"", bundle: 'pro' },
+        { q: "I'll be extra nice next time instead.", a: "\"Next time doesn't replace this message; a follow-up does.\"", bundle: 'pro' },
+        { q: "Apologising for a text is dramatic.", a: "\"'That came out wrong' is seven words, not a drama.\"", bundle: 'pro' },
+        { q: "I'll wait and see if they mention it.", a: "\"Most people won't mention it, they'll just remember it.\"", bundle: 'pro' },
+        { q: "I need to write a proper apology.", a: "\"A short one that names the words is better than a long one.\"", bundle: 'pro' },
+        { q: "If I correct it, they'll think I'm insecure.", a: "\"They'll think I care how I come across, which is fine.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  replyingandnotreplying: [
+    {
+      name: "The Reply Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I'll reply when I can do it properly.\" The pack-wide belief that a reply has to be complete, considered and well written — or not sent yet.\n\nWhat is true instead: a short reply now is almost always better than a proper one later. Waiting to reply properly is how most replies never happen.\n\nIt feels reasonable because the message deserves a real answer, and a quick one feels careless.\n\nWhat it costs is the silence in between — which the other person fills with their own explanation.\n\nMindset: quick and short now, fuller later if it needs it.",
+      inputs: [
+        { q: "I'll reply when I can do it properly.", a: "\"A short reply now is kinder than a proper one next week.\"", bundle: 'pro' },
+        { q: "A quick reply would be rude.", a: "\"A quick reply is polite; a silent one is what looks rude.\"", bundle: 'pro' },
+        { q: "I need to think about my answer first.", a: "\"I can say I'm thinking about it, and that's an answer.\"", bundle: 'pro' },
+        { q: "I'll do all my messages at the weekend.", a: "\"By the weekend, the easy ones will have turned into late ones.\"", bundle: 'pro' },
+        { q: "They'll understand if I'm slow.", a: "\"They'll understand better if I tell them I'm slow.\"", bundle: 'pro' },
+        { q: "A short reply means I don't care.", a: "\"A short reply means I saw it, and that's most of what they need.\"", bundle: 'pro' },
+        { q: "I don't know what to say yet.", a: "\"Then I'll say that, and when I'll know.\"", bundle: 'pro' },
+        { q: "Replying straight away looks desperate.", a: "\"Replying when I see it just looks like I saw it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Always Available",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I always reply straight away.\" A belief that feels like reliability — and often is.\n\nWhat is true instead: instant replies set an expectation you then have to keep, and they are often written before you have really thought.\n\nIt feels reasonable because people appreciate fast replies, and it feels good to be the one who never keeps anyone waiting.\n\nWhat it costs is being always on — and the replies you send half-read, half-thought, in the middle of something else.\n\nMindset: I can be reliable without being instant.",
+      inputs: [
+        { q: "I always reply straight away.", a: "\"And now everyone expects it, including at eleven at night.\"", bundle: 'pro' },
+        { q: "People know they can always reach me.", a: "\"Which means I can never quite switch off.\"", bundle: 'pro' },
+        { q: "Fast replies are good manners.", a: "\"Fast replies are good manners until I send one I haven't thought about.\"", bundle: 'pro' },
+        { q: "I never leave anyone waiting.", a: "\"So I answer before I've read the whole message.\"", bundle: 'pro' },
+        { q: "I'm on top of my messages.", a: "\"I'm on top of them, and they're on top of my evening.\"", bundle: 'pro' },
+        { q: "If I don't reply now, I'll forget.", a: "\"A holding line and a later reply work just as well.\"", bundle: 'pro' },
+        { q: "Being quick shows I care.", a: "\"Being thoughtful shows it too, and sometimes that takes an hour.\"", bundle: 'pro' },
+        { q: "I'm the one in the group who always answers.", a: "\"So nobody else has to, and I end up doing it all.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Too Late to Reply",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"It's been too long now — replying would be weird.\" The belief that a message has an expiry date.\n\nWhat is true instead: a late reply is almost always welcome. What makes it weird is the long apology, not the lateness.\n\nIt feels reasonable because every day makes the reply feel like it needs a bigger explanation, and silence starts to feel like the less embarrassing option.\n\nWhat it costs is the relationship with the person who is still waiting — or who stopped waiting a while ago.\n\nMindset: late and short is better than never.",
+      inputs: [
+        { q: "It's been too long; replying would be weird.", a: "\"It's weirder never to reply, and one line will do.\"", bundle: 'pro' },
+        { q: "I'd have to explain why I took so long.", a: "\"One line of sorry is all the explanation it needs.\"", bundle: 'pro' },
+        { q: "They've probably forgotten they asked.", a: "\"Then my reply will be a nice surprise.\"", bundle: 'pro' },
+        { q: "If I reply now, they'll wonder why I didn't before.", a: "\"They'll mostly be glad I did.\"", bundle: 'pro' },
+        { q: "The moment's passed.", a: "\"The moment has, but the person hasn't.\"", bundle: 'pro' },
+        { q: "I'll reply when I've got something better to say.", a: "\"'Sorry I'm late, and thank you' is good enough.\"", bundle: 'pro' },
+        { q: "They must be annoyed with me by now.", a: "\"Replying is the quickest way to find out, and to fix it.\"", bundle: 'pro' },
+        { q: "It's too awkward now.", a: "\"It gets more awkward every day I wait.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Left on Read",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"They've seen it and not replied — they must be annoyed.\" The belief that silence after a read receipt is a message.\n\nWhat is true instead: most messages are read at a bad moment and forgotten. Seen is not the same as answered, and not the same as ignored.\n\nIt feels reasonable because you can see that they read it, and it feels like they chose not to reply.\n\nWhat it costs is the anxious second message, the \"?\", and sometimes a real falling-out over nothing.\n\nMindset: seen is not ignored. One follow-up, then let it be.",
+      inputs: [
+        { q: "They've seen it and not replied, so they must be annoyed.", a: "\"They've seen it at a bad moment, most likely.\"", bundle: 'pro' },
+        { q: "They're ignoring me.", a: "\"They're probably ignoring everything today, not just me.\"", bundle: 'pro' },
+        { q: "I'll send another message to make sure.", a: "\"One light follow-up, and then I'll leave it.\"", bundle: 'pro' },
+        { q: "They replied to other people in the group but not to me.", a: "\"They answered the easy ones first; mine needs more thought.\"", bundle: 'pro' },
+        { q: "If they cared, they'd answer.", a: "\"People who care still forget to answer.\"", bundle: 'pro' },
+        { q: "I must have said something wrong.", a: "\"I can reread it once, and then stop inventing reasons.\"", bundle: 'pro' },
+        { q: "I'll just stop messaging them.", a: "\"Before I decide that, I'll ask once more.\"", bundle: 'pro' },
+        { q: "The silence is a message.", a: "\"The silence is just silence until they say otherwise.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ending It",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"It's rude to end a conversation.\" True in part, which is why people keep replying long after it is over.\n\nWhat is true: an abrupt ending — disappearing mid-conversation — can feel like a snub.\n\nWhat gets added is \"so I have to keep replying until they stop\". A friendly last message is not abrupt; it is the ending the conversation needed.\n\nWhat it costs is threads that never finish, and the feeling of owing everyone a reply forever.\n\nMindset: keep the courtesy. Use it to end things kindly.",
+      inputs: [
+        { q: "It's rude to end a conversation.", a: "\"True, abruptly — but 'so I can never end one' is the part I added.\"", bundle: 'pro' },
+        { q: "If they reply, I should reply back.", a: "\"True, usually — but 'even to a thumbs up' is the part I added.\"", bundle: 'pro' },
+        { q: "Leaving a group chat is unfriendly.", a: "\"True, silently — but 'so I have to stay forever' is the part I added.\"", bundle: 'pro' },
+        { q: "The polite thing is to have the last word be theirs.", a: "\"True, sometimes — but 'so I keep going until it is' is the part I added.\"", bundle: 'pro' },
+        { q: "Not replying is rude.", a: "\"True, to a question — but 'to every message' is the part I added.\"", bundle: 'pro' },
+        { q: "I should always thank them for their thanks.", a: "\"True, once — but 'every time' is the part I added.\"", bundle: 'pro' },
+        { q: "Muting a chat is like ignoring people.", a: "\"True, without a word — but 'even if I tell them' is the part I added.\"", bundle: 'pro' },
+        { q: "I don't want to seem cold by ending it.", a: "\"True, I don't — but 'so a friendly ending is cold' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Group Chat",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I have to keep up with every message in the group.\" The belief that being in a group chat means reading and answering all of it.\n\nWhat is true instead: most group messages are not for you, and nobody is checking whether you read them.\n\nIt feels reasonable because you might miss something important, and not replying in a group can feel like being left out.\n\nWhat it costs is hours of reading, a constant low buzz of obligation, and the important message buried among the rest.\n\nMindset: I can step back from the group and still be easy to reach.",
+      inputs: [
+        { q: "I have to keep up with every message in the group.", a: "\"I only need the ones about me, and people can message me for those.\"", bundle: 'pro' },
+        { q: "If I mute the group, I'll miss something.", a: "\"I'll tell them to message me directly if they need me.\"", bundle: 'pro' },
+        { q: "Everyone will notice if I leave.", a: "\"They'll notice a friendly exit less than a silent one.\"", bundle: 'pro' },
+        { q: "I should reply to everything in the group.", a: "\"Most group messages don't need anyone's reply, least of all mine.\"", bundle: 'pro' },
+        { q: "Leaving the chat means leaving the friendship.", a: "\"The friendship was never in the chat.\"", bundle: 'pro' },
+        { q: "I'll look antisocial.", a: "\"One friendly line makes it about the volume, not the people.\"", bundle: 'pro' },
+        { q: "I have to read back through everything I missed.", a: "\"I can ask what I need to know.\"", bundle: 'pro' },
+        { q: "It's rude not to react to people's photos.", a: "\"Nobody counts who reacted to their photos.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  whentostoptyping: [
+    {
+      name: "The Channel Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"It's easier to just text.\" The pack-wide belief that writing is always the simplest way to handle something.\n\nWhat is true instead: text is easiest to send. It is not always easiest to sort something out in.\n\nIt feels reasonable because texting is quick, it can be done anywhere, and it avoids the awkwardness of a call.\n\nWhat it costs is the long thread, the crossed wires, the argument that grew, and the news that landed badly.\n\nMindset: text for the easy things. Talk for the rest.",
+      inputs: [
+        { q: "It's easier to just text.", a: "\"It's easier to send, and it isn't always easier to sort things out.\"", bundle: 'pro' },
+        { q: "Calling feels like too much.", a: "\"Two minutes on the phone is less than forty messages.\"", bundle: 'pro' },
+        { q: "I can explain it better in writing.", a: "\"I can explain it, but they can't ask questions.\"", bundle: 'pro' },
+        { q: "Nobody calls anyone any more.", a: "\"That's exactly why a call gets things sorted.\"", bundle: 'pro' },
+        { q: "Texting lets me think about what I say.", a: "\"That's true, and it's also why arguments go on for hours.\"", bundle: 'pro' },
+        { q: "I don't like talking on the phone.", a: "\"I don't have to like it to use it when it's quicker.\"", bundle: 'pro' },
+        { q: "Text gives them time to respond.", a: "\"It also gives them time to imagine the worst.\"", bundle: 'pro' },
+        { q: "I'll just send one more message.", a: "\"One more is how it got to thirty.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Better in Writing",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'm better in writing. I can choose my words.\" A belief that feels like a real skill — and often is.\n\nWhat is true instead: being good at writing makes it tempting to use it for everything — including the things that need a voice.\n\nIt feels reasonable because your messages are clear and careful, and you have probably avoided some bad moments by writing instead of speaking.\n\nWhat it costs is the conversations that needed to be had in person, sent as beautifully written messages that the other person read alone.\n\nMindset: I can write well, and still choose not to.",
+      inputs: [
+        { q: "I'm better in writing; I can choose my words.", a: "\"And the other person has to read them alone, with no chance to ask.\"", bundle: 'pro' },
+        { q: "I'd rather write it down than say it badly.", a: "\"Said badly, in person, it can still land better than written well.\"", bundle: 'pro' },
+        { q: "My messages are always clear.", a: "\"Clear about the facts, and still cold on bad news.\"", bundle: 'pro' },
+        { q: "Writing keeps me calm.", a: "\"It keeps me calm and keeps the other person waiting.\"", bundle: 'pro' },
+        { q: "I explain things properly by email.", a: "\"Properly, and at length, when a call would take two minutes.\"", bundle: 'pro' },
+        { q: "I can say hard things more easily in writing.", a: "\"Which is exactly why I sometimes say them in writing when they needed a face.\"", bundle: 'pro' },
+        { q: "A well-written apology is better than a stumbling one.", a: "\"A stumbling one, in person, shows I meant it.\"", bundle: 'pro' },
+        { q: "People can reread what I wrote.", a: "\"Including the parts I would have softened out loud.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "One More Message",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I just explain it clearly enough, they'll understand.\" The belief that the next message will fix it.\n\nWhat is true instead: when a thread has gone wrong, more words in the same channel usually make it longer, not clearer.\n\nIt feels reasonable because you can see exactly what they have misunderstood, and it seems like one more explanation will do it.\n\nWhat it costs is the stream of messages — each one longer, each one giving them something new to answer.\n\nMindset: if it has not worked in writing yet, change the channel.",
+      inputs: [
+        { q: "If I just explain it clearly enough, they'll understand.", a: "\"If three messages haven't done it, the fourth won't.\"", bundle: 'pro' },
+        { q: "They've misunderstood; I need to correct it.", a: "\"I can correct it faster in two minutes on the phone.\"", bundle: 'pro' },
+        { q: "I just need to add one more thing.", a: "\"I'll put it all in one message, and then wait.\"", bundle: 'pro' },
+        { q: "They haven't replied, so I'll add more detail.", a: "\"More detail isn't why they haven't replied.\"", bundle: 'pro' },
+        { q: "I need to get my side down in writing.", a: "\"My side will land better when they can hear it.\"", bundle: 'pro' },
+        { q: "If I stop replying, they'll think they've won.", a: "\"Nobody wins this in writing; I'd rather sort it out.\"", bundle: 'pro' },
+        { q: "Just one last point and I'll stop.", a: "\"I've said that twice already.\"", bundle: 'pro' },
+        { q: "I have to answer everything they said.", a: "\"I have to sort it out, and that isn't the same thing.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Answering Now",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I have to answer this right now.\" The belief that a message, especially an angry one, needs an immediate reply.\n\nWhat is true instead: writing is the one kind of conversation where you are allowed to wait. A short \"I'll reply tomorrow\" is a complete answer for now.\n\nIt feels reasonable because the message is sitting there, they know you have seen it, and silence feels like losing.\n\nWhat it costs is the first reply — the one written angry, defensive or hurt, that you cannot take back.\n\nMindset: I can take my time. That is what writing is for.",
+      inputs: [
+        { q: "I have to answer this right now.", a: "\"I can say I'll reply tomorrow, and that's an answer.\"", bundle: 'pro' },
+        { q: "If I don't reply, they'll think I agree.", a: "\"One line saying I'll reply properly shows I don't.\"", bundle: 'pro' },
+        { q: "They know I've seen it.", a: "\"Then I'll tell them I'm thinking about it.\"", bundle: 'pro' },
+        { q: "I need to defend myself before they tell others.", a: "\"A calm reply tomorrow will defend me better than an angry one now.\"", bundle: 'pro' },
+        { q: "Waiting will make it worse.", a: "\"Replying angry is what makes it worse.\"", bundle: 'pro' },
+        { q: "I know exactly what I want to say.", a: "\"Then it'll still be there tomorrow, if I still want to say it.\"", bundle: 'pro' },
+        { q: "It's cowardly not to answer straight away.", a: "\"It takes more courage to wait than to fire back.\"", bundle: 'pro' },
+        { q: "I'll feel better once I've replied.", a: "\"For about ten minutes, and then I'll have to live with it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Calling Out of the Blue",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"Calling people out of the blue is intrusive.\" True, which is why it is easy to take too far.\n\nWhat is true: an unannounced call can be unwelcome, and many people prefer to know one is coming.\n\nWhat gets added is \"so I should never suggest one\". A message that asks whether a call would help is not intrusive at all — it is often a relief.\n\nWhat it costs is the long threads and misunderstandings that a two-minute call would have settled.\n\nMindset: keep the courtesy of asking. Drop the idea that calls are off limits.",
+      inputs: [
+        { q: "Calling people out of the blue is intrusive.", a: "\"True — but 'so I can't even suggest a call' is the part I added.\"", bundle: 'pro' },
+        { q: "Most people prefer texting.", a: "\"True, for most things — but 'for everything' is the part I added.\"", bundle: 'pro' },
+        { q: "A call puts them on the spot.", a: "\"True, unannounced — but 'even if I ask first' is the part I added.\"", bundle: 'pro' },
+        { q: "Nobody under forty answers the phone.", a: "\"True, to unknown numbers — but 'to a friend who asked first' is the part I added.\"", bundle: 'pro' },
+        { q: "Suggesting a call makes it sound serious.", a: "\"True, a bit — but 'too serious to be worth it' is the part I added.\"", bundle: 'pro' },
+        { q: "Email is more professional.", a: "\"True, for records — but 'for sorting out problems' is the part I added.\"", bundle: 'pro' },
+        { q: "They might be busy.", a: "\"True — but 'so I shouldn't ask when suits them' is the part I added.\"", bundle: 'pro' },
+        { q: "Asking to meet is a big deal.", a: "\"True, sometimes — but 'so I'll send the big news by text' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Writing It Down",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I write down what we agreed, it looks like I don't trust them.\" The belief that a written summary is a sign of suspicion.\n\nWhat is true instead: a short summary is a courtesy. It saves both of you from remembering it differently — which happens to everyone, however much they trust each other.\n\nIt feels reasonable because putting things in writing can feel formal, like a contract between people who should not need one.\n\nWhat it costs is the argument three weeks later about what was really said.\n\nMindset: writing it down protects the agreement, not me.",
+      inputs: [
+        { q: "If I write it down, it looks like I don't trust them.", a: "\"It looks like I want us both to remember it the same way.\"", bundle: 'pro' },
+        { q: "We're friends; we don't need it in writing.", a: "\"Friends remember things differently too.\"", bundle: 'pro' },
+        { q: "It'll seem too formal.", a: "\"'Just so we both have it' isn't formal, it's helpful.\"", bundle: 'pro' },
+        { q: "We both know what we agreed.", a: "\"We both know it today; in three weeks we might not.\"", bundle: 'pro' },
+        { q: "Writing it down is only for work.", a: "\"It's for anything I don't want to argue about later.\"", bundle: 'pro' },
+        { q: "They'll think I'm trying to catch them out.", a: "\"Not if I thank them and invite corrections.\"", bundle: 'pro' },
+        { q: "It's obvious what we decided.", a: "\"Then writing it takes ten seconds.\"", bundle: 'pro' },
+        { q: "I'll remember it.", a: "\"I will, and so will they, but differently.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };

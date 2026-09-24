@@ -400,6 +400,15 @@ const packTags = {
   askingpermission: [
     'permission', 'consent', 'asking first', 'borrowing', 'sharing photos', 'sharing news', 'boundaries', 'taking a no'
   ],
+  toneinmessages: [
+    'texting', 'messages', 'email', 'tone', 'sounding cold', 'short replies', 'group chats', 'work messages', 'written communication'
+  ],
+  replyingandnotreplying: [
+    'texting', 'messages', 'email', 'late replies', 'unanswered messages', 'group chats', 'ending a conversation', 'being left on read'
+  ],
+  whentostoptyping: [
+    'texting', 'messages', 'email', 'arguments over text', 'calling instead', 'bad news', 'double texting', 'written summaries'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -455,6 +464,9 @@ const TOPICS = [
 
   // ── The hard end ──────────────────────────────────────────────────
   { id: 'emotions',              title: 'Emotions & Regulation',         packs: ['emotionlabellingandregulation', 'conflictemotions', 'praxdread4', 'reframing', 'oconnor6'] },
+
+  // ── In writing (v1.29.12) ─────────────────────────────────────────
+  { id: 'written',               title: 'Messages & Writing',            packs: ['toneinmessages', 'replyingandnotreplying', 'whentostoptyping'] },
 
   // ── Lightness ─────────────────────────────────────────────────────
   { id: 'humour',                title: 'Humour & Banter',               packs: ['humour', 'teasing', 'selfhumour', 'humourpractise', 'playfulrefusals', 'rolebasedhumour', 'storybanter', 'responsivehumour', 'calibratinghumour'] },

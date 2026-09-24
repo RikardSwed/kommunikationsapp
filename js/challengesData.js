@@ -6768,4 +6768,250 @@ const challengesCollections = {
       ]
     },
   ],
+  toneinmessages: [
+    {
+      name: "One-Word Replies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "\"Ok.\" \"Fine.\" \"k.\" \"Noted.\" A single word, with no voice behind it, and you have to decide what it means.\n\nWhat goes wrong is picking the worst meaning and replying to that — or replying with one cold word of your own.\n\n**Read It Kindly** is the first move: most one-word replies are just fast. **Check Before You Worry** is for when it is not like them. **Match Their Length** stops you writing an essay back to one word.\n\nThe one thing to avoid: \"Is that all you have to say?\"\n\nMindset: one word usually means they were busy, not that they are upset.",
+      inputs: [
+        { q: "Your friend replies \"k\" to your long invitation.", a: "\"Great, see you there!\" [Read It Kindly]", bundle: 'pro', guideBack: "A reply to the kind version" },
+        { q: "Your manager replies \"Fine.\" to your holiday request.", a: "\"Thank you! I'll put it in the calendar.\" [Read It Kindly]", bundle: 'pro', guideBack: "A reply to the kind version" },
+        { q: "Your normally chatty friend has replied \"ok\" to three messages in a row.", a: "\"All okay with you? You seem quiet.\" [Check Before You Worry]", bundle: 'pro', guideBack: "A light check on the tone" },
+        { q: "A colleague replies \"Noted.\" to your careful explanation.", a: "\"Thanks!\" [Match Their Length]", bundle: 'pro', guideBack: "A reply the right size" },
+        { q: "Your partner replies \"fine\" to your plan for the evening.", a: "\"Great! Or we can do something else if you'd rather — just say.\" [Read It Kindly]", bundle: 'pro', guideBack: "A reply to the kind version" },
+        { q: "You are about to write, \"Is that all you have to say?\"", a: "\"All good? Happy to talk if you'd rather.\" [Check Before You Worry]", bundle: 'pro', guideBack: "A light check on the tone" },
+        { q: "Your teenager replies \"ye\" to your question about his plans.", a: "\"Great. Home by 10.\" [Match Their Length]", bundle: 'pro', guideBack: "A reply the right size" },
+        { q: "A client replies \"OK\" in capitals to your revised quote.", a: "\"Great — I'll send the contract today.\" [Read It Kindly]", bundle: 'pro', guideBack: "A reply to the kind version" },
+      ]
+    },
+    {
+      name: "Bad News by Text",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You have to send something disappointing in writing — a no, a cancellation, a delay, a price, a refusal of an invitation.\n\nWhat goes wrong is writing it the way you would say it with your face doing half the work. On a screen, the plain version of bad news reads colder than it is, and they read it alone.\n\n**Add the Warmth Back** puts in what your face would have added. **Say Your Tone** tells them it is not about them. **Read It as Them** catches the line that would sting.\n\nThe one thing to avoid: the bare fact with nothing around it.\n\nMindset: bad news in writing needs more warmth than bad news in person, not less.",
+      inputs: [
+        { q: "You need to cancel a dinner with a friend you have not seen in months.", a: "\"I'm so sorry — I have to cancel tonight. I've been looking forward to it. Can we pick a date now?\" [Add the Warmth Back]", bundle: 'pro', guideBack: "The same message, warmer" },
+        { q: "You have to tell a job applicant by email that they did not get the job.", a: "\"Thank you for your time and interest. I'm sorry to say we've offered the role to someone else.\" [Add the Warmth Back]", bundle: 'pro', guideBack: "The same message, warmer" },
+        { q: "You are declining your friend's hen weekend, and do not want it to look like you do not care.", a: "\"It's not that I don't want to — it's the money. I'll be at the wedding with bells on.\" [Say Your Tone]", bundle: 'pro', guideBack: "The message, with its tone spelled out" },
+        { q: "Your draft to a client says, \"The price has gone up. Nothing I can do.\"", a: "\"I'm sorry to say the price has gone up. I've kept the increase as small as I could.\" [Read It as Them]", bundle: 'pro', guideBack: "The draft, rewritten" },
+        { q: "You have to tell your team that the Friday finish is cancelled.", a: "\"Bad news, I'm afraid — no early finish this Friday. I'm as disappointed as you.\" [Say Your Tone]", bundle: 'pro', guideBack: "The message, with its tone spelled out" },
+        { q: "Your draft to your sister says, \"Can't lend you the car.\"", a: "\"I'm sorry, I can't lend you the car this weekend — I need it for work.\" [Read It as Them]", bundle: 'pro', guideBack: "The draft, rewritten" },
+        { q: "You need to tell your neighbour their parcel was damaged while you were keeping it.", a: "\"Really sorry — your parcel got wet in the porch. I'll help sort out a replacement.\" [Add the Warmth Back]", bundle: 'pro', guideBack: "The same message, warmer" },
+        { q: "You are turning down an invitation from someone you barely know.", a: "\"Thank you so much for asking — I can't make it, but I hope it's a great evening.\" [Add the Warmth Back]", bundle: 'pro', guideBack: "The same message, warmer" },
+      ]
+    },
+    {
+      name: "Work Messages",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Short, practical messages at work — requests, deadlines, corrections — where speed matters and nobody has time for small talk.\n\nWhat goes wrong is that the efficient version and the curt version look identical. \"Need this by 3.\" is fast to write and reads like an order.\n\n**Read It as Them** catches the \"as I said\" before it goes. **Add the Warmth Back** adds one word, not a paragraph. **Match Their Length** keeps it short when they kept it short.\n\nThe one thing to avoid: \"As per my last email.\"\n\nMindset: one warm word costs a second and saves a misreading.",
+      inputs: [
+        { q: "Your draft to a colleague says, \"Need this by 3.\"", a: "\"Could I have this by 3? Thanks!\" [Add the Warmth Back]", bundle: 'pro', guideBack: "The same message, warmer" },
+        { q: "Your draft reply says, \"As per my last email…\"", a: "\"Just to confirm, the meeting is on Thursday.\" [Read It as Them]", bundle: 'pro', guideBack: "The draft, rewritten" },
+        { q: "A colleague asks a quick question. You have drafted four paragraphs.", a: "\"Yes — the second option. Happy to explain more if helpful.\" [Match Their Length]", bundle: 'pro', guideBack: "A reply the right size" },
+        { q: "Your draft to a junior colleague says, \"This is wrong. Redo it.\"", a: "\"Thanks for this — a couple of bits need changing. Could we look at it together?\" [Read It as Them]", bundle: 'pro', guideBack: "The draft, rewritten" },
+        { q: "You are about to reply \"Received.\" to a colleague's hard work.", a: "\"Received — thank you, this is really useful.\" [Add the Warmth Back]", bundle: 'pro', guideBack: "The same message, warmer" },
+        { q: "Your draft says, \"Why wasn't I copied in?\"", a: "\"Could you copy me in on these going forward? Thanks.\" [Read It as Them]", bundle: 'pro', guideBack: "The draft, rewritten" },
+        { q: "You need to correct your manager's figure without it looking like a gotcha.", a: "\"Just a small thing, not a big deal: I think the total is 4,200, not 4,500.\" [Say Your Tone]", bundle: 'pro', guideBack: "The message, with its tone spelled out" },
+        { q: "A colleague sends a one-line \"Can you cover Monday?\"", a: "\"Yes, no problem!\" [Match Their Length]", bundle: 'pro', guideBack: "A reply the right size" },
+      ]
+    },
+    {
+      name: "Group Chats",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The message is read by several people at once, each with their own mood, and some of them barely know you.\n\nWhat goes wrong is that a joke or a disagreement that works with one friend lands differently on six people. And silence after your message is louder in a group.\n\n**Say Your Tone** matters more here than anywhere. **Read It as Them** — as the least friendly reader in the group. **Check Before You Worry** when the chat goes quiet after you.\n\nThe one thing to avoid: sarcasm. In a group, someone always reads it straight.\n\nMindset: in a group, write for the reader who knows me least.",
+      inputs: [
+        { q: "You want to disagree with the plan in the group chat without looking difficult.", a: "\"Not trying to be awkward — would Sunday work better for anyone else?\" [Say Your Tone]", bundle: 'pro', guideBack: "The message, with its tone spelled out" },
+        { q: "Your draft to the parents' chat says, \"Some of us actually read the newsletter.\"", a: "\"Quick reminder: the trip money is due Friday.\" [Read It as Them]", bundle: 'pro', guideBack: "The draft, rewritten" },
+        { q: "The group chat went silent after your joke.", a: "\"That joke landed with a thud. Anyway — Saturday?\" [Check Before You Worry]", bundle: 'pro', guideBack: "A light check on the tone" },
+        { q: "You want to suggest the group splits the bill differently.", a: "\"Just an idea, not a complaint: could we each pay for our own drinks?\" [Say Your Tone]", bundle: 'pro', guideBack: "The message, with its tone spelled out" },
+        { q: "Your draft to the team chat says, \"Great, another last-minute change.\"", a: "\"Noted — thanks for the heads up.\" [Read It as Them]", bundle: 'pro', guideBack: "The draft, rewritten" },
+        { q: "Someone replies to your suggestion with \"or we could just do what we planned.\"", a: "\"Fair — happy to stick with the plan!\" [Read It Kindly]", bundle: 'pro', guideBack: "A reply to the kind version" },
+        { q: "You are about to post a sarcastic \"can't wait\" about the team away day.", a: "\"Looking forward to the away day. Is there a car share?\" [Read It as Them]", bundle: 'pro', guideBack: "The draft, rewritten" },
+        { q: "Nobody has replied to your question in the group for a day.", a: "\"No pressure — just bumping my question about Saturday.\" [Check Before You Worry]", bundle: 'pro', guideBack: "A light check on the tone" },
+      ]
+    },
+    {
+      name: "You Sent It Angry",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You wrote it while annoyed, you pressed send, and now it is sitting there — sharper than you would ever say out loud.\n\nWhat goes wrong is waiting to see whether they noticed, or sending a long, anxious apology that makes it bigger.\n\n**Soften It After** is the main move: short, specific, and with what you meant. **Add the Warmth Back** in your next message shows the sharp one was the exception.\n\nThe one thing to avoid: deleting it and pretending it never happened.\n\nMindset: a sharp message is fixed by a short follow-up, not a long one.",
+      inputs: [
+        { q: "You replied \"Fine, do what you want.\" to your partner.", a: "\"Sorry, that came out angry. I'm fine with either — I was just tired.\" [Soften It After]", bundle: 'pro', guideBack: "A follow-up that fixes the tone" },
+        { q: "You sent your flatmate \"Do your dishes for once.\"", a: "\"Sorry, that was harsh. Could you do your dishes tonight? Thanks.\" [Soften It After]", bundle: 'pro', guideBack: "A follow-up that fixes the tone" },
+        { q: "You emailed a colleague, \"This is the third time I've asked.\"", a: "\"Sorry, that came across sharper than I meant. Could you send it today?\" [Soften It After]", bundle: 'pro', guideBack: "A follow-up that fixes the tone" },
+        { q: "You replied to your mum, \"I KNOW.\"", a: "\"Sorry Mum, that was grumpy. Thanks for reminding me.\" [Soften It After]", bundle: 'pro', guideBack: "A follow-up that fixes the tone" },
+        { q: "You want to delete the sharp message and act as if it was never sent.", a: "\"I sent something grumpy earlier — sorry. What I meant was, let's talk tonight.\" [Soften It After]", bundle: 'pro', guideBack: "A follow-up that fixes the tone" },
+        { q: "You corrected your friend's message and they have not replied.", a: "\"Anyway — how did the interview go?\" [Add the Warmth Back]", bundle: 'pro', guideBack: "The same message, warmer" },
+        { q: "You replied \"Whatever works for you, clearly.\" in the group chat.", a: "\"Sorry, that was snarky. Saturday's fine by me.\" [Soften It After]", bundle: 'pro', guideBack: "A follow-up that fixes the tone" },
+        { q: "After your follow-up, they reply, \"No worries.\"", a: "\"Thanks. Looking forward to Friday!\" [Add the Warmth Back]", bundle: 'pro', guideBack: "The same message, warmer" },
+      ]
+    },
+  ],
+  replyingandnotreplying: [
+    {
+      name: "The Pile-Up",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Messages have piled up — thirty unread, ten you meant to answer, three that are now awkwardly late — and the pile itself has become the reason you do not start.\n\nWhat goes wrong is waiting for a free hour to do them all properly. The hour does not come, and the pile grows.\n\n**Say You've Seen It** for the ones you cannot answer yet. **Reply Late, Keep It Short** for the ones that are overdue. **Answer All of It** for the ones you can finish now.\n\nThe one thing to avoid: waiting for time to reply to everything properly.\n\nMindset: one short reply now beats a perfect afternoon that never comes.",
+      inputs: [
+        { q: "You have thirty unread messages after a week away.", a: "\"Back from a week away — catching up now. Yours is next!\" [Say You've Seen It]", bundle: 'pro', guideBack: "A short \"seen it, more soon\"" },
+        { q: "A friend's message from last week is still sitting there.", a: "\"Sorry for the slow reply — yes, Friday works!\" [Reply Late, Keep It Short]", bundle: 'pro', guideBack: "One line of sorry, then the answer" },
+        { q: "A colleague asked two simple questions three days ago.", a: "\"Sorry for the delay — yes, and the file's in the shared folder.\" [Reply Late, Keep It Short]", bundle: 'pro', guideBack: "One line of sorry, then the answer" },
+        { q: "Your mum has sent five messages you have not answered.", a: "\"Sorry Mum — busy week. Yes to Sunday, and I'll call tonight.\" [Answer All of It]", bundle: 'pro', guideBack: "A reply that covers each question" },
+        { q: "You are waiting for a free evening to answer everything properly.", a: "\"Just to say I've seen this — I'll reply properly on Saturday.\" [Say You've Seen It]", bundle: 'pro', guideBack: "A short \"seen it, more soon\"" },
+        { q: "Your inbox has four emails asking you the same thing.", a: "\"Sorry for the slow reply, everyone — the answer is Thursday.\" [Reply Late, Keep It Short]", bundle: 'pro', guideBack: "One line of sorry, then the answer" },
+        { q: "A long, personal message deserves a proper reply you have no time for today.", a: "\"I've read this and I want to answer it properly. Tomorrow evening — promise.\" [Say You've Seen It]", bundle: 'pro', guideBack: "A short \"seen it, more soon\"" },
+        { q: "A friend asked three things a week ago.", a: "\"Sorry! Yes, no, and 7 o'clock.\" [Answer All of It]", bundle: 'pro', guideBack: "A reply that covers each question" },
+      ]
+    },
+    {
+      name: "Weeks Late",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "It has been so long that replying feels strange — weeks, sometimes months. Every day makes the message you have to write seem longer.\n\nWhat goes wrong is the belief that a late reply needs a long explanation. So you put it off, and it gets later.\n\n**Reply Late, Keep It Short** is the main move. **Revive a Dead Thread** is for when the moment has passed entirely and you want to start again.\n\nThe one thing to avoid: never replying because it is too late to reply.\n\nMindset: very late is still better than never, and it can be short.",
+      inputs: [
+        { q: "A friend congratulated you on your new job two months ago, and you never replied.", a: "\"I never thanked you for this! It meant a lot — thank you.\" [Reply Late, Keep It Short]", bundle: 'pro', guideBack: "One line of sorry, then the answer" },
+        { q: "You are about to write a long explanation of why you did not reply for a month.", a: "\"Sorry this took a month — yes, I'd love to.\" [Reply Late, Keep It Short]", bundle: 'pro', guideBack: "One line of sorry, then the answer" },
+        { q: "Your old teacher emailed six weeks ago asking how you are.", a: "\"I'm so sorry for the slow reply. I'm well — thank you for asking!\" [Reply Late, Keep It Short]", bundle: 'pro', guideBack: "One line of sorry, then the answer" },
+        { q: "The invitation you never answered was for an event that has already happened.", a: "\"I never replied to your invitation, and I'm sorry. How did it go?\" [Revive a Dead Thread]", bundle: 'pro', guideBack: "A fresh start on an old thread" },
+        { q: "A friend asked for a recommendation three weeks ago.", a: "\"Sorry for the slow reply — try the place on King Street.\" [Reply Late, Keep It Short]", bundle: 'pro', guideBack: "One line of sorry, then the answer" },
+        { q: "You and a friend stopped messaging after you missed her birthday.", a: "\"I missed your birthday and then went quiet, and I'm sorry. Can I buy you a belated drink?\" [Revive a Dead Thread]", bundle: 'pro', guideBack: "A fresh start on an old thread" },
+        { q: "A colleague's thank-you email from last month is still unanswered.", a: "\"Belated, but thank you — it was a pleasure.\" [Reply Late, Keep It Short]", bundle: 'pro', guideBack: "One line of sorry, then the answer" },
+        { q: "Your cousin sent baby photos weeks ago, and you never replied.", a: "\"So late, but she's gorgeous! Congratulations to you all.\" [Reply Late, Keep It Short]", bundle: 'pro', guideBack: "One line of sorry, then the answer" },
+      ]
+    },
+    {
+      name: "Left on Read",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You sent something, they have seen it, and they have not replied. Maybe the app even tells you when.\n\nWhat goes wrong is the story you tell yourself — they are annoyed, they do not care, they are ignoring you — and the second, third and fourth messages that follow.\n\n**Follow Up Once** is the main move: one light reminder, then let silence be an answer. **Revive a Dead Thread** is for when it has been long enough to start fresh.\n\nThe one thing to avoid: \"?\"\n\nMindset: seen is not the same as ignored. Most people read at a bad moment and forget.",
+      inputs: [
+        { q: "Your friend read your message about Saturday two days ago and has not replied.", a: "\"Just bumping this — still on for Saturday?\" [Follow Up Once]", bundle: 'pro', guideBack: "The one reminder" },
+        { q: "You are about to send \"?\" to someone who has not replied.", a: "\"No pressure — just checking you saw my question about the tickets.\" [Follow Up Once]", bundle: 'pro', guideBack: "The one reminder" },
+        { q: "A potential client read your proposal and went silent.", a: "\"Following up on the proposal — happy to answer any questions.\" [Follow Up Once]", bundle: 'pro', guideBack: "The one reminder" },
+        { q: "Your date read your message two days ago and did not reply.", a: "\"No worries if you're busy — let me know if you'd like to meet again.\" [Follow Up Once]", bundle: 'pro', guideBack: "The one reminder" },
+        { q: "You followed up once already and still have not heard anything.", a: "(leave it — one follow-up is enough) [Follow Up Once]", bundle: 'pro', guideBack: "The one reminder" },
+        { q: "A friend read your message a month ago and never answered.", a: "\"Hey — hope all's okay. Fancy a catch-up soon?\" [Revive a Dead Thread]", bundle: 'pro', guideBack: "A fresh start on an old thread" },
+        { q: "Your sister has read your message about Mum's birthday and not replied.", a: "\"Just checking — are you okay with splitting the present?\" [Follow Up Once]", bundle: 'pro', guideBack: "The one reminder" },
+        { q: "A job application you sent was opened, but you have heard nothing for three weeks.", a: "\"I'm following up on my application from the 2nd — I'm still very interested.\" [Follow Up Once]", bundle: 'pro', guideBack: "The one reminder" },
+      ]
+    },
+    {
+      name: "The Endless Thread",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The conversation is over, but the messages keep coming — thanks for the thanks, one more small question, a group that will not stop.\n\nWhat goes wrong is feeling that you cannot be the one to stop, so you keep replying, or you disappear without a word and it looks like a snub.\n\n**Close the Thread** ends a finished conversation clearly. **Step Out of the Chat** is for groups that no longer need you.\n\nThe one thing to avoid: vanishing mid-conversation without a word.\n\nMindset: a friendly last message is a kindness, not a rejection.",
+      inputs: [
+        { q: "You and your friend have thanked each other four times.", a: "\"Honestly, a pleasure. See you soon!\" [Close the Thread]", bundle: 'pro', guideBack: "A friendly last message" },
+        { q: "The work thread keeps getting \"+1\" and \"thanks\" replies.", a: "\"Great — that's everything from me. Thanks, all.\" [Close the Thread]", bundle: 'pro', guideBack: "A friendly last message" },
+        { q: "A group chat you joined for one event is still going months later.", a: "\"Lovely chatting, everyone — I'm going to leave the group now. Take care!\" [Step Out of the Chat]", bundle: 'pro', guideBack: "A clear, friendly exit" },
+        { q: "Your aunt keeps sending one more small question about Sunday.", a: "\"All sorted from our side — see you Sunday at 1!\" [Close the Thread]", bundle: 'pro', guideBack: "A friendly last message" },
+        { q: "You are copied into a thread that stopped being about you ten emails ago.", a: "\"I'll drop off this thread — shout if you need me.\" [Step Out of the Chat]", bundle: 'pro', guideBack: "A clear, friendly exit" },
+        { q: "The plan is made, and your friend sends \"yay!!\"", a: "\"See you there!\" [Close the Thread]", bundle: 'pro', guideBack: "A friendly last message" },
+        { q: "A chat about one football match has become a daily meme chat.", a: "\"I'm muting this — message me directly if there's a match!\" [Step Out of the Chat]", bundle: 'pro', guideBack: "A clear, friendly exit" },
+        { q: "A customer service chat keeps asking if there is anything else.", a: "\"That's everything, thank you for your help.\" [Close the Thread]", bundle: 'pro', guideBack: "A friendly last message" },
+      ]
+    },
+    {
+      name: "Half-Answered",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Someone asked you several things and you answered one, or you asked several things and they answered one. Either way, the thread now needs another round.\n\nWhat goes wrong is that in writing, the missed question is invisible to the person who missed it. It looks like a choice not to answer.\n\n**Answer All of It** is the fix on your side: count the questions before replying. **Follow Up Once** is the fix on theirs: ask again about the one they missed, lightly.\n\nThe one thing to avoid: assuming the missed question was skipped on purpose.\n\nMindset: count the question marks — mine and theirs.",
+      inputs: [
+        { q: "Your friend asks about the date, the place and the budget. You are about to answer only the date.", a: "\"Saturday, at Rosa's, and around 300 each.\" [Answer All of It]", bundle: 'pro', guideBack: "A reply that covers each question" },
+        { q: "You asked your colleague two things and she answered one.", a: "\"Thanks! And the second one — do you need the slides too?\" [Follow Up Once]", bundle: 'pro', guideBack: "The one reminder" },
+        { q: "You realise you only answered one of your mum's three questions yesterday.", a: "\"Sorry, I missed two: yes, we're bringing dessert, and no, Jonas can't come.\" [Answer All of It]", bundle: 'pro', guideBack: "A reply that covers each question" },
+        { q: "You asked the landlord about the rent and the repairs; he answered about the rent.", a: "\"Thanks — and could you let me know about the repairs?\" [Follow Up Once]", bundle: 'pro', guideBack: "The one reminder" },
+        { q: "Your manager's email asks four questions.", a: "\"1. Yes. 2. Friday. 3. Karin. 4. Not yet — I'll know Monday.\" [Answer All of It]", bundle: 'pro', guideBack: "A reply that covers each question" },
+        { q: "You asked a friend if she is coming and if she can drive; she said \"yes!\"", a: "\"Great! And yes to driving too?\" [Follow Up Once]", bundle: 'pro', guideBack: "The one reminder" },
+        { q: "You answered the interesting question and skipped the practical one.", a: "\"And to your other question: yes, I've booked the hotel.\" [Answer All of It]", bundle: 'pro', guideBack: "A reply that covers each question" },
+        { q: "A client answered your question about the date but not about the budget.", a: "\"Thanks for confirming the date. Could you also confirm the budget?\" [Follow Up Once]", bundle: 'pro', guideBack: "The one reminder" },
+      ]
+    },
+  ],
+  whentostoptyping: [
+    {
+      name: "The Thread That Won't Settle",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "A practical conversation — dates, money, plans — has gone on for dozens of messages, and nothing is decided.\n\nWhat goes wrong is that each new message adds one more option, one more question, one more crossed wire. Nobody is arguing, but nobody is deciding either.\n\n**Stop at One Message** pulls it together. **Move It to a Call** settles it when one message is not enough. **Put It in Writing** afterwards keeps it settled.\n\nThe one thing to avoid: one more suggestion.\n\nMindset: if it has not settled in twenty messages, it will not settle in thirty.",
+      inputs: [
+        { q: "The holiday group chat has been discussing dates for a week.", a: "\"Let's do a quick call tonight and just decide.\" [Move It to a Call]", bundle: 'pro', guideBack: "An offer to talk instead" },
+        { q: "You are about to add a fifth restaurant suggestion.", a: "\"Summing up: Rosa's or Lilla Kök, Friday at 7. Vote by tonight?\" [Stop at One Message]", bundle: 'pro', guideBack: "Everything in a single message" },
+        { q: "The email thread about the office move keeps adding new questions.", a: "\"Could we have a fifteen-minute call to sort out the move?\" [Move It to a Call]", bundle: 'pro', guideBack: "An offer to talk instead" },
+        { q: "You and your partner have sent thirty messages about the new sofa.", a: "\"Two options: the grey one or the blue one. Pick one tonight?\" [Stop at One Message]", bundle: 'pro', guideBack: "Everything in a single message" },
+        { q: "The call has decided the plan, and people are still adding ideas in the chat.", a: "\"Just to confirm what we agreed: Saturday, the park, 12 o'clock. See you there!\" [Put It in Writing]", bundle: 'pro', guideBack: "A short written summary" },
+        { q: "Messages with the builder keep crossing each other.", a: "\"Could I call you at lunch? We keep crossing wires.\" [Move It to a Call]", bundle: 'pro', guideBack: "An offer to talk instead" },
+        { q: "Your family is choosing a date for Christmas lunch, and every message suggests another day.", a: "\"One message: the 25th or the 26th? That's the only question.\" [Stop at One Message]", bundle: 'pro', guideBack: "Everything in a single message" },
+        { q: "After the call, nobody wrote anything down, and people remember it differently.", a: "\"Here's what I heard us agree: the 12th, at Mum's, everyone brings one dish. Correct me if not!\" [Put It in Writing]", bundle: 'pro', guideBack: "A short written summary" },
+      ]
+    },
+    {
+      name: "A Fight in the Chat",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The conversation has turned sharp. Someone has written \"always\", \"never\", or \"typical\", maybe with others watching.\n\nWhat goes wrong is answering it in writing — point by point, carefully, with the aim of winning. Every reply gives them something new to quote.\n\n**Reply When You're Calm** stops the first angry answer. **Take the Argument Offline** moves it to a place where it can be resolved.\n\nThe one thing to avoid: the long, careful reply that proves you are right.\n\nMindset: nobody wins an argument in writing. They just make it longer.",
+      inputs: [
+        { q: "Your sister writes in the family chat, \"Nice of you to finally show up.\"", a: "\"I'd rather talk about this properly. Can I call you later?\" [Take the Argument Offline]", bundle: 'pro', guideBack: "A pause, and a time to talk" },
+        { q: "A colleague's email accuses you of taking credit for her work.", a: "\"I'll reply properly tomorrow. Could we also find time to talk?\" [Reply When You're Calm]", bundle: 'pro', guideBack: "A promise of a calmer reply" },
+        { q: "Your partner texts, \"Forget it, you never listen anyway.\"", a: "\"I don't want to fight over text. Can we talk when I'm home?\" [Take the Argument Offline]", bundle: 'pro', guideBack: "A pause, and a time to talk" },
+        { q: "You have drafted a long reply listing everything your friend did wrong.", a: "\"I've read your message. I'll reply tomorrow, when I've thought about it.\" [Reply When You're Calm]", bundle: 'pro', guideBack: "A promise of a calmer reply" },
+        { q: "A parent in the school group chat criticises your child by name.", a: "\"I'd rather not discuss this here. Could we talk on the phone?\" [Take the Argument Offline]", bundle: 'pro', guideBack: "A pause, and a time to talk" },
+        { q: "Your friend replies to your apology with, \"Whatever.\"", a: "\"I'd really like to talk about this in person. Can I come round?\" [Take the Argument Offline]", bundle: 'pro', guideBack: "A pause, and a time to talk" },
+        { q: "Your manager's email is sharp, and you want to answer it straight away.", a: "\"Thanks — I'll come back to you on this tomorrow.\" [Reply When You're Calm]", bundle: 'pro', guideBack: "A promise of a calmer reply" },
+        { q: "The argument in the flat chat is now at thirty messages, with everyone involved.", a: "\"Let's stop this here and talk tonight, all of us, in the kitchen.\" [Take the Argument Offline]", bundle: 'pro', guideBack: "A pause, and a time to talk" },
+      ]
+    },
+    {
+      name: "Too Big for Text",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "What you have to say is heavy — bad news, a big decision, a real apology, something that will change things for them.\n\nWhat goes wrong is sending it because it is easier for you: no face to watch, no reaction to handle. They read it alone, at a random moment, with no chance to ask.\n\n**Say It in Person** is the main move — a short message asking to meet. **Move It to a Call** when meeting is not possible.\n\nThe one thing to avoid: the long, careful message that says it all.\n\nMindset: the easier it is for me to send, the harder it may be for them to read.",
+      inputs: [
+        { q: "You want to end a relationship of two years.", a: "\"Can we meet tonight? There's something I need to talk to you about.\" [Say It in Person]", bundle: 'pro', guideBack: "A request to meet about it" },
+        { q: "You need to tell a friend her dog was hit by a car while you were looking after it.", a: "\"Can I call you right now? Something's happened with Bella.\" [Move It to a Call]", bundle: 'pro', guideBack: "An offer to talk instead" },
+        { q: "You have to tell a colleague she did not get the promotion.", a: "\"Have you got ten minutes this afternoon? I'd like to talk in person.\" [Say It in Person]", bundle: 'pro', guideBack: "A request to meet about it" },
+        { q: "You are about to send a long message apologising to your dad for something from years ago.", a: "\"Dad, I'd like to talk about something properly. Can I come for lunch on Sunday?\" [Say It in Person]", bundle: 'pro', guideBack: "A request to meet about it" },
+        { q: "You need to tell your friend you are pregnant, and that you cannot be at her wedding abroad.", a: "\"I've got news, and I'd love to tell you in person. Are you free this week?\" [Say It in Person]", bundle: 'pro', guideBack: "A request to meet about it" },
+        { q: "Your friend lives abroad, and you need to tell her your mum is ill.", a: "\"Could we do a video call tonight? I've got some news about Mum.\" [Move It to a Call]", bundle: 'pro', guideBack: "An offer to talk instead" },
+        { q: "You want to tell your business partner you are leaving the company.", a: "\"Could we meet tomorrow, just the two of us? I'd like to talk something through.\" [Say It in Person]", bundle: 'pro', guideBack: "A request to meet about it" },
+        { q: "You have drafted a long message telling your friend why you are upset with her.", a: "\"Could we meet this week? I'd like to talk about something properly.\" [Say It in Person]", bundle: 'pro', guideBack: "A request to meet about it" },
+      ]
+    },
+    {
+      name: "Just Tell Me",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You asked to meet, or said you would reply later — and they are pushing: \"Just tell me now\", \"Can't you just text it?\", \"You're worrying me.\"\n\nWhat goes wrong is giving in, and sending the big thing in a rush — or sending message after message trying to reassure them.\n\n**Stop at One Message** is the main move: one calm, reassuring message with a time. **Say It in Person** holds the line kindly.\n\nThe one thing to avoid: sending the news in pieces to calm them down.\n\nMindset: one calm message holds the space until we can talk.",
+      inputs: [
+        { q: "Your friend replies, \"Just tell me now, I hate waiting!\"", a: "\"It's good news, I promise. Dinner Thursday — it's worth the wait.\" [Stop at One Message]", bundle: 'pro', guideBack: "Everything in a single message" },
+        { q: "Your mum writes, \"You're scaring me. Is it bad?\"", a: "\"It's not bad, and I'm okay. I'd just rather tell you in person. Sunday at 2.\" [Stop at One Message]", bundle: 'pro', guideBack: "Everything in a single message" },
+        { q: "Your partner texts, \"Can't you just tell me by text?\"", a: "\"I'd rather tell you properly. I'll be home at 6.\" [Say It in Person]", bundle: 'pro', guideBack: "A request to meet about it" },
+        { q: "You have sent three reassuring messages already, and they are still asking.", a: "\"Everything's fine. I'll explain at 7. That's all until then.\" [Stop at One Message]", bundle: 'pro', guideBack: "Everything in a single message" },
+        { q: "Your manager asks, \"Can you give me a hint before we meet?\"", a: "\"Nothing urgent, and nothing wrong. I'd just like to explain it properly tomorrow.\" [Stop at One Message]", bundle: 'pro', guideBack: "Everything in a single message" },
+        { q: "Your friend writes, \"If it's about the party, just say it.\"", a: "\"It is, and I'd rather say it to your face. Can I come by after work?\" [Say It in Person]", bundle: 'pro', guideBack: "A request to meet about it" },
+        { q: "Your teenager keeps asking what \"the talk tonight\" is about.", a: "\"You're not in trouble. It's just something I want to talk about properly. See you at dinner.\" [Stop at One Message]", bundle: 'pro', guideBack: "Everything in a single message" },
+        { q: "They reply, \"Fine, but I'm going to worry all day.\"", a: "\"Nothing to worry about, I promise. See you at 7.\" [Stop at One Message]", bundle: 'pro', guideBack: "Everything in a single message" },
+      ]
+    },
+    {
+      name: "Nobody Wrote It Down",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Something was agreed out loud — on a call, in a meeting, over dinner — and now people remember it differently.\n\nWhat goes wrong is that talk is quick and warm, but it leaves no record. A week later, each person has their own version, and the argument about what was agreed is worse than the original one.\n\n**Put It in Writing** is the main move, ideally right after the conversation. **Move It to a Call** is for when the versions have already split and need talking through again.\n\nThe one thing to avoid: \"But you said…\"\n\nMindset: talk to decide, then write it down so it stays decided.",
+      inputs: [
+        { q: "You have just agreed with your flatmate who pays which bill.", a: "\"Just so we both have it: I pay internet, you pay electricity, we split the rest.\" [Put It in Writing]", bundle: 'pro', guideBack: "A short written summary" },
+        { q: "You and your boss agreed on your new hours in a corridor chat.", a: "\"Thanks for earlier. To confirm: 8 to 4 from Monday, starting next week.\" [Put It in Writing]", bundle: 'pro', guideBack: "A short written summary" },
+        { q: "Your brother remembers the agreement about Mum's care differently from you.", a: "\"Can we talk it through on the phone tonight? I think we've got two versions.\" [Move It to a Call]", bundle: 'pro', guideBack: "An offer to talk instead" },
+        { q: "After the team meeting, nobody wrote down who does what.", a: "\"Quick summary: I'll do the slides, Karin the numbers, Jonas the booking.\" [Put It in Writing]", bundle: 'pro', guideBack: "A short written summary" },
+        { q: "You and a friend agreed on the phone to share the cost of the gift.", a: "\"Thanks! So that's 400 each, and I'll order it tonight.\" [Put It in Writing]", bundle: 'pro', guideBack: "A short written summary" },
+        { q: "You are about to write, \"But you said…\"", a: "\"I think we remember it differently. Can we call and sort it out?\" [Move It to a Call]", bundle: 'pro', guideBack: "An offer to talk instead" },
+        { q: "You agreed with your child's teacher at the parents' evening on a plan for homework.", a: "\"Thank you for yesterday. Just to confirm: homework check on Fridays, and I'll email if there are problems.\" [Put It in Writing]", bundle: 'pro', guideBack: "A short written summary" },
+        { q: "A plumber gave you a price out loud before starting.", a: "\"Thanks — just confirming the price we agreed: 3,500 including parts.\" [Put It in Writing]", bundle: 'pro', guideBack: "A short written summary" },
+      ]
+    },
+  ],
 };

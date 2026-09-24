@@ -11967,4 +11967,500 @@ const memorizeCollections = {
       ]
     },
   ],
+  toneinmessages: [
+    {
+      name: "Core Idea",
+      description: "Seven strategies for getting tone right when there is no voice:\n\n1. Add the Warmth Back\n2. Say Your Tone\n3. Read It Kindly\n4. Check Before You Worry\n5. Match Their Length\n6. Read It as Them\n7. Soften It After\n\nSome are for your message, some for theirs, and one for after you have sent.",
+      cards: [
+        { q: "What are the seven strategies in this pack?", a: "Add the Warmth Back, Say Your Tone, Read It Kindly, Check Before You Worry, Match Their Length, Read It as Them, Soften It After.", bundle: 'free' },
+        { q: "How do the seven fit together?", a: "Some are for your message before you send it, some for their message when it arrives, and one for after you have sent something sharp.", bundle: 'free' },
+        { q: "Why does tone go wrong in writing?", a: "The voice and face that carry warmth in speech are missing, so the reader fills the gap — usually with something colder.", bundle: 'free' },
+        { q: "What is special about practising messages on cards?", a: "A message is already a card. The front does not describe the situation — it is the situation.", bundle: 'free' },
+        { q: "What is the first question when a message arrives cold?", a: "Is this like them? If it is, it is probably just short.", bundle: 'free' },
+        { q: "Which strategies are about your own message?", a: "Add the Warmth Back, Say Your Tone, Match Their Length and Read It as Them.", bundle: 'pro' },
+        { q: "Which strategies are about their message?", a: "Read It Kindly and Check Before You Worry.", bundle: 'pro' },
+        { q: "Which strategy is for after you have sent something?", a: "Soften It After.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Add the Warmth Back",
+      description: "",
+      cards: [
+        { q: "What is Add the Warmth Back?", a: "Adding the few words your voice would have carried, so a correct message stops sounding flat.", bundle: 'free' },
+        { q: "How does Add the Warmth Back sound?", a: "\"Ok, will do — you'll have it by 3!\"", bundle: 'free' },
+        { q: "When is Add the Warmth Back the right one?", a: "When your message says the right thing but reads cold.", bundle: 'free' },
+        { q: "What does Add the Warmth Back protect?", a: "The friendliness that would have been in your voice.", bundle: 'free' },
+        { q: "What are the four things that carry warmth in writing?", a: "A word before the answer, a thanks, a line about them, and the punctuation.", bundle: 'free' },
+        { q: "When does Add the Warmth Back go wrong?", a: "When it turns a one-line answer into a paragraph.", bundle: 'pro' },
+        { q: "What is Add the Warmth Back better than, and why?", a: "\"Ok.\" — which leaves the reader to supply the tone, and they usually supply a cold one.", bundle: 'pro' },
+        { q: "Which strategy often goes with Add the Warmth Back?", a: "Match Their Length — warmer, but still the right size.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say Your Tone",
+      description: "",
+      cards: [
+        { q: "What is Say Your Tone?", a: "Saying in words how you mean a message that could be read two ways.", bundle: 'free' },
+        { q: "How does Say Your Tone sound?", a: "\"Not annoyed, just stretched — it'll be 5. Does that still work?\"", bundle: 'free' },
+        { q: "When is Say Your Tone the right one?", a: "For a no, a disagreement, a delay, or a suggestion that might look like criticism.", bundle: 'free' },
+        { q: "What does Say Your Tone protect?", a: "The reader from having to guess which tone you meant.", bundle: 'free' },
+        { q: "What are the three tones worth naming?", a: "Not angry, not criticism, and not sarcasm.", bundle: 'free' },
+        { q: "When does Say Your Tone go wrong?", a: "When \"no offence, but\" is followed by something offensive.", bundle: 'pro' },
+        { q: "What is Say Your Tone better than, and why?", a: "Hoping they read it the right way. In writing, the reader picks the tone.", bundle: 'pro' },
+        { q: "Where does Say Your Tone matter most?", a: "In group chats, where several people read it at once.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Read It Kindly",
+      description: "",
+      cards: [
+        { q: "What is Read It Kindly?", a: "Finding the kindest reasonable reading of a cold-sounding message, and replying to that.", bundle: 'free' },
+        { q: "How does Read It Kindly sound?", a: "\"Sure — rushed day? It'll be with you by 3.\"", bundle: 'free' },
+        { q: "When is Read It Kindly the right one?", a: "When their message sounds curt, but it is like them.", bundle: 'free' },
+        { q: "What does Read It Kindly protect?", a: "The conversation from turning cold because you answered the cold version.", bundle: 'free' },
+        { q: "What are the three kind readings to try first?", a: "They are rushed, they are tired or low, or they are embarrassed.", bundle: 'free' },
+        { q: "When does Read It Kindly go wrong?", a: "When it is used to ignore something that really is wrong.", bundle: 'pro' },
+        { q: "What is Read It Kindly better than, and why?", a: "Replying to the cold version, which makes the conversation actually cold.", bundle: 'pro' },
+        { q: "Which strategy follows Read It Kindly if the next message is cold too?", a: "Check Before You Worry.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Check Before You Worry",
+      description: "",
+      cards: [
+        { q: "What is Check Before You Worry?", a: "Asking lightly about a message that worries you, instead of guessing.", bundle: 'free' },
+        { q: "How does Check Before You Worry sound?", a: "\"Will do. All okay your end? Your message sounded a bit rushed.\"", bundle: 'free' },
+        { q: "When is Check Before You Worry the right one?", a: "When a message is not like them, very short for something big, or follows something you said.", bundle: 'free' },
+        { q: "What does Check Before You Worry protect?", a: "You from a whole evening of building a story.", bundle: 'free' },
+        { q: "What are the three things that make a message worth checking?", a: "It is not like them, it is very short for something big, or it follows something you said.", bundle: 'free' },
+        { q: "When does Check Before You Worry go wrong?", a: "When it is heavy — \"Are you angry with me?\" instead of \"All okay?\"", bundle: 'pro' },
+        { q: "What is Check Before You Worry better than, and why?", a: "Rereading the message over and over. Rereading adds no information; asking does.", bundle: 'pro' },
+        { q: "How light should the check be?", a: "Light enough that \"just busy!\" is an easy answer.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Match Their Length",
+      description: "",
+      cards: [
+        { q: "What is Match Their Length?", a: "Replying at roughly the length they wrote.", bundle: 'free' },
+        { q: "How does Match Their Length sound?", a: "\"I've read all of it. That's a lot to carry — can I call you tonight?\"", bundle: 'free' },
+        { q: "When is Match Their Length the right one?", a: "When your reply is much shorter or much longer than what they sent.", bundle: 'free' },
+        { q: "What does Match Their Length protect?", a: "Their sense that you heard what they sent.", bundle: 'free' },
+        { q: "What are the two ways length goes wrong?", a: "Too short for something long, and too long for something short.", bundle: 'free' },
+        { q: "When does Match Their Length go wrong?", a: "When it is taken as a word count rather than a matching of weight.", bundle: 'pro' },
+        { q: "What does a one-word reply to a long message say?", a: "\"I skimmed it.\"", bundle: 'pro' },
+        { q: "What does an essay in reply to a one-liner say?", a: "That this is a bigger deal than they thought.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Read It as Them",
+      description: "",
+      cards: [
+        { q: "What is Read It as Them?", a: "Reading your draft as the other person will, and rewriting the line that would sting.", bundle: 'free' },
+        { q: "How does Read It as Them sound?", a: "\"Yes — it's on track for 3.\" (instead of \"Obviously it'll be done, I did say that yesterday.\")", bundle: 'free' },
+        { q: "When is Read It as Them the right one?", a: "Before sending anything written while you were annoyed or in a hurry.", bundle: 'free' },
+        { q: "What does Read It as Them protect?", a: "Them from the harsh line that is invisible to the writer.", bundle: 'free' },
+        { q: "What are the four words that sound worse in writing?", a: "\"Obviously\", \"as I said\", \"again?\" and \"what now?\"", bundle: 'free' },
+        { q: "When does Read It as Them go wrong?", a: "When you read it as yourself, with your own voice in your head.", bundle: 'pro' },
+        { q: "What is Read It as Them better than, and why?", a: "Softening It After. A problem caught in the draft never needs fixing.", bundle: 'pro' },
+        { q: "In a group chat, whose eyes should you read it with?", a: "The reader who knows you least.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Soften It After",
+      description: "",
+      cards: [
+        { q: "What is Soften It After?", a: "Sending a short follow-up that names a sharp message and says what you meant.", bundle: 'free' },
+        { q: "How does Soften It After sound?", a: "\"Sorry, that 'I know' looked blunt. It's on track — you'll have it by 3.\"", bundle: 'free' },
+        { q: "When is Soften It After the right one?", a: "When you can see that something you sent came out sharper than you meant.", bundle: 'free' },
+        { q: "What does Soften It After protect?", a: "The exchange from ending on the sharp message.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Name the words, say what was behind them, and say the real thing.", bundle: 'free' },
+        { q: "When does Soften It After go wrong?", a: "When it becomes a long, anxious apology.", bundle: 'pro' },
+        { q: "What is Soften It After better than, and why?", a: "Waiting to see if they noticed. A message sits on the screen until it is replaced.", bundle: 'pro' },
+        { q: "Which strategy often follows Soften It After?", a: "Add the Warmth Back — the next message shows the sharp one was the exception.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Your Message** — what will they hear that I do not mean?\n• **Their Message** — is this like them?\n• **All Seven Strategies** — no cue given, which is the real thing\n\nOne question sorts most of it: whose message is the problem?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Your Message, Their Message, and All Seven Strategies.", bundle: 'pro' },
+        { q: "What question decides Your Message?", a: "What will they hear that I do not mean?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Your Message?", a: "Sending it as it is, because \"they know me\".", bundle: 'pro' },
+        { q: "What question decides Their Message?", a: "Is this like them? If so, read it kindly. If not, check.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Their Message?", a: "Replying to the cold version.", bundle: 'pro' },
+        { q: "Your message is correct but flat. Which strategy?", a: "Add the Warmth Back.", bundle: 'pro' },
+        { q: "Their message is out of character. Which strategy?", a: "Check Before You Worry.", bundle: 'pro' },
+        { q: "You already sent something sharp. Which strategy?", a: "Soften It After.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Before You Send** — Read It as Them → Say Your Tone → Match Their Length\n2. **A Cold Reply** — Read It Kindly → Check Before You Worry → Add the Warmth Back\n3. **Too Sharp** — Soften It After → Add the Warmth Back → Check Before You Worry\n\nEach one keeps a small misreading from growing.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Before You Send, A Cold Reply, and Too Sharp.", bundle: 'pro' },
+        { q: "What is the order in Before You Send?", a: "Read It as Them, Say Your Tone, Match Their Length.", bundle: 'pro' },
+        { q: "Why does the rewrite come first?", a: "Most tone problems can be fixed in the draft.", bundle: 'pro' },
+        { q: "What is the order in A Cold Reply?", a: "Read It Kindly, Check Before You Worry, Add the Warmth Back.", bundle: 'pro' },
+        { q: "When do you move from reading kindly to checking?", a: "When a second cold message follows the first.", bundle: 'pro' },
+        { q: "What is the order in Too Sharp?", a: "Soften It After, Add the Warmth Back, Check Before You Worry.", bundle: 'pro' },
+        { q: "Why check lightly at the end of Too Sharp, rather than apologise again?", a: "A second apology usually makes it bigger.", bundle: 'pro' },
+        { q: "What do the three sequences have in common?", a: "Each one keeps a small misreading from growing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **One-Word Replies** — \"ok\", \"fine\", \"k\"\n• **Bad News by Text** — the no, the cancellation, the delay\n• **Work Messages** — efficient and curt look the same\n• **Group Chats** — several readers at once\n• **You Sent It Angry** — it is already on their screen\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "One-Word Replies, Bad News by Text, Work Messages, Group Chats, and You Sent It Angry.", bundle: 'pro' },
+        { q: "What should you avoid with one-word replies?", a: "\"Is that all you have to say?\"", bundle: 'pro' },
+        { q: "What does bad news need more of in writing than in person?", a: "Warmth. Your face is not there to soften it.", bundle: 'pro' },
+        { q: "What should you avoid in work messages?", a: "\"As per my last email.\"", bundle: 'pro' },
+        { q: "Who should you write for in a group chat?", a: "The reader who knows you least.", bundle: 'pro' },
+        { q: "What should you avoid in group chats?", a: "Sarcasm — someone always reads it straight.", bundle: 'pro' },
+        { q: "What is the main strategy when you sent it angry?", a: "Soften It After — short, specific, and with what you meant.", bundle: 'pro' },
+        { q: "What should you avoid after sending something angry?", a: "Deleting it and pretending it never happened.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **The Tone Mindset** — they'll know what I meant\n• **Short Is Efficient** — so it doesn't matter how it sounds\n• **Reading Between the Lines** — that \"ok\" means they're annoyed\n• **Being Direct** — people know that about me\n• **Sounding Fake** — adding warmth on purpose is false\n• **Fixing It After** — bringing it up makes it bigger\n\nMost of them forget that the reader only has the words.",
+      cards: [
+        { q: "What are the six mindsets in this pack?", a: "The Tone Mindset, Short Is Efficient, Reading Between the Lines, Being Direct, Sounding Fake, and Fixing It After.", bundle: 'pro' },
+        { q: "What is true instead of \"they'll know what I meant\"?", a: "They only have the words.", bundle: 'pro' },
+        { q: "What is true about short messages?", a: "Short is often kind. \"So it doesn't matter how it sounds\" is the part that gets added.", bundle: 'pro' },
+        { q: "What does a short message tell you about someone's mood?", a: "Almost nothing.", bundle: 'pro' },
+        { q: "What does being direct quietly cost in writing?", a: "The people who do not know you read it as cold.", bundle: 'pro' },
+        { q: "Is adding warmth on purpose fake?", a: "Not if you feel it. It is translating it into words.", bundle: 'pro' },
+        { q: "Does a follow-up make a sharp message bigger?", a: "No — it makes it smaller. Left alone, it sits there.", bundle: 'pro' },
+        { q: "What do most of these mindsets forget?", a: "That the reader only has the words.", bundle: 'pro' },
+      ]
+    },
+  ],
+  replyingandnotreplying: [
+    {
+      name: "Core Idea",
+      description: "Seven strategies for replying, and for what happens to a thread over time:\n\n1. Say You've Seen It\n2. Reply Late, Keep It Short\n3. Answer All of It\n4. Close the Thread\n5. Follow Up Once\n6. Revive a Dead Thread\n7. Step Out of the Chat\n\nThree are about replying. Four are about ending, restarting or leaving.",
+      cards: [
+        { q: "What are the seven strategies in this pack?", a: "Say You've Seen It, Reply Late Keep It Short, Answer All of It, Close the Thread, Follow Up Once, Revive a Dead Thread, Step Out of the Chat.", bundle: 'free' },
+        { q: "How do the seven fit together?", a: "Three are about replying. Four are about what happens to the thread — ending it, chasing it, restarting it or leaving it.", bundle: 'free' },
+        { q: "Why does silence matter more in writing?", a: "Silence has no meaning of its own, so the other person gives it one — usually a worse one.", bundle: 'free' },
+        { q: "What is the most common reason replies never happen?", a: "Waiting until you can reply properly.", bundle: 'free' },
+        { q: "What is the first question when a message is waiting?", a: "Whose move is it — mine, theirs, or nobody's?", bundle: 'free' },
+        { q: "Which strategies are about replying?", a: "Say You've Seen It, Reply Late Keep It Short, and Answer All of It.", bundle: 'pro' },
+        { q: "Which strategies are about the thread?", a: "Close the Thread, Follow Up Once, Revive a Dead Thread, and Step Out of the Chat.", bundle: 'pro' },
+        { q: "Which strategy does this pack share with Making Requests?", a: "Follow Up Once — the same move, used here for any unanswered message.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say You've Seen It",
+      description: "",
+      cards: [
+        { q: "What is Say You've Seen It?", a: "A one-line holding reply that says you have seen the message and when the real answer is coming.", bundle: 'free' },
+        { q: "How does Say You've Seen It sound?", a: "\"Seen this! In a meeting — I'll reply properly tonight.\"", bundle: 'free' },
+        { q: "When is Say You've Seen It the right one?", a: "When you cannot reply properly right now.", bundle: 'free' },
+        { q: "What does Say You've Seen It protect?", a: "The other person from guessing what your silence means.", bundle: 'free' },
+        { q: "What are the three things a holding line can say?", a: "That you have seen it, why not now, and when.", bundle: 'free' },
+        { q: "When does Say You've Seen It go wrong?", a: "When the real reply never comes.", bundle: 'pro' },
+        { q: "What is Say You've Seen It better than, and why?", a: "Silence, which the other person fills with their own explanation.", bundle: 'pro' },
+        { q: "Which strategy often follows Say You've Seen It?", a: "Reply Late, Keep It Short — if the time you promised slips.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Reply Late, Keep It Short",
+      description: "",
+      cards: [
+        { q: "What is Reply Late, Keep It Short?", a: "One line of sorry, then the answer — without the long explanation.", bundle: 'free' },
+        { q: "How does Reply Late, Keep It Short sound?", a: "\"Sorry for the slow reply — yes to Saturday, and I'll bring salad.\"", bundle: 'free' },
+        { q: "When is Reply Late, Keep It Short the right one?", a: "When you are replying days or weeks late.", bundle: 'free' },
+        { q: "What does Reply Late, Keep It Short protect?", a: "The answer they needed, from being buried in an apology.", bundle: 'free' },
+        { q: "What are the three sizes of late?", a: "A few days, a week or two, and much longer.", bundle: 'free' },
+        { q: "When does Reply Late, Keep It Short go wrong?", a: "When the apology is longer than the answer.", bundle: 'pro' },
+        { q: "What is Reply Late, Keep It Short better than, and why?", a: "The long apology, which makes the lateness the subject and asks them to reassure you.", bundle: 'pro' },
+        { q: "What makes a late reply feel weird?", a: "The long apology, not the lateness.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Answer All of It",
+      description: "",
+      cards: [
+        { q: "What is Answer All of It?", a: "Answering every question in their message, in order, briefly.", bundle: 'free' },
+        { q: "How does Answer All of It sound?", a: "\"Yes, I'm coming! I'll bring a salad, and Lina's coming too.\"", bundle: 'free' },
+        { q: "When is Answer All of It the right one?", a: "When their message asks more than one thing.", bundle: 'free' },
+        { q: "What does Answer All of It protect?", a: "Them from having to ask again and wonder whether you skipped it on purpose.", bundle: 'free' },
+        { q: "What are the three ways to answer it all?", a: "In one sentence in order, as a short list, or by saying which one you cannot answer yet.", bundle: 'free' },
+        { q: "When does Answer All of It go wrong?", a: "When it turns a short reply into an essay.", bundle: 'pro' },
+        { q: "What is a useful habit before replying?", a: "Count the question marks.", bundle: 'pro' },
+        { q: "What does a missed question look like to the other person?", a: "A choice not to answer.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Close the Thread",
+      description: "",
+      cards: [
+        { q: "What is Close the Thread?", a: "Sending one friendly message that makes it clear the conversation is finished.", bundle: 'free' },
+        { q: "How does Close the Thread sound?", a: "\"Perfect — see you Saturday at 4.\"", bundle: 'free' },
+        { q: "When is Close the Thread the right one?", a: "When the plan is made or the problem solved, but the messages keep coming.", bundle: 'free' },
+        { q: "What does Close the Thread protect?", a: "Both people from not knowing whether the other is waiting for a reply.", bundle: 'free' },
+        { q: "What are the three things a good last message does?", a: "Confirms the key fact, thanks if there is someone to thank, and sounds final.", bundle: 'free' },
+        { q: "When does Close the Thread go wrong?", a: "When it is so short it reads as cold.", bundle: 'pro' },
+        { q: "What is Close the Thread better than, and why?", a: "Just stopping. A thread has no natural ending, so someone has to write one.", bundle: 'pro' },
+        { q: "What does a good closing message double as?", a: "A reminder of the key fact.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Follow Up Once",
+      description: "",
+      cards: [
+        { q: "What is Follow Up Once?", a: "Asking one more time, plainly and lightly, and then treating silence as an answer.", bundle: 'free' },
+        { q: "How does Follow Up Once sound?", a: "\"Just bumping this — what time on Saturday?\"", bundle: 'free' },
+        { q: "When is Follow Up Once the right one?", a: "When you asked something and heard nothing.", bundle: 'free' },
+        { q: "What does Follow Up Once protect?", a: "You from assuming the worst, and them from being chased.", bundle: 'free' },
+        { q: "What are the three kinds of follow-up?", a: "The bump, the easy version, and the formal one.", bundle: 'free' },
+        { q: "When does Follow Up Once go wrong?", a: "When it becomes twice, or when it contains a complaint.", bundle: 'pro' },
+        { q: "What is Follow Up Once better than, and why?", a: "\"?\" — which reads as a complaint, not a question.", bundle: 'pro' },
+        { q: "What is an unanswered message usually?", a: "Not a refusal. A message read at a bad moment and forgotten.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Revive a Dead Thread",
+      description: "",
+      cards: [
+        { q: "What is Revive a Dead Thread?", a: "Picking up a plan or conversation that faded out, with a short message and a next step.", bundle: 'free' },
+        { q: "How does Revive a Dead Thread sound?", a: "\"Hey — we never did that barbecue. Still up for it?\"", bundle: 'free' },
+        { q: "When is Revive a Dead Thread the right one?", a: "When something faded out weeks or months ago.", bundle: 'free' },
+        { q: "What does Revive a Dead Thread protect?", a: "Plans and friendships that neither person ended on purpose.", bundle: 'free' },
+        { q: "What are the three kinds of dead thread?", a: "The plan that never happened, the work that stalled, and the friendship that went quiet.", bundle: 'free' },
+        { q: "When does Revive a Dead Thread go wrong?", a: "When it starts with a long apology instead of a next step.", bundle: 'pro' },
+        { q: "What is Revive a Dead Thread better than, and why?", a: "Waiting for them to do it. Both of you are probably waiting.", bundle: 'pro' },
+        { q: "Which strategy often follows Revive a Dead Thread?", a: "Follow Up Once — if the first message gets no answer.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Step Out of the Chat",
+      description: "",
+      cards: [
+        { q: "What is Step Out of the Chat?", a: "Leaving or muting a group clearly and kindly, and saying how to reach you.", bundle: 'free' },
+        { q: "How does Step Out of the Chat sound?", a: "\"I'm going to mute this chat for a bit — message me directly if you need me!\"", bundle: 'free' },
+        { q: "When is Step Out of the Chat the right one?", a: "When a group no longer needs you, or has become too much.", bundle: 'free' },
+        { q: "What does Step Out of the Chat protect?", a: "The people in the group from reading your exit as a snub.", bundle: 'free' },
+        { q: "What are the three ways out?", a: "Mute and say so, leave and say where to find you, or ask to be taken off.", bundle: 'free' },
+        { q: "When does Step Out of the Chat go wrong?", a: "When you leave silently.", bundle: 'pro' },
+        { q: "What is Step Out of the Chat better than, and why?", a: "Silently ignoring the group. A friendly line makes it about the volume, not the people.", bundle: 'pro' },
+        { q: "Which strategy often follows Step Out of the Chat?", a: "Say You've Seen It — when someone reaches you directly.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Keep It Moving** — can I reply properly right now?\n• **Ending and Restarting** — is the thread finished, stuck, dead, or not mine?\n• **All Seven Strategies** — no cue given, which is the real thing\n\nOne question sorts most of it: whose move is it?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Keep It Moving, Ending and Restarting, and All Seven Strategies.", bundle: 'pro' },
+        { q: "What question decides Keep It Moving?", a: "Can I reply properly right now?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Keep It Moving?", a: "Waiting until you can write the perfect reply.", bundle: 'pro' },
+        { q: "What question decides Ending and Restarting?", a: "Is this thread finished, stuck, dead, or not mine any more?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Ending and Restarting?", a: "Doing nothing, and letting the other person guess.", bundle: 'pro' },
+        { q: "The thread is finished but nobody has said so. Which strategy?", a: "Close the Thread.", bundle: 'pro' },
+        { q: "You are waiting for an answer. Which strategy?", a: "Follow Up Once.", bundle: 'pro' },
+        { q: "It faded out months ago. Which strategy?", a: "Revive a Dead Thread.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Busy Week** — Say You've Seen It → Reply Late, Keep It Short → Close the Thread\n2. **Out of the Group** — Step Out of the Chat → Say You've Seen It → Answer All of It\n3. **Back in Touch** — Revive a Dead Thread → Follow Up Once → Answer All of It\n\nEach one keeps silence from becoming the message.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Busy Week, Out of the Group, and Back in Touch.", bundle: 'pro' },
+        { q: "What is the order in Busy Week?", a: "Say You've Seen It, Reply Late Keep It Short, Close the Thread.", bundle: 'pro' },
+        { q: "What does the holding line in Busy Week buy?", a: "Time, honestly.", bundle: 'pro' },
+        { q: "What is the order in Out of the Group?", a: "Step Out of the Chat, Say You've Seen It, Answer All of It.", bundle: 'pro' },
+        { q: "What makes stepping out friendly rather than a disappearance?", a: "Being easy to reach, and answering when people do.", bundle: 'pro' },
+        { q: "What is the order in Back in Touch?", a: "Revive a Dead Thread, Follow Up Once, Answer All of It.", bundle: 'pro' },
+        { q: "Why follow up after reviving a thread?", a: "One unanswered message is not a verdict — it was probably just missed.", bundle: 'pro' },
+        { q: "What do the three sequences have in common?", a: "Each one keeps silence from becoming the message.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **The Pile-Up** — too many messages to start\n• **Weeks Late** — it feels too late to reply\n• **Left on Read** — they saw it and did not answer\n• **The Endless Thread** — it will not finish\n• **Half-Answered** — one question got lost\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Pile-Up, Weeks Late, Left on Read, The Endless Thread, and Half-Answered.", bundle: 'pro' },
+        { q: "What should you avoid with a pile-up?", a: "Waiting for time to reply to everything properly.", bundle: 'pro' },
+        { q: "What should you avoid when you are weeks late?", a: "Never replying because it is too late.", bundle: 'pro' },
+        { q: "What should you avoid when you are left on read?", a: "\"?\"", bundle: 'pro' },
+        { q: "What is seen, if not ignored?", a: "Read at a bad moment and forgotten.", bundle: 'pro' },
+        { q: "What should you avoid in an endless thread?", a: "Vanishing mid-conversation without a word.", bundle: 'pro' },
+        { q: "What is the habit that prevents half-answers?", a: "Counting the question marks.", bundle: 'pro' },
+        { q: "What should you avoid when a question was missed?", a: "Assuming it was skipped on purpose.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **The Reply Mindset** — I'll reply when I can do it properly\n• **Always Available** — I always reply straight away\n• **Too Late to Reply** — replying now would be weird\n• **Left on Read** — they must be annoyed\n• **Ending It** — it's rude to end a conversation\n• **The Group Chat** — I have to keep up with all of it\n\nMost of them turn silence into something it is not.",
+      cards: [
+        { q: "What are the six mindsets in this pack?", a: "The Reply Mindset, Always Available, Too Late to Reply, Left on Read, Ending It, and The Group Chat.", bundle: 'pro' },
+        { q: "What is true instead of \"I'll reply when I can do it properly\"?", a: "A short reply now is almost always better than a proper one later.", bundle: 'pro' },
+        { q: "What does always replying straight away quietly cost?", a: "Being always on, and replies sent half-thought.", bundle: 'pro' },
+        { q: "What makes a late reply weird?", a: "The long apology, not the lateness.", bundle: 'pro' },
+        { q: "What is true about being left on read?", a: "Seen is not ignored.", bundle: 'pro' },
+        { q: "What is true about ending a conversation?", a: "An abrupt ending can be rude. A friendly last message is not.", bundle: 'pro' },
+        { q: "What is true about group chats?", a: "Most group messages are not for you, and nobody is checking.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They turn silence into something it is not.", bundle: 'pro' },
+      ]
+    },
+  ],
+  whentostoptyping: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for choosing the right channel:\n\n1. Move It to a Call\n2. Say It in Person\n3. Take the Argument Offline\n4. Stop at One Message\n5. Reply When You're Calm\n6. Put It in Writing\n\nThree move a conversation out of text. Three use writing well.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Move It to a Call, Say It in Person, Take the Argument Offline, Stop at One Message, Reply When You're Calm, Put It in Writing.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Three move a conversation out of text. Three use writing well.", bundle: 'free' },
+        { q: "What is this pack about?", a: "Choosing the channel — whether to write at all, not how to write.", bundle: 'free' },
+        { q: "What is text good at?", a: "Easy things, quick things, and keeping a record.", bundle: 'free' },
+        { q: "What is text bad at?", a: "Long tangles, heavy news, and arguments.", bundle: 'free' },
+        { q: "Why is Put It in Writing in a pack about stopping typing?", a: "Knowing when to stop writing also means knowing when to start again — after a conversation.", bundle: 'pro' },
+        { q: "What is the one advantage writing has over speech?", a: "Time. You can wait before you reply.", bundle: 'pro' },
+        { q: "How is this pack different from Tone in Messages?", a: "That one is about how to write. This one is about whether to write.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Move It to a Call",
+      description: "",
+      cards: [
+        { q: "What is Move It to a Call?", a: "Suggesting a short call, with a time, when a thread has gone on too long or tangled.", bundle: 'free' },
+        { q: "How does Move It to a Call sound?", a: "\"This is going round in circles — can we do a quick call tonight at 8?\"", bundle: 'free' },
+        { q: "When is Move It to a Call the right one?", a: "When typing is taking longer than talking would.", bundle: 'free' },
+        { q: "What does Move It to a Call protect?", a: "Both people from a thread that never settles.", bundle: 'free' },
+        { q: "What are the three signs it is time to call?", a: "Going round in circles, crossing messages, and getting upset.", bundle: 'free' },
+        { q: "When does Move It to a Call go wrong?", a: "When it is an unannounced call instead of a suggestion.", bundle: 'pro' },
+        { q: "What is Move It to a Call better than, and why?", a: "One more message. On a call you can clarify as you go.", bundle: 'pro' },
+        { q: "Which strategy often follows Move It to a Call?", a: "Put It in Writing — so the call does not start a new thread.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say It in Person",
+      description: "",
+      cards: [
+        { q: "What is Say It in Person?", a: "Sending a short message asking to meet, and saying the real thing face to face.", bundle: 'free' },
+        { q: "How does Say It in Person sound?", a: "\"There's something about the money I'd rather say in person — can we meet on Sunday?\"", bundle: 'free' },
+        { q: "When is Say It in Person the right one?", a: "When the news is heavy, personal, or changes things for them.", bundle: 'free' },
+        { q: "What does Say It in Person protect?", a: "Them from reading something big alone, with no chance to ask.", bundle: 'free' },
+        { q: "What are the three kinds of thing that belong in person?", a: "Bad news that affects them, a real apology, and a worry about them.", bundle: 'free' },
+        { q: "When does Say It in Person go wrong?", a: "When the message asking to meet is so vague it makes them fear the worst.", bundle: 'pro' },
+        { q: "What is Say It in Person better than, and why?", a: "The long, careful message. It is easier to send, and harder to receive.", bundle: 'pro' },
+        { q: "Which strategy often follows Say It in Person, if they push?", a: "Stop at One Message — one calm reply with a time.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Take the Argument Offline",
+      description: "",
+      cards: [
+        { q: "What is Take the Argument Offline?", a: "Stopping an argument in writing and suggesting a time to talk instead.", bundle: 'free' },
+        { q: "How does Take the Argument Offline sound?", a: "\"I don't want to do this over text. Can I call you tonight?\"", bundle: 'free' },
+        { q: "When is Take the Argument Offline the right one?", a: "When a conversation in writing has turned into a fight.", bundle: 'free' },
+        { q: "What does Take the Argument Offline protect?", a: "Both people from saying things in writing they would never say out loud.", bundle: 'free' },
+        { q: "What are the three signs it has become a fight?", a: "\"Always\" and \"never\", other people copied in, and drafting a reply to win.", bundle: 'free' },
+        { q: "When does Take the Argument Offline go wrong?", a: "When it is used to avoid the conversation altogether.", bundle: 'pro' },
+        { q: "What is Take the Argument Offline better than, and why?", a: "The point-by-point reply, which gives them something new to quote.", bundle: 'pro' },
+        { q: "Why do written arguments escalate?", a: "Every message can be reread and quoted, and there is no face to soften it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stop at One Message",
+      description: "",
+      cards: [
+        { q: "What is Stop at One Message?", a: "Putting everything into one clear message, sending it, and waiting.", bundle: 'free' },
+        { q: "How does Stop at One Message sound?", a: "\"Summing up: the hall's free on the 12th, 3,000 kr, 40 people. Yes or no by Friday?\"", bundle: 'free' },
+        { q: "When is Stop at One Message the right one?", a: "When you have sent several messages in a row and are about to send another.", bundle: 'free' },
+        { q: "What does Stop at One Message protect?", a: "The other person from a stream they cannot answer.", bundle: 'free' },
+        { q: "What are the three things a single message should have?", a: "The facts together, one clear question, and a time if there is one.", bundle: 'free' },
+        { q: "When does Stop at One Message go wrong?", a: "When the one message is so long it becomes an essay.", bundle: 'pro' },
+        { q: "What is Stop at One Message better than, and why?", a: "The stream, which reads as pressure or anxiety.", bundle: 'pro' },
+        { q: "Which strategy often follows Stop at One Message, if it does not settle?", a: "Move It to a Call.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Reply When You're Calm",
+      description: "",
+      cards: [
+        { q: "What is Reply When You're Calm?", a: "Holding back an angry reply, and sending one line saying you will reply later.", bundle: 'free' },
+        { q: "How does Reply When You're Calm sound?", a: "\"I want to reply to this properly — give me till tomorrow.\"", bundle: 'free' },
+        { q: "When is Reply When You're Calm the right one?", a: "When a message has made you angry, hurt or defensive.", bundle: 'free' },
+        { q: "What does Reply When You're Calm protect?", a: "You from the first reply you cannot take back.", bundle: 'free' },
+        { q: "What are the three things to do with the time?", a: "Say you will reply, write the angry version and do not send it, and reply when you would be happy for them to read it twice.", bundle: 'free' },
+        { q: "When does Reply When You're Calm go wrong?", a: "When the calm reply never comes.", bundle: 'pro' },
+        { q: "What is Reply When You're Calm better than, and why?", a: "Silence, which looks like more anger.", bundle: 'pro' },
+        { q: "What does writing give you that speech does not?", a: "Time.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Put It in Writing",
+      description: "",
+      cards: [
+        { q: "What is Put It in Writing?", a: "Sending a short summary of what was agreed after a call or conversation.", bundle: 'free' },
+        { q: "How does Put It in Writing sound?", a: "\"Just so we all have it: the 12th, the hall, 1,000 each, and I'll book the cake.\"", bundle: 'free' },
+        { q: "When is Put It in Writing the right one?", a: "Right after something was decided out loud.", bundle: 'free' },
+        { q: "What does Put It in Writing protect?", a: "The agreement, from being remembered differently.", bundle: 'free' },
+        { q: "What are the three things a good summary has?", a: "What was decided, who does what, and a friendly close.", bundle: 'free' },
+        { q: "When does Put It in Writing go wrong?", a: "When it reads like a contract rather than a note.", bundle: 'pro' },
+        { q: "What is Put It in Writing better than, and why?", a: "\"But you said…\" three weeks later.", bundle: 'pro' },
+        { q: "Why is Put It in Writing in this pack?", a: "It is the other half of choosing the channel — writing is the right channel for a record.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Change the Channel** — too long, too heavy, or too heated for text?\n• **Use Writing Well** — how much, when, or what will be remembered?\n• **All Six Strategies** — no cue given, which is the real thing\n\nOne question sorts most of it: is the problem the channel, or how I am using it?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Change the Channel, Use Writing Well, and All Six Strategies.", bundle: 'pro' },
+        { q: "What question decides Change the Channel?", a: "Is it too long, too heavy, or too heated for text?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Change the Channel?", a: "One more message.", bundle: 'pro' },
+        { q: "What question decides Use Writing Well?", a: "Is the problem how much I am sending, when, or what will be remembered?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Use Writing Well?", a: "Replying fast and often.", bundle: 'pro' },
+        { q: "Too heavy for text. Which strategy?", a: "Say It in Person.", bundle: 'pro' },
+        { q: "Too heated for text. Which strategy?", a: "Take the Argument Offline.", bundle: 'pro' },
+        { q: "Just agreed something out loud. Which strategy?", a: "Put It in Writing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Off the Screen** — Reply When You're Calm → Take the Argument Offline → Put It in Writing\n2. **Too Many Messages** — Stop at One Message → Move It to a Call → Put It in Writing\n3. **Big News** — Say It in Person → Stop at One Message → Put It in Writing\n\nAll three end in writing — after the talking is done.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Off the Screen, Too Many Messages, and Big News.", bundle: 'pro' },
+        { q: "What is the order in Off the Screen?", a: "Reply When You're Calm, Take the Argument Offline, Put It in Writing.", bundle: 'pro' },
+        { q: "What is the usual order instead?", a: "Reply fast, argue in writing for an hour, and never write down how it ended.", bundle: 'pro' },
+        { q: "What is the order in Too Many Messages?", a: "Stop at One Message, Move It to a Call, Put It in Writing.", bundle: 'pro' },
+        { q: "What is the smallest fix for a thread that has grown too long?", a: "One clear message that pulls it together.", bundle: 'pro' },
+        { q: "What is the order in Big News?", a: "Say It in Person, Stop at One Message, Put It in Writing.", bundle: 'pro' },
+        { q: "What do you do when they push to hear big news by text?", a: "One calm message with a time — no more.", bundle: 'pro' },
+        { q: "How do all three sequences end?", a: "In writing, after the talking is done.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **The Thread That Won't Settle** — many messages, no decision\n• **A Fight in the Chat** — the conversation has turned sharp\n• **Too Big for Text** — the news needs a face\n• **Just Tell Me** — they are pushing to hear it now\n• **Nobody Wrote It Down** — people remember it differently\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Thread That Won't Settle, A Fight in the Chat, Too Big for Text, Just Tell Me, and Nobody Wrote It Down.", bundle: 'pro' },
+        { q: "What should you avoid in a thread that won't settle?", a: "One more suggestion.", bundle: 'pro' },
+        { q: "What should you avoid in a fight in the chat?", a: "The long, careful reply that proves you are right.", bundle: 'pro' },
+        { q: "What should you avoid when the news is too big for text?", a: "The long, careful message that says it all.", bundle: 'pro' },
+        { q: "What is the main strategy when they say \"just tell me\"?", a: "Stop at One Message — one calm reply with a time.", bundle: 'pro' },
+        { q: "What should you avoid when they push?", a: "Sending the news in pieces to calm them down.", bundle: 'pro' },
+        { q: "What should you avoid when nobody wrote it down?", a: "\"But you said…\"", bundle: 'pro' },
+        { q: "When is the best time to put something in writing?", a: "Right after the conversation.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **The Channel Mindset** — it's easier to just text\n• **Better in Writing** — I can choose my words\n• **One More Message** — the next one will fix it\n• **Answering Now** — I have to reply right away\n• **Calling Out of the Blue** — calls are intrusive\n• **Writing It Down** — a summary looks like distrust\n\nMost of them keep a conversation in the wrong channel.",
+      cards: [
+        { q: "What are the six mindsets in this pack?", a: "The Channel Mindset, Better in Writing, One More Message, Answering Now, Calling Out of the Blue, and Writing It Down.", bundle: 'pro' },
+        { q: "What is true instead of \"it's easier to just text\"?", a: "Text is easiest to send, not always easiest to sort things out in.", bundle: 'pro' },
+        { q: "What does being better in writing quietly cost?", a: "Conversations that needed a voice, sent as well-written messages.", bundle: 'pro' },
+        { q: "What is true about one more message?", a: "If three messages have not worked, the fourth will not.", bundle: 'pro' },
+        { q: "What is true about answering now?", a: "Writing is the one conversation where you are allowed to wait.", bundle: 'pro' },
+        { q: "What is true about calling out of the blue?", a: "An unannounced call can intrude. Asking whether a call would help does not.", bundle: 'pro' },
+        { q: "What is true about writing down what was agreed?", a: "It protects the agreement, not you.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They keep a conversation in the wrong channel.", bundle: 'pro' },
+      ]
+    },
+  ],
 };
