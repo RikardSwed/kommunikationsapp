@@ -6522,4 +6522,86 @@ const challengesCollections = {
       ]
     },
   ],
+  calibratinghumour: [
+    {
+      name: "The Room Is Not Right",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The joke is ready, and the room is not. Someone is worried, tired or serious, or nobody has joked yet and you would be the first.\n\nWhat goes wrong is telling the joke you prepared rather than the one the room can take. The idea might be good; the moment is not.\n\n**Land It Smaller** is the main move — a shorter, softer version, or no joke at all this time. **Give Them the Out** helps when you have already said something and they look unsure.\n\nThe one thing to avoid: going big to lift the mood. A tired room hears it as work.\n\nMindset: read the room first. The joke will keep.",
+      inputs: [
+        { q: "They say \"I forgot my homework\" flatly and look genuinely worried.", a: "\"Ah. Is it a problem, or is it a shrug?\" [Land It Smaller]", bundle: 'pro', guideBack: "A smaller version of the joke" },
+        { q: "They mention the food, and you know they cooked it and were nervous.", a: "\"It's good, honestly.\" [Land It Smaller]", bundle: 'pro', guideBack: "A smaller version of the joke" },
+        { q: "They have complained seriously about this exact thing before.", a: "\"Is that still going on? That's rubbish.\" [Land It Smaller]", bundle: 'pro', guideBack: "A smaller version of the joke" },
+        { q: "Nobody in the group has joked yet, and you would be the first.", a: "\"Well, that's one way to start a Monday.\" [Land It Smaller]", bundle: 'pro', guideBack: "A smaller version of the joke" },
+        { q: "The room is tired, and a big bit would be work for everyone.", a: "\"Honestly? Same. I'm doing nothing tonight.\" [Land It Smaller]", bundle: 'pro', guideBack: "A smaller version of the joke" },
+        { q: "You made a quick joke, and they look unsure whether you were serious.", a: "\"I'm joking. How are you actually doing?\" [Give Them the Out]", bundle: 'pro', guideBack: "A way out of laughing" },
+        { q: "Someone has just had bad news, and the group is quiet.", a: "\"I'm really sorry. Do you want to talk about it?\" [Land It Smaller]", bundle: 'pro', guideBack: "A smaller version of the joke" },
+        { q: "You joked in a meeting where your boss is clearly stressed, and she did not smile.", a: "\"Ignore me. What do you need from us?\" [Give Them the Out]", bundle: 'pro', guideBack: "A way out of laughing" },
+      ]
+    },
+    {
+      name: "It Landed Badly",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The joke got a flat look, a straight answer, or a silence one beat too long. Nobody is hurt — it simply did not work.\n\nWhat goes wrong is the repair: explaining the joke, trying a bigger one, or wincing so visibly that the moment grows. A missed joke is only as big as the fuss around it.\n\n**Move Straight On** is the lightest repair. **Name That It Missed** works when the silence is long enough that everyone noticed. **Give Them the Out** works when they answered your joke seriously.\n\nThe one thing to avoid: explaining it.\n\nMindset: small miss, small repair.",
+      inputs: [
+        { q: "Your line got a flat look.", a: "\"Anyway — genuinely, do you need a hand with it?\" [Move Straight On]", bundle: 'pro', guideBack: "The conversation, picked back up" },
+        { q: "They answered your joke completely straight.", a: "\"Fair. Ignore me. What were you saying?\" [Give Them the Out]", bundle: 'pro', guideBack: "A way out of laughing" },
+        { q: "You can feel yourself about to explain the joke.", a: "\"So what's the plan for it?\" [Move Straight On]", bundle: 'pro', guideBack: "The conversation, picked back up" },
+        { q: "The silence has gone one beat too long.", a: "\"That was a swing and a miss. Moving on.\" [Name That It Missed]", bundle: 'pro', guideBack: "A light admission, then onward" },
+        { q: "You went too big, and you can see it.", a: "\"Too much. I heard it as I said it.\" [Name That It Missed]", bundle: 'pro', guideBack: "A light admission, then onward" },
+        { q: "Your joke in the group chat gets one \"haha\" after an hour.", a: "\"Okay, retiring that one. Anyway — are we still on for Saturday?\" [Name That It Missed]", bundle: 'pro', guideBack: "A light admission, then onward" },
+        { q: "They smile politely and wait for you to carry on.", a: "\"So — how did it go in the end?\" [Move Straight On]", bundle: 'pro', guideBack: "The conversation, picked back up" },
+        { q: "They ask, \"Wait, are you serious?\"", a: "\"No, joking. Serious answer: yes, I can do Thursday.\" [Give Them the Out]", bundle: 'pro', guideBack: "A way out of laughing" },
+      ]
+    },
+    {
+      name: "They Took It Personally",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The joke landed on the person, not the room. It touched a worry, a sore point, or something you did not know about, and you can see it in their face.\n\nWhat goes wrong is the defence — \"I was only joking\", \"you know I didn't mean it\" — which asks the hurt person to reassure you. The joke was small; the defence makes it a conversation about your intentions.\n\n**Take It Back Cleanly** is the main move: one plain sentence, then back to them. **Give Them the Out** follows when they try to smooth it over for you.\n\nThe one thing to avoid: \"I was only joking.\"\n\nMindset: fast, plain, and then about them.",
+      inputs: [
+        { q: "You played offended, and they had actually meant what they said.", a: "\"Sorry — that was me messing about, not a comment on you.\" [Take It Back Cleanly]", bundle: 'pro', guideBack: "A plain apology, then back to them" },
+        { q: "Your bossy bit landed on someone who often gets talked over.", a: "\"Ignore me. What did you want to do?\" [Give Them the Out]", bundle: 'pro', guideBack: "A way out of laughing" },
+        { q: "You jokingly kept something they actually needed.", a: "\"Here, take it — I was being daft. Do you need anything else?\" [Take It Back Cleanly]", bundle: 'pro', guideBack: "A plain apology, then back to them" },
+        { q: "They went quiet after your line, and you are not sure why.", a: "\"Did that land wrong? I didn't mean anything by it.\" [Take It Back Cleanly]", bundle: 'pro', guideBack: "A plain apology, then back to them" },
+        { q: "You realise mid-sentence that the joke has hit something real.", a: "\"Actually, forget the joke. What's going on with it?\" [Take It Back Cleanly]", bundle: 'pro', guideBack: "A plain apology, then back to them" },
+        { q: "After your joke, they say, \"No, it's fine, I'm used to it.\"", a: "\"You shouldn't have to be. That's on me.\" [Give Them the Out]", bundle: 'pro', guideBack: "A way out of laughing" },
+        { q: "Your joke about their family got a laugh from everyone except them.", a: "\"Sorry — not my family, not my joke to make.\" [Take It Back Cleanly]", bundle: 'pro', guideBack: "A plain apology, then back to them" },
+        { q: "They laugh along, but later you hear they were upset.", a: "\"I've been thinking about my joke yesterday. Sorry — it wasn't fair.\" [Take It Back Cleanly]", bundle: 'pro', guideBack: "A plain apology, then back to them" },
+      ]
+    },
+    {
+      name: "You Cannot Commit",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You start the joke and cannot hold it. It trails off, you laugh in the middle, or you give up halfway and say \"anyway\".\n\nWhat goes wrong is that a half-said joke is unclear, and unclear is worse than flat. The room cannot tell if it was a joke, so nobody knows whether to laugh.\n\n**Commit to It** is the main move: finish the line, straight, at the size you started. **Land It Smaller** is the other honest option — if you do not trust the room with the big version, choose the small one on purpose rather than shrinking the big one halfway through.\n\nThe one thing to avoid: the trail-off.\n\nMindset: pick a size, and say it all the way.",
+      inputs: [
+        { q: "Your line trailed off before it finished.", a: "\"No — properly. I'll be taking over the kitchen from here.\" [Commit to It]", bundle: 'pro', guideBack: "The line, said all the way" },
+        { q: "You laughed in the middle of your own joke.", a: "\"Let me try that again with dignity.\" [Commit to It]", bundle: 'pro', guideBack: "The line, said all the way" },
+        { q: "You went quiet halfway through and gave up on it.", a: "\"Sorry, what I meant was: absolutely not, and I'm not discussing it further.\" [Commit to It]", bundle: 'pro', guideBack: "The line, said all the way" },
+        { q: "You do not trust the room enough to go big.", a: "\"That sounds like too much work. Maybe tomorrow.\" [Land It Smaller]", bundle: 'pro', guideBack: "A smaller version of the joke" },
+        { q: "You cannot think of a good line and are about to force one.", a: "\"Yeah, that's annoying. What are you going to do?\" [Land It Smaller]", bundle: 'pro', guideBack: "A smaller version of the joke" },
+        { q: "You mumbled the punchline, and someone said, \"What?\"", a: "\"I said: that's the most expensive sandwich in Europe.\" [Commit to It]", bundle: 'pro', guideBack: "The line, said all the way" },
+        { q: "You started a silly voice and dropped it after one word.", a: "\"No, I'm doing the voice. Good evening, and welcome to the kitchen.\" [Commit to It]", bundle: 'pro', guideBack: "The line, said all the way" },
+        { q: "You feel a big joke coming in a room of strangers.", a: "\"Busy in here tonight.\" [Land It Smaller]", bundle: 'pro', guideBack: "A smaller version of the joke" },
+      ]
+    },
+    {
+      name: "The Bit Has Run Out",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The joke worked, and you kept going. Now the laughs are shrinking, someone has tried to change the subject, or you are the only one still in it.\n\nWhat goes wrong is that the teller is always the last to notice. The bit felt great three rounds ago, and the good memory keeps you going after everyone else has stopped.\n\n**Stop the Bit** is the main move — end it with one last line or none, and say something real. **Move Straight On** works when someone has already tried to change the subject.\n\nThe one thing to avoid: going back to it after someone has moved on.\n\nMindset: stop while it is still good.",
+      inputs: [
+        { q: "You are on the fifth round, and the laughs are shrinking.", a: "\"Right, I'm done. What are you actually going to do about it?\" [Stop the Bit]", bundle: 'pro', guideBack: "The last line, then something real" },
+        { q: "Someone tried to change the subject, and you went back to the bit.", a: "\"Sorry, yes — you were saying?\" [Move Straight On]", bundle: 'pro', guideBack: "The conversation, picked back up" },
+        { q: "You are the only one still in character.", a: "\"Okay, out of character now. Genuinely, that's a pain.\" [Stop the Bit]", bundle: 'pro', guideBack: "The last line, then something real" },
+        { q: "You have one good line left and want to end on it.", a: "\"Two pounds an hour, final offer. Right, moving on.\" [Stop the Bit]", bundle: 'pro', guideBack: "The last line, then something real" },
+        { q: "The bit went well, and you can feel the pull to keep going.", a: "\"I'll stop while I'm ahead. What's the plan?\" [Stop the Bit]", bundle: 'pro', guideBack: "The last line, then something real" },
+        { q: "Your friend has said \"okay, okay\" twice.", a: "\"Fine, I'm done. How did it go in the end?\" [Stop the Bit]", bundle: 'pro', guideBack: "The last line, then something real" },
+        { q: "The group has moved on to the weekend, and you have one more joke about Monday.", a: "\"So what's everyone doing Saturday?\" [Move Straight On]", bundle: 'pro', guideBack: "The conversation, picked back up" },
+        { q: "A running joke from last week comes back to you as the person walks in.", a: "\"Morning. How was the weekend?\" [Move Straight On]", bundle: 'pro', guideBack: "The conversation, picked back up" },
+      ]
+    },
+  ],
 };

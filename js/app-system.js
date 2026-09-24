@@ -713,6 +713,7 @@ applyInputCounterVisibility();
     seenandtrusted1thesafetyshereads: { label: 'Seen and Trusted 1 — The Safety She Reads For', minLevel: 'complete' },
     masculine1: { label: 'The Masculine Blueprint – Part 1', minLevel: 'complete' },
     askingforclarity: { label: 'Asking for Clarity', minLevel: 'complete' },
+    calibratinghumour: { label: 'Calibrating Humour', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -3156,6 +3157,20 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
+  calibratinghumour: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
 };
 window.BUNDLE_DEFS = BUNDLE_DEFS;
 
@@ -4046,6 +4061,15 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  {
+    version: 'v1.29.09', date: 'September 2026', title: 'Calibrating Humour \u2014 the second grid pack', audience: 'dev',
+    items: [
+      'A new pack, <strong>Calibrating Humour</strong> (<code>calibratinghumour</code>, Humour &amp; Banter), imported at <strong>complete</strong>. 36 decks, 273 units, <strong>0 errors and 0 warnings</strong> in check-pack.',
+      'The humour topic had three packs that teach how to make jokes and none that teach how to size them. Seven strategies: <strong>Land It Smaller</strong>, <strong>Commit to It</strong> and <strong>Stop the Bit</strong> for size, and four repairs from light to serious \u2014 <strong>Move Straight On</strong>, <strong>Name That It Missed</strong>, <strong>Give Them the Out</strong>, <strong>Take It Back Cleanly</strong>.',
+      'The five Challenges decks are the ones lifted out of <strong>Role Based Humour</strong> in v1.28.81, now with a pack whose own strategies solve them. <strong>Commit to It</strong> was added as a seventh strategy for exactly that reason: <em>You Cannot Commit</em> had nothing to answer it.',
+      '<strong>Grid pack</strong>, row type <em>situation</em>: card N is the same joke in all seven columns \u2014 the report redo, the nervous host\u2019s lasagne, the printer joke in a meeting, the birthday toast \u2014 written from each strategy\u2019s angle. 90% of cards match their own row in every other column.',
+    ],
+  },
   {
     version: 'v1.29.08', date: 'September 2026', title: 'Asking for Clarity \u2014 the first grid pack', audience: 'dev',
     items: [

@@ -11457,4 +11457,174 @@ const memorizeCollections = {
       ]
     },
   ],
+  calibratinghumour: [
+    {
+      name: "Core Idea",
+      description: "Seven strategies for getting humour the right size, and repairing it when it is not:\n\n1. Land It Smaller\n2. Commit to It\n3. Stop the Bit\n4. Move Straight On\n5. Name That It Missed\n6. Give Them the Out\n7. Take It Back Cleanly\n\nThe first three are about size. The last four are repairs, from the lightest to the most serious.",
+      cards: [
+        { q: "What are the seven strategies in this pack?", a: "Land It Smaller, Commit to It, Stop the Bit, Move Straight On, Name That It Missed, Give Them the Out, Take It Back Cleanly.", bundle: 'free' },
+        { q: "How do the seven fit together?", a: "The first three are about size — before, during and at the end. The last four are repairs, from light to serious.", bundle: 'free' },
+        { q: "What is the aim of the whole pack?", a: "Humour nobody has to pay for.", bundle: 'free' },
+        { q: "What is the first question after a miss?", a: "Did it land on the room, or on the person?", bundle: 'free' },
+        { q: "What is worse than a flat joke?", a: "A half-said one. Nobody can tell whether it was a joke.", bundle: 'free' },
+        { q: "How is this pack different from the other humour packs?", a: "They teach how to make jokes. This one teaches how to size them and repair them.", bundle: 'pro' },
+        { q: "What is the one repair that always makes things worse?", a: "Explaining the joke.", bundle: 'pro' },
+        { q: "What makes a missed joke big?", a: "The fuss around it, not the joke itself.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Land It Smaller",
+      description: "",
+      cards: [
+        { q: "What is Land It Smaller?", a: "Feeling the big version of a joke coming, and saying a smaller one instead.", bundle: 'free' },
+        { q: "How does Land It Smaller sound?", a: "\"Smells great. Brave choice for a weeknight.\"", bundle: 'free' },
+        { q: "When is Land It Smaller the right one?", a: "When the joke in your head is bigger than the room can take.", bundle: 'free' },
+        { q: "What does Land It Smaller protect?", a: "A tired, nervous or serious room from having to perform a laugh.", bundle: 'free' },
+        { q: "What are the three sizes down?", a: "The shorter version, the softer version, and no joke at all this time.", bundle: 'free' },
+        { q: "When does Land It Smaller go wrong?", a: "When you shrink a big joke halfway through saying it. That is a trail-off, not a smaller joke.", bundle: 'pro' },
+        { q: "What is Land It Smaller better than, and why?", a: "Going big to lift the mood. A tired room hears a big joke as work.", bundle: 'pro' },
+        { q: "Which strategy often follows Land It Smaller?", a: "Move Straight On — a small joke is easy to leave behind.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Commit to It",
+      description: "",
+      cards: [
+        { q: "What is Commit to It?", a: "Finishing a joke you started — the whole line, in the same voice.", bundle: 'free' },
+        { q: "How does Commit to It sound?", a: "\"No — properly. I'm getting you a camp bed and a little plant.\"", bundle: 'free' },
+        { q: "When is Commit to It the right one?", a: "When you have started a joke and feel it trailing off.", bundle: 'free' },
+        { q: "What does Commit to It protect?", a: "Everyone from not knowing whether to laugh.", bundle: 'free' },
+        { q: "What are the three ways a joke goes half-said?", a: "It trails off, you laugh in the middle, or you lose your nerve.", bundle: 'free' },
+        { q: "When does Commit to It go wrong?", a: "When committing turns into going bigger. It means saying the size you chose, not a bigger one.", bundle: 'pro' },
+        { q: "What is Commit to It better than, and why?", a: "The trail-off. A half-said joke is unclear, and unclear is worse than flat.", bundle: 'pro' },
+        { q: "Which strategy often follows Commit to It?", a: "Stop the Bit — all the way in, then all the way out.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stop the Bit",
+      description: "",
+      cards: [
+        { q: "What is Stop the Bit?", a: "Ending a running joke while it is still good, then saying something real.", bundle: 'free' },
+        { q: "How does Stop the Bit sound?", a: "\"Right, I'm done. Seriously — want a hand with the tables?\"", bundle: 'free' },
+        { q: "When is Stop the Bit the right one?", a: "When the bit worked and is now running out.", bundle: 'free' },
+        { q: "What does Stop the Bit protect?", a: "The good memory of the joke, and the conversation it interrupted.", bundle: 'free' },
+        { q: "What are the three signs a bit has run out?", a: "The laughs are shrinking, someone tried to change the subject, and you are the only one still in it.", bundle: 'free' },
+        { q: "When does Stop the Bit go wrong?", a: "When you stop, and then go back to the bit five minutes later.", bundle: 'pro' },
+        { q: "What is Stop the Bit better than, and why?", a: "Waiting for silence. By then everyone was waiting for you.", bundle: 'pro' },
+        { q: "Which strategy often follows Stop the Bit?", a: "Move Straight On — the real question after the last line.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Move Straight On",
+      description: "",
+      cards: [
+        { q: "What is Move Straight On?", a: "Carrying on with the conversation after a flat joke, without repairing it.", bundle: 'free' },
+        { q: "How does Move Straight On sound?", a: "\"Anyway — which part do they want changed?\"", bundle: 'free' },
+        { q: "When is Move Straight On the right one?", a: "When the joke fell flat and nobody is hurt.", bundle: 'free' },
+        { q: "What does Move Straight On protect?", a: "The conversation, and the fact that it was about them, not the laugh.", bundle: 'free' },
+        { q: "What are the three things to move on to?", a: "Their topic, a real question, or the next point.", bundle: 'free' },
+        { q: "When does Move Straight On go wrong?", a: "When the joke hurt someone. Then moving on looks like you did not notice.", bundle: 'pro' },
+        { q: "What is Move Straight On better than, and why?", a: "Explaining the joke, which makes a flat joke flatter.", bundle: 'pro' },
+        { q: "Which strategy often follows Move Straight On?", a: "Land It Smaller — later, when a small joke fits the room.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name That It Missed",
+      description: "",
+      cards: [
+        { q: "What is Name That It Missed?", a: "Saying lightly that a joke did not land, and then moving on.", bundle: 'free' },
+        { q: "How does Name That It Missed sound?", a: "\"That was funnier in my head.\"", bundle: 'free' },
+        { q: "When is Name That It Missed the right one?", a: "When the silence is long enough that everyone noticed.", bundle: 'free' },
+        { q: "What does Name That It Missed protect?", a: "Everyone from the unspoken question of whether to mention it.", bundle: 'free' },
+        { q: "What are the three ways to name it?", a: "The head, the sports line, and the crowd.", bundle: 'free' },
+        { q: "When does Name That It Missed go wrong?", a: "When it turns into a long apology, or a second joke you need to land.", bundle: 'pro' },
+        { q: "What is Name That It Missed better than, and why?", a: "A visible wince. Naming it shows the miss did not bother you.", bundle: 'pro' },
+        { q: "Which strategy often follows Name That It Missed?", a: "Move Straight On — one line, then back to the conversation.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Give Them the Out",
+      description: "",
+      cards: [
+        { q: "What is Give Them the Out?", a: "Telling someone it was a joke and handing them the conversation, so they do not have to decide how to react.", bundle: 'free' },
+        { q: "How does Give Them the Out sound?", a: "\"Ignore me. How bad is it, really?\"", bundle: 'free' },
+        { q: "When is Give Them the Out the right one?", a: "When they do not know whether to laugh, protest or take it seriously.", bundle: 'free' },
+        { q: "What does Give Them the Out protect?", a: "The other person from having to work out whether they were the joke.", bundle: 'free' },
+        { q: "What are the three ways to give the out?", a: "Say it was a joke and ask, tell them they do not have to laugh, or ask the real question.", bundle: 'free' },
+        { q: "When does Give Them the Out go wrong?", a: "When the joke actually hurt. Then they need an apology, not an exit.", bundle: 'pro' },
+        { q: "What is Give Them the Out better than, and why?", a: "Waiting for their reaction. Most people freeze, and the pause is theirs to carry.", bundle: 'pro' },
+        { q: "Which strategy often follows Give Them the Out?", a: "Move Straight On — back to what they were saying.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Take It Back Cleanly",
+      description: "",
+      cards: [
+        { q: "What is Take It Back Cleanly?", a: "Taking back a joke that hurt, in one plain sentence, and turning back to them.", bundle: 'free' },
+        { q: "How does Take It Back Cleanly sound?", a: "\"Sorry, that was a stupid thing to joke about. What do you need?\"", bundle: 'free' },
+        { q: "When is Take It Back Cleanly the right one?", a: "When the joke hit something real — a sore point, a worry, something you did not know.", bundle: 'free' },
+        { q: "What does Take It Back Cleanly protect?", a: "The person who was hurt, and the relationship.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Say it plainly, say the true thing, and turn to them.", bundle: 'free' },
+        { q: "When does Take It Back Cleanly go wrong?", a: "When it comes with a defence — \"I was only joking\" — which asks them to reassure you.", bundle: 'pro' },
+        { q: "What is Take It Back Cleanly better than, and why?", a: "Laughing it off, which asks them to laugh at it too.", bundle: 'pro' },
+        { q: "Which strategy often follows Take It Back Cleanly?", a: "Give Them the Out — people often try to comfort you, and that should not be their job.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Size the Joke** — too big, too small, or too long\n• **After a Miss** — which of four repairs, from light to serious\n• **All Seven Strategies** — no cue given, which is the real thing\n\nIn After a Miss, one question decides most of it: did it land on the room, or on the person?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Size the Joke, After a Miss, and All Seven Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Size the Joke?", a: "Is it too big, too small, or too long?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Size the Joke?", a: "Going smaller by trailing off. A half-said joke is not small; it is unclear.", bundle: 'pro' },
+        { q: "What is the question that decides After a Miss?", a: "Did it land on the room, or on the person?", bundle: 'pro' },
+        { q: "It landed on the room. Which strategies?", a: "Move Straight On or Name That It Missed.", bundle: 'pro' },
+        { q: "It landed on the person. Which strategies?", a: "Give Them the Out or Take It Back Cleanly.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in After a Miss?", a: "Explaining the joke.", bundle: 'pro' },
+        { q: "What is the aim in All Seven Strategies?", a: "Humour nobody has to pay for.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Commit and Close** — Commit to It → Stop the Bit\n2. **Miss, Then Smaller** — Name That It Missed → Move Straight On → Land It Smaller\n3. **Straight Back to Them** — Take It Back Cleanly → Give Them the Out → Move Straight On\n\nIn each one, the order stops a small moment becoming a bigger one.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Commit and Close, Miss Then Smaller, and Straight Back to Them.", bundle: 'pro' },
+        { q: "What is the order in Commit and Close?", a: "Commit to It, then Stop the Bit.", bundle: 'pro' },
+        { q: "Why do those two belong together?", a: "They are the same skill from both ends: say the size you chose, and no more.", bundle: 'pro' },
+        { q: "What is the order in Miss, Then Smaller?", a: "Name That It Missed, Move Straight On, and later Land It Smaller.", bundle: 'pro' },
+        { q: "What is the usual mistake after a miss?", a: "Going bigger straight away to win the room back.", bundle: 'pro' },
+        { q: "What is the order in Straight Back to Them?", a: "Take It Back Cleanly, Give Them the Out, Move Straight On.", bundle: 'pro' },
+        { q: "Why does the apology come first?", a: "Nothing else works until it is said.", bundle: 'pro' },
+        { q: "What is the usual wrong first step when a joke hurt someone?", a: "\"I was only joking.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **The Room Is Not Right** — the joke is ready, the room is not\n• **It Landed Badly** — flat, but nobody is hurt\n• **They Took It Personally** — it hit the person\n• **You Cannot Commit** — the joke trails off\n• **The Bit Has Run Out** — you kept going too long\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Room Is Not Right, It Landed Badly, They Took It Personally, You Cannot Commit, and The Bit Has Run Out.", bundle: 'pro' },
+        { q: "What is the main strategy when the room is not right?", a: "Land It Smaller — or no joke at all this time.", bundle: 'pro' },
+        { q: "What should you avoid when the room is tired?", a: "Going big to lift the mood.", bundle: 'pro' },
+        { q: "What should you avoid when a joke lands badly?", a: "Explaining it.", bundle: 'pro' },
+        { q: "What should you avoid when they took it personally?", a: "\"I was only joking.\"", bundle: 'pro' },
+        { q: "Why is a half-said joke worse than a flat one?", a: "Nobody can tell whether it was a joke, so nobody knows whether to laugh.", bundle: 'pro' },
+        { q: "Who notices last that a bit has run out?", a: "The person telling it.", bundle: 'pro' },
+        { q: "What should you avoid when the bit has run out?", a: "Going back to it after someone has moved on.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **The Calibrating Mindset** — if it misses, I've made a fool of myself\n• **The Flat Joke** — that silence was a disaster\n• **The Funny One** — people expect it from me\n• **Going Big** — the bigger the joke, the bigger the laugh\n• **Taking It Back** — apologising means I meant it\n• **Holding Back** — better not to joke at all\n\nMost of them make a small moment bigger than it is.",
+      cards: [
+        { q: "What are the six mindsets in this pack?", a: "The Calibrating Mindset, The Flat Joke, The Funny One, Going Big, Taking It Back, and Holding Back.", bundle: 'pro' },
+        { q: "What is true instead of \"if it misses, I've made a fool of myself\"?", a: "A joke is a small offer, and most misses are forgotten within a minute.", bundle: 'pro' },
+        { q: "What usually makes a flat joke big?", a: "The repair — the explanation, the second try, the wince.", bundle: 'pro' },
+        { q: "What does being the funny one quietly cost?", a: "The moments where someone needed you to be serious, and got a bit instead.", bundle: 'pro' },
+        { q: "What is true about going big?", a: "Committing fully works. \"Always bigger\" is the part that gets added.", bundle: 'pro' },
+        { q: "What is true about taking a joke back?", a: "You can not mean it and still be sorry it landed.", bundle: 'pro' },
+        { q: "What is true about holding back?", a: "A small joke, said properly, is barely a risk at all.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They make a small moment bigger than it is.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

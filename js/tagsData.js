@@ -391,6 +391,9 @@ const packTags = {
   askingforclarity: [
     'clarifying', 'not understanding', 'asking again', 'jargon', 'mishearing', 'checking what someone meant', 'repair'
   ],
+  calibratinghumour: [
+    'humour', 'jokes that miss', 'reading the room', 'apologising for a joke', 'ending a bit', 'committing to a joke', 'banter'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -448,7 +451,7 @@ const TOPICS = [
   { id: 'emotions',              title: 'Emotions & Regulation',         packs: ['emotionlabellingandregulation', 'conflictemotions', 'praxdread4', 'reframing', 'oconnor6'] },
 
   // ── Lightness ─────────────────────────────────────────────────────
-  { id: 'humour',                title: 'Humour & Banter',               packs: ['humour', 'teasing', 'selfhumour', 'humourpractise', 'playfulrefusals', 'rolebasedhumour', 'storybanter', 'responsivehumour'] },
+  { id: 'humour',                title: 'Humour & Banter',               packs: ['humour', 'teasing', 'selfhumour', 'humourpractise', 'playfulrefusals', 'rolebasedhumour', 'storybanter', 'responsivehumour', 'calibratinghumour'] },
 
   // ── Placeholders: no material yet, hidden below Complete ──────────
   { id: 'bodyvoice',             title: 'Body Language & Voice',         packs: [] },

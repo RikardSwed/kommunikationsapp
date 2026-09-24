@@ -10079,4 +10079,108 @@ const multiStepCollections = {
       ]
     },
   ],
+  calibratinghumour: [
+    {
+      name: "Commit and Close",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Commit to It**, then **Stop the Bit**. What to do with a joke you have started: say it all the way, and end it while it is still good.\n\n1. **Commit to It** — you started and wobbled; finish the line properly.\n2. **Stop the Bit** — it landed, and the pull to keep going is strong; end it with something real.\n\nWhy this order: the two steps are the same skill from both ends. Committing is saying the size you chose; stopping is not saying more than that. Most people fail at one end or the other.\n\nThe usual order is to half-say the joke and then keep adding to it — too little, then too much.\n\nMindset: all the way in, then all the way out.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your flatmate has finally fixed the dripping tap after three weeks. You are both in the kitchen.",
+          steps: [
+            { front: "Commit to It — you start to call them \"the landlord\", then lose your nerve.", back: "\"No — properly. Thank you, landlord. I'll be leaving a five-star review.\"", guideFront: "Finish the line properly when...", guideBack: "The line, said all the way" },
+            { front: "Stop the Bit — they laugh, and you can feel three more landlord jokes coming.", back: "\"Right, I'll stop. Seriously, thank you — it was driving me mad.\"", guideFront: "Wrap it up when...", guideBack: "The last line, then something real" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "At a family lunch, your uncle announces he has taken up running at sixty.",
+          steps: [
+            { front: "Commit to It — you begin a line about the marathon, then trail off into \"anyway\".", back: "\"No, I'm saying it: London Marathon, next April, and we're all making signs.\"", guideFront: "Finish the line properly when...", guideBack: "The line, said all the way" },
+            { front: "Stop the Bit — the table laughs, and your cousin starts adding to it.", back: "\"Okay, no more marathon. How far are you actually going?\"", guideFront: "Wrap it up when...", guideBack: "The last line, then something real" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A colleague arrives at the team meeting with a huge coffee, looking exhausted.",
+          steps: [
+            { front: "Commit to It — you start a line about the size of the cup and laugh halfway.", back: "\"Let me try that again with dignity: is that a coffee or a bucket?\"", guideFront: "Finish the line properly when...", guideBack: "The line, said all the way" },
+            { front: "Stop the Bit — it gets a laugh, and someone looks at the clock.", back: "\"That's my one joke for the day. Right — the agenda.\"", guideFront: "Wrap it up when...", guideBack: "The last line, then something real" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Miss, Then Smaller",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Name That It Missed**, then **Move Straight On**, then later **Land It Smaller**. What to do after a joke falls flat, and how to try again later without trying too hard.\n\n1. **Name That It Missed** — the silence is long; say lightly that it did not land.\n2. **Move Straight On** — go back to their topic, properly.\n3. **Land It Smaller** — later, when a moment comes, a small joke that fits the room.\n\nWhy this order: the first two close the miss. The third shows you have read the room. Trying again straight away, with a bigger joke, is the one move that turns a small miss into a pattern.\n\nThe usual order is to miss, then immediately go bigger to win the room back.\n\nMindset: one flat joke is nothing. Two in a row trying to fix it is something.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "It is your first week at a new job, at lunch with people you have just met.",
+          steps: [
+            { front: "Name That It Missed — your joke about the canteen gets complete silence.", back: "\"That was funnier in my head. I'll stick to eating.\"", guideFront: "Say it didn't land when...", guideBack: "A light admission, then onward" },
+            { front: "Move Straight On — someone says they have been here five years.", back: "\"Five years — what's kept you?\"", guideFront: "Carry on with the topic when...", guideBack: "The conversation, picked back up" },
+            { front: "Land It Smaller — they say, \"Honestly? The people. And the free fruit.\"", back: "\"The fruit. Good to know where the priorities are.\"", guideFront: "Make it one size down when...", guideBack: "A smaller version of the joke" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are at your partner's friend's birthday, where you know nobody.",
+          steps: [
+            { front: "Name That It Missed — your joke about the birthday cake gets a polite pause.", back: "\"Swing and a miss. I'll get my coat.\"", guideFront: "Say it didn't land when...", guideBack: "A light admission, then onward" },
+            { front: "Move Straight On — someone laughs and asks how you know the birthday girl.", back: "\"Through Lina — we met at a climbing wall, of all places.\"", guideFront: "Carry on with the topic when...", guideBack: "The conversation, picked back up" },
+            { front: "Land It Smaller — they say, \"Lina climbs? She's scared of ladders.\"", back: "\"She is. It was a very short climb.\"", guideFront: "Make it one size down when...", guideBack: "A smaller version of the joke" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are on a video call with a client for the first time.",
+          steps: [
+            { front: "Name That It Missed — your joke about everyone being on mute gets nothing.", back: "\"Tough crowd. Right — thanks for making the time.\"", guideFront: "Say it didn't land when...", guideBack: "A light admission, then onward" },
+            { front: "Move Straight On — the client says they are short of time.", back: "\"Then let's go straight to the numbers.\"", guideFront: "Carry on with the topic when...", guideBack: "The conversation, picked back up" },
+            { front: "Land It Smaller — at the end, they say, \"That was quicker than I expected.\"", back: "\"I'll take that as the highest compliment.\"", guideFront: "Make it one size down when...", guideBack: "A smaller version of the joke" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Straight Back to Them",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Take It Back Cleanly**, then **Give Them the Out**, then **Move Straight On**. What to do when a joke hit the person, not just the room.\n\n1. **Take It Back Cleanly** — one plain sentence, no joke in it.\n2. **Give Them the Out** — they say it is fine; let them off having to make you feel better.\n3. **Move Straight On** — go back to them and what they were saying.\n\nWhy this order: the apology first, because nothing else works until it is said. Then the out, because people usually answer an apology by comforting you, and that should not be their job. Then back to the conversation, so the joke is not the thing you remember.\n\nThe usual order is to defend first — \"I was only joking\" — which asks them to reassure you.\n\nMindset: fix it fast and plainly, then make it about them again.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "At a barbecue, you joke about a friend's new car. You find out it is the only thing they could afford after losing their job.",
+          steps: [
+            { front: "Take It Back Cleanly — your friend's smile goes a bit fixed.", back: "\"Sorry — that was a cheap joke. It's a good car.\"", guideFront: "Apologise in one line when...", guideBack: "A plain apology, then back to them" },
+            { front: "Give Them the Out — they say, \"No, it's fine, it is a bit of a wreck.\"", back: "\"You don't have to make me feel better. I was out of order.\"", guideFront: "Hand the conversation back when...", guideBack: "A way out of laughing" },
+            { front: "Move Straight On — they say, \"It's been a rough few months, honestly.\"", back: "\"I didn't know. How are you doing with it all?\"", guideFront: "Carry on with the topic when...", guideBack: "The conversation, picked back up" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "In a team meeting, you joke that a colleague's project is \"the one nobody reads\". She has worked on it for a year.",
+          steps: [
+            { front: "Take It Back Cleanly — she looks down at her notes.", back: "\"Sorry, that came out wrong. It's good work.\"", guideFront: "Apologise in one line when...", guideBack: "A plain apology, then back to them" },
+            { front: "Give Them the Out — she says, \"It's fine, people do joke about it.\"", back: "\"It's not fine, and you don't need to cover for me.\"", guideFront: "Hand the conversation back when...", guideBack: "A way out of laughing" },
+            { front: "Move Straight On — she says, \"Well — the latest version is out next week.\"", back: "\"What's changed in it?\"", guideFront: "Carry on with the topic when...", guideBack: "The conversation, picked back up" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "At dinner, you tease your brother about still living at home. He has told nobody he has been trying to move out for months.",
+          steps: [
+            { front: "Take It Back Cleanly — he goes quiet and puts his fork down.", back: "\"Sorry. That was a stupid thing to joke about.\"", guideFront: "Apologise in one line when...", guideBack: "A plain apology, then back to them" },
+            { front: "Give Them the Out — he says, \"Nah, you're right, it's a bit sad.\"", back: "\"It's not sad, and I shouldn't have said it.\"", guideFront: "Hand the conversation back when...", guideBack: "A way out of laughing" },
+            { front: "Move Straight On — he says, \"I've been looking. It's just impossible round here.\"", back: "\"What have you been looking at?\"", guideFront: "Carry on with the topic when...", guideBack: "The conversation, picked back up" },
+          ]
+        },
+      ]
+    },
+  ],
 };

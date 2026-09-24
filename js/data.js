@@ -9462,6 +9462,120 @@ const collections = {
       ]
     },
   ],
+  calibratinghumour: [
+    {
+      name: "Land It Smaller",
+      guideFront: "Make it one size down when...",
+      guideBack: "A smaller version of the joke",
+      description: "Feel the big version coming, and say a smaller one. Instead of the five-line routine about the fire brigade, one light remark — or no joke at all this time. \"Smells great. Brave choice for a weeknight.\"\n\nIt works because a small joke asks very little of the room. A big one asks everyone to stop, watch and laugh, and if the room is tired, nervous or serious, that is a lot to ask. A small one can be enjoyed or ignored, and either is fine.\n\nSmall is not the same as weak. The smaller version is often the funnier one, because it trusts the other person to do some of the work.\n\nTypical phrases: \"Bold choice.\", \"Ooh, brave.\", \"Well, that's one way to start a Monday.\", \"Bring snacks.\"\n\nThree sizes down:\n\n1. The shorter version — one line instead of a routine. \"Ouch. I'll bring you a coffee at midnight.\"\n\n2. The softer version — the same idea, gentler aimed. \"Bold. I like it.\"\n\n3. No joke this time — just answer. When the room is wrong, the smallest joke is none. \"Is it a problem, or is it a shrug?\"\n\nMindset: a joke should be the right size for the room, not the right size for the idea.",
+      inputs: [
+        { q: "Your colleague has to redo the whole report, and a big \"see you at Christmas\" routine is forming.", a: "\"Ouch. I'll bring you a coffee at midnight.\"", bundle: 'free' },
+        { q: "Your friend says they are nervous about the lasagne. A fire brigade joke is ready.", a: "\"Smells great. Brave choice for a weeknight.\"", bundle: 'free' },
+        { q: "Nobody has joked yet in the meeting, and you have a whole routine about the new printer.", a: "\"At least the printer's consistent.\"", bundle: 'free' },
+        { q: "Your friend walks in with a dramatic new haircut, and a big joke is forming.", a: "\"Ooh, bold. I like it.\"", bundle: 'free' },
+        { q: "At dinner with your partner's parents, a long joke about her dad's driving is ready.", a: "\"I've heard you like a scenic route.\"", bundle: 'free' },
+        { q: "Your teammate misses an open goal, and a whole commentary is ready in your head.", a: "\"Unlucky. Next one's going in.\"", bundle: 'pro' },
+        { q: "A new colleague says they are from a tiny village. You can feel a routine coming.", a: "\"Oh nice — is there a pub, at least?\"", bundle: 'pro' },
+        { q: "You are giving a short birthday toast, with a long run of age jokes ready.", a: "\"Forty, and still the youngest person in the room. To Sam.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Commit to It",
+      guideFront: "Finish the line properly when...",
+      guideBack: "The line, said all the way",
+      description: "You have started a joke. Finish it — the whole line, in the same voice, without laughing halfway or trailing off into \"anyway\". \"No — properly. I'm getting you a camp bed and a little plant.\"\n\nIt works because a half-said joke is the one that really misses. The room cannot tell whether it was a joke, so nobody knows whether to laugh, and the awkwardness lands on everyone. The same line said all the way, with a straight face, gets at least a smile — even if the idea was only average.\n\nCommitting is not going bigger. It is saying the size you chose, all the way to the end.\n\nTypical phrases: \"No — properly:\", \"Let me say that again with dignity.\", \"I'm committing to this.\", \"Let me try that again.\"\n\nThree ways a joke goes half-said:\n\n1. It trails off — pick it up and finish. \"No, I'll finish: one tractor, and it's the mayor.\"\n\n2. You laugh in the middle — start again, straight. \"Let me try that again with dignity.\"\n\n3. You lose your nerve — say it anyway, in the same size. \"Seven out of ten. Needs garlic.\"\n\nMindset: if it is worth starting, it is worth finishing. The half-said version is the risky one.",
+      inputs: [
+        { q: "You start a line about your colleague moving into the office to redo the report, then trail off.", a: "\"No — properly. I'm getting you a camp bed and a little plant.\"", bundle: 'free' },
+        { q: "You start judging your friend's lasagne like a cooking show, then lose your nerve.", a: "\"No, I'm doing this. Seven out of ten. Needs garlic. Eight.\"", bundle: 'free' },
+        { q: "You start a mock announcement about the printer in the meeting, then mumble.", a: "\"Let me do it right: the printer has asked for a week off.\"", bundle: 'free' },
+        { q: "You start teasing your friend about the haircut, then back down halfway.", a: "\"No, I'm committing: it's very expensive-looking. Like a nice hedge.\"", bundle: 'free' },
+        { q: "Her dad jokes about his own driving, and your reply trails off.", a: "\"Say it properly: you drove me to the station via Scotland.\"", bundle: 'free' },
+        { q: "You start a mock commentary on your teammate's miss, then laugh halfway through.", a: "\"Let me try that again with dignity: and he's put it into orbit.\"", bundle: 'pro' },
+        { q: "You start a bit about the new colleague's village having one tractor, then mumble \"anyway\".", a: "\"No, I'll finish: one tractor, and it's the mayor's.\"", bundle: 'pro' },
+        { q: "The one age joke in your birthday toast for Sam comes out half-hearted.", a: "\"Let me say that properly: Sam, forty years old and still can't parallel park.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Move Straight On",
+      guideFront: "Carry on with the topic when...",
+      guideBack: "The conversation, picked back up",
+      description: "The joke got a flat look, a polite \"ha\", or nothing. Do not repair it. Just carry on with the conversation as if it was a small thing — because it was. \"Anyway — which part do they want changed?\"\n\nIt works because most missed jokes are only as big as the fuss made about them. The other person has already forgotten it by the time you finish worrying. An explanation, a second try or a wince makes it a moment; carrying on lets it vanish.\n\nIt also shows something useful: that you were interested in them, not in the laugh.\n\nTypical phrases: \"Anyway —\", \"So what's the plan?\", \"Where did you get it done?\", \"Come on, let's go again.\"\n\nThree things to move on to:\n\n1. Their topic — go back to what they were saying. \"So which part do they want changed?\"\n\n2. A real question — show you meant the conversation. \"How are you finding the city?\"\n\n3. The next thing — in a group, just go to the next point. \"On the budget — I've got the numbers.\"\n\nMindset: a missed joke is a very small event. Treat it like one.",
+      inputs: [
+        { q: "Your \"see you at Christmas\" line about the report gets a tired half-smile.", a: "\"Anyway — which part do they want changed?\"", bundle: 'free' },
+        { q: "Your smoke alarm joke about the lasagne gets a polite nod.", a: "\"So where did you get the recipe?\"", bundle: 'free' },
+        { q: "Your printer joke gets nothing, and your manager moves to the next point.", a: "\"On the budget — I've got the numbers here.\"", bundle: 'free' },
+        { q: "Your joke about the haircut gets a flat \"thanks\".", a: "\"Where did you get it done?\"", bundle: 'free' },
+        { q: "Your joke about her dad's driving gets a polite silence.", a: "\"This is lovely, by the way. Is it your recipe?\"", bundle: 'free' },
+        { q: "Your joke about the missed open goal gets a shrug from your teammate.", a: "\"Come on, still time. Let's go again.\"", bundle: 'pro' },
+        { q: "Your village joke gets a polite \"ha\" from the new colleague.", a: "\"How are you finding the city?\"", bundle: 'pro' },
+        { q: "The age joke that opens your birthday toast for Sam gets a thin laugh.", a: "\"But really — Sam, you're the person we all call first. To you.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name That It Missed",
+      guideFront: "Say it didn't land when...",
+      guideBack: "A light admission, then onward",
+      description: "The silence has gone on a beat too long. Say, lightly, that the joke did not land — then move on. \"That was funnier in my head.\"\n\nIt works because everybody noticed, and naming it lets everyone off the hook. The tension in a flat moment comes from the unspoken question of whether to acknowledge it. One light line answers it, gets a small laugh of relief, and closes it.\n\nKeep it to one line and keep it light. The admission is not an apology — nothing bad happened — and it is not a second joke you need to land.\n\nTypical phrases: \"That was funnier in my head.\", \"Swing and a miss.\", \"Tough crowd.\", \"That one's staying in my notes.\"\n\nThree ways to name it:\n\n1. The head — \"That was funnier in my head.\"\n\n2. The sports line — \"Swing and a miss. Moving on.\"\n\n3. The crowd — only with people who know you. \"Tough crowd. Right — the budget.\"\n\nMindset: naming the miss is how you show it did not bother you. Then it stops bothering anyone.",
+      inputs: [
+        { q: "Your joke about the report gets silence in the office kitchen.", a: "\"That was funnier in my head. Is it the whole thing?\"", bundle: 'free' },
+        { q: "Your fire brigade joke about the lasagne lands in silence at the table.", a: "\"That was funnier in my head. It smells great, honestly.\"", bundle: 'free' },
+        { q: "Your printer joke meets complete silence around the meeting table.", a: "\"Tough crowd. Right — the budget.\"", bundle: 'free' },
+        { q: "Your joke about the haircut gets a blank look.", a: "\"That sounded better in my head. It really suits you.\"", bundle: 'free' },
+        { q: "Your joke about her dad's driving gets a cough from her mum.", a: "\"I'll stick to complimenting the food. This is lovely.\"", bundle: 'free' },
+        { q: "Your commentary on your teammate's missed goal gets nothing from anyone.", a: "\"Yeah, that one missed as well. Come on.\"", bundle: 'pro' },
+        { q: "Your village joke gets a long pause from the new colleague.", a: "\"Swing and a miss. Where is it, actually?\"", bundle: 'pro' },
+        { q: "Your age joke in the birthday toast gets silence from the room.", a: "\"That one's staying in my notes. Anyway — to Sam.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Give Them the Out",
+      guideFront: "Hand the conversation back when...",
+      guideBack: "A way out of laughing",
+      description: "The other person does not know how to react — laugh, protest, or take it seriously. Take the question away from them: say you were joking, and hand them the conversation. \"Ignore me. How bad is it, really?\"\n\nIt works because an unclear joke puts the other person in an awkward spot. If they laugh, they might be laughing at themselves; if they do not, they look humourless. Most people freeze. Letting them off makes it easy to answer the real conversation instead.\n\nThe out is for them, not you. It is not about whether the joke was good — it is about not leaving them holding it.\n\nTypical phrases: \"Ignore me.\", \"I'm joking — …\", \"You don't have to laugh at that.\", \"Serious answer:\"\n\nThree ways to give the out:\n\n1. Say it was a joke, then ask — \"I'm joking — I like it. Was it a big change?\"\n\n2. Tell them they do not have to laugh — \"Don't worry, you don't have to laugh. The printer's fine.\"\n\n3. Ask the real question — \"Forget it. How are you doing, really?\"\n\nMindset: nobody should have to work out whether they were the joke. Tell them.",
+      inputs: [
+        { q: "Your colleague is trying to smile at your report joke, and is clearly not in the mood.", a: "\"Ignore me. How bad is it, really?\"", bundle: 'free' },
+        { q: "Your friend looks unsure whether your lasagne joke means it is bad.", a: "\"I'm messing about. It's really good — how did you make it?\"", bundle: 'free' },
+        { q: "In the meeting, a new colleague laughs nervously at your printer joke, unsure if they should.", a: "\"Don't worry, you don't have to laugh. The printer's actually fine.\"", bundle: 'free' },
+        { q: "Your friend cannot tell whether your haircut joke means you hate it.", a: "\"I'm joking — I like it. Was it a big change for you?\"", bundle: 'free' },
+        { q: "Her dad is not sure whether your driving joke was a dig.", a: "\"I'm teasing — you got us here in one piece. How long have you had the car?\"", bundle: 'free' },
+        { q: "Your teammate stands there, not sure whether to laugh at your joke about the miss.", a: "\"Forget it — you'll score the next one.\"", bundle: 'pro' },
+        { q: "The new colleague laughs, but looks unsure if you were making fun of them.", a: "\"I'm just curious, really. Do you miss it?\"", bundle: 'pro' },
+        { q: "Sam looks awkward at the age joke in your birthday toast, with everyone watching.", a: "\"I'm only jealous. Raise your glasses — to Sam.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Take It Back Cleanly",
+      guideFront: "Apologise in one line when...",
+      guideBack: "A plain apology, then back to them",
+      description: "The joke hit something real — a sore point, a worry, something you did not know about. Take it back in one plain sentence, without a joke, and turn back to them. \"Sorry, that was a stupid thing to joke about. What do you need?\"\n\nIt works because the harm is small if it is fixed fast and plainly. What makes it bigger is the defence — \"I was only joking\", \"you know I didn't mean it\" — which asks them to reassure you. A clean take-back asks them for nothing.\n\nClean means three things: short, serious, and followed by interest in them rather than in how you feel about it.\n\nTypical phrases: \"Sorry — that came out wrong.\", \"That was a cheap shot.\", \"I didn't know. That was thoughtless.\", \"Forget the joke. What's going on?\"\n\nThree parts, in order:\n\n1. Say it plainly — \"Sorry, that was a cheap shot.\"\n\n2. Say the true thing — \"It looks good, honestly.\"\n\n3. Turn to them — \"What's going on with it?\"\n\nMindset: take it back fast and plainly, and do not ask them to make you feel better about it.",
+      inputs: [
+        { q: "Your colleague goes quiet after your joke. The report is the thing their job depends on.", a: "\"Sorry, that was a stupid thing to joke about. What do you need?\"", bundle: 'free' },
+        { q: "You joked about the lasagne, and your friend clearly spent all day on it.", a: "\"Sorry — that came out wrong. It's lovely, and I know it was a lot of work.\"", bundle: 'free' },
+        { q: "Your printer joke lands on the person who chose the printer.", a: "\"Sorry, that wasn't aimed at you. It's working fine, mostly.\"", bundle: 'free' },
+        { q: "Your friend touches their new haircut after your joke. They were already worried about it.", a: "\"Sorry, that was a cheap shot. It looks good, honestly.\"", bundle: 'free' },
+        { q: "Your partner kicks you under the table after the driving joke. Her dad had a crash last year.", a: "\"Sorry — I didn't know. That was thoughtless of me.\"", bundle: 'free' },
+        { q: "Your teammate snaps at your joke about the missed goal. They have had a terrible week.", a: "\"Sorry, bad timing. Ignore me.\"", bundle: 'pro' },
+        { q: "The new colleague goes quiet after your village joke. They are sensitive about where they are from.", a: "\"Sorry, that was a lazy joke. I'd like to hear about it.\"", bundle: 'pro' },
+        { q: "Your age joke in the birthday toast lands on Sam, who has been struggling with turning forty.", a: "\"Joking aside — Sam, this has been a big year, and you've been brilliant.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stop the Bit",
+      guideFront: "Wrap it up when...",
+      guideBack: "The last line, then something real",
+      description: "The bit worked, and now it is running out. End it while it is still good — one last line if you have it, then something real. \"Right, I'm done. Seriously — want a hand with the tables?\"\n\nIt works because every running joke has a shelf life, and the person enjoying it most is usually the one telling it. The laughs shrink before the teller notices. Stopping early leaves a good memory; stopping late leaves the moment where everyone was waiting.\n\nThe sign to watch is not silence. It is the smaller laugh, the change of subject, the one person who has stopped smiling.\n\nTypical phrases: \"Right, I'm done.\", \"I'll stop while I'm ahead.\", \"That's my last one, I promise.\", \"Okay, out of character now.\"\n\nThree signs it has run out:\n\n1. The laughs are shrinking — \"I'll stop while I'm ahead. What's the plan?\"\n\n2. Someone tried to change the subject — \"Sorry, yes — you were saying?\"\n\n3. You are the only one still in it — \"Okay, out of character now. Genuinely, that's a pain.\"\n\nMindset: stop while it is still good. The last joke is the one people remember.",
+      inputs: [
+        { q: "Your Christmas jokes about the report are on their fourth round.", a: "\"Right, I'm done. Seriously — want a hand with the tables?\"", bundle: 'free' },
+        { q: "The table has been doing lasagne jokes for ten minutes, and your friend has stopped laughing.", a: "\"Okay, enough lasagne material. It's the best thing I've eaten this week.\"", bundle: 'free' },
+        { q: "You have made three printer jokes in the meeting, and a fourth is ready.", a: "\"That's my last printer joke, I promise. Where were we?\"", bundle: 'free' },
+        { q: "You have made three haircut jokes, and your friend has stopped smiling.", a: "\"Okay, I'm done with the hair. It really suits you.\"", bundle: 'free' },
+        { q: "Her dad loved the first driving joke, and you have done three more.", a: "\"I'll stop before I'm walking home. Thanks for dinner.\"", bundle: 'free' },
+        { q: "After the match, you bring up your teammate's missed open goal for the third time.", a: "\"Okay, the miss is officially retired. Good game.\"", bundle: 'pro' },
+        { q: "You are on your fourth village joke of the week with the new colleague.", a: "\"I'm retiring the village jokes. What's it actually like there?\"", bundle: 'pro' },
+        { q: "Your birthday toast has had four age jokes, and people are shifting in their seats.", a: "\"I'll stop there. To Sam.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -13770,6 +13884,56 @@ const collectionsModeData = {
         { q: "A trainer has explained the exercise twice already.", a: "\"That's me, I'm not getting it — could you show me once?\" [Own the Miss]", bundle: 'pro', guideBack: "The question, with the blame on you" },
         { q: "Near the end of a long story, you realise you never found out who Tom was.", a: "\"Before you go on — who was Tom?\" [Come Back to It]", bundle: 'pro', guideBack: "A step back to the earlier point" },
         { q: "A shop assistant says your size is \"at the other store\".", a: "\"The one on the high street?\" [Offer Your Best Guess]", bundle: 'pro', guideBack: "A guess they can say yes to" },
+      ]
+    },
+  ],
+  calibratinghumour: [
+    {
+      name: "Size the Joke",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Land It Smaller**, **Commit to It** and **Stop the Bit** — the three strategies for getting the size right, before and during.\n\n• **Land It Smaller** — the joke in your head is bigger than the room can take\n• **Commit to It** — you started it and are about to let it trail off\n• **Stop the Bit** — it worked, and it is running out\n\nThe question that decides it: is it too big, too small, or too long?\n\nThe usual wrong choice is to go smaller by trailing off. A half-said joke is not a small joke — it is an unclear one. Pick a size, and say it all the way.\n\nMindset: the right size is the one the room can take, said all the way to the end.",
+      inputs: [
+        { q: "Your friend is stressed about moving house, and a big removal-van routine is forming.", a: "\"Ouch. I'll bring pizza and a strong back.\" [Land It Smaller]", bundle: 'pro', guideBack: "A smaller version of the joke" },
+        { q: "You start calling your flatmate \"the landlord\" for fixing the tap, then mumble.", a: "\"No — properly. Thank you, landlord. Your rent is in the post.\" [Commit to It]", bundle: 'pro', guideBack: "The line, said all the way" },
+        { q: "The whole evening has been jokes about your friend's terrible sat nav.", a: "\"Right, sat nav retired. How was the actual trip?\" [Stop the Bit]", bundle: 'pro', guideBack: "The last line, then something real" },
+        { q: "A colleague is anxious about a presentation, and you have a joke about fainting on stage.", a: "\"You'll be great. Just don't mention the budget.\" [Land It Smaller]", bundle: 'pro', guideBack: "A smaller version of the joke" },
+        { q: "You laugh halfway through your own line about your sister's cooking.", a: "\"Let me try that with a straight face: it's very… brave soup.\" [Commit to It]", bundle: 'pro', guideBack: "The line, said all the way" },
+        { q: "Someone tries to change the subject, and you go back to the bit.", a: "\"Sorry, yes — you were saying?\" [Stop the Bit]", bundle: 'pro', guideBack: "The last line, then something real" },
+        { q: "Your friend has just been dumped, and a joke about his ex is ready.", a: "\"That's rubbish. Want to get food?\" [Land It Smaller]", bundle: 'pro', guideBack: "A smaller version of the joke" },
+        { q: "Your running joke about your boss's ties got a big laugh on Monday. It is now Thursday.", a: "\"I'll stop while I'm ahead. The ties can rest.\" [Stop the Bit]", bundle: 'pro', guideBack: "The last line, then something real" },
+      ]
+    },
+    {
+      name: "After a Miss",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Move Straight On**, **Name That It Missed**, **Give Them the Out** and **Take It Back Cleanly** — four repairs, from the lightest to the most serious.\n\n• **Move Straight On** — it fell flat, and nobody minds much\n• **Name That It Missed** — the silence is long enough that everyone noticed\n• **Give Them the Out** — they do not know how to react\n• **Take It Back Cleanly** — it hit something real\n\nThe question that decides it: who did it land on — the room, or the person? If the room, the first two. If the person, the last two.\n\nThe usual wrong choice is explaining the joke. It is the one repair that makes a flat joke flatter.\n\nMindset: repair it at the size it went wrong — no bigger.",
+      inputs: [
+        { q: "Your joke about the weather gets a polite smile from the shop assistant.", a: "\"Anyway — do you have this in a medium?\" [Move Straight On]", bundle: 'pro', guideBack: "The conversation, picked back up" },
+        { q: "Your pun in the group chat gets no replies at all for ten minutes.", a: "\"Okay, that one's going in the bin.\" [Name That It Missed]", bundle: 'pro', guideBack: "A light admission, then onward" },
+        { q: "Your new neighbour cannot tell whether your joke about their loud music was a complaint.", a: "\"I'm joking — it's fine. What was it, though? It was good.\" [Give Them the Out]", bundle: 'pro', guideBack: "A way out of laughing" },
+        { q: "Your joke about a friend's job lands badly. They have just been told it might go.", a: "\"Sorry — that was a stupid thing to say. How are you doing with it?\" [Take It Back Cleanly]", bundle: 'pro', guideBack: "A plain apology, then back to them" },
+        { q: "Your joke at the start of a work call gets a pause.", a: "\"Tough crowd. Right — the first item.\" [Name That It Missed]", bundle: 'pro', guideBack: "A light admission, then onward" },
+        { q: "Your dad takes your joke about his phone as a real criticism.", a: "\"I'm messing about. Show me how you set it up.\" [Give Them the Out]", bundle: 'pro', guideBack: "A way out of laughing" },
+        { q: "Your joke about the long queue gets a blank look from the person next to you.", a: "\"Have you been waiting long?\" [Move Straight On]", bundle: 'pro', guideBack: "The conversation, picked back up" },
+        { q: "You joke about your friend's weight gain, and their face drops.", a: "\"Sorry. That was out of order, and it's not even true.\" [Take It Back Cleanly]", bundle: 'pro', guideBack: "A plain apology, then back to them" },
+      ]
+    },
+    {
+      name: "All Seven Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order real jokes go wrong rather than the order they were taught.\n\nThe seven fall into two groups. Three are about size: **Land It Smaller** before, **Commit to It** during, **Stop the Bit** when it runs out. Four are repairs, from light to serious: **Move Straight On**, **Name That It Missed**, **Give Them the Out** and **Take It Back Cleanly**.\n\nIf you are unsure, ask two things: is this about the size of the joke, or about what it did? And if it did something — did it land on the room, or on the person?\n\nMindset: the aim is humour nobody has to pay for.",
+      inputs: [
+        { q: "Your friend's cat has just died, and a joke about nine lives is on the tip of your tongue.", a: "\"I'm so sorry. How old was she?\" [Land It Smaller]", bundle: 'pro', guideBack: "A smaller version of the joke" },
+        { q: "You start a mock-serious speech about who ate the last biscuit, then give up halfway.", a: "\"No — I'll finish: the evidence points to one person, and it's me.\" [Commit to It]", bundle: 'pro', guideBack: "The line, said all the way" },
+        { q: "Your joke about the traffic gets a nod and nothing else from the taxi driver.", a: "\"Is it always this busy on a Friday?\" [Move Straight On]", bundle: 'pro', guideBack: "The conversation, picked back up" },
+        { q: "Your joke in the quiz team falls into total silence.", a: "\"That was funnier in my head. Next question.\" [Name That It Missed]", bundle: 'pro', guideBack: "A light admission, then onward" },
+        { q: "The intern laughs nervously at your joke about interns, unsure if it was about them.", a: "\"Not about you, promise. How's the first week going?\" [Give Them the Out]", bundle: 'pro', guideBack: "A way out of laughing" },
+        { q: "Your joke about your friend's accent lands, and then you see they are hurt.", a: "\"Sorry, that was lazy of me. I like how you talk.\" [Take It Back Cleanly]", bundle: 'pro', guideBack: "A plain apology, then back to them" },
+        { q: "The running joke about your brother's cooking is on its sixth outing tonight.", a: "\"Okay, the cooking jokes are done. This is good, actually.\" [Stop the Bit]", bundle: 'pro', guideBack: "The last line, then something real" },
+        { q: "Your joke about the office party gets an awkward laugh from your manager, who organised it.", a: "\"I'm joking — it was a good night. Thanks for sorting it.\" [Give Them the Out]", bundle: 'pro', guideBack: "A way out of laughing" },
       ]
     },
   ],

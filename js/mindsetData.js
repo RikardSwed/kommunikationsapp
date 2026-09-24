@@ -6935,4 +6935,102 @@ const mindsetCollections = {
       ]
     },
   ],
+  calibratinghumour: [
+    {
+      name: "The Calibrating Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If the joke misses, I've made a fool of myself.\" The pack-wide belief that every joke is a test you pass or fail.\n\nWhat is true instead: a joke is a small offer. Most misses are forgotten within a minute, unless the person who told it makes them bigger.\n\nIt feels reasonable because a flat silence is genuinely uncomfortable, and it feels like everyone is looking at you.\n\nWhat it costs is either no humour at all, or humour that is always a bit too big — trying to guarantee the laugh.\n\nMindset: offer it lightly, and let it land or not.",
+      inputs: [
+        { q: "If the joke misses, I've made a fool of myself.", a: "\"A joke that misses is gone in a minute, unless I keep it alive.\"", bundle: 'pro' },
+        { q: "Everyone is waiting to see if I'm funny.", a: "\"They're mostly waiting to get on with the conversation.\"", bundle: 'pro' },
+        { q: "I need to win the room back after that.", a: "\"The room was never lost; it just didn't laugh once.\"", bundle: 'pro' },
+        { q: "A good joke has to get a big laugh.", a: "\"A smile and a carry-on is a joke that worked.\"", bundle: 'pro' },
+        { q: "If I'm careful with humour, I'll be boring.", a: "\"The right size is not the careful size; it's the one that fits.\"", bundle: 'pro' },
+        { q: "I should know in advance whether it'll land.", a: "\"I can't know that, so I'll keep it small enough not to matter.\"", bundle: 'pro' },
+        { q: "One bad joke and they'll think I'm not funny.", a: "\"Nobody keeps score of my jokes except me.\"", bundle: 'pro' },
+        { q: "I'd better explain it so they get it.", a: "\"If it needs explaining, the best move is to let it go.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Flat Joke",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"That silence was a disaster.\" The belief that a joke falling flat is a real social failure that needs fixing.\n\nWhat is true instead: a flat joke is a very small event. The fixing is usually what makes it big.\n\nIt feels reasonable because silence after a joke is loud from the inside. You hear every second of it; they barely notice.\n\nWhat it costs is the over-repair — the explanation, the second try, the visible wince — which turns a flat second into an awkward minute.\n\nMindset: small miss, small repair, or none.",
+      inputs: [
+        { q: "That silence was a disaster.", a: "\"It was two seconds, and I'm the only one still thinking about it.\"", bundle: 'pro' },
+        { q: "I have to fix this before we move on.", a: "\"Moving on is the fix.\"", bundle: 'pro' },
+        { q: "They must think I'm an idiot now.", a: "\"They think I made a joke that didn't work, which everyone does.\"", bundle: 'pro' },
+        { q: "I should try another one straight away.", a: "\"Another one right now is how one miss becomes two.\"", bundle: 'pro' },
+        { q: "If I just explain it, they'll laugh.", a: "\"Nobody has ever laughed at an explanation.\"", bundle: 'pro' },
+        { q: "I'll be quiet for the rest of the evening.", a: "\"Going quiet makes the miss bigger than the miss did.\"", bundle: 'pro' },
+        { q: "That was the worst thing I could have said.", a: "\"It was a flat joke, not a cruel one, and it's already gone.\"", bundle: 'pro' },
+        { q: "I need to apologise for that joke.", a: "\"Nothing was hurt, so there's nothing to apologise for — just carry on.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Funny One",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'm the funny one. People expect it from me.\" A belief that feels like a gift, and often is one.\n\nWhat is true instead: being the funny one is a role, and roles can stop you listening. The joke becomes the job, even when the moment wants something else.\n\nIt feels reasonable because people do enjoy it, and it has probably made you welcome in a lot of rooms.\n\nWhat it costs is quiet: the conversations where someone needed you to be serious, and got a bit instead.\n\nMindset: I can be the funny one and still choose when not to be.",
+      inputs: [
+        { q: "I'm the funny one; people expect it from me.", a: "\"And sometimes what they need is the other thing I can do.\"", bundle: 'pro' },
+        { q: "I can always lighten the mood.", a: "\"Which means I sometimes lighten a mood that needed to stay heavy for a minute.\"", bundle: 'pro' },
+        { q: "A joke is my way of showing I care.", a: "\"And sometimes the person can't tell that's what it is.\"", bundle: 'pro' },
+        { q: "I always have a line ready.", a: "\"So I sometimes say it before I've heard what they meant.\"", bundle: 'pro' },
+        { q: "People like having me around because I'm funny.", a: "\"They might like me just as much when I'm listening.\"", bundle: 'pro' },
+        { q: "I'm good at keeping the bit going.", a: "\"Which is why I'm usually the last to notice it's finished.\"", bundle: 'pro' },
+        { q: "Humour gets me through awkward moments.", a: "\"And it gets me out of the moments I should have stayed in.\"", bundle: 'pro' },
+        { q: "I never let a conversation go flat.", a: "\"So nobody gets the quiet moment where they might have said something real.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Going Big",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"The bigger the joke, the bigger the laugh.\" Half true, which is why it is hard to let go of.\n\nWhat is true: a committed, full-sized joke often gets more than a hesitant one, and timid humour is rarely funny.\n\nWhat gets added is the step from \"said fully\" to \"made bigger\": that more words, more volume and more rounds will always get more laughs.\n\nWhat it costs is the big joke in the wrong room, and the bit that ran three rounds too long.\n\nMindset: keep the commitment. Drop the idea that bigger is always better.",
+      inputs: [
+        { q: "The bigger the joke, the bigger the laugh.", a: "\"True, when the room is ready — but 'always go bigger' is the part I added.\"", bundle: 'pro' },
+        { q: "Half-hearted jokes never work.", a: "\"True — but 'so every joke has to be huge' is the part I added.\"", bundle: 'pro' },
+        { q: "If it got a laugh once, it'll get one again.", a: "\"True, once or twice — but 'so I should keep going' is the part I added.\"", bundle: 'pro' },
+        { q: "Timid humour is boring.", a: "\"True — but 'so small humour is timid' is the part I added.\"", bundle: 'pro' },
+        { q: "People like it when I commit to a bit.", a: "\"True — but 'so I should never stop' is the part I added.\"", bundle: 'pro' },
+        { q: "The best jokes take a risk.", a: "\"True — but 'so the risk should be someone else's feelings' is the part I added.\"", bundle: 'pro' },
+        { q: "A quiet room needs someone to go big.", a: "\"True, sometimes — but 'so it should be me, right now' is the part I added.\"", bundle: 'pro' },
+        { q: "Big energy is what makes me fun.", a: "\"True, often — but 'so every room wants it' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Taking It Back",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I apologise, I'm admitting I meant it.\" The belief that taking a joke back makes it worse.\n\nWhat is true instead: a plain apology closes it. What keeps it open is the defence — \"I was only joking\" — which asks them to reassure you.\n\nIt feels reasonable because you did not mean harm, and apologising feels like confessing that you did.\n\nWhat it costs is the other person carrying the hurt alone, and the friendship carrying a small bruise nobody mentions.\n\nMindset: not meaning it and being sorry it landed are both true at once.",
+      inputs: [
+        { q: "If I apologise, I'm admitting I meant it.", a: "\"I can not mean it and still be sorry it landed.\"", bundle: 'pro' },
+        { q: "They're being too sensitive.", a: "\"Maybe, but it hit something, and one sentence costs me nothing.\"", bundle: 'pro' },
+        { q: "Saying sorry makes a big deal of it.", a: "\"One plain sentence is the smallest this can be.\"", bundle: 'pro' },
+        { q: "I was only joking — they know that.", a: "\"They know it was a joke; what they don't know is whether I care that it hurt.\"", bundle: 'pro' },
+        { q: "If I say something, it'll be awkward.", a: "\"It's already awkward, and I'm the one who can end it.\"", bundle: 'pro' },
+        { q: "It's better to just laugh it off.", a: "\"Laughing it off is asking them to laugh at it too.\"", bundle: 'pro' },
+        { q: "They said it's fine, so it's fine.", a: "\"They said it's fine to make it easier for me; I can make it easier for them.\"", bundle: 'pro' },
+        { q: "I'll make it up to them with a nicer joke later.", a: "\"A nicer joke later doesn't take back this one; a sentence now does.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Holding Back",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Better not to joke at all than risk it.\" The belief that the safe choice is no humour.\n\nWhat is true instead: a small joke, said all the way, is very low risk. What goes wrong is the half-said one, not the one you chose.\n\nIt feels reasonable because you have seen jokes land badly, maybe your own, and silence cannot offend anyone.\n\nWhat it costs is a lot of warmth. Humour is one of the fastest ways people get close, and staying out of it keeps you at a distance.\n\nMindset: choose a small one, and say it properly.",
+      inputs: [
+        { q: "Better not to joke at all than risk it.", a: "\"A small joke, said properly, is barely a risk at all.\"", bundle: 'pro' },
+        { q: "I'm not funny enough to try.", a: "\"I don't need to be funny, just light for a second.\"", bundle: 'pro' },
+        { q: "If I start a joke, I might not be able to finish it.", a: "\"Then I'll pick one short enough to finish.\"", bundle: 'pro' },
+        { q: "I'll wait until I know them better.", a: "\"A bit of humour is part of how I get to know them.\"", bundle: 'pro' },
+        { q: "Someone else will make the joke.", a: "\"Maybe, but it's also fine if it's me.\"", bundle: 'pro' },
+        { q: "My jokes always come out wrong.", a: "\"They come out wrong when I say half of them; I'll say the whole thing.\"", bundle: 'pro' },
+        { q: "Serious is safer at work.", a: "\"Serious all the time is safer and colder, and I can be both.\"", bundle: 'pro' },
+        { q: "If it doesn't land, I won't know what to do.", a: "\"I do know: carry on, or say it missed.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
