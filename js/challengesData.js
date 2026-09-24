@@ -7260,4 +7260,250 @@ const challengesCollections = {
       ]
     },
   ],
+  alexandergrace4: [
+    {
+      name: "The Growing List",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Something has bothered you more than once, and you've said nothing. You notice a list forming in your head.\n\nWhat goes wrong is the late version. When it finally comes out, it arrives with all the examples at once, and it sounds like a case against her.\n\n**Name It Early** is the main move — the next time, in one sentence. **Suggest What to Do Instead** to end with a plan.\n\nThe one thing to avoid: \"And another thing…\"\n\nMindset: one sentence now, not a list later.",
+      inputs: [
+        { q: "She's left the lights on all over the house again.", a: "\"Small one — lights off when we leave a room? It's adding up on the bill.\" [Name It Early]", bundle: 'pro', guideBack: "A small thing, said while small" },
+        { q: "You're about to list five times she's been late.", a: "\"Just tonight's. Can you text me when you're running late?\" [Suggest What to Do Instead]", bundle: 'pro', guideBack: "Something they could do next time" },
+        { q: "She takes calls on speaker while you're watching a film — second time.", a: "\"Can I mention the calls? I'd rather say it now.\" [Name It Early]", bundle: 'pro', guideBack: "A small thing, said while small" },
+        { q: "You've been quiet for a week about her borrowing your car.", a: "\"I should've said this last week: can you ask before taking the car?\" [Name It Early]", bundle: 'pro', guideBack: "A small thing, said while small" },
+        { q: "She says, \"Why are you bringing this up now?\"", a: "\"Because it's still small, and I want it to stay that way.\" [Name It Early]", bundle: 'pro', guideBack: "A small thing, said while small" },
+        { q: "She asks what you want her to do about it.", a: "\"Just leave the keys on the hook when you're done.\" [Suggest What to Do Instead]", bundle: 'pro', guideBack: "Something they could do next time" },
+        { q: "You've just realised you've been holding a grudge about the holiday plans.", a: "\"I've been sitting on something — the holiday. Can we talk?\" [Name It Early]", bundle: 'pro', guideBack: "A small thing, said while small" },
+        { q: "She keeps forgetting to lock the back door.", a: "\"Could you check the back door at night? It worries me.\" [Suggest What to Do Instead]", bundle: 'pro', guideBack: "Something they could do next time" },
+      ]
+    },
+    {
+      name: "In Front of Others",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "It happened with an audience — her friends, her family, your colleagues — and you want to answer right there.\n\nWhat goes wrong is the public reply. Everyone takes a side, she has to defend herself in front of people, and a small thing becomes a story they all tell later.\n\n**Later, Just the Two of You** is the main move. **Good Intent, Different Effect** when it was someone she cares about.\n\nThe one thing to avoid: a sharp comeback at the table.\n\nMindset: I choose where, not whether.",
+      inputs: [
+        { q: "She mocks your cooking in front of your friends.", a: "(You laugh along.) Later: \"Can we talk about the cooking joke?\" [Later, Just the Two of You]", bundle: 'pro', guideBack: "A calm word, afterwards, alone" },
+        { q: "Her friend asks how much you earn, at a party.", a: "\"Ha — pass. Tell me about your trip.\" Later, to her: \"That one felt a bit much.\" [Later, Just the Two of You]", bundle: 'pro', guideBack: "A calm word, afterwards, alone" },
+        { q: "Her father makes a joke about your career.", a: "Later: \"I know your dad was being friendly. It still stung.\" [Good Intent, Different Effect]", bundle: 'pro', guideBack: "What they meant, and what it did" },
+        { q: "You feel like correcting her story in front of everyone.", a: "(You let it go.) Later: \"I remember that trip differently — want to hear?\" [Later, Just the Two of You]", bundle: 'pro', guideBack: "A calm word, afterwards, alone" },
+        { q: "She brings up your argument at dinner with friends.", a: "\"Let's leave that for home.\" [Later, Just the Two of You]", bundle: 'pro', guideBack: "A calm word, afterwards, alone" },
+        { q: "Her sister keeps asking when you'll propose, in front of the family.", a: "Later: \"I know your sister's excited for us. It put me on the spot.\" [Good Intent, Different Effect]", bundle: 'pro', guideBack: "What they meant, and what it did" },
+        { q: "She asks why you went quiet at the party.", a: "\"Someone said something I didn't want to answer there. Can I tell you now?\" [Later, Just the Two of You]", bundle: 'pro', guideBack: "A calm word, afterwards, alone" },
+        { q: "Her best friend criticises your clothes, laughing.", a: "Later: \"I think she meant it as teasing. It came across as a dig.\" [Good Intent, Different Effect]", bundle: 'pro', guideBack: "What they meant, and what it did" },
+      ]
+    },
+    {
+      name: "She Meant Well",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Someone did something that bothered you — her, her mother, her friends — and you're fairly sure they meant it kindly.\n\nWhat goes wrong is choosing only one half. Say only the effect and she defends them. Say only the good intention and nothing changes.\n\n**Good Intent, Different Effect** is the main move. **Suggest What to Do Instead** to end with something that would work better.\n\nThe one thing to avoid: \"Why do they always do this?\"\n\nMindset: meant well and didn't work — both can be true.",
+      inputs: [
+        { q: "Her mum reorganised your kitchen while you were out.", a: "\"I know she was trying to help. I can't find anything, though.\" [Good Intent, Different Effect]", bundle: 'pro', guideBack: "What they meant, and what it did" },
+        { q: "She signed you up for a fun run as a surprise.", a: "\"That's thoughtful of you. I'd have liked to be asked — I hate running.\" [Good Intent, Different Effect]", bundle: 'pro', guideBack: "What they meant, and what it did" },
+        { q: "Her friends set you up with a \"helpful\" budget talk.", a: "\"I know they meant well. It felt like I was being managed.\" [Good Intent, Different Effect]", bundle: 'pro', guideBack: "What they meant, and what it did" },
+        { q: "She asks what would have been better.", a: "\"Ask me first next time, and I'll probably say yes.\" [Suggest What to Do Instead]", bundle: 'pro', guideBack: "Something they could do next time" },
+        { q: "Her brother gave you unasked-for advice about your business.", a: "\"I appreciate that he cares. It felt like he thought I didn't know what I was doing.\" [Good Intent, Different Effect]", bundle: 'pro', guideBack: "What they meant, and what it did" },
+        { q: "You're about to say, \"Why do your family always interfere?\"", a: "\"I know they care. This time it didn't quite work for me.\" [Good Intent, Different Effect]", bundle: 'pro', guideBack: "What they meant, and what it did" },
+        { q: "She bought you clothes she thought would suit you.", a: "\"Thank you for thinking of me. Can we shop together next time?\" [Suggest What to Do Instead]", bundle: 'pro', guideBack: "Something they could do next time" },
+        { q: "She told her friends about your promotion before you'd told anyone.", a: "\"I know you were proud, and I love that. I wanted to tell them myself.\" [Good Intent, Different Effect]", bundle: 'pro', guideBack: "What they meant, and what it did" },
+      ]
+    },
+    {
+      name: "The Hint",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She's upset, and instead of saying why, she's hinting — sighing, going quiet, saying \"you should know\".\n\nWhat goes wrong is guessing. You guess the wrong thing, apologise for the wrong thing, and now she's upset about two things.\n\n**Ask Her to Spell It Out** is the main move. **Say How It Lands** if the guessing itself is becoming the problem.\n\nThe one thing to avoid: \"What have I done now?\"\n\nMindset: I can ask her to say it, because I want to get it right.",
+      inputs: [
+        { q: "She says, \"You know what you did.\"", a: "\"I really don't. Tell me, and I'll listen.\" [Ask Her to Spell It Out]", bundle: 'pro', guideBack: "An open door to say it plainly" },
+        { q: "She sighs loudly every time you pick up your phone.", a: "\"Is the phone bothering you? Say so — I'd rather know.\" [Ask Her to Spell It Out]", bundle: 'pro', guideBack: "An open door to say it plainly" },
+        { q: "You're about to say, \"What have I done now?\"", a: "\"Something's wrong, and I want to help. What is it?\" [Ask Her to Spell It Out]", bundle: 'pro', guideBack: "An open door to say it plainly" },
+        { q: "She says, \"If you loved me, you'd know.\"", a: "\"I do, and I still can't read your mind. Please tell me.\" [Ask Her to Spell It Out]", bundle: 'pro', guideBack: "An open door to say it plainly" },
+        { q: "This is the third week of hints about the same thing.", a: "\"When it comes as hints, I feel like I'm always failing a test.\" [Say How It Lands]", bundle: 'pro', guideBack: "The effect, without the accusation" },
+        { q: "She says, \"Forget it.\"", a: "\"I don't want to forget it. What would help?\" [Ask Her to Spell It Out]", bundle: 'pro', guideBack: "An open door to say it plainly" },
+        { q: "She hinted about wanting flowers, and you missed it.", a: "\"I'm sorry I missed it. Just tell me — I'd love to get it right.\" [Ask Her to Spell It Out]", bundle: 'pro', guideBack: "An open door to say it plainly" },
+        { q: "She says, \"You never notice anything.\"", a: "\"When I hear 'never', I stop wanting to try. Tell me what I missed?\" [Say How It Lands]", bundle: 'pro', guideBack: "The effect, without the accusation" },
+      ]
+    },
+    {
+      name: "A Complaint With No Ask",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You've said what bothers you, and the conversation has stalled. She's defended herself, or said sorry, and you both know nothing will change.\n\nWhat goes wrong is stopping at the problem. A complaint on its own tells her she was wrong but not what would be right.\n\n**Suggest What to Do Instead** is the main move. **Say How It Lands** if she still doesn't see why it matters.\n\nThe one thing to avoid: repeating the complaint more loudly.\n\nMindset: every complaint I make should come with something she can say yes to.",
+      inputs: [
+        { q: "You've told her the late messages bother you, and she's just said \"sorry\".", a: "\"No need for sorry. Could we stop messaging after eleven?\" [Suggest What to Do Instead]", bundle: 'pro', guideBack: "Something they could do next time" },
+        { q: "She says, \"Okay, so what do you want me to do?\"", a: "\"Just ask before you invite people over. That's all.\" [Suggest What to Do Instead]", bundle: 'pro', guideBack: "Something they could do next time" },
+        { q: "You've complained about the mess three times this month.", a: "\"Let me try it differently: could we tidy together for ten minutes each evening?\" [Suggest What to Do Instead]", bundle: 'pro', guideBack: "Something they could do next time" },
+        { q: "She says, \"I don't see why it matters.\"", a: "\"When it happens, I feel like my things aren't mine. That's why.\" [Say How It Lands]", bundle: 'pro', guideBack: "The effect, without the accusation" },
+        { q: "You're about to say the same complaint again, louder.", a: "\"Here's what would help — a heads-up when you'll be late.\" [Suggest What to Do Instead]", bundle: 'pro', guideBack: "Something they could do next time" },
+        { q: "She offers to \"try harder\".", a: "\"Thank you. Something specific would help more — like a shared shopping list.\" [Suggest What to Do Instead]", bundle: 'pro', guideBack: "Something they could do next time" },
+        { q: "She says, \"You're just being picky.\"", a: "\"Maybe. It still leaves me feeling like I'm not being heard.\" [Say How It Lands]", bundle: 'pro', guideBack: "The effect, without the accusation" },
+        { q: "She agrees to your suggestion straight away.", a: "\"Brilliant. Thank you.\" [Suggest What to Do Instead]", bundle: 'pro', guideBack: "Something they could do next time" },
+      ]
+    },
+  ],
+  alexandergrace5: [
+    {
+      name: "\"You Always\"",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You made a mistake, and it came back as a statement about who you are. \"You always\", \"you never\", \"you're so…\"\n\nWhat goes wrong is fighting the label and forgetting the mistake. You end up arguing about \"always\" while the actual thing is left unfixed — and you look defensive.\n\n**Own the Act, Not the Verdict** is the main move. **Apologise for What You Did** when the act needs a real sorry.\n\nThe one thing to avoid: \"I do not always…!\"\n\nMindset: I can own the act and leave the label.",
+      inputs: [
+        { q: "She says, \"You always forget the things I ask.\"", a: "\"I forgot this one, and I'll do it now. Always isn't quite fair.\" [Own the Act, Not the Verdict]", bundle: 'pro', guideBack: "The fix, without the self-verdict" },
+        { q: "She says, \"You never listen to me.\"", a: "\"I wasn't listening just now, and I'm sorry. Tell me again?\" [Apologise for What You Did]", bundle: 'pro', guideBack: "The apology, with the fact attached" },
+        { q: "You're about to say, \"I do not always do that!\"", a: "\"I did it today. Let's talk about today.\" [Own the Act, Not the Verdict]", bundle: 'pro', guideBack: "The fix, without the self-verdict" },
+        { q: "She says, \"You're so selfish.\"", a: "\"I took the last of the coffee — that was selfish. I'll get more.\" [Own the Act, Not the Verdict]", bundle: 'pro', guideBack: "The fix, without the self-verdict" },
+        { q: "She says, \"You're hopeless with money.\"", a: "\"I overspent this month. I'll show you the plan tonight.\" [Own the Act, Not the Verdict]", bundle: 'pro', guideBack: "The fix, without the self-verdict" },
+        { q: "She says, \"You never think before you speak.\"", a: "\"I'm sorry for what I said about your job. It was thoughtless.\" [Apologise for What You Did]", bundle: 'pro', guideBack: "The apology, with the fact attached" },
+        { q: "She says, \"This is so typical of you.\"", a: "\"Maybe it's a pattern. I'd like to fix this one first.\" [Own the Act, Not the Verdict]", bundle: 'pro', guideBack: "The fix, without the self-verdict" },
+        { q: "She says, \"You're always late.\"", a: "\"I was late tonight. I'm sorry — I left too late.\" [Apologise for What You Did]", bundle: 'pro', guideBack: "The apology, with the fact attached" },
+      ]
+    },
+    {
+      name: "Out of Proportion",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She's far more upset than the thing seems to deserve. A late text, a crooked picture, a passing comment — and suddenly it's a big fight.\n\nWhat goes wrong is pointing out that it's small. \"It's just a text\" tells her she's being unreasonable, and it makes it bigger.\n\n**Name the Feeling** is the main move — something bigger is usually underneath. **Ask What Would Put It Right** once you know what it is.\n\nThe one thing to avoid: \"It's not a big deal.\"\n\nMindset: if the reaction is big, something underneath is big.",
+      inputs: [
+        { q: "She's in tears because you forgot to buy bread.", a: "\"I think this is about more than bread. Has today been hard?\" [Name the Feeling]", bundle: 'pro', guideBack: "A guess at what is underneath" },
+        { q: "You're about to say, \"It's not a big deal.\"", a: "\"It seems to be a big deal for you. What is it?\" [Name the Feeling]", bundle: 'pro', guideBack: "A guess at what is underneath" },
+        { q: "She's furious that you liked a photo of an old friend.", a: "\"Something about that worries you. What is it?\" [Name the Feeling]", bundle: 'pro', guideBack: "A guess at what is underneath" },
+        { q: "She's upset that you didn't notice her haircut.", a: "\"I'm sorry I didn't say anything. What would make you feel noticed?\" [Ask What Would Put It Right]", bundle: 'pro', guideBack: "A question about what would fix it" },
+        { q: "She snaps at you over a small joke about her cooking.", a: "\"That seemed to hurt. Did it land badly?\" [Name the Feeling]", bundle: 'pro', guideBack: "A guess at what is underneath" },
+        { q: "She's been upset since you said you'd miss her work dinner.", a: "\"I think you wanted me there more than I realised. What would help?\" [Ask What Would Put It Right]", bundle: 'pro', guideBack: "A question about what would fix it" },
+        { q: "She's angry you didn't text back for two hours.", a: "\"You sound worried more than angry. Were you?\" [Name the Feeling]", bundle: 'pro', guideBack: "A guess at what is underneath" },
+        { q: "She finally says what's underneath: she's scared about money.", a: "\"Thank you for telling me. What would help — going through it together?\" [Ask What Would Put It Right]", bundle: 'pro', guideBack: "A question about what would fix it" },
+      ]
+    },
+    {
+      name: "It's Fixed, But It Keeps Going",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You've apologised. You've fixed it. And the conversation is still going — the same complaint, round again.\n\nWhat goes wrong is losing patience. \"Can you drop it?\" restarts the fight about a new thing.\n\n**Call It Done** is the main move — report the fix and check. **Ask What Would Put It Right** if there's clearly something you haven't dealt with.\n\nThe one thing to avoid: \"How many times do I have to say sorry?\"\n\nMindset: when it's fixed, I can say so, kindly.",
+      inputs: [
+        { q: "You've moved the car, and she's still going on about it.", a: "\"The car's moved. Are we okay, or is there more?\" [Call It Done]", bundle: 'pro', guideBack: "The fix, and a check it's over" },
+        { q: "You're about to say, \"How many times do I have to say sorry?\"", a: "\"I've said sorry, and I mean it. Is there something I've missed?\" [Call It Done]", bundle: 'pro', guideBack: "The fix, and a check it's over" },
+        { q: "She keeps coming back to the forgotten dinner reservation.", a: "\"I think something's still not right. What would help?\" [Ask What Would Put It Right]", bundle: 'pro', guideBack: "A question about what would fix it" },
+        { q: "You've tidied the living room, and she's still sighing.", a: "\"All tidy. Is it the room, or something else?\" [Call It Done]", bundle: 'pro', guideBack: "The fix, and a check it's over" },
+        { q: "She brings up yesterday's argument again at breakfast.", a: "\"I thought we'd sorted it. Is there a part that's still bothering you?\" [Ask What Would Put It Right]", bundle: 'pro', guideBack: "A question about what would fix it" },
+        { q: "You've paid her back, and she's still cross.", a: "\"It's in your account. Can we let this one go now?\" [Call It Done]", bundle: 'pro', guideBack: "The fix, and a check it's over" },
+        { q: "She says, \"It's not about the money.\"", a: "\"Okay. Then what is it about? I want to know.\" [Ask What Would Put It Right]", bundle: 'pro', guideBack: "A question about what would fix it" },
+        { q: "She says, \"Fine, we're done.\"", a: "\"Thank you. I'm glad.\" [Call It Done]", bundle: 'pro', guideBack: "The fix, and a check it's over" },
+      ]
+    },
+    {
+      name: "Harsh Words",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You got something wrong, and the reply is insults, contempt or shouting.\n\nWhat goes wrong is one of two extremes: you hit back, and now it's about your insult, or you take it all, and learn that being spoken to like that is the price of a mistake.\n\n**Mistakes, Not Mistreatment** is the main move. **Apologise for What You Did** once the tone has calmed.\n\nThe one thing to avoid: returning the insult.\n\nMindset: I can get it wrong and still ask to be spoken to decently.",
+      inputs: [
+        { q: "She calls you a moron for forgetting the passports.", a: "\"I forgot them, and I'm sorry. Moron doesn't help us fix it.\" [Mistakes, Not Mistreatment]", bundle: 'pro', guideBack: "Owning it, and asking for respect" },
+        { q: "You're about to call her something back.", a: "\"I'm not going to talk to you like that. I'd like the same.\" [Mistakes, Not Mistreatment]", bundle: 'pro', guideBack: "Owning it, and asking for respect" },
+        { q: "She mocks you in front of your son after a mistake.", a: "Later: \"I got it wrong. Mocking me in front of him isn't okay, though.\" [Mistakes, Not Mistreatment]", bundle: 'pro', guideBack: "Owning it, and asking for respect" },
+        { q: "She says, \"Pathetic,\" after you burned the dinner.", a: "\"I burned it, and I'll order something. Pathetic is a bit much.\" [Mistakes, Not Mistreatment]", bundle: 'pro', guideBack: "Owning it, and asking for respect" },
+        { q: "She stops shouting and sits down.", a: "\"Thank you. And I really am sorry I forgot.\" [Apologise for What You Did]", bundle: 'pro', guideBack: "The apology, with the fact attached" },
+        { q: "She says, \"You deserve to be shouted at.\"", a: "\"I deserve to hear I got it wrong. Not the shouting.\" [Mistakes, Not Mistreatment]", bundle: 'pro', guideBack: "Owning it, and asking for respect" },
+        { q: "She apologises for swearing at you.", a: "\"Thank you. I'm sorry about the car — it was my fault.\" [Apologise for What You Did]", bundle: 'pro', guideBack: "The apology, with the fact attached" },
+        { q: "She says, \"Don't tell me how to talk to you.\"", a: "\"I'm not. I'm telling you I'd like it to be kind, both ways.\" [Mistakes, Not Mistreatment]", bundle: 'pro', guideBack: "Owning it, and asking for respect" },
+      ]
+    },
+    {
+      name: "The Urge to Explain",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She's criticising something you did, and you have a very good reason for it. You can feel the explanation coming.\n\nWhat goes wrong is leading with it. However good the reason, heard first it sounds like an excuse, and the complaint goes unanswered.\n\n**Apologise for What You Did** first, if you got it wrong. **Own the Act, Not the Verdict** if there's a label attached.\n\nThe one thing to avoid: \"Yes, but…\"\n\nMindset: my reasons can wait until she knows I've heard her.",
+      inputs: [
+        { q: "You were late because the train broke down, and she's upset.", a: "\"I'm sorry you waited. The train broke down — I should have texted sooner.\" [Apologise for What You Did]", bundle: 'pro', guideBack: "The apology, with the fact attached" },
+        { q: "You're about to say, \"Yes, but…\"", a: "\"You're right, I didn't call. I'm sorry.\" [Apologise for What You Did]", bundle: 'pro', guideBack: "The apology, with the fact attached" },
+        { q: "She says you're thoughtless for forgetting, and you had a huge deadline.", a: "\"I forgot, and I'm sorry. The deadline ate my brain — I'm not thoughtless about you, though.\" [Own the Act, Not the Verdict]", bundle: 'pro', guideBack: "The fix, without the self-verdict" },
+        { q: "She's upset you didn't help with her mum, and you had a reason.", a: "\"I'm sorry I wasn't there for that. Can I tell you what happened, when you're ready?\" [Apologise for What You Did]", bundle: 'pro', guideBack: "The apology, with the fact attached" },
+        { q: "She calls you rude for leaving early, and you were ill.", a: "\"I left without saying goodbye properly, and I'm sorry. I wasn't feeling well.\" [Apologise for What You Did]", bundle: 'pro', guideBack: "The apology, with the fact attached" },
+        { q: "She says, \"You don't care about my family.\"", a: "\"I missed the party, and that's on me. I do care about them.\" [Own the Act, Not the Verdict]", bundle: 'pro', guideBack: "The fix, without the self-verdict" },
+        { q: "You want to explain the whole history of the misunderstanding.", a: "\"I'll skip the history. I'm sorry — I got it wrong.\" [Apologise for What You Did]", bundle: 'pro', guideBack: "The apology, with the fact attached" },
+        { q: "She says, \"Go on, then. Why did you do it?\"", a: "\"I thought you'd prefer it. I got that wrong.\" [Own the Act, Not the Verdict]", bundle: 'pro', guideBack: "The fix, without the self-verdict" },
+      ]
+    },
+  ],
+  alexandergrace6: [
+    {
+      name: "\"Just Open Up\"",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She's asked you to open up, let her in, tell her how you feel — and you don't know where to start.\n\nWhat goes wrong is one of two extremes: you say there's nothing to tell, or you say everything at once and it's too much for both of you.\n\n**Ask What She Wants to Know** is the main move. **Open Up in Steps** to give her a first piece.\n\nThe one thing to avoid: \"There's nothing to tell.\"\n\nMindset: I can start small, and I can ask where to start.",
+      inputs: [
+        { q: "She says, \"Just open up to me.\"", a: "\"I want to. What would you like to know first?\" [Ask What She Wants to Know]", bundle: 'pro', guideBack: "A question about what she wants to hear" },
+        { q: "You're about to say, \"There's nothing to tell.\"", a: "\"There's a bit. Let me start with this week.\" [Open Up in Steps]", bundle: 'pro', guideBack: "One more layer, not the whole story" },
+        { q: "She says, \"I feel like I'm dating a stranger.\"", a: "\"That's hard to hear. What do you feel you don't know about me?\" [Ask What She Wants to Know]", bundle: 'pro', guideBack: "A question about what she wants to hear" },
+        { q: "She asks how you're really doing.", a: "\"Honestly? Tired, and a bit lonely at work.\" [Open Up in Steps]", bundle: 'pro', guideBack: "One more layer, not the whole story" },
+        { q: "You feel attacked when she says you're closed off.", a: "\"I'd like to understand. What are you noticing?\" [Ask What She Wants to Know]", bundle: 'pro', guideBack: "A question about what she wants to hear" },
+        { q: "She asks about your childhood.", a: "\"It wasn't easy. I'll tell you some of it now, more another time.\" [Open Up in Steps]", bundle: 'pro', guideBack: "One more layer, not the whole story" },
+        { q: "She asks what you're afraid of.", a: "\"Letting people down, mostly. That's a start.\" [Open Up in Steps]", bundle: 'pro', guideBack: "One more layer, not the whole story" },
+        { q: "She says, \"I just want to feel close to you.\"", a: "\"Me too. What would help most — more talking, or more time together?\" [Ask What She Wants to Know]", bundle: 'pro', guideBack: "A question about what she wants to hear" },
+      ]
+    },
+    {
+      name: "The Quiet Stretch",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You've gone quiet — a day, a week — and she's noticed. She's starting to wonder whether it's about her.\n\nWhat goes wrong is \"I'm fine.\" It tells her something is wrong and she's not allowed to know what, which is the worst of both.\n\n**Keep Her Posted** is the main move. **Open Up in Steps** if she wants to know more.\n\nThe one thing to avoid: \"I'm fine.\"\n\nMindset: a sentence from me saves her a week of guessing.",
+      inputs: [
+        { q: "She asks, \"Are you angry with me?\"", a: "\"No, not at all. I'm stuck in my head about money.\" [Keep Her Posted]", bundle: 'pro', guideBack: "A short update from inside" },
+        { q: "You're about to say, \"I'm fine.\"", a: "\"I'm a bit low. It's not about you — I'll tell you when I've worked it out.\" [Keep Her Posted]", bundle: 'pro', guideBack: "A short update from inside" },
+        { q: "You've been short-tempered for days.", a: "\"I've been snappy, and I'm sorry. Work's got to me.\" [Keep Her Posted]", bundle: 'pro', guideBack: "A short update from inside" },
+        { q: "She says, \"You've been distant all week.\"", a: "\"I have. I'm worried about my brother. Can I tell you about it?\" [Open Up in Steps]", bundle: 'pro', guideBack: "One more layer, not the whole story" },
+        { q: "You skipped your usual goodnight call.", a: "\"Sorry about last night — I was wiped out. Nothing's wrong between us.\" [Keep Her Posted]", bundle: 'pro', guideBack: "A short update from inside" },
+        { q: "She asks what's on your mind.", a: "\"Honestly, whether I'm in the right job. It's been bugging me.\" [Open Up in Steps]", bundle: 'pro', guideBack: "One more layer, not the whole story" },
+        { q: "You've been thinking about ending a friendship.", a: "\"I've been going quiet because of Dave. I'll tell you what's happened.\" [Keep Her Posted]", bundle: 'pro', guideBack: "A short update from inside" },
+        { q: "The quiet stretch is over, and you feel better.", a: "\"I'm back. Thanks for giving me space this week.\" [Keep Her Posted]", bundle: 'pro', guideBack: "A short update from inside" },
+      ]
+    },
+    {
+      name: "Doing It Alone",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Something is hard — money, health, work, family — and you've decided to handle it yourself, without telling her or asking for anything.\n\nWhat goes wrong is that she finds out anyway, from your mood or from someone else, and feels shut out of your life.\n\n**Ask for the Help You Want** is the main move. **Keep Her Posted** if you're not ready to ask yet.\n\nThe one thing to avoid: \"I've got it — don't worry.\"\n\nMindset: letting her help is part of being together.",
+      inputs: [
+        { q: "You're behind on a bill and haven't told her.", a: "\"I'm behind on the car payment. Could we look at it together tonight?\" [Ask for the Help You Want]", bundle: 'pro', guideBack: "A specific request for support" },
+        { q: "You're about to say, \"I've got it — don't worry.\"", a: "\"I'm handling it, but I'd love you to check in on Friday.\" [Ask for the Help You Want]", bundle: 'pro', guideBack: "A specific request for support" },
+        { q: "You're anxious about a medical test.", a: "\"I've got a test on Tuesday. I'm a bit nervous — just so you know.\" [Keep Her Posted]", bundle: 'pro', guideBack: "A short update from inside" },
+        { q: "You need to have a hard talk with your mum.", a: "\"Could you be around when I call Mum? I'd feel better.\" [Ask for the Help You Want]", bundle: 'pro', guideBack: "A specific request for support" },
+        { q: "You're stressed about a work decision.", a: "\"Can I think out loud about this job offer? I'd value your view.\" [Ask for the Help You Want]", bundle: 'pro', guideBack: "A specific request for support" },
+        { q: "You've been struggling to sleep.", a: "\"I'm sleeping badly. Could we try going to bed earlier together?\" [Ask for the Help You Want]", bundle: 'pro', guideBack: "A specific request for support" },
+        { q: "You're not ready to talk about it yet.", a: "\"Something's bothering me. I'll tell you when I can — it's not about us.\" [Keep Her Posted]", bundle: 'pro', guideBack: "A short update from inside" },
+        { q: "She found out from your brother that you lost your job.", a: "\"I should have told you first. Can we talk about it now?\" [Keep Her Posted]", bundle: 'pro', guideBack: "A short update from inside" },
+      ]
+    },
+    {
+      name: "Taken for Granted",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She's doing a lot, and she feels unseen. Maybe she's said it. Maybe it's just in her tone.\n\nWhat goes wrong is assuming she knows you appreciate her. Unsaid gratitude looks exactly like none at all.\n\n**Express Appreciation** is the main move — specific, soon. **Tell Her What She Adds** for the bigger picture.\n\nThe one thing to avoid: \"You know I appreciate you.\"\n\nMindset: if I feel it and don't say it, she doesn't have it.",
+      inputs: [
+        { q: "She says, \"Nobody notices what I do around here.\"", a: "\"I notice. Thank you for keeping the whole week together.\" [Express Appreciation]", bundle: 'pro', guideBack: "Thanks, with a reason attached" },
+        { q: "You're about to say, \"You know I appreciate you.\"", a: "\"Thank you for sorting the kids' school stuff. I should say it more.\" [Express Appreciation]", bundle: 'pro', guideBack: "Thanks, with a reason attached" },
+        { q: "She seems flat and a bit cold lately.", a: "\"I just want to say — this house is so much happier with you in it.\" [Tell Her What She Adds]", bundle: 'pro', guideBack: "What your life has because of her" },
+        { q: "She's done the washing every day this week.", a: "\"Thanks for all the washing. I know it's endless.\" [Express Appreciation]", bundle: 'pro', guideBack: "Thanks, with a reason attached" },
+        { q: "She asks, \"Do you even like being with me?\"", a: "\"I love being with you. You make ordinary days good.\" [Tell Her What She Adds]", bundle: 'pro', guideBack: "What your life has because of her" },
+        { q: "She made your friends feel welcome all evening.", a: "\"Thank you for tonight. They loved you.\" [Express Appreciation]", bundle: 'pro', guideBack: "Thanks, with a reason attached" },
+        { q: "She's worked late all month to cover the bills.", a: "\"Thank you for all those late nights. I see what you're doing for us.\" [Express Appreciation]", bundle: 'pro', guideBack: "Thanks, with a reason attached" },
+        { q: "It's an ordinary Tuesday.", a: "\"I'm really lucky to have you. That's all.\" [Tell Her What She Adds]", bundle: 'pro', guideBack: "What your life has because of her" },
+      ]
+    },
+    {
+      name: "It Didn't Land",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You shared something, and it went badly. She laughed, changed the subject, or turned it into a worry of her own.\n\nWhat goes wrong is deciding never to try again. That confirms the belief that sharing doesn't work — and she never gets a second chance to respond well.\n\n**Open Up in Steps** is the main move — go back to it, smaller. **Ask What She Wants to Know** to find a better starting point.\n\nThe one thing to avoid: \"Forget I said anything.\"\n\nMindset: one bad landing isn't proof. It's information.",
+      inputs: [
+        { q: "You told her you were scared about your health, and she panicked.", a: "\"I think I scared you. Can I tell you the smaller version again?\" [Open Up in Steps]", bundle: 'pro', guideBack: "One more layer, not the whole story" },
+        { q: "You're about to say, \"Forget I said anything.\"", a: "\"That didn't come out well. Can I try again tomorrow?\" [Open Up in Steps]", bundle: 'pro', guideBack: "One more layer, not the whole story" },
+        { q: "She laughed when you said you felt insecure.", a: "\"That actually mattered to me. Can I say it again?\" [Open Up in Steps]", bundle: 'pro', guideBack: "One more layer, not the whole story" },
+        { q: "She changed the subject when you mentioned your dad.", a: "\"Was that too much? What would you rather hear about?\" [Ask What She Wants to Know]", bundle: 'pro', guideBack: "A question about what she wants to hear" },
+        { q: "She turned your worry into her own worry.", a: "\"I didn't mean to add to your stress. Can I just share, without us solving it?\" [Open Up in Steps]", bundle: 'pro', guideBack: "One more layer, not the whole story" },
+        { q: "She seemed uncomfortable when you cried.", a: "\"Did that freak you out? I'd like to know.\" [Ask What She Wants to Know]", bundle: 'pro', guideBack: "A question about what she wants to hear" },
+        { q: "You feel like you'll never share anything again.", a: "(To yourself.) \"One bad landing. I'll try something smaller next time.\" [Open Up in Steps]", bundle: 'pro', guideBack: "One more layer, not the whole story" },
+        { q: "She apologises for how she reacted.", a: "\"Thank you. Can I tell you the rest now?\" [Open Up in Steps]", bundle: 'pro', guideBack: "One more layer, not the whole story" },
+      ]
+    },
+  ],
 };

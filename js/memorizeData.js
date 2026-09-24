@@ -12931,4 +12931,472 @@ const memorizeCollections = {
       ]
     },
   ],
+  alexandergrace4: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for saying what bothers you while it's still small:\n\n1. Name It Early\n2. Say How It Lands\n3. Good Intent, Different Effect\n4. Suggest What to Do Instead\n5. Ask Her to Spell It Out\n6. Later, Just the Two of You\n\nThree are about when. Three are about how.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Name It Early, Say How It Lands, Good Intent Different Effect, Suggest What to Do Instead, Ask Her to Spell It Out, and Later Just the Two of You.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Three are about when to say it, and three are about how.", bundle: 'free' },
+        { q: "What is the best size for a complaint?", a: "Small — the first or second time.", bundle: 'free' },
+        { q: "What makes a complaint turn into a case against her?", a: "Waiting, until it has a list of examples.", bundle: 'free' },
+        { q: "Where is a disagreement easiest to hear?", a: "In private, with no audience.", bundle: 'free' },
+        { q: "How is this pack different from Fights That End Closer?", a: "That one handles a heated argument. This one stops the argument from building up.", bundle: 'pro' },
+        { q: "Which strategies are about when?", a: "Name It Early, Later Just the Two of You, and Ask Her to Spell It Out.", bundle: 'pro' },
+        { q: "What should every complaint end with?", a: "Something she can say yes to.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name It Early",
+      description: "",
+      cards: [
+        { q: "What is Name It Early?", a: "Saying the small thing while it is still small.", bundle: 'free' },
+        { q: "How does Name It Early sound?", a: "\"Small thing from tonight — I'd rather you let me finish the story.\"", bundle: 'free' },
+        { q: "When is Name It Early the right one?", a: "The first or second time something bothers you.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Flag the size, say the one moment, and stop.", bundle: 'free' },
+        { q: "Why does it work?", a: "The early version is one sentence about one thing.", bundle: 'free' },
+        { q: "When does Name It Early go wrong?", a: "When it turns into a list.", bundle: 'pro' },
+        { q: "What is Name It Early better than, and why?", a: "Waiting — the late version sounds like a verdict on her.", bundle: 'pro' },
+        { q: "What should you say if she asks why you didn't say it before?", a: "That's why you're saying it now, while it's small.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say How It Lands",
+      description: "",
+      cards: [
+        { q: "What is Say How It Lands?", a: "Saying what the thing did to you, not what she did wrong.", bundle: 'free' },
+        { q: "How does Say How It Lands sound?", a: "\"When you go quiet like that, I start guessing the worst.\"", bundle: 'free' },
+        { q: "When is Say How It Lands the right one?", a: "When something she does affects you.", bundle: 'free' },
+        { q: "What are the three parts?", a: "The moment, the effect on you, and the ask if there is one.", bundle: 'free' },
+        { q: "Why can't she argue with it?", a: "It's your report of how it felt, not a charge against her.", bundle: 'free' },
+        { q: "When does Say How It Lands go wrong?", a: "When \"I feel\" is followed by a charge — \"I feel you're selfish.\"", bundle: 'pro' },
+        { q: "What is Say How It Lands better than, and why?", a: "Telling her what she did wrong, which makes her defend it.", bundle: 'pro' },
+        { q: "What should you say if she says she didn't mean it?", a: "That you believe her, and you're telling her how it came across.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Good Intent, Different Effect",
+      description: "",
+      cards: [
+        { q: "What is Good Intent, Different Effect?", a: "Crediting what someone meant, then saying how it actually landed.", bundle: 'free' },
+        { q: "How does Good Intent, Different Effect sound?", a: "\"I know your friends are protective. The questioning felt like an interview.\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When someone she cares about meant well and it didn't work for you.", bundle: 'free' },
+        { q: "What are the three parts?", a: "The intention, the effect, and what would work better.", bundle: 'free' },
+        { q: "Why does it work?", a: "She has nothing to defend.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When the credit is sarcastic.", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "Only the effect, which makes her defend them.", bundle: 'pro' },
+        { q: "What happens if you only give the intention?", a: "Nothing changes.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Suggest What to Do Instead",
+      description: "",
+      cards: [
+        { q: "What is Suggest What to Do Instead?", a: "Saying what you'd like, after saying what bothered you.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"Could you text me when you know you'll be late? One line is enough.\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "After the problem is said, before the conversation stalls.", bundle: 'free' },
+        { q: "What are the three parts?", a: "The thing, the alternative, and how small it is.", bundle: 'free' },
+        { q: "What size should the alternative be?", a: "Something she could do tomorrow.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When the alternative is a change of personality.", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "A complaint on its own, which says she was wrong but not what would be right.", bundle: 'pro' },
+        { q: "What should you say when she agrees?", a: "Thank you — and stop there.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask Her to Spell It Out",
+      description: "",
+      cards: [
+        { q: "What is Ask Her to Spell It Out?", a: "Saying you want to help, and asking her to tell you plainly.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"I can tell something's wrong, and I want to fix it. Can you just tell me?\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When she's upset and hinting.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Notice, say you want to help, and ask for it plainly.", bundle: 'free' },
+        { q: "Why does it work?", a: "It ends the guessing.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When it sounds like a complaint about the hinting.", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "Guessing — you guess wrong and she's upset about two things.", bundle: 'pro' },
+        { q: "What should you say if she says she shouldn't have to spell it out?", a: "She doesn't have to — it just makes it more likely you get it right.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Later, Just the Two of You",
+      description: "",
+      cards: [
+        { q: "What is Later, Just the Two of You?", a: "Staying polite in company and raising it with her alone afterwards.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"Can I mention something from tonight? It's nothing big.\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When something bothers you and there's an audience.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Stay easy in the moment, choose the moment, say it once.", bundle: 'free' },
+        { q: "Why does it work?", a: "A disagreement with an audience is a performance.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When \"later\" never comes.", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "A sharp comeback at the table, which makes everyone take sides.", bundle: 'pro' },
+        { q: "Is waiting the same as swallowing it?", a: "No. You're choosing where, not whether.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **When to Say It** — now, later in private, or ask her to say hers\n• **How to Say It** — the effect, the credit, or the alternative\n• **All Six Strategies** — no cue given, which is the real thing\n\nOne question sorts most of it: is this about timing or wording?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "When to Say It, How to Say It, and All Six Strategies.", bundle: 'pro' },
+        { q: "What question decides When to Say It?", a: "Is now the moment, and whose thing is it to say?", bundle: 'pro' },
+        { q: "What is the usual wrong choice about timing?", a: "Waiting until it's big, and then saying it in public.", bundle: 'pro' },
+        { q: "What question decides How to Say It?", a: "Whose action is it, and have I said what I want?", bundle: 'pro' },
+        { q: "What is the usual wrong choice about wording?", a: "Describing what she did wrong instead of what it did to you.", bundle: 'pro' },
+        { q: "Someone she loves meant well and it didn't work. Which strategy?", a: "Good Intent, Different Effect.", bundle: 'pro' },
+        { q: "She's hinting. Which strategy?", a: "Ask Her to Spell It Out.", bundle: 'pro' },
+        { q: "It happened in front of her friends. Which strategy?", a: "Later, Just the Two of You.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Small Thing** — Name It Early → Say How It Lands → Suggest What to Do Instead\n2. **Her Friends at Dinner** — Later, Just the Two of You → Good Intent, Different Effect → Suggest What to Do Instead\n3. **The Hint You Missed** — Ask Her to Spell It Out → Say How It Lands → Suggest What to Do Instead\n\nAll three end with something she can say yes to.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Small Thing, Her Friends at Dinner, and The Hint You Missed.", bundle: 'pro' },
+        { q: "What is the order in The Small Thing?", a: "Name It Early, Say How It Lands, Suggest What to Do Instead.", bundle: 'pro' },
+        { q: "What is the usual mistake with a small thing?", a: "Silence for a month, then everything at once.", bundle: 'pro' },
+        { q: "What is the order in Her Friends at Dinner?", a: "Later Just the Two of You, Good Intent Different Effect, Suggest What to Do Instead.", bundle: 'pro' },
+        { q: "Why credit her friends before the effect?", a: "So she has nothing to defend.", bundle: 'pro' },
+        { q: "What is the order in The Hint You Missed?", a: "Ask Her to Spell It Out, Say How It Lands, Suggest What to Do Instead.", bundle: 'pro' },
+        { q: "What is the usual mistake with a missed hint?", a: "Guessing again, and apologising for the wrong thing.", bundle: 'pro' },
+        { q: "What do all three sequences end with?", a: "Suggest What to Do Instead.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **The Growing List** — it's happened before, and you said nothing\n• **In Front of Others** — there's an audience\n• **She Meant Well** — kind intent, bad effect\n• **The Hint** — she's upset and not saying why\n• **A Complaint With No Ask** — the conversation has stalled\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Growing List, In Front of Others, She Meant Well, The Hint, and A Complaint With No Ask.", bundle: 'pro' },
+        { q: "What should you avoid with a growing list?", a: "\"And another thing…\"", bundle: 'pro' },
+        { q: "What should you avoid in front of others?", a: "A sharp comeback at the table.", bundle: 'pro' },
+        { q: "What should you avoid when she meant well?", a: "\"Why do they always do this?\"", bundle: 'pro' },
+        { q: "What should you avoid with a hint?", a: "\"What have I done now?\"", bundle: 'pro' },
+        { q: "What should you avoid with a complaint that has no ask?", a: "Repeating it more loudly.", bundle: 'pro' },
+        { q: "What is the main strategy for the hint?", a: "Ask Her to Spell It Out.", bundle: 'pro' },
+        { q: "What is the main strategy for in front of others?", a: "Later, Just the Two of You.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **The Speaking-Up Mindset** — bringing it up is complaining\n• **Mind Reading** — a good partner knows without being told\n• **Easy-Going** — little things don't bother me\n• **Making a Scene** — I have to answer it right now\n• **Her People** — her family is off-limits\n• **Too Small to Mention** — only big things are worth saying\n\nMost of them keep you quiet now so that you speak too loudly later.",
+      cards: [
+        { q: "What are the six mindsets in this pack?", a: "The Speaking-Up Mindset, Mind Reading, Easy-Going, Making a Scene, Her People, and Too Small to Mention.", bundle: 'pro' },
+        { q: "What is true instead of \"bringing it up is complaining\"?", a: "One calm sentence keeps you close; complaining is the list that comes later.", bundle: 'pro' },
+        { q: "What gets added to \"a good partner notices\"?", a: "That asking means failing.", bundle: 'pro' },
+        { q: "What does being easy-going quietly cost?", a: "The list, and the sudden coldness.", bundle: 'pro' },
+        { q: "Is choosing a private moment letting it go?", a: "No. It's choosing where it will be heard.", bundle: 'pro' },
+        { q: "How can you raise something about her family?", a: "Credit what they meant, then say how it landed.", bundle: 'pro' },
+        { q: "Why is small the right size?", a: "It's easy to say, hear and fix.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They keep you quiet now, so you speak too loudly later.", bundle: 'pro' },
+      ]
+    },
+  ],
+  alexandergrace5: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for staying steady when she criticises you:\n\n1. Own the Act, Not the Verdict\n2. Apologise for What You Did\n3. Name the Feeling\n4. Ask What Would Put It Right\n5. Call It Done\n6. Mistakes, Not Mistreatment\n\nThree are for owning your part. Three are for reading her reaction.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Own the Act Not the Verdict, Apologise for What You Did, Name the Feeling, Ask What Would Put It Right, Call It Done, and Mistakes Not Mistreatment.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Three are for owning your part, and three are for reading her reaction.", bundle: 'free' },
+        { q: "What is the difference between guilt and shame?", a: "Guilt says I did something wrong. Shame says I am something wrong.", bundle: 'free' },
+        { q: "What makes an apology count?", a: "Saying exactly what for.", bundle: 'free' },
+        { q: "What does steady mean in this pack?", a: "Neither defending nor collapsing.", bundle: 'free' },
+        { q: "How is this pack different from Fights That End Closer?", a: "That one handles a heated argument. This one is about being the one who's criticised.", bundle: 'pro' },
+        { q: "Which strategies are for owning your part?", a: "Own the Act Not the Verdict, Apologise for What You Did, and Call It Done.", bundle: 'pro' },
+        { q: "What should you do before explaining your reason?", a: "Apologise, if you got it wrong.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Own the Act, Not the Verdict",
+      description: "",
+      cards: [
+        { q: "What is Own the Act, Not the Verdict?", a: "Owning the mistake without accepting what it supposedly says about you.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"I forgot the bins — that's on me. I'm not careless about us, though.\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When a mistake comes back as a label.", bundle: 'free' },
+        { q: "What are the three parts?", a: "The act, the fix, and the line.", bundle: 'free' },
+        { q: "What two parts does criticism often come in?", a: "A fact and a verdict.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When you fight the label and forget to fix the mistake.", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "Fighting the whole package, which means denying the fact too.", bundle: 'pro' },
+        { q: "What should you tell yourself when you think \"I'm hopeless\"?", a: "I made one mistake, and I'll fix it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Apologise for What You Did",
+      description: "",
+      cards: [
+        { q: "What is Apologise for What You Did?", a: "Saying sorry, and saying exactly what for.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"I'm sorry I snapped at you in the car. You didn't deserve that.\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When you got something wrong.", bundle: 'free' },
+        { q: "What are the three parts?", a: "The act, that it was wrong, and what changes.", bundle: 'free' },
+        { q: "Why does the specific part matter?", a: "It's the proof you understand what you did.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When it has a \"but\" or an \"if you felt\".", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "A bare \"sorry\", which can mean \"please stop being upset\".", bundle: 'pro' },
+        { q: "What should you say if she says you always just say sorry?", a: "What you'll do differently.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name the Feeling",
+      description: "",
+      cards: [
+        { q: "What is Name the Feeling?", a: "Gently guessing at the feeling underneath her reaction.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"You seem really worried about this. What's scaring you?\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When the reaction is much bigger than the thing.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Slow down, guess the feeling, and ask.", bundle: 'free' },
+        { q: "Why does it work?", a: "Fear or hurt can be talked about; anger can only be argued with.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When the guess sounds like a diagnosis — \"You're just angry.\"", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "\"Why are you so angry?\", which puts her on trial.", bundle: 'pro' },
+        { q: "What should you do if you guess wrong?", a: "Say so, and ask what it is.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What Would Put It Right",
+      description: "",
+      cards: [
+        { q: "What is Ask What Would Put It Right?", a: "Asking, genuinely, what would help now.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"What would put this right for you?\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When you don't know what she's asking for.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Hear it out, ask, and do it or say what you can do.", bundle: 'free' },
+        { q: "Why does it work?", a: "It turns a complaint into something you can answer.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When it has an edge — \"What do you want from me?\"", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "Guessing, and apologising for the wrong thing.", bundle: 'pro' },
+        { q: "What should you say if she doesn't know what she wants?", a: "That's okay — take your time.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Call It Done",
+      description: "",
+      cards: [
+        { q: "What is Call It Done?", a: "Saying the thing is fixed, and checking whether you're done.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"I've moved the car. Are we okay now, or is there something else?\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When it's been fixed and the conversation keeps going.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Report the fix, check, and listen for the rest.", bundle: 'free' },
+        { q: "Why does it work?", a: "It gives both of you a way out.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When it's said sharply, like a door slam.", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "\"Can you drop it?\", which starts a new fight.", bundle: 'pro' },
+        { q: "What should you do if she says it's not about the car?", a: "Ask what it is about, and listen.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mistakes, Not Mistreatment",
+      description: "",
+      cards: [
+        { q: "What is Mistakes, Not Mistreatment?", a: "Owning the mistake and asking calmly for a kinder tone.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"I got it wrong, and I'm sorry. I still want us to talk kindly.\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When the reply to your mistake is insults or contempt.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Own the mistake, name the tone, and ask.", bundle: 'free' },
+        { q: "Who does the standard apply to?", a: "Both of you.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When the mistake gets forgotten in a fight about tone.", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "Hitting back, which turns her anger into a fight between you.", bundle: 'pro' },
+        { q: "What should you say if she says you deserve it?", a: "You deserve to be told, not to be sworn at.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Owning It** — the label, the apology, or the end\n• **Reading It** — the feeling, the need, or the tone\n• **All Six Strategies** — no cue given, which is the real thing\n\nOne question sorts most of it: is this about what I did, or about how she's reacting?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Owning It, Reading It, and All Six Strategies.", bundle: 'pro' },
+        { q: "What question decides Owning It?", a: "What exactly am I owning, and is it finished?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Owning It?", a: "Owning everything — the mistake, the label and the evening.", bundle: 'pro' },
+        { q: "What question decides Reading It?", a: "What is underneath, what does she want, and how is she saying it?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Reading It?", a: "Arguing with the words and missing everything else.", bundle: 'pro' },
+        { q: "Her reaction is much bigger than the cause. Which strategy?", a: "Name the Feeling.", bundle: 'pro' },
+        { q: "It's fixed and still going. Which strategy?", a: "Call It Done.", bundle: 'pro' },
+        { q: "She's calling you names. Which strategy?", a: "Mistakes, Not Mistreatment.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Real Mistake** — Apologise for What You Did → Own the Act, Not the Verdict → Call It Done\n2. **The Big Reaction** — Name the Feeling → Ask What Would Put It Right → Call It Done\n3. **The Harsh Tone** — Mistakes, Not Mistreatment → Apologise for What You Did → Ask What Would Put It Right\n\nTwo of the three end with Call It Done.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Real Mistake, The Big Reaction, and The Harsh Tone.", bundle: 'pro' },
+        { q: "What is the order in The Real Mistake?", a: "Apologise for What You Did, Own the Act Not the Verdict, Call It Done.", bundle: 'pro' },
+        { q: "Why answer the label after the apology?", a: "So it doesn't sound like an excuse.", bundle: 'pro' },
+        { q: "What is the order in The Big Reaction?", a: "Name the Feeling, Ask What Would Put It Right, Call It Done.", bundle: 'pro' },
+        { q: "What is the usual mistake with a big reaction?", a: "\"It's only a small thing.\"", bundle: 'pro' },
+        { q: "What is the order in The Harsh Tone?", a: "Mistakes Not Mistreatment, Apologise for What You Did, Ask What Would Put It Right.", bundle: 'pro' },
+        { q: "Why name the tone first in The Harsh Tone?", a: "Nothing gets through while there's name-calling.", bundle: 'pro' },
+        { q: "What is the usual mistake with a harsh tone?", a: "Hitting back, and forgetting the mistake.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **\"You Always\"** — the mistake came back as a label\n• **Out of Proportion** — the reaction is bigger than the thing\n• **It's Fixed, But It Keeps Going** — the complaint won't end\n• **Harsh Words** — the reply is insults\n• **The Urge to Explain** — you have a good reason\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "You Always, Out of Proportion, It's Fixed But It Keeps Going, Harsh Words, and The Urge to Explain.", bundle: 'pro' },
+        { q: "What should you avoid with \"you always\"?", a: "\"I do not always…!\"", bundle: 'pro' },
+        { q: "What should you avoid when it's out of proportion?", a: "\"It's not a big deal.\"", bundle: 'pro' },
+        { q: "What should you avoid when it keeps going?", a: "\"How many times do I have to say sorry?\"", bundle: 'pro' },
+        { q: "What should you avoid with harsh words?", a: "Returning the insult.", bundle: 'pro' },
+        { q: "What should you avoid when you want to explain?", a: "\"Yes, but…\"", bundle: 'pro' },
+        { q: "What is the main strategy for out of proportion?", a: "Name the Feeling.", bundle: 'pro' },
+        { q: "What is the main strategy for harsh words?", a: "Mistakes, Not Mistreatment.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **The Steady Mindset** — criticism means I'm failing\n• **The Inner Critic** — there's something wrong with me\n• **Explaining Myself** — she needs to hear my reason first\n• **Always the One Who Says Sorry** — I'm the bigger person\n• **Proving It** — I have to prove I didn't mean it\n• **It Hurts, So It's True** — the sting proves the criticism\n\nMost of them make one criticism feel like a verdict on everything.",
+      cards: [
+        { q: "What are the six mindsets in this pack?", a: "The Steady Mindset, The Inner Critic, Explaining Myself, Always the One Who Says Sorry, Proving It, and It Hurts So It's True.", bundle: 'pro' },
+        { q: "What is true instead of \"criticism means I'm failing\"?", a: "It's information about one thing, not a verdict on you.", bundle: 'pro' },
+        { q: "What does the inner critic confuse?", a: "Guilt and shame.", bundle: 'pro' },
+        { q: "What gets added to \"I had a good reason\"?", a: "That it has to come first.", bundle: 'pro' },
+        { q: "What does always saying sorry first quietly cost?", a: "Apologies that mean less, and carrying all the blame.", bundle: 'pro' },
+        { q: "What matters more in the moment than what you meant?", a: "How it landed.", bundle: 'pro' },
+        { q: "What does the size of the sting tell you?", a: "Something about your history, not the facts.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They make one criticism feel like a verdict on everything.", bundle: 'pro' },
+      ]
+    },
+  ],
+  alexandergrace6: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for letting her in:\n\n1. Open Up in Steps\n2. Ask What She Wants to Know\n3. Keep Her Posted\n4. Ask for the Help You Want\n5. Express Appreciation\n6. Tell Her What She Adds\n\nThree are for sharing what's inside. Three are for saying the things most men feel and don't say.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Open Up in Steps, Ask What She Wants to Know, Keep Her Posted, Ask for the Help You Want, Express Appreciation, and Tell Her What She Adds.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Three are for sharing what's inside, and three are for saying what you feel towards her.", bundle: 'free' },
+        { q: "What's the problem with saying nothing for years?", a: "It eventually comes out all at once.", bundle: 'free' },
+        { q: "What does silence make her do?", a: "Guess — usually about herself.", bundle: 'free' },
+        { q: "What is the difference between gratitude felt and gratitude said?", a: "Only the second one reaches her.", bundle: 'free' },
+        { q: "How is this pack different from Confident Connection?", a: "That one covers a bad day and dates. This one is about letting her in over time.", bundle: 'pro' },
+        { q: "Which strategies are about sharing what's inside?", a: "Open Up in Steps, Ask What She Wants to Know, and Keep Her Posted.", bundle: 'pro' },
+        { q: "What makes a request for help easy to answer?", a: "It's small and specific.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Open Up in Steps",
+      description: "",
+      cards: [
+        { q: "What is Open Up in Steps?", a: "Sharing a little, seeing how it lands, then sharing more.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"I've been a bit worried about work. Not a crisis — just on my mind.\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When there's something you've kept to yourself.", bundle: 'free' },
+        { q: "What are the three steps?", a: "A small piece, watch how it lands, the next piece.", bundle: 'free' },
+        { q: "Why does a small piece help?", a: "It gives her a chance to respond well.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When years of silence come out in one speech.", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "Everything at once, which is hard for anyone to receive.", bundle: 'pro' },
+        { q: "What should you do if the first piece lands badly?", a: "Try again, smaller.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What She Wants to Know",
+      description: "",
+      cards: [
+        { q: "What is Ask What She Wants to Know?", a: "Asking what she's hoping for when she asks you to open up.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"I'd like to. What is it you feel you're not getting from me?\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When she asks you to open up or let her in.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Take it as an invitation, ask what she's looking for, and start there.", bundle: 'free' },
+        { q: "Why does it work?", a: "\"Open up\" can mean a dozen things.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When \"Why do you ask?\" sounds like a door closing.", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "Guessing, which leads to saying nothing or the wrong thing.", bundle: 'pro' },
+        { q: "What should you do once she's told you?", a: "Thank her, and start there.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Keep Her Posted",
+      description: "",
+      cards: [
+        { q: "What is Keep Her Posted?", a: "Telling her briefly where your head is, so she doesn't fill the silence.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"I'm quiet tonight because of the budget. Nothing to do with you.\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When you go quiet or your mood changes.", bundle: 'free' },
+        { q: "What are the three parts?", a: "The state, the reason, and what it isn't.", bundle: 'free' },
+        { q: "What do people guess about when you're silent?", a: "Themselves.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When it becomes \"I'm fine.\"", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "Silence, which she has to interpret.", bundle: 'pro' },
+        { q: "How long should the update be?", a: "One sentence — a sign on the door.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for the Help You Want",
+      description: "",
+      cards: [
+        { q: "What is Ask for the Help You Want?", a: "Saying what kind of help you'd like when you share something hard.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"Can you just help me think it through? I don't need you to fix it.\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When you share something hard.", bundle: 'free' },
+        { q: "What are the three parts?", a: "What's going on, what you're doing, and the help you'd like.", bundle: 'free' },
+        { q: "Why does it help her?", a: "She wants to help and doesn't know how.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When the request is too big — \"support me.\"", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "No request, so she offers the help she'd want, not what you need.", bundle: 'pro' },
+        { q: "What should you say when she helps the way you asked?", a: "That it was exactly what you needed.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Express Appreciation",
+      description: "",
+      cards: [
+        { q: "What is Express Appreciation?", a: "Saying thank you, and exactly what for.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"Thanks for dinner. After the day I had, coming home to that made everything better.\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "When she's done something for you.", bundle: 'free' },
+        { q: "What are the three parts?", a: "What she did, what it did for you, and thank you.", bundle: 'free' },
+        { q: "How long does it take?", a: "About ten seconds.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When it's used as a technique to get more.", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "Assuming she knows — unsaid gratitude looks like none.", bundle: 'pro' },
+        { q: "What should you say if she brushes it off?", a: "\"I mean it. It really helped.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Tell Her What She Adds",
+      description: "",
+      cards: [
+        { q: "What is Tell Her What She Adds?", a: "Telling her what your life has because of her.", bundle: 'free' },
+        { q: "How does it sound?", a: "\"Life's a lot more fun with you in it. I laugh more than I used to.\"", bundle: 'free' },
+        { q: "When is it the right one?", a: "On an ordinary day, for no reason.", bundle: 'free' },
+        { q: "What are the three parts?", a: "An ordinary moment, what's different because of her, and leave it there.", bundle: 'free' },
+        { q: "How is it different from thanks?", a: "Thanks is for what she does. This is for what she brings.", bundle: 'free' },
+        { q: "When does it go wrong?", a: "When it becomes a list of her qualities.", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "Assuming she knows — most couples stop saying it after the first months.", bundle: 'pro' },
+        { q: "What should you say if she asks where it came from?", a: "That you realised you don't say it enough.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Letting Her In** — share, be asked, or explain the quiet\n• **Saying It Out Loud** — ask, thank, or tell her what she means\n• **All Six Strategies** — no cue given, which is the real thing\n\nOne question sorts most of it: is this about what's inside me, or what I feel towards her?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Letting Her In, Saying It Out Loud, and All Six Strategies.", bundle: 'pro' },
+        { q: "What question decides Letting Her In?", a: "Am I sharing something, being asked, or just being quiet?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Letting Her In?", a: "Saying nothing, then saying everything.", bundle: 'pro' },
+        { q: "What question decides Saying It Out Loud?", a: "Am I asking, thanking, or telling her what she means?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Saying It Out Loud?", a: "Assuming she already knows.", bundle: 'pro' },
+        { q: "She asks you to open up. Which strategy?", a: "Ask What She Wants to Know.", bundle: 'pro' },
+        { q: "You've gone quiet for days. Which strategy?", a: "Keep Her Posted.", bundle: 'pro' },
+        { q: "It's an ordinary Tuesday and you're happy. Which strategy?", a: "Tell Her What She Adds.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **When She Asks You to Open Up** — Ask What She Wants to Know → Open Up in Steps → Express Appreciation\n2. **The Hard Week** — Keep Her Posted → Ask for the Help You Want → Express Appreciation\n3. **Going Quiet** — Keep Her Posted → Open Up in Steps → Tell Her What She Adds\n\nTwo of the three end with thanks.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "When She Asks You to Open Up, The Hard Week, and Going Quiet.", bundle: 'pro' },
+        { q: "What is the order in When She Asks You to Open Up?", a: "Ask What She Wants to Know, Open Up in Steps, Express Appreciation.", bundle: 'pro' },
+        { q: "Why thank her at the end?", a: "It makes the next time easier for both of you.", bundle: 'pro' },
+        { q: "What is the order in The Hard Week?", a: "Keep Her Posted, Ask for the Help You Want, Express Appreciation.", bundle: 'pro' },
+        { q: "What is the usual mistake in a hard week?", a: "Going silent, then snapping at her.", bundle: 'pro' },
+        { q: "What is the order in Going Quiet?", a: "Keep Her Posted, Open Up in Steps, Tell Her What She Adds.", bundle: 'pro' },
+        { q: "Why end Going Quiet on what she adds?", a: "It answers the worry underneath — that it's about her.", bundle: 'pro' },
+        { q: "What is the usual mistake when you've gone quiet?", a: "\"I'm fine\" — and another week of quiet.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **\"Just Open Up\"** — she's asked, and you don't know where to start\n• **The Quiet Stretch** — you've withdrawn, and she's noticed\n• **Doing It Alone** — something's hard and you're not telling her\n• **Taken for Granted** — she feels unseen\n• **It Didn't Land** — you shared, and it went badly\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Just Open Up, The Quiet Stretch, Doing It Alone, Taken for Granted, and It Didn't Land.", bundle: 'pro' },
+        { q: "What should you avoid when she asks you to open up?", a: "\"There's nothing to tell.\"", bundle: 'pro' },
+        { q: "What should you avoid in a quiet stretch?", a: "\"I'm fine.\"", bundle: 'pro' },
+        { q: "What should you avoid when doing it alone?", a: "\"I've got it — don't worry.\"", bundle: 'pro' },
+        { q: "What should you avoid when she feels taken for granted?", a: "\"You know I appreciate you.\"", bundle: 'pro' },
+        { q: "What should you avoid when it didn't land?", a: "\"Forget I said anything.\"", bundle: 'pro' },
+        { q: "What is the main strategy for a quiet stretch?", a: "Keep Her Posted.", bundle: 'pro' },
+        { q: "What is the main strategy for doing it alone?", a: "Ask for the Help You Want.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **The Open Mindset** — showing feelings is weak\n• **Used Against Me** — she'll use it later\n• **Handling It Alone** — I don't burden anyone\n• **She Knows** — she knows I appreciate her\n• **All or Nothing** — if I start, it'll all come out\n• **Being a Burden** — my problems would weigh her down\n\nMost of them keep you safe by keeping you alone.",
+      cards: [
+        { q: "What are the six mindsets in this pack?", a: "The Open Mindset, Used Against Me, Handling It Alone, She Knows, All or Nothing, and Being a Burden.", bundle: 'pro' },
+        { q: "What is true instead of \"showing feelings is weak\"?", a: "Sharing calmly is how people come to know you.", bundle: 'pro' },
+        { q: "How do you find out whether she'll misuse what you share?", a: "Share small things first.", bundle: 'pro' },
+        { q: "What does handling it alone quietly cost?", a: "A partner who finds out late and feels shut out.", bundle: 'pro' },
+        { q: "What gets added to \"she knows I appreciate her\"?", a: "That knowing it in general is the same as hearing it.", bundle: 'pro' },
+        { q: "Who chooses the size of what you share?", a: "You do.", bundle: 'pro' },
+        { q: "How do most people feel when trusted with a problem?", a: "Closer, not heavier.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They keep you safe by keeping you alone.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

@@ -7817,4 +7817,298 @@ const mindsetCollections = {
       ]
     },
   ],
+  alexandergrace4: [
+    {
+      name: "The Speaking-Up Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I bring it up, I'm complaining.\" The pack-wide belief that saying what bothers you is a kind of weakness or nagging.\n\nWhat is true instead: one calm sentence about something small is how two people stay close. Complaining is the list that comes out later.\n\nIt feels reasonable because nobody wants to be the difficult one, and staying quiet looks easy-going.\n\nWhat it costs is resentment that grows quietly and comes out as coldness.\n\nMindset: saying it early and calmly is not complaining.",
+      inputs: [
+        { q: "If I bring it up, I'm complaining.", a: "\"Saying it once, calmly, is how I keep from complaining later.\"", bundle: 'pro' },
+        { q: "A real man just lets things go.", a: "\"A real man says what he needs, then lets it go.\"", bundle: 'pro' },
+        { q: "It's not a big deal.", a: "\"It's small, which is why now is the time to say it.\"", bundle: 'pro' },
+        { q: "She'll think I'm needy.", a: "\"One sentence about one thing isn't needy; a sulk is.\"", bundle: 'pro' },
+        { q: "I'll wait for a good moment.", a: "\"The good moment is tonight, when it's still small.\"", bundle: 'pro' },
+        { q: "Speaking up will ruin the mood.", a: "\"Staying quiet ruins it more slowly.\"", bundle: 'pro' },
+        { q: "She should already know.", a: "\"She can't know what I haven't said.\"", bundle: 'pro' },
+        { q: "I don't want to start a fight.", a: "\"Small and calm starts a conversation, not a fight.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mind Reading",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"A good partner knows what the other needs without being told.\" Half true — paying attention does matter.\n\nWhat is true: noticing is a form of love, and it's worth getting better at.\n\nWhat gets added is that asking means failing. It turns every missed hint into proof that you don't care, and it stops both of you from just saying it.\n\nWhat it costs is guessing, guessing wrong, and fighting about the guess.\n\nMindset: keep paying attention. Drop the idea that I can't ask.",
+      inputs: [
+        { q: "A good partner knows without being told.", a: "\"True that noticing matters — but 'without being told' is the part I added.\"", bundle: 'pro' },
+        { q: "If I have to ask, I've failed.", a: "\"True that I missed it — but 'so I've failed' is the part I added.\"", bundle: 'pro' },
+        { q: "She shouldn't have to tell me.", a: "\"True, it's nice when she doesn't — but 'shouldn't have to' is the part I added.\"", bundle: 'pro' },
+        { q: "I should have known what she wanted.", a: "\"True, maybe — but 'so I can't ask now' is the part I added.\"", bundle: 'pro' },
+        { q: "Asking shows I wasn't paying attention.", a: "\"True, a bit — but 'so I'll keep guessing' is the part I added.\"", bundle: 'pro' },
+        { q: "She'll be hurt if I ask.", a: "\"True, perhaps — but 'more hurt than if I guess wrong' is the part I added.\"", bundle: 'pro' },
+        { q: "Real connection means no explaining.", a: "\"True that it gets easier — but 'no explaining ever' is the part I added.\"", bundle: 'pro' },
+        { q: "If she loved me, she'd tell me.", a: "\"True that telling helps — but 'so hints mean she doesn't' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Easy-Going",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'm easy-going. Little things don't bother me.\" A belief that feels like good nature — and often is.\n\nWhat is true instead: some things do bother you, and being easy-going means letting them go after you've said them, not instead of saying them.\n\nIt feels reasonable because you like being the relaxed one, and it keeps the evenings pleasant.\n\nWhat it costs is the quiet list, the sudden coldness, and the moments she's surprised to hear how long something has bothered you.\n\nMindset: easy-going means saying it lightly, not never.",
+      inputs: [
+        { q: "I'm easy-going; little things don't bother me.", a: "\"And some do, and I notice them weeks later.\"", bundle: 'pro' },
+        { q: "I don't sweat the small stuff.", a: "\"Until the small stuff is ten things at once.\"", bundle: 'pro' },
+        { q: "I let things roll off me.", a: "\"Some things roll off; some roll into a pile.\"", bundle: 'pro' },
+        { q: "I'm the relaxed one in this relationship.", a: "\"Which is why she's shocked when I finally say something.\"", bundle: 'pro' },
+        { q: "Nothing's worth arguing about.", a: "\"And a calm sentence isn't an argument.\"", bundle: 'pro' },
+        { q: "I'm good at keeping the peace.", a: "\"And the peace sometimes has a lot underneath it.\"", bundle: 'pro' },
+        { q: "I don't need to make a fuss.", a: "\"One sentence isn't a fuss, and it would save one.\"", bundle: 'pro' },
+        { q: "I'm flexible.", a: "\"Flexible, and still allowed a view on Saturday.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Making a Scene",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I don't answer it now, I'm letting them walk over me.\" The belief that anything said in company has to be answered on the spot.\n\nWhat is true instead: choosing a private moment is not letting it go. It is choosing where it will actually be heard.\n\nIt feels reasonable because being teased or questioned in front of people feels like a test you have to pass right there.\n\nWhat it costs is public arguments, embarrassed partners, and a story her friends tell about you.\n\nMindset: I can let it pass in the room and still say it later.",
+      inputs: [
+        { q: "If I don't answer now, they'll walk over me.", a: "\"If I answer later, I'll actually be heard.\"", bundle: 'pro' },
+        { q: "Letting it go makes me look weak.", a: "\"Letting it pass isn't letting it go; I'll say it at home.\"", bundle: 'pro' },
+        { q: "She should know I'm not happy right now.", a: "\"She'll know tonight, when we can talk properly.\"", bundle: 'pro' },
+        { q: "I need to stand up for myself in front of them.", a: "\"I can stand up for myself without an audience.\"", bundle: 'pro' },
+        { q: "If I wait, I'll lose my nerve.", a: "\"Then I'll decide now that I'm raising it at home.\"", bundle: 'pro' },
+        { q: "Her friends need to see I won't take it.", a: "\"Her friends don't need to see anything; she needs to hear it.\"", bundle: 'pro' },
+        { q: "Saying nothing is being a pushover.", a: "\"Saying nothing for now isn't the same as saying nothing.\"", bundle: 'pro' },
+        { q: "A sharp comeback will end it.", a: "\"A sharp comeback will start something bigger.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Her People",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I criticise her family, she'll choose them over me.\" The belief that anything about her friends or family is off-limits.\n\nWhat is true instead: you can say that something didn't work for you while believing they meant well. Said that way, it isn't criticism — and she doesn't have to choose.\n\nIt feels reasonable because she loves them, and it's easy to picture her defending them.\n\nWhat it costs is quietly resenting the people who matter most to her.\n\nMindset: I can credit what they meant and still say how it landed.",
+      inputs: [
+        { q: "If I criticise her family, she'll choose them.", a: "\"If I credit what they meant, she doesn't have to choose.\"", bundle: 'pro' },
+        { q: "I can't say anything about her friends.", a: "\"I can say how one evening landed on me.\"", bundle: 'pro' },
+        { q: "She'll get defensive about her mum.", a: "\"Less so if I start with what her mum meant.\"", bundle: 'pro' },
+        { q: "I'll just avoid them.", a: "\"Avoiding them is harder on her than one honest sentence.\"", bundle: 'pro' },
+        { q: "They don't like me, so what's the point?", a: "\"I don't know that; I know one dinner felt hard.\"", bundle: 'pro' },
+        { q: "It's her family, so it's her problem.", a: "\"It's our evening, so it's worth one conversation.\"", bundle: 'pro' },
+        { q: "I'll just put up with it.", a: "\"Putting up with it is how I end up disliking them.\"", bundle: 'pro' },
+        { q: "Anything I say will sound like an attack.", a: "\"Not if I lead with what they got right.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Too Small to Mention",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"It's too small to mention.\" The belief that only big things are worth saying.\n\nWhat is true instead: small is the best size for a complaint. It's easy to say, easy to hear, and easy to fix. Big things were usually small once.\n\nIt feels reasonable because mentioning something tiny can feel petty.\n\nWhat it costs is a pile of small things that eventually sounds like one big thing about her.\n\nMindset: small is the right size to say it.",
+      inputs: [
+        { q: "It's too small to mention.", a: "\"Small is exactly the size that's easy to fix.\"", bundle: 'pro' },
+        { q: "Mentioning this would be petty.", a: "\"Mentioning it once isn't petty; storing it is.\"", bundle: 'pro' },
+        { q: "I'll wait until it really matters.", a: "\"By then, it'll matter too much to say calmly.\"", bundle: 'pro' },
+        { q: "She'll laugh at me for caring.", a: "\"Then she can laugh, and still know.\"", bundle: 'pro' },
+        { q: "Nobody else would mind this.", a: "\"I mind it a little, and that's enough to say it.\"", bundle: 'pro' },
+        { q: "It's only happened twice.", a: "\"Twice is the right time to say it.\"", bundle: 'pro' },
+        { q: "I'm making something out of nothing.", a: "\"I'm saying something small before it becomes something.\"", bundle: 'pro' },
+        { q: "I'll mention it if it keeps happening.", a: "\"If I mention it now, it may stop happening.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  alexandergrace5: [
+    {
+      name: "The Steady Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If she's criticising me, I'm failing.\" The pack-wide belief that being criticised is a verdict on you.\n\nWhat is true instead: criticism is information about one thing. Some of it will be right, some of it won't, and none of it decides who you are.\n\nIt feels reasonable because criticism from someone you love hits harder than from anyone else.\n\nWhat it costs is either defending everything or collapsing under everything — and neither helps her or you.\n\nMindset: I can hear it without being flattened by it.",
+      inputs: [
+        { q: "If she's criticising me, I'm failing.", a: "\"She's telling me about one thing; I can hear it.\"", bundle: 'pro' },
+        { q: "I must defend myself, or she'll think she's right.", a: "\"If she's right, I'll own it; if not, I'll say so calmly.\"", bundle: 'pro' },
+        { q: "Being criticised means she doesn't love me.", a: "\"She's criticising something because she cares how it goes.\"", bundle: 'pro' },
+        { q: "I can't stand being told I'm wrong.", a: "\"I can stand it; it's uncomfortable, not dangerous.\"", bundle: 'pro' },
+        { q: "I always mess things up.", a: "\"I messed up this one, and I can fix it.\"", bundle: 'pro' },
+        { q: "I have to get everything right.", a: "\"I'll get some things wrong, and put them right.\"", bundle: 'pro' },
+        { q: "If I admit it, she'll use it against me.", a: "\"If I admit it, there's less to argue about.\"", bundle: 'pro' },
+        { q: "I need her to see my side before I can apologise.", a: "\"I can apologise first, and give my side later.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Inner Critic",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"There's something wrong with me.\" The belief that every mistake proves a deeper flaw.\n\nWhat is true instead: you made a mistake. That's guilt — useful, specific, fixable. The feeling that you are the mistake is shame, and it doesn't fix anything.\n\nIt feels reasonable because the voice is familiar, and her criticism seems to confirm it.\n\nWhat it costs is over-apologising, taking all the blame, and never being able to hear the part she's right about.\n\nMindset: I did something wrong. I am not something wrong.",
+      inputs: [
+        { q: "There's something wrong with me.", a: "\"I did something wrong, and I can fix it.\"", bundle: 'pro' },
+        { q: "I'm a terrible partner.", a: "\"I was a poor partner tonight, and I can do better tomorrow.\"", bundle: 'pro' },
+        { q: "She's right, I'm hopeless.", a: "\"She's right about the bins; the rest is my own voice.\"", bundle: 'pro' },
+        { q: "I ruin everything.", a: "\"I ruined dinner, not everything.\"", bundle: 'pro' },
+        { q: "I should know better by now.", a: "\"I'm still learning, and this is one more lesson.\"", bundle: 'pro' },
+        { q: "Everyone else manages this.", a: "\"Everyone else gets it wrong too; I just don't see it.\"", bundle: 'pro' },
+        { q: "I deserve to feel bad.", a: "\"I deserve to feel sorry, and then to fix it.\"", bundle: 'pro' },
+        { q: "I'll never get this right.", a: "\"I got it wrong today; that's all today says.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Explaining Myself",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"I had a good reason, so she needs to hear it.\" Half true — your reasons often are good.\n\nWhat is true: context matters, and sometimes she'll feel better once she knows it.\n\nWhat gets added is that the reason has to come first. Heard before the apology, it sounds like an excuse.\n\nWhat it costs is apologies that never land, because they arrive after a defence.\n\nMindset: keep the reason. Drop the need to say it first.",
+      inputs: [
+        { q: "I had a good reason, so she needs to hear it.", a: "\"True — but 'she needs to hear it first' is the part I added.\"", bundle: 'pro' },
+        { q: "It wasn't really my fault.", a: "\"True, partly — but 'so I shouldn't apologise' is the part I added.\"", bundle: 'pro' },
+        { q: "If she knew why, she wouldn't be upset.", a: "\"True, maybe — but 'so explaining will fix it' is the part I added.\"", bundle: 'pro' },
+        { q: "I'm not going to apologise for something I didn't mean.", a: "\"True that I didn't mean it — but 'so it didn't hurt' is the part I added.\"", bundle: 'pro' },
+        { q: "She's being unfair.", a: "\"True, perhaps — but 'so I'll argue first' is the part I added.\"", bundle: 'pro' },
+        { q: "I need her to understand my side.", a: "\"True — but 'before she feels heard' is the part I added.\"", bundle: 'pro' },
+        { q: "An apology without the reason is dishonest.", a: "\"True that the reason is real — but 'it has to come first' is the part I added.\"", bundle: 'pro' },
+        { q: "If I just say sorry, I'm admitting everything.", a: "\"True that it's an admission — but 'of everything' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Always the One Who Says Sorry",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'm the bigger person — I'm always the first to apologise.\" A belief that feels like maturity, and often is.\n\nWhat is true instead: apologising first is good when you did something wrong. Apologising for everything, to end the tension, is something else.\n\nIt feels reasonable because it works — the argument stops, and you feel like the calm one.\n\nWhat it costs is apologies that mean less each time, and a relationship where you carry all the blame.\n\nMindset: I'll apologise for my part — only my part.",
+      inputs: [
+        { q: "I'm always the first to say sorry.", a: "\"Even when I haven't done anything wrong.\"", bundle: 'pro' },
+        { q: "I'm the bigger person.", a: "\"And the bigger person also says when it wasn't his fault.\"", bundle: 'pro' },
+        { q: "I'll apologise just to end it.", a: "\"And the thing underneath never gets sorted.\"", bundle: 'pro' },
+        { q: "It's easier if I take the blame.", a: "\"Easier tonight, and heavier every month.\"", bundle: 'pro' },
+        { q: "I don't mind being the one who backs down.", a: "\"Until I notice I always am.\"", bundle: 'pro' },
+        { q: "Someone has to be the adult.", a: "\"Being the adult includes saying what's fair.\"", bundle: 'pro' },
+        { q: "I say sorry because I want peace.", a: "\"And my sorry has started to mean less.\"", bundle: 'pro' },
+        { q: "I don't keep score.", a: "\"I don't, and I've stopped noticing my own share.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Proving It",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I have to prove I didn't mean it.\" The belief that you need to convince her of your innocence before anything else can happen.\n\nWhat is true instead: what you meant matters less, in the moment, than how it landed. You can say you didn't mean it once — and then deal with how it landed.\n\nIt feels reasonable because being misread feels unfair, and you want it put right.\n\nWhat it costs is long arguments about your intentions while the hurt goes unanswered.\n\nMindset: I can say what I meant once, and then deal with what happened.",
+      inputs: [
+        { q: "I have to prove I didn't mean it.", a: "\"I can say it once, and then deal with how it landed.\"", bundle: 'pro' },
+        { q: "She has to believe me.", a: "\"She'll believe me faster if I stop arguing.\"", bundle: 'pro' },
+        { q: "I won't be misunderstood.", a: "\"I can be misunderstood for a moment and still fix it.\"", bundle: 'pro' },
+        { q: "I need her to admit she got me wrong.", a: "\"I need us to be okay more than I need that.\"", bundle: 'pro' },
+        { q: "If I don't explain, she'll think the worst.", a: "\"If I listen first, she'll hear the explanation better.\"", bundle: 'pro' },
+        { q: "My intentions were good, so I'm not at fault.", a: "\"My intentions were good, and it still hurt her.\"", bundle: 'pro' },
+        { q: "I'll keep explaining until she gets it.", a: "\"I'll explain once, and then ask how she is.\"", bundle: 'pro' },
+        { q: "Being accused is the worst thing.", a: "\"Being accused is hard; staying steady is still possible.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Hurts, So It's True",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If it stings this much, she must be right.\" The belief that the strength of the pain proves the criticism.\n\nWhat is true instead: some pain is the clean sadness of a real mistake. Some is old shame that her words happened to touch. The size of the sting tells you about your history, not about the facts.\n\nIt feels reasonable because pain feels like evidence.\n\nWhat it costs is accepting labels that aren't true, or lashing out to make the pain stop.\n\nMindset: I can notice which kind of hurt this is before I answer.",
+      inputs: [
+        { q: "If it stings this much, she must be right.", a: "\"It stings because it touched something old; I'll check the facts.\"", bundle: 'pro' },
+        { q: "I feel terrible, so I must have done something terrible.", a: "\"I feel terrible, and I did one thing wrong.\"", bundle: 'pro' },
+        { q: "This hurts too much to answer calmly.", a: "\"Then I'll take a breath before I answer.\"", bundle: 'pro' },
+        { q: "Her words prove what I always thought about myself.", a: "\"Her words touched an old belief; they didn't prove it.\"", bundle: 'pro' },
+        { q: "I have to make this feeling stop right now.", a: "\"I can let it be there while I answer.\"", bundle: 'pro' },
+        { q: "I'm overreacting, so I'm the problem.", a: "\"I'm reacting to something old; I can say that.\"", bundle: 'pro' },
+        { q: "The hurt means I should give in.", a: "\"The hurt means I should slow down.\"", bundle: 'pro' },
+        { q: "Nobody would feel this bad unless it was true.", a: "\"People feel this bad about untrue things all the time.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  alexandergrace6: [
+    {
+      name: "The Open Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Showing what I feel makes me weak.\" The pack-wide belief that a man should keep his inner life to himself.\n\nWhat is true instead: sharing what you feel — calmly, a piece at a time — is how people come to know you. Staying closed doesn't make you strong; it makes you hard to reach.\n\nIt feels reasonable because many men were taught early that feelings are a private matter.\n\nWhat it costs is a partner who feels shut out, and a life where nobody quite knows you.\n\nMindset: letting her in is not weakness. It's trust.",
+      inputs: [
+        { q: "Showing what I feel makes me weak.", a: "\"Showing what I feel, calmly, takes more strength than hiding it.\"", bundle: 'pro' },
+        { q: "Men should keep their feelings to themselves.", a: "\"Men who keep everything in end up alone with it.\"", bundle: 'pro' },
+        { q: "She needs me to be strong.", a: "\"Strong includes telling her when things are hard.\"", bundle: 'pro' },
+        { q: "If I share, she'll lose respect for me.", a: "\"If I share calmly, she'll know me better.\"", bundle: 'pro' },
+        { q: "I don't do feelings.", a: "\"I have them anyway; I can share a small one.\"", bundle: 'pro' },
+        { q: "Talking about it won't change anything.", a: "\"Talking about it changes whether I'm alone with it.\"", bundle: 'pro' },
+        { q: "She doesn't need to know.", a: "\"She'll feel it anyway; better she knows why.\"", bundle: 'pro' },
+        { q: "My dad never talked about this stuff.", a: "\"And I didn't really know him; I'd like her to know me.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Used Against Me",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I tell her, she'll use it against me later.\" The belief that any vulnerability becomes ammunition.\n\nWhat is true instead: some people do misuse what they're told, and you'll learn who does by sharing small things first. Most partners use what they know to understand you better.\n\nIt feels reasonable because you may have had it happen before, with someone else.\n\nWhat it costs is a relationship where she never gets the chance to prove you wrong.\n\nMindset: I can test trust in small pieces, rather than never testing it.",
+      inputs: [
+        { q: "If I tell her, she'll use it against me.", a: "\"If I tell her something small, I'll find out.\"", bundle: 'pro' },
+        { q: "It happened before, so it'll happen again.", a: "\"It happened with someone else; she hasn't had her chance.\"", bundle: 'pro' },
+        { q: "Anything I say can be thrown back at me.", a: "\"Anything I don't say can't bring us closer either.\"", bundle: 'pro' },
+        { q: "She'll bring it up in the next fight.", a: "\"If she does, I can say that's not okay.\"", bundle: 'pro' },
+        { q: "It's safer to keep it to myself.", a: "\"Safer, and lonelier.\"", bundle: 'pro' },
+        { q: "I can't trust anyone with this.", a: "\"I can trust her with a small part and see.\"", bundle: 'pro' },
+        { q: "Once it's out, I can't take it back.", a: "\"That's why I'll start with something small.\"", bundle: 'pro' },
+        { q: "Vulnerability is a weakness someone will exploit.", a: "\"It's also the only way to be really known.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Handling It Alone",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I deal with my own problems. I don't burden anyone.\" A belief that feels like self-reliance — and often is admirable.\n\nWhat is true instead: handling things yourself is a real skill. Refusing all help, and not telling her what's going on, is something else.\n\nIt feels reasonable because you're capable, and you don't want to worry her.\n\nWhat it costs is a partner who finds out late, feels shut out, and wonders what else you haven't told her.\n\nMindset: I can handle it and still let her in on it.",
+      inputs: [
+        { q: "I deal with my own problems.", a: "\"And she finds out about them from my mood.\"", bundle: 'pro' },
+        { q: "I don't want to burden her.", a: "\"And she feels shut out instead.\"", bundle: 'pro' },
+        { q: "I'm good at sorting things myself.", a: "\"Good at it, and alone with it.\"", bundle: 'pro' },
+        { q: "She's got enough on her plate.", a: "\"And she'd still rather know.\"", bundle: 'pro' },
+        { q: "Asking for help is admitting I can't cope.", a: "\"And not asking is why I'm this tired.\"", bundle: 'pro' },
+        { q: "I'll tell her once it's sorted.", a: "\"By then she's already guessed something's wrong.\"", bundle: 'pro' },
+        { q: "I'm the one who looks after us.", a: "\"And nobody's looking after me.\"", bundle: 'pro' },
+        { q: "I never need anything from anyone.", a: "\"Which means nobody gets to give me anything.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "She Knows",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"She knows I appreciate her.\" Half true — she may well know it, in general.\n\nWhat is true: actions do show care, and she probably sees a lot of what you do.\n\nWhat gets added is that knowing it in general is the same as hearing it. It isn't. Specific thanks, said out loud, reach her in a way that general knowledge doesn't.\n\nWhat it costs is a partner who feels taken for granted by someone who is, in fact, grateful.\n\nMindset: keep the gratitude. Drop the idea that it doesn't need saying.",
+      inputs: [
+        { q: "She knows I appreciate her.", a: "\"True, in general — but 'so I don't need to say it' is the part I added.\"", bundle: 'pro' },
+        { q: "My actions show how I feel.", a: "\"True, partly — but 'so words don't matter' is the part I added.\"", bundle: 'pro' },
+        { q: "Saying thank you all the time is fake.", a: "\"True, if it's automatic — but 'so I shouldn't say it at all' is the part I added.\"", bundle: 'pro' },
+        { q: "She'd tell me if she felt unappreciated.", a: "\"True, maybe — but 'so silence means she's fine' is the part I added.\"", bundle: 'pro' },
+        { q: "We've been together too long for that.", a: "\"True that it's different now — but 'so it's not needed' is the part I added.\"", bundle: 'pro' },
+        { q: "I show it in other ways.", a: "\"True — but 'so she'll hear it anyway' is the part I added.\"", bundle: 'pro' },
+        { q: "It's obvious how I feel about her.", a: "\"True to me — but 'obvious to her' is the part I added.\"", bundle: 'pro' },
+        { q: "Saying it would feel awkward.", a: "\"True, at first — but 'so it's not worth it' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "All or Nothing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I start opening up, it'll all come out.\" The belief that sharing anything will open a flood.\n\nWhat is true instead: you can choose the size of what you share. One piece today, another next week. You stay in charge of the pace.\n\nIt feels reasonable because when you've held things in for a long time, they feel like one enormous thing.\n\nWhat it costs is saying nothing, because saying something feels like saying everything.\n\nMindset: I choose how much, and I can start small.",
+      inputs: [
+        { q: "If I start, it'll all come out.", a: "\"I can share one piece and stop there.\"", bundle: 'pro' },
+        { q: "It's too big to talk about.", a: "\"It's too big to talk about all at once; a corner of it is fine.\"", bundle: 'pro' },
+        { q: "Once I open the door, I can't close it.", a: "\"I can open it a little, and choose when to open it more.\"", bundle: 'pro' },
+        { q: "I'll wait until I can explain it properly.", a: "\"I can start with the part I can explain.\"", bundle: 'pro' },
+        { q: "It'll be too much for her.", a: "\"One piece won't be too much.\"", bundle: 'pro' },
+        { q: "I don't know where to begin.", a: "\"I'll begin with how today felt.\"", bundle: 'pro' },
+        { q: "If I say a bit, she'll want everything.", a: "\"Then I'll tell her I'm going slowly.\"", bundle: 'pro' },
+        { q: "I have to be ready to talk about all of it.", a: "\"I only have to be ready for the next bit.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being a Burden",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"My problems would just weigh her down.\" The belief that sharing is a cost she has to pay.\n\nWhat is true instead: most people feel closer, not heavier, when someone they love trusts them with something. And a specific request — \"can you ask me about it on Friday?\" — is light to carry.\n\nIt feels reasonable because you care about her, and don't want to add to her stress.\n\nWhat it costs is a relationship where she carries her things to you, and you carry yours alone.\n\nMindset: being trusted feels good. I can give her that.",
+      inputs: [
+        { q: "My problems would just weigh her down.", a: "\"Being trusted with them might bring her closer.\"", bundle: 'pro' },
+        { q: "She has enough to deal with.", a: "\"One small request isn't a burden.\"", bundle: 'pro' },
+        { q: "I don't want her to worry about me.", a: "\"She worries more when I'm silent.\"", bundle: 'pro' },
+        { q: "It's not fair to dump this on her.", a: "\"Sharing it isn't dumping it, if I say what would help.\"", bundle: 'pro' },
+        { q: "She'll feel she has to fix it.", a: "\"Not if I tell her I just need her to listen.\"", bundle: 'pro' },
+        { q: "I'll only share when it's serious.", a: "\"Then she only ever hears me in a crisis.\"", bundle: 'pro' },
+        { q: "Nobody wants to hear about my problems.", a: "\"She does; she's said so.\"", bundle: 'pro' },
+        { q: "I should be the one supporting her.", a: "\"We can take turns.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };

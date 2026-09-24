@@ -11039,4 +11039,325 @@ const multiStepCollections = {
       ]
     },
   ],
+  alexandergrace4: [
+    {
+      name: "The Small Thing",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Name It Early**, then **Say How It Lands**, then **Suggest What to Do Instead**. How to raise a small annoyance so that it stays small.\n\n1. **Name It Early** — flag it the first time, and say it's small.\n2. **Say How It Lands** — if she asks why it matters, give the effect on you.\n3. **Suggest What to Do Instead** — end with one thing she can say yes to.\n\nWhy this order: the flag keeps the size honest. The effect answers \"why does it matter?\" without an accusation. The alternative ends the conversation with a plan instead of a mood.\n\nThe usual order is silence for a month, then all three at once, loudly.\n\nMindset: small, felt, and fixable.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She has started finishing your sentences when you talk to her friends.",
+          steps: [
+            { front: "Name It Early — you're driving home after the second time.", back: "\"Small thing from tonight — you finished my sentence a couple of times.\"", guideFront: "Say the small thing when...", guideBack: "A small thing, said while small" },
+            { front: "Say How It Lands — she says, \"I was just helping.\"", back: "\"I know. It left me feeling like I couldn't tell my own story.\"", guideFront: "Tell them the effect it had when...", guideBack: "The effect, without the accusation" },
+            { front: "Suggest What to Do Instead — she asks what you'd prefer.", back: "\"Just let me get to the end, even if I'm slow. Jump in after.\"", guideFront: "Offer a concrete alternative when...", guideBack: "Something they could do next time" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She has twice made plans for your Saturday without checking.",
+          steps: [
+            { front: "Name It Early — she mentions lunch with her cousins.", back: "\"Can I flag something before it becomes a thing? The Saturday plans.\"", guideFront: "Say the small thing when...", guideBack: "A small thing, said while small" },
+            { front: "Say How It Lands — she says, \"I thought you'd like it.\"", back: "\"I might. When it arrives already decided, I feel like a passenger.\"", guideFront: "Tell them the effect it had when...", guideBack: "The effect, without the accusation" },
+            { front: "Suggest What to Do Instead — she says, \"So what should I do?\"", back: "\"Just ask me first. Even a text is fine.\"", guideFront: "Offer a concrete alternative when...", guideBack: "Something they could do next time" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She keeps using your razor.",
+          steps: [
+            { front: "Name It Early — you find it blunt again.", back: "\"Silly one, but can we talk about the razor?\"", guideFront: "Say the small thing when...", guideBack: "A small thing, said while small" },
+            { front: "Say How It Lands — she laughs.", back: "\"It's funny, and it also means I shave with a blunt blade most mornings.\"", guideFront: "Tell them the effect it had when...", guideBack: "The effect, without the accusation" },
+            { front: "Suggest What to Do Instead — she says, \"Sorry!\"", back: "\"I'll buy you a pack of your own this week. Deal?\"", guideFront: "Offer a concrete alternative when...", guideBack: "Something they could do next time" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Her Friends at Dinner",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Later, Just the Two of You**, then **Good Intent, Different Effect**, then **Suggest What to Do Instead**. What to do when her people made you uncomfortable.\n\n1. **Later, Just the Two of You** — stay easy at the table; bring it up at home.\n2. **Good Intent, Different Effect** — credit what they meant, then say how it was.\n3. **Suggest What to Do Instead** — give her one thing that would help next time.\n\nWhy this order: waiting keeps it out of the performance. The credit stops her defending them. The alternative gives her something she can take back to them, if she wants to.\n\nThe usual order is a scene at the table, then an argument about her friends.\n\nMindset: private, generous, and specific.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Her friends asked you a string of pointed questions about your ex at dinner.",
+          steps: [
+            { front: "Later, Just the Two of You — at the table, one of them asks another.", back: "(You answer briefly and change the subject.) Later: \"Can I mention something about dinner?\"", guideFront: "Save it for private when...", guideBack: "A calm word, afterwards, alone" },
+            { front: "Good Intent, Different Effect — she says, \"What about it?\"", back: "\"I know they're protective of you. The questions about my ex felt like an interview.\"", guideFront: "Credit the intention first when...", guideBack: "What they meant, and what it did" },
+            { front: "Suggest What to Do Instead — she says, \"They just want to know you.\"", back: "\"I'd love that. Maybe a smaller dinner, and I'll bring up my past when I'm ready.\"", guideFront: "Offer a concrete alternative when...", guideBack: "Something they could do next time" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Her mother kept correcting how you carved the roast.",
+          steps: [
+            { front: "Later, Just the Two of You — at the table, she corrects you a third time.", back: "(You smile and carry on.) In the car: \"Can we talk about lunch?\"", guideFront: "Save it for private when...", guideBack: "A calm word, afterwards, alone" },
+            { front: "Good Intent, Different Effect — she sighs, \"She does that.\"", back: "\"I know she means well. It felt like I was being marked.\"", guideFront: "Credit the intention first when...", guideBack: "What they meant, and what it did" },
+            { front: "Suggest What to Do Instead — she asks what she should do.", back: "\"Nothing to her. I'd just love it if you gave me a wink, so I know you see it.\"", guideFront: "Offer a concrete alternative when...", guideBack: "Something they could do next time" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Her friends talked about your argument in the group chat you're in.",
+          steps: [
+            { front: "Later, Just the Two of You — a friend posts a joke about it.", back: "(You don't reply.) That evening: \"Can I mention the group chat?\"", guideFront: "Save it for private when...", guideBack: "A calm word, afterwards, alone" },
+            { front: "Good Intent, Different Effect — she says, \"They were just being supportive.\"", back: "\"I believe that. It still felt strange having our fight in public.\"", guideFront: "Credit the intention first when...", guideBack: "What they meant, and what it did" },
+            { front: "Suggest What to Do Instead — she says, \"I talk to them about everything.\"", back: "\"That's fine. Could it just be in a chat I'm not in?\"", guideFront: "Offer a concrete alternative when...", guideBack: "Something they could do next time" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Hint You Missed",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Ask Her to Spell It Out**, then **Say How It Lands**, then **Suggest What to Do Instead**. What to do when she's upset that you didn't guess.\n\n1. **Ask Her to Spell It Out** — say you want to help, and ask her to tell you plainly.\n2. **Say How It Lands** — if she's hurt that you didn't know, say how the guessing feels on your side.\n3. **Suggest What to Do Instead** — agree a way to say it next time.\n\nWhy this order: asking gets the actual thing on the table. The effect explains, without blame, why the guessing doesn't work. The alternative makes next time easier for both of you.\n\nThe usual order is guessing, guessing wrong, and apologising for the wrong thing.\n\nMindset: ask, explain, and agree.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She's been cold since the weekend, and you don't know why.",
+          steps: [
+            { front: "Ask Her to Spell It Out — she says, \"It's nothing.\"", back: "\"It doesn't feel like nothing. I want to fix it — tell me straight?\"", guideFront: "Invite her to say it straight when...", guideBack: "An open door to say it plainly" },
+            { front: "Say How It Lands — she says, \"You forgot our anniversary dinner, and I shouldn't have to remind you.\"", back: "\"I'm sorry, I did. When I have to guess, I end up guessing wrong, and I hate that.\"", guideFront: "Tell them the effect it had when...", guideBack: "The effect, without the accusation" },
+            { front: "Suggest What to Do Instead — she softens.", back: "\"Can we put the big dates in a shared calendar? Then I won't miss them.\"", guideFront: "Offer a concrete alternative when...", guideBack: "Something they could do next time" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She sighs at the kitchen every evening, but says nothing.",
+          steps: [
+            { front: "Ask Her to Spell It Out — she sighs again.", back: "\"Is something about the kitchen bothering you? Just tell me.\"", guideFront: "Invite her to say it straight when...", guideBack: "An open door to say it plainly" },
+            { front: "Say How It Lands — she says, \"It's obvious. I clean it every night.\"", back: "\"It wasn't obvious to me. When it's all sighs, I feel like I'm failing a test.\"", guideFront: "Tell them the effect it had when...", guideBack: "The effect, without the accusation" },
+            { front: "Suggest What to Do Instead — she says, \"Okay, fair.\"", back: "\"Let's split it — I'll do Monday to Wednesday.\"", guideFront: "Offer a concrete alternative when...", guideBack: "Something they could do next time" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She said she was fine with you going to the match, then sulked all evening.",
+          steps: [
+            { front: "Ask Her to Spell It Out — you notice.", back: "\"I think you weren't fine with it. I'd rather you told me.\"", guideFront: "Invite her to say it straight when...", guideBack: "An open door to say it plainly" },
+            { front: "Say How It Lands — she says, \"I just wanted you to want to stay.\"", back: "\"That makes sense. When you say 'fine' and don't mean it, I get it wrong.\"", guideFront: "Tell them the effect it had when...", guideBack: "The effect, without the accusation" },
+            { front: "Suggest What to Do Instead — she nods.", back: "\"Next time, say 'I'd love you to stay'. I'd probably stay.\"", guideFront: "Offer a concrete alternative when...", guideBack: "Something they could do next time" },
+          ]
+        },
+      ]
+    },
+  ],
+  alexandergrace5: [
+    {
+      name: "The Real Mistake",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Apologise for What You Did**, then **Own the Act, Not the Verdict**, then **Call It Done**. How to own a real mistake without drowning in it.\n\n1. **Apologise for What You Did** — say sorry, specifically.\n2. **Own the Act, Not the Verdict** — if a label comes with it, keep the act and leave the label.\n3. **Call It Done** — once it's fixed, check you're both okay.\n\nWhy this order: the apology comes first because the mistake is real. The label is answered only after she's heard the sorry, so it doesn't sound like an excuse. The check at the end gives both of you a way out.\n\nThe usual order is excuses first, apology last, and no end.\n\nMindset: sorry, steady, and settled.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You forgot to pick her up from the station, and she waited forty minutes in the rain.",
+          steps: [
+            { front: "Apologise for What You Did — she gets in the car, soaked.", back: "\"I'm so sorry. I forgot, and you waited in the rain. That's awful.\"", guideFront: "Name the specific thing when...", guideBack: "The apology, with the fact attached" },
+            { front: "Own the Act, Not the Verdict — she says, \"You just don't care about me.\"", back: "\"I forgot, and that's on me. I care about you a lot.\"", guideFront: "Own the act, not the label when...", guideBack: "The fix, without the self-verdict" },
+            { front: "Call It Done — at home, you've run her a hot bath.", back: "\"Bath's ready. Are we okay, or is there more?\"", guideFront: "Check it's settled when...", guideBack: "The fix, and a check it's over" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You told your friends about her job interview before she'd heard back.",
+          steps: [
+            { front: "Apologise for What You Did — she found out from one of them.", back: "\"I'm sorry. That was your news to share, and I shared it.\"", guideFront: "Name the specific thing when...", guideBack: "The apology, with the fact attached" },
+            { front: "Own the Act, Not the Verdict — she says, \"You can't keep anything to yourself.\"", back: "\"I got this one wrong. I do keep your things private — I'll be more careful.\"", guideFront: "Own the act, not the label when...", guideBack: "The fix, without the self-verdict" },
+            { front: "Call It Done — you've messaged your friends asking them to keep it quiet.", back: "\"I've asked them to keep it between us. Is there anything else I can do?\"", guideFront: "Check it's settled when...", guideBack: "The fix, and a check it's over" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You were short with her all evening because of work stress.",
+          steps: [
+            { front: "Apologise for What You Did — she says, \"What's wrong with you tonight?\"", back: "\"I'm sorry. I've been short with you, and it's not your fault — it's work.\"", guideFront: "Name the specific thing when...", guideBack: "The apology, with the fact attached" },
+            { front: "Own the Act, Not the Verdict — she says, \"You're always like this lately.\"", back: "\"I've been bad tonight, and maybe this week. I'll sort it.\"", guideFront: "Own the act, not the label when...", guideBack: "The fix, without the self-verdict" },
+            { front: "Call It Done — later, you've put your phone away.", back: "\"Phone's off. Can we have a proper evening?\"", guideFront: "Check it's settled when...", guideBack: "The fix, and a check it's over" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Big Reaction",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Name the Feeling**, then **Ask What Would Put It Right**, then **Call It Done**. What to do when she's far more upset than the thing seems to deserve.\n\n1. **Name the Feeling** — gently guess at what's underneath.\n2. **Ask What Would Put It Right** — once it's named, ask what would help.\n3. **Call It Done** — when you've done it, check you're both okay.\n\nWhy this order: the feeling first, because arguing with the surface only makes it bigger. The question turns the feeling into something you can act on. The check makes sure the real thing has been dealt with.\n\nThe usual order is \"It's only a small thing\" — which makes it bigger.\n\nMindset: look underneath, ask, and settle it.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She's furious that you forgot to text when you got to your friend's house.",
+          steps: [
+            { front: "Name the Feeling — she's still angry an hour later.", back: "\"I think you were really worried. Were you?\"", guideFront: "Say what you think is going on when...", guideBack: "A guess at what is underneath" },
+            { front: "Ask What Would Put It Right — she says, \"I thought something had happened.\"", back: "\"I'm sorry. What would help — a text every time I arrive somewhere?\"", guideFront: "Ask what she needs now when...", guideBack: "A question about what would fix it" },
+            { front: "Call It Done — you've set a reminder on your phone.", back: "\"Reminder's set. Are we okay now?\"", guideFront: "Check it's settled when...", guideBack: "The fix, and a check it's over" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She's upset that you mentioned your ex in passing at dinner.",
+          steps: [
+            { front: "Name the Feeling — she goes very quiet.", back: "\"That seemed to hit something. Does it worry you?\"", guideFront: "Say what you think is going on when...", guideBack: "A guess at what is underneath" },
+            { front: "Ask What Would Put It Right — she says, \"I just feel like I'm being compared.\"", back: "\"You're not. What would help you feel sure of that?\"", guideFront: "Ask what she needs now when...", guideBack: "A question about what would fix it" },
+            { front: "Call It Done — you've talked it through.", back: "\"Thank you for telling me. Anything else on your mind about it?\"", guideFront: "Check it's settled when...", guideBack: "The fix, and a check it's over" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She's angry that you left the dishes, far angrier than usual.",
+          steps: [
+            { front: "Name the Feeling — she slams a cupboard.", back: "\"You seem really tired and fed up. Is it just the dishes?\"", guideFront: "Say what you think is going on when...", guideBack: "A guess at what is underneath" },
+            { front: "Ask What Would Put It Right — she says, \"I feel like I do everything.\"", back: "\"What would help most — me taking over the kitchen this week?\"", guideFront: "Ask what she needs now when...", guideBack: "A question about what would fix it" },
+            { front: "Call It Done — the kitchen is clean.", back: "\"All done. Shall we sit down together?\"", guideFront: "Check it's settled when...", guideBack: "The fix, and a check it's over" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Harsh Tone",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Mistakes, Not Mistreatment**, then **Apologise for What You Did**, then **Ask What Would Put It Right**. What to do when you got something wrong and she's saying it harshly.\n\n1. **Mistakes, Not Mistreatment** — own it, and ask for a better tone.\n2. **Apologise for What You Did** — once the tone has changed, give the full apology.\n3. **Ask What Would Put It Right** — ask what would help now.\n\nWhy this order: the tone first, because nothing gets through while there's name-calling. The full apology follows, so it's clear you still own the mistake. The question moves you both to the fix.\n\nThe usual order is hitting back, then a fight about the tone, and the mistake forgotten.\n\nMindset: respect both ways, then the repair.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You double-booked the weekend, and she calls you an idiot.",
+          steps: [
+            { front: "Mistakes, Not Mistreatment — she's shouting.", back: "\"I did double-book, and I'm sorry. Can we talk without the name-calling?\"", guideFront: "Ask for a kinder tone when...", guideBack: "Owning it, and asking for respect" },
+            { front: "Apologise for What You Did — she calms down a bit.", back: "\"I'm sorry I said yes to both. I should have checked the calendar.\"", guideFront: "Name the specific thing when...", guideBack: "The apology, with the fact attached" },
+            { front: "Ask What Would Put It Right — she sighs.", back: "\"Which one would you rather keep? I'll cancel the other.\"", guideFront: "Ask what she needs now when...", guideBack: "A question about what would fix it" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You forgot to lock the car, and her bag was stolen.",
+          steps: [
+            { front: "Mistakes, Not Mistreatment — she says, \"You're completely useless.\"", back: "\"I forgot to lock it. I know that's awful. 'Useless' doesn't help us, though.\"", guideFront: "Ask for a kinder tone when...", guideBack: "Owning it, and asking for respect" },
+            { front: "Apologise for What You Did — she's crying now.", back: "\"I'm so sorry. It's my fault your bag's gone.\"", guideFront: "Name the specific thing when...", guideBack: "The apology, with the fact attached" },
+            { front: "Ask What Would Put It Right — she says, \"My cards were in there.\"", back: "\"What can I do first — call the bank, or the police?\"", guideFront: "Ask what she needs now when...", guideBack: "A question about what would fix it" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You forgot her friend's wedding gift, and she mocks you in front of her sister.",
+          steps: [
+            { front: "Mistakes, Not Mistreatment — later, at home.", back: "\"I forgot the gift, fair. The mocking in front of your sister hurt, though.\"", guideFront: "Ask for a kinder tone when...", guideBack: "Owning it, and asking for respect" },
+            { front: "Apologise for What You Did — she says, \"Okay, that was mean.\"", back: "\"Thank you. And I'm sorry I forgot — I knew it mattered.\"", guideFront: "Name the specific thing when...", guideBack: "The apology, with the fact attached" },
+            { front: "Ask What Would Put It Right — she nods.", back: "\"What would help — shall I pick something with you tomorrow?\"", guideFront: "Ask what she needs now when...", guideBack: "A question about what would fix it" },
+          ]
+        },
+      ]
+    },
+  ],
+  alexandergrace6: [
+    {
+      name: "When She Asks You to Open Up",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Ask What She Wants to Know**, then **Open Up in Steps**, then **Express Appreciation**. How to answer \"please open up\" without freezing or flooding.\n\n1. **Ask What She Wants to Know** — find out what she's looking for.\n2. **Open Up in Steps** — give her a piece, and see how it lands.\n3. **Express Appreciation** — thank her for listening.\n\nWhy this order: asking first tells you where to start. A small piece is easier to say and easier to receive. Thanking her afterwards makes the next time easier for both of you.\n\nThe usual order is \"There's nothing to tell\" — or everything at once.\n\nMindset: ask, share a piece, and thank her.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She says, \"I feel like there's a part of you I never see.\"",
+          steps: [
+            { front: "Ask What She Wants to Know — she's looking at you, waiting.", back: "\"I'd like you to see it. What are you curious about?\"", guideFront: "Ask what she's missing when...", guideBack: "A question about what she wants to hear" },
+            { front: "Open Up in Steps — she says, \"How you feel about your dad.\"", back: "\"It's complicated. I think I'm still angry with him — I haven't really said that before.\"", guideFront: "Share a little more when...", guideBack: "One more layer, not the whole story" },
+            { front: "Express Appreciation — she listens without judging.", back: "\"Thank you for listening. That's easier to say than I expected.\"", guideFront: "Say thank you, and what for when...", guideBack: "Thanks, with a reason attached" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She says, \"You never tell me when something's wrong.\"",
+          steps: [
+            { front: "Ask What She Wants to Know — you feel a bit defensive.", back: "\"Fair enough. Is it the big things, or the everyday stuff?\"", guideFront: "Ask what she's missing when...", guideBack: "A question about what she wants to hear" },
+            { front: "Open Up in Steps — she says, \"The everyday stuff.\"", back: "\"Okay. Today, work was rubbish. My manager took over my project.\"", guideFront: "Share a little more when...", guideBack: "One more layer, not the whole story" },
+            { front: "Express Appreciation — she says, \"That's awful — tell me more.\"", back: "\"Thanks for asking. It feels good to tell you.\"", guideFront: "Say thank you, and what for when...", guideBack: "Thanks, with a reason attached" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "On your third date, she says, \"You're hard to read.\"",
+          steps: [
+            { front: "Ask What She Wants to Know — she smiles.", back: "\"Fair. What would you like to know?\"", guideFront: "Ask what she's missing when...", guideBack: "A question about what she wants to hear" },
+            { front: "Open Up in Steps — she asks why you moved cities.", back: "\"Partly a job, partly a break-up. I'll tell you the second part another time.\"", guideFront: "Share a little more when...", guideBack: "One more layer, not the whole story" },
+            { front: "Express Appreciation — she says, \"That's a lot. Thanks for telling me.\"", back: "\"Thanks for asking properly. Not many people do.\"", guideFront: "Say thank you, and what for when...", guideBack: "Thanks, with a reason attached" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Hard Week",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Keep Her Posted**, then **Ask for the Help You Want**, then **Express Appreciation**. How to let her in when things are hard, rather than going quiet.\n\n1. **Keep Her Posted** — tell her where your head is.\n2. **Ask for the Help You Want** — say what would help.\n3. **Express Appreciation** — thank her when she does.\n\nWhy this order: the update stops her guessing. The request tells her how to help, so she can. The thanks closes the loop and makes the next hard week easier to share.\n\nThe usual order is going silent for a week, then snapping at her.\n\nMindset: tell her, ask her, thank her.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You're under huge pressure with a deadline at work.",
+          steps: [
+            { front: "Keep Her Posted — she notices you're distant on Monday evening.", back: "\"Heads up — this week's going to be rough at work. If I'm quiet, that's why.\"", guideFront: "Say where your head is when...", guideBack: "A short update from inside" },
+            { front: "Ask for the Help You Want — she asks what she can do.", back: "\"Could you handle dinners this week? I'll do all of them next week.\"", guideFront: "Ask for one kind of help when...", guideBack: "A specific request for support" },
+            { front: "Express Appreciation — by Friday, she's made dinner every night.", back: "\"Thank you for this week. I couldn't have done it without you.\"", guideFront: "Say thank you, and what for when...", guideBack: "Thanks, with a reason attached" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your father is in hospital, and you're struggling.",
+          steps: [
+            { front: "Keep Her Posted — you've been quiet for two days.", back: "\"I'm not shutting you out. I'm just really worried about Dad.\"", guideFront: "Say where your head is when...", guideBack: "A short update from inside" },
+            { front: "Ask for the Help You Want — she says, \"Tell me how to help.\"", back: "\"Could you come with me on Thursday? I don't want to go alone.\"", guideFront: "Ask for one kind of help when...", guideBack: "A specific request for support" },
+            { front: "Express Appreciation — after the visit.", back: "\"Thank you for coming. Having you there made it bearable.\"", guideFront: "Say thank you, and what for when...", guideBack: "Thanks, with a reason attached" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You've lost a big client, and money is tight.",
+          steps: [
+            { front: "Keep Her Posted — she asks why you're checking the bank app so much.", back: "\"I lost the Harrison contract. I'm worried about money for a few months.\"", guideFront: "Say where your head is when...", guideBack: "A short update from inside" },
+            { front: "Ask for the Help You Want — she offers to cut back.", back: "\"What would help most is going through the budget together on Sunday.\"", guideFront: "Ask for one kind of help when...", guideBack: "A specific request for support" },
+            { front: "Express Appreciation — Sunday, you've made a plan.", back: "\"Thank you. I feel so much less alone with it.\"", guideFront: "Say thank you, and what for when...", guideBack: "Thanks, with a reason attached" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Going Quiet",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Keep Her Posted**, then **Open Up in Steps**, then **Tell Her What She Adds**. What to do when she notices you've withdrawn.\n\n1. **Keep Her Posted** — say what's going on, and what it isn't.\n2. **Open Up in Steps** — if she asks more, share a piece.\n3. **Tell Her What She Adds** — end by telling her she matters.\n\nWhy this order: the update reassures her it isn't about her. Sharing a piece lets her in without flooding her. Ending on what she means to you answers the question underneath her worry.\n\nThe usual order is \"I'm fine\" — and another week of quiet.\n\nMindset: explain the quiet, share a piece, and tell her she matters.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You've been withdrawn for a week, and she asks if you're still happy together.",
+          steps: [
+            { front: "Keep Her Posted — she looks worried.", back: "\"Yes, I am. I've been quiet because I'm stressed about work — not about us.\"", guideFront: "Say where your head is when...", guideBack: "A short update from inside" },
+            { front: "Open Up in Steps — she asks what's happening at work.", back: "\"I think they might cut my team. I haven't wanted to say it out loud.\"", guideFront: "Share a little more when...", guideBack: "One more layer, not the whole story" },
+            { front: "Tell Her What She Adds — she holds your hand.", back: "\"You're the one thing I'm not worried about. I'm glad I have you.\"", guideFront: "Say what she brings you when...", guideBack: "What your life has because of her" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You've been skipping plans with her friends lately.",
+          steps: [
+            { front: "Keep Her Posted — she says, \"Don't you like my friends anymore?\"", back: "\"I do. I've been feeling low, and big groups are hard right now.\"", guideFront: "Say where your head is when...", guideBack: "A short update from inside" },
+            { front: "Open Up in Steps — she asks why you're low.", back: "\"I think it's my birthday coming up. Forty's hitting me harder than I thought.\"", guideFront: "Share a little more when...", guideBack: "One more layer, not the whole story" },
+            { front: "Tell Her What She Adds — she laughs kindly.", back: "\"Honestly, you're the best thing about the last ten years.\"", guideFront: "Say what she brings you when...", guideBack: "What your life has because of her" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You've been on your phone every evening, and she feels ignored.",
+          steps: [
+            { front: "Keep Her Posted — she says, \"Where are you lately?\"", back: "\"Sorry — I've been reading about the house sale. My head's full of it.\"", guideFront: "Say where your head is when...", guideBack: "A short update from inside" },
+            { front: "Open Up in Steps — she asks why it's taking over.", back: "\"I'm scared we'll lose money on it. That's what I keep checking.\"", guideFront: "Share a little more when...", guideBack: "One more layer, not the whole story" },
+            { front: "Tell Her What She Adds — she says, \"We'll figure it out.\"", back: "\"With you, I think we will. You make me braver about this stuff.\"", guideFront: "Say what she brings you when...", guideBack: "What your life has because of her" },
+          ]
+        },
+      ]
+    },
+  ],
 };
