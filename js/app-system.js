@@ -714,6 +714,7 @@ applyInputCounterVisibility();
     masculine1: { label: 'The Masculine Blueprint – Part 1', minLevel: 'complete' },
     askingforclarity: { label: 'Asking for Clarity', minLevel: 'complete' },
     calibratinghumour: { label: 'Calibrating Humour', minLevel: 'complete' },
+    brokenpromises: { label: 'Broken Promises and Trust', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -3171,6 +3172,20 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
+  brokenpromises: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
 };
 window.BUNDLE_DEFS = BUNDLE_DEFS;
 
@@ -4061,6 +4076,15 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  {
+    version: 'v1.29.10', date: 'September 2026', title: 'Broken Promises and Trust', audience: 'dev',
+    items: [
+      'A new pack, <strong>Broken Promises and Trust</strong> (<code>brokenpromises</code>, Repair &amp; Apology), imported at <strong>complete</strong>. 36 decks, 273 units, <strong>0 errors and 0 warnings</strong> in check-pack.',
+      'Seven strategies that follow a broken promise in time. Before it: <strong>Tell Them Early</strong>, <strong>Offer What You Can Still Do</strong>. At it: <strong>Say What It Cost Them</strong>, <strong>Correct the Cover Story</strong>, <strong>Accept the Consequence</strong>. After it: <strong>Promise Small</strong>, <strong>Report It Done</strong>.',
+      'Built on the research on restoring violated trust: a promise to do better does help, but only if the action follows \u2014 and a lie about the broken promise costs far more than the promise itself. That finding is the <em>Correct the Cover Story</em> strategy and the <em>Cover Story</em> mindset.',
+      'The boundary with Apologizing: an apology is about what happened; this pack is about the promise \u2014 telling in time, what happens instead, and getting trust back. Not a grid pack: its rows would be <em>stage</em>, which belongs in Sequences.',
+    ],
+  },
   {
     version: 'v1.29.09', date: 'September 2026', title: 'Calibrating Humour \u2014 the second grid pack', audience: 'dev',
     items: [

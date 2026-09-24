@@ -7033,4 +7033,102 @@ const mindsetCollections = {
       ]
     },
   ],
+  brokenpromises: [
+    {
+      name: "The Trust Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Once I've broken it, the trust is gone.\" The pack-wide belief that one broken promise is final.\n\nWhat is true instead: trust after a broken promise usually comes back — gradually, through what the other person sees you do next. What slows it down most is not the break but what you do around it.\n\nIt feels reasonable because the moment of letting someone down feels enormous, and their disappointment looks permanent.\n\nWhat it costs is giving up on the repair — and then the break really is final.\n\nMindset: trust is rebuilt one kept promise at a time.",
+      inputs: [
+        { q: "Once I've broken it, the trust is gone.", a: "\"It's damaged, not gone, and what I do next decides how long it stays that way.\"", bundle: 'pro' },
+        { q: "Nothing I say now will make any difference.", a: "\"Saying it early and plainly makes a difference, and doing it makes the rest.\"", bundle: 'pro' },
+        { q: "They'll never rely on me again.", a: "\"They'll rely on me again for small things first, if I keep them.\"", bundle: 'pro' },
+        { q: "I've ruined it, so there's no point trying.", a: "\"The only way it stays ruined is if I stop here.\"", bundle: 'pro' },
+        { q: "I need to make one big gesture to fix this.", a: "\"Small things kept will do more than one big thing announced.\"", bundle: 'pro' },
+        { q: "A good person wouldn't have broken it in the first place.", a: "\"Good people break promises; what matters is what they do next.\"", bundle: 'pro' },
+        { q: "They're overreacting to one mistake.", a: "\"They're reacting to what it cost them, and I don't get to size that.\"", bundle: 'pro' },
+        { q: "If I just act normal, it'll blow over.", a: "\"It'll blow over faster if I name it than if I act like it didn't happen.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Waiting to Tell",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I might still make it, so there's no need to say anything yet.\" The belief that holding back bad news is kinder, or at least not yet necessary.\n\nWhat is true instead: every day you wait is a day they could have used to plan around it. Early bad news is a change of plan; late bad news is a betrayal.\n\nIt feels reasonable because there really is a chance you will make it, and warning them early feels like giving up.\n\nWhat it costs is the thing you were trying to protect: their plans, and their trust in your word.\n\nMindset: tell them when I know, not when it is certain.",
+      inputs: [
+        { q: "I might still make it, so I won't say anything yet.", a: "\"If I warn them and make it anyway, nobody minds; if I wait and miss it, everybody does.\"", bundle: 'pro' },
+        { q: "I don't want to worry them for nothing.", a: "\"A small worry now costs them less than a surprise on the day.\"", bundle: 'pro' },
+        { q: "I'll tell them once I've found a solution.", a: "\"They might have a better solution than I do, if I tell them in time.\"", bundle: 'pro' },
+        { q: "It's awkward to bring it up.", a: "\"It's much more awkward to bring it up on the deadline.\"", bundle: 'pro' },
+        { q: "If I work all weekend, I can fix it quietly.", a: "\"Maybe, but if I can't, they'll find out on Monday with no time left.\"", bundle: 'pro' },
+        { q: "Telling them now makes it real.", a: "\"It's already real; telling them just makes it useful.\"", bundle: 'pro' },
+        { q: "They're busy, and I don't want to add to it.", a: "\"Adding it now is the smaller version of adding it later.\"", bundle: 'pro' },
+        { q: "I'll wait and see how Thursday goes.", a: "\"By Thursday it's their problem too, and they'll have less time to solve it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Cover Story",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"A small white lie will buy me time.\" The belief that a cover story — \"it's in the post\", \"I'm on my way\" — is harmless if you put things right soon after.\n\nWhat is true instead: a lie is a different kind of damage from a broken promise. People forgive a broken promise gradually. A lie about it recovers far more slowly, and sometimes not at all.\n\nIt feels reasonable because the lie is small, it saves an awkward moment, and you fully intend to fix the real problem.\n\nWhat it costs is that the real problem becomes the smaller one. The lie is what they remember.\n\nMindset: the cover story costs more than the thing it covers.",
+      inputs: [
+        { q: "A small white lie will buy me time.", a: "\"It buys me an hour and costs me the trust I was trying to protect.\"", bundle: 'pro' },
+        { q: "\"It's in the post\" is what everyone says.", a: "\"Everyone says it, and everyone knows what it means when it isn't.\"", bundle: 'pro' },
+        { q: "If I fix it quickly, they'll never know I lied.", a: "\"Maybe, but I'll know, and the next small lie will be easier.\"", bundle: 'pro' },
+        { q: "The truth would just upset them.", a: "\"The truth upsets them now; the lie upsets them more when they find it.\"", bundle: 'pro' },
+        { q: "I'll correct it if it comes up.", a: "\"If they find it, it's a second breach; if I say it, it's the first step back.\"", bundle: 'pro' },
+        { q: "It's not really a lie, just a bit optimistic.", a: "\"If I said it to avoid the real answer, it was a lie.\"", bundle: 'pro' },
+        { q: "Admitting the lie will make everything worse.", a: "\"It'll make today worse and everything after it better.\"", bundle: 'pro' },
+        { q: "I've already said it, so I have to stick to it.", a: "\"Sticking to it means building the next one on top of it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Reliable",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I never let anyone down. I always say yes.\" A belief that feels like one of your best qualities — and often is.\n\nWhat is true instead: the person who says yes to everything is the person who ends up breaking promises, because nobody can keep them all.\n\nIt feels reasonable because people rely on you, thank you, and come back to you. Being the one who says yes feels like being a good friend and a good colleague.\n\nWhat it costs is the promises you make faster than you can check — and the people who find out, late, that your yes did not mean what they thought.\n\nMindset: a reliable yes is one I have checked.",
+      inputs: [
+        { q: "I never let anyone down.", a: "\"Which is why saying yes to everything will make me let someone down.\"", bundle: 'pro' },
+        { q: "I always say yes when someone needs help.", a: "\"And sometimes they plan around a yes I couldn't keep.\"", bundle: 'pro' },
+        { q: "People know they can count on me.", a: "\"They can count on me for what I actually have time for, and I don't always check.\"", bundle: 'pro' },
+        { q: "I'm the one who gets things done.", a: "\"So when I drop one, nobody expects it and nobody has a backup.\"", bundle: 'pro' },
+        { q: "I don't like to disappoint people by saying no.", a: "\"A no now disappoints them less than a broken yes later.\"", bundle: 'pro' },
+        { q: "I can always find the time somehow.", a: "\"Somehow is usually someone else's time, or my sleep.\"", bundle: 'pro' },
+        { q: "My word is my bond.", a: "\"Then my word should be smaller, so I can keep all of it.\"", bundle: 'pro' },
+        { q: "I hate letting anyone down, so I take on more.", a: "\"Taking on more is exactly how I end up letting someone down.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Words Are Cheap",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"Words are cheap. Only actions count.\" A belief that is half right, which is why it is so convincing.\n\nWhat is true: actions are what rebuild trust. A promise to do better that is not kept does more harm than none.\n\nWhat gets added is \"so there's no point saying anything\". Research on broken trust finds the opposite: a promise to do better does help — as long as it is followed by the action.\n\nWhat it costs is the silent treatment of your own mistake: fixing things quietly while the other person never hears that you understood.\n\nMindset: say it, keep it small, and then do it.",
+      inputs: [
+        { q: "Words are cheap; only actions count.", a: "\"True, actions count most — but 'so I'll say nothing' is the part I added.\"", bundle: 'pro' },
+        { q: "Apologising is just talk.", a: "\"True, on its own — but 'so I'll skip it' is the part I added.\"", bundle: 'pro' },
+        { q: "I'll just quietly do better and they'll notice.", a: "\"True, they'll notice in time — but 'so they don't need to hear it' is the part I added.\"", bundle: 'pro' },
+        { q: "Promises mean nothing after I've broken one.", a: "\"True, big ones don't — but 'so small ones don't either' is the part I added.\"", bundle: 'pro' },
+        { q: "Explaining myself won't change anything.", a: "\"True, explaining won't — but 'so naming what it cost them won't' is the part I added.\"", bundle: 'pro' },
+        { q: "They'll judge me by what I do, not what I say.", a: "\"True — but 'so what I say doesn't matter' is the part I added.\"", bundle: 'pro' },
+        { q: "Talking about it just makes it bigger.", a: "\"True, talking too much does — but 'so one sentence will' is the part I added.\"", bundle: 'pro' },
+        { q: "The only proof is doing it.", a: "\"True — but 'so I shouldn't tell them when it's done' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Their Anger",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I tell them, they'll be furious.\" The belief that the other person's reaction is the thing to avoid.\n\nWhat is true instead: their anger is part of the cost of the broken promise, and it is usually shorter when you meet it directly than when you try to dodge it.\n\nIt feels reasonable because nobody wants to be on the receiving end of someone's disappointment, and avoiding it seems like it helps both of you.\n\nWhat it costs is time, truth, or both: you wait too long to tell them, or you shade the story to soften it.\n\nMindset: their anger is theirs to have. My job is to tell them.",
+      inputs: [
+        { q: "If I tell them, they'll be furious.", a: "\"They might be, and they'll be more furious if they find out late.\"", bundle: 'pro' },
+        { q: "I can't face their reaction.", a: "\"I don't have to enjoy it, I just have to be there for it.\"", bundle: 'pro' },
+        { q: "I'll soften the story so they're less upset.", a: "\"Softening it is how a broken promise becomes a lie.\"", bundle: 'pro' },
+        { q: "They have a right to be angry, so I should defend myself.", a: "\"If they have a right to be angry, there's nothing to defend.\"", bundle: 'pro' },
+        { q: "I'll wait until they're in a better mood.", a: "\"Their mood will be worse the longer I wait.\"", bundle: 'pro' },
+        { q: "If they're angry, it means the friendship is over.", a: "\"Angry people usually care, and that's a reason to repair it.\"", bundle: 'pro' },
+        { q: "I need them to forgive me right away.", a: "\"They get to take their time, and I can wait.\"", bundle: 'pro' },
+        { q: "Their reaction is too much for what I did.", a: "\"I don't get to decide what it cost them.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };

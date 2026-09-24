@@ -11627,4 +11627,174 @@ const memorizeCollections = {
       ]
     },
   ],
+  brokenpromises: [
+    {
+      name: "Core Idea",
+      description: "Seven strategies for breaking a promise well, and getting trust back:\n\n1. Tell Them Early\n2. Offer What You Can Still Do\n3. Say What It Cost Them\n4. Correct the Cover Story\n5. Accept the Consequence\n6. Promise Small\n7. Report It Done\n\nThey follow the break in time: two before it, three at it, two after it.",
+      cards: [
+        { q: "What are the seven strategies in this pack?", a: "Tell Them Early, Offer What You Can Still Do, Say What It Cost Them, Correct the Cover Story, Accept the Consequence, Promise Small, Report It Done.", bundle: 'free' },
+        { q: "How do the seven fit together?", a: "They follow the break in time: two before it, three at it, two after it.", bundle: 'free' },
+        { q: "What is the difference between this pack and an apology?", a: "An apology is about what happened. This pack is about the promise — telling in time, what happens instead, and getting trust back.", bundle: 'free' },
+        { q: "What costs more than a broken promise?", a: "A lie about it. The cover story recovers far more slowly than the break.", bundle: 'free' },
+        { q: "How does trust come back?", a: "Through what the other person sees you do next — small promises, kept.", bundle: 'free' },
+        { q: "Does a promise to do better help?", a: "Yes — research on trust finds it speeds recovery, but only if the action follows.", bundle: 'pro' },
+        { q: "What is the most common mistake after breaking a promise?", a: "Explaining why before saying anything about them.", bundle: 'pro' },
+        { q: "What is the most common mistake when trying to earn trust back?", a: "Making a big promise, which sounds exactly like the one that broke.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Tell Them Early",
+      description: "",
+      cards: [
+        { q: "What is Tell Them Early?", a: "Telling someone you will break a promise as soon as you know, before the deadline.", bundle: 'free' },
+        { q: "How does Tell Them Early sound?", a: "\"I'm going to miss Friday. I wanted you to hear it now, not on Friday.\"", bundle: 'free' },
+        { q: "When is Tell Them Early the right one?", a: "As soon as you know the promise will break — not when it is certain.", bundle: 'free' },
+        { q: "What does Tell Them Early protect?", a: "Their time to plan around it.", bundle: 'free' },
+        { q: "What are the three moments to say it?", a: "As soon as you know, before they rely on it, and when the yes was a mistake.", bundle: 'free' },
+        { q: "When does Tell Them Early go wrong?", a: "When it comes with a date you are not sure of either.", bundle: 'pro' },
+        { q: "What is Tell Them Early better than, and why?", a: "Waiting and hoping. Early bad news is a change of plan; late bad news is a betrayal.", bundle: 'pro' },
+        { q: "Which strategy often follows Tell Them Early?", a: "Offer What You Can Still Do — they need a new plan.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Offer What You Can Still Do",
+      description: "",
+      cards: [
+        { q: "What is Offer What You Can Still Do?", a: "Offering a real alternative when you cannot keep the promise as made.", bundle: 'free' },
+        { q: "How does Offer What You Can Still Do sound?", a: "\"I can't do Saturday. I can do Sunday morning, or I'll pay for a van.\"", bundle: 'free' },
+        { q: "When is Offer What You Can Still Do the right one?", a: "When the promise has left a hole in their plans.", bundle: 'free' },
+        { q: "What does Offer What You Can Still Do protect?", a: "Their plan — it turns \"you let me down\" into \"right, what now?\"", bundle: 'free' },
+        { q: "What are the three kinds of alternative?", a: "Part of it, later, or a different way.", bundle: 'free' },
+        { q: "When does Offer What You Can Still Do go wrong?", a: "When the alternative is another promise you cannot keep.", bundle: 'pro' },
+        { q: "What is Offer What You Can Still Do better than, and why?", a: "An explanation. They need a new plan more than a reason.", bundle: 'pro' },
+        { q: "Which strategy often comes before Offer What You Can Still Do?", a: "Say What It Cost Them — so the offer does not sound like skipping their side.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say What It Cost Them",
+      description: "",
+      cards: [
+        { q: "What is Say What It Cost Them?", a: "Naming the practical cost of the broken promise to the other person.", bundle: 'free' },
+        { q: "How does Say What It Cost Them sound?", a: "\"You went into that meeting with nothing because of me.\"", bundle: 'free' },
+        { q: "When is Say What It Cost Them the right one?", a: "When the promise has broken and they paid for it.", bundle: 'free' },
+        { q: "What does Say What It Cost Them protect?", a: "Their sense that you see the size of it from their side.", bundle: 'free' },
+        { q: "What are the three kinds of cost?", a: "Time, plans, and face.", bundle: 'free' },
+        { q: "When does Say What It Cost Them go wrong?", a: "When it is vague — \"I know it caused problems\" — or turns into your guilt.", bundle: 'pro' },
+        { q: "What is Say What It Cost Them better than, and why?", a: "Explaining your reason. The reason is about you; the cost is about them.", bundle: 'pro' },
+        { q: "How is Say What It Cost Them different from Name What They Felt in Apologizing?", a: "That one names the feeling. This one names the practical cost.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Correct the Cover Story",
+      description: "",
+      cards: [
+        { q: "What is Correct the Cover Story?", a: "Correcting, yourself and out loud, a lie you told to cover a broken promise.", bundle: 'free' },
+        { q: "How does Correct the Cover Story sound?", a: "\"I told you I'd sent it. I hadn't. That's the part I'm most sorry about.\"", bundle: 'free' },
+        { q: "When is Correct the Cover Story the right one?", a: "Whenever you said anything untrue about the promise — and before they find out.", bundle: 'free' },
+        { q: "What does Correct the Cover Story protect?", a: "The trust that a lie damages far more than a broken promise does.", bundle: 'free' },
+        { q: "What are the three common cover stories?", a: "\"It's done\", \"I'm on my way\", and \"something came up\".", bundle: 'free' },
+        { q: "When does Correct the Cover Story go wrong?", a: "When it waits until they find out. Then it is a second breach, not a first step back.", bundle: 'pro' },
+        { q: "What is Correct the Cover Story better than, and why?", a: "Fixing the problem quietly and hoping. The lie is what they remember.", bundle: 'pro' },
+        { q: "Which strategy often follows Correct the Cover Story?", a: "Accept the Consequence — the lie usually makes it bigger.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Accept the Consequence",
+      description: "",
+      cards: [
+        { q: "What is Accept the Consequence?", a: "Accepting the result of a broken promise without negotiating it down.", bundle: 'free' },
+        { q: "How does Accept the Consequence sound?", a: "\"That's fair. Give it to Petra.\"", bundle: 'free' },
+        { q: "When is Accept the Consequence the right one?", a: "When they have decided what happens now.", bundle: 'free' },
+        { q: "What does Accept the Consequence protect?", a: "Them from having to be the bad guy for holding the line.", bundle: 'free' },
+        { q: "What are the three kinds of consequence?", a: "Losing the task, paying for it, and their trust for a while.", bundle: 'free' },
+        { q: "When does Accept the Consequence go wrong?", a: "When it comes with \"but\" — then it is a bargain, not acceptance.", bundle: 'pro' },
+        { q: "What is Accept the Consequence better than, and why?", a: "\"Can't we forget it this once?\" — which asks them to pay again.", bundle: 'pro' },
+        { q: "What usually happens to a consequence that is accepted plainly?", a: "It gets shorter. People relax quickest with someone who does not fight it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Promise Small",
+      description: "",
+      cards: [
+        { q: "What is Promise Small?", a: "Making the next promise the smallest you are certain you can keep.", bundle: 'free' },
+        { q: "How does Promise Small sound?", a: "\"I'm not promising the whole thing again. You'll have the first section by Thursday.\"", bundle: 'free' },
+        { q: "When is Promise Small the right one?", a: "After a broken promise, when they ask what happens next.", bundle: 'free' },
+        { q: "What does Promise Small protect?", a: "The start of a track record.", bundle: 'free' },
+        { q: "What are the three ways to make it small?", a: "Less, sooner, and checkable.", bundle: 'free' },
+        { q: "When does Promise Small go wrong?", a: "When even the small promise breaks.", bundle: 'pro' },
+        { q: "What is Promise Small better than, and why?", a: "The big promise, which sounds exactly like the one that broke.", bundle: 'pro' },
+        { q: "Which strategy follows Promise Small?", a: "Report It Done — days later, when it is kept.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Report It Done",
+      description: "",
+      cards: [
+        { q: "What is Report It Done?", a: "Telling them briefly, after the fact, that you kept the promise.", bundle: 'free' },
+        { q: "How does Report It Done sound?", a: "\"It's done — I sent it this morning.\"", bundle: 'free' },
+        { q: "When is Report It Done the right one?", a: "After you have kept the next promise.", bundle: 'free' },
+        { q: "What does Report It Done protect?", a: "Your word — a report of something done cannot be doubted.", bundle: 'free' },
+        { q: "What are the three things to report?", a: "The small promise kept, the thing done early, and the pattern.", bundle: 'free' },
+        { q: "When does Report It Done go wrong?", a: "When it turns into a speech about how you have changed.", bundle: 'pro' },
+        { q: "What is Report It Done better than, and why?", a: "Announcing good intentions, which sound like the last ones.", bundle: 'pro' },
+        { q: "What is the rule for Report It Done?", a: "Do it first, then say it. Never the other way round.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Break It Well** — before, at or just after the break, and whether there is a lie in it\n• **Earn It Back** — a result to accept, a new promise, or proof\n• **All Seven Strategies** — no cue given, which is the real thing\n\nIf there is a lie anywhere, that comes first.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Break It Well, Earn It Back, and All Seven Strategies.", bundle: 'pro' },
+        { q: "What question decides Break It Well?", a: "Where are we — before, at or after the break? And did I say anything untrue?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Break It Well?", a: "The explanation. It answers a question nobody asked first.", bundle: 'pro' },
+        { q: "What question decides Earn It Back?", a: "What are they asking for — a result to accept, a new promise, or proof?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Earn It Back?", a: "The big promise.", bundle: 'pro' },
+        { q: "There is a lie in it. What comes first?", a: "Correct the Cover Story.", bundle: 'pro' },
+        { q: "They ask what you will do next. Which strategy?", a: "Promise Small.", bundle: 'pro' },
+        { q: "You kept the small promise. Which strategy?", a: "Report It Done.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Before the Deadline** — Tell Them Early → Say What It Cost Them → Offer What You Can Still Do\n2. **After the Cover Story** — Correct the Cover Story → Accept the Consequence → Promise Small\n3. **The Second Chance** — Accept the Consequence → Promise Small → Report It Done\n\nThe third is the only one that happens over days rather than in one conversation.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Before the Deadline, After the Cover Story, and The Second Chance.", bundle: 'pro' },
+        { q: "What is the order in Before the Deadline?", a: "Tell Them Early, Say What It Cost Them, Offer What You Can Still Do.", bundle: 'pro' },
+        { q: "Why does the offer come last in Before the Deadline?", a: "Offered first, it sounds like a way of skipping the warning and their side.", bundle: 'pro' },
+        { q: "What is the order in After the Cover Story?", a: "Correct the Cover Story, Accept the Consequence, Promise Small.", bundle: 'pro' },
+        { q: "Why does the lie come first?", a: "Nothing you say after it counts while it is standing.", bundle: 'pro' },
+        { q: "What is the order in The Second Chance?", a: "Accept the Consequence, Promise Small, Report It Done.", bundle: 'pro' },
+        { q: "What is special about The Second Chance?", a: "The last step happens days later, and that gap is the point.", bundle: 'pro' },
+        { q: "What is the usual order people use instead?", a: "Reason first, a big promise, and nothing to show after it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **They Found Out First** — it looks like hiding\n• **The Second Time** — it is heard against the last time\n• **They Won't Believe You** — \"we'll see\"\n• **You Want to Explain** — the reason wants to go first\n• **A Yes You Can't Keep** — nothing has broken yet\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "They Found Out First, The Second Time, They Won't Believe You, You Want to Explain, and A Yes You Can't Keep.", bundle: 'pro' },
+        { q: "What should you avoid when they found out first?", a: "\"I was about to tell you.\"", bundle: 'pro' },
+        { q: "What is the main strategy the second time?", a: "Promise Small — a smaller promise than last time.", bundle: 'pro' },
+        { q: "What should you avoid the second time?", a: "\"This time I mean it.\"", bundle: 'pro' },
+        { q: "What should you avoid when they won't believe you?", a: "\"You can trust me.\"", bundle: 'pro' },
+        { q: "What should you avoid when you want to explain?", a: "Starting with \"The thing is…\"", bundle: 'pro' },
+        { q: "What is the main strategy for a yes you can't keep?", a: "Tell Them Early — take it back while it is cheap.", bundle: 'pro' },
+        { q: "Which challenge is the only one where nothing has broken yet?", a: "A Yes You Can't Keep.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **The Trust Mindset** — once it's broken, it's gone\n• **Waiting to Tell** — I might still make it\n• **The Cover Story** — a small lie buys time\n• **Reliable** — I never let anyone down\n• **Words Are Cheap** — only actions count\n• **Their Anger** — they'll be furious\n\nMost of them make the break worse by delaying or dodging it.",
+      cards: [
+        { q: "What are the six mindsets in this pack?", a: "The Trust Mindset, Waiting to Tell, The Cover Story, Reliable, Words Are Cheap, and Their Anger.", bundle: 'pro' },
+        { q: "What is true instead of \"once it's broken, it's gone\"?", a: "Trust usually comes back gradually, through what they see you do next.", bundle: 'pro' },
+        { q: "What is true instead of \"I might still make it\"?", a: "Tell them when you know, not when it is certain.", bundle: 'pro' },
+        { q: "What does the cover story cost?", a: "More than the thing it covers. The lie is what they remember.", bundle: 'pro' },
+        { q: "What does saying yes to everything quietly cost?", a: "The promises you cannot keep, and the people who plan around them.", bundle: 'pro' },
+        { q: "What is true about \"words are cheap\"?", a: "Actions count most — but a promise to do better does help if the action follows.", bundle: 'pro' },
+        { q: "What is true about their anger?", a: "It is part of the cost, and usually shorter when met directly.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They make the break worse by delaying or dodging it.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

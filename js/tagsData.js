@@ -394,6 +394,9 @@ const packTags = {
   calibratinghumour: [
     'humour', 'jokes that miss', 'reading the room', 'apologising for a joke', 'ending a bit', 'committing to a joke', 'banter'
   ],
+  brokenpromises: [
+    'broken promises', 'trust', 'letting someone down', 'missing a deadline', 'cover stories', 'second chances', 'keeping your word'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -439,7 +442,7 @@ const TOPICS = [
   // ── Giving and taking it ──────────────────────────────────────────
   { id: 'praise',                title: 'Praise & Compliments',          packs: ['compliments', 'praiseandencouragement', 'complimenting'] },
   { id: 'feedback',              title: 'Feedback & Criticism',          packs: ['criticism', 'givingcriticism', 'receivingfeedbackandcriticism'] },
-  { id: 'repair',                title: 'Repair & Apology',              packs: ['apologizing2', 'apologizing1', 'jimmy4'] },
+  { id: 'repair',                title: 'Repair & Apology',              packs: ['apologizing2', 'apologizing1', 'jimmy4', 'brokenpromises'] },
 
   // ── Standing your ground ──────────────────────────────────────────
   { id: 'opinions',              title: 'Opinions & Argumentation',      packs: ['influenceframing', 'agreeing', 'disagreeing', 'givingcounterexamples', 'discussing'] },

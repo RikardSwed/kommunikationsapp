@@ -9576,6 +9576,120 @@ const collections = {
       ]
     },
   ],
+  brokenpromises: [
+    {
+      name: "Tell Them Early",
+      guideFront: "Say it the moment you know when...",
+      guideBack: "The warning, before the deadline",
+      description: "The moment you know you will not keep a promise, tell the person — before the deadline, before they find out, and before they have planned around it. \"I'm going to miss Friday. I wanted you to hear it now, not on Friday.\"\n\nIt works because timing is half of it. A broken promise told early is a change of plan: they can adjust, ask someone else, move things around. The same promise discovered late is a betrayal, because it cost them the time they could have used.\n\nThe hard part is that telling early means giving up hope. There is always a chance you might still make it, and waiting feels kinder. It almost never is.\n\nTypical phrases: \"I need to tell you something now rather than later.\", \"I'm not going to make Friday.\", \"Better you hear it from me today.\"\n\nThree moments to say it:\n\n1. As soon as you know — not when it is certain. \"It's looking like I won't make Friday, and I'd rather warn you now.\"\n\n2. Before they rely on it — before they book, plan or tell others. \"Don't book the table yet — I might not get away.\"\n\n3. When the yes was a mistake — take it back while it is still cheap. \"I said yes too fast on Saturday. I can't do it, and I should have said so then.\"\n\nMindset: bad news early is a favour. Bad news late is the problem.",
+      inputs: [
+        { q: "It is Tuesday, and you already know the report you promised for Friday will not be ready.", a: "\"I'm going to miss Friday on the report. I wanted you to hear it now, not on Friday.\"", bundle: 'free' },
+        { q: "You promised to help your friend move on Saturday, and a work trip has just come up.", a: "\"I need to tell you now: I've been sent away Saturday. I can't help with the move.\"", bundle: 'free' },
+        { q: "You told your partner you would be home by six, and at four you can see it will be eight.", a: "\"Heads up — it's going to be eight, not six. I didn't want you waiting.\"", bundle: 'free' },
+        { q: "You promised your team a decision by today, and you still do not have one.", a: "\"I promised you a decision today and I haven't got one. You'll have it Thursday.\"", bundle: 'free' },
+        { q: "You said yes to organising the party, and you already know you do not have the time.", a: "\"I said yes too fast. I can't organise it, and I'd rather tell you now than let it slide.\"", bundle: 'free' },
+        { q: "You hope you might still make the deadline, but it is unlikely.", a: "\"It's looking like I won't make it. I'd rather warn you now and be wrong.\"", bundle: 'pro' },
+        { q: "Your friend is about to book the restaurant for the evening you are no longer sure about.", a: "\"Don't book yet — I might not get away, and I don't want you paying for a seat.\"", bundle: 'pro' },
+        { q: "You promised to pay your share back by the first, and the first is next week.", a: "\"I won't have it by the first. I'll have half then, and the rest on the fifteenth.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Offer What You Can Still Do",
+      guideFront: "Offer a real alternative when...",
+      guideBack: "What you can still do instead",
+      description: "You cannot keep the promise as made. Say what you can do instead — a smaller part, a later date, a different way — and make it something real, not a gesture. \"I can't do Saturday. I can do Sunday morning, or I'll pay for a van.\"\n\nIt works because a broken promise leaves a hole in someone's plan, and what they need most is to know what goes in the hole. An alternative turns \"you let me down\" into \"right, what now?\" — which is the conversation they actually need to have.\n\nThe alternative must be one you can keep. A second promise that also breaks does far more damage than the first.\n\nTypical phrases: \"What I can do is…\", \"I can do half by Friday and the rest Monday.\", \"Would it help if I…?\", \"Instead, I could…\"\n\nThree kinds of alternative:\n\n1. Part of it — \"I can't do the whole report by Friday. I can do the summary.\"\n\n2. Later — with a date you are sure of. \"Not Friday. Tuesday, and I'm certain of Tuesday.\"\n\n3. A different way — someone else, money, a swap. \"I can't drive you, but I'll pay for the taxi.\"\n\nMindset: they need a new plan more than they need an explanation. Give them one you can keep.",
+      inputs: [
+        { q: "You cannot help your friend move on Saturday as promised.", a: "\"I can't do Saturday. I can do Sunday morning, or I'll pay for a van.\"", bundle: 'free' },
+        { q: "The report you promised by Friday will not be finished.", a: "\"The full report won't be ready. I can send you the summary on Friday, and the rest Tuesday.\"", bundle: 'free' },
+        { q: "You promised to drive your mum to her appointment, and your car has broken down.", a: "\"The car's dead. I've booked you a taxi both ways, and I'll meet you there.\"", bundle: 'free' },
+        { q: "You promised to cook for the dinner party, and you have run out of time.", a: "\"I can't cook the main now. I'll bring dessert and wine, and order the rest from Rosa's.\"", bundle: 'free' },
+        { q: "You promised your child you would come to the match, and a meeting has moved.", a: "\"I'll miss the first half. I'll be there for the second, on the touchline.\"", bundle: 'free' },
+        { q: "You were going to lend your friend the money, and now you cannot.", a: "\"I can't lend the whole amount. I can do a third, now, no rush on paying it back.\"", bundle: 'pro' },
+        { q: "You promised to cover a colleague's shift, and you have fallen ill.", a: "\"I can't do tomorrow. I've asked Jonas, and he can do it if you're okay with that.\"", bundle: 'pro' },
+        { q: "You are tempted to promise a new date you are not sure about.", a: "\"I'm not going to give you a date I might miss. I'll tell you on Monday when I know.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say What It Cost Them",
+      guideFront: "Name their side of it when...",
+      guideBack: "What it did to their plans",
+      description: "Say what the broken promise did to the other person — the practical cost, not your guilt about it. \"You'd already turned down the other offer because of me. That's what I'm sorry about.\"\n\nIt works because it shows you understand the size of it from their side. Most people explain why they broke the promise, which is about them. Naming what it cost the other person is about them, and it is the part they need to hear before they can move on.\n\nKeep it concrete. \"I know it caused problems\" is vague. \"You had to stay up until two finishing it yourself\" shows you saw it.\n\nTypical phrases: \"That meant you had to…\", \"You'd already…\", \"You were the one left explaining it.\", \"I know that cost you the evening.\"\n\nThree kinds of cost:\n\n1. Time — \"You waited an hour in the cold because of me.\"\n\n2. Plans — \"You'd turned down the other offer.\"\n\n3. Face — \"You'd told your boss it was coming, and you had to explain.\"\n\nMindset: the reason is yours to carry. The cost is theirs — name it.",
+      inputs: [
+        { q: "You did not send the figures, and your colleague had to present without them.", a: "\"You went into that meeting with nothing because of me. That's what I'm sorry about.\"", bundle: 'free' },
+        { q: "You were an hour late picking your friend up from the station.", a: "\"You stood in the cold for an hour. I know that's what the evening was, for you.\"", bundle: 'free' },
+        { q: "You pulled out of the trip, and your friend had already paid for both of you.", a: "\"You'd already paid for my half, and now you're stuck with it.\"", bundle: 'free' },
+        { q: "You forgot to book the table, and your partner had told their parents it was sorted.", a: "\"You'd told your parents it was sorted, and you had to explain. I made you look bad.\"", bundle: 'free' },
+        { q: "You missed your part of a shared project, and your teammate stayed late to finish it.", a: "\"You were here until ten doing my half. I know that.\"", bundle: 'free' },
+        { q: "You are about to explain why you broke the promise.", a: "\"The why doesn't matter much. What matters is you turned down the other offer because of me.\"", bundle: 'pro' },
+        { q: "The cost to them was mostly that they stopped being able to plan around you.", a: "\"The worst of it is you can't rely on what I say now. I did that.\"", bundle: 'pro' },
+        { q: "Your friend says, \"It's fine, it didn't really matter.\"", a: "\"It did a bit — you'd cleared the whole afternoon. Thank you for being kind about it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Correct the Cover Story",
+      guideFront: "Put the lie right when...",
+      guideBack: "The truth, including the worse part",
+      description: "If you told a small lie to cover the broken promise — \"it's in the post\", \"I'm on my way\", \"I've nearly finished\" — correct it yourself, out loud. \"I told you I'd sent it. I hadn't. That's the part I'm most sorry about.\"\n\nIt works because a lie is a different kind of damage from a broken promise. Research on trust finds that people forgive a broken promise gradually, but a lie about it recovers far more slowly, and sometimes not at all. The cover story costs more than the thing it was covering.\n\nCorrecting it yourself is the only version that helps. If they find out, it becomes a second breach. If you say it, it becomes the first step back.\n\nTypical phrases: \"I told you… That wasn't true.\", \"I need to correct something I said.\", \"The worse part is that I said…\", \"I wasn't on my way. I hadn't left.\"\n\nThree common cover stories:\n\n1. \"It's done\" or \"it's in the post\" — \"I said I'd sent it. I hadn't started.\"\n\n2. \"I'm on my way\" — \"I told you I was on the bus. I hadn't left the house.\"\n\n3. \"Something came up\" — when nothing did. \"I said something came up. The truth is I forgot.\"\n\nMindset: the lie costs more than the promise. Take it back before it is found.",
+      inputs: [
+        { q: "You told your colleague you had sent the file. You had not.", a: "\"I told you I'd sent it. I hadn't. That's the part I'm most sorry about.\"", bundle: 'free' },
+        { q: "You texted \"on my way\" before you had left the house.", a: "\"I need to correct something — I wasn't on my way. I hadn't left. I'll be forty minutes.\"", bundle: 'free' },
+        { q: "You said \"something came up\" when you had simply forgotten.", a: "\"I said something came up. The truth is I forgot, and I'm sorry for both.\"", bundle: 'free' },
+        { q: "You told your manager the work was nearly done. It was barely started.", a: "\"When I said nearly done, that wasn't true. I'm about a third of the way through.\"", bundle: 'free' },
+        { q: "You said the cheque was in the post. It was not.", a: "\"It's not in the post. I said that to buy time. I'll pay by transfer today.\"", bundle: 'free' },
+        { q: "Nobody has found out about the lie, and you could leave it.", a: "\"Nobody would know, but I told you it was booked and it wasn't. I'm telling you now.\"", bundle: 'pro' },
+        { q: "You are about to add a second lie to hold up the first.", a: "\"Stop — I'm going to be straight with you instead. None of it was ready.\"", bundle: 'pro' },
+        { q: "They have just thanked you for something you claimed to have done.", a: "\"Don't thank me yet — I said I'd done it, and I hadn't. I'm doing it now.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Accept the Consequence",
+      guideFront: "Take the result without bargaining when...",
+      guideBack: "The consequence, accepted",
+      description: "The broken promise has a result — they give the job to someone else, they stop relying on you for it, they are angry for a while. Accept it without negotiating it down. \"That's fair. Give it to Petra.\"\n\nIt works because bargaining turns the conversation back to you. \"Can't we just forget it this once?\" asks the person you let down to pay again, this time by making them the bad guy for holding the line. Accepting it plainly shows you understand what happened.\n\nIt also usually shortens the consequence. People relax quickest with someone who does not fight them on it.\n\nTypical phrases: \"That's fair.\", \"I understand.\", \"I'd do the same.\", \"Of course — I'll pay it.\"\n\nThree kinds of consequence:\n\n1. Losing the task — \"That's fair. Give it to Petra.\"\n\n2. Paying for it — \"The late fee's mine. I'll cover it.\"\n\n3. Their trust, for a while — \"I get it. I'll have to earn that back.\"\n\nMindset: accepting the cost is part of keeping your word — the late part.",
+      inputs: [
+        { q: "Your manager says she will give the next client to someone else.", a: "\"That's fair. Give it to Petra.\"", bundle: 'free' },
+        { q: "Because your payment was late, there is a fee on the shared account.", a: "\"The fee's mine. I'll transfer it tonight.\"", bundle: 'free' },
+        { q: "Your friend says she will not count on you for the next trip.", a: "\"I understand. I'd probably do the same.\"", bundle: 'free' },
+        { q: "Your partner is still annoyed the next morning.", a: "\"You're allowed to be. I'll leave it for now.\"", bundle: 'free' },
+        { q: "Your teammate says they will check your work from now on.", a: "\"Fair enough. I'd rather that than let you down again.\"", bundle: 'free' },
+        { q: "You are about to say, \"Can't we just forget it this once?\"", a: "\"No — you're right to be annoyed. What do you need from me now?\"", bundle: 'pro' },
+        { q: "The consequence feels bigger than what you did.", a: "\"It feels big, but I understand why. I'll take it.\"", bundle: 'pro' },
+        { q: "They say, \"I don't think I can rely on you for this any more.\"", a: "\"I get it. I'll have to earn that back, and that's on me.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Promise Small",
+      guideFront: "Promise only what you're sure of when...",
+      guideBack: "A promise small enough to keep",
+      description: "After breaking one promise, make the next one the smallest you are certain you can keep — and keep it. \"I'm not going to promise the whole thing. I'll have the first section to you by Thursday.\"\n\nIt works because trust comes back through promises kept, not through promises made. Research on broken trust finds that a promise to do better does help recovery — but only if it is kept. A big promise after a broken one sounds like the first one did. A small promise kept on time is the start of a track record.\n\nThe instinct is to promise more to make up for it. That is exactly backwards.\n\nTypical phrases: \"I'll promise less and keep it.\", \"Here's the one thing I'm sure of.\", \"Just this, by Thursday.\", \"I'll tell you when I know more.\"\n\nThree ways to make it small:\n\n1. Less — part, not all. \"The first section, not the whole report.\"\n\n2. Sooner — a near date you are sure of. \"By tomorrow at ten, not by the end of the month.\"\n\n3. Checkable — something they can see. \"I'll send you a message when it's done.\"\n\nMindset: the next promise is not a chance to make up for the last one. It is a chance to keep one.",
+      inputs: [
+        { q: "Your manager asks when the delayed report will be ready.", a: "\"I'm not promising the whole thing again. You'll have the first section by Thursday.\"", bundle: 'free' },
+        { q: "Your friend asks if you will be there next time.", a: "\"I'll be there Saturday at two. That one I'm sure of.\"", bundle: 'free' },
+        { q: "You want to promise your partner you will never be late again.", a: "\"I'm not going to say never. I'll be home by six tonight, and I'll text if that changes.\"", bundle: 'free' },
+        { q: "Your team asks if you can take on the whole project again.", a: "\"Let me take the planning part first and get that right.\"", bundle: 'free' },
+        { q: "Your child asks if you will come to every match from now on.", a: "\"I can promise the next two. I'll tell you about the rest when I know.\"", bundle: 'free' },
+        { q: "You feel the urge to promise more to make up for letting them down.", a: "\"I'd love to promise everything. I'll promise Tuesday, and keep it.\"", bundle: 'pro' },
+        { q: "They ask, \"How do I know you won't do this again?\"", a: "\"You don't yet. Watch whether I do the small thing on Thursday.\"", bundle: 'pro' },
+        { q: "You are not sure you can keep even a small promise yet.", a: "\"I don't want to give you a date I'll miss. I'll tell you tomorrow when I know.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Report It Done",
+      guideFront: "Say it's done, after it's done when...",
+      guideBack: "A plain report of a promise kept",
+      description: "Once you have kept the next promise, tell them — briefly, after the fact. \"It's done — I sent it this morning.\" Not a speech about how you have changed; just the evidence.\n\nIt works because trust is rebuilt by what people see you do, not by what you say you will do. After a broken promise, every announcement of good intentions sounds like the last one. A short report of something already done cannot be doubted.\n\nKeep it plain and a little boring. The less you make of it, the more it counts.\n\nTypical phrases: \"It's done.\", \"Sent this morning.\", \"That's sorted.\", \"All paid — you should see it tomorrow.\"\n\nThree things to report:\n\n1. The small promise kept — \"The first section's in your inbox.\"\n\n2. The thing done early — \"I finished it last night, a day early.\"\n\n3. The pattern — only after several. \"That's the third week in a row. I'm keeping at it.\"\n\nMindset: do it first, then say it. Never the other way round.",
+      inputs: [
+        { q: "You promised your manager the first section by Thursday, and it is Wednesday evening.", a: "\"The first section's in your inbox. The rest is on track for next week.\"", bundle: 'free' },
+        { q: "You promised your friend you would pay her back this time.", a: "\"Sent it this morning. You should see it tomorrow.\"", bundle: 'free' },
+        { q: "You promised your partner you would be home by six, and you are.", a: "\"Home. Six on the dot.\"", bundle: 'free' },
+        { q: "You promised your colleague you would fix the mistake before the meeting.", a: "\"That's fixed. I checked it twice.\"", bundle: 'free' },
+        { q: "You promised your flatmate you would sort the bills this month.", a: "\"All the bills are paid for this month. The receipts are on the fridge.\"", bundle: 'free' },
+        { q: "You want to tell them how much you have changed.", a: "\"It's done. That's all — I'd rather you judged by that.\"", bundle: 'pro' },
+        { q: "You kept three small promises in a row, and they still seem wary.", a: "\"That's the third one done. I'll keep going.\"", bundle: 'pro' },
+        { q: "You finished the thing a day early.", a: "\"It's done, a day early. Just so you know.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -13934,6 +14048,56 @@ const collectionsModeData = {
         { q: "Your joke about your friend's accent lands, and then you see they are hurt.", a: "\"Sorry, that was lazy of me. I like how you talk.\" [Take It Back Cleanly]", bundle: 'pro', guideBack: "A plain apology, then back to them" },
         { q: "The running joke about your brother's cooking is on its sixth outing tonight.", a: "\"Okay, the cooking jokes are done. This is good, actually.\" [Stop the Bit]", bundle: 'pro', guideBack: "The last line, then something real" },
         { q: "Your joke about the office party gets an awkward laugh from your manager, who organised it.", a: "\"I'm joking — it was a good night. Thanks for sorting it.\" [Give Them the Out]", bundle: 'pro', guideBack: "A way out of laughing" },
+      ]
+    },
+  ],
+  brokenpromises: [
+    {
+      name: "Break It Well",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Tell Them Early**, **Offer What You Can Still Do**, **Say What It Cost Them** and **Correct the Cover Story** — what to say when the promise is breaking, or has just broken.\n\n• **Tell Them Early** — it has not broken yet, but it will\n• **Offer What You Can Still Do** — they need a new plan\n• **Say What It Cost Them** — it has broken, and they paid for it\n• **Correct the Cover Story** — you said something that was not true\n\nThe question that decides it: where are we in it — before, at, or after the break? And did I say anything untrue on the way?\n\nThe usual wrong choice is the explanation: why it happened, how busy you were. It answers a question nobody asked first.\n\nMindset: warn early, offer something real, and never let a lie stand.",
+      inputs: [
+        { q: "You know on Monday that you will not finish the slides you promised for Thursday.", a: "\"I won't have the slides Thursday. I wanted you to know today.\" [Tell Them Early]", bundle: 'pro', guideBack: "The warning, before the deadline" },
+        { q: "Your friend is counting on your spare room this weekend, and your in-laws are now coming.", a: "\"The room's gone, I'm sorry. I've found a guesthouse two streets away, and I'll cover the first night.\" [Offer What You Can Still Do]", bundle: 'pro', guideBack: "What you can still do instead" },
+        { q: "You forgot to pick up your neighbour's parcel, and it went back to the depot.", a: "\"It went back, and now you have to go all the way out there. That's on me.\" [Say What It Cost Them]", bundle: 'pro', guideBack: "What it did to their plans" },
+        { q: "You told your sister you had booked the tickets. You had not, and now they are gone.", a: "\"I told you they were booked. They weren't. I'm sorry for that most of all.\" [Correct the Cover Story]", bundle: 'pro', guideBack: "The truth, including the worse part" },
+        { q: "You promised your colleague feedback today, and it is four o'clock.", a: "\"You won't get it today. You'll have it by ten tomorrow.\" [Tell Them Early]", bundle: 'pro', guideBack: "The warning, before the deadline" },
+        { q: "You cannot give the talk you agreed to at the school.", a: "\"I can't do the talk. I can send a short video, or ask a colleague who's good at it.\" [Offer What You Can Still Do]", bundle: 'pro', guideBack: "What you can still do instead" },
+        { q: "You missed the handover, and your colleague had to stay late.", a: "\"You were here until eight because I didn't turn up. I know that.\" [Say What It Cost Them]", bundle: 'pro', guideBack: "What it did to their plans" },
+        { q: "You said the car was booked in for a service. It was not.", a: "\"I said it was booked in. It wasn't — I'm ringing them now.\" [Correct the Cover Story]", bundle: 'pro', guideBack: "The truth, including the worse part" },
+      ]
+    },
+    {
+      name: "Earn It Back",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Accept the Consequence**, **Promise Small** and **Report It Done** — what comes after the break, when the job is getting trust back.\n\n• **Accept the Consequence** — they have decided what happens now\n• **Promise Small** — they ask what you will do next\n• **Report It Done** — you have kept the small promise\n\nThe question that decides it: what are they asking for — a result to accept, a new promise, or proof?\n\nThe usual wrong choice is the big promise. After a broken one, \"I'll never do it again\" sounds exactly like the promise that just broke.\n\nMindset: trust comes back through small promises kept, not big ones made.",
+      inputs: [
+        { q: "Your manager says she will check your deadlines weekly from now on.", a: "\"That's fair. I'd do the same.\" [Accept the Consequence]", bundle: 'pro', guideBack: "The consequence, accepted" },
+        { q: "Your friend asks if she can count on you for the next trip.", a: "\"Count on me for the Friday. That part I know I can do.\" [Promise Small]", bundle: 'pro', guideBack: "A promise small enough to keep" },
+        { q: "You promised your teammate the fix by Wednesday, and it is done on Tuesday.", a: "\"The fix is in. Tested it twice.\" [Report It Done]", bundle: 'pro', guideBack: "A plain report of a promise kept" },
+        { q: "Your partner says they will book the holiday themselves this year.", a: "\"Understood. I'll sort the bit you give me.\" [Accept the Consequence]", bundle: 'pro', guideBack: "The consequence, accepted" },
+        { q: "You want to tell your team you will never miss a deadline again.", a: "\"I'll hit Thursday. Judge the rest by that.\" [Promise Small]", bundle: 'pro', guideBack: "A promise small enough to keep" },
+        { q: "You paid your friend back, as you said you would this time.", a: "\"Done — it's in your account.\" [Report It Done]", bundle: 'pro', guideBack: "A plain report of a promise kept" },
+        { q: "Your brother says he is not lending you the car again for a while.", a: "\"That's fair. I brought it back late twice.\" [Accept the Consequence]", bundle: 'pro', guideBack: "The consequence, accepted" },
+        { q: "Your client asks for a date on the delayed work.", a: "\"I'll give you a date on Monday, once I know it's one I can keep.\" [Promise Small]", bundle: 'pro', guideBack: "A promise small enough to keep" },
+      ]
+    },
+    {
+      name: "All Seven Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order broken promises really arrive.\n\nThe seven follow the break in time. Before it: **Tell Them Early** and **Offer What You Can Still Do**. At it: **Say What It Cost Them**, **Correct the Cover Story** and **Accept the Consequence**. After it: **Promise Small** and **Report It Done**.\n\nIf you are unsure which you need, ask where in that line you are — and whether there is a lie anywhere in it. If there is, that comes first.\n\nMindset: early, true and small. That is most of keeping your word after you have broken it.",
+      inputs: [
+        { q: "You can see on Wednesday that you will miss Saturday's shift.", a: "\"I'm telling you now — I can't do Saturday.\" [Tell Them Early]", bundle: 'pro', guideBack: "The warning, before the deadline" },
+        { q: "You cannot bring the projector you promised for the presentation.", a: "\"I haven't got the projector. I've asked reception, and they'll have one in the room.\" [Offer What You Can Still Do]", bundle: 'pro', guideBack: "What you can still do instead" },
+        { q: "You missed your friend's birthday dinner, which she had planned for weeks.", a: "\"You'd planned that for weeks, and I wasn't there. That's what I'm sorry about.\" [Say What It Cost Them]", bundle: 'pro', guideBack: "What it did to their plans" },
+        { q: "You told your team the client had approved it. The client had not answered yet.", a: "\"I said they'd approved it. They haven't replied. I shouldn't have said it.\" [Correct the Cover Story]", bundle: 'pro', guideBack: "The truth, including the worse part" },
+        { q: "Your flatmate says they will handle the bills themselves from now on.", a: "\"That's fair. I'll pay my share on the first.\" [Accept the Consequence]", bundle: 'pro', guideBack: "The consequence, accepted" },
+        { q: "Your manager asks what you can commit to this week.", a: "\"The two reports I've got. Nothing new until they're done.\" [Promise Small]", bundle: 'pro', guideBack: "A promise small enough to keep" },
+        { q: "You were on time three weeks running after a month of being late.", a: "\"Here, on time. That's three weeks now.\" [Report It Done]", bundle: 'pro', guideBack: "A plain report of a promise kept" },
+        { q: "You said yes to judging the bake sale, and you already know you cannot make it.", a: "\"I said yes too quickly. I can't make it, and I'd rather tell you today.\" [Tell Them Early]", bundle: 'pro', guideBack: "The warning, before the deadline" },
       ]
     },
   ],

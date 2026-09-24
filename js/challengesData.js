@@ -6604,4 +6604,86 @@ const challengesCollections = {
       ]
     },
   ],
+  brokenpromises: [
+    {
+      name: "They Found Out First",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The promise broke, and they found out before you told them — from someone else, from the empty inbox, from the look on your face.\n\nWhat goes wrong is that it now looks like hiding, even if you were only putting it off. The explanation you had ready sounds like an excuse, because it arrives after the fact.\n\n**Correct the Cover Story** comes first if you said anything untrue. **Say What It Cost Them** shows you see their side. **Accept the Consequence** keeps you from arguing about how they found out.\n\nThe one thing to avoid: \"I was about to tell you.\"\n\nMindset: late is late. Own that too.",
+      inputs: [
+        { q: "Your colleague heard from someone else that you will not finish your part.", a: "\"You should have heard that from me, and early. I'm sorry you didn't.\" [Accept the Consequence]", bundle: 'pro', guideBack: "The consequence, accepted" },
+        { q: "You had told them it was nearly done, and they have just found out it was not.", a: "\"I said nearly done. It wasn't true. That's the part I'm most sorry about.\" [Correct the Cover Story]", bundle: 'pro', guideBack: "The truth, including the worse part" },
+        { q: "Your friend turned up to help you, and found you had given the job to someone else.", a: "\"You came all the way over for nothing. I should have called you.\" [Say What It Cost Them]", bundle: 'pro', guideBack: "What it did to their plans" },
+        { q: "You are about to say, \"I was just about to tell you.\"", a: "\"I should have told you on Monday. I didn't.\" [Accept the Consequence]", bundle: 'pro', guideBack: "The consequence, accepted" },
+        { q: "Your manager found out from the client that the delivery is late.", a: "\"You found out from the client, which put you in a bad spot. That's on me.\" [Say What It Cost Them]", bundle: 'pro', guideBack: "What it did to their plans" },
+        { q: "Your partner saw the unpaid bill on the table after you said you had paid it.", a: "\"I said I'd paid it. I hadn't. I'm paying it now, and I'm sorry I said that.\" [Correct the Cover Story]", bundle: 'pro', guideBack: "The truth, including the worse part" },
+        { q: "They ask, \"Were you ever going to tell me?\"", a: "\"I was putting it off. That was wrong.\" [Accept the Consequence]", bundle: 'pro', guideBack: "The consequence, accepted" },
+        { q: "Your friend saw on social media that you went out the night you cancelled on her.", a: "\"I told you I was ill. I wasn't — I just didn't want to go. I'm sorry.\" [Correct the Cover Story]", bundle: 'pro', guideBack: "The truth, including the worse part" },
+      ]
+    },
+    {
+      name: "The Second Time",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You have broken this promise before. This time, whatever you say will be heard against the last time — and the last time, you probably said sorry and promised to do better.\n\nWhat goes wrong is repeating the same apology. It sounds like the first one, and the first one did not work.\n\n**Promise Small** is the main move — a smaller promise than last time, sure to be kept. **Accept the Consequence** shows you know it is worse the second time. **Say What It Cost Them** names the pattern, not just this one.\n\nThe one thing to avoid: \"This time I mean it.\"\n\nMindset: a second break needs a smaller promise, not a bigger apology.",
+      inputs: [
+        { q: "You are late again, after promising last month that it would not happen.", a: "\"I'm not going to promise again. I'll text you the real time from now on, and that's it.\" [Promise Small]", bundle: 'pro', guideBack: "A promise small enough to keep" },
+        { q: "They say, \"You said this last time.\"", a: "\"I did, and I didn't keep it. I get why you don't believe me.\" [Accept the Consequence]", bundle: 'pro', guideBack: "The consequence, accepted" },
+        { q: "You have missed your weekly call with your mum for the second time running.", a: "\"Two weeks now. I know you plan your Sunday around it.\" [Say What It Cost Them]", bundle: 'pro', guideBack: "What it did to their plans" },
+        { q: "You feel the urge to say, \"This time I really mean it.\"", a: "\"I'll just do Thursday, and you can see.\" [Promise Small]", bundle: 'pro', guideBack: "A promise small enough to keep" },
+        { q: "Your team lead says she cannot keep covering for you.", a: "\"That's fair. You've covered for me twice. I'll take what comes.\" [Accept the Consequence]", bundle: 'pro', guideBack: "The consequence, accepted" },
+        { q: "You forgot to pick the kids up again, and your partner had to leave work.", a: "\"That's twice you've left work early because of me. I know it's not just today.\" [Say What It Cost Them]", bundle: 'pro', guideBack: "What it did to their plans" },
+        { q: "They ask what will be different this time.", a: "\"Smaller promises. You'll have one thing a week from me, and it'll be done.\" [Promise Small]", bundle: 'pro', guideBack: "A promise small enough to keep" },
+        { q: "You kept the smaller promise this time.", a: "\"Done, as promised. Just the one thing.\" [Report It Done]", bundle: 'pro', guideBack: "A plain report of a promise kept" },
+      ]
+    },
+    {
+      name: "They Won't Believe You",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You have already broken the promise and owned it. Now anything you say is met with \"we'll see\" — and they are right to say it.\n\nWhat goes wrong is trying to argue them back into trust: more promises, more reassurance, more explanation of how you have changed. Trust after a break cannot be talked into place.\n\n**Promise Small** gives them something small enough to watch. **Report It Done** gives them proof when it is kept. **Accept the Consequence** lets them keep their doubt without a fight.\n\nThe one thing to avoid: \"You can trust me.\"\n\nMindset: do not ask for trust. Give them something to check.",
+      inputs: [
+        { q: "They say, \"We'll see.\"", a: "\"Fair. Watch Thursday.\" [Promise Small]", bundle: 'pro', guideBack: "A promise small enough to keep" },
+        { q: "You want to tell them how much you have changed.", a: "\"The first part's done. That's all I'll say.\" [Report It Done]", bundle: 'pro', guideBack: "A plain report of a promise kept" },
+        { q: "They say, \"I'll believe it when I see it.\"", a: "\"That's fair. I'd say the same.\" [Accept the Consequence]", bundle: 'pro', guideBack: "The consequence, accepted" },
+        { q: "Your manager checks your work every day after you missed a deadline.", a: "\"That's fair. I'll send you a note each evening with what's done.\" [Promise Small]", bundle: 'pro', guideBack: "A promise small enough to keep" },
+        { q: "Your friend is surprised you actually turned up.", a: "\"Said I would. Here I am.\" [Report It Done]", bundle: 'pro', guideBack: "A plain report of a promise kept" },
+        { q: "You are about to say, \"You can trust me this time.\"", a: "\"Don't take my word for it. See if I'm there at six.\" [Promise Small]", bundle: 'pro', guideBack: "A promise small enough to keep" },
+        { q: "They still double-check everything you tell them.", a: "\"Keep checking. It'll get boring soon.\" [Accept the Consequence]", bundle: 'pro', guideBack: "The consequence, accepted" },
+        { q: "You have kept four small promises in a row, and nobody has mentioned it.", a: "\"That's the fourth week sorted. Just keeping you posted.\" [Report It Done]", bundle: 'pro', guideBack: "A plain report of a promise kept" },
+      ]
+    },
+    {
+      name: "You Want to Explain",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "There is a good reason the promise broke — or it feels like there is — and you want them to hear it first.\n\nWhat goes wrong is that the reason arrives before anything about them. However true it is, it sounds like a case for why it was not really your fault, and it makes them argue with the reason instead of dealing with the problem.\n\n**Say What It Cost Them** puts their side first. **Offer What You Can Still Do** gives them a plan in place of the reason. **Accept the Consequence** keeps the reason from becoming a bargain.\n\nThe one thing to avoid: starting with \"The thing is…\"\n\nMindset: the reason can come later, if they ask. Their side comes first.",
+      inputs: [
+        { q: "You are about to open with, \"The thing is, I've been completely swamped.\"", a: "\"You didn't get the report, and you needed it for Monday. That's what matters.\" [Say What It Cost Them]", bundle: 'pro', guideBack: "What it did to their plans" },
+        { q: "You missed the dinner because of a real emergency at work.", a: "\"You sat at the table on your own for an hour. I'm sorry about that.\" [Say What It Cost Them]", bundle: 'pro', guideBack: "What it did to their plans" },
+        { q: "You want to explain why the car is not fixed yet.", a: "\"It's not fixed. I've booked the garage for Thursday, and you can take mine till then.\" [Offer What You Can Still Do]", bundle: 'pro', guideBack: "What you can still do instead" },
+        { q: "The reason is good, and you think they would understand if they heard it.", a: "\"I'll tell you why if you want. First: you can have mine till yours is back.\" [Offer What You Can Still Do]", bundle: 'pro', guideBack: "What you can still do instead" },
+        { q: "You are building a long case for why it was not your fault.", a: "\"However it happened, it's on me. What do you need now?\" [Accept the Consequence]", bundle: 'pro', guideBack: "The consequence, accepted" },
+        { q: "They ask, \"What happened?\"", a: "\"I took on too much and let yours slip. The how isn't really the point.\" [Say What It Cost Them]", bundle: 'pro', guideBack: "What it did to their plans" },
+        { q: "You want to say it was only partly your fault.", a: "\"Some of it wasn't in my hands. Most of it was. I'll take it.\" [Accept the Consequence]", bundle: 'pro', guideBack: "The consequence, accepted" },
+        { q: "You are tempted to explain before you have offered anything.", a: "\"I can do half by Friday. That's the useful bit.\" [Offer What You Can Still Do]", bundle: 'pro', guideBack: "What you can still do instead" },
+      ]
+    },
+    {
+      name: "A Yes You Can't Keep",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You said yes too quickly — to a favour, a job, a weekend — and you already know you will not manage it. Nothing has broken yet.\n\nWhat goes wrong is waiting. Taking back a yes feels worse than failing quietly later, so people hold on and hope. By the time it breaks, it has cost the other person the time they could have used to find someone else.\n\n**Tell Them Early** is the main move — take it back while it is cheap. **Offer What You Can Still Do** makes it easier to hear.\n\nThe one thing to avoid: hoping it will somehow work out.\n\nMindset: a yes taken back early is kinder than a yes broken late.",
+      inputs: [
+        { q: "You said yes to organising the office party and already know you have no time.", a: "\"I said yes too fast to the party. I can't do it, and I'd rather tell you now.\" [Tell Them Early]", bundle: 'pro', guideBack: "The warning, before the deadline" },
+        { q: "You agreed to help your cousin paint his flat, and now you see it is the same weekend as your exam.", a: "\"I can't do the painting — I didn't check my calendar. I can do the following Saturday.\" [Offer What You Can Still Do]", bundle: 'pro', guideBack: "What you can still do instead" },
+        { q: "You agreed to be on the committee, and after one meeting you know you cannot keep it up.", a: "\"I need to step back from the committee now, before you're relying on me.\" [Tell Them Early]", bundle: 'pro', guideBack: "The warning, before the deadline" },
+        { q: "You told a friend you would read her whole novel by next week.", a: "\"I can't read the whole thing by next week. I can do the first three chapters properly.\" [Offer What You Can Still Do]", bundle: 'pro', guideBack: "What you can still do instead" },
+        { q: "You promised to cover a shift, and you are hoping you will somehow manage both.", a: "\"I'm not going to manage both. Better you know today so you can ask someone else.\" [Tell Them Early]", bundle: 'pro', guideBack: "The warning, before the deadline" },
+        { q: "You said yes to hosting Christmas, and it is October.", a: "\"I need to take back Christmas while there's still time to plan. I'm sorry.\" [Tell Them Early]", bundle: 'pro', guideBack: "The warning, before the deadline" },
+        { q: "You agreed to lend your car for the whole week, and you need it on Wednesday.", a: "\"I can't do the whole week. You can have it Thursday to Sunday.\" [Offer What You Can Still Do]", bundle: 'pro', guideBack: "What you can still do instead" },
+        { q: "You said yes to a favour only because you felt put on the spot.", a: "\"I said yes because I felt put on the spot. I can't do it, and I'd rather say so now.\" [Tell Them Early]", bundle: 'pro', guideBack: "The warning, before the deadline" },
+      ]
+    },
+  ],
 };
