@@ -11797,4 +11797,174 @@ const memorizeCollections = {
       ]
     },
   ],
+  askingpermission: [
+    {
+      name: "Core Idea",
+      description: "Seven strategies for asking permission for something that belongs to someone else:\n\n1. Ask First\n2. Announce and Pause\n3. Name the Limits\n4. Leave Room to Refuse\n5. Take a No Well\n6. Ask for Someone Else\n7. Check What You Assumed\n\nThree ways to ask, two that protect their answer, and two for special cases.",
+      cards: [
+        { q: "What are the seven strategies in this pack?", a: "Ask First, Announce and Pause, Name the Limits, Leave Room to Refuse, Take a No Well, Ask for Someone Else, Check What You Assumed.", bundle: 'free' },
+        { q: "How do the seven fit together?", a: "Three are ways to ask, two protect their answer, and two are for asking for someone else and for the permission you never asked for.", bundle: 'free' },
+        { q: "What is the difference between a request and asking for permission?", a: "A request asks for their time. Permission asks for their approval — the thing at stake is theirs.", bundle: 'free' },
+        { q: "What is the question to ask yourself first?", a: "Whose is this, and how big is it for them?", bundle: 'free' },
+        { q: "Why is a question before better than an apology after?", a: "Before, it is a small courtesy. After, it asks them to be fine with something they never agreed to.", bundle: 'free' },
+        { q: "Where does this pack end and Making Requests begin?", a: "Making Requests asks for a favour — their time. This pack asks for their approval of something that is theirs.", bundle: 'pro' },
+        { q: "Which two strategies does this pack share with Making Requests?", a: "Leave Room to Refuse and Take a No Well — the same moves, used here for permission.", bundle: 'pro' },
+        { q: "When does a yes not count as permission?", a: "When the no was not really available.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask First",
+      description: "",
+      cards: [
+        { q: "What is Ask First?", a: "Asking before you do something that touches someone else, instead of apologising afterwards.", bundle: 'free' },
+        { q: "How does Ask First sound?", a: "\"Can I post this one? You're in it.\"", bundle: 'free' },
+        { q: "When is Ask First the right one?", a: "When the thing is theirs — their things, their image or words, their news.", bundle: 'free' },
+        { q: "What does Ask First protect?", a: "Their right to decide about what is theirs.", bundle: 'free' },
+        { q: "What are the three kinds of thing to ask about?", a: "Their things, their image or words, and their news.", bundle: 'free' },
+        { q: "When does Ask First go wrong?", a: "When it is asked after you have already started.", bundle: 'pro' },
+        { q: "What is Ask First better than, and why?", a: "Asking forgiveness later. A question before is cheap; an apology after is not.", bundle: 'pro' },
+        { q: "Which strategy often follows Ask First?", a: "Name the Limits — their first reply is usually \"what exactly?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Announce and Pause",
+      description: "",
+      cards: [
+        { q: "What is Announce and Pause?", a: "Saying what you are about to do, then pausing long enough for them to stop you.", bundle: 'free' },
+        { q: "How does Announce and Pause sound?", a: "\"I'm putting this one up — say if you'd rather I didn't.\"", bundle: 'free' },
+        { q: "When is Announce and Pause the right one?", a: "For small things, when the person is right there.", bundle: 'free' },
+        { q: "What does Announce and Pause protect?", a: "Their chance to say no, without making a small thing formal.", bundle: 'free' },
+        { q: "What are the three things that make it work?", a: "Say it before, name the way to stop you, and actually wait.", bundle: 'free' },
+        { q: "When does Announce and Pause go wrong?", a: "When there is no pause — then it is just telling them.", bundle: 'pro' },
+        { q: "What is Announce and Pause better than, and why?", a: "Doing it silently. The announcement gives them a moment to object.", bundle: 'pro' },
+        { q: "When is Announce and Pause not enough?", a: "When the thing is personal — their photo, their story, their space. Then ask.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name the Limits",
+      description: "",
+      cards: [
+        { q: "What is Name the Limits?", a: "Asking for the exact thing — which part, how long, where, for whom.", bundle: 'free' },
+        { q: "How does Name the Limits sound?", a: "\"Could I post just the group one, on my private account?\"", bundle: 'free' },
+        { q: "When is Name the Limits the right one?", a: "When the thing is big or open-ended.", bundle: 'free' },
+        { q: "What does Name the Limits protect?", a: "Them from having to imagine the worst version and answer that.", bundle: 'free' },
+        { q: "What are the four edges to draw?", a: "Which part, how long, where or who sees it, and what happens after.", bundle: 'free' },
+        { q: "When does Name the Limits go wrong?", a: "When you go beyond the limits you named.", bundle: 'pro' },
+        { q: "What is Name the Limits better than, and why?", a: "An open \"is it okay if I…\" — which is hard to say yes to.", bundle: 'pro' },
+        { q: "Which strategy often follows Name the Limits?", a: "Leave Room to Refuse — hesitation usually comes once they know what it involves.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Leave Room to Refuse",
+      description: "",
+      cards: [
+        { q: "What is Leave Room to Refuse?", a: "Saying the no out loud for them — telling them no is fine.", bundle: 'free' },
+        { q: "How does Leave Room to Refuse sound?", a: "\"Honestly, no is fine. It can stay on my phone.\"", bundle: 'free' },
+        { q: "When is Leave Room to Refuse the right one?", a: "When they hesitate, or when they have less power than you.", bundle: 'free' },
+        { q: "What does Leave Room to Refuse protect?", a: "The meaning of their yes.", bundle: 'free' },
+        { q: "What are the three ways to leave the door open?", a: "Say no is fine, say what you will do instead, and say it is theirs to decide.", bundle: 'free' },
+        { q: "When does Leave Room to Refuse go wrong?", a: "When it is said, but a no is then met with a sulk.", bundle: 'pro' },
+        { q: "What is Leave Room to Refuse better than, and why?", a: "Taking a fast yes at face value. People with less power often agree before they think.", bundle: 'pro' },
+        { q: "Which strategy often follows Leave Room to Refuse?", a: "Take a No Well — the exit only counts if the no is accepted.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Take a No Well",
+      description: "",
+      cards: [
+        { q: "What is Take a No Well?", a: "Accepting a no in one line — no sulk, no \"why?\", no second attempt.", bundle: 'free' },
+        { q: "How does Take a No Well sound?", a: "\"No problem. It stays on my phone.\"", bundle: 'free' },
+        { q: "When is Take a No Well the right one?", a: "When they have said no.", bundle: 'free' },
+        { q: "What does Take a No Well protect?", a: "Their freedom to say no next time.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Accept it, do not ask why, and do not come back with a smaller version straight away.", bundle: 'free' },
+        { q: "When does Take a No Well go wrong?", a: "When it is followed by \"what about just one?\"", bundle: 'pro' },
+        { q: "What is Take a No Well better than, and why?", a: "Pushing. With permission, pushing after a no is pushing against a boundary.", bundle: 'pro' },
+        { q: "Why does it matter more here than with favours?", a: "A favour is their time. Permission is about something that is theirs.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for Someone Else",
+      description: "",
+      cards: [
+        { q: "What is Ask for Someone Else?", a: "Asking for permission on another person's behalf, saying clearly who it is for.", bundle: 'free' },
+        { q: "How does Ask for Someone Else sound?", a: "\"Anna would like to use your chart on Friday — would that be okay?\"", bundle: 'free' },
+        { q: "When is Ask for Someone Else the right one?", a: "When someone asks you to check for them.", bundle: 'free' },
+        { q: "What does Ask for Someone Else protect?", a: "The other person's freedom to say no to the real request, not to you.", bundle: 'free' },
+        { q: "What are the three things to make clear?", a: "Who it is for, what exactly, and that you are only passing it on.", bundle: 'free' },
+        { q: "When does Ask for Someone Else go wrong?", a: "When you add your own weight — \"it'd really help me out\".", bundle: 'pro' },
+        { q: "What is Ask for Someone Else better than, and why?", a: "Asking as if it were your own request. Then they cannot tell whose it is.", bundle: 'pro' },
+        { q: "Which strategy often follows Ask for Someone Else?", a: "Take a No Well — pass back the answer, whatever it is.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Check What You Assumed",
+      description: "",
+      cards: [
+        { q: "What is Check What You Assumed?", a: "Asking about something you have been doing without really asking.", bundle: 'free' },
+        { q: "How does Check What You Assumed sound?", a: "\"I've got into the habit of just taking your bike. Is that okay?\"", bundle: 'free' },
+        { q: "When is Check What You Assumed the right one?", a: "When a habit, a one-off or a changed situation was never actually agreed.", bundle: 'free' },
+        { q: "What does Check What You Assumed protect?", a: "The chance they never had to say no.", bundle: 'free' },
+        { q: "What are the three kinds of old assumption?", a: "A habit, a one-off, and something that has changed.", bundle: 'free' },
+        { q: "When does Check What You Assumed go wrong?", a: "When it becomes a long apology instead of a question.", bundle: 'pro' },
+        { q: "What is Check What You Assumed better than, and why?", a: "Carrying on. Unasked permissions pile up quietly.", bundle: 'pro' },
+        { q: "Which strategy often follows Check What You Assumed?", a: "Leave Room to Refuse — people often say \"it's fine\" out of habit.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Size the Ask** — how big the thing is for them\n• **Keep It Their Choice** — whether the no is really available\n• **All Seven Strategies** — no cue given, which is the real thing\n\nOne question runs through all three: whose is this?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Size the Ask, Keep It Their Choice, and All Seven Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Size the Ask?", a: "How big is this for them?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Size the Ask?", a: "Announcing something that needed a question.", bundle: 'pro' },
+        { q: "What is the question that decides Keep It Their Choice?", a: "Did they get a real chance to say no — and did I let it stand?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Keep It Their Choice?", a: "The smaller second ask straight after a no.", bundle: 'pro' },
+        { q: "A small thing, and they are right there. Which strategy?", a: "Announce and Pause.", bundle: 'pro' },
+        { q: "A big or open-ended thing. Which strategy?", a: "Name the Limits.", bundle: 'pro' },
+        { q: "You never actually asked. Which strategy?", a: "Check What You Assumed.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Full Ask** — Ask First → Name the Limits → Leave Room to Refuse\n2. **Asking for a Friend** — Ask for Someone Else → Name the Limits → Take a No Well\n3. **The Old Yes** — Check What You Assumed → Leave Room to Refuse → Take a No Well\n\nIn each one, the last step is the one that makes the permission real.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Full Ask, Asking for a Friend, and The Old Yes.", bundle: 'pro' },
+        { q: "What is the order in The Full Ask?", a: "Ask First, Name the Limits, Leave Room to Refuse.", bundle: 'pro' },
+        { q: "Why do the limits come second in The Full Ask?", a: "\"What exactly?\" is almost always their first reply.", bundle: 'pro' },
+        { q: "What is the order in Asking for a Friend?", a: "Ask for Someone Else, Name the Limits, Take a No Well.", bundle: 'pro' },
+        { q: "Which step matters most in Asking for a Friend?", a: "The last one. A go-between who argues a no turns someone else's request into their own favour.", bundle: 'pro' },
+        { q: "What is the order in The Old Yes?", a: "Check What You Assumed, Leave Room to Refuse, Take a No Well.", bundle: 'pro' },
+        { q: "Why leave room to refuse after they say \"it's fine\"?", a: "People often say it out of habit.", bundle: 'pro' },
+        { q: "What do the three sequences have in common?", a: "The last step is the one that makes the permission real.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **Already Done** — you did it before asking\n• **They Can't Easily Say No** — you have more power\n• **Too Small to Ask** — it feels silly to ask\n• **More Than One Person** — it belongs to several people\n• **An Unexpected No** — you were sure of a yes\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Already Done, They Can't Easily Say No, Too Small to Ask, More Than One Person, and An Unexpected No.", bundle: 'pro' },
+        { q: "What should you avoid when it is already done?", a: "\"I didn't think you'd mind.\"", bundle: 'pro' },
+        { q: "What is the main strategy when they cannot easily say no?", a: "Leave Room to Refuse, said more clearly than usual.", bundle: 'pro' },
+        { q: "What should you avoid when you have more power?", a: "Asking in front of other people.", bundle: 'pro' },
+        { q: "What is made for things that feel too small to ask about?", a: "Announce and Pause.", bundle: 'pro' },
+        { q: "What should you avoid when it belongs to several people?", a: "\"Everyone's fine with it, right?\"", bundle: 'pro' },
+        { q: "What is the main strategy for an unexpected no?", a: "Take a No Well.", bundle: 'pro' },
+        { q: "What should you avoid after an unexpected no?", a: "\"Really? Why?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **The Permission Mindset** — asking makes it awkward\n• **Small Things** — it's too small to ask about\n• **Forgiveness, Not Permission** — easier to say sorry later\n• **Being Close** — we don't need to ask each other\n• **Their No** — a no means they don't trust me\n• **Putting Them on the Spot** — asking is a burden\n\nMost of them decide for the other person what they would say.",
+      cards: [
+        { q: "What are the six mindsets in this pack?", a: "The Permission Mindset, Small Things, Forgiveness Not Permission, Being Close, Their No, and Putting Them on the Spot.", bundle: 'pro' },
+        { q: "What is true instead of \"asking makes it awkward\"?", a: "A quick question before is almost never awkward. Finding out afterwards is.", bundle: 'pro' },
+        { q: "What is true about small things?", a: "They get a small question, not no question.", bundle: 'pro' },
+        { q: "Where does \"easier to ask forgiveness\" not apply?", a: "Where the thing belongs to someone else.", bundle: 'pro' },
+        { q: "What does \"we're close, we don't need to ask\" quietly cost?", a: "The things close people minded but did not say.", bundle: 'pro' },
+        { q: "What is a no to permission usually about?", a: "The thing, not you.", bundle: 'pro' },
+        { q: "What actually puts people on the spot?", a: "Being asked in public, or in a way that makes no impossible.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They decide for the other person what they would say.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

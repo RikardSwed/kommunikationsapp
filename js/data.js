@@ -9690,6 +9690,120 @@ const collections = {
       ]
     },
   ],
+  askingpermission: [
+    {
+      name: "Ask First",
+      guideFront: "Ask before you do it when...",
+      guideBack: "A question before the act",
+      description: "When something you are about to do touches someone else — their idea, their photo, their things, their news — ask before you do it, not afterwards. \"Can I post this one? You're in it.\"\n\nIt works because a question before is cheap and an apology after is not. Asked first, it is a small courtesy that takes five seconds. Done first and apologised for later, the same thing becomes a small breach: they did not get to decide, and now they are being asked to be fine with it.\n\nMost people skip it because the answer is probably yes. That is exactly why it is easy to ask.\n\nTypical phrases: \"Can I…?\", \"Is it okay if I…?\", \"Would you mind if I…?\", \"Before I do this —\"\n\nThree kinds of thing to ask about:\n\n1. Their things — a bike, a car, a charger. \"Can I borrow your bike for the station?\"\n\n2. Their image or words — a photo, an idea, a message. \"Can I post this one? You're in it.\"\n\n3. Their news — something they told you. \"Can I tell the others, or would you rather?\"\n\nMindset: if it is theirs, it is their call. Ask while asking is still easy.",
+      inputs: [
+        { q: "You want to bring up Sara's idea in today's meeting. She is not coming.", a: "\"Is it okay if I raise your idea in the meeting? I'll say it's yours.\"", bundle: 'free' },
+        { q: "You are about to post a photo from the party. Your friend is in it.", a: "\"Can I post this one? You're in it.\"", bundle: 'free' },
+        { q: "Your cousin is visiting the weekend of your friend's dinner party.", a: "\"My cousin's staying that weekend — could I bring him on Saturday?\"", bundle: 'free' },
+        { q: "Your flatmate's bike is in the hall, and you are late for the train.", a: "\"Can I borrow your bike to get to the station?\"", bundle: 'free' },
+        { q: "Your friend told you about her new job, and you are seeing mutual friends tonight.", a: "\"Can I tell the others about the job, or would you rather do it?\"", bundle: 'free' },
+        { q: "You want to use two of Karim's slides in your presentation tomorrow.", a: "\"Could I use two of your slides tomorrow? I'll put your name on them.\"", bundle: 'pro' },
+        { q: "You want to move the sofa in the living room you share.", a: "\"Would you mind if I moved the sofa over to the window?\"", bundle: 'pro' },
+        { q: "You want to record the team call so you can listen again later.", a: "\"Is it okay if I record this call? It's just for my notes.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Announce and Pause",
+      guideFront: "Say what you're about to do when...",
+      guideBack: "An announcement with room to stop you",
+      description: "For small things, when the person is right there, say what you are about to do — and then pause long enough for them to stop you. \"I'm going to put this one up — say if you'd rather I didn't.\"\n\nIt works because not every small thing needs a formal question. A full \"is it okay if…\" for picking up a pen can feel stiff. An announcement with a real pause keeps things moving and still gives the other person the chance to say no.\n\nThe pause is the whole strategy. Without it, an announcement is just telling them.\n\nTypical phrases: \"I'm going to… — shout if not.\", \"I'll… unless you'd rather I didn't.\", \"Say if you mind.\", \"Stop me if that's weird.\"\n\nThree things that make it work:\n\n1. Say it before, not during — \"I'm about to pull your chart into my deck.\"\n\n2. Name the way to stop you — \"Say if you'd rather I didn't.\"\n\n3. Actually wait — two seconds of silence, looking at them.\n\nMindset: an announcement is only fair if they can still say no. Leave the gap.",
+      inputs: [
+        { q: "You are about to mention Sara's idea in the meeting, and she is sitting next to you.", a: "\"I'm going to bring up your idea in a minute — stop me if you'd rather I didn't.\"", bundle: 'free' },
+        { q: "You are about to post the party photo, and your friend is right beside you.", a: "\"I'm putting this one up — say if you'd rather I didn't.\"", bundle: 'free' },
+        { q: "You are texting your friend about her dinner, and your cousin will be with you.", a: "\"I'll have my cousin with me Saturday — I'll bring him unless that's awkward.\"", bundle: 'free' },
+        { q: "Your flatmate is in the kitchen as you pick up their bike.", a: "\"I'm borrowing your bike for the station — shout if you need it.\"", bundle: 'free' },
+        { q: "You are about to share your friend's new job in the group chat she is in.", a: "\"I'm going to tell everyone your news — unless you want to?\"", bundle: 'free' },
+        { q: "You are building your slides, and Karim is at the next desk.", a: "\"I'm pulling your chart into my deck — say if you'd rather I didn't.\"", bundle: 'pro' },
+        { q: "Your flatmate is home as you start to move the sofa.", a: "\"I'm going to try the sofa by the window — tell me if you hate it.\"", bundle: 'pro' },
+        { q: "The team call is starting, and you are about to press record.", a: "\"I'm going to record this for my notes — say if anyone minds.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name the Limits",
+      guideFront: "Say exactly how much when...",
+      guideBack: "A request with its edges drawn",
+      description: "Ask for the exact thing — which part, for how long, where, for whom — instead of an open \"is it okay if I…\". \"Could I post just the group one, on my private account?\"\n\nIt works because an open-ended ask is hard to say yes to. \"Can I use your photos?\" could mean one photo or all of them, a private message or a billboard. The other person has to imagine the worst version and answer that. Drawing the edges makes yes easy, and it tells them you have thought about their side.\n\nIt also makes the permission easy to keep. You both know what was agreed.\n\nTypical phrases: \"Just the…\", \"Only for…\", \"Until…\", \"Could I… and then…?\"\n\nFour edges to draw:\n\n1. Which part — \"Just the chart, not the whole deck.\"\n\n2. How long — \"For a week, and we move it back if you don't like it.\"\n\n3. Where, or who sees it — \"Only on my private account.\"\n\n4. What happens after — \"And I'll delete the recording afterwards.\"\n\nMindset: a clear ask is easier to agree to, and easier to keep.",
+      inputs: [
+        { q: "You want to tell your manager about Sara's idea, but only the rough outline.", a: "\"Could I mention the outline of your idea to Anna? Just the gist.\"", bundle: 'free' },
+        { q: "You want to share a photo of your friend from the party.", a: "\"Could I post just the group one, on my private account?\"", bundle: 'free' },
+        { q: "You want your cousin to come to your friend's dinner, but only for part of it.", a: "\"Could he join us for drinks before, and head off before dinner?\"", bundle: 'free' },
+        { q: "You want to use your flatmate's bike this week.", a: "\"Could I use your bike on Tuesday and Thursday, just to the station and back?\"", bundle: 'free' },
+        { q: "You want to tell your partner about your friend's new job, but nobody else.", a: "\"Is it okay if I tell Jonas? Just him.\"", bundle: 'free' },
+        { q: "You want to use Karim's slides, but only the chart, only for the internal meeting.", a: "\"Could I use just the chart, for the internal meeting on Friday?\"", bundle: 'pro' },
+        { q: "You want to try a new layout in the shared living room.", a: "\"Could we try the sofa by the window for a week, and move it back if you don't like it?\"", bundle: 'pro' },
+        { q: "You want to record only the part of the call where the client explains the brief.", a: "\"Could I record just the brief, for my notes, and delete it afterwards?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Leave Room to Refuse",
+      guideFront: "Give them the way out when...",
+      guideBack: "A stated permission to say no",
+      description: "Say the no out loud for them. \"Honestly, no is fine.\" When you ask for permission, the other person often feels they cannot refuse without seeming unfriendly — so tell them they can.\n\nIt works because a permission given under pressure is not really permission. If saying no would be awkward, many people say yes and then feel quietly overrun. An open exit is what makes their yes mean something.\n\nIt matters most where the other person has less power — someone junior, a guest, a friend who hates saying no — and in anything personal: their image, their story, their space.\n\nTypical phrases: \"No is completely fine.\", \"You can say no.\", \"It's your call.\", \"I'll do it another way if not.\"\n\nThree ways to leave the door open:\n\n1. Say no is fine — \"Honestly, no is fine.\"\n\n2. Say what you will do instead — \"I can make my own version if not.\"\n\n3. Say it is theirs to decide — \"It's your idea. You might want to present it yourself.\"\n\nMindset: a yes only counts if the no was really available.",
+      inputs: [
+        { q: "Sara seems unsure about you raising her idea in the meeting.", a: "\"You can say no. It's your idea, and you might want to present it yourself.\"", bundle: 'free' },
+        { q: "Your friend hesitates when you ask about posting the photo.", a: "\"Honestly, no is fine. It can stay on my phone.\"", bundle: 'free' },
+        { q: "Your friend pauses when you ask about bringing your cousin to dinner.", a: "\"Say no if it's a lot. He'll be fine on his own.\"", bundle: 'free' },
+        { q: "Your flatmate hesitates when you ask about the bike.", a: "\"It's fine if not — you might need it.\"", bundle: 'free' },
+        { q: "Your friend seems unsure whether people should know about the job yet.", a: "\"You don't have to decide now. I'll keep it to myself until you say.\"", bundle: 'free' },
+        { q: "Karim looks hesitant when you ask about using his slides.", a: "\"No is completely fine. I can make my own version.\"", bundle: 'pro' },
+        { q: "Your flatmate shrugs when you ask about moving the sofa.", a: "\"It's your room too. If you'd rather it stayed, it stays.\"", bundle: 'pro' },
+        { q: "Someone on the call goes quiet when you ask to record it.", a: "\"No problem if not. I'll just take notes.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Take a No Well",
+      guideFront: "Accept it in one line when...",
+      guideBack: "A refusal received without a sulk",
+      description: "They said no. Accept it in one sentence — no sulk, no \"but why?\", no second attempt with a smaller version. \"No problem. It stays on my phone.\"\n\nIt works because how you take this no decides whether they will feel free to say no next time. If a refusal costs them a cold look or a negotiation, they learn that the \"no is fine\" you offered was not real.\n\nIt matters even more with permission than with favours. A favour is their time; permission is about something that is theirs. Pushing after a no is pushing against a boundary.\n\nTypical phrases: \"No problem.\", \"Of course.\", \"Understood.\", \"Fair enough — it stays.\"\n\nThree parts:\n\n1. Accept it — one line, warm. \"Of course.\"\n\n2. Do not ask why — the reason is theirs.\n\n3. Do not come back with a smaller version straight away — \"what about just one photo?\" is a second ask, and it should wait.\n\nMindset: they answered the question. That is what asking was for.",
+      inputs: [
+        { q: "Sara says she would rather present her idea herself.", a: "\"Of course. I'll leave it for you.\"", bundle: 'free' },
+        { q: "Your friend says she would rather you did not post the photo.", a: "\"No problem. It stays on my phone.\"", bundle: 'free' },
+        { q: "Your friend says there is no room for your cousin at dinner.", a: "\"Totally fine. Thanks for telling me straight.\"", bundle: 'free' },
+        { q: "Your flatmate says they need the bike today.", a: "\"No worries, I'll get the bus.\"", bundle: 'free' },
+        { q: "Your friend says she wants to tell people about the job herself.", a: "\"Of course. I won't say a word.\"", bundle: 'free' },
+        { q: "Karim says his slides are not ready to be shown yet.", a: "\"Fair enough. I'll wait until they are.\"", bundle: 'pro' },
+        { q: "Your flatmate says they like the sofa where it is.", a: "\"Fair enough, it stays.\"", bundle: 'pro' },
+        { q: "A colleague says they would rather the call was not recorded.", a: "\"Understood. No recording.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for Someone Else",
+      guideFront: "Speak for the other person when...",
+      guideBack: "A request that names who it's for",
+      description: "Someone asks you to get permission for them — your partner, your child, your manager, a friend. Ask clearly, say who it is for, and bring the answer back without leaning on it. \"Anna would like to use your chart on Friday — would that be okay?\"\n\nIt works because permission asked through a go-between easily goes wrong. The person asked cannot tell whose request it is, and it is harder to say no to you than to a stranger. Naming who it is for, and making it clear you are only passing it on, lets them answer the real question.\n\nIt also protects you. If you add your own weight — \"it'd really help me out\" — you have turned their request into your favour.\n\nTypical phrases: \"X asked me to check —\", \"X would like to…\", \"I'm asking for X —\", \"Feel free to say no — I'm only passing it on.\"\n\nThree things to make clear:\n\n1. Who it is for — \"My cousin asked if he could come.\"\n\n2. What exactly — \"He'd like to use your bike tomorrow, for an hour.\"\n\n3. That you are only passing it on — \"Say no if you'd rather. I'm only the messenger.\"\n\nMindset: pass on the question, not the pressure.",
+      inputs: [
+        { q: "Your manager asks you to find out whether Sara's idea can go into the report.", a: "\"Anna would like to put your idea in the report — would that be okay?\"", bundle: 'free' },
+        { q: "Your sister wants to post the party photo, and asks you to check with your friend.", a: "\"Mia wants to post the photo from Saturday — is that okay with you?\"", bundle: 'free' },
+        { q: "Your cousin asks you to find out if he can come to the dinner.", a: "\"My cousin asked if he could come on Saturday — would that be okay, or too many?\"", bundle: 'free' },
+        { q: "Your girlfriend is staying and would like to borrow your flatmate's bike.", a: "\"Lina's wondering if she could borrow your bike tomorrow — is that okay?\"", bundle: 'free' },
+        { q: "Your partner wants to congratulate your friend, though she only told you.", a: "\"Jonas would love to congratulate you — is it okay that he knows?\"", bundle: 'free' },
+        { q: "Your manager wants Karim's chart in her presentation and asks you to check.", a: "\"Anna would like to use your chart on Friday — would that be okay?\"", bundle: 'pro' },
+        { q: "Your partner, who stays over a lot, has ideas about rearranging the living room.", a: "\"Sam's got ideas about the living room — would you be up for hearing them?\"", bundle: 'pro' },
+        { q: "A colleague who cannot make the call asks you to record it for her.", a: "\"Priya can't make it and asked if I could record this for her — is everyone okay with that?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Check What You Assumed",
+      guideFront: "Check an old assumption when...",
+      guideBack: "A question about a yes you took for granted",
+      description: "Sometimes you have been doing something for a while without really asking — taking their bike, posting their photos, using their work. Check it. \"I've got into the habit of just taking your bike. Is that okay, or should I ask each time?\"\n\nIt works because permissions that were never given tend to pile up quietly. The other person may have minded from the start and felt it was too late to say so. Asking now gives them the chance they never had — and most of the time they will say it is fine, and mean it more than before.\n\nIt is not an apology, unless it needs to be. It is a question.\n\nTypical phrases: \"I've been… without asking. Is that okay?\", \"I realised I never asked —\", \"Should I check each time?\", \"Last time I just… — was that alright?\"\n\nThree kinds of old assumption:\n\n1. A habit — \"I've been taking your bike for weeks.\"\n\n2. A one-off — \"Last time I just turned up with Ola. Should I have asked?\"\n\n3. Something that has changed — \"You were fine with me posting photos before. Is that still true?\"\n\nMindset: an old yes you never heard is worth checking. It is never too late to ask.",
+      inputs: [
+        { q: "You have raised Sara's ideas in meetings before without asking her.", a: "\"I've been raising your ideas in meetings. Is that actually okay with you?\"", bundle: 'free' },
+        { q: "You have posted photos of your friend for months without asking.", a: "\"I've been posting photos of you without asking. Is that actually okay?\"", bundle: 'free' },
+        { q: "Last time you brought a friend to their dinner without asking first.", a: "\"Last time I just turned up with Ola. Should I have asked?\"", bundle: 'free' },
+        { q: "You have been taking your flatmate's bike for weeks without asking.", a: "\"I've got into the habit of just taking your bike. Is that okay, or should I ask each time?\"", bundle: 'free' },
+        { q: "You realise you have already told a few people your friend's news, assuming it was fine.", a: "\"I've mentioned your job to a couple of people. I should have asked — is that okay?\"", bundle: 'free' },
+        { q: "You have used Karim's slides in the last three meetings without asking.", a: "\"I've been using your slides a lot. Is that okay, or should I check first?\"", bundle: 'pro' },
+        { q: "You rearranged the living room last month without asking, and your flatmate went quiet.", a: "\"I moved the shelves last month without asking. Was that okay?\"", bundle: 'pro' },
+        { q: "You have recorded the last few team calls without asking.", a: "\"I've been recording these calls for my notes. I should have asked — is that okay?\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -14098,6 +14212,56 @@ const collectionsModeData = {
         { q: "Your manager asks what you can commit to this week.", a: "\"The two reports I've got. Nothing new until they're done.\" [Promise Small]", bundle: 'pro', guideBack: "A promise small enough to keep" },
         { q: "You were on time three weeks running after a month of being late.", a: "\"Here, on time. That's three weeks now.\" [Report It Done]", bundle: 'pro', guideBack: "A plain report of a promise kept" },
         { q: "You said yes to judging the bake sale, and you already know you cannot make it.", a: "\"I said yes too quickly. I can't make it, and I'd rather tell you today.\" [Tell Them Early]", bundle: 'pro', guideBack: "The warning, before the deadline" },
+      ]
+    },
+  ],
+  askingpermission: [
+    {
+      name: "Size the Ask",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Ask First**, **Announce and Pause** and **Name the Limits** — three ways to ask, depending on how big the thing is.\n\n• **Ask First** — an ordinary thing, asked as a question before you do it\n• **Announce and Pause** — a small thing, and they are right there\n• **Name the Limits** — a bigger or open-ended thing, so draw its edges\n\nThe question that decides it: how big is this for them? The bigger it is, the more exact the question should be.\n\nThe usual wrong choice is announcing something that needed a question. If it is their photo, their story or their space, an announcement is not enough.\n\nMindset: match the question to what is at stake for them.",
+      inputs: [
+        { q: "You want to borrow your colleague's phone charger for ten minutes, and she is at her desk.", a: "\"I'm borrowing your charger for ten minutes — shout if you need it.\" [Announce and Pause]", bundle: 'pro', guideBack: "An announcement with room to stop you" },
+        { q: "You want to share your friend's poem at your writing group.", a: "\"Could I read your poem at the group on Thursday? Just that one, and I'll say it's yours.\" [Name the Limits]", bundle: 'pro', guideBack: "A request with its edges drawn" },
+        { q: "You want to use your neighbour's parking space while they are away.", a: "\"Would you mind if I used your space while you're away?\" [Ask First]", bundle: 'pro', guideBack: "A question before the act" },
+        { q: "You want to quote your colleague's email in a report to the director.", a: "\"Could I quote the second paragraph of your email in the report? Only that bit.\" [Name the Limits]", bundle: 'pro', guideBack: "A request with its edges drawn" },
+        { q: "Your friend is next to you, and you want to change the music.", a: "\"I'm changing the song — stop me if you're into this one.\" [Announce and Pause]", bundle: 'pro', guideBack: "An announcement with room to stop you" },
+        { q: "You want to tell your parents about your sister's pregnancy.", a: "\"Can I tell Mum and Dad, or do you want to do it?\" [Ask First]", bundle: 'pro', guideBack: "A question before the act" },
+        { q: "You want to film your friend's band at their gig.", a: "\"Could I film one song, just for us, not for posting?\" [Name the Limits]", bundle: 'pro', guideBack: "A request with its edges drawn" },
+        { q: "You want to take the last slice of your flatmate's pizza.", a: "\"Can I have the last slice?\" [Ask First]", bundle: 'pro', guideBack: "A question before the act" },
+      ]
+    },
+    {
+      name: "Keep It Their Choice",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Leave Room to Refuse**, **Take a No Well** and **Check What You Assumed** — three ways of making sure the answer really is theirs.\n\n• **Leave Room to Refuse** — before they answer: say no is fine\n• **Take a No Well** — after they answer no: accept it in one line\n• **Check What You Assumed** — when you never really asked: ask now\n\nThe question that decides it: did they get a real chance to say no — and if they said it, did I let it stand?\n\nThe usual wrong choice is the smaller second ask right after a no. \"Okay, what about just one photo?\" turns their answer into the start of a negotiation.\n\nMindset: permission only counts if the no was real.",
+      inputs: [
+        { q: "You ask the intern if you can use her notes, and she says yes very fast.", a: "\"You can say no — I'd honestly rather you did if you'd prefer.\" [Leave Room to Refuse]", bundle: 'pro', guideBack: "A stated permission to say no" },
+        { q: "Your friend says you cannot share his story with the group.", a: "\"Understood. It stays with me.\" [Take a No Well]", bundle: 'pro', guideBack: "A refusal received without a sulk" },
+        { q: "You have been using your brother's streaming account for a year.", a: "\"I've been on your account for ages without asking. Is that still okay?\" [Check What You Assumed]", bundle: 'pro', guideBack: "A question about a yes you took for granted" },
+        { q: "Your guest seems uncomfortable when you ask to take a photo.", a: "\"It's fine if not. I'll just remember it.\" [Leave Room to Refuse]", bundle: 'pro', guideBack: "A stated permission to say no" },
+        { q: "Your partner says no to having your friends stay over this weekend.", a: "\"Okay. I'll tell them another time.\" [Take a No Well]", bundle: 'pro', guideBack: "A refusal received without a sulk" },
+        { q: "You realise you always choose where the team has lunch.", a: "\"I've been picking lunch every week without asking. Does anyone else want a say?\" [Check What You Assumed]", bundle: 'pro', guideBack: "A question about a yes you took for granted" },
+        { q: "You are about to ask for \"just one photo\" after your friend said no.", a: "\"No problem. It stays on my phone.\" [Take a No Well]", bundle: 'pro', guideBack: "A refusal received without a sulk" },
+        { q: "You are asking your junior colleague if you can present their analysis.", a: "\"It's your work, so it's your call. Say no if you'd rather present it.\" [Leave Room to Refuse]", bundle: 'pro', guideBack: "A stated permission to say no" },
+      ]
+    },
+    {
+      name: "All Seven Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order real situations arrive.\n\nThree are ways to ask: **Ask First** for most things, **Announce and Pause** for small things with the person right there, and **Name the Limits** for anything big or open-ended. Two protect their answer: **Leave Room to Refuse** before it, **Take a No Well** after it. **Ask for Someone Else** is for passing on a question, and **Check What You Assumed** is for the permission you never asked for.\n\nIf you are unsure, ask: whose is this, and how big is it for them?\n\nMindset: if it is theirs, it is their call — and the question should make that easy.",
+      inputs: [
+        { q: "You want to use your friend's kitchen to bake for the party.", a: "\"Could I use your kitchen on Friday afternoon to bake for Saturday?\" [Ask First]", bundle: 'pro', guideBack: "A question before the act" },
+        { q: "Your colleague is at the next desk, and you are about to open the window.", a: "\"I'm opening the window — say if you'll be cold.\" [Announce and Pause]", bundle: 'pro', guideBack: "An announcement with room to stop you" },
+        { q: "You want to use your friend's holiday photos in a slideshow for her birthday.", a: "\"Could I use five of your holiday photos in the birthday slideshow? Only ones you pick.\" [Name the Limits]", bundle: 'pro', guideBack: "A request with its edges drawn" },
+        { q: "Your elderly neighbour agrees very quickly when you ask to park on her drive.", a: "\"Honestly, say no if it's a nuisance. I can park on the road.\" [Leave Room to Refuse]", bundle: 'pro', guideBack: "A stated permission to say no" },
+        { q: "Your friend says you cannot bring your dog to her flat.", a: "\"Of course. He'll stay home.\" [Take a No Well]", bundle: 'pro', guideBack: "A refusal received without a sulk" },
+        { q: "Your son wants to invite a friend to your sister's barbecue and asks you to check.", a: "\"Theo would love to bring his friend Max on Sunday — is that okay with you?\" [Ask for Someone Else]", bundle: 'pro', guideBack: "A request that names who it's for" },
+        { q: "You realise you have been adding your friend to group chats without asking her.", a: "\"I keep adding you to group chats without asking. Do you actually want that?\" [Check What You Assumed]", bundle: 'pro', guideBack: "A question about a yes you took for granted" },
+        { q: "You want to tell your team about your manager's health news, which she mentioned to you.", a: "\"Can I tell the team, or would you rather they didn't know?\" [Ask First]", bundle: 'pro', guideBack: "A question before the act" },
       ]
     },
   ],

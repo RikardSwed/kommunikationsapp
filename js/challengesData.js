@@ -6686,4 +6686,86 @@ const challengesCollections = {
       ]
     },
   ],
+  askingpermission: [
+    {
+      name: "Already Done",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You did it first and realised afterwards that you should have asked — the photo is up, the news is out, the chair is moved.\n\nWhat goes wrong is acting as if asking now would make it worse, so you say nothing and hope it was fine.\n\n**Check What You Assumed** is the main move: name what you did, and ask. **Take a No Well** matters if the answer is that they did mind. **Ask First** is for next time.\n\nThe one thing to avoid: \"I didn't think you'd mind.\"\n\nMindset: asking late is still asking. Not asking at all is the problem.",
+      inputs: [
+        { q: "You already posted the photo of your friend.", a: "\"I posted that before asking. Do you want me to take it down?\" [Check What You Assumed]", bundle: 'pro', guideBack: "A question about a yes you took for granted" },
+        { q: "You told a few people your friend's news before checking.", a: "\"I told Ola and Mia about the job. I should have asked first — is that okay?\" [Check What You Assumed]", bundle: 'pro', guideBack: "A question about a yes you took for granted" },
+        { q: "You borrowed your flatmate's charger this morning without asking.", a: "\"I took your charger this morning. Should I have asked?\" [Check What You Assumed]", bundle: 'pro', guideBack: "A question about a yes you took for granted" },
+        { q: "They say, \"I'd rather you'd asked.\"", a: "\"Fair. I'll ask next time.\" [Take a No Well]", bundle: 'pro', guideBack: "A refusal received without a sulk" },
+        { q: "You are about to say, \"I didn't think you'd mind.\"", a: "\"I didn't ask, and I should have. Is it okay?\" [Check What You Assumed]", bundle: 'pro', guideBack: "A question about a yes you took for granted" },
+        { q: "You forwarded your colleague's email to the whole team, and now you see it was personal.", a: "\"I forwarded your email before checking. Do you want me to ask people to delete it?\" [Check What You Assumed]", bundle: 'pro', guideBack: "A question about a yes you took for granted" },
+        { q: "Next time you want to use the same photo.", a: "\"Can I post this one? You're in it.\" [Ask First]", bundle: 'pro', guideBack: "A question before the act" },
+        { q: "Your friend asks you to take the post down.", a: "\"Done. Sorry for not asking.\" [Take a No Well]", bundle: 'pro', guideBack: "A refusal received without a sulk" },
+      ]
+    },
+    {
+      name: "They Can't Easily Say No",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You have more power in the situation — you are their manager, their host, their parent, their older relative — so whatever you ask, a no costs them more than a yes.\n\nWhat goes wrong is taking their quick yes at face value. People with less power often agree before they have had time to think.\n\n**Leave Room to Refuse** is the main move, said more clearly than usual. **Name the Limits** makes the ask small enough to say no to. **Take a No Well** proves the exit was real.\n\nThe one thing to avoid: asking in front of other people.\n\nMindset: the more power I have, the more clearly I say that no is fine.",
+      inputs: [
+        { q: "You want to use your junior colleague's analysis in your presentation to the board.", a: "\"It's your work, so it's your call. Say no if you'd rather present it yourself.\" [Leave Room to Refuse]", bundle: 'pro', guideBack: "A stated permission to say no" },
+        { q: "You are a guest's host and want to post a photo of them.", a: "\"Honestly, no is fine. I know not everyone likes being online.\" [Leave Room to Refuse]", bundle: 'pro', guideBack: "A stated permission to say no" },
+        { q: "Your teenage son said yes to you reading his school report out to the family.", a: "\"You said yes quickly. I'll only read the English bit, if that's okay.\" [Name the Limits]", bundle: 'pro', guideBack: "A request with its edges drawn" },
+        { q: "The new trainee agrees instantly when you ask to borrow her notes.", a: "\"No pressure at all — I can manage without them.\" [Leave Room to Refuse]", bundle: 'pro', guideBack: "A stated permission to say no" },
+        { q: "You want to use a team member's personal story as an example in a talk.", a: "\"Could I mention it without your name, just the one sentence?\" [Name the Limits]", bundle: 'pro', guideBack: "A request with its edges drawn" },
+        { q: "Your employee says no to working at the weekend event.", a: "\"Understood. That's completely fine.\" [Take a No Well]", bundle: 'pro', guideBack: "A refusal received without a sulk" },
+        { q: "You are about to ask your team, in the meeting, if you can record it.", a: "\"I'll send a message after — reply to me privately if you'd rather I didn't record.\" [Leave Room to Refuse]", bundle: 'pro', guideBack: "A stated permission to say no" },
+        { q: "Your elderly aunt agrees to lend you her car, though you know she needs it.", a: "\"Just for Saturday morning, and back by twelve. Say if even that's awkward.\" [Name the Limits]", bundle: 'pro', guideBack: "A request with its edges drawn" },
+      ]
+    },
+    {
+      name: "Too Small to Ask",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "It feels too small to ask about — a charger, a chair, a photo, a quick mention — so asking would seem odd or fussy.\n\nWhat goes wrong is that \"too small\" is decided by you. Small things add up, and some of them are not small to the other person at all.\n\n**Announce and Pause** is made for this: it keeps it light and still gives them the chance to say no. **Ask First** is right when the thing is personal, however small.\n\nThe one thing to avoid: deciding for them that it is too small to matter.\n\nMindset: small things can be asked about quickly. That is not the same as not asking.",
+      inputs: [
+        { q: "You want to sit in the empty chair at your colleague's desk.", a: "\"I'm grabbing this chair for a minute — shout if it's taken.\" [Announce and Pause]", bundle: 'pro', guideBack: "An announcement with room to stop you" },
+        { q: "You want to take one chip from your friend's plate.", a: "\"Can I have one?\" [Ask First]", bundle: 'pro', guideBack: "A question before the act" },
+        { q: "You want to mention your friend by name in a funny story at dinner.", a: "\"Can I tell the one about the canoe? You're in it.\" [Ask First]", bundle: 'pro', guideBack: "A question before the act" },
+        { q: "You want to plug your phone into your friend's car charger.", a: "\"I'm plugging my phone in — say if you need it.\" [Announce and Pause]", bundle: 'pro', guideBack: "An announcement with room to stop you" },
+        { q: "You want to turn the heating up in the shared office.", a: "\"I'm turning the heating up a bit — say if anyone will melt.\" [Announce and Pause]", bundle: 'pro', guideBack: "An announcement with room to stop you" },
+        { q: "You want to read your partner's message over their shoulder.", a: "\"Can I see?\" [Ask First]", bundle: 'pro', guideBack: "A question before the act" },
+        { q: "You want to borrow a pen from the desk next to yours.", a: "\"I'm borrowing a pen — I'll put it back.\" [Announce and Pause]", bundle: 'pro', guideBack: "An announcement with room to stop you" },
+        { q: "You want to add your friend's phone number to a group list.", a: "\"Can I give your number to the organiser? It's just for the trip.\" [Ask First]", bundle: 'pro', guideBack: "A question before the act" },
+      ]
+    },
+    {
+      name: "More Than One Person",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The thing belongs to more than one person — a shared flat, a group photo, a team's work, a family's news — or you are asking on someone else's behalf.\n\nWhat goes wrong is asking one person and treating it as everyone's yes, or asking the whole group at once so nobody feels able to say no.\n\n**Ask First** each person it really belongs to. **Leave Room to Refuse** — especially in a group. **Ask for Someone Else** when you are the go-between.\n\nThe one thing to avoid: \"Everyone's fine with it, right?\"\n\nMindset: a yes from one person is one yes.",
+      inputs: [
+        { q: "You want to post a group photo with five friends in it.", a: "\"Is everyone okay with this going up? Message me if not.\" [Leave Room to Refuse]", bundle: 'pro', guideBack: "A stated permission to say no" },
+        { q: "One flatmate said yes to your partner moving in. You have two flatmates.", a: "\"Jonas is fine with it — are you? It's your flat too.\" [Ask First]", bundle: 'pro', guideBack: "A question before the act" },
+        { q: "You want to present your team's project at a conference.", a: "\"Would you all be okay with me presenting this? Tell me privately if not.\" [Leave Room to Refuse]", bundle: 'pro', guideBack: "A stated permission to say no" },
+        { q: "Your brother asks you to check if he can bring his new girlfriend to your parents' anniversary.", a: "\"Erik asked me to check — could he bring Nora to the anniversary?\" [Ask for Someone Else]", bundle: 'pro', guideBack: "A request that names who it's for" },
+        { q: "You are about to say, \"Everyone's fine with it, right?\"", a: "\"Does anyone mind? You can tell me later if you'd rather.\" [Leave Room to Refuse]", bundle: 'pro', guideBack: "A stated permission to say no" },
+        { q: "Your family is keeping your grandmother's illness quiet, and you want to tell a friend.", a: "\"Can I tell Mia about Gran, or should that stay in the family?\" [Ask First]", bundle: 'pro', guideBack: "A question before the act" },
+        { q: "Your friend wants to join your holiday, and asks you to check with the others.", a: "\"Lina's asked if she could join us in June — how do you both feel about it?\" [Ask for Someone Else]", bundle: 'pro', guideBack: "A request that names who it's for" },
+        { q: "You want to change the name of the shared group chat.", a: "\"I'm going to rename the chat — say if you'd rather keep it.\" [Leave Room to Refuse]", bundle: 'pro', guideBack: "A stated permission to say no" },
+      ]
+    },
+    {
+      name: "An Unexpected No",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You asked, fully expecting a yes, and got a no. It stings, especially when the thing seemed small or reasonable.\n\nWhat goes wrong is the reaction: the pause that says you are hurt, the \"really?\", the smaller version asked straight away, or the reasons you now want them to hear.\n\n**Take a No Well** is the main move — one line, warm, and nothing after it. **Leave Room to Refuse** helps when you can see they said yes but meant no.\n\nThe one thing to avoid: \"Really? Why?\"\n\nMindset: an unexpected no is still just an answer.",
+      inputs: [
+        { q: "Your best friend says no to you sharing her engagement news.", a: "\"Of course. It's yours to tell.\" [Take a No Well]", bundle: 'pro', guideBack: "A refusal received without a sulk" },
+        { q: "Your colleague says you cannot use his slides, though they are only internal.", a: "\"No problem. I'll make my own.\" [Take a No Well]", bundle: 'pro', guideBack: "A refusal received without a sulk" },
+        { q: "You are about to say, \"Really? Why?\"", a: "\"Okay. Thanks for saying.\" [Take a No Well]", bundle: 'pro', guideBack: "A refusal received without a sulk" },
+        { q: "Your neighbour says no to you parking on her drive for one night.", a: "\"Fair enough. I'll find somewhere else.\" [Take a No Well]", bundle: 'pro', guideBack: "A refusal received without a sulk" },
+        { q: "Your partner says no to your friend staying on the sofa.", a: "\"Okay. I'll tell her it doesn't work this time.\" [Take a No Well]", bundle: 'pro', guideBack: "A refusal received without a sulk" },
+        { q: "They say yes, but their face says no.", a: "\"You don't look sure. Honestly, no is fine.\" [Leave Room to Refuse]", bundle: 'pro', guideBack: "A stated permission to say no" },
+        { q: "You want to ask for a smaller version straight after the no.", a: "\"Understood. I'll leave it.\" [Take a No Well]", bundle: 'pro', guideBack: "A refusal received without a sulk" },
+        { q: "Your child says no to you posting his school play online.", a: "\"Okay. It stays in the family.\" [Take a No Well]", bundle: 'pro', guideBack: "A refusal received without a sulk" },
+      ]
+    },
+  ],
 };

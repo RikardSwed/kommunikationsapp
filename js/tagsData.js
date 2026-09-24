@@ -397,6 +397,9 @@ const packTags = {
   brokenpromises: [
     'broken promises', 'trust', 'letting someone down', 'missing a deadline', 'cover stories', 'second chances', 'keeping your word'
   ],
+  askingpermission: [
+    'permission', 'consent', 'asking first', 'borrowing', 'sharing photos', 'sharing news', 'boundaries', 'taking a no'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -448,7 +451,7 @@ const TOPICS = [
   { id: 'opinions',              title: 'Opinions & Argumentation',      packs: ['influenceframing', 'agreeing', 'disagreeing', 'givingcounterexamples', 'discussing'] },
   { id: 'persuasion',            title: 'Persuasion & Negotiation',      packs: ['influenceframing', 'persuasionandinfluence1', 'persuasionandinfluence2', 'negotiationandcompromise'] },
   { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression', 'oconnor1', 'oconnor3', 'jfisher1', 'jfisher2', 'assertivecomm1', 'assertivecomm2', 'assertivecommadv', 'integratedmaster'] },
-  { id: 'boundaries',            title: 'Asking & Saying No',            packs: ['playfulrefusals', 'thehappyno', 'theregretfulno', 'makingrequests', 'sayingno', 'oconnor2', 'jimmy6'] },
+  { id: 'boundaries',            title: 'Asking & Saying No',            packs: ['playfulrefusals', 'thehappyno', 'theregretfulno', 'makingrequests', 'sayingno', 'oconnor2', 'jimmy6', 'askingpermission'] },
 
   // ── The hard end ──────────────────────────────────────────────────
   { id: 'emotions',              title: 'Emotions & Regulation',         packs: ['emotionlabellingandregulation', 'conflictemotions', 'praxdread4', 'reframing', 'oconnor6'] },

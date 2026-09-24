@@ -7131,4 +7131,102 @@ const mindsetCollections = {
       ]
     },
   ],
+  askingpermission: [
+    {
+      name: "The Permission Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Asking makes it awkward.\" The pack-wide belief that a question about permission turns a normal moment into a formal one.\n\nWhat is true instead: a quick question before is almost never awkward. What is awkward is the moment afterwards, when they find out and you were supposed to have asked.\n\nIt feels reasonable because the answer is usually yes, and asking about something obvious can feel like making a fuss.\n\nWhat it costs is the few times the answer would have been no — and those are the ones people remember.\n\nMindset: a short question now is lighter than an apology later.",
+      inputs: [
+        { q: "Asking makes it awkward.", a: "\"Asking takes five seconds; finding out I didn't ask is what's awkward.\"", bundle: 'pro' },
+        { q: "They'll obviously say yes.", a: "\"Then the question costs nothing, and I'll know for sure.\"", bundle: 'pro' },
+        { q: "It's not a big deal.", a: "\"It's not a big deal to me; I'll let them say whether it is to them.\"", bundle: 'pro' },
+        { q: "I'll look uptight if I ask.", a: "\"Asking about their photo looks thoughtful, not uptight.\"", bundle: 'pro' },
+        { q: "If they minded, they'd tell me.", a: "\"Most people don't say anything; they just mind.\"", bundle: 'pro' },
+        { q: "I'll ask next time.", a: "\"This is next time.\"", bundle: 'pro' },
+        { q: "Everyone does this without asking.", a: "\"Everyone does, and everyone's had it done to them and minded.\"", bundle: 'pro' },
+        { q: "Asking will make them think I've done something wrong.", a: "\"Asking first is how I make sure I haven't.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Small Things",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"It's such a small thing — asking would be weird.\" The belief that permission is only for big things.\n\nWhat is true instead: small things can be asked about quickly, and \"small\" is decided by the person it belongs to.\n\nIt feels reasonable because a formal question about a pen or a chair would be odd, and most small things really are fine.\n\nWhat it costs is the small things that were not small to them — their photo, their story, their seat — and the quiet sense that you take things.\n\nMindset: a small thing gets a small question, not no question.",
+      inputs: [
+        { q: "It's such a small thing, asking would be weird.", a: "\"A small thing gets a small question: 'Mind if I…?'\"", bundle: 'pro' },
+        { q: "It's only a photo.", a: "\"It's only a photo to me; it's their face.\"", bundle: 'pro' },
+        { q: "It's only a pen.", a: "\"Then 'I'm borrowing your pen' is all it takes.\"", bundle: 'pro' },
+        { q: "They won't even notice.", a: "\"If they won't notice, a quick word won't cost anything either.\"", bundle: 'pro' },
+        { q: "I'd feel silly asking about something this minor.", a: "\"Feeling silly for a second beats them feeling overlooked.\"", bundle: 'pro' },
+        { q: "Nobody asks about things like this.", a: "\"Then I'll be the one who does, and people notice that.\"", bundle: 'pro' },
+        { q: "I'll just put it back before they see.", a: "\"If I'd rather they didn't see, I should probably ask.\"", bundle: 'pro' },
+        { q: "It's only a story about them.", a: "\"It's their story; it takes one sentence to check.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Forgiveness, Not Permission",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"It's easier to ask forgiveness than permission.\" A saying that is sometimes true — which is why it spreads to places it should not.\n\nWhat is true: in some situations, waiting for permission slows everything down, and people are glad you just got on with it.\n\nWhat gets added is that the saying applies to things that belong to someone else — their image, their news, their things, their space. There, forgiveness is not easier. It is just later, and on their side, not yours.\n\nWhat it costs is the trust that you will not decide for them.\n\nMindset: keep the courage to act. Drop it where the thing is theirs.",
+      inputs: [
+        { q: "It's easier to ask forgiveness than permission.", a: "\"True, for my own work — but 'for their things too' is the part I added.\"", bundle: 'pro' },
+        { q: "If I wait for permission, nothing gets done.", a: "\"True, sometimes — but 'so I'll share their news' is the part I added.\"", bundle: 'pro' },
+        { q: "People respect someone who just gets on with it.", a: "\"True — but 'so I'll post their photo' is the part I added.\"", bundle: 'pro' },
+        { q: "I can always say sorry afterwards.", a: "\"True, I can — but 'so the sorry fixes it' is the part I added.\"", bundle: 'pro' },
+        { q: "Asking slows things down.", a: "\"True, a little — but 'so it's not worth it' is the part I added.\"", bundle: 'pro' },
+        { q: "They'd have said yes anyway.", a: "\"True, probably — but 'so I didn't need to ask' is the part I added.\"", bundle: 'pro' },
+        { q: "Bold people don't ask.", a: "\"True, about their own risks — but 'so they don't ask about mine' is the part I added.\"", bundle: 'pro' },
+        { q: "The result was fine, so it doesn't matter that I didn't ask.", a: "\"True, the result was fine — but 'so asking didn't matter' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being Close",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"We're close. We don't need to ask each other.\" A belief that feels like the best part of a close relationship.\n\nWhat is true instead: close people still have things that are theirs, and closeness is exactly why they find it hard to say no.\n\nIt feels reasonable because not having to ask is a real sign of comfort, and a lot of the time it works.\n\nWhat it costs is quiet: the thing your partner, sibling or best friend minded but did not say, because saying it would have felt like saying you were not close.\n\nMindset: being close is a reason to ask easily, not a reason not to ask.",
+      inputs: [
+        { q: "We're close; we don't need to ask each other.", a: "\"And being close is exactly why they won't tell me when they mind.\"", bundle: 'pro' },
+        { q: "What's mine is theirs, and what's theirs is mine.", a: "\"Until the day they wanted the thing I took.\"", bundle: 'pro' },
+        { q: "My sister wouldn't mind me telling people.", a: "\"She wouldn't say she minded, which isn't the same.\"", bundle: 'pro' },
+        { q: "Asking my partner would feel formal.", a: "\"And not asking sometimes feels like I don't see them as a separate person.\"", bundle: 'pro' },
+        { q: "Best friends don't need rules.", a: "\"No rules, but they still have things that are theirs.\"", bundle: 'pro' },
+        { q: "We share everything.", a: "\"So a quick check is the only way I'll know when something is theirs.\"", bundle: 'pro' },
+        { q: "They'd do the same to me.", a: "\"Maybe, and maybe I'd mind too without saying it.\"", bundle: 'pro' },
+        { q: "Asking would suggest we're not that close.", a: "\"Not asking is how close people end up quietly annoyed.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Their No",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If they say no, it means they don't trust me.\" The belief that a refusal of permission is a verdict on you.\n\nWhat is true instead: a no to permission is usually about the thing — their photo, their story, their week — not about you.\n\nIt feels reasonable because asking for permission is a small act of trust, and a no can feel like trust refused.\n\nWhat it costs is how you take the no — and how you take it decides whether they will be honest with you next time.\n\nMindset: their no is about their thing, not about me.",
+      inputs: [
+        { q: "If they say no, it means they don't trust me.", a: "\"It usually means they care about the thing, not that they doubt me.\"", bundle: 'pro' },
+        { q: "I can't believe they said no to something so small.", a: "\"It wasn't small to them, and that's what I asked about.\"", bundle: 'pro' },
+        { q: "I need to know why they said no.", a: "\"The reason is theirs; the answer is what I asked for.\"", bundle: 'pro' },
+        { q: "They're being unreasonable.", a: "\"It's their thing, so their reason is enough.\"", bundle: 'pro' },
+        { q: "If I explain it better, they'll say yes.", a: "\"They understood it fine; that's why they said no.\"", bundle: 'pro' },
+        { q: "A no means they're annoyed with me.", a: "\"A no means they felt free to say it, which is good.\"", bundle: 'pro' },
+        { q: "I'll ask again when they're in a better mood.", a: "\"Asking again is asking them to change their answer.\"", bundle: 'pro' },
+        { q: "I should have just done it without asking.", a: "\"Then I'd have done something they didn't want.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Putting Them on the Spot",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Asking puts them on the spot.\" The belief that a question about permission is a burden on the other person.\n\nWhat is true instead: a question that leaves room to refuse is not a burden. What puts people on the spot is being asked in public, or asked in a way that makes no impossible.\n\nIt feels reasonable because some questions really do corner people — and you have probably been cornered yourself.\n\nWhat it costs is not asking at all, which puts them in a worse spot: finding out afterwards and having no say.\n\nMindset: ask in a way that is easy to refuse, and it is not putting them on the spot.",
+      inputs: [
+        { q: "Asking puts them on the spot.", a: "\"Asking in front of everyone does; asking quietly, with an exit, doesn't.\"", bundle: 'pro' },
+        { q: "They'll feel they have to say yes.", a: "\"Then I'll say out loud that no is fine.\"", bundle: 'pro' },
+        { q: "It's kinder not to ask.", a: "\"Not asking is kind to me; asking is kind to them.\"", bundle: 'pro' },
+        { q: "They're busy, and I don't want to bother them.", a: "\"One quick question is less bother than finding out later.\"", bundle: 'pro' },
+        { q: "I don't want to make it a big deal.", a: "\"One light question is the smallest it can be.\"", bundle: 'pro' },
+        { q: "They'll feel awkward saying no to me.", a: "\"They'll feel more awkward if they never got the chance.\"", bundle: 'pro' },
+        { q: "I'll ask them in the group so it's casual.", a: "\"In the group is exactly where no is hardest; I'll ask them on their own.\"", bundle: 'pro' },
+        { q: "They'd rather not be asked about everything.", a: "\"Then I'll ask once about the kind of thing, and remember the answer.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };

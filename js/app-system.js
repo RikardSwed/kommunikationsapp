@@ -715,6 +715,7 @@ applyInputCounterVisibility();
     askingforclarity: { label: 'Asking for Clarity', minLevel: 'complete' },
     calibratinghumour: { label: 'Calibrating Humour', minLevel: 'complete' },
     brokenpromises: { label: 'Broken Promises and Trust', minLevel: 'complete' },
+    askingpermission: { label: 'Asking for Permission', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -3186,6 +3187,20 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
+  askingpermission: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
 };
 window.BUNDLE_DEFS = BUNDLE_DEFS;
 
@@ -4076,6 +4091,15 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  {
+    version: 'v1.29.11', date: 'September 2026', title: 'Asking for Permission \u2014 the third grid pack', audience: 'dev',
+    items: [
+      'A new pack, <strong>Asking for Permission</strong> (<code>askingpermission</code>, Asking &amp; Saying No), imported at <strong>complete</strong>. 36 decks, 273 units, <strong>0 errors and 0 warnings</strong> in check-pack.',
+      '<strong>Making Requests</strong> asks for someone\u2019s time. This pack asks for their approval of something that is theirs \u2014 their photo, their idea, their news, their things. Seven strategies: <strong>Ask First</strong>, <strong>Announce and Pause</strong>, <strong>Name the Limits</strong>, <strong>Leave Room to Refuse</strong>, <strong>Take a No Well</strong>, <strong>Ask for Someone Else</strong>, <strong>Check What You Assumed</strong>.',
+      'Two of them share their names and guide pairs with Making Requests, by the rule that one move has one name across the library (\u00a711d-c): <em>Leave Room to Refuse</em> and <em>Take a No Well</em>. Their descriptions are written for permission, not favours.',
+      '<strong>Grid pack</strong>, row type <em>situation</em>: card N is the same thing you are about to do in all seven columns \u2014 raising Sara\u2019s idea, posting the party photo, borrowing the bike, recording the call. 87% of cards match their own row in every other column.',
+    ],
+  },
   {
     version: 'v1.29.10', date: 'September 2026', title: 'Broken Promises and Trust', audience: 'dev',
     items: [

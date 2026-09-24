@@ -10290,4 +10290,111 @@ const multiStepCollections = {
       ]
     },
   ],
+  askingpermission: [
+    {
+      name: "The Full Ask",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Ask First**, then **Name the Limits**, then **Leave Room to Refuse**. How to ask for something that really matters to the other person.\n\n1. **Ask First** — raise it as a question, before you have done anything.\n2. **Name the Limits** — when they ask what exactly, draw the edges.\n3. **Leave Room to Refuse** — when they hesitate, say no is fine.\n\nWhy this order: the question first, so they know it is theirs to decide. The limits second, because \"what exactly?\" is almost always their first reply. The exit last, because the hesitation usually comes after they know what it involves.\n\nThe usual order is to do it first and ask afterwards, which skips all three.\n\nMindset: ask, make it clear, and mean it when you say no is fine.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are writing a blog post about your year, and your friend's divorce is part of the story.",
+          steps: [
+            { front: "Ask First — you meet her for coffee.", back: "\"Before I post anything — could I mention your divorce in my piece about this year?\"", guideFront: "Ask before you do it when...", guideBack: "A question before the act" },
+            { front: "Name the Limits — she says, \"What would you say about it?\"", back: "\"Just one line — that a close friend went through it. No name, nothing else.\"", guideFront: "Say exactly how much when...", guideBack: "A request with its edges drawn" },
+            { front: "Leave Room to Refuse — she says, \"Hmm. I'm not sure.\"", back: "\"Then it's a no, and that's completely fine. I'll write around it.\"", guideFront: "Give them the way out when...", guideBack: "A stated permission to say no" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You would like to borrow your father's car for a week while yours is being repaired.",
+          steps: [
+            { front: "Ask First — you call him on Sunday.", back: "\"Could I borrow your car while mine's in the garage?\"", guideFront: "Ask before you do it when...", guideBack: "A question before the act" },
+            { front: "Name the Limits — he says, \"For how long?\"", back: "\"Monday to Friday, just for work. I'll fill it up before I bring it back.\"", guideFront: "Say exactly how much when...", guideBack: "A request with its edges drawn" },
+            { front: "Leave Room to Refuse — he says, \"I was going to use it on Wednesday.\"", back: "\"Then say no — I can get the bus. I don't want to leave you stuck.\"", guideFront: "Give them the way out when...", guideBack: "A stated permission to say no" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You want to use a recording of your colleague's presentation in a training session for new staff.",
+          steps: [
+            { front: "Ask First — you catch him after the meeting.", back: "\"Could I use the recording of your talk in the training for new starters?\"", guideFront: "Ask before you do it when...", guideBack: "A question before the act" },
+            { front: "Name the Limits — he says, \"The whole thing?\"", back: "\"Just the first ten minutes, and only for internal training.\"", guideFront: "Say exactly how much when...", guideBack: "A request with its edges drawn" },
+            { front: "Leave Room to Refuse — he says, \"I'm not wild about how I sound on it.\"", back: "\"Fair enough — say no, and I'll use the slides on their own.\"", guideFront: "Give them the way out when...", guideBack: "A stated permission to say no" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Asking for a Friend",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Ask for Someone Else**, then **Name the Limits**, then **Take a No Well**. How to pass on a request for permission without adding your own weight to it.\n\n1. **Ask for Someone Else** — say who it is for, and what they would like.\n2. **Name the Limits** — when they want details, give the exact version.\n3. **Take a No Well** — if the answer is no, accept it for them too.\n\nWhy this order: naming who it is for first means they answer the right person. The limits come when they ask. The last step matters most — a go-between who argues a no turns someone else's request into their own favour.\n\nThe usual order is to ask as if it were your own request, and then push.\n\nMindset: pass on the question, and pass back the answer, whatever it is.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your teenage daughter wants to have a sleepover at her friend's house, and asks you to ask the friend's mum.",
+          steps: [
+            { front: "Ask for Someone Else — you text the other parent.", back: "\"Ella's asked me to check — could she sleep over at yours on Friday?\"", guideFront: "Speak for the other person when...", guideBack: "A request that names who it's for" },
+            { front: "Name the Limits — she replies, \"What's the plan?\"", back: "\"Just Friday night. I'll drop her off at seven and pick her up at ten on Saturday.\"", guideFront: "Say exactly how much when...", guideBack: "A request with its edges drawn" },
+            { front: "Take a No Well — she replies, \"Friday's not great for us, sorry.\"", back: "\"No problem at all — thanks for letting me know.\"", guideFront: "Accept it in one line when...", guideBack: "A refusal received without a sulk" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A new colleague wants to sit in on your manager's weekly planning meeting and has asked you to check.",
+          steps: [
+            { front: "Ask for Someone Else — you stop by your manager's desk.", back: "\"Tom asked me to check — could he sit in on Monday's planning meeting?\"", guideFront: "Speak for the other person when...", guideBack: "A request that names who it's for" },
+            { front: "Name the Limits — she says, \"What for?\"", back: "\"Just to listen, for one meeting, to see how we plan the week.\"", guideFront: "Say exactly how much when...", guideBack: "A request with its edges drawn" },
+            { front: "Take a No Well — she says, \"Not this week — it's a tricky one.\"", back: "\"Understood. I'll tell him.\"", guideFront: "Accept it in one line when...", guideBack: "A refusal received without a sulk" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your friend wants to use your uncle's cabin for her birthday weekend and has asked you to ask him.",
+          steps: [
+            { front: "Ask for Someone Else — you call your uncle.", back: "\"Maja asked me to ask you — could she use the cabin for her birthday?\"", guideFront: "Speak for the other person when...", guideBack: "A request that names who it's for" },
+            { front: "Name the Limits — he says, \"How many people?\"", back: "\"Six, one weekend in May, and they'd clean it top to bottom before they leave.\"", guideFront: "Say exactly how much when...", guideBack: "A request with its edges drawn" },
+            { front: "Take a No Well — he says, \"I'd rather not lend it to people I don't know.\"", back: "\"That's fair. I'll let her know.\"", guideFront: "Accept it in one line when...", guideBack: "A refusal received without a sulk" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Old Yes",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Check What You Assumed**, then **Leave Room to Refuse**, then **Take a No Well**. How to go back to something you have been doing without really asking.\n\n1. **Check What You Assumed** — name the habit, and ask.\n2. **Leave Room to Refuse** — they say \"it's fine\"; make it clear it really can stop.\n3. **Take a No Well** — if it turns out they did mind, accept it in one line.\n\nWhy this order: the question first, because the whole point is that it was never asked. The exit second, because people usually say \"it's fine\" out of habit. The last step is where the truth tends to come out, and how you take it decides whether they will be honest next time.\n\nThe usual order is never to ask, and to find out from their mood instead.\n\nMindset: it is never too late to ask. It is only too late to hear a no well.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "For months you have been posting photos of your nephew on your social media.",
+          steps: [
+            { front: "Check What You Assumed — you are at your sister's for dinner.", back: "\"I've been posting photos of Leo without ever asking. Is that actually okay?\"", guideFront: "Check an old assumption when...", guideBack: "A question about a yes you took for granted" },
+            { front: "Leave Room to Refuse — she says, \"Oh — it's fine, I suppose.\"", back: "\"You can honestly say no. I'd rather know.\"", guideFront: "Give them the way out when...", guideBack: "A stated permission to say no" },
+            { front: "Take a No Well — she says, \"Actually, I'd rather you didn't.\"", back: "\"Understood. I'll take them down tonight.\"", guideFront: "Accept it in one line when...", guideBack: "A refusal received without a sulk" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You have been using your flatmate's shelf in the fridge since you moved in.",
+          steps: [
+            { front: "Check What You Assumed — you are both in the kitchen.", back: "\"I've been using your shelf since I moved in. I never asked — is that okay?\"", guideFront: "Check an old assumption when...", guideBack: "A question about a yes you took for granted" },
+            { front: "Leave Room to Refuse — they say, \"Yeah, it's… fine.\"", back: "\"It doesn't sound fine. Say if you want it back.\"", guideFront: "Give them the way out when...", guideBack: "A stated permission to say no" },
+            { front: "Take a No Well — they say, \"I'd actually like it back.\"", back: "\"Of course. I'll clear it tonight.\"", guideFront: "Accept it in one line when...", guideBack: "A refusal received without a sulk" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You have been bringing your colleague's name into client emails as your contact for technical questions.",
+          steps: [
+            { front: "Check What You Assumed — you catch her at lunch.", back: "\"I've been giving clients your name for technical questions. I never asked if that was okay.\"", guideFront: "Check an old assumption when...", guideBack: "A question about a yes you took for granted" },
+            { front: "Leave Room to Refuse — she says, \"It's fine, I don't mind.\"", back: "\"Honestly, you can say no. I'm sure it adds up.\"", guideFront: "Give them the way out when...", guideBack: "A stated permission to say no" },
+            { front: "Take a No Well — she says, \"It is a lot, to be honest.\"", back: "\"Then I'll stop today. Thanks for telling me.\"", guideFront: "Accept it in one line when...", guideBack: "A refusal received without a sulk" },
+          ]
+        },
+      ]
+    },
+  ],
 };
