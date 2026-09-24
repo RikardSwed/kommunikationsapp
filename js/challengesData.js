@@ -7014,4 +7014,250 @@ const challengesCollections = {
       ]
     },
   ],
+  alexandergrace1: [
+    {
+      name: "The Guilt Push",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You've said no, and now the pressure comes: \"you never\", \"if you loved me\", tears, silence, or asking again and again.\n\nWhat goes wrong is giving in to end the discomfort. It teaches both of you that pressure works, and the next no gets harder.\n\n**No, With Warmth** is the main move — the no stays, the feeling is welcome. **The Plain No** handles the fifth \"please\". **Name the Cost** opens a fair way forward if there is one.\n\nThe one thing to avoid: the guilty yes.\n\nMindset: her disappointment is real, and it is not an instruction.",
+      inputs: [
+        { q: "She says, \"If you loved me, you'd do this.\"", a: "\"I do love you. It's still no.\" [No, With Warmth]", bundle: 'pro', guideBack: "The no, with her feelings allowed" },
+        { q: "She has asked for the fifth time.", a: "\"The answer isn't going to change.\" [The Plain No]", bundle: 'pro', guideBack: "A no that stands on its own" },
+        { q: "She cries after your no.", a: "\"I hate seeing you upset. I'm still not changing my mind.\" [No, With Warmth]", bundle: 'pro', guideBack: "The no, with her feelings allowed" },
+        { q: "She goes silent for the evening after your no.", a: "\"I can tell you're upset. I'm around if you want to talk.\" [No, With Warmth]", bundle: 'pro', guideBack: "The no, with her feelings allowed" },
+        { q: "She says, \"Everyone else's boyfriend would do it.\"", a: "\"Maybe. I'm still saying no.\" [The Plain No]", bundle: 'pro', guideBack: "A no that stands on its own" },
+        { q: "She says, \"Fine, what WOULD you do then?\"", a: "\"I could do half, if you do the other half.\" [Name the Cost]", bundle: 'pro', guideBack: "The price, said out loud" },
+        { q: "She brings up everything she's done for you.", a: "\"I know you do a lot, and I'm grateful. This one is still a no.\" [No, With Warmth]", bundle: 'pro', guideBack: "The no, with her feelings allowed" },
+        { q: "You feel yourself about to say, \"Okay, fine, I'll do it.\"", a: "\"No. I'm going to stick with no.\" [The Plain No]", bundle: 'pro', guideBack: "A no that stands on its own" },
+      ]
+    },
+    {
+      name: "The Silent Yes",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You say yes to things you don't want to do, and swallow the cost. It looks generous, but it builds quiet resentment — and she never knew there was a cost.\n\nWhat goes wrong is that the resentment comes out sideways: a sulk, a sharp comment, a sudden explosion months later.\n\n**Name the Cost** is the main move: say what it would take. **The Plain No** when it's simply a no. **Keep Your Word** for the yeses you do give.\n\nThe one thing to avoid: the yes you already regret as you say it.\n\nMindset: a hidden cost always comes out somewhere.",
+      inputs: [
+        { q: "You're about to agree to drive her friends to the festival, four hours each way.", a: "\"That's eight hours of driving. What would you take on in return?\" [Name the Cost]", bundle: 'pro', guideBack: "The price, said out loud" },
+        { q: "You've said yes to every favour this month, and you're starting to resent it.", a: "\"I've said yes to a lot lately. This one's a no.\" [The Plain No]", bundle: 'pro', guideBack: "A no that stands on its own" },
+        { q: "She asks you to redo the bathroom, and you know it'll eat your holiday.", a: "\"That's my whole week off. Could we get someone in, and split it?\" [Name the Cost]", bundle: 'pro', guideBack: "The price, said out loud" },
+        { q: "You agreed to host her parents and now dread it.", a: "\"I'll host them, as I said. Can you plan the meals?\" [Keep Your Word]", bundle: 'pro', guideBack: "A promise sized to keep" },
+        { q: "She asks you to take her car for its service in your lunch break.", a: "\"I can, if you pick up the shopping tonight.\" [Name the Cost]", bundle: 'pro', guideBack: "The price, said out loud" },
+        { q: "You're about to sigh and say, \"Fine, whatever.\"", a: "\"Honestly, no. I don't want to do that.\" [The Plain No]", bundle: 'pro', guideBack: "A no that stands on its own" },
+        { q: "She asks you to cover the whole weekend away.", a: "\"I can cover the hotel. Can you do the food and petrol?\" [Name the Cost]", bundle: 'pro', guideBack: "The price, said out loud" },
+        { q: "You said yes last week and haven't done it.", a: "\"I said yes. I'll do it Saturday morning.\" [Keep Your Word]", bundle: 'pro', guideBack: "A promise sized to keep" },
+      ]
+    },
+    {
+      name: "Disrespect",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She insults you, mocks you, belittles you in front of others, or keeps pushing after you've asked her to stop.\n\nWhat goes wrong is one of two things: you fire back and it becomes a war, or you stand there and take it and it becomes normal.\n\n**Step Back From Disrespect** is the main move. **The Plain No** works for a single line that must be refused.\n\nThe one thing to avoid: returning the insult.\n\nMindset: I don't have to take part in an ugly moment.",
+      inputs: [
+        { q: "She calls you an idiot during a disagreement about money.", a: "\"I'm not talking like this. Let's pick it up later.\" [Step Back From Disrespect]", bundle: 'pro', guideBack: "A calm way out" },
+        { q: "She rolls her eyes and mimics you when you speak.", a: "\"I'm going to leave this for now.\" [Step Back From Disrespect]", bundle: 'pro', guideBack: "A calm way out" },
+        { q: "She tells your friends you're useless in bed, as a joke.", a: "\"Not funny. I'm heading home.\" [Step Back From Disrespect]", bundle: 'pro', guideBack: "A calm way out" },
+        { q: "She tells you to shut up in front of the kids.", a: "\"Don't speak to me like that. I'll talk to you later.\" [The Plain No]", bundle: 'pro', guideBack: "A no that stands on its own" },
+        { q: "She keeps mocking your family after you asked her to stop.", a: "\"I've asked you to stop. I'm going out.\" [Step Back From Disrespect]", bundle: 'pro', guideBack: "A calm way out" },
+        { q: "She slams the door and screams at you to leave.", a: "\"I'll go to my brother's tonight. We'll talk tomorrow.\" [Step Back From Disrespect]", bundle: 'pro', guideBack: "A calm way out" },
+        { q: "She says, \"Real men don't walk away.\"", a: "\"I'm not walking away from you. Just from this. Back in an hour.\" [Step Back From Disrespect]", bundle: 'pro', guideBack: "A calm way out" },
+        { q: "She wants you to agree that her friend is stupid, and mocks you when you don't.", a: "\"No, I'm not going to call her that.\" [The Plain No]", bundle: 'pro', guideBack: "A no that stands on its own" },
+      ]
+    },
+    {
+      name: "The Broken Promise",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You said you'd do it, and you didn't — or you keep saying \"yeah, I'll do it\" without a day. Now she reminds, checks and pushes, and you both hate it.\n\nWhat goes wrong is defending the delay, or making a new vague promise.\n\n**Keep Your Word** is the main move: own it, size it, do it. **The Plain No** for the promises you can't make.\n\nThe one thing to avoid: \"I'll get round to it.\"\n\nMindset: the reminders stop when my word works.",
+      inputs: [
+        { q: "She reminds you, again, about the shelf.", a: "\"You're right. I'm doing it right now.\" [Keep Your Word]", bundle: 'pro', guideBack: "A promise sized to keep" },
+        { q: "You're about to say, \"I'll get round to it.\"", a: "\"I'll do it Sunday at ten.\" [Keep Your Word]", bundle: 'pro', guideBack: "A promise sized to keep" },
+        { q: "She says you promised to call her mum last week.", a: "\"I did, and I didn't. I'll call her tonight.\" [Keep Your Word]", bundle: 'pro', guideBack: "A promise sized to keep" },
+        { q: "She asks you to promise you'll never be late again.", a: "\"I won't promise never. I'll be on time this week, and you'll see.\" [Keep Your Word]", bundle: 'pro', guideBack: "A promise sized to keep" },
+        { q: "She asks you to take on a job you know you won't have time for.", a: "\"No. I won't promise something I can't do.\" [The Plain No]", bundle: 'pro', guideBack: "A no that stands on its own" },
+        { q: "She calls you a nag-magnet and says she's tired of reminding you.", a: "\"That's fair. From now on, if I say it, it happens.\" [Keep Your Word]", bundle: 'pro', guideBack: "A promise sized to keep" },
+        { q: "You've got three promises hanging.", a: "\"I'll do the car tomorrow. The other two, next weekend — I'll put them in writing.\" [Keep Your Word]", bundle: 'pro', guideBack: "A promise sized to keep" },
+        { q: "You kept the promise without being reminded.", a: "\"Tap's fixed. Saturday, as I said.\" [Keep Your Word]", bundle: 'pro', guideBack: "A promise sized to keep" },
+      ]
+    },
+    {
+      name: "Nobody Decides",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every plan turns into a long back-and-forth. Where to eat, what to do this weekend, which flat to view — nobody wants to be the one who chooses.\n\nWhat goes wrong is that the endless consultation wears both of you out, and she ends up carrying the thinking.\n\n**Make the Call** is the main move. **Name the Cost** when her request would change the plan a lot. **Keep Your Word** for your part of it.\n\nThe one thing to avoid: \"I don't mind, what do you want?\"\n\nMindset: somebody has to decide. It can be me.",
+      inputs: [
+        { q: "She asks where you want to eat, and you're about to say, \"I don't mind.\"", a: "\"Thai. I'll book for seven.\" [Make the Call]", bundle: 'pro', guideBack: "A decision, explained once" },
+        { q: "You've looked at holiday options for two weeks without booking.", a: "\"I'm booking Portugal tonight. It's the best value.\" [Make the Call]", bundle: 'pro', guideBack: "A decision, explained once" },
+        { q: "She asks what you're doing this weekend.", a: "\"Saturday: long walk and a pub lunch. Sunday we rest.\" [Make the Call]", bundle: 'pro', guideBack: "A decision, explained once" },
+        { q: "She wants to add a big extra stop to the road trip.", a: "\"That's an extra day of driving. If we go, we skip the lake.\" [Name the Cost]", bundle: 'pro', guideBack: "The price, said out loud" },
+        { q: "She asks why you chose that restaurant.", a: "\"Good reviews and it's close. That's it.\" [Make the Call]", bundle: 'pro', guideBack: "A decision, explained once" },
+        { q: "The plan is made, and she asks who's booking the tickets.", a: "\"I'll book them tonight.\" [Keep Your Word]", bundle: 'pro', guideBack: "A promise sized to keep" },
+        { q: "Your call turned out wrong — the museum was closed.", a: "\"That's on me. Plan B: coffee and the park.\" [Make the Call]", bundle: 'pro', guideBack: "A decision, explained once" },
+        { q: "It's a big joint decision — whether to buy a house.", a: "\"This one we decide together. Let's sit down on Sunday.\" [Make the Call]", bundle: 'pro', guideBack: "A decision, explained once" },
+      ]
+    },
+  ],
+  alexandergrace2: [
+    {
+      name: "It's Getting Loud",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The argument has passed the point of being useful. Voices are rising, old grievances are coming out, and one of you is about to say something unforgivable.\n\nWhat goes wrong is trying to win it right now. Nothing gets heard at this volume.\n\n**Call a Time-Out** is the main move — with a time to come back. **Calm Instead of Venting** if you still need to say one thing first.\n\nThe one thing to avoid: storming off without saying when you'll return.\n\nMindset: I can stop the fight without abandoning her.",
+      inputs: [
+        { q: "She is shouting, and you are shouting back.", a: "\"Let's stop. Back in twenty minutes.\" [Call a Time-Out]", bundle: 'pro', guideBack: "A pause with a return time" },
+        { q: "You're about to bring up something from three years ago.", a: "\"I'm going to pause before I say something unfair.\" [Call a Time-Out]", bundle: 'pro', guideBack: "A pause with a return time" },
+        { q: "She says, \"You always do this!\"", a: "\"I'm annoyed too. Let's come back to it after dinner.\" [Call a Time-Out]", bundle: 'pro', guideBack: "A pause with a return time" },
+        { q: "The argument started in front of the kids.", a: "\"Not in front of them. Let's talk tonight.\" [Call a Time-Out]", bundle: 'pro', guideBack: "A pause with a return time" },
+        { q: "You're too angry to say anything calm.", a: "\"I need some air. I'll be back in half an hour.\" [Call a Time-Out]", bundle: 'pro', guideBack: "A pause with a return time" },
+        { q: "She follows you and keeps arguing.", a: "\"I'm coming back at eight. I just need a bit of space first.\" [Call a Time-Out]", bundle: 'pro', guideBack: "A pause with a return time" },
+        { q: "You want to say one thing before you take the break.", a: "\"I'm hurt by what you said. I need twenty minutes.\" [Calm Instead of Venting]", bundle: 'pro', guideBack: "The frustration, said once" },
+        { q: "The fight is happening over text.", a: "\"I don't want to do this by message. Can we talk tonight?\" [Call a Time-Out]", bundle: 'pro', guideBack: "A pause with a return time" },
+      ]
+    },
+    {
+      name: "Coming Back",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The heat has passed. You're back in the same room, and nobody knows who should speak first.\n\nWhat goes wrong is opening with your case. It restarts the argument at once.\n\n**Her Feelings First** is the main move: ask how she is, and listen to the answer. **Calm Instead of Venting** for your side, afterwards, in one sentence — once she has had her turn.\n\nThe one thing to avoid: \"So, as I was saying…\"\n\nMindset: the first words after a fight set the tone for the rest.",
+      inputs: [
+        { q: "You walk back in after the time-out.", a: "\"How are you doing now?\" [Her Feelings First]", bundle: 'pro', guideBack: "A question about her, first" },
+        { q: "You're about to say, \"So, as I was saying.\"", a: "\"Before I say anything — how are you?\" [Her Feelings First]", bundle: 'pro', guideBack: "A question about her, first" },
+        { q: "She's still not talking.", a: "\"I'm here whenever you want to talk.\" [Her Feelings First]", bundle: 'pro', guideBack: "A question about her, first" },
+        { q: "She's explained her side, and now it's your turn.", a: "\"Thanks. What got me was feeling blamed for all of it.\" [Calm Instead of Venting]", bundle: 'pro', guideBack: "The frustration, said once" },
+        { q: "It's the next morning, and nobody has mentioned the fight.", a: "\"Last night was rough. How are you?\" [Her Feelings First]", bundle: 'pro', guideBack: "A question about her, first" },
+        { q: "She says, \"I'm fine,\" but clearly isn't.", a: "\"You don't have to be fine. Tell me.\" [Her Feelings First]", bundle: 'pro', guideBack: "A question about her, first" },
+        { q: "You want to explain that you were right about the dates.", a: "\"That can wait. What was hardest about it for you?\" [Her Feelings First]", bundle: 'pro', guideBack: "A question about her, first" },
+        { q: "She's finished, and you need to say what hurt you.", a: "\"Can I say one thing? The shouting really got to me.\" [Calm Instead of Venting]", bundle: 'pro', guideBack: "The frustration, said once" },
+      ]
+    },
+    {
+      name: "The Wrong Target",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She's angry at someone else, and the anger is landing on you — because you're there, because you said something mild, or because you remind her of someone.\n\nWhat goes wrong is defending yourself, which turns her problem into a fight between the two of you.\n\n**Not the Stand-In** is the main move. **Advice or an Ear** to bring it back to what she needs.\n\nThe one thing to avoid: \"Why are you attacking me?\"\n\nMindset: I can be on her side without being in the line of fire.",
+      inputs: [
+        { q: "She's angry at her ex, and says you're just like him.", a: "\"I'm not him. I'm here, on your side.\" [Not the Stand-In]", bundle: 'pro', guideBack: "A reminder you're on her team" },
+        { q: "She snaps at you after a call with her mother.", a: "\"I think that's about your mum. I'm on your team.\" [Not the Stand-In]", bundle: 'pro', guideBack: "A reminder you're on her team" },
+        { q: "You're about to say, \"Why are you attacking me?\"", a: "\"I'm not the one who upset you. What happened?\" [Not the Stand-In]", bundle: 'pro', guideBack: "A reminder you're on her team" },
+        { q: "She takes your question about her friend as disloyalty.", a: "\"I'm on your side. I was just trying to understand.\" [Not the Stand-In]", bundle: 'pro', guideBack: "A reminder you're on her team" },
+        { q: "She's angry at her boss and picking holes in everything you say.", a: "\"Do you want to vent about him? I'm listening.\" [Advice or an Ear]", bundle: 'pro', guideBack: "A question about what she needs" },
+        { q: "She says, \"You men are all the same.\"", a: "\"I get that you're hurt. I'm with you.\" [Not the Stand-In]", bundle: 'pro', guideBack: "A reminder you're on her team" },
+        { q: "She's furious at her sister and now annoyed that you're calm.", a: "\"I'm calm because I'm on your side. Tell me everything.\" [Not the Stand-In]", bundle: 'pro', guideBack: "A reminder you're on her team" },
+        { q: "She apologises later for taking it out on you.", a: "\"Thanks. What can I do to help with the actual problem?\" [Advice or an Ear]", bundle: 'pro', guideBack: "A question about what she needs" },
+      ]
+    },
+    {
+      name: "Fixing When She Wanted Listening",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She brought you a problem, you offered a solution, and now she's upset with you — or the other way round, she wanted help and you just nodded.\n\nWhat goes wrong is guessing. The same story can be a request for help or a need to be heard.\n\n**Advice or an Ear** is the main move: ask. **Her Feelings First** if it's already gone wrong.\n\nThe one thing to avoid: defending your advice.\n\nMindset: I don't have to guess. I can ask.",
+      inputs: [
+        { q: "She tells you about a fight with her colleague.", a: "\"Do you want ideas, or just someone to listen?\" [Advice or an Ear]", bundle: 'pro', guideBack: "A question about what she needs" },
+        { q: "You gave her three solutions, and now she says you're not listening.", a: "\"Sorry — I went straight to fixing. I'm listening now.\" [Her Feelings First]", bundle: 'pro', guideBack: "A question about her, first" },
+        { q: "She's worried about money and talking in circles.", a: "\"Would a plan help, or do you need to talk it out first?\" [Advice or an Ear]", bundle: 'pro', guideBack: "A question about what she needs" },
+        { q: "You're about to defend your advice as good advice.", a: "\"Forget the advice. How are you feeling about it?\" [Her Feelings First]", bundle: 'pro', guideBack: "A question about her, first" },
+        { q: "She sighs, \"I just don't know what to do.\"", a: "\"Do you want to work it out together, or just talk?\" [Advice or an Ear]", bundle: 'pro', guideBack: "A question about what she needs" },
+        { q: "She says, \"You never just listen.\"", a: "\"You're right. Tell me — I'm listening.\" [Her Feelings First]", bundle: 'pro', guideBack: "A question about her, first" },
+        { q: "She says she wanted help, and you just nodded.", a: "\"Sorry — I thought you wanted to vent. Want my ideas now?\" [Advice or an Ear]", bundle: 'pro', guideBack: "A question about what she needs" },
+        { q: "She is upset about her weight.", a: "\"What would help — talking, or doing something together?\" [Advice or an Ear]", bundle: 'pro', guideBack: "A question about what she needs" },
+      ]
+    },
+    {
+      name: "Feelings, Not a Reason",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She broke an agreement — didn't come, didn't call, didn't do what she said — and the explanation is how she felt. Anxiety, tiredness, a bad mood.\n\nWhat goes wrong is one of two extremes: you accept it completely and the agreement stops meaning anything, or you dismiss the feeling and she feels you don't care.\n\n**Care, Then Hold the Line** is the main move. **Calm Instead of Venting** to say your frustration first.\n\nThe one thing to avoid: \"Your feelings are not my problem.\"\n\nMindset: her feeling was real, and so was the agreement.",
+      inputs: [
+        { q: "She missed your doctor's appointment she'd promised to come to, because she was stressed.", a: "\"I'm sorry you were stressed. I really needed you there — next time, tell me before.\" [Care, Then Hold the Line]", bundle: 'pro', guideBack: "Care and the standard, together" },
+        { q: "She didn't pay her share of rent on time because she was upset.", a: "\"I know it's been a hard month. The rent still needs paying — can we sort it today?\" [Care, Then Hold the Line]", bundle: 'pro', guideBack: "Care and the standard, together" },
+        { q: "You're about to say, \"That's not a reason.\"", a: "\"I get that you felt that way. It still matters that we tell each other in time.\" [Care, Then Hold the Line]", bundle: 'pro', guideBack: "Care and the standard, together" },
+        { q: "She cancelled on your friends again, last-minute.", a: "\"I'm a bit frustrated. It's the third time.\" [Calm Instead of Venting]", bundle: 'pro', guideBack: "The frustration, said once" },
+        { q: "She says, \"I can't control how I feel.\"", a: "\"No one's asking you to. Just let me know earlier.\" [Care, Then Hold the Line]", bundle: 'pro', guideBack: "Care and the standard, together" },
+        { q: "She forgot your mother's birthday because she was overwhelmed.", a: "\"I know it's been a lot. Can you send her a message today?\" [Care, Then Hold the Line]", bundle: 'pro', guideBack: "Care and the standard, together" },
+        { q: "She didn't tell you she wasn't coming until you were already waiting.", a: "\"I'm annoyed I waited an hour.\" [Calm Instead of Venting]", bundle: 'pro', guideBack: "The frustration, said once" },
+        { q: "She told you the day before that she couldn't face the party.", a: "\"Thank you for telling me early. That really helps.\" [Care, Then Hold the Line]", bundle: 'pro', guideBack: "Care and the standard, together" },
+      ]
+    },
+  ],
+  alexandergrace3: [
+    {
+      name: "The Vague Invite",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You want to see her, but you hint instead of asking — \"we should hang out sometime\", \"let me know if you're ever free\".\n\nWhat goes wrong is that a vague invitation puts all the work on her, and it's easy to ignore. Nothing happens, and you decide she wasn't interested.\n\n**Say What You Want** is the main move: a specific plan and a real question. **Answer, Then Return It** helps build to it in conversation.\n\nThe one thing to avoid: \"sometime\".\n\nMindset: a clear question is kinder than a hint.",
+      inputs: [
+        { q: "You're about to text, \"We should hang out sometime.\"", a: "\"Want to get dinner on Friday?\" [Say What You Want]", bundle: 'pro', guideBack: "A clear invitation" },
+        { q: "You're about to say, \"Let me know if you're ever free.\"", a: "\"Are you free on Saturday afternoon? I'd like to take you to the market.\" [Say What You Want]", bundle: 'pro', guideBack: "A clear invitation" },
+        { q: "She said \"maybe\" to your vague idea.", a: "\"Let me make it easier: Thursday at seven, the Italian place?\" [Say What You Want]", bundle: 'pro', guideBack: "A clear invitation" },
+        { q: "You've been messaging for a week without meeting.", a: "\"I'd like to meet in person. Coffee on Sunday?\" [Say What You Want]", bundle: 'pro', guideBack: "A clear invitation" },
+        { q: "You want to ask her out, but the conversation is still small talk.", a: "\"What do you like doing at weekends? I'm a big hiker.\" [Answer, Then Return It]", bundle: 'pro', guideBack: "A short answer and a question back" },
+        { q: "She says she loves live music.", a: "\"There's a gig on Friday. Want to come with me?\" [Say What You Want]", bundle: 'pro', guideBack: "A clear invitation" },
+        { q: "You're worried she'll say no.", a: "\"I'd like to see you again. Are you free this week?\" [Say What You Want]", bundle: 'pro', guideBack: "A clear invitation" },
+        { q: "She says no to Friday.", a: "\"No problem. How about next week?\" [Say What You Want]", bundle: 'pro', guideBack: "A clear invitation" },
+      ]
+    },
+    {
+      name: "The Mirror",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You agree with everything she says, laugh at everything, and never say what you actually think — hoping she'll like you more.\n\nWhat goes wrong is that she can't get to know you, because there's nothing there but her own opinions reflected back.\n\n**Your Real Opinion** is the main move. **Answer, Then Return It** gives her something real about you.\n\nThe one thing to avoid: \"Me too!\" when it isn't true.\n\nMindset: she can only like the real me if she meets him.",
+      inputs: [
+        { q: "She says she hates hiking. You love it.", a: "\"Ah, I love it. What put you off?\" [Your Real Opinion]", bundle: 'pro', guideBack: "An honest opinion, lightly" },
+        { q: "You're about to say \"Me too!\" about a band you don't like.", a: "\"Not my thing, actually. What do you like about them?\" [Your Real Opinion]", bundle: 'pro', guideBack: "An honest opinion, lightly" },
+        { q: "She says the restaurant is amazing. You think it's average.", a: "\"The dessert was great. The rest was okay for me.\" [Your Real Opinion]", bundle: 'pro', guideBack: "An honest opinion, lightly" },
+        { q: "She asks what you think about something, and you're about to ask what she thinks first.", a: "\"I think it's a bad idea, honestly. How about you?\" [Your Real Opinion]", bundle: 'pro', guideBack: "An honest opinion, lightly" },
+        { q: "She asks about your hobbies, and you're about to say, \"Oh, all sorts.\"", a: "\"Mostly climbing and playing guitar. What about you?\" [Answer, Then Return It]", bundle: 'pro', guideBack: "A short answer and a question back" },
+        { q: "She says she can't stand people who talk politics.", a: "\"I actually quite like a good debate. Gently.\" [Your Real Opinion]", bundle: 'pro', guideBack: "An honest opinion, lightly" },
+        { q: "You've agreed with her five times in a row.", a: "\"I'll disagree with you on this one.\" [Your Real Opinion]", bundle: 'pro', guideBack: "An honest opinion, lightly" },
+        { q: "She asks what kind of music you like.", a: "\"Old rock, mostly. What about you?\" [Answer, Then Return It]", bundle: 'pro', guideBack: "A short answer and a question back" },
+      ]
+    },
+    {
+      name: "The Monologue",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She asks one question, and you talk for five minutes. You're nervous, or you want to impress, or you just have a lot to say.\n\nWhat goes wrong is that the conversation becomes a performance. She learns a lot about you and gets no chance to share herself.\n\n**Answer, Then Return It** is the main move: short, true, then back to her.\n\nThe one thing to avoid: the full list.\n\nMindset: leaving something for later is part of a good answer.",
+      inputs: [
+        { q: "She asks about your travels, and you have stories from twenty countries.", a: "\"Japan was the best. Where would you go?\" [Answer, Then Return It]", bundle: 'pro', guideBack: "A short answer and a question back" },
+        { q: "You notice you've been talking about your job for five minutes.", a: "\"Anyway — enough about work. What do you love about yours?\" [Answer, Then Return It]", bundle: 'pro', guideBack: "A short answer and a question back" },
+        { q: "She asks about your family, and there's a lot to tell.", a: "\"Big, loud, and close. Are you close to yours?\" [Answer, Then Return It]", bundle: 'pro', guideBack: "A short answer and a question back" },
+        { q: "She asks what you're passionate about.", a: "\"Music. I play in a band. What lights you up?\" [Answer, Then Return It]", bundle: 'pro', guideBack: "A short answer and a question back" },
+        { q: "She asks about your last relationship.", a: "\"It ended well, and I learned a lot. What about yours?\" [Answer, Then Return It]", bundle: 'pro', guideBack: "A short answer and a question back" },
+        { q: "You feel the urge to list all your achievements.", a: "\"I'm proud of finishing my degree while working. What are you proud of?\" [Answer, Then Return It]", bundle: 'pro', guideBack: "A short answer and a question back" },
+        { q: "She asks a simple question about your weekend.", a: "\"Quiet — books and a long run. Yours?\" [Answer, Then Return It]", bundle: 'pro', guideBack: "A short answer and a question back" },
+        { q: "She asks why you became a teacher.", a: "\"I had one great teacher, and wanted to be that. Did you have one?\" [Answer, Then Return It]", bundle: 'pro', guideBack: "A short answer and a question back" },
+      ]
+    },
+    {
+      name: "\"Fine\"",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She asks about your day, and you say \"fine\" — because it was ordinary, or because it was hard and you don't want to burden her.\n\nWhat goes wrong is that \"fine\" shuts the door. Night after night, it makes two people living together into two strangers.\n\n**Bring Your World Home** for the ordinary days. **A Bad Day, Shared Steady** for the hard ones.\n\nThe one thing to avoid: \"Fine\" when it wasn't.\n\nMindset: a small true answer is worth more than a closed one.",
+      inputs: [
+        { q: "She asks about your day, and it was ordinary.", a: "\"Pretty quiet, but I had a great chat with the new guy at work.\" [Bring Your World Home]", bundle: 'pro', guideBack: "A piece of your life, offered" },
+        { q: "She asks about your day, and it was bad.", a: "\"Hard, honestly. A client shouted at me. I'm okay, just tired.\" [A Bad Day, Shared Steady]", bundle: 'pro', guideBack: "A hard day, shared calmly" },
+        { q: "You're about to say \"fine\" for the third night running.", a: "\"Actually, I learned something interesting today. Want to hear it?\" [Bring Your World Home]", bundle: 'pro', guideBack: "A piece of your life, offered" },
+        { q: "She asks what's wrong, and you're about to say, \"Nothing.\"", a: "\"I'm worried about money this month. I'm sorting it, but it's on my mind.\" [A Bad Day, Shared Steady]", bundle: 'pro', guideBack: "A hard day, shared calmly" },
+        { q: "Nothing interesting happened today.", a: "\"Nothing big — but I saw a fox on the way home.\" [Bring Your World Home]", bundle: 'pro', guideBack: "A piece of your life, offered" },
+        { q: "You don't want to burden her with your stress.", a: "\"Work's heavy right now. I don't need you to fix it — I just want you to know.\" [A Bad Day, Shared Steady]", bundle: 'pro', guideBack: "A hard day, shared calmly" },
+        { q: "You've been out with friends, and she asks how it was.", a: "\"Great — Jonas has a new job. Let me tell you.\" [Bring Your World Home]", bundle: 'pro', guideBack: "A piece of your life, offered" },
+        { q: "You feel low but can't say why.", a: "\"I'm a bit flat tonight. Not sure why. Just wanted you to know.\" [A Bad Day, Shared Steady]", bundle: 'pro', guideBack: "A hard day, shared calmly" },
+      ]
+    },
+    {
+      name: "Her Past",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She tells you about something from before you met — an ex, a wild phase, a mistake, a hard year — and you're not sure how to react.\n\nWhat goes wrong is judging it, or treating it as something to worry about. She feels she has to defend it, and the conversation closes.\n\n**Ask What It Taught Her** is the main move. **Your Real Opinion** if she asks what you think.\n\nThe one thing to avoid: interrogating her about the details.\n\nMindset: her past made the person I'm with.",
+      inputs: [
+        { q: "She mentions a serious ex she lived with for five years.", a: "\"What did that relationship teach you?\" [Ask What It Taught Her]", bundle: 'pro', guideBack: "A question that looks for growth" },
+        { q: "She says she was quite wild in her early twenties.", a: "\"How are you different now?\" [Ask What It Taught Her]", bundle: 'pro', guideBack: "A question that looks for growth" },
+        { q: "She tells you she was in debt a few years ago.", a: "\"What did getting out of it teach you?\" [Ask What It Taught Her]", bundle: 'pro', guideBack: "A question that looks for growth" },
+        { q: "You feel the urge to ask for more details about her ex.", a: "\"What do you know now that you didn't then?\" [Ask What It Taught Her]", bundle: 'pro', guideBack: "A question that looks for growth" },
+        { q: "She asks, \"Does that bother you?\"", a: "\"No. I'm more interested in who you are now.\" [Your Real Opinion]", bundle: 'pro', guideBack: "An honest opinion, lightly" },
+        { q: "She tells you she once walked out on a job without notice.", a: "\"What would you do differently now?\" [Ask What It Taught Her]", bundle: 'pro', guideBack: "A question that looks for growth" },
+        { q: "She seems ashamed of a mistake she made.", a: "\"Everyone has one. What did it give you?\" [Ask What It Taught Her]", bundle: 'pro', guideBack: "A question that looks for growth" },
+        { q: "She asks what you think about her decision to move abroad at eighteen.", a: "\"Honestly, I think it was brave.\" [Your Real Opinion]", bundle: 'pro', guideBack: "An honest opinion, lightly" },
+      ]
+    },
+  ],
 };

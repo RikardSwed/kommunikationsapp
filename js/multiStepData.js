@@ -10718,4 +10718,325 @@ const multiStepCollections = {
       ]
     },
   ],
+  alexandergrace1: [
+    {
+      name: "The No That Holds",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**The Plain No**, then **No, With Warmth**, then **Name the Cost**. What to do when a request is too big and she pushes back.\n\n1. **The Plain No** — answer clearly, without a case.\n2. **No, With Warmth** — she is upset; keep the no and let the feeling be.\n3. **Name the Cost** — she asks what it would take; say it.\n\nWhy this order: the plain no first, so there is no ambiguity. Warmth second, because the no only feels safe if her disappointment is welcome. The cost last, because it opens a fair way forward without taking the no back.\n\nThe usual order is a vague maybe, then a guilty yes.\n\nMindset: firm, then kind, then fair.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She wants to put a new kitchen on your joint card. It would take a year to pay off.",
+          steps: [
+            { front: "The Plain No — she shows you the brochure.", back: "\"No. We're not putting a kitchen on the card.\"", guideFront: "Say no without a case when...", guideBack: "A no that stands on its own" },
+            { front: "No, With Warmth — she says, \"You never want me to have nice things.\"", back: "\"I know you've wanted this for ages. It's still no, and I get that it's disappointing.\"", guideFront: "Hold the no and feel with her when...", guideBack: "The no, with her feelings allowed" },
+            { front: "Name the Cost — she asks, \"So what would it take?\"", back: "\"If we save for it together for six months, I'm in. I'd need you to cut back too.\"", guideFront: "Say what it would take when...", guideBack: "The price, said out loud" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Her cousin wants to stay with you for a month, and she has already said yes on your behalf.",
+          steps: [
+            { front: "The Plain No — she tells you it's arranged.", back: "\"No. A month is too long.\"", guideFront: "Say no without a case when...", guideBack: "A no that stands on its own" },
+            { front: "No, With Warmth — she says, \"He's family. How can you do this?\"", back: "\"I know he matters to you. A month is still a no, and I'm sorry it puts you in an awkward spot.\"", guideFront: "Hold the no and feel with her when...", guideBack: "The no, with her feelings allowed" },
+            { front: "Name the Cost — she asks, \"What about a week?\"", back: "\"A week I can do, if he helps around the house.\"", guideFront: "Say what it would take when...", guideBack: "The price, said out loud" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She wants you to give up your Thursday band practice to help with her new business.",
+          steps: [
+            { front: "The Plain No — she asks you to stop going.", back: "\"No, I'm keeping Thursdays.\"", guideFront: "Say no without a case when...", guideBack: "A no that stands on its own" },
+            { front: "No, With Warmth — she says, \"So your hobby matters more than me.\"", back: "\"You matter more than anything. Thursdays are still mine, and I hear that you're stretched.\"", guideFront: "Hold the no and feel with her when...", guideBack: "The no, with her feelings allowed" },
+            { front: "Name the Cost — she asks if you can help at all.", back: "\"I can give you Sunday mornings. Would that help?\"", guideFront: "Say what it would take when...", guideBack: "The price, said out loud" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When It Turns Ugly",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Step Back From Disrespect**, then **No, With Warmth**, then **Keep Your Word**. What to do when a disagreement becomes disrespectful.\n\n1. **Step Back From Disrespect** — leave the ugly moment, and say when you'll be back.\n2. **No, With Warmth** — when you return, keep your position and let her feelings be.\n3. **Keep Your Word** — close with something you will actually do.\n\nWhy this order: nothing useful happens while insults are flying. After the break, the position still stands, but it can be held gently. A concrete promise at the end shows you are not just walking away from the problem.\n\nThe usual order is to fight back, then give in to end it.\n\nMindset: leave the ugliness, keep the position, keep your word.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You told her you're not lending her brother money again. She starts calling you names.",
+          steps: [
+            { front: "Step Back From Disrespect — she says, \"You're a tight, selfish loser.\"", back: "\"I'm not talking like this. I'll be back in an hour.\"", guideFront: "Leave the conversation when...", guideBack: "A calm way out" },
+            { front: "No, With Warmth — when you come back, she says, \"He really needs it.\"", back: "\"I know he does, and I know you're worried. It's still no from me.\"", guideFront: "Hold the no and feel with her when...", guideBack: "The no, with her feelings allowed" },
+            { front: "Keep Your Word — she asks, \"So what are we supposed to do?\"", back: "\"I'll sit down with him on Saturday and help him make a budget. That I'll do.\"", guideFront: "Promise only what you'll do when...", guideBack: "A promise sized to keep" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You said you won't go to her friend's party, where you were mocked last time. She is furious.",
+          steps: [
+            { front: "Step Back From Disrespect — she says, \"God, you're such a baby.\"", back: "\"I'm going to go for a walk. We can talk when it's calmer.\"", guideFront: "Leave the conversation when...", guideBack: "A calm way out" },
+            { front: "No, With Warmth — later, she says, \"I just wanted you there.\"", back: "\"I know, and I'm sorry to let you down. I'm still not going.\"", guideFront: "Hold the no and feel with her when...", guideBack: "The no, with her feelings allowed" },
+            { front: "Keep Your Word — she says, \"Fine, but pick me up at least.\"", back: "\"I'll be outside at midnight. On the dot.\"", guideFront: "Promise only what you'll do when...", guideBack: "A promise sized to keep" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You said no to cancelling your parents' visit. She is shouting.",
+          steps: [
+            { front: "Step Back From Disrespect — she says, \"Your mum is a nightmare and so are you.\"", back: "\"I'm stepping out. I'll be back at eight and we'll talk.\"", guideFront: "Leave the conversation when...", guideBack: "A calm way out" },
+            { front: "No, With Warmth — at eight, she says, \"I just can't face a whole weekend.\"", back: "\"I hear you. They're still coming, and I get that it's a lot.\"", guideFront: "Hold the no and feel with her when...", guideBack: "The no, with her feelings allowed" },
+            { front: "Keep Your Word — she says, \"Then you're doing all the cooking.\"", back: "\"Deal. I'll cook every meal they're here.\"", guideFront: "Promise only what you'll do when...", guideBack: "A promise sized to keep" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Reliable Lead",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Make the Call**, then **Name the Cost**, then **Keep Your Word**. How to take charge of a plan without doing everything yourself.\n\n1. **Make the Call** — decide the plan and say it.\n2. **Name the Cost** — when she adds to it, say what that would take.\n3. **Keep Your Word** — commit to your part, sized so you'll do it.\n\nWhy this order: a decision gives the plan a shape. Naming the cost keeps the plan fair as it grows. The promise at the end is what makes her trust the next plan you make.\n\nThe usual order is to agree to everything and then deliver half of it.\n\nMindset: lead the plan, share the load, and do my part.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your anniversary is next weekend, and nothing is planned.",
+          steps: [
+            { front: "Make the Call — she asks what you're doing.", back: "\"I've booked dinner at the harbour on Saturday. Seven o'clock.\"", guideFront: "Decide and say why once when...", guideBack: "A decision, explained once" },
+            { front: "Name the Cost — she asks if you could also plan a surprise trip the next day.", back: "\"That's a whole second day of planning. If you sort Sunday, I'll sort Saturday.\"", guideFront: "Say what it would take when...", guideBack: "The price, said out loud" },
+            { front: "Keep Your Word — she asks you to pick up her dress from the tailor too.", back: "\"I'll get it on Friday on my way home.\"", guideFront: "Promise only what you'll do when...", guideBack: "A promise sized to keep" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You're moving flat in a month, and nothing is organised.",
+          steps: [
+            { front: "Make the Call — she asks how you'll handle it.", back: "\"I've booked the van for the 14th. We pack the week before.\"", guideFront: "Decide and say why once when...", guideBack: "A decision, explained once" },
+            { front: "Name the Cost — she asks you to also repaint the new flat first.", back: "\"That's another two weekends. If I paint, can you do all the packing?\"", guideFront: "Say what it would take when...", guideBack: "The price, said out loud" },
+            { front: "Keep Your Word — she asks when the utilities will be set up.", back: "\"I'll call them all on Monday. Done by Tuesday.\"", guideFront: "Promise only what you'll do when...", guideBack: "A promise sized to keep" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Her birthday is coming, and she has hinted that she wants something special.",
+          steps: [
+            { front: "Make the Call — she asks what you have planned.", back: "\"It's a surprise. Keep Saturday free.\"", guideFront: "Decide and say why once when...", guideBack: "A decision, explained once" },
+            { front: "Name the Cost — she suggests inviting all her friends to a big dinner you'd host.", back: "\"Hosting twelve is a lot. If you plan the guest list and the food, I'll do the rest.\"", guideFront: "Say what it would take when...", guideBack: "The price, said out loud" },
+            { front: "Keep Your Word — she asks if you'll clean the flat before.", back: "\"I'll clean it on Friday night. It'll be spotless.\"", guideFront: "Promise only what you'll do when...", guideBack: "A promise sized to keep" },
+          ]
+        },
+      ]
+    },
+  ],
+  alexandergrace2: [
+    {
+      name: "Pause and Return",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Call a Time-Out**, then **Her Feelings First**, then **Calm Instead of Venting**. How a heated argument can end with both of you closer.\n\n1. **Call a Time-Out** — stop it before it does damage, with a time to come back.\n2. **Her Feelings First** — when you return, ask how she is before anything else.\n3. **Calm Instead of Venting** — then say your part, in one calm line.\n\nWhy this order: the pause lets the anger burn down. Starting with her means she doesn't have to defend. Your frustration, said calmly last, can now actually be heard.\n\nThe usual order is to keep arguing, then storm off with no return time.\n\nMindset: pause, listen, then speak.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You're arguing about how often her friends stay over. It's getting loud.",
+          steps: [
+            { front: "Call a Time-Out — she says, \"You're so controlling!\"", back: "\"This is getting too heated. I'm going for a walk — back at seven.\"", guideFront: "Pause the argument when...", guideBack: "A pause with a return time" },
+            { front: "Her Feelings First — you come back at seven, and she's on the sofa.", back: "\"How are you feeling now?\"", guideFront: "Ask how she is before your points when...", guideBack: "A question about her, first" },
+            { front: "Calm Instead of Venting — she says, \"I just feel like you don't like my friends.\"", back: "\"I do like them. I'm just tired when someone's here every weekend. Can we do every other?\"", guideFront: "Say it in one calm line when...", guideBack: "The frustration, said once" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She found out you told your brother about her job worries. She's furious.",
+          steps: [
+            { front: "Call a Time-Out — the shouting is building.", back: "\"I want to talk about this properly. Can we take twenty minutes first?\"", guideFront: "Pause the argument when...", guideBack: "A pause with a return time" },
+            { front: "Her Feelings First — you come back.", back: "\"You must have felt really let down. Tell me.\"", guideFront: "Ask how she is before your points when...", guideBack: "A question about her, first" },
+            { front: "Calm Instead of Venting — she says, \"I trusted you with that.\"", back: "\"You're right. I also felt hurt by what you called me earlier — can we both drop the shouting?\"", guideFront: "Say it in one calm line when...", guideBack: "The frustration, said once" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A fight about the washing up has turned into a fight about everything.",
+          steps: [
+            { front: "Call a Time-Out — she says, \"You never do anything!\"", back: "\"Let's stop. I'll do the dishes, and we'll talk in half an hour.\"", guideFront: "Pause the argument when...", guideBack: "A pause with a return time" },
+            { front: "Her Feelings First — after the dishes, you sit down with her.", back: "\"What's been getting to you most?\"", guideFront: "Ask how she is before your points when...", guideBack: "A question about her, first" },
+            { front: "Calm Instead of Venting — she says, \"I just feel like I do everything.\"", back: "\"I get that. It bothered me to hear 'never', because I do try. Can we make a list together?\"", guideFront: "Say it in one calm line when...", guideBack: "The frustration, said once" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When She Brings a Problem",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Advice or an Ear**, then **Not the Stand-In**, then **Her Feelings First**. How to help when she's upset about someone else.\n\n1. **Advice or an Ear** — ask what she needs.\n2. **Not the Stand-In** — if her anger turns on you, remind her you're on her side.\n3. **Her Feelings First** — bring it back to how she is.\n\nWhy this order: asking first stops you guessing wrong. If the anger slips onto you, naming it gently keeps you out of the line of fire. Ending on her feelings keeps the conversation about her, not about the misunderstanding.\n\nThe usual order is solutions first, then a fight about your solutions.\n\nMindset: ask, stay on her side, and stay with her.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She comes home upset because her best friend cancelled her birthday plans.",
+          steps: [
+            { front: "Advice or an Ear — she tells you what happened.", back: "\"That's awful. Do you want to vent, or talk about what to do?\"", guideFront: "Ask what kind of help when...", guideBack: "A question about what she needs" },
+            { front: "Not the Stand-In — you say her friend might have had a reason, and she snaps.", back: "\"I'm not defending her. I'm on your side.\"", guideFront: "Stay on her side when...", guideBack: "A reminder you're on her team" },
+            { front: "Her Feelings First — she calms down.", back: "\"How are you feeling about your birthday now?\"", guideFront: "Ask how she is before your points when...", guideBack: "A question about her, first" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is angry because her manager took credit for her work.",
+          steps: [
+            { front: "Advice or an Ear — she starts telling you.", back: "\"Do you want ideas, or just to get it off your chest?\"", guideFront: "Ask what kind of help when...", guideBack: "A question about what she needs" },
+            { front: "Not the Stand-In — she says, \"You'd probably do the same.\"", back: "\"I wouldn't. I'm on your team here.\"", guideFront: "Stay on her side when...", guideBack: "A reminder you're on her team" },
+            { front: "Her Feelings First — she goes quiet.", back: "\"It really stung, didn't it? How are you doing with it?\"", guideFront: "Ask how she is before your points when...", guideBack: "A question about her, first" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Her mother criticised her cooking at Sunday lunch, and she's upset in the car.",
+          steps: [
+            { front: "Advice or an Ear — she brings it up.", back: "\"Want to talk it through, or should I just listen?\"", guideFront: "Ask what kind of help when...", guideBack: "A question about what she needs" },
+            { front: "Not the Stand-In — she says, \"And you just sat there!\"", back: "\"I'm with you. Next time I'll say something.\"", guideFront: "Stay on her side when...", guideBack: "A reminder you're on her team" },
+            { front: "Her Feelings First — she sighs.", back: "\"How are you feeling about it now?\"", guideFront: "Ask how she is before your points when...", guideBack: "A question about her, first" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Missed Agreement",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Calm Instead of Venting**, then **Care, Then Hold the Line**, then **Her Feelings First**. What to do when she broke an agreement because of how she felt.\n\n1. **Calm Instead of Venting** — name your frustration in one line.\n2. **Care, Then Hold the Line** — when she explains, care about the feeling and keep the agreement.\n3. **Her Feelings First** — end on how she is.\n\nWhy this order: saying your frustration calmly first keeps it from coming out later as sulking. The middle step keeps both the feeling and the agreement. Ending with her feelings shows the agreement was never more important than her.\n\nThe usual order is to say nothing, and then snap a week later.\n\nMindset: honest, fair, and close.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She promised to come to your match, and didn't turn up. She didn't message.",
+          steps: [
+            { front: "Calm Instead of Venting — you get home.", back: "\"I'm disappointed you didn't come, and that I didn't hear from you.\"", guideFront: "Say it in one calm line when...", guideBack: "The frustration, said once" },
+            { front: "Care, Then Hold the Line — she says, \"I was just really anxious about meeting your team.\"", back: "\"I'm sorry it felt like that. Next time, tell me before, and we'll work it out.\"", guideFront: "Show you care, keep the agreement when...", guideBack: "Care and the standard, together" },
+            { front: "Her Feelings First — she nods.", back: "\"How are you feeling about meeting them now?\"", guideFront: "Ask how she is before your points when...", guideBack: "A question about her, first" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She said she'd pick up your daughter from school, but forgot because she was upset about work.",
+          steps: [
+            { front: "Calm Instead of Venting — the school called you.", back: "\"I'm frustrated. The school had to call me.\"", guideFront: "Say it in one calm line when...", guideBack: "The frustration, said once" },
+            { front: "Care, Then Hold the Line — she says, \"I know, I just had the worst day.\"", back: "\"I'm sorry it was awful. I need to know if you can't do it, though.\"", guideFront: "Show you care, keep the agreement when...", guideBack: "Care and the standard, together" },
+            { front: "Her Feelings First — she says, \"I'm sorry.\"", back: "\"Thank you. Now — what happened at work?\"", guideFront: "Ask how she is before your points when...", guideBack: "A question about her, first" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She cancelled on your parents' anniversary dinner that morning, saying she didn't feel up to it.",
+          steps: [
+            { front: "Calm Instead of Venting — after the dinner.", back: "\"It was hard explaining to my parents. I'm a bit upset.\"", guideFront: "Say it in one calm line when...", guideBack: "The frustration, said once" },
+            { front: "Care, Then Hold the Line — she says, \"I just couldn't face it.\"", back: "\"I understand. It would have helped a lot to know the night before.\"", guideFront: "Show you care, keep the agreement when...", guideBack: "Care and the standard, together" },
+            { front: "Her Feelings First — she looks relieved you're not shouting.", back: "\"What made it so hard to face?\"", guideFront: "Ask how she is before your points when...", guideBack: "A question about her, first" },
+          ]
+        },
+      ]
+    },
+  ],
+  alexandergrace3: [
+    {
+      name: "The First Date",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Answer, Then Return It**, then **Your Real Opinion**, then **Say What You Want**. How a first date moves from getting to know each other to a second date.\n\n1. **Answer, Then Return It** — share, and hand the question back.\n2. **Your Real Opinion** — when she says what she thinks, be honest.\n3. **Say What You Want** — at the end, ask clearly for the next date.\n\nWhy this order: the back-and-forth builds the connection. A real opinion makes you someone, not a mirror. The clear invitation at the end turns a nice evening into a next step.\n\nThe usual order is agreeing all evening and ending with \"let's do this again sometime\".\n\nMindset: share, be real, and ask.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You're on a first date at a wine bar.",
+          steps: [
+            { front: "Answer, Then Return It — she asks what you do.", back: "\"I'm a nurse. I love it, most days. What about you?\"", guideFront: "Answer briefly, then ask her when...", guideBack: "A short answer and a question back" },
+            { front: "Your Real Opinion — she says she thinks nursing must be depressing.", back: "\"Honestly, it's the opposite for me. What made you think that?\"", guideFront: "Give your own view when...", guideBack: "An honest opinion, lightly" },
+            { front: "Say What You Want — the evening is ending.", back: "\"I've really enjoyed this. I'd like to see you again — Thursday?\"", guideFront: "Say plainly what you'd like when...", guideBack: "A clear invitation" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You're on a first date, walking by the river.",
+          steps: [
+            { front: "Answer, Then Return It — she asks where you grew up.", back: "\"A tiny town up north. Very quiet. Where are you from?\"", guideFront: "Answer briefly, then ask her when...", guideBack: "A short answer and a question back" },
+            { front: "Your Real Opinion — she says small towns are boring.", back: "\"I'd disagree a bit — I loved it. But I get why people leave.\"", guideFront: "Give your own view when...", guideBack: "An honest opinion, lightly" },
+            { front: "Say What You Want — you reach her station.", back: "\"I'd like to do this again. There's a gig on Saturday — want to come?\"", guideFront: "Say plainly what you'd like when...", guideBack: "A clear invitation" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You're on a first date at a café, and she's quite shy.",
+          steps: [
+            { front: "Answer, Then Return It — she asks what you like doing.", back: "\"Cooking, mostly. I'm trying to master bread. Do you cook?\"", guideFront: "Answer briefly, then ask her when...", guideBack: "A short answer and a question back" },
+            { front: "Your Real Opinion — she says she thinks bread is too much effort.", back: "\"It is a lot of effort. That's what I like about it.\"", guideFront: "Give your own view when...", guideBack: "An honest opinion, lightly" },
+            { front: "Say What You Want — it's time to go.", back: "\"I'd like to see you again. I'll bake — Sunday?\"", guideFront: "Say plainly what you'd like when...", guideBack: "A clear invitation" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Evening Catch-Up",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Bring Your World Home**, then **Ask What It Taught Her**, then **Answer, Then Return It**. How an ordinary evening becomes a real conversation.\n\n1. **Bring Your World Home** — share something from your day.\n2. **Ask What It Taught Her** — when she shares something from her past, ask what it gave her.\n3. **Answer, Then Return It** — when she asks you the same, answer and hand it back.\n\nWhy this order: bringing something of yours opens the door. Her story in return gives you a chance to go deeper. Answering her question and returning it keeps it a real exchange.\n\nThe usual order is \"How was your day?\" \"Fine.\" \"Yours?\" \"Fine.\"\n\nMindset: bring something, ask something, share something.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You're making dinner together on a weeknight.",
+          steps: [
+            { front: "Bring Your World Home — she asks about your day.", back: "\"I had coffee with an old colleague who's quit to start a farm. It got me thinking.\"", guideFront: "Share what your day held when...", guideBack: "A piece of your life, offered" },
+            { front: "Ask What It Taught Her — she says, \"I nearly quit my job once too, to travel.\"", back: "\"What did that time teach you, even though you didn't go?\"", guideFront: "Ask what she learned when...", guideBack: "A question that looks for growth" },
+            { front: "Answer, Then Return It — she asks, \"Would you ever do something like that?\"", back: "\"Maybe a small version. A year off, not a farm. Would you?\"", guideFront: "Answer briefly, then ask her when...", guideBack: "A short answer and a question back" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You're on the sofa after work.",
+          steps: [
+            { front: "Bring Your World Home — you've just been to your band practice.", back: "\"We played the new song for the first time. It finally works.\"", guideFront: "Share what your day held when...", guideBack: "A piece of your life, offered" },
+            { front: "Ask What It Taught Her — she says she used to play piano but gave up.", back: "\"What made you stop? And what did you get from playing?\"", guideFront: "Ask what she learned when...", guideBack: "A question that looks for growth" },
+            { front: "Answer, Then Return It — she asks why you've never given up the band.", back: "\"It's the one place I don't think about work. What's yours?\"", guideFront: "Answer briefly, then ask her when...", guideBack: "A short answer and a question back" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You're walking home from dinner with friends.",
+          steps: [
+            { front: "Bring Your World Home — you had a long talk with your friend about his divorce.", back: "\"Erik told me about his divorce tonight. It really made me think about us.\"", guideFront: "Share what your day held when...", guideBack: "A piece of your life, offered" },
+            { front: "Ask What It Taught Her — she says her parents' divorce was hard for her.", back: "\"What do you think it taught you about relationships?\"", guideFront: "Ask what she learned when...", guideBack: "A question that looks for growth" },
+            { front: "Answer, Then Return It — she asks what you learned from your parents.", back: "\"That you have to keep talking, even when it's hard. What about you?\"", guideFront: "Answer briefly, then ask her when...", guideBack: "A short answer and a question back" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "After a Hard Day",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**A Bad Day, Shared Steady**, then **Your Real Opinion**, then **Say What You Want**. How to share a hard day without handing it over.\n\n1. **A Bad Day, Shared Steady** — say what happened and how you feel.\n2. **Your Real Opinion** — when she offers advice, say honestly whether it helps.\n3. **Say What You Want** — say what you'd actually like from the evening.\n\nWhy this order: sharing it first lets her in. Your honest view on her advice keeps you from nodding along to something that doesn't help. Saying what you want at the end gives her something she can actually do.\n\nThe usual order is \"I'm fine\", followed by a quiet, distant evening.\n\nMindset: share it, be honest, and ask for what helps.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You were passed over for a promotion today.",
+          steps: [
+            { front: "A Bad Day, Shared Steady — she asks how it went.", back: "\"I didn't get it. Karin did. I'm disappointed, and I'll be okay.\"", guideFront: "Tell her it was hard when...", guideBack: "A hard day, shared calmly" },
+            { front: "Your Real Opinion — she says, \"You should just quit.\"", back: "\"I don't think quitting's right. I want to stay and go for it next year.\"", guideFront: "Give your own view when...", guideBack: "An honest opinion, lightly" },
+            { front: "Say What You Want — she asks what would help.", back: "\"Takeaway and a film. I'd like to switch off tonight.\"", guideFront: "Say plainly what you'd like when...", guideBack: "A clear invitation" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You had an argument with your brother on the phone.",
+          steps: [
+            { front: "A Bad Day, Shared Steady — she notices you're quiet.", back: "\"I had a row with my brother. I'm still upset about it.\"", guideFront: "Tell her it was hard when...", guideBack: "A hard day, shared calmly" },
+            { front: "Your Real Opinion — she says, \"He's always been selfish.\"", back: "\"I don't think he is, actually. He's just stressed.\"", guideFront: "Give your own view when...", guideBack: "An honest opinion, lightly" },
+            { front: "Say What You Want — she asks if you want to talk more.", back: "\"Can we go for a walk? I think better outside.\"", guideFront: "Say plainly what you'd like when...", guideBack: "A clear invitation" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A project you've worked on for months was cancelled.",
+          steps: [
+            { front: "A Bad Day, Shared Steady — you come home.", back: "\"They cancelled the project. Six months of work. I'm gutted, but I'll be fine.\"", guideFront: "Tell her it was hard when...", guideBack: "A hard day, shared calmly" },
+            { front: "Your Real Opinion — she says, \"At least you'll have more free time.\"", back: "\"True, but that doesn't really help right now.\"", guideFront: "Give your own view when...", guideBack: "An honest opinion, lightly" },
+            { front: "Say What You Want — she asks what you need.", back: "\"A hug, and dinner out. Can we go to the Thai place?\"", guideFront: "Say plainly what you'd like when...", guideBack: "A clear invitation" },
+          ]
+        },
+      ]
+    },
+  ],
 };

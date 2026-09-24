@@ -12463,4 +12463,472 @@ const memorizeCollections = {
       ]
     },
   ],
+  alexandergrace1: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for saying no and holding your ground in a relationship:\n\n1. The Plain No\n2. No, With Warmth\n3. Name the Cost\n4. Step Back From Disrespect\n5. Keep Your Word\n6. Make the Call\n\nThree answer a request. Three are about being someone she can rely on.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "The Plain No, No With Warmth, Name the Cost, Step Back From Disrespect, Keep Your Word, Make the Call.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Three answer a request. Three are about being someone she can rely on.", bundle: 'free' },
+        { q: "What makes a yes worth something?", a: "That a no was possible.", bundle: 'free' },
+        { q: "What is the problem with a silent yes?", a: "The cost is hidden, and it comes out later as resentment.", bundle: 'free' },
+        { q: "What does a firm no need to feel safe?", a: "Warmth towards her disappointment.", bundle: 'free' },
+        { q: "What is the difference between a no and a test?", a: "A no is an honest answer. A no used to test her is manipulation, and this pack does not teach it.", bundle: 'pro' },
+        { q: "What stops the reminders and the nagging?", a: "A word that reliably happens.", bundle: 'pro' },
+        { q: "Which decisions do you make together?", a: "The big ones that affect both of you.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Plain No",
+      description: "",
+      cards: [
+        { q: "What is The Plain No?", a: "Saying no clearly, without building a case for it.", bundle: 'free' },
+        { q: "How does The Plain No sound?", a: "\"No, I'm not going to do that.\"", bundle: 'free' },
+        { q: "When is The Plain No the right one?", a: "When it is simply not going to happen.", bundle: 'free' },
+        { q: "Why not give a long explanation?", a: "Every reason is something to argue with.", bundle: 'free' },
+        { q: "What are the three places a plain no is needed?", a: "An unfair request, a favour with nothing behind it, and something that crosses a line.", bundle: 'free' },
+        { q: "When does The Plain No go wrong?", a: "When it is said harshly, or followed by a long defence.", bundle: 'pro' },
+        { q: "What is The Plain No better than, and why?", a: "A vague maybe, which keeps both of you stuck.", bundle: 'pro' },
+        { q: "Which strategy often follows The Plain No?", a: "No, With Warmth — when she is disappointed.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "No, With Warmth",
+      description: "",
+      cards: [
+        { q: "What is No, With Warmth?", a: "Keeping the no, and letting her be disappointed without taking it back or shaming her.", bundle: 'free' },
+        { q: "How does No, With Warmth sound?", a: "\"I know you really wanted that. It's still a no.\"", bundle: 'free' },
+        { q: "When is No, With Warmth the right one?", a: "When the no is going to hurt.", bundle: 'free' },
+        { q: "What are the three things to keep together?", a: "The no unchanged, her feeling named, and no lecture.", bundle: 'free' },
+        { q: "What does taking the no back teach?", a: "That disappointment works as a lever.", bundle: 'free' },
+        { q: "When does No, With Warmth go wrong?", a: "When the warmth turns into giving in.", bundle: 'pro' },
+        { q: "What is No, With Warmth better than, and why?", a: "Telling her she shouldn't mind, which makes her feelings the problem.", bundle: 'pro' },
+        { q: "Where does the idea come from?", a: "Parenting: firm limits and full compassion at the same time.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name the Cost",
+      description: "",
+      cards: [
+        { q: "What is Name the Cost?", a: "Saying what a request would cost you, and asking what she could put in.", bundle: 'free' },
+        { q: "How does Name the Cost sound?", a: "\"I could, but that's my whole Saturday. What could you take on?\"", bundle: 'free' },
+        { q: "When is Name the Cost the right one?", a: "When it could be a yes, but not for free.", bundle: 'free' },
+        { q: "What does Name the Cost prevent?", a: "The silent yes, and the resentment that follows.", bundle: 'free' },
+        { q: "What are the three ways to name it?", a: "The time, the trade, and the maybe.", bundle: 'free' },
+        { q: "When does Name the Cost go wrong?", a: "When it turns into keeping score.", bundle: 'pro' },
+        { q: "What is Name the Cost better than, and why?", a: "Swallowing the cost. She can't value what she can't see.", bundle: 'pro' },
+        { q: "What usually happens when you name the cost?", a: "She drops the request, or offers something back.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Step Back From Disrespect",
+      description: "",
+      cards: [
+        { q: "What is Step Back From Disrespect?", a: "Leaving an openly disrespectful conversation calmly, and saying when you'll be back.", bundle: 'free' },
+        { q: "How does Step Back From Disrespect sound?", a: "\"I'm not going to talk like this. I'll be back in an hour.\"", bundle: 'free' },
+        { q: "When is Step Back From Disrespect the right one?", a: "When she is insulting, mocking or humiliating you.", bundle: 'free' },
+        { q: "What are the three things to keep in it?", a: "No insult back, say what you're doing, say when you'll come back.", bundle: 'free' },
+        { q: "How is it different from the silent treatment?", a: "You say where you're going and that you'll return.", bundle: 'free' },
+        { q: "When does Step Back From Disrespect go wrong?", a: "When you leave without saying you'll come back.", bundle: 'pro' },
+        { q: "What is Step Back From Disrespect better than, and why?", a: "Firing back, which turns a bad moment into a war.", bundle: 'pro' },
+        { q: "What does staying and taking it teach?", a: "That disrespect is acceptable.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Keep Your Word",
+      description: "",
+      cards: [
+        { q: "What is Keep Your Word?", a: "Only promising what you'll do, and doing it on the day.", bundle: 'free' },
+        { q: "How does Keep Your Word sound?", a: "\"I'll fix the shelf on Saturday morning.\"", bundle: 'free' },
+        { q: "When is Keep Your Word the right one?", a: "Whenever something is being promised.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Size it, do it, and say no to the ones you can't.", bundle: 'free' },
+        { q: "What does an unreliable partner turn the other into?", a: "A nagger.", bundle: 'free' },
+        { q: "When does Keep Your Word go wrong?", a: "When the promise is vague — \"I'll get round to it.\"", bundle: 'pro' },
+        { q: "What is Keep Your Word better than, and why?", a: "Defending the delay. Owning it and doing it ends the reminders.", bundle: 'pro' },
+        { q: "What stops the reminders?", a: "A word that reliably happens.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Make the Call",
+      description: "",
+      cards: [
+        { q: "What is Make the Call?", a: "Making a decision that is yours to make, and explaining it once if asked.", bundle: 'free' },
+        { q: "How does Make the Call sound?", a: "\"I've booked the cabin for Saturday. You said you needed a rest.\"", bundle: 'free' },
+        { q: "When is Make the Call the right one?", a: "For everyday plans and practical choices.", bundle: 'free' },
+        { q: "What are the three kinds of call?", a: "The plan, the practical choice, and the owned mistake.", bundle: 'free' },
+        { q: "What does endless consultation do?", a: "Turns every choice into a debate and leaves her doing the thinking.", bundle: 'free' },
+        { q: "When does Make the Call go wrong?", a: "When it is used for big decisions that should be shared.", bundle: 'pro' },
+        { q: "What is Make the Call better than, and why?", a: "\"I don't mind, what do you want?\" — someone has to decide.", bundle: 'pro' },
+        { q: "How many times do you explain a decision?", a: "Once, if she asks.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Which Kind of No** — a no, a no that will hurt, or a not-for-nothing\n• **Holding Your Ground** — self-respect, reliability, or leadership\n• **All Six Strategies** — no cue given, which is the real thing\n\nThe first is about answering. The second is about who you are over time.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Which Kind of No, Holding Your Ground, and All Six Strategies.", bundle: 'pro' },
+        { q: "What question decides Which Kind of No?", a: "Is this a no, or a \"not for nothing\"?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Which Kind of No?", a: "The silent yes you resent afterwards.", bundle: 'pro' },
+        { q: "What question decides Holding Your Ground?", a: "What is being tested — self-respect, reliability, or leadership?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Holding Your Ground?", a: "Arguing.", bundle: 'pro' },
+        { q: "It could be a yes, but not for free. Which strategy?", a: "Name the Cost.", bundle: 'pro' },
+        { q: "She is insulting you. Which strategy?", a: "Step Back From Disrespect.", bundle: 'pro' },
+        { q: "Nobody can decide. Which strategy?", a: "Make the Call.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The No That Holds** — The Plain No → No, With Warmth → Name the Cost\n2. **When It Turns Ugly** — Step Back From Disrespect → No, With Warmth → Keep Your Word\n3. **The Reliable Lead** — Make the Call → Name the Cost → Keep Your Word\n\nEach one ends with something fair or something promised.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The No That Holds, When It Turns Ugly, and The Reliable Lead.", bundle: 'pro' },
+        { q: "What is the order in The No That Holds?", a: "The Plain No, No With Warmth, Name the Cost.", bundle: 'pro' },
+        { q: "Why does warmth come after the plain no?", a: "The no only feels safe if her disappointment is welcome.", bundle: 'pro' },
+        { q: "What is the order in When It Turns Ugly?", a: "Step Back From Disrespect, No With Warmth, Keep Your Word.", bundle: 'pro' },
+        { q: "Why step back first?", a: "Nothing useful happens while insults are flying.", bundle: 'pro' },
+        { q: "What is the order in The Reliable Lead?", a: "Make the Call, Name the Cost, Keep Your Word.", bundle: 'pro' },
+        { q: "What makes her trust the next plan?", a: "Keeping your word on this one.", bundle: 'pro' },
+        { q: "What is the usual order instead of The No That Holds?", a: "A vague maybe, then a guilty yes.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **The Guilt Push** — pressure after your no\n• **The Silent Yes** — a hidden cost you swallow\n• **Disrespect** — insults and mockery\n• **The Broken Promise** — the reminders have started\n• **Nobody Decides** — endless back-and-forth\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Guilt Push, The Silent Yes, Disrespect, The Broken Promise, and Nobody Decides.", bundle: 'pro' },
+        { q: "What should you avoid in the guilt push?", a: "The guilty yes.", bundle: 'pro' },
+        { q: "What should you avoid with the silent yes?", a: "The yes you already regret as you say it.", bundle: 'pro' },
+        { q: "What should you avoid when she is disrespectful?", a: "Returning the insult.", bundle: 'pro' },
+        { q: "What should you avoid with a broken promise?", a: "\"I'll get round to it.\"", bundle: 'pro' },
+        { q: "What should you avoid when nobody decides?", a: "\"I don't mind, what do you want?\"", bundle: 'pro' },
+        { q: "What is the main strategy for the guilt push?", a: "No, With Warmth.", bundle: 'pro' },
+        { q: "What is the main strategy for the silent yes?", a: "Name the Cost.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **The Saying No Mindset** — a good partner says yes\n• **Being Replaced** — if I say no, she'll leave\n• **Cruelty** — saying no would hurt her\n• **Duty** — I must give her whatever she needs\n• **Justifying** — I need a good reason to say no\n• **Unreliability** — she's nagging me again\n\nMost of them make no feel more dangerous than it is.",
+      cards: [
+        { q: "What are the six mindsets in this pack?", a: "The Saying No Mindset, Being Replaced, Cruelty, Duty, Justifying, and Unreliability.", bundle: 'pro' },
+        { q: "What is true instead of \"a good partner says yes\"?", a: "A partner who never says no has a yes that means nothing.", bundle: 'pro' },
+        { q: "What is true about the fear of being replaced?", a: "A relationship that can't survive a no was never stable.", bundle: 'pro' },
+        { q: "When is a no cruel?", a: "When it is cold, or when her feelings are mocked.", bundle: 'pro' },
+        { q: "What does \"whatever she needs\" quietly cost?", a: "A partner never asked to contribute, and a man who runs out of himself.", bundle: 'pro' },
+        { q: "Do you need a good reason to say no?", a: "No. \"I don't want to\" is a reason.", bundle: 'pro' },
+        { q: "What is most nagging, really?", a: "The sound of a promise that didn't happen.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They make no feel more dangerous than it is.", bundle: 'pro' },
+      ]
+    },
+  ],
+  alexandergrace2: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for arguments that end with you closer:\n\n1. Call a Time-Out\n2. Her Feelings First\n3. Advice or an Ear\n4. Calm Instead of Venting\n5. Not the Stand-In\n6. Care, Then Hold the Line\n\nThree are for the heat of it. Three are for coming back together.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Call a Time-Out, Her Feelings First, Advice or an Ear, Calm Instead of Venting, Not the Stand-In, Care Then Hold the Line.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Three are for the heat of it, and three are for coming back together.", bundle: 'free' },
+        { q: "What is the aim of a fight, in this pack?", a: "Not to win it, but to end up closer.", bundle: 'free' },
+        { q: "What restarts an argument fastest?", a: "Opening with your own case.", bundle: 'free' },
+        { q: "What makes a time-out different from walking out?", a: "You say when you'll be back.", bundle: 'free' },
+        { q: "How is this pack different from Saying No?", a: "That one answers a request. This one keeps a heated conversation together.", bundle: 'pro' },
+        { q: "What does anger at full strength need to keep going?", a: "Fuel — being in the room and arguing.", bundle: 'pro' },
+        { q: "Which strategies are for the heat of it?", a: "Call a Time-Out, Calm Instead of Venting, and Not the Stand-In.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Call a Time-Out",
+      description: "",
+      cards: [
+        { q: "What is Call a Time-Out?", a: "Pausing a heated argument, calmly, with a time to come back.", bundle: 'free' },
+        { q: "How does Call a Time-Out sound?", a: "\"This is getting too heated. I'll take twenty minutes, and then let's try again.\"", bundle: 'free' },
+        { q: "When is Call a Time-Out the right one?", a: "When the argument is past the point of being useful.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Name it, say what you'll do, and say when you'll be back.", bundle: 'free' },
+        { q: "Why does a pause help?", a: "Anger burns out on its own when it isn't fed.", bundle: 'free' },
+        { q: "When does Call a Time-Out go wrong?", a: "When there is no return time, and it feels like abandonment.", bundle: 'pro' },
+        { q: "What is Call a Time-Out better than, and why?", a: "Saying something cruel you can't take back.", bundle: 'pro' },
+        { q: "Which strategy follows Call a Time-Out?", a: "Her Feelings First — when you come back.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Her Feelings First",
+      description: "",
+      cards: [
+        { q: "What is Her Feelings First?", a: "Asking how she is before you say anything about who was right.", bundle: 'free' },
+        { q: "How does Her Feelings First sound?", a: "\"How are you feeling now?\"", bundle: 'free' },
+        { q: "When is Her Feelings First the right one?", a: "When you come back after a fight.", bundle: 'free' },
+        { q: "What are the three things to do?", a: "Ask about her, listen without correcting, then say yours.", bundle: 'free' },
+        { q: "Why does it work?", a: "A person who feels heard is far more able to hear you.", bundle: 'free' },
+        { q: "When does Her Feelings First go wrong?", a: "When it turns into never saying your side at all.", bundle: 'pro' },
+        { q: "What is Her Feelings First better than, and why?", a: "Opening with your case, which makes her defend hers.", bundle: 'pro' },
+        { q: "Is going first giving in?", a: "No. It is going first.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Advice or an Ear",
+      description: "",
+      cards: [
+        { q: "What is Advice or an Ear?", a: "Asking what she wants from you before you answer her problem.", bundle: 'free' },
+        { q: "How does Advice or an Ear sound?", a: "\"Do you want ideas, or do you just want me to listen?\"", bundle: 'free' },
+        { q: "When is Advice or an Ear the right one?", a: "When she brings you a problem.", bundle: 'free' },
+        { q: "What are the three kinds of help she might want?", a: "A solution, an ear, or both in order.", bundle: 'free' },
+        { q: "Why does it work?", a: "The same story can be a request for help or a need to be heard.", bundle: 'free' },
+        { q: "When does Advice or an Ear go wrong?", a: "When you ask, and then give advice anyway.", bundle: 'pro' },
+        { q: "What is Advice or an Ear better than, and why?", a: "Guessing — a caring answer to the wrong question lands as dismissive.", bundle: 'pro' },
+        { q: "What should you do if you already guessed wrong?", a: "Say sorry for jumping in, and ask now.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Calm Instead of Venting",
+      description: "",
+      cards: [
+        { q: "What is Calm Instead of Venting?", a: "Saying you're frustrated in one calm sentence, instead of letting all of it out.", bundle: 'free' },
+        { q: "How does Calm Instead of Venting sound?", a: "\"I'm a bit annoyed you were late. I'd been waiting half an hour.\"", bundle: 'free' },
+        { q: "When is Calm Instead of Venting the right one?", a: "When she's done something that annoyed you.", bundle: 'free' },
+        { q: "What are the three parts?", a: "The feeling, the fact, and then stop.", bundle: 'free' },
+        { q: "What does venting look like from the outside?", a: "A loss of control.", bundle: 'free' },
+        { q: "When does Calm Instead of Venting go wrong?", a: "When the calm line becomes a list.", bundle: 'pro' },
+        { q: "What is Calm Instead of Venting better than, and why?", a: "Swallowing it, which comes out later as a sulk or an explosion.", bundle: 'pro' },
+        { q: "Do you have to hide the feeling?", a: "No. You just don't have to pour it out.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Not the Stand-In",
+      description: "",
+      cards: [
+        { q: "What is Not the Stand-In?", a: "Reminding her calmly that you're on her side when her anger at someone else lands on you.", bundle: 'free' },
+        { q: "How does Not the Stand-In sound?", a: "\"I'm on your team here. I'm not the one who said it.\"", bundle: 'free' },
+        { q: "When is Not the Stand-In the right one?", a: "When she's angry at someone else and it's turning on you.", bundle: 'free' },
+        { q: "What are the three moments it's needed?", a: "Your comment seems like siding with them, she attacks you for their behaviour, or she lumps you in with them.", bundle: 'free' },
+        { q: "Why does anger land on the wrong person?", a: "It looks for the nearest target.", bundle: 'free' },
+        { q: "When does Not the Stand-In go wrong?", a: "When it becomes \"Why are you attacking me?\"", bundle: 'pro' },
+        { q: "What is Not the Stand-In better than, and why?", a: "Defending yourself, which turns her problem into your fight.", bundle: 'pro' },
+        { q: "Is it refusing to support her?", a: "No. It's refusing to be the stand-in for someone who isn't there.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Care, Then Hold the Line",
+      description: "",
+      cards: [
+        { q: "What is Care, Then Hold the Line?", a: "Showing you care about how she felt, and still saying the agreement matters.", bundle: 'free' },
+        { q: "How does Care, Then Hold the Line sound?", a: "\"I'm sorry you were anxious. Next time, tell me before, so I can help.\"", bundle: 'free' },
+        { q: "When is Care, Then Hold the Line the right one?", a: "When she broke an agreement because of how she felt.", bundle: 'free' },
+        { q: "What are the three parts?", a: "The feeling, the agreement, and the way forward.", bundle: 'free' },
+        { q: "What is the key word?", a: "\"Before\" — the feeling is fine; not telling someone relying on you is the problem.", bundle: 'free' },
+        { q: "When does Care, Then Hold the Line go wrong?", a: "When it drops one half — only the feeling, or only the agreement.", bundle: 'pro' },
+        { q: "What happens if you only address the feeling?", a: "The agreement stops meaning anything.", bundle: 'pro' },
+        { q: "What happens if you only address the agreement?", a: "She feels you don't care about her.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **In the Heat of It** — whose anger is this, and is it still useful?\n• **After the Storm** — to be heard, to be helped, or to keep the agreement\n• **All Six Strategies** — no cue given, which is the real thing\n\nOne question sorts most of it: are we still in it, or coming out of it?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "In the Heat of It, After the Storm, and All Six Strategies.", bundle: 'pro' },
+        { q: "What question decides In the Heat of It?", a: "Whose anger is this, and is it still useful?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in the heat of it?", a: "Staying and arguing harder.", bundle: 'pro' },
+        { q: "What question decides After the Storm?", a: "What does she need first — to be heard, to be helped, or to know the agreement matters?", bundle: 'pro' },
+        { q: "What is the usual wrong choice after the storm?", a: "Starting with your own case.", bundle: 'pro' },
+        { q: "The argument is too loud to be useful. Which strategy?", a: "Call a Time-Out.", bundle: 'pro' },
+        { q: "She brings you a problem. Which strategy?", a: "Advice or an Ear.", bundle: 'pro' },
+        { q: "Her anger at someone else lands on you. Which strategy?", a: "Not the Stand-In.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Pause and Return** — Call a Time-Out → Her Feelings First → Calm Instead of Venting\n2. **When She Brings a Problem** — Advice or an Ear → Not the Stand-In → Her Feelings First\n3. **The Missed Agreement** — Calm Instead of Venting → Care, Then Hold the Line → Her Feelings First\n\nTwo of the three end with her feelings.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Pause and Return, When She Brings a Problem, and The Missed Agreement.", bundle: 'pro' },
+        { q: "What is the order in Pause and Return?", a: "Call a Time-Out, Her Feelings First, Calm Instead of Venting.", bundle: 'pro' },
+        { q: "Why does your frustration come last in Pause and Return?", a: "By then it can actually be heard.", bundle: 'pro' },
+        { q: "What is the order in When She Brings a Problem?", a: "Advice or an Ear, Not the Stand-In, Her Feelings First.", bundle: 'pro' },
+        { q: "What is the usual mistake when she brings a problem?", a: "Solutions first, then a fight about the solutions.", bundle: 'pro' },
+        { q: "What is the order in The Missed Agreement?", a: "Calm Instead of Venting, Care Then Hold the Line, Her Feelings First.", bundle: 'pro' },
+        { q: "Why end The Missed Agreement on her feelings?", a: "It shows the agreement was never more important than her.", bundle: 'pro' },
+        { q: "What is the usual mistake with a missed agreement?", a: "Saying nothing, then snapping a week later.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **It's Getting Loud** — past the point of being useful\n• **Coming Back** — nobody knows who speaks first\n• **The Wrong Target** — her anger lands on you\n• **Fixing When She Wanted Listening** — the guess went wrong\n• **Feelings, Not a Reason** — a feeling broke an agreement\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "It's Getting Loud, Coming Back, The Wrong Target, Fixing When She Wanted Listening, and Feelings Not a Reason.", bundle: 'pro' },
+        { q: "What should you avoid when it's getting loud?", a: "Storming off without saying when you'll return.", bundle: 'pro' },
+        { q: "What should you avoid when coming back?", a: "\"So, as I was saying…\"", bundle: 'pro' },
+        { q: "What should you avoid with the wrong target?", a: "\"Why are you attacking me?\"", bundle: 'pro' },
+        { q: "What should you avoid when she wanted listening?", a: "Defending your advice.", bundle: 'pro' },
+        { q: "What should you avoid when a feeling broke an agreement?", a: "\"Your feelings are not my problem.\"", bundle: 'pro' },
+        { q: "What is the main strategy for coming back?", a: "Her Feelings First.", bundle: 'pro' },
+        { q: "What is the main strategy for feelings, not a reason?", a: "Care, Then Hold the Line.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **The Closer Mindset** — arguments mean something is wrong\n• **Walking Away** — a break is running away\n• **Being Right** — she needs to hear it first\n• **Fixing It** — if she's upset, I fix it\n• **Keeping the Peace** — saying I'm annoyed starts a fight\n• **Feelings Versus Agreements** — holding her to it means I don't care\n\nMost of them treat a fight as something to win or avoid, rather than something to come through.",
+      cards: [
+        { q: "What are the six mindsets in this pack?", a: "The Closer Mindset, Walking Away, Being Right, Fixing It, Keeping the Peace, and Feelings Versus Agreements.", bundle: 'pro' },
+        { q: "What is true instead of \"arguments mean something is wrong\"?", a: "Every close relationship has conflict; what counts is coming out closer.", bundle: 'pro' },
+        { q: "When is a break not running away?", a: "When you say when you'll be back.", bundle: 'pro' },
+        { q: "What is true about being right?", a: "Your view matters. Saying it first is the part that gets added.", bundle: 'pro' },
+        { q: "What does always fixing it quietly cost?", a: "The moments she felt dismissed by your solutions.", bundle: 'pro' },
+        { q: "What keeps the peace better than silence?", a: "One calm sentence about what bothered you.", bundle: 'pro' },
+        { q: "Can you care about her feelings and still hold her to an agreement?", a: "Yes. Both are forms of respect.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They treat a fight as something to win or avoid.", bundle: 'pro' },
+      ]
+    },
+  ],
+  alexandergrace3: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for being clear and real, on a date and in a relationship:\n\n1. Say What You Want\n2. Your Real Opinion\n3. Answer, Then Return It\n4. Bring Your World Home\n5. Ask What It Taught Her\n6. A Bad Day, Shared Steady\n\nThree are for getting to know someone. Three are for staying close.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Say What You Want, Your Real Opinion, Answer Then Return It, Bring Your World Home, Ask What It Taught Her, A Bad Day Shared Steady.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Three are for getting to know someone, and three are for staying close.", bundle: 'free' },
+        { q: "What is confidence, in this pack?", a: "Being willing to be known.", bundle: 'free' },
+        { q: "What makes someone forgettable on a date?", a: "Hinting and agreeing with everything.", bundle: 'free' },
+        { q: "What shuts the door in a relationship?", a: "\"Fine\" — the answer that closes the conversation.", bundle: 'free' },
+        { q: "What is the difference between a hint and an invitation?", a: "An invitation has a specific plan and a real question.", bundle: 'pro' },
+        { q: "What keeps two people interesting to each other?", a: "Each having a life of their own, and bringing it home.", bundle: 'pro' },
+        { q: "How do you share a hard day without burdening her?", a: "Calmly, and without handing it to her to fix.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say What You Want",
+      description: "",
+      cards: [
+        { q: "What is Say What You Want?", a: "Saying clearly what you'd like, with a specific plan and a real question.", bundle: 'free' },
+        { q: "How does Say What You Want sound?", a: "\"I'd like to take you out. Are you free on Friday?\"", bundle: 'free' },
+        { q: "When is Say What You Want the right one?", a: "When you want something to happen.", bundle: 'free' },
+        { q: "What are the three parts of a clear invitation?", a: "What you want, a specific plan, and a real question.", bundle: 'free' },
+        { q: "Why is a vague invitation a problem?", a: "It puts all the work on her, and it's easy to ignore.", bundle: 'free' },
+        { q: "When does Say What You Want go wrong?", a: "When it becomes pressure — a question she can't comfortably say no to.", bundle: 'pro' },
+        { q: "What is Say What You Want better than, and why?", a: "\"We should hang out sometime\", which rarely leads anywhere.", bundle: 'pro' },
+        { q: "What do you do if she says no to the day?", a: "Ask if another day works.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Your Real Opinion",
+      description: "",
+      cards: [
+        { q: "What is Your Real Opinion?", a: "Giving your honest view, lightly, instead of agreeing to be liked.", bundle: 'free' },
+        { q: "How does Your Real Opinion sound?", a: "\"Honestly, it's a bit much for me. What do you like about it?\"", bundle: 'free' },
+        { q: "When is Your Real Opinion the right one?", a: "When she shares an opinion you don't share.", bundle: 'free' },
+        { q: "What are the three things that keep it warm?", a: "Say it lightly, keep it short, and ask about hers.", bundle: 'free' },
+        { q: "Why does it work?", a: "She can't get to know someone who only reflects her back.", bundle: 'free' },
+        { q: "When does Your Real Opinion go wrong?", a: "When it turns into a lecture or a debate.", bundle: 'pro' },
+        { q: "What is Your Real Opinion better than, and why?", a: "\"Me too!\" when it isn't true, which makes you forgettable.", bundle: 'pro' },
+        { q: "Is it about disagreeing?", a: "No. It's about not faking agreement.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Answer, Then Return It",
+      description: "",
+      cards: [
+        { q: "What is Answer, Then Return It?", a: "Answering briefly about yourself, then handing the question back.", bundle: 'free' },
+        { q: "How does Answer, Then Return It sound?", a: "\"I teach English. I love the kids, most days. What about you?\"", bundle: 'free' },
+        { q: "When is Answer, Then Return It the right one?", a: "When she asks about you.", bundle: 'free' },
+        { q: "What are the three parts?", a: "A real answer, kept short, then back to her.", bundle: 'free' },
+        { q: "Why keep it short?", a: "So it stays a shared conversation, not a speech.", bundle: 'free' },
+        { q: "When does Answer, Then Return It go wrong?", a: "When brief becomes guarded, and she learns nothing.", bundle: 'pro' },
+        { q: "What is Answer, Then Return It better than, and why?", a: "The full list, which turns the conversation into a performance.", bundle: 'pro' },
+        { q: "What does leaving something out do?", a: "Leaves her something to ask about later.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Bring Your World Home",
+      description: "",
+      cards: [
+        { q: "What is Bring Your World Home?", a: "Sharing something from your own life — what you did, saw or learned.", bundle: 'free' },
+        { q: "How does Bring Your World Home sound?", a: "\"The climbing wall was brutal today. I finally got the red route.\"", bundle: 'free' },
+        { q: "When is Bring Your World Home the right one?", a: "When she asks about your day, or you have something to share.", bundle: 'free' },
+        { q: "What are the three kinds of thing to bring?", a: "Something you did, something you noticed, and something you're working on.", bundle: 'free' },
+        { q: "Why does it work?", a: "Two people who each have a life of their own always have something new to bring.", bundle: 'free' },
+        { q: "When does Bring Your World Home go wrong?", a: "When it becomes a report, or leaves no room for her day.", bundle: 'pro' },
+        { q: "What is Bring Your World Home better than, and why?", a: "\"Fine\", which shuts the door.", bundle: 'pro' },
+        { q: "What should you do if you feel you have nothing new?", a: "Go and do something new — a life of your own is part of this.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What It Taught Her",
+      description: "",
+      cards: [
+        { q: "What is Ask What It Taught Her?", a: "Asking what she learned from something in her past, instead of judging it.", bundle: 'free' },
+        { q: "How does Ask What It Taught Her sound?", a: "\"What do you think you learned from it?\"", bundle: 'free' },
+        { q: "When is Ask What It Taught Her the right one?", a: "When she talks about her past.", bundle: 'free' },
+        { q: "What are the three angles?", a: "What it taught her, how she changed, and what she knows now.", bundle: 'free' },
+        { q: "Why does it work?", a: "It treats her past as experience, not baggage.", bundle: 'free' },
+        { q: "When does Ask What It Taught Her go wrong?", a: "When it turns into an interrogation about the details.", bundle: 'pro' },
+        { q: "What is Ask What It Taught Her better than, and why?", a: "Judging it, which makes her defend it.", bundle: 'pro' },
+        { q: "What if she doesn't know the answer?", a: "Give her time. It's a question worth waiting for.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Bad Day, Shared Steady",
+      description: "",
+      cards: [
+        { q: "What is A Bad Day, Shared Steady?", a: "Telling her calmly about a hard day, without hiding it or handing it to her to fix.", bundle: 'free' },
+        { q: "How does A Bad Day, Shared Steady sound?", a: "\"Today was rough. I'm still annoyed about it. I just wanted to tell you.\"", bundle: 'free' },
+        { q: "When is A Bad Day, Shared Steady the right one?", a: "When your day was hard and she asks, or notices.", bundle: 'free' },
+        { q: "What are the three parts?", a: "What happened, how you feel, and what you need, if anything.", bundle: 'free' },
+        { q: "What does hiding it do?", a: "Makes you distant.", bundle: 'free' },
+        { q: "When does A Bad Day, Shared Steady go wrong?", a: "When it becomes a long rant that she has to absorb.", bundle: 'pro' },
+        { q: "What is A Bad Day, Shared Steady better than, and why?", a: "\"Nothing\", which she can feel isn't true.", bundle: 'pro' },
+        { q: "Do you lose strength by sharing a hard day?", a: "No. You show you can carry it and still be close.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **On a Date** — inviting, reacting, or answering\n• **Staying Close** — your world, her past, or your hard day\n• **All Six Strategies** — no cue given, which is the real thing\n\nThe first is about getting to know someone. The second is about staying known.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "On a Date, Staying Close, and All Six Strategies.", bundle: 'pro' },
+        { q: "What question decides On a Date?", a: "Are you inviting, reacting, or answering?", bundle: 'pro' },
+        { q: "What is the usual wrong choice on a date?", a: "Agreeing and hinting.", bundle: 'pro' },
+        { q: "What question decides Staying Close?", a: "Whose world is the conversation about — yours, hers, or the hard part of yours?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Staying Close?", a: "\"Fine\".", bundle: 'pro' },
+        { q: "She's said what she thinks. Which strategy?", a: "Your Real Opinion.", bundle: 'pro' },
+        { q: "She's talking about her past. Which strategy?", a: "Ask What It Taught Her.", bundle: 'pro' },
+        { q: "Your day was hard. Which strategy?", a: "A Bad Day, Shared Steady.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The First Date** — Answer, Then Return It → Your Real Opinion → Say What You Want\n2. **The Evening Catch-Up** — Bring Your World Home → Ask What It Taught Her → Answer, Then Return It\n3. **After a Hard Day** — A Bad Day, Shared Steady → Your Real Opinion → Say What You Want\n\nEach one ends with something clear: a next date, a real exchange, or a request for what helps.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The First Date, The Evening Catch-Up, and After a Hard Day.", bundle: 'pro' },
+        { q: "What is the order in The First Date?", a: "Answer Then Return It, Your Real Opinion, Say What You Want.", bundle: 'pro' },
+        { q: "What is the usual ending of a first date instead?", a: "\"Let's do this again sometime.\"", bundle: 'pro' },
+        { q: "What is the order in The Evening Catch-Up?", a: "Bring Your World Home, Ask What It Taught Her, Answer Then Return It.", bundle: 'pro' },
+        { q: "What is the usual evening conversation instead?", a: "\"How was your day?\" \"Fine.\"", bundle: 'pro' },
+        { q: "What is the order in After a Hard Day?", a: "A Bad Day Shared Steady, Your Real Opinion, Say What You Want.", bundle: 'pro' },
+        { q: "Why say what you want at the end of a hard day?", a: "It gives her something she can actually do.", bundle: 'pro' },
+        { q: "What do the three sequences have in common?", a: "Each ends with something clear.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **The Vague Invite** — hinting instead of asking\n• **The Mirror** — agreeing with everything\n• **The Monologue** — one question, five minutes\n• **\"Fine\"** — the answer that shuts the door\n• **Her Past** — not sure how to react\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Vague Invite, The Mirror, The Monologue, \"Fine\", and Her Past.", bundle: 'pro' },
+        { q: "What should you avoid in the vague invite?", a: "\"Sometime\".", bundle: 'pro' },
+        { q: "What should you avoid in the mirror?", a: "\"Me too!\" when it isn't true.", bundle: 'pro' },
+        { q: "What should you avoid in the monologue?", a: "The full list.", bundle: 'pro' },
+        { q: "What should you avoid with \"fine\"?", a: "Saying it when it wasn't.", bundle: 'pro' },
+        { q: "What should you avoid with her past?", a: "Interrogating her about the details.", bundle: 'pro' },
+        { q: "What is the main strategy for \"fine\" on an ordinary day?", a: "Bring Your World Home.", bundle: 'pro' },
+        { q: "What is the main strategy for her past?", a: "Ask What It Taught Her.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **The Connection Mindset** — if she sees the real me, she won't like me\n• **Asking Directly** — a clear ask seems desperate\n• **Agreeing** — it's polite to agree\n• **Being Interesting** — I need to tell her everything\n• **The Strong, Silent Man** — a strong man keeps it to himself\n• **Her History** — her past is a warning sign\n\nMost of them keep you safe by keeping you unknown.",
+      cards: [
+        { q: "What are the six mindsets in this pack?", a: "The Connection Mindset, Asking Directly, Agreeing, Being Interesting, The Strong Silent Man, and Her History.", bundle: 'pro' },
+        { q: "What is true instead of \"if she sees the real me, she won't like me\"?", a: "She can only like you if she meets you.", bundle: 'pro' },
+        { q: "What actually seems desperate?", a: "Hinting and waiting, not a clear, relaxed invitation.", bundle: 'pro' },
+        { q: "What is true about agreeing?", a: "Being easy to be around matters. Faking agreement is the part that gets added.", bundle: 'pro' },
+        { q: "What does a short answer and a question back do?", a: "More than a long list.", bundle: 'pro' },
+        { q: "What does keeping everything to yourself quietly cost?", a: "A partner who feels shut out.", bundle: 'pro' },
+        { q: "What is true about her past?", a: "It is where the person you're with came from.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They keep you safe by keeping you unknown.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

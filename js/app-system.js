@@ -719,6 +719,9 @@ applyInputCounterVisibility();
     toneinmessages: { label: 'Tone in Messages', minLevel: 'complete' },
     replyingandnotreplying: { label: 'Replying and Not Replying', minLevel: 'complete' },
     whentostoptyping: { label: 'When to Stop Typing', minLevel: 'complete' },
+    alexandergrace1: { label: 'Alexander Grace 1 — Saying No', minLevel: 'complete' },
+    alexandergrace2: { label: 'Alexander Grace 2 — Fights That End Closer', minLevel: 'complete' },
+    alexandergrace3: { label: 'Alexander Grace 3 — Confident Connection', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -3246,6 +3249,48 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
+  alexandergrace1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  alexandergrace2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  alexandergrace3: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
 };
 window.BUNDLE_DEFS = BUNDLE_DEFS;
 
@@ -4136,6 +4181,7 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.13', date: 'September 2026', title: 'Three Alexander Grace packs, built from source', audience: 'dev', items: ['Alexander Grace 1 — Saying No, 2 — Fights That End Closer and 3 — Confident Connection added to Communication in Relationships.', 'Built directly from the transcript PDF rather than through Notebook; about a quarter of the source was trainable.', 'All three sit on the complete tier: 6 strategies, 3 collections, 3 sequences, 5 challenges, 6 mindset decks and Memorize each.'] },
   {
     version: 'v1.29.12', date: 'September 2026', title: 'A new topic: Messages & Writing \u2014 three packs', audience: 'dev',
     items: [
