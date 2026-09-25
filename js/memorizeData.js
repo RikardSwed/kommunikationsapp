@@ -7856,6 +7856,146 @@ const memorizeCollections = {
         { q: "When is the best time to discuss intellectual or serious ideas?", a: "After you have had sex with her and she is already attracted and in love.", bundle: 'pro' },
       ]
     },
+    {
+      name: "Core Idea",
+      description: "This pack teaches how to trigger sexual attraction by abandoning predictable \"nice guy\" behavior in favor of playful friction, unpredictable humor, and high-status frame control.\n\n• By shifting from seeking approval to acting as the selector, you break the interview vibe and create an immediate man-to-woman spark.",
+      cards: [
+        { q: "What is the main goal of creating the spark?", a: "To trigger sexual attraction by replacing predictable politeness with playful friction.", bundle: 'free' },
+        { q: "Why does being \"too nice\" kill attraction?", a: "It signals insecurity and turns the interaction into a boring, one-dimensional friendship.", bundle: 'free' },
+        { q: "What is the \"Halo Effect\"?", a: "The tendency to place beautiful women on a pedestal and act over-polite around them.", bundle: 'free' },
+        { q: "How do you break the \"interview mode\"?", a: "By making fun of her answers and leading with statements instead of endless questions.", bundle: 'free' },
+        { q: "What does \"flipping the script\" mean?", a: "Taking on the role of the selector so she feels the need to impress and win you over.", bundle: 'free' },
+        { q: "What is the 80/20 rule in banter?", a: "80% normal/confident behavior combined with 20% unpredictable/silly behavior.", bundle: 'pro' },
+        { q: "How do you handle a woman's confidence test?", a: "By remaining calm, non-reactive, and playfully turning her challenge into a joke.", bundle: 'pro' },
+        { q: "What is the \"Attraction Equation\"?", a: "Making her feel sexually attracted + being a good guy = Being \"Charming.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Playfully Challenging Humor",
+      description: "",
+      cards: [
+        { q: "What is the purpose of Playfully Challenging Humor?", a: "To demonstrate that you are not on a pedestal and are evaluating if she is good enough for you.", bundle: 'free' },
+        { q: "How do you use the \"Disqualifier\" move?", a: "By stating a playful reason why you two could never date or why she is in the friend zone.", bundle: 'free' },
+        { q: "Why suggest a hair or style change playfully?", a: "It breaks the Halo Effect and shows you aren't afraid of pushing her away.", bundle: 'free' },
+        { q: "What mindset powers challenging humor?", a: "The belief that you are the prize and she needs to win your approval.", bundle: 'free' },
+        { q: "How does challenging humor affect a woman?", a: "It allows her to feel feminine and play along because you aren't intimidated by her.", bundle: 'free' },
+        { q: "What is the \"Too Easy\" label technique?", a: "Accusing her playfully of being simple to read or predictable in her choices.", bundle: 'pro' },
+        { q: "How do you challenge a woman's capability?", a: "By playfully doubting she can do something simple like arm wrestling or staying up late.", bundle: 'pro' },
+        { q: "What is the danger of challenging humor without warmth?", a: "It can sound arrogant or mean if not balanced with a warm, smiling delivery.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Misinterpreting Intent",
+      description: "",
+      cards: [
+        { q: "What does Misinterpreting Intent involve?", a: "Playfully assuming she is hitting on you or trying to seduce you when she asks normal questions.", bundle: 'free' },
+        { q: "Why is Misinterpreting Intent effective?", a: "It removes the pressure of chasing and places her in the position of defending her interest.", bundle: 'free' },
+        { q: "How do you respond to \"Do you have a girlfriend?\"", a: "Ask if she is trying to take you out on a date and tell her to be direct.", bundle: 'free' },
+        { q: "What is the \"Eyes\" reframe?", a: "Accusing her of looking at you inappropriately or \"undressing you with her eyes.\"", bundle: 'free' },
+        { q: "How do you treat a compliment using this strategy?", a: "As flattery that won't get her anywhere unless she keeps going.", bundle: 'free' },
+        { q: "How do you turn an accidental touch into flirtation?", a: "Accuse her playfully of throwing herself at you and remind her you are a gentleman.", bundle: 'pro' },
+        { q: "What is the \"Date Assumption\" move?", a: "Treating any logistical question as a secret attempt to arrange a date with you.", bundle: 'pro' },
+        { q: "What mindset makes Misinterpreting Intent work?", a: "Assuming as a default that every woman is naturally attracted to you.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Making Fun of Her Answers",
+      description: "",
+      cards: [
+        { q: "Why make fun of a woman's answers?", a: "To break the logical interview mode and inject emotional spikes into standard talk.", bundle: 'free' },
+        { q: "How do you tease her about a common job like nursing?", a: "Label her as a mean person who enjoys poking people with syringes.", bundle: 'free' },
+        { q: "What is the \"Doesn't Look Like It\" move?", a: "Playfully doubting her skills or hobbies until she provides proof.", bundle: 'free' },
+        { q: "How do you respond to a boring answer like \"nothing much\"?", a: "Tease her for living a boring life and not being one of the cool kids.", bundle: 'free' },
+        { q: "Why is labeling her degree as \"easy\" effective?", a: "It lowers the seriousness of the exchange and shows you aren't easily impressed.", bundle: 'free' },
+        { q: "What is the \"Skill Dismissal\" technique?", a: "Calling a difficult subject or achievement easy to challenge her to defend it.", bundle: 'pro' },
+        { q: "How does making fun of answers build social spark?", a: "It creates an up-and-down emotional rollercoaster instead of dry factual agreement.", bundle: 'pro' },
+        { q: "What tone should you use when mocking an answer?", a: "A lighthearted, grinning tone that signals clear playfulness rather than malice.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Statement-Question Combo",
+      description: "",
+      cards: [
+        { q: "What is the Statement-Question Combo?", a: "Sharing an opening statement with your opinion or status before asking her a question.", bundle: 'free' },
+        { q: "Why avoid asking questions by themselves?", a: "Isolated questions demand work from her and make the interaction feel like an interrogation.", bundle: 'free' },
+        { q: "How do you use the Vibe Statement?", a: "Comment on your enjoyment of the environment before asking her opinion.", bundle: 'free' },
+        { q: "What is the benefit of sharing your status first?", a: "It gives her information to work with and proves you have a distinct personality.", bundle: 'free' },
+        { q: "How do you ask her name using this strategy?", a: "Guess a name that suits her look before asking for her real one.", bundle: 'free' },
+        { q: "What is the \"Personal Lead\" variation?", a: "Stating what you have been busy with lately before asking what she has been up to.", bundle: 'pro' },
+        { q: "How do you combine a compliment with a challenge?", a: "Praise her style first, then ask if she wears stylish clothes to sleep too.", bundle: 'pro' },
+        { q: "Why is this strategy recommended for shy women?", a: "It lowers the pressure on her by providing context she can easily respond to.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Unexpected Reactions",
+      description: "",
+      cards: [
+        { q: "What defines an Unexpected Reaction?", a: "Adding silliness, playfulness, or bold responses instead of being predictable and safe.", bundle: 'free' },
+        { q: "Why do predictable responses fail?", a: "They show a man is on his \"best behavior,\" which women find boring and uninspired.", bundle: 'free' },
+        { q: "How do you handle a drink request unexpectedly?", a: "Tell her that since you're a gentleman, you'll allow her to buy you one first.", bundle: 'free' },
+        { q: "What is the \"Playful Disagreement\" move?", a: "Sticking to your guns when she dislikes a passion of yours and teasing her for it.", bundle: 'free' },
+        { q: "What is the Role Reversal technique?", a: "Playfully demanding that she perform gentlemanly tasks like opening doors for you.", bundle: 'free' },
+        { q: "What is the 80/20 balance rule for reactions?", a: "80% grounded, confident behavior mixed with 20% silly, unpredictable humor.", bundle: 'pro' },
+        { q: "How do you end a boring topic abruptly?", a: "Call the topic boring directly and suggest talking about something more dangerous instead.", bundle: 'pro' },
+        { q: "What does risking an unexpected reaction prove?", a: "That you are confident enough not to seek her approval for every word you say.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "This pack includes three collection decks:\n\n• Friction & Spark\n• Breaking the Interview\n• Shifting the Vibe\n\nUse these decks to practice choosing the right move when multiple strategies could work.",
+      cards: [
+        { q: "What is the purpose of Collection decks?", a: "To train choosing between multiple strategies when an open situation allows different moves.", bundle: 'free' },
+        { q: "Which strategies make up \"Friction & Spark\"?", a: "Playfully Challenging Humor and Making Fun of Her Answers.", bundle: 'free' },
+        { q: "Which strategies make up \"Breaking the Interview\"?", a: "Misinterpreting Intent and The Statement-Question Combo.", bundle: 'free' },
+        { q: "When should you use a Friction strategy?", a: "When the interaction is becoming too polite, safe, or platonic.", bundle: 'free' },
+        { q: "When should you use a Script-Flipping strategy?", a: "When she asks standard questions and you want to establish yourself as the selector.", bundle: 'free' },
+        { q: "How many strategies does a Collection deck group?", a: "Two or more, so there is a real choice between moves.", bundle: 'pro' },
+        { q: "What differentiates Collections from Single Strategy?", a: "Single Strategy focuses on one move; Collections train selecting the best move for a context.", bundle: 'pro' },
+        { q: "Why practice Collection decks?", a: "To build real-time conversational flexibility so you never get stuck using only one tool.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "This pack includes three sequence decks:\n\n• Moving from \"Nice Guy\" to \"Lover\"\n• The \"Unpredictable\" Closer\n• Sparking the Cold Approach\n\nUse these decks to master multi-step conversational flows.",
+      cards: [
+        { q: "What do Sequence decks train?", a: "The fixed order of moves required to transition an interaction across multiple stages.", bundle: 'free' },
+        { q: "What is Step 1 in \"Moving from Nice Guy to Lover\"?", a: "The Statement-Question Combo to establish context without interrogating.", bundle: 'free' },
+        { q: "What is Step 2 in \"Moving from Nice Guy to Lover\"?", a: "Making Fun of Her Answers to introduce playful friction.", bundle: 'free' },
+        { q: "What is Step 3 in \"Moving from Nice Guy to Lover\"?", a: "Misinterpreting Intent to sexualize the interaction and close.", bundle: 'free' },
+        { q: "Why is order critical in Sequences?", a: "Because each move creates the emotional foundation required for the next move to land.", bundle: 'free' },
+        { q: "What defines a scenario in a Sequence deck?", a: "A specific real-world situation that requires completing every step in order.", bundle: 'pro' },
+        { q: "Can a Sequence deck include strategies from other packs?", a: "No, a pack refers only to its own strategies so the user can look them up.", bundle: 'pro' },
+        { q: "What is the goal of \"The Unpredictable Closer\" sequence?", a: "To take dominant control at the end of an approach and secure contact details safely.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "This pack includes five challenge decks:\n\n• The \"Interrogation\" Trap\n• Polite Distance\n• Skeptical Testing\n• Flat Conversations\n• Defensive Posturing\n\nUse these decks to handle difficult social situations and stalls.",
+      cards: [
+        { q: "What is the purpose of Challenge decks?", a: "To train applying strategies against specific real-world obstacles and difficult reactions.", bundle: 'free' },
+        { q: "How do you handle \"The Interrogation Trap\"?", a: "Use humor or statements to derail dry factual questions.", bundle: 'free' },
+        { q: "How do you handle \"Polite Distance\"?", a: "Use playful friction to break through formal politeness and create emotional spark.", bundle: 'free' },
+        { q: "How do you handle \"Skeptical Testing\"?", a: "Remain Teflon, non-reactive, and misinterpret her doubt as attraction.", bundle: 'free' },
+        { q: "How do you handle \"Flat Conversations\"?", a: "Inject unexpected reactions and dangerous topics to restart momentum.", bundle: 'free' },
+        { q: "How do you disarm \"Defensive Posturing\"?", a: "Refuse to take her harshness seriously and playfully challenge her arrogant frame.", bundle: 'pro' },
+        { q: "Why are all Challenge cards tagged as pro?", a: "Because problem-solving under social pressure is an advanced application skill.", bundle: 'pro' },
+        { q: "What mindset helps most during Challenge scenarios?", a: "Remembering that her difficulty is usually a confidence test, not a real rejection.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "This pack includes five mindset decks:\n\n• The \"Prize\" Mentality\n• Politeness\n• Disapproval\n• Presumption\n• Control\n\nUse these decks to overcome the limiting beliefs that block attraction.",
+      cards: [
+        { q: "What is the primary focus of Mindset decks?", a: "Rebalancing the internal beliefs that stop a man from executing strategies cleanly.", bundle: 'free' },
+        { q: "What belief blocks men in the \"Politeness\" deck?", a: "The false belief that being direct or teasing will make women dislike them.", bundle: 'free' },
+        { q: "What truth resets the fear of \"Disapproval\"?", a: "Risking temporary disapproval is necessary to trigger genuine sexual attraction.", bundle: 'free' },
+        { q: "What belief is challenged in the \"Presumption\" deck?", a: "The idea that you must wait for explicit permission before assuming interest.", bundle: 'free' },
+        { q: "What insight resets the \"Control\" mindset?", a: "Releasing the need for script control allows spontaneous attraction to happen.", bundle: 'free' },
+        { q: "Why are Mindset decks named after the obstacle area?", a: "To focus on the specific problem space rather than vague motivational slogans.", bundle: 'pro' },
+        { q: "How does \"The Prize Mentality\" shift behavior?", a: "It moves you from seeking approval to evaluating if she is good enough for you.", bundle: 'pro' },
+        { q: "What is the structure of a Mindset card?", a: "A limiting thought on the front and a clear internal reset on the back.", bundle: 'pro' },
+      ]
+    },
   ],
   danbacon2: [
     {
@@ -7874,6 +8014,146 @@ const memorizeCollections = {
         { q: "Why is being \"not easily tamed\" attractive?", a: "It creates a challenge for her to acquire you, which is exciting for attractive women who are used to men falling in love instantly.", bundle: 'pro' },
         { q: "What is \"Judgmental tonality\"?", a: "Speaking with a slight sense that you are evaluating the other person's value or behavior.", bundle: 'pro' },
         { q: "What is the \"Open Type\"?", a: "The majority of women who are open to any guy as long as he can trigger her emotional attraction.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "This pack teaches how to establish an unshakeable masculine frame, convey high social status, and pass confidence tests to act as the selector with attractive women.\n\n• By eliminating self-qualification and maintaining independent confidence, you position yourself as a high-value man who cannot be easily tamed.",
+      cards: [
+        { q: "What is the primary focus of Assertive Presence?", a: "Establishing a strong masculine frame and acting as the selector in social interactions.", bundle: 'free' },
+        { q: "What defines High Social Status in communication?", a: "Speaking with relaxed authority and feeling equal to or higher status than anyone you meet.", bundle: 'free' },
+        { q: "How do you pass a woman's confidence test?", a: "By remaining calm, unreactive, and playfully turning her challenge into a joke.", bundle: 'free' },
+        { q: "What does \"Flipping the Script\" accomplish?", a: "It turns you into the judge/selector so she feels the need to impress you.", bundle: 'free' },
+        { q: "Why is self-qualification harmful?", a: "Bragging or explaining yourself signals that you don't feel worthy as you are.", bundle: 'free' },
+        { q: "What is the \"You Can't Tame Me\" impression?", a: "Communicating that you are a challenge and she must win you over to gain your commitment.", bundle: 'pro' },
+        { q: "What is the \"Teflon\" frame?", a: "The ability to let criticisms and social pressure slide off you without affecting your mood.", bundle: 'pro' },
+        { q: "How does independent confidence affect women?", a: "It creates security and triggers deep emotional attraction for your masculine strength.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Conveying High Social Status",
+      description: "",
+      cards: [
+        { q: "How is High Social Status conveyed?", a: "Through relaxed body language, unhurried tonality, and expectant posture rather than money.", bundle: 'free' },
+        { q: "What is a High-Status greeting?", a: "A relaxed, assertive \"hi, how you doing\" instead of an apologetic \"excuse me.\"", bundle: 'free' },
+        { q: "Why are women attracted to potential high status?", a: "It signals leadership, social competence, and the ability to thrive in any environment.", bundle: 'free' },
+        { q: "How do you use Judgmental Inquiry?", a: "Ask about her life in a way that evaluates her character rather than seeking her approval.", bundle: 'free' },
+        { q: "What is Dominant Leadership in practice?", a: "Playfully directing her actions (e.g., \"get off your butt\") rather than asking permission.", bundle: 'free' },
+        { q: "How do you convey you aren't intimidated by beauty?", a: "Tell her calmly that she is pretty, but not that pretty, so she needs to settle down.", bundle: 'pro' },
+        { q: "What does an apologetic tone signal?", a: "Low social status and a belief that you are bothering or inferior to the other person.", bundle: 'pro' },
+        { q: "How do you set the pace of a walk or date?", a: "Assume she follows your lead and move confidently toward your chosen spot.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Passing Confidence Tests",
+      description: "",
+      cards: [
+        { q: "What is a Confidence Test?", a: "A challenge where a woman says something mean or skeptical to see if you crumble.", bundle: 'free' },
+        { q: "Why do women test a man's confidence?", a: "To verify that his strength is real and that he can handle social pressure without panicking.", bundle: 'free' },
+        { q: "How do you handle a fashion scold?", a: "Agree and exaggerate, or joke that she is just jealous because you look handsome.", bundle: 'free' },
+        { q: "How do you respond to \"Is this a pickup line?\"", a: "Tell her you're disappointed she'd use such a cliché line on you and ask her to try again.", bundle: 'free' },
+        { q: "What mindset powers passing confidence tests?", a: "The Teflon frame—knowing that her challenges are playful tests, not real rejections.", bundle: 'free' },
+        { q: "How do you handle being called annoying or cocky?", a: "Own it with a smile, stating you'd rather stand out as annoying than fit in as plain.", bundle: 'pro' },
+        { q: "What is the Intent Reframe for insults?", a: "Treating her criticism as proof that she is paying close attention and flirting with you.", bundle: 'pro' },
+        { q: "How do you pass the \"drink request\" test?", a: "State that since you're a gentleman, you'll allow her to buy you one first.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Flipping the Script",
+      description: "",
+      cards: [
+        { q: "What does Flipping the Script mean?", a: "Taking on the role of the judge/selector so she feels the need to seek your validation.", bundle: 'free' },
+        { q: "Why do attractive women respond to the selector role?", a: "They are used to men sucking up to them; a selector stands out as rare and high value.", bundle: 'free' },
+        { q: "How do you use the Sibling Profile move?", a: "Guess her family role (e.g., bratty younger sister) to explain and tease her behavior.", bundle: 'free' },
+        { q: "How do you handle standard interview questions?", a: "Playfully mock them as boring questions from a magazine tip list.", bundle: 'free' },
+        { q: "What is the spotlight reversal technique?", a: "Answering a question about yourself with a joke that places the spotlight back on her.", bundle: 'free' },
+        { q: "How do you judge a woman's taste in music or books?", a: "Call her a dork playfully and state you thought she was cool until she said that.", bundle: 'pro' },
+        { q: "How do you handle \"Do you have a girlfriend?\"", a: "Ask if she is trying to take you out on a date and tell her to be direct.", bundle: 'pro' },
+        { q: "What is the goal of Flipping the Script?", a: "To make her ask herself how she can win your approval.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Avoiding Self-Qualification",
+      description: "",
+      cards: [
+        { q: "What is Self-Qualification?", a: "Trying to raise your value by bragging about possessions, money, or explaining mistakes.", bundle: 'free' },
+        { q: "Why does bragging lower your value?", a: "It signals that you don't feel \"good enough\" as you are and need an act to impress her.", bundle: 'free' },
+        { q: "How should you handle questions about your career?", a: "State what you do briefly, then pivot to what she is passionate about.", bundle: 'free' },
+        { q: "What is the Achievement Dismissal move?", a: "Playfully calling difficult achievements \"easy\" to keep the tone light and unpretentious.", bundle: 'free' },
+        { q: "How do you handle a personal mistake on a date?", a: "Accept it casually with humor instead of offering long, defensive apologies.", bundle: 'free' },
+        { q: "How do you respond to \"How many girls have you been with?\"", a: "State that a gentleman doesn't kiss and tell, keeping an air of mystery.", bundle: 'pro' },
+        { q: "What should you do when tempted to show off your car?", a: "Say nothing about it; focus entirely on your personality and the emotional spark.", bundle: 'pro' },
+        { q: "Why is authenticity superior to self-qualification?", a: "Authenticity builds genuine connection, while bragging creates an artificial barrier.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The \"You Can't Tame Me\" Impression",
+      description: "",
+      cards: [
+        { q: "What is the \"You Can't Tame Me\" impression?", a: "Showing that you aren't instantly smitten or domesticated just because she is attractive.", bundle: 'free' },
+        { q: "Why is being a challenge attractive to women?", a: "It creates excitement and makes your affection feel earned and valuable.", bundle: 'free' },
+        { q: "How do you set a physical boundary playfully?", a: "Tell her you can hold hands, but no kissing tonight because you don't move that fast.", bundle: 'free' },
+        { q: "What is the \"Wine and Dine\" reversal?", a: "Acting like she needs to court and impress you before you commit to anything.", bundle: 'free' },
+        { q: "How do you show you can lose interest if she's boring?", a: "Shift your body language away when a story is dry and ask for a dangerous topic.", bundle: 'free' },
+        { q: "What is the \"Ice Cream\" level-up technique?", a: "Telling her she has leveled up as a friend and now needs to take you out for ice cream.", bundle: 'pro' },
+        { q: "How do you respond when she touches your arm?", a: "Accuse her of throwing herself at you and remind her you are a gentleman.", bundle: 'pro' },
+        { q: "What signal does \"moving slow\" send to a woman?", a: "That you have high standards and value your commitment carefully.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "This pack contains three collection decks:\n\n• The Selection Mindset\n• Passing Social Pressure\n• Establishing Dominance\n\nUse these decks to practice choosing between moves when several strategies would work.",
+      cards: [
+        { q: "What is the purpose of Collection decks?", a: "To train selecting the right high-status move when an open situation allows multiple options.", bundle: 'free' },
+        { q: "Which strategies make up \"Passing Social Pressure\"?", a: "Passing Confidence Tests, Flipping the Script, and Avoiding Self-Qualification.", bundle: 'free' },
+        { q: "Which strategies make up \"Establishing Dominance\"?", a: "Conveying High Social Status, Flipping the Script, and The \"You Can't Tame Me\" Impression.", bundle: 'free' },
+        { q: "When should you use a Social Pressure collection move?", a: "When a woman challenges, scolds, or tests your composure directly.", bundle: 'free' },
+        { q: "When should you use an Establishing Dominance move?", a: "When initiating an interaction or setting the leader frame in a group.", bundle: 'free' },
+        { q: "How many strategies must a Collection deck group?", a: "At least three strategies from the pack to offer a real choice.", bundle: 'pro' },
+        { q: "What distinguishes Collections from Single Strategy?", a: "Single Strategy focuses on one move; Collections build real-time selection flexibility.", bundle: 'pro' },
+        { q: "Why practice Collection decks in this pack?", a: "To automate switching between frame control moves under social pressure.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "This pack contains three sequence decks:\n\n• From Challenge to Lead\n• The \"Selector\" Interaction\n• Reclaiming the Frame\n\nUse these decks to master multi-step conversational flows.",
+      cards: [
+        { q: "What do Sequence decks train?", a: "The exact multi-step progression needed to turn a challenge into masculine leadership.", bundle: 'free' },
+        { q: "What is Step 1 in \"From Challenge to Lead\"?", a: "Passing Confidence Tests to absorb her initial test with humor.", bundle: 'free' },
+        { q: "What is Step 2 in \"From Challenge to Lead\"?", a: "Conveying High Social Status to re-establish value and introduce yourself.", bundle: 'free' },
+        { q: "What is Step 3 in \"From Challenge to Lead\"?", a: "The \"You Can't Tame Me\" Impression to assume the selector position.", bundle: 'free' },
+        { q: "What is Step 1 in \"The Selector Interaction\"?", a: "Flipping the Script to place her under the evaluation spotlight.", bundle: 'free' },
+        { q: "What is Step 2 in \"The Selector Interaction\"?", a: "Avoiding Self-Qualification to hold your frame when she asks about money or status.", bundle: 'pro' },
+        { q: "What is Step 3 in \"The Selector Interaction\"?", a: "Conveying High Social Status to lead the interaction to a new spot or drink.", bundle: 'pro' },
+        { q: "Why must every scenario in a combo follow the exact same steps?", a: "Because sequences train a consistent, repeatable process for high-status leadership.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "This pack contains five challenge decks:\n\n• Confidence Attacks\n• Status Intimidation\n• Social Scolding\n• The \"Are You a Player?\" Trap\n• Dismissive Behavior\n\nUse these decks to handle high-pressure social challenges.",
+      cards: [
+        { q: "What is the goal of Challenge decks?", a: "To practice applying strategies against difficult social obstacles and aggressive tests.", bundle: 'free' },
+        { q: "How do you handle Status Intimidation?", a: "Maintain equal status and evaluate her character rather than her designer labels.", bundle: 'free' },
+        { q: "How do you disarm Social Scolding?", a: "Smile, stay unreactive, and joke about her getting all worked up over nothing.", bundle: 'free' },
+        { q: "How do you escape the \"Are You a Player?\" trap?", a: "Own your charm playfully without apologizing or getting defensive.", bundle: 'free' },
+        { q: "How do you break through Dismissive Behavior?", a: "Use relaxed authority to call out her grumpy face or phone distraction.", bundle: 'free' },
+        { q: "Why are all Challenge cards tagged as pro?", a: "Because handling high social friction requires advanced frame control skills.", bundle: 'pro' },
+        { q: "What is the golden rule when facing a Confidence Attack?", a: "Never get angry or defensive; stay Teflon and turn the insult into play.", bundle: 'pro' },
+        { q: "How does mastering Challenges affect your presence?", a: "It eliminates approach anxiety by proving you can handle any social reaction smoothly.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "This pack contains five mindset decks:\n\n• The Selector's Frame\n• Approval Seeking\n• Fear of Conflict\n• Value Inferiority\n• Relinquishing Control\n\nUse these decks to overcome the limiting beliefs that weaken your presence.",
+      cards: [
+        { q: "What do Mindset decks target?", a: "The internal limiting beliefs that stop a man from executing high-status strategies cleanly.", bundle: 'free' },
+        { q: "What belief is corrected in \"Approval Seeking\"?", a: "The idea that you need a woman's validation to feel confident and high status.", bundle: 'free' },
+        { q: "What insight resets \"Fear of Conflict\"?", a: "Embracing social tension demonstrates strength and creates sexual attraction.", bundle: 'free' },
+        { q: "What truth resets \"Value Inferiority\"?", a: "Physical beauty does not equal social value; you are equal to any woman you meet.", bundle: 'free' },
+        { q: "What belief is challenged in \"Relinquishing Control\"?", a: "The false idea that letting her lead decisions makes her more comfortable.", bundle: 'free' },
+        { q: "How are Mindset decks named?", a: "For the obstacle area that stops the strategy, never the insight it leads to.", bundle: 'pro' },
+        { q: "What is the structure of a Mindset card?", a: "A limiting thought on the front and a clear internal reset on the back.", bundle: 'pro' },
+        { q: "Why is Mindset training essential for Assertive Presence?", a: "Because outer status techniques fail if you secretly feel inferior or needy inside.", bundle: 'pro' },
       ]
     },
   ],
@@ -7896,6 +8176,132 @@ const memorizeCollections = {
         { q: "What defines a \"Charming\" guy?", a: "Making her feel sexually attracted + being a good guy.", bundle: 'pro' },
       ]
     },
+    {
+      name: "Core Idea",
+      description: "Maintain a long-term relationship by acting as an emotionally independent leader who lovingly expects respect and brings out his partner's best side.\n\n• By setting calm boundaries, making small asks, and managing your own emotional stability, you inspire her desire to be attentive and keep the sexual spark alive.",
+      cards: [
+        { q: "What is the core goal of Relationship Mastery?", a: "To maintain long-term attraction and respect by acting as an emotionally independent leader.", bundle: 'free' },
+        { q: "What is the \"Good Girl Switch\"?", a: "The dynamic where a woman gains genuine happiness from being attentive and good to her man.", bundle: 'free' },
+        { q: "Why does \"sucking up\" ruin a relationship?", a: "It signals a lack of self-respect, causing her to lose attraction and take control.", bundle: 'free' },
+        { q: "How does emotional independence build attraction?", a: "It proves you are stable and secure without needing her constant reassurance.", bundle: 'free' },
+        { q: "What is the role of calm boundaries?", a: "Calling out bad behavior without anger shows high status and earns lasting respect.", bundle: 'free' },
+        { q: "What is the \"Coffee Test\"?", a: "Asking for a small favor and rewarding compliance with warmth to train attentiveness.", bundle: 'pro' },
+        { q: "How should a man handle a partner's bad mood?", a: "Remain unreactive and stable, refusing to be drawn into unnecessary drama.", bundle: 'pro' },
+        { q: "What defines General Leadership?", a: "Setting the overall direction while letting her make specific choices and feel involved.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Lovingly Expecting More",
+      description: "",
+      cards: [
+        { q: "What is the principle behind Lovingly Expecting More?", a: "Assuming your partner wants to be good to you and asking for small favors warmly.", bundle: 'free' },
+        { q: "How do you perform the \"Coffee Test\"?", a: "Ask for a drink casually and reward her compliance with genuine warmth and affection.", bundle: 'free' },
+        { q: "How should you handle an initial refusal to a small favor?", a: "Remain completely unreactive, do it yourself calmly, and give her another chance later.", bundle: 'free' },
+        { q: "Why should you reward compliance with affection?", a: "It links being attentive to you with a rush of positive emotion and attraction.", bundle: 'free' },
+        { q: "How does expecting more bring out her \"Good Girl\" side?", a: "It activates her natural desire to please a man she respects and admires.", bundle: 'free' },
+        { q: "What tone should you use when making a small request?", a: "A relaxed, expectant tone that assumes she will happily assist you.", bundle: 'pro' },
+        { q: "How do you use this strategy for date night attire?", a: "Ask her warmly to wear an outfit that makes her look stunning so you can show her off.", bundle: 'pro' },
+        { q: "Why is demanding favors destructive compared to expecting them?", a: "Demands create resentment, whereas warm expectation inspires voluntary devotion.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Addressing Bad Behavior",
+      description: "",
+      cards: [
+        { q: "What is the primary rule of Addressing Bad Behavior?", a: "Calling out disrespectful conduct immediately and calmly without anger or shouting.", bundle: 'free' },
+        { q: "Why must you avoid getting angry during a dispute?", a: "Staying calm creates a sharp contrast between her emotional drama and your stability.", bundle: 'free' },
+        { q: "How do you use Character Contrast?", a: "Remind her she is usually a great woman while clearly stating her current behavior isn't cool.", bundle: 'free' },
+        { q: "How should you handle disrespectful tone or snapping?", a: "Tell her calmly that talking to you in that manner isn't acceptable and you won't participate.", bundle: 'free' },
+        { q: "Why does tolerating disrespect ruin attraction?", a: "A woman cannot maintain sexual attraction for a man who allows her to walk over him.", bundle: 'free' },
+        { q: "How do you handle hormonal moodiness or period drama?", a: "Acknowledge her feelings warmly while holding the line that disrespect is never allowed.", bundle: 'pro' },
+        { q: "What is the \"Silent Replay\" technique?", a: "Giving her space after calling out bad behavior so she can realize her mistake independently.", bundle: 'pro' },
+        { q: "Why is apologizing for setting a boundary a mistake?", a: "It surrenders your masculine frame and teaches her that testing you yields control.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Emotional Independence",
+      description: "",
+      cards: [
+        { q: "What defines Emotional Independence?", a: "Handling your internal stress and bad days without needing her validation or comfort.", bundle: 'free' },
+        { q: "Why shouldn't you use your partner as an emotional crutch?", a: "Relying on her for constant reassurance forces her into a motherly role, killing attraction.", bundle: 'free' },
+        { q: "How should you answer \"How was your day?\" after a hectic shift?", a: "State that it was busy but you handled it, then shift focus warmly to her day.", bundle: 'free' },
+        { q: "How do you maintain composure during her quiet moods?", a: "Stay grounded in your own goals and activities without assuming her mood is your fault.", bundle: 'free' },
+        { q: "What mindset powers Emotional Independence?", a: "Knowing that your self-worth comes from within, not from external reassurance.", bundle: 'free' },
+        { q: "How do you process stress productively?", a: "Channel energy into exercise, goals, or quiet focus rather than venting emotionally.", bundle: 'pro' },
+        { q: "What should you do when she gives mixed signals?", a: "Remain relaxed and confident, refusing to doubt your value over her temporary mood.", bundle: 'pro' },
+        { q: "Why does independent confidence make a man attractive?", a: "It provides an unshakeable anchor of stability that makes a partner feel safe.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "General Leadership",
+      description: "",
+      cards: [
+        { q: "What is the core responsibility of General Leadership?", a: "Providing overall direction for the relationship while keeping her engaged and involved.", bundle: 'free' },
+        { q: "How do you lead dinner choices without micromanaging?", a: "Ask her to pitch three options she loves, then pick the winning destination yourself.", bundle: 'free' },
+        { q: "What is the \"get off your butt\" lead move?", a: "Directing action with assertive energy (e.g. \"get off your butt, let me take us out\") rather than asking permission.", bundle: 'free' },
+        { q: "How do you delegate vacation research effectively?", a: "Ask her to find three potential hotels so you can make the final reservation.", bundle: 'free' },
+        { q: "Why do women desire a man who leads?", a: "It allows her to relax into her feminine role without carrying the burden of direction.", bundle: 'free' },
+        { q: "How do you handle her preference when she is adamant?", a: "Agree enthusiastically to her choice, retaining the role of the one granting approval.", bundle: 'pro' },
+        { q: "How do you shift a room or party dynamic?", a: "Take her hand assertively and lead her to a new area without waiting for consensus.", bundle: 'pro' },
+        { q: "Why is passive indecision damaging to long-term spark?", a: "It forces her to step into the decision-making role, creating friction and fatigue.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "This pack contains three collection decks:\n\n• Relationship Dynamics\n• Holding the Line\n• Guiding the Vibe\n\nUse these decks to practice selecting between leadership moves in daily life.",
+      cards: [
+        { q: "What is the purpose of Collection decks?", a: "To train selecting the right strategy when a situation offers multiple valid choices.", bundle: 'free' },
+        { q: "Which strategies form \"Holding the Line\"?", a: "Addressing Bad Behavior, Lovingly Expecting More, and Emotional Independence.", bundle: 'free' },
+        { q: "Which strategies form \"Guiding the Vibe\"?", a: "General Leadership, Lovingly Expecting More, and Emotional Independence.", bundle: 'free' },
+        { q: "When should you select a \"Holding the Line\" move?", a: "When her behavior tests standards, rules, or daily respect.", bundle: 'free' },
+        { q: "When should you select a \"Guiding the Vibe\" move?", a: "When setting energy, planning activities, or rewarding positive involvement.", bundle: 'free' },
+        { q: "How many strategies must a Collection deck group?", a: "At least three strategies from the pack to offer genuine choice.", bundle: 'pro' },
+        { q: "How do Collections differ from Single Strategy decks?", a: "Single Strategy focuses on executing one move; Collections build real-time selection skill.", bundle: 'pro' },
+        { q: "Why practice Collection decks in Relationship Mastery?", a: "To fluidly maintain the leader frame across all real-world relationship contexts.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "This pack contains three sequence decks:\n\n• The \"Good Girl\" Loop\n• The \"Respect Reset\"\n• Taking the Reins\n\nUse these decks to master multi-step relationship progressions.",
+      cards: [
+        { q: "What do Sequence decks train?", a: "The exact multi-step progression needed to guide relationship interactions predictably.", bundle: 'free' },
+        { q: "What is Step 1 in \"The Good Girl Loop\"?", a: "Lovingly Expecting More to make a warm, small request.", bundle: 'free' },
+        { q: "What is Step 2 in \"The Good Girl Loop\"?", a: "General Leadership to guide the next activity seamlessly.", bundle: 'free' },
+        { q: "What is Step 1 in \"The Respect Reset\"?", a: "Addressing Bad Behavior to set a firm, calm boundary against disrespect.", bundle: 'free' },
+        { q: "What is Step 2 in \"The Respect Reset\"?", a: "Emotional Independence to stay unreactive while she processes the boundary.", bundle: 'free' },
+        { q: "What is Step 3 in \"The Respect Reset\"?", a: "General Leadership to re-engage with direction once respect is restored.", bundle: 'pro' },
+        { q: "What is the sequence order in \"Taking the Reins\"?", a: "Step 1: General Leadership -> Step 2: Lovingly Expecting More -> Step 3: Emotional Independence.", bundle: 'pro' },
+        { q: "Why must every scenario in a combo run identical steps?", a: "Because sequences build repeatable habits for core relationship processes.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "This pack contains five challenge decks:\n\n• Relationship Friction\n• Disrespectful Snaps\n• Testing Boundaries\n• Passive Resistance\n• Relationship Stagnation\n\nUse these decks to handle high-pressure relationship obstacles.",
+      cards: [
+        { q: "What is the objective of Challenge decks?", a: "To apply strategies against specific, difficult relationship friction points.", bundle: 'free' },
+        { q: "How do you handle \"Disrespectful Snaps\"?", a: "Call out the rude tone calmly without anger or emotional retaliation.", bundle: 'free' },
+        { q: "How do you navigate \"Testing Boundaries\"?", a: "Hold your standards firmly and refuse to accept artificial rules or guilt trips.", bundle: 'free' },
+        { q: "How do you overcome \"Passive Resistance\"?", a: "Take executive leadership and delegate small, clear tasks warmly.", bundle: 'free' },
+        { q: "How do you break through \"Relationship Stagnation\"?", a: "Initiate new dates, flirt assertively, and upgrade routine habits.", bundle: 'free' },
+        { q: "Why are all Challenge cards tagged as pro?", a: "Because managing ongoing relationship friction requires high emotional control.", bundle: 'pro' },
+        { q: "What mindset is critical during Challenge scenarios?", a: "Recognizing that tests and moodiness are opportunities to demonstrate unshakeable leadership.", bundle: 'pro' },
+        { q: "How does mastering Challenges protect long-term love?", a: "It prevents resentment from accumulating and keeps mutual respect at the center.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "This pack contains four mindset decks:\n\n• Bringing Out the Best\n• Reassurance\n• Confrontation\n• Decision Making\n\nUse these decks to eliminate internal doubts that undermine leadership.",
+      cards: [
+        { q: "What do Mindset decks address?", a: "The internal limiting thoughts that stop a man from leading assertively in love.", bundle: 'free' },
+        { q: "What belief is corrected in \"Reassurance\"?", a: "The false idea that you need constant external validation to feel secure.", bundle: 'free' },
+        { q: "What truth resets \"Confrontation\"?", a: "Setting calm boundaries against disrespect earns lasting respect and protects love.", bundle: 'free' },
+        { q: "What belief is challenged in \"Decision Making\"?", a: "The idea that letting her decide everything makes her happier or more comfortable.", bundle: 'free' },
+        { q: "How are Mindset decks named?", a: "For the specific obstacle area stopping the strategy, never the insight it leads to.", bundle: 'free' },
+        { q: "What is the structure of a Mindset card?", a: "A limiting thought on the front and a grounded internal reset on the back.", bundle: 'pro' },
+        { q: "Why is Mindset work essential for Relationship Mastery?", a: "Because external leadership techniques fail if you secretly fear conflict or seek approval.", bundle: 'pro' },
+        { q: "How does internal security affect a partner?", a: "It creates a safe emotional atmosphere where she can relax into her feminine energy.", bundle: 'pro' },
+      ]
+    },
   ],
   danbacon4: [
     {
@@ -7914,6 +8320,132 @@ const memorizeCollections = {
         { q: "How should a man handle a woman's hormonal moodiness?", a: "Be assertive but loving; let her know it's not a free pass to treat you badly.", bundle: 'pro' },
         { q: "Why is \"Sucking Up\" a mistake?", a: "It makes her lose respect for you and stops her from feeling sexually attracted.", bundle: 'pro' },
         { q: "What is the \"80/20 Rule\" in relationships?", a: "80% normal/confident behavior and 20% unpredictable/playful behavior.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "Maintain long-term attraction by holding an unshakeable masculine frame, refusing arbitrary rules, and remaining an emotionally independent challenge.\n\n• By expressing real moods and making her earn your approval, you transform relationship friction into renewed sexual tension and respect.",
+      cards: [
+        { q: "What is the main objective of Holding the Frame?", a: "To maintain masculine authority, boundaries, and sexual spark in a long-term relationship.", bundle: 'free' },
+        { q: "What is a \"Ridiculous Rule\"?", a: "An arbitrary boundary set by a partner to test if a man will surrender his frame out of fear.", bundle: 'free' },
+        { q: "Why should you make a woman \"win you over\"?", a: "It positions you as the prize and selector, creating the challenge women find attractive.", bundle: 'free' },
+        { q: "What does \"Expressing Real Moods\" accomplish?", a: "It demonstrates authenticity and emotional independence, preventing a robotic \"nice guy\" persona.", bundle: 'free' },
+        { q: "How do you restore the spark when things stall?", a: "Use physical dominance, playful touch, and assertive tonality to break housemate energy.", bundle: 'free' },
+        { q: "What is the rule regarding fearing her reaction?", a: "If you fear her reaction, she won't feel attraction.", bundle: 'pro' },
+        { q: "Why does abiding by petty rules ruin respect?", a: "It proves you can be walked over, causing her to lose respect and sexual desire.", bundle: 'pro' },
+        { q: "What is the 80/20 rule in relationships?", a: "80% grounded, confident behavior mixed with 20% silly, unpredictable playfulness.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ignoring Ridiculous Rules",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of Ignoring Ridiculous Rules?", a: "Laughing at arbitrary restrictions and refusing to be controlled out of fear.", bundle: 'free' },
+        { q: "How do you respond to a physical boundary test (like butt squeezes)?", a: "Joke that from now on all she gets is butt squeezes, defying the rule playfully.", bundle: 'free' },
+        { q: "Why mention breaking up in a joke about silly rules?", a: "Pointing out how ridiculous the argument sounds to others exposes her petty test.", bundle: 'free' },
+        { q: "How should you react when she throws a tantrum over a rule?", a: "Smile lovingly, call her a nutcase, and pull her in for a firm hug.", bundle: 'free' },
+        { q: "What mindset powers this strategy?", a: "Knowing that a woman doesn't want a guy she can walk all over.", bundle: 'free' },
+        { q: "How do you handle a texting curfew restriction?", a: "Tell her casually that you'll text when you have something cool to say and to stop monitoring you.", bundle: 'pro' },
+        { q: "What does complying with arbitrary rules signal?", a: "Insecurity, fear of conflict, and low social status.", bundle: 'pro' },
+        { q: "How does ignoring silly rules rebuild attraction?", a: "It proves you possess unshakeable masculine strength and cannot be intimidated.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The \"Let Her Win You Over\" Move",
+      description: "",
+      cards: [
+        { q: "What is the principle behind The \"Let Her Win You Over\" Move?", a: "Expressing an alternative desire and asking her to pitch why her option is better.", bundle: 'free' },
+        { q: "How do you handle her choice of restaurant using this move?", a: "State your alternative preference and challenge her to show what's good on her menu.", bundle: 'free' },
+        { q: "What is the \"Ice Cream\" level-up technique?", a: "Telling her she has leveled up as a partner and now needs to take you out for ice cream.", bundle: 'free' },
+        { q: "Why do attractive women enjoy having to pitch ideas to you?", a: "It engages her desire to win your approval and makes your agreement feel earned.", bundle: 'free' },
+        { q: "How do you respond when she asks if you are serious about her?", a: "Tell her you enjoy her company, but she still has to impress you more before love talk.", bundle: 'free' },
+        { q: "How do you delegate vacation planning using this move?", a: "Ask her to find three cool options and state that you will pick the winning destination.", bundle: 'pro' },
+        { q: "How do you handle expensive gift requests?", a: "Ask what she has done for you lately and state she needs to wine and dine you more.", bundle: 'pro' },
+        { q: "What dynamic does this strategy establish?", a: "It flips the script so you are the selector and she is the applicant.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Expressing Real Moods",
+      description: "",
+      cards: [
+        { q: "What defines Expressing Real Moods?", a: "Sharing authentic reactions, feelings, and jokes without filtering them to please her.", bundle: 'free' },
+        { q: "Why is hiding real moods harmful to attraction?", a: "It turns you into a fake \"nice guy\" and prevents genuine emotional connection.", bundle: 'free' },
+        { q: "How do you share that you had a hectic day?", a: "Report that work was crazy but you handled it, then shift focus warmly to her day.", bundle: 'free' },
+        { q: "How do you handle walking out of a movie she loved but you hated?", a: "State candidly that you thought it was boring and almost fell asleep.", bundle: 'free' },
+        { q: "What mindset supports expressing real moods?", a: "Understanding that authenticity builds trust and that fearing her reaction kills attraction.", bundle: 'free' },
+        { q: "How do you handle wanting to make a risky joke?", a: "State that you shouldn't make the joke because she'll get offended, then make it anyway.", bundle: 'pro' },
+        { q: "How do you process stress without being needy?", a: "Head to the gym or take space to clear your head independently before reconnecting.", bundle: 'pro' },
+        { q: "What do you say when she calls you cold for not venting?", a: "State that you're a man who handles business so you can enjoy your time together.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Restoring the Spark",
+      description: "",
+      cards: [
+        { q: "What is the primary purpose of Restoring the Spark?", a: "Shifting interaction from neutral housemate/friend mode back into sexual dominance.", bundle: 'free' },
+        { q: "How do you interrupt \"buddy talk\"?", a: "Look her in the eye, stop the conversation, and demand a real, tight hug.", bundle: 'free' },
+        { q: "How do you handle passing each other in the hallway?", a: "Stand in front of her, bring her in for a firm 10-second hug, and lift her chin for a kiss.", bundle: 'free' },
+        { q: "What is the \"Intent Reframe\" in sexual contexts?", a: "Accusing her playfully of trying to seduce you when she touches your hand or arm.", bundle: 'free' },
+        { q: "How do you lead movement at a party or event?", a: "State that the current room is boring, take her hand, and lead her to a new area.", bundle: 'free' },
+        { q: "How do you handle her saying she isn't in the mood for sex?", a: "Tell her to relax, smile, and state you're just there for conversation because she moves too fast.", bundle: 'pro' },
+        { q: "What does a firm, unhurried embrace communicate?", a: "Unshakeable masculine grounding and physical authority.", bundle: 'pro' },
+        { q: "Why is restoring the spark essential in long-term relationships?", a: "It prevents comfort from killing sexual tension and keeps mutual desire alive.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "This pack contains three collection decks:\n\n• Holding the Frame\n• Setting the Vibe\n• Managing Friction\n\nUse these decks to practice selecting the best frame-holding move across varied contexts.",
+      cards: [
+        { q: "What is the purpose of Collection decks?", a: "To train selecting the right frame-holding strategy when multiple moves are possible.", bundle: 'free' },
+        { q: "Which strategies form \"Setting the Vibe\"?", a: "The \"Let Her Win You Over\" Move, Expressing Real Moods, and Restoring the Spark.", bundle: 'free' },
+        { q: "Which strategies form \"Managing Friction\"?", a: "Ignoring Ridiculous Rules, Expressing Real Moods, and The \"Let Her Win You Over\" Move.", bundle: 'free' },
+        { q: "When should you use a \"Setting the Vibe\" move?", a: "When driving excitement, planning dates, or building physical romantic tension.", bundle: 'free' },
+        { q: "When should you use a \"Managing Friction\" move?", a: "When she sets petty boundaries, demands compliance, or acts moody.", bundle: 'free' },
+        { q: "How many strategies must a Collection deck group?", a: "At least three strategies from the pack to offer genuine choice.", bundle: 'pro' },
+        { q: "How do Collections differ from Single Strategy decks?", a: "Single Strategy teaches individual execution; Collections build situational selection skill.", bundle: 'pro' },
+        { q: "Why practice Collections in Holding the Frame?", a: "To maintain fluid authority across all relationship challenges without hesitating.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "This pack contains three sequence decks:\n\n• The \"Friction to Dominance\" Sequence\n• The \"Selector\" Date Loop\n• Reclaiming Authority\n\nUse these decks to master multi-step frame-holding progressions.",
+      cards: [
+        { q: "What do Sequence decks train?", a: "The exact multi-step progression required to handle tests and establish dominance.", bundle: 'free' },
+        { q: "What is Step 1 in \"The Friction to Dominance Sequence\"?", a: "Ignoring Ridiculous Rules to laugh off her arbitrary restriction.", bundle: 'free' },
+        { q: "What is Step 2 in \"The Friction to Dominance Sequence\"?", a: "Restoring the Spark to bring her close with physical warmth.", bundle: 'free' },
+        { q: "What is Step 3 in \"The Friction to Dominance Sequence\"?", a: "Expressing Real Moods to state your authentic intention clearly.", bundle: 'free' },
+        { q: "What is Step 1 in \"The Selector Date Loop\"?", a: "The \"Let Her Win You Over\" Move to ask for her pitch on date choices.", bundle: 'free' },
+        { q: "What is Step 2 in \"The Selector Date Loop\"?", a: "Expressing Real Moods to give your authentic take on her suggestion.", bundle: 'pro' },
+        { q: "What is Step 3 in \"The Selector Date Loop\"?", a: "Restoring the Spark to lead her assertively to the chosen activity.", bundle: 'pro' },
+        { q: "Why must every scenario in a combo follow identical steps?", a: "Because sequences build repeatable habits for core frame-holding situations.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "This pack contains five challenge decks:\n\n• Relationship Stalls\n• Arbitrary Demands\n• Emotional Distance\n• Passive Testing\n• Routine Traps\n\nUse these decks to handle high-friction relationship obstacles.",
+      cards: [
+        { q: "What is the goal of Challenge decks?", a: "To apply frame-holding strategies against stubborn relationship obstacles and tests.", bundle: 'free' },
+        { q: "How do you disarm Arbitrary Demands?", a: "Laugh off texting curfews and demand she pitch why you should fulfill requests.", bundle: 'free' },
+        { q: "How do you break through Emotional Distance?", a: "Use firm physical warmth, state your real mood, and refuse to play guessing games.", bundle: 'free' },
+        { q: "How do you handle Passive Testing?", a: "Tease her dramatic sighs and eye-rolls without getting defensive or angry.", bundle: 'free' },
+        { q: "How do you escape Routine Traps?", a: "Take charge of date choices, stop buddy talk, and upgrade habits assertively.", bundle: 'free' },
+        { q: "Why are all Challenge cards tagged as pro?", a: "Because holding frame against active resistance requires advanced masculine composure.", bundle: 'pro' },
+        { q: "What mindset is critical during Challenge scenarios?", a: "Knowing that her resistance is a confidence test designed to check your strength.", bundle: 'pro' },
+        { q: "How does mastering Challenges affect relationship longevity?", a: "It transforms recurring friction into renewed respect and enduring sexual tension.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "This pack contains four mindset decks:\n\n• Independent Confidence\n• Compliance\n• Pleasing\n• Emotional Suppression\n\nUse these decks to eliminate internal limiting beliefs that weaken your frame.",
+      cards: [
+        { q: "What do Mindset decks target?", a: "The internal limiting beliefs that stop a man from holding his frame assertively.", bundle: 'free' },
+        { q: "What belief is corrected in \"Compliance\"?", a: "The false idea that obeying arbitrary rules is necessary to avoid arguments and keep love.", bundle: 'free' },
+        { q: "What truth resets \"Pleasing\"?", a: "Making her earn your approval creates the challenge attractive women crave.", bundle: 'free' },
+        { q: "What belief is challenged in \"Emotional Suppression\"?", a: "The idea that hiding real moods is required to maintain relationship harmony.", bundle: 'free' },
+        { q: "How are Mindset decks named?", a: "For the specific obstacle area stopping the strategy, never the insight it leads to.", bundle: 'free' },
+        { q: "What is the structure of a Mindset card?", a: "A limiting thought on the front and an unshakeable internal reset on the back.", bundle: 'pro' },
+        { q: "Why is Mindset work vital for Holding the Frame?", a: "Because outer frame techniques crumble if you secretly fear conflict or rejection inside.", bundle: 'pro' },
+        { q: "How does mastering Independent Confidence transform relationships?", a: "It establishes you as an unshakeable anchor, allowing your partner to trust your strength.", bundle: 'pro' },
       ]
     },
   ],

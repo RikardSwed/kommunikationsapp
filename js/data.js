@@ -13631,6 +13631,9 @@ const collectionsModeData = {
         { q: "She mentions she is into astrology and you want to \"disqualify\" her.", a: "\"I thought you were cute, but astrology? Sorry, you've just been placed in the friend zone.\" [Playfully Challenging Humor]", bundle: 'pro' },
         { q: "She says she is a \"nurse\" and you want to tease her.", a: "\"A nurse? So you're a mean one then. I can see you poking people with needles and laughing.\" [Making Fun of Her Answers]", bundle: 'pro' },
         { q: "She asks what you did this weekend and you want to be mysterious.", a: "\"Wouldn't you like to know? I'm not sure I should tell you... your imagination will go wild.\" [Playfully Challenging Humor]", bundle: 'pro' },
+        { q: "She tells you she works in banking and looks serious.", a: "\"In banking? Oh, so you're a math nerd then. Where's your calculator?\" [Making Fun of Her Answers]", bundle: 'pro' },
+        { q: "You want to tease a girl about her order at a cafe.", a: "\"I thought you were cool until you ordered that. Now I'm not so sure we can get along.\" [Playfully Challenging Humor]", bundle: 'pro' },
+        { q: "She says she is a strict goody-two-shoes.", a: "\"A goody-two-shoes? You need to lighten up and get into some trouble for once.\" [Playfully Challenging Humor]", bundle: 'pro' },
       ]
     },
     {
@@ -13644,6 +13647,25 @@ const collectionsModeData = {
         { q: "She says, \"You're a nice guy.\"", a: "\"Flattery will get you nowhere, girl! But keep going—what else do you like about me?\" [Misinterpreting Intent]", bundle: 'pro' },
         { q: "You want to find out what she's studying at university.", a: "\"I'm nearly done with my engineering degree; it's been tough. How about you? Are you early on or almost a pro?\" [The Statement-Question Combo]", bundle: 'pro' },
         { q: "You catch her looking at you repeatedly.", a: "\"I've seen you looking at me. You're undressing me with your eyes! Settle down, we just met.\" [Misinterpreting Intent]", bundle: 'pro' },
+        { q: "She asks where you live in the city.", a: "\"Why, are you planning on stalking me already? Settle down, we just met.\" [Misinterpreting Intent]", bundle: 'pro' },
+        { q: "You want to ask what music she likes without being boring.", a: "\"I've been listening to a lot of old-school rock lately. How about yourself? What's your music vibe?\" [The Statement-Question Combo]", bundle: 'pro' },
+        { q: "She catches you looking at her and asks why.", a: "\"I was just noticing how expressive your face is. You look like you're plotting something.\" [Playfully Challenging Humor]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Shifting the Vibe",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "All five strategies for taking control of the tone when an interaction feels flat or predictable.\n\n• Use these moves to disrupt standard chit-chat and establish a playful, masculine presence.",
+      inputs: [
+        { q: "She gives a very brief answer about her weekend plans.", a: "\"That's it? Geez, you live a boring life, don't you? I thought you were one of the cool kids.\" [Making Fun of Her Answers]", bundle: 'pro' },
+        { q: "She asks if you come to this venue often.", a: "\"I'm here having a quiet drink with friends. How about yourself? What brings you out tonight?\" [The Statement-Question Combo]", bundle: 'pro' },
+        { q: "She asks if you are always this playful.", a: "\"Stop it, you're making me blush. You're totally trying to seduce me right now, aren't you?\" [Misinterpreting Intent]", bundle: 'pro' },
+        { q: "You want to stop at the door of a restaurant.", a: "\"Well, you can open the door for me! No, alright—in you go. I'm a gentleman.\" [Unexpected Reactions]", bundle: 'pro' },
+        { q: "She says she studied law at university.", a: "\"A lawyer? That's easy. Anyone can pass that. Why didn't you study something that uses your brain?\" [Making Fun of Her Answers]", bundle: 'pro' },
+        { q: "She asks what you do for work.", a: "\"I work in design and it's been a wild week. How about you? What's your story?\" [The Statement-Question Combo]", bundle: 'pro' },
+        { q: "She accidentally bumps into your shoulder.", a: "\"So you're throwing yourself at me now? Settle down girl, I'm a gentleman!\" [Misinterpreting Intent]", bundle: 'pro' },
+        { q: "She says she doesn't like spicy food.", a: "\"I liked you until you said that. Now I'm not sure we can ever eat together.\" [Playfully Challenging Humor]", bundle: 'pro' },
       ]
     },
   ],
@@ -13659,6 +13681,41 @@ const collectionsModeData = {
         { q: "She asks if you have a girlfriend.", a: "\"Why, you want to take me out? If you want to wine and dine me, just ask! Don't be shy.\" [Flipping the Script]", bundle: 'pro' },
         { q: "You want to suggest moving to a quieter bar in a dominant way.", a: "\"Hey you, I'm thirsty. Let's go to that other spot. Come on, let's go.\" [Conveying High Social Status]", bundle: 'pro' },
         { q: "She mentions she is the middle child.", a: "\"The rebellious middle child! I knew it. What sort of trouble did you get up to growing up?\" [Flipping the Script]", bundle: 'pro' },
+        { q: "You want to suggest moving to a quieter bar area in a dominant way.", a: "\"I'm thirsty. Let's go grab a drink at that other counter. Come on.\" [Conveying High Social Status]", bundle: 'pro' },
+        { q: "She mentions she is the middle child in her family.", a: "\"The rebellious middle child! I knew it. What sort of trouble did you get into growing up?\" [Flipping the Script]", bundle: 'pro' },
+        { q: "She asks if you pick up women everywhere you go.", a: "\"Woah, slow down! I'm clean, I'm a good guy now. Why, are you trying to monitor me?\" [Flipping the Script]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Passing Social Pressure",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "This collection combines strategies for remaining unshakeable when challenged, scolded, or tested.\n\n• Passing Confidence Tests\n• Flipping the Script\n• Avoiding Self-Qualification\n\nUse these moves to handle social tests with relaxed authority and humor.",
+      inputs: [
+        { q: "She criticizes your shoes as being outdated.", a: "\"You're just jealous because I look handsome today and you don't. Give me some fashion tips then.\" [Passing Confidence Tests]", bundle: 'pro' },
+        { q: "She asks if you say your opening line to every woman.", a: "\"I'm disappointed you'd use such a cliché line on me. You seem smarter than that. Try again!\" [Passing Confidence Tests]", bundle: 'pro' },
+        { q: "She asks if you make a lot of money in your job.", a: "\"Why are you so worried about my money? Are you trying to see if I'll buy you expensive drinks?\" [Avoiding Self-Qualification]", bundle: 'pro' },
+        { q: "She calls you a nerd because you work in software.", a: "\"No, I'm a smart man who understands code. You're just jealous because it's too hard for you!\" [Flipping the Script]", bundle: 'pro' },
+        { q: "She asks how many women you have slept with.", a: "\"Sorry, I don't kiss and tell. A gentleman has to keep some secrets.\" [Avoiding Self-Qualification]", bundle: 'pro' },
+        { q: "She says you seem very arrogant.", a: "\"I'm glad you noticed. It's my best quality, and you're starting to grow on me.\" [Passing Confidence Tests]", bundle: 'pro' },
+        { q: "She tests you by saying she doesn't date guys in your profession.", a: "\"That's okay. You like guys who are a challenge, otherwise you wouldn't be talking to me.\" [Flipping the Script]", bundle: 'pro' },
+        { q: "She tells you that you look younger than your age.", a: "\"My age is between zero and a hundred. But hey, at least I'm pretty on the inside.\" [Passing Confidence Tests]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Establishing Dominance",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "This collection groups strategies for taking the lead and positioning yourself as the selector.\n\n• Conveying High Social Status\n• Flipping the Script\n• The \"You Can't Tame Me\" Impression\n\nUse these moves to establish a strong masculine frame and make her work for your approval.",
+      inputs: [
+        { q: "You meet an attractive woman and want to greet her with authority.", a: "\"Oh hi, how you doing? I thought I'd come over and say hi. I'm Dan.\" [Conveying High Social Status]", bundle: 'pro' },
+        { q: "She asks if you have a girlfriend.", a: "\"Why, do you want to take me out on a date? If you want to wine and dine me, just ask!\" [Flipping the Script]", bundle: 'pro' },
+        { q: "You walk out of a venue together and she walks close to you.", a: "\"Look, we can hold hands, but no kissing tonight. You're going to have to wine and dine me more.\" [The \"You Can't Tame Me\" Impression]", bundle: 'pro' },
+        { q: "You want to lead her to a better table across the room.", a: "\"Let's walk over this way. There's a much better spot for a chat. Come on.\" [Conveying High Social Status]", bundle: 'pro' },
+        { q: "She asks what you are doing this weekend.", a: "\"I've got a busy schedule, but if you're a good girl, I might let you join for ice cream.\" [The \"You Can't Tame Me\" Impression]", bundle: 'pro' },
+        { q: "She touches your arm while laughing at your joke.", a: "\"So you're throwing yourself at me now? Settle down girl, I'm a gentleman!\" [The \"You Can't Tame Me\" Impression]", bundle: 'pro' },
+        { q: "You want to show you won't tolerate a boring topic.", a: "\"Actually, this topic is boring. Tell me something adventurous you've done recently.\" [The \"You Can't Tame Me\" Impression]", bundle: 'pro' },
+        { q: "She asks if you are always this direct with women.", a: "\"You seem cool, but the jury is still out. I'm not sure if I can trust you not to cause trouble.\" [The \"You Can't Tame Me\" Impression]", bundle: 'pro' },
       ]
     },
   ],
@@ -13674,6 +13731,41 @@ const collectionsModeData = {
         { q: "She asks \"What are we doing for our anniversary?\"", a: "\"I've got a surprise planned, but I need you to find a dress that makes you look like a total knockout. Can you handle that mission?\" [General Leadership]", bundle: 'pro' },
         { q: "She starts an argument because you were 5 minutes late.", a: "\"That wasn't cool. You're getting all worked up over nothing. Relax, I'm here now. Give me a hug.\" [Addressing Bad Behavior]", bundle: 'pro' },
         { q: "You want to reward her for being extra sweet lately.", a: "\"I've noticed you've been a really good girl this week. I'm taking you out to that fancy spot on Friday. Be ready by eight.\" [General Leadership / Reinforcement]", bundle: 'pro' },
+        { q: "She expects you to handle all weekend chores while she watches TV.", a: "\"I'm not your maid, honey. You're a great woman, but you need to pull your weight. Handle those dishes while I finish this.\" [Addressing Bad Behavior]", bundle: 'pro' },
+        { q: "She asks what you want to do for your birthday.", a: "\"I'm planning a fun night out, but I need you to find an outfit that makes you look incredible. Think you can handle that?\" [Lovingly Expecting More]", bundle: 'pro' },
+        { q: "She tries to start an argument over a minor scheduling mix-up.", a: "\"That wasn't cool. You're getting worked up over nothing. Relax, I'm here now. Give me a hug.\" [Addressing Bad Behavior]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Holding the Line",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choose between strategies when her behavior challenges your boundaries, respect, or standards.\n\n• Addressing Bad Behavior\n• Lovingly Expecting More\n• Emotional Independence",
+      inputs: [
+        { q: "She speaks to you in a sharp, disrespectful tone in front of guests.", a: "\"Hey, that wasn't cool. You're usually great, but talking to me like that? No, I don't like it.\" [Addressing Bad Behavior]", bundle: 'pro' },
+        { q: "She refuses to help unpack groceries because she is scrolling social media.", a: "\"Hey babe, get off your phone for two minutes and help me put these away. Thanks.\" [Lovingly Expecting More]", bundle: 'pro' },
+        { q: "She gives you the silent treatment after you refuse to change your plans.", a: "\"I'm going to head to the gym for an hour. Let me know when you're ready to be sweet again.\" [Emotional Independence]", bundle: 'pro' },
+        { q: "She complains about you making a decision without asking her first.", a: "\"I made the call so we'd have a great night. Next time you can pitch an idea first.\" [General Leadership]", bundle: 'pro' },
+        { q: "She snaps at you when you ask how her day went.", a: "\"I get that you're stressed, but snapping at me isn't cool. Take a breath.\" [Addressing Bad Behavior]", bundle: 'pro' },
+        { q: "She demands that you apologize for something you didn't do.", a: "\"I'm not apologizing for something I didn't do. Let me know when you want to talk like adults.\" [Emotional Independence]", bundle: 'pro' },
+        { q: "She asks you to rub her shoulders while you are working.", a: "\"I'll give you a great backrub later if you make us a fresh coffee right now.\" [Lovingly Expecting More]", bundle: 'pro' },
+        { q: "She rolls her eyes when you express your opinion on a movie.", a: "\"That eye roll wasn't cool. You're allowed to disagree without being disrespectful.\" [Addressing Bad Behavior]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Guiding the Vibe",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choose between strategies to maintain direction, warmth, and attraction in daily life.\n\n• General Leadership\n• Lovingly Expecting More\n• Emotional Independence",
+      inputs: [
+        { q: "You are both sitting at home on Friday night feeling indecisive.", a: "\"Get off your butt, let's go grab a bite to eat. I know a great spot.\" [General Leadership]", bundle: 'pro' },
+        { q: "She brings you a glass of water without you asking.", a: "\"Thank you babe. You're a good woman. Come here and give me a kiss.\" [Lovingly Expecting More]", bundle: 'pro' },
+        { q: "You are facing a stressful deadline at work.", a: "\"Work is hectic, but I've got it under control. Let me know what you want for dinner.\" [Emotional Independence]", bundle: 'pro' },
+        { q: "She wants to go out but can't choose a restaurant.", a: "\"Show me three options you like, and I'll pick the winner for tonight.\" [General Leadership]", bundle: 'pro' },
+        { q: "She is feeling anxious about an upcoming presentation.", a: "\"You're going to do great. Now go make us a tea and take a breath.\" [Lovingly Expecting More]", bundle: 'pro' },
+        { q: "She acts aloof and distant during dinner.", a: "\"I'm going to enjoy my meal. When you're ready to be fun company, I'm right here.\" [Emotional Independence]", bundle: 'pro' },
+        { q: "You want to plan a weekend trip together.", a: "\"I want to head to the coast next weekend. Clear your schedule for Saturday.\" [General Leadership]", bundle: 'pro' },
+        { q: "She cooks a great meal for both of you.", a: "\"This is delicious babe. You really outdid yourself tonight. Thank you.\" [Lovingly Expecting More]", bundle: 'pro' },
       ]
     },
   ],
@@ -13689,6 +13781,41 @@ const collectionsModeData = {
         { q: "She makes a rule that you aren't allowed to call her by her nickname in public.", a: "\"Imagine telling your friends we broke up because I called you 'Babs' at the grocery store. Absolutely ridiculous.\" [Ignoring Ridiculous Rules]", bundle: 'pro' },
         { q: "You want her to make a decision but keep the approval power.", a: "\"I want to eat something hearty. Show me three restaurants you like and I'll pick the winner.\" [Let Her Win You Over]", bundle: 'pro' },
         { q: "She is throwning a tantrum about a \"rule\" you broke.", a: "\"[Smile lovingly] Look at you getting all worked up. You're such a nutcase. Give me a hug.\" [Ignoring Ridiculous Rules]", bundle: 'pro' },
+        { q: "She says you aren't allowed to touch her hair after she gets it styled.", a: "\"Whatever! It looks like a mess anyway. Come here, I'm fixing it for you.\" [Ignoring Ridiculous Rules]", bundle: 'pro' },
+        { q: "She suggests a getaway spot that sounds boring to you.", a: "\"I'm not in the mood for the beach. What's your second favorite option? Pitch it to me.\" [The \"Let Her Win You Over\" Move]", bundle: 'pro' },
+        { q: "She makes a rule that you can't use her nickname in public.", a: "\"Imagine telling your friends we broke up because I called you 'Babs' at the store. Absolutely ridiculous!\" [Ignoring Ridiculous Rules]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Setting the Vibe",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Grouping strategies for driving positive emotional energy and keeping your relationship dynamic, exciting, and masculine.\n\n• The \"Let Her Win You Over\" Move\n• Expressing Real Moods\n• Restoring the Spark",
+      inputs: [
+        { q: "She asks what restaurant you want to visit on Friday.", a: "\"I want something hearty. Show me three spots you love, and I'll pick the winner.\" [The \"Let Her Win You Over\" Move]", bundle: 'pro' },
+        { q: "You walk out of a movie you disliked together.", a: "\"That was so boring! I almost fell asleep. Let's get ice cream to fix this night.\" [Expressing Real Moods]", bundle: 'pro' },
+        { q: "She touches your hand playfully while walking.", a: "\"So you're throwing yourself at me now? Settle down girl, I'm a gentleman!\" [Restoring the Spark]", bundle: 'pro' },
+        { q: "She asks if you want to attend a dinner party.", a: "\"I'll consider it if you're a good girl this week. Win me over.\" [The \"Let Her Win You Over\" Move]", bundle: 'pro' },
+        { q: "You had a long, hectic shift at work.", a: "\"It was a hectic day, but I handled it. Tell me what you've been up to today.\" [Expressing Real Moods]", bundle: 'pro' },
+        { q: "She sits quietly on the couch next to you.", a: "\"Enough with the quiet distance. Come here and give me a real, tight hug.\" [Restoring the Spark]", bundle: 'pro' },
+        { q: "She asks you to buy her a new coat.", a: "\"Why? What have you done for me lately? You're going to have to wine and dine me more.\" [The \"Let Her Win You Over\" Move]", bundle: 'pro' },
+        { q: "You feel silly and want to make a joke.", a: "\"I really want to make a joke right now, but you'll probably get offended. Doing it anyway!\" [Expressing Real Moods]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Managing Friction",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Grouping strategies for maintaining authority and humor when boundaries are tested or conversations stall.\n\n• Ignoring Ridiculous Rules\n• Expressing Real Moods\n• The \"Let Her Win You Over\" Move",
+      inputs: [
+        { q: "She tells you that you cannot watch sports on Sunday.", a: "\"Whatever! I'm watching the game. But if you're good, I'll let you sit next to me.\" [Ignoring Ridiculous Rules]", bundle: 'pro' },
+        { q: "She is in a serious mood while you feel playful.", a: "\"Look at you, so serious today! You look like you need a Red Bull or a holiday.\" [Expressing Real Moods]", bundle: 'pro' },
+        { q: "She demands that you pick her up from an event immediately.", a: "\"I'm busy right now. Show me why I should change my plans to come get you.\" [The \"Let Her Win You Over\" Move]", bundle: 'pro' },
+        { q: "She threatens to end the date because you laughed at her rule.", a: "\"Imagine telling your friends we broke up over a joke. Absolutely ridiculous!\" [Ignoring Ridiculous Rules]", bundle: 'pro' },
+        { q: "She asks why you don't talk about your feelings more.", a: "\"I'm not cold, I'm just a man. I handle my business so we can enjoy our time.\" [Expressing Real Moods]", bundle: 'pro' },
+        { q: "She tries to impose a texting curfew on you.", a: "\"Relax girl! I'll text when I have something cool to say. Stop trying to monitor me.\" [Ignoring Ridiculous Rules]", bundle: 'pro' },
+        { q: "She asks you to agree with her opinion on her friend.", a: "\"Actually, I disagree completely. I thought her friend was pretty cool.\" [Expressing Real Moods]", bundle: 'pro' },
+        { q: "She asks for a ride across town.", a: "\"Pitch it to me. What's in it for me if I drive all the way over there?\" [The \"Let Her Win You Over\" Move]", bundle: 'pro' },
       ]
     },
   ],
