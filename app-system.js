@@ -712,6 +712,21 @@ applyInputCounterVisibility();
     seenandtrusted3askingtobetrusted: { label: 'Seen and Trusted 3 — Asking to Be Trusted', minLevel: 'complete' },
     seenandtrusted1thesafetyshereads: { label: 'Seen and Trusted 1 — The Safety She Reads For', minLevel: 'complete' },
     masculine1: { label: 'The Masculine Blueprint – Part 1', minLevel: 'complete' },
+    askingforclarity: { label: 'Asking for Clarity', minLevel: 'complete' },
+    calibratinghumour: { label: 'Calibrating Humour', minLevel: 'complete' },
+    brokenpromises: { label: 'Broken Promises and Trust', minLevel: 'complete' },
+    askingpermission: { label: 'Asking for Permission', minLevel: 'complete' },
+    toneinmessages: { label: 'Tone in Messages', minLevel: 'complete' },
+    replyingandnotreplying: { label: 'Replying and Not Replying', minLevel: 'complete' },
+    whentostoptyping: { label: 'When to Stop Typing', minLevel: 'complete' },
+    alexandergrace1: { label: 'Alexander Grace 1 — Saying No', minLevel: 'complete' },
+    alexandergrace2: { label: 'Alexander Grace 2 — Fights That End Closer', minLevel: 'complete' },
+    alexandergrace3: { label: 'Alexander Grace 3 — Confident Connection', minLevel: 'complete' },
+    alexandergrace4: { label: 'Alexander Grace 4 — Saying It Early', minLevel: 'complete' },
+    alexandergrace5: { label: 'Alexander Grace 5 — Steady Under Criticism', minLevel: 'complete' },
+    alexandergrace6: { label: 'Alexander Grace 6 — Letting Her In', minLevel: 'complete' },
+    alexandergrace7: { label: 'Alexander Grace 7 — Hard Talks, Well Timed', minLevel: 'complete' },
+    alexandergrace8: { label: 'Alexander Grace 8 — Honest and Fair', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -765,7 +780,7 @@ applyInputCounterVisibility();
     }
     if (cfg.minLevel === 'complete') return 'hidden';
     if (cfg.minLevel === 'extended') {
-      if (!getExtendedOwned().includes(progId)) return 'hidden';
+      if (!ownsExtended(progId)) return 'hidden';
       // Extended purchases still need an active Pro plan (yearly Pro model)
       return level === 'pro' ? 'available' : 'locked';
     }
@@ -827,6 +842,7 @@ applyInputCounterVisibility();
     // leak through any of the paths below.
     expireBetaGrant();
     expirePackGrants();
+    expireUnlockGrants();
     // v1.26.75 — DEFAULT IS NOW freemium, not complete. A fresh install used
     // to see the entire library, which would have made the beta test say
     // nothing at all about the paid model. This is the primary of five sites;
@@ -904,9 +920,72 @@ applyInputCounterVisibility();
       notAfter: '2026-12-31',
       label: 'Biblical Counseling 1 & 2 unlocked in full for 180 days.',
     },
+    // v1.28.97 \u2014 three blanket codes, all running to the turn of the year.
+    // They do not raise the LEVEL: they hand out the two things a Pro user can
+    // still be missing. EXTENDED26 grants ownership of everything in the
+    // extended store, which behaves exactly like a purchase and therefore still
+    // needs an active Pro plan to use. PROGRAMS26 counts every programme
+    // checkpoint as passed, so nothing inside a programme is waiting on a test.
+    // ALLACCESS26 is both at once.
+    EXTENDED26: {
+      kind: 'unlock', unlocks: ['extended'],
+      until: '2026-12-31', notAfter: '2026-12-31',
+      label: 'Extended store unlocked until the end of the year. Needs Pro to use.',
+    },
+    PROGRAMS26: {
+      kind: 'unlock', unlocks: ['programs'],
+      until: '2026-12-31', notAfter: '2026-12-31',
+      label: 'Every programme checkpoint counts as passed, until the end of the year.',
+    },
+    ALLACCESS26: {
+      kind: 'unlock', unlocks: ['extended', 'programs'],
+      until: '2026-12-31', notAfter: '2026-12-31',
+      label: 'Extended store and all programme parts unlocked until the end of the year.',
+    },
   };
   const GRANT_KEY  = 'ds_beta_grant';    // { level, until, code }
   const PACKS_KEY  = 'ds_pack_grants';   // { packKey: { until, code } }
+  const UNLOCK_KEY = 'ds_unlock_grants'; // { extended: {until,code}, programs: {until,code} }
+
+  // ── Blanket unlocks (v1.28.97) ───────────────────────────────────────────
+  // A third kind of grant, next to the level grant and the pack grants. It
+  // does not change the level and it does not name packs: it switches off one
+  // specific gate for as long as it lasts.
+  //
+  //   extended \u2014 everything in the extended store counts as owned. Ownership
+  //              is not the same as access: an extended item still needs Pro,
+  //              exactly as a bought one does.
+  //   programs \u2014 every programme checkpoint counts as passed, so no Part is
+  //              waiting on a test. Parts that need Pro still need Pro.
+  function readUnlocks() {
+    try { return JSON.parse(localStorage.getItem(UNLOCK_KEY)) || {}; }
+    catch { return {}; }
+  }
+  function writeUnlocks(o) {
+    try { localStorage.setItem(UNLOCK_KEY, JSON.stringify(o)); } catch (e) {}
+  }
+  function expireUnlockGrants() {
+    const g = readUnlocks();
+    const now = Date.now();
+    let changed = false;
+    Object.keys(g).forEach(k => {
+      if (!g[k] || !g[k].until || g[k].until <= now) { delete g[k]; changed = true; }
+    });
+    if (changed) writeUnlocks(g);
+  }
+  function unlockActive(kind) {
+    const g = readUnlocks()[kind];
+    return !!(g && g.until && g.until > Date.now());
+  }
+  // The single ownership test for extended items \u2014 packs, programs and the
+  // `pack::bundle` ids. Everything that used to read ds_extended_owned
+  // directly goes through here, so the grant reaches all of them at once.
+  function ownsExtended(id) {
+    if (unlockActive('extended')) return true;
+    return getExtendedOwned().includes(id);
+  }
+  // Used by the programme route here and by isCheckpointPassed in app-ui.js.
+  function checkpointsUnlocked() { return unlockActive('programs'); }
 
   function readGrant() {
     try { return JSON.parse(localStorage.getItem(GRANT_KEY)) || null; }
@@ -976,6 +1055,12 @@ applyInputCounterVisibility();
       out.push({ kind: 'pack', pack: k, code: pg[k].code,
                  days: Math.max(0, Math.ceil((pg[k].until - Date.now()) / 86400000)) });
     });
+    const ug = readUnlocks();
+    Object.keys(ug).forEach(k => {
+      if (!ug[k] || !ug[k].until) return;
+      out.push({ kind: 'unlock', unlock: k, code: ug[k].code,
+                 days: Math.max(0, Math.ceil((ug[k].until - Date.now()) / 86400000)) });
+    });
     if (!out.length) return null;
     // Backwards compatible: callers that expect the old single object still
     // get the level grant's fields, with the full list on `.all`.
@@ -993,14 +1078,17 @@ applyInputCounterVisibility();
   function clearGrant() {
     const hadLevel = !!readGrant();
     const packs    = Object.keys(readPackGrants());
+    const unlocks  = Object.keys(readUnlocks());
     localStorage.removeItem(GRANT_KEY);
     localStorage.removeItem(PACKS_KEY);
+    localStorage.removeItem(UNLOCK_KEY);
     if (hadLevel) {
       localStorage.setItem(LEVEL_KEY, 'freemium');
       localStorage.setItem('dev_level_forced', 'true');
     }
-    if (hadLevel || packs.length) applyAccessLevel();
-    return { level: hadLevel, packs: packs, any: hadLevel || packs.length > 0 };
+    if (hadLevel || packs.length || unlocks.length) applyAccessLevel();
+    return { level: hadLevel, packs: packs, unlocks: unlocks,
+             any: hadLevel || packs.length > 0 || unlocks.length > 0 };
   }
 
   // Returns { ok, message }. Never throws — it is wired to a text field.
@@ -1017,7 +1105,21 @@ applyInputCounterVisibility();
       return { ok: false, message: 'That code has expired.' };
     }
 
-    const until = Date.now() + def.days * 86400000;
+    // A code either runs for a number of days from redemption, or to a fixed
+    // date \u2014 which is what makes a year-end code mean the same thing whenever
+    // it is entered.
+    const until = def.until ? Date.parse(def.until + 'T23:59:59')
+                            : Date.now() + def.days * 86400000;
+    if (!(until > Date.now())) return { ok: false, message: 'That code has expired.' };
+
+    if (def.kind === 'unlock') {
+      const g = readUnlocks();
+      (def.unlocks || []).forEach(k => { g[k] = { until: until, code: code }; });
+      writeUnlocks(g);
+      applyAccessLevel();
+      return { ok: true, message: def.label || 'Unlocked.' };
+    }
+
 
     if (def.kind === 'pack') {
       if (def.requiresPro) {
@@ -1069,7 +1171,8 @@ applyInputCounterVisibility();
     if (typeof programsData === 'undefined' || !Array.isArray(programsData)) return state;
     let progress = {};
     try { progress = JSON.parse(localStorage.getItem('ds_program_progress')) || {}; } catch {}
-    const cpPassed = (progId, cpId) => !!(progress[progId] && progress[progId][cpId]);
+    const cpPassed = (progId, cpId) =>
+      checkpointsUnlocked() || !!(progress[progId] && progress[progId][cpId]);
     const level   = getLevel();
     const isProUp = level === 'pro' || level === 'complete';
     programsData.forEach(prog => {
@@ -1131,7 +1234,7 @@ applyInputCounterVisibility();
     if (cfg) {
       if (cfg.minLevel === 'extended') {
         // Extended packs require BOTH purchase and an active Pro plan
-        if (!getExtendedOwned().includes(packKey)) standalone = 'hidden';
+        if (!ownsExtended(packKey)) standalone = 'hidden';
         else standalone = isProUp ? 'available' : 'locked';
       } else if (cfg.minLevel === 'complete') {
         standalone = 'hidden';
@@ -1366,8 +1469,10 @@ applyInputCounterVisibility();
       const c = document.querySelector('.collection-card[data-key="' + k + '"]');
       return (c && c.dataset.label) || k;
     };
-    const line = x => (x.kind === 'pack' ? nameOf(x.pack)
-                                         : (x.level === 'pro' ? 'Pro access' : x.level)) +
+    const UNLOCK_LABEL = { extended: 'Extended store', programs: 'All programme parts' };
+    const line = x => (x.kind === 'pack'   ? nameOf(x.pack)
+                     : x.kind === 'unlock' ? (UNLOCK_LABEL[x.unlock] || x.unlock)
+                     : (x.level === 'pro' ? 'Pro access' : x.level)) +
       ' \u2014 ' + (x.days === 0 ? 'expires today' : x.days + ' days left');
     const text = msg || (g ? (g.all || [g]).map(line).join('  \u00b7  ') : '');
     el.textContent = text;
@@ -1401,6 +1506,8 @@ applyInputCounterVisibility();
       if (res.level) parts.push('level code');
       if (res.packs.length) parts.push(res.packs.length + ' pack grant'
         + (res.packs.length === 1 ? '' : 's'));
+      if (res.unlocks && res.unlocks.length) parts.push(res.unlocks.length + ' unlock code'
+        + (res.unlocks.length === 1 ? '' : 's'));
 
       const store = (() => {
         try { return (JSON.parse(localStorage.getItem('ds_redeemed_codes')) || []).length; }
@@ -1437,13 +1544,19 @@ applyInputCounterVisibility();
     btn.addEventListener('click', () => {
       const res = clearGrant();
       loadDevLevelUI();
+      // v1.28.97 \u2014 tre sorters grant nu, sa meddelandet byggs av delar
+      // i stallet for att rakna upp kombinationerna.
+      const bits = [];
+      if (res.level) bits.push('level code');
+      if (res.packs.length) bits.push(res.packs.length + ' pack grant'
+        + (res.packs.length === 1 ? '' : 's'));
+      if (res.unlocks && res.unlocks.length) bits.push(res.unlocks.length + ' unlock code'
+        + (res.unlocks.length === 1 ? '' : 's'));
       let msg = 'No access code to clear.';
-      if (res.level && res.packs.length)
-        msg = 'Level code and ' + res.packs.length + ' pack grant'
-            + (res.packs.length === 1 ? '' : 's') + ' cleared \u2014 back to freemium.';
-      else if (res.level) msg = 'Level code cleared \u2014 back to freemium.';
-      else if (res.packs.length)
-        msg = res.packs.join(', ') + ' locked again. Your level is unchanged.';
+      if (bits.length) {
+        msg = 'Cleared: ' + bits.join(', ') + '.'
+            + (res.level ? ' Back to freemium.' : ' Your level is unchanged.');
+      }
       renderGrantStatus(msg);
       // v1.27.60 \u2014 2,5 s var for kort: knappen sag ut att inte gora
       // nagot alls, for meddelandet hann forsvinna innan man last det.
@@ -1489,7 +1602,7 @@ applyInputCounterVisibility();
   // past them to the next test. Both now ask this instead.
   function programRoutePending(packKey) { return !!_programState(packKey).pendingOpenRoute; }
 
-  window.accessLevel = { getLevel, canAccess, badgeLabel, applyModeLocks, updateNavUpgradeBtn, packVisibility, programVisibility, sectionVisibility, programRoutePending, applyAccessLevel, redeemCode, grantStatus, clearGrant, packGranted, packGrantFull, codes: ACCESS_CODES };
+  window.accessLevel = { getLevel, canAccess, badgeLabel, applyModeLocks, updateNavUpgradeBtn, packVisibility, programVisibility, sectionVisibility, programRoutePending, applyAccessLevel, redeemCode, grantStatus, clearGrant, packGranted, packGrantFull, ownsExtended, checkpointsUnlocked, codes: ACCESS_CODES };
   window._applyAccessLevel = applyAccessLevel;
 
   // Init
@@ -3043,6 +3156,216 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
+  askingforclarity: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  calibratinghumour: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  brokenpromises: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  askingpermission: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  toneinmessages: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  replyingandnotreplying: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  whentostoptyping: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  alexandergrace1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  alexandergrace2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  alexandergrace3: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  alexandergrace4: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  alexandergrace5: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  alexandergrace6: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  alexandergrace7: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  alexandergrace8: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
 };
 window.BUNDLE_DEFS = BUNDLE_DEFS;
 
@@ -3070,8 +3393,10 @@ function getActiveBundles(packKey) {
     catch { return []; }
   })();
 
+  const ownsExt = (id) => (window.accessLevel && window.accessLevel.ownsExtended)
+    ? window.accessLevel.ownsExtended(id) : extOwned.includes(id);
   const isExtendedBundleOwned = (bundleId) =>
-    level === 'complete' || extOwned.includes(`${packKey}::${bundleId}`);
+    level === 'complete' || ownsExt(`${packKey}::${bundleId}`);
 
   // v1.27.56 — a pack opened by a `fullAccess` code counts as pro for its own
   // bundles. Extended bundles stay out: those are bought, not granted.
@@ -3280,7 +3605,9 @@ window.renderBundleSection = function(containerEl, packKey) {
     if (tier === 'free') return true;
     if (tier === 'pro' || tier === 'pro-opt') return level === 'pro' || level === 'complete';
     if (tier === 'extended') return level === 'complete' ||
-      (level === 'pro' && extOwned.includes(`${packKey}::${bundleId}`));
+      (level === 'pro' && ((window.accessLevel && window.accessLevel.ownsExtended)
+        ? window.accessLevel.ownsExtended(`${packKey}::${bundleId}`)
+        : extOwned.includes(`${packKey}::${bundleId}`)));
     return false;
   };
 
@@ -3929,6 +4256,197 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.16', date: 'September 2026', title: 'Dan Bacon 1–4 completed with NotebookLM', audience: 'dev', items: ['Collections, Sequences, Challenges, Mindset and Memorize filled out in all four Dan Bacon packs, merged into the existing packs.', 'Content is NotebookLM\'s own, kept as written; only syntax, strategy tags, deck names and a few outright errors were fixed.', 'Suggested content changes are collected in the vault for review, not applied.'] },
+  { version: 'v1.29.15', date: 'September 2026', title: 'Alexander Grace 7 and 8, from the third source PDF', audience: 'dev', items: ['Alexander Grace 7 — Hard Talks, Well Timed and 8 — Honest and Fair added to Communication in Relationships.', 'Built directly from videos 201–300; only two packs, because about six of the 33 videos had practical material.', 'Every ground rule and move in both packs applies to both partners.'] },
+  { version: 'v1.29.14', date: 'September 2026', title: 'Three more Alexander Grace packs, from the second source PDF', audience: 'dev', items: ['Alexander Grace 4 — Saying It Early, 5 — Steady Under Criticism and 6 — Letting Her In added to Communication in Relationships.', 'Built directly from videos 101–200; the practical sections were kept and the commentary about women as a group was left out.', 'Reuses existing moves under their library names: Name It Early, Say How It Lands, Suggest What to Do Instead, Apologise for What You Did, Name the Feeling and Express Appreciation.'] },
+  { version: 'v1.29.13', date: 'September 2026', title: 'Three Alexander Grace packs, built from source', audience: 'dev', items: ['Alexander Grace 1 — Saying No, 2 — Fights That End Closer and 3 — Confident Connection added to Communication in Relationships.', 'Built directly from the transcript PDF rather than through Notebook; about a quarter of the source was trainable.', 'All three sit on the complete tier: 6 strategies, 3 collections, 3 sequences, 5 challenges, 6 mindset decks and Memorize each.'] },
+  {
+    version: 'v1.29.12', date: 'September 2026', title: 'A new topic: Messages & Writing \u2014 three packs', audience: 'dev',
+    items: [
+      'A new topic, <strong>Messages &amp; Writing</strong> (<code>written</code>), with three packs, all imported at <strong>complete</strong>, all <strong>0 errors and 0 warnings</strong> in check-pack, and all built as <strong>grid packs</strong> (row type <em>situation</em>).',
+      '<strong>Tone in Messages</strong> \u2014 how it sounds without a voice. Add the Warmth Back, Say Your Tone, Read It Kindly, Check Before You Worry, Match Their Length, Read It as Them, Soften It After.',
+      '<strong>Replying and Not Replying</strong> \u2014 what happens to a thread. Say You\u2019ve Seen It, Reply Late Keep It Short, Answer All of It, Close the Thread, Follow Up Once (shared with Making Requests), Revive a Dead Thread, Step Out of the Chat.',
+      '<strong>When to Stop Typing</strong> \u2014 choosing the channel. Move It to a Call, Say It in Person, Take the Argument Offline, Stop at One Message, Reply When You\u2019re Calm \u2014 and Put It in Writing, for when writing is the right channel after a conversation.',
+      'The area is the one place where a card front is not an approximation of the situation: the incoming message <em>is</em> the situation, quoted word for word.',
+    ],
+  },
+  {
+    version: 'v1.29.11', date: 'September 2026', title: 'Asking for Permission \u2014 the third grid pack', audience: 'dev',
+    items: [
+      'A new pack, <strong>Asking for Permission</strong> (<code>askingpermission</code>, Asking &amp; Saying No), imported at <strong>complete</strong>. 36 decks, 273 units, <strong>0 errors and 0 warnings</strong> in check-pack.',
+      '<strong>Making Requests</strong> asks for someone\u2019s time. This pack asks for their approval of something that is theirs \u2014 their photo, their idea, their news, their things. Seven strategies: <strong>Ask First</strong>, <strong>Announce and Pause</strong>, <strong>Name the Limits</strong>, <strong>Leave Room to Refuse</strong>, <strong>Take a No Well</strong>, <strong>Ask for Someone Else</strong>, <strong>Check What You Assumed</strong>.',
+      'Two of them share their names and guide pairs with Making Requests, by the rule that one move has one name across the library (\u00a711d-c): <em>Leave Room to Refuse</em> and <em>Take a No Well</em>. Their descriptions are written for permission, not favours.',
+      '<strong>Grid pack</strong>, row type <em>situation</em>: card N is the same thing you are about to do in all seven columns \u2014 raising Sara\u2019s idea, posting the party photo, borrowing the bike, recording the call. 87% of cards match their own row in every other column.',
+    ],
+  },
+  {
+    version: 'v1.29.10', date: 'September 2026', title: 'Broken Promises and Trust', audience: 'dev',
+    items: [
+      'A new pack, <strong>Broken Promises and Trust</strong> (<code>brokenpromises</code>, Repair &amp; Apology), imported at <strong>complete</strong>. 36 decks, 273 units, <strong>0 errors and 0 warnings</strong> in check-pack.',
+      'Seven strategies that follow a broken promise in time. Before it: <strong>Tell Them Early</strong>, <strong>Offer What You Can Still Do</strong>. At it: <strong>Say What It Cost Them</strong>, <strong>Correct the Cover Story</strong>, <strong>Accept the Consequence</strong>. After it: <strong>Promise Small</strong>, <strong>Report It Done</strong>.',
+      'Built on the research on restoring violated trust: a promise to do better does help, but only if the action follows \u2014 and a lie about the broken promise costs far more than the promise itself. That finding is the <em>Correct the Cover Story</em> strategy and the <em>Cover Story</em> mindset.',
+      'The boundary with Apologizing: an apology is about what happened; this pack is about the promise \u2014 telling in time, what happens instead, and getting trust back. Not a grid pack: its rows would be <em>stage</em>, which belongs in Sequences.',
+    ],
+  },
+  {
+    version: 'v1.29.09', date: 'September 2026', title: 'Calibrating Humour \u2014 the second grid pack', audience: 'dev',
+    items: [
+      'A new pack, <strong>Calibrating Humour</strong> (<code>calibratinghumour</code>, Humour &amp; Banter), imported at <strong>complete</strong>. 36 decks, 273 units, <strong>0 errors and 0 warnings</strong> in check-pack.',
+      'The humour topic had three packs that teach how to make jokes and none that teach how to size them. Seven strategies: <strong>Land It Smaller</strong>, <strong>Commit to It</strong> and <strong>Stop the Bit</strong> for size, and four repairs from light to serious \u2014 <strong>Move Straight On</strong>, <strong>Name That It Missed</strong>, <strong>Give Them the Out</strong>, <strong>Take It Back Cleanly</strong>.',
+      'The five Challenges decks are the ones lifted out of <strong>Role Based Humour</strong> in v1.28.81, now with a pack whose own strategies solve them. <strong>Commit to It</strong> was added as a seventh strategy for exactly that reason: <em>You Cannot Commit</em> had nothing to answer it.',
+      '<strong>Grid pack</strong>, row type <em>situation</em>: card N is the same joke in all seven columns \u2014 the report redo, the nervous host\u2019s lasagne, the printer joke in a meeting, the birthday toast \u2014 written from each strategy\u2019s angle. 90% of cards match their own row in every other column.',
+    ],
+  },
+  {
+    version: 'v1.29.08', date: 'September 2026', title: 'Asking for Clarity \u2014 the first grid pack', audience: 'dev',
+    items: [
+      'A new pack, <strong>Asking for Clarity</strong> (<code>askingforclarity</code>, Listening &amp; Understanding), imported at <strong>complete</strong> so it sits outside the release scope until its tier is decided. 36 decks, 273 units, <strong>0 errors and 0 warnings</strong> in check-pack.',
+      'Seven strategies for asking about something you did not catch or did not understand, ordered by how much work they leave for the other person: <strong>Say You Missed It</strong>, <strong>Ask Which One</strong>, <strong>Repeat the Unclear Part</strong>, <strong>Offer Your Best Guess</strong>, <strong>Ask About the Word</strong> \u2014 and two for when asking is awkward or late, <strong>Own the Miss</strong> and <strong>Come Back to It</strong>. The structure comes from conversation analysis (other-initiated repair), where offering a guess is the most common form in real talk.',
+      '<strong>Built as a grid pack from the first card</strong> (\u00a711k, row type <em>situation</em>). Single Strategy is 7 \u00d7 8, and card N is the same event in every column \u2014 the manager in the corridor, the receptionist on a bad line, the mechanic\u2019s \u201cfour-fifty\u201d \u2014 written from each strategy\u2019s own angle rather than copied. The Memorize strategy decks follow the same idea: question N is the same question about each strategy.',
+      'Nothing in the code knows it is a grid pack yet: no <code>gridAxis</code> field, no badge, and <em>Shuffle inputs</em> still works against it. Try it with <strong>Stay on the same card</strong> on and shuffle off.',
+    ],
+  },
+  {
+    version: 'v1.29.07', date: 'September 2026', title: 'check-pack run across all 52 release packs at once', audience: 'dev',
+    items: [
+      'Every check so far this month was run on the packs being changed. This is the first sweep of <strong>all 52 at once</strong>: <strong>0 errors</strong>, 207 warnings, 29 packs completely clean.',
+      '<strong>124 of the 207 are one harmless class</strong> \u2014 a Memorize strategy deck carrying its own description, which the app never displays because the strategy\u2019s own text is used. Another 60 are descriptions outside the template\u2019s character range. Neither is visible to anyone.',
+      'The rest were small and real, and are fixed here: <strong>three duplicated words</strong> (\u201cwork it out out loud\u201d in Conflict Emotions, in both Mindset and Memorize), and <strong>two guide fronts that repeated their whole strategy name</strong> \u2014 <em>Ask for time before you answer when\u2026</em> and <em>Build from both positions when\u2026</em>, which \u00a711b-VI has never allowed. The replacements propagated to the 15 sequence steps that inherit those pairs.',
+      'What this sweep does <em>not</em> tell us: it is a check on the data, not on the app. Nothing here replaces playing through it.',
+    ],
+  },
+  {
+    version: 'v1.29.06', date: 'September 2026', title: 'The user-facing list catches up', audience: 'dev',
+    items: [
+      '<strong>WHATS_NEW_USER</strong> had not been touched since v1.28.55. Everything between then and here was either internal or already covered by the entry about the six modes — with one exception, which is now written: <strong>Stay on the same card</strong>, the sideways-swipe setting from v1.28.99.',
+      'Nothing else from the cleanup went in, by the list’s own rules: deck names, step fronts and mindset voice are improvements to material that was already there, and the user list carries features rather than corrections.',
+      '<strong>If the toggle moves to developer settings before release, this entry moves with it.</strong> A user-facing note about a switch nobody can find is worse than no note.',
+    ],
+  },
+  {
+    version: 'v1.29.05', date: 'September 2026', title: 'Mindset deck names, the last round — twenty-one packs', audience: 'dev',
+    items: [
+      '<strong>74 decks renamed</strong>, finishing the sweep. Every mindset deck in the release scope is now named for the area its beliefs are about rather than the insight they lead to. <strong>Conflict Emotions</strong> had five in a row — A Feeling Points at a Need, Describe Do Not Diagnose, Finish the Sentence, They Have a Version Too, One Word Is Not Enough — now <strong>Needs</strong>, <strong>Diagnosis</strong>, <strong>Stopping Halfway</strong>, <strong>Their Version</strong> and <strong>The Feeling Word</strong>.',
+      'The packs built during the volume sweep mostly use the <em>The X Mindset</em> form, which archetype 9 asks for. That form is kept — only the X changed where it was an answer rather than an area: <strong>The No Instant Verdict Mindset</strong> is now <strong>The Instant Verdict Mindset</strong>, and <strong>The Thanking Is Not Agreeing Mindset</strong> is <strong>The Thanking Mindset</strong>.',
+      'Two packs needed nothing: <strong>Assertive Communication Pt. 2</strong>, whose four decks are single words — Responsibilities, Consistency, Decisions, Obligations — and <strong>Setup Statement</strong>.',
+      'Names that state the belief stay. <strong>Being the Easy-Going One</strong>, <strong>Not Being Quick</strong>, <strong>Always Having One Ready</strong> — those are the decks built on a belief that feels like a strength, and naming the belief is naming the area.',
+      'The Memorize decks moved with them, 210 references in all, and eleven of their summary lines were rewritten where the old deck name had been doing work in the sentence.',
+      'Across the three rounds: <strong>135 decks renamed in 41 packs.</strong>',
+    ],
+  },
+  {
+    version: 'v1.29.04', date: 'September 2026', title: 'Mindset decks that changed speaker halfway through', audience: 'dev',
+    items: [
+      'Archetype 9 has said since July that a mindset card is <strong>a thought on the front and one sentence you could say to yourself on the back</strong>. The volume sweep filled several four-card decks up to eight in that form — and left the original four in the old one. The result was <strong>19 decks where card 4 was quoted self-talk and card 5 was the coach talking to you</strong>. Two different speakers, two different tenses, one deck.',
+      '<strong>Setup Question</strong> was the clearest case. Card 4: <em>“Curiosity works on a flat day. Being interesting does not.”</em> Card 6: <em>They set the first subject. You set the second.</em> Both true, neither in the same voice.',
+      'All 19 now converge: the front is the thought in his own words, unquoted, and the back is one quoted sentence in the first person. <strong>256 cards across 32 decks</strong>, in seven packs — Agreeing, Handle Interruptions, How to Interrupt, Setup Question, Storytelling with the Six W’s, Describe Things and Giving Counterexamples.',
+      'The thirteen decks that were internally consistent but in the <em>other</em> form went with them, because leaving them would have moved the inconsistency from inside a deck to between decks in the same pack. Those seven packs now run one voice from end to end.',
+      'Measured after: <strong>no deck in the release scope changes speaker mid-deck, and no pack mixes the two forms.</strong> The remaining 32 packs are all consistently in the older form and are a separate job.',
+    ],
+  },
+  {
+    version: 'v1.29.03', date: 'September 2026', title: 'The sequence step that answered itself — 271 of them', audience: 'dev',
+    items: [
+      'A sequence step hides its strategy name: the front carries only the stimulus, and the name reappears in brackets on the back once you turn it. That has been the rule since v1.27.88 — but the split only runs when the step carries <em>its own</em> guide, and <strong>271 steps of 1,692 had none</strong>. Those fronts read “Step 2 · Normalise the Reaction — they say…”: the answer, printed above the question. All 271 now split.',
+      '<strong>212 were filled from the strategy’s own guide pair</strong>, which is where the other steps in the same deck already got theirs. Nothing was invented — the text was sitting in Single Strategy the whole time.',
+      '<strong>59 more are steps that are not strategies</strong> but beats — the moment you notice a bit has gone flat, the pause you leave after asking, the correction you take before answering. Those got a guide pair written for them.',
+      'Along the way <strong>66 step names were replaced by the real strategy</strong> their own deck description already named. <strong>Validation</strong> is the clearest: its three sequences said “Name the feeling / Say it is ordinary / Back their thinking” on the front while the description said Reflect the Feeling, Normalise the Reaction, Acknowledge the Perspective. The bracket on the back now teaches a name the pack actually uses.',
+      '<strong>Setup Statement</strong> gained something it did not have: its opening step said only “Setup” in all three scenarios, where the three are in fact a <strong>Purpose Setup</strong>, a <strong>Feeling Setup</strong> and an <strong>Opinion Setup</strong>. Three different moves under one word.',
+      'Twenty packs touched, no card counts changed, no card text rewritten.',
+    ],
+  },
+  {
+    version: 'v1.29.02', date: 'September 2026', title: 'Mindset deck names, round two — twelve more packs', audience: 'dev',
+    items: [
+      '30 more decks named for the area rather than the answer, across eight packs. <strong>Saying No</strong> had four in a row — A Clear No Is the Kind One, No Is a Complete Answer, You Are Allowed to Take a Minute, Their Disappointment Is Not Your Fault — now <strong>Softening</strong>, <strong>Explanations</strong>, <strong>The Instant Yes</strong> and <strong>Their Disappointment</strong>.',
+      'Two of the renamed decks were names <strong>First Strategies had already dropped</strong> when the rule was written. <em>Asking Is Not Imposing</em> became Favours there and was still sitting unchanged in Making Requests; it is now <strong>Imposition</strong>. <em>You Don’t Have to Be Interesting</em> became Speaking First there and is now <strong>Being Interesting</strong> in Setup Question.',
+      'Four packs were left entirely alone: <strong>Handle Interruptions</strong>, <strong>How to Interrupt</strong>, <strong>Storytelling with the Six W’s</strong> and <strong>Responsive Humour</strong>. Their names are whole sentences too — Yielding Is Losing, Nothing Happens to Me — but they state the <em>belief</em>, which is the category. Naming the problem is the job; only naming the answer is the fault.',
+      'Same as last round: the Memorize decks that list each pack’s mindset areas were rewritten to match, 60 references in all. No card counts changed, no card text was touched, and feedback saved under the 30 old names is orphaned.',
+    ],
+  },
+  {
+    version: 'v1.29.01', date: 'September 2026', title: 'Mindset deck names that stop answering the card', audience: 'dev',
+    items: [
+      'A mindset card asks <em>what is true instead?</em> — and in 31 decks across twelve packs the heading above it had already said. <strong>Short Is Not Rude</strong>, <strong>Detail Is Kindness</strong>, <strong>You Do Not Have to Win</strong>, <strong>Repetition Is Not Rudeness</strong>: the answer, printed over the question. Those 31 now name the area instead — <strong>Length</strong>, <strong>Detail</strong>, <strong>Winning</strong>, <strong>Repetition</strong> — and the insight stays where it belongs, on the back of the card and in the deck description.',
+      'The rule is from August: a mindset deck is named for the area the beliefs are about, not the insight they lead to. <strong>First Strategies</strong> was rebuilt to it — Speaking First, Questions, Refusals, Modesty, Favours, Pauses — and the rest of the library never followed.',
+      '<strong>Explain Things</strong> shows the whole effect at once. Four decks called Explaining Is Not Performing, Their Confusion Is Information, Short Is Not Rude and You Are Allowed Not To Know are now <strong>Performing</strong>, <strong>Their Confusion</strong>, <strong>Length</strong> and <strong>Not Knowing</strong> — four words where there were seventeen, and not one of them gives the game away.',
+      'Names that state the <em>belief</em> rather than the answer were left alone — <strong>Later Means Never</strong>, <strong>A Compromise Is a Loss</strong>, <strong>I Don’t Have One</strong>. They name the problem, which is what a category name is for. Twenty-three of those are still standing, on purpose.',
+      'The Memorize decks that list each pack’s mindset areas were rewritten to match — 62 references across the same twelve packs, so the theory cards and the training cards still name the same things.',
+      'Saved feedback is keyed on the deck name, so feedback left under the 31 old names is now orphaned. Nothing else moved: no card counts changed, and no card text was touched.',
+    ],
+  },
+  {
+    version: 'v1.29.00', date: 'September 2026', title: 'Sequence steps that ask for something \u2014 the first cleanup round', audience: 'dev',
+    items: [
+      '<strong>81 step fronts in five packs said nothing but a label.</strong> \u201cStep 1 \u00b7 Put the Feeling In\u201d, three times in a row, with no stimulus and no task \u2014 so there was nothing to produce an answer from. \u00a711b-VIII has required a stimulus or a concrete task since July; these had neither. All 81 now carry one.',
+      'The worst of them was <strong>Same Story, Different Feeling</strong> in Building a Story. The deck asks for one event told three ways \u2014 flat, funny, and honest \u2014 but all three fronts read \u201cPut the Feeling In\u201d, so there was no way to know which version was wanted. The fronts now say <em>tell it flat</em>, <em>tell it for the laugh</em>, <em>tell it for what it cost</em>.',
+      '<strong>Ten step names that named nothing</strong> are gone. Six became real strategies out of their own pack \u2014 \u201cBuy the time\u201d is now <strong>Announce the Pause</strong>, \u201cPut a word on it\u201d is <strong>Label the Emotion</strong>, \u201cName both\u201d is <strong>Link to Earlier</strong>, \u201cWhere / Who\u201d are <strong>Where It Belongs</strong> and <strong>Who It Is For</strong>. The rest are defined in their deck description, which is what \u00a711f requires.',
+      '<strong>Play Along</strong> in Role Based Humour named its three steps differently in different scenarios \u2014 one scenario ran \u201cPlay it straight / Stay straight / Let them land it\u201d while the others ran \u201cMatch it / Hold it / Drop out together\u201d. One set now, in all three.',
+      '<strong>45 steps got the guide they were missing.</strong> A step front is only split into stimulus and strategy name when the step carries its own guide \u2014 without one, the name stayed on the front and answered the card before it was turned. Every step in the ten rebuilt decks now has its strategy\u2019s guide pair.',
+      'No card counts changed. Nothing was renamed above step level, so no saved feedback was orphaned.',
+    ],
+  },
+  {
+    version: 'v1.28.99', date: 'September 2026', title: 'Stay on the same card \u2014 an experiment in the training settings', audience: 'dev',
+    items: [
+      'A new toggle in the settings sheet inside a training session: <strong>Stay on the same card</strong>. Sideways normally means \u201cnext strategy, back to card 1\u201d. With this on it means \u201cnext strategy, same card\u201d \u2014 card 6 of 8 stays card 6 of 8, in both directions.',
+      'It matters because some packs are written so that card N is the <em>same situation</em> in every strategy. <strong>Storytelling with the Six W\u2019s</strong> is the clearest: one event, six ways of describing it, the same event on every card number. <strong>Role Based Humour</strong> gives seven roles one line to answer. <strong>Receiving Feedback</strong> gives four strategies the same piece of criticism, word for word. In those packs the sideways swipe becomes an exercise the app has never offered: one situation, several ways to handle it.',
+      'Off by default, and remembered per device rather than per session. It is read live, so it takes effect on the next swipe rather than the next reload.',
+      'Where the next strategy has fewer cards the position is <em>clamped</em>, not wrapped \u2014 card 7 lands on the last card rather than quietly starting over at card 1, which would undo the point of the setting.',
+      'Ten new checks in the new test-cardpos suite: the default, both directions, the clamp, the live read, and the toggle writing its key.',
+    ],
+  },
+  {
+    version: 'v1.28.98', date: 'September 2026', title: 'The volume sweep is finished \u2014 all six modes, all 52 release packs', audience: 'dev',
+    items: [
+      'The last five packs are complete in Memorize: <strong>Explain Things \u2014 Pt. 2</strong>, <strong>Persuasion and Influence \u2014 Pt. 2</strong>, <strong>Starting Conversations Pt. 3</strong> and <strong>Pt. 4</strong>, and <strong>Validation</strong>. 210 cards, 20 new decks.',
+      '<strong>That closes the sweep that started at v1.28.82.</strong> 2 140 cards across six passes \u2014 three new strategies, 391 Challenges cards, 520 Mindset cards, 82 Collections cards, 74 Sequences scenarios and 1 063 Memorize cards. Every one of the 52 release packs now stands complete in all six modes.',
+      'Two more leftovers from earlier in the sweep, both fixed: <strong>Validation\u2019s</strong> Core Idea still described \u201cthe three things you can validate\u201d, from before the fourth strategy was added in pass 0 \u2014 while the cards underneath it already said four. And five more Core Idea descriptions were under the template minimum.',
+      'The observation lines this round: <em>Explain Things</em> \u2014 none of its five challenges is about being wrong; all five are about being unusable. <em>Persuasion</em> \u2014 two of its three sequences end without agreement on purpose, because that is the realistic outcome and the one people practise least. <em>Starting Conversations Pt. 3</em> \u2014 only two of its five challenges are mistakes; the other three are the openers doing exactly what they are for.',
+      'What remains on the list is cleanup rather than content: sequence step fronts that name no strategy, the Mindset deck-name sweep, and the first-person / second-person voice difference between packs in Mindset.',
+    ],
+  },
+  {
+    version: 'v1.28.97', date: 'September 2026', title: 'Three blanket access codes', audience: 'dev',
+    items: [
+      'Three new codes for the Settings field, all running to <strong>31 December 2026</strong> whenever they are entered \u2014 a fixed date rather than a number of days, so a code redeemed in November is not still live in February.',
+      '<strong>EXTENDED26</strong> \u2014 everything in the extended store counts as owned: the extended packs, the extended programmes and the extended bundles inside packs. Ownership is not access, exactly as with a real purchase, so it takes effect in Pro; at freemium the items show as locked rather than opening.',
+      '<strong>PROGRAMS26</strong> \u2014 every programme checkpoint counts as passed, so nothing inside a programme is waiting on a test. Parts that need Pro still need Pro; the code removes the checkpoint gate, not the tier gate.',
+      '<strong>ALLACCESS26</strong> \u2014 both at once.',
+      'They are a third kind of grant next to the level codes and the pack codes, stored in <code>ds_unlock_grants</code> and shown in the Settings status row with the days left. <strong>Reset access</strong> and <strong>Clear code</strong> in developer settings both take them back, and say how many they took.',
+      'Neither code writes anything into the purchase list, so clearing it leaves no trace of a purchase that never happened. 18 new checks in test-codes cover the two gates separately, the freemium case, the reset and the year-end expiry.',
+    ],
+  },
+  {
+    version: 'v1.28.96', date: 'September 2026', title: 'Memorize, round 3 \u2014 seventeen packs down, five to go', audience: 'dev',
+    items: [
+      'Five more packs complete: <strong>Story Banter</strong>, <strong>Supporting Conversations</strong>, <strong>Apologizing \u2014 Pt. 2</strong>, <strong>Conflict Emotions</strong> and <strong>Giving Examples</strong>. 222 cards, 20 new decks.',
+      '<strong>Story Banter\u2019s</strong> overview deck was called <em>The Arc</em> \u2014 the only pack in the library not using <em>Core Idea</em>, and the content was exactly that. Renamed, and its two new cards name the six moves, which no card in the pack did before.',
+      'The observation lines this round: <em>Story Banter</em> \u2014 blocking and going personal are the only two failures that damage anything; the other three are a story ending badly. <em>Supporting Conversations</em> \u2014 three of its five mindset decks are about the urge to be useful, which is what makes the pack hard. <em>Apologizing</em> \u2014 two of its five challenges are about doing too little and two about doing too much.',
+      '<strong>Conflict Emotions</strong> got the one that ties its mindset decks together: three of the five are about the same moment \u2014 the sentence you are halfway through.',
+      'Four more Core Idea descriptions brought up to the template length. One round left: Explain Things \u2014 Pt. 2, Persuasion Pt. 2, Starting Conversations Pt. 3 and Pt. 4, and Validation.',
+    ],
+  },
+  {
+    version: 'v1.28.95', date: 'September 2026', title: 'Memorize, round 2 \u2014 twelve packs done, ten to go', audience: 'dev',
+    items: [
+      'Six more packs are complete in Memorize: <strong>Deep Questions</strong>, <strong>Show Understanding \u2014 Pt. 2</strong>, <strong>Negotiation and Compromise</strong>, <strong>Emotion Labelling and Regulation</strong>, <strong>Building a Story</strong> and <strong>Receiving Feedback and Criticism</strong>. 290 cards, 24 new decks.',
+      'The observation line at the end of each mode deck is doing the work again. <em>Negotiation</em>: three of its seven mindset decks are about agreements you should not have made. <em>Show Understanding</em>: the first three moves cost nothing, the other three cost airtime, which is why each has a rule attached. <em>Deep Questions</em>: four of the five challenge repairs are going back down a rung rather than finding a better question.',
+      '<strong>Building a Story</strong> got the sharpest one: four of its five challenges are about the shape, and the fifth is about being too slow \u2014 which is where most stories are actually lost.',
+      'Another stale strategy name turned up and is fixed: <em>Receiving Feedback</em>\u2019s Core Idea still listed \u201cshow you understand their view\u201d, renamed to <em>See Their Side</em> in batch 4. A full pass over every data file found no others.',
+      'All twelve finished packs also got a proper Core Idea description \u2014 they were all under the 150-character minimum.',
+    ],
+  },
+  {
+    version: 'v1.28.94', date: 'September 2026', title: 'Memorize, round 1 \u2014 the four decks that ask about the other modes', audience: 'dev',
+    items: [
+      'Six packs are now complete in Memorize: <strong>Setup Statement</strong>, <strong>Role Based Humour</strong>, <strong>Giving Criticism</strong>, <strong>Stories in Conversation</strong>, <strong>Listening Through Questions</strong> and <strong>Reframing</strong>. 341 cards, and 25 new decks.',
+      'Every pack was missing the same four: <strong>Collections</strong>, <strong>Sequences</strong>, <strong>Challenges</strong> and <strong>Mindset</strong> \u2014 the decks that ask theory questions about the other modes\u2019 content. They are the reason Memorize had to come last, and they can be written now because the last two versions finished what they ask about.',
+      'Each one lists the pack\u2019s decks in that mode and ends on an observation rather than a summary. <em>Giving Criticism</em>: four of its eight mindset decks are reasons not to speak at all. <em>Stories in Conversation</em>: three of the seven strategies happen before you say a word. <em>Role Based Humour</em>: the size of the role goes down as the stakes go up.',
+      '<strong>Choose the Size</strong> in Giving Criticism finally has its own Memorize deck \u2014 the strategy has existed since the pack was built and the theory deck was never written.',
+      'Sixteen packs left, in three rounds.',
+    ],
+  },
   {
     version: 'v1.28.93', date: 'September 2026', title: 'Collections and Sequences complete \u2014 only Memorize left', audience: 'dev',
     items: [
@@ -4577,6 +5095,14 @@ const WHATS_NEW = [
 //   • Lägg bara till när något nytt är värt att öppna appen för. De flesta
 //     versioner ska ALDRIG stå här.
 const WHATS_NEW_USER = [
+  {
+    date: 'September 2026', title: 'Stay on the same card',
+    items: [
+      'A new switch in the training settings. Swiping sideways normally means <em>next strategy, back to card one</em>. With this on it means <em>next strategy, same card</em> — card six of eight stays card six of eight, in both directions.',
+      'Some packs are written so that the same card number is the same situation in every strategy. <strong>Storytelling with the Six W’s</strong> is the clearest: one event, six ways of telling it. <strong>Role Based Humour</strong> gives seven characters the same line to answer. In those packs a sideways swipe becomes its own exercise — one situation, several ways to handle it, side by side.',
+      'Off to begin with, and remembered on your device.',
+    ],
+  },
   {
     date: 'September 2026', title: 'Choose how much the guide tells you',
     items: [

@@ -1,0 +1,8546 @@
+// mindsetData.js — Mindset mode data
+
+const mindsetCollections = {
+
+  speakingupingroups: [
+    {
+      name: "The Speaking Up Mindset",
+      guideFront: "Reflect on this.",
+      guideBack: "A way to think about it.",
+      description: "The stance behind claiming a turn: that the room is not waiting to be convinced you deserve one. Most people who stay quiet in groups are not short of ideas — they are waiting for a gap that feels safe enough, and it never comes. This trains the opposite reflex: that starting the sentence is what creates the turn, that a half-formed point is still worth saying, and that being interrupted is a normal event rather than a verdict on you.",
+      inputs: [
+        { q: "You have something to say but the moment never feels right.", a: "\"The moment is made by starting, not by waiting. I can begin and the room will follow.\"", bundle: 'pro' },
+        { q: "Your point is not fully formed and you almost stay quiet.", a: "\"Half a good thought said out loud beats a whole one nobody hears.\"", bundle: 'pro' },
+        { q: "Someone interrupts you and you feel yourself shrinking.", a: "\"Being interrupted says nothing about me. I can simply finish.\"", bundle: 'pro' },
+        { q: "You worry your contribution is not important enough.", a: "\"I don't have to be the most useful voice in the room to be a useful one.\"", bundle: 'pro' },
+        { q: "The meeting ends and you never said your thing.", a: "\"That's information, not failure. Next time I open my mouth earlier.\"", bundle: 'pro' },
+        { q: "You are the most junior person in the room.", a: "\"Being new is exactly why my question is worth asking out loud.\"", bundle: 'pro' },
+        { q: "You spoke and nobody responded to your point.", a: "\"Silence isn't rejection. Ideas often land three minutes after they're said.\"", bundle: 'pro' },
+        { q: "You are about to interrupt someone and it feels rude.", a: "\"Adding to what they said isn't taking the room from them.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  thehappyno: [
+    {
+      name: "The Guilt-Free No Mindset",
+      guideFront: "Reflect on this.",
+      guideBack: "A way to think about it.",
+      description: "The stance underneath a warm refusal: that saying no is an ordinary thing rather than a small betrayal. A happy no only sounds relaxed if you actually are — the tone is not a technique laid over guilt, it comes from believing the refusal is reasonable. This trains that belief, so the warmth in the voice has something real behind it.",
+      inputs: [
+        { q: "You are about to say no and you can feel an explanation coming.", a: "\"The explanation is for me, not for them. No is a complete answer.\"", bundle: 'pro' },
+        { q: "You said no and they went quiet.", a: "\"Their reaction belongs to them. Mine was reasonable and kind.\"", bundle: 'pro' },
+        { q: "You feel guilty about refusing something small.", a: "\"Small requests deserve small answers. I don't owe a paragraph for a two-second favour.\"", bundle: 'pro' },
+        { q: "You notice you say yes before you have thought.", a: "\"I'm allowed a second. Nobody was ever harmed by me thinking first.\"", bundle: 'pro' },
+        { q: "You worry that refusing will make you seem unhelpful.", a: "\"The people who matter to me have never counted.\"", bundle: 'pro' },
+        { q: "They ask a second time and you feel yourself softening.", a: "\"If I change my answer under pressure, I've taught them pressure works.\"", bundle: 'pro' },
+        { q: "You said yes to something you did not want to do.", a: "\"I can notice that without punishing myself. Next time I take the second I need.\"", bundle: 'pro' },
+        { q: "Saying no cheerfully feels almost rude.", a: "\"Warmth and a no fit in the same sentence. The tone is what carries the care.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  theregretfulno: [
+    {
+      name: "The Honest Regret Mindset",
+      guideFront: "Reflect on this.",
+      guideBack: "A way to think about it.",
+      description: "The stance behind refusing something you actually wanted: that disappointment on both sides is a normal cost of having limits, not evidence of a failure. The difficulty with a regretful no is that the feeling is real, which makes it tempting to keep talking. This trains the opposite — that saying it once and stopping is what keeps it honest.",
+      inputs: [
+        { q: "You are refusing something you genuinely wanted.", a: "\"Wanting it and doing it are different questions. I can be sorry and still be sure.\"", bundle: 'pro' },
+        { q: "You have said the regret and want to keep explaining.", a: "\"Saying it once is honest. Saying it three times is asking to be forgiven.\"", bundle: 'pro' },
+        { q: "They look disappointed and you want to fix it.", a: "\"Their disappointment is allowed to exist. I don't have to remove it.\"", bundle: 'pro' },
+        { q: "You are turning the same person down twice.", a: "\"Two nos in a row isn't a pattern of not caring. It's a pattern of being busy.\"", bundle: 'pro' },
+        { q: "You feel you should apologise more than you have.", a: "\"I'm not sorry for having limits. I'm sorry about the timing, and I've said so.\"", bundle: 'pro' },
+        { q: "You almost say yes because refusing feels unkind.", a: "\"A yes I resent is a worse gift than a no I mean.\"", bundle: 'pro' },
+        { q: "You are tempted to offer a substitute you don't want to give.", a: "\"An offer I don't mean will cost me more later. I can just say no.\"", bundle: 'pro' },
+        { q: "The refusal is still on your mind hours later.", a: "\"Thinking about it means I cared. It doesn't mean I chose wrong.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+
+  playfulrefusals: [
+    {
+      name: "The Playful No Mindset",
+      guideFront: "Reflect on this.",
+      guideBack: "A way to think about it.",
+      description: "The stance behind refusing without tension: that a no does not have to be heavy, apologetic or justified. Playful refusals only work if you are genuinely relaxed about saying no — the humour is a way of showing that the request has not put you under pressure, not a way of hiding that it has. This trains the underlying comfort, so the joke has something real behind it.",
+      inputs: [
+        { q: "You are about to say no and you can feel yourself starting to explain why.", a: "\"The explanation is for me, not for them. I can just say no and let it sit.\"", bundle: 'pro' },
+        { q: "Someone asks you for something and you say yes before you have thought.", a: "\"I'm allowed a second. Nobody has ever been hurt by me thinking before answering.\"", bundle: 'pro' },
+        { q: "You said no and the other person went quiet.", a: "\"Their reaction is theirs. My no was reasonable, and the silence will pass.\"", bundle: 'pro' },
+        { q: "You worry that joking about a request will seem like you don't care.", a: "\"The joke shows I'm relaxed, not that I'm dismissive. Warmth is in the tone, not the words.\"", bundle: 'pro' },
+        { q: "You feel guilty about declining something small.", a: "\"Small requests deserve small answers. I don't owe a paragraph for a two-second favour.\"", bundle: 'pro' },
+        { q: "Someone keeps asking after you have already declined.", a: "\"Repeating myself isn't rude. I can say the same thing again in the same tone.\"", bundle: 'pro' },
+        { q: "You said yes to something you did not want to do.", a: "\"I can notice that without punishing myself. Next time I'll take the second I need.\"", bundle: 'pro' },
+        { q: "You are worried a playful no will land badly with someone sensitive.", a: "\"Then I'll use a plain one. The point is comfort with saying no, not the joke.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+
+  transitions: [
+    {
+      name: "The Transitions Mindset",
+      guideFront: "Reflect on this.",
+      guideBack: "A way to think about it.",
+      description: "The stance behind steering a conversation: that moving it is allowed, and that someone has to do it. Most people wait for the conversation to change by itself and then feel stuck when it does not. This mindset trains the opposite reflex — that a flat patch is simply the point where someone opens the next thing, that you do not need a clever link to change subject, and that handing the floor over is generosity rather than retreat.",
+      inputs: [
+        { q: "You want to change the subject but it feels rude.", a: "\"Changing the subject isn't rude. Someone has to steer this, and it might as well be me.\"", bundle: 'pro' },
+        { q: "You have gone quiet because you cannot find a natural link.", a: "\"I don't need a clever link. I can just say I want to talk about something else.\"", bundle: 'pro' },
+        { q: "You realise you have been talking for a long time.", a: "\"I don't have to finish everything I started. I can hand it over now, and they'll be glad I did.\"", bundle: 'pro' },
+        { q: "The conversation is stuck and it feels like your fault.", a: "\"A flat patch isn't a failure. It's just the point where someone opens the next thing.\"", bundle: 'pro' },
+        { q: "You want to bring up something serious but the mood is light.", a: "\"I'm allowed to change the temperature. I just have to say that I'm about to.\"", bundle: 'pro' },
+        { q: "You worry that changing topic will look like you were not listening.", a: "\"If I close the old topic properly, moving on reads as interest, not impatience.\"", bundle: 'pro' },
+        { q: "Your story did not get the reaction you expected.", a: "\"That story was a gift to the conversation, not a performance. I can hand over and keep going.\"", bundle: 'pro' },
+        { q: "A silence appears and you feel pressure to fill it immediately.", a: "\"A pause isn't an emergency. I can let it sit a second and then open something worth talking about.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+
+  assertive: [
+    // v1.26.29 (list 6): one mindset group PER STRATEGY — swipe right for
+    // the thinking patterns behind the next strategy.
+    {
+      name: "Fogging Mindset",
+      guideFront: "Reflect on this question...",
+      guideBack: "A way to think about it...",
+      description: "The thinking that makes Fogging work: criticism is information about the critic as much as about you, and agreeing with what MIGHT be true costs you nothing.",
+      inputs: [
+        { q: "Why does agreeing with criticism feel like losing?", a: "Because we treat every criticism as a verdict to appeal. It isn’t — it’s one person’s view. Agreeing that it MIGHT be true concedes nothing about who you are." },
+        { q: "What makes fogging strength rather than surrender?", a: "Surrender is changing your behaviour to make the criticism stop. Fogging changes nothing — you stay exactly where you are, you just stop feeding the attack." },
+        { q: "Why does a calm \"you might be right\" unsettle a critic?", a: "Because criticism is usually a lever, and levers need resistance. When you don’t push back, there is nothing to pry against — the critic has to either get specific or stop." },
+      ]
+    },
+    {
+      name: "Negative Inquiry Mindset",
+      guideFront: "Reflect on this question...",
+      guideBack: "A way to think about it...",
+      description: "The thinking that makes Negative Inquiry work: curiosity about criticism is the deepest form of confidence — you can afford to hear more.",
+      inputs: [
+        { q: "Why is asking for MORE criticism a position of strength?", a: "Because only someone unafraid of the answer asks the question. Defensiveness says the criticism might destroy you. Curiosity says it can’t." },
+        { q: "What does the request for specifics actually test?", a: "Whether the criticism is real. Genuine concerns survive the question \"what exactly do you mean?\" — jabs and moods usually don’t." },
+        { q: "How do you stay genuinely curious instead of sarcastic?", a: "By actually wanting the answer. If you ask \"what bothers you about it?\" as a trap, it lands as a trap. Decide first that the answer might be useful — then ask." },
+      ]
+    },
+    {
+      name: "Negative Assertion Mindset",
+      guideFront: "Reflect on this question...",
+      guideBack: "A way to think about it...",
+      description: "The thinking that makes Negative Assertion work: a mistake is something you DID, not something you ARE — so you can own it at full volume without shrinking.",
+      inputs: [
+        { q: "Why is calmly owning a mistake so disarming?", a: "Because most people expect defence or collapse. Clean ownership — \"you’re right, that’s on me\" — ends the argument before it starts. There’s nothing left to prove." },
+        { q: "What is the difference between owning a mistake and apologising excessively?", a: "Owning is about the mistake; excessive apology is about you. \"I was wrong, I’ll fix it\" closes the matter. \"I’m so terrible, I always do this\" reopens it as a referendum on your worth." },
+        { q: "Why does separating deed from worth make honesty easier?", a: "If every error is evidence against you as a person, you’ll defend everything. If an error is just an event, you can look at it — and correct it — without flinching." },
+      ]
+    },
+    {
+      name: "Broken Record Mindset",
+      guideFront: "Reflect on this question...",
+      guideBack: "A way to think about it...",
+      description: "The thinking that makes Broken Record work: repetition is not rudeness, and pressure is not an argument — you only update for reasons, not for volume.",
+      inputs: [
+        { q: "Why do people back down when they're pushed back on?", a: "Usually because they confuse persistence with reason. Someone pushing harder is not a counter-argument. You only update when given a real reason, not just more pressure." },
+        { q: "What does it mean to hold your position without being rigid?", a: "You stay with your view until you've heard a genuine reason to update it. New argument or fact = update. Emotion or repetition = hold." },
+        { q: "Why does repeating the same sentence feel wrong — and why is it right?", a: "We’re trained to answer every point with a new point. But new points are new targets. The same calm sentence signals: the decision is made, and it’s not being renegotiated." },
+      ]
+    },
+  ],
+
+  compliments: [
+    {
+      name: "Giving Compliments",
+      description: "The mindset behind giving compliments — why people hold back, what makes them land, and the right internal posture.",
+      inputs: [
+        { q: "Why do people hold back compliments they genuinely feel?", a: "Usually awkwardness, fear of seeming sycophantic, or not being in the habit of saying things out loud that they think internally. The thought \"that was impressive\" goes through people's heads all the time — few say it.", bundle: '' },
+        { q: "What does giving a specific compliment signal?", a: "That you were paying attention. That you see the person specifically — not just generically. This is the deeper gift beneath the compliment itself.", bundle: '' },
+        { q: "What is the right internal posture when giving a compliment?", a: "Generosity without agenda. You're giving something — not opening a transaction. The moment you want something in return (approval, reciprocation, a reaction), it stops being a compliment.", bundle: '' },
+      ]
+    },
+    {
+      name: "Accepting Compliments",
+      description: "The mindset behind receiving compliments — why deflecting is the default, and why receiving gracefully is more generous.",
+      inputs: [
+        { q: "Why do people deflect compliments?", a: "Usually a combination of genuine modesty, discomfort with positive attention, or the belief that accepting a compliment is arrogant. In reality, deflecting is often more awkward than receiving — it makes the other person regret saying it.", bundle: '' },
+        { q: "What does it mean to deserve a compliment?", a: "Nothing. Whether you deserve it is irrelevant to how you receive it. A compliment is something someone chose to give — your job is to receive it, not to adjudicate whether they were right.", bundle: '' },
+        { q: "Why is receiving compliments well a form of generosity?", a: "Because when you receive gracefully, you validate the giver's instinct to notice and say something. When you deflect, you make them feel they misjudged. Receiving well is a gift back.", bundle: '' },
+      ]
+    },
+    {
+      name: "Self Disclosure",
+      description: "The mindset behind self disclosure — why sharing invites sharing, and the difference between genuine disclosure and oversharing.",
+      inputs: [
+        { q: "Why is self disclosure more powerful than asking questions?", a: "Because questions put the other person on the spot. Disclosure opens a space they can enter if they want to. It's an invitation rather than a demand.", bundle: '' },
+        { q: "What does genuine self disclosure communicate beyond its content?", a: "Trust. When you share something real, you signal that you trust the other person with it. That signal — regardless of the content — creates connection.", bundle: '' },
+        { q: "What is the right level of self disclosure for a new relationship?", a: "Stay mostly at facts and opinions early, move to experiences occasionally when it feels natural. Feelings and uncertainties should follow rapport, not precede it. Match and slightly exceed their level.", bundle: '' },
+      ]
+    }
+  ],
+
+  influenceframing: [
+    {
+      name: "Persuasion Framing",
+      description: "The mindset behind persuasion — the right internal posture, and when persuasion becomes manipulation.",
+      inputs: [
+        { q: "What is the right internal posture for persuasion?", a: "Curiosity about their perspective, not conviction in your position. If you start persuasion already certain you're right, the dynamic is wrong before you open your mouth." },
+        { q: "What does it mean to persuade without pressure?", a: "Offering a perspective and genuinely leaving them free to disagree. The paradox is that removing pressure often makes people more open — not less." },
+        { q: "When does persuasion become manipulation?", a: "When you stop caring whether the outcome is genuinely good for them. Persuasion framing works because you're helping them see something real. When the goal is only your outcome, the same techniques become manipulation." },
+      ]
+    },
+    {
+      name: "Reframe",
+      description: "The mindset behind reframing — an offering not a correction, and why not insisting is as important as the reframe itself.",
+      inputs: [
+        { q: "What is the right internal posture when offering a reframe?", a: "Genuine curiosity about whether this alternative view is actually useful — not cleverness or the need to fix their thinking. A reframe offered to be smart rather than helpful usually lands that way." },
+        { q: "Why is it important not to insist on your reframe?", a: "Because a reframe is an offering, not a correction. If they don't take it up, the original frame might be the right one for now. Your job was to offer it — not to make them adopt it." },
+        { q: "What does a good reframe have in common with a good question?", a: "Neither demands a particular answer. Both open space for a different kind of thinking. The best reframes are almost invisible — they shift something without feeling like an intervention." },
+      ]
+    },
+    {
+      name: "Grounding",
+      description: "The mindset behind grounding — why being genuinely known is worth the friction, and the relationship between grounding and credible influence.",
+      inputs: [
+        { q: "What does it mean to be grounded in a conversation?", a: "To know what you think, what you value, and what you won't compromise — and to communicate that calmly without needing others to agree. You can hear challenge without losing your footing." },
+        { q: "Why is grounding important for influence and persuasion?", a: "Because you can't frame things credibly from a position you don't hold yourself. Grounding is the prerequisite for persuasion — it's what makes your framing trustworthy rather than tactical." },
+        { q: "What is the risk of showing your values in conversation?", a: "That someone disagrees. The alternative — hiding your values to avoid conflict — creates a kind of rootlessness that makes real connection impossible. Being genuinely known is worth the occasional friction." },
+      ]
+    },
+    {
+      name: "Observation",
+      description: "The mindset behind observation — genuine curiosity outward, and why naming what you see is one of the most powerful social tools.",
+      inputs: [
+        { q: "What is the right internal posture for observation?", a: "Genuine curiosity rather than analysis. You're interested in what's actually there — not looking for something that confirms what you already think." },
+        { q: "Why do most people miss most of what's observable?", a: "Because attention is usually inward — on what to say next, on how they're coming across, on their own thoughts. Active observation requires redirecting that attention outward." },
+        { q: "What does naming an observation do socially?", a: "It signals that you're paying real attention — not just following the surface of the conversation. Most people feel seen when something they've done or said is specifically noticed." },
+      ]
+    }
+  ],
+
+  humour: [
+    { name: "Humour Practise", description: "The mindset behind humour — what it actually is, why trying hard kills it, and the right internal posture.", inputs: [
+      { q: "What is the right internal posture for humour?", a: "Noticing, not performing. Humour arises when expectations are broken in a safe way — your job is to notice when that's happening, not to manufacture it." },
+      { q: "Why does trying too hard to be funny usually fail?", a: "Because it signals that you need the laugh. Humour that lands comes from a place of not needing it to. The lighter your investment in the outcome, the better it works." },
+      { q: "What do you do when a joke falls flat?", a: "Move on without explanation or apology. Self-irony works: \"And that's why I don't do stand-up.\" Then continue. Never explain the joke." },
+    ]}
+  ],
+
+  teasing: [
+    { name: "Teasing & Playfulness", description: "The mindset behind teasing — what makes it connect rather than cut, and what to check internally before doing it.", inputs: [
+      { q: "What is the right internal posture for teasing?", a: "Warmth with a light edge. You're playing with the person, not at their expense. If you feel contempt or frustration underneath the tease, it will come through — don't tease when you're actually annoyed." },
+      { q: "What does it mean when someone can't be teased?", a: "Either they're not yet comfortable with you, the topic is too close to something real, or the tone was off. None of these are permanent — calibrate and try a different angle, or wait." },
+      { q: "Why does teasing build connection?", a: "Because it signals social comfort. You don't playfully tease people you're trying to impress. Teasing someone says: I'm relaxed around you, and I think you can handle a little friction." },
+    ]}
+  ],
+
+  selfhumour: [
+    { name: "Self-Humour", description: "The mindset behind self humour — the difference between healthy distance and self-diminishment, and what it signals.", inputs: [
+      { q: "Why is self humour a sign of strength rather than weakness?", a: "Because it requires you to see yourself clearly and not need others to see you as perfect. Needing to protect your image is the weakness — not the flaws themselves." },
+      { q: "What is the internal posture that makes self humour work?", a: "Genuine ease. Not performed humility, not fishing for reassurance. You're not saying \"please tell me I'm not that bad\" — you're saying \"yes, and I find this funny too.\"" },
+      { q: "How do you know if self humour is healthy vs harmful?", a: "Healthy: you say it once, laugh, and move on. Harmful: you repeat it, wait for others to contradict you, or feel worse after saying it." },
+    ]}
+  ],
+
+  conversationaldepth: [
+    { name: "Conversational Depth", description: "The mindset behind depth in conversations — genuine curiosity vs technique, and what makes people open up.", inputs: [
+      { q: "What is the right internal posture for asking deep questions?", a: "Genuine curiosity, not technique. If you're asking to appear interesting or to perform depth, it reads as hollow. If you're actually curious about the answer, the question lands differently." },
+      { q: "Why do pauses make deep questions work better?", a: "Because the first answer is often the surface answer. The pause gives the person room to go further — to say the thing they wouldn't say if you'd already moved on." },
+      { q: "What is the difference between sharing and performing in conversation?", a: "Sharing invites the other person in. Performing keeps the focus on you. A story that ends in a question is sharing. A story that ends in a pause waiting for applause is performing." },
+      { q: "Why does depth in conversation require vulnerability from both sides?", a: "Because depth is reciprocal — if only one person goes deep, it becomes an interrogation or a therapy session. You have to give to receive." },
+    ]}
+  ],
+
+  startingconnecting: [
+    { name: "Starting & Connecting", description: "The mindset behind initiating — what gets in the way, and what replaces performance pressure with something that actually works.", inputs: [
+      { q: "What is the right internal posture for starting conversations?", a: "Curiosity, not agenda. You're not trying to impress them — you're interested in them. The pressure drops when the goal shifts from \"make this work\" to \"find out something about this person.\"" },
+      { q: "Why does a simple opener work better than a clever one?", a: "Because a clever opener signals that you've been preparing, which creates slight performance pressure. A simple opener signals ease — and ease is attractive." },
+      { q: "What do you do when an opener doesn't land?", a: "Move on without interpreting it as failure. Most openers that don't land are situational, not personal. Try a different angle or walk away gracefully." },
+    ]}
+  ],
+
+  listeningresponding: [
+    { name: "Listening & Responding", description: "The mindset behind real listening — what gets in the way, and what listening to understand actually feels like.", inputs: [
+      { q: "What is the difference between listening to reply and listening to understand?", a: "When you listen to reply, the other person is talking but your focus is already on what you'll say next. When you listen to understand, your only job is to follow what they mean — the response comes after." },
+      { q: "Why is silence a form of listening?", a: "Because most people fill silence too quickly. A pause after someone speaks gives them room to go deeper. The thing they say into the silence is often the most important thing." },
+      { q: "What does it mean to listen for feeling, not just fact?", a: "People rarely say the most important thing directly. They describe events and let the feelings hang in the background. Listening for feeling means tracking what's underneath the narrative." },
+    ]}
+  ],
+
+  conversational: [
+    {
+      name: "Finding Common Ground",
+      description: "The mindset behind finding common ground — active listening with intention, and why genuine overlap matters.",
+      inputs: [
+        { q: "What is the right internal posture for finding common ground?", a: "Active listening with intention. You're not performing similarity — you're genuinely curious about what overlaps. The curiosity has to be real for the recognition to feel genuine." },
+        { q: "Why does false common ground backfire?", a: "Because people can feel the gap between claimed and genuine connection. It registers as social performance rather than contact, which is worse than finding no common ground at all." },
+        { q: "Why is a similar feeling enough even without the identical experience?", a: "Because what creates connection is the sense of \"you get it\" — and that can come from emotional recognition even when the external facts are different." },
+      ]
+    },
+    {
+      name: "Mirroring & Paraphrasing",
+      description: "The mindset behind mirroring — your only job is to understand, and why staying with what they brought is more powerful than leading.",
+      inputs: [
+        { q: "What is the right internal posture for mirroring?", a: "Your only job is to understand — not to respond, advise or connect it to your own experience. When you're mirroring well, you're not thinking about what to say next; you're following what they mean." },
+        { q: "Why is mirroring more powerful than asking questions?", a: "Because a question redirects the conversation toward what you find interesting. A mirror stays with what they brought. It signals: I'm following you, not leading you somewhere." },
+        { q: "What does it mean to mirror the feeling rather than the words?", a: "It means reflecting the emotional content underneath the facts. \"That sounds really hard\" is a feeling mirror. \"So your colleague was late\" is a content mirror. Feeling mirrors create a sense of being deeply heard." },
+      ]
+    }
+  ],
+
+  criticism: [
+    {
+      name: "Receiving Criticism",
+      description: "The thinking patterns behind receiving criticism well — what makes it so hard, and what shifts when you stop taking it personally.",
+      inputs: [
+        { q: "Why is the urge to defend yourself when receiving criticism almost always counterproductive?", a: "Because defending yourself signals that the criticism has threatened your identity, not just described a behaviour. The moment you defend, the conversation shifts from the content to your ego — and you lose the useful information." },
+        { q: "What is the difference between taking criticism seriously and taking it personally?", a: "Taking it seriously means extracting what's useful and acting on it. Taking it personally means treating it as a verdict on who you are. The same criticism can be both a useful signal and not a threat to your worth." },
+        { q: "How do you know when criticism is useful information vs when it's just someone's frustration?", a: "Ask: is it specific? Does it describe something observable? Can you do something about it? Frustration is usually vague and general. Useful criticism is usually specific and behavioural." },
+      ]
+    },
+    {
+      name: "Giving Criticism",
+      description: "The thinking patterns behind giving criticism well — what makes it land as information rather than attack.",
+      inputs: [
+        { q: "What makes criticism land as information rather than attack?", a: "Specificity and tone. Specific + calm = information. Vague + loaded = attack. \"That report had unclear section headers\" is information. \"You're always unclear\" is an attack." },
+        { q: "Why is specificity so important when giving criticism?", a: "Because vague criticism gives the person nothing to work with — they can only defend themselves or feel bad. Specific criticism gives them something concrete to change. The specificity is the respect." },
+        { q: "What do you do when you know someone won't receive criticism well but it needs to be said?", a: "Say it anyway, calmly and specifically. Your job is to communicate it clearly — not to manage their reaction. Don't delay, don't soften it into meaninglessness, and don't apologise for the content." },
+      ]
+    }
+  ],
+
+  storytelling: [
+    {
+      name: "Sharing not performing",
+      description: "The most common mistake in storytelling is treating it as a performance. This mindset shift is about returning to sharing as the intention.",
+      inputs: [
+        { q: "You feel pressure to be entertaining when telling a story.",    a: "Sharing, not performing. If you feel pressure to entertain, it reads as effort. If you feel like you're genuinely sharing, it reads as warmth." },
+        { q: "You wonder if your story is interesting enough to tell.",       a: "The event can be minor — if the detail is vivid, the story lands. Specificity creates the feeling that the listener was there." },
+        { q: "You tell a story and it lands flat — no one reacts as expected.", a: "Move on without retreating. Not every story lands with every audience. Your job was to share, not to perform.", bundle: "pro" },
+      ]
+    }
+  ],
+
+  humourpractise: [
+    {
+      name: "Self Humour Mindset",
+      description: "The thinking that makes self humour work: a flaw you can laugh at loses its power over you, and needing to look perfect is the real weakness — not the flaw itself.",
+      inputs: [
+        { q: "Why is laughing at your own flaw strength, not weakness?", a: "Seeing yourself clearly and not needing to look perfect is the strength. Protecting the image is the weak part — the flaw is just a fact.", bundle: 'free' },
+        { q: "What's the internal difference between self humour and fishing for reassurance?", a: "Self humour says 'yes, and I find this funny too.' Fishing says 'tell me I'm not that bad.' The tell is whether you need a response back.", bundle: 'free' },
+        { q: "Why does owning a flaw first take the sting out of it?", a: "If you've already named it lightly, there's nothing left to attack — anyone pointing it out is just agreeing with you.", bundle: 'free' },
+        { q: "What tips self humour into self-diminishment?", a: "Repeating it, waiting to be contradicted, or feeling worse after. Once is ease; three times is a bid for reassurance.", bundle: 'free' },
+        { q: "Why does the room relax when you laugh at yourself?", a: "It tells them the stakes are low. If you're not defending your image, they don't have to be careful around it.", bundle: 'free' },
+        { q: "Why doesn't a secure person need the flaw to be untrue?", a: "Their okay-ness doesn't rest on being flawless — the flaw can be completely real and still threaten nothing.", bundle: 'pro' },
+        { q: "How do you keep self humour from becoming the label people use?", a: "Aim it at small, obvious things and vary it. Named once with warmth it's charming; on repeat it becomes your headline.", bundle: 'pro' },
+        { q: "What's the link between self humour and letting others be imperfect?", a: "When you're relaxed about your own flaws, everyone else gets permission to be human — it lowers the room's need to perform.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Humour Mindset",
+      description: "The stance underneath every humour move: you're noticing what's already a little absurd, not performing to get a laugh — and you don't need it to land.",
+      inputs: [
+        { q: "What is the right internal posture for humour?", a: "Noticing, not performing. Humour comes from spotting when expectations break in a safe way — your job is to notice it, not manufacture it.", bundle: 'free' },
+        { q: "Why does trying too hard usually kill the joke?", a: "It signals you need the laugh. What lands comes from not needing it — the lighter your investment, the better it works.", bundle: 'free' },
+        { q: "What do you do when a joke falls flat?", a: "Move on without explaining or apologising. Self-irony saves it — 'and that's why I don't do stand-up' — then continue.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Observation Humour Mindset",
+      description: "The stance behind observation humour: the funny thing is usually already in the room — your job is to notice it, not to be clever.",
+      inputs: [
+        { q: "Where does the best observation humour come from?", a: "From paying attention, not from being witty. The material is already there — you just have to catch it.", bundle: 'free' },
+        { q: "Why does noticing beat performing?", a: "A noticed joke feels shared and effortless; a performed one feels like you're working for a laugh, which is what makes it not land.", bundle: 'free' },
+        { q: "What if you don't feel funny in the moment?", a: "You don't need to be — you just need to be watching. Describe what's actually happening and the absurdity does the work.", bundle: 'free' },
+        { q: "Why keep it about the situation, not a person?", a: "The shared situation is safe ground — everyone can laugh without anyone being the target.", bundle: 'free' },
+        { q: "What's the cost of forcing an observation?", a: "Forcing it turns noticing into performing. If nothing's absurd, say nothing — the next moment will hand you something.", bundle: 'free' },
+        { q: "How does staying relaxed help you notice more?", a: "Tension narrows your attention to yourself; ease widens it to the room, where the funny things actually are.", bundle: 'pro' },
+        { q: "Why is a small true observation better than a big invented joke?", a: "Truth is instantly recognisable — everyone confirms it at once. An invented joke has to earn belief first.", bundle: 'pro' },
+        { q: "What does finding the funny in a dull moment signal?", a: "That you're present and at ease — which puts everyone else at ease too.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Teasing Mindset",
+      description: "The stance behind teasing: it's a sign of comfort and affection, not cruelty — you tease people you like, and the warmth has to be the loudest thing in it.",
+      inputs: [
+        { q: "Why do we tease the people we like?", a: "Because teasing is a way of saying 'I'm comfortable with you' — it's a marker of closeness, not distance.", bundle: 'free' },
+        { q: "What feeling should be underneath a tease?", a: "Fondness. If the warmth isn't there, it's not a tease — it's a dig wearing a smile.", bundle: 'free' },
+        { q: "How do you know a tease has gone too far?", a: "Watch the person, not the joke. If they tighten instead of laugh, you've found an edge — back off warmly.", bundle: 'free' },
+        { q: "Why keep the target small?", a: "Small, obvious quirks are safe to laugh at together. The bigger or more personal the target, the closer it gets to a wound.", bundle: 'free' },
+        { q: "What makes you safe to be teased by?", a: "That you take it as well as you give it. If you can laugh at yourself, your teasing reads as play, not superiority.", bundle: 'free' },
+        { q: "Why isn't teasing about being the funniest in the room?", a: "It's about connection, not performance. A good tease makes the other person feel liked, not out-done.", bundle: 'pro' },
+        { q: "What does needing the tease to land say?", a: "That you're performing. The best teasing is offered lightly — if it doesn't land, you let it go without a flicker.", bundle: 'pro' },
+        { q: "How does teasing build trust over time?", a: "Light teasing that never wounds tells someone you can play near their edges and still be safe — that's intimacy.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Joke About My Flaws Mindset",
+      description: "The stance behind it: a flaw you've named and laughed at can't be used against you — owning it first is control, not surrender.",
+      inputs: [
+        { q: "Why name your own flaw before anyone else can?", a: "Because a flaw you've already joked about has no power as a weapon — you've taken it off the table.", bundle: 'free' },
+        { q: "What does joking about a flaw signal?", a: "Security. Someone comfortable enough to laugh at their weak spots clearly isn't threatened by them.", bundle: 'free' },
+        { q: "Why is agreeing with the flaw stronger than denying it?", a: "Denial invites a fight; agreement ends it. You can't argue with someone who cheerfully got there first.", bundle: 'free' },
+        { q: "How do you keep it from becoming self-criticism?", a: "Keep the tone light and the exaggeration obvious — you're playing with the flaw, not confirming a verdict on yourself.", bundle: 'free' },
+        { q: "Why doesn't the flaw being real threaten you?", a: "Being okay doesn't depend on being flawless. A real, named, laughed-at flaw is just a fact you're at ease with.", bundle: 'free' },
+        { q: "What's the difference between owning a flaw and apologising for it?", a: "Owning it is light and final; apologising invites reassurance. One closes the subject, the other reopens it.", bundle: 'pro' },
+        { q: "Why does this put a group at ease?", a: "When you show your flaws don't scare you, everyone relaxes about their own — you lower the whole room's guard.", bundle: 'pro' },
+        { q: "When should you not joke about a flaw?", a: "When it's a genuine, sensitive wound — not everything is material. Save it for the harmless, chosen quirks.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Jokingly Brag Mindset",
+      description: "The stance behind it: playing with self-praise, not actually claiming it — you can only joke about being great if you're relaxed enough not to need it to be true.",
+      inputs: [
+        { q: "What are you actually doing when you jokingly brag?", a: "Playing with confidence, not claiming it. The joke is the gap between the tiny achievement and the huge announcement.", bundle: 'free' },
+        { q: "Why does it read as playful, not arrogant?", a: "Because you're obviously in on it. Real arrogance believes itself; a jokingly brag winks at everyone.", bundle: 'free' },
+        { q: "Why can only relaxed people pull this off?", a: "You're toying with the exact thing insecure people protect — you can only play with self-praise if you don't need it.", bundle: 'free' },
+        { q: "What keeps it warm?", a: "Aim it at something trivial and let everyone share the joke — you're the punchline as much as the hero.", bundle: 'free' },
+        { q: "Why pair it with self humour?", a: "Bragging about one small thing and mocking another shows you don't take either seriously — it's balance, not ego.", bundle: 'free' },
+        { q: "What does a well-placed jokingly brag do for the mood?", a: "It lifts it — a bit of cheerful, obvious swagger about nothing gives everyone permission to be light.", bundle: 'pro' },
+        { q: "Why isn't needing people to agree part of it?", a: "The joke is complete on its own. If you need them to confirm you're great, it stops being a joke and becomes a bid.", bundle: 'pro' },
+        { q: "How is this different from actually being proud of something?", a: "Real pride is sincere and can be quiet; a jokingly brag is deliberately over-the-top about something that doesn't warrant it.", bundle: 'pro' },
+      ]
+    }
+  ],
+  setupstatement: [
+    {
+      name: "The Setup Statement Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The pack-wide stance: you don't have to be interesting to open a conversation, you just have to go first. Giving a little of yourself before you ask lowers the pressure on the other person, so the setup statement works precisely because it isn't clever. Example of the shift — instead of hunting for the perfect question, you say your small true thing and pass it over.\n\nThe three thoughts that cause the trouble:\n1. \"I need something interesting to say\" — you need something true and easy.\n2. \"They'll think I'm intruding\" — most people are relieved someone opened.\n3. \"I should wait for a natural moment\" — the natural moment is the one you make.\n\nMindset: giving a little of yourself before you ask lowers the pressure on them. The setup statement works precisely because it is not clever.",
+      inputs: [
+        { q: "You feel you need a clever line before you can say anything.", a: "\"I don't need to be interesting. I need to go first. A small true thing is enough.\"", bundle: 'pro' },
+        { q: "You worry that sharing your opinion first is self-centred.", a: "\"Going first is a gift, not a spotlight — it gives them something easy to answer.\"", bundle: 'pro' },
+        { q: "You freeze because nothing you'd say feels important enough.", a: "\"It doesn't have to matter. 'I'm tired today' is a perfectly good place to start.\"", bundle: 'pro' },
+        { q: "You are waiting until you have something worth saying.", a: "\"Worth saying isn't the bar. True and short is.\"", bundle: 'pro' },
+        { q: "You think a question is the polite way in.", a: "\"A bare question makes them go first. That's the less polite one.\"", bundle: 'pro' },
+        { q: "You opened and they gave you two words.", a: "\"That's one attempt. There are five types and I've used one.\"", bundle: 'pro' },
+        { q: "You feel you have to carry the whole conversation.", a: "\"I have to start it. Carrying it is a different job, and not mine alone.\"", bundle: 'pro' },
+        { q: "You are worried about saying something awkward.", a: "\"Awkward passes in ten seconds. Silence lasts the whole evening.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Going-First Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about being the one who speaks first: the right moment is the one you make, and most people are relieved someone else opened. Example of the shift — instead of waiting to be approached, you take the small risk of going first.\n\nWhere the hesitation shows up:\n1. You wait to be approached and then leave having spoken to nobody.\n2. You rehearse an opener until the moment has passed.\n3. You assume everyone else finds this easy.\n\nMindset: the right moment is the one you make. Going first is a small risk that almost always gets met with relief rather than rejection.",
+      inputs: [
+        { q: "You keep waiting for the 'right moment' to speak.", a: "\"The right moment is the one I make by saying my bit. Waiting is just avoiding.\"", bundle: 'pro' },
+        { q: "You feel you're bothering them by starting a conversation.", a: "\"Most people are relieved someone else went first. I'm doing us both a favour.\"", bundle: 'pro' },
+        { q: "You compare yourself to people who seem effortlessly social.", a: "\"They're not cleverer, they just go first more often. That part I can copy.\"", bundle: 'pro' },
+        { q: "You are waiting to see whether they want to talk.", a: "\"They're waiting for the same thing. One of us has to move.\"", bundle: 'pro' },
+        { q: "Somebody else will start it.", a: "\"Sometimes. Mostly everybody stands there hoping.\"", bundle: 'pro' },
+        { q: "You will look keen if you speak first.", a: "\"I'll look like somebody who's easy to stand next to.\"", bundle: 'pro' },
+        { q: "You have left it too long now.", a: "\"Two minutes of silence isn't a closed door. Say something about the room.\"", bundle: 'pro' },
+        { q: "You do not know these people well enough.", a: "\"That's what the opener is for. Knowing them comes after.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Reciprocity Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about what happens after you open: your job is to hold out the invitation, not to control whether they take it. Example of the shift — instead of reading a flat reply as failure, you offer the door and let them decide.\n\nWhere it goes wrong:\n1. You read a short reply as proof you should not have spoken.\n2. You keep pushing when they have clearly not got the energy.\n3. You judge the opener by their mood rather than by your own move.\n\nMindset: your job is to hold out the invitation, not to control whether they take it. A flat answer is information about their evening, not a verdict on you.",
+      inputs: [
+        { q: "You're scared the other person won't reciprocate.", a: "\"My job is to open the door. Whether they walk through is not on me.\"", bundle: 'pro' },
+        { q: "You asked a question and it landed flat and you feel silly.", a: "\"One flat opener isn't a verdict on me. I'll try a different type and move on.\"", bundle: 'pro' },
+        { q: "They did not ask anything back.", a: "\"Then they're shy or distracted. Neither is a verdict on me.\"", bundle: 'pro' },
+        { q: "You opened twice and got nothing.", a: "\"Two goes is nothing. Try a different type before deciding.\"", bundle: 'pro' },
+        { q: "You feel you are doing all the work.", a: "\"For the first minute, yes. That's how minutes one and two go.\"", bundle: 'pro' },
+        { q: "They answered and immediately looked away.", a: "\"That's about their evening. One more try, then leave it.\"", bundle: 'pro' },
+        { q: "You are keeping score of who asked what.", a: "\"Scorekeeping is what makes an opener feel like a transaction.\"", bundle: 'pro' },
+        { q: "You want to know it will work before you start.", a: "\"Nobody gets that. Opening is a bet, and a cheap one.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being a Good Listener",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "Preferring to listen is a real quality, and the people who have it are usually the ones others are glad to sit next to. Nothing here disputes that.\n\nWhat this deck shows is the arithmetic. If you never go first, every person you meet has to do the starting, and most of them were hoping somebody else would. You end up known as pleasant, and not known at all.\n\nMindset: listening is yours to keep. Never going first is a cost somebody else pays, every time.",
+      inputs: [
+        { q: "You would rather listen than talk about yourself.", a: "\"Fine. It also means the other person opens every single time.\"", bundle: 'pro' },
+        { q: "You are a good listener and people say so.", a: "\"They do. Ask how many of them could say what I did last weekend.\"", bundle: 'pro' },
+        { q: "Talking about yourself is self-centred.", a: "\"One sentence isn't. It's what makes theirs answerable.\"", bundle: 'pro' },
+        { q: "You do not need to be the one who starts.", a: "\"Somebody does. When it's never me, it's always somebody who found it harder.\"", bundle: 'pro' },
+        { q: "Asking questions is more generous than answering.", a: "\"A question is work for them. A statement is work for me. Only one of us is doing any.\"", bundle: 'pro' },
+        { q: "You are comfortable being the quiet one.", a: "\"Comfortable, yes. Known, no. Those come apart after a while.\"", bundle: 'pro' },
+        { q: "People open up to you.", a: "\"They do, and they leave knowing nothing back. That's a one-way friendship in the making.\"", bundle: 'pro' },
+        { q: "You never run out of things to ask.", a: "\"Which is how I've gone years without ever being asked anything.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Nothing Interesting to Offer",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The setup statement is not an audition. Its job is to give the other person something concrete to latch onto instead of a blank page, and a concrete thing beats an interesting thing every time.\n\nPeople freeze here because they are searching for something worth saying. Nothing needs to be worth saying. \"I came straight from work and I'm starving\" has started more conversations than any good story.\n\nMindset: you are handing them a hook, not performing. Boring and specific works; interesting and vague does not.",
+      inputs: [
+        { q: "Nothing about your week is worth mentioning.", a: "\"It doesn't have to be worth it. It has to be true and specific.\"", bundle: 'pro' },
+        { q: "You are searching for something impressive to open with.", a: "\"Impressive makes them the audience. Ordinary makes them a participant.\"", bundle: 'pro' },
+        { q: "Your opinion on this is very dull.", a: "\"Dull is fine. They need something to push against, not something to admire.\"", bundle: 'pro' },
+        { q: "You have nothing going on at the moment.", a: "\"'Not much, and I'm enjoying it' is a whole opener.\"", bundle: 'pro' },
+        { q: "Everybody else has better material.", a: "\"Nobody's comparing. They're waiting for somebody to go first.\"", bundle: 'pro' },
+        { q: "You do not want to talk about work.", a: "\"Then say where I came from, or how the week's been. There are five types.\"", bundle: 'pro' },
+        { q: "You have already used your one good line.", a: "\"There's no line. There's a true sentence about right now.\"", bundle: 'pro' },
+        { q: "It feels too small to say out loud.", a: "\"Small is the point. Big ones leave them nowhere to go.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  apologizing2: [
+    {
+      name: "Order",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The instinct is to lead with the apology and explain afterwards. It feels like the fastest route to resolution, and it is the reason so many sincere apologies land badly.\n\nAn apology that arrives before any understanding is heard as a request: please let this be over. The same words, said after you have shown you know what it was like for them, are heard as repair. Nothing changes except the order.\n\nMindset: earn the word sorry, then say it.",
+      inputs: [
+        { q: "I should just say sorry and get it over with.", a: "\"Get it over with\" is exactly what they'll hear. Do their side first.", bundle: 'pro' },
+        { q: "They know I'm sorry, that's the main thing.", a: "They know you said it. What they want to know is whether you understood.", bundle: 'pro' },
+        { q: "Talking about their feelings first feels like a technique.", a: "It is one, and it's the honest one — you're finding out before you speak.", bundle: 'pro' },
+        { q: "It's quicker to apologise straight away.", a: "Quicker for you. That's what they'll notice.", bundle: 'pro' },
+        { q: "I don't know what they felt.", a: "Then ask. That's a better first sentence than sorry.", bundle: 'pro' },
+        { q: "We've been standing here a while and I still haven't said sorry.", a: "The sorry lands better late than early. Finish the understanding first.", bundle: 'pro' },
+        { q: "They keep explaining and I want to cut to the apology.", a: "The explaining IS the thing you're apologising for missing. Let it run.", bundle: 'pro' },
+        { q: "Understanding first feels like stalling.", a: "Stalling is hoping it passes. This is doing the work in order.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sincerity",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Sincerity is not something you can transmit by trying harder. What actually communicates it is detail — the fact that you know which afternoon it was, what they had rearranged, what the room was like when you said it.\n\nThat is why an apology full of feeling words often lands worse than a plain one full of particulars. The particulars are the evidence that you thought about it.\n\nMindset: say the specific thing. The sincerity comes with it.",
+      inputs: [
+        { q: "I need them to know I really mean it.", a: "Name what actually happened. That's what \"really means it\" sounds like.", bundle: 'pro' },
+        { q: "I'll say it more warmly this time.", a: "More warmly won't help. More specifically will.", bundle: 'pro' },
+        { q: "I don't remember the details well enough.", a: "Then ask about them. That conversation is itself the apology working.", bundle: 'pro' },
+        { q: "The details feel like dwelling on it.", a: "The details are how they know you were paying attention.", bundle: 'pro' },
+        { q: "A general apology covers everything.", a: "It covers nothing. General is what people say when they haven't thought.", bundle: 'pro' },
+        { q: "Naming exactly what I did makes it sound worse.", a: "It sounds accurate. Vague makes it sound like you haven't looked at it.", bundle: 'pro' },
+        { q: "There were three things and I don't know which one to name.", a: "Name all three, briefly. Picking one for them is another thing to apologise for.", bundle: 'pro' },
+        { q: "They interrupted to say it's fine before I got specific.", a: "Say the specific one anyway. That's the part they'll keep.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Plan",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Anyone can say sorry. The only part of an apology that costs you anything in the future is the sentence about what will be different — and to someone who has been let down before, that is the only part with any information in it.\n\nThat is also why it must be small. \"I'll be better\" promises nothing and cannot be checked. \"I'll write it down while you're telling me\" is something they can watch happen or not happen.\n\nMindset: end with something checkable, then do it.",
+      inputs: [
+        { q: "The apology should be enough on its own.", a: "The first time, maybe. After that, only the change counts.", bundle: 'pro' },
+        { q: "I don't want to promise something I might not keep.", a: "Then promise something smaller. A kept small promise beats a broken large one.", bundle: 'pro' },
+        { q: "Saying what I'll do sounds like I'm managing them.", a: "It sounds like you've thought about it. That's the opposite of managing.", bundle: 'pro' },
+        { q: "I'll just try harder, that's the plan.", a: "That's not a plan, it's a feeling. What will you actually do differently?", bundle: 'pro' },
+        { q: "They should be able to trust me without a plan.", a: "They should. A checkable sentence is how trust gets rebuilt after it's been dented.", bundle: 'pro' },
+        { q: "The change I'd promise is embarrassingly small.", a: "Small and kept is the whole point. Grand and broken is what got you here.", bundle: 'pro' },
+        { q: "I want to check I can actually do it first.", a: "Then say that, and come back with it tomorrow. Don't leave the apology open-ended.", bundle: 'pro' },
+        { q: "A plan makes it sound like it'll happen again.", a: "It sounds like you've considered whether it could. That's reassurance, not warning.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Your Own Distress",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "A long, distressed apology puts the other person in a difficult position: the injured party ends up reassuring the person who caused the injury. It feels like remorse and it functions as a demand.\n\nThe generous version is clear, specific, and does not require them to make you feel better. Your discomfort is real and it is yours to carry.\n\nMindset: apologise once, properly, and manage your own regret.",
+      inputs: [
+        { q: "I need them to know how badly I feel about it.", a: "They need to know you understood. How bad you feel is yours to handle.", bundle: 'pro' },
+        { q: "If I apologise enough they'll see I mean it.", a: "Repetition reads as wanting forgiveness, not as meaning it.", bundle: 'pro' },
+        { q: "They said it's fine but I don't think they mean it.", a: "Ask once, plainly. Then take the answer.", bundle: 'pro' },
+        { q: "I feel terrible and I want to say so.", a: "One sentence. Then stop, so they don't have to look after you.", bundle: 'pro' },
+        { q: "It'd be cold to just say it and move on.", a: "Clear and specific isn't cold. Prolonged is what becomes uncomfortable.", bundle: 'pro' },
+        { q: "I'm close to tears and they can see it.", a: "Say the apology and stop. They shouldn't have to manage your face as well.", bundle: 'pro' },
+        { q: "I want them to know I've barely slept over this.", a: "That's for someone else to hear. Here it becomes their job to reassure you.", bundle: 'pro' },
+        { q: "They're comforting me and I'm letting them.", a: "Notice it and hand it back. \"This isn't for you to carry — I'm sorry, and that's it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "I Would Be Guessing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Saying what you think it was like for them feels presumptuous — as though you are telling them their own experience, and getting it wrong would make an apology worse than no apology.\n\nBut naming it is not a claim to know. It is an attempt, offered out loud, and a wrong attempt is easy to correct: they say \"it wasn't that, it was this\", and now you have the real thing, which is exactly what you were after. The version that cannot be corrected is the one you never said.\n\nMindset: guess out loud and let them fix it. A wrong guess opens the subject; silence closes it.",
+      inputs: [
+        { q: "I'd be putting words in their mouth.", a: "You'd be offering words they can swap. \"Was it more like—?\" makes that explicit.", bundle: 'pro' },
+        { q: "If I get it wrong it'll make things worse.", a: "Getting it wrong and being corrected is a conversation. Saying nothing isn't.", bundle: 'pro' },
+        { q: "They should tell me how they felt.", a: "They may not have the words either. Going first is the favour.", bundle: 'pro' },
+        { q: "I genuinely have no idea what upset them.", a: "Then say that, and ask. \"I can see it landed badly and I don't want to guess wrong.\"", bundle: 'pro' },
+        { q: "Naming it sounds like a technique from a book.", a: "Only if the words aren't yours. Say it plainly and it just sounds like attention.", bundle: 'pro' },
+        { q: "What if they say I'm making it about me?", a: "Then keep the sentence about them. \"You must have felt—\" has no \"I\" in it.", bundle: 'pro' },
+        { q: "I know what they felt but saying it feels invasive.", a: "It's the opposite. Not saying it leaves them to carry it alone.", bundle: 'pro' },
+        { q: "They already told me, so repeating it is pointless.", a: "Repeating it is how they find out it arrived. That's not nothing.", bundle: 'pro' },
+      ]
+    },
+  ],
+  startingconversations3: [
+    {
+      name: "Attention",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "People overestimate how clever an opener has to be and underestimate what plain attention does. Being noticed — specifically, accurately, out loud — is uncommon enough that it lands regardless of how well you phrase it.\n\nThat is why a four-word compliment about a bag works, and why a specific question about someone's life gets a warmer response than any amount of charm.\n\nMindset: you do not need to be interesting. You need to be paying attention.",
+      inputs: [
+        { q: "I need to say something impressive.", a: "You need to notice something true. That's a much lower bar and it works better.", bundle: 'pro' },
+        { q: "They must get complimented all the time.", a: "On specifics? Almost nobody does.", bundle: 'pro' },
+        { q: "I'm not a natural at this.", a: "Noticing isn't a talent. It's just looking, and then saying it.", bundle: 'pro' },
+        { q: "They won't care what I think.", a: "Being noticed is not about your opinion. It's about having been seen.", bundle: 'pro' },
+        { q: "I'd rather wait until I know them better.", a: "This is how people come to know each other. Nothing precedes it.", bundle: 'pro' },
+        { q: "I noticed something but I can't phrase it well.", a: "Phrase it badly. Being noticed survives clumsy wording.", bundle: 'pro' },
+        { q: "Everyone here already knows each other.", a: "Then nobody's been noticed in a while. That's an opening, not a wall.", bundle: 'pro' },
+        { q: "I'll sound like I've been staring.", a: "One specific thing said lightly reads as attention, not surveillance.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Unsaid Compliments",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Most compliments are thought and never said. You notice the coat, the question, the way someone handled a difficult person — and then the moment passes and it starts to feel odd to mention.\n\nThe cost of saying it is about two seconds of mild exposure. The cost of not saying it is that a good thing you noticed simply never existed for the other person.\n\nMindset: if you noticed it and it is true, say it now.",
+      inputs: [
+        { q: "It'd be weird to say it out of nowhere.", a: "\"That's a great coat\" has never been weird in the history of coats.", bundle: 'pro' },
+        { q: "They'll think I want something.", a: "Say it and want nothing. That settles it within seconds.", bundle: 'pro' },
+        { q: "The moment's passed now.", a: "\"I meant to say earlier\" fixes that entirely.", bundle: 'pro' },
+        { q: "It's too small a thing to mention.", a: "Small and specific is exactly the kind people remember.", bundle: 'pro' },
+        { q: "I'd feel embarrassed.", a: "For two seconds. They'll be pleased for considerably longer.", bundle: 'pro' },
+        { q: "I've said something nice to them before.", a: "Then say it about something else. There's no quota.", bundle: 'pro' },
+        { q: "It's obvious, they must know.", a: "People rarely know. The obvious ones are the ones nobody says.", bundle: 'pro' },
+        { q: "They're busy right now.", a: "Four words fit inside busy. Say it and let them go.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Guessing Wrong",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The fear behind not guessing is looking foolish. But a wrong guess is one of the more productive things you can say to a stranger: it gives them something to correct, and corrections come with reasons and stories attached.\n\nWatch what happens. \"No, actually, it's my first time\" is more words and more material than \"yes\" would ever have been.\n\nMindset: aim to be interesting, not accurate.",
+      inputs: [
+        { q: "What if I guess wrong and look stupid?", a: "Then they correct you and tell you the real answer. That's the opener working.", bundle: 'pro' },
+        { q: "I should only say things I'm sure about.", a: "Then you'll say very little to people you've just met.", bundle: 'pro' },
+        { q: "It's presumptuous to guess about someone.", a: "Not if you say it as a guess. That's what \"let me guess\" is for.", bundle: 'pro' },
+        { q: "They might be offended.", a: "Keep it to experience and mood rather than background, and they won't be.", bundle: 'pro' },
+        { q: "A question would be safer.", a: "Safer and flatter. A guess gets more back, right or wrong.", bundle: 'pro' },
+        { q: "I don't know enough about them to guess.", a: "That's what makes it a guess. Knowing would make it a statement.", bundle: 'pro' },
+        { q: "My last guess was miles off.", a: "And they told you the real answer. That's the guess working.", bundle: 'pro' },
+        { q: "Guessing feels like a game.", a: "It is one, and it's the kind most people enjoy playing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Passing Greeting",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"How are you\" asked in passing is a greeting, and everyone understands it as one. The real version is different: it invites someone to say something true, and that invitation has to be honoured.\n\nAsking it while walking away, or while looking at your phone, or when you have two minutes, is worse than not asking — because you have signalled interest and then withdrawn it, which is a small unkindness the other person will remember.\n\nMindset: ask when you can stay. Otherwise use the greeting version and mean that instead.",
+      inputs: [
+        { q: "I should ask how they are, they look awful.", a: "Only if you can stop and hear it. If not, say hello properly and come back later.", bundle: 'pro' },
+        { q: "What if they tell me something I can't handle?", a: "You don't have to handle it. Listening and not leaving is the whole job.", bundle: 'pro' },
+        { q: "I don't know what to say if they open up.", a: "\"That sounds hard\" covers almost everything. Silence covers the rest.", bundle: 'pro' },
+        { q: "It's not my place to ask.", a: "You noticed. That's usually place enough, asked gently and once.", bundle: 'pro' },
+        { q: "They'll say fine anyway.", a: "Probably. And they'll have registered that someone actually asked.", bundle: 'pro' },
+        { q: "I asked and they said fine, so that's that.", a: "Or ask once more, lightly. The second ask is the one that gets answered.", bundle: 'pro' },
+        { q: "I've got ten minutes, is that enough?", a: "It is if you're actually in them. Say you've got ten and mean it.", bundle: 'pro' },
+        { q: "I asked last week and nothing came of it.", a: "Asking again is what makes the first one count.", bundle: 'pro' },
+      ]
+    },
+  ],
+  endingconversations: [
+    {
+      name: "The Last Minute",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "People remember how a conversation finished far more clearly than what was in the middle of it. A good ten minutes closed abruptly is remembered as odd; a flat ten minutes closed warmly is remembered as fine.\n\nThat is an unusually good deal. Eight seconds of attention at the end does more for how you are remembered than anything you could have said earlier.\n\nMindset: spend the last eight seconds properly. They count more than the rest.",
+      inputs: [
+        { q: "The conversation went well, so the ending doesn't matter much.", a: "It matters most. It's the part they'll actually remember.", bundle: 'pro' },
+        { q: "It was a boring chat, there's nothing to say at the end.", a: "A warm ending fixes a dull conversation. Nothing fixes a cold ending.", bundle: 'pro' },
+        { q: "I'll just drift away, it's easier.", a: "Drifting is the thing people find strange. Four words prevent it.", bundle: 'pro' },
+        { q: "They won't notice how it ended.", a: "It's the one bit everyone notices, usually without knowing why.", bundle: 'pro' },
+        { q: "A proper goodbye takes too long.", a: "About eight seconds. Time it once and see.", bundle: 'pro' },
+        { q: "I said something clumsy earlier, so the whole thing is spoilt.", a: "Close it warmly and the clumsy bit stops being the last thing there.", bundle: 'pro' },
+        { q: "I'm tired and I just want out.", a: "Eight seconds. You have eight seconds even when you're tired.", bundle: 'pro' },
+        { q: "We ended fine — I said goodbye.", a: "Did you say anything about them, or only about leaving? That's the difference.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Permission",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "A surprising number of conversations run twenty minutes longer than either person wanted, because both are waiting for the other to end it. Each assumes leaving would be rude, and neither knows the other is thinking the same thing.\n\nEnding a conversation is not a rejection and does not require the other person's agreement. You are allowed to go.\n\nMindset: somebody has to end it, and it is usually a relief when they do.",
+      inputs: [
+        { q: "It would be rude to end it.", a: "Ending conversations is normal. Trapping someone in one isn't.", bundle: 'pro' },
+        { q: "They might think I'm bored.", a: "That's what the reason and the warm sentence are for. Use them.", bundle: 'pro' },
+        { q: "I should wait for a natural gap.", a: "There often isn't one. That's why \"right, I'd better get on\" exists.", bundle: 'pro' },
+        { q: "They're enjoying it, so I can't leave.", a: "You can leave and say you enjoyed it. Both are true at once.", bundle: 'pro' },
+        { q: "I'll stay another ten minutes to be polite.", a: "They may well be waiting for you to go. Very often they are.", bundle: 'pro' },
+        { q: "They started the conversation, so it's theirs to end.", a: "Nobody owns it. Whoever needs to go, goes.", bundle: 'pro' },
+        { q: "They're mid-sentence, I can't go now.", a: "Wait for the full stop, then go. That's the whole courtesy.", bundle: 'pro' },
+        { q: "I've tried twice and they keep going.", a: "Then say it plainly instead of hinting. Hints are what got you here.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Reasons",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "People invent elaborate reasons for leaving, or stay because they cannot think of a good enough one. But nobody examines your reason. They only need something to attach the ending to, so that it is about your day rather than about them.\n\n\"I should get on\" does the whole job. So does \"I've got a couple of things to sort\".\n\nMindset: any reason works. It only has to exist, not to be impressive.",
+      inputs: [
+        { q: "I need a proper excuse to leave.", a: "You need a sentence. \"I should get on\" is a sentence.", bundle: 'pro' },
+        { q: "They'll see straight through a vague reason.", a: "They won't be looking. Nobody audits this.", bundle: 'pro' },
+        { q: "I'd have to lie to get out of this.", a: "You wouldn't. \"I want to catch a few other people\" is true and fine.", bundle: 'pro' },
+        { q: "My reason isn't important enough.", a: "Importance isn't the point. Existence is.", bundle: 'pro' },
+        { q: "If I say I have to go they'll ask where.", a: "They almost never do. And \"just something I need to sort\" answers it.", bundle: 'pro' },
+        { q: "My reason is just that I want to go.", a: "\"I should get on\" is that reason, said politely. It's allowed.", bundle: 'pro' },
+        { q: "I gave a reason last time we spoke too.", a: "Nobody is keeping a tally. Give it again.", bundle: 'pro' },
+        { q: "A reason sounds like an excuse.", a: "An excuse defends something. A reason just points at your day.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Next Time",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Every ending is also a setup. An abrupt exit makes the next conversation slightly harder to start; a warm one means the next meeting begins somewhere further along.\n\nThat is why the moves in this pack are worth the seconds they cost. Wishing someone well about something specific, or offering to hear the rest on Thursday, is not politeness for its own sake — it is what makes the next conversation easy.\n\nMindset: end in a way that makes the next one easier to begin.",
+      inputs: [
+        { q: "I'll see them tomorrow anyway, so it doesn't matter.", a: "Tomorrow starts wherever today finished. Finish it well.", bundle: 'pro' },
+        { q: "It was only a small chat.", a: "Small chats are what relationships are made of. Close them properly.", bundle: 'pro' },
+        { q: "Saying \"let's pick this up\" sounds like a line.", a: "Only if you don't mean it. If you do, it's the best thing you can leave behind.", bundle: 'pro' },
+        { q: "I don't know them well enough for a warm goodbye.", a: "\"It was nice talking to you\" fits any level of knowing someone.", bundle: 'pro' },
+        { q: "I've left it awkwardly with them before.", a: "Then this ending is the repair. It's cheaper than you think.", bundle: 'pro' },
+        { q: "I'm not sure I want a next conversation with this person.", a: "Then end it warmly anyway. It costs eight seconds and keeps the door yours to choose.", bundle: 'pro' },
+        { q: "We disagreed, so a warm ending would be false.", a: "\"Good to talk it through\" is true even when you didn't agree.", bundle: 'pro' },
+        { q: "I'll make it up to them next time.", a: "Next time starts from how this one ended. Do it now, it's cheaper.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Phrase Is Not Enough",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Right, see you later\" feels too thin to end anything with — four words that seem to skip past the whole conversation. So people reach for something bigger, and while they are composing it the moment passes and they are still standing there.\n\nBut the short phrase is not a summary of the conversation. It is a signal that the conversation is over, and it is understood as one instantly. Everything warm you want to add goes in front of it, not instead of it.\n\nMindset: the phrase is the door. Say the warm thing first, then use it.",
+      inputs: [
+        { q: "\"See you later\" is too abrupt to end on.", a: "It isn't the ending, it's the last four words of it. Put something warm in front.", bundle: 'pro' },
+        { q: "I need to say something that matches how good the talk was.", a: "One sentence about the talk, then the phrase. Anything longer starts a new conversation.", bundle: 'pro' },
+        { q: "The phrase sounds insincere.", a: "It's a signal, not a claim. Nobody hears \"take care\" as a promise.", bundle: 'pro' },
+        { q: "I'm still working out how to put it.", a: "While you work on it you're still standing there. Use the phrase and go.", bundle: 'pro' },
+        { q: "They deserve more than a stock line.", a: "They get more — the reason and the warm sentence. The stock line just closes it.", bundle: 'pro' },
+        { q: "If I say it too soon it'll seem like I want to escape.", a: "Say the warm thing first and it reads as an ending, not an escape.", bundle: 'pro' },
+        { q: "We've said goodbye and neither of us has moved.", a: "That's what the phrase is for. Say it and take the step.", bundle: 'pro' },
+        { q: "Everyone uses the same three phrases.", a: "That's why they work. A phrase nobody recognises has to be explained.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Later Means Never",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Let's pick this up tomorrow\" is what people say when they mean no, so offering it feels like telling a small lie — and the ones who would never lie simply do not say it, and the conversation ends without the topic being protected.\n\nThe line is not the problem. The line followed by nothing is the problem. Said by someone who then messages on Thursday, it is one of the strongest things you can leave behind: the conversation ended, the subject did not.\n\nMindset: only offer it when you mean it, and then actually do it. That is the whole rule.",
+      inputs: [
+        { q: "\"Let's continue this later\" sounds like a brush-off.", a: "Only from people who never follow up. Follow up once and it stops sounding like one.", bundle: 'pro' },
+        { q: "I can't promise I'll have time.", a: "Then say when. \"Thursday, if I get through this week\" is honest and still an offer.", bundle: 'pro' },
+        { q: "They'll have forgotten by tomorrow.", a: "They won't have. People remember the ones who said they'd come back.", bundle: 'pro' },
+        { q: "It feels presumptuous to assume they want to continue.", a: "You're offering, not booking. They can let it drop.", bundle: 'pro' },
+        { q: "I said it last time and never followed up.", a: "Then follow up now, late. Late is recoverable. Twice is not.", bundle: 'pro' },
+        { q: "The topic wasn't important enough to reopen.", a: "If it was worth ten minutes it's worth one message.", bundle: 'pro' },
+        { q: "I'd rather just end it cleanly.", a: "This is the clean ending. It closes the conversation and keeps the subject.", bundle: 'pro' },
+        { q: "What if they take it as a real appointment?", a: "Then you have one. That's not the disaster it feels like.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Saying It Was Good Is Too Much",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"It was nice talking to you\" and \"good luck with the move\" both feel like more than the relationship can carry — sentimental with a colleague, over-familiar with a stranger. So people leave them out and end on the reason alone, which is correct and slightly cold.\n\nNeither line claims anything. One says the last ten minutes were pleasant; the other says you were listening well enough to remember what is coming for them. Both are small, and both are the reason someone is easy to talk to a second time.\n\nMindset: it is a smaller thing to say than it feels. Say it and go.",
+      inputs: [
+        { q: "\"It was nice talking to you\" is too much for a colleague.", a: "It's what people say at the end of a conversation. Nobody has ever found it strange.", bundle: 'pro' },
+        { q: "I barely know them.", a: "Then it fits perfectly. It's a comment on ten minutes, not on the friendship.", bundle: 'pro' },
+        { q: "It'll sound like I'm buttering them up.", a: "Not if you leave straight after. Flattery stays to see how it landed.", bundle: 'pro' },
+        { q: "I can't remember what they said was coming up.", a: "Then use the general one. \"Have a good weekend\" costs nothing and still lands.", bundle: 'pro' },
+        { q: "We didn't really talk about anything.", a: "You still spent ten minutes. \"Good to see you\" is true of that.", bundle: 'pro' },
+        { q: "A compliment on the way out looks like angling for something.", a: "Angling looks like staying. Saying it and leaving looks like meaning it.", bundle: 'pro' },
+        { q: "It feels forced if I plan to say it.", a: "Everyone plans it. Nobody can hear the difference.", bundle: 'pro' },
+        { q: "I said the reason, that's enough.", a: "The reason explains you. The warm line is the part that's about them.", bundle: 'pro' },
+      ]
+    },
+  ],
+  reactingtounexpectedstatements: [
+    {
+      name: "The Pause",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "There is a strong sense that conversation runs on a clock and that a gap is a failure — that a competent person has a response ready for whatever arrives.\n\nNobody does. Every good answer to something surprising was arrived at, and the arriving takes a couple of seconds. Taking them openly is not a lapse; it is what the answer costs.\n\nMindset: the pause is part of answering well, not a break in it.",
+      inputs: [
+        { q: "If I don't answer straight away I'll look slow.", a: "You'll look like someone thinking about what they say. That's rarer than fast.", bundle: 'pro' },
+        { q: "The silence is unbearable.", a: "Six words fix it: \"give me a second with that\".", bundle: 'pro' },
+        { q: "They're waiting for me.", a: "For two seconds. That's genuinely all it is.", bundle: 'pro' },
+        { q: "A quick answer keeps things flowing.", a: "It also produces the answers people wish they hadn't given.", bundle: 'pro' },
+        { q: "I should be able to think on my feet.", a: "This is thinking on your feet. Out loud is still on your feet.", bundle: 'pro' },
+        { q: "Pausing will make it look like the question rattled me.", a: "It did. Everyone can see that already. The pause just stops it choosing your words.", bundle: 'pro' },
+        { q: "I'll lose my nerve if I don't speak immediately.", a: "Then say the six words out loud. Saying them is the nerve.", bundle: 'pro' },
+        { q: "It's a simple question, it shouldn't need thinking about.", a: "It wasn't the question that was hard. It was that it arrived out of nowhere.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Filling the Gap",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Not knowing what to say feels like failing at the conversation, so people fill the gap — with a stock phrase, a change of subject, or an opinion assembled on the spot.\n\nAll three are worse than the honest version, and the honest version is the one people remember warmly. Someone who has just said something difficult is bracing for a managed response, and plain bewilderment is more welcome than any of the alternatives.\n\nMindset: say it, and stay. The staying is the part that counts.",
+      inputs: [
+        { q: "I need to say something helpful.", a: "\"I don't know what to say\" is helpful. It's true and it's present.", bundle: 'pro' },
+        { q: "That's just admitting I can't handle it.", a: "It's declining to fake it, which is the opposite.", bundle: 'pro' },
+        { q: "They'll think I don't care.", a: "The stock phrase reads as not caring. The honest one doesn't.", bundle: 'pro' },
+        { q: "I should have something for a moment like this.", a: "Nobody has. The people who seem to are usually saying less, not more.", bundle: 'pro' },
+        { q: "If I say that, the conversation stops.", a: "It usually opens. It's not a response they were braced for.", bundle: 'pro' },
+        { q: "Everyone else seems to know what to say at moments like this.", a: "They're saying stock phrases. You can hear it in them, and so can the other person.", bundle: 'pro' },
+        { q: "It's my job to have a response.", a: "It's your job to be there. Those are not the same thing.", bundle: 'pro' },
+        { q: "I said it and now there's nothing else to add.", a: "Nothing else is needed. Stay put and let them go on.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The First Reaction",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The response that arrives instantly is assembled from surprise rather than thought, and it is almost always sharper, more dismissive or more definite than what you actually think.\n\nThat is not a character flaw; it is what surprise does. The useful habit is simply to notice the gap between reacting and answering, and to put a few seconds in it.\n\nMindset: notice the first thing, and do not necessarily say it.",
+      inputs: [
+        { q: "My gut reaction is usually right.", a: "About what you feel, often. About what to say, much less often.", bundle: 'pro' },
+        { q: "If I don't say it now I'll lose the point.", a: "A point worth making survives ten seconds.", bundle: 'pro' },
+        { q: "They asked, so they want my honest first thought.", a: "They want your honest thought. The first one and the honest one aren't always the same.", bundle: 'pro' },
+        { q: "Being spontaneous is more genuine.", a: "Considered is also genuine, and easier to stand behind tomorrow.", bundle: 'pro' },
+        { q: "I've already said the sharp version.", a: "Then go back. \"That was a reaction, not what I think\" is always available.", bundle: 'pro' },
+        { q: "Holding it back feels dishonest.", a: "Not saying every thought isn't dishonesty. It's editing, and everyone does it.", bundle: 'pro' },
+        { q: "If I pause they'll know I disagreed.", a: "They'll know you took it seriously. Those look the same from outside.", bundle: 'pro' },
+        { q: "My first reaction was just a face, not words.", a: "Faces are quick and honest. Let the words be slow and considered instead.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Coming Back Later",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Returning to something a day later feels like conceding that you handled it badly, so people leave the first answer standing even when they no longer believe it.\n\nIn practice it does the opposite of what is feared. Someone who comes back with a considered view is treated as more reliable, not less — because the first answer is now clearly a first answer rather than what they think.\n\nThe condition is that the return actually happens. Deferring and never returning is worse than a poor answer in the moment.\n\nMindset: come back on the day you said, and say what you actually think.",
+      inputs: [
+        { q: "Going back to it makes it a bigger thing.", a: "Leaving a wrong answer standing is the bigger thing.", bundle: 'pro' },
+        { q: "They'll have forgotten by now.", a: "They almost certainly haven't. People remember the surprising ones.", bundle: 'pro' },
+        { q: "It'd be awkward to raise it again.", a: "\"Can I come back to yesterday?\" is one sentence and nobody minds it.", bundle: 'pro' },
+        { q: "I said I'd think about it and I haven't.", a: "Then say that, and give a new day. Don't just let it go quiet.", bundle: 'pro' },
+        { q: "My answer would be the same anyway.", a: "Then say it again, deliberately. That's different from having reacted.", bundle: 'pro' },
+        { q: "Too much time has passed to bring it up now.", a: "There's no expiry date. \"This has been on my mind since Tuesday\" opens it fine.", bundle: 'pro' },
+        { q: "They've moved on, so raising it would be selfish.", a: "You're the one still carrying it. Putting it down is allowed.", bundle: 'pro' },
+        { q: "I'll wait until it comes up naturally again.", a: "It won't. That's how these things stay unfinished for years.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "All of It or None of It",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "When something lands that has four parts and you can only answer one, there is a pull to say nothing at all — as though a partial answer were worse than silence, or an admission that the rest defeated you.\n\nIt is the reverse. Answering the part you can is what keeps the conversation alive; it shows you heard the whole thing and are working on it, rather than that you shut down. And the part you leave is rarely lost — naming it out loud is usually what makes it possible to come back to.\n\nMindset: take the piece you can hold. The rest is not abandoned, it is queued.",
+      inputs: [
+        { q: "If I only answer part of it, I've dodged the rest.", a: "Dodging is pretending the rest wasn't said. Naming it isn't dodging.", bundle: 'pro' },
+        { q: "They'll notice I skipped the difficult bit.", a: "Then say so: \"I've got an answer to the second part, not the first.\"", bundle: 'pro' },
+        { q: "A partial answer is worse than no answer.", a: "No answer tells them nothing. A partial one tells them you're still in it.", bundle: 'pro' },
+        { q: "I should deal with the whole thing while it's open.", a: "You'll deal with it worse. Take the piece you can actually think about.", bundle: 'pro' },
+        { q: "Picking one part means I decided the others don't matter.", a: "It means you started somewhere. Order isn't a verdict.", bundle: 'pro' },
+        { q: "The bit I can answer is the easy bit, so it doesn't count.", a: "It counts. It's also usually the bit that unlocks the rest.", bundle: 'pro' },
+        { q: "They asked one question, not four.", a: "Listen again. Surprising statements almost always carry more than one.", bundle: 'pro' },
+        { q: "I answered a part and now they're waiting for the rest.", a: "\"That's what I've got for now\" is a complete sentence. Use it.", bundle: 'pro' },
+      ]
+    },
+  ],
+  deepquestions: [
+    {
+      name: "The Deep Questions Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The pack-wide stance: you are not interviewing anyone, you are being curious out loud. Curiosity plus a bit of care is what makes a bigger question feel safe rather than nosy. Example of the shift — instead of wondering whether the question is allowed, you notice that you actually want to know the answer.\n\nThe three thoughts that cause the trouble:\n1. \"This is prying\" — interest is a compliment, not an intrusion.\n2. \"I need a clever question\" — \"what was that like?\" does most of the work.\n3. \"Keeping it light is safer\" — safer, but nothing grows there.\n\nMindset: curiosity plus a bit of care is what makes a bigger question feel safe. You are not interviewing anyone; you are being curious out loud.",
+      inputs: [
+        { q: "You feel that asking a real question is prying.", a: "\"Curiosity isn't prying. I'm interested in them, and interest is a compliment.\"", bundle: 'pro' },
+        { q: "You worry a deeper question will make things awkward.", a: "\"Most people like being asked about what matters to them. The awkwardness is usually only in my head.\"", bundle: 'pro' },
+        { q: "You think you need a clever question to go deeper.", a: "\"It doesn't have to be clever. 'What was that like?' does most of the work.\"", bundle: 'pro' },
+        { q: "You feel the conversation has to stay light to stay safe.", a: "\"Light is comfortable, but nothing grows there. One real question is where it starts.\"", bundle: 'pro' },
+        { q: "You are worried about being intense.", a: "\"One real question in twenty minutes isn't intense. It's why they'll remember it.\"", bundle: 'pro' },
+        { q: "The conversation is going fine as it is.", a: "\"Fine is where most conversations stop. One question moves it.\"", bundle: 'pro' },
+        { q: "They seem like somebody who keeps things light.", a: "\"Most people seem like that. Most people are waiting.\"", bundle: 'pro' },
+        { q: "You asked something real and it went quiet.", a: "\"Quiet means they're thinking. Wait three seconds before rescuing it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Patience Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind Start with Simple Questions: small talk is not wasted time, it is the runway. You need a few facts on the table before a deeper question has anywhere to land. Example of the shift — instead of rushing to the meaningful bit, you let three easy questions do their job first.\n\nWhere the impatience shows up:\n1. You skip the easy questions because they feel boring.\n2. You ask something big in the first two minutes and it lands flat.\n3. You treat small talk as an obstacle rather than the setup.\n\nMindset: small talk is not the enemy, it is the runway. Depth takes a couple of minutes, and you can afford a couple of minutes.",
+      inputs: [
+        { q: "You feel small talk is pointless and want to skip it.", a: "\"Small talk isn't the enemy. It's the runway — I need it to get off the ground.\"", bundle: 'pro' },
+        { q: "You rush to a big question and it lands flat.", a: "\"Too early is the same as too much. A few easy ones first.\"", bundle: 'pro' },
+        { q: "You feel boring asking about hobbies and home towns.", a: "\"Simple questions aren't boring, they're groundwork. The good stuff grows out of them.\"", bundle: 'pro' },
+        { q: "You want the conversation to be deep straight away.", a: "\"Depth takes a couple of minutes. I can afford a couple of minutes.\"", bundle: 'pro' },
+        { q: "You have done two minutes of small talk and want to move.", a: "\"Two minutes is about right. Go on, then.\"", bundle: 'pro' },
+        { q: "You are bored of the easy questions.", a: "\"I'm bored. They're warming up. Those are different clocks.\"", bundle: 'pro' },
+        { q: "You went deep and had to reverse out.", a: "\"Back to the runway. Two easy ones and try again.\"", bundle: 'pro' },
+        { q: "The small talk feels fake.", a: "\"It isn't fake, it's load-bearing. Nothing deep lands without it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Listening Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind Link and Go Deeper: your next question should come out of what they just said, not off a list in your head. If you are actually listening, the question is already there. Example of the shift — instead of planning your next question while they talk, you catch the one word worth asking about.\n\nWhere the block shows up:\n1. You plan your next question while they are still talking.\n2. You go blank and reach for a brand new topic.\n3. You worry about running out of questions.\n\nMindset: being interested beats being interesting. They keep handing you material — the job is to pick some of it up, not to invent something.",
+      inputs: [
+        { q: "You plan your next question while they are still talking.", a: "\"If I'm writing my next line, I'm not listening. The best question is hiding in what they just said.\"", bundle: 'pro' },
+        { q: "You go blank and reach for a brand new topic.", a: "\"I don't need a new topic. I need one word from the last thing they said.\"", bundle: 'pro' },
+        { q: "You worry about running out of questions.", a: "\"They keep handing me material. I just have to pick some of it up.\"", bundle: 'pro' },
+        { q: "You feel you should be more interesting.", a: "\"Being interested beats being interesting. That's the whole trick.\"", bundle: 'pro' },
+        { q: "You have a question you have been waiting to ask.", a: "\"Waiting means I'm not listening. Ask what they just handed me.\"", bundle: 'pro' },
+        { q: "Their answer had nothing in it to follow.", a: "\"It had a place, a person or a time in it. It always does.\"", bundle: 'pro' },
+        { q: "You are worried about the silence while you think.", a: "\"A pause before a question that follows beats a fast one that doesn't.\"", bundle: 'pro' },
+        { q: "You want to steer towards something interesting.", a: "\"They're the interesting bit. Follow, don't steer.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Intrusion Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind the three deeper moves — Values, Beliefs and Experiences: asking about what matters to someone is a gift, not an intrusion, as long as they get to choose how much they answer. Example of the shift — instead of swallowing the question, you ask it and let them decide how deep they go.\n\nWhat the fear sounds like from the inside:\n1. \"They'll think I'm being too personal\" — a question leaves them the choice.\n2. \"I need permission to go deeper\" — care is the permission.\n3. \"They'd rather keep it on the surface\" — most people are waiting to be asked something better.\n\nMindset: asking about what matters to someone is a gift, as long as they get to decide how much they answer.",
+      inputs: [
+        { q: "You swallow the question you actually wanted to ask.", a: "\"The question is allowed. They can always give me the short version.\"", bundle: 'pro' },
+        { q: "You worry they will think you are being too personal.", a: "\"I'm asking, not demanding. A question leaves them the choice.\"", bundle: 'pro' },
+        { q: "You assume they would rather keep things on the surface.", a: "\"Most people are waiting to be asked something better than 'how's work'.\"", bundle: 'pro' },
+        { q: "You feel you need permission before going deeper.", a: "\"Care is the permission. If I ask warmly, the question is welcome.\"", bundle: 'pro' },
+        { q: "You softened the question until it meant nothing.", a: "\"Ask the real one. They can give me the short version if they want.\"", bundle: 'pro' },
+        { q: "You are assuming they would rather not.", a: "\"That's my assumption doing their answering for them.\"", bundle: 'pro' },
+        { q: "You asked and they gave a short answer.", a: "\"Short is an answer. It doesn't mean the question was wrong.\"", bundle: 'pro' },
+        { q: "You are waiting until you know them better.", a: "\"Knowing them better is what the question is for.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Flinch Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "They have touched something painful — a bereavement, an illness, a rift — and the instinct is to move the conversation somewhere safer, quickly, out of kindness.\n\nThe retreat is what makes it awkward. They mentioned it, which means it is sayable; changing the subject tells them it is not, and they will not raise it again.\n\nStaying does not mean digging. One question about the experience, asked warmly, and then following wherever they take it.\n\nMindset: they raised it. Retreating is the only response that turns it into a mistake.",
+      inputs: [
+        { q: "They mentioned something painful and you changed the subject.", a: "\"That told them not to say it again. Go back if I can.\"", bundle: 'pro' },
+        { q: "You do not want to make them relive it.", a: "\"They're living with it either way. The question doesn't add anything.\"", bundle: 'pro' },
+        { q: "You would not know what to do if they got upset.", a: "\"Stay, and ask one more thing. That's the whole requirement.\"", bundle: 'pro' },
+        { q: "Asking about it would be intrusive.", a: "\"They raised it. That's the permission I was waiting for.\"", bundle: 'pro' },
+        { q: "You are worried about getting the tone wrong.", a: "\"Warm and simple. 'What was that like?' has never been the wrong tone.\"", bundle: 'pro' },
+        { q: "Better to let them bring it up again if they want to.", a: "\"They won't, if the first mention went nowhere.\"", bundle: 'pro' },
+        { q: "You feel unqualified to ask about something that big.", a: "\"Nobody's qualified. Interested is the only qualification there is.\"", bundle: 'pro' },
+        { q: "You moved on quickly and it felt cold.", a: "\"It probably was. 'Can I go back to what you said?' fixes it.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  howtointerrupt: [
+    {
+      name: "Interrupting Is Always Rude",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The pack-wide stance: interrupting is not rude. Interrupting badly is.\n\nMost people carry a flat rule that says never cut anyone off, and sit through meetings with something useful unsaid.\n\nThe three thoughts that cause the trouble:\n1. \"Interrupting is always rude\" — conversation is not a queue. Cutting across someone is rude; signalling first is not.\n2. \"I'll wait for the right moment\" — in a monologue there is no right moment.\n3. \"It's not important enough\" — you are the worst possible judge of that.\n\nMindset: interject respectfully without dominating — and without disappearing either.",
+      inputs: [
+        { q: "Interrupting is simply rude, so I never do it.", a: "\"Cutting across someone is rude. A signal and a reason isn't the same thing.\"", bundle: 'pro' },
+        { q: "I'll wait for the right moment.", a: "\"In a monologue there is no moment. I have to make one.\"", bundle: 'pro' },
+        { q: "I sat through the whole meeting with something useful unsaid.", a: "\"Saying nothing has a cost too. It just isn't as visible.\"", bundle: 'pro' },
+        { q: "Speaking up would make me the difficult one.", a: "\"Done well it makes me the engaged one. It's the delivery that decides which.\"", bundle: 'pro' },
+        { q: "Well-mannered people wait their turn.", a: "\"In a meeting there are no turns. There are people who speak and people who don't.\"", bundle: 'pro' },
+        { q: "I'd be putting myself ahead of them.", a: "\"For eight seconds, with a reason. That's not ahead, that's alongside.\"", bundle: 'pro' },
+        { q: "Nobody else is interrupting.", a: "\"Watch again. The ones I think aren't are just doing it smoothly.\"", bundle: 'pro' },
+        { q: "If it mattered they'd have asked me.", a: "\"They can't ask for something they don't know I have.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Is All or Nothing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind Signal the Interruption: you are not asking permission, you are giving warning.\n\nThe reason people either stay silent or barge in is that they think there are only two options. There is a third, and it costs two words: a cue that lets the speaker choose when to stop, so nobody gets cut off mid-word.\n\nWhat the signal actually does:\n1. Hands them control of the moment they stop.\n2. Tells the room this is deliberate, not impatience.\n3. Buys you the second you need to line up your own sentence.\n\nMindset: \"Sorry —\" is a complete signal. You do not need a paragraph of apology, and a long one makes the interruption bigger than it was.",
+      inputs: [
+        { q: "It's either say nothing or cut straight across.", a: "\"There's a third option and it costs two words. 'Sorry — can I?'\"", bundle: 'pro' },
+        { q: "I apologise my way into every interruption.", a: "\"One 'sorry' is a signal. Three is an announcement that I've done something wrong.\"", bundle: 'pro' },
+        { q: "I need permission before I can speak.", a: "\"I'm giving warning, not asking permission. They choose when to stop, that's all.\"", bundle: 'pro' },
+        { q: "I can't find an opening, so I freeze.", a: "\"The opening is the signal. I make it, I don't find it.\"", bundle: 'pro' },
+        { q: "There's no polite way in, so I'll wait.", a: "\"'Can I jump in —' is the polite way in. Two words and I'm through.\"", bundle: 'pro' },
+        { q: "I'd have to talk over them to be heard.", a: "\"The signal isn't talking over. It's a knock before the door opens.\"", bundle: 'pro' },
+        { q: "I opened with three sentences of apology.", a: "\"The apology is the interruption. Cut it and go straight to the point.\"", bundle: 'pro' },
+        { q: "They didn't stop when I said something.", a: "\"Say it once more, slightly louder, same words. Most people stop on the second.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Too Basic to Ask",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind Why It Cannot Wait: you are the worst judge of whether your point is worth stopping someone for.\n\nThis is the quiet reason most good interruptions never happen: by the time you have settled the question with yourself, the moment has gone.\n\nWhere the doubt shows up:\n1. You decide your question is too basic — it is usually the room's question.\n2. You wait to see if someone else says it — they are waiting too.\n3. You conclude it was not important, after the moment passed.\n\nMindset: if you can name why it matters, it matters. And \"I've lost the thread\" is a perfectly good reason.",
+      inputs: [
+        { q: "My question is too basic to ask out loud.", a: "\"The basic question is usually the room's question. Someone has to ask it.\"", bundle: 'pro' },
+        { q: "Someone else will raise it.", a: "\"They're waiting too. That's how a thing goes unsaid by everybody.\"", bundle: 'pro' },
+        { q: "I talked myself out of it and the moment went.", a: "\"If I can say why it matters, it matters. That test is enough.\"", bundle: 'pro' },
+        { q: "I'm lost but too embarrassed to stop them.", a: "\"'I've lost the thread' is a real reason. Half the room is probably with me.\"", bundle: 'pro' },
+        { q: "Everyone else clearly followed that.", a: "\"Half of them didn't. I'd be doing four people a favour.\"", bundle: 'pro' },
+        { q: "Asking would show I wasn't keeping up.", a: "\"It shows I was following closely enough to notice where it broke.\"", bundle: 'pro' },
+        { q: "It's probably answered later in the deck.", a: "\"Then they'll say so in four words. That's a cheap outcome.\"", bundle: 'pro' },
+        { q: "I'll catch up afterwards on my own.", a: "\"I'll spend twenty minutes on what ten seconds would have fixed.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "I Have Taken Too Much Room",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about the other failure: some people do not interrupt too little.\n\nEverything else in this pack pushes towards speaking up, so it is worth naming the opposite. If interrupting comes easily to you, the skill you need is not a better opening line — it is the count, and the habit of handing the floor back.\n\nThree things worth watching in yourself:\n1. The count — are you the only person who has cut in?\n2. The hand-back — do you return the floor, or keep it?\n3. The reason — was there one, or did you just have something to say?\n\nMindset: interject effectively without dominating. If you have interrupted twice and nobody else has once, the next move is to wait.",
+      inputs: [
+        { q: "I've interrupted three times and nobody else has once.", a: "\"That's the count telling me something. Next one I wait.\"", bundle: 'pro' },
+        { q: "Once I've cut in, I keep the floor.", a: "\"An interruption I hand back is a contribution. One I keep is a takeover.\"", bundle: 'pro' },
+        { q: "I interrupt because I've got something to say, not because there's a reason.", a: "\"Wanting to talk isn't a reason. If I can't name one, it can wait.\"", bundle: 'pro' },
+        { q: "Somebody else has been trying to get in.", a: "\"They've been waiting longer than me. Give it to them first.\"", bundle: 'pro' },
+        { q: "I've spoken more than anyone and I can feel it.", a: "\"Good — I noticed. Hand the next one over by name.\"", bundle: 'pro' },
+        { q: "If I stop now my point is only half made.", a: "\"Make the other half after someone else has been in. It'll land better.\"", bundle: 'pro' },
+        { q: "Someone keeps starting and getting cut off.", a: "\"Then use my next turn on them. 'I think Sam was going to say something.'\"", bundle: 'pro' },
+        { q: "I interrupted because I could, not because I had to.", a: "\"Notice it. The reason is what separates an interruption from a habit.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "They Will Think I Wasn't Listening",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Cutting in on someone mid-thought looks like proof that you stopped following them a while ago and have been waiting to say your own thing — which is often exactly what it is, and knowing that makes it harder to do at all.\n\nOne clause fixes it. Naming their point before you make yours turns the interruption into a response, and a response cannot be an accusation of not listening. It also forces you to have actually followed them, which is the honest half of the problem.\n\nMindset: say their point first, in four words. Then the interruption is part of the conversation rather than a break in it.",
+      inputs: [
+        { q: "They'll think I stopped listening ages ago.", a: "\"Name their last point before mine. That's the proof, and it takes four words.\"", bundle: 'pro' },
+        { q: "I can't summarise what they said, which is the problem.", a: "\"Then I wasn't listening. Wait for the next point and catch that one.\"", bundle: 'pro' },
+        { q: "Acknowledging them first makes the interruption longer.", a: "\"By two seconds. It's what stops them re-explaining for two minutes.\"", bundle: 'pro' },
+        { q: "My point contradicts theirs, so acknowledging feels false.", a: "\"I'm acknowledging that they said it, not that they're right.\"", bundle: 'pro' },
+        { q: "They were going nowhere and I stopped it.", a: "\"Then say where they were going. 'So the timing's the issue —' and turn from there.\"", bundle: 'pro' },
+        { q: "It sounds like a technique when I do it.", a: "\"Only if I use a formula. Use their own words and it just sounds like listening.\"", bundle: 'pro' },
+        { q: "I did interrupt and it landed badly.", a: "\"Go back. 'Sorry — finish what you were saying' repairs almost all of it.\"", bundle: 'pro' },
+        { q: "There's no time to acknowledge, I have to be quick.", a: "\"Four words is quick. It's the apology afterwards that costs time.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Handing It Back Undoes It",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that giving the floor back cancels what you just said — so you keep talking, and the interruption turns into a takeover.\n\nWhat is true instead: the hand-back is what makes the interruption survivable. People forgive being cut off; they do not forgive being replaced. Four words at the end — \"anyway, sorry, go on\" — buy the whole thing.\n\nWhy it feels right: letting go of the floor feels like conceding, especially if the point landed badly.\n\nWhat it costs: the point you fought your way in to make is remembered as the moment you talked over someone.\n\nMindset: say it, then give it back.",
+      inputs: [
+        { q: "If I hand it back it looks like I shouldn't have interrupted.", a: "\"The opposite. Handing it back is what makes the interruption reasonable.\"", bundle: 'pro' },
+        { q: "I've fought my way in, I may as well finish properly.", a: "\"I can finish and still give it back. Those are two seconds apart.\"", bundle: 'pro' },
+        { q: "They'll carry on without me anyway.", a: "\"Then nothing is lost. If they don't, I've just handed them the room.\"", bundle: 'pro' },
+        { q: "Saying sorry again at the end is too much apologising.", a: "\"It isn't an apology. 'Go on, you were mid-thing' is an instruction.\"", bundle: 'pro' },
+        { q: "I interrupted and then apologised without saying the thing.", a: "\"That's the worst version — the cost with none of the benefit. Say it, then hand back.\"", bundle: 'pro' },
+        { q: "Giving the floor back means I lose the argument.", a: "\"It means I finish my sentence and they finish theirs. Nobody loses a floor.\"", bundle: 'pro' },
+        { q: "If I stop talking someone else will jump in first.", a: "\"Name who I'm handing to. 'Sara, you were saying' settles it.\"", bundle: 'pro' },
+        { q: "The point only works if I keep going until they agree.", a: "\"Agreement doesn't come from holding the floor. It comes from them getting theirs back.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  handleinterruptions: [
+    {
+      name: "Being Cut Off Means I Lost It",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The pack-wide stance: being interrupted is not a verdict on you. Example of the shift — instead of freezing or snapping, you take a breath and reclaim your point.\n\nThe three thoughts that cause the trouble:\n1. \"They think what I'm saying doesn't matter\" — most interruptions are impatience, not judgement.\n2. \"If I push back I'll seem difficult\" — asking to finish is the most ordinary request there is.\n3. \"The moment's gone now\" — the moment is gone when you decide it is.\n\nMindset: read the interruption as a signal, not an attack. Composure keeps both your turn and your standing in the room.",
+      inputs: [
+        { q: "Being cut off makes me feel small and dismissed.", a: "\"Being interrupted isn't a verdict on my worth. Usually it means they're eager, not that I'm boring.\"", bundle: 'pro' },
+        { q: "They cut in, so they were having a go at me.", a: "\"It's a signal, not an attack — excited, confused, impatient. I can read it before I react.\"", bundle: 'pro' },
+        { q: "I can feel the irritation rising when I'm cut off.", a: "\"Staying calm is the whole game. A steady tone holds the floor better than a raised voice.\"", bundle: 'pro' },
+        { q: "I go blank the moment someone talks over me.", a: "\"Being cut off isn't the moment I disappear. I take a breath and reclaim my turn.\"", bundle: 'pro' },
+        { q: "They cut across me, so the point is gone.", a: "\"It's paused. 'Coming back to what I was saying —' retrieves it whole.\"", bundle: 'pro' },
+        { q: "It happens to me more than to other people.", a: "\"Possibly. Worth noticing whether I trail off at the ends — that's an invitation.\"", bundle: 'pro' },
+        { q: "I went blank the second they started talking.", a: "\"Write the last three words down if I can. The thread comes back with them.\"", bundle: 'pro' },
+        { q: "They didn't even notice they did it.", a: "\"Most don't. That's why naming it once works better than resenting it twice.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Finishing Is Pushy",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind Reinforce the Boundary: finishing your sentence is fair, not rude, and asking for it needs no apology. Example of the shift — instead of trailing off when someone pushes, you calmly hold your point one more beat.\n\nWhere it goes wrong:\n1. You trail off mid-sentence and let them have it.\n2. You apologise for wanting to finish — \"sorry, could I just…\"\n3. You wait for a gap that never comes.\n\nMindset: finishing your sentence is fair, not rude. It needs no apology, no raised voice and no explanation — just the plain request.",
+      inputs: [
+        { q: "Finishing my point would be rude and pushy.", a: "\"Finishing my sentence isn't rude — it's fair. I'm allowed to take my turn.\"", bundle: 'pro' },
+        { q: "Being firm means being cold.", a: "\"I can be firm and friendly at once. 'Let me finish' can be warm.\"", bundle: 'pro' },
+        { q: "I should apologise for asking to finish.", a: "\"No apology needed — I'm asking for something reasonable, not imposing.\"", bundle: 'pro' },
+        { q: "The moment they push, I back down.", a: "\"Holding my point once, calmly, isn't aggression — it's just taking my share of the space.\"", bundle: 'pro' },
+        { q: "Asking to finish sounds like a telling-off.", a: "\"Not with a flat voice and eight words. 'Let me finish this bit' is neutral.\"", bundle: 'pro' },
+        { q: "I softened it so much they carried straight on.", a: "\"The softening was the problem. Same words, no apology in front.\"", bundle: 'pro' },
+        { q: "If I'm firm once they'll think I'm difficult.", a: "\"Once is a boundary. Every time and with heat is what reads as difficult.\"", bundle: 'pro' },
+        { q: "They're more senior, I can't ask them to wait.", a: "\"'One more sentence and it's yours' works upward as well as sideways.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Yielding Is Losing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind Pick It Up After: you don't have to win every interruption, and giving way on purpose isn't losing. Example of the shift — instead of fighting for the floor, you let it pass and calmly come back to your point.\n\nWhere it goes wrong:\n1. You fight for a point that was never worth the friction.\n2. You give way and then never come back to it.\n3. You treat every interruption as a test you have to pass.\n\nMindset: you do not have to win every interruption. Giving way on purpose and returning calmly is stronger than clinging on — but only if you actually return.",
+      inputs: [
+        { q: "I have to win every interruption.", a: "\"I don't have to win it. Sometimes letting it go and coming back is the stronger move.\"", bundle: 'pro' },
+        { q: "My point is gone now that they've talked over it.", a: "\"My point didn't stop being worth saying just because someone talked over it.\"", bundle: 'pro' },
+        { q: "I keep getting cut off, so maybe I don't belong here.", a: "\"If I keep getting cut off, that's information about the room, not proof I don't belong in it.\"", bundle: 'pro' },
+        { q: "Giving way is the same as losing.", a: "\"Giving way on purpose isn't losing — it's me choosing when the fight is worth it.\"", bundle: 'pro' },
+        { q: "If I let this one go I've lost the point.", a: "\"I've delayed it. Reclaiming it later costs less than fighting for it now.\"", bundle: 'pro' },
+        { q: "Giving way once means giving way always.", a: "\"Choosing isn't giving way. That's the difference between yielding and being rolled over.\"", bundle: 'pro' },
+        { q: "The room will read it as backing down.", a: "\"The room reads the person who comes back calmly as the steadier one.\"", bundle: 'pro' },
+        { q: "Their point turned out to be better than mine.", a: "\"Then letting it in was the right call. Say so and move on.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Joke Undercuts My Point",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Lightening the moment when someone talks over you feels like conceding that the point was not serious — as though you had to make it palatable to be allowed to finish it.\n\nBut the joke is not aimed at your point; it is aimed at the interruption. It says the cutting-in was noticed, without the room having to watch a correction, and it buys you the floor back at almost no cost to anyone's face. The point that follows is exactly as serious as it was.\n\nMindset: the joke handles the interruption. Your point is what comes after it, unchanged.",
+      inputs: [
+        { q: "A joke makes the whole thing sound trivial.", a: "\"It makes the interruption trivial. What I say next is as serious as I like.\"", bundle: 'pro' },
+        { q: "I'm not quick enough to be funny under pressure.", a: "\"I don't need funny. 'I'll take that as enthusiasm' is enough.\"", bundle: 'pro' },
+        { q: "They'll think I'm not bothered when I am.", a: "\"Bothered is what shows if the joke has an edge. Say it warm and finish the point.\"", bundle: 'pro' },
+        { q: "It lets them off for interrupting.", a: "\"It lets the room off. They still hear that it happened.\"", bundle: 'pro' },
+        { q: "If I joke I'll have to keep it light afterwards.", a: "\"No. One light line and then straight back to the sentence I was on.\"", bundle: 'pro' },
+        { q: "My joke landed flat and now it's worse.", a: "\"Carry on as though it didn't happen. Four seconds and nobody remembers.\"", bundle: 'pro' },
+        { q: "It feels like a trick to avoid saying the real thing.", a: "\"Then say the real thing after it. The joke buys me the room to.\"", bundle: 'pro' },
+        { q: "It's the fourth time and a joke won't cover it.", a: "\"Correct. Fourth time is the boundary, not the joke.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Inviting Them In Means I Lose the Floor",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Promising the interrupter a turn the moment you are done feels like handing over the thing you were trying to keep — you have just told them the floor is theirs, and now finishing your point looks like a formality before the real answer.\n\nIt does the opposite. An interrupter is usually pushing because they think they will not get in at all; a named turn removes the reason to push. And you have set the order rather than lost it — you finish, then they go, which is the sequence you wanted anyway.\n\nMindset: promising them next is how you keep now. It converts a fight over the floor into a queue.",
+      inputs: [
+        { q: "Offering them a turn hands over the floor.", a: "\"It hands over the next one. I've just kept this one.\"", bundle: 'pro' },
+        { q: "They'll take it as permission to jump in again.", a: "\"They'll take it as a place in the queue. That's what stops the jumping.\"", bundle: 'pro' },
+        { q: "I might forget to come back to them.", a: "\"Then I've broken it once and they'll push harder. Say the name and remember it.\"", bundle: 'pro' },
+        { q: "What I have left to say is short anyway.", a: "\"Then it's thirty seconds and they get their turn. Say that out loud.\"", bundle: 'pro' },
+        { q: "Their point is probably better than the rest of mine.", a: "\"Maybe. Finish anyway — half a point on the record is worth nothing.\"", bundle: 'pro' },
+        { q: "It sounds like I'm chairing a meeting I don't chair.", a: "\"'Give me ten seconds and it's yours' isn't chairing. It's answering.\"", bundle: 'pro' },
+        { q: "They ignored the offer and kept going.", a: "\"Then this is the boundary case, not the invitation case. Different move.\"", bundle: 'pro' },
+        { q: "I invited them in and they had nothing.", a: "\"Fine. That's the interruption revealed for what it was, at no cost to me.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  validation: [
+    {
+      name: "The Validation Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The pack-wide stance: validation is about acknowledging, not agreeing.\n\nThis single confusion is why so many people withhold validation from somebody who needs it. They believe that saying \"that makes sense\" concedes the argument, so they say nothing, and the other person reads the silence as judgement.\n\nThe three thoughts that cause the trouble:\n1. \"If I validate this I've agreed with it\" — you have acknowledged it, which is different.\n2. \"But they're wrong about what happened\" — the feeling is still true.\n3. \"It'll be used against me later\" — name the object and it cannot be.\n\nMindset: validating builds trust, lowers defensiveness and makes the conversation possible. None of that requires you to change your own view by a millimetre.",
+      inputs: [
+        { q: "You hold back validation in case it counts as agreeing.", a: "\"Acknowledging and agreeing are different. I can do the first and keep my view.\"", bundle: 'pro' },
+        { q: "You think they've got the facts wrong.", a: "\"The feeling is still a fact. I can validate that and question the rest after.\"", bundle: 'pro' },
+        { q: "You worry it'll be quoted back at you.", a: "\"Then name what I'm validating. 'Your frustration makes sense' can't be misquoted.\"", bundle: 'pro' },
+        { q: "Your silence is being read as judgement.", a: "\"Saying nothing isn't neutral. It reads as a verdict, and not a kind one.\"", bundle: 'pro' },
+        { q: "You are about to argue the facts first.", a: "\"The facts can wait a sentence. Nothing lands before the feeling is acknowledged.\"", bundle: 'pro' },
+        { q: "Validating feels like taking their side against somebody.", a: "\"It's a comment on them, not a verdict on anyone else.\"", bundle: 'pro' },
+        { q: "You think they should be over it by now.", a: "\"Should isn't a fact about how long things take.\"", bundle: 'pro' },
+        { q: "You want to be honest rather than kind.", a: "\"Both. Acknowledge first, then say what I think — in that order it survives.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Overreaction Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind Normalise the Reaction: almost every reaction makes sense from inside the situation that produced it.\n\nFrom the outside a reaction can look disproportionate. From the inside, with the history, the tiredness and the three earlier things that week, it is usually the obvious response. Normalising is just saying you can imagine the inside.\n\nWhere the judgement creeps in:\n1. You measure their reaction against the event rather than against their week.\n2. You compare it with how you would have reacted with none of their context.\n3. You think \"I wouldn't have minded\" and treat that as the standard.\n\nMindset: assume there is a reason and you will almost always be right. \"Anyone in your position\" is not a kindness, it is usually just accurate.",
+      inputs: [
+        { q: "Their reaction looks disproportionate to the event.", a: "\"Measured against their week rather than the event, it probably isn't.\"", bundle: 'pro' },
+        { q: "You think you would not have minded.", a: "\"I'd have their history, not mine. That's what makes the difference.\"", bundle: 'pro' },
+        { q: "You catch yourself deciding they overreacted.", a: "\"Assume there's a reason. I'm nearly always right when I do.\"", bundle: 'pro' },
+        { q: "They apologise for how they feel.", a: "\"That's the thing to answer first. 'Anyone would have' is usually just true.\"", bundle: 'pro' },
+        { q: "You would have shrugged it off.", a: "\"With my week, maybe. Not with theirs.\"", bundle: 'pro' },
+        { q: "They have been upset about this for three days.", a: "\"Then something in it is bigger than what I can see.\"", bundle: 'pro' },
+        { q: "You cannot see what would make anybody react like that.", a: "\"That's a fact about my view, not about their reaction.\"", bundle: 'pro' },
+        { q: "They are reacting to something small in front of you.", a: "\"It's rarely the thing in front of me. Ask what it sits on top of.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Dismissing Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance the whole pack rests on: avoid judging or dismissing feelings, even when you see things differently.\n\nThe dismissals rarely arrive as open disagreement. They arrive as small helpful corrections — putting it in perspective, pointing out the bright side, explaining the other person's reasons — and each one quietly says the feeling should not be there.\n\nThree dismissals that do not look like dismissals:\n1. \"At least…\" — anything after it makes the feeling smaller.\n2. \"To be fair, she probably…\" — defending the other person before acknowledging yours.\n3. \"Try not to take it personally\" — instructing them out of a feeling they already have.\n\nMindset: the feeling is already there. Nothing you say will remove it, and everything that tries makes them less likely to tell you the next one.",
+      inputs: [
+        { q: "You are about to say \"at least…\"", a: "\"Everything after 'at least' shrinks the feeling. Say the first part instead.\"", bundle: 'pro' },
+        { q: "You want to explain the other person's side.", a: "\"Not yet. That's defending them before I've acknowledged this.\"", bundle: 'pro' },
+        { q: "You want to tell them not to take it personally.", a: "\"They already have. Instructions don't undo feelings.\"", bundle: 'pro' },
+        { q: "You want to put it in perspective for them.", a: "\"Perspective is for later, and usually for them to find, not me to supply.\"", bundle: 'pro' },
+        { q: "You want to say it will look different in a week.", a: "\"It might. Saying so today removes today.\"", bundle: 'pro' },
+        { q: "You are about to say you know how they feel.", a: "\"I don't, quite. Ask instead — same warmth, none of the risk.\"", bundle: 'pro' },
+        { q: "You want to tell them not to worry.", a: "\"Worry doesn't take instructions. Say the worry makes sense first.\"", bundle: 'pro' },
+        { q: "You are comparing it to something worse.", a: "\"Comparison is a way of ending the conversation politely.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Generic Warmth Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about delivery: the detail is what makes validation land.\n\nEvery phrase in this pack can be said sincerely and still bounce, and the reason is almost always that it was general. A validation with no specifics in it could have been said to anybody, and people can hear that instantly.\n\nWhat specificity does:\n1. Proves you listened — you could not have said it before they finished.\n2. Names the object — so it cannot be mistaken for agreement.\n3. Makes it about them rather than about being supportive.\n\nMindset: one detail from their actual story beats three warm sentences. \"A whole week of dreading it\" does more than \"that sounds really hard\".",
+      inputs: [
+        { q: "Your response could have been said to anyone.", a: "\"Then it'll land like it was. Put one detail of theirs in it.\"", bundle: 'pro' },
+        { q: "You reach for a phrase because it sounds supportive.", a: "\"Supportive-sounding isn't the same as landing. What actually happened to them?\"", bundle: 'pro' },
+        { q: "You do not know enough detail to be specific.", a: "\"Then ask. A question beats a general kindness every time.\"", bundle: 'pro' },
+        { q: "You said something warm and they deflated.", a: "\"Too generic. Name the actual thing and try again.\"", bundle: 'pro' },
+        { q: "You are about to say that sounds really hard.", a: "\"Add which part. 'The waiting' turns a phrase into a sentence.\"", bundle: 'pro' },
+        { q: "You have forgotten the details they gave you.", a: "\"Then ask for one. Being asked lands better than being soothed.\"", bundle: 'pro' },
+        { q: "You want to say something comforting quickly.", a: "\"Quick and general is what people mean when they say it didn't help.\"", bundle: 'pro' },
+        { q: "You are worried a specific guess will be wrong.", a: "\"Wrong and specific still lands. They correct it and feel heard doing it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Taking a Position Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind the fourth move: the pack's other three cost you nothing, and this one does.\n\nThe other three can all be done sincerely without taking a position on what happened. That is what makes them safe, and it is also why they sometimes fall flat.\n\nThe three thoughts that cause the trouble:\n1. \"If I say it was wrong I'm taking sides\" — you are, about one named action.\n2. \"I don't know the whole story\" — then say which part you are speaking to.\n\nMindset: say it only when you mean it. A hedged version of this move is worse than not making it.",
+      inputs: [
+        { q: "You can see it was unfair but you stay on the feeling.", a: "\"The feeling isn't the only thing that's true here. I can say the rest.\"", bundle: 'pro' },
+        { q: "Saying it was wrong feels like picking a side.", a: "\"It is picking a side, about one action. That's allowed.\"", bundle: 'pro' },
+        { q: "You don't know the whole story.", a: "\"Then I'll name the part I do know about and leave the rest open.\"", bundle: 'pro' },
+        { q: "You worry it will be quoted back at you.", a: "\"Then I'll say what was done, not what somebody is.\"", bundle: 'pro' },
+        { q: "You hedge it into something that means nothing.", a: "\"A hedged version is worse than none. Either I mean it or I don't say it.\"", bundle: 'pro' },
+        { q: "Your sympathy keeps landing as politeness.", a: "\"Because I've validated everything except the thing that happened.\"", bundle: 'pro' },
+        { q: "You would say it to them but not about them.", a: "\"Then it's true enough to say out loud here.\"", bundle: 'pro' },
+        { q: "They are defending the person who did it.", a: "\"I can hold both — that he had reasons, and that this part wasn't on.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  supportingconversations: [
+    {
+      name: "Solving It",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "When someone brings you a problem, it feels obvious that they want it solved. Often they do not. They want to say it out loud in front of someone who takes it seriously, and to find out what they think by hearing themselves say it.\n\nAnswering the wrong request is the single commonest failure in supportive conversations, and it does not look like a failure from the inside — it looks like being helpful.\n\nMindset: assume they want to be heard until you have evidence otherwise.",
+      inputs: [
+        { q: "They've told me the problem, so they want a solution.", a: "Often they want a witness. Ask which before you decide.", bundle: 'pro' },
+        { q: "Just listening feels like doing nothing.", a: "It's the thing most people say afterwards was the most useful.", bundle: 'pro' },
+        { q: "If I don't help, what am I even here for?", a: "You're the person they said it to. That's not nothing, it's most of it.", bundle: 'pro' },
+        { q: "They keep going round in circles, I should intervene.", a: "Circling is how people think out loud. Let them get round again.", bundle: 'pro' },
+        { q: "I can see the answer clearly.", a: "Then it'll still be there in ten minutes, when they're ready for it.", bundle: 'pro' },
+        { q: "They asked what I'd do, so they want advice.", a: "Sometimes. Ask whether they want the answer or the company first.", bundle: 'pro' },
+        { q: "Sitting there saying nothing feels lazy.", a: "Staying is work. It's just work that doesn't look like anything.", bundle: 'pro' },
+        { q: "If I don't offer something useful I've failed them.", a: "The useful thing was somebody hearing the whole of it without flinching.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Timing of Advice",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The same suggestion, said at two different moments, has completely opposite effects. Offered before someone feels heard, it says: your feeling is not the point, let's get to the practical bit. Offered afterwards, it is welcome and often exactly what they wanted.\n\nNothing about the advice changes. Only the order does, and the order is free.\n\nMindset: acknowledge first, then suggest. It costs one sentence.",
+      inputs: [
+        { q: "The practical answer is the useful part.", a: "It is, and it won't be heard until they feel heard.", bundle: 'pro' },
+        { q: "Talking about feelings first is a bit indulgent.", a: "It's one sentence, and it's what makes the rest work.", bundle: 'pro' },
+        { q: "They're a practical person, they'd rather I got to it.", a: "Even practical people want to know the problem registered.", bundle: 'pro' },
+        { q: "I'll acknowledge it after I've explained the fix.", a: "By then they've stopped listening. Do it in that order and see.", bundle: 'pro' },
+        { q: "They asked what to do, so they want advice.", a: "Probably. Ten words of acknowledgement first still improves it.", bundle: 'pro' },
+        { q: "I can see the answer and it'll take ten seconds.", a: "Ten seconds, and it'll land as dismissal. Spend one sentence first.", bundle: 'pro' },
+        { q: "They know I care, I don't have to say it.", a: "They know it in general. They need it in this conversation.", bundle: 'pro' },
+        { q: "Getting to the practical part respects their time.", a: "Not if they have to tell you again next week because it didn't land.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Outcome",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "A lot of the discomfort in supporting someone comes from feeling responsible for the outcome — as though if they leave still upset, you have failed.\n\nYou have not. Most things people bring you are not yours to solve, and many are not solvable at all. The measure is whether they felt less alone with it, not whether it went away.\n\nMindset: you are keeping them company in it. That is the whole job.",
+      inputs: [
+        { q: "I couldn't help, they left as upset as they arrived.", a: "They left having said it to someone. That's the thing that helps.", bundle: 'pro' },
+        { q: "If I can't solve it, I'm wasting their time.", a: "Ask them. Almost nobody says the listening was a waste.", bundle: 'pro' },
+        { q: "I feel useless just sitting here.", a: "Useless is how it feels from inside. It's rarely how it looks from outside.", bundle: 'pro' },
+        { q: "I should have said something wiser.", a: "Nobody remembers what was said. They remember who stayed.", bundle: 'pro' },
+        { q: "It's still not sorted, so nothing I did mattered.", a: "Sorted wasn't available. Company was.", bundle: 'pro' },
+        { q: "They're no better off than when they arrived.", a: "They're less alone with it. That was the improvement available.", bundle: 'pro' },
+        { q: "I should have known what to say.", a: "Nobody knows what to say. Staying is the part available to everyone.", bundle: 'pro' },
+        { q: "I feel useless just sitting here.", a: "Useless is how it feels from inside. It isn't how it looks from theirs.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Just Knowing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "There is an idea that a good friend should simply know what someone needs, and that asking is an admission of failure. It is the opposite: asking is faster, more accurate, and the person almost always appreciates being consulted about their own situation.\n\n\"Do you want ideas or do you want to vent?\" is one of the most useful sentences in this pack, and it takes two seconds.\n\nMindset: ask. Guessing is not more caring, it is just less reliable.",
+      inputs: [
+        { q: "I should be able to tell what they need.", a: "Sometimes you can. When you can't, asking beats guessing every time.", bundle: 'pro' },
+        { q: "Asking makes it clinical.", a: "It makes it collaborative. Most people are relieved to be asked.", bundle: 'pro' },
+        { q: "They'd find the question odd.", a: "Try it once. The usual reaction is \"oh — vent, please\".", bundle: 'pro' },
+        { q: "It puts the work back on them.", a: "It gives them the choice. That's different, and it's theirs to make.", bundle: 'pro' },
+        { q: "I'll just try something and see.", a: "You can. Asking is the same thing without the misfire.", bundle: 'pro' },
+        { q: "Asking what they need breaks the flow.", a: "One question, six words. It saves twenty minutes of guessing wrong.", bundle: 'pro' },
+        { q: "They might not know what they need.", a: "Then you've found that out too, which is also worth knowing.", bundle: 'pro' },
+        { q: "It's obvious they just want to vent.", a: "Usually. Checking costs nothing and occasionally saves the whole conversation.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "You Are the One People Come To",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "The belief in this deck is not a mistake. Being the person others bring things to is a real thing to be, and most people who are it have been told so kindly and often.\n\nSo this deck does not argue with it. It reads the meter.\n\nAvailability that is never declined stops being a gift and becomes a fixture. Nobody asks whether tonight is a good night, because the answer has always been yes — so what they get is the tired version, and neither of you can say so.\n\nMindset: being available is yours to give. Pretending it costs nothing is what turns it into something you eventually withdraw.",
+      inputs: [
+        { q: "I'm the one people come to. I'd never turn somebody away.", a: "The people who never turn anyone away are the ones who eventually stop answering.", bundle: 'pro' },
+        { q: "I'd rather be tired than unavailable.", a: "Tired attention is what they get, and they can tell. That's the bill.", bundle: 'pro' },
+        { q: "It would be selfish to say I haven't got it in me tonight.", a: "Half-listening is less honest than saying so. Most people would take the rescheduling.", bundle: 'pro' },
+        { q: "I never tell anyone I'm at capacity.", a: "So nobody knows when they've got the good version of you and when they haven't.", bundle: 'pro' },
+        { q: "Being needed isn't a burden.", a: "It isn't. Pretending it weighs nothing is what turns it into one.", bundle: 'pro' },
+        { q: "If I don't help with this, who will?", a: "Somebody better placed, if you say you're out of your depth. You're holding that door shut.", bundle: 'pro' },
+        { q: "I've always been the steady one.", a: "And nobody has asked how you are in a while, because you made it unnecessary.", bundle: 'pro' },
+        { q: "I'd feel guilty putting it off until tomorrow.", a: "Tomorrow's version of you is more use to them. Guilt isn't the measure of help.", bundle: 'pro' },
+      ]
+    },
+  ],
+  describethings: [
+    {
+      name: "Missing Words",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Missing vocabulary feels like being stuck, and the instinct is to stop and search for the word while the conversation waits. But describing around a word is a normal, respected part of speaking — including for people speaking their own first language.\n\nPurpose, shape and comparison will nearly always get you there, and the listener usually supplies the word themselves.\n\nMindset: talk around it and keep going.",
+      inputs: [
+        { q: "I don't know what it's called, so I can't explain it.", a: "\"I can say what it's for. That gets me there faster than the word would.\"", bundle: 'pro' },
+        { q: "I'll sound like I don't know what I'm talking about.", a: "\"I'll sound like someone describing something. That's what everyone does.\"", bundle: 'pro' },
+        { q: "I should stop until I remember the word.", a: "\"The word comes back while I'm talking, not while I'm waiting.\"", bundle: 'pro' },
+        { q: "They'll be annoyed if I take the long way round.", a: "\"They'll be annoyed by silence. The long way round is fine.\"", bundle: 'pro' },
+        { q: "Everyone else would know this word.", a: "\"Half of them would describe it exactly like I'm about to.\"", bundle: 'pro' },
+        { q: "I knew this word yesterday and it's gone.", a: "\"It'll come back mid-sentence. Start the sentence.\"", bundle: 'pro' },
+        { q: "Describing it the long way is a bit humiliating.", a: "\"It's what interpreters do professionally. It's a skill, not a shortfall.\"", bundle: 'pro' },
+        { q: "They'll finish my sentence for me and that's embarrassing.", a: "\"That's the system working. Take the word and carry on.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Detail",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Vague descriptions feel efficient — you are not taking up much of someone's time. In practice they cost the listener far more, because they have to ask three follow-up questions or go and look at the wrong thing.\n\nWhere it shows up:\n1. You round \"dark green with a dent in the lid\" down to \"a green one\".\n2. You leave the size out because you are not sure of the number.\n3. You stop early so as not to go on about it.\n\nMindset: being specific is the considerate option, not the fussy one. One good detail up front saves both of you the round trip.",
+      inputs: [
+        { q: "They don't need all that detail.", a: "\"They need one detail. Choose the right one and it's shorter, not longer.\"", bundle: 'pro' },
+        { q: "I'm being fussy describing it this precisely.", a: "\"I'm saving them from finding the wrong thing.\"", bundle: 'pro' },
+        { q: "They'll work it out from context.", a: "\"Sometimes. And sometimes they come back with the wrong jar.\"", bundle: 'pro' },
+        { q: "It feels pedantic to say \"navy, not bright blue\".", a: "\"It's four extra words and it removes half the possibilities.\"", bundle: 'pro' },
+        { q: "I don't want to sound like I'm lecturing.", a: "\"Precision isn't lecturing. Repeating myself three times is.\"", bundle: 'pro' },
+        { q: "I'm interrupting them, so I should keep it short.", a: "\"Short and wrong means interrupting them twice. One detail is shorter overall.\"", bundle: 'pro' },
+        { q: "I'd sound obsessive describing a mug this carefully.", a: "\"One distinguishing feature isn't obsessive. It's the difference between six mugs.\"", bundle: 'pro' },
+        { q: "They know the house better than I do.", a: "\"Then give them the detail, not the location. They'll do the rest.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Choosing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "With six categories to hand there is a pull to run through all of them, as if completeness were the goal. It is not. The goal is that the listener ends up with a picture, and too many details blur it.\n\nWhere it goes wrong:\n1. You give every category in order rather than the two that matter.\n2. You add a detail because you have it, not because they need it.\n3. You keep describing after they have already found the thing.\n\nMindset: pick the details this person needs, and leave the rest out. Two or three well-chosen categories beat six recited ones every time.",
+      inputs: [
+        { q: "If I leave something out they might miss it.", a: "\"If I put everything in, they'll miss all of it.\"", bundle: 'pro' },
+        { q: "I should be thorough.", a: "\"Be useful. Thorough and useful are different targets.\"", bundle: 'pro' },
+        { q: "I don't know which details matter.", a: "\"Ask what they're going to do with it. That decides.\"", bundle: 'pro' },
+        { q: "More information is always better.", a: "\"Not when someone has to hold it in their head while looking.\"", bundle: 'pro' },
+        { q: "I've started listing and can't stop.", a: "\"Stop anyway, and ask what they still need.\"", bundle: 'pro' },
+        { q: "I might as well give everything and let them pick.", a: "\"They can't pick. They don't know which one identifies it — I do.\"", bundle: 'pro' },
+        { q: "Leaving something out feels like carelessness.", a: "\"Choosing is the opposite of careless. It's the part that takes attention.\"", bundle: 'pro' },
+        { q: "I've given three details and they still look blank.", a: "\"Then the three were the wrong three. Ask what they're picturing.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Looking",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Most weak descriptions come from describing a memory rather than a thing. We reach for a general impression — \"a blue bag\" — when a second of actual looking would produce the detail that identifies it.\n\nIf the object is in front of you, look at it properly. If it is not, picture it deliberately before you start.\n\nMindset: describe what is there, not the label you filed it under.",
+      inputs: [
+        { q: "I already know what it looks like.", a: "\"I know the label. Look again for the detail nobody else's has.\"", bundle: 'pro' },
+        { q: "There's nothing distinctive about it.", a: "\"There nearly always is. A mark, a repair, a worn patch.\"", bundle: 'pro' },
+        { q: "I don't have time to study it.", a: "\"Two seconds. That's what it takes to find the giveaway.\"", bundle: 'pro' },
+        { q: "It's just an ordinary object.", a: "\"Then find the one ordinary thing that isn't true of the others.\"", bundle: 'pro' },
+        { q: "I can picture it fine, so I can describe it fine.", a: "\"Picturing and describing are different skills. Say it out loud and see.\"", bundle: 'pro' },
+        { q: "I've owned it for years, I know it perfectly.", a: "\"Familiarity is what stops me seeing it. Look like a stranger for two seconds.\"", bundle: 'pro' },
+        { q: "The room's too dark to check properly.", a: "\"Then say what I'm sure of and mark the rest as uncertain.\"", bundle: 'pro' },
+        { q: "I described it and they brought the wrong one.", a: "\"Useful. Ask what the wrong one had, and name the difference.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "I'd Have to Be Exact",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Size, colour and material invite a kind of paralysis: you do not know whether it is thirty centimetres or forty, whether that is navy or charcoal, whether the handle is steel or aluminium — so you say nothing about any of it and hand over \"a biggish dark one\".\n\nBut nobody was asking for a measurement. A description works by comparison and by narrowing, and \"about the length of your forearm\" does more work than a number would. Being wrong by five centimetres costs nothing; leaving the size out costs the whole picture.\n\nMindset: approximate out loud. A rough figure beats an omitted one every time.",
+      inputs: [
+        { q: "I don't know how big it actually is.", a: "\"Compare it to something in the room. That's more useful than centimetres anyway.\"", bundle: 'pro' },
+        { q: "If I say navy and it's black, I've misled them.", a: "\"Say 'dark blue, I think, or black'. The hedge costs two words.\"", bundle: 'pro' },
+        { q: "I can't tell what it's made of.", a: "\"Say what it feels like. Heavy, cold, hollow — that narrows it more than the material would.\"", bundle: 'pro' },
+        { q: "Guessing wrong is worse than saying nothing.", a: "\"Saying nothing leaves them with everything. A wrong guess leaves them with nearly the right thing.\"", bundle: 'pro' },
+        { q: "I should check before I describe it.", a: "\"If it's to hand, check. If it isn't, approximate and say I'm approximating.\"", bundle: 'pro' },
+        { q: "Numbers sound more precise, so I should use those.", a: "\"Only if I know them. An unfamiliar number is harder to picture than a comparison.\"", bundle: 'pro' },
+        { q: "They asked for the dimensions specifically.", a: "\"Then give a range. 'Somewhere between a book and a laptop' is a dimension.\"", bundle: 'pro' },
+        { q: "I said \"medium-sized\" and it meant nothing.", a: "\"Medium compared to what? Add the second half and it starts working.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Comparison Is Cheating",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Saying \"it's like a garlic press, but bigger\" feels like a shortcut — as though you have handed over somebody else's description instead of writing your own, and a proper answer would name the thing's own size, colour and material.\n\nBut a comparison is not a substitute for describing. It is the one move that works when the listener has nothing to build with. Five precise details about an object nobody has ever seen still leave them with nothing; one familiar object and one change leaves them with a picture.\n\nMindset: borrow the picture. It is not lazy, it is the fastest route into somebody else's head.",
+      inputs: [
+        { q: "You have never seen the thing they are describing and they keep listing details.", a: "\"Give me something to hang it on. What's it closest to?\"", bundle: 'pro' },
+        { q: "You catch yourself avoiding a comparison because it feels like cheating.", a: "\"It's basically a wheelbarrow with a lid. That's the quickest way to say it.\"", bundle: 'pro' },
+        { q: "You have given three exact details and they still look blank.", a: "\"Let me do that differently — think of a suitcase, but soft and with wheels at one end.\"", bundle: 'pro' },
+        { q: "Someone apologises for comparing their town to yours.", a: "\"No, that's helpful. I know exactly what you mean now.\"", bundle: 'pro' },
+        { q: "You are worried the comparison is not quite accurate.", a: "\"It's roughly a mandolin. Not exactly, but close enough to picture.\"", bundle: 'pro' },
+        { q: "You want to describe a job to someone outside the field.", a: "\"It's like being a translator, except the two sides are both speaking English.\"", bundle: 'pro' },
+        { q: "You are describing a place and reaching for adjectives.", a: "\"Think of your gran's front room, but four times the size.\"", bundle: 'pro' },
+        { q: "They say \"I still can't picture it\" after your third attempt.", a: "\"What's the nearest thing you have seen? I'll start from there.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  explainthings: [
+    {
+      name: "Performing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "A lot of bad explanation comes from wanting to sound like someone who knows the subject. That pulls towards completeness, jargon and length — all three of which make the listener understand less.\n\nThe measure of an explanation is not how much you demonstrated. It is whether the other person can now do or picture the thing.\n\nMindset: you are not being assessed. They are trying to understand something.",
+      inputs: [
+        { q: "I'll sound like I don't know much if I keep it that simple.", a: "The people who understand something best are the ones who can say it shortest.", bundle: 'pro' },
+        { q: "I should cover everything so they get the full picture.", a: "They don't want the full picture. They want the piece they're missing.", bundle: 'pro' },
+        { q: "If I use the proper terms they'll take me seriously.", a: "They'll take you seriously if they leave understanding it. That's the only test.", bundle: 'pro' },
+        { q: "I need to say this well or they'll think I'm vague.", a: "Say it plainly and badly. Plain and badly still works; polished and unclear doesn't.", bundle: 'pro' },
+        { q: "I feel stupid saying it in such basic words.", a: "Basic words are the hardest ones to choose. That feeling is the work, not a failure.", bundle: 'pro' },
+        { q: "There are people listening who already know this.", a: "They're not the audience. The one who asked is.", bundle: 'pro' },
+        { q: "If I simplify it I'll be leaving out something important.", a: "You'll be leaving out something true. Important is decided by what they need.", bundle: 'pro' },
+        { q: "A good explanation should sound impressive.", a: "A good explanation sounds obvious afterwards. That's the tell.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Their Confusion",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "When someone does not follow, the instinct is to feel either embarrassed or impatient. Both push you to repeat yourself in the same words, slightly louder.\n\nThe three thoughts that cause the trouble:\n1. \"I've explained this badly\" — you have explained the wrong one of the three, which is a different problem.\n2. \"They're not trying\" — a frown is effort, not resistance.\n3. \"If I say it again it'll land\" — the same words at the same level land the same way.\n\nMindset: a frown is data. It tells you which of the three moves you skipped — read it and change the move.",
+      inputs: [
+        { q: "They didn't get it. I've explained it badly.", a: "You've explained one part. Ask which part didn't land and give that one.", bundle: 'pro' },
+        { q: "I've said this three times and they still don't follow.", a: "Then it isn't a repetition problem. Try a different move — probably Why.", bundle: 'pro' },
+        { q: "They look annoyed. I should stop talking.", a: "Or ask. \"Which bit is annoying, the thing or my explaining of it?\"", bundle: 'pro' },
+        { q: "This should be obvious to them.", a: "It's obvious to you because you already know it. That's the only difference.", bundle: 'pro' },
+        { q: "If I ask what they didn't understand, I'll look like a bad explainer.", a: "You'll look like someone who wants them to get it. That reads as care.", bundle: 'pro' },
+        { q: "They said they follow, but I don't think they do.", a: "Ask them to say it back. Not a test — you're checking your own words.", bundle: 'pro' },
+        { q: "I'm getting frustrated and it's starting to show.", a: "The frustration is at the gap, not at them. Say that out loud and it defuses.", bundle: 'pro' },
+        { q: "I'll send it in writing instead, that'll be clearer.", a: "Maybe. But find out which part failed first, or you'll write the same thing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Length",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Many people over-explain out of politeness — a short answer feels dismissive, so they keep adding. The effect is the opposite of what was intended: the listener has to work harder and often ends up less clear than before.\n\nA short answer respects the other person's time and their intelligence. If they want more, they will ask, and the asking will tell you exactly what to add.\n\nMindset: stop early and leave the door open.",
+      inputs: [
+        { q: "One sentence feels like I'm brushing them off.", a: "One sentence plus \"want the longer version?\" is not brushing anyone off.", bundle: 'pro' },
+        { q: "They asked a real question, they deserve a real answer.", a: "A real answer is the one that fits. Length isn't respect.", bundle: 'pro' },
+        { q: "If I stop here they'll think I don't know the rest.", a: "They'll think you answered the question. Which you did.", bundle: 'pro' },
+        { q: "I should pre-empt the follow-up questions.", a: "Let them ask. Their questions are better than your guesses about their questions.", bundle: 'pro' },
+        { q: "Silence after a short answer feels awkward.", a: "That silence is them thinking. Leave it there.", bundle: 'pro' },
+        { q: "They made an effort to ask, so a long answer shows respect.", a: "A usable answer shows respect. Length is just length.", bundle: 'pro' },
+        { q: "I'm three minutes in and can't find a place to stop.", a: "Stop mid-thought and ask \"is that the bit you wanted?\"", bundle: 'pro' },
+        { q: "If I don't explain the background it won't make sense.", a: "Give the answer first. Background is what you add when they ask why.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Not Knowing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "There is a strong pull, when someone asks you to explain something, to produce an answer whatever the state of your knowledge. It feels like the helpful thing to do. It is not, because a confident wrong answer travels further than an uncertain one.\n\nMarking the edge of what you know makes everything inside that edge more trustworthy.\n\nMindset: the boundary of your knowledge is part of the explanation.",
+      inputs: [
+        { q: "If I say I don't know, they'll think I'm not competent.", a: "They'll think the rest of what you said was true. That's the trade, and it's a good one.", bundle: 'pro' },
+        { q: "I can probably work it out from what I do know.", a: "Then say that. \"I think it's X, but I'm reasoning, not remembering.\"", bundle: 'pro' },
+        { q: "They came to me, so I should have the answer.", a: "They came to you for a useful answer. \"Ask Sam\" is a useful answer.", bundle: 'pro' },
+        { q: "Saying \"I don't know\" will end the conversation.", a: "It usually opens it. Most people relax when someone admits a limit.", bundle: 'pro' },
+        { q: "It's a small detail, nobody will check.", a: "Someone will act on it. That's why it's worth the second of honesty.", bundle: 'pro' },
+        { q: "I half-know this, which is probably enough.", a: "Then say which half. \"I'm solid on the first part, hazy after that.\"", bundle: 'pro' },
+        { q: "Admitting the limit undermines everything I just said.", a: "It does the reverse. It tells them the rest was checked.", bundle: 'pro' },
+        { q: "I already gave a confident answer and now I'm not sure.", a: "Go back today. \"I said that too firmly\" costs nothing now and a lot later.", bundle: 'pro' },
+      ]
+    },
+  ],
+  givingexamples: [
+    {
+      name: "The Dramatic Example",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "There is a pull towards the dramatic example — the biggest failure, the most striking case, the story with the best ending. But dramatic examples invite the objection that they are exceptional, and exceptional examples prove nothing about the ordinary case.\n\nAn unremarkable example that everyone recognises does more work and costs nothing to defend.\n\nMindset: reach for the ordinary one.",
+      inputs: [
+        { q: "That example's too boring to make the point.", a: "Boring means nobody will argue about whether it's typical. That's the point.", bundle: 'pro' },
+        { q: "I need something that'll really land.", a: "Landing isn't the same as impressing. The dull one usually lands harder.", bundle: 'pro' },
+        { q: "A bigger example makes a stronger argument.", a: "A bigger example makes a bigger target.", bundle: 'pro' },
+        { q: "They'll think my example is trivial.", a: "They'll think it's familiar. That's why it works.", bundle: 'pro' },
+        { q: "This one's too small to be worth mentioning.", a: "Small and specific is the strongest combination there is.", bundle: 'pro' },
+        { q: "The small version leaves out the bit that made it interesting.", a: "Interesting is your problem. Recognisable is theirs.", bundle: 'pro' },
+        { q: "I've only got big examples for this.", a: "Then take the smallest hour of the big one.", bundle: 'pro' },
+        { q: "They'll want to know how it ended.", a: "Endings are for stories. An example needs the part that shows the point.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Inventing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "In the middle of making a point, a convincing detail often arrives ready-made — a number, an incident, a \"studies show\". The temptation is strong precisely because it would work.\n\nEvery invented detail is a debt. When one is checked and found wrong, everything true that you said goes with it, and it goes permanently.\n\nMindset: say \"I don't know\" and reach for something you do.",
+      inputs: [
+        { q: "A number here would really help the argument.", a: "A wrong one would end the argument, and several future ones.", bundle: 'pro' },
+        { q: "It's roughly right, so it's fine.", a: "Then say \"roughly\". The word costs nothing and keeps you honest.", bundle: 'pro' },
+        { q: "Nobody's going to check.", a: "Someone always checks eventually. Usually at the worst moment.", bundle: 'pro' },
+        { q: "Admitting I don't know makes me look unprepared.", a: "It makes you look like someone whose figures can be trusted.", bundle: 'pro' },
+        { q: "I read it somewhere, so it's probably true.", a: "Then say that. \"I read somewhere\" is a different claim from \"the research shows\".", bundle: 'pro' },
+        { q: "Rounding it up makes it cleaner.", a: "It also makes it wrong. \"Somewhere over a hundred\" is clean and true.", bundle: 'pro' },
+        { q: "I've changed the details so nobody's identifiable.", a: "Fine — say so. A disguised real case is still real if you mark it.", bundle: 'pro' },
+        { q: "I remember it clearly enough.", a: "Clearly enough is where most wrong numbers come from. Say roughly.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Piling On",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "When someone has not agreed yet, the instinct is to add another example. But agreement usually stalls on something other than insufficient illustration — a different value, a missing piece of context, or a concern they have not said out loud.\n\nStacking examples answers a question they have not asked. Asking what the objection is answers the one they have.\n\nMindset: if one good example did not do it, a second one will not either.",
+      inputs: [
+        { q: "They haven't agreed, so I need another example.", a: "Or you need to know why. Ask.", bundle: 'pro' },
+        { q: "More support makes the case stronger.", a: "More support makes the weakest bit easier to find.", bundle: 'pro' },
+        { q: "If I stop now it'll look like I've run out.", a: "It'll look like you said your piece. That's a good look.", bundle: 'pro' },
+        { q: "I want to cover every angle.", a: "Cover the angle they're standing on. You'll know it when they tell you.", bundle: 'pro' },
+        { q: "Silence after one example feels thin.", a: "That silence is them considering it. Don't fill it.", bundle: 'pro' },
+        { q: "A second example would cover the other case.", a: "Then ask whether the other case is the one worrying them. It usually is.", bundle: 'pro' },
+        { q: "They looked unconvinced, so I kept going.", a: "Two more examples answer the same objection twice. Ask instead.", bundle: 'pro' },
+        { q: "Three examples show I've thought about it.", a: "One example and one good question shows it better.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Your Own Experience",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Many people discount their own experience as evidence — it is only one case, it is subjective, other people have proper data. So they reach for a half-remembered statistic instead, which is usually weaker and often wrong.\n\nOne thing that genuinely happened to you, told specifically, is real evidence. It is limited, and saying so is easy.\n\nMindset: what happened to you is worth saying out loud.",
+      inputs: [
+        { q: "It's just my experience, it doesn't prove anything.", a: "It proves it can happen. Often that's the whole question.", bundle: 'pro' },
+        { q: "They'll say it's just one case.", a: "Then say \"it's one case\" first. It's still one more than they have.", bundle: 'pro' },
+        { q: "A real statistic would be better.", a: "A real one, yes. A half-remembered one, no.", bundle: 'pro' },
+        { q: "My example is too personal to bring up at work.", a: "Then use the shape of it without the private part.", bundle: 'pro' },
+        { q: "Nobody wants to hear about my life.", a: "They want one specific thing that happened. That's not the same as your life story.", bundle: 'pro' },
+        { q: "Mine isn't a typical case.", a: "Say that, then tell it. A marked exception is still information.", bundle: 'pro' },
+        { q: "It was years ago.", a: "Then say when. Old and specific beats recent and vague.", bundle: 'pro' },
+        { q: "Using my own example makes it about me.", a: "Thirty seconds of what happened isn't about you. Five minutes is.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Does Not Prove Anything",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "An example is not evidence, and somebody who asks how often it happens is asking a fair question. The mistake is concluding that examples are therefore worthless, and going quiet.\n\nAn example does a different job: it shows what you mean. Once they can see the thing you are describing, how often it happens becomes a question you can actually discuss — and you can say plainly which of the two you are offering.\n\nMindset: show what you mean, and be honest that showing is not counting.",
+      inputs: [
+        { q: "One story doesn't prove anything.", a: "It isn't meant to. It shows what you're talking about, and that has to come first.", bundle: 'pro' },
+        { q: "They'll just say it's anecdotal.", a: "They might. \"It is — here's what it shows\" ends that in one line.", bundle: 'pro' },
+        { q: "Without numbers I've got nothing.", a: "You've got a thing they can picture. Numbers without that are noise.", bundle: 'pro' },
+        { q: "If I can't say how often, why mention it?", a: "Because they don't know what the problem looks like yet. That's the gap.", bundle: 'pro' },
+        { q: "They want proof and I've got a story.", a: "Then say which you have. Pretending it's proof is what loses them.", bundle: 'pro' },
+        { q: "A good example should settle the argument.", a: "It should make the argument possible. Settling is a different tool.", bundle: 'pro' },
+        { q: "They didn't dispute it and still didn't agree.", a: "Then the example landed and the question moved. Ask what the new one is.", bundle: 'pro' },
+        { q: "I should find the research before I say anything.", a: "Give the example now and offer to look. Silence isn't more rigorous.", bundle: 'pro' },
+      ]
+    },
+  ],
+  storytellingwiththesixws: [
+    {
+      name: "I Am Not a Storyteller",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The pack-wide stance: a story does not have to be remarkable, it has to be clear. Almost everyone who says they are bad at it believes their material is the problem. It rarely is — structure is, and structure is learnable in an afternoon.\n\nThe three thoughts that cause the trouble:\n1. \"Nothing interesting happens to me\" — losing your homework is a story.\n2. \"I am not a natural storyteller\" — the six W's need answers, not talent.\n3. \"They will not care\" — ordinary events interest people more than you think.\n\nMindset: clear beats dramatic. A small thing told well beats a big thing told badly.",
+      inputs: [
+        { q: "Nothing interesting enough happens to me.", a: "\"Lost homework is a story. It's structure that makes it land, not drama.\"", bundle: 'pro' },
+        { q: "I'm just not a natural at this.", a: "\"It's six questions with answers. That's a skill, not a personality.\"", bundle: 'pro' },
+        { q: "I've started a story and I already regret it.", a: "\"Commit. Half-told is what makes a story fall flat, not the story itself.\"", bundle: 'pro' },
+        { q: "The one they just told was brilliant and mine isn't.", a: "\"Mine only has to be clear. Told properly, ordinary lands fine.\"", bundle: 'pro' },
+        { q: "The people who are good at this are just born with it.", a: "\"They're using six questions on repeat. I can see them if I listen for them.\"", bundle: 'pro' },
+        { q: "I told one last week and it died halfway.", a: "\"Then something was missing. Ask which of the six, not whether I can do it.\"", bundle: 'pro' },
+        { q: "My voice isn't interesting enough.", a: "\"Structure carries a story further than voice does. Work on the order.\"", bundle: 'pro' },
+        { q: "I'd rather listen than tell.", a: "\"Fine, mostly. But a group that only hears from four people is a poorer group.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "I Would Not Know Where to Start",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind the structure: you are not being creative, you are answering six questions.\n\nStorytelling looks like a talent you either have or do not — until you realise a good story is one where six specific questions have been answered, and a bad one where three have not.\n\nWhat the six questions replace:\n1. Inspiration — you do not need any. You need answers.\n2. Memory for detail — the W's tell you which details to reach for.\n3. Nerve — a structure you trust lets you start without knowing the end.\n\nMindset: when a story goes wrong mid-telling, do not push harder. Ask which W is missing.",
+      inputs: [
+        { q: "I don't know how to begin.", a: "\"Start with any of the six. When, where or what all work as an opening.\"", bundle: 'pro' },
+        { q: "I'm mid-story and I can feel it losing shape.", a: "\"Which W haven't I said yet? Supply that one and it'll come back.\"", bundle: 'pro' },
+        { q: "I need to be entertaining.", a: "\"I need to be clear. Six questions answered is a story; funny is a bonus.\"", bundle: 'pro' },
+        { q: "I might get lost halfway, so I won't start.", a: "\"The structure is the safety net. I can start without knowing the ending.\"", bundle: 'pro' },
+        { q: "I don't know which bit to lead with.", a: "\"The thing that happened. What, in one sentence, and the rest follows it.\"", bundle: 'pro' },
+        { q: "I need to explain the background first.", a: "\"I need to say what happened first. Background is what I add when they ask.\"", bundle: 'pro' },
+        { q: "I've started and I've already lost the shape.", a: "\"Ask which of the six is missing. Usually it's Why.\"", bundle: 'pro' },
+        { q: "There are three ways in and I can't pick.", a: "\"Pick the one with the event in it. The other two were run-ups.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Nothing Happens to Me",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about material: you already have all of it.\n\nPeople hunt for a good story as if the supply were limited. It is not — losing something, feeling proud, making a mistake, trying something new, meeting someone. Every one of those has happened to everybody, several times.\n\nThree places your stories already are:\n1. Small failures — the funniest and most relatable category there is.\n2. First times — anything you did once and badly.\n3. Ordinary days with one odd thing in them.\n\nMindset: stop waiting for something story-worthy to happen. It already has, about forty times, and you did not write any of it down.",
+      inputs: [
+        { q: "I haven't got any stories to tell.", a: "\"Lost something, felt proud, made a mistake, tried something new. I've got dozens.\"", bundle: 'pro' },
+        { q: "I'm waiting for something worth telling to happen.", a: "\"It already did. I just wasn't paying attention when it was happening.\"", bundle: 'pro' },
+        { q: "That one's too small to be a story.", a: "\"Small and specific is the good kind. Big and vague is the bad kind.\"", bundle: 'pro' },
+        { q: "My own failures aren't material.", a: "\"The mistakes are the best ones. Nobody wants forty minutes of things going well.\"", bundle: 'pro' },
+        { q: "My week has been completely uneventful.", a: "\"Something went slightly wrong. That's a story — small is not the same as none.\"", bundle: 'pro' },
+        { q: "The only thing I've got is a bit embarrassing.", a: "\"That's the best material there is. Embarrassing is what people remember warmly.\"", bundle: 'pro' },
+        { q: "It only matters if you were there.", a: "\"Then say where 'there' was. Setting is one of the six for exactly this reason.\"", bundle: 'pro' },
+        { q: "Nothing has happened to me since March.", a: "\"Then tell one from March. Stories don't expire.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It All Needs to Be In",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind leaving things out: the six W's are a menu, not a checklist.\n\nThe instinct once you learn a structure is to use all of it, every time. But three or four are often enough, and the difference between a good teller and a tiring one is almost entirely about what they chose not to say.\n\nWhere the instinct goes wrong:\n1. You include a detail because it is true rather than because it helps.\n2. You answer all six W's on a story that needed three.\n3. You speed up instead of cutting when it starts to sag.\n\nMindset: knowing what to leave out is the skill. Dropping three W's on purpose is a decision, not a failure.",
+      inputs: [
+        { q: "I have to use all six every time.", a: "\"It's a menu, not a checklist. Three told well beats six told exhaustively.\"", bundle: 'pro' },
+        { q: "That detail happened, so it goes in.", a: "\"True isn't the same as useful. If it doesn't move the story, drop it.\"", bundle: 'pro' },
+        { q: "It's sagging, so I'll talk faster.", a: "\"Faster doesn't fix long. Cut to the outcome and land it.\"", bundle: 'pro' },
+        { q: "They'll need all this context.", a: "\"They need less than I think. I can always backfill if they ask.\"", bundle: 'pro' },
+        { q: "If I cut that bit it isn't accurate any more.", a: "\"It's a story, not a statement. Accurate enough is the standard.\"", bundle: 'pro' },
+        { q: "They'll need to know who everyone is.", a: "\"They'll need to know who matters. Two names is nearly always the limit.\"", bundle: 'pro' },
+        { q: "I'm halfway through and it's dragging.", a: "\"Jump to the event. I can fill in behind it if anyone asks.\"", bundle: 'pro' },
+        { q: "I keep adding \"and then\" and it won't stop.", a: "\"That's the process running long. Say the outcome and stop.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "They Need the Background First",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Almost everyone opens a story with the run-up — where they were going, who had said what, why they were even there — because without it the event seems to make no sense.\n\nThe listener has the opposite experience. Until something has happened they do not know what to hold on to, so the background lands as a list of facts about strangers. Say the event first and the same background becomes interesting, because now it explains something.\n\nMindset: the event, then the run-up. Background is only background once there is something for it to be behind.",
+      inputs: [
+        { q: "It won't make sense without the setup.", a: "\"Say the event first and the setup becomes the answer to a question they now have.\"", bundle: 'pro' },
+        { q: "There are three things they need to know first.", a: "\"Then there are three things they'll ask. Let them, and answer as I go.\"", bundle: 'pro' },
+        { q: "The setup is the funny part.", a: "\"Then it isn't setup, it's the event. Lead with it.\"", bundle: 'pro' },
+        { q: "I've been talking for a minute and nothing has happened yet.", a: "\"That's the tell. Say what happened now, in one sentence.\"", bundle: 'pro' },
+        { q: "Starting with the event feels abrupt.", a: "\"It feels like a story starting. That's what people are waiting for.\"", bundle: 'pro' },
+        { q: "They interrupted to ask who I was talking about.", a: "\"Good — that's them engaged. Answer in four words and carry on.\"", bundle: 'pro' },
+        { q: "The event is small and needs the context to land.", a: "\"Small events need less context, not more. Say it plainly and let it be small.\"", bundle: 'pro' },
+        { q: "I always tell it in the order it happened.", a: "\"The order it happened is rarely the order it's best heard in.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Place Doesn't Matter",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Where it happened feels like decoration — a detail you would add if you were padding, and one that slows down the getting-to-the-point.\n\nBut setting is what lets the listener build the picture the rest of the story happens inside, and without it they are assembling the whole thing from nothing. It is also the cheapest of the six: one clause, often three words, and it does more work than another sentence of explanation would.\n\nMindset: three words of where. It is the shortest of the six and the one people miss most.",
+      inputs: [
+        { q: "Where it happened isn't important to the story.", a: "\"It's what they picture it in. Three words and they stop working so hard.\"", bundle: 'pro' },
+        { q: "I don't want to slow it down with scenery.", a: "\"A clause isn't scenery. 'In the car park at half six' is the whole thing.\"", bundle: 'pro' },
+        { q: "They know the place, so I don't need to say it.", a: "\"Say it anyway. It's what switches their picture on.\"", bundle: 'pro' },
+        { q: "It was somewhere boring.", a: "\"Boring places are specific. 'The queue in Lidl' does more than 'somewhere'.\"", bundle: 'pro' },
+        { q: "I described the place for a whole minute.", a: "\"Too far the other way. One clause, then back to what happened.\"", bundle: 'pro' },
+        { q: "The place is hard to describe.", a: "\"Then compare it. 'Like a school hall but colder' is enough.\"", bundle: 'pro' },
+        { q: "I only remember roughly where it was.", a: "\"Roughly is fine. Nobody is checking the address.\"", bundle: 'pro' },
+        { q: "I skipped it and the story still worked.", a: "\"It worked. Add the clause next time and see whether it works better.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  storiesinconversation: [
+    {
+      name: "Performance",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that telling a story means holding the room — that it has to be worth the attention, and that the attention is a test you can fail.\n\nIt produces both failures at once. Some people never tell one, because nothing they have is good enough. Others tell them like a set, and cannot stop halfway or hand the floor on, because stopping would mean it was not worth it.\n\nMindset: you are adding something to a conversation, not taking the stage in one.",
+      inputs: [
+        { q: "My stories aren't good enough to tell.", a: "They're not auditions. \"Something odd happened at the shop\" is a contribution.", bundle: 'pro' },
+        { q: "If I start it I have to make it worth it.", a: "You can stop halfway. That's allowed, and it's often funnier.", bundle: 'pro' },
+        { q: "Everyone else tells better ones.", a: "They tell more of them. That's the whole difference.", bundle: 'pro' },
+        { q: "It'll be awkward if nobody laughs.", a: "For about two seconds, and only if you make it so by explaining it.", bundle: 'pro' },
+        { q: "I'd rather just listen.", a: "Fine sometimes. Always, and people stop feeling they know you.", bundle: 'pro' },
+        { q: "Everyone else's stories are better than mine.", a: "Everyone thinks that. The ones you remember were mostly about nothing.", bundle: 'pro' },
+        { q: "If it doesn't get a laugh it wasn't worth telling.", a: "Half of what gets told doesn't get a laugh. It still moved the evening on.", bundle: 'pro' },
+        { q: "I'd rather listen than take up the space.", a: "Listening is good. Taking up two minutes of it is also good.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Floor Is Borrowed",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The forgetting that a story suspends the conversation — for a minute, nobody else can speak, and that minute came out of somebody's evening.\n\nRemembering it is not about being self-conscious. It is what makes the difference between someone whose stories are welcome and someone people brace for: asking rather than taking, naming the length honestly, and giving the turn back at the end.\n\nMindset: borrowed, not taken. Say what you are borrowing it for, and hand it back.",
+      inputs: [
+        { q: "I shouldn't have to ask permission to talk.", a: "You don't. \"Short one?\" isn't permission, it's telling them what's coming.", bundle: 'pro' },
+        { q: "Announcing the length makes it a big deal.", a: "It does the opposite. \"Two minutes\" is the most relaxing thing you can say.", bundle: 'pro' },
+        { q: "They can stop me if they want to.", a: "Almost nobody will. That's exactly why the asking is yours to do.", bundle: 'pro' },
+        { q: "I said two minutes and it's been five.", a: "Say so, land it, and be believed next time.", bundle: 'pro' },
+        { q: "I'm always the one talking.", a: "One handover per story fixes it entirely. \"Has that happened to you?\"", bundle: 'pro' },
+        { q: "Saying how long it is spoils the surprise.", a: "It buys you the attention. Nobody was waiting for a surprise.", bundle: 'pro' },
+        { q: "I'll just start and they'll follow.", a: "Some will. One sentence up front and they all do.", bundle: 'pro' },
+        { q: "Asking makes me sound uncertain.", a: "It makes you sound like somebody who knows how long it is.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Anticlimax",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The fear of the anticlimax — of getting to the end and having it land on nothing, with everyone politely waiting for a punchline that is not coming.\n\nIt is worth almost nothing. Nobody remembers a story that fell flat; they remember the person who kept going for four more minutes trying to rescue it. The flat ending, said plainly and stopped, is barely noticed at all.\n\nMindset: the anticlimax is free. The rescue attempt is what costs.",
+      inputs: [
+        { q: "What if it doesn't land?", a: "Then it doesn't, and it's forgotten by the next round of drinks.", bundle: 'pro' },
+        { q: "I need a proper ending or it's not worth telling.", a: "\"So we drove home\" is a proper ending. Most true stories end like that.", bundle: 'pro' },
+        { q: "I should explain why it was funny.", a: "That's the only part that actually costs you. Let it lie.", bundle: 'pro' },
+        { q: "I'll wait until I've got a really good one.", a: "You'll be quiet for years, and the good ones only come from telling the ordinary ones.", bundle: 'pro' },
+        { q: "They're just being polite.", a: "Maybe. Land it in one sentence and move — nobody thinks less of that.", bundle: 'pro' },
+        { q: "I need to know it'll land before I start.", a: "Nobody knows that. The good ones are found out by telling them.", bundle: 'pro' },
+        { q: "The last one fell flat, so I'll stay quiet now.", a: "That was a round of drinks ago and nobody's holding it.", bundle: 'pro' },
+        { q: "If there's no punchline there's no point.", a: "Most true stories have no punchline. They still get told.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Telling At People",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Treating a story as something delivered TO people rather than something happening between them — which is why some tellers cannot be interrupted, cannot cut, and end on a full stop that leaves everyone with nowhere to go.\n\nThe listener wants to react, guess ahead, ask who someone is, and then tell you theirs. All of that is the story working, not the story being spoiled.\n\nMindset: the story is the first half. What they say next is the other half.",
+      inputs: [
+        { q: "They keep interrupting my story.", a: "Or they're in it. A question three steps ahead is a compliment.", bundle: 'pro' },
+        { q: "I've lost my place because they asked something.", a: "Answer it and carry on. They're more interested than they were a minute ago.", bundle: 'pro' },
+        { q: "I want to get through it without being derailed.", a: "A conversation isn't a delivery. Being derailed is sometimes the good part.", bundle: 'pro' },
+        { q: "I finished and nobody said anything.", a: "Because you ended on a full stop. Ask them something.", bundle: 'pro' },
+        { q: "They started telling theirs before I'd finished.", a: "Slightly rude, and also the best sign your story worked.", bundle: 'pro' },
+        { q: "They jumped in and now it's their story.", a: "Then it's a conversation, which is better than a story.", bundle: 'pro' },
+        { q: "Somebody finished my sentence for me.", a: "They were ahead of you. Give them the ending and take the next one.", bundle: 'pro' },
+        { q: "I got a question I wasn't ready for.", a: "A question means they're in it. Answer it and carry on.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Always Having One Ready",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "Being the person with a story for everything is a real asset, and you have been told so. Rooms are easier when you are in them.\n\nThis deck does not dispute that. It shows what the reflex costs.\n\nA story that arrives the moment theirs ends was not a response to it. Over time the people around you stop starting, because starting produces yours — and the thing you are best at has quietly become the reason you hear fewer of theirs.\n\nMindset: having one ready is a gift. Using it every time thins out what comes back to you.",
+      inputs: [
+        { q: "I've always got a story for it.", a: "You have. Which is why the people round you have stopped starting theirs.", bundle: 'pro' },
+        { q: "It's a better story than the one they just told.", a: "Probably. Better isn't what the moment was asking for.", bundle: 'pro' },
+        { q: "I keep the conversation going.", a: "You keep it moving. Moving and going are different — theirs stopped.", bundle: 'pro' },
+        { q: "People enjoy my stories.", a: "They do. Ask when you last heard one of theirs all the way through.", bundle: 'pro' },
+        { q: "If I don't fill the gap somebody has to.", a: "The gap was theirs. You filled it before they got there.", bundle: 'pro' },
+        { q: "It's not competing, it's relating.", a: "It is relating, when it comes second and smaller. Yours arrived first and bigger.", bundle: 'pro' },
+        { q: "I'm quick at finding the connection.", a: "Quick is the problem. The connection would still be there in four seconds.", bundle: 'pro' },
+        { q: "Nobody has ever complained about it.", a: "Nobody complains about this. They tell somebody else instead.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ending It Early",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Stopping a story in the middle feels like admitting you could not tell it, so people finish stories they knew were dead two sentences in. Nobody remembers the abandonment. Everybody remembers the four extra minutes.\n\nLanding one on purpose feels the same from inside, and it is the opposite: an ending you chose is the only kind anyone notices.\n\nMindset: a story that did not land is forgotten. A story that would not stop is not.",
+      inputs: [
+        { q: "If I stop now it'll look like I couldn't tell it.", a: "It looks like you noticed. That reads better than finishing something dead.", bundle: 'pro' },
+        { q: "I've started, so I have to finish.", a: "You've started. That isn't a contract.", bundle: 'pro' },
+        { q: "It'll pick up at the end.", a: "The end is ninety seconds away and they aren't with you now.", bundle: 'pro' },
+        { q: "Stopping mid-story is awkward.", a: "One sentence and a question. It's over in three seconds.", bundle: 'pro' },
+        { q: "They're being polite, so it's fine.", a: "Polite is the data. It means cut.", bundle: 'pro' },
+        { q: "I want to get to the good bit.", a: "Say the good bit now and skip the rest.", bundle: 'pro' },
+        { q: "A story without an ending isn't a story.", a: "\"Anyway, that went nowhere\" is an ending, and an honest one.", bundle: 'pro' },
+        { q: "If I land it now the point is lost.", a: "The point was lost at minute two. What's left is the exit.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stories That Are Not Yours",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The best story in your head is often somebody else's — something that happened to a friend, something told to you in confidence, something about a person sitting at the table.\n\nThe pull is strong because these stories are genuinely good, and because nobody here knows the people in them. That is exactly the reason to leave them where they are.\n\nMindset: a story you would not tell with them present is not yours to tell without them.",
+      inputs: [
+        { q: "Nobody here knows them, so it doesn't matter.", a: "It matters to the version of you that told it. That travels.", bundle: 'pro' },
+        { q: "They'd find it funny themselves.", a: "Then they can tell it. Ask, or leave it.", bundle: 'pro' },
+        { q: "It's the best one I've got.", a: "It's the best one you've heard. That's a different thing.", bundle: 'pro' },
+        { q: "I'll change the names.", a: "Everyone at this table will still know who you mean.", bundle: 'pro' },
+        { q: "It was told to me in confidence but it's harmless.", a: "You don't get to decide that on their behalf.", bundle: 'pro' },
+        { q: "The funny part is at their expense and they're not here.", a: "Not being here is exactly what makes it not on.", bundle: 'pro' },
+        { q: "It's really about the situation, not the person.", a: "Then tell the situation with you in it. If that isn't funny, the person was the joke.", bundle: 'pro' },
+        { q: "I'd already started before I realised.", a: "Stop and say why. That's a better story about you than the one you were telling.", bundle: 'pro' },
+      ]
+    },
+  ],
+  praiseandencouragement: [
+    {
+      name: "Perfect Wording",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Focus on being genuine rather than perfect. Your tone and sincerity matter more than flawless words, and most unspoken praise is unspoken because the person was still composing it.\n\nThe three thoughts that cause the trouble:\n1. \"I'll say it properly later\" — later is where praise goes to die.\n2. \"It'll sound forced\" — a clumsy true sentence lands; a polished one that sounds prepared does not.\n3. \"They already know\" — they do not, and it costs nothing to say.\n\nMindset: say the imperfect version now rather than the perfect version never.",
+      inputs: [
+        { q: "I'll say it once I've worked out how to put it.", a: "You won't. Say the rough version while it's still true of today.", bundle: 'pro' },
+        { q: "It'll come out wrong.", a: "Then it'll come out honest. That's what people actually hear.", bundle: 'pro' },
+        { q: "My English isn't good enough to say this properly.", a: "Tone carries most of it. \"That was really good\" in any accent works.", bundle: 'pro' },
+        { q: "It sounds too simple.", a: "Simple and meant is the whole target.", bundle: 'pro' },
+        { q: "They'll think I'm being over the top.", a: "Say the small true thing. Nobody has ever found that over the top.", bundle: 'pro' },
+        { q: "I'd want to say it properly or not at all.", a: "Properly means true, not polished. You already have the true version.", bundle: 'pro' },
+        { q: "I've rehearsed it and now it sounds fake.", a: "That's what rehearsing does. Say the first version instead.", bundle: 'pro' },
+        { q: "I'm not good at this sort of thing.", a: "Nobody is fluent at it. The ones who do it just do it badly more often.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Unsaid Praise",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Most praise is thought and never said. The moment passes, it starts to feel odd to bring up later, and the person never finds out. Meanwhile people routinely believe their work went unnoticed while three others privately thought it was excellent.\n\nThe cost of saying it is a few seconds of mild awkwardness. The cost of not saying it is that they do not know.\n\nMindset: if you noticed it, say it.",
+      inputs: [
+        { q: "They must already know it went well.", a: "They almost certainly don't. People read silence as \"adequate\".", bundle: 'pro' },
+        { q: "It'll sound odd coming from me.", a: "Odd for two seconds. Useful for considerably longer.", bundle: 'pro' },
+        { q: "It's too late to mention it now.", a: "\"I meant to say last week\" works perfectly well.", bundle: 'pro' },
+        { q: "It's not my place to comment.", a: "Noticing something good is available to anyone.", bundle: 'pro' },
+        { q: "They'll think I want something.", a: "Say it and ask for nothing. That settles it quickly.", bundle: 'pro' },
+        { q: "Someone senior will have said it already.", a: "Everyone assumes that, which is why it often goes unsaid entirely.", bundle: 'pro' },
+        { q: "I'd have to interrupt what they're doing.", a: "Eight words. Nobody has ever minded being interrupted for that.", bundle: 'pro' },
+        { q: "I'll mention it at the review.", a: "Reviews are for records. This is for today.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Generality",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "General praise — \"great job\", \"you're amazing\" — is pleasant for a moment and carries no information. The person cannot repeat it, cannot rely on it, and often cannot quite believe it.\n\nThe specific version takes ten seconds longer and does something different: it tells them what worked, so they can do it again on purpose.\n\nMindset: name the thing, not the person.",
+      inputs: [
+        { q: "\"Good job\" is quicker and they'll get the idea.", a: "They'll get a nice feeling. They won't get anything they can use.", bundle: 'pro' },
+        { q: "I can't remember exactly what was good.", a: "Then look before you speak. The detail is what makes it worth saying.", bundle: 'pro' },
+        { q: "Being specific sounds like I'm assessing them.", a: "Being general sounds like you weren't paying attention.", bundle: 'pro' },
+        { q: "They'd rather have the warm version.", a: "The specific version is warmer. It proves you were watching.", bundle: 'pro' },
+        { q: "It feels excessive to go into detail.", a: "One sentence of detail. That's the whole ask.", bundle: 'pro' },
+        { q: "I don't understand their work well enough to be specific.", a: "Then be specific about the effect. \"I could follow all of it\" is specific.", bundle: 'pro' },
+        { q: "The specific thing is quite minor.", a: "Minor and named beats major and vague. They can use the named one.", bundle: 'pro' },
+        { q: "I'll sound like I'm marking their homework.", a: "Marking is a verdict. Naming what worked is just noticing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Rushing On",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Not rushing is easy to overlook and matters more than it sounds. Praise puts someone slightly on the spot, and most people need a beat before they can say anything back. If you fill that beat — with another compliment, a joke, a change of subject — you take the moment away from them.\n\nSay the thing, then stop. The silence belongs to them.\n\nMindset: praise, then wait.",
+      inputs: [
+        { q: "The silence after I said it felt awkward.", a: "It felt awkward to you. To them it was a second to take it in.", bundle: 'pro' },
+        { q: "I should add something so it isn't so intense.", a: "Adding something is how it stops counting. Let it stand.", bundle: 'pro' },
+        { q: "They didn't say anything back.", a: "They heard it. Not everyone answers praise out loud.", bundle: 'pro' },
+        { q: "I made a joke to lighten it.", a: "Common, and it deletes the compliment. Try leaving the pause next time.", bundle: 'pro' },
+        { q: "They looked embarrassed, so I moved on quickly.", a: "Move on gently, not fast. Embarrassed isn't the same as unhappy.", bundle: 'pro' },
+        { q: "I stacked three compliments to make sure one landed.", a: "Three cancel each other. One and a pause is the stronger version.", bundle: 'pro' },
+        { q: "They brushed it off, so I explained it again.", a: "Explaining turns it into an argument. Let the brush-off stand.", bundle: 'pro' },
+        { q: "The pause makes it feel like I want something back.", a: "Only if you're waiting for something. Wait for nothing and it reads as room.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Sounds Like I'm Their Boss",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Encouragement and an offer of help both carry an unwanted implication: that you have judged how they are doing and found them in need. So people who would happily say \"that was good\" go quiet at \"keep going\" or \"want a hand with the rest?\" — the two things that are actually useful when someone is mid-task and flagging.\n\nThe rank is mostly imagined. What makes encouragement patronising is not the encouragement but the assumption baked into it — \"you'll get there eventually\" assumes they might not. Offer the specific hand, not the general faith, and the rank disappears.\n\nMindset: offer the thing, not the assessment. \"Want me to take the second half?\" has no rank in it.",
+      inputs: [
+        { q: "Telling them to keep going implies I'm judging their progress.", a: "Then don't tell them to keep going. Say what you'd do with the next bit.", bundle: 'pro' },
+        { q: "Offering help says I think they can't manage.", a: "Offering a specific task says you'd like to be in it with them.", bundle: 'pro' },
+        { q: "I'm junior to them, it isn't my place.", a: "\"Anything I can take off you?\" has no rank in it at all.", bundle: 'pro' },
+        { q: "\"You'll get there\" is the encouraging thing to say.", a: "It's the one that sounds like doubt. Name what's already working instead.", bundle: 'pro' },
+        { q: "They didn't ask for help, so offering is presumptuous.", a: "Most people don't ask. Offering once, concretely, is not pressure.", bundle: 'pro' },
+        { q: "If I offer and they say no, it'll be awkward.", a: "Two seconds. And they'll remember that you offered.", bundle: 'pro' },
+        { q: "Encouragement is a manager's job.", a: "It's the job of whoever noticed. That was you.", bundle: 'pro' },
+        { q: "I don't want to sound like a motivational poster.", a: "Posters are general. Say the specific next step and you can't sound like one.", bundle: 'pro' },
+      ]
+    },
+  ],
+  givingcriticism: [
+    {
+      name: "Staying Quiet",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Staying quiet feels like the considerate option. It rarely is. The other person carries on doing the thing, other people quietly adjust around them, and eventually somebody says it in a much worse way — or nobody does, and they never find out why things went the way they did.\n\nBeing told early, plainly and once is a good deal. It is the version you would want.\n\nMindset: silence is not kindness. It is postponement, usually with interest.",
+      inputs: [
+        { q: "I don't want to upset them.", a: "They'll be more upset finding out in six months that everyone knew.", bundle: 'pro' },
+        { q: "It's not a big enough deal to mention.", a: "Then it's a one-sentence version. Small things get small conversations.", bundle: 'pro' },
+        { q: "Someone else will say something.", a: "They're thinking the same about you. That's how nobody ever does.", bundle: 'pro' },
+        { q: "They'll work it out themselves.", a: "Almost nobody does. That's what feedback is for.", bundle: 'pro' },
+        { q: "I'd rather just work around it.", a: "You can. You'll be doing it in a year, and so will everyone else.", bundle: 'pro' },
+        { q: "They'll hear it from someone eventually.", a: "From somebody with less goodwill than you, in a worse room.", bundle: 'pro' },
+        { q: "I don't want to be the bad guy.", a: "The bad guy is the one who let it run. That role is still open.", bundle: 'pro' },
+        { q: "They're doing their best.", a: "Probably. Their best is aimed at the wrong thing and nobody's said so.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Character Judgements",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Under pressure, specific observations turn into character judgements. \"Three deadlines slipped\" becomes \"you're not reliable\" — which feels like the same statement and is not.\n\nOne is a fact with a fix attached. The other is a verdict on who someone is, and it leaves them nothing to do but defend themselves. Everything difficult about giving criticism gets easier if you stay on the first kind.\n\nMindset: if a camera could not have recorded it, do not say it.",
+      inputs: [
+        { q: "They're just careless, and that's the real problem.", a: "Maybe. What you can say is that there were four typos. Start there.", bundle: 'pro' },
+        { q: "Describing the specifics feels petty.", a: "The specifics are the only part they can actually do anything about.", bundle: 'pro' },
+        { q: "They need to hear what I really think of the pattern.", a: "They need the pattern, with instances. That's different from a verdict.", bundle: 'pro' },
+        { q: "It's obviously an attitude problem.", a: "You can't fix an attitude in a ten-minute conversation. You can fix a behaviour.", bundle: 'pro' },
+        { q: "I want them to know how frustrating this is.", a: "Say the impact. That's the honest version of the same thing.", bundle: 'pro' },
+        { q: "This is about who they are, not one mistake.", a: "You can only ever say the mistakes. The pattern is made of them.", bundle: 'pro' },
+        { q: "I want them to see the whole picture of themselves.", a: "Nobody takes that in. Give them one thing they can move.", bundle: 'pro' },
+        { q: "Naming instances feels like a list of charges.", a: "One instance isn't a list. Bring one.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Building a Case",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "People preparing to give criticism tend to build a case: examples, history, a structure, an opening. Then they deliver something far heavier than the problem, and the other person leaves thinking they are in serious trouble over a filename.\n\nThe size of the conversation tells the other person how bad it is. Get that wrong and they will not hear the content at all.\n\nMindset: match the size to the problem. Most things are one sentence.",
+      inputs: [
+        { q: "I should prepare this properly so it lands.", a: "Preparation is good. A ten-minute meeting about a small thing isn't.", bundle: 'pro' },
+        { q: "If I say it lightly they won't take it seriously.", a: "They will. What they won't do is panic, which is what you want.", bundle: 'pro' },
+        { q: "I've got four examples, I should use them all.", a: "Use one. Four is a case, and people defend against cases.", bundle: 'pro' },
+        { q: "This deserves a proper conversation.", a: "Does it still matter in a month? If not, it's a sentence.", bundle: 'pro' },
+        { q: "I want to make sure it doesn't happen again.", a: "One clear sentence does that. Volume doesn't.", bundle: 'pro' },
+        { q: "I'll book a meeting so it's taken properly.", a: "A booked meeting says serious. Check that's the message you want.", bundle: 'pro' },
+        { q: "If I don't explain the background it'll sound harsh.", a: "Short and warm isn't harsh. Long and careful is what frightens people.", bundle: 'pro' },
+        { q: "I've rehearsed an opening and I should use it.", a: "The opening is usually the part they don't need. Say the thing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Cause",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "By the time you raise something, you usually have a theory about the cause — they are not organised, they do not care, they are not listening. The theory is often wrong, and it is nearly always unnecessary.\n\nSomething you cannot see is often in the way: a tool that does not work, an instruction they never got, something at home. Asking is faster than assuming, and it produces a fix rather than an argument.\n\nMindset: describe what you see, ask about the cause, do not supply it.",
+      inputs: [
+        { q: "I know exactly why they're doing this.", a: "You know what it looks like from outside. Ask about the inside.", bundle: 'pro' },
+        { q: "They clearly don't care about the deadline.", a: "Or they're stuck on something and haven't said. Find out first.", bundle: 'pro' },
+        { q: "If I ask, I'll get excuses.", a: "You might get the actual obstacle, which is the thing you want.", bundle: 'pro' },
+        { q: "Asking makes me sound unsure.", a: "It makes you sound like you want it fixed rather than acknowledged.", bundle: 'pro' },
+        { q: "I've already worked out the solution.", a: "Offer it second. Ask what would help first — they might have a better one.", bundle: 'pro' },
+        { q: "I've seen this enough times to know the cause.", a: "You've seen the outside enough times. The cause is still theirs to tell.", bundle: 'pro' },
+        { q: "Asking why sounds like I'm giving them an out.", a: "It sounds like you want it fixed. An out is what you give by not asking.", bundle: 'pro' },
+        { q: "They'll just say they were busy.", a: "Then ask what specifically. Busy is a summary, not a reason.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being the Easy-Going One",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "The beliefs in this deck are not mistakes, which is why correcting them does not work. Being relaxed about things is a real virtue, and most people who hold it have been told so more than once.\n\nSo this deck does not argue. It adds up the bill.\n\nEvery thing you decide is not worth mentioning still happens. Somebody absorbs it — a colleague reorders their week, a friend covers for you, the quiet person in the group says nothing again. They did not agree to carry it, and they usually do not know they are.\n\nMindset: you are allowed to be the easy-going one. You are not allowed to be easy-going with somebody else's time.",
+      inputs: [
+        { q: "I'm the easy-going one. I don't make things into a thing.", a: "Everything you don't make into a thing lands on somebody who didn't choose it.", bundle: 'pro' },
+        { q: "I'd rather absorb it than make it awkward.", a: "You can absorb it. So will the next person in your seat, and the one after.", bundle: 'pro' },
+        { q: "I don't sweat the small stuff.", a: "Nor does anybody else. That's why the small stuff is still here.", bundle: 'pro' },
+        { q: "People find me easy to work with.", a: "They do. Some of them are also quietly working around the same thing you are.", bundle: 'pro' },
+        { q: "I pick my battles.", a: "You've picked none this year. That isn't picking.", bundle: 'pro' },
+        { q: "It's not worth the conflict.", a: "The conflict you avoided today is the conversation somebody has in six months, worse.", bundle: 'pro' },
+        { q: "I'd hate to be the person who complains.", a: "One sentence in the week it happens isn't complaining. Six months of it is.", bundle: 'pro' },
+        { q: "I'm being generous by letting it go.", a: "Generous with your own time is generous. Generous with Ana's isn't yours to give.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "There Is Never a Good Moment",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Timing is the most respectable way to not have a conversation. There is always a reason today is wrong: they are busy, it is late, the week has been hard, it has only happened twice.\n\nEach reason is true. The sum of them is avoidance.\n\nThe test is whether you have named a day. A deferred conversation has a date; an avoided one has a reason.\n\nMindset: waiting for a good moment is fine. Waiting for a comfortable one means never.",
+      inputs: [
+        { q: "Now isn't a good time.", a: "Name the time that is, or it isn't a delay.", bundle: 'pro' },
+        { q: "They've had a rough week.", a: "Next week they'll have had a rough fortnight. Say the small version now.", bundle: 'pro' },
+        { q: "I'll mention it next time it happens.", a: "You said that last time. That's twice you've watched it go past.", bundle: 'pro' },
+        { q: "It's too late to bring it up now.", a: "Late and honest beats never. Say that it's late as you say it.", bundle: 'pro' },
+        { q: "I don't want to ruin the mood.", a: "One sentence doesn't ruin a mood. Storing it up does.", bundle: 'pro' },
+        { q: "It's only happened twice.", a: "Twice is the easiest moment there is. The fifth is much harder.", bundle: 'pro' },
+        { q: "I'll wait until I'm calmer about it.", a: "Fair. Put a day on it before the feeling fades and takes the conversation with it.", bundle: 'pro' },
+        { q: "It'll probably sort itself out.", a: "It hasn't yet, and that's the only information you actually have.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "When It Is Not Your Place",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Standing is a real constraint and also the most over-used excuse in the pack. You often do not have the right to tell somebody how to do their job. You almost always have the right to say what happens to yours.\n\nThe part that is yours is the impact, and it is available whatever the hierarchy. A question is available too, at every level.\n\nMindset: you are not commenting on their work. You are reporting your own.",
+      inputs: [
+        { q: "It's not my place to say anything.", a: "The part that lands on you is yours to describe. Start there.", bundle: 'pro' },
+        { q: "They're senior to me.", a: "Then don't advise them. Tell them what happens at your end.", bundle: 'pro' },
+        { q: "It's another team's business.", a: "Their business, your Friday. The Friday is the bit you raise.", bundle: 'pro' },
+        { q: "I'd be overstepping.", a: "Asking is not overstepping. Instructing would be.", bundle: 'pro' },
+        { q: "Somebody above me should handle this.", a: "They can't see it. You can, and only you can say what it costs you.", bundle: 'pro' },
+        { q: "It's a friend's decision and none of mine.", a: "The decision is theirs. One sentence of what you can see is still allowed.", bundle: 'pro' },
+        { q: "I'll look like I'm complaining upwards.", a: "Not if you bring the impact and one suggestion. That's a proposal.", bundle: 'pro' },
+        { q: "I don't have the authority to ask for a change.", a: "You have the authority to ask a question. Most changes start as one.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Raising It Twice",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Nothing has changed since the last conversation, and the second one feels harder than the first. It sounds like nagging, and it admits the first one did not work.\n\nIt did not fail. Most behaviour takes more than one conversation, and the second is where the actual obstacle appears — because by then you both know the polite version was not enough.\n\nMindset: the second conversation is not a repeat. It is the one where you find out why.",
+      inputs: [
+        { q: "I've already said this once.", a: "Once is where most things start. The second time is where they change.", bundle: 'pro' },
+        { q: "Saying it again makes me a nag.", a: "A fifth time might. The second is following up.", bundle: 'pro' },
+        { q: "They'll think I've been keeping score.", a: "You have. That's what noticing looks like — say it plainly and move on.", bundle: 'pro' },
+        { q: "The first conversation clearly didn't work.", a: "Or something's in the way that neither of you named. Ask this time.", bundle: 'pro' },
+        { q: "I softened it last time and I'll soften it again.", a: "That's the thing to change. Same content, fewer cushions.", bundle: 'pro' },
+        { q: "Maybe I wasn't clear enough.", a: "Possible. Say what good looks like this time, in one sentence.", bundle: 'pro' },
+        { q: "It's awkward to raise the same thing.", a: "Less awkward than the third time, which is where this is heading.", bundle: 'pro' },
+        { q: "If it hasn't changed by now it won't.", a: "Then say that out loud, and plan around it honestly.", bundle: 'pro' },
+      ]
+    },
+  ],
+  receivingfeedbackandcriticism: [
+    {
+      name: "The Receiving-Feedback Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The pack-wide stance: feedback is information about something you did, not a verdict on who you are.\n\nAlmost everything that goes wrong when we are criticised comes from treating it as a judgement on our worth. Once it is just information, staying calm stops being an act of will.\n\nThe three thoughts that cause the trouble:\n1. \"They think I'm bad at this\" — it was about one thing you did.\n2. \"I have to answer right now\" — you do not.\n3. \"If I don't defend myself they'll believe it\" — calm is more convincing than defence.\n\nMindset: stay calm and open, even when it is unexpected, and look for the part you can use.",
+      inputs: [
+        { q: "You hear criticism as a judgement on who you are.", a: "\"This is about something I did, not about my worth. It's information.\"", bundle: 'pro' },
+        { q: "You feel you must answer the moment it is said.", a: "\"There's no clock. 'I'll think about that' is a real answer.\"", bundle: 'pro' },
+        { q: "You feel the need to defend yourself immediately.", a: "\"Staying calm is more convincing than defending. Nothing here needs winning.\"", bundle: 'pro' },
+        { q: "The feedback catches you completely off guard.", a: "\"Unexpected doesn't mean unfair. Let me hear it before I decide anything.\"", bundle: 'pro' },
+        { q: "The criticism came from somebody you do not respect.", a: "\"The source doesn't change whether the thing is true. Check the thing.\"", bundle: 'pro' },
+        { q: "You are composing your reply while they are still talking.", a: "\"Then I've stopped hearing it. Back up and listen to the rest.\"", bundle: 'pro' },
+        { q: "You can feel your face going.", a: "\"It's going. That's allowed. Keep listening while it does.\"", bundle: 'pro' },
+        { q: "Only one part of it is fair.", a: "\"Then take that part. The rest can be disagreed with later, calmly.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Thanking Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind Acknowledge the Feedback: a thank-you costs you nothing and commits you to nothing.\n\nMany people refuse to acknowledge criticism because it feels like conceding the point. So they open with a defence, and the conversation goes badly from the first line.\n\nThree things a thank-you is not:\n1. Not agreement — you are thanking them for telling you, not for being right.\n2. Not an apology — that is a separate decision, later.\n3. Not weakness — it is the calmest opening available to you.\n\nMindset: the person who can say \"thanks for telling me\" to something they disagree with is the one in control of the conversation.",
+      inputs: [
+        { q: "Thanking them feels like admitting they are right.", a: "\"I'm thanking them for telling me, not for being right. Those are different.\"", bundle: 'pro' },
+        { q: "You want to lead with your side of it.", a: "\"If I open with a defence, nothing after it gets heard. Acknowledge first.\"", bundle: 'pro' },
+        { q: "Acknowledging the criticism feels weak.", a: "\"It's the opposite. Taking it calmly is the strongest thing in the room.\"", bundle: 'pro' },
+        { q: "You go silent because you do not know what to say.", a: "\"'Thanks for telling me' always works. It buys me the seconds I need.\"", bundle: 'pro' },
+        { q: "Thanking them for something unfair feels dishonest.", a: "\"I'm thanking them for the risk of saying it. That part is real.\"", bundle: 'pro' },
+        { q: "They delivered it badly and you want to say so.", a: "\"Two conversations. Have the content one first.\"", bundle: 'pro' },
+        { q: "You want to say thanks and then add \"but\".", a: "\"'But' deletes everything before it. Put a full stop there instead.\"", bundle: 'pro' },
+        { q: "You have said thanks and the silence is uncomfortable.", a: "\"Let it sit. The next thing I say is better for having waited.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Their Side Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind See Their Side: you can describe someone's view accurately without signing up to it.\n\nThis is the most useful move in the pack, and it is blocked by one fear — that understanding them means losing the argument.\n\nWhere the fear shows up:\n1. You refuse to say \"I see how that looked\" in case it is used against you.\n2. You correct the small facts instead of addressing the feeling.\n3. You wait for them to understand you first, and so do they.\n\nMindset: you do not have to agree with everything to show understanding. And the person who goes first is not the one who loses.",
+      inputs: [
+        { q: "You worry that understanding them means agreeing with them.", a: "\"I can describe their view accurately and still disagree. Those are separate.\"", bundle: 'pro' },
+        { q: "You want to correct the facts before anything else.", a: "\"The facts can wait thirty seconds. The feeling is what's blocking the conversation.\"", bundle: 'pro' },
+        { q: "You are waiting to be understood first.", a: "\"If we both wait, nobody moves. I can afford to go first.\"", bundle: 'pro' },
+        { q: "You fear that granting any part weakens your position.", a: "\"Granting the fair part makes the rest of what I say more credible, not less.\"", bundle: 'pro' },
+        { q: "Their version leaves out something that changes everything.", a: "\"Then say theirs back first and add mine after. The order is the trick.\"", bundle: 'pro' },
+        { q: "You worry that saying it back will sound sarcastic.", a: "\"Only if I add a tone. Plain words, and it sounds like attention.\"", bundle: 'pro' },
+        { q: "You do not understand their view well enough to say it back.", a: "\"Then ask. 'Have I got that right?' is the move, not the failure.\"", bundle: 'pro' },
+        { q: "They are wrong about the facts and upset about the feeling.", a: "\"Two things. The feeling doesn't wait for the facts.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Instant Verdict Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind Reflect Openly: you are not required to know, on the spot, whether the criticism is right.\n\nThe pressure to produce an immediate answer is what pushes people into either a defence they regret or a promise they will not keep.\n\nThree things you are allowed to say:\n1. \"I hadn't seen it that way.\"\n2. \"I'd like to sit with that.\"\n3. \"I see it differently, but I'll think about it.\"\n\nMindset: \"I need to think about this\" is a complete answer, and a confident one. It is not stalling.",
+      inputs: [
+        { q: "You feel you must decide right now whether they are right.", a: "\"I don't have to have a verdict. 'I'll think about it' is a full answer.\"", bundle: 'pro' },
+        { q: "You promise a change just to end the conversation.", a: "\"A promise I make to escape isn't one I'll keep. Better to say I'll think.\"", bundle: 'pro' },
+        { q: "You defend yourself because silence feels worse.", a: "\"Thinking out loud beats defending. 'I hadn't seen it that way' is honest.\"", bundle: 'pro' },
+        { q: "You worry that taking time looks like avoiding it.", a: "\"Naming when I'll come back is what makes the pause honest instead of evasive.\"", bundle: 'pro' },
+        { q: "You genuinely do not know whether they have a point.", a: "\"Then say exactly that. It's the most honest sentence available.\"", bundle: 'pro' },
+        { q: "They are waiting and the pause feels long.", a: "\"Three seconds feels long to me and normal to them.\"", bundle: 'pro' },
+        { q: "You already know the answer is no.", a: "\"Even so, saying it tomorrow costs nothing and lands better.\"", bundle: 'pro' },
+        { q: "You want to ask a question instead of answering.", a: "\"A question is a good answer here, as long as it's about their point.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Asking for Time Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind asking for time: a pause with a date on it is the opposite of avoidance.\n\nMost people swallow the request because they think it looks evasive, and answer immediately instead. The immediate answer is almost always either a defence or a promise, and both are worse than the one they would have given the next morning.\n\nThe three thoughts that cause the trouble:\n1. \"Asking for time looks like I can't take it\" — it looks like you intend to take it seriously.\n2. \"If I don't answer now they'll think I disagree\" — say when you will answer and they will not.\n3. \"I'll sound like I'm stalling\" — only if you leave the date out.\n\nMindset: the return time is what separates thinking about it from burying it.",
+      inputs: [
+        { q: "You feel you have to respond in the moment.", a: "\"A good answer tomorrow beats a defensive one now.\"", bundle: 'pro' },
+        { q: "Asking for time feels like weakness.", a: "\"It's the opposite. It says I intend to do something with this.\"", bundle: 'pro' },
+        { q: "You worry the silence will be read as disagreement.", a: "\"Then I'll say when I'm coming back. That's what removes the doubt.\"", bundle: 'pro' },
+        { q: "You have said \"I'll think about it\" and not meant it before.", a: "\"Then this time it gets a day attached to it.\"", bundle: 'pro' },
+        { q: "The feedback landed hard and you want to leave the room.", a: "\"Leaving with a return time is fine. Leaving without one isn't.\"", bundle: 'pro' },
+        { q: "You think asking will annoy them.", a: "\"Most people would rather wait a day than be managed on the spot.\"", bundle: 'pro' },
+        { q: "You are tempted to promise something to end the conversation.", a: "\"A promise I haven't thought about is a second problem, not a solution.\"", bundle: 'pro' },
+        { q: "You are worried you will lose your nerve overnight.", a: "\"Then I'll say the one thing I already agree with before I go.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Taking It Well Mindset",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "Taking criticism without getting defensive is hard and genuinely valuable, and if you can do it you are ahead of most of the room.\n\nThis deck is about the version that has gone one step past it. Warm, grateful, entirely unbothered — and nothing changes. Taking it well can become its own way of not engaging, and by the second time the same feedback arrives, the good grace is part of the problem.\n\nMindset: keep the composure. What it cannot do is stand in for deciding whether they were right.",
+      inputs: [
+        { q: "You never get defensive about feedback.", a: "\"True. I also rarely do anything about it. Those went together somehow.\"", bundle: 'pro' },
+        { q: "You thanked them warmly and moved on.", a: "\"Moving on is the bit to check. What did I actually decide?\"", bundle: 'pro' },
+        { q: "You take everything on board.", a: "\"Everything on board and nothing overboard. Which part am I acting on?\"", bundle: 'pro' },
+        { q: "People find you easy to give feedback to.", a: "\"They do. Ask whether they'd say the same thing a third time.\"", bundle: 'pro' },
+        { q: "You agreed with all of it straight away.", a: "\"Instant agreement is as unconsidered as instant defence. Where's the thinking?\"", bundle: 'pro' },
+        { q: "You would rather agree than have the conversation.", a: "\"That's the pleasant version of leaving the room.\"", bundle: 'pro' },
+        { q: "You have had this feedback before and took it well then too.", a: "\"Taken well twice, changed nothing once. That's the bit they'll notice.\"", bundle: 'pro' },
+        { q: "Nobody has ever called you defensive.", a: "\"Nor has anyone had to. The grace does the work the change should do.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  apologizing1: [
+    {
+      name: "No \"But\"",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The word \"but\" deletes everything before it. \"I'm sorry I was late, but the traffic was awful\" is not an apology with context attached — it is a defence, and it is heard as one.\n\nIf the context genuinely matters, it belongs in a separate sentence, at a different moment, once the apology has landed. Both things can be said. They cannot be said in the same breath.\n\nMindset: apologise for your part with nothing attached. The rest keeps.",
+      inputs: [
+        { q: "They need to understand why it happened.", a: "Later, maybe. In this sentence it will only sound like an excuse.", bundle: 'pro' },
+        { q: "It's not fair if I take all the blame.", a: "You're not. You're apologising for your part, which is different.", bundle: 'pro' },
+        { q: "If I don't explain, they'll think I don't care.", a: "They'll think you apologised without arguing. That's rarer than you think.", bundle: 'pro' },
+        { q: "The reason is genuinely a good one.", a: "Good reasons still delete the apology when they follow \"but\".", bundle: 'pro' },
+        { q: "They already know the reason anyway.", a: "Then you definitely don't need to say it now.", bundle: 'pro' },
+        { q: "I'll say \"and\" instead of \"but\", that solves it.", a: "Not if the sentence after it is still the excuse. Check what follows, not the joining word.", bundle: 'pro' },
+        { q: "Without the reason it sounds like I did it deliberately.", a: "It sounds like you're not arguing. That's what they're listening for.", bundle: 'pro' },
+        { q: "They'll bring up the reason themselves anyway.", a: "Good. It counts for far more coming from them.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Proof",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Anyone can say sorry. The only part of an apology that costs you anything in the future is the sentence about what will be different — and to someone who has been let down before, that is the only part with information in it.\n\nThat is also why it must be small. \"I'll be better\" promises nothing and cannot be checked. \"I'll write it down while you're telling me\" is something they can watch happen or not happen.\n\nMindset: end with something checkable, then do it.",
+      inputs: [
+        { q: "The apology should be enough on its own.", a: "The first time, maybe. After that, only the change counts.", bundle: 'pro' },
+        { q: "I don't want to promise something I might not keep.", a: "Then promise something smaller. A kept small promise beats a broken large one.", bundle: 'pro' },
+        { q: "Saying what I'll do sounds like I'm managing them.", a: "It sounds like you've thought about it. That's the opposite of managing.", bundle: 'pro' },
+        { q: "I'll just try harder, that's the plan.", a: "That's a feeling, not a plan. What will you actually do differently?", bundle: 'pro' },
+        { q: "They should be able to trust me without a plan.", a: "They should. A checkable sentence is how trust gets rebuilt after it's dented.", bundle: 'pro' },
+        { q: "I don't know yet what I'd do differently.", a: "Then say that, and come back with one thing tomorrow. Don't invent it now.", bundle: 'pro' },
+        { q: "Naming a plan makes it sound like it'll happen again.", a: "It says you've thought about whether it could. That's reassuring, not alarming.", bundle: 'pro' },
+        { q: "I made the same promise last time and broke it.", a: "Then name that first. A repeated promise without acknowledgement is worth nothing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Proportion",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "There is a pull, when you have made a mistake, to make the apology match how bad you feel rather than how much harm was done. It reads as sincerity from the inside and as something else from the outside.\n\nA long apology for a small thing puts the other person in the position of reassuring you, which is the opposite of what an apology is for. Your discomfort is yours to carry.\n\nMindset: apologise for the harm, not for your feelings about the harm.",
+      inputs: [
+        { q: "I need them to know how badly I feel about it.", a: "They need to know you understood. How bad you feel is yours to handle.", bundle: 'pro' },
+        { q: "A quick sorry seems dismissive.", a: "For a quick mistake it's proportionate. Anything more makes it their problem.", bundle: 'pro' },
+        { q: "If I apologise enough they'll see I mean it.", a: "Repetition reads as wanting forgiveness, not as meaning it.", bundle: 'pro' },
+        { q: "They said it's fine but I don't think they mean it.", a: "Ask once, plainly. Then take the answer.", bundle: 'pro' },
+        { q: "It'd be cold to just say sorry and move on.", a: "Short and sincere isn't cold. Prolonged is what becomes uncomfortable.", bundle: 'pro' },
+        { q: "I've apologised twice already and I want to once more.", a: "The third one is for you. Stop at the first and let it work.", bundle: 'pro' },
+        { q: "They were properly hurt, so a short apology won't cover it.", a: "Then it isn't a small thing. Match the size — that's the whole rule.", bundle: 'pro' },
+        { q: "I keep apologising for things nobody minded.", a: "Notice the habit. Say \"thanks for waiting\" instead of \"sorry\" and see what happens.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Timing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Almost every apology gets harder the longer it waits. The moment passes, it starts to feel odd to bring up, and by the time you get to it you have to explain the delay as well as the thing.\n\nImmediately is easier and costs less, for both of you. And it is one of the few situations where doing it badly and quickly genuinely beats doing it well and late.\n\nMindset: the awkward version now beats the polished version next week.",
+      inputs: [
+        { q: "I'll say something once I've worked out how to put it.", a: "Say the rough version now. The composed one arrives too late to help.", bundle: 'pro' },
+        { q: "It's been a few days, it'd be strange to raise it.", a: "\"I've been meaning to say\" covers that entirely.", bundle: 'pro' },
+        { q: "Maybe they didn't notice.", a: "They noticed. And now they've noticed you didn't say anything.", bundle: 'pro' },
+        { q: "I'll wait for a good moment.", a: "There isn't one. There's just now and later, and later is worse.", bundle: 'pro' },
+        { q: "It'll blow over on its own.", a: "Sometimes. And sometimes it sits there for months.", bundle: 'pro' },
+        { q: "There are other people around, I'll do it privately later.", a: "If it happened in front of them, a short version now and the long one later.", bundle: 'pro' },
+        { q: "I'm still annoyed, I'd be apologising through my teeth.", a: "Then apologise for the one part you're clear on. The rest can wait an hour.", bundle: 'pro' },
+        { q: "It's years old now, there's no point.", a: "Old ones land harder, not softer. People remember who came back.", bundle: 'pro' },
+      ]
+    },
+  ],
+  agreeing: [
+    {
+      name: "Agreeing Is Passive",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The pack-wide stance: agreeing is a contribution, not the absence of one.\n\nThere is a quiet belief that only disagreement is interesting — that agreeing makes you a passenger in the conversation. It is the reason people either stay silent or manufacture an objection they do not hold.\n\nThe three thoughts that cause the trouble:\n1. \"Agreeing adds nothing\" — agreeing plus a reason adds a great deal.\n2. \"I'll sound like I have no opinion of my own\" — the contribution IS your opinion.\n3. \"Someone will think I'm just being nice\" — not if you bring something they didn't have.\n\nMindset: listen fully first, then look for what you can genuinely add. That is the whole exercise.",
+      inputs: [
+        { q: "Agreeing means I'm just along for the ride.", a: "\"Agreeing with something added is a contribution. It's disagreeing on autopilot that's lazy.\"", bundle: 'pro' },
+        { q: "If I object to something I'll sound like I'm thinking.", a: "\"I don't need a counter-argument to be interesting. A good reason works just as well.\"", bundle: 'pro' },
+        { q: "Agreeing makes it look like I don't have a view.", a: "\"What I add is my opinion. Agreement is just where it happens to land.\"", bundle: 'pro' },
+        { q: "There's nothing to push back on, so I'll say nothing.", a: "\"Silence reads as disagreement. If I'm with them, I should say so.\"", bundle: 'pro' },
+        { q: "Anyone can agree — it isn't a contribution.", a: "\"Agreeing and stopping isn't. Agreeing and adding is the second half of the move.\"", bundle: 'pro' },
+        { q: "I'd rather say nothing than just say yes.", a: "\"Say yes, and one thing. That isn't just saying yes.\"", bundle: 'pro' },
+        { q: "Disagreeing shows I've thought about it.", a: "\"So does agreeing with a reason. The reason is where my thinking shows.\"", bundle: 'pro' },
+        { q: "I've agreed three times in a row now.", a: "\"If it's true three times, I say it three times. Manufactured objections are worse.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "I Have My Example Ready",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind Signal the Agreement: understand the whole statement before you start building your reply.\n\nAgreeing goes wrong the same way listening does — you hear the first half, start composing your own contribution, and end up agreeing with something slightly different from what they said.\n\nWhere it shows up:\n1. You start planning your example while they are still talking.\n2. You agree with the topic rather than with their actual point.\n3. Your addition quietly corrects them, because you misheard the claim.\n\nMindset: get the statement fully first. The contribution is easier to find once you know exactly what you are agreeing with.",
+      inputs: [
+        { q: "I'm building my reply while they're still talking.", a: "\"If I'm building my line, I'm not hearing theirs. Get the whole statement first.\"", bundle: 'pro' },
+        { q: "I agree with the topic, not with what they actually said.", a: "\"They said something specific. I should agree with that, not the general area.\"", bundle: 'pro' },
+        { q: "What I add ends up correcting them without meaning to.", a: "\"That's a sign I misheard. Better to check than to 'agree' with a different point.\"", bundle: 'pro' },
+        { q: "I reply fast so the moment doesn't pass.", a: "\"A short pause reads as thinking, not as having nothing. It's fine to take it.\"", bundle: 'pro' },
+        { q: "I found my example early and stopped listening.", a: "\"Then I'll agree with the topic, not with them. Back to their last sentence.\"", bundle: 'pro' },
+        { q: "My example is close enough to what they said.", a: "\"Close enough reads as a correction. Check the actual claim first.\"", bundle: 'pro' },
+        { q: "If I wait I'll lose the thread of my point.", a: "\"I'll lose a worse version of it. The one that fits arrives later.\"", bundle: 'pro' },
+        { q: "They finished and I said mine straight away.", a: "\"Fast is fine. It just has to answer what they ended on.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mine Is Too Ordinary",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind Add a Personal Experience: your ordinary life is enough material.\n\nPeople hold back their own experience because it feels too small to be worth saying — no drama, no punchline, just a habit or an afternoon. But that is exactly what makes agreement believable.\n\nThree things the experience does not need to be:\n1. Not impressive — \"I read by the window\" is plenty.\n2. Not recent — a habit from years ago works fine.\n3. Not a story — a single detail counts as an experience.\n\nMindset: specific beats big. One small true detail proves you mean it more than any general claim can.",
+      inputs: [
+        { q: "My experience is too ordinary to bring up.", a: "\"Ordinary is the point. A small true detail is what makes agreement believable.\"", bundle: 'pro' },
+        { q: "My example needs a punchline before it's worth telling.", a: "\"It's not a story, it's evidence. One detail does the job.\"", bundle: 'pro' },
+        { q: "Someone has just told a better version than mine.", a: "\"It's not a competition. Mine only has to be true, not better.\"", bundle: 'pro' },
+        { q: "My version is unremarkable, so I'll leave it out.", a: "\"Unremarkable and specific still beats impressive and vague.\"", bundle: 'pro' },
+        { q: "My example has no point to it.", a: "\"It doesn't need a point. It needs to be true and to fit what they said.\"", bundle: 'pro' },
+        { q: "Someone already told a better version.", a: "\"Then mine confirms it from another angle. That's worth more than a better story.\"", bundle: 'pro' },
+        { q: "It's just something that happens to everyone.", a: "\"That's why it lands. Recognition is the thing I'm after.\"", bundle: 'pro' },
+        { q: "I'd need to make it more interesting to tell it.", a: "\"Making it more interesting is how it stops being true. Say the plain one.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mine Should Be Better",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind Expand the Idea: an expansion is a gift, not a way of going one better.\n\nThe same move can read two completely different ways. Done warmly it hands them a new angle; done to impress it quietly says \"and here's the bit you missed\" — and the agreement curdles.\n\nThe tell is in what you are hoping for:\n1. Hoping they take it further — that is expanding.\n2. Hoping they notice you thought of it — that is competing.\n3. Hoping to be seen as the sharper one — that is the whole thing going wrong.\n\nMindset: you are handing them the ball, not taking it. If they run with your expansion, it worked.",
+      inputs: [
+        { q: "My addition should be the cleverest thing said.", a: "\"I'm handing them a new angle, not scoring one. If they run with it, it worked.\"", bundle: 'pro' },
+        { q: "What I'm adding quietly tops their point.", a: "\"One step further, not one step above. Theirs was the point I'm building on.\"", bundle: 'pro' },
+        { q: "I want to be the sharpest voice in the group.", a: "\"Being useful lands better than being sharp, and it's easier to keep up.\"", bundle: 'pro' },
+        { q: "I've expanded so far it's my topic now, not theirs.", a: "\"One step, not five. If they have to catch up, I've changed the subject.\"", bundle: 'pro' },
+        { q: "I can add something that tops what they said.", a: "\"Then I've turned an agreement into a competition. Add beside, not above.\"", bundle: 'pro' },
+        { q: "My version is genuinely a stronger case.", a: "\"Say it as support, not as the improved model. 'Same here, and —'.\"", bundle: 'pro' },
+        { q: "I expanded and now we're on my topic.", a: "\"Hand it back. 'Anyway — that was your point, and I think you're right.'\"", bundle: 'pro' },
+        { q: "I want to be the one who said the clever thing.", a: "\"Notice the wanting. The group remembers who made it easy, not who was sharpest.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  disagreeing: [
+    {
+      name: "Conflict",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Many people avoid disagreeing because they experience it as the first step towards a row. But two people holding different views is the ordinary state of things, and saying so out loud is usually the least dramatic way to handle it.\n\nThe conflict, when it comes, is nearly always about how it was said or how late it surfaced — not about the difference itself.\n\nMindset: a stated difference is calmer than an unstated one.",
+      inputs: [
+        { q: "If I disagree it'll turn into an argument.", a: "Unstated disagreements turn into arguments. Stated ones usually turn into conversations.", bundle: 'pro' },
+        { q: "It's not worth the tension.", a: "The tension is already there. You're deciding whether to name it.", bundle: 'pro' },
+        { q: "They'll think I'm difficult.", a: "They'll think you have a view. That's what people in a discussion are supposed to have.", bundle: 'pro' },
+        { q: "Agreeing keeps things pleasant.", a: "Until the decision goes ahead and you have to live with it.", bundle: 'pro' },
+        { q: "I hate confrontation.", a: "This isn't confrontation. \"I see it differently\" is a normal sentence.", bundle: 'pro' },
+        { q: "We've been getting on well and I don't want to spoil it.", a: "Getting on well is what makes a disagreement safe. Use the goodwill, don't hoard it.", bundle: 'pro' },
+        { q: "Last time I disagreed with them it went badly.", a: "Check what actually went badly — the difference, or how it was raised.", bundle: 'pro' },
+        { q: "I can feel myself getting worked up.", a: "Then the words matter more, not less. \"I see it differently\" and nothing sharper.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Winning",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Treating a disagreement as something to be won turns the other person into an opponent, and opponents defend rather than think. It also makes it very hard for you to change your own mind, because doing so starts to feel like losing.\n\nThe aim is a better shared picture. Sometimes that means they move, sometimes you do, and often both of you end up somewhere neither started.\n\nMindset: the good outcome is a better answer, not your answer.",
+      inputs: [
+        { q: "I need to make them see I'm right.", a: "You need to put your view where they can see it. What they do with it is theirs.", bundle: 'pro' },
+        { q: "If I concede anything I've lost the argument.", a: "Conceding the weak part is what makes the strong part believable.", bundle: 'pro' },
+        { q: "They haven't accepted my point yet.", a: "They've heard it. Acceptance isn't owed to you on the same day.", bundle: 'pro' },
+        { q: "I want the last word.", a: "The last word costs more than it's worth almost every time.", bundle: 'pro' },
+        { q: "Backing down now would look weak.", a: "Changing your mind in public is the thing that makes people trust you later.", bundle: 'pro' },
+        { q: "There are other people listening, so I can't drop it.", a: "An audience makes conceding look better, not worse. They can all see who moved.", bundle: 'pro' },
+        { q: "I've got one more argument I haven't used.", a: "Ask whether it adds something or just adds length. Usually it's length.", bundle: 'pro' },
+        { q: "They've gone quiet, so I think I've got them.", a: "Quiet is often just done. Ask what they think now rather than pressing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Timing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "A disagreement raised at the start is a contribution. The same disagreement raised after a decision is made is an obstacle, and it costs the other person work they have already done.\n\nThe discomfort of speaking up early is small and brief. The cost of speaking up late is carried by everyone.\n\nMindset: the awkward moment gets more expensive the longer you wait.",
+      inputs: [
+        { q: "I'll wait and see if anyone else says it.", a: "They're waiting too. Somebody has to go first.", bundle: 'pro' },
+        { q: "It's too late to raise it now.", a: "It's more awkward now and much worse later. Raise it.", bundle: 'pro' },
+        { q: "Everyone's already agreed.", a: "Then one sentence is all it takes, and the room can decide with it.", bundle: 'pro' },
+        { q: "I'll mention it afterwards, privately.", a: "Sometimes right. But not if the decision gets made in the room.", bundle: 'pro' },
+        { q: "I don't want to derail the meeting.", a: "A ten-second objection isn't a derailment. A rework in April is.", bundle: 'pro' },
+        { q: "I want to think it through properly first.", a: "Say the half-formed version now. \"Something about this bothers me, give me a day\" holds the door.", bundle: 'pro' },
+        { q: "I'm the most junior person here.", a: "Then yours is the view nobody else can supply. Ten seconds is all it takes.", bundle: 'pro' },
+        { q: "I only realised I disagreed afterwards.", a: "That happens. Raise it the same day and it's still early.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Their Reasons",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "When someone holds a view that seems obviously wrong, the useful question is not how they could think that but what they have seen that you have not. Almost every opinion has a real experience behind it.\n\nAsking about that experience is more effective than arguing against the conclusion, and it occasionally turns out that they are right.\n\nMindset: look for the reason behind the position, not the flaw in it.",
+      inputs: [
+        { q: "How can they possibly think that?", a: "Something led them there. Ask what it was — it's usually the most interesting part.", bundle: 'pro' },
+        { q: "They just haven't thought it through.", a: "Or they've thought about something you haven't seen yet.", bundle: 'pro' },
+        { q: "I've already heard all their arguments.", a: "You've heard the arguments. You may not have heard the experience underneath them.", bundle: 'pro' },
+        { q: "There's no good reason to hold that view.", a: "There's a reason. It may not be a good one, but knowing it changes what you say next.", bundle: 'pro' },
+        { q: "Asking questions will look like I'm conceding.", a: "It looks like you're interested. That's what makes people listen back.", bundle: 'pro' },
+        { q: "They're only saying it because of who they heard it from.", a: "Maybe. Ask anyway — you'll find out whether that's true or just convenient.", bundle: 'pro' },
+        { q: "I asked and the answer was vague.", a: "Then ask about a time rather than a reason. Experiences come out clearer than principles.", bundle: 'pro' },
+        { q: "Understanding it would mean half agreeing with it.", a: "Understanding a view and holding it are different things. You can do the first cheaply.", bundle: 'pro' },
+      ]
+    },
+  ],
+  persuasionandinfluence1: [
+    {
+      name: "Their Side",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Most proposals are presented entirely from the proposer's point of view — why it matters to you, what you need, what you have worked out. That is the version you have in your head, and it is the least persuasive one available.\n\nWorking out what the other person gains, or avoids, or stops having to worry about, is usually the whole job. And where there is nothing in it for them, knowing that changes what you should say: you are asking a favour, not making a case.\n\nMindset: before you speak, answer the question \"and what does this do for them?\"",
+      inputs: [
+        { q: "It's obviously a good idea, why do I need to sell it?", a: "Obvious to you. They're looking at their own week, not yours.", bundle: 'pro' },
+        { q: "The benefit to the team should be enough.", a: "Sometimes. The benefit to the person in front of you is stronger.", bundle: 'pro' },
+        { q: "There's nothing in it for them, so I can't use this.", a: "Then say that. \"I'm asking a favour\" is honest and works.", bundle: 'pro' },
+        { q: "It feels manipulative to think about what they want.", a: "It's the opposite. Ignoring what they want is the manipulative version.", bundle: 'pro' },
+        { q: "I don't know what they'd get out of it.", a: "Then ask. That question alone often improves the proposal.", bundle: 'pro' },
+        { q: "I'd have to guess what matters to them.", a: "Then ask. \"What would make this worth doing from where you sit?\"", bundle: 'pro' },
+        { q: "The benefit to them is small compared to the point.", a: "Small and theirs beats large and yours. Say the small one.", bundle: 'pro' },
+        { q: "They'd see straight through it.", a: "Only if it isn't true. Say a real benefit and there's nothing to see through.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Doing Nothing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "People compare any proposal against an imagined alternative in which nothing changes and nothing is spent. That alternative does not exist — the current way has a cost, and it is invisible only because everyone has been paying it long enough to stop noticing.\n\nSaying what it costs is not a scare tactic. It is what makes the comparison honest, and it is the single most commonly missing piece in an argument that ought to have worked.\n\nMindset: name what the current way is already taking.",
+      inputs: [
+        { q: "I don't want to be dramatic about it.", a: "Then don't be. \"Twenty minutes a week, every week\" is not dramatic, it's arithmetic.", bundle: 'pro' },
+        { q: "They'll say I'm exaggerating.", a: "Only if you exaggerate. The real number is nearly always enough.", bundle: 'pro' },
+        { q: "It's not that bad, so I can't argue this.", a: "Small and constant is a real cost. Say the size honestly and let it stand.", bundle: 'pro' },
+        { q: "Pointing out the cost sounds like criticising them.", a: "Then name where it lands rather than who caused it.", bundle: 'pro' },
+        { q: "They already know it's a bit annoying.", a: "Knowing it's annoying isn't the same as knowing what it adds up to.", bundle: 'pro' },
+        { q: "Naming the cost sounds like a threat.", a: "A threat is what you'll do. A cost is what's already happening.", bundle: 'pro' },
+        { q: "The cost is mostly to me, not to them.", a: "Then say that plainly. Your cost is a real fact and it's allowed to matter.", bundle: 'pro' },
+        { q: "I can't put a number on it.", a: "Then describe a week. \"Two mornings, every week\" is a cost without a number.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stacking Arguments",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "When a first argument does not land, the instinct is to add a second and a third. Four cases in a row is not four times as persuasive — it reads as a presentation, and people brace against presentations rather than considering them.\n\nIt also hides which one was working. A single case, followed by silence, tells you far more about where they actually are.\n\nMindset: make one case properly, then stop and find out what happened.",
+      inputs: [
+        { q: "They're not convinced, so I need more arguments.", a: "You need to know why. One more argument won't tell you.", bundle: 'pro' },
+        { q: "I've got four good reasons, I should use them.", a: "Use the best. The other three make the weakest one findable.", bundle: 'pro' },
+        { q: "If I stop they'll think I've run out.", a: "They'll think you said your piece. That's a stronger position.", bundle: 'pro' },
+        { q: "Silence after one case feels thin.", a: "That silence is them considering it. Let it happen.", bundle: 'pro' },
+        { q: "I want to cover every angle.", a: "Cover the one they're standing on. They'll tell you which it is.", bundle: 'pro' },
+        { q: "They asked a question, so I gave them three more reasons.", a: "They asked one question. Answer that one and stop.", bundle: 'pro' },
+        { q: "My best argument is the third one.", a: "Then lead with it. Nobody is obliged to wait through two weaker ones.", bundle: 'pro' },
+        { q: "The silence after my case is unbearable.", a: "That's them thinking. Filling it is how a good case turns into a pitch.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Where Influence Stops",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "These strategies work. That is exactly why the line matters: the same moves that make a good idea land can be used to talk someone into something that is not in their interest.\n\nThe test is simple and worth applying honestly. Does their interest actually appear in your case, or only in your framing of it? Would you be comfortable if they could hear you explain why you chose this particular argument on them?\n\nMindset: influence is making a good case easy to accept. It is not getting your way.",
+      inputs: [
+        { q: "It's for their own good, so the method doesn't matter.", a: "It does. If it's really for their good, the honest version works.", bundle: 'pro' },
+        { q: "Everyone argues like this.", a: "The arguments aren't the issue. Whether their interest is real is.", bundle: 'pro' },
+        { q: "I know what's best here.", a: "Possibly. They still get to decide, and pretending otherwise is the line.", bundle: 'pro' },
+        { q: "A number would help, and roughly right is close enough.", a: "Roughly right is wrong when it's checked, and it takes the rest with it.", bundle: 'pro' },
+        { q: "I'd be embarrassed if they knew why I put it that way.", a: "That's your answer. Say the version you wouldn't be embarrassed about.", bundle: 'pro' },
+        { q: "I left out the part that weakens my case.", a: "Then you've won something you'd have to defend later. Put it back in.", bundle: 'pro' },
+        { q: "They'd never agree if they knew the full picture.", a: "That's your answer about whether to do it this way.", bundle: 'pro' },
+        { q: "A bit of pressure would get this over the line.", a: "And it would be over the line. Make the case and let them decide.", bundle: 'pro' },
+      ]
+    },
+  ],
+  persuasionandinfluence2: [
+    {
+      name: "Pushing Harder",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The instinct when someone disagrees is to argue harder — more reasons, more emphasis, more repetitions. It almost always produces the opposite of what it is aiming at, because pressure creates something to resist.\n\nThe strategies in this pack all work by removing an obstacle rather than by applying force: acknowledgement removes the sense of being corrected, a question removes the need to concede, a smaller ask removes the commitment.\n\nMindset: when it is not working, take something away rather than adding more.",
+      inputs: [
+        { q: "They're not convinced, so I need a stronger argument.", a: "Or a smaller ask. Try that first — it works more often.", bundle: 'pro' },
+        { q: "If I just explain it once more they'll see it.", a: "The third explanation is where people stop listening.", bundle: 'pro' },
+        { q: "They're being stubborn.", a: "They're resisting pressure. Take the pressure off and see what happens.", bundle: 'pro' },
+        { q: "I need to make them understand.", a: "You need to make it easy to agree. Those are different jobs.", bundle: 'pro' },
+        { q: "Backing off means losing.", a: "It means they get to decide without a fight, which is when most people say yes.", bundle: 'pro' },
+        { q: "They agreed with the reasoning and still said no.", a: "Then the reasoning was never the problem. Find out what is.", bundle: 'pro' },
+        { q: "I'll send the evidence again, better laid out.", a: "The evidence isn't being misread. It's being resisted.", bundle: 'pro' },
+        { q: "If I sound more certain they'll come round.", a: "Certainty invites the opposite. Ask what would make it work for them.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Repeating It",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "People rarely change their minds while being asked. They change them afterwards, in the quiet, without an audience — which is why the most useful thing you can do after making your case is to stop making it.\n\nRepeating a proposal turns it into pressure, and pressure makes agreement feel like a loss. Leaving it alone lets the argument work on its own.\n\nMindset: say it well once, then get out of its way.",
+      inputs: [
+        { q: "They didn't say yes, so I should try again.", a: "Try again in a week. Not in the next sentence.", bundle: 'pro' },
+        { q: "If I drop it, nothing will happen.", a: "Often something does — a day later, without you in the room.", bundle: 'pro' },
+        { q: "They'll think I didn't care if I let it go.", a: "They'll think you meant it, because you didn't need to win.", bundle: 'pro' },
+        { q: "I've got one more angle I haven't used.", a: "Save it. A fourth angle reads as pressure regardless of how good it is.", bundle: 'pro' },
+        { q: "Handing over the decision feels like giving up.", a: "It's the last move of the technique, not the absence of one.", bundle: 'pro' },
+        { q: "Letting it drop means it never happens.", a: "Letting it drop is often when it starts happening.", bundle: 'pro' },
+        { q: "I'll mention it once more, casually.", a: "There's no casual fourth mention. They can count.", bundle: 'pro' },
+        { q: "They haven't said no, so I can keep going.", a: "They haven't said yes either. That's a no with the door left open.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being Wrong",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "A great deal of resistance has nothing to do with the merits. It comes from the fact that agreeing would mean admitting the previous position was mistaken, in front of someone.\n\nEvery strategy in this pack quietly removes that cost. A question lets them arrive at it themselves. An acknowledgement means their idea was never dismissed. A trial means nothing has been conceded yet.\n\nMindset: make it possible to agree without having lost anything.",
+      inputs: [
+        { q: "They're only disagreeing because they said the opposite yesterday.", a: "Probably. Give them a way to move that isn't a climbdown.", bundle: 'pro' },
+        { q: "I want them to admit they were wrong.", a: "Then you want two things, and you'll get neither.", bundle: 'pro' },
+        { q: "If I acknowledge their idea it looks like I'm conceding.", a: "It looks like you listened. That's what makes yours worth hearing.", bundle: 'pro' },
+        { q: "They should just look at it objectively.", a: "They will, once looking at it doesn't cost them anything.", bundle: 'pro' },
+        { q: "Why should I make it easy for them?", a: "Because you want the outcome, not the apology.", bundle: 'pro' },
+        { q: "They committed to this publicly, so they're stuck.", a: "Then build them an exit. That's the whole job now.", bundle: 'pro' },
+        { q: "Agreeing with part of theirs weakens mine.", a: "It's what makes yours worth listening to.", bundle: 'pro' },
+        { q: "I want it on record that I was right.", a: "Then you're negotiating for the record, not for the outcome.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Where Influence Stops",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "These strategies work. That is exactly why the line matters: the same moves that make a good idea land can be used to talk someone into something that is not in their interest.\n\nThe test is simple and worth applying honestly. Does their interest actually appear in your case, or only in your framing of it? Would you be comfortable if they could hear you explain why you chose this particular strategy on them?\n\nMindset: influence is making a good case easy to accept. It is not getting your way.",
+      inputs: [
+        { q: "It's for their own good, so the method doesn't matter.", a: "It does. If it's really for their good, the honest version works.", bundle: 'pro' },
+        { q: "Everyone uses these techniques.", a: "The techniques aren't the issue. Whether their interest is real is.", bundle: 'pro' },
+        { q: "I know what's best here.", a: "Possibly. They still get to decide, and pretending otherwise is the line.", bundle: 'pro' },
+        { q: "A little pressure is fine if the outcome is right.", a: "Then you've decided the outcome matters more than they do.", bundle: 'pro' },
+        { q: "I'd be embarrassed if they knew why I said it that way.", a: "That's your answer. Say the version you wouldn't be embarrassed about.", bundle: 'pro' },
+        { q: "They'd agree if they had all the information.", a: "Possibly. Give it to them and let the answer be theirs.", bundle: 'pro' },
+        { q: "It's a small nudge, not manipulation.", a: "The test isn't size. It's whether you'd say it to their face.", bundle: 'pro' },
+        { q: "They're about to make a bad decision.", a: "They might be. It's still theirs, and saying so once is your whole allowance.", bundle: 'pro' },
+      ]
+    },
+  ],
+  negotiationandcompromise: [
+    {
+      name: "Winning",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Once a discussion feels like a contest, both people start defending positions rather than looking for answers — and a position defended for ten minutes becomes much harder to leave, regardless of whether it was ever the best one.\n\nThe measure of a negotiation is not who moved less. It is whether the arrangement is one both people will still be happy with in three months.\n\nMindset: the other person is not the opponent. The problem is.",
+      inputs: [
+        { q: "If I move first I've lost ground.", a: "You've started the trading. Somebody has to, and it usually goes better for them.", bundle: 'pro' },
+        { q: "They've barely moved, so I shouldn't either.", a: "That's how two people spend an hour arriving nowhere.", bundle: 'pro' },
+        { q: "I want to come out of this ahead.", a: "Ahead of what? You still have to work with them on Monday.", bundle: 'pro' },
+        { q: "Conceding makes me look weak.", a: "Trading something you don't need for something you do is the whole skill.", bundle: 'pro' },
+        { q: "They'll take advantage if I'm reasonable.", a: "Some will. Most reciprocate, and you'll know within one exchange.", bundle: 'pro' },
+        { q: "They've made it a contest, so I have to compete.", a: "One of you can stop. It's cheaper than both defending for an hour.", bundle: 'pro' },
+        { q: "Backing off now would look weak.", a: "It looks like you're after an answer, which reads as confidence everywhere else.", bundle: 'pro' },
+        { q: "I've argued this for ten minutes, I can't drop it now.", a: "The ten minutes is the reason to drop it, not the reason to continue.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Positions",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "People arrive with positions — a date, a number, a plan — and those positions are conclusions they have already drawn from something they need. The need is where the room is.\n\nTwo people arguing about a date may want completely different things: one wants time, the other wants not to have an awkward conversation twice. Both are available. Neither is visible while the argument is about the date.\n\nMindset: ask what is underneath before you offer anything.",
+      inputs: [
+        { q: "We just want different things, there's no solution.", a: "You want different POSITIONS. You may want compatible things underneath.", bundle: 'pro' },
+        { q: "Asking why they want it sounds like I'm challenging them.", a: "Ask what it protects rather than why. It lands as interest.", bundle: 'pro' },
+        { q: "It's obvious what they want, they've said it four times.", a: "They've said their position four times. You still don't know what it's for.", bundle: 'pro' },
+        { q: "There's no room, we're too far apart.", a: "Too far apart on the positions. Check the needs before you conclude that.", bundle: 'pro' },
+        { q: "Finding all that out takes too long.", a: "One question. It's faster than another twenty minutes of the same argument.", bundle: 'pro' },
+        { q: "They want the opposite of what I want.", a: "They want the opposite position. Find out what it's protecting.", bundle: 'pro' },
+        { q: "There's no version where we both get it.", a: "There might be. Neither need has been described out loud yet.", bundle: 'pro' },
+        { q: "Asking what matters most sounds like a tactic.", a: "It is one, if you use the answer against them. Don't, and it isn't.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Never Entering",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "A surprising number of negotiations are lost by people who never entered them. They soften the preference until it disappears, or wait to see what the other person says, or hope it will be obvious.\n\nSaying plainly what you would like is not aggressive and does not commit you to getting it. It just puts your side on the table, which is the minimum requirement for it being considered at all.\n\nMindset: state it, then be flexible. Not the other way round.",
+      inputs: [
+        { q: "I'll see what they suggest first.", a: "Then you're negotiating against yourself before anyone's spoken.", bundle: 'pro' },
+        { q: "It sounds demanding to say what I want.", a: "\"I'd like X\" is a sentence. Everyone else in the room is saying one.", bundle: 'pro' },
+        { q: "I don't want to seem inflexible.", a: "Say what you want and that you're flexible. Both in the same breath.", bundle: 'pro' },
+        { q: "If I ask for what I want I'll seem selfish.", a: "A negotiation where only one side has preferences isn't a negotiation.", bundle: 'pro' },
+        { q: "I'll go along and mention it if it matters.", a: "It'll be settled by then, and you'll be annoyed about something nobody knew.", bundle: 'pro' },
+        { q: "I'll wait and see what's on the table.", a: "Then the table is theirs. Put one sentence on it first.", bundle: 'pro' },
+        { q: "Saying it plainly feels like an opening bid.", a: "It's a starting point, which is what everybody else brought.", bundle: 'pro' },
+        { q: "I don't want to anchor it too high.", a: "Anchoring low by saying nothing is also anchoring.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Settling Early",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The moment somebody says \"that'll do\" is the most dangerous moment in a negotiation. Both people are relieved, the conversation is nearly over, and neither wants to reopen it.\n\nBut an agreement nobody is happy with will not be defended. It gets quietly deprioritised, missed, or complained about later — and ten more minutes at the end would have prevented all of it.\n\nMindset: ask once more before you both walk away.",
+      inputs: [
+        { q: "We've agreed, let's not reopen it.", a: "Ten minutes now beats three months of it not working.", bundle: 'pro' },
+        { q: "They said yes, that's enough.", a: "A fast yes is worth one more question. Ask.", bundle: 'pro' },
+        { q: "I don't want to seem difficult at the last minute.", a: "The last minute is exactly when it's cheap to fix.", bundle: 'pro' },
+        { q: "It's good enough, and I'm tired.", a: "Fair. Then say that, and agree to look at it again next week.", bundle: 'pro' },
+        { q: "Pointing out my remaining problem seems petty.", a: "It'll be less petty now than in March, when it's stopped working.", bundle: 'pro' },
+        { q: "They agreed, so we're finished.", a: "They agreed quickly. Ask once whether it actually works.", bundle: 'pro' },
+        { q: "Reopening it will look like I'm not satisfied.", a: "You're not. Better now than in six weeks with the plan half-built.", bundle: 'pro' },
+        { q: "It's ninety per cent right, which is good enough.", a: "Name the ten per cent now. It's the part that breaks first.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being the Reasonable One",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "Reasonableness is a virtue and this deck does not dispute it. The people who hold this belief are genuinely easy to deal with, and they have been told so for years.\n\nWhat the deck does is show where the money went.\n\nFlexibility that is never withheld gets priced in. People stop asking what you would prefer, because the answer has stopped mattering to the outcome — and the halfway point you keep meeting at has been drifting for a long time.\n\nThis is the belief behind the pack's first challenge, conceding too fast. It does not feel like conceding from the inside. It feels like being nice.\n\nMindset: going first is generous. Going every time is a habit somebody else is budgeting for.",
+      inputs: [
+        { q: "I'm easy to deal with. People like negotiating with me.", a: "They do. Some of them now plan around the fact that you'll move.", bundle: 'pro' },
+        { q: "I always meet people halfway.", a: "Every time. Which means the halfway point has been drifting for years.", bundle: 'pro' },
+        { q: "I'd rather keep the relationship than win the point.", a: "Nobody's asking you to win. They're asking you to say what you want.", bundle: 'pro' },
+        { q: "Being difficult isn't worth it over small things.", a: "Twenty small things isn't a small thing. It's your week.", bundle: 'pro' },
+        { q: "I don't need much, so it's easy to give ground.", a: "Then say so as a choice. Given quietly, it reads as having no preference.", bundle: 'pro' },
+        { q: "Somebody has to be the flexible one.", a: "Somebody has to go first. That isn't the same as going every time.", bundle: 'pro' },
+        { q: "It's not in my nature to push.", a: "You're not pushing, you're answering. They asked what you wanted.", bundle: 'pro' },
+        { q: "I get on well with everybody I work with.", a: "You do. Ask how many of them know what you'd have preferred.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Splitting the Difference",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Halving it feels like fairness, and it is the fastest way to end a disagreement. It is also the reason so many agreements quietly stop working a month later.\n\nThe midpoint is arrived at without anybody finding out what either side actually needed, so it removes the part each of them cared about and leaves the parts neither did. Both people agree to it and neither defends it afterwards.\n\nMindset: the middle is where you go when you have not asked. Two questions first, and the answer is usually better than the middle for both of you.",
+      inputs: [
+        { q: "Half each is the fair answer.", a: "It's the quick answer. Fair would be finding out what each half is worth to you.", bundle: 'pro' },
+        { q: "Meeting in the middle is what reasonable people do.", a: "Reasonable people find out what matters first. The middle is where you go when you haven't.", bundle: 'pro' },
+        { q: "If we give up the same amount it's even.", a: "Even isn't the goal. Both of you being able to live with it is.", bundle: 'pro' },
+        { q: "The midpoint at least ends the argument.", a: "It ends the conversation. The argument returns when neither plan works.", bundle: 'pro' },
+        { q: "Anything cleverer takes too long.", a: "Two questions take four minutes. Redoing this in March takes a week.", bundle: 'pro' },
+        { q: "Splitting it is the only thing we'll both accept.", a: "You haven't asked yet. Ask which part they'd trade.", bundle: 'pro' },
+        { q: "A compromise means neither of us gets what we wanted.", a: "A bad one does. A good one is built from the parts you each care about.", bundle: 'pro' },
+        { q: "We're too far apart for anything clever.", a: "Far apart on the position. You haven't checked the needs underneath.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Naming a Limit",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "A limit said out loud feels like an act of aggression, so people keep theirs back and hope the conversation does not reach it. It always reaches it, and by then the limit arrives as a refusal rather than as information.\n\nThe other half of the fear is that naming one ends the negotiation. It does the opposite: a limit tells the other person the shape of the space they are working in, which is easier than guessing at its edges.\n\nMindset: an early limit is information. A late one is a problem.",
+      inputs: [
+        { q: "Saying I can't do that will sound aggressive.", a: "A limit stated early is information. Stated after you've broken it, it's a problem.", bundle: 'pro' },
+        { q: "If I name a limit they'll stop negotiating.", a: "They'll negotiate around it, which is easier than guessing where it is.", bundle: 'pro' },
+        { q: "Flexibility is what makes this work.", a: "Flexibility about everything is the same as having no position.", bundle: 'pro' },
+        { q: "I'll keep it in reserve in case I need it.", a: "Then they'll build a plan on the assumption it isn't there.", bundle: 'pro' },
+        { q: "It feels like an ultimatum.", a: "An ultimatum has a threat in it. \"I can't do Fridays\" just has a Friday in it.", bundle: 'pro' },
+        { q: "They'll think I'm being difficult.", a: "They'll think you're being clear. Difficult is finding out at the end.", bundle: 'pro' },
+        { q: "I should be able to make this work somehow.", a: "Some things you can. You've already told yourself three times that this isn't one.", bundle: 'pro' },
+        { q: "If I say it's not negotiable the conversation ends.", a: "Say what is, in the same breath. Then it's a shape, not a wall.", bundle: 'pro' },
+      ]
+    },
+  ],
+  brokenrecord: [
+    {
+      name: "Reasons",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Offering a reason feels like the decent thing to do — it treats the other person as reasonable and shows you are not being arbitrary. In the middle of pressure it does the opposite: it hands them the terms of the argument.\n\nOnce a reason is on the table, the question stops being what you decided and becomes whether your reason is good enough. That is a question the other person now gets to answer, and they will answer it in their favour.\n\nMindset: a decision that is yours to make does not require a justification. \"I'd rather not\" is complete.",
+      inputs: [
+        { q: "It's rude not to explain myself.", a: "It's normal. \"I'd rather not\" is a complete sentence between adults.", bundle: 'pro' },
+        { q: "If I give a good reason they'll accept it.", a: "They'll solve it. A good reason is a puzzle, not a full stop.", bundle: 'pro' },
+        { q: "They'll think I'm hiding something.", a: "They might. That's cheaper than an hour of negotiating your reason.", bundle: 'pro' },
+        { q: "I've got a genuinely good reason, why not use it?", a: "Because they'll work around it, and then you'll need a second one.", bundle: 'pro' },
+        { q: "Not explaining feels cold.", a: "Then acknowledge them warmly and still don't explain. The two are separate.", bundle: 'pro' },
+        { q: "They asked me directly why.", a: "A question doesn't create a debt. \"I'd rather not go into it\" is an answer.", bundle: 'pro' },
+        { q: "Refusing to explain will make them angrier.", a: "Briefly, maybe. Explaining hands them the thing to argue with for an hour.", bundle: 'pro' },
+        { q: "I gave a reason and now we're discussing the reason.", a: "That's what reasons do. Go back to the line and leave it there.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Repetition",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Saying the same sentence four times feels obstinate and slightly absurd, which is why most people rephrase instead — and rephrasing is exactly what keeps the conversation alive.\n\nFrom the outside it does not read as rude. It reads as settled. The other person is not offended by the repetition; they are informed by it, and most stop after the third identical answer because there is visibly nowhere left to go.\n\nMindset: the sameness is the message. It says this is not being decided right now.",
+      inputs: [
+        { q: "Saying the same thing again is obviously annoying.", a: "Less annoying than fifteen more minutes of it. Repetition is the short route.", bundle: 'pro' },
+        { q: "I should at least vary it so it sounds less robotic.", a: "Every variation is a new sentence to argue with. Robotic is doing its job.", bundle: 'pro' },
+        { q: "They'll think I'm not listening.", a: "That's what the acknowledgement is for. One clause, then the same line.", bundle: 'pro' },
+        { q: "It feels like a power play.", a: "It's the opposite — it's the version with no argument and no raised voice in it.", bundle: 'pro' },
+        { q: "Surely I should engage with what they're saying.", a: "You can hear it without answering it. Those are different things.", bundle: 'pro' },
+        { q: "I've said it four times and I feel absurd.", a: "You feel it. They hear a settled answer. Those are different experiences.", bundle: 'pro' },
+        { q: "Changing the words slightly would sound more human.", a: "And it opens a new sentence to argue with. Keep it human in the tone instead.", bundle: 'pro' },
+        { q: "They said \"you keep saying the same thing\".", a: "\"I do, because it hasn't changed.\" That's a complete reply.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Their Discomfort",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The hardest part of holding a line is not the argument. It is watching someone be disappointed, frustrated or upset and knowing you could end it instantly by giving in.\n\nThat impulse is decent and it is also the mechanism by which people end up doing things they had decided not to do. Someone else's disappointment is uncomfortable and it is survivable, for both of you.\n\nMindset: you are allowed to leave someone disappointed. That is not the same as having wronged them.",
+      inputs: [
+        { q: "They're really upset — I should just say yes.", a: "You'd be solving your discomfort, not theirs. And you'd resent it by Thursday.", bundle: 'pro' },
+        { q: "It's only a small thing, why make it difficult?", a: "Because it isn't small to you, or you'd have said yes already.", bundle: 'pro' },
+        { q: "I'm being unkind.", a: "You're declining a request. Those aren't the same thing.", bundle: 'pro' },
+        { q: "They'll be angry with me.", a: "Possibly, briefly. Doing it resentfully lasts longer.", bundle: 'pro' },
+        { q: "A better person would help.", a: "A better person would also be allowed to say no to this one.", bundle: 'pro' },
+        { q: "They started crying and I nearly folded.", a: "Stay warm, keep the line. Comfort and agreement are different things to offer.", bundle: 'pro' },
+        { q: "I'll say yes and sort it out later.", a: "Later you'll have the same conversation plus a broken promise.", bundle: 'pro' },
+        { q: "Someone else is watching and I look cold.", a: "A calm repeated line reads as steady. Nobody has ever read it as cold.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Delivery",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The words matter far less than the delivery. The same sentence, said with a sigh or a sharpened edge, tells the other person that you are close to breaking or that this has become a fight — and both invite more pressure.\n\nFlat, level and unbothered is what says the decision is not in play. It is also what keeps the relationship intact, because nothing has been said that either of you has to apologise for later.\n\nMindset: nothing to prove, nothing to defend. Just the same sentence, said the same way.",
+      inputs: [
+        { q: "I'm getting annoyed and it's showing.", a: "Shorten the sentence. Short is easier to say calmly than long.", bundle: 'pro' },
+        { q: "They're being unreasonable — why should I stay calm?", a: "Because calm is what's holding the line. Losing it hands them the subject.", bundle: 'pro' },
+        { q: "A bit of sarcasm would make my point.", a: "It would start an argument. Then it's about your tone, not your answer.", bundle: 'pro' },
+        { q: "I want them to know how frustrating this is.", a: "Say it plainly once, if you must. Do not let it into the line.", bundle: 'pro' },
+        { q: "If I'm too calm they won't take it seriously.", a: "Calm repetition is taken far more seriously than heat. It reads as settled.", bundle: 'pro' },
+        { q: "My voice went up on the fourth repeat.", a: "Notice it, drop it back, say the line once more flat. That's the whole repair.", bundle: 'pro' },
+        { q: "Staying level feels like letting them off.", a: "It's what makes the line hold. Heat is the thing that gives them something to answer.", bundle: 'pro' },
+        { q: "They accused me of being cold about it.", a: "Then warm the acknowledgement, not the line. \"I know this is hard — and still no.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "I'll Know What to Say",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Deciding the exact sentence beforehand feels like over-preparing for something that has not happened yet — and slightly false, as though you were rehearsing a part rather than having a conversation. The words will come when they are needed.\n\nThey will. What comes is three sentences instead of one, and one of them carries a hedge you did not intend to offer. The line decided in a calm room is the only version written by you rather than by the pressure.\n\nMindset: write the sentence before you need it. Under pressure you will not compose, you will improvise, and improvised lines negotiate.",
+      inputs: [
+        { q: "Deciding the words in advance feels like rehearsing.", a: "One sentence isn't a rehearsal. It's the only part you can't invent later.", bundle: 'pro' },
+        { q: "I don't know yet what they'll ask for.", a: "You know what your answer is. Write that, not a reply to a question you haven't heard.", bundle: 'pro' },
+        { q: "A prepared line will sound stiff.", a: "It sounds calm. Stiff is what improvising under pressure actually sounds like.", bundle: 'pro' },
+        { q: "I'll adapt it depending on how they take it.", a: "That's the trap. Adapting is how \"no\" turns into \"not this month, probably\".", bundle: 'pro' },
+        { q: "My line has three parts to it.", a: "Then it isn't a line yet. Cut it until one sentence carries the whole position.", bundle: 'pro' },
+        { q: "I've decided the reasons, that's the same thing.", a: "Reasons are what they'll argue with. Decide the position instead.", bundle: 'pro' },
+        { q: "It's only a small conversation.", a: "Small conversations are where people say yes by accident. Ten seconds of deciding covers it.", bundle: 'pro' },
+        { q: "I'd feel silly writing it down.", a: "Say it out loud once in the car. That's the whole preparation.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "This One Deserves an Answer",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "When the first line of persuasion fails, the next one usually arrives dressed as a different subject — fairness, what happened last year, what someone else did. It genuinely sounds like a new point, so declining to engage with it feels like dodging.\n\nBut each new frame restarts the conversation, and answering it moves you from your position to theirs. The question is not whether the point is interesting. It is whether answering it gets you any closer to the thing you already decided, and it does not — it hands them a fresh subject to be right about.\n\nMindset: notice the switch and do not take it. The line is the answer to all of them.",
+      inputs: [
+        { q: "That's a completely different point, I should address it.", a: "It's a different route to the same request. The line answers all the routes.", bundle: 'pro' },
+        { q: "If I don't respond they'll think I can't.", a: "They'll notice you didn't move. That reads as settled, not stuck.", bundle: 'pro' },
+        { q: "They've raised something that isn't fair to leave.", a: "Then say you'll talk about it separately. Not now, not attached to this.", bundle: 'pro' },
+        { q: "It would be rude to ignore what they just said.", a: "Acknowledge it in four words, then repeat. That isn't ignoring.", bundle: 'pro' },
+        { q: "They brought up something true about me.", a: "True and irrelevant here. \"That's fair — and I'm still not going to.\"", bundle: 'pro' },
+        { q: "I answered one and now there are four more.", a: "That's the pattern arriving on schedule. Stop answering and the supply dries up.", bundle: 'pro' },
+        { q: "This new argument is actually a good one.", a: "Then hear it another day, from the start. Not as the fifth attempt at this.", bundle: 'pro' },
+        { q: "If I don't engage the conversation just stalls.", a: "Stalling is the point. A stalled persuasion attempt is one that has finished.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Compromise Is a Loss",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Offering something after repeating a line five times feels like the repetition failing at the last moment — as though everything before it was a bluff you have now folded on.\n\nIt depends entirely on what the line was about. A position of principle has nothing to trade; a practical constraint nearly always does, and the version you offer is the one that works for you rather than the one they asked for. Offered from a line you held, it reads as generous. Offered from a line you were about to drop, it reads as caving — which is why the order matters more than the offer.\n\nMindset: hold first, offer second. Offering from a held position is not the same act as giving in.",
+      inputs: [
+        { q: "Offering anything undoes all the repeating.", a: "Not if the offer is yours, not theirs. You're adding, not conceding.", bundle: 'pro' },
+        { q: "They'll think the repetition was just a negotiating tactic.", a: "Then say which part is fixed. \"The money is a no. The lift I can do.\"", bundle: 'pro' },
+        { q: "If I had something to offer I should have said so earlier.", a: "Earlier it becomes the new starting point and they negotiate from there.", bundle: 'pro' },
+        { q: "A half-measure will just annoy them.", a: "Some. Most people would rather have the half than the nothing.", bundle: 'pro' },
+        { q: "My position is practical, but offering feels weak anyway.", a: "Weakness is moving your line. An offer beside it isn't a move.", bundle: 'pro' },
+        { q: "They'll come back and ask for more.", a: "Then the line is still there, and you repeat it. That's what it's for.", bundle: 'pro' },
+        { q: "I can't think of anything workable.", a: "Then there isn't one. Say so plainly and stay on the line.", bundle: 'pro' },
+        { q: "I offered and they turned it down.", a: "Fine. You've now given them two answers and neither was yes.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stopping Is Giving Up",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Ending the conversation while they are still asking feels like walking out of an unfinished argument — as though the technique only worked if they eventually agreed, and leaving without that means it did not work.\n\nAgreement was never the target. The point of repeating a line is that your answer stays the same however many times it is asked, and there is a number of times after which repeating adds nothing at all. Stopping is the last move in the sequence, not the absence of one.\n\nMindset: name the end and take it. The conversation finishing is what a held line looks like from outside.",
+      inputs: [
+        { q: "I can't leave while they're still not happy.", a: "Their being happy was never yours to deliver. The answer was.", bundle: 'pro' },
+        { q: "If I end it now nothing has been resolved.", a: "It has. They asked, you answered, and the answer didn't change.", bundle: 'pro' },
+        { q: "They'll bring it up again tomorrow.", a: "Then you say the line tomorrow. That's cheaper than an hour tonight.", bundle: 'pro' },
+        { q: "Ending it makes me the one who walked away.", a: "\"I'm going to leave it there\" is an ending, not a walk-out. Say it warmly.", bundle: 'pro' },
+        { q: "One more round might do it.", a: "Round six has never done it. Notice that you're the one still hoping.", bundle: 'pro' },
+        { q: "It feels harsh to stop when they're upset.", a: "Staying longer doesn't help them. It just puts you both in it for another twenty minutes.", bundle: 'pro' },
+        { q: "I don't know how to close it.", a: "\"We're going round now. I'll leave it there.\" Then change the subject or go.", bundle: 'pro' },
+        { q: "Stopping means I have to be the bad one.", a: "Somebody has to end it. The one who ends it kindly isn't the bad one.", bundle: 'pro' },
+      ]
+    },
+  ],
+  respondingtopassiveaggression: [
+    {
+      name: "The Bait",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "A passive-aggressive remark is built to provoke a reaction it can then deny provoking. That is the whole mechanism, and it is why the remark is indirect in the first place.\n\nWhich means the least satisfying thing you can do is answer the words and nothing else. Not because you did not notice, but because you have declined to supply the missing half of the exchange.\n\nMindset: you do not owe a reaction to something that was not said.",
+      inputs: [
+        { q: "If I don't react they'll think they got away with it.", a: "They'll notice it didn't work. That's the thing that actually changes it.", bundle: 'pro' },
+        { q: "Letting it pass makes me look weak.", a: "It looks like it didn't reach you. That reads as the opposite of weak.", bundle: 'pro' },
+        { q: "Someone has to call this out.", a: "Sometimes. Not necessarily now, and not necessarily in front of everyone.", bundle: 'pro' },
+        { q: "I should show that I noticed.", a: "You can notice without responding. Those are different things.", bundle: 'pro' },
+        { q: "They'll just keep doing it.", a: "Then it's a pattern, and a pattern gets one proper conversation rather than four small ones.", bundle: 'pro' },
+        { q: "Not reacting means they win.", a: "There's nothing to win. The remark only works if it gets a rise.", bundle: 'pro' },
+        { q: "I reacted and now I feel stupid about it.", a: "Everyone does sometimes. The next one is a fresh chance to not.", bundle: 'pro' },
+        { q: "Other people are watching to see what I do.", a: "They're watching whether you stay steady. That's the only thing being judged.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Answering at All",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "There is an idea that every remark requires a response — that leaving one unanswered means accepting it. It does not, and treating each one as something to be handled turns other people's moods into your workload.\n\nChoosing to let something go is a decision, not a defeat. The test is honest and simple: will you still be thinking about it in an hour?\n\nMindset: pick the ones worth answering, and let the rest fall where they land.",
+      inputs: [
+        { q: "If I ignore it, I'm accepting it.", a: "You're declining to make it a conversation. That's not the same as agreeing.", bundle: 'pro' },
+        { q: "I let it go and now I'm annoyed about it.", a: "Then it was one to answer. Go back to it — later is fine.", bundle: 'pro' },
+        { q: "I should deal with each one as it comes.", a: "That's their mood becoming your job. Choose the ones that matter.", bundle: 'pro' },
+        { q: "Not saying anything feels like avoiding it.", a: "Only if you didn't decide. Deciding is the difference.", bundle: 'pro' },
+        { q: "They'll think I didn't notice.", a: "Almost certainly they'll think you noticed and weren't bothered.", bundle: 'pro' },
+        { q: "There have been four of these this week.", a: "Then pick the one worth naming and let the other three go. You can't take them all.", bundle: 'pro' },
+        { q: "Letting it go feels like a decision I'll regret.", a: "Decide it out loud to yourself. A chosen silence sits differently from a swallowed one.", bundle: 'pro' },
+        { q: "If I let this one pass I'll have to let them all pass.", a: "No. Choosing is the skill, and it works one remark at a time.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Your Own Indirectness",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The most useful thing in this pack is not a way of handling other people's indirectness — it is noticing your own.\n\nAlmost everyone does it. A sigh instead of a request, \"it's fine\" when it is not, a joke carrying something serious in it. It happens for a decent reason: the direct version felt too big, or too risky, or you were not sure you were entitled to it.\n\nThe plain version is nearly always smaller and easier than it feels, and it gets you what the indirect version was reaching for.\n\nMindset: if you are going to say it sideways, consider saying it straight instead.",
+      inputs: [
+        { q: "I'm not passive-aggressive, other people are.", a: "Everyone does it. The sigh, the \"it's fine\", the joke with something in it.", bundle: 'pro' },
+        { q: "I shouldn't have to spell it out.", a: "Maybe not. But the spelt-out version is the one that gets you what you want.", bundle: 'pro' },
+        { q: "Saying it directly feels like too big a deal.", a: "It's usually smaller than the hint. Hints get discussed for days.", bundle: 'pro' },
+        { q: "If I say it straight it'll cause an argument.", a: "The indirect version causes a longer one, later, about something else.", bundle: 'pro' },
+        { q: "I did the sighing thing again.", a: "Go back and say the actual sentence. It's not too late to be direct.", bundle: 'pro' },
+        { q: "A sigh isn't the same as a dig.", a: "It arrives the same way. If you want something, say it in words.", bundle: 'pro' },
+        { q: "They'd take the direct version badly.", a: "They'd take it once. The indirect version they take a dozen times.", bundle: 'pro' },
+        { q: "I hinted and they missed it, so I hinted harder.", a: "That's the ladder. Step off it and say the sentence.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What's Underneath",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Passive aggression is annoying, and it is also almost always a real grievance that could not find a direct route out. The remark is the symptom; the frustration underneath it is normally genuine and often justified.\n\nThat does not make the delivery acceptable, and holding both at once is the useful position: the way it was said is not fine, and the thing it was about may well be.\n\nMindset: take the grievance seriously even while declining the delivery.",
+      inputs: [
+        { q: "They're just being difficult.", a: "Possibly. Or they're annoyed about something real and couldn't say it.", bundle: 'pro' },
+        { q: "If I acknowledge the feeling I'm rewarding the behaviour.", a: "You're separating them. \"I can see you're annoyed\" isn't \"that was fine\".", bundle: 'pro' },
+        { q: "Why should I do the work of finding out what's wrong?", a: "You shouldn't have to. It's often the fastest way to make it stop.", bundle: 'pro' },
+        { q: "There's no excuse for talking to people like that.", a: "There isn't. There's usually a reason, and the reason is worth knowing.", bundle: 'pro' },
+        { q: "They should just say it.", a: "Yes. And a lot of people can't, until someone makes it easy.", bundle: 'pro' },
+        { q: "Looking for the real thing means excusing the remark.", a: "Understanding it isn't excusing it. You can do both and neither cancels out.", bundle: 'pro' },
+        { q: "I asked what was wrong and got 'nothing'.", a: "Common. Say you're around later and leave it. The door being open is the move.", bundle: 'pro' },
+        { q: "I'm not their therapist.", a: "You're not. One question is not therapy — it's a colleague asking.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Taking It Straight Is Letting It Go",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Answering the surface of a barbed remark — treating \"nice of you to join us\" as though it were simply nice — feels like pretending you did not notice. It looks from the inside like being walked over.\n\nIt is the opposite. The remark was built to be deniable; answering it straight takes the deniability and hands it back. They cannot say \"I was only joking\" about a reply that took them at their word, and the sting has nowhere to land. It also costs you nothing, which is the part that makes it repeatable.\n\nMindset: taking it at face value is not missing it. It is declining the version they offered.",
+      inputs: [
+        { q: "If I answer it straight they'll think I didn't notice.", a: "They'll know you noticed. That's what makes the plain answer land.", bundle: 'pro' },
+        { q: "It's letting them get away with it.", a: "There's nothing to get away with once you've removed the barb by ignoring it.", bundle: 'pro' },
+        { q: "I'd be pretending, and I'm bad at pretending.", a: "You're not pretending. You're choosing which half of the sentence to answer.", bundle: 'pro' },
+        { q: "They'll do it again if I don't push back.", a: "They do it again when it works. A flat answer is what stops it working.", bundle: 'pro' },
+        { q: "Everyone else can hear it and I'll look naive.", a: "The room reads a calm answer as unbothered, not as naive. Every time.", bundle: 'pro' },
+        { q: "It'd feel better to say something sharp back.", a: "For four seconds. Then you're the one who escalated.", bundle: 'pro' },
+        { q: "Answering straight means I have to do what they asked.", a: "No. Answer the tone straight and the request on its merits.", bundle: 'pro' },
+        { q: "I did it and they said it again, louder.", a: "Then it isn't deniable any more. Now you can name it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Telling Them How It Lands Is Complaining",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Saying \"when it's put like that I don't know how to answer\" feels like handing them exactly what they wanted — evidence that it got to you — and like whinging about a remark small enough that noticing it seems disproportionate.\n\nBut it is the only move that describes something they cannot dispute. They can deny the intention, deny the tone, deny the whole thing; they cannot deny what happened to you. And most of the time the remark was not built for a reaction, it was built because the plain sentence felt impossible — which the plain sentence from you makes easier.\n\nMindset: name the effect, not the motive. The effect is yours and it is not arguable.",
+      inputs: [
+        { q: "Saying it got to me gives them what they wanted.", a: "Most of them wanted to be heard, not to score. Saying the effect gives them that instead.", bundle: 'pro' },
+        { q: "It's too small a thing to make a point of.", a: "Small and repeated is the whole pattern. One sentence now beats a speech in March.", bundle: 'pro' },
+        { q: "They'll say I'm too sensitive.", a: "Then you're discussing your reaction, not their remark. Say it once and go back to the task.", bundle: 'pro' },
+        { q: "I'd rather not admit it bothered me.", a: "\"I don't know how to answer that\" isn't an admission. It's a description.", bundle: 'pro' },
+        { q: "It sounds like I'm asking them to be nicer.", a: "You're telling them what happened. What they do with it is theirs.", bundle: 'pro' },
+        { q: "If I say it out loud it becomes a whole conversation.", a: "Sometimes. That conversation is cheaper than six more months of remarks.", bundle: 'pro' },
+        { q: "I should just be less affected by it.", a: "Perhaps. Meanwhile the sentence works whether you've managed that or not.", bundle: 'pro' },
+        { q: "I said it and they got defensive.", a: "Defensive is not the same as unheard. Let it sit and carry on.", bundle: 'pro' },
+      ]
+    },
+  ],
+  makingrequests: [
+    {
+      name: "Imposition",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that a request puts someone in a difficult position, and that a considerate person finds a way not to need anything.\n\nIt produces the hint, the sigh, and the quiet struggle — all of which are harder on the other person than the question would have been, because now they are being managed rather than asked.\n\nBeing asked is also, for most people, mildly flattering. It says you thought of them, and that you thought they could.\n\nMindset: a question is not a burden. An unanswerable hint is.",
+      inputs: [
+        { q: "They've got enough on without me adding to it.", a: "You don't know that, and they get to decide it. That's what the question is for.", bundle: 'pro' },
+        { q: "I should be able to manage this myself.", a: "Probably. It'll take three times as long and you'll be worse company all week.", bundle: 'pro' },
+        { q: "I don't want to put them in an awkward position.", a: "Being asked isn't awkward. Being hinted at for a fortnight is.", bundle: 'pro' },
+        { q: "If they wanted to help they'd have offered.", a: "They'd have to notice first. Nobody's watching you that closely.", bundle: 'pro' },
+        { q: "It's easier to just do it.", a: "It is today. Notice what it costs by Thursday.", bundle: 'pro' },
+        { q: "They're more senior than me.", a: "Senior people get asked things. That's most of what the role is.", bundle: 'pro' },
+        { q: "I've asked them for something recently.", a: "Then say so and ask anyway. \"I know I asked last week\" costs five words.", bundle: 'pro' },
+        { q: "They'll feel they can't say no to me.", a: "Then say the no out loud for them. That's what the exit sentence is for.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Hinting",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The quiet expectation that someone who cared would work it out — that having to ask spoils it, and that the request only counts if it was not needed.\n\nIt is the belief underneath most hinting, and it is the most reliable source of resentment in close relationships. The other person is not ignoring the request. They have not heard one.\n\nMindset: they are not refusing. They do not know.",
+      inputs: [
+        { q: "I shouldn't have to ask.", a: "Maybe not. You do, though, and asking is cheaper than another month of this.", bundle: 'pro' },
+        { q: "It doesn't count if I have to spell it out.", a: "It counts to the person doing it. Only you are keeping that score.", bundle: 'pro' },
+        { q: "I've made it obvious.", a: "Obvious to you. From where they're standing it was a comment about the kitchen.", bundle: 'pro' },
+        { q: "They should have noticed by now.", a: "They noticed the bins were full. That's not the same as knowing you want them to go.", bundle: 'pro' },
+        { q: "Saying it out loud makes it a big thing.", a: "One sentence is the smallest version this can take. The silent version is the big one.", bundle: 'pro' },
+        { q: "Asking directly would spoil it.", a: "Only for a present. For everything else, asking is how it happens at all.", bundle: 'pro' },
+        { q: "I've been dropping hints for weeks.", a: "Weeks of hints and no result is the evidence. Say the sentence.", bundle: 'pro' },
+        { q: "If I have to ask, the answer doesn't count.", a: "It counts the same. What doesn't count is the thing that never happened.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Room to Refuse",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The instinct to make a no as difficult as possible — more reasons, more pressure, more visible need — on the theory that this is how you get a yes.\n\nIt works, and that is the problem. A yes produced by pressure is a reluctant one, and reluctant yeses come back later as coldness, as a favour called in, or as a person who stops answering your messages.\n\nMindset: you want a yes you can trust. Leave the no genuinely available.",
+      inputs: [
+        { q: "If I make it easy to refuse, they will.", a: "Some will. Those were the reluctant yeses you didn't want.", bundle: 'pro' },
+        { q: "One more reason might tip it.", a: "Or tip it into a negotiation about your reasons. The question was better on its own.", bundle: 'pro' },
+        { q: "They need to know how much I need this.", a: "One sentence says that. The fourth one says something else.", bundle: 'pro' },
+        { q: "They'd only say no because they don't realise.", a: "Then say the thing they don't realise, once, and stop. That's the whole move.", bundle: 'pro' },
+        { q: "I'll ask when they're in a good mood.", a: "That's timing, not pressure. Fine. Just don't call it consideration if it's cornering.", bundle: 'pro' },
+        { q: "Giving them an out sounds like I don't mean it.", a: "It sounds like you'd rather have a real answer than a reluctant one.", bundle: 'pro' },
+        { q: "They said yes but I could hear the hesitation.", a: "Ask again with the exit attached. A checked yes is worth more than a fast one.", bundle: 'pro' },
+        { q: "I need this, so I can't make it optional.", a: "It is optional whether you say so or not. Saying so just makes the yes reliable.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Their No",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Taking a refusal as information about the relationship rather than about Thursday. It produces the cool tone, the second attempt, and the mental note — all of which the other person notices.\n\nWhat they learn from it is that saying no to you is expensive. From then on you get avoidance or reluctant yeses, and you have lost the ability to ask cleanly.\n\nMindset: they answered the question. That was the point of asking it.",
+      inputs: [
+        { q: "They said no, so they don't care.", a: "They said no to Saturday. That's the size of the information.", bundle: 'pro' },
+        { q: "I'd have said yes if it were them asking.", a: "Maybe. That's a fact about you, not a debt they signed.", bundle: 'pro' },
+        { q: "I'm not asking them again.", a: "Then the no cost them something, and they'll know. Is that what you wanted?", bundle: 'pro' },
+        { q: "I want to know why, at least.", a: "You want the reason to be good enough. It doesn't have to be.", bundle: 'pro' },
+        { q: "It's embarrassing to have asked now.", a: "To you, for an hour. To them it was a question they answered.", bundle: 'pro' },
+        { q: "I can feel myself going cold with them.", a: "They answered the question you asked. Notice the sulk and drop it.", bundle: 'pro' },
+        { q: "They said no to me and yes to someone else.", a: "Different ask, different week. You don't have the whole picture and don't need it.", bundle: 'pro' },
+        { q: "Now I'll have to ask someone I know less well.", a: "Which is how you end up knowing them better. That's not a cost.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being Vague Is Being Polite",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Could you help with the move at some point?\" feels considerate — it leaves them room, it does not pin them down, it is not demanding. So the request goes out soft, and the softness is exactly what makes it impossible to answer.\n\nNobody can say yes to an unbounded ask. What, when, and how big is not a demand; it is the information they need in order to agree, and leaving it out moves the work of defining the request onto the person you are asking.\n\nMindset: the specific version is the kind one. It is the one they can say yes to.",
+      inputs: [
+        { q: "Naming a time makes it sound like a demand.", a: "It makes it answerable. \"Two hours on Saturday\" is a question with a shape.", bundle: 'pro' },
+        { q: "I don't want to box them in.", a: "You're boxing yourself in. They can always propose a different day.", bundle: 'pro' },
+        { q: "I'm not sure yet how much I need.", a: "Then say the range. \"Somewhere between one and three hours\" is still specific.", bundle: 'pro' },
+        { q: "If I say how big it is they'll say no.", a: "Better a no now than a yes to something they'd never have agreed to.", bundle: 'pro' },
+        { q: "It's easier to ask small and expand later.", a: "That's the thing people never forgive. Ask for the real size once.", bundle: 'pro' },
+        { q: "They know what I mean.", a: "They know roughly. Roughly is what turns into the wrong Saturday.", bundle: 'pro' },
+        { q: "A vague ask leaves the relationship intact if they refuse.", a: "It leaves nothing to refuse. That's not kindness, it's avoidance.", bundle: 'pro' },
+        { q: "Being precise makes it feel transactional.", a: "Being precise makes it easy. Transactional is keeping score afterwards.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Asking Twice Is Nagging",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "A request goes unanswered and the second ask feels like pressure — as though repeating it says you do not trust them, or turns a favour into a chase. So it goes unsaid, and silence quietly becomes a no that neither of you decided.\n\nMost unanswered requests were not refused. They were seen on a phone, filed for later, and lost. One plain follow-up is not pressure; it is the thing that lets them give you an actual answer, which is what you asked for in the first place.\n\nMindset: ask once more, plainly, and then let it go. Once is not nagging — it is finishing the question.",
+      inputs: [
+        { q: "They didn't answer, so the answer is no.", a: "Or they forgot. You cannot tell the difference without asking.", bundle: 'pro' },
+        { q: "Bringing it up again would be pestering.", a: "Once is not pestering. Three times, with a tone, is.", bundle: 'pro' },
+        { q: "If they wanted to they'd have said yes.", a: "People who want to also lose messages. Give them the chance.", bundle: 'pro' },
+        { q: "I'd rather just find someone else.", a: "Fine — but tell them that, or you've made a decision they never got a say in.", bundle: 'pro' },
+        { q: "It's been so long it would be awkward.", a: "\"Coming back to this one\" removes the awkwardness in four words.", bundle: 'pro' },
+        { q: "I'll hint at it instead of asking again.", a: "A hint is what got no answer the first time.", bundle: 'pro' },
+        { q: "What if the second ask annoys them?", a: "Then you've learnt something. It almost never does.", bundle: 'pro' },
+        { q: "I followed up and still nothing.", a: "Then take the silence as the answer and say so kindly. That's the end of it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Needing Help Is the Admission",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Saying \"I'm stuck\" feels like a report on your competence rather than a request, so it gets postponed — and it keeps getting postponed until the thing is no longer a question anyone can help with, only a problem everyone has to deal with.\n\nThe admission people actually remember is the late one. Asking early is a small, ordinary sentence about a task; asking after the deadline is a sentence about a failure, and by then the help available is worth much less.\n\nMindset: early it is a question, late it is a confession. Ask while it is still a question.",
+      inputs: [
+        { q: "Asking says I can't do my job.", a: "Asking says you noticed early. That's the part people rate.", bundle: 'pro' },
+        { q: "I ought to be able to crack this on my own.", a: "Probably, given a week. Do you have a week?", bundle: 'pro' },
+        { q: "I'll give it one more day.", a: "You said that yesterday. Name the day you'll ask, and keep it.", bundle: 'pro' },
+        { q: "Everyone's busy, I don't want to add to it.", a: "A twenty-minute question now beats a rescue in a fortnight.", bundle: 'pro' },
+        { q: "I don't want to look like I need hand-holding.", a: "Ask one named person one specific thing. That is the opposite of hand-holding.", bundle: 'pro' },
+        { q: "They'll wonder why I didn't ask sooner.", a: "Then they'd have preferred sooner. That settles it — ask now.", bundle: 'pro' },
+        { q: "It's not bad enough to bother anyone yet.", a: "\"Not bad enough yet\" is the window. After it, it's bad enough to bother everyone.", bundle: 'pro' },
+        { q: "I've already left it too long.", a: "Then today is the earliest it can be. Later is the only worse option.", bundle: 'pro' },
+      ]
+    },
+  ],
+  sayingno: [
+    {
+      name: "Softening",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Softening a refusal until it is unclear feels like the considerate option. It is the opposite: an unclear answer leaves the other person planning around a maybe, asking again later, and eventually being refused anyway — with less time to find someone else.\n\nThe clearest no is the one that costs them least, even though it is the one that costs you most in the moment.\n\nMindset: be clear now so they can move on.",
+      inputs: [
+        { q: "A firm no sounds harsh.", a: "A vague one sounds kind and costs them a week. Clear is the kind version.", bundle: 'pro' },
+        { q: "I'll soften it so they don't feel rejected.", a: "Soften how you say it. Don't soften the answer.", bundle: 'pro' },
+        { q: "\"Probably not\" gives them a gentle landing.", a: "It gives them a maybe. They'll ask again, and you'll say no again.", bundle: 'pro' },
+        { q: "I don't want to disappoint them straight away.", a: "You'll disappoint them later instead, with less warning.", bundle: 'pro' },
+        { q: "Maybe something will change and I'll be able to.", a: "Then say no now and offer if it changes. Don't hold them on a maybe.", bundle: 'pro' },
+        { q: "I said \"let me think about it\" and I've already decided.", a: "Then you've booked a second conversation neither of you needs. Say it now.", bundle: 'pro' },
+        { q: "They asked in front of other people.", a: "Same answer, same words. An audience doesn't change what's true.", bundle: 'pro' },
+        { q: "A clear no from me will start an argument.", a: "A vague one starts three. Clear is the version that ends it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Explanations",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "There is a strong feeling that a refusal must be justified — that you owe an explanation, and a good one, or the no is not really allowed.\n\nFor requests that are yours to decline, it is not true. \"I can't\" is complete. A reason is a courtesy you may choose to give, particularly with people close to you, and it stops being a courtesy the moment it becomes a thing to be argued with.\n\nMindset: a reason is optional. Clarity is not.",
+      inputs: [
+        { q: "I need a good enough reason or I can't say no.", a: "You need an answer. The reason is optional and often unhelpful.", bundle: 'pro' },
+        { q: "If I don't explain, they'll think I'm being difficult.", a: "They'll think you said no. Which you did.", bundle: 'pro' },
+        { q: "My reason isn't good enough to justify it.", a: "It doesn't have to justify anything. \"I'd rather not\" is a real answer.", bundle: 'pro' },
+        { q: "Giving a reason is only polite.", a: "Often, yes. Just know that every reason is something they can solve.", bundle: 'pro' },
+        { q: "They asked why. I have to answer.", a: "\"I'd rather not go into it\" answers the question honestly.", bundle: 'pro' },
+        { q: "The real reason is one I'd rather not say.", a: "Then don't. \"I can't this time\" is complete and true.", bundle: 'pro' },
+        { q: "They gave me a long explanation, so I owe them one.", a: "You owe them an answer. Length isn't a debt.", bundle: 'pro' },
+        { q: "Without a reason it sounds like I couldn't be bothered.", a: "Warmth carries that, not reasons. Say it kindly and briefly.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Instant Yes",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Almost every regretted yes is said instantly, in the moment, while someone is looking at you. The pressure is small and social and remarkably effective.\n\nNothing obliges you to answer immediately. \"Let me come back to you\" is a normal sentence, and it usually produces an honest answer where the on-the-spot version produces a polite one.\n\nMindset: the pause is the whole technique.",
+      inputs: [
+        { q: "They're waiting, I have to answer now.", a: "They can wait until tomorrow. Almost everything can.", bundle: 'pro' },
+        { q: "Asking for time looks like I'm making a fuss.", a: "It looks like you're taking it seriously. That's a compliment to them.", bundle: 'pro' },
+        { q: "If I don't answer now I'll have to have the conversation twice.", a: "Once briefly and once honestly beats once badly.", bundle: 'pro' },
+        { q: "I already know the answer, so I may as well say it.", a: "Then say it. The pause is for when you don't know.", bundle: 'pro' },
+        { q: "I'll say yes now and get out of it later.", a: "That's a worse conversation than this one, and it's coming.", bundle: 'pro' },
+        { q: "Asking for time is just delaying the awkward part.", a: "Only if you don't come back. Name the hour and keep it.", bundle: 'pro' },
+        { q: "They need an answer today.", a: "Then say \"by four\", not \"soon\". A time is what makes the pause fair.", bundle: 'pro' },
+        { q: "I took time and now it's harder to say no.", a: "Harder for a second. And the no is better for having been considered.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Their Disappointment",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The hardest part of saying no is rarely the sentence. It is watching someone be let down and knowing you could fix it instantly.\n\nThat impulse is decent and it is also the mechanism by which people end up doing things they had decided against, resenting it afterwards, and doing them badly. Someone else's disappointment is uncomfortable and survivable, for both of you.\n\nMindset: you can be the reason someone is disappointed without having done anything wrong.",
+      inputs: [
+        { q: "They looked so let down. I should have said yes.", a: "They're disappointed. That's not the same as you having wronged them.", bundle: 'pro' },
+        { q: "It's only a small thing, why make it difficult?", a: "If it were small to you, you'd have said yes already.", bundle: 'pro' },
+        { q: "A better person would help.", a: "A better person would also be allowed to say no to this one.", bundle: 'pro' },
+        { q: "They'll think I don't care about them.", a: "One no doesn't outweigh everything else. It really doesn't.", bundle: 'pro' },
+        { q: "I'll do it resentfully rather than say no.", a: "They'd rather have the no. Resentful help is worse for both of you.", bundle: 'pro' },
+        { q: "They went quiet and I started explaining more.", a: "Quiet is them adjusting. More words is you apologising for existing.", bundle: 'pro' },
+        { q: "I said no and now I'm avoiding them.", a: "That's what turns a refusal into a rift. Talk to them about something else today.", bundle: 'pro' },
+        { q: "They said \"fine\" in a way that wasn't fine.", a: "You can ask about that. What you can't do is take the no back to fix it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Understanding First Sounds Like a Yes",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Saying \"I can see this really matters to you\" before you refuse feels like raising their hopes on purpose — a warm sentence that makes the cold one worse when it lands two seconds later.\n\nIt does the reverse. A no that arrives after being understood is a no about your circumstances; a no that arrives cold reads as a judgement about the request, and often about the person making it. The warm sentence is not a delay before the refusal. It is what stops the refusal being about them.\n\nMindset: understand first, refuse second, and do not leave a gap between them.",
+      inputs: [
+        { q: "Being warm first makes the no crueller.", a: "It makes the no smaller. Cold refusals are the ones people remember badly.", bundle: 'pro' },
+        { q: "They'll think I'm about to agree.", a: "Not if the no follows immediately. \"I can see why — and I still can't.\"", bundle: 'pro' },
+        { q: "It's kinder to be quick about it.", a: "Quick and cold isn't kind, it's efficient. Two seconds buys the difference.", bundle: 'pro' },
+        { q: "I don't actually think their request is reasonable.", a: "Then understand the need behind it. That part is nearly always reasonable.", bundle: 'pro' },
+        { q: "Saying I understand commits me to something.", a: "It commits you to nothing. Understanding and agreeing are different acts.", bundle: 'pro' },
+        { q: "It sounds like a line from a customer service script.", a: "Then say it in your own words about this specific thing. Scripts are general; this isn't.", bundle: 'pro' },
+        { q: "They'll use my understanding as an argument.", a: "Some will. \"I do understand, and the answer is still no\" closes that.", bundle: 'pro' },
+        { q: "I already know they'll take it badly.", a: "All the more reason. The warm half is what they'll have left afterwards.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Half Offer Is Worse Than Nothing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Offering the part you can do feels like a consolation prize — not the help they wanted, faintly insulting to hand over, and a way of getting talked into the rest by increments.\n\nBut most requests are bigger than they need to be, and the part you can do is often the part that was actually stuck. The offer also does something a bare no cannot: it says the refusal was about capacity rather than about them, and it says it with evidence instead of a sentence.\n\nMindset: name the piece you can do, and name its edges. The edges are what stop it growing.",
+      inputs: [
+        { q: "Half of what they asked for is no use to them.", a: "You don't know that. Say what you can do and let them decide.", bundle: 'pro' },
+        { q: "If I offer something they'll push for more.", a: "Only if the offer has no edges. \"The first section, Thursday, and that's my limit.\"", bundle: 'pro' },
+        { q: "A partial offer looks like I'm being stingy.", a: "A flat no with nothing attached is what looks stingy. The offer is the generous half.", bundle: 'pro' },
+        { q: "I'd rather do it properly or not at all.", a: "That's your standard, not their need. Ask which part they actually need doing.", bundle: 'pro' },
+        { q: "They'll be disappointed by the smaller version.", a: "Less disappointed than by nothing. And they can still say no to it.", bundle: 'pro' },
+        { q: "I can't think of anything I could offer instead.", a: "Then say so plainly. A no with \"I've thought about it\" attached is still a better no.", bundle: 'pro' },
+        { q: "Offering an alternative undoes my refusal.", a: "It defines it. This much yes, and no further — that's a clearer answer than either alone.", bundle: 'pro' },
+        { q: "I offered and now I'm doing more than I meant to.", a: "That's the edges failing, not the offer. Name the limit out loud next time.", bundle: 'pro' },
+      ]
+    },
+  ],
+  emotionlabellingandregulation: [
+    {
+      name: "The Emotion Labelling Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The pack-wide stance: naming a feeling is how you get some distance from it, not how you hand it the wheel.\n\nThere is a common assumption that talking about a feeling makes it bigger. In practice the opposite tends to happen — the unnamed version is the one that runs the afternoon, and putting a word on it turns it into something you are having rather than something you are.\n\nThe three thoughts that cause the trouble:\n1. \"If I name it I'll make it worse\" — usually it shrinks it.\n2. \"Feelings are private\" — the ones affecting a conversation are already in the room.\n3. \"I should be past this by now\" — should has never once changed what somebody feels.\n\nMindset: notice the signals, name it honestly, and respond in a way you will still respect tomorrow. That is the whole exercise.",
+      inputs: [
+        { q: "You worry that naming the feeling will make it bigger.", a: "\"Naming it usually shrinks it. It's the one I don't name that runs my whole afternoon.\"", bundle: 'pro' },
+        { q: "You think feelings have no place in this conversation.", a: "\"It's already in the room — it's in my voice. Naming it just makes it workable.\"", bundle: 'pro' },
+        { q: "You feel you should be over it by now.", a: "\"'Should' has never once changed what I actually feel. Start from what's true.\"", bundle: 'pro' },
+        { q: "You are afraid that saying it out loud commits you to it.", a: "\"A word isn't a verdict. I can find a better one in three sentences.\"", bundle: 'pro' },
+        { q: "You have tried three words and none of them fit.", a: "\"Then describe what happened first. The word usually arrives behind the facts.\"", bundle: 'pro' },
+        { q: "You would rather wait until you are calm to name it.", a: "\"Calm is when it's gone and I've learnt nothing. Name it while it's here.\"", bundle: 'pro' },
+        { q: "Naming it feels self-indulgent.", a: "\"Thirty seconds of accuracy isn't indulgence. It's the shortest way out.\"", bundle: 'pro' },
+        { q: "Somebody else in the room has it much worse.", a: "\"That doesn't make mine not happening. Two things can be true.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The No Judgement Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind Label the Emotion: there is no wrong feeling to have, only inaccurate words for it.\n\nMost people do not get stuck on finding the word. They get stuck one step earlier, deciding whether they are allowed to feel it — and by the time that argument is over, the moment has gone.\n\nWhere it shows up:\n1. You downgrade it — \"a bit annoyed\" for something that actually hurt.\n2. You justify it before you have said it — \"I know this is silly, but…\"\n3. You refuse the word because it makes you look bad — jealous, embarrassed, left out.\n\nMindset: label it honestly and without judging yourself for having it. The unflattering words are usually the accurate ones.",
+      inputs: [
+        { q: "You downgrade \"hurt\" to \"a bit annoyed\" before you say it.", a: "\"The accurate word is usually the one I don't want to use. Use that one.\"", bundle: 'pro' },
+        { q: "You want to explain why the feeling is justified before naming it.", a: "\"I don't need a case. The feeling is a fact, not a claim.\"", bundle: 'pro' },
+        { q: "The honest word makes you look small or petty.", a: "\"Jealous, embarrassed, left out — unflattering isn't the same as untrue.\"", bundle: 'pro' },
+        { q: "You think you shouldn't feel this way at all.", a: "\"Whether I should is a separate question. First, what is it?\"", bundle: 'pro' },
+        { q: "You are embarrassed to be upset by something this small.", a: "\"Size isn't the question. It affected me, so it's a fact about today.\"", bundle: 'pro' },
+        { q: "You feel the wrong thing about something you should be glad about.", a: "\"Mixed is the normal case. Name both and stop auditing myself.\"", bundle: 'pro' },
+        { q: "You want to use a nicer word than the true one.", a: "\"The nicer word fixes nothing, because it isn't what's happening.\"", bundle: 'pro' },
+        { q: "Naming it feels like blaming somebody.", a: "\"A feeling isn't an accusation. Describing mine leaves theirs untouched.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Signals Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind Describe the Signals: your body works it out before you do.\n\nThe tight chest, the replaying, the going quiet — these arrive well ahead of any word, and most people treat them as symptoms to hide rather than as the information they are. Learning your own particular signals is what turns a feeling from an ambush into something you saw coming.\n\nThree things worth knowing about yourself:\n1. Your physical tell — jaw, chest, stomach, hands.\n2. Your mental tell — replaying, going blank, catastrophising.\n3. Your behavioural tell — going quiet, getting brisk, over-explaining.\n\nMindset: the signals are data, not weakness. Knowing your own gives you thirty seconds of warning, and thirty seconds is usually all you need.",
+      inputs: [
+        { q: "You notice your body reacting and try to ignore it.", a: "\"That's information arriving early. Ignoring it doesn't make it not happen.\"", bundle: 'pro' },
+        { q: "You cannot name the feeling and give up.", a: "\"Start with the body. The word usually turns up once I've described what happened.\"", bundle: 'pro' },
+        { q: "You are embarrassed that the nerves are visible.", a: "\"Everyone's got tells. Mine being visible isn't the same as mine being a problem.\"", bundle: 'pro' },
+        { q: "The feeling caught you completely off guard.", a: "\"It probably didn't. I just wasn't reading my own signals — worth knowing them.\"", bundle: 'pro' },
+        { q: "You only notice the feeling once it is out of your mouth.", a: "\"Then learn what came thirty seconds before. There's always a tell.\"", bundle: 'pro' },
+        { q: "You are tired and cannot tell if that is the whole story.", a: "\"Tired is a signal too. Say it, and see what's left underneath.\"", bundle: 'pro' },
+        { q: "Your hands are shaking and you want to hide them.", a: "\"Hiding them costs attention I need for the conversation. Let them shake.\"", bundle: 'pro' },
+        { q: "You notice the signal and decide it is nothing.", a: "\"Third time this week isn't nothing. That's a pattern.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Certainty Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind Label Their Emotion: you are handing someone a word to try on, not telling them what they feel.\n\nThe same sentence can be a gift or an imposition depending on how much room you leave. \"You're angry\" is a diagnosis and gets defended against; \"it sounds like you were angry — were you?\" is an offer, and gets thought about.\n\nThe tell is what you do when they say no:\n1. You ask what word they would use — that was an offer.\n2. You explain why you were right — that was a diagnosis.\n3. You go quiet and feel embarrassed — that was a performance.\n\nMindset: being slightly wrong is useful. Someone correcting your word is someone getting closer to their own, which is exactly what you were trying to help with.",
+      inputs: [
+        { q: "You are confident you know what they are feeling.", a: "\"Even if I'm right, it lands better as a question. Leave them the room.\"", bundle: 'pro' },
+        { q: "They reject the word you offered and you want to argue.", a: "\"That's them getting closer to it. Ask what they'd call it instead.\"", bundle: 'pro' },
+        { q: "You worry about guessing wrong and looking foolish.", a: "\"A wrong guess is often what helps them find the right word. Guess warmly.\"", bundle: 'pro' },
+        { q: "You want to move straight to fixing their problem.", a: "\"They haven't finished finding the word yet. Solutions later, if at all.\"", bundle: 'pro' },
+        { q: "You offered a word and they have gone quiet.", a: "\"Quiet is thinking. Let it run instead of filling it with a second guess.\"", bundle: 'pro' },
+        { q: "You are certain you know exactly why they are like this.", a: "\"Certain is what turns it into a diagnosis. Offer it as a question anyway.\"", bundle: 'pro' },
+        { q: "You want to name something they have not admitted to themselves.", a: "\"Then it has to be small and easy to refuse. Anything else is a push.\"", bundle: 'pro' },
+        { q: "They accepted a word you do not think is quite right.", a: "\"It's theirs now. Their approximate word beats my accurate one.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Keeping It Together Mindset",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "Holding it together in a difficult moment is a real skill, and the people who have it are the ones others lean on. Nothing here disputes that.\n\nWhat this deck asks about is afterwards. A feeling that never gets named does not leave — it comes back as a shorter answer, a slower reply, a decision made for reasons nobody was told.\n\nMindset: the composure is yours to keep. Saying nothing about it is the part that costs somebody else something.",
+      inputs: [
+        { q: "You do not make a scene.", a: "\"I never do. Which is why the same thing is still happening in March.\"", bundle: 'pro' },
+        { q: "You keep your feelings out of work.", a: "\"They're not out. They're in the short answers people are already reading.\"", bundle: 'pro' },
+        { q: "Nobody can tell when you are annoyed.", a: "\"So nobody adjusts, and I carry it alone. That's the deal I made.\"", bundle: 'pro' },
+        { q: "You are the calm one in the room.", a: "\"I am. And calm that says nothing looks exactly like not minding.\"", bundle: 'pro' },
+        { q: "You deal with it yourself afterwards.", a: "\"Afterwards is a lot of evenings. The sentence would take four seconds.\"", bundle: 'pro' },
+        { q: "Saying you are upset would make it about you.", a: "\"It's already about me. The only question is whether anyone knows why.\"", bundle: 'pro' },
+        { q: "You would rather not burden anyone with it.", a: "\"They're carrying it anyway, as a mood they can't explain.\"", bundle: 'pro' },
+        { q: "You have never once raised your voice here.", a: "\"True. I've also never once named anything. Only one of those is a strength.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  conflictemotions: [
+    {
+      name: "Needs",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Feelings in conflict are not noise to be got past. They are signals, and each one points at something that matters to you — being respected, being safe, being able to rely on an arrangement.\n\nThat is why naming the need changes everything. A feeling on its own is a report about a bad moment. A need is something the two of you can actually do something about, and it is usually smaller and more reasonable than the argument suggested.\n\nMindset: ask what the feeling is protecting. That is the thing to say out loud.",
+      inputs: [
+        { q: "Talking about feelings makes it worse.", a: "A feeling without a need does. Add the need and it becomes solvable.", bundle: 'pro' },
+        { q: "It's a small thing, I shouldn't feel this strongly.", a: "The strength is usually about the need, not the incident. Find that.", bundle: 'pro' },
+        { q: "I don't know why it bothered me so much.", a: "Then say that, and work it out, out loud. That's allowed.", bundle: 'pro' },
+        { q: "They should just know what I need.", a: "They can't. Most people are guessing, and most guesses are wrong.", bundle: 'pro' },
+        { q: "Saying what I need sounds demanding.", a: "\"I need to know the house is locked\" isn't a demand. It's information.", bundle: 'pro' },
+        { q: "I know the feeling but not what it's pointing at.", a: "Ask what would have to be true for it to go away. That's the need.", bundle: 'pro' },
+        { q: "The need sounds too abstract to say out loud.", a: "Then say the concrete version. \"Being told beforehand\" is a need.", bundle: 'pro' },
+        { q: "Naming a need gives them power over me.", a: "It gives them the information. Guessing is what leaves you both stuck.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Diagnosis",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The most common way a reasonable point becomes a row is a single word — dismissive, careless, thoughtless. Each one is a claim about who the other person is, and people defend who they are far harder than they defend what they did.\n\nThe description without the verdict is almost always enough. It is also harder to write and easier to hear.\n\nMindset: say what happened. Leave out what it means about them.",
+      inputs: [
+        { q: "But they were being careless.", a: "Maybe. \"The door was unlocked\" gets you further than \"you were careless\".", bundle: 'pro' },
+        { q: "If I don't say what it means, they won't take it seriously.", a: "They'll take the facts seriously. They'll argue with the verdict.", bundle: 'pro' },
+        { q: "I want them to know how it came across.", a: "Say how it landed on you. That's not the same as naming what they are.", bundle: 'pro' },
+        { q: "Sugar-coating it lets them off.", a: "Precision isn't sugar-coating. It's the version they can't dodge.", bundle: 'pro' },
+        { q: "They know exactly what they did.", a: "Then it costs nothing to say it plainly and skip the adjective.", bundle: 'pro' },
+        { q: "My description already has a judgement buried in it.", a: "Strip the adverbs. \"You left it unlocked\" — no \"again\", no \"just\".", bundle: 'pro' },
+        { q: "The plain version sounds like I don't mind.", a: "The feeling sentence is where the minding goes. Keep them separate.", bundle: 'pro' },
+        { q: "They'll deny the facts as well.", a: "Then you're discussing what happened, which is solvable. Motives aren't.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stopping Halfway",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The exposed part of this is saying how you felt, and once that is out there is a strong pull to stop — the difficult thing has been said, and the rest feels like piling on.\n\nBut the rest is the useful part. The need explains why it mattered and the request says what would help, and without them you have handed someone a problem with no handle on it. That is how the same conflict comes back in a month.\n\nMindset: the hard bit is done. The rest is the easy half, and it is the half that changes anything.",
+      inputs: [
+        { q: "I've said how I feel, that should be enough.", a: "It tells them there's a problem. It doesn't tell them what would fix it.", bundle: 'pro' },
+        { q: "Asking for something specific feels like too much.", a: "It's less than they're currently guessing at. Specific is a relief.", bundle: 'pro' },
+        { q: "They apologised, so it's resolved.", a: "An apology without a change means the same conversation in a month.", bundle: 'pro' },
+        { q: "I don't want to tell them what to do.", a: "You're asking, not telling. They can say no, and that's the difference.", bundle: 'pro' },
+        { q: "It'd be easier to leave it there.", a: "It is, tonight. It isn't in March when it happens again.", bundle: 'pro' },
+        { q: "The request is obvious once I've said the rest.", a: "Obvious to you. Unstated requests are the ones that go unmet.", bundle: 'pro' },
+        { q: "I've said three things, a fourth is too much.", a: "The fourth is the only one that changes anything. Say it.", bundle: 'pro' },
+        { q: "I don't know what I want them to do.", a: "Then say that and ask. \"I don't know what the fix is — can we work it out?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Their Version",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Preparing what to say is useful, and it has a cost: by the time you speak you have a complete account in your head, and it feels finished.\n\nBut they were there as well, and their version usually contains something yours does not — a reason, a piece of context, or something you did that you had not noticed. Asking does not weaken your case. It is the only way to end up with an accurate one.\n\nMindset: you have half of what happened. Ask for the other half.",
+      inputs: [
+        { q: "I know what happened, I was there.", a: "You were there for your half. Ask about theirs.", bundle: 'pro' },
+        { q: "Asking gives them room to make excuses.", a: "It also gives them room to explain something you'd want to know.", bundle: 'pro' },
+        { q: "If I ask, I'll lose my thread.", a: "Say your bit first, then ask. That's the order.", bundle: 'pro' },
+        { q: "They'll just turn it round on me.", a: "Some will. Most say something you hadn't got.", bundle: 'pro' },
+        { q: "I don't want to hear that I was in the wrong too.", a: "You probably were, a bit. Hearing it is cheaper than not knowing it.", bundle: 'pro' },
+        { q: "I asked and their version was completely different.", a: "Good. Now you know what you were actually disagreeing about.", bundle: 'pro' },
+        { q: "If I ask now it'll look like I've backed off.", a: "It looks like you're finished with your half. That's not the same thing.", bundle: 'pro' },
+        { q: "I'll ask once I've finished making my case.", a: "That's the right order. Just don't let \"finished\" keep moving.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Feeling Word",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I felt frustrated\" sounds thin next to what it was actually like, so the sentence gets abandoned halfway and replaced by a description of what they did — which is the one move guaranteed to start an argument about the facts instead of a conversation about the effect.\n\nThe single word is not a summary of the experience. It is the only part of the sentence they cannot dispute. \"You were careless\" is arguable; \"I was worried\" is not, and it is the thing that actually needs to be heard.\n\nMindset: one accurate word, owned. It is small because that is what makes it unarguable.",
+      inputs: [
+        { q: "\"Frustrated\" doesn't cover half of it.", a: "It doesn't have to. It has to be true and unarguable, and it is both.", bundle: 'pro' },
+        { q: "They need to understand how big this was for me.", a: "Size comes across in your face and your saying it at all. The word just names it.", bundle: 'pro' },
+        { q: "I can't find the right word.", a: "Take the nearest one. \"Something like let down\" is a real sentence.", bundle: 'pro' },
+        { q: "Saying one word makes it sound trivial.", a: "It makes it precise. Trivial is what a long description turns into.", bundle: 'pro' },
+        { q: "It's more accurate to say what they did.", a: "Accurate and arguable. Your feeling is accurate and not arguable — use that.", bundle: 'pro' },
+        { q: "I felt about four things at once.", a: "Say the one underneath. There's usually one the others are standing on.", bundle: 'pro' },
+        { q: "They'll say I shouldn't have felt that.", a: "Then they're arguing with something they can't reach. Hold the word and go on.", bundle: 'pro' },
+        { q: "My word sounds dramatic out loud.", a: "Then pick the plainer one. Plain and true beats dramatic and hedged.", bundle: 'pro' },
+      ]
+    },
+  ],
+  rolebasedhumour: [
+    {
+      name: "The Playing a Role Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The pack-wide stance: you are playing a character, not making fun of a person.\n\nThis is the line the whole pack rests on, and it is easier to hold than it sounds. Every role here is somebody slightly ridiculous, and you are volunteering to be them. Nobody in the room is being described except you.\n\nThe three thoughts worth checking:\n1. \"Who is the joke about?\" — it should be the character, which is you.\n2. \"Could this be heard as a comment on them?\" — if yes, pick another role.\n3. \"Would I be happy if they did this back?\" — if not, it is not a bit.\n\nMindset: exaggerate the traits of the role, keep it light, and make sure everyone can stay in the room. The role is a costume, not a mirror held up to somebody else.",
+      inputs: [
+        { q: "You are about to use a role that describes the person you are talking to.", a: "\"Then it isn't a role, it's a comment. Pick a different one.\"", bundle: 'pro' },
+        { q: "You want the laugh more than you want the room comfortable.", a: "\"A laugh I have to spend someone else's comfort on is too expensive.\"", bundle: 'pro' },
+        { q: "You wonder whether a bit is going too far.", a: "\"Would I be fine with them doing this back to me? If not, don't.\"", bundle: 'pro' },
+        { q: "You worry that playing a character makes you look silly.", a: "\"That's the point. The role costs me the status, and that's what makes it safe.\"", bundle: 'pro' },
+        { q: "The role you want fits them a bit too well.", a: "\"Then it's a description, not a character. Pick one that fits nobody here.\"", bundle: 'pro' },
+        { q: "You think they will know it is affectionate.", a: "\"They'll know if it costs me. If it costs them, affection isn't the signal.\"", bundle: 'pro' },
+        { q: "Somebody else in the group does this to people.", a: "\"That's teasing. Different skill, different risk, and I should know which I'm doing.\"", bundle: 'pro' },
+        { q: "You are playing a role and feel slightly exposed.", a: "\"Good. Exposed is the price, and it's what makes it safe for them.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Commitment Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about delivery: half-in is the only way this fails.\n\nA role delivered tentatively is not a small joke, it is a confusing sentence. The words matter far less than whether you said them like you meant them, which is why the same line can be excellent or baffling.\n\nWhere the nerve goes:\n1. You laugh partway through your own line and let the air out of it.\n2. You add a question mark at the end, asking permission retroactively.\n3. You start big and shrink halfway, so it lands as neither.\n\nMindset: commit or say the ordinary thing. Both are good outcomes. A role delivered apologetically is the only bad one.",
+      inputs: [
+        { q: "You feel yourself softening the line as you say it.", a: "\"Say it properly or say something normal. The half version is the worst one.\"", bundle: 'pro' },
+        { q: "You laugh in the middle of your own bit.", a: "\"The delivery is the joke. Straight face, and let them laugh.\"", bundle: 'pro' },
+        { q: "You add a nervous question mark at the end.", a: "\"No permission needed mid-line. Land it, then read the room.\"", bundle: 'pro' },
+        { q: "You do not trust the room enough to commit.", a: "\"Then don't do the bit. Ordinary is a completely fine answer.\"", bundle: 'pro' },
+        { q: "You are going to test it with half a line first.", a: "\"Half a line is the version that dies. Say the whole thing.\"", bundle: 'pro' },
+        { q: "You are watching their face while you deliver it.", a: "\"Deliver first, watch second. Watching mid-line is what hedges it.\"", bundle: 'pro' },
+        { q: "You start the bit and then explain it.", a: "\"Explaining is the opposite of committing. Let it stand or let it go.\"", bundle: 'pro' },
+        { q: "You want to signal that you are joking.", a: "\"The signal is the size, not a wink. Go big enough and nobody's confused.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Whose Expense Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about where the line is: the role has to cost you status, never them.\n\nEvery role in this pack is a person with a flaw, and the humour comes from wearing the flaw yourself. The moment the flaw belongs to the person you are talking to, the same words become an insult with a costume on.\n\nThree quick tests:\n1. Who looks ridiculous at the end of the line? It should be you.\n2. Is the object of the joke something they cannot change? Then it is not the joke to make.\n3. Did they just say something sincere? Then no role, whichever one it is.\n\nMindset: the costume is on you. If you find yourself reaching for a role because it describes them rather than you, that is the signal to stop.",
+      inputs: [
+        { q: "The funniest available role happens to describe them.", a: "\"That's the one to skip. Funny and aimed at them isn't a role.\"", bundle: 'pro' },
+        { q: "You want to use mock offence right after they said something real.", a: "\"Not now. That reads as mimicking them, whatever I meant.\"", bundle: 'pro' },
+        { q: "You are about to guard something they actually need.", a: "\"Stinginess is only funny about a biro. Give them the thing.\"", bundle: 'pro' },
+        { q: "You notice the laugh would come at their expense.", a: "\"Then it's teasing, not a role, and I should know which I'm doing.\"", bundle: 'pro' },
+        { q: "The bit only works if you use a real detail about them.", a: "\"Then it doesn't work. Invent the detail.\"", bundle: 'pro' },
+        { q: "You are the most senior person in the room.", a: "\"Then the roles where I'm the idiot are the only ones available.\"", bundle: 'pro' },
+        { q: "They laughed but something crossed their face.", a: "\"Trust the face. Step out and say something ordinary.\"", bundle: 'pro' },
+        { q: "You want to do mock offence about something they actually said.", a: "\"Only if what they said was nothing. If it was something, don't.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Exit Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about getting out: knowing how to end a bit is what makes it safe to start one.\n\nMost people who avoid this kind of humour are not worried about the first line. They are worried about being stuck in it — having committed to a character with no way back to the actual conversation.\n\nThe exits, all of which are short:\n1. Drop it and ask a real question — \"Right, what are you actually going to do?\"\n2. Name the landing — \"That was a swing and a miss. Moving on.\"\n3. Land one absurd line and stop on it deliberately.\n\nMindset: three beats and out, on a laugh rather than after one. Having a planned exit is what lets you commit properly to the entrance.",
+      inputs: [
+        { q: "You avoid starting a bit in case you get stuck in it.", a: "\"The exit is one sentence. 'Right, seriously though' works every time.\"", bundle: 'pro' },
+        { q: "The bit is going well and you want to keep going.", a: "\"Leave on a laugh, not after one. Three beats and out.\"", bundle: 'pro' },
+        { q: "It misfired and you want to explain what you meant.", a: "\"Never explain it. One clean exit and the room forgets in a minute.\"", bundle: 'pro' },
+        { q: "You are not sure whether the bit has finished.", a: "\"If I'm asking, it has. Hand the conversation back.\"", bundle: 'pro' },
+        { q: "The bit has been running for five exchanges.", a: "\"Three is the number. Land it and hand the conversation back.\"", bundle: 'pro' },
+        { q: "You are enjoying it more than they are.", a: "\"That's the moment. Out now, while it's still theirs too.\"", bundle: 'pro' },
+        { q: "Somebody tried to change the subject and you went back in.", a: "\"They've exited. Follow them — the bit is over.\"", bundle: 'pro' },
+        { q: "You are worried that dropping the role will be awkward.", a: "\"'Right, seriously though' has never once been awkward.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Not Being a Performer",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "The belief is half right, and pretending otherwise is why this pack can feel closed to people. You are not a performer. Most people are not, including nearly everybody who does this well.\n\nWhat the deck separates out is what the roles actually require. Not a voice, not an accent, not holding a room — one ordinary sentence, said straight, for about four seconds.\n\nExample of the shift — instead of \"I couldn't do that\", you keep the honest assessment and drop a requirement that was never there.\n\nMindset: keep the self-knowledge, drop the audition.",
+      inputs: [
+        { q: "You think you are not the sort of person who does this.", a: "\"Probably not. Four seconds of a straight face isn't doing a character, though.\"", bundle: 'pro' },
+        { q: "You would feel ridiculous.", a: "\"I would, for a moment. The role is supposed to make me look silly — that's the mechanism.\"", bundle: 'pro' },
+        { q: "Funny people can do this and you cannot.", a: "\"They're quicker. The line itself is one sentence anybody could say.\"", bundle: 'pro' },
+        { q: "You cannot do voices or accents.", a: "\"Nor does this need any. Flat delivery is the correct delivery.\"", bundle: 'pro' },
+        { q: "You would never keep it up.", a: "\"Three beats and out. Keeping it up is the mistake, not the skill.\"", bundle: 'pro' },
+        { q: "You are not a natural entertainer.", a: "\"True. This isn't entertaining — it's answering an ordinary line oddly.\"", bundle: 'pro' },
+        { q: "People would think you were trying too hard.", a: "\"If I commit, no. Trying too hard is what the half version looks like.\"", bundle: 'pro' },
+        { q: "You tried it once and it did not work.", a: "\"Once. The exit costs one sentence, which is what makes trying cheap.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Picking the Role",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Seven roles are not interchangeable. The Lazy One is almost impossible to take badly, because the only person it makes fun of is you. Mock offence, said a second after somebody meant something sincerely, reads as mimicry whatever you intended.\n\nMost misfires in this pack are not delivery problems. They are the wrong role in the right moment.\n\nMindset: when you are unsure of the room, the safe roles are the ones where you are the fool.",
+      inputs: [
+        { q: "You have one role and you always use it.", a: "\"Then the room decides whether it fits, and often it doesn't. Pick for the moment.\"", bundle: 'pro' },
+        { q: "You are not sure how this group will take it.", a: "\"Unsure means The Lazy One. Nobody's ever been hurt by me admitting I'm idle.\"", bundle: 'pro' },
+        { q: "They have just said something sincere and you have a line.", a: "\"Not mock offence, then. That one reads as mimicking them.\"", bundle: 'pro' },
+        { q: "The obvious role is the one that describes them.", a: "\"That's a comment wearing a costume. Take a different one.\"", bundle: 'pro' },
+        { q: "You want the biggest laugh available.", a: "\"The biggest one here is at somebody's expense. Take the second biggest.\"", bundle: 'pro' },
+        { q: "You are guarding something they genuinely need.", a: "\"Stinginess is funny about a biro. Give them the thing and pick another role.\"", bundle: 'pro' },
+        { q: "The group is tired and you were going to go big.", a: "\"Big costs them energy. Small and lazy costs nothing.\"", bundle: 'pro' },
+        { q: "You are with people you do not know well.", a: "\"Then the ones where I'm the idiot. Generous and lazy are the safest two.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being the One Who Lifts the Mood",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "Lightening a room is a real ability, and the people who have it are usually glad of it. It is also the belief most likely to keep somebody in character after the room has stopped wanting one.\n\nThis deck does not argue with it. It shows what happens to what comes back.\n\nIf every ordinary sentence gets a bit, the sentences that are not ordinary stop being said to you. People learn where things land and route around it without ever mentioning it.\n\nMindset: lifting the mood is a gift. Doing it every time teaches people which things not to bring you.",
+      inputs: [
+        { q: "You are the one who keeps things light.", a: "\"I am. Which is why the heavy things get taken somewhere else.\"", bundle: 'pro' },
+        { q: "Every room is better for a bit of this.", a: "\"Most rooms. The one where somebody is about to say something real isn't.\"", bundle: 'pro' },
+        { q: "Nobody has ever asked you to stop.", a: "\"Nobody asks. They just stop starting.\"", bundle: 'pro' },
+        { q: "Being funny is how you show you are comfortable.", a: "\"It's also how I avoid the other thing. Both are true.\"", bundle: 'pro' },
+        { q: "You would rather make somebody laugh than sit in silence.", a: "\"Silence is sometimes what they came for. The laugh is for me then.\"", bundle: 'pro' },
+        { q: "You can always find the light in something.", a: "\"Always is the problem. Some things don't have one and shouldn't get one.\"", bundle: 'pro' },
+        { q: "People rely on you for that.", a: "\"For that. Worth asking what they don't come to me for, and why.\"", bundle: 'pro' },
+        { q: "It costs nothing to keep it playful.", a: "\"It costs one conversation at a time — the one that was about to be serious.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine2: [
+    {
+      name: "The Oracle Reframe",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Choosing to see her messy emotions as intuitive data rather than a personal attack.\nShe is reflecting back where you have stopped being present, heartful, or a leader.",
+      inputs: [
+        { q: "She is being \"irrational\" and emotional.", a: "\"She is my Oracle. What is the kernel of truth she is showing me about my own lack of leadership?\"", bundle: 'pro' },
+        { q: "I want to tell her she shouldn't feel that way.", a: "\"Emotions cannot be defended. They just are. Can I just take her reality in without resisting?\"", bundle: 'pro' },
+        { q: "Her complaint feels 90% \"crazy\".", a: "\"90% of the crazy comes from her not feeling loved or led. How can I step up right now?\"", bundle: 'pro' },
+        { q: "I feel like she is just trying to find things to complain about.", a: "Her complaining is a clumsy expression of a deeper longing for my presence.", bundle: 'pro' },
+        { q: "Her intensity makes me feel like I am failing as a husband.", a: "She is testing my solidity; her storm is just weather, and I am the Oak.", bundle: 'pro' },
+        { q: "She is furious about the milk, and I want to explain that it's just milk.", a: "It's not about the milk; to her, it's about whether she is top of mind for me.", bundle: 'pro' },
+        { q: "I feel personally attacked when she vents about how messy the living room is.", a: "She is not attacking my character; her storm is a signal that she feels overwhelmed by disorder. Settle my nervous system first.", bundle: 'pro' },
+        { q: "I want to walk away when she raises her voice in frustration about our child's schedule.", a: "She is reflecting the lack of structural support in our home. If I stay grounded and engaged, she can relax.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Healthy Selfishness",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The commitment to satisfy your own needs and values first so you can lead others.\nWhat you want and need matters; expressing it is an act of love for the relationship.",
+      inputs: [
+        { q: "I feel guilty for wanting time at the gym.", a: "\"What I want matters. Being grounded and fit makes me a better leader for her.\"", bundle: 'pro' },
+        { q: "I'm afraid my preference will disappoint her.", a: "\"Speaking my truth is the most loving thing I can do. I'll trust my desire and live with the consequences.\"", bundle: 'pro' },
+        { q: "I've become a \"pleaser\" to avoid conflict.", a: "\"If I want a 'Yes' she can trust, I need to have a strong 'No'. Conflict is the price of integrity.\"", bundle: 'pro' },
+        { q: "I'll agree to go to her family's event even though I am completely exhausted.", a: "If I say yes out of fear of conflict, I will only breed resentment inside. My rest matters.", bundle: 'pro' },
+        { q: "I want to ask for her permission before buying new gym gear.", a: "Seeking permission turns her into my surrogate mother. I will state my decision clearly instead.", bundle: 'pro' },
+        { q: "I should hide my career ambition because it might make her feel insecure.", a: "Suppressing my drive to protect her comfort only emasculates me. A leader stands by his purpose.", bundle: 'pro' },
+        { q: "I'm tempted to say \"whatever you want\" to avoid the effort of making a choice.", a: "\"Whatever you want\" is the default of a passive pleaser. My clarity is what settles her.", bundle: 'pro' },
+        { q: "I feel a bad person for putting my need for a quiet hour ahead of her request.", a: "I cannot serve my family unless I attend to my own basic needs first. Self-care is leadership.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Structure",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"She's much better at planning and logistics, so I should just let her run things.\"\n\n**What is true instead:** providing structure is my role as a leader, and abdicating it leaves her unpartnered and anxious.\n\n**Why it feels right:** she is highly competent, thinks faster, and obsesses over the details more than I do.\n\n**What it costs:** her respect, and the polarity between you — she is pushed into her Masculine while she is craving your direction.\n\nMindset: providing structure is a gift of leadership, not a burden.",
+      inputs: [
+        { q: "I want to say \"whatever you want\" when she asks where we should go on vacation.", a: "Deciding is a gift of structure I give her to relieve her decision fatigue. I will propose two clear options.", bundle: 'pro' },
+        { q: "I'm tempted to let her handle all the parenting plans because she is more organized.", a: "If I don't engage and bring my own perspective, she will feel lonely and unpartnered in raising our children.", bundle: 'pro' },
+        { q: "I feel like a domineering jerk when I set a limit on how many bags she can pack.", a: "Setting a limit because of the rental car's size is not bullying; it is providing real, loving structure.", bundle: 'pro' },
+        { q: "I hesitate to set a regular time to sync our schedules because she is busy.", a: "A predictable structure reduces her uncertainty and allows her Feminine nervous system to relax.", bundle: 'pro' },
+        { q: "I want to let things drift on auto-pilot because organizing the household takes too much effort.", a: "My passivity will eventually force her into her Masculine to manage things, which kills our polarity.", bundle: 'pro' },
+        { q: "I'm afraid she will resist my proposal for a weekend hike.", a: "I will present my plan clearly. If she resists, I can calmly listen while staying grounded in my leadership.", bundle: 'pro' },
+        { q: "I want to yield to her strong opinions immediately just to avoid any conflict.", a: "Yielding to avoid conflict only breeds her contempt. I must stand by my truth and lead.", bundle: 'pro' },
+        { q: "I feel incompetent when we cook because she is so much better in the kitchen.", a: "I can show leadership by asking her to tell me what to do, and taking complete responsibility for my tasks.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Praise",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Praising her feels manipulative, or like I'm just trying to perform a technique.\"\n\n**What is true instead:** praise is the essential fuel that opens her Feminine heart and body to connect with me.\n\n**What is true instead:** it feels easy to withhold appreciation when I am feeling underappreciated or when she is being irritable.\n\n**What it costs:** the polarity between you, leaving her heart closed and her body shut down to me.\n\nMindset: my specific appreciation is the oxygen her Feminine heart craves.",
+      inputs: [
+        { q: "I feel a resistance to praising her beauty because she has been cold all day.", a: "She closes when she doesn't feel desired. My genuine praise is the invitation she needs to relax and open.", bundle: 'pro' },
+        { q: "I want to give a general compliment like \"you look nice\" because it's safe and easy.", a: "General compliments feel polite but evaporate. Specific praise proves I am paying focused attention.", bundle: 'pro' },
+        { q: "I feel awkward expressing my raw sexual desire for her body out loud.", a: "Owning my desire is deeply Masculine and attractive. I will tell her exactly how hot she looks.", bundle: 'pro' },
+        { q: "I want to complain about our lack of intimacy instead of praising her responsiveness.", a: "Complaining breeds defensiveness. Praising her responsiveness is what actually encourages her to open.", bundle: 'pro' },
+        { q: "I'm afraid that praising her effort with the kids will sound patronizing.", a: "Appreciating her deep Feminine care is a gift of heart connection that makes her feel seen.", bundle: 'pro' },
+        { q: "I think she already knows she looks beautiful in that dress.", a: "She knows she tried, but she cannot see the effect she has on me. My praise is that feedback.", bundle: 'pro' },
+        { q: "I feel like a fraud when I praise her while she is stuck in her work mind.", a: "My warm presence and praise are what invite her to drop her analytical armor and soften.", bundle: 'pro' },
+        { q: "I want to withhold my attention until she apologizes for being irritable.", a: "Withholding attention is a petty, reactive game. I will lead with desire and melt the coldness.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Heart",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Opening my heart and showing vulnerability makes me look weak and unmasculine.\"\n\n**What is true instead:** dropping into my heart is the ultimate display of grounding and emotional safety.\n\n**What is true instead:** it feels safer to stay in my logical, thinking mind and preserve my \"rightness\" during conflict.\n\n**What it costs:** the connection, leaving her alone, unseen and emotionally unsafe with me.\n\nMindset: a strong man rules his emotional world by feeling deeply and staying present.",
+      inputs: [
+        { q: "I want to argue the facts of her complaint because I know I am technically right.", a: "Preserving my rightness at the cost of connection is a loss. I will drop into my heart and feel her pain.", bundle: 'pro' },
+        { q: "I feel a strong urge to shut down or freeze when she blasts me with messy emotions.", a: "My withdrawal is what a boy does. A Masculine leader breathes, stays in connection, and contains the storm.", bundle: 'pro' },
+        { q: "I'm afraid that sharing my underlying fear or shame will make her lose respect for me.", a: "A strong man knows his emotions and shares them without needing anyone else to change to make the pain stop.", bundle: 'pro' },
+        { q: "I want to pretend I'm fine to look tough.", a: "Clamping up is an act of avoidance, not strength. If I choose not to feel my pain, she will have to feel it for me.", bundle: 'pro' },
+        { q: "I want to explain my good intentions immediately to avoid being the bad guy.", a: "My scramble to defend comes from my own anxiety. I will tolerate the discomfort and listen first.", bundle: 'pro' },
+        { q: "I feel awkward slowing down and just breathing with her when she is upset.", a: "Slowing down is the antithesis of the get-it-done mind. It is where true emotional safety is built.", bundle: 'pro' },
+        { q: "I'm tempted to use intellectual arguments to solve her emotional distress.", a: "Reasoning at an upset partner does not land. I must speak from my heart instead.", bundle: 'pro' },
+        { q: "I feel ashamed of how long it takes me to notice what I am feeling.", a: "Naming a feeling slowly is still naming it. The practice is the point, not the speed.", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine3: [
+    {
+      name: "Fear is just Resistance",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The reframe that fear is simply your subconscious mind resisting a possibility.\nOvercoming fear means challenging the belief that an outcome is \"unacceptable\" or \"unsurvivable\".",
+      inputs: [
+        { q: "I'm afraid she'll leave me if I set this boundary.", a: "\"She might leave. It would be painful, but I will survive and be fine.\"", bundle: 'pro' },
+        { q: "I'm scared to initiate sex because she might say no.", a: "\"Rejection doesn't define me. I can want what I want and be okay with her 'No'.\"", bundle: 'pro' },
+        { q: "I'm afraid of the intensity of her anger.", a: "\"Her anger is just energy. I can withstand this fire and die with dignity in this visualization.\"", bundle: 'pro' },
+        { q: "I'm terrified of telling her about my financial mistake.", a: "She might be disappointed, but sharing my truth is how I maintain my integrity.", bundle: 'pro' },
+        { q: "I feel anxious when we have a long silence in the bedroom.", a: "The silence is a container for presence, not a sign of failure. Settle my system.", bundle: 'pro' },
+        { q: "I'm scared she'll laugh at me if I try a direct initiation line.", a: "Owning my desire is my job; how she receives it is hers. I will stand strong.", bundle: 'pro' },
+        { q: "I feel panic when she slams the door and goes silent.", a: "Her shutdown is just weather. I don't need to fix it immediately to be okay.", bundle: 'pro' },
+        { q: "I'm afraid to slow down our intimacy because I might lose my erection.", a: "My erection is not the goal. Staying connected in my body is where true pleasure lives.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Oracle of Heart",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The commitment to see her messy emotional expression as intuitive insight into your own blind spots.\nWhen you stop defending and start listening to the \"Oracle,\" your defensiveness organically vanishes.",
+      inputs: [
+        { q: "She's being \"crazy\" and illogical again.", a: "\"What is the kernel of truth here? Where have I stopped being present or leading her?\"", bundle: 'pro' },
+        { q: "I feel the urge to \"Fix the Facts.\"", a: "\"Feelings first, facts later. Logic is for work; heart is for her.\"", bundle: 'pro' },
+        { q: "She is complaining about a \"small thing\" I forgot.", a: "\"To her, this is about care and protection, not logistics. I'll hear the pain, not the blame.\"", bundle: 'pro' },
+        { q: "She complains that I didn't check in on her sick mother.", a: "She is reflecting that she doesn't feel top of mind for me. I will track her world better.", bundle: 'pro' },
+        { q: "She says we never spend real quality time together.", a: "She senses my lack of focus and attention. I need to tighten up on my presence.", bundle: 'pro' },
+        { q: "She yells that she has to do everything around the house.", a: "She feels lonely and unpartnered. I will bring my own ideas and structure to the table.", bundle: 'pro' },
+        { q: "She criticizes my driving when we are lost.", a: "She is feeling unsafe in my lead. I will hold space for her anxiety and settle.", bundle: 'pro' },
+        { q: "She is snapping at me about a minor logistical detail.", a: "She is venting her deeper anxiety. I will ignore the blame to meet her underlying pain.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sexual Desire",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I shouldn't initiate sex directly because she might feel pressured, or she might reject me.\"\n\n**What is true instead:** owning your sexual desire cleanly is a gift of polarity and structure, not a burden you place on her.\n\n**Why it feels right:** make tentative, indirect bids because you protect your ego from direct rejection and avoid conflict.\n\n**What it costs:** her respect, leaving her to drift in indecisiveness and forcing her into her Masculine energy.\n\nMindset: my desire is a gift of structure and polarity.",
+      inputs: [
+        { q: "I should wait for her to signal she is in the mood before I initiate.", a: "A woman can't follow where I don't lead. I will own my desire boldly today.", bundle: 'pro' },
+        { q: "If I state my sexual longing directly, she'll think I'm being selfish.", a: "Women want to be loved and led. Stating my desire clearly settles her nervous system.", bundle: 'pro' },
+        { q: "I feel a lot of shame about wanting sex more than she does.", a: "My desire is clean and Masculine. I can want what I want without needing her permission.", bundle: 'pro' },
+        { q: "I want to ask \"Can we have sex tonight?\" to feel safe.", a: "Asking for permission is a pleaser habit. I will propose a Seduction Date instead.", bundle: 'pro' },
+        { q: "I feel like a predator for wanting to touch her naked body.", a: "Unabashedly owning my sexuality is what allows her to relax into her own wild nature.", bundle: 'pro' },
+        { q: "I'm tempted to do chores just to earn sex later.", a: "Choreplay is a covert contract that kills polarity. I do chores for myself, not for sex.", bundle: 'pro' },
+        { q: "I should accept a low-sex relationship because she is busy.", a: "I have a right to a healthy sex life. I will take responsibility for leading us back to pleasure.", bundle: 'pro' },
+        { q: "I feel awkward using a direct command line to lead her.", a: "Taking sexual charge is my gift of leadership to her. I will trust my instincts.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Vulnerability",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I reveal my real fear or shame, she'll see me as weak and lose all respect for me.\"\n\n**What is true instead:** dropping into your heart and sharing the truth underneath is the ultimate display of grounding and power.\n\n**Why it feels right:** it feels safer to stay in your logical, defensive mind and pretend 'I'm fine' to protect your good-guy self-image.\n\n**What it costs:** connection, leaving her feeling catastrophically unmet and abandoned in her pain.\n\nMindset: a strong man knows and shares his emotions without needing anyone else to change.",
+      inputs: [
+        { q: "I should hide my fear of being abandoned to look strong.", a: "Sharing my fear underneath is an act of courage that opens her heart to connect.", bundle: 'pro' },
+        { q: "I need to explain my good intentions immediately so she doesn't think I'm bad.", a: "My scramble to explain comes from my own anxiety. I will tolerate the hurt and listen.", bundle: 'pro' },
+        { q: "I must hide my career insecurities so she trusts my lead.", a: "Hiding the real me behind a false self precludes true honesty. I will own my shame.", bundle: 'pro' },
+        { q: "If I share my pain, I am being a whiny, needy victim.", a: "If I need her to change to make my pain stop, I am weak. If I just share and stop, I am powerful.", bundle: 'pro' },
+        { q: "I want to use a 'Fuck You' silence to make her feel guilty.", a: "Withdrawal is a boy's defense mechanism. A Masculine leader stays in the fire.", bundle: 'pro' },
+        { q: "I feel like she is doing this to me and she is the one who has to fix it.", a: "I am not a victim. I may not be the problem, but my leadership is the solution.", bundle: 'pro' },
+        { q: "I should just suppress my anger and keep things peaceful.", a: "Suppressing my emotions leaks out as toxic anxiety. I will welcome and share my anger cleanly.", bundle: 'pro' },
+        { q: "I'm afraid that sharing my hurt makes me look like a child.", a: "Pretending 'I'm fine' is the path of a child. Standing strong in my truth is the path of a man.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Slowing Down",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I need to rush to the goal of sex before the mood evaporates or she changes her mind.\"\n\n**What is true instead:** decelerating every physical movement during intimacy builds the emotional safety her Feminine physiology requires to open.\n\n**Why it feels right:** it feels right to move fast because your male physiology turns on instantly and seeks immediate physical release.\n\n**What it costs:** her trust, leaving her feeling rushed, objectified, and physically closed to you.\n\nMindset: move her with control, not force or speed.",
+      inputs: [
+        { q: "I want to go straight to yoni stimulation because we are in bed.", a: "The Feminine can't be rushed. I will take my time and warm her up slowly.", bundle: 'pro' },
+        { q: "I feel the urge to speed up my touch because she sighed.", a: "I will slow my hands to three times slower than natural to deepen the connection.", bundle: 'pro' },
+        { q: "I'm afraid that slowing down will kill her arousal.", a: "Slowing down is what creates the container for her to relax and go wild. Breathe.", bundle: 'pro' },
+        { q: "I should focus on achieving my orgasm as fast as possible.", a: "I will get out of my head and stay attuned to her body and her breath.", bundle: 'pro' },
+        { q: "I want to ask \"Is this okay?\" every time I move.", a: "I will trust my instincts and lead, adjusting immediately if I feel her retract.", bundle: 'pro' },
+        { q: "I feel the urge to move rapidly when her body starts to open.", a: "Her opening requires slow, steady pressure. I will move her with control.", bundle: 'pro' },
+        { q: "I want to use music as a forced-Pavlovian cue for sex.", a: "Seduction dates and heart connection are what open her, not mechanical tricks.", bundle: 'pro' },
+        { q: "I feel impatient with her slow physical warming process.", a: "Her vulnerability is exposed in sex. I will approach quietly as a doe to the river.", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine4: [
+    {
+      name: "The Goal is Leadership, not Agreement",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Realizing that your job is to lead the couple to a better place, even if she doesn't agree with your methods in the moment.\nAgreement is a \"sign\" you seek; leadership is a \"gift\" you give.",
+      inputs: [
+        { q: "I feel like a failure because she's still mad.", a: "\"I'm not failing. I'm passing the test by staying grounded in the fire.\".", bundle: 'pro' },
+        { q: "I think I need her permission to have an opinion.", a: "\"I don't need permission to exist as who I am. My sureness is its own authority.\".", bundle: 'pro' },
+        { q: "I'm afraid that setting a boundary makes me a \"jerk.\"", a: "\"Boundaries are an act of love for the relationship. I'm protecting our culture.\".", bundle: 'pro' },
+        { q: "I'm afraid she will get angrier if I stand my ground during her storm.", a: "Passing a test rarely brings immediate reward. I hold the pose anyway.", bundle: 'pro' },
+        { q: "I feel like I must convince her to agree with my plan right now.", a: "Agreement is a sign I seek; leadership is a gift I give. I lead anyway.", bundle: 'pro' },
+        { q: "I worry that staying silent and grounded makes me look cold.", a: "Being Shiva means being unswayable, not unfeeling. I stay grounded in the fire.", bundle: 'pro' },
+        { q: "I think our relationship is broken because we are having a conflict.", a: "Conflict is an opportunity to lead us back to connection. I own the solution.", bundle: 'pro' },
+        { q: "I need her to say yes immediately to feel good about my decision.", a: "My well-being is independent of her immediate reaction. Settle into the static.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Validation",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I need to know she likes me and approves of my choices to feel okay.\"\n\n**What is true instead:** your well-being and worth depend on her immediate approval and softening.\n\n**Why it feels right:** her smile brings instant relief to your nervous system.\n\n**What it costs:** you your power, turning you into an approval-seeking boy who cannot lead.\n\nMindset: I am at peace with the fact that she may not approve right now.",
+      inputs: [
+        { q: "I am afraid to speak my truth because she might get annoyed.", a: "Her annoyance cannot destroy me. I speak from my own center.", bundle: 'pro' },
+        { q: "I'm waiting for her to soften before I can relax.", a: "I can be relaxed and grounded even when she is cold. I need nothing.", bundle: 'pro' },
+        { q: "I feel a high level of suspense when I talk to a beautiful woman.", a: "I am seeking her validation. I drop the need to be found worthy.", bundle: 'pro' },
+        { q: "I need her to tell me my vacation plan is amazing to feel confident.", a: "My plan is a gift of structure. I trust my own lead.", bundle: 'pro' },
+        { q: "I am scanning her face to see if she approved of my boundary.", a: "I hold the pose. I settle into the static of her disapproval.", bundle: 'pro' },
+        { q: "I feel like a failure because she didn't laugh at my joke.", a: "I release the need for her reaction. I breathe and stay grounded.", bundle: 'pro' },
+        { q: "I want to ask her permission for everything to stay safe.", a: "Seeking permission is a pleaser habit. I lead myself first.", bundle: 'pro' },
+        { q: "I feel like I'm in trouble when she gives me a cold look.", a: "I am a grown man, not a little boy. I am safe.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Anger",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I show my anger, I am being a toxic, abusive man.\"\n\n**What is true instead:** anger is a dangerous, savage emotion that must be suppressed to keep the peace.\n\n**Why it feels right:** society tells you masculinity is toxic, and you want to be a good guy.\n\n**What it costs:** you your boundaries, leaving her feeling unpartnered and forced into her own Masculine.\n\nMindset: I can feel the savagery of anger within me without acting like a savage.",
+      inputs: [
+        { q: "I should suppress my anger when she disrespects me.", a: "My anger is an ally. I will use its fire to set a clean boundary.", bundle: 'pro' },
+        { q: "If I speak firmly about my limits, she will think I'm a jerk.", a: "Setting boundaries is an act of love. I am protecting our connection.", bundle: 'pro' },
+        { q: "My anger makes me feel like a savage who will lose control.", a: "I can feel the intensity of anger without acting like a savage.", bundle: 'pro' },
+        { q: "I want to use my anger to blame her and make her feel wrong.", a: "Blaming is a shadow strategy to avoid my shame. I own my anger instead.", bundle: 'pro' },
+        { q: "I feel guilty for being angry about her careless spending.", a: "My anger is a reminder of what is important. I protect our stability.", bundle: 'pro' },
+        { q: "If I don't get angry, things will stay peaceful today.", a: "Short-term peace at the cost of my boundaries breeds long-term resentment.", bundle: 'pro' },
+        { q: "I should just take her jabs with a patient smile.", a: "Patience without boundaries is cowardice. I will protect our connection.", bundle: 'pro' },
+        { q: "I'm afraid to raise my voice even when a limit is crossed.", a: "I can express my anger with quiet intensity and full conviction.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Safety",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Her emotional outbursts are a threat that I must logically solve or escape.\"\n\n**What is true instead:** her emotional storms are a threat to your safety or proof of your failure.\n\n**Why it feels right:** her words are full of blame, triggering your childhood wounds.\n\n**What it costs:** you connection, proving to her nervous system that you cannot contain her fire.\n\nMindset: this is just energy; I am physically safe and I can handle this fire.",
+      inputs: [
+        { q: "I feel like her bad mood is going to destroy our life.", a: "The sun is still there. I am sitting on this chair. I am fine.", bundle: 'pro' },
+        { q: "I need to logically correct her facts so she stops being mad.", a: "Trying to reason during a storm is useless. I hear her feelings first.", bundle: 'pro' },
+        { q: "I want to run out of the room to escape her shouting.", a: "Withdrawal is a boy's defense. I choose to stay present in the fire.", bundle: 'pro' },
+        { q: "I feel like a helpless victim under her emotional tsunami.", a: "I am a grown man. Her mood cannot destroy me. I stay grounded.", bundle: 'pro' },
+        { q: "I feel my chest tightening and my breath shallowing.", a: "(Perform a body scan) I am clenching. I relax. I am safe.", bundle: 'pro' },
+        { q: "I think I am failing as a partner because she is unhappy.", a: "Her unhappiness is a signal, not a verdict. I stay present with her.", bundle: 'pro' },
+        { q: "I must hide my mistakes so she doesn't get disappointed.", a: "Hiding is cowardice. I stand strong in my truth and own my part.", bundle: 'pro' },
+        { q: "I want to use work as an excuse to escape from feeling my shame.", a: "I drop into my heart. I choose safety over rightness.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Shadows",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Using phone scrolling, silence, or blaming is just how I get through a fight.\"\n\n**What is true instead:** your reactive shadow strategies are helpful ways to cope with relational stress.\n\n**Why it feels right:** they temporarily shield your ego and bleed off your anxiety.\n\n**What it costs:** you her trust, leaving her lonely, unpartnered, and sexually closed.\n\nMindset: these reactive behaviors are just unconscious ways to make the anxiety stop.",
+      inputs: [
+        { q: "Hiding in my phone during a fight is a harmless way to decompress.", a: "This is Distraction to avoid my anxiety. I put the phone away.", bundle: 'pro' },
+        { q: "Giving her the silent treatment will teach her a lesson.", a: "This is Contraction. I'm hiding. I choose to go back and stay engaged.", bundle: 'pro' },
+        { q: "Correcting her facts is just me being honest and helpful.", a: "This is Defense. I stop the logic and stay present with her heart.", bundle: 'pro' },
+        { q: "Agreeing to whatever she says is just me being easy-going.", a: "This is Collapse. My needs matter. I stop caving.", bundle: 'pro' },
+        { q: "Blaming her back is justified because she started it.", a: "This is Blame. I am using anger to avoid my shame. I pause.", bundle: 'pro' },
+        { q: "Sycophantically apologizing is the fastest way to get peace.", a: "This is Approval Seeking. I stop apologizing and stand my ground.", bundle: 'pro' },
+        { q: "Speaking rapidly helps me get my point across before she interrupts.", a: "This is Distraction fueled by social anxiety. I slow my pace right down.", bundle: 'pro' },
+        { q: "Hiding my career fears is necessary to protect my image.", a: "This is Contraction. I will stand in my truth and share my vulnerability.", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine5: [
+    {
+      name: "Stability is a Gift",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Reframing the Provider role not as a burdensome duty, but as a proactive gift of love that allows her to blossom.\nDelivering stability makes you uniquely attractive and trusted.",
+      inputs: [
+        { q: "I feel like I'm \"doing all the work\" logistically.", a: "\"Providing structure is my gift. When I lead well, she can relax into her radiance.\"", bundle: 'pro' },
+        { q: "I think she's a \"capable woman\" so she doesn't need my help.", a: "\"She *can* do it, but she doesn't want to *have* to do it. My lead relieves her burden.\"", bundle: 'pro' },
+        { q: "I'm afraid she'll think I'm being \"domineering\" if I make a plan.", a: "\"Leadership is an invitation, not a command. She craves my direction, not my dominance.\"", bundle: 'pro' },
+        { q: "I feel like a domineering jerk when I set a limit on suitcase size.", a: "\"Setting a limit because of the rental car's size is not bullying; it is providing real, loving structure.\"", bundle: 'pro' },
+        { q: "I think parenting decisions should always be joint to stay completely democratic.", a: "\"Egalitarian drifting leaves her lonely and unpartnered. I must bring my own clear perspectives.\"", bundle: 'pro' },
+        { q: "I feel like a controlling tyrant when I propose a structured plan for our savings.", a: "\"Providing structural safety is not tyranny; it is my responsibility as a Provider to ensure the bottom doesn't drop out.\"", bundle: 'pro' },
+        { q: "I hesitate to set clear relational rules of engagement because I worry I am imposing on her autonomy.", a: "\"Relational boundaries are not an imposition; they protect the container so her Feminine heart can feel safe.\"", bundle: 'pro' },
+        { q: "I feel like I am steamrolling her when I make a firm executive decision about our weekend timeline.", a: "\"My clarity is an invitation to ride, not a command. She wants to relax into my direction.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "My Attention is Love",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The realization that \"Tracking her priorities\" is not a chore, but a core Masculine skill that builds deep safety.\nA woman feels loved when she feels she is in your \"field of attention\".",
+      inputs: [
+        { q: "I think the \"little things\" (like the milk) don't matter.", a: "\"To her, it's not about the milk—it's about whether I'm tracking her and our life together.\"", bundle: 'pro' },
+        { q: "I'm too busy at work to think about her challenges.", a: "\"If I'm not tracking what's alive for her, she feels forgotten. My attention is a proxy for my love.\"", bundle: 'pro' },
+        { q: "I'll just wait for her to ask for help.", a: "\"Waiting to be told what to do is abdicating. Proactive tracking is Masculine leadership.\"", bundle: 'pro' },
+        { q: "I feel a resistance to tracking her family's medical issues because it's not my problem.", a: "\"She needs to feel that she and her loved ones are in my field of attention to feel safe.\"", bundle: 'pro' },
+        { q: "I want to ignore her quiet, flat mood because she isn't actively complaining.", a: "\"Waiting for her to blow up is lazy. Checking in on her heart shows she is my priority.\"", bundle: 'pro' },
+        { q: "I think verbal expressions of \"I love you\" are enough to reassure her.", a: "\"The Feminine needs to see love demonstrated in action. Verbal loops don't build trust.\"", bundle: 'pro' },
+        { q: "I feel underappreciated when I do chores and she still complains about other things.", a: "\"I don't do things to get credit. I provide care because that is who I am and how I choose to live.\"", bundle: 'pro' },
+        { q: "I think she should handle her own emotional stress when she's upset with her friends.", a: "\"She wants me to track her priorities. My focused attention is what allows her to relax.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Nice Guy",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Hiding my needs, caving to her demands, and avoiding conflict is the path to a peaceful relationship.\"\n\n**What is true instead:** hiding your needs is manipulative, turns you into an approval-seeking boy, and kills her respect.\n\n**Why it feels right:** society tells you masculinity is toxic, and you want to be a \"good boy\" who keeps the peace.\n\n**What it costs:** you her trust; she cannot relax with a man who has no backbone or boundaries.\n\n• Nice Guy Pleasing — reclaim your power by owning what you want\n\nMindset: what I want matters, and a strong No is what makes my Yes trustworthy.",
+      inputs: [
+        { q: "I should say \"whatever you want\" when she asks where we should eat.", a: "\"Lukewarm deferral is lame. I will own my desires and propose a clear choice.\"", bundle: 'pro' },
+        { q: "I want to hide my career ambitions because she might feel left behind.", a: "\"Suppressing my drive to protect her comfort only emasculates me. A leader stands by his purpose.\"", bundle: 'pro' },
+        { q: "I want to ask her permission for everything to stay safe and out of trouble.", a: "\"Seeking permission is a pleaser habit that turns her into my mother. I lead myself first.\"", bundle: 'pro' },
+        { q: "I'll agree to pick her up even though it hurts my work because I don't want to disappoint her.", a: "\"If I say yes out of fear of conflict, I will only breed resentment. My time matters.\"", bundle: 'pro' },
+        { q: "I feel like a bad person for putting my needs first sometimes.", a: "\"I cannot serve my family unless I attend to my own basic needs first. Self-care is leadership.\"", bundle: 'pro' },
+        { q: "I'll say yes to her sister's dinner even though I dread it, and hope it earns me some goodwill.", a: "\"Goodwill bought with a resented yes is a loan I will want repaid. I'll say what I actually want.\"", bundle: 'pro' },
+        { q: "I want to apologize profusely for things I didn't do just to calm her down.", a: "\"Sycophantic apologies are weak. I stand my ground in truth and lead.\"", bundle: 'pro' },
+        { q: "If I tell her I want an evening to myself, she'll take it as rejection.", a: "\"A man with no time of his own has nothing to bring back. I'll ask plainly and let her have her reaction.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Conflict",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Her emotional outbursts are a threat to my safety, or proof that I am failing.\"\n\n**What is true instead:** her emotional storm is not an attack; it is just transient weather that wants your grounded containment. It feels right to defend, explain, or withdraw because her blaming triggers your childhood wounds.\n\n**What it costs:** you connection, proving to her nervous system that you are too reactive to handle her fire.\n\n• Relational Conflict — stay grounded as Shiva to contain her storm\n\nMindset: this is just energy; I am physically safe and I can handle this fire.",
+      inputs: [
+        { q: "I need to logically correct her facts immediately so she stops being mad.", a: "\"Feelings first, facts later. Addressing emotion with logic never works. Hear her pain.\"", bundle: 'pro' },
+        { q: "I want to run out of the room or freeze when she blasts me with messy emotions.", a: "\"Withdrawal is a boy's defense. A Masculine leader breathes, stays, and contains the storm.\"", bundle: 'pro' },
+        { q: "When she is this upset I start counting up how unfair the whole thing is.", a: "\"Keeping score is the boy's move. I am the one who can steady this, so I will.\"", bundle: 'pro' },
+        { q: "I think our relationship is completely broken because she is having a conflict.", a: "\"Conflict is an opportunity to display solidity. Settle my nervous system and hold space.\"", bundle: 'pro' },
+        { q: "I want to use the silent treatment to punish her for her angry outburst.", a: "\"The silent treatment is a childish defense. I stay engaged and connected.\"", bundle: 'pro' },
+        { q: "I feel my chest tightening and my breath shallowing as her anger rises.", a: "(Perform a body scan) I am clenching. I relax. I am safe in this room.", bundle: 'pro' },
+        { q: "If I don't agree with her version of events, she'll only get louder.", a: "\"Agreeing to end the noise is a lie she will feel. I can hear the hurt without signing the story.\"", bundle: 'pro' },
+        { q: "I need her to know that I wasn't trying to hurt her.", a: "\"My intentions are mine to know. Her experience is what needs my attention right now.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Equality",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"We are equal partners, so she doesn't need my leadership or direction.\"\n\n**What is true instead:** modern relationships are not improved by having no leader at all.\n\n**Why it feels right:** she is highly competent, independent, and you want to respect her power.\n\n**What it costs:** polarity, forcing her to carry the emotional and logistical burden alone until she gets resentful.\n\nMindset: offering my lead is a gift of service, not an act of dominance.",
+      inputs: [
+        { q: "Since she's a capable woman, I should let her decide where we go on vacation.", a: "\"Leaving her to plan alone makes her feel abandoned. Proactive proposals are my gift of leadership.\"", bundle: 'pro' },
+        { q: "She is a grown-up, so she should call the plumber or handle difficult systems herself.", a: "\"She is capable, but dealing with difficult logistics alone makes her feel unpartnered. I will handle the burden.\"", bundle: 'pro' },
+        { q: "I think she should manage her own family drama and work stress without my interference.", a: "\"Proactive tracking of her world shows she is top of mind. My focused attention is love.\"", bundle: 'pro' },
+        { q: "It feels bossy and controlling to set rules about no phones or no fighting during our dates.", a: "\"Relational boundaries are not control; they protect the connection so she can drop her armor.\"", bundle: 'pro' },
+        { q: "I believe our finances should be handled jointly down to the penny with equal debate.", a: "\"Democratic drifting causes anxiety. Taking ownership of long-term stability is my responsibility as Provider.\"", bundle: 'pro' },
+        { q: "If she wants to go out, she can initiate it; I don't want to force my choice.", a: "\"She craves my direction, not my passivity. I will proactively propose a clear date plan.\"", bundle: 'pro' },
+        { q: "It's her personal work project, so I should stay out of it and let her handle it.", a: "\"Stepping in to help with her hard task is action-oriented love. I will take complete ownership.\"", bundle: 'pro' },
+        { q: "She didn't ask me for help with her business paperwork, so she must have it handled.", a: "\"Waiting to be told what to do is abdicating my leadership. I will proactively offer my support.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine6: [
+    {
+      name: "Body Always Exists in the Now",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Realizing that thoughts are mostly about the past or future, while the body is the only part of you that is actually \"here\".\nWaking up your body literally crowds out the thoughts and stories of the mind.",
+      inputs: [
+        { q: "I'm lost in thoughts about what she said yesterday.", a: "\"My thoughts are in the past. My body is in the 'now'. I'll focus on my breath.\".", bundle: 'pro' },
+        { q: "I'm worried about what will happen if we keep fighting.", a: "\"Worry is just a future story. I'll feel the ground under my feet. Reality is safe.\".", bundle: 'pro' },
+        { q: "I feel \"locked up\" in my head during a conflict.", a: "\"I'll shift my attention to the clenching in my jaw. Somatic sensation is truth; stories are illusions.\".", bundle: 'pro' },
+        { q: "My mind is spinning in stories about how unfair her criticism is.", a: "\"Her anger is just energy in the room. I will feel the breath moving in my chest and ignore the story.\"", bundle: 'pro' },
+        { q: "I am anticipating that our date night will end in a fight.", a: "\"I am projecting a future story. I will feel the solid seat of this chair and return to the present.\"", bundle: 'pro' },
+        { q: "I am replaying her cold tone from this morning over and over in my head.", a: "\"The cold look is in the past. I am here now. I will focus on the feeling of the steering wheel in my hands.\"", bundle: 'pro' },
+        { q: "I feel a massive wave of anxiety when she raises her voice.", a: "\"Anxiety is just an unpleasant physical sensation. I will let it exist in my body without needing to fix it.\"", bundle: 'pro' },
+        { q: "I'm trying to logically analyze why she is acting this way.", a: "\"Logical analysis keeps me in my head. I will drop my attention into my belly and breathe.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Nervous System is a Muscle",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Understanding that your ability to handle intensity is a trainable skill, not a fixed trait.\nYou have to \"suffer a little\" in practice to grow your capacity for the fire of a relationship.",
+      inputs: [
+        { q: "I feel like I'm \"just a nervous person\" and can't change.", a: "\"My nervous system is plastic. I can train it to handle this fire, one breath at a time.\".", bundle: 'pro' },
+        { q: "I want to quit my meditation or exercise because it's too hard.", a: "\"This resistance is exactly where the growth happens. I'm building my lead.\".", bundle: 'pro' },
+        { q: "I'm discouraged that I got reactive again.", a: "\"Training takes months, not days. I'll do a do-over and get back to practice.\".", bundle: 'pro' },
+        { q: "I feel like my body is too weak to withstand her emotional storms.", a: "\"Somatic capacity is built by staying in the fire. Every storm I contain makes me more solid.\"", bundle: 'pro' },
+        { q: "I feel silly visualizing her anger during my daily meditation.", a: "\"Provocation Visualization is how I train the muscle. Suffer a little in practice to be strong in the kitchen.\"", bundle: 'pro' },
+        { q: "I want to skip my daily embodiment practice because I am too tired.", a: "\"Consistency is what rewires the nervous system. Five minutes of Ujjayi now is a deposit in my solidity.\"", bundle: 'pro' },
+        { q: "I'm frustrated that my heart still races when she gets upset.", a: "\"My heart racing is just an automatic reaction. I will train my system to breathe through the arousal.\"", bundle: 'pro' },
+        { q: "I feel like avoiding physical holds or discomfort because they are unpleasant.", a: "\"Discomfort is the gym for my nervous system. I will hold the pose and expand my capacity.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Triggers",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I shouldn't intentionally visualize stressful things because it just makes me feel worse.\"\n\n**What is true instead:** using visualization to stoke anxiety feels like self-punishment or a waste of energy.\n\n**Why it feels right:** seek only peaceful, calm meditations because you want to escape the stress of daily life.\n\n**What it costs:** you solidity, leaving your nervous system completely unprepared when her active storm hits.\n\nMindset: stoking the trigger in practice is the gym that makes me unshakeable in the kitchen.",
+      inputs: [
+        { q: "I feel resistance to visualizing her angry face during meditation.", a: "\"Avoiding the trigger in my mind ensures I will collapse when it happens in real life. Stoke the fire.\"", bundle: 'pro' },
+        { q: "I worry that imagining bad scenarios will manifest them in my life.", a: "\"Visualization is training my response, not inviting the disaster. I am building somatic capacity.\"", bundle: 'pro' },
+        { q: "I want to keep my meditation completely peaceful and relaxed.", a: "\"Peace is easy in a vacuum. I must learn to ground myself while feeling the intensity.\"", bundle: 'pro' },
+        { q: "I feel a wave of anxiety when I visualize a confrontation.", a: "\"This anxiety is exactly what I am here to acclimate to. Settle my system and stay seated.\"", bundle: 'pro' },
+        { q: "I think visualizing her leaving is too painful to sit with.", a: "\"If I can't survive the thought of her leaving in meditation, I cannot lead with boundaries in real life.\"", bundle: 'pro' },
+        { q: "I want to stop the visualization the moment my heart starts racing.", a: "\"My heart racing is the cue to practice. I will breathe deeply and connect my intention to my action.\"", bundle: 'pro' },
+        { q: "I feel like a poser for practicing my boundaries in an imaginary scenario.", a: "\"Mental rehearsal is how top performers master intensity. I am honing my Masculine core.\"", bundle: 'pro' },
+        { q: "I think this visualization doesn't map over to real life.", a: "\"The nervous system doesn't know the difference between real and imagined threat. The capacity I build here maps over.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Deliberateness",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Choosing my movements and words beforehand feels fake, robotic, and unnatural.\"\n\n**What is true instead:** slowing down and deliberately intending each action feels manipulative or overly controlled.\n\n**Why it feels right:** operate on spontaneous autopilot because we are taught that authenticity is always impulsive.\n\n**What it costs:** you your power, leaving you to move frantic and \"bird-like\" under the influence of social anxiety.\n\nMindset: deliberateness is the ultimate expression of conscious, Masculine power.",
+      inputs: [
+        { q: "I feel fake when I intentionally slow my physical movements down to three times slower.", a: "\"Slowing down is not fake; it breaks the monopoly of my frantic autopilot. Move with control.\"", bundle: 'pro' },
+        { q: "I hesitate to pause and form my words in my mind before speaking.", a: "\"Rushing to speak is a reaction to anxiety. Choosing my words beforehand is a gift of clarity.\"", bundle: 'pro' },
+        { q: "I feel robotic when I practice slow, deliberate movements in bed.", a: "\"Frantic speed is what shuts her down. Deliberate, slow pressure builds safety and energetic polarity.\"", bundle: 'pro' },
+        { q: "I want to let my hands move automatically because it feels more natural.", a: "\"Automatic movement under stress is just anxious fidgeting. I will choose every touch consciously.\"", bundle: 'pro' },
+        { q: "I think pausing for five seconds before responding to her criticism makes me look weak.", a: "\"A rapid response is what a boy does. A Masculine leader takes his seat in the pause.\"", bundle: 'pro' },
+        { q: "I feel awkward holding a steady posture and eye contact when she is upset.", a: "\"Slouching is an unconscious way of trying to become invisible. I choose to stand upright and occupy space.\"", bundle: 'pro' },
+        { q: "I'm tempted to speak rapidly to get my point across before she interrupts.", a: "\"Rapid speech is fueled by social anxiety. I choose to speak with ease and control at a measured pace.\"", bundle: 'pro' },
+        { q: "I feel like planning my physical movements during intimacy is manipulative.", a: "\"My deliberate presence is an invitation to ride, not control. I lead so she can relax.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculinesv: [
+    {
+      name: "Hon är ditt Orakel",
+      guideFront: "En tanke som hindrar dig.",
+      guideBack: "Ett sätt att tänka istället.",
+      description: "Att se hennes kritik inte som ett angrepp, utan som information om var du har slutat vara närvarande eller sann.\nNär du accepterar henne som ditt orakel, slutar du försvara dig och börjar istället leta efter kärnan av sanning i det hon säger.",
+      inputs: [
+        { q: "Hon klagar på något småaktigt.", a: "Vad kan vara sant i det här? Speglar hon en blind fläck hos mig just nu?.", bundle: 'pro' },
+        { q: "Jag känner mig orättvist anklagad.", a: "Istället för att rätta faktan, fråga mig: Var har jag slutat leda eller älska henne i den här situationen?.", bundle: 'pro' },
+        { q: "Hennes känslor verkar helt ologiska.", a: "Hennes känslor är inte ett problem som ska lösas logiskt, utan en signal jag behöver lyssna på..", bundle: 'pro' },
+        { q: "Jag vill bara att hon ska vara \"normal\".", a: "Hennes känslomässiga stormar är baksidan av den glöd och passion jag älskar hos henne..", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Det jag vill betyder något",
+      guideFront: "En tanke som hindrar dig.",
+      guideBack: "Ett sätt att tänka istället.",
+      description: "Hållningen att din egen sanning och dina behov är fundamentala för din förmåga att leda.\nAtt vara \"snäll\" genom att inte ha en åsikt är inte ledarskap; det är att abdikera.",
+      inputs: [
+        { q: "Jag är rädd att min åsikt ska starta ett bråk.", a: "Att tala min sanning är det mest kärleksfulla jag kan göra för relationen på lång sikt..", bundle: 'pro' },
+        { q: "Jag tänker att jag är \"easy-going\" när jag säger \"du får välja\".", a: "Jag är inte lättsam, jag är lat. Att välja är en gåva av struktur..", bundle: 'pro' },
+        { q: "Jag känner mig självisk när jag sätter en gräns.", a: "Lite hälsosam själviskhet gör mig till en stabilare man som hon faktiskt kan lita på..", bundle: 'pro' },
+      ]
+    },
+  ],
+  parenting1: [
+    {
+      name: "Parent with the End in Mind",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Shifting focus from \"How do I get them to obey now?\" to \"Who do I want them to be as an adult?\".\nWhen you focus on the long-term, today's struggles become learning opportunities rather than personal attacks.",
+      inputs: [
+        { q: "I feel like a failure because they are shouting at me.", a: "\"This isn't a failure; it's a 'struggle' where they are learning to handle frustration.\"", bundle: 'pro' },
+        { q: "I just want them to stop crying so I can have some peace.", a: "\"My goal isn't silence; it's helping them learn that their feelings are seen and heard.\"", bundle: 'pro' },
+        { q: "They are being \"difficult\" again.", a: "\"They aren't being difficult; they are *having* a difficult time. I am their guide.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  parenting2: [
+    {
+      name: "Expectations vs. Reactivity",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The \"Mamalakis balance\": holding very high expectations for behavior while maintaining very low emotional reactivity when they fail to meet them.",
+      inputs: [
+        { q: "I feel like they are disrespecting my authority when they don't obey.", a: "\"Their 'No' is just a struggle they are having. My job is to be the calm guide through that struggle.\"", bundle: 'pro' },
+        { q: "I'm tempted to shout to show them I'm serious.", a: "\"Shouting is a reaction, not a response. Calmness is the clearest signal of true authority.\"", bundle: 'pro' },
+        { q: "If I don't give a consequence immediately, they won't learn.", a: "\"The struggle of doing the right thing *is* the learning. A consequence is only one tool among many.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  parenting3: [
+    {
+      name: "Growth through Friction",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Embracing the \"struggle\" as a sign that learning is happening, rather than a sign that something is wrong.",
+      inputs: [
+        { q: "I hate seeing my child so frustrated; it makes me feel like a bad parent.", a: "\"Their frustration is the sound of them growing. My job is to be the guide, not the rescuer.\"", bundle: 'pro' },
+        { q: "It would be so much faster if I just did it for them.", a: "\"Doing it for them saves time today, but it steals their competence tomorrow. I am parenting for the 'End in Mind'.\"", bundle: 'pro' },
+        { q: "They are failing at this task and it’s embarrassing.", a: "\"A safe failure now is a massive win for their future character. I'll stay close while they fail.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  parenting4: [
+    {
+      name: "Authority is Calm",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Realizing that true authority doesn't need to shout to be heard. Calmness is the clearest signal that you are in control of yourself and the situation.",
+      inputs: [
+        { q: "If I don't get angry, they won't think I'm serious.", a: "\"My anger escalates the fight; my calmness holds the line. Calmness is the sound of authority.\"", bundle: 'pro' },
+        { q: "I feel like I'm \"losing\" if I don't win the argument.", a: "\"Parenting isn't a game of win/lose; it's a process of lead/follow. I lead best when I respond rather than react.\"", bundle: 'pro' },
+        { q: "They are being so disrespectful!", a: "\"Their disrespect is a symptom of their struggle. I don't have to defend my dignity; I have to guide their heart.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  parenting5: [
+    {
+      name: "Repair is the Learning",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Realizing that the goal of parenting isn't to never have conflicts, but to use conflicts as the classroom for learning how to return to love.",
+      inputs: [
+        { q: "I feel like a failure when we have a big fight.", a: "\"A fight is just a 'struggle' in progress. The real win is how we repair it afterward.\"", bundle: 'pro' },
+        { q: "If I apologize, they'll think I'm weak and lose respect for me.", a: "\"Owning my mistakes is the ultimate sign of strength and integrity. I am modeling the man/woman I want them to be.\"", bundle: 'pro' },
+        { q: "They need to feel the \"weight\" of their guilt to learn.", a: "\"Shame shuts down the heart; repentance opens it. I want to teach the joy of the return, not the burden of the debt.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxframe1: [
+    {
+      name: "You Belong to You",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The philosophy of Rational Egoism (Rule Zero). You exist for yourself, and anyone who wants something from you must offer value in return.",
+      inputs: [
+        { q: "I feel like a \"jerk\" for putting my gym time first.", a: "\"I am the only person who wipes my own ass every day; I must treat that man well.\"", bundle: 'pro' },
+        { q: "I'm afraid she'll leave if I don't \"keep the peace.\"", a: "\"If her staying requires me to lose my frame, then she doesn't deserve the value I bring.\"", bundle: 'pro' },
+        { q: "I think I need to be \"perfect\" so she won't criticize me.", a: "\"Perfection is a 'Nice Guy' trap. I have the right to be illogical and to make mistakes.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxframe2: [
+    {
+      name: "Authentic Kayfabe",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Understanding that relationships are a \"Seduction Story\" where you are the protagonist; you play a character, but the character is based on your earned value.\nAuthentic men co-write the narrative with women rather than making them \"set pieces.\"",
+      inputs: [
+        { q: "I feel like a \"fraud\" for using these techniques.", a: "\"Acting isn't a fantasy; it's a job. Being a good actor builds my real confidence.\"", bundle: 'pro' },
+        { q: "I want her to love me for \"who I really am\" (Dick Whitman).", a: "\"She wants James Bond or Don Draper. I'll provide the frame she craves.\"", bundle: 'pro' },
+        { q: "I'm afraid she'll see through my \"Frame.\"", a: "\"The stronger the frame, the less people test it. It's not a suit; it's who I am.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Morality is Results",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Shedding external shaming or religious dogmas that produce misery and adopting a morality based on your chosen outcomes.\nAs long as there is not a law against it, and it gets you what you want, it is moral for you.",
+      inputs: [
+        { q: "I feel \"guilty\" for being Machiavellian in my career.", a: "\"Everyone lies and manipulates. I'm choosing to play to win.\"", bundle: 'pro' },
+        { q: "My priest/mom/culture says I should be \"Self-Sacrificing.\"", a: "\"Horses that no longer plow are sent to the glue factory. I'll live for myself.\"", bundle: 'pro' },
+        { q: "I'm worried about being \"Fair\" in an argument.", a: "\"Women don't argue for truth; they argue for status. I'll maintain my status.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxframe3: [
+    {
+      name: "The Assertive Rights",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Internalizing the fact that you are your own judge and don't require her permission to exist or make decisions.",
+      inputs: [
+        { q: "I feel like I have to explain \"why\" I made this choice.", a: "\"I have the right to offer no reasons or excuses for my behavior.\".", bundle: 'pro' },
+        { q: "I'm afraid to make a choice because I might be \"wrong.\"", a: "\"I have the right to make mistakes—and be responsible for them.\".", bundle: 'pro' },
+        { q: "She is pressuring me to solve her emotional drama.", a: "\"I have the right to judge if I am responsible for finding solutions to other people's problems.\".", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxframe4: [
+    {
+      name: "You Are Not a Plow Horse",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Refusing the identity of the \"Dutiful Plow Horse\" who sacrifices his life and frame for a \"warm stable\" that never arrives.",
+      inputs: [
+        { q: "I'll just do more chores and maybe she'll want me again.", a: "\"Fulfilling her checklist won't build attraction. Only frame and value do that.\"", bundle: 'pro' },
+        { q: "If I'm the best husband ever, she'll never leave.", a: "\"Horses that no longer plow are sent to the glue factory. I'll live for myself.\"", bundle: 'pro' },
+        { q: "I should put her happiness before my own.", a: "\"You were not put on this earth to light yourself on fire to keep others warm.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Morality of Results",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Realizing that if the \"morals\" you were taught (Altruism, Self-Sacrifice) led to a life of quiet desperation, they aren't useful morals for you.",
+      inputs: [
+        { q: "I feel like a \"jerk\" for setting this boundary.", a: "\"Is it good for me? Is it bad for me? My results dictate my morality.\"", bundle: 'pro' },
+        { q: "I shouldn't lie or hide things from my wife.", a: "\"Lying implies I require her judgment. I don't. Some things are simply none of her business.\"", bundle: 'pro' },
+        { q: "I need her to understand \"why\" I'm doing this.", a: "\"Being understood is irrelevant. My goal is my vision, not her absolution.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxframe5: [
+    {
+      name: "The Visionary Captain",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Internalizing the fact that leadership is a choice you make, not a grant you receive. You are the protagonist; she is the co-writer, not a set piece.",
+      inputs: [
+        { q: "I'm waiting for her to \"let\" me lead the family.", a: "\"Leadership isn't a grant; it's a choice. I lead myself first and those who want to follow, follow.\"", bundle: 'pro' },
+        { q: "I feel like a \"fraud\" for acting like I have a big vision.", a: "\"Acting is a job. Being a good actor builds my real confidence. I am Jon Hamm, not Dick Whitman.\"", bundle: 'pro' },
+        { q: "I'm afraid that being \"selfish\" makes me a bad husband.", a: "\"Rational egoism is the bedrock of a healthy family. I must treat the man in the mirror well if I expect anyone else to.\"", bundle: 'pro' },
+        { q: "I feel the need to \"keep the peace\" by submitting.", a: "\"Submission to avoid conflict only breeds contempt. I am the Oak; the wind cannot be anything but the wind.\"", bundle: 'pro' },
+        { q: "I'm worried about what others will think of my new vision.", a: "\"Anything outside my frame is amusing, intriguing, or funny. I am my own judge.\"", bundle: 'pro' },
+        { q: "I'm focusing too much on her reaction to my changes.", a: "\"Success is the goal; her investment is the lagging indicator. I stay on mission regardless.\"", bundle: 'pro' },
+        { q: "I feel like I'm \"losing\" when we have a conflict.", a: "\"There is no winning or losing, only the consequences of my actions. I own the consequences.\"", bundle: 'pro' },
+        { q: "I'm tempted to explain my \"why\" so she'll understand me.", a: "\"Being understood is irrelevant. My goal is the destination, not her absolution.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxdread1: [
+    {
+      name: "Luxury is Covert",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Understanding that women hate \"sales\" but love \"marketing\". If you explain the rules of Dread, you kill the magic and signal desperation.",
+      inputs: [
+        { q: "I want to tell her that I'm lifting so she'll find me sexier", a: "\"Telling her is 'sales.' Letting her see the muscles is 'marketing.' Let the hamster find the exit on its own.\"", bundle: 'pro' },
+        { q: "I'm tempted to use an ultimatum to get sex", a: "\"Negotiated desire only leads to obligated compliance. I'm becoming the prize so she _wants_ to invest.\"", bundle: 'pro' },
+        { q: "I feel like a \"fraud\" for not being my old vulnerable self", a: "\"Vulnerability is for true friends, not a wife who relies on your strength. My silence is my power.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxdread2: [
+    {
+      name: "Luxury is Earned",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Realizing that you cannot market a product that doesn't exist. You must do the passive work of self-improvement to become a legitimate luxury brand. You are what you do; do attractive things and the high-status identity will follow.",
+      inputs: [
+        { q: "I'm afraid she'll think I'm being \"manipulative\"", a: "\"Marketing isn't manipulation; it's communicating value. My value is real.\"", bundle: 'pro' },
+        { q: "I want to tell her the \"rules\" so she'll understand why I'm changing", a: "\"Spouting the rules signals weakness and kills the magic. Let my actions speak.\"", bundle: 'pro' },
+        { q: "I feel like a \"jerk\" for putting my mask on first", a: "\"Rational egoism is the bedrock of a healthy family. I must be strong to lead them.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxdread3: [
+    {
+      name: "You Are the Gatekeeper",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Realizing that while she may be the gatekeeper of sex, you are the gatekeeper of the relationship. You decide if she is providing enough value to earn your commitment, attention, and resources.",
+      inputs: [
+        { q: "I feel like a \"failure\" because she won't fuck me", a: "\"My job is to be fuckable; her job is to fuck me. If she fails her job, I find her replacement.\"", bundle: 'pro' },
+        { q: "I should be \"vulnerable\" so she'll understand my needs", a: "\"Vulnerability is for friends. My wife needs my strength, not my complaints. Silence is my power.\"", bundle: 'pro' },
+        { q: "I'm afraid she'll leave if I start setting these hard standards", a: "\"The stay plan and the go plan are the same plan: become my best self. I am safe either way.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxdread4: [
+    {
+      name: "Anger is a Tool",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Breaking the \"Blue Pill\" conditioning that anger is always shameful. Anger is the social signal that a boundary has been crossed.",
+      inputs: [
+        { q: "I'm afraid that getting angry makes me a \"bad person.\"", a: "\"My anger is valuable. It protects my frame and marks my boundaries.\"", bundle: 'pro' },
+        { q: "I think I need to \"explain\" why I'm angry so she'll understand.", a: "\"Explaining is 'sales.' Results are 'marketing.' Make her escalation uncomfortable.\"", bundle: 'pro' },
+        { q: "I'm tempted to hold a grudge after a big fight.", a: "\"Grudges signal that she had the power to hurt me. I have the memory of a goldfish.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxdread5: [
+    {
+      name: "Responsibility vs Blame",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Realizing that while she may be \"to blame\" for her behavior, only you are responsible for the quality of your life and your reactions.",
+      inputs: [
+        { q: "I feel like a \"victim\" because she cheated.", a: "\"I am not a victim. I am the leader of my own life, and I am responsible for what I tolerate.\"", bundle: 'pro' },
+        { q: "I'm waiting for her to \"fix\" the marriage.", a: "\"Relationships are women's work, but my happiness is my own. I fix myself first.\"", bundle: 'pro' },
+        { q: "I'm afraid of the consequences of leading.", a: "\"The price of respect is the willingness to walk away. I am safe regardless of the outcome.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  listeningthroughquestions: [
+    {
+      name: "Inventing Questions",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The pack-wide stance: you never have to invent a question, because their last sentence contains three or four. Looking for a good question is what makes people stop listening — the question you need is already on the table, and finding it only requires attention. Example of the shift — instead of thinking of what to ask next, you listen for the word to pick up.\n\nThe three thoughts that cause the trouble:\n1. \"I need an interesting question\" — you need a question about what they just said.\n2. \"I should think of the next one while they answer\" — that is how you miss it.\n3. \"I've run out of things to ask\" — you have run out of things you thought of in advance.\n\nMindset: listen for the noun, the odd word, or the half-sentence they hurried past. The question is already there.",
+      inputs: [
+        { q: "You are planning your next question while they are talking.", a: "\"That's how I miss the good one. It's in the sentence they're saying now.\"", bundle: 'pro' },
+        { q: "You feel you have run out of questions.", a: "\"I've run out of prepared ones. Their last answer has three in it.\"", bundle: 'pro' },
+        { q: "You want to ask something impressive.", a: "\"'Who was there?' has started more real conversations than anything clever.\"", bundle: 'pro' },
+        { q: "The conversation feels like hard work.", a: "\"Because I'm generating instead of following. Pick a word from what they just said.\"", bundle: 'pro' },
+        { q: "You are worried about the silence while you think.", a: "\"A beat before a question that follows beats a fast one that doesn't.\"", bundle: 'pro' },
+        { q: "You are searching for a new subject.", a: "\"There isn't one needed. They named a place, a person and a month.\"", bundle: 'pro' },
+        { q: "Their answer was short and gave you nothing.", a: "\"It gave me one noun. Ask about the noun.\"", bundle: 'pro' },
+        { q: "You have a good question saved for later.", a: "\"Saved questions arrive out of nowhere. Use what's on the table.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Interviewing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance that separates this from a questionnaire: a series of unconnected good questions is an interview, and people can feel it within two or three. The measure is not how good each question is but whether each one came out of the previous answer. Example of the shift — instead of moving to your next question, you go one step further into the one they just answered.\n\nWhere it goes wrong:\n1. You have a mental list and you are working through it.\n2. You ask a second question without responding to the first answer.\n3. Their answers get shorter and you ask harder questions in response.\n\nMindset: depth, not coverage. Four questions about one thing is a conversation; four questions about four things is a form.",
+      inputs: [
+        { q: "You are working through a mental list of questions.", a: "\"Bin the list. What did they just say that I want to know more about?\"", bundle: 'pro' },
+        { q: "Their answers are getting shorter.", a: "\"That's the interview feeling. Follow the last answer instead of moving on.\"", bundle: 'pro' },
+        { q: "You have learned four facts and followed none of them.", a: "\"Four facts, no conversation. Pick one and go into it.\"", bundle: 'pro' },
+        { q: "You want to cover more ground.", a: "\"Ground isn't the point. One thing, properly, is what they'll remember.\"", bundle: 'pro' },
+        { q: "You asked two questions in a row.", a: "\"Answer the first one myself, or react to it. Two in a row is a form.\"", bundle: 'pro' },
+        { q: "You have a question you want to get to.", a: "\"Get there through their answers, or don't get there.\"", bundle: 'pro' },
+        { q: "They have answered and you are already moving on.", a: "\"React first. One sentence, then the next question.\"", bundle: 'pro' },
+        { q: "The conversation is jumping about and you are steering.", a: "\"Stop steering. Pick their last word and follow it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ordinary Questions",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about which questions to use: \"what happened next\" has drawn out more real accounts than any clever alternative, and its ordinariness is exactly why it is easy to answer. The interesting part of a conversation is their answer, not your question. Example of the shift — instead of searching for an original angle, you ask the obvious thing and listen properly.\n\nWhere the hesitation shows up:\n1. You discard the obvious question because it seems too plain.\n2. You look for an original angle while the moment passes.\n3. You judge your question by how it sounds rather than by how easy it is to answer.\n\nMindset: judge a question by how easy it is to answer. Plain to ask and easy to answer is the best trade in conversation.",
+      inputs: [
+        { q: "You discard a question for being too obvious.", a: "\"Obvious to ask, easy to answer. That trade wins every time.\"", bundle: 'pro' },
+        { q: "You are looking for an original angle.", a: "\"The ordinary question asked now beats the clever one asked never.\"", bundle: 'pro' },
+        { q: "You worry the question is too simple.", a: "\"Simple is the point. The conversation happens in their answer.\"", bundle: 'pro' },
+        { q: "You want to seem interesting rather than interested.", a: "\"Interested is what they'll remember. Interesting is what I'll remember.\"", bundle: 'pro' },
+        { q: "You are stuck between two questions.", a: "\"Ask the easier one. It gets a longer answer anyway.\"", bundle: 'pro' },
+        { q: "You want a question that shows you were paying attention.", a: "\"'What happened next' shows it better than anything clever.\"", bundle: 'pro' },
+        { q: "Your question sounds childish.", a: "\"Simple questions get long answers. That's the trade.\"", bundle: 'pro' },
+        { q: "You are rehearsing the wording.", a: "\"They won't notice the wording. They'll notice being asked.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "One More Question",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about where to stop: most conversations end one question before the interesting part, because the account reached a natural pause and everybody took it. The extra question costs nothing and is very often where the actual story was. Example of the shift — instead of saying \"oh, nice\" and moving on, you ask the next obvious thing.\n\nWhere it shows up:\n1. Something surprising goes past and you let it.\n2. You accept a fact where there was clearly a story.\n3. You change the subject at the first pause.\n\nMindset: one more question, then move. The pause is not the end of the subject — it is the point where most people stop.",
+      inputs: [
+        { q: "Something surprising went past and you let it.", a: "\"Go back to it. Even a minute later, 'you said something earlier about…' works.\"", bundle: 'pro' },
+        { q: "You accepted a fact where there was a story.", a: "\"There's a story behind that. 'And then what?' is all it takes.\"", bundle: 'pro' },
+        { q: "You changed the subject at the first pause.", a: "\"A pause is where people stop, not where the subject ends.\"", bundle: 'pro' },
+        { q: "You feel you have asked enough about this.", a: "\"One more, then move. That's usually the one they wanted to be asked.\"", bundle: 'pro' },
+        { q: "The account has reached a natural stopping point.", a: "\"Ask what's changed since. That closes it properly instead of dropping it.\"", bundle: 'pro' },
+        { q: "The subject seems finished.", a: "\"Ask what's different now. That finishes it properly.\"", bundle: 'pro' },
+        { q: "You are about to move on to your own thing.", a: "\"One more first. The one after the last is usually the good one.\"", bundle: 'pro' },
+        { q: "There was a detail two minutes ago that you skipped.", a: "\"Go back. 'You said something earlier' works at any distance.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "How a Question Lands",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The same question, worded two ways, asks for two different things. \"Why did you do that?\" asks for a defence. \"What made you?\" asks for a reason. Nobody hears the difference while asking, and everybody hears it while answering.\n\nThe tell is in the answer. If they start justifying rather than telling you, the question carried an accusation you did not mean to put in it.\n\nMindset: you are asking for the story, not for the case. Word it so they can hear which.",
+      inputs: [
+        { q: "You asked why and they went defensive.", a: "\"Why asks them to justify. Ask what made them, and they'll explain instead.\"", bundle: 'pro' },
+        { q: "You only asked a question.", a: "\"A question can still carry a verdict. Their answer tells me which one I asked.\"", bundle: 'pro' },
+        { q: "You want to ask whether they considered the other side.", a: "\"That's a lesson with a question mark. Ask how it looked from there instead.\"", bundle: 'pro' },
+        { q: "You are about to ask why they did not just do the obvious thing.", a: "\"Ask whether the obvious route was available. Same information, no accusation.\"", bundle: 'pro' },
+        { q: "They started explaining themselves and you had not asked them to.", a: "\"Then say so. 'Not a criticism' costs three words and takes it back.\"", bundle: 'pro' },
+        { q: "You think the question was perfectly neutral.", a: "\"Neutral from here. They're the ones who heard it.\"", bundle: 'pro' },
+        { q: "You want them to notice what they did.", a: "\"Then I'm not asking, I'm teaching. Pick one.\"", bundle: 'pro' },
+        { q: "You want to ask about a decision they regret.", a: "\"Ask what was going on that week. The decision comes out on its own.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Asking Feels Like Prying",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "The belief is half right, and the half that is right is worth keeping. Some questions are prying. Asking a stranger about their marriage is prying; asking about a feeling in a story you cannot yet picture is prying.\n\nWhat the deck separates out is the conclusion. The judgement about which questions is sound. That the answer is therefore to ask nothing is the part you added, and it leaves people talking to somebody who seems uninterested.\n\nExample of the shift — instead of \"I don't want to pry, so I'll leave it\", you keep the caution and ask the smaller question.\n\nMindset: keep the instinct, drop the silence.",
+      inputs: [
+        { q: "You do not want to pry, so you leave it.", a: "\"The instinct is right. 'Who else was there?' isn't prying, though.\"", bundle: 'pro' },
+        { q: "They might not want to talk about it.", a: "\"They might not. Asking gives them the choice; not asking makes it for them.\"", bundle: 'pro' },
+        { q: "It is not your place to ask.", a: "\"Some of it isn't. The part they just said out loud is.\"", bundle: 'pro' },
+        { q: "You barely know them.", a: "\"True. Then ask about the events, not the feelings. That's the whole adjustment.\"", bundle: 'pro' },
+        { q: "A follow-up would be nosy.", a: "\"Picking up a word they offered is the opposite of nosy. They offered it.\"", bundle: 'pro' },
+        { q: "You would not want to be asked that.", a: "\"Fair. Ask what I would want to be asked, and ask that.\"", bundle: 'pro' },
+        { q: "They changed the subject, so the door is shut.", a: "\"On that one. There were three other things in what they said.\"", bundle: 'pro' },
+        { q: "Silence is more respectful.", a: "\"Sometimes. Mostly it reads as not being interested, which isn't what I mean.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What If They Actually Tell Me",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Behind a lot of unasked questions is the quiet worry that the answer will be big. They say the year was awful, and then what? You have opened something you cannot close and you have nothing to offer.\n\nYou do not have to offer anything. A question is not a promise to fix what it uncovers, and the next question is always available: what happened, what was hardest, what changed since.\n\nMindset: asking is not taking responsibility. Staying in the conversation is the whole job.",
+      inputs: [
+        { q: "You are afraid the answer will be too big.", a: "\"Then I ask the next question. That's all that's required of me.\"", bundle: 'pro' },
+        { q: "If they tell you something serious you will not know what to say.", a: "\"'That sounds like a lot' plus a question has never failed anyone.\"", bundle: 'pro' },
+        { q: "You would be opening something you cannot close.", a: "\"They've been carrying it open. I'm not the one who opened it.\"", bundle: 'pro' },
+        { q: "You are worried about making it heavy.", a: "\"They decide how much to say. The question doesn't set the weight.\"", bundle: 'pro' },
+        { q: "You have no advice to give.", a: "\"Nobody wanted advice. They wanted the second question.\"", bundle: 'pro' },
+        { q: "They might get upset.", a: "\"They might. Being asked is usually why people are glad afterwards.\"", bundle: 'pro' },
+        { q: "You would rather keep it light.", a: "\"For me or for them? Worth knowing which before I choose.\"", bundle: 'pro' },
+        { q: "You asked, and now you want to leave.", a: "\"Stay for one more. Leaving right after the answer is the part that stings.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  showunderstanding2: [
+    {
+      name: "Checking",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The pack-wide stance: understanding is not a private feeling you have while listening, it is a claim that can be tested — and the test costs one sentence. Most people never make it, and spend conversations assuming an accuracy nobody has verified. Example of the shift — instead of nodding because you followed it, you say your version and ask.\n\nThe three thoughts that cause the trouble:\n1. \"I understood, so we're fine\" — they cannot see that you did.\n2. \"Saying it back is patronising\" — it is only patronising if you do not invite the correction.\n3. \"If I check I'll look like I wasn't listening\" — checking is what listening looks like from outside.\n\nMindset: say your version and ask. Being wrong is the useful outcome, and it only arrives if you offer something to correct.",
+      inputs: [
+        { q: "You understood and see no reason to say so.", a: "\"They can't see inside my head. The check is the only evidence there is.\"", bundle: 'pro' },
+        { q: "Saying it back feels patronising.", a: "\"It's patronising without the question. With it, it's an offer.\"", bundle: 'pro' },
+        { q: "You worry a check makes you look inattentive.", a: "\"From outside, checking is exactly what attention looks like.\"", bundle: 'pro' },
+        { q: "You are fairly sure you have it right.", a: "\"Fairly sure is where the misunderstandings live. Four seconds settles it.\"", bundle: 'pro' },
+        { q: "You have been nodding for five minutes.", a: "\"Nodding proves nothing to them. Say the version.\"", bundle: 'pro' },
+        { q: "You said you knew what they meant and moved on.", a: "\"That's a claim with no evidence. Say what I think they mean.\"", bundle: 'pro' },
+        { q: "They look like they have been understood.", a: "\"They look polite. Those are hard to tell apart from here.\"", bundle: 'pro' },
+        { q: "You are worried the check will interrupt them.", a: "\"Four seconds at a natural pause. That isn't an interruption.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Local Listening",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance that separates this pack from the first one: most listening is local — people track the last sentence and forget the rest. Carrying one detail across ten minutes is uncommon enough that it is remembered long after the conversation. Example of the shift — instead of responding only to what was just said, you bring back the thing they mentioned at the start.\n\nWhere it shows up:\n1. You remember the last point and nothing before it.\n2. Two things they said separately are one thing, and neither of you has noticed.\n3. They repeat something because they do not think it landed.\n\nMindset: carry one detail forward. Not everything — one thing, brought back at the right moment, does the whole job.",
+      inputs: [
+        { q: "You can only remember the last thing they said.", a: "\"Pick one detail from earlier and hold it. One is enough.\"", bundle: 'pro' },
+        { q: "They have mentioned the same person twice.", a: "\"Twice is a signal. Ask about them.\"", bundle: 'pro' },
+        { q: "Two of their complaints sound like one problem.", a: "\"Offer the connection as a question. It might be the most useful thing I say.\"", bundle: 'pro' },
+        { q: "They repeated something they said ten minutes ago.", a: "\"That's them checking whether it landed. Show them it did.\"", bundle: 'pro' },
+        { q: "You are focused entirely on what to say next.", a: "\"Then I'm tracking a sentence, not a person.\"", bundle: 'pro' },
+        { q: "You are holding one detail and afraid of losing it.", a: "\"Use it now, then. A detail brought back early still counts.\"", bundle: 'pro' },
+        { q: "Something from last week seems relevant.", a: "\"Bring it. Remembering across days is the strongest version of this.\"", bundle: 'pro' },
+        { q: "You cannot tell whether two things are connected.", a: "\"Ask. A wrong connection is still evidence I'm following.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Anecdote",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about sharing: the useful part of \"I've felt that too\" is the recognition, and the recognition is complete in one sentence. Everything after that sentence is your story, and your story is a different conversation. Example of the shift — instead of telling them about your version, you tell them you have had the feeling and ask about theirs.\n\nWhere it goes wrong:\n1. The detail of your case is genuinely relevant, so you add a second sentence, and then a third.\n2. Matching every point they make with one of your own.\n3. Sharing before you have shown you understood theirs.\n\nMindset: one sentence, then back to them. If your version is longer than theirs, the conversation has changed hands.",
+      inputs: [
+        { q: "Your own case has details that seem relevant.", a: "\"Relevant to me. One sentence is the whole gift — the rest is my turn.\"", bundle: 'pro' },
+        { q: "You have matched three of their points with your own.", a: "\"That's not meeting them, that's taking turns. Ask about theirs.\"", bundle: 'pro' },
+        { q: "You want to share before you have understood theirs.", a: "\"Understand first. A disclosure before that is a guess about what they need.\"", bundle: 'pro' },
+        { q: "You are about to say \"that's nothing, one time I…\"", a: "\"That sentence shrinks theirs. Say I know the feeling instead.\"", bundle: 'pro' },
+        { q: "You shared and the conversation stalled.", a: "\"It stalled because I didn't hand it back. One question fixes it.\"", bundle: 'pro' },
+        { q: "Your version is genuinely more interesting.", a: "\"Then save it. Interesting isn't what this moment is for.\"", bundle: 'pro' },
+        { q: "You want to say how you got through the same thing.", a: "\"One sentence, then a question. The method can come later if they ask.\"", bundle: 'pro' },
+        { q: "You started sharing and now you are two minutes in.", a: "\"Stop and hand it back. Two minutes is already over budget.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Value Underneath",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind the deepest move here: people explaining a grievance are usually explaining a value — fairness, being consulted, honesty, not letting someone down — and almost nobody says the value out loud. Naming it says you understood the part underneath. Example of the shift — instead of agreeing that the situation was annoying, you say what it was about it that would matter to you too.\n\nWhere it shows up:\n1. You sympathise with the events and miss what they were really telling you.\n2. You agree with a value you do not hold because it is the warm thing to do.\n3. You think agreeing with the value commits you to agreeing with the conclusion.\n\nMindset: name what mattered to them, honestly. You can agree with the value and still doubt the conclusion, and saying both is worth more than agreeing with everything.",
+      inputs: [
+        { q: "You sympathised with the events and it landed thinly.", a: "\"What were they actually telling me? Usually it's a value, not an incident.\"", bundle: 'pro' },
+        { q: "You are about to agree with something you do not believe.", a: "\"There's a true version of agreement here. Find that one instead.\"", bundle: 'pro' },
+        { q: "Agreeing feels like committing to their plan.", a: "\"The value and the conclusion are separate. I can hold one and question the other.\"", bundle: 'pro' },
+        { q: "They have not said what mattered to them.", a: "\"Name it for them, as a question. 'Is this about being trusted?'\"", bundle: 'pro' },
+        { q: "You want to be supportive without being dishonest.", a: "\"'I'd have minded just as much' is true and it's enough.\"", bundle: 'pro' },
+        { q: "You agree with the feeling and not with the plan.", a: "\"Say the first out loud and leave the second alone for now.\"", bundle: 'pro' },
+        { q: "You cannot see what value is underneath.", a: "\"Ask. 'Is this about being asked first?' is usually close.\"", bundle: 'pro' },
+        { q: "Agreeing would be easier than being accurate.", a: "\"Easier now. Accurate is what they'll remember was true.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Getting It Wrong Out Loud",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "The belief is half right. A version said back and corrected does reveal that you missed something, and the correction is faintly uncomfortable. That part is true.\n\nWhat the deck separates out is the comparison. The alternative is not looking attentive — it is carrying on with a wrong version nobody has told you is wrong, and answering that one for the rest of the conversation.\n\nExample of the shift — instead of \"if I get it wrong I'll look like I wasn't listening\", you keep the small discomfort and drop the idea that silence avoids it.\n\nMindset: keep the honesty, drop the comparison.",
+      inputs: [
+        { q: "If you say it back and it is wrong, you will look inattentive.", a: "\"Mildly, for four seconds. Answering the wrong version looks worse, for longer.\"", bundle: 'pro' },
+        { q: "You only half followed that and would rather not show it.", a: "\"Half is what I've got. Offering half is how I get the other half.\"", bundle: 'pro' },
+        { q: "A correction is embarrassing.", a: "\"Slightly. It's also the fastest information I'm going to get.\"", bundle: 'pro' },
+        { q: "You got it wrong once already in this conversation.", a: "\"Which means I'm still trying. That reads better than going quiet.\"", bundle: 'pro' },
+        { q: "They will think you were not paying attention.", a: "\"Checking is what attention looks like from outside. Nodding isn't.\"", bundle: 'pro' },
+        { q: "It would be smoother to just agree.", a: "\"Smoother now. Wrong for the rest of it.\"", bundle: 'pro' },
+        { q: "You are fairly confident you have it.", a: "\"Fairly is where the misunderstandings live. Four seconds settles it.\"", bundle: 'pro' },
+        { q: "Saying it back feels like a test you might fail.", a: "\"It's a draft, not an exam. Their correction is the point of it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Only Catching Half",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "A long account has ended and you are holding two of its five parts. The instinct is to say nothing, because a partial summary feels worse than none at all.\n\nIt is not. Half a summary, offered, gets the other half supplied — and the parts you did keep are usually the ones that mattered, because those are the ones that landed.\n\nMindset: you are not reciting. You are showing what got through, so they can add what did not.",
+      inputs: [
+        { q: "You only caught half of that.", a: "\"Then say the half. They'll fill in the rest without being asked.\"", bundle: 'pro' },
+        { q: "You cannot remember the order it happened in.", a: "\"Offer the order I think it was. A wrong order is a question in disguise.\"", bundle: 'pro' },
+        { q: "There were five things and you have two.", a: "\"Two is a summary. Add 'what have I missed?' and it's a complete one.\"", bundle: 'pro' },
+        { q: "You stopped listening somewhere in the middle.", a: "\"Say where. 'I lost you around the meeting' is honest, and they'll restart there.\"", bundle: 'pro' },
+        { q: "A partial summary would be worse than nothing.", a: "\"Nothing tells them it didn't land at all. Partial tells them most of it did.\"", bundle: 'pro' },
+        { q: "You were distracted and feel bad about it.", a: "\"Feeling bad doesn't recover the middle. Asking does.\"", bundle: 'pro' },
+        { q: "They spoke for five minutes and you have one sentence.", a: "\"One accurate sentence is often the whole of it.\"", bundle: 'pro' },
+        { q: "You want to wait until you have the full picture.", a: "\"The full picture arrives through the draft. That's the order it comes in.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  setupquestion: [
+    {
+      name: "Being Interesting",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The pack-wide stance: asking first is the cheapest way into a conversation, because it puts no pressure on you to be interesting. Curiosity is available even on a bad day.\n\nThe three thoughts that cause the trouble:\n1. \"I need something worth saying\" — you need a question, and you already have one.\n2. \"Asking is intrusive\" — an ordinary question about the room is not an interrogation.\n3. \"They'll think I'm prying\" — people are far more often glad to be asked than offended.\n\nMindset: you do not have to be interesting. You have to be interested — and then say your own bit afterwards.",
+      inputs: [
+        { q: "I need something clever before I can speak.", a: "\"I don't need a line. I need a question, and I've already got one.\"", bundle: 'pro' },
+        { q: "A question would feel like prying.", a: "\"'What brought you here' is not prying. It's the easiest thing in the room to answer.\"", bundle: 'pro' },
+        { q: "Nothing I'd say seems worth saying.", a: "\"I don't have to say anything yet. I just have to ask.\"", bundle: 'pro' },
+        { q: "It's a flat day and I've got nothing to offer.", a: "\"Curiosity works on a flat day. Being interesting does not, and is not needed.\"", bundle: 'pro' },
+        { q: "I'm waiting for the right moment to say something good.", a: "\"There isn't one. There's a question about the room, and it works now.\"", bundle: 'pro' },
+        { q: "Asking first means they set the subject.", a: "\"They set the first subject. I set the second, with my own answer.\"", bundle: 'pro' },
+        { q: "I asked and they gave me almost nothing.", a: "\"Then answer it myself anyway. My answer is the second question.\"", bundle: 'pro' },
+        { q: "It feels like I'm interviewing them.", a: "\"An interview is questions with no answers. Give mine and it stops being one.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Questions Alone Make an Interview",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance that separates this from an interview: the question was never only for them. You asked because you wanted to talk about it, so your own answer is part of the move rather than an optional extra. Example of the shift — instead of moving to the next question, you say your own answer to the one you just asked.\n\nWhere it goes wrong:\n1. You ask a second question before you have answered the first.\n2. You answer with \"yeah, same\" and hand it straight back.\n3. You are so relieved the attention is on them that you keep it there.\n\nMindset: a question you never answer yourself is an interview. Give your version, at roughly the size of theirs.",
+      inputs: [
+        { q: "I've asked four questions and answered none.", a: "\"Time to give something. My answer to the last one is worth saying out loud.\"", bundle: 'pro' },
+        { q: "Keeping the attention on them feels safer.", a: "\"Keeping it on them feels safe and leaves us strangers. One honest sentence changes that.\"", bundle: 'pro' },
+        { q: "I'm about to reply with 'yeah, same'.", a: "\"'Same' is not an answer. What is actually true for me here?\"", bundle: 'pro' },
+        { q: "Their answer was long and mine would be short.", a: "\"Roughly their size. Much shorter reads as a brush-off, much longer takes the floor.\"", bundle: 'pro' },
+        { q: "I asked because I wanted to talk about it, and then didn't.", a: "\"That was the whole reason I asked. Say it.\"", bundle: 'pro' },
+        { q: "Talking about myself right after feels like hijacking it.", a: "\"It's the other half of what I asked. Without it they've been interviewed.\"", bundle: 'pro' },
+        { q: "My answer is duller than theirs.", a: "\"Duller and true is what makes it an exchange. They aren't grading it.\"", bundle: 'pro' },
+        { q: "They didn't ask me back.", a: "\"Most people don't. Say it anyway — that's what the pattern is for.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ordinary Questions",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about which questions are good enough: the ordinary ones work. \"What brings you here\" has opened more conversations than any clever alternative, and its ordinariness is exactly why it is easy to answer.\n\nWhere the hesitation shows up:\n1. You reject the obvious question because everyone asks it.\n2. You look for an original angle and the moment passes.\n3. You judge your question by how it sounds rather than by how easy it is to answer.\n\nMindset: judge a question by how easy it is to answer, not by how it sounds. The interesting part is their answer, and what you do with it.",
+      inputs: [
+        { q: "The obvious question is too boring to ask.", a: "\"Boring to ask, easy to answer. That trade is worth making every time.\"", bundle: 'pro' },
+        { q: "I'm still looking for an original angle and the moment is going.", a: "\"The ordinary question asked now beats the clever one asked never.\"", bundle: 'pro' },
+        { q: "The question is too simple.", a: "\"Simple is the point. The conversation happens in their answer, not in my question.\"", bundle: 'pro' },
+        { q: "The question should show I'm perceptive.", a: "\"A question that shows off is a question about me. Ask the plain one.\"", bundle: 'pro' },
+        { q: "They've been asked this a hundred times.", a: "\"They have, and they can answer it without thinking. That is exactly why it works.\"", bundle: 'pro' },
+        { q: "The obvious question is what everyone asks them.", a: "\"And everyone stops at the answer. Asking the second one is where I differ.\"", bundle: 'pro' },
+        { q: "I want the question to be worth their time.", a: "\"The one that gets a real answer is worth their time. That's usually the plain one.\"", bundle: 'pro' },
+        { q: "I've thought of a much better angle but the moment's gone.", a: "\"The plain one was available four seconds ago. Use it next time and think later.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Running Out",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about running out: there are five types and you always have all of them, so being stuck is nearly always a failure to look. Something is in front of you, you are both here for a reason, the room has a mood, they are doing something with their days, and they came from somewhere.\n\nWhere it goes wrong:\n1. You decide the situation is too boring to ask anything about.\n2. You use the same type every time and it stops fitting.\n3. You go quiet after one exchange instead of asking the obvious second thing.\n\nMindset: five doors, at least one always open. If nothing occurs, run the list.",
+      inputs: [
+        { q: "There's nothing here to ask about.", a: "\"Five types. One of them fits this room — I just haven't looked yet.\"", bundle: 'pro' },
+        { q: "I keep reaching for the same type and it isn't landing.", a: "\"Purpose is my default. The room is asking for Status.\"", bundle: 'pro' },
+        { q: "The conversation stopped after one good exchange.", a: "\"That was one door. There are four more, and one is inside what they just said.\"", bundle: 'pro' },
+        { q: "This setting is too dull to open anything.", a: "\"Dull settings are the easiest — everyone in a dull room has noticed it.\"", bundle: 'pro' },
+        { q: "I've used up my questions with this person.", a: "\"I've used up the ones I planned. The ones in their answers are unlimited.\"", bundle: 'pro' },
+        { q: "We've covered work, and that was my one topic.", a: "\"There are four other kinds. What they're here for, how they are, what happened before.\"", bundle: 'pro' },
+        { q: "This person and I have nothing left to ask each other.", a: "\"I've used one type on repeat. Switch the type, not the person.\"", bundle: 'pro' },
+        { q: "The room is empty and there's nothing in it.", a: "\"Then ask about outside it. Where they came from is always available.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "How Are You Is Not a Question",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"How are you\" has been worn down into a greeting, so asking it as an actual question feels either odd or heavy — as though you were demanding a real answer from someone who only nodded at you.\n\nBut the words are not the problem; the delivery is. Asked while walking past, it is a greeting. Asked while stopping, with a second of silence after it, it is a question, and most people can tell the difference instantly. It is also the only opener that works when nothing has happened and there is nothing in the room to comment on.\n\nMindset: stop, ask it, and leave the pause. The pause is what turns it back into a question.",
+      inputs: [
+        { q: "\"How are you\" is just something people say.", a: "\"It is, until I stop walking. Then it's a question, and they hear that.\"", bundle: 'pro' },
+        { q: "They'll only say 'fine' anyway.", a: "\"Wait two seconds after the fine. That's where the real answer lives.\"", bundle: 'pro' },
+        { q: "Asking properly is too intense for a corridor.", a: "\"Not with the ordinary words. It's the wording that would be intense, not the asking.\"", bundle: 'pro' },
+        { q: "I don't want to open something I can't close.", a: "\"I can close it. 'Glad it's not just me — right, back to it.'\"", bundle: 'pro' },
+        { q: "It's a lazy question.", a: "\"It's the one that works on a day when nothing else does. That isn't laziness.\"", bundle: 'pro' },
+        { q: "I asked and they gave me the whole thing.", a: "\"Then it worked. Listen, say my own version, and let it end naturally.\"", bundle: 'pro' },
+        { q: "They asked me first and I said fine automatically.", a: "\"Go back. 'Actually, since you asked —' is allowed thirty seconds later.\"", bundle: 'pro' },
+        { q: "I should ask something more interesting.", a: "\"More interesting to me. Ask this one and answer it myself, and it's plenty.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  givingcounterexamples: [
+    {
+      name: "The Word \"Always\"",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The pack-wide stance: the target is the word \"always\", not the sentence. You are making the claim the right size, not knocking it over. Example of the shift — instead of \"that's not true\", you aim at \"that's true most of the time\".\n\nThe three thoughts that cause the trouble:\n1. \"If I have an exception, they're wrong\" — they are usually right, with an edge.\n2. \"One of us has to be correct\" — the useful outcome is a narrower claim you both hold.\n3. \"I need a strong example\" — you need a true one, and small is fine.\n\nMindset: you are taking the word always out. When it is gone, you are finished.",
+      inputs: [
+        { q: "You feel you have to prove the whole claim wrong.", a: "\"I don't. I just want the word 'always' out of it, and then I'm done.\"", bundle: 'pro' },
+        { q: "You are hunting for a knockout example.", a: "\"A small true one takes 'always' out just as well as a big one.\"", bundle: 'pro' },
+        { q: "They have conceded 'usually' and you want to keep going.", a: "\"That was the whole goal. Anything more is me arguing for fun.\"", bundle: 'pro' },
+        { q: "You realise they were mostly right.", a: "\"Mostly right is the normal outcome. My job was the edge, not the middle.\"", bundle: 'pro' },
+        { q: "You want them to admit the claim was wrong.", a: "\"It wasn't wrong. It was too wide, and now it isn't. That's the win.\"", bundle: 'pro' },
+        { q: "You have a second example lined up.", a: "\"The word is already out. A second one turns a correction into a case.\"", bundle: 'pro' },
+        { q: "They said 'fair enough' and you kept talking.", a: "\"'Fair enough' is the finish line. Anything after it is for me, not for them.\"", bundle: 'pro' },
+        { q: "The claim is still mostly standing.", a: "\"It was mostly right. Mostly standing is the correct outcome.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Widening",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about what a counter-example is for: it makes the discussion bigger, not the other person smaller. Used to score a point it produces defensiveness and nothing else; used to widen, it usually produces agreement within a sentence or two. Example of the shift — instead of hunting for the case that will end the argument, you offer the case that adds a room to it.\n\nWhere it goes wrong:\n1. You save your best example for the moment it will land hardest.\n2. You feel a small pleasure when they cannot answer.\n3. You keep going after they have already moved.\n\nMindset: the counter-example is a door, not a hit. If nobody has learned anything, it was an argument in disguise.",
+      inputs: [
+        { q: "You are enjoying having the better example.", a: "\"That feeling is the sign I've stopped discussing and started competing.\"", bundle: 'pro' },
+        { q: "You are saving a strong case for maximum effect.", a: "\"If I'm timing it for impact, it's not an example any more. It's a move.\"", bundle: 'pro' },
+        { q: "They have already softened their claim and you have more to say.", a: "\"They moved. My job here is finished.\"", bundle: 'pro' },
+        { q: "You are choosing the example that will be hardest to answer.", a: "\"Hardest to answer is not the same as most useful. Which one actually shows the edge?\"", bundle: 'pro' },
+        { q: "Nobody has learned anything but you are ahead.", a: "\"Then it was an argument in disguise. Widen it or drop it.\"", bundle: 'pro' },
+        { q: "There are other people listening.", a: "\"An audience makes a door look like a hit. Say it smaller, not bigger.\"", bundle: 'pro' },
+        { q: "They got defensive and you pressed on.", a: "\"Defensive means it landed as an attack. Back up and offer the smaller claim.\"", bundle: 'pro' },
+        { q: "You want them to say you were right.", a: "\"That's the win talking. The result is a better picture, not a verdict.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Order",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about order: the sentence before the exception decides how the exception is heard. Six words of agreement turn a contradiction into a contribution, and they cost nothing because the general case usually is right. Example of the shift — instead of opening with \"actually\", you open with \"usually, yes\".\n\nWhere the hesitation shows up:\n1. You feel that conceding weakens your point — it is what makes it hearable.\n2. You want to get the exception out before you lose your nerve.\n3. You think agreement will be read as backing down.\n\nMindset: \"usually, yes — though…\" is the whole technique. Everything else in this pack is what goes after the dash.",
+      inputs: [
+        { q: "You are about to open with 'actually'.", a: "\"Swap it for 'usually, yes'. Same sentence after it, completely different conversation.\"", bundle: 'pro' },
+        { q: "You worry that agreeing first weakens the point.", a: "\"It doesn't weaken it. It's what gets it listened to.\"", bundle: 'pro' },
+        { q: "You want to say the exception before you lose your nerve.", a: "\"Six words of agreement first. The exception will still be there.\"", bundle: 'pro' },
+        { q: "You feel the concession is dishonest because you disagree.", a: "\"I don't disagree with most of it. Saying so is accurate, not diplomatic.\"", bundle: 'pro' },
+        { q: "You have opened with the exception and it went badly.", a: "\"Same content, wrong order. Concede, then except — it's the whole technique.\"", bundle: 'pro' },
+        { q: "You conceded and they took it as full agreement.", a: "\"Then the 'though' came too late or too quietly. Same sentence, no pause.\"", bundle: 'pro' },
+        { q: "The general claim is barely true at all.", a: "\"Then concede the small true part. There is almost always one.\"", bundle: 'pro' },
+        { q: "Conceding first slows the whole thing down.", a: "\"By four words. It saves the ten minutes of defending that would follow.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "I Don't Have One",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about honesty: not having an example is an ordinary situation with an ordinary sentence attached, and inventing one is the only failure in this pack that cannot be walked back. Example of the shift — instead of reaching for a figure that feels right, you say you have not got one and ask instead.\n\nWhere it goes wrong:\n1. A number that feels about right becomes a number you stated.\n2. \"I read somewhere\" stands in for a source you cannot name.\n3. A story you half remember gets told as something you saw.\n\nMindset: \"I don't have a case to point at\" costs you a sentence. An invented one costs you everything else you said.",
+      inputs: [
+        { q: "You are about to quote a statistic you cannot source.", a: "\"'I think it's around a third, but don't quote me' is allowed. Inventing it is not.\"", bundle: 'pro' },
+        { q: "You half remember a story that would prove your point.", a: "\"Half a memory is not evidence. I'll say I'm unsure or I'll say nothing.\"", bundle: 'pro' },
+        { q: "You have no example and feel you need one.", a: "\"Then I ask. 'Can you think of anyone it hasn't been true for?' does the same job.\"", bundle: 'pro' },
+        { q: "The invented version would be so much better than the real one.", a: "\"Better and unusable. One check and everything else I said goes with it.\"", bundle: 'pro' },
+        { q: "You want to round a figure into something more convincing.", a: "\"Hedge it out loud instead. 'About a third, don't quote me' is honest and still useful.\"", bundle: 'pro' },
+        { q: "Saying you have nothing ends your side of it.", a: "\"It ends the claim, not the point. 'I can't back that up' is still a position.\"", bundle: 'pro' },
+        { q: "You are sure you read it somewhere.", a: "\"Somewhere is not a source. Say you think you read it, and say that you are unsure.\"", bundle: 'pro' },
+        { q: "They will assume you are conceding entirely.", a: "\"Then say the rest out loud. 'No example, but I still doubt the always.'\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Made-Up Case Doesn't Count",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Inventing the case a claim cannot handle feels like cheating. Nothing happened, nobody was there, and offering it seems weaker than a real story — so people who cannot remember a real one say nothing at all.\n\nBut a hypothetical is not evidence and was never meant to be. It is a test of the claim's own shape: if \"people always come round eventually\" cannot survive the case you just described, the word doing the damage is *always*, and you have found it without needing anything to have happened.\n\nMindset: you are testing the rule, not producing a witness. Say it as the test it is.",
+      inputs: [
+        { q: "I'd be making it up, which isn't fair.", a: "\"I'm not claiming it happened. 'Say someone did X — what then?' is a question, not a claim.\"", bundle: 'pro' },
+        { q: "They'll just say that's not realistic.", a: "\"Then ask which part. Either it's realistic and the rule bends, or I learn where the line is.\"", bundle: 'pro' },
+        { q: "A real example would be much stronger.", a: "\"Usually. But an invented one I can shape beats a real one I half remember.\"", bundle: 'pro' },
+        { q: "It feels like a debating trick.", a: "\"Tricks hide what they're doing. Say 'I'm testing it, not arguing' and it's transparent.\"", bundle: 'pro' },
+        { q: "I can't think of a case that would break it.", a: "\"Then the claim might be sound. That's a real finding, not a failure.\"", bundle: 'pro' },
+        { q: "They'll accuse me of moving the goalposts.", a: "\"Not if I keep it inside their own claim. Use their words and change one thing.\"", bundle: 'pro' },
+        { q: "Hypotheticals make discussions abstract.", a: "\"Make it concrete then. A name, a place, a Tuesday — invented but specific.\"", bundle: 'pro' },
+        { q: "If it never happened it proves nothing.", a: "\"It isn't proving. It's asking whether the rule survives the ordinary case.\"", bundle: 'pro' },
+      ]
+    },
+      {
+      name: "Narrowing Isn't Backing Down",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Offering a smaller version of their claim looks like a retreat and is the opposite. You are not withdrawing the exception \u2014 you are putting it inside a sentence they can say yes to. Example of the shift \u2014 instead of defending your case against \"that's just one person\", you offer \"does 'usually' work instead of 'always'?\".\n\nWhere the resistance shows up:\n1. A version they can accept feels like letting them keep the point.\n2. You want the claim admitted wrong, not adjusted.\n3. Defending your example feels braver than narrowing theirs.\n\nMindset: the narrowed sentence is the one you both believe.",
+      inputs: [
+        { q: "Offering a smaller version feels like giving in.", a: "\"I'm not dropping the exception. I'm putting it somewhere they can agree with it.\"", bundle: 'pro' },
+        { q: "You want them to admit the claim was wrong.", a: "\"It was too wide. 'Usually' fixes that, and they can say it without losing face.\"", bundle: 'pro' },
+        { q: "You are defending your example against 'that's just one person'.", a: "\"It is just one. Arguing that costs me the point I actually want.\"", bundle: 'pro' },
+        { q: "Narrowing feels like doing their work for them.", a: "\"It is their work. That's why they'll accept it.\"", bundle: 'pro' },
+        { q: "They accepted 'usually' and it felt anticlimactic.", a: "\"That was the sentence I was after. Quiet endings are the good ones.\"", bundle: 'pro' },
+        { q: "You would rather keep going than settle for 'most people'.", a: "\"'Most people' is what I think too. There's nothing left to want.\"", bundle: 'pro' },
+        { q: "The narrowed claim still sounds mostly like theirs.", a: "\"It should. They were mostly right \u2014 I only ever wanted the edges out.\"", bundle: 'pro' },
+        { q: "You are worried a smaller claim looks like a weaker point.", a: "\"A claim I can defend beats one I can't. Small and true is the strong version.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Asking Doesn't Mean You Have Nothing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Asking them to find the exception looks like an admission that you cannot, and it is usually the strongest move on the table: a person who tests their own claim from the inside is far harder to dismiss. Example of the shift \u2014 instead of staying quiet because you have no case, you ask \"can you think of anyone it hasn't been true for?\".\n\nWhere it goes wrong:\n1. You think a question hands them control.\n2. You say nothing rather than admit you have no example.\n3. You ask it as a trap, and they hear the trap.\n\nMindset: you are both looking at the same claim. Ask like you want the answer.",
+      inputs: [
+        { q: "You have no example and feel you have to stay quiet.", a: "\"Then ask. 'Can you think of anyone it hasn't been true for?' does the same job.\"", bundle: 'pro' },
+        { q: "Asking feels like admitting you cannot argue.", a: "\"It admits I haven't got a case. It doesn't admit they're right.\"", bundle: 'pro' },
+        { q: "You are asking it to catch them out.", a: "\"They'll hear that. Ask it like I want the answer \u2014 and I do.\"", bundle: 'pro' },
+        { q: "A question feels like handing them the floor.", a: "\"They already have the claim. The question makes them look at it.\"", bundle: 'pro' },
+        { q: "They know far more about it than you do.", a: "\"That's the reason to ask, not the reason not to. They'll find the edges faster.\"", bundle: 'pro' },
+        { q: "You want to know whether it is a view or a wall.", a: "\"'What would change your mind?' answers that in one sentence.\"", bundle: 'pro' },
+        { q: "Asking them to argue the other side feels like a game.", a: "\"It's the fastest way to hear what they actually think. Say why I'm asking.\"", bundle: 'pro' },
+        { q: "They answered with an exception and you were about to press on.", a: "\"They just did it themselves. That's better than anything I had.\"", bundle: 'pro' },
+      ]
+    },
+],
+  discussing: [
+    {
+      name: "Winning",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The pack-wide stance: a discussion is not a contest with a result. The aim is that both people understand the question better than they did, which is compatible with disagreeing at the end.\n\nThe three thoughts that cause the trouble:\n1. \"One of us has to be right\" — you can both be, about different parts.\n2. \"If I concede I lose\" — conceding accurately makes the rest of you believable.\n3. \"It ended without agreement, so it failed\" — most good ones do.\n\nMindset: aim for two people who understand it better. Agreement is optional and often unavailable.",
+      inputs: [
+        { q: "You are looking for the argument they cannot answer.", a: "\"That's a competition move. What's the bit I haven't understood yet?\"", bundle: 'pro' },
+        { q: "The discussion ended without agreement and you feel it failed.", a: "\"We both understand it better than an hour ago. That was the point.\"", bundle: 'pro' },
+        { q: "You feel a small pleasure when they cannot reply.", a: "\"That feeling means I've stopped discussing. Back to the actual question.\"", bundle: 'pro' },
+        { q: "You want the last word.", a: "\"The last word is worth nothing tomorrow. What do I actually want them to leave with?\"", bundle: 'pro' },
+        { q: "You are keeping score.", a: "\"There isn't a score. There's what we each think, and whether it's moved.\"", bundle: 'pro' },
+        { q: "Other people are listening and you want to look right.", a: "\"They're watching how I handle it, not who lands the last point.\"", bundle: 'pro' },
+        { q: "You are rehearsing the story you will tell about this later.", a: "\"If I'm already writing the version where I won, I've stopped listening.\"", bundle: 'pro' },
+        { q: "They conceded a point and you pressed the advantage.", a: "\"That's the moment to slow down, not speed up. They just did the hard thing.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Opinions as Facts",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind every Me-Focus move: an opinion stated as a fact invites a fight about the fact. \"I think\" is not a hedge — it is the accurate description of what you are saying, and it makes their disagreement cheap rather than confrontational.\n\nWhere it goes wrong:\n1. You dress a preference up as a principle to make it harder to argue with.\n2. You say \"people think\" when you mean \"I think\".\n3. You avoid the opinion entirely and then resent not being heard.\n\nMindset: own it. It is more honest, and harder to argue with — you are the authority on what you think.",
+      inputs: [
+        { q: "You are about to present your view as an obvious fact.", a: "\"It's my view. Saying so makes it easier for them to say theirs.\"", bundle: 'pro' },
+        { q: "You are hiding behind 'people say'.", a: "\"Whose view is this actually? If it's mine, say mine.\"", bundle: 'pro' },
+        { q: "You have not stated a position and feel unheard.", a: "\"Nobody can respond to something I haven't said. Put it on the table.\"", bundle: 'pro' },
+        { q: "You are dressing a preference up as a principle.", a: "\"It's a preference and that's allowed. Preferences are real reasons.\"", bundle: 'pro' },
+        { q: "You worry your view is not well enough thought through.", a: "\"Half-formed and honest is fine. 'I lean this way, not strongly' is a real position.\"", bundle: 'pro' },
+        { q: "You are quoting research you half remember.", a: "\"Say what I actually know. 'I read something like that' is honest and still useful.\"", bundle: 'pro' },
+        { q: "Saying 'I think' makes it sound weak.", a: "\"It makes it accurate. Weak is a claim I can't back when someone pushes.\"", bundle: 'pro' },
+        { q: "You are speaking for a group who is not in the room.", a: "\"Say mine and let them speak for themselves. Borrowed numbers aren't strength.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Queueing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind every You-Focus move: while someone is talking you are either taking it in or you are queueing, and the two feel identical from the inside. The qualification you needed usually arrives in their last sentence — the one you talk over.\n\nWhere it shows up:\n1. You have your answer ready before they have finished the point.\n2. You interrupt and the interrupted point comes back twice as long.\n3. You cannot summarise what they said, only whether you agreed.\n\nMindset: whatever you were going to say will still be there in eight seconds, and it will be better for the wait.",
+      inputs: [
+        { q: "Your reply is ready and they are still talking.", a: "\"It'll keep. The last quarter is where the interesting part usually is.\"", bundle: 'pro' },
+        { q: "You cannot summarise what they just said.", a: "\"Then I wasn't listening, I was waiting. Ask them to say the last bit again.\"", bundle: 'pro' },
+        { q: "You interrupted and the point came back at twice the length.", a: "\"That's what interrupting costs. Cheaper to wait.\"", bundle: 'pro' },
+        { q: "A pause tempts you to jump in.", a: "\"A pause is thinking, not an invitation.\"", bundle: 'pro' },
+        { q: "You are certain you disagree before they have finished.", a: "\"Certain before the end is a sign I'm arguing with a prediction.\"", bundle: 'pro' },
+        { q: "They are repeating themselves and you have got it.", a: "\"Repeating usually means they don't think it landed. Say it back and they'll stop.\"", bundle: 'pro' },
+        { q: "You are nodding along while thinking about something else.", a: "\"Nodding isn't listening. Come back to the sentence they're on.\"", bundle: 'pro' },
+        { q: "They said something wrong early and you stopped following.", a: "\"I've been arguing with sentence two for a minute. What's happened since?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Changing Your Mind",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about outcomes: being persuaded is not a defeat, it is the discussion doing what discussions are for. Saying so out loud buys something considerable — people are far more willing to discuss anything with someone who has been seen to move.\n\nWhere the resistance shows up:\n1. You keep arguing a position you have already left.\n2. You concede silently and let them think they lost.\n3. You look for a smaller point to be right about instead.\n\nMindset: say it plainly, and name what did it. \"The night shift bit changed my mind\" is an answer and a compliment at once.",
+      inputs: [
+        { q: "You are defending a position you no longer hold.", a: "\"Say it out loud. Arguing for something I don't believe wastes both of us.\"", bundle: 'pro' },
+        { q: "Conceding feels like losing in front of other people.", a: "\"It reads as confidence, not defeat. People trust someone who can move.\"", bundle: 'pro' },
+        { q: "You want to concede quietly and move on.", a: "\"Name the part that did it. That's the useful half of conceding.\"", bundle: 'pro' },
+        { q: "Only some of their case moved you.", a: "\"Then say which. Half a concession, accurately placed, beats a vague one.\"", bundle: 'pro' },
+        { q: "You changed your mind an hour after the discussion.", a: "\"Tell them tomorrow. Late is fine — silent isn't.\"", bundle: 'pro' },
+        { q: "You moved but you do not want them to get the credit.", a: "\"Naming what moved me costs nothing and makes them listen next time.\"", bundle: 'pro' },
+        { q: "You have argued this position publicly for years.", a: "\"Then moving is worth more, not less. Long-held is not the same as right.\"", bundle: 'pro' },
+        { q: "They were rude about it and you do not want to reward that.", a: "\"The point can be right and the delivery wrong. Take the point, mention the delivery separately.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Saying It Back Is Conceding",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Putting someone's position into your own words feels like handing it strength — as though repeating it out loud makes it more true, or signals that you are half persuaded before you have said anything of your own.\n\nIt does the reverse. Their view stated accurately by you is their view with nowhere left to hide, and the disagreement that follows lands on the real thing rather than a version of it. It also removes the escape route where they say you have misunderstood them.\n\nMindset: state it accurately and the disagreement gets sharper, not softer.",
+      inputs: [
+        { q: "Repeating their point makes it sound stronger.", a: "\"It makes it clearer. Clear is what I need before I can disagree with it.\"", bundle: 'pro' },
+        { q: "If I say it back they'll think I agree.", a: "\"Then say the next sentence. 'That's your view, and here's where I part from it.'\"", bundle: 'pro' },
+        { q: "I've understood them, so saying it back is a waste of time.", a: "\"Then it costs one sentence to prove it. And half the time I find I hadn't.\"", bundle: 'pro' },
+        { q: "It sounds like a technique.", a: "\"Only if I do it in a voice. Say it plainly and it's just checking.\"", bundle: 'pro' },
+        { q: "I'd be summarising their argument for them.", a: "\"That's the point. Now we're both looking at the same thing.\"", bundle: 'pro' },
+        { q: "They'll correct my version and we'll lose ten minutes.", a: "\"Those ten minutes were going to be lost later, in the wrong place.\"", bundle: 'pro' },
+        { q: "Their view is confused, I can't say it back cleanly.", a: "\"Then say the confused version and ask. That's more useful than guessing.\"", bundle: 'pro' },
+        { q: "I said it back and they said 'exactly'. Now what?", a: "\"Now disagree with something they've confirmed. That's the strongest position there is.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Asking Looks Like I Missed It",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "A clarifying question in the middle of a discussion feels like an admission — that you were not following, or were not quick enough. So people answer the version of the point they assumed, and the next ten minutes are two people arguing about different things.\n\nAsking is not a confession of inattention. Most sentences worth discussing carry two or three possible meanings, and the speaker rarely knows which one arrived. The question is the cheapest thing in the discussion and it prevents the most expensive thing.\n\nMindset: ask before you answer. Answering the wrong version costs far more than asking.",
+      inputs: [
+        { q: "Asking will make it look like I wasn't listening.", a: "\"It looks like I was listening closely enough to notice two meanings.\"", bundle: 'pro' },
+        { q: "I'm fairly sure I know which one they mean.", a: "\"Fairly sure is where the ten wasted minutes start. It's one sentence to check.\"", bundle: 'pro' },
+        { q: "It'll break their flow.", a: "\"Better than letting them build three more points on something I've misread.\"", bundle: 'pro' },
+        { q: "A question in the middle of an argument is a debating trick.", a: "\"It is when it's rhetorical. 'Which do you mean' isn't.\"", bundle: 'pro' },
+        { q: "They'll think I'm being pedantic.", a: "\"Pedantic is arguing about the word. Asking which one they meant is the opposite.\"", bundle: 'pro' },
+        { q: "I asked once already in this conversation.", a: "\"Then ask again. Nobody has ever been annoyed by being understood.\"", bundle: 'pro' },
+        { q: "I'll work it out from what comes next.", a: "\"Sometimes. And sometimes what comes next depends on which one it was.\"", bundle: 'pro' },
+        { q: "If I ask, I have to admit I don't know.", a: "\"You don't know. That's true whether you say it or not.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  storybanter: [
+    {
+      name: "Performing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The pack-wide stance: this is a thing two people make together, and the measure is whether the story kept going, not whether your line was the best one. A person who is trying to be the funniest stops listening, and a person who has stopped listening cannot build on anything. Example of the shift — instead of hunting for your best line, you take their last one seriously.\n\nThe three thoughts that cause the trouble:\n1. \"I need to be funnier than that\" — you need to leave them something.\n2. \"That was a weak turn from me\" — a turn that kept it going is a good turn.\n3. \"It only works if I'm quick\" — the consequence technique needs no speed at all.\n\nMindset: the goal is collaboration, not being the funniest. Two people building beats one person performing at another.",
+      inputs: [
+        { q: "You are trying to top their last line.", a: "\"Topping it ends it. Building on it keeps it going, which is the actual game.\"", bundle: 'pro' },
+        { q: "You feel your turn was weak.", a: "\"It kept the story alive. That is the whole job of a turn.\"", bundle: 'pro' },
+        { q: "You are waiting for a good enough idea before speaking.", a: "\"Good enough is 'so then what happens'. Say it and the rest arrives.\"", bundle: 'pro' },
+        { q: "They said something better than anything you have.", a: "\"Perfect — now I've got material. Building is easier than starting.\"", bundle: 'pro' },
+        { q: "You are keeping score of who got the laughs.", a: "\"Nobody else is keeping that score. They're just enjoying it.\"", bundle: 'pro' },
+        { q: "Nobody laughed at your turn.", a: "\"The story carried on. That's the measure.\"", bundle: 'pro' },
+        { q: "You want a line people will quote later.", a: "\"Aim for one they can answer. Quotable ends it.\"", bundle: 'pro' },
+        { q: "Their last one was better than anything you have.", a: "\"Good. Build on it — that's easier than starting.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Blocking",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind the whole form: everything offered is accepted. \"But\" is a correction, and a correction inside an invented story is a small door closing. This is the one rule the form actually has, and it is worth holding absolutely. Example of the shift — instead of pointing out that it would not work, you decide it would.\n\nWhere it goes wrong:\n1. You correct a detail out of pure reflex.\n2. You say \"yes, but\" and think you have agreed.\n3. You treat an impossible idea as a mistake rather than as an offer.\n\nMindset: nothing has to be possible. The only thing that matters is that you build on what you were handed.",
+      inputs: [
+        { q: "You are about to point out that it would not work.", a: "\"Nothing here works. That's not the point — what happens next?\"", bundle: 'pro' },
+        { q: "You said \"yes, but\" and thought you were agreeing.", a: "\"'But' undoes the 'yes'. Swap it and the same sentence builds instead.\"", bundle: 'pro' },
+        { q: "Their idea broke the internal logic of the story.", a: "\"Then the logic changes. That's allowed, and it's usually funnier.\"", bundle: 'pro' },
+        { q: "You corrected a detail out of reflex.", a: "\"Take it back lightly and accept it twice as hard. That repairs it completely.\"", bundle: 'pro' },
+        { q: "You want to steer the story somewhere better.", a: "\"Steering is blocking with better manners. Go where they put it.\"", bundle: 'pro' },
+        { q: "You said no, because, and the room went quiet.", a: "\"Take it back out loud and yes-and the same idea.\"", bundle: 'pro' },
+        { q: "Somebody else's addition made no sense.", a: "\"Good. Accept it and make it make sense.\"", bundle: 'pro' },
+        { q: "You want to steer it back to your version.", a: "\"There isn't a version. There's what's on the table.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Clever",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about what to aim for: an obviously impossible idea cannot be mistaken for a judgement about anyone, and a clever remark can. The bigger and sillier the invention, the more clearly it is play — which is why the safest banter is the least realistic. Example of the shift — instead of a sharp observation, you reach for the ridiculous version.\n\nWhere it shows up:\n1. A remark that is nearly true and therefore nearly a criticism.\n2. Humour aimed at a real weakness, dressed as a story.\n3. Restraint — a cautious exaggeration that reads as a correction.\n\nMindset: go past sensible in one jump. Halfway is where a joke starts sounding like a point.",
+      inputs: [
+        { q: "Your line is funny because it is nearly true.", a: "\"Nearly true is nearly a criticism. Make it impossible instead.\"", bundle: 'pro' },
+        { q: "You are being careful with the exaggeration.", a: "\"Careful reads as correcting. If I'm wondering whether it's too much, it isn't enough.\"", bundle: 'pro' },
+        { q: "You have a sharp observation about them ready.", a: "\"Sharp belongs somewhere else. Here I want ridiculous.\"", bundle: 'pro' },
+        { q: "The joke would work best if it landed on them.", a: "\"Then it isn't this game. Aim it at the invented week, not the real person.\"", bundle: 'pro' },
+        { q: "You want the clever version rather than the silly one.", a: "\"Clever gets admired. Silly gets built on. I'd rather be built on.\"", bundle: 'pro' },
+        { q: "The funniest thing here would be close to the bone.", a: "\"Then it isn't the funniest thing here. Go impossible instead.\"", bundle: 'pro' },
+        { q: "A realistic detail would make it land.", a: "\"Realistic is where it turns into a comment about somebody.\"", bundle: 'pro' },
+        { q: "You are exaggerating a little.", a: "\"A little is where it reads as a dig. Go the whole way.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Going Too Long",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about endings: nobody remembers a story that stopped a turn early, and everybody remembers one that went four turns long. Landing it is a move in its own right, not a failure of imagination. Example of the shift — instead of finding one more thing, you say the flat closing line and change the subject.\n\nWhere the pull to continue comes from:\n1. You have one more idea and it feels like a waste not to use it.\n2. Stopping feels like admitting it has run out.\n3. Nobody else has stopped it, so you assume it is still working.\n\nMindset: the goal was the laugh you already had. Land it warmly and go and do something else.",
+      inputs: [
+        { q: "You have one more idea and the room has moved on.", a: "\"Save it. An unused good line is better than a used late one.\"", bundle: 'pro' },
+        { q: "Stopping feels like giving up.", a: "\"Landing it is a move, not a surrender. Somebody has to do it.\"", bundle: 'pro' },
+        { q: "The biggest laugh was three turns ago.", a: "\"That was the top. Everything since is downhill with more words.\"", bundle: 'pro' },
+        { q: "Nobody else has ended it so you assume it is fine.", a: "\"Everyone's waiting for someone to land it. Be that person.\"", bundle: 'pro' },
+        { q: "You want the last word in a story you both built.", a: "\"Hand them the ending instead. It's their story too, and it ends better.\"", bundle: 'pro' },
+        { q: "One more and it is perfect.", a: "\"One more is where the room notices it's been five minutes.\"", bundle: 'pro' },
+        { q: "They are still laughing so there is room.", a: "\"That's the moment to land it, not the moment to continue.\"", bundle: 'pro' },
+        { q: "It feels abrupt to end it here.", a: "\"Abrupt is how good endings feel from inside.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Not Being Quick",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "The belief in this deck is half right: you are not quick, and neither are most of the people who are good at this. They are not inventing faster than you. They are following what has already been said, which takes almost no invention at all.\n\nWhat the deck separates out is the conclusion. Slowness at making things up is true. That you therefore cannot play is the part you added.\n\nExample of the shift — instead of \"I'm not quick enough for this\", you keep the slowness and drop the exclusion.\n\nMindset: keep the assessment, drop the exit.",
+      inputs: [
+        { q: "You think you are not quick enough for this.", a: "\"True, at inventing. Following what they just said needs no speed at all.\"", bundle: 'pro' },
+        { q: "You cannot think of anything funny.", a: "\"Nor can they. 'What happens next' is the question that does the work.\"", bundle: 'pro' },
+        { q: "The funny ones seem to do it without thinking.", a: "\"Some do. They're also mostly saying yes and adding one thing.\"", bundle: 'pro' },
+        { q: "Everything you come up with feels obvious.", a: "\"Obvious is fine. Obvious and next is the whole move.\"", bundle: 'pro' },
+        { q: "By the time you have something the moment has gone.", a: "\"Often. Which is why the reply that needs no thinking is the one to reach for.\"", bundle: 'pro' },
+        { q: "You think you would need to be cleverer to play.", a: "\"Cleverer, no. Absurd is easier than clever and lands better.\"", bundle: 'pro' },
+        { q: "You go blank when it is your turn.", a: "\"So does everybody. The blank is why the consequence question exists.\"", bundle: 'pro' },
+        { q: "You have decided this is not your kind of humour.", a: "\"Maybe not. Building on somebody is a different skill from being funny.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Adding the Wrong Thing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The story is going well and the fear is that your turn is the one that kills it. So people hedge: a small addition, a careful one, something that could not possibly be wrong. A careful addition is exactly what flattens it.\n\nNothing here is true, so nothing can be wrong. The only real mistake is the one that stops the story, and hedging does that more reliably than any bad idea.\n\nMindset: a wrong turn is recoverable in one sentence. A careful one is not.",
+      inputs: [
+        { q: "You are about to add something small and safe.", a: "\"Safe is what makes it go flat. Add the thing you nearly said.\"", bundle: 'pro' },
+        { q: "You are afraid of getting it wrong and ruining it.", a: "\"Nothing here is right. There's nothing to ruin.\"", bundle: 'pro' },
+        { q: "Your idea does not fit what they set up.", a: "\"Then it's a complication, which beats a fit.\"", bundle: 'pro' },
+        { q: "You are not sure that is where they were going.", a: "\"It isn't. That's the point — take it somewhere.\"", bundle: 'pro' },
+        { q: "You are waiting for a better one.", a: "\"The better one arrives after you've said this one.\"", bundle: 'pro' },
+        { q: "They will have to work round what you said.", a: "\"That's the game. Give them a problem.\"", bundle: 'pro' },
+        { q: "It feels too silly.", a: "\"Too silly is the target, not the risk.\"", bundle: 'pro' },
+        { q: "You killed the last one you tried.", a: "\"Then say 'ignore me' and add another. It costs one sentence.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  explainthings2: [
+    {
+      name: "The Question Under the Question",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The pack-wide stance: people rarely ask the question they actually want answered. \"What is it?\" almost always means \"would I ever need this?\", and answering the literal version is how clear explanations end up useless. Example of the shift — instead of defining the thing, you tell them when they would reach for it.\n\nThe three thoughts that cause the trouble:\n1. \"They asked what it is\" — they asked what it is *to them*.\n2. \"I should start at the beginning\" — start where their gap is.\n3. \"If I am accurate I have done my job\" — accurate and irrelevant is still a failure.\n\nMindset: answer the question they have, not the one they said. If you cannot tell, ask — it takes six words.",
+      inputs: [
+        { q: "You gave a correct answer and it landed flat.", a: "\"Correct isn't the standard. Useful is. Which W were they actually missing?\"", bundle: 'pro' },
+        { q: "You want to start from first principles.", a: "\"First principles are for me, not for them. Start where their gap is.\"", bundle: 'pro' },
+        { q: "You cannot tell what they are asking.", a: "\"Then ask. 'What it is, or what it's for?' costs nothing and saves five minutes.\"", bundle: 'pro' },
+        { q: "You are annoyed that they asked the wrong question.", a: "\"They asked the only question they had words for. Finding the real one is my job.\"", bundle: 'pro' },
+        { q: "You have explained this many times and always the same way.", a: "\"Same explanation every time means I have stopped listening to who is asking.\"", bundle: 'pro' },
+        { q: "They have asked a question you already answered in this meeting.", a: "\"Then the first answer missed. Ask which part is still open.\"", bundle: 'pro' },
+        { q: "You are halfway through and can see it is the wrong answer.", a: "\"Stop there. 'Actually, I think you're asking something else' costs nothing.\"", bundle: 'pro' },
+        { q: "You are explaining to two people who need different things.", a: "\"Then say which one I'm answering. The other can ask next.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Length",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about length: a one-sentence answer feels dismissive from the inside and generous from the outside. The long version is available if they want it, and they will ask — people always ask about things they are interested in. Example of the shift — instead of proving you know the subject, you give the short version and stop.\n\nWhere the hesitation shows up:\n1. You add detail so it does not sound like you are brushing them off.\n2. You explain the exceptions before anyone has met the rule.\n3. You mistake completeness for helpfulness.\n\nMindset: nobody has ever complained that an explanation was too short. They ask, and then you get to say more with someone who wants it.",
+      inputs: [
+        { q: "A one-sentence answer feels like brushing them off.", a: "\"It reads as generous from where they're standing. And they'll ask if they want more.\"", bundle: 'pro' },
+        { q: "You want to include the exceptions.", a: "\"Exceptions after the rule, and only if they're still there.\"", bundle: 'pro' },
+        { q: "You are proving you know the subject.", a: "\"That's for me, not for them. What do they actually need to walk away with?\"", bundle: 'pro' },
+        { q: "You worry the short version makes you sound vague.", a: "\"Vague is missing information. Short is choosing which information first.\"", bundle: 'pro' },
+        { q: "They have not asked a follow-up.", a: "\"Then that was enough. Not every explanation needs a second half.\"", bundle: 'pro' },
+        { q: "You are the expert here and a short answer feels like withholding.", a: "\"Withholding is refusing. Short is answering, and then waiting.\"", bundle: 'pro' },
+        { q: "There is an important caveat you cannot leave out.", a: "\"Then the rule first, caveat second. Not the other way round.\"", bundle: 'pro' },
+        { q: "They look like they wanted more.", a: "\"Then they'll ask. Guessing produces three minutes nobody wanted.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Wrong Audience",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about honesty in explaining: the sentence that says \"this probably isn't for you\" is what makes everything else you said believable. It costs a recommendation and buys the listener's trust in every future one. Example of the shift — instead of listing what is good about it, you say plainly where the listener sits.\n\nWhere it goes wrong:\n1. You like the thing, so every sentence is a benefit.\n2. You do not want to be discouraging.\n3. You leave out the catch because they did not ask.\n\nMindset: an explanation with no \"not for you\" in it is a pitch. One honest exclusion makes the rest land.",
+      inputs: [
+        { q: "Every sentence you have said has been a benefit.", a: "\"Where's the catch? If I can't name one, I'm selling rather than explaining.\"", bundle: 'pro' },
+        { q: "You do not want to put them off something you like.", a: "\"Telling them honestly costs one recommendation and buys every future one.\"", bundle: 'pro' },
+        { q: "They did not ask about the drawback.", a: "\"They shouldn't have to ask. It's part of the explanation, not an objection.\"", bundle: 'pro' },
+        { q: "Saying it is not for them feels discouraging.", a: "\"Letting them buy the wrong thing is what would actually discourage them.\"", bundle: 'pro' },
+        { q: "You are recommending something you use daily to someone quite different.", a: "\"It fits my week. Does it fit theirs? That is the whole question.\"", bundle: 'pro' },
+        { q: "You do not know enough about them to say whether it fits.", a: "\"Then name who it is for and let them place themselves.\"", bundle: 'pro' },
+        { q: "The drawback is something you have personally never minded.", a: "\"That's about me. Say it anyway and let them weigh it.\"", bundle: 'pro' },
+        { q: "Somebody else recommended it first and you would be contradicting them.", a: "\"I'm adding the condition, not the verdict. That isn't a contradiction.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Neighbours",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about placing things: people file new information by what it sits next to, so an explanation with no neighbours is remembered as a fact rather than as a thing. Naming what comes before it, after it, or beside it does more for memory than any amount of description. Example of the shift — instead of describing the thing in isolation, you say what it sits between.\n\nWhere it shows up:\n1. Something perfectly explained that nobody can recall a day later.\n2. A description that is accurate and floating.\n3. \"But where does it fit?\" asked after a complete answer.\n\nMindset: give it a shelf. Between two things they already know is the easiest place in the world to remember something.",
+      inputs: [
+        { q: "Your explanation was clear and nobody remembers it.", a: "\"It had nothing next to it. What does it sit between?\"", bundle: 'pro' },
+        { q: "You are describing something with no obvious category.", a: "\"Closest familiar thing first, then the difference. That's a shelf.\"", bundle: 'pro' },
+        { q: "They ask where it fits after you have finished.", a: "\"That question means I explained the thing and not its place. Answer it first next time.\"", bundle: 'pro' },
+        { q: "You have described something accurately and it floated away.", a: "\"Accurate and unplaced. What does it come after, and what comes next?\"", bundle: 'pro' },
+        { q: "You are about to open with how it works.", a: "\"Shelf first. Where it belongs and who it is for, then the mechanics.\"", bundle: 'pro' },
+        { q: "There is nothing else quite like it.", a: "\"There's something nearly like it. Nearly, plus the difference, is a shelf.\"", bundle: 'pro' },
+        { q: "You have opened with the history.", a: "\"History is a neighbour only if they know it. Otherwise it's a second unknown.\"", bundle: 'pro' },
+        { q: "They nodded at every sentence and asked nothing.", a: "\"Nodding isn't filing. Give them where it sits and check again.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Edge",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind marking the edge: a clear limit makes the rest of an answer usable.\n\nThe fear is that saying \"I don't know\" makes you look unprepared. What it actually does is the opposite — an answer with no stated edge has to be taken whole or not at all, and most listeners quietly choose not at all.\n\nThe three thoughts that cause the trouble:\n1. \"Admitting the gap undermines the rest\" — it does the reverse; it tells them which part to trust.\n2. \"They asked me, so I should have an answer\" — they asked you for what you know, not for a complete one.\n3. \"A guess is better than nothing\" — not when it arrives in the same voice as the facts.\n\nMindset: the edge is part of the answer, not a hole in it.",
+      inputs: [
+        { q: "You are about to keep talking past what you know.", a: "\"The useful bit is the part I'm sure of. I'll stop there.\"", bundle: 'pro' },
+        { q: "Admitting the gap feels like admitting incompetence.", a: "\"Knowing where my knowledge stops is knowing my subject.\"", bundle: 'pro' },
+        { q: "You think a guess is better than nothing.", a: "\"Not if they can't hear that it's a guess. Then it's worse than nothing.\"", bundle: 'pro' },
+        { q: "They asked you specifically and you feel you owe them all of it.", a: "\"They asked for what I know. That's what I'll give them.\"", bundle: 'pro' },
+        { q: "You worry the answer sounds thin without the extra bit.", a: "\"A short true answer beats a long one they have to check.\"", bundle: 'pro' },
+        { q: "You have just been caught out on something you invented.", a: "\"That's the cost. Next time I say where I stop.\"", bundle: 'pro' },
+        { q: "Somebody senior is in the room and you do not want to look unsure.", a: "\"Being precise about the limit reads as confidence, not doubt.\"", bundle: 'pro' },
+        { q: "You are tempted to hand over rather than answer at all.", a: "\"I can still give them the two thirds I have. That's not nothing.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Answering What Was Asked",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "They asked what it is. Answering the question somebody actually asked is ordinary courtesy, and second-guessing every question would be worse than not.\n\nThe half that gets added is the assumption that the words are the whole of it. \"What is it?\" is usually a shorter way of asking whether it has anything to do with them, and that is answered by a moment, not a definition.\n\nMindset: keep the courtesy. Drop the assumption that the literal question is the whole question.",
+      inputs: [
+        { q: "They asked what it is, so that is what you should tell them.", a: "\"True, that's what they asked. 'Whether it's for me' is the part they left off.\"", bundle: 'pro' },
+        { q: "Guessing what somebody really means is presumptuous.", a: "\"It is. Which is why the move is to ask, not to guess.\"", bundle: 'pro' },
+        { q: "A definition is the honest answer.", a: "\"Honest, yes. It's also the one they could have looked up.\"", bundle: 'pro' },
+        { q: "You cannot read minds.", a: "\"No. I can read why they're asking now, which is usually enough.\"", bundle: 'pro' },
+        { q: "Adding a use case sounds like selling it.", a: "\"It can. 'When you'd reach for it' isn't a pitch, it's the shelf.\"", bundle: 'pro' },
+        { q: "Answering the question underneath is patronising.", a: "\"Sometimes. Saying both takes eight words and removes the risk.\"", bundle: 'pro' },
+        { q: "If they wanted the use they would have asked for it.", a: "\"They'd have to know it was on offer. Most don't.\"", bundle: 'pro' },
+        { q: "You should not assume they know nothing.", a: "\"Right, so don't start at the beginning. Start where the gap is.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  buildingastory: [
+    {
+      name: "Size",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The pack-wide stance: the size of the event is almost irrelevant. A locked door told sharply lands better than a dramatic week told vaguely, and most of the stories people remember hearing were about nothing much. Example of the shift — instead of waiting for a story worth telling, you tell the small true one that arrived.\n\nThe three thoughts that cause the trouble:\n1. \"Nothing interesting happens to me\" — nothing interesting happens to anybody; the telling is the difference.\n2. \"This isn't a good enough story\" — good enough means true, small and shaped.\n3. \"I'll save it for when it fits better\" — that moment does not come.\n\nMindset: small, true, shaped. That is the whole standard, and everybody clears it several times a week.",
+      inputs: [
+        { q: "You think nothing interesting happens to you.", a: "\"Nothing interesting happens to anyone. The telling is the whole difference.\"", bundle: 'pro' },
+        { q: "The story you have feels too small.", a: "\"Small and sharp beats big and vague, every single time.\"", bundle: 'pro' },
+        { q: "You are waiting for a better moment to tell it.", a: "\"The better moment doesn't come. This one is here.\"", bundle: 'pro' },
+        { q: "You compare your story to the one just told.", a: "\"It's not a competition — a smaller one next to theirs is a conversation.\"", bundle: 'pro' },
+        { q: "You are looking for a dramatic story and have none.", a: "\"The locked door story is the one people will remember. Use that.\"", bundle: 'pro' },
+        { q: "You are saving the good one for a better audience.", a: "\"The better audience is hypothetical. This one is here.\"", bundle: 'pro' },
+        { q: "It only takes thirty seconds, so it cannot be worth much.", a: "\"Thirty seconds is the whole advantage. Use it.\"", bundle: 'pro' },
+        { q: "Nothing about the day stands out.", a: "\"One thing was mildly annoying. That's a story.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Openings",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about openings: your instinct is to explain first so that everything makes sense, and that instinct costs you the room. Context can be delivered late and often does not need delivering at all — the listener will build most of it themselves. Example of the shift — instead of introducing everyone, you say the first thing that happened.\n\nWhere it goes wrong:\n1. You explain who people are before anything has occurred.\n2. You give the background because you would want it yourself.\n3. You start at the true beginning rather than at the interesting one.\n\nMindset: start where it moves and backfill only what they actually need. Almost nobody has ever asked for more setup.",
+      inputs: [
+        { q: "You are about to explain who everyone is.", a: "\"Names can wait. What happened?\"", bundle: 'pro' },
+        { q: "You want to start at the real beginning.", a: "\"The real beginning is usually the boring one. Start where it turns.\"", bundle: 'pro' },
+        { q: "You are worried it will not make sense without context.", a: "\"They'll ask if they need it. They almost never need it.\"", bundle: 'pro' },
+        { q: "You have three sentences of background ready.", a: "\"One clause of it, at most. The rest can arrive later or not at all.\"", bundle: 'pro' },
+        { q: "You have lost the room in the setup.", a: "\"Jump to the turn now. The setup can follow it.\"", bundle: 'pro' },
+        { q: "You want to explain why you were even there.", a: "\"They don't need why. They need what happened.\"", bundle: 'pro' },
+        { q: "The first line feels too abrupt.", a: "\"Abrupt is the point. It makes them ask.\"", bundle: 'pro' },
+        { q: "You have started with the date and the weather.", a: "\"Cut both. Start at the moment it went wrong.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Feeling",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance behind the emotional half of the pack: people follow feeling more closely than they follow events, and a story told without any is a report. Naming the feeling once, plainly, does more than any amount of vivid description. Example of the shift — instead of describing the situation more carefully, you say how it felt.\n\nWhere it shows up:\n1. An accurate account that nobody reacts to.\n2. Detail piled on detail in the hope that the feeling arrives on its own.\n3. Playing something down because naming the feeling seems dramatic.\n\nMindset: say the feeling out loud once. The pace, the pauses and the detail all follow from it, and none of them arrive without it.",
+      inputs: [
+        { q: "The account is accurate and nobody is reacting.", a: "\"Accurate isn't the same as told. How did it feel?\"", bundle: 'pro' },
+        { q: "You are adding detail hoping the feeling comes through.", a: "\"One clause naming it does more than four describing it.\"", bundle: 'pro' },
+        { q: "Naming the feeling seems a bit dramatic.", a: "\"'I was mortified' is not dramatic. It's information.\"", bundle: 'pro' },
+        { q: "The feeling was ordinary and unimpressive.", a: "\"'Mostly I was just tired' is honest, and honest is what lands.\"", bundle: 'pro' },
+        { q: "You are telling a funny story about something that was not funny.", a: "\"Both versions are true. Choose the one this room can take.\"", bundle: 'pro' },
+        { q: "You have told it accurately and it fell flat.", a: "\"Accurate is a report. Put one feeling in it.\"", bundle: 'pro' },
+        { q: "Saying you were frightened feels like too much.", a: "\"'I was properly rattled' is one clause. That isn't too much.\"", bundle: 'pro' },
+        { q: "The feeling was embarrassment and you would rather not.", a: "\"That's the one that lands. Everybody has been there.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Endings",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about endings and lessons: a story is remembered by its last sentence, and most stories are ended by running out rather than by stopping. Deciding to end — and deciding whether there is a takeaway at all — is a move, not an admission that you have nothing left. Example of the shift — instead of winding down, you say the line you told it for and stop.\n\nWhere the trouble comes from:\n1. You have had the laugh and lose interest in the ending.\n2. You add a moral because the ending feels too small.\n3. You keep going because nobody has stopped you.\n\nMindset: say the last line on purpose, and stop. If there is a lesson, one sentence; if there is not, say that instead — it is a better ending than an invented one.",
+      inputs: [
+        { q: "You have had the laugh and are winding down.", a: "\"The ending is what they'll carry. Say it properly.\"", bundle: 'pro' },
+        { q: "You are about to add a moral to make it feel finished.", a: "\"'It was just a strange day' finishes it perfectly well.\"", bundle: 'pro' },
+        { q: "You cannot tell whether you have finished.", a: "\"Then they can't either. Say the last line and stop talking.\"", bundle: 'pro' },
+        { q: "Nobody has stopped you so you keep going.", a: "\"Nobody stops a story out loud. Land it before they have to.\"", bundle: 'pro' },
+        { q: "The lesson you are about to give is not the true one.", a: "\"The honest one is smaller and better. Say that instead.\"", bundle: 'pro' },
+        { q: "You are not sure it has an ending.", a: "\"Then say the last true thing and stop.\"", bundle: 'pro' },
+        { q: "You want to trail off rather than land it.", a: "\"Trailing off tells them it wasn't worth telling. It was.\"", bundle: 'pro' },
+        { q: "You are about to explain what you meant by it.", a: "\"Don't. The line before was the ending.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Some Days Are Not Stories",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "The beliefs in this deck are half right, which is why arguing with them does not work. Most of your days genuinely are not stories. Most things that happen have no turn in them, and telling them anyway is how people become tiring.\n\nWhat this deck separates out is the part you added. The true half is a judgement about the material. The added half is a conclusion about you.\n\nExample of the shift — instead of \"nothing worth telling happens to me, so I have nothing\", you keep the first clause and drop the second.\n\nMindset: keep the judgement, drop the conclusion.",
+      inputs: [
+        { q: "Most of what happens to me isn't worth telling.", a: "\"True. And 'so I've got nothing' is the part I added.\"", bundle: 'pro' },
+        { q: "That one had no real point to it.", a: "\"Right, no point. Which is why it takes twenty seconds, not two minutes.\"", bundle: 'pro' },
+        { q: "Other people have better material than me.", a: "\"Some of them do. That's about their week, not about my telling.\"", bundle: 'pro' },
+        { q: "I'd be boring people with it.", a: "\"You would, at four minutes. Not at thirty seconds.\"", bundle: 'pro' },
+        { q: "Nothing dramatic has happened to me this year.", a: "\"Nothing dramatic, no. Something odd happened on Tuesday, though.\"", bundle: 'pro' },
+        { q: "I can never remember a story when I need one.", a: "\"True, under pressure. Which is why the small recent one is the one to take.\"", bundle: 'pro' },
+        { q: "My stories don't have endings.", a: "\"Some genuinely don't. 'And then we drove home' is an ending.\"", bundle: 'pro' },
+        { q: "I'm not a natural storyteller.", a: "\"Probably not. The turn and the last line are learnable anyway.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Choosing Takes Too Long",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The moment is short and choosing is slow. While you sort through three candidates looking for the best one, the subject changes and the story goes with it.\n\nThe skill is not recall. It is committing to something small before it is obviously the right choice. A story you start badly and fix is worth more than the better one you never began.\n\nExample of the shift — instead of searching for the best story you have, you take the most recent small one and start.\n\nMindset: pick in fifteen seconds. Fixing it while telling it is allowed.",
+      inputs: [
+        { q: "You are choosing between three of them.", a: "\"Take the most recent. It's fresh, and fresh is enough.\"", bundle: 'pro' },
+        { q: "You want the best one you have.", a: "\"The best one is the one you start. Go.\"", bundle: 'pro' },
+        { q: "The moment has passed while you were deciding.", a: "\"Say 'going back a bit' and take it anyway.\"", bundle: 'pro' },
+        { q: "You cannot remember how yours started.", a: "\"Start in the middle. Nobody will notice.\"", bundle: 'pro' },
+        { q: "You are waiting to be sure it fits.", a: "\"It doesn't have to fit. It has to arrive.\"", bundle: 'pro' },
+        { q: "Somebody else has started talking.", a: "\"Fine. Keep it — it'll do next time.\"", bundle: 'pro' },
+        { q: "You are afraid of committing to the wrong one.", a: "\"You can abandon it in one sentence. The cost is tiny.\"", bundle: 'pro' },
+        { q: "You have no idea where the story is going.", a: "\"Start it and find out. Most people do.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  reframing: [
+    {
+      name: "Frames",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The pack-wide stance: what happened and what it means are two different things, and only the first is fixed. The meaning arrives so fast that it feels like part of the event, which is exactly why it goes unexamined. Example of the shift — instead of accepting the first reading that arrived, you ask what else fits the same facts.\n\nThe three thoughts that cause the trouble:\n1. \"That's just what it means\" — that is the reading that got there first.\n2. \"I'm not spinning it, I'm being realistic\" — the negative frame is also a frame.\n3. \"There's only one way to see this\" — there is at least one more, and it usually fits better.\n\nMindset: separate the event from the conclusion. The event is a sentence; the conclusion is a story, and stories can be rewritten without lying.",
+      inputs: [
+        { q: "You have accepted the first reading that arrived.", a: "\"First doesn't mean true. What else fits exactly these facts?\"", bundle: 'pro' },
+        { q: "You think the negative version is simply realistic.", a: "\"The gloomy frame is a frame too. It isn't more accurate for being less pleasant.\"", bundle: 'pro' },
+        { q: "You cannot see any other reading.", a: "\"Then start with the smallest one: what would somebody who liked me say about this?\"", bundle: 'pro' },
+        { q: "The meaning feels like part of the event.", a: "\"What happened is one sentence. Everything else I've added.\"", bundle: 'pro' },
+        { q: "You are certain about what somebody's silence meant.", a: "\"I have their silence. I don't have their week.\"", bundle: 'pro' },
+        { q: "The obvious reading is obvious for a reason.", a: "\"It arrived first. That's a fact about speed, not about truth.\"", bundle: 'pro' },
+        { q: "You have already decided what it meant.", a: "\"Then hold the same facts and a different ending for one minute.\"", bundle: 'pro' },
+        { q: "Reframing is just telling yourself a story.", a: "\"So is the first reading. The question is which one the facts support.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Truth",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance that keeps this from becoming spin: a reframe has to hold every fact the original one held. The moment it requires leaving something out it stops being a different reading and becomes a request to pretend — and the other person can always tell. Example of the shift — instead of reaching for the encouraging version, you look for the accurate one that happens to be kinder.\n\nWhere it goes wrong:\n1. The upside you name does not cover the cost, and you say it anyway.\n2. You reframe out of discomfort with their feeling rather than out of a real reading.\n3. You would not say the same thing about it in a month.\n\nMindset: truer, not nicer. A reframe that is both is available surprisingly often, and one that is only nicer is worth nothing.",
+      inputs: [
+        { q: "Your upside does not really cover the cost.", a: "\"Then it isn't a reframe. Say the honest thing instead.\"", bundle: 'pro' },
+        { q: "You are reframing because their feeling is uncomfortable.", a: "\"That's my discomfort, not their reading. Sit with it a minute.\"", bundle: 'pro' },
+        { q: "You would not say this in a month's time.", a: "\"Then it isn't true now either. It's just something to say.\"", bundle: 'pro' },
+        { q: "The kinder version requires ignoring one fact.", a: "\"It has to hold every fact the first one held. Otherwise it's a nicer story.\"", bundle: 'pro' },
+        { q: "You want to make somebody feel better quickly.", a: "\"Quickly is what makes it hollow. Accurate takes another minute and lasts.\"", bundle: 'pro' },
+        { q: "You are sure there's a silver lining somewhere.", a: "\"Not always. A reframe that needs one invented isn't one.\"", bundle: 'pro' },
+        { q: "You left out the bit that doesn't fit.", a: "\"Then it's spin. Put it back and see whether the reading survives.\"", bundle: 'pro' },
+        { q: "It sounds better without mentioning the cost.", a: "\"Anything sounds better with the cost removed. That's the tell.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "When Not To",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance that makes the pack safe to own: some things are bad, some feelings are the correct response, and the reframe is not always the gift it feels like. Offered too early it is heard as being told how to feel, and the result is not comfort but silence next time. Example of the shift — instead of finding the silver lining, you say the thing is bad and ask what would help.\n\nWhere it shows up:\n1. You reach for perspective within an hour of something going wrong.\n2. You cannot sit with somebody being upset without trying to fix it.\n3. You treat a reasonable reaction as a problem to be solved.\n\nMindset: \"that's just bad, and I'm sorry\" is a complete response. Reach for it more often than the four types.",
+      inputs: [
+        { q: "You want to find the upside within an hour of the event.", a: "\"Too early. Today is for saying it's bad. The angle keeps.\"", bundle: 'pro' },
+        { q: "You cannot sit with somebody being upset.", a: "\"The urge to fix it is mine. What they asked for was company.\"", bundle: 'pro' },
+        { q: "The feeling seems out of proportion to you.", a: "\"Anger at something unfair is not a distortion. It's the correct reading.\"", bundle: 'pro' },
+        { q: "You have a genuinely good reframe and they are in bits.", a: "\"Good and premature. Offer it in a week and it'll land.\"", bundle: 'pro' },
+        { q: "You feel useless just listening.", a: "\"Listening is the useful thing. The clever angle is the optional extra.\"", bundle: 'pro' },
+        { q: "Sitting with it does not feel like doing anything.", a: "\"It's the thing they asked for. Doing something is for me.\"", bundle: 'pro' },
+        { q: "Somebody should say something hopeful.", a: "\"Later. Today the useful sentence is that it's just bad.\"", bundle: 'pro' },
+        { q: "Without an angle you have nothing to give.", a: "\"I've got agreement. That's rarer than an angle.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Delivery",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The stance about delivery: a reframe belongs to the person receiving it, and they get to refuse it. Handed over as the correct view it produces defence of a reading they might not even have liked; handed over as one option it usually gets tried on. Example of the shift — instead of \"you should see it as\", you say \"one way to look at it is\" and then stop.\n\nWhere it goes wrong:\n1. You repeat a reframe that was not taken.\n2. You treat their not taking it as them being stubborn.\n3. You start the sentence with \"you should\".\n\nMindset: offer it once, hold it loosely, let them keep their own. A reframe argued for has stopped being a gift.",
+      inputs: [
+        { q: "They did not take your reframe.", a: "\"That's allowed. It's their situation and their reading.\"", bundle: 'pro' },
+        { q: "You have said the same thing twice.", a: "\"Twice is pushing. They heard it the first time.\"", bundle: 'pro' },
+        { q: "You are about to begin with \"you should\".", a: "\"Swap it for 'one way to look at it'. Same content, completely different conversation.\"", bundle: 'pro' },
+        { q: "You think they are being stubborn about a good reading.", a: "\"Or it doesn't fit their facts, which they know better than I do.\"", bundle: 'pro' },
+        { q: "You want them to agree with your version.", a: "\"Wanting agreement means I'm arguing, not offering.\"", bundle: 'pro' },
+        { q: "They didn't take it, so you explained it better.", a: "\"Explaining it better is pushing it harder. They understood.\"", bundle: 'pro' },
+        { q: "You know this reading would help them.", a: "\"It might. It's still theirs to accept or leave.\"", bundle: 'pro' },
+        { q: "Asking first makes it sound tentative.", a: "\"It makes it an offer. An offer is the only version anybody takes.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Labels Other People Put on You",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "Somebody has described you in a word, and part of it is accurate. That is what makes these the hardest beliefs in the pack to shift: a flat denial would be dishonest, and you know it, so the whole label stays.\n\nWhat this deck separates is the observation from the verdict. Intense, particular, quiet, slow — these are usually true. The words too, overly and difficult are additions, and they came from somebody standing somewhere specific.\n\nExample of the shift — instead of \"she said I'm too intense and she's right\", you keep the intensity and give back the \"too\".\n\nMindset: keep what they saw. Hand back what they concluded.",
+      inputs: [
+        { q: "She said I'm too intense, and she's right.", a: "\"Intense, yes. 'Too' is her word, and I've been carrying it as though it were mine.\"", bundle: 'pro' },
+        { q: "I'm the difficult one in this team.", a: "\"I'm the one who asks. That's true, and 'difficult' is what somebody attached to it.\"", bundle: 'pro' },
+        { q: "He's right that I overthink everything.", a: "\"I do think things through. 'Everything' and 'over' came from him.\"", bundle: 'pro' },
+        { q: "I'm not good with people. Everybody says so.", a: "\"I'm quiet in groups. That's the true half; the rest is a conclusion somebody drew.\"", bundle: 'pro' },
+        { q: "They called me fussy, and I am fussy.", a: "\"Particular, and it's why the work is right. Fussy is the same trait, badly named.\"", bundle: 'pro' },
+        { q: "I was told I take things too personally.", a: "\"I notice things. Whether that's too much rather depends on who's counting.\"", bundle: 'pro' },
+        { q: "Somebody said I'm hard to read.", a: "\"True. 'And therefore cold' is the part they added, not me.\"", bundle: 'pro' },
+        { q: "My old boss said I don't push hard enough.", a: "\"I don't push. Where I worked before, that was a virtue — he means it isn't here.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Making It Smaller",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Shrinking something is the fastest reframe there is, and the one most likely to land on the person rather than the problem. Said from outside, at the right moment, it is a relief. Said too early it is a verdict on how much they should be feeling.\n\nThe tell is the two seconds after the laugh. People laugh to be kind long before they feel better, and the quiet that follows is the actual answer.\n\nMindset: perspective from outside always shrinks it. That is exactly why it can read as being told you are overreacting.",
+      inputs: [
+        { q: "Making it funny will take the sting out.", a: "\"For me, maybe. Check whether it takes the sting out for them first.\"", bundle: 'pro' },
+        { q: "They laughed, so it landed.", a: "\"People laugh to be kind. Watch the two seconds after.\"", bundle: 'pro' },
+        { q: "It was one spilt glass, and I said so.", a: "\"True from outside. The size isn't the part they're struggling with.\"", bundle: 'pro' },
+        { q: "Humour is how I show it isn't a disaster.", a: "\"It's also how people hear that I think they're overreacting.\"", bundle: 'pro' },
+        { q: "I'd want somebody to make me laugh about it.", a: "\"You might. Ask, or wait until they joke about it first.\"", bundle: 'pro' },
+        { q: "A bit of perspective never hurts.", a: "\"Perspective from outside always shrinks it. That's what makes it feel dismissive.\"", bundle: 'pro' },
+        { q: "It was obviously affectionate.", a: "\"Obvious to me. If they went quiet, it wasn't obvious to them.\"", bundle: 'pro' },
+        { q: "Apologising for a joke makes it worse.", a: "\"One sentence, no explanation. Explaining is what makes it worse.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "When Somebody Does It to You",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The pack works from the other side too, and this deck is about being on the receiving end of a reframe you did not ask for.\n\nThe belief that keeps people quiet is that objecting would be ungrateful. It would not: the person cheering you up has no way of knowing it is not what you need unless somebody tells them, and most of them are relieved to find out.\n\nMindset: you can take the intention and decline the angle. Both in the same sentence.",
+      inputs: [
+        { q: "They're trying to help, so I should take it.", a: "\"I can take the intention and still say it isn't what I needed.\"", bundle: 'pro' },
+        { q: "Objecting would be ungrateful.", a: "\"'Not today' isn't ingratitude. It's information they can use.\"", bundle: 'pro' },
+        { q: "Maybe they're right and I am being negative.", a: "\"Maybe. I can work that out tomorrow, without an audience.\"", bundle: 'pro' },
+        { q: "They keep finding the bright side and I can't say anything.", a: "\"I can. 'I know — I'd like to be fed up a bit longer' is a whole sentence.\"", bundle: 'pro' },
+        { q: "If I push back they'll stop asking how I am.", a: "\"Most people are relieved to be told what actually helps.\"", bundle: 'pro' },
+        { q: "Everybody reframes. It's what people do.", a: "\"It is. And the ones who ask first are the ones I go back to.\"", bundle: 'pro' },
+        { q: "I don't want to make it awkward.", a: "\"It's already slightly awkward. Saying what I want is what ends that.\"", bundle: 'pro' },
+        { q: "They said it could be worse and now I feel wrong for minding.", a: "\"It could be worse and it's still bad. Both are allowed.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  danbacon1: [
+    {
+      name: "The \"Prize\" Mentality",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The belief that you are the one who needs to be \"good enough\" for her. This mindset causes you to be over-polite and boring. Dan Bacon teaches that you must believe you are the prize she is trying to win over.",
+      inputs: [
+        { q: "\"She is so beautiful, I have to be extra nice to her.\"", a: "\"She gets special treatment from every guy. If I treat her like a normal person and tease her, I’ll be the one she actually remembers.\"", bundle: 'pro' },
+        { q: "\"I'm afraid I'll offend her if I make a joke.\"", a: "\"Risking her reaction is what shows my confidence. A guy who isn't afraid of a 'no' is the one who gets a 'yes'.\"", bundle: 'pro' },
+        { q: "\"I need to prove my value by talking about my job and car.\"", a: "\"Bragging makes me look lower value. My value comes from my personality and how I make her feel, not my resume.\"", bundle: 'pro' },
+        { q: "\"I should wait for a clear sign she likes me before I flirt.\"", a: "\"I am the one who creates the spark. I don't wait for luck; I interact and make her feel attracted to my confidence.\"", bundle: 'pro' },
+        { q: "\"If she plays hard to get, it means she doesn't like me.\"", a: "\"She is testing my confidence. If I remain calm and keep joking, I prove I am good enough for a woman like her.\"", bundle: 'pro' },
+        { q: "I should wait for her to show interest before I flirt.", a: "\"I am the one who creates the spark. I don't wait for permission; I lead the interaction.\"", bundle: 'pro' },
+        { q: "She is acting cold, so she must not like me.", a: "\"She is testing my confidence. If I stay cool and keep teasing, I prove I am worthy.\"", bundle: 'pro' },
+        { q: "I feel like I am bothering her by talking to her.", a: "\"I am an attractive, high-value man offering a fun interaction. She is lucky I came over.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Politeness builds friendships, but playful friction creates sexual attraction.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "",
+      inputs: [
+        { q: "I should be extra polite because she is so beautiful.", a: "\"She gets polite treatment from every guy. Teasing her shows I am not intimidated by her looks.\"", bundle: 'pro' },
+        { q: "I don't want to make fun of her job in case she takes it badly.", a: "\"Playfully teasing her about her work breaks the interview vibe and shows I have humor.\"", bundle: 'pro' },
+        { q: "I should answer her questions directly and seriously.", a: "\"Answering logically keeps us in interview mode. Adding humor creates emotional spikes.\"", bundle: 'pro' },
+        { q: "I am afraid to misinterpret her intent as flirting.", a: "\"Assuming she wants me flips the script and removes the pressure of chasing.\"", bundle: 'pro' },
+        { q: "I ought to agree with everything she says to keep her happy.", a: "\"Agreeing with everything makes me boring. Playful disagreement shows I have a backbone.\"", bundle: 'pro' },
+        { q: "I should hold back my silly side until I know her better.", a: "\"Showing my unpredictable side early filters for women who match my energy.\"", bundle: 'pro' },
+        { q: "I worry that challenging her will cause an argument.", a: "\"Playful challenges are not arguments. They are the foundation of flirtatious banter.\"", bundle: 'pro' },
+        { q: "I feel I must apologize if a joke doesn't land perfectly.", a: "\"Apologizing for a joke destroys the frame. I own my humor and keep moving forward.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Risking her temporary disapproval is necessary to trigger real attraction.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "",
+      inputs: [
+        { q: "She looks serious, so I should be serious too.", a: "\"Her serious face is an invitation for me to bring lighthearted energy into her day.\"", bundle: 'pro' },
+        { q: "What if she rolls her eyes at my playful comment?", a: "\"An eye roll means she is engaged and reacting. It is far better than polite boredom.\"", bundle: 'pro' },
+        { q: "I am afraid of sounding arrogant if I flip the script.", a: "\"Acting like the selector shows high self-esteem, not arrogance. Women respect it.\"", bundle: 'pro' },
+        { q: "If she doesn't laugh immediately, I have failed.", a: "\"Attraction takes a moment to build. I stay confident regardless of her first reaction.\"", bundle: 'pro' },
+        { q: "I worry about looking foolish if I react unexpectedly.", a: "\"Being willing to look silly proves I am not seeking her validation to feel good.\"", bundle: 'pro' },
+        { q: "What if she tells her friends I am being weird?", a: "\"Her friends' opinions do not define my value. I focus entirely on my connection with her.\"", bundle: 'pro' },
+        { q: "I feel anxious when she gives me a sharp look.", a: "\"A sharp look is just a confidence test. I remain Teflon and let it slide off me.\"", bundle: 'pro' },
+        { q: "I want to retreat when she challenges my statement.", a: "\"A challenge is an opportunity to show strength. I smile, hold my ground, and tease back.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Assuming interest creates the confidence that makes interest real.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "",
+      inputs: [
+        { q: "I need a clear sign from her before I flip the script.", a: "\"I don't wait for signs. I assume she is attracted and interact from that high-value frame.\"", bundle: 'pro' },
+        { q: "It feels arrogant to assume she is hitting on me.", a: "\"Misinterpreting her comments as flirting is a playful game that relieves pressure.\"", bundle: 'pro' },
+        { q: "What if she corrects me when I assume she wants me?", a: "\"If she corrects me, I tease her for being defensive. I never lose my cool frame.\"", bundle: 'pro' },
+        { q: "I should ask for permission before moving the talk forward.", a: "\"Asking permission signals insecurity. Leading assertively makes her feel comfortable.\"", bundle: 'pro' },
+        { q: "I feel fake when I act like the prize in the conversation.", a: "\"I am a valuable man with much to offer. Acting like the prize is simply owning my worth.\"", bundle: 'pro' },
+        { q: "What if she thinks I am full of myself?", a: "\"Playful self-assurance is charming when combined with warmth. She will enjoy the vibe.\"", bundle: 'pro' },
+        { q: "I hesitate to set playful boundaries on physical contact.", a: "\"Setting playful limits makes her chase. It proves I am not desperate for touch.\"", bundle: 'pro' },
+        { q: "I worry she will think I am moving too fast emotionally.", a: "\"Teasing about moving fast is a joke that frame-controls the interaction safely.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Releasing the need for control allows spontaneous attraction to happen.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "",
+      inputs: [
+        { q: "I need a planned script for what to say next.", a: "\"Scripts make me rigid. Being present and responding unpredictably is far more attractive.\"", bundle: 'pro' },
+        { q: "I get nervous when the conversation takes an unexpected turn.", a: "\"Unexpected turns are opportunities for play. I lean into the surprise with humor.\"", bundle: 'pro' },
+        { q: "I feel responsible for filling every second of silence.", a: "\"Silence is natural. I don't panic; I use quiet moments to project calm dominance.\"", bundle: 'pro' },
+        { q: "I worry that being silly will make her lose respect for me.", a: "\"A strong man who can be silly shows supreme confidence in his own value.\"", bundle: 'pro' },
+        { q: "I want to steer the conversation back to safe topics.", a: "\"Safe topics kill attraction. Dangerous, playful topics create genuine connection.\"", bundle: 'pro' },
+        { q: "What if my unexpected reaction turns her off completely?", a: "\"Filtering for compatibility requires risking a turn-off. The right woman will love it.\"", bundle: 'pro' },
+        { q: "I feel uncomfortable when I don't know where the interaction is going.", a: "\"Not knowing the outcome is what makes flirting exciting. I enjoy the uncertainty.\"", bundle: 'pro' },
+        { q: "I try too hard to make the conversation 'perfect'.", a: "\"Perfection is boring. Imperfect, energetic, playful banter is what triggers attraction.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  danbacon2: [
+    {
+      name: "The Selector's Frame",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal stance that you are the one deciding if she is good enough for you, rather than vice versa.",
+      inputs: [
+        { q: "\"She is way more attractive than me.\"", a: "\"I am feeling an instant automatic attraction, but that doesn't mean she is more valuable. I can make her feel as much attraction for me as I feel for her.\"", bundle: 'pro' },
+        { q: "\"I hope she doesn't reject me.\"", a: "\"Rejection is just a test of my confidence. If I remain calm, I prove I am the rare guy who is good enough for her.\"", bundle: 'pro' },
+        { q: "\"I should explain why I'm a good guy.\"", a: "\"Explaining myself makes me look lower value. My value is a default; she is the one who needs to win _me_ over.\"", bundle: 'pro' },
+        { q: "\"She's playing hard to get.\"", a: "\"She is testing to see if our emotional match works. I will have independent confidence and remain cool regardless of her signals.\"", bundle: 'pro' },
+        { q: "\"I need to impress her with my resume.\"", a: "\"Bragging signals that I don't feel worthy as I am. I will let my real, cool self come through without an act.\"", bundle: 'pro' },
+        { q: "I should explain why I am a good guy so she gives me a chance.", a: "\"Explaining myself makes me look lower status. My worth is a default; she is the one who needs to impress me.\"", bundle: 'pro' },
+        { q: "She is playing hard to get, so I should try harder to win her over.", a: "\"She is testing if I am man enough to hold my ground. I remain cool and let her come to me.\"", bundle: 'pro' },
+        { q: "I need to tell her about my accomplishments to build my value.", a: "\"Bragging signals that I don't feel worthy as I am. My presence and frame convey all the value needed.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "True masculine status comes from internal approval, not external validation.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "",
+      inputs: [
+        { q: "I feel anxious when she doesn't laugh at my joke right away.", a: "\"I don't need her immediate laugh to feel validated. I enjoy my own humor and hold my frame.\"", bundle: 'pro' },
+        { q: "I want to apologize whenever she disagrees with my opinion.", a: "\"Disagreement is natural. Holding my perspective without apologizing proves high status.\"", bundle: 'pro' },
+        { q: "I catch myself nodding along to everything she says to seem nice.", a: "\"Agreeing with everything makes me boring. Playful disagreement shows I have a backbone.\"", bundle: 'pro' },
+        { q: "I feel the urge to ask if she is enjoying talking to me.", a: "\"Asking for reassurance signals insecurity. I assume she is having a great time in my presence.\"", bundle: 'pro' },
+        { q: "I hesitate to tease her because I want her to like me.", a: "\"Teasing shows I am not seeking her approval. Safe politeness creates friendship, not attraction.\"", bundle: 'pro' },
+        { q: "I worry that she will leave if I set a boundary on her behavior.", a: "\"Setting boundaries commands respect. A woman cannot feel attracted to a man she can walk over.\"", bundle: 'pro' },
+        { q: "I feel uncomfortable when she gives me a critical look.", a: "\"A critical look is just a confidence test. I stay unshakeable and smile back.\"", bundle: 'pro' },
+        { q: "I try to modify my personality to match what I think she wants.", a: "\"Changing myself for her approval lowers my value. Authentic confidence is what attracts.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Embracing social tension demonstrates strength and creates sexual attraction.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "",
+      inputs: [
+        { q: "I back down immediately when she challenges my statement.", a: "\"Backing down shows weakness. Holding my ground with humor proves I cannot be shaken.\"", bundle: 'pro' },
+        { q: "I avoid calling out her rude behavior because I fear an argument.", a: "\"Tolerating rudeness destroys respect. Calling it out calmly sets a high-status standard.\"", bundle: 'pro' },
+        { q: "I feel nervous when there is a pause in the conversation.", a: "\"Silence is a tool for presence. I don't rush to fill it; I maintain comfortable eye contact.\"", bundle: 'pro' },
+        { q: "I hesitate to tell her to put her phone away.", a: "\"Demanding her presence is high status. I expect full attention when we are talking.\"", bundle: 'pro' },
+        { q: "I avoid making bold statements because she might disagree.", a: "\"Bold statements create exciting conversations. I state my views without fear of pushback.\"", bundle: 'pro' },
+        { q: "I feel scared to tell her that I move slow and she needs to win me over.", a: "\"Setting terms shows I am the prize. She will respect a man who cannot be easily acquired.\"", bundle: 'pro' },
+        { q: "I shrink back when her friends act protective or hostile.", a: "\"Group pressure is just a test of authority. I remain warm, calm, and unfazed.\"", bundle: 'pro' },
+        { q: "I avoid teasing her about her job in case she takes offense.", a: "\"Playful teasing creates fun friction. If she takes offense, I stay calm and let her process it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Physical beauty does not equal social value; I am equal to or better than any woman I meet.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "",
+      inputs: [
+        { q: "I feel intimidated by her expensive clothes and glamorous look.", a: "\"Labels don't define value. I evaluate her character and passion, not her designer outfit.\"", bundle: 'pro' },
+        { q: "I assume she must have dozens of better guys chasing her.", a: "\"Most guys act like needy fans around her. My relaxed, challenging presence makes me rare.\"", bundle: 'pro' },
+        { q: "I feel unworthy because she works in a prestigious profession.", a: "\"A career is just a job. My masculine presence and confidence are what generate attraction.\"", bundle: 'pro' },
+        { q: "I hesitate to approach because she looks higher status than me.", a: "\"High status is conveyed through body language and tone, not background. I step up with authority.\"", bundle: 'pro' },
+        { q: "I feel like I need luck to get a woman like her to talk to me.", a: "\"Attraction isn't about luck; it's about triggering emotional responses through frame control.\"", bundle: 'pro' },
+        { q: "I think I need more money or fame before I can attract top-tier women.", a: "\"Women respond to masculine strength and frame in the moment, not bank accounts.\"", bundle: 'pro' },
+        { q: "I feel inferior when she mentions her wealthy ex-boyfriend.", a: "\"Her past doesn't intimidate me. I am focused on my own value and what I bring now.\"", bundle: 'pro' },
+        { q: "I treat her like a celebrity because of her striking looks.", a: "\"Treating her like a star makes her treat me like a fan. I treat her like a normal girl.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Taking the lead provides security and allows a woman to relax into her feminine energy.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "",
+      inputs: [
+        { q: "I ask her where we should go instead of deciding myself.", a: "\"Leading means making the call. I choose the spot and invite her along.\"", bundle: 'pro' },
+        { q: "I let her dictate the pace and direction of the conversation.", a: "\"I am the director of this interaction. I shift topics when things get dry.\"", bundle: 'pro' },
+        { q: "I wait for her to initiate physical contact or next steps.", a: "\"A man leads with calibrated boldness. I take the step and let her follow.\"", bundle: 'pro' },
+        { q: "I hesitate to tell her to get off her butt and come eat.", a: "\"Dominant leadership is exciting. Playfully directing her creates a fun spark.\"", bundle: 'pro' },
+        { q: "I let her interview me with standard dry questions.", a: "\"I don't submit to an interrogation. I flip the script and evaluate her instead.\"", bundle: 'pro' },
+        { q: "I feel uncomfortable taking charge of a group situation.", a: "\"Leading the group shows high social status. I step up and guide the energy.\"", bundle: 'pro' },
+        { q: "I wait for her to tell me when she is free for a date.", a: "\"I propose specific times and plans. Clear leadership makes it easy for her to say yes.\"", bundle: 'pro' },
+        { q: "I worry that taking the lead will seem bossy.", a: "\"Assertive leadership delivered with warmth is charming, not bossy. Women love it.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  danbacon3: [
+    {
+      name: "Bringing Out the Best",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The belief that her behavior is fixed. In reality, every woman has a \"good girl\" side, and it is your job to create the dynamic that brings it out and keeps it active.",
+      inputs: [
+        { q: "\"She's just a moody person, there's nothing I can do.\"", a: "\"She reacts to the dynamic I create. If I change my approach and stay masculine and leading, her behavior will naturally follow.\"", bundle: 'pro' },
+        { q: "\"I should do more chores so she'll want to have sex with me.\"", a: "\"Sucking up kills attraction. I will be a good man, but she needs to feel the need to win _me_ over to feel sexual desire.\"", bundle: 'pro' },
+        { q: "\"I'm afraid she'll leave if I tell her she's being disrespectful.\"", a: "\"She is testing to see if I'm strong enough to handle her. If I allow bad treatment, she will lose all respect and leave anyway.\"", bundle: 'pro' },
+        { q: "\"I need her to be happy all the time for me to feel good.\"", a: "\"I am emotionally independent. I can be happy even if she's in a mood. My stability is what makes her feel safe.\"", bundle: 'pro' },
+        { q: "\"Being the leader sounds like too much work.\"", a: "\"It's actually the easiest approach. Once the dynamic is set, she gives and gives because it feels good to her. It becomes effortless.\"", bundle: 'pro' },
+        { q: "I'm worried she'll think I'm pushy if I ask her to make me a coffee.", a: "\"Lovingly expecting favors builds a healthy dynamic. She loves being good to me.\"", bundle: 'pro' },
+        { q: "I feel guilty whenever I tell her that her behavior wasn't cool.", a: "\"Setting clear standards protects our respect. Calling out bad behavior is leadership.\"", bundle: 'pro' },
+        { q: "I catch myself seeking her permission before making weekend plans.", a: "\"Taking the lead provides security. Leading the plan makes it easy for her to join.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Emotional independence means handling internal stress without needing her validation.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "",
+      inputs: [
+        { q: "I feel anxious when she doesn't tell me she loves me every day.", a: "\"My self-worth is internal. I don't need constant verbal reassurance to feel secure.\"", bundle: 'pro' },
+        { q: "I want to vent all my work stress to her so she comforts me.", a: "\"I handle my own stress. I share my life without using her as an emotional crutch.\"", bundle: 'pro' },
+        { q: "I panic when she seems quiet or withdrawn for a few hours.", a: "\"Her moods fluctuate naturally. I remain stable and secure in my own value.\"", bundle: 'pro' },
+        { q: "I feel the urge to ask if she is still attracted to me.", a: "\"Asking for attraction reassurance signals insecurity. My confidence creates attraction.\"", bundle: 'pro' },
+        { q: "I seek her approval for every personal decision I make.", a: "\"I trust my own judgment. I lead my life and share the journey with her.\"", bundle: 'pro' },
+        { q: "I feel insecure when she compliments another man's achievements.", a: "\"Other men's success doesn't diminish mine. I am grounded in my own worth.\"", bundle: 'pro' },
+        { q: "I want her to reassure me after I make a mistake at home.", a: "\"I own my mistakes calmly. I don't need her to pat me on the back to feel okay.\"", bundle: 'pro' },
+        { q: "I worry that she will leave if I don't constantly check in on her.", a: "\"Needy checking in smothers attraction. Independent space allows love to grow.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Setting calm boundaries against bad behavior earns lasting respect and protects love.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "",
+      inputs: [
+        { q: "I hesitate to tell her that her rude tone hurt because she might yell.", a: "\"Calling out disrespect isn't an attack. Setting calm standards earns respect.\"", bundle: 'pro' },
+        { q: "I tolerate her tantrums because I want to keep the peace.", a: "\"Peace built on tolerating bad behavior is fake. Firm boundaries create real harmony.\"", bundle: 'pro' },
+        { q: "I worry that holding my ground will cause a breakup.", a: "\"A woman respects a man who stands for his dignity. Fear of breakup kills leadership.\"", bundle: 'pro' },
+        { q: "I feel scared when she gets emotional during a boundary conversation.", a: "\"Emotional storms pass. I stay unshakeable and hold my standard calmly.\"", bundle: 'pro' },
+        { q: "I apologize when she gets mad at me for calling out her behavior.", a: "\"Apologizing for setting a standard surrenders frame. I stand firm on respect.\"", bundle: 'pro' },
+        { q: "I let her break rules because I don't want an uncomfortable scene.", a: "\"Short-term discomfort is the price of long-term respect. I address issues early.\"", bundle: 'pro' },
+        { q: "I feel guilty for expecting her to speak to me politely.", a: "\"Expecting respect is basic self-value. I deserve a polite, loving partner.\"", bundle: 'pro' },
+        { q: "I avoid discussing boundaries until I am furious.", a: "\"Addressing bad behavior early prevents rage. Calm, early feedback works best.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "General leadership means taking responsibility for direction while keeping her involved.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "",
+      inputs: [
+        { q: "I let her pick every restaurant because I fear she won't like my choice.", a: "\"Leading means making a choice. I pick great spots and invite her along.\"", bundle: 'pro' },
+        { q: "I wait for her to plan our weekend because I don't want the effort.", a: "\"Passive men lose attraction. Taking charge of weekend plans shows masculine drive.\"", bundle: 'pro' },
+        { q: "I ask 'What do you want to do?' repeatedly when we are together.", a: "\"Asking constantly is exhausting. I propose clear ideas and execute.\"", bundle: 'pro' },
+        { q: "I hesitate to delegate chores because I think she will refuse.", a: "\"Lovingly expecting help builds teamwork. I delegate warmly and confidently.\"", bundle: 'pro' },
+        { q: "I feel nervous taking the lead on booking vacations.", a: "\"Taking responsibility for adventures creates excitement. I lead the journey.\"", bundle: 'pro' },
+        { q: "I surrender control of our social calendar entirely to her.", a: "\"I set priorities for our time. Leading our social calendar keeps us balanced.\"", bundle: 'pro' },
+        { q: "I let her decide how we spend our evenings every single day.", a: "\"I direct our evening energy. Leading activities keeps the relationship fresh.\"", bundle: 'pro' },
+        { q: "I worry she will criticize my choice if a date spot is mediocre.", a: "\"Not every choice is perfect. Owning the plan with humor maintains high status.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  danbacon4: [
+    {
+      name: "Independent Confidence",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal stance that your value and your mood are not dependent on her signals or behavior. You are in control of your own confidence.",
+      inputs: [
+        { q: "\"She is being moody, so I must have done something wrong.\"", a: "\"She is a woman; her moods fluctuate. I will remain stable and leading, and her behavior will naturally follow my masculine frame.\"", bundle: 'pro' },
+        { q: "\"I should abide by her rules to avoid an argument.\"", a: "\"Avoiding conflict at the cost of my balls makes me unattractive. I will lovingly challenge her BS to keep the spark alive.\"", bundle: 'pro' },
+        { q: "\"I need her to reassure me that she still loves me.\"", a: "\"I don't need her 'pat on the back' to feel worthy. I know I am a good man, and she is lucky to be with me.\"", bundle: 'pro' },
+        { q: "\"I'm afraid she'll leave if I act too dominant.\"", a: "\"She is testing to see if I am man enough for her. If I allow her to be the leader, she will lose all respect and leave anyway.\"", bundle: 'pro' },
+        { q: "\"I should only show her my best, most positive self.\"", a: "\"Hiding my real moods makes me a fake 'nice guy.' Authenticity is what creates a real emotional connection.\"", bundle: 'pro' },
+        { q: "She is acting cold, so I must have done something wrong.", a: "\"Her moods fluctuate naturally. I remain stable and leading, and her behavior will follow.\"", bundle: 'pro' },
+        { q: "I should abide by her rules to avoid an argument.", a: "\"Avoiding conflict at the cost of my frame kills attraction. I challenge her rules with humor.\"", bundle: 'pro' },
+        { q: "I need her to reassure me that she still loves me.", a: "\"I don't need her verbal reassurance to know my worth. I am grounded in my value.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A woman respects a man who stands firm against arbitrary rules with humor and warmth.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "",
+      inputs: [
+        { q: "I feel obligated to follow her texting curfew rules.", a: "\"I text when I choose. Obeying artificial curfews makes me look weak and controlled.\"", bundle: 'pro' },
+        { q: "I worry she will break up if I squeeze her butt after she banned it.", a: "\"Testing boundaries with playful affection proves I am not intimidated by her rules.\"", bundle: 'pro' },
+        { q: "I hesitate to watch my favorite show because she wants her channel on.", a: "\"Surrendering my choices constantly turns me into a doormat. I state my preference.\"", bundle: 'pro' },
+        { q: "I feel guilty when I refuse to abide by her arbitrary demands.", a: "\"Refusing petty control is healthy self-respect. I hold my frame without guilt.\"", bundle: 'pro' },
+        { q: "I let her dictate where I am allowed to go on weekends.", a: "\"I manage my own time. She is welcome to join my journey, not restrict it.\"", bundle: 'pro' },
+        { q: "I apologize when she gets mad at me for breaking a silly rule.", a: "\"Apologizing for minor playful boundary breaks surrenders masculine authority.\"", bundle: 'pro' },
+        { q: "I change my wardrobe because she criticized my favorite shirt.", a: "\"I wear what I like with confidence. I don't alter my style to appease her.\"", bundle: 'pro' },
+        { q: "I feel scared to say 'whatever' to her ridiculous restrictions.", a: "\"Dismissing arbitrary rules with humor shows supreme confidence and charm.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Making her earn my approval creates the challenge attractive women crave.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "",
+      inputs: [
+        { q: "I always let her choose the restaurant so she stays happy.", a: "\"Catering to her constantly kills excitement. Making her pitch options keeps it fun.\"", bundle: 'pro' },
+        { q: "I agree with her opinions even when I think she is wrong.", a: "\"Fake agreement destroys authenticity. Stating my real view creates real connection.\"", bundle: 'pro' },
+        { q: "I feel anxious whenever she expresses slight disappointment.", a: "\"Disappointment is part of life. I don't panic or bend over backward to fix it.\"", bundle: 'pro' },
+        { q: "I hesitate to make her win me over because I fear she'll stop trying.", a: "\"Women love a challenge. Making her earn my favor increases her investment.\"", bundle: 'pro' },
+        { q: "I buy her gifts whenever she asks to keep her pleased.", a: "\"Gifts must be earned, not demanded. I reward good behavior, not entitled asks.\"", bundle: 'pro' },
+        { q: "I change my vacation ideas to match whatever she wants.", a: "\"I hold my preference and make her pitch why her option is better.\"", bundle: 'pro' },
+        { q: "I suppress my playful teasing so I don't risk annoying her.", a: "\"Teasing creates emotional spikes. Safe politeness leads straight to the friend zone.\"", bundle: 'pro' },
+        { q: "I try to anticipate her every desire before she even asks.", a: "\"Over-servicing smothers attraction. I let her step up and contribute to us.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Authenticity and real emotional expression build genuine trust and attraction.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "",
+      inputs: [
+        { q: "I pretend I enjoyed a movie I hated just to keep harmony.", a: "\"Sharing my authentic opinion shows I have a real identity and strong taste.\"", bundle: 'pro' },
+        { q: "I hide that I had a stressful day because I fear looking weak.", a: "\"Reporting that I handled a hectic day shows strength, not weakness.\"", bundle: 'pro' },
+        { q: "I hold back my silly jokes because I worry she won't laugh.", a: "\"Expressing my real humor shows I am unbothered by her judgment.\"", bundle: 'pro' },
+        { q: "I hide my fatigue and force a fake happy smile around her.", a: "\"Fake happiness is transparent. I state my mood calmly and handle my energy.\"", bundle: 'pro' },
+        { q: "I suppress my passion for my hobbies because she thinks they're nerdy.", a: "\"Owning my passions without shame is high status and deeply attractive.\"", bundle: 'pro' },
+        { q: "I hesitate to tell her I'm in a silly mood in case she's serious.", a: "\"Leading the mood with playful energy breaks her serious frame.\"", bundle: 'pro' },
+        { q: "I keep my opinions to myself during arguments to end them faster.", a: "\"Silent compliance breeds resentment. I state my truth calmly and stand firm.\"", bundle: 'pro' },
+        { q: "I hide my physical desire because I fear coming on too strong.", a: "\"Expressing grounded masculine desire is natural and exciting for her.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor2: [
+    {
+      name: "Substance Over Form",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal shift required to stop worrying about \"the perfect words\" and start focusing on your \"true intention.\" If your intention is to be a loving, peaceful, and professional person, the words will follow naturally.",
+      inputs: [
+        { q: "I'm afraid I'll stumble over my words when I say no.", a: "\"The form (words) is less important than the substance (intention). If my intention is to be a productive teammate, they will feel that regardless of stumbles.\"", bundle: 'pro' },
+        { q: "I feel like a \"witch\" or a \"jerk\" for setting a boundary.", a: "\"I am made of love, and setting boundaries is an act of self-love. To communicate from a place of lovelessness is a perversion of who I am.\"", bundle: 'pro' },
+        { q: "I need to win this argument to prove I'm right.", a: "\"If I'm focused on 'winning,' I've already lost. I choose to focus on being a problem-solver and maintaining peace.\"", bundle: 'pro' },
+        { q: "My boss's bad mood is ruining my day.", a: "\"I am the cause, not the effect. I refuse to let their chaos dictate who I am or how I communicate today.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "We Train People How To Treat Us",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Accepting total responsibility for the patterns of behavior you allow in your workspace. What gets rewarded gets repeated. If you allow the \"Time Sucker\" to stay, you are rewarding them with your attention.",
+      inputs: [
+        { q: "People always dump work on me; it's so unfair.", a: "\"The first time was about them. The 10th time is about me. I am training them that I am the one who always says yes.\"", bundle: 'pro' },
+        { q: "I shouldn't have to use a sign; they should just know I'm busy.", a: "\"I cannot expect people to follow rules I haven't spelled out clearly. It's my job to lay down the ground rules.\"", bundle: 'pro' },
+        { q: "I have to explain myself so they don't think I'm lazy.", a: "\"I only defend what I believe to be vulnerable. If I'm a competent professional, my work speaks for itself. Explaining looks like weakness.\"", bundle: 'pro' },
+        { q: "I'll just do it this one last time to keep the peace.", a: "\"Keeping a false peace is rewarding their intrusion. If I want the behavior to stop, I must take away the reward today.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor3: [
+    {
+      name: "Substance Over Form",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal shift from \"What will they think of me?\" to \"Who am I being in this moment?\"",
+      inputs: [
+        { q: "I'm afraid I'll look mean if I use the \"Irrelevant\" block.", a: "\"I am made of love, and setting professional boundaries is an act of self-love. I refuse to let your chaos dictate who I am today.\"", bundle: 'pro' },
+        { q: "I need to explain my side so they don't think I'm wrong.", a: "\"I only defend what I believe to be vulnerable. My competence is not vulnerable, so I have nothing to explain to you.\"", bundle: 'pro' },
+        { q: "They are \"winning\" the argument because everyone is laughing.", a: "\"If I'm focused on 'winning,' I've already lost. I choose to focus on maintaining my dignity and my professional standard.\"", bundle: 'pro' },
+        { q: "I have to respond to every jab or they'll think I'm weak.", a: "\"I am the cause, not the effect. I decide who is worthy of my attention, and this interaction is not.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor4: [
+    {
+      name: "Influential Leadership",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal shifts from \"Reaction\" to \"Intention.\" Leaders are the cause, never just the effect.",
+      inputs: [
+        { q: "I have to explain myself so they understand my side.", a: "\"We only defend what we believe to be vulnerable. My position is based on data and merit; explaining makes it look weak. I choose to state the instruction and move on.\"", bundle: 'pro' },
+        { q: "My boss's bad mood is ruining my confidence.", a: "\"I am the cause, not the effect. I refuse to let their chaos dictate who I am or how I communicate today. I will reflect on my personal compass before I speak.\"", bundle: 'pro' },
+        { q: "It's just easier to say \"it's okay\" when someone messes up.", a: "\"Don't tell people it's okay when it wasn't okay five seconds ago. I will say 'I accept your apology' or 'I forgive you' instead to maintain my worth.\"", bundle: 'pro' },
+        { q: "I'm afraid people will think I'm arrogant if I use power phrases.", a: "\"Professional communication is a game, and these are the rules. People respect those who know the moves. Dignity is not arrogance.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor5: [
+    {
+      name: "Executive Presence",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal shifts required to stop \"acting\" like an intern and start \"being\" a leader.",
+      inputs: [
+        { q: "I don't want to look like I'm \"too much\" or arrogant.", a: "\"Dignity is not arrogance. Taking up space and speaking clearly is a favor to the room; it makes it easier for everyone to know where they stand.\"", bundle: 'pro' },
+        { q: "I'll just wait for them to give me a seat or tell me where to go.", a: "\"I am the cause, not the effect. I don't wait for permission to belong; I act like I'm in my own home because I have dominion here.\"", bundle: 'pro' },
+        { q: "I'm too nervous to speak loudly.", a: "\"I will act myself into a new way of thinking. If I speak like a confident person, my biochemistry will eventually catch up and make me one.\"", bundle: 'pro' },
+        { q: "I have to keep staring at them so they know I'm paying attention.", a: "\"Polished communicators know the 7-second rule. I will use the 'Look Away' to show I am comfortable with power, not psychotic.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor6: [
+    {
+      name: "Mindful Resilience",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal shifts required to move from \"Victim of Circumstance\" to \"Cause of Change.\"",
+      inputs: [
+        { q: "I'm afraid if I keep repeating myself I'll look stupid.", a: "\"The moment I introduce a new defense, I have lost. I choose the power of the Broken Record to show my message is valid and unchanging.\"", bundle: 'pro' },
+        { q: "If I say 'I forgive you,' it sounds too religious or heavy.", a: "\"It sounds like a person who knows their worth. 'It's okay' is a lie that hurts me; 'I forgive you' is the truth that heals me.\"", bundle: 'pro' },
+        { q: "My boss already knows I'm doing a good job; I don't need a journal.", a: "\"Numbers speak louder than memories. My boss is busy; the Value Journal is a gift that makes it easy for them to justify my success to their boss.\"", bundle: 'pro' },
+        { q: "I have to tell myself 'I will not get angry' so I don't blow up.", a: "\"My brain doesn't process 'not.' I will use a present, positive coping statement like 'I am calm' to give my brain a clear instruction.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor7: [
+    {
+      name: "Substance Over Form",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal posture of a person who values connection over \"getting the words right.\"",
+      inputs: [
+        { q: "I'm too nervous to start a conversation with that executive.", a: "\"I belong here as much as anyone else. I am comfortable as if I were in my own home, and I have a service attitude to offer.\"", bundle: 'pro' },
+        { q: "If I ask for a favor, they'll think I'm a nuisance.", a: "\"People love being asked for help. A simple favor is a gift I give them to justify why they like me.\"", bundle: 'pro' },
+        { q: "I'm afraid I'll forget their name and look stupid.", a: "\"Memory is a game, not a talent. I will use my visual hooks and repeats because I value their identity more than my ego.\"", bundle: 'pro' },
+        { q: "I don't want to look arrogant by taking up space.", a: "\"Dignity is not arrogance. Taking up space and moving my chair forward is a sign that I am present and open to the message.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy1: [
+    {
+      name: "The Foundation of Safety",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal posture required to build a relationship that lasts. It shifts from \"fear of loss\" to \"commitment to self-worth.\"",
+      inputs: [
+        { q: "I'm afraid if I talk about my non-negotiables, they'll leave.", a: "\"If they leave because of my values, they weren't my person anyway. Better to know now than in ten years.\"", bundle: 'pro' },
+        { q: "I feel like I have to earn their love through performance.", a: "\"I am already whole and valuable. Love is a gift to be reciprocated, not a wage to be earned.\"", bundle: 'pro' },
+        { q: "Yelling is just how my family always communicated.", a: "\"My past explains my patterns, but it doesn't justify them. I choose emotional maturity today.\"", bundle: 'pro' },
+        { q: "I should be able to change them if I just love them enough.", a: "\"I can't 'out-love' their lack of interest in growth. I can only control my own standard for safety.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy2: [
+    {
+      name: "Healthy Expression",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal shifts required to move from \"protecting yourself\" to \"prioritizing the relationship\".",
+      inputs: [
+        { q: "I shouldn't have to tell them what I need; they should just know.", a: "\"Assuming they can read my mind is an unhealthy need. I choose the maturity of being clear and direct.\"", bundle: 'pro' },
+        { q: "If I’m vulnerable, they’ll use it as ammunition later.", a: "\"I can't have closeness without vulnerability. If they punish my honesty, that is information about their character, not my worth.\"", bundle: 'pro' },
+        { q: "I feel like I'm \"walking on eggshells\" to avoid a fight.", a: "\"Keeping the peace at the cost of my honesty is self-abandonment. I deserve a relationship where the real me is known.\"", bundle: 'pro' },
+        { q: "My anger is proof that they are the bad guy.", a: "\"My anger is a signal that a boundary was crossed or a need was unmet. It’s an invitation to communicate, not to convict.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy3: [
+    {
+      name: "Listening & Presence",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal posture of being a \"Detective of the Heart\" rather than a \"Judge of the Facts\".",
+      inputs: [
+        { q: "If I validate them, they'll think they're \"right\" and I'm \"wrong.\"", a: "\"Validation isn't about facts; it's about acknowledging their humanity. We can handle the facts once they feel safe.\"", bundle: 'pro' },
+        { q: "Their bids for connection are so small and annoying.", a: "\"These 'small' moments are the bricks that build our house. If I ignore them, the house eventually collapses.\"", bundle: 'pro' },
+        { q: "I don't have the energy to be a \"safe harbor\" right now.", a: "\"It's okay to be tired. I will communicate my limit respectfully instead of punishing their need for connection.\"", bundle: 'pro' },
+        { q: "They should just be 'strong' and get over their feelings.", a: "\"Vulnerability is the true strength. I am helping us both grow by holding space for these emotions.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy4: [
+    {
+      name: "Handling Conflict",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal posture needed to move from \"US vs. THEM\" to \"US vs. THE PROBLEM\".",
+      inputs: [
+        { q: "If I walk away for a break, they'll think I don't care.", a: "\"Leaving a fight to get regulated is an act of love for the relationship. I am protecting us from my own worst impulses.\"", bundle: 'pro' },
+        { q: "I have to prove that my facts are right or I'm a failure.", a: "\"My partner's feeling is real regardless of my facts. I can be 'right' and still lose the connection. I choose connection.\"", bundle: 'pro' },
+        { q: "Apologizing first makes me the \"submissive\" one in the relationship.", a: "\"Apologizing first is a sign of leadership and maturity. I am the lead repenter on our team.\"", bundle: 'pro' },
+        { q: "They should just get over the past; I’ve already changed.", a: "\"Validation is the fastest way to move forward. If I run from their past pain, I keep us stuck in it.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy5: [
+    {
+      name: "Nurturing Connection",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal posture of a partner who views the relationship as a \"third entity\" that needs constant watering and sunlight.",
+      inputs: [
+        { q: "I shouldn't have to \"work\" this hard if we truly love each other.", a: "\"Love is the fuel, but intentionality is the engine. Even the best car doesn't run without maintenance.\"", bundle: 'pro' },
+        { q: "If I do more chores, I'm just rewarding their laziness.", a: "\"I am serving my partner because I love them, not to 'win' a competition. My initiative builds the trust we both need.\"", bundle: 'pro' },
+        { q: "Why should I be the one to initiate the check-in every time?", a: "\"Initiating is an act of leadership. I value our connection more than I value being the 'second' one to care.\"", bundle: 'pro' },
+        { q: "They already know I'm grateful; I don't need to say it.", a: "\"Unexpressed gratitude feels like entitlement to the receiver. I choose to make my partner feel valued out-loud.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy6: [
+    {
+      name: "Defending Your Worth",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal shifts required to move from \"protecting them\" to \"honoring yourself.\"",
+      inputs: [
+        { q: "If I set this boundary, I’m being \"mean\" or \"abandoning\" them.", a: "\"They abandon me every time they mistreat me. Honoring my limits is an act of love for both of us.\".", bundle: 'pro' },
+        { q: "Maybe I really _am_ the problem like they say.", a: "\"They have never once asked themselves that question. That is all I need to know about who is truly interested in growth.\".", bundle: 'pro' },
+        { q: "I have to stay to save them from their own pain.", a: "\"I cannot 'out-love' their refusal to heal. I am not a life raft for someone who keeps poking holes in the boat.\".", bundle: 'pro' },
+        { q: "I'm too \"needy\" for wanting to be treated with respect.", a: "\"What one person calls 'too needy,' the right person calls 'exactly what I want to give.' Respect is the bare minimum.\".", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv1: [
+    {
+      name: "Assuming the Burden",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The belief that she should be helping you keep the conversation going. In reality, because you initiated, you must \"start the lawnmower\" by providing 90% of the energy for the first minute.",
+      inputs: [
+        { q: "It feels awkward and I want to leave.", a: "\"Stay 20 more seconds. Force yourself to live with the nervousness. It's a fractional success just to stay.\"", bundle: 'pro' },
+        { q: "I don't know what to say next.", a: "\"Anything is better than silence. Ramble if you have to. Feed the 'conversation baby' until it can walk on its own.\"", bundle: 'pro' },
+        { q: "She's not being very talkative.", a: "\"She's probably just as nervous as you are. Assume she wants to talk but doesn't know how yet.\"", bundle: 'pro' },
+        { q: "I feel like I'm trying too hard.", a: "\"The only way to be 10% better than the average guy is to take the responsibility for the vibe on your own shoulders.\"", bundle: 'pro' },
+        { q: "I'm waiting for a perfect moment to open.", a: "\"There are no perfect moments. Walk over and make a noise. Everything after that is just an experiment.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv2: [
+    {
+      name: "The Willingness to Offend",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The fear of losing the interaction stops most guys from teasing or negging. You must be willing to \"risk the immediate pain\" of an awkward moment to give yourself an actual chance at sexual tension.",
+      inputs: [
+        { q: "I'm afraid she'll get angry if I tease her.", a: "\"I'd much rather get rejected or offend someone than hear 'nice to meet you' after another boring conversation.\"", bundle: 'pro' },
+        { q: "I don't want to be mean.", a: "\"A neg isn't an insult; it's unintentional honesty. High-value guys state their mind and aren't afraid of a little friction.\"", bundle: 'pro' },
+        { q: "I should be nice to her because she's so hot.", a: "\"If all I have is nice behaviors, I will be less trusted and seen as having an agenda. Friction creates attraction.\"", bundle: 'pro' },
+        { q: "What if she calls my bluff when I disqualify?", a: "\"If she's willing to let me walk away, the set was already dead. Fundamentally being non-needy is how I win.\"", bundle: 'pro' },
+        { q: "I feel like I'm manipulating her.", a: "\"Push-pull and teasing are just giving her a fun experience. It's foreplay. She'll have better sex and a more fun night because of the tension.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv3: [
+    {
+      name: "The \"Us\" Narrative",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The belief that the conversation is about \"me versus her.\" In reality, the most obsessive connections are built when you create a shared \"Story of Us\" or a \"We\" frame.",
+      inputs: [
+        { q: "I'm worried about being too cocky.", a: "\"It's not cocky if she's in on the joke. Frame it as 'we' are a cute couple or 'we' are trouble together.\"", bundle: 'pro' },
+        { q: "I don't want to tell her too much about myself.", a: "\"Vulnerability is strength. Telling a story about a time you were lost or failed builds Comfort and trust.\"", bundle: 'pro' },
+        { q: "I'm waiting for her to ask me something interesting.", a: "\"Lead the way. Offer your perspective first, and she will follow your lead to report to you.\"", bundle: 'pro' },
+        { q: "I feel like I'm just 'hitting on' her.", a: "\"You aren't hitting on her; you are interviewing her for the role of 'Future Ex-Wife.' You are the Selector.\"", bundle: 'pro' },
+        { q: "What if her 'Blueprint' is totally different from mine?", a: "\"Find the overlap. Even with different backgrounds, you both have dreams and passions. Connect on the emotion, not the fact.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv4: [
+    {
+      name: "Empathy, Not Sympathy",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The belief that you are being \"pushy\" or \"rude\" by trying to close. In reality, you are a problem solver. Sympathy buys into her excuses; Empathy understands the obstacle and helps her overcome it so you can both have a great time.",
+      inputs: [
+        { q: "I don't want to be that pushy guy.", a: "\"I owe it to her to be a hard closer. If I'm a high-value guy, she'll have a better night with me than with some other guy who doesn't care about her.\"", bundle: 'pro' },
+        { q: "She gave me an objection, so I should stop.", a: "\"Most sales and most dates are only closed after at least three attempts. An objection is just a 'not yet,' not a 'no forever.'\"", bundle: 'pro' },
+        { q: "What if she says no and it's awkward?", a: "\"I'd much rather fail by going for it than fail by not trying. I'm proud of myself for giving us an actual chance.\"", bundle: 'pro' },
+        { q: "I need her to logically agree before we move.", a: "\"Stop asking for permission. Leadership is assuming the move and letting her follow. 'Sco' game is high-value game.\"", bundle: 'pro' },
+        { q: "I'm worried about 'point of no return' flakes.", a: "\"I will take the escalation slow and pull away first. I want her to be the one chasing the resolution, not me.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv5: [
+    {
+      name: "True Self-Esteem",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The belief that your value depends on her reaction. True self-esteem comes from accepting exactly where you are—flaws and all—and doing the right thing regardless of the result.",
+      inputs: [
+        { q: "I'm too short/bald/ugly for her.", a: "\"I accept who I am. I'm the best short guy in the world. Rejection is a rejection of the moment, not of me.\"", bundle: 'pro' },
+        { q: "I'm afraid of being judged by the group.", a: "\"If I fail by going for it, I can be proud. If I fail by not trying, I'll never know. I choose to give us a chance.\"", bundle: 'pro' },
+        { q: "I need this specific girl to like me.", a: "\"I am outcome independent. I want sex, but I'm completely okay if it doesn't happen with her. There's another girl coming.\"", bundle: 'pro' },
+        { q: "I'm worried I'll look like a player.", a: "\"If I'm being my honest self and taking risks, I'm an enhancement to her life. A player with heart is a win for her.\"", bundle: 'pro' },
+        { q: "I feel like a beginner and it's embarrassing.", a: "\"We were all beginners once. My job is just to walk over and make a noise. Everything else is practice.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  firststrategies: [
+    {
+      name: "Speaking First",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I can't think of anything worth saying.\"\n\n**What is true instead:** the bar is one true, ordinary sentence. That is the whole bar.\n\n**Why it feels right:** the remarks you remember other people making are the good ones. You never hear the hundreds of dull ones that worked perfectly well.\n\n**What it costs:** every ordinary remark gets measured against an imagined standard and thrown away, and the silence that follows is far more awkward than the remark would have been.\n\nMindset: nobody remembers the sentence. They remember that someone spoke to them.",
+      inputs: [
+        { q: "I can't think of anything worth saying.", a: "It doesn't have to be worth saying. \"That queue hasn't moved\" is enough.", bundle: 'free' },
+        { q: "They'll think it's a stupid thing to say.", a: "They will have forgotten it by the time they get to the till.", bundle: 'free' },
+        { q: "I'm not a natural at this.", a: "Almost nobody is. The ones who look natural are using about six things on repeat.", bundle: 'free' },
+        { q: "If I start it, I'll have to keep it going.", a: "They get a turn too. That's what makes it a conversation and not a speech.", bundle: 'free' },
+        { q: "Everyone else finds this easy.", a: "Everyone else is looking at their phone in the queue for exactly the same reason you are.", bundle: 'free' },
+        { q: "I'll say something and then have nothing to follow it with.", a: "You won't need one. They answer, and their answer is your next line.", bundle: 'free' },
+        { q: "There's nothing in here worth remarking on anyway.", a: "There never is. The remark isn't about the room — it's about starting.", bundle: 'free' },
+        { q: "I've left it too long now. It would be strange to speak.", a: "Nobody is timing it. People notice you far less than you think they do.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Questions",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Asking about them is the polite way in.\"\n\n**What is true instead:** a remark asks for nothing. It can be picked up or let go, and either is fine.\n\n**Why it feels right:** a question does show interest, and interest is exactly what you are trying to show. That part is true.\n\n**What it costs:** a question is also a small demand — an answer, on the spot, from someone who may be tired or busy or shy. And an unanswered question is awkward in a way an unanswered remark never is.\n\nMindset: give first, ask later. The question is better once there is something to be curious about.",
+      inputs: [
+        { q: "Asking about them is the polite way in.", a: "It's also work for them. A remark lets them choose whether to join.", bundle: 'free' },
+        { q: "If I don't ask, I'm making it about me.", a: "One sentence about the room isn't about you. It's about the room.", bundle: 'free' },
+        { q: "They didn't answer my question and now it's worse.", a: "That's the risk a question carries. An unanswered remark isn't awkward at all.", bundle: 'free' },
+        { q: "I'll ask something to show I'm interested.", a: "Show it by picking up what they've already said. That proves more than a new question.", bundle: 'free' },
+        { q: "Statements sound like I'm just talking at them.", a: "Two in a row does. One, then listening, is an opening.", bundle: 'free' },
+        { q: "A statement feels blunter than a question.", a: "Blunt is a tone, not a form. \"That queue\" said warmly is not blunt.", bundle: 'free' },
+        { q: "What if they don't pick it up?", a: "Then nothing has happened. That is exactly what a remark is for.", bundle: 'free' },
+        { q: "Polite people ask questions.", a: "Polite people also let others off. A remark does that; a question can't.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Refusals",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"They'll be hurt if I say no.\"\n\n**What is true instead:** a clear no is a favour. It lets them ask someone else today.\n\n**Why it feels right:** refusing does land on a person, and you can watch it happen. Softening it is an attempt to protect them, not cowardice.\n\n**What it costs:** the softening is what actually costs them. A vague no leaves them waiting, planning around you, and asking again — and you have to say it twice.\n\nMindset: soften the delivery, never the answer. An unclear no is not kindness, it is postponement.",
+      inputs: [
+        { q: "They'll be hurt if I say no.", a: "They'll be more inconvenienced by a maybe that turns into a no next week.", bundle: 'free' },
+        { q: "I need a good enough reason first.", a: "You don't owe a reason. \"I can't this time\" is a complete sentence.", bundle: 'free' },
+        { q: "If I explain properly they'll understand.", a: "Every reason you add is something they can solve. Then you're negotiating.", bundle: 'free' },
+        { q: "Saying no makes me difficult.", a: "It makes you predictable. People trust a yes more when a no is possible.", bundle: 'free' },
+        { q: "I'll just do it, it's easier.", a: "It's easier today. Notice what it costs on Thursday.", bundle: 'free' },
+        { q: "They asked me specifically, so it must matter.", a: "It might. That still doesn't make a no unkind — only slower to arrive.", bundle: 'free' },
+        { q: "I said yes last time, so I can't say no now.", a: "Last time was last time. A yes isn't a subscription.", bundle: 'free' },
+        { q: "I'll say no, but soften it so it barely counts.", a: "Then it isn't a no, and they'll be back on Thursday to ask again.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Modesty",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"They don't really want to hear about my week.\"\n\n**What is true instead:** they asked. A question is an offer, not a formality.\n\n**Why it feels right:** it is modesty, and modesty is a good instinct. Nobody wants to be the person who talks about themselves.\n\n**What it costs:** it puts the whole job on the other person. After two or three closed answers most people conclude you would rather not talk, and stop asking.\n\nMindset: one extra detail is not taking up space. It is the polite half of being asked.",
+      inputs: [
+        { q: "They don't really want to hear about my week.", a: "They asked. A question is an offer, not a formality.", bundle: 'free' },
+        { q: "I don't want to go on about myself.", a: "One detail isn't going on. \"Fine, apart from the drive\" is the whole technique.", bundle: 'free' },
+        { q: "Nothing interesting has happened to me.", a: "The printer, the bread, the locked door. Small and true beats interesting.", bundle: 'free' },
+        { q: "It's better to ask them back straight away.", a: "Answer first, then ask. Otherwise they're carrying the whole thing alone.", bundle: 'free' },
+        { q: "If I say more they'll ask more.", a: "Yes. That's the conversation you said you wanted.", bundle: 'free' },
+        { q: "My week has been dull. There's nothing to hand over.", a: "Dull is fine. \"Quiet, which I badly needed\" is a hook.", bundle: 'free' },
+        { q: "They're only asking to be polite.", a: "Maybe. Answer properly anyway, and find out which it was.", bundle: 'free' },
+        { q: "If I say something real they'll have to respond to it.", a: "One detail isn't a confession. It's a door, and they can walk through it or not.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Favours",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I ask, they'll feel they have to say yes.\"\n\n**What is true instead:** you are giving them a choice, not taking one away. Ask plainly and leave the no available.\n\n**Why it feels right:** a request badly made does corner people. The concern is real; it is the conclusion that is wrong.\n\n**What it costs:** hinting instead. It spares you the no and almost never gets you the thing — and the other person either misses it or has to decide without being asked, which is worse for them, not better.\n\nMindset: a no is an answer, not an incident. It is the maybe that is awkward.",
+      inputs: [
+        { q: "If I ask, they'll feel they have to say yes.", a: "Only if you make it hard to refuse. Ask plainly and leave the no on the table.", bundle: 'free' },
+        { q: "I'll drop a hint and see if they offer.", a: "A hint spares you the no. It also almost never gets you the thing.", bundle: 'free' },
+        { q: "They're busy. It isn't fair to ask.", a: "They know what they've got on. Let them be the one who decides.", bundle: 'free' },
+        { q: "I should have a good reason ready first.", a: "Reasons turn a question into a case. Ask, then stop talking.", bundle: 'free' },
+        { q: "I'd rather struggle than put someone out.", a: "You'd help them. The reluctance is about you, not about them.", bundle: 'free' },
+        { q: "If they say no it'll be awkward.", a: "A no is an answer, not an incident. It's the maybe that's awkward.", bundle: 'free' },
+        { q: "I'll ask for less than I need, to be safe.", a: "Then you'll have to ask twice. Ask for the thing you actually want.", bundle: 'free' },
+        { q: "Asking makes me look like I can't cope.", a: "Asking early looks organised. Asking late looks desperate.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Pauses",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"It's gone quiet. I've lost them.\"\n\n**What is true instead:** a pause is where people think. Two seconds is not a verdict.\n\n**Why it feels right:** silence in a conversation is uncomfortable, and only one of you is treating it as a problem — which is exactly why it feels like your job to fix.\n\n**What it costs:** the panic changes the subject, and a change of subject throws away everything already on the table. The thing that would have rescued it was said four minutes ago.\n\nMindset: the gap is not the problem. What you do to escape it is.",
+      inputs: [
+        { q: "It's gone quiet. I've lost them.", a: "A pause is where people think. Two seconds is not a verdict.", bundle: 'free' },
+        { q: "I need a new subject, quickly.", a: "You need an old one. Anything from the last ten minutes is still open.", bundle: 'free' },
+        { q: "The silence is my fault.", a: "There are two of you. Neither owes the room a sentence every second.", bundle: 'free' },
+        { q: "I'll fill it with anything rather than sit in it.", a: "Anything is how a conversation ends up nowhere. Go back instead.", bundle: 'free' },
+        { q: "If I return to something they said, it'll seem odd.", a: "Going back reads as interest. Changing the subject reads as rescue.", bundle: 'free' },
+        { q: "They've stopped talking, so they want to leave.", a: "Or they're waiting. Say something back and find out which.", bundle: 'free' },
+        { q: "I need a second before I answer that.", a: "Take it out loud. \"So the choice is stay or go\" buys you the second.", bundle: 'free' },
+        { q: "Good conversations don't have gaps.", a: "They are mostly gaps. The comfortable ones are what makes them good.", bundle: 'free' },
+      ]
+    },
+  ],
+  jfisher1: [
+    {
+      name: "Hostility",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I am being attacked, so I must strike back with a poetic zinger to survive and win the moment.\"\n\n• **Hostility is their projection** — their ugly words are about their insecurity, not your worth.\n• **The zinger has a bad aftertaste** — winning an argument with a punch leaves you first up to apologize.\n• **Stay still to stand firm** — when they dig a hole, let them fall in it alone.\n\nMindset: You do not need to prove yourself to a hostile speaker. Protect your peace.",
+      inputs: [
+        { q: "I must strike back immediately to prove I won the moment.", a: "Hostility is their projection, not my threat. Stay regulated.", bundle: 'pro' },
+        { q: "If I don't send a zinger back, I look weak or slow.", a: "Silence is control. It forces them to hear their own words.", bundle: 'pro' },
+        { q: "They said something ugly, so they deserve to be hurt.", a: "Zingers leave a bad aftertaste. The goal is to protect your peace.", bundle: 'pro' },
+        { q: "I have to convince them that their insult is wrong.", a: "You don't need their agreement to hold your ground.", bundle: 'pro' },
+        { q: "If they yell, I have to match their volume to be heard.", a: "Control the pace. Lowering your volume shows real authority.", bundle: 'pro' },
+        { q: "I must defend my reputation in front of everyone.", a: "Grounded people don't fear the truth. State it and close the door.", bundle: 'pro' },
+        { q: "If I don't respond, they have gained power over me.", a: "Refusing to carry their negative energy is the ultimate power move.", bundle: 'pro' },
+        { q: "They are attacking me because I did something wrong.", a: "Their delivery is their responsibility. You own only your reaction.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Apologies",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If there is tension, friction, or silence in the room, I must apologize immediately to make it go away.\"\n\n• **Save apologies for intentional mistakes** — over-apologizing for being alive or having boundaries corrodes your self-worth.\n• **Tension is not a failure** — standing firm in your boundaries is kinder than placating a pushy personality.\n• **Spoken gratitude replaces apologies** — replace \"Sorry for my delay\" with \"Thank you for your patience.\"\n\nMindset: Calm confidence does not need to beg for forgiveness for occupying space.",
+      inputs: [
+        { q: "If there is tension, I must apologize immediately to make it go away.", a: "Save apologies for real, intentional mistakes. Standing firm is kinder.", bundle: 'pro' },
+        { q: "I should say sorry for taking up their time or desk space.", a: "Your self-worth is not tied to how little of an inconvenience you make yourself.", bundle: 'pro' },
+        { q: "Apologizing is the safest way to de-escalate a hostile client.", a: "Placating an aggressive person only reinforces their bad behavior.", bundle: 'pro' },
+        { q: "If I don't apologize, they will think I'm a difficult person.", a: "Being clear is kind. Vague apologies just postpone the boundary.", bundle: 'pro' },
+        { q: "I must say sorry for being late even if it was traffic.", a: "Replace the weak apology with spoken gratitude: \"Thank you for waiting.\"", bundle: 'pro' },
+        { q: "Saying sorry shows I have high emotional intelligence.", a: "Over-apologizing shows insecurity. Own your space with dignity.", bundle: 'pro' },
+        { q: "I should apologize for having a different opinion in a meeting.", a: "Your perspective has value. State it neat without the preface.", bundle: 'pro' },
+        { q: "I must apologize for crying or showing stressed emotions.", a: "Don't apologize for what your body does naturally. Label it and carry on.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Silence",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"A long pause makes me look slow, weak, or incompetent. I must fill every gap instantly.\"\n\n• **Silence is control** — it adds distance between what they said and how you respond.\n• **Let their words fall** — when they walk their words out onto a plank, let them stand there alone.\n• **The gap is where they think** — they get in their head about the silence, not you.\n\nMindset: Confidence is quiet. Insecurity is loud. Let the silence do the work.",
+      inputs: [
+        { q: "A long pause makes me look slow or weak in a meeting.", a: "Silence is control. It forces them to hear their own words.", bundle: 'pro' },
+        { q: "I must answer immediately to show I know what I'm doing.", a: "Let your first word be your breath. Control the pacing.", bundle: 'pro' },
+        { q: "If it goes quiet, I have lost the other person.", a: "A pause is where people think. Two seconds is not a verdict.", bundle: 'pro' },
+        { q: "I must fill the gap with reasons to justify my answer.", a: "The more words you use, the more you give them to twist.", bundle: 'pro' },
+        { q: "Silence is awkward and uncomfortable for me to sit in.", a: "It is uncomfortable for them too. Let them be the first to break it.", bundle: 'pro' },
+        { q: "I must change the subject if the conversation stalls.", a: "Look backwards, not forwards. Use an old thread to resume.", bundle: 'pro' },
+        { q: "If they don't respond to my text, I must send more.", a: "Sending more text shows panic. Wait 24 hours to let your gut settle.", bundle: 'pro' },
+        { q: "I need to explain my joke if nobody laughed.", a: "Never explain the joke. Move on calmly without apology.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Zingers",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I must craft a highly poetic, devastating zinger that will completely crush them two days later.\"\n\n• **Zingers leave a bad aftertaste** — they feel good for ten seconds, then leave you wearing the dummy hat.\n• **Be like water** — instead of fighting their force, just push it aside and let it pass like a cloud.\n• **The goal is peace, not victory** — winning an argument with a cutting remark destroys the relationship.\n\nMindset: The true power is showing them that their hostility does not threaten you whatsoever.",
+      inputs: [
+        { q: "I must send a poetic zinger back to prove I won the moment.", a: "Zingers leave a bad aftertaste. The goal is to protect your peace.", bundle: 'pro' },
+        { q: "If I don't crush them with a comeback, they won me.", a: "The only thing you win in a hostile argument is their contempt.", bundle: 'pro' },
+        { q: "I want to make them hurt as much as they hurt me.", a: "Protecting your presence is more important than fixing their behavior.", bundle: 'pro' },
+        { q: "A clever clapback will make them respect me more.", a: "Respect comes from calm certainty, not emotional combat.", bundle: 'pro' },
+        { q: "I must have the last word to prove I am right.", a: "The person who speaks last in a heated argument usually loses.", bundle: 'pro' },
+        { q: "If I don't respond with force, they will walk all over me.", a: "Refusing to engage on their level is the ultimate boundary.", bundle: 'pro' },
+        { q: "I must prove their logic is completely ridiculous.", a: "Logic does not work on high-conflict identity games. Stand still.", bundle: 'pro' },
+        { q: "I want to tell everyone what they said to prove I was right.", a: "Carrying that resentment home means they won your focus. Drop it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Speed",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I must operate on their accelerated timeline and answer immediately to show my competence.\"\n\n• **Operating on their timeline is a trap** — they use speed to bypass your analytical brain.\n• **Your first word is your breath** — slow your words down and turn down the volume.\n• **You have full autonomy** — nobody can force you to say something you are not ready to say.\n\nMindset: Confident people have all the patience in the world. Rushing signals panic.",
+      inputs: [
+        { q: "I must answer immediately on their accelerated timeline.", a: "Control the pace. Operating on your timeframe shows confidence.", bundle: 'pro' },
+        { q: "If they pepper me with questions, I must answer fast.", a: "Let them get the whole question out, pause, then speak.", bundle: 'pro' },
+        { q: "Rushing shows I am highly efficient and capable.", a: "Rushing makes you say things you don't mean. Slow it down.", bundle: 'pro' },
+        { q: "I must decide right now because they demand an answer.", a: "You always have the right to say, \"I need some time with this.\"", bundle: 'pro' },
+        { q: "If I take a long breath, it will feel like an eternity.", a: "To the audience, it barely looks like a breath. Use the pause.", bundle: 'pro' },
+        { q: "I must keep up with their rapid-fire energy to stand my ground.", a: "Speak slowly, speak softly. It anchors the room to your tempo.", bundle: 'pro' },
+        { q: "If I hesitate, they will think I am hiding something.", a: "Liars want rapid-fire conversation. Truth-tellers have patience.", bundle: 'pro' },
+        { q: "I must jump on their comment the second they finish speaking.", a: "Count \"one Mississippi\" in your head before you open your mouth.", bundle: 'pro' },
+      ]
+    },
+  ],
+  jfisher2: [
+    {
+      name: "No-Saying",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Saying no is unkind, selfish, and will destroy my relationships. I must always say yes to be valued.\"\n\n• **A clear no is a favor** — it gives the other person the chance to find a real, honest solution today.\n• **Softening a no is a trap** — giving long excuses or vague promises just postpones the pain.\n• **Calm confidence is kinder** — you don't need to apologize for occupying space and having limits.\n\nMindset: A clear no is a favor. Softening it just postpones the pain.",
+      inputs: [
+        { q: "Saying no makes me a difficult and unhelpful person.", a: "A clear no is a favor. Softening it just postpones the pain.", bundle: 'pro' },
+        { q: "If I refuse this favor, they will stop liking me.", a: "People trust a yes more when they know a no is possible.", bundle: 'pro' },
+        { q: "I need a massive, unarguable reason before I can say no.", a: "You don't owe an excuse. \"I can't this time\" is a complete sentence.", bundle: 'pro' },
+        { q: "Softening my refusal with \"maybe\" is the kindest path.", a: "An unclear no is not kindness. It is just postponement.", bundle: 'pro' },
+        { q: "I should apologize profusely for having personal limits.", a: "Save apologies for real, intentional mistakes. Standing firm is kinder.", bundle: 'pro' },
+        { q: "If I say no to my manager, I will look incompetent.", a: "Saying no early looks organized. Saying no late looks desperate.", bundle: 'pro' },
+        { q: "I have to say yes because I said yes last time.", a: "Last time was last time. A yes is not a lifetime subscription.", bundle: 'pro' },
+        { q: "Giving three reasons makes my refusal sound more believable.", a: "Every reason you add is a handle they can use to negotiate.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Asking for Help",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Asking for help makes me look weak, dependent, or incompetent. I must handle everything alone.\"\n\n• **Help is an act of trust** — it turns a lonely struggle into a collaborative team effort.\n• **Independence can be isolation** — refusing to need others cuts you off from deep connection.\n• **People love to be helpful** — asking for help is an invitation, not an imposition.\n\nMindset: Saying \"I need your help\" turns opponents into teammates.",
+      inputs: [
+        { q: "Asking for help is admitting that I cannot cope on my own.", a: "Saying \"I need your help\" turns opponents into teammates.", bundle: 'pro' },
+        { q: "If I ask for assistance, I am burdening the other person.", a: "People love to be helpful. It is an invitation, not an imposition.", bundle: 'pro' },
+        { q: "I should wait until I am drowning before I dare to ask.", a: "Asking early shows self-awareness. Asking late shows panic.", bundle: 'pro' },
+        { q: "If they wanted to help me, they would have offered already.", a: "People cannot read your mind. Give them the gift of asking plainly.", bundle: 'pro' },
+        { q: "My worth is measured by how much I can carry alone.", a: "Hyper-independence is just isolation in disguise. Trust the team.", bundle: 'pro' },
+        { q: "Asking for help makes me look less senior or capable.", a: "Strong leaders build wells of support, not waterfalls of solo effort.", bundle: 'pro' },
+        { q: "I'd rather struggle for three hours than take five of their minutes.", a: "Your reluctance is about protecting your ego, not their time.", bundle: 'pro' },
+        { q: "If I ask for help, I will owe them a massive debt.", a: "Real collaboration is a circle of support, not a ledger of debts.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Arguments",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"An argument is a battle that I must win to maintain my status, worth, and authority.\"\n\n• **An argument is a knot** — the goal is to unravel the knot together, not to stand alone on top of the mountain.\n• **Winning an argument loses the relationship** — the only thing you win is their quiet contempt.\n• **The loudest voice is the weakest** — calm certainty is quiet, while insecurity is loud.\n\nMindset: An argument is a knot to unravel, not a war to win.",
+      inputs: [
+        { q: "I must strike back with a direct zinger to win the argument.", a: "An argument is a knot to unravel, not a war to win.", bundle: 'pro' },
+        { q: "The person who has the last word is the one who won.", a: "The person who speaks last usually loses the relationship.", bundle: 'pro' },
+        { q: "If I don't raise my voice, they will think I am backing down.", a: "Lowering your volume shows real authority. Speak slowly.", bundle: 'pro' },
+        { q: "I must prove their logic is completely ridiculous to win.", a: "Logic does not work on high-conflict identity games. Stand still.", bundle: 'pro' },
+        { q: "Winning the point is worth more than their peace of mind.", a: "If you win the point but lose the person, your prize is empty.", bundle: 'pro' },
+        { q: "If I apologize for my behavior, I admit defeat in the fight.", a: "Taking ownership of your actions is the ultimate power move.", bundle: 'pro' },
+        { q: "I must litigate every detail of their twisted timeline.", a: "The truth does not need an excuse. State it and close the door.", bundle: 'pro' },
+        { q: "We must resolve every single detail perfectly right now.", a: "One conversation is rarely enough. Real repair happens over time.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Rescuing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I am personally responsible for fixing other people's negative energy, sadness, or disappointment.\"\n\n• **Protect your presence, not their problem** — you cannot control another person's emotional state.\n• **Tension is not a failure** — standing firm in your boundaries is kinder than placating their mood.\n• **They have their own agency** — let them do their own emotional work rather than carrying it for them.\n\nMindset: Protect your presence, not their problem. You cannot control their mood.",
+      inputs: [
+        { q: "If my partner is sad, I must have done something wrong.", a: "Protect your presence, not their problem. You cannot control their mood.", bundle: 'pro' },
+        { q: "I must apologize immediately to make their anger go away.", a: "Placating an aggressive person only reinforces their bad behavior.", bundle: 'pro' },
+        { q: "Their negative energy is a threat to my own safety.", a: "Hostility is their projection, not your threat. Stay regulated.", bundle: 'pro' },
+        { q: "If I don't fix their mood, I am an unkind person.", a: "You are giving them a manual on how to treat you, not a remote.", bundle: 'pro' },
+        { q: "I should absorb their anxiety to keep our relationship stable.", a: "You cannot find peace by drowning in someone else's storm.", bundle: 'pro' },
+        { q: "I must say yes to their demand to make the tension disappear.", a: "A yes you resent is a worse gift than a no you mean.", bundle: 'pro' },
+        { q: "I am responsible for how they react to my clear boundary.", a: "They get to choose what to do with their disappointment.", bundle: 'pro' },
+        { q: "If they go silent on me, I must crawl back and apologize.", a: "Silence is their choice. Stand still and protect your presence.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Patience",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If we have a conflict, we must solve everything perfectly right now, or our connection is broken.\"\n\n• **Repair happens over time** — real repair happens in a hundred small moments, not one heated marathon talk.\n• **Slowing down is your defense** — pushy people use accelerated timelines to bypass your analytical brain.\n• **Take a timeout early** — walking away to reset is an act of responsibility, not abandonment.\n\nMindset: One conversation is rarely enough. Real repair happens in a hundred small moments.",
+      inputs: [
+        { q: "We must talk this out at midnight even if we are exhausted.", a: "One conversation is rarely enough. Real repair happens in a hundred small moments.", bundle: 'pro' },
+        { q: "If we take a break, it means we are giving up on each other.", a: "Taking a timeout is taking responsibility for how you show up.", bundle: 'pro' },
+        { q: "I must answer their rapid-fire questions instantly on the spot.", a: "Control the pace. Operating on your timeframe shows confidence.", bundle: 'pro' },
+        { q: "If the relationship is healthy, we should never have ruptures.", a: "Ruptures are normal. The gold standard is how you repair them.", bundle: 'pro' },
+        { q: "I must find the perfect words to resolve this conflict forever.", a: "There are no magic words. Focus on regulating your body first.", bundle: 'pro' },
+        { q: "If we don't agree right now, our connection is permanently damaged.", a: "We don't have to agree on how to get there. Just align on the goal.", bundle: 'pro' },
+        { q: "I must explain my whole history to make them understand.", a: "The more words you use, the more you water down the truth.", bundle: 'pro' },
+        { q: "If they don't change their behavior today, I have failed.", a: "Evolving takes time. Give them the grace of a slower runway.", bundle: 'pro' },
+      ]
+    },
+  ],
+  talkingaboutyourself: [
+    {
+      name: "Just Being Polite",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"They only asked to be polite. It would be greedy to actually answer.\"\n\n**What is true instead:** a question is an offer, and taking someone up on it is the polite thing rather than the greedy one.\n\n**Why it feels right:** some questions are formalities, and answering a corridor \"how are you\" with four minutes is a real mistake. It is a good rule applied far too widely.\n\n**What it costs:** the four-word answer teaches them you would rather not be asked. They stop asking, which seems to prove the belief.\n\nMindset: a question is an offer. Take it.",
+      inputs: [
+        { q: "They're only asking to be polite.", a: "Maybe. Answer properly and find out — that's how the polite version becomes a real one.", bundle: 'pro' },
+        { q: "They don't want to hear about my week.", a: "They asked about your week. Start there and watch what happens.", bundle: 'pro' },
+        { q: "I'd be taking up their time.", a: "One detail is four seconds. The awkward pause after \"fine\" is longer.", bundle: 'pro' },
+        { q: "They'll ask again if they really want to know.", a: "They won't. Two closed answers and most people conclude you'd rather not.", bundle: 'pro' },
+        { q: "It's more polite to ask them back straight away.", a: "Answer first, then ask. Otherwise they're carrying the whole conversation.", bundle: 'pro' },
+        { q: "Nobody actually wants to hear the answer to \"how are you\".", a: "Some don't. The ones who stopped walking do.", bundle: 'pro' },
+        { q: "I'd be making it about me.", a: "They aimed the question at you. Answering it isn't a hijack.", bundle: 'pro' },
+        { q: "If I answer properly it'll be a whole thing.", a: "One sentence isn't a whole thing. You get to choose the size.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Bar for an Answer",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"An ordinary week isn't worth reporting. I need something better.\"\n\n**What is true instead:** the standard is true and specific, not interesting. They are finding out what you are like, and a detail does that better than scale.\n\n**Why it feels right:** other people's answers sound better than yours. What you have not noticed is how ordinary their content was.\n\n**What it costs:** the search for something impressive is what produces the pause, and then \"not much\".\n\nMindset: the standard is true and specific. Nobody has ever been bored by a detail.",
+      inputs: [
+        { q: "Nothing interesting has happened to me.", a: "The wardrobe, the bike, the terrible series. Ordinary and specific is the whole trick.", bundle: 'pro' },
+        { q: "My life sounds dull said out loud.", a: "Said vaguely, everyone's does. Said specifically, almost nobody's does.", bundle: 'pro' },
+        { q: "They've got much better stories.", a: "They're not stories. They're just details, and you have exactly as many as they do.", bundle: 'pro' },
+        { q: "I should have something better to say.", a: "Better than true? There isn't a category above that one.", bundle: 'pro' },
+        { q: "I'll wait until I've got something worth telling.", a: "You'll wait a long time, and be quiet the whole way.", bundle: 'pro' },
+        { q: "They'll think my week sounds sad.", a: "Vague weeks sound sad. Specific ones sound like a person.", bundle: 'pro' },
+        { q: "I need to make this sound better than it was.", a: "The inflated version is the one that falls flat. It's the only one they can hear you doing.", bundle: 'pro' },
+        { q: "There's nothing in my week they could possibly ask about.", a: "Name one object you touched. That's the handle.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Always the Asker",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I'd rather hear about them. I'm just a good listener.\"\n\n**What is true instead:** asking is half of it. People become close by taking turns at being known, and being listened to is something you are allowed as well.\n\n**Why it feels right:** it is genuinely more comfortable, it is genuinely generous, and it is genuinely a strength. All of that is true, which is exactly what makes it such an effective place to hide.\n\n**What it costs:** someone who only ever asks is unknowable, however warm they are. The friendship stalls at a certain depth and neither person can say why.\n\nMindset: asking is half of it. Being answerable is the other half.",
+      inputs: [
+        { q: "I'd rather hear about them.", a: "Usually true, and it's also the most comfortable place to hide.", bundle: 'pro' },
+        { q: "I'm just a good listener.", a: "You are. Being listened to is a thing you're allowed as well.", bundle: 'pro' },
+        { q: "They don't need to know all that about me.", a: "Not all of it. Some of it is how this becomes a friendship rather than a habit.", bundle: 'pro' },
+        { q: "Talking about myself feels self-indulgent.", a: "It's how they get to know you. That's not indulgence, it's your half of the work.", bundle: 'pro' },
+        { q: "I've never been the sort who opens up.", a: "One detail at a time is how everyone who does it started.", bundle: 'pro' },
+        { q: "Asking questions is what I'm good at.", a: "It is. It's also a very effective way of never being asked one.", bundle: 'pro' },
+        { q: "They haven't asked, so they don't want to know.", a: "You've trained them not to. Go first once and see.", bundle: 'pro' },
+        { q: "If I start talking about myself I won't know when to stop.", a: "One detail, then hand it back. The rule is the same as it is for them.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "All or Nothing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Being honest means telling them everything. So it's either guarded or wide open.\"\n\n**What is true instead:** conversations get deeper in steps, taken by both people. One level below what they offered is honest, not a half-measure.\n\n**Why it feels right:** the extremes are easier to execute. Reading what somebody offered is a judgement, and judgements can be got wrong.\n\n**What it costs:** both failures at once — too little with the people who matter, and far too much with someone met an hour ago.\n\nMindset: one step below what they gave. Not five, and not none.",
+      inputs: [
+        { q: "If I'm going to be honest I should say all of it.", a: "Honest and complete aren't the same. One step below their level is honest.", bundle: 'pro' },
+        { q: "They shared something big so I should match it exactly.", a: "Or say you're listening rather than trading. That's a match too.", bundle: 'pro' },
+        { q: "Holding anything back is a kind of lying.", a: "It's timing. The rest is still available next month.", bundle: 'pro' },
+        { q: "I told them too much and now it's strange.", a: "Say so lightly and carry on. \"That was more than I meant to say\" fixes most of it.", bundle: 'pro' },
+        { q: "They gave me a light answer, so they don't like me.", a: "They gave you a corridor answer to a corridor question. That's all it means.", bundle: 'pro' },
+        { q: "I don't know how deep is too deep.", a: "Look at what they just gave you. One step under that.", bundle: 'pro' },
+        { q: "If I don't say it now I never will.", a: "You will. This isn't the last conversation you'll ever have with them.", bundle: 'pro' },
+        { q: "Being guarded is safer than getting it wrong.", a: "Safer, and it costs you every friendship that would have gone further.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Official Answer",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"They asked what I do. The job title is the answer.\"\n\n**What is true instead:** the literal answer is the least useful one available. A title tells them what to call you and gives them nothing to ask about.\n\n**Why it feels right:** it is accurate, short, and exactly what the question asked for. Nobody can accuse you of going on.\n\n**What it costs:** the conversation stops there and it looks deliberate. They asked in order to find something to talk about, and you handed them a form.\n\nMindset: they are not filling in a form. Give them the version they can ask about.",
+      inputs: [
+        { q: "They asked what I do, so I should tell them what I do.", a: "Tell them, then add one clause about what the days are actually like.", bundle: 'pro' },
+        { q: "The extra bit is me going on about myself.", a: "One clause isn't going on. It's the handle they asked for.", bundle: 'pro' },
+        { q: "My job title really is the most interesting thing about it.", a: "Then it's the one thing they can't ask a question about. Give them the ordinary part instead.", bundle: 'pro' },
+        { q: "If I answer differently they'll think I'm being evasive.", a: "Nobody has ever thought that about \"I teach — mostly teenagers, which is as loud as it sounds\".", bundle: 'pro' },
+        { q: "Where I'm from is just a place name.", a: "It's also what shaped you. That's the half they were asking about.", bundle: 'pro' },
+        { q: "They'd have asked a follow-up if they wanted one.", a: "There was nothing to follow. A title is a full stop.", bundle: 'pro' },
+        { q: "The real version takes too long to explain.", a: "One sentence. \"Officially admin, actually I fix what nobody else wants to.\"", bundle: 'pro' },
+        { q: "It sounds like I'm making the job out to be more than it is.", a: "The opposite — you're describing it rather than labelling it. That's smaller, not bigger.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Too Into It",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Nobody wants to hear about it, and if I start I won't know when to stop.\"\n\n**What is true instead:** the enthusiasm is not the risk. The unrequested twenty minutes is, and those are two different things.\n\n**Why it feels right:** everyone has sat through a monologue about something they did not care about, and nobody wants to be that person.\n\n**What it costs:** the apology in front of it tells them not to ask. So they don't, and the thing you are most alive about never comes up.\n\nMindset: name it, one line, stop. They get to decide whether to open it.",
+      inputs: [
+        { q: "It's a niche thing. Nobody's interested.", a: "They're not interested in the subject. They're interested in someone being lit up about something.", bundle: 'pro' },
+        { q: "I should say it's a bit sad before I mention it.", a: "That apology is the part they'll remember. Drop it and just name the thing.", bundle: 'pro' },
+        { q: "If I start talking about it I'll go on for twenty minutes.", a: "Then give one line and stop. The stopping is the whole skill.", bundle: 'pro' },
+        { q: "They'd only be asking to be polite.", a: "Give them one line and find out. Polite interest turns real surprisingly often.", bundle: 'pro' },
+        { q: "It's not an impressive thing to be into.", a: "Nobody is scoring the hobby. They're reading how you talk about it.", bundle: 'pro' },
+        { q: "I'd rather ask about theirs.", a: "Do, afterwards. Yours first is what makes the trade a fair one.", bundle: 'pro' },
+        { q: "It's hard to explain to someone who doesn't do it.", a: "One sentence about why you like it needs no expertise at all.", bundle: 'pro' },
+        { q: "I've bored people with this before.", a: "Probably at minute nine, not minute one. Name it and hand the choice over.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "No Is Not an Answer",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If someone asks me something I have to answer it. Saying no would make it into a thing.\"\n\n**What is true instead:** a partial answer, given warmly, is a complete move. It closes the door without saying you mind being asked.\n\n**Why it feels right:** a flat refusal really does make the subject bigger, and the other person really does feel they trod on something.\n\n**What it costs:** it leaves two options and both are bad — stonewalling, or telling a near-stranger something you regret at two in the morning.\n\nMindset: you can give them something without giving them everything.",
+      inputs: [
+        { q: "If they asked, I owe them an answer.", a: "You owe them a reply. The headline is a reply.", bundle: 'pro' },
+        { q: "Saying I'd rather not will make it a huge thing.", a: "Said warmly it lasts four seconds. It's the silence that makes it huge.", bundle: 'pro' },
+        { q: "I've started now, so I have to finish.", a: "\"That's a whole evening's answer and this is a party\" works at any point.", bundle: 'pro' },
+        { q: "They'll think I don't trust them.", a: "Add the four words that fix it: nothing to do with you.", bundle: 'pro' },
+        { q: "It's easier to just tell them everything.", a: "It is, tonight. Ask yourself on the way home whether it still is.", bundle: 'pro' },
+        { q: "If I don't answer they'll assume the worst.", a: "The short version stops that. Give the headline and nothing under it.", bundle: 'pro' },
+        { q: "I can't say \"not now\" to someone I like.", a: "Those are exactly the people you can say it to. \"Ask me again when we know each other better.\"", bundle: 'pro' },
+        { q: "Changing the subject is the only way out.", a: "It's the one they notice. Naming the boundary is the one they don't mind.", bundle: 'pro' },
+      ]
+    },
+  ],
+  startingconversations1: [
+    {
+      name: "The Bar You Set",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I can't say that — it's too obvious.\"\n\n**What is true instead:** an opener is not judged as a remark, it is judged as an invitation. \"Busy in here today\" works precisely because it asks nothing of the other person.\n\n**Why it feels right:** the openers you remember other people using are the good ones. You never notice the hundreds of dull ones that worked perfectly well.\n\n**What it costs:** most people who struggle to open conversations are not short of words. They are rejecting the words they have, and then standing in a silence that is far more uncomfortable than the ordinary sentence would have been.\n\nMindset: say the obvious thing. It is doing a different job than you think.",
+      inputs: [
+        { q: "That's such a boring thing to say.", a: "It is. That's why it's easy to answer, which is the whole point.", bundle: 'pro' },
+        { q: "They'll think I'm stating the obvious.", a: "You are. Everyone opens this way, including the people you think are good at it.", bundle: 'pro' },
+        { q: "I should say something they'll find interesting.", a: "Later, maybe. First you just need them to say something back.", bundle: 'pro' },
+        { q: "I need a better opener than the weather.", a: "The weather has started more conversations than every clever line ever written.", bundle: 'pro' },
+        { q: "If I can't think of anything good I shouldn't speak.", a: "Then most conversations would never happen. Say the ordinary thing.", bundle: 'pro' },
+        { q: "Everyone else seems to open with something clever.", a: "They don't. You only remember the ones that were.", bundle: 'pro' },
+        { q: "I'll wait until I think of something better.", a: "Nothing better arrives. The waiting is the awkward part, not the sentence.", bundle: 'pro' },
+        { q: "A comment about the queue isn't a conversation.", a: "No, it's an invitation. The conversation is what they do with it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Reading a Short Reply",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"They only gave me three words, so they don't want to talk.\"\n\n**What is true instead:** they gave you as much as your opener asked for. Most first replies are short, and a slightly bigger second move often gets a bigger reply.\n\n**Why it feels right:** a short answer genuinely can mean no. The mistake is treating one piece of evidence as a conclusion.\n\n**What it costs:** it ends conversations at the moment they were about to start, and teaches you that you are bad at this when nothing unusual happened.\n\nMindset: one flat reply means nothing. Two means something.",
+      inputs: [
+        { q: "They only said \"yeah\". That means they don't want to talk.", a: "Or it means \"yeah\". Try one more thing before you decide.", bundle: 'pro' },
+        { q: "I've made it awkward now.", a: "You've said one sentence to someone in a queue. Nobody is thinking about it.", bundle: 'pro' },
+        { q: "They're clearly not interested.", a: "Maybe. You've got one piece of evidence. Get a second.", bundle: 'pro' },
+        { q: "I should stop before this gets embarrassing.", a: "Nothing embarrassing has happened. A short answer is the most normal thing there is.", bundle: 'pro' },
+        { q: "They answered and then looked away.", a: "People look away. It isn't a verdict on you.", bundle: 'pro' },
+        { q: "If they wanted to talk they'd have said more.", a: "They'd have to know it was on offer. That's what the second move is for.", bundle: 'pro' },
+        { q: "I got one word, so I'll get one word again.", a: "Not if the next thing needs more than one. Ask something a \"yeah\" can't cover.", bundle: 'pro' },
+        { q: "Two flat replies — now I really should stop.", a: "Yes. That one's a real answer. Leave it warmly and it costs nothing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Permission",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I don't have a good enough reason to speak to them.\"\n\n**What is true instead:** in almost every everyday setting you do not need one. Queues, waiting rooms, courses, lifts and gyms are places where a passing exchange is ordinary.\n\n**Why it feels right:** speaking to a stranger is an intrusion in some settings, so the instinct to check is a social one. It is just calibrated far too cautiously.\n\n**What it costs:** the hesitation is not about what to say. It is about whether you are allowed to, and that question has no answer, so it can be asked forever.\n\nMindset: you do not need a reason. Being in the same place is the reason.",
+      inputs: [
+        { q: "I don't have a good enough reason to talk to them.", a: "You're both standing in the same queue. That has always been reason enough.", bundle: 'pro' },
+        { q: "They didn't ask to be spoken to.", a: "True of every conversation that has ever started.", bundle: 'pro' },
+        { q: "I'd be interrupting them.", a: "Then keep it small and let them end it. That's what a greeting is for.", bundle: 'pro' },
+        { q: "What if they think I want something?", a: "Then they'll find out you don't, in about four seconds.", bundle: 'pro' },
+        { q: "It's weird to just start talking to someone.", a: "It's the most ordinary thing people do. It only feels weird from the inside.", bundle: 'pro' },
+        { q: "I'm not the sort of person who does this.", a: "Nobody is, until the third time. It's a habit, not a personality.", bundle: 'pro' },
+        { q: "They're clearly not here to make friends.", a: "Neither are you. A thirty-second exchange isn't friendship.", bundle: 'pro' },
+        { q: "I'd need an excuse — something to ask them.", a: "You've got one: whatever you are both standing in.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What It Would Cost",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"What if it goes badly?\"\n\n**What is true instead:** count the actual cost. The worst realistic outcome is a short reply and a return to your own thoughts, from someone who will not remember it by lunchtime.\n\n**Why it feels right:** the fear is not of a bad conversation but of a moment of exposure, and that moment is genuinely uncomfortable while it lasts.\n\n**What it costs:** a few seconds of discomfort avoided, against every conversation that would have started. A bad trade, made many times a week.\n\nMindset: the downside is a few seconds. The upside is everything that comes after.",
+      inputs: [
+        { q: "What if it goes badly?", a: "Then you stood in a queue having said one sentence. That's the whole cost.", bundle: 'pro' },
+        { q: "I'll feel stupid.", a: "For about a minute, and only you will know.", bundle: 'pro' },
+        { q: "They'll remember it and it'll be awkward next time.", a: "They won't remember it. You will, and only you.", bundle: 'pro' },
+        { q: "It's not worth the risk.", a: "Count the risk out loud. Ten seconds of mild discomfort, at the very worst.", bundle: 'pro' },
+        { q: "I'd rather not put myself through it.", a: "Fair, sometimes. But do it once today and notice how little actually happens.", bundle: 'pro' },
+        { q: "Other people will see it go wrong.", a: "Nobody is watching. Everyone is thinking about their own queue.", bundle: 'pro' },
+        { q: "If it fails I'll have to stand next to them anyway.", a: "For four minutes, having said one friendly thing. That's survivable.", bundle: 'pro' },
+        { q: "I've had it go badly before and it was horrible.", a: "And the week after, nobody mentioned it. That's the actual size of it.", bundle: 'pro' },
+      ]
+    },
+  ],
+  startingconversations2: [
+    {
+      name: "Small Favours",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Most people avoid asking for small favours because it feels like an imposition — as though a stranger's time were being taken. But being asked for something small is one of the more pleasant things that happens in an ordinary day. You are treated as competent, trusted or knowledgeable, and it takes four seconds.\n\nWatch what happens when someone asks you. You almost certainly do not resent it.\n\nMindset: a small request is a gift as often as it is a cost.",
+      inputs: [
+        { q: "I don't want to bother them.", a: "A four-second favour isn't a bother. Think how you feel when someone asks you.", bundle: 'pro' },
+        { q: "I should be able to work this out myself.", a: "Probably. Asking is also how conversations start.", bundle: 'pro' },
+        { q: "They're busy, it's not fair to ask.", a: "Then ask something that takes four seconds and thank them properly.", bundle: 'pro' },
+        { q: "I'll look incompetent.", a: "You'll look like someone who asks rather than stands there guessing.", bundle: 'pro' },
+        { q: "They might say no.", a: "Then they say no, and you have lost nothing at all.", bundle: 'pro' },
+        { q: "I've already asked them something today.", a: "Twice in a day is normal. Nobody counts.", bundle: 'pro' },
+        { q: "I could look it up instead of asking.", a: "You could. But looking it up gets you the answer, not the conversation.", bundle: 'pro' },
+        { q: "They helped and now I owe them.", a: "You owe them a thank-you. That's the whole debt.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Saying Nothing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "People notice a broken machine, a shorter queue, a locked door — and say nothing, because speaking to a stranger feels like more of an event than staying quiet does.\n\nBut offering information is the least intrusive thing you can do. It has an obvious reason, it costs them nothing, and even when it goes no further you have made someone's next ten minutes easier.\n\nMindset: if you know something they would want to know, that is reason enough to speak.",
+      inputs: [
+        { q: "They'll probably work it out themselves.", a: "Probably, in ten minutes. You could save them the ten minutes.", bundle: 'pro' },
+        { q: "It's not my business to interfere.", a: "Telling someone a door is locked isn't interfering.", bundle: 'pro' },
+        { q: "They might already know.", a: "Then they say \"oh, thanks\" and you've lost two seconds.", bundle: 'pro' },
+        { q: "It feels like showing off that I know.", a: "It feels like that from inside. From outside it's just helpful.", bundle: 'pro' },
+        { q: "I'd have to go over there to say it.", a: "Yes. That's the whole thing you're practising.", bundle: 'pro' },
+        { q: "It's a small thing, hardly worth saying.", a: "Small and useful now beats important and too late.", bundle: 'pro' },
+        { q: "They didn't ask, so it's unsolicited.", a: "Most useful things are. \"The other queue's shorter\" has never offended anyone.", bundle: 'pro' },
+        { q: "I told them and they already knew.", a: "Then it cost four seconds and they know you were looking out for them.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Remembering",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "People consistently underestimate what it does to be asked a specific question about their own life. Not \"how are you\" but \"how did Thursday go\" — the second one says you were listening, and that you thought about them at some point when they were not there.\n\nIt is a small effort with an unusually large return, and it is the opener people most often skip in favour of a greeting.\n\nMindset: if you remember something, use it. That is what remembering is for.",
+      inputs: [
+        { q: "They probably don't want to be asked about it.", a: "Most people very much do. Being remembered is rare enough to be noticeable.", bundle: 'pro' },
+        { q: "It was weeks ago, it'd be odd to bring up.", a: "\"You mentioned this a while back\" covers that entirely.", bundle: 'pro' },
+        { q: "I might have the details wrong.", a: "Then ask loosely. Getting it half right still shows you listened.", bundle: 'pro' },
+        { q: "A general \"how are you\" is easier.", a: "It is, and it gets \"fine\". That's the trade you're making.", bundle: 'pro' },
+        { q: "I don't want to seem like I've been thinking about them.", a: "You listened once. That's all it shows, and it's a good thing to show.", bundle: 'pro' },
+        { q: "I remember it went badly for them.", a: "Then ask carefully rather than not at all. \"How did that end up?\" leaves them room.", bundle: 'pro' },
+        { q: "I only remember half of it.", a: "Say the half. \"Was it Lisbon, or am I inventing that?\" works fine.", bundle: 'pro' },
+        { q: "They'll think I was keeping track of them.", a: "They'll think you listened. Nobody has ever been unsettled by that.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Inventing It",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Every opener in this pack depends on something being true — a genuine request, a genuine piece of information, a shared thing that actually happened, a thread you actually remember. That is what makes them work, and it is also their limit.\n\nWhen none of them is true, the honest move is not to manufacture one. It is to use a plainer opener, or to say nothing. Manufactured common ground is easy to spot and worse than a simple hello.\n\nMindset: use the opener that is true. If none is, there are simpler ones.",
+      inputs: [
+        { q: "I'll invent a question so I've got a reason to talk to them.", a: "Or just say hello. It's more honest and it works better.", bundle: 'pro' },
+        { q: "We must have something in common I can use.", a: "You're in the same room. Sometimes that's genuinely all there is, and it's enough.", bundle: 'pro' },
+        { q: "A made-up reason is better than no reason.", a: "It isn't. People hear the difference, even if they can't name it.", bundle: 'pro' },
+        { q: "I need a better opener than \"hi\".", a: "You don't. You need to say something, and \"hi\" is something.", bundle: 'pro' },
+        { q: "If I can't find common ground I shouldn't approach.", a: "Common ground is usually built in the conversation, not before it.", bundle: 'pro' },
+        { q: "The real thing I could say is boring.", a: "Boring and true starts conversations. Interesting and false ends them.", bundle: 'pro' },
+        { q: "I've used the same real opener twice with them.", a: "Then use a different real one. There are always more than you think.", bundle: 'pro' },
+        { q: "Nothing true has happened between us.", a: "Then you are both standing somewhere. That is true and it is enough.", bundle: 'pro' },
+      ]
+    },
+  ],
+  startingconversations4: [
+    {
+      name: "Going First",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "In almost every room, several people are waiting for someone else to say the thing. Whoever admits to being nervous, makes the joke about the queue, or says they know nobody here is not exposing themselves — they are doing the thing everyone was hoping somebody would do.\n\nThat is the whole logic of this pack. Going first costs you a few seconds of risk and buys the other person permission.\n\nMindset: the exposure is real and it is brief. What it buys is not.",
+      inputs: [
+        { q: "Why should it be me who breaks the silence?", a: "Because everyone else is asking the same question. Somebody has to answer it.", bundle: 'pro' },
+        { q: "If I go first and it fails I'll look stupid.", a: "For a moment, to one person, who'll have forgotten by the bus home.", bundle: 'pro' },
+        { q: "I'd rather wait and see if they open.", a: "They're waiting too. That's why nothing is happening.", bundle: 'pro' },
+        { q: "It's not my job to make this less awkward.", a: "It isn't. It's just within your power, which is different.", bundle: 'pro' },
+        { q: "I never know what to say first.", a: "\"I don't know anyone here\" is enough, and it's always true when it's true.", bundle: 'pro' },
+        { q: "I went first last time.", a: "Nobody is keeping that score except you.", bundle: 'pro' },
+        { q: "These people all seem fine without me.", a: "Fine-looking rooms are full of people waiting. That's the whole point.", bundle: 'pro' },
+        { q: "I'll go first once I've warmed up.", a: "The warming up is the going first. There's no other way in.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Missed Joke",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "People avoid humour with strangers because a joke that fails feels like a small public failure. It is worth measuring what actually happens: a half-smile, two seconds of nothing, and a conversation that continues.\n\nWhat makes it expensive is the response — explaining it, repeating it, apologising at length. Left alone, a missed joke evaporates.\n\nMindset: say it, and if it misses, carry on as though it did not.",
+      inputs: [
+        { q: "What if the joke doesn't land?", a: "Then nothing happens, and you say something plain instead.", bundle: 'pro' },
+        { q: "They'll think I'm trying too hard.", a: "One light remark about a queue is not trying hard.", bundle: 'pro' },
+        { q: "I'm not funny.", a: "You don't need to be funny. You need to say the obvious thing everyone's thinking.", bundle: 'pro' },
+        { q: "I should explain what I meant.", a: "That's the only thing that turns a missed joke into an awkward one.", bundle: 'pro' },
+        { q: "I'll wait until I know them better.", a: "The queue joke is how you get to know them. It doesn't work in reverse.", bundle: 'pro' },
+        { q: "They smiled but didn't laugh.", a: "That's a hit. Laughing out loud with a stranger is rare and not the target.", bundle: 'pro' },
+        { q: "My joke could be taken the wrong way.", a: "Then make it about the queue, the weather or yourself. Those three are safe.", bundle: 'pro' },
+        { q: "I made a joke and now I've nothing to follow it with.", a: "A plain question follows a joke perfectly. It always has.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Small Feelings",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Saying how you feel is powerful precisely because it is small. \"I'm nervous about this\" invites a matching admission; something much larger invites concern, and concern is a different kind of conversation that a stranger did not sign up for.\n\nThe rule is easy to apply: if it would need explaining, it is too big for an opener. That is not a rule about hiding things — it is about what a first conversation can hold.\n\nMindset: current, small, about this room.",
+      inputs: [
+        { q: "If I'm being honest I should say the whole thing.", a: "Honest doesn't mean complete. \"It's been a long week\" is entirely honest.", bundle: 'pro' },
+        { q: "Small feelings seem too trivial to mention.", a: "They're the ones other people can match. That's what makes them work.", bundle: 'pro' },
+        { q: "I don't want to seem like I'm complaining.", a: "One sentence about being tired isn't complaining. Five minutes is.", bundle: 'pro' },
+        { q: "They'll think I'm oversharing.", a: "Not at this size. Oversharing starts where the explaining starts.", bundle: 'pro' },
+        { q: "Nobody wants to hear that I'm nervous.", a: "Half the room is nervous and wishing someone would say so.", bundle: 'pro' },
+        { q: "Nothing I'm feeling is small right now.", a: "Then pick the part that's about this room. That bit is always small.", bundle: 'pro' },
+        { q: "Saying I'm tired is boring.", a: "Boring and matchable. They'll tell you about their week.", bundle: 'pro' },
+        { q: "It'd be dishonest to say only the small bit.", a: "It's selective, not dishonest. First conversations are allowed to be.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Pretexts",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "When people finally approach someone, they often reach for a pretext — a question they do not need answered, a comment they do not mean. It feels safer than saying why they actually came over.\n\nBut the pretext is usually visible, and the true reason is almost always more disarming. \"I don't know anybody here\" is not a confession of failure; it is the most ordinary sentence in the world, and it makes the other person relax.\n\nMindset: awkward and true beats smooth and invented.",
+      inputs: [
+        { q: "I need a reason to go over there.", a: "\"I don't know anyone here\" is a reason, and it happens to be true.", bundle: 'pro' },
+        { q: "Admitting I'm alone makes me look like a loser.", a: "It makes you look like someone at an event. Which is what everyone there is.", bundle: 'pro' },
+        { q: "I'll think of a question to ask as an excuse.", a: "You could. The true version is shorter and works better.", bundle: 'pro' },
+        { q: "Saying \"I've been meaning to say hello\" sounds odd after this long.", a: "It sounds like relief. They've been thinking it too.", bundle: 'pro' },
+        { q: "It's embarrassing to admit I find this hard.", a: "Almost everyone does, and the one who says it is the one people warm to.", bundle: 'pro' },
+        { q: "The real reason is that they looked friendly.", a: "Say that. It's a compliment and a reason at the same time.", bundle: 'pro' },
+        { q: "The true version sounds needy.", a: "Needy is asking for something. You're stating why you walked over.", bundle: 'pro' },
+        { q: "I came over because I was bored.", a: "Then say you were looking for someone to talk to. Same reason, kinder words.", bundle: 'pro' },
+      ]
+    },
+  ],
+  showunderstanding: [
+    {
+      name: "Understanding as Agreement",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I say I understand, I've agreed with them.\"\n\n**What is true instead:** you can reflect somebody's position back perfectly and disagree with it a minute later. They will take the disagreement better for having been understood first.\n\n**Why it feels right:** in an argument the first person to concede loses ground, and a loop sounds like a concession. It is a receipt, not a concession.\n\n**What it costs:** you stop showing understanding exactly where it matters most, and the conversation becomes two people explaining.\n\nMindset: understanding is not a concession. It is the thing that makes the disagreement worth having.",
+      inputs: [
+        { q: "If I say I understand, it sounds like I'm agreeing.", a: "I can understand it completely and still say no in the next sentence.", bundle: 'pro' },
+        { q: "Reflecting their point back gives them ammunition.", a: "It gives them a receipt. Nobody has ever won an argument by proving they weren't listening.", bundle: 'pro' },
+        { q: "If I loop this back, I'll have conceded the point.", a: "Saying what someone thinks isn't the same as thinking it.", bundle: 'pro' },
+        { q: "I don't want to encourage them by seeming sympathetic.", a: "They'll stop repeating it once it's landed. Being ignored is what makes people repeat things.", bundle: 'pro' },
+        { q: "Understanding without helping is useless.", a: "Being understood is the help, most of the time. It isn't a consolation prize.", bundle: 'pro' },
+        { q: "I need something clever to say or there's no point saying anything.", a: "A rephrase in my own words does more than anything clever would.", bundle: 'pro' },
+        { q: "If I agree they've had a hard time, I'm admitting I got it wrong.", a: "Two things can be true. Their week was hard and my decision was right.", bundle: 'pro' },
+        { q: "I'll understand them once they've understood me.", a: "Somebody has to go first, and going first is cheaper than it looks.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Doing Too Much",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"The more of these moves I use, the more understanding I'm being.\"\n\n**What is true instead:** one move, then wait. The silence after it is the space where the other person decides whether to go further.\n\n**Why it feels right:** each move is good on its own, so three sounds better than one. And the pause feels long from your side in a way it does not from theirs.\n\n**What it costs:** a loop, a question and your own story in one breath is not three times the understanding. It is a performance, and it leaves them nowhere to go.\n\nMindset: one move, then wait. Two seconds is not awkward. It is somebody deciding whether to say the real thing.",
+      inputs: [
+        { q: "I want to reflect, ask and relate all at once.", a: "One of them. Then wait. The pause is part of the move.", bundle: 'pro' },
+        { q: "I stacked two questions and they answered the easier one.", a: "One question. Ask two and I've chosen the one they'll dodge.", bundle: 'pro' },
+        { q: "I reflected something back and immediately kept talking.", a: "Leave the space. That's where they say the real thing.", bundle: 'pro' },
+        { q: "I can feel the silence and I want to fill it.", a: "Two seconds isn't awkward. It's them deciding whether to go further.", bundle: 'pro' },
+        { q: "One sentence doesn't feel like enough of a response.", a: "It's more than they usually get. Most people don't get one.", bundle: 'pro' },
+        { q: "If I only ask one thing, I'll miss the important part.", a: "They'll get to it. The second thing they say is usually the real one.", bundle: 'pro' },
+        { q: "A short answer from me looks like I don't care.", a: "Short and accurate reads as care. Long and general reads as filling time.", bundle: 'pro' },
+        { q: "I've got three good responses and I don't want to waste two.", a: "They keep. The conversation isn't over after one turn.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Going Through the Motions",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I use the technique correctly, that counts as listening.\"\n\n**What is true instead:** the words are nearly identical either way, and the difference still comes through. People can tell whether you wanted the answer.\n\n**Why it feels right:** the technique is the hard part to learn, so learning it feels like arriving. And it works — until it runs without you behind it.\n\n**What it costs:** a question you do not listen to the answer of establishes that your questions mean nothing.\n\nMindset: if you are not actually curious, a plain \"that sounds hard\" beats a well-executed technique.",
+      inputs: [
+        { q: "I asked a follow-up and realise I didn't hear the answer.", a: "Then the question was for me, not them. Ask again and mean it.", bundle: 'pro' },
+        { q: "My loop was accurate and came out cold.", a: "Accurate isn't the point. Would I say it that way to someone I like?", bundle: 'pro' },
+        { q: "I related with a story I wanted to tell anyway.", a: "That's my turn dressed as listening. Save it.", bundle: 'pro' },
+        { q: "I'm not actually curious about this topic.", a: "Then say the honest small thing. \"That sounds hard\" beats a technique.", bundle: 'pro' },
+        { q: "I'm working out my next move while they're still talking.", a: "There's no next move to plan. It comes out of what they say.", bundle: 'pro' },
+        { q: "I know the formula, so I don't need to concentrate.", a: "The formula is the easy half. The listening is the half that shows.", bundle: 'pro' },
+        { q: "I did all three moves and it still went flat.", a: "Then none of them were aimed at them. Technique doesn't survive being on autopilot.", bundle: 'pro' },
+        { q: "I'm tired and I don't have the attention for this right now.", a: "Say so. \"I want to hear this properly — can we do it after dinner?\" is honest listening.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Pull to Relate",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Telling them about my version is how I show I understand.\"\n\n**What is true instead:** sometimes it is, and it is the warmest of the three when it lands. But the pull arrives disguised as empathy, and earliest when the match is best.\n\n**Why it feels right:** you have been there, and saying so does help — once they have finished. The timing is the difficulty, not the intention.\n\n**What it costs:** somebody still being heard hears it as the moment the conversation stopped being about them, and quietly winds the story up early.\n\nMindset: two sentences, then hand it back. Connection, not comparison — and never \"the same thing happened to me but worse\".",
+      inputs: [
+        { q: "My version is getting longer than theirs was.", a: "Cut it to two sentences and hand it back. It's a nod, not a turn.", bundle: 'pro' },
+        { q: "I want to tell my story more than I want to hear theirs.", a: "That's the signal to wait. Relating that serves me isn't relating.", bundle: 'pro' },
+        { q: "I'm about to say my version was worse.", a: "That's competing, not connecting. Everyone can hear the difference.", bundle: 'pro' },
+        { q: "They haven't finished and I have a perfect match ready.", a: "It'll still be true in two minutes. Let them finish first.", bundle: 'pro' },
+        { q: "If I don't say it now I'll lose the moment.", a: "If it only works right now, it was for me.", bundle: 'pro' },
+        { q: "My experience would genuinely help them.", a: "Then it'll help more after they've been understood. Advice lands on cleared ground.", bundle: 'pro' },
+        { q: "Staying quiet about mine feels dishonest, like I'm holding back.", a: "Holding back for two minutes isn't dishonesty. It's timing.", bundle: 'pro' },
+        { q: "They asked me directly whether I've been through it.", a: "Then answer — briefly, and hand it straight back with a question.", bundle: 'pro' },
+      ]
+    },
+  ],
+  exploringatopic: [
+    {
+      name: "Whose Job It Is",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Somebody else will keep this going.\"\n\n**What is true instead:** every move you make either feeds the topic or ends it. There is no neutral turn, and a nod is a turn.\n\n**Why it feels right:** somebody usually does keep it going, so the belief mostly survives contact with reality. It only fails in the rooms where everyone is thinking it.\n\n**What it costs:** the conversations that die are the ones where four people were all waiting for a fifth. Nobody notices they did it, because nothing happened.\n\nMindset: every move you make either feeds the topic or ends it.",
+      inputs: [
+        { q: "Someone else will keep this going.", a: "Everyone at the table is thinking that. That's how a good subject dies.", bundle: 'pro' },
+        { q: "I don't need something impressive to say.", a: "Right — it isn't a competition for the best story. Keeping it going is the contribution.", bundle: 'pro' },
+        { q: "I'd rather move to a subject I'm better at.", a: "Jumping topics is the easy escape. There's more in this one if I look.", bundle: 'pro' },
+        { q: "The conversation is dying and I've frozen.", a: "One question or one small story restarts it. It doesn't have to be clever.", bundle: 'pro' },
+        { q: "If I say nothing, nothing is lost.", a: "A silent turn is still a turn. It just ends where it started.", bundle: 'pro' },
+        { q: "I'm not the host, it isn't my job.", a: "There is no host. It's four people and whoever speaks next.", bundle: 'pro' },
+        { q: "I said something and it went nowhere.", a: "Half of them do. The ones that land are why the other half were worth saying.", bundle: 'pro' },
+        { q: "Everyone else seems better at this.", a: "They're using five moves on repeat. You've got the same five.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Not Knowing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I can't join in — I don't know anything about this.\"\n\n**What is true instead:** knowledge is not the entry ticket. Curiosity is a full contribution, and the people who do know are usually glad to be asked.\n\n**Why it feels right:** in a room of enthusiasts it genuinely feels as if there is a level of knowledge you need to reach before you are allowed a turn.\n\n**What it costs:** you sit out whole conversations waiting for a subject you own, and the waiting reads from outside as boredom.\n\nMindset: not knowing is not a reason to be silent. It is a reason to ask.",
+      inputs: [
+        { q: "The group is talking about something I know nothing about.", a: "Not knowing isn't a reason to be silent. It's a reason to ask.", bundle: 'pro' },
+        { q: "My question will sound stupid.", a: "People like explaining the thing they're into. The basic question is usually welcome.", bundle: 'pro' },
+        { q: "I feel like an outsider in this conversation.", a: "One question puts me in it. I don't have to earn my way in with facts.", bundle: 'pro' },
+        { q: "I'll wait for a subject I know before I speak.", a: "If I only speak on my own topics, I'm barely in the conversation.", bundle: 'pro' },
+        { q: "They'll have to stop and explain it to me.", a: "They'd rather do that than have me sit there silently.", bundle: 'pro' },
+        { q: "I've been quiet so long it would be strange to speak now.", a: "Nobody is tracking it. Ask the thing you've been wondering.", bundle: 'pro' },
+        { q: "I might ask something they've already covered.", a: "Then they'll say so, in one sentence, and the subject is still moving.", bundle: 'pro' },
+        { q: "I can't tell if what they're saying is right.", a: "You don't need to. You need to be interested, which you are.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Too Small to Say",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"My version isn't worth telling.\"\n\n**What is true instead:** your piece does not have to be dramatic, funny, or better than theirs. It only has to be related, and small ordinary experiences are what most good conversations are made of.\n\n**Why it feels right:** the contributions you remember other people making were the good ones. You never notice the hundreds of ordinary ones that kept the evening going.\n\n**What it costs:** the search for something worth telling takes longer than the telling would have, and it usually ends in you saying nothing.\n\nMindset: small and specific beats big and vague.",
+      inputs: [
+        { q: "My story isn't interesting enough.", a: "Ordinary is fine. Most of a good conversation is small stuff, told warmly.", bundle: 'pro' },
+        { q: "Someone just told a much better one.", a: "It's not a ranking. Mine only has to be related, not better.", bundle: 'pro' },
+        { q: "I need a punchline before I can share this.", a: "A detail is enough. The point is joining in, not performing.", bundle: 'pro' },
+        { q: "My experience is too small to mention.", a: "Small experiences are relatable, which is worth more here than impressive ones.", bundle: 'pro' },
+        { q: "It'll sound like I'm making it about me.", a: "One related thing, then a question. That's not taking over.", bundle: 'pro' },
+        { q: "I'd be repeating what someone already said.", a: "Then say so and add your bit. \"Same here, except—\" is a whole contribution.", bundle: 'pro' },
+        { q: "My story doesn't have an ending.", a: "Very few do. Say the part you remember and stop.", bundle: 'pro' },
+        { q: "I'll wait until I've got something better.", a: "Nothing better arrives, and the topic will have moved on.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Giving It Away",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I hand the topic over, I lose it.\"\n\n**What is true instead:** holding the floor is not winning, and handing it over is not losing. The conversation people remember well is the one that got shared out.\n\n**Why it feels right:** it is genuinely enjoyable to be the one talking, and a subject you are good at is a rare chance to be that person.\n\n**What it costs:** everyone else stops contributing, and then it stops being a conversation and becomes a talk with an audience who cannot leave.\n\nMindset: giving the topic away keeps it alive. It comes back richer than you left it.",
+      inputs: [
+        { q: "I'm enjoying having the floor and I want to keep going.", a: "Holding the floor isn't winning. The best conversations get passed around.", bundle: 'pro' },
+        { q: "Handing over the topic means losing it.", a: "Giving it away keeps it alive. It comes back richer than I left it.", bundle: 'pro' },
+        { q: "I think I've been talking too much.", a: "Easy fix. One question and the balance is back.", bundle: 'pro' },
+        { q: "Someone has said nothing and I've said nothing about it.", a: "Opening a door for one quiet person can change the whole table.", bundle: 'pro' },
+        { q: "If I stop, the conversation will stop.", a: "It won't. It'll go somewhere you couldn't have taken it.", bundle: 'pro' },
+        { q: "Nobody else seems to want a turn.", a: "An open question is easy to dodge. Use a name.", bundle: 'pro' },
+        { q: "I've got one more thing and then I'll stop.", a: "That's the sentence that turns three minutes into six.", bundle: 'pro' },
+        { q: "They asked, so they must want the long version.", a: "Give the short one and offer the long one. Then it's their choice.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Staying On Topic",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I mention anything that isn't strictly this, I'm changing the subject.\"\n\n**What is true instead:** a topic is a room with doors in it. Gardening has indoor plants next door, football has watching next door. Walking through one is expanding, not leaving.\n\n**Why it feels right:** the man who genuinely hijacks conversations is annoying, and nobody wants to be him. So the rule gets set far too tight.\n\n**What it costs:** you sit in a thread that ran out four exchanges ago, while the only thing that could have saved it was the sentence you vetoed.\n\nMindset: reach for the next room before you leave the house.",
+      inputs: [
+        { q: "That's not quite what we're talking about, so I won't say it.", a: "If they'd follow it without asking what you mean, it's the same topic.", bundle: 'pro' },
+        { q: "I'd be dragging it somewhere else.", a: "There's a difference between the next room and the next house. Check which one it is.", bundle: 'pro' },
+        { q: "The subject has clearly run out.", a: "Most of them haven't. They've just run out in the exact spot everyone is standing.", bundle: 'pro' },
+        { q: "Someone else should introduce a new angle.", a: "The angle you vetoed was the new angle.", bundle: 'pro' },
+        { q: "My thought is only loosely connected.", a: "Then say the connection out loud. \"This is sideways, but —\" and it's allowed.", bundle: 'pro' },
+        { q: "I'd be steering it towards my own thing.", a: "Only if you keep it. Step sideways and hand it straight over.", bundle: 'pro' },
+        { q: "A good conversation stays where it started.", a: "A good conversation ends nowhere near where it started. It just gets there one room at a time.", bundle: 'pro' },
+        { q: "If I get it wrong they'll have to ask what I mean.", a: "That's the actual test, and it's a cheap one to fail. They ask, you explain, nothing breaks.", bundle: 'pro' },
+      ]
+    },
+  ],
+  changingtopics: [
+    {
+      name: "Steering Feels Rude",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Changing the subject is rude. I should let them finish properly.\"\n\n**What is true instead:** steering is a service, not a hijack. Guiding a conversation somewhere better is something both people benefit from, and somebody has to do it.\n\n**Why it feels right:** interrupting IS rude, and the two feel similar from the inside. But an interruption takes the turn away; a topic change happens between turns.\n\n**What it costs:** you sit through dead topics out of politeness, and so do they — two people being polite at each other while an evening goes nowhere.\n\nMindset: steering is not rude. Keeping a dead topic alive out of politeness helps nobody.",
+      inputs: [
+        { q: "It feels rude to change the subject.", a: "Steering isn't rude. Keeping a dead topic alive out of politeness helps no one.", bundle: 'pro' },
+        { q: "They haven't finished, so I should wait.", a: "They have finished. That's why there's a pause you're standing in.", bundle: 'pro' },
+        { q: "If I switch they'll think I wasn't interested.", a: "Then acknowledge it first. One short sentence fixes that entirely.", bundle: 'pro' },
+        { q: "Someone else should be the one to move it on.", a: "They're waiting for you. That's usually how a conversation stalls.", bundle: 'pro' },
+        { q: "My switch landed a bit awkwardly and I feel embarrassed.", a: "One clunky transition isn't a disaster. Smile and carry on.", bundle: 'pro' },
+        { q: "They'll notice I'm changing the subject.", a: "So what if they notice? A warm, open switch reads as confidence, not evasion.", bundle: 'pro' },
+        { q: "It's their conversation, not mine.", a: "It's a conversation. It belongs to whoever speaks next.", bundle: 'pro' },
+        { q: "Changing it will look like I want to leave.", a: "Opening a new subject is the opposite of leaving.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Perfect Bridge",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I can't change the subject until I think of a smooth way in.\"\n\n**What is true instead:** \"by the way\" is a complete sentence. A flagged switch is honest and usually gets a laugh; only an unflagged one is jarring.\n\n**Why it feels right:** the smoothest switches genuinely are the linked ones, and it is satisfying to find the word that turns a conversation. When there is one to find, it is worth using.\n\n**What it costs:** the search takes longer than the silence you were trying to avoid, and the bridge you eventually construct sounds constructed.\n\nMindset: a bridge is nicer when there is one. There is no rule that says there has to be.",
+      inputs: [
+        { q: "I can't think of a clever bridge, so I'll stay stuck.", a: "I don't need a perfect bridge. \"By the way\" is a complete sentence.", bundle: 'pro' },
+        { q: "A random switch will sound clumsy.", a: "Not if you flag it. An unflagged jump is jarring; a flagged one is just honest.", bundle: 'pro' },
+        { q: "There must be something in what they said I can use.", a: "Sometimes there genuinely isn't. Three words and a shrug is not a bridge.", bundle: 'pro' },
+        { q: "I'll wait for a natural gap.", a: "Sometimes you make the gap. Waiting forever is just avoiding the move.", bundle: 'pro' },
+        { q: "I found a link but it's a bit of a stretch.", a: "Then it'll sound like a stretch. Say \"completely unrelated\" instead — it's warmer.", bundle: 'pro' },
+        { q: "Good conversationalists always find the smooth link.", a: "They also say \"anyway\" a lot. You just don't notice it.", bundle: 'pro' },
+        { q: "If I flag the switch it draws attention to it.", a: "It draws attention to you being relaxed about it. That's different.", bundle: 'pro' },
+        { q: "I've been searching for a way in for ten seconds.", a: "That's nine seconds longer than \"right, new subject\" would have taken.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Moving Them On",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Moving the subject on would look like I don't care.\"\n\n**What is true instead:** redirecting gently IS the caring move. You are sparing them, not dodging them — and staying in a subject somebody is struggling with does not help them out of it.\n\n**Why it feels right:** leaving too fast really can read as callous, and the fear is a decent instinct. The fix is the acknowledgement, not staying put.\n\n**What it costs:** you both sit in something uncomfortable that neither of you can do anything about, and the person who raised it now has to manage your discomfort as well as their own.\n\nMindset: you do not have to fix it. Sometimes the kindest thing is to lighten the room.",
+      inputs: [
+        { q: "A sensitive topic is dragging and I feel trapped in it.", a: "I can care about them and move us somewhere kinder at the same time.", bundle: 'pro' },
+        { q: "Steering away will look like I don't care.", a: "Redirecting gently IS the caring move. I'm sparing them, not dodging them.", bundle: 'pro' },
+        { q: "I have to solve the heavy topic before I can leave it.", a: "I don't have to fix it. Sometimes the kindest thing is to lighten the room.", bundle: 'pro' },
+        { q: "If I change it they'll think I was uncomfortable.", a: "You were. So were they. One of you has to say so.", bundle: 'pro' },
+        { q: "They brought it up, so they must want to talk about it.", a: "Sometimes. Offer the way out and let them decide.", bundle: 'pro' },
+        { q: "Moving on now would be abrupt.", a: "Not if you acknowledge it first. That's the whole difference.", bundle: 'pro' },
+        { q: "I don't know what to say about it, so I'll say nothing.", a: "\"I'm sorry, and we don't have to go into it\" is enough. Then move.", bundle: 'pro' },
+        { q: "They went quiet after I steered away.", a: "Quiet can be relief. Give it a beat before you decide it went wrong.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Endurance",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Once a topic has started, I have to keep it going.\"\n\n**What is true instead:** your job is flow, not endurance. Letting a topic end is part of a good conversation, and a subject that has run its course is not a failure of effort.\n\n**Why it feels right:** the person who keeps things going does real work, and it is a good instinct pointed at the wrong target.\n\n**What it costs:** you keep spent topics alive past the point where anyone is enjoying them, which is exactly when a conversation starts to feel like an obligation.\n\nMindset: letting a topic end is part of a good conversation.",
+      inputs: [
+        { q: "I feel responsible for keeping every topic going.", a: "My job is flow, not endurance. Letting a topic end is part of a good conversation.", bundle: 'pro' },
+        { q: "I'm bored, which means I'm not being interested enough.", a: "If I'm drifting, the topic's probably run its course. That's a cue, not a failing.", bundle: 'pro' },
+        { q: "I keep waiting for a natural gap that never comes.", a: "Sometimes I make the gap. Waiting forever is just avoiding the move.", bundle: 'pro' },
+        { q: "If this topic dies I'll have nothing to replace it with.", a: "You will. Something always turns up once the old one stops taking the space.", bundle: 'pro' },
+        { q: "They started it, so they must still want it.", a: "Or they're keeping it going for you. Somebody has to check.", bundle: 'pro' },
+        { q: "Ending it early would waste what we've said.", a: "Nothing is wasted. It happened, and now something else can.", bundle: 'pro' },
+        { q: "I've squeezed three more questions out of this subject.", a: "That's the tell. Squeezing is not the same as interest.", bundle: 'pro' },
+        { q: "A short topic feels like a failure.", a: "Ten good short ones beat one long one nobody enjoyed.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Needs a Reason",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I can't change the subject just because I want to.\"\n\n**What is true instead:** wanting to is a reason. \"Completely unrelated, but —\" is the whole permission slip, and announcing the swerve is what makes it land.\n\n**Why it feels right:** ending someone's subject does take something from them, and being careless with that is how people get labelled rude. The instinct is decent; the threshold is wrong.\n\n**What it costs:** you stay in conversations you stopped enjoying twenty minutes ago, waiting for a reason that never arrives.\n\nMindset: flag it and go. Honest beats justified.",
+      inputs: [
+        { q: "I need a proper reason to change the subject.", a: "Bored is a reason. You just say it more politely: \"right, completely unrelated —\"", bundle: 'pro' },
+        { q: "I'd only be doing it because I'm not enjoying this.", a: "That's the most common reason there is. Everyone uses it. Almost nobody admits it.", bundle: 'pro' },
+        { q: "They chose this topic, so it's theirs to end.", a: "Nobody owns a subject. They started it, they didn't buy it.", bundle: 'pro' },
+        { q: "Switching would look like I wasn't listening.", a: "Not if you name the switch. An announced swerve reads as relaxed, not absent.", bundle: 'pro' },
+        { q: "It's rude to cut someone's subject short.", a: "It's rude to cut them off. Waiting for a full stop and then moving is just conversation.", bundle: 'pro' },
+        { q: "I should have a better excuse than \"I felt like it\".", a: "\"I felt like it\" said out loud usually gets a laugh. That's the excuse.", bundle: 'pro' },
+        { q: "This has got heavy and I don't have grounds to lighten it.", a: "The heaviness is the grounds. Say \"okay, lighter note before we spiral.\"", bundle: 'pro' },
+        { q: "If I need to flag it, the change must be a bad idea.", a: "Flagging isn't an apology. It's the thing that makes it work.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Nothing In Common",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I've got nothing in common with this person, so I can't relate my way anywhere.\"\n\n**What is true instead:** the shared thing is almost never the activity. It is the feeling underneath it. You have never been hiking; you have been lost, and cold, and talked into something by a friend.\n\n**Why it feels right:** the obvious matches genuinely are easier, and a room full of people whose lives look nothing like yours is a real thing.\n\n**What it costs:** you either say nothing, or you manufacture an \"oh, me too\" that neither of you believes — and a false match makes the switch look like an escape.\n\nMindset: match the feeling, not the activity.",
+      inputs: [
+        { q: "I've never done the thing they're describing.", a: "You've had the feeling. \"I know that exact dread\" is a real match.", bundle: 'pro' },
+        { q: "We have nothing in common at all.", a: "Weather, queues, bad sleep, being new somewhere. Start lower than you think.", bundle: 'pro' },
+        { q: "I'd have to pretend to be interested.", a: "No — find the one part that is actually interesting and ask about that.", bundle: 'pro' },
+        { q: "If I say \"me too\" it'll sound fake.", a: "It will if it is. Say the specific version instead and it stops sounding like anything.", bundle: 'pro' },
+        { q: "Their life is completely different from mine.", a: "Different facts, same handful of experiences. Aim at the second one.", bundle: 'pro' },
+        { q: "The only thing I could relate to is trivial.", a: "Trivial is where common ground lives. Nobody bonds over the big stuff first.", bundle: 'pro' },
+        { q: "I'll wait until they mention something I know about.", a: "They might not. You can build the bridge from your side.", bundle: 'pro' },
+        { q: "Relating just to change the subject feels like using them.", a: "Only if the relating is fake. If it's true, they got something out of it too.", bundle: 'pro' },
+      ]
+    },
+  ],
+  complimenting: [
+    {
+      name: "They Already Know",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The assumption that a person who is good at something must be aware of it, so saying so adds nothing to what they already have.\n\nAlmost nobody knows. People know what they intended and what went wrong; what they cannot see is the effect, and the effect is exactly the part only you can report. Nobody sees themselves from outside.\n\nMindset: you are not confirming something. You are telling them something they have no way of knowing.",
+      inputs: [
+        { q: "They must know they're good at this.", a: "They know they tried. They don't know what it did to the room.", bundle: 'pro' },
+        { q: "Someone will have told them already.", a: "Ask anyone how often they get told. The answer is usually \"almost never\".", bundle: 'pro' },
+        { q: "It'll sound like I'm stating the obvious.", a: "Obvious to you, from the outside. That's the whole reason it's worth saying.", bundle: 'pro' },
+        { q: "They'd be embarrassed.", a: "For four seconds. Then it stays with them for years.", bundle: 'pro' },
+        { q: "I'll say it when it's a bigger occasion.", a: "The Tuesday ones are the ones people remember. Nobody expects those.", bundle: 'pro' },
+        { q: "Everyone can see it, so it doesn't need saying.", a: "Everyone can see it and everyone assumes someone else has mentioned it.", bundle: 'pro' },
+        { q: "They get praised constantly.", a: "For the same thing every time. Say the one nobody else has noticed.", bundle: 'pro' },
+        { q: "It won't make any difference.", a: "Think of one you were given years ago. That's the difference it makes.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Deflecting Feels Like Modesty",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The reflex to correct a compliment — \"it's old\", \"it was nothing\", \"I got lucky\". It feels like modesty from the inside. From the outside it is being told you were wrong to say something kind.\n\nAnd it teaches. Someone who is corrected twice stops offering, and then you have fewer compliments coming at you and no idea why.\n\nMindset: taking it is the generous move. Two words, then stop.",
+      inputs: [
+        { q: "Agreeing would be arrogant.", a: "\"Thank you\" isn't agreement. It's acknowledgement, and it's all that's needed.", bundle: 'pro' },
+        { q: "But it really wasn't that good.", a: "They weren't asking for your assessment. They were telling you theirs.", bundle: 'pro' },
+        { q: "I have to say something back.", a: "You don't. Theirs gets its own moment, and yours keeps.", bundle: 'pro' },
+        { q: "It's easier to laugh it off.", a: "Easier for you. It costs them the thing they were trying to give.", bundle: 'pro' },
+        { q: "I never know what to say.", a: "\"Thank you.\" Then close your mouth. That's the whole skill.", bundle: 'pro' },
+        { q: "If I take it, they'll think I agree I'm great.", a: "They'll think you heard them. That's all taking it means.", bundle: 'pro' },
+        { q: "Explaining how it happened is just being honest.", a: "It's honest and it's an argument. Save the explanation for when they ask.", bundle: 'pro' },
+        { q: "I'd rather move the attention off me.", a: "Understandable. Wait four seconds first — that's their part of the exchange.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Small Is Not Worth Saying",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that a bigger compliment is a better one — so \"you're amazing\" ought to beat \"the ending was good\", and a detail is too slight to bother anyone with.\n\nIt is the wrong way round. Large general praise is the shape politeness takes and everyone knows it; small specific praise cannot be produced without having paid attention, so it proves itself as it is said.\n\nMindset: the detail is the evidence. Without it you are only being nice.",
+      inputs: [
+        { q: "\"That was great\" is enough.", a: "It's pleasant and it evaporates. Add the one detail and it stays.", bundle: 'pro' },
+        { q: "I can't remember anything specific.", a: "Then say that. \"Something about the middle worked and I'm still working out what.\"", bundle: 'pro' },
+        { q: "The detail I noticed is too small.", a: "Small is the point. Nobody says the small ones, which is why they land.", bundle: 'pro' },
+        { q: "I don't want to sound like I was analysing them.", a: "Being noticed is not the same as being analysed. One sentence isn't a report.", bundle: 'pro' },
+        { q: "A big compliment feels more generous.", a: "More generous to give, less useful to receive. Aim at useful.", bundle: 'pro' },
+        { q: "It's such a minor thing to make a fuss about.", a: "One sentence isn't a fuss. A fuss is three sentences and a follow-up question.", bundle: 'pro' },
+        { q: "They'll wonder why I'm mentioning something that tiny.", a: "They'll register that you were paying attention. That's the message underneath.", bundle: 'pro' },
+        { q: "I should save it for something that matters more.", a: "Praise isn't rationed. Saving it just means it never gets said.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Might Land Wrong",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The quiet arithmetic that stops most compliments — the fear that it will be strange, misread, unwelcome, or that the moment has passed and starting now would be worse than silence.\n\nWeigh it honestly. The downside is a few seconds of mild awkwardness, usually yours. The upside is something the other person may still be carrying in ten years. Very few things in a conversation have that ratio.\n\nMindset: the risk is small and it is mostly yours. Say it.",
+      inputs: [
+        { q: "It might come across wrong.", a: "Praise the choice, keep it short, and it won't. That's the whole safety rule.", bundle: 'pro' },
+        { q: "The moment has passed.", a: "\"This is overdue\" fixes that in three words.", bundle: 'pro' },
+        { q: "We're not close enough for me to say it.", a: "\"We barely know each other, so take this as an outside opinion…\" — and now you are.", bundle: 'pro' },
+        { q: "They'll think I want something.", a: "Then don't ask for anything today. That's what separates the two.", bundle: 'pro' },
+        { q: "I'd feel awkward.", a: "You would, for about four seconds. They'd have it for years.", bundle: 'pro' },
+        { q: "What if they don't know how to take it?", a: "Then they'll fumble it, and you'll have given it anyway. Their half isn't your job.", bundle: 'pro' },
+        { q: "It's a strange thing to say out of nowhere.", a: "Say that first. \"This is out of nowhere\" is a complete introduction.", bundle: 'pro' },
+        { q: "I'll wait until it comes up naturally.", a: "It won't. Compliments almost never come up — they get decided on.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What Counts As a Compliment",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The assumption that a compliment means saying something about how a person looks — and since that is loaded almost everywhere, the whole skill gets shelved.\n\nBut looks are the smallest and worst-behaved category in it. Nearly everything worth praising is a choice or a piece of work: what they picked, what they practised, what they decided when it was unpopular. Those are safe with anyone, at any distance, including a colleague you barely know.\n\nMindset: praise what they did, not what they were handed. That is nearly all of it.",
+      inputs: [
+        { q: "Complimenting people at work is a minefield.", a: "The body is. The work, the call they made, the jacket they chose — none of that is.", bundle: 'pro' },
+        { q: "I can't say anything about how someone looks.", a: "You can say something about what they chose. \"Good jacket\" is about a decision.", bundle: 'pro' },
+        { q: "I don't notice what people are wearing anyway.", a: "Then don't. Notice what they got better at. It's a stronger compliment regardless.", bundle: 'pro' },
+        { q: "Praising a stranger's appearance is too much.", a: "Agreed. Praise the thing in their hands, or the thing they just said.", bundle: 'pro' },
+        { q: "There's nothing to compliment about this person.", a: "There's something they practised. Everyone has one, and nobody hears about it.", bundle: 'pro' },
+        { q: "\"You're so tall\" is a compliment, isn't it?", a: "It's an observation. There's nothing to be proud of and nothing to say back.", bundle: 'pro' },
+        { q: "The only compliments that count are the personal ones.", a: "The ones that count name something they can take credit for. That's usually work.", bundle: 'pro' },
+        { q: "I'd rather not risk it, so I say nothing.", a: "The safe version exists and it's better than the risky one. Use that.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "In Front of Others",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The reluctance to praise anyone in a room — it feels like a performance, like arranging to be seen being generous, and the quiet version seems more sincere.\n\nSometimes it is. But public praise does one thing private praise cannot: it changes what everyone else thinks, not only what the person thinks. \"That was Sara's idea\" said to Sara is kind. Said in the meeting, it is worth something to her career.\n\nMindset: ask who it is for. Credit goes where the room can hear it; anything personal goes where it cannot.",
+      inputs: [
+        { q: "Saying it out loud would make it about me.", a: "Say the name, say what they did, stop. Three seconds is nobody's performance.", bundle: 'pro' },
+        { q: "It's more sincere if I say it quietly afterwards.", a: "For a personal compliment, yes. For credit, quietly afterwards is worth nothing.", bundle: 'pro' },
+        { q: "They'd be embarrassed if I said it publicly.", a: "Some would. Ask: \"would you rather I said this in the meeting or just to you?\"", bundle: 'pro' },
+        { q: "Everyone knows whose work it was.", a: "They know today. In six weeks the only record is who was named.", bundle: 'pro' },
+        { q: "It'll look like I'm currying favour.", a: "Praising someone junior never looks like that. Praising upwards might — so aim down.", bundle: 'pro' },
+        { q: "I'd rather not draw attention in a big group.", a: "It draws attention to them. Your part is one sentence long.", bundle: 'pro' },
+        { q: "They're not in the room, so there's no point.", a: "There's more point. \"She's not here, so I'll say it anyway\" is the strongest version.", bundle: 'pro' },
+        { q: "I'll compliment how they look, but do it in front of the team.", a: "That one goes private. Appearance in public is a cost to them, not a gift.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Debt",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The sense that a compliment is a transaction — that being handed one puts you in debt, and the debt is settled by handing one straight back.\n\nIt is the reflex that cancels both. \"That was a great presentation\" — \"yours was better!\" and now neither person has been told anything. And it comes from discomfort rather than generosity: returning it gets the attention off you fast, which is exactly why it feels like relief.\n\nMindset: theirs first. Yours keeps.",
+      inputs: [
+        { q: "They complimented me, so now I owe them one.", a: "You owe them \"thank you\". That settles it in full.", bundle: 'pro' },
+        { q: "Not saying anything back would be rude.", a: "You are saying something back. Taking it properly is the reply.", bundle: 'pro' },
+        { q: "I've already got one lined up to give straight back.", a: "Hold it. Said now it's a reflex; said in ten minutes it's a compliment.", bundle: 'pro' },
+        { q: "If I don't return it, it looks like I don't rate them.", a: "It looks like you were listening. Nobody has ever read it the other way.", bundle: 'pro' },
+        { q: "We both did the same thing and they went first.", a: "\"Thanks. I'll say mine later so it counts.\" That's the whole move.", bundle: 'pro' },
+        { q: "Handing it back is the polite thing to do.", a: "Polite and empty. They know a mirror when they hear one.", bundle: 'pro' },
+        { q: "I've said mine back and it came out hollow.", a: "Say so. \"That was a reflex. Let me do it properly:\" and then mean it.", bundle: 'pro' },
+        { q: "This is just how compliments work — back and forth.", a: "That's how flattery works. A compliment only needs to go one way.", bundle: 'pro' },
+      ]
+    },
+  ],
+  responsivehumour: [
+    {
+      name: "Funny People Have Material",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that funny people arrive with something — stories, lines, a stock of jokes — and that having none of that is why you are quiet.\n\nAlmost none of the humour in ordinary conversation works that way. It is built out of the sentence that was just said, in the second after it was said, by someone doing one of about five things to it.\n\nMindset: you are not supposed to bring anything. Their sentence is the material.",
+      inputs: [
+        { q: "I'm just not a funny person.", a: "You've never had to be. You've had to notice a sentence and bend it.", bundle: 'pro' },
+        { q: "I can never think of anything.", a: "Because you're looking for something new. Look at what they just said instead.", bundle: 'pro' },
+        { q: "Funny people have better lives to talk about.", a: "This pack is built on white walls and rain. That's the point.", bundle: 'pro' },
+        { q: "I think of the good line ten minutes later.", a: "Everyone does. The five moves are for the first ten seconds instead.", bundle: 'pro' },
+        { q: "I'd need to be quicker.", a: "You'd need one move. Exaggeration works on almost anything and nobody minds a slow one.", bundle: 'pro' },
+        { q: "They're naturally witty and I'm not.", a: "They're practised. You are watching the ten thousandth attempt, not the first.", bundle: 'pro' },
+        { q: "I'd have to remember jokes.", a: "You'd have to remember five verbs. Bigger, smaller, sideways, literal, backwards.", bundle: 'pro' },
+        { q: "There's nothing funny about this conversation.", a: "There's nothing funny about white walls either. That hasn't stopped anyone.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "One More Thing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The instinct to keep going — to add the second half, the explanation, the bit that makes sure they got it, the small laugh at the end that asks them to join in.\n\nEvery one of those is a subtraction. The response works because it is quick enough to feel effortless; a long one announces that you are performing, and now it has to be worth the wait. The addition you make to be safe is the thing that costs you the laugh.\n\nMindset: four words beats fourteen. Stop before you want to.",
+      inputs: [
+        { q: "They might not get it.", a: "If they don't, it costs four seconds. If you explain, it costs more.", bundle: 'pro' },
+        { q: "It needs a bit more setup.", a: "Then it's a story, not a response. Save it and answer them instead.", bundle: 'pro' },
+        { q: "I'll add one more thing to make it land.", a: "The one more thing is what stops it landing.", bundle: 'pro' },
+        { q: "A longer joke is a better joke.", a: "On a stage, sometimes. In a kitchen, never.", bundle: 'pro' },
+        { q: "I trailed off at the end.", a: "Land on the last word and stop. The silence afterwards is theirs.", bundle: 'pro' },
+        { q: "I laughed at my own line to help it along.", a: "That's asking. Say it flat and let them decide.", bundle: 'pro' },
+        { q: "Four words doesn't feel like enough effort.", a: "Effort isn't the currency. \"Bit of a walk\" is four words and it's the best line in the pack.", bundle: 'pro' },
+        { q: "I want to make sure they know I'm joking.", a: "Your face does that. The extra sentence just makes it a lecture.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "They Didn't Get It",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The urge to rescue a joke that did not land — to say it again, to point out the pun, to describe why it was funny, to check whether they heard.\n\nThe rescue is what people remember, not the miss. A joke nobody noticed is forgotten within seconds; a joke that was explained is a small awkwardness everyone in the room now shares, and it belongs to you.\n\nMindset: let it go. The next opening is a minute away.",
+      inputs: [
+        { q: "They didn't get it.", a: "Fine. Answer what they said and carry on.", bundle: 'pro' },
+        { q: "If I explain it they'll laugh.", a: "They'll do something. It won't be laughing.", bundle: 'pro' },
+        { q: "I want them to know I was joking.", a: "One flat line: \"that was me agreeing, badly.\" Then stop.", bundle: 'pro' },
+        { q: "I'll try the same joke again with better timing.", a: "The second run is always worse. Wait for a new sentence.", bundle: 'pro' },
+        { q: "It's embarrassing to be ignored.", a: "For you, for four seconds. Nobody else has noticed.", bundle: 'pro' },
+        { q: "They looked confused.", a: "They'll be over it before you are. Move to the next sentence.", bundle: 'pro' },
+        { q: "Now the whole conversation feels awkward.", a: "Only in your head. Ask them a question and it's gone.", bundle: 'pro' },
+        { q: "Maybe they thought I meant it.", a: "Then say the plain version once. Not twice, and not with a reason attached.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "They Can Take a Joke",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The line between this pack and being unkind, and it is not a vague one. Humour aimed at the weather, the queue, the timetable or at yourself is free. Humour aimed at a person costs them something.\n\nThe test is whether the joke needs them to be a good sport. If it does, it is at their expense, and that is a different skill with different rules — it needs an established friendship, not a technique.\n\nMindset: the situation, their sentence, or yourself. Those three are safe with anyone.",
+      inputs: [
+        { q: "They can take a joke.", a: "Maybe. But needing them to is the tell.", bundle: 'pro' },
+        { q: "It's obviously affectionate.", a: "To you. Warmth doesn't always survive the trip.", bundle: 'pro' },
+        { q: "Everyone else is doing it.", a: "To each other, with years behind it. You've had four minutes.", bundle: 'pro' },
+        { q: "Self-deprecation is boring.", a: "It's also the only target that can't complain, which makes it useful.", bundle: 'pro' },
+        { q: "The joke's about their thing, not them.", a: "Then shrink the thing and leave them out of it entirely.", bundle: 'pro' },
+        { q: "They laughed, so it was fine.", a: "People laugh to end things. Check whether they came back to the subject.", bundle: 'pro' },
+        { q: "I'm their manager but we're friendly.", a: "Friendly doesn't remove the rank. The room hears it differently from you.", bundle: 'pro' },
+        { q: "If I never tease anyone I'll be boring.", a: "The five moves don't need a target. Not one of them requires a person.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Trying To Be Funny",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The thing that stops most attempts is not a lack of ideas. It is the word trying — the sense that a visible attempt at humour is worse than saying nothing, because a miss exposes you and silence does not.\n\nThe arithmetic is wrong. A line that misses is a half-second of nothing; people are already three sentences past it. What actually gets noticed is the man who never adds anything, and that gets noticed every time, not one time in five.\n\nMindset: the attempt is free. It is the abstention that costs.",
+      inputs: [
+        { q: "It's embarrassing to be seen trying to be funny.", a: "Trying is what everyone at the table is doing. You're just doing it silently.", bundle: 'pro' },
+        { q: "If it doesn't land I'll look like I was reaching.", a: "A miss is half a second. Absence is the whole evening.", bundle: 'pro' },
+        { q: "I'd rather say nothing than say something weak.", a: "Weak lines vanish. Nothing is the only one they can measure you by.", bundle: 'pro' },
+        { q: "They'll think I'm the guy who's always trying.", a: "Nobody has ever thought that about a man who tries once an hour.", bundle: 'pro' },
+        { q: "I'm not confident enough to pull it off.", a: "Confidence isn't the entry fee. Saying it flat and moving on is.", bundle: 'pro' },
+        { q: "The moment has to be exactly right.", a: "There is no right moment. There's a sentence, and then there isn't.", bundle: 'pro' },
+        { q: "I don't want to be the one performing.", a: "Four words isn't a performance. It's a reply that happens to be funny.", bundle: 'pro' },
+        { q: "What if they think I'm not funny?", a: "They'll think that anyway if you never say anything. At least this way it's up for debate.", bundle: 'pro' },
+      ]
+    },
+  ],
+  assertivecomm1: [
+    {
+      name: "Standards",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The standards, rules, and criteria we let others use to judge our choices. This deck targets the belief that you must measure up to external structures of right, wrong, or proper behavior before you can act. It trains the prime assertive right: you are the ultimate judge of all you are and do. If you don't own this area, others will invent rules to run your life. When you accept their criteria, you allow them to manipulate you with rules, reasons, and expectations that serve their interests instead of your own.\n\nMindset: you are the final judge of your own standards.",
+      inputs: [
+        { q: "Other people seem to have a fixed rulebook on how I should behave.", a: "The rules were made by people just like you. They are not laws of physics.", bundle: 'pro' },
+        { q: "If I don't follow their rules, I feel like I'm doing something wrong.", a: "Following their rules means letting them write the script of your life.", bundle: 'pro' },
+        { q: "Someone tells me that what I'm doing isn't the proper way.", a: "Proper only means it is the way they prefer. Your preference is just as valid.", bundle: 'pro' },
+        { q: "I feel anxious when I make a choice that doesn't fit standard procedures.", a: "You are the ultimate judge of your own choices. The anxiety is just old training.", bundle: 'pro' },
+        { q: "Everyone else seems to agree on what is fair and right.", a: "Consensus is not truth. It is often just a shared habit of compliance.", bundle: 'pro' },
+        { q: "I worry that being my own judge will make me selfish or irresponsible.", a: "Being your own judge means taking full responsibility for the consequences of your actions.", bundle: 'pro' },
+        { q: "A supervisor insists that their way is the only correct way.", a: "They can set company rules, but they cannot decide who you are as a person.", bundle: 'pro' },
+        { q: "I feel I need someone else's permission to change my routine.", a: "Waiting for permission is a habit from childhood. You are an adult now.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Justifications",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The constant urge to explain, defend, and offer reasons for your choices. When you feel you must justify your actions, you hand others the power to judge whether your reasons are good enough. This deck trains you to declare your desires plainly without excuses. Your likes, dislikes, and choices do not require parental or commercial approval to be valid. You are the sole judge of what you do. Giving reasons only hands the manipulator target points to dismantle and argue with.\n\nMindset: your desires are their own justification.",
+      inputs: [
+        { q: "If I don't give a reason for saying no, they will think I'm rude.", a: "You do not owe anyone an explanation for having a boundary.", bundle: 'pro' },
+        { q: "I need to think of a good excuse before I can decline an invitation.", a: "Excuses are just targets for the other person to solve and negotiate with.", bundle: 'pro' },
+        { q: "Someone demands to know why I changed my mind about our plans.", a: "You are allowed to change your mind simply because your feelings or preferences evolved.", bundle: 'pro' },
+        { q: "I feel guilty when I declare what I want without proving why I need it.", a: "Your want is a factual state. It does not need a logical argument to exist.", bundle: 'pro' },
+        { q: "If I don't justify my pricing, clients will think I'm ripping them off.", a: "Your rate is your decision. They can accept it or decline, but you don't need to defend it.", bundle: 'pro' },
+        { q: "My parents demand to know why I don't visit them every weekend.", a: "You are an independent adult. Your schedule does not require parental validation.", bundle: 'pro' },
+        { q: "I feel I must explain why I am returning this defective item to the clerk.", a: "\"I don't like it\" is a complete and valid reason for a return.", bundle: 'pro' },
+        { q: "When I am criticized, my immediate reflex is to explain my intentions.", a: "Explaining your intentions is a submissive attempt to get their approval. State the facts instead.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mistakes",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The heavy guilt and shame that follow everyday human errors. If you believe mistakes are moral failures, you allow others to demand psychological atonement and control your future behavior. This deck trains you to own your mistakes calmly as simple, inefficient facts. Admitting a mistake is an act of strength, not a submissive surrender. You are responsible for your errors, not for satisfying critics. We make errors because we are human, not because we are bad.\n\nMindset: errors are simply errors, not sins.",
+      inputs: [
+        { q: "Making a mistake at work means I am incompetent and untrustworthy.", a: "Errors are part of the human condition. They are inefficient, but they do not define your worth.", bundle: 'pro' },
+        { q: "Since I messed up the project timeline, I must work extra overtime for free to make it up.", a: "You are responsible for correcting the error, not for punishing yourself to satisfy them.", bundle: 'pro' },
+        { q: "My coworker keeps bringing up an error I made last month to control my schedule.", a: "They are using your past mistake as psychological leverage. Do not accept the guilt trap.", bundle: 'pro' },
+        { q: "If I admit I made a mistake, my critic will have won the argument.", a: "Admitting an error calmly is the fastest way to end their leverage and close the argument.", bundle: 'pro' },
+        { q: "I feel I must apologize profusely and crawl when I slip up.", a: "Apologizing three times is asking for forgiveness. State the mistake, correct it, and stop.", bundle: 'pro' },
+        { q: "If I make an error in judgment, I shouldn't be allowed to make decisions anymore.", a: "You are allowed to make mistakes. It is how humans learn to make better decisions.", bundle: 'pro' },
+        { q: "I try to hide my mistakes so that others won't think less of me.", a: "Hiding errors creates anxiety. Owning them calmly shows confidence and security.", bundle: 'pro' },
+        { q: "My partner's irritated tone when I forget something makes me feel like a bad person.", a: "Their irritation is their feeling. Your forgetfulness is just an error, not a moral crime.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Approval",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The paralyzing belief that you must have the goodwill of everyone before you can deal with them. The need for constant approval leaves you open to manipulation by anyone who threatens to withdraw their affection or cooperation. This deck trains you to realize that you can cope with people effectively even if they dislike your boundaries. You do not need their goodwill to survive or succeed. True relationships survive limits; compliance only builds a cage.\n\nMindset: you do not need everyone to like you.",
+      inputs: [
+        { q: "I can't function or do business with someone if they are angry or irritated with me.", a: "You do not need their friendship or goodwill to deal with them assertively and effectively.", bundle: 'pro' },
+        { q: "If my supervisor dislikes my boundaries, they will ruin my career.", a: "You can perform your job tasks effectively without needing your boss to be your friend.", bundle: 'pro' },
+        { q: "I feel terrible when a store clerk gets annoyed with my return request.", a: "Their annoyance is their problem. Your goal is the refund, not their smile.", bundle: 'pro' },
+        { q: "If I say no to my friends, our relationship will fall apart.", a: "True relationships survive boundaries. A friendship built on your compliance is a cage.", bundle: 'pro' },
+        { q: "I must always stay in everyone's good graces to keep the system steady.", a: "You are not responsible for keeping everyone else comfortable at the expense of your limits.", bundle: 'pro' },
+        { q: "I feel anxious when a coworker gives me a cold look in the hallway.", a: "Their cold look cannot hurt you. You can still work together without mutual warmth.", bundle: 'pro' },
+        { q: "I worry that being assertive will make people talk behind my back.", a: "People will talk regardless of what you do. Your self-respect is more important than their gossip.", bundle: 'pro' },
+        { q: "I need my family's approval before I can make a major life change.", a: "You are the final judge of your life. Their approval is a nice extra, not a requirement.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ignorance",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that you must predict every consequence and have an answer for every question before you can act. This anxiety traps you in passive hesitation because you fear sounding stupid. This deck trains you to say 'I don't know' or 'I don't understand' with total confidence. You do not have to read minds or be an omniscient expert to make a decision about your own life. You are allowed to be illogical or declare that you simply do not care.\n\nMindset: saying I don't know is a valid boundary.",
+      inputs: [
+        { q: "If someone asks me a question about my plans, I must have an immediate answer.", a: "\"I don't know\" is a complete, honest, and perfectly valid answer.", bundle: 'pro' },
+        { q: "I must predict every consequence of my choices before I can change my mind.", a: "You do not have to be omniscient to make a decision. You can handle consequences as they arrive.", bundle: 'pro' },
+        { q: "I must worry about what would happen to the world if everyone acted as their own judge.", a: "You do not need to solve global philosophy to decide what works for your own life.", bundle: 'pro' },
+        { q: "I feel stupid when I don't understand what a specialist is talking about.", a: "Specialists often hide behind jargon. Reclaim your right to say: \"I don't understand.\"", bundle: 'pro' },
+        { q: "If I don't anticipate my partner's needs, I am being insensitive and irresponsible.", a: "You cannot read minds. If they want or need something, they must ask for it plainly.", bundle: 'pro' },
+        { q: "I worry that admitting lack of knowledge in a meeting will ruin my credibility.", a: "Admitting you don't know shows security. Faking knowledge creates real risk of failure.", bundle: 'pro' },
+        { q: "A customer service bot keeps asking me to categorize my issue before I can proceed.", a: "You don't have to fit into their pre-programmed boxes. Insist on your request.", bundle: 'pro' },
+        { q: "I feel I must have a logical reason for every preference I express.", a: "\"I don't know, I just prefer it\" is the only justification your wants require.", bundle: 'pro' },
+      ]
+    },
+  ],
+  assertivecomm2: [
+    {
+      name: "Responsibilities",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The heavy burden of believing you are responsible for solving other people's personal problems. This mindset targets the belief that you must sacrifice your own desires to keep everyone else comfortable or preserve ineffective systems. This deck trains Right III: you have the ultimate right to judge if you are responsible for finding solutions to others' problems. When you take ownership of their issues, you allow them to manipulate you with guilt and avoid taking charge of their own lives.\n\nMindset: they are responsible for their own happiness.",
+      inputs: [
+        { q: "I am responsible for solving my spouse's bad mood.", a: "Their emotional state belongs to them. I can support them without taking ownership of their feelings or neglecting my own limits.", bundle: 'pro' },
+        { q: "If I return this item, I am responsible for the store clerk's lost commission.", a: "The store's commission structure is their problem. My goal is a refund for defective goods.", bundle: 'pro' },
+        { q: "If I don't help my friend clean their garage, I am a bad person.", a: "My friend is responsible for their own chores. Saying no to a massive task is a healthy choice.", bundle: 'pro' },
+        { q: "I must find a solution to my parents' loneliness.", a: "My parents are independent adults. They must find their own social activities and outlets.", bundle: 'pro' },
+        { q: "If I say no to Greg's shift, the manager will be left in a terrible fix.", a: "The manager is responsible for shift coverage systems. My free time is my own decision.", bundle: 'pro' },
+        { q: "I must keep my partner from getting upset during our talks.", a: "Their irritation is their own feeling. We can discuss difficult truths without me managing their comfort.", bundle: 'pro' },
+        { q: "If the delivery system fails, I am responsible for making it easy for the company.", a: "The company's logistical errors are not mine to solve. I want my delivery processed correctly.", bundle: 'pro' },
+        { q: "I am bad if I don't spend my energy solving my roommate's problems.", a: "They must take charge of their own choices. I can be a friend without being their therapist.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Consistency",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The rigid belief that once you have made a decision, you must never change your mind. If you believe consistency is a moral duty, you allow others to use your past choices to control your future actions. This deck trains Right IV: you have the ultimate right to change your mind. Changing your mind as circumstances, feelings, or preferences evolve is a healthy, normal part of being human, not a sign of irresponsibility.\n\nMindset: you are allowed to change your mind.",
+      inputs: [
+        { q: "Since I agreed to go to the concert, I must go even if I feel sick.", a: "I am allowed to change my mind simply because my physical state or feelings have evolved.", bundle: 'pro' },
+        { q: "Changing my mind makes me look flaky and irresponsible to others.", a: "Adult life requires flexibility. My choices are not fixed contracts; they can adapt.", bundle: 'pro' },
+        { q: "I must keep using this terrible laptop because I chose to buy it.", a: "I made an error in judgment, and I can change my mind about keeping it.", bundle: 'pro' },
+        { q: "If I change my mind, I must have a massive, logical excuse to prove I'm right.", a: "My change of preference is its own justification. I don't need an excuse to choose differently now.", bundle: 'pro' },
+        { q: "I said yes to their request last week, so I cannot say no today.", a: "Last week was last week. A previous agreement is not an endless subscription to compliance.", bundle: 'pro' },
+        { q: "My parent grumbles that I used to visit them every weekend.", a: "My schedule and needs have changed. It is normal to adjust my routine as my life grows.", bundle: 'pro' },
+        { q: "I promised to stay in my current job, so leaving makes me a bad employee.", a: "My goals and feelings have evolved. I have the right to seek better paths for myself.", bundle: 'pro' },
+        { q: "I told my partner I wanted to cook, but now I am too tired.", a: "I can change my mind and propose ordering food instead without feeling guilty.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Decisions",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that you must always have a logical, rational reason for your choices and desires. When you accept this rule, you hand others the power to judge whether your reasons are \"good enough\" to justify your boundaries. This deck trains Right VIII: you have the ultimate right to be illogical in making decisions. Your wants, likes, and dislikes do not fit into neat logical boxes; they are factual states that require no external validation.\n\nMindset: your feelings do not need a logical proof.",
+      inputs: [
+        { q: "I must prove logically why I want to return this unopened paint.", a: "\"I don't like it\" is a complete, valid, and sufficient reason for my choice.", bundle: 'pro' },
+        { q: "I need a rational argument to explain why I don't want to go out tonight.", a: "My lack of desire is a fact. It does not need a logical equation to be respected.", bundle: 'pro' },
+        { q: "If I cannot explain why I prefer this dress, I shouldn't buy it.", a: "Likes and dislikes are emotional states. I am allowed to choose simply because I prefer it.", bundle: 'pro' },
+        { q: "If I cannot argue a logical case for wanting things to change at home, I have no right to ask.", a: "My feelings of being cramped are real. They do not need to fit into a logical box to be valid.", bundle: 'pro' },
+        { q: "I must have a rational excuse to refuse a friend's invitation.", a: "\"I don't want to\" is a complete and adult boundary. I don't owe them a logical defense.", bundle: 'pro' },
+        { q: "If my decision is illogical, it means I am stupid or irresponsible.", a: "Wanting something is not a mathematical problem. It is healthy to make decisions based on feelings.", bundle: 'pro' },
+        { q: "I must justify my career change to my parents with a massive financial plan.", a: "My desire for change is my own. I have the right to make choices that don't satisfy their logic.", bundle: 'pro' },
+        { q: "Someone demands to know what is illogical about their sales offer.", a: "I don't need to debate their offer. I simply do not want to buy it today.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Obligations",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The constant pressure to improve yourself to meet everyone else's arbitrary standards of perfection. If you believe you are bad or lazy unless you are constantly striving to improve, you let others define who you should be. This deck trains Right X: you have the ultimate right to say \"I don't care\" to their rules. You do not have to be perfect, neat, or efficient according to anyone else's definition to keep your self-respect.\n\nMindset: you don't have to care about their standards.",
+      inputs: [
+        { q: "I am bad and lazy because I don't keep my house perfectly neat.", a: "Neatness is a preference, not a moral law. I don't have to care about being a perfect housekeeper.", bundle: 'pro' },
+        { q: "My boss says I should want to improve my speed, even though my work is average.", a: "I perform my tasks adequately. I don't have to strive for perfection to be a worthy employee.", bundle: 'pro' },
+        { q: "I must constantly read books to become a more civilized and educated person.", a: "I can enjoy my free time however I like. I don't owe anyone a constant self-improvement campaign.", bundle: 'pro' },
+        { q: "Someone grumbles that I don't care about the community standard.", a: "Their standard is their own choice. I have the right to say \"I don't care\" to their expectations.", bundle: 'pro' },
+        { q: "I must work overtime because everyone should strive to be highly productive.", a: "I work to put food on the table, not to satisfy a rigid philosophy of endless productivity.", bundle: 'pro' },
+        { q: "My partner sighs that I don't care about improving my presentation style.", a: "I am comfortable with my current style. I don't have to be a perfect public speaker to communicate.", bundle: 'pro' },
+        { q: "I feel guilty because I don't care about global political debates.", a: "I am allowed to limit my attention. Saying \"I don't care\" to side issues keeps my energy safe.", bundle: 'pro' },
+        { q: "I must struggle to meet my family's definition of success.", a: "I am the final judge of my own achievements. Their definition of success does not run my life.", bundle: 'pro' },
+      ]
+    },
+  ],
+  assertivecommadv: [
+    {
+      name: "Sounding Rehearsed",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that two deliberate moves in a row will sound like a technique rather than a person. This is the fear that keeps people at one move, where the conversation always outlasts them. The truth is that combinations sound less mechanical, not more: a single move repeated is what sounds like a script, while an agreement followed by a real question sounds like someone paying attention. This deck targets the assumption that spontaneity is more honest than preparation.\n\nMindset: deliberate is not the same as insincere.",
+      inputs: [
+        { q: "If I plan two moves in advance, I'll sound like a machine.", a: "A plan is not a script. You are choosing a direction, not the words.", bundle: 'pro' },
+        { q: "Real people just say what comes to mind in the moment.", a: "What comes to mind in the moment is usually the habit you are trying to break.", bundle: 'pro' },
+        { q: "They'll be able to tell I'm doing something.", a: "They can tell you are calm. That is all most people notice.", bundle: 'pro' },
+        { q: "It feels dishonest to know how I want the conversation to end.", a: "Knowing what you want is the opposite of dishonest. Hiding it is the problem.", bundle: 'pro' },
+        { q: "If I agree and then ask a question, it sounds like a trick.", a: "It sounds like a trick if the agreement is false. Agree with something real.", bundle: 'pro' },
+        { q: "Skilled communication is something you are born with.", a: "Every fluent speaker you admire got there by repetition, not by birth.", bundle: 'pro' },
+        { q: "My friends would laugh if they knew I practised this.", a: "They practise for interviews and dates without calling it practice.", bundle: 'pro' },
+        { q: "If it doesn't come naturally, it isn't really me.", a: "It becomes you the way driving does — awkward, then invisible.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Second Half",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The habit of stopping after the first move. Agreeing and then going quiet, or owning a mistake and waiting to see what happens. The opening half of every combination in this pack gives something away, and leaving it there is worse than never having started: you have conceded a point and taken no position. This deck targets the moment of hesitation between the two halves, where most of the pack is actually won or lost.\n\nMindset: the first half is the cost; the second half is what you bought.",
+      inputs: [
+        { q: "I agreed with them and then couldn't think what to say next.", a: "The second half is decided before you open your mouth, not after.", bundle: 'pro' },
+        { q: "Once I've admitted the mistake, it feels greedy to ask for more.", a: "Asking for the rest is not greed. It is closing the file instead of leaving it open.", bundle: 'pro' },
+        { q: "If I agree and then repeat my request, it sounds like I ignored them.", a: "You did not ignore them. You answered them and then continued.", bundle: 'pro' },
+        { q: "Saying both halves at once feels like too much talking.", a: "Two short sentences is not a speech. It is one turn.", bundle: 'pro' },
+        { q: "I lose my nerve in the gap between the two parts.", a: "Close the gap. Say the second half in the same breath, before you can reconsider.", bundle: 'pro' },
+        { q: "After I've fogged, they usually change the subject and I let it go.", a: "The subject changed because you stopped. Bring your half back in one sentence.", bundle: 'pro' },
+        { q: "I only remember the second move afterwards, in the car.", a: "That is what practice is for. The car version arrives sooner every time.", bundle: 'pro' },
+        { q: "If I've conceded something, pressing on feels unfair.", a: "You conceded a sentence, not the conversation.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Planning What to Say",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that preparing your words is a form of manipulation, and that anything not spontaneous is a trick played on the other person. It is the most common reason people abandon these skills after learning them. Preparation does not decide what the other person will do; it only stops you doing the thing you always regret. This deck separates planning your own conduct from controlling someone else's.\n\nMindset: planning what you will say is not deciding what they will do.",
+      inputs: [
+        { q: "Rehearsing a conversation feels like setting a trap for someone.", a: "A trap hides your intent. Preparation usually makes it clearer.", bundle: 'pro' },
+        { q: "If I plan it, I'm not really listening to them.", a: "You are less anxious, which is the only state in which listening is possible.", bundle: 'pro' },
+        { q: "Manipulative people plan conversations. That's the difference.", a: "Manipulative people plan to get something they hide. Say your want out loud.", bundle: 'pro' },
+        { q: "It feels calculating to know what I'll do if they push back.", a: "Knowing your own limit is not a calculation about them.", bundle: 'pro' },
+        { q: "I should be able to handle it honestly without any preparation.", a: "Unprepared honesty is usually just whatever your temper says first.", bundle: 'pro' },
+        { q: "If I have a plan, I'm treating them as an opponent.", a: "You can have a plan and want a good outcome for both of you.", bundle: 'pro' },
+        { q: "Thinking about the order of what I say feels cold.", a: "Order is courtesy. It is how you avoid saying the hurtful part first.", bundle: 'pro' },
+        { q: "They didn't prepare, so it isn't a fair conversation.", a: "They also did not prepare to be reasonable. You are not taking anything from them.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Giving Ground",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that whoever concedes first has lost. Every combination in this pack opens by giving ground on purpose, which feels backwards to anyone raised on the idea that agreement is surrender. The ground you give is a sentence; what you keep is the want. This deck targets the reflex that treats the first concession as the end of the argument rather than the start of a workable one.\n\nMindset: you can agree with the words and keep the position.",
+      inputs: [
+        { q: "If I agree with any part of it, I've admitted they were right.", a: "You admitted one sentence was true. The rest is still yours.", bundle: 'pro' },
+        { q: "Conceding the first point means I'll have to concede the rest.", a: "Only if you have no second half ready. That is a preparation problem, not a rule.", bundle: 'pro' },
+        { q: "People will walk all over me if I agree so easily.", a: "The people who walk over you do it when you argue and then fold, not when you agree and hold.", bundle: 'pro' },
+        { q: "Agreeing with an unfair criticism feels like lying.", a: "Agree only with the part that is true or possible. That is never a lie.", bundle: 'pro' },
+        { q: "If I don't defend myself, they'll assume the whole thing is true.", a: "They assume it anyway when you defend. Defence looks like guilt to most people.", bundle: 'pro' },
+        { q: "My instinct is to correct the exaggeration first.", a: "Correcting the exaggeration is how you end up arguing about it all evening.", bundle: 'pro' },
+        { q: "Giving ground early leaves me with nothing to bargain with.", a: "Your want was never a bargaining chip. It is not on the table at all.", bundle: 'pro' },
+        { q: "It feels weak to say \"you're probably right\" to someone hostile.", a: "It is the only sentence a hostile person has no answer to.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Changing Move Mid-Talk",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that once you have started with one approach you have to see it through, even as the conversation turns into something else. Combinations make this worse: the plan feels more binding because there was one. In reality the other person changes what they are doing several times in five minutes, and matching them is the skill. This deck targets the stubbornness that keeps people repeating a move that stopped fitting two sentences ago.\n\nMindset: the move follows what they just did, not what you decided earlier.",
+      inputs: [
+        { q: "I planned to hold my line, so I can't suddenly start asking questions.", a: "They stopped pushing and started complaining. Follow the change.", bundle: 'pro' },
+        { q: "Switching approach halfway makes me look inconsistent.", a: "Consistency is about your want, not about your sentences.", bundle: 'pro' },
+        { q: "I had decided to compromise, so I have to see the offer through.", a: "An offer made to a person who has started insulting you can wait.", bundle: 'pro' },
+        { q: "If I change tack they'll think they got to me.", a: "They will think you are listening. That is what changing tack looks like.", bundle: 'pro' },
+        { q: "I keep repeating my request even after they have agreed.", a: "When they say yes, stop. The move is finished.", bundle: 'pro' },
+        { q: "They admitted the real problem and I carried on defending myself.", a: "The moment they name the real thing, the argument is over. Move to what happens next.", bundle: 'pro' },
+        { q: "I started owning a mistake and then found it wasn't mine.", a: "Say so plainly. Half an admission is easier to withdraw than a whole apology.", bundle: 'pro' },
+        { q: "It feels like giving up to abandon the approach I chose.", a: "You are abandoning a method, not a boundary. The boundary has not moved.", bundle: 'pro' },
+      ]
+    },
+  ],
+  integratedmaster: [
+    {
+      name: "Standards",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The standards, rules, and criteria we let others use to judge our choices. This deck targets the belief that you must measure up to external structures of right, wrong, or proper behavior before you can act. It trains the prime assertive right: you are the ultimate judge of all you are and do. If you don't own this area, others will invent rules to run your life. When you accept their criteria, you allow them to manipulate you with rules, reasons, and expectations that serve their interests instead of your own.\n\nMindset: you are the final judge of your own standards.",
+      inputs: [
+        { q: "Other people seem to have a fixed rulebook on how I should behave.", a: "The rules were made by people just like you. They are not laws of physics.", bundle: 'pro' },
+        { q: "If I don't follow their rules, I feel like I'm doing something wrong.", a: "Following their rules means letting them write the script of your life.", bundle: 'pro' },
+        { q: "Someone tells me that what I'm doing isn't the proper way.", a: "Proper only means it is the way they prefer. Your preference is just as valid.", bundle: 'pro' },
+        { q: "I feel anxious when I make a choice that doesn't fit standard procedures.", a: "You are the ultimate judge of your own choices. The anxiety is just old training.", bundle: 'pro' },
+        { q: "Everyone else seems to agree on what is fair and right.", a: "Consensus is not truth. It is often just a shared habit of compliance.", bundle: 'pro' },
+        { q: "I worry that being my own judge will make me selfish or irresponsible.", a: "Being your own judge means taking full responsibility for the consequences of your actions.", bundle: 'pro' },
+        { q: "A supervisor insists that their way is the only correct way.", a: "They can set company rules, but they cannot decide who you are as a person.", bundle: 'pro' },
+        { q: "I feel I need someone else's permission to change my routine.", a: "Waiting for permission is a habit from childhood. You are an adult now.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Justifications",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The constant urge to explain, defend, and offer reasons for your choices. When you feel you must justify your actions, you hand others the power to judge whether your reasons are good enough. This deck trains you to declare your desires plainly without excuses. Your likes, dislikes, and choices do not require parental or commercial approval to be valid. You are the sole judge of what you do. Giving reasons only hands the manipulator target points to dismantle and argue with.\n\nMindset: your desires are their own justification.",
+      inputs: [
+        { q: "If I don't give a reason for saying no, they will think I'm rude.", a: "You do not owe anyone an explanation for having a boundary.", bundle: 'pro' },
+        { q: "I need to think of a good excuse before I can decline an invitation.", a: "Excuses are just targets for the other person to solve and negotiate with.", bundle: 'pro' },
+        { q: "Someone demands to know why I changed my mind about our plans.", a: "You are allowed to change your mind simply because your feelings or preferences evolved.", bundle: 'pro' },
+        { q: "I feel guilty when I declare what I want without proving why I need it.", a: "Your want is a factual state. It does not need a logical argument to exist.", bundle: 'pro' },
+        { q: "If I don't justify my pricing, clients will think I'm ripping them off.", a: "Your rate is your decision. They can accept it or decline, but you don't need to defend it.", bundle: 'pro' },
+        { q: "My parents demand to know why I don't visit them every weekend.", a: "You are an independent adult. Your schedule does not require parental validation.", bundle: 'pro' },
+        { q: "I feel I must explain why I am returning this defective item to the clerk.", a: "\"I don't like it\" is a complete and valid reason for a return.", bundle: 'pro' },
+        { q: "When I am criticized, my immediate reflex is to explain my intentions.", a: "Explaining your intentions is a submissive attempt to get their approval. State the facts instead.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mistakes",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The heavy guilt and shame that follow everyday human errors. If you believe mistakes are moral failures, you allow others to demand psychological atonement and control your future behavior. This deck trains you to own your mistakes calmly as simple, inefficient facts. Admitting a mistake is an act of strength, not a submissive surrender. You are responsible for your errors, not for satisfying critics. We make errors because we are human, not because we are bad.\n\nMindset: errors are simply errors, not sins.",
+      inputs: [
+        { q: "Making a mistake at work means I am incompetent and untrustworthy.", a: "Errors are part of the human condition. They are inefficient, but they do not define your worth.", bundle: 'pro' },
+        { q: "Since I messed up the project timeline, I must work extra overtime for free to make it up.", a: "You are responsible for correcting the error, not for punishing yourself to satisfy them.", bundle: 'pro' },
+        { q: "My coworker keeps bringing up an error I made last week to control my schedule.", a: "They are using your past mistake as psychological leverage. Do not accept the guilt trap.", bundle: 'pro' },
+        { q: "If I admit I made a mistake, my critic will have won the argument.", a: "Admitting an error calmly is the fastest way to end their leverage and close the argument.", bundle: 'pro' },
+        { q: "I feel I must apologize profusely and crawl when I slip up.", a: "Apologizing three times is asking for forgiveness. State the mistake, correct it, and stop.", bundle: 'pro' },
+        { q: "If I make an error in judgment, I shouldn't be allowed to make decisions anymore.", a: "You are allowed to make mistakes. It is how humans learn to make better decisions.", bundle: 'pro' },
+        { q: "I try to hide my mistakes so that others won't think less of me.", a: "Hiding errors creates anxiety. Owning them calmly shows confidence and security.", bundle: 'pro' },
+        { q: "My partner's irritated tone when I forget something makes me feel like a bad person.", a: "Their irritation is their feeling. Your forgetfulness is just an error, not a moral crime.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Approval",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The paralyzing belief that you must have the goodwill of everyone before you can deal with them. The need for constant approval leaves you open to manipulation by anyone who threatens to withdraw their affection or cooperation. This deck trains you to realize that you can cope with people effectively even if they dislike your boundaries. You do not need their goodwill to survive or succeed. True relationships survive limits; compliance only builds a cage.\n\nMindset: you do not need everyone to like you.",
+      inputs: [
+        { q: "I can't function or do business with someone if they are angry or irritated with me.", a: "You do not need their friendship or goodwill to deal with them assertively and effectively.", bundle: 'pro' },
+        { q: "If my supervisor dislikes my boundaries, they will ruin my career.", a: "You can perform your job tasks effectively without needing your boss to be your friend.", bundle: 'pro' },
+        { q: "I feel terrible when a store clerk gets annoyed with my return request.", a: "Their annoyance is their problem. Your goal is the refund, not their smile.", bundle: 'pro' },
+        { q: "If I say no to my friends, our relationship will fall apart.", a: "True relationships survive boundaries. A friendship built on your compliance is a cage.", bundle: 'pro' },
+        { q: "I must always stay in everyone's good graces to keep the system steady.", a: "You are not responsible for keeping everyone else comfortable at the expense of your limits.", bundle: 'pro' },
+        { q: "I feel anxious when a coworker gives me a cold look in the hallway.", a: "Their cold look cannot hurt you. You can still work together without mutual warmth.", bundle: 'pro' },
+        { q: "I worry that being assertive will make people talk behind my back.", a: "People will talk regardless of what you do. Your self-respect is more important than their gossip.", bundle: 'pro' },
+        { q: "I need my family's approval before I can make a major life change.", a: "You are the final judge of your life. Their approval is a nice extra, not a requirement.", bundle: 'pro' },
+      ]
+    },
+  ],
+  counseling1: [
+    {
+      name: "Feelings",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I can't do my duty until I feel motivated to do it.\"\nWhat is true instead: feelings are followers, not leaders. They catch up when we act.\nWhy it feels right: our emotions are loud, and acting against them feels unnatural or fake.\nWhat it costs: we stay paralyzed in bed, the piles grow higher, and our spirits sink lower.\n\nMindset: do the right thing first; the feelings will catch up.",
+      inputs: [
+        { q: "I can't pray today because my heart is too cold.", a: "Prayer is about obedience, not your mood. Pray for five minutes right now anyway.", bundle: 'pro' },
+        { q: "It would be hypocritical to serve when I don't feel motivated.", a: "Doing what is right is obedience, not hypocrisy. Step out anyway.", bundle: 'pro' },
+        { q: "I'll start cleaning once the depression lifts.", a: "The depression lifts as we work. Spread out the board and start.", bundle: 'pro' },
+        { q: "I don't have the energy to read my Bible.", a: "We need the word most in the storm. Read one verse today.", bundle: 'pro' },
+        { q: "I have to wait for God to give me the desire to reconcile.", a: "God gives us strength as we obey. Write the first message now.", bundle: 'pro' },
+        { q: "If I act without feeling, it's just empty structure.", a: "Structure is the difference between sloppiness and effectiveness. Move anyway.", bundle: 'pro' },
+        { q: "I'm too exhausted to face my daily duties today.", a: "Do what you can do this day. Even a small dent brings hope.", bundle: 'pro' },
+        { q: "My feelings are too intense to ignore.", a: "We are feeling-oriented, but God's word is our authority. Obey the word.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Habits",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I am too old to change these deeply ingrained patterns of sin.\"\nWhat is true instead: you are not an animal to be trained. You are a new creation in Christ.\nWhy it feels right: we have failed so many times that staying defeated feels like realism.\nWhat it costs: we freeze ourselves in disobedience and deny the power of the Holy Spirit.\n\nMindset: change is possible because the Spirit is at work in you.",
+      inputs: [
+        { q: "You can't teach an old dog new tricks.", a: "You are not an animal. You are a man created in the image of God.", bundle: 'pro' },
+        { q: "These patterns of worry have been with me for forty years.", a: "The Spirit is stronger than forty years of habit. Take the first step today.", bundle: 'pro' },
+        { q: "I've tried to change before and always failed.", a: "You tried in your own strength. Let's work God's way with His word.", bundle: 'pro' },
+        { q: "I am just naturally an anxious person.", a: "Anxiety is a habit of mind to be put off, not a personality trait.", bundle: 'pro' },
+        { q: "My brain is wired to react in bitter anger.", a: "You are a new creation. Put off the old man and put on the new.", bundle: 'pro' },
+        { q: "It's too late for me to build a disciplined life.", a: "Christians are not frozen or refrigerated. We are green and growing.", bundle: 'pro' },
+        { q: "This habit of gossip is too deeply ingrained to stop.", a: "We can replace gossip with edification. Start the trade today.", bundle: 'pro' },
+        { q: "I am stuck in this spiral of defeat forever.", a: "Tomorrow is in God's hands. He demands change and provides the power.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Plain Speech",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I call their sin by its real name, I will break them.\"\nWhat is true instead: naming the real sin is the only way to find real forgiveness.\nWhy it feels right: we want to be gentle, and talking about \"mistakes\" feels safer than \"sin\".\nWhat it costs: they stay trapped under a vague cloud of guilt without any hope of a cure.\n\nMindset: kind words speak truth. We must poke the balloon to let the air out.",
+      inputs: [
+        { q: "Naming their sin will only crush their fragile self-esteem.", a: "Coddling their self-pity keeps them trapped. Naming the sin brings real hope.", bundle: 'pro' },
+        { q: "I should euphemize it as a \"weakness\" to be kind.", a: "Euphemizing sin is a copout. We must call it sin to find the cure.", bundle: 'pro' },
+        { q: "If I say they sinned, they will reject me.", a: "Speak the truth in love. True love cares too much to leave them in error.", bundle: 'pro' },
+        { q: "They are too depressed to handle the truth about their failure.", a: "True hope begins when we stop making excuses and confess to the Lord.", bundle: 'pro' },
+        { q: "I should focus on building them up first.", a: "We cannot build on top of rubble. We must clear away the sin first.", bundle: 'pro' },
+        { q: "Naming their gossip as sin feels too harsh.", a: "It is a gentle restoration, but it must be honest. Gossip is sin.", bundle: 'pro' },
+        { q: "Vague encouragement is safer than direct confrontation.", a: "Vague words leave them under vague guilt. Poke the balloon.", bundle: 'pro' },
+        { q: "They just need me to agree that their situation is hopeless.", a: "Agreeing with their despair is a betrayal. Pity feeds depression.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Self-Forgiveness",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"My biggest problem is that I need to learn to forgive myself.\"\nWhat is true instead: the Bible knows nothing of self-forgiveness. You need to accept God's forgiveness.\nWhy it feels right: we still feel the shame, so we assume the problem is with us, not our theology.\nWhat it costs: we waste our energy on a prideful attempt to pay for our own sins.\n\nMindset: Christ's blood paid the entire debt. Rest in His work.",
+      inputs: [
+        { q: "I know God forgives me, but I just can't forgive myself.", a: "You are trying to pay a debt that Christ already paid. Rest in His cross.", bundle: 'pro' },
+        { q: "My guilt is too heavy because of what I did.", a: "Real guilt is washed clean by real blood. Accept God's verdict.", bundle: 'pro' },
+        { q: "I must continue to feel bad to prove I am truly sorry.", a: "That is works-righteousness. Forgiveness is a promise, not a feeling.", bundle: 'pro' },
+        { q: "I need to find a way to make peace with my own conscience.", a: "Conscience must be informed by the word. If God says you are clean, you are clean.", bundle: 'pro' },
+        { q: "My failure is too unique for ordinary grace to cover.", a: "No sin is outside the design of the cross. Let the blood wipe it out.", bundle: 'pro' },
+        { q: "I must carry this regret as a reminder of my weakness.", a: "Christ died to free you from regret. Walk in newness of life.", bundle: 'pro' },
+        { q: "I can't move on until I feel reconciled with myself.", a: "You are reconciled to God. That is the only relationship that rules.", bundle: 'pro' },
+        { q: "Self-condemnation is a sign of true humility.", a: "It is a prideful refusal to accept God's free gift of grace.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Confrontation",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Pointing out a brother's sin is an unloving and self-righteous thing to do.\"\nWhat is true instead: leaving a brother under the weight of sin is the truest form of hatred.\nWhy it feels right: we are afraid of looking hypocritical or being rejected by our friend.\nWhat it costs: they continue to slide down the skids, and the church leaks its power.\n\nMindset: go in meekness to restore, not to judge.",
+      inputs: [
+        { q: "Who am I to point out their failure when I have my own?", a: "You go in meekness as a fellow sinner, not as a judge.", bundle: 'pro' },
+        { q: "It is more loving to stay quiet and just pray for them.", a: "True love is active. Leaving them trapped under the rock is hatred.", bundle: 'pro' },
+        { q: "They will think I am lording it over them.", a: "Not if you go in gentleness, admitting you might need their help next week.", bundle: 'pro' },
+        { q: "Confrontation always breeds division in the church.", a: "True unity is built on truth. Confrontation brings genuine reconciliation.", bundle: 'pro' },
+        { q: "It is the pastor's job to handle these sins, not mine.", a: "Every member is called to restore. This is our mutual care.", bundle: 'pro' },
+        { q: "I'm too afraid of their reaction to say anything.", a: "Fear is culpable laziness. God has given you the resources; use them.", bundle: 'pro' },
+        { q: "They are caught in a major fall; I will only make it worse.", a: "If you go carefully, looking to yourself, you can never hurt them.", bundle: 'pro' },
+        { q: "We should just accept people as they are.", a: "We accept them in Christ, but we never ignore the sin that destroys them.", bundle: 'pro' },
+      ]
+    },
+  ],
+  counseling2: [
+    {
+      name: "Blame",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"My biggest problems are caused entirely by how she acts.\"\nWe cannot control others, but we are fully responsible to God for our own responses.\nBlaming others feels right because their behavior really is unfair, and focusing on their sin shields us from the pain of our own failure.\nIt costs us our sanctification, leaving us trapped in a bitter deadlock where we wait for them to change before we will obey.\n\nMindset: my reaction is my responsibility, regardless of the pressure.",
+      inputs: [
+        { q: "I only lost my temper because he was being completely unreasonable first.", a: "He was wrong, but my angry reaction was my own sin before God. I own my response.", bundle: 'pro' },
+        { q: "I have a right to be cold since she ignored me all morning.", a: "Bitterness is not a right; it is a sin. I must pursue peace regardless of her distance.", bundle: 'pro' },
+        { q: "I can't start the reconciliation until he acknowledges his ninety percent of the blame.", a: "I am responsible for my own ten percent, and obedience means taking the first step.", bundle: 'pro' },
+        { q: "My bitterness is just a natural result of being treated so unfairly.", a: "My bitterness is my own choice to nurse resentment. I must put it off and put on peace.", bundle: 'pro' },
+        { q: "I wouldn't have lied to avoid the argument if she didn't react so harshly.", a: "I chose to lie instead of speaking the truth in love. The fear of her reaction is no excuse.", bundle: 'pro' },
+        { q: "He is the one who broke the contract, so he is the entire problem here.", a: "He broke the contract, but my bitter attitude is my own failure to keep my heart clean.", bundle: 'pro' },
+        { q: "I can't be expected to be nice when I am constantly being treated like an enemy.", a: "Christ calls us to bless those who curse us. The treatment I receive does not rule my duty.", bundle: 'pro' },
+        { q: "Our roommate group is completely ruined because of her selfishness.", a: "I cannot control her selfishness, but I can control my own daily acts of service to her.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Gossip",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Talking about his failure with an outside friend helps me process the pain.\"\nSpeaking about a brother behind his back is gossip, which destroys unity and spreads poison in the church.\nIt feels right because sharing the story with a sympathetic friend relieves our immediate emotional pressure and makes us feel validated.\nIt costs the church its power, breeds suspicion, and prevents the face-to-face reconciliation that Jesus commands.\n\nMindset: talk to the person, never about them.",
+      inputs: [
+        { q: "I'm just sharing this prayer request about his marriage so we can lift them up.", a: "Sharing negative details about an absent brother is gossip, even when I call it prayer.", bundle: 'pro' },
+        { q: "Getting this frustration off my chest with a friend helps me cope with her pride.", a: "Venting to an outsider only deepens my resentment. I must go to her face-to-face.", bundle: 'pro' },
+        { q: "If I tell a neutral third party first, I can get their advice on the conflict.", a: "I am gathering a biased audience for my side. I must go directly to the person I have the issue with.", bundle: 'pro' },
+        { q: "It's not gossip if the details of his moral failure are completely true.", a: "Love covers a multitude of sins. Spreading true rumors is still the sin of gossip.", bundle: 'pro' },
+        { q: "I need to tell others about her cheating so they can protect themselves from her.", a: "Hiding behind warning others is a copout. I must go and confront her privately in meekness.", bundle: 'pro' },
+        { q: "Talking to his roommate about his drinking will help us find a solution.", a: "I am talking behind his back. I must go to him directly or bring witnesses face-to-face.", bundle: 'pro' },
+        { q: "She won't listen to me anyway, so there's no harm in talking to someone else about it.", a: "The harm is to my own heart and the church's peace. I must stay silent or take the next step.", bundle: 'pro' },
+        { q: "I need to vent about the leader's decision because it was incredibly unfair to the group.", a: "Venting is murmuring. I must go to the leader directly or let the matter go in love.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Neutrality",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Hiding behind silence is the most loving and non-judgmental way to handle other people's conflicts.\"\nStaying silent during active sin is a failure to love your brother and a betrayal of the body of Christ.\nIt feels right because it protects us from the discomfort of confrontation, and lets us pretend we are being humble and non-directive.\nIt costs our brother his restoration, leaving him trapped under the rock of sin while the church's witness decays.\n\nMindset: love is active and confrontational when a brother is caught in a trap.",
+      inputs: [
+        { q: "It is none of my business if a fellow member is cheating on his taxes.", a: "We are members of one another. If he is trapped in sin, it is my business to restore him.", bundle: 'pro' },
+        { q: "I am being humble by not judging their marriage conflict from the outside.", a: "Humility does not mean passivity. I must offer to help them reconcile face-to-face.", bundle: 'pro' },
+        { q: "It is more loving to stay quiet and just pray for his drug habit silently.", a: "Leaving him under the weight of sin is hatred, not love. I must speak to him directly.", bundle: 'pro' },
+        { q: "It is the pastor's job to deal with public hypocrisy, not mine as a layman.", a: "Every member is called to restore. God laid this brother in my pathway today.", bundle: 'pro' },
+        { q: "I should stay out of it to preserve my own peace and comfort in the small group.", a: "That is selfish laziness. True peace is built on truth and reconciliation.", bundle: 'pro' },
+        { q: "He is too intimidating, so I'll just wait for someone else to say something.", a: "Fear of man is a trap. I must go in meekness, trusting God for the courage.", bundle: 'pro' },
+        { q: "If I stay neutral, I can remain a friend to both sides of the fight.", a: "Neutrality in the presence of sin is a compromise. I must stand for truth and reconciliation.", bundle: 'pro' },
+        { q: "They will think I am being self-righteous if I bring up their sin.", a: "If I go in meekness, admitting I might need their help next week, I cannot look self-righteous.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Retaliation",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Hitting back in kind is the only fair way to teach my tormentor a lesson.\"\nRetaliation only multiplies the forces of evil; we conquer hostility with active, aggressive goodness.\nIt feels right because matching their anger feels like justice, and defending ourselves feels like a basic survival reflex.\nIt costs us the victory, keeping both parties locked in a sinful ping-pong match that God never blesses.\n\nMindset: defeat evil with good, using the powerful weapons of grace.",
+      inputs: [
+        { q: "He slandered my work, so I have every right to expose his mistakes in the next meeting.", a: "If I return evil for evil, I have been conquered. I must find a way to serve him instead.", bundle: 'pro' },
+        { q: "If I am nice to her after she insulted me, it will look like she won the fight.", a: "The winner is the one who obeys God. I conquer her insult by offering a blessing.", bundle: 'pro' },
+        { q: "He called me a legalist, so I should call him out on his obvious hypocrisy.", a: "A soft answer turns away wrath. I must respond with kind words and keep my heart clean.", bundle: 'pro' },
+        { q: "She deserves to feel the pain she caused me by ignoring my texts.", a: "Vengeance is the Lord's prerogative, not mine. I must let go of the score.", bundle: 'pro' },
+        { q: "I should protect myself by cutting him off completely and never offering help.", a: "Cutting him off is bitter retreat. I must look for a practical way to meet his needs.", bundle: 'pro' },
+        { q: "He threw my gift back in my face, which proves being nice is a waste of time.", a: "My duty is to obey God, not to get a warm reaction. I will continue to bless him.", bundle: 'pro' },
+        { q: "If I don't defend my reputation publicly, everyone will believe his lies.", a: "My reputation is in God's hands. I will focus on doing what is honourable in the eyes of everyone.", bundle: 'pro' },
+        { q: "Offering to carry his bags is just letting him walk all over me like a doormat.", a: "It is an aggressive act of biblical love. I will serve him in faith to break his hostility.", bundle: 'pro' },
+      ]
+    },
+  ],
+  seenandtrusted2careshedidnotaskf: [
+    {
+      name: "Initiative",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If she wants something done she can ask me — I'm not a mind reader.\"\n\nWhat is true instead: the asking is most of the cost. By the time she has noticed, decided it matters and worked out how to say it without sounding like a complaint, she has done the expensive part alone.\n\nWhy it feels right: it sounds fair, and it is even true in a narrow sense. You genuinely cannot read her mind, and you would genuinely have done it if asked.\n\nWhat it costs: she becomes the manager of a household with one employee. Being managed is exhausting; being the manager is worse.\n\nMindset: noticing is part of the job, not an optional extra.",
+      inputs: [
+        { q: "I said \"just tell me what you need doing\" and felt reasonable about it.", a: "Knowing what needs doing is the work. Volunteering for the easy half is not help.", bundle: 'pro' },
+        { q: "I did the thing the moment she asked and expected that to count.", a: "It counts less than she hoped, because she still had to carry it as far as my ears.", bundle: 'pro' },
+        { q: "I think it is unfair to be blamed for not noticing something.", a: "Nobody is blaming me for a bad memory. She is telling me she is tired of being the one who remembers.", bundle: 'pro' },
+        { q: "I genuinely did not see it.", a: "Then the fix is to look more often, not to explain that I was not looking.", bundle: 'pro' },
+        { q: "I wait for her to ask so that I get it right rather than doing the wrong thing.", a: "Getting it slightly wrong on my own initiative costs her far less than getting it perfectly right on hers.", bundle: 'pro' },
+        { q: "She stopped asking and I assumed things had got better.", a: "She stopped asking because asking cost more than doing it herself. That is worse, not better.", bundle: 'pro' },
+        { q: "I want a list so I know where I stand.", a: "A list means she still owns the whole thing and I own a few tasks on it.", bundle: 'pro' },
+        { q: "I think she should be grateful when I do help.", a: "Gratitude for doing half of my own life is a strange thing to be waiting for.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Solving",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If she tells me a problem, she wants me to solve it. That's what I'm for.\"\n\nWhat is true instead: being tended to and being fixed are two different needs, and only one of them is met by advice.\n\nWhy it feels right: solving is what you are good at, it is what you would want, and it feels like the useful thing to offer instead of sitting there uselessly.\n\nWhat it costs: she learns that telling you something means being given a task list. So she stops telling you the things that have no solution, which is most of the things that matter.\n\nMindset: my solution will keep; her telling me might not.",
+      inputs: [
+        { q: "She starts describing a problem and I am already forming the answer.", a: "The answer will still be there in twenty minutes. She might not still be talking.", bundle: 'pro' },
+        { q: "I feel useless just sitting there while she is upset.", a: "Sitting there is the thing being asked for. Useless is what it feels like from the inside, not what it is.", bundle: 'pro' },
+        { q: "I have offered the same advice three times and she has not taken it.", a: "If it did not land three times, advice was never what was wanted.", bundle: 'pro' },
+        { q: "She says she just wants to vent and I find that pointless.", a: "Venting is the process. It looks pointless from outside and it does the work.", bundle: 'pro' },
+        { q: "I want to point out the part where she made it worse for herself.", a: "True, and unwanted right now. It will still be true when she is not raw.", bundle: 'pro' },
+        { q: "I gave the solution and she got annoyed, which seems unfair.", a: "She heard \"the feeling is the problem\". That is not what I meant and it is what arrived.", bundle: 'pro' },
+        { q: "I ask what she wants and it feels like a cop-out.", a: "Asking is not a cop-out. Guessing wrong and calling it care would be.", bundle: 'pro' },
+        { q: "She has stopped telling me about her work.", a: "I have made telling me expensive. That is the thing to notice.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Her Looks",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"She knows I find her attractive. I married her — I shouldn't have to keep saying it.\"\n\nWhat is true instead: she cannot hear what you are not saying, and the version of her that most needs seeing is the one that has been buried under years of being useful.\n\nWhy it feels right: it is true that you think it. From inside your head, a thing you think constantly feels like a thing you have said.\n\nWhat it costs: she is seen all day as a mother, a colleague and a set of responsibilities. If she is not seen as a woman anywhere, that part of her quietly closes, and neither of you can name what went.\n\nMindset: what stays in my head does not reach her.",
+      inputs: [
+        { q: "I think it every day and I say it a few times a year.", a: "The gap between those two numbers is the whole problem, and it is entirely mine to close.", bundle: 'pro' },
+        { q: "Saying it out loud feels forced now.", a: "Awkward and true beats smooth and absent. It gets easier by the fourth time.", bundle: 'pro' },
+        { q: "I compliment her and she brushes it off, so I stop.", a: "She brushed off the first one after two years of silence. Say the second one.", bundle: 'pro' },
+        { q: "I tell her the house looks great and she seems flat about it.", a: "I praised the work. She was hoping to be seen, not appraised.", bundle: 'pro' },
+        { q: "I feel like a compliment now would sound like I want something.", a: "That is only true because I have let them become currency. The cure is more of them, not fewer.", bundle: 'pro' },
+        { q: "She has just had a baby and I think she does not want to hear it.", a: "She has never needed it more. She will decide whether to believe it; my job is to say it.", bundle: 'pro' },
+        { q: "I think she should get that from herself, not from me.", a: "She does carry her own. Mine is not a substitute for it and it is not nothing either.", bundle: 'pro' },
+        { q: "I only notice how she looks when she has made an effort.", a: "The Tuesday-morning version is the one that would mean the most.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mind-Reading",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I have to be told what she needs, it doesn't count.\"\n\nWhat is true instead: being told is normal. The thing that counts is what happens afterwards — whether you keep needing to be told the same thing.\n\nWhy it feels right: the romantic version has him simply knowing, and being instructed feels like failing a test you wanted to pass on talent.\n\nWhat it costs: you either avoid asking, and get it wrong, or you sulk when she tells you, and she learns not to. Both roads end with her doing it herself.\n\nMindset: being told once is information; being told five times is the failure.",
+      inputs: [
+        { q: "She tells me exactly what she wants and I feel deflated.", a: "She just saved me a month of guessing. That is generosity, not a criticism.", bundle: 'pro' },
+        { q: "I want to be the man who just knows.", a: "The man who just knows got there by asking a lot, early, and remembering.", bundle: 'pro' },
+        { q: "I did it because she asked, and it felt hollow.", a: "It felt hollow to me and it did not to her. My feeling is not the measure.", bundle: 'pro' },
+        { q: "I would rather do nothing than do the wrong thing.", a: "Nothing is the wrong thing, done reliably.", bundle: 'pro' },
+        { q: "I feel patronised when she explains how she wants it.", a: "She is describing her own preference in her own house. That is not a lesson about my competence.", bundle: 'pro' },
+        { q: "She has told me the same thing three times.", a: "Three times is my score, not hers. Write it down and stop needing the fourth.", bundle: 'pro' },
+        { q: "I ask her what she needs and it feels like admitting defeat.", a: "Asking narrows the search. Refusing to ask is not skill, it is pride with a cost attached.", bundle: 'pro' },
+        { q: "I want credit for finally getting it right.", a: "The credit is that she stops having to track it. That is the whole prize.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Rescue",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"A good man carries everything, so she never has to worry about anything.\"\n\nWhat is true instead: taking the load is care; taking the decisions is management. She is an adult with her own competence, and protecting her from her own life removes the thing she stands on.\n\nWhy it feels right: it is the generous-sounding version of the problem. More is being done, by you, at cost to you — it feels like the opposite of selfishness.\n\nWhat it costs: she stops being a partner and becomes a dependent, then resents it without being able to say why. And you burn out doing a job nobody asked you to take.\n\nMindset: I carry the weight; she keeps the choices.",
+      inputs: [
+        { q: "I decided something for her because I knew the right answer.", a: "Being right is not the same as it being mine to decide.", bundle: 'pro' },
+        { q: "I keep bad news from her to protect her from worrying.", a: "Managed information is the opposite of safety. She will feel the shape of what I am hiding.", bundle: 'pro' },
+        { q: "I am exhausted from carrying everything and slightly proud of it.", a: "The pride is the tell. This stopped being about her a while ago.", bundle: 'pro' },
+        { q: "She says she feels handled and I think that is ungrateful.", a: "Handled is exactly what over-care feels like from inside. That is useful information, not an insult.", bundle: 'pro' },
+        { q: "I want to fix a problem in her family that she has not asked me to touch.", a: "Her family is hers. Support is offered; takeover is not.", bundle: 'pro' },
+        { q: "I redo things she has done because my way is better.", a: "Doing it my way is not care. It is a small correction, repeated daily.", bundle: 'pro' },
+        { q: "I think she cannot cope with the difficult stuff.", a: "She coped for years before I was there. My job is to lighten it, not to replace her.", bundle: 'pro' },
+        { q: "I have taken so much that I have started resenting her for it.", a: "I took more than was asked and sent her the bill. Time to hand some back and say so.", bundle: 'pro' },
+      ]
+    },
+  ],
+  seenandtrusted3askingtobetrusted: [
+    {
+      name: "Asking",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I have to ask for it, it doesn't count.\"\n\nWhat is true instead: nearly everything worth having in a relationship has to be asked for once. What would not count is having to ask for the same thing forever — and that only happens when the first ask never gets made properly.\n\nWhy it feels right: the wanted version has her simply knowing, and asking feels like collecting something you had to beg for.\n\nWhat it costs: you wait, she does not guess, and the disappointment collects until it comes out as a verdict on her rather than a request.\n\nMindset: asked for once and given freely is the normal shape of this.",
+      inputs: [
+        { q: "I want her to notice without being told.", a: "She is not withholding it. She does not know it is missing.", bundle: 'pro' },
+        { q: "She gave me exactly what I asked for and it felt hollow.", a: "The hollowness is mine and it fades. The alternative is not getting it at all.", bundle: 'pro' },
+        { q: "Asking feels like admitting I am needy.", a: "Everyone needs this. The only choice is whether it gets said or leaks.", bundle: 'pro' },
+        { q: "I have been waiting a month for her to work it out.", a: "A month of waiting has produced nothing except a worse mood in me.", bundle: 'pro' },
+        { q: "I dropped a hint and she missed it.", a: "A hint is a test. She failed a test she did not know she was sitting.", bundle: 'pro' },
+        { q: "I think a good relationship would not need this kind of conversation.", a: "Good relationships are the ones where these conversations happen early and briefly.", bundle: 'pro' },
+        { q: "I asked once and nothing changed, so I have stopped asking.", a: "Once is a request, twice is a pattern being established. Stopping after one is quitting early.", bundle: 'pro' },
+        { q: "I am embarrassed by how small the thing I want is.", a: "Small is good. Small is easy to give and easy to do again tomorrow.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Withdrawal",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I go quiet, she will work out that something is wrong.\"\n\nWhat is true instead: she will work out that something is wrong and have no idea what. All the silence transmits is a threat with no content.\n\nWhy it feels right: it does register. The temperature drops, she becomes attentive, and it feels like being heard without the exposure of speaking.\n\nWhat it costs: she starts managing your moods instead of talking to you, and you get attention for being difficult rather than for what you actually wanted.\n\nMindset: silence gets me noticed and never gets me answered.",
+      inputs: [
+        { q: "I have gone cold and part of me wants her to notice.", a: "She has noticed. She cannot answer a message with no words in it.", bundle: 'pro' },
+        { q: "She asked what was wrong and I said nothing.", a: "That was the moment. I closed the only door that was open.", bundle: 'pro' },
+        { q: "I think saying it out loud would make me look weak.", a: "Radiating it for three days is the more visible version of the same thing.", bundle: 'pro' },
+        { q: "Going quiet is the only thing that gets a reaction.", a: "It gets a reaction to my mood. Nothing about the actual problem changes.", bundle: 'pro' },
+        { q: "I want her to ask again so that I can finally say it.", a: "Making her ask three times is a charge I am adding to a request.", bundle: 'pro' },
+        { q: "I do not know what is wrong, so I cannot say anything.", a: "\"I don't know what's wrong and I know I'm off\" is a complete sentence and it opens everything.", bundle: 'pro' },
+        { q: "The silence has lasted so long that raising it now would be embarrassing.", a: "Naming it late is awkward for ten minutes. Not naming it is another fortnight.", bundle: 'pro' },
+        { q: "She has started tiptoeing around me and I quite like the care.", a: "That care is fear. It is a poor substitute for the thing I actually wanted.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Her Motive",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"When she checks up on me, it means she does not respect me.\"\n\nWhat is true instead: her checking is usually about her own unsteadiness, not a verdict on your competence. It still needs addressing — and it is a different problem with a different answer.\n\nWhy it feels right: it lands on the spot that hurts, and the interpretation arrives instantly and fully formed.\n\nWhat it costs: you answer a contempt that was not there, she is bewildered by the size of it, and the actual request — for room — never gets made.\n\nMindset: the checking is usually her nerves, not her opinion of me.",
+      inputs: [
+        { q: "She asked twice whether I had done it and I heard contempt.", a: "I heard contempt. What was said was a question. Those are not the same thing.", bundle: 'pro' },
+        { q: "She corrects small things constantly and it feels like a running assessment.", a: "It may be anxiety with a to-do list attached. Either way, what I want is room, and I can ask for that.", bundle: 'pro' },
+        { q: "I want to accuse her of thinking I am useless.", a: "I would be arguing with a thought I assigned her. Better to say what I want instead.", bundle: 'pro' },
+        { q: "She hovers when I do something and I go cold.", a: "Cold answers a crime she has not committed. A sentence answers the actual situation.", bundle: 'pro' },
+        { q: "I think if she trusted me she would not need to ask.", a: "Trust gets built by things going well repeatedly, not by her deciding to feel it.", bundle: 'pro' },
+        { q: "Her lack of confidence in me is obvious.", a: "What is obvious is her behaviour. The reason for it is a guess I keep treating as fact.", bundle: 'pro' },
+        { q: "I want her to admit she does not think I am capable.", a: "Winning that admission would give me nothing. Being left to it would give me everything.", bundle: 'pro' },
+        { q: "I feel like a teenager being supervised.", a: "The feeling is real and the label is mine. \"Leave this one to me\" is the whole fix.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being Wanted",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Needing to feel wanted by her is not a very manly thing to need.\"\n\nWhat is true instead: being well received — welcomed, desired, glad-you-are-here — is a real need, and unmet it does more damage than almost anything else on this list.\n\nWhy it feels right: the strong version of a man does not need to be welcomed, and admitting you do feels like handing over something that can be used.\n\nWhat it costs: you never ask, so it never arrives, and the disappointment reappears as coldness or as fault-finding about something else entirely.\n\nMindset: wanting to be wanted is not weakness; hiding it is what causes the damage.",
+      inputs: [
+        { q: "I want to say I miss her being pleased to see me and it sounds pathetic.", a: "It sounds honest. Pathetic is going cold for a month instead.", bundle: 'pro' },
+        { q: "I think I should be able to run on my own approval.", a: "I do run on my own approval. Hers is not the fuel, and its absence still registers.", bundle: 'pro' },
+        { q: "She is warm to me and I make a joke to break it.", a: "The joke is a small refusal. She will make fewer offers.", bundle: 'pro' },
+        { q: "I have started picking at small things instead of saying what I miss.", a: "The fault-finding is the ask, badly disguised. Say the ask.", bundle: 'pro' },
+        { q: "Wanting her to desire me feels like something I should have grown out of.", a: "Nobody grows out of it. Some people just stop mentioning it.", bundle: 'pro' },
+        { q: "I feel like a stranger in my own house and cannot say so.", a: "\"I want to feel like you're glad I'm here\" is one sentence and it changes the room.", bundle: 'pro' },
+        { q: "If I ask to be wanted, any warmth afterwards will feel manufactured.", a: "She will not fake this. And practised warmth becomes real warmth faster than absence does.", bundle: 'pro' },
+        { q: "I am waiting for her to want me first.", a: "We are both waiting, in different rooms, for the same thing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Fault",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"This loop is mostly her doing, so it is mostly hers to fix.\"\n\nWhat is true instead: the loop runs on two halves, and yours is the only one you can operate. Moving it first is not a concession, it is the only available lever.\n\nWhy it feels right: the sequence really may have started with her. You can trace it, and the tracing is satisfying.\n\nWhat it costs: two people wait for each other to go first, and the waiting is itself the pattern continuing. Nothing moves for a year.\n\nMindset: the only half I can move is mine.",
+      inputs: [
+        { q: "I can prove she started it.", a: "I probably can. The proof does not move anything.", bundle: 'pro' },
+        { q: "Going first feels like accepting blame for the whole thing.", a: "Going first is not a confession. It is the only move available to me.", bundle: 'pro' },
+        { q: "I have decided to wait and see whether she changes.", a: "She is doing the same, which is the loop, running.", bundle: 'pro' },
+        { q: "I want the pattern acknowledged before I do anything differently.", a: "Acknowledgement is far easier to get after something has changed than before.", bundle: 'pro' },
+        { q: "I keep score of who has made more effort.", a: "Keeping score is one of my halves. It is also one I can put down.", bundle: 'pro' },
+        { q: "If I stop withdrawing and she keeps checking, I will have lost.", a: "There is no scoreboard. There is a house that either warms up or does not.", bundle: 'pro' },
+        { q: "She does the same things back and it feels unfair.", a: "Fair is not the goal. Out of the loop is the goal.", bundle: 'pro' },
+        { q: "I want a rule that makes it impossible for this to happen again.", a: "One rule helps: anything affecting us both gets asked about before it is settled.", bundle: 'pro' },
+      ]
+    },
+  ],
+  seenandtrusted1thesafetyshereads: [
+    {
+      name: "Her Worry",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If she is anxious about something, I have failed at making her feel safe.\"\n\nWhat is true instead: her emotional regulation is partly her own work. Your job is to be reliable and interested, not to organise your life so that she never feels uncertain.\n\nWhy it feels right: her anxiety often arrives pointed at you, and the fastest way to make it stop is to accept the charge and start managing it.\n\nWhat it costs: you end up walking on eggshells around her moods, which makes you less honest, and less honest is less safe.\n\nMindset: I am responsible for being trustworthy, not for her never worrying.",
+      inputs: [
+        { q: "She is catastrophising about a decision I made and I feel I have to fix her mood.", a: "I can be steady and interested without taking on the job of regulating her.", bundle: 'pro' },
+        { q: "I have started editing what I tell her to avoid setting her off.", a: "Editing myself makes me less predictable, which is the opposite of safety.", bundle: 'pro' },
+        { q: "She is anxious and I feel accused just by being in the room.", a: "Her anxiety is not a verdict on me. I can stay without pleading guilty.", bundle: 'pro' },
+        { q: "I want her to stop worrying so that I can relax.", a: "Wanting her calm for my sake is not care. I can be present while she is not calm.", bundle: 'pro' },
+        { q: "I keep reassuring her and it never seems to be enough.", a: "Reassurance does not settle a pattern. What settles it is a year of doing what I said.", bundle: 'pro' },
+        { q: "I feel like a failure because she is still uneasy after everything I have done.", a: "My reliability is the input. Her sense of safety builds on its own timescale.", bundle: 'pro' },
+        { q: "She worries about money even though the numbers are fine.", a: "I can show her the numbers and still not be able to hand her the feeling.", bundle: 'pro' },
+        { q: "I have started making decisions based on what will upset her least.", a: "Decisions made to avoid her reaction stop being mine, and she can tell.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Anger",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Any anger from me makes her feel unsafe, so I should stay level.\"\n\nWhat is true instead: she can hear you angry without fear, as long as she can see you have full control of yourself.\n\nWhy it feels right: you have seen her flinch, and the conclusion that anger itself is the problem is both obvious and comfortable.\n\nWhat it costs: emotional sterility. You go flat instead of honest, resentment collects, and when it finally arrives it arrives badly — which is the thing she actually fears.\n\nMindset: controlled anger is safe; swallowed anger is a fuse.",
+      inputs: [
+        { q: "I am furious and I have decided to say nothing about it.", a: "Silence now is a larger version of this conversation later.", bundle: 'pro' },
+        { q: "I think being angry means I have lost the argument.", a: "Anger is information about what matters to me. It is not a verdict on my case.", bundle: 'pro' },
+        { q: "I raise my voice and immediately feel like a bully.", a: "Volume is not violence. What frightens her is unpredictability, not decibels.", bundle: 'pro' },
+        { q: "I want to be the man who never gets angry.", a: "A man who never gets angry has either no boundaries or a hidden ledger.", bundle: 'pro' },
+        { q: "She flinched, so I decided never to bring it up again.", a: "The lesson is to say it differently, not to stop saying it.", bundle: 'pro' },
+        { q: "I go very quiet and cold instead of saying I am angry.", a: "Cold is harder to read than loud, and she has to guess. Guessing is what costs her.", bundle: 'pro' },
+        { q: "I have been irritable for a week without naming a single thing.", a: "Naming one thing badly beats radiating it accurately for a week.", bundle: 'pro' },
+        { q: "I think she should be able to tell that I am upset.", a: "She can tell I am upset. She cannot tell whether it is aimed at her.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Limits",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If she feels safe with me, it means she gets her way.\"\n\nWhat is true instead: a predictable limit creates more safety than a man who yields until he suddenly does not.\n\nWhy it feels right: giving in ends the discomfort now, and the room goes calm, and calm looks like safety from the inside.\n\nWhat it costs: she stops knowing where the edges are. A man with no visible limits eventually produces one out of nowhere, and unpredictability is exactly what she is scanning for.\n\nMindset: she can lean on a line she can see coming.",
+      inputs: [
+        { q: "I agreed to something I do not want because the argument was tiring.", a: "A yes I resent will arrive as a no later, at a worse moment.", bundle: 'pro' },
+        { q: "I think saying no to her is the opposite of making her feel secure.", a: "A reliable no is what makes my yes worth anything.", bundle: 'pro' },
+        { q: "I have said yes to three things this week that I did not want.", a: "I am building a bill, and she has no idea it exists.", bundle: 'pro' },
+        { q: "Setting a limit feels like I am punishing her.", a: "A limit with warmth attached is not a punishment. Leaving without one is.", bundle: 'pro' },
+        { q: "I gave in and then went cold for the rest of the evening.", a: "The coldness is the no I did not say. Saying it plainly would have cost her less.", bundle: 'pro' },
+        { q: "I worry that stopping a conversation is a form of abandoning her.", a: "Stopping with a stated return time is the opposite of abandonment.", bundle: 'pro' },
+        { q: "I keep the peace by never raising the thing that bothers me.", a: "That is not peace, it is a delay, and she is paying interest on it too.", bundle: 'pro' },
+        { q: "I think a good man absorbs more than he says.", a: "Absorbing has a capacity. Past it, everything comes out at once and frightens her.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Promises",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"The small things I forget are not a big deal — she knows what I actually care about.\"\n\nWhat is true instead: reliability is not a background quality, it is the whole evidence. She cannot check what you feel; she can check whether the thing got done.\n\nWhy it feels right: each individual miss really is small, and you know your own intentions, so the gap between them and the record is invisible from where you stand.\n\nWhat it costs: she starts keeping track. The tracking is exhausting, and the exhaustion arrives as nagging, which you then experience as disrespect.\n\nMindset: she cannot see my intentions, only my record.",
+      inputs: [
+        { q: "I forgot something small again and she made a face about it.", a: "To her it is not the errand. It is the fourth data point.", bundle: 'pro' },
+        { q: "I think she is making too much of a missed phone call.", a: "She is not counting phone calls. She is reading whether my word means anything.", bundle: 'pro' },
+        { q: "I meant to do it and the week got away from me.", a: "Meaning to do it lives entirely inside my head. Nothing about it reaches her.", bundle: 'pro' },
+        { q: "She checks whether I have done something and I feel supervised.", a: "The checking is downstream of a pattern. I built it and I can unbuild it.", bundle: 'pro' },
+        { q: "I said I would do it, then did most of it, and think that counts.", a: "Most of it means she still has to hold the rest, which is what she was trying to put down.", bundle: 'pro' },
+        { q: "I keep saying yes to things I will not get to.", a: "A no now is worth more to her than a yes I will quietly not honour.", bundle: 'pro' },
+        { q: "She has stopped asking me about the thing I never did.", a: "Her giving up on asking is worse news than her nagging.", bundle: 'pro' },
+        { q: "I fixed the big thing, so the small ones should be forgiven.", a: "The big thing was one afternoon. The small ones are every week.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Distance",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Going quiet for a bit is harmless. I just need some space to think.\"\n\nWhat is true instead: an unexplained disappearance is the single most destabilising thing you can do, and the explanation costs one sentence.\n\nWhy it feels right: you genuinely do process better alone, and announcing it feels like making a production out of something private.\n\nWhat it costs: she has to work out where you went and why, and the answers she reaches on her own are worse than the truth. Space without a signpost reads as withdrawal of the relationship.\n\nMindset: take the space and say that you are taking it.",
+      inputs: [
+        { q: "I have been in my own head for two days and said nothing about it.", a: "One sentence would have turned two days of guessing into a fact.", bundle: 'pro' },
+        { q: "I think announcing that I need space is dramatic.", a: "\"I need a couple of hours in my head, it isn't about you\" takes four seconds.", bundle: 'pro' },
+        { q: "I withdraw when I am hurt and expect her to notice why.", a: "She notices. She just has to invent the reason, and she will invent a worse one.", bundle: 'pro' },
+        { q: "I go quiet to signal that something is wrong.", a: "Silence is a poor signal. It transmits that something is wrong and nothing else.", bundle: 'pro' },
+        { q: "She asks what is going on and I say nothing, meaning I do not want to discuss it yet.", a: "\"Not yet\" is a real answer. \"Nothing\" is a locked door with the lights on.", bundle: 'pro' },
+        { q: "I disappear into work when things get difficult at home.", a: "Being busy is a respectable-looking way of leaving the room.", bundle: 'pro' },
+        { q: "I think she should give me the benefit of the doubt when I am quiet.", a: "The benefit of the doubt runs out faster than I think, and I can just tell her instead.", bundle: 'pro' },
+        { q: "I stayed silent to avoid a fight and the evening went cold anyway.", a: "I did not avoid the fight. I moved it, and made it about my silence as well.", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine1: [
+    {
+      name: "She is your Oracle",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Viewing her criticism not as an attack, but as information about where you have stopped being present or true.\nWhen you accept her as your Oracle, you stop defending and start looking for the kernel of truth in what she says.",
+      inputs: [
+        { q: "She complains about something trivial.", a: "What could be true here? Is she reflecting a blind spot in me right now?", bundle: 'pro' },
+        { q: "I feel unfairly accused.", a: "Instead of correcting the facts, ask: Where have I stopped leading or loving her in this situation?", bundle: 'pro' },
+        { q: "Her emotions seem completely illogical.", a: "Her emotions aren't a problem to be solved logically; they're a signal I need to listen to.", bundle: 'pro' },
+        { q: "I just want her to be \"normal.\"", a: "Her emotional storms are the flip side of the fire and passion I love about her.", bundle: 'pro' },
+        { q: "I feel like she's just attacking me out of malice.", a: "Her attack is a clumsy expression of pain. If I look deeper, I can find the kernel of truth.", bundle: 'pro' },
+        { q: "She complains that I forgot the milk again.", a: "It's not about the milk; to her, it's about whether she is top of mind for me.", bundle: 'pro' },
+        { q: "She says my plans are always disorganized.", a: "She is reflecting my lack of focus and attention. I need to tighten up on my presence.", bundle: 'pro' },
+        { q: "She is questioning my ability to handle our finances.", a: "She is feeling unsafe because of my passivity. I need to step up and provide the structure she needs.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What I Want Matters",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The posture that your own truth and needs are fundamental to your ability to lead.\nBeing \"nice\" by not having an opinion isn't leadership; it's abdicating the frame.",
+      inputs: [
+        { q: "I'm afraid my opinion will start a fight.", a: "Speaking my truth is the most loving thing I can do for the relationship long-term.", bundle: 'pro' },
+        { q: "I think I'm being \"easy-going\" when I say \"you choose.\"", a: "I'm not easy-going; I'm being lazy. Choosing is a gift of structure.", bundle: 'pro' },
+        { q: "I feel selfish when I set a boundary.", a: "A little healthy selfishness makes me a more stable man she can actually trust.", bundle: 'pro' },
+        { q: "I should let her choose everything so she stays happy.", a: "Deferring to her is abdication, not love. My expressed desire is what creates the polarity she craves.", bundle: 'pro' },
+        { q: "If I say \"no\" to her request, she'll think I'm mean.", a: "Having a strong \"no\" is the only way she can trust my \"yes\".", bundle: 'pro' },
+        { q: "I don't want to impose my preferences on the family.", a: "Stating what I want provides a point of orientation. It settles her nervous system.", bundle: 'pro' },
+        { q: "I feel guilty for spending money on my own hobbies.", a: "A Masculine leader must attend to his own basic needs first in order to serve others.", bundle: 'pro' },
+        { q: "I'll just say \"whatever you want\" to avoid the decision-making effort.", a: "\"Whatever you want\" is the default of a pleaser. Choosing is a gift of structure.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Nice Guy Pleasing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that being harmless, needless, and pleasing is the path to love and peace.\n\nWhat is true instead: hiding your needs is manipulative and kills polarity.\n\nIt feels right because you avoid immediate conflict and feel like a \"good boy\" who honors women.\n\nBut it costs you her respect; she cannot relax with a man who has no boundaries or backbone.\n\nMindset: a little healthy selfishness makes me a stable man she can actually trust.",
+      inputs: [
+        { q: "I should hide my anger so I don't upset the peace.", a: "Suppressing my anger turns me into a victim. I will share my truth cleanly instead.", bundle: 'pro' },
+        { q: "If I always agree with her, she'll feel loved.", a: "Agreement out of fear breeds resentment. She wants to be with a man, not a yes-man.", bundle: 'pro' },
+        { q: "Having no opinions makes me easy-to-manage and pleasant.", a: "Being formless makes her feel unpartnered and unsafe. My clarity is sexy.", bundle: 'pro' },
+        { q: "I want her approval before I make any personal choice.", a: "Seeking her permission turns her into my surrogate mother. I lead myself first.", bundle: 'pro' },
+        { q: "I'll do all the chores so she'll finally want to have sex with me.", a: "Choreplay is a covert contract that kills attraction. I do chores for myself, not to earn sex.", bundle: 'pro' },
+        { q: "I'm afraid she will leave if I show my true power.", a: "If my power scares her off, then she was never ready for a Masculine partner.", bundle: 'pro' },
+        { q: "I should apologize for the sins of all males to show I'm good.", a: "Profuse apologies out of guilt are weak. I honor her through my actions, not my shame.", bundle: 'pro' },
+        { q: "I feel like a \"bad boy\" when I put my needs first.", a: "What I want matters. Caring for myself is how I build the capacity to lead.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Feminine Tsunamis",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that her intense emotional outbursts are an attack on your character that you must fix or escape.\n\nWhat is true instead: her intensity is an organic storm that wants your grounded containment.\n\nIt feels right because her words are full of blame and shaming, which triggers your childhood wounds of being \"in trouble.\" But getting defensive or running away proves to her nervous system that you cannot hold space for her.\n\nMindset: her storm is a transient wave; I am the Oak that stands unmoved.",
+      inputs: [
+        { q: "Her messy emotions are proof that our relationship is broken.", a: "Her emotions are just energy in motion. They will pass if I stay grounded and present.", bundle: 'pro' },
+        { q: "I need to explain my good intentions so she'll stop being mad.", a: "Explaining during an outburst is like talking French to an English speaker. Hear the pain first.", bundle: 'pro' },
+        { q: "If she is shouting, it means I am failing as a husband.", a: "She is testing my solidity. Settle my nervous system and hold the space.", bundle: 'pro' },
+        { q: "I should tell her she's being completely illogical and crazy.", a: "She wishes she weren't in this state. Telling her she's crazy only enrages her further.", bundle: 'pro' },
+        { q: "I want to run out of the house to escape the snot bubbles and rage.", a: "Staying in the fire is what Masculine leadership requires. Breathe and stay present.", bundle: 'pro' },
+        { q: "I must find a logical solution to her complaint immediately.", a: "Feelings first, facts later. Settle her heart first, then deal with the facts.", bundle: 'pro' },
+        { q: "She expects me to agree with all her accusations.", a: "Hear the pain, not the blame. I don't have to agree with her story to empathize with her hurt.", bundle: 'pro' },
+        { q: "I feel like a victim when she is throwing wild emotions at me.", a: "I am not a victim. I am the leader, and I am responsible for the connection.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Relational Conflict",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that winning the argument or protecting your ego is more important than restoring the connection.\n\nWhat is true instead: taking responsibility for the resolution is the ultimate display of leadership.\n\nIt feels right because your defenses want to protect your \"goodness\" and prove you were right.\n\nBut it costs you her trust and shuts down her heart; she needs to feel met, not defeated.\n\nMindset: I will put the connection before my fear or ego.",
+      inputs: [
+        { q: "I won't apologize until she admits her part of the mistake.", a: "A leader doesn't wait for others to go first. I will own my part cleanly now.", bundle: 'pro' },
+        { q: "I should give her the cold shoulder to show her she hurt me.", a: "The silent treatment is a child's defense. I will stay engaged and state my boundaries.", bundle: 'pro' },
+        { q: "I need to win this fight so I don't lose my status.", a: "Relational conflict isn't about win/lose. Winning an argument at the cost of connection is a loss.", bundle: 'pro' },
+        { q: "She should get over her hurt because it was an accident.", a: "Disinviting her or making mistakes hurts her nervous system. My clumsiness has consequences.", bundle: 'pro' },
+        { q: "If I ask for a do-over, she'll think I'm weak.", a: "It takes a strong man to admit he was clumsy. A do-over pulls the plug on conflict.", bundle: 'pro' },
+        { q: "I want to list all the things I've done right to prove I'm good.", a: "Resting on my laurels means nothing to her in the moment. Polarity lives in the present.", bundle: 'pro' },
+        { q: "She should fix her own emotional problems on her own.", a: "If I don't like how she is being, I can lead her into a different state.", bundle: 'pro' },
+        { q: "Hiding my true feelings will keep the relationship safe.", a: "She is an Oracle. She senses my shut-down heart and it breaks her trust. I will speak inarguably.", bundle: 'pro' },
+      ]
+    },
+  ],
+  askingforclarity: [
+    {
+      name: "The Clarifying Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I'll work it out in a minute.\" The pack-wide belief that not understanding is a small private problem, best handled quietly.\n\nWhat is true instead: a question now is almost always smaller than the mistake later.\n\nIt feels reasonable because it often works. Most things do become clear, and nobody likes stopping a conversation.\n\nWhat it costs is the times it does not work — the wrong Mark, the wrong door, the wrong day — and by then the question has become a confession.\n\nMindset: ask about the piece you missed while it is still a small question.",
+      inputs: [
+        { q: "I'll work it out in a minute.", a: "\"If I haven't worked it out by the end of this sentence, I won't.\"", bundle: 'pro' },
+        { q: "Asking will slow everything down.", a: "\"One question now is faster than doing the wrong thing all afternoon.\"", bundle: 'pro' },
+        { q: "Everyone else seems to have understood.", a: "\"Half of them are probably nodding for the same reason I am.\"", bundle: 'pro' },
+        { q: "It's probably not important.", a: "\"If it weren't important, I wouldn't still be wondering about it.\"", bundle: 'pro' },
+        { q: "I'll just go along with it and see what happens.", a: "\"Going along without understanding is just guessing, only later.\"", bundle: 'pro' },
+        { q: "I should have understood that the first time.", a: "\"I didn't, so the useful thing now is to ask.\"", bundle: 'pro' },
+        { q: "They'll have to say the whole thing again.", a: "\"Not if I tell them which bit I lost.\"", bundle: 'pro' },
+        { q: "Asking makes it look like I wasn't listening.", a: "\"Asking about one piece shows exactly how closely I was listening.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Looking Slow",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I ask, they'll think I'm slow.\" The fear that a question is a report on your intelligence.\n\nWhat is true instead: people who ask a precise question look like they were paying attention, not like they were lost.\n\nIt feels reasonable because everyone else seems to understand, and you cannot see the people who are nodding for the same reason you are.\n\nWhat it costs is the thing you actually wanted to avoid: getting it wrong later, in public, when the question can no longer be small.\n\nMindset: a precise question is the opposite of looking slow.",
+      inputs: [
+        { q: "If I ask, they'll think I'm slow.", a: "\"People who ask one precise question look like they were paying attention.\"", bundle: 'pro' },
+        { q: "Everyone here knows what that word means.", a: "\"Someone in this room is hoping I'll ask it for them.\"", bundle: 'pro' },
+        { q: "I've been here too long not to know this.", a: "\"The longer I leave it, the stranger the question gets, so I'll ask it today.\"", bundle: 'pro' },
+        { q: "A clever person would get it from context.", a: "\"Clever people ask what the word means and then get on with it.\"", bundle: 'pro' },
+        { q: "I don't want to be the one holding everyone up.", a: "\"Ten seconds of holding them up beats a week of getting it wrong.\"", bundle: 'pro' },
+        { q: "They'll wonder how I got this job.", a: "\"Nobody ever wondered that because someone asked what a word meant.\"", bundle: 'pro' },
+        { q: "The expert will think I'm not up to it.", a: "\"Experts explain their words all day, and to them it's just the job.\"", bundle: 'pro' },
+        { q: "I'll ask someone else afterwards so nobody notices.", a: "\"The person who said it is the only one who knows what they meant.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Nodding Along",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"I can usually pick it up from context.\" A belief that is mostly true — which is exactly what makes it hard to argue with.\n\nWhat is true: you often can, and stopping a good story for every small gap would be tiring for everyone.\n\nWhat gets added is the step from \"usually\" to \"this time\": from \"I don't need every word\" to \"I don't need this one\", even when the sentence hangs on it.\n\nWhat it costs is the nod you have to own later, when the gap has already done its damage.\n\nMindset: keep the patience. Drop the idea that patience means never asking.",
+      inputs: [
+        { q: "I can usually pick things up from context.", a: "\"True, usually — but 'so I don't need to ask this time' is the part I added.\"", bundle: 'pro' },
+        { q: "Stopping someone mid-story to ask is rude.", a: "\"True, mid-flow — but 'so I can never ask' is the part I added.\"", bundle: 'pro' },
+        { q: "Most things become clear if I wait a bit.", a: "\"True, most do — but 'so this one will too' is the part I added.\"", bundle: 'pro' },
+        { q: "Nodding keeps the conversation going.", a: "\"True — but 'so it's fine that I'm lost' is the part I added.\"", bundle: 'pro' },
+        { q: "I don't need to understand every word.", a: "\"True — but 'so I don't need the one it all hangs on' is the part I added.\"", bundle: 'pro' },
+        { q: "They're in a hurry, so I shouldn't hold them up.", a: "\"True, they are — but 'so I'll guess instead' is the part I added.\"", bundle: 'pro' },
+        { q: "I got the gist, and that's enough.", a: "\"True, for most things — but 'so I don't need the name' is the part I added.\"", bundle: 'pro' },
+        { q: "Asking again would embarrass them.", a: "\"True, a little — but 'so I'll stay confused' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Asking Twice",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I already asked once. I can't ask again.\" The belief that every question has a limit of one.\n\nWhat is true instead: there is no limit on asking. There is only a better way to ask the second time — smaller, more precise, often a guess.\n\nIt feels reasonable because the second question does cost more than the first, and you can hear their patience getting thinner.\n\nWhat it costs is pretending on the second round, which is worse than the confusion you had on the first.\n\nMindset: if I ask again, I ask about less.",
+      inputs: [
+        { q: "I already asked once, so I can't ask again.", a: "\"There's no limit on asking, only a better way to ask the second time.\"", bundle: 'pro' },
+        { q: "They'll get annoyed if I ask again.", a: "\"They'll be more annoyed if I get it wrong because I didn't.\"", bundle: 'pro' },
+        { q: "If I didn't get it the first time, that's my fault.", a: "\"Maybe it is, and asking again is how I fix it.\"", bundle: 'pro' },
+        { q: "Asking a third time is just embarrassing.", a: "\"If I guess this time, all they have to say is yes.\"", bundle: 'pro' },
+        { q: "They explained it perfectly well.", a: "\"Then one small question will be easy for them to answer.\"", bundle: 'pro' },
+        { q: "I'll look it up later instead.", a: "\"Nothing I can look up will tell me what they meant.\"", bundle: 'pro' },
+        { q: "I can't keep interrupting.", a: "\"I can ask once at the end, and ask it properly.\"", bundle: 'pro' },
+        { q: "They'll think I wasn't listening the first time.", a: "\"I'll say which part I got, and they'll hear that I was.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Not Making a Fuss",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'm easy-going. I don't need everything spelt out.\" A belief that feels like a good quality, and often is one.\n\nWhat is true instead: every question you do not ask gets answered somewhere — usually by someone else fixing what went wrong.\n\nIt feels reasonable because not making a fuss is genuinely kind in a lot of places, and people like being around someone who does not need everything explained twice.\n\nWhat it costs is quiet and delayed: the wrong form, the wrong day, the three things you agreed to and cannot explain.\n\nMindset: one small question is not a fuss. The mistake it prevents might be.",
+      inputs: [
+        { q: "I'm easy-going; I don't need everything spelt out.", a: "\"And somebody else ends up fixing what I didn't ask about.\"", bundle: 'pro' },
+        { q: "I don't like to bother people with questions.", a: "\"The bother still comes, just later, when I've done the wrong thing.\"", bundle: 'pro' },
+        { q: "I can manage on my own.", a: "\"Managing on my own is how I spent an hour on the wrong form.\"", bundle: 'pro' },
+        { q: "I'm good at reading between the lines.", a: "\"Which is why I sometimes read a whole story that nobody wrote.\"", bundle: 'pro' },
+        { q: "I don't make a fuss about small things.", a: "\"The small thing I didn't ask about is usually the one that grew.\"", bundle: 'pro' },
+        { q: "I'd rather work it out myself than ask.", a: "\"Working it out myself costs me an afternoon, and asking would have cost them ten seconds.\"", bundle: 'pro' },
+        { q: "I never make people repeat themselves.", a: "\"So they never find out that I didn't hear them.\"", bundle: 'pro' },
+        { q: "I keep things moving in meetings.", a: "\"And I leave with three things I agreed to and can't explain.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Guessing Wrong",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I guess and I'm wrong, I'll look silly.\" The fear that stops people using the lightest way to ask.\n\nWhat is true instead: a wrong guess is still useful. It shows them exactly where you went, so they know what to fix.\n\nIt feels reasonable because a guess puts something on the table, and an open \"what?\" does not. Being wrong out loud feels riskier than being vague.\n\nWhat it costs is the extra work you hand to the other person: with no guess to correct, they have to work out what you missed.\n\nMindset: a wrong guess is the second-fastest way to the right answer.",
+      inputs: [
+        { q: "If I guess and I'm wrong, I'll look silly.", a: "\"A wrong guess still shows them exactly where I got lost.\"", bundle: 'pro' },
+        { q: "It's safer to ask an open question.", a: "\"It's safer for me and harder for them, because they have to work out what I missed.\"", bundle: 'pro' },
+        { q: "I shouldn't put words in their mouth.", a: "\"A guess with a question mark is an offer they can turn down.\"", bundle: 'pro' },
+        { q: "What if my guess is something embarrassing?", a: "\"Then they'll correct it, and we'll both know where I was.\"", bundle: 'pro' },
+        { q: "I'd rather they explained it properly.", a: "\"A yes or a no is the quickest proper explanation there is.\"", bundle: 'pro' },
+        { q: "Guessing sounds like I think I know better.", a: "\"'The Tuesday one, you mean?' doesn't sound like I know better.\"", bundle: 'pro' },
+        { q: "After two wrong guesses I should give up.", a: "\"Two wrong guesses have narrowed it down to almost nothing.\"", bundle: 'pro' },
+        { q: "I'll only guess when I'm sure.", a: "\"If I were sure, I wouldn't need to ask.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  calibratinghumour: [
+    {
+      name: "The Calibrating Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If the joke misses, I've made a fool of myself.\" The pack-wide belief that every joke is a test you pass or fail.\n\nWhat is true instead: a joke is a small offer. Most misses are forgotten within a minute, unless the person who told it makes them bigger.\n\nIt feels reasonable because a flat silence is genuinely uncomfortable, and it feels like everyone is looking at you.\n\nWhat it costs is either no humour at all, or humour that is always a bit too big — trying to guarantee the laugh.\n\nMindset: offer it lightly, and let it land or not.",
+      inputs: [
+        { q: "If the joke misses, I've made a fool of myself.", a: "\"A joke that misses is gone in a minute, unless I keep it alive.\"", bundle: 'pro' },
+        { q: "Everyone is waiting to see if I'm funny.", a: "\"They're mostly waiting to get on with the conversation.\"", bundle: 'pro' },
+        { q: "I need to win the room back after that.", a: "\"The room was never lost; it just didn't laugh once.\"", bundle: 'pro' },
+        { q: "A good joke has to get a big laugh.", a: "\"A smile and a carry-on is a joke that worked.\"", bundle: 'pro' },
+        { q: "If I'm careful with humour, I'll be boring.", a: "\"The right size is not the careful size; it's the one that fits.\"", bundle: 'pro' },
+        { q: "I should know in advance whether it'll land.", a: "\"I can't know that, so I'll keep it small enough not to matter.\"", bundle: 'pro' },
+        { q: "One bad joke and they'll think I'm not funny.", a: "\"Nobody keeps score of my jokes except me.\"", bundle: 'pro' },
+        { q: "I'd better explain it so they get it.", a: "\"If it needs explaining, the best move is to let it go.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Flat Joke",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"That silence was a disaster.\" The belief that a joke falling flat is a real social failure that needs fixing.\n\nWhat is true instead: a flat joke is a very small event. The fixing is usually what makes it big.\n\nIt feels reasonable because silence after a joke is loud from the inside. You hear every second of it; they barely notice.\n\nWhat it costs is the over-repair — the explanation, the second try, the visible wince — which turns a flat second into an awkward minute.\n\nMindset: small miss, small repair, or none.",
+      inputs: [
+        { q: "That silence was a disaster.", a: "\"It was two seconds, and I'm the only one still thinking about it.\"", bundle: 'pro' },
+        { q: "I have to fix this before we move on.", a: "\"Moving on is the fix.\"", bundle: 'pro' },
+        { q: "They must think I'm an idiot now.", a: "\"They think I made a joke that didn't work, which everyone does.\"", bundle: 'pro' },
+        { q: "I should try another one straight away.", a: "\"Another one right now is how one miss becomes two.\"", bundle: 'pro' },
+        { q: "If I just explain it, they'll laugh.", a: "\"Nobody has ever laughed at an explanation.\"", bundle: 'pro' },
+        { q: "I'll be quiet for the rest of the evening.", a: "\"Going quiet makes the miss bigger than the miss did.\"", bundle: 'pro' },
+        { q: "That was the worst thing I could have said.", a: "\"It was a flat joke, not a cruel one, and it's already gone.\"", bundle: 'pro' },
+        { q: "I need to apologise for that joke.", a: "\"Nothing was hurt, so there's nothing to apologise for — just carry on.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Funny One",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'm the funny one. People expect it from me.\" A belief that feels like a gift, and often is one.\n\nWhat is true instead: being the funny one is a role, and roles can stop you listening. The joke becomes the job, even when the moment wants something else.\n\nIt feels reasonable because people do enjoy it, and it has probably made you welcome in a lot of rooms.\n\nWhat it costs is quiet: the conversations where someone needed you to be serious, and got a bit instead.\n\nMindset: I can be the funny one and still choose when not to be.",
+      inputs: [
+        { q: "I'm the funny one; people expect it from me.", a: "\"And sometimes what they need is the other thing I can do.\"", bundle: 'pro' },
+        { q: "I can always lighten the mood.", a: "\"Which means I sometimes lighten a mood that needed to stay heavy for a minute.\"", bundle: 'pro' },
+        { q: "A joke is my way of showing I care.", a: "\"And sometimes the person can't tell that's what it is.\"", bundle: 'pro' },
+        { q: "I always have a line ready.", a: "\"So I sometimes say it before I've heard what they meant.\"", bundle: 'pro' },
+        { q: "People like having me around because I'm funny.", a: "\"They might like me just as much when I'm listening.\"", bundle: 'pro' },
+        { q: "I'm good at keeping the bit going.", a: "\"Which is why I'm usually the last to notice it's finished.\"", bundle: 'pro' },
+        { q: "Humour gets me through awkward moments.", a: "\"And it gets me out of the moments I should have stayed in.\"", bundle: 'pro' },
+        { q: "I never let a conversation go flat.", a: "\"So nobody gets the quiet moment where they might have said something real.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Going Big",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"The bigger the joke, the bigger the laugh.\" Half true, which is why it is hard to let go of.\n\nWhat is true: a committed, full-sized joke often gets more than a hesitant one, and timid humour is rarely funny.\n\nWhat gets added is the step from \"said fully\" to \"made bigger\": that more words, more volume and more rounds will always get more laughs.\n\nWhat it costs is the big joke in the wrong room, and the bit that ran three rounds too long.\n\nMindset: keep the commitment. Drop the idea that bigger is always better.",
+      inputs: [
+        { q: "The bigger the joke, the bigger the laugh.", a: "\"True, when the room is ready — but 'always go bigger' is the part I added.\"", bundle: 'pro' },
+        { q: "Half-hearted jokes never work.", a: "\"True — but 'so every joke has to be huge' is the part I added.\"", bundle: 'pro' },
+        { q: "If it got a laugh once, it'll get one again.", a: "\"True, once or twice — but 'so I should keep going' is the part I added.\"", bundle: 'pro' },
+        { q: "Timid humour is boring.", a: "\"True — but 'so small humour is timid' is the part I added.\"", bundle: 'pro' },
+        { q: "People like it when I commit to a bit.", a: "\"True — but 'so I should never stop' is the part I added.\"", bundle: 'pro' },
+        { q: "The best jokes take a risk.", a: "\"True — but 'so the risk should be someone else's feelings' is the part I added.\"", bundle: 'pro' },
+        { q: "A quiet room needs someone to go big.", a: "\"True, sometimes — but 'so it should be me, right now' is the part I added.\"", bundle: 'pro' },
+        { q: "Big energy is what makes me fun.", a: "\"True, often — but 'so every room wants it' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Taking It Back",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I apologise, I'm admitting I meant it.\" The belief that taking a joke back makes it worse.\n\nWhat is true instead: a plain apology closes it. What keeps it open is the defence — \"I was only joking\" — which asks them to reassure you.\n\nIt feels reasonable because you did not mean harm, and apologising feels like confessing that you did.\n\nWhat it costs is the other person carrying the hurt alone, and the friendship carrying a small bruise nobody mentions.\n\nMindset: not meaning it and being sorry it landed are both true at once.",
+      inputs: [
+        { q: "If I apologise, I'm admitting I meant it.", a: "\"I can not mean it and still be sorry it landed.\"", bundle: 'pro' },
+        { q: "They're being too sensitive.", a: "\"Maybe, but it hit something, and one sentence costs me nothing.\"", bundle: 'pro' },
+        { q: "Saying sorry makes a big deal of it.", a: "\"One plain sentence is the smallest this can be.\"", bundle: 'pro' },
+        { q: "I was only joking — they know that.", a: "\"They know it was a joke; what they don't know is whether I care that it hurt.\"", bundle: 'pro' },
+        { q: "If I say something, it'll be awkward.", a: "\"It's already awkward, and I'm the one who can end it.\"", bundle: 'pro' },
+        { q: "It's better to just laugh it off.", a: "\"Laughing it off is asking them to laugh at it too.\"", bundle: 'pro' },
+        { q: "They said it's fine, so it's fine.", a: "\"They said it's fine to make it easier for me; I can make it easier for them.\"", bundle: 'pro' },
+        { q: "I'll make it up to them with a nicer joke later.", a: "\"A nicer joke later doesn't take back this one; a sentence now does.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Holding Back",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Better not to joke at all than risk it.\" The belief that the safe choice is no humour.\n\nWhat is true instead: a small joke, said all the way, is very low risk. What goes wrong is the half-said one, not the one you chose.\n\nIt feels reasonable because you have seen jokes land badly, maybe your own, and silence cannot offend anyone.\n\nWhat it costs is a lot of warmth. Humour is one of the fastest ways people get close, and staying out of it keeps you at a distance.\n\nMindset: choose a small one, and say it properly.",
+      inputs: [
+        { q: "Better not to joke at all than risk it.", a: "\"A small joke, said properly, is barely a risk at all.\"", bundle: 'pro' },
+        { q: "I'm not funny enough to try.", a: "\"I don't need to be funny, just light for a second.\"", bundle: 'pro' },
+        { q: "If I start a joke, I might not be able to finish it.", a: "\"Then I'll pick one short enough to finish.\"", bundle: 'pro' },
+        { q: "I'll wait until I know them better.", a: "\"A bit of humour is part of how I get to know them.\"", bundle: 'pro' },
+        { q: "Someone else will make the joke.", a: "\"Maybe, but it's also fine if it's me.\"", bundle: 'pro' },
+        { q: "My jokes always come out wrong.", a: "\"They come out wrong when I say half of them; I'll say the whole thing.\"", bundle: 'pro' },
+        { q: "Serious is safer at work.", a: "\"Serious all the time is safer and colder, and I can be both.\"", bundle: 'pro' },
+        { q: "If it doesn't land, I won't know what to do.", a: "\"I do know: carry on, or say it missed.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  brokenpromises: [
+    {
+      name: "The Trust Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Once I've broken it, the trust is gone.\" The pack-wide belief that one broken promise is final.\n\nWhat is true instead: trust after a broken promise usually comes back — gradually, through what the other person sees you do next. What slows it down most is not the break but what you do around it.\n\nIt feels reasonable because the moment of letting someone down feels enormous, and their disappointment looks permanent.\n\nWhat it costs is giving up on the repair — and then the break really is final.\n\nMindset: trust is rebuilt one kept promise at a time.",
+      inputs: [
+        { q: "Once I've broken it, the trust is gone.", a: "\"It's damaged, not gone, and what I do next decides how long it stays that way.\"", bundle: 'pro' },
+        { q: "Nothing I say now will make any difference.", a: "\"Saying it early and plainly makes a difference, and doing it makes the rest.\"", bundle: 'pro' },
+        { q: "They'll never rely on me again.", a: "\"They'll rely on me again for small things first, if I keep them.\"", bundle: 'pro' },
+        { q: "I've ruined it, so there's no point trying.", a: "\"The only way it stays ruined is if I stop here.\"", bundle: 'pro' },
+        { q: "I need to make one big gesture to fix this.", a: "\"Small things kept will do more than one big thing announced.\"", bundle: 'pro' },
+        { q: "A good person wouldn't have broken it in the first place.", a: "\"Good people break promises; what matters is what they do next.\"", bundle: 'pro' },
+        { q: "They're overreacting to one mistake.", a: "\"They're reacting to what it cost them, and I don't get to size that.\"", bundle: 'pro' },
+        { q: "If I just act normal, it'll blow over.", a: "\"It'll blow over faster if I name it than if I act like it didn't happen.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Waiting to Tell",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I might still make it, so there's no need to say anything yet.\" The belief that holding back bad news is kinder, or at least not yet necessary.\n\nWhat is true instead: every day you wait is a day they could have used to plan around it. Early bad news is a change of plan; late bad news is a betrayal.\n\nIt feels reasonable because there really is a chance you will make it, and warning them early feels like giving up.\n\nWhat it costs is the thing you were trying to protect: their plans, and their trust in your word.\n\nMindset: tell them when I know, not when it is certain.",
+      inputs: [
+        { q: "I might still make it, so I won't say anything yet.", a: "\"If I warn them and make it anyway, nobody minds; if I wait and miss it, everybody does.\"", bundle: 'pro' },
+        { q: "I don't want to worry them for nothing.", a: "\"A small worry now costs them less than a surprise on the day.\"", bundle: 'pro' },
+        { q: "I'll tell them once I've found a solution.", a: "\"They might have a better solution than I do, if I tell them in time.\"", bundle: 'pro' },
+        { q: "It's awkward to bring it up.", a: "\"It's much more awkward to bring it up on the deadline.\"", bundle: 'pro' },
+        { q: "If I work all weekend, I can fix it quietly.", a: "\"Maybe, but if I can't, they'll find out on Monday with no time left.\"", bundle: 'pro' },
+        { q: "Telling them now makes it real.", a: "\"It's already real; telling them just makes it useful.\"", bundle: 'pro' },
+        { q: "They're busy, and I don't want to add to it.", a: "\"Adding it now is the smaller version of adding it later.\"", bundle: 'pro' },
+        { q: "I'll wait and see how Thursday goes.", a: "\"By Thursday it's their problem too, and they'll have less time to solve it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Cover Story",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"A small white lie will buy me time.\" The belief that a cover story — \"it's in the post\", \"I'm on my way\" — is harmless if you put things right soon after.\n\nWhat is true instead: a lie is a different kind of damage from a broken promise. People forgive a broken promise gradually. A lie about it recovers far more slowly, and sometimes not at all.\n\nIt feels reasonable because the lie is small, it saves an awkward moment, and you fully intend to fix the real problem.\n\nWhat it costs is that the real problem becomes the smaller one. The lie is what they remember.\n\nMindset: the cover story costs more than the thing it covers.",
+      inputs: [
+        { q: "A small white lie will buy me time.", a: "\"It buys me an hour and costs me the trust I was trying to protect.\"", bundle: 'pro' },
+        { q: "\"It's in the post\" is what everyone says.", a: "\"Everyone says it, and everyone knows what it means when it isn't.\"", bundle: 'pro' },
+        { q: "If I fix it quickly, they'll never know I lied.", a: "\"Maybe, but I'll know, and the next small lie will be easier.\"", bundle: 'pro' },
+        { q: "The truth would just upset them.", a: "\"The truth upsets them now; the lie upsets them more when they find it.\"", bundle: 'pro' },
+        { q: "I'll correct it if it comes up.", a: "\"If they find it, it's a second breach; if I say it, it's the first step back.\"", bundle: 'pro' },
+        { q: "It's not really a lie, just a bit optimistic.", a: "\"If I said it to avoid the real answer, it was a lie.\"", bundle: 'pro' },
+        { q: "Admitting the lie will make everything worse.", a: "\"It'll make today worse and everything after it better.\"", bundle: 'pro' },
+        { q: "I've already said it, so I have to stick to it.", a: "\"Sticking to it means building the next one on top of it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Reliable",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I never let anyone down. I always say yes.\" A belief that feels like one of your best qualities — and often is.\n\nWhat is true instead: the person who says yes to everything is the person who ends up breaking promises, because nobody can keep them all.\n\nIt feels reasonable because people rely on you, thank you, and come back to you. Being the one who says yes feels like being a good friend and a good colleague.\n\nWhat it costs is the promises you make faster than you can check — and the people who find out, late, that your yes did not mean what they thought.\n\nMindset: a reliable yes is one I have checked.",
+      inputs: [
+        { q: "I never let anyone down.", a: "\"Which is why saying yes to everything will make me let someone down.\"", bundle: 'pro' },
+        { q: "I always say yes when someone needs help.", a: "\"And sometimes they plan around a yes I couldn't keep.\"", bundle: 'pro' },
+        { q: "People know they can count on me.", a: "\"They can count on me for what I actually have time for, and I don't always check.\"", bundle: 'pro' },
+        { q: "I'm the one who gets things done.", a: "\"So when I drop one, nobody expects it and nobody has a backup.\"", bundle: 'pro' },
+        { q: "I don't like to disappoint people by saying no.", a: "\"A no now disappoints them less than a broken yes later.\"", bundle: 'pro' },
+        { q: "I can always find the time somehow.", a: "\"Somehow is usually someone else's time, or my sleep.\"", bundle: 'pro' },
+        { q: "My word is my bond.", a: "\"Then my word should be smaller, so I can keep all of it.\"", bundle: 'pro' },
+        { q: "I hate letting anyone down, so I take on more.", a: "\"Taking on more is exactly how I end up letting someone down.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Words Are Cheap",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"Words are cheap. Only actions count.\" A belief that is half right, which is why it is so convincing.\n\nWhat is true: actions are what rebuild trust. A promise to do better that is not kept does more harm than none.\n\nWhat gets added is \"so there's no point saying anything\". Research on broken trust finds the opposite: a promise to do better does help — as long as it is followed by the action.\n\nWhat it costs is the silent treatment of your own mistake: fixing things quietly while the other person never hears that you understood.\n\nMindset: say it, keep it small, and then do it.",
+      inputs: [
+        { q: "Words are cheap; only actions count.", a: "\"True, actions count most — but 'so I'll say nothing' is the part I added.\"", bundle: 'pro' },
+        { q: "Apologising is just talk.", a: "\"True, on its own — but 'so I'll skip it' is the part I added.\"", bundle: 'pro' },
+        { q: "I'll just quietly do better and they'll notice.", a: "\"True, they'll notice in time — but 'so they don't need to hear it' is the part I added.\"", bundle: 'pro' },
+        { q: "Promises mean nothing after I've broken one.", a: "\"True, big ones don't — but 'so small ones don't either' is the part I added.\"", bundle: 'pro' },
+        { q: "Explaining myself won't change anything.", a: "\"True, explaining won't — but 'so naming what it cost them won't' is the part I added.\"", bundle: 'pro' },
+        { q: "They'll judge me by what I do, not what I say.", a: "\"True — but 'so what I say doesn't matter' is the part I added.\"", bundle: 'pro' },
+        { q: "Talking about it just makes it bigger.", a: "\"True, talking too much does — but 'so one sentence will' is the part I added.\"", bundle: 'pro' },
+        { q: "The only proof is doing it.", a: "\"True — but 'so I shouldn't tell them when it's done' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Their Anger",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I tell them, they'll be furious.\" The belief that the other person's reaction is the thing to avoid.\n\nWhat is true instead: their anger is part of the cost of the broken promise, and it is usually shorter when you meet it directly than when you try to dodge it.\n\nIt feels reasonable because nobody wants to be on the receiving end of someone's disappointment, and avoiding it seems like it helps both of you.\n\nWhat it costs is time, truth, or both: you wait too long to tell them, or you shade the story to soften it.\n\nMindset: their anger is theirs to have. My job is to tell them.",
+      inputs: [
+        { q: "If I tell them, they'll be furious.", a: "\"They might be, and they'll be more furious if they find out late.\"", bundle: 'pro' },
+        { q: "I can't face their reaction.", a: "\"I don't have to enjoy it, I just have to be there for it.\"", bundle: 'pro' },
+        { q: "I'll soften the story so they're less upset.", a: "\"Softening it is how a broken promise becomes a lie.\"", bundle: 'pro' },
+        { q: "They have a right to be angry, so I should defend myself.", a: "\"If they have a right to be angry, there's nothing to defend.\"", bundle: 'pro' },
+        { q: "I'll wait until they're in a better mood.", a: "\"Their mood will be worse the longer I wait.\"", bundle: 'pro' },
+        { q: "If they're angry, it means the friendship is over.", a: "\"Angry people usually care, and that's a reason to repair it.\"", bundle: 'pro' },
+        { q: "I need them to forgive me right away.", a: "\"They get to take their time, and I can wait.\"", bundle: 'pro' },
+        { q: "Their reaction is too much for what I did.", a: "\"I don't get to decide what it cost them.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  askingpermission: [
+    {
+      name: "The Permission Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Asking makes it awkward.\" The pack-wide belief that a question about permission turns a normal moment into a formal one.\n\nWhat is true instead: a quick question before is almost never awkward. What is awkward is the moment afterwards, when they find out and you were supposed to have asked.\n\nIt feels reasonable because the answer is usually yes, and asking about something obvious can feel like making a fuss.\n\nWhat it costs is the few times the answer would have been no — and those are the ones people remember.\n\nMindset: a short question now is lighter than an apology later.",
+      inputs: [
+        { q: "Asking makes it awkward.", a: "\"Asking takes five seconds; finding out I didn't ask is what's awkward.\"", bundle: 'pro' },
+        { q: "They'll obviously say yes.", a: "\"Then the question costs nothing, and I'll know for sure.\"", bundle: 'pro' },
+        { q: "It's not a big deal.", a: "\"It's not a big deal to me; I'll let them say whether it is to them.\"", bundle: 'pro' },
+        { q: "I'll look uptight if I ask.", a: "\"Asking about their photo looks thoughtful, not uptight.\"", bundle: 'pro' },
+        { q: "If they minded, they'd tell me.", a: "\"Most people don't say anything; they just mind.\"", bundle: 'pro' },
+        { q: "I'll ask next time.", a: "\"This is next time.\"", bundle: 'pro' },
+        { q: "Everyone does this without asking.", a: "\"Everyone does, and everyone's had it done to them and minded.\"", bundle: 'pro' },
+        { q: "Asking will make them think I've done something wrong.", a: "\"Asking first is how I make sure I haven't.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Small Things",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"It's such a small thing — asking would be weird.\" The belief that permission is only for big things.\n\nWhat is true instead: small things can be asked about quickly, and \"small\" is decided by the person it belongs to.\n\nIt feels reasonable because a formal question about a pen or a chair would be odd, and most small things really are fine.\n\nWhat it costs is the small things that were not small to them — their photo, their story, their seat — and the quiet sense that you take things.\n\nMindset: a small thing gets a small question, not no question.",
+      inputs: [
+        { q: "It's such a small thing, asking would be weird.", a: "\"A small thing gets a small question: 'Mind if I…?'\"", bundle: 'pro' },
+        { q: "It's only a photo.", a: "\"It's only a photo to me; it's their face.\"", bundle: 'pro' },
+        { q: "It's only a pen.", a: "\"Then 'I'm borrowing your pen' is all it takes.\"", bundle: 'pro' },
+        { q: "They won't even notice.", a: "\"If they won't notice, a quick word won't cost anything either.\"", bundle: 'pro' },
+        { q: "I'd feel silly asking about something this minor.", a: "\"Feeling silly for a second beats them feeling overlooked.\"", bundle: 'pro' },
+        { q: "Nobody asks about things like this.", a: "\"Then I'll be the one who does, and people notice that.\"", bundle: 'pro' },
+        { q: "I'll just put it back before they see.", a: "\"If I'd rather they didn't see, I should probably ask.\"", bundle: 'pro' },
+        { q: "It's only a story about them.", a: "\"It's their story; it takes one sentence to check.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Forgiveness, Not Permission",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"It's easier to ask forgiveness than permission.\" A saying that is sometimes true — which is why it spreads to places it should not.\n\nWhat is true: in some situations, waiting for permission slows everything down, and people are glad you just got on with it.\n\nWhat gets added is that the saying applies to things that belong to someone else — their image, their news, their things, their space. There, forgiveness is not easier. It is just later, and on their side, not yours.\n\nWhat it costs is the trust that you will not decide for them.\n\nMindset: keep the courage to act. Drop it where the thing is theirs.",
+      inputs: [
+        { q: "It's easier to ask forgiveness than permission.", a: "\"True, for my own work — but 'for their things too' is the part I added.\"", bundle: 'pro' },
+        { q: "If I wait for permission, nothing gets done.", a: "\"True, sometimes — but 'so I'll share their news' is the part I added.\"", bundle: 'pro' },
+        { q: "People respect someone who just gets on with it.", a: "\"True — but 'so I'll post their photo' is the part I added.\"", bundle: 'pro' },
+        { q: "I can always say sorry afterwards.", a: "\"True, I can — but 'so the sorry fixes it' is the part I added.\"", bundle: 'pro' },
+        { q: "Asking slows things down.", a: "\"True, a little — but 'so it's not worth it' is the part I added.\"", bundle: 'pro' },
+        { q: "They'd have said yes anyway.", a: "\"True, probably — but 'so I didn't need to ask' is the part I added.\"", bundle: 'pro' },
+        { q: "Bold people don't ask.", a: "\"True, about their own risks — but 'so they don't ask about mine' is the part I added.\"", bundle: 'pro' },
+        { q: "The result was fine, so it doesn't matter that I didn't ask.", a: "\"True, the result was fine — but 'so asking didn't matter' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being Close",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"We're close. We don't need to ask each other.\" A belief that feels like the best part of a close relationship.\n\nWhat is true instead: close people still have things that are theirs, and closeness is exactly why they find it hard to say no.\n\nIt feels reasonable because not having to ask is a real sign of comfort, and a lot of the time it works.\n\nWhat it costs is quiet: the thing your partner, sibling or best friend minded but did not say, because saying it would have felt like saying you were not close.\n\nMindset: being close is a reason to ask easily, not a reason not to ask.",
+      inputs: [
+        { q: "We're close; we don't need to ask each other.", a: "\"And being close is exactly why they won't tell me when they mind.\"", bundle: 'pro' },
+        { q: "What's mine is theirs, and what's theirs is mine.", a: "\"Until the day they wanted the thing I took.\"", bundle: 'pro' },
+        { q: "My sister wouldn't mind me telling people.", a: "\"She wouldn't say she minded, which isn't the same.\"", bundle: 'pro' },
+        { q: "Asking my partner would feel formal.", a: "\"And not asking sometimes feels like I don't see them as a separate person.\"", bundle: 'pro' },
+        { q: "Best friends don't need rules.", a: "\"No rules, but they still have things that are theirs.\"", bundle: 'pro' },
+        { q: "We share everything.", a: "\"So a quick check is the only way I'll know when something is theirs.\"", bundle: 'pro' },
+        { q: "They'd do the same to me.", a: "\"Maybe, and maybe I'd mind too without saying it.\"", bundle: 'pro' },
+        { q: "Asking would suggest we're not that close.", a: "\"Not asking is how close people end up quietly annoyed.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Their No",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If they say no, it means they don't trust me.\" The belief that a refusal of permission is a verdict on you.\n\nWhat is true instead: a no to permission is usually about the thing — their photo, their story, their week — not about you.\n\nIt feels reasonable because asking for permission is a small act of trust, and a no can feel like trust refused.\n\nWhat it costs is how you take the no — and how you take it decides whether they will be honest with you next time.\n\nMindset: their no is about their thing, not about me.",
+      inputs: [
+        { q: "If they say no, it means they don't trust me.", a: "\"It usually means they care about the thing, not that they doubt me.\"", bundle: 'pro' },
+        { q: "I can't believe they said no to something so small.", a: "\"It wasn't small to them, and that's what I asked about.\"", bundle: 'pro' },
+        { q: "I need to know why they said no.", a: "\"The reason is theirs; the answer is what I asked for.\"", bundle: 'pro' },
+        { q: "They're being unreasonable.", a: "\"It's their thing, so their reason is enough.\"", bundle: 'pro' },
+        { q: "If I explain it better, they'll say yes.", a: "\"They understood it fine; that's why they said no.\"", bundle: 'pro' },
+        { q: "A no means they're annoyed with me.", a: "\"A no means they felt free to say it, which is good.\"", bundle: 'pro' },
+        { q: "I'll ask again when they're in a better mood.", a: "\"Asking again is asking them to change their answer.\"", bundle: 'pro' },
+        { q: "I should have just done it without asking.", a: "\"Then I'd have done something they didn't want.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Putting Them on the Spot",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Asking puts them on the spot.\" The belief that a question about permission is a burden on the other person.\n\nWhat is true instead: a question that leaves room to refuse is not a burden. What puts people on the spot is being asked in public, or asked in a way that makes no impossible.\n\nIt feels reasonable because some questions really do corner people — and you have probably been cornered yourself.\n\nWhat it costs is not asking at all, which puts them in a worse spot: finding out afterwards and having no say.\n\nMindset: ask in a way that is easy to refuse, and it is not putting them on the spot.",
+      inputs: [
+        { q: "Asking puts them on the spot.", a: "\"Asking in front of everyone does; asking quietly, with an exit, doesn't.\"", bundle: 'pro' },
+        { q: "They'll feel they have to say yes.", a: "\"Then I'll say out loud that no is fine.\"", bundle: 'pro' },
+        { q: "It's kinder not to ask.", a: "\"Not asking is kind to me; asking is kind to them.\"", bundle: 'pro' },
+        { q: "They're busy, and I don't want to bother them.", a: "\"One quick question is less bother than finding out later.\"", bundle: 'pro' },
+        { q: "I don't want to make it a big deal.", a: "\"One light question is the smallest it can be.\"", bundle: 'pro' },
+        { q: "They'll feel awkward saying no to me.", a: "\"They'll feel more awkward if they never got the chance.\"", bundle: 'pro' },
+        { q: "I'll ask them in the group so it's casual.", a: "\"In the group is exactly where no is hardest; I'll ask them on their own.\"", bundle: 'pro' },
+        { q: "They'd rather not be asked about everything.", a: "\"Then I'll ask once about the kind of thing, and remember the answer.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  toneinmessages: [
+    {
+      name: "The Tone Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"They'll know what I meant.\" The pack-wide belief that the reader hears your message the way you wrote it.\n\nWhat is true instead: they only have the words. Your voice, your face and your mood stayed with you.\n\nIt feels reasonable because you know exactly how you meant it, and the people you write to usually know you.\n\nWhat it costs is the small misreadings that pile up — the colleague who thinks you are annoyed, the friend who thinks you do not care.\n\nMindset: I write the words, and they supply the voice. I make sure the words carry enough.",
+      inputs: [
+        { q: "They'll know what I meant.", a: "\"They'll know what I wrote, and that's all they've got.\"", bundle: 'pro' },
+        { q: "It's obvious I'm joking.", a: "\"It's obvious in my head; on a screen, it's just the words.\"", bundle: 'pro' },
+        { q: "They know me, so tone doesn't matter.", a: "\"They know my voice, and my voice isn't in the message.\"", bundle: 'pro' },
+        { q: "I haven't got time to think about tone.", a: "\"One warm word takes a second, and a misreading takes a day.\"", bundle: 'pro' },
+        { q: "If they read it wrong, that's on them.", a: "\"If it can be read wrong, I can write it so it can't.\"", bundle: 'pro' },
+        { q: "Good writing is short writing.", a: "\"Short is good, as long as it isn't cold.\"", bundle: 'pro' },
+        { q: "I never have problems with texts.", a: "\"I might not know about the ones that went wrong.\"", bundle: 'pro' },
+        { q: "Tone is only a problem with strangers.", a: "\"The people closest to me read my short messages the most.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Short Is Efficient",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"Short messages are just efficient.\" True, and exactly why it is easy to stop there.\n\nWhat is true: short is often the kindest thing in a busy day. Nobody wants a paragraph where a line would do.\n\nWhat gets added is \"so it doesn't matter how it sounds\". A short message can be efficient and warm, or efficient and cold — and the difference is often one word.\n\nWhat it costs is the reputation of being curt, earned one efficient message at a time.\n\nMindset: keep it short. Keep one word of warmth in it.",
+      inputs: [
+        { q: "Short messages are just efficient.", a: "\"True — but 'so they can sound however they sound' is the part I added.\"", bundle: 'pro' },
+        { q: "Nobody wants a long email.", a: "\"True — but 'so no thanks at all' is the part I added.\"", bundle: 'pro' },
+        { q: "At work, you get to the point.", a: "\"True — but 'so no greeting' is the part I added.\"", bundle: 'pro' },
+        { q: "Emojis and exclamation marks are unprofessional.", a: "\"True, in some places — but 'so full stops only' is the part I added.\"", bundle: 'pro' },
+        { q: "I don't have time for small talk in messages.", a: "\"True — but 'so not even one warm word' is the part I added.\"", bundle: 'pro' },
+        { q: "The facts are what matter.", a: "\"True — but 'so how it lands doesn't' is the part I added.\"", bundle: 'pro' },
+        { q: "Everyone writes short replies.", a: "\"True — but 'so nobody reads them as cold' is the part I added.\"", bundle: 'pro' },
+        { q: "A one-word answer answers the question.", a: "\"True — but 'so it says nothing else' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Reading Between the Lines",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"That 'ok' means they're annoyed.\" The belief that you can read someone's mood from a short message.\n\nWhat is true instead: a short message tells you almost nothing about mood. Most of them are written fast, between other things.\n\nIt feels reasonable because you are good at reading people face to face, and it feels like the same skill.\n\nWhat it costs is the replies you send to a mood that was never there — and the evenings spent worrying about it.\n\nMindset: a short message is short. If I really need to know, I ask.",
+      inputs: [
+        { q: "That \"ok\" means they're annoyed.", a: "\"That 'ok' means they read it; the rest I'm making up.\"", bundle: 'pro' },
+        { q: "No exclamation mark means something's wrong.", a: "\"No exclamation mark usually means they were typing on the bus.\"", bundle: 'pro' },
+        { q: "They took ages to reply, so they're upset.", a: "\"They took ages to reply, so they were busy.\"", bundle: 'pro' },
+        { q: "I can tell from the way she wrote it.", a: "\"I can tell how I'd feel if I'd written it, which isn't the same.\"", bundle: 'pro' },
+        { q: "The full stop at the end was deliberate.", a: "\"The full stop was probably just a full stop.\"", bundle: 'pro' },
+        { q: "If they were fine, they'd have said more.", a: "\"If they weren't fine, they'd probably have said that.\"", bundle: 'pro' },
+        { q: "I've been reading the message over and over.", a: "\"Reading it again won't add information, but asking would.\"", bundle: 'pro' },
+        { q: "I'm good at reading people, so I'm right.", a: "\"I'm good at reading faces, and there isn't one here.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being Direct",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'm just direct. People know that about me.\" A belief that feels honest and efficient — and often is.\n\nWhat is true instead: directness in person comes with a face and a voice that soften it. In writing, the same directness arrives bare.\n\nIt feels reasonable because being direct saves time, avoids games, and people you work closely with may like it.\n\nWhat it costs is the people who do not know you well — or who are having a bad day — reading your direct message as a cold one.\n\nMindset: I can be direct and still put the warmth in writing.",
+      inputs: [
+        { q: "I'm just direct; people know that about me.", a: "\"The people who know me do, and the new colleague doesn't.\"", bundle: 'pro' },
+        { q: "I say what I mean.", a: "\"In writing, I say what I mean without the smile that came with it.\"", bundle: 'pro' },
+        { q: "I don't play games with my messages.", a: "\"No games, but some of my messages read as anger when they're not.\"", bundle: 'pro' },
+        { q: "People appreciate honesty.", a: "\"They appreciate it more when it doesn't sound like a telling-off.\"", bundle: 'pro' },
+        { q: "I don't waste words.", a: "\"Sometimes the words I save are the ones that made it friendly.\"", bundle: 'pro' },
+        { q: "If they're upset by a plain message, that's their problem.", a: "\"It becomes my problem when they stop replying.\"", bundle: 'pro' },
+        { q: "Softening things is dishonest.", a: "\"Adding the warmth I actually feel isn't dishonest.\"", bundle: 'pro' },
+        { q: "My messages are always clear.", a: "\"Clear about the facts, and sometimes unclear about how I feel.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sounding Fake",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I add warmth on purpose, I'm being fake.\" The belief that thinking about tone makes a message less genuine.\n\nWhat is true instead: adding back the warmth you actually feel is not fake. It is translating it into words, because the voice cannot come along.\n\nIt feels reasonable because \"Hope you're well!\" can sound empty, and nobody wants to write like a customer service script.\n\nWhat it costs is sending messages that are more honest about the facts and less honest about you.\n\nMindset: if I feel it, writing it down is honest.",
+      inputs: [
+        { q: "If I add warmth on purpose, I'm being fake.", a: "\"If I feel it, writing it down is just honest.\"", bundle: 'pro' },
+        { q: "Exclamation marks feel false.", a: "\"One exclamation mark is what my voice would have done.\"", bundle: 'pro' },
+        { q: "\"Hope you're well\" is empty.", a: "\"Then I'll write something true about them instead.\"", bundle: 'pro' },
+        { q: "Checking my tone is overthinking.", a: "\"Reading it once from their side is five seconds, not overthinking.\"", bundle: 'pro' },
+        { q: "Real friends don't need nice wording.", a: "\"Real friends still read 'fine' as annoyed on a bad day.\"", bundle: 'pro' },
+        { q: "I'd rather be blunt than fake.", a: "\"There's a warm version that isn't fake, and it's the one I mean.\"", bundle: 'pro' },
+        { q: "Saying \"not annoyed\" makes it sound like I am.", a: "\"Saying it clears it up; leaving it lets them guess.\"", bundle: 'pro' },
+        { q: "I don't want to sound like a customer service email.", a: "\"Then I'll write it the way I'd say it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Fixing It After",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I bring it up, I'll make it a bigger deal.\" The belief that a sharp message is best left alone.\n\nWhat is true instead: a sharp message does not fade on its own. It sits on their screen, and a short follow-up is the smallest way to replace it.\n\nIt feels reasonable because they might not have noticed, and drawing attention to it feels risky.\n\nWhat it costs is the sharp message becoming the last word — and the thing they remember about the exchange.\n\nMindset: a short follow-up makes it smaller, not bigger.",
+      inputs: [
+        { q: "If I bring it up, I'll make it a bigger deal.", a: "\"One short line makes it smaller; leaving it lets it sit there.\"", bundle: 'pro' },
+        { q: "They probably didn't notice.", a: "\"If I noticed, they probably did.\"", bundle: 'pro' },
+        { q: "It wasn't that bad.", a: "\"It wasn't that bad to write; I'll check how it reads.\"", bundle: 'pro' },
+        { q: "I'll be extra nice next time instead.", a: "\"Next time doesn't replace this message; a follow-up does.\"", bundle: 'pro' },
+        { q: "Apologising for a text is dramatic.", a: "\"'That came out wrong' is seven words, not a drama.\"", bundle: 'pro' },
+        { q: "I'll wait and see if they mention it.", a: "\"Most people won't mention it, they'll just remember it.\"", bundle: 'pro' },
+        { q: "I need to write a proper apology.", a: "\"A short one that names the words is better than a long one.\"", bundle: 'pro' },
+        { q: "If I correct it, they'll think I'm insecure.", a: "\"They'll think I care how I come across, which is fine.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  replyingandnotreplying: [
+    {
+      name: "The Reply Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I'll reply when I can do it properly.\" The pack-wide belief that a reply has to be complete, considered and well written — or not sent yet.\n\nWhat is true instead: a short reply now is almost always better than a proper one later. Waiting to reply properly is how most replies never happen.\n\nIt feels reasonable because the message deserves a real answer, and a quick one feels careless.\n\nWhat it costs is the silence in between — which the other person fills with their own explanation.\n\nMindset: quick and short now, fuller later if it needs it.",
+      inputs: [
+        { q: "I'll reply when I can do it properly.", a: "\"A short reply now is kinder than a proper one next week.\"", bundle: 'pro' },
+        { q: "A quick reply would be rude.", a: "\"A quick reply is polite; a silent one is what looks rude.\"", bundle: 'pro' },
+        { q: "I need to think about my answer first.", a: "\"I can say I'm thinking about it, and that's an answer.\"", bundle: 'pro' },
+        { q: "I'll do all my messages at the weekend.", a: "\"By the weekend, the easy ones will have turned into late ones.\"", bundle: 'pro' },
+        { q: "They'll understand if I'm slow.", a: "\"They'll understand better if I tell them I'm slow.\"", bundle: 'pro' },
+        { q: "A short reply means I don't care.", a: "\"A short reply means I saw it, and that's most of what they need.\"", bundle: 'pro' },
+        { q: "I don't know what to say yet.", a: "\"Then I'll say that, and when I'll know.\"", bundle: 'pro' },
+        { q: "Replying straight away looks desperate.", a: "\"Replying when I see it just looks like I saw it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Always Available",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I always reply straight away.\" A belief that feels like reliability — and often is.\n\nWhat is true instead: instant replies set an expectation you then have to keep, and they are often written before you have really thought.\n\nIt feels reasonable because people appreciate fast replies, and it feels good to be the one who never keeps anyone waiting.\n\nWhat it costs is being always on — and the replies you send half-read, half-thought, in the middle of something else.\n\nMindset: I can be reliable without being instant.",
+      inputs: [
+        { q: "I always reply straight away.", a: "\"And now everyone expects it, including at eleven at night.\"", bundle: 'pro' },
+        { q: "People know they can always reach me.", a: "\"Which means I can never quite switch off.\"", bundle: 'pro' },
+        { q: "Fast replies are good manners.", a: "\"Fast replies are good manners until I send one I haven't thought about.\"", bundle: 'pro' },
+        { q: "I never leave anyone waiting.", a: "\"So I answer before I've read the whole message.\"", bundle: 'pro' },
+        { q: "I'm on top of my messages.", a: "\"I'm on top of them, and they're on top of my evening.\"", bundle: 'pro' },
+        { q: "If I don't reply now, I'll forget.", a: "\"A holding line and a later reply work just as well.\"", bundle: 'pro' },
+        { q: "Being quick shows I care.", a: "\"Being thoughtful shows it too, and sometimes that takes an hour.\"", bundle: 'pro' },
+        { q: "I'm the one in the group who always answers.", a: "\"So nobody else has to, and I end up doing it all.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Too Late to Reply",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"It's been too long now — replying would be weird.\" The belief that a message has an expiry date.\n\nWhat is true instead: a late reply is almost always welcome. What makes it weird is the long apology, not the lateness.\n\nIt feels reasonable because every day makes the reply feel like it needs a bigger explanation, and silence starts to feel like the less embarrassing option.\n\nWhat it costs is the relationship with the person who is still waiting — or who stopped waiting a while ago.\n\nMindset: late and short is better than never.",
+      inputs: [
+        { q: "It's been too long; replying would be weird.", a: "\"It's weirder never to reply, and one line will do.\"", bundle: 'pro' },
+        { q: "I'd have to explain why I took so long.", a: "\"One line of sorry is all the explanation it needs.\"", bundle: 'pro' },
+        { q: "They've probably forgotten they asked.", a: "\"Then my reply will be a nice surprise.\"", bundle: 'pro' },
+        { q: "If I reply now, they'll wonder why I didn't before.", a: "\"They'll mostly be glad I did.\"", bundle: 'pro' },
+        { q: "The moment's passed.", a: "\"The moment has, but the person hasn't.\"", bundle: 'pro' },
+        { q: "I'll reply when I've got something better to say.", a: "\"'Sorry I'm late, and thank you' is good enough.\"", bundle: 'pro' },
+        { q: "They must be annoyed with me by now.", a: "\"Replying is the quickest way to find out, and to fix it.\"", bundle: 'pro' },
+        { q: "It's too awkward now.", a: "\"It gets more awkward every day I wait.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Left on Read",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"They've seen it and not replied — they must be annoyed.\" The belief that silence after a read receipt is a message.\n\nWhat is true instead: most messages are read at a bad moment and forgotten. Seen is not the same as answered, and not the same as ignored.\n\nIt feels reasonable because you can see that they read it, and it feels like they chose not to reply.\n\nWhat it costs is the anxious second message, the \"?\", and sometimes a real falling-out over nothing.\n\nMindset: seen is not ignored. One follow-up, then let it be.",
+      inputs: [
+        { q: "They've seen it and not replied, so they must be annoyed.", a: "\"They've seen it at a bad moment, most likely.\"", bundle: 'pro' },
+        { q: "They're ignoring me.", a: "\"They're probably ignoring everything today, not just me.\"", bundle: 'pro' },
+        { q: "I'll send another message to make sure.", a: "\"One light follow-up, and then I'll leave it.\"", bundle: 'pro' },
+        { q: "They replied to other people in the group but not to me.", a: "\"They answered the easy ones first; mine needs more thought.\"", bundle: 'pro' },
+        { q: "If they cared, they'd answer.", a: "\"People who care still forget to answer.\"", bundle: 'pro' },
+        { q: "I must have said something wrong.", a: "\"I can reread it once, and then stop inventing reasons.\"", bundle: 'pro' },
+        { q: "I'll just stop messaging them.", a: "\"Before I decide that, I'll ask once more.\"", bundle: 'pro' },
+        { q: "The silence is a message.", a: "\"The silence is just silence until they say otherwise.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ending It",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"It's rude to end a conversation.\" True in part, which is why people keep replying long after it is over.\n\nWhat is true: an abrupt ending — disappearing mid-conversation — can feel like a snub.\n\nWhat gets added is \"so I have to keep replying until they stop\". A friendly last message is not abrupt; it is the ending the conversation needed.\n\nWhat it costs is threads that never finish, and the feeling of owing everyone a reply forever.\n\nMindset: keep the courtesy. Use it to end things kindly.",
+      inputs: [
+        { q: "It's rude to end a conversation.", a: "\"True, abruptly — but 'so I can never end one' is the part I added.\"", bundle: 'pro' },
+        { q: "If they reply, I should reply back.", a: "\"True, usually — but 'even to a thumbs up' is the part I added.\"", bundle: 'pro' },
+        { q: "Leaving a group chat is unfriendly.", a: "\"True, silently — but 'so I have to stay forever' is the part I added.\"", bundle: 'pro' },
+        { q: "The polite thing is to have the last word be theirs.", a: "\"True, sometimes — but 'so I keep going until it is' is the part I added.\"", bundle: 'pro' },
+        { q: "Not replying is rude.", a: "\"True, to a question — but 'to every message' is the part I added.\"", bundle: 'pro' },
+        { q: "I should always thank them for their thanks.", a: "\"True, once — but 'every time' is the part I added.\"", bundle: 'pro' },
+        { q: "Muting a chat is like ignoring people.", a: "\"True, without a word — but 'even if I tell them' is the part I added.\"", bundle: 'pro' },
+        { q: "I don't want to seem cold by ending it.", a: "\"True, I don't — but 'so a friendly ending is cold' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Group Chat",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I have to keep up with every message in the group.\" The belief that being in a group chat means reading and answering all of it.\n\nWhat is true instead: most group messages are not for you, and nobody is checking whether you read them.\n\nIt feels reasonable because you might miss something important, and not replying in a group can feel like being left out.\n\nWhat it costs is hours of reading, a constant low buzz of obligation, and the important message buried among the rest.\n\nMindset: I can step back from the group and still be easy to reach.",
+      inputs: [
+        { q: "I have to keep up with every message in the group.", a: "\"I only need the ones about me, and people can message me for those.\"", bundle: 'pro' },
+        { q: "If I mute the group, I'll miss something.", a: "\"I'll tell them to message me directly if they need me.\"", bundle: 'pro' },
+        { q: "Everyone will notice if I leave.", a: "\"They'll notice a friendly exit less than a silent one.\"", bundle: 'pro' },
+        { q: "I should reply to everything in the group.", a: "\"Most group messages don't need anyone's reply, least of all mine.\"", bundle: 'pro' },
+        { q: "Leaving the chat means leaving the friendship.", a: "\"The friendship was never in the chat.\"", bundle: 'pro' },
+        { q: "I'll look antisocial.", a: "\"One friendly line makes it about the volume, not the people.\"", bundle: 'pro' },
+        { q: "I have to read back through everything I missed.", a: "\"I can ask what I need to know.\"", bundle: 'pro' },
+        { q: "It's rude not to react to people's photos.", a: "\"Nobody counts who reacted to their photos.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  whentostoptyping: [
+    {
+      name: "The Channel Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"It's easier to just text.\" The pack-wide belief that writing is always the simplest way to handle something.\n\nWhat is true instead: text is easiest to send. It is not always easiest to sort something out in.\n\nIt feels reasonable because texting is quick, it can be done anywhere, and it avoids the awkwardness of a call.\n\nWhat it costs is the long thread, the crossed wires, the argument that grew, and the news that landed badly.\n\nMindset: text for the easy things. Talk for the rest.",
+      inputs: [
+        { q: "It's easier to just text.", a: "\"It's easier to send, and it isn't always easier to sort things out.\"", bundle: 'pro' },
+        { q: "Calling feels like too much.", a: "\"Two minutes on the phone is less than forty messages.\"", bundle: 'pro' },
+        { q: "I can explain it better in writing.", a: "\"I can explain it, but they can't ask questions.\"", bundle: 'pro' },
+        { q: "Nobody calls anyone any more.", a: "\"That's exactly why a call gets things sorted.\"", bundle: 'pro' },
+        { q: "Texting lets me think about what I say.", a: "\"That's true, and it's also why arguments go on for hours.\"", bundle: 'pro' },
+        { q: "I don't like talking on the phone.", a: "\"I don't have to like it to use it when it's quicker.\"", bundle: 'pro' },
+        { q: "Text gives them time to respond.", a: "\"It also gives them time to imagine the worst.\"", bundle: 'pro' },
+        { q: "I'll just send one more message.", a: "\"One more is how it got to thirty.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Better in Writing",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'm better in writing. I can choose my words.\" A belief that feels like a real skill — and often is.\n\nWhat is true instead: being good at writing makes it tempting to use it for everything — including the things that need a voice.\n\nIt feels reasonable because your messages are clear and careful, and you have probably avoided some bad moments by writing instead of speaking.\n\nWhat it costs is the conversations that needed to be had in person, sent as beautifully written messages that the other person read alone.\n\nMindset: I can write well, and still choose not to.",
+      inputs: [
+        { q: "I'm better in writing; I can choose my words.", a: "\"And the other person has to read them alone, with no chance to ask.\"", bundle: 'pro' },
+        { q: "I'd rather write it down than say it badly.", a: "\"Said badly, in person, it can still land better than written well.\"", bundle: 'pro' },
+        { q: "My messages are always clear.", a: "\"Clear about the facts, and still cold on bad news.\"", bundle: 'pro' },
+        { q: "Writing keeps me calm.", a: "\"It keeps me calm and keeps the other person waiting.\"", bundle: 'pro' },
+        { q: "I explain things properly by email.", a: "\"Properly, and at length, when a call would take two minutes.\"", bundle: 'pro' },
+        { q: "I can say hard things more easily in writing.", a: "\"Which is exactly why I sometimes say them in writing when they needed a face.\"", bundle: 'pro' },
+        { q: "A well-written apology is better than a stumbling one.", a: "\"A stumbling one, in person, shows I meant it.\"", bundle: 'pro' },
+        { q: "People can reread what I wrote.", a: "\"Including the parts I would have softened out loud.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "One More Message",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I just explain it clearly enough, they'll understand.\" The belief that the next message will fix it.\n\nWhat is true instead: when a thread has gone wrong, more words in the same channel usually make it longer, not clearer.\n\nIt feels reasonable because you can see exactly what they have misunderstood, and it seems like one more explanation will do it.\n\nWhat it costs is the stream of messages — each one longer, each one giving them something new to answer.\n\nMindset: if it has not worked in writing yet, change the channel.",
+      inputs: [
+        { q: "If I just explain it clearly enough, they'll understand.", a: "\"If three messages haven't done it, the fourth won't.\"", bundle: 'pro' },
+        { q: "They've misunderstood; I need to correct it.", a: "\"I can correct it faster in two minutes on the phone.\"", bundle: 'pro' },
+        { q: "I just need to add one more thing.", a: "\"I'll put it all in one message, and then wait.\"", bundle: 'pro' },
+        { q: "They haven't replied, so I'll add more detail.", a: "\"More detail isn't why they haven't replied.\"", bundle: 'pro' },
+        { q: "I need to get my side down in writing.", a: "\"My side will land better when they can hear it.\"", bundle: 'pro' },
+        { q: "If I stop replying, they'll think they've won.", a: "\"Nobody wins this in writing; I'd rather sort it out.\"", bundle: 'pro' },
+        { q: "Just one last point and I'll stop.", a: "\"I've said that twice already.\"", bundle: 'pro' },
+        { q: "I have to answer everything they said.", a: "\"I have to sort it out, and that isn't the same thing.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Answering Now",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I have to answer this right now.\" The belief that a message, especially an angry one, needs an immediate reply.\n\nWhat is true instead: writing is the one kind of conversation where you are allowed to wait. A short \"I'll reply tomorrow\" is a complete answer for now.\n\nIt feels reasonable because the message is sitting there, they know you have seen it, and silence feels like losing.\n\nWhat it costs is the first reply — the one written angry, defensive or hurt, that you cannot take back.\n\nMindset: I can take my time. That is what writing is for.",
+      inputs: [
+        { q: "I have to answer this right now.", a: "\"I can say I'll reply tomorrow, and that's an answer.\"", bundle: 'pro' },
+        { q: "If I don't reply, they'll think I agree.", a: "\"One line saying I'll reply properly shows I don't.\"", bundle: 'pro' },
+        { q: "They know I've seen it.", a: "\"Then I'll tell them I'm thinking about it.\"", bundle: 'pro' },
+        { q: "I need to defend myself before they tell others.", a: "\"A calm reply tomorrow will defend me better than an angry one now.\"", bundle: 'pro' },
+        { q: "Waiting will make it worse.", a: "\"Replying angry is what makes it worse.\"", bundle: 'pro' },
+        { q: "I know exactly what I want to say.", a: "\"Then it'll still be there tomorrow, if I still want to say it.\"", bundle: 'pro' },
+        { q: "It's cowardly not to answer straight away.", a: "\"It takes more courage to wait than to fire back.\"", bundle: 'pro' },
+        { q: "I'll feel better once I've replied.", a: "\"For about ten minutes, and then I'll have to live with it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Calling Out of the Blue",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"Calling people out of the blue is intrusive.\" True, which is why it is easy to take too far.\n\nWhat is true: an unannounced call can be unwelcome, and many people prefer to know one is coming.\n\nWhat gets added is \"so I should never suggest one\". A message that asks whether a call would help is not intrusive at all — it is often a relief.\n\nWhat it costs is the long threads and misunderstandings that a two-minute call would have settled.\n\nMindset: keep the courtesy of asking. Drop the idea that calls are off limits.",
+      inputs: [
+        { q: "Calling people out of the blue is intrusive.", a: "\"True — but 'so I can't even suggest a call' is the part I added.\"", bundle: 'pro' },
+        { q: "Most people prefer texting.", a: "\"True, for most things — but 'for everything' is the part I added.\"", bundle: 'pro' },
+        { q: "A call puts them on the spot.", a: "\"True, unannounced — but 'even if I ask first' is the part I added.\"", bundle: 'pro' },
+        { q: "Nobody under forty answers the phone.", a: "\"True, to unknown numbers — but 'to a friend who asked first' is the part I added.\"", bundle: 'pro' },
+        { q: "Suggesting a call makes it sound serious.", a: "\"True, a bit — but 'too serious to be worth it' is the part I added.\"", bundle: 'pro' },
+        { q: "Email is more professional.", a: "\"True, for records — but 'for sorting out problems' is the part I added.\"", bundle: 'pro' },
+        { q: "They might be busy.", a: "\"True — but 'so I shouldn't ask when suits them' is the part I added.\"", bundle: 'pro' },
+        { q: "Asking to meet is a big deal.", a: "\"True, sometimes — but 'so I'll send the big news by text' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Writing It Down",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I write down what we agreed, it looks like I don't trust them.\" The belief that a written summary is a sign of suspicion.\n\nWhat is true instead: a short summary is a courtesy. It saves both of you from remembering it differently — which happens to everyone, however much they trust each other.\n\nIt feels reasonable because putting things in writing can feel formal, like a contract between people who should not need one.\n\nWhat it costs is the argument three weeks later about what was really said.\n\nMindset: writing it down protects the agreement, not me.",
+      inputs: [
+        { q: "If I write it down, it looks like I don't trust them.", a: "\"It looks like I want us both to remember it the same way.\"", bundle: 'pro' },
+        { q: "We're friends; we don't need it in writing.", a: "\"Friends remember things differently too.\"", bundle: 'pro' },
+        { q: "It'll seem too formal.", a: "\"'Just so we both have it' isn't formal, it's helpful.\"", bundle: 'pro' },
+        { q: "We both know what we agreed.", a: "\"We both know it today; in three weeks we might not.\"", bundle: 'pro' },
+        { q: "Writing it down is only for work.", a: "\"It's for anything I don't want to argue about later.\"", bundle: 'pro' },
+        { q: "They'll think I'm trying to catch them out.", a: "\"Not if I thank them and invite corrections.\"", bundle: 'pro' },
+        { q: "It's obvious what we decided.", a: "\"Then writing it takes ten seconds.\"", bundle: 'pro' },
+        { q: "I'll remember it.", a: "\"I will, and so will they, but differently.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  alexandergrace1: [
+    {
+      name: "The Saying No Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"A good partner says yes.\" The pack-wide belief that love is shown by never refusing.\n\nWhat is true instead: a partner who never says no is a partner whose yes means nothing. Saying no when you mean it is what makes the yeses count.\n\nIt feels reasonable because saying yes feels generous, and no feels like letting her down.\n\nWhat it costs is resentment you don't show, and a relationship where she never knows what you really want.\n\nMindset: my no is what gives my yes its value.",
+      inputs: [
+        { q: "A good partner says yes.", a: "\"A good partner says yes when he means it, and no when he doesn't.\"", bundle: 'pro' },
+        { q: "If I say no, I'm letting her down.", a: "\"A resentful yes lets her down more slowly.\"", bundle: 'pro' },
+        { q: "It's easier to just do it.", a: "\"It's easier today, and it builds up.\"", bundle: 'pro' },
+        { q: "Saying no will start a fight.", a: "\"A calm no is not a fight; a hidden grudge is.\"", bundle: 'pro' },
+        { q: "I should put her needs first.", a: "\"Her needs matter, and so do mine, or I stop being much of a partner.\"", bundle: 'pro' },
+        { q: "She'll think I don't care.", a: "\"I can care a lot and still say no.\"", bundle: 'pro' },
+        { q: "Refusing her is selfish.", a: "\"Pretending I don't mind is less honest, not less selfish.\"", bundle: 'pro' },
+        { q: "A real man provides whatever she asks for.", a: "\"A real partner provides what he actually can, and says so.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being Replaced",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I say no, she'll find someone who says yes.\" The fear that a refusal is the beginning of the end.\n\nWhat is true instead: a relationship that cannot survive a no was never stable. And most partners respect a man with limits more, not less.\n\nIt feels reasonable because losing her feels like the worst outcome, and every no feels like a risk.\n\nWhat it costs is a life built around never disappointing her — which is exhausting, and quietly unattractive.\n\nMindset: if one no could end it, it was already on thin ice.",
+      inputs: [
+        { q: "If I say no, she'll leave.", a: "\"If one no would end it, I'd rather know now.\"", bundle: 'pro' },
+        { q: "There are plenty of men who'd do it for her.", a: "\"Maybe, but she chose me, limits and all.\"", bundle: 'pro' },
+        { q: "I can't risk upsetting her.", a: "\"Upsetting her is not the same as losing her.\"", bundle: 'pro' },
+        { q: "I'm lucky she's with me.", a: "\"We're both lucky, or it's not a partnership.\"", bundle: 'pro' },
+        { q: "She'll get bored if I don't keep her happy.", a: "\"Keeping her happy isn't my job alone.\"", bundle: 'pro' },
+        { q: "I have to earn my place every day.", a: "\"I show up every day; I don't audition.\"", bundle: 'pro' },
+        { q: "Saying no will make her look elsewhere.", a: "\"Saying yes to everything is what makes me easy to overlook.\"", bundle: 'pro' },
+        { q: "I'll lose her if I have standards.", a: "\"Without standards, I lose myself first.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Cruelty",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Saying no to her would be cruel.\" The belief that refusing someone you love hurts them.\n\nWhat is true instead: a no can be the kind thing in the long run — for the budget, for the relationship, for her. What is cruel is refusing coldly, or mocking her for being upset.\n\nIt feels reasonable because you can see the disappointment in her face in the moment.\n\nWhat it costs is a relationship where short-term comfort always wins over what is good for both of you.\n\nMindset: I can be firm and kind at the same time.",
+      inputs: [
+        { q: "Saying no to her would be cruel.", a: "\"Saying no coldly would be cruel; saying no kindly is just honest.\"", bundle: 'pro' },
+        { q: "I can't bear to see her disappointed.", a: "\"I can bear it, and I can be kind while she feels it.\"", bundle: 'pro' },
+        { q: "She works so hard; she deserves a yes.", a: "\"She deserves the truth, and sometimes the truth is no.\"", bundle: 'pro' },
+        { q: "A loving partner gives in.", a: "\"A loving partner stays kind when he doesn't give in.\"", bundle: 'pro' },
+        { q: "It's only money; let her have it.", a: "\"It's our future, and looking after it is love too.\"", bundle: 'pro' },
+        { q: "She'll be hurt.", a: "\"She might be, and I'll be gentle with that.\"", bundle: 'pro' },
+        { q: "I don't want to be the bad guy.", a: "\"Being honest doesn't make me the bad guy.\"", bundle: 'pro' },
+        { q: "Saying no makes me like my father.", a: "\"I can say no without being harsh the way he was.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Duty",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"It's my job as a man to give her whatever she needs.\" A belief that feels like the old, honourable version of masculinity.\n\nWhat is true instead: leading is not doing everything for her. It is helping both of you manage life well — and sometimes that means saying no.\n\nIt feels reasonable because providing and protecting are good things, and they have a long tradition behind them.\n\nWhat it costs is a partner who is never asked to contribute, and a man who quietly runs out of himself.\n\nMindset: I lead by being solid, not by being endless.",
+      inputs: [
+        { q: "It's my job as a man to give her whatever she needs.", a: "\"And some weeks, that leaves nothing for me or for us.\"", bundle: 'pro' },
+        { q: "I always provide, whatever it costs.", a: "\"Which means she never sees the cost, and I pay it alone.\"", bundle: 'pro' },
+        { q: "I never ask her for anything.", a: "\"So she never gets to give, and I never get to receive.\"", bundle: 'pro' },
+        { q: "A man takes care of everything.", a: "\"And then she can't manage when I'm not there.\"", bundle: 'pro' },
+        { q: "I carry the load so she doesn't have to.", a: "\"Until I'm too tired to carry us.\"", bundle: 'pro' },
+        { q: "I'd rather do it myself than ask.", a: "\"Which teaches both of us that I'll always do it.\"", bundle: 'pro' },
+        { q: "Providing is how I show love.", a: "\"It's one way, and it runs out if it's the only one.\"", bundle: 'pro' },
+        { q: "I'm proud that she never has to worry.", a: "\"She might like to help carry some of it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Justifying",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I need a good reason before I can say no.\" The belief that a refusal must be defended.\n\nWhat is true instead: \"I don't want to\" is a reason. Long justifications invite negotiation and make your answer sound unsure.\n\nIt feels reasonable because you want her to understand, and a no without a reason feels rude.\n\nWhat it costs is every no turning into a debate you have to win.\n\nMindset: I can explain once, and then my answer is enough.",
+      inputs: [
+        { q: "I need a good reason before I can say no.", a: "\"Not wanting to is a reason.\"", bundle: 'pro' },
+        { q: "She deserves a full explanation.", a: "\"She deserves a clear answer, and one reason is enough.\"", bundle: 'pro' },
+        { q: "If I explain it properly, she'll agree.", a: "\"She doesn't have to agree for my answer to stand.\"", bundle: 'pro' },
+        { q: "I'll give three reasons to be safe.", a: "\"Three reasons are three things to argue with.\"", bundle: 'pro' },
+        { q: "I have to justify every decision I make.", a: "\"I explain once, if she asks.\"", bundle: 'pro' },
+        { q: "Saying no without a reason is rude.", a: "\"Saying it kindly is what makes it polite.\"", bundle: 'pro' },
+        { q: "She's winning the argument, so I should give in.", a: "\"It's not an argument; it's my answer.\"", bundle: 'pro' },
+        { q: "I need her to be okay with my no.", a: "\"She can not be okay with it, and it can still be no.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Unreliability",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"She's nagging me again.\" The belief that the reminders are her problem, not your promise's.\n\nWhat is true instead: most nagging is the sound of a promise that didn't happen. When your word becomes reliable, the reminders stop on their own.\n\nIt feels reasonable because being reminded feels like being treated like a child.\n\nWhat it costs is a partner who can't let go of anything, because nothing you say is certain.\n\nMindset: if I want fewer reminders, I make fewer vague promises.",
+      inputs: [
+        { q: "She's nagging me again.", a: "\"She's reminding me of something I said I'd do.\"", bundle: 'pro' },
+        { q: "I'll get round to it.", a: "\"If I can't give it a day, I shouldn't promise it.\"", bundle: 'pro' },
+        { q: "It's not a big deal if it's a day late.", a: "\"It's small each time, and it adds up to her not trusting me.\"", bundle: 'pro' },
+        { q: "She should trust me more.", a: "\"Trust grows when my word happens.\"", bundle: 'pro' },
+        { q: "I say yes to keep the peace.", a: "\"A yes I don't keep breaks the peace later.\"", bundle: 'pro' },
+        { q: "She treats me like a child.", a: "\"She'll stop when I stop needing reminders.\"", bundle: 'pro' },
+        { q: "I meant to do it.", a: "\"Meaning to isn't the same as doing it.\"", bundle: 'pro' },
+        { q: "I'm just not an organised person.", a: "\"I can be the kind of person whose small promises happen.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  alexandergrace2: [
+    {
+      name: "The Closer Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Arguments mean something is wrong with us.\" The pack-wide belief that a good relationship does not have fights.\n\nWhat is true instead: every close relationship has conflict. What matters is whether you come out of it closer or further apart.\n\nIt feels reasonable because fights are painful, and it's easy to imagine other couples never having them.\n\nWhat it costs is avoiding the fights that need to happen — or treating each one as a crisis.\n\nMindset: a fight handled well can bring us closer.",
+      inputs: [
+        { q: "Arguments mean something is wrong with us.", a: "\"Arguments mean we're two people; how we handle them is what counts.\"", bundle: 'pro' },
+        { q: "Happy couples don't fight.", a: "\"Happy couples fight and come back together.\"", bundle: 'pro' },
+        { q: "I need to win this.", a: "\"I need us to be okay more than I need to win.\"", bundle: 'pro' },
+        { q: "If we argue, she'll leave.", a: "\"Handled well, an argument can make us stronger.\"", bundle: 'pro' },
+        { q: "I should avoid bringing things up.", a: "\"Things I avoid bringing up come out worse later.\"", bundle: 'pro' },
+        { q: "This fight proves we're wrong for each other.", a: "\"This fight proves we disagree about one thing.\"", bundle: 'pro' },
+        { q: "I'll just let it go to keep the peace.", a: "\"Letting it go quietly isn't peace; it's saving it up.\"", bundle: 'pro' },
+        { q: "Fights ruin everything.", a: "\"Fights that don't end well do; this one can end well.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Walking Away",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I take a break, I'm running away.\" The belief that stepping out of a heated argument is weakness or abandonment.\n\nWhat is true instead: a pause with a return time is one of the most useful things you can do in a fight. Walking away without a word is running; saying \"back at eight\" is not.\n\nIt feels reasonable because walking away can feel like losing, or like leaving her alone.\n\nWhat it costs is saying things in the heat that you can't take back.\n\nMindset: a pause with a return is not running away.",
+      inputs: [
+        { q: "If I take a break, I'm running away.", a: "\"If I say when I'm coming back, I'm pausing, not running.\"", bundle: 'pro' },
+        { q: "A real man stays and sees it through.", a: "\"A real man knows when to stop before it gets ugly.\"", bundle: 'pro' },
+        { q: "She'll think I don't care.", a: "\"Coming back on time will show her I do.\"", bundle: 'pro' },
+        { q: "We have to sort this out right now.", a: "\"We'll sort it out better in an hour.\"", bundle: 'pro' },
+        { q: "Leaving will make her angrier.", a: "\"Staying and shouting will make her angrier still.\"", bundle: 'pro' },
+        { q: "I can control myself; I don't need a break.", a: "\"If I'm about to say something cruel, I need one.\"", bundle: 'pro' },
+        { q: "Taking a break means she wins.", a: "\"Nobody wins a fight like this; a break means we both lose less.\"", bundle: 'pro' },
+        { q: "I'll just go quiet instead.", a: "\"Going quiet without saying why isn't a break, it's a wall.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being Right",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"I'm right, so she needs to hear it.\" Half true — you may well be right about the facts.\n\nWhat is true: your view matters, and you shouldn't pretend to agree when you don't.\n\nWhat gets added is that being right has to come first. Opening with your case restarts the fight; listening first makes your case easier to hear.\n\nWhat it costs is winning the argument and losing the evening.\n\nMindset: keep my view. Drop the need to say it first.",
+      inputs: [
+        { q: "I'm right, so she needs to hear it.", a: "\"True — but 'she needs to hear it first' is the part I added.\"", bundle: 'pro' },
+        { q: "The facts are on my side.", a: "\"True, maybe — but 'so her feelings don't matter' is the part I added.\"", bundle: 'pro' },
+        { q: "If I don't correct her, she'll think she was right.", a: "\"True — but 'so I have to correct her right now' is the part I added.\"", bundle: 'pro' },
+        { q: "I shouldn't back down when I'm right.", a: "\"True — but 'listening is backing down' is the part I added.\"", bundle: 'pro' },
+        { q: "She's being unfair to me.", a: "\"True, perhaps — but 'so I'll be unfair back' is the part I added.\"", bundle: 'pro' },
+        { q: "I have to defend myself.", a: "\"True, sometimes — but 'before she's finished' is the part I added.\"", bundle: 'pro' },
+        { q: "Letting her go first is weak.", a: "\"True that I have a view — but 'going second is weak' is the part I added.\"", bundle: 'pro' },
+        { q: "She should apologise first.", a: "\"True, maybe — but 'so I can't ask how she is' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Fixing It",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'm a problem-solver. If she's upset, I fix it.\" A belief that feels like care — and often is.\n\nWhat is true instead: fixing is one kind of help, and not always the one she wants. Sometimes the problem is only half the point, and being heard is the other half.\n\nIt feels reasonable because solving problems is how you show you care, and it works in most of life.\n\nWhat it costs is the moments she felt dismissed by your solutions, and the conversations that ended in a fight about your advice.\n\nMindset: I can offer to fix it, and ask first.",
+      inputs: [
+        { q: "I'm a problem-solver; if she's upset, I fix it.", a: "\"And sometimes she feels I'm fixing her instead of listening.\"", bundle: 'pro' },
+        { q: "Giving advice is how I show I care.", a: "\"Asking what she needs shows it too.\"", bundle: 'pro' },
+        { q: "I always know what she should do.", a: "\"And she often knows too, and just wants to be heard.\"", bundle: 'pro' },
+        { q: "Listening without fixing feels useless.", a: "\"Listening is sometimes the whole of what she needs.\"", bundle: 'pro' },
+        { q: "I can't stand seeing her stuck.", a: "\"Which is why I jump in before she's asked.\"", bundle: 'pro' },
+        { q: "My solutions are usually right.", a: "\"Right, and still not what she was asking for.\"", bundle: 'pro' },
+        { q: "I'm good at sorting things out.", a: "\"I'm good at it, and she didn't always want it sorted.\"", bundle: 'pro' },
+        { q: "She should just take my advice.", a: "\"She can take it when she's asked for it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Keeping the Peace",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I say I'm annoyed, it'll start a fight.\" The belief that frustration is better swallowed.\n\nWhat is true instead: one calm sentence about what bothered you prevents more fights than it starts. What starts fights is the frustration that builds up and comes out all at once.\n\nIt feels reasonable because the moment is pleasant, and saying something feels like spoiling it.\n\nWhat it costs is the sulk, the sharp comment, and the explosion a month later over something small.\n\nMindset: one calm sentence now keeps the peace better than silence.",
+      inputs: [
+        { q: "If I say I'm annoyed, it'll start a fight.", a: "\"Saying it calmly now is what stops the fight later.\"", bundle: 'pro' },
+        { q: "It's not worth mentioning.", a: "\"If it's still bothering me tomorrow, it's worth one sentence.\"", bundle: 'pro' },
+        { q: "I don't want to spoil the evening.", a: "\"One calm line won't spoil it; a sulk will.\"", bundle: 'pro' },
+        { q: "I'll let it go this time.", a: "\"That's what I said the last four times.\"", bundle: 'pro' },
+        { q: "She'll get defensive.", a: "\"She might, and a calm tone gives her less to defend against.\"", bundle: 'pro' },
+        { q: "I should be able to handle it myself.", a: "\"Handling it means saying it, not swallowing it.\"", bundle: 'pro' },
+        { q: "I'll bring it up when it happens again.", a: "\"Then it'll come out bigger than it is.\"", bundle: 'pro' },
+        { q: "Complaining makes me look petty.", a: "\"Saying it once, calmly, is not complaining.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Feelings Versus Agreements",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I hold her to it, I don't care how she felt.\" The belief that caring about her feelings means letting agreements slide.\n\nWhat is true instead: you can care about the feeling and still expect the agreement to be kept — or at least changed in time. Both are forms of respect.\n\nIt feels reasonable because pointing out the broken agreement feels cold when she's upset.\n\nWhat it costs is agreements that stop meaning anything, and quiet resentment on your side.\n\nMindset: I can care about her feelings and still count on her word.",
+      inputs: [
+        { q: "If I hold her to it, I don't care how she felt.", a: "\"I can care about how she felt and still count on her.\"", bundle: 'pro' },
+        { q: "Her feelings come first, always.", a: "\"Her feelings matter, and so does telling me in time.\"", bundle: 'pro' },
+        { q: "I'll let it slide; she's had a hard week.", a: "\"I can be kind about the week and still mention it.\"", bundle: 'pro' },
+        { q: "Bringing it up will make her feel worse.", a: "\"Bringing it up gently now is better than resenting it later.\"", bundle: 'pro' },
+        { q: "It's unfair to expect things when she's struggling.", a: "\"It's fair to ask to be told, especially when she's struggling.\"", bundle: 'pro' },
+        { q: "She'll think I'm harsh.", a: "\"Not if I lead with how she's feeling.\"", bundle: 'pro' },
+        { q: "Agreements don't matter as much as how she feels.", a: "\"They both matter, and I can hold both.\"", bundle: 'pro' },
+        { q: "I'll just stop counting on her.", a: "\"I'd rather ask for what I need than stop asking.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  alexandergrace3: [
+    {
+      name: "The Connection Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I show who I really am, she won't like me.\" The pack-wide belief that being liked means being careful and agreeable.\n\nWhat is true instead: she can only like you if she meets you. Being clear, honest and willing to share is what makes that possible.\n\nIt feels reasonable because being careful feels safe, and being real feels like a risk.\n\nWhat it costs is relationships where she likes someone who isn't quite you — and you can feel it.\n\nMindset: confidence is being willing to be known.",
+      inputs: [
+        { q: "If I show who I really am, she won't like me.", a: "\"If she doesn't meet the real me, she can't really like me.\"", bundle: 'pro' },
+        { q: "I have to be careful not to put her off.", a: "\"Being careful all the time is what puts people off.\"", bundle: 'pro' },
+        { q: "It's safer to go along with things.", a: "\"It's safer, and it makes me forgettable.\"", bundle: 'pro' },
+        { q: "I need to seem more impressive than I am.", a: "\"The real version of me is enough to start with.\"", bundle: 'pro' },
+        { q: "She'll get bored of me.", a: "\"She'll get bored of a mirror, not of me.\"", bundle: 'pro' },
+        { q: "I don't have anything interesting to share.", a: "\"My ordinary life, told honestly, is interesting to someone who likes me.\"", bundle: 'pro' },
+        { q: "Being liked is the goal.", a: "\"Being known is the goal, and being liked follows from it.\"", bundle: 'pro' },
+        { q: "I'll open up once I'm sure she's interested.", a: "\"Opening up is how I find out.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Asking Directly",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I ask directly, I'll seem desperate.\" The belief that a clear invitation shows too much interest.\n\nWhat is true instead: a specific, relaxed invitation shows confidence. What seems desperate is the hinting, the waiting, and the vague \"sometime\".\n\nIt feels reasonable because a direct ask can be refused, and a hint can't.\n\nWhat it costs is invitations that never happen, and chances that quietly pass.\n\nMindset: a clear question is a sign of confidence, not need.",
+      inputs: [
+        { q: "If I ask directly, I'll seem desperate.", a: "\"A clear ask looks confident; hinting is what looks unsure.\"", bundle: 'pro' },
+        { q: "I'll wait for her to suggest something.", a: "\"If I want something, I can suggest it.\"", bundle: 'pro' },
+        { q: "If she says no, it'll be awkward.", a: "\"A clear no is easier than months of wondering.\"", bundle: 'pro' },
+        { q: "I should play it cool.", a: "\"Being clear is cool.\"", bundle: 'pro' },
+        { q: "I don't want to pressure her.", a: "\"A clear question she can say no to isn't pressure.\"", bundle: 'pro' },
+        { q: "She'll think I'm too keen.", a: "\"Being keen, calmly, is fine.\"", bundle: 'pro' },
+        { q: "It's safer to keep it vague.", a: "\"Vague keeps me safe and keeps me alone.\"", bundle: 'pro' },
+        { q: "If she liked me, she'd make it obvious.", a: "\"Maybe she's waiting for me to make it obvious.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Agreeing",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"It's polite to agree.\" True in part — nobody wants to argue with a date.\n\nWhat is true: a first meeting isn't the place for a debate, and being easy to be around matters.\n\nWhat gets added is \"so I should never say what I think\". A light, honest difference is not an argument; it's what makes you a person.\n\nWhat it costs is a date with no one on the other side.\n\nMindset: keep the kindness. Drop the pretending.",
+      inputs: [
+        { q: "It's polite to agree.", a: "\"True, about small things — but 'about everything' is the part I added.\"", bundle: 'pro' },
+        { q: "I don't want to start an argument.", a: "\"True — but 'a different view is an argument' is the part I added.\"", bundle: 'pro' },
+        { q: "She'll like me more if we have things in common.", a: "\"True, a little — but 'so I'll invent them' is the part I added.\"", bundle: 'pro' },
+        { q: "Disagreeing on a first date is a bad idea.", a: "\"True, for a fight — but 'for a light opinion' is the part I added.\"", bundle: 'pro' },
+        { q: "I should be easygoing.", a: "\"True — but 'easygoing means having no views' is the part I added.\"", bundle: 'pro' },
+        { q: "Nobody likes a know-it-all.", a: "\"True — but 'so I'll say nothing' is the part I added.\"", bundle: 'pro' },
+        { q: "It doesn't matter what I think about a restaurant.", a: "\"True, it's small — but 'so I'll fake it' is the part I added.\"", bundle: 'pro' },
+        { q: "Agreeing keeps things smooth.", a: "\"True — but 'smooth is the same as connected' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being Interesting",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I need to tell her everything impressive about me.\" The belief that the more you share, the better you come across.\n\nWhat is true instead: a short, true answer and a question back does more than a long list. People remember how the conversation felt, not how many facts they heard.\n\nIt feels reasonable because you want her to know what you've done, and a full answer feels generous.\n\nWhat it costs is conversations where she never gets a turn.\n\nMindset: leaving something for later makes her want to ask.",
+      inputs: [
+        { q: "I need to tell her everything impressive about me.", a: "\"One good thing and a question back will do more.\"", bundle: 'pro' },
+        { q: "If I stop talking, there'll be a silence.", a: "\"If I ask her something, there won't be.\"", bundle: 'pro' },
+        { q: "She asked, so she wants the full story.", a: "\"She wants a real answer, not the whole book.\"", bundle: 'pro' },
+        { q: "I have to fill every gap.", a: "\"A question fills the gap better than another story.\"", bundle: 'pro' },
+        { q: "The more she knows, the more she'll like me.", a: "\"The more she feels heard, the more she'll like me.\"", bundle: 'pro' },
+        { q: "I'm boring unless I'm talking.", a: "\"I'm interesting when I'm interested.\"", bundle: 'pro' },
+        { q: "I have to prove I'm worth her time.", a: "\"I don't have to prove it; I can just be good company.\"", bundle: 'pro' },
+        { q: "She'll think I have nothing to say if I'm brief.", a: "\"She'll think I have more to say later.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Strong, Silent Man",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"A strong man keeps his problems to himself.\" A belief that feels like strength, and often gets praised as one.\n\nWhat is true instead: sharing a hard day calmly shows strength. Hiding everything creates distance, and she can feel it even if you never say a word.\n\nIt feels reasonable because nobody wants to be a burden, and holding it together feels like the manly thing.\n\nWhat it costs is a partner who doesn't know you're struggling, and a closeness that never quite forms.\n\nMindset: I can be steady and still let her in.",
+      inputs: [
+        { q: "A strong man keeps his problems to himself.", a: "\"And then she feels shut out, without knowing why.\"", bundle: 'pro' },
+        { q: "I don't want to burden her.", a: "\"Telling her calmly isn't a burden; hiding it is a wall.\"", bundle: 'pro' },
+        { q: "I can handle it alone.", a: "\"I can, and doing it alone every time keeps her at a distance.\"", bundle: 'pro' },
+        { q: "She needs me to be strong.", a: "\"She needs me to be real, and I can be both.\"", bundle: 'pro' },
+        { q: "Talking about it makes it bigger.", a: "\"Saying it once, calmly, usually makes it smaller.\"", bundle: 'pro' },
+        { q: "I never complain.", a: "\"So she never knows when I'm struggling.\"", bundle: 'pro' },
+        { q: "I'll deal with it and tell her afterwards.", a: "\"By then she's already felt me pull away.\"", bundle: 'pro' },
+        { q: "Men don't need to talk about feelings.", a: "\"I can talk about one hard day without it being a big deal.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Her History",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Her past is a warning sign.\" The belief that what she did before you met says something worrying about her now.\n\nWhat is true instead: everyone has a past, and it is where the person you're with came from. What matters is what she learned and who she is now.\n\nIt feels reasonable because the past can feel like a prediction, and some patterns do repeat.\n\nWhat it costs is judging her for things she has already grown past — and her learning not to tell you things.\n\nMindset: I'm with who she is now, and her past helped make her.",
+      inputs: [
+        { q: "Her past is a warning sign.", a: "\"Her past is where she learned what she wants now.\"", bundle: 'pro' },
+        { q: "She had a long relationship before me, so I'll never measure up.", a: "\"She's not with him; she chose me.\"", bundle: 'pro' },
+        { q: "I need to know everything about her history.", a: "\"I need to know who she is now, and she'll share what matters.\"", bundle: 'pro' },
+        { q: "She was wild once, so she'll be wild again.", a: "\"People change, and I can ask what changed.\"", bundle: 'pro' },
+        { q: "If she made mistakes, she'll make them with me.", a: "\"If she learned from them, she's less likely to.\"", bundle: 'pro' },
+        { q: "I should be worried about her ex.", a: "\"I can be curious about what she learned instead.\"", bundle: 'pro' },
+        { q: "It's naive not to judge her past.", a: "\"It's wise to look at who she is now.\"", bundle: 'pro' },
+        { q: "Her past makes me insecure.", a: "\"That's mine to work on, not hers to answer for.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  alexandergrace4: [
+    {
+      name: "The Speaking-Up Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I bring it up, I'm complaining.\" The pack-wide belief that saying what bothers you is a kind of weakness or nagging.\n\nWhat is true instead: one calm sentence about something small is how two people stay close. Complaining is the list that comes out later.\n\nIt feels reasonable because nobody wants to be the difficult one, and staying quiet looks easy-going.\n\nWhat it costs is resentment that grows quietly and comes out as coldness.\n\nMindset: saying it early and calmly is not complaining.",
+      inputs: [
+        { q: "If I bring it up, I'm complaining.", a: "\"Saying it once, calmly, is how I keep from complaining later.\"", bundle: 'pro' },
+        { q: "A real man just lets things go.", a: "\"A real man says what he needs, then lets it go.\"", bundle: 'pro' },
+        { q: "It's not a big deal.", a: "\"It's small, which is why now is the time to say it.\"", bundle: 'pro' },
+        { q: "She'll think I'm needy.", a: "\"One sentence about one thing isn't needy; a sulk is.\"", bundle: 'pro' },
+        { q: "I'll wait for a good moment.", a: "\"The good moment is tonight, when it's still small.\"", bundle: 'pro' },
+        { q: "Speaking up will ruin the mood.", a: "\"Staying quiet ruins it more slowly.\"", bundle: 'pro' },
+        { q: "She should already know.", a: "\"She can't know what I haven't said.\"", bundle: 'pro' },
+        { q: "I don't want to start a fight.", a: "\"Small and calm starts a conversation, not a fight.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mind Reading",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"A good partner knows what the other needs without being told.\" Half true — paying attention does matter.\n\nWhat is true: noticing is a form of love, and it's worth getting better at.\n\nWhat gets added is that asking means failing. It turns every missed hint into proof that you don't care, and it stops both of you from just saying it.\n\nWhat it costs is guessing, guessing wrong, and fighting about the guess.\n\nMindset: keep paying attention. Drop the idea that I can't ask.",
+      inputs: [
+        { q: "A good partner knows without being told.", a: "\"True that noticing matters — but 'without being told' is the part I added.\"", bundle: 'pro' },
+        { q: "If I have to ask, I've failed.", a: "\"True that I missed it — but 'so I've failed' is the part I added.\"", bundle: 'pro' },
+        { q: "She shouldn't have to tell me.", a: "\"True, it's nice when she doesn't — but 'shouldn't have to' is the part I added.\"", bundle: 'pro' },
+        { q: "I should have known what she wanted.", a: "\"True, maybe — but 'so I can't ask now' is the part I added.\"", bundle: 'pro' },
+        { q: "Asking shows I wasn't paying attention.", a: "\"True, a bit — but 'so I'll keep guessing' is the part I added.\"", bundle: 'pro' },
+        { q: "She'll be hurt if I ask.", a: "\"True, perhaps — but 'more hurt than if I guess wrong' is the part I added.\"", bundle: 'pro' },
+        { q: "Real connection means no explaining.", a: "\"True that it gets easier — but 'no explaining ever' is the part I added.\"", bundle: 'pro' },
+        { q: "If she loved me, she'd tell me.", a: "\"True that telling helps — but 'so hints mean she doesn't' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Easy-Going",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'm easy-going. Little things don't bother me.\" A belief that feels like good nature — and often is.\n\nWhat is true instead: some things do bother you, and being easy-going means letting them go after you've said them, not instead of saying them.\n\nIt feels reasonable because you like being the relaxed one, and it keeps the evenings pleasant.\n\nWhat it costs is the quiet list, the sudden coldness, and the moments she's surprised to hear how long something has bothered you.\n\nMindset: easy-going means saying it lightly, not never.",
+      inputs: [
+        { q: "I'm easy-going; little things don't bother me.", a: "\"And some do, and I notice them weeks later.\"", bundle: 'pro' },
+        { q: "I don't sweat the small stuff.", a: "\"Until the small stuff is ten things at once.\"", bundle: 'pro' },
+        { q: "I let things roll off me.", a: "\"Some things roll off; some roll into a pile.\"", bundle: 'pro' },
+        { q: "I'm the relaxed one in this relationship.", a: "\"Which is why she's shocked when I finally say something.\"", bundle: 'pro' },
+        { q: "Nothing's worth arguing about.", a: "\"And a calm sentence isn't an argument.\"", bundle: 'pro' },
+        { q: "I'm good at keeping the peace.", a: "\"And the peace sometimes has a lot underneath it.\"", bundle: 'pro' },
+        { q: "I don't need to make a fuss.", a: "\"One sentence isn't a fuss, and it would save one.\"", bundle: 'pro' },
+        { q: "I'm flexible.", a: "\"Flexible, and still allowed a view on Saturday.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Making a Scene",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I don't answer it now, I'm letting them walk over me.\" The belief that anything said in company has to be answered on the spot.\n\nWhat is true instead: choosing a private moment is not letting it go. It is choosing where it will actually be heard.\n\nIt feels reasonable because being teased or questioned in front of people feels like a test you have to pass right there.\n\nWhat it costs is public arguments, embarrassed partners, and a story her friends tell about you.\n\nMindset: I can let it pass in the room and still say it later.",
+      inputs: [
+        { q: "If I don't answer now, they'll walk over me.", a: "\"If I answer later, I'll actually be heard.\"", bundle: 'pro' },
+        { q: "Letting it go makes me look weak.", a: "\"Letting it pass isn't letting it go; I'll say it at home.\"", bundle: 'pro' },
+        { q: "She should know I'm not happy right now.", a: "\"She'll know tonight, when we can talk properly.\"", bundle: 'pro' },
+        { q: "I need to stand up for myself in front of them.", a: "\"I can stand up for myself without an audience.\"", bundle: 'pro' },
+        { q: "If I wait, I'll lose my nerve.", a: "\"Then I'll decide now that I'm raising it at home.\"", bundle: 'pro' },
+        { q: "Her friends need to see I won't take it.", a: "\"Her friends don't need to see anything; she needs to hear it.\"", bundle: 'pro' },
+        { q: "Saying nothing is being a pushover.", a: "\"Saying nothing for now isn't the same as saying nothing.\"", bundle: 'pro' },
+        { q: "A sharp comeback will end it.", a: "\"A sharp comeback will start something bigger.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Her People",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I criticise her family, she'll choose them over me.\" The belief that anything about her friends or family is off-limits.\n\nWhat is true instead: you can say that something didn't work for you while believing they meant well. Said that way, it isn't criticism — and she doesn't have to choose.\n\nIt feels reasonable because she loves them, and it's easy to picture her defending them.\n\nWhat it costs is quietly resenting the people who matter most to her.\n\nMindset: I can credit what they meant and still say how it landed.",
+      inputs: [
+        { q: "If I criticise her family, she'll choose them.", a: "\"If I credit what they meant, she doesn't have to choose.\"", bundle: 'pro' },
+        { q: "I can't say anything about her friends.", a: "\"I can say how one evening landed on me.\"", bundle: 'pro' },
+        { q: "She'll get defensive about her mum.", a: "\"Less so if I start with what her mum meant.\"", bundle: 'pro' },
+        { q: "I'll just avoid them.", a: "\"Avoiding them is harder on her than one honest sentence.\"", bundle: 'pro' },
+        { q: "They don't like me, so what's the point?", a: "\"I don't know that; I know one dinner felt hard.\"", bundle: 'pro' },
+        { q: "It's her family, so it's her problem.", a: "\"It's our evening, so it's worth one conversation.\"", bundle: 'pro' },
+        { q: "I'll just put up with it.", a: "\"Putting up with it is how I end up disliking them.\"", bundle: 'pro' },
+        { q: "Anything I say will sound like an attack.", a: "\"Not if I lead with what they got right.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Too Small to Mention",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"It's too small to mention.\" The belief that only big things are worth saying.\n\nWhat is true instead: small is the best size for a complaint. It's easy to say, easy to hear, and easy to fix. Big things were usually small once.\n\nIt feels reasonable because mentioning something tiny can feel petty.\n\nWhat it costs is a pile of small things that eventually sounds like one big thing about her.\n\nMindset: small is the right size to say it.",
+      inputs: [
+        { q: "It's too small to mention.", a: "\"Small is exactly the size that's easy to fix.\"", bundle: 'pro' },
+        { q: "Mentioning this would be petty.", a: "\"Mentioning it once isn't petty; storing it is.\"", bundle: 'pro' },
+        { q: "I'll wait until it really matters.", a: "\"By then, it'll matter too much to say calmly.\"", bundle: 'pro' },
+        { q: "She'll laugh at me for caring.", a: "\"Then she can laugh, and still know.\"", bundle: 'pro' },
+        { q: "Nobody else would mind this.", a: "\"I mind it a little, and that's enough to say it.\"", bundle: 'pro' },
+        { q: "It's only happened twice.", a: "\"Twice is the right time to say it.\"", bundle: 'pro' },
+        { q: "I'm making something out of nothing.", a: "\"I'm saying something small before it becomes something.\"", bundle: 'pro' },
+        { q: "I'll mention it if it keeps happening.", a: "\"If I mention it now, it may stop happening.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  alexandergrace5: [
+    {
+      name: "The Steady Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If she's criticising me, I'm failing.\" The pack-wide belief that being criticised is a verdict on you.\n\nWhat is true instead: criticism is information about one thing. Some of it will be right, some of it won't, and none of it decides who you are.\n\nIt feels reasonable because criticism from someone you love hits harder than from anyone else.\n\nWhat it costs is either defending everything or collapsing under everything — and neither helps her or you.\n\nMindset: I can hear it without being flattened by it.",
+      inputs: [
+        { q: "If she's criticising me, I'm failing.", a: "\"She's telling me about one thing; I can hear it.\"", bundle: 'pro' },
+        { q: "I must defend myself, or she'll think she's right.", a: "\"If she's right, I'll own it; if not, I'll say so calmly.\"", bundle: 'pro' },
+        { q: "Being criticised means she doesn't love me.", a: "\"She's criticising something because she cares how it goes.\"", bundle: 'pro' },
+        { q: "I can't stand being told I'm wrong.", a: "\"I can stand it; it's uncomfortable, not dangerous.\"", bundle: 'pro' },
+        { q: "I always mess things up.", a: "\"I messed up this one, and I can fix it.\"", bundle: 'pro' },
+        { q: "I have to get everything right.", a: "\"I'll get some things wrong, and put them right.\"", bundle: 'pro' },
+        { q: "If I admit it, she'll use it against me.", a: "\"If I admit it, there's less to argue about.\"", bundle: 'pro' },
+        { q: "I need her to see my side before I can apologise.", a: "\"I can apologise first, and give my side later.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Inner Critic",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"There's something wrong with me.\" The belief that every mistake proves a deeper flaw.\n\nWhat is true instead: you made a mistake. That's guilt — useful, specific, fixable. The feeling that you are the mistake is shame, and it doesn't fix anything.\n\nIt feels reasonable because the voice is familiar, and her criticism seems to confirm it.\n\nWhat it costs is over-apologising, taking all the blame, and never being able to hear the part she's right about.\n\nMindset: I did something wrong. I am not something wrong.",
+      inputs: [
+        { q: "There's something wrong with me.", a: "\"I did something wrong, and I can fix it.\"", bundle: 'pro' },
+        { q: "I'm a terrible partner.", a: "\"I was a poor partner tonight, and I can do better tomorrow.\"", bundle: 'pro' },
+        { q: "She's right, I'm hopeless.", a: "\"She's right about the bins; the rest is my own voice.\"", bundle: 'pro' },
+        { q: "I ruin everything.", a: "\"I ruined dinner, not everything.\"", bundle: 'pro' },
+        { q: "I should know better by now.", a: "\"I'm still learning, and this is one more lesson.\"", bundle: 'pro' },
+        { q: "Everyone else manages this.", a: "\"Everyone else gets it wrong too; I just don't see it.\"", bundle: 'pro' },
+        { q: "I deserve to feel bad.", a: "\"I deserve to feel sorry, and then to fix it.\"", bundle: 'pro' },
+        { q: "I'll never get this right.", a: "\"I got it wrong today; that's all today says.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Explaining Myself",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"I had a good reason, so she needs to hear it.\" Half true — your reasons often are good.\n\nWhat is true: context matters, and sometimes she'll feel better once she knows it.\n\nWhat gets added is that the reason has to come first. Heard before the apology, it sounds like an excuse.\n\nWhat it costs is apologies that never land, because they arrive after a defence.\n\nMindset: keep the reason. Drop the need to say it first.",
+      inputs: [
+        { q: "I had a good reason, so she needs to hear it.", a: "\"True — but 'she needs to hear it first' is the part I added.\"", bundle: 'pro' },
+        { q: "It wasn't really my fault.", a: "\"True, partly — but 'so I shouldn't apologise' is the part I added.\"", bundle: 'pro' },
+        { q: "If she knew why, she wouldn't be upset.", a: "\"True, maybe — but 'so explaining will fix it' is the part I added.\"", bundle: 'pro' },
+        { q: "I'm not going to apologise for something I didn't mean.", a: "\"True that I didn't mean it — but 'so it didn't hurt' is the part I added.\"", bundle: 'pro' },
+        { q: "She's being unfair.", a: "\"True, perhaps — but 'so I'll argue first' is the part I added.\"", bundle: 'pro' },
+        { q: "I need her to understand my side.", a: "\"True — but 'before she feels heard' is the part I added.\"", bundle: 'pro' },
+        { q: "An apology without the reason is dishonest.", a: "\"True that the reason is real — but 'it has to come first' is the part I added.\"", bundle: 'pro' },
+        { q: "If I just say sorry, I'm admitting everything.", a: "\"True that it's an admission — but 'of everything' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Always the One Who Says Sorry",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'm the bigger person — I'm always the first to apologise.\" A belief that feels like maturity, and often is.\n\nWhat is true instead: apologising first is good when you did something wrong. Apologising for everything, to end the tension, is something else.\n\nIt feels reasonable because it works — the argument stops, and you feel like the calm one.\n\nWhat it costs is apologies that mean less each time, and a relationship where you carry all the blame.\n\nMindset: I'll apologise for my part — only my part.",
+      inputs: [
+        { q: "I'm always the first to say sorry.", a: "\"Even when I haven't done anything wrong.\"", bundle: 'pro' },
+        { q: "I'm the bigger person.", a: "\"And the bigger person also says when it wasn't his fault.\"", bundle: 'pro' },
+        { q: "I'll apologise just to end it.", a: "\"And the thing underneath never gets sorted.\"", bundle: 'pro' },
+        { q: "It's easier if I take the blame.", a: "\"Easier tonight, and heavier every month.\"", bundle: 'pro' },
+        { q: "I don't mind being the one who backs down.", a: "\"Until I notice I always am.\"", bundle: 'pro' },
+        { q: "Someone has to be the adult.", a: "\"Being the adult includes saying what's fair.\"", bundle: 'pro' },
+        { q: "I say sorry because I want peace.", a: "\"And my sorry has started to mean less.\"", bundle: 'pro' },
+        { q: "I don't keep score.", a: "\"I don't, and I've stopped noticing my own share.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Proving It",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I have to prove I didn't mean it.\" The belief that you need to convince her of your innocence before anything else can happen.\n\nWhat is true instead: what you meant matters less, in the moment, than how it landed. You can say you didn't mean it once — and then deal with how it landed.\n\nIt feels reasonable because being misread feels unfair, and you want it put right.\n\nWhat it costs is long arguments about your intentions while the hurt goes unanswered.\n\nMindset: I can say what I meant once, and then deal with what happened.",
+      inputs: [
+        { q: "I have to prove I didn't mean it.", a: "\"I can say it once, and then deal with how it landed.\"", bundle: 'pro' },
+        { q: "She has to believe me.", a: "\"She'll believe me faster if I stop arguing.\"", bundle: 'pro' },
+        { q: "I won't be misunderstood.", a: "\"I can be misunderstood for a moment and still fix it.\"", bundle: 'pro' },
+        { q: "I need her to admit she got me wrong.", a: "\"I need us to be okay more than I need that.\"", bundle: 'pro' },
+        { q: "If I don't explain, she'll think the worst.", a: "\"If I listen first, she'll hear the explanation better.\"", bundle: 'pro' },
+        { q: "My intentions were good, so I'm not at fault.", a: "\"My intentions were good, and it still hurt her.\"", bundle: 'pro' },
+        { q: "I'll keep explaining until she gets it.", a: "\"I'll explain once, and then ask how she is.\"", bundle: 'pro' },
+        { q: "Being accused is the worst thing.", a: "\"Being accused is hard; staying steady is still possible.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Hurts, So It's True",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If it stings this much, she must be right.\" The belief that the strength of the pain proves the criticism.\n\nWhat is true instead: some pain is the clean sadness of a real mistake. Some is old shame that her words happened to touch. The size of the sting tells you about your history, not about the facts.\n\nIt feels reasonable because pain feels like evidence.\n\nWhat it costs is accepting labels that aren't true, or lashing out to make the pain stop.\n\nMindset: I can notice which kind of hurt this is before I answer.",
+      inputs: [
+        { q: "If it stings this much, she must be right.", a: "\"It stings because it touched something old; I'll check the facts.\"", bundle: 'pro' },
+        { q: "I feel terrible, so I must have done something terrible.", a: "\"I feel terrible, and I did one thing wrong.\"", bundle: 'pro' },
+        { q: "This hurts too much to answer calmly.", a: "\"Then I'll take a breath before I answer.\"", bundle: 'pro' },
+        { q: "Her words prove what I always thought about myself.", a: "\"Her words touched an old belief; they didn't prove it.\"", bundle: 'pro' },
+        { q: "I have to make this feeling stop right now.", a: "\"I can let it be there while I answer.\"", bundle: 'pro' },
+        { q: "I'm overreacting, so I'm the problem.", a: "\"I'm reacting to something old; I can say that.\"", bundle: 'pro' },
+        { q: "The hurt means I should give in.", a: "\"The hurt means I should slow down.\"", bundle: 'pro' },
+        { q: "Nobody would feel this bad unless it was true.", a: "\"People feel this bad about untrue things all the time.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  alexandergrace6: [
+    {
+      name: "The Open Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Showing what I feel makes me weak.\" The pack-wide belief that a man should keep his inner life to himself.\n\nWhat is true instead: sharing what you feel — calmly, a piece at a time — is how people come to know you. Staying closed doesn't make you strong; it makes you hard to reach.\n\nIt feels reasonable because many men were taught early that feelings are a private matter.\n\nWhat it costs is a partner who feels shut out, and a life where nobody quite knows you.\n\nMindset: letting her in is not weakness. It's trust.",
+      inputs: [
+        { q: "Showing what I feel makes me weak.", a: "\"Showing what I feel, calmly, takes more strength than hiding it.\"", bundle: 'pro' },
+        { q: "Men should keep their feelings to themselves.", a: "\"Men who keep everything in end up alone with it.\"", bundle: 'pro' },
+        { q: "She needs me to be strong.", a: "\"Strong includes telling her when things are hard.\"", bundle: 'pro' },
+        { q: "If I share, she'll lose respect for me.", a: "\"If I share calmly, she'll know me better.\"", bundle: 'pro' },
+        { q: "I don't do feelings.", a: "\"I have them anyway; I can share a small one.\"", bundle: 'pro' },
+        { q: "Talking about it won't change anything.", a: "\"Talking about it changes whether I'm alone with it.\"", bundle: 'pro' },
+        { q: "She doesn't need to know.", a: "\"She'll feel it anyway; better she knows why.\"", bundle: 'pro' },
+        { q: "My dad never talked about this stuff.", a: "\"And I didn't really know him; I'd like her to know me.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Used Against Me",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I tell her, she'll use it against me later.\" The belief that any vulnerability becomes ammunition.\n\nWhat is true instead: some people do misuse what they're told, and you'll learn who does by sharing small things first. Most partners use what they know to understand you better.\n\nIt feels reasonable because you may have had it happen before, with someone else.\n\nWhat it costs is a relationship where she never gets the chance to prove you wrong.\n\nMindset: I can test trust in small pieces, rather than never testing it.",
+      inputs: [
+        { q: "If I tell her, she'll use it against me.", a: "\"If I tell her something small, I'll find out.\"", bundle: 'pro' },
+        { q: "It happened before, so it'll happen again.", a: "\"It happened with someone else; she hasn't had her chance.\"", bundle: 'pro' },
+        { q: "Anything I say can be thrown back at me.", a: "\"Anything I don't say can't bring us closer either.\"", bundle: 'pro' },
+        { q: "She'll bring it up in the next fight.", a: "\"If she does, I can say that's not okay.\"", bundle: 'pro' },
+        { q: "It's safer to keep it to myself.", a: "\"Safer, and lonelier.\"", bundle: 'pro' },
+        { q: "I can't trust anyone with this.", a: "\"I can trust her with a small part and see.\"", bundle: 'pro' },
+        { q: "Once it's out, I can't take it back.", a: "\"That's why I'll start with something small.\"", bundle: 'pro' },
+        { q: "Vulnerability is a weakness someone will exploit.", a: "\"It's also the only way to be really known.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Handling It Alone",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I deal with my own problems. I don't burden anyone.\" A belief that feels like self-reliance — and often is admirable.\n\nWhat is true instead: handling things yourself is a real skill. Refusing all help, and not telling her what's going on, is something else.\n\nIt feels reasonable because you're capable, and you don't want to worry her.\n\nWhat it costs is a partner who finds out late, feels shut out, and wonders what else you haven't told her.\n\nMindset: I can handle it and still let her in on it.",
+      inputs: [
+        { q: "I deal with my own problems.", a: "\"And she finds out about them from my mood.\"", bundle: 'pro' },
+        { q: "I don't want to burden her.", a: "\"And she feels shut out instead.\"", bundle: 'pro' },
+        { q: "I'm good at sorting things myself.", a: "\"Good at it, and alone with it.\"", bundle: 'pro' },
+        { q: "She's got enough on her plate.", a: "\"And she'd still rather know.\"", bundle: 'pro' },
+        { q: "Asking for help is admitting I can't cope.", a: "\"And not asking is why I'm this tired.\"", bundle: 'pro' },
+        { q: "I'll tell her once it's sorted.", a: "\"By then she's already guessed something's wrong.\"", bundle: 'pro' },
+        { q: "I'm the one who looks after us.", a: "\"And nobody's looking after me.\"", bundle: 'pro' },
+        { q: "I never need anything from anyone.", a: "\"Which means nobody gets to give me anything.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "She Knows",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"She knows I appreciate her.\" Half true — she may well know it, in general.\n\nWhat is true: actions do show care, and she probably sees a lot of what you do.\n\nWhat gets added is that knowing it in general is the same as hearing it. It isn't. Specific thanks, said out loud, reach her in a way that general knowledge doesn't.\n\nWhat it costs is a partner who feels taken for granted by someone who is, in fact, grateful.\n\nMindset: keep the gratitude. Drop the idea that it doesn't need saying.",
+      inputs: [
+        { q: "She knows I appreciate her.", a: "\"True, in general — but 'so I don't need to say it' is the part I added.\"", bundle: 'pro' },
+        { q: "My actions show how I feel.", a: "\"True, partly — but 'so words don't matter' is the part I added.\"", bundle: 'pro' },
+        { q: "Saying thank you all the time is fake.", a: "\"True, if it's automatic — but 'so I shouldn't say it at all' is the part I added.\"", bundle: 'pro' },
+        { q: "She'd tell me if she felt unappreciated.", a: "\"True, maybe — but 'so silence means she's fine' is the part I added.\"", bundle: 'pro' },
+        { q: "We've been together too long for that.", a: "\"True that it's different now — but 'so it's not needed' is the part I added.\"", bundle: 'pro' },
+        { q: "I show it in other ways.", a: "\"True — but 'so she'll hear it anyway' is the part I added.\"", bundle: 'pro' },
+        { q: "It's obvious how I feel about her.", a: "\"True to me — but 'obvious to her' is the part I added.\"", bundle: 'pro' },
+        { q: "Saying it would feel awkward.", a: "\"True, at first — but 'so it's not worth it' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "All or Nothing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I start opening up, it'll all come out.\" The belief that sharing anything will open a flood.\n\nWhat is true instead: you can choose the size of what you share. One piece today, another next week. You stay in charge of the pace.\n\nIt feels reasonable because when you've held things in for a long time, they feel like one enormous thing.\n\nWhat it costs is saying nothing, because saying something feels like saying everything.\n\nMindset: I choose how much, and I can start small.",
+      inputs: [
+        { q: "If I start, it'll all come out.", a: "\"I can share one piece and stop there.\"", bundle: 'pro' },
+        { q: "It's too big to talk about.", a: "\"It's too big to talk about all at once; a corner of it is fine.\"", bundle: 'pro' },
+        { q: "Once I open the door, I can't close it.", a: "\"I can open it a little, and choose when to open it more.\"", bundle: 'pro' },
+        { q: "I'll wait until I can explain it properly.", a: "\"I can start with the part I can explain.\"", bundle: 'pro' },
+        { q: "It'll be too much for her.", a: "\"One piece won't be too much.\"", bundle: 'pro' },
+        { q: "I don't know where to begin.", a: "\"I'll begin with how today felt.\"", bundle: 'pro' },
+        { q: "If I say a bit, she'll want everything.", a: "\"Then I'll tell her I'm going slowly.\"", bundle: 'pro' },
+        { q: "I have to be ready to talk about all of it.", a: "\"I only have to be ready for the next bit.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being a Burden",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"My problems would just weigh her down.\" The belief that sharing is a cost she has to pay.\n\nWhat is true instead: most people feel closer, not heavier, when someone they love trusts them with something. And a specific request — \"can you ask me about it on Friday?\" — is light to carry.\n\nIt feels reasonable because you care about her, and don't want to add to her stress.\n\nWhat it costs is a relationship where she carries her things to you, and you carry yours alone.\n\nMindset: being trusted feels good. I can give her that.",
+      inputs: [
+        { q: "My problems would just weigh her down.", a: "\"Being trusted with them might bring her closer.\"", bundle: 'pro' },
+        { q: "She has enough to deal with.", a: "\"One small request isn't a burden.\"", bundle: 'pro' },
+        { q: "I don't want her to worry about me.", a: "\"She worries more when I'm silent.\"", bundle: 'pro' },
+        { q: "It's not fair to dump this on her.", a: "\"Sharing it isn't dumping it, if I say what would help.\"", bundle: 'pro' },
+        { q: "She'll feel she has to fix it.", a: "\"Not if I tell her I just need her to listen.\"", bundle: 'pro' },
+        { q: "I'll only share when it's serious.", a: "\"Then she only ever hears me in a crisis.\"", bundle: 'pro' },
+        { q: "Nobody wants to hear about my problems.", a: "\"She does; she's said so.\"", bundle: 'pro' },
+        { q: "I should be the one supporting her.", a: "\"We can take turns.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  alexandergrace7: [
+    {
+      name: "The Well-Timed Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If she wants to talk, I have to talk now — wherever we are.\" The pack-wide belief that timing is a luxury.\n\nWhat is true instead: when and where a hard conversation happens decides half of how it goes. Choosing a better moment — and keeping it — is taking it seriously.\n\nIt feels reasonable because putting it off can feel like dodging.\n\nWhat it costs is serious conversations had in the car, by text, or half-distracted — and remembered badly by both of you.\n\nMindset: choosing the moment is part of caring about the conversation.",
+      inputs: [
+        { q: "If she wants to talk, I have to talk now.", a: "\"If it matters, it deserves the right moment.\"", bundle: 'pro' },
+        { q: "Putting it off is dodging.", a: "\"Putting it off with a time attached is planning.\"", bundle: 'pro' },
+        { q: "I'll just deal with it in the car.", a: "\"The car is the worst place for it; home is better.\"", bundle: 'pro' },
+        { q: "I can listen and work at the same time.", a: "\"I can't, not properly; she can tell.\"", bundle: 'pro' },
+        { q: "She'll be angrier if I make her wait.", a: "\"A minute's wait with my full attention after is better.\"", bundle: 'pro' },
+        { q: "Timing doesn't matter if we love each other.", a: "\"Timing matters because we love each other.\"", bundle: 'pro' },
+        { q: "I'll wait until she brings it up again.", a: "\"I'll name a time so she doesn't have to.\"", bundle: 'pro' },
+        { q: "There's never a good time.", a: "\"There's a better time, and I can choose it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Punching Bag",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"When she's upset, anything goes.\" The belief that the upset person gets a pass on the rules.\n\nWhat is true instead: being upset explains strong feelings. It doesn't make insults or shouting okay — for either of you.\n\nIt feels reasonable because you want to be supportive, and asking for respect in the middle of her distress feels harsh.\n\nWhat it costs is a relationship where you absorb whatever comes, and where the rules only exist when they're not needed.\n\nMindset: her feelings are welcome. The rules still apply to both of us.",
+      inputs: [
+        { q: "When she's upset, anything goes.", a: "\"When she's upset, feelings are welcome and insults still aren't.\"", bundle: 'pro' },
+        { q: "I should just take it.", a: "\"I can support her without being a punching bag.\"", bundle: 'pro' },
+        { q: "Asking for respect now is heartless.", a: "\"Asking calmly is respect for both of us.\"", bundle: 'pro' },
+        { q: "She doesn't mean it when she's like this.", a: "\"Maybe not, and it's still okay to ask her not to say it.\"", bundle: 'pro' },
+        { q: "Being supportive means accepting everything.", a: "\"Being supportive means staying, not accepting everything.\"", bundle: 'pro' },
+        { q: "The rules are for when things are calm.", a: "\"The rules are for when things aren't.\"", bundle: 'pro' },
+        { q: "It's only fair — I've done it too.", a: "\"Then the rule is for me as much as for her.\"", bundle: 'pro' },
+        { q: "Saying something will make it worse.", a: "\"Saying it gently will make the next one better.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Getting My Point In",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"If I don't jump in now, I'll never get to say it.\" Half true — your point does matter.\n\nWhat is true: your side deserves to be heard, and you shouldn't swallow it.\n\nWhat gets added is that the only way to be heard is to interrupt. Interrupting makes her defend; waiting makes her ready to listen.\n\nWhat it costs is conversations where nobody finishes a sentence.\n\nMindset: keep my point. Drop the need to make it now.",
+      inputs: [
+        { q: "If I don't jump in, I'll never get to say it.", a: "\"True that my point matters — but 'I have to jump in' is the part I added.\"", bundle: 'pro' },
+        { q: "She's got the facts wrong.", a: "\"True, maybe — but 'so I must correct her mid-sentence' is the part I added.\"", bundle: 'pro' },
+        { q: "If I wait, she'll talk forever.", a: "\"True, sometimes — but 'so interrupting is fair' is the part I added.\"", bundle: 'pro' },
+        { q: "She interrupts me, so I'll interrupt her.", a: "\"True that she does — but 'so I should too' is the part I added.\"", bundle: 'pro' },
+        { q: "I need to defend myself right now.", a: "\"True that I want to — but 'right now' is the part I added.\"", bundle: 'pro' },
+        { q: "My side is just as important.", a: "\"True — but 'so it has to come first' is the part I added.\"", bundle: 'pro' },
+        { q: "Letting her finish means agreeing.", a: "\"True that she'll feel heard — but 'that I agree' is the part I added.\"", bundle: 'pro' },
+        { q: "I'll forget my point if I wait.", a: "\"True, perhaps — but 'so I can't wait' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Mind Reader",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I know what she's upset about.\" A belief that feels like understanding her — and sometimes is.\n\nWhat is true instead: you often know the surface. What's underneath — the story she's telling herself about you — is usually only guessable, and often surprising.\n\nIt feels reasonable because you know her well, and the surface looks obvious.\n\nWhat it costs is arguing about the towel when the real subject was feeling like the housekeeper.\n\nMindset: I know her well enough to know I should ask.",
+      inputs: [
+        { q: "I know what she's upset about.", a: "\"I know the surface; the story underneath, I'd have to ask.\"", bundle: 'pro' },
+        { q: "It's obviously about the dishes.", a: "\"It's obviously about the dishes, and maybe not only.\"", bundle: 'pro' },
+        { q: "I can read her like a book.", a: "\"And I still misread the last chapter.\"", bundle: 'pro' },
+        { q: "Asking would be patronising.", a: "\"Guessing wrong is worse.\"", bundle: 'pro' },
+        { q: "I've heard this argument before.", a: "\"And never found out what it was really about.\"", bundle: 'pro' },
+        { q: "She's just tired.", a: "\"Maybe; she'd know better than me.\"", bundle: 'pro' },
+        { q: "I don't need to ask, I'll fix it.", a: "\"And I fix the wrong thing.\"", bundle: 'pro' },
+        { q: "I understand her better than she thinks.", a: "\"Then asking will prove it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Proving My Intentions",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If she believes I meant it badly, I have to convince her otherwise.\" The belief that a misread motive must be argued until she agrees.\n\nWhat is true instead: one clear sentence about what you meant is enough. After that, her feeling is what needs attention — not your case.\n\nIt feels reasonable because being misread feels unjust.\n\nWhat it costs is long arguments about your character while the hurt goes untouched.\n\nMindset: I say what I meant once, then I turn to how she feels.",
+      inputs: [
+        { q: "I have to convince her I meant well.", a: "\"I have to tell her once, then listen.\"", bundle: 'pro' },
+        { q: "If she thinks badly of me, I've failed.", a: "\"If she misread me, one sentence can fix it.\"", bundle: 'pro' },
+        { q: "She's accusing me of something I didn't do.", a: "\"She's hurt by something I didn't mean; both can be true.\"", bundle: 'pro' },
+        { q: "I won't apologise for something I didn't intend.", a: "\"I can be sorry it hurt without being guilty of meaning it.\"", bundle: 'pro' },
+        { q: "She needs to admit she got it wrong.", a: "\"She needs to feel heard more than I need that.\"", bundle: 'pro' },
+        { q: "I'll keep explaining until she gets it.", a: "\"One explanation, then her feelings.\"", bundle: 'pro' },
+        { q: "My reputation with her is at stake.", a: "\"Her trust grows when I listen, not when I argue.\"", bundle: 'pro' },
+        { q: "If I don't defend myself, she'll believe the worst.", a: "\"If I defend less and listen more, she'll believe the best.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Rules Are Control",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Setting ground rules is controlling.\" The belief that agreeing how to argue is unromantic or bossy.\n\nWhat is true instead: rules imposed on one person are control. Rules agreed together and kept by both are protection — for both of you, especially on bad days.\n\nIt feels reasonable because \"rules\" sounds cold, and nobody wants a relationship run like a meeting.\n\nWhat it costs is arguments that go wherever the worst moment takes them.\n\nMindset: rules we both agree to keep us both safe.",
+      inputs: [
+        { q: "Setting ground rules is controlling.", a: "\"Rules for her alone would be; rules for both of us aren't.\"", bundle: 'pro' },
+        { q: "Couples in love don't need rules.", a: "\"Couples in love still have bad days.\"", bundle: 'pro' },
+        { q: "She'll think I'm trying to manage her.", a: "\"Not if I suggest rules that bind me first.\"", bundle: 'pro' },
+        { q: "Rules take the feeling out of it.", a: "\"Rules take the cruelty out of it.\"", bundle: 'pro' },
+        { q: "We should be able to argue naturally.", a: "\"Naturally is how the last one went wrong.\"", bundle: 'pro' },
+        { q: "It's unromantic.", a: "\"Not hurting each other is romantic.\"", bundle: 'pro' },
+        { q: "She'll never agree to rules.", a: "\"She might agree to one: no name-calling.\"", bundle: 'pro' },
+        { q: "I'll only bring up rules when she breaks them.", a: "\"I'll agree them when we're calm, and keep them first.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  alexandergrace8: [
+    {
+      name: "The Honest and Fair Mindset",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Being honest will cost me her affection.\" The pack-wide belief that a good partner says whatever keeps things pleasant.\n\nWhat is true instead: honesty said warmly makes affection more real, not less. Praise she can believe, disagreements she can survive, and fairness you can both see keep a relationship steady.\n\nIt feels reasonable because pleasant is easy, and honesty sometimes causes a moment of friction.\n\nWhat it costs is praise she can't trust, opinions she never hears, and resentment about the split.\n\nMindset: warm honesty is worth more than easy peace.",
+      inputs: [
+        { q: "Being honest will cost me her affection.", a: "\"Being honest warmly makes her affection more real.\"", bundle: 'pro' },
+        { q: "It's kinder to say what she wants to hear.", a: "\"It's kinder to say what's true, gently.\"", bundle: 'pro' },
+        { q: "I'll keep the peace.", a: "\"The peace I keep by nodding isn't real peace.\"", bundle: 'pro' },
+        { q: "She won't like me disagreeing.", a: "\"She'll get used to knowing what I think.\"", bundle: 'pro' },
+        { q: "Talking about fairness is petty.", a: "\"Talking about it early is how we avoid being petty later.\"", bundle: 'pro' },
+        { q: "I'd rather avoid any friction.", a: "\"A little friction now saves a lot later.\"", bundle: 'pro' },
+        { q: "Nice guys don't make a fuss.", a: "\"Honest guys say it once, kindly.\"", bundle: 'pro' },
+        { q: "If I'm honest, she'll leave.", a: "\"If I'm honest, she'll know who she's with.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Agreeable One",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'm easy to be with. I go along with things.\" A belief that feels like generosity, and often is.\n\nWhat is true instead: going along with most things is fine. Going along with everything means she never finds out what you think — and you start to vanish from your own relationship.\n\nIt feels reasonable because agreeing keeps things smooth, and your views don't seem important enough to raise.\n\nWhat it costs is a partner who doesn't know you, and a buildup of unspoken preferences.\n\nMindset: easy to be with, and still someone with views.",
+      inputs: [
+        { q: "I'm easy to be with.", a: "\"And she doesn't know what I actually think.\"", bundle: 'pro' },
+        { q: "I go along with things.", a: "\"Including things I don't want.\"", bundle: 'pro' },
+        { q: "My opinion doesn't really matter here.", a: "\"Until I've swallowed so many that I'm resentful.\"", bundle: 'pro' },
+        { q: "I don't mind what we do.", a: "\"I do mind, a bit, and I never say.\"", bundle: 'pro' },
+        { q: "I'm flexible.", a: "\"Flexible, and slowly disappearing.\"", bundle: 'pro' },
+        { q: "Whatever makes her happy.", a: "\"And my happiness is left out of the plan.\"", bundle: 'pro' },
+        { q: "I don't like conflict.", a: "\"And I've made my own view the casualty.\"", bundle: 'pro' },
+        { q: "She's better at deciding.", a: "\"Because I've stopped practising.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Reassurance",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"When she's unsure, I should tell her whatever makes her feel better.\" Half true — reassurance is a kindness.\n\nWhat is true: when she's worried, she deserves warmth and comfort from you.\n\nWhat gets added is that anything goes — exaggerations, compliments you don't mean. Those feel kind for a moment and then stop being believed.\n\nWhat it costs is praise that loses its value, and a worry that never gets looked at.\n\nMindset: keep the comfort. Drop anything I don't mean.",
+      inputs: [
+        { q: "I should tell her whatever makes her feel better.", a: "\"True that she deserves comfort — but 'whatever works' is the part I added.\"", bundle: 'pro' },
+        { q: "A little exaggeration is harmless.", a: "\"True, once — but 'every time' is the part I added.\"", bundle: 'pro' },
+        { q: "She just wants to hear yes.", a: "\"True, perhaps — but 'so I shouldn't ask why' is the part I added.\"", bundle: 'pro' },
+        { q: "Asking what's behind it will upset her.", a: "\"True, maybe for a moment — but 'so I shouldn't ask' is the part I added.\"", bundle: 'pro' },
+        { q: "Honest praise isn't enough.", a: "\"True that she wants more — but 'so I should invent it' is the part I added.\"", bundle: 'pro' },
+        { q: "Reassuring her is my job.", a: "\"True, partly — but 'with any words that work' is the part I added.\"", bundle: 'pro' },
+        { q: "She'll feel rejected if I don't say she's the most beautiful woman alive.", a: "\"True she wants to feel beautiful — but 'the most' is the part I added.\"", bundle: 'pro' },
+        { q: "Keeping her happy is kindness.", a: "\"True — but 'at the cost of honesty' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Keeping Score",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I mention how much I do, I'm keeping score.\" The belief that raising fairness is petty.\n\nWhat is true instead: keeping score in your head, silently, is the petty version. Saying it out loud, with a trade on the table, is how you stop keeping score.\n\nIt feels reasonable because nobody wants to be the partner who counts who did the dishes.\n\nWhat it costs is a silent tally that grows until it comes out as resentment.\n\nMindset: saying it out loud is how I stop counting.",
+      inputs: [
+        { q: "If I mention how much I do, I'm keeping score.", a: "\"If I don't, I'll keep score in my head.\"", bundle: 'pro' },
+        { q: "Real partners don't count.", a: "\"Real partners talk about it before they start counting.\"", bundle: 'pro' },
+        { q: "She'll think I'm petty.", a: "\"Not if I offer a trade, not a complaint.\"", bundle: 'pro' },
+        { q: "It all evens out in the end.", a: "\"It evens out if we talk about it.\"", bundle: 'pro' },
+        { q: "I should just do it without complaining.", a: "\"I can do it and still ask for a fairer split.\"", bundle: 'pro' },
+        { q: "Bringing it up will start a row.", a: "\"A trade starts a conversation, not a row.\"", bundle: 'pro' },
+        { q: "I don't want to seem ungrateful for what she does.", a: "\"I can ask what she carries too.\"", bundle: 'pro' },
+        { q: "It's only the cooking.", a: "\"It's the cooking every day for months.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Every Fight Is New",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Raising a pattern is an attack.\" The belief that you should deal with each fight on its own, and never step back to look at the shape.\n\nWhat is true instead: a pattern raised calmly, as something you both do, is the opposite of an attack. It's the only way to stop having the same fight.\n\nIt feels reasonable because saying \"this always happens\" sounds like a complaint about her.\n\nWhat it costs is the same argument, again and again, never really solved.\n\nMindset: talking about the pattern is how we stop repeating it.",
+      inputs: [
+        { q: "Raising a pattern is an attack.", a: "\"Raising it calmly, as something we both do, isn't.\"", bundle: 'pro' },
+        { q: "Each fight is its own fight.", a: "\"Each fight looks like the last one; that's worth noticing.\"", bundle: 'pro' },
+        { q: "Bringing up old fights is unfair.", a: "\"Bringing up the shape of them, calmly, is fair.\"", bundle: 'pro' },
+        { q: "She'll think I'm blaming her.", a: "\"Not if I say 'we' and ask what she thinks.\"", bundle: 'pro' },
+        { q: "Better to just get through it.", a: "\"Getting through it is how it comes back.\"", bundle: 'pro' },
+        { q: "Talking about patterns is therapy talk.", a: "\"It's just noticing what keeps happening.\"", bundle: 'pro' },
+        { q: "I'll raise it next time it happens.", a: "\"I'll raise it when we're calm, not during.\"", bundle: 'pro' },
+        { q: "It'll stop on its own.", a: "\"It hasn't yet.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Her Mood Is My Job",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If she's unhappy, it's my job to fix it.\" The belief that you are responsible for keeping her mood steady.\n\nWhat is true instead: you can care about how she feels, ask about it, and comfort her. You can't manage her feelings for her — and trying to leads to saying whatever will calm her, true or not.\n\nIt feels reasonable because you love her, and her unhappiness feels like your failure.\n\nWhat it costs is constant scanning of her mood, compliments you don't mean, and never saying what you think.\n\nMindset: I care about her mood. I'm not in charge of it.",
+      inputs: [
+        { q: "If she's unhappy, it's my job to fix it.", a: "\"If she's unhappy, it's my job to care and ask.\"", bundle: 'pro' },
+        { q: "I have to keep her in a good mood.", a: "\"I can't keep anyone in a mood; I can be kind.\"", bundle: 'pro' },
+        { q: "Her bad day means I did something wrong.", a: "\"Her bad day might have nothing to do with me.\"", bundle: 'pro' },
+        { q: "I'll say whatever calms her down.", a: "\"I'll say what's true, calmly.\"", bundle: 'pro' },
+        { q: "I'm always watching how she feels.", a: "\"I can notice without being on guard.\"", bundle: 'pro' },
+        { q: "If she's upset, I've failed.", a: "\"If she's upset, she's a person having a feeling.\"", bundle: 'pro' },
+        { q: "It's my responsibility to make her happy.", a: "\"It's my responsibility to be good to her.\"", bundle: 'pro' },
+        { q: "She'll be fine if I just agree.", a: "\"She'll be fine, and I'll disappear a bit more.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+};
