@@ -5486,16 +5486,106 @@ const multiStepCollections = {
       name: "The Unswayable Lead",
       guideFront: "The step you are on — say your version out loud.",
       guideBack: "One way it could sound.",
-      description: "A calibration sequence: Observe → Point of Origin → Act → Field Report.\nIdentify the dynamic, check your own values, take the action, and then analyze it objectively.",
+      description: "A calibration sequence: The OODA Loop → Mental Point of Origin → The OODA Loop → Field Reporting.\nIdentify the dynamic, check your own values, take the action, and then analyze it objectively.",
       inputs: [
         {
           bundle: 'pro',
           situation: "You are headed out the door. She starts crying and says you \"don't care about the family\" because the garage is messy.",
           steps: [
-            { front: "Observe — (OODA Loop: Observe)", back: "\"She is using a 'Hamster' loop of anxiety to manipulate my protective instinct.\"" },
-            { front: "Point of Origin — (Internal Check)", back: "\"I value my health and my gym time. This is my priority right now.\"" },
-            { front: "Act — (OODA Loop: Act)", back: "\"I'm responsible for the garage and I'll handle it on Saturday. I'm going to the gym now. See you later.\"" },
-            { front: "Field Report — (Later that evening)", back: "\"I stayed the oak. She was mad, but I didn't buckle. My workout was excellent.\"" },
+            { front: "The OODA Loop — (OODA Loop: Observe)", back: "\"She is using a 'Hamster' loop of anxiety to manipulate my protective instinct.\"" },
+            { front: "Mental Point of Origin — (Internal Check)", back: "\"I value my health and my gym time. This is my priority right now.\"" },
+            { front: "The OODA Loop — (OODA Loop: Act)", back: "\"I'm responsible for the garage and I'll handle it on Saturday. I'm going to the gym now. See you later.\"" },
+            { front: "Field Reporting — (Later that evening)", back: "\"I stayed the oak. She was mad, but I didn't buckle. My workout was excellent.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You announce a career change that aligns with your long-term vision. She starts crying, accusing you of being selfish and risking the family's future.",
+          steps: [
+            { front: "The OODA Loop — She is sobbing and calling you irresponsible.", back: "\"She is experiencing panic and testing if my vision is solid.\"" },
+            { front: "Mental Point of Origin — You feel a wave of guilt and want to cave.", back: "\"My vision is mine to pursue. I do not need permission to lead.\"" },
+            { front: "The OODA Loop — You speak with calm conviction.", back: "\"I hear your fear, but I've calculated the risk. This is the move I'm making.\"" },
+            { front: "Field Reporting — That night in your journal.", back: "\"I stayed calm during her storm. I didn't DEER or cave to her tears.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You replace your worn-out wardrobe with tailored, masculine clothes. She mocks you, asking who you are trying to impress.",
+          steps: [
+            { front: "The OODA Loop — She rolls her eyes and makes a sarcastic comment.", back: "\"She is testing whether my new physical signal is authentic or a suit.\"" },
+            { front: "Mental Point of Origin — You feel the urge to explain or apologize.", back: "\"I dress for my own self-respect. I offer no excuses for my style.\"" },
+            { front: "The OODA Loop — You smile calmly and hold your ground.", back: "\"I like how this fits. I'm wearing it.\"" },
+            { front: "Field Reporting — Writing your review after date night.", back: "\"She poked fun at first, but held my arm closer by the end of dinner.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Frame Reset",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "**The Physical Signal** → **Mental Point of Origin** → **The OODA Loop**.\nThis sequence trains you to halt reactive collapse, ground yourself physically, declare your internal truth, and execute a calibrated response.\n1. **The Physical Signal** — ground your body, posture, and presence first\n2. **Mental Point of Origin** — state or check your unarguable internal priority\n3. **The OODA Loop** — observe the reaction and execute your next move\nWhy just this order: you must anchor your physical posture before declaring your internal boundary, and you must state your boundary before calibrating her response.\nWhat people do instead: they babble, explain, and posture loudly, which reveals internal panic.\nMindset: physical presence and internal sureness precede tactical action.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You walk in the door and she immediately snaps at you for being ten minutes late, claiming you don't value her time.",
+          steps: [
+            { front: "The Physical Signal — You feel yourself shrinking and getting defensive.", back: "(Stand tall, drop your shoulders, and breathe deeply before speaking)." },
+            { front: "Mental Point of Origin — You feel a wave of anxiety about her bad mood.", back: "\"I am my own judge. I won't be talked to with disrespect.\"" },
+            { front: "The OODA Loop — You observe her anger and set the frame.", back: "\"I hear you're annoyed, but I won't engage with shouting. Let me know when you're ready to talk.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are preparing to go to the gym on a Saturday. She sighs heavily and says \"Must be nice to just leave whenever you want.\"",
+          steps: [
+            { front: "The Physical Signal — You feel the urge to slouch and look apologetic.", back: "(Maintain an upright, confident posture and keep steady eye contact)." },
+            { front: "Mental Point of Origin — You feel a pleaser impulse to cancel your workout.", back: "\"My health is essential to my frame. I am going to the gym.\"" },
+            { front: "The OODA Loop — You observe her emotional test and execute.", back: "\"I'll be back at two. Then we'll do lunch together.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You set a clear budget limit. She gets angry at the mall, accusing you of controlling the money.",
+          steps: [
+            { front: "The Physical Signal — You feel your body clenching under her public criticism.", back: "(Keep a relaxed, unswayable physical posture and quiet voice tone)." },
+            { front: "Mental Point of Origin — You feel ashamed in front of others.", back: "\"I am responsible for our long-term security. I stand by my budget.\"" },
+            { front: "The OODA Loop — You observe the public drama and hold the line.", back: "\"We're sticking to the budget today. We can discuss it calmly at home.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Calibrated Action",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "**Mental Point of Origin** → **The OODA Loop** → **Field Reporting**.\nThis sequence trains you to establish an internal boundary, observe her response without getting hooked, and document the facts objectively afterward.\n1. **Mental Point of Origin** — anchor your decision in your own values\n2. **The OODA Loop** — observe reality, orient to the model, and act\n3. **Field Reporting** — document the interaction neutrally to learn from it\nWhy just this order: you must act from internal authority first, observe her response in real time, and analyze the facts after the emotional dust has settled.\nWhat people do instead: they act from anger, argue endlessly, and rewrite history in their minds to play the victim.\nMindset: objective iteration builds an unshakeable frame over time.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She brings up an old mistake in front of your friends to win a minor debate.",
+          steps: [
+            { front: "Mental Point of Origin — You feel a surge of anger and embarrassment.", back: "\"Respect in front of others is a non-negotiable boundary for me.\"" },
+            { front: "The OODA Loop — You observe the violation and execute cleanly.", back: "\"I want to hear your thoughts, but not like this in public. Let's speak privately.\"" },
+            { front: "Field Reporting — Documenting the event that night.", back: "\"I called out the boundary calmly without shouting. She got quiet, then respected the limit.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You start eating clean and lifting weights. She buys junk food and tempts you to quit your diet.",
+          steps: [
+            { front: "Mental Point of Origin — You feel bad for refusing her treats.", back: "\"My physical pillar is my foundation. I won't sabotage my health.\"" },
+            { front: "The OODA Loop — You observe her subtle sabotage attempt.", back: "\"Thanks, Love, but I'm sticking to my meal plan tonight.\"" },
+            { front: "Field Reporting — Journaling after a month of lifting.", back: "\"She stopped bringing junk food home once she realized I wouldn't touch it.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "After you refuse to compromise on a key goal, she slams the bedroom door and goes completely silent for two days.",
+          steps: [
+            { front: "Mental Point of Origin — You feel panic and fear of abandonment.", back: "\"I am safe. I do not need her immediate approval to be a complete man.\"" },
+            { front: "The OODA Loop — You observe her withdrawal without chasing her.", back: "(Stay occupied with your work and gym routine. Settle into the silence.)" },
+            { front: "Field Reporting — Writing your entry on day three.", back: "\"I didn't chase or apologize. She broke the silence on day three and was affectionate.\"" },
           ]
         },
       ]
@@ -5512,10 +5602,98 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You walk in 30 minutes late. She starts shouting: \"You obviously don't care about my time! You're so selfish!\"",
           steps: [
-            { front: "Medium is the Message — (Identify Process)", back: "\"She is on the 'Hamster Wheel' of anxiety. She wants comfort through my strength.\"" },
-            { front: "Status Calibration — (Higher Status/Cooperative)", back: "\"I hear you're frustrated, Love. I got stuck, and I'm here now. Come give me a hug.\"" },
+            { front: "The Medium is the Message — (Identify Process)", back: "\"She is on the 'Hamster Wheel' of anxiety. She wants comfort through my strength.\"" },
+            { front: "Status/Harmony Calibration — (Higher Status/Cooperative)", back: "\"I hear you're frustrated, Love. I got stuck, and I'm here now. Come give me a hug.\"" },
             { front: "Whisper’s Rule — (She softens and says \"I just want you to be here.\")", back: "(Internal) \"She wants to feel like I am a priority she can count on.\"" },
             { front: "Gratitude Frame-Check — (She says \"You look good in that suit, even if you are an asshole.\")", back: "\"I know. And I'm glad I'm home to show you.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She slams cabinet doors and snaps: \"No one ever helps me in this house, I do everything alone!\"",
+          steps: [
+            { front: "Status/Harmony Calibration — You feel the urge to bark back or hide.", back: "\"I stay high-status and high-harmony: unswayable, calm, and warm.\"" },
+            { front: "Whisper’s Rule — You know repeating \"I did the dishes\" will only escalate the fight.", back: "\"I stop debating facts. She heard me; she is expressing emotional overload.\"" },
+            { front: "Gratitude Frame-Check — She calms down and sighs: \"Thanks for not shouting back at me.\"", back: "\"I accept her appreciation warmly without needing her validation to feel grounded.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "At a dinner party with friends, she makes a sharp, sarcastic dig about your cooking skills.",
+          steps: [
+            { front: "Status/Harmony Calibration — You feel your body clench and want to make a bitter comeback.", back: "(Keep an unswayable, amused smile and hold high-status warmth)." },
+            { front: "Whisper’s Rule — She looks at you to see if you lost your composure.", back: "\"I don't argue or defend my cooking in public. I let her test bounce off my frame.\"" },
+            { front: "Gratitude Frame-Check — Later in the car, she apologizes: \"Sorry I was snappy earlier, you're actually a great cook.\"", back: "\"Thank you. I appreciate you saying that, Love.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Decoding the Medium",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "**The Medium is the Message** → **Whisper’s Rule** → **Status/Harmony Calibration**.\n\nThis sequence trains you to identify subtext carried through actions or tone, stop debating surface words, and lead with grounded warmth.\n1. **The Medium is the Message** — identify the subtext delivered through actions, tone, or channel\n2. **Whisper’s Rule** — stop repeating or arguing literal facts\n3. **Status/Harmony Calibration** — respond with high-status, high-harmony leadership\n\nWhy just this order: you must read the medium first, stop debating surface words second, and deliver grounded warm leadership third.\n\nWhat people do instead: they argue the literal text, get defensive, and drop into low-harmony shouting.\n\nMindset: subtext precedes speech; lead the medium to master the moment.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She sends six long, angry text messages back-to-back while you are at work, accusing you of ignoring her.",
+          steps: [
+            { front: "The Medium is the Message — You realize texting is the wrong medium for emotional resolution.", back: "\"Texting carries anger poorly. I stop replying over text immediately.\"" },
+            { front: "Whisper’s Rule — She texts \"Why aren't you answering me?!\"", back: "\"She hears my silence. I don't send five paragraphs of logical excuses.\"" },
+            { front: "Status/Harmony Calibration — You call her briefly on your lunch break.", back: "\"I'm working right now, Love. I'll be home at six and we'll talk smoothly then.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You walk into the living room and she gives you a cold look, turns her back, and sighs loudly.",
+          steps: [
+            { front: "The Medium is the Message — You observe the physical signal of her withdrawal.", back: "\"Her medium is coldness. She is testing if my frame can handle her distance.\"" },
+            { front: "Whisper’s Rule — You are tempted to ask \"What's wrong?\" five times in a row.", back: "\"Asking repeatedly communicates anxiety. I state my presence once.\"" },
+            { front: "Status/Harmony Calibration — You sit next to her on the couch with calm warmth.", back: "\"I see you're in your head right now. I'm right here when you want to connect.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "While shopping for furniture, she gets angry over a minor price difference and snaps at the store clerk.",
+          steps: [
+            { front: "The Medium is the Message — You recognize her outburst is driven by decision fatigue and anxiety.", back: "\"The argument isn't about the sofa price; her system is overwhelmed.\"" },
+            { front: "Whisper’s Rule — You feel the urge to lecture her on good manners in public.", back: "\"Lecturing her now will escalate her hamster. I step in quietly.\"" },
+            { front: "Status/Harmony Calibration — You take her hand calmly and steer the decision.", back: "\"We're taking a break. Let's grab a coffee outside, and I'll make the call on the sofa.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Grounded Appreciation",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "**Gratitude Frame-Check** → **Whisper’s Rule** → **Status/Harmony Calibration**.\n\nThis sequence trains you to evaluate whether praise or criticism is a frame test, recognize her underlying emotional state, and hold high-status warmth.\n1. **Gratitude Frame-Check** — evaluate whether praise or criticism is a frame test\n2. **Whisper’s Rule** — recognize her underlying emotional need behind the test\n3. **Status/Harmony Calibration** — respond with unswayable authority and warm inclusion\n\nWhy just this order: you must check the frame first to avoid pleaser traps, look past surface words second, and hold high-status warmth third.\n\nWhat people do instead: they beg for compliments or get needy when praised.\n\nMindset: unshakeable grounding turns frame tests into opportunities for deeper connection.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She brings you coffee in bed and says \"You're such a good boy, you deserve a treat for doing the laundry.\"",
+          steps: [
+            { front: "Gratitude Frame-Check — You feel a subtle sense of being mothered or patronized.", back: "\"I check the frame. She is positioning herself as the approving mother.\"" },
+            { front: "Whisper’s Rule — You realize accepting her patronizing frame kills sexual polarity.", back: "\"I don't debate her choice of words. I shift the subtext playfully.\"" },
+            { front: "Status/Harmony Calibration — You pull her close with masculine warmth.", back: "\"Thanks for the coffee, beautiful. Now come here and kiss me.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You complete a major home renovation project. She says \"It looks great, but why didn't you finish the hallway paint too?\"",
+          steps: [
+            { front: "Gratitude Frame-Check — You feel a surge of resentment that your hard work wasn't enough.", back: "\"She is testing if my self-worth depends on her total approval.\"" },
+            { front: "Whisper’s Rule — You know arguing about the hallway paint is taking the bait.", back: "\"I don't defend my timeline or list the hours I worked.\"" },
+            { front: "Status/Harmony Calibration — You own your work with calm satisfaction.", back: "\"The living room looks fantastic. I'll get to the hallway on my own schedule.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "After a tough week where you held your boundaries firmly, she hugs you tightly and whispers \"I feel so safe with you.\"",
+          steps: [
+            { front: "Gratitude Frame-Check — You feel a temptation to get needy and say \"Do you really mean that?\"", back: "\"I receive her genuine appreciation without becoming dependent on it.\"" },
+            { front: "Whisper’s Rule — You feel the deep connection carried through her physical surrender.", back: "\"Her medium is touch and emotional opening. I don't need to over-explain.\"" },
+            { front: "Status/Harmony Calibration — You hold her firmly with quiet, masculine strength.", back: "\"I've got us, Love. Always.\"" },
           ]
         },
       ]
@@ -5537,6 +5715,94 @@ const multiStepCollections = {
             { front: "Broken Record — she starts listing old grievances from last year.", back: "\"I hear those things. And, I'm working late tonight to finish this project.\"." },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "Your boss confronts you about a delayed report, accusing you of being irresponsible.",
+          steps: [
+            { front: "Fogging — He shouts that the report was submitted past the deadline.", back: "\"You're right, the report was submitted past the five o'clock deadline.\"" },
+            { front: "Negative Inquiry — He glares and asks why you are so careless.", back: "\"What specifically about my submission process seemed careless to you?\"" },
+            { front: "Broken Record — He demands you work all weekend to redo the entire analysis.", back: "\"I hear your frustration, but the analysis is complete and I will present it on Monday.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your mother scolds you over the phone, claiming you are selfish for not staying the whole week.",
+          steps: [
+            { front: "Fogging — She says you aren't spending as much time at home as you used to.", back: "\"You're right, I am spending fewer days at the house this year.\"" },
+            { front: "Negative Inquiry — She sighs heavily and asks why you don't care about family anymore.", back: "\"What is it about my three-day visit that makes you feel I don't care about the family?\"" },
+            { front: "Broken Record — She demands you change your flight and stay for seven days.", back: "\"I know you want a longer visit, but I am staying for three days.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Neutralizing the Attack",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "**Negative Assertion** → **Fogging** → **Broken Record**.\nThis sequence trains you to accept genuine mistakes cleanly, disarm secondary criticism, and hold your boundary without DEERing.\n1. **Negative Assertion** — accept any real mistake immediately without groveling\n2. **Fogging** — agree with the true or probable part of her follow-up criticism\n3. **Broken Record** — repeat your decision or boundary calmly\nWhy just this order: accepting the real mistake first strips away her ammunition; fogging the follow-up prevents an argument; repeating your boundary seals the frame.\nWhat people do instead: they deny the mistake, get defensive, and cave to her demands out of guilt.\nMindset: accepting a mistake is not giving up your authority.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You forgot to buy milk, and she snaps: \"You never remember anything, you're completely unreliable!\"",
+          steps: [
+            { front: "Negative Assertion — She points out the missing milk.", back: "\"You're right, I forgot the milk. That was my mistake.\"" },
+            { front: "Fogging — She fumes that now breakfast is ruined for tomorrow.", back: "\"It's true that not having milk makes breakfast inconvenient.\"" },
+            { front: "Broken Record — She demands you drive back to the store immediately in a storm.", back: "\"I won't be driving back out tonight, but I will pick it up tomorrow morning.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You arrived 15 minutes late for a dinner date, and she attacks your character.",
+          steps: [
+            { front: "Negative Assertion — She points out you are late.", back: "\"You're right, I'm 15 minutes late. That was my error.\"" },
+            { front: "Fogging — She complains that you don't respect her schedule.", back: "\"It's understandable that you feel your time wasn't respected.\"" },
+            { front: "Broken Record — She demands you apologize five times and pay for the whole meal to make up for it.", back: "\"I've acknowledged my lateness, and I'm ready to enjoy our dinner now.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You miscalculated a bill payment, causing a small overdraft fee, and she panics.",
+          steps: [
+            { front: "Negative Assertion — She shows you the fee notice.", back: "\"You're right, I miscalculated that payment. It was my oversight.\"" },
+            { front: "Fogging — She shouts that you are ruining the family's financial future.", back: "\"It's true that overdraft fees are an unnecessary waste of money.\"" },
+            { front: "Broken Record — She demands that you hand over all financial control to her immediately.", back: "\"I've absorbed the fee, and I am keeping my responsibility for managing the budget.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Probing the Hostility",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "**Negative Inquiry** → **Fogging** → **Broken Record**.\nThis sequence trains you to prompt vague complaints to be specific, disarm the valid core of the critique, and hold your position calmly.\n1. **Negative Inquiry** — ask for specific details about her vague criticism\n2. **Fogging** — agree with the valid or true element revealed\n3. **Broken Record** — state your clear decision without offering excuses\nWhy just this order: probing forces her to move from emotional attacks to concrete facts; fogging the valid part neutralizes hostility; repeating your stance keeps your frame intact.\nWhat people do instead: they take emotional attacks personally and argue back, creating a two-hour fight.\nMindset: specific facts disarm emotional drama every time.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You announce you are taking a weekend motorcycle trip, and she says \"You're being so thoughtless lately.\"",
+          steps: [
+            { front: "Negative Inquiry — She glares at you with crossed arms.", back: "\"What specifically am I doing that feels thoughtless to you?\"" },
+            { front: "Fogging — She says you're going away during a weekend when the lawn needs mowing.", back: "\"It's true that the lawn will need mowing this weekend.\"" },
+            { front: "Broken Record — She insists you cancel the trip to do yard work.", back: "\"I'm going on the trip this weekend, and I will mow the lawn on Tuesday evening.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You decide to enroll in an evening certification course, and she mutters \"You're always wasting time.\"",
+          steps: [
+            { front: "Negative Inquiry — She rolls her eyes at your course syllabus.", back: "\"What about this certification course seems like a waste of time to you?\"" },
+            { front: "Fogging — She says it takes two evenings away from watching TV together.", back: "\"It's true that I'll be out of the house on Tuesday and Thursday nights.\"" },
+            { front: "Broken Record — She tells you to drop the class immediately.", back: "\"I understand your concern, but I am taking the course.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "After a dinner party, she says \"You were acting so arrogant tonight.\"",
+          steps: [
+            { front: "Negative Inquiry — You look at her calmly in the car.", back: "\"What specifically did I say or do tonight that seemed arrogant?\"" },
+            { front: "Fogging — She says you dominated the conversation about real estate investments.", back: "\"You're right, I spoke at length about real estate.\"" },
+            { front: "Broken Record — She demands you promise never to talk about finance in public again.", back: "\"I enjoy discussing finance, and I'll continue sharing my thoughts when relevant.\"" },
+          ]
+        },
       ]
     },
   ],
@@ -5555,6 +5821,96 @@ const multiStepCollections = {
             { front: "Killing Covert Contracts — she says, \"If you loved me, you'd stay.\"", back: "(Internal) \"I'm not staying to 'earn' her love. I'm going to benefit myself.\"" },
             { front: "No DEERing — she demands, \"Why is your gym more important than me?\".", back: "\"Because I've decided my fitness is a priority. I'll be back at seven.\"" },
             { front: "The Oak — (Later, when you return and she is still \"Still-Facing\" you).", back: "\"The birds are still singing. I'm going to go make some eggs.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She comes to you crying about credit card debt caused by her impulsive spending, hoping you will pay it off to be her hero.",
+          steps: [
+            { front: "Killing Covert Contracts — You feel the urge to pay her debt expecting her to treat you like a king.", back: "\"I stop buying love through financial bailouts. Bailing her out won't earn her respect.\"" },
+            { front: "No DEERing — She asks why you won't just write a check from your savings account.", back: "\"I won't be paying off your credit card balance.\"" },
+            { front: "Controlled Anger — She throws a tantrum, calling you a stingy, selfish boyfriend.", back: "\"I won't be shamed for managing my own money. Tone it down now.\"" },
+            { front: "The Oak — She goes completely silent and sulks on the couch for two days.", back: "(Maintain an unswayable, calm presence and stay occupied with your own priorities)." },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She calls you at midnight crying because her ex-boyfriend sent her a mean text, wanting you to fix her emotional crisis.",
+          steps: [
+            { front: "Killing Covert Contracts — You feel the pleaser impulse to play white knight and fix her drama.", back: "\"I am her partner, not her emotional therapist or white knight savior.\"" },
+            { front: "No DEERing — She asks why you aren't driving over immediately to comfort her.", back: "\"I'm staying home tonight. We can talk about it tomorrow when you're rested.\"" },
+            { front: "Controlled Anger — She accuses you of being cold and unfeeling compared to her ex.", back: "\"Comparing me to your ex is unacceptable. Do not use that line again.\"" },
+            { front: "The Oak — She hangs up on you in a rage.", back: "(Set your phone down, breathe deeply into your belly, and go to sleep peacefully)." },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Resentment Circuit Breaker",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "**Killing Covert Contracts** → **No DEERing** → **Controlled Anger**.\n\nThis sequence trains you to identify covert expectations before they turn into bitter resentment, declare your boundary without defending, and enforce it with controlled anger if pushed.\n1. **Killing Covert Contracts** — eliminate the hidden transaction in your mind\n2. **No DEERing** — state your boundary cleanly without excuses or justification\n3. **Controlled Anger** — use precise, surgical social signal if she attempts to breach the limit\n\nWhy just this order: you must drop the covert contract first to get clear, state your boundary second, and apply controlled anger only if she aggressively pushes past the boundary.\n\nWhat people do instead: they harbor covert contracts for months, sulk, and then explode in uncalibrated rage.\n\nMindset: clear boundaries stated early prevent resentment explosions later.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You spent all Saturday cleaning the garage expecting her to reward you with enthusiasm, but she barely notices.",
+          steps: [
+            { front: "Killing Covert Contracts — You feel bitter resentment rising because she didn't praise your hard work.", back: "\"I clean the garage for my own standards, not to buy her sexual approval.\"" },
+            { front: "No DEERing — She asks why you're looking frustrated, and you're tempted to give a long speech.", back: "\"I wanted a clean garage, so I cleaned it. I'm taking a break now.\"" },
+            { front: "Controlled Anger — She snaps sarcastically \"Well, don't expect a medal for doing basic house work!\"", back: "\"Drop the sarcasm. I did the work cleanly; I won't tolerate snide remarks.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You agree to host her demanding relatives for a full week, expecting her to treat you with immense affection in return.",
+          steps: [
+            { front: "Killing Covert Contracts — You realize you agreed to host them purely as a covert contract to win her favor.", back: "\"I stop using family favors to buy affection. Hosting relatives must be a clean choice.\"" },
+            { front: "No DEERing — She asks why you're setting a limit of three days for their stay next time.", back: "\"Three days is the limit for hosting visitors in our home.\"" },
+            { front: "Controlled Anger — She shouts that you hate her family and are being a terrible husband.", back: "\"I love your family, but I will not be yelled at in my own kitchen. Lower your voice.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You listen to her rant about her boss for two hours every evening, expecting her to ask about your day or offer intimacy.",
+          steps: [
+            { front: "Killing Covert Contracts — You realize you've been playing her therapist hoping she'll appreciate your patience.", back: "\"I am not her emotional dumping ground. I give attention from desire, not obligation.\"" },
+            { front: "No DEERing — She gets annoyed when you stand up after twenty minutes to go work out.", back: "\"I've listened to your work recap, and now I am heading to my workout.\"" },
+            { front: "Controlled Anger — She snaps \"So my career problems are just boring to you?!\"", back: "\"I won't be guilt-tripped for taking care of my fitness. We are done with this tone.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Containing the Fire",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "**The Oak** → **Controlled Anger** → **No DEERing**.\n\nThis sequence trains you to stand unswayable during her emotional wave, deploy controlled anger if she crosses a line, and state your boundary without explaining.\n1. **The Oak** — absorb her initial emotional storm with unswayable physical presence\n2. **Controlled Anger** — use sharp, low-pitch anger to signal an explicit line if she becomes disrespectful\n3. **No DEERing** — deliver your final boundary concisely without giving excuses\n\nWhy just this order: you must absorb normal emotional storming as the Oak first; if disrespect occurs, deploy controlled anger; then state your boundary cleanly without opening a debate.\n\nWhat people do instead: they panic instantly, get defensive, and argue logic while shrinking physically.\n\nMindset: absorb the storm, enforce the line, hold the frame.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "During a vacation planning chat, she gets overwhelmed and starts shouting that you are ruining the trip.",
+          steps: [
+            { front: "The Oak — She slams her glass on the table and fumes with anger.", back: "(Breathe deeply into your chest, drop your shoulders, and hold unswayable, calm eye contact)." },
+            { front: "Controlled Anger — She points her finger at your face and yells \"You're a selfish jerk!\"", back: "\"Remove your finger from my face and stop shouting now.\"" },
+            { front: "No DEERing — She asks why you won't apologize for your hotel choices.", back: "\"I picked a great hotel within our budget. The reservation is set.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is two hours late getting ready for an important dinner, and blames you for not reminding her.",
+          steps: [
+            { front: "The Oak — She paces around frantically complaining that you didn't give her a 30-minute warning.", back: "(Stay centered in your seat, keep your posture upright, and breathe calmly)." },
+            { front: "Controlled Anger — She screams \"This is all your fault for sitting there doing nothing!\"", back: "\"Do not project your delay onto me. I was ready an hour ago.\"" },
+            { front: "No DEERing — She demands to know why you won't drive ten miles over the speed limit.", back: "\"I drive at a safe speed. We will arrive when we arrive.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She confronts you aggressively about a business expense, accusing you of hiding money from her.",
+          steps: [
+            { front: "The Oak — She stands over your desk waving bank statements and shouting.", back: "(Maintain an unswayable physical posture, rest your hands flat on the desk, and stay present)." },
+            { front: "Controlled Anger — She calls you a liar and a thief.", back: "\"I am neither a liar nor a thief. Speak to me with respect or leave my office.\"" },
+            { front: "No DEERing — She demands a line-by-line justification for every business receipt.", back: "\"I manage my business accounts responsibly. I offer no further breakdown.\"" },
           ]
         },
       ]
@@ -5581,7 +5937,7 @@ const multiStepCollections = {
           situation: "You are working on a difficult task (like fixing a fence or a car) and she is critiquing your method.",
           steps: [
             { front: "Leading Without Permission — she says \"You're doing that wrong, my dad did it differently.\".", back: "\"I'm handling this to my standard. It suits me just fine.\"" },
-            { front: "Rule Zero — she keeps prodding for you to \"explain\" your logic.", back: "(Continue working silently. Need nothing from her judgment.)" },
+            { front: "Rule Zero (Rational Egoism) — she keeps prodding for you to \"explain\" your logic.", back: "(Continue working silently. Need nothing from her judgment.)" },
             { front: "The Leader’s Vision — she finally asks why you're even doing it yourself.", back: "\"I'm building the skills to maintain our own world. I see us being completely autonomous in five years.\"" },
           ]
         },
@@ -5589,9 +5945,79 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You've bought a new, high-status wardrobe and she is testing your confidence in it.",
           steps: [
-            { front: "Rule Zero — she asks \"Why did you spend so much on these clothes?\".", back: "\"Because I decided I wanted to communicate my value more clearly. I like the look.\"" },
+            { front: "Rule Zero (Rational Egoism) — she asks \"Why did you spend so much on these clothes?\".", back: "\"Because I decided I wanted to communicate my value more clearly. I like the look.\"" },
             { front: "Push and Pull — she says \"I think it's a bit much for our neighborhood.\".", back: "(Smile) \"I know, you always did have a hard time keeping up with me. You look great too, though.\"" },
             { front: "The Leader’s Vision — she asks if you're trying to impress other women.", back: "\"I'm building the image of the man I intend to be. I want a world where we are the best-dressed couple in the room.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Unilateral Leadership",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "**Rule Zero (Rational Egoism)** → **The Leader’s Vision** → **Leading Without Permission**.\nThis sequence trains you to anchor in rational self-interest first, define a clear vision, and execute unilaterally without seeking consensus.\n1. **Rule Zero (Rational Egoism)** — ground yourself in self-respect and mission priority\n2. **The Leader’s Vision** — articulate the inspiring long-term direction\n3. **Leading Without Permission** — execute the move decisively without permission-seeking\n\nWhy just this order: you must prioritize your own frame first, map the destination second, and execute the action third.\n\nWhat people do instead: they ask for consensus, debate endlessly, and stall in indecision.\n\nMindset: true leadership moves from internal clarity to decisive execution.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You recognize that staying in your current city is stalling your career growth and family environment.",
+          steps: [
+            { front: "Rule Zero (Rational Egoism) — You feel the pleaser impulse to stay quiet and accept mediocrity.", back: "\"My mission and growth come first. I won't sacrifice our future for comfort.\"" },
+            { front: "The Leader’s Vision — She asks why you're looking at property listings in another state.", back: "\"We are moving to Texas to lower taxes, secure better land, and double our space.\"" },
+            { front: "Leading Without Permission — She hesitates and says she isn't sure about packing.", back: "\"I've scheduled the realtor for Saturday and set our moving timeline for June.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You decide to leave your corporate job to build your own business venture.",
+          steps: [
+            { front: "Rule Zero (Rational Egoism) — You feel fear about risking her immediate approval.", back: "\"I am my own primary authority. Building my own enterprise is my priority.\"" },
+            { front: "The Leader’s Vision — She panics about losing the steady corporate paycheck.", back: "\"This business gives us true asset ownership and unlimited income ceiling in three years.\"" },
+            { front: "Leading Without Permission — She asks if you should wait another year before resigning.", back: "\"I submitted my resignation today. We launch the new firm on Monday.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You notice your health and physique slipping, affecting your energy and authority.",
+          steps: [
+            { front: "Rule Zero (Rational Egoism) — You realize you've been putting everyone else's schedule before your health.", back: "\"My physical foundation is non-negotiable. I prioritize my body first.\"" },
+            { front: "The Leader’s Vision — She asks why you're changing the entire household meal plan.", back: "\"We are building athletic physique, high energy, and longevity for our family.\"" },
+            { front: "Leading Without Permission — She complains about throwing away the pantry junk food.", back: "\"I cleared out the junk food today and hired a personal trainer for six am.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Calibrated Push",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "**Rule Zero (Rational Egoism)** → **Push and Pull** → **The Leader’s Vision**.\nThis sequence trains you to hold your locus of control, deploy dynamic tension to revive polarity, and anchor the excitement in your overall vision.\n1. **Rule Zero (Rational Egoism)** — anchor your worth independent of her mood\n2. **Push and Pull** — withdraw attention to create space, then offer warm, high-status presence\n3. **The Leader’s Vision** — channel the restored attraction into your shared long-term goal\n\nWhy just this order: you must be self-grounded first, reset relational polarity second, and point the restored energy toward your vision third.\n\nWhat people do instead: they chase her when she pulls away, killing attraction and losing direction.\n\nMindset: polarity requires space, authority, and an exciting destination.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "The relationship feels comfortable, predictable, and devoid of sexual spark.",
+          steps: [
+            { front: "Rule Zero (Rational Egoism) — You feel needy for her attention and validation.", back: "\"My worth comes from my mission, not from her immediate romantic validation.\"" },
+            { front: "Push and Pull — She acts indifferent during dinner on Friday night.", back: "(Focus intensely on your work and gym, then take her on an unannounced weekend trip)." },
+            { front: "The Leader’s Vision — She opens up and smiles as you drive toward the coast.", back: "\"This weekend is just a preview of the adventure-filled life we are building together.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She makes a sarcastic remark about your ambition in front of her friends.",
+          steps: [
+            { front: "Rule Zero (Rational Egoism) — You feel a wave of anger and desire to DEER.", back: "\"I am unswayable. Her snide remark does not alter my value or direction.\"" },
+            { front: "Push and Pull — She looks to see if she got a rise out of you.", back: "(Hold calm, cool silence and step away, then return hours later with warm, magnetic energy)." },
+            { front: "The Leader’s Vision — She apologizes quietly and asks about your upcoming project.", back: "\"My energy goes into building our empire. I focus only on what expands our vision.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You realize you've been spending every evening watching TV together in passive comfort.",
+          steps: [
+            { front: "Rule Zero (Rational Egoism) — You catch yourself falling into the comfortable pleaser trap.", back: "\"Comfort is the enemy of my mission. I refuse to drift in passive routine.\"" },
+            { front: "Push and Pull — She asks why you're closing your laptop and putting on a tailored jacket.", back: "\"I'm heading out for a business meeting. I'll see you late tonight, Love.\"" },
+            { front: "The Leader’s Vision — She waits up for you and asks to hear about your plans.", back: "\"We are stepping up our lifestyle. I'm building our legacy step by step.\"" },
           ]
         },
       ]

@@ -6174,6 +6174,134 @@ const memorizeCollections = {
         { q: "What is \"Mental Point of Origin\"?", a: "The internal locus of control where your own interests and values dictate your decisions.", bundle: 'pro' },
         { q: "What is the \"OODA Loop\"?", a: "Observe, Orient, Decide, Act—a process for rapid calibration and problem-solving.", bundle: 'pro' },
         { q: "What is \"Rule Zero\"?", a: "Male-centric sexual strategy and a positive male identity.", bundle: 'pro' },
+        { q: "Why is a single man's Frame rarely tested?", a: "Because he can leave when pressured; a relationship fixes the pillar in place under constant resistance.", bundle: 'pro' },
+        { q: "What is the relationship between work, self-respect, options, and authority?", a: "Work builds self-respect, self-respect creates options, options create authority, authority creates expectations, and expectations create investment.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "The foundational principles of Praxeology Volume 1: Frame by Rian Stone.\n1. **Mental Point of Origin** — internal locus of control\n2. **The Physical Signal** — physical embodiment and style\n3. **The OODA Loop** — rapid observation and calibration\n4. **Field Reporting** — objective after-action analysis\nThese four strategies form the base pillars that support your personal Vision.",
+      cards: [
+        { q: "What are the four core strategies in this pack?", a: "Mental Point of Origin, The Physical Signal, The OODA Loop, and Field Reporting.", bundle: 'free' },
+        { q: "What is Praxeology?", a: "The practical study of purposeful human action and intersexual dynamics.", bundle: 'free' },
+        { q: "What is the core definition of Frame?", a: "Frame is how you conceptualize, process, and react to the world around you; it's who you are.", bundle: 'free' },
+        { q: "Why is Frame described as a tetrahedron?", a: "Three base pillars (Physical, Intellectual, Emotional) support the top peak (Vision).", bundle: 'free' },
+        { q: "What is Rule Zero?", a: "Male-centric sexual strategy and the commitment to a positive male identity.", bundle: 'free' },
+        { q: "What is the difference between an ideology and a praxeology?", a: "Ideology prescribes what should be; praxeology studies what actually works in practice.", bundle: 'pro' },
+        { q: "Why do Nice Guy covert contracts destroy attraction?", a: "They elevate the woman to an identity judge, turning the man into a pleasing dependent.", bundle: 'pro' },
+        { q: "What is \"the Oak\" analogy in Frame?", a: "Her emotional storms are wind; you are the Oak that sways slightly but remains deeply rooted.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mental Point of Origin",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Mental Point of Origin\"?", a: "Defining your own interests, values, and desires as the primary basis for your choices.", bundle: 'free' },
+        { q: "What does \"Mental Point of Origin\" prevent?", a: "Seeking external validation and making choices to appease others.", bundle: 'free' },
+        { q: "What is the fundamental question of Point of Origin?", a: "\"What do I want in this situation, and what is in this for me?\"", bundle: 'free' },
+        { q: "What is Rational Egoism in the context of Frame?", a: "Investing in yourself first so you have actual value to offer others.", bundle: 'free' },
+        { q: "Why is \"keeping the peace\" a trap for men?", a: "Because caving to avoid conflict sacrifices your frame and destroys her respect for you.", bundle: 'free' },
+        { q: "How does Point of Origin affect your Assertive Bill of Rights?", a: "It establishes that you are your own primary judge, with no need to DEER.", bundle: 'pro' },
+        { q: "Why does a woman lose respect for a man who seeks her permission?", a: "It forces her into the maternal/masculine role, killing polarity and sexual desire.", bundle: 'pro' },
+        { q: "What is the relationship between options and authority?", a: "Work creates self-respect, self-respect creates options, and options create authority.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Physical Signal",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"The Physical Signal\"?", a: "Deliberately managing your body, posture, fitness, grooming, and clothing to project authority.", bundle: 'free' },
+        { q: "Why does style communicate clearer than words?", a: "Clothing and physique make an instant introduction before you ever open your mouth.", bundle: 'free' },
+        { q: "What are the three elements of physical presentation?", a: "Hygiene/grooming, fitness/nutrition, and purposeful style.", bundle: 'free' },
+        { q: "Why is \"dressing comfortably\" in shabby clothes a mistake?", a: "It signals a lack of self-care and tells the world you don't respect the man in the mirror.", bundle: 'free' },
+        { q: "What are the three style archetypes coined by Tanner Guzy?", a: "Rugged, Refined, and Rakish.", bundle: 'free' },
+        { q: "What is the function of the Physical Pillar in the Frame tetrahedron?", a: "It builds physical confidence and hormonal baseline (testosterone) to ground your emotional state.", bundle: 'pro' },
+        { q: "Why is \"not communicating\" through style still communicating?", a: "Neglecting your appearance signals passivity, low status, and low self-respect.", bundle: 'pro' },
+        { q: "What is the rule about grooming discipline?", a: "Consistent haircuts and hygiene demonstrate that you care for the man in the mirror daily.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The OODA Loop",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"The OODA Loop\"?", a: "Rapidly calibrating your actions through four steps: Observe, Orient, Decide, Act.", bundle: 'free' },
+        { q: "Who developed the OODA Loop model?", a: "US Air Force strategist John Boyd.", bundle: 'free' },
+        { q: "What does \"Orient\" mean in the OODA Loop?", a: "Seeing reality as it actually is, without ego delusions, and applying proper mental models.", bundle: 'free' },
+        { q: "Why is rapid iteration crucial in relationships?", a: "Faster OODA loops build calibration, allowing you to fix mistakes before they turn toxic.", bundle: 'free' },
+        { q: "What is the \"Hamster\" in intersexual dynamics?", a: "A woman's emotional feedback loop of anxiety when she senses a lack of masculine frame.", bundle: 'free' },
+        { q: "What is DEERing, and why should you avoid it?", a: "Defend, Excuse, Explain, Rationalize—submissive moves that fail her frame test.", bundle: 'pro' },
+        { q: "What is \"amused mastery\"?", a: "Responding to emotional tests with playful, unswayable calm rather than getting angry.", bundle: 'pro' },
+        { q: "What is controlled anger in the OODA Loop?", a: "Using anger as a social signal to enforce boundaries, without losing emotional control.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Field Reporting",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Field Reporting\"?", a: "Documenting your interactions and choices objectively in the past tense to bypass ego.", bundle: 'free' },
+        { q: "Why must field reports be written in the past tense?", a: "The past tense forces you to report actual events rather than emotional venting or future fantasies.", bundle: 'free' },
+        { q: "What is the \"Protagonist Shift\" in field reporting?", a: "Writing about what you did and said, rather than focusing on her actions or complaining.", bundle: 'free' },
+        { q: "What is a \"Batman Origin Story\" in field reporting?", a: "Writing an excessively long backstory to justify or excuse a current failure.", bundle: 'free' },
+        { q: "Why should you leave morality at the door when field reporting?", a: "Because field reporting is a tool for utility and facts, not for self-flagellation or absolution.", bundle: 'free' },
+        { q: "Why does the human brain rewrite memories after conflict?", a: "Selective memory and ego protection alter facts to make you look like a blameless victim.", bundle: 'pro' },
+        { q: "How do field reports help you spot covert contracts?", a: "Reviewing your past reports reveals patterns of pleasing done in expectation of a reward.", bundle: 'pro' },
+        { q: "What is the benefit of sharing field reports anonymously?", a: "It removes social niceties and allows experienced men to give you cold, objective feedback.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n• **The Calibration Kit** — internal state: do you check point of origin, run an OODA loop, or field report?\n• **Command and Signal** — authority: do you anchor point of origin, project physical signal, or calibrate?\n• **All Four Strategies** — full integration: choosing between all four strategies across real-world pressure.\nOne question decides nearly all of it: what phase of action or reflection are you currently in?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "The Calibration Kit, Command and Signal, and All Four Strategies.", bundle: 'pro' },
+        { q: "What does \"The Calibration Kit\" make you choose between?", a: "Point of Origin (internal values), OODA Loop (tactical calibration), and Field Reporting (after-action analysis).", bundle: 'pro' },
+        { q: "What does \"Command and Signal\" focus on?", a: "Balancing internal locus of control with physical embodiment and real-time calibration.", bundle: 'pro' },
+        { q: "When do you choose \"The Physical Signal\" over \"Mental Point of Origin\"?", a: "When the immediate need is non-verbal presence, posture, grooming, or style authority.", bundle: 'pro' },
+        { q: "When do you choose \"Field Reporting\"?", a: "After an interaction, when you need objective documentation to audit your choices.", bundle: 'pro' },
+        { q: "What is the main trap in Collections?", a: "Trying to explain yourself verbally when your physical signal or internal frame has collapsed.", bundle: 'pro' },
+        { q: "What separates \"The OODA Loop\" from \"Field Reporting\"?", a: "The OODA Loop happens in real time; Field Reporting happens after the dust settles.", bundle: 'pro' },
+        { q: "Why does \"All Four Strategies\" include all four moves?", a: "Because mastering Frame requires integrating physical presentation, internal alignment, real-time action, and after-action review.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n1. **The Unswayable Lead** — OODA Loop (Observe) → Point of Origin → OODA Loop (Act) → Field Reporting\n2. **The Frame Reset** — The Physical Signal → Mental Point of Origin → The OODA Loop\n3. **Calibrated Action** — Mental Point of Origin → The OODA Loop → Field Reporting\nIn each one, the order of the steps is what re-establishes safety and polarity.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Unswayable Lead, The Frame Reset, and Calibrated Action.", bundle: 'pro' },
+        { q: "What is the order in \"The Unswayable Lead\"?", a: "Observe (OODA), Point of Origin (Internal Check), Act (OODA), and Field Reporting.", bundle: 'pro' },
+        { q: "Why does \"The Frame Reset\" start with \"The Physical Signal\"?", a: "Because grounding your physical posture and breathing must precede declaring internal boundaries.", bundle: 'pro' },
+        { q: "What is the order in \"The Frame Reset\"?", a: "The Physical Signal, then Mental Point of Origin, and finally The OODA Loop.", bundle: 'pro' },
+        { q: "What is the order in \"Calibrated Action\"?", a: "Mental Point of Origin, then The OODA Loop, and finally Field Reporting.", bundle: 'pro' },
+        { q: "Why does \"Field Reporting\" come last in \"Calibrated Action\"?", a: "Because objective after-action analysis must occur after the interaction is complete.", bundle: 'pro' },
+        { q: "What does \"The Frame Reset\" train you to do?", a: "Stop reactive collapse, reset posture, declare internal boundaries, and execute a calibrated move.", bundle: 'pro' },
+        { q: "What does \"Calibrated Action\" train you to do?", a: "Anchor in your values, execute without DEERing, and audit your performance objectively.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n• **Seeking the Sign** — when you lean in or dance for her approval\n• **The Hamster Wheel** — when she blasts you with emotional storms or accusations\n• **Nice Guy Relapses** — when you feel the urge to DEER, lie, or apologize\n• **Physical Neglect** — when your style, posture, or fitness drifts\n• **Ego and Paranoia** — when your ego invents backstories or shifts goalposts\nEach category organizes by problem type rather than strategy.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Seeking the Sign, The Hamster Wheel, Nice Guy Relapses, Physical Neglect, and Ego and Paranoia.", bundle: 'pro' },
+        { q: "How do you handle \"Seeking the Sign\"?", a: "By recognizing approval-seeking behavior and returning to Mental Point of Origin.", bundle: 'pro' },
+        { q: "What is the core danger during \"The Hamster Wheel\"?", a: "Getting hooked into DEERing or logical debates during her emotional storm.", bundle: 'pro' },
+        { q: "How do you resolve \"Nice Guy Relapses\"?", a: "By stopping apologies, speaking the truth cleanly, and auditing covert contracts.", bundle: 'pro' },
+        { q: "How do you handle \"Physical Neglect\"?", a: "By taking immediate ownership of your physical pillar—grooming, style, and lifting routine.", bundle: 'pro' },
+        { q: "How do you overcome \"Ego and Paranoia\"?", a: "By using the OODA Loop to see reality objectively and Field Reporting to cut out drama.", bundle: 'pro' },
+        { q: "What is she really testing during \"The Hamster Wheel\"?", a: "Whether your frame is solid enough to contain her intensity without collapsing or getting angry.", bundle: 'pro' },
+        { q: "Why is DEERing a major mistake in challenges?", a: "Because defending yourself communicates anxiety and submits to her as your judge.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n• **You Belong to You** — rational egoism and self-ownership\n• **Validation** — your worth comes from what you build, not her approval\n• **Rationalization** — you do not need to defend or excuse your choices\n• **Covers and Excuses** — there are no excuses, only choices and consequences\nEach mindset shifts you from external validation to internal authority.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "You Belong to You, Validation, Rationalization, and Covers and Excuses.", bundle: 'pro' },
+        { q: "What does \"You Belong to You\" teach?", a: "That you are your own primary judge, and your frame belongs to you.", bundle: 'pro' },
+        { q: "What is the core block in the \"Validation\" mindset?", a: "Believing that your worth is determined by her immediate mood or approval.", bundle: 'pro' },
+        { q: "What is the core block in the \"Rationalization\" mindset?", a: "Believing that if you explain your logic enough, she will agree with your boundary.", bundle: 'pro' },
+        { q: "What is the core block in the \"Covers and Excuses\" mindset?", a: "Believing that your circumstances or wife prevent you from building frame.", bundle: 'pro' },
+        { q: "Why is \"keeping the peace\" a toxic mindset?", a: "It trades long-term respect and polarity for short-term avoidance of conflict.", bundle: 'pro' },
+        { q: "What is Rational Egoism?", a: "Investing in yourself first so you have actual, authentic value to offer the world.", bundle: 'pro' },
+        { q: "What is the ultimate goal of these four mindsets?", a: "To shift your baseline from pleasing dependent to grounded, autonomous leader.", bundle: 'pro' },
       ]
     },
   ],
@@ -6190,6 +6318,134 @@ const memorizeCollections = {
         { q: "What are the two axes of \"Closed Communication\"?", a: "Status (Higher/Lower) and Harmony (Cooperative/Adversarial).", bundle: 'pro' },
         { q: "Why is \"Arguing with Women\" a categorical error?", a: "Men argue for factual truth; women argue for status and moral objectivity.", bundle: 'pro' },
         { q: "What is \"Kayfabe\"?", a: "Theater being presented as real where the audience (and actor) suspends disbelief.", bundle: 'pro' },
+        { q: "What is Kayfabe in intersexual dynamics?", a: "The staged performance of frame and authority that creates the safe container for genuine emotion.", bundle: 'pro' },
+        { q: "Why is \"results-based morality\" essential in praxeology?", a: "Because evaluating communication by real-world relational outcomes prevents self-righteous delusion.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "The foundational principles of Praxeology Volume 1, Part 2: Mastering Subtext by Rian Stone.\n• **Status/Harmony Calibration** — navigating the four quadrants of relational posture\n• **The Medium is the Message** — recognizing how delivery channels communicate subtext\n• **Whisper’s Rule** — addressing frame rather than repeating words\n• **Gratitude Frame-Check** — holding frame through praise and appreciation\n\nMastering subtext shifts you from surface arguments into grounded leadership.",
+      cards: [
+        { q: "What are the four core strategies in this pack?", a: "Status/Harmony Calibration, The Medium is the Message, Whisper’s Rule, and Gratitude Frame-Check.", bundle: 'free' },
+        { q: "What is the central thesis of Mastering Subtext?", a: "Intersexual communication happens primarily through subtext, emotional tone, and frame, not literal facts.", bundle: 'free' },
+        { q: "What are the two axes of the Leadership Quadrant?", a: "Status (High/Low) and Harmony (High/Low).", bundle: 'free' },
+        { q: "What defines the \"Ideal Leader\" quadrant?", a: "High Status combined with High Harmony: unswayable authority paired with warmth and inclusion.", bundle: 'free' },
+        { q: "What defines the \"Dictator/Bully\" quadrant?", a: "High Status combined with Low Harmony: rigid control and harshness without emotional warmth.", bundle: 'free' },
+        { q: "What defines the \"Pleaser/Nice Guy\" quadrant?", a: "Low Status combined with High Harmony: sycophantic approval-seeking that sacrifices authority.", bundle: 'pro' },
+        { q: "What defines the \"Loser/Bitter\" quadrant?", a: "Low Status combined with Low Harmony: pouting, withdrawal, and resentful complaining.", bundle: 'pro' },
+        { q: "Why is literal communication dangerous in relationship conflict?", a: "Because debating surface facts misses the emotional storm driving her behavior.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Status/Harmony Calibration",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Status/Harmony Calibration\"?", a: "Adjusting your status and harmony signals to maintain the High Status / High Harmony posture.", bundle: 'free' },
+        { q: "Why is High Status / High Harmony the ideal state for a leader?", a: "It provides unswayable safety through authority while inviting warmth and intimacy through inclusion.", bundle: 'free' },
+        { q: "What happens when a man drops into Low Status / High Harmony?", a: "He becomes a Nice Guy pleaser, losing sexual attraction and respect.", bundle: 'free' },
+        { q: "What happens when a man drops into High Status / Low Harmony?", a: "He becomes a dictatorial bully, causing his partner to shut down or build emotional walls.", bundle: 'free' },
+        { q: "What happens when a man drops into Low Status / Low Harmony?", a: "He retreats into pouting, cold shoulders, and passive-aggressive resentment.", bundle: 'free' },
+        { q: "How do you shift out of Dictator mode when you notice you're being too harsh?", a: "Lower your voice tone, increase physical warmth, and invite her into the solution.", bundle: 'pro' },
+        { q: "How do you shift out of Pleaser mode when you notice you're caving?", a: "Re-anchor in your internal boundary, stop apologizing, and state your decision clearly.", bundle: 'pro' },
+        { q: "Why does High Harmony require High Status to function?", a: "Because warmth from a weak man feels like pleading, while warmth from a strong man feels like safety.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Medium is the Message",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"The Medium is the Message\"?", a: "Reading and choosing the delivery channel, tone, and actions that carry the real subtext.", bundle: 'free' },
+        { q: "Who originally coined the phrase \"The medium is the message\"?", a: "Media theorist Marshall McLuhan.", bundle: 'free' },
+        { q: "Why is texting a poor medium for resolving emotional conflict?", a: "Because text lacks voice tone, body language, and physical presence, inflating anxiety.", bundle: 'free' },
+        { q: "What communicates more subtext than your words during a talk?", a: "Your vocal pitch, pace, posture, eye contact, and breathing rate.", bundle: 'free' },
+        { q: "How do physical actions serve as a medium?", a: "Taking charge of a task or pulling her close communicates presence far louder than verbal promises.", bundle: 'free' },
+        { q: "What is the rule for high-stakes emotional topics?", a: "Always move them to high-bandwidth, in-person channels where full presence can regulate the interaction.", bundle: 'pro' },
+        { q: "How does rapid, high-pitched speech alter your medium?", a: "It signals social anxiety and low status, causing her nervous system to feel unsafe.", bundle: 'pro' },
+        { q: "Why is silence sometimes the most powerful medium?", a: "Calm, grounded silence communicates unshakeable frame and stops logical debating.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Whisper’s Rule",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Whisper’s Rule\"?", a: "Recognizing she heard your words, so address the underlying frame instead of repeating yourself.", bundle: 'free' },
+        { q: "What is the origin statement of Whisper’s Rule?", a: "\"She can hear you, she just doesn't care.\"", bundle: 'free' },
+        { q: "Why do men fall into the trap of repeating themselves louder?", a: "Because they mistakenly believe she didn't hear or understand the literal words.", bundle: 'free' },
+        { q: "What does repeating yourself communicate at the subtext level?", a: "It communicates anxiety, desperation, and a lack of authority.", bundle: 'free' },
+        { q: "What should you do instead of repeating your boundary?", a: "Stop talking, hold a steady frame, and execute the physical or structural consequence cleanly.", bundle: 'free' },
+        { q: "How does Whisper's Rule stop DEERing?", a: "It cuts off the urge to Defend, Excuse, Explain, or Rationalize when she pushes back.", bundle: 'pro' },
+        { q: "How does Whisper's Rule apply to \"Womanese\"?", a: "It directs your attention past her dramatic surface statements to her underlying emotional state.", bundle: 'pro' },
+        { q: "What is the somatic response when applying Whisper's Rule?", a: "Breathe deeply, hold warm eye contact, and let the tension settle without filling the silence.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Gratitude Frame-Check",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Gratitude Frame-Check\"?", a: "Evaluating whether praise or criticism is a frame test, and receiving it with grounded composure.", bundle: 'free' },
+        { q: "Why can praise be a frame test?", a: "Because overly patronizing praise can position her as the approving mother judging a good boy.", bundle: 'free' },
+        { q: "What is the \"Good Boy\" trap when receiving compliments?", a: "Seeking validation and glowing like a child who just received a gold star from his mother.", bundle: 'free' },
+        { q: "How should a high-status man receive genuine appreciation?", a: "With calm warmth, eye contact, and a simple \"Thank you,\" without getting needy.", bundle: 'free' },
+        { q: "How should you handle backhanded compliments or patronizing praise?", a: "Reframe the subtext playfully or hold an unswayable, amused posture.", bundle: 'free' },
+        { q: "Why is self-deprecating humor a mistake when praised?", a: "It deflects the compliment weakly and signals low self-respect.", bundle: 'pro' },
+        { q: "What does \"holding frame through appreciation\" mean?", a: "Staying centered in your own worth regardless of whether she praises or criticizes you.", bundle: 'pro' },
+        { q: "How does receiving gratitude correctly maintain sexual polarity?", a: "It keeps you in the grounded masculine lead rather than dropping into a pleasing subordinate.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n• **Navigating Womanese** — decoding emotional statements into subtext\n• **The Leadership Quadrant** — balancing status and harmony in real time\n• **Subtext in Action** — choosing between all four strategies across daily interaction\n\nOne question decides nearly all of it: what level of subtext or calibration is required?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Navigating Womanese, The Leadership Quadrant, and Subtext in Action.", bundle: 'pro' },
+        { q: "What is the focus of \"Navigating Womanese\"?", a: "Translating emotional statements into their true subtext and responding cleanly.", bundle: 'pro' },
+        { q: "What is the focus of \"The Leadership Quadrant\"?", a: "Calibrating status and harmony to stay in the High Status / High Harmony posture.", bundle: 'pro' },
+        { q: "What does \"Subtext in Action\" make you choose between?", a: "All four strategies across complex, real-world relational situations.", bundle: 'pro' },
+        { q: "When do you choose \"The Medium is the Message\" over \"Whisper’s Rule\"?", a: "When the primary issue is the delivery channel (like texting) rather than repeating words.", bundle: 'pro' },
+        { q: "When do you choose \"Gratitude Frame-Check\"?", a: "When she offers praise or criticism and you need to hold frame without getting needy.", bundle: 'pro' },
+        { q: "Why is \"The Leadership Quadrant\" foundational for Collections?", a: "Because calibrating status and harmony ensures your subtext communicates leadership rather than weakness.", bundle: 'pro' },
+        { q: "What is the main trap in Collections?", a: "Getting hooked into surface debates and trying to win arguments with literal logic.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n1. **From Hamster to Harmony** — Status/Harmony Calibration → Whisper’s Rule → Gratitude Frame-Check\n2. **Decoding the Medium** — The Medium is the Message → Whisper’s Rule → Status/Harmony Calibration\n3. **Grounded Appreciation** — Gratitude Frame-Check → Whisper’s Rule → Status/Harmony Calibration\n\nIn each sequence, the order of the steps is what re-establishes safety and polarity.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "From Hamster to Harmony, Decoding the Medium, and Grounded Appreciation.", bundle: 'pro' },
+        { q: "What is the order in \"From Hamster to Harmony\"?", a: "Status/Harmony Calibration, then Whisper's Rule, and finally Gratitude Frame-Check.", bundle: 'pro' },
+        { q: "Why does \"Status/Harmony Calibration\" come first in \"From Hamster to Harmony\"?", a: "Because establishing a High Status / High Harmony posture must precede addressing her emotional storm.", bundle: 'pro' },
+        { q: "What is the order in \"Decoding the Medium\"?", a: "The Medium is the Message, then Whisper's Rule, and finally Status/Harmony Calibration.", bundle: 'pro' },
+        { q: "Why does \"The Medium is the Message\" come first in \"Decoding the Medium\"?", a: "Because you must recognize the wrong channel or tone before you can stop debating literal facts.", bundle: 'pro' },
+        { q: "What is the order in \"Grounded Appreciation\"?", a: "Gratitude Frame-Check, then Whisper's Rule, and finally Status/Harmony Calibration.", bundle: 'pro' },
+        { q: "What does \"Grounded Appreciation\" train you to do?", a: "Receive appreciation without pleaser traps and maintain high-status warmth.", bundle: 'pro' },
+        { q: "Why do all three sequences lead to \"Status/Harmony Calibration\"?", a: "Because the ultimate goal of every sequence is restoring grounded, warm masculine leadership.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n• **The Content Trap** — getting hooked into debating surface facts and logic\n• **Womanese Translation** — translating emotional attacks into bids for presence\n• **Low-Status Traps** — slipping into pleaser, dictatorial, or pouting behavior\n• **Frame Validation** — seeking praise or getting unsettled by frame tests\n• **Channel Warfare** — fighting over text messages or inappropriate mediums\n\nEach category organizes by problem type rather than strategy.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Content Trap, Womanese Translation, Low-Status Traps, Frame Validation, and Channel Warfare.", bundle: 'pro' },
+        { q: "How do you handle \"The Content Trap\"?", a: "By recognizing DEERing and shifting focus from surface facts to emotional subtext.", bundle: 'pro' },
+        { q: "What is the core move during \"Womanese Translation\"?", a: "Bypassing literal attacks using Whisper's Rule to address her underlying emotional state.", bundle: 'pro' },
+        { q: "How do you resolve \"Low-Status Traps\"?", a: "By adjusting status and harmony signals to return to High Status / High Harmony leadership.", bundle: 'pro' },
+        { q: "How do you handle \"Frame Validation\"?", a: "By accepting praise warmly without becoming dependent on her approval or dropping into pleaser mode.", bundle: 'pro' },
+        { q: "How do you resolve \"Channel Warfare\"?", a: "By stopping text arguments immediately and moving emotional topics to in-person presence.", bundle: 'pro' },
+        { q: "What is she really testing in these challenges?", a: "Whether your frame is solid enough to decode subtext without getting triggered into arguments.", bundle: 'pro' },
+        { q: "Why is text arguing a major mistake in challenges?", a: "Because text lacks non-verbal warmth and inflates anxiety, escalating conflict.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four mindsets you practise in this pack:\n• **Authentic Kayfabe** — performing frame as a deliberate act of leadership\n• **Morality is Results** — evaluating communication by relational outcomes, not intent\n• **Subtext** — decoding the emotional medium under surface words\n• **Status** — balancing unswayable authority with high-harmony warmth\n\nIn every one, the belief that gets in the way feels like safety from the inside.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Authentic Kayfabe, Morality is Results, Subtext, and Status.", bundle: 'pro' },
+        { q: "What does \"Authentic Kayfabe\" teach you?", a: "That deliberate performance of frame is a gift of stability and leadership for the relationship.", bundle: 'pro' },
+        { q: "What is the core truth behind \"Morality is Results\"?", a: "That noble intentions mean nothing if your communication produces emotional chaos.", bundle: 'pro' },
+        { q: "What is the core block in the \"Subtext\" mindset?", a: "Believing that relationship issues can be solved by explaining literal facts and logic.", bundle: 'pro' },
+        { q: "What is the core block in the \"Status\" mindset?", a: "Believing that authority requires being harsh, aggressive, or dictatorial.", bundle: 'pro' },
+        { q: "Why is \"winning the argument\" a toxic goal?", a: "Because proving yourself right with surface logic destroys polarity and emotional intimacy.", bundle: 'pro' },
+        { q: "What is the definition of true High Status?", a: "Unswayable, calm authority that needs no aggression or validation to stand firm.", bundle: 'pro' },
+        { q: "What is the ultimate goal of these four mindsets?", a: "To shift your communication from surface debates to grounded subtext leadership.", bundle: 'pro' },
       ]
     },
   ],
@@ -6206,6 +6462,134 @@ const memorizeCollections = {
         { q: "What is the \"Emasculation Paradox\"?", a: "The idea that submitting to her to avoid conflict actually makes her contempt and conflict more likely.", bundle: 'pro' },
         { q: "What is \"Negative Assertion\"?", a: "Admitting a factual mistake without the submissive baggage of an apology or guilt.", bundle: 'pro' },
         { q: "What is \"Assertive Right #10\"?", a: "You have the right to say, \"I don't care.\".", bundle: 'pro' },
+        { q: "What is the primary goal of Assertive Defense?", a: "To maintain your personal frame and boundaries without falling into DEERing or aggression.", bundle: 'pro' },
+        { q: "Why does DEERing destroy frame?", a: "Because explaining and defending treats the other person as your judge, submitting your authority to them.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "The foundational principles of Praxeology Volume 1, Part 3: Assertive Defense by Rian Stone.\n• **Broken Record** — calm repetition of your stance\n• **Negative Inquiry** — probing vague criticism\n• **Negative Assertion** — accepting mistakes cleanly\n• **Fogging** — agreeing with truth or probability\nThese four verbal tools protect your frame from manipulation and emotional pressure.",
+      cards: [
+        { q: "What are the four core strategies in this pack?", a: "Broken Record, Negative Inquiry, Negative Assertion, and Fogging.", bundle: 'free' },
+        { q: "What is Manuel Smith's book that inspired these assertive techniques?", a: "\"When I Say No, I Feel Guilty.\"", bundle: 'free' },
+        { q: "What does DEER stand for in praxeology?", a: "Defend, Excuse, Explain, Rationalize.", bundle: 'free' },
+        { q: "Why is DEERing considered a low-status move?", a: "Because it treats the other person as your judge and seeks their approval for your choices.", bundle: 'free' },
+        { q: "What is the Bill of Assertive Rights?", a: "A set of psychological rights establishing that you are the ultimate judge of your own behavior.", bundle: 'free' },
+        { q: "What is the difference between assertive communication and aggressive communication?", a: "Assertiveness defends your boundaries calmly; aggressiveness attacks the other person's frame.", bundle: 'pro' },
+        { q: "Why does accepting a mistake through Negative Assertion disarm an attacker?", a: "Because it strips away their ability to use guilt or shame against you.", bundle: 'pro' },
+        { q: "What is the core rule when applying Assertive Defense tools?", a: "Keep your tone calm, steady, and low-pitch, without anger or sarcasm.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Broken Record",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Broken Record\"?", a: "Calmly and repeatedly stating your decision or boundary using the same concise words.", bundle: 'free' },
+        { q: "Why does Broken Record work against emotional pressure?", a: "Because it prevents you from being baited into new arguments or providing DEER excuses.", bundle: 'free' },
+        { q: "What should you avoid doing while using Broken Record?", a: "Adding new explanations, raising your voice tone, or getting visibly annoyed.", bundle: 'free' },
+        { q: "When is Broken Record the most effective tool to choose?", a: "When facing persistent nagging, unreasonable demands, or coercion.", bundle: 'free' },
+        { q: "How many times might you need to repeat your stance in Broken Record?", a: "As many times as necessary until the other person realizes your boundary is unswayable.", bundle: 'free' },
+        { q: "What is the phrase structure for a good Broken Record statement?", a: "Acknowledge their desire briefly, then state your unswayable boundary cleanly.", bundle: 'pro' },
+        { q: "How does Broken Record protect your emotional energy?", a: "It eliminates the need to invent new logical arguments or debate surface points.", bundle: 'pro' },
+        { q: "Why should you keep Broken Record statements short?", a: "Because long statements provide extra words for the other person to attack or debate.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Negative Inquiry",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Negative Inquiry\"?", a: "Asking open-ended questions to prompt hostile or vague criticism to be specific.", bundle: 'free' },
+        { q: "Why does Negative Inquiry disarm emotional insults?", a: "Because it forces the critic to move from emotional venting to concrete facts.", bundle: 'free' },
+        { q: "What question form does Negative Inquiry typically use?", a: "\"What specifically about [topic] bothers you?\" or \"What about my action felt [label]?\"", bundle: 'free' },
+        { q: "What should your voice tone be during Negative Inquiry?", a: "Calm, curious, and neutral, without sarcasm or defensive biting.", bundle: 'free' },
+        { q: "What happens if the critic has no real substance behind their attack?", a: "Their emotional argument collapses because they cannot provide specific facts.", bundle: 'free' },
+        { q: "How does Negative Inquiry stop you from taking attacks personally?", a: "It shifts your posture from defensive target to objective investigator.", bundle: 'pro' },
+        { q: "What should you do after they answer your Negative Inquiry with a real fact?", a: "Use Negative Assertion if true, or Fogging if it's a matter of probability.", bundle: 'pro' },
+        { q: "Why is Negative Inquiry effective against manipulative shaming labels?", a: "Because demanding specific evidence exposes the empty nature of the insult.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Negative Assertion",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Negative Assertion\"?", a: "Calmly and directly accepting your real errors or flaws without groveling or apologizing.", bundle: 'free' },
+        { q: "Why does Negative Assertion surprise critics?", a: "Because people expect you to deny the error or offer defensive excuses.", bundle: 'free' },
+        { q: "What phrase structure does Negative Assertion use?", a: "\"You're right, I made a mistake on [x]. That was my oversight.\"", bundle: 'free' },
+        { q: "What is the difference between Negative Assertion and submissive groveling?", a: "Negative Assertion states the fact once cleanly; groveling begs for forgiveness and seeks validation.", bundle: 'free' },
+        { q: "What should you do after making a Negative Assertion?", a: "Stop talking and move to fixing the error or holding your boundary.", bundle: 'free' },
+        { q: "How does Negative Assertion preserve your authority as a leader?", a: "It shows you have the internal strength to own errors without fragile ego protection.", bundle: 'pro' },
+        { q: "Why should you avoid adding \"but...\" after a Negative Assertion?", a: "Adding \"but...\" turns the statement into a DEER excuse and reignites the argument.", bundle: 'pro' },
+        { q: "What does Negative Assertion teach the other person about your frame?", a: "That you are unswayable and immune to manipulative guilt trips over honest mistakes.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Fogging",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Fogging\"?", a: "Agreeing with any true, probable, or logical part of a critic's hostile statement.", bundle: 'free' },
+        { q: "What are the three types of Fogging agreement?", a: "Agreeing with the absolute truth, agreeing with the probability, or agreeing in principle.", bundle: 'free' },
+        { q: "Why is the technique called \"Fogging\"?", a: "Because like throwing a rock into fog, the critic's attack meets no hard resistance to push against.", bundle: 'free' },
+        { q: "What phrase structure does Fogging commonly use?", a: "\"You're right, it's true that...\" or \"It's possible that...\" or \"I can see how you'd think that.\"", bundle: 'free' },
+        { q: "What does Fogging prevent you from doing during a fight?", a: "Getting hooked into debating subjective opinions or character insults.", bundle: 'free' },
+        { q: "Does Fogging mean you agree with their entire emotional insult?", a: "No, you only agree with the narrow slice of factual truth or logical possibility.", bundle: 'pro' },
+        { q: "How does Fogging maintain sexual polarity?", a: "It prevents you from getting triggered into childish bickering or defensive explanations.", bundle: 'pro' },
+        { q: "What should you do after disarming an attack with Fogging?", a: "State your boundary using Broken Record or let the disarmed tension sit in silence.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n• **Assertive Defense** — core disarming moves against verbal pressure\n• **Neutralizing Criticism** — choosing between fogging, negative assertion, and broken record\n• **Standing Your Ground** — choosing between broken record, negative inquiry, and fogging\nOne question decides nearly all of it: what type of verbal attack or pressure are you facing?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Assertive Defense, Neutralizing Criticism, and Standing Your Ground.", bundle: 'pro' },
+        { q: "What is the focus of \"Assertive Defense\"?", a: "Applying the four core verbal techniques against direct boundary tests.", bundle: 'pro' },
+        { q: "What does \"Neutralizing Criticism\" make you choose between?", a: "Fogging (hostile opinions), Negative Assertion (real errors), and Broken Record (unreasonable demands).", bundle: 'pro' },
+        { q: "What is the focus of \"Standing Your Ground\"?", a: "Holding boundaries against persistent nagging, emotional guilt trips, and vague complaints.", bundle: 'pro' },
+        { q: "When do you choose \"Negative Assertion\" over \"Fogging\"?", a: "When the critic points out an actual, objective mistake you made.", bundle: 'pro' },
+        { q: "When do you choose \"Negative Inquiry\"?", a: "When the criticism is vague, emotional, or uses shaming labels that need concrete clarification.", bundle: 'pro' },
+        { q: "Why is \"Broken Record\" the foundational anchor of Collections?", a: "Because disarming an attack with Fogging or Inquiry must ultimately lead to holding your boundary.", bundle: 'pro' },
+        { q: "What is the main trap in Collections?", a: "Falling into DEERing explanations instead of choosing one of the four assertive moves.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n1. **The Assertive Shield** — Fogging → Negative Inquiry → Broken Record\n2. **Neutralizing the Attack** — Negative Assertion → Fogging → Broken Record\n3. **Probing the Hostility** — Negative Inquiry → Fogging → Broken Record\nIn each sequence, the order of the steps is what disarms hostility and protects your frame.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Assertive Shield, Neutralizing the Attack, and Probing the Hostility.", bundle: 'pro' },
+        { q: "What is the order in \"The Assertive Shield\"?", a: "Fogging, then Negative Inquiry, and finally Broken Record.", bundle: 'pro' },
+        { q: "Why does \"The Assertive Shield\" start with \"Fogging\"?", a: "To immediately disarm the initial hostile energy before asking for clarification.", bundle: 'pro' },
+        { q: "What is the order in \"Neutralizing the Attack\"?", a: "Negative Assertion, then Fogging, and finally Broken Record.", bundle: 'pro' },
+        { q: "Why does \"Negative Assertion\" come first in \"Neutralizing the Attack\"?", a: "Because accepting any real error immediately strips away her primary ammunition.", bundle: 'pro' },
+        { q: "What is the order in \"Probing the Hostility\"?", a: "Negative Inquiry, then Fogging, and finally Broken Record.", bundle: 'pro' },
+        { q: "What does \"Probing the Hostility\" train you to do?", a: "Force vague emotional attacks into concrete facts, disarm the valid core, and hold your stance.", bundle: 'pro' },
+        { q: "Why do all three sequences end with \"Broken Record\"?", a: "Because the ultimate goal of every sequence is holding your unswayable boundary cleanly.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n• **Shaming and Labels** — disarming character attacks and insults\n• **Aggressive Demands** — holding your line against loud shouting and pressure\n• **Guilt Trips** — neutralizing emotional manipulation and self-pity\n• **Passive-Aggressive Sniping** — exposing subtle digs and sarcasm\n• **Persistent Nagging** — out-lasting repeated complaints without losing calm\nEach category organizes by problem type rather than strategy.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Shaming and Labels, Aggressive Demands, Guilt Trips, Passive-Aggressive Sniping, and Persistent Nagging.", bundle: 'pro' },
+        { q: "How do you handle \"Shaming and Labels\"?", a: "By using Fogging on probabilities or Negative Inquiry to demand specific evidence.", bundle: 'pro' },
+        { q: "What is the core move during \"Aggressive Demands\"?", a: "Using Broken Record to state your boundary in a slow, low-pitch, unswayable voice.", bundle: 'pro' },
+        { q: "How do you resolve \"Guilt Trips\"?", a: "By using Fogging to agree with their emotional facts without accepting false blame.", bundle: 'pro' },
+        { q: "How do you handle \"Passive-Aggressive Sniping\"?", a: "By using Negative Inquiry to bring subtle digs into direct, clear conversation.", bundle: 'pro' },
+        { q: "How do you resolve \"Persistent Nagging\"?", a: "By repeating the exact same Broken Record phrase without adding new arguments or getting annoyed.", bundle: 'pro' },
+        { q: "What is she really testing in these challenges?", a: "Whether your boundary is solid or if you can be manipulated through volume, guilt, or insults.", bundle: 'pro' },
+        { q: "Why is raising your voice a major mistake in challenges?", a: "Because shouting back signals that your frame was breached and you lost emotional control.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four mindsets you practise in this pack:\n• **The Assertive Rights** — internalizing Manuel Smith's Bill of Assertive Rights\n• **Apologies** — replacing submissive groveling with clean acceptance\n• **Mistakes** — accepting errors cleanly without defensive lying\n• **Conflict** — standing firm in emotional tension without caving\nIn every one, the belief that gets in the way feels like peace from the inside.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "The Assertive Rights, Apologies, Mistakes, and Conflict.", bundle: 'pro' },
+        { q: "What does \"The Assertive Rights\" teach you?", a: "That you are the ultimate judge of your own behavior, values, and choices.", bundle: 'pro' },
+        { q: "What is the core truth behind \"Apologies\"?", a: "That errors require clean correction, not submissive self-flagellation or groveling.", bundle: 'pro' },
+        { q: "What is the core block in the \"Mistakes\" mindset?", a: "Believing that making an error ruins your frame and forces you to lie or defend.", bundle: 'pro' },
+        { q: "What is the core block in the \"Conflict\" mindset?", a: "Believing that temporary tension is dangerous and must be ended immediately by caving.", bundle: 'pro' },
+        { q: "Why is DEERing a toxic habit?", a: "Because explaining and defending treats the other person as your judge, abdicating your authority.", bundle: 'pro' },
+        { q: "What is Manuel Smith's First Assertive Right?", a: "You have the right to judge your own behavior, thoughts, and emotions.", bundle: 'pro' },
+        { q: "What is the ultimate goal of these four mindsets?", a: "To shift your psychological posture from approval-seeking subordinate to autonomous leader.", bundle: 'pro' },
       ]
     },
   ],
@@ -6222,6 +6606,134 @@ const memorizeCollections = {
         { q: "What is \"Evolutionary Selfishness\"?", a: "The process where a woman instinctively distances emotionally from a man who has lost his frame.", bundle: 'pro' },
         { q: "What is the \"Emasculation Paradox\"?", a: "Submitting to her to avoid her anger, which actually creates the contempt that makes her more angry.", bundle: 'pro' },
         { q: "What is \"Rule Zero\"?", a: "Male-centric sexual strategy and a positive male identity.", bundle: 'pro' },
+        { q: "What is the core mechanism of the \"Nice Guy Loop\"?", a: "Suppressing authentic desires to seek external approval, accumulating covert resentment, and eventually exploding in rage or dropping into passive aggression.", bundle: 'pro' },
+        { q: "How does stepping into \"The Oak\" break the Nice Guy loop?", a: "It replaces anxious pleasing and logical DEERing with unswayable, calm physical presence during her emotional storms.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "The foundational principles of Praxeology Volume 1, Part 4: Breaking the Nice Guy Loop by Rian Stone.\n• **No DEERing** — eliminating defense speeches and justification\n• **Killing Covert Contracts** — ending hidden transactions and unspoken demands\n• **Controlled Anger** — deploying surgical social authority\n• **The Oak** — standing unswayable during emotional storms\n\nBreaking the Nice Guy loop restores your authentic masculine authority and sexual polarity.",
+      cards: [
+        { q: "What are the four core strategies in this pack?", a: "No DEERing, Killing Covert Contracts, Controlled Anger, and The Oak.", bundle: 'free' },
+        { q: "Who authored \"No More Mr. Nice Guy\", the foundational text on covert contracts?", a: "Dr. Robert Glover.", bundle: 'free' },
+        { q: "What is a covert contract?", a: "An unspoken agreement where a man does something nice expecting a specific reward, without ever stating the deal explicitly.", bundle: 'free' },
+        { q: "What does DEER stand for in praxeology?", a: "Defend, Excuse, Explain, Rationalize.", bundle: 'free' },
+        { q: "What is the core flaw of the Nice Guy strategy?", a: "It relies on covert manipulation and external approval rather than authentic, assertive leadership.", bundle: 'free' },
+        { q: "Why do covert contracts destroy sexual polarity?", a: "Because they turn intimacy into a bitter transaction, killing genuine feminine desire.", bundle: 'pro' },
+        { q: "How does Controlled Anger differ from Nice Guy rage?", a: "Controlled Anger is a low-pitch, surgical social signal; Nice Guy rage is a childish, uncalibrated explosion.", bundle: 'pro' },
+        { q: "What is the primary function of \"The Oak\" during conflict?", a: "To absorb her emotional storm with unswayable physical presence without getting hooked into arguments.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "No DEERing",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"No DEERing\"?", a: "Stating your choices and boundaries concisely without defending, excusing, explaining, or rationalizing.", bundle: 'free' },
+        { q: "Why is DEERing a low-status move?", a: "Because it treats the listener as your judge and supervisor, seeking their approval for your choices.", bundle: 'free' },
+        { q: "What should you do when asked \"Why did you do that?\" regarding a simple personal choice?", a: "Give a short, direct statement of fact or choice without offering long justifications.", bundle: 'free' },
+        { q: "How does DEERing fuel arguments?", a: "It provides extra logic and excuses for the other person to attack and debate.", bundle: 'free' },
+        { q: "What is the relationship between No DEERing and internal authority?", a: "Refusing to DEER signals that your choices are anchored in your own Mental Point of Origin.", bundle: 'free' },
+        { q: "Why do men feel an intense urge to DEER when challenged?", a: "Because childhood conditioning taught them that explaining buys safety and approval from authority figures.", bundle: 'pro' },
+        { q: "How do you stop yourself from writing long text essays explaining a mistake?", a: "Recognize the internal panic, delete the essay, and state the core fact in one short sentence.", bundle: 'pro' },
+        { q: "What happens to her respect when you stop DEERing your boundaries?", a: "She realizes your line is unswayable, which reduces her anxiety and builds trust in your leadership.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Killing Covert Contracts",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Killing Covert Contracts\"?", a: "Identifying hidden \"if I do X, she must give me Y\" deals and eliminating them.", bundle: 'free' },
+        { q: "What is the secret emotion generated by covert contracts?", a: "Bitter, toxic resentment when the unstated reward is not delivered.", bundle: 'free' },
+        { q: "How do you kill a covert contract in real time?", a: "State your desire explicitly, or do the action purely for your own standards without expecting a return.", bundle: 'free' },
+        { q: "Why is trading household chores for sex a covert contract?", a: "Because chores are maintenance; sex requires genuine desire, which cannot be bought with chores.", bundle: 'free' },
+        { q: "What is the difference between a clean agreement and a covert contract?", a: "A clean agreement is explicitly negotiated by both parties; a covert contract exists only in one person's head.", bundle: 'free' },
+        { q: "Why do Nice Guys prefer covert contracts over direct requests?", a: "Because covert contracts protect their fragile ego from the possibility of a direct rejection.", bundle: 'pro' },
+        { q: "How does killing covert contracts rebuild authentic connection?", a: "It removes hidden manipulation, allowing actions and touch to be given freely from desire.", bundle: 'pro' },
+        { q: "What is the rule regarding giving gifts or favors to a partner?", a: "Give them with zero expectations attached, or do not give them at all.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Controlled Anger",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Controlled Anger\"?", a: "Deploying sharp, low-pitch, precise anger as a surgical social boundary against disrespect.", bundle: 'free' },
+        { q: "Why do Nice Guys fear their own anger?", a: "Because they confuse Controlled Anger with explosive, destructive rage they witnessed in childhood.", bundle: 'free' },
+        { q: "What vocal qualities characterize Controlled Anger?", a: "A lower pitch, slower cadence, quiet volume, and absolute chest resonance.", bundle: 'free' },
+        { q: "When is Controlled Anger the appropriate strategy to select?", a: "When someone explicitly crosses a clear boundary, uses sharp disrespect, or breaches safety.", bundle: 'free' },
+        { q: "What happens if you deploy Controlled Anger with high pitch and screaming?", a: "It reveals internal panic and status collapse, turning into a childish tantrum.", bundle: 'free' },
+        { q: "Why is Controlled Anger essential for setting boundaries?", a: "Because words without emotional weight or social signal are easily ignored by boundary-pushers.", bundle: 'pro' },
+        { q: "How does Controlled Anger protect the container of a relationship?", a: "It demonstrates that you have the edge and authority required to protect the relationship from external and internal threats.", bundle: 'pro' },
+        { q: "What should follow immediately after a Controlled Anger statement?", a: "Absolute silence, unswayable eye contact, and clean execution of the boundary.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Oak",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"The Oak\"?", a: "Standing physically centered, calm, and unswayable during her emotional storms.", bundle: 'free' },
+        { q: "Why is the metaphor of \"The Oak\" used for masculine frame?", a: "Because an oak tree's deep roots allow it to sway slightly in the wind without breaking or flying away.", bundle: 'free' },
+        { q: "What physical actions anchor you as The Oak during a argument?", a: "Deep belly breathing, dropped shoulders, grounded feet, and steady, warm eye contact.", bundle: 'free' },
+        { q: "What does \"The Oak\" communicate to an anxious woman?", a: "That your nervous system is strong enough to contain her emotional fire without collapsing or attacking.", bundle: 'free' },
+        { q: "What should you avoid doing while acting as The Oak?", a: "Debating logic, smirking, pacing frantically, or running away from the room in panic.", bundle: 'free' },
+        { q: "How does \"The Oak\" disarm \"Code Red\" emotional waves?", a: "By offering no hard resistance or defensive panic for her storm to push against, allowing it to burn out naturally.", bundle: 'pro' },
+        { q: "What is the difference between \"The Oak\" and stonewalling?", a: "The Oak remains physically present, grounded, and warm; stonewalling is a passive-aggressive, cold withdrawal.", bundle: 'pro' },
+        { q: "Why is physical posture critical to \"The Oak\"?", a: "Because slouching or fidgeting communicates internal panic, destroying the perception of unswayable frame.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n• **Internal Nice Guy Audit** — auditing internal pleaser habits and covert contracts\n• **External Frame Protection** — protecting your frame against boundary breaches\n• **Breaking the Nice Guy Loop** — choosing between all four strategies in daily life\n\nOne question decides nearly all of it: are you dealing with internal pleaser habits or external boundary tests?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Internal Nice Guy Audit, External Frame Protection, and Breaking the Nice Guy Loop.", bundle: 'pro' },
+        { q: "What is the focus of \"Internal Nice Guy Audit\"?", a: "Identifying and eliminating internal covert deals, pleaser thoughts, and DEERing habits.", bundle: 'pro' },
+        { q: "What is the focus of \"External Frame Protection\"?", a: "Defending your external boundaries against disrespect, nagging, and emotional tests.", bundle: 'pro' },
+        { q: "What does \"Breaking the Nice Guy Loop\" make you choose between?", a: "All four strategies across complex, real-world relationship pressure.", bundle: 'pro' },
+        { q: "When do you choose \"Controlled Anger\" over \"The Oak\"?", a: "When she explicitly crosses a line of disrespect that requires a sharp social boundary.", bundle: 'pro' },
+        { q: "When do you choose \"No DEERing\"?", a: "When she questions your personal choices and you need to deliver a concise boundary without justification.", bundle: 'pro' },
+        { q: "Why is \"Killing Covert Contracts\" essential across all Collections?", a: "Because covert contracts are the root cause of Nice Guy resentment and frame collapse.", bundle: 'pro' },
+        { q: "What is the main trap in Collections?", a: "Reverting to DEERing explanations or explosive rage when your pleaser habits are exposed.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n1. **Breaking the \"Save-A-Ho\" Cycle** — Killing Covert Contracts → No DEERing → Controlled Anger → The Oak\n2. **The Resentment Circuit Breaker** — Killing Covert Contracts → No DEERing → Controlled Anger\n3. **Containing the Fire** — The Oak → Controlled Anger → No DEERing\n\nIn each sequence, the order of the steps is what re-establishes safety and polarity.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Breaking the \"Save-A-Ho\" Cycle, The Resentment Circuit Breaker, and Containing the Fire.", bundle: 'pro' },
+        { q: "What is the order in \"Breaking the 'Save-A-Ho' Cycle\"?", a: "Killing Covert Contracts, No DEERing, Controlled Anger, and The Oak.", bundle: 'pro' },
+        { q: "Why does \"Killing Covert Contracts\" come first in \"Save-A-Ho\"?", a: "Because you must drop the white-knight rescue impulse in your own mind before you can set a boundary.", bundle: 'pro' },
+        { q: "What is the order in \"The Resentment Circuit Breaker\"?", a: "Killing Covert Contracts, then No DEERing, and finally Controlled Anger.", bundle: 'pro' },
+        { q: "What is the order in \"Containing the Fire\"?", a: "The Oak, then Controlled Anger, and finally No DEERing.", bundle: 'pro' },
+        { q: "Why does \"Containing the Fire\" start with \"The Oak\"?", a: "To absorb her initial emotional wave with unswayable presence before enforcing any explicit limit.", bundle: 'pro' },
+        { q: "What does \"The Resentment Circuit Breaker\" train you to do?", a: "Catch covert expectations early, state your boundary cleanly, and enforce it if pushed.", bundle: 'pro' },
+        { q: "Why is \"No DEERing\" included in all three sequences?", a: "Because explaining and defending destroys the authority established by the other steps.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n• **The \"Creepy\" Resonance** — eliminating needy, passive-aggressive hovering\n• **Covert Transactions** — catching and killing unspoken deals for affection\n• **Explaining and Excusing** — stopping defensive DEERing speeches\n• **Explosive Rage vs Controlled Anger** — shifting from tantrums to surgical authority\n• **Emotional Storms** — standing unswayable during Code Red emotional waves\n\nEach category organizes by problem type rather than strategy.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The \"Creepy\" Resonance, Covert Transactions, Explaining and Excusing, Explosive Rage vs Controlled Anger, and Emotional Storms.", bundle: 'pro' },
+        { q: "How do you handle \"The 'Creepy' Resonance\"?", a: "By eliminating needy hovering and stepping into unswayable, authentic presence as The Oak.", bundle: 'pro' },
+        { q: "What is the core move during \"Covert Transactions\"?", a: "Using Killing Covert Contracts to drop hidden deals and state clean intent.", bundle: 'pro' },
+        { q: "How do you resolve \"Explaining and Excusing\"?", a: "By cutting out DEER speeches and delivering short, direct statements.", bundle: 'pro' },
+        { q: "How do you handle \"Explosive Rage vs Controlled Anger\"?", a: "By dropping high-pitch shouting and deploying low-pitch chest resonance to enforce lines.", bundle: 'pro' },
+        { q: "How do you resolve \"Emotional Storms\"?", a: "By grounding yourself as The Oak and absorbing her emotional wave without taking the bait.", bundle: 'pro' },
+        { q: "What is she really testing in these challenges?", a: "Whether you are an authentic, unswayable leader or a manipulative pleaser wearing a mask.", bundle: 'pro' },
+        { q: "Why is sulking a major mistake in challenges?", a: "Because sulking is passive-aggressive Nice Guy behavior that signals helplessness.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four mindsets you practise in this pack:\n• **You Are Not a Plow Horse** — your worth isn't measured by labor and chores\n• **Morality of Results** — evaluating behavior by real relational outcomes, not intent\n• **Contracting** — genuine desire cannot be bought with covert favors\n• **Defense** — an autonomous man needs no court defense to validate choices\n\nIn every one, the belief that gets in the way feels like virtue from the inside.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "You Are Not a Plow Horse, Morality of Results, Contracting, and Defense.", bundle: 'pro' },
+        { q: "What does \"You Are Not a Plow Horse\" teach you?", a: "That your value as a partner comes from your presence and leadership, not your labor.", bundle: 'pro' },
+        { q: "What is the core truth behind \"Morality of Results\"?", a: "That noble intentions mean nothing if your submissive behavior destroys polarity and brings chaos.", bundle: 'pro' },
+        { q: "What is the core block in the \"Contracting\" mindset?", a: "Believing that being nice and helpful obligates her to give you sex and affection.", bundle: 'pro' },
+        { q: "What is the core block in the \"Defense\" mindset?", a: "Believing that you must explain your logic and get her agreement before your choices are valid.", bundle: 'pro' },
+        { q: "Why is \"self-sacrifice\" often a hidden vice?", a: "Because sacrificing your boundaries breeds covert resentment that poisons the relationship.", bundle: 'pro' },
+        { q: "What is the definition of authentic leadership in a relationship?", a: "Leading from internal Mental Point of Origin while providing an unswayable container of safety.", bundle: 'pro' },
+        { q: "What is the ultimate goal of these four mindsets?", a: "To shift your baseline from a manipulative, submissive Nice Guy to an assertive, grounded leader.", bundle: 'pro' },
       ]
     },
   ],
@@ -6288,6 +6800,76 @@ const memorizeCollections = {
         { q: "What is \"Outcome Independence\"?", a: "Becoming your best self for your own sake, regardless of whether she stays or leaves.", bundle: 'pro' },
         { q: "What is \"Mental Point of Origin\"?", a: "The internal locus of control where your own interests and values dictate your decisions.", bundle: 'pro' },
         { q: "What does it mean to \"Hate her, just a little bit\"?", a: "To stop seeing her as a fantasy and see her as a human being so you can lead with confidence.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "The foundational principles of Praxeology Volume 1, Part 5: Leadership and Vision by Rian Stone.\n• **The Leader’s Vision** — defining a compelling destination as a Display of Higher Value\n• **Leading Without Permission** — taking autonomous responsibility without consensus-seeking\n• **Push and Pull** — balancing emotional distance and warmth to maintain polarity\n• **Rule Zero (Rational Egoism)** — grounding your choices in self-respect and mission first\n\nMastering leadership transforms passive domestic drift into decisive, exciting direction.",
+      cards: [
+        { q: "What are the four core strategies in this pack?", a: "The Leader’s Vision, Leading Without Permission, Push and Pull, and Rule Zero (Rational Egoism).", bundle: 'free' },
+        { q: "What is the core definition of \"The Captain’s Seat\"?", a: "The posture of complete responsibility and autonomous leadership over your life and relationship container.", bundle: 'free' },
+        { q: "What is Rule Zero in praxeology?", a: "Male-centric sexual strategy and rational egoism: prioritizing your purpose and frame first.", bundle: 'free' },
+        { q: "Why is a bold Vision described as a Display of Higher Value (DHV)?", a: "Because an exciting future destination demonstrates ambition, resourcefulness, and unswayable direction.", bundle: 'free' },
+        { q: "What is the primary cause of \"domestic drift\"?", a: "A lack of masculine vision and autonomous leadership, causing the relationship to stall in routine.", bundle: 'free' },
+        { q: "What is the difference between consensus-seeking and leading without permission?", a: "Consensus-seeking abdicates authority to the passenger; leading without permission takes full ownership of the destination.", bundle: 'pro' },
+        { q: "How does Push and Pull maintain sexual polarity in a long-term relationship?", a: "It prevents needy smothering through calibrated space (push) while offering warm, high-status presence (pull).", bundle: 'pro' },
+        { q: "Why is \"keeping the peace\" a trap for a visionary leader?", a: "Because sacrificing your vision for short-term quiet creates bitter resentment and destroys her respect for your frame.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n• **Reclaiming the Captain’s Seat** — reclaiming authority: choosing between vision, autonomous action, and Rule Zero\n• **Setting the Direction** — defining goals: choosing between vision, unilateral moves, and rational egoism\n• **Autonomous Command** — executing command: choosing between unilateral action, push-pull, and self-interest\n\nOne question decides nearly all of it: what level of leadership or vision is required in the moment?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Reclaiming the Captain’s Seat, Setting the Direction, and Autonomous Command.", bundle: 'pro' },
+        { q: "What is the focus of \"Reclaiming the Captain’s Seat\"?", a: "Reclaiming your locus of control and stepping into active leadership over your home.", bundle: 'pro' },
+        { q: "What is the focus of \"Setting the Direction\"?", a: "Articulating long-term vision, executing unilateral moves, and standing firm in rational egoism.", bundle: 'pro' },
+        { q: "What does \"Autonomous Command\" make you choose between?", a: "Unilateral action, dynamic push-pull tension, and self-interested priority.", bundle: 'pro' },
+        { q: "When do you choose \"The Leader’s Vision\" over \"Leading Without Permission\"?", a: "When you need to articulate the exciting destination rather than executing an immediate tactical move.", bundle: 'pro' },
+        { q: "When do you choose \"Push and Pull\"?", a: "When the dynamic has become stale or needy and you need to restore sexual polarity and emotional distance.", bundle: 'pro' },
+        { q: "Why is \"Rule Zero (Rational Egoism)\" foundational across all Collections?", a: "Because an autonomous leader must prioritize his own frame and mission to have value to offer.", bundle: 'pro' },
+        { q: "What is the main trap in Collections?", a: "Asking for permission or consensus before setting the direction for your family.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n1. **The Visionary Lead** — Rule Zero → The Leader’s Vision → Push and Pull → Leading Without Permission\n2. **Unilateral Leadership** — Rule Zero → The Leader’s Vision → Leading Without Permission\n3. **The Calibrated Push** — Rule Zero → Push and Pull → The Leader’s Vision\n\nIn each sequence, the order of the steps is what re-establishes safety and polarity.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Visionary Lead, Unilateral Leadership, and The Calibrated Push.", bundle: 'pro' },
+        { q: "What is the order in \"The Visionary Lead\"?", a: "Rule Zero, then The Leader's Vision, then Push and Pull, and finally Leading Without Permission.", bundle: 'pro' },
+        { q: "What is the order in \"Unilateral Leadership\"?", a: "Rule Zero, then The Leader's Vision, and finally Leading Without Permission.", bundle: 'pro' },
+        { q: "Why does \"Unilateral Leadership\" start with \"Rule Zero\"?", a: "Because you must anchor in rational self-respect before defining a vision or executing a move.", bundle: 'pro' },
+        { q: "What is the order in \"The Calibrated Push\"?", a: "Rule Zero, then Push and Pull, and finally The Leader's Vision.", bundle: 'pro' },
+        { q: "Why does \"The Calibrated Push\" place \"Push and Pull\" second?", a: "Because creating dynamic tension and space resets polarity before channeling restored energy into your vision.", bundle: 'pro' },
+        { q: "What does \"Unilateral Leadership\" train you to do?", a: "Move cleanly from internal self-interest to defining long-term goals and executing without permission.", bundle: 'pro' },
+        { q: "Why do all three sequences rely on \"Rule Zero\"?", a: "Because leadership built on pleasing deferral is a sham; true authority starts with rational self-ownership.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n• **Sabotage and Frame Traps** — disarming subtle sabotage of your goals and leadership\n• **Permission Seeking** — eliminating consensus-seeking and 'Is it okay?' habits\n• **Domestic Drift** — reversing the slide into predictable, boring domestic routine\n• **The Peacekeeper Trap** — refusing to sacrifice core vision just to avoid short-term tension\n• **Resistance to Vision** — steering through her fear and doubt when rolling out big plans\n\nEach category organizes by problem type rather than strategy.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Sabotage and Frame Traps, Permission Seeking, Domestic Drift, The Peacekeeper Trap, and Resistance to Vision.", bundle: 'pro' },
+        { q: "How do you handle \"Sabotage and Frame Traps\"?", a: "By standing firm in Rule Zero and executing your vision despite emotional pushback.", bundle: 'pro' },
+        { q: "What is the core move during \"Permission Seeking\"?", a: "Using Leading Without Permission to execute decisions autonomously without asking for approval.", bundle: 'pro' },
+        { q: "How do you resolve \"Domestic Drift\"?", a: "By applying Push and Pull to restore polarity and painting an exciting Leader's Vision.", bundle: 'pro' },
+        { q: "How do you handle \"The Peacekeeper Trap\"?", a: "By prioritizing your mission over short-term quiet, embracing temporary tension in Rule Zero.", bundle: 'pro' },
+        { q: "How do you overcome \"Resistance to Vision\"?", a: "By holding firm as the Oak while articulating a compelling, unswayable long-term destination.", bundle: 'pro' },
+        { q: "What is she really testing in these challenges?", a: "Whether your leadership is authentic and solid, or if you can be swayed by fear, doubt, or comfort.", bundle: 'pro' },
+        { q: "Why is consensus-seeking a fatal mistake in challenges?", a: "Because asking her to make executive decisions forces her into the masculine role, killing attraction.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four mindsets you practise in this pack:\n• **The Visionary Captain** — stepping into full accountability for the ship's course\n• **Permission** — a leader leads autonomously without requesting approval\n• **Sacrificing Vision** — an unbending vision is the greatest gift to your family\n• **Discomfort** — embracing temporary tension to build long-term alignment\n\nIn every one, the belief that gets in the way feels like safety from the inside.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "The Visionary Captain, Permission, Sacrificing Vision, and Discomfort.", bundle: 'pro' },
+        { q: "What does \"The Visionary Captain\" teach you?", a: "That you are completely responsible for the destination and safety of your relationship container.", bundle: 'pro' },
+        { q: "What is the core truth behind \"Permission\"?", a: "That seeking approval for your decisions abdicates authority and destroys sexual polarity.", bundle: 'pro' },
+        { q: "What is the core block in the \"Sacrificing Vision\" mindset?", a: "Believing that scaling down your ambition keeps her safe, when it actually breeds resentment.", bundle: 'pro' },
+        { q: "What is the core block in the \"Discomfort\" mindset?", a: "Believing that any temporary emotional friction or bad mood means your leadership has failed.", bundle: 'pro' },
+        { q: "Why is \"keeping the peace\" a toxic mindset?", a: "Because trading long-term vision for short-term comfort destroys respect and leads to domestic decay.", bundle: 'pro' },
+        { q: "What is the definition of true masculine leadership?", a: "Autonomous, self-grounded direction that provides a secure, exciting container for your family.", bundle: 'pro' },
+        { q: "What is the ultimate goal of these four mindsets?", a: "To shift your baseline from a passive domestic passenger to an autonomous, unswayable Captain.", bundle: 'pro' },
       ]
     },
   ],
