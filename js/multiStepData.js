@@ -5486,7 +5486,7 @@ const multiStepCollections = {
       name: "The Unswayable Lead",
       guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
-      description: "A calibration sequence: The OODA Loop → Mental Point of Origin → The OODA Loop → Field Reporting.\nIdentify the dynamic, check your own values, take the action, and then analyze it objectively.",
+      description: "A calibration sequence: The OODA Loop → Mental Point of Origin → The OODA Loop → Field Reporting.\n\nIdentify the dynamic, check your own values, take the action, and then analyze it objectively.",
       inputs: [
         {
           bundle: 'pro',
@@ -5524,7 +5524,7 @@ const multiStepCollections = {
       name: "The Frame Reset",
       guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
-      description: "**The Physical Signal** → **Mental Point of Origin** → **The OODA Loop**.\nThis sequence trains you to halt reactive collapse, ground yourself physically, declare your internal truth, and execute a calibrated response.\n1. **The Physical Signal** — ground your body, posture, and presence first\n2. **Mental Point of Origin** — state or check your unarguable internal priority\n3. **The OODA Loop** — observe the reaction and execute your next move\nWhy just this order: you must anchor your physical posture before declaring your internal boundary, and you must state your boundary before calibrating her response.\nWhat people do instead: they babble, explain, and posture loudly, which reveals internal panic.\nMindset: physical presence and internal sureness precede tactical action.",
+      description: "**The Physical Signal** → **Mental Point of Origin** → **The OODA Loop**.\n\nThis sequence trains you to halt reactive collapse, ground yourself physically, declare your internal truth, and execute a calibrated response.\n\n1. **The Physical Signal** — ground your body, posture, and presence first\n2. **Mental Point of Origin** — state or check your unarguable internal priority\n3. **The OODA Loop** — observe the reaction and execute your next move\n\n**Why this order:** you must anchor your physical posture before declaring your internal boundary, and you must state your boundary before calibrating her response.\n\n**What people do instead:** they babble, explain, and posture loudly, which reveals internal panic.\n\nMindset: physical presence and internal sureness precede tactical action.",
       inputs: [
         {
           bundle: 'pro',
@@ -5559,7 +5559,7 @@ const multiStepCollections = {
       name: "Calibrated Action",
       guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
-      description: "**Mental Point of Origin** → **The OODA Loop** → **Field Reporting**.\nThis sequence trains you to establish an internal boundary, observe her response without getting hooked, and document the facts objectively afterward.\n1. **Mental Point of Origin** — anchor your decision in your own values\n2. **The OODA Loop** — observe reality, orient to the model, and act\n3. **Field Reporting** — document the interaction neutrally to learn from it\nWhy just this order: you must act from internal authority first, observe her response in real time, and analyze the facts after the emotional dust has settled.\nWhat people do instead: they act from anger, argue endlessly, and rewrite history in their minds to play the victim.\nMindset: objective iteration builds an unshakeable frame over time.",
+      description: "**Mental Point of Origin** → **The OODA Loop** → **Field Reporting**.\n\nThis sequence trains you to establish an internal boundary, observe her response without getting hooked, and document the facts objectively afterward.\n\n1. **Mental Point of Origin** — anchor your decision in your own values\n2. **The OODA Loop** — observe reality, orient to the model, and act\n3. **Field Reporting** — document the interaction neutrally to learn from it\n\n**Why this order:** you must act from internal authority first, observe her response in real time, and analyze the facts after the emotional dust has settled.\n\n**What people do instead:** they act from anger, argue endlessly, and rewrite history in their minds to play the victim.\n\nMindset: objective iteration builds an unshakeable frame over time.",
       inputs: [
         {
           bundle: 'pro',
@@ -5596,7 +5596,7 @@ const multiStepCollections = {
       name: "From Hamster to Harmony",
       guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
-      description: "A calibration sequence: Medium is the Message → Status Calibration → Gratitude/Lead.\nIdentify the emotional process, choose a high-status quadrant, and lead back to connection.",
+      description: "A calibration sequence: Medium is the Message → Status Calibration → Gratitude/Lead.\n\nIdentify the emotional process, choose a high-status quadrant, and lead back to connection.",
       inputs: [
         {
           bundle: 'pro',
@@ -5632,7 +5632,7 @@ const multiStepCollections = {
       name: "Decoding the Medium",
       guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
-      description: "**The Medium is the Message** → **Whisper’s Rule** → **Status/Harmony Calibration**.\n\nThis sequence trains you to identify subtext carried through actions or tone, stop debating surface words, and lead with grounded warmth.\n1. **The Medium is the Message** — identify the subtext delivered through actions, tone, or channel\n2. **Whisper’s Rule** — stop repeating or arguing literal facts\n3. **Status/Harmony Calibration** — respond with high-status, high-harmony leadership\n\nWhy just this order: you must read the medium first, stop debating surface words second, and deliver grounded warm leadership third.\n\nWhat people do instead: they argue the literal text, get defensive, and drop into low-harmony shouting.\n\nMindset: subtext precedes speech; lead the medium to master the moment.",
+      description: "**The Medium is the Message** → **Whisper’s Rule** → **Status/Harmony Calibration**.\n\nThis sequence trains you to identify subtext carried through actions or tone, stop debating surface words, and lead with grounded warmth.\n1. **The Medium is the Message** — identify the subtext delivered through actions, tone, or channel\n2. **Whisper’s Rule** — stop repeating or arguing literal facts\n3. **Status/Harmony Calibration** — respond with high-status, high-harmony leadership\n\n**Why this order:** you must read the medium first, stop debating surface words second, and deliver grounded warm leadership third.\n\n**What people do instead:** they argue the literal text, get defensive, and drop into low-harmony shouting.\n\nMindset: subtext precedes speech; lead the medium to master the moment.",
       inputs: [
         {
           bundle: 'pro',
@@ -5667,7 +5667,7 @@ const multiStepCollections = {
       name: "Grounded Appreciation",
       guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
-      description: "**Gratitude Frame-Check** → **Whisper’s Rule** → **Status/Harmony Calibration**.\n\nThis sequence trains you to evaluate whether praise or criticism is a frame test, recognize her underlying emotional state, and hold high-status warmth.\n1. **Gratitude Frame-Check** — evaluate whether praise or criticism is a frame test\n2. **Whisper’s Rule** — recognize her underlying emotional need behind the test\n3. **Status/Harmony Calibration** — respond with unswayable authority and warm inclusion\n\nWhy just this order: you must check the frame first to avoid pleaser traps, look past surface words second, and hold high-status warmth third.\n\nWhat people do instead: they beg for compliments or get needy when praised.\n\nMindset: unshakeable grounding turns frame tests into opportunities for deeper connection.",
+      description: "**Gratitude Frame-Check** → **Whisper’s Rule** → **Status/Harmony Calibration**.\n\nThis sequence trains you to evaluate whether praise or criticism is a frame test, recognize her underlying emotional state, and hold high-status warmth.\n1. **Gratitude Frame-Check** — evaluate whether praise or criticism is a frame test\n2. **Whisper’s Rule** — recognize her underlying emotional need behind the test\n3. **Status/Harmony Calibration** — respond with unswayable authority and warm inclusion\n\n**Why this order:** you must check the frame first to avoid pleaser traps, look past surface words second, and hold high-status warmth third.\n\n**What people do instead:** they beg for compliments or get needy when praised.\n\nMindset: unshakeable grounding turns frame tests into opportunities for deeper connection.",
       inputs: [
         {
           bundle: 'pro',
@@ -5704,7 +5704,7 @@ const multiStepCollections = {
       name: "The Assertive Shield",
       guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
-      description: "A reaktiv sequence: Fogging → Negative Inquiry → Broken Record.\nAbsorb the emotional hit, clarify the specific issue, and hold the line on the decision.",
+      description: "A reaktiv sequence: Fogging → Negative Inquiry → Broken Record.\n\nAbsorb the emotional hit, clarify the specific issue, and hold the line on the decision.",
       inputs: [
         {
           bundle: 'pro',
@@ -5739,7 +5739,7 @@ const multiStepCollections = {
       name: "Neutralizing the Attack",
       guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
-      description: "**Negative Assertion** → **Fogging** → **Broken Record**.\nThis sequence trains you to accept genuine mistakes cleanly, disarm secondary criticism, and hold your boundary without DEERing.\n1. **Negative Assertion** — accept any real mistake immediately without groveling\n2. **Fogging** — agree with the true or probable part of her follow-up criticism\n3. **Broken Record** — repeat your decision or boundary calmly\nWhy just this order: accepting the real mistake first strips away her ammunition; fogging the follow-up prevents an argument; repeating your boundary seals the frame.\nWhat people do instead: they deny the mistake, get defensive, and cave to her demands out of guilt.\nMindset: accepting a mistake is not giving up your authority.",
+      description: "**Negative Assertion** → **Fogging** → **Broken Record**.\n\nThis sequence trains you to accept genuine mistakes cleanly, disarm secondary criticism, and hold your boundary without DEERing.\n\n1. **Negative Assertion** — accept any real mistake immediately without groveling\n2. **Fogging** — agree with the true or probable part of her follow-up criticism\n3. **Broken Record** — repeat your decision or boundary calmly\n\n**Why this order:** accepting the real mistake first strips away her ammunition; fogging the follow-up prevents an argument; repeating your boundary seals the frame.\n\n**What people do instead:** they deny the mistake, get defensive, and cave to her demands out of guilt.\n\nMindset: accepting a mistake is not giving up your authority.",
       inputs: [
         {
           bundle: 'pro',
@@ -5774,7 +5774,7 @@ const multiStepCollections = {
       name: "Probing the Hostility",
       guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
-      description: "**Negative Inquiry** → **Fogging** → **Broken Record**.\nThis sequence trains you to prompt vague complaints to be specific, disarm the valid core of the critique, and hold your position calmly.\n1. **Negative Inquiry** — ask for specific details about her vague criticism\n2. **Fogging** — agree with the valid or true element revealed\n3. **Broken Record** — state your clear decision without offering excuses\nWhy just this order: probing forces her to move from emotional attacks to concrete facts; fogging the valid part neutralizes hostility; repeating your stance keeps your frame intact.\nWhat people do instead: they take emotional attacks personally and argue back, creating a two-hour fight.\nMindset: specific facts disarm emotional drama every time.",
+      description: "**Negative Inquiry** → **Fogging** → **Broken Record**.\n\nThis sequence trains you to prompt vague complaints to be specific, disarm the valid core of the critique, and hold your position calmly.\n\n1. **Negative Inquiry** — ask for specific details about her vague criticism\n2. **Fogging** — agree with the valid or true element revealed\n3. **Broken Record** — state your clear decision without offering excuses\n\n**Why this order:** probing forces her to move from emotional attacks to concrete facts; fogging the valid part neutralizes hostility; repeating your stance keeps your frame intact.\n\n**What people do instead:** they take emotional attacks personally and argue back, creating a two-hour fight.\n\nMindset: specific facts disarm emotional drama every time.",
       inputs: [
         {
           bundle: 'pro',
@@ -5811,7 +5811,7 @@ const multiStepCollections = {
       name: "Breaking the \"Save-A-Ho\" Cycle",
       guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
-      description: "A sequence for handling a partner's manipulative tears: The Oak → Killing Covert Contracts → No DEERing.\nStop reacting to the crying, stop trying to \"fix\" her mood to get peace, and stop justifying your boundaries.",
+      description: "A sequence for handling a partner's manipulative tears: The Oak → Killing Covert Contracts → No DEERing.\n\nStop reacting to the crying, stop trying to \"fix\" her mood to get peace, and stop justifying your boundaries.",
       inputs: [
         {
           bundle: 'pro',
@@ -5849,7 +5849,7 @@ const multiStepCollections = {
       name: "The Resentment Circuit Breaker",
       guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
-      description: "**Killing Covert Contracts** → **No DEERing** → **Controlled Anger**.\n\nThis sequence trains you to identify covert expectations before they turn into bitter resentment, declare your boundary without defending, and enforce it with controlled anger if pushed.\n1. **Killing Covert Contracts** — eliminate the hidden transaction in your mind\n2. **No DEERing** — state your boundary cleanly without excuses or justification\n3. **Controlled Anger** — use precise, surgical social signal if she attempts to breach the limit\n\nWhy just this order: you must drop the covert contract first to get clear, state your boundary second, and apply controlled anger only if she aggressively pushes past the boundary.\n\nWhat people do instead: they harbor covert contracts for months, sulk, and then explode in uncalibrated rage.\n\nMindset: clear boundaries stated early prevent resentment explosions later.",
+      description: "**Killing Covert Contracts** → **No DEERing** → **Controlled Anger**.\n\nThis sequence trains you to identify covert expectations before they turn into bitter resentment, declare your boundary without defending, and enforce it with controlled anger if pushed.\n1. **Killing Covert Contracts** — eliminate the hidden transaction in your mind\n2. **No DEERing** — state your boundary cleanly without excuses or justification\n3. **Controlled Anger** — use precise, surgical social signal if she attempts to breach the limit\n\n**Why this order:** you must drop the covert contract first to get clear, state your boundary second, and apply controlled anger only if she aggressively pushes past the boundary.\n\n**What people do instead:** they harbor covert contracts for months, sulk, and then explode in uncalibrated rage.\n\nMindset: clear boundaries stated early prevent resentment explosions later.",
       inputs: [
         {
           bundle: 'pro',
@@ -5884,7 +5884,7 @@ const multiStepCollections = {
       name: "Containing the Fire",
       guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
-      description: "**The Oak** → **Controlled Anger** → **No DEERing**.\n\nThis sequence trains you to stand unswayable during her emotional wave, deploy controlled anger if she crosses a line, and state your boundary without explaining.\n1. **The Oak** — absorb her initial emotional storm with unswayable physical presence\n2. **Controlled Anger** — use sharp, low-pitch anger to signal an explicit line if she becomes disrespectful\n3. **No DEERing** — deliver your final boundary concisely without giving excuses\n\nWhy just this order: you must absorb normal emotional storming as the Oak first; if disrespect occurs, deploy controlled anger; then state your boundary cleanly without opening a debate.\n\nWhat people do instead: they panic instantly, get defensive, and argue logic while shrinking physically.\n\nMindset: absorb the storm, enforce the line, hold the frame.",
+      description: "**The Oak** → **Controlled Anger** → **No DEERing**.\n\nThis sequence trains you to stand unswayable during her emotional wave, deploy controlled anger if she crosses a line, and state your boundary without explaining.\n1. **The Oak** — absorb her initial emotional storm with unswayable physical presence\n2. **Controlled Anger** — use sharp, low-pitch anger to signal an explicit line if she becomes disrespectful\n3. **No DEERing** — deliver your final boundary concisely without giving excuses\n\n**Why this order:** you must absorb normal emotional storming as the Oak first; if disrespect occurs, deploy controlled anger; then state your boundary cleanly without opening a debate.\n\n**What people do instead:** they panic instantly, get defensive, and argue logic while shrinking physically.\n\nMindset: absorb the storm, enforce the line, hold the frame.",
       inputs: [
         {
           bundle: 'pro',
@@ -5956,7 +5956,7 @@ const multiStepCollections = {
       name: "Unilateral Leadership",
       guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
-      description: "**Rule Zero (Rational Egoism)** → **The Leader’s Vision** → **Leading Without Permission**.\nThis sequence trains you to anchor in rational self-interest first, define a clear vision, and execute unilaterally without seeking consensus.\n1. **Rule Zero (Rational Egoism)** — ground yourself in self-respect and mission priority\n2. **The Leader’s Vision** — articulate the inspiring long-term direction\n3. **Leading Without Permission** — execute the move decisively without permission-seeking\n\nWhy just this order: you must prioritize your own frame first, map the destination second, and execute the action third.\n\nWhat people do instead: they ask for consensus, debate endlessly, and stall in indecision.\n\nMindset: true leadership moves from internal clarity to decisive execution.",
+      description: "**Rule Zero (Rational Egoism)** → **The Leader’s Vision** → **Leading Without Permission**.\nThis sequence trains you to anchor in rational self-interest first, define a clear vision, and execute unilaterally without seeking consensus.\n1. **Rule Zero (Rational Egoism)** — ground yourself in self-respect and mission priority\n2. **The Leader’s Vision** — articulate the inspiring long-term direction\n3. **Leading Without Permission** — execute the move decisively without permission-seeking\n\n**Why this order:** you must prioritize your own frame first, map the destination second, and execute the action third.\n\n**What people do instead:** they ask for consensus, debate endlessly, and stall in indecision.\n\nMindset: true leadership moves from internal clarity to decisive execution.",
       inputs: [
         {
           bundle: 'pro',
@@ -5991,7 +5991,7 @@ const multiStepCollections = {
       name: "The Calibrated Push",
       guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
-      description: "**Rule Zero (Rational Egoism)** → **Push and Pull** → **The Leader’s Vision**.\nThis sequence trains you to hold your locus of control, deploy dynamic tension to revive polarity, and anchor the excitement in your overall vision.\n1. **Rule Zero (Rational Egoism)** — anchor your worth independent of her mood\n2. **Push and Pull** — withdraw attention to create space, then offer warm, high-status presence\n3. **The Leader’s Vision** — channel the restored attraction into your shared long-term goal\n\nWhy just this order: you must be self-grounded first, reset relational polarity second, and point the restored energy toward your vision third.\n\nWhat people do instead: they chase her when she pulls away, killing attraction and losing direction.\n\nMindset: polarity requires space, authority, and an exciting destination.",
+      description: "**Rule Zero (Rational Egoism)** → **Push and Pull** → **The Leader’s Vision**.\nThis sequence trains you to hold your locus of control, deploy dynamic tension to revive polarity, and anchor the excitement in your overall vision.\n1. **Rule Zero (Rational Egoism)** — anchor your worth independent of her mood\n2. **Push and Pull** — withdraw attention to create space, then offer warm, high-status presence\n3. **The Leader’s Vision** — channel the restored attraction into your shared long-term goal\n\n**Why this order:** you must be self-grounded first, reset relational polarity second, and point the restored energy toward your vision third.\n\n**What people do instead:** they chase her when she pulls away, killing attraction and losing direction.\n\nMindset: polarity requires space, authority, and an exciting destination.",
       inputs: [
         {
           bundle: 'pro',

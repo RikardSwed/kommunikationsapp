@@ -3684,7 +3684,7 @@ const mindsetCollections = {
       name: "Validation",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"I need her to approve of my choices and be happy with me to feel okay about myself.\"\n\nThe belief that your worth as a man is determined by her immediate emotional state or approval.\n\nIt feels right because her smile brings instant relief to your anxious nervous system.\n\nBut it costs you your leadership, turning you into an approval-seeking boy who cannot hold frame.\n\nMindset: my worth comes from what I build, not from her immediate approval.",
+      description: "\"I need her to approve of my choices and be happy with me to feel okay about myself.\"\n\nThe belief that your worth as a man is determined by her immediate emotional state or approval.\n\n**Why it feels right:** her smile brings instant relief to your anxious nervous system.\n\n**What it costs:** your leadership, turning you into an approval-seeking boy who cannot hold frame.\n\nMindset: my worth comes from what I build, not from her immediate approval.",
       inputs: [
         { q: "I am afraid to change my style because she might mock me.", a: "\"I dress for my own self-respect. Her temporary mockery cannot alter my value.\"", bundle: 'pro' },
         { q: "I'm waiting for her to smile before I can relax in my own house.", a: "\"My emotional state is independent of her transient mood. Settle into my Seat.\"", bundle: 'pro' },
@@ -3700,7 +3700,7 @@ const mindsetCollections = {
       name: "Rationalization",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"I need to explain my logic, defend my motivations, and make her understand my point of view.\"\n\nThe belief that if you just explain yourself enough, she will logically agree with your boundary.\n\nIt feels right because you are a logical man and you want to be seen as reasonable and fair.\n\nBut it costs you authority, because DEERing communicates anxiety and submission to her judgment.\n\nMindset: I do not need to defend my choices to be valid.",
+      description: "\"I need to explain my logic, defend my motivations, and make her understand my point of view.\"\n\nThe belief that if you just explain yourself enough, she will logically agree with your boundary.\n\n**Why it feels right:** you are a logical man and you want to be seen as reasonable and fair.\n\n**What it costs:** authority, because DEERing communicates anxiety and submission to her judgment.\n\nMindset: I do not need to defend my choices to be valid.",
       inputs: [
         { q: "I feel the urge to write a long text explaining why I was ten minutes late.", a: "\"Explaining invites her to judge me. I state the fact once without DEERing.\"", bundle: 'pro' },
         { q: "I think I must convince her that my gym time is reasonable.", a: "\"I have the right to offer no reasons or excuses for my behavior.\"", bundle: 'pro' },
@@ -3716,7 +3716,7 @@ const mindsetCollections = {
       name: "Covers and Excuses",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"I can't take time for the gym, upgrade my style, or hold boundaries because my situation is different.\"\n\nThe belief that your circumstances, wife, career, or past prevent you from building frame.\n\nIt feels right because it shields your ego from the pain of failing or working outside your comfort zone.\n\nBut it costs you your future, keeping you trapped in emasculation and covert contracts.\n\nMindset: there are no excuses, only choices and consequences.",
+      description: "\"I can't take time for the gym, upgrade my style, or hold boundaries because my situation is different.\"\n\nThe belief that your circumstances, wife, career, or past prevent you from building frame.\n\n**Why it feels right:** it shields your ego from the pain of failing or working outside your comfort zone.\n\n**What it costs:** your future, keeping you trapped in emasculation and covert contracts.\n\nMindset: there are no excuses, only choices and consequences.",
       inputs: [
         { q: "I can't go to the gym because my wife gets too upset when I leave.", a: "\"Her discomfort is a test of my frame. I prioritize my physical foundation.\"", bundle: 'pro' },
         { q: "I can't upgrade my wardrobe because I'm not in peak shape yet.", a: "\"Style is for today. I buy clothes that fit now while I work on my build.\"", bundle: 'pro' },
@@ -3734,7 +3734,7 @@ const mindsetCollections = {
       name: "Authentic Kayfabe",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "Understanding that relationships are a \"Seduction Story\" where you are the protagonist; you play a character, but the character is based on your earned value.\nAuthentic men co-write the narrative with women rather than making them \"set pieces.\"",
+      description: "Understanding that relationships are a \"Seduction Story\" where you are the protagonist; you play a character, but the character is based on your earned value.\n\nAuthentic men co-write the narrative with women rather than making them \"set pieces.\"",
       inputs: [
         { q: "I feel like a \"fraud\" for using these techniques.", a: "\"Acting isn't a fantasy; it's a job. Being a good actor builds my real confidence.\"", bundle: 'pro' },
         { q: "I want her to love me for \"who I really am\" (Dick Whitman).", a: "\"She wants James Bond or Don Draper. I'll provide the frame she craves.\"", bundle: 'pro' },
@@ -3750,7 +3750,7 @@ const mindsetCollections = {
       name: "Morality is Results",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "Shedding external shaming or religious dogmas that produce misery and adopting a morality based on your chosen outcomes.\nAs long as there is not a law against it, and it gets you what you want, it is moral for you.",
+      description: "Shedding external shaming or religious dogmas that produce misery and adopting a morality based on your chosen outcomes.\n\nAs long as there is not a law against it, and it gets you what you want, it is moral for you.",
       inputs: [
         { q: "I feel \"guilty\" for being Machiavellian in my career.", a: "\"Everyone lies and manipulates. I'm choosing to play to win.\"", bundle: 'pro' },
         { q: "My priest/mom/culture says I should be \"Self-Sacrificing.\"", a: "\"Horses that no longer plow are sent to the glue factory. I'll live for myself.\"", bundle: 'pro' },
@@ -3766,7 +3766,7 @@ const mindsetCollections = {
       name: "Subtext",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"If I just use the right words and explain my logic, she will understand me.\"\n\nThe belief that relationship issues are resolved on the surface level of literal facts and arguments.\n\nIt feels right because you are a logical man who trusts literal language and clear debate.\n\nBut it costs you connection, ignoring the emotional subtext that actually drives her behavior.\n• **Subtext** — decoding the emotional medium under surface words\n\nMindset: subtext is the real language; words are just the vehicle.",
+      description: "\"If I just use the right words and explain my logic, she will understand me.\"\n\nThe belief that relationship issues are resolved on the surface level of literal facts and arguments.\n\n**Why it feels right:** you are a logical man who trusts literal language and clear debate.\n\n**What it costs:** connection, ignoring the emotional subtext that actually drives her behavior.\n• **Subtext** — decoding the emotional medium under surface words\n\nMindset: subtext is the real language; words are just the vehicle.",
       inputs: [
         { q: "I think proving my timeline was accurate will make her stop being angry.", a: "\"She isn't mad about the timeline; she feels unpartnered. I address her heart.\"", bundle: 'pro' },
         { q: "I feel frustrated that she doesn't say exactly what she means in plain English.", a: "\"Womanese is an emotional language. I decode the subtext instead of complaining.\"", bundle: 'pro' },
@@ -3782,7 +3782,7 @@ const mindsetCollections = {
       name: "Status",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"If I act tough and dominant, she will respect my authority and stop testing me.\"\n\nThe belief that high status requires being cold, aggressive, or dictatorial.\n\nIt feels right because it protects your ego from feeling vulnerable or disrespected.\n\nBut it costs you intimacy, forcing her to build emotional walls against your harshness.\n• **Status** — balancing unswayable authority with high-harmony warmth\n\nMindset: true status is unswayable, calm, and warmly inclusive.",
+      description: "\"If I act tough and dominant, she will respect my authority and stop testing me.\"\n\nThe belief that high status requires being cold, aggressive, or dictatorial.\n\n**Why it feels right:** it protects your ego from feeling vulnerable or disrespected.\n\n**What it costs:** intimacy, forcing her to build emotional walls against your harshness.\n• **Status** — balancing unswayable authority with high-harmony warmth\n\nMindset: true status is unswayable, calm, and warmly inclusive.",
       inputs: [
         { q: "I think shouting back shows that I won't be pushed around.", a: "\"Shouting reveals my internal panic. True high status speaks with calm authority.\"", bundle: 'pro' },
         { q: "I worry that being warm and playful makes me look weak or soft.", a: "\"High harmony combined with high status is the ideal leader. I bring warmth.\"", bundle: 'pro' },
@@ -3816,7 +3816,7 @@ const mindsetCollections = {
       name: "Apologies",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"I must apologize and grovel whenever someone is upset with me or points out a mistake.\"\n\nThe belief that any friction or error requires a submissive apology to restore peace.\n\nIt feels right because apologizing diffuses immediate tension and makes you feel like a \"good person.\"\n\nBut it costs you authority, signaling that you view yourself as defective and submissive.\n• **Apologies** — replacing groveling with clean acceptance and assertive boundaries\n\nMindset: an error requires correction, not self-flagellation.",
+      description: "\"I must apologize and grovel whenever someone is upset with me or points out a mistake.\"\n\nThe belief that any friction or error requires a submissive apology to restore peace.\n\n**Why it feels right:** apologizing diffuses immediate tension and makes you feel like a \"good person.\"\n\n**What it costs:** authority, signaling that you view yourself as defective and submissive.\n• **Apologies** — replacing groveling with clean acceptance and assertive boundaries\n\nMindset: an error requires correction, not self-flagellation.",
       inputs: [
         { q: "I feel the urge to say 'I'm so sorry' five times when I drop a glass.", a: "\"An error requires clean cleanup, not groveling. I state the fact once.\"", bundle: 'pro' },
         { q: "I want to apologize profusely because she is annoyed that I arrived late.", a: "\"I acknowledge my lateness cleanly through Negative Assertion without begging for forgiveness.\"", bundle: 'pro' },
@@ -3832,7 +3832,7 @@ const mindsetCollections = {
       name: "Mistakes",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"If I make a mistake, it proves I am incompetent, defective, or a failure.\"\n\nThe belief that mistakes ruin your value and frame, forcing you to defend or hide them.\n\nIt feels right because your ego wants to protect your image of being flawless and capable.\n\nBut it costs you credibility, because defensive lying and DEERing expose deep insecurity.\n• **Mistakes** — owning errors cleanly through Negative Assertion\n\nMindset: owning a mistake cleanly demonstrates unshakeable confidence.",
+      description: "\"If I make a mistake, it proves I am incompetent, defective, or a failure.\"\n\nThe belief that mistakes ruin your value and frame, forcing you to defend or hide them.\n\n**Why it feels right:** your ego wants to protect your image of being flawless and capable.\n\n**What it costs:** credibility, because defensive lying and DEERing expose deep insecurity.\n• **Mistakes** — owning errors cleanly through Negative Assertion\n\nMindset: owning a mistake cleanly demonstrates unshakeable confidence.",
       inputs: [
         { q: "I feel a massive urge to make up a lie when I forget to pay a bill on time.", a: "\"Lying comes from fear. I use Negative Assertion to own the oversight cleanly.\"", bundle: 'pro' },
         { q: "I get defensive and start arguing when she points out a wrong turn while driving.", a: "\"Defending a clear mistake is weak frame. I say 'You're right, I took a wrong turn.'\"", bundle: 'pro' },
@@ -3848,7 +3848,7 @@ const mindsetCollections = {
       name: "Conflict",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"Confrontation and tension are dangerous and must be ended immediately at all costs.\"\n\nThe belief that disagreement or emotional discomfort is a threat to the relationship.\n\nIt feels right because avoiding conflict brings instant relief to your anxious nervous system.\n\nBut it costs you self-respect, trapping you in pleaser habits and covert contracts.\n• **Conflict** — standing firm in tension without caving or DEERing\n\nMindset: healthy boundaries require standing firmly in temporary tension.",
+      description: "\"Confrontation and tension are dangerous and must be ended immediately at all costs.\"\n\nThe belief that disagreement or emotional discomfort is a threat to the relationship.\n\n**Why it feels right:** avoiding conflict brings instant relief to your anxious nervous system.\n\n**What it costs:** self-respect, trapping you in pleaser habits and covert contracts.\n• **Conflict** — standing firm in tension without caving or DEERing\n\nMindset: healthy boundaries require standing firmly in temporary tension.",
       inputs: [
         { q: "I want to cave to her unreasonable demands just to stop her shouting.", a: "\"Caving buys temporary quiet at the expense of long-term respect. I hold my boundary.\"", bundle: 'pro' },
         { q: "I feel intense physical anxiety when there is silence in the room after an argument.", a: "\"Silence is just tension settling. I breathe deeply and let the silence sit.\"", bundle: 'pro' },
@@ -3898,7 +3898,7 @@ const mindsetCollections = {
       name: "Contracting",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"If I am nice, attentive, and helpful, she is obligated to love me, respect me, and give me sex.\"\n\nThe belief that social and romantic relationships function like covert business transactions.\n\nIt feels right because you were taught that 'good behavior' is always rewarded with affection.\n\nBut it costs you polarity, turning intimacy into a bitter transaction that destroys genuine desire.\n• **Contracting** — replacing covert deals with clean, assertive desire\n\nMindset: genuine attraction cannot be bought with covert favors.",
+      description: "\"If I am nice, attentive, and helpful, she is obligated to love me, respect me, and give me sex.\"\n\nThe belief that social and romantic relationships function like covert business transactions.\n\n**Why it feels right:** you were taught that 'good behavior' is always rewarded with affection.\n\n**What it costs:** polarity, turning intimacy into a bitter transaction that destroys genuine desire.\n• **Contracting** — replacing covert deals with clean, assertive desire\n\nMindset: genuine attraction cannot be bought with covert favors.",
       inputs: [
         { q: "I feel cheated when I take her to an expensive dinner and she doesn't want to have sex.", a: "\"A dinner is a shared experience, not a coin inserted to receive sex. I drop covert deals.\"", bundle: 'pro' },
         { q: "I do extra chores around the house hoping she will notice and reward me with affection.", a: "\"Doing chores to buy affection is manipulative. I clean for my own standards or not at all.\"", bundle: 'pro' },
@@ -3914,7 +3914,7 @@ const mindsetCollections = {
       name: "Defense",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"I must explain my logic and justify my actions so she doesn't think I am selfish or wrong.\"\n\nThe belief that you need her logical agreement before your choices become valid.\n\nIt feels right because you want to be seen as a reasonable, fair, and good partner.\n\nBut it costs you authority, treating her as your judge and supervisor every time you DEER.\n• **Defense** — replacing explanations with unswayable authority\n\nMindset: an autonomous man needs no court defense to validate his choices.",
+      description: "\"I must explain my logic and justify my actions so she doesn't think I am selfish or wrong.\"\n\nThe belief that you need her logical agreement before your choices become valid.\n\n**Why it feels right:** you want to be seen as a reasonable, fair, and good partner.\n\n**What it costs:** authority, treating her as your judge and supervisor every time you DEER.\n• **Defense** — replacing explanations with unswayable authority\n\nMindset: an autonomous man needs no court defense to validate his choices.",
       inputs: [
         { q: "I feel a surge of panic when she asks 'Why did you do that?' and rush to give five reasons.", a: "\"Explaining my logic treats her as my judge. I state my choice once without DEERing.\"", bundle: 'pro' },
         { q: "I think that if I just explain my perspective enough times, she will stop being angry.", a: "\"Logic cannot fix an emotional storm. I hold my frame in calm, grounded silence.\"", bundle: 'pro' },
@@ -3948,7 +3948,7 @@ const mindsetCollections = {
       name: "Permission",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"I must get her agreement and approval before I can make major decisions for my life and family.\"\n\nThe belief that leadership requires total consensus and permission from your partner.\n\nIt feels right because consulting her on every detail feels respectful and safe from conflict.\n\nBut it costs you authority, forcing her into the decision-maker role and destroying sexual polarity.\n\nMindset: a leader leads autonomously; he does not request permission to steer the ship.",
+      description: "\"I must get her agreement and approval before I can make major decisions for my life and family.\"\n\nThe belief that leadership requires total consensus and permission from your partner.\n\n**Why it feels right:** consulting her on every detail feels respectful and safe from conflict.\n\n**What it costs:** authority, forcing her into the decision-maker role and destroying sexual polarity.\n\nMindset: a leader leads autonomously; he does not request permission to steer the ship.",
       inputs: [
         { q: "I feel terrified to buy new tools or equipment without asking her permission first.", a: "\"I am an autonomous man. I make decisions for my work and mission cleanly.\"", bundle: 'pro' },
         { q: "I hesitate to book a doctor's appointment or gym membership until she says it's okay.", a: "\"My health is my responsibility. I take action without asking for a green light.\"", bundle: 'pro' },
@@ -3964,7 +3964,7 @@ const mindsetCollections = {
       name: "Sacrificing Vision",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"It's better to scale down my grand vision and settle for mediocrity if my vision causes her anxiety.\"\n\nThe belief that your purpose and long-term vision should be sacrificed to keep her comfortable.\n\nIt feels right because dropping your ambition avoids immediate arguments and domestic friction.\n\nBut it costs you your legacy, filling you with covert resentment as you rot in comfortable mediocrity.\n\nMindset: an unbending vision is the greatest gift a captain offers his family.",
+      description: "\"It's better to scale down my grand vision and settle for mediocrity if my vision causes her anxiety.\"\n\nThe belief that your purpose and long-term vision should be sacrificed to keep her comfortable.\n\n**Why it feels right:** dropping your ambition avoids immediate arguments and domestic friction.\n\n**What it costs:** your legacy, filling you with covert resentment as you rot in comfortable mediocrity.\n\nMindset: an unbending vision is the greatest gift a captain offers his family.",
       inputs: [
         { q: "I am tempted to give up my dream of starting a business because she prefers a corporate job.", a: "\"My vision builds our ultimate freedom. I refuse to trade my purpose for her comfort.\"", bundle: 'pro' },
         { q: "I feel guilty for having grand financial goals when she says 'We have enough already.'", a: "\"Settling for enough is mediocrity. I build for extraordinary asset legacy.\"", bundle: 'pro' },
@@ -3980,7 +3980,7 @@ const mindsetCollections = {
       name: "Discomfort",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"If my leadership creates temporary tension or bad moods, I must be doing something wrong.\"\n\nThe belief that effective leadership should always produce immediate harmony and smiles.\n\nIt feels right because seeing her upset triggers your Nice Guy reflex to fix her emotional state.\n\nBut it costs you your frame, causing you to cave at the first sign of emotional pushback.\n\nMindset: genuine leadership embraces temporary tension to secure long-term alignment.",
+      description: "\"If my leadership creates temporary tension or bad moods, I must be doing something wrong.\"\n\nThe belief that effective leadership should always produce immediate harmony and smiles.\n\n**Why it feels right:** seeing her upset triggers your Nice Guy reflex to fix her emotional state.\n\n**What it costs:** your frame, causing you to cave at the first sign of emotional pushback.\n\nMindset: genuine leadership embraces temporary tension to secure long-term alignment.",
       inputs: [
         { q: "I feel an intense urge to apologize when she gives me a cold look after I set a boundary.", a: "\"Her cold look is a temporary test. I tolerate her discomfort and hold my frame.\"", bundle: 'pro' },
         { q: "I panic when she cries during a discussion about our financial budget limits.", a: "\"Tears are emotional weather, not a reason to abandon the budget. I stay present.\"", bundle: 'pro' },
@@ -4990,10 +4990,10 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Politeness builds friendships, but playful friction creates sexual attraction.",
+      name: "Politeness",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "",
+      description: "\"I should be extra polite and agreeable, because she is beautiful.\"\n\n**What is true instead:** every guy is polite to her. Playful teasing and friendly disagreement are what show you are not intimidated.\n\n**Why it feels right:** politeness feels safe. Nobody can be offended by it.\n\n**What it costs:** you land in interview mode and the friend zone, one pleasant answer at a time.\n\nMindset: politeness builds friendships, but playful friction creates sexual attraction.",
       inputs: [
         { q: "I should be extra polite because she is so beautiful.", a: "\"She gets polite treatment from every guy. Teasing her shows I am not intimidated by her looks.\"", bundle: 'pro' },
         { q: "I don't want to make fun of her job in case she takes it badly.", a: "\"Playfully teasing her about her work breaks the interview vibe and shows I have humor.\"", bundle: 'pro' },
@@ -5006,10 +5006,10 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Risking her temporary disapproval is necessary to trigger real attraction.",
+      name: "Disapproval",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "",
+      description: "\"If she rolls her eyes or doesn't laugh, I've failed.\"\n\n**What is true instead:** an eye roll or a sharp look means she is engaged. Attraction takes a moment to build.\n\n**Why it feels right:** her first reaction feels like the verdict.\n\n**What it costs:** you play it safe and serious, and never show the energy that sets you apart.\n\nMindset: risking her temporary disapproval is necessary to trigger real attraction.",
       inputs: [
         { q: "She looks serious, so I should be serious too.", a: "\"Her serious face is an invitation for me to bring lighthearted energy into her day.\"", bundle: 'pro' },
         { q: "What if she rolls her eyes at my playful comment?", a: "\"An eye roll means she is engaged and reacting. It is far better than polite boredom.\"", bundle: 'pro' },
@@ -5022,10 +5022,10 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Assuming interest creates the confidence that makes interest real.",
+      name: "Presumption",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "",
+      description: "\"I need a clear sign that she likes me before I act like she does.\"\n\n**What is true instead:** acting as if she is interested is a playful game that takes the pressure off both of you.\n\n**Why it feels right:** waiting for proof feels humble, and it protects you from looking arrogant.\n\n**What it costs:** the sign never comes, because the confidence it was waiting for never showed up.\n\nMindset: assuming interest creates the confidence that makes interest real.",
       inputs: [
         { q: "I need a clear sign from her before I flip the script.", a: "\"I don't wait for signs. I assume she is attracted and interact from that high-value frame.\"", bundle: 'pro' },
         { q: "It feels arrogant to assume she is hitting on me.", a: "\"Misinterpreting her comments as flirting is a playful game that relieves pressure.\"", bundle: 'pro' },
@@ -5038,10 +5038,10 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Releasing the need for control allows spontaneous attraction to happen.",
+      name: "Control",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "",
+      description: "\"I need a plan for what to say next, and every silence is mine to fill.\"\n\n**What is true instead:** unexpected turns and quiet moments are openings for play, not problems to fix.\n\n**Why it feels right:** a script feels like protection against awkwardness.\n\n**What it costs:** you become rigid and predictable, and spontaneous attraction has no room.\n\nMindset: releasing the need for control allows spontaneous attraction to happen.",
       inputs: [
         { q: "I need a planned script for what to say next.", a: "\"Scripts make me rigid. Being present and responding unpredictably is far more attractive.\"", bundle: 'pro' },
         { q: "I get nervous when the conversation takes an unexpected turn.", a: "\"Unexpected turns are opportunities for play. I lean into the surprise with humor.\"", bundle: 'pro' },
@@ -5072,10 +5072,10 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "True masculine status comes from internal approval, not external validation.",
+      name: "Approval Seeking",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "",
+      description: "\"I need her to laugh, agree and approve of me to feel I'm doing well.\"\n\n**What is true instead:** status comes from how you rate yourself. Holding your view without apologising is what she notices.\n\n**Why it feels right:** her approval is instant feedback that things are going well.\n\n**What it costs:** you nod along, apologise and reshape yourself, and lower your value with every step.\n\nMindset: true masculine status comes from internal approval, not external validation.",
       inputs: [
         { q: "I feel anxious when she doesn't laugh at my joke right away.", a: "\"I don't need her immediate laugh to feel validated. I enjoy my own humor and hold my frame.\"", bundle: 'pro' },
         { q: "I want to apologize whenever she disagrees with my opinion.", a: "\"Disagreement is natural. Holding my perspective without apologizing proves high status.\"", bundle: 'pro' },
@@ -5088,10 +5088,10 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Embracing social tension demonstrates strength and creates sexual attraction.",
+      name: "Fear of Conflict",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "",
+      description: "\"If there's tension, I've done something wrong. Better to back down.\"\n\n**What is true instead:** a challenge, a pause or a hostile friend is a test you pass by staying warm and unfazed.\n\n**Why it feels right:** smoothing things over ends the discomfort right away.\n\n**What it costs:** backing down shows she can shake you, and a man who can be shaken is not exciting.\n\nMindset: embracing social tension demonstrates strength and creates sexual attraction.",
       inputs: [
         { q: "I back down immediately when she challenges my statement.", a: "\"Backing down shows weakness. Holding my ground with humor proves I cannot be shaken.\"", bundle: 'pro' },
         { q: "I avoid calling out her rude behavior because I fear an argument.", a: "\"Tolerating rudeness destroys respect. Calling it out calmly sets a high-status standard.\"", bundle: 'pro' },
@@ -5104,10 +5104,10 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Physical beauty does not equal social value; I am equal to or better than any woman I meet.",
+      name: "Value Inferiority",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "",
+      description: "\"A woman this beautiful is out of my league.\"\n\n**What is true instead:** most men act like fans around her. A relaxed man who treats her as a normal person is rare.\n\n**Why it feels right:** her looks, clothes and status seem to prove the gap.\n\n**What it costs:** you treat her like a celebrity, and she treats you like a fan.\n\nMindset: physical beauty does not equal social value; I am equal to or better than any woman I meet.",
       inputs: [
         { q: "I feel intimidated by her expensive clothes and glamorous look.", a: "\"Labels don't define value. I evaluate her character and passion, not her designer outfit.\"", bundle: 'pro' },
         { q: "I assume she must have dozens of better guys chasing her.", a: "\"Most guys act like needy fans around her. My relaxed, challenging presence makes me rare.\"", bundle: 'pro' },
@@ -5120,10 +5120,10 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Taking the lead provides security and allows a woman to relax into her feminine energy.",
+      name: "Relinquishing Control",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "",
+      description: "\"Taking the lead will seem bossy. Better to let her decide.\"\n\n**What is true instead:** leading with warmth, choosing the place and proposing the time, is what lets her relax.\n\n**Why it feels right:** asking her feels considerate, and you cannot pick wrong.\n\n**What it costs:** she has to carry the direction, and a passive man loses her attraction.\n\nMindset: taking the lead provides security and allows a woman to relax into her feminine energy.",
       inputs: [
         { q: "I ask her where we should go instead of deciding myself.", a: "\"Leading means making the call. I choose the spot and invite her along.\"", bundle: 'pro' },
         { q: "I let her dictate the pace and direction of the conversation.", a: "\"I am the director of this interaction. I shift topics when things get dry.\"", bundle: 'pro' },
@@ -5154,10 +5154,10 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Emotional independence means handling internal stress without needing her validation.",
+      name: "Reassurance",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "",
+      description: "\"I need her to tell me I'm loved, attractive and doing fine.\"\n\n**What is true instead:** your worth is internal. You can share your life without using her as a crutch.\n\n**Why it feels right:** her reassurance calms the worry straight away.\n\n**What it costs:** constant checking signals insecurity and smothers the attraction you wanted confirmed.\n\nMindset: emotional independence means handling internal stress without needing her validation.",
       inputs: [
         { q: "I feel anxious when she doesn't tell me she loves me every day.", a: "\"My self-worth is internal. I don't need constant verbal reassurance to feel secure.\"", bundle: 'pro' },
         { q: "I want to vent all my work stress to her so she comforts me.", a: "\"I handle my own stress. I share my life without using her as an emotional crutch.\"", bundle: 'pro' },
@@ -5170,10 +5170,10 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Setting calm boundaries against bad behavior earns lasting respect and protects love.",
+      name: "Confrontation",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "",
+      description: "\"Calling out her bad behaviour will cause a fight, so I'll keep the peace.\"\n\n**What is true instead:** calm, early feedback on disrespect is not an attack. It is what earns respect.\n\n**Why it feels right:** letting it go avoids an uncomfortable scene today.\n\n**What it costs:** the peace is fake, resentment builds, and it comes out later as anger.\n\nMindset: setting calm boundaries against bad behavior earns lasting respect and protects love.",
       inputs: [
         { q: "I hesitate to tell her that her rude tone hurt because she might yell.", a: "\"Calling out disrespect isn't an attack. Setting calm standards earns respect.\"", bundle: 'pro' },
         { q: "I tolerate her tantrums because I want to keep the peace.", a: "\"Peace built on tolerating bad behavior is fake. Firm boundaries create real harmony.\"", bundle: 'pro' },
@@ -5186,10 +5186,10 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "General leadership means taking responsibility for direction while keeping her involved.",
+      name: "Decision Making",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "",
+      description: "\"I'll let her choose, so I can't choose wrong.\"\n\n**What is true instead:** leading means making the call and inviting her along, and owning it with humour if it turns out mediocre.\n\n**Why it feels right:** asking what she wants feels generous and safe.\n\n**What it costs:** she ends up running the relationship, and a passive man loses attraction.\n\nMindset: general leadership means taking responsibility for direction while keeping her involved.",
       inputs: [
         { q: "I let her pick every restaurant because I fear she won't like my choice.", a: "\"Leading means making a choice. I pick great spots and invite her along.\"", bundle: 'pro' },
         { q: "I wait for her to plan our weekend because I don't want the effort.", a: "\"Passive men lose attraction. Taking charge of weekend plans shows masculine drive.\"", bundle: 'pro' },
@@ -5220,10 +5220,10 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "A woman respects a man who stands firm against arbitrary rules with humor and warmth.",
+      name: "Compliance",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "",
+      description: "\"If she makes a rule, I have to follow it or she'll leave.\"\n\n**What is true instead:** petty rules are a test. Brushing them off with humour and warmth shows she cannot control you.\n\n**Why it feels right:** obeying keeps her happy in the moment.\n\n**What it costs:** every rule you follow turns you a little more into a doormat.\n\nMindset: a woman respects a man who stands firm against arbitrary rules with humor and warmth.",
       inputs: [
         { q: "I feel obligated to follow her texting curfew rules.", a: "\"I text when I choose. Obeying artificial curfews makes me look weak and controlled.\"", bundle: 'pro' },
         { q: "I worry she will break up if I squeeze her butt after she banned it.", a: "\"Testing boundaries with playful affection proves I am not intimidated by her rules.\"", bundle: 'pro' },
@@ -5236,10 +5236,10 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Making her earn my approval creates the challenge attractive women crave.",
+      name: "Pleasing",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "",
+      description: "\"My job is to keep her pleased, and to give her what she wants before she asks.\"\n\n**What is true instead:** making her pitch her ideas and earn your favour keeps her invested.\n\n**Why it feels right:** catering to her avoids her disappointment.\n\n**What it costs:** over-servicing kills the challenge, and the excitement goes with it.\n\nMindset: making her earn my approval creates the challenge attractive women crave.",
       inputs: [
         { q: "I always let her choose the restaurant so she stays happy.", a: "\"Catering to her constantly kills excitement. Making her pitch options keeps it fun.\"", bundle: 'pro' },
         { q: "I agree with her opinions even when I think she is wrong.", a: "\"Fake agreement destroys authenticity. Stating my real view creates real connection.\"", bundle: 'pro' },
@@ -5252,10 +5252,10 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "Authenticity and real emotional expression build genuine trust and attraction.",
+      name: "Emotional Suppression",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "",
+      description: "\"I should hide what I really feel, so I don't look weak or spoil the mood.\"\n\n**What is true instead:** sharing your real opinion, mood and humour shows a strong identity.\n\n**Why it feels right:** a pleasant front keeps things smooth.\n\n**What it costs:** fake agreement and fake smiles are transparent, and silent compliance breeds resentment.\n\nMindset: authenticity and real emotional expression build genuine trust and attraction.",
       inputs: [
         { q: "I pretend I enjoyed a movie I hated just to keep harmony.", a: "\"Sharing my authentic opinion shows I have a real identity and strong taste.\"", bundle: 'pro' },
         { q: "I hide that I had a stressful day because I fear looking weak.", a: "\"Reporting that I handled a hectic day shows strength, not weakness.\"", bundle: 'pro' },

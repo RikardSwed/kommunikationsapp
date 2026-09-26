@@ -6178,7 +6178,7 @@ const memorizeCollections = {
     },
     {
       name: "Core Idea",
-      description: "The foundational principles of Praxeology Volume 1: Frame by Rian Stone.\n1. **Mental Point of Origin** — internal locus of control\n2. **The Physical Signal** — physical embodiment and style\n3. **The OODA Loop** — rapid observation and calibration\n4. **Field Reporting** — objective after-action analysis\nThese four strategies form the base pillars that support your personal Vision.",
+      description: "The foundational principles of Praxeology Volume 1: Frame by Rian Stone.\n\n1. **Mental Point of Origin** — internal locus of control\n2. **The Physical Signal** — physical embodiment and style\n3. **The OODA Loop** — rapid observation and calibration\n4. **Field Reporting** — objective after-action analysis\n\nThese four strategies form the base pillars that support your personal Vision.",
       cards: [
         { q: "What are the four core strategies in this pack?", a: "Mental Point of Origin, The Physical Signal, The OODA Loop, and Field Reporting.", bundle: 'free' },
         { q: "What is Praxeology?", a: "The practical study of purposeful human action and intersexual dynamics.", bundle: 'free' },
@@ -6248,7 +6248,7 @@ const memorizeCollections = {
     },
     {
       name: "Collections",
-      description: "The three collections in this pack, and what each one makes you choose between:\n• **The Calibration Kit** — internal state: do you check point of origin, run an OODA loop, or field report?\n• **Command and Signal** — authority: do you anchor point of origin, project physical signal, or calibrate?\n• **All Four Strategies** — full integration: choosing between all four strategies across real-world pressure.\nOne question decides nearly all of it: what phase of action or reflection are you currently in?",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **The Calibration Kit** — internal state: do you check point of origin, run an OODA loop, or field report?\n• **Command and Signal** — authority: do you anchor point of origin, project physical signal, or calibrate?\n• **All Four Strategies** — full integration: choosing between all four strategies across real-world pressure.\n\nOne question decides nearly all of it: what phase of action or reflection are you currently in?",
       cards: [
         { q: "What are the three collections in this pack?", a: "The Calibration Kit, Command and Signal, and All Four Strategies.", bundle: 'pro' },
         { q: "What does \"The Calibration Kit\" make you choose between?", a: "Point of Origin (internal values), OODA Loop (tactical calibration), and Field Reporting (after-action analysis).", bundle: 'pro' },
@@ -6262,7 +6262,7 @@ const memorizeCollections = {
     },
     {
       name: "Sequences",
-      description: "The three sequences in this pack, and the order each one runs in:\n1. **The Unswayable Lead** — OODA Loop (Observe) → Point of Origin → OODA Loop (Act) → Field Reporting\n2. **The Frame Reset** — The Physical Signal → Mental Point of Origin → The OODA Loop\n3. **Calibrated Action** — Mental Point of Origin → The OODA Loop → Field Reporting\nIn each one, the order of the steps is what re-establishes safety and polarity.",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Unswayable Lead** — OODA Loop (Observe) → Point of Origin → OODA Loop (Act) → Field Reporting\n2. **The Frame Reset** — The Physical Signal → Mental Point of Origin → The OODA Loop\n3. **Calibrated Action** — Mental Point of Origin → The OODA Loop → Field Reporting\n\nIn each one, the order of the steps is what re-establishes safety and polarity.",
       cards: [
         { q: "What are the three sequences in this pack?", a: "The Unswayable Lead, The Frame Reset, and Calibrated Action.", bundle: 'pro' },
         { q: "What is the order in \"The Unswayable Lead\"?", a: "Observe (OODA), Point of Origin (Internal Check), Act (OODA), and Field Reporting.", bundle: 'pro' },
@@ -6276,7 +6276,7 @@ const memorizeCollections = {
     },
     {
       name: "Challenges",
-      description: "The five challenges to master in this pack:\n• **Seeking the Sign** — when you lean in or dance for her approval\n• **The Hamster Wheel** — when she blasts you with emotional storms or accusations\n• **Nice Guy Relapses** — when you feel the urge to DEER, lie, or apologize\n• **Physical Neglect** — when your style, posture, or fitness drifts\n• **Ego and Paranoia** — when your ego invents backstories or shifts goalposts\nEach category organizes by problem type rather than strategy.",
+      description: "The five challenges to master in this pack:\n\n• **Seeking the Sign** — when you lean in or dance for her approval\n• **The Hamster Wheel** — when she blasts you with emotional storms or accusations\n• **Nice Guy Relapses** — when you feel the urge to DEER, lie, or apologize\n• **Physical Neglect** — when your style, posture, or fitness drifts\n• **Ego and Paranoia** — when your ego invents backstories or shifts goalposts\n\nEach category organizes by problem type rather than strategy.",
       cards: [
         { q: "What are the five challenges in this pack?", a: "Seeking the Sign, The Hamster Wheel, Nice Guy Relapses, Physical Neglect, and Ego and Paranoia.", bundle: 'pro' },
         { q: "How do you handle \"Seeking the Sign\"?", a: "By recognizing approval-seeking behavior and returning to Mental Point of Origin.", bundle: 'pro' },
@@ -6290,7 +6290,7 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "These are the mindsets you practise in this pack:\n• **You Belong to You** — rational egoism and self-ownership\n• **Validation** — your worth comes from what you build, not her approval\n• **Rationalization** — you do not need to defend or excuse your choices\n• **Covers and Excuses** — there are no excuses, only choices and consequences\nEach mindset shifts you from external validation to internal authority.",
+      description: "These are the mindsets you practise in this pack:\n\n• **You Belong to You** — rational egoism and self-ownership\n• **Validation** — your worth comes from what you build, not her approval\n• **Rationalization** — you do not need to defend or excuse your choices\n• **Covers and Excuses** — there are no excuses, only choices and consequences\n\nEach mindset shifts you from external validation to internal authority.",
       cards: [
         { q: "What are the four mindsets in this pack?", a: "You Belong to You, Validation, Rationalization, and Covers and Excuses.", bundle: 'pro' },
         { q: "What does \"You Belong to You\" teach?", a: "That you are your own primary judge, and your frame belongs to you.", bundle: 'pro' },
@@ -6462,7 +6462,7 @@ const memorizeCollections = {
     },
     {
       name: "Core Idea",
-      description: "The foundational principles of Praxeology Volume 1, Part 3: Assertive Defense by Rian Stone.\n• **Broken Record** — calm repetition of your stance\n• **Negative Inquiry** — probing vague criticism\n• **Negative Assertion** — accepting mistakes cleanly\n• **Fogging** — agreeing with truth or probability\nThese four verbal tools protect your frame from manipulation and emotional pressure.",
+      description: "The foundational principles of Praxeology Volume 1, Part 3: Assertive Defense by Rian Stone.\n\n• **Broken Record** — calm repetition of your stance\n• **Negative Inquiry** — probing vague criticism\n• **Negative Assertion** — accepting mistakes cleanly\n• **Fogging** — agreeing with truth or probability\n\nThese four verbal tools protect your frame from manipulation and emotional pressure.",
       cards: [
         { q: "What are the four core strategies in this pack?", a: "Broken Record, Negative Inquiry, Negative Assertion, and Fogging.", bundle: 'free' },
         { q: "What is Manuel Smith's book that inspired these assertive techniques?", a: "\"When I Say No, I Feel Guilty.\"", bundle: 'free' },
@@ -6532,7 +6532,7 @@ const memorizeCollections = {
     },
     {
       name: "Collections",
-      description: "The three collections in this pack, and what each one makes you choose between:\n• **Assertive Defense** — core disarming moves against verbal pressure\n• **Neutralizing Criticism** — choosing between fogging, negative assertion, and broken record\n• **Standing Your Ground** — choosing between broken record, negative inquiry, and fogging\nOne question decides nearly all of it: what type of verbal attack or pressure are you facing?",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Assertive Defense** — core disarming moves against verbal pressure\n• **Neutralizing Criticism** — choosing between fogging, negative assertion, and broken record\n• **Standing Your Ground** — choosing between broken record, negative inquiry, and fogging\n\nOne question decides nearly all of it: what type of verbal attack or pressure are you facing?",
       cards: [
         { q: "What are the three collections in this pack?", a: "Assertive Defense, Neutralizing Criticism, and Standing Your Ground.", bundle: 'pro' },
         { q: "What is the focus of \"Assertive Defense\"?", a: "Applying the four core verbal techniques against direct boundary tests.", bundle: 'pro' },
@@ -6546,7 +6546,7 @@ const memorizeCollections = {
     },
     {
       name: "Sequences",
-      description: "The three sequences in this pack, and the order each one runs in:\n1. **The Assertive Shield** — Fogging → Negative Inquiry → Broken Record\n2. **Neutralizing the Attack** — Negative Assertion → Fogging → Broken Record\n3. **Probing the Hostility** — Negative Inquiry → Fogging → Broken Record\nIn each sequence, the order of the steps is what disarms hostility and protects your frame.",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Assertive Shield** — Fogging → Negative Inquiry → Broken Record\n2. **Neutralizing the Attack** — Negative Assertion → Fogging → Broken Record\n3. **Probing the Hostility** — Negative Inquiry → Fogging → Broken Record\n\nIn each sequence, the order of the steps is what disarms hostility and protects your frame.",
       cards: [
         { q: "What are the three sequences in this pack?", a: "The Assertive Shield, Neutralizing the Attack, and Probing the Hostility.", bundle: 'pro' },
         { q: "What is the order in \"The Assertive Shield\"?", a: "Fogging, then Negative Inquiry, and finally Broken Record.", bundle: 'pro' },
@@ -6560,7 +6560,7 @@ const memorizeCollections = {
     },
     {
       name: "Challenges",
-      description: "The five challenges to master in this pack:\n• **Shaming and Labels** — disarming character attacks and insults\n• **Aggressive Demands** — holding your line against loud shouting and pressure\n• **Guilt Trips** — neutralizing emotional manipulation and self-pity\n• **Passive-Aggressive Sniping** — exposing subtle digs and sarcasm\n• **Persistent Nagging** — out-lasting repeated complaints without losing calm\nEach category organizes by problem type rather than strategy.",
+      description: "The five challenges to master in this pack:\n\n• **Shaming and Labels** — disarming character attacks and insults\n• **Aggressive Demands** — holding your line against loud shouting and pressure\n• **Guilt Trips** — neutralizing emotional manipulation and self-pity\n• **Passive-Aggressive Sniping** — exposing subtle digs and sarcasm\n• **Persistent Nagging** — out-lasting repeated complaints without losing calm\n\nEach category organizes by problem type rather than strategy.",
       cards: [
         { q: "What are the five challenges in this pack?", a: "Shaming and Labels, Aggressive Demands, Guilt Trips, Passive-Aggressive Sniping, and Persistent Nagging.", bundle: 'pro' },
         { q: "How do you handle \"Shaming and Labels\"?", a: "By using Fogging on probabilities or Negative Inquiry to demand specific evidence.", bundle: 'pro' },
@@ -6574,7 +6574,7 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The four mindsets you practise in this pack:\n• **The Assertive Rights** — internalizing Manuel Smith's Bill of Assertive Rights\n• **Apologies** — replacing submissive groveling with clean acceptance\n• **Mistakes** — accepting errors cleanly without defensive lying\n• **Conflict** — standing firm in emotional tension without caving\nIn every one, the belief that gets in the way feels like peace from the inside.",
+      description: "The four mindsets you practise in this pack:\n\n• **The Assertive Rights** — internalizing Manuel Smith's Bill of Assertive Rights\n• **Apologies** — replacing submissive groveling with clean acceptance\n• **Mistakes** — accepting errors cleanly without defensive lying\n• **Conflict** — standing firm in emotional tension without caving\n\nIn every one, the belief that gets in the way feels like peace from the inside.",
       cards: [
         { q: "What are the four mindsets in this pack?", a: "The Assertive Rights, Apologies, Mistakes, and Conflict.", bundle: 'pro' },
         { q: "What does \"The Assertive Rights\" teach you?", a: "That you are the ultimate judge of your own behavior, values, and choices.", bundle: 'pro' },
@@ -8506,7 +8506,7 @@ const memorizeCollections = {
     },
     {
       name: "Collections",
-      description: "This pack includes three collection decks:\n\n• Friction & Spark\n• Breaking the Interview\n• Shifting the Vibe\n\nUse these decks to practice choosing the right move when multiple strategies could work.",
+      description: "This pack includes three collection decks:\n\n• **Friction & Spark**\n• **Breaking the Interview**\n• **Shifting the Vibe**\n\nUse these decks to practice choosing the right move when multiple strategies could work.",
       cards: [
         { q: "What is the purpose of Collection decks?", a: "To train choosing between multiple strategies when an open situation allows different moves.", bundle: 'free' },
         { q: "Which strategies make up \"Friction & Spark\"?", a: "Playfully Challenging Humor and Making Fun of Her Answers.", bundle: 'free' },
@@ -8520,7 +8520,7 @@ const memorizeCollections = {
     },
     {
       name: "Sequences",
-      description: "This pack includes three sequence decks:\n\n• Moving from \"Nice Guy\" to \"Lover\"\n• The \"Unpredictable\" Closer\n• Sparking the Cold Approach\n\nUse these decks to master multi-step conversational flows.",
+      description: "This pack includes three sequence decks:\n\n• Moving from \"Nice Guy\" to \"Lover\"\n• **The \"Unpredictable\" Closer**\n• **Sparking the Cold Approach**\n\nUse these decks to master multi-step conversational flows.",
       cards: [
         { q: "What do Sequence decks train?", a: "The fixed order of moves required to transition an interaction across multiple stages.", bundle: 'free' },
         { q: "What is Step 1 in \"Moving from Nice Guy to Lover\"?", a: "The Statement-Question Combo to establish context without interrogating.", bundle: 'free' },
@@ -8534,7 +8534,7 @@ const memorizeCollections = {
     },
     {
       name: "Challenges",
-      description: "This pack includes five challenge decks:\n\n• The \"Interrogation\" Trap\n• Polite Distance\n• Skeptical Testing\n• Flat Conversations\n• Defensive Posturing\n\nUse these decks to handle difficult social situations and stalls.",
+      description: "This pack includes five challenge decks:\n\n• **The \"Interrogation\" Trap**\n• **Polite Distance**\n• **Skeptical Testing**\n• **Flat Conversations**\n• **Defensive Posturing**\n\nUse these decks to handle difficult social situations and stalls.",
       cards: [
         { q: "What is the purpose of Challenge decks?", a: "To train applying strategies against specific real-world obstacles and difficult reactions.", bundle: 'free' },
         { q: "How do you handle \"The Interrogation Trap\"?", a: "Use humor or statements to derail dry factual questions.", bundle: 'free' },
@@ -8548,7 +8548,7 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "This pack includes five mindset decks:\n\n• The \"Prize\" Mentality\n• Politeness\n• Disapproval\n• Presumption\n• Control\n\nUse these decks to overcome the limiting beliefs that block attraction.",
+      description: "This pack includes five mindset decks:\n\n• **The \"Prize\" Mentality**\n• **Politeness**\n• **Disapproval**\n• **Presumption**\n• **Control**\n\nUse these decks to overcome the limiting beliefs that block attraction.",
       cards: [
         { q: "What is the primary focus of Mindset decks?", a: "Rebalancing the internal beliefs that stop a man from executing strategies cleanly.", bundle: 'free' },
         { q: "What belief blocks men in the \"Politeness\" deck?", a: "The false belief that being direct or teasing will make women dislike them.", bundle: 'free' },
@@ -8664,7 +8664,7 @@ const memorizeCollections = {
     },
     {
       name: "Collections",
-      description: "This pack contains three collection decks:\n\n• The Selection Mindset\n• Passing Social Pressure\n• Establishing Dominance\n\nUse these decks to practice choosing between moves when several strategies would work.",
+      description: "This pack contains three collection decks:\n\n• **The Selection Mindset**\n• **Passing Social Pressure**\n• **Establishing Dominance**\n\nUse these decks to practice choosing between moves when several strategies would work.",
       cards: [
         { q: "What is the purpose of Collection decks?", a: "To train selecting the right high-status move when an open situation allows multiple options.", bundle: 'free' },
         { q: "Which strategies make up \"Passing Social Pressure\"?", a: "Passing Confidence Tests, Flipping the Script, and Avoiding Self-Qualification.", bundle: 'free' },
@@ -8678,7 +8678,7 @@ const memorizeCollections = {
     },
     {
       name: "Sequences",
-      description: "This pack contains three sequence decks:\n\n• From Challenge to Lead\n• The \"Selector\" Interaction\n• Reclaiming the Frame\n\nUse these decks to master multi-step conversational flows.",
+      description: "This pack contains three sequence decks:\n\n• **From Challenge to Lead**\n• **The \"Selector\" Interaction**\n• **Reclaiming the Frame**\n\nUse these decks to master multi-step conversational flows.",
       cards: [
         { q: "What do Sequence decks train?", a: "The exact multi-step progression needed to turn a challenge into masculine leadership.", bundle: 'free' },
         { q: "What is Step 1 in \"From Challenge to Lead\"?", a: "Passing Confidence Tests to absorb her initial test with humor.", bundle: 'free' },
@@ -8692,7 +8692,7 @@ const memorizeCollections = {
     },
     {
       name: "Challenges",
-      description: "This pack contains five challenge decks:\n\n• Confidence Attacks\n• Status Intimidation\n• Social Scolding\n• The \"Are You a Player?\" Trap\n• Dismissive Behavior\n\nUse these decks to handle high-pressure social challenges.",
+      description: "This pack contains five challenge decks:\n\n• **Confidence Attacks**\n• **Status Intimidation**\n• **Social Scolding**\n• **The \"Are You a Player?\" Trap**\n• **Dismissive Behavior**\n\nUse these decks to handle high-pressure social challenges.",
       cards: [
         { q: "What is the goal of Challenge decks?", a: "To practice applying strategies against difficult social obstacles and aggressive tests.", bundle: 'free' },
         { q: "How do you handle Status Intimidation?", a: "Maintain equal status and evaluate her character rather than her designer labels.", bundle: 'free' },
@@ -8706,7 +8706,7 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "This pack contains five mindset decks:\n\n• The Selector's Frame\n• Approval Seeking\n• Fear of Conflict\n• Value Inferiority\n• Relinquishing Control\n\nUse these decks to overcome the limiting beliefs that weaken your presence.",
+      description: "This pack contains five mindset decks:\n\n• **The Selector's Frame**\n• **Approval Seeking**\n• **Fear of Conflict**\n• **Value Inferiority**\n• **Relinquishing Control**\n\nUse these decks to overcome the limiting beliefs that weaken your presence.",
       cards: [
         { q: "What do Mindset decks target?", a: "The internal limiting beliefs that stop a man from executing high-status strategies cleanly.", bundle: 'free' },
         { q: "What belief is corrected in \"Approval Seeking\"?", a: "The idea that you need a woman's validation to feel confident and high status.", bundle: 'free' },
@@ -8808,7 +8808,7 @@ const memorizeCollections = {
     },
     {
       name: "Collections",
-      description: "This pack contains three collection decks:\n\n• Relationship Dynamics\n• Holding the Line\n• Guiding the Vibe\n\nUse these decks to practice selecting between leadership moves in daily life.",
+      description: "This pack contains three collection decks:\n\n• **Relationship Dynamics**\n• **Holding the Line**\n• **Guiding the Vibe**\n\nUse these decks to practice selecting between leadership moves in daily life.",
       cards: [
         { q: "What is the purpose of Collection decks?", a: "To train selecting the right strategy when a situation offers multiple valid choices.", bundle: 'free' },
         { q: "Which strategies form \"Holding the Line\"?", a: "Addressing Bad Behavior, Lovingly Expecting More, and Emotional Independence.", bundle: 'free' },
@@ -8822,7 +8822,7 @@ const memorizeCollections = {
     },
     {
       name: "Sequences",
-      description: "This pack contains three sequence decks:\n\n• The \"Good Girl\" Loop\n• The \"Respect Reset\"\n• Taking the Reins\n\nUse these decks to master multi-step relationship progressions.",
+      description: "This pack contains three sequence decks:\n\n• **The \"Good Girl\" Loop**\n• The \"Respect Reset\"\n• **Taking the Reins**\n\nUse these decks to master multi-step relationship progressions.",
       cards: [
         { q: "What do Sequence decks train?", a: "The exact multi-step progression needed to guide relationship interactions predictably.", bundle: 'free' },
         { q: "What is Step 1 in \"The Good Girl Loop\"?", a: "Lovingly Expecting More to make a warm, small request.", bundle: 'free' },
@@ -8836,7 +8836,7 @@ const memorizeCollections = {
     },
     {
       name: "Challenges",
-      description: "This pack contains five challenge decks:\n\n• Relationship Friction\n• Disrespectful Snaps\n• Testing Boundaries\n• Passive Resistance\n• Relationship Stagnation\n\nUse these decks to handle high-pressure relationship obstacles.",
+      description: "This pack contains five challenge decks:\n\n• **Relationship Friction**\n• **Disrespectful Snaps**\n• **Testing Boundaries**\n• **Passive Resistance**\n• **Relationship Stagnation**\n\nUse these decks to handle high-pressure relationship obstacles.",
       cards: [
         { q: "What is the objective of Challenge decks?", a: "To apply strategies against specific, difficult relationship friction points.", bundle: 'free' },
         { q: "How do you handle \"Disrespectful Snaps\"?", a: "Call out the rude tone calmly without anger or emotional retaliation.", bundle: 'free' },
@@ -8850,7 +8850,7 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "This pack contains four mindset decks:\n\n• Bringing Out the Best\n• Reassurance\n• Confrontation\n• Decision Making\n\nUse these decks to eliminate internal doubts that undermine leadership.",
+      description: "This pack contains four mindset decks:\n\n• **Bringing Out the Best**\n• **Reassurance**\n• **Confrontation**\n• **Decision Making**\n\nUse these decks to eliminate internal doubts that undermine leadership.",
       cards: [
         { q: "What do Mindset decks address?", a: "The internal limiting thoughts that stop a man from leading assertively in love.", bundle: 'free' },
         { q: "What belief is corrected in \"Reassurance\"?", a: "The false idea that you need constant external validation to feel secure.", bundle: 'free' },
@@ -8952,7 +8952,7 @@ const memorizeCollections = {
     },
     {
       name: "Collections",
-      description: "This pack contains three collection decks:\n\n• Holding the Frame\n• Setting the Vibe\n• Managing Friction\n\nUse these decks to practice selecting the best frame-holding move across varied contexts.",
+      description: "This pack contains three collection decks:\n\n• **Holding the Frame**\n• **Setting the Vibe**\n• **Managing Friction**\n\nUse these decks to practice selecting the best frame-holding move across varied contexts.",
       cards: [
         { q: "What is the purpose of Collection decks?", a: "To train selecting the right frame-holding strategy when multiple moves are possible.", bundle: 'free' },
         { q: "Which strategies form \"Setting the Vibe\"?", a: "The \"Let Her Win You Over\" Move, Expressing Real Moods, and Restoring the Spark.", bundle: 'free' },
@@ -8966,7 +8966,7 @@ const memorizeCollections = {
     },
     {
       name: "Sequences",
-      description: "This pack contains three sequence decks:\n\n• The \"Friction to Dominance\" Sequence\n• The \"Selector\" Date Loop\n• Reclaiming Authority\n\nUse these decks to master multi-step frame-holding progressions.",
+      description: "This pack contains three sequence decks:\n\n• **The \"Friction to Dominance\" Sequence**\n• **The \"Selector\" Date Loop**\n• **Reclaiming Authority**\n\nUse these decks to master multi-step frame-holding progressions.",
       cards: [
         { q: "What do Sequence decks train?", a: "The exact multi-step progression required to handle tests and establish dominance.", bundle: 'free' },
         { q: "What is Step 1 in \"The Friction to Dominance Sequence\"?", a: "Ignoring Ridiculous Rules to laugh off her arbitrary restriction.", bundle: 'free' },
@@ -8980,7 +8980,7 @@ const memorizeCollections = {
     },
     {
       name: "Challenges",
-      description: "This pack contains five challenge decks:\n\n• Relationship Stalls\n• Arbitrary Demands\n• Emotional Distance\n• Passive Testing\n• Routine Traps\n\nUse these decks to handle high-friction relationship obstacles.",
+      description: "This pack contains five challenge decks:\n\n• **Relationship Stalls**\n• **Arbitrary Demands**\n• **Emotional Distance**\n• **Passive Testing**\n• **Routine Traps**\n\nUse these decks to handle high-friction relationship obstacles.",
       cards: [
         { q: "What is the goal of Challenge decks?", a: "To apply frame-holding strategies against stubborn relationship obstacles and tests.", bundle: 'free' },
         { q: "How do you disarm Arbitrary Demands?", a: "Laugh off texting curfews and demand she pitch why you should fulfill requests.", bundle: 'free' },
@@ -8994,7 +8994,7 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "This pack contains four mindset decks:\n\n• Independent Confidence\n• Compliance\n• Pleasing\n• Emotional Suppression\n\nUse these decks to eliminate internal limiting beliefs that weaken your frame.",
+      description: "This pack contains four mindset decks:\n\n• **Independent Confidence**\n• **Compliance**\n• **Pleasing**\n• **Emotional Suppression**\n\nUse these decks to eliminate internal limiting beliefs that weaken your frame.",
       cards: [
         { q: "What do Mindset decks target?", a: "The internal limiting beliefs that stop a man from holding his frame assertively.", bundle: 'free' },
         { q: "What belief is corrected in \"Compliance\"?", a: "The false idea that obeying arbitrary rules is necessary to avoid arguments and keep love.", bundle: 'free' },
@@ -9255,7 +9255,7 @@ const memorizeCollections = {
     },
     {
       name: "Core Idea",
-      description: "High-Value Openings teaches how to initiate cold approach interactions with confidence, unshakeable frame control, and immediate curiosity.\n\nBy eliminating needy interview questions and leading with bold observations and open loops, you create instant engagement and conversational momentum.\n\nThis pack teaches four core strategies:\n\n• Statement Openers\n• Narrating the Frame\n• Open Loops (The Cookie)\n• Question-Answer-Tease (QAT)",
+      description: "High-Value Openings teaches how to initiate cold approach interactions with confidence, unshakeable frame control, and immediate curiosity.\n\nBy eliminating needy interview questions and leading with bold observations and open loops, you create instant engagement and conversational momentum.\n\nThis pack teaches four core strategies:\n\n• **Statement Openers**\n• **Narrating the Frame**\n• **Open Loops (The Cookie)**\n• **Question-Answer-Tease (QAT)**",
       cards: [
         { q: "What is the primary focus of High-Value Openings?", a: "Initiating cold approaches with high social status, intrigue, and unshakeable frame control.", bundle: 'free' },
         { q: "Why should you avoid standard interview-style questions when opening?", a: "Interview questions place the burden of entertaining on her and signal low social value.", bundle: 'free' },

@@ -4491,7 +4491,7 @@ const collections = {
       name: "Mental Point of Origin",
       guideFront: "Start from what you want when...",
       guideBack: "Your own want, stated or thought",
-      description: "Defining your own interests, values, and desires as the primary basis for your decisions and actions.\nIt works because it shifts you from seeking external validation to an internal locus of control; you stop being a set piece in someone else's play and become the director of your own.\n\n• \"What do I want in this situation?\"\n• \"What is in this for me?\"\n• \"I am my own judge.\"\n\nUnderlying Categories:\n1. The Self-Interest Check — asking what you actually want before complying.\n2. The Validation Audit — noticing when you are acting solely to please her.\n\nMindset: You are the protagonist of your life, not a supporting character in hers.",
+      description: "Defining your own interests, values, and desires as the primary basis for your decisions and actions.\n\n**Why it works:** it shifts you from seeking external validation to an internal locus of control; you stop being a set piece in someone else's play and become the director of your own.\n\n• \"What do I want in this situation?\"\n• \"What is in this for me?\"\n• \"I am my own judge.\"\n\n**Under-categories:**\n1. The Self-Interest Check — asking what you actually want before complying.\n2. The Validation Audit — noticing when you are acting solely to please her.\n\nMindset: You are the protagonist of your life, not a supporting character in hers.",
       inputs: [
         { q: "She asks for your opinion on two paint colors and you're afraid to pick the \"wrong\" one.", a: "(Point of Origin) \"I like the blue one better. That's my preference.\"", bundle: 'free' },
         { q: "You feel a strong urge to explain your decision so she won't be mad.", a: "(Internal) \"I have the right to offer no reasons or excuses for my behavior.\"", bundle: 'free' },
@@ -4507,7 +4507,7 @@ const collections = {
       name: "The Physical Signal",
       guideFront: "Upgrade how you look when...",
       guideBack: "A deliberate change in style or grooming",
-      description: "Using your physique, grooming, and style as a non-verbal method of communicating high status and self-respect.\nIt works because everyone \"judges a book by its cover\"; by taking control of your presentation, you send a message of authority and value before you even speak.\n\n• \"Dress to communicate, not just to cover.\"\n• \"Hygiene is the detail that proves you care about the big picture.\"\n• \"Style is coherent communication.\"\n\nUnderlying Categories:\n1. Grooming Discipline — maintaining the \"basics\" as a sign of self-care.\n2. Purposeful Wardrobe — choosing clothes that fit an archetype (Rugged, Refined, Rakish).\n\nMindset: If you don't treat the man in the mirror with respect, no one else will either.",
+      description: "Using your physique, grooming, and style as a non-verbal method of communicating high status and self-respect.\n\n**Why it works:** everyone \"judges a book by its cover\"; by taking control of your presentation, you send a message of authority and value before you even speak.\n\n• \"Dress to communicate, not just to cover.\"\n• \"Hygiene is the detail that proves you care about the big picture.\"\n• \"Style is coherent communication.\"\n\n**Under-categories:**\n1. Grooming Discipline — maintaining the \"basics\" as a sign of self-care.\n2. Purposeful Wardrobe — choosing clothes that fit an archetype (Rugged, Refined, Rakish).\n\nMindset: If you don't treat the man in the mirror with respect, no one else will either.",
       inputs: [
         { q: "You've been wearing oversized, \"comfortable\" clothes that make you look like a teenager.", a: "(Style) Get your clothes tailored to fit your actual build.", bundle: 'free' },
         { q: "You are about to go on a date and realize you haven't worn cologne in years.", a: "(Hygiene) Apply a signature scent to your chest to leave a lasting memory.", bundle: 'free' },
@@ -4523,7 +4523,7 @@ const collections = {
       name: "The OODA Loop",
       guideFront: "Observe, adjust and act when...",
       guideBack: "An observation, and the next move",
-      description: "A four-step process (Observe, Orient, Decide, Act) to overcome obstacles and fix life problems with agility.\nIt works because it forces you to assess reality objectively rather than emotionally, allowing for rapid learning and adjustment in real-time.\n\n• \"Observe the results, then reiterate.\"\n• \"Orientation is about seeing things as they are, not as you want them to be.\"\n\nUnderlying Categories:\n1. The Calibration Cycle — observing her reaction and adjusting your lead.\n2. The Reality Check — Orienting yourself to the proper mental model.\n\nMindset: Calibration is a constant process; there are no \"final\" victories, only iterations.",
+      description: "A four-step process (Observe, Orient, Decide, Act) to overcome obstacles and fix life problems with agility.\n\n**Why it works:** it forces you to assess reality objectively rather than emotionally, allowing for rapid learning and adjustment in real-time.\n\n• \"Observe the results, then reiterate.\"\n• \"Orientation is about seeing things as they are, not as you want them to be.\"\n\n**Under-categories:**\n1. The Calibration Cycle — observing her reaction and adjusting your lead.\n2. The Reality Check — Orienting yourself to the proper mental model.\n\nMindset: Calibration is a constant process; there are no \"final\" victories, only iterations.",
       inputs: [
         { q: "Your wife hasn't responded to your new \"Alpha\" behavior the way the book said she would.", a: "(Observe) Notice her specific reaction without getting butthurt. (Orient) Re-read the model.", bundle: 'free' },
         { q: "You just set a boundary and she is lashing out with a \"Hamster\" rant.", a: "(Observe) She is testing the new frame. (Decide) Stay calm and repeat the boundary.", bundle: 'free' },
@@ -4539,7 +4539,7 @@ const collections = {
       name: "Field Reporting",
       guideFront: "Write down what you did when...",
       guideBack: "A past-tense note on your own actions",
-      description: "Objective documentation of actions and consequences, written in the past tense, to bypass the ego and selective memory.\nIt works because your brain uses \"creative flair\" when remembering; the written word forces you to face the hard facts of your own failures and successes.\n\n• \"Write it in the past tense.\"\n• \"You must be the protagonist.\"\n• \"Leave your morality and need for absolution at the door.\"\n\nUnderlying Categories:\n1. The Protagonist Shift — rewriting the story from your perspective, not hers.\n2. The Detail Audit — noticing what you omitted or exaggerated (e.g., her pregnancy or your affair).\n\nMindset: Field reports are after-action reports, not journals; they are tools for utility, not emotional venting.",
+      description: "Objective documentation of actions and consequences, written in the past tense, to bypass the ego and selective memory.\n\n**Why it works:** your brain uses \"creative flair\" when remembering; the written word forces you to face the hard facts of your own failures and successes.\n\n• \"Write it in the past tense.\"\n• \"You must be the protagonist.\"\n• \"Leave your morality and need for absolution at the door.\"\n\n**Under-categories:**\n1. The Protagonist Shift — rewriting the story from your perspective, not hers.\n2. The Detail Audit — noticing what you omitted or exaggerated (e.g., her pregnancy or your affair).\n\nMindset: Field reports are after-action reports, not journals; they are tools for utility, not emotional venting.",
       inputs: [
         { q: "You just had a massive fight and you're feeling like a \"victim.\"", a: "(Field Report) Write down exactly what *you* did and said, focusing on your own choices.", bundle: 'free' },
         { q: "You want to track your progress in the gym or your career.", a: "(Field Report) Journal the numbers and the actions taken to create a positive feedback loop.", bundle: 'free' },
@@ -4557,7 +4557,7 @@ const collections = {
       name: "Status/Harmony Calibration",
       guideFront: "Take the high, warm position when...",
       guideBack: "A higher-status, cooperative line",
-      description: "Analyzing communication along two axes: Status (Higher/Lower) and Harmony (Cooperative/Adversarial) to determine the \"pecking order\" and intent.\nIt works because communication involves both the signal and the process; understanding which quadrant a speaker is in allows you to shift the dynamic toward a sustainable, high-status outcome.\n\n• \"I hear you, Love. Let's solve this.\" (Higher Status/Cooperative)\n• \"No, we aren't doing this right now.\" (Higher Status/Adversarial)\n\nVariants:\n1. Higher Status/Cooperative: Magnanimous, charming, or playfully condescending.\n2. Higher Status/Adversarial: Contempt, belittlement, or cruelty.\n\nMindset: Ensure your quadrant meets your goals—typically higher status with a partner and cooperative with friends.",
+      description: "Analyzing communication along two axes: Status (Higher/Lower) and Harmony (Cooperative/Adversarial) to determine the \"pecking order\" and intent.\n\n**Why it works:** communication involves both the signal and the process; understanding which quadrant a speaker is in allows you to shift the dynamic toward a sustainable, high-status outcome.\n\n• \"I hear you, Love. Let's solve this.\" (Higher Status/Cooperative)\n• \"No, we aren't doing this right now.\" (Higher Status/Adversarial)\n\n**Variants:**\n1. Higher Status/Cooperative: Magnanimous, charming, or playfully condescending.\n2. Higher Status/Adversarial: Contempt, belittlement, or cruelty.\n\nMindset: Ensure your quadrant meets your goals—typically higher status with a partner and cooperative with friends.",
       inputs: [
         { q: "She is being \"bratty\" and challenging your plan for the evening.", a: "(Higher Status/Cooperative) \"I see you're being a handful today. Get your coat, we're leaving in ten.\"", bundle: 'free' },
         { q: "Your boss gives you a direct instruction in a formal meeting.", a: "(Lower Status/Cooperative) \"I understand. I'll have the report on your desk by five.\"", bundle: 'free' },
@@ -4573,7 +4573,7 @@ const collections = {
       name: "The Medium is the Message",
       guideFront: "Answer the feeling underneath when...",
       guideBack: "The feeling, named back",
-      description: "Distinguishing between the objective meaning of words (Content) and the subtextual outcome or intent (Process).\nIt works because men often receive content as literal truth, while women use language as a processing mechanism for emotions and status; focusing on the process prevents \"Fixing the Facts\" errors.\n\n• \"Tell me more about how you're feeling.\"\n• \"It sounds like you had a really hard day.\"\n\nUnderlying Categories:\n1. Content Channel: Simple, direct, and objective information.\n2. Process Channel: The subtext of status, jockeying, and emotional outcomes.\n\nMindset: In social settings, the intent behind the words is more important than the literal statement.",
+      description: "Distinguishing between the objective meaning of words (Content) and the subtextual outcome or intent (Process).\n\n**Why it works:** men often receive content as literal truth, while women use language as a processing mechanism for emotions and status; focusing on the process prevents \"Fixing the Facts\" errors.\n\n• \"Tell me more about how you're feeling.\"\n• \"It sounds like you had a really hard day.\"\n\n**Under-categories:**\n1. Content Channel: Simple, direct, and objective information.\n2. Process Channel: The subtext of status, jockeying, and emotional outcomes.\n\nMindset: In social settings, the intent behind the words is more important than the literal statement.",
       inputs: [
         { q: "She says \"You never do anything around the house!\" (Content is wrong).", a: "(Process) \"You're feeling really overwhelmed and alone with the chores right now.\"", bundle: 'free' },
         { q: "She asks \"Do you think that girl is pretty?\"", a: "(Process: Frame Check) \"She's alright. But you're the one in my bed tonight.\"", bundle: 'free' },
@@ -4589,7 +4589,7 @@ const collections = {
       name: "Whisper’s Rule",
       guideFront: "Translate the wish underneath when...",
       guideBack: "The feeling she wants to have",
-      description: "Translating \"feel-good gobbledygook\" or advice into descriptions of desired emotional outcomes by adding \"I want to feel like...\" to the statement.\nIt works because women often cannot articulate what they want directly; they describe the *experience* they want to have, which is often solipsistic and self-centered.\n\n• \"Just be yourself\" → \"I want to feel like you're just being yourself.\"\n• \"Act natural\" → \"I want it to feel natural, not forced.\"\n\nMindset: Use her advice as a description of the outcome you want to create, not as a literal instruction.",
+      description: "Translating \"feel-good gobbledygook\" or advice into descriptions of desired emotional outcomes by adding \"I want to feel like...\" to the statement.\n\n**Why it works:** women often cannot articulate what they want directly; they describe the *experience* they want to have, which is often solipsistic and self-centered.\n\n• \"Just be yourself\" → \"I want to feel like you're just being yourself.\"\n• \"Act natural\" → \"I want it to feel natural, not forced.\"\n\nMindset: Use her advice as a description of the outcome you want to create, not as a literal instruction.",
       inputs: [
         { q: "She tells you \"You should buy me flowers more often.\"", a: "(Translation) \"I want to feel like you're thinking of me spontaneously.\"", bundle: 'free' },
         { q: "She says \"Just be patient, the right person will come along.\"", a: "(Translation) \"I want it to feel like it happened organically.\"", bundle: 'free' },
@@ -4605,7 +4605,7 @@ const collections = {
       name: "Gratitude Frame-Check",
       guideFront: "Take the compliment cleanly when...",
       guideBack: "A short, confident thanks",
-      description: "Accepting praise or gratitude with a simple \"Thanks\" or confident validation instead of minimizing, explaining, or rationalizing it away.\nIt works because compliments are often \"frame checks\" to see if your high status is real; dismissing them invalidates her attraction and tells her she was wrong to feel that way.\n\n• \"Thank you.\"\n• \"I know, you always had good taste.\"\n\nMindset: Gratitude is transactional and useless; validate her emotions to confirm her interest.",
+      description: "Accepting praise or gratitude with a simple \"Thanks\" or confident validation instead of minimizing, explaining, or rationalizing it away.\n\n**Why it works:** compliments are often \"frame checks\" to see if your high status is real; dismissing them invalidates her attraction and tells her she was wrong to feel that way.\n\n• \"Thank you.\"\n• \"I know, you always had good taste.\"\n\nMindset: Gratitude is transactional and useless; validate her emotions to confirm her interest.",
       inputs: [
         { q: "She says \"You look really good today!\"", a: "\"Thank you. I'm glad you noticed.\"", bundle: 'free' },
         { q: "She asks \"What are you, some kind of player?\"", a: "(Smile) \"I'm just a man who knows what he wants.\"", bundle: 'free' },
@@ -4623,7 +4623,7 @@ const collections = {
       name: "Broken Record",
       guideFront: "Repeat your decision calmly when...",
       guideBack: "The same line, again",
-      description: "Persistently repeating a concise statement of your boundary or decision without getting angry, irritated, or distracted by side-tracks.\nIt works because it prevents \"frame shifting\" and logical traps where the other person tries to exhaust you into agreement; your statement becomes like the law of gravity—it just is.\n\n• \"No, we aren't doing that.\"\n• \"I understand, and we aren't signing up for that.\"\n• \"We don't yell in front of the kids.\"\n\nUnderlying Categories:\n1. Financial Boundary: \"We aren't signing him up for the Montessori school.\".\n2. Behavior Boundary: \"We don't yell in front of the kids. We aren't that couple.\".\n\nMindset: I don't need you to believe what I believe; I need you to comply with my boundary.",
+      description: "Persistently repeating a concise statement of your boundary or decision without getting angry, irritated, or distracted by side-tracks.\n\n**Why it works:** it prevents \"frame shifting\" and logical traps where the other person tries to exhaust you into agreement; your statement becomes like the law of gravity—it just is.\n\n• \"No, we aren't doing that.\"\n• \"I understand, and we aren't signing up for that.\"\n• \"We don't yell in front of the kids.\"\n\n**Under-categories:**\n1. Financial Boundary: \"We aren't signing him up for the Montessori school.\".\n2. Behavior Boundary: \"We don't yell in front of the kids. We aren't that couple.\".\n\nMindset: I don't need you to believe what I believe; I need you to comply with my boundary.",
       inputs: [
         { q: "She demands twenty thousand dollars for a school you already rejected.", a: "\"We aren't signing him up for the Montessori school.\".", bundle: 'free' },
         { q: "She asks \"why\" for the seventeenth time after you said no to a purchase.", a: "\"I've made my decision. We aren't getting that today.\".", bundle: 'free' },
@@ -4639,7 +4639,7 @@ const collections = {
       name: "Negative Inquiry",
       guideFront: "Ask what specifically is wrong when...",
       guideBack: "A question for specifics",
-      description: "Asking for specific, detailed information about a vague or manipulative criticism to distinguish between \"word vomit\" and legitimate concerns.\nIt works because it puts the \"onus\" on the critic to define the problem and desired solution; if it's just a manipulation attempt, she will likely provide random babble in return.\n\n• \"What specifically is the problem?\"\n• \"In what way am I being [label]?\"\n• \"What is it about X that could be improved?\"\n\nUnderlying Categories:\n1. Behavioral Inquiry: \"What else in particular do you think I should be doing?\".\n2. Aesthetic Inquiry: \"What is it about the way that I dress that you think could be improved?\".\n\nMindset: I am separating subtext from overt communication to find the truth.",
+      description: "Asking for specific, detailed information about a vague or manipulative criticism to distinguish between \"word vomit\" and legitimate concerns.\n\n**Why it works:** it puts the \"onus\" on the critic to define the problem and desired solution; if it's just a manipulation attempt, she will likely provide random babble in return.\n\n• \"What specifically is the problem?\"\n• \"In what way am I being [label]?\"\n• \"What is it about X that could be improved?\"\n\n**Under-categories:**\n1. Behavioral Inquiry: \"What else in particular do you think I should be doing?\".\n2. Aesthetic Inquiry: \"What is it about the way that I dress that you think could be improved?\".\n\nMindset: I am separating subtext from overt communication to find the truth.",
       inputs: [
         { q: "She snaps: \"You never do anything around the house!\"", a: "\"What else in particular do you think I should be doing?\".", bundle: 'free' },
         { q: "She insults your style: \"You dress like a slob.\"", a: "\"What is it about the way that I dress that you think could be improved?\".", bundle: 'free' },
@@ -4655,7 +4655,7 @@ const collections = {
       name: "Negative Assertion",
       guideFront: "Own the flaw calmly when...",
       guideBack: "A calm admission",
-      description: "Admitting the correctness of a criticism or a mistake as a factual event without supplicating, apologizing, or defending yourself.\nIt works because it disarms the \"shit test\"; by owning the mistake with confidence, you refuse to let it be used as a wedge to drive through your ego or lose your frame.\n\n• \"You're right, I was late.\"\n• \"Damn, I didn't realize how late it was.\"\n• \"I know, you always did have good taste in men.\"\n\nUnderlying Categories:\n1. Fact Ownership: Admitting a mistake without the \"why\" or \"sorry.\".\n2. Confident Validation: Owning a positive trait or a \"jerk\" label with ease.\n\nMindset: I have the right to make mistakes and be responsible for them without needing forgiveness.",
+      description: "Admitting the correctness of a criticism or a mistake as a factual event without supplicating, apologizing, or defending yourself.\n\n**Why it works:** it disarms the \"shit test\"; by owning the mistake with confidence, you refuse to let it be used as a wedge to drive through your ego or lose your frame.\n\n• \"You're right, I was late.\"\n• \"Damn, I didn't realize how late it was.\"\n• \"I know, you always did have good taste in men.\"\n\n**Under-categories:**\n1. Fact Ownership: Admitting a mistake without the \"why\" or \"sorry.\".\n2. Confident Validation: Owning a positive trait or a \"jerk\" label with ease.\n\nMindset: I have the right to make mistakes and be responsible for them without needing forgiveness.",
       inputs: [
         { q: "She yells: \"You were out till three last night and didn't answer!\".", a: "\"Damn, I didn't realize how late it was.\".", bundle: 'free' },
         { q: "She correctly points out that you forgot to do a promised chore.", a: "\"You're right, I missed that. I'll handle it now.\".", bundle: 'free' },
@@ -4671,7 +4671,7 @@ const collections = {
       name: "Fogging",
       guideFront: "Grant what might be true when...",
       guideBack: "A partial agreement",
-      description: "Acknowledging the other person's subjective truth or feelings without accepting their narrative, validating their accusations, or fighting back.\nIt works because it prevents you from invalidating her emotions (which solidifies them in her head) while you refuse to let her neuroticism challenge your frame.\n\n• \"You could have a point there.\"\n• \"If I were [X], you'd be the first to know.\"\n• \"I can see why you'd think that.\"\n\nUnderlying Categories:\n1. Agree with the Probability: \"You could be right.\".\n2. Agree with the Logic: \"I can see why you'd see it that way.\".\n\nMindset: I hear your emotional \"weather,\" but I am the Oak and I don't budge.",
+      description: "Acknowledging the other person's subjective truth or feelings without accepting their narrative, validating their accusations, or fighting back.\n\n**Why it works:** it prevents you from invalidating her emotions (which solidifies them in her head) while you refuse to let her neuroticism challenge your frame.\n\n• \"You could have a point there.\"\n• \"If I were [X], you'd be the first to know.\"\n• \"I can see why you'd think that.\"\n\n**Under-categories:**\n1. Agree with the Probability: \"You could be right.\".\n2. Agree with the Logic: \"I can see why you'd see it that way.\".\n\nMindset: I hear your emotional \"weather,\" but I am the Oak and I don't budge.",
       inputs: [
         { q: "She accuses you: \"Are you cheating on me?\" (She feels jealous).", a: "\"If I were, you'd be the first one to know.\".", bundle: 'free' },
         { q: "She shouts: \"You're such an asshole!\" after you set a boundary.", a: "\"It’s your own fault; you’re the one who decided to marry an asshole.\".", bundle: 'free' },
@@ -4689,7 +4689,7 @@ const collections = {
       name: "No DEERing",
       guideFront: "Just state your decision when...",
       guideBack: "A plain statement of the decision",
-      description: "Stopping the submissive habit of Defending, Excusing, Explaining, or Rationalizing your decisions and behaviors.\nIt works because providing explanations for personal choices is an act of seeking permission from an authority; by refusing to DEER, you demonstrate that you are your own judge and do not fear the consequences of your actions.\n\n• \"I've made my decision.\"\n• \"That's what I've decided to do.\"\n• \"The door is that way if you don't like it.\"\n\nUnderlying Categories:\n1. Decision Justification — refusing to explain \"why\" you made a personal choice.\n2. Mistake Ownership — admitting a failure (Negative Assertion) without groveling or offering a \"why.\"\n\nMindset: I have the right to offer no reasons or excuses for my behavior.",
+      description: "Stopping the submissive habit of Defending, Excusing, Explaining, or Rationalizing your decisions and behaviors.\n\n**Why it works:** providing explanations for personal choices is an act of seeking permission from an authority; by refusing to DEER, you demonstrate that you are your own judge and do not fear the consequences of your actions.\n\n• \"I've made my decision.\"\n• \"That's what I've decided to do.\"\n• \"The door is that way if you don't like it.\"\n\n**Under-categories:**\n1. Decision Justification — refusing to explain \"why\" you made a personal choice.\n2. Mistake Ownership — admitting a failure (Negative Assertion) without groveling or offering a \"why.\"\n\nMindset: I have the right to offer no reasons or excuses for my behavior.",
       inputs: [
         { q: "She demands to know \"why\" you decided to buy that specific gym equipment.", a: "\"Because I decided it was the best one for my goals.\"", bundle: 'free' },
         { q: "You were late coming home and feel the urge to explain the traffic and the accident.", a: "\"I'm late. I'm going to start dinner now.\"", bundle: 'free' },
@@ -4705,7 +4705,7 @@ const collections = {
       name: "Killing Covert Contracts",
       guideFront: "Ask directly or give freely when...",
       guideBack: "A direct ask, or a gift with no strings",
-      description: "Identifying and eliminating the unspoken, assumed expectations where you do \"nice things\" in hopes of receiving validation or sex in return.\nIt works because covert contracts create a \"creepy\" energetic residue and breed resentment; replacing them with directness and \"no-strings\" giving restores your integrity and attractiveness.\n\n• \"If I give this, I expect nothing in return.\"\n• \"I want [X]. How do we make that happen?\"\n\nUnderlying Categories:\n1. The Giving Test — asking yourself: \"If she threw this gift away, would I still give it?\"\n2. Direct Seduction — meeting your needs directly rather than trying to \"earn\" them through chores.\n\nMindset: Cuddles aren't free, and I have no obligation to be taken for granted.",
+      description: "Identifying and eliminating the unspoken, assumed expectations where you do \"nice things\" in hopes of receiving validation or sex in return.\n\n**Why it works:** covert contracts create a \"creepy\" energetic residue and breed resentment; replacing them with directness and \"no-strings\" giving restores your integrity and attractiveness.\n\n• \"If I give this, I expect nothing in return.\"\n• \"I want [X]. How do we make that happen?\"\n\n**Under-categories:**\n1. The Giving Test — asking yourself: \"If she threw this gift away, would I still give it?\"\n2. Direct Seduction — meeting your needs directly rather than trying to \"earn\" them through chores.\n\nMindset: Cuddles aren't free, and I have no obligation to be taken for granted.",
       inputs: [
         { q: "You just did the dishes and are now waiting for her to \"notice\" and reward you with sex.", a: "(Internal) \"I did the dishes because I wanted a clean kitchen. If I want sex, I'll initiate it directly later.\"", bundle: 'free' },
         { q: "You are about to buy her flowers specifically to \"keep the peace\" after a fight.", a: "(Stop) \"I'm not in a giving mood. I'll save the flowers for when we're actually connected.\"", bundle: 'free' },
@@ -4721,7 +4721,7 @@ const collections = {
       name: "Controlled Anger",
       guideFront: "Mark the line firmly when...",
       guideBack: "A firm, deliberate stop",
-      description: "Using anger as a deliberate social signal to mark a boundary rather than allowing it to become an out-of-control, hysterical explosion.\nIt works because anger is the only \"social\" emotion, designed to communicate that a limit has been crossed and that you are willing to escalate to protect your frame.\n\n• \"This behavior is unacceptable.\"\n• \"I am angry about this, and we are stopping right now.\"\n\nUnderlying Categories:\n1. Continuum of Force — escalating your intensity exactly one level above hers to demonstrate authority.\n2. The Verbal Marking — naming your emotion without being run by it (\"I am angry\").\n\nMindset: Anger is a tool for signaling, not a weapon for destruction.",
+      description: "Using anger as a deliberate social signal to mark a boundary rather than allowing it to become an out-of-control, hysterical explosion.\n\n**Why it works:** anger is the only \"social\" emotion, designed to communicate that a limit has been crossed and that you are willing to escalate to protect your frame.\n\n• \"This behavior is unacceptable.\"\n• \"I am angry about this, and we are stopping right now.\"\n\n**Under-categories:**\n1. Continuum of Force — escalating your intensity exactly one level above hers to demonstrate authority.\n2. The Verbal Marking — naming your emotion without being run by it (\"I am angry\").\n\nMindset: Anger is a tool for signaling, not a weapon for destruction.",
       inputs: [
         { q: "She is being disrespectful to you in front of your friends.", a: "(Controlled tone) \"We are not doing that. Let's talk privately for a moment.\"", bundle: 'free' },
         { q: "She is slamming kitchen cabinets because she's mad about a logistical error.", a: "\"I see you're throwing things. That's not how we handle problems in this house. Stop.\"", bundle: 'free' },
@@ -4737,7 +4737,7 @@ const collections = {
       name: "The Oak",
       guideFront: "Stay grounded through her storm when...",
       guideBack: "An unbothered, steady line",
-      description: "Remaining physically and emotionally grounded when your partner expresses emotional storms, recognizing that her \"wind\" is the resistance training you need to build frame.\nIt works because a man who isn't bothered by a woman's flippant or short-sighted emotional outbursts demonstrates that his roots (frame) are deeper than her temporary weather.\n\n• (Silent, unbothered presence).\n• \"I hear you're upset. I'm going to finish this work now.\"\n• \"That's an interesting theory. I'll give it some thought.\"\n\nUnderlying Categories:\n1. Amused Mastery — treating her neuroticism or nagging as intriguing or funny.\n2. Physical Unswayability — staying in your seat or continuing your mission regardless of the drama.\n\nMindset: The wind can't be anything but the wind.",
+      description: "Remaining physically and emotionally grounded when your partner expresses emotional storms, recognizing that her \"wind\" is the resistance training you need to build frame.\n\n**Why it works:** a man who isn't bothered by a woman's flippant or short-sighted emotional outbursts demonstrates that his roots (frame) are deeper than her temporary weather.\n\n• (Silent, unbothered presence).\n• \"I hear you're upset. I'm going to finish this work now.\"\n• \"That's an interesting theory. I'll give it some thought.\"\n\n**Under-categories:**\n1. Amused Mastery — treating her neuroticism or nagging as intriguing or funny.\n2. Physical Unswayability — staying in your seat or continuing your mission regardless of the drama.\n\nMindset: The wind can't be anything but the wind.",
       inputs: [
         { q: "She is nagging you about the garage being messy while you are trying to relax.", a: "(Amused Mastery) \"I love how passionate you are about the garage. I'll handle it Saturday.\"", bundle: 'free' },
         { q: "She is crying to manipulate you into skipping your workout.", a: "\"I see you're upset. I'm still going to the gym. I'll be back in an hour.\"", bundle: 'free' },
@@ -13272,7 +13272,7 @@ const collectionsModeData = {
       name: "Command and Signal",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "**Mental Point of Origin**, **The Physical Signal**, and **The OODA Loop**. Choose between these when deciding whether to anchor your internal values, project non-verbal presence, or calibrate your response.\n• **Mental Point of Origin** — when you need to anchor your choices in your own values\n• **The Physical Signal** — when you need your posture, clothing, or grooming to communicate authority\n• **The OODA Loop** — when you need to observe reality objectively and iterate your strategy\nThe deciding question is: do you need internal clarity, physical communication, or tactical calibration?\nThe typical wrong choice is trying to explain yourself verbally when your physical signal or internal frame is collapsing.\nMindset: your internal frame and physical posture communicate before you say a word.",
+      description: "**Mental Point of Origin**, **The Physical Signal**, and **The OODA Loop**. Choose between these when deciding whether to anchor your internal values, project non-verbal presence, or calibrate your response.\n\n• **Mental Point of Origin** — when you need to anchor your choices in your own values\n• **The Physical Signal** — when you need your posture, clothing, or grooming to communicate authority\n• **The OODA Loop** — when you need to observe reality objectively and iterate your strategy\n\n**The deciding question:** do you need internal clarity, physical communication, or tactical calibration?\n\n**The typical wrong choice:** trying to explain yourself verbally when your physical signal or internal frame is collapsing.\n\nMindset: your internal frame and physical posture communicate before you say a word.",
       inputs: [
         { q: "You are about to enter a high-stakes business meeting and feel nervous.", a: "(Stand upright, pull shoulders back, and breathe deeply into your belly.) [The Physical Signal]", bundle: 'pro', guideBack: "A deliberate change in style or grooming" },
         { q: "She demands an immediate reason why you spent money on a gym membership.", a: "\"I'm investing in my health because it's essential for me.\" [Mental Point of Origin]", bundle: 'pro', guideBack: "Your own want, stated or thought" },
@@ -13288,7 +13288,7 @@ const collectionsModeData = {
       name: "All Four Strategies",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "**Mental Point of Origin**, **The Physical Signal**, **The OODA Loop**, and **Field Reporting**. All four strategies of the Foundation of Frame, tested across real-world pressure.\n• **Mental Point of Origin** — internal locus of control\n• **The Physical Signal** — physical embodiment and style\n• **The OODA Loop** — rapid observation and calibration\n• **Field Reporting** — objective after-action analysis\nThe deciding question is: what phase of action or reflection are you currently in?\nThe typical wrong choice is skipping after-action analysis and repeating the same mistakes.\nMindset: you are the director of your life, iterating toward mastery.",
+      description: "**Mental Point of Origin**, **The Physical Signal**, **The OODA Loop**, and **Field Reporting**. All four strategies of the Foundation of Frame, tested across real-world pressure.\n\n• **Mental Point of Origin** — internal locus of control\n• **The Physical Signal** — physical embodiment and style\n• **The OODA Loop** — rapid observation and calibration\n• **Field Reporting** — objective after-action analysis\n\n**The deciding question:** what phase of action or reflection are you currently in?\n\n**The typical wrong choice:** skipping after-action analysis and repeating the same mistakes.\n\nMindset: you are the director of your life, iterating toward mastery.",
       inputs: [
         { q: "You are tempted to \"keep the peace\" by caving to her unreasonable demand.", a: "\"I am my own judge. I won't sacrifice my frame for short-term quiet.\" [Mental Point of Origin]", bundle: 'pro', guideBack: "Your own want, stated or thought" },
         { q: "You want to improve how you project authority in casual social settings.", a: "(Upgrade your grooming, haircut, and fit to project quiet confidence.) [The Physical Signal]", bundle: 'pro', guideBack: "A deliberate change in style or grooming" },
@@ -13306,7 +13306,7 @@ const collectionsModeData = {
       name: "Navigating Womanese",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The Medium is the Message and Whisper’s Rule. Use these to translate emotional \"word vomit\" into process-level insights.\nFocus on the *intent* and the *desired feeling* rather than the literal accuracy of the words.",
+      description: "The Medium is the Message and Whisper’s Rule. Use these to translate emotional \"word vomit\" into process-level insights.\n\nFocus on the *intent* and the *desired feeling* rather than the literal accuracy of the words.",
       inputs: [
         { q: "She says \"You're always so cold and distant!\" (Content is debatable).", a: "(Process) \"You're feeling lonely and want more connection. Tell me more.\" [The Medium is the Message]", bundle: 'pro', guideBack: "The feeling, named back" },
         { q: "She tells you \"You just need to be more sensitive to my needs.\"", a: "(Translation) \"I want to feel like my emotions dictate your actions.\" [Whisper’s Rule]", bundle: 'pro', guideBack: "The feeling she wants to have" },
@@ -13322,7 +13322,7 @@ const collectionsModeData = {
       name: "The Leadership Quadrant",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Status/Harmony Calibration and Gratitude Frame-Check. These maintain your seat as the leader and the \"Oak.\"\nYou aim for Higher Status/Cooperative as your default, while guarding against Frame-Checks.",
+      description: "Status/Harmony Calibration and Gratitude Frame-Check. These maintain your seat as the leader and the \"Oak.\"\n\nYou aim for Higher Status/Cooperative as your default, while guarding against Frame-Checks.",
       inputs: [
         { q: "She gives you a backhanded compliment about your new style.", a: "\"Thanks. I'm enjoying the change.\" [Gratitude Frame-Check]", bundle: 'pro', guideBack: "A short, confident thanks" },
         { q: "She is trying to \"commandeer\" the conversation in front of your friends.", a: "(Higher Status/Cooperative) (Playful tease) \"You're being a little bossy tonight, Love. Let me finish.\" [Status/Harmony Calibration]", bundle: 'pro', guideBack: "A higher-status, cooperative line" },
@@ -13356,7 +13356,7 @@ const collectionsModeData = {
       name: "Assertive Defense",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Broken Record, Fogging, Negative Assertion, and Negative Inquiry. Use these to protect your frame in closed communication.\nThe goal is to stop DEERing (Defending, Excusing, Explaining, Rationalizing) and instead remain the director of your own play.",
+      description: "Broken Record, Fogging, Negative Assertion, and Negative Inquiry. Use these to protect your frame in closed communication.\n\nThe goal is to stop DEERing (Defending, Excusing, Explaining, Rationalizing) and instead remain the director of your own play.",
       inputs: [
         { q: "She says \"You're being so cold!\" because you aren't reacting to her drama.", a: "\"I see you're frustrated. I'm just finished with the discussion.\" [Fogging]", bundle: 'pro', guideBack: "A partial agreement" },
         { q: "She mocks your career choice: \"You'll never make real money doing that.\"", a: "\"You could be right. I'm pursuing it anyway.\" [Fogging]", bundle: 'pro', guideBack: "A partial agreement" },
@@ -13372,7 +13372,7 @@ const collectionsModeData = {
       name: "Neutralizing Criticism",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "**Fogging**, **Negative Assertion**, and **Broken Record**. Choose between these when facing hostile, sarcastic, or demanding criticism.\n• **Fogging** — agree with the true or probable part of a hostile statement\n• **Negative Assertion** — accept real mistakes without groveling or apologizing\n• **Broken Record** — repeat your boundary calmly without DEERing\nThe deciding question is: is the criticism true, partially true, or an attempt to breach your boundary?\nMindset: you do not need to defend your choices to disarm an attack.",
+      description: "**Fogging**, **Negative Assertion**, and **Broken Record**. Choose between these when facing hostile, sarcastic, or demanding criticism.\n\n• **Fogging** — agree with the true or probable part of a hostile statement\n• **Negative Assertion** — accept real mistakes without groveling or apologizing\n• **Broken Record** — repeat your boundary calmly without DEERing\n\n**The deciding question:** is the criticism true, partially true, or an attempt to breach your boundary?\n\nMindset: you do not need to defend your choices to disarm an attack.",
       inputs: [
         { q: "She angrily says \"You spend way too much time reading those useless books!\"", a: "\"It's true that I spend a lot of time reading.\" [Fogging]", bundle: 'pro', guideBack: "A partial agreement" },
         { q: "She points out \"You left the kitchen counter dirty after making lunch.\"", a: "\"You're right, I left the counter dirty. That was my oversight.\" [Negative Assertion]", bundle: 'pro', guideBack: "A calm admission" },
@@ -13388,7 +13388,7 @@ const collectionsModeData = {
       name: "Standing Your Ground",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "**Broken Record**, **Negative Inquiry**, and **Fogging**. Choose between these when faced with persistent nagging, emotional manipulation, or guilt trips.\n• **Broken Record** — hold an unswayable line against repeated pressure\n• **Negative Inquiry** — probe hostile or vague complaints to expose shallow logic\n• **Fogging** — disarm guilt trips by agreeing with probabilities\nThe deciding question is: are they nagging you, guilt-tripping you, or making vague complaints?\nMindset: an unswayable boundary needs no justification.",
+      description: "**Broken Record**, **Negative Inquiry**, and **Fogging**. Choose between these when faced with persistent nagging, emotional manipulation, or guilt trips.\n\n• **Broken Record** — hold an unswayable line against repeated pressure\n• **Negative Inquiry** — probe hostile or vague complaints to expose shallow logic\n• **Fogging** — disarm guilt trips by agreeing with probabilities\n\n**The deciding question:** are they nagging you, guilt-tripping you, or making vague complaints?\n\nMindset: an unswayable boundary needs no justification.",
       inputs: [
         { q: "She asks for the third time \"Are you sure you won't come to my coworker's party?\"", a: "\"I understand you'd like me there, but I am staying home tonight.\" [Broken Record]", bundle: 'pro', guideBack: "The same line, again" },
         { q: "She mutters \"You're being so difficult to live with lately.\"", a: "\"What specifically am I doing that feels difficult to live with?\" [Negative Inquiry]", bundle: 'pro', guideBack: "A question for specifics" },
@@ -13406,7 +13406,7 @@ const collectionsModeData = {
       name: "Internal Nice Guy Audit",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "No DEERing and Killing Covert Contracts. Use these to identify and stop the \"approval-seeking\" impulses within yourself.\nIf you don't fix the internal submissiveness, your external \"leadership\" will look like a \"Dancing Monkey\" program.",
+      description: "No DEERing and Killing Covert Contracts. Use these to identify and stop the \"approval-seeking\" impulses within yourself.\n\nIf you don't fix the internal submissiveness, your external \"leadership\" will look like a \"Dancing Monkey\" program.",
       inputs: [
         { q: "You feel the urge to explain your work schedule so she won't be \"annoyed.\"", a: "\"I'm working until seven tonight. See you then.\" [No DEERing]", bundle: 'pro', guideBack: "A plain statement of the decision" },
         { q: "You realize you've been \"extra nice\" all week just to get sex on Friday.", a: "(Internal) \"I'm stopping the act. If I want her, I'll initiate directly now.\" [Killing Covert Contracts]", bundle: 'pro', guideBack: "A direct ask, or a gift with no strings" },
@@ -13422,7 +13422,7 @@ const collectionsModeData = {
       name: "External Frame Protection",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Controlled Anger and The Oak. These strategies handle her \"Hysterical\" or \"Adversarial\" responses to your new frame.\nYou provide the stable container (Oak) and the negative feedback (Anger) for bad behavior.",
+      description: "Controlled Anger and The Oak. These strategies handle her \"Hysterical\" or \"Adversarial\" responses to your new frame.\n\nYou provide the stable container (Oak) and the negative feedback (Anger) for bad behavior.",
       inputs: [
         { q: "She is shouting insults because you set a boundary on spending.", a: "\"I'm not interested in being insulted. I'm leaving for an hour.\" [The Oak]", bundle: 'pro', guideBack: "An unbothered, steady line" },
         { q: "She is \"poking the bear\" to get any reaction out of you.", a: "(Settle into your seat. Settle into the silence. Need nothing.) [The Oak]", bundle: 'pro', guideBack: "An unbothered, steady line" },
@@ -13438,7 +13438,7 @@ const collectionsModeData = {
       name: "Breaking the Nice Guy Loop",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "**No DEERing**, **Killing Covert Contracts**, **Controlled Anger**, and **The Oak**. Choosing between all four strategies to break the submissive Nice Guy loop.\n\n• **No DEERing** — stop defending, excusing, explaining, or rationalizing your choices\n• **Killing Covert Contracts** — eliminate hidden transactions and covert expectations\n• **Controlled Anger** — use sharp, low-pitch anger as a surgical social boundary\n• **The Oak** — stand unswayable and centered during her emotional storms\n\nThe deciding question is: what pleaser habit or boundary test are you currently facing?\n\nMindset: covert submission breeds resentment; assertive clarity builds respect.",
+      description: "**No DEERing**, **Killing Covert Contracts**, **Controlled Anger**, and **The Oak**. Choosing between all four strategies to break the submissive Nice Guy loop.\n\n• **No DEERing** — stop defending, excusing, explaining, or rationalizing your choices\n• **Killing Covert Contracts** — eliminate hidden transactions and covert expectations\n• **Controlled Anger** — use sharp, low-pitch anger as a surgical social boundary\n• **The Oak** — stand unswayable and centered during her emotional storms\n\n**The deciding question:** what pleaser habit or boundary test are you currently facing?\n\nMindset: covert submission breeds resentment; assertive clarity builds respect.",
       inputs: [
         { q: "You realize you've been rubbing her feet every night for a month, hoping she'll notice and give you affection.", a: "\"I'm stopping foot rubs done to buy affection. I give touch only when I truly want to.\" [Killing Covert Contracts]", bundle: 'pro', guideBack: "A direct ask, or a gift with no strings" },
         { q: "She snaps at you in a loud, disrespectful voice in the middle of a grocery store.", a: "\"Drop the tone. I won't be spoken to like that in public or anywhere else.\" [Controlled Anger]", bundle: 'pro', guideBack: "A firm, deliberate stop" },
@@ -13472,7 +13472,7 @@ const collectionsModeData = {
       name: "Setting the Direction",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "**The Leader’s Vision**, **Leading Without Permission**, and **Rule Zero (Rational Egoism)**. Choose between these when defining the long-term destination, taking unilateral action, or protecting your core priorities.\n• **The Leader’s Vision** — defining the compelling future destination for your life and family\n• **Leading Without Permission** — taking decisive action without waiting for consensus\n• **Rule Zero (Rational Egoism)** — grounding your choices in self-respect and mission first\nThe deciding question is: do you need to articulate the vision, execute the move, or anchor your self-interest?\nThe typical wrong choice is seeking her approval before declaring where the ship is sailing.\nMindset: a captain sets the course first; he does not ask the passengers where to sail.",
+      description: "**The Leader’s Vision**, **Leading Without Permission**, and **Rule Zero (Rational Egoism)**. Choose between these when defining the long-term destination, taking unilateral action, or protecting your core priorities.\n\n• **The Leader’s Vision** — defining the compelling future destination for your life and family\n• **Leading Without Permission** — taking decisive action without waiting for consensus\n• **Rule Zero (Rational Egoism)** — grounding your choices in self-respect and mission first\n\n**The deciding question:** do you need to articulate the vision, execute the move, or anchor your self-interest?\n\n**The typical wrong choice:** seeking her approval before declaring where the ship is sailing.\n\nMindset: a captain sets the course first; he does not ask the passengers where to sail.",
       inputs: [
         { q: "She asks where you see your family in five years and what your major goals are.", a: "\"We are building financial independence, moving out of the city, and prioritizing our health.\" [The Leader’s Vision]", bundle: 'pro', guideBack: "A picture of the future" },
         { q: "You need to book an annual family holiday but she keeps procrastinating on choosing dates.", a: "\"I've booked the cabin for the first week of July. Pack your bags for summer.\" [Leading Without Permission]", bundle: 'pro', guideBack: "A plan you've already set" },
@@ -13488,7 +13488,7 @@ const collectionsModeData = {
       name: "Autonomous Command",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "**Leading Without Permission**, **Push and Pull**, and **Rule Zero (Rational Egoism)**. Choose between these when taking unilateral control, calibrated tension, or standing in rational self-interest.\n• **Leading Without Permission** — decisive execution without consensus-seeking\n• **Push and Pull** — maintaining sexual tension and dynamic leadership\n• **Rule Zero (Rational Egoism)** — refusing to sacrifice your core mission for pleasing peace\nThe deciding question is: do you need to take action, calibrate emotional distance, or anchor your locus of control?\nThe typical wrong choice is waiting for her permission and letting the relationship drift into domestic boredom.\nMindset: real authority acts autonomously; it does not request permission to lead.",
+      description: "**Leading Without Permission**, **Push and Pull**, and **Rule Zero (Rational Egoism)**. Choose between these when taking unilateral control, calibrated tension, or standing in rational self-interest.\n\n• **Leading Without Permission** — decisive execution without consensus-seeking\n• **Push and Pull** — maintaining sexual tension and dynamic leadership\n• **Rule Zero (Rational Egoism)** — refusing to sacrifice your core mission for pleasing peace\n\n**The deciding question:** do you need to take action, calibrate emotional distance, or anchor your locus of control?\n\n**The typical wrong choice:** waiting for her permission and letting the relationship drift into domestic boredom.\n\nMindset: real authority acts autonomously; it does not request permission to lead.",
       inputs: [
         { q: "She complains that the weekend routine has become boring and repetitive.", a: "(Withdraw your attention during the morning, then sweep her out for dinner at eight). [Push and Pull]", bundle: 'pro', guideBack: "Warmth, then a push" },
         { q: "You decide to sell your old car and purchase an upgraded vehicle that fits your vision.", a: "\"I sold the sedan today and secured the new truck for our family travels.\" [Leading Without Permission]", bundle: 'pro', guideBack: "A plan you've already set" },
@@ -14115,7 +14115,7 @@ const collectionsModeData = {
       name: "Passing Social Pressure",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "This collection combines strategies for remaining unshakeable when challenged, scolded, or tested.\n\n• Passing Confidence Tests\n• Flipping the Script\n• Avoiding Self-Qualification\n\nUse these moves to handle social tests with relaxed authority and humor.",
+      description: "This collection combines strategies for remaining unshakeable when challenged, scolded, or tested.\n\n• **Passing Confidence Tests**\n• **Flipping the Script**\n• **Avoiding Self-Qualification**\n\nUse these moves to handle social tests with relaxed authority and humor.",
       inputs: [
         { q: "She criticizes your shoes as being outdated.", a: "\"You're just jealous because I look handsome today and you don't. Give me some fashion tips then.\" [Passing Confidence Tests]", bundle: 'pro', guideBack: "An unbothered, playful comeback" },
         { q: "She asks if you say your opening line to every woman.", a: "\"I'm disappointed you'd use such a cliché line on me. You seem smarter than that. Try again!\" [Passing Confidence Tests]", bundle: 'pro', guideBack: "An unbothered, playful comeback" },
@@ -14131,7 +14131,7 @@ const collectionsModeData = {
       name: "Establishing Dominance",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "This collection groups strategies for taking the lead and positioning yourself as the selector.\n\n• Conveying High Social Status\n• Flipping the Script\n• The \"You Can't Tame Me\" Impression\n\nUse these moves to establish a strong masculine frame and make her work for your approval.",
+      description: "This collection groups strategies for taking the lead and positioning yourself as the selector.\n\n• **Conveying High Social Status**\n• **Flipping the Script**\n• **The \"You Can't Tame Me\" Impression**\n\nUse these moves to establish a strong masculine frame and make her work for your approval.",
       inputs: [
         { q: "You meet an attractive woman and want to greet her with authority.", a: "\"Oh hi, how you doing? I thought I'd come over and say hi. I'm Dan.\" [Conveying High Social Status]", bundle: 'pro', guideBack: "A relaxed, equal-footing line" },
         { q: "She asks if you have a girlfriend.", a: "\"Why, do you want to take me out on a date? If you want to wine and dine me, just ask!\" [Flipping the Script]", bundle: 'pro', guideBack: "A playful verdict on her" },
@@ -14165,7 +14165,7 @@ const collectionsModeData = {
       name: "Holding the Line",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Choose between strategies when her behavior challenges your boundaries, respect, or standards.\n\n• Addressing Bad Behavior\n• Lovingly Expecting More\n• Emotional Independence",
+      description: "Choose between strategies when her behavior challenges your boundaries, respect, or standards.\n\n• **Addressing Bad Behavior**\n• **Lovingly Expecting More**\n• **Emotional Independence**",
       inputs: [
         { q: "She speaks to you in a sharp, disrespectful tone in front of guests.", a: "\"Hey, that wasn't cool. You're usually great, but talking to me like that? No, I don't like it.\" [Addressing Bad Behavior]", bundle: 'pro', guideBack: "Calm feedback on how she acted" },
         { q: "She refuses to help unpack groceries because she is scrolling social media.", a: "\"Hey babe, get off your phone for two minutes and help me put these away. Thanks.\" [Lovingly Expecting More]", bundle: 'pro', guideBack: "A warm request, or thanks for it" },
@@ -14181,7 +14181,7 @@ const collectionsModeData = {
       name: "Guiding the Vibe",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Choose between strategies to maintain direction, warmth, and attraction in daily life.\n\n• General Leadership\n• Lovingly Expecting More\n• Emotional Independence",
+      description: "Choose between strategies to maintain direction, warmth, and attraction in daily life.\n\n• **General Leadership**\n• **Lovingly Expecting More**\n• **Emotional Independence**",
       inputs: [
         { q: "You are both sitting at home on Friday night feeling indecisive.", a: "\"Get off your butt, let's go grab a bite to eat. I know a great spot.\" [General Leadership]", bundle: 'pro', guideBack: "A plan, with a part for her" },
         { q: "She brings you a glass of water without you asking.", a: "\"Thank you babe. You're a good woman. Come here and give me a kiss.\" [Lovingly Expecting More]", bundle: 'pro', guideBack: "A warm request, or thanks for it" },
@@ -14215,7 +14215,7 @@ const collectionsModeData = {
       name: "Setting the Vibe",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Grouping strategies for driving positive emotional energy and keeping your relationship dynamic, exciting, and masculine.\n\n• The \"Let Her Win You Over\" Move\n• Expressing Real Moods\n• Restoring the Spark",
+      description: "Grouping strategies for driving positive emotional energy and keeping your relationship dynamic, exciting, and masculine.\n\n• **The \"Let Her Win You Over\" Move**\n• **Expressing Real Moods**\n• **Restoring the Spark**",
       inputs: [
         { q: "She asks what restaurant you want to visit on Friday.", a: "\"I want something hearty. Show me three spots you love, and I'll pick the winner.\" [The \"Let Her Win You Over\" Move]", bundle: 'pro', guideBack: "A counter-wish she has to win" },
         { q: "You walk out of a movie you disliked together.", a: "\"That was so boring! I almost fell asleep. Let's get ice cream to fix this night.\" [Expressing Real Moods]", bundle: 'pro', guideBack: "An honest reaction" },
@@ -14231,7 +14231,7 @@ const collectionsModeData = {
       name: "Managing Friction",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Grouping strategies for maintaining authority and humor when boundaries are tested or conversations stall.\n\n• Ignoring Ridiculous Rules\n• Expressing Real Moods\n• The \"Let Her Win You Over\" Move",
+      description: "Grouping strategies for maintaining authority and humor when boundaries are tested or conversations stall.\n\n• **Ignoring Ridiculous Rules**\n• **Expressing Real Moods**\n• **The \"Let Her Win You Over\" Move**",
       inputs: [
         { q: "She tells you that you cannot watch sports on Sunday.", a: "\"Whatever! I'm watching the game. But if you're good, I'll let you sit next to me.\" [Ignoring Ridiculous Rules]", bundle: 'pro', guideBack: "A playful brush-off of the rule" },
         { q: "She is in a serious mood while you feel playful.", a: "\"Look at you, so serious today! You look like you need a Red Bull or a holiday.\" [Expressing Real Moods]", bundle: 'pro', guideBack: "An honest reaction" },

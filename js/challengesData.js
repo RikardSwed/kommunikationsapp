@@ -3342,7 +3342,7 @@ const challengesCollections = {
       name: "The Hamster Wheel",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "When she experiences a storm of anxiety, emotional insecurity, or tests your frame with wild accusations.\nThe challenge is to remain the unswayable Oak, observing her storm neutrally instead of getting sucked into defensive logic or DEERing.\n• **The OODA Loop** — observe her emotional storm as weather without taking the bait\n• **Mental Point of Origin** — remember that her mood does not define your worth\n• **Field Reporting** — analyze the interaction objectively after the storm passes\nThe key question is: are you reacting to her storm, or are you containing it?\nMindset: her storm is weather; I am the Oak.",
+      description: "When she experiences a storm of anxiety, emotional insecurity, or tests your frame with wild accusations.\n\n**The challenge:** remain the unswayable Oak, observing her storm neutrally instead of getting sucked into defensive logic or DEERing.\n\n• **The OODA Loop** — observe her emotional storm as weather without taking the bait\n• **Mental Point of Origin** — remember that her mood does not define your worth\n• **Field Reporting** — analyze the interaction objectively after the storm passes\n\n**The key question:** are you reacting to her storm, or are you containing it?\n\nMindset: her storm is weather; I am the Oak.",
       inputs: [
         { q: "She screams \"You don't love me anymore!\" during an argument about logistics.", a: "(Observe her anxiety) \"She is feeling unsafe. I stay calm and hold space.\" [The OODA Loop]", bundle: 'pro', guideBack: "An observation, and the next move" },
         { q: "She asks accusingly: \"Are you having an affair?\" because you started going to the gym.", a: "\"No. I'm working out for my own health.\" [Mental Point of Origin]", bundle: 'pro', guideBack: "Your own want, stated or thought" },
@@ -3358,7 +3358,7 @@ const challengesCollections = {
       name: "Nice Guy Relapses",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "When you feel the internal urge to collapse into \"Nice Guy\" pleaser habits—lying, hiding mistakes, apologizing sycophantically, or seeking permission.\nThe challenge is to recognize the pleaser relapse and re-anchor in your internal locus of control.\n• **Mental Point of Origin** — own your choices and mistakes without groveling\n• **Field Reporting** — audit your behavior for covert contracts and hidden lying\n• **The OODA Loop** — observe the pleaser impulse and choose conscious leadership\nThe key question is: are you acting out of self-respect, or are you trying to buy peace?\nMindset: a yes I resent is a worse gift than a no I mean.",
+      description: "When you feel the internal urge to collapse into \"Nice Guy\" pleaser habits—lying, hiding mistakes, apologizing sycophantically, or seeking permission.\n\n**The challenge:** recognize the pleaser relapse and re-anchor in your internal locus of control.\n\n• **Mental Point of Origin** — own your choices and mistakes without groveling\n• **Field Reporting** — audit your behavior for covert contracts and hidden lying\n• **The OODA Loop** — observe the pleaser impulse and choose conscious leadership\n\n**The key question:** are you acting out of self-respect, or are you trying to buy peace?\n\nMindset: a yes I resent is a worse gift than a no I mean.",
       inputs: [
         { q: "You made a minor financial mistake and feel an intense urge to hide it from her.", a: "\"I have the right to make mistakes. I state the fact cleanly without groveling.\" [Mental Point of Origin]", bundle: 'pro', guideBack: "Your own want, stated or thought" },
         { q: "You find yourself agreeing to a social plan you hate just to keep her happy.", a: "\"I'm in Approval Seeking. I state my real preference instead.\" [Mental Point of Origin]", bundle: 'pro', guideBack: "Your own want, stated or thought" },
@@ -3374,7 +3374,7 @@ const challengesCollections = {
       name: "Physical Neglect",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "When you let your physical pillar slide—wearing shabby clothes, skipping workouts, letting hygiene drift, or slouching.\nThe challenge is to treat the man in the mirror with immense respect, taking complete ownership of your body, style, and presentation.\n• **The Physical Signal** — elevate your posture, style, and grooming deliberately\n• **Mental Point of Origin** — invest in yourself first as rational egoism\n• **The OODA Loop** — observe your physical metrics and adjust\nThe key question is: are you presenting yourself as a high-value man, or are you drifting?\nMindset: if you don't respect the man in the mirror, no one else will either.",
+      description: "When you let your physical pillar slide—wearing shabby clothes, skipping workouts, letting hygiene drift, or slouching.\n\n**The challenge:** treat the man in the mirror with immense respect, taking complete ownership of your body, style, and presentation.\n\n• **The Physical Signal** — elevate your posture, style, and grooming deliberately\n• **Mental Point of Origin** — invest in yourself first as rational egoism\n• **The OODA Loop** — observe your physical metrics and adjust\n\n**The key question:** are you presenting yourself as a high-value man, or are you drifting?\n\nMindset: if you don't respect the man in the mirror, no one else will either.",
       inputs: [
         { q: "You've been wearing worn-out graphic tees and baggy cargo shorts every weekend.", a: "(Replace shabby clothes with well-fitted, archetype-appropriate wardrobe items.) [The Physical Signal]", bundle: 'pro', guideBack: "A deliberate change in style or grooming" },
         { q: "You haven't worked out in three weeks because work has been busy.", a: "\"My physical pillar is non-negotiable. I schedule my workouts first.\" [Mental Point of Origin]", bundle: 'pro', guideBack: "Your own want, stated or thought" },
@@ -3390,7 +3390,7 @@ const challengesCollections = {
       name: "Ego and Paranoia",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "When your ego takes over—spiraling into paranoia, shifting goalposts, snooping, or inventing \"Batman origin stories\" to excuse failure.\nThe challenge is to drop the self-delusion and return to objective reality, observing facts through the OODA Loop.\n• **The OODA Loop** — see reality for what it is, not what your ego fears\n• **Field Reporting** — document hard facts and cut out dramatic backstories\n• **Mental Point of Origin** — focus on your own value rather than controlling her\nThe key question is: are you observing facts, or are you feeding your paranoia?\nMindset: objective reality beats ego fantasies every time.",
+      description: "When your ego takes over—spiraling into paranoia, shifting goalposts, snooping, or inventing \"Batman origin stories\" to excuse failure.\n\n**The challenge:** drop the self-delusion and return to objective reality, observing facts through the OODA Loop.\n\n• **The OODA Loop** — see reality for what it is, not what your ego fears\n• **Field Reporting** — document hard facts and cut out dramatic backstories\n• **Mental Point of Origin** — focus on your own value rather than controlling her\n\n**The key question:** are you observing facts, or are you feeding your paranoia?\n\nMindset: objective reality beats ego fantasies every time.",
       inputs: [
         { q: "You find yourself wanting to snoop through her phone because she was quiet at dinner.", a: "(Observe the paranoia) \"Snooping is a weak frame move. I focus on my own value.\" [The OODA Loop]", bundle: 'pro', guideBack: "An observation, and the next move" },
         { q: "You notice you're inventing a long, tragic backstory to justify why you haven't hit the gym.", a: "(Cut the backstory. Document only the actions taken in the last 24 hours.) [Field Reporting]", bundle: 'pro', guideBack: "A past-tense note on your own actions" },
@@ -3408,10 +3408,10 @@ const challengesCollections = {
       name: "The Content Trap",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "When she uses \"Hamster logic\" or baiting questions to draw you into a literal argument. The challenge is to stay on the \"Process\" level.\nRefuse to DEER (Defend, Excuse, Explain, Rationalize) and maintain your frame.",
+      description: "When she uses \"Hamster logic\" or baiting questions to draw you into a literal argument. The challenge is to stay on the \"Process\" level.\n\nRefuse to DEER (Defend, Excuse, Explain, Rationalize) and maintain your frame.",
       inputs: [
-        { q: "She asks \"If I gained a hundred pounds, would you still love me?\"", a: "\"I'd love if you hit the treadmill when you did.\" (Process: Honesty/High Status)", bundle: 'pro' },
-        { q: "She demands \"Why did you buy that without asking me first?\"", a: "\"Because I decided it was the best move for us. Don't worry about it.\" (Process: Leadership)", bundle: 'pro' },
+        { q: "She asks \"If I gained a hundred pounds, would you still love me?\"", a: "\"I'd love if you hit the treadmill when you did.\" [Status/Harmony Calibration]", bundle: 'pro', guideBack: "A higher-status, cooperative line" },
+        { q: "She demands \"Why did you buy that without asking me first?\"", a: "\"Because I decided it was the best move for us. Don't worry about it.\" [Status/Harmony Calibration]", bundle: 'pro', guideBack: "A higher-status, cooperative line" },
         { q: "She says \"You're just like your father when you're mad!\"", a: "(Process) (Ignore the insult) \"You're really angry right now. I'm taking a walk.\" [The Medium is the Message]", bundle: 'pro', guideBack: "The feeling, named back" },
         { q: "She brings up five unrelated chores from last month during an argument about dinner.", a: "\"I see you're feeling overwhelmed. Let me take care of dinner tonight.\" [The Medium is the Message]", bundle: 'pro', guideBack: "The feeling, named back" },
         { q: "You spend forty-five minutes proving with receipts that you didn't overspend on groceries.", a: "(Stop DEERing) \"I'm done debating the receipts. Let's talk about what's really bothering you.\" [Whisper’s Rule]", bundle: 'pro', guideBack: "The feeling she wants to have" },
@@ -3424,7 +3424,7 @@ const challengesCollections = {
       name: "Womanese Translation",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Translating her surface attacks, dramatic statements, and emotional tests into their true subtext.\n\nThe challenge is to bypass the literal words and respond to her underlying emotional state with grounded leadership.\n• **Whisper’s Rule** — stop arguing the literal facts; address her underlying frame\n• **Status/Harmony Calibration** — respond with unswayable authority and warm inclusion\n• **The Medium is the Message** — read the subtext carried by her tone and actions\n\nThe key question is: are you debating her surface words, or are you leading her emotional state?\n\nMindset: womanese is an emotional report, not a factual deposition.",
+      description: "Translating her surface attacks, dramatic statements, and emotional tests into their true subtext.\n\n**The challenge:** bypass the literal words and respond to her underlying emotional state with grounded leadership.\n• **Whisper’s Rule** — stop arguing the literal facts; address her underlying frame\n• **Status/Harmony Calibration** — respond with unswayable authority and warm inclusion\n• **The Medium is the Message** — read the subtext carried by her tone and actions\n\n**The key question:** are you debating her surface words, or are you leading her emotional state?\n\nMindset: womanese is an emotional report, not a factual deposition.",
       inputs: [
         { q: "She shouts \"You never care about what I want!\" after you picked a movie.", a: "\"I hear you feel unheard right now. Tell me what movie you're craving.\" [Whisper’s Rule]", bundle: 'pro', guideBack: "The feeling she wants to have" },
         { q: "She says \"I can handle everything myself, I don't need your help!\" in a bitter tone.", a: "\"I know you're capable, but I'm taking care of this logistics task for us.\" [Status/Harmony Calibration]", bundle: 'pro', guideBack: "A higher-status, cooperative line" },
@@ -3440,7 +3440,7 @@ const challengesCollections = {
       name: "Low-Status Traps",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Recognizing when you drop into low-status behaviors—pleasing, barking orders, pouting, or getting defensive.\n\nThe challenge is to catch your status collapse early and return to the High Status / High Harmony quadrant.\n• **Status/Harmony Calibration** — shift out of Dictator, Pleaser, or Loser mode into Leader mode\n• **Gratitude Frame-Check** — stop seeking validation or acting like a needy subordinate\n• **The Medium is the Message** — ensure your voice tone and body language project authority\n\nThe key question is: are you acting like a pleaser, a dictator, or a leader?\n\nMindset: true authority requires neither aggression nor subservience.",
+      description: "Recognizing when you drop into low-status behaviors—pleasing, barking orders, pouting, or getting defensive.\n\n**The challenge:** catch your status collapse early and return to the High Status / High Harmony quadrant.\n• **Status/Harmony Calibration** — shift out of Dictator, Pleaser, or Loser mode into Leader mode\n• **Gratitude Frame-Check** — stop seeking validation or acting like a needy subordinate\n• **The Medium is the Message** — ensure your voice tone and body language project authority\n\n**The key question:** are you acting like a pleaser, a dictator, or a leader?\n\nMindset: true authority requires neither aggression nor subservience.",
       inputs: [
         { q: "You find yourself sycophantically apologizing four times for being five minutes late.", a: "\"I'm here now, Love. Let's enjoy our dinner.\" [Status/Harmony Calibration]", bundle: 'pro', guideBack: "A higher-status, cooperative line" },
         { q: "You start shouting and pounding the table because she interrupted your story.", a: "(Lower voice tone) \"I'm lowering my voice. Let's speak with respect.\" [Status/Harmony Calibration]", bundle: 'pro', guideBack: "A higher-status, cooperative line" },
@@ -3456,7 +3456,7 @@ const challengesCollections = {
       name: "Frame Validation",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Navigating moments where she tests whether your frame is dependent on her praise, reactions, or approval.\n\nThe challenge is to receive genuine appreciation warmly while remaining unswayable under criticism or silence.\n• **Gratitude Frame-Check** — accept praise without becoming needy; hold frame under test\n• **Whisper’s Rule** — don't seek a sign of approval after setting a boundary\n• **Status/Harmony Calibration** — maintain high-status warmth regardless of her feedback\n\nThe key question is: is your frame anchored internally, or are you fishing for her approval?\n\nMindset: a leader accepts appreciation warmly, but never depends on it.",
+      description: "Navigating moments where she tests whether your frame is dependent on her praise, reactions, or approval.\n\n**The challenge:** receive genuine appreciation warmly while remaining unswayable under criticism or silence.\n• **Gratitude Frame-Check** — accept praise without becoming needy; hold frame under test\n• **Whisper’s Rule** — don't seek a sign of approval after setting a boundary\n• **Status/Harmony Calibration** — maintain high-status warmth regardless of her feedback\n\n**The key question:** is your frame anchored internally, or are you fishing for her approval?\n\nMindset: a leader accepts appreciation warmly, but never depends on it.",
       inputs: [
         { q: "You fixed the leaking sink and spend twenty minutes waiting for her to praise your work.", a: "(Anchor internally) \"The sink is fixed and solid. I don't need her gold stars.\" [Gratitude Frame-Check]", bundle: 'pro', guideBack: "A short, confident thanks" },
         { q: "She says \"You're only being nice to me because you want something.\"", a: "(Warm smile) \"I'm being nice because I love you. No hidden agenda.\" [Gratitude Frame-Check]", bundle: 'pro', guideBack: "A short, confident thanks" },
@@ -3472,7 +3472,7 @@ const challengesCollections = {
       name: "Channel Warfare",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Managing communication channels—texting, phone calls, in-person talks, and social media—to prevent miscalibration.\n\nThe challenge is to move emotional or high-stakes topics to high-bandwidth, in-person mediums.\n• **The Medium is the Message** — choose the right medium for the emotional stakes\n• **Whisper’s Rule** — stop texting essays when she pushes back over text\n• **Status/Harmony Calibration** — maintain calm authority across all channels\n\nThe key question is: are you trying to solve a high-stakes emotional issue through a low-bandwidth channel?\n\nMindset: text is for logistics; in-person presence is for connection and frame.",
+      description: "Managing communication channels—texting, phone calls, in-person talks, and social media—to prevent miscalibration.\n\n**The challenge:** move emotional or high-stakes topics to high-bandwidth, in-person mediums.\n• **The Medium is the Message** — choose the right medium for the emotional stakes\n• **Whisper’s Rule** — stop texting essays when she pushes back over text\n• **Status/Harmony Calibration** — maintain calm authority across all channels\n\n**The key question:** are you trying to solve a high-stakes emotional issue through a low-bandwidth channel?\n\nMindset: text is for logistics; in-person presence is for connection and frame.",
       inputs: [
         { q: "She texts \"We need to talk\" while you are in an important work meeting.", a: "\"I'm in meetings until five. I'll see you at home and we'll talk then, Love.\" [The Medium is the Message]", bundle: 'pro', guideBack: "The feeling, named back" },
         { q: "You get into a rapid-fire text argument about weekend plans during your workday.", a: "\"Texting isn't working for this. Let's hold off until dinner tonight.\" [The Medium is the Message]", bundle: 'pro', guideBack: "The feeling, named back" },
@@ -3490,7 +3490,7 @@ const challengesCollections = {
       name: "Shaming and Labels",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "When she uses \"container words\" like \"creepy,\" \"misogynist,\" or \"selfish\" to weaponize your guilt.\nThe challenge is to need nothing from her and return to your own Mental Point of Origin.",
+      description: "When she uses \"container words\" like \"creepy,\" \"misogynist,\" or \"selfish\" to weaponize your guilt.\n\n**The challenge:** need nothing from her and return to your own Mental Point of Origin.",
       inputs: [
         { q: "She shouts: \"You're being a misogynist!\" because you won't do a chore.", a: "\"I don't care.\" (Assertive Right #10).", bundle: 'pro' },
         { q: "She calls your interest in self-improvement \"creepy.\"", a: "\"What specifically about my working out is creepy to you?\" [Negative Inquiry]", bundle: 'pro', guideBack: "A question for specifics" },
@@ -3506,7 +3506,7 @@ const challengesCollections = {
       name: "Aggressive Demands",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "When someone uses shouting, demands, or aggressive pressure to force you to cave or DEER.\nThe challenge is to remain unswayable, using **Broken Record** and **Fogging** to hold your ground without raising your voice.\n• **Broken Record** — repeat your boundary calmly and slowly\n• **Fogging** — disarm their volume by agreeing with any factual truth\nThe key question is: are you letting their volume dictate your frame?\nMindset: volume does not equal authority.",
+      description: "When someone uses shouting, demands, or aggressive pressure to force you to cave or DEER.\n\n**The challenge:** remain unswayable, using **Broken Record** and **Fogging** to hold your ground without raising your voice.\n\n• **Broken Record** — repeat your boundary calmly and slowly\n• **Fogging** — disarm their volume by agreeing with any factual truth\n\n**The key question:** are you letting their volume dictate your frame?\n\nMindset: volume does not equal authority.",
       inputs: [
         { q: "She slams her hand on the table and shouts \"You will cancel that trip right now!\"", a: "\"I hear your anger, but I am going on the trip.\" [Broken Record]", bundle: 'pro', guideBack: "The same line, again" },
         { q: "She screams \"You're ruining this family with your stupid hobbies!\"", a: "\"It's true that my hobbies take up time on the weekend.\" [Fogging]", bundle: 'pro', guideBack: "A partial agreement" },
@@ -3522,7 +3522,7 @@ const challengesCollections = {
       name: "Guilt Trips",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "When someone uses self-pity, tears, or guilt-inducing statements (\"After all I've done for you\") to manipulate you.\nThe challenge is to remain compassionate without sacrificing your boundary, using **Fogging** and **Broken Record**.\n• **Fogging** — agree with their emotional reality or facts without taking blame\n• **Broken Record** — maintain your decision cleanly without groveling\nThe key question is: are you acting out of genuine choice or guilt?\nMindset: guilt is a choice, not an obligation.",
+      description: "When someone uses self-pity, tears, or guilt-inducing statements (\"After all I've done for you\") to manipulate you.\n\n**The challenge:** remain compassionate without sacrificing your boundary, using **Fogging** and **Broken Record**.\n\n• **Fogging** — agree with their emotional reality or facts without taking blame\n• **Broken Record** — maintain your decision cleanly without groveling\n\n**The key question:** are you acting out of genuine choice or guilt?\n\nMindset: guilt is a choice, not an obligation.",
       inputs: [
         { q: "She cries \"After everything I gave up for this family, you won't even buy me this bag.\"", a: "\"It's true that you've made sacrifices for our family.\" [Fogging]", bundle: 'pro', guideBack: "A partial agreement" },
         { q: "She sighs heavily \"I guess my feelings just don't matter to you at all.\"", a: "\"What specifically makes you feel your feelings don't matter?\" [Negative Inquiry]", bundle: 'pro', guideBack: "A question for specifics" },
@@ -3538,7 +3538,7 @@ const challengesCollections = {
       name: "Passive-Aggressive Sniping",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "When someone uses sarcasm, quiet digs, or subtle insults instead of direct communication.\nThe challenge is to expose the subtext using **Negative Inquiry** or disarm the dig with **Fogging**.\n• **Negative Inquiry** — ask them to clarify their sarcastic comment directly\n• **Fogging** — agree with the literal grain of truth to neutralize the bite\nThe key question is: will you let subtle digs go unchecked or bring them into the light?\nMindset: clarity destroys passive aggression.",
+      description: "When someone uses sarcasm, quiet digs, or subtle insults instead of direct communication.\n\n**The challenge:** expose the subtext using **Negative Inquiry** or disarm the dig with **Fogging**.\n\n• **Negative Inquiry** — ask them to clarify their sarcastic comment directly\n• **Fogging** — agree with the literal grain of truth to neutralize the bite\n\n**The key question:** will you let subtle digs go unchecked or bring them into the light?\n\nMindset: clarity destroys passive aggression.",
       inputs: [
         { q: "She rolls her eyes and mutters \"Must be nice to play video games while others work.\"", a: "\"It really is nice to unwind with a game.\" [Fogging]", bundle: 'pro', guideBack: "A partial agreement" },
         { q: "She says in a sweet tone \"Oh, so you finally decided to join us for dinner?\"", a: "\"You're right, I am joining dinner later than planned.\" [Negative Assertion]", bundle: 'pro', guideBack: "A calm admission" },
@@ -3554,7 +3554,7 @@ const challengesCollections = {
       name: "Persistent Nagging",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "When someone repeats the same complaint, demand, or pressure over and over to wear down your resolve.\nThe challenge is to stay calm and immovable using **Broken Record** without getting annoyed or offering new arguments.\n• **Broken Record** — use the exact same phrase every time they repeat the nag\n• **Negative Assertion** — accept any real delay cleanly\nThe key question is: can you out-last their persistence without losing your calm?\nMindset: a solid wall does not argue with the waves.",
+      description: "When someone repeats the same complaint, demand, or pressure over and over to wear down your resolve.\n\n**The challenge:** stay calm and immovable using **Broken Record** without getting annoyed or offering new arguments.\n\n• **Broken Record** — use the exact same phrase every time they repeat the nag\n• **Negative Assertion** — accept any real delay cleanly\n\n**The key question:** can you out-last their persistence without losing your calm?\n\nMindset: a solid wall does not argue with the waves.",
       inputs: [
         { q: "She repeats for the fourth time \"You really need to call the plumber right now.\"", a: "\"I hear your concern, but I am calling the plumber on Monday morning.\" [Broken Record]", bundle: 'pro', guideBack: "The same line, again" },
         { q: "She nags \"Why haven't you cleaned out the garage yet?\"", a: "\"You're right, I haven't cleaned the garage yet. That's on my list for Saturday.\" [Negative Assertion]", bundle: 'pro', guideBack: "A calm admission" },
@@ -3572,7 +3572,7 @@ const challengesCollections = {
       name: "The \"Creepy\" Resonance",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "When your partner describes your behavior as \"creepy\" or \"off\"—this usually means she is picking up on a covert contract.\nThe challenge is to kill the contract and return to your own Mental Point of Origin.",
+      description: "When your partner describes your behavior as \"creepy\" or \"off\"—this usually means she is picking up on a covert contract.\n\n**The challenge:** kill the contract and return to your own Mental Point of Origin.",
       inputs: [
         { q: "She asks, \"Why are you being so nice today? What do you want?\".", a: "\"I was trying to earn points. That's lame. I'm stopping.\" [Killing Covert Contracts]", bundle: 'pro', guideBack: "A direct ask, or a gift with no strings" },
         { q: "You are \"leaning in\" energetically to see if she liked your gift.", a: "(Internal) \"I release the need for her to like it. I gave it because I wanted to.\" [Killing Covert Contracts]", bundle: 'pro', guideBack: "A direct ask, or a gift with no strings" },
@@ -3588,7 +3588,7 @@ const challengesCollections = {
       name: "Covert Transactions",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Recognizing and eliminating hidden \"if I do X, she must give me Y\" transactions that turn into toxic resentment.\n\nThe covert contract is the signature move of the Nice Guy—buying love, sex, or peace through unrequested favors.\n• **Killing Covert Contracts** — name the hidden deal and kill it\n• **No DEERing** — state your choices cleanly without covert justification\n\nThe key question is: are you giving from desire, or are you trying to buy a reward?\n\nMindset: covert deals destroy attraction; clean boundaries build trust.",
+      description: "Recognizing and eliminating hidden \"if I do X, she must give me Y\" transactions that turn into toxic resentment.\n\nThe covert contract is the signature move of the Nice Guy—buying love, sex, or peace through unrequested favors.\n• **Killing Covert Contracts** — name the hidden deal and kill it\n• **No DEERing** — state your choices cleanly without covert justification\n\n**The key question:** are you giving from desire, or are you trying to buy a reward?\n\nMindset: covert deals destroy attraction; clean boundaries build trust.",
       inputs: [
         { q: "You agree to drive her mom to the airport hoping she'll feel guilty enough to have sex with you tonight.", a: "\"I am stopping buying sex with favors. I drive her mom only if I genuinely choose to.\" [Killing Covert Contracts]", bundle: 'pro', guideBack: "A direct ask, or a gift with no strings" },
         { q: "You spent three hours fixing her computer expecting an enthusiastic compliment that never came.", a: "\"Fixing her computer was my choice. I don't demand emotional payment for favors.\" [Killing Covert Contracts]", bundle: 'pro', guideBack: "A direct ask, or a gift with no strings" },
@@ -3604,7 +3604,7 @@ const challengesCollections = {
       name: "Explaining and Excusing",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Breaking the habit of Defending, Excusing, Explaining, and Rationalizing (DEERing) your decisions.\n\nDEERing is a submissive reflex that treats the other person as your judge and supervisor.\n• **No DEERing** — deliver clean, concise decisions without justification\n• **The Oak** — stand firm in the silence after stating your line\n\nThe key question is: are you leading your life, or are you applying for permission?\n\nMindset: an unswayable man offers choices, not court defense speeches.",
+      description: "Breaking the habit of Defending, Excusing, Explaining, and Rationalizing (DEERing) your decisions.\n\nDEERing is a submissive reflex that treats the other person as your judge and supervisor.\n• **No DEERing** — deliver clean, concise decisions without justification\n• **The Oak** — stand firm in the silence after stating your line\n\n**The key question:** are you leading your life, or are you applying for permission?\n\nMindset: an unswayable man offers choices, not court defense speeches.",
       inputs: [
         { q: "She asks why you bought a new pair of lifting shoes, and you feel the urge to list five sales discounts.", a: "\"I bought them for my lifting workouts at the gym.\" [No DEERing]", bundle: 'pro', guideBack: "A plain statement of the decision" },
         { q: "She demands to know why you don't want to go to her friend's dinner party.", a: "\"I am staying home to rest tonight, Love.\" [No DEERing]", bundle: 'pro', guideBack: "A plain statement of the decision" },
@@ -3620,7 +3620,7 @@ const challengesCollections = {
       name: "Explosive Rage vs Controlled Anger",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Transforming dangerous, suppressed Nice Guy rage into precise, low-pitch Controlled Anger.\n\nNice Guys suppress anger until they explode in childish rants; a leader uses anger as a calm, surgical signal.\n• **Controlled Anger** — deploy sharp, low-pitch authority to enforce boundaries cleanly\n• **The Oak** — stay grounded so anger doesn't turn into explosive chaos\n\nThe key question is: is your anger a controlled social signal, or an emotional tantrum?\n\nMindset: anger is a surgical tool of frame, not a childish explosion.",
+      description: "Transforming dangerous, suppressed Nice Guy rage into precise, low-pitch Controlled Anger.\n\nNice Guys suppress anger until they explode in childish rants; a leader uses anger as a calm, surgical signal.\n• **Controlled Anger** — deploy sharp, low-pitch authority to enforce boundaries cleanly\n• **The Oak** — stay grounded so anger doesn't turn into explosive chaos\n\n**The key question:** is your anger a controlled social signal, or an emotional tantrum?\n\nMindset: anger is a surgical tool of frame, not a childish explosion.",
       inputs: [
         { q: "She interrupts you for the fifth time, and you feel a surge of explosive rage building in your chest.", a: "(Lower voice tone) \"Stop interrupting me. Let me finish my point.\" [Controlled Anger]", bundle: 'pro', guideBack: "A firm, deliberate stop" },
         { q: "She mocks your career goals in front of her friends, and you feel the urge to punch a wall.", a: "(Speak with cold precision) \"That comment was disrespectful. Do not make it again.\" [Controlled Anger]", bundle: 'pro', guideBack: "A firm, deliberate stop" },
@@ -3636,7 +3636,7 @@ const challengesCollections = {
       name: "Emotional Storms",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Holding your ground as **The Oak** when she hits you with tears, guilt trips, or 'Code Red' panic waves.\n\nWhen her emotional hamster spins out, she is testing if your frame is solid enough to contain her storm.\n• **The Oak** — absorb the emotional intensity with unswayable physical presence\n• **No DEERing** — refuse to debate facts while her storm is active\n\nThe key question is: are you providing a solid mountain for her storm, or getting blown away?\n\nMindset: her storm is weather; I am the mountain.",
+      description: "Holding your ground as **The Oak** when she hits you with tears, guilt trips, or 'Code Red' panic waves.\n\nWhen her emotional hamster spins out, she is testing if your frame is solid enough to contain her storm.\n• **The Oak** — absorb the emotional intensity with unswayable physical presence\n• **No DEERing** — refuse to debate facts while her storm is active\n\n**The key question:** are you providing a solid mountain for her storm, or getting blown away?\n\nMindset: her storm is weather; I am the mountain.",
       inputs: [
         { q: "She sits on the floor crying hysterically, accusing you of ruining her entire life.", a: "(Sit beside her calmly) (Breathe deeply into your belly and hold space without debating). [The Oak]", bundle: 'pro', guideBack: "An unbothered, steady line" },
         { q: "She slams the bedroom door, locks it, and screams \"I hate you!\"", a: "(Stay centered) (Maintain upright posture, breathe calmly, and let her cool down). [The Oak]", bundle: 'pro', guideBack: "An unbothered, steady line" },
@@ -3670,7 +3670,7 @@ const challengesCollections = {
       name: "Permission Seeking",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Overcoming the reflex to seek consensus, approval, or permission before taking action.\nThe challenge is to step into autonomous leadership, making decisions and owning the outcomes without asking 'Is it okay?'\n• **Leading Without Permission** — execute decisions unilaterally without asking for approval\n• **Rule Zero (Rational Egoism)** — ground choices in your internal locus of control\n• **The Leader’s Vision** — anchor decisions in your grand destination\nThe key question is: are you acting as the captain, or are you applying for permission from a passenger?\nMindset: a leader leads; he does not request a committee vote to turn the helm.",
+      description: "Overcoming the reflex to seek consensus, approval, or permission before taking action.\n\n**The challenge:** step into autonomous leadership, making decisions and owning the outcomes without asking 'Is it okay?'\n\n• **Leading Without Permission** — execute decisions unilaterally without asking for approval\n• **Rule Zero (Rational Egoism)** — ground choices in your internal locus of control\n• **The Leader’s Vision** — anchor decisions in your grand destination\n\n**The key question:** are you acting as the captain, or are you applying for permission from a passenger?\n\nMindset: a leader leads; he does not request a committee vote to turn the helm.",
       inputs: [
         { q: "You want to buy a new piece of equipment for your business and feel the urge to ask her permission first.", a: "\"I'm purchasing this equipment today to double our production capacity.\" [Leading Without Permission]", bundle: 'pro', guideBack: "A plan you've already set" },
         { q: "You catch yourself saying \"Is it okay if I go to the gym for an hour?\" in a whiny voice.", a: "\"I am heading to the gym now. I'll be back at seven for dinner.\" [Leading Without Permission]", bundle: 'pro', guideBack: "A plan you've already set" },
@@ -3686,7 +3686,7 @@ const challengesCollections = {
       name: "Domestic Drift",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Reversing the slow slide into domestic boredom, complacency, and loss of sexual polarity.\nThe challenge is to re-inject ambition, mystery, and tension into a relationship that has drifted into predictable routine.\n• **Push and Pull** — create dynamic tension through calibrated space and warm presence\n• **The Leader’s Vision** — paint a compelling future that breaks boring domestic monotony\n• **Leading Without Permission** — shock the routine with unannounced, decisive moves\nThe key question is: are you maintaining dynamic polarity, or rotting in domestic comfort?\nMindset: domestic comfort kills desire; vision and tension keep the flame alive.",
+      description: "Reversing the slow slide into domestic boredom, complacency, and loss of sexual polarity.\n\n**The challenge:** re-inject ambition, mystery, and tension into a relationship that has drifted into predictable routine.\n\n• **Push and Pull** — create dynamic tension through calibrated space and warm presence\n• **The Leader’s Vision** — paint a compelling future that breaks boring domestic monotony\n• **Leading Without Permission** — shock the routine with unannounced, decisive moves\n\n**The key question:** are you maintaining dynamic polarity, or rotting in domestic comfort?\n\nMindset: domestic comfort kills desire; vision and tension keep the flame alive.",
       inputs: [
         { q: "You notice date night has devolved into eating takeout on the couch in sweatpants every Friday.", a: "\"Put on your favorite dress. I've booked a table downtown for eight.\" [Leading Without Permission]", bundle: 'pro', guideBack: "A plan you've already set" },
         { q: "She treats you like a familiar roommate, complaining about mundane household chores all evening.", a: "(Lean in, kiss her deeply on the neck, then step back and return to your desk). [Push and Pull]", bundle: 'pro', guideBack: "Warmth, then a push" },
@@ -3702,7 +3702,7 @@ const challengesCollections = {
       name: "The Peacekeeper Trap",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Overcoming the temptation to sacrifice your core mission, principles, and vision just to \"keep the peace.\"\nThe challenge is to embrace temporary relational tension, standing unswayable in Rule Zero and your vision.\n• **Rule Zero (Rational Egoism)** — prioritize your mission over submissive pleasing\n• **The Leader’s Vision** — hold the line on long-term goals despite short-term friction\n• **Leading Without Permission** — refuse to back down when your direction is challenged\nThe key question is: are you buying short-term peace at the cost of long-term respect and vision?\nMindset: keeping the peace is a slow poison; leading through tension builds true harmony.",
+      description: "Overcoming the temptation to sacrifice your core mission, principles, and vision just to \"keep the peace.\"\n\n**The challenge:** embrace temporary relational tension, standing unswayable in Rule Zero and your vision.\n\n• **Rule Zero (Rational Egoism)** — prioritize your mission over submissive pleasing\n• **The Leader’s Vision** — hold the line on long-term goals despite short-term friction\n• **Leading Without Permission** — refuse to back down when your direction is challenged\n\n**The key question:** are you buying short-term peace at the cost of long-term respect and vision?\n\nMindset: keeping the peace is a slow poison; leading through tension builds true harmony.",
       inputs: [
         { q: "She throws a tantrum because you refuse to spend your savings on a luxury vacation you can't afford.", a: "\"I do not compromise our financial foundation for short-term luxury. The savings stay.\" [Rule Zero (Rational Egoism)]", bundle: 'pro', guideBack: "Your own interest, put first" },
         { q: "You feel an intense urge to agree to a social commitment you hate just to stop her pouting.", a: "\"I am passing on this event. My time is allocated to my core priorities.\" [Rule Zero (Rational Egoism)]", bundle: 'pro', guideBack: "Your own interest, put first" },
@@ -3718,7 +3718,7 @@ const challengesCollections = {
       name: "Resistance to Vision",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Handling her doubts, fears, anxiety, and pushback when you roll out an ambitious long-term Vision.\nThe challenge is to remain unswayable as the Oak, painting the compelling destination while holding your course.\n• **The Leader’s Vision** — articulate the bold, inspiring destination with unshakeable conviction\n• **Leading Without Permission** — execute the initial steps despite her initial hesitation\n• **Push and Pull** — soothe her anxiety with warm presence while staying firm on the course\nThe key question is: are you letting her temporary fear collapse your grand vision?\nMindset: a crew may fear the storm, but the captain holds the wheel steady toward the harbor.",
+      description: "Handling her doubts, fears, anxiety, and pushback when you roll out an ambitious long-term Vision.\n\n**The challenge:** remain unswayable as the Oak, painting the compelling destination while holding your course.\n\n• **The Leader’s Vision** — articulate the bold, inspiring destination with unshakeable conviction\n• **Leading Without Permission** — execute the initial steps despite her initial hesitation\n• **Push and Pull** — soothe her anxiety with warm presence while staying firm on the course\n\n**The key question:** are you letting her temporary fear collapse your grand vision?\n\nMindset: a crew may fear the storm, but the captain holds the wheel steady toward the harbor.",
       inputs: [
         { q: "She expresses intense panic about your plan to buy investment real estate in a new city.", a: "\"I understand your fear, but I've calculated the risk. This investment builds our freedom.\" [The Leader’s Vision]", bundle: 'pro', guideBack: "A picture of the future" },
         { q: "She tells you that your goal of building an independent business is unrealistic for a man your age.", a: "\"My vision is clear and my execution is disciplined. Watch me build it.\" [The Leader’s Vision]", bundle: 'pro', guideBack: "A picture of the future" },
@@ -4801,7 +4801,7 @@ const challengesCollections = {
       name: "Disrespectful Snaps",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "When a partner uses a sharp, rude, or sarcastic tone during daily interactions.\n\n• Addressing Bad Behavior\n• Emotional Independence",
+      description: "When a partner uses a sharp, rude, or sarcastic tone during daily interactions.\n\n• **Addressing Bad Behavior**\n• **Emotional Independence**",
       inputs: [
         { q: "She snaps at you when you ask where she put the house keys.", a: "\"Hey, snapping at me over keys isn't cool. You can answer normally.\" [Addressing Bad Behavior]", bundle: 'pro', guideBack: "Calm feedback on how she acted" },
         { q: "She rolls her eyes and sighs loudly when you make a suggestion.", a: "\"Sighing and eye-rolling isn't cool. If you disagree, say it respectfully.\" [Addressing Bad Behavior]", bundle: 'pro', guideBack: "Calm feedback on how she acted" },
@@ -4817,7 +4817,7 @@ const challengesCollections = {
       name: "Testing Boundaries",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "When a partner attempts to impose artificial rules, withhold affection, or control your schedule.\n\n• Addressing Bad Behavior\n• Emotional Independence",
+      description: "When a partner attempts to impose artificial rules, withhold affection, or control your schedule.\n\n• **Addressing Bad Behavior**\n• **Emotional Independence**",
       inputs: [
         { q: "She says you aren't allowed to pursue your favorite hobby on weekends.", a: "\"I love my hobby and I'm keeping it. Let's plan our shared time around it.\" [Emotional Independence]", bundle: 'pro', guideBack: "A steady, self-contained line" },
         { q: "She withholds affection to force you to give in to her demand.", a: "\"Withholding affection to get your way won't work. I'm doing my thing.\" [Emotional Independence]", bundle: 'pro', guideBack: "A steady, self-contained line" },
@@ -4833,7 +4833,7 @@ const challengesCollections = {
       name: "Passive Resistance",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "When a partner exhibits stubbornness, laziness, or refusal to participate in the relationship.\n\n• Lovingly Expecting More\n• General Leadership",
+      description: "When a partner exhibits stubbornness, laziness, or refusal to participate in the relationship.\n\n• **Lovingly Expecting More**\n• **General Leadership**",
       inputs: [
         { q: "She refuses to help plan your upcoming weekend trip.", a: "\"I'm picking the destination tonight. If you want input, show me two spots now.\" [General Leadership]", bundle: 'pro', guideBack: "A plan, with a part for her" },
         { q: "She sits on the couch all day refusing to engage in conversation.", a: "\"Get off your phone for ten minutes and let me take us for a quick walk.\" [General Leadership]", bundle: 'pro', guideBack: "A plan, with a part for her" },
@@ -4849,7 +4849,7 @@ const challengesCollections = {
       name: "Relationship Stagnation",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "When routine, predictability, and lack of effort cause attraction and spark to fade.\n\n• General Leadership\n• Lovingly Expecting More",
+      description: "When routine, predictability, and lack of effort cause attraction and spark to fade.\n\n• **General Leadership**\n• **Lovingly Expecting More**",
       inputs: [
         { q: "You have fallen into a routine of watching TV every single evening.", a: "\"TV is off tonight. Put on something stylish, I'm taking you somewhere new.\" [General Leadership]", bundle: 'pro', guideBack: "A plan, with a part for her" },
         { q: "Physical affection has dropped off and feels overly formal.", a: "\"Enough with the polite handshakes. Come here and give me a real, tight hug.\" [Lovingly Expecting More]", bundle: 'pro', guideBack: "A warm request, or thanks for it" },
@@ -4883,7 +4883,7 @@ const challengesCollections = {
       name: "Arbitrary Demands",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "When a partner attempts to enforce petty restrictions, texting curfews, or unreasonable demands.\n\n• Ignoring Ridiculous Rules\n• The \"Let Her Win You Over\" Move",
+      description: "When a partner attempts to enforce petty restrictions, texting curfews, or unreasonable demands.\n\n• **Ignoring Ridiculous Rules**\n• **The \"Let Her Win You Over\" Move**",
       inputs: [
         { q: "She demands that you reply to her text messages within two minutes.", a: "\"Relax girl! I'll text when I have something cool to say. Stop monitoring me.\" [Ignoring Ridiculous Rules]", bundle: 'pro', guideBack: "A playful brush-off of the rule" },
         { q: "She says you aren't allowed to go to the gym on Saturday mornings.", a: "\"Whatever! I'm hitting the gym. But if you're good, I'll bring you a smoothie.\" [Ignoring Ridiculous Rules]", bundle: 'pro', guideBack: "A playful brush-off of the rule" },
@@ -4899,7 +4899,7 @@ const challengesCollections = {
       name: "Emotional Distance",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "When a partner acts cold, withheld, or distant to test your emotional stability.\n\n• Restoring the Spark\n• Expressing Real Moods",
+      description: "When a partner acts cold, withheld, or distant to test your emotional stability.\n\n• **Restoring the Spark**\n• **Expressing Real Moods**",
       inputs: [
         { q: "She sits at the opposite end of the couch avoiding physical contact.", a: "\"Enough with the distance over there. Come here and give me a real hug.\" [Restoring the Spark]", bundle: 'pro', guideBack: "A bold line or touch" },
         { q: "She gives brief, clipped answers during dinner.", a: "\"You're super quiet tonight. Tell me what's actually on your mind.\" [Expressing Real Moods]", bundle: 'pro', guideBack: "An honest reaction" },
@@ -4915,7 +4915,7 @@ const challengesCollections = {
       name: "Passive Testing",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "When a partner uses subtle tests, eye-rolls, or sighs to provoke an emotional reaction.\n\n• Ignoring Ridiculous Rules\n• Expressing Real Moods",
+      description: "When a partner uses subtle tests, eye-rolls, or sighs to provoke an emotional reaction.\n\n• **Ignoring Ridiculous Rules**\n• **Expressing Real Moods**",
       inputs: [
         { q: "She rolls her eyes dramatically when you express an opinion.", a: "\"Look at that eye-roll! You must have practiced that in the mirror.\" [Ignoring Ridiculous Rules]", bundle: 'pro', guideBack: "A playful brush-off of the rule" },
         { q: "She sighs loudly whenever you ask for a minor favor.", a: "\"Such a dramatic sigh! You're a total nutcase today. Come here.\" [Ignoring Ridiculous Rules]", bundle: 'pro', guideBack: "A playful brush-off of the rule" },
@@ -4931,7 +4931,7 @@ const challengesCollections = {
       name: "Routine Traps",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "When daily habits turn the relationship into a predictable, boring friendship.\n\n• Restoring the Spark\n• The \"Let Her Win You Over\" Move",
+      description: "When daily habits turn the relationship into a predictable, boring friendship.\n\n• **Restoring the Spark**\n• **The \"Let Her Win You Over\" Move**",
       inputs: [
         { q: "You fall into the trap of doing the exact same date every Friday.", a: "\"We're upgrading Friday night. Show me three cool new spots and I'll pick one.\" [The \"Let Her Win You Over\" Move]", bundle: 'pro', guideBack: "A counter-wish she has to win" },
         { q: "You talk only about chores, bills, and errands all evening.", a: "\"Enough with the boring talk! Tell me something wild or dangerous instead.\" [Restoring the Spark]", bundle: 'pro', guideBack: "A bold line or touch" },
