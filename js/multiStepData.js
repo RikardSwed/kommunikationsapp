@@ -7628,6 +7628,85 @@ const multiStepCollections = {
             { front: "Narrating the Frame — they ask \"What reason?\"", back: "\"I'm just a boy from Queens living the dream, and I have a theory about groups like yours. I'm Todd.\"" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "She is standing alone examining a modern sculpture.",
+          steps: [
+            { front: "Statement Openers — open with an observation.", back: "\"You look like you're trying to figure out if this sculpture is brilliant or a scam.\"" },
+            { front: "Narrating the Frame — call out the moment.", back: "\"It's funny how everyone in here is pretending to be super sophisticated.\"" },
+            { front: "Open Loops (The Cookie) — drop an intriguing story lead.", back: "\"I actually had a wild art class experience back in college that ruined art for me.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The \"Curiosity & Hook\" Sequence",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence designed to spark curiosity with a tease, drop a high-value hook, and establish dynamic control.\n\n• Step 1: Question-Answer-Tease (QAT)\n• Step 2: Open Loops (The Cookie)\n• Step 3: Narrating the Frame",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She is waiting for a drink near the bar counter.",
+          steps: [
+            { front: "Question-Answer-Tease (QAT) — tease her drink order.", back: "\"What's your poison tonight? ... A martini? Oh, so you're trying to feel like James Bond.\"" },
+            { front: "Open Loops (The Cookie) — drop a partial story hook.", back: "\"I actually made the absolute worst cocktail of my life last weekend.\"" },
+            { front: "Narrating the Frame — describe the interaction vibe.", back: "\"Look at us, chatting like old friends in the middle of a noisy bar.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is sitting on a bench with a sketchpad.",
+          steps: [
+            { front: "Question-Answer-Tease (QAT) — tease her drawing.", back: "\"Are you drawing people secretly? ... Landscapes? That's way less dramatic than I hoped.\"" },
+            { front: "Open Loops (The Cookie) — hint at an interesting memory.", back: "\"I used to have a friend who tried to sell fake sketches in Paris.\"" },
+            { front: "Narrating the Frame — call out the relaxed atmosphere.", back: "\"It's pretty rare to find two people actually relaxing outdoors without phones.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is browsing books in the travel section.",
+          steps: [
+            { front: "Question-Answer-Tease (QAT) — tease her travel destination choice.", back: "\"Where are you escaping to? ... Italy? Oh, so you just want pasta and wine.\"" },
+            { front: "Open Loops (The Cookie) — drop a teaser about a travel story.", back: "\"I had the most insane travel nightmare in Europe two years ago.\"" },
+            { front: "Narrating the Frame — observe the shared environment.", back: "\"We're both completely ignoring our afternoon responsibilities right now.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The \"Direct Observation\" Sequence",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence that begins with a bold statement, transitions into playful teasing, and locks in the interaction frame.\n\n• Step 1: Statement Openers\n• Step 2: Question-Answer-Tease (QAT)\n• Step 3: Narrating the Frame",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She is standing by a display counter looking at pastries.",
+          steps: [
+            { front: "Statement Openers — observe her posture and choice.", back: "\"You look like someone who is fighting a very serious internal battle over chocolate.\"" },
+            { front: "Question-Answer-Tease (QAT) — ask and tease her final pick.", back: "\"Which one are you getting? ... The croissant? Basic, but I'll allow it.\"" },
+            { front: "Narrating the Frame — narrate the spontaneous connection.", back: "\"I love how a pastry decision just turned into a whole conversation.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is waiting for a commuter train holding a tote bag.",
+          steps: [
+            { front: "Statement Openers — open with a style observation.", back: "\"That tote bag looks like it has survived three different continents.\"" },
+            { front: "Question-Answer-Tease (QAT) — tease her job or routine.", back: "\"Heading to work or escaping? ... Working? You said that with so much sadness.\"" },
+            { front: "Narrating the Frame — highlight the shared moment.", back: "\"This platform is boring, so I'm glad we decided to entertain each other.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is flipping through vintage vinyl records.",
+          steps: [
+            { front: "Statement Openers — observe her music hunting style.", back: "\"You flip through those records like a seasoned radio DJ.\"" },
+            { front: "Question-Answer-Tease (QAT) — tease her music taste.", back: "\"Who are you searching for? ... 80s rock? I knew you had a secret wild side.\"" },
+            { front: "Narrating the Frame — call out the shared nostalgia.", back: "\"It's cool how music shops force people to slow down and actually talk.\"" },
+          ]
+        },
       ]
     },
   ],
@@ -7647,6 +7726,24 @@ const multiStepCollections = {
             { front: "Disqualification — she qualifies herself (\"I traveled to India alone!\").", back: "\"India? Okay, you get some points for that. But look, don't get any ideas—I'm not having sex with you tonight. I'm flying out early.\"" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "She is sitting at the bar with a sophisticated drink, looking aloof.",
+          steps: [
+            { front: "Push-Pull — compliment her style with a negative twist.", back: "\"That cocktail looks incredible, but you look like you're way too much trouble to drink with.\"" },
+            { front: "Qualifying (The Interviewer) — test her depth after she smiles.", back: "\"You seem fun, but tell me: do you actually have a passion, or do you just look good?\"" },
+            { front: "Disqualification (Sexual) — take sex off the table after she answers.", back: "\"You're cute, but don't get any ideas. I'm not having sex with you tonight—I'm flying early.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is leaning against the railing looking at her phone.",
+          steps: [
+            { front: "Push-Pull — tease her phone distraction.", back: "\"It's so annoying how cute you are when you're staring at your phone. Put it away.\"" },
+            { front: "Qualifying (The Interviewer) — ask for a genuine story.", back: "\"Tell me something about yourself that isn't on your social media profile.\"" },
+            { front: "Disqualification (Sexual) — frame the interaction as purely platonic.", back: "\"We can hang out, but I'm definitely not boyfriend material. Let's just be friends.\"" },
+          ]
+        },
       ]
     },
     {
@@ -7662,6 +7759,59 @@ const multiStepCollections = {
             { front: "The Neg — unintentional honesty about her style.", back: "\"I love that outfit. It's so cool that you're trying to bring the 'Mean Girls' look back.\"" },
             { front: "Qualifying — she's shocked/amused; screen her.", back: "\"I'm curious though, behind all the designer labels... do you have a soul? What are you actually passionate about?\"" },
             { front: "Push-Pull — she starts talking about her art/hobbies.", back: "\"You're an artist? That's amazing. I love creative people... although most of them are crazy, so we're probably not going to get along.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is dressed in high fashion and examining a painting.",
+          steps: [
+            { front: "The Neg — deliver an unintentional observation about her outfit.", back: "\"I love that coat. It's so cool that you're trying to bring the 70s detective look back.\"" },
+            { front: "Qualifying (The Interviewer) — screen her character when she laughs.", back: "\"I'm curious though: behind the fashionable exterior, do you actually have a soul?\"" },
+            { front: "Push-Pull — reward her response with a balanced compliment.", back: "\"I love creative minds, but you also seem completely crazy. I can't decide if I like you.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is sitting with an expensive laptop and looking busy.",
+          steps: [
+            { front: "The Neg — comment on her expressive face.", back: "\"You have such an expressive face. You look like a cartoon character working on a deadline.\"" },
+            { front: "Qualifying (The Interviewer) — ask about her drive.", back: "\"Are you actually industrious, or are you just pretending to work to look important?\"" },
+            { front: "Push-Pull — close the sequence with emotional tension.", back: "\"You're actually not super boring. I thought I loved you, but now I'm not so sure.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Disqualification Reset",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence to remove sexual pressure, evaluate her standards, and re-inject flirtatious tension.\n\n1. **Disqualification (Sexual)** — remove sexual expectation to lower her guard\n2. **Qualifying (The Interviewer)** — screen her for genuine character and investment\n3. **Push-Pull** — spike the emotional rollercoaster once she invests",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She stands near the bar with her arms crossed, expecting a pickup attempt.",
+          steps: [
+            { front: "Disqualification (Sexual) — remove sexual pressure immediately.", back: "\"Look, just so we're clear: no sex tonight. I'm completely over meaningless hookups.\"" },
+            { front: "Qualifying (The Interviewer) — ask a screening question.", back: "\"Now that we have that out of the way: what's the most adventurous thing you've done this year?\"" },
+            { front: "Push-Pull — reward her answer while keeping tension.", back: "\"That's actually impressive. You're cute, but you're definitely going to be trouble.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She gives polite answers and hesitates to invest in the chat.",
+          steps: [
+            { front: "Disqualification (Sexual) — set a platonic, low-risk frame.", back: "\"We can chat for five minutes, but I'm not boyfriend material, so don't get any ideas.\"" },
+            { front: "Qualifying (The Interviewer) — test if she can keep up.", back: "\"Are you usually this quiet, or do you have a secret wild side nobody knows about?\"" },
+            { front: "Push-Pull — spike the vibe when she opens up.", back: "\"I thought I loved you until you said that! Now we're definitely breaking up.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are sitting together on a couch and the vibe turns overly serious.",
+          steps: [
+            { front: "Disqualification (Sexual) — set a time limit and boundary.", back: "\"I have to head home soon, and you're definitely not getting in my pants tonight.\"" },
+            { front: "Qualifying (The Interviewer) — ask what drives her.", back: "\"Tell me what actually motivates you in life before I leave.\"" },
+            { front: "Push-Pull — leave her with an emotional spike.", back: "\"You're actually pretty cool. It's so annoying how adorable you are.\"" },
           ]
         },
       ]
@@ -7692,6 +7842,94 @@ const multiStepCollections = {
             { front: "Wide and Deep Rapport — pivot to how she feels.", back: "\"Ohio to here is a massive jump. What's the one thing you miss the most about the quiet life, and the one thing you'd never give up about being here?\"" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "She mentions she is thinking about quitting her corporate marketing job.",
+          steps: [
+            { front: "The Cold Read — observe her underlying drive.", back: "\"You look like someone who started that job for security, but now craves creative freedom.\"" },
+            { front: "Identifying the Blueprint — confirm her core motivation.", back: "\"So for you, taking a risk feels scary, but staying stuck in routine feels way worse.\"" },
+            { front: "Grounding Stories (DHV Stories) — anchor with a personal story.", back: "\"I faced that exact choice three years ago when I left tech to build my own business.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She shares that she spent a month solo backpacking across South America.",
+          steps: [
+            { front: "The Cold Read — read her adventure style.", back: "\"You're not the tourist resort type—you're the person who wanders into local neighborhoods.\"" },
+            { front: "Identifying the Blueprint — uncover her core priority.", back: "\"It sounds like novelty and independence are what make you feel truly alive.\"" },
+            { front: "Grounding Stories (DHV Stories) — share a parallel experience.", back: "\"That reminds me of getting lost in Tokyo at night with zero Japanese skills.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The \"Deep Rapport\" Loop",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence to expand conversation breadth, make perceptive personal reads, and anchor the connection with a grounding story.\n\n• Step 1: Wide and Deep Rapport\n• Step 2: The Cold Read\n• Step 3: Grounding Stories (DHV Stories)",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She mentions she takes pottery classes on weekends.",
+          steps: [
+            { front: "Wide and Deep Rapport — ask for the emotional reason behind her hobby.", back: "\"What made you choose pottery? Is it the tactile feel or just escaping screens?\"" },
+            { front: "The Cold Read — make an intuitive read on her personality.", back: "\"You have a very patient side that most people miss because you act energetic.\"" },
+            { front: "Grounding Stories (DHV Stories) — share your own creative outlet.", back: "\"I get that same quiet focus when I work on woodworking projects in my garage.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She talks about growing up in a small coastal town.",
+          steps: [
+            { front: "Wide and Deep Rapport — ask how that environment shaped her.", back: "\"How did growing up by the ocean influence how you deal with stress now?\"" },
+            { front: "The Cold Read — observe her connection to family.", back: "\"You sound like the sibling who always tried to keep the peace during family dinners.\"" },
+            { front: "Grounding Stories (DHV Stories) — share a grounding family memory.", back: "\"My family dinners were chaotic too, with three brothers fighting over food.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She says she loves taking spontaneous road trips.",
+          steps: [
+            { front: "Wide and Deep Rapport — ask what feelings road trips trigger.", back: "\"Is it the feeling of open road or discovering strange small towns that you love?\"" },
+            { front: "The Cold Read — read her decision-making style.", back: "\"You seem like someone who plans the big route but leaves all the details to fate.\"" },
+            { front: "Grounding Stories (DHV Stories) — share a memorable road trip story.", back: "\"My favorite trip was driving up the coast with no hotel reservations booked.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Uncovering Her World",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence to make an intuitive observation, uncover her core value blueprint, and deepen emotional rapport.\n\n• Step 1: The Cold Read\n• Step 2: Identifying the Blueprint\n• Step 3: Wide and Deep Rapport",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She talks enthusiastically about leading a large team at her company.",
+          steps: [
+            { front: "The Cold Read — make a read on her leadership style.", back: "\"You look like a leader who cares more about protecting her team than taking credit.\"" },
+            { front: "Identifying the Blueprint — identify her primary value.", back: "\"So loyalty and impact matter way more to you than just having a fancy title.\"" },
+            { front: "Wide and Deep Rapport — bridge into her personal life.", back: "\"How do you turn off that high-responsibility mindset when you come home?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She describes sketching portraits of strangers while traveling.",
+          steps: [
+            { front: "The Cold Read — read her observation skills.", back: "\"You're a deep observer. You notice small details about people that others ignore.\"" },
+            { front: "Identifying the Blueprint — uncover her world view.", back: "\"For you, beauty is about authenticity rather than polished perfection.\"" },
+            { front: "Wide and Deep Rapport — ask about her favorite encounter.", back: "\"What was the most surprising story a stranger ever shared with you?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is quiet and selective with her answers during early conversation.",
+          steps: [
+            { front: "The Cold Read — call out her guarded nature warmly.", back: "\"You have a strong inner circle, and you don't let people in until they prove themselves.\"" },
+            { front: "Identifying the Blueprint — validate her core boundary.", back: "\"So genuine trust and emotional safety are non-negotiable for you.\"" },
+            { front: "Wide and Deep Rapport — explore her favorite safe spaces.", back: "\"Where is the place you go when you want to completely recharge your batteries?\"" },
+          ]
+        },
       ]
     },
   ],
@@ -7711,6 +7949,24 @@ const multiStepCollections = {
             { front: "Assumptive Closing — she says \"Oh really? I love views.\"", back: "\"[ __ ] it, let's go check it out for ten minutes before I have to run. Sco.\"" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "You have been chatting at a hotel bar for twenty minutes and want to change venues smoothly.",
+          steps: [
+            { front: "False Time Constraints — mention you have to leave soon.", back: "\"I have to meet my friends in about 20 minutes, but I'm really enjoying this.\"" },
+            { front: "Seeding the Pull — plant the seed of an exclusive rooftop spot.", back: "\"I'd take you up to the secret rooftop lounge, but I don't know if you can handle the height.\"" },
+            { front: "Assumptive Closing (Sco Game) — she says she loves rooftop bars.", back: "\"Let me take you up for five minutes before I have to run. Sco.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You met at a busy networking event and want to move to a quiet coffee shop nearby.",
+          steps: [
+            { front: "False Time Constraints — establish a brief window of time.", back: "\"I have to catch my train in fifteen minutes, but this conversation is too good to rush.\"" },
+            { front: "Seeding the Pull — seed the idea of a quick espresso.", back: "\"There's an amazing espresso bar next door, but you look like you're too busy networking.\"" },
+            { front: "Assumptive Closing (Sco Game) — she says she needs coffee too.", back: "\"Come on, let's grab a quick cup right now before my train. Let me lead us out.\"" },
+          ]
+        },
       ]
     },
     {
@@ -7726,6 +7982,59 @@ const multiStepCollections = {
             { front: "Emotional Spiking — use a polarizing statement.", back: "\"You're the most ridiculous girl I've met all night. I think I like you, but you also totally disgust me.\"" },
             { front: "False Time Constraints — she giggles and puts the phone away.", back: "\"Look, I have to head off in a minute, but tell me something about you that isn't obvious.\"" },
             { front: "Seeding the Pull — she qualifies herself.", back: "\"Okay, you're actually kind of cool. I might have to take you for that drink on Sunday after all. We'll see.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is giving polite, formal answers about her corporate job and looking bored.",
+          steps: [
+            { front: "Emotional Spiking (The Polarizer) — break the formal pattern with a bold reframe.", back: "\"You're telling me about spreadsheets, but you have this look like you're plotting a bank heist.\"" },
+            { front: "False Time Constraints — she laughs and relaxes her posture.", back: "\"I can only stay for two more minutes, so tell me something about you that isn't on LinkedIn.\"" },
+            { front: "Seeding the Pull — she shares a passionate hobby.", back: "\"Okay, you're actually interesting. I might have to take you for an adventure date next week.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Conversation stalls at a rooftop party and she starts checking her watch.",
+          steps: [
+            { front: "Emotional Spiking (The Polarizer) — use a polarizing statement to restart energy.", back: "\"I can't decide if you're the sweetest person here or the most dangerous troublemaker.\"" },
+            { front: "False Time Constraints — she looks up surprised and smiles.", back: "\"I'm heading back to my friends in a second, but you owe me an explanation for that smile.\"" },
+            { front: "Seeding the Pull — she banters back playfully.", back: "\"You're fun. We probably shouldn't hang out again because we'd get into way too much trouble.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The \"Sco\" Fast Pull",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence designed to lower social pressure, spike emotional tension, and execute an immediate, assumptive venue move.\n\n• Step 1: False Time Constraints\n• Step 2: Emotional Spiking (The Polarizer)\n• Step 3: Assumptive Closing (Sco Game)",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are standing near the venue exit on a weekend night.",
+          steps: [
+            { front: "False Time Constraints — set a quick timeframe.", back: "\"I have to head home in five minutes, but I'm starving.\"" },
+            { front: "Emotional Spiking (The Polarizer) — spike the interaction with playful friction.", back: "\"You look like the type of girl who eats pizza with a fork and knife, which is disgraceful.\"" },
+            { front: "Assumptive Closing (Sco Game) — execute the move directly.", back: "\"Let me take you across the street for a slice before I leave. Sco.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "The main bar area is packed and noisy, making conversation difficult.",
+          steps: [
+            { front: "False Time Constraints — mention a brief move.", back: "\"I'm stepping out to the patio for two minutes to catch my breath.\"" },
+            { front: "Emotional Spiking (The Polarizer) — tease her quiet demeanor.", back: "\"You look way too serious for a Friday night. You need some outdoor air.\"" },
+            { front: "Assumptive Closing (Sco Game) — take her hand and lead.", back: "\"Come with me to the patio right now. Let me lead us out.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are walking near your apartment building after drinks.",
+          steps: [
+            { front: "False Time Constraints — frame the visit as very brief.", back: "\"I need to drop my heavy bag at my place for two minutes.\"" },
+            { front: "Emotional Spiking (The Polarizer) — add playful tension.", back: "\"You can come up, but promise not to steal my favorite vinyl record.\"" },
+            { front: "Assumptive Closing (Sco Game) — lead through the entrance.", back: "\"Let me lead us inside real fast while I put this away. Let's go.\"" },
           ]
         },
       ]
@@ -7747,6 +8056,24 @@ const multiStepCollections = {
             { front: "Passing Value Tests — as you walk away, she says \"You're very assertive, aren't you?\"", back: "\"I'm glad you noticed. It's better than being a bumbling buffoon, right? I'm Todd.\"" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "She is standing in the middle of a tight group of friends near the bar.",
+          steps: [
+            { front: "Handling the Posse — acknowledge the group warmly.", back: "\"Hey everyone! I'm stealing your friend for two minutes, don't worry, I'll return her safely.\"" },
+            { front: "Passing Value Shit Tests — reframe her friend's sarcastic comment about your approach.", back: "\"I love the protective friend shield! It shows you guys actually care about her.\"" },
+            { front: "The \"What Do I Want?\" Move — state your intention and lead her to a quieter spot.", back: "\"I want to hear that story without yelling over the music. Let's sit at that booth over there.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is sitting with two friends who are eyeing you suspiciously.",
+          steps: [
+            { front: "Handling the Posse — disarm her protective friends.", back: "\"You two look like the fun committee tonight. I'm Todd, nice to meet you both.\"" },
+            { front: "Passing Value Shit Tests — agree and exaggerate when her friend calls you cocky.", back: "\"Oh, I'm terribly arrogant! It's a huge problem, but I make up for it with charm.\"" },
+            { front: "The \"What Do I Want?\" Move — lead her away for a 1-on-1 chat.", back: "\"I'm grabbing a fresh water from the quiet bar area. Walk over with me.\"" },
+          ]
+        },
       ]
     },
     {
@@ -7762,6 +8089,59 @@ const multiStepCollections = {
             { front: "Passing Value Tests — she says \"I bet you're a player.\"", back: "\"If by that you mean I'm a guy with options who chose to be here with you, then yes. Very perceptive.\"" },
             { front: "Passing Comfort Tests — she softens and says \"I just don't want to get hurt.\"", back: "\"I respect that. It's modest of you to think I could even hurt you yet. Let's just have a fun time and see where it goes.\"" },
             { front: "The \"What Do I Want?\" Move — the tension is high; move for the close.", back: "\"I'm tired of this bar. Let's go check out the view on the rooftop nearby. Sco.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She reacts with a cold, sarcastic remark when you first approach her.",
+          steps: [
+            { front: "Passing Value Shit Tests — absorb the friction with a calm smirk.", back: "\"Look at that fierce glare! You must be an absolute nightmare to deal with in the morning.\"" },
+            { front: "Passing Comfort Shit Tests — answer her genuine follow-up question with sincerity.", back: "\"Honestly, I'm not playing games. I saw your energy from across the room and wanted to say hi.\"" },
+            { front: "The \"What Do I Want?\" Move — state your clear desire and lead the interaction.", back: "\"I want to get to know the real person behind that tough exterior. Let's grab a seat.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She acts guarded and questions your motives during early date drinks.",
+          steps: [
+            { front: "Passing Value Shit Tests — reframe her challenge about your intentions.", back: "\"You think I have a secret evil masterplan? I'm just enjoying a great drink with a cool girl.\"" },
+            { front: "Passing Comfort Shit Tests — reassure her genuine concern about trust.", back: "\"I get why you're cautious. I value honesty and I only hang out with people who are real.\"" },
+            { front: "The \"What Do I Want?\" Move — lead her to the next venue with certainty.", back: "\"I'm in the mood for amazing dessert. Come on, I'm taking us to my favorite spot.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Defusing Group Pressure",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence to engage a protective group, reframe value challenges, and reassure comfort.\n\n• Step 1: Handling the Posse\n• Step 2: Passing Value Shit Tests\n• Step 3: Passing Comfort Shit Tests",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She is surrounded by protective friends in a high-status venue section.",
+          steps: [
+            { front: "Handling the Posse — address the whole group with warmth and confidence.", back: "\"Good evening everyone! I'm Todd. I had to come over and say hello to your friend.\"" },
+            { front: "Passing Value Shit Tests — reframe her friend's sarcastic joke about your outfit.", back: "\"I appreciate the style advice, mate! You guys definitely run a tough entry inspection.\"" },
+            { front: "Passing Comfort Shit Tests — answer her sincere question about your background calmly.", back: "\"I work in design, but what I really care about is building cool projects and traveling.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is chatting with a mix of male and female friends near the order counter.",
+          steps: [
+            { front: "Handling the Posse — win over the dominant group member.", back: "\"Hey man, quick question for the group: who is the most troublemaking person here?\"" },
+            { front: "Passing Value Shit Tests — agree and exaggerate when called a player by her friend.", back: "\"Oh absolutely, I'm a professional player! I practice my lines in the mirror every morning.\"" },
+            { front: "Passing Comfort Shit Tests — speak sincerely when she asks why you stayed to chat.", back: "\"To be honest, your group had great energy, but I really wanted to connect with you.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is talking with a protective male friend in a crowded kitchen area.",
+          steps: [
+            { front: "Handling the Posse — disarm the protective friend with high status.", back: "\"Hey brother! I'm not here to cause trouble, just saying a quick hi to this lady.\"" },
+            { front: "Passing Value Shit Tests — reframe a sharp challenge about your confidence.", back: "\"I'm not cocky, I'm just having a great night. Life is too short to be shy.\"" },
+            { front: "Passing Comfort Shit Tests — reassure her genuine concern about your intentions.", back: "\"I take relationships seriously. I don't waste time with people unless there's genuine chemistry.\"" },
           ]
         },
       ]

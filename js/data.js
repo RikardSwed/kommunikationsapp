@@ -14074,6 +14074,9 @@ const collectionsModeData = {
         { q: "You are in a long queue and want to comment on it.", a: "\"This queue is not moving. I think we should just start a new civilization here.\" [Statement Openers]", bundle: 'pro' },
         { q: "You want to use a \"doubling down on entitlement\" opener.", a: "\"I'm Todd. I'm a bit of a bad influence, but I thought you looked like you could handle it.\" [Narrating the Frame]", bundle: 'pro' },
         { q: "You see a girl with an interesting hair color.", a: "\"That blue hair is the most unique thing I've seen all day. You win the prize.\" [Statement Openers]", bundle: 'pro' },
+        { q: "You walk past an attractive woman in a clothing store who is looking at leather jackets.", a: "\"You look like someone who is about to make a very bold jacket choice.\" [Statement Openers]", bundle: 'pro' },
+        { q: "You are standing next to a girl at a juice bar and notice her unique order.", a: "\"That looks like an aggressively healthy drink. What's actually in there?\" [Statement Openers]", bundle: 'pro' },
+        { q: "You see a girl at a coffee shop reading a physical newspaper.", a: "\"A physical newspaper? I feel like I just stepped back into 1995.\" [Statement Openers]", bundle: 'pro' },
       ]
     },
     {
@@ -14087,6 +14090,25 @@ const collectionsModeData = {
         { q: "You want to use an \"instigating\" line for a group.", a: "\"Wait, I just noticed something. Are you guys best friends? There's a reason I'm asking.\" [Open Loops]", bundle: 'pro' },
         { q: "She answers where she is going with \"Chipotle.\"", a: "\"Chipotle? You little lost soul. You should come with me instead, I know a better spot.\" [Question-Answer-Tease]", bundle: 'pro' },
         { q: "She asks what you are doing in the city.", a: "\"I'm helping people when they are most in need. Guess what that means.\" [Open Loops]", bundle: 'pro' },
+        { q: "She asks you what you do for a living within thirty seconds of meeting.", a: "\"I could tell you, but then I'd have to hire you as my assistant.\" [Open Loops (The Cookie)]", bundle: 'pro' },
+        { q: "You want to spark curiosity about your background during an approach.", a: "\"There are two things you'd never guess about me just by looking.\" [Open Loops (The Cookie)]", bundle: 'pro' },
+        { q: "She asks why you decided to walk over and talk to her.", a: "\"You had a very specific look on your face, like you were plotting a minor crime.\" [Statement Openers]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sustaining Momentum",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choose between opening strategies when the initial greeting is complete and you need to push the interaction forward into a genuine conversation hook.\n\n• **Statement Openers**\n• **Narrating the Frame**\n• **Open Loops (The Cookie)**\n• **Question-Answer-Tease (QAT)**\n\nUse these moves to maintain tension and keep her engaged without falling back into dry small talk.",
+      inputs: [
+        { q: "You notice her style and want to make a bold observation.", a: "\"You look like you belong in a creative arts studio or a heist movie.\" [Statement Openers]", bundle: 'pro' },
+        { q: "You want to call out the energy between you two after opening.", a: "\"Notice how we both stopped what we were doing just to have this moment?\" [Narrating the Frame]", bundle: 'pro' },
+        { q: "You want to drop an interesting story hook without telling it yet.", a: "\"I just had the weirdest encounter outside, but I'll tell you in a second.\" [Open Loops (The Cookie)]", bundle: 'pro' },
+        { q: "You want to ask where she's from while teasing her answer.", a: "\"Where are you from? ... Midwest? I knew it, you have that wholesome farm energy.\" [Question-Answer-Tease (QAT)]", bundle: 'pro' },
+        { q: "You observe her holding a huge cup of coffee in the afternoon.", a: "\"That is a dangerously large coffee for three in the afternoon.\" [Statement Openers]", bundle: 'pro' },
+        { q: "You want to highlight the awkwardness of a loud venue playfully.", a: "\"We're currently doing the classic shouting-over-loud-music routine.\" [Narrating the Frame]", bundle: 'pro' },
+        { q: "You want to hint at a secret talent before continuing the chat.", a: "\"I have a hidden skill that usually shocks people, but you have to earn it.\" [Open Loops (The Cookie)]", bundle: 'pro' },
+        { q: "You ask what she studied in college to tease her response.", a: "\"What did you study? ... Psychology? Oh great, so you're analyzing my posture right now.\" [Question-Answer-Tease (QAT)]", bundle: 'pro' },
       ]
     },
   ],
@@ -14102,6 +14124,9 @@ const collectionsModeData = {
         { q: "She says something you disagree with in a fun way.", a: "\"I thought I loved you... until you said that. Now we're definitely breaking up.\" [Push-Pull]", bundle: 'pro' },
         { q: "You want to give a \"backwards compliment\" about her style.", a: "\"I love that look. It's very '90s music video.' You're bringing it back.\" [The Neg]", bundle: 'pro' },
         { q: "You want to challenge her while showing interest.", a: "\"I can't decide if I'm going to love you or hate you yet. I'll tell you in ten minutes.\" [Push-Pull]", bundle: 'pro' },
+        { q: "She tells you she is a professional model and expects you to be blown away.", a: "\"You're very cute, but you look like you'd be a total nightmare to go shopping with.\" [Push-Pull]", bundle: 'pro' },
+        { q: "She brags that she graduated top of her class in finance.", a: "\"I love that sweater. It's so cool that you're trying to bring the 80s back.\" [The Neg]", bundle: 'pro' },
+        { q: "She claims she never goes out on weeknights.", a: "\"I thought you were adventurous until you said that. Now I'm not so sure.\" [Push-Pull]", bundle: 'pro' },
       ]
     },
     {
@@ -14115,6 +14140,25 @@ const collectionsModeData = {
         { q: "She mentions a hobby or trait you actually like.", a: "\"You like [hobby]? Okay, you get some points for that. I'm impressed.\" [Qualifying]", bundle: 'pro' },
         { q: "You want to \"push\" her away for a relationship.", a: "\"You're cute, but I'm not sure you could handle a guy like me. We're probably not going to get along.\" [Disqualification]", bundle: 'pro' },
         { q: "You want her to prove herself after a compliment.", a: "\"You look great, but tell me something about you that isn't obvious. I have high standards.\" [Qualifying]", bundle: 'pro' },
+        { q: "She asks if you pick up women in bars all the time.", a: "\"I'm definitely not boyfriend material. Let me introduce you to my single friends instead.\" [Disqualification (Sexual)]", bundle: 'pro' },
+        { q: "She boasts about how many followers she has on Instagram.", a: "\"Followers are easy. Tell me something genuine about yourself that actually matters.\" [Qualifying (The Interviewer)]", bundle: 'pro' },
+        { q: "She gives a flirty smile and leans in close.", a: "\"Stop looking at me like that! You're never getting in my pants if you keep doing that.\" [Disqualification (Sexual)]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Balancing Value & Comfort",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choose between strategies to adjust value and comfort levels on a dime.\n\n• **Push-Pull** — create immediate emotional spikes when conversation flattens\n• **The Neg** — lower her pedestal with unintentional, playful observations\n• **Qualifying (The Interviewer)** — screen her character to build genuine comfort and value\n• **Disqualification (Sexual)** — remove sexual pressure to trigger a chase\n\nOne question decides it: do you need to raise her investment, remove her guard, or challenge her pedestal?",
+      inputs: [
+        { q: "She asks if you are always this sarcastic with girls.", a: "\"I'm actually a very sweet guy, but you bring out my mischievous side.\" [Push-Pull]", bundle: 'pro' },
+        { q: "She tells a story about how she got into trouble in high school.", a: "\"A troublemaker! Okay, you get some points for that story.\" [Qualifying (The Interviewer)]", bundle: 'pro' },
+        { q: "She asks why you walked over to talk to her.", a: "\"You looked like trouble, and I decided I needed a little chaos tonight.\" [Disqualification (Sexual)]", bundle: 'pro' },
+        { q: "She makes a minor mistake while describing her job.", a: "\"You're cute when you try to explain complicated things.\" [The Neg]", bundle: 'pro' },
+        { q: "She asks if you are going to call her tomorrow.", a: "\"I've got a busy schedule, but if you're a good girl, I might send a message.\" [Disqualification (Sexual)]", bundle: 'pro' },
+        { q: "She tells you she loves travelling to exotic locations alone.", a: "\"That shows real independence. What's the wildest place you've visited?\" [Qualifying (The Interviewer)]", bundle: 'pro' },
+        { q: "She says she thinks you are a player who talks to everyone.", a: "\"Do you know what I love about you? Absolutely nothing.\" [Push-Pull]", bundle: 'pro' },
+        { q: "She wears a very dramatic hat to the venue.", a: "\"That hat is an absolute statement. It's like you're heading to a royal wedding.\" [The Neg]", bundle: 'pro' },
       ]
     },
   ],
@@ -14130,6 +14174,9 @@ const collectionsModeData = {
         { q: "You want to show you're not just a \"player.\"", a: "\"I've had casual stuff, but honestly, I need a connection. I don't like feeling used anymore.\" [Grounding Stories]", bundle: 'pro' },
         { q: "You want to find out what truly drives her.", a: "\"I respect the career, but what's the dream job? If money didn't matter, what would you be doing right now?\" [Wide and Deep Rapport]", bundle: 'pro' },
         { q: "You want to create an \"Us\" narrative.", a: "\"It's funny we met like this. Usually, I'm shy, but you had this bubbly look that made me impulsive.\" [Grounding Stories]", bundle: 'pro' },
+        { q: "She tells you she recently quit her corporate job to paint full-time.", a: "\"That takes real courage. What was the exact moment you realized you couldn't stay in that office anymore?\" [Wide and Deep Rapport]", bundle: 'pro' },
+        { q: "She mentions she grew up moving to three different countries.", a: "\"Moving around like that must have made you very adaptable, but did it ever feel lonely?\" [Wide and Deep Rapport]", bundle: 'pro' },
+        { q: "She talks about her passion for wildlife photography.", a: "\"It sounds like you love the quiet focus of waiting for the right moment. What draws you to nature?\" [Wide and Deep Rapport]", bundle: 'pro' },
       ]
     },
     {
@@ -14143,6 +14190,25 @@ const collectionsModeData = {
         { q: "You want to provoke her to justify her style.", a: "\"I love that jacket. It's so cool that you're trying to bring the 80s back.\" [The Cold Read]", bundle: 'pro' },
         { q: "You're talking to a girl on vacation.", a: "\"You're probably a 'good girl' back home, but Vegas-you seems like she's looking for some bad decisions.\" [Identifying the Blueprint]", bundle: 'pro' },
         { q: "You want to label her behavior.", a: "\"You have the most expressive face. I feel like I'm watching your whole internal monologue.\" [The Cold Read]", bundle: 'pro' },
+        { q: "She keeps tapping her fingers rhythmically on her glass while looking around.", a: "\"You have this restless energy right now, like your mind is already three steps ahead of this room.\" [The Cold Read]", bundle: 'pro' },
+        { q: "She wears a unique handcrafted silver ring on her thumb.", a: "\"That ring looks like it has a specific memory attached to it. Where did you find it?\" [The Cold Read]", bundle: 'pro' },
+        { q: "She hesitates when asked about her relationship with her older sister.", a: "\"You got quiet just now. It sounds like you two have a complex dynamic.\" [The Cold Read]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Connecting Beyond Surface",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Grouping strategies to transition from superficial facts to emotional depth, personal values, and shared narrative.\n\n• **Wide and Deep Rapport**\n• **Identifying the Blueprint**\n• **Grounding Stories (DHV Stories)**\n• **The Cold Read**\n\nUse these moves to build a multi-dimensional emotional bond.",
+      inputs: [
+        { q: "She asks if you have ever lived abroad.", a: "\"I lived in Spain for a year. It completely changed how I view time and relationships.\" [Grounding Stories (DHV Stories)]", bundle: 'pro' },
+        { q: "She tells you she values freedom above everything else in life.", a: "\"So for you, feeling trapped or micromanaged is the ultimate dealbreaker.\" [Identifying the Blueprint]", bundle: 'pro' },
+        { q: "She describes her dream of opening a small bakery.", a: "\"You look at baking like an art form, not just food. You love creating an experience for people.\" [The Cold Read]", bundle: 'pro' },
+        { q: "She asks why you chose your current career field.", a: "\"I started because I loved solving complex problems, but what keeps me going is the creative freedom.\" [Grounding Stories (DHV Stories)]", bundle: 'pro' },
+        { q: "She mentions she finds it hard to trust new people quickly.", a: "\"You have a strong protective outer layer, but once someone earns your trust, you're fiercely loyal.\" [The Cold Read]", bundle: 'pro' },
+        { q: "She asks what kind of music you listen to when you're stressed.", a: "\"I put on acoustic guitar tracks when I need to clear my head after a chaotic week.\" [Grounding Stories (DHV Stories)]", bundle: 'pro' },
+        { q: "She tells you she hates big corporate events.", a: "\"You're someone who craves genuine 1-on-1 connection rather than performing in a crowd.\" [The Cold Read]", bundle: 'pro' },
+        { q: "She asks what you were like as a child.", a: "\"I was the quiet kid who was always building things in the backyard, curious about how everything worked.\" [Grounding Stories (DHV Stories)]", bundle: 'pro' },
       ]
     },
   ],
@@ -14158,6 +14224,9 @@ const collectionsModeData = {
         { q: "You are ready to get her number and leave.", a: "\"I'm heading off, but I'll take your number. We'll banter more on Sunday.\" [Assumptive Closing]", bundle: 'pro' },
         { q: "You want to sit with a girl who is by herself in a park.", a: "\"I'm just taking a one-minute break from my run, so I'm going to sit here. What are you reading?\" [False Time Constraints]", bundle: 'pro' },
         { q: "You want to lead her back to your place using an excuse.", a: "\"I need to go grab a jacket from my room real fast. Come with me, I don't want to stop this conversation yet.\" [Assumptive Closing]", bundle: 'pro' },
+        { q: "You want to move from the bar counter to a cozy booth nearby.", a: "\"It's way too noisy over here. Let's grab that booth in the corner, come on.\" [Assumptive Closing (Sco Game)]", bundle: 'pro' },
+        { q: "You want to invite her for an instant date to get a late-night snack.", a: "\"I have about fifteen minutes before I need to head home, but let me take you for a quick slice of pizza.\" [False Time Constraints]", bundle: 'pro' },
+        { q: "You want to transition the conversation to walking outside the venue.", a: "\"I'm going to get some fresh air for two minutes. Walk with me.\" [Assumptive Closing (Sco Game)]", bundle: 'pro' },
       ]
     },
     {
@@ -14171,6 +14240,25 @@ const collectionsModeData = {
         { q: "You want to plant the idea that you are a \"bad influence.\"", a: "\"You seem like a good girl. You better be careful around me, I'm a terrible influence.\" [Seeding the Pull]", bundle: 'pro' },
         { q: "You want to save a boring \"resume exchange\" talk.", a: "\"Marketing? So you're professionally good at manipulating people. I should probably run away now while I still can.\" [Emotional Spiking]", bundle: 'pro' },
         { q: "You want to seed the idea of her being a \"side chick.\"", a: "\"You're cute, maybe you'll be my New York future ex-mistress. We'll see how you behave.\" [Seeding the Pull]", bundle: 'pro' },
+        { q: "You want to test if she is willing to leave the venue with you later.", a: "\"I'm heading to a cool late-night lounge after this, but you look like you'd get tired way too fast.\" [Seeding the Pull]", bundle: 'pro' },
+        { q: "She gives a very safe, conventional answer about her life goals.", a: "\"You sound way too responsible! I bet you've never made an impulsive decision in your life.\" [Emotional Spiking (The Polarizer)]", bundle: 'pro' },
+        { q: "You want to plant the idea of a future date while keeping the frame uncertain.", a: "\"We might have to grab tacos next week, but only if you promise not to cause a scene.\" [Seeding the Pull]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Executing the Close",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choose between all four strategies when steering an interaction through late-stage logistics, tension resets, and final moves.\n\n• **Seeding the Pull**\n• **False Time Constraints**\n• **Assumptive Closing (Sco Game)**\n• **Emotional Spiking (The Polarizer)**",
+      inputs: [
+        { q: "You want to initiate a venue change without getting into a logical debate.", a: "\"Let's check out the rooftop view for five minutes. Sco.\" [Assumptive Closing (Sco Game)]", bundle: 'pro' },
+        { q: "The energy feels flat and she is giving polite, low-investment answers.", a: "\"You're the most ridiculous girl in this venue. I can't decide if you're sweet or a total nightmare.\" [Emotional Spiking (The Polarizer)]", bundle: 'pro' },
+        { q: "You want to suggest going back to your place without putting her on the defensive.", a: "\"I need to grab my jacket from my apartment, but you can come up for five minutes if you promise to behave.\" [Seeding the Pull]", bundle: 'pro' },
+        { q: "She hesitates when you suggest stepping outside for fresh air.", a: "\"I have to leave in two minutes anyway, so let's get some air right now.\" [False Time Constraints]", bundle: 'pro' },
+        { q: "You want to take her number at the end of a high-value approach.", a: "\"I'm heading out now. Hand me your phone, I'll put my number in.\" [Assumptive Closing (Sco Game)]", bundle: 'pro' },
+        { q: "She says she usually goes home early on weeknights.", a: "\"I'm a terrible influence, so you definitely shouldn't hang out with me past midnight.\" [Seeding the Pull]", bundle: 'pro' },
+        { q: "She makes a sarcastic remark about your confidence.", a: "\"I think I love you and you completely disgust me at the same time.\" [Emotional Spiking (The Polarizer)]", bundle: 'pro' },
+        { q: "You want to sit down next to her at a busy hotel bar.", a: "\"My feet are dead. I'm sitting here for two minutes before I move on.\" [False Time Constraints]", bundle: 'pro' },
       ]
     },
   ],
@@ -14186,6 +14274,9 @@ const collectionsModeData = {
         { q: "She says, \"I can't go home with a stranger.\"", a: "\"I get it, you're a good girl. We'll just hang out for ten minutes and if you feel weird, you can leave.\" [Passing Comfort Shit Tests]", bundle: 'pro' },
         { q: "She says, \"Your watch is kind of lame.\"", a: "\"I'm glad you're checking me out so closely! But honestly, it's not even a watch, so the joke's on you.\" [Passing Value Shit Tests]", bundle: 'pro' },
         { q: "She says, \"Is this a pickup line?\"", a: "\"If by that you mean it was clever enough to be a line, thanks. I'm Todd.\" [Passing Value Shit Tests]", bundle: 'pro' },
+        { q: "She looks at your shoes and says, \"Are those really what you decided to wear tonight?\"", a: "\"I love these shoes. They make me feel like a rockstar.\" [Passing Value Shit Tests]", bundle: 'pro' },
+        { q: "She asks in a serious tone if you are just using pickup lines on her.", a: "\"I don't use lines. I walked over because I genuinely thought you had a cool vibe.\" [Passing Comfort Shit Tests]", bundle: 'pro' },
+        { q: "Her group is standing in a tight circle ignoring you.", a: "\"Excuse me guys, I'm borrowing your friend for two minutes.\" [Handling the Posse]", bundle: 'pro' },
       ]
     },
     {
@@ -14199,6 +14290,25 @@ const collectionsModeData = {
         { q: "You want to move her away from the loud music.", a: "\"It's too loud here and my legs are killing me. Let's go sit on those couches over there.\" [The \"What Do I Want?\" Move]", bundle: 'pro' },
         { q: "You want to win over her skeptical friend.", a: "\"Hey, you have a very expressive face. I bet you're the one in this group who actually makes all the decisions.\" [Handling the Posse]", bundle: 'pro' },
         { q: "You want to ask her a highly polarizing question.", a: "\"What would you do right now if you knew there was no chance I'd reject you?\" [The \"What Do I Want?\" Move]", bundle: 'pro' },
+        { q: "She hesitates to follow you to a quiet lounge seating area.", a: "\"I'm heading over to those comfortable seats. Come sit with me.\" [The \"What Do I Want?\" Move]", bundle: 'pro' },
+        { q: "Her protective friend steps between you and asks who you are.", a: "\"I'm Todd. I was just telling your friend she looks like trouble. Nice to meet you.\" [Handling the Posse]", bundle: 'pro' },
+        { q: "She says \"You seem like a player\" with a smirk.", a: "\"I'm actually a complete sweetie, but you bring out my wild side.\" [Passing Value Shit Tests]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Neutralizing Social Pressure",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Grouping strategies to maintain unshakeable composure when confronted by hostile group dynamics, value challenges, or comfort tests.\n\n• **Passing Value Shit Tests**\n• **Passing Comfort Shit Tests**\n• **The \"What Do I Want?\" Move**\n• **Handling the Posse**",
+      inputs: [
+        { q: "A male friend in her group tries to mock your outfit in front of everyone.", a: "\"I appreciate the fashion critique, mate! You look pretty sharp yourself.\" [Passing Value Shit Tests]", bundle: 'pro' },
+        { q: "She asks if you are actually looking for a real connection or just a hookup.", a: "\"I value real connection above everything. I only spend time with people I actually respect.\" [Passing Comfort Shit Tests]", bundle: 'pro' },
+        { q: "Her group starts moving to another bar and she looks at you uncertainly.", a: "\"I'm grabbing a fresh drink here. Step over with me for five minutes.\" [The \"What Do I Want?\" Move]", bundle: 'pro' },
+        { q: "Her friends give you cold, silent stares when you approach their table.", a: "\"Good evening everyone! Don't worry, I'm harmless—just saying a quick hello.\" [Handling the Posse]", bundle: 'pro' },
+        { q: "She rolls her eyes and asks \"Do you think you're clever?\"", a: "\"I think I'm delightfully charming, but I'll let you be the judge.\" [Passing Value Shit Tests]", bundle: 'pro' },
+        { q: "She gets quiet and asks if you treat all women this casually.", a: "\"I'm direct because I don't like playing fake social games. I'm being real with you.\" [Passing Comfort Shit Tests]", bundle: 'pro' },
+        { q: "You want to invite her to step outside for fresh air despite crowd noise.", a: "\"It's way too loud in here. I'm stepping outside for fresh air, walk with me.\" [The \"What Do I Want?\" Move]", bundle: 'pro' },
+        { q: "Her friend tries to pull her away saying \"We need to go to the bathroom.\"", a: "\"Go ahead! I'll hold her coat and keep her entertained for two minutes until you're back.\" [Handling the Posse]", bundle: 'pro' },
       ]
     },
   ],

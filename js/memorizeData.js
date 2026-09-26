@@ -8697,6 +8697,132 @@ const memorizeCollections = {
         { q: "What is a \"Soft Direct\" opener?", a: "A statement like \"You're adorable\" that shows interest but uses a condescending/playful word to avoid giving away all power.", bundle: 'pro' },
       ]
     },
+    {
+      name: "Core Idea",
+      description: "High-Value Openings teaches how to initiate cold approach interactions with confidence, unshakeable frame control, and immediate curiosity.\n\nBy eliminating needy interview questions and leading with bold observations and open loops, you create instant engagement and conversational momentum.\n\nThis pack teaches four core strategies:\n\n• Statement Openers\n• Narrating the Frame\n• Open Loops (The Cookie)\n• Question-Answer-Tease (QAT)",
+      cards: [
+        { q: "What is the primary focus of High-Value Openings?", a: "Initiating cold approaches with high social status, intrigue, and unshakeable frame control.", bundle: 'free' },
+        { q: "Why should you avoid standard interview-style questions when opening?", a: "Interview questions place the burden of entertaining on her and signal low social value.", bundle: 'free' },
+        { q: "What replaces polite small talk during a high-value opening?", a: "Bold statement openers, real-time frame narration, and playful teasing.", bundle: 'free' },
+        { q: "Who carries the initial conversational momentum in a cold approach?", a: "The man carries the initial momentum so the woman can relax and engage easily.", bundle: 'free' },
+        { q: "What is the main goal of creating curiosity during an approach?", a: "To generate cognitive tension and hook her interest so she wants to know more.", bundle: 'free' },
+        { q: "What defines a successful opening interaction?", a: "Breaking social inertia, establishing dynamic control, and transitioning into a hooked conversation.", bundle: 'pro' },
+        { q: "How does unshakeable frame control affect an approach?", a: "It disarms social friction, awkwardness, and skeptical reactions with relaxed authority.", bundle: 'pro' },
+        { q: "What is the core psychological shift taught in High-Value Openings?", a: "Moving from seeking approval as an applicant to leading the interaction with value.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Statement Openers",
+      description: "",
+      cards: [
+        { q: "What is a Statement Opener?", a: "An opening observation or assumption delivered as a statement rather than a question.", bundle: 'free' },
+        { q: "Why are Statement Openers superior to questions?", a: "They relieve her of the burden to entertain and establish high social status immediately.", bundle: 'free' },
+        { q: "What is a Style Observation opener?", a: "Commenting playfully on a unique choice in her clothing, posture, or vibe.", bundle: 'free' },
+        { q: "How do Statement Openers affect conversation flow?", a: "They trigger emotional reactions and spark natural engagement without interview pressure.", bundle: 'free' },
+        { q: "What tone should accompany a Statement Opener?", a: "A relaxed, grounded tone delivered with steady eye contact and a warm posture.", bundle: 'free' },
+        { q: "What is an Environment Observation opener?", a: "Making a bold, humorous comment about the shared surroundings or crowd energy.", bundle: 'pro' },
+        { q: "How do you handle an incorrect assumption in an opener?", a: "Embrace it cheerfully; her playful correction moves the conversation forward anyway.", bundle: 'pro' },
+        { q: "What mindset powers effective Statement Openers?", a: "The belief that your perspective is inherently interesting and worth sharing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Narrating the Frame",
+      description: "",
+      cards: [
+        { q: "What is Narrating the Frame?", a: "Commenting explicitly on the social dynamic, atmosphere, or energy happening between you in real time.", bundle: 'free' },
+        { q: "Why is Narrating the Frame effective?", a: "It disarms awkwardness by calling out the elephant in the room with humor and confidence.", bundle: 'free' },
+        { q: "How do you narrate a loud venue dynamic?", a: "Comment playfully on how you both have to use shouting or mime signals to talk.", bundle: 'free' },
+        { q: "What does narrating a quiet environment accomplish?", a: "It breaks social stiffness by highlighting the quietness in a fun, shared way.", bundle: 'free' },
+        { q: "How do you narrate mutual evaluation?", a: "Call out playfully that you are both doing the silent check-each-other-out routine.", bundle: 'free' },
+        { q: "What is the \"Third-Party View\" narration move?", a: "Describing how your interaction looks to an outside observer standing nearby.", bundle: 'pro' },
+        { q: "When should you use Narrating the Frame?", a: "Whenever social tension, awkwardness, or sudden interruptions occur during an approach.", bundle: 'pro' },
+        { q: "What status signal does frame narration send?", a: "That you are hyper-aware, unshakeable, and comfortable leading the social moment.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Open Loops (The Cookie)",
+      description: "",
+      cards: [
+        { q: "What is an Open Loop (The Cookie)?", a: "Dropping an intriguing story lead or hint without revealing the resolution right away.", bundle: 'free' },
+        { q: "Why are Open Loops called \"The Cookie\"?", a: "Because they offer a tiny taste of curiosity that makes her want the full treat.", bundle: 'free' },
+        { q: "How does an Open Loop build conversational hook?", a: "It creates cognitive tension that drives her to ask questions and pursue the story.", bundle: 'free' },
+        { q: "When should you drop an Open Loop during opening?", a: "Right after the initial greeting to transition into deep curiosity and storytelling.", bundle: 'free' },
+        { q: "What is the key to executing an Open Loop?", a: "State the intriguing hook casually, then pause or pivot briefly before resolving it.", bundle: 'free' },
+        { q: "What is a \"Hidden Skill\" Open Loop?", a: "Hinting that you possess an unexpected talent without telling her what it is immediately.", bundle: 'pro' },
+        { q: "What mistake destroys an Open Loop?", a: "Explaining the full story immediately before she has a chance to express curiosity.", bundle: 'pro' },
+        { q: "How do Open Loops invert interaction roles?", a: "They make her lean in and ask questions, putting her in the position of pursuing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Question-Answer-Tease (QAT)",
+      description: "",
+      cards: [
+        { q: "What is the Question-Answer-Tease (QAT) strategy?", a: "Asking a brief question, listening to her answer, and immediately teasing her response.", bundle: 'free' },
+        { q: "How does QAT differ from standard interviewing?", a: "Standard interviewing accepts answers logically; QAT transforms answers into playful banter.", bundle: 'free' },
+        { q: "What is the \"Job Tease\" application of QAT?", a: "Asking what she does for work and playfully labeling her role as dramatic or nerdy.", bundle: 'free' },
+        { q: "How do you QAT an origin or hometown question?", a: "Ask where she's from, then playfully assign a humorous stereotype to her answer.", bundle: 'free' },
+        { q: "What tone makes QAT sound flirtatious?", a: "A warm, smirking delivery that signals clear playfulness rather than judgment.", bundle: 'free' },
+        { q: "What is the \"Drink Tease\" QAT move?", a: "Asking her drink order and teasing her choice as either overly healthy or wild.", bundle: 'pro' },
+        { q: "Why is QAT useful for beginners?", a: "It provides a simple three-part structure to convert any routine question into banter.", bundle: 'pro' },
+        { q: "What is the primary benefit of QAT?", a: "It injects emotional spikes into standard logistical exchanges.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "This pack contains three collection decks:\n• **Breaking the Ice**\n• **Creating Intrigue**\n• **Sustaining Momentum**\n\nUse these decks to practice selecting the best opening strategy for varied social contexts.",
+      cards: [
+        { q: "What is the goal of Collection decks?", a: "To train selecting the most effective opening move when an open context allows options.", bundle: 'free' },
+        { q: "Which strategies make up \"Breaking the Ice\"?", a: "Statement Openers and Narrating the Frame.", bundle: 'free' },
+        { q: "Which strategies make up \"Creating Intrigue\"?", a: "Open Loops (The Cookie) and Question-Answer-Tease (QAT).", bundle: 'free' },
+        { q: "When should you choose a \"Sustaining Momentum\" move?", a: "When the initial greeting is complete and you need to lock in a conversation hook.", bundle: 'free' },
+        { q: "How do Collections build real-time skills?", a: "They develop situational flexibility so you never rely on a single canned opener.", bundle: 'free' },
+        { q: "How many strategies must a Collection deck group?", a: "At least three strategies from the pack to offer genuine choice.", bundle: 'pro' },
+        { q: "What is the difference between Single Strategy and Collections?", a: "Single Strategy drills one tool; Collections train choosing the right tool for the moment.", bundle: 'pro' },
+        { q: "Why practice Collections in High-Value Openings?", a: "To seamlessly adapt your approach to whatever energy or venue you encounter.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "This pack contains three sequence decks:\n• **The \"Open to Hook\" Sequence**\n• **The \"Curiosity & Hook\" Sequence**\n• **The \"Direct Observation\" Sequence**\n\nUse these decks to master multi-step opening workflows.",
+      cards: [
+        { q: "What do Sequence decks train?", a: "The exact step-by-step progression required to turn an approach into a hooked conversation.", bundle: 'free' },
+        { q: "What is Step 1 in \"The Open to Hook Sequence\"?", a: "Statement Openers to initiate with a bold observation.", bundle: 'free' },
+        { q: "What is Step 2 in \"The Open to Hook Sequence\"?", a: "Narrating the Frame to address the shared atmosphere.", bundle: 'free' },
+        { q: "What is Step 3 in \"The Open to Hook Sequence\"?", a: "Open Loops (The Cookie) to drop a curiosity hook and lock in interest.", bundle: 'free' },
+        { q: "What is Step 1 in \"The Curiosity & Hook Sequence\"?", a: "Question-Answer-Tease (QAT) to spark immediate banter.", bundle: 'free' },
+        { q: "What is Step 2 in \"The Curiosity & Hook Sequence\"?", a: "Open Loops (The Cookie) to create intrigue about your background.", bundle: 'pro' },
+        { q: "What is Step 3 in \"The Curiosity & Hook Sequence\"?", a: "Narrating the Frame to lock in dynamic control of the moment.", bundle: 'pro' },
+        { q: "Why must every scenario in a combo run identical steps?", a: "Because sequences train repeatable, automated habits for opening success.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "This pack contains five challenge decks:\n• **Lukewarm Responses**\n• **Social Distractions**\n• **Skeptical Reactions**\n• **Group Dynamics**\n• **Low Energy Environments**\n\nUse these decks to overcome difficult social obstacles during approaches.",
+      cards: [
+        { q: "What is the purpose of Challenge decks?", a: "To practice applying opening strategies against real-world friction and cold reactions.", bundle: 'free' },
+        { q: "How do you disarm \"Lukewarm Responses\"?", a: "Narrate the flat energy playfully or drop a high-value open loop.", bundle: 'free' },
+        { q: "How do you handle \"Social Distractions\"?", a: "Use Narrating the Frame to incorporate noise, crowds, or phone buzzes into the chat.", bundle: 'free' },
+        { q: "How do you navigate \"Skeptical Reactions\"?", a: "Stay unshakeable, smile, and treat her suspicion as a funny frame test.", bundle: 'free' },
+        { q: "How do you open in \"Low Energy Environments\"?", a: "Lower your volume, acknowledge the quiet atmosphere, and lead with relaxed warmth.", bundle: 'free' },
+        { q: "How do you handle \"Group Dynamics\"?", a: "Address the whole group briefly with high status before focusing on your target.", bundle: 'pro' },
+        { q: "Why are all Challenge cards tagged as pro?", a: "Because opening under social friction requires advanced composure and frame control.", bundle: 'pro' },
+        { q: "How does mastering Challenges affect approach anxiety?", a: "It proves that you can handle any environmental reaction with ease and charm.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "This pack contains four mindset decks:\n• **Assuming the Burden**\n• **Rejection**\n• **Small Talk**\n• **Intrigue**\n\nUse these decks to eliminate internal limiting beliefs that block high-value openings.",
+      cards: [
+        { q: "What do Mindset decks target?", a: "The psychological barriers and limiting thoughts that stop guys from opening cleanly.", bundle: 'free' },
+        { q: "What truth resets the fear in \"Rejection\"?", a: "A cold reaction reflects her current situation, not your personal worth.", bundle: 'free' },
+        { q: "What belief is corrected in \"Small Talk\"?", a: "The idea that you must ask polite interview questions before being bold or playful.", bundle: 'free' },
+        { q: "What insight resets \"Intrigue\"?", a: "High-value men don't over-explain themselves; holding back creates curiosity.", bundle: 'free' },
+        { q: "How are Mindset decks named?", a: "For the specific obstacle area stopping the strategy, never the insight it leads to.", bundle: 'free' },
+        { q: "What is the structure of a Mindset card?", a: "A limiting thought on the front and a clear internal reset on the back.", bundle: 'pro' },
+        { q: "Why is Mindset training essential for openings?", a: "Because opening techniques fail if you secretly feel needy or afraid inside.", bundle: 'pro' },
+        { q: "What is the core takeaway of \"Assuming the Burden\"?", a: "You carry the initial conversational momentum so she can relax and enjoy the interaction.", bundle: 'pro' },
+      ]
+    },
   ],
   toddv2: [
     {
@@ -8715,6 +8841,132 @@ const memorizeCollections = {
         { q: "Why is \"Uncertainty\" essential for sexual tension?", a: "People don't value what comes too easily; doubt about whether she can have you accentuates the energy.", bundle: 'pro' },
         { q: "What is \"Active Disinterest\"?", a: "Being actively engaged in the interaction while showing polarizing or negative spikes so you aren't on a pedestal.", bundle: 'pro' },
         { q: "What does it mean to \"disqualify the sex\"?", a: "Indicating sex might not happen so she feels safe to escalate without being judged.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "This pack teaches how to build intense sexual tension through verbal game, push-pull emotional spikes, playful negs, qualifying, and disqualification.\n\n• By balancing interest with disinterest and adopting a selector frame, you replace polite small talk with an exciting emotional rollercoaster.",
+      cards: [
+        { q: "What is the primary formula for sexual tension?", a: "Combining positive emotional spikes (interest) with negative emotional spikes (disinterest).", bundle: 'free' },
+        { q: "Why does showing pure interest ruin attraction?", a: "It makes you appear needy, predictable, and gives away your social power.", bundle: 'free' },
+        { q: "What is the \"Selector\" frame in verbal game?", a: "Screening her for character beyond looks while assuming you are a high-value prize.", bundle: 'free' },
+        { q: "What does \"disqualifying the sex\" mean?", a: "Removing sexual expectation so she feels safe to engage without feeling pushed.", bundle: 'free' },
+        { q: "How does push-pull affect a woman emotionally?", a: "It creates a rollercoaster where she feels validated and devalidated, keeping her in suspense.", bundle: 'free' },
+        { q: "What is the 80/20 balance rule in banter?", a: "80% grounded, confident behavior mixed with 20% silly, unpredictable playfulness.", bundle: 'pro' },
+        { q: "How do you pass a shit test according to Todd V?", a: "Ignore it, Agree and Exaggerate, or Misinterpret it as a compliment.", bundle: 'pro' },
+        { q: "What is the \"Point of No Return\" in seduction?", a: "The moment where stopping without closing causes the set to flake due to awkwardness.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Push-Pull",
+      description: "",
+      cards: [
+        { q: "What is a Push-Pull?", a: "Delivering a positive emotional spike and a negative emotional spike in quick succession.", bundle: 'free' },
+        { q: "Why is Push-Pull superior to a direct compliment?", a: "It shows interest without giving away your power or appearing needy.", bundle: 'free' },
+        { q: "Give an example of a \"Teasing Push\".", a: "\"Do you know what I love about you? ... Absolutely nothing.\"", bundle: 'free' },
+        { q: "Give an example of a \"Skeptical Pull\".", a: "\"I hated your team, but I respect that you're loyal. It's a start.\"", bundle: 'free' },
+        { q: "What mindset powers effective Push-Pull?", a: "Assuming she wants you, then giving her a hard, playful time about it.", bundle: 'free' },
+        { q: "What is a \"separated\" Push-Pull?", a: "Delivering positive and negative spikes across different sentences in the same conversation.", bundle: 'pro' },
+        { q: "How does Push-Pull maintain sexual tension?", a: "It keeps her uncertain about where she stands, making her work to win your validation.", bundle: 'pro' },
+        { q: "What delivery mistake ruins a Push-Pull?", a: "Looking nervous or needy after delivering it, rather than smirking or staying calm.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Neg",
+      description: "",
+      cards: [
+        { q: "What is a Neg in modern game?", a: "An unintentional, backwards compliment or observation that provokes light insecurity without being an insult.", bundle: 'free' },
+        { q: "How does a Neg differ from a direct insult?", a: "An insult is overtly mean; a Neg is phrased as a compliment or neutral observation.", bundle: 'free' },
+        { q: "Give a classic example of a Neg.", a: "\"I love that sweater. It's so cool that you're trying to bring the 80s back.\"", bundle: 'free' },
+        { q: "What is the physical effect of a Neg like \"You blink a lot\"?", a: "It puts her in her head, making her self-aware and eager to qualify.", bundle: 'free' },
+        { q: "Why should Negs appear unintentional?", a: "If a Neg looks deliberate, it sounds like a mean attack rather than charming honesty.", bundle: 'free' },
+        { q: "How do you handle a girl who gets offended by a Neg?", a: "Deadpan explain the literal compliment behind it without getting defensive.", bundle: 'pro' },
+        { q: "When should you use a Neg in an interaction?", a: "Early in the set against attractive or aloof women who expect constant praise.", bundle: 'pro' },
+        { q: "What is the primary purpose of a Neg?", a: "To knock her off her pedestal and lower her guard so genuine connection can happen.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Qualifying (The Interviewer)",
+      description: "",
+      cards: [
+        { q: "What is Qualifying?", a: "Testing and screening a woman to see if she has value, standards, and character beyond her looks.", bundle: 'free' },
+        { q: "Why is Qualifying essential before closing?", a: "An abundant man wouldn't close a girl without knowing if she is actually cool.", bundle: 'free' },
+        { q: "How does Qualifying build Value and Comfort simultaneously?", a: "Value comes from acting as the selector; Comfort comes from letting her win your approval.", bundle: 'free' },
+        { q: "What is a \"fake qualifier\"?", a: "Telling her what she did to earn your approval to give a logical reason for your interest.", bundle: 'free' },
+        { q: "How do you handle her response when she qualifies?", a: "Acknowledge her answer warmly, but don't give away all your power at once.", bundle: 'free' },
+        { q: "What is the \"Interviewer\" mindset?", a: "Approaching dates with abundance, as if you have six dates lined up and need to screen her.", bundle: 'pro' },
+        { q: "What mistake do guys make after asking a qualifying question?", a: "Waiting anxiously for her reaction rather than staying relaxed and grounded.", bundle: 'pro' },
+        { q: "How does Qualifying flip the script in cold approach?", a: "It shifts her from being approached to trying to impress and win you over.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Disqualification (Sexual)",
+      description: "",
+      cards: [
+        { q: "What is Sexual Disqualification?", a: "Indicating that sex or a romantic relationship might not happen between you.", bundle: 'free' },
+        { q: "Why does disqualifying sex lower her resistance?", a: "It removes the pressure of escalation, making your moves feel low-risk and playful.", bundle: 'free' },
+        { q: "Give an example of a Disqualification line.", a: "\"You and I would not get along. We'd be that boring couple that fights all the time.\"", bundle: 'free' },
+        { q: "Give an example of disqualifying yourself as boyfriend material.", a: "\"I'm definitely not boyfriend material. Let me introduce you to my single friends.\"", bundle: 'free' },
+        { q: "What is the \"Takeaway\" move?", a: "Pulling back affection or setting a boundary to make her chase the forbidden outcome.", bundle: 'free' },
+        { q: "What are you actually disqualifying when you use this strategy?", a: "You are disqualifying the sex, not your overall masculine value or attraction.", bundle: 'pro' },
+        { q: "How do you use Disqualification during physical escalation?", a: "Pause or pull away briefly while kissing, making her lean in and pursue you.", bundle: 'pro' },
+        { q: "Why is Disqualification considered an advanced game tool?", a: "Because it requires the abundance to push a hot girl away plausibly.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Spiking the Vibe** — Push-Pull or The Neg: break flat small talk with emotional friction\n• **Selection & Standards** — Qualifying or Disqualification: establish high standards and take sex off the table\n• **Balancing Value & Comfort** — all four strategies: adjust tension and comfort on a dime\n\nOne question decides nearly all of it: do you need to break politeness, establish authority, or balance the dynamic?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Spiking the Vibe, Selection & Standards, and Balancing Value & Comfort.", bundle: 'free' },
+        { q: "What strategies make up \"Spiking the Vibe\"?", a: "Push-Pull and The Neg.", bundle: 'free' },
+        { q: "What strategies make up \"Selection & Standards\"?", a: "Qualifying (The Interviewer) and Disqualification (Sexual).", bundle: 'free' },
+        { q: "When should you choose a \"Spiking the Vibe\" move?", a: "When the conversation becomes flat, logical, or overly polite.", bundle: 'free' },
+        { q: "When should you choose a \"Selection & Standards\" move?", a: "When you need to screen her character or take away sexual pressure.", bundle: 'free' },
+        { q: "How many strategies must a Collection deck group?", a: "At least three strategies from the pack to offer genuine choice.", bundle: 'pro' },
+        { q: "How do Collections differ from Single Strategy decks?", a: "Single Strategy teaches individual execution; Collections build real-time selection skill.", bundle: 'pro' },
+        { q: "Why practice Collection decks in Tension & Banter?", a: "To fluidly maintain emotional rollercoaster tension across varied social moments.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The \"Push-Pull Escalation\"** — Push-Pull → Qualifying (The Interviewer) → Disqualification (Sexual)\n2. **The \"Interviewer\" Frame** — The Neg → Qualifying (The Interviewer) → Push-Pull\n3. **The Disqualification Reset** — Disqualification (Sexual) → Qualifying (The Interviewer) → Push-Pull\n\nIn each one the order is doing the work, not the individual strategies.",
+      cards: [
+        { q: "What do Sequence decks train?", a: "The exact step-by-step progression required to build sexual tension and close.", bundle: 'free' },
+        { q: "What is Step 1 in \"The Push-Pull Escalation\"?", a: "Push-Pull to create immediate emotional spikes and interest.", bundle: 'free' },
+        { q: "What is Step 2 in \"The Push-Pull Escalation\"?", a: "Qualifying (The Interviewer) to test her investment when she responds.", bundle: 'free' },
+        { q: "What is Step 3 in \"The Push-Pull Escalation\"?", a: "Disqualification (Sexual) to remove pressure and make her chase.", bundle: 'free' },
+        { q: "What is the sequence order in \"The Interviewer Frame\"?", a: "The Neg → Qualifying (The Interviewer) → Push-Pull.", bundle: 'free' },
+        { q: "What is Step 1 in \"The Disqualification Reset\"?", a: "Disqualification (Sexual) to state clearly that sex isn't happening tonight.", bundle: 'pro' },
+        { q: "What is Step 2 in \"The Disqualification Reset\"?", a: "Qualifying (The Interviewer) to screen her character once her guard is down.", bundle: 'pro' },
+        { q: "Why must every scenario in a combo follow identical steps?", a: "Because sequences build automated habits for core verbal game progressions.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **The \"Nice to Meet You\" Trap** — polite, flat sets that end without spark\n• **Dry Small Talk** — interview questions about work and hometowns\n• **Pedestal Testing** — exceptionally attractive women expecting fan behavior\n• **Frame Resistance** — calls questioning your motives or calling you cocky\n• **Logistical Hesitation** — last-minute hesitation, friend interruptions, and timing\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "The \"Nice to Meet You\" Trap, Dry Small Talk, Pedestal Testing, Frame Resistance, and Logistical Hesitation.", bundle: 'free' },
+        { q: "How do you escape \"The 'Nice to Meet You' Trap\"?", a: "Inject an unexpected Push-Pull or Disqualification line to spike the vibe.", bundle: 'free' },
+        { q: "How do you handle \"Dry Small Talk\"?", a: "Replace boring questions with Qualifying tests and playful Negs.", bundle: 'free' },
+        { q: "How do you disarm \"Pedestal Testing\"?", a: "Use unintentional Negs and disqualifying lines to lower her guard.", bundle: 'free' },
+        { q: "How do you handle \"Frame Resistance\"?", a: "Pass tests by ignoring, agreeing and exaggerating, or misinterpreting as a compliment.", bundle: 'free' },
+        { q: "How do you solve \"Logistical Hesitation\"?", a: "Use Disqualification to make the next step low-risk, low-pressure, and easy to accept.", bundle: 'pro' },
+        { q: "Why are all Challenge cards tagged as pro?", a: "Because problem-solving under real-world social friction requires advanced composure.", bundle: 'pro' },
+        { q: "What mindset is essential during Challenge scenarios?", a: "Viewing tests and friction as proof that she is engaged and reacting to you.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **The Willingness to Offend** — risking immediate awkwardness to trigger sexual tension\n• **Seeking Approval** — replacing needy validation with high-status evaluation\n• **Fearing Uncertainty** — embracing doubt and emotional rollercoasters over safe logic\n• **Pedestalizing Beauty** — screening physical beauty for genuine character and chemistry\n\nIn every one, the belief that gets in the way feels like good manners from the inside.",
+      cards: [
+        { q: "What do Mindset decks target?", a: "The internal limiting beliefs that stop a man from executing banter and tension strategies cleanly.", bundle: 'free' },
+        { q: "What truth resets \"The Willingness to Offend\"?", a: "Risking immediate awkwardness is the price of triggering genuine sexual tension.", bundle: 'free' },
+        { q: "What belief is corrected in \"Seeking Approval\"?", a: "The false idea that agreeing with everything makes a woman like you more.", bundle: 'free' },
+        { q: "What insight resets \"Fearing Uncertainty\"?", a: "Uncertainty is the fuel of attraction; letting her wonder keeps the spark alive.", bundle: 'free' },
+        { q: "What truth resets \"Pedestalizing Beauty\"?", a: "Physical beauty is common; high character and chemistry are what truly matter.", bundle: 'free' },
+        { q: "How are Mindset decks named?", a: "For the specific obstacle area stopping the strategy, never the insight it leads to.", bundle: 'pro' },
+        { q: "What is the structure of a Mindset card?", a: "A limiting thought on the front and an unshakeable internal reset on the back.", bundle: 'pro' },
+        { q: "Why is Mindset work vital for Tension & Banter?", a: "Because outer verbal techniques crumble if you secretly feel needy or intimidated inside.", bundle: 'pro' },
       ]
     },
   ],
@@ -8737,6 +8989,132 @@ const memorizeCollections = {
         { q: "Why use the \"We\" frame?", a: "It creates an immediate narrative of a shared future or partnership, bypassing the \"stranger\" frame.", bundle: 'pro' },
       ]
     },
+    {
+      name: "Core Idea",
+      description: "Advanced Connection teaches how to transition from superficial small talk into profound emotional rapport, shared values, and lasting chemistry.\n\nBy combining wide and deep conversational threads, perceptive cold reads, grounding stories, and blueprint identification, you build an unshakeable bond.\n\nThis pack teaches four core strategies:\n• **Wide and Deep Rapport**\n• **Identifying the Blueprint**\n• **Grounding Stories (DHV Stories)**\n• **The Cold Read**",
+      cards: [
+        { q: "What is the primary focus of Advanced Connection?", a: "Building deep emotional rapport, uncovering personal values, and creating a shared narrative.", bundle: 'free' },
+        { q: "What is the risk of staying in superficial small talk?", a: "It results in polite, forgettable interactions that land straight in the friend zone.", bundle: 'free' },
+        { q: "How do you balance wide and deep rapport?", a: "Move across varied topics (wide), then dive into emotional meaning and personal values (deep).", bundle: 'free' },
+        { q: "What is a person's \"Blueprint\"?", a: "Their core underlying worldviews, criteria, values, and emotional triggers.", bundle: 'free' },
+        { q: "What makes a Grounding Story effective?", a: "It demonstrates high value and lifestyle context without bragging or seeking approval.", bundle: 'free' },
+        { q: "How does a Cold Read accelerate connection?", a: "It demonstrates social intelligence and observational skill, making her feel seen and understood.", bundle: 'pro' },
+        { q: "What is the \"Us Narrative\" in connection?", a: "Framing the interaction as a shared team or partnership against the outside world.", bundle: 'pro' },
+        { q: "Why is vulnerability necessary for deep rapport?", a: "Authentic grounded sharing creates trust and invites her to drop her defensive walls.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Wide and Deep Rapport",
+      description: "",
+      cards: [
+        { q: "What is Wide Rapport?", a: "Exploring a broad variety of conversational topics to find shared interests and common ground.", bundle: 'free' },
+        { q: "What is Deep Rapport?", a: "Probing the emotional reasons, feelings, and values behind a person's choices and hobbies.", bundle: 'free' },
+        { q: "How do you transition from Wide to Deep Rapport?", a: "Pick an interesting detail from a wide topic and ask why it matters to her personally.", bundle: 'free' },
+        { q: "Why is relying only on Deep Rapport exhausting?", a: "Intense emotional topics without light, wide breaks can feel heavy and overwhelming.", bundle: 'free' },
+        { q: "What conversational tool facilitates Wide Rapport?", a: "Threading—picking up keywords from her answers to branch into fresh topics smoothly.", bundle: 'free' },
+        { q: "What mindset powers Wide and Deep Rapport?", a: "Genuine curiosity about her internal world rather than rehearsed interview scripts.", bundle: 'pro' },
+        { q: "How do you know when to shift back to Wide topics?", a: "When her body language shows emotional fatigue or when a deep topic reaches a natural conclusion.", bundle: 'pro' },
+        { q: "What role does active listening play in Deep Rapport?", a: "Listening for emotional keywords rather than just logical facts to guide your next question.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Identifying the Blueprint",
+      description: "",
+      cards: [
+        { q: "What does Identifying the Blueprint mean?", a: "Uncovering her core priorities, dealbreakers, and internal rules for life and love.", bundle: 'free' },
+        { q: "Why is identifying her Blueprint valuable?", a: "It allows you to speak directly to her core motivations and evaluate true compatibility.", bundle: 'free' },
+        { q: "Give an example of a Blueprint discovery question.", a: "\"What was the exact moment you realized you needed to leave your old career?\"", bundle: 'free' },
+        { q: "How do core values like Freedom vs. Security differ?", a: "Freedom seeks novelty and independence; Security seeks predictability and safety.", bundle: 'free' },
+        { q: "How should you adapt your talk once you know her Blueprint?", a: "Frame your experiences and ideas in terms that align with her primary emotional values.", bundle: 'free' },
+        { q: "What is a \"Criteria Test\" in Blueprint discovery?", a: "Asking what specific qualities she requires in friends or partners to see her standards.", bundle: 'pro' },
+        { q: "How do you identify her emotional dealbreakers?", a: "Observe what behavior makes her pull back or express sharp negative reactions.", bundle: 'pro' },
+        { q: "Why should you share your own Blueprint during this process?", a: "Mutual exchange of core values builds equality, respect, and deep trust.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Grounding Stories (DHV Stories)",
+      description: "",
+      cards: [
+        { q: "What is a Grounding Story (DHV Story)?", a: "A personal narrative that subtly demonstrates high value, character, and lifestyle context.", bundle: 'free' },
+        { q: "What qualities should a Grounding Story convey?", a: "Leadership, emotional intelligence, humor, passion, and strong social bonds.", bundle: 'free' },
+        { q: "How do you avoid sounding arrogant in a Grounding Story?", a: "Focus on the emotional experience and lessons learned rather than bragging about achievements.", bundle: 'free' },
+        { q: "When should you share a Grounding Story?", a: "In response to a relevant topic, or after asking her a deep question to maintain balance.", bundle: 'free' },
+        { q: "What is the \"Grounding\" aspect of a story?", a: "Giving real context to who you are, where you came from, and why you hold your values.", bundle: 'free' },
+        { q: "How long should a Grounding Story be?", a: "Concise and engaging—usually 60 to 90 seconds—leaving room for her to ask questions.", bundle: 'pro' },
+        { q: "What is the \"Vulnerability Anchor\" in storytelling?", a: "Admitting a minor flaw or mistake in the story to make your success relatable.", bundle: 'pro' },
+        { q: "How does a Grounding Story create attraction?", a: "It paints a vivid picture of what living in your world feels like.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Cold Read",
+      description: "",
+      cards: [
+        { q: "What is a Cold Read?", a: "Making an intuitive, perceptive guess about her personality, mood, or background based on observation.", bundle: 'free' },
+        { q: "Why is a Cold Read superior to asking a standard question?", a: "It shows confidence, breaks interview mode, and creates immediate flirtatious intrigue.", bundle: 'free' },
+        { q: "Give an example of a personality Cold Read.", a: "\"You look like someone who acts spontaneous, but secretly plans everything in advance.\"", bundle: 'free' },
+        { q: "What should you do if your Cold Read is wrong?", a: "Own it with a smile; her playful correction gives you deeper insight into her real self anyway.", bundle: 'free' },
+        { q: "What details can trigger a great Cold Read?", a: "Clothing choices, jewelry, posture, eye movement, tone of voice, or micro-expressions.", bundle: 'free' },
+        { q: "What is the \"Barnum Effect\" in Cold Reading?", a: "Phrasing an observation so it feels uniquely personal while applying broadly to human nature.", bundle: 'pro' },
+        { q: "How do you cold read her mood in real time?", a: "Comment warmly on her current energy or focus level (e.g., \"You have this quiet, thoughtful vibe right now\").", bundle: 'pro' },
+        { q: "What status signal does Cold Reading send?", a: "That you are an observant, high-status man who evaluates others rather than seeking approval.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "This pack contains three collection decks:\n• **Deepening the Bond**\n• **Reading Her World**\n• **Connecting Beyond Surface**\n\nUse these decks to practice selecting between connection moves when several strategies apply.",
+      cards: [
+        { q: "What is the purpose of Collection decks?", a: "To train selecting the right connection strategy when a situation offers multiple valid approaches.", bundle: 'free' },
+        { q: "Which strategies form \"Deepening the Bond\"?", a: "Wide and Deep Rapport and Grounding Stories (DHV Stories).", bundle: 'free' },
+        { q: "Which strategies form \"Reading Her World\"?", a: "Identifying the Blueprint and The Cold Read.", bundle: 'free' },
+        { q: "When should you choose a \"Connecting Beyond Surface\" move?", a: "When transitioning from polite small talk into personal values and shared experiences.", bundle: 'free' },
+        { q: "How do Collections build real-time rapport skills?", a: "They teach you to fluidly alternate between reading her, asking deep questions, and sharing stories.", bundle: 'free' },
+        { q: "How many strategies must a Collection deck group?", a: "At least three strategies from the pack to offer genuine choice.", bundle: 'pro' },
+        { q: "How do Collections differ from Single Strategy decks?", a: "Single Strategy drills one tool; Collections train choosing the right tool for the moment.", bundle: 'pro' },
+        { q: "Why practice Collection decks in Advanced Connection?", a: "To seamlessly guide conversations from surface observations to profound emotional resonance.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "This pack contains three sequence decks:\n• **The \"Blueprint Connection\" Sequence**\n• **The \"Deep Rapport\" Loop**\n• **Uncovering Her World**\n\nUse these decks to master multi-step connection workflows.",
+      cards: [
+        { q: "What do Sequence decks train?", a: "The exact step-by-step progression required to build deep rapport and shared understanding.", bundle: 'free' },
+        { q: "What is Step 1 in \"The Blueprint Connection Sequence\"?", a: "The Cold Read to make an intuitive observation about her personality.", bundle: 'free' },
+        { q: "What is Step 2 in \"The Blueprint Connection Sequence\"?", a: "Identifying the Blueprint to uncover her core underlying motivation.", bundle: 'free' },
+        { q: "What is Step 3 in \"The Blueprint Connection Sequence\"?", a: "Grounding Stories (DHV Stories) to share a parallel personal story.", bundle: 'free' },
+        { q: "What is Step 1 in \"The Deep Rapport Loop\"?", a: "Wide and Deep Rapport to probe the emotional reason behind a topic.", bundle: 'free' },
+        { q: "What is Step 2 in \"The Deep Rapport Loop\"?", a: "The Cold Read to observe how that passion shapes her character.", bundle: 'pro' },
+        { q: "What is Step 3 in \"The Deep Rapport Loop\"?", a: "Grounding Stories (DHV Stories) to anchor the connection with your own background.", bundle: 'pro' },
+        { q: "Why must every scenario in a combo follow identical steps?", a: "Because sequences build repeatable, automated habits for complex social flows.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "This pack contains five challenge decks:\n• **The \"Logical Interview\" Stall**\n• **Superficial Answers**\n• **Guarded Emotions**\n• **Value Conflicts**\n• **Conversational Detachment**\n\nUse these decks to handle connection obstacles and awkward stalls.",
+      cards: [
+        { q: "What is the objective of Challenge decks?", a: "To apply connection strategies against guarded responses, polite stalls, and value mismatches.", bundle: 'free' },
+        { q: "How do you escape \"The 'Logical Interview' Stall\"?", a: "Replace resume questions with Grounding Stories and emotional probes.", bundle: 'free' },
+        { q: "How do you break through \"Superficial Answers\"?", a: "Use Cold Reads and Deep Rapport questions to explore personal meaning behind facts.", bundle: 'free' },
+        { q: "How do you navigate \"Guarded Emotions\"?", a: "Lead with authentic Grounding Stories to make vulnerability safe for her.", bundle: 'free' },
+        { q: "How do you handle \"Value Conflicts\"?", a: "Use Identifying the Blueprint to find shared underlying motivations despite surface differences.", bundle: 'free' },
+        { q: "How do you solve \"Conversational Detachment\"?", a: "Use Cold Reads to call out the energy drop and share an engaging personal story.", bundle: 'pro' },
+        { q: "Why are all Challenge cards tagged as pro?", a: "Because guiding guarded or detached interactions requires high social intelligence.", bundle: 'pro' },
+        { q: "What mindset is vital during Challenge scenarios?", a: "Staying unshakeable, curious, and leading the interaction back to authentic warmth.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "This pack contains four mindset decks:\n• **The \"Us\" Narrative**\n• **Vulnerability**\n• **Intuitive Observations**\n• **Probing Values**\n\nUse these decks to eliminate internal limiting beliefs that block deep connection.",
+      cards: [
+        { q: "What do Mindset decks target?", a: "The psychological barriers and limiting thoughts that stop guys from connecting deeply.", bundle: 'free' },
+        { q: "What truth resets the fear in \"Vulnerability\"?", a: "Authentic vulnerability delivered from strength builds deep trust and magnetic rapport.", bundle: 'free' },
+        { q: "What belief is corrected in \"Intuitive Observations\"?", a: "The false idea that you must never make a guess about her in case you are wrong.", bundle: 'free' },
+        { q: "What insight resets \"Probing Values\"?", a: "People love talking about what they care about when guided by a curious leader.", bundle: 'free' },
+        { q: "How are Mindset decks named?", a: "For the specific obstacle area stopping the strategy, never the insight it leads to.", bundle: 'free' },
+        { q: "What is the structure of a Mindset card?", a: "A limiting thought on the front and a clear internal reset on the back.", bundle: 'pro' },
+        { q: "Why is Mindset training essential for Advanced Connection?", a: "Because connection techniques fail if you secretly fear judgment, vulnerability, or conflict inside.", bundle: 'pro' },
+        { q: "What is the core takeaway of \"The 'Us' Narrative\"?", a: "Framing the connection as a shared team creates an exclusive, cozy bond instantly.", bundle: 'pro' },
+      ]
+    },
   ],
   toddv4: [
     {
@@ -8757,6 +9135,132 @@ const memorizeCollections = {
         { q: "How many times is a typical 'order' asked for before a successful close?", a: "At least three times.", bundle: 'pro' },
       ]
     },
+    {
+      name: "Core Idea",
+      description: "Closing & Logistics teaches how to transition interactions from early flirtatious spark to definite real-world outcomes with assertive leadership.\n\nBy seeding the pull early, managing time constraints, assuming moves, and polarizing flat interactions, you eliminate flakes and lead seamlessly.\n\nThis pack teaches four core strategies:\n• **Seeding the Pull**\n• **False Time Constraints**\n• **Assumptive Closing (Sco Game)**\n• **Emotional Spiking (The Polarizer)**",
+      cards: [
+        { q: "What is the primary focus of Closing & Logistics?", a: "Leading interactions from verbal spark to definite, real-world outcomes without needy behavior.", bundle: 'free' },
+        { q: "What is the risk of closing without prior seeding or tension?", a: "It feels sudden and pushy, triggering last-minute resistance and high flake rates.", bundle: 'free' },
+        { q: "What does \"covering the exits\" mean in logistics?", a: "Preempting her excuses and objections by stating them yourself before she can use them.", bundle: 'free' },
+        { q: "What is the \"Sco Game\" principle?", a: "Treating moves as foregone conclusions (\"Let's go\") rather than asking for permission.", bundle: 'free' },
+        { q: "Why should you avoid \"nice to meet you\" flatline sets?", a: "Polite, flat sets lead to forgettable interactions that end in meaningless numbers.", bundle: 'free' },
+        { q: "What is the distinction between Empathy and Sympathy in closing?", a: "Sympathy buys into her logistical excuses; Empathy solves the problem so you can hang out.", bundle: 'pro' },
+        { q: "What is the \"Point of No Return\" in seduction?", a: "The moment where stopping without closing causes the set to flake due to awkwardness.", bundle: 'pro' },
+        { q: "How does active leadership lower her social risk?", a: "It takes the responsibility off her shoulders, allowing her to follow your lead naturally.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Seeding the Pull",
+      description: "",
+      cards: [
+        { q: "What is Seeding the Pull?", a: "Mentioning future plans or moves in a restricted or negative way long before executing them.", bundle: 'free' },
+        { q: "Why mention future plans in the negative early on?", a: "It plants the seed of the move without making a needy offer, lowering her defensive guard.", bundle: 'free' },
+        { q: "Give an example of a \"Restricted Invite\" seed.", a: "\"There is an amazing rooftop lounge nearby, but I only take cool girls there.\"", bundle: 'free' },
+        { q: "How do you preempt the \"I have to get back to my friends\" objection?", a: "Tell her warmly that you know her friends will miss her, so you will get her back soon.", bundle: 'free' },
+        { q: "What is the \"Not Yet\" frame in seeding?", a: "Telling her that you like her company, but you are taking things slow for now.", bundle: 'free' },
+        { q: "How does Seeding the Pull test compliance?", a: "Her reaction to the casual seed reveals whether she is open to moving later.", bundle: 'pro' },
+        { q: "What is the \"Coffee Test\" equivalent in closing?", a: "Seeding a small, low-risk venue change and observing if she agrees enthusiastically.", bundle: 'pro' },
+        { q: "Why does seeding prevent last-minute resistance?", a: "Because by the time you execute the move, her mind has already accepted the idea.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "False Time Constraints",
+      description: "",
+      cards: [
+        { q: "What is a False Time Constraint?", a: "Explicitly stating that you can only stay or hang out for a brief, limited period.", bundle: 'free' },
+        { q: "Why do False Time Constraints lower her resistance?", a: "They remove the threat of a long, trapped commitment, making it safe to say yes.", bundle: 'free' },
+        { q: "How do you use a time constraint during a street approach?", a: "State that you have to run in a second, but noticed her expressive look and had to say hi.", bundle: 'free' },
+        { q: "How do you use a time constraint when sitting next to someone?", a: "Mention that your legs are tired and you are sitting down for two minutes before moving on.", bundle: 'free' },
+        { q: "What status signal does a time constraint send?", a: "That you are a high-value man with plans, friends, and a busy schedule.", bundle: 'free' },
+        { q: "How do you apply a False Time Constraint on a date?", a: "State early that you have plans in two hours, creating urgency for the current time.", bundle: 'pro' },
+        { q: "How do you use a time constraint for an apartment transition?", a: "Mention you need to drop off a heavy bag or grab a camera battery for two minutes.", bundle: 'pro' },
+        { q: "Why is \"Be the one who is leaving\" a powerful mindset?", a: "Because the person willing to walk away holds the leverage in social negotiations.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Assumptive Closing (Sco Game)",
+      description: "",
+      cards: [
+        { q: "What is Assumptive Closing (Sco Game)?", a: "Moving the interaction forward by treating the move or close as a foregone conclusion.", bundle: 'free' },
+        { q: "Why avoid asking \"Do you want to go?\" during a close?", a: "Asking permission invites reflexive hesitation, whereas stating the move provides calm leadership.", bundle: 'free' },
+        { q: "What does the term \"Sco\" stand for?", a: "A contracted version of \"Let's go,\" so assumed that it requires only one syllable.", bundle: 'free' },
+        { q: "How do you perform an Assumptive Phone Close?", a: "Say \"I'll take your number, I'll hit you up on WhatsApp\" while handing her your phone.", bundle: 'free' },
+        { q: "How do you lead movement physically?", a: "State \"Let me lead us over there\" and start walking without waiting for verbal confirmation.", bundle: 'free' },
+        { q: "What is the \"Scenarist Close\"?", a: "Ending a conversation by assuming you will see each other again for a specific adventure.", bundle: 'pro' },
+        { q: "How do you handle a bouncer or door check using Assumptive Closing?", a: "Look them in the eye, state \"It's just us two,\" and walk in with unshakeable entitlement.", bundle: 'pro' },
+        { q: "What mindset powers Assumptive Closing?", a: "Assume she wants to go with you, and beg for forgiveness only if she actually objects.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Emotional Spiking (The Polarizer)",
+      description: "",
+      cards: [
+        { q: "What is Emotional Spiking (The Polarizer)?", a: "Injecting a sudden, strong positive or negative statement to break polite, flatline small talk.", bundle: 'free' },
+        { q: "When should you use Emotional Spiking?", a: "Whenever an interaction feels overly logical, polite, or stuck in \"nice to meet you\" territory.", bundle: 'free' },
+        { q: "Give an example of a polarizing spike line.", a: "\"You're the most ridiculous girl I've met all night. I think you win the prize.\"", bundle: 'free' },
+        { q: "How does polarizing affect a woman's investment?", a: "It forces her out of passive nodding and makes her chase validation or engage emotionally.", bundle: 'free' },
+        { q: "What is the \"Qualification Spike\"?", a: "Challenging her directly by saying \"I bet you've never done anything impulsive in your life.\"", bundle: 'free' },
+        { q: "Why is risking immediate awkwardness necessary for game?", a: "Because avoiding risk keeps interactions flat, leading to guaranteed politeness and zero spark.", bundle: 'pro' },
+        { q: "How do you reframe a corporate job answer with a spike?", a: "Tease that her job makes her professionally good at lying or manipulating people.", bundle: 'pro' },
+        { q: "What mindset supports Emotional Spiking?", a: "Being willing to risk the set to see if she is adventurous enough to keep up.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "This pack contains three collection decks:\n• **Taking the Lead**\n• **Moving Toward the Resolution**\n• **Executing the Close**\n\nUse these decks to practice selecting the best logistical and closing moves in real time.",
+      cards: [
+        { q: "What is the goal of Collection decks in Closing & Logistics?", a: "To train selecting the right closing strategy across varied logistical scenarios.", bundle: 'free' },
+        { q: "Which strategies form \"Taking the Lead\"?", a: "Assumptive Closing (Sco Game) and False Time Constraints.", bundle: 'free' },
+        { q: "Which strategies form \"Moving Toward the Resolution\"?", a: "Seeding the Pull and Emotional Spiking (The Polarizer).", bundle: 'free' },
+        { q: "When should you choose a \"Taking the Lead\" move?", a: "When orchestrating physical movement, venue changes, or contact exchanges.", bundle: 'free' },
+        { q: "When should you choose a \"Moving Toward the Resolution\" move?", a: "When building emotional tension, testing compliance, or preparing for the final pull.", bundle: 'free' },
+        { q: "How many strategies must a Collection deck group?", a: "At least three strategies from the pack to offer genuine choice.", bundle: 'pro' },
+        { q: "How do Collections differ from Single Strategy decks?", a: "Single Strategy drills one tool; Collections train selecting the right tool under pressure.", bundle: 'pro' },
+        { q: "Why practice Collections in Closing & Logistics?", a: "To seamlessly adapt your closing style to her energy and environmental obstacles.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "This pack contains three sequence decks:\n• **The \"Seeding to Closing\" Sequence**\n• **The \"Vibe Save\" Sequence**\n• **The \"Sco\" Fast Pull**\n\nUse these decks to master multi-step closing and logistical workflows.",
+      cards: [
+        { q: "What do Sequence decks train?", a: "The exact multi-step progression required to transition from middle game to a successful close.", bundle: 'free' },
+        { q: "What is Step 1 in \"The Seeding to Closing Sequence\"?", a: "False Time Constraints to lower her defensive guard.", bundle: 'free' },
+        { q: "What is Step 2 in \"The Seeding to Closing Sequence\"?", a: "Seeding the Pull to plant the idea of a new venue or move.", bundle: 'free' },
+        { q: "What is Step 3 in \"The Seeding to Closing Sequence\"?", a: "Assumptive Closing (Sco Game) to execute the move with authority.", bundle: 'free' },
+        { q: "What is Step 1 in \"The Vibe Save Sequence\"?", a: "Emotional Spiking (The Polarizer) to break polite small talk.", bundle: 'free' },
+        { q: "What is Step 2 in \"The Vibe Save Sequence\"?", a: "False Time Constraints to take off social pressure after she laughs.", bundle: 'pro' },
+        { q: "What is Step 3 in \"The Vibe Save Sequence\"?", a: "Seeding the Pull to test if she is open to future plans.", bundle: 'pro' },
+        { q: "Why must every scenario in a combo follow identical steps?", a: "Because sequences build repeatable, automated habits for complex logistical moves.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "This pack contains five challenge decks:\n• **The Logistic Stall**\n• **Group Obstacles**\n• **Last-Minute Resistance**\n• **Flaky Intentions**\n• **Venue Friction**\n\nUse these decks to overcome difficult logistical resistance and venue obstacles.",
+      cards: [
+        { q: "What is the goal of Challenge decks in this pack?", a: "To apply closing strategies against real-world logistical friction and resistance.", bundle: 'free' },
+        { q: "How do you solve \"The Logistic Stall\"?", a: "Use Empathy to acknowledge her situation and False Time Constraints to lower the risk.", bundle: 'free' },
+        { q: "How do you handle \"Group Obstacles\"?", a: "Preempt her friends' concerns, promise a quick return, and lead assertively.", bundle: 'free' },
+        { q: "How do you navigate \"Last-Minute Resistance\"?", a: "Reframe the move as non-sexual, slow down escalation, and use false time constraints.", bundle: 'free' },
+        { q: "How do you disarm \"Venue Friction\"?", a: "Take charge of movement, ignore crowd noise, and lead to better spots immediately.", bundle: 'free' },
+        { q: "How do you handle \"Flaky Intentions\"?", a: "Use Emotional Spiking to leave a memorable mark and seed qualification criteria.", bundle: 'pro' },
+        { q: "Why are all Challenge cards tagged as pro?", a: "Because closing under active social friction requires advanced composure and leadership.", bundle: 'pro' },
+        { q: "What mindset is vital during Challenge scenarios?", a: "Viewing objections as logistical puzzles to solve rather than personal rejections.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "This pack contains four mindset decks:\n• **Empathy, Not Sympathy**\n• **Being Pushy**\n• **Rejection of the Move**\n• **Needing Permission**\n\nUse these decks to eliminate internal limiting beliefs that stall closing.",
+      cards: [
+        { q: "What do Mindset decks target?", a: "The internal doubts and fears that stop a man from closing assertively.", bundle: 'free' },
+        { q: "What truth resets \"Empathy, Not Sympathy\"?", a: "Sympathy buys into her excuses; Empathy solves the problem so you can hang out.", bundle: 'free' },
+        { q: "What belief is corrected in \"Being Pushy\"?", a: "The idea that taking charge is predatory; women crave confident, high-value leadership.", bundle: 'free' },
+        { q: "What insight resets \"Rejection of the Move\"?", a: "A logistical objection means 'not yet,' not 'no forever'—adjust and lead again later.", bundle: 'free' },
+        { q: "What truth resets \"Needing Permission\"?", a: "Assuming compliance and stating the move is smooth; asking permission creates hesitation.", bundle: 'free' },
+        { q: "How are Mindset decks named?", a: "For the specific obstacle area stopping the strategy, never the insight it leads to.", bundle: 'pro' },
+        { q: "What is the structure of a Mindset card?", a: "A limiting thought on the front and an unshakeable internal reset on the back.", bundle: 'pro' },
+        { q: "Why is Mindset training essential for Closing & Logistics?", a: "Because closing techniques crumble if you secretly feel needy, pushy, or fearful inside.", bundle: 'pro' },
+      ]
+    },
   ],
   toddv5: [
     {
@@ -8775,6 +9279,132 @@ const memorizeCollections = {
         { q: "How do you \"Cover the Exits\"?", a: "Giving the girl's likely objections and excuses yourself before she does to take them off the table.", bundle: 'pro' },
         { q: "What is \"Sco Game\"?", a: "Leading with a foregone conclusion (\"Let's go\") instead of asking for permission.", bundle: 'pro' },
         { q: "What is the \"True Self-Esteem\" formula?", a: "Accepting who you are and doing what you know is right regardless of the result.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "Unflappable Presence teaches how to maintain unshakeable composure, internal self-worth, and dominant leadership under intense social pressure and frame tests.\n\nBy mastering value and comfort tests, handling protective groups, and acting from internal desire, you remain relaxed and unbothered in any venue.\n\nThis pack teaches four core strategies:\n• **Passing Value Shit Tests**\n• **Passing Comfort Shit Tests**\n• **The \"What Do I Want?\" Move**\n• **Handling the Posse**",
+      cards: [
+        { q: "What is the primary focus of Unflappable Presence?", a: "Maintaining internal self-worth, emotional composure, and frame control under social pressure.", bundle: 'free' },
+        { q: "What is a \"Value Shit Test\"?", a: "A challenge designed to test if a man gets flustered, defensive, or insecure about his status.", bundle: 'free' },
+        { q: "What is a \"Comfort Shit Test\"?", a: "A test designed to verify whether a man is sincere, trustworthy, and emotionally stable.", bundle: 'free' },
+        { q: "What is the core mechanism of The \"What Do I Want?\" Move?", a: "Shifting focus from seeking her approval to acting assertively from your own internal desire.", bundle: 'free' },
+        { q: "How do you handle protective groups (\"Handling the Posse\")?", a: "Address the group warmly, disarm their protective shield, and win over key members.", bundle: 'free' },
+        { q: "What is the difference between Outcome Dependence and Outcome Independence?", a: "Outcome dependence seeks validation; outcome independence grounds self-worth internally regardless of results.", bundle: 'pro' },
+        { q: "What does getting defensive during a test signal?", a: "Insecurity, low social status, and a desperate need for external approval.", bundle: 'pro' },
+        { q: "How does unshakeable presence build long-term respect?", a: "It proves that you are a stable anchor who cannot be intimidated or manipulated by social friction.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Passing Value Shit Tests",
+      description: "",
+      cards: [
+        { q: "What defines a Value Shit Test?", a: "An arrogant, sarcastic, or challenging comment aimed at testing your confidence and status.", bundle: 'free' },
+        { q: "What are the three primary methods to pass a Value Shit Test?", a: "Ignore it, Agree and Exaggerate, or Misinterpret it as a compliment.", bundle: 'free' },
+        { q: "Give an example of \"Agree and Exaggerate\" for a player test.", a: "\"Oh, I'm a total player! I practice my pickup lines in the mirror every single morning.\"", bundle: 'free' },
+        { q: "Why is explaining yourself a fatal mistake during a Value Test?", a: "Explaining yourself acknowledges that her challenge has power over your self-worth.", bundle: 'free' },
+        { q: "What tonality should accompany a Value Test response?", a: "A relaxed, amused tonality accompanied by a slight smirk and steady eye contact.", bundle: 'free' },
+        { q: "How do you misinterpret \"You're arrogant\" as a compliment?", a: "\"Thank you! I work really hard on my self-confidence, I'm glad you noticed.\"", bundle: 'pro' },
+        { q: "When is ignoring a Value Test the best response?", a: "When the comment is overly petty or designed purely to bait you into a silly argument.", bundle: 'pro' },
+        { q: "What status signal does passing Value Tests send?", a: "That your self-worth is unshakeable and you are immune to social intimidation.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Passing Comfort Shit Tests",
+      description: "",
+      cards: [
+        { q: "What defines a Comfort Shit Test?", a: "A serious, vulnerable, or skeptical question testing your sincerity and emotional integrity.", bundle: 'free' },
+        { q: "How does passing a Comfort Test differ from passing a Value Test?", a: "Value tests require playful teasing; Comfort tests require grounded, sincere reassurance.", bundle: 'free' },
+        { q: "Give an example of a Comfort Test question.", a: "\"Are you just saying this to every girl in the bar, or do you actually mean it?\"", bundle: 'free' },
+        { q: "What happens if you respond to a Comfort Test with sarcastic jokes?", a: "You appear untrustworthy, emotionally cold, or incapable of genuine connection.", bundle: 'free' },
+        { q: "What mindset powers passing Comfort Shit Tests?", a: "Knowing that she wants to trust you, and offering calm, non-needy emotional safety.", bundle: 'free' },
+        { q: "How do you pass the \"You move too fast\" Comfort Test?", a: "State calmly that you are in no rush, slowing down the pace to make her feel safe.", bundle: 'pro' },
+        { q: "Why do women throw Comfort Tests after high-attraction moments?", a: "To ensure that your high status isn't just a deceptive act meant to manipulate her.", bundle: 'pro' },
+        { q: "What delivery builds maximum trust during a Comfort Test?", a: "Dropping all sarcastic smirk, maintaining gentle eye contact, and speaking in a slow tone.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The \"What Do I Want?\" Move",
+      description: "",
+      cards: [
+        { q: "What is the core principle of The \"What Do I Want?\" Move?", a: "Asking yourself what outcome you genuinely desire, then leading assertively toward it.", bundle: 'free' },
+        { q: "Why is asking \"What does she want me to do?\" harmful?", a: "It forces you into a reactive, approval-seeking role that surrenders masculine leadership.", bundle: 'free' },
+        { q: "How do you apply this move when deciding on venue changes?", a: "Pick the spot you genuinely want to visit, state the plan, and invite her to join.", bundle: 'free' },
+        { q: "How does this strategy handle conversation stalls?", a: "Shift the topic to something you find interesting rather than trying to entertain her.", bundle: 'free' },
+        { q: "What status signal does acting from internal desire send?", a: "That you are an autonomous, self-directed leader who operates on his own terms.", bundle: 'free' },
+        { q: "How do you execute this move without being selfish or aggressive?", a: "Combine clear leadership with warmth, inviting her into your world without forcing her.", bundle: 'pro' },
+        { q: "Why does clarity of intent eliminate needy behavior?", a: "Because when you know what you want, you state it cleanly instead of dropping passive hints.", bundle: 'pro' },
+        { q: "What is the connection between internal desire and sexual tension?", a: "Grounded masculine desire communicated clearly is magnetic and exciting for women.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Handling the Posse",
+      description: "",
+      cards: [
+        { q: "What does \"Handling the Posse\" mean?", a: "Navigating and winning over the friends, group members, or onlookers surrounding your target.", bundle: 'free' },
+        { q: "Why is ignoring her group a major mistake?", a: "Her friends will feel disrespected and actively cockblock or pull her away from you.", bundle: 'free' },
+        { q: "How do you engage a protective female friend?", a: "Acknowledge her protective role warmly, compliment her loyalty, and put her at ease.", bundle: 'free' },
+        { q: "How do you handle a hostile male friend in her group?", a: "Address him with high-status respect, disarm his hostility, and treat him as an equal.", bundle: 'free' },
+        { q: "What is the \"Group Isolation\" threshold?", a: "Moving her to a quiet spot only after her group feels comfortable with your presence.", bundle: 'free' },
+        { q: "What is the \"Obstacle Friend\" disarm technique?", a: "Giving the protective friend a task or joke to keep them entertained while you chat.", bundle: 'pro' },
+        { q: "How do you handle a group that gives you cold, silent reactions?", a: "Own the room with unshakeable humor, calling out the tough inspection playfully.", bundle: 'pro' },
+        { q: "Why is group approval valuable during cold approach?", a: "Group validation creates social proof, making your target feel safe and excited to stay.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "This pack contains three collection decks:\n• **Friction & Selection**\n• **Leading with Presence**\n• **Neutralizing Social Pressure**\n\nUse these decks to practice selecting between unflappable moves when multiple options apply.",
+      cards: [
+        { q: "What is the goal of Collection decks in Unflappable Presence?", a: "To train selecting the right composure move across varied social scenarios.", bundle: 'free' },
+        { q: "Which strategies form \"Friction & Selection\"?", a: "Passing Value Shit Tests and The \"What Do I Want?\" Move.", bundle: 'free' },
+        { q: "Which strategies form \"Leading with Presence\"?", a: "The \"What Do I Want?\" Move and Handling the Posse.", bundle: 'free' },
+        { q: "When should you choose a \"Neutralizing Social Pressure\" move?", a: "When confronted by hostile groups, sharp frame tests, or public resistance.", bundle: 'free' },
+        { q: "How do Collections build real-time social presence?", a: "They develop situational flexibility so you remain calm no matter what test arises.", bundle: 'free' },
+        { q: "How many strategies must a Collection deck group?", a: "At least three strategies from the pack to offer genuine choice.", bundle: 'pro' },
+        { q: "How do Collections differ from Single Strategy decks?", a: "Single Strategy drills one tool; Collections train choosing the right tool under friction.", bundle: 'pro' },
+        { q: "Why practice Collections in Unflappable Presence?", a: "To maintain seamless, unshakeable authority across high-stakes social environments.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "This pack contains three sequence decks:\n• **The \"Group to Isolation\" Sequence**\n• **The \"Friction to Connection\" Sequence**\n• **Defusing Group Pressure**\n\nUse these decks to master multi-step composure and isolation workflows.",
+      cards: [
+        { q: "What do Sequence decks train?", a: "The exact multi-step progression required to disarm friction and isolate a connection.", bundle: 'free' },
+        { q: "What is Step 1 in \"The Group to Isolation Sequence\"?", a: "Handling the Posse to disarm and win over protective group members.", bundle: 'free' },
+        { q: "What is Step 2 in \"The Group to Isolation Sequence\"?", a: "Passing Value Shit Tests to reframe group challenges with calm humor.", bundle: 'free' },
+        { q: "What is Step 3 in \"The Group to Isolation Sequence\"?", a: "The \"What Do I Want?\" Move to lead her assertively to a 1-on-1 spot.", bundle: 'free' },
+        { q: "What is Step 1 in \"The Friction to Connection Sequence\"?", a: "Passing Value Shit Tests to absorb initial cold resistance.", bundle: 'free' },
+        { q: "What is Step 2 in \"The Friction to Connection Sequence\"?", a: "Passing Comfort Shit Tests to reassure her genuine questions with sincerity.", bundle: 'pro' },
+        { q: "What is Step 3 in \"The Friction to Connection Sequence\"?", a: "The \"What Do I Want?\" Move to lead the interaction to the next venue.", bundle: 'pro' },
+        { q: "Why must every scenario in a combo run identical steps?", a: "Because sequences build repeatable, automated habits for complex social dynamics.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "This pack contains five challenge decks:\n• **High Pressure Situations**\n• **Value Testing**\n• **Comfort Resistance**\n• **Group Hostility**\n• **Public Rejections**\n\nUse these decks to maintain composure against intense social friction and group resistance.",
+      cards: [
+        { q: "What is the purpose of Challenge decks in this pack?", a: "To practice applying presence strategies against severe social friction and hostility.", bundle: 'free' },
+        { q: "How do you solve \"Value Testing\"?", a: "Reframe tests with agree-and-exaggerate or misinterpret them as compliments.", bundle: 'free' },
+        { q: "How do you navigate \"Comfort Resistance\"?", a: "Drop all sarcasm, speak sincerely, and provide calm emotional safety.", bundle: 'free' },
+        { q: "How do you disarm \"Group Hostility\"?", a: "Address the group with warmth, disarm protective shields, and stay unshakeable.", bundle: 'free' },
+        { q: "How do you handle \"Public Rejections\"?", a: "Accept dismissals with class, calm humor, and unshakeable self-worth.", bundle: 'free' },
+        { q: "Why are all Challenge cards tagged as pro?", a: "Because maintaining presence under active social pressure requires advanced emotional control.", bundle: 'pro' },
+        { q: "What mindset is vital during Challenge scenarios?", a: "Knowing that your self-worth is internally grounded and immune to external judgment.", bundle: 'pro' },
+        { q: "How does mastering Challenges affect social confidence?", a: "It eliminates approach anxiety by proving you can handle any rejection or test with ease.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "This pack contains four mindset decks:\n• **True Self-Esteem**\n• **Reactive Validation**\n• **Need for Approval**\n• **Fear of Conflict**\n\nUse these decks to eliminate internal insecurities and build unshakeable self-worth.",
+      cards: [
+        { q: "What do Mindset decks target?", a: "The internal doubts and psychological barriers that destroy presence and frame control.", bundle: 'free' },
+        { q: "What truth resets \"True Self-Esteem\"?", a: "My self-worth is internally grounded, so external tests and rejections cannot diminish me.", bundle: 'free' },
+        { q: "What belief is corrected in \"Reactive Validation\"?", a: "The idea that you must defend yourself or explain your value when challenged.", bundle: 'free' },
+        { q: "What insight resets \"Need for Approval\"?", a: "I lead with my genuine desires while respecting others, whether they approve or not.", bundle: 'free' },
+        { q: "What truth resets \"Fear of Conflict\"?", a: "Social tension is harmless play; holding my ground with a smile demonstrates real strength.", bundle: 'free' },
+        { q: "How are Mindset decks named?", a: "For the specific obstacle area stopping the strategy, never the insight it leads to.", bundle: 'pro' },
+        { q: "What is the structure of a Mindset card?", a: "A limiting thought on the front and an unshakeable internal reset on the back.", bundle: 'pro' },
+        { q: "Why is Mindset training essential for Unflappable Presence?", a: "Because presence techniques crumble if you secretly crave approval or fear conflict inside.", bundle: 'pro' },
       ]
     },
   ],
