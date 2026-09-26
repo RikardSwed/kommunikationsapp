@@ -5522,7 +5522,7 @@ const multiStepCollections = {
     },
     {
       name: "The Frame Reset",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "**The Physical Signal** → **Mental Point of Origin** → **The OODA Loop**.\nThis sequence trains you to halt reactive collapse, ground yourself physically, declare your internal truth, and execute a calibrated response.\n1. **The Physical Signal** — ground your body, posture, and presence first\n2. **Mental Point of Origin** — state or check your unarguable internal priority\n3. **The OODA Loop** — observe the reaction and execute your next move\nWhy just this order: you must anchor your physical posture before declaring your internal boundary, and you must state your boundary before calibrating her response.\nWhat people do instead: they babble, explain, and posture loudly, which reveals internal panic.\nMindset: physical presence and internal sureness precede tactical action.",
       inputs: [
@@ -5557,7 +5557,7 @@ const multiStepCollections = {
     },
     {
       name: "Calibrated Action",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "**Mental Point of Origin** → **The OODA Loop** → **Field Reporting**.\nThis sequence trains you to establish an internal boundary, observe her response without getting hooked, and document the facts objectively afterward.\n1. **Mental Point of Origin** — anchor your decision in your own values\n2. **The OODA Loop** — observe reality, orient to the model, and act\n3. **Field Reporting** — document the interaction neutrally to learn from it\nWhy just this order: you must act from internal authority first, observe her response in real time, and analyze the facts after the emotional dust has settled.\nWhat people do instead: they act from anger, argue endlessly, and rewrite history in their minds to play the victim.\nMindset: objective iteration builds an unshakeable frame over time.",
       inputs: [
@@ -5630,7 +5630,7 @@ const multiStepCollections = {
     },
     {
       name: "Decoding the Medium",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "**The Medium is the Message** → **Whisper’s Rule** → **Status/Harmony Calibration**.\n\nThis sequence trains you to identify subtext carried through actions or tone, stop debating surface words, and lead with grounded warmth.\n1. **The Medium is the Message** — identify the subtext delivered through actions, tone, or channel\n2. **Whisper’s Rule** — stop repeating or arguing literal facts\n3. **Status/Harmony Calibration** — respond with high-status, high-harmony leadership\n\nWhy just this order: you must read the medium first, stop debating surface words second, and deliver grounded warm leadership third.\n\nWhat people do instead: they argue the literal text, get defensive, and drop into low-harmony shouting.\n\nMindset: subtext precedes speech; lead the medium to master the moment.",
       inputs: [
@@ -5665,7 +5665,7 @@ const multiStepCollections = {
     },
     {
       name: "Grounded Appreciation",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "**Gratitude Frame-Check** → **Whisper’s Rule** → **Status/Harmony Calibration**.\n\nThis sequence trains you to evaluate whether praise or criticism is a frame test, recognize her underlying emotional state, and hold high-status warmth.\n1. **Gratitude Frame-Check** — evaluate whether praise or criticism is a frame test\n2. **Whisper’s Rule** — recognize her underlying emotional need behind the test\n3. **Status/Harmony Calibration** — respond with unswayable authority and warm inclusion\n\nWhy just this order: you must check the frame first to avoid pleaser traps, look past surface words second, and hold high-status warmth third.\n\nWhat people do instead: they beg for compliments or get needy when praised.\n\nMindset: unshakeable grounding turns frame tests into opportunities for deeper connection.",
       inputs: [
@@ -5737,7 +5737,7 @@ const multiStepCollections = {
     },
     {
       name: "Neutralizing the Attack",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "**Negative Assertion** → **Fogging** → **Broken Record**.\nThis sequence trains you to accept genuine mistakes cleanly, disarm secondary criticism, and hold your boundary without DEERing.\n1. **Negative Assertion** — accept any real mistake immediately without groveling\n2. **Fogging** — agree with the true or probable part of her follow-up criticism\n3. **Broken Record** — repeat your decision or boundary calmly\nWhy just this order: accepting the real mistake first strips away her ammunition; fogging the follow-up prevents an argument; repeating your boundary seals the frame.\nWhat people do instead: they deny the mistake, get defensive, and cave to her demands out of guilt.\nMindset: accepting a mistake is not giving up your authority.",
       inputs: [
@@ -5772,7 +5772,7 @@ const multiStepCollections = {
     },
     {
       name: "Probing the Hostility",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "**Negative Inquiry** → **Fogging** → **Broken Record**.\nThis sequence trains you to prompt vague complaints to be specific, disarm the valid core of the critique, and hold your position calmly.\n1. **Negative Inquiry** — ask for specific details about her vague criticism\n2. **Fogging** — agree with the valid or true element revealed\n3. **Broken Record** — state your clear decision without offering excuses\nWhy just this order: probing forces her to move from emotional attacks to concrete facts; fogging the valid part neutralizes hostility; repeating your stance keeps your frame intact.\nWhat people do instead: they take emotional attacks personally and argue back, creating a two-hour fight.\nMindset: specific facts disarm emotional drama every time.",
       inputs: [
@@ -5847,7 +5847,7 @@ const multiStepCollections = {
     },
     {
       name: "The Resentment Circuit Breaker",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "**Killing Covert Contracts** → **No DEERing** → **Controlled Anger**.\n\nThis sequence trains you to identify covert expectations before they turn into bitter resentment, declare your boundary without defending, and enforce it with controlled anger if pushed.\n1. **Killing Covert Contracts** — eliminate the hidden transaction in your mind\n2. **No DEERing** — state your boundary cleanly without excuses or justification\n3. **Controlled Anger** — use precise, surgical social signal if she attempts to breach the limit\n\nWhy just this order: you must drop the covert contract first to get clear, state your boundary second, and apply controlled anger only if she aggressively pushes past the boundary.\n\nWhat people do instead: they harbor covert contracts for months, sulk, and then explode in uncalibrated rage.\n\nMindset: clear boundaries stated early prevent resentment explosions later.",
       inputs: [
@@ -5882,7 +5882,7 @@ const multiStepCollections = {
     },
     {
       name: "Containing the Fire",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "**The Oak** → **Controlled Anger** → **No DEERing**.\n\nThis sequence trains you to stand unswayable during her emotional wave, deploy controlled anger if she crosses a line, and state your boundary without explaining.\n1. **The Oak** — absorb her initial emotional storm with unswayable physical presence\n2. **Controlled Anger** — use sharp, low-pitch anger to signal an explicit line if she becomes disrespectful\n3. **No DEERing** — deliver your final boundary concisely without giving excuses\n\nWhy just this order: you must absorb normal emotional storming as the Oak first; if disrespect occurs, deploy controlled anger; then state your boundary cleanly without opening a debate.\n\nWhat people do instead: they panic instantly, get defensive, and argue logic while shrinking physically.\n\nMindset: absorb the storm, enforce the line, hold the frame.",
       inputs: [
@@ -5954,7 +5954,7 @@ const multiStepCollections = {
     },
     {
       name: "Unilateral Leadership",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "**Rule Zero (Rational Egoism)** → **The Leader’s Vision** → **Leading Without Permission**.\nThis sequence trains you to anchor in rational self-interest first, define a clear vision, and execute unilaterally without seeking consensus.\n1. **Rule Zero (Rational Egoism)** — ground yourself in self-respect and mission priority\n2. **The Leader’s Vision** — articulate the inspiring long-term direction\n3. **Leading Without Permission** — execute the move decisively without permission-seeking\n\nWhy just this order: you must prioritize your own frame first, map the destination second, and execute the action third.\n\nWhat people do instead: they ask for consensus, debate endlessly, and stall in indecision.\n\nMindset: true leadership moves from internal clarity to decisive execution.",
       inputs: [
@@ -5989,7 +5989,7 @@ const multiStepCollections = {
     },
     {
       name: "The Calibrated Push",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "**Rule Zero (Rational Egoism)** → **Push and Pull** → **The Leader’s Vision**.\nThis sequence trains you to hold your locus of control, deploy dynamic tension to revive polarity, and anchor the excitement in your overall vision.\n1. **Rule Zero (Rational Egoism)** — anchor your worth independent of her mood\n2. **Push and Pull** — withdraw attention to create space, then offer warm, high-status presence\n3. **The Leader’s Vision** — channel the restored attraction into your shared long-term goal\n\nWhy just this order: you must be self-grounded first, reset relational polarity second, and point the restored energy toward your vision third.\n\nWhat people do instead: they chase her when she pulls away, killing attraction and losing direction.\n\nMindset: polarity requires space, authority, and an exciting destination.",
       inputs: [
@@ -7181,7 +7181,7 @@ const multiStepCollections = {
     },
     {
       name: "Sparking the Cold Approach",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence to turn a neutral cold approach into immediate attraction.\n\n• Step 1: Playfully Challenging Humor\n• Step 2: The Statement-Question Combo\n• Step 3: Unexpected Reactions",
       inputs: [
@@ -7288,7 +7288,7 @@ const multiStepCollections = {
     },
     {
       name: "Reclaiming the Frame",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence to handle social tests, invert the dynamic, and hold your frame without bragging.\n\n• Step 1: Passing Confidence Tests\n• Step 2: Flipping the Script\n• Step 3: Avoiding Self-Qualification",
       inputs: [
@@ -7393,7 +7393,7 @@ const multiStepCollections = {
     },
     {
       name: "Taking the Reins",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence to establish leadership, delegate tasks warmly, and maintain emotional independence.\n\n• Step 1: General Leadership\n• Step 2: Lovingly Expecting More\n• Step 3: Emotional Independence",
       inputs: [
@@ -7500,7 +7500,7 @@ const multiStepCollections = {
     },
     {
       name: "Reclaiming Authority",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence to handle moody resistance, set boundaries against arbitrary rules, and restore spark.\n\n• Step 1: Expressing Real Moods\n• Step 2: Ignoring Ridiculous Rules\n• Step 3: Restoring the Spark",
       inputs: [
@@ -8067,7 +8067,7 @@ const multiStepCollections = {
     },
     {
       name: "The \"Curiosity & Hook\" Sequence",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence designed to spark curiosity with a tease, drop a high-value hook, and establish dynamic control.\n\n• Step 1: Question-Answer-Tease (QAT)\n• Step 2: Open Loops (The Cookie)\n• Step 3: Narrating the Frame",
       inputs: [
@@ -8102,7 +8102,7 @@ const multiStepCollections = {
     },
     {
       name: "The \"Direct Observation\" Sequence",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence that begins with a bold statement, transitions into playful teasing, and locks in the interaction frame.\n\n• Step 1: Statement Openers\n• Step 2: Question-Answer-Tease (QAT)\n• Step 3: Narrating the Frame",
       inputs: [
@@ -8209,7 +8209,7 @@ const multiStepCollections = {
     },
     {
       name: "The Disqualification Reset",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence to remove sexual pressure, evaluate her standards, and re-inject flirtatious tension.\n\n1. **Disqualification (Sexual)** — remove sexual expectation to lower her guard\n2. **Qualifying (The Interviewer)** — screen her for genuine character and investment\n3. **Push-Pull** — spike the emotional rollercoaster once she invests",
       inputs: [
@@ -8290,7 +8290,7 @@ const multiStepCollections = {
     },
     {
       name: "The \"Deep Rapport\" Loop",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence to expand conversation breadth, make perceptive personal reads, and anchor the connection with a grounding story.\n\n• Step 1: Wide and Deep Rapport\n• Step 2: The Cold Read\n• Step 3: Grounding Stories (DHV Stories)",
       inputs: [
@@ -8325,7 +8325,7 @@ const multiStepCollections = {
     },
     {
       name: "Uncovering Her World",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence to make an intuitive observation, uncover her core value blueprint, and deepen emotional rapport.\n\n• Step 1: The Cold Read\n• Step 2: Identifying the Blueprint\n• Step 3: Wide and Deep Rapport",
       inputs: [
@@ -8432,7 +8432,7 @@ const multiStepCollections = {
     },
     {
       name: "The \"Sco\" Fast Pull",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence designed to lower social pressure, spike emotional tension, and execute an immediate, assumptive venue move.\n\n• Step 1: False Time Constraints\n• Step 2: Emotional Spiking (The Polarizer)\n• Step 3: Assumptive Closing (Sco Game)",
       inputs: [
@@ -8539,7 +8539,7 @@ const multiStepCollections = {
     },
     {
       name: "Defusing Group Pressure",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence to engage a protective group, reframe value challenges, and reassure comfort.\n\n• Step 1: Handling the Posse\n• Step 2: Passing Value Shit Tests\n• Step 3: Passing Comfort Shit Tests",
       inputs: [
@@ -12665,7 +12665,7 @@ const multiStepCollections = {
   praxfield1: [
     {
       name: "The Post-Tense Shift",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "**Action Over Identity** → **Selective Agency** → **Post-Tense Reporting**.\n\nThis sequence trains you to handle a mistake cleanly, separate your mistake from her emotional storm, and report corrective action.\n1. **Action Over Identity** — state the exact error and corrective action without self-flagellation\n2. **Selective Agency** — refuse ownership of her exaggerated emotional outburst\n3. **Post-Tense Reporting** — report the completed fix once executed\n\nWhy just this order: you must correct the physical fact first, reject emotional projection second, and report completion third.\n\nWhat people do instead: they indulge in Catholic confessions, promise future behavior, and beg for emotional forgiveness.\n\nMindset: correct the fact, reject the drama, report the completion.",
       inputs: [
@@ -12673,34 +12673,34 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You missed the due date for the water bill, causing a late fee notice to arrive in the mail.",
           steps: [
-            { front: "Action Over Identity — She waves the bill and shouts that you are a terrible provider who ruins everything.", back: "\"I missed the due date for the water bill. I am paying the balance now.\"" },
-            { front: "Selective Agency — She continues fuming that your mistake has ruined her peace of mind for the day.", back: "\"I am responsible for paying the bill; your emotional storm is your own.\"" },
-            { front: "Post-Tense Reporting — You log into the portal and process the payment immediately.", back: "\"I paid the full balance and set up auto-pay for future statements.\"" },
+            { front: "Action Over Identity — She waves the bill and shouts that you are a terrible provider who ruins everything.", back: "\"I missed the due date for the water bill. I am paying the balance now.\"", guideFront: "Name the slip and the fix when...", guideBack: "The mistake, then the fix" },
+            { front: "Selective Agency — She continues fuming that your mistake has ruined her peace of mind for the day.", back: "\"I am responsible for paying the bill; your emotional storm is your own.\"", guideFront: "Separate your part from hers when...", guideBack: "Your part, and where it ends" },
+            { front: "Post-Tense Reporting — You log into the portal and process the payment immediately.", back: "\"I paid the full balance and set up auto-pay for future statements.\"", guideFront: "Say what's already done when...", guideBack: "A past-tense fact" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You misplaced the spare set of house keys, causing a ten-minute delay before leaving the house.",
           steps: [
-            { front: "Action Over Identity — She sighs dramatically and claims you are completely irresponsible.", back: "\"I misplaced the spare keys. I am searching the desk drawer now.\"" },
-            { front: "Selective Agency — She claims your misplaced keys prove you don't care about her schedule.", back: "\"I handle finding the keys; your frustration is your internal state.\"" },
-            { front: "Post-Tense Reporting — You locate the keys and place them on the wall hook.", back: "\"I found the key set and hung it on the hallway rack.\"" },
+            { front: "Action Over Identity — She sighs dramatically and claims you are completely irresponsible.", back: "\"I misplaced the spare keys. I am searching the desk drawer now.\"", guideFront: "Name the slip and the fix when...", guideBack: "The mistake, then the fix" },
+            { front: "Selective Agency — She claims your misplaced keys prove you don't care about her schedule.", back: "\"I handle finding the keys; your frustration is your internal state.\"", guideFront: "Separate your part from hers when...", guideBack: "Your part, and where it ends" },
+            { front: "Post-Tense Reporting — You locate the keys and place them on the wall hook.", back: "\"I found the key set and hung it on the hallway rack.\"", guideFront: "Say what's already done when...", guideBack: "A past-tense fact" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You left the oven on too long and overcooked the evening meal, burning the crust.",
           steps: [
-            { front: "Action Over Identity — She looks at the plate and snaps that you can't do anything right.", back: "\"I overcooked the meal. I am preparing a fresh salad and eggs now.\"" },
-            { front: "Selective Agency — She fumes that you ruined the entire family evening on purpose.", back: "\"I control cooking the food; your dramatic interpretation belongs to you.\"" },
-            { front: "Post-Tense Reporting — You clear the table and serve the fresh food cleanly.", back: "\"I prepared the new meal and set the table.\"" },
+            { front: "Action Over Identity — She looks at the plate and snaps that you can't do anything right.", back: "\"I overcooked the meal. I am preparing a fresh salad and eggs now.\"", guideFront: "Name the slip and the fix when...", guideBack: "The mistake, then the fix" },
+            { front: "Selective Agency — She fumes that you ruined the entire family evening on purpose.", back: "\"I control cooking the food; your dramatic interpretation belongs to you.\"", guideFront: "Separate your part from hers when...", guideBack: "Your part, and where it ends" },
+            { front: "Post-Tense Reporting — You clear the table and serve the fresh food cleanly.", back: "\"I prepared the new meal and set the table.\"", guideFront: "Say what's already done when...", guideBack: "A past-tense fact" },
           ]
         },
       ]
     },
     {
       name: "Claiming Selective Agency",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "**Selective Agency** → **Killing Covert Improvement** → **Post-Tense Reporting**.\n\nThis sequence trains you to reject unfair blame, re-anchor your goals in self-directed standards, and report execution without validation-seeking.\n1. **Selective Agency** — draw a firm line rejecting responsibility for her emotional mood\n2. **Killing Covert Improvement** — state your self-directed purpose for personal development\n3. **Post-Tense Reporting** — report the completed action quietly without asking for approval\n\nWhy just this order: you must disarm blame first, state your true self-directed motive second, and report execution third.\n\nWhat people do instead: they accept false guilt, offer covert bargains for forgiveness, and promise to change in the future.\n\nMindset: I own my boundary, I execute my purpose, I report my facts.",
       inputs: [
@@ -12708,34 +12708,34 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "She confronts you about your new morning workout, claiming it makes her feel bad about her own body.",
           steps: [
-            { front: "Selective Agency — She accuses you of lifting weights just to make her feel inadequate.", back: "\"I am responsible for my fitness; your body image is your own responsibility.\"" },
-            { front: "Killing Covert Improvement — She asks why you can't just be comfortable with a normal body.", back: "\"I lift weights to build my strength and physical performance.\"" },
-            { front: "Post-Tense Reporting — She asks if you're going to quit the gym to make things easier at home.", back: "\"I completed my morning workout and booked my training schedule for the week.\"" },
+            { front: "Selective Agency — She accuses you of lifting weights just to make her feel inadequate.", back: "\"I am responsible for my fitness; your body image is your own responsibility.\"", guideFront: "Separate your part from hers when...", guideBack: "Your part, and where it ends" },
+            { front: "Killing Covert Improvement — She asks why you can't just be comfortable with a normal body.", back: "\"I lift weights to build my strength and physical performance.\"", guideFront: "Give your own reason when...", guideBack: "A reason that's about you" },
+            { front: "Post-Tense Reporting — She asks if you're going to quit the gym to make things easier at home.", back: "\"I completed my morning workout and booked my training schedule for the week.\"", guideFront: "Say what's already done when...", guideBack: "A past-tense fact" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She complains about your evening professional reading, claiming you care more about books than her.",
           steps: [
-            { front: "Selective Agency — She claims your reading habits make her feel lonely and abandoned.", back: "\"I manage my career growth; your evening activities are yours to direct.\"" },
-            { front: "Killing Covert Improvement — She asks if you're studying just to prove you are smarter than her.", back: "\"I read these materials to master my professional domain.\"" },
-            { front: "Post-Tense Reporting — She asks if you actually finished the certification module.", back: "\"I completed the final exam module and submitted the certificate.\"" },
+            { front: "Selective Agency — She claims your reading habits make her feel lonely and abandoned.", back: "\"I manage my career growth; your evening activities are yours to direct.\"", guideFront: "Separate your part from hers when...", guideBack: "Your part, and where it ends" },
+            { front: "Killing Covert Improvement — She asks if you're studying just to prove you are smarter than her.", back: "\"I read these materials to master my professional domain.\"", guideFront: "Give your own reason when...", guideBack: "A reason that's about you" },
+            { front: "Post-Tense Reporting — She asks if you actually finished the certification module.", back: "\"I completed the final exam module and submitted the certificate.\"", guideFront: "Say what's already done when...", guideBack: "A past-tense fact" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She gets angry that you refused to eat sugary dessert, claiming you are ruining family tradition.",
           steps: [
-            { front: "Selective Agency — She snaps that your dietary choices make her feel judged.", back: "\"I choose my food intake; your feelings about dessert belong to you.\"" },
-            { front: "Killing Covert Improvement — She asks if you're dieting just to show off to other people.", back: "\"I maintain clean nutrition to support my health and energy.\"" },
-            { front: "Post-Tense Reporting — She asks if you are going to eat the cake later tonight.", back: "\"I prepped my meals for tomorrow and cleared the kitchen counter.\"" },
+            { front: "Selective Agency — She snaps that your dietary choices make her feel judged.", back: "\"I choose my food intake; your feelings about dessert belong to you.\"", guideFront: "Separate your part from hers when...", guideBack: "Your part, and where it ends" },
+            { front: "Killing Covert Improvement — She asks if you're dieting just to show off to other people.", back: "\"I maintain clean nutrition to support my health and energy.\"", guideFront: "Give your own reason when...", guideBack: "A reason that's about you" },
+            { front: "Post-Tense Reporting — She asks if you are going to eat the cake later tonight.", back: "\"I prepped my meals for tomorrow and cleared the kitchen counter.\"", guideFront: "Say what's already done when...", guideBack: "A past-tense fact" },
           ]
         },
       ]
     },
     {
       name: "Killing Covert Habits",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "**Killing Covert Improvement** → **Action Over Identity** → **Selective Agency**.\n\nThis sequence trains you to drop covert bargains, handle errors without self-flagellation, and maintain firm agency under pressure.\n1. **Killing Covert Improvement** — state your self-directed purpose clearly\n2. **Action Over Identity** — correct any minor tactical error without identity drama\n3. **Selective Agency** — reject her attempt to convert the situation into a guilt trip\n\nWhy just this order: state your clean purpose first, fix minor errors second, and refuse emotional manipulation third.\n\nWhat people do instead: they bargain for approval, call themselves names, and cave to guilt trips.\n\nMindset: clean purpose, quiet correction, firm boundaries.",
       inputs: [
@@ -12743,27 +12743,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You set up a workbench in the garage for your personal projects, and she confronts you over the clutter.",
           steps: [
-            { front: "Killing Covert Improvement — She asks if you built the workbench just to avoid spending time in the house.", back: "\"I built the workbench to handle my home repair and build projects.\"" },
-            { front: "Action Over Identity — She points to three loose screws on the floor and calls you a messy slob.", back: "\"I left three screws on the floor. I am sweeping the shop space now.\"" },
-            { front: "Selective Agency — She claims your garage projects show you don't value family life.", back: "\"I manage my workshop projects; your interpretation of my values is yours.\"" },
+            { front: "Killing Covert Improvement — She asks if you built the workbench just to avoid spending time in the house.", back: "\"I built the workbench to handle my home repair and build projects.\"", guideFront: "Give your own reason when...", guideBack: "A reason that's about you" },
+            { front: "Action Over Identity — She points to three loose screws on the floor and calls you a messy slob.", back: "\"I left three screws on the floor. I am sweeping the shop space now.\"", guideFront: "Name the slip and the fix when...", guideBack: "The mistake, then the fix" },
+            { front: "Selective Agency — She claims your garage projects show you don't value family life.", back: "\"I manage my workshop projects; your interpretation of my values is yours.\"", guideFront: "Separate your part from hers when...", guideBack: "Your part, and where it ends" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You return from a 5 AM run and she confronts you in the kitchen about waking her up when the door clicked.",
           steps: [
-            { front: "Killing Covert Improvement — She asks why you have to run like an obsessive athlete every morning.", back: "\"I run to maintain my endurance and cardiovascular health.\"" },
-            { front: "Action Over Identity — She snaps that you shut the front door too loudly when you left.", back: "\"I shut the door too firmly. I will catch the latch manually tomorrow.\"" },
-            { front: "Selective Agency — She claims your morning runs are ruining her sleep cycle for the entire week.", back: "\"I control my footsteps; your overall sleep quality belongs to you.\"" },
+            { front: "Killing Covert Improvement — She asks why you have to run like an obsessive athlete every morning.", back: "\"I run to maintain my endurance and cardiovascular health.\"", guideFront: "Give your own reason when...", guideBack: "A reason that's about you" },
+            { front: "Action Over Identity — She snaps that you shut the front door too loudly when you left.", back: "\"I shut the door too firmly. I will catch the latch manually tomorrow.\"", guideFront: "Name the slip and the fix when...", guideBack: "The mistake, then the fix" },
+            { front: "Selective Agency — She claims your morning runs are ruining her sleep cycle for the entire week.", back: "\"I control my footsteps; your overall sleep quality belongs to you.\"", guideFront: "Separate your part from hers when...", guideBack: "Your part, and where it ends" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You purchase three high-quality fitted shirts, and she interrogates you about who you are trying to impress.",
           steps: [
-            { front: "Killing Covert Improvement — She asks if you're dressing well to get attention from women at work.", back: "\"I wear well-fitted clothes because I maintain high personal standards.\"" },
-            { front: "Action Over Identity — She points out that you left the shopping bags on the bed.", back: "\"I left the bags on the bed. I am hanging the shirts in the closet now.\"" },
-            { front: "Selective Agency — She claims your new clothes make her feel insecure about her own wardrobe.", back: "\"I manage my presentation; your feelings about your wardrobe are yours.\"" },
+            { front: "Killing Covert Improvement — She asks if you're dressing well to get attention from women at work.", back: "\"I wear well-fitted clothes because I maintain high personal standards.\"", guideFront: "Give your own reason when...", guideBack: "A reason that's about you" },
+            { front: "Action Over Identity — She points out that you left the shopping bags on the bed.", back: "\"I left the bags on the bed. I am hanging the shirts in the closet now.\"", guideFront: "Name the slip and the fix when...", guideBack: "The mistake, then the fix" },
+            { front: "Selective Agency — She claims your new clothes make her feel insecure about her own wardrobe.", back: "\"I manage my presentation; your feelings about your wardrobe are yours.\"", guideFront: "Separate your part from hers when...", guideBack: "Your part, and where it ends" },
           ]
         },
       ]
@@ -12772,7 +12772,7 @@ const multiStepCollections = {
   praxfield2: [
     {
       name: "The Circuit Breaker Combo",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "**Refusing the Confidant Role** → **Verbal Disengagement** → **Dispassionate Distance**.\n\nThis sequence trains you to decline platonic drama, exit escalating circular arguments, and hold a dispassionate stance.\n1. **Refusing the Confidant Role** — decline to act as a drama outlet or sounding board\n2. **Verbal Disengagement** — exit the conversation when she escalates into argument\n3. **Dispassionate Distance** — hold your grounded composure against her reaction\n\nWhy just this order: decline the drama first, exit if she escalates, and remain unswayable against the fallout.\n\nWhat people do instead: they indulge the gossip, get hooked into arguments, and break frame under pressure.\n\nMindset: decline the noise, exit the loop, hold the line.",
       inputs: [
@@ -12780,34 +12780,34 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "She attempts to dump a long story of workplace drama on you while you prepare dinner.",
           steps: [
-            { front: "Refusing the Confidant Role — She starts ranting about her manager's personal life.", back: "\"I'm not the outlet for office gossip, Love. Let's focus on our evening.\"" },
-            { front: "Verbal Disengagement — She gets angry and shouts that you never support her.", back: "\"I won't engage in a shouting match over office drama. I'm stepping into the shop.\"" },
-            { front: "Dispassionate Distance — She slams the door and cries that you are heartless.", back: "(Maintain calm, centered posture and let her storm pass without reacting)." },
+            { front: "Refusing the Confidant Role — She starts ranting about her manager's personal life.", back: "\"I'm not the outlet for office gossip, Love. Let's focus on our evening.\"", guideFront: "Decline the gossip and redirect when...", guideBack: "A decline, and a turn to us" },
+            { front: "Verbal Disengagement — She gets angry and shouts that you never support her.", back: "\"I won't engage in a shouting match over office drama. I'm stepping into the shop.\"", guideFront: "Name the loop and step out when...", guideBack: "A calm exit line" },
+            { front: "Dispassionate Distance — She slams the door and cries that you are heartless.", back: "(Maintain calm, centered posture and let her storm pass without reacting).", guideFront: "Hold steady through her emotion when...", guideBack: "Acknowledgement, and the line held" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She tries to draw you into taking sides in a bitter argument between her relatives.",
           steps: [
-            { front: "Refusing the Confidant Role — She demands you agree that her sister is crazy.", back: "\"I won't badmouth your sister. Their family dispute is theirs to manage.\"" },
-            { front: "Verbal Disengagement — She accuses you of taking her sister's side and starts yelling.", back: "\"We are looping into an argument. I'm taking a walk until things calm down.\"" },
-            { front: "Dispassionate Distance — She gives you a cold glare when you return from your walk.", back: "\"I'm back and calm. I'm ready for a peaceful evening when you are.\"" },
+            { front: "Refusing the Confidant Role — She demands you agree that her sister is crazy.", back: "\"I won't badmouth your sister. Their family dispute is theirs to manage.\"", guideFront: "Decline the gossip and redirect when...", guideBack: "A decline, and a turn to us" },
+            { front: "Verbal Disengagement — She accuses you of taking her sister's side and starts yelling.", back: "\"We are looping into an argument. I'm taking a walk until things calm down.\"", guideFront: "Name the loop and step out when...", guideBack: "A calm exit line" },
+            { front: "Dispassionate Distance — She gives you a cold glare when you return from your walk.", back: "\"I'm back and calm. I'm ready for a peaceful evening when you are.\"", guideFront: "Hold steady through her emotion when...", guideBack: "Acknowledgement, and the line held" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She starts dissecting mutual friends' flaws at dinner, using sharp, cynical commentary.",
           steps: [
-            { front: "Refusing the Confidant Role — She asks you to join in mocking a friend's choices.", back: "\"I won't join in tearing down our friends. Let's talk about our upcoming trip.\"" },
-            { front: "Verbal Disengagement — She rolls her eyes and makes a sarcastic dig at your morals.", back: "\"I don't respond to sarcastic digs. I'm finishing dinner in peace.\"" },
-            { front: "Dispassionate Distance — She sits in tense, dramatic silence trying to make you feel guilty.", back: "(Enjoy your meal calmly, breathing deeply, unaffected by her silent test)." },
+            { front: "Refusing the Confidant Role — She asks you to join in mocking a friend's choices.", back: "\"I won't join in tearing down our friends. Let's talk about our upcoming trip.\"", guideFront: "Decline the gossip and redirect when...", guideBack: "A decline, and a turn to us" },
+            { front: "Verbal Disengagement — She rolls her eyes and makes a sarcastic dig at your morals.", back: "\"I don't respond to sarcastic digs. I'm finishing dinner in peace.\"", guideFront: "Name the loop and step out when...", guideBack: "A calm exit line" },
+            { front: "Dispassionate Distance — She sits in tense, dramatic silence trying to make you feel guilty.", back: "(Enjoy your meal calmly, breathing deeply, unaffected by her silent test).", guideFront: "Hold steady through her emotion when...", guideBack: "Acknowledgement, and the line held" },
           ]
         },
       ]
     },
     {
       name: "Containing the Drama",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "**Verbal Disengagement** → **Dispassionate Distance** → **The Daily Reset**.\n\nThis sequence trains you to exit an argument loop, absorb the emotional aftermath with composure, and reset the next morning.\n1. **Verbal Disengagement** — state your exit cleanly when circular arguing starts\n2. **Dispassionate Distance** — absorb her sulking or anger without breaking frame\n3. **The Daily Reset** — initiate a clean emotional slate the next morning\n\nWhy just this order: cut off the fight, hold composure through the evening, and start fresh the next day.\n\nWhat people do instead: they argue for hours, sulk all night, and carry the grudge into the next week.\n\nMindset: exit the fight, hold your peace, reset the morning.",
       inputs: [
@@ -12815,34 +12815,34 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "At eleven PM, she tries to start a heavy debate about a financial decision you already finalized.",
           steps: [
-            { front: "Verbal Disengagement — She demands you debate the figures right now in bed.", back: "\"I don't debate at midnight. I'm disengaging and going to sleep.\"" },
-            { front: "Dispassionate Distance — She turns her back dramatically and huffs in anger.", back: "(Breathe calmly, stay centered in your body, and sleep peacefully)." },
-            { front: "The Daily Reset — The next morning she expects a cold, hostile atmosphere at breakfast.", back: "\"Good morning, Love. Coffee is ready and today is a fresh start.\"" },
+            { front: "Verbal Disengagement — She demands you debate the figures right now in bed.", back: "\"I don't debate at midnight. I'm disengaging and going to sleep.\"", guideFront: "Name the loop and step out when...", guideBack: "A calm exit line" },
+            { front: "Dispassionate Distance — She turns her back dramatically and huffs in anger.", back: "(Breathe calmly, stay centered in your body, and sleep peacefully).", guideFront: "Hold steady through her emotion when...", guideBack: "Acknowledgement, and the line held" },
+            { front: "The Daily Reset — The next morning she expects a cold, hostile atmosphere at breakfast.", back: "\"Good morning, Love. Coffee is ready and today is a fresh start.\"", guideFront: "Start the day fresh when...", guideBack: "A fresh-start line" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She gets angry because you set a boundary regarding your Saturday morning workout time.",
           steps: [
-            { front: "Verbal Disengagement — She follows you through the house arguing that your workout is selfish.", back: "\"We are looping in circles. I am stepping out for my run now.\"" },
-            { front: "Dispassionate Distance — When you return, she sits on the couch with a sullen, angry face.", back: "(Keep an easy, warm composure, step into the shower, and stay centered)." },
-            { front: "The Daily Reset — Sunday morning arrives and she hesitates to speak to you.", back: "\"Morning. Let's enjoy breakfast and make today productive.\"" },
+            { front: "Verbal Disengagement — She follows you through the house arguing that your workout is selfish.", back: "\"We are looping in circles. I am stepping out for my run now.\"", guideFront: "Name the loop and step out when...", guideBack: "A calm exit line" },
+            { front: "Dispassionate Distance — When you return, she sits on the couch with a sullen, angry face.", back: "(Keep an easy, warm composure, step into the shower, and stay centered).", guideFront: "Hold steady through her emotion when...", guideBack: "Acknowledgement, and the line held" },
+            { front: "The Daily Reset — Sunday morning arrives and she hesitates to speak to you.", back: "\"Morning. Let's enjoy breakfast and make today productive.\"", guideFront: "Start the day fresh when...", guideBack: "A fresh-start line" },
           ]
         },
         {
           bundle: 'pro',
           situation: "After a social gathering, she tries to start an argument in the car about something you said.",
           steps: [
-            { front: "Verbal Disengagement — She raises her voice while you are driving down the highway.", back: "\"I don't argue while driving. We can talk calmly when we get home.\"" },
-            { front: "Dispassionate Distance — She sulks silently for the rest of the drive home.", back: "(Focus on the road, maintaining a relaxed, unswayable posture)." },
-            { front: "The Daily Reset — The following morning she looks to see if you are holding a grudge.", back: "\"Good morning. I'm making breakfast, how do you want your eggs?\"" },
+            { front: "Verbal Disengagement — She raises her voice while you are driving down the highway.", back: "\"I don't argue while driving. We can talk calmly when we get home.\"", guideFront: "Name the loop and step out when...", guideBack: "A calm exit line" },
+            { front: "Dispassionate Distance — She sulks silently for the rest of the drive home.", back: "(Focus on the road, maintaining a relaxed, unswayable posture).", guideFront: "Hold steady through her emotion when...", guideBack: "Acknowledgement, and the line held" },
+            { front: "The Daily Reset — The following morning she looks to see if you are holding a grudge.", back: "\"Good morning. I'm making breakfast, how do you want your eggs?\"", guideFront: "Start the day fresh when...", guideBack: "A fresh-start line" },
           ]
         },
       ]
     },
     {
       name: "The Daily Reset Sequence",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "**Dispassionate Distance** → **The Daily Reset** → **Refusing the Confidant Role**.\n\nThis sequence trains you to handle evening emotional testing, clear the slate in the morning, and maintain boundaries on drama.\n1. **Dispassionate Distance** — absorb her evening emotional test with calm detachment\n2. **The Daily Reset** — launch a fresh emotional slate the following morning\n3. **Refusing the Confidant Role** — redirect her attempts to slide back into old drama patterns\n\nWhy just this order: absorb the test, clear the slate, and enforce clean boundaries on new drama.\n\nWhat people do instead: they collapse under evening tests, hold morning grudges, and indulge drama loops.\n\nMindset: absorb the test, clear the day, hold the line.",
       inputs: [
@@ -12850,27 +12850,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "On Sunday night, she gets overwhelmed with anxiety about her week and projects it onto you.",
           steps: [
-            { front: "Dispassionate Distance — She claims you don't care about her work stress.", back: "\"I hear your anxiety, but I am calm and present. We will handle the week step by step.\"" },
-            { front: "The Daily Reset — Monday morning arrives and she expects you to be cold.", back: "\"Good morning, Love. Let's launch this week cleanly and strong.\"" },
-            { front: "Refusing the Confidant Role — Monday evening she tries to dump two hours of workplace gossip on you.", back: "\"I'm glad you're home, but let's leave office drama outside our evening.\"" },
+            { front: "Dispassionate Distance — She claims you don't care about her work stress.", back: "\"I hear your anxiety, but I am calm and present. We will handle the week step by step.\"", guideFront: "Hold steady through her emotion when...", guideBack: "Acknowledgement, and the line held" },
+            { front: "The Daily Reset — Monday morning arrives and she expects you to be cold.", back: "\"Good morning, Love. Let's launch this week cleanly and strong.\"", guideFront: "Start the day fresh when...", guideBack: "A fresh-start line" },
+            { front: "Refusing the Confidant Role — Monday evening she tries to dump two hours of workplace gossip on you.", back: "\"I'm glad you're home, but let's leave office drama outside our evening.\"", guideFront: "Decline the gossip and redirect when...", guideBack: "A decline, and a turn to us" },
           ]
         },
         {
           bundle: 'pro',
           situation: "During a holiday visit, she gets stressed by her family and takes it out on you.",
           steps: [
-            { front: "Dispassionate Distance — She snaps at you in the guest room after a family dinner.", back: "\"I see you're stressed by family, but I won't accept snapping. I'm right here calmly.\"" },
-            { front: "The Daily Reset — The next morning she comes downstairs expecting a fight.", back: "\"Good morning. Coffee is brewed and today is a new day.\"" },
-            { front: "Refusing the Confidant Role — She immediately tries to start a two-hour session badmouthing her mother.", back: "\"Let's enjoy our day without dissecting your mother's choices.\"" },
+            { front: "Dispassionate Distance — She snaps at you in the guest room after a family dinner.", back: "\"I see you're stressed by family, but I won't accept snapping. I'm right here calmly.\"", guideFront: "Hold steady through her emotion when...", guideBack: "Acknowledgement, and the line held" },
+            { front: "The Daily Reset — The next morning she comes downstairs expecting a fight.", back: "\"Good morning. Coffee is brewed and today is a new day.\"", guideFront: "Start the day fresh when...", guideBack: "A fresh-start line" },
+            { front: "Refusing the Confidant Role — She immediately tries to start a two-hour session badmouthing her mother.", back: "\"Let's enjoy our day without dissecting your mother's choices.\"", guideFront: "Decline the gossip and redirect when...", guideBack: "A decline, and a turn to us" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Home repairs create noise and chaos, causing her to lose her emotional balance.",
           steps: [
-            { front: "Dispassionate Distance — She cries that the house is ruined and demands you fix everything in an hour.", back: "\"Renovations are messy, but the plan is solid. I stay calm through the noise.\"" },
-            { front: "The Daily Reset — Morning comes and she looks tired and defensive.", back: "\"Morning. The workers arrive at eight and we keep moving forward.\"" },
-            { front: "Refusing the Confidant Role — She spends lunch complaining about the contractor's personal life.", back: "\"The contractor's personal life isn't our concern. Let's focus on our choices.\"" },
+            { front: "Dispassionate Distance — She cries that the house is ruined and demands you fix everything in an hour.", back: "\"Renovations are messy, but the plan is solid. I stay calm through the noise.\"", guideFront: "Hold steady through her emotion when...", guideBack: "Acknowledgement, and the line held" },
+            { front: "The Daily Reset — Morning comes and she looks tired and defensive.", back: "\"Morning. The workers arrive at eight and we keep moving forward.\"", guideFront: "Start the day fresh when...", guideBack: "A fresh-start line" },
+            { front: "Refusing the Confidant Role — She spends lunch complaining about the contractor's personal life.", back: "\"The contractor's personal life isn't our concern. Let's focus on our choices.\"", guideFront: "Decline the gossip and redirect when...", guideBack: "A decline, and a turn to us" },
           ]
         },
       ]
@@ -12879,7 +12879,7 @@ const multiStepCollections = {
   praxfield3: [
     {
       name: "The Initiation and Disengagement Loop",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "**Unapologetic Initiation** → **Clean Disengagement on Refusal** → **Removing Primary Anchors**.\n\nThis sequence trains you to initiate physical desire cleanly, accept a refusal without butt-hurt, and remove primary anchors if disrespect follows.\n1. **Unapologetic Initiation** — express physical intent directly without permission-seeking\n2. **Clean Disengagement on Refusal** — accept a decline warmly and smoothly if she isn't in the mood\n3. **Removing Primary Anchors** — step away cleanly if she attempts to turn the refusal into disrespectful mocking\n\nWhy just this order: initiate desire first, handle a refusal smoothly second, and enforce boundaries third if disrespect occurs.\n\nWhat people do instead: they beg for permission, sulk after a refusal, and accept disrespectful mocking.\n\nMindset: initiate cleanly, handle refusal smoothly, tolerate zero disrespect.",
       inputs: [
@@ -12887,34 +12887,34 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You feel strong sexual attraction in the bedroom and step forward to initiate physical intimacy.",
           steps: [
-            { front: "Unapologetic Initiation — You pull her close by her waist and express direct physical intent.", back: "\"Come here, Love. I want you tonight.\"" },
-            { front: "Clean Disengagement on Refusal — She turns her face away and says \"I'm way too exhausted tonight.\"", back: "\"Got it, rest well.\" (Kiss her cheek warmly, roll over, and go to sleep peacefully)." },
-            { front: "Removing Primary Anchors — She follows up with a sarcastic dig mocking your sex drive.", back: "\"I handle refusal cleanly; I don't stay for sarcastic digs. I'm sleeping in the guest room.\"" },
+            { front: "Unapologetic Initiation — You pull her close by her waist and express direct physical intent.", back: "\"Come here, Love. I want you tonight.\"", guideFront: "Show your desire directly when...", guideBack: "Touch, and a direct invitation" },
+            { front: "Clean Disengagement on Refusal — She turns her face away and says \"I'm way too exhausted tonight.\"", back: "\"Got it, rest well.\" (Kiss her cheek warmly, roll over, and go to sleep peacefully).", guideFront: "Accept her no warmly when...", guideBack: "A warm okay, and on with your night" },
+            { front: "Removing Primary Anchors — She follows up with a sarcastic dig mocking your sex drive.", back: "\"I handle refusal cleanly; I don't stay for sarcastic digs. I'm sleeping in the guest room.\"", guideFront: "Take your presence away when...", guideBack: "A calm step away, said or done" },
           ]
         },
         {
           bundle: 'pro',
           situation: "After a pleasant date night, you approach her in the living room to transition to romance.",
           steps: [
-            { front: "Unapologetic Initiation — You guide her toward the bedroom with confident, warm touch.", back: "\"Let me take you to bed tonight, Love.\"" },
-            { front: "Clean Disengagement on Refusal — She stops and says she wants to stay up watching her TV show.", back: "\"No problem.\" (Give her a warm smile, pat her hip gently, and head to your office)." },
-            { front: "Removing Primary Anchors — She demands you sit on the couch and watch her show while she ignores you.", back: "\"I spend my evening where connection is mutual. I'm focusing on my reading.\"" },
+            { front: "Unapologetic Initiation — You guide her toward the bedroom with confident, warm touch.", back: "\"Let me take you to bed tonight, Love.\"", guideFront: "Show your desire directly when...", guideBack: "Touch, and a direct invitation" },
+            { front: "Clean Disengagement on Refusal — She stops and says she wants to stay up watching her TV show.", back: "\"No problem.\" (Give her a warm smile, pat her hip gently, and head to your office).", guideFront: "Accept her no warmly when...", guideBack: "A warm okay, and on with your night" },
+            { front: "Removing Primary Anchors — She demands you sit on the couch and watch her show while she ignores you.", back: "\"I spend my evening where connection is mutual. I'm focusing on my reading.\"", guideFront: "Take your presence away when...", guideBack: "A calm step away, said or done" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You walk into the kitchen, see her cooking, and feel a surge of grounded desire.",
           steps: [
-            { front: "Unapologetic Initiation — You step up behind her, wrap your arms around her waist, and kiss her neck.", back: "(Hold her firmly against your chest and kiss her neck cleanly) \"Come here, Love.\"" },
-            { front: "Clean Disengagement on Refusal — She pulls away saying she needs space to finish dinner.", back: "\"All clear, Love.\" (Give her an easy smile and step back to the island)." },
-            { front: "Removing Primary Anchors — She turns around and snaps angrily that you are always annoying her.", back: "\"I touch with warmth; I don't accept snapping. I'm stepping out for a walk.\"" },
+            { front: "Unapologetic Initiation — You step up behind her, wrap your arms around her waist, and kiss her neck.", back: "(Hold her firmly against your chest and kiss her neck cleanly) \"Come here, Love.\"", guideFront: "Show your desire directly when...", guideBack: "Touch, and a direct invitation" },
+            { front: "Clean Disengagement on Refusal — She pulls away saying she needs space to finish dinner.", back: "\"All clear, Love.\" (Give her an easy smile and step back to the island).", guideFront: "Accept her no warmly when...", guideBack: "A warm okay, and on with your night" },
+            { front: "Removing Primary Anchors — She turns around and snaps angrily that you are always annoying her.", back: "\"I touch with warmth; I don't accept snapping. I'm stepping out for a walk.\"", guideFront: "Take your presence away when...", guideBack: "A calm step away, said or done" },
           ]
         },
       ]
     },
     {
       name: "Enforcing Conditional Commitment",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "**Removing Primary Anchors** → **Conditional Commitment** → **Unapologetic Initiation**.\n\nThis sequence trains you to withdraw attention when disrespect occurs, state your commitment standards, and re-initiate when polarity resets.\n1. **Removing Primary Anchors** — withdraw presence or attention cleanly when disrespect occurs\n2. **Conditional Commitment** — state that relationship quality requires mutual effort and respect\n3. **Unapologetic Initiation** — re-engage with direct physical pursuit once respect and polarity are restored\n\nWhy just this order: enforce boundary first, declare high commitment standards second, and re-initiate physical warmth third.\n\nWhat people do instead: they tolerate disrespect, demand unconditional love, and initiate from a whiny posture.\n\nMindset: enforce limits, declare standards, lead with physical desire.",
       inputs: [
@@ -12922,34 +12922,34 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "She treats you like a familiar domestic roommate while demanding full financial support.",
           steps: [
-            { front: "Removing Primary Anchors — She acts cold and ignores your greeting when you return home.", back: "(Acknowledge home cleanly, then focus entirely on your gym workout and reading) \"Evening. I'm heading down for my workout.\"" },
-            { front: "Conditional Commitment — She asks why you aren't sitting with her to discuss her spending list.", back: "\"A thriving marriage requires mutual warmth and effort. I invest where effort is mutual.\"" },
-            { front: "Unapologetic Initiation — Two days later, after warmth and respect return to the house, you initiate.", back: "(Pull her close by her waist, look into her eyes, and take her to bed cleanly) \"Let's go to bed, Love.\"" },
+            { front: "Removing Primary Anchors — She acts cold and ignores your greeting when you return home.", back: "(Acknowledge home cleanly, then focus entirely on your gym workout and reading) \"Evening. I'm heading down for my workout.\"", guideFront: "Take your presence away when...", guideBack: "A calm step away, said or done" },
+            { front: "Conditional Commitment — She asks why you aren't sitting with her to discuss her spending list.", back: "\"A thriving marriage requires mutual warmth and effort. I invest where effort is mutual.\"", guideFront: "Name the standard you stay for when...", guideBack: "Your standard, stated plainly" },
+            { front: "Unapologetic Initiation — Two days later, after warmth and respect return to the house, you initiate.", back: "(Pull her close by her waist, look into her eyes, and take her to bed cleanly) \"Let's go to bed, Love.\"", guideFront: "Show your desire directly when...", guideBack: "Touch, and a direct invitation" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She claims marriage means you must tolerate her disrespectful language during arguments.",
           steps: [
-            { front: "Removing Primary Anchors — She uses harsh, disrespectful language during a kitchen discussion.", back: "\"I don't remain in disrespectful conversations. I am stepping out for the evening.\"" },
-            { front: "Conditional Commitment — The next day she claims you are obligated to stay regardless of her tone.", back: "\"My commitment is paired with mutual respect. That is the standard of my marriage.\"" },
-            { front: "Unapologetic Initiation — After she apologizes and re-engages with warmth, you express desire.", back: "\"Come here, Love. I want you close tonight.\"" },
+            { front: "Removing Primary Anchors — She uses harsh, disrespectful language during a kitchen discussion.", back: "\"I don't remain in disrespectful conversations. I am stepping out for the evening.\"", guideFront: "Take your presence away when...", guideBack: "A calm step away, said or done" },
+            { front: "Conditional Commitment — The next day she claims you are obligated to stay regardless of her tone.", back: "\"My commitment is paired with mutual respect. That is the standard of my marriage.\"", guideFront: "Name the standard you stay for when...", guideBack: "Your standard, stated plainly" },
+            { front: "Unapologetic Initiation — After she apologizes and re-engages with warmth, you express desire.", back: "\"Come here, Love. I want you close tonight.\"", guideFront: "Show your desire directly when...", guideBack: "Touch, and a direct invitation" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She attempts to use cold withdrawal to force you to abandon a career goal.",
           steps: [
-            { front: "Removing Primary Anchors — She sits in sullen silence, ignoring your presence on the porch.", back: "(Enjoy your coffee peacefully, then head out to execute your daily priorities) \"I'm heading out for my day.\"" },
-            { front: "Conditional Commitment — She accuses you of not caring about the marriage when you return.", back: "\"I care deeply for our marriage, but commitment requires shared respect, not cold wars.\"" },
-            { front: "Unapologetic Initiation — Once the cold war breaks and genuine connection returns, you lead.", back: "(Take her hand warmly, pull her close, and kiss her with confident intent) \"I want you close.\"" },
+            { front: "Removing Primary Anchors — She sits in sullen silence, ignoring your presence on the porch.", back: "(Enjoy your coffee peacefully, then head out to execute your daily priorities) \"I'm heading out for my day.\"", guideFront: "Take your presence away when...", guideBack: "A calm step away, said or done" },
+            { front: "Conditional Commitment — She accuses you of not caring about the marriage when you return.", back: "\"I care deeply for our marriage, but commitment requires shared respect, not cold wars.\"", guideFront: "Name the standard you stay for when...", guideBack: "Your standard, stated plainly" },
+            { front: "Unapologetic Initiation — Once the cold war breaks and genuine connection returns, you lead.", back: "(Take her hand warmly, pull her close, and kiss her with confident intent) \"I want you close.\"", guideFront: "Show your desire directly when...", guideBack: "Touch, and a direct invitation" },
           ]
         },
       ]
     },
     {
       name: "The Polarity Reset Chain",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "**Conditional Commitment** → **Removing Primary Anchors** → **Clean Disengagement on Refusal**.\n\nThis sequence trains you to define commitment standards, withdraw primary anchors if crossed, and handle physical limits cleanly.\n1. **Conditional Commitment** — establish that marriage quality is built on mutual effort and respect\n2. **Removing Primary Anchors** — remove attention or commitment if disrespect continues\n3. **Clean Disengagement on Refusal** — handle any physical refusal smoothly with unswayable frame\n\nWhy just this order: state the standard first, enforce the boundary second, and handle physical refusals cleanly third.\n\nWhat people do instead: they accept low standards, nag constantly, and sulk over physical rejection.\n\nMindset: define standards, enforce limits, handle refusal cleanly.",
       inputs: [
@@ -12957,27 +12957,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "She declares that physical passion is unimportant in a long-term marriage.",
           steps: [
-            { front: "Conditional Commitment — She claims expecting passion in a marriage is unreasonable.", back: "\"Physical passion and mutual desire are core foundations of my marriage standard.\"" },
-            { front: "Removing Primary Anchors — She responds with cold mockery and returns to her phone.", back: "\"I don't stay for mockery. I am spending my evening working in my office.\"" },
-            { front: "Clean Disengagement on Refusal — Later, when you initiate physical touch, she declines calmly.", back: "\"Understood, Love.\" (Kiss her forehead, roll over, and sleep peacefully)." },
+            { front: "Conditional Commitment — She claims expecting passion in a marriage is unreasonable.", back: "\"Physical passion and mutual desire are core foundations of my marriage standard.\"", guideFront: "Name the standard you stay for when...", guideBack: "Your standard, stated plainly" },
+            { front: "Removing Primary Anchors — She responds with cold mockery and returns to her phone.", back: "\"I don't stay for mockery. I am spending my evening working in my office.\"", guideFront: "Take your presence away when...", guideBack: "A calm step away, said or done" },
+            { front: "Clean Disengagement on Refusal — Later, when you initiate physical touch, she declines calmly.", back: "\"Understood, Love.\" (Kiss her forehead, roll over, and sleep peacefully).", guideFront: "Accept her no warmly when...", guideBack: "A warm okay, and on with your night" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She expects you to take her on an expensive vacation while she continues to act disrespectfully.",
           steps: [
-            { front: "Conditional Commitment — She demands you book the luxury trip despite her rude behavior.", back: "\"I invest in shared luxury when our daily foundation is built on mutual respect.\"" },
-            { front: "Removing Primary Anchors — She shouts that you are stingy and slams the bedroom door.", back: "(Maintain calm posture, step away cleanly, and focus on your morning routine) \"I'm focusing on my morning tasks.\"" },
-            { front: "Clean Disengagement on Refusal — That night, she turns down your physical approach in bed.", back: "\"No problem, rest well.\" (Maintain unbothered composure and sleep peacefully)." },
+            { front: "Conditional Commitment — She demands you book the luxury trip despite her rude behavior.", back: "\"I invest in shared luxury when our daily foundation is built on mutual respect.\"", guideFront: "Name the standard you stay for when...", guideBack: "Your standard, stated plainly" },
+            { front: "Removing Primary Anchors — She shouts that you are stingy and slams the bedroom door.", back: "(Maintain calm posture, step away cleanly, and focus on your morning routine) \"I'm focusing on my morning tasks.\"", guideFront: "Take your presence away when...", guideBack: "A calm step away, said or done" },
+            { front: "Clean Disengagement on Refusal — That night, she turns down your physical approach in bed.", back: "\"No problem, rest well.\" (Maintain unbothered composure and sleep peacefully).", guideFront: "Accept her no warmly when...", guideBack: "A warm okay, and on with your night" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She tries to turn physical intimacy into a transactional reward for home chores.",
           steps: [
-            { front: "Conditional Commitment — She tells you that doing chores earns you physical affection.", back: "\"Touch is an expression of mutual desire, not a chore reward. I don't trade.\"" },
-            { front: "Removing Primary Anchors — She gets angry and says she won't talk to you for the night.", back: "\"I leave you to your space. I am heading to the gym.\"" },
-            { front: "Clean Disengagement on Refusal — The next evening, she declines your physical approach.", back: "\"Fair enough, Love.\" (Give her a warm smile and return to your reading)." },
+            { front: "Conditional Commitment — She tells you that doing chores earns you physical affection.", back: "\"Touch is an expression of mutual desire, not a chore reward. I don't trade.\"", guideFront: "Name the standard you stay for when...", guideBack: "Your standard, stated plainly" },
+            { front: "Removing Primary Anchors — She gets angry and says she won't talk to you for the night.", back: "\"I leave you to your space. I am heading to the gym.\"", guideFront: "Take your presence away when...", guideBack: "A calm step away, said or done" },
+            { front: "Clean Disengagement on Refusal — The next evening, she declines your physical approach.", back: "\"Fair enough, Love.\" (Give her a warm smile and return to your reading).", guideFront: "Accept her no warmly when...", guideBack: "A warm okay, and on with your night" },
           ]
         },
       ]
@@ -12986,7 +12986,7 @@ const multiStepCollections = {
   praxfield4: [
     {
       name: "The PAC Alignment Chain",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "**Translating Emotional Reports** → **PAC Ego-State Shift** → **Power-Talk Calibration**.\n\nThis sequence trains you to decode emotional hyperbole, shift into a grounded Adult ego-state, and enforce power-talk reality.\n1. **Translating Emotional Reports** — decode emotional hyperbole without getting defensive\n2. **PAC Ego-State Shift** — pivot out of child/parent triggers into grounded Adult posture\n3. **Power-Talk Calibration** — ground the conversation in concrete outcomes and real choices\n\nWhy just this order: decode the emotional noise first, anchor in Adult posture second, and enforce practical reality third.\n\nWhat people do instead: they take dramatic words literally, regress into child defenses, and debate posture-talk moralizing.\n\nMindset: translate the noise, stay the Adult, enforce the facts.",
       inputs: [
@@ -12994,34 +12994,34 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "She shouts that you ruin her life and care more about work than her existence.",
           steps: [
-            { front: "Translating Emotional Reports — She screams that you are a selfish monster who neglects her.", back: "\"You're feeling exhausted and low on quality time tonight. I hear your frustration.\"" },
-            { front: "PAC Ego-State Shift — She demands you apologize like a naughty child for working late.", back: "\"I communicate as an Adult. I finished my work schedule and I am home now.\"" },
-            { front: "Power-Talk Calibration — She tries to start a posture-talk debate about work ethics.", back: "\"Work hours fund our family budget. Let's focus on our evening routine.\"" },
+            { front: "Translating Emotional Reports — She screams that you are a selfish monster who neglects her.", back: "\"You're feeling exhausted and low on quality time tonight. I hear your frustration.\"", guideFront: "Say the feeling behind it when...", guideBack: "Her feeling, named back to her" },
+            { front: "PAC Ego-State Shift — She demands you apologize like a naughty child for working late.", back: "\"I communicate as an Adult. I finished my work schedule and I am home now.\"", guideFront: "Answer as a calm adult when...", guideBack: "A level, adult-to-adult line" },
+            { front: "Power-Talk Calibration — She tries to start a posture-talk debate about work ethics.", back: "\"Work hours fund our family budget. Let's focus on our evening routine.\"", guideFront: "Steer to concrete outcomes when...", guideBack: "A turn to the practical facts" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She uses a scolding parental tone to criticize your financial choices.",
           steps: [
-            { front: "Translating Emotional Reports — She claims you are financially irresponsible and childish.", back: "\"You're feeling anxious about our savings target. I hear your concern.\"" },
-            { front: "PAC Ego-State Shift — She orders you to give up your project funds immediately.", back: "\"I make financial choices as a mature Adult. I don't respond to lectures.\"" },
-            { front: "Power-Talk Calibration — She tries to virtue-signal about how her family manages money.", back: "\"We manage our capital by real balance sheets, not external family opinions.\"" },
+            { front: "Translating Emotional Reports — She claims you are financially irresponsible and childish.", back: "\"You're feeling anxious about our savings target. I hear your concern.\"", guideFront: "Say the feeling behind it when...", guideBack: "Her feeling, named back to her" },
+            { front: "PAC Ego-State Shift — She orders you to give up your project funds immediately.", back: "\"I make financial choices as a mature Adult. I don't respond to lectures.\"", guideFront: "Answer as a calm adult when...", guideBack: "A level, adult-to-adult line" },
+            { front: "Power-Talk Calibration — She tries to virtue-signal about how her family manages money.", back: "\"We manage our capital by real balance sheets, not external family opinions.\"", guideFront: "Steer to concrete outcomes when...", guideBack: "A turn to the practical facts" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She attempts to turn a simple decision into a moral debate about who is more caring.",
           steps: [
-            { front: "Translating Emotional Reports — She claims your decision proves you don't care about people.", back: "\"You're feeling passionate about this topic right now.\"" },
-            { front: "PAC Ego-State Shift — She demands you admit your moral inferiority in front of guests.", back: "\"I stand by my decision as an Adult. I don't engage in moral trials.\"" },
-            { front: "Power-Talk Calibration — She tries to keep the posture-talk debate going at dinner.", back: "\"Real-world results matter more than speeches. Let's enjoy our dinner.\"" },
+            { front: "Translating Emotional Reports — She claims your decision proves you don't care about people.", back: "\"You're feeling passionate about this topic right now.\"", guideFront: "Say the feeling behind it when...", guideBack: "Her feeling, named back to her" },
+            { front: "PAC Ego-State Shift — She demands you admit your moral inferiority in front of guests.", back: "\"I stand by my decision as an Adult. I don't engage in moral trials.\"", guideFront: "Answer as a calm adult when...", guideBack: "A level, adult-to-adult line" },
+            { front: "Power-Talk Calibration — She tries to keep the posture-talk debate going at dinner.", back: "\"Real-world results matter more than speeches. Let's enjoy our dinner.\"", guideFront: "Steer to concrete outcomes when...", guideBack: "A turn to the practical facts" },
           ]
         },
       ]
     },
     {
       name: "The Power-Talk Shift",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "**Translating Emotional Reports** → **Power-Talk Calibration** → **Action-Based Affirmation**.\n\nThis sequence trains you to translate emotional speeches, ground the issue in power-talk facts, and affirm concrete compliance.\n1. **Translating Emotional Reports** — hear her emotional state without getting hooked on literal claims\n2. **Power-Talk Calibration** — redirect the conversation to practical outcomes and real choices\n3. **Action-Based Affirmation** — accept her concrete compliance without policing her thoughts\n\nWhy just this order: decode emotional hyperbole first, set practical facts second, and accept compliance third.\n\nWhat people do instead: they argue over words, debate fake moral stakes, and demand total mind control.\n\nMindset: decode emotion, set practical facts, accept action.",
       inputs: [
@@ -13029,34 +13029,34 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "She challenges your new business venture using posture-talk moralizing and emotional drama.",
           steps: [
-            { front: "Translating Emotional Reports — She claims your business goals will destroy family peace forever.", back: "\"You're feeling anxious about the schedule changes ahead. I hear your fear.\"" },
-            { front: "Power-Talk Calibration — She tries to debate whether ambition is morally superior to comfort.", back: "\"Ambition builds our asset base and revenue. The business plan is active.\"" },
-            { front: "Action-Based Affirmation — She grumbles while signing the incorporation papers.", back: "\"You signed the documents. Execution is underway, that's what matters.\"" },
+            { front: "Translating Emotional Reports — She claims your business goals will destroy family peace forever.", back: "\"You're feeling anxious about the schedule changes ahead. I hear your fear.\"", guideFront: "Say the feeling behind it when...", guideBack: "Her feeling, named back to her" },
+            { front: "Power-Talk Calibration — She tries to debate whether ambition is morally superior to comfort.", back: "\"Ambition builds our asset base and revenue. The business plan is active.\"", guideFront: "Steer to concrete outcomes when...", guideBack: "A turn to the practical facts" },
+            { front: "Action-Based Affirmation — She grumbles while signing the incorporation papers.", back: "\"You signed the documents. Execution is underway, that's what matters.\"", guideFront: "Credit what she actually did when...", guideBack: "Credit for what was done" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She tries to moralize against your daily health and workout routine.",
           steps: [
-            { front: "Translating Emotional Reports — She screams that your gym time proves you hate family life.", back: "\"You're feeling low on attention today. I hear your emotional report.\"" },
-            { front: "Power-Talk Calibration — She tries to argue that staying home is morally better than training.", back: "\"Training maintains my physical capability and health. My workout schedule stands.\"" },
-            { front: "Action-Based Affirmation — She cooks your clean protein meal while holding a quiet face.", back: "\"The meal is prepared cleanly. I focus on actions, not private grumbles.\"" },
+            { front: "Translating Emotional Reports — She screams that your gym time proves you hate family life.", back: "\"You're feeling low on attention today. I hear your emotional report.\"", guideFront: "Say the feeling behind it when...", guideBack: "Her feeling, named back to her" },
+            { front: "Power-Talk Calibration — She tries to argue that staying home is morally better than training.", back: "\"Training maintains my physical capability and health. My workout schedule stands.\"", guideFront: "Steer to concrete outcomes when...", guideBack: "A turn to the practical facts" },
+            { front: "Action-Based Affirmation — She cooks your clean protein meal while holding a quiet face.", back: "\"The meal is prepared cleanly. I focus on actions, not private grumbles.\"", guideFront: "Credit what she actually did when...", guideBack: "Credit for what was done" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She accuses you of having bad intentions regarding a family property decision.",
           steps: [
-            { front: "Translating Emotional Reports — She claims 'In your heart you just want to control everything!'", back: "\"You're feeling insecure about the property move. I understand your stress.\"" },
-            { front: "Power-Talk Calibration — She tries to start a debate about your private motives.", back: "\"Property moves are evaluated by financial metrics, not mind-reading debates.\"" },
-            { front: "Action-Based Affirmation — She packs her belongings for the move while sighing occasionally.", back: "\"Packing is moving forward on schedule. I judge by concrete progress.\"" },
+            { front: "Translating Emotional Reports — She claims 'In your heart you just want to control everything!'", back: "\"You're feeling insecure about the property move. I understand your stress.\"", guideFront: "Say the feeling behind it when...", guideBack: "Her feeling, named back to her" },
+            { front: "Power-Talk Calibration — She tries to start a debate about your private motives.", back: "\"Property moves are evaluated by financial metrics, not mind-reading debates.\"", guideFront: "Steer to concrete outcomes when...", guideBack: "A turn to the practical facts" },
+            { front: "Action-Based Affirmation — She packs her belongings for the move while sighing occasionally.", back: "\"Packing is moving forward on schedule. I judge by concrete progress.\"", guideFront: "Credit what she actually did when...", guideBack: "Credit for what was done" },
           ]
         },
       ]
     },
     {
       name: "The Subtext Translation Chain",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "**Translating Emotional Reports** → **PAC Ego-State Shift** → **Action-Based Affirmation**.\n\nThis sequence trains you to translate emotional subtext, hold Adult posture, and affirm concrete compliance cleanly.\n1. **Translating Emotional Reports** — decode emotional subtext into transient emotional state reports\n2. **PAC Ego-State Shift** — maintain grounded Adult state against parent or child emotional triggers\n3. **Action-Based Affirmation** — accept concrete compliance without needing mind-reading approval\n\nWhy just this order: decode subtext first, maintain Adult stance second, and affirm action third.\n\nWhat people do instead: they react to subtext literally, regress into child defenses, and demand mind control.\n\nMindset: decode subtext, hold Adult ground, affirm results.",
       inputs: [
@@ -13064,27 +13064,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "She comes home from work throwing a dramatic emotional fit about her manager.",
           steps: [
-            { front: "Translating Emotional Reports — She shouts that work is hell and everyone is evil.", back: "\"You're feeling completely exhausted and overwhelmed by work today.\"" },
-            { front: "PAC Ego-State Shift — She expects you to take a preaching parent role and solve her drama.", back: "\"I listen as an Adult. Let me know if you want to brainstorm solutions.\"" },
-            { front: "Action-Based Affirmation — She prepares her work bag for tomorrow despite her complaining.", back: "\"Your bag is ready for tomorrow. You handle your work duty cleanly.\"" },
+            { front: "Translating Emotional Reports — She shouts that work is hell and everyone is evil.", back: "\"You're feeling completely exhausted and overwhelmed by work today.\"", guideFront: "Say the feeling behind it when...", guideBack: "Her feeling, named back to her" },
+            { front: "PAC Ego-State Shift — She expects you to take a preaching parent role and solve her drama.", back: "\"I listen as an Adult. Let me know if you want to brainstorm solutions.\"", guideFront: "Answer as a calm adult when...", guideBack: "A level, adult-to-adult line" },
+            { front: "Action-Based Affirmation — She prepares her work bag for tomorrow despite her complaining.", back: "\"Your bag is ready for tomorrow. You handle your work duty cleanly.\"", guideFront: "Credit what she actually did when...", guideBack: "Credit for what was done" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She tests your leadership by making dramatic claims about your relationship quality.",
           steps: [
-            { front: "Translating Emotional Reports — She claims 'We have nothing in common and never will!'", back: "\"You're feeling disconnected right now. I hear your emotional state.\"" },
-            { front: "PAC Ego-State Shift — She tries to provoke a childish, whining argument from you.", back: "\"I speak as a grounded Adult. Our foundation is solid and clear.\"" },
-            { front: "Action-Based Affirmation — She holds your hand warmly during the evening walk despite her words.", back: "\"Hand holding is warm. I focus on touch and presence, not dramatic words.\"" },
+            { front: "Translating Emotional Reports — She claims 'We have nothing in common and never will!'", back: "\"You're feeling disconnected right now. I hear your emotional state.\"", guideFront: "Say the feeling behind it when...", guideBack: "Her feeling, named back to her" },
+            { front: "PAC Ego-State Shift — She tries to provoke a childish, whining argument from you.", back: "\"I speak as a grounded Adult. Our foundation is solid and clear.\"", guideFront: "Answer as a calm adult when...", guideBack: "A level, adult-to-adult line" },
+            { front: "Action-Based Affirmation — She holds your hand warmly during the evening walk despite her words.", back: "\"Hand holding is warm. I focus on touch and presence, not dramatic words.\"", guideFront: "Credit what she actually did when...", guideBack: "Credit for what was done" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She accuses you of being controlling because you set a firm boundary on social events.",
           steps: [
-            { front: "Translating Emotional Reports — She claims 'You want to lock me in a cage and control my mind!'", back: "\"You're angry that I set a social event limit. I hear your anger.\"" },
-            { front: "PAC Ego-State Shift — She orders you to apologize like a naughty boy for setting limits.", back: "\"I set limits as an Adult. I don't offer childlike apologies for boundaries.\"" },
-            { front: "Action-Based Affirmation — She adjusts her calendar to match the new limit while grumbling.", back: "\"The calendar is updated cleanly. Concrete compliance is what counts.\"" },
+            { front: "Translating Emotional Reports — She claims 'You want to lock me in a cage and control my mind!'", back: "\"You're angry that I set a social event limit. I hear your anger.\"", guideFront: "Say the feeling behind it when...", guideBack: "Her feeling, named back to her" },
+            { front: "PAC Ego-State Shift — She orders you to apologize like a naughty boy for setting limits.", back: "\"I set limits as an Adult. I don't offer childlike apologies for boundaries.\"", guideFront: "Answer as a calm adult when...", guideBack: "A level, adult-to-adult line" },
+            { front: "Action-Based Affirmation — She adjusts her calendar to match the new limit while grumbling.", back: "\"The calendar is updated cleanly. Concrete compliance is what counts.\"", guideFront: "Credit what she actually did when...", guideBack: "Credit for what was done" },
           ]
         },
       ]
