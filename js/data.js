@@ -10914,6 +10914,270 @@ const collections = {
       ]
     },
   ],
+  praxfield1: [
+    {
+      name: "Post-Tense Reporting",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Reporting concrete actions you have already executed rather than seeking validation or forgiveness through future-tense resolutions.\n\nThis strategy replaces Catholic confessions and future promises with quiet past-tense statements of fact.\n• **Post-Tense Reporting** — state the completed action cleanly without justification or seeking approval\n\nMindset: actions speak after execution; promises sell cheap approval.",
+      inputs: [
+        { q: "You completed the garage cleanup and she asks what you did all morning.", a: "\"I cleaned and organized the garage.\"", bundle: 'free' },
+        { q: "She asks if you are ever going to schedule your health checkup.", a: "\"I booked the health checkup for Tuesday at ten.\"", bundle: 'free' },
+        { q: "She asks about the status of the home budget review.", a: "\"I updated the budget sheet and adjusted our savings target.\"", bundle: 'free' },
+        { q: "She asks why you were in your office for two hours after dinner.", a: "\"I finished the tax filings and sent them to the accountant.\"", bundle: 'free' },
+        { q: "She asks if you remembered to service the car.", a: "\"I dropped the car at the shop and picked up the loaner.\"", bundle: 'free' },
+        { q: "She asks when you plan on fixing the leaking garden hose.", a: "\"I replaced the hose washer and tested the line.\"", bundle: 'pro' },
+        { q: "She asks if you're ever going to look for a better workout program.", a: "\"I enrolled in a new lifting program starting Monday.\"", bundle: 'pro' },
+        { q: "She asks whether you called the electrician about the kitchen light.", a: "\"I spoke with the electrician and scheduled him for Thursday.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Selective Agency",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Claiming direct responsibility only for your own actions and standards while rejecting indiscriminate blame for external factors or her moods.\n\nThis strategy draws a hard boundary between what is under your direct control and what belongs to her or the environment.\n• **Selective Agency** — own your choices cleanly while refusing ownership of her emotional state\n\nMindset: I am responsible for my actions, not for her emotional weather.",
+      inputs: [
+        { q: "She blames you for her bad mood because the traffic on your dinner route was heavy.", a: "\"I control my driving; I don't control city traffic.\"", bundle: 'free' },
+        { q: "She claims you ruined her weekend because the hotel you both picked was noisy.", a: "\"I handle my response to the noise; the hotel environment is outside my control.\"", bundle: 'free' },
+        { q: "She snaps that it's your fault she forgot her umbrella in your car.", a: "\"I'm responsible for my gear; your umbrella is your responsibility.\"", bundle: 'free' },
+        { q: "She blames your career hours for her feeling bored on a Tuesday afternoon.", a: "\"I manage my work commitments; your free time is yours to direct.\"", bundle: 'free' },
+        { q: "She accuses you of making her feel anxious by being quiet.", a: "\"I am responsible for my composure; your anxiety is your internal state.\"", bundle: 'free' },
+        { q: "She claims your diet choices are making her feel guilty about her own eating habits.", a: "\"I choose my nutrition; your meal choices belong to you.\"", bundle: 'pro' },
+        { q: "She blames you for her missing a doctor's appointment because you didn't remind her.", a: "\"I manage my schedule; your appointments are your responsibility.\"", bundle: 'pro' },
+        { q: "She says your refusal to argue proves you don't care about her feelings.", a: "\"I am responsible for my calm presence; I won't engage in screaming.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Killing Covert Improvement",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Executing self-improvement, fitness, and career goals for your own internal standards while stripping away covert demands for her approval.\n\nThis strategy destroys the dancing-monkey trap where a man lifts or works hard expecting a reward of intimacy or praise.\n• **Killing Covert Improvement** — state your self-directed goal clearly without trading it for validation\n\nMindset: I improve my life for my standards, not to buy her romantic approval.",
+      inputs: [
+        { q: "She asks why you are lifting heavy weights four mornings a week now.", a: "\"I lift weights to build my strength and physical capability.\"", bundle: 'free' },
+        { q: "She asks if you're dressing better just to impress women at your workplace.", a: "\"I wear sharp clothes because I respect my own presentation.\"", bundle: 'free' },
+        { q: "She asks why you enrolled in an evening business course.", a: "\"I am taking this course to expand my professional skills.\"", bundle: 'free' },
+        { q: "She asks if you're eating clean protein just to make her look bad.", a: "\"I eat clean food to maintain my energy and focus.\"", bundle: 'free' },
+        { q: "She asks why you bought a new set of books on leadership.", a: "\"I read these books to sharpen my thinking and management.\"", bundle: 'free' },
+        { q: "She asks if your new sleep routine means you are ignoring her evenings.", a: "\"I prioritize eight hours of sleep to perform at my best daily.\"", bundle: 'pro' },
+        { q: "She asks why you are setting strict boundaries on your weekend screen time.", a: "\"I limit screen time to stay present and focused on my priorities.\"", bundle: 'pro' },
+        { q: "She asks if your daily run means you think she is out of shape.", a: "\"I run every morning to keep my cardiovascular endurance sharp.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Action Over Identity",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Replacing identity-based self-flagellation and dramatic labels with objective statements of concrete corrective action.\n\nThis strategy stops the Nice Guy habit of declaring \"I am a terrible husband\" and replaces it with immediate, quiet execution.\n• **Action Over Identity** — drop dramatic identity labels and state the exact corrective step\n\nMindset: identity labels are emotional drama; corrective action is real leadership.",
+      inputs: [
+        { q: "You forgot to pick up dry cleaning and she asks if you even care about the family.", a: "\"I missed the dry cleaning pickup. I will pick it up tomorrow at eight.\"", bundle: 'free' },
+        { q: "You arrived fifteen minutes late for dinner and she calls you completely unreliable.", a: "\"I arrived fifteen minutes late. I am stepping in now to set the table.\"", bundle: 'free' },
+        { q: "You miscalculated a bill payment and she asks why you are so incompetent with money.", a: "\"I miscalculated the bill. I paid the balance and adjusted the register.\"", bundle: 'free' },
+        { q: "You dropped a dish in the kitchen and she sighs that you are always clumsy.", a: "\"I dropped the plate. I am cleaning up the glass now.\"", bundle: 'free' },
+        { q: "You forgot to water the porch plants and she claims you neglect everything.", a: "\"I missed watering the plants. I am watering them now.\"", bundle: 'free' },
+        { q: "You missed her phone call during a meeting and she accuses you of ignoring her existence.", a: "\"I was in a meeting and missed your call. I am calling you now.\"", bundle: 'pro' },
+        { q: "You left your jacket on the couch and she claims you treat the house like a hotel.", a: "\"I left my jacket out. I am hanging it in the closet now.\"", bundle: 'pro' },
+        { q: "You bought the wrong brand of coffee and she sighs that you never pay attention.", a: "\"I bought the wrong roast. I will exchange it tomorrow morning.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxfield2: [
+    {
+      name: "Refusing the Confidant Role",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Refusing to act as her emotional therapist, gossip outlet, or platonic sounding board while intimacy and respect are absent.\n\nThis strategy establishes that you are her romantic partner and leader, not a passive girlfriends-substitute or emotional dumping ground.\n• **Refusing the Confidant Role** — decline gossip and emotional dumping cleanly while directing energy toward authentic connection\n\nMindset: I am her romantic partner, not her platonic therapist.",
+      inputs: [
+        { q: "She tries to spend two hours dumping office gossip and venting about her female coworkers.", a: "\"I'm not the outlet for workplace gossip, Love. Let's talk about our plans or focus on our evening.\"", bundle: 'free' },
+        { q: "She starts complaining at length about her ex-boyfriend's social media posts.", a: "\"I don't discuss your exes. I'm focusing on us.\"", bundle: 'free' },
+        { q: "She treats you like a girlfriends-substitute, asking for detailed drama updates about her friends.", a: "\"That sounds like a conversation for your girlfriends. Let me know when you're ready for us.\"", bundle: 'free' },
+        { q: "She attempts to use you as a sounding board for endless complaints about her family's choices.", a: "\"I hear you're annoyed, but I won't spend our evening dissecting their choices.\"", bundle: 'free' },
+        { q: "She asks you to analyze her friend's relationship argument for an hour.", a: "\"Their relationship drama isn't our concern. Let's keep our focus home.\"", bundle: 'free' },
+        { q: "She starts venting about minor neighborhood gossip while you are trying to relax.", a: "\"I'm keeping my evening peaceful. Let's leave neighborhood gossip aside.\"", bundle: 'pro' },
+        { q: "She expects you to listen to a detailed critique of her sister's parenting style.", a: "\"I won't join in critiquing your sister. Let's talk about something constructive.\"", bundle: 'pro' },
+        { q: "She tries to unload a long list of grievances about her mutual friends during dinner.", a: "\"I prefer enjoying a quiet dinner with you rather than processing external drama.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Daily Reset",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Clearing the emotional slate every morning without holding multi-day grudges, sulking, or storing resentment.\n\nThis strategy maintains an unswayable, fresh baseline every day, refusing to drag yesterday's emotional fights into today's frame.\n• **The Daily Reset** — start every day with a clean emotional slate while holding firm standards\n\nMindset: yesterday's storm is dead; today I start fresh and grounded.",
+      inputs: [
+        { q: "Yesterday ended with an emotional debate, and she expects you to be cold and silent this morning.", a: "\"Good morning, Love. Coffee is fresh and the day is open.\"", bundle: 'free' },
+        { q: "She tries to bring up an argument from two days ago during breakfast.", a: "\"That argument was handled two days ago. Today is a fresh slate.\"", bundle: 'free' },
+        { q: "You feel a lingering urge to sulk over last night's disagreement.", a: "(Good morning kiss) \"Morning. I'm heading out for my run, see you at eight.\"", bundle: 'free' },
+        { q: "She asks why you aren't still mad at her after yesterday's emotional outburst.", a: "\"I don't carry yesterday's friction into today. The board is clear.\"", bundle: 'free' },
+        { q: "She tests whether you are carrying a bitter grudge over a weekend disagreement.", a: "\"I reset every morning. I'm focused on executing today's priorities.\"", bundle: 'free' },
+        { q: "She brings up last week's scheduling mistake to justify her current bad mood.", a: "\"Last week is closed. We deal with today on its own terms.\"", bundle: 'pro' },
+        { q: "You feel tempted to give her the silent treatment because she was difficult yesterday.", a: "\"I don't sulk or store grudges. Good morning.\"", bundle: 'pro' },
+        { q: "She expects a tense atmosphere at breakfast after a tough conversation the night before.", a: "\"Morning. Let's make today productive and clean.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Verbal Disengagement",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Disengaging cleanly and quietly when she attempts to drag you into circular, emotional arguments.\n\nThis strategy enforces the principle that verbal intercourse is optional, cutting off circular shouting matches before they destroy frame.\n• **Verbal Disengagement** — state your exit cleanly and step away from circular argument loops\n\nMindset: verbal intercourse is optional; I do not debate emotional noise.",
+      inputs: [
+        { q: "She tries to bait you into a circular argument about household rules for the third time.", a: "\"We're looping in circles. I'm stepping out for a walk until things cool down.\"", bundle: 'free' },
+        { q: "She raises her voice and demands you argue back with her in the kitchen.", a: "\"I won't engage in screaming matches. We can talk when the tone is calm.\"", bundle: 'free' },
+        { q: "She attempts to re-open a settled debate while you are driving.", a: "\"This topic is closed for tonight. I'm focusing on the road.\"", bundle: 'free' },
+        { q: "She follows you into your office demanding a shouting debate over finances.", a: "\"I am disengaging from this debate. I'll be in my shop.\"", bundle: 'free' },
+        { q: "She uses sarcastic baiting to get a defensive rise out of you during dinner.", a: "\"I don't respond to sarcastic baiting. I'm enjoying my meal.\"", bundle: 'free' },
+        { q: "She keeps repeating the same accusation louder and louder in the hallway.", a: "\"Shouting louder doesn't change my answer. I'm stepping away.\"", bundle: 'pro' },
+        { q: "She tries to force a late-night argument at midnight when you are trying to sleep.", a: "\"I don't debate at midnight. Goodnight.\"", bundle: 'pro' },
+        { q: "She attempts to turn a simple decision into a two-hour emotional marathon.", a: "\"I've stated my choice. The discussion is finished.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Dispassionate Distance",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Maintaining calm emotional detachment so her tears, anger, or guilt trips have zero power to sway your decisions.\n\nThis strategy establishes a grounded, unswayable presence that absorbs her emotional storms without getting hooked or reactive.\n• **Dispassionate Distance** — maintain calm internal composure while remaining physically present and unswayable\n\nMindset: her storm is emotional weather; my composure is unshakeable.",
+      inputs: [
+        { q: "She throws a dramatic crying fit because you set a firm limit on weekend spending.", a: "(Maintain calm, steady posture) \"I hear your frustration, but the budget limit stays.\"", bundle: 'free' },
+        { q: "She attempts to guilt-trip you by claiming your boundaries make her feel unloved.", a: "\"My boundaries are clear and reasonable. My stance remains firm.\"", bundle: 'free' },
+        { q: "She glares at you angrily, waiting for you to panic and apologize.", a: "(Calm eye contact and easy breath) \"I'm right here, and I'm listening calmly.\"", bundle: 'free' },
+        { q: "She uses extreme dramatic statements like 'You ruin everything' during a disagreement.", a: "\"I don't absorb dramatic exaggeration. We stay with the facts.\"", bundle: 'free' },
+        { q: "She tries to provoke an emotional reaction by threatening to sulk all weekend.", a: "\"You can process your feelings how you choose. My plan moves forward.\"", bundle: 'free' },
+        { q: "She uses tears to pressure you into backing down on a household decision.", a: "\"I see you're upset, but tears don't alter my decision.\"", bundle: 'pro' },
+        { q: "She acts cold and distant to test if her mood will cause you to break frame.", a: "(Warm, unswayable smile) \"I'm ready when you want to connect warmly.\"", bundle: 'pro' },
+        { q: "She tries to make her emotional panic your emergency during a busy workday.", a: "\"I hear your stress, but this is manageable. We will look at it tonight.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxfield3: [
+    {
+      name: "Removing Primary Anchors",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Removing Attention, Affection, or Commitment cleanly when disrespect or boundary breaches occur, rather than nagging or arguing.\n\nThis strategy uses your primary currencies—Attention, Affection, and Commitment (AAA)—as clean boundaries rather than passive rewards.\n• **Removing Primary Anchors** — withdraw presence, touch, or investment cleanly when disrespect occurs\n\nMindset: my attention and commitment are valuable currencies, not unearned entitlements.",
+      inputs: [
+        { q: "She snaps disrespectfully at you while you are giving her a shoulder massage.", a: "(Stop massaging immediately, stand up, and return to your desk) \"I'm heading back to my work.\"", bundle: 'free' },
+        { q: "She is scrolling on her phone and ignores you completely while you are speaking to her.", a: "\"I see you're occupied. I'm heading out to the gym.\"", bundle: 'free' },
+        { q: "She uses a sarcastic, mocking tone during a conversation about weekend plans.", a: "\"I don't stay in conversations with sarcasm. I'm stepping out.\"", bundle: 'free' },
+        { q: "She acts hostile and demanding while expecting you to drive her to an appointment.", a: "\"I drive people who treat me with basic respect. You'll need to call a cab.\"", bundle: 'free' },
+        { q: "She insults your goals while you are spending quality time together on the porch.", a: "\"I'm ending this conversation now. I'll see you tomorrow morning.\"", bundle: 'free' },
+        { q: "She demands your undivided attention while continuing to act cold and disrespectful.", a: "\"My attention is reserved for respectful connection. I'm focusing on my work.\"", bundle: 'pro' },
+        { q: "She expects daily romantic affection while maintaining a cold, roommate demeanor.", a: "\"I give romantic affection where desire and respect are mutual.\"", bundle: 'pro' },
+        { q: "She threatens to end the relationship during a minor argument over household chores.", a: "\"If you want to end the commitment, that is your choice. I won't be coerced.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Unapologetic Initiation",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Initiating physical and sexual intimacy directly from authentic masculine desire without asking permission, seeking reassurance, or apologizing.\n\nThis strategy eliminates whiny, permission-seeking initiation tactics and replaces them with grounded, confident touch.\n• **Unapologetic Initiation** — express sexual intent directly through confident posture and clear touch\n\nMindset: my sexual desire is natural, grounded, and requires no apology.",
+      inputs: [
+        { q: "You are lying in bed together and want to initiate physical intimacy cleanly.", a: "(Pull her close by her waist, look into her eyes, and kiss her deeply) \"I want you tonight.\"", bundle: 'free' },
+        { q: "She is standing in the kitchen and you feel a strong surge of physical desire.", a: "(Step up behind her, wrap your arms around her waist, and kiss her neck) \"Come here, Love.\"", bundle: 'free' },
+        { q: "You want to move from sitting on the couch to romantic intimacy without asking 'Is it okay?'.", a: "(Take her hand, pull her toward the bedroom warmly, and smile) \"Let's go to bed.\"", bundle: 'free' },
+        { q: "You are walking past her in the hallway and want to express grounded physical interest.", a: "(Hold her firmly against you for a long moment, kiss her, then step back) \"I love having you close.\"", bundle: 'free' },
+        { q: "You want to initiate intimacy after date night without giving a tentative speech.", a: "\"Come here, Love. I want you tonight.\"", bundle: 'free' },
+        { q: "You feel hesitant to initiate because you worry she might not be in the perfect mood.", a: "(Breathe into your belly, step forward with confident posture, and touch her warmly) \"Come sit with me, Love.\"", bundle: 'pro' },
+        { q: "You want to express direct sexual intent without offering a transactional foot rub first.", a: "\"I'm taking you to bed now.\"", bundle: 'pro' },
+        { q: "You want to initiate passion without asking tentative questions like 'Are you tired?'.", a: "(Guide her gently by her waist into your space and touch her back) \"You're coming with me.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Clean Disengagement on Refusal",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Disengaging immediately, warmly, and smoothly upon a physical refusal without sulking, arguing, DEERing, or showing emotional butt-hurt.\n\nThis strategy demonstrates unswayable emotional composure when facing a physical decline, preserving frame and desire.\n• **Clean Disengagement on Refusal** — accept a refusal with a warm smile, roll over calmly, or return to your priorities\n\nMindset: a physical refusal is emotional weather; my composure remains unshakeable.",
+      inputs: [
+        { q: "You initiate physical touch in bed and she says 'Not tonight, I'm exhausted.'", a: "\"Got it, rest well, Love.\" (Kiss her cheek warmly, roll over, and go to sleep peacefully).", bundle: 'free' },
+        { q: "You pull her close in the kitchen and she pulls back saying she is busy cooking.", a: "\"All good, Love.\" (Give her an easy smile and return to your book).", bundle: 'free' },
+        { q: "You invite her to the bedroom and she declines, saying she wants to watch TV.", a: "\"No problem.\" (Kiss her forehead, head to your office, and focus on your projects).", bundle: 'free' },
+        { q: "She turns away from your kiss in the hallway, saying she is stressed about work.", a: "\"Understood.\" (Give her a light tap on the shoulder, smile calmly, and move on).", bundle: 'free' },
+        { q: "You initiate on the couch and she says she isn't in the mood tonight.", a: "\"Fair enough.\" (Lean back, relax your posture, and enjoy your evening peacefully).", bundle: 'free' },
+        { q: "She declines physical intimacy and watches to see if you will get angry or sulk.", a: "(Maintain warm, unbothered posture, pat her knee gently, and pick up your reading) \"Rest up, Love.\"", bundle: 'pro' },
+        { q: "She turns down your initiation and starts giving a long DEERing speech explaining why.", a: "\"It's completely fine, Love. Rest up.\" (Cut off the speech warmly and reset).", bundle: 'pro' },
+        { q: "She refuses physical touch and expects a cold war or passive-aggressive silence.", a: "\"All clear.\" (Maintain a warm, relaxed voice and continue your night cleanly).", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Conditional Commitment",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Making love, presence, and relationship commitment conditional on mutual respect, passion, and effort rather than treating commitment as an unearned entitlement.\n\nThis strategy establishes that marriage and long-term commitment are ongoing dynamic choices requiring mutual investment.\n• **Conditional Commitment** — state clearly that commitment and investment require ongoing respect and effort\n\nMindset: commitment is a mutual standard maintained daily, not a permanent entitlement.",
+      inputs: [
+        { q: "She claims marriage means you must stay and endure disrespect regardless of how she acts.", a: "\"My commitment is paired with mutual respect. Respect is non-negotiable.\"", bundle: 'free' },
+        { q: "She acts completely indifferent to intimacy while demanding full financial and emotional investment.", a: "\"A thriving partnership requires mutual effort and passion. I invest where desire is mutual.\"", bundle: 'free' },
+        { q: "She tells you that you are stuck with her no matter how cold she chooses to be.", a: "\"I choose to be here every day based on our shared respect and standard.\"", bundle: 'free' },
+        { q: "She demands that you promise unconditional devotion while she treats you like a roommate.", a: "\"I offer deep devotion to a passionate, respectful partner. That is the agreement.\"", bundle: 'free' },
+        { q: "She claims setting conditions on relationship quality is selfish and unfair.", a: "\"High standards protect the quality of our relationship container.\"", bundle: 'free' },
+        { q: "She tests whether you have the courage to walk away if disrespect becomes permanent.", a: "\"I love our marriage, but I will not remain in a disrespectful dynamic.\"", bundle: 'pro' },
+        { q: "She claims that expecting physical passion in a marriage is unreasonable.", a: "\"Physical passion and mutual desire are core foundations of my marriage standard.\"", bundle: 'pro' },
+        { q: "She expects you to maintain full romantic pursuit while she offers zero effort in return.", a: "\"Romantic effort is a two-way street. I invest where effort is returned.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxfield4: [
+    {
+      name: "Power-Talk Calibration",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Communicating in the language of real-world outcomes, concrete actions, and direct incentives rather than \"game-talk\" or \"posture-talk\" moralizing.\n\nThis strategy strips away pretend moral stakes, virtue signaling, and posture-talk, focusing entirely on pragmatic reality and clear choices.\n• **Power-Talk Calibration** — frame situations through concrete actions, real incentives, and objective outcomes\n\nMindset: power-talk deals in real outcomes; posture-talk deals in pretend moral speeches.",
+      inputs: [
+        { q: "She tries to turn a simple budget choice into a dramatic debate about who is morally superior.", a: "\"I'm looking at our cash reserve figures, not moral rankings. Here are the numbers.\"", bundle: 'free' },
+        { q: "She virtue-signals about how much more caring her family's social habits are than yours.", a: "\"Different families run different routines. I manage our household logistics.\"", bundle: 'free' },
+        { q: "She attempts to debate abstract relationship rules instead of dealing with the concrete schedule.", a: "\"Abstract rules don't clean the kitchen. Let's set our daily schedule.\"", bundle: 'free' },
+        { q: "She accuses you of being unfeeling because you focus on practical solutions during a problem.", a: "\"Practical solutions solve real problems. I focus on what produces results.\"", bundle: 'free' },
+        { q: "She tries to drag you into a posture-talk debate about political opinions at the dinner table.", a: "\"Political debates don't build our home. Let's focus on our weekend plans.\"", bundle: 'free' },
+        { q: "She uses game-talk terminology to dissect your posture and criticize your tone.", a: "\"I don't debate terminology. I care about how we treat each other daily.\"", bundle: 'pro' },
+        { q: "She claims your financial discipline is morally wrong because life should be spontaneous.", a: "\"Financial discipline creates long-term options. The budget stays active.\"", bundle: 'pro' },
+        { q: "She tries to frame a minor scheduling conflict as a battle over your core goodness.", a: "\"This is a ten-minute time overlap, not a test of my character. Let's adjust the clock.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "PAC Ego-State Shift",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Shifting out of Adapted Child or Preaching Parent into Regulated Adult / Navigational Adult during emotional debates.\n\nThis strategy neutralizes parent-child dynamics by refusing to act as a defensive child or a scolding parent, maintaining a calm Adult posture.\n• **PAC Ego-State Shift** — pivot out of emotional child or preaching parent reactions into grounded Adult state\n\nMindset: I communicate as a grounded Adult; I do not play child or parent games.",
+      inputs: [
+        { q: "She uses a scolding, parental tone to criticize how you loaded the dishwasher.", a: "\"I load the dishwasher to get plates clean. If you want a different order, you can handle it.\"", bundle: 'free' },
+        { q: "You feel a sudden impulse to whine and defend yourself like a child caught breaking a rule.", a: "(Breathe into your belly, drop the defensive pitch) \"I made that choice based on our timeline.\"", bundle: 'free' },
+        { q: "She acts like a stubborn, rebellious child when you ask her to review a document.", a: "\"The document needs a review before four PM. Let me know when you're ready to look.\"", bundle: 'free' },
+        { q: "She demands that you apologize in a submissive, repentant voice like a naughty boy.", a: "\"I speak as an Adult. I've stated the facts and corrected the item.\"", bundle: 'free' },
+        { q: "She tries to provoke you into taking a stern, scolding parent tone with her.", a: "\"I don't lecture adults. You know the boundary and the choice is yours.\"", bundle: 'free' },
+        { q: "She uses guilt-inducing parental language like 'I am so disappointed in your behavior.'", a: "\"I make decisions as a mature Adult. Disappointment is your internal state.\"", bundle: 'pro' },
+        { q: "She stomps her foot and pouts like an angry child when a plan changes.", a: "\"I am ready to move when you're ready to converse calmly.\"", bundle: 'pro' },
+        { q: "She expects you to enter a preaching parent debate over her personal habits.", a: "\"I don't manage your personal habits. I manage my own standards.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Translating Emotional Reports",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Hearing her dramatic statements not as factual depositions, but as real-time reports of her current emotional weather.\n\nThis strategy prevents you from taking dramatic hyperbole literally, treating emotional speeches as transient weather rather than objective truth.\n• **Translating Emotional Reports** — translate dramatic words into emotional state reports without getting hooked on literal claims\n\nMindset: her dramatic words are real-time emotion, not factual depositions.",
+      inputs: [
+        { q: "She shouts 'You never take me anywhere and you ruin my life!' on a Tuesday evening.", a: "\"I hear you're feeling overwhelmed and tired tonight. Let's rest.\"", bundle: 'free' },
+        { q: "She claims 'We have literally nothing in common and this marriage is a mistake!' during a fight.", a: "\"You're feeling intense frustration right now. I'm staying calm right here.\"", bundle: 'free' },
+        { q: "She says 'You care more about your stupid gym than you care about my existence!'", a: "\"I hear that you're feeling low on attention tonight. I'm right here with you.\"", bundle: 'free' },
+        { q: "She declares 'Everything in this house is broken and nobody helps me at all!'", a: "\"You're feeling exhausted from the day. Sit down, I've got the kitchen covered.\"", bundle: 'free' },
+        { q: "She claims 'You hate my entire family and wish they didn't exist!' after a short visit.", a: "\"That visit was draining for you. Let's relax and decompress.\"", bundle: 'free' },
+        { q: "She screams 'You are the most selfish man on the planet!' during a boundary setting.", a: "\"You're angry that I set a limit. I hear your anger, but the limit holds.\"", bundle: 'pro' },
+        { q: "She tells you 'You don't love me at all' because you didn't buy a gift on impulse.", a: "\"You're feeling disconnected right now. Come sit with me.\"", bundle: 'pro' },
+        { q: "She claims 'I do 100% of the work in this relationship and you do zero!'", a: "\"You're feeling overwhelmed with tasks today. Let's look at the list calmly.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Action-Based Affirmation",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Evaluating relationship alignment by her concrete actions and compliance (\"act right, think what you want\") rather than trying to police her private thoughts.\n\nThis strategy stops thought-policing and mind-reading, evaluating partnership exclusively through tangible actions and mutual respect.\n• **Action-Based Affirmation** — evaluate partnership through concrete compliance and respectful behavior, ignoring internal noise\n\nMindset: actions demonstrate reality; I do not police private thoughts or demand mind-reading.",
+      inputs: [
+        { q: "She grumbles quietly while helping you pack the car for a trip, but packs everything cleanly.", a: "\"Thanks for packing the trunk so efficiently, Love. We are ready to roll.\"", bundle: 'free' },
+        { q: "You worry whether she is 100% enthusiastic in her mind about your new career move.", a: "\"She agrees to the timeline and supports the move. Her private thoughts belong to her.\"", bundle: 'free' },
+        { q: "She sighs while preparing dinner according to your new diet plan, but cooks it perfectly.", a: "\"The meal is prepared great. I appreciate the clean cooking.\"", bundle: 'free' },
+        { q: "She complains mildly about waking up early for a family flight, but gets up on time.", a: "\"You're up and ready on time. Let's hit the road.\"", bundle: 'free' },
+        { q: "You feel tempted to interrogate her about whether she 'truly secretly loves' your new car.", a: "\"She rides comfortably and respects the vehicle. I don't need mind-reading.\"", bundle: 'free' },
+        { q: "She executes a household agreement cleanly while holding a neutral face.", a: "\"The task is executed cleanly. I focus on actions, not policing facial expressions.\"", bundle: 'pro' },
+        { q: "She follows your leadership on a weekend plan while making a brief sarcastic comment.", a: "\"The plan is moving forward smoothly. I judge the trip by results, not chatter.\"", bundle: 'pro' },
+        { q: "She claims she 'isn't sure how she feels' about a rule, but follows the rule consistently.", a: "\"Compliance is solid. Her internal feelings will settle with time.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -16320,6 +16584,206 @@ const collectionsModeData = {
         { q: "Every holiday ends with an argument on the last day.", a: "\"Our last days away always seem to go wrong. Shall we look at why?\" [Name the Pattern]", bundle: 'pro', guideBack: "A pattern, calmly, outside a fight" },
         { q: "She asks, \"Do you ever regret moving here for me?\"", a: "\"Never. What's making you wonder?\" [Answer the Feeling Behind It]", bundle: 'pro', guideBack: "An answer to what's underneath" },
         { q: "She asks you to organise the weekly food shop.", a: "\"Happy to. Anything you always want in there?\" [Ask What Done Looks Like]", bundle: 'pro', guideBack: "A question about her expectations" },
+      ]
+    },
+  ],
+  praxfield1: [
+    {
+      name: "Post-Tense Execution",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Post-Tense Reporting**, **Selective Agency**, and **Action Over Identity** to eliminate validation-seeking.\n\nThis collection focuses on stopping future promises, emotional confessions, and identity drama when facing everyday household tasks.\n• **Post-Tense Reporting** — state completed facts without promising future actions\n• **Selective Agency** — separate your duties from her emotional reactions\n• **Action Over Identity** — correct mistakes with direct action rather than self-pity\n\nMindset: execution needs no public promises or emotional speeches.",
+      inputs: [
+        { q: "She asks if you're ever going to fix the creaking front door hinge.", a: "\"I oiled the hinge and replaced the top screw this morning.\" [Post-Tense Reporting]", bundle: 'pro' },
+        { q: "She claims your delayed yard work ruined her mood for the afternoon.", a: "\"I control my work timeline; your mood belongs to you.\" [Selective Agency]", bundle: 'pro' },
+        { q: "You left the garage door open overnight and she calls you dangerously careless.", a: "\"I left the door unlatched. I closed it and set a nightly check.\" [Action Over Identity]", bundle: 'pro' },
+        { q: "She asks when you plan on reviewing the monthly insurance statement.", a: "\"I reviewed the statement and confirmed the current premium.\" [Post-Tense Reporting]", bundle: 'pro' },
+        { q: "She snaps that your quiet demeanor during dinner made her feel neglected.", a: "\"I am responsible for my composure; your feelings are your own.\" [Selective Agency]", bundle: 'pro' },
+        { q: "You forgot to buy eggs at the store and she claims you never listen to her.", a: "\"I missed the eggs on the list. I am getting them on my morning run.\" [Action Over Identity]", bundle: 'pro' },
+        { q: "She asks whether you intend to handle the tax documents this week.", a: "\"I organized the receipts and submitted the packet to the CPA.\" [Post-Tense Reporting]", bundle: 'pro' },
+        { q: "She accuses you of ruining the evening by choosing a quiet restaurant.", a: "\"I selected a quiet venue; how you enjoy the evening is up to you.\" [Selective Agency]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Selective Agency in Action",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Selective Agency**, **Killing Covert Improvement**, and **Action Over Identity** when handling personal goals and boundaries.\n\nThis collection targets boundary tests where personal standards, self-improvement, and external blame collide.\n• **Selective Agency** — refuse responsibility for her external emotional reactions\n• **Killing Covert Improvement** — own personal development for your own standards\n• **Action Over Identity** — handle personal mistakes without emotional self-flagellation\n\nMindset: my standards are mine to command; her reactions are hers to process.",
+      inputs: [
+        { q: "She claims your early morning lifting routine is selfish and ruins her sleep.", a: "\"I manage my sleep and movement; my routine is built for my health.\" [Selective Agency]", bundle: 'pro' },
+        { q: "She asks if you are spending two hours in the gym just to get away from her.", a: "\"I lift weights to build my physical capacity and strength.\" [Killing Covert Improvement]", bundle: 'pro' },
+        { q: "You spilled protein powder on the counter and she claims you wreck the kitchen.", a: "\"I spilled the powder. I am wiping down the counter now.\" [Action Over Identity]", bundle: 'pro' },
+        { q: "She blames your career ambition for her lack of personal hobbies.", a: "\"I direct my career goals; your hobbies are yours to cultivate.\" [Selective Agency]", bundle: 'pro' },
+        { q: "She asks if you bought new running shoes to impress people at the park.", a: "\"I bought these shoes to support my foot arch while running.\" [Killing Covert Improvement]", bundle: 'pro' },
+        { q: "You missed your daily hydration goal and she mocks your fitness tracker.", a: "\"I missed my water target today. I am drinking a glass now.\" [Action Over Identity]", bundle: 'pro' },
+        { q: "She claims your insistence on a clean diet makes family dinners impossible.", a: "\"I choose my food intake; family meal options remain open.\" [Selective Agency]", bundle: 'pro' },
+        { q: "She asks if you are reading finance books to prove you are smarter than her.", a: "\"I read finance books to improve my capital management.\" [Killing Covert Improvement]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Deconstructing Beta Habits",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Post-Tense Reporting**, **Killing Covert Improvement**, and **Action Over Identity** across daily challenges.\n\nThis collection builds habit consistency by replacing beta habits—confessions, covert bargains, and self-flagellation—with assertive moves.\n• **Post-Tense Reporting** — report completed actions cleanly\n• **Killing Covert Improvement** — declare self-directed purpose without approval-seeking\n• **Action Over Identity** — execute corrective steps without identity labels\n\nMindset: deconstructing beta habits requires replacing emotional noise with quiet execution.",
+      inputs: [
+        { q: "She asks when you will finally get around to organizing the storage shed.", a: "\"I cleared out the old boxes and organized the tool rack.\" [Post-Tense Reporting]", bundle: 'pro' },
+        { q: "She asks if you are taking supplements just to look like a fitness model.", a: "\"I take these supplements to optimize my health and recovery.\" [Killing Covert Improvement]", bundle: 'pro' },
+        { q: "You burned the toast and she sighs that you can't even handle breakfast.", a: "\"I scorched the bread. I am making a fresh slice now.\" [Action Over Identity]", bundle: 'pro' },
+        { q: "She asks if you are ever going to handle the registration for the truck.", a: "\"I paid the registration fee and installed the new tags.\" [Post-Tense Reporting]", bundle: 'pro' },
+        { q: "She asks why you're waking up at five in the morning on a Saturday.", a: "\"I wake up early to write and review my weekly priorities.\" [Killing Covert Improvement]", bundle: 'pro' },
+        { q: "You broke a coffee mug and she claims you ruin everything in the house.", a: "\"I broke the mug. I swept up the pieces and cleared the floor.\" [Action Over Identity]", bundle: 'pro' },
+        { q: "She asks if you managed to clean out the gutters before the rain started.", a: "\"I cleared the leaves and checked the downspouts.\" [Post-Tense Reporting]", bundle: 'pro' },
+        { q: "She asks if your new haircut means you're trying to look younger.", a: "\"I chose this haircut because I prefer a clean appearance.\" [Killing Covert Improvement]", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxfield2: [
+    {
+      name: "Navigating Emotional Meltdowns",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Verbal Disengagement**, **Dispassionate Distance**, and **The Daily Reset** during active emotional storms.\n\nThis collection focuses on maintaining your composure when confronted with crying fits, shouting matches, or lingering friction.\n• **Verbal Disengagement** — exit circular shouting matches cleanly\n• **Dispassionate Distance** — remain unswayable against guilt trips and tears\n• **The Daily Reset** — clear the slate once the storm has passed\n\nMindset: I do not feed emotional fires; I step back or stand unswayable.",
+      inputs: [
+        { q: "She starts screaming and slamming doors because you refused an unreasonable request.", a: "\"I won't participate in screaming matches. I'm taking a walk.\" [Verbal Disengagement]", bundle: 'pro' },
+        { q: "She breaks into dramatic tears claiming you are cold and unfeeling for setting a limit.", a: "\"I see your distress, but my decision remains grounded.\" [Dispassionate Distance]", bundle: 'pro' },
+        { q: "The morning after a heavy emotional argument, she expects a cold and hostile house.", a: "\"Good morning. The coffee is ready and today is a fresh start.\" [The Daily Reset]", bundle: 'pro' },
+        { q: "She repeats the same emotional accusation for twenty minutes in the living room.", a: "\"We are spinning in circles. I am stepping out to let things settle.\" [Verbal Disengagement]", bundle: 'pro' },
+        { q: "She tries to use a silent sulking routine to make you break your boundary.", a: "\"I'm right here and open to warm conversation when you're ready.\" [Dispassionate Distance]", bundle: 'pro' },
+        { q: "She brings up yesterday's emotional meltdown while you are making breakfast.", a: "\"Yesterday is finished. Let's focus on a clean and productive day.\" [The Daily Reset]", bundle: 'pro' },
+        { q: "She demands that you stay in the room and argue with her while she yells.", a: "\"I don't debate under shouting. We can talk when the tone drops.\" [Verbal Disengagement]", bundle: 'pro' },
+        { q: "She claims your calm posture proves you don't care about the relationship.", a: "\"My composure is my anchor. I stay grounded for both of us.\" [Dispassionate Distance]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Handling Disrespect and Gossip",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Refusing the Confidant Role**, **Verbal Disengagement**, and **Dispassionate Distance** against verbal noise.\n\nThis collection targets scenarios where gossip, dramatic complaints, or disrespectful baiting threaten relationship polarity.\n• **Refusing the Confidant Role** — redirect gossip and venting toward constructive connection\n• **Verbal Disengagement** — end disrespectful debate loops immediately\n• **Dispassionate Distance** — remain unswayable when she uses disrespectful accusations\n\nMindset: I am her romantic partner, not her gossip partner or verbal punching bag.",
+      inputs: [
+        { q: "She tries to unload an hour of office drama and coworker complaints onto you.", a: "\"I'm not the outlet for workplace drama, Love. Let's focus on us tonight.\" [Refusing the Confidant Role]", bundle: 'pro' },
+        { q: "She uses a sarcastic, biting tone to insult your hobby in front of guests.", a: "\"I don't engage with sarcastic digs. We can discuss this later.\" [Verbal Disengagement]", bundle: 'pro' },
+        { q: "She claims you are a terrible partner because you won't listen to her gossip.", a: "\"My refusal to gossip isn't lack of care. I stay focused on our bond.\" [Dispassionate Distance]", bundle: 'pro' },
+        { q: "She starts dissecting her sister's marriage flaws for the third time this week.", a: "\"Her marriage is her territory. Let's leave their drama outside our home.\" [Refusing the Confidant Role]", bundle: 'pro' },
+        { q: "She tries to start a debate about your personal choices using aggressive baiting.", a: "\"This tone isn't constructive. I'm disengaging until we can talk calmly.\" [Verbal Disengagement]", bundle: 'pro' },
+        { q: "She accuses you of being cold because you won't join her in bashing mutual friends.", a: "\"I don't join in badmouthing friends. I keep my speech constructive.\" [Refusing the Confidant Role]", bundle: 'pro' },
+        { q: "She attempts to re-ignite a settled argument by bringing up petty grievances.", a: "\"That topic was resolved. I won't re-open old debates.\" [Verbal Disengagement]", bundle: 'pro' },
+        { q: "She attempts to make you feel guilty for setting a hard limit on gossip.", a: "\"My boundary on gossip stands firm. I'm ready for real connection.\" [Dispassionate Distance]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Maintaining Emotional Distance",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Dispassionate Distance**, **Refusing the Confidant Role**, and **The Daily Reset** for long-term composure.\n\nThis collection builds daily discipline in maintaining high-status emotional detachment and fresh emotional slates.\n• **Dispassionate Distance** — stay centered against long-term emotional manipulation\n• **Refusing the Confidant Role** — decline platonic venting to protect romantic polarity\n• **The Daily Reset** — wipe away daily friction cleanly every morning\n\nMindset: composure and fresh slates build an unshakeable masculine container.",
+      inputs: [
+        { q: "She tries to hold a four-day cold war to punish you for a simple boundary.", a: "\"I don't play cold war games. I'm here when you want to talk warmly.\" [Dispassionate Distance]", bundle: 'pro' },
+        { q: "She attempts to treat you like a therapist, dumping her existential anxieties on you.", a: "\"I love you as your partner, but I am not your therapist. Let me help you find one.\" [Refusing the Confidant Role]", bundle: 'pro' },
+        { q: "She brings up last month's argument during a pleasant weekend drive.", a: "\"Last month is behind us. Let's enjoy today's drive cleanly.\" [The Daily Reset]", bundle: 'pro' },
+        { q: "She uses dramatic tears to try to change your mind on a major career decision.", a: "\"I see your tears, but my career decision is grounded and set.\" [Dispassionate Distance]", bundle: 'pro' },
+        { q: "She attempts to spend dinner complaining about her mother's life choices.", a: "\"Let's leave your mother's choices out of our date night dinner.\" [Refusing the Confidant Role]", bundle: 'pro' },
+        { q: "You wake up feeling annoyed about yesterday's friction and want to sulk.", a: "\"Yesterday is dead. Good morning, Love. Let's make today great.\" [The Daily Reset]", bundle: 'pro' },
+        { q: "She claims your emotional composure means you are slipping away from her.", a: "\"My composure is my anchor. It keeps our relationship steady.\" [Dispassionate Distance]", bundle: 'pro' },
+        { q: "She tries to involve you in a complex drama cycle with her female relatives.", a: "\"Family drama is for you to manage. I stay clear of relative disputes.\" [Refusing the Confidant Role]", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxfield3: [
+    {
+      name: "Re-establishing Polarity",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Removing Primary Anchors**, **Unapologetic Initiation**, and **Conditional Commitment** to restore masculine-feminine polarity.\n\nThis collection focuses on breaking passive roommate dynamics by setting hard limits on disrespect and stepping into active physical pursuit.\n• **Removing Primary Anchors** — withdraw attention cleanly when disrespect occurs\n• **Unapologetic Initiation** — express direct physical desire without permission-seeking\n• **Conditional Commitment** — anchor relationship terms in mutual respect and effort\n\nMindset: polarity requires clear boundaries, unapologetic desire, and high standards.",
+      inputs: [
+        { q: "She snaps at you sarcastically while expecting you to sit and rub her feet for an hour.", a: "(Stop touching her feet immediately, stand up, and walk to your desk) \"I'm focusing on my work.\" [Removing Primary Anchors]", bundle: 'pro' },
+        { q: "You feel a strong surge of attraction while sitting together on the porch at night.", a: "(Pull her close into your lap, hold her waist firmly, and kiss her deeply) \"Come here to me.\" [Unapologetic Initiation]", bundle: 'pro' },
+        { q: "She claims you owe her unconditional romantic pursuit regardless of how she treats you.", a: "\"My pursuit and presence are tied to mutual respect and passion.\" [Conditional Commitment]", bundle: 'pro' },
+        { q: "She is scrolling on her phone with cold indifference while you try to talk about your day.", a: "\"I see you're occupied. I'm going for a run.\" [Removing Primary Anchors]", bundle: 'pro' },
+        { q: "You want to take her to bed after date night without asking tentative permission questions.", a: "\"Come here, Love. I'm taking you to bed.\" [Unapologetic Initiation]", bundle: 'pro' },
+        { q: "She tells you that once married, a man has no right to demand physical intimacy.", a: "\"A thriving marriage requires mutual passion. I stay where passion is alive.\" [Conditional Commitment]", bundle: 'pro' },
+        { q: "She insults your career choices while you are driving together to a party.", a: "\"I don't remain in disrespectful conversations. I am focusing on driving.\" [Removing Primary Anchors]", bundle: 'pro' },
+        { q: "You want to initiate physical touch in the kitchen without making tentative small talk first.", a: "(Step behind her, wrap your arms around her waist, and kiss her neck) \"I want you close.\" [Unapologetic Initiation]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Handling Physical Initiation",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Unapologetic Initiation**, **Clean Disengagement on Refusal**, and **Removing Primary Anchors** during physical encounters.\n\nThis collection targets the exact moments of physical approach, touch, and handling potential refusals with unswayable frame.\n• **Unapologetic Initiation** — touch directly from authentic masculine desire\n• **Clean Disengagement on Refusal** — accept a decline with warm, unbothered composure\n• **Removing Primary Anchors** — withdraw physical touch if she turns it into disrespectful bargaining\n\nMindset: express desire cleanly; accept refusal smoothly; tolerate no disrespectful bargaining.",
+      inputs: [
+        { q: "You are lying together in bed and want to initiate intimacy with grounded confidence.", a: "(Pull her against your chest, look into her eyes, and initiate touch cleanly) \"Come to bed with me.\" [Unapologetic Initiation]", bundle: 'pro' },
+        { q: "You initiate touch in bed and she says 'I'm really tired tonight, Love.'", a: "\"No problem at all, rest well.\" (Kiss her cheek warmly, roll over, and sleep cleanly). [Clean Disengagement on Refusal]", bundle: 'pro' },
+        { q: "She tries to turn your physical initiation into a transactional bribe for household chores.", a: "\"I don't trade chores for touch. I'm stepping into my office.\" [Removing Primary Anchors]", bundle: 'pro' },
+        { q: "You want to pull her close on the living room couch without asking 'Are you in the mood?'.", a: "(Take her hand, pull her close to your side, and kiss her neck) \"Sit with me, Love.\" [Unapologetic Initiation]", bundle: 'pro' },
+        { q: "She turns away from your approach in the kitchen saying she is busy preparing food.", a: "\"Got it, Love.\" (Give her an easy smile, pat her hip gently, and step back). [Clean Disengagement on Refusal]", bundle: 'pro' },
+        { q: "She reacts with rude sarcasm when you touch her arm warmly in the hallway.", a: "\"I touch with warmth; I don't accept rude sarcasm.\" (Withdraw touch and step away). [Removing Primary Anchors]", bundle: 'pro' },
+        { q: "You feel inspired to initiate romance after a great workout together.", a: "\"Come with me to the bedroom, Love.\" [Unapologetic Initiation]", bundle: 'pro' },
+        { q: "You initiate physical touch on date night and she says she wants to just talk tonight.", a: "\"Sounds good.\" (Lean back, enjoy your drink calmly, and keep a relaxed frame). [Clean Disengagement on Refusal]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Navigating Commitment and Boundaries",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Conditional Commitment**, **Removing Primary Anchors**, and **Clean Disengagement on Refusal** for long-term standards.\n\nThis collection builds habit consistency in holding high standards for marriage, presence, and boundaries against entitlement.\n• **Conditional Commitment** — state that commitment requires ongoing mutual effort and respect\n• **Removing Primary Anchors** — remove attention or commitment when boundaries are breached\n• **Clean Disengagement on Refusal** — handle physical boundaries with zero emotional drama\n\nMindset: commitment is a lived standard, not a passive entitlement.",
+      inputs: [
+        { q: "She claims marriage gives her the right to treat you like a roommate while expecting your income.", a: "\"Marriage is a partnership of mutual respect and effort. I hold that standard.\" [Conditional Commitment]", bundle: 'pro' },
+        { q: "She uses disrespectful language during a debate about household finances.", a: "\"I am ending this conversation. I am stepping out until respect returns.\" [Removing Primary Anchors]", bundle: 'pro' },
+        { q: "She turns down your invitation for a romantic weekend getaway because she's busy with friends.", a: "\"Understood, Love.\" (Maintain warm posture and plan a solo training trip instead). [Clean Disengagement on Refusal]", bundle: 'pro' },
+        { q: "She tells you that you are obligated to tolerate her cold demeanor forever.", a: "\"I remain committed where respect and warmth are mutual. That is my line.\" [Conditional Commitment]", bundle: 'pro' },
+        { q: "She ignores your presence completely when you return home from a three-day business trip.", a: "(Acknowledge home cleanly, then focus entirely on your own tasks and workout) \"I'm back and heading down to my workout.\" [Removing Primary Anchors]", bundle: 'pro' },
+        { q: "She declines your physical initiation on Friday night, watching to see if you sulk.", a: "\"All good, rest up.\" (Maintain warm demeanor and enjoy your evening reading). [Clean Disengagement on Refusal]", bundle: 'pro' },
+        { q: "She demands that you promise never to leave her regardless of how toxic the dynamic becomes.", a: "\"I offer deep commitment to a respectful, loving container. I maintain high standards.\" [Conditional Commitment]", bundle: 'pro' },
+        { q: "She attempts to use cold withdrawal to punish you for setting a firm boundary.", a: "(Remove your attention cleanly, focus on your mission, and remain unbothered) \"I'm getting back to my reading.\" [Removing Primary Anchors]", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxfield4: [
+    {
+      name: "Decoding Subtext",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Translating Emotional Reports**, **Power-Talk Calibration**, and **PAC Ego-State Shift** when facing subtext and dramatic speeches.\n\nThis collection focuses on decoding emotional hyperbole, shutting down posture-talk, and staying grounded in Adult communication.\n• **Translating Emotional Reports** — decode dramatic words into transient emotional weather\n• **Power-Talk Calibration** — redirect posture-talk toward concrete outcomes\n• **PAC Ego-State Shift** — remain in grounded Adult state against emotional bait\n\nMindset: subtext is emotional weather; I decode the noise and remain an Adult.",
+      inputs: [
+        { q: "She shouts that you ruin her life and care more about work than her existence.", a: "\"I hear you're feeling exhausted and low on attention tonight.\" [Translating Emotional Reports]", bundle: 'pro' },
+        { q: "She tries to virtue-signal that her family is morally superior in how they handle holidays.", a: "\"Different families run different routines. I focus on our schedule.\" [Power-Talk Calibration]", bundle: 'pro' },
+        { q: "She uses a scolding, parental voice to lecture you about how you park the car.", a: "\"I park the car to fit the space. I speak as an Adult and handle my parking.\" [PAC Ego-State Shift]", bundle: 'pro' },
+        { q: "She declares that you never listen to a single word she says in her entire life.", a: "\"You're feeling frustrated and unheard right now. I'm right here listening.\" [Translating Emotional Reports]", bundle: 'pro' },
+        { q: "She tries to turn a simple budget item into a debate about who has higher moral values.", a: "\"I am looking at our bank figures, not moral rankings. Here are the numbers.\" [Power-Talk Calibration]", bundle: 'pro' },
+        { q: "She pouts and acts like a rebellious teenager when you ask her to review a bill.", a: "\"The bill needs a check before five PM. Let me know when you're ready.\" [PAC Ego-State Shift]", bundle: 'pro' },
+        { q: "She claims you hate her friends and wish she had no social life at all.", a: "\"You're feeling stressed about your social schedule. Let's talk about it.\" [Translating Emotional Reports]", bundle: 'pro' },
+        { q: "She uses guilt-inducing parental language to make you feel like a naughty child.", a: "\"I make decisions as a mature Adult. Your disappointment is your internal state.\" [PAC Ego-State Shift]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Navigating Power Dynamics",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Power-Talk Calibration**, **PAC Ego-State Shift**, and **Action-Based Affirmation** in power interactions.\n\nThis collection targets power-talk, ego-state dynamics, and evaluating partners by concrete compliance rather than posture.\n• **Power-Talk Calibration** — ground conversations in real-world outcomes and incentives\n• **PAC Ego-State Shift** — shift out of parent/child dynamics into navigational Adult\n• **Action-Based Affirmation** — focus on concrete compliance rather than policing thoughts\n\nMindset: real power operates through concrete results, Adult posture, and action.",
+      inputs: [
+        { q: "She attempts to use posture-talk moralizing to force you to change your career goals.", a: "\"Moralizing doesn't alter market reality. My career goal builds our asset base.\" [Power-Talk Calibration]", bundle: 'pro' },
+        { q: "She demands that you apologize in a submissive child tone for making a decision.", a: "\"I communicate as an Adult. I've stated the facts and corrected the item.\" [PAC Ego-State Shift]", bundle: 'pro' },
+        { q: "She grumbles while carrying out your agreed weekend plan, but executes it cleanly.", a: "\"The plan is executed well. I judge by results, not grumbling.\" [Action-Based Affirmation]", bundle: 'pro' },
+        { q: "She tries to drag you into a debate about abstract relationship rules and ethics.", a: "\"Abstract rules don't build our home. Let's focus on concrete schedule choices.\" [Power-Talk Calibration]", bundle: 'pro' },
+        { q: "She acts like a stubborn child refusing to answer a simple logistical question.", a: "\"I need a clear answer to set the booking. Let me know when you can answer.\" [PAC Ego-State Shift]", bundle: 'pro' },
+        { q: "You worry whether she is 100% mentally enthusiastic about your new financial boundary.", a: "\"She follows the budget limit cleanly. Her private thoughts belong to her.\" [Action-Based Affirmation]", bundle: 'pro' },
+        { q: "She claims your focus on practical outcomes proves you lack emotional depth.", a: "\"Practical outcomes protect our family container. I focus on what works.\" [Power-Talk Calibration]", bundle: 'pro' },
+        { q: "She attempts to provoke you into taking a stern, scolding parent tone with her.", a: "\"I don't lecture adults. You know the boundary and the choice is yours.\" [PAC Ego-State Shift]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "High-Status Communication",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Action-Based Affirmation**, **Translating Emotional Reports**, and **Power-Talk Calibration** for high-status leadership.\n\nThis collection builds daily skill in maintaining high-status communication, ignoring mind-reading, and focusing on outcomes.\n• **Action-Based Affirmation** — accept concrete action without demanding mind-reading\n• **Translating Emotional Reports** — neutralize dramatic hyperbole without taking offense\n• **Power-Talk Calibration** — lead conversations using real-world incentives and facts\n\nMindset: high-status communication is grounded, practical, and immune to dramatic noise.",
+      inputs: [
+        { q: "She complains mildly about getting up early for a trip, but is fully packed on time.", a: "\"You're packed and ready on schedule. Let's have a great drive.\" [Action-Based Affirmation]", bundle: 'pro' },
+        { q: "She claims 'You care more about your business than my life!' during a busy week.", a: "\"You're feeling low on quality time right now. Let's book Friday night for us.\" [Translating Emotional Reports]", bundle: 'pro' },
+        { q: "She attempts to turn a discussion about buying equipment into a debate on virtue.", a: "\"Equipment purchases are evaluated by production return, not virtue signaling.\" [Power-Talk Calibration]", bundle: 'pro' },
+        { q: "She executes her household duties efficiently while maintaining a quiet, neutral face.", a: "\"Execution is solid. I focus on actions, not policing facial expressions.\" [Action-Based Affirmation]", bundle: 'pro' },
+        { q: "She screams 'Everything is completely ruined!' because a package arrived late.", a: "\"You're feeling stressed about the delay. The package arrives tomorrow.\" [Translating Emotional Reports]", bundle: 'pro' },
+        { q: "She tries to debate abstract political ideals during a family dinner conversation.", a: "\"Political speeches don't build our daily life. Let's focus on our family plans.\" [Power-Talk Calibration]", bundle: 'pro' },
+        { q: "She follows your leadership on moving house while expressing brief doubts.", a: "\"The move is proceeding cleanly. Doubts settle once we arrive.\" [Action-Based Affirmation]", bundle: 'pro' },
+        { q: "She says 'You never help me with anything in this entire house!' while cooking.", a: "\"You're feeling overwhelmed right now. I'll take over prepping the vegetables.\" [Translating Emotional Reports]", bundle: 'pro' },
       ]
     },
   ],

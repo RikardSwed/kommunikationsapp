@@ -15455,4 +15455,544 @@ const memorizeCollections = {
       ]
     },
   ],
+  praxfield1: [
+    {
+      name: "Core Idea",
+      description: "The foundational principles of Praxeology Field Reports Volume 1: Deconstructing Beta Patterns by Rian Stone.\n• **Post-Tense Reporting** — state completed facts cleanly without future promises\n• **Selective Agency** — claim responsibility for your actions while rejecting her mood\n• **Killing Covert Improvement** — execute personal growth for internal standards\n• **Action Over Identity** — correct tactical errors without identity self-flagellation\n\nDeconstructing beta patterns restores authentic self-ownership and unswayable frame.",
+      cards: [
+        { q: "What are the four core strategies in this pack?", a: "Post-Tense Reporting, Selective Agency, Killing Covert Improvement, Action Over Identity.", bundle: 'free' },
+        { q: "What is the primary focus of \"Deconstructing Beta Patterns\"?", a: "Eliminating validation-seeking, covert contracts, Catholic confessions, and identity drama.", bundle: 'free' },
+        { q: "What is \"Post-Tense Reporting\"?", a: "Stating completed actions cleanly rather than seeking approval through future promises or confessions.", bundle: 'free' },
+        { q: "What is the principle of \"Selective Agency\"?", a: "Claiming direct ownership of your actions while refusing responsibility for her emotional state.", bundle: 'free' },
+        { q: "What is the main trap of \"Covert Improvement\"?", a: "Improving yourself as a dancing-monkey performance to buy female approval or intimacy.", bundle: 'free' },
+        { q: "What does \"Action Over Identity\" replace?", a: "It replaces dramatic identity self-flagellation with immediate, quiet corrective action.", bundle: 'pro' },
+        { q: "What is a \"Catholic Confession\" in relationship dynamics?", a: "Begging for emotional absolution and wallowing in guilt after making a minor error.", bundle: 'pro' },
+        { q: "Why is \"indiscriminate responsibility\" dangerous for a man?", a: "Because taking blame for external factors and her moods destroys sanity and authority.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Post-Tense Reporting",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Post-Tense Reporting\"?", a: "Stating concrete actions you have already executed rather than making future promises.", bundle: 'free' },
+        { q: "Why are future-tense resolutions dangerous in relationship dynamics?", a: "Because promising future action sells cheap words and seeks unearned validation.", bundle: 'free' },
+        { q: "How does Post-Tense Reporting eliminate Catholic confessions?", a: "It replaces emotional speeches of regret with a quiet report of completed facts.", bundle: 'free' },
+        { q: "What tone should be used when delivering Post-Tense Reporting?", a: "A matter-of-fact, calm, neutral tone without seeking praise or approval.", bundle: 'free' },
+        { q: "What should you do instead of promising to fix a mistake tomorrow?", a: "Fix the mistake now and report the completed action after execution.", bundle: 'free' },
+        { q: "Why do Nice Guys prefer future promises over post-tense facts?", a: "Because future promises give immediate validation without requiring actual effort.", bundle: 'pro' },
+        { q: "What happens to her trust when you use Post-Tense Reporting consistently?", a: "She realizes your words represent solid reality rather than empty emotional promises.", bundle: 'pro' },
+        { q: "How does Post-Tense Reporting protect your Mental Point of Origin?", a: "It anchors your actions in your own execution rather than her permission.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Selective Agency",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Selective Agency\"?", a: "Claiming responsibility for your choices while rejecting ownership of her emotional state.", bundle: 'free' },
+        { q: "What is \"indiscriminate responsibility\"?", a: "The toxic belief that a husband is responsible for his wife's moods, health, and environment.", bundle: 'free' },
+        { q: "How do you respond when she blames you for her bad mood?", a: "State that you own your actions, but her emotional weather is her internal state.", bundle: 'free' },
+        { q: "Why is taking blame for traffic or weather a beta mistake?", a: "Because taking responsibility for external factors projects weak, irrational guilt.", bundle: 'free' },
+        { q: "What is the boundary established by Selective Agency?", a: "The line separating what is under your direct control from what belongs to her.", bundle: 'free' },
+        { q: "Why do women test men with indiscriminate blame?", a: "To see if the man's frame is solid or if he can be manipulated through false guilt.", bundle: 'pro' },
+        { q: "How does Selective Agency prevent you from becoming an emotional savior?", a: "It forces her to take ownership of her own internal fulfillment and emotional state.", bundle: 'pro' },
+        { q: "What is the somatic state during Selective Agency?", a: "Calm, unswayable posture, deep breathing, and absolute freedom from false guilt.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Killing Covert Improvement",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Killing Covert Improvement\"?", a: "Executing personal goals for internal standards without trading them for female approval.", bundle: 'free' },
+        { q: "What is the \"dancing monkey\" trap?", a: "Lifting, dressing well, or building a career to buy romantic rewards or compliments from a wife.", bundle: 'free' },
+        { q: "Why do covert improvement contracts destroy sexual polarity?", a: "Because performing for her approval positions you as a subordinate seeking gold stars.", bundle: 'free' },
+        { q: "How should you state your reason for lifting weights?", a: "State that you lift to build your own strength and physical capability.", bundle: 'free' },
+        { q: "What should you do if she ignores or mocks your self-improvement goals?", a: "Execute your discipline quietly without needing her cheerleading or approval.", bundle: 'free' },
+        { q: "How does Killing Covert Improvement restore authentic motivation?", a: "It grounds your development in your own mission and personal standards.", bundle: 'pro' },
+        { q: "What is the rule regarding self-improvement and female validation?", a: "Build your body and mind for your standards, or do not bother doing it at all.", bundle: 'pro' },
+        { q: "How does a woman react when a man drops covert improvement?", a: "She realizes his growth is unswayable and independent of her approval, building respect.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Action Over Identity",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Action Over Identity\"?", a: "Replacing identity-based self-flagellation with direct, quiet corrective action.", bundle: 'free' },
+        { q: "What is \"identity self-flagellation\"?", a: "Declaring \"I am a terrible husband\" or \"I ruin everything\" when a minor mistake occurs.", bundle: 'free' },
+        { q: "Why is calling yourself names a low-status pleaser move?", a: "Because it is covert drama designed to make her comfort you and say \"No, you're not.\"", bundle: 'free' },
+        { q: "What should you do immediately after making a tactical mistake?", a: "State the exact physical error and execute the corrective fix without emotional speeches.", bundle: 'free' },
+        { q: "How does Action Over Identity protect your authority?", a: "It keeps your core identity unswayable while handling physical facts objectively.", bundle: 'free' },
+        { q: "What is the difference between a tactical error and an identity flaw?", a: "A tactical error is a misplaced item or missed date; an identity flaw is a dramatic label.", bundle: 'pro' },
+        { q: "Why does self-pity destroy her respect for your frame?", a: "Because wallowing in self-pity signals that you lack the strength to handle reality cleanly.", bundle: 'pro' },
+        { q: "How do you deliver Action Over Identity in conversation?", a: "State the fact: \"I dropped the glass. I am sweeping the floor now.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n• **Post-Tense Execution** — choosing between post-tense reporting, selective agency, and action over identity\n• **Selective Agency in Action** — choosing between selective agency, killing covert improvement, and action over identity\n• **Deconstructing Beta Habits** — choosing between post-tense reporting, killing covert improvement, and action over identity\n\nOne question decides nearly all of it: what beta habit or validation trap are you deconstructing?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Post-Tense Execution, Selective Agency in Action, and Deconstructing Beta Habits.", bundle: 'pro' },
+        { q: "What is the focus of \"Post-Tense Execution\"?", a: "Eliminating future promises, emotional confessions, and identity drama in daily chores.", bundle: 'pro' },
+        { q: "What is the focus of \"Selective Agency in Action\"?", a: "Handling boundary tests where personal standards and external blame collide.", bundle: 'pro' },
+        { q: "What does \"Deconstructing Beta Habits\" make you choose between?", a: "All three core moves to replace validation-seeking with quiet execution.", bundle: 'pro' },
+        { q: "When do you choose \"Post-Tense Reporting\" over \"Action Over Identity\"?", a: "When the action is already completed and you need to report the fact cleanly.", bundle: 'pro' },
+        { q: "When do you choose \"Selective Agency\"?", a: "When she attempts to blame you for her bad mood or external circumstances.", bundle: 'pro' },
+        { q: "Why is \"Killing Covert Improvement\" essential in Collections?", a: "Because it stops you from using personal development as a covert bargain for affection.", bundle: 'pro' },
+        { q: "What is the main trap in Collections?", a: "Falling back into future promises, Catholic confessions, or dramatic speeches.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n1. **The Post-Tense Shift** — Action Over Identity → Selective Agency → Post-Tense Reporting\n2. **Claiming Selective Agency** — Selective Agency → Killing Covert Improvement → Post-Tense Reporting\n3. **Killing Covert Habits** — Killing Covert Improvement → Action Over Identity → Selective Agency\n\nIn each sequence, the order of the steps is what re-establishes authority and frame.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Post-Tense Shift, Claiming Selective Agency, and Killing Covert Habits.", bundle: 'pro' },
+        { q: "What is the order in \"The Post-Tense Shift\"?", a: "Action Over Identity, then Selective Agency, and finally Post-Tense Reporting.", bundle: 'pro' },
+        { q: "Why does \"The Post-Tense Shift\" start with \"Action Over Identity\"?", a: "Because you must handle the physical mistake cleanly before refusing emotional drama.", bundle: 'pro' },
+        { q: "What is the order in \"Claiming Selective Agency\"?", a: "Selective Agency, then Killing Covert Improvement, and finally Post-Tense Reporting.", bundle: 'pro' },
+        { q: "Why does \"Claiming Selective Agency\" place \"Selective Agency\" first?", a: "Because disarming false guilt must precede declaring your self-directed goals.", bundle: 'pro' },
+        { q: "What is the order in \"Killing Covert Habits\"?", a: "Killing Covert Improvement, then Action Over Identity, and finally Selective Agency.", bundle: 'pro' },
+        { q: "What does \"Killing Covert Habits\" train you to do?", a: "Drop covert bargains, fix tactical errors without drama, and hold firm agency.", bundle: 'pro' },
+        { q: "Why do two of the three sequences end with \"Post-Tense Reporting\"?", a: "Because reporting completed facts replaces empty promises and closes the loop cleanly.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n• **Catholic Confessions** — disarming guilt-traps and stopping speeches of regret\n• **The Savior Trap** — refusing responsibility for her moods, health, or life drama\n• **Covert Improvement** — eliminating the 'dancing monkey' impulse in fitness and career\n• **Identity Self-Flagellation** — replacing \"I am a bad husband\" with quiet fixes\n• **Origin Story Excuses** — stopping DEERing explanations based on past trauma or tired feeling\n\nEach category organizes by problem type rather than strategy.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Catholic Confessions, The Savior Trap, Covert Improvement, Identity Self-Flagellation, and Origin Story Excuses.", bundle: 'pro' },
+        { q: "How do you handle \"Catholic Confessions\"?", a: "By replacing speeches of regret with quiet, post-tense execution reports.", bundle: 'pro' },
+        { q: "What is the core move during \"The Savior Trap\"?", a: "Using Selective Agency to reject responsibility for her internal emotional weather.", bundle: 'pro' },
+        { q: "How do you resolve \"Covert Improvement\"?", a: "By stating your self-directed motivation without trading effort for female approval.", bundle: 'pro' },
+        { q: "How do you handle \"Identity Self-Flagellation\"?", a: "By dropping dramatic self-pity labels and executing immediate physical fixes.", bundle: 'pro' },
+        { q: "How do you resolve \"Origin Story Excuses\"?", a: "By stating completed facts without offering psychological sob stories or excuses.", bundle: 'pro' },
+        { q: "What is she really testing in these challenges?", a: "Whether your frame is anchored in self-ownership or if you can be manipulated by guilt.", bundle: 'pro' },
+        { q: "Why is wallowing in guilt a fatal mistake in challenges?", a: "Because begging for absolution abdicates your authority and destroys sexual polarity.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four mindsets you practise in this pack:\n• **Confessions** — replacing Catholic confessions with quiet, post-tense execution\n• **Responsibility** — drawing a hard line between your duties and her mood\n• **Validation** — building your body and mind for your standards, not gold stars\n• **Identity** — separating tactical mistakes from core identity\n\nIn every one, the belief that gets in the way feels like humility or virtue from the inside.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Confessions, Responsibility, Validation, and Identity.", bundle: 'pro' },
+        { q: "What does \"Confessions\" teach you?", a: "That begging for emotional absolution is a child's reflex that destroys authority.", bundle: 'pro' },
+        { q: "What is the core truth behind \"Responsibility\"?", a: "That you are responsible for your standards, while her emotional weather belongs to her.", bundle: 'pro' },
+        { q: "What is the core block in the \"Validation\" mindset?", a: "Believing that self-improvement must be praised by your partner to be worthwhile.", bundle: 'pro' },
+        { q: "What is the core block in the \"Identity\" mindset?", a: "Believing that making a minor mistake proves you are fundamentally defective.", bundle: 'pro' },
+        { q: "Why is \"indiscriminate responsibility\" a trap?", a: "Because taking blame for things outside your control creates endless guilt and panic.", bundle: 'pro' },
+        { q: "What is the definition of authentic self-ownership?", a: "Operating from internal standards without needing external gold stars or absolution.", bundle: 'pro' },
+        { q: "What is the ultimate goal of these four mindsets?", a: "To shift your baseline from a validation-seeking beta to an autonomous, grounded leader.", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxfield2: [
+    {
+      name: "Core Idea",
+      description: "The foundational principles of Praxeology Field Reports Volume 2: Navigating Relational Storms by Rian Stone.\n• **Refusing the Confidant Role** — decline platonic gossip and emotional dumping\n• **The Daily Reset** — wipe the emotional slate clean every morning\n• **Verbal Disengagement** — exit circular arguments and shouting matches cleanly\n• **Dispassionate Distance** — maintain unshakeable composure during emotional storms\n\nMastering these strategies preserves masculine frame and polarity through any relational friction.",
+      cards: [
+        { q: "What are the four core strategies in this pack?", a: "Refusing the Confidant Role, The Daily Reset, Verbal Disengagement, Dispassionate Distance.", bundle: 'free' },
+        { q: "What is the primary focus of \"Navigating Relational Storms\"?", a: "Maintaining frame, disengaging from circular fights, and preserving emotional composure.", bundle: 'free' },
+        { q: "Why is \"verbal intercourse optional\" a core principle?", a: "Because a man is never obligated to participate in circular, abusive shouting matches.", bundle: 'free' },
+        { q: "What is \"Refusing the Confidant Role\"?", a: "Declining to act as a platonic therapist or gossip outlet while maintaining romantic polarity.", bundle: 'free' },
+        { q: "What is \"The Daily Reset\"?", a: "Clearing yesterday's emotional friction every morning without carrying bitter grudges.", bundle: 'free' },
+        { q: "How does \"Dispassionate Distance\" disarm emotional meltdowns?", a: "By offering an unswayable, calm anchor that absorbs panic without taking the bait.", bundle: 'pro' },
+        { q: "What is the danger of \"indiscriminate responsibility\" during a storm?", a: "It tricks a man into taking false guilt for her internal mood or external weather.", bundle: 'pro' },
+        { q: "Why does sulking destroy a man's authority?", a: "Because sulking is a passive-aggressive beta move that signals internal helplessness.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Refusing the Confidant Role",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Refusing the Confidant Role\"?", a: "Declining platonic gossip and emotional dumping to protect romantic polarity.", bundle: 'free' },
+        { q: "Why is acting as her girlfriends-substitute dangerous?", a: "Because it positions you as a platonic sounding board rather than a romantic partner and leader.", bundle: 'free' },
+        { q: "How should you redirect an hour of workplace gossip?", a: "State cleanly that you leave office drama outside and focus on your connection.", bundle: 'free' },
+        { q: "What should you do when she tries to dissect relative drama?", a: "Refuse to badmouth relatives and keep conversation constructive.", bundle: 'free' },
+        { q: "Why does absorbing endless complaints kill sexual desire?", a: "Because it replaces romantic tension with platonic, low-status venting.", bundle: 'free' },
+        { q: "What is the difference between authentic support and confidant dumping?", a: "Authentic support offers grounded presence; confidant dumping unloads toxic gossip.", bundle: 'pro' },
+        { q: "How do you handle her annoyance when you set a limit on gossip?", a: "Hold your stance with Dispassionate Distance and offer warm, real connection.", bundle: 'pro' },
+        { q: "What posture should you maintain during Refusing the Confidant Role?", a: "Calm, warm, high-status authority that declines noise cleanly.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Daily Reset",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"The Daily Reset\"?", a: "Wiping yesterday's emotional friction clean every morning without holding grudges.", bundle: 'free' },
+        { q: "Why is holding a multi-day grudge a low-status move?", a: "Because sulking signals that you lack the strength to handle friction in the moment.", bundle: 'free' },
+        { q: "How should you greet your partner the morning after an argument?", a: "Greet her with a clean, calm, and fresh posture without bringing up yesterday's storm.", bundle: 'free' },
+        { q: "What should you do if she tries to re-open yesterday's fight at breakfast?", a: "State cleanly that yesterday is closed and focus on today's priorities.", bundle: 'free' },
+        { q: "How does The Daily Reset protect the household atmosphere?", a: "It prevents lingering resentment from turning the home into a cold war zone.", bundle: 'free' },
+        { q: "What is the somatic feeling of executing a successful Daily Reset?", a: "A light, grounded, unburdened presence focused on immediate action.", bundle: 'pro' },
+        { q: "Why do women test men after a heavy argument the night before?", a: "To see if the man is still sulking or if his frame is strong enough to reset cleanly.", bundle: 'pro' },
+        { q: "Does The Daily Reset mean abandoning your boundaries?", a: "No, boundaries enforced in the moment stand firm while emotional grudges are dropped.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Verbal Disengagement",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Verbal Disengagement\"?", a: "Exiting circular, emotional arguments cleanly and quietly before frame collapses.", bundle: 'free' },
+        { q: "Why should you never participate in a shouting match?", a: "Because screaming matches drag you into emotional chaos and destroy your authority.", bundle: 'free' },
+        { q: "What phrase structure works best for Verbal Disengagement?", a: "State that the conversation is looping or loud, and step away until things cool down.", bundle: 'free' },
+        { q: "What should you avoid doing while stepping away from a fight?", a: "Slamming doors, shouting a final insult, or making sarcastic comments.", bundle: 'free' },
+        { q: "How long should you remain disengaged from a circular argument?", a: "Until both parties are calm and capable of quiet, constructive conversation.", bundle: 'free' },
+        { q: "What is \"topic-hopping\" in a circular argument?", a: "Shifting between multiple past grievances to make you get defensive.", bundle: 'pro' },
+        { q: "How does Verbal Disengagement defeat rapid-fire interrogation?", a: "By cutting off the debate loop entirely rather than answering endless questions.", bundle: 'pro' },
+        { q: "What is the rule regarding late-night arguments at midnight?", a: "Disengage immediately; midnight debates are purely emotional traps.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Dispassionate Distance",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Dispassionate Distance\"?", a: "Maintaining calm, grounded composure so her tears or anger have zero power to sway you.", bundle: 'free' },
+        { q: "Why is emotional composure described as an anchor?", a: "Because an unshakeable anchor provides stability when her emotional weather turns wild.", bundle: 'free' },
+        { q: "How should you respond to dramatic tears designed to change your boundary?", a: "Acknowledge her distress calmly while keeping your boundary firm and unswayable.", bundle: 'free' },
+        { q: "What is the danger of matching her high emotional volume?", a: "Matching her volume creates escalation, panic, and total loss of masculine frame.", bundle: 'free' },
+        { q: "What should your breathing and posture be during an emotional storm?", a: "Deep belly breathing, relaxed shoulders, steady eye contact, and unswayable stance.", bundle: 'free' },
+        { q: "How does Dispassionate Distance differ from cold stonewalling?", a: "Dispassionate Distance remains present, calm, and warm; stonewalling is bitter withdrawal.", bundle: 'pro' },
+        { q: "Why do guilt trips fail against a man using Dispassionate Distance?", a: "Because he recognizes false guilt and refuses to take responsibility for her mood.", bundle: 'pro' },
+        { q: "What is the ultimate benefit of mastering Dispassionate Distance?", a: "It makes your leadership immune to emotional manipulation and panic.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n• **Navigating Emotional Meltdowns** — disengaging, staying unswayable, or resetting daily\n• **Handling Disrespect and Gossip** — declining confidant dumping, exiting loops, or staying detached\n• **Maintaining Emotional Distance** — long-term composure, clean boundaries, and fresh slates\n\nOne question decides nearly all of it: what type of relational storm or verbal noise are you facing?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Navigating Emotional Meltdowns, Handling Disrespect and Gossip, and Maintaining Emotional Distance.", bundle: 'pro' },
+        { q: "What is the focus of \"Navigating Emotional Meltdowns\"?", a: "Handling active emotional storms, tears, and shouting matches cleanly.", bundle: 'pro' },
+        { q: "What is the focus of \"Handling Disrespect and Gossip\"?", a: "Declining platonic gossip, badmouthing, and disrespectful sarcastic digs.", bundle: 'pro' },
+        { q: "What does \"Maintaining Emotional Distance\" make you choose between?", a: "Long-term composure, declining confidant roles, and clearing daily friction.", bundle: 'pro' },
+        { q: "When do you choose \"Verbal Disengagement\" over \"Dispassionate Distance\"?", a: "When the situation escalates into shouting or circular loops that require stepping out.", bundle: 'pro' },
+        { q: "When do you choose \"Refusing the Confidant Role\"?", a: "When she attempts to treat you as a girlfriends-substitute for workplace or relative drama.", bundle: 'pro' },
+        { q: "Why is \"The Daily Reset\" essential across all Collections?", a: "Because clearing the board every morning prevents toxic resentment from building up.", bundle: 'pro' },
+        { q: "What is the main trap in Collections?", a: "Getting hooked into debating emotional logic or holding bitter grudges.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n1. **The Circuit Breaker Combo** — Refusing the Confidant Role → Verbal Disengagement → Dispassionate Distance\n2. **Containing the Drama** — Verbal Disengagement → Dispassionate Distance → The Daily Reset\n3. **The Daily Reset Sequence** — Dispassionate Distance → The Daily Reset → Refusing the Confidant Role\n\nIn each sequence, the order of the steps is what breaks the storm and preserves frame.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Circuit Breaker Combo, Containing the Drama, and The Daily Reset Sequence.", bundle: 'pro' },
+        { q: "What is the order in \"The Circuit Breaker Combo\"?", a: "Refusing the Confidant Role, then Verbal Disengagement, and finally Dispassionate Distance.", bundle: 'pro' },
+        { q: "Why does \"The Circuit Breaker Combo\" start with \"Refusing the Confidant Role\"?", a: "Because declining platonic drama early prevents escalation into a full argument.", bundle: 'pro' },
+        { q: "What is the order in \"Containing the Drama\"?", a: "Verbal Disengagement, then Dispassionate Distance, and finally The Daily Reset.", bundle: 'pro' },
+        { q: "Why does \"Containing the Drama\" place \"The Daily Reset\" third?", a: "Because after exiting a fight and holding composure, the final step is a fresh morning slate.", bundle: 'pro' },
+        { q: "What is the order in \"The Daily Reset Sequence\"?", a: "Dispassionate Distance, then The Daily Reset, and finally Refusing the Confidant Role.", bundle: 'pro' },
+        { q: "What does \"Containing the Drama\" train you to do?", a: "Exit a fight cleanly, absorb the aftermath without sulking, and reset the next day.", bundle: 'pro' },
+        { q: "Why do all three sequences rely on \"Dispassionate Distance\"?", a: "Because unshakeable composure is required to hold your ground through every phase of a storm.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n• **Accountability Traps** — stopping the urge to force logic onto an emotional storm\n• **Emotional Meltdowns** — staying unswayable through crying fits and shouting\n• **Guilt and Pity Operations** — neutralizing emotional blackmail and sad stories\n• **Circular Arguments** — breaking out of endless debate loops cleanly\n• **The Gossip Confidant** — refusing platonic drama and girlfriend-substitute roles\n\nEach category organizes by problem type rather than strategy.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Accountability Traps, Emotional Meltdowns, Guilt and Pity Operations, Circular Arguments, and The Gossip Confidant.", bundle: 'pro' },
+        { q: "How do you handle \"Accountability Traps\"?", a: "By stepping out of circular debates instead of trying to force her to admit she is wrong.", bundle: 'pro' },
+        { q: "What is the core move during \"Emotional Meltdowns\"?", a: "Using Dispassionate Distance to stay grounded and unswayable as her storm passes.", bundle: 'pro' },
+        { q: "How do you resolve \"Guilt and Pity Operations\"?", a: "By holding your boundary cleanly while refusing false guilt or self-pity plays.", bundle: 'pro' },
+        { q: "How do you handle \"Circular Arguments\"?", a: "By using Verbal Disengagement to cut off debate loops immediately.", bundle: 'pro' },
+        { q: "How do you resolve \"The Gossip Confidant\"?", a: "By using Refusing the Confidant Role to decline workplace and relative gossip.", bundle: 'pro' },
+        { q: "What is she really testing in these challenges?", a: "Whether your composure is authentic and solid or if you can be manipulated by drama.", bundle: 'pro' },
+        { q: "Why is screaming back a fatal mistake in challenges?", a: "Because shouting back proves your frame collapsed and you lost emotional control.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four mindsets you practise in this pack:\n• **Disengagement** — exiting shouting matches is mature leadership, not cowardice\n• **Emotional Distance** — unshakeable composure is an anchor, not heartlessness\n• **Forgiveness** — clearing the board daily builds authority; sulking destroys it\n• **Listening** — drawing a clear line between romantic bond and platonic gossip\n\nIn every one, the belief that gets in the way feels like devotion or nobility from the inside.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Disengagement, Emotional Distance, Forgiveness, and Listening.", bundle: 'pro' },
+        { q: "What does \"Disengagement\" teach you?", a: "That stepping out of an abusive shouting match protects the relationship container.", bundle: 'pro' },
+        { q: "What is the core truth behind \"Emotional Distance\"?", a: "That grounded composure provides an anchor for an anxious partner, while matching panic creates chaos.", bundle: 'pro' },
+        { q: "What is the core block in the \"Forgiveness\" mindset?", a: "Believing that holding multi-day grudges and sulking proves your boundaries are serious.", bundle: 'pro' },
+        { q: "What is the core block in the \"Listening\" mindset?", a: "Believing that acting as a platonic girlfriends-substitute builds romantic intimacy.", bundle: 'pro' },
+        { q: "Why is sulking a toxic habit?", a: "Because sulking is passive-aggressive weakness that destroys trust and respect.", bundle: 'pro' },
+        { q: "What is the definition of a grounded masculine container?", a: "Unswayable composure, clear boundaries, and the strength to reset cleanly every day.", bundle: 'pro' },
+        { q: "What is the ultimate goal of these four mindsets?", a: "To shift your baseline from a reactive argument-partner to an unswayable, grounded leader.", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxfield3: [
+    {
+      name: "Core Idea",
+      description: "The foundational principles of Praxeology Field Reports Volume 3: Restoring Sexual Polarity by Rian Stone.\n• **Removing Primary Anchors** — withdraw attention, affection, or commitment cleanly from disrespect\n• **Unapologetic Initiation** — express direct physical desire without permission-seeking\n• **Clean Disengagement on Refusal** — accept physical declines warmly with unswayable frame\n• **Conditional Commitment** — anchor relationship terms in ongoing mutual respect and effort\n\nRestoring sexual polarity transforms passive roommate dynamics into authentic desire.",
+      cards: [
+        { q: "What are the four core strategies in this pack?", a: "Removing Primary Anchors, Unapologetic Initiation, Clean Disengagement on Refusal, Conditional Commitment.", bundle: 'free' },
+        { q: "What is the primary focus of \"Restoring Sexual Polarity\"?", a: "Re-establishing physical desire, removing unearned validation, and holding high standards.", bundle: 'free' },
+        { q: "What are the three Primary Anchors (AAA) in praxeology?", a: "Attention, Affection, and Commitment.", bundle: 'free' },
+        { q: "What is \"Unapologetic Initiation\"?", a: "Expressing physical desire directly from masculine posture without asking permission or apologizing.", bundle: 'free' },
+        { q: "What is the principle of \"Conditional Commitment\"?", a: "Treating commitment as a dynamic standard requiring mutual respect and effort, not an entitlement.", bundle: 'free' },
+        { q: "How does \"Clean Disengagement on Refusal\" preserve frame?", a: "By accepting a physical decline with warm, unbothered composure, demonstrating emotional strength.", bundle: 'pro' },
+        { q: "Why does duty sex destroy sexual polarity?", a: "Because obligation sex replaces authentic masculine desire and feminine passion with transactional chores.", bundle: 'pro' },
+        { q: "What happens when a man removes primary anchors during disrespect?", a: "He enforces a clear boundary without nagging, demonstrating that his attention has real value.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Removing Primary Anchors",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Removing Primary Anchors\"?", a: "Withdrawing Attention, Affection, or Commitment cleanly when disrespect or boundary breaches occur.", bundle: 'free' },
+        { q: "What are the three primary currencies a man holds in a relationship?", a: "Attention, Affection, and Commitment (AAA).", bundle: 'free' },
+        { q: "How do you handle disrespect while giving her physical touch?", a: "Stop touching immediately, stand up, and return to your own priorities cleanly.", bundle: 'free' },
+        { q: "Why is nagging worse than removing primary anchors?", a: "Because nagging is low-status pleading; removing anchors enforces a clean physical boundary.", bundle: 'free' },
+        { q: "What should you do if she ignores you while scrolling on her phone?", a: "Withdraw your attention cleanly and focus on your own mission or workout.", bundle: 'free' },
+        { q: "What is the difference between removing anchors and passive-aggressive sulking?", a: "Removing anchors is a calm, quiet boundary; sulking is a bitter, whiny emotional plea.", bundle: 'pro' },
+        { q: "How does removing attention rebuild her respect for your presence?", a: "It demonstrates that your presence is valuable and reserved for respectful interaction.", bundle: 'pro' },
+        { q: "What posture should you hold when removing primary anchors?", a: "Calm, neutral, unswayable posture without shouting, insult, or emotional drama.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Unapologetic Initiation",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Unapologetic Initiation\"?", a: "Expressing direct physical desire without asking permission, seeking reassurance, or apologizing.", bundle: 'free' },
+        { q: "Why is asking 'Is it okay if I kiss you?' a low-status move?", a: "Because it reveals internal hesitation and abdicates masculine physical leadership.", bundle: 'free' },
+        { q: "How should you initiate physical touch in the bedroom?", a: "Pull her close cleanly by her waist, hold steady eye contact, and touch with confident warmth.", bundle: 'free' },
+        { q: "What is the danger of offering transactional massages before sex?", a: "It turns sexual desire into a covert deal or bribe rather than authentic expression.", bundle: 'free' },
+        { q: "How does unapologetic initiation build sexual polarity?", a: "It provides a clear, grounded masculine direction for her to respond to with feminine desire.", bundle: 'free' },
+        { q: "What should you do if you feel hesitant before initiating touch?", a: "Breathe into your belly, drop tentative excuses, and step forward with confident posture.", bundle: 'pro' },
+        { q: "Why do women find apologetic initiation unappealing?", a: "Because apologizing for sexual desire projects internal shame and lack of grounded authority.", bundle: 'pro' },
+        { q: "What vocal qualities belong to Unapologetic Initiation?", a: "Low pitch, warm resonance, calm speed, and direct statement of intent.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Clean Disengagement on Refusal",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Clean Disengagement on Refusal\"?", a: "Accepting a physical decline warmly and smoothly without sulking, arguing, or showing butt-hurt.", bundle: 'free' },
+        { q: "Why is sulking after a physical refusal fatal to attraction?", a: "Because sulking proves your emotional state is fragile and dependent on her immediate compliance.", bundle: 'free' },
+        { q: "How should you respond verbally when she says 'Not tonight, Love'?", a: "Respond warmly: 'Got it, rest well, Love', kiss her cheek, and go to sleep peacefully.", bundle: 'free' },
+        { q: "What should you do if she tries to give a long DEERing speech after refusing?", a: "Cut off the speech warmly: 'It's completely fine, Love. Rest up', and reset the space.", bundle: 'free' },
+        { q: "Does clean disengagement mean you are giving up on physical intimacy?", a: "No, it demonstrates unshakeable emotional strength while leaving the door open for future desire.", bundle: 'free' },
+        { q: "What is she testing when she declines your physical initiation?", a: "She is testing whether your composure is unswayable or if you collapse into childish anger.", bundle: 'pro' },
+        { q: "How does clean disengagement increase future attraction?", a: "It proves that you do not force or guilt-trip intimacy, making your touch feel safe and desirable.", bundle: 'pro' },
+        { q: "What is the somatic state during Clean Disengagement on Refusal?", a: "Relaxed muscles, easy breathing, warm smile, and complete absence of resentment.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Conditional Commitment",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Conditional Commitment\"?", a: "Making commitment conditional on mutual respect, passion, and effort rather than unearned entitlement.", bundle: 'free' },
+        { q: "Why is treating marriage as an unconditional entitlement dangerous?", a: "Because it allows relationship quality, effort, and polarity to rot into passive domestic complacency.", bundle: 'free' },
+        { q: "How do you respond if she claims marriage means you must endure disrespect?", a: "State clearly: 'My commitment is paired with mutual respect. That is my standard.'", bundle: 'free' },
+        { q: "What is the relationship between Conditional Commitment and self-respect?", a: "A man of high self-respect stays in a relationship because standards are met, not out of helpless habit.", bundle: 'free' },
+        { q: "Why is mutual passion a legitimate requirement for commitment?", a: "Because a thriving romantic partnership requires ongoing desire, not just domestic cohabitation.", bundle: 'free' },
+        { q: "Does Conditional Commitment mean threatening divorce during every argument?", a: "No, it means quietly maintaining high personal standards and investing where effort is returned.", bundle: 'pro' },
+        { q: "How does Conditional Commitment affect her perception of your frame?", a: "It shows that you are a high-value leader who chooses to be here, not a trapped passenger.", bundle: 'pro' },
+        { q: "What is the rule regarding effort and pursuit in long-term relationships?", a: "Invest romantic pursuit where respect and effort are returned; withdraw when disrespect rules.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n• **Re-establishing Polarity** — removing anchors, unapologetic initiation, or conditional commitment\n• **Handling Physical Initiation** — unapologetic touch, clean disengagement, or removing anchors\n• **Navigating Commitment and Boundaries** — conditional commitment, removing anchors, or clean disengagement\n\nOne question decides nearly all of it: what aspect of sexual polarity or relationship standard are you restoring?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Re-establishing Polarity, Handling Physical Initiation, and Navigating Commitment and Boundaries.", bundle: 'pro' },
+        { q: "What is the focus of \"Re-establishing Polarity\"?", a: "Breaking roommate dynamics through boundaries, direct physical pursuit, and commitment standards.", bundle: 'pro' },
+        { q: "What is the focus of \"Handling Physical Initiation\"?", a: "Managing the moment of approach, touch, and physical refusals cleanly.", bundle: 'pro' },
+        { q: "What does \"Navigating Commitment and Boundaries\" make you choose between?", a: "Long-term marriage standards, removing currencies, and smooth disengagement.", bundle: 'pro' },
+        { q: "When do you choose \"Unapologetic Initiation\" over \"Removing Primary Anchors\"?", a: "When respect is present and you need to express direct masculine physical desire.", bundle: 'pro' },
+        { q: "When do you choose \"Clean Disengagement on Refusal\"?", a: "When she declines physical touch and you need to hold warm, unbothered composure.", bundle: 'pro' },
+        { q: "Why is \"Conditional Commitment\" essential across all Collections?", a: "Because it anchors all choices in high relationship standards rather than trapped entitlement.", bundle: 'pro' },
+        { q: "What is the main trap in Collections?", a: "Reverting to whiny begging, transactional bribes, or passive-aggressive sulking.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n1. **The Initiation and Disengagement Loop** — Unapologetic Initiation → Clean Disengagement on Refusal → Removing Primary Anchors\n2. **Enforcing Conditional Commitment** — Removing Primary Anchors → Conditional Commitment → Unapologetic Initiation\n3. **The Polarity Reset Chain** — Conditional Commitment → Removing Primary Anchors → Clean Disengagement on Refusal\n\nIn each sequence, the order of the steps is what restores polarity and enforces standards.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Initiation and Disengagement Loop, Enforcing Conditional Commitment, and The Polarity Reset Chain.", bundle: 'pro' },
+        { q: "What is the order in \"The Initiation and Disengagement Loop\"?", a: "Unapologetic Initiation, then Clean Disengagement on Refusal, and finally Removing Primary Anchors.", bundle: 'pro' },
+        { q: "Why does \"The Initiation and Disengagement Loop\" start with \"Unapologetic Initiation\"?", a: "Because expressing direct desire cleanly precedes handling any response or refusal.", bundle: 'pro' },
+        { q: "What is the order in \"Enforcing Conditional Commitment\"?", a: "Removing Primary Anchors, then Conditional Commitment, and finally Unapologetic Initiation.", bundle: 'pro' },
+        { q: "Why does \"Enforcing Conditional Commitment\" place \"Removing Primary Anchors\" first?", a: "Because withdrawing currencies from disrespect establishes the boundary before stating commitment standards.", bundle: 'pro' },
+        { q: "What is the order in \"The Polarity Reset Chain\"?", a: "Conditional Commitment, then Removing Primary Anchors, and finally Clean Disengagement on Refusal.", bundle: 'pro' },
+        { q: "What does \"Enforcing Conditional Commitment\" train you to do?", a: "Enforce boundaries, state commitment standards, and re-initiate physical warmth once polarity resets.", bundle: 'pro' },
+        { q: "Why do two of the three sequences include \"Clean Disengagement on Refusal\"?", a: "Because handling physical rejection cleanly is essential to maintaining unswayable frame.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n• **Starfish and Duty Sex** — declining low-desire obligation intimacy cleanly\n• **The Rejection Test** — handling physical refusals without sulking or anger\n• **Unearned Entitlement** — refusing to treat marriage as a permanent guarantee regardless of effort\n• **Begging and Reassurance** — eliminating whiny, permission-seeking initiation tactics\n• **The Tow Rope Gap** — managing widening gaps in effort and fitness without pleading\n\nEach category organizes by problem type rather than strategy.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Starfish and Duty Sex, The Rejection Test, Unearned Entitlement, Begging and Reassurance, and The Tow Rope Gap.", bundle: 'pro' },
+        { q: "How do you handle \"Starfish and Duty Sex\"?", a: "By stepping back cleanly and stating that you desire authentic passion, not obligation.", bundle: 'pro' },
+        { q: "What is the core move during \"The Rejection Test\"?", a: "Using Clean Disengagement on Refusal to hold warm, unbothered composure.", bundle: 'pro' },
+        { q: "How do you resolve \"Unearned Entitlement\"?", a: "By enforcing Conditional Commitment and removing primary anchors when disrespect rules.", bundle: 'pro' },
+        { q: "How do you handle \"Begging and Reassurance\"?", a: "By replacing whiny permission questions with Unapologetic Initiation.", bundle: 'pro' },
+        { q: "How do you resolve \"The Tow Rope Gap\"?", a: "By leading cleanly through personal excellence while holding high relationship standards.", bundle: 'pro' },
+        { q: "What is she really testing in these challenges?", a: "Whether your desire and frame are authentic and unswayable, or if you are a needy pleaser.", bundle: 'pro' },
+        { q: "Why is sulking a fatal mistake in challenges?", a: "Because sulking proves your emotional state is weak and dependent on her immediate approval.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four mindsets you practise in this pack:\n• **Anchors** — withdrawing presence from disrespect is self-respect, not abuse\n• **Initiation** — masculine sexual desire is natural and requires no permission\n• **Refusal** — physical declines do not define your value as a man\n• **Entitlement** — commitment and desire are dynamic standards maintained daily\n\nIn every one, the belief that gets in the way feels like safety or politeness from the inside.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Anchors, Initiation, Refusal, and Entitlement.", bundle: 'pro' },
+        { q: "What does \"Anchors\" teach you?", a: "That your attention, affection, and commitment are valuable currencies to be invested wisely.", bundle: 'pro' },
+        { q: "What is the core truth behind \"Initiation\"?", a: "That expressing direct physical desire is a natural masculine gift that requires no apology.", bundle: 'pro' },
+        { q: "What is the core block in the \"Refusal\" mindset?", a: "Believing that a physical rejection is a devastating verdict on your worth as a man.", bundle: 'pro' },
+        { q: "What is the core block in the \"Entitlement\" mindset?", a: "Believing that marriage automatically guarantees lifelong passion without ongoing effort.", bundle: 'pro' },
+        { q: "Why is transactional initiation a mistake?", a: "Because trading chores for sex destroys authentic desire and turns intimacy into a business trade.", bundle: 'pro' },
+        { q: "What is the definition of authentic sexual polarity?", a: "A grounded masculine leader expressing clean desire, paired with a feminine partner offering authentic warmth.", bundle: 'pro' },
+        { q: "What is the ultimate goal of these four mindsets?", a: "To shift your baseline from a needy roommate to an unswayable, passionate leader.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "AAA Anchors",
+      description: "The AAA Anchors model from Rian Stone's Praxeology Volume 3: Attention, Affection, and Commitment.\n• **Attention** — your time, presence, focus, and conversational engagement\n• **Affection** — your physical touch, warmth, romance, and sexual initiation\n• **Commitment** — your long-term relationship investment, exclusivity, and future vision\n\nUnderstanding how AAA anchors function allows a man to lead cleanly without nagging or emotional manipulation.",
+      cards: [
+        { q: "What does AAA stand for in Rian Stone's Praxeology model?", a: "Attention, Affection, and Commitment.", bundle: 'pro' },
+        { q: "What is the Attention anchor in the AAA model?", a: "Your time, active listening, focus, and conversational engagement.", bundle: 'pro' },
+        { q: "What is the Affection anchor in the AAA model?", a: "Your physical touch, warmth, romance, and sexual initiation.", bundle: 'pro' },
+        { q: "What is the Commitment anchor in the AAA model?", a: "Your long-term relationship investment, exclusivity, protection, and shared future vision.", bundle: 'pro' },
+        { q: "How do AAA anchors function as boundaries in relationship dynamics?", a: "They are currencies invested where respect and effort are returned, and withdrawn cleanly when disrespect occurs.", bundle: 'pro' },
+        { q: "What happens when a man gives unconditional AAA anchors despite disrespect?", a: "He destroys sexual polarity and teaches his partner that disrespect carries zero social cost.", bundle: 'pro' },
+        { q: "How does the AAA model tie to \"Removing Primary Anchors\"?", a: "Removing primary anchors is the tactical execution of withdrawing Attention, Affection, or Commitment cleanly.", bundle: 'pro' },
+        { q: "What is the relationship between AAA anchors and masculine frame?", a: "A grounded leader manages his AAA currencies with high self-respect, offering deep investment to a respectful partner.", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxfield4: [
+    {
+      name: "Core Idea",
+      description: "The foundational principles of Praxeology Field Reports Volume 4: Advanced Subtext & Power-Talk by Rian Stone.\n• **Power-Talk Calibration** — communicate using real-world outcomes, concrete actions, and incentives\n• **PAC Ego-State Shift** — shift out of Child/Parent reactions into Regulated Adult posture\n• **Translating Emotional Reports** — decode dramatic speeches into transient emotional weather\n• **Action-Based Affirmation** — evaluate partnership by concrete compliance, ignoring thought policing\n\nMastering advanced subtext and power-talk elevates communication to high-status masculine leadership.",
+      cards: [
+        { q: "What are the four core strategies in this pack?", a: "Power-Talk Calibration, PAC Ego-State Shift, Translating Emotional Reports, Action-Based Affirmation.", bundle: 'free' },
+        { q: "What is the primary focus of \"Advanced Subtext & Power-Talk\"?", a: "Decoding subtext, eliminating posture-talk, mastering PAC ego-states, and stopping thought policing.", bundle: 'free' },
+        { q: "What is \"Power-Talk Calibration\"?", a: "Communicating using real-world outcomes, concrete actions, and incentives rather than posture-talk moralizing.", bundle: 'free' },
+        { q: "What is the principle behind \"Translating Emotional Reports\"?", a: "Hearing dramatic speeches as real-time reports of her current emotional state, not literal truth.", bundle: 'free' },
+        { q: "What is \"Action-Based Affirmation\"?", a: "Evaluating partnership alignment by concrete compliance rather than policing her private thoughts.", bundle: 'free' },
+        { q: "What does PAC stand for in transactional analysis?", a: "Parent, Adult, and Child ego-states.", bundle: 'pro' },
+        { q: "What is \"posture-talk\" in relationship communication?", a: "Arguing over pretend moral stakes, virtue signaling, and ethical speeches rather than real outcomes.", bundle: 'pro' },
+        { q: "Why is thought policing a sign of needy weakness?", a: "Because demanding total mental enthusiasm betrays internal insecurity and an urge to mind-read.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Power-Talk Calibration",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Power-Talk Calibration\"?", a: "Grounding conversations in real-world facts, outcomes, and incentives rather than posture speeches.", bundle: 'free' },
+        { q: "What is the difference between power-talk and posture-talk?", a: "Power-talk deals in real-world outcomes and incentives; posture-talk deals in moral speeches.", bundle: 'free' },
+        { q: "How do you handle her attempt to virtue-signal during a budget discussion?", a: "Redirect the talk to bank balance figures and real financial metrics.", bundle: 'free' },
+        { q: "Why is posture-talk useless for solving daily relationship problems?", a: "Because posture-talk focuses on pretend moral high grounds rather than practical execution.", bundle: 'free' },
+        { q: "What tone should be used during Power-Talk Calibration?", a: "Calm, objective, matter-of-fact tone focused on pragmatic results.", bundle: 'free' },
+        { q: "What is \"game-talk\" in interpersonal dynamics?", a: "Using theoretical jargon and terms to debate relationship rules rather than living cleanly.", bundle: 'pro' },
+        { q: "How does Power-Talk Calibration protect your frame against moralizing?", a: "By stripping away fake ethical guilt trips and anchoring in concrete reality.", bundle: 'pro' },
+        { q: "Why do people resort to posture-talk during debates?", a: "To gain an unearned moral advantage when their practical position is weak.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "PAC Ego-State Shift",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"PAC Ego-State Shift\"?", a: "Shifting out of Child or Parent reactions into grounded, Regulated Adult posture.", bundle: 'free' },
+        { q: "What are the three ego-states in the PAC model?", a: "Parent (Preaching/Scolding), Adult (Navigational/Grounded), and Child (Adapted/Rebellious).", bundle: 'free' },
+        { q: "How do you respond when she uses a scolding, parental tone with you?", a: "Speak as an Adult, state the facts cleanly, and refuse to enter a child defense role.", bundle: 'free' },
+        { q: "Why is lecturing her like an angry father a mistake?", a: "Because preaching parent lectures alienate her and destroy Adult-to-Adult communication.", bundle: 'free' },
+        { q: "What is the \"Adapted Child\" response during an argument?", a: "Whining, giving defensive excuses, or begging for emotional forgiveness.", bundle: 'free' },
+        { q: "How does remaining in Navigational Adult neutralize her emotional triggers?", a: "It refuses to provide the child or parent counter-role, forcing the interaction back to reality.", bundle: 'pro' },
+        { q: "What vocal qualities signal a Regulated Adult ego-state?", a: "Low pitch, steady cadence, neutral volume, and concise statements.", bundle: 'pro' },
+        { q: "Why is the Adult ego-state essential for masculine leadership?", a: "Because a leader must navigate reality objectively without emotional regression.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Translating Emotional Reports",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Translating Emotional Reports\"?", a: "Decoding dramatic speeches into transient emotional state reports rather than literal truth.", bundle: 'free' },
+        { q: "Why should you never take dramatic hyperbole literally?", a: "Because dramatic speeches report current emotional weather, not objective factual depositions.", bundle: 'free' },
+        { q: "How do you translate 'You never take me anywhere!' on a Tuesday night?", a: "Translate it as 'She is feeling exhausted and low on quality attention tonight.'", bundle: 'free' },
+        { q: "How should you respond verbally to dramatic emotional statements?", a: "Acknowledge her current emotional state calmly without validating exaggerated false facts.", bundle: 'free' },
+        { q: "What happens when a man argues against dramatic words literally?", a: "He gets dragged into absurd debates over exaggerated claims and loses his frame.", bundle: 'free' },
+        { q: "What is the difference between an emotional report and a factual deposition?", a: "An emotional report expresses real-time feeling; a deposition states objective facts.", bundle: 'pro' },
+        { q: "How does translating emotional reports protect your emotional composure?", a: "It prevents you from taking offense or feeling personal guilt over dramatic hyperbole.", bundle: 'pro' },
+        { q: "Why do women use dramatic hyperbole during emotional stress?", a: "To express the full intensity of their real-time emotional state, not to state legal facts.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Action-Based Affirmation",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Action-Based Affirmation\"?", a: "Evaluating partnership by concrete compliance and respectful action, ignoring thought policing.", bundle: 'free' },
+        { q: "What is \"thought policing\" in relationship dynamics?", a: "Demanding that your partner have 100% mental enthusiasm and zero private doubts.", bundle: 'free' },
+        { q: "How should you view a partner who grumbles while executing an agreed task?", a: "Focus on the concrete execution of the task and ignore her emotional grumbling.", bundle: 'free' },
+        { q: "Why is mind-reading a toxic habit for a masculine leader?", a: "Because mind-reading breeds endless insecurity and attempts to control private thoughts.", bundle: 'free' },
+        { q: "What is the rule regarding compliance and feelings?", a: "Accept concrete action and respectful compliance; her private feelings will settle over time.", bundle: 'free' },
+        { q: "How does Action-Based Affirmation simplify relationship management?", a: "It eliminates guessing games by focusing strictly on observable behavior and results.", bundle: 'pro' },
+        { q: "What is the danger of demanding total mental enthusiasm before taking action?", a: "It stalls progress and forces you into a needy pleaser posture seeking validation.", bundle: 'pro' },
+        { q: "How does a grounded leader respond to mild sarcastic remarks during execution?", a: "Ignore the mild noise, affirm the solid execution, and keep moving forward.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n• **Decoding Subtext** — translating reports, power-talk calibration, or PAC shifts\n• **Navigating Power Dynamics** — power-talk calibration, PAC shifts, or action-based affirmation\n• **High-Status Communication** — action-based affirmation, translating reports, or power-talk calibration\n\nOne question decides nearly all of it: what aspect of subtext, power, or communication are you managing?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Decoding Subtext, Navigating Power Dynamics, and High-Status Communication.", bundle: 'pro' },
+        { q: "What is the focus of \"Decoding Subtext\"?", a: "Translating emotional hyperbole, shutting down posture-talk, and staying Adult.", bundle: 'pro' },
+        { q: "What is the focus of \"Navigating Power Dynamics\"?", a: "Power-talk, ego-state dynamics, and evaluating action over posture.", bundle: 'pro' },
+        { q: "What does \"High-Status Communication\" make you choose between?", a: "Action-based affirmation, translating emotional reports, and power-talk calibration.", bundle: 'pro' },
+        { q: "When do you choose \"Translating Emotional Reports\"?", a: "When she uses dramatic hyperbole and you need to decode her emotional state without offense.", bundle: 'pro' },
+        { q: "When do you choose \"Power-Talk Calibration\"?", a: "When she attempts to use posture-talk or virtue signaling to manipulate a decision.", bundle: 'pro' },
+        { q: "Why is \"PAC Ego-State Shift\" essential across all Collections?", a: "Because staying in Navigational Adult is required to prevent regression into emotional games.", bundle: 'pro' },
+        { q: "What is the main trap in Collections?", a: "Taking dramatic subtext literally, lecturing on theory, or policing private thoughts.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n1. **The PAC Alignment Chain** — Translating Emotional Reports → PAC Ego-State Shift → Power-Talk Calibration\n2. **The Power-Talk Shift** — Translating Emotional Reports → Power-Talk Calibration → Action-Based Affirmation\n3. **The Subtext Translation Chain** — Translating Emotional Reports → PAC Ego-State Shift → Action-Based Affirmation\n\nIn each sequence, the order of the steps is what decodes subtext and enforces frame.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The PAC Alignment Chain, The Power-Talk Shift, and The Subtext Translation Chain.", bundle: 'pro' },
+        { q: "What is the order in \"The PAC Alignment Chain\"?", a: "Translating Emotional Reports, then PAC Ego-State Shift, and finally Power-Talk Calibration.", bundle: 'pro' },
+        { q: "Why does \"The PAC Alignment Chain\" start with \"Translating Emotional Reports\"?", a: "Because decoding emotional hyperbole first prevents taking dramatic words literally.", bundle: 'pro' },
+        { q: "What is the order in \"The Power-Talk Shift\"?", a: "Translating Emotional Reports, then Power-Talk Calibration, and finally Action-Based Affirmation.", bundle: 'pro' },
+        { q: "Why does \"The Power-Talk Shift\" place \"Power-Talk Calibration\" second?", a: "Because setting practical facts follows decoding the emotional report.", bundle: 'pro' },
+        { q: "What is the order in \"The Subtext Translation Chain\"?", a: "Translating Emotional Reports, then PAC Ego-State Shift, and finally Action-Based Affirmation.", bundle: 'pro' },
+        { q: "What does \"The Subtext Translation Chain\" train you to do?", a: "Decode subtext, maintain Adult posture, and accept concrete compliance cleanly.", bundle: 'pro' },
+        { q: "Why do all three sequences rely on \"Translating Emotional Reports\"?", a: "Because translating emotional subtext is the initial gateway to high-status communication.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n• **Posture-Talk and Virtue Signaling** — dismantling fake moral high grounds\n• **The Evangelist Trap** — avoiding preaching red pill terminology and theory\n• **Subtext and Emotional Drama** — decoding hyperbole without taking offense\n• **Parent-Child Dynamics** — breaking out of scolding parent or pouting child traps\n• **Thought Policing and Mind Reading** — evaluating action over private mental enthusiasm\n\nEach category organizes by problem type rather than strategy.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Posture-Talk and Virtue Signaling, The Evangelist Trap, Subtext and Emotional Drama, Parent-Child Dynamics, and Thought Policing and Mind Reading.", bundle: 'pro' },
+        { q: "How do you handle \"Posture-Talk and Virtue Signaling\"?", a: "By using Power-Talk Calibration to redirect discussions to concrete outcomes and facts.", bundle: 'pro' },
+        { q: "What is the core move during \"The Evangelist Trap\"?", a: "Embodying strategy cleanly using Action-Based Affirmation while refusing to lecture on theory.", bundle: 'pro' },
+        { q: "How do you resolve \"Subtext and Emotional Drama\"?", a: "By using Translating Emotional Reports to hear emotional state rather than literal claims.", bundle: 'pro' },
+        { q: "How do you handle \"Parent-Child Dynamics\"?", a: "By using PAC Ego-State Shift to remain firmly in Regulated Adult posture.", bundle: 'pro' },
+        { q: "How do you resolve \"Thought Policing and Mind Reading\"?", a: "By accepting Action-Based Affirmation and focusing on observable compliance.", bundle: 'pro' },
+        { q: "What is she really testing in these challenges?", a: "Whether your communication is high-status and grounded or if you can be hooked by subtext.", bundle: 'pro' },
+        { q: "Why is virtue signaling a trap during arguments?", a: "Because it distracts from practical reality by creating fake moral trials.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four mindsets you practise in this pack:\n• **Subtext** — dramatic words report real-time emotion, not literal depositions\n• **Power-Talk** — real power operates through concrete results, not virtue signaling\n• **Ego States** — remaining in Regulated Adult posture commands real authority\n• **Thought Policing** — private thoughts belong to her; concrete compliance builds reality\n\nIn every one, the belief that gets in the way feels like honesty or intelligence from the inside.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Subtext, Power-Talk, Ego States, and Thought Policing.", bundle: 'pro' },
+        { q: "What does \"Subtext\" teach you?", a: "That taking dramatic hyperbole literally is pleaser panic that destroys frame.", bundle: 'pro' },
+        { q: "What is the core truth behind \"Power-Talk\"?", a: "That real power operates through pragmatic outcomes, incentives, and real-world facts.", bundle: 'pro' },
+        { q: "What is the core block in the \"Ego States\" mindset?", a: "Believing that you must defend yourself like a child or lecture like an angry parent.", bundle: 'pro' },
+        { q: "What is the core block in the \"Thought Policing\" mindset?", a: "Believing that leadership requires mind-reading and total mental enthusiasm from your partner.", bundle: 'pro' },
+        { q: "Why is preaching theory to your partner a beta mistake?", a: "Because lecturing reveals internal insecurity and attempts to force intellectual agreement.", bundle: 'pro' },
+        { q: "What is the definition of high-status communication?", a: "Grounded Adult posture, decoding subtext cleanly, and focusing on concrete action.", bundle: 'pro' },
+        { q: "What is the ultimate goal of these four mindsets?", a: "To elevate your communication baseline to an unhookable, high-status masculine leader.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "PAC Model and Power-Talk",
+      description: "The PAC Ego-State model and the Power/Game/Posture-Talk framework from Rian Stone's Praxeology Volume 4.\n• **Parent Ego-State** — Preaching, lecturing, scolding, or guilt-inducing authority posture\n• **Adult Ego-State** — Regulated, navigational, matter-of-fact, and outcome-focused communication\n• **Child Ego-State** — Adapted, whiny, defensive, or rebellious emotional reaction\n• **Power-Talk** — Communication based on real-world outcomes, concrete actions, and incentives\n• **Game-Talk & Posture-Talk** — Communication based on theoretical jargon, virtue signaling, and pretend moral stakes\n\nMastering these models allows a man to navigate subtext and power dynamics with complete clarity.",
+      cards: [
+        { q: "What are the three ego-states in Eric Berne's PAC model as used in praxeology?", a: "Parent, Adult, and Child ego-states.", bundle: 'pro' },
+        { q: "What characterizes the Parent ego-state in relationship debates?", a: "Preaching moral superiority, lecturing, scolding, or inducing guilt.", bundle: 'pro' },
+        { q: "What characterizes the Child ego-state in relationship debates?", a: "Adapted whining, giving defensive excuses, begging forgiveness, or pouting.", bundle: 'pro' },
+        { q: "What characterizes the Adult ego-state in high-status communication?", a: "Regulated emotion, navigational problem-solving, matter-of-fact tone, and outcome focus.", bundle: 'pro' },
+        { q: "What is the definition of \"Power-Talk\" in praxeology?", a: "Communication anchored in real-world facts, concrete outcomes, and actual incentives.", bundle: 'pro' },
+        { q: "What is \"Posture-Talk\"?", a: "Communication anchored in virtue signaling, moral high grounds, and pretend ethical stakes.", bundle: 'pro' },
+        { q: "What is \"Game-Talk\"?", a: "Using theoretical jargon and relationship terminology to debate rules rather than living cleanly.", bundle: 'pro' },
+        { q: "How does shifting to Adult ego-state break Parent-Child argument loops?", a: "By refusing the complementary child or parent role, forcing the interaction back to Adult reality.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

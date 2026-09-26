@@ -9036,4 +9036,268 @@ const mindsetCollections = {
       ]
     },
   ],
+  praxfield1: [
+    {
+      name: "Confessions",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I make a mistake, I must confess my guilt, apologize profusely, and beg for absolution to be a good partner.\"\n\nThe belief that emotional self-flagellation and begging for forgiveness demonstrates moral accountability.\n\nIt feels right because confessing diffuses immediate tension and makes you feel like a humble, honest man.\n\nBut it costs you authority, positioning you as a guilty child begging a mother for absolution.\n• **Confessions** — replacing Catholic confessions with quiet, post-tense execution\n\nMindset: a leader corrects mistakes cleanly; he does not beg for absolution.",
+      inputs: [
+        { q: "I feel the urge to apologize five times and explain myself when I forget a minor errand.", a: "\"Confessing and groveling is a child's reflex. I fix the mistake and report completion.\"", bundle: 'pro' },
+        { q: "I think that expressing deep guilt over an error proves to her that I am a good husband.", a: "\"Guilt drama is covert manipulation. Quiet execution builds real trust.\"", bundle: 'pro' },
+        { q: "I feel uncomfortable unless I confess every small flaw in my daily schedule to her.", a: "\"I am an autonomous man, not a penitent. I manage my actions without seeking absolution.\"", bundle: 'pro' },
+        { q: "I believe that making future-tense promises buys forgiveness for past mistakes.", a: "\"Future promises sell cheap comfort. I report facts only after execution.\"", bundle: 'pro' },
+        { q: "I feel guilty if I don't give a long speech explaining why I made a tactical error.", a: "\"Explanation speeches are DEERing. I state the corrective action cleanly.\"", bundle: 'pro' },
+        { q: "I want to wallow in self-pity when she points out a mistake in my work.", a: "\"Self-pity is low-status theater. I correct the fact and move forward.\"", bundle: 'pro' },
+        { q: "I think confessing my internal anxieties to her will make her respect my honesty.", a: "\"Dumping internal panic on her destroys polarity. I process anxiety with my peers.\"", bundle: 'pro' },
+        { q: "I feel forced to ask if she forgives me after I make a simple household oversight.", a: "\"Seeking forgiveness for minor oversights abdicates my authority. I fix the item.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Responsibility",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I am responsible for her happiness, her emotional weather, her medical state, and her environment.\"\n\nThe belief that an ideal husband must absorb and fix every negative emotion or inconvenience his wife experiences.\n\nIt feels right because taking total responsibility makes you feel like an all-powerful protector and savior.\n\nBut it costs you sanity, trapping you in a maze of guilt for things completely outside your control.\n• **Responsibility** — drawing a hard line of selective agency between your duties and her emotions\n\nMindset: I own my actions and standards; her internal weather belongs to her.",
+      inputs: [
+        { q: "I feel guilty and anxious whenever she is in a bad mood, assuming I must have caused it.", a: "\"I am responsible for my own actions; her emotional weather is her internal state.\"", bundle: 'pro' },
+        { q: "I think it is my fault if she feels bored or unfulfilled on a weekend afternoon.", a: "\"I direct my purpose and goals; her fulfillment is her personal responsibility.\"", bundle: 'pro' },
+        { q: "I feel forced to fix her emotional drama with her friends or family members.", a: "\"Her social conflicts belong to her. I offer calm presence, not savior intervention.\"", bundle: 'pro' },
+        { q: "I believe I must apologize if external circumstances like weather or traffic ruin her day.", a: "\"I do not control the weather or city traffic. I refuse false guilt for external factors.\"", bundle: 'pro' },
+        { q: "I feel responsible for her health choices and feel guilty if she doesn't exercise.", a: "\"I command my own health habits; her physical choices belong to her.\"", bundle: 'pro' },
+        { q: "I think that if she is anxious about our future, I must have failed as a leader.", a: "\"I set our strategic direction cleanly; processing her anxiety is her internal work.\"", bundle: 'pro' },
+        { q: "I feel compelled to change my eating habits because she feels guilty about hers.", a: "\"I maintain my nutrition standards; her feelings about food belong to her.\"", bundle: 'pro' },
+        { q: "I worry that my calm demeanor makes me responsible for her feeling angry.", a: "\"My composure is my foundation; her choice to scream is her responsibility.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Validation",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I lift weights, build my career, or improve myself, I need her praise and approval for it to be worthwhile.\"\n\nThe belief that self-improvement is a transaction designed to earn romantic rewards and female compliments.\n\nIt feels right because getting a gold star from your partner feels deeply validating and reassuring.\n\nBut it costs you polarity, turning your self-development into a desperate 'dancing monkey' performance.\n• **Validation** — killing covert improvement and acting solely for internal standards\n\nMindset: I build my body and life for my standards, not for gold stars.",
+      inputs: [
+        { q: "I feel resentful when I work out at the gym for a month and she doesn't compliment my physique.", a: "\"I lift for my own strength and standards, not to collect compliments from her.\"", bundle: 'pro' },
+        { q: "I think I should stop reading leadership books if she makes fun of my ambition.", a: "\"My intellectual growth belongs to my mission. Her cynicism does not alter my course.\"", bundle: 'pro' },
+        { q: "I want to show off my career achievements to her like a schoolboy showing a good report card.", a: "\"Seeking gold stars is a pleaser habit. I execute my work for quiet mastery.\"", bundle: 'pro' },
+        { q: "I feel tempted to abandon my clean diet if she doesn't praise my discipline.", a: "\"I eat clean for my health and energy. I need no external cheerleading.\"", bundle: 'pro' },
+        { q: "I dress well hoping she will tell me how attractive I look.", a: "\"I maintain high presentation standards for my self-respect, not for external praise.\"", bundle: 'pro' },
+        { q: "I expect her to reward me with intimacy because I completed a major home project.", a: "\"Trading home projects for intimacy is a covert contract. I build for my standards.\"", bundle: 'pro' },
+        { q: "I feel discouraged when she ignores my new professional certification.", a: "\"My skills increase my market capability. I do not require her applause.\"", bundle: 'pro' },
+        { q: "I consider quitting my early morning runs because she complains about the alarm.", a: "\"My morning endurance work is non-negotiable. I execute my discipline quietly.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Identity",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"When I make a mistake, it proves that I am fundamentally defective, incompetent, or a terrible partner.\"\n\nThe belief that tactical errors reflect your core identity, triggering panic and dramatic self-flagellation.\n\nIt feels right because calling yourself names feels like an honest, humble confession of your flaws.\n\nBut it costs you leadership, replacing concrete corrective action with dramatic identity theater.\n• **Identity** — separating tactical mistakes from core identity and taking immediate corrective action\n\nMindset: mistakes are tactical facts to correct; my identity stands unswayable.",
+      inputs: [
+        { q: "I want to call myself a useless idiot when I make a mistake on the family schedule.", a: "\"Identity labels are emotional drama. I correct the schedule error and move on.\"", bundle: 'pro' },
+        { q: "I feel like a complete failure as a husband when I forget a minor item at the grocery store.", a: "\"A missed errand is a minor fact, not an identity crisis. I buy the item.\"", bundle: 'pro' },
+        { q: "I think that making a financial miscalculation proves I am incapable of managing money.", a: "\"I miscalculated a figure. I correct the math and adjust the budget ledger.\"", bundle: 'pro' },
+        { q: "I want to indulge in self-pity when she criticizes my handling of a household repair.", a: "\"Self-pity is a covert plea for comfort. I adjust the repair technique cleanly.\"", bundle: 'pro' },
+        { q: "I feel like my authority as a man is destroyed if I drop or break a household object.", a: "\"Dropped objects are physical accidents. I sweep up the mess without identity drama.\"", bundle: 'pro' },
+        { q: "I believe I must prove I am 'a good man' whenever a tactical plan goes wrong.", a: "\"My value is not on trial over tactical mix-ups. I execute the corrective fix.\"", bundle: 'pro' },
+        { q: "I want to wallow in shame when I arrive late for an appointment.", a: "\"Shame is useless emotional noise. I acknowledge the lateness and adjust my clock.\"", bundle: 'pro' },
+        { q: "I think that making a mistake in front of her ruins my frame forever.", a: "\"Frame is how I handle reality. I handle mistakes with calm, quiet action.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxfield2: [
+    {
+      name: "Disengagement",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I walk away from a screaming argument, it proves I am a coward who is abandoning my partner.\"\n\nThe belief that staying in a circular, abusive shouting match is a sign of devotion and strength.\n\nIt feels right because staying to fight feels brave and prevents her from calling you an 'evader.'\n\nBut it costs you frame, dragging you down into childish bickering and destroying your authority.\n• **Disengagement** — understanding that exiting circular arguments is an act of mature leadership\n\nMindset: exiting a screaming match protects the relationship container.",
+      inputs: [
+        { q: "I feel guilty when I step out of the house during a circular shouting match.", a: "\"Exiting an abusive shouting loop is leadership, not abandonment. I protect my frame.\"", bundle: 'pro' },
+        { q: "I worry she will call me a coward if I refuse to debate at midnight.", a: "\"Refusing midnight debates shows self-respect. I don't trade sleep for drama.\"", bundle: 'pro' },
+        { q: "I feel compelled to stay in the room while she yells at me to prove I can take it.", a: "\"Standing as a punching bag isn't strength; it's foolishness. I step away cleanly.\"", bundle: 'pro' },
+        { q: "I think that if I just argue long enough, she will eventually see my logic.", a: "\"Logic cannot win an emotional storm. Disengaging breaks the storm.\"", bundle: 'pro' },
+        { q: "I feel like a bad partner if I don't answer every rapid-fire question she throws.", a: "\"I am not subject to interrogation. I disengage from rapid-fire baiting.\"", bundle: 'pro' },
+        { q: "I worry that stepping away will make her even angrier in the short term.", a: "\"Her short-term anger is weather. Protecting my composure is paramount.\"", bundle: 'pro' },
+        { q: "I feel forced to stay in a fight because she blocks the hallway.", a: "\"I step around calmly or move to another room. I do not engage in screaming.\"", bundle: 'pro' },
+        { q: "I think a good man should always stand his ground and debate every point.", a: "\"Verbal intercourse is optional. A wise leader chooses when to speak.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Emotional Distance",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I don't absorb her emotional panic and distress, it means I am a heartless, unfeeling robot.\"\n\nThe belief that true love requires getting emotionally hooked and panicked whenever your partner is upset.\n\nIt feels right because matching her panic feels empathetic and shows how deeply you care.\n\nBut it costs you stability, leaving the relationship with two panicked passengers and no captain.\n• **Emotional Distance** — maintaining grounded, dispassionate composure to serve as an anchor\n\nMindset: my unshakeable composure is the greatest gift I offer an anxious partner.",
+      inputs: [
+        { q: "I feel guilty for remaining calm while she is crying hysterically over a minor issue.", a: "\"My calm posture is an anchor, not coldness. I stay grounded for both of us.\"", bundle: 'pro' },
+        { q: "I worry she is right when she calls me an unfeeling robot during an argument.", a: "\"Maintaining composure is my duty as a leader. I refuse false guilt.\"", bundle: 'pro' },
+        { q: "I feel forced to match her high emotional volume so she feels 'heard.'", a: "\"Matching panic creates chaos. I maintain my low, calm pitch.\"", bundle: 'pro' },
+        { q: "I think I must fix her bad mood immediately or my frame has failed.", a: "\"Her bad mood is her internal weather. I offer presence, not forced fixes.\"", bundle: 'pro' },
+        { q: "I feel anxious when she uses dramatic tears to test my boundary.", a: "\"Tears are emotional intensity, not a reason to abandon my grounded boundary.\"", bundle: 'pro' },
+        { q: "I worry that being dispassionate will drive her away from the relationship.", a: "\"Unswayable composure commands respect. Panic destroys polarity.\"", bundle: 'pro' },
+        { q: "I feel compelled to take responsibility for her feelings of abandonment.", a: "\"Her feelings of abandonment are her internal work. I hold my firm presence.\"", bundle: 'pro' },
+        { q: "I think that if I don't panic along with her, I am being an arrogant tyrant.", a: "\"Grounded presence is authentic leadership. I stay centered in the storm.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Forgiveness",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I must carry yesterday's friction, sulk, and hold a grudge to show her that her behavior was unacceptable.\"\n\nThe belief that holding multi-day grudges and giving the silent treatment is an effective way to enforce boundaries.\n\nIt feels right because sulking makes you feel like a righteous victim punishing a wrongdoer.\n\nBut it costs you polarity, turning you into a bitter, passive-aggressive child who ruins the household.\n• **Forgiveness** — clearing the slate every morning while maintaining unbending standards\n\nMindset: I reset the slate daily; sulking is a beta move that destroys authority.",
+      inputs: [
+        { q: "I want to give her the silent treatment at breakfast because she was difficult last night.", a: "\"Sulking is passive-aggressive weakness. I reset the slate and state facts cleanly.\"", bundle: 'pro' },
+        { q: "I feel like a pushover if I greet her warmly the morning after an argument.", a: "\"A clean morning reset demonstrates high status. Grudges show internal weakness.\"", bundle: 'pro' },
+        { q: "I think that carrying a grudge for three days will teach her to respect my rules.", a: "\"Grudges breed toxic resentment. I enforce boundaries in the moment and reset daily.\"", bundle: 'pro' },
+        { q: "I want to bring up her past mistakes from last week to win a current debate.", a: "\"Last week is closed territory. I deal exclusively with today's facts.\"", bundle: 'pro' },
+        { q: "I feel uncomfortable letting go of my anger because it makes me feel powerful.", a: "\"Anger as a grudge is a crutch. Unswayable, calm presence is real power.\"", bundle: 'pro' },
+        { q: "I worry she will think her past behavior was fine if I don't sulk all weekend.", a: "\"My boundaries were set in the moment. I don't need weekend sulking to prove a point.\"", bundle: 'pro' },
+        { q: "I feel tempted to withhold warmth for a week to punish her for disrespect.", a: "\"Withholding warmth as punishment is childish. I reset the day and lead cleanly.\"", bundle: 'pro' },
+        { q: "I think a tough man should hold onto grudges to maintain his dominance.", a: "\"True strength clears the board daily. Only fragile men carry heavy grudges.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Listening",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I must act as her therapist and listen to hours of platonic gossip to prove I am a supportive husband.\"\n\nThe belief that being a good partner requires absorbing endless complaints about coworkers, friends, and relatives.\n\nIt feels right because listening to her vent feels helpful, safe, and easy compared to setting limits.\n\nBut it costs you desire, positioning you as a platonic girlfriends-substitute while destroying sexual polarity.\n• **Listening** — drawing a clear line between romantic connection and platonic gossip dumping\n\nMindset: I am her romantic partner and leader, not her platonic gossip confidant.",
+      inputs: [
+        { q: "I feel guilty for declining to listen to an hour of her workplace gossip.", a: "\"Setting limits on gossip protects our romantic polarity. I am her partner, not her therapist.\"", bundle: 'pro' },
+        { q: "I worry she will think I don't care about her life if I refuse to discuss relative drama.", a: "\"Declining relative drama keeps our focus home. I offer authentic connection instead.\"", bundle: 'pro' },
+        { q: "I feel forced to sit and analyze her friends' relationship flaws for two hours.", a: "\"Her friends' flaws are outside our domain. I redirect our talk to constructive goals.\"", bundle: 'pro' },
+        { q: "I think that listening to her badmouth people builds intimacy between us.", a: "\"Gossip builds toxic alignment, not real intimacy. I keep our speech high-status.\"", bundle: 'pro' },
+        { q: "I feel like a bad listener if I cut off circular workplace complaints after ten minutes.", a: "\"Ten minutes of venting is enough. I redirect our evening cleanly.\"", bundle: 'pro' },
+        { q: "I worry she will find another man if I don't play girlfriends-substitute for her.", a: "\"She needs a grounded masculine leader, not another girlfriend. I hold my posture.\"", bundle: 'pro' },
+        { q: "I feel compelled to give detailed advice on her female social feuds.", a: "\"Female social feuds belong to her to manage. I stay clear of platonic drama.\"", bundle: 'pro' },
+        { q: "I think that absorbing her emotional complaints is my duty as a husband.", a: "\"I offer grounded presence, not a drama dumping ground. I hold clean limits.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxfield3: [
+    {
+      name: "Anchors",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I withdraw my attention or affection when she is disrespectful, I am being an abusive, manipulative partner.\"\n\nThe belief that holding a firm boundary on your presence and touch is a form of toxic punishment.\n\nIt feels right because withdrawing attention creates short-term tension and feels less 'nice.'\n\nBut it costs you authority, forcing you to reward disrespect with unearned attention and affection.\n• **Anchors** — understanding that your attention, affection, and commitment are currencies to be invested wisely\n\nMindset: my presence and attention are valuable currencies, not unearned entitlements.",
+      inputs: [
+        { q: "I feel guilty for stepping away to my office when she speaks to me sarcastically.", a: "\"Withdrawing attention from disrespect is self-respect, not abuse. I hold my boundary.\"", bundle: 'pro' },
+        { q: "I think I must give her warm affection even when she is being cold and hostile.", a: "\"Affection is an expression of mutual warmth. I don't reward hostile behavior.\"", bundle: 'pro' },
+        { q: "I worry she will call me a cruel tyrant if I refuse to listen to her screaming.", a: "\"Refusing to sit for screaming matches protects my composure. I step away cleanly.\"", bundle: 'pro' },
+        { q: "I feel compelled to sit on the couch and be ignored while she scrolls on her phone.", a: "\"My attention is valuable. I invest my time where connection is real.\"", bundle: 'pro' },
+        { q: "I believe that withdrawing my presence makes me responsible for her bad mood.", a: "\"I own my boundary; her bad mood belongs to her. I step out cleanly.\"", bundle: 'pro' },
+        { q: "I feel forced to offer romantic date nights while she continues to disrespect my goals.", a: "\"Romantic date nights require shared respect. I invest where respect is mutual.\"", bundle: 'pro' },
+        { q: "I worry that holding a boundary on my attention will ruin our relationship peace.", a: "\"Peace bought with unearned attention is a sham. Real peace requires standards.\"", bundle: 'pro' },
+        { q: "I think a good husband should always stay in the room regardless of how rude she is.", a: "\"A grounded leader removes his presence from disrespect. I hold my line.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Initiation",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I must ask permission, make sure she is in a perfect mood, and give three excuses before initiating touch.\"\n\nThe belief that expressing direct masculine physical desire is inherently creepy, pushy, or shameful.\n\nIt feels right because asking permission protects you from immediate physical rejection.\n\nBut it costs you polarity, framing your sexual desire as a weak request for her supervision.\n• **Initiation** — expressing unapologetic physical desire cleanly from authentic masculine strength\n\nMindset: my sexual desire is natural and grounded; I express it without apology.",
+      inputs: [
+        { q: "I feel terrified to pull her close in the bedroom without asking 'Is it okay?' first.", a: "\"Asking permission reveals internal hesitation. I touch with warm, grounded confidence.\"", bundle: 'pro' },
+        { q: "I think I must give her a two-hour massage before I am allowed to initiate physical romance.", a: "\"Initiating from direct desire is authentic. I drop transactional massages.\"", bundle: 'pro' },
+        { q: "I worry she will think I am pushy if I express sexual interest on a busy weekday.", a: "\"My desire for my wife is natural and healthy. I express it cleanly.\"", bundle: 'pro' },
+        { q: "I feel ashamed of having a strong sexual drive and try to hide it from her.", a: "\"Masculine sexual drive is the engine of polarity. I own my desire proudly.\"", bundle: 'pro' },
+        { q: "I feel forced to ask tentative questions like 'Are you tired?' to gauge her mood.", a: "\"Tentative questions signal fear of rejection. I initiate cleanly or step back.\"", bundle: 'pro' },
+        { q: "I think I need her explicit verbal invitation before I can initiate physical touch.", a: "\"I lead physical touch with confident, warm posture. She can accept or decline.\"", bundle: 'pro' },
+        { q: "I feel guilty for wanting physical passion in my marriage every week.", a: "\"Desire for physical passion is legitimate. I hold high standards for intimacy.\"", bundle: 'pro' },
+        { q: "I worry that initiating directly makes me look like a selfish brute.", a: "\"Grounded, unapologetic touch is a gift of polarity. I step forward with warmth.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Refusal",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"When she turns down my physical approach, it means she is rejecting my worth as a man.\"\n\nThe belief that a physical refusal is a devastating verdict on your value, triggering anger, sulking, or panic.\n\nIt feels right because physical rejection hurts your ego, making sulking feel like justified defense.\n\nBut it costs you frame, proving to her that your emotional state is fragile and dependent on her immediate mood.\n• **Refusal** — accepting physical declines cleanly with unswayable, warm composure\n\nMindset: a physical refusal is emotional weather; my worth stands unswayable.",
+      inputs: [
+        { q: "I feel a surge of bitter anger and want to sulk when she says 'Not tonight, Love.'", a: "\"Sulking is a childish reaction to rejection. I disengage warmly and sleep peacefully.\"", bundle: 'pro' },
+        { q: "I think that if she turns down my initiation, I must punish her with cold silence for two days.", a: "\"Cold silence proves my frame collapsed. I maintain easy, warm presence.\"", bundle: 'pro' },
+        { q: "I feel like a complete failure as a man when my physical approach is declined.", a: "\"My value as a man is unswayable. A refusal is simply her current state.\"", bundle: 'pro' },
+        { q: "I want to demand an explanation and debate her logic when she says she is tired.", a: "\"Debating her refusal is DEERing panic. I accept her decline warmly and move on.\"", bundle: 'pro' },
+        { q: "I worry that accepting a refusal smoothly makes me look like a weak pushover.", a: "\"Smooth, warm disengagement demonstrates massive emotional strength.\"", bundle: 'pro' },
+        { q: "I feel compelled to give a sarcastic response when she turns down physical touch.", a: "\"Sarcasm reveals butt-hurt weakness. I maintain relaxed, high-status composure.\"", bundle: 'pro' },
+        { q: "I think that if she declines tonight, it means she will never desire me again.", a: "\"Catastrophizing a single refusal is pleaser panic. I stay centered in the present.\"", bundle: 'pro' },
+        { q: "I want to slam the door or pull the sheets away when she says no.", a: "\"Physical tantrums betray emotional instability. I kiss her cheek and rest.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Entitlement",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Marriage means she owes me unconditional commitment, physical passion, and affection forever.\"\n\nThe belief that relationship quality and passion are permanent guarantees established by a wedding ceremony.\n\nIt feels right because believing marriage is a permanent guarantee feels safe and comfortable.\n\nBut it costs you edge, causing you to stop investing in yourself while letting polarity rot.\n• **Entitlement** — understanding that commitment and desire are dynamic standards maintained daily\n\nMindset: commitment and passion are lived standards, not unearned entitlements.",
+      inputs: [
+        { q: "I feel cheated because marriage didn't automatically grant me lifelong passion.", a: "\"Marriage is a container that requires dynamic leadership and polarity. I build it daily.\"", bundle: 'pro' },
+        { q: "I think I shouldn't have to work on my fitness or frame because we signed a marriage contract.", a: "\"A contract cannot command physical desire. I maintain my personal excellence.\"", bundle: 'pro' },
+        { q: "I feel angry that she doesn't treat me with respect just because I am her husband.", a: "\"Respect is commanded through my ongoing frame, not bought with a ring.\"", bundle: 'pro' },
+        { q: "I believe she has no right to turn down physical intimacy because we are married.", a: "\"Desire cannot be coerced by obligation. I cultivate polarity and express desire.\"", bundle: 'pro' },
+        { q: "I want to use the marriage vow to guilt-trip her into acting like a passionate partner.", a: "\"Guilt trips destroy remaining desire. I lead through strength and standards.\"", bundle: 'pro' },
+        { q: "I feel forced to stay in a completely toxic dynamic because marriage is unconditional.", a: "\"My commitment is paired with mutual respect and effort. That is my line.\"", bundle: 'pro' },
+        { q: "I think that once married, I can relax into passive domestic comfort without consequence.", a: "\"Passive domestic comfort kills polarity. I maintain my visionary drive.\"", bundle: 'pro' },
+        { q: "I worry that setting conditions on relationship quality makes me a bad partner.", a: "\"High standards protect the quality of our container. I hold my line.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxfield4: [
+    {
+      name: "Subtext",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"When she says dramatic things like 'You ruin my life,' I must take her words literally and defend myself.\"\n\nThe belief that dramatic hyperbole represents literal factual depositions that require logical debate.\n\nIt feels right because taking words literally feels honest and gives you a reason to fight back.\n\nBut it costs you frame, dragging you into absurd debates over transient emotional weather.\n• **Subtext** — translating dramatic speeches into transient emotional reports\n\nMindset: dramatic words are real-time emotion, not literal depositions.",
+      inputs: [
+        { q: "I feel compelled to argue logic when she claims I 'never' do anything for the house.", a: "\"Taking 'never' literally is pleaser panic. I hear her emotional report and stay calm.\"", bundle: 'pro' },
+        { q: "I get terrified and defensive when she shouts that our marriage is a mistake.", a: "\"Her dramatic words are emotional weather. I translate her panic and hold my ground.\"", bundle: 'pro' },
+        { q: "I feel forced to write out a list of past dates to prove I don't 'neglect' her.", a: "\"Proving facts against emotional drama is DEERing. I hear her state and offer presence.\"", bundle: 'pro' },
+        { q: "I think that if she says I am selfish, it means I am objectively a bad man.", a: "\"Selfish is her word for my boundary. I translate her anger without taking guilt.\"", bundle: 'pro' },
+        { q: "I want to scream back when she makes absurd exaggerated claims about my family.", a: "\"Screaming back hooks me into her drama. I translate her stress cleanly.\"", bundle: 'pro' },
+        { q: "I feel anxious trying to decode whether her dramatic statements are true.", a: "\"Dramatic statements report her current mood, not objective truth. I stay centered.\"", bundle: 'pro' },
+        { q: "I believe I must address every exaggerated word she speaks during an argument.", a: "\"Addressing dramatic exaggeration feeds the fire. I respond to her emotional state.\"", bundle: 'pro' },
+        { q: "I worry that if I don't debate her dramatic claims, she will think she is right.", a: "\"Debating emotional noise validates it. Calm translation maintains my frame.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Power-Talk",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I don't engage in posture-talk and virtue signaling, she will think I have no moral standards.\"\n\nThe belief that participating in abstract moral debates and virtue signaling proves you are a good man.\n\nIt feels right because moral speeches feel high-status and noble during social conversations.\n\nBut it costs you authority, trapping you in pretend moral trials while ignoring real-world incentives.\n• **Power-Talk** — focusing exclusively on real-world outcomes, concrete actions, and incentives\n\nMindset: real power operates through concrete results, not virtue-signaling speeches.",
+      inputs: [
+        { q: "I feel forced to defend my moral character when she virtue-signals against my choices.", a: "\"Virtue signaling is social theater. I evaluate choices by real-world outcomes.\"", bundle: 'pro' },
+        { q: "I think I must win abstract political arguments at dinner to show my intelligence.", a: "\"Abstract political speeches don't build my home. I save energy for mission.\"", bundle: 'pro' },
+        { q: "I feel guilty for focusing on practical budget figures during emotional debates.", a: "\"Practical budget figures protect our container. Practical reality is true care.\"", bundle: 'pro' },
+        { q: "I want to debate ethical relationship rules instead of setting daily schedules.", a: "\"Debating abstract rules is an evasion strategy. I set concrete schedules.\"", bundle: 'pro' },
+        { q: "I worry she will call me cold if I evaluate career choices by market returns.", a: "\"Market returns secure our asset base. I focus on what works in reality.\"", bundle: 'pro' },
+        { q: "I feel tempted to join in posture-talk speeches to impress her family.", a: "\"Posture speeches sell cheap approval. I communicate cleanly through actions.\"", bundle: 'pro' },
+        { q: "I think that moralizing against her habits will make her change her behavior.", a: "\"Moralizing breeds resentment. Clear boundaries and incentives drive change.\"", bundle: 'pro' },
+        { q: "I worry that ignoring posture-talk makes me look uncultured.", a: "\"Grounded power deals in real results. I leave posture theater behind.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ego States",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I must defend myself like a naughty child or scold her like a father when she attacks my decisions.\"\n\nThe belief that relationship debates must be conducted from Child or Parent ego-states.\n\nIt feels right because reacting like a child or parent is an automatic, deeply ingrained emotional reflex.\n\nBut it costs you maturity, destroying Adult-to-Adult communication and eroding mutual respect.\n• **Ego States** — remaining firmly in Regulated Adult posture regardless of her emotional triggers\n\nMindset: I communicate as an Adult; I refuse child defenses and parent lectures.",
+      inputs: [
+        { q: "I feel an automatic urge to whine and give excuses when she scolds my choices.", a: "\"Whining is an Adapted Child reflex. I state facts as a grounded Adult.\"", bundle: 'pro' },
+        { q: "I want to lecture her like an angry schoolteacher when she breaks a rule.", a: "\"Lecturing is Preaching Parent theater. I enforce boundaries cleanly without speeches.\"", bundle: 'pro' },
+        { q: "I feel trapped into acting like a naughty boy begging a mother for forgiveness.", a: "\"Begging forgiveness abdicates authority. I correct mistakes cleanly as an Adult.\"", bundle: 'pro' },
+        { q: "I think I must match her toddler tantrum with my own explosive anger.", a: "\"Matching a child tantrum destroys my frame. I stay in Navigational Adult.\"", bundle: 'pro' },
+        { q: "I feel guilty for refusing to take a parental role in her personal life drama.", a: "\"I am her partner, not her father. I communicate Adult-to-Adult.\"", bundle: 'pro' },
+        { q: "I worry that staying in Adult posture will make me seem distant.", a: "\"Grounded Adult posture commands real respect. Emotional games breed chaos.\"", bundle: 'pro' },
+        { q: "I feel compelled to apologize in a submissive tone to end her disapproval.", a: "\"Submissive tone projects internal weakness. I state facts with calm voice.\"", bundle: 'pro' },
+        { q: "I think that lecturing her on theory will force her to respect my mind.", a: "\"Theory lectures alienate. Grounded execution commands respect.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Thought Policing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I must make sure she is 100% mentally enthusiastic and agrees with my choices in her mind.\"\n\nThe belief that leadership requires total mind control and emotional enthusiasm from your partner.\n\nIt feels right because having her total mental agreement feels safe, validating, and comfortable.\n\nBut it costs you focus, turning you into a needy mind-reader who polices private thoughts.\n• **Thought Policing** — evaluating partnership by concrete compliance and respectful behavior\n\nMindset: private thoughts belong to her; concrete compliance builds reality.",
+      inputs: [
+        { q: "I feel anxious and insecure if she grumbles while carrying out an agreement.", a: "\"Grumbling is her emotional processing. Concrete execution is what counts.\"", bundle: 'pro' },
+        { q: "I want to interrogate her about whether she secretly hates my new gym routine.", a: "\"Interrogating her thoughts is pleaser panic. She respects my gym schedule.\"", bundle: 'pro' },
+        { q: "I think I have failed as a leader if she isn't smiling 100% of the time.", a: "\"Her facial expressions are her domain. I focus on leading our direction.\"", bundle: 'pro' },
+        { q: "I feel compelled to ask 'Are you sure you're totally happy with this decision?' ten times.", a: "\"Repeated checking betrays internal doubt. She complies, the move is set.\"", bundle: 'pro' },
+        { q: "I worry that if she has private doubts, my plan will inevitably fail.", a: "\"Doubts are normal during change. My disciplined execution drives success.\"", bundle: 'pro' },
+        { q: "I feel forced to mind-read her body language to guess what she wants.", a: "\"Mind-reading is an exhaustion trap. I respond to clear words and actions.\"", bundle: 'pro' },
+        { q: "I think that demanding full mental enthusiasm is a sign of high standards.", a: "\"Demanding mind control is needy tyranny. Accepting action shows maturity.\"", bundle: 'pro' },
+        { q: "I feel insecure if she expresses brief hesitation before following my lead.", a: "\"Brief hesitation is natural. I lead calmly and allow her time to settle.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
