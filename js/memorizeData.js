@@ -6164,8 +6164,6 @@ const memorizeCollections = {
   praxframe1: [
     {
       name: "The Frame Tetrahedron",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theoretical base of the Praxeology model.",
       cards: [
         { q: "What are the three base pillars of Frame?", a: "Physical, Intellectual, and Emotional.", bundle: 'free' },
@@ -6308,8 +6306,6 @@ const memorizeCollections = {
   praxframe2: [
     {
       name: "Subtext Mechanics",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Key definitions for mastering intersexual communication.",
       cards: [
         { q: "What are the two channels of every conversation?", a: "Content (objective information) and Process (subtext/status outcomes).", bundle: 'free' },
@@ -6452,8 +6448,6 @@ const memorizeCollections = {
   praxframe3: [
     {
       name: "Assertive Defense Mechanics",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theoretical foundation of protecting your frame verbally.",
       cards: [
         { q: "What does DEER stand for?", a: "Defend, Excuse, Explain, Rationalize..", bundle: 'free' },
@@ -6596,8 +6590,6 @@ const memorizeCollections = {
   praxframe4: [
     {
       name: "Nice Guy Mechanics",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Key concepts from the Praxeology and \"No More Mr. Nice Guy\" models.",
       cards: [
         { q: "What is a \"Covert Contract\"?", a: "An unspoken expectation where you do something for someone hoping to get validation/sex in return.", bundle: 'free' },
@@ -6740,8 +6732,6 @@ const memorizeCollections = {
   praxframe5: [
     {
       name: "The Leader’s Vision",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Key concepts behind the \"Final Pillar.\"",
       cards: [
         { q: "What is the definition of \"Vision\" in a relationship?", a: "A generally-stated plan-of-action toward a distant but achievable goal.", bundle: 'free' },
@@ -6756,8 +6746,6 @@ const memorizeCollections = {
     },
     {
       name: "Leading Without Permission",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "",
       cards: [
         { q: "Do leaders need permission to lead?", a: "No. Thinking people have to follow so you can lead is \"ass-backwards.\"", bundle: 'free' },
@@ -6772,8 +6760,6 @@ const memorizeCollections = {
     },
     {
       name: "Push and Pull",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "",
       cards: [
         { q: "What is the emotional purpose of \"Push and Pull\"?", a: "To take her on an emotional journey that cycles between tension (Push) and release (Pull).", bundle: 'free' },
@@ -6788,8 +6774,6 @@ const memorizeCollections = {
     },
     {
       name: "Rule Zero (Rational Egoism)",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "",
       cards: [
         { q: "What is \"Rule Zero\"?", a: "Male-centric sexual strategy and a positive male identity.", bundle: 'free' },
@@ -8422,8 +8406,6 @@ const memorizeCollections = {
   danbacon1: [
     {
       name: "Creating the Spark",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Hold the core principles of Dan Bacon's flirtatious banter and attraction philosophy.",
       cards: [
         { q: "What is the \"Attraction Equation\"?", a: "Making her feel sexually attracted + being a good guy = Being \"Charming.\"", bundle: 'free' },
@@ -8582,8 +8564,6 @@ const memorizeCollections = {
   danbacon2: [
     {
       name: "Assertive Presence",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Hold the core definitions of frame control and high-status communication.",
       cards: [
         { q: "What is the \"Halo Effect\"?", a: "The psychological tendency to assume attractive people are smarter and more valuable just because of their looks.", bundle: 'free' },
@@ -8742,8 +8722,6 @@ const memorizeCollections = {
   danbacon3: [
     {
       name: "Relationship Mastery",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Hold the core definitions of Dan Bacon's relationship philosophy.",
       cards: [
         { q: "What is the \"Good Girl Switch\"?", a: "The dynamic where a woman gains pleasure and happiness out of being attentive and good to her man.", bundle: 'free' },
@@ -8888,8 +8866,6 @@ const memorizeCollections = {
   danbacon4: [
     {
       name: "Holding the Frame",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Hold the core definitions of Dan Bacon's frame and boundary philosophy.",
       cards: [
         { q: "What is a \"Ridiculous Rule\"?", a: "A test of power where a woman sets a meaningless boundary to see if her man will abide by it out of fear.", bundle: 'free' },
@@ -9265,8 +9241,6 @@ const memorizeCollections = {
   toddv1: [
     {
       name: "High-Value Openings",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Hold the core definitions of Todd V's opening philosophy.",
       cards: [
         { q: "What are the four stages of game?", a: "Open, Hook, Qualify/Connect, and Close.", bundle: 'free' },
@@ -9409,8 +9383,6 @@ const memorizeCollections = {
   toddv2: [
     {
       name: "Tension & Banter",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Definitions for the core concepts of the Todd V emotional rollercoaster.",
       cards: [
         { q: "What is the Push-Pull formula?", a: "A positive emotional spike combined with a negative emotional spike (or vice versa) in quick succession.", bundle: 'free' },
@@ -9555,8 +9527,6 @@ const memorizeCollections = {
   toddv3: [
     {
       name: "Advanced Connection",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Core definitions of Todd V's connection and blueprint philosophy.",
       cards: [
         { q: "What is the difference between Wide and Deep Rapport?", a: "Wide is touching on many topics for chemistry; Deep is exploring one topic emotionally for a bond.", bundle: 'free' },
@@ -9701,8 +9671,6 @@ const memorizeCollections = {
   toddv4: [
     {
       name: "Closing & Logistics",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Hold the core definitions of Todd V's resolution philosophy.",
       cards: [
         { q: "What are the three things to screen for a pull?", a: "1. How hot is she? 2. How down to [ __ ] is she? 3. Logistics and situation.", bundle: 'free' },
@@ -9847,8 +9815,6 @@ const memorizeCollections = {
   toddv5: [
     {
       name: "Unflappable Presence",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Hold the core definitions of Todd V's inner game and pressure-handling philosophy.",
       cards: [
         { q: "What is the ultimate long-term solution for approach anxiety?", a: "Doing enough successful approaches to have more positive references than negative ones.", bundle: 'free' },

@@ -5484,38 +5484,38 @@ const multiStepCollections = {
   praxframe1: [
     {
       name: "The Unswayable Lead",
-      guideFront: "The step you are on — say your version out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "A calibration sequence: The OODA Loop → Mental Point of Origin → The OODA Loop → Field Reporting.\nIdentify the dynamic, check your own values, take the action, and then analyze it objectively.",
       inputs: [
         {
           bundle: 'pro',
           situation: "You are headed out the door. She starts crying and says you \"don't care about the family\" because the garage is messy.",
           steps: [
-            { front: "The OODA Loop — (OODA Loop: Observe)", back: "\"She is using a 'Hamster' loop of anxiety to manipulate my protective instinct.\"" },
-            { front: "Mental Point of Origin — (Internal Check)", back: "\"I value my health and my gym time. This is my priority right now.\"" },
-            { front: "The OODA Loop — (OODA Loop: Act)", back: "\"I'm responsible for the garage and I'll handle it on Saturday. I'm going to the gym now. See you later.\"" },
-            { front: "Field Reporting — (Later that evening)", back: "\"I stayed the oak. She was mad, but I didn't buckle. My workout was excellent.\"" },
+            { front: "The OODA Loop — (OODA Loop: Observe)", back: "\"She is using a 'Hamster' loop of anxiety to manipulate my protective instinct.\"", guideFront: "Observe, adjust and act when...", guideBack: "An observation, and the next move" },
+            { front: "Mental Point of Origin — (Internal Check)", back: "\"I value my health and my gym time. This is my priority right now.\"", guideFront: "Start from what you want when...", guideBack: "Your own want, stated or thought" },
+            { front: "The OODA Loop — (OODA Loop: Act)", back: "\"I'm responsible for the garage and I'll handle it on Saturday. I'm going to the gym now. See you later.\"", guideFront: "Observe, adjust and act when...", guideBack: "An observation, and the next move" },
+            { front: "Field Reporting — (Later that evening)", back: "\"I stayed the oak. She was mad, but I didn't buckle. My workout was excellent.\"", guideFront: "Write down what you did when...", guideBack: "A past-tense note on your own actions" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You announce a career change that aligns with your long-term vision. She starts crying, accusing you of being selfish and risking the family's future.",
           steps: [
-            { front: "The OODA Loop — She is sobbing and calling you irresponsible.", back: "\"She is experiencing panic and testing if my vision is solid.\"" },
-            { front: "Mental Point of Origin — You feel a wave of guilt and want to cave.", back: "\"My vision is mine to pursue. I do not need permission to lead.\"" },
-            { front: "The OODA Loop — You speak with calm conviction.", back: "\"I hear your fear, but I've calculated the risk. This is the move I'm making.\"" },
-            { front: "Field Reporting — That night in your journal.", back: "\"I stayed calm during her storm. I didn't DEER or cave to her tears.\"" },
+            { front: "The OODA Loop — She is sobbing and calling you irresponsible.", back: "\"She is experiencing panic and testing if my vision is solid.\"", guideFront: "Observe, adjust and act when...", guideBack: "An observation, and the next move" },
+            { front: "Mental Point of Origin — You feel a wave of guilt and want to cave.", back: "\"My vision is mine to pursue. I do not need permission to lead.\"", guideFront: "Start from what you want when...", guideBack: "Your own want, stated or thought" },
+            { front: "The OODA Loop — You speak with calm conviction.", back: "\"I hear your fear, but I've calculated the risk. This is the move I'm making.\"", guideFront: "Observe, adjust and act when...", guideBack: "An observation, and the next move" },
+            { front: "Field Reporting — That night in your journal.", back: "\"I stayed calm during her storm. I didn't DEER or cave to her tears.\"", guideFront: "Write down what you did when...", guideBack: "A past-tense note on your own actions" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You replace your worn-out wardrobe with tailored, masculine clothes. She mocks you, asking who you are trying to impress.",
           steps: [
-            { front: "The OODA Loop — She rolls her eyes and makes a sarcastic comment.", back: "\"She is testing whether my new physical signal is authentic or a suit.\"" },
-            { front: "Mental Point of Origin — You feel the urge to explain or apologize.", back: "\"I dress for my own self-respect. I offer no excuses for my style.\"" },
-            { front: "The OODA Loop — You smile calmly and hold your ground.", back: "\"I like how this fits. I'm wearing it.\"" },
-            { front: "Field Reporting — Writing your review after date night.", back: "\"She poked fun at first, but held my arm closer by the end of dinner.\"" },
+            { front: "The OODA Loop — She rolls her eyes and makes a sarcastic comment.", back: "\"She is testing whether my new physical signal is authentic or a suit.\"", guideFront: "Observe, adjust and act when...", guideBack: "An observation, and the next move" },
+            { front: "Mental Point of Origin — You feel the urge to explain or apologize.", back: "\"I dress for my own self-respect. I offer no excuses for my style.\"", guideFront: "Start from what you want when...", guideBack: "Your own want, stated or thought" },
+            { front: "The OODA Loop — You smile calmly and hold your ground.", back: "\"I like how this fits. I'm wearing it.\"", guideFront: "Observe, adjust and act when...", guideBack: "An observation, and the next move" },
+            { front: "Field Reporting — Writing your review after date night.", back: "\"She poked fun at first, but held my arm closer by the end of dinner.\"", guideFront: "Write down what you did when...", guideBack: "A past-tense note on your own actions" },
           ]
         },
       ]
@@ -5530,27 +5530,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You walk in the door and she immediately snaps at you for being ten minutes late, claiming you don't value her time.",
           steps: [
-            { front: "The Physical Signal — You feel yourself shrinking and getting defensive.", back: "(Stand tall, drop your shoulders, and breathe deeply before speaking)." },
-            { front: "Mental Point of Origin — You feel a wave of anxiety about her bad mood.", back: "\"I am my own judge. I won't be talked to with disrespect.\"" },
-            { front: "The OODA Loop — You observe her anger and set the frame.", back: "\"I hear you're annoyed, but I won't engage with shouting. Let me know when you're ready to talk.\"" },
+            { front: "The Physical Signal — You feel yourself shrinking and getting defensive.", back: "(Stand tall, drop your shoulders, and breathe deeply before speaking).", guideFront: "Upgrade how you look when...", guideBack: "A deliberate change in style or grooming" },
+            { front: "Mental Point of Origin — You feel a wave of anxiety about her bad mood.", back: "\"I am my own judge. I won't be talked to with disrespect.\"", guideFront: "Start from what you want when...", guideBack: "Your own want, stated or thought" },
+            { front: "The OODA Loop — You observe her anger and set the frame.", back: "\"I hear you're annoyed, but I won't engage with shouting. Let me know when you're ready to talk.\"", guideFront: "Observe, adjust and act when...", guideBack: "An observation, and the next move" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are preparing to go to the gym on a Saturday. She sighs heavily and says \"Must be nice to just leave whenever you want.\"",
           steps: [
-            { front: "The Physical Signal — You feel the urge to slouch and look apologetic.", back: "(Maintain an upright, confident posture and keep steady eye contact)." },
-            { front: "Mental Point of Origin — You feel a pleaser impulse to cancel your workout.", back: "\"My health is essential to my frame. I am going to the gym.\"" },
-            { front: "The OODA Loop — You observe her emotional test and execute.", back: "\"I'll be back at two. Then we'll do lunch together.\"" },
+            { front: "The Physical Signal — You feel the urge to slouch and look apologetic.", back: "(Maintain an upright, confident posture and keep steady eye contact).", guideFront: "Upgrade how you look when...", guideBack: "A deliberate change in style or grooming" },
+            { front: "Mental Point of Origin — You feel a pleaser impulse to cancel your workout.", back: "\"My health is essential to my frame. I am going to the gym.\"", guideFront: "Start from what you want when...", guideBack: "Your own want, stated or thought" },
+            { front: "The OODA Loop — You observe her emotional test and execute.", back: "\"I'll be back at two. Then we'll do lunch together.\"", guideFront: "Observe, adjust and act when...", guideBack: "An observation, and the next move" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You set a clear budget limit. She gets angry at the mall, accusing you of controlling the money.",
           steps: [
-            { front: "The Physical Signal — You feel your body clenching under her public criticism.", back: "(Keep a relaxed, unswayable physical posture and quiet voice tone)." },
-            { front: "Mental Point of Origin — You feel ashamed in front of others.", back: "\"I am responsible for our long-term security. I stand by my budget.\"" },
-            { front: "The OODA Loop — You observe the public drama and hold the line.", back: "\"We're sticking to the budget today. We can discuss it calmly at home.\"" },
+            { front: "The Physical Signal — You feel your body clenching under her public criticism.", back: "(Keep a relaxed, unswayable physical posture and quiet voice tone).", guideFront: "Upgrade how you look when...", guideBack: "A deliberate change in style or grooming" },
+            { front: "Mental Point of Origin — You feel ashamed in front of others.", back: "\"I am responsible for our long-term security. I stand by my budget.\"", guideFront: "Start from what you want when...", guideBack: "Your own want, stated or thought" },
+            { front: "The OODA Loop — You observe the public drama and hold the line.", back: "\"We're sticking to the budget today. We can discuss it calmly at home.\"", guideFront: "Observe, adjust and act when...", guideBack: "An observation, and the next move" },
           ]
         },
       ]
@@ -5565,27 +5565,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "She brings up an old mistake in front of your friends to win a minor debate.",
           steps: [
-            { front: "Mental Point of Origin — You feel a surge of anger and embarrassment.", back: "\"Respect in front of others is a non-negotiable boundary for me.\"" },
-            { front: "The OODA Loop — You observe the violation and execute cleanly.", back: "\"I want to hear your thoughts, but not like this in public. Let's speak privately.\"" },
-            { front: "Field Reporting — Documenting the event that night.", back: "\"I called out the boundary calmly without shouting. She got quiet, then respected the limit.\"" },
+            { front: "Mental Point of Origin — You feel a surge of anger and embarrassment.", back: "\"Respect in front of others is a non-negotiable boundary for me.\"", guideFront: "Start from what you want when...", guideBack: "Your own want, stated or thought" },
+            { front: "The OODA Loop — You observe the violation and execute cleanly.", back: "\"I want to hear your thoughts, but not like this in public. Let's speak privately.\"", guideFront: "Observe, adjust and act when...", guideBack: "An observation, and the next move" },
+            { front: "Field Reporting — Documenting the event that night.", back: "\"I called out the boundary calmly without shouting. She got quiet, then respected the limit.\"", guideFront: "Write down what you did when...", guideBack: "A past-tense note on your own actions" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You start eating clean and lifting weights. She buys junk food and tempts you to quit your diet.",
           steps: [
-            { front: "Mental Point of Origin — You feel bad for refusing her treats.", back: "\"My physical pillar is my foundation. I won't sabotage my health.\"" },
-            { front: "The OODA Loop — You observe her subtle sabotage attempt.", back: "\"Thanks, Love, but I'm sticking to my meal plan tonight.\"" },
-            { front: "Field Reporting — Journaling after a month of lifting.", back: "\"She stopped bringing junk food home once she realized I wouldn't touch it.\"" },
+            { front: "Mental Point of Origin — You feel bad for refusing her treats.", back: "\"My physical pillar is my foundation. I won't sabotage my health.\"", guideFront: "Start from what you want when...", guideBack: "Your own want, stated or thought" },
+            { front: "The OODA Loop — You observe her subtle sabotage attempt.", back: "\"Thanks, Love, but I'm sticking to my meal plan tonight.\"", guideFront: "Observe, adjust and act when...", guideBack: "An observation, and the next move" },
+            { front: "Field Reporting — Journaling after a month of lifting.", back: "\"She stopped bringing junk food home once she realized I wouldn't touch it.\"", guideFront: "Write down what you did when...", guideBack: "A past-tense note on your own actions" },
           ]
         },
         {
           bundle: 'pro',
           situation: "After you refuse to compromise on a key goal, she slams the bedroom door and goes completely silent for two days.",
           steps: [
-            { front: "Mental Point of Origin — You feel panic and fear of abandonment.", back: "\"I am safe. I do not need her immediate approval to be a complete man.\"" },
-            { front: "The OODA Loop — You observe her withdrawal without chasing her.", back: "(Stay occupied with your work and gym routine. Settle into the silence.)" },
-            { front: "Field Reporting — Writing your entry on day three.", back: "\"I didn't chase or apologize. She broke the silence on day three and was affectionate.\"" },
+            { front: "Mental Point of Origin — You feel panic and fear of abandonment.", back: "\"I am safe. I do not need her immediate approval to be a complete man.\"", guideFront: "Start from what you want when...", guideBack: "Your own want, stated or thought" },
+            { front: "The OODA Loop — You observe her withdrawal without chasing her.", back: "(Stay occupied with your work and gym routine. Settle into the silence.)", guideFront: "Observe, adjust and act when...", guideBack: "An observation, and the next move" },
+            { front: "Field Reporting — Writing your entry on day three.", back: "\"I didn't chase or apologize. She broke the silence on day three and was affectionate.\"", guideFront: "Write down what you did when...", guideBack: "A past-tense note on your own actions" },
           ]
         },
       ]
@@ -5594,36 +5594,36 @@ const multiStepCollections = {
   praxframe2: [
     {
       name: "From Hamster to Harmony",
-      guideFront: "What she said, and the strategy you respond with.",
-      guideBack: "How it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "A calibration sequence: Medium is the Message → Status Calibration → Gratitude/Lead.\nIdentify the emotional process, choose a high-status quadrant, and lead back to connection.",
       inputs: [
         {
           bundle: 'pro',
           situation: "You walk in 30 minutes late. She starts shouting: \"You obviously don't care about my time! You're so selfish!\"",
           steps: [
-            { front: "The Medium is the Message — (Identify Process)", back: "\"She is on the 'Hamster Wheel' of anxiety. She wants comfort through my strength.\"" },
-            { front: "Status/Harmony Calibration — (Higher Status/Cooperative)", back: "\"I hear you're frustrated, Love. I got stuck, and I'm here now. Come give me a hug.\"" },
-            { front: "Whisper’s Rule — (She softens and says \"I just want you to be here.\")", back: "(Internal) \"She wants to feel like I am a priority she can count on.\"" },
-            { front: "Gratitude Frame-Check — (She says \"You look good in that suit, even if you are an asshole.\")", back: "\"I know. And I'm glad I'm home to show you.\"" },
+            { front: "The Medium is the Message — (Identify Process)", back: "\"She is on the 'Hamster Wheel' of anxiety. She wants comfort through my strength.\"", guideFront: "Answer the feeling underneath when...", guideBack: "The feeling, named back" },
+            { front: "Status/Harmony Calibration — (Higher Status/Cooperative)", back: "\"I hear you're frustrated, Love. I got stuck, and I'm here now. Come give me a hug.\"", guideFront: "Take the high, warm position when...", guideBack: "A higher-status, cooperative line" },
+            { front: "Whisper’s Rule — (She softens and says \"I just want you to be here.\")", back: "(Internal) \"She wants to feel like I am a priority she can count on.\"", guideFront: "Translate the wish underneath when...", guideBack: "The feeling she wants to have" },
+            { front: "Gratitude Frame-Check — (She says \"You look good in that suit, even if you are an asshole.\")", back: "\"I know. And I'm glad I'm home to show you.\"", guideFront: "Take the compliment cleanly when...", guideBack: "A short, confident thanks" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She slams cabinet doors and snaps: \"No one ever helps me in this house, I do everything alone!\"",
           steps: [
-            { front: "Status/Harmony Calibration — You feel the urge to bark back or hide.", back: "\"I stay high-status and high-harmony: unswayable, calm, and warm.\"" },
-            { front: "Whisper’s Rule — You know repeating \"I did the dishes\" will only escalate the fight.", back: "\"I stop debating facts. She heard me; she is expressing emotional overload.\"" },
-            { front: "Gratitude Frame-Check — She calms down and sighs: \"Thanks for not shouting back at me.\"", back: "\"I accept her appreciation warmly without needing her validation to feel grounded.\"" },
+            { front: "Status/Harmony Calibration — You feel the urge to bark back or hide.", back: "\"I stay high-status and high-harmony: unswayable, calm, and warm.\"", guideFront: "Take the high, warm position when...", guideBack: "A higher-status, cooperative line" },
+            { front: "Whisper’s Rule — You know repeating \"I did the dishes\" will only escalate the fight.", back: "\"I stop debating facts. She heard me; she is expressing emotional overload.\"", guideFront: "Translate the wish underneath when...", guideBack: "The feeling she wants to have" },
+            { front: "Gratitude Frame-Check — She calms down and sighs: \"Thanks for not shouting back at me.\"", back: "\"I accept her appreciation warmly without needing her validation to feel grounded.\"", guideFront: "Take the compliment cleanly when...", guideBack: "A short, confident thanks" },
           ]
         },
         {
           bundle: 'pro',
           situation: "At a dinner party with friends, she makes a sharp, sarcastic dig about your cooking skills.",
           steps: [
-            { front: "Status/Harmony Calibration — You feel your body clench and want to make a bitter comeback.", back: "(Keep an unswayable, amused smile and hold high-status warmth)." },
-            { front: "Whisper’s Rule — She looks at you to see if you lost your composure.", back: "\"I don't argue or defend my cooking in public. I let her test bounce off my frame.\"" },
-            { front: "Gratitude Frame-Check — Later in the car, she apologizes: \"Sorry I was snappy earlier, you're actually a great cook.\"", back: "\"Thank you. I appreciate you saying that, Love.\"" },
+            { front: "Status/Harmony Calibration — You feel your body clench and want to make a bitter comeback.", back: "(Keep an unswayable, amused smile and hold high-status warmth).", guideFront: "Take the high, warm position when...", guideBack: "A higher-status, cooperative line" },
+            { front: "Whisper’s Rule — She looks at you to see if you lost your composure.", back: "\"I don't argue or defend my cooking in public. I let her test bounce off my frame.\"", guideFront: "Translate the wish underneath when...", guideBack: "The feeling she wants to have" },
+            { front: "Gratitude Frame-Check — Later in the car, she apologizes: \"Sorry I was snappy earlier, you're actually a great cook.\"", back: "\"Thank you. I appreciate you saying that, Love.\"", guideFront: "Take the compliment cleanly when...", guideBack: "A short, confident thanks" },
           ]
         },
       ]
@@ -5638,27 +5638,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "She sends six long, angry text messages back-to-back while you are at work, accusing you of ignoring her.",
           steps: [
-            { front: "The Medium is the Message — You realize texting is the wrong medium for emotional resolution.", back: "\"Texting carries anger poorly. I stop replying over text immediately.\"" },
-            { front: "Whisper’s Rule — She texts \"Why aren't you answering me?!\"", back: "\"She hears my silence. I don't send five paragraphs of logical excuses.\"" },
-            { front: "Status/Harmony Calibration — You call her briefly on your lunch break.", back: "\"I'm working right now, Love. I'll be home at six and we'll talk smoothly then.\"" },
+            { front: "The Medium is the Message — You realize texting is the wrong medium for emotional resolution.", back: "\"Texting carries anger poorly. I stop replying over text immediately.\"", guideFront: "Answer the feeling underneath when...", guideBack: "The feeling, named back" },
+            { front: "Whisper’s Rule — She texts \"Why aren't you answering me?!\"", back: "\"She hears my silence. I don't send five paragraphs of logical excuses.\"", guideFront: "Translate the wish underneath when...", guideBack: "The feeling she wants to have" },
+            { front: "Status/Harmony Calibration — You call her briefly on your lunch break.", back: "\"I'm working right now, Love. I'll be home at six and we'll talk smoothly then.\"", guideFront: "Take the high, warm position when...", guideBack: "A higher-status, cooperative line" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You walk into the living room and she gives you a cold look, turns her back, and sighs loudly.",
           steps: [
-            { front: "The Medium is the Message — You observe the physical signal of her withdrawal.", back: "\"Her medium is coldness. She is testing if my frame can handle her distance.\"" },
-            { front: "Whisper’s Rule — You are tempted to ask \"What's wrong?\" five times in a row.", back: "\"Asking repeatedly communicates anxiety. I state my presence once.\"" },
-            { front: "Status/Harmony Calibration — You sit next to her on the couch with calm warmth.", back: "\"I see you're in your head right now. I'm right here when you want to connect.\"" },
+            { front: "The Medium is the Message — You observe the physical signal of her withdrawal.", back: "\"Her medium is coldness. She is testing if my frame can handle her distance.\"", guideFront: "Answer the feeling underneath when...", guideBack: "The feeling, named back" },
+            { front: "Whisper’s Rule — You are tempted to ask \"What's wrong?\" five times in a row.", back: "\"Asking repeatedly communicates anxiety. I state my presence once.\"", guideFront: "Translate the wish underneath when...", guideBack: "The feeling she wants to have" },
+            { front: "Status/Harmony Calibration — You sit next to her on the couch with calm warmth.", back: "\"I see you're in your head right now. I'm right here when you want to connect.\"", guideFront: "Take the high, warm position when...", guideBack: "A higher-status, cooperative line" },
           ]
         },
         {
           bundle: 'pro',
           situation: "While shopping for furniture, she gets angry over a minor price difference and snaps at the store clerk.",
           steps: [
-            { front: "The Medium is the Message — You recognize her outburst is driven by decision fatigue and anxiety.", back: "\"The argument isn't about the sofa price; her system is overwhelmed.\"" },
-            { front: "Whisper’s Rule — You feel the urge to lecture her on good manners in public.", back: "\"Lecturing her now will escalate her hamster. I step in quietly.\"" },
-            { front: "Status/Harmony Calibration — You take her hand calmly and steer the decision.", back: "\"We're taking a break. Let's grab a coffee outside, and I'll make the call on the sofa.\"" },
+            { front: "The Medium is the Message — You recognize her outburst is driven by decision fatigue and anxiety.", back: "\"The argument isn't about the sofa price; her system is overwhelmed.\"", guideFront: "Answer the feeling underneath when...", guideBack: "The feeling, named back" },
+            { front: "Whisper’s Rule — You feel the urge to lecture her on good manners in public.", back: "\"Lecturing her now will escalate her hamster. I step in quietly.\"", guideFront: "Translate the wish underneath when...", guideBack: "The feeling she wants to have" },
+            { front: "Status/Harmony Calibration — You take her hand calmly and steer the decision.", back: "\"We're taking a break. Let's grab a coffee outside, and I'll make the call on the sofa.\"", guideFront: "Take the high, warm position when...", guideBack: "A higher-status, cooperative line" },
           ]
         },
       ]
@@ -5673,27 +5673,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "She brings you coffee in bed and says \"You're such a good boy, you deserve a treat for doing the laundry.\"",
           steps: [
-            { front: "Gratitude Frame-Check — You feel a subtle sense of being mothered or patronized.", back: "\"I check the frame. She is positioning herself as the approving mother.\"" },
-            { front: "Whisper’s Rule — You realize accepting her patronizing frame kills sexual polarity.", back: "\"I don't debate her choice of words. I shift the subtext playfully.\"" },
-            { front: "Status/Harmony Calibration — You pull her close with masculine warmth.", back: "\"Thanks for the coffee, beautiful. Now come here and kiss me.\"" },
+            { front: "Gratitude Frame-Check — You feel a subtle sense of being mothered or patronized.", back: "\"I check the frame. She is positioning herself as the approving mother.\"", guideFront: "Take the compliment cleanly when...", guideBack: "A short, confident thanks" },
+            { front: "Whisper’s Rule — You realize accepting her patronizing frame kills sexual polarity.", back: "\"I don't debate her choice of words. I shift the subtext playfully.\"", guideFront: "Translate the wish underneath when...", guideBack: "The feeling she wants to have" },
+            { front: "Status/Harmony Calibration — You pull her close with masculine warmth.", back: "\"Thanks for the coffee, beautiful. Now come here and kiss me.\"", guideFront: "Take the high, warm position when...", guideBack: "A higher-status, cooperative line" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You complete a major home renovation project. She says \"It looks great, but why didn't you finish the hallway paint too?\"",
           steps: [
-            { front: "Gratitude Frame-Check — You feel a surge of resentment that your hard work wasn't enough.", back: "\"She is testing if my self-worth depends on her total approval.\"" },
-            { front: "Whisper’s Rule — You know arguing about the hallway paint is taking the bait.", back: "\"I don't defend my timeline or list the hours I worked.\"" },
-            { front: "Status/Harmony Calibration — You own your work with calm satisfaction.", back: "\"The living room looks fantastic. I'll get to the hallway on my own schedule.\"" },
+            { front: "Gratitude Frame-Check — You feel a surge of resentment that your hard work wasn't enough.", back: "\"She is testing if my self-worth depends on her total approval.\"", guideFront: "Take the compliment cleanly when...", guideBack: "A short, confident thanks" },
+            { front: "Whisper’s Rule — You know arguing about the hallway paint is taking the bait.", back: "\"I don't defend my timeline or list the hours I worked.\"", guideFront: "Translate the wish underneath when...", guideBack: "The feeling she wants to have" },
+            { front: "Status/Harmony Calibration — You own your work with calm satisfaction.", back: "\"The living room looks fantastic. I'll get to the hallway on my own schedule.\"", guideFront: "Take the high, warm position when...", guideBack: "A higher-status, cooperative line" },
           ]
         },
         {
           bundle: 'pro',
           situation: "After a tough week where you held your boundaries firmly, she hugs you tightly and whispers \"I feel so safe with you.\"",
           steps: [
-            { front: "Gratitude Frame-Check — You feel a temptation to get needy and say \"Do you really mean that?\"", back: "\"I receive her genuine appreciation without becoming dependent on it.\"" },
-            { front: "Whisper’s Rule — You feel the deep connection carried through her physical surrender.", back: "\"Her medium is touch and emotional opening. I don't need to over-explain.\"" },
-            { front: "Status/Harmony Calibration — You hold her firmly with quiet, masculine strength.", back: "\"I've got us, Love. Always.\"" },
+            { front: "Gratitude Frame-Check — You feel a temptation to get needy and say \"Do you really mean that?\"", back: "\"I receive her genuine appreciation without becoming dependent on it.\"", guideFront: "Take the compliment cleanly when...", guideBack: "A short, confident thanks" },
+            { front: "Whisper’s Rule — You feel the deep connection carried through her physical surrender.", back: "\"Her medium is touch and emotional opening. I don't need to over-explain.\"", guideFront: "Translate the wish underneath when...", guideBack: "The feeling she wants to have" },
+            { front: "Status/Harmony Calibration — You hold her firmly with quiet, masculine strength.", back: "\"I've got us, Love. Always.\"", guideFront: "Take the high, warm position when...", guideBack: "A higher-status, cooperative line" },
           ]
         },
       ]
@@ -5702,35 +5702,35 @@ const multiStepCollections = {
   praxframe3: [
     {
       name: "The Assertive Shield",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "A reaktiv sequence: Fogging → Negative Inquiry → Broken Record.\nAbsorb the emotional hit, clarify the specific issue, and hold the line on the decision.",
       inputs: [
         {
           bundle: 'pro',
           situation: "You decided to stay late to finish a project. She is livid: \"You care more about your boss than your family! You're so selfish!\"",
           steps: [
-            { front: "Fogging — \"I see why you'd think that. It's late and you've been alone all evening.\"", back: "\"I hear how much you're hurting. It makes sense you'd be angry.\"." },
-            { front: "Negative Inquiry — she snaps: \"You always have an excuse!\".", back: "\"What specifically about my decision to stay late feels like a betrayal to you?\"." },
-            { front: "Broken Record — she starts listing old grievances from last year.", back: "\"I hear those things. And, I'm working late tonight to finish this project.\"." },
+            { front: "Fogging — \"I see why you'd think that. It's late and you've been alone all evening.\"", back: "\"I hear how much you're hurting. It makes sense you'd be angry.\".", guideFront: "Grant what might be true when...", guideBack: "A partial agreement" },
+            { front: "Negative Inquiry — she snaps: \"You always have an excuse!\".", back: "\"What specifically about my decision to stay late feels like a betrayal to you?\".", guideFront: "Ask what specifically is wrong when...", guideBack: "A question for specifics" },
+            { front: "Broken Record — she starts listing old grievances from last year.", back: "\"I hear those things. And, I'm working late tonight to finish this project.\".", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Your boss confronts you about a delayed report, accusing you of being irresponsible.",
           steps: [
-            { front: "Fogging — He shouts that the report was submitted past the deadline.", back: "\"You're right, the report was submitted past the five o'clock deadline.\"" },
-            { front: "Negative Inquiry — He glares and asks why you are so careless.", back: "\"What specifically about my submission process seemed careless to you?\"" },
-            { front: "Broken Record — He demands you work all weekend to redo the entire analysis.", back: "\"I hear your frustration, but the analysis is complete and I will present it on Monday.\"" },
+            { front: "Fogging — He shouts that the report was submitted past the deadline.", back: "\"You're right, the report was submitted past the five o'clock deadline.\"", guideFront: "Grant what might be true when...", guideBack: "A partial agreement" },
+            { front: "Negative Inquiry — He glares and asks why you are so careless.", back: "\"What specifically about my submission process seemed careless to you?\"", guideFront: "Ask what specifically is wrong when...", guideBack: "A question for specifics" },
+            { front: "Broken Record — He demands you work all weekend to redo the entire analysis.", back: "\"I hear your frustration, but the analysis is complete and I will present it on Monday.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Your mother scolds you over the phone, claiming you are selfish for not staying the whole week.",
           steps: [
-            { front: "Fogging — She says you aren't spending as much time at home as you used to.", back: "\"You're right, I am spending fewer days at the house this year.\"" },
-            { front: "Negative Inquiry — She sighs heavily and asks why you don't care about family anymore.", back: "\"What is it about my three-day visit that makes you feel I don't care about the family?\"" },
-            { front: "Broken Record — She demands you change your flight and stay for seven days.", back: "\"I know you want a longer visit, but I am staying for three days.\"" },
+            { front: "Fogging — She says you aren't spending as much time at home as you used to.", back: "\"You're right, I am spending fewer days at the house this year.\"", guideFront: "Grant what might be true when...", guideBack: "A partial agreement" },
+            { front: "Negative Inquiry — She sighs heavily and asks why you don't care about family anymore.", back: "\"What is it about my three-day visit that makes you feel I don't care about the family?\"", guideFront: "Ask what specifically is wrong when...", guideBack: "A question for specifics" },
+            { front: "Broken Record — She demands you change your flight and stay for seven days.", back: "\"I know you want a longer visit, but I am staying for three days.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
           ]
         },
       ]
@@ -5745,27 +5745,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You forgot to buy milk, and she snaps: \"You never remember anything, you're completely unreliable!\"",
           steps: [
-            { front: "Negative Assertion — She points out the missing milk.", back: "\"You're right, I forgot the milk. That was my mistake.\"" },
-            { front: "Fogging — She fumes that now breakfast is ruined for tomorrow.", back: "\"It's true that not having milk makes breakfast inconvenient.\"" },
-            { front: "Broken Record — She demands you drive back to the store immediately in a storm.", back: "\"I won't be driving back out tonight, but I will pick it up tomorrow morning.\"" },
+            { front: "Negative Assertion — She points out the missing milk.", back: "\"You're right, I forgot the milk. That was my mistake.\"", guideFront: "Own the flaw calmly when...", guideBack: "A calm admission" },
+            { front: "Fogging — She fumes that now breakfast is ruined for tomorrow.", back: "\"It's true that not having milk makes breakfast inconvenient.\"", guideFront: "Grant what might be true when...", guideBack: "A partial agreement" },
+            { front: "Broken Record — She demands you drive back to the store immediately in a storm.", back: "\"I won't be driving back out tonight, but I will pick it up tomorrow morning.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You arrived 15 minutes late for a dinner date, and she attacks your character.",
           steps: [
-            { front: "Negative Assertion — She points out you are late.", back: "\"You're right, I'm 15 minutes late. That was my error.\"" },
-            { front: "Fogging — She complains that you don't respect her schedule.", back: "\"It's understandable that you feel your time wasn't respected.\"" },
-            { front: "Broken Record — She demands you apologize five times and pay for the whole meal to make up for it.", back: "\"I've acknowledged my lateness, and I'm ready to enjoy our dinner now.\"" },
+            { front: "Negative Assertion — She points out you are late.", back: "\"You're right, I'm 15 minutes late. That was my error.\"", guideFront: "Own the flaw calmly when...", guideBack: "A calm admission" },
+            { front: "Fogging — She complains that you don't respect her schedule.", back: "\"It's understandable that you feel your time wasn't respected.\"", guideFront: "Grant what might be true when...", guideBack: "A partial agreement" },
+            { front: "Broken Record — She demands you apologize five times and pay for the whole meal to make up for it.", back: "\"I've acknowledged my lateness, and I'm ready to enjoy our dinner now.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You miscalculated a bill payment, causing a small overdraft fee, and she panics.",
           steps: [
-            { front: "Negative Assertion — She shows you the fee notice.", back: "\"You're right, I miscalculated that payment. It was my oversight.\"" },
-            { front: "Fogging — She shouts that you are ruining the family's financial future.", back: "\"It's true that overdraft fees are an unnecessary waste of money.\"" },
-            { front: "Broken Record — She demands that you hand over all financial control to her immediately.", back: "\"I've absorbed the fee, and I am keeping my responsibility for managing the budget.\"" },
+            { front: "Negative Assertion — She shows you the fee notice.", back: "\"You're right, I miscalculated that payment. It was my oversight.\"", guideFront: "Own the flaw calmly when...", guideBack: "A calm admission" },
+            { front: "Fogging — She shouts that you are ruining the family's financial future.", back: "\"It's true that overdraft fees are an unnecessary waste of money.\"", guideFront: "Grant what might be true when...", guideBack: "A partial agreement" },
+            { front: "Broken Record — She demands that you hand over all financial control to her immediately.", back: "\"I've absorbed the fee, and I am keeping my responsibility for managing the budget.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
           ]
         },
       ]
@@ -5780,27 +5780,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You announce you are taking a weekend motorcycle trip, and she says \"You're being so thoughtless lately.\"",
           steps: [
-            { front: "Negative Inquiry — She glares at you with crossed arms.", back: "\"What specifically am I doing that feels thoughtless to you?\"" },
-            { front: "Fogging — She says you're going away during a weekend when the lawn needs mowing.", back: "\"It's true that the lawn will need mowing this weekend.\"" },
-            { front: "Broken Record — She insists you cancel the trip to do yard work.", back: "\"I'm going on the trip this weekend, and I will mow the lawn on Tuesday evening.\"" },
+            { front: "Negative Inquiry — She glares at you with crossed arms.", back: "\"What specifically am I doing that feels thoughtless to you?\"", guideFront: "Ask what specifically is wrong when...", guideBack: "A question for specifics" },
+            { front: "Fogging — She says you're going away during a weekend when the lawn needs mowing.", back: "\"It's true that the lawn will need mowing this weekend.\"", guideFront: "Grant what might be true when...", guideBack: "A partial agreement" },
+            { front: "Broken Record — She insists you cancel the trip to do yard work.", back: "\"I'm going on the trip this weekend, and I will mow the lawn on Tuesday evening.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You decide to enroll in an evening certification course, and she mutters \"You're always wasting time.\"",
           steps: [
-            { front: "Negative Inquiry — She rolls her eyes at your course syllabus.", back: "\"What about this certification course seems like a waste of time to you?\"" },
-            { front: "Fogging — She says it takes two evenings away from watching TV together.", back: "\"It's true that I'll be out of the house on Tuesday and Thursday nights.\"" },
-            { front: "Broken Record — She tells you to drop the class immediately.", back: "\"I understand your concern, but I am taking the course.\"" },
+            { front: "Negative Inquiry — She rolls her eyes at your course syllabus.", back: "\"What about this certification course seems like a waste of time to you?\"", guideFront: "Ask what specifically is wrong when...", guideBack: "A question for specifics" },
+            { front: "Fogging — She says it takes two evenings away from watching TV together.", back: "\"It's true that I'll be out of the house on Tuesday and Thursday nights.\"", guideFront: "Grant what might be true when...", guideBack: "A partial agreement" },
+            { front: "Broken Record — She tells you to drop the class immediately.", back: "\"I understand your concern, but I am taking the course.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
           ]
         },
         {
           bundle: 'pro',
           situation: "After a dinner party, she says \"You were acting so arrogant tonight.\"",
           steps: [
-            { front: "Negative Inquiry — You look at her calmly in the car.", back: "\"What specifically did I say or do tonight that seemed arrogant?\"" },
-            { front: "Fogging — She says you dominated the conversation about real estate investments.", back: "\"You're right, I spoke at length about real estate.\"" },
-            { front: "Broken Record — She demands you promise never to talk about finance in public again.", back: "\"I enjoy discussing finance, and I'll continue sharing my thoughts when relevant.\"" },
+            { front: "Negative Inquiry — You look at her calmly in the car.", back: "\"What specifically did I say or do tonight that seemed arrogant?\"", guideFront: "Ask what specifically is wrong when...", guideBack: "A question for specifics" },
+            { front: "Fogging — She says you dominated the conversation about real estate investments.", back: "\"You're right, I spoke at length about real estate.\"", guideFront: "Grant what might be true when...", guideBack: "A partial agreement" },
+            { front: "Broken Record — She demands you promise never to talk about finance in public again.", back: "\"I enjoy discussing finance, and I'll continue sharing my thoughts when relevant.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
           ]
         },
       ]
@@ -5809,38 +5809,38 @@ const multiStepCollections = {
   praxframe4: [
     {
       name: "Breaking the \"Save-A-Ho\" Cycle",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "A sequence for handling a partner's manipulative tears: The Oak → Killing Covert Contracts → No DEERing.\nStop reacting to the crying, stop trying to \"fix\" her mood to get peace, and stop justifying your boundaries.",
       inputs: [
         {
           bundle: 'pro',
           situation: "You are packing your gym bag. She starts crying: \"You don't care about my feelings! You're so selfish for leaving me alone!\"",
           steps: [
-            { front: "The Oak — \"I'm tough to get along with if I don't get my workout in.\"", back: "(Continue packing bag) \"I hear you're upset. I'm still going to the gym.\"" },
-            { front: "Killing Covert Contracts — she says, \"If you loved me, you'd stay.\"", back: "(Internal) \"I'm not staying to 'earn' her love. I'm going to benefit myself.\"" },
-            { front: "No DEERing — she demands, \"Why is your gym more important than me?\".", back: "\"Because I've decided my fitness is a priority. I'll be back at seven.\"" },
-            { front: "The Oak — (Later, when you return and she is still \"Still-Facing\" you).", back: "\"The birds are still singing. I'm going to go make some eggs.\"" },
+            { front: "The Oak — \"I'm tough to get along with if I don't get my workout in.\"", back: "(Continue packing bag) \"I hear you're upset. I'm still going to the gym.\"", guideFront: "Stay grounded through her storm when...", guideBack: "An unbothered, steady line" },
+            { front: "Killing Covert Contracts — she says, \"If you loved me, you'd stay.\"", back: "(Internal) \"I'm not staying to 'earn' her love. I'm going to benefit myself.\"", guideFront: "Ask directly or give freely when...", guideBack: "A direct ask, or a gift with no strings" },
+            { front: "No DEERing — she demands, \"Why is your gym more important than me?\".", back: "\"Because I've decided my fitness is a priority. I'll be back at seven.\"", guideFront: "Just state your decision when...", guideBack: "A plain statement of the decision" },
+            { front: "The Oak — (Later, when you return and she is still \"Still-Facing\" you).", back: "\"The birds are still singing. I'm going to go make some eggs.\"", guideFront: "Stay grounded through her storm when...", guideBack: "An unbothered, steady line" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She comes to you crying about credit card debt caused by her impulsive spending, hoping you will pay it off to be her hero.",
           steps: [
-            { front: "Killing Covert Contracts — You feel the urge to pay her debt expecting her to treat you like a king.", back: "\"I stop buying love through financial bailouts. Bailing her out won't earn her respect.\"" },
-            { front: "No DEERing — She asks why you won't just write a check from your savings account.", back: "\"I won't be paying off your credit card balance.\"" },
-            { front: "Controlled Anger — She throws a tantrum, calling you a stingy, selfish boyfriend.", back: "\"I won't be shamed for managing my own money. Tone it down now.\"" },
-            { front: "The Oak — She goes completely silent and sulks on the couch for two days.", back: "(Maintain an unswayable, calm presence and stay occupied with your own priorities)." },
+            { front: "Killing Covert Contracts — You feel the urge to pay her debt expecting her to treat you like a king.", back: "\"I stop buying love through financial bailouts. Bailing her out won't earn her respect.\"", guideFront: "Ask directly or give freely when...", guideBack: "A direct ask, or a gift with no strings" },
+            { front: "No DEERing — She asks why you won't just write a check from your savings account.", back: "\"I won't be paying off your credit card balance.\"", guideFront: "Just state your decision when...", guideBack: "A plain statement of the decision" },
+            { front: "Controlled Anger — She throws a tantrum, calling you a stingy, selfish boyfriend.", back: "\"I won't be shamed for managing my own money. Tone it down now.\"", guideFront: "Mark the line firmly when...", guideBack: "A firm, deliberate stop" },
+            { front: "The Oak — She goes completely silent and sulks on the couch for two days.", back: "(Maintain an unswayable, calm presence and stay occupied with your own priorities).", guideFront: "Stay grounded through her storm when...", guideBack: "An unbothered, steady line" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She calls you at midnight crying because her ex-boyfriend sent her a mean text, wanting you to fix her emotional crisis.",
           steps: [
-            { front: "Killing Covert Contracts — You feel the pleaser impulse to play white knight and fix her drama.", back: "\"I am her partner, not her emotional therapist or white knight savior.\"" },
-            { front: "No DEERing — She asks why you aren't driving over immediately to comfort her.", back: "\"I'm staying home tonight. We can talk about it tomorrow when you're rested.\"" },
-            { front: "Controlled Anger — She accuses you of being cold and unfeeling compared to her ex.", back: "\"Comparing me to your ex is unacceptable. Do not use that line again.\"" },
-            { front: "The Oak — She hangs up on you in a rage.", back: "(Set your phone down, breathe deeply into your belly, and go to sleep peacefully)." },
+            { front: "Killing Covert Contracts — You feel the pleaser impulse to play white knight and fix her drama.", back: "\"I am her partner, not her emotional therapist or white knight savior.\"", guideFront: "Ask directly or give freely when...", guideBack: "A direct ask, or a gift with no strings" },
+            { front: "No DEERing — She asks why you aren't driving over immediately to comfort her.", back: "\"I'm staying home tonight. We can talk about it tomorrow when you're rested.\"", guideFront: "Just state your decision when...", guideBack: "A plain statement of the decision" },
+            { front: "Controlled Anger — She accuses you of being cold and unfeeling compared to her ex.", back: "\"Comparing me to your ex is unacceptable. Do not use that line again.\"", guideFront: "Mark the line firmly when...", guideBack: "A firm, deliberate stop" },
+            { front: "The Oak — She hangs up on you in a rage.", back: "(Set your phone down, breathe deeply into your belly, and go to sleep peacefully).", guideFront: "Stay grounded through her storm when...", guideBack: "An unbothered, steady line" },
           ]
         },
       ]
@@ -5855,27 +5855,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You spent all Saturday cleaning the garage expecting her to reward you with enthusiasm, but she barely notices.",
           steps: [
-            { front: "Killing Covert Contracts — You feel bitter resentment rising because she didn't praise your hard work.", back: "\"I clean the garage for my own standards, not to buy her sexual approval.\"" },
-            { front: "No DEERing — She asks why you're looking frustrated, and you're tempted to give a long speech.", back: "\"I wanted a clean garage, so I cleaned it. I'm taking a break now.\"" },
-            { front: "Controlled Anger — She snaps sarcastically \"Well, don't expect a medal for doing basic house work!\"", back: "\"Drop the sarcasm. I did the work cleanly; I won't tolerate snide remarks.\"" },
+            { front: "Killing Covert Contracts — You feel bitter resentment rising because she didn't praise your hard work.", back: "\"I clean the garage for my own standards, not to buy her sexual approval.\"", guideFront: "Ask directly or give freely when...", guideBack: "A direct ask, or a gift with no strings" },
+            { front: "No DEERing — She asks why you're looking frustrated, and you're tempted to give a long speech.", back: "\"I wanted a clean garage, so I cleaned it. I'm taking a break now.\"", guideFront: "Just state your decision when...", guideBack: "A plain statement of the decision" },
+            { front: "Controlled Anger — She snaps sarcastically \"Well, don't expect a medal for doing basic house work!\"", back: "\"Drop the sarcasm. I did the work cleanly; I won't tolerate snide remarks.\"", guideFront: "Mark the line firmly when...", guideBack: "A firm, deliberate stop" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You agree to host her demanding relatives for a full week, expecting her to treat you with immense affection in return.",
           steps: [
-            { front: "Killing Covert Contracts — You realize you agreed to host them purely as a covert contract to win her favor.", back: "\"I stop using family favors to buy affection. Hosting relatives must be a clean choice.\"" },
-            { front: "No DEERing — She asks why you're setting a limit of three days for their stay next time.", back: "\"Three days is the limit for hosting visitors in our home.\"" },
-            { front: "Controlled Anger — She shouts that you hate her family and are being a terrible husband.", back: "\"I love your family, but I will not be yelled at in my own kitchen. Lower your voice.\"" },
+            { front: "Killing Covert Contracts — You realize you agreed to host them purely as a covert contract to win her favor.", back: "\"I stop using family favors to buy affection. Hosting relatives must be a clean choice.\"", guideFront: "Ask directly or give freely when...", guideBack: "A direct ask, or a gift with no strings" },
+            { front: "No DEERing — She asks why you're setting a limit of three days for their stay next time.", back: "\"Three days is the limit for hosting visitors in our home.\"", guideFront: "Just state your decision when...", guideBack: "A plain statement of the decision" },
+            { front: "Controlled Anger — She shouts that you hate her family and are being a terrible husband.", back: "\"I love your family, but I will not be yelled at in my own kitchen. Lower your voice.\"", guideFront: "Mark the line firmly when...", guideBack: "A firm, deliberate stop" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You listen to her rant about her boss for two hours every evening, expecting her to ask about your day or offer intimacy.",
           steps: [
-            { front: "Killing Covert Contracts — You realize you've been playing her therapist hoping she'll appreciate your patience.", back: "\"I am not her emotional dumping ground. I give attention from desire, not obligation.\"" },
-            { front: "No DEERing — She gets annoyed when you stand up after twenty minutes to go work out.", back: "\"I've listened to your work recap, and now I am heading to my workout.\"" },
-            { front: "Controlled Anger — She snaps \"So my career problems are just boring to you?!\"", back: "\"I won't be guilt-tripped for taking care of my fitness. We are done with this tone.\"" },
+            { front: "Killing Covert Contracts — You realize you've been playing her therapist hoping she'll appreciate your patience.", back: "\"I am not her emotional dumping ground. I give attention from desire, not obligation.\"", guideFront: "Ask directly or give freely when...", guideBack: "A direct ask, or a gift with no strings" },
+            { front: "No DEERing — She gets annoyed when you stand up after twenty minutes to go work out.", back: "\"I've listened to your work recap, and now I am heading to my workout.\"", guideFront: "Just state your decision when...", guideBack: "A plain statement of the decision" },
+            { front: "Controlled Anger — She snaps \"So my career problems are just boring to you?!\"", back: "\"I won't be guilt-tripped for taking care of my fitness. We are done with this tone.\"", guideFront: "Mark the line firmly when...", guideBack: "A firm, deliberate stop" },
           ]
         },
       ]
@@ -5890,27 +5890,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "During a vacation planning chat, she gets overwhelmed and starts shouting that you are ruining the trip.",
           steps: [
-            { front: "The Oak — She slams her glass on the table and fumes with anger.", back: "(Breathe deeply into your chest, drop your shoulders, and hold unswayable, calm eye contact)." },
-            { front: "Controlled Anger — She points her finger at your face and yells \"You're a selfish jerk!\"", back: "\"Remove your finger from my face and stop shouting now.\"" },
-            { front: "No DEERing — She asks why you won't apologize for your hotel choices.", back: "\"I picked a great hotel within our budget. The reservation is set.\"" },
+            { front: "The Oak — She slams her glass on the table and fumes with anger.", back: "(Breathe deeply into your chest, drop your shoulders, and hold unswayable, calm eye contact).", guideFront: "Stay grounded through her storm when...", guideBack: "An unbothered, steady line" },
+            { front: "Controlled Anger — She points her finger at your face and yells \"You're a selfish jerk!\"", back: "\"Remove your finger from my face and stop shouting now.\"", guideFront: "Mark the line firmly when...", guideBack: "A firm, deliberate stop" },
+            { front: "No DEERing — She asks why you won't apologize for your hotel choices.", back: "\"I picked a great hotel within our budget. The reservation is set.\"", guideFront: "Just state your decision when...", guideBack: "A plain statement of the decision" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She is two hours late getting ready for an important dinner, and blames you for not reminding her.",
           steps: [
-            { front: "The Oak — She paces around frantically complaining that you didn't give her a 30-minute warning.", back: "(Stay centered in your seat, keep your posture upright, and breathe calmly)." },
-            { front: "Controlled Anger — She screams \"This is all your fault for sitting there doing nothing!\"", back: "\"Do not project your delay onto me. I was ready an hour ago.\"" },
-            { front: "No DEERing — She demands to know why you won't drive ten miles over the speed limit.", back: "\"I drive at a safe speed. We will arrive when we arrive.\"" },
+            { front: "The Oak — She paces around frantically complaining that you didn't give her a 30-minute warning.", back: "(Stay centered in your seat, keep your posture upright, and breathe calmly).", guideFront: "Stay grounded through her storm when...", guideBack: "An unbothered, steady line" },
+            { front: "Controlled Anger — She screams \"This is all your fault for sitting there doing nothing!\"", back: "\"Do not project your delay onto me. I was ready an hour ago.\"", guideFront: "Mark the line firmly when...", guideBack: "A firm, deliberate stop" },
+            { front: "No DEERing — She demands to know why you won't drive ten miles over the speed limit.", back: "\"I drive at a safe speed. We will arrive when we arrive.\"", guideFront: "Just state your decision when...", guideBack: "A plain statement of the decision" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She confronts you aggressively about a business expense, accusing you of hiding money from her.",
           steps: [
-            { front: "The Oak — She stands over your desk waving bank statements and shouting.", back: "(Maintain an unswayable physical posture, rest your hands flat on the desk, and stay present)." },
-            { front: "Controlled Anger — She calls you a liar and a thief.", back: "\"I am neither a liar nor a thief. Speak to me with respect or leave my office.\"" },
-            { front: "No DEERing — She demands a line-by-line justification for every business receipt.", back: "\"I manage my business accounts responsibly. I offer no further breakdown.\"" },
+            { front: "The Oak — She stands over your desk waving bank statements and shouting.", back: "(Maintain an unswayable physical posture, rest your hands flat on the desk, and stay present).", guideFront: "Stay grounded through her storm when...", guideBack: "An unbothered, steady line" },
+            { front: "Controlled Anger — She calls you a liar and a thief.", back: "\"I am neither a liar nor a thief. Speak to me with respect or leave my office.\"", guideFront: "Mark the line firmly when...", guideBack: "A firm, deliberate stop" },
+            { front: "No DEERing — She demands a line-by-line justification for every business receipt.", back: "\"I manage my business accounts responsibly. I offer no further breakdown.\"", guideFront: "Just state your decision when...", guideBack: "A plain statement of the decision" },
           ]
         },
       ]
@@ -5919,35 +5919,35 @@ const multiStepCollections = {
   praxframe5: [
     {
       name: "The Visionary Lead",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "A sequence for establishing a new direction: Leading Without Permission → The Leader’s Vision → Push and Pull. Take the first step autonomously, explain the \"why\" in terms of your vision, and manage her emotional response.",
       inputs: [
         {
           bundle: 'pro',
           situation: "You've decided the family spends too much time on screens. You've planned an outdoor weekend without asking for permission.",
           steps: [
-            { front: "Leading Without Permission — she asks \"What are we doing Saturday?\".", back: "\"I've booked a cabin for the weekend. Pack for hiking, we're leaving at eight AM.\"" },
-            { front: "The Leader’s Vision — she complains that she'll miss her shows.", back: "\"I see us becoming a family that values adventure over screens. I want us to have real stories to tell.\"" },
-            { front: "Push and Pull — she gets quiet and huffy about the lack of Wi-Fi.", back: "(Smile and give her a kiss) \"I love your passion for Netflix. You're going to love the view even more. Come here.\"" },
+            { front: "Leading Without Permission — she asks \"What are we doing Saturday?\".", back: "\"I've booked a cabin for the weekend. Pack for hiking, we're leaving at eight AM.\"", guideFront: "Take charge on your own terms when...", guideBack: "A plan you've already set" },
+            { front: "The Leader’s Vision — she complains that she'll miss her shows.", back: "\"I see us becoming a family that values adventure over screens. I want us to have real stories to tell.\"", guideFront: "Share where you're taking things when...", guideBack: "A picture of the future" },
+            { front: "Push and Pull — she gets quiet and huffy about the lack of Wi-Fi.", back: "(Smile and give her a kiss) \"I love your passion for Netflix. You're going to love the view even more. Come here.\"", guideFront: "Warm up, then challenge when...", guideBack: "Warmth, then a push" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are working on a difficult task (like fixing a fence or a car) and she is critiquing your method.",
           steps: [
-            { front: "Leading Without Permission — she says \"You're doing that wrong, my dad did it differently.\".", back: "\"I'm handling this to my standard. It suits me just fine.\"" },
-            { front: "Rule Zero (Rational Egoism) — she keeps prodding for you to \"explain\" your logic.", back: "(Continue working silently. Need nothing from her judgment.)" },
-            { front: "The Leader’s Vision — she finally asks why you're even doing it yourself.", back: "\"I'm building the skills to maintain our own world. I see us being completely autonomous in five years.\"" },
+            { front: "Leading Without Permission — she says \"You're doing that wrong, my dad did it differently.\".", back: "\"I'm handling this to my standard. It suits me just fine.\"", guideFront: "Take charge on your own terms when...", guideBack: "A plan you've already set" },
+            { front: "Rule Zero (Rational Egoism) — she keeps prodding for you to \"explain\" your logic.", back: "(Continue working silently. Need nothing from her judgment.)", guideFront: "Ask what's in it for you when...", guideBack: "Your own interest, put first" },
+            { front: "The Leader’s Vision — she finally asks why you're even doing it yourself.", back: "\"I'm building the skills to maintain our own world. I see us being completely autonomous in five years.\"", guideFront: "Share where you're taking things when...", guideBack: "A picture of the future" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You've bought a new, high-status wardrobe and she is testing your confidence in it.",
           steps: [
-            { front: "Rule Zero (Rational Egoism) — she asks \"Why did you spend so much on these clothes?\".", back: "\"Because I decided I wanted to communicate my value more clearly. I like the look.\"" },
-            { front: "Push and Pull — she says \"I think it's a bit much for our neighborhood.\".", back: "(Smile) \"I know, you always did have a hard time keeping up with me. You look great too, though.\"" },
-            { front: "The Leader’s Vision — she asks if you're trying to impress other women.", back: "\"I'm building the image of the man I intend to be. I want a world where we are the best-dressed couple in the room.\"" },
+            { front: "Rule Zero (Rational Egoism) — she asks \"Why did you spend so much on these clothes?\".", back: "\"Because I decided I wanted to communicate my value more clearly. I like the look.\"", guideFront: "Ask what's in it for you when...", guideBack: "Your own interest, put first" },
+            { front: "Push and Pull — she says \"I think it's a bit much for our neighborhood.\".", back: "(Smile) \"I know, you always did have a hard time keeping up with me. You look great too, though.\"", guideFront: "Warm up, then challenge when...", guideBack: "Warmth, then a push" },
+            { front: "The Leader’s Vision — she asks if you're trying to impress other women.", back: "\"I'm building the image of the man I intend to be. I want a world where we are the best-dressed couple in the room.\"", guideFront: "Share where you're taking things when...", guideBack: "A picture of the future" },
           ]
         },
       ]
@@ -5962,27 +5962,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You recognize that staying in your current city is stalling your career growth and family environment.",
           steps: [
-            { front: "Rule Zero (Rational Egoism) — You feel the pleaser impulse to stay quiet and accept mediocrity.", back: "\"My mission and growth come first. I won't sacrifice our future for comfort.\"" },
-            { front: "The Leader’s Vision — She asks why you're looking at property listings in another state.", back: "\"We are moving to Texas to lower taxes, secure better land, and double our space.\"" },
-            { front: "Leading Without Permission — She hesitates and says she isn't sure about packing.", back: "\"I've scheduled the realtor for Saturday and set our moving timeline for June.\"" },
+            { front: "Rule Zero (Rational Egoism) — You feel the pleaser impulse to stay quiet and accept mediocrity.", back: "\"My mission and growth come first. I won't sacrifice our future for comfort.\"", guideFront: "Ask what's in it for you when...", guideBack: "Your own interest, put first" },
+            { front: "The Leader’s Vision — She asks why you're looking at property listings in another state.", back: "\"We are moving to Texas to lower taxes, secure better land, and double our space.\"", guideFront: "Share where you're taking things when...", guideBack: "A picture of the future" },
+            { front: "Leading Without Permission — She hesitates and says she isn't sure about packing.", back: "\"I've scheduled the realtor for Saturday and set our moving timeline for June.\"", guideFront: "Take charge on your own terms when...", guideBack: "A plan you've already set" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You decide to leave your corporate job to build your own business venture.",
           steps: [
-            { front: "Rule Zero (Rational Egoism) — You feel fear about risking her immediate approval.", back: "\"I am my own primary authority. Building my own enterprise is my priority.\"" },
-            { front: "The Leader’s Vision — She panics about losing the steady corporate paycheck.", back: "\"This business gives us true asset ownership and unlimited income ceiling in three years.\"" },
-            { front: "Leading Without Permission — She asks if you should wait another year before resigning.", back: "\"I submitted my resignation today. We launch the new firm on Monday.\"" },
+            { front: "Rule Zero (Rational Egoism) — You feel fear about risking her immediate approval.", back: "\"I am my own primary authority. Building my own enterprise is my priority.\"", guideFront: "Ask what's in it for you when...", guideBack: "Your own interest, put first" },
+            { front: "The Leader’s Vision — She panics about losing the steady corporate paycheck.", back: "\"This business gives us true asset ownership and unlimited income ceiling in three years.\"", guideFront: "Share where you're taking things when...", guideBack: "A picture of the future" },
+            { front: "Leading Without Permission — She asks if you should wait another year before resigning.", back: "\"I submitted my resignation today. We launch the new firm on Monday.\"", guideFront: "Take charge on your own terms when...", guideBack: "A plan you've already set" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You notice your health and physique slipping, affecting your energy and authority.",
           steps: [
-            { front: "Rule Zero (Rational Egoism) — You realize you've been putting everyone else's schedule before your health.", back: "\"My physical foundation is non-negotiable. I prioritize my body first.\"" },
-            { front: "The Leader’s Vision — She asks why you're changing the entire household meal plan.", back: "\"We are building athletic physique, high energy, and longevity for our family.\"" },
-            { front: "Leading Without Permission — She complains about throwing away the pantry junk food.", back: "\"I cleared out the junk food today and hired a personal trainer for six am.\"" },
+            { front: "Rule Zero (Rational Egoism) — You realize you've been putting everyone else's schedule before your health.", back: "\"My physical foundation is non-negotiable. I prioritize my body first.\"", guideFront: "Ask what's in it for you when...", guideBack: "Your own interest, put first" },
+            { front: "The Leader’s Vision — She asks why you're changing the entire household meal plan.", back: "\"We are building athletic physique, high energy, and longevity for our family.\"", guideFront: "Share where you're taking things when...", guideBack: "A picture of the future" },
+            { front: "Leading Without Permission — She complains about throwing away the pantry junk food.", back: "\"I cleared out the junk food today and hired a personal trainer for six am.\"", guideFront: "Take charge on your own terms when...", guideBack: "A plan you've already set" },
           ]
         },
       ]
@@ -5997,27 +5997,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "The relationship feels comfortable, predictable, and devoid of sexual spark.",
           steps: [
-            { front: "Rule Zero (Rational Egoism) — You feel needy for her attention and validation.", back: "\"My worth comes from my mission, not from her immediate romantic validation.\"" },
-            { front: "Push and Pull — She acts indifferent during dinner on Friday night.", back: "(Focus intensely on your work and gym, then take her on an unannounced weekend trip)." },
-            { front: "The Leader’s Vision — She opens up and smiles as you drive toward the coast.", back: "\"This weekend is just a preview of the adventure-filled life we are building together.\"" },
+            { front: "Rule Zero (Rational Egoism) — You feel needy for her attention and validation.", back: "\"My worth comes from my mission, not from her immediate romantic validation.\"", guideFront: "Ask what's in it for you when...", guideBack: "Your own interest, put first" },
+            { front: "Push and Pull — She acts indifferent during dinner on Friday night.", back: "(Focus intensely on your work and gym, then take her on an unannounced weekend trip).", guideFront: "Warm up, then challenge when...", guideBack: "Warmth, then a push" },
+            { front: "The Leader’s Vision — She opens up and smiles as you drive toward the coast.", back: "\"This weekend is just a preview of the adventure-filled life we are building together.\"", guideFront: "Share where you're taking things when...", guideBack: "A picture of the future" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She makes a sarcastic remark about your ambition in front of her friends.",
           steps: [
-            { front: "Rule Zero (Rational Egoism) — You feel a wave of anger and desire to DEER.", back: "\"I am unswayable. Her snide remark does not alter my value or direction.\"" },
-            { front: "Push and Pull — She looks to see if she got a rise out of you.", back: "(Hold calm, cool silence and step away, then return hours later with warm, magnetic energy)." },
-            { front: "The Leader’s Vision — She apologizes quietly and asks about your upcoming project.", back: "\"My energy goes into building our empire. I focus only on what expands our vision.\"" },
+            { front: "Rule Zero (Rational Egoism) — You feel a wave of anger and desire to DEER.", back: "\"I am unswayable. Her snide remark does not alter my value or direction.\"", guideFront: "Ask what's in it for you when...", guideBack: "Your own interest, put first" },
+            { front: "Push and Pull — She looks to see if she got a rise out of you.", back: "(Hold calm, cool silence and step away, then return hours later with warm, magnetic energy).", guideFront: "Warm up, then challenge when...", guideBack: "Warmth, then a push" },
+            { front: "The Leader’s Vision — She apologizes quietly and asks about your upcoming project.", back: "\"My energy goes into building our empire. I focus only on what expands our vision.\"", guideFront: "Share where you're taking things when...", guideBack: "A picture of the future" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You realize you've been spending every evening watching TV together in passive comfort.",
           steps: [
-            { front: "Rule Zero (Rational Egoism) — You catch yourself falling into the comfortable pleaser trap.", back: "\"Comfort is the enemy of my mission. I refuse to drift in passive routine.\"" },
-            { front: "Push and Pull — She asks why you're closing your laptop and putting on a tailored jacket.", back: "\"I'm heading out for a business meeting. I'll see you late tonight, Love.\"" },
-            { front: "The Leader’s Vision — She waits up for you and asks to hear about your plans.", back: "\"We are stepping up our lifestyle. I'm building our legacy step by step.\"" },
+            { front: "Rule Zero (Rational Egoism) — You catch yourself falling into the comfortable pleaser trap.", back: "\"Comfort is the enemy of my mission. I refuse to drift in passive routine.\"", guideFront: "Ask what's in it for you when...", guideBack: "Your own interest, put first" },
+            { front: "Push and Pull — She asks why you're closing your laptop and putting on a tailored jacket.", back: "\"I'm heading out for a business meeting. I'll see you late tonight, Love.\"", guideFront: "Warm up, then challenge when...", guideBack: "Warmth, then a push" },
+            { front: "The Leader’s Vision — She waits up for you and asks to hear about your plans.", back: "\"We are stepping up our lifestyle. I'm building our legacy step by step.\"", guideFront: "Share where you're taking things when...", guideBack: "A picture of the future" },
           ]
         },
       ]
@@ -7111,70 +7111,70 @@ const multiStepCollections = {
   danbacon1: [
     {
       name: "Moving from \"Nice Guy\" to \"Lover\"",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Step 1: The Statement-Question Combo (start easy) -> Step 2: Making Fun of Her Answers (create friction) -> Step 3: Misinterpreting Intent (sexualize). This sequence moves the interaction from neutral to high-attraction.",
       inputs: [
         {
           bundle: 'pro',
           situation: "You see a stylish co-worker you haven't spoken to much standing by the drinks table.",
           steps: [
-            { front: "The Statement-Question Combo — share your status.", back: "\"I'm just taking a break from the networking madness. How are you finding the event so far?\"" },
-            { front: "Making Fun of Her Answers — she says she is an \"Accountant.\"", back: "\"An accountant? I knew it! You have that 'I’m secretly a math genius' look. Where are you hiding your calculator?\"" },
-            { front: "Misinterpreting Intent — she giggles and says \"You're funny.\"", back: "\"Flattery will get you nowhere, but keep it coming. I've seen the way you've been looking at me—you're totally trying to seduce me, aren't you?\"" },
+            { front: "The Statement-Question Combo — share your status.", back: "\"I'm just taking a break from the networking madness. How are you finding the event so far?\"", guideFront: "Share your view, then ask when...", guideBack: "An opinion, then a question" },
+            { front: "Making Fun of Her Answers — she says she is an \"Accountant.\"", back: "\"An accountant? I knew it! You have that 'I’m secretly a math genius' look. Where are you hiding your calculator?\"", guideFront: "Tease what she just told you when...", guideBack: "A joking label for what she said" },
+            { front: "Misinterpreting Intent — she giggles and says \"You're funny.\"", back: "\"Flattery will get you nowhere, but keep it coming. I've seen the way you've been looking at me—you're totally trying to seduce me, aren't you?\"", guideFront: "Act like she's hitting on you when...", guideBack: "A mock accusation of flirting" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You see a stylish woman sitting near you holding a notebook.",
           steps: [
-            { front: "The Statement-Question Combo — share your status.", back: "\"I'm just taking a quick break from a busy morning. How is your day going so far?\"" },
-            { front: "Making Fun of Her Answers — she says she is writing a romance novel.", back: "\"A romance novel? Oh, so you're a secret hopeless romantic. I bet your main character is super dramatic.\"" },
-            { front: "Misinterpreting Intent — she giggles and says you're observant.", back: "\"Flattery will get you nowhere, but keep going. You're totally hitting on me right now, aren't you?\"" },
+            { front: "The Statement-Question Combo — share your status.", back: "\"I'm just taking a quick break from a busy morning. How is your day going so far?\"", guideFront: "Share your view, then ask when...", guideBack: "An opinion, then a question" },
+            { front: "Making Fun of Her Answers — she says she is writing a romance novel.", back: "\"A romance novel? Oh, so you're a secret hopeless romantic. I bet your main character is super dramatic.\"", guideFront: "Tease what she just told you when...", guideBack: "A joking label for what she said" },
+            { front: "Misinterpreting Intent — she giggles and says you're observant.", back: "\"Flattery will get you nowhere, but keep going. You're totally hitting on me right now, aren't you?\"", guideFront: "Act like she's hitting on you when...", guideBack: "A mock accusation of flirting" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You stand near the bar next to an attractive woman waiting for her drink.",
           steps: [
-            { front: "The Statement-Question Combo — comment on the vibe.", back: "\"I'm really loving the atmosphere up here tonight. What do you think of the view?\"" },
-            { front: "Making Fun of Her Answers — she says she works in corporate finance.", back: "\"Corporate finance? An accountant type! I knew it, you have that secret nerd energy. Where's your calculator?\"" },
-            { front: "Misinterpreting Intent — she laughs and touches your arm.", back: "\"Woah, settle down! You're already throwing yourself at me? I told you, I'm a gentleman.\"" },
+            { front: "The Statement-Question Combo — comment on the vibe.", back: "\"I'm really loving the atmosphere up here tonight. What do you think of the view?\"", guideFront: "Share your view, then ask when...", guideBack: "An opinion, then a question" },
+            { front: "Making Fun of Her Answers — she says she works in corporate finance.", back: "\"Corporate finance? An accountant type! I knew it, you have that secret nerd energy. Where's your calculator?\"", guideFront: "Tease what she just told you when...", guideBack: "A joking label for what she said" },
+            { front: "Misinterpreting Intent — she laughs and touches your arm.", back: "\"Woah, settle down! You're already throwing yourself at me? I told you, I'm a gentleman.\"", guideFront: "Act like she's hitting on you when...", guideBack: "A mock accusation of flirting" },
           ]
         },
       ]
     },
     {
       name: "The \"Unpredictable\" Closer",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Step 1: Unexpected Reactions (break the pattern) -> Step 2: Playfully Challenging Humor (test her) -> Step 3: Misinterpreting Intent (assume the lead).",
       inputs: [
         {
           bundle: 'pro',
           situation: "You have just finished a first date and are walking her to her car or door.",
           steps: [
-            { front: "Unexpected Reactions — set a playful boundary.", back: "\"Look, we can walk together, but no holding hands yet. I don't move that fast—you're going to have to win me over more.\"" },
-            { front: "Playfully Challenging Humor — she laughs and asks \"Oh really?\"", back: "\"Exactly. You seem cool, but you also look like trouble. I'm not sure if I should trust you yet.\"" },
-            { front: "Misinterpreting Intent — she reaches for her keys and touches your hand.", back: "\"Woah, settle down! You're already throwing yourself at me? I told you, I'm a gentleman. Just take my number and we'll see if you behave.\"" },
+            { front: "Unexpected Reactions — set a playful boundary.", back: "\"Look, we can walk together, but no holding hands yet. I don't move that fast—you're going to have to win me over more.\"", guideFront: "React with a playful surprise when...", guideBack: "A silly, unexpected twist" },
+            { front: "Playfully Challenging Humor — she laughs and asks \"Oh really?\"", back: "\"Exactly. You seem cool, but you also look like trouble. I'm not sure if I should trust you yet.\"", guideFront: "Tease that she's trouble when...", guideBack: "A playful doubt about her" },
+            { front: "Misinterpreting Intent — she reaches for her keys and touches your hand.", back: "\"Woah, settle down! You're already throwing yourself at me? I told you, I'm a gentleman. Just take my number and we'll see if you behave.\"", guideFront: "Act like she's hitting on you when...", guideBack: "A mock accusation of flirting" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are leaving a lounge together and heading toward the street.",
           steps: [
-            { front: "Unexpected Reactions — set a playful boundary.", back: "\"Look, we can walk together, but no holding hands yet. I don't move that fast—you have to win me over first.\"" },
-            { front: "Playfully Challenging Humor — she laughs and asks why.", back: "\"You seem cool, but you also look like trouble. I'm not sure if I should trust you yet.\"" },
-            { front: "Misinterpreting Intent — she reaches into her purse for her phone.", back: "\"Woah, taking my number already? Settle down girl, don't be so forward!\"" },
+            { front: "Unexpected Reactions — set a playful boundary.", back: "\"Look, we can walk together, but no holding hands yet. I don't move that fast—you have to win me over first.\"", guideFront: "React with a playful surprise when...", guideBack: "A silly, unexpected twist" },
+            { front: "Playfully Challenging Humor — she laughs and asks why.", back: "\"You seem cool, but you also look like trouble. I'm not sure if I should trust you yet.\"", guideFront: "Tease that she's trouble when...", guideBack: "A playful doubt about her" },
+            { front: "Misinterpreting Intent — she reaches into her purse for her phone.", back: "\"Woah, taking my number already? Settle down girl, don't be so forward!\"", guideFront: "Act like she's hitting on you when...", guideBack: "A mock accusation of flirting" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You have been talking for ten minutes and it is time to rejoin your friends.",
           steps: [
-            { front: "Unexpected Reactions — stop and look at her playfully.", back: "\"Well, you can buy me a drink next time! Ladies first, as they say.\"" },
-            { front: "Playfully Challenging Humor — she smiles and says maybe.", back: "\"You're pretty, but you're going to have to wine and dine me a little more than that.\"" },
-            { front: "Misinterpreting Intent — she asks when you'll be back.", back: "\"Stop undressing me with your eyes! If you want to take me out on a date, just ask directly.\"" },
+            { front: "Unexpected Reactions — stop and look at her playfully.", back: "\"Well, you can buy me a drink next time! Ladies first, as they say.\"", guideFront: "React with a playful surprise when...", guideBack: "A silly, unexpected twist" },
+            { front: "Playfully Challenging Humor — she smiles and says maybe.", back: "\"You're pretty, but you're going to have to wine and dine me a little more than that.\"", guideFront: "Tease that she's trouble when...", guideBack: "A playful doubt about her" },
+            { front: "Misinterpreting Intent — she asks when you'll be back.", back: "\"Stop undressing me with your eyes! If you want to take me out on a date, just ask directly.\"", guideFront: "Act like she's hitting on you when...", guideBack: "A mock accusation of flirting" },
           ]
         },
       ]
@@ -7189,27 +7189,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You see an attractive brunette looking at books in the fiction aisle.",
           steps: [
-            { front: "Playfully Challenging Humor — tease her about her look.", back: "\"You're pretty, but I don't normally date brunettes. Would you be open to dying your hair blonde?\"" },
-            { front: "The Statement-Question Combo — lead into a topic.", back: "\"I'm looking for something good to read on my trip next week. What kind of books do you usually go for?\"" },
-            { front: "Unexpected Reactions — she recommends a thriller and you react playfully.", back: "\"A thriller? What are you, undercover FBI? Look, I'm clean! I'm a good guy now.\"" },
+            { front: "Playfully Challenging Humor — tease her about her look.", back: "\"You're pretty, but I don't normally date brunettes. Would you be open to dying your hair blonde?\"", guideFront: "Tease that she's trouble when...", guideBack: "A playful doubt about her" },
+            { front: "The Statement-Question Combo — lead into a topic.", back: "\"I'm looking for something good to read on my trip next week. What kind of books do you usually go for?\"", guideFront: "Share your view, then ask when...", guideBack: "An opinion, then a question" },
+            { front: "Unexpected Reactions — she recommends a thriller and you react playfully.", back: "\"A thriller? What are you, undercover FBI? Look, I'm clean! I'm a good guy now.\"", guideFront: "React with a playful surprise when...", guideBack: "A silly, unexpected twist" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You see a well-dressed woman standing near the entrance of a venue.",
           steps: [
-            { front: "Playfully Challenging Humor — challenge her vibe.", back: "\"You look very serious. You look like you'd be a really mean receptionist. Are you always this grumpy?\"" },
-            { front: "The Statement-Question Combo — introduce yourself.", back: "\"I'm out celebrating a friend's promotion tonight. I'm Dan. What brings you out here?\"" },
-            { front: "Unexpected Reactions — she smiles and says she is waiting for her sister.", back: "\"Well, you can open the door for me when she gets here! No, alright—in you go, I'm a gentleman.\"" },
+            { front: "Playfully Challenging Humor — challenge her vibe.", back: "\"You look very serious. You look like you'd be a really mean receptionist. Are you always this grumpy?\"", guideFront: "Tease that she's trouble when...", guideBack: "A playful doubt about her" },
+            { front: "The Statement-Question Combo — introduce yourself.", back: "\"I'm out celebrating a friend's promotion tonight. I'm Dan. What brings you out here?\"", guideFront: "Share your view, then ask when...", guideBack: "An opinion, then a question" },
+            { front: "Unexpected Reactions — she smiles and says she is waiting for her sister.", back: "\"Well, you can open the door for me when she gets here! No, alright—in you go, I'm a gentleman.\"", guideFront: "React with a playful surprise when...", guideBack: "A silly, unexpected twist" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You get into an elevator with a woman dressed in gym clothes.",
           steps: [
-            { front: "Playfully Challenging Humor — tease her about her workout.", back: "\"Going to the gym? Show me your biceps. Oh, no muscles at all! You're a little weakling, aren't you?\"" },
-            { front: "The Statement-Question Combo — state your routine.", back: "\"I just finished a heavy leg workout myself. What muscle group were you training today?\"" },
-            { front: "Unexpected Reactions — she says she did cardio.", back: "\"Cardio? Wait, I asked if you did anything interesting! Going on the treadmill? So you're a boring girl then?\"" },
+            { front: "Playfully Challenging Humor — tease her about her workout.", back: "\"Going to the gym? Show me your biceps. Oh, no muscles at all! You're a little weakling, aren't you?\"", guideFront: "Tease that she's trouble when...", guideBack: "A playful doubt about her" },
+            { front: "The Statement-Question Combo — state your routine.", back: "\"I just finished a heavy leg workout myself. What muscle group were you training today?\"", guideFront: "Share your view, then ask when...", guideBack: "An opinion, then a question" },
+            { front: "Unexpected Reactions — she says she did cardio.", back: "\"Cardio? Wait, I asked if you did anything interesting! Going on the treadmill? So you're a boring girl then?\"", guideFront: "React with a playful surprise when...", guideBack: "A silly, unexpected twist" },
           ]
         },
       ]
@@ -7218,70 +7218,70 @@ const multiStepCollections = {
   danbacon2: [
     {
       name: "From Challenge to Lead",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Trains the transition from handling her pressure to taking control. Step 1: Passing Confidence Tests (absorb) -> Step 2: Conveying High Status (re-establish value) -> Step 3: The \"You Can't Tame Me\" Impression (assume the lead).",
       inputs: [
         {
           bundle: 'pro',
           situation: "You meet an attractive woman at a bar. She is used to attention and immediately tries to put you on the back foot.",
           steps: [
-            { front: "Passing Confidence Tests — she says, \"That's a weird shirt. Why are you wearing that?\"", back: "\"Really? I thought it was a cool shirt. What should I be wearing instead? Give me some fashion tips.\" (Smile and laugh)" },
-            { front: "Conveying High Social Status — she gives some advice.", back: "\"Okay, I see you're stylish. I'm Dan, by the way. How are you doing tonight?\" (Relaxed, expectant tone)" },
-            { front: "The \"You Can't Tame Me\" Impression — she asks if you talk to every girl like this.", back: "\"I'm a good guy, but don't get any ideas—I'm not that easy. You're going to have to wine and dine me more than that.\"" },
+            { front: "Passing Confidence Tests — she says, \"That's a weird shirt. Why are you wearing that?\"", back: "\"Really? I thought it was a cool shirt. What should I be wearing instead? Give me some fashion tips.\" (Smile and laugh)", guideFront: "Laugh off her test when...", guideBack: "An unbothered, playful comeback" },
+            { front: "Conveying High Social Status — she gives some advice.", back: "\"Okay, I see you're stylish. I'm Dan, by the way. How are you doing tonight?\" (Relaxed, expectant tone)", guideFront: "Act relaxed and on her level when...", guideBack: "A relaxed, equal-footing line" },
+            { front: "The \"You Can't Tame Me\" Impression — she asks if you talk to every girl like this.", back: "\"I'm a good guy, but don't get any ideas—I'm not that easy. You're going to have to wine and dine me more than that.\"", guideFront: "Show you're not won over yet when...", guideBack: "A playful brake on things" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A woman at a party makes a sarcastic remark about your jacket in front of her friends.",
           steps: [
-            { front: "Passing Confidence Tests — she says your jacket looks like a costume", back: "\"(Laugh relaxed) Really? I thought I looked like a rockstar, but I'll take fashion tips from you.\"" },
-            { front: "Conveying High Social Status — she offers a suggestion", back: "\"Alright, I see you have good taste. I'm Dan. What's your name?\"" },
-            { front: "The \"You Can't Tame Me\" Impression — she asks if you always talk like this", back: "\"Don't get any ideas—I'm not that easy to tame. You have to win me over first.\"" },
+            { front: "Passing Confidence Tests — she says your jacket looks like a costume", back: "\"(Laugh relaxed) Really? I thought I looked like a rockstar, but I'll take fashion tips from you.\"", guideFront: "Laugh off her test when...", guideBack: "An unbothered, playful comeback" },
+            { front: "Conveying High Social Status — she offers a suggestion", back: "\"Alright, I see you have good taste. I'm Dan. What's your name?\"", guideFront: "Act relaxed and on her level when...", guideBack: "A relaxed, equal-footing line" },
+            { front: "The \"You Can't Tame Me\" Impression — she asks if you always talk like this", back: "\"Don't get any ideas—I'm not that easy to tame. You have to win me over first.\"", guideFront: "Show you're not won over yet when...", guideBack: "A playful brake on things" },
           ]
         },
         {
           bundle: 'pro',
           situation: "On a first date, she tests your composure by checking her phone while you speak.",
           steps: [
-            { front: "Passing Confidence Tests — she checks her phone mid-sentence", back: "\"(Smile) Nobody sent a message, I promise. Put that away and pay attention to me.\"" },
-            { front: "Conveying High Social Status — she puts it away and smiles", back: "\"Much better. Tell me, what's something about you that isn't on your resume?\"" },
-            { front: "The \"You Can't Tame Me\" Impression — she asks if you are always this direct", back: "\"Only when someone catches my interest, but don't let it go to your head. I move slow.\"" },
+            { front: "Passing Confidence Tests — she checks her phone mid-sentence", back: "\"(Smile) Nobody sent a message, I promise. Put that away and pay attention to me.\"", guideFront: "Laugh off her test when...", guideBack: "An unbothered, playful comeback" },
+            { front: "Conveying High Social Status — she puts it away and smiles", back: "\"Much better. Tell me, what's something about you that isn't on your resume?\"", guideFront: "Act relaxed and on her level when...", guideBack: "A relaxed, equal-footing line" },
+            { front: "The \"You Can't Tame Me\" Impression — she asks if you are always this direct", back: "\"Only when someone catches my interest, but don't let it go to your head. I move slow.\"", guideFront: "Show you're not won over yet when...", guideBack: "A playful brake on things" },
           ]
         },
       ]
     },
     {
       name: "The \"Selector\" Interaction",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Step 1: Flipping the Script (place her under spotlight) -> Step 2: Avoiding Self-Qualification (hold frame) -> Step 3: Conveying High Status (assume dominance).",
       inputs: [
         {
           bundle: 'pro',
           situation: "You tell her you work in IT and she tries to judge you for it.",
           steps: [
-            { front: "Flipping the Script — she says \"Oh, so you're an IT nerd then.\"", back: "\"No, I'm a smart man who understands code. You're just jealous because it's too difficult for you!\"" },
-            { front: "Avoiding Self-Qualification — she asks \"But do you actually make money?\"", back: "[Don't list achievements] \"Why are you so worried about my money? Are you one of those gold-digging girls who wants me to buy her things?\"" },
-            { front: "Conveying High Social Status — she laughs.", back: "\"I like you already. You're funny. Come on, let's go get a drink at the bar.\"" },
+            { front: "Flipping the Script — she says \"Oh, so you're an IT nerd then.\"", back: "\"No, I'm a smart man who understands code. You're just jealous because it's too difficult for you!\"", guideFront: "Play the judge when...", guideBack: "A playful verdict on her" },
+            { front: "Avoiding Self-Qualification — she asks \"But do you actually make money?\"", back: "[Don't list achievements] \"Why are you so worried about my money? Are you one of those gold-digging girls who wants me to buy her things?\"", guideFront: "Skip the bragging and move on when...", guideBack: "A light shrug, then a new topic" },
+            { front: "Conveying High Social Status — she laughs.", back: "\"I like you already. You're funny. Come on, let's go get a drink at the bar.\"", guideFront: "Act relaxed and on her level when...", guideBack: "A relaxed, equal-footing line" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She tells you she works at a top law firm and asks what you do, looking to evaluate you.",
           steps: [
-            { front: "Flipping the Script — she boasts about working 70 hours a week", back: "\"A lawyer? Boring! I bet you've never done anything crazy in your entire life.\"" },
-            { front: "Avoiding Self-Qualification — she asks if you make good money in your job", back: "\"Why are you so worried about my money? Are you looking for a guy to buy you expensive things?\"" },
-            { front: "Conveying High Social Status — she laughs and admits she likes your confidence", back: "\"I like you already. You're funny. Get off your butt, let me get us a drink.\"" },
+            { front: "Flipping the Script — she boasts about working 70 hours a week", back: "\"A lawyer? Boring! I bet you've never done anything crazy in your entire life.\"", guideFront: "Play the judge when...", guideBack: "A playful verdict on her" },
+            { front: "Avoiding Self-Qualification — she asks if you make good money in your job", back: "\"Why are you so worried about my money? Are you looking for a guy to buy you expensive things?\"", guideFront: "Skip the bragging and move on when...", guideBack: "A light shrug, then a new topic" },
+            { front: "Conveying High Social Status — she laughs and admits she likes your confidence", back: "\"I like you already. You're funny. Get off your butt, let me get us a drink.\"", guideFront: "Act relaxed and on her level when...", guideBack: "A relaxed, equal-footing line" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You approach a stylish woman at a club lounge who acts aloof.",
           steps: [
-            { front: "Flipping the Script — she asks why you came over to her table", back: "\"I saw you looking over at me and thought you looked like trouble. Are you always this grumpy?\"" },
-            { front: "Avoiding Self-Qualification — she asks if you own the club or know the owner", back: "\"I'm just a guy having a great night with friends. Tell me what brings you out tonight.\"" },
-            { front: "Conveying High Social Status — she smiles and introduces herself", back: "\"I'm Dan. Let me show you a better spot over by the terrace. Follow me.\"" },
+            { front: "Flipping the Script — she asks why you came over to her table", back: "\"I saw you looking over at me and thought you looked like trouble. Are you always this grumpy?\"", guideFront: "Play the judge when...", guideBack: "A playful verdict on her" },
+            { front: "Avoiding Self-Qualification — she asks if you own the club or know the owner", back: "\"I'm just a guy having a great night with friends. Tell me what brings you out tonight.\"", guideFront: "Skip the bragging and move on when...", guideBack: "A light shrug, then a new topic" },
+            { front: "Conveying High Social Status — she smiles and introduces herself", back: "\"I'm Dan. Let me show you a better spot over by the terrace. Follow me.\"", guideFront: "Act relaxed and on her level when...", guideBack: "A relaxed, equal-footing line" },
           ]
         },
       ]
@@ -7296,27 +7296,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A woman in a luxury venue tries to put you on the spot regarding your social background.",
           steps: [
-            { front: "Passing Confidence Tests — she asks if you come here often", back: "\"(Smile) No, I usually hang out in cooler spots, but I thought I'd give this place a chance.\"" },
-            { front: "Flipping the Script — she asks what makes your usual spots cooler", back: "\"You ask a lot of questions! Where did you get that line, from a magazine?\"" },
-            { front: "Avoiding Self-Qualification — she asks if you can afford the VIP section", back: "\"My value isn't about VIP sections. But tell me, do you actually have a soul behind all those labels?\"" },
+            { front: "Passing Confidence Tests — she asks if you come here often", back: "\"(Smile) No, I usually hang out in cooler spots, but I thought I'd give this place a chance.\"", guideFront: "Laugh off her test when...", guideBack: "An unbothered, playful comeback" },
+            { front: "Flipping the Script — she asks what makes your usual spots cooler", back: "\"You ask a lot of questions! Where did you get that line, from a magazine?\"", guideFront: "Play the judge when...", guideBack: "A playful verdict on her" },
+            { front: "Avoiding Self-Qualification — she asks if you can afford the VIP section", back: "\"My value isn't about VIP sections. But tell me, do you actually have a soul behind all those labels?\"", guideFront: "Skip the bragging and move on when...", guideBack: "A light shrug, then a new topic" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You start a conversation with a woman who immediately gives a sharp, sarcastic response.",
           steps: [
-            { front: "Passing Confidence Tests — she says your opener was cliché", back: "\"I'm disappointed you'd use such a standard line on me. You seem smarter than that!\"" },
-            { front: "Flipping the Script — she giggles and asks how you'd rate her response", back: "\"Somewhere between zero and ten. You're giving off bratty younger sister energy today.\"" },
-            { front: "Avoiding Self-Qualification — she asks what degree you have to judge her", back: "\"I don't need a degree to read people. Tell me something genuine about yourself instead.\"" },
+            { front: "Passing Confidence Tests — she says your opener was cliché", back: "\"I'm disappointed you'd use such a standard line on me. You seem smarter than that!\"", guideFront: "Laugh off her test when...", guideBack: "An unbothered, playful comeback" },
+            { front: "Flipping the Script — she giggles and asks how you'd rate her response", back: "\"Somewhere between zero and ten. You're giving off bratty younger sister energy today.\"", guideFront: "Play the judge when...", guideBack: "A playful verdict on her" },
+            { front: "Avoiding Self-Qualification — she asks what degree you have to judge her", back: "\"I don't need a degree to read people. Tell me something genuine about yourself instead.\"", guideFront: "Skip the bragging and move on when...", guideBack: "A light shrug, then a new topic" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A friend introduces you to an attractive woman who acts unimpressed and skeptical.",
           steps: [
-            { front: "Passing Confidence Tests — she says you look smaller in person than in photos", back: "\"(Laugh) Horrible, right? But hey, at least I'm pretty on the inside!\"" },
-            { front: "Flipping the Script — she laughs and asks if you always joke like that", back: "\"Only when I meet someone who looks like they need to loosen up a bit.\"" },
-            { front: "Avoiding Self-Qualification — she asks what car you drive", back: "\"I drive whatever gets me where I want to go. I don't need a car to prove my status.\"" },
+            { front: "Passing Confidence Tests — she says you look smaller in person than in photos", back: "\"(Laugh) Horrible, right? But hey, at least I'm pretty on the inside!\"", guideFront: "Laugh off her test when...", guideBack: "An unbothered, playful comeback" },
+            { front: "Flipping the Script — she laughs and asks if you always joke like that", back: "\"Only when I meet someone who looks like they need to loosen up a bit.\"", guideFront: "Play the judge when...", guideBack: "A playful verdict on her" },
+            { front: "Avoiding Self-Qualification — she asks what car you drive", back: "\"I drive whatever gets me where I want to go. I don't need a car to prove my status.\"", guideFront: "Skip the bragging and move on when...", guideBack: "A light shrug, then a new topic" },
           ]
         },
       ]
@@ -7325,49 +7325,49 @@ const multiStepCollections = {
   danbacon3: [
     {
       name: "The \"Good Girl\" Loop",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Step 1: Lovingly Expecting More (the ask) -> Step 2: Positive Reinforcement (the reward) -> Step 3: General Leadership (the next move). This sequence trains the \"Good Girl Switch\" by linking her compliance to pleasure and your leadership.",
       inputs: [
         {
           bundle: 'pro',
           situation: "You are both relaxing, and you want her to be more attentive.",
           steps: [
-            { front: "Lovingly Expecting More — ask for a small favor.", back: "\"Hey honey, can you go make me a coffee? Thanks.\"" },
+            { front: "Lovingly Expecting More — ask for a small favor.", back: "\"Hey honey, can you go make me a coffee? Thanks.\"", guideFront: "Ask her for something small when...", guideBack: "A warm request, or thanks for it" },
             { front: "Positive Reinforcement — she brings it to you.", back: "\"[Stand up, give her a warm hug and a kiss] Thanks babe. You're such a good woman when you want to be.\"" },
-            { front: "General Leadership — use the momentum to lead.", back: "\"Now that we're both caffeinated, get off your butt and let's go for a quick walk before it gets dark. Come on.\"" },
+            { front: "General Leadership — use the momentum to lead.", back: "\"Now that we're both caffeinated, get off your butt and let's go for a quick walk before it gets dark. Come on.\"", guideFront: "Set the direction, let her fill in when...", guideBack: "A plan, with a part for her" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are both in the kitchen preparing a meal on a weekend evening.",
           steps: [
-            { front: "Lovingly Expecting More — ask her to grab an ingredient.", back: "\"Hey honey, can you pass me the olive oil and chop those herbs? Thanks.\"" },
-            { front: "General Leadership — direct the evening flow once dinner is ready.", back: "\"Now that dinner is set, grab the wine glasses and let me lead us out to the patio.\"" },
+            { front: "Lovingly Expecting More — ask her to grab an ingredient.", back: "\"Hey honey, can you pass me the olive oil and chop those herbs? Thanks.\"", guideFront: "Ask her for something small when...", guideBack: "A warm request, or thanks for it" },
+            { front: "General Leadership — direct the evening flow once dinner is ready.", back: "\"Now that dinner is set, grab the wine glasses and let me lead us out to the patio.\"", guideFront: "Set the direction, let her fill in when...", guideBack: "A plan, with a part for her" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are reading in the living room and notice she is sitting nearby.",
           steps: [
-            { front: "Lovingly Expecting More — request a drink with warmth.", back: "\"Hey babe, make me a fresh tea while you're up. I'll give you a big hug when you get back.\"" },
-            { front: "General Leadership — lead a walk outside.", back: "\"Now get your shoes on, let's go for a walk in the park before sunset.\"" },
+            { front: "Lovingly Expecting More — request a drink with warmth.", back: "\"Hey babe, make me a fresh tea while you're up. I'll give you a big hug when you get back.\"", guideFront: "Ask her for something small when...", guideBack: "A warm request, or thanks for it" },
+            { front: "General Leadership — lead a walk outside.", back: "\"Now get your shoes on, let's go for a walk in the park before sunset.\"", guideFront: "Set the direction, let her fill in when...", guideBack: "A plan, with a part for her" },
           ]
         },
       ]
     },
     {
       name: "The \"Respect Reset\"",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Step 1: Addressing Bad Behavior (set the boundary) -> Step 2: Emotional Independence (process the friction) -> Step 3: Positive Reinforcement (reward the change).",
       inputs: [
         {
           bundle: 'pro',
           situation: "She is snapping at you and trying to start a pointless argument.",
           steps: [
-            { front: "Addressing Bad Behavior — call it out calmly.", back: "\"Hey, that wasn't cool. You're usually great, but talking to me like that? No, I don't like it.\"" },
-            { front: "Emotional Independence — she continues to grumble; stay unreactive.", back: "\"[Don't argue back] I'm going to go work on my project for an hour. Let me know when you're ready to be a good girl again.\"" },
+            { front: "Addressing Bad Behavior — call it out calmly.", back: "\"Hey, that wasn't cool. You're usually great, but talking to me like that? No, I don't like it.\"", guideFront: "Call out the bad tone calmly when...", guideBack: "Calm feedback on how she acted" },
+            { front: "Emotional Independence — she continues to grumble; stay unreactive.", back: "\"[Don't argue back] I'm going to go work on my project for an hour. Let me know when you're ready to be a good girl again.\"", guideFront: "Handle it yourself and stay light when...", guideBack: "A steady, self-contained line" },
             { front: "Positive Reinforcement — an hour later, she comes over and apologizes/snuggles.", back: "\"I appreciate that you're being sweet now. That's the woman I love. Come here.\"" },
           ]
         },
@@ -7375,18 +7375,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "She demands that you drop your work immediately to handle a minor errand for her.",
           steps: [
-            { front: "Addressing Bad Behavior — call out the demanding tone.", back: "\"Hey, demanding I drop my work right now isn't cool. You can ask politely.\"" },
-            { front: "Emotional Independence — stay unreactive when she huffs.", back: "\"I'm finishing this project now. Let's talk when you're ready to be sweet.\"" },
-            { front: "General Leadership — re-engage later with clear direction.", back: "\"Alright, work is done. Let's go handle that errand together now.\"" },
+            { front: "Addressing Bad Behavior — call out the demanding tone.", back: "\"Hey, demanding I drop my work right now isn't cool. You can ask politely.\"", guideFront: "Call out the bad tone calmly when...", guideBack: "Calm feedback on how she acted" },
+            { front: "Emotional Independence — stay unreactive when she huffs.", back: "\"I'm finishing this project now. Let's talk when you're ready to be sweet.\"", guideFront: "Handle it yourself and stay light when...", guideBack: "A steady, self-contained line" },
+            { front: "General Leadership — re-engage later with clear direction.", back: "\"Alright, work is done. Let's go handle that errand together now.\"", guideFront: "Set the direction, let her fill in when...", guideBack: "A plan, with a part for her" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She makes a sarcastic, critical remark about you in front of friends at dinner.",
           steps: [
-            { front: "Addressing Bad Behavior — address it quietly but firmly.", back: "\"Hey, criticizing me in front of everyone wasn't cool. I don't like that.\"" },
-            { front: "Emotional Independence — remain composed for the rest of the evening.", back: "\"I'm going to enjoy the rest of the night with our guests. We'll talk later.\"" },
-            { front: "General Leadership — initiate the drive home calmly.", back: "\"Time to head home. Grab your coat and let me lead us to the car.\"" },
+            { front: "Addressing Bad Behavior — address it quietly but firmly.", back: "\"Hey, criticizing me in front of everyone wasn't cool. I don't like that.\"", guideFront: "Call out the bad tone calmly when...", guideBack: "Calm feedback on how she acted" },
+            { front: "Emotional Independence — remain composed for the rest of the evening.", back: "\"I'm going to enjoy the rest of the night with our guests. We'll talk later.\"", guideFront: "Handle it yourself and stay light when...", guideBack: "A steady, self-contained line" },
+            { front: "General Leadership — initiate the drive home calmly.", back: "\"Time to head home. Grab your coat and let me lead us to the car.\"", guideFront: "Set the direction, let her fill in when...", guideBack: "A plan, with a part for her" },
           ]
         },
       ]
@@ -7401,27 +7401,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "It is Saturday morning and neither of you has planned the day.",
           steps: [
-            { front: "General Leadership — set the plan for the morning.", back: "\"Get off your butt, we're going to that new brunch spot. Put on something nice.\"" },
-            { front: "Lovingly Expecting More — ask her to handle a quick task.", back: "\"While I grab the car keys, go pack a water bottle for both of us. Thanks.\"" },
-            { front: "Emotional Independence — stay cool if traffic is heavy.", back: "\"Traffic is slow, but I'm relaxed. Let me know when you're ready to play some music.\"" },
+            { front: "General Leadership — set the plan for the morning.", back: "\"Get off your butt, we're going to that new brunch spot. Put on something nice.\"", guideFront: "Set the direction, let her fill in when...", guideBack: "A plan, with a part for her" },
+            { front: "Lovingly Expecting More — ask her to handle a quick task.", back: "\"While I grab the car keys, go pack a water bottle for both of us. Thanks.\"", guideFront: "Ask her for something small when...", guideBack: "A warm request, or thanks for it" },
+            { front: "Emotional Independence — stay cool if traffic is heavy.", back: "\"Traffic is slow, but I'm relaxed. Let me know when you're ready to play some music.\"", guideFront: "Handle it yourself and stay light when...", guideBack: "A steady, self-contained line" },
           ]
         },
         {
           bundle: 'pro',
           situation: "The apartment is messy after a long week and needs organizing.",
           steps: [
-            { front: "General Leadership — initiate the project with energy.", back: "\"Let's get this place cleaned up in thirty minutes so we can relax. Follow my lead.\"" },
-            { front: "Lovingly Expecting More — delegate a specific task warmly.", back: "\"You tackle the living room cushions, and I'll clear the kitchen. Thanks babe.\"" },
-            { front: "Emotional Independence — maintain composure if she gets tired.", back: "\"I'm finishing my area. Take a five-minute break if you need, then let me know.\"" },
+            { front: "General Leadership — initiate the project with energy.", back: "\"Let's get this place cleaned up in thirty minutes so we can relax. Follow my lead.\"", guideFront: "Set the direction, let her fill in when...", guideBack: "A plan, with a part for her" },
+            { front: "Lovingly Expecting More — delegate a specific task warmly.", back: "\"You tackle the living room cushions, and I'll clear the kitchen. Thanks babe.\"", guideFront: "Ask her for something small when...", guideBack: "A warm request, or thanks for it" },
+            { front: "Emotional Independence — maintain composure if she gets tired.", back: "\"I'm finishing my area. Take a five-minute break if you need, then let me know.\"", guideFront: "Handle it yourself and stay light when...", guideBack: "A steady, self-contained line" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You want to book a trip for next month but haven't picked a location.",
           steps: [
-            { front: "General Leadership — define the scope of choices.", back: "\"We are going somewhere warm next month. Find three hotel options and show me.\"" },
-            { front: "Lovingly Expecting More — ask her to review flights.", back: "\"Check the flight times for Saturday morning while I finish my work call. Thanks.\"" },
-            { front: "Emotional Independence — stay firm on budget limits.", back: "\"That resort is over budget. Find one more option that fits, and I'll make the final pick.\"" },
+            { front: "General Leadership — define the scope of choices.", back: "\"We are going somewhere warm next month. Find three hotel options and show me.\"", guideFront: "Set the direction, let her fill in when...", guideBack: "A plan, with a part for her" },
+            { front: "Lovingly Expecting More — ask her to review flights.", back: "\"Check the flight times for Saturday morning while I finish my work call. Thanks.\"", guideFront: "Ask her for something small when...", guideBack: "A warm request, or thanks for it" },
+            { front: "Emotional Independence — stay firm on budget limits.", back: "\"That resort is over budget. Find one more option that fits, and I'll make the final pick.\"", guideFront: "Handle it yourself and stay light when...", guideBack: "A steady, self-contained line" },
           ]
         },
       ]
@@ -7430,70 +7430,70 @@ const multiStepCollections = {
   danbacon4: [
     {
       name: "The \"Friction to Dominance\" Sequence",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Step 1: Ignoring Ridiculous Rules (handle the test) -> Step 2: Restoring the Spark (assume dominance) -> Step 3: Expressing Real Moods (be authentic). This sequence moves the relationship from a state of \"testing/friction\" back into a state of \"attraction/connection.\"",
       inputs: [
         {
           bundle: 'pro',
           situation: "You are at home and she is acting a bit \"bratty,\" making rules about where you can sit and how you can touch her.",
           steps: [
-            { front: "Ignoring Ridiculous Rules — she says, \"You can sit next to me, but no touching.\"", back: "\"Whatever! I tell you what: from now on, all you're getting is butt squeezes and hugs from me. Come here.\"" },
-            { front: "Restoring the Spark — she giggles; escalate.", back: "\"[Bring her in for a firm 10-second hug] Just relax. [Lift her chin and kiss her] You're copping it tonight.\"" },
-            { front: "Expressing Real Moods — the tension is gone; be real.", back: "\"Actually, I've had a hectic day and I just wanted to relax with my girl. Tell me what you've been up to today.\"" },
+            { front: "Ignoring Ridiculous Rules — she says, \"You can sit next to me, but no touching.\"", back: "\"Whatever! I tell you what: from now on, all you're getting is butt squeezes and hugs from me. Come here.\"", guideFront: "Laugh off her rule when...", guideBack: "A playful brush-off of the rule" },
+            { front: "Restoring the Spark — she giggles; escalate.", back: "\"[Bring her in for a firm 10-second hug] Just relax. [Lift her chin and kiss her] You're copping it tonight.\"", guideFront: "Switch to a bolder, physical lead when...", guideBack: "A bold line or touch" },
+            { front: "Expressing Real Moods — the tension is gone; be real.", back: "\"Actually, I've had a hectic day and I just wanted to relax with my girl. Tell me what you've been up to today.\"", guideFront: "Say how you really feel when...", guideBack: "An honest reaction" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She tries to set strict rules about when you must return home from a night out with friends.",
           steps: [
-            { front: "Ignoring Ridiculous Rules — laugh at the curfew.", back: "\"Whatever! A 10 PM curfew? I tell you what: I'll be back when the night is over. Settle down.\"" },
-            { front: "Restoring the Spark — bring her in close.", back: "\"[Bring her in for a firm hug] Relax girl. Give me a kiss before I head out.\"" },
-            { front: "Expressing Real Moods — share your excitement.", back: "\"I'm looking forward to catching up with the guys tonight. I'll see you later babe.\"" },
+            { front: "Ignoring Ridiculous Rules — laugh at the curfew.", back: "\"Whatever! A 10 PM curfew? I tell you what: I'll be back when the night is over. Settle down.\"", guideFront: "Laugh off her rule when...", guideBack: "A playful brush-off of the rule" },
+            { front: "Restoring the Spark — bring her in close.", back: "\"[Bring her in for a firm hug] Relax girl. Give me a kiss before I head out.\"", guideFront: "Switch to a bolder, physical lead when...", guideBack: "A bold line or touch" },
+            { front: "Expressing Real Moods — share your excitement.", back: "\"I'm looking forward to catching up with the guys tonight. I'll see you later babe.\"", guideFront: "Say how you really feel when...", guideBack: "An honest reaction" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She tells you that you aren't allowed to hug or touch her while she is cooking.",
           steps: [
-            { front: "Ignoring Ridiculous Rules — defy the restriction playfully.", back: "\"No touching? Imagine telling your friends we broke up over a hug! Absolutely ridiculous.\"" },
-            { front: "Restoring the Spark — pull her into a tight embrace.", back: "\"[Wrap your arms around her waist] Come here. You're copping a giant hug right now.\"" },
-            { front: "Expressing Real Moods — state your real mood.", back: "\"I had a hectic day and I just wanted to hold my girl. Now carry on cooking.\"" },
+            { front: "Ignoring Ridiculous Rules — defy the restriction playfully.", back: "\"No touching? Imagine telling your friends we broke up over a hug! Absolutely ridiculous.\"", guideFront: "Laugh off her rule when...", guideBack: "A playful brush-off of the rule" },
+            { front: "Restoring the Spark — pull her into a tight embrace.", back: "\"[Wrap your arms around her waist] Come here. You're copping a giant hug right now.\"", guideFront: "Switch to a bolder, physical lead when...", guideBack: "A bold line or touch" },
+            { front: "Expressing Real Moods — state your real mood.", back: "\"I had a hectic day and I just wanted to hold my girl. Now carry on cooking.\"", guideFront: "Say how you really feel when...", guideBack: "An honest reaction" },
           ]
         },
       ]
     },
     {
       name: "The \"Selector\" Date Loop",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Step 1: Let Her Win You Over (the pitch) -> Step 2: Expressing Real Moods (the authentic response) -> Step 3: Restoring the Spark (the sexualize).",
       inputs: [
         {
           bundle: 'pro',
           situation: "She wants to go to a specific bar that you find a bit \"boring.\"",
           steps: [
-            { front: "Let Her Win You Over — she suggests the bar.", back: "\"I'm not really in the mood for that spot tonight. Win me over—what's so good about it that I should change my mind?\"" },
-            { front: "Expressing Real Moods — she pitches it; give your real take.", back: "\"Okay, the music is good there, I agree. But the drinks are overpriced and the crowd is usually lame. I'm open to it if you promise to be fun though.\"" },
-            { front: "Restoring the Spark — she promises to be fun.", back: "\"Alright, let's go. But don't get any funny ideas—I'm a gentleman. You're going to have to wine and dine me more if you want a kiss at the end of the night.\"" },
+            { front: "The \"Let Her Win You Over\" Move — she suggests the bar.", back: "\"I'm not really in the mood for that spot tonight. Win me over—what's so good about it that I should change my mind?\"", guideFront: "Make her sell you on it when...", guideBack: "A counter-wish she has to win" },
+            { front: "Expressing Real Moods — she pitches it; give your real take.", back: "\"Okay, the music is good there, I agree. But the drinks are overpriced and the crowd is usually lame. I'm open to it if you promise to be fun though.\"", guideFront: "Say how you really feel when...", guideBack: "An honest reaction" },
+            { front: "Restoring the Spark — she promises to be fun.", back: "\"Alright, let's go. But don't get any funny ideas—I'm a gentleman. You're going to have to wine and dine me more if you want a kiss at the end of the night.\"", guideFront: "Switch to a bolder, physical lead when...", guideBack: "A bold line or touch" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She wants to book a beach resort that you find overpriced and uninteresting.",
           steps: [
-            { front: "The \"Let Her Win You Over\" Move — ask for her pitch.", back: "\"I'm not really in the mood for that resort. Win me over—what's so special about it?\"" },
-            { front: "Expressing Real Moods — give your authentic take.", back: "\"Honestly, I think that spot looks boring. I'd much rather go somewhere adventurous.\"" },
-            { front: "Restoring the Spark — re-establish romantic momentum.", back: "\"Find me a cooler location, and if you're a good girl, I'll book the tickets tonight.\"" },
+            { front: "The \"Let Her Win You Over\" Move — ask for her pitch.", back: "\"I'm not really in the mood for that resort. Win me over—what's so special about it?\"", guideFront: "Make her sell you on it when...", guideBack: "A counter-wish she has to win" },
+            { front: "Expressing Real Moods — give your authentic take.", back: "\"Honestly, I think that spot looks boring. I'd much rather go somewhere adventurous.\"", guideFront: "Say how you really feel when...", guideBack: "An honest reaction" },
+            { front: "Restoring the Spark — re-establish romantic momentum.", back: "\"Find me a cooler location, and if you're a good girl, I'll book the tickets tonight.\"", guideFront: "Switch to a bolder, physical lead when...", guideBack: "A bold line or touch" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She wants to go straight home after dinner, but you want to continue the date.",
           steps: [
-            { front: "The \"Let Her Win You Over\" Move — challenge her to stay out.", back: "\"Home already? Win me over—give me one great reason why we shouldn't grab dessert first.\"" },
-            { front: "Expressing Real Moods — express your playful mood.", back: "\"I'm in a great mood tonight and not ready to end the evening. Let's explore.\"" },
-            { front: "Restoring the Spark — take her hand and lead.", back: "\"Come on, hold my hand. I'm leading us to a cool cocktail bar around the corner.\"" },
+            { front: "The \"Let Her Win You Over\" Move — challenge her to stay out.", back: "\"Home already? Win me over—give me one great reason why we shouldn't grab dessert first.\"", guideFront: "Make her sell you on it when...", guideBack: "A counter-wish she has to win" },
+            { front: "Expressing Real Moods — express your playful mood.", back: "\"I'm in a great mood tonight and not ready to end the evening. Let's explore.\"", guideFront: "Say how you really feel when...", guideBack: "An honest reaction" },
+            { front: "Restoring the Spark — take her hand and lead.", back: "\"Come on, hold my hand. I'm leading us to a cool cocktail bar around the corner.\"", guideFront: "Switch to a bolder, physical lead when...", guideBack: "A bold line or touch" },
           ]
         },
       ]
@@ -7508,27 +7508,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "She sits in moody silence and gives one-word answers when you try to chat.",
           steps: [
-            { front: "Expressing Real Moods — address the vibe directly.", back: "\"You're super quiet today. I'm in a great mood and not playing the guessing game.\"" },
-            { front: "Ignoring Ridiculous Rules — she says you aren't allowed to ask her what's wrong.", back: "\"Whatever! No asking questions? That's a ridiculous rule. Come here.\"" },
-            { front: "Restoring the Spark — break the mood with physical warmth.", back: "\"[Pull her close for a firm hug] Just relax. You're getting a kiss whether you like it or not.\"" },
+            { front: "Expressing Real Moods — address the vibe directly.", back: "\"You're super quiet today. I'm in a great mood and not playing the guessing game.\"", guideFront: "Say how you really feel when...", guideBack: "An honest reaction" },
+            { front: "Ignoring Ridiculous Rules — she says you aren't allowed to ask her what's wrong.", back: "\"Whatever! No asking questions? That's a ridiculous rule. Come here.\"", guideFront: "Laugh off her rule when...", guideBack: "A playful brush-off of the rule" },
+            { front: "Restoring the Spark — break the mood with physical warmth.", back: "\"[Pull her close for a firm hug] Just relax. You're getting a kiss whether you like it or not.\"", guideFront: "Switch to a bolder, physical lead when...", guideBack: "A bold line or touch" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She blames you for a minor household issue as soon as you walk through the door.",
           steps: [
-            { front: "Expressing Real Moods — state your boundary calmly.", back: "\"I had a hectic day at work, so I'm not getting dragged into drama over this.\"" },
-            { front: "Ignoring Ridiculous Rules — she demands you apologize immediately.", back: "\"Imagine telling people we argued over unwashed dishes! Absolutely ridiculous.\"" },
-            { front: "Restoring the Spark — shift the energy to affection.", back: "\"Enough with the scolding. Come give your man a proper welcome-home hug.\"" },
+            { front: "Expressing Real Moods — state your boundary calmly.", back: "\"I had a hectic day at work, so I'm not getting dragged into drama over this.\"", guideFront: "Say how you really feel when...", guideBack: "An honest reaction" },
+            { front: "Ignoring Ridiculous Rules — she demands you apologize immediately.", back: "\"Imagine telling people we argued over unwashed dishes! Absolutely ridiculous.\"", guideFront: "Laugh off her rule when...", guideBack: "A playful brush-off of the rule" },
+            { front: "Restoring the Spark — shift the energy to affection.", back: "\"Enough with the scolding. Come give your man a proper welcome-home hug.\"", guideFront: "Switch to a bolder, physical lead when...", guideBack: "A bold line or touch" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She tries to cancel your plans with friends because she wants you to stay home.",
           steps: [
-            { front: "Expressing Real Moods — express your genuine intention.", back: "\"I really want to see my friends tonight, so I'm going out for a few hours.\"" },
-            { front: "Ignoring Ridiculous Rules — she says you can't go unless she approves.", back: "\"Relax girl! You're trying to monitor me and we aren't even married yet.\"" },
-            { front: "Restoring the Spark — leave on a warm, high note.", back: "\"[Give her a playful spank] Be a good girl while I'm gone, and I'll see you later.\"" },
+            { front: "Expressing Real Moods — express your genuine intention.", back: "\"I really want to see my friends tonight, so I'm going out for a few hours.\"", guideFront: "Say how you really feel when...", guideBack: "An honest reaction" },
+            { front: "Ignoring Ridiculous Rules — she says you can't go unless she approves.", back: "\"Relax girl! You're trying to monitor me and we aren't even married yet.\"", guideFront: "Laugh off her rule when...", guideBack: "A playful brush-off of the rule" },
+            { front: "Restoring the Spark — leave on a warm, high note.", back: "\"[Give her a playful spank] Be a good girl while I'm gone, and I'll see you later.\"", guideFront: "Switch to a bolder, physical lead when...", guideBack: "A bold line or touch" },
           ]
         },
       ]
@@ -8032,35 +8032,35 @@ const multiStepCollections = {
   toddv1: [
     {
       name: "The \"Open to Hook\" Sequence",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Step 1: Statement Opener (get attention) -> Step 2: Narrating the Frame (establish value) -> Step 3: Open Loop (create intrigue). This sequence follows the \"Fred\" method: Focus, Relevance, Emotion, Decision.",
       inputs: [
         {
           bundle: 'pro',
           situation: "You see a girl sitting alone at an outdoor cafe, looking elegant but bored.",
           steps: [
-            { front: "Statement Opener — comment on her vibe.", back: "\"You have the most bubbly, elegant look about you. I had to meet you.\"" },
-            { front: "Narrating the Frame — they giggle and say \"Thank you.\"", back: "\"You're welcome. I thought you might be the girl to finally impress me today.\"" },
-            { front: "Open Loop — they ask \"Oh really? And how am I doing?\"", back: "\"Well, you're cute, but you also look like trouble. I'm not sure if I should love you or run away yet.\"" },
+            { front: "Statement Openers — comment on her vibe.", back: "\"You have the most bubbly, elegant look about you. I had to meet you.\"", guideFront: "Open with an observation when...", guideBack: "A remark about what you see" },
+            { front: "Narrating the Frame — they giggle and say \"Thank you.\"", back: "\"You're welcome. I thought you might be the girl to finally impress me today.\"", guideFront: "Talk as if you're the prize when...", guideBack: "A line that casts you as the prize" },
+            { front: "Open Loops (The Cookie) — they ask \"Oh really? And how am I doing?\"", back: "\"Well, you're cute, but you also look like trouble. I'm not sure if I should love you or run away yet.\"", guideFront: "Hint, then hold it back when...", guideBack: "A teaser you don't finish" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You see a group of three girls walking through a mall with many bags.",
           steps: [
-            { front: "Statement Opener — address the leader.", back: "\"Excuse me, did you guys leave anything in the stores for the rest of us? I respect the hustle.\"" },
-            { front: "Open Loop — they laugh and stop.", back: "\"Wait, I just noticed something. Are you guys best friends? There's a reason I'm asking.\"" },
-            { front: "Narrating the Frame — they ask \"What reason?\"", back: "\"I'm just a boy from Queens living the dream, and I have a theory about groups like yours. I'm Todd.\"" },
+            { front: "Statement Openers — address the leader.", back: "\"Excuse me, did you guys leave anything in the stores for the rest of us? I respect the hustle.\"", guideFront: "Open with an observation when...", guideBack: "A remark about what you see" },
+            { front: "Open Loops (The Cookie) — they laugh and stop.", back: "\"Wait, I just noticed something. Are you guys best friends? There's a reason I'm asking.\"", guideFront: "Hint, then hold it back when...", guideBack: "A teaser you don't finish" },
+            { front: "Narrating the Frame — they ask \"What reason?\"", back: "\"I'm just a boy from Queens living the dream, and I have a theory about groups like yours. I'm Todd.\"", guideFront: "Talk as if you're the prize when...", guideBack: "A line that casts you as the prize" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She is standing alone examining a modern sculpture.",
           steps: [
-            { front: "Statement Openers — open with an observation.", back: "\"You look like you're trying to figure out if this sculpture is brilliant or a scam.\"" },
-            { front: "Narrating the Frame — call out the moment.", back: "\"It's funny how everyone in here is pretending to be super sophisticated.\"" },
-            { front: "Open Loops (The Cookie) — drop an intriguing story lead.", back: "\"I actually had a wild art class experience back in college that ruined art for me.\"" },
+            { front: "Statement Openers — open with an observation.", back: "\"You look like you're trying to figure out if this sculpture is brilliant or a scam.\"", guideFront: "Open with an observation when...", guideBack: "A remark about what you see" },
+            { front: "Narrating the Frame — call out the moment.", back: "\"It's funny how everyone in here is pretending to be super sophisticated.\"", guideFront: "Talk as if you're the prize when...", guideBack: "A line that casts you as the prize" },
+            { front: "Open Loops (The Cookie) — drop an intriguing story lead.", back: "\"I actually had a wild art class experience back in college that ruined art for me.\"", guideFront: "Hint, then hold it back when...", guideBack: "A teaser you don't finish" },
           ]
         },
       ]
@@ -8075,27 +8075,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "She is waiting for a drink near the bar counter.",
           steps: [
-            { front: "Question-Answer-Tease (QAT) — tease her drink order.", back: "\"What's your poison tonight? ... A martini? Oh, so you're trying to feel like James Bond.\"" },
-            { front: "Open Loops (The Cookie) — drop a partial story hook.", back: "\"I actually made the absolute worst cocktail of my life last weekend.\"" },
-            { front: "Narrating the Frame — describe the interaction vibe.", back: "\"Look at us, chatting like old friends in the middle of a noisy bar.\"" },
+            { front: "Question-Answer-Tease (QAT) — tease her drink order.", back: "\"What's your poison tonight? ... A martini? Oh, so you're trying to feel like James Bond.\"", guideFront: "Play with her reply when...", guideBack: "A playful take on what she said" },
+            { front: "Open Loops (The Cookie) — drop a partial story hook.", back: "\"I actually made the absolute worst cocktail of my life last weekend.\"", guideFront: "Hint, then hold it back when...", guideBack: "A teaser you don't finish" },
+            { front: "Narrating the Frame — describe the interaction vibe.", back: "\"Look at us, chatting like old friends in the middle of a noisy bar.\"", guideFront: "Talk as if you're the prize when...", guideBack: "A line that casts you as the prize" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She is sitting on a bench with a sketchpad.",
           steps: [
-            { front: "Question-Answer-Tease (QAT) — tease her drawing.", back: "\"Are you drawing people secretly? ... Landscapes? That's way less dramatic than I hoped.\"" },
-            { front: "Open Loops (The Cookie) — hint at an interesting memory.", back: "\"I used to have a friend who tried to sell fake sketches in Paris.\"" },
-            { front: "Narrating the Frame — call out the relaxed atmosphere.", back: "\"It's pretty rare to find two people actually relaxing outdoors without phones.\"" },
+            { front: "Question-Answer-Tease (QAT) — tease her drawing.", back: "\"Are you drawing people secretly? ... Landscapes? That's way less dramatic than I hoped.\"", guideFront: "Play with her reply when...", guideBack: "A playful take on what she said" },
+            { front: "Open Loops (The Cookie) — hint at an interesting memory.", back: "\"I used to have a friend who tried to sell fake sketches in Paris.\"", guideFront: "Hint, then hold it back when...", guideBack: "A teaser you don't finish" },
+            { front: "Narrating the Frame — call out the relaxed atmosphere.", back: "\"It's pretty rare to find two people actually relaxing outdoors without phones.\"", guideFront: "Talk as if you're the prize when...", guideBack: "A line that casts you as the prize" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She is browsing books in the travel section.",
           steps: [
-            { front: "Question-Answer-Tease (QAT) — tease her travel destination choice.", back: "\"Where are you escaping to? ... Italy? Oh, so you just want pasta and wine.\"" },
-            { front: "Open Loops (The Cookie) — drop a teaser about a travel story.", back: "\"I had the most insane travel nightmare in Europe two years ago.\"" },
-            { front: "Narrating the Frame — observe the shared environment.", back: "\"We're both completely ignoring our afternoon responsibilities right now.\"" },
+            { front: "Question-Answer-Tease (QAT) — tease her travel destination choice.", back: "\"Where are you escaping to? ... Italy? Oh, so you just want pasta and wine.\"", guideFront: "Play with her reply when...", guideBack: "A playful take on what she said" },
+            { front: "Open Loops (The Cookie) — drop a teaser about a travel story.", back: "\"I had the most insane travel nightmare in Europe two years ago.\"", guideFront: "Hint, then hold it back when...", guideBack: "A teaser you don't finish" },
+            { front: "Narrating the Frame — observe the shared environment.", back: "\"We're both completely ignoring our afternoon responsibilities right now.\"", guideFront: "Talk as if you're the prize when...", guideBack: "A line that casts you as the prize" },
           ]
         },
       ]
@@ -8110,27 +8110,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "She is standing by a display counter looking at pastries.",
           steps: [
-            { front: "Statement Openers — observe her posture and choice.", back: "\"You look like someone who is fighting a very serious internal battle over chocolate.\"" },
-            { front: "Question-Answer-Tease (QAT) — ask and tease her final pick.", back: "\"Which one are you getting? ... The croissant? Basic, but I'll allow it.\"" },
-            { front: "Narrating the Frame — narrate the spontaneous connection.", back: "\"I love how a pastry decision just turned into a whole conversation.\"" },
+            { front: "Statement Openers — observe her posture and choice.", back: "\"You look like someone who is fighting a very serious internal battle over chocolate.\"", guideFront: "Open with an observation when...", guideBack: "A remark about what you see" },
+            { front: "Question-Answer-Tease (QAT) — ask and tease her final pick.", back: "\"Which one are you getting? ... The croissant? Basic, but I'll allow it.\"", guideFront: "Play with her reply when...", guideBack: "A playful take on what she said" },
+            { front: "Narrating the Frame — narrate the spontaneous connection.", back: "\"I love how a pastry decision just turned into a whole conversation.\"", guideFront: "Talk as if you're the prize when...", guideBack: "A line that casts you as the prize" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She is waiting for a commuter train holding a tote bag.",
           steps: [
-            { front: "Statement Openers — open with a style observation.", back: "\"That tote bag looks like it has survived three different continents.\"" },
-            { front: "Question-Answer-Tease (QAT) — tease her job or routine.", back: "\"Heading to work or escaping? ... Working? You said that with so much sadness.\"" },
-            { front: "Narrating the Frame — highlight the shared moment.", back: "\"This platform is boring, so I'm glad we decided to entertain each other.\"" },
+            { front: "Statement Openers — open with a style observation.", back: "\"That tote bag looks like it has survived three different continents.\"", guideFront: "Open with an observation when...", guideBack: "A remark about what you see" },
+            { front: "Question-Answer-Tease (QAT) — tease her job or routine.", back: "\"Heading to work or escaping? ... Working? You said that with so much sadness.\"", guideFront: "Play with her reply when...", guideBack: "A playful take on what she said" },
+            { front: "Narrating the Frame — highlight the shared moment.", back: "\"This platform is boring, so I'm glad we decided to entertain each other.\"", guideFront: "Talk as if you're the prize when...", guideBack: "A line that casts you as the prize" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She is flipping through vintage vinyl records.",
           steps: [
-            { front: "Statement Openers — observe her music hunting style.", back: "\"You flip through those records like a seasoned radio DJ.\"" },
-            { front: "Question-Answer-Tease (QAT) — tease her music taste.", back: "\"Who are you searching for? ... 80s rock? I knew you had a secret wild side.\"" },
-            { front: "Narrating the Frame — call out the shared nostalgia.", back: "\"It's cool how music shops force people to slow down and actually talk.\"" },
+            { front: "Statement Openers — observe her music hunting style.", back: "\"You flip through those records like a seasoned radio DJ.\"", guideFront: "Open with an observation when...", guideBack: "A remark about what you see" },
+            { front: "Question-Answer-Tease (QAT) — tease her music taste.", back: "\"Who are you searching for? ... 80s rock? I knew you had a secret wild side.\"", guideFront: "Play with her reply when...", guideBack: "A playful take on what she said" },
+            { front: "Narrating the Frame — call out the shared nostalgia.", back: "\"It's cool how music shops force people to slow down and actually talk.\"", guideFront: "Talk as if you're the prize when...", guideBack: "A line that casts you as the prize" },
           ]
         },
       ]
@@ -8139,70 +8139,70 @@ const multiStepCollections = {
   toddv2: [
     {
       name: "The \"Push-Pull Escalation\"",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Step 1: Push-Pull (create tension) -> Step 2: Qualifying (test her investment) -> Step 3: Disqualification (remove pressure). This creates a cycle where she feels the \"pull\" of your interest, the \"push\" of your standards, and the \"uncertainty\" of the outcome.",
       inputs: [
         {
           bundle: 'pro',
           situation: "You are talking to an attractive girl who is giving you a bit of the \"blase\" or acting slightly superior.",
           steps: [
-            { front: "Push-Pull — compliment her look but add a spike.", back: "\"You have a very bubbly, elegant look... but you also look like you're a lot of trouble. I'm not sure about you.\"" },
-            { front: "Qualifying — she giggles and asks \"What do you mean?\"", back: "\"Well, you seem fun, but tell me: are you as adventurous as you look? I only hang out with cool girls.\"" },
-            { front: "Disqualification — she qualifies herself (\"I traveled to India alone!\").", back: "\"India? Okay, you get some points for that. But look, don't get any ideas—I'm not having sex with you tonight. I'm flying out early.\"" },
+            { front: "Push-Pull — compliment her look but add a spike.", back: "\"You have a very bubbly, elegant look... but you also look like you're a lot of trouble. I'm not sure about you.\"", guideFront: "Compliment, then take it back when...", guideBack: "A compliment with a catch" },
+            { front: "Qualifying (The Interviewer) — she giggles and asks \"What do you mean?\"", back: "\"Well, you seem fun, but tell me: are you as adventurous as you look? I only hang out with cool girls.\"", guideFront: "Test if she meets your bar when...", guideBack: "A screening question or verdict" },
+            { front: "Disqualification (Sexual) — she qualifies herself (\"I traveled to India alone!\").", back: "\"India? Okay, you get some points for that. But look, don't get any ideas—I'm not having sex with you tonight. I'm flying out early.\"", guideFront: "Take sex off the table when...", guideBack: "A playful takeaway" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She is sitting at the bar with a sophisticated drink, looking aloof.",
           steps: [
-            { front: "Push-Pull — compliment her style with a negative twist.", back: "\"That cocktail looks incredible, but you look like you're way too much trouble to drink with.\"" },
-            { front: "Qualifying (The Interviewer) — test her depth after she smiles.", back: "\"You seem fun, but tell me: do you actually have a passion, or do you just look good?\"" },
-            { front: "Disqualification (Sexual) — take sex off the table after she answers.", back: "\"You're cute, but don't get any ideas. I'm not having sex with you tonight—I'm flying early.\"" },
+            { front: "Push-Pull — compliment her style with a negative twist.", back: "\"That cocktail looks incredible, but you look like you're way too much trouble to drink with.\"", guideFront: "Compliment, then take it back when...", guideBack: "A compliment with a catch" },
+            { front: "Qualifying (The Interviewer) — test her depth after she smiles.", back: "\"You seem fun, but tell me: do you actually have a passion, or do you just look good?\"", guideFront: "Test if she meets your bar when...", guideBack: "A screening question or verdict" },
+            { front: "Disqualification (Sexual) — take sex off the table after she answers.", back: "\"You're cute, but don't get any ideas. I'm not having sex with you tonight—I'm flying early.\"", guideFront: "Take sex off the table when...", guideBack: "A playful takeaway" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She is leaning against the railing looking at her phone.",
           steps: [
-            { front: "Push-Pull — tease her phone distraction.", back: "\"It's so annoying how cute you are when you're staring at your phone. Put it away.\"" },
-            { front: "Qualifying (The Interviewer) — ask for a genuine story.", back: "\"Tell me something about yourself that isn't on your social media profile.\"" },
-            { front: "Disqualification (Sexual) — frame the interaction as purely platonic.", back: "\"We can hang out, but I'm definitely not boyfriend material. Let's just be friends.\"" },
+            { front: "Push-Pull — tease her phone distraction.", back: "\"It's so annoying how cute you are when you're staring at your phone. Put it away.\"", guideFront: "Compliment, then take it back when...", guideBack: "A compliment with a catch" },
+            { front: "Qualifying (The Interviewer) — ask for a genuine story.", back: "\"Tell me something about yourself that isn't on your social media profile.\"", guideFront: "Test if she meets your bar when...", guideBack: "A screening question or verdict" },
+            { front: "Disqualification (Sexual) — frame the interaction as purely platonic.", back: "\"We can hang out, but I'm definitely not boyfriend material. Let's just be friends.\"", guideFront: "Take sex off the table when...", guideBack: "A playful takeaway" },
           ]
         },
       ]
     },
     {
       name: "The \"Interviewer\" Frame",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Step 1: The Neg (knock her off the pedestal) -> Step 2: Qualifying (screen for culture) -> Step 3: Push-Pull (reward investment). This sequence is designed for the \"10\" or the girl who is used to constant validation.",
       inputs: [
         {
           bundle: 'pro',
           situation: "A girl who is very well-dressed and seems used to guys trying to impress her.",
           steps: [
-            { front: "The Neg — unintentional honesty about her style.", back: "\"I love that outfit. It's so cool that you're trying to bring the 'Mean Girls' look back.\"" },
-            { front: "Qualifying — she's shocked/amused; screen her.", back: "\"I'm curious though, behind all the designer labels... do you have a soul? What are you actually passionate about?\"" },
-            { front: "Push-Pull — she starts talking about her art/hobbies.", back: "\"You're an artist? That's amazing. I love creative people... although most of them are crazy, so we're probably not going to get along.\"" },
+            { front: "The Neg — unintentional honesty about her style.", back: "\"I love that outfit. It's so cool that you're trying to bring the 'Mean Girls' look back.\"", guideFront: "Slip in a backhanded compliment when...", guideBack: "A compliment with a small sting" },
+            { front: "Qualifying (The Interviewer) — she's shocked/amused; screen her.", back: "\"I'm curious though, behind all the designer labels... do you have a soul? What are you actually passionate about?\"", guideFront: "Test if she meets your bar when...", guideBack: "A screening question or verdict" },
+            { front: "Push-Pull — she starts talking about her art/hobbies.", back: "\"You're an artist? That's amazing. I love creative people... although most of them are crazy, so we're probably not going to get along.\"", guideFront: "Compliment, then take it back when...", guideBack: "A compliment with a catch" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She is dressed in high fashion and examining a painting.",
           steps: [
-            { front: "The Neg — deliver an unintentional observation about her outfit.", back: "\"I love that coat. It's so cool that you're trying to bring the 70s detective look back.\"" },
-            { front: "Qualifying (The Interviewer) — screen her character when she laughs.", back: "\"I'm curious though: behind the fashionable exterior, do you actually have a soul?\"" },
-            { front: "Push-Pull — reward her response with a balanced compliment.", back: "\"I love creative minds, but you also seem completely crazy. I can't decide if I like you.\"" },
+            { front: "The Neg — deliver an unintentional observation about her outfit.", back: "\"I love that coat. It's so cool that you're trying to bring the 70s detective look back.\"", guideFront: "Slip in a backhanded compliment when...", guideBack: "A compliment with a small sting" },
+            { front: "Qualifying (The Interviewer) — screen her character when she laughs.", back: "\"I'm curious though: behind the fashionable exterior, do you actually have a soul?\"", guideFront: "Test if she meets your bar when...", guideBack: "A screening question or verdict" },
+            { front: "Push-Pull — reward her response with a balanced compliment.", back: "\"I love creative minds, but you also seem completely crazy. I can't decide if I like you.\"", guideFront: "Compliment, then take it back when...", guideBack: "A compliment with a catch" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She is sitting with an expensive laptop and looking busy.",
           steps: [
-            { front: "The Neg — comment on her expressive face.", back: "\"You have such an expressive face. You look like a cartoon character working on a deadline.\"" },
-            { front: "Qualifying (The Interviewer) — ask about her drive.", back: "\"Are you actually industrious, or are you just pretending to work to look important?\"" },
-            { front: "Push-Pull — close the sequence with emotional tension.", back: "\"You're actually not super boring. I thought I loved you, but now I'm not so sure.\"" },
+            { front: "The Neg — comment on her expressive face.", back: "\"You have such an expressive face. You look like a cartoon character working on a deadline.\"", guideFront: "Slip in a backhanded compliment when...", guideBack: "A compliment with a small sting" },
+            { front: "Qualifying (The Interviewer) — ask about her drive.", back: "\"Are you actually industrious, or are you just pretending to work to look important?\"", guideFront: "Test if she meets your bar when...", guideBack: "A screening question or verdict" },
+            { front: "Push-Pull — close the sequence with emotional tension.", back: "\"You're actually not super boring. I thought I loved you, but now I'm not so sure.\"", guideFront: "Compliment, then take it back when...", guideBack: "A compliment with a catch" },
           ]
         },
       ]
@@ -8217,27 +8217,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "She stands near the bar with her arms crossed, expecting a pickup attempt.",
           steps: [
-            { front: "Disqualification (Sexual) — remove sexual pressure immediately.", back: "\"Look, just so we're clear: no sex tonight. I'm completely over meaningless hookups.\"" },
-            { front: "Qualifying (The Interviewer) — ask a screening question.", back: "\"Now that we have that out of the way: what's the most adventurous thing you've done this year?\"" },
-            { front: "Push-Pull — reward her answer while keeping tension.", back: "\"That's actually impressive. You're cute, but you're definitely going to be trouble.\"" },
+            { front: "Disqualification (Sexual) — remove sexual pressure immediately.", back: "\"Look, just so we're clear: no sex tonight. I'm completely over meaningless hookups.\"", guideFront: "Take sex off the table when...", guideBack: "A playful takeaway" },
+            { front: "Qualifying (The Interviewer) — ask a screening question.", back: "\"Now that we have that out of the way: what's the most adventurous thing you've done this year?\"", guideFront: "Test if she meets your bar when...", guideBack: "A screening question or verdict" },
+            { front: "Push-Pull — reward her answer while keeping tension.", back: "\"That's actually impressive. You're cute, but you're definitely going to be trouble.\"", guideFront: "Compliment, then take it back when...", guideBack: "A compliment with a catch" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She gives polite answers and hesitates to invest in the chat.",
           steps: [
-            { front: "Disqualification (Sexual) — set a platonic, low-risk frame.", back: "\"We can chat for five minutes, but I'm not boyfriend material, so don't get any ideas.\"" },
-            { front: "Qualifying (The Interviewer) — test if she can keep up.", back: "\"Are you usually this quiet, or do you have a secret wild side nobody knows about?\"" },
-            { front: "Push-Pull — spike the vibe when she opens up.", back: "\"I thought I loved you until you said that! Now we're definitely breaking up.\"" },
+            { front: "Disqualification (Sexual) — set a platonic, low-risk frame.", back: "\"We can chat for five minutes, but I'm not boyfriend material, so don't get any ideas.\"", guideFront: "Take sex off the table when...", guideBack: "A playful takeaway" },
+            { front: "Qualifying (The Interviewer) — test if she can keep up.", back: "\"Are you usually this quiet, or do you have a secret wild side nobody knows about?\"", guideFront: "Test if she meets your bar when...", guideBack: "A screening question or verdict" },
+            { front: "Push-Pull — spike the vibe when she opens up.", back: "\"I thought I loved you until you said that! Now we're definitely breaking up.\"", guideFront: "Compliment, then take it back when...", guideBack: "A compliment with a catch" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are sitting together on a couch and the vibe turns overly serious.",
           steps: [
-            { front: "Disqualification (Sexual) — set a time limit and boundary.", back: "\"I have to head home soon, and you're definitely not getting in my pants tonight.\"" },
-            { front: "Qualifying (The Interviewer) — ask what drives her.", back: "\"Tell me what actually motivates you in life before I leave.\"" },
-            { front: "Push-Pull — leave her with an emotional spike.", back: "\"You're actually pretty cool. It's so annoying how adorable you are.\"" },
+            { front: "Disqualification (Sexual) — set a time limit and boundary.", back: "\"I have to head home soon, and you're definitely not getting in my pants tonight.\"", guideFront: "Take sex off the table when...", guideBack: "A playful takeaway" },
+            { front: "Qualifying (The Interviewer) — ask what drives her.", back: "\"Tell me what actually motivates you in life before I leave.\"", guideFront: "Test if she meets your bar when...", guideBack: "A screening question or verdict" },
+            { front: "Push-Pull — leave her with an emotional spike.", back: "\"You're actually pretty cool. It's so annoying how adorable you are.\"", guideFront: "Compliment, then take it back when...", guideBack: "A compliment with a catch" },
           ]
         },
       ]
@@ -8246,44 +8246,44 @@ const multiStepCollections = {
   toddv3: [
     {
       name: "The \"Blueprint Connection\" Sequence",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Step 1: Cold Read (state your first impression) -> Step 2: Identify the Blueprint (guess her background/values) -> Step 3: Wide/Deep Rapport (pivot to emotion). This sequence helps you \"crack the iceberg\" of a polite, logical conversation.",
       inputs: [
         {
           bundle: 'pro',
           situation: "You are talking to a girl who is being very polite but staying very logical and \"guarded\" about her life.",
           steps: [
-            { front: "The Cold Read — make a guess about her vibe.", back: "\"You seem like the type of girl who was the 'smart one' in her group growing up. Always having to have the right answers.\"" },
-            { front: "Identifying the Blueprint — she giggles and says \"How did you know?\"", back: "\"I have a catalog in my head. You seem like you value intelligence and drive, but you're a little bit bored with the usual guys in this city.\"" },
-            { front: "Wide and Deep Rapport — ask a deep question based on that.", back: "\"So tell me, with all that ambition... what's the one dream you're still chasing that has nothing to do with your resume?\"" },
+            { front: "The Cold Read — make a guess about her vibe.", back: "\"You seem like the type of girl who was the 'smart one' in her group growing up. Always having to have the right answers.\"", guideFront: "Guess instead of asking when...", guideBack: "A confident guess about her" },
+            { front: "Identifying the Blueprint — she giggles and says \"How did you know?\"", back: "\"I have a catalog in my head. You seem like you value intelligence and drive, but you're a little bit bored with the usual guys in this city.\"", guideFront: "Read what she values when...", guideBack: "A guess at what she values" },
+            { front: "Wide and Deep Rapport — ask a deep question based on that.", back: "\"So tell me, with all that ambition... what's the one dream you're still chasing that has nothing to do with your resume?\"", guideFront: "Pick one topic and go deeper when...", guideBack: "A deeper, more personal question" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You meet a girl who is dressed stylishly but has a very humble, friendly way of speaking.",
           steps: [
-            { front: "Identifying the Blueprint — make a guess on her origin.", back: "\"I'm guessing you didn't grow up in this big, crazy city. You're too polite for that. Small town originally?\"" },
-            { front: "Grounding Stories — she says \"Yes, Ohio.\"", back: "\"I get it. I grew up in Colorado. I used to think I'd stay there forever until I realized I wanted a bigger show. Coming here was a huge adjustment.\"" },
-            { front: "Wide and Deep Rapport — pivot to how she feels.", back: "\"Ohio to here is a massive jump. What's the one thing you miss the most about the quiet life, and the one thing you'd never give up about being here?\"" },
+            { front: "Identifying the Blueprint — make a guess on her origin.", back: "\"I'm guessing you didn't grow up in this big, crazy city. You're too polite for that. Small town originally?\"", guideFront: "Read what she values when...", guideBack: "A guess at what she values" },
+            { front: "Grounding Stories (DHV Stories) — she says \"Yes, Ohio.\"", back: "\"I get it. I grew up in Colorado. I used to think I'd stay there forever until I realized I wanted a bigger show. Coming here was a huge adjustment.\"", guideFront: "Tell a story that shows your value when...", guideBack: "A short story with value woven in" },
+            { front: "Wide and Deep Rapport — pivot to how she feels.", back: "\"Ohio to here is a massive jump. What's the one thing you miss the most about the quiet life, and the one thing you'd never give up about being here?\"", guideFront: "Pick one topic and go deeper when...", guideBack: "A deeper, more personal question" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She mentions she is thinking about quitting her corporate marketing job.",
           steps: [
-            { front: "The Cold Read — observe her underlying drive.", back: "\"You look like someone who started that job for security, but now craves creative freedom.\"" },
-            { front: "Identifying the Blueprint — confirm her core motivation.", back: "\"So for you, taking a risk feels scary, but staying stuck in routine feels way worse.\"" },
-            { front: "Grounding Stories (DHV Stories) — anchor with a personal story.", back: "\"I faced that exact choice three years ago when I left tech to build my own business.\"" },
+            { front: "The Cold Read — observe her underlying drive.", back: "\"You look like someone who started that job for security, but now craves creative freedom.\"", guideFront: "Guess instead of asking when...", guideBack: "A confident guess about her" },
+            { front: "Identifying the Blueprint — confirm her core motivation.", back: "\"So for you, taking a risk feels scary, but staying stuck in routine feels way worse.\"", guideFront: "Read what she values when...", guideBack: "A guess at what she values" },
+            { front: "Grounding Stories (DHV Stories) — anchor with a personal story.", back: "\"I faced that exact choice three years ago when I left tech to build my own business.\"", guideFront: "Tell a story that shows your value when...", guideBack: "A short story with value woven in" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She shares that she spent a month solo backpacking across South America.",
           steps: [
-            { front: "The Cold Read — read her adventure style.", back: "\"You're not the tourist resort type—you're the person who wanders into local neighborhoods.\"" },
-            { front: "Identifying the Blueprint — uncover her core priority.", back: "\"It sounds like novelty and independence are what make you feel truly alive.\"" },
-            { front: "Grounding Stories (DHV Stories) — share a parallel experience.", back: "\"That reminds me of getting lost in Tokyo at night with zero Japanese skills.\"" },
+            { front: "The Cold Read — read her adventure style.", back: "\"You're not the tourist resort type—you're the person who wanders into local neighborhoods.\"", guideFront: "Guess instead of asking when...", guideBack: "A confident guess about her" },
+            { front: "Identifying the Blueprint — uncover her core priority.", back: "\"It sounds like novelty and independence are what make you feel truly alive.\"", guideFront: "Read what she values when...", guideBack: "A guess at what she values" },
+            { front: "Grounding Stories (DHV Stories) — share a parallel experience.", back: "\"That reminds me of getting lost in Tokyo at night with zero Japanese skills.\"", guideFront: "Tell a story that shows your value when...", guideBack: "A short story with value woven in" },
           ]
         },
       ]
@@ -8298,27 +8298,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "She mentions she takes pottery classes on weekends.",
           steps: [
-            { front: "Wide and Deep Rapport — ask for the emotional reason behind her hobby.", back: "\"What made you choose pottery? Is it the tactile feel or just escaping screens?\"" },
-            { front: "The Cold Read — make an intuitive read on her personality.", back: "\"You have a very patient side that most people miss because you act energetic.\"" },
-            { front: "Grounding Stories (DHV Stories) — share your own creative outlet.", back: "\"I get that same quiet focus when I work on woodworking projects in my garage.\"" },
+            { front: "Wide and Deep Rapport — ask for the emotional reason behind her hobby.", back: "\"What made you choose pottery? Is it the tactile feel or just escaping screens?\"", guideFront: "Pick one topic and go deeper when...", guideBack: "A deeper, more personal question" },
+            { front: "The Cold Read — make an intuitive read on her personality.", back: "\"You have a very patient side that most people miss because you act energetic.\"", guideFront: "Guess instead of asking when...", guideBack: "A confident guess about her" },
+            { front: "Grounding Stories (DHV Stories) — share your own creative outlet.", back: "\"I get that same quiet focus when I work on woodworking projects in my garage.\"", guideFront: "Tell a story that shows your value when...", guideBack: "A short story with value woven in" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She talks about growing up in a small coastal town.",
           steps: [
-            { front: "Wide and Deep Rapport — ask how that environment shaped her.", back: "\"How did growing up by the ocean influence how you deal with stress now?\"" },
-            { front: "The Cold Read — observe her connection to family.", back: "\"You sound like the sibling who always tried to keep the peace during family dinners.\"" },
-            { front: "Grounding Stories (DHV Stories) — share a grounding family memory.", back: "\"My family dinners were chaotic too, with three brothers fighting over food.\"" },
+            { front: "Wide and Deep Rapport — ask how that environment shaped her.", back: "\"How did growing up by the ocean influence how you deal with stress now?\"", guideFront: "Pick one topic and go deeper when...", guideBack: "A deeper, more personal question" },
+            { front: "The Cold Read — observe her connection to family.", back: "\"You sound like the sibling who always tried to keep the peace during family dinners.\"", guideFront: "Guess instead of asking when...", guideBack: "A confident guess about her" },
+            { front: "Grounding Stories (DHV Stories) — share a grounding family memory.", back: "\"My family dinners were chaotic too, with three brothers fighting over food.\"", guideFront: "Tell a story that shows your value when...", guideBack: "A short story with value woven in" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She says she loves taking spontaneous road trips.",
           steps: [
-            { front: "Wide and Deep Rapport — ask what feelings road trips trigger.", back: "\"Is it the feeling of open road or discovering strange small towns that you love?\"" },
-            { front: "The Cold Read — read her decision-making style.", back: "\"You seem like someone who plans the big route but leaves all the details to fate.\"" },
-            { front: "Grounding Stories (DHV Stories) — share a memorable road trip story.", back: "\"My favorite trip was driving up the coast with no hotel reservations booked.\"" },
+            { front: "Wide and Deep Rapport — ask what feelings road trips trigger.", back: "\"Is it the feeling of open road or discovering strange small towns that you love?\"", guideFront: "Pick one topic and go deeper when...", guideBack: "A deeper, more personal question" },
+            { front: "The Cold Read — read her decision-making style.", back: "\"You seem like someone who plans the big route but leaves all the details to fate.\"", guideFront: "Guess instead of asking when...", guideBack: "A confident guess about her" },
+            { front: "Grounding Stories (DHV Stories) — share a memorable road trip story.", back: "\"My favorite trip was driving up the coast with no hotel reservations booked.\"", guideFront: "Tell a story that shows your value when...", guideBack: "A short story with value woven in" },
           ]
         },
       ]
@@ -8333,27 +8333,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "She talks enthusiastically about leading a large team at her company.",
           steps: [
-            { front: "The Cold Read — make a read on her leadership style.", back: "\"You look like a leader who cares more about protecting her team than taking credit.\"" },
-            { front: "Identifying the Blueprint — identify her primary value.", back: "\"So loyalty and impact matter way more to you than just having a fancy title.\"" },
-            { front: "Wide and Deep Rapport — bridge into her personal life.", back: "\"How do you turn off that high-responsibility mindset when you come home?\"" },
+            { front: "The Cold Read — make a read on her leadership style.", back: "\"You look like a leader who cares more about protecting her team than taking credit.\"", guideFront: "Guess instead of asking when...", guideBack: "A confident guess about her" },
+            { front: "Identifying the Blueprint — identify her primary value.", back: "\"So loyalty and impact matter way more to you than just having a fancy title.\"", guideFront: "Read what she values when...", guideBack: "A guess at what she values" },
+            { front: "Wide and Deep Rapport — bridge into her personal life.", back: "\"How do you turn off that high-responsibility mindset when you come home?\"", guideFront: "Pick one topic and go deeper when...", guideBack: "A deeper, more personal question" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She describes sketching portraits of strangers while traveling.",
           steps: [
-            { front: "The Cold Read — read her observation skills.", back: "\"You're a deep observer. You notice small details about people that others ignore.\"" },
-            { front: "Identifying the Blueprint — uncover her world view.", back: "\"For you, beauty is about authenticity rather than polished perfection.\"" },
-            { front: "Wide and Deep Rapport — ask about her favorite encounter.", back: "\"What was the most surprising story a stranger ever shared with you?\"" },
+            { front: "The Cold Read — read her observation skills.", back: "\"You're a deep observer. You notice small details about people that others ignore.\"", guideFront: "Guess instead of asking when...", guideBack: "A confident guess about her" },
+            { front: "Identifying the Blueprint — uncover her world view.", back: "\"For you, beauty is about authenticity rather than polished perfection.\"", guideFront: "Read what she values when...", guideBack: "A guess at what she values" },
+            { front: "Wide and Deep Rapport — ask about her favorite encounter.", back: "\"What was the most surprising story a stranger ever shared with you?\"", guideFront: "Pick one topic and go deeper when...", guideBack: "A deeper, more personal question" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She is quiet and selective with her answers during early conversation.",
           steps: [
-            { front: "The Cold Read — call out her guarded nature warmly.", back: "\"You have a strong inner circle, and you don't let people in until they prove themselves.\"" },
-            { front: "Identifying the Blueprint — validate her core boundary.", back: "\"So genuine trust and emotional safety are non-negotiable for you.\"" },
-            { front: "Wide and Deep Rapport — explore her favorite safe spaces.", back: "\"Where is the place you go when you want to completely recharge your batteries?\"" },
+            { front: "The Cold Read — call out her guarded nature warmly.", back: "\"You have a strong inner circle, and you don't let people in until they prove themselves.\"", guideFront: "Guess instead of asking when...", guideBack: "A confident guess about her" },
+            { front: "Identifying the Blueprint — validate her core boundary.", back: "\"So genuine trust and emotional safety are non-negotiable for you.\"", guideFront: "Read what she values when...", guideBack: "A guess at what she values" },
+            { front: "Wide and Deep Rapport — explore her favorite safe spaces.", back: "\"Where is the place you go when you want to completely recharge your batteries?\"", guideFront: "Pick one topic and go deeper when...", guideBack: "A deeper, more personal question" },
           ]
         },
       ]
@@ -8362,70 +8362,70 @@ const multiStepCollections = {
   toddv4: [
     {
       name: "The \"Seeding to Closing\" Sequence",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Step 1: False Time Constraint (lowers guard) -> Step 2: Seeding the Pull (plants the idea) -> Step 3: Assumptive Closing (executes the move). This sequence follows the natural logistical progression from the \"Middle Game\" to the \"Resolution.\"",
       inputs: [
         {
           bundle: 'pro',
           situation: "You've been talking to a girl for 15 minutes at a crowded bar. The vibe is good but the environment is distracting.",
           steps: [
-            { front: "False Time Constraints — mention you have to leave soon.", back: "\"I have to meet my friends in about 20 minutes, but I'm really enjoying this.\"" },
-            { front: "Seeding the Pull — plant the seed of a quieter spot.", back: "\"I'd love to show you that rooftop lounge around the corner, but I don't think you're ready for that kind of view yet.\"" },
-            { front: "Assumptive Closing — she says \"Oh really? I love views.\"", back: "\"[ __ ] it, let's go check it out for ten minutes before I have to run. Sco.\"" },
+            { front: "False Time Constraints — mention you have to leave soon.", back: "\"I have to meet my friends in about 20 minutes, but I'm really enjoying this.\"", guideFront: "Say you're leaving soon when...", guideBack: "An opener with a built-in exit" },
+            { front: "Seeding the Pull — plant the seed of a quieter spot.", back: "\"I'd love to show you that rooftop lounge around the corner, but I don't think you're ready for that kind of view yet.\"", guideFront: "Hint at a later move when...", guideBack: "A plan mentioned as a maybe" },
+            { front: "Assumptive Closing (Sco Game) — she says \"Oh really? I love views.\"", back: "\"[ __ ] it, let's go check it out for ten minutes before I have to run. Sco.\"", guideFront: "State the move and start going when...", guideBack: "A move stated as settled" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You have been chatting at a hotel bar for twenty minutes and want to change venues smoothly.",
           steps: [
-            { front: "False Time Constraints — mention you have to leave soon.", back: "\"I have to meet my friends in about 20 minutes, but I'm really enjoying this.\"" },
-            { front: "Seeding the Pull — plant the seed of an exclusive rooftop spot.", back: "\"I'd take you up to the secret rooftop lounge, but I don't know if you can handle the height.\"" },
-            { front: "Assumptive Closing (Sco Game) — she says she loves rooftop bars.", back: "\"Let me take you up for five minutes before I have to run. Sco.\"" },
+            { front: "False Time Constraints — mention you have to leave soon.", back: "\"I have to meet my friends in about 20 minutes, but I'm really enjoying this.\"", guideFront: "Say you're leaving soon when...", guideBack: "An opener with a built-in exit" },
+            { front: "Seeding the Pull — plant the seed of an exclusive rooftop spot.", back: "\"I'd take you up to the secret rooftop lounge, but I don't know if you can handle the height.\"", guideFront: "Hint at a later move when...", guideBack: "A plan mentioned as a maybe" },
+            { front: "Assumptive Closing (Sco Game) — she says she loves rooftop bars.", back: "\"Let me take you up for five minutes before I have to run. Sco.\"", guideFront: "State the move and start going when...", guideBack: "A move stated as settled" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You met at a busy networking event and want to move to a quiet coffee shop nearby.",
           steps: [
-            { front: "False Time Constraints — establish a brief window of time.", back: "\"I have to catch my train in fifteen minutes, but this conversation is too good to rush.\"" },
-            { front: "Seeding the Pull — seed the idea of a quick espresso.", back: "\"There's an amazing espresso bar next door, but you look like you're too busy networking.\"" },
-            { front: "Assumptive Closing (Sco Game) — she says she needs coffee too.", back: "\"Come on, let's grab a quick cup right now before my train. Let me lead us out.\"" },
+            { front: "False Time Constraints — establish a brief window of time.", back: "\"I have to catch my train in fifteen minutes, but this conversation is too good to rush.\"", guideFront: "Say you're leaving soon when...", guideBack: "An opener with a built-in exit" },
+            { front: "Seeding the Pull — seed the idea of a quick espresso.", back: "\"There's an amazing espresso bar next door, but you look like you're too busy networking.\"", guideFront: "Hint at a later move when...", guideBack: "A plan mentioned as a maybe" },
+            { front: "Assumptive Closing (Sco Game) — she says she needs coffee too.", back: "\"Come on, let's grab a quick cup right now before my train. Let me lead us out.\"", guideFront: "State the move and start going when...", guideBack: "A move stated as settled" },
           ]
         },
       ]
     },
     {
       name: "The \"Vibe Save\" Sequence",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Step 1: Emotional Spiking (re-establishes premise) -> Step 2: False Time Constraints (takes off pressure) -> Step 3: Seeding the Pull (tests for compliance). This sequence is used to rescue a set that has gone \"flat\" or boring.",
       inputs: [
         {
           bundle: 'pro',
           situation: "You've been talking for 10 minutes and it feels like an interview. She's looking at her phone.",
           steps: [
-            { front: "Emotional Spiking — use a polarizing statement.", back: "\"You're the most ridiculous girl I've met all night. I think I like you, but you also totally disgust me.\"" },
-            { front: "False Time Constraints — she giggles and puts the phone away.", back: "\"Look, I have to head off in a minute, but tell me something about you that isn't obvious.\"" },
-            { front: "Seeding the Pull — she qualifies herself.", back: "\"Okay, you're actually kind of cool. I might have to take you for that drink on Sunday after all. We'll see.\"" },
+            { front: "Emotional Spiking (The Polarizer) — use a polarizing statement.", back: "\"You're the most ridiculous girl I've met all night. I think I like you, but you also totally disgust me.\"", guideFront: "Say something bold and charged when...", guideBack: "A strong, unexpected spike" },
+            { front: "False Time Constraints — she giggles and puts the phone away.", back: "\"Look, I have to head off in a minute, but tell me something about you that isn't obvious.\"", guideFront: "Say you're leaving soon when...", guideBack: "An opener with a built-in exit" },
+            { front: "Seeding the Pull — she qualifies herself.", back: "\"Okay, you're actually kind of cool. I might have to take you for that drink on Sunday after all. We'll see.\"", guideFront: "Hint at a later move when...", guideBack: "A plan mentioned as a maybe" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She is giving polite, formal answers about her corporate job and looking bored.",
           steps: [
-            { front: "Emotional Spiking (The Polarizer) — break the formal pattern with a bold reframe.", back: "\"You're telling me about spreadsheets, but you have this look like you're plotting a bank heist.\"" },
-            { front: "False Time Constraints — she laughs and relaxes her posture.", back: "\"I can only stay for two more minutes, so tell me something about you that isn't on LinkedIn.\"" },
-            { front: "Seeding the Pull — she shares a passionate hobby.", back: "\"Okay, you're actually interesting. I might have to take you for an adventure date next week.\"" },
+            { front: "Emotional Spiking (The Polarizer) — break the formal pattern with a bold reframe.", back: "\"You're telling me about spreadsheets, but you have this look like you're plotting a bank heist.\"", guideFront: "Say something bold and charged when...", guideBack: "A strong, unexpected spike" },
+            { front: "False Time Constraints — she laughs and relaxes her posture.", back: "\"I can only stay for two more minutes, so tell me something about you that isn't on LinkedIn.\"", guideFront: "Say you're leaving soon when...", guideBack: "An opener with a built-in exit" },
+            { front: "Seeding the Pull — she shares a passionate hobby.", back: "\"Okay, you're actually interesting. I might have to take you for an adventure date next week.\"", guideFront: "Hint at a later move when...", guideBack: "A plan mentioned as a maybe" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Conversation stalls at a rooftop party and she starts checking her watch.",
           steps: [
-            { front: "Emotional Spiking (The Polarizer) — use a polarizing statement to restart energy.", back: "\"I can't decide if you're the sweetest person here or the most dangerous troublemaker.\"" },
-            { front: "False Time Constraints — she looks up surprised and smiles.", back: "\"I'm heading back to my friends in a second, but you owe me an explanation for that smile.\"" },
-            { front: "Seeding the Pull — she banters back playfully.", back: "\"You're fun. We probably shouldn't hang out again because we'd get into way too much trouble.\"" },
+            { front: "Emotional Spiking (The Polarizer) — use a polarizing statement to restart energy.", back: "\"I can't decide if you're the sweetest person here or the most dangerous troublemaker.\"", guideFront: "Say something bold and charged when...", guideBack: "A strong, unexpected spike" },
+            { front: "False Time Constraints — she looks up surprised and smiles.", back: "\"I'm heading back to my friends in a second, but you owe me an explanation for that smile.\"", guideFront: "Say you're leaving soon when...", guideBack: "An opener with a built-in exit" },
+            { front: "Seeding the Pull — she banters back playfully.", back: "\"You're fun. We probably shouldn't hang out again because we'd get into way too much trouble.\"", guideFront: "Hint at a later move when...", guideBack: "A plan mentioned as a maybe" },
           ]
         },
       ]
@@ -8440,27 +8440,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You are standing near the venue exit on a weekend night.",
           steps: [
-            { front: "False Time Constraints — set a quick timeframe.", back: "\"I have to head home in five minutes, but I'm starving.\"" },
-            { front: "Emotional Spiking (The Polarizer) — spike the interaction with playful friction.", back: "\"You look like the type of girl who eats pizza with a fork and knife, which is disgraceful.\"" },
-            { front: "Assumptive Closing (Sco Game) — execute the move directly.", back: "\"Let me take you across the street for a slice before I leave. Sco.\"" },
+            { front: "False Time Constraints — set a quick timeframe.", back: "\"I have to head home in five minutes, but I'm starving.\"", guideFront: "Say you're leaving soon when...", guideBack: "An opener with a built-in exit" },
+            { front: "Emotional Spiking (The Polarizer) — spike the interaction with playful friction.", back: "\"You look like the type of girl who eats pizza with a fork and knife, which is disgraceful.\"", guideFront: "Say something bold and charged when...", guideBack: "A strong, unexpected spike" },
+            { front: "Assumptive Closing (Sco Game) — execute the move directly.", back: "\"Let me take you across the street for a slice before I leave. Sco.\"", guideFront: "State the move and start going when...", guideBack: "A move stated as settled" },
           ]
         },
         {
           bundle: 'pro',
           situation: "The main bar area is packed and noisy, making conversation difficult.",
           steps: [
-            { front: "False Time Constraints — mention a brief move.", back: "\"I'm stepping out to the patio for two minutes to catch my breath.\"" },
-            { front: "Emotional Spiking (The Polarizer) — tease her quiet demeanor.", back: "\"You look way too serious for a Friday night. You need some outdoor air.\"" },
-            { front: "Assumptive Closing (Sco Game) — take her hand and lead.", back: "\"Come with me to the patio right now. Let me lead us out.\"" },
+            { front: "False Time Constraints — mention a brief move.", back: "\"I'm stepping out to the patio for two minutes to catch my breath.\"", guideFront: "Say you're leaving soon when...", guideBack: "An opener with a built-in exit" },
+            { front: "Emotional Spiking (The Polarizer) — tease her quiet demeanor.", back: "\"You look way too serious for a Friday night. You need some outdoor air.\"", guideFront: "Say something bold and charged when...", guideBack: "A strong, unexpected spike" },
+            { front: "Assumptive Closing (Sco Game) — take her hand and lead.", back: "\"Come with me to the patio right now. Let me lead us out.\"", guideFront: "State the move and start going when...", guideBack: "A move stated as settled" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are walking near your apartment building after drinks.",
           steps: [
-            { front: "False Time Constraints — frame the visit as very brief.", back: "\"I need to drop my heavy bag at my place for two minutes.\"" },
-            { front: "Emotional Spiking (The Polarizer) — add playful tension.", back: "\"You can come up, but promise not to steal my favorite vinyl record.\"" },
-            { front: "Assumptive Closing (Sco Game) — lead through the entrance.", back: "\"Let me lead us inside real fast while I put this away. Let's go.\"" },
+            { front: "False Time Constraints — frame the visit as very brief.", back: "\"I need to drop my heavy bag at my place for two minutes.\"", guideFront: "Say you're leaving soon when...", guideBack: "An opener with a built-in exit" },
+            { front: "Emotional Spiking (The Polarizer) — add playful tension.", back: "\"You can come up, but promise not to steal my favorite vinyl record.\"", guideFront: "Say something bold and charged when...", guideBack: "A strong, unexpected spike" },
+            { front: "Assumptive Closing (Sco Game) — lead through the entrance.", back: "\"Let me lead us inside real fast while I put this away. Let's go.\"", guideFront: "State the move and start going when...", guideBack: "A move stated as settled" },
           ]
         },
       ]
@@ -8469,70 +8469,70 @@ const multiStepCollections = {
   toddv5: [
     {
       name: "The \"Group to Isolation\" Sequence",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Step 1: Handling the Posse (win the friends) -> Step 2: The \"What Do I Want?\" Move (take the lead) -> Step 3: Passing Value Tests (hold the frame). This sequence moves you from the \"guy talking to a group\" to the \"leader taking the girl.\"",
       inputs: [
         {
           bundle: 'pro',
           situation: "You see a girl you like with three of her friends at a bar. They are all talking and laughing.",
           steps: [
-            { front: "Handling the Posse — address the whole group.", back: "\"Wait, I just noticed something. Are you guys best friends? There's a reason I'm asking.\"" },
-            { front: "The \"What Do I Want?\" Move — they engage; lead the target.", back: "\"You guys are awesome, but I'm stealing your friend for two minutes to get a drink. We'll be right back.\"" },
-            { front: "Passing Value Tests — as you walk away, she says \"You're very assertive, aren't you?\"", back: "\"I'm glad you noticed. It's better than being a bumbling buffoon, right? I'm Todd.\"" },
+            { front: "Handling the Posse — address the whole group.", back: "\"Wait, I just noticed something. Are you guys best friends? There's a reason I'm asking.\"", guideFront: "Win over her friends first when...", guideBack: "A friendly line to the group" },
+            { front: "The \"What Do I Want?\" Move — they engage; lead the target.", back: "\"You guys are awesome, but I'm stealing your friend for two minutes to get a drink. We'll be right back.\"", guideFront: "Do what you actually want when...", guideBack: "Your own wish, acted on" },
+            { front: "Passing Value Shit Tests — as you walk away, she says \"You're very assertive, aren't you?\"", back: "\"I'm glad you noticed. It's better than being a bumbling buffoon, right? I'm Todd.\"", guideFront: "Agree and exaggerate when...", guideBack: "An unbothered, playful twist" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She is standing in the middle of a tight group of friends near the bar.",
           steps: [
-            { front: "Handling the Posse — acknowledge the group warmly.", back: "\"Hey everyone! I'm stealing your friend for two minutes, don't worry, I'll return her safely.\"" },
-            { front: "Passing Value Shit Tests — reframe her friend's sarcastic comment about your approach.", back: "\"I love the protective friend shield! It shows you guys actually care about her.\"" },
-            { front: "The \"What Do I Want?\" Move — state your intention and lead her to a quieter spot.", back: "\"I want to hear that story without yelling over the music. Let's sit at that booth over there.\"" },
+            { front: "Handling the Posse — acknowledge the group warmly.", back: "\"Hey everyone! I'm stealing your friend for two minutes, don't worry, I'll return her safely.\"", guideFront: "Win over her friends first when...", guideBack: "A friendly line to the group" },
+            { front: "Passing Value Shit Tests — reframe her friend's sarcastic comment about your approach.", back: "\"I love the protective friend shield! It shows you guys actually care about her.\"", guideFront: "Agree and exaggerate when...", guideBack: "An unbothered, playful twist" },
+            { front: "The \"What Do I Want?\" Move — state your intention and lead her to a quieter spot.", back: "\"I want to hear that story without yelling over the music. Let's sit at that booth over there.\"", guideFront: "Do what you actually want when...", guideBack: "Your own wish, acted on" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She is sitting with two friends who are eyeing you suspiciously.",
           steps: [
-            { front: "Handling the Posse — disarm her protective friends.", back: "\"You two look like the fun committee tonight. I'm Todd, nice to meet you both.\"" },
-            { front: "Passing Value Shit Tests — agree and exaggerate when her friend calls you cocky.", back: "\"Oh, I'm terribly arrogant! It's a huge problem, but I make up for it with charm.\"" },
-            { front: "The \"What Do I Want?\" Move — lead her away for a 1-on-1 chat.", back: "\"I'm grabbing a fresh water from the quiet bar area. Walk over with me.\"" },
+            { front: "Handling the Posse — disarm her protective friends.", back: "\"You two look like the fun committee tonight. I'm Todd, nice to meet you both.\"", guideFront: "Win over her friends first when...", guideBack: "A friendly line to the group" },
+            { front: "Passing Value Shit Tests — agree and exaggerate when her friend calls you cocky.", back: "\"Oh, I'm terribly arrogant! It's a huge problem, but I make up for it with charm.\"", guideFront: "Agree and exaggerate when...", guideBack: "An unbothered, playful twist" },
+            { front: "The \"What Do I Want?\" Move — lead her away for a 1-on-1 chat.", back: "\"I'm grabbing a fresh water from the quiet bar area. Walk over with me.\"", guideFront: "Do what you actually want when...", guideBack: "Your own wish, acted on" },
           ]
         },
       ]
     },
     {
       name: "The \"Friction to Connection\" Sequence",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Step 1: Passing Value Tests (prove status) -> Step 2: Passing Comfort Tests (prove heart) -> Step 3: The \"What Do I Want?\" Move (execute desire).",
       inputs: [
         {
           bundle: 'pro',
           situation: "You are on a date with a very attractive girl who is being difficult and testing you constantly.",
           steps: [
-            { front: "Passing Value Tests — she says \"I bet you're a player.\"", back: "\"If by that you mean I'm a guy with options who chose to be here with you, then yes. Very perceptive.\"" },
-            { front: "Passing Comfort Tests — she softens and says \"I just don't want to get hurt.\"", back: "\"I respect that. It's modest of you to think I could even hurt you yet. Let's just have a fun time and see where it goes.\"" },
-            { front: "The \"What Do I Want?\" Move — the tension is high; move for the close.", back: "\"I'm tired of this bar. Let's go check out the view on the rooftop nearby. Sco.\"" },
+            { front: "Passing Value Shit Tests — she says \"I bet you're a player.\"", back: "\"If by that you mean I'm a guy with options who chose to be here with you, then yes. Very perceptive.\"", guideFront: "Agree and exaggerate when...", guideBack: "An unbothered, playful twist" },
+            { front: "Passing Comfort Shit Tests — she softens and says \"I just don't want to get hurt.\"", back: "\"I respect that. It's modest of you to think I could even hurt you yet. Let's just have a fun time and see where it goes.\"", guideFront: "Reassure her and stay steady when...", guideBack: "A sincere reassurance" },
+            { front: "The \"What Do I Want?\" Move — the tension is high; move for the close.", back: "\"I'm tired of this bar. Let's go check out the view on the rooftop nearby. Sco.\"", guideFront: "Do what you actually want when...", guideBack: "Your own wish, acted on" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She reacts with a cold, sarcastic remark when you first approach her.",
           steps: [
-            { front: "Passing Value Shit Tests — absorb the friction with a calm smirk.", back: "\"Look at that fierce glare! You must be an absolute nightmare to deal with in the morning.\"" },
-            { front: "Passing Comfort Shit Tests — answer her genuine follow-up question with sincerity.", back: "\"Honestly, I'm not playing games. I saw your energy from across the room and wanted to say hi.\"" },
-            { front: "The \"What Do I Want?\" Move — state your clear desire and lead the interaction.", back: "\"I want to get to know the real person behind that tough exterior. Let's grab a seat.\"" },
+            { front: "Passing Value Shit Tests — absorb the friction with a calm smirk.", back: "\"Look at that fierce glare! You must be an absolute nightmare to deal with in the morning.\"", guideFront: "Agree and exaggerate when...", guideBack: "An unbothered, playful twist" },
+            { front: "Passing Comfort Shit Tests — answer her genuine follow-up question with sincerity.", back: "\"Honestly, I'm not playing games. I saw your energy from across the room and wanted to say hi.\"", guideFront: "Reassure her and stay steady when...", guideBack: "A sincere reassurance" },
+            { front: "The \"What Do I Want?\" Move — state your clear desire and lead the interaction.", back: "\"I want to get to know the real person behind that tough exterior. Let's grab a seat.\"", guideFront: "Do what you actually want when...", guideBack: "Your own wish, acted on" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She acts guarded and questions your motives during early date drinks.",
           steps: [
-            { front: "Passing Value Shit Tests — reframe her challenge about your intentions.", back: "\"You think I have a secret evil masterplan? I'm just enjoying a great drink with a cool girl.\"" },
-            { front: "Passing Comfort Shit Tests — reassure her genuine concern about trust.", back: "\"I get why you're cautious. I value honesty and I only hang out with people who are real.\"" },
-            { front: "The \"What Do I Want?\" Move — lead her to the next venue with certainty.", back: "\"I'm in the mood for amazing dessert. Come on, I'm taking us to my favorite spot.\"" },
+            { front: "Passing Value Shit Tests — reframe her challenge about your intentions.", back: "\"You think I have a secret evil masterplan? I'm just enjoying a great drink with a cool girl.\"", guideFront: "Agree and exaggerate when...", guideBack: "An unbothered, playful twist" },
+            { front: "Passing Comfort Shit Tests — reassure her genuine concern about trust.", back: "\"I get why you're cautious. I value honesty and I only hang out with people who are real.\"", guideFront: "Reassure her and stay steady when...", guideBack: "A sincere reassurance" },
+            { front: "The \"What Do I Want?\" Move — lead her to the next venue with certainty.", back: "\"I'm in the mood for amazing dessert. Come on, I'm taking us to my favorite spot.\"", guideFront: "Do what you actually want when...", guideBack: "Your own wish, acted on" },
           ]
         },
       ]
@@ -8547,27 +8547,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "She is surrounded by protective friends in a high-status venue section.",
           steps: [
-            { front: "Handling the Posse — address the whole group with warmth and confidence.", back: "\"Good evening everyone! I'm Todd. I had to come over and say hello to your friend.\"" },
-            { front: "Passing Value Shit Tests — reframe her friend's sarcastic joke about your outfit.", back: "\"I appreciate the style advice, mate! You guys definitely run a tough entry inspection.\"" },
-            { front: "Passing Comfort Shit Tests — answer her sincere question about your background calmly.", back: "\"I work in design, but what I really care about is building cool projects and traveling.\"" },
+            { front: "Handling the Posse — address the whole group with warmth and confidence.", back: "\"Good evening everyone! I'm Todd. I had to come over and say hello to your friend.\"", guideFront: "Win over her friends first when...", guideBack: "A friendly line to the group" },
+            { front: "Passing Value Shit Tests — reframe her friend's sarcastic joke about your outfit.", back: "\"I appreciate the style advice, mate! You guys definitely run a tough entry inspection.\"", guideFront: "Agree and exaggerate when...", guideBack: "An unbothered, playful twist" },
+            { front: "Passing Comfort Shit Tests — answer her sincere question about your background calmly.", back: "\"I work in design, but what I really care about is building cool projects and traveling.\"", guideFront: "Reassure her and stay steady when...", guideBack: "A sincere reassurance" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She is chatting with a mix of male and female friends near the order counter.",
           steps: [
-            { front: "Handling the Posse — win over the dominant group member.", back: "\"Hey man, quick question for the group: who is the most troublemaking person here?\"" },
-            { front: "Passing Value Shit Tests — agree and exaggerate when called a player by her friend.", back: "\"Oh absolutely, I'm a professional player! I practice my lines in the mirror every morning.\"" },
-            { front: "Passing Comfort Shit Tests — speak sincerely when she asks why you stayed to chat.", back: "\"To be honest, your group had great energy, but I really wanted to connect with you.\"" },
+            { front: "Handling the Posse — win over the dominant group member.", back: "\"Hey man, quick question for the group: who is the most troublemaking person here?\"", guideFront: "Win over her friends first when...", guideBack: "A friendly line to the group" },
+            { front: "Passing Value Shit Tests — agree and exaggerate when called a player by her friend.", back: "\"Oh absolutely, I'm a professional player! I practice my lines in the mirror every morning.\"", guideFront: "Agree and exaggerate when...", guideBack: "An unbothered, playful twist" },
+            { front: "Passing Comfort Shit Tests — speak sincerely when she asks why you stayed to chat.", back: "\"To be honest, your group had great energy, but I really wanted to connect with you.\"", guideFront: "Reassure her and stay steady when...", guideBack: "A sincere reassurance" },
           ]
         },
         {
           bundle: 'pro',
           situation: "She is talking with a protective male friend in a crowded kitchen area.",
           steps: [
-            { front: "Handling the Posse — disarm the protective friend with high status.", back: "\"Hey brother! I'm not here to cause trouble, just saying a quick hi to this lady.\"" },
-            { front: "Passing Value Shit Tests — reframe a sharp challenge about your confidence.", back: "\"I'm not cocky, I'm just having a great night. Life is too short to be shy.\"" },
-            { front: "Passing Comfort Shit Tests — reassure her genuine concern about your intentions.", back: "\"I take relationships seriously. I don't waste time with people unless there's genuine chemistry.\"" },
+            { front: "Handling the Posse — disarm the protective friend with high status.", back: "\"Hey brother! I'm not here to cause trouble, just saying a quick hi to this lady.\"", guideFront: "Win over her friends first when...", guideBack: "A friendly line to the group" },
+            { front: "Passing Value Shit Tests — reframe a sharp challenge about your confidence.", back: "\"I'm not cocky, I'm just having a great night. Life is too short to be shy.\"", guideFront: "Agree and exaggerate when...", guideBack: "An unbothered, playful twist" },
+            { front: "Passing Comfort Shit Tests — reassure her genuine concern about your intentions.", back: "\"I take relationships seriously. I don't waste time with people unless there's genuine chemistry.\"", guideFront: "Reassure her and stay steady when...", guideBack: "A sincere reassurance" },
           ]
         },
       ]

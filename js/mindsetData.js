@@ -3666,8 +3666,8 @@ const mindsetCollections = {
   praxframe1: [
     {
       name: "You Belong to You",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The philosophy of Rational Egoism (Rule Zero). You exist for yourself, and anyone who wants something from you must offer value in return.",
       inputs: [
         { q: "I feel like a \"jerk\" for putting my gym time first.", a: "\"I am the only person who wipes my own ass every day; I must treat that man well.\"", bundle: 'pro' },
@@ -3732,8 +3732,8 @@ const mindsetCollections = {
   praxframe2: [
     {
       name: "Authentic Kayfabe",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Understanding that relationships are a \"Seduction Story\" where you are the protagonist; you play a character, but the character is based on your earned value.\nAuthentic men co-write the narrative with women rather than making them \"set pieces.\"",
       inputs: [
         { q: "I feel like a \"fraud\" for using these techniques.", a: "\"Acting isn't a fantasy; it's a job. Being a good actor builds my real confidence.\"", bundle: 'pro' },
@@ -3748,8 +3748,8 @@ const mindsetCollections = {
     },
     {
       name: "Morality is Results",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Shedding external shaming or religious dogmas that produce misery and adopting a morality based on your chosen outcomes.\nAs long as there is not a law against it, and it gets you what you want, it is moral for you.",
       inputs: [
         { q: "I feel \"guilty\" for being Machiavellian in my career.", a: "\"Everyone lies and manipulates. I'm choosing to play to win.\"", bundle: 'pro' },
@@ -3798,8 +3798,8 @@ const mindsetCollections = {
   praxframe3: [
     {
       name: "The Assertive Rights",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Internalizing the fact that you are your own judge and don't require her permission to exist or make decisions.",
       inputs: [
         { q: "I feel like I have to explain \"why\" I made this choice.", a: "\"I have the right to offer no reasons or excuses for my behavior.\".", bundle: 'pro' },
@@ -3864,8 +3864,8 @@ const mindsetCollections = {
   praxframe4: [
     {
       name: "You Are Not a Plow Horse",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Refusing the identity of the \"Dutiful Plow Horse\" who sacrifices his life and frame for a \"warm stable\" that never arrives.",
       inputs: [
         { q: "I'll just do more chores and maybe she'll want me again.", a: "\"Fulfilling her checklist won't build attraction. Only frame and value do that.\"", bundle: 'pro' },
@@ -3880,8 +3880,8 @@ const mindsetCollections = {
     },
     {
       name: "Morality of Results",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Realizing that if the \"morals\" you were taught (Altruism, Self-Sacrifice) led to a life of quiet desperation, they aren't useful morals for you.",
       inputs: [
         { q: "I feel like a \"jerk\" for setting this boundary.", a: "\"Is it good for me? Is it bad for me? My results dictate my morality.\"", bundle: 'pro' },
@@ -3930,8 +3930,8 @@ const mindsetCollections = {
   praxframe5: [
     {
       name: "The Visionary Captain",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Internalizing the fact that leadership is a choice you make, not a grant you receive. You are the protagonist; she is the co-writer, not a set piece.",
       inputs: [
         { q: "I'm waiting for her to \"let\" me lead the family.", a: "\"Leadership isn't a grant; it's a choice. I lead myself first and those who want to follow, follow.\"", bundle: 'pro' },
@@ -4975,8 +4975,8 @@ const mindsetCollections = {
   danbacon1: [
     {
       name: "The \"Prize\" Mentality",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The belief that you are the one who needs to be \"good enough\" for her. This mindset causes you to be over-polite and boring. Dan Bacon teaches that you must believe you are the prize she is trying to win over.",
       inputs: [
         { q: "\"She is so beautiful, I have to be extra nice to her.\"", a: "\"She gets special treatment from every guy. If I treat her like a normal person and tease her, I’ll be the one she actually remembers.\"", bundle: 'pro' },
@@ -5057,8 +5057,8 @@ const mindsetCollections = {
   danbacon2: [
     {
       name: "The Selector's Frame",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The internal stance that you are the one deciding if she is good enough for you, rather than vice versa.",
       inputs: [
         { q: "\"She is way more attractive than me.\"", a: "\"I am feeling an instant automatic attraction, but that doesn't mean she is more valuable. I can make her feel as much attraction for me as I feel for her.\"", bundle: 'pro' },
@@ -5139,8 +5139,8 @@ const mindsetCollections = {
   danbacon3: [
     {
       name: "Bringing Out the Best",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The belief that her behavior is fixed. In reality, every woman has a \"good girl\" side, and it is your job to create the dynamic that brings it out and keeps it active.",
       inputs: [
         { q: "\"She's just a moody person, there's nothing I can do.\"", a: "\"She reacts to the dynamic I create. If I change my approach and stay masculine and leading, her behavior will naturally follow.\"", bundle: 'pro' },
@@ -5205,8 +5205,8 @@ const mindsetCollections = {
   danbacon4: [
     {
       name: "Independent Confidence",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The internal stance that your value and your mood are not dependent on her signals or behavior. You are in control of your own confidence.",
       inputs: [
         { q: "\"She is being moody, so I must have done something wrong.\"", a: "\"She is a woman; her moods fluctuate. I will remain stable and leading, and her behavior will naturally follow my masculine frame.\"", bundle: 'pro' },
@@ -5451,8 +5451,8 @@ const mindsetCollections = {
   toddv1: [
     {
       name: "Assuming the Burden",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The belief that she should be helping you keep the conversation going. In reality, because you initiated, you must \"start the lawnmower\" by providing 90% of the energy for the first minute.",
       inputs: [
         { q: "It feels awkward and I want to leave.", a: "\"Stay 20 more seconds. Force yourself to live with the nervousness. It's a fractional success just to stay.\"", bundle: 'pro' },
@@ -5517,8 +5517,8 @@ const mindsetCollections = {
   toddv2: [
     {
       name: "The Willingness to Offend",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The fear of losing the interaction stops most guys from teasing or negging. You must be willing to \"risk the immediate pain\" of an awkward moment to give yourself an actual chance at sexual tension.",
       inputs: [
         { q: "I'm afraid she'll get angry if I tease her.", a: "\"I'd much rather get rejected or offend someone than hear 'nice to meet you' after another boring conversation.\"", bundle: 'pro' },
@@ -5583,8 +5583,8 @@ const mindsetCollections = {
   toddv3: [
     {
       name: "The \"Us\" Narrative",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The belief that the conversation is about \"me versus her.\" In reality, the most obsessive connections are built when you create a shared \"Story of Us\" or a \"We\" frame.",
       inputs: [
         { q: "I'm worried about being too cocky.", a: "\"It's not cocky if she's in on the joke. Frame it as 'we' are a cute couple or 'we' are trouble together.\"", bundle: 'pro' },
@@ -5649,8 +5649,8 @@ const mindsetCollections = {
   toddv4: [
     {
       name: "Empathy, Not Sympathy",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The belief that you are being \"pushy\" or \"rude\" by trying to close. In reality, you are a problem solver. Sympathy buys into her excuses; Empathy understands the obstacle and helps her overcome it so you can both have a great time.",
       inputs: [
         { q: "I don't want to be that pushy guy.", a: "\"I owe it to her to be a hard closer. If I'm a high-value guy, she'll have a better night with me than with some other guy who doesn't care about her.\"", bundle: 'pro' },
@@ -5715,8 +5715,8 @@ const mindsetCollections = {
   toddv5: [
     {
       name: "True Self-Esteem",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The belief that your value depends on her reaction. True self-esteem comes from accepting exactly where you are—flaws and all—and doing the right thing regardless of the result.",
       inputs: [
         { q: "I'm too short/bald/ugly for her.", a: "\"I accept who I am. I'm the best short guy in the world. Rejection is a rejection of the moment, not of me.\"", bundle: 'pro' },
