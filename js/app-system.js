@@ -731,6 +731,10 @@ applyInputCounterVisibility();
     praxfield2: { label: 'Praxeology Field Reports 02 – Navigating Relational Storms', minLevel: 'complete' },
     praxfield3: { label: 'Praxeology Field Reports 03 – Restoring Sexual Polarity', minLevel: 'complete' },
     praxfield4: { label: 'Praxeology Field Reports 04 – Advanced Subtext & Power-Talk', minLevel: 'complete' },
+    praxbest1: { label: 'Praxeology Best Men 01 – Proactive Domestic Leadership & Action', minLevel: 'complete' },
+    praxbest2: { label: 'Praxeology Best Men 02 – Unearthing Covert Contracts', minLevel: 'complete' },
+    praxbest3: { label: 'Praxeology Best Men 03 – Tactical Boundary Enforcement', minLevel: 'complete' },
+    praxbest4: { label: 'Praxeology Best Men 04 – Advanced Frame & Attachment Dynamics', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -3426,6 +3430,62 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
+  praxbest1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  praxbest2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  praxbest3: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  praxbest4: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
 };
 window.BUNDLE_DEFS = BUNDLE_DEFS;
 
@@ -4316,6 +4376,7 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.23', date: 'September 2026', title: 'Praxeology Best Men 01\u201304', audience: 'dev', items: ['Four new complete-tier packs under Communication in Relationships, built by NotebookLM from Praxeology Volume 4 (Even the Best Men): <em>Proactive Domestic Leadership &amp; Action</em>, <em>Unearthing Covert Contracts</em>, <em>Tactical Boundary Enforcement</em> and <em>Advanced Frame &amp; Attachment Dynamics</em> (keys praxbest1\u20134).', 'Detailed guide text on every strategy, card and step. Pack 01 got its card and step guides inherited from its strategies; three back guides in pack 04 that said \u201cresponse\u201d were renamed.', 'Only syntax and outright slips corrected. In pack 03, 30 Challenges cards that repeated Single Strategy and Collections cards were replaced with new cards written by Notebook.'] },
   { version: 'v1.29.22', date: 'September 2026', title: 'Description layout in Praxeology Frame, Dan Bacon and Todd V', audience: 'dev', items: ['46 descriptions that rendered as a single paragraph now have their parts separated by blank lines, and recurring lead-ins are bold labels: <em>The deciding question</em>, <em>Why this order</em>, <em>What people do instead</em>, <em>The key question</em>, <em>Why it works</em>, <em>Why it feels right</em>, <em>What it costs</em>. Strategy and deck names in bullet lists are bold.', 'The 14 Mindset decks in Dan Bacon 1\u20134 that were named with a whole sentence now carry the short names their Memorize decks already used (Politeness, Approval Seeking, Reassurance, Compliance and the rest) and a description in the Mindset form; the old sentence is kept as the Mindset line.', 'Two cards in Praxeology Frame 02 labelled <em>(Process: \u2026)</em> now point to Status/Harmony Calibration.'] },
   { version: 'v1.29.21', date: 'September 2026', title: 'Detailed guide text for Praxeology Frame, Dan Bacon and Todd V', audience: 'dev', items: ['All 58 strategies in the fourteen packs have new detailed guide pairs; the old generic ones (<em>Use this strategy to respond when...</em> / <em>A possible response</em>) are gone. 893 Collections and Challenges cards inherit their strategy\'s back guide, and 384 of 386 sequence steps carry the pair.', 'Older cards labelled in round brackets or with a short name, <em>(OODA Loop)</em>, <em>[Open Loops]</em>, now carry the exact strategy name in square brackets; 14 sequence steps renamed to their strategy, e.g. <em>Open Loop</em> \u2192 <em>Open Loops (The Cookie)</em>. Stage directions written in square brackets in 13 cards became round, so they are no longer read as labels.', 'Stale deck-level mode lines normalised (<em>Choose a strategy to respond when...</em>, <em>A thought that gets in the way.</em> and others), and 34 leftover guides removed from Memorize decks.'] },
   { version: 'v1.29.20', date: 'September 2026', title: 'Detailed guide text for Praxeology Field Reports 01–04', audience: 'dev', items: ['All 16 strategies in the four Field Reports packs have their own detailed guide pair; 256 Collections and Challenges cards inherit their strategy\'s back guide, and 108 sequence steps carry the pair.', 'The old Sequences mode line <em>What\'s happening, and the strategy to use</em> had come back with NotebookLM content in 18 packs (Praxeology Frame and Field Reports, Dan Bacon, Todd V). All 33 now read <em>Use the planned strategy when...</em>.', 'Root cause fixed in the NotebookLM sources: the custom instructions said never to write a per-strategy guide, and the three model packs in the vault predated the guide sweep.'] },

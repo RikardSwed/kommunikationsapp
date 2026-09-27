@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.29.22';
+const VERSION = 'v1.29.23';
 
 // Keep every version label in the UI in sync with VERSION (v1.26.44).
 // The hardcoded strings in index.html are only fallbacks — this runs at
@@ -166,6 +166,10 @@ const PACK_ICONS = {
   praxfield2: 'ti-target',
   praxfield3: 'ti-target',
   praxfield4: 'ti-target',
+  praxbest1: 'ti-target',
+  praxbest2: 'ti-target',
+  praxbest3: 'ti-target',
+  praxbest4: 'ti-target',
 };
 function packIcon(key) {
   const name = PACK_ICONS[key] || 'ti-cards';

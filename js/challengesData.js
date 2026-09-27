@@ -8946,4 +8946,332 @@ const challengesCollections = {
       ]
     },
   ],
+  praxbest1: [
+    {
+      name: "Analysis Paralysis",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Overcoming the trap of endless research, spreadsheet obsession, and overthinking minor domestic decisions.\n\nThis challenge trains you to set hard limits on deliberation and execute cleanly when info is sufficient.\n• **Action Over Analysis** — enforce research deadlines and execute on 80% information\n• **Mental Point of Origin** — eliminate trivial options that drain decision budget\n\nMindset: perfectionism is fear in disguise; momentum drives execution.",
+      inputs: [
+        { q: "You have spent three days reading reviews for a basic workshop shop-vac.", a: "\"Ten minutes of research is plenty. I'm buying this rated unit now.\" [Action Over Analysis]", bundle: 'pro', guideBack: "A decisive execution command" },
+        { q: "She wants to spend another week comparing twenty paint shades for the kitchen.", a: "\"Color B fits our home standard cleanly. We're ordering that paint today.\" [Mental Point of Origin]", bundle: 'pro', guideBack: "A grounded priority statement" },
+        { q: "You feel stuck over-analyzing the absolute perfect route for a family drive.", a: "\"Highway 10 gets us there efficiently. We're launching at eight AM.\" [Action Over Analysis]", bundle: 'pro', guideBack: "A decisive execution command" },
+        { q: "She asks you to spend your evening evaluating ten competing vacuum cleaner models.", a: "\"Model X meets our specs. I'm locking in the order and closing the search.\" [Mental Point of Origin]", bundle: 'pro', guideBack: "A grounded priority statement" },
+        { q: "You keep delaying a simple home plumbing repair because you want to watch more guides.", a: "\"I have sufficient information. I'm grabbing tools and starting the fix now.\" [Action Over Analysis]", bundle: 'pro', guideBack: "A decisive execution command" },
+        { q: "A simple weekend schedule choice turns into an hour of endless options.", a: "\"We're doing the park trip at ten. Decision made; let's pack gear.\" [Mental Point of Origin]", bundle: 'pro', guideBack: "A grounded priority statement" },
+        { q: "You catch yourself building a complex spreadsheet to pick a basic garden tool.", a: "\"Spreadsheets aren't needed for garden tools. I'm ordering this standard rake.\" [Action Over Analysis]", bundle: 'pro', guideBack: "A decisive execution command" },
+        { q: "She hesitates endlessly over picking a hotel for an upcoming weekend trip.", a: "\"The hotel by the bay is solid. I'm making the reservation now.\" [Mental Point of Origin]", bundle: 'pro', guideBack: "A grounded priority statement" },
+      ]
+    },
+    {
+      name: "Domestic Passivity",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Eliminating the passive habit of waiting for your partner to manage schedules, assign chores, or complain before acting.\n\nThis challenge builds proactive ownership of household systems and logistics.\n• **Proactive Domestic Leadership** — audit domestic needs and take charge without waiting\n• **Executing the OODA Loop** — read household clutter or breakdown and fix it immediately\n\nMindset: waiting to be managed abdicates leadership; proactive action establishes authority.",
+      inputs: [
+        { q: "You notice that household trash and recycling bins are overflowing in the yard.", a: "\"I'm hauling the bins to the curb now and resetting the utility station.\" [Proactive Domestic Leadership]", bundle: 'pro', guideBack: "A clear domestic directive" },
+        { q: "A sudden spill in the kitchen creates immediate clutter during meal prep.", a: "\"Spill spotted. I'm clearing the floor now and wiping down the counter.\" [Executing the OODA Loop]", bundle: 'pro', guideBack: "A swift real-time decision" },
+        { q: "The family vehicle is low on fuel and needs tire pressure checks before Monday.", a: "\"I'm taking the vehicle to the station now to fill fuel and check tires.\" [Proactive Domestic Leadership]", bundle: 'pro', guideBack: "A clear domestic directive" },
+        { q: "A package delivery blocks the doorway while everyone walks past it passively.", a: "\"Package in the way. I'm unboxing it now and clearing the entryway.\" [Executing the OODA Loop]", bundle: 'pro', guideBack: "A swift real-time decision" },
+        { q: "You see that seasonal yard maintenance is overdue and clutter is building up.", a: "\"I'm clearing the yard and trimming the hedges this Saturday morning.\" [Proactive Domestic Leadership]", bundle: 'pro', guideBack: "A clear domestic directive" },
+        { q: "She looks flustered trying to organize domestic items before guests arrive.", a: "\"I've got the living room and patio cleared. You take your time getting ready.\" [Executing the OODA Loop]", bundle: 'pro', guideBack: "A swift real-time decision" },
+        { q: "Household pantry items are disorganized and causing confusion during meal prep.", a: "\"I'm restructuring the pantry shelves today and setting clean labels.\" [Proactive Domestic Leadership]", bundle: 'pro', guideBack: "A clear domestic directive" },
+        { q: "The front porch light bulb burns out, leaving the entrance dark at night.", a: "\"Light bulb burned out. I'm grabbing a replacement LED and swapping it now.\" [Executing the OODA Loop]", bundle: 'pro', guideBack: "A swift real-time decision" },
+      ]
+    },
+    {
+      name: "Decision Fatigue",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Managing the drain of endless micro-choices, endless consensus-seeking, and trivial domestic options.\n\nThis challenge trains you to protect your decision energy and filter choices through your internal anchor.\n• **Mental Point of Origin** — eliminate trivial options and anchor in core priorities\n• **Action Over Analysis** — make quick 30-second calls on low-stakes choices\n\nMindset: guard your decision energy; focus on strategic choices.",
+      inputs: [
+        { q: "She presents ten restaurant choices and asks you to analyze each one.", a: "\"We're dining at the local grill tonight. I've placed our table reservation.\" [Mental Point of Origin]", bundle: 'pro', guideBack: "A grounded priority statement" },
+        { q: "You feel exhausted trying to pick between two virtually identical paper towel brands.", a: "\"Either brand works fine. I'm grabbing the first one on the shelf.\" [Action Over Analysis]", bundle: 'pro', guideBack: "A decisive execution command" },
+        { q: "She asks you to make twenty minor aesthetic calls for a family gathering.", a: "\"Select your top two choices. I trust your taste on the minor decorations.\" [Mental Point of Origin]", bundle: 'pro', guideBack: "A grounded priority statement" },
+        { q: "You spend twenty minutes overthinking which coffee bean roast to buy.", a: "\"Dark roast fits our morning standard. I'm buying this bag now.\" [Action Over Analysis]", bundle: 'pro', guideBack: "A decisive execution command" },
+        { q: "Relatives try to involve you in endless group text debates over holiday menus.", a: "\"I'm bringing the main roast and wine. You all set the side dishes.\" [Mental Point of Origin]", bundle: 'pro', guideBack: "A grounded priority statement" },
+        { q: "You catch yourself frozen over choosing between two identical air filter ratings.", a: "\"MERV 11 handles our home air cleanly. I'm ordering the four-pack now.\" [Action Over Analysis]", bundle: 'pro', guideBack: "A decisive execution command" },
+        { q: "She asks you to re-evaluate a settled weekend schedule choice for the third time.", a: "\"Our weekend schedule is locked in for Saturday. We keep our plan.\" [Mental Point of Origin]", bundle: 'pro', guideBack: "A grounded priority statement" },
+        { q: "You spend ten minutes picking a basic outdoor extension cord online.", a: "\"This 50-foot heavy duty cord is solid. I'm locking in the order.\" [Action Over Analysis]", bundle: 'pro', guideBack: "A decisive execution command" },
+      ]
+    },
+    {
+      name: "Real-Time Household Friction",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Handling sudden schedule collapses, appliance breakdowns, and unexpected domestic crises without losing composure.\n\nThis challenge builds rapid real-time decision-making under live pressure.\n• **Executing the OODA Loop** — observe the breakdown, orient through facts, and execute a plan\n• **Proactive Domestic Leadership** — step in with calm authority to handle logistics\n\nMindset: unexpected friction requires calm observation and swift execution.",
+      inputs: [
+        { q: "The kitchen sink pipe bursts while you are hosting an evening dinner.", a: "\"Water valve closed. I'm clearing the cabinet and fixing the joint now.\" [Executing the OODA Loop]", bundle: 'pro', guideBack: "A swift real-time decision" },
+        { q: "Severe weather knocks out home power three hours before a family event.", a: "\"Power's down. I'm starting the generator and setting backup lighting now.\" [Proactive Domestic Leadership]", bundle: 'pro', guideBack: "A clear domestic directive" },
+        { q: "A key contractor fails to show up for a scheduled home repair window.", a: "\"Contractor missed the window. I'm rescheduling and handling the fix myself today.\" [Executing the OODA Loop]", bundle: 'pro', guideBack: "A swift real-time decision" },
+        { q: "She panics when a flight is delayed and threatens to miss a family connection.", a: "\"I'm rebooking our connecting legs on my phone now. We stay on schedule.\" [Proactive Domestic Leadership]", bundle: 'pro', guideBack: "A clear domestic directive" },
+        { q: "Your main vehicle battery dies twenty minutes before morning commute time.", a: "\"Battery dead. I'm grabbing my jump-pack now and getting us started.\" [Executing the OODA Loop]", bundle: 'pro', guideBack: "A swift real-time decision" },
+        { q: "An unexpected home repair emergency requires immediate cash allocation.", a: "\"I'm drawing from our home reserve fund today. The repair is fully covered.\" [Proactive Domestic Leadership]", bundle: 'pro', guideBack: "A clear domestic directive" },
+        { q: "A sudden schedule overlap leaves nobody available to pick up a home delivery.", a: "\"Schedule shifted. I'm rerouting the delivery to our pickup locker now.\" [Executing the OODA Loop]", bundle: 'pro', guideBack: "A swift real-time decision" },
+        { q: "A plumbing leak threatens to ruin hardwood flooring in the hallway.", a: "\"Leak contained and floor dried. I'm replacing the worn seal right now.\" [Proactive Domestic Leadership]", bundle: 'pro', guideBack: "A clear domestic directive" },
+      ]
+    },
+    {
+      name: "Delegating and Outsourcing",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Resolving the struggle between doing everything yourself and delegating trivial tasks cleanly without micromanagement.\n\nThis challenge teaches you to protect your focus by setting clear standards and delegating lower-priority execution.\n• **Mental Point of Origin** — reserve your energy for high-leverage choices\n• **Proactive Domestic Leadership** — set clear expectations and delegate domestic maintenance\n\nMindset: high-status leadership delegates execution while holding standards.",
+      inputs: [
+        { q: "You spend four hours mowing the lawn when your time is needed on major work.", a: "\"I'm hiring a reliable lawn service for weekly care. My focus stays on mission.\" [Mental Point of Origin]", bundle: 'pro', guideBack: "A grounded priority statement" },
+        { q: "She asks how you want the house cleaned before hosting relatives.", a: "\"Here is our home standard checklist. I've hired a cleaning service for Friday.\" [Proactive Domestic Leadership]", bundle: 'pro', guideBack: "A clear domestic directive" },
+        { q: "You get bogged down doing minor grocery runs three times a week.", a: "\"We're setting automated weekly grocery deliveries. Here is our locked list.\" [Mental Point of Origin]", bundle: 'pro', guideBack: "A grounded priority statement" },
+        { q: "A complex tax filing is taking twenty hours of your valuable evening time.", a: "\"I'm handing our financial records to a professional CPA. They take execution.\" [Proactive Domestic Leadership]", bundle: 'pro', guideBack: "A clear domestic directive" },
+        { q: "You feel compelled to personally assemble every single piece of basic patio furniture.", a: "\"I'm booking an assembly service for tomorrow. My evening focus stays clear.\" [Mental Point of Origin]", bundle: 'pro', guideBack: "A grounded priority statement" },
+        { q: "Household maintenance tasks are scattered and handled inefficiently.", a: "\"I've contracted a quarterly home service maintenance plan for our systems.\" [Proactive Domestic Leadership]", bundle: 'pro', guideBack: "A clear domestic directive" },
+        { q: "You spend two hours comparing minor package shipping rates at the post office.", a: "\"Standard shipping handles it cleanly. I'm paying the fee and moving on.\" [Mental Point of Origin]", bundle: 'pro', guideBack: "A grounded priority statement" },
+        { q: "Home pool chemical maintenance is taking up every Sunday morning.", a: "\"I'm hiring a pool maintenance tech for monthly service. I reclaim my Sunday.\" [Proactive Domestic Leadership]", bundle: 'pro', guideBack: "A clear domestic directive" },
+      ]
+    },
+  ],
+  praxbest2: [
+    {
+      name: "Scoreboard & Frame Tracking",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Overcoming the trap of keeping a mental scoreboard of household favors, chores, and emotional debts.\n\nThis challenge trains you to destroy scoreboarding and operate with clean boundaries.\n• **Quashing Covert Contracts** — state choices plainly and refuse leverage based on past favors\n• **Shedding Validation-Seeking** — execute your priorities without needing praise tallies\n\nMindset: scoreboarding destroys intimacy; destroy the mental ledger.",
+      inputs: [
+        { q: "She claims you owe her a weekend trip because she picked up your dry cleaning twice.", a: "\"Dry cleaning is a basic errand, not a leverage token for trips.\" [Quashing Covert Contracts]", bundle: 'pro', guideBack: "A plain choice statement" },
+        { q: "You catch yourself keeping a mental tally of every chore you did this week.", a: "\"I do chores to keep my house clean, not to tally points.\" [Quashing Covert Contracts]", bundle: 'pro', guideBack: "A plain choice statement" },
+        { q: "She demands praise for doing basic household laundry on a Sunday.", a: "\"Thanks for handling laundry. House looks great.\" [Shedding Validation-Seeking]", bundle: 'pro', guideBack: "An independent boundary" },
+        { q: "She attempts to use past favors to force you into dropping your gym workout.", a: "\"Past favors aren't leverage against my workout. My schedule stands.\" [Quashing Covert Contracts]", bundle: 'pro', guideBack: "A plain choice statement" },
+        { q: "You feel bitter because you cooked dinner three nights in a row without applause.", a: "\"I cook because I enjoy good food, not to receive applause.\" [Shedding Validation-Seeking]", bundle: 'pro', guideBack: "An independent boundary" },
+        { q: "She claims that because she helped with taxes, you must pay for her luxury trip.", a: "\"Tax prep is shared household work, not a vacation receipt.\" [Quashing Covert Contracts]", bundle: 'pro', guideBack: "A plain choice statement" },
+        { q: "She tests whether you will accept her scoreboarding arguments during a budget talk.", a: "\"We manage budget by real numbers, not by scoreboarding favors.\" [Quashing Covert Contracts]", bundle: 'pro', guideBack: "A plain choice statement" },
+        { q: "You feel tempted to list all your good deeds to prove you are a great husband.", a: "\"My actions speak for themselves. I don't list good deeds.\" [Shedding Validation-Seeking]", bundle: 'pro', guideBack: "An independent boundary" },
+      ]
+    },
+    {
+      name: "Transactional Duty Sex",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Refusing to accept or offer transactional \"duty sex,\" chore bargaining, or reward-based intimacy.\n\nThis challenge builds unswayable standards for authentic physical desire and polarity.\n• **Refusing Negotiated Desire** — decline starfish intimacy, duty sex, and chore trades\n• **Quashing Covert Contracts** — surface the implicit trade and refuse to participate\n\nMindset: intimacy is an expression of desire, never a transactional trade.",
+      inputs: [
+        { q: "She lies back like a starfish and tells you to hurry up and get it over with.", a: "\"I'm stopping here. I share intimacy where passion is mutual.\" [Refusing Negotiated Desire]", bundle: 'pro', guideBack: "A refusal of covert deals" },
+        { q: "She offers duty sex as a trade to make you stop asking about the budget plan.", a: "\"I want authentic passion, not a budget trade. Rest up.\" [Refusing Negotiated Desire]", bundle: 'pro', guideBack: "A refusal of covert deals" },
+        { q: "She says 'If you clean the garage today, maybe I'll let you touch me tonight.'", a: "\"I clean the garage for a clean home. Touch requires desire.\" [Refusing Negotiated Desire]", bundle: 'pro', guideBack: "A refusal of covert deals" },
+        { q: "She claims long marriages survive on duty sex traded for financial security.", a: "\"Mutual desire is my standard for marriage, not duty sex.\" [Refusing Negotiated Desire]", bundle: 'pro', guideBack: "A refusal of covert deals" },
+        { q: "She tries to turn physical affection into a reward token for good behavior.", a: "\"Affection isn't a reward token. I connect where desire is real.\" [Refusing Negotiated Desire]", bundle: 'pro', guideBack: "A refusal of covert deals" },
+        { q: "She offers quick unengaged intimacy so you'll agree to spend time with her ex.", a: "\"I don't trade intimacy for social choices. I'll pass.\" [Refusing Negotiated Desire]", bundle: 'pro', guideBack: "A refusal of covert deals" },
+        { q: "She complains that you refuse her transactional duty sex offers.", a: "\"Duty sex kills polarity. I hold out for real passion.\" [Refusing Negotiated Desire]", bundle: 'pro', guideBack: "A refusal of covert deals" },
+        { q: "She tries to bargain 'One night of romance if you buy me that new phone.'", a: "\"I don't trade retail purchases for romance. I pass.\" [Refusing Negotiated Desire]", bundle: 'pro', guideBack: "A refusal of covert deals" },
+      ]
+    },
+    {
+      name: "The Good Guy Trap",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Eliminating the reflex to act overly nice, submissive, or accommodating to buy approval or avoid conflict.\n\nThis challenge trains you to operate with self-anchored strength and direct communication.\n• **Shedding Validation-Seeking** — act from internal self-worth without seeking approval\n• **Quashing Covert Contracts** — eliminate the covert contract of \"being nice to get rewarded\"\n\nMindset: stop playing the Good Guy; lead with grounded self-respect.",
+      inputs: [
+        { q: "You catch yourself acting overly submissive for a week hoping she notices.", a: "\"I stop acting submissive to buy points. I lead directly.\" [Shedding Validation-Seeking]", bundle: 'pro', guideBack: "An independent boundary" },
+        { q: "She tests whether you will abandon your hobbies to prove you are a 'good guy.'", a: "\"My hobbies maintain my energy. I keep my schedule.\" [Shedding Validation-Seeking]", bundle: 'pro', guideBack: "An independent boundary" },
+        { q: "You feel guilty for setting a firm boundary on your evening focus block.", a: "\"Setting focus limits protects my output. I stick to eight PM.\" [Shedding Validation-Seeking]", bundle: 'pro', guideBack: "An independent boundary" },
+        { q: "She claims 'If you really loved me, you would guess what I want without asking.'", a: "\"Mind-reading isn't love. State what you want clearly.\" [Quashing Covert Contracts]", bundle: 'pro', guideBack: "A plain choice statement" },
+        { q: "You feel tempted to apologize for taking time to exercise on a Saturday.", a: "\"Exercise keeps me sharp and healthy. I offer no apology.\" [Shedding Validation-Seeking]", bundle: 'pro', guideBack: "An independent boundary" },
+        { q: "She criticizes your firm tone when you refuse an unreasonable request.", a: "\"My tone is clear and respectful. My decision stands.\" [Shedding Validation-Seeking]", bundle: 'pro', guideBack: "An independent boundary" },
+        { q: "You realize you've been agreeing with all her opinions just to keep the peace.", a: "\"I share my true perspective. Peace bought with lies is fake.\" [Shedding Validation-Seeking]", bundle: 'pro', guideBack: "An independent boundary" },
+        { q: "She attempts to guilt-trip you for prioritizing your career development.", a: "\"My career development builds our future. I execute my work.\" [Shedding Validation-Seeking]", bundle: 'pro', guideBack: "An independent boundary" },
+      ]
+    },
+    {
+      name: "Guilt Trips and Emotional Debts",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Neutralizing attempts to use guilt trips, past sacrifices, or emotional debt to manipulate your choices.\n\nThis challenge builds unshakeable composure when facing emotional leverage tactics.\n• **Quashing Covert Contracts** — surface manipulative debt tactics and state choices plainly\n• **Unconditional Giving** — break emotional debt by offering value freely without obligation\n\nMindset: emotional debt is an illusion; make choices based on current reality.",
+      inputs: [
+        { q: "She claims 'I sacrificed my entire youth for you, so you must obey my demands.'", a: "\"Sacrifices were choices made together. Current choices stand on merits.\" [Quashing Covert Contracts]", bundle: 'pro', guideBack: "A plain choice statement" },
+        { q: "She tries to guilt-trip you for spending capital on your business equipment.", a: "\"Business capital builds our asset base. The investment stands.\" [Quashing Covert Contracts]", bundle: 'pro', guideBack: "A plain choice statement" },
+        { q: "She claims you owe her lifelong compliance because her parents helped us once.", a: "\"Help from parents was a gift, not a contract for compliance.\" [Quashing Covert Contracts]", bundle: 'pro', guideBack: "A plain choice statement" },
+        { q: "You surprise her by repairing her car's AC unit without asking for anything.", a: "\"AC is repaired and running cold. Drive comfortably.\" [Unconditional Giving]", bundle: 'pro', guideBack: "An unattached offering" },
+        { q: "She attempts to leverage an argument from three years ago to win a debate today.", a: "\"Old arguments don't decide current logistics. Let's focus on today.\" [Quashing Covert Contracts]", bundle: 'pro', guideBack: "A plain choice statement" },
+        { q: "She uses tears to make you feel guilty for holding your daily workout boundary.", a: "\"I hear your emotion, but my workout routine maintains my health.\" [Shedding Validation-Seeking]", bundle: 'pro', guideBack: "An independent boundary" },
+        { q: "You bring her a fresh meal while she is busy working on her project.", a: "\"Brought you lunch so you don't have to pause. Enjoy.\" [Unconditional Giving]", bundle: 'pro', guideBack: "An unattached offering" },
+        { q: "She claims you don't appreciate her because you refuse to accept a covert trade.", a: "\"I appreciate you deeply, but I refuse covert trades.\" [Quashing Covert Contracts]", bundle: 'pro', guideBack: "A plain choice statement" },
+      ]
+    },
+    {
+      name: "Approval Seeking in Decisions",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Stopping the habit of seeking permission, validation, or emotional safety before making routine decisions.\n\nThis challenge teaches you to make clean calls from your internal anchor.\n• **Shedding Validation-Seeking** — make choices independently without fishing for approval\n• **Unconditional Giving** — offer leadership cleanly without needing permission\n\nMindset: lead directly; stop seeking permission for routine decisions.",
+      inputs: [
+        { q: "You feel terrified to select a vacation hotel without twenty minutes of her validation.", a: "\"This hotel meets our quality standard. I'm locking in the reservation.\" [Shedding Validation-Seeking]", bundle: 'pro', guideBack: "An independent boundary" },
+        { q: "You catch yourself asking 'Are you sure you aren't mad at me?' three times.", a: "\"I state my position cleanly. I stop asking for reassurance.\" [Shedding Validation-Seeking]", bundle: 'pro', guideBack: "An independent boundary" },
+        { q: "She asks why you bought new work boots without asking for her approval first.", a: "\"Work boots support my daily labor. I manage my gear directly.\" [Shedding Validation-Seeking]", bundle: 'pro', guideBack: "An independent boundary" },
+        { q: "You organize a family weekend activity cleanly without waiting for her prompt.", a: "\"I've booked our trail ride for Saturday morning. Gear is prepped.\" [Unconditional Giving]", bundle: 'pro', guideBack: "An unattached offering" },
+        { q: "She tests whether you will second-guess your decision to hire a home repair tech.", a: "\"Hiring the tech solves the repair efficiently. The choice stands.\" [Shedding Validation-Seeking]", bundle: 'pro', guideBack: "An independent boundary" },
+        { q: "You feel anxious making a quick decision on dinner options.", a: "\"We're dining at the grill tonight. I've placed our reservation.\" [Shedding Validation-Seeking]", bundle: 'pro', guideBack: "An independent boundary" },
+        { q: "She criticizes your decision to upgrade your home workshop tools.", a: "\"Upgraded tools improve my build quality. The purchase is solid.\" [Shedding Validation-Seeking]", bundle: 'pro', guideBack: "An independent boundary" },
+        { q: "You fix the garage entry door mechanism cleanly on a free afternoon.", a: "\"Door mechanism is fixed and smooth. Garage is fully secure.\" [Unconditional Giving]", bundle: 'pro', guideBack: "An unattached offering" },
+      ]
+    },
+  ],
+  praxbest3: [
+    {
+      name: "Screen Fights and Text Drama",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Overcoming the trap of engaging in digital text arguments, processing emotions over screens, and reading long text essays.\n\nThis challenge trains you to restrict messaging strictly to time, place, and logistics.\n• **Logistics-Only Texting** — lock messaging to logistics and shut down text drama\n• **Disengaging From Emotional Chasing** — refuse digital or phone argument loops\n\nMindset: screens are for logistics; never fight on a keyboard.",
+      inputs: [
+        { q: "She sends a voice note complaining about your tone when you left the house this morning.", a: "\"Heading into a client meeting now. See you at five thirty.\" [Logistics-Only Texting]", bundle: 'pro', guideBack: "A logistics-only message" },
+        { q: "She texts a barrage of questions demanding you explain why you bought a new drill set.", a: "\"Receipt is in the tool drawer. I'm back home at six.\" [Logistics-Only Texting]", bundle: 'pro', guideBack: "A logistics-only message" },
+        { q: "She starts spamming your phone with screenshot quotes from a relationship blog during your lunch hour.", a: "\"I don't review blog links during work blocks. See you tonight.\" [Logistics-Only Texting]", bundle: 'pro', guideBack: "A logistics-only message" },
+        { q: "She texts that she is canceling the weekend camping trip because you didn't text her back fast enough.", a: "\"Campsite is booked for Friday at four PM. I'm driving us down.\" [Logistics-Only Texting]", bundle: 'pro', guideBack: "A logistics-only message" },
+        { q: "She calls your mobile five times back-to-back during a conference call to demand an argument.", a: "(Hang up and send a single text) \"In conference call until four PM. Stepping offline.\" [Disengaging From Emotional Chasing]", bundle: 'pro', guideBack: "A clean verbal disengagement" },
+        { q: "She sends a series of insult-laden text messages trying to bait you into defending your monthly investment contribution.", a: "\"I don't participate in text arguments. We speak in person at home.\" [Disengaging From Emotional Chasing]", bundle: 'pro', guideBack: "A clean verbal disengagement" },
+        { q: "She texts 'If you don't call me right this second to fight about dinner, I'm throwing your clothes out!'.", a: "\"I don't engage with threats or digital fights. I'll be home at six PM.\" [Disengaging From Emotional Chasing]", bundle: 'pro', guideBack: "A clean verbal disengagement" },
+        { q: "She leaves a three-minute frantic voicemail screaming about a mislaid set of house keys.", a: "(Speak calmly into the phone) \"Keys are on the kitchen hook. I am hanging up now.\" [Disengaging From Emotional Chasing]", bundle: 'pro', guideBack: "A clean verbal disengagement" },
+      ]
+    },
+    {
+      name: "Weaponized Guilt and Fake Apologies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Handling manipulative apologies, submissive apology demands, tearful resets, and fake verbal accountability.\n\nThis challenge builds skill in rejecting empty words and requiring concrete behavior change.\n• **Refusing Weaponized Apologies** — reject submissive apology demands and fake verbal resets\n• **Post-Facto Explanation** — explain standards briefly after behavior action\n\nMindset: words are cheap; behavior change is the only true reset.",
+      inputs: [
+        { q: "She orders you to apologize for not letting her brother borrow your personal truck.", a: "\"My truck is for my business operations. I offer no apology for protecting my vehicle.\" [Refusing Weaponized Apologies]", bundle: 'pro', guideBack: "A refusal of fake apologies" },
+        { q: "She uses a theatrical, dramatic sigh and says 'I guess I'm just a horrible partner who ruins everything!' when called out for being late.", a: "\"Self-pity isn't accountability. We leave for appointments on time.\" [Refusing Weaponized Apologies]", bundle: 'pro', guideBack: "A refusal of fake apologies" },
+        { q: "She demands you make a formal apology to her mother for declining a second slice of cake at Sunday dinner.", a: "\"I communicated my refusal politely. I don't apologize for my dietary standards.\" [Refusing Weaponized Apologies]", bundle: 'pro', guideBack: "A refusal of fake apologies" },
+        { q: "She offers a rapid, insincere 'Fine, sorry!' while rolling her eyes after slamming the front door.", a: "\"Eye-rolls and fast words don't fix door slamming. I look for respectful conduct.\" [Refusing Weaponized Apologies]", bundle: 'pro', guideBack: "A refusal of fake apologies" },
+        { q: "She confronts you for quietly replacing the weak living room locks with heavy deadbolts without consulting her.", a: "\"Heavy deadbolts secure our home. The locks are installed and active.\" [Post-Facto Explanation]", bundle: 'pro', guideBack: "An after-action boundary statement" },
+        { q: "She demands to know why you moved the joint savings into a high-yield certificate account on Monday.", a: "\"High-yield accounts protect our principal from inflation. The capital is locked for twelve months.\" [Post-Facto Explanation]", bundle: 'pro', guideBack: "An after-action boundary statement" },
+        { q: "She asks why you turned off location-sharing on your phone during your personal mountain bike ride.", a: "\"I turn off location tracking during training to stay focused. I share location when traveling.\" [Post-Facto Explanation]", bundle: 'pro', guideBack: "An after-action boundary statement" },
+        { q: "She confronts you for hiring a professional maid service to clean the house instead of debating chores with her.", a: "\"Professional cleaning keeps our house pristine and frees our time. The service arrives every Thursday.\" [Post-Facto Explanation]", bundle: 'pro', guideBack: "An after-action boundary statement" },
+      ]
+    },
+    {
+      name: "Late-Night Emotional Chasing",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Stopping late-night argument traps, circular logic loops, room cornering, and emotional exhaustion battles.\n\nThis challenge teaches you to disengage cleanly and protect your sleep and focus.\n• **Disengaging From Emotional Chasing** — state your limit, cut argument loops, and step away\n• **Logistics-Only Texting** — refuse late-night digital fights\n\nMindset: never fight at midnight; step away from circular drama.",
+      inputs: [
+        { q: "She turns on the bedroom light at one AM to demand you re-hash an argument about weekend plans.", a: "(Turn off the lamp calmly) \"I don't debate in the dark at one AM. I am sleeping now.\" [Disengaging From Emotional Chasing]", bundle: 'pro', guideBack: "A clean verbal disengagement" },
+        { q: "She blocks the bedroom doorway with her arms crossed, refusing to let you leave until you admit you were wrong.", a: "\"I don't converse under doorway blocking. I am stepping into the guest room.\" [Disengaging From Emotional Chasing]", bundle: 'pro', guideBack: "A clean verbal disengagement" },
+        { q: "She sits on the edge of the bed repeating 'Why don't you love me like you used to?' in a looping, tearful monotone at eleven PM.", a: "\"We are looping emotional questions at night. I am going to sleep; we talk tomorrow.\" [Disengaging From Emotional Chasing]", bundle: 'pro', guideBack: "A clean verbal disengagement" },
+        { q: "She follows you down to the basement at midnight, hurling accusations that you care more about your woodworking than her.", a: "\"I offer no defense against midnight accusations. I am going upstairs to rest.\" [Disengaging From Emotional Chasing]", bundle: 'pro', guideBack: "A clean verbal disengagement" },
+        { q: "She starts firing emotional text messages from the guest bedroom at two AM accusing you of being heartless.", a: "\"Sleep block active. Morning discussion at eight AM.\" [Logistics-Only Texting]", bundle: 'pro', guideBack: "A logistics-only message" },
+        { q: "She texts a list of grievances from the downstairs couch at midnight while you are in bed.", a: "\"I don't read grievance lists on text. Home schedule starts at six thirty AM.\" [Logistics-Only Texting]", bundle: 'pro', guideBack: "A logistics-only message" },
+        { q: "She sends a midnight text message asking 'Do you want a divorce or not???' to force a panicky reply.", a: "\"Important topics are discussed in daylight in person. Goodnight.\" [Logistics-Only Texting]", bundle: 'pro', guideBack: "A logistics-only message" },
+        { q: "She spams your tablet with angry instant messages from across the house at eleven thirty PM.", a: "\"Tablet notifications disabled for the night. See you at breakfast.\" [Logistics-Only Texting]", bundle: 'pro', guideBack: "A logistics-only message" },
+      ]
+    },
+    {
+      name: "Pre-Action Negotiation Traps",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Eliminating pre-action negotiations, seeking permission for boundaries, and getting bogged down in pre-action debates.\n\nThis challenge trains you to execute boundary actions first and explain standards after the fact.\n• **Post-Facto Explanation** — act first, enforce frame, and explain briefly after action\n• **Refusing Weaponized Apologies** — refuse to apologize for enforcing standards\n\nMindset: actions enforce reality; never negotiate boundaries pre-action.",
+      inputs: [
+        { q: "She demands to know why you hired a financial planner and signed the contract without holding three preliminary debate sessions with her.", a: "\"I hired the financial planner to structure our retirement growth. The contract is signed and active.\" [Post-Facto Explanation]", bundle: 'pro', guideBack: "An after-action boundary statement" },
+        { q: "She confronts you for selling your old motorcycle on Tuesday without asking for her approval first.", a: "\"I sold the motorcycle to clear garage space and liquidate capital. The transaction is complete.\" [Post-Facto Explanation]", bundle: 'pro', guideBack: "An after-action boundary statement" },
+        { q: "She asks why you changed the family internet password to restrict screen access after ten PM.", a: "\"Internet shutoff at ten PM protects our household sleep quality. That is our new home rule.\" [Post-Facto Explanation]", bundle: 'pro', guideBack: "An after-action boundary statement" },
+        { q: "She demands an explanation for why you registered for an executive MBA program starting next month.", a: "\"I enrolled in the MBA to advance my career trajectory. Classes run Tuesday evenings.\" [Post-Facto Explanation]", bundle: 'pro', guideBack: "An after-action boundary statement" },
+        { q: "She orders you to apologize for booking a solo weekend fishing trip without asking for her permission.", a: "\"I manage my personal recreation time directly. I offer no apology for booking my fishing trip.\" [Refusing Weaponized Apologies]", bundle: 'pro', guideBack: "A refusal of fake apologies" },
+        { q: "She demands you make a submissive apology for setting a hard spending limit on the joint credit card before shopping for holiday gifts.", a: "\"I state financial boundaries clearly as an Adult. I don't apologize for keeping our budget intact.\" [Refusing Weaponized Apologies]", bundle: 'pro', guideBack: "A refusal of fake apologies" },
+        { q: "She expects you to beg for forgiveness because you refused to let her cousin stay in your guest room for a month.", a: "\"I communicated my boundary regarding guests respectfully. I offer no submissive apology.\" [Refusing Weaponized Apologies]", bundle: 'pro', guideBack: "A refusal of fake apologies" },
+        { q: "She uses guilt to demand an apology because you bought new winter tires for your car without her prior consensus.", a: "\"Winter tires ensure vehicle safety on the road. I don't apologize for maintaining my vehicle.\" [Refusing Weaponized Apologies]", bundle: 'pro', guideBack: "A refusal of fake apologies" },
+      ]
+    },
+    {
+      name: "Public Shaming and Tantrums",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Handling public shaming, social tantrums, emotional scenes, and pressure tactics in front of external crowds.\n\nThis challenge teaches you to maintain unswayable composure and disengage from social theater cleanly.\n• **Disengaging From Emotional Chasing** — step away from public argument scenes instantly\n• **Refusing Weaponized Apologies** — refuse to apologize to appease social crowds\n\nMindset: maintain unswayable composure; never participate in public emotional theater.",
+      inputs: [
+        { q: "She throws a dramatic shouting scene in front of guests at a dinner party.", a: "\"We don't argue in front of guests. I am stepping outside now.\" [Disengaging From Emotional Chasing]", bundle: 'pro', guideBack: "A clean verbal disengagement" },
+        { q: "She demands you make a public submissive apology to her family during a holiday dinner.", a: "\"I state facts respectfully. I offer no submissive public apologies.\" [Refusing Weaponized Apologies]", bundle: 'pro', guideBack: "A refusal of fake apologies" },
+        { q: "She tries to embarrass you in public by loudly critiquing your financial boundaries.", a: "\"Finances are discussed at home desk, not in restaurant dining rooms.\" [Post-Facto Explanation]", bundle: 'pro', guideBack: "An after-action boundary statement" },
+        { q: "She creates a scene at a parking lot because you refuse to buy an impulse item.", a: "\"I am getting into the car now. We can head home cleanly.\" [Disengaging From Emotional Chasing]", bundle: 'pro', guideBack: "A clean verbal disengagement" },
+        { q: "She attempts to enlist strangers or friends to gang up on you during an argument.", a: "\"I don't participate in crowd trials. The decision stands.\" [Disengaging From Emotional Chasing]", bundle: 'pro', guideBack: "A clean verbal disengagement" },
+        { q: "She orders you to apologize for leaving a social gathering early.", a: "\"I departed cleanly on my schedule. I offer no apology for keeping my word.\" [Refusing Weaponized Apologies]", bundle: 'pro', guideBack: "A refusal of fake apologies" },
+        { q: "She tries to provoke you into shouting back while at a public event.", a: "\"I maintain my composure everywhere. I am stepping out to the car.\" [Disengaging From Emotional Chasing]", bundle: 'pro', guideBack: "A clean verbal disengagement" },
+        { q: "She texts emotional attacks to a group chat with family members.", a: "\"Group chats are for family logistics, not argument essays. Stepping offline.\" [Logistics-Only Texting]", bundle: 'pro', guideBack: "A logistics-only message" },
+      ]
+    },
+  ],
+  praxbest4: [
+    {
+      name: "Frame Audits and Invasions",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Handling attempts to reframe your actions as selfish, invading your schedule, or demanding you adopt her anxious perspective.\n\nThis challenge trains you to reassert your standards as the active governing framework.\n• **Auditing and Controlling Frame** — maintain your internal standards as the sole governing reality\n• **Amused Mastery on Complaints** — defuse minor frame probes with light amusement\n\nMindset: hold frame control; never enter or negotiate within an inferior frame.",
+      inputs: [
+        { q: "She tries to reframe your evening study time as 'abandoning your domestic duties'.", a: "\"My study block builds my knowledge base. My focus time stands.\" [Auditing and Controlling Frame]", bundle: 'pro', guideBack: "An unswayable frame assertion" },
+        { q: "She demands that you adopt her frantic timeline for purchasing new furniture.", a: "\"Furniture purchases are executed on our budget timeline. We buy in May.\" [Auditing and Controlling Frame]", bundle: 'pro', guideBack: "An unswayable frame assertion" },
+        { q: "She attempts to reframe your calm refusal to host guests as 'hating her family'.", a: "\"Hospitality requires advance planning. We host when scheduled.\" [Auditing and Controlling Frame]", bundle: 'pro', guideBack: "An unswayable frame assertion" },
+        { q: "She tries to frame your morning meditation habit as weird personal indulgence.", a: "\"Mental discipline grounds my day. My meditation block stays.\" [Auditing and Controlling Frame]", bundle: 'pro', guideBack: "An unswayable frame assertion" },
+        { q: "She nitpicks how you parked the car in the garage after returning home.", a: "(Smile warmly) \"Parked cleanly and safe. Masterful maneuver.\" [Amused Mastery on Complaints]", bundle: 'pro', guideBack: "A playful, unbothered quip" },
+        { q: "She demands you justify why you set up an independent asset reserve account.", a: "\"Independent capital reserves protect our assets. The reserve is active.\" [Auditing and Controlling Frame]", bundle: 'pro', guideBack: "An unswayable frame assertion" },
+        { q: "She tries to frame your firm refusal of unearned debt as stingy cruelty.", a: "\"We fund real assets, not unearned debt. My decision is locked.\" [Auditing and Controlling Frame]", bundle: 'pro', guideBack: "An unswayable frame assertion" },
+        { q: "She grumbles dramatically that you didn't sort the recycling to her exact method.", a: "(Smirk playfully) \"Recycling is cleared and sorted. Tragically, order reigns.\" [Amused Mastery on Complaints]", bundle: 'pro', guideBack: "A playful, unbothered quip" },
+      ]
+    },
+    {
+      name: "Chronic Complaining and Friction",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Deflecting daily nitpicking, minor complaining, domestic friction, and low-level moodiness without getting reactive.\n\nThis challenge builds mastery in absorbing emotional noise with light amusement and composure.\n• **Amused Mastery on Complaints** — absorb daily nitpicking with playful, unbothered posture\n• **Leading to New Territory** — shift the energy by inviting her into higher standards\n\nMindset: daily complaining is minor noise; absorb friction with amused mastery.",
+      inputs: [
+        { q: "She complains dramatically that the grocery delivery arrived fifteen minutes late.", a: "(Smile gently) \"The tragedy of delayed groceries. Take a deep breath, Love.\" [Amused Mastery on Complaints]", bundle: 'pro', guideBack: "A playful, unbothered quip" },
+        { q: "She nitpicks your choice of shirt before heading out for a Sunday afternoon walk.", a: "(Grin playfully) \"This shirt is built for comfort, Love. Ready to stroll.\" [Amused Mastery on Complaints]", bundle: 'pro', guideBack: "A playful, unbothered quip" },
+        { q: "She grumbles about the noise level in the neighborhood while sitting on the porch.", a: "(Wrap an arm around her) \"Neighborhood life has energy. Enjoy the evening.\" [Amused Mastery on Complaints]", bundle: 'pro', guideBack: "A playful, unbothered quip" },
+        { q: "She complains in a dramatic tone that you loaded the washing machine incorrectly.", a: "(Smile warmly) \"Laundry is running and clean. High-performance washing.\" [Amused Mastery on Complaints]", bundle: 'pro', guideBack: "A playful, unbothered quip" },
+        { q: "You decide to eliminate chronic complaining by introducing a daily gratitude rule.", a: "\"We focus on solutions and progress in this home now. That's our standard.\" [Leading to New Territory]", bundle: 'pro', guideBack: "A confident invitation to lead" },
+        { q: "She nitpicks how you sliced the vegetables while helping with dinner prep.", a: "(Smirk playfully) \"Custom chef slicing, Love. Dinner is going to be great.\" [Amused Mastery on Complaints]", bundle: 'pro', guideBack: "A playful, unbothered quip" },
+        { q: "She grumbles about the temperature setting in the living room on a cold night.", a: "(Smile, hold her close) \"Come close then. I'm a human radiator.\" [Amused Mastery on Complaints]", bundle: 'pro', guideBack: "A playful, unbothered quip" },
+        { q: "She complains dramatically that the weekend weather forecast ruined her mood.", a: "(Chuckles softly) \"I'll file a protest with rain clouds. Let me grab coffee.\" [Amused Mastery on Complaints]", bundle: 'pro', guideBack: "A playful, unbothered quip" },
+      ]
+    },
+    {
+      name: "Fearful-Avoidant Protest Behaviors",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Navigating Fearful-Avoidant closeness-distance cycles, sudden emotional withdrawal, and provoke-and-retreat testing.\n\nThis challenge teaches you to remain unshakeable through avoidant testing without chasing or panic.\n• **Managing Avoidant Cycles** — stay steady through emotional withdrawal and shut down protest triggers\n• **Auditing and Controlling Frame** — maintain your internal standards as the unshakeable center\n\nMindset: avoidant protest behaviors reflect internal fear; remain steady and unswayable.",
+      inputs: [
+        { q: "She suddenly pulls back into cold distance right after a romantic evening together.", a: "(Remain warm and unbothered) \"Enjoy your quiet time, Love. I'm in my study.\" [Managing Avoidant Cycles]", bundle: 'pro', guideBack: "A calm refusal to chase" },
+        { q: "She uses a sudden sharp insult to provoke a fight when emotional intimacy grows.", a: "(Look into her eyes calmly) \"I don't play fight games. I'm right here.\" [Managing Avoidant Cycles]", bundle: 'pro', guideBack: "A calm refusal to chase" },
+        { q: "She claims she needs a full week of isolation to figure out if she wants connection.", a: "\"Take all the space you need. I'm executing my priorities.\" [Managing Avoidant Cycles]", bundle: 'pro', guideBack: "A calm refusal to chase" },
+        { q: "She pushes you away physically, then watches to see if you collapse into needy begging.", a: "(Pat her arm gently) \"Rest up, Love. I'm heading down to my workout.\" [Managing Avoidant Cycles]", bundle: 'pro', guideBack: "A calm refusal to chase" },
+        { q: "She tries to reframe your unshakeable composure as 'you never cared about me'.", a: "\"Calm composure is my baseline. My support for our home is solid.\" [Auditing and Controlling Frame]", bundle: 'pro', guideBack: "An unswayable frame assertion" },
+        { q: "She cycles into sullen silence on a weekend trip to test if your frame breaks.", a: "(Enjoy your coffee on the balcony) \"Beautiful morning out here.\" [Managing Avoidant Cycles]", bundle: 'pro', guideBack: "A calm refusal to chase" },
+        { q: "She attempts to provoke an emotional outburst right before you leave for work.", a: "\"I'm stepping into my work block. We talk calmly when I return.\" [Managing Avoidant Cycles]", bundle: 'pro', guideBack: "A calm refusal to chase" },
+        { q: "She pulls away emotionally during a family gathering to draw you into chasing her.", a: "\"Enjoying time with family. Catch up with you shortly, Love.\" [Managing Avoidant Cycles]", bundle: 'pro', guideBack: "A calm refusal to chase" },
+      ]
+    },
+    {
+      name: "Mass Shaming and Social Pressure",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Standing firm against public shaming, social mobbing, guilt trips from relatives, and external crowd pressure.\n\nThis challenge builds unswayable strength in refusing to cave to collective social manipulation.\n• **Holding Frame Under Mass Shame** — stand firm against social pressure and public mobbing\n• **Auditing and Controlling Frame** — assert that crowd opinions do not govern your choices\n\nMindset: external crowd pressure is noise; my core standards govern my life.",
+      inputs: [
+        { q: "Her friends gang up at a dinner party to shame your traditional family roles.", a: "\"I lead my household by proven principles. It works cleanly.\" [Holding Frame Under Mass Shame]", bundle: 'pro', guideBack: "A firm stand against the crowd" },
+        { q: "Extended family members publicly criticize your firm financial limits at a holiday meal.", a: "\"Our capital is managed by real numbers, not public opinion.\" [Holding Frame Under Mass Shame]", bundle: 'pro', guideBack: "A firm stand against the crowd" },
+        { q: "She tries to publicly shame you in front of neighbors for setting a firm curfew.", a: "\"I set our home schedule around our health standards. We move now.\" [Holding Frame Under Mass Shame]", bundle: 'pro', guideBack: "A firm stand against the crowd" },
+        { q: "Online commenters or social groups attack your career or relationship stance.", a: "\"Online mobs don't govern my life choices. My standards stand firm.\" [Holding Frame Under Mass Shame]", bundle: 'pro', guideBack: "A firm stand against the crowd" },
+        { q: "Her relatives accuse you of coldness for refusing to fund an unemployed brother.", a: "\"I fund family legacy assets, not unearned debt. The decision stands.\" [Holding Frame Under Mass Shame]", bundle: 'pro', guideBack: "A firm stand against the crowd" },
+        { q: "She enlists her sister and mother to gang up on you in your own living room.", a: "\"I don't conduct crowd trials in my home. My decision is locked.\" [Holding Frame Under Mass Shame]", bundle: 'pro', guideBack: "A firm stand against the crowd" },
+        { q: "Her social group demands you make a public submissive apology for leaving early.", a: "\"I state facts as an Adult. I offer no submissive public apologies.\" [Holding Frame Under Mass Shame]", bundle: 'pro', guideBack: "A firm stand against the crowd" },
+        { q: "She tries to embarrass you publicly for adhering strictly to your workout block.", a: "\"Physical discipline is non-negotiable for my leadership. I train daily.\" [Holding Frame Under Mass Shame]", bundle: 'pro', guideBack: "A firm stand against the crowd" },
+      ]
+    },
+    {
+      name: "Resistance to Leadership",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Overcoming passive resistance, habit stagnation, and hesitation when introducing higher standards into the home.\n\nThis challenge teaches you to pull her into your frame and lead into new territory with confident authority.\n• **Leading to New Territory** — invite her into higher standards of health, finance, and connection\n• **Auditing and Controlling Frame** — hold your standards firm as she adjusts to new expectations\n\nMindset: resistance to leadership is temporary testing; lead into new territory with vision.",
+      inputs: [
+        { q: "She resists your plan to shift family spending into index assets and investments.", a: "\"We are shifting our capital into asset building. Here is our growth plan.\" [Leading to New Territory]", bundle: 'pro', guideBack: "A confident invitation to lead" },
+        { q: "She resists your initiative to introduce high-protein health standards to meal prep.", a: "\"We are upgrading our household nutrition starting today. Here is the menu.\" [Leading to New Territory]", bundle: 'pro', guideBack: "A confident invitation to lead" },
+        { q: "She tries to fight your rule regarding docking smartphones during family dinners.", a: "\"Phones dock at eight PM daily. We build real presence together.\" [Leading to New Territory]", bundle: 'pro', guideBack: "A confident invitation to lead" },
+        { q: "She hesitates when you invite her into deeper, more adventurous intimacy in bed.", a: "(Take her hand firmly) \"We are building deeper passion together. Follow my lead.\" [Leading to New Territory]", bundle: 'pro', guideBack: "A confident invitation to lead" },
+        { q: "She resists your decision to relocate the family to a city with better trajectory.", a: "\"I've analyzed our family trajectory. We are relocating to build our future.\" [Leading to New Territory]", bundle: 'pro', guideBack: "A confident invitation to lead" },
+        { q: "She tests whether you will enforce new standards for adult communication at home.", a: "\"We resolve differences as Adults without shouting. That is our new standard.\" [Leading to New Territory]", bundle: 'pro', guideBack: "A confident invitation to lead" },
+        { q: "She resists your plan to establish a weekly outdoor hiking routine for the family.", a: "\"We are taking up mountain hiking this season. Gear is prepped for Saturday.\" [Leading to New Territory]", bundle: 'pro', guideBack: "A confident invitation to lead" },
+        { q: "She attempts to reframe your new lifestyle standards as 'too strict for our home'.", a: "\"High standards create an exceptional home. I lead us forward.\" [Auditing and Controlling Frame]", bundle: 'pro', guideBack: "An unswayable frame assertion" },
+      ]
+    },
+  ],
 };

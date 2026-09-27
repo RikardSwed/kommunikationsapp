@@ -15961,4 +15961,586 @@ const memorizeCollections = {
       ]
     },
   ],
+  praxbest1: [
+    {
+      name: "Core Idea",
+      description: "The foundational principles of Praxeology Volume 4: Proactive Domestic Leadership & Action by Rian Stone.\n• **Proactive Domestic Leadership** — audit and manage household systems before friction builds\n• **Mental Point of Origin** — anchor choices in your internal vision and protect decision energy\n• **Action Over Analysis** — cut analysis loops and execute on good-enough information\n• **Executing the OODA Loop** — observe, orient, decide, and act in real time\n\nMastering these strategies establishes an efficient, high-status domestic container.",
+      cards: [
+        { q: "What are the four core strategies in this pack?", a: "Proactive Domestic Leadership, Mental Point of Origin, Action Over Analysis, Executing the OODA Loop.", bundle: 'free' },
+        { q: "What is the primary focus of \"Proactive Domestic Leadership & Action\"?", a: "Taking ownership of household logistics, eliminating analysis paralysis, and executing in real time.", bundle: 'free' },
+        { q: "What is the core move of \"Proactive Domestic Leadership\"?", a: "Auditing and managing household routines, maintenance, and schedules before friction occurs.", bundle: 'free' },
+        { q: "What is the principle of \"Mental Point of Origin\"?", a: "Anchoring choices in your internal vision and protecting your decision-making energy.", bundle: 'free' },
+        { q: "What is \"Action Over Analysis\"?", a: "Setting research limits and executing on good-enough information to build real-world momentum.", bundle: 'free' },
+        { q: "What are the four phases of the OODA Loop in relationship dynamics?", a: "Observe, Orient, Decide, and Act.", bundle: 'pro' },
+        { q: "Why is waiting to be managed by your partner a critical failure?", a: "Because waiting to be managed abdicates leadership and forces your partner into an exhausted manager role.", bundle: 'pro' },
+        { q: "How does Proactive Domestic Leadership build an unshakeable domestic container?", a: "By eliminating daily logistical friction, establishing clear standards, and providing calm masculine direction.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Proactive Domestic Leadership",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Proactive Domestic Leadership\"?", a: "Managing household systems, schedules, and maintenance before friction occurs without waiting for complaints.", bundle: 'free' },
+        { q: "Why is passive waiting for domestic chores detrimental to masculine authority?", a: "Because passive waiting projects child-like dependence and forces your partner to manage you.", bundle: 'free' },
+        { q: "How should you handle home maintenance schedules?", a: "Audit domestic needs, set clear routines, and execute repairs and service proactively.", bundle: 'free' },
+        { q: "What should you do when household routines become chaotic?", a: "Step forward, establish a clear new routine, and take ownership of the primary execution.", bundle: 'free' },
+        { q: "How does proactive domestic management affect your partner's emotional state?", a: "It provides security, reduces her mental workload, and eliminates unnecessary domestic stress.", bundle: 'free' },
+        { q: "What is the difference between proactive leadership and micromanaging?", a: "Proactive leadership sets clean systems and direction; micromanaging obsessively controls minor steps.", bundle: 'pro' },
+        { q: "How do you handle financial budget logistics proactively?", a: "Automate savings, establish clear spending boundaries, and review capital allocations regularly.", bundle: 'pro' },
+        { q: "What posture should you maintain while executing domestic leadership?", a: "Quiet, matter-of-fact authority that acts without needing praise or constant consensus.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mental Point of Origin",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Mental Point of Origin\"?", a: "Filtering domestic choices through your internal vision and priorities while eliminating trivial options.", bundle: 'free' },
+        { q: "What is decision fatigue in household management?", a: "The mental exhaustion caused by endlessly evaluating low-stakes choices and seeking consensus.", bundle: 'free' },
+        { q: "How do you respond when presented with twenty minor aesthetic options?", a: "Select a solid option that fits your standard cleanly and close the decision.", bundle: 'free' },
+        { q: "Why is seeking total consensus on trivial matters a low-status move?", a: "Because it betrays internal hesitation and overloads your partner with decision fatigue.", bundle: 'free' },
+        { q: "How do you protect your high-energy focus blocks during the day?", a: "Anchor your priorities cleanly, execute non-negotiables first, and handle minor errands during low-energy windows.", bundle: 'free' },
+        { q: "What does \"Mental Point of Origin\" mean in the context of family choices?", a: "Referencing your internal vision and standards first rather than looking outward for social permission.", bundle: 'pro' },
+        { q: "How should you handle external pressure from relatives regarding holiday schedules?", a: "Set your family schedule based on your core priorities and hold your boundary cleanly.", bundle: 'pro' },
+        { q: "Why does delegating trivial options preserve your leadership capacity?", a: "Because saving decision energy for strategic choices keeps your mind sharp and decisive.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Action Over Analysis",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Action Over Analysis\"?", a: "Setting strict research limits and executing on good-enough information to build momentum.", bundle: 'free' },
+        { q: "What is analysis paralysis in domestic decision-making?", a: "Getting trapped in endless research, comparison, and overthinking without taking action.", bundle: 'free' },
+        { q: "What information threshold is sufficient for executing a domestic decision?", a: "Approximately 70% to 80% information is plenty to make a clean call and launch.", bundle: 'free' },
+        { q: "Why is overthinking minor purchases an evasion tactic?", a: "Because endless research feels productive while secretly avoiding the responsibility of actual execution.", bundle: 'free' },
+        { q: "How do you break a stalled home project loop?", a: "Set an immediate deadline, pick the solid solution, and begin physical execution now.", bundle: 'free' },
+        { q: "What is the relationship between perfectionism and fear?", a: "Perfectionism is fear of failure disguised as high standards; it destroys momentum.", bundle: 'pro' },
+        { q: "How does rapid execution build real-world capability?", a: "Because real-world feedback from action teaches faster than endless theoretical research.", bundle: 'pro' },
+        { q: "What rule should you apply to low-stakes purchases like basic tools or appliances?", a: "Cap research time to ten minutes, select a top-rated unit, and execute the purchase.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Executing the OODA Loop",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Executing the OODA Loop\"?", a: "Observing real-time friction, orienting through your frame, deciding immediately, and acting cleanly.", bundle: 'free' },
+        { q: "What does \"Observe\" mean in real-time domestic management?", a: "Reading the facts of the immediate situation calmly without emotional panic or denial.", bundle: 'free' },
+        { q: "What does \"Orient\" mean in the OODA Loop framework?", a: "Filtering observed facts through your core frame, standards, and strategic priorities.", bundle: 'free' },
+        { q: "How fast should you move from \"Decide\" to \"Act\"?", a: "Move instantly; execute the call cleanly without hesitating or second-guessing.", bundle: 'free' },
+        { q: "What should you do when a sudden domestic crisis cancels an outdoor event?", a: "Read the weather change, shift cleanly to an alternative indoor plan, and lead the team.", bundle: 'free' },
+        { q: "Why is theoretical knowledge useless during a live domestic emergency?", a: "Because live emergencies require rapid real-time observation and immediate execution.", bundle: 'pro' },
+        { q: "How does executing the OODA Loop maintain household composure?", a: "It projects unswayable leadership that absorbs unexpected chaos and restores order fast.", bundle: 'pro' },
+        { q: "What is the danger of getting stuck in the \"Orient\" phase?", a: "You retreat into internal theory and analysis while the live problem escalates around you.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n• **Managing Domestic Logistics** — proactive leadership, internal priorities, or swift action\n• **Handling Decision Fatigue** — eliminating trivial choices, 80% solutions, or real-time calls\n• **Overcoming Domestic Stagnation** — research limits, stepping in directly, or OODA loop execution\n\nOne question decides nearly all of it: what type of domestic friction or delay are you solving?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Managing Domestic Logistics, Handling Decision Fatigue, and Overcoming Domestic Stagnation.", bundle: 'pro' },
+        { q: "What is the focus of \"Managing Domestic Logistics\"?", a: "Building household routines, setting decision priorities, and executing domestic projects.", bundle: 'pro' },
+        { q: "What is the focus of \"Handling Decision Fatigue\"?", a: "Protecting mental energy, cutting overthinking, and making rapid choices under pressure.", bundle: 'pro' },
+        { q: "What does \"Overcoming Domestic Stagnation\" make you choose between?", a: "Research limits, direct proactive leadership, and real-time OODA loop execution.", bundle: 'pro' },
+        { q: "When do you choose \"Proactive Domestic Leadership\" over \"Action Over Analysis\"?", a: "When a household routine or system is completely absent and requires structured ownership.", bundle: 'pro' },
+        { q: "When do you choose \"Executing the OODA Loop\"?", a: "When an unexpected live crisis or breakdown happens and requires immediate real-time action.", bundle: 'pro' },
+        { q: "Why is \"Mental Point of Origin\" essential across all Collections?", a: "Because anchoring choices in your core vision prevents you from seeking endless external consensus.", bundle: 'pro' },
+        { q: "What is the primary trap in Collections?", a: "Slipping into passive waiting, endless research loops, or seeking permission for minor calls.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n1. **The Domestic Reset Loop** — Proactive Domestic Leadership → Mental Point of Origin → Action Over Analysis\n2. **Real-Time Decision Execution** — Executing the OODA Loop → Mental Point of Origin → Action Over Analysis\n3. **The Proactive System Build** — Mental Point of Origin → Proactive Domestic Leadership → Executing the OODA Loop\n\nIn each sequence, the order of the steps is what establishes control and momentum.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Domestic Reset Loop, Real-Time Decision Execution, and The Proactive System Build.", bundle: 'pro' },
+        { q: "What is the order in \"The Domestic Reset Loop\"?", a: "Proactive Domestic Leadership, then Mental Point of Origin, and finally Action Over Analysis.", bundle: 'pro' },
+        { q: "Why does \"The Domestic Reset Loop\" start with \"Proactive Domestic Leadership\"?", a: "Because auditing and identifying broken household routines precedes setting solutions.", bundle: 'pro' },
+        { q: "What is the order in \"Real-Time Decision Execution\"?", a: "Executing the OODA Loop, then Mental Point of Origin, and finally Action Over Analysis.", bundle: 'pro' },
+        { q: "Why does \"Real-Time Decision Execution\" place \"Executing the OODA Loop\" first?", a: "Because reading live friction in real time comes before filtering choices through your anchor.", bundle: 'pro' },
+        { q: "What is the order in \"The Proactive System Build\"?", a: "Mental Point of Origin, then Proactive Domestic Leadership, and finally Executing the OODA Loop.", bundle: 'pro' },
+        { q: "What does \"The Proactive System Build\" train you to do?", a: "Define your long-term vision, build proactive systems, and handle live variables cleanly.", bundle: 'pro' },
+        { q: "Why do two of the three sequences end with \"Action Over Analysis\"?", a: "Because swift execution is required to turn decisions into concrete real-world progress.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n• **Analysis Paralysis** — enforcing research limits and executing on good-enough info\n• **Domestic Passivity** — stepping in to lead household systems without waiting\n• **Decision Fatigue** — protecting energy by cutting trivial options\n• **Real-Time Household Friction** — handling sudden breakdowns with calm OODA execution\n• **Delegating and Outsourcing** — delegating low-leverage tasks while holding standards\n\nEach category organizes by problem type rather than strategy.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Analysis Paralysis, Domestic Passivity, Decision Fatigue, Real-Time Household Friction, and Delegating and Outsourcing.", bundle: 'pro' },
+        { q: "How do you handle \"Analysis Paralysis\"?", a: "By using Action Over Analysis to cap research time and launch execution on 80% data.", bundle: 'pro' },
+        { q: "What is the core move during \"Domestic Passivity\"?", a: "Using Proactive Domestic Leadership to take full ownership of household systems before complaints arise.", bundle: 'pro' },
+        { q: "How do you resolve \"Decision Fatigue\"?", a: "By using Mental Point of Origin to eliminate trivial choices and make decisive calls.", bundle: 'pro' },
+        { q: "How do you handle \"Real-Time Household Friction\"?", a: "By using Executing the OODA Loop to observe, orient, decide, and act cleanly.", bundle: 'pro' },
+        { q: "How do you resolve \"Delegating and Outsourcing\"?", a: "By delegating low-leverage tasks while holding clear quality standards for your home.", bundle: 'pro' },
+        { q: "What is your partner really testing in these challenges?", a: "Whether you possess the grounded capability to lead the domestic container cleanly.", bundle: 'pro' },
+        { q: "Why is passive waiting a fatal mistake in challenges?", a: "Because waiting forces your partner into the manager role and destroys sexual polarity.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four mindsets you practise in this pack:\n• **Domestic Leadership** — proactive management creates security, not control\n• **Decision Making** — grounded calls build authority; endless consensus drains energy\n• **Overthinking** — momentum beats perfectionist research loops\n• **Execution** — real-time action builds competence faster than academic theory\n\nIn every one, the belief that gets in the way feels like safety or politeness from the inside.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Domestic Leadership, Decision Making, Overthinking, and Execution.", bundle: 'pro' },
+        { q: "What does \"Domestic Leadership\" teach you?", a: "That proactive household management creates security and ease rather than overbearing control.", bundle: 'pro' },
+        { q: "What is the core truth behind \"Decision Making\"?", a: "That making clean, decisive calls protects decision energy and projects grounded authority.", bundle: 'pro' },
+        { q: "What is the core block in the \"Overthinking\" mindset?", a: "Believing that endless research loops protect you from errors when they actually cause stagnation.", bundle: 'pro' },
+        { q: "What is the core block in the \"Execution\" mindset?", a: "Believing that reading more theoretical books is a prerequisite for taking real-time action.", bundle: 'pro' },
+        { q: "Why is seeking consensus on trivial options a mistake?", a: "Because seeking endless consensus overloads your partner with decision fatigue and betrays internal doubt.", bundle: 'pro' },
+        { q: "What is the definition of a high-status domestic container?", a: "Proactive logistics, clear decision priorities, momentum in action, and calm real-time execution.", bundle: 'pro' },
+        { q: "What is the ultimate goal of these four mindsets?", a: "To elevate your domestic baseline from a passive dependent to a decisive, proactive leader.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Tips to Act Framework",
+      description: "The Tips to Act Framework from Rian Stone's Praxeology Volume 4: Decision budgeting, OODA loop execution, and proactive domestic energy allocation.\n• **Decision Budgeting** — allocating mental energy to high-impact choices while delegating minor ones\n• **OODA Loop Application** — applying Observe-Orient-Decide-Act to domestic friction\n• **Information Thresholds** — setting a 70–80% info rule to trigger immediate execution\n• **Proactive Energy Allocation** — investing energy upfront in systems to eliminate reactive crises\n\nUnderstanding this framework enables effortless, high-status domestic management.",
+      cards: [
+        { q: "What is Decision Budgeting in the Tips to Act Framework?", a: "Treating mental energy as a finite asset, reserving it for high-leverage choices and delegating minor ones.", bundle: 'pro' },
+        { q: "How does the OODA Loop apply to domestic leadership?", a: "By rapidly observing facts, orienting through your frame, deciding cleanly, and acting without hesitation.", bundle: 'pro' },
+        { q: "What is the Information Threshold rule for taking action?", a: "Act when you have 70% to 80% information rather than delaying for impossible 100% certainty.", bundle: 'pro' },
+        { q: "What is Proactive Energy Allocation?", a: "Investing focus upfront to build smooth domestic systems, eliminating future reactive crises.", bundle: 'pro' },
+        { q: "Why does over-analyzing minor options deplete decision energy?", a: "Because evaluating trivial details burns the same decision energy needed for high-stakes strategic choices.", bundle: 'pro' },
+        { q: "How does the Tips to Act Framework eliminate domestic friction?", a: "By replacing passive hesitation and crisis management with structured, proactive execution.", bundle: 'pro' },
+        { q: "What is the relationship between momentum and household order?", a: "Decisive execution creates momentum, preventing domestic stagnation and building authority.", bundle: 'pro' },
+        { q: "Why is real-time feedback superior to theoretical planning?", a: "Because real-world execution reveals immediate facts, allowing fast adjustments through the OODA loop.", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxbest2: [
+    {
+      name: "Core Idea",
+      description: "The foundational principles of Praxeology Volume 4: Unearthing Covert Contracts by Rian Stone.\n• **Quashing Covert Contracts** — surface hidden expectations and eliminate covert trades\n• **Unconditional Giving** — offer value freely from abundance without attached demands\n• **Refusing Negotiated Desire** — decline duty sex, chore bargaining, and transactional trades\n• **Shedding Validation-Seeking** — act from an internal anchor without seeking external approval\n\nDismantling covert contracts restores authentic polarity, self-respect, and relationship clarity.",
+      cards: [
+        { q: "What are the four core strategies in this pack?", a: "Quashing Covert Contracts, Unconditional Giving, Refusing Negotiated Desire, Shedding Validation-Seeking.", bundle: 'free' },
+        { q: "What is the primary focus of \"Unearthing Covert Contracts\"?", a: "Surface hidden expectations, eliminate transactional intimacy, and build self-anchored authority.", bundle: 'free' },
+        { q: "What is a covert contract in relationship dynamics?", a: "An unspoken \"if-then\" deal where a man expects emotional or sexual payoffs for good behavior.", bundle: 'free' },
+        { q: "What is \"Unconditional Giving\"?", a: "Offering gifts, help, or affection freely from abundance without expecting return favors.", bundle: 'free' },
+        { q: "Why is \"Refusing Negotiated Desire\" essential for polarity?", a: "Because negotiating sex turns intimacy into duty trades, destroying authentic desire.", bundle: 'free' },
+        { q: "What is the \"Good Guy Trap\" described by Rian Stone?", a: "Acting overly submissive to buy approval, leading to covert bitterness when unpaid.", bundle: 'pro' },
+        { q: "How does scoreboarding ruin long-term relationship dynamics?", a: "By replacing authentic connection with a stingy accounting ledger of past favors.", bundle: 'pro' },
+        { q: "What is the ultimate goal of dismantling covert contracts?", a: "To shift from transactional manipulation to authentic masculine leadership and desire.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Quashing Covert Contracts",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Quashing Covert Contracts\"?", a: "Stating hidden expectations explicitly and refusing to engage in covert trades.", bundle: 'free' },
+        { q: "Why do covert contracts inevitably breed bitterness?", a: "Because unspoken deals are never agreed to by the partner, guaranteeing disappointment.", bundle: 'free' },
+        { q: "How should you respond when she demands a reward for basic errands?", a: "State plainly: 'Errands are shared household work, not leverage tokens.'", bundle: 'free' },
+        { q: "What is the danger of being 'nice' to collect gold stars?", a: "It turns genuine kindness into covert manipulation aimed at buying validation.", bundle: 'free' },
+        { q: "How do you replace a covert contract with a plain choice?", a: "State your boundaries and desires directly without hidden conditions or leverage.", bundle: 'free' },
+        { q: "How do past favors become weaponized in covert contracts?", a: "They are used as leverage to demand compliance or guilt the partner into giving in.", bundle: 'pro' },
+        { q: "What mindset shift destroys covert scoreboarding?", a: "Recognizing that household tasks are done for standards, not to collect points.", bundle: 'pro' },
+        { q: "How does quashing covert contracts rebuild respect?", a: "By replacing manipulative passive-aggression with transparent, high-status leadership.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Unconditional Giving",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Unconditional Giving\"?", a: "Offering gifts, help, or affection freely from abundance without attached strings.", bundle: 'free' },
+        { q: "What is the difference between clean giving and covert buying?", a: "Clean giving expects zero return; covert buying demands emotional or sexual payoff.", bundle: 'free' },
+        { q: "How should you give a gift to your partner?", a: "Hand it over warmly, state it's a free offering, and expect no reciprocal favor.", bundle: 'free' },
+        { q: "Why do women distrust gifts that come with attached strings?", a: "Because stringed gifts feel like manipulative traps that create unwanted emotional debt.", bundle: 'free' },
+        { q: "How does clean giving reflect a masculine mindset of abundance?", a: "It demonstrates that you possess value to spare and need no transactional validation.", bundle: 'free' },
+        { q: "What should you do if she asks if a gift requires something in return?", a: "Reassure her warmly: 'It's a free gift for you to enjoy, zero strings attached.'", bundle: 'pro' },
+        { q: "How does unconditional giving protect against relationship stinginess?", a: "It keeps generosity alive while holding firm boundaries against manipulation.", bundle: 'pro' },
+        { q: "What is the rule regarding past gifts during arguments?", a: "Never weaponize past gifts; clean offerings remain unattached forever.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Refusing Negotiated Desire",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Refusing Negotiated Desire\"?", a: "Declining starfish intimacy, chore bargaining, and transactional duty sex.", bundle: 'free' },
+        { q: "Why is 'duty sex' harmful to a long-term marriage?", a: "Because obligation sex destroys sexual polarity and breeds disgust over time.", bundle: 'free' },
+        { q: "How do you respond when she offers intimacy in exchange for chores?", a: "State clearly: 'I do chores for a clean home; intimacy requires mutual desire.'", bundle: 'free' },
+        { q: "Why can physical desire never be negotiated through contracts?", a: "Because desire is an emotional and physical response to polarity, not a logical deal.", bundle: 'free' },
+        { q: "What should you do if she lies back passively like a starfish in bed?", a: "Stop immediately, disengage cleanly, and state that you connect where passion is real.", bundle: 'free' },
+        { q: "How does refusing negotiated desire restore sexual polarity?", a: "By eliminating transactional obligation and holding out for authentic attraction.", bundle: 'pro' },
+        { q: "What is the trap of trading retail purchases for bedroom romance?", a: "It turns intimacy into prostitution-style trades, destroying respect.", bundle: 'pro' },
+        { q: "How does a grounded man respond to complaints about refusing duty sex?", a: "State calmly: 'I hold out for real passion. Duty sex kills polarity.'", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Shedding Validation-Seeking",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Shedding Validation-Seeking\"?", a: "Operating independently from your core standards without needing her approval.", bundle: 'free' },
+        { q: "What is the root cause of validation-seeking behavior in men?", a: "Internal insecurity and a belief that self-worth must be validated by women.", bundle: 'free' },
+        { q: "How should you respond when you complete a task and receive no praise?", a: "Affirm the solid work internally and move on without fishing for compliments.", bundle: 'free' },
+        { q: "Why does fishing for compliments turn women off?", a: "Because needy approval-seeking betrays internal weakness and child-like dependence.", bundle: 'free' },
+        { q: "How do you handle criticism of your personal hobbies or workout routine?", a: "Hold your boundary cleanly: 'My routine maintains my performance. I keep my schedule.'", bundle: 'free' },
+        { q: "How does shedding validation-seeking break the Good Guy Trap?", a: "By shifting from seeking approval to acting from an internal anchor of self-respect.", bundle: 'pro' },
+        { q: "What vocal quality indicates approval-seeking behavior?", a: "High pitch, trailing sentences, tentative tone, and upward inflection at sentence ends.", bundle: 'pro' },
+        { q: "How does an independent man view his own achievements?", a: "As self-validated progress toward his vision, requiring no external applause.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n• **Eliminating Covert Transactions** — quashing contracts, refusing negotiated desire, or unconditional giving\n• **Navigating Desire and Validation** — refusing duty sex, shedding validation, or quashing covert trades\n• **Holding Abundant Standards** — unconditional giving, shedding validation, or quashing contracts\n\nOne question decides nearly all of it: what type of covert trade or approval trip are you resolving?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Eliminating Covert Transactions, Navigating Desire and Validation, and Holding Abundant Standards.", bundle: 'pro' },
+        { q: "What is the focus of \"Eliminating Covert Transactions\"?", a: "Stopping trade-off thinking, rejecting chore-for-sex bargains, and giving value cleanly.", bundle: 'pro' },
+        { q: "What is the focus of \"Navigating Desire and Validation\"?", a: "Decoupling desire from approval seeking, duty trades, and covert bargains.", bundle: 'pro' },
+        { q: "What does \"Holding Abundant Standards\" make you choose between?", a: "Unconditional giving, independent validation, and scoreboarding destruction.", bundle: 'pro' },
+        { q: "When do you choose \"Quashing Covert Contracts\"?", a: "When unspoken \"if-then\" deals and past favors are used as leverage.", bundle: 'pro' },
+        { q: "When do you choose \"Refusing Negotiated Desire\"?", a: "When physical intimacy is offered as a transactional bribe or duty trade.", bundle: 'pro' },
+        { q: "Why is \"Shedding Validation-Seeking\" essential across all Collections?", a: "Because self-anchored worth prevents you from entering covert approval deals.", bundle: 'pro' },
+        { q: "What is the primary trap in Collections?", a: "Falling back into scoreboarding, accepting duty sex, or begging for praise.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n1. **The Covert Contract Reset** — Quashing Covert Contracts → Refusing Negotiated Desire → Shedding Validation-Seeking\n2. **The Desire Uncoupling Chain** — Refusing Negotiated Desire → Quashing Covert Contracts → Unconditional Giving\n3. **The Validation Detox Loop** — Shedding Validation-Seeking → Quashing Covert Contracts → Unconditional Giving\n\nIn each sequence, the order of the steps is what dismantles covert manipulation.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Covert Contract Reset, The Desire Uncoupling Chain, and The Validation Detox Loop.", bundle: 'pro' },
+        { q: "What is the order in \"The Covert Contract Reset\"?", a: "Quashing Covert Contracts, then Refusing Negotiated Desire, and finally Shedding Validation-Seeking.", bundle: 'pro' },
+        { q: "Why does \"The Covert Contract Reset\" start with \"Quashing Covert Contracts\"?", a: "Because surfacing the hidden bargain precedes refusing transactional desire.", bundle: 'pro' },
+        { q: "What is the order in \"The Desire Uncoupling Chain\"?", a: "Refusing Negotiated Desire, then Quashing Covert Contracts, and finally Unconditional Giving.", bundle: 'pro' },
+        { q: "Why does \"The Desire Uncoupling Chain\" place \"Refusing Negotiated Desire\" first?", a: "Because stopping duty sex immediately halts the transactional cycle.", bundle: 'pro' },
+        { q: "What is the order in \"The Validation Detox Loop\"?", a: "Shedding Validation-Seeking, then Quashing Covert Contracts, and finally Unconditional Giving.", bundle: 'pro' },
+        { q: "What does \"The Validation Detox Loop\" train you to do?", a: "Anchor self-worth, destroy covert approval bargains, and give freely from abundance.", bundle: 'pro' },
+        { q: "Why do all three sequences rely on \"Unconditional Giving\" or \"Shedding Validation-Seeking\"?", a: "Because ending covert trades requires anchoring in self-worth and abundant giving.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n• **Scoreboard & Frame Tracking** — destroying mental ledgers of past favors\n• **Transactional Duty Sex** — declining starfish intimacy and chore bargains\n• **The Good Guy Trap** — eliminating submissive approval-buying behavior\n• **Guilt Trips and Emotional Debts** — neutralizing manipulative debt leverage\n• **Approval Seeking in Decisions** — making independent calls without begging for permission\n\nEach category organizes by problem type rather than strategy.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Scoreboard & Frame Tracking, Transactional Duty Sex, The Good Guy Trap, Guilt Trips and Emotional Debts, and Approval Seeking in Decisions.", bundle: 'pro' },
+        { q: "How do you handle \"Scoreboard & Frame Tracking\"?", a: "By using Quashing Covert Contracts to burn the mental ledger and state plain choices.", bundle: 'pro' },
+        { q: "What is the core move during \"Transactional Duty Sex\"?", a: "Using Refusing Negotiated Desire to decline duty sex and chore bargains cleanly.", bundle: 'pro' },
+        { q: "How do you resolve \"The Good Guy Trap\"?", a: "By using Shedding Validation-Seeking to stop acting submissive for points.", bundle: 'pro' },
+        { q: "How do you handle \"Guilt Trips and Emotional Debts\"?", a: "By surfacing manipulative leverage tactics and making choices based on current reality.", bundle: 'pro' },
+        { q: "How do you resolve \"Approval Seeking in Decisions\"?", a: "By making independent calls from your internal anchor without seeking permission.", bundle: 'pro' },
+        { q: "What is your partner really testing in these challenges?", a: "Whether your authority and kindness are authentic or covertly manipulative.", bundle: 'pro' },
+        { q: "Why is scoreboarding a fatal mistake in challenges?", a: "Because scoreboarding replaces genuine connection with bitter accounting.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four mindsets you practise in this pack:\n• **Contracts** — covert bargains breed bitterness; state choices directly\n• **Giving** — true value is given freely from abundance without strings\n• **Bargaining** — physical desire cannot be bought or negotiated\n• **Approval** — self-worth is self-anchored; stop seeking external permission\n\nIn every one, the belief that gets in the way feels like safety or politeness from the inside.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Contracts, Giving, Bargaining, and Approval.", bundle: 'pro' },
+        { q: "What does \"Contracts\" teach you?", a: "That unspoken \"nice guy\" bargains inevitably breed resentment and destroy frame.", bundle: 'pro' },
+        { q: "What is the core truth behind \"Giving\"?", a: "That offering value freely from abundance without strings is high-status strength.", bundle: 'pro' },
+        { q: "What is the core block in the \"Bargaining\" mindset?", a: "Believing that physical desire can be negotiated or bought with domestic favors.", bundle: 'pro' },
+        { q: "What is the core block in the \"Approval\" mindset?", a: "Believing that your worth depends on external agreement and permission.", bundle: 'pro' },
+        { q: "Why is duty sex a trap for long-term relationships?", a: "Because duty sex replaces authentic desire with obligation, killing polarity.", bundle: 'pro' },
+        { q: "What is the definition of an abundant masculine container?", a: "Unattached giving, zero scoreboarding, independent self-worth, and unswayable desire.", bundle: 'pro' },
+        { q: "What is the ultimate goal of these four mindsets?", a: "To eliminate covert manipulation and establish authentic, high-status leadership.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Covert Contract Mechanics",
+      description: "The Covert Contract mechanics from Rian Stone's Praxeology Volume 4: Unearthing Covert Contracts.\n• **Implicit Contract Formation** — how unspoken expectations build silent resentment\n• **The Nice Guy Dynamic** — using submissiveness to buy safety and validation\n• **Transactional Intimacy Decay** — how trading chores for sex kills sexual desire\n• **Abundance Shift** — transitioning from needy trading to authentic unattached leadership\n\nUnderstanding these mechanics allows a man to dismantle covert contracts permanently.",
+      cards: [
+        { q: "How do implicit covert contracts form in relationships?", a: "When a man performs actions expecting an unstated reward, building hidden resentment when unpaid.", bundle: 'pro' },
+        { q: "What is the fundamental flaw of the \"Nice Guy\" strategy?", a: "It uses covert manipulation disguised as politeness to buy safety, destroying respect.", bundle: 'pro' },
+        { q: "Why does trading chores for sex cause intimacy decay?", a: "Because it transforms sexual polarity into a domestic business transaction, killing desire.", bundle: 'pro' },
+        { q: "What is the Abundance Shift in relationship leadership?", a: "Shifting from needy scoreboarding to unattached giving backed by firm boundaries.", bundle: 'pro' },
+        { q: "How does scoreboarding sabotage emotional safety?", a: "By making every act of kindness feel like a loan that must be repaid with interest.", bundle: 'pro' },
+        { q: "Why do women lose sexual attraction for men who seek permission?", a: "Because seeking permission projects internal weakness, fear of risk, and child-like dependence.", bundle: 'pro' },
+        { q: "What is the relationship between covert contracts and anger?", a: "Covert contracts guarantee unspoken expectations will be missed, generating chronic anger.", bundle: 'pro' },
+        { q: "How does direct communication eliminate covert contracts?", a: "By making all choices, standards, and desires transparent, eliminating hidden ledgers.", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxbest3: [
+    {
+      name: "Core Idea",
+      description: "The foundational principles of Praxeology Volume 4: Tactical Boundary Enforcement by Rian Stone.\n• **Post-Facto Explanation** — execute boundary actions first and explain standards after\n• **Refusing Weaponized Apologies** — reject submissive apology demands and fake verbal resets\n• **Logistics-Only Texting** — restrict digital messaging strictly to time, place, and logistics\n• **Disengaging From Emotional Chasing** — cut circular arguments and step away cleanly\n\nEnforcing tactical boundaries protects frame, eliminates argument loops, and builds authority.",
+      cards: [
+        { q: "What are the four core strategies in this pack?", a: "Post-Facto Explanation, Refusing Weaponized Apologies, Logistics-Only Texting, Disengaging From Emotional Chasing.", bundle: 'free' },
+        { q: "What is the primary focus of \"Tactical Boundary Enforcement\"?", a: "Enforcing boundaries through action, stopping digital arguments, and refusing manipulative resets.", bundle: 'free' },
+        { q: "What is the principle of \"Post-Facto Explanation\"?", a: "Execute boundary actions first, then explain brief standards after the fact if necessary.", bundle: 'free' },
+        { q: "What is \"Logistics-Only Texting\"?", a: "Restricting text and screen messages strictly to time, place, and logistics.", bundle: 'free' },
+        { q: "Why is \"Refusing Weaponized Apologies\" essential for frame?", a: "Because submissive apologies destroy authority while fake verbal resets bypass real behavior change.", bundle: 'free' },
+        { q: "What is \"emotional chasing\" in relationship arguments?", a: "Following a partner with emotional accusations, circular logic, and shouting to force a reaction.", bundle: 'pro' },
+        { q: "Why is pre-action boundary negotiation a critical mistake?", a: "Because negotiating pre-action drags boundaries into debates where standards are eroded.", bundle: 'pro' },
+        { q: "What is the ultimate goal of tactical boundary enforcement?", a: "To eliminate verbal drama, enforce standards through action, and maintain unshakeable composure.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Post-Facto Explanation",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Post-Facto Explanation\"?", a: "Executing boundary actions first and explaining standards briefly after the fact.", bundle: 'free' },
+        { q: "Why should you never negotiate a new boundary before taking action?", a: "Because pre-action negotiation invites permission debates and erodes authority.", bundle: 'free' },
+        { q: "How do you respond when asked why you moved personal equipment without permission?", a: "State plainly: 'I set up my equipment in this space for quiet focus. That is where it lives.'", bundle: 'free' },
+        { q: "What length should a post-facto explanation be?", a: "Brief, matter-of-fact, and focused on clear standards without long justifications.", bundle: 'free' },
+        { q: "How does action enforce reality better than verbal speeches?", a: "Because behavior creates immediate physical facts while speeches invite verbal debate.", bundle: 'free' },
+        { q: "What is the trap of DEERing (Defending, Explaining, Excusing, Rationalizing)?", a: "It signals internal insecurity and treats your boundary as subject to her approval.", bundle: 'pro' },
+        { q: "How do you handle emotional pushback after executing a boundary action?", a: "Maintain calm composure, state your standard briefly, and refuse further argument.", bundle: 'pro' },
+        { q: "Why is post-facto explanation high-status?", a: "Because it demonstrates that you possess authority over your choices without needing permission.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Refusing Weaponized Apologies",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Refusing Weaponized Apologies\"?", a: "Rejecting submissive apology demands and superficial verbal resets.", bundle: 'free' },
+        { q: "Why are submissive apologies dangerous to masculine frame?", a: "Because apologizing for holding valid standards projects weakness and child-like guilt.", bundle: 'free' },
+        { q: "How do you respond when demanded to make a submissive apology?", a: "State clearly: 'I state choices as an Adult. I offer no apology for holding our standard.'", bundle: 'free' },
+        { q: "Why is a superficial 'Sorry!' insufficient after a major commitment breach?", a: "Because superficial words do not equal accountability; trust requires consistent behavior change.", bundle: 'free' },
+        { q: "How should you handle sarcastic apologies like 'Well sorry I'm so terrible!'?", a: "State plainly: 'Sarcasm isn't accountability. We stick to our agreed schedule.'", bundle: 'free' },
+        { q: "What is a weaponized apology?", a: "A manipulative apology used to demand submissiveness, reset status, or force blame onto you.", bundle: 'pro' },
+        { q: "How does a grounded man view real relationship repair?", a: "As a process of consistent action and respectful conduct over time, not cheap words.", bundle: 'pro' },
+        { q: "What vocal tone should be used when refusing a submissive apology demand?", a: "Low pitch, steady, calm, matter-of-fact tone without anger or defensiveness.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Logistics-Only Texting",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Logistics-Only Texting\"?", a: "Restricting text and messaging strictly to time, place, and logistics.", bundle: 'free' },
+        { q: "Why are screens terrible for processing emotional relationship topics?", a: "Because text lacks vocal tone, body language, and presence, escalating misunderstanding.", bundle: 'free' },
+        { q: "How do you respond to a long text essay accusing you of emotional coldness?", a: "Reply concisely: 'I don't process relationship topics over text. See you at six.'", bundle: 'free' },
+        { q: "What is the rule for answering frantic texts during work or workout blocks?", a: "Send a brief logistics update or wait until your block ends to check messages.", bundle: 'free' },
+        { q: "How does logistics-only texting protect your daily focus?", a: "It eliminates digital argument loops and keeps your mind clear for high-value tasks.", bundle: 'free' },
+        { q: "Why do women test men with text fights during the work day?", a: "To test emotional reactivity, composure, and whether a man can be pulled out of his focus.", bundle: 'pro' },
+        { q: "What should you do if she sends passive-aggressive commentary over text?", a: "Ignore the passive-aggressive noise and send a clean logistics update or remain silent.", bundle: 'pro' },
+        { q: "How does logistics-only texting elevate in-person communication?", a: "By reserving heavy talks for face-to-face presence where real connection occurs.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Disengaging From Emotional Chasing",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Disengaging From Emotional Chasing\"?", a: "Cutting circular arguments cleanly, stating limits, and stepping away.", bundle: 'free' },
+        { q: "What should you do when an argument devolves into loud shouting?", a: "State: 'I don't engage in shouting. I am stepping out for a walk,' and exit cleanly.", bundle: 'free' },
+        { q: "Why is fighting at midnight a critical mistake?", a: "Because late-night exhaustion amplifies emotional drama and destroys sleep and focus.", bundle: 'free' },
+        { q: "How do you respond when called a coward for stepping away from a shouting fight?", a: "State calmly: 'Calm communication is strength. I converse when tone is respectful.'", bundle: 'free' },
+        { q: "What is the physical action during verbal disengagement?", a: "Maintain tall posture, speak your limit calmly, turn, and walk into another space.", bundle: 'free' },
+        { q: "How does emotional chasing operate in relationship conflict?", a: "By using circular logic, emotional accusations, and cornering to provoke a reactive outburst.", bundle: 'pro' },
+        { q: "What happens when a man matches his partner's shouting tone?", a: "He loses frame, validates emotional chaos, and becomes an equal participant in drama.", bundle: 'pro' },
+        { q: "How soon can you re-engage after disengaging from an emotional fight?", a: "When tone is calm, respectful, and focused on Adult problem-solving in person.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n• **Handling Screen and Distance Communication** — logistics texting, post-facto explanation, or disengaging\n• **Neutralizing Verbal Manipulation** — refusing fake apologies, disengaging, or post-facto explanation\n• **Enforcing Unshakeable Frame** — post-facto explanation, disengaging, or refusing fake apologies\n\nOne question decides nearly all of it: what type of verbal or digital boundary tactic are you applying?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Handling Screen and Distance Communication, Neutralizing Verbal Manipulation, and Enforcing Unshakeable Frame.", bundle: 'pro' },
+        { q: "What is the focus of \"Handling Screen and Distance Communication\"?", a: "Stopping digital text fights, restricting messaging to logistics, and holding boundaries over distance.", bundle: 'pro' },
+        { q: "What is the focus of \"Neutralizing Verbal Manipulation\"?", a: "Deflecting fake apologies, cutting circular argument loops, and bypassing pre-action debate.", bundle: 'pro' },
+        { q: "What does \"Enforcing Unshakeable Frame\" make you choose between?", a: "Post-facto explanation, disengaging from emotional chasing, and refusing submissive apologies.", bundle: 'pro' },
+        { q: "When do you choose \"Logistics-Only Texting\"?", a: "When she attempts to air emotional grievances or start arguments over text or email.", bundle: 'pro' },
+        { q: "When do you choose \"Disengaging From Emotional Chasing\"?", a: "When an argument turns into shouting, circular looping, late-night fights, or cornering.", bundle: 'pro' },
+        { q: "Why is \"Post-Facto Explanation\" essential across all Collections?", a: "Because executing action first and explaining standards after prevents pre-action debate traps.", bundle: 'pro' },
+        { q: "What is the primary trap in Collections?", a: "Getting hooked into text essays, offering submissive apologies, or negotiating pre-action.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n1. **The Boundary Enforcement Loop** — Disengaging From Emotional Chasing → Post-Facto Explanation → Logistics-Only Texting\n2. **The Fake Apology Disarm** — Refusing Weaponized Apologies → Post-Facto Explanation → Disengaging From Emotional Chasing\n3. **The Screen Argument Cutoff** — Logistics-Only Texting → Disengaging From Emotional Chasing → Post-Facto Explanation\n\nIn each sequence, the order of the steps is what enforces boundary standards cleanly.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Boundary Enforcement Loop, The Fake Apology Disarm, and The Screen Argument Cutoff.", bundle: 'pro' },
+        { q: "What is the order in \"The Boundary Enforcement Loop\"?", a: "Disengaging From Emotional Chasing, then Post-Facto Explanation, and finally Logistics-Only Texting.", bundle: 'pro' },
+        { q: "Why does \"The Boundary Enforcement Loop\" start with \"Disengaging From Emotional Chasing\"?", a: "Because stepping away from verbal drama precedes explaining standards after action.", bundle: 'pro' },
+        { q: "What is the order in \"The Fake Apology Disarm\"?", a: "Refusing Weaponized Apologies, then Post-Facto Explanation, and finally Disengaging From Emotional Chasing.", bundle: 'pro' },
+        { q: "Why does \"The Fake Apology Disarm\" place \"Refusing Weaponized Apologies\" first?", a: "Because rejecting fake resets halts manipulative guilt tactics immediately.", bundle: 'pro' },
+        { q: "What is the order in \"The Screen Argument Cutoff\"?", a: "Logistics-Only Texting, then Disengaging From Emotional Chasing, and finally Post-Facto Explanation.", bundle: 'pro' },
+        { q: "What does \"The Screen Argument Cutoff\" train you to do?", a: "Restrict text fights, cut live chasing when home, and state standards after calm returns.", bundle: 'pro' },
+        { q: "Why do all three sequences rely on \"Post-Facto Explanation\"?", a: "Because explaining standards briefly after action enforces reality without pre-action debate.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n• **Screen Fights and Text Drama** — shutting down digital arguments and text essays\n• **Weaponized Guilt and Fake Apologies** — rejecting submissive apology demands and fake resets\n• **Late-Night Emotional Chasing** — disengaging from midnight fights and circular logic\n• **Pre-Action Negotiation Traps** — acting first and explaining standards after the fact\n• **Public Shaming and Tantrums** — maintaining composure during public scenes and crowd trials\n\nEach category organizes by problem type rather than strategy.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Screen Fights and Text Drama, Weaponized Guilt and Fake Apologies, Late-Night Emotional Chasing, Pre-Action Negotiation Traps, and Public Shaming and Tantrums.", bundle: 'pro' },
+        { q: "How do you handle \"Screen Fights and Text Drama\"?", a: "By using Logistics-Only Texting to restrict messages to time, place, and logistics.", bundle: 'pro' },
+        { q: "What is the core move during \"Weaponized Guilt and Fake Apologies\"?", a: "Using Refusing Weaponized Apologies to decline submissive apology demands and fake resets.", bundle: 'pro' },
+        { q: "How do you resolve \"Late-Night Emotional Chasing\"?", a: "By using Disengaging From Emotional Chasing to cut argument loops and step away cleanly.", bundle: 'pro' },
+        { q: "How do you handle \"Pre-Action Negotiation Traps\"?", a: "By using Post-Facto Explanation to execute action first and state standards after.", bundle: 'pro' },
+        { q: "How do you resolve \"Public Shaming and Tantrums\"?", a: "By maintaining unswayable composure and stepping away from public emotional theater.", bundle: 'pro' },
+        { q: "What is your partner really testing in these challenges?", a: "Whether your boundaries are enforced through grounded action or if you can be broken verbally.", bundle: 'pro' },
+        { q: "Why is fighting over text a fatal mistake in challenges?", a: "Because text fights destroy nuance, project reactivity, and escalate argument loops.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four mindsets you practise in this pack:\n• **Explanations** — actions enforce reality; explain briefly after action\n• **Apologies** — genuine repair requires behavior change, not submissive words\n• **Texting** — screens are for logistics; real-world presence is for connection\n• **Emotional Arguments** — stepping away from emotional chasing maintains authority\n\nIn every one, the belief that gets in the way feels like politeness or defense from the inside.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Explanations, Apologies, Texting, and Emotional Arguments.", bundle: 'pro' },
+        { q: "What does \"Explanations\" teach you?", a: "That pre-action boundary negotiations drag standards into debates where frame is lost.", bundle: 'pro' },
+        { q: "What is the core truth behind \"Apologies\"?", a: "That apologizing for holding sound standards betrays self-respect and erodes authority.", bundle: 'pro' },
+        { q: "What is the core block in the \"Texting\" mindset?", a: "Believing that you must write text essays to defend your character over messaging.", bundle: 'pro' },
+        { q: "What is the core block in the \"Emotional Arguments\" mindset?", a: "Believing that staying in a shouting match demonstrates strength rather than reactivity.", bundle: 'pro' },
+        { q: "Why is stepping away from shouting matches high-status?", a: "Because it demonstrates unswayable emotional composure and refuses emotional drama.", bundle: 'pro' },
+        { q: "What is the definition of a tactical boundary?", a: "A boundary enforced through action, brief post-facto clarity, and digital discipline.", bundle: 'pro' },
+        { q: "What is the ultimate goal of these four mindsets?", a: "To eliminate verbal drama, enforce standards through behavior, and hold an unshakeable frame.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Five Manipulative Tools",
+      description: "The Five Manipulative Tools taxonomy from Rian Stone's Praxeology Volume 4: Female tactics used to bypass masculine boundaries.\n• **Anger** — aggressive displays and shouting to force submissiveness through fear\n• **Ego Appeal** — flattery and praise used to trick a man into dropping boundaries\n• **Victim / Wounded** — playing helpless or tearful to trigger white-knight rescue reflexes\n• **Shame** — calling a man selfish, childish, or cold to force compliance through guilt\n• **Endless Talking** — exhausting a man with circular arguments until he yields out of fatigue\n\nRecognizing these five tools allows a man to remain unhookable under verbal manipulation.",
+      cards: [
+        { q: "What are the Five Manipulative Tools in Rian Stone's taxonomy?", a: "Anger, Ego Appeal, Victim/Wounded, Shame, and Endless Talking.", bundle: 'pro' },
+        { q: "How does the \"Anger\" tool attempt to manipulate masculine boundaries?", a: "By using shouting and hostility to intimidate a man into submissive compliance.", bundle: 'pro' },
+        { q: "How does \"Ego Appeal\" bypass a man's frame?", a: "By using strategic flattery to make him feel heroically generous while giving up his boundary.", bundle: 'pro' },
+        { q: "What is the mechanism behind the \"Victim / Wounded\" tool?", a: "Playing helpless or tearful to trigger a man's white-knight rescue reflex so he waives standards.", bundle: 'pro' },
+        { q: "How does \"Shame\" force compliance in relationship arguments?", a: "By labeling a man as selfish, cold, or childish to make him feel guilty for holding limits.", bundle: 'pro' },
+        { q: "What is the tactic of \"Endless Talking\"?", a: "Using circular, non-stop argument loops to exhaust a man mentally until he yields out of fatigue.", bundle: 'pro' },
+        { q: "Why does recognizing these five tools neutralize their effectiveness?", a: "Because seeing the tool shifts your perspective from emotional panic to objective analysis.", bundle: 'pro' },
+        { q: "How does a grounded leader respond when one of the Five Tools is deployed?", a: "By holding his frame, stepping away from argument loops, and enforcing boundaries through action.", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxbest4: [
+    {
+      name: "Core Idea",
+      description: "The foundational principles of Praxeology Volume 4: Advanced Frame & Attachment Dynamics by Rian Stone.\n• **Auditing and Controlling Frame** — reassert your standards as the governing reality\n• **Amused Mastery on Complaints** — absorb daily nitpicking with playful, unbothered posture\n• **Managing Avoidant Cycles** — remain steady through closeness-distance triggers without panic\n• **Holding Frame Under Mass Shame** — stand unswayable against public mobbing and crowd pressure\n• **Leading to New Territory** — expand relationship standards into new emotional and lifestyle areas\n\nMastering these strategies establishes an unshakeable, high-status masculine container.",
+      cards: [
+        { q: "What are the five core strategies in this pack?", a: "Auditing and Controlling Frame, Amused Mastery on Complaints, Managing Avoidant Cycles, Holding Frame Under Mass Shame, Leading to New Territory.", bundle: 'free' },
+        { q: "What is the primary focus of \"Advanced Frame & Attachment Dynamics\"?", a: "Maintaining frame control, neutralizing avoidant testing, standing against social pressure, and leading to new territory.", bundle: 'free' },
+        { q: "What is Tomassi's First Iron Law of Frame?", a: "The frame is everything; always control your frame and never negotiate within another frame.", bundle: 'free' },
+        { q: "How does \"Amused Mastery on Complaints\" defuse daily friction?", a: "By absorbing low-level complaints with light amusement and unbothered composure.", bundle: 'free' },
+        { q: "What is the goal of \"Managing Avoidant Cycles\"?", a: "To provide an unshakeable, steady center during emotional withdrawal without chasing.", bundle: 'free' },
+        { q: "How do you handle public shaming attacks from extended social groups?", a: "Stand unswayable, refuse submissive public apologies, and enforce your internal standards.", bundle: 'pro' },
+        { q: "What does \"Leading to New Territory\" achieve in long-term marriage?", a: "It expands the relationship container into higher standards of health, wealth, and intimacy.", bundle: 'pro' },
+        { q: "Why is frame control essential when facing emotional protest behaviors?", a: "Because an unswayable frame neutralizes fear and provides grounded safety for the home.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Auditing and Controlling Frame",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Auditing and Controlling Frame\"?", a: "Constantly monitoring whose frame governs and enforcing your standards as law.", bundle: 'free' },
+        { q: "Why should a man never enter or negotiate within an inferior frame?", a: "Because negotiating within an inferior frame surrenders authority and validates emotional chaos.", bundle: 'free' },
+        { q: "How do you respond when she tries to reframe work focus as 'selfishness'?", a: "State clearly: 'Building our business secures our future. My focus block stands.'", bundle: 'free' },
+        { q: "What is a frame invasion in domestic interactions?", a: "An attempt to impose an anxious timeline, emotional premise, or rule on your behavior.", bundle: 'free' },
+        { q: "How does a grounded leader enforce his financial frame?", a: "By setting independent capital limits based on real numbers and holding them firm.", bundle: 'free' },
+        { q: "What vocal qualities project solid frame control?", a: "Low pitch, steady cadence, matter-of-fact tone, and absence of defensive over-explaining.", bundle: 'pro' },
+        { q: "How do you handle attempts to frame your composure as 'coldness'?", a: "State calmly: 'Calm composure is my baseline. We converse when tone is adult.'", bundle: 'pro' },
+        { q: "What is the relationship between frame control and emotional security?", a: "An unswayable masculine frame creates the ultimate emotional container for the household.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Amused Mastery on Complaints",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Amused Mastery on Complaints\"?", a: "Meeting daily nitpicking and friction with light amusement and unbothered composure.", bundle: 'free' },
+        { q: "Why is defensiveness the wrong response to daily complaining?", a: "Because defensiveness betrays insecurity and turns minor nitpicking into major arguments.", bundle: 'free' },
+        { q: "How do you respond to dramatic complaints about minor weather delays?", a: "Smile warmly: 'I'll file a formal protest with the rain clouds right away, Love.'", bundle: 'free' },
+        { q: "What posture should be maintained during low-level domestic complaints?", a: "Warm, relaxed, playful, unbothered posture with a genuine grin or chuckle.", bundle: 'free' },
+        { q: "How does amused mastery disarm chronic complaining over time?", a: "By removing the emotional drama payoff, causing minor nitpicking to dissolve.", bundle: 'free' },
+        { q: "What is the difference between amused mastery and mean sarcasm?", a: "Amused mastery is warm, light, and unbothered; sarcasm is bitter, sharp, and defensive.", bundle: 'pro' },
+        { q: "How do you handle nitpicking about how you loaded the dishwasher or car?", a: "Grin playfully: 'Plates are loaded and clean. Masterful execution as usual.'", bundle: 'pro' },
+        { q: "Why does taking every minor complaint seriously ruin attraction?", a: "Because taking minor complaints seriously validates low-level drama and projects anxiety.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Managing Avoidant Cycles",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Managing Avoidant Cycles\"?", a: "Navigating Fearful-Avoidant cycles by remaining steady without emotional chasing.", bundle: 'free' },
+        { q: "What is a protest behavior in fearful-avoidant attachment?", a: "A sudden sharp insult or withdrawal designed to test if you will panic, chase, or collapse.", bundle: 'free' },
+        { q: "How should you respond when she pulls away into cold distance?", a: "Remain warm and unbothered: 'Enjoy your quiet space, Love. I'm in my study.'", bundle: 'free' },
+        { q: "Why is chasing during avoidant withdrawal a fatal mistake?", a: "Because chasing validates avoidant fear, projects needy dependency, and destroys attraction.", bundle: 'free' },
+        { q: "How long should you remain steady during an avoidant distance phase?", a: "Indefinitely; maintain your routines and remain available without needy hovering.", bundle: 'free' },
+        { q: "What internal fear drives fearful-avoidant protest behaviors?", a: "Fear of engulfment combined with fear of abandonment; she tests for unshakeable stability.", bundle: 'pro' },
+        { q: "How do you handle sharp provoke-and-retreat triggers after deep intimacy?", a: "Look into her eyes calmly: 'I don't play fight games. I'm right here.'", bundle: 'pro' },
+        { q: "What does an unshakeable center communicate to an avoidant partner?", a: "That connection is safe, stable, and cannot be destroyed by her emotional weather.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Holding Frame Under Mass Shame",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Holding Frame Under Mass Shame\"?", a: "Standing unswayable against public shaming, social mobbing, and family pressure.", bundle: 'free' },
+        { q: "How do you respond when her friends gang up to attack your traditional standards?", a: "Hold steady eye contact, smile calmly: 'I lead my household by proven principles. It works.'", bundle: 'free' },
+        { q: "Why do social groups use shaming tactics against strong men?", a: "To force compliance, enforce group conformity, and test if your frame can be broken.", bundle: 'free' },
+        { q: "What should you do when relatives publicly criticize your financial boundaries?", a: "State matter-of-factly: 'Our capital is managed by real numbers, not public opinion.'", bundle: 'free' },
+        { q: "Why is offering a submissive public apology a critical error?", a: "Because it surrenders your authority to the crowd and destroys your partner's respect for you.", bundle: 'free' },
+        { q: "How do you handle mobbing attempts inside your own living room?", a: "State firmly: 'I don't conduct crowd trials in my home. My decision is locked.'", bundle: 'pro' },
+        { q: "What physical cues maintain frame under social shaming?", a: "Tall posture, unhurried speech, steady eye contact, and relaxed facial muscles.", bundle: 'pro' },
+        { q: "How does holding frame under mass shame elevate your status?", a: "It proves that your authority is rooted internally and cannot be shaken by external noise.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Leading to New Territory",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Leading to New Territory\"?", a: "Pulling her into your frame and leading her into higher lifestyle and intimacy standards.", bundle: 'free' },
+        { q: "Why is proactive leadership necessary in long-term relationships?", a: "Because without proactive vision, relationships drift into passive stagnation and boredom.", bundle: 'free' },
+        { q: "How do you introduce a new family fitness and nutrition program?", a: "State clearly: 'We are upgrading our household nutrition starting today. Here is our menu.'", bundle: 'free' },
+        { q: "How do you lead her into deeper emotional and romantic intimacy?", a: "Take her hand firmly: 'We are building deeper passion together. Follow my lead.'", bundle: 'free' },
+        { q: "What should you do when she shows initial resistance to new territory?", a: "Hold your vision calmly, execute the standard yourself, and invite her in with warmth.", bundle: 'free' },
+        { q: "How do you handle major life trajectory choices like relocating the family?", a: "Analyze the trajectory thoroughly, make the executive call, and present the clear plan.", bundle: 'pro' },
+        { q: "Why does expanding relationship territory maintain sexual attraction?", a: "Because confident masculine vision provides direction, excitement, and ongoing growth.", bundle: 'pro' },
+        { q: "What is the relationship between digital detox rules and domestic depth?", a: "Eliminating screen distractions reclaims evening presence and fosters real connection.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n• **Maintaining Frame and Amusements** — frame control, amused mastery, or leading to new territory\n• **Navigating Attachment and Shame** — avoidant cycles, mass shaming, or frame audits\n• **Leading Frame Dynamics** — new territory, frame control, amused mastery, or avoidant cycles\n\nOne question decides nearly all of it: what type of frame invasion, emotional pressure, or leadership call are you making?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Maintaining Frame and Amusements, Navigating Attachment and Shame, and Leading Frame Dynamics.", bundle: 'pro' },
+        { q: "What is the focus of \"Maintaining Frame and Amusements\"?", a: "Holding frame control, absorbing complaints with light amusement, and leading forward.", bundle: 'pro' },
+        { q: "What is the focus of \"Navigating Attachment and Shame\"?", a: "Neutralizing avoidant protest behaviors, standing firm against social mobs, and frame audits.", bundle: 'pro' },
+        { q: "What does \"Leading Frame Dynamics\" make you choose between?", a: "New territory, frame control, amused mastery, and avoidant cycle navigation.", bundle: 'pro' },
+        { q: "When do you choose \"Amused Mastery on Complaints\"?", a: "When facing daily low-level nitpicking, minor weather grumbles, and domestic friction.", bundle: 'pro' },
+        { q: "When do you choose \"Holding Frame Under Mass Shame\"?", a: "When facing public attacks, social group mobbing, or relative guilt trials.", bundle: 'pro' },
+        { q: "Why is \"Auditing and Controlling Frame\" essential across all Collections?", a: "Because keeping your standards as the active reality grounds every tactical move.", bundle: 'pro' },
+        { q: "What is the primary trap in Collections?", a: "Entering inferior frames, reacting angrily to nitpicking, or caving to crowd mobbing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n1. **The Frame Control Loop** — Auditing and Controlling Frame → Amused Mastery on Complaints → Leading to New Territory\n2. **The Avoidant Cycle Reset** — Managing Avoidant Cycles → Auditing and Controlling Frame → Leading to New Territory\n3. **The Mass Shame Disarm** — Holding Frame Under Mass Shame → Auditing and Controlling Frame → Amused Mastery on Complaints\n\nIn each sequence, the order of the steps is what maintains unshakeable authority.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Frame Control Loop, The Avoidant Cycle Reset, and The Mass Shame Disarm.", bundle: 'pro' },
+        { q: "What is the order in \"The Frame Control Loop\"?", a: "Auditing and Controlling Frame, then Amused Mastery on Complaints, and finally Leading to New Territory.", bundle: 'pro' },
+        { q: "Why does \"The Frame Control Loop\" start with \"Auditing and Controlling Frame\"?", a: "Because asserting frame control precedes defusing complaints and leading forward.", bundle: 'pro' },
+        { q: "What is the order in \"The Avoidant Cycle Reset\"?", a: "Managing Avoidant Cycles, then Auditing and Controlling Frame, and finally Leading to New Territory.", bundle: 'pro' },
+        { q: "Why does \"The Avoidant Cycle Reset\" place \"Managing Avoidant Cycles\" first?", a: "Because absorbing avoidant withdrawal cleanly stabilizes emotional testing before locking frame.", bundle: 'pro' },
+        { q: "What is the order in \"The Mass Shame Disarm\"?", a: "Holding Frame Under Mass Shame, then Auditing and Controlling Frame, and finally Amused Mastery on Complaints.", bundle: 'pro' },
+        { q: "What does \"The Mass Shame Disarm\" train you to do?", a: "Stand firm against mobs, lock domestic frame, and disarm remaining social friction with humor.", bundle: 'pro' },
+        { q: "Why do all three sequences rely on \"Leading to New Territory\" or \"Amused Mastery\"?", a: "Because unshakeable frame must culminate in positive leadership or unbothered composure.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n• **Frame Audits and Invasions** — handling attempts to reframe actions as selfish or negotiate limits\n• **Chronic Complaining and Friction** — deflecting daily nitpicking with light amusement\n• **Fearful-Avoidant Protest Behaviors** — navigating closeness-distance cycles without chasing\n• **Mass Shaming and Social Pressure** — standing unswayable against public mobbing\n• **Resistance to Leadership** — overcoming hesitation and leading into new territory\n\nEach category organizes by problem type rather than strategy.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Frame Audits and Invasions, Chronic Complaining and Friction, Fearful-Avoidant Protest Behaviors, Mass Shaming and Social Pressure, and Resistance to Leadership.", bundle: 'pro' },
+        { q: "How do you handle \"Frame Audits and Invasions\"?", a: "By using Auditing and Controlling Frame to reassert your standards as governing law.", bundle: 'pro' },
+        { q: "What is the core move during \"Chronic Complaining and Friction\"?", a: "Using Amused Mastery on Complaints to absorb nitpicking with warm, unbothered humor.", bundle: 'pro' },
+        { q: "How do you resolve \"Fearful-Avoidant Protest Behaviors\"?", a: "By using Managing Avoidant Cycles to remain steady during emotional distance without chasing.", bundle: 'pro' },
+        { q: "How do you handle \"Mass Shaming and Social Pressure\"?", a: "By using Holding Frame Under Mass Shame to stand firm against crowd mobbing.", bundle: 'pro' },
+        { q: "How do you resolve \"Resistance to Leadership\"?", a: "By using Leading to New Territory to invite her into higher standards with confident vision.", bundle: 'pro' },
+        { q: "What is your partner really testing in these challenges?", a: "Whether your masculine frame is authentic, unshakeable, and capable of protective leadership.", bundle: 'pro' },
+        { q: "Why is chasing during avoidant distance a fatal mistake?", a: "Because chasing surrenders frame, validates emotional panic, and destroys attraction.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The five mindsets you practise in this pack:\n• **Frame** — I am the origin of frame; I do not enter inferior frames\n• **Complaints** — daily complaints are minor weather; absorb with amused mastery\n• **Attachment** — avoidant cycles reflect internal fear; remain steady and unshakeable\n• **Social Pressure** — core standards override crowd pressure; stand unswayable\n• **Leadership** — proactive vision expands the container; lead into new territory\n\nIn every one, the belief that gets in the way feels like safety or empathy from the inside.",
+      cards: [
+        { q: "What are the five mindsets in this pack?", a: "Frame, Complaints, Attachment, Social Pressure, and Leadership.", bundle: 'pro' },
+        { q: "What does \"Frame\" teach you?", a: "That entering or negotiating within an inferior frame surrenders authority and creates chaos.", bundle: 'pro' },
+        { q: "What is the core truth behind \"Complaints\"?", a: "That daily nitpicking is minor weather to absorb with warm, unbothered amusement.", bundle: 'pro' },
+        { q: "What is the core block in the \"Attachment\" mindset?", a: "Believing that emotional withdrawal requires needy chasing rather than unshakeable composure.", bundle: 'pro' },
+        { q: "What is the core block in the \"Social Pressure\" mindset?", a: "Believing that public opinion overrides internal standards and requires submissive apologies.", bundle: 'pro' },
+        { q: "What is the primary lesson of the \"Leadership\" mindset?", a: "That proactive masculine vision expands the domestic container and prevents stagnation.", bundle: 'pro' },
+        { q: "What is the definition of an unshakeable frame?", a: "An internal anchor of standards that remains unmoved by nitpicking, mobs, or emotional distance.", bundle: 'pro' },
+        { q: "What is the ultimate goal of these five mindsets?", a: "To establish absolute frame authority, defuse friction, and lead your home into higher territory.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Attachment Styles in Red Pill",
+      description: "The Attachment Styles taxonomy from Rian Stone's Praxeology Volume 4: Secure, Anxious, Avoidant, and Fearful-Avoidant mechanics.\n• **Secure Attachment** — comfortable with intimacy and independence, grounded in frame\n• **Anxious-Preoccupied** — fear of abandonment leading to reassurance-seeking and protest behavior\n• **Dismissive-Avoidant** — independence prioritized over intimacy, defensive self-reliance\n• **Fearful-Avoidant (Disorganized)** — high anxiety and high avoidance; provoke-and-retreat cycles\n• **SMV Influence on Attachment** — how relative Sexual Market Value shifts attachment dynamics\n\nUnderstanding attachment mechanics allows a man to remain unshakeable during closeness-distance cycles.",
+      cards: [
+        { q: "What are the four primary attachment styles in relationship psychology?", a: "Secure, Anxious-Preoccupied, Dismissive-Avoidant, and Fearful-Avoidant (Disorganized).", bundle: 'pro' },
+        { q: "What characterizes the Fearful-Avoidant (Disorganized) attachment style?", a: "High anxiety and high avoidance, creating chaotic provoke-and-retreat cycles when intimacy deepens.", bundle: 'pro' },
+        { q: "How does relative Sexual Market Value (SMV) impact attachment behaviors?", a: "A higher relative SMV builds leverage, reducing anxious protest behaviors and reinforcing frame stability.", bundle: 'pro' },
+        { q: "What triggers a Fearful-Avoidant partner's sudden emotional withdrawal?", a: "Deep emotional intimacy triggers engulfment anxiety, prompting a sudden retreat to test stability.", bundle: 'pro' },
+        { q: "Why does an anxious partner engage in persistent reassurance-seeking?", a: "Fear of abandonment drives needy testing to confirm that the masculine frame remains intact.", bundle: 'pro' },
+        { q: "How should a masculine leader respond to anxious protest behaviors?", a: "By offering unshakeable composure, clear boundaries, and calm presence without needy chasing.", bundle: 'pro' },
+        { q: "Why is a Dismissive-Avoidant style neutralized by an unbothered masculine frame?", a: "Because an unbothered frame respects space without panic, preventing emotional escalation.", bundle: 'pro' },
+        { q: "How does mastering attachment dynamics restore domestic peace?", a: "By shifting focus from reactive emotional panic to objective, high-status frame leadership.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

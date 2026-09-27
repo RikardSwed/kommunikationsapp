@@ -9300,4 +9300,284 @@ const mindsetCollections = {
       ]
     },
   ],
+  praxbest1: [
+    {
+      name: "Domestic Leadership",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I take charge of household routines and schedules, she will feel controlled and resent my leadership.\"\n\nThe belief that proactive domestic initiative is bossy or overbearing rather than protective leadership.\n\n**Why it feels right:** staying passive feels safer and avoids potential pushback over choices.\n\n**What it costs:** frame, forcing her into the exhausted manager role while you become a dependent.\n• **Domestic Leadership** — understanding that proactive domestic management creates security and ease\n\nMindset: proactive domestic management creates a smooth, peaceful household container.",
+      inputs: [
+        { q: "I feel hesitant to take full ownership of our household maintenance schedule.", a: "\"Proactive management creates security, not control. I lead our home systems.\"", bundle: 'pro' },
+        { q: "I worry she will think I am being bossy if I set our family weekend schedule.", a: "\"Setting a clear schedule provides direction and ease. I lead with quiet confidence.\"", bundle: 'pro' },
+        { q: "I feel compelled to wait for her to complain about chores before I fix them.", a: "\"Waiting to be managed is weak passivity. I audit and fix household needs proactively.\"", bundle: 'pro' },
+        { q: "I think that managing home logistics is secondary to my outside career work.", a: "\"A tight domestic container supports my career mission. I own both domains.\"", bundle: 'pro' },
+        { q: "I feel uncomfortable taking charge of family budget boundaries directly.", a: "\"Setting financial boundaries protects our family legacy. I lead our capital.\"", bundle: 'pro' },
+        { q: "I worry that taking domestic initiative will create friction over minor details.", a: "\"Clear masculine initiative eliminates chaotic friction. I step forward cleanly.\"", bundle: 'pro' },
+        { q: "I feel tempted to let home organization drift until she brings it up.", a: "\"Drifting domestic standards erode my authority. I maintain high standards daily.\"", bundle: 'pro' },
+        { q: "I think a good partner should just follow orders rather than leading home logistics.", a: "\"Following domestic orders makes me a dependent child. I lead as a mature man.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Decision Making",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I must consult her on every trivial choice and seek total consensus before making any household decision.\"\n\nThe belief that asking permission for minor choices demonstrates respect and equality.\n\n**Why it feels right:** seeking consensus avoids risk and shares responsibility for outcomes.\n\n**What it costs:** authority, overloading her with decision fatigue and projecting internal hesitation.\n• **Decision Making** — recognizing that a grounded leader makes clean calls on his priorities\n\nMindset: my internal vision anchors choices; I don't overload others with trivial calls.",
+      inputs: [
+        { q: "I feel terrified to pick a restaurant without getting ten minutes of her consensus.", a: "\"Seeking endless consensus betrays internal doubt. I make clean, grounded calls.\"", bundle: 'pro' },
+        { q: "I think I need her explicit approval before ordering a basic workshop tool.", a: "\"My decision budget is anchored in my priorities. I execute minor purchases cleanly.\"", bundle: 'pro' },
+        { q: "I worry she will be upset if I choose a vacation hotel without consulting her.", a: "\"Selecting a solid hotel demonstrates decisive leadership. I lock in good options.\"", bundle: 'pro' },
+        { q: "I feel compelled to ask her opinion on every minor wall color sample.", a: "\"Overloading her with minor choices drains her energy. I select the solid option.\"", bundle: 'pro' },
+        { q: "I think that seeking total consensus on every detail makes our relationship equal.", a: "\"Seeking endless consensus creates decision fatigue. I lead with clear choices.\"", bundle: 'pro' },
+        { q: "I feel anxious making a quick call on a family weekend activity.", a: "\"Making swift activity calls provides fun and direction. I execute cleanly.\"", bundle: 'pro' },
+        { q: "I worry that making decisions independently makes me look selfish.", a: "\"Decisive choices anchor a stable home. I decide from my core vision.\"", bundle: 'pro' },
+        { q: "I feel tempted to ask her what I should do whenever a minor problem arises.", a: "\"Asking her to solve my minor problems abdicates authority. I solve items directly.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Overthinking",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I need 100% of the information and five more days of research before I can buy equipment or make a move.\"\n\nThe belief that endless research and analysis paralysis protect you from making mistakes.\n\n**Why it feels right:** research feels productive while delaying the risk of actual execution.\n\n**What it costs:** momentum, causing projects to stall and creating domestic stagnation.\n• **Overthinking** — understanding that good-enough information executed now beats perfect analysis later\n\nMindset: momentum beats perfection; good-enough information executed now builds reality.",
+      inputs: [
+        { q: "I feel compelled to spend three more days reading reviews for a basic tool.", a: "\"Endless research is fear of execution. 80% information is plenty to act.\"", bundle: 'pro' },
+        { q: "I think that over-analyzing a simple home repair project keeps me safe from errors.", a: "\"Analysis paralysis breeds domestic stagnation. I execute now and adjust.\"", bundle: 'pro' },
+        { q: "I feel anxious buying an appliance unless I have read every single manual online.", a: "\"Reading every manual is perfectionist delay. I select the top unit and move.\"", bundle: 'pro' },
+        { q: "I catch myself building complex spreadsheets for basic household purchases.", a: "\"Complex spreadsheets for minor items waste focus. I make decisive calls.\"", bundle: 'pro' },
+        { q: "I worry that making a choice without exhaustive research will lead to regret.", a: "\"Decisive action with good-enough data builds momentum. I choose and execute.\"", bundle: 'pro' },
+        { q: "I feel stuck over-analyzing the absolute perfect time to launch a project.", a: "\"The perfect time is a myth. Launching now builds real-world progress.\"", bundle: 'pro' },
+        { q: "I think that analyzing choices endlessly proves how thorough and smart I am.", a: "\"Thoroughness without execution is useless theory. I value decisive results.\"", bundle: 'pro' },
+        { q: "I feel tempted to delay a simple garage cleanup until I have a perfect plan.", a: "\"A basic plan executed today beats a perfect plan next month. I start now.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Execution",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I need to study more relationship theory and read another book before I can handle household friction.\"\n\nThe belief that academic theory is a prerequisite for taking action in real-time interactions.\n\n**Why it feels right:** reading theory feels safe compared to stepping into live real-time execution.\n\n**What it costs:** capability, trapping you in your head while live opportunities pass by.\n• **Execution** — recognizing that live real-time action builds competence faster than theory\n\nMindset: observe, decide, and act in real time; theory without execution is useless.",
+      inputs: [
+        { q: "I feel like I need to read another chapter of theory before fixing a home issue.", a: "\"Theory without execution is mental masturbation. I step in and act now.\"", bundle: 'pro' },
+        { q: "I hesitate to handle live domestic friction because I haven't memorized every rule.", a: "\"Live execution builds real competence. I observe, decide, and act cleanly.\"", bundle: 'pro' },
+        { q: "I think that retreating into academic study will magically solve my domestic problems.", a: "\"Academic study doesn't fix a broken routine. Direct action creates change.\"", bundle: 'pro' },
+        { q: "I feel anxious acting in real time because I might not execute perfectly.", a: "\"Imperfect action in real time beats perfect theory on the shelf. I step forward.\"", bundle: 'pro' },
+        { q: "I catch myself debating abstract relationship rules instead of doing chores.", a: "\"Debating rules is a weak evasion tactic. I execute my daily priorities.\"", bundle: 'pro' },
+        { q: "I worry that taking action without complete theoretical mastery is dangerous.", a: "\"Real-world experience is the ultimate teacher. I execute cleanly and learn.\"", bundle: 'pro' },
+        { q: "I feel tempted to explain theoretical concepts to her instead of leading.", a: "\"Explaining theory betrays weak posture. I lead cleanly through direct action.\"", bundle: 'pro' },
+        { q: "I think that reading about leadership makes me a proactive leader automatically.", a: "\"Reading about leadership is zero. Executing proactive leadership is everything.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxbest2: [
+    {
+      name: "Contracts",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I am extra nice, do all the chores, and never cause conflict, she will automatically reward me with passion.\"\n\nThe belief that emotional and sexual intimacy can be secretly bought with good behavior and domestic favors.\n\n**Why it feels right:** being nice feels safe, polite, and avoids immediate confrontation.\n\n**What it costs:** frame, breeding covert bitterness when your secret transactions are ignored.\n• **Contracts** — understanding that covert contracts breed resentment and destroy authentic polarity\n\nMindset: covert contracts breed resentment; I state choices and desires directly.",
+      inputs: [
+        { q: "I feel bitter because I did chores all day and she didn't reward me with intimacy.", a: "\"Chores keep the house clean; intimacy requires desire. I stop scoreboarding.\"", bundle: 'pro' },
+        { q: "I think that if I am nice enough, she will eventually guess what I want and give it.", a: "\"Mind-reading is a pleaser fantasy. I state my desires clearly.\"", bundle: 'pro' },
+        { q: "I feel compelled to massage her feet hoping she will feel obligated to touch me.", a: "\"Trading massages for obligation sex kills passion. I offer touch cleanly or pass.\"", bundle: 'pro' },
+        { q: "I worry that if I stop doing extra favors, she will stop loving me.", a: "\"Love bought with covert favors is fake. I operate from self-respect.\"", bundle: 'pro' },
+        { q: "I think I am entitled to praise every time I complete a basic household errand.", a: "\"I execute household tasks as an adult, not to collect gold stars.\"", bundle: 'pro' },
+        { q: "I feel cheated when my secret bargains fail to produce emotional validation.", a: "\"Secret bargains are covert manipulation. I replace trades with plain choices.\"", bundle: 'pro' },
+        { q: "I believe that keeping a mental tally of my good deeds makes me a great husband.", a: "\"Keeping a mental tally breeds bitterness. I burn the scoreboard.\"", bundle: 'pro' },
+        { q: "I want to guilt-trip her by listing everything I did for her this week.", a: "\"Guilt trips destroy remaining attraction. I state my boundaries directly.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Giving",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I should only give gifts, help, or affection if I am guaranteed to get something valuable in return.\"\n\nThe belief that every act of kindness must be part of a transactional trade to protect your investment.\n\n**Why it feels right:** treating interactions as trades protects you from feeling taken advantage of.\n\n**What it costs:** generosity, turning your relationship into a cold, stingy accounting ledger.\n• **Giving** — recognizing that true value is given from abundance with zero attached strings\n\nMindset: true value is given freely from abundance; I attach no hidden demands.",
+      inputs: [
+        { q: "I feel hesitant to buy her flowers because she hasn't been affectionate lately.", a: "\"Gifts are unattached offerings from abundance. I give cleanly or not at all.\"", bundle: 'pro' },
+        { q: "I think I am being a sucker if I fix her car without demanding a favor in return.", a: "\"Fixing her car is an act of leadership. I don't demand transactional payments.\"", bundle: 'pro' },
+        { q: "I worry that giving unconditionally will make her take me for granted.", a: "\"Clean giving combined with firm boundaries commands real respect.\"", bundle: 'pro' },
+        { q: "I feel tempted to remind her of a gift I bought whenever we have an argument.", a: "\"Using past gifts as weapons betrays fake generosity. I leave gifts unattached.\"", bundle: 'pro' },
+        { q: "I think I should withhold small acts of kindness until she earns them.", a: "\"Stinginess ruins relationship warmth. I offer value freely from abundance.\"", bundle: 'pro' },
+        { q: "I feel insecure offering a surprise gift because she might not react with ecstasy.", a: "\"I give gifts for the joy of giving, not to buy a specific reaction.\"", bundle: 'pro' },
+        { q: "I want to calculate the monetary value of my gifts compared to her effort.", a: "\"Accounting ledgers ruin romance. I give generously and hold high standards.\"", bundle: 'pro' },
+        { q: "I worry that unattached giving makes me look weak or overly soft.", a: "\"Abundant giving backed by unswayable frame is high-status strength.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Bargaining",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"In a long marriage, sex is just a domestic currency traded for chores and financial security.\"\n\nThe belief that sexual intimacy is a transactional commodity to be negotiated, traded, or bought.\n\n**Why it feels right:** negotiating sex feels practical and gives you a clear formula to follow.\n\n**What it costs:** desire, destroying sexual polarity and reducing intimacy to duty sex.\n• **Bargaining** — understanding that physical desire cannot be negotiated or bought\n\nMindset: physical desire cannot be bought or negotiated; I refuse transactional intimacy.",
+      inputs: [
+        { q: "I feel tempted to offer a luxury gift in exchange for a night of physical romance.", a: "\"Trading retail goods for sex kills real desire. I refuse transactional deals.\"", bundle: 'pro' },
+        { q: "I think I should accept starfish duty sex because at least it's something.", a: "\"Duty sex destroys polarity and self-respect. I hold out for real passion.\"", bundle: 'pro' },
+        { q: "I feel forced to agree to chore bargains just to get physical affection.", a: "\"Bargaining chores for touch turns sex into a chore. I pass on trades.\"", bundle: 'pro' },
+        { q: "I worry that if I refuse duty sex, we will never have intimacy again.", a: "\"Refusing duty sex forces dynamic shift. I build real polarity.\"", bundle: 'pro' },
+        { q: "I think that negotiating sexual frequency in a contract will fix our bedroom.", a: "\"Contracts cannot command desire. I cultivate authentic masculine frame.\"", bundle: 'pro' },
+        { q: "I feel bitter that she treats intimacy as a reward token for good behavior.", a: "\"I refuse to play the reward token game. I connect where desire is mutual.\"", bundle: 'pro' },
+        { q: "I want to argue that she owes me physical touch because I provide financial security.", a: "\"Financial security doesn't buy desire. I express grounded physical leadership.\"", bundle: 'pro' },
+        { q: "I believe that doing all the housework will turn her on sexually.", a: "\"Doing housework makes a clean house, not desire. I lead with polarity.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Approval",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I need her approval, validation, and permission before I can feel secure in my choices.\"\n\nThe belief that your worth and authority depend on her constant emotional validation and agreement.\n\n**Why it feels right:** getting her approval feels safe, validating, and reduces immediate risk.\n\n**What it costs:** self-worth, trapping you in the Good Guy Trap and projecting internal weakness.\n• **Approval** — recognizing that a grounded man anchors his self-worth internally\n\nMindset: my self-worth is self-anchored; I do not look outward for permission.",
+      inputs: [
+        { q: "I feel anxious and insecure if she doesn't praise my accomplishments.", a: "\"My work is executed to my standard. I don't depend on external praise.\"", bundle: 'pro' },
+        { q: "I catch myself asking her permission for basic personal choices and hobbies.", a: "\"I manage my life responsibly. I stop asking permission like a child.\"", bundle: 'pro' },
+        { q: "I worry that holding a firm boundary will make her disapprove of me.", a: "\"Self-respect comes before seeking approval. I hold my boundary cleanly.\"", bundle: 'pro' },
+        { q: "I feel compelled to apologize whenever she disagrees with my perspective.", a: "\"Disagreeing isn't a fault. I state my perspective cleanly without apologies.\"", bundle: 'pro' },
+        { q: "I think I am a bad husband if I pursue a challenging career goal she dislikes.", a: "\"My career goal builds our family future. I execute my plan with focus.\"", bundle: 'pro' },
+        { q: "I feel terrified of her emotional disapproval during an argument.", a: "\"Her emotional disapproval is her state. I stay centered in my frame.\"", bundle: 'pro' },
+        { q: "I want to change my personal outfit choices because she made a mild critique.", a: "\"My outfit fits my standard cleanly. I trust my own judgment.\"", bundle: 'pro' },
+        { q: "I worry that standing in my own authority will make me look arrogant.", a: "\"Grounded self-anchored authority is quiet strength. I lead my life.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxbest3: [
+    {
+      name: "Explanations",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I must explain, justify, and get her agreement on my boundary before I am allowed to take action.\"\n\nThe belief that taking action requires prior verbal negotiation, justification, and permission.\n\nIt feels right because negotiating beforehand feels polite and avoids immediate conflict over choices.\n\nBut it costs you frame, dragging you into endless pre-action debates where your boundary is negotiated away.\n• **Explanations** — understanding that actions enforce reality; explain briefly after the fact if needed\n\nMindset: actions enforce reality; words after action provide clarity.",
+      inputs: [
+        { q: "I feel compelled to ask her permission before moving my personal workspace.", a: "\"Asking permission to set boundaries betrays weak frame. I execute first.\"", bundle: 'pro' },
+        { q: "I think I must win a two-hour debate before I am allowed to set a spending limit.", a: "\"Debating limits pre-action destroys authority. I set the limit and explain after.\"", bundle: 'pro' },
+        { q: "I feel guilty taking my own car to an event without getting her consensus.", a: "\"Taking my car maintains my schedule. I execute the move cleanly.\"", bundle: 'pro' },
+        { q: "I worry she will be angry if I cancel a joint credit card without prior debate.", a: "\"Canceling unapproved card access protects our budget. I act first.\"", bundle: 'pro' },
+        { q: "I feel forced to justify my workout schedule with long logical speeches.", a: "\"Justifying my workout schedule invites negotiation. I state my block and train.\"", bundle: 'pro' },
+        { q: "I think that explaining my boundaries before taking action shows respect.", a: "\"Pre-action explanations invite permission debates. I enforce frame through action.\"", bundle: 'pro' },
+        { q: "I catch myself writing out long text explanations for why I set a limit.", a: "\"Long text explanations betray internal panic. I state facts briefly after action.\"", bundle: 'pro' },
+        { q: "I worry that acting without her prior agreement makes me a dictator.", a: "\"Taking responsibility for standards is leadership. I lead our container.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Apologies",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I should offer a quick submissive apology whenever she gets emotional or offended by my boundaries.\"\n\nThe belief that apologizing for holding standards restores peace and demonstrates care.\n\nIt feels right because submissive apologies immediately reduce emotional tension and restore temporary quiet.\n\nBut it costs you self-respect, validating her emotional manipulation and eroding your authority.\n• **Apologies** — recognizing that genuine repair requires behavior change, not submissive words\n\nMindset: genuine repair requires behavior change; I reject fake verbal resets.",
+      inputs: [
+        { q: "I feel an automatic urge to apologize when she gets offended by my budget limit.", a: "\"Apologizing for sound boundaries destroys authority. I offer no apology.\"", bundle: 'pro' },
+        { q: "I think offering a submissive apology is a harmless way to keep peace at home.", a: "\"Peace bought with submissive apologies is fake. I hold my grounded ground.\"", bundle: 'pro' },
+        { q: "I feel guilty when she demands I apologize for leaving a party on time.", a: "\"Keeping my departure schedule is clean discipline. I offer no apology.\"", bundle: 'pro' },
+        { q: "I catch myself saying 'sorry' five times a day just to soften minor interactions.", a: "\"Excessive apologies project internal weakness. I state facts plainly.\"", bundle: 'pro' },
+        { q: "I think that accepting a fake superficial apology from her fixes her bad behavior.", a: "\"Superficial apologies don't fix rude conduct. I look for real behavior change.\"", bundle: 'pro' },
+        { q: "I feel forced to apologize when she uses sarcastic guilt trips against me.", a: "\"Sarcastic guilt trips are manipulation tactics. I refuse submissive resets.\"", bundle: 'pro' },
+        { q: "I worry she will view me as cold if I refuse to offer a submissive apology.", a: "\"Refusing submissive apologies demonstrates self-respect. I stand firm.\"", bundle: 'pro' },
+        { q: "I want to apologize just to end an uncomfortable silence in the living room.", a: "\"Silence is fine. I do not buy conversation with fake submissive apologies.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Texting",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I should reply immediately to her emotional text paragraphs and defend my character on messaging.\"\n\nThe belief that digital messaging is an appropriate medium for solving emotional conflict and arguments.\n\nIt feels right because replying immediately feels urgent and gives you a chance to defend yourself fast.\n\nBut it costs you composure, trapping you in digital argument loops where nuance is destroyed.\n• **Texting** — understanding that screens are for logistics; real-world presence is for connection\n\nMindset: screens are for logistics; real-world presence is for connection.",
+      inputs: [
+        { q: "I feel compelled to write a ten-paragraph text response to defend against her attacks.", a: "\"Text essays destroy frame. I state: text is for logistics; home at six.\"", bundle: 'pro' },
+        { q: "I get anxious when she texts 'Are you mad at me???' while I am in a work block.", a: "\"Replying to digital panic feeds drama. I send my logistics update and return to work.\"", bundle: 'pro' },
+        { q: "I think I can solve a complex relationship issue through back-and-forth messaging.", a: "\"Complex issues require real-world presence. I defer talks to face-to-face.\"", bundle: 'pro' },
+        { q: "I feel forced to reply instantly to her passive-aggressive text commentary.", a: "\"Instant digital replies betray needy reactivity. I reply on my schedule.\"", bundle: 'pro' },
+        { q: "I worry she will think I don't care if I restrict texts strictly to times and locations.", a: "\"Logistics-only texting sets clean boundaries. I offer presence in person.\"", bundle: 'pro' },
+        { q: "I catch myself arguing over text while sitting at my office desk.", a: "\"Arguing on screens ruins work focus. I close the text app cleanly.\"", bundle: 'pro' },
+        { q: "I feel tempted to send sarcastic text replies to match her sarcastic messages.", a: "\"Sarcastic texting is low-status drama. I keep digital messages matter-of-fact.\"", bundle: 'pro' },
+        { q: "I worry that ignoring text fights will make the argument worse when I get home.", a: "\"Digital fights escalate drama. Deferring to in-person allows calm talks.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Emotional Arguments",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I must stay and argue for three hours to prove my point when she chases me with emotional drama.\"\n\nThe belief that staying in a circular shouting match demonstrates strength, courage, and commitment.\n\nIt feels right because leaving feels like quitting or admitting defeat in the heat of the moment.\n\nBut it costs you frame, hooking you into emotional theater where logic is useless and composure collapses.\n• **Emotional Arguments** — recognizing that stepping away from emotional chasing maintains masculine authority\n\nMindset: I do not participate in emotional argument loops; I step away cleanly.",
+      inputs: [
+        { q: "I feel forced to stay and argue when she shouts at me in the kitchen.", a: "\"Staying in shouting matches validates chaos. I step out for a walk.\"", bundle: 'pro' },
+        { q: "I think that if I step away from an emotional fight, she wins the argument.", a: "\"Stepping away protects my composure. I refuse emotional argument loops.\"", bundle: 'pro' },
+        { q: "I feel guilty for disengaging from a circular late-night argument at midnight.", a: "\"Late-night arguments are exhaustion traps. I go to sleep and talk tomorrow.\"", bundle: 'pro' },
+        { q: "I get hooked into defending myself when she hurls dramatic insults at my past choices.", a: "\"Defending against insults is DEERing. I offer no defense and take space.\"", bundle: 'pro' },
+        { q: "I worry she will call me a coward if I walk away from a shouting confrontation.", a: "\"Walking away from shouting is mature composure. I converse when tone is calm.\"", bundle: 'pro' },
+        { q: "I catch myself raising my voice to match her loud emotional shouting tone.", a: "\"Matching shouting destroys my frame. I drop volume or exit the room.\"", bundle: 'pro' },
+        { q: "I think that answering her circular logic questions will eventually convince her.", a: "\"Circular logic questions are argument traps. I end the conversation.\"", bundle: 'pro' },
+        { q: "I feel tempted to corner her verbally to prove how illogical her emotional claims are.", a: "\"Cornering verbally is preaching parent theater. I state limits and exit.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxbest4: [
+    {
+      name: "Frame",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I must enter her emotional frame and negotiate within her perspective to prove I am a caring husband.\"\n\nThe belief that accepting her frame is necessary for empathy, connection, and relationship harmony.\n\nIt feels right because entering her frame feels empathetic, polite, and avoids immediate conflict.\n\nBut it costs you authority, abandoning Tomassi's First Iron Law and subordinating your standards to emotional chaos.\n• **Frame** — understanding that a grounded man remains the origin of frame in his household\n\nMindset: I am the origin of frame; I do not enter or negotiate within an inferior frame.",
+      inputs: [
+        { q: "I feel compelled to adopt her anxious frame during a minor household issue.", a: "\"Entering anxious frame betrays leadership. I solve items through facts.\"", bundle: 'pro' },
+        { q: "I think that refusing her frame redefinition makes me a cold and selfish partner.", a: "\"Holding my internal frame provides stability for our home. I stand firm.\"", bundle: 'pro' },
+        { q: "I feel tempted to argue within her emotional premises to prove my point.", a: "\"Arguing within her premises surrenders frame control. I state my reality.\"", bundle: 'pro' },
+        { q: "I worry she will be angry if I refuse to let her dictate our capital limits.", a: "\"Setting capital limits protects our future. I enforce my financial frame.\"", bundle: 'pro' },
+        { q: "I catch myself seeking her permission to maintain my workout schedule.", a: "\"Seeking permission surrenders frame. I execute my physical discipline.\"", bundle: 'pro' },
+        { q: "I think that accepting her emotional frame will buy temporary household peace.", a: "\"Peace bought with frame surrender is fake. I maintain my standards.\"", bundle: 'pro' },
+        { q: "I feel anxious when she claims my unshakeable frame is emotional distance.", a: "\"Unshakeable frame is grounded strength. I converse as an Adult.\"", bundle: 'pro' },
+        { q: "I worry that holding frame control makes me look controlling or arrogant.", a: "\"Grounded frame control is protective leadership. I lead our container.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Complaints",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I need to take every minor complaint seriously, defend myself, and fix her mood immediately.\"\n\nThe belief that daily nitpicking and complaining require logical debate, defensiveness, or mood-fixing.\n\nIt feels right because taking complaints seriously feels attentive and gives you something to solve.\n\nBut it costs you composure, hooking you into low-level emotional noise and rewarding chronic nitpicking.\n• **Complaints** — recognizing that daily nitpicking is minor weather to absorb with amused mastery\n\nMindset: daily complaints are minor weather; I absorb friction with amused mastery.",
+      inputs: [
+        { q: "I feel an automatic urge to defend myself when she nitpicks my driving or parking.", a: "\"Defending against nitpicking betrays insecurity. I respond with amused mastery.\"", bundle: 'pro' },
+        { q: "I think I am responsible for fixing her mood whenever she complains about traffic.", a: "\"Her mood is her internal weather. I absorb complaints with unbothered calm.\"", bundle: 'pro' },
+        { q: "I get irritated when she complains about how I loaded the dishwasher.", a: "\"Getting irritated rewards nitpicking. I deflect minor noise with a smile.\"", bundle: 'pro' },
+        { q: "I feel forced to enter a logical argument over her minor daily grumbles.", a: "\"Logical debates over minor grumbles drain energy. I stay amused and light.\"", bundle: 'pro' },
+        { q: "I worry she will think I don't care if I respond to complaints with humor.", a: "\"Amused humor defuses tension cleanly. I hold a warm, unbothered posture.\"", bundle: 'pro' },
+        { q: "I catch myself over-explaining why I placed groceries on a specific shelf.", a: "\"Over-explaining betrays internal panic. I state facts briefly with a grin.\"", bundle: 'pro' },
+        { q: "I feel temptation to snap back when she complains about minor home details.", a: "\"Snapping back destroys my composure. I meet daily noise with amused ease.\"", bundle: 'pro' },
+        { q: "I think that taking every complaint seriously shows how dedicated I am.", a: "\"Taking every complaint seriously validates drama. I absorb minor weather.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Attachment",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"When she pulls away into cold distance, I must panic, chase her, and fix her emotional state.\"\n\nThe belief that emotional withdrawal requires needy chasing, reassurance-seeking, and panic.\n\nIt feels right because chasing feels urgent and promises to end the uncomfortable distance quickly.\n\nBut it costs you frame, validating her avoidant protest behavior and projecting needy weakness.\n• **Attachment** — understanding that avoidant cycles require an unshakeable, steady center\n\nMindset: avoidant cycles reflect internal anxiety; I stay steady and unshakeable.",
+      inputs: [
+        { q: "I feel intense panic when she pulls back cold after a romantic day together.", a: "\"Panicking validates avoidant testing. I stay warm, steady, and focused.\"", bundle: 'pro' },
+        { q: "I think that if I don't chase her during emotional withdrawal, she will leave.", a: "\"Chasing avoidant withdrawal destroys attraction. I offer a steady center.\"", bundle: 'pro' },
+        { q: "I feel compelled to ask 'Are you okay?' ten times when she acts distant.", a: "\"Asking for reassurance betrays needy fear. I execute my daily priorities.\"", bundle: 'pro' },
+        { q: "I worry that her sudden coldness means I failed as a masculine leader.", a: "\"Avoidant cycles reflect her internal state. My leadership remains solid.\"", bundle: 'pro' },
+        { q: "I catch myself lingering around her doorway waiting for her to talk to me.", a: "\"Hovering betrays weak dependency. I step into my study and execute.\"", bundle: 'pro' },
+        { q: "I think I should apologize for unstated faults just to end her cold silence.", a: "\"Apologizing for fake faults destroys self-respect. I hold my ground.\"", bundle: 'pro' },
+        { q: "I feel anxious when she pushes me away physically to test my stability.", a: "\"Physical pushback is a stability test. I remain unbothered and calm.\"", bundle: 'pro' },
+        { q: "I worry that staying steady during distance will make her feel neglected.", a: "\"Steady composure provides real safety. I remain available without chasing.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Social Pressure",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I must bow to social pressure, public shaming, and family opinion to maintain social standing.\"\n\nThe belief that public approval and avoiding social friction override your core standards.\n\nIt feels right because giving in to crowd pressure avoids immediate social awkwardness and embarrassment.\n\nBut it costs you respect, proving that your frame can be mobbed into submissiveness by external pressure.\n• **Social Pressure** — recognizing that core standards must stand unswayable against public mobs\n\nMindset: my core standards override crowd pressure; I stand unswayable against mobs.",
+      inputs: [
+        { q: "I feel terrified of public awkwardness when relatives attack my financial limits.", a: "\"Public awkwardness passes; capital standards endure. I stand firm.\"", bundle: 'pro' },
+        { q: "I think I should apologize publicly to her friends just to keep social peace.", a: "\"Public apologies for sound boundaries destroy frame. I offer no apology.\"", bundle: 'pro' },
+        { q: "I feel guilty when her family accuses me of being strict or traditional.", a: "\"Leading by proven principles builds a solid home. I hold my standards.\"", bundle: 'pro' },
+        { q: "I worry that standing firm against a social mob makes me look antisocial.", a: "\"Standing firm against mobs demonstrates authority. I hold my frame.\"", bundle: 'pro' },
+        { q: "I catch myself second-guessing my decisions because her friends criticized them.", a: "\"Her friends do not run my household. My internal anchor governs.\"", bundle: 'pro' },
+        { q: "I feel tempted to cave to social pressure during a holiday family dinner.", a: "\"Holiday dinners do not override financial reality. The boundary stands.\"", bundle: 'pro' },
+        { q: "I worry that refusing crowd trials will destroy our family social standing.", a: "\"True social respect belongs to unswayable men. I stand firm.\"", bundle: 'pro' },
+        { q: "I think that agreeing with the public crowd is a price worth paying for quiet.", a: "\"Agreeing with mobs surrenders my authority. I lead by my principles.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Leadership",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I should stay in comfortable routine stagnation rather than risk pushback by leading to new territory.\"\n\nThe belief that avoiding friction is more important than expanding your household container into new vision.\n\nIt feels right because staying in comfort zones avoids temporary resistance and stays safe.\n\nBut it costs you trajectory, allowing your relationship to drift into passive boredom and stagnation.\n• **Leadership** — understanding that proactive leadership expands the household container into new vision\n\nMindset: I expand our container; I lead us into new territory with confident vision.",
+      inputs: [
+        { q: "I feel hesitant to introduce new fitness standards because she might push back.", a: "\"Hesitation surrenders leadership. I introduce high health standards with vision.\"", bundle: 'pro' },
+        { q: "I think that keeping our old comfortable habits is safer than leading forward.", a: "\"Comfortable habits breed domestic drift. I expand our lifestyle territory.\"", bundle: 'pro' },
+        { q: "I worry she will resent me if I decide to relocate our family for trajectory.", a: "\"Proactive moves build our family legacy. I lead us forward with confidence.\"", bundle: 'pro' },
+        { q: "I feel anxious setting new standards for adult communication in our home.", a: "\"Adult communication elevates our relationship. I set the standard cleanly.\"", bundle: 'pro' },
+        { q: "I catch myself waiting for her to suggest lifestyle improvements before I act.", a: "\"Waiting for her to lead abdicates my role. I initiate new territory.\"", bundle: 'pro' },
+        { q: "I think that leading deeper intimacy in the bedroom is too risky to attempt.", a: "\"Leading deep romance is my role. I guide us into passion.\"", bundle: 'pro' },
+        { q: "I worry that introducing new financial asset rules will cause temporary friction.", a: "\"Temporary friction yields permanent wealth. I establish asset rules.\"", bundle: 'pro' },
+        { q: "I feel tempted to let our household drift in passive comfort for another year.", a: "\"Passive drift destroys potential. I lead our home to new heights.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
