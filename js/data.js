@@ -7693,8 +7693,8 @@ const collections = {
   jfisher1: [
     {
       name: "Decoding Intent",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Ask what they meant by it when...",
+      guideBack: "A question about their motive",
       description: "Shift the spotlight from the hostile comment to the speaker's underlying motive by asking direct intent-check questions.\n\n• **Acknowledge the gap** — notice that a hostile remark is a power play, not a factual claim.\n• **Mirror the purpose** — ask questions that make them look at their own intentions.\n• **Put the spotlight back** — let the awkwardness return to the person who threw the comment.\n\nMindset: A disrespectful comment is never about you. It is a projection of their insecurity.",
       inputs: [
         { q: "A colleague makes a snide remark about your project presentation in front of the team.", a: "\"Did you say that to embarrass me?\"", bundle: 'free' },
@@ -7709,8 +7709,8 @@ const collections = {
     },
     {
       name: "Return to Sender",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Make them say it again when...",
+      guideBack: "A request to repeat, or their words echoed",
       description: "Force the speaker to repeat, clarify, or sit in the echo of their own words by refusing to carry their negative energy.\n\n• **Add silence first** — give five to seven seconds of absolute quiet to let their words hang alone.\n• **Ask for repetition** — use flat, neutral requests to make them say it again.\n• **Repeat the echo** — if they double down, repeat their exact words back to them as a question.\n\nMindset: You do not have to catch the ball they threw. Let it drop to the floor.",
       inputs: [
         { q: "Someone uses a highly offensive insult or direct name-calling in a group discussion.", a: "\"I need you to say that again.\"", bundle: 'free' },
@@ -7725,8 +7725,8 @@ const collections = {
     },
     {
       name: "Straightening the Record",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "State your memory and stop when...",
+      guideBack: "Your version, stated as final",
       description: "Neutralize gaslighting and timeline-twisting by calmly stating your perspective as an unarguable fact and closing the door.\n\n• **Claim your memory** — use plain, declarative memory phrases.\n• **Avoid the timeline debate** — do not litigate every step of their twisted history.\n• **Close the door** — state your experience as a period, not an ellipsis.\n\nMindset: They are trying to make you the cat and themselves the laser pointer. Stand still.",
       inputs: [
         { q: "A partner tries to rewrite the agreement you made about weekend chores.", a: "\"I remember things differently. Period.\"", bundle: 'free' },
@@ -7741,8 +7741,8 @@ const collections = {
     },
     {
       name: "Calling Out Subtext",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Name the undertone out loud when...",
+      guideBack: "The undertone, named or asked about",
       description: "Expose passive-aggressive behavior, coldness, or sarcasm by gently bringing the subtext into the open.\n\n• **Name the friction** — voice the tension or coldness as a factual observation.\n• **Ask for reading** — ask if you should read into their brief or cold responses.\n• **Isolate the attitude** — separate their emotional packaging from the actual conversation.\n\nMindset: Passive aggression thrives in the dark. Bring it into the sunlight.",
       inputs: [
         { q: "A colleague sends a brief, unusually cold text message saying \"Fine.\"", a: "\"Should I read into that?\"", bundle: 'free' },
@@ -7757,8 +7757,8 @@ const collections = {
     },
     {
       name: "Naming the Reaction",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Say how you're reacting when...",
+      guideBack: "Your own reaction, named out loud",
       description: "Claim control of your nervous system by voicing your internal emotional or physiological state out loud instead of acting it out.\n\n• **Observe your body** — notice the adrenaline, the tight shoulders, or the urge to snap.\n• **Voice the state** — use \"I can tell\" to claim the feeling without becoming it.\n• **Delay the fight** — pause the conversation if you are too flooded to think analytically.\n\nMindset: When you claim your reaction out loud, you control it. Acting it out loses control.",
       inputs: [
         { q: "You feel your temper rising and your shoulders tightening during a heated debate.", a: "\"I can tell I'm getting defensive.\"", bundle: 'free' },
@@ -7775,8 +7775,8 @@ const collections = {
   jfisher2: [
     {
       name: "Conversational Framing",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Set the topic and goal first when...",
+      guideBack: "A topic, a goal and a check-in",
       description: "Establish a clear, three-part agreement at the start of a difficult conversation to eliminate anxiety and keep the discussion on track.\n\nIt works because like a picture frame, it highlights what is inside and excludes everything else, removing the fear of the unknown.\n\n• \"I'd like to talk about...\"\n• \"I want to walk away from this with...\"\n• \"Does that work for you?\"\n\nThree parts to the frame:\n\n1. Naming the topic plainly — stating the subject without small talk: \"I'd like to talk about the budget for tomorrow.\"\n2. Stating the checkered flag — defining the desired end-state: \"I want to walk away with a clear list of who does what.\"\n3. Inviting buy-in — getting their explicit commitment: \"Does that sound good?\"\n\nMindset: To be clear is to be kind. Save them from guessing where you are going.",
       inputs: [
         { q: "You want to discuss an issue with your partner without causing defensive panic.", a: "\"I'd like to talk about our weekend plans. I want to walk away with a clear schedule so we can both relax. Does that sound good?\"", bundle: 'free' },
@@ -7791,8 +7791,8 @@ const collections = {
     },
     {
       name: "Boundary Consequences",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "State the limit and consequence when...",
+      guideBack: "A limit, and what you'll do next",
       description: "Protect your personal limits and focus with a firm, three-step verbal guardrail: the boundary, the condition, and the follow-through.\n\nIt works because it gives the other person a clear manual on how to interact with you, rather than a remote control to push your buttons.\n\n• \"I don't respond to...\"\n• \"If you continue to...\"\n• \"Then I will...\"\n\nThree steps to set the guardrail:\n\n1. Stating the limit — using \"I\" language instead of accusatory \"you\" statements: \"I don't respond to that volume.\"\n2. Setting the condition — defining the trigger behavior: \"If you continue to raise your voice...\"\n3. Executing the follow-through — stating your action objectively: \"I am going to end this conversation.\"\n\nMindset: A boundary is about what you will do, not a demand to control them.",
       inputs: [
         { q: "A coworker repeatedly calls you by an old nickname you dislike.", a: "\"I don't respond to that name. If you continue to use it, I am going to end the conversation.\"", bundle: 'free' },
@@ -7807,8 +7807,8 @@ const collections = {
     },
     {
       name: "Agreement Checks",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Ask if you must agree when...",
+      guideBack: "A question about the need to agree",
       description: "Neutralize pushy or dominant personalities by calmly questioning whether a shared agreement is actually required.\n\nIt works because it stops the conversational tug-of-war by exposing that their pushy insistence on consensus is unnecessary.\n\n• \"Is this something we have to agree on?\"\n• \"Are you asking me to agree with you?\"\n• \"Do we need to decide this right now?\"\n\nThree ways to check the need for consensus:\n\n1. The agreement query — asking if consensus is required: \"Is this something we need to agree on?\"\n2. The timing check — delaying decision-making: \"Do we have to decide this right now?\"\n3. The role check — separating discussion from decision: \"Are you looking for my agreement, or are we just exploring options?\"\n\nMindset: You don't need their permission to hold your own view.",
       inputs: [
         { q: "A dominant friend insists their political view is the only correct one.", a: "\"Is this something we have to agree on?\"", bundle: 'free' },
@@ -7823,8 +7823,8 @@ const collections = {
     },
     {
       name: "Serving It Neat",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Drop the hedge and say it when...",
+      guideBack: "A clean, confident statement",
       description: "Speak with quiet confidence by eliminating self-undercutting hedges, needless apologies, and watering-down filler words.\n\nIt works because like serving a drink neat, it delivers your message undiluted, showing you trust your own value and authority.\n\n• \"I wanted to check on...\"\n• \"Thank you for waiting.\"\n• \"I have a proposal.\"\n\nThree ways to serve your words neat:\n\n1. Erasing \"just\" — removing hesitation: \"I wanted to check on you\" instead of \"I just wanted to check on you.\"\n2. Replacing apologies with gratitude — converting shame into appreciation: \"Thank you for your patience\" instead of \"Sorry I'm late.\"\n3. Dropping the pre-undercut — refusing to label your own ideas as bad: \"I have a question\" instead of \"This is probably a dumb question, but...\"\n\nMindset: Your self-worth is not measured by how little space you take up.",
       inputs: [
         { q: "You walk into a meeting 5 minutes late and feel the urge to apologize profusely.", a: "\"Thank you for your patience. Let's get started.\"", bundle: 'free' },
@@ -7839,8 +7839,8 @@ const collections = {
     },
     {
       name: "No-Oriented Questions",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Ask for an easy no when...",
+      guideBack: "A question built for a no",
       description: "Dissolving defensive barriers by asking negative-oriented questions that invite a safe and comfortable \"No\" instead of forcing a defensive \"Yes\".\n\nIt works because people love to say \"No\" because it feels protective and maintains their autonomy; once they say \"No\" to the negative, their defenses drop.\n\n• \"Are you against...\"\n• \"Is it unreasonable...\"\n• \"Are you opposed...\"\n\nThree negative-oriented frames:\n\n1. Tone checks — calming a raised volume or heated tone: \"Are you against us talking at a normal volume?\"\n2. Timing checks — proposing schedule or draft reviews: \"Is it unreasonable to ask for another day on this draft?\"\n3. Alignment checks — proposing a collaborative solution: \"Are you opposed to us exploring a different approach?\"\n\nMindset: A \"No\" is not the end of a negotiation. It is the beginning of safety.",
       inputs: [
         { q: "Trying to calm down an angry colleague in a heated meeting.", a: "\"Are you against us talking at a normal volume?\"", bundle: 'free' },
@@ -15074,14 +15074,14 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "Keep your footing when someone is actively trying to push past your boundaries, change the facts, or corner you.\n\n• **Straightening the Record** — use when they twist history or gaslight.\n• **Return to Sender** — use when they launch direct, ugly insults.\n• **Decoding Intent** — use when they use snark to grab hierarchy.\n\nThe crucial choice: are they attacking your character, or are they twisting the facts?\n\nMindset: You do not need to win their agreement to protect your truth. Stand firm.",
       inputs: [
-        { q: "A colleague tries to rewrite the timeline of who made a critical error.", a: "\"I remember things differently. Period.\" [Straightening the Record]", bundle: 'pro' },
-        { q: "Someone uses an aggressive, direct insult to belittle your contribution in a meeting.", a: "\"I need you to say that again.\" [Return to Sender]", bundle: 'pro' },
-        { q: "An associate makes a snide comment about your capabilities in front of peers.", a: "\"Did you say that to embarrass me?\" [Decoding Intent]", bundle: 'pro' },
-        { q: "A partner claims you always agreed to handle all the financial paperwork.", a: "\"My memory of that agreement is different.\" [Straightening the Record]", bundle: 'pro' },
-        { q: "A customer service agent gets highly sarcastic and rude in a face-to-face queue.", a: "\"Can you repeat what you just said?\" [Return to Sender]", bundle: 'pro' },
-        { q: "A neighbor drops a condescending dig about your lifestyle choices.", a: "\"Did you say that to make me feel uncomfortable?\" [Decoding Intent]", bundle: 'pro' },
-        { q: "A coworker insists you promised to cover their weekend shift.", a: "\"I see things differently.\" [Straightening the Record]", bundle: 'pro' },
-        { q: "A pushy relative demands you explain your personal life choices.", a: "\"Did you intend for that to sound passive-aggressive?\" [Decoding Intent]", bundle: 'pro' },
+        { q: "A colleague tries to rewrite the timeline of who made a critical error.", a: "\"I remember things differently. Period.\" [Straightening the Record]", bundle: 'pro', guideBack: "Your version, stated as final" },
+        { q: "Someone uses an aggressive, direct insult to belittle your contribution in a meeting.", a: "\"I need you to say that again.\" [Return to Sender]", bundle: 'pro', guideBack: "A request to repeat, or their words echoed" },
+        { q: "An associate makes a snide comment about your capabilities in front of peers.", a: "\"Did you say that to embarrass me?\" [Decoding Intent]", bundle: 'pro', guideBack: "A question about their motive" },
+        { q: "A partner claims you always agreed to handle all the financial paperwork.", a: "\"My memory of that agreement is different.\" [Straightening the Record]", bundle: 'pro', guideBack: "Your version, stated as final" },
+        { q: "A customer service agent gets highly sarcastic and rude in a face-to-face queue.", a: "\"Can you repeat what you just said?\" [Return to Sender]", bundle: 'pro', guideBack: "A request to repeat, or their words echoed" },
+        { q: "A neighbor drops a condescending dig about your lifestyle choices.", a: "\"Did you say that to make me feel uncomfortable?\" [Decoding Intent]", bundle: 'pro', guideBack: "A question about their motive" },
+        { q: "A coworker insists you promised to cover their weekend shift.", a: "\"I see things differently.\" [Straightening the Record]", bundle: 'pro', guideBack: "Your version, stated as final" },
+        { q: "A pushy relative demands you explain your personal life choices.", a: "\"Did you intend for that to sound passive-aggressive?\" [Decoding Intent]", bundle: 'pro', guideBack: "A question about their motive" },
       ]
     },
     {
@@ -15090,14 +15090,14 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "Manage the rising tension in a high-stress conversation by choosing between exposing subtext or regulating your own nervous system.\n\n• **Calling Out Subtext** — use when they hide their hostility in sarcasm or coldness.\n• **Naming the Reaction** — use when you feel your own triggers and physical tension rising.\n\nThe crucial choice: is the primary obstacle their hidden attitude, or is it your own flooding nervous system?\n\nMindset: Voicing the internal or external reality is the ultimate power move.",
       inputs: [
-        { q: "A friend sends a brief, icy text message after you reschedule a meetup.", a: "\"Should I read into that?\" [Calling Out Subtext]", bundle: 'pro' },
-        { q: "You feel your chest tightening and your temper rising in a heated argument.", a: "\"I can tell I'm getting defensive.\" [Naming the Reaction]", bundle: 'pro' },
-        { q: "A peer makes a sarcastic swipe at your idea and covers it with \"only joking.\"", a: "\"Was that supposed to be funny, or was that the funny kind of joke?\" [Calling Out Subtext]", bundle: 'pro' },
-        { q: "A manager starts shouting and you feel yourself beginning to shut down.", a: "\"I can tell I need a moment to process this before I respond.\" [Naming the Reaction]", bundle: 'pro' },
-        { q: "A relative rolls their eyes and sighs heavily while you are speaking.", a: "\"I'm feeling some friction from you. Is everything okay?\" [Calling Out Subtext]", bundle: 'pro' },
-        { q: "You are about to snap at a difficult client who is pushing your limits.", a: "\"I can tell I'm getting frustrated.\" [Naming the Reaction]", bundle: 'pro' },
-        { q: "A coworker responds with a cold \"Fine\" when you ask for their input.", a: "\"Should I take that as disapproval?\" [Calling Out Subtext]", bundle: 'pro' },
-        { q: "A sibling corners you with a high-conflict topic right before a family event.", a: "\"I can tell I don't have the capacity for this discussion today.\" [Naming the Reaction]", bundle: 'pro' },
+        { q: "A friend sends a brief, icy text message after you reschedule a meetup.", a: "\"Should I read into that?\" [Calling Out Subtext]", bundle: 'pro', guideBack: "The undertone, named or asked about" },
+        { q: "You feel your chest tightening and your temper rising in a heated argument.", a: "\"I can tell I'm getting defensive.\" [Naming the Reaction]", bundle: 'pro', guideBack: "Your own reaction, named out loud" },
+        { q: "A peer makes a sarcastic swipe at your idea and covers it with \"only joking.\"", a: "\"Was that supposed to be funny, or was that the funny kind of joke?\" [Calling Out Subtext]", bundle: 'pro', guideBack: "The undertone, named or asked about" },
+        { q: "A manager starts shouting and you feel yourself beginning to shut down.", a: "\"I can tell I need a moment to process this before I respond.\" [Naming the Reaction]", bundle: 'pro', guideBack: "Your own reaction, named out loud" },
+        { q: "A relative rolls their eyes and sighs heavily while you are speaking.", a: "\"I'm feeling some friction from you. Is everything okay?\" [Calling Out Subtext]", bundle: 'pro', guideBack: "The undertone, named or asked about" },
+        { q: "You are about to snap at a difficult client who is pushing your limits.", a: "\"I can tell I'm getting frustrated.\" [Naming the Reaction]", bundle: 'pro', guideBack: "Your own reaction, named out loud" },
+        { q: "A coworker responds with a cold \"Fine\" when you ask for their input.", a: "\"Should I take that as disapproval?\" [Calling Out Subtext]", bundle: 'pro', guideBack: "The undertone, named or asked about" },
+        { q: "A sibling corners you with a high-conflict topic right before a family event.", a: "\"I can tell I don't have the capacity for this discussion today.\" [Naming the Reaction]", bundle: 'pro', guideBack: "Your own reaction, named out loud" },
       ]
     },
     {
@@ -15106,14 +15106,14 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "All five pressure-defense strategies mixed together. The ultimate test of real-time conversational control.\n\n• **Decoding Intent** · **Return to Sender** · **Straightening the Record** · **Calling Out Subtext** · **Naming the Reaction**\n\nThe crucial choice: identify what the other person just threw at you, or what your body is doing, and apply the single matching shield.\n\nMindset: When you control your pace and your nervous system, you control the conversation.",
       inputs: [
-        { q: "A colleague makes a snide remark about your project delivery in front of the group.", a: "\"Did you say that to embarrass me?\" [Decoding Intent]", bundle: 'pro' },
-        { q: "Someone uses a highly offensive name or direct insult in a group talk.", a: "\"I need you to say that again.\" [Return to Sender]", bundle: 'pro' },
-        { q: "A coworker tries to rewrite the agreement you made about sharing client leads.", a: "\"I remember things differently. Period.\" [Straightening the Record]", bundle: 'pro' },
-        { q: "A friend sends a brief, cold message like \"Whatever.\"", a: "\"Should I read into that?\" [Calling Out Subtext]", bundle: 'pro' },
-        { q: "You feel your temper rising and your shoulders tightening during a tough meeting.", a: "\"I can tell I'm getting defensive.\" [Naming the Reaction]", bundle: 'pro' },
-        { q: "An acquaintance makes a patronizing comment about your experience.", a: "\"Did you mean for that to sound rude?\" [Decoding Intent]", bundle: 'pro' },
-        { q: "A supplier tries to deny a verbal discount they promised last week.", a: "\"I remember things differently.\" [Straightening the Record]", bundle: 'pro' },
-        { q: "A coworker rolls their eyes while you are explaining your proposal.", a: "\"It looks like you have some thoughts on this. Would you like to share?\" [Calling Out Subtext]", bundle: 'pro' },
+        { q: "A colleague makes a snide remark about your project delivery in front of the group.", a: "\"Did you say that to embarrass me?\" [Decoding Intent]", bundle: 'pro', guideBack: "A question about their motive" },
+        { q: "Someone uses a highly offensive name or direct insult in a group talk.", a: "\"I need you to say that again.\" [Return to Sender]", bundle: 'pro', guideBack: "A request to repeat, or their words echoed" },
+        { q: "A coworker tries to rewrite the agreement you made about sharing client leads.", a: "\"I remember things differently. Period.\" [Straightening the Record]", bundle: 'pro', guideBack: "Your version, stated as final" },
+        { q: "A friend sends a brief, cold message like \"Whatever.\"", a: "\"Should I read into that?\" [Calling Out Subtext]", bundle: 'pro', guideBack: "The undertone, named or asked about" },
+        { q: "You feel your temper rising and your shoulders tightening during a tough meeting.", a: "\"I can tell I'm getting defensive.\" [Naming the Reaction]", bundle: 'pro', guideBack: "Your own reaction, named out loud" },
+        { q: "An acquaintance makes a patronizing comment about your experience.", a: "\"Did you mean for that to sound rude?\" [Decoding Intent]", bundle: 'pro', guideBack: "A question about their motive" },
+        { q: "A supplier tries to deny a verbal discount they promised last week.", a: "\"I remember things differently.\" [Straightening the Record]", bundle: 'pro', guideBack: "Your version, stated as final" },
+        { q: "A coworker rolls their eyes while you are explaining your proposal.", a: "\"It looks like you have some thoughts on this. Would you like to share?\" [Calling Out Subtext]", bundle: 'pro', guideBack: "The undertone, named or asked about" },
       ]
     },
   ],
@@ -15124,14 +15124,14 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "Choose between **Conversational Framing**, **Agreement Checks**, and **No-Oriented Questions** to establish immediate parity and remove anxiety at the start of a talk.\n\n• **Conversational Framing** — use when you need to set a clear topic, checkered flag, and get buy-in before you begin.\n• **Agreement Checks** — use when a pushy person behaves as though consensus is mandatory.\n• **No-Oriented Questions** — use when you need to invite a safe \"No\" to lower their defenses.\n\nThe crucial choice: are you setting the terms for a new discussion, or are you neutralizing someone who is already pushing you?\n\nMindset: Establish the rules of engagement before you enter the arena.",
       inputs: [
-        { q: "You want to discuss a repeated performance issue with a junior team member.", a: "\"I want to talk about your recent drafts. I want to walk away with a plan to get things back on track. Does that work?\" [Conversational Framing]", bundle: 'pro' },
-        { q: "A dominant colleague insists on consensus before ending a simple meeting.", a: "\"Is this something we need to agree on, or can we just note the different approaches?\" [Agreement Checks]", bundle: 'pro' },
-        { q: "You want to propose a schedule change to a busy manager.", a: "\"Is it unreasonable to ask us to reschedule our weekly sync?\" [No-Oriented Questions]", bundle: 'pro' },
-        { q: "You want to discuss a fairer division of household chores with your spouse.", a: "\"I'd like to talk about our evening routine. I want to walk away with a clear division of the kitchen duties. Sound good?\" [Conversational Framing]", bundle: 'pro' },
-        { q: "A pushy seller pressures you to agree to a financing deal on the spot.", a: "\"Do we have to decide on the financing right now?\" [Agreement Checks]", bundle: 'pro' },
-        { q: "You need to ask a coworker to review a draft before the weekend.", a: "\"Is it unreasonable to ask for a quick look at this before Friday?\" [No-Oriented Questions]", bundle: 'pro' },
-        { q: "A coworker tries to dictate who takes the holiday shift.", a: "\"Are you looking for my agreement, or are you just telling me your preference?\" [Agreement Checks]", bundle: 'pro' },
-        { q: "You want to propose a boundary check on late-night work texts to your team.", a: "\"Are you opposed to us holding all text messages until tomorrow morning?\" [No-Oriented Questions]", bundle: 'pro' },
+        { q: "You want to discuss a repeated performance issue with a junior team member.", a: "\"I want to talk about your recent drafts. I want to walk away with a plan to get things back on track. Does that work?\" [Conversational Framing]", bundle: 'pro', guideBack: "A topic, a goal and a check-in" },
+        { q: "A dominant colleague insists on consensus before ending a simple meeting.", a: "\"Is this something we need to agree on, or can we just note the different approaches?\" [Agreement Checks]", bundle: 'pro', guideBack: "A question about the need to agree" },
+        { q: "You want to propose a schedule change to a busy manager.", a: "\"Is it unreasonable to ask us to reschedule our weekly sync?\" [No-Oriented Questions]", bundle: 'pro', guideBack: "A question built for a no" },
+        { q: "You want to discuss a fairer division of household chores with your spouse.", a: "\"I'd like to talk about our evening routine. I want to walk away with a clear division of the kitchen duties. Sound good?\" [Conversational Framing]", bundle: 'pro', guideBack: "A topic, a goal and a check-in" },
+        { q: "A pushy seller pressures you to agree to a financing deal on the spot.", a: "\"Do we have to decide on the financing right now?\" [Agreement Checks]", bundle: 'pro', guideBack: "A question about the need to agree" },
+        { q: "You need to ask a coworker to review a draft before the weekend.", a: "\"Is it unreasonable to ask for a quick look at this before Friday?\" [No-Oriented Questions]", bundle: 'pro', guideBack: "A question built for a no" },
+        { q: "A coworker tries to dictate who takes the holiday shift.", a: "\"Are you looking for my agreement, or are you just telling me your preference?\" [Agreement Checks]", bundle: 'pro', guideBack: "A question about the need to agree" },
+        { q: "You want to propose a boundary check on late-night work texts to your team.", a: "\"Are you opposed to us holding all text messages until tomorrow morning?\" [No-Oriented Questions]", bundle: 'pro', guideBack: "A question built for a no" },
       ]
     },
     {
@@ -15140,14 +15140,14 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "Choose between **Boundary Consequences**, **Serving It Neat**, and **No-Oriented Questions** when someone begins to overreach or pressure you.\n\n• **Boundary Consequences** — use when a clear limit must be protected with an objective follow-through.\n• **Serving It Neat** — use when you are about to water down your terms with apologies or hedges.\n• **No-Oriented Questions** — use when a gentle but firm negative query is needed to re-establish safety.\n\nThe crucial choice: is this a moment to enforce a consequence, or is it a moment to stop undercutting your own authority?\n\nMindset: Speak with quiet authority. If you water down your terms, they will treat them like suggestions.",
       inputs: [
-        { q: "An avoidant partner keeps rescheduling important talks.", a: "\"I'm not willing to be in a relationship that avoids difficult conversations. If this gets rescheduled again, I will re-evaluate my role.\" [Boundary Consequences]", bundle: 'pro' },
-        { q: "You are telling a peer about your availability and feel the urge to say \"I'm just really busy\".", a: "\"I don't have the capacity for that task right now.\" [Serving It Neat]", bundle: 'pro' },
-        { q: "You need to ask your boss if you can skip a non-essential meeting to finish a high-priority report.", a: "\"Is it unreasonable for me to skip the sync today to finish the Q3 draft?\" [No-Oriented Questions]", bundle: 'pro' },
-        { q: "Someone is yelling at you in a heated disagreement.", a: "\"I don't respond to that volume. If you want to talk, we do it in a normal voice, or I am walking away.\" [Boundary Consequences]", bundle: 'pro' },
-        { q: "You walk walk up to a colleague's desk to ask for help and want to start with \"sorry to bother you\".", a: "\"I want to ask you about the Q3 numbers when you have a second.\" [Serving It Neat]", bundle: 'pro' },
-        { q: "You want to propose a different restaurant choice to a pushy group of friends.", a: "\"Are you against us trying the new Italian spot instead?\" [No-Oriented Questions]", bundle: 'pro' },
-        { q: "You want to disagree with your boss's strategy and feel the urge to say \"I'm probably wrong, but\".", a: "\"I see a different approach that might save us some time.\" [Serving It Neat]", bundle: 'pro' },
-        { q: "A client repeatedly calls you after 9 PM about minor issues.", a: "\"I don't answer work calls after 6 PM. If you call after hours, I will review the message on Monday morning.\" [Boundary Consequences]", bundle: 'pro' },
+        { q: "An avoidant partner keeps rescheduling important talks.", a: "\"I'm not willing to be in a relationship that avoids difficult conversations. If this gets rescheduled again, I will re-evaluate my role.\" [Boundary Consequences]", bundle: 'pro', guideBack: "A limit, and what you'll do next" },
+        { q: "You are telling a peer about your availability and feel the urge to say \"I'm just really busy\".", a: "\"I don't have the capacity for that task right now.\" [Serving It Neat]", bundle: 'pro', guideBack: "A clean, confident statement" },
+        { q: "You need to ask your boss if you can skip a non-essential meeting to finish a high-priority report.", a: "\"Is it unreasonable for me to skip the sync today to finish the Q3 draft?\" [No-Oriented Questions]", bundle: 'pro', guideBack: "A question built for a no" },
+        { q: "Someone is yelling at you in a heated disagreement.", a: "\"I don't respond to that volume. If you want to talk, we do it in a normal voice, or I am walking away.\" [Boundary Consequences]", bundle: 'pro', guideBack: "A limit, and what you'll do next" },
+        { q: "You walk walk up to a colleague's desk to ask for help and want to start with \"sorry to bother you\".", a: "\"I want to ask you about the Q3 numbers when you have a second.\" [Serving It Neat]", bundle: 'pro', guideBack: "A clean, confident statement" },
+        { q: "You want to propose a different restaurant choice to a pushy group of friends.", a: "\"Are you against us trying the new Italian spot instead?\" [No-Oriented Questions]", bundle: 'pro', guideBack: "A question built for a no" },
+        { q: "You want to disagree with your boss's strategy and feel the urge to say \"I'm probably wrong, but\".", a: "\"I see a different approach that might save us some time.\" [Serving It Neat]", bundle: 'pro', guideBack: "A clean, confident statement" },
+        { q: "A client repeatedly calls you after 9 PM about minor issues.", a: "\"I don't answer work calls after 6 PM. If you call after hours, I will review the message on Monday morning.\" [Boundary Consequences]", bundle: 'pro', guideBack: "A limit, and what you'll do next" },
       ]
     },
     {
@@ -15156,14 +15156,14 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "All five assertive connection strategies mixed together. The ultimate test of real-time conversational parity.\n\n• **Conversational Framing** · **Boundary Consequences** · **Agreement Checks** · **Serving It Neat** · **No-Oriented Questions**\n\nThe crucial choice: identify the nature of their overreach or the opportunity for parity, and apply the single matching response.\n\nMindset: You control your pace, your boundaries, and your parity.",
       inputs: [
-        { q: "You want to discuss our weekend plans and want to set a clear contract.", a: "\"I'd like to talk about our weekend plans. I want to walk away with a clear schedule so we can both relax. Does that sound good?\" [Conversational Framing]", bundle: 'pro' },
-        { q: "A coworker repeatedly calls you by an old nickname you dislike.", a: "\"I don't respond to that name. If you continue to use it, I am going to end the conversation.\" [Boundary Consequences]", bundle: 'pro' },
-        { q: "A dominant friend insists their political view is the only correct one.", a: "\"Is this something we have to agree on?\" [Agreement Checks]", bundle: 'pro' },
-        { q: "You walk into a meeting 5 minutes late and feel the urge to apologize profusely.", a: "\"Thank you for your patience. Let's get started.\" [Serving It Neat]", bundle: 'pro' },
-        { q: "Trying to calm down an angry colleague in a heated meeting.", a: "\"Are you against us talking at a normal volume?\" [No-Oriented Questions]", bundle: 'pro' },
-        { q: "A client asks if you can do a massive favor on your day off and you want to avoid a long excuse.", a: "\"I can't make that work this weekend. I can look at it on Monday.\" [Serving It Neat]", bundle: 'pro' },
-        { q: "A pushy colleague argues intensely about a minor design decision.", a: "\"Are you asking me to agree with you, or are we just discussing options?\" [Agreement Checks]", bundle: 'pro' },
-        { q: "You want to discuss a sensitive inheritance topic with a sibling and need a clear contract.", a: "\"I'd like to talk about the estate paperwork. I want to leave with an agreed list of next steps. Does that work for you?\" [Conversational Framing]", bundle: 'pro' },
+        { q: "You want to discuss our weekend plans and want to set a clear contract.", a: "\"I'd like to talk about our weekend plans. I want to walk away with a clear schedule so we can both relax. Does that sound good?\" [Conversational Framing]", bundle: 'pro', guideBack: "A topic, a goal and a check-in" },
+        { q: "A coworker repeatedly calls you by an old nickname you dislike.", a: "\"I don't respond to that name. If you continue to use it, I am going to end the conversation.\" [Boundary Consequences]", bundle: 'pro', guideBack: "A limit, and what you'll do next" },
+        { q: "A dominant friend insists their political view is the only correct one.", a: "\"Is this something we have to agree on?\" [Agreement Checks]", bundle: 'pro', guideBack: "A question about the need to agree" },
+        { q: "You walk into a meeting 5 minutes late and feel the urge to apologize profusely.", a: "\"Thank you for your patience. Let's get started.\" [Serving It Neat]", bundle: 'pro', guideBack: "A clean, confident statement" },
+        { q: "Trying to calm down an angry colleague in a heated meeting.", a: "\"Are you against us talking at a normal volume?\" [No-Oriented Questions]", bundle: 'pro', guideBack: "A question built for a no" },
+        { q: "A client asks if you can do a massive favor on your day off and you want to avoid a long excuse.", a: "\"I can't make that work this weekend. I can look at it on Monday.\" [Serving It Neat]", bundle: 'pro', guideBack: "A clean, confident statement" },
+        { q: "A pushy colleague argues intensely about a minor design decision.", a: "\"Are you asking me to agree with you, or are we just discussing options?\" [Agreement Checks]", bundle: 'pro', guideBack: "A question about the need to agree" },
+        { q: "You want to discuss a sensitive inheritance topic with a sibling and need a clear contract.", a: "\"I'd like to talk about the estate paperwork. I want to leave with an agreed list of next steps. Does that work for you?\" [Conversational Framing]", bundle: 'pro', guideBack: "A topic, a goal and a check-in" },
       ]
     },
   ],
