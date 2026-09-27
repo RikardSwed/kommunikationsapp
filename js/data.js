@@ -4159,8 +4159,8 @@ const collections = {
   parenting1: [
     {
       name: "Connection Before Correction",
-      guideFront: "Connect with the heart before...",
-      guideBack: "A warm point of contact.",
+      guideFront: "Connect with the heart first when...",
+      guideBack: "A warm point of contact",
       description: "Establishing a moment of warmth or physical presence before giving instructions or addressing behavior.\nIt works because a child needs to feel that you are \"with them\" and that the relationship is safe before they can receptively follow your lead.\n\n• \"Hey honey, I missed you today. Give me a hug.\"\n• \"I see you’re working really hard on that drawing.\"\n• \"How was your day before we talk about the shoes?\"\n\nUnderlying Categories:\n1. Re-entry — connecting after a period of separation (school, work, or sleep).\n2. High-Stress Transitions — establishing safety before moving to a new task.\n\nMindset: Connect to the heart before you direct the hand.",
       inputs: [
         { q: "Your child just walked in from school and their room is a mess.", a: "\"Hey Love, welcome home! How was that math test you were worried about?\"", bundle: 'free' },
@@ -4176,7 +4176,7 @@ const collections = {
     {
       name: "Naming the Feeling",
       guideFront: "Acknowledge their internal state when...",
-      guideBack: "A curious observation.",
+      guideBack: "A curious observation",
       description: "Putting words to the child's internal experience using curiosity (\"You seem...\") rather than a definitive diagnosis (\"You are...\").\nIt works because naming the feeling communicates that you see and care about their heart, which allows them to feel understood rather than judged.\n\n• \"You seem really frustrated right now.\"\n• \"Are you feeling a bit disappointed that we have to go?\"\n• \"It looks like you're feeling lonely.\"\n\nUnderlying Categories:\n1. The Guess — using \"You seem...\" to invite them to correct or confirm you.\n2. The Inquiry — asking \"Are you...?\" to show respect for their internal world.\n\nMindset: Feelings are information to be heard, not problems to be fixed.",
       inputs: [
         { q: "They are stomping around the room after losing a game.", a: "\"You seem really frustrated that the game didn't go your way.\"", bundle: 'free' },
@@ -4191,8 +4191,8 @@ const collections = {
     },
     {
       name: "Taking the Side of Feelings",
-      guideFront: "Stand with their heart when...",
-      guideBack: "A validating \"wish\" or statement.",
+      guideFront: "Share their wish when...",
+      guideBack: "A validating \"wish\" or statement",
       description: "Standing with the child against their disappointment or desire, even while holding the actual limit.\nIt works because you can standing on the child's side emotionally without standing on their side against the rules; it prevents the parent from becoming the \"enemy\".\n\n• \"I wish we could stay at the park all day too.\"\n• \"I know, you really wanted that blue cup.\"\n• \"It's hard when we have to stop playing.\"\n\nUnderlying Categories:\n1. The Shared Wish — joining them in wishing reality was different.\n2. Emotional Validation — acknowledging the \"logic\" of their desire.\n\nMindset: I can be on your side against the sadness, even if the \"No\" remains a \"No\".",
       inputs: [
         { q: "They are crying because they want ice cream before dinner.", a: "\"I know, I wish we could eat ice cream for every meal too. It’s so delicious.\"", bundle: 'free' },
@@ -4208,7 +4208,7 @@ const collections = {
     {
       name: "Venerating the Child",
       guideFront: "Treat them with dignity when...",
-      guideBack: "A respectful action or inquiry.",
+      guideBack: "A respectful action or inquiry",
       description: "Meeting the child as a person with inherent dignity (an icon) rather than as a problem to be solved or an obstacle to be moved.\nIt works because treating them with respect—by listening, making eye contact, and valuing their personhood—shifts the parenting role from control to relationship.\n\n• (Kneel down to their eye level before speaking).\n• \"I'm listening. Tell me the whole story.\"\n• \"I value what you have to say.\"\n\nUnderlying Categories:\n1. Physical Posture — lowering your body to show respect and reduce threat.\n2. Generous Listening — giving your full attention as an act of love.\n\nMindset: This child is a person entrusted to me, not a problem to be \"dealt with\".",
       inputs: [
         { q: "They are trying to tell you a long, rambling story while you are busy.", a: "(Stop what you are doing, look them in the eye) \"Go ahead. I'm listening.\"", bundle: 'free' },
@@ -4226,7 +4226,7 @@ const collections = {
     {
       name: "Describe What You See",
       guideFront: "Describe the situation objectively when...",
-      guideBack: "A possible statement.",
+      guideBack: "A plain description",
       description: "Stating the objective facts of a situation without adding judgment, blame, or accusation.\nIt works because it reduces the child's defensiveness; rather than being attacked as \"messy,\" the child is simply presented with a problem to solve.\n\n• \"There are wet towels on the bathroom floor.\"\n• \"The milk is still sitting out on the counter.\"\n• \"I see toys all over the living room rug.\"\n\nUnderlying Categories:\n1. Environmental Cues — noticing objects out of place.\n2. Informational Facts — sharing a detail they might have missed.\n\nMindset: Be a mirror for reality, not a judge of character.",
       inputs: [
         { q: "Your child left their backpack in the middle of the hallway.", a: "\"There is a backpack in the middle of the floor.\"", bundle: 'free' },
@@ -4242,7 +4242,7 @@ const collections = {
     {
       name: "The One-Word Cue",
       guideFront: "Give a one-word reminder when...",
-      guideBack: "A possible cue.",
+      guideBack: "A one-word cue",
       description: "Using a single noun or verb to prompt a known rule or routine, replacing long lectures or nagging.\nIt works because it respects the child's intelligence—assuming they know what to do—and prevents the parent from becoming \"background noise\" through over-talking.\n\n• \"Shoes.\"\n• \"Dishes.\"\n• \"Teeth.\"\n\nUnderlying Categories:\n1. Routine Reminders — for tasks done daily.\n2. Immediate Corrections — for safety or social boundaries.\n\nMindset: The less I say, the more they hear.",
       inputs: [
         { q: "They are walking toward the door without putting on their shoes.", a: "\"Shoes.\"", bundle: 'free' },
@@ -4258,7 +4258,7 @@ const collections = {
     {
       name: "Pathway to Yes",
       guideFront: "Reframe a \"No\" as \"Not Yet\" when...",
-      guideBack: "A possible pathway.",
+      guideBack: "A yes, once the step is done",
       description: "Turning a refusal into a conditional agreement by showing the child the specific steps required to get what they want.\nIt works because it demonstrates that the limit isn't a power play; it teaches the child that privileges follow responsibilities.\n\n• \"Yes, as soon as your room is clean.\"\n• \"Not yet; after you finish your math, then you can play.\"\n• \"We can do that, once the chores are done.\"\n\nUnderlying Categories:\n1. Sequential Logic — First X, then Y.\n2. Time-Based Boundaries — showing when a \"Yes\" becomes available.\n\nMindset: I am the guide to your \"Yes,\" not the obstacle to your fun.",
       inputs: [
         { q: "They want to watch a show, but their homework isn't finished.", a: "\"Yes, as soon as your math is done, you can turn on the TV.\"", bundle: 'free' },
@@ -4274,7 +4274,7 @@ const collections = {
     {
       name: "Options Within the Limit",
       guideFront: "Offer choices within your boundary when...",
-      guideBack: "A possible choice.",
+      guideBack: "A choice between two options",
       description: "Giving the child two acceptable options that both lead to the same required outcome.\nIt works because it provides a sense of autonomy and control within a safe container, reducing the urge for the child to \"push back\" against your authority.\n\n• \"Do you want to walk up the stairs or should I carry you?\"\n• \"Would you like to wear the blue shirt or the green one?\"\n• \"Should we clear the table now or in five minutes?\"\n\nUnderlying Categories:\n1. Logistical Options — \"How\" we get the task done.\n2. Preference Options — \"Which\" item or path we choose.\n\nMindset: You choose the way; I choose the destination.",
       inputs: [
         { q: "It's time to get dressed and they are stalling.", a: "\"Do you want to put on your socks first or your shirt?\"", bundle: 'free' },
@@ -4292,7 +4292,7 @@ const collections = {
     {
       name: "Naming the Struggle",
       guideFront: "Acknowledge the difficulty when...",
-      guideBack: "A possible observation.",
+      guideBack: "An observation of their effort",
       description: "Putting words to the specific challenge or effort the child is experiencing without jumping in to \"fix\" it.\nIt works because it validates the child's reality and effort, making them feel seen while keeping the responsibility for the task on their shoulders.\n\n• \"That looks like a really hard puzzle.\"\n• \"You're working so hard to get those shoes on.\"\n• \"It’s frustrating when the blocks keep falling, isn't it?\"\n\nUnderlying Categories:\n1. Naming the Effort — focusing on the work they are putting in.\n2. Naming the Emotion — focusing on the frustration of the task.\n\nMindset: The struggle isn't a problem to be removed; it’s the classroom where character is built.",
       inputs: [
         { q: "They are trying to tie their shoes and getting red in the face.", a: "\"You're working really hard to get those laces to stay.\"", bundle: 'free' },
@@ -4308,7 +4308,7 @@ const collections = {
     {
       name: "Staying Close",
       guideFront: "Offer your presence when...",
-      guideBack: "A comforting action or statement.",
+      guideBack: "A comforting action or statement",
       description: "Remaining physically and emotionally present while the child struggles, providing a \"safety net\" of connection without taking over the work.\nIt works because it prevents the child from feeling abandoned in their frustration; your presence gives them the security to keep trying.\n\n• (Sit on the floor next to them while they struggle).\n• \"I'm right here with you while you work on this.\"\n• \"I'm not leaving. I'll stay until you're finished.\"\n\nUnderlying Categories:\n1. Quiet Presence — being a silent, supportive witness.\n2. Minimal Assistance — offering the smallest possible help to keep them going.\n\nMindset: I am joining the struggle, not abandoning it—and not stealing it.",
       inputs: [
         { q: "They are crying because they can't get a toy to work.", a: "(Sit down next to them and put a hand on their back) \"I'm right here.\"", bundle: 'free' },
@@ -4324,7 +4324,7 @@ const collections = {
     {
       name: "The Brainstorm Inquiry",
       guideFront: "Shift problem-solving to them when...",
-      guideBack: "A curious, leading question.",
+      guideBack: "A curious, leading question",
       description: "Asking questions that prompt the child to think of their own solutions instead of giving them the answer.\nIt works because it builds executive function and confidence; it teaches the child that they are capable of solving their own problems.\n\n• \"What could you try next?\"\n• \"What's another way to fix this?\"\n• \"Do you have any ideas for how we can share?\"\n\nUnderlying Categories:\n1. Open Inquiry — \"What could you do?\".\n2. Narrowed Inquiry — \"Could you try X or Y?\" (for younger children).\n\nMindset: Their brain is the one that needs to do the heavy lifting.",
       inputs: [
         { q: "Two children are fighting over a single ball.", a: "\"We have one ball and two people. What could you do so you both get a turn?\"", bundle: 'free' },
@@ -4340,7 +4340,7 @@ const collections = {
     {
       name: "Identify Consequences",
       guideFront: "Help them see outcomes when...",
-      guideBack: "A question about the result.",
+      guideBack: "A question about the result",
       description: "Asking the child to envision the natural or logical results of a choice or a proposed solution.\nIt works because it moves the focus from \"parental rules\" to the \"rules of reality,\" helping the child develop a moral and logical internal compass.\n\n• \"What do you think happens if you throw that?\"\n• \"If you spend all your money on candy today, what happens tomorrow?\"\n• \"What will your sister feel if you take that?\"\n\nUnderlying Categories:\n1. Physical Consequences — outcomes involving objects or safety.\n2. Social Consequences — outcomes involving other people's feelings.\n\nMindset: Experience is the best teacher; my job is to help them \"read\" the lesson.",
       inputs: [
         { q: "They want to wear pajamas to a formal event.", a: "\"If you wear those, how will you feel when everyone else is dressed up?\"", bundle: 'free' },
@@ -4357,8 +4357,8 @@ const collections = {
   parenting4: [
     {
       name: "Respond vs. React",
-      guideFront: "Choose a purposeful response when...",
-      guideBack: "A calm, intentional statement.",
+      guideFront: "Pause before you answer when...",
+      guideBack: "A calm, intentional statement",
       description: "Creating a conscious pause between the child’s behavior and your response to avoid emotional escalation.\nIt works because when a parent reacts with the same intensity as the child, they lose authority and the conflict worsens; responding requires understanding the struggle before acting.\n\n• \"I hear you're upset. I'm going to take a breath before we continue.\"\n• \"We can talk about this when we are both calm.\"\n• (Silence while taking a deep breath).\n\nUnderlying Categories:\n1. The Pause — taking a physical or mental moment to settle.\n2. The Purposeful Action — choosing a response based on long-term goals.\n\nMindset: My behavior is determined by my values, not by my child’s mood.",
       inputs: [
         { q: "They just screamed \"I HATE YOU!\" after you set a limit.", a: "(Take a breath) \"Wow, you are really angry with me right now.\"", bundle: 'free' },
@@ -4374,7 +4374,7 @@ const collections = {
     {
       name: "Expect Pushback",
       guideFront: "Maintain your stance when...",
-      guideBack: "A firm, non-reactive response.",
+      guideBack: "Their feeling heard, the limit kept",
       description: "Accepting that children will naturally protest and resist limits as they learn to handle disappointment.\nIt works because expecting resistance prevents you from feeling \"disrespected\" or personally attacked, allowing you to hold the limit without getting drawn into a fight.\n\n• \"I hear that you don't want to go. It's still time to leave.\"\n• \"I know you're frustrated. And, the answer is still no.\"\n• \"It's okay to be mad about the rule.\"\n\nUnderlying Categories:\n1. Prophylactic Expectation — knowing the protest is coming.\n2. Non-Negotiable Calm — holding the line without adding extra consequences for the protest.\n\nMindset: Pushback is the sound of a child learning to live within boundaries.",
       inputs: [
         { q: "You say \"Bath time\" and they shout \"NO! NEVER!\".", a: "\"I hear that you really want to keep playing. And, it's bath time.\"", bundle: 'free' },
@@ -4389,8 +4389,8 @@ const collections = {
     },
     {
       name: "Meet the Frustration, Not the Words",
-      guideFront: "Filter out toxic words when...",
-      guideBack: "A heart-centered response.",
+      guideFront: "Meet the feeling underneath when...",
+      guideBack: "The feeling, named back",
       description: "Ignoring insults or mean-spirited comments during a meltdown and responding only to the underlying emotional pain.\nIt works because children in the heat of a storm often use words they don't mean; by meeting the feeling instead of the insult, you de-escalate the situation and model emotional maturity.\n\n• \"You are really, really angry right now.\"\n• \"I can hear how much you're hurting.\"\n• \"Something is making you very upset.\"\n\nUnderlying Categories:\n1. The Verbal Shield — letting the \"bad\" words pass by.\n2. The Heart Search — identifying the feeling behind the attack.\n\nMindset: Their words are symptoms of their struggle, not a report on my parenting.",
       inputs: [
         { q: "They scream \"YOU'RE THE WORST MOM EVER!\".", a: "\"Wow, you are very, very angry with me right now.\"", bundle: 'free' },
@@ -4406,7 +4406,7 @@ const collections = {
     {
       name: "The Heartful Silence",
       guideFront: "Stop the argument when...",
-      guideBack: "A calm action or brief cue.",
+      guideBack: "A calm action or brief cue",
       description: "Ending verbal negotiations and moving to calm, physical action or silent presence when a child is stuck in pushback.\nIt works because \"over-talking\" turns a parent into background noise; moving to action proves the limit is real without the parent becoming aggressive.\n\n• \"The talking time is over.\"\n• (Walk over and gently take the toy away).\n• (Lead the child by the hand to the next task).\n\nUnderlying Categories:\n1. The Verbal Exit — signaling the end of the discussion.\n2. Physical Follow-up — peaceful, calm action to enforce the limit.\n\nMindset: When the talking stops, the leadership begins.",
       inputs: [
         { q: "They are arguing about a rule for the fifth minute in a row.", a: "\"I've heard you. I’m not going to argue anymore. It’s time to go.\"", bundle: 'free' },
@@ -4424,7 +4424,7 @@ const collections = {
     {
       name: "The Joy of Repentance",
       guideFront: "Teach the path back when...",
-      guideBack: "A possible statement.",
+      guideBack: "The mistake named, and a way to fix it",
       description: "Framing a mistake as an opportunity to turn back to the good rather than as a source of shame.\nIt works because it shifts the focus from \"guilt over who I am\" to \"repentance for what I did,\" teaching children that they can always start again.\n\n• \"That was a mistake. Now, how can you make it right?\"\n• \"That was wrong. Now you can choose the good.\"\n• \"Let's go back and try that again the right way.\"\n\nUnderlying Categories:\n1. The Turn — moving from the wrong action to the right one.\n2. The Request — inviting the child to offer an apology or restitution.\n\nMindset: Repentance is a victory of the heart, not a defeat of the will.",
       inputs: [
         { q: "Your child just hit their sibling and is now looking defensive.", a: "\"Hitting was wrong. Now, what do you need to say to your brother to make it right?\"", bundle: 'free' },
@@ -4440,7 +4440,7 @@ const collections = {
     {
       name: "Modeling the Apology",
       guideFront: "Own your own mistake when...",
-      guideBack: "A possible apology.",
+      guideBack: "A plain apology",
       description: "Demonstrating how to handle your own failures as a parent by admitting them and asking for forgiveness.\nIt works because children learn character by watching their parents; seeing you apologize teaches them that adults also struggle and that repair is possible.\n\n• \"I'm sorry. I lost my patience and I shouldn't have yelled.\"\n• \"I was wrong to speak to you that way. Will you forgive me?\"\n• \"I handled that clumsily. Let me try again.\"\n\nUnderlying Categories:\n1. Ownership — naming your specific unskillful behavior.\n2. Restoration — asking for forgiveness to close the gap.\n\nMindset: My mistakes are my most powerful teaching moments.",
       inputs: [
         { q: "You just shouted at your child because you were stressed by work.", a: "\"I'm sorry for shouting. I was stressed, but it wasn't right to take it out on you.\"", bundle: 'free' },
@@ -4455,8 +4455,8 @@ const collections = {
     },
     {
       name: "The Time-Out Reset",
-      guideFront: "Use a pause for regulation when...",
-      guideBack: "A possible statement.",
+      guideFront: "Offer a calming pause when...",
+      guideBack: "A pause, framed as a reset",
       description: "Using a brief separation not as a punishment to suffer through, but as a \"sports timeout\" to gather oneself and settle a dysregulated nervous system.\nIt works because a child in a \"storm\" cannot learn or repent; the pause provides the space needed for their body to become calm enough to re-engage.\n\n• \"You seem too upset to sit nicely. Take two minutes until your body is calm.\"\n• \"Let’s take a timeout so we can both settle down.\"\n• \"I’m going to sit here with you until you’re ready to try again.\"\n\nUnderlying Categories:\n1. Self-Regulation — focusing on \"calming the body\".\n2. Non-Punitive Pause — framing it as a tool for success, not a penalty.\n\nMindset: A timeout is a rest for the system, not a rejection of the person.",
       inputs: [
         { q: "Your child is screaming and cannot stop.", a: "\"Your body is very worked up right now. Let's take a break until you can breathe slowly.\"", bundle: 'free' },
@@ -4472,7 +4472,7 @@ const collections = {
     {
       name: "The Tangible Follow-up",
       guideFront: "Restore the connection when...",
-      guideBack: "A warm action or statement.",
+      guideBack: "A warm action or statement",
       description: "Proactively re-establishing emotional or physical contact after a conflict or a firm limit has been held.\nIt works because it proves to the child that the relationship is secure and that your love is not dependent on their perfect obedience.\n\n• \"We're okay. Give me a hug.\"\n• \"I'm so glad we're back together.\"\n• (A hand on the shoulder or a warm smile).\n\nUnderlying Categories:\n1. The Bridge — moving from the \"struggle\" back to \"life as usual\".\n2. Affirmation of Love — specifically stating that the relationship is safe.\n\nMindset: The struggle is temporary; our connection is permanent.",
       inputs: [
         { q: "You just held a very firm limit and the child finally complied, but they look sad.", a: "(Sit down next to them) \"That was a big struggle, and you did it. I love you.\"", bundle: 'free' },
@@ -4819,8 +4819,8 @@ const collections = {
   praxdread1: [
     {
       name: "STFU (The Superpower)",
-      guideFront: "Use STFU to respond when...",
-      guideBack: "A silent or brief response.",
+      guideFront: "Stop explaining and go quiet when...",
+      guideBack: "Silence, or one short line",
       description: "Closing your mouth to eliminate any intention of explaining, rationalizing, or confirming powerlessness during conflict. It works because 93% of communication is non-verbal; if your words are incongruent with your status, they are wasted and only signal weakness.\n\n• (Silence)\n• \"I'm trying to sleep. Ask me in the morning.\"\n• \"I've made my decision.\" Underlying Categories:\n\n1. The Argument Halt — stopping a verbal fight before you act \"unattractively\".\n2. The Explanation Kill — refusing to justify a personal choice or decision. Mindset: If you do not know why you are speaking or the likely outcome, keep your mouth shut.",
       inputs: [
         { q: "she starts a \"Calvinball\" argument about where you put the cups", a: "(Maintain eye contact. Say nothing. Finish what you were doing and leave the room.)", bundle: 'free' },
@@ -4835,8 +4835,8 @@ const collections = {
     },
     {
       name: "The 2/3rds Rule",
-      guideFront: "Apply the 2/3rds Rule when...",
-      guideBack: "A calibrated investment.",
+      guideFront: "Give back a little less when...",
+      guideBack: "A calibrated investment",
       description: "Giving back only two-thirds of the non-sexual investment (texts, attention, time) you receive from her. It works because it restores scarcity and value to your attention, preventing you from becoming the \"plow horse\" seeking an \"attaboy\".\n\n• (Two replies for three texts)\n• (Being \"great\" for half the week if she was \"great\" all week)\n• (Offering 2/3rds of the household labor she performs) Underlying Categories:\n\n1. Digital Scarcity — mirroring her text frequency at a 0.66 ratio.\n2. Emotional Reciprocity — ensuring your warmth is a reward for her investment. Mindset: You are the luxury brand; your time and attention must cost her something to be valued.",
       inputs: [
         { q: "you've received three texts from her during the workday about mundane tasks", a: "(Reply to two of them. Leave the least important one on read.)", bundle: 'free' },
@@ -4851,8 +4851,8 @@ const collections = {
     },
     {
       name: "The 1,000-Foot Tow Rope",
-      guideFront: "Use the Tow Rope model when...",
-      guideBack: "An autonomous lead.",
+      guideFront: "Keep to your own course when...",
+      guideBack: "An autonomous lead",
       description: "Leading your own life and self-improvement on your own timeline, regardless of whether she notices or follows immediately. It works because it forces you to become \"Outcome Independent\"; when you gain enough speed on your own course, she eventually feels the \"jerk\" of the line and chooses to follow.\n\n• \"I'm going to the gym now. See you later.\"\n• (Continuing your diet even when she sabotages it with cookies)\n• (Acting as if you are already single/divorced in your self-care) Underlying Categories:\n\n1. The Silent Gain — improving your SMV without announcing it (\"Mommy, look!\").\n2. The Vision Pull — creating a \"port\" so lush she wants to sail in your formation. Mindset: The stay plan and the go plan are the same plan: become your best self.",
       inputs: [
         { q: "you've been working out for three weeks and she makes a snide comment about it", a: "(Ignore the comment. Continue your program. The rope is still paying out slack.)", bundle: 'free' },
@@ -4867,8 +4867,8 @@ const collections = {
     },
     {
       name: "Standard-Setting Lead",
-      guideFront: "Lead by setting standards when...",
-      guideBack: "A proactive decision.",
+      guideFront: "Handle it your way when...",
+      guideBack: "A proactive decision",
       description: "Taking responsibility for household tasks and family logistics according to your own standards and timeline, refusing to be a \"minion\" or \"man-child\". It works because it destroys the \"Captain and her husband\" dynamic; by acting without her permission, you force her to either submit to your lead or get out of the way.\n\n• \"Babe, I got it.\"\n• \"It’s not a priority right now, but it’ll happen.\"\n• \"I've handled the logistics for the trip. Here is the schedule.\" Underlying Categories:\n\n1. Choreplay Refusal — doing dishes because _you_ want a clean kitchen, not to \"earn\" sex.\n2. Financial Treasury — regaining control of assets and spending to align with your vision. Mindset: A leader takes responsibility for his own vision; don't ask for permission to lead your life.",
       inputs: [
         { q: "she nags you to mow the lawn \"right now\" even though you are busy", a: "\"It's not a priority right now, but it'll happen Saturday morning.\"", bundle: 'free' },
@@ -4886,7 +4886,7 @@ const collections = {
     {
       name: "Scarcity Signaling",
       guideFront: "Signal scarcity when...",
-      guideBack: "A high-status, autonomous response.",
+      guideBack: "A brief, busy, unhurried line",
       description: "Presenting yourself as a rare and valuable resource that is available but not abundant. It works because humans instinctively value things more when they are perceived as scarce. By being busy with your own mission and vision, you naturally project status and cause a healthy level of anxiety in the partner.\n\n• \"I have a lot on my plate today. I'll see you for dinner.\"\n• \"I'm heading out to meet some friends. Have a good night.\"\n• (Being unavailable for constant texting while at work). Underlying Categories:\n\n1. Mission Scarcity — being focused on goals over relationship \"comfort\".\n2. Social Scarcity — maintaining a life outside the home. Mindset: You are a luxury brand; your time must cost her something to be obtained.",
       inputs: [
         { q: "she asks why you haven't been answering her texts all morning", a: "\"Busy day. I'll be home at six.\"", bundle: 'free' },
@@ -4901,8 +4901,8 @@ const collections = {
     },
     {
       name: "Loss Aversion Exploitation",
-      guideFront: "Exploit loss aversion when...",
-      guideBack: "A response that triggers the \"prize\" dynamic.",
+      guideFront: "Let the risk of loss stand when...",
+      guideBack: "An unworried line, or a held boundary",
       description: "Utilizing the psychological fact that humans feel the pain of loss twice as strongly as the joy of gain. It works because a woman who fears losing a valuable man will instinctively work harder to please him. Dread positions you to increase the anxiety of loss while remaining a high-status \"luxury item\".\n\n• \"I love you enough to tell you if things aren't working.\".\n• \"I expect us to be partners; otherwise, I'm not interested.\". Underlying Categories:\n\n1. The Accountability Courtesty — explicitly stating that you would leave before cheating.\n2. Outcome Independence — acting as if you are already prepared for a life without her. Mindset: You must be willing to destroy the dynamic in order to save yourself.",
       inputs: [
         { q: "she accuses you of \"acting like you're single\" because you are lifting", a: "\"I'm becoming the best version of myself. You should enjoy the view.\"", bundle: 'free' },
@@ -4917,8 +4917,8 @@ const collections = {
     },
     {
       name: "Operant Conditioning",
-      guideFront: "Use Operant Conditioning when...",
-      guideBack: "A reward or withdrawal of attention.",
+      guideFront: "Reward it or withdraw when...",
+      guideBack: "A reward or withdrawal of attention",
       description: "Generating desired behavior through a system of rewarding good behavior and withdrawing rewards for bad behavior. It works because people naturally follow incentives when the rewards are intermittent and earned rather than guaranteed. By rewarding her sexual availability and pleasantness with your presence, you provide an \"exit\" for her emotional maze.\n\n• \"I had a great time with you tonight. Let's do this more often.\".\n• (Withdrawing to the gym after a sexual rejection).\n• (Offering warmth only after she has contributed value). Underlying Categories:\n\n1. Positive Reinforcement — validation for feminine effort.\n2. Negative Reinforcement — removing anxiety once she meets expectations. Mindset: Reward the behavior you want to see repeated; never reward a tantrum.",
       inputs: [
         { q: "she rejects your initiation for sex at 11 PM", a: "(No huffing. No argument.) (Grab your gym bag and leave for a workout with a smile.)", bundle: 'free' },
@@ -4933,8 +4933,8 @@ const collections = {
     },
     {
       name: "Covert Marketing",
-      guideFront: "Use Covert Marketing when...",
-      guideBack: "A subtle demonstration of value.",
+      guideFront: "Show it rather than sell it when...",
+      guideBack: "A subtle demonstration of value",
       description: "Signaling your status and value through actions and subtext rather than overt \"sales\" or demands. It works because directness signals desperation, while subtle marketing triggers her imagination and desire to \"buy in\" to your world. Luxury goods use the Socratic method—letting the customer draw their own conclusions about the product's worth.\n\n• (Dressing well for a mundane task).\n• \"I'm just a charming guy; we were only talking.\".\n• (Executing your vision silently rather than bragging about it). Underlying Categories:\n\n1. Aesthetic Marketing — using style and fitness to communicate SMV.\n2. Social Proof — being recognized and liked by others in her presence. Mindset: Women hate being sold to, but they love discovering a luxury item.",
       inputs: [
         { q: "you want her to notice your weight loss", a: "(Internal: no \"Mommy look!\") (Simply wear a well-fitted shirt and let her hamster process the change.)", bundle: 'free' },
@@ -4951,8 +4951,8 @@ const collections = {
   praxdread3: [
     {
       name: "The Gym Bag Routine",
-      guideFront: "Use this strategy to enforce a standard when...",
-      guideBack: "A possible response.",
+      guideFront: "Take the no and go train when...",
+      guideBack: "A light exit to your workout",
       description: "A systematic method for managing sexual rejection by pivoting to a pre-planned workout without showing emotional distress or \"butthurt\". By packing your bag in advance and initiating just before your scheduled workout, you ensure that a \"No\" results in you pursuing a high-value activity rather than moping.\n\n• \"No worries. I'm hitting the gym for an hour.\"\n• \"Enjoy your book, I'll be back at seven.\"\n• (Silence while grabbing your bag and leaving with a smile). Underlying Categories:\n\n1. The Pre-emptive Pack — having the bag ready by the door before you initiate.\n2. The Smiling Exit — leaving immediately without an argument, proving outcome independence. Mindset: Your frustration belongs to the weights, not to your partner.",
       inputs: [
         { q: "you initiate sex at 10 PM and she says \"No, I'm just too tired tonight.\"", a: "(Grab your pre-packed bag) \"No worries. I'm going to hit the iron for an hour. See you later.\"", bundle: 'free' },
@@ -4967,8 +4967,8 @@ const collections = {
     },
     {
       name: "\"This Isn't Working\"",
-      guideFront: "Use this strategy to enforce a standard when...",
-      guideBack: "A possible response.",
+      guideFront: "Stop it calmly when...",
+      guideBack: "A calm, unhurried stop",
       description: "The proactive boundary enforcement of stopping lackluster, unenthusiastic, or \"starfish\" sex immediately. It works by signaling that you have high standards for intimacy and will not accept \"obligated compliance\" or being treated like a \"blow-up doll\".\n\n• \"This isn't working out, and that’s OK.\"\n• \"Let's stop. We can try again later.\"\n• (Getting up and getting dressed without anger). Underlying Categories:\n\n1. The Quality Reject — refusing a \"favor\" that lacks genuine desire.\n2. The Calm Reset — ending the encounter without punishment, simply acknowledging the lack of connection. Mindset: You are the prize; you don't accept mediocre sex because you know you are worth more.",
       inputs: [
         { q: "during sex, she is just \"lying there\" and looking at the ceiling", a: "(Stop, get up) \"This isn't working out, and that's OK. We can try again later.\"", bundle: 'free' },
@@ -4983,8 +4983,8 @@ const collections = {
     },
     {
       name: "Leading Without Permission",
-      guideFront: "Use this strategy to enforce a standard when...",
-      guideBack: "A possible response.",
+      guideFront: "Take charge on your own terms when...",
+      guideBack: "A plan you've already set",
       description: "Taking autonomous action and making family or household decisions without seeking \"authorization\" or approval from your partner. Leaders don't ask for permission; they simply lead. By executing your vision silently and consistently, you force her to either follow or get out of the way.\n\n• \"Babe, I got it.\"\n• \"I've planned a hike for Sunday at ten. Pack the water.\"\n• \"I've handled the budget for the new car. Here is the plan.\" Underlying Categories:\n\n1. Standard-Setting — deciding on the timeline and quality of chores.\n2. Informational Leadership — telling her the plan rather than asking for her input on \"if\" it should happen. Mindset: If you think the problem is that she doesn't \"let\" you lead, you aren't leading.",
       inputs: [
         { q: "you see the garage needs cleaning and want to \"ask\" if you can do it Saturday", a: "(Do not ask) \"I'm handling the garage Saturday morning. Don't worry about it.\"", bundle: 'free' },
@@ -4999,8 +4999,8 @@ const collections = {
     },
     {
       name: "Separating Sex and Intimacy",
-      guideFront: "Use this strategy to enforce a standard when...",
-      guideBack: "A possible response.",
+      guideFront: "Save warmth for her investment when...",
+      guideBack: "Distance, or a warm pull back",
       description: "Understanding the distinct functions of \"Alpha\" behaviors (creating anxiety/desire) and \"Beta\" behaviors (providing comfort/closeness). Sustainable attraction requires a cycle: you push her away (Alpha) to create desire, then pull her back (Beta) to provide relief and reward.\n\n• (Being distant and scarce during the day).\n• \"I'm busy now. Come here and give me a hug before I go.\"\n• (Rewarding sexual investment with high-quality post-sex comfort). Underlying Categories:\n\n1. The Anxiety Trigger — using scarcity and aloofness to inspire \"Tingles\".\n2. The Comfort Reward — offering warmth and availability _only_ as a result of her investment. Mindset: Inclusion in your life is a reward, not an obligation.",
       inputs: [
         { q: "she's been distant all day and now wants \"cuddles\" on the couch", a: "(Internal: No investment, no comfort.) \"I'm busy with my project. I'll see you at bedtime.\"", bundle: 'free' },
@@ -5017,8 +5017,8 @@ const collections = {
   praxdread4: [
     {
       name: "Controlled Anger",
-      guideFront: "Use this strategy to manage emotions when...",
-      guideBack: "A possible response.",
+      guideFront: "Mark the line firmly when...",
+      guideBack: "A firm, deliberate stop",
       description: "Using anger as a deliberate social signal and tool rather than a provoked reaction. It works because uncontrolled anger overshadows the issue at hand, but controlled anger—a measured response that can escalate to match her intensity—establishes that fights have consequences and you are willing to win them.\n\n• \"Do you really want to have this fight? Because you’re not going to like it.\"\n• \"You want a fight? Let’s have a fight. You can fuck off right now!\"\n• \"This behavior is unacceptable. Stop it.\" Underlying Categories:\n\n1. Warning Shots — firing a clear signal before a full escalation.\n2. The Scale Match — ranking intensity 1-10 and matching her level +1 to dominate. Mindset: Anger is a tool for operant conditioning; make escalation uncomfortable and de-escalation rewarding.",
       inputs: [
         { q: "she has been \"chirping\" at you all day and you've reached your limit", a: "\"Do you really want to have this fight? Because you're not going to like it.\"", bundle: 'free' },
@@ -5033,8 +5033,8 @@ const collections = {
     },
     {
       name: "Manufactured Outrage",
-      guideFront: "Use this strategy to manage emotions when...",
-      guideBack: "A possible response.",
+      guideFront: "Start a small fight on purpose when...",
+      guideBack: "A staged complaint, then a drop",
       description: "Proactively initiating a conflict over an inconsequential matter to regulate emotional tension and build intimacy. It works because women enjoy the \"soreness\" after a fight, and attraction requires strong emotions; by manufacturing the escalation and de-escalation on your terms, you proactively handle her emotional needs.\n\n• \"I can't believe you spilled that. This is a mess.\"\n• \"What, the coffee? That was like forever ago, no one cares babe.\"\n• (Mocking her excuses playfully during a fake argument). Underlying Categories:\n\n1. Proactive Escalation — choosing a tiny trigger to start a \"cleansing\" fight.\n2. Emotional Climax — reaching the peak of the tension before a quick reset. Mindset: Pepper in negative emotions to keep the game sustainable; leading is more than doing dishes.",
       inputs: [
         { q: "your relationship has been \"too stable\" and you sense a nag coming on", a: "\"You left the coffee spill on the counter? I can't believe you're this messy today.\"", bundle: 'free' },
@@ -5049,8 +5049,8 @@ const collections = {
     },
     {
       name: "Cocky/Funny Accusation Response",
-      guideFront: "Use this strategy to manage emotions when...",
-      guideBack: "A possible response.",
+      guideFront: "Tease instead of denying when...",
+      guideBack: "A cocky, playful dodge",
       description: "Handling accusations of infidelity or secrecy by remaining aloof, cocky, and funny instead of defensive or honest. It works because defensive denials relieve her anxiety (her \"hamster\") before she can learn the lesson of your new value; remaining a mystery triggers her imagination and desire to keep you.\n\n• \"Are you sure you want to know?\"\n• \"I love you enough... if I were going to have an affair, you'd be the first to know.\"\n• \"I'm trying to sleep. Ask me in the morning.\" Underlying Categories:\n\n1. Negative Inquiry — using a question to redirect her insecurity back to her.\n2. Accountability Courtesy — explicitly stating you'd leave before cheating (to trigger loss aversion). Mindset: You are the prize; your honesty and comfort are rewards that must be earned, not given away.",
       inputs: [
         { q: "she catches you in bed and asks, \"Are you cheating on me?\"", a: "\"I'm trying to sleep. Ask me when I don't have work in the morning.\"", bundle: 'free' },
@@ -5065,8 +5065,8 @@ const collections = {
     },
     {
       name: "Navigating the Main Event",
-      guideFront: "Use this strategy to manage emotions when...",
-      guideBack: "A possible response.",
+      guideFront: "Hold steady through her meltdown when...",
+      guideBack: "A calm presence, or a brief direction",
       description: "Staying grounded and aloof during the \"mother of all meltdowns\"—the point where her anxiety about losing you reaches a breaking point. It works because the Main Event is her hail-mary play of direct communication; by remaining in frame and checked-out of the drama, you force her to find an \"exit\" (submission/investment) in your world.\n\n• (Silent, unbothered presence during a full blowup).\n• \"I don't know how to make you happy and keep you around.\" (The signal).\n• \"I hear you. This is my vision for how our life needs to be.\" Underlying Categories:\n\n1. The Check-out — reaching a state where you are prepared to leave, which triggers her panic.\n2. The Come to Jesus — a succinct communication of your vision _after_ the storm has passed. Mindset: A Main Event happens when you no longer care if it happens; it's the culmination of Dread.",
       inputs: [
         { q: "she is having a massive blowup with \"snot bubbles and diaphragm spasms\"", a: "(Internal: Hold the frame. Remain aloof. Do not attempt to fix her feelings.)", bundle: 'free' },
@@ -5083,8 +5083,8 @@ const collections = {
   praxdread5: [
     {
       name: "The Come to Jesus Moment",
-      guideFront: "Use this strategy to exercise agency when...",
-      guideBack: "A possible response.",
+      guideFront: "State your vision and terms when...",
+      guideBack: "Your vision, said in a sentence",
       description: "The succinct communication of your personal vision and the actionable terms for the relationship, typically delivered after a \"Main Event\" has broken the old dynamic. It works because after the emotional storm of her desperation, you have her undivided attention and must provide a clear \"exit\" from her hamster maze of anxiety.\n\n• \"I see myself in a relationship with a woman who treats me with investment and respect.\"\n• \"I want a soft landing when I come home. That is my vision for our family.\"\n• \"I'm loyal to that which adds value to my life. I'm looking for a partner who does the same.\" Underlying Categories:\n\n1. The Vision Narrative — describing the life you expect to lead rather than binary goals.\n2. The Actionable Exit — providing clear, non-negotiable steps she can take to keep you. Mindset: My vision is my own; I worked hard to be worth it and I only need to say it once.",
       inputs: [
         { q: "she asks what she can do to fix the relationship after a major blowup", a: "\"I want a soft landing when I come home. I want you to step up with the home and the kids.\"", bundle: 'free' },
@@ -5099,8 +5099,8 @@ const collections = {
     },
     {
       name: "Control of the Treasury",
-      guideFront: "Use this strategy to exercise agency when...",
-      guideBack: "A possible response.",
+      guideFront: "State the money decision when...",
+      guideBack: "A money decision, stated as fact",
       description: "The methodical reclaiming of authority over family finances, assets, and debts to ensure they align with your vision and stop rewarding bad behavior. It works because financial agency is the most overt form of authority; by silently preparing the infrastructure and then announcing the change as a fact, you move from \"dependent\" to \"decider\".\n\n• \"I'm taking complete charge of our finances from now on.\"\n• \"I will provide cash for the household expenses each week.\"\n• \"We are spending more than is coming in. This is the new plan.\" Underlying Categories:\n\n1. Silent Preparation — opening private accounts and freezing debts before communicating.\n2. The Decision Announcement — informing the family of the new structure without seeking permission. Mindset: The leader takes responsibility for the vision; I am the decider of where the money goes.",
       inputs: [
         { q: "you have completed the silent prep and are now informing her of the change", a: "\"I've taken complete charge of the finances. All accounts are now in my name.\"", bundle: 'free' },
@@ -5115,8 +5115,8 @@ const collections = {
     },
     {
       name: "The Remorse Checklist",
-      guideFront: "Use this strategy to exercise agency when...",
-      guideBack: "A possible response.",
+      guideFront: "Judge her remorse by actions when...",
+      guideBack: "A line that asks for proof in action",
       description: "A systematic framework for evaluating a partner's sincerity after a betrayal by observing their actions rather than their words. It works because words are often \"cheap Chinese knock-off remorse\"; only consistent, humble actions—like booking therapy or blocking flings—prove real investment.\n\n• \"I'll be watching your actions, not your words.\"\n• \"Remorse lasts as long as I need it to.\"\n• \"If you want this to work, you'll block him and show me.\" Underlying Categories:\n\n1. The Initiative Check — observing if she takes the lead on repair without being told.\n2. The Patience Check — seeing if she accepts your timeline for healing without irritation. Mindset: I refuse to be gaslit into false trust; I am the judge of this test.",
       inputs: [
         { q: "she says she is \"sorry\" for cheating and wants to go back to normal", a: "\"I hear your words. I'll be watching your actions to see if you mean it.\"", bundle: 'free' },
@@ -5131,8 +5131,8 @@ const collections = {
     },
     {
       name: "Stay/Go Congruence",
-      guideFront: "Use this strategy to exercise agency when...",
-      guideBack: "A possible response.",
+      guideFront: "Keep improving either way when...",
+      guideBack: "A line about your own path",
       description: "Operating with \"Covert Outcome Independence\" where your self-improvement and vision are identical whether you stay in the relationship or leave it. It works because becoming a luxury brand is for you first; when you are prepared to walk away, your body language becomes congruent and you stop seeking her validation.\n\n• \"I'm becoming my best self. You're welcome to follow.\"\n• \"I'm making myself the man I want to be.\"\n• (Acting as if the relationship is already over in terms of your personal standards). Underlying Categories:\n\n1. Internal Decoupling — identifying \"itis\" and removing the need for her to \"fix\" your happiness.\n2. Abundance Preparation — building your career and physique to make replacement a realistic option. Mindset: The stay plan and the go plan are the same plan: become the prize.",
       inputs: [
         { q: "she accuses you of \"acting like you're single\" because you are so focused on goals", a: "\"I'm focused on my vision. You're welcome to be a part of it.\"", bundle: 'free' },
@@ -6359,8 +6359,8 @@ const collections = {
   oconnor1: [
     {
       name: "The Professional Boundary (I'm Surprised)",
-      guideFront: "Use this strategy when...",
-      guideBack: "A tactical verbal response.",
+      guideFront: "Say you're surprised when...",
+      guideBack: "Surprise, and the professional line",
       description: "This strategy removes the \"reward\" of an emotional reaction. By stating you are surprised, you highlight that the other person has deviated from professional norms without becoming defensive. It shifts the focus back to their behavior while maintaining your status as a neutral communicator. **Typical Phrases:**",
       inputs: [
         { q: "A coworker makes an inappropriate comment about your body.", a: "\"I’m surprised that you would make a personal comment like that to me when our relationship has always been professional.\"", bundle: 'free' },
@@ -6375,8 +6375,8 @@ const collections = {
     },
     {
       name: "The Clarifying Question",
-      guideFront: "Use this strategy when...",
-      guideBack: "A tactical verbal response.",
+      guideFront: "Spell out what they implied when...",
+      guideBack: "Their subtext, asked back plainly",
       description: "This tactic forces the speaker to own the hidden meaning behind their words. You translate their subtext into a blunt, factual statement and ask if that is what they meant. Most people will retreat once their passive-aggression is made explicit. **Typical Phrases:**",
       inputs: [
         { q: "A colleague asks \"if you finally got that report done\" in front of the team.", a: "\"When you say that, it sounds to me like you're placing yourself in a supervisory position over me. Is that what you're trying to say?\"", bundle: 'free' },
@@ -6391,8 +6391,8 @@ const collections = {
     },
     {
       name: "Selective Engagement",
-      guideFront: "Use this strategy when...",
-      guideBack: "A tactical verbal response.",
+      guideFront: "Refuse the bait when...",
+      guideBack: "A short, unbothered line or look",
       description: "Choosing not to address the content of an accusation, but instead addressing the behavior of the attacker. This elevates you above the conflict. By not defending, you signal that you are not vulnerable. **Typical Phrases:**",
       inputs: [
         { q: "A peer says you lost the big account.", a: "\"I can understand why you'd be upset if you thought I lost that account, but my work speaks for itself.\"", bundle: 'free' },
@@ -6407,8 +6407,8 @@ const collections = {
     },
     {
       name: "The Power of 'What'",
-      guideFront: "Use this strategy when...",
-      guideBack: "A tactical verbal response.",
+      guideFront: "Ask what prompted it when...",
+      guideBack: "A 'what' question about their behavior",
       description: "Asking \"Why\" leads to excuses and rumination. Asking \"What\" forces a factual, solution-oriented response. It shifts the conversation from the attacker's subjective feelings to their objective behavior and the appropriateness of the setting. **Typical Phrases:**",
       inputs: [
         { q: "Someone asks a very rude, personal question at lunch.", a: "\"What made you ask a question like that?\"", bundle: 'free' },
@@ -6423,8 +6423,8 @@ const collections = {
     },
     {
       name: "Benefit Statements",
-      guideFront: "Use this strategy when...",
-      guideBack: "A tactical verbal response.",
+      guideFront: "Frame it as their win when...",
+      guideBack: "Your ask, tied to their benefit",
       description: "To be persuasive, you must stop talking about the \"form\" (the idea) and focus on the \"substance\" (the person). Benefit statements translate your needs into a direct personal win for the listener, increasing buy-in. **Typical Phrases:**",
       inputs: [
         { q: "Proposing a new workflow to your boss.", a: "\"I’d like to implement this new system so you can have more time for yourself and not feel you have to do everything.\"", bundle: 'free' },
@@ -6439,8 +6439,8 @@ const collections = {
     },
     {
       name: "The Power Tone and Icy Stare",
-      guideFront: "Use this strategy when...",
-      guideBack: "A tactical verbal response.",
+      guideFront: "Hold a firm look and tone when...",
+      guideBack: "A steady stare or low, firm voice",
       description: "Authority is established non-verbally. The \"Power Tone\" projects confidence by speaking from the diaphragm, while the \"Icy Stare\" signals you are unmoved by aggression. Correct mechanics prevent you from appearing aggressive or \"psychotic.\" **Typical Phrases:**",
       inputs: [
         { q: "A bully approaches your desk.", a: "(Square your shoulders, face them chest-to-chest, and maintain the icy stare).", bundle: 'free' },
@@ -6455,8 +6455,8 @@ const collections = {
     },
     {
       name: "The Power-Down (Exiting Conversations)",
-      guideFront: "Use this strategy when...",
-      guideBack: "A tactical verbal response.",
+      guideFront: "Close it and leave when...",
+      guideBack: "A closing line and your exit",
       description: "You are never bound to stay in an unproductive or toxic conversation. A \"Power-Down\" phrase summarizes your position, signals your departure, and leaves an impression of absolute control. **Typical Phrases:**",
       inputs: [
         { q: "A meeting turns into a gossip session.", a: "\"I have nothing constructive to add to this, so I’m going back to my desk to do something positive.\"", bundle: 'free' },
@@ -6473,8 +6473,8 @@ const collections = {
   oconnor2: [
     {
       name: "The Diplomatic Decline",
-      guideFront: "Use the Diplomatic Decline to say no when...",
-      guideBack: "One way to respond.",
+      guideFront: "Say no warmly and briefly when...",
+      guideBack: "A warm no with an alternative",
       description: "Say no to requests clearly and warmly without giving a long list of excuses that invite negotiation. It works because clarity is a favor; a vague \"maybe\" costs the other person time. • Typical phrases: \"I’d like to be helpful, however...\", \"Unfortunately, that’s not in my budget/schedule.\", \"I'm wondering, could we [Alternative] instead?\"\n\n1. **Sympathize:** Acknowledge their need. \"I understand these deadlines are tough.\"\n2. **Say No:** Be clear. \"I cannot take that on right now.\"\n3. **Say Why:** Give a professional reason with a benefit. \"To keep costs low for everyone, I have to stick to this policy.\"\n4. **Suggest Alternative:** Show you are a teammate. \"Could I help you first thing tomorrow instead?\" **Mindset:** I don't say no for other people; I say no for me to maintain my professional standards.",
       inputs: [
         { q: "Your boss asks you to stay late for a couple of hours on a night you have plans.", a: "\"I’d like to be helpful, however I’m afraid I have plans tonight. I'm wondering, could I come in early tomorrow to help you out?\"", bundle: 'free' },
@@ -6489,8 +6489,8 @@ const collections = {
     },
     {
       name: "The B-I-B Script",
-      guideFront: "Use the B-I-B script when...",
-      guideBack: "One way to respond.",
+      guideFront: "Enlist them in your limit when...",
+      guideBack: "Your limit, their cue and the benefit",
       description: "Use Boundary, Instruction, and Benefit to stop coworkers from dumping their work on you. It works because you take responsibility for your own limits while articulating how your boundary helps the other person. • Typical phrases: \"I noticed I've been...\", \"In the future, if you see me...\", \"That way, you'll know that...\"\n\n1. **Boundary:** State the problem as your own observation. \"I've noticed I'm taking on so much work I can't do my own effectively.\"\n2. **Instruction:** Tell them how to help you. \"If you see me saying yes to everything, please remind me of this talk.\"\n3. **Benefit:** State what’s in it for them. \"That way, when I _do_ say yes to you, you'll know I'm doing it with a happy heart and to the best of my ability.\" **Mindset:** I am the co-CEO of my workstation; I am training people how to treat me.",
       inputs: [
         { q: "A coworker tries to hand you their unfinished work as they leave for the day.", a: "\"I’ve noticed lately I’m taking on more than I can handle. If you see me doing that, could you just say 'Hey Dan' to remind me? That way, when I help you, I can really give it my best.\"", bundle: 'free' },
@@ -6505,8 +6505,8 @@ const collections = {
     },
     {
       name: "The Availability Monitor",
-      guideFront: "Use the Availability Monitor when...",
-      guideBack: "One way to respond.",
+      guideFront: "Point to your signal when...",
+      guideBack: "Your availability, shown or said",
       description: "A simple visual and verbal system to signal when you are \"off limits\" for interruptions. It works because visual cues provide immediate instructions to others before they even open their mouths. • Typical phrases: \"Green means available, Red means focused.\", \"Please check my monitor before asking a question.\", \"I'm implementing a new time management system.\"\n\n1. **The Groundwork:** Use the AEIOU script to explain the system. \"I've found I'm not managing my time efficiently, so I'm asking for your help.\"\n2. **The Signal:** Use a physical indicator (sign, flag, or color). \"When it's red, I'm focusing on a project.\"\n3. **The Enforcer:** Use the passive voice to redirect. \"Check my monitor—it explains why I can't respond right now.\" **Mindset:** I am taking control of my professional schedule to serve my team better.",
       inputs: [
         { q: "You are telling a \"Time Sucker\" about your new system for the first time.", a: "\"Mary, I need your help. I've found I'm falling behind, so I'm implementing a new system. When my sign is red, I'm unavailable. Can I count on your help with this?\"", bundle: 'free' },
@@ -6521,8 +6521,8 @@ const collections = {
     },
     {
       name: "Power-Down Phrases",
-      guideFront: "Use a Power-Down phrase when...",
-      guideBack: "One way to respond.",
+      guideFront: "Close it and leave when...",
+      guideBack: "A closing line and your exit",
       description: "Firm closing statements to gracefully exit conversations that have become toxic or unproductive. It works because you summarize your position and signal the end of your participation without asking for permission. • Typical phrases: \"Unfortunately, continuing this conversation with me is not an option.\", \"I value both our time too much to continue this.\", \"I'm going to get back to work.\"\n\n1. **The Summary:** State the current situation. \"I can see this is important to you, but we've come to a stalemate.\"\n2. **The Decision:** State your action. \"I have nothing constructive to add, so I'm ending this conversation.\"\n3. **The Exit:** Physically or verbally leave. \"If anyone needs me, you know where to find me. Goodbye.\" **Mindset:** I am never bound to any conversation; it is my prerogative to exit when it is no longer productive.",
       inputs: [
         { q: "A meeting has turned into a gossip session about a colleague.", a: "\"I can see you need to talk about this, but I have nothing constructive to add. I'm going to get back to my desk where I can be productive.\"", bundle: 'free' },
@@ -6539,8 +6539,8 @@ const collections = {
   oconnor3: [
     {
       name: "The Communication Hamburger",
-      guideFront: "Use the Communication Hamburger when...",
-      guideBack: "A possible response.",
+      guideFront: "Name the act and its impact when...",
+      guideBack: "The behavior, your concern and why",
       description: "Address unwanted behavior by wrapping the confrontation in a structured formula: \"When you [Action], I feel [Emotion], because [Implication]\".\n\n• It works because it focuses on the behavior and its logical impact rather than attacking the person's character, which triggers less immediate defensiveness.\n• Typical phrases: \"When you keep interrupting...\", \"It concerns me...\", \"Because it appears you aren't aware...\".\n\n1. **The Behavioral Layer:** State the specific action. \"John, when you take credit for my ideas in meetings...\"\n2. **The Emotional Layer:** Name a professional concern. \"...it concerns me...\"\n3. **The Logical Layer:** State the implication. \"...because it suggests there is a misunderstanding about our roles.\" **Mindset:** I am not a victim of your behavior; I am a professional observer describing a breakdown in protocol.",
       inputs: [
         { q: "A colleague keeps interrupting you during your presentation after being asked to stop.", a: "\"John, when you keep interrupting me after we've already talked about this, it concerns me because it appears as though you don't know you're engaging in this behavior.\"", bundle: 'free' },
@@ -6555,8 +6555,8 @@ const collections = {
     },
     {
       name: "Selective Engagement",
-      guideFront: "Practice Selective Engagement when...",
-      guideBack: "A possible response.",
+      guideFront: "Refuse the bait when...",
+      guideBack: "A short, unbothered line or look",
       description: "Consciously decide who you respond to and which comments deserve your energy, refusing to take the \"bait\" thrown by toxic people.\n\n• It works because narcissists feed on your reaction; by choosing not to engage, you take away the reward and maintain your stance as the \"cause\" rather than the \"effect\".\n• Typical phrases: \"I'll let my work speak for itself.\", \"That's an interesting perspective.\", (Silence).\n\n1. **The 3-Second Look:** Maintain eye contact for three seconds without speaking. \"Look them in the eyes—let them cook their own goose.\"\n2. **The Deflection:** Acknowledge the comment without defending yourself. \"Frankly, your beliefs are of no consequence to me.\"\n3. **The Redirect:** Move the focus back to the task. \"I'm not interested in assessing blame; I'm here to solve the problem.\" **Mindset:** I only defend what I believe to be vulnerable. Since my worth is not vulnerable, your insults require no defense.",
       inputs: [
         { q: "A coworker says, \"I see you got the promotion—I guess kissing up to the boss pays off.\"", a: "(Maintain eye contact for 3 seconds, then turn back to your work without saying a word).", bundle: 'free' },
@@ -6571,8 +6571,8 @@ const collections = {
     },
     {
       name: "Empowering Statements",
-      guideFront: "Use an Empowering Statement when...",
-      guideBack: "A possible response.",
+      guideFront: "Offer two acceptable paths when...",
+      guideBack: "A choice where both keep your limit",
       description: "Offer the narcissist a choice between two paths, both of which result in your boundary being respected.\n\n• It works by creating the \"illusion of choice,\" satisfying the narcissist's need for control while you remain the one instructing how the relationship will proceed.\n• Typical phrases: \"Would you like to... or...\", \"Which one works best for you?\", \"When you're ready to... I'll be ready to...\".\n\n1. **Naming the Infraction:** Identify the behavior clearly. \"John, you just used another insult.\"\n2. **The Choice:** Offer two alternatives. \"Would you like to continue this talk without the insults, or do you need 10 minutes to collect your thoughts?\"\n3. **The Confirmation:** Use a tag question. \"That sounds reasonable, doesn't it?\" **Mindset:** I am the driver of this conversation. You choose the lane, but I choose the destination.",
       inputs: [
         { q: "A narcissist keeps interrupting you during a one-on-one meeting.", a: "\"John, I want to hear what you have to say, but not if you won't allow me to finish. Would you like to continue now without interrupting, or should we reschedule?\"", bundle: 'free' },
@@ -6587,8 +6587,8 @@ const collections = {
     },
     {
       name: "The \"Irrelevant\" Block",
-      guideFront: "Use the \"Irrelevant\" Block when...",
-      guideBack: "A possible response.",
+      guideFront: "Keep it strictly professional when...",
+      guideBack: "A line that removes the personal",
       description: "Formally declare that the relationship is strictly professional to stop the narcissist from using personal intimacy as a weapon.\n\n• It works by cutting the emotional cord; if there is \"no relationship,\" their personal judgments and attempts to hurt your feelings become logically impossible and irrelevant.\n• Typical phrases: \"Ours is a strictly professional relationship.\", \"There is no you, there is no me.\", \"I apologize if I led you to believe otherwise.\"\n\n1. **The Surprise:** Express that the personal comment was unexpected. \"I'm surprised you'd make a comment like that.\"\n2. **The Reality Check:** State the nature of the bond. \"To me, our relationship has always been purely professional.\"\n3. **The Cord-Cutting:** Refuse to engage on a personal level. \"I'd thank you for keeping it that way.\" **Mindset:** You cannot hurt me personally because you do not know me personally.",
       inputs: [
         { q: "A narcissist makes a disparaging comment about your clothing or appearance at work.", a: "\"I'm surprised you'd make a personal comment like that to me when, to me, our relationship has always been nothing but professional.\"", bundle: 'free' },
@@ -6605,8 +6605,8 @@ const collections = {
   oconnor4: [
     {
       name: "The LBNT System",
-      guideFront: "Use the LBNT system when giving feedback...",
-      guideBack: "One way to respond.",
+      guideFront: "Say liked best, then next time when...",
+      guideBack: "What worked, then one change",
       description: "Replace \"constructive criticism\" with the LBNT method (Liked Best / Next Time) to focus on future performance rather than past failures.\n\n• It works because focusing on the future removes the \"biochemical churn\" associated with being critiqued for a past error.\n• Typical phrases: \"I liked best...\", \"Next time, I believe...\", \"I enjoyed...\".\n\n1. **Liked Best:** State a specific positive observation. \"I liked the passion in your presentation today.\"\n2. **Next Time:** Give a specific instruction for the future. \"Next time, if you invest more in substantiating evidence, it will be even more compelling.\" **Mindset:** I am a coach focusing on growth, not a judge assessing blame.",
       inputs: [
         { q: "You are giving a teammate feedback on their recently finished project.", a: "\"I liked best how you organized the summary. Next time, if you include the revenue impact in the first slide, it will be even more persuasive.\"", bundle: 'free' },
@@ -6621,8 +6621,8 @@ const collections = {
     },
     {
       name: "D-A-R-T for Accountability",
-      guideFront: "Use D-A-R-T when setting professional boundaries...",
-      guideBack: "One way to respond.",
+      guideFront: "State your aim, then the problem when...",
+      guideBack: "Your aim, the problem and a redirect",
       description: "Use Describe, Address, Redirect, and Tag Question to correct behavior while maintaining leadership authority.\n\n• It works because it ties the behavior back to the primary goal, making the correction about the work rather than the person.\n• Typical phrases: \"I'm here to...\", \"However, when you...\", \"So what do you say we...\", \"Reasonable, isn't it?\".\n\n1. **Describe:** State your helpful intent. \"I'm here to find solutions so this doesn't happen again.\"\n2. **Address:** State how their actions distract from that goal. \"However, comments like that distract us from that goal.\"\n3. **Redirect:** Move the energy back to the task. \"So what do you say we get back to focusing on the solution?\"\n4. **Tag Question:** Get buy-in. \"That sounds reasonable, doesn't it?\" **Mindset:** I am the driver of this conversation. I am not letting toxic energy take hold.",
       inputs: [
         { q: "Your boss is micromanaging you and checking your work every hour.", a: "\"I'm here to get this report done perfectly. However, these hourly check-ins make it harder for me to focus. Let's wait until the end of the day for the full update. That's reasonable, isn't it?\"", bundle: 'free' },
@@ -6638,7 +6638,7 @@ const collections = {
     {
       name: "\"I\" Instead of \"You\"",
       guideFront: "Lead with an \"I\" statement when...",
-      guideBack: "One way to respond.",
+      guideBack: "An I-statement",
       description: "Swap blame-filled \"You\" language for \"I\" statements to slow down the other person's self-talk and reduce arguments.\n\n• It works because \"You\" triggers an immediate internal defense; \"I\" provides information about your state.\n• Typical phrases: \"I find it...\", \"I'm concerned...\", \"I was under the impression...\".\n\n1. **The 'I' Lead:** Start with your observation or feeling. \"I find it uncomfortable...\".\n2. **The Link:** Connect it to a professional standard. \"...because I appreciate our professional relationship.\"\n3. **The Question:** End with a tag to check for agreement. \"...that wouldn't be a problem, would it?\" **Mindset:** I am the cause, not the effect. I am laying down the ground rules for the relationship.",
       inputs: [
         { q: "A colleague is asking you nosy personal questions at your desk.", a: "\"I find it uncomfortable when you ask me personal questions like that because I appreciate our professional relationship and want to keep it that way. That wouldn't be a problem, would it?\"", bundle: 'free' },
@@ -6653,8 +6653,8 @@ const collections = {
     },
     {
       name: "Lead-in & Closing Lines",
-      guideFront: "Use an anchor line to start or end a talk when...",
-      guideBack: "One way to respond.",
+      guideFront: "Open or close with a set line when...",
+      guideBack: "A named opener or a closing question",
       description: "Use short, name-focused lead-ins to set the tone, and closed-ended questions to signify the conversation is finished.\n\n• It works because lead-ins signal a \"trained, polished professional,\" while closers prevent the \"Porky the Pig\" trailing-off effect.\n• Typical phrases: \"[Name], I need your help.\", \"[Name], I'm concerned.\", \"Are we on the same page?\", \"Can I count on you?\".\n\n1. **The Lead-in:** Use their name + \"I\" language + pause. \"Mark, I'm concerned.\"\n2. **The Meat:** Deliver the core message succinctly.\n3. **The Closer:** Use a closed-ended question. \"Can I count on your support?\" **Mindset:** I am Never Bound to any conversation. I signal the beginning and the end with authority.",
       inputs: [
         { q: "You need to tell an employee that their project has been canceled.", a: "\"John, I have some unfortunate news. [Meat] Can I count on your help with the transition?\"", bundle: 'free' },
@@ -6671,8 +6671,8 @@ const collections = {
   oconnor5: [
     {
       name: "The Steeple",
-      guideFront: "Use the Steeple when...",
-      guideBack: "A possible response or physical move.",
+      guideFront: "Bring your fingertips together when...",
+      guideBack: "A steeple, with or without words",
       description: "Place your fingertips together in the form of a steeple while keeping palms apart.\n\n• It works because it is a very powerful visual communication strategy that subconsciously makes others believe you are 100% confident in your message.\n• Typical phrases: \"I am very confident in...\", \"I believe that...\", \"My experience shows...\".\n\n1. **The Standard Steeple:** Forearms planted heavily on the table, fingers raised together. \"I’m very confident in my team's ability.\"\n2. **The 4-Second Rule:** Implement the pose for a few seconds during a key point, then return to interlocked fingers.\n3. **The Active Listener:** Using the posture while leaning forward to show you are engaged and powerful. **Mindset:** My physical presence confirms the strength of the words I am delivering.",
       inputs: [
         { q: "You are asked in an interview how confident you are in your management skills.", a: "(Place fingertips together) \"I am very confident in my leadership abilities; it’s one of my core strengths.\"", bundle: 'free' },
@@ -6687,8 +6687,8 @@ const collections = {
     },
     {
       name: "The Look Away",
-      guideFront: "Use the Look Away when...",
-      guideBack: "A possible response or physical move.",
+      guideFront: "Manage your gaze when...",
+      guideBack: "A held or broken gaze",
       description: "Manage eye contact by following the \"7-second rule\"—breaking contact after 7-10 seconds to avoid being perceived as aggressive.\n\n• It works because holding a glance too long (staring down) is interpreted by the human brain as a sign of aggression, dominance, or psychosis.\n• Typical phrases: (Silent maneuver), \"Let me check my notes...\", \"I see your point.\"\n\n1. **The Natural Break:** Looking down (not up) every seven seconds, then looking back into the iris.\n2. **The Icy Stare:** Keeping eyelids barely covering the top of the iris to project focus without aggression.\n3. **The Mirror Break:** Breaking eye contact when the other person does, maintaining a rhythmic social flow. **Mindset:** I use eye contact to connect with people, not to conquer them.",
       inputs: [
         { q: "You are in a job interview and have been maintaining intense eye contact for a full minute.", a: "(Look down briefly at your portfolio, then look back up into their eyes).", bundle: 'free' },
@@ -6703,8 +6703,8 @@ const collections = {
     },
     {
       name: "Territorial Markers",
-      guideFront: "Use territorial markers when...",
-      guideBack: "A possible response or physical move.",
+      guideFront: "Take up your space when...",
+      guideBack: "A move that claims space",
       description: "Intentionally take up space and use physical objects (notebooks, pens, chairs) to signal that you belong in the room.\n\n• It works because people who feel they don't belong try to take up as little space as possible; taking space signals high status and \"dominion.\"\n• Typical phrases: \"Let me pull this chair up.\", \"I'm going to set my things here.\", \"I'll take this spot.\"\n\n1. **The Chair Move:** Pulling your chair all the way to the desk or table to signal you are in your \"own home.\"\n2. **The Object Spread:** Placing your notebook, pen, or water in your designated area to prevent others from overflowing into it.\n3. **The Open Posture:** Sitting with chest to the sky and arms uncrossed to show you are not defensive. **Mindset:** I belong here as much as anyone else, and I am comfortable using the resources in this room.",
       inputs: [
         { q: "You walk into a job interview and the guest chair is set two yards away from the desk.", a: "(Pick up the chair and move it to a comfortable, close position before sitting down).", bundle: 'free' },
@@ -6719,8 +6719,8 @@ const collections = {
     },
     {
       name: "Vocal Power Tone",
-      guideFront: "Find your Vocal Power Tone when...",
-      guideBack: "A possible response or physical move.",
+      guideFront: "Speak from the diaphragm when...",
+      guideBack: "A clear, full-volume line",
       description: "Speak from the diaphragm at a volume that ensures your listener never has to ask you to repeat yourself.\n\n• It works because people perceive loud, clear talkers as more credible and confident; soft talking is often interpreted as a lack of conviction or worthiness.\n• Typical phrases: \"Good morning!\", \"I have a solution.\", \"Can I count on you?\"\n\n1. **The Power Hum:** Saying \"mm-hmm\" to find the vibration at the bottom of your throat.\n2. **The 20-Foot Rule:** Speaking loudly enough that someone 20 feet away could hear you without you feeling like you're yelling.\n3. **The Mic Rejection:** Choosing to speak without a microphone in a room of 50-100 people to maintain your natural dynamic. **Mindset:** My message is worthy of being heard, and I will not force my listener to do the work of hearing me.",
       inputs: [
         { q: "You are answering the phone in a professional environment.", a: "(Hum \"mm-hmm\" to find your tone) \"Good morning, Dan's Donuts, this is Dan. How can I help you?\"", bundle: 'free' },
@@ -6737,8 +6737,8 @@ const collections = {
   oconnor6: [
     {
       name: "Coping Statements",
-      guideFront: "Use a coping statement when...",
-      guideBack: "A possible response.",
+      guideFront: "Tell yourself one calm line when...",
+      guideBack: "A present-tense line to yourself",
       description: "Internal syntax used to regulate emotions when under pressure or about to lose control.\n\n• The brain processes instructions more efficiently when they are in the present tense and positively phrased.\n• Negative or future-focused commands (like \"I won't cry\") are often ignored or trigger the very behavior you are trying to avoid.\n• Mindset: \"My internal narrative determines my external response; I use syntax to stay in the logical side of my brain.\"",
       inputs: [
         { q: "You feel yourself starting to get angry during a confrontation.", a: "(Internal) \"I am cool, calm, and collected.\"", bundle: 'free' },
@@ -6753,8 +6753,8 @@ const collections = {
     },
     {
       name: "The Broken Record",
-      guideFront: "Use the Broken Record when...",
-      guideBack: "A possible response.",
+      guideFront: "Repeat your decision calmly when...",
+      guideBack: "The same line, again",
       description: "A persistence technique where you calmly repeat a valid message without adding any new justification or defense.\n\n• Introducing new thoughts or justifications gives the other person \"ammunition\" to keep you on the run.\n• Repetition signals that your original message is firm and non-negotiable, forcing the other person to eventually accept it.\n• Mindset: \"I only defend what I believe to be vulnerable. My stance is solid, so it needs no new explanation.\"",
       inputs: [
         { q: "Someone is pressuring you to finish a task faster than is safe.", a: "\"I understand you're in a hurry, however I need to do this correctly to ensure quality.\"", bundle: 'free' },
@@ -6769,8 +6769,8 @@ const collections = {
     },
     {
       name: "\"I Forgive You\"",
-      guideFront: "Use \"I forgive you\" when...",
-      guideBack: "A possible response.",
+      guideFront: "Answer the apology with forgiveness when...",
+      guideBack: "An explicit forgiveness",
       description: "Replacing the reflexive \"It's okay\" with forgiveness language when someone apologizes for mistreating you.\n\n• Saying \"It's okay\" when it wasn't okay five seconds ago tells your brain that your worth is low and that mistreatment is acceptable.\n• \"I forgive you\" acknowledges that a transgression occurred while maintaining your professional and personal standards.\n• Mindset: \"I value myself too much to tell people it's okay to mistreat me. Forgiveness is a gift I give to both of us.\"",
       inputs: [
         { q: "A coworker apologizes for snapping at you in a meeting.", a: "\"Thank you for the apology. I forgive you.\"", bundle: 'free' },
@@ -6785,8 +6785,8 @@ const collections = {
     },
     {
       name: "The Value Journal",
-      guideFront: "Use the Value Journal when...",
-      guideBack: "A possible response.",
+      guideFront: "Log the value you created when...",
+      guideBack: "An entry with the value counted",
       description: "A daily habit of quantifying the extra revenue or organizational value you create to prepare for negotiations.\n\n• Negotiations are based on data and revenue impact, not feelings or \"hard work.\"\n• By tracking \"invisible labor\" and \"beyond-paygrade\" tasks daily, you build an unarguable case for a raise or promotion.\n• Mindset: \"I am a professional whose value can be measured in numbers. I don't ask for a raise; I justify a return on investment.\"",
       inputs: [
         { q: "You filled in for a manager for two days while they were sick.", a: "(Write in journal) \"Acted as Interim Manager for 16 hours. Managed team of 10. (Value: $X based on manager's salary).\"", bundle: 'free' },
@@ -6803,8 +6803,8 @@ const collections = {
   oconnor7: [
     {
       name: "The Visual Hook for Names",
-      guideFront: "Create a visual hook for names when...",
-      guideBack: "A possible mental or verbal move.",
+      guideFront: "Picture a hook for the name when...",
+      guideBack: "An image, or the name used aloud",
       description: "Associate new names with established characters and humorous physical actions to anchor them in long-term memory.\n\n• The brain cannot remember every name through repetition alone; it needs \"hooks\" and creative stories.\n• It works because associating a stranger with a funny cartoon or movie character strikes an emotional chord that makes the name easier to recall.\n• Typical phrases: \"Hi [Name], nice to meet you [Name],\" \"Substitute your name for mine,\" \"Repeat it three times\".\n\n1. **The Character Association:** Visualize a famous character with the same name standing next to them. \"I met Patty and visualized Peppermint Patty standing beside her\".\n2. **The Physical Interaction:** Picture the character and the new person touching or doing something physical. \"Picture them holding hands or stroking their hair\".\n3. **The Verbal Anchor:** Repeat the name out loud at least three times during the first encounter. **Mindset:** I don't rely on my memory; I play games in my head to ensure people feel seen.",
       inputs: [
         { q: "You just met a woman named Patty at a networking event.", a: "(In your mind, visualize Peppermint Patty from the Peanuts standing beside her)", bundle: 'free' },
@@ -6819,8 +6819,8 @@ const collections = {
     },
     {
       name: "The OFF Technique",
-      guideFront: "Use the OFF technique when...",
-      guideBack: "A possible social move.",
+      guideFront: "Offer or ask a small favor when...",
+      guideBack: "An offer, a favor or a familiar line",
       description: "Use Offer, Favor, and Familiar language to lower social anxiety and build instant comfort with strangers.\n\n• Rejection of an offer breaks social protocol and stops fluidity; saying \"yes\" shows you are comfortable as if in your own home.\n• It works because simple favors force the other person to justify why they are helping you, which subconsciously builds their affinity for you.\n• Typical phrases: \"Would you like me to grab you one as well?\", \"Can you watch my stuff?\", \"Save my spot.\"\n\n1. **The Offer:** Make an \"as well\" offer to show a service attitude. \"I'm getting coffee, would you like one as well?\".\n2. **The Favor:** Ask for a simple, undeniable favor. \"Can you watch my bag while I step away for a minute?\".\n3. **Familiar Language:** Use phrases typically reserved for close friends to signal instant rapport. \"You're in charge while I'm gone!\". **Mindset:** I belong here, and I bring the dignity and fluidity to every social interaction.",
       inputs: [
         { q: "You are at a job interview and the receptionist offers you a glass of water.", a: "\"I would love one, thank you. That’s very kind of you.\"", bundle: 'free' },
@@ -6835,8 +6835,8 @@ const collections = {
     },
     {
       name: "The \"Person, Place, or Thing\" Opener",
-      guideFront: "Use a PPT opener when...",
-      guideBack: "A possible opening line.",
+      guideFront: "Open on something you notice when...",
+      guideBack: "A remark or question about what's here",
       description: "Start a conversation effortlessly by noticing one positive detail about the environment, the venue, or a specific person.\n\n• Fishing for \"bait\" makes it easy for others to communicate with you; the more difficult you are to talk to, the less people want you around.\n• It works because a positive observation about shared surroundings asks for nothing but an opinion, which lowers the barrier to entry.\n• Typical phrases: \"Did you happen to see [X]?\", \"I hear that [Y] is phenomenal,\" \"Are you here for [Z]?\"\n\n1. **The Thing:** A physical detail of the room. \"That antique tile on the floor is phenomenal\".\n2. **The Person:** A participant or someone involved in the event. \"My friend's son is playing the violin; are you here with someone?\".\n3. **The Place:** The venue itself or the location. \"This museum is beautiful; have you been here before?\". **Mindset:** I don't need to be interesting; I just need to notice one positive truth.",
       inputs: [
         { q: "You are parking your car or entering a building and want to find a positive detail to mention later.", a: "(Notice a cool architectural detail or a beautiful tree)", bundle: 'free' },
@@ -6851,8 +6851,8 @@ const collections = {
     },
     {
       name: "Empowering Praise",
-      guideFront: "Use empowering praise when...",
-      guideBack: "One way to phrase the compliment.",
+      guideFront: "Tell them to be proud when...",
+      guideBack: "Praise that hands them the pride",
       description: "Empower others by telling them they \"should be proud\" of themselves, shifting the focus from your validation to their self-esteem.\n\n• It is one thing to have someone proud of you, but an entirely different thing to be proud of yourself.\n• It works because this phrase gives the receiver \"permission\" to recognize their own worth, often resulting in an immediate posture change (chest up, chin up).\n• Typical phrases: \"You should be proud of yourself,\" \"Your passion comes through,\" \"I appreciate your level of professionalism.\"\n\n1. **The Shift:** Moving from \"I am proud of you\" to \"You should be proud.\"\n2. **The Personal Focus:** Compliment who they ARE, not just the job they did. \"I appreciate your professionalism\".\n3. **The Tag Question:** Engage them with a confirmation. \"Were you aware that people noticed that?\". **Mindset:** I use my words to help others see their own greatness.",
       inputs: [
         { q: "Your child gets straight A's on their report card and you want to do more than just praise them.", a: "\"I am so proud of you, sweetheart. And you know what? You should be really proud of yourself too.\"", bundle: 'free' },
@@ -6869,8 +6869,8 @@ const collections = {
   jimmy1: [
     {
       name: "Character Discernment",
-      guideFront: "Use character discernment when...",
-      guideBack: "A possible response.",
+      guideFront: "Watch how they treat others when...",
+      guideBack: "A telling question, or a quiet check",
       description: "Assess the core of a person by looking at how they treat people who can do nothing for them.\n\n• True kindness is consistent across all interactions, not just when someone is trying to impress you.\n• Look for \"green flags\" of empathy and selflessness early on.\n• Mindset: \"I am choosing my future based on their current patterns, not their potential.\"",
       inputs: [
         { q: "You are on a third date and want to see if they are actually a kind person.", a: "(observe how they speak to the waiter or a stranger in the street)", bundle: 'free' },
@@ -6886,7 +6886,7 @@ const collections = {
     {
       name: "Values Alignment",
       guideFront: "Align on values when...",
-      guideBack: "A possible response.",
+      guideBack: "Your value, then a question about theirs",
       description: "Explicitly discuss non-negotiables like religion, money, and kids early to ensure compatibility.\n\n• Love does not magically fix fundamental differences in goals or lifestyle.\n• Sharing your \"story\" and needs invites them to accept the real you.\n• Mindset: \"I would rather be rejected for who I am than chosen for a version of myself I have to maintain.\"",
       inputs: [
         { q: "You are getting serious and need to know their stance on having children.", a: "\"I've always envisioned having kids one day. What’s your vision for the future in that area?\"", bundle: 'free' },
@@ -6902,7 +6902,7 @@ const collections = {
     {
       name: "Accepting Influence",
       guideFront: "Accept their influence when...",
-      guideBack: "A possible response.",
+      guideBack: "A step toward their view",
       description: "Allow your partner’s perspective to affect your decisions and acknowledge that they are on your team.\n\n• Refusing to share power leads to a high risk of relationship collapse.\n• It means being malleable and responsive to constructive feedback.\n• Mindset: \"I trust my partner’s heart, so their feedback is information, not an attack.\"",
       inputs: [
         { q: "Your partner suggests a different way to handle a household budget.", a: "\"That’s a good point. Let’s look at your way and see if it works better.\"", bundle: 'free' },
@@ -6917,8 +6917,8 @@ const collections = {
     },
     {
       name: "Enforcing Mutual Respect",
-      guideFront: "Enforce mutual respect when...",
-      guideBack: "A possible response.",
+      guideFront: "Refuse the disrespect when...",
+      guideBack: "A limit, and what you'll do",
       description: "Establish a zero-tolerance policy for belittling, yelling, or name-calling during conflict.\n\n• Boundaries are about what YOU will do (e.g., leave the room), not controlling them.\n• Respect is level zero; without it, intimacy and trust cannot survive.\n• Mindset: \"I respect myself enough to walk away from a conversation that has become unsafe.\"",
       inputs: [
         { q: "Your partner starts raising their voice and calling you names.", a: "\"I want to hear what you have to say, but I won't be yelled at. I'm taking a 30-minute break.\"", bundle: 'free' },
@@ -6935,8 +6935,8 @@ const collections = {
   jimmy2: [
     {
       name: "The Soft Startup",
-      guideFront: "Use a soft startup when...",
-      guideBack: "A possible response.",
+      guideFront: "Start gently and check timing when...",
+      guideBack: "A gentle opener with a check-in",
       description: "Begin difficult conversations gently to predict a collaborative outcome rather than a fight.\n\n• The first minute of a discussion is extremely predictive of whether it will be productive or turn into a missed opportunity.\n• It involves checking for the partner's capacity and bringing up a concern without character assassination.\n• Mindset: \"If I don't start the conversation healthy, I shouldn't be surprised when it doesn't end healthy\".",
       inputs: [
         { q: "You have a concern about the household budget and want to talk now.", a: "\"Hey, can I talk to you about something that’s important to me? Is now a good time?\"", bundle: 'free' },
@@ -6951,8 +6951,8 @@ const collections = {
     },
     {
       name: "The Expression Formula",
-      guideFront: "Use the expression formula when...",
-      guideBack: "A possible response.",
+      guideFront: "Say fact, feeling, meaning, need when...",
+      guideBack: "The event, your feeling and your need",
       description: "Use the structure \"Fact → Feeling → Meaning → Need\" to relay information without blame.\n\n• Facts: State the observable event without \"always\" or \"never\".\n• Feelings: Name an actual emotion (lonely, overwhelmed, hurt).\n• Meaning: Share \"the story I'm telling myself\" to own your interpretation.\n• Need: Clearly state what would help you feel close in the future.\n• Mindset: \"I am sharing my inner world as information, not as a verdict on my partner's character\".",
       inputs: [
         { q: "You’ve done the dishes every night this week and feel ignored.", a: "\"I’ve done the dishes every night this week [Fact]. I’m feeling pretty dismissed [Feeling], and the story I’m telling myself is that you don't care about my time [Meaning].\"", bundle: 'free' },
@@ -6967,8 +6967,8 @@ const collections = {
     },
     {
       name: "Requests Over Criticism",
-      guideFront: "Choose a request over criticism when...",
-      guideBack: "A possible response.",
+      guideFront: "Turn the complaint into a request when...",
+      guideBack: "A specific, positive request",
       description: "Transform character attacks into specific, positive requests for action.\n\n• Criticism attacks the person (\"You are lazy\"); requests address a vulnerable need.\n• Character attacks trigger the partner's shame and lead to immediate defensiveness.\n• Mindset: \"Instead of telling them who they are, I will tell them what I need\".",
       inputs: [
         { q: "You feel like your partner never touches you anymore.", a: "\"I feel so loved when you touch me. Would you be willing to do that for me more?\"", bundle: 'free' },
@@ -6984,7 +6984,7 @@ const collections = {
     {
       name: "Owning the Narrative",
       guideFront: "Own your narrative when...",
-      guideBack: "A possible response.",
+      guideBack: "Your story, offered for checking",
       description: "Use the phrase \"The story I'm telling myself\" to invite clarification instead of war.\n\n• This separates your partner's actual intent from your interpretation of the event.\n• It reduces defensiveness because you aren't stating your interpretation as a fact about them.\n• Mindset: \"I am responsible for the meaning I give to things, and I'm willing to be wrong\".",
       inputs: [
         { q: "They didn't invite you to a lunch with their coworkers.", a: "\"The story I’m telling myself is that you’re embarrassed of me, but I’d love to hear your side.\"", bundle: 'free' },
@@ -7002,7 +7002,7 @@ const collections = {
     {
       name: "Validation Without Agreement",
       guideFront: "Validate their feeling when...",
-      guideBack: "A possible validation.",
+      guideBack: "The feeling, acknowledged as real",
       description: "Acknowledge that your partner’s feeling or experience is real and important to them, even if you disagree with their facts or accusations.\n\n• Validation is not about who is \"right\"; it is about saying \"I see that you are hurting, and your pain matters to me\".\n• It helps calm their nervous system and prevents the \"Protest Polka\" where they get louder to be heard.\n• Typcial phrases: \"I can see why you would feel that way,\" \"It makes sense that you'd be hurt,\" \"Your experience matters to me\".\n\n1. **Validating the Feeling:** Acknowledge the specific emotion named. \"I can see how that would make you feel lonely.\"\n2. **Validating the Experience:** Acknowledge the logic of their perspective. \"Given what happened, it makes sense that you felt overlooked.\"\n3. **Validating the Courage:** Thank them for being honest. \"Thank you for being brave enough to share that with me.\" **Mindset:** I am not a judge deciding if their feeling is \"rational\"; I am a partner acknowledging that it is real.",
       inputs: [
         { q: "Your partner says, \"You completely ignored me at the party!\" and you feel you didn't.", a: "\"I hear that you felt ignored and alone. I don't want you to feel that way.\"", bundle: 'free' },
@@ -7018,7 +7018,7 @@ const collections = {
     {
       name: "Compassionate Curiosity",
       guideFront: "Practice curiosity when...",
-      guideBack: "A possible question.",
+      guideBack: "A possible question",
       description: "Ask open-ended questions to understand the \"why\" behind your partner’s hurt or frustration.\n\n• Instead of defending your intent, become a detective trying to understand their internal world.\n• It shifts the energy from \"me vs. you\" to \"us vs. the misunderstanding\".\n• Typcial phrases: \"What led you to feel that way?\", \"What meaning did you give that?\", \"What do you wish happened differently?\".\n\n1. **The 'Meaning' Question:** Exploring their interpretation. \"What story did you tell yourself when I didn't call?\"\n2. **The 'Needs' Question:** Identifying the missing piece. \"What were you needing in that moment that you weren't getting?\"\n3. **The 'History' Question:** Checking for old wounds. \"Does this feel like a pattern from the past that's being triggered?\" **Mindset:** I trust my partner's heart, so if they are upset, there is something valuable for me to learn.",
       inputs: [
         { q: "Your partner snaps at you about something small like the dishes.", a: "\"I can tell you're frustrated. What’s actually been weighing on you today?\"", bundle: 'free' },
@@ -7034,7 +7034,7 @@ const collections = {
     {
       name: "Turning Toward Bids",
       guideFront: "Turn toward a bid when...",
-      guideBack: "A possible response.",
+      guideBack: "Attention, a word or a touch back",
       description: "Recognize and respond positively to your partner's small attempts at connection (bids) throughout the day.\n\n• A bid can be a look, a touch, a question, or a comment like \"Look at that bird!\".\n• Turning toward means giving undivided attention and showing interest; turning away means ignoring or staying on your phone.\n• Typcial phrases: \"That's interesting!\", \"Tell me more,\" (Eye contact/smile).\n\n1. **Informational Bids:** Responding to \"Did you see this?\". \"No, tell me more about it!\"\n2. **Emotional Bids:** Responding to \"I had a hard day\". \"I'm so sorry. Put your phone down and tell me everything.\"\n3. **Affectionate Bids:** Responding to a light touch or a look. (Return the touch or make eye contact and smile) **Mindset:** Every small interaction is a deposit into our \"Love Tank\" that protects us during future fights.",
       inputs: [
         { q: "Your partner says, \"You have to hear about what happened at work today!\"", a: "(Put your phone down and look at them) \"I'm listening. Tell me everything.\"", bundle: 'free' },
@@ -7049,8 +7049,8 @@ const collections = {
     },
     {
       name: "The \"Vulnerable\" Code Word",
-      guideFront: "Use the \"Vulnerable\" code word when...",
-      guideBack: "A possible response.",
+      guideFront: "Ask for safety, or give it when...",
+      guideBack: "The code word, or full attention",
       description: "Use a pre-agreed word (like \"vulnerable\") to signal that a conversation needs extra safety and care.\n\n• Hearing the word is a cue to stop all defensiveness, put away distractions, and become a safe harbor.\n• It protects the person sharing from the fear of being mocked or dismissed.\n• Typcial phrases: \"Vulnerable,\" \"I have a 'vulnerable' thing to share,\" \"Thank you for using the word\".\n\n1. **Initiating:** Using the word to open the talk. \"Vulnerable. I have something heavy on my heart.\"\n2. **Receiving:** Responding to the word. \"Thank you for telling me. I'm here and I'm listening.\"\n3. **The 'Safe Word' Reset:** Using it when a talk turns into a fight. \"Wait—Vulnerable. I'm feeling scared and I need you to be safe for me.\" **Mindset:** This word is a \"pause button\" for our egos; the relationship is more important than being right.",
       inputs: [
         { q: "You want to bring up a hurt but you're afraid they'll get defensive.", a: "\"Vulnerable. I need to share something that's been bothering me.\"", bundle: 'free' },
@@ -7067,8 +7067,8 @@ const collections = {
   jimmy4: [
     {
       name: "The 30-Minute Reset",
-      guideFront: "Initiate a 30-minute reset when...",
-      guideBack: "A possible response.",
+      guideFront: "Call a timed break when...",
+      guideBack: "A pause, with a time to return",
       description: "Pause a heated conversation when you or your partner feel emotionally \"flooded\" to prevent the conflict from turning into a fight.\n\n• Flooding is a physiological state where your heart rate rises, your voice gets louder, and the thinking part of your brain shuts off.\n• A mature break allows your nervous system to calm down so you can return with curiosity and respect.\n• Typical phrases: \"I’m getting too heated,\" \"I need a reset,\" \"I promise to come back to this in 30 minutes\".\n\n1. **Recognizing Flooding:** Identifying physical cues in yourself or your partner. Example: \"I notice my heart is racing; I need a break so I can listen to you correctly\".\n2. **Reassuring the Partner:** Clarifying that the break is for regulation, not abandonment. Example: \"I really care about this, but I need 30 minutes to calm down so I can be a safe partner for you\". **Mindset:** Taking a break is not an act of weakness; it is a mature commitment to protecting the relationship from hurtful words I might regret.",
       inputs: [
         { q: "You feel your heart racing and the urge to start yelling back.", a: "\"I’m noticing my heart is racing and I’m feeling overwhelmed. I need to take a 30-minute break.\"", bundle: 'free' },
@@ -7084,7 +7084,7 @@ const collections = {
     {
       name: "Safety Boundaries",
       guideFront: "Enforce a safety boundary when...",
-      guideBack: "A possible response.",
+      guideBack: "A limit, and your exit",
       description: "Establish a zero-tolerance policy for disrespectful behaviors like yelling or name-calling by removing yourself from the conversation.\n\n• Boundaries are about what YOU will do in response to mistreatment, not an attempt to control the other person.\n• Respect is \"Level Zero\"; without it, intimacy and trust cannot survive in the environment.\n• Typical phrases: \"I won't be yelled at,\" \"My feelings aren't up for debate,\" \"I'm leaving the room\".\n\n1. **Setting the Standard:** Communicating the limit during a calm moment. Example: \"I want us to be a team, so if things get to yelling or name-calling, I will have to step away\".\n2. **Executing the Exit:** Leaving the room when the boundary is crossed. Example: \"I will not continue this if I’m being called names. I’m going for a walk now\". **Mindset:** I respect myself and my partner enough to walk away from a conversation that has become unsafe.",
       inputs: [
         { q: "Your partner calls you a \"lazy piece of garbage\" during a fight about chores.", a: "\"I am more than happy to talk about the chores, but I won't be called names. I’m taking a break.\"", bundle: 'free' },
@@ -7099,8 +7099,8 @@ const collections = {
     },
     {
       name: "Radical Accountability",
-      guideFront: "Practice radical accountability when...",
-      guideBack: "A possible response.",
+      guideFront: "Own your part fully when...",
+      guideBack: "A clean apology and a fix",
       description: "Own your part of a conflict or mistake without bringing up your partner’s flaws as a counter-attack.\n\n• True accountability is admitting what you did was wrong and expressing remorse with a plan for change.\n• Being a \"lead apologizer\" means taking responsibility for your role even if you feel they were \"worse\".\n• Typical phrases: \"I’m sorry for my part,\" \"It makes sense why you're hurt,\" \"I will do X differently\".\n\n1. **Owning the Behavior:** Naming exactly what you did wrong without excuses. Example: \"I’m sorry I got defensive and interrupted you; that wasn't respectful\".\n2. **Validating the Impact:** Acknowledging how your action made them feel. Example: \"I can see how my being late made you feel like you weren't a priority\". **Mindset:** I value my partner's heart more than my pride or the need to be right.",
       inputs: [
         { q: "You realized you snapped at them earlier because you were stressed from work.", a: "\"I’m sorry I was short with you earlier. I was stressed, but that’s not an excuse to treat you poorly.\"", bundle: 'free' },
@@ -7115,8 +7115,8 @@ const collections = {
     },
     {
       name: "Validating Past Pain",
-      guideFront: "Validate past pain when...",
-      guideBack: "A possible response.",
+      guideFront: "Make room for the old hurt when...",
+      guideBack: "An invitation to tell you more",
       description: "Hold space for old hurts and neglect to be expressed so the relationship can move forward and rebuild trust.\n\n• Acknowledging and validating old anger is the fastest way to process it and prevent it from snowballing.\n• It involves inviting your partner to share how they felt during times when you weren't a good partner.\n• Typical phrases: \"I want to understand your pain,\" \"It makes sense that you don't trust me yet,\" \"Thank you for being honest about that\".\n\n1. **The Invitation:** Encouraging them to share the \"unresolved\" stuff. Example: \"I know I hurt you last year. I’m ready to listen to what that was like for you if you're willing to share\".\n2. **The Patient Validation:** Acknowledging their current lack of trust. Example: \"It makes perfect sense that you're waiting to see if my changes last. I’ve hurt you a lot in the past\". **Mindset:** I am not being labeled as the \"bad guy\" forever; I am being a mature partner who cares about healing the damage I caused.",
       inputs: [
         { q: "They bring up a mistake you made months ago and you feel like saying \"not this again!\"", a: "\"I hear that you're still hurting from what happened. Tell me more about what's on your heart.\"", bundle: 'free' },
@@ -7133,8 +7133,8 @@ const collections = {
   jimmy5: [
     {
       name: "Out-Loud Appreciation",
-      guideFront: "Express appreciation out-loud when...",
-      guideBack: "A possible response.",
+      guideFront: "Say thanks and why when...",
+      guideBack: "Specific thanks, with the reason",
       description: "Express specific gratitude for what your partner is doing right, focusing on the \"why\" to ensure they feel truly seen.\n\n• Unexpressed gratitude is often interpreted as entitlement.\n• Deposits into the \"emotional bank account\" protect the relationship during future conflicts.\n• Mindset: \"I will not let my partner’s efforts become wallpaper; I will name their value daily.\"",
       inputs: [
         { q: "You notice your partner handled a stressful morning with the kids very calmly.", a: "\"I really appreciated how patient you were with the kids this morning. It made the whole house feel more peaceful.\"", bundle: 'free' },
@@ -7149,8 +7149,8 @@ const collections = {
     },
     {
       name: "Non-Sexual Affection",
-      guideFront: "Show non-sexual affection when...",
-      guideBack: "A possible response.",
+      guideFront: "Reach out with touch when...",
+      guideBack: "A touch or a warm word",
       description: "Prioritize touch, hugs, and kisses with zero expectation of the bedroom to build deep emotional safety.\n\n• \"Foreplay starts at breakfast\"; women especially need to feel valued outside the bedroom to feel desire inside it.\n• It communicates that you value their personhood, not just their body.\n• Mindset: \"I am using touch to connect our hearts, not just to initiate a transaction.\"",
       inputs: [
         { q: "You are both leaving the house for work in the morning.", a: "(Give them a long hug and a gentle kiss) \"I'm going to miss you today. Have a good one.\"", bundle: 'free' },
@@ -7165,8 +7165,8 @@ const collections = {
     },
     {
       name: "Sharing the Mental Load",
-      guideFront: "Share the mental load when...",
-      guideBack: "A possible response.",
+      guideFront: "Take on a task unasked when...",
+      guideBack: "A task you take on",
       description: "Identify and take initiative on domestic chores and \"invisible labor\" without being asked.\n\n• Initiative is \"sexy\"; carrying the burden _with_ them builds trust.\n• Don't ask \"what can I do?\"; instead, run the diagnostics and fix what's broken.\n• Mindset: \"I am a co-CEO of this home, not a subordinate waiting for instructions.\"",
       inputs: [
         { q: "You notice the dishwasher is full of clean dishes.", a: "(Empty the dishwasher immediately without saying anything)", bundle: 'free' },
@@ -7181,8 +7181,8 @@ const collections = {
     },
     {
       name: "The Weekly Check-in",
-      guideFront: "Conduct a weekly check-in when...",
-      guideBack: "A possible response.",
+      guideFront: "Run the check-in when...",
+      guideBack: "A check-in question",
       description: "Use a structured, planned routine to discuss highlights, needs, and connection levels.\n\n• \"Marriages die in the conversations that never happen\".\n• It prevents resentment from building up by \"keeping short accounts\".\n• Mindset: \"This is a team meeting for our most important partnership; your heart is the agenda.\"",
       inputs: [
         { q: "It is Sunday evening and you want to start your agreed-upon check-in.", a: "\"I love you. Let's look into each other's eyes for a second before we start our check-in. How was your week in general?\"", bundle: 'free' },
@@ -7199,8 +7199,8 @@ const collections = {
   jimmy6: [
     {
       name: "Indifference to Manipulation",
-      guideFront: "Use indifference to manipulation when...",
-      guideBack: "A possible response.",
+      guideFront: "Give the bait almost nothing when...",
+      guideBack: "A short, flat line, or silence",
       description: "Use short, neutral responses to avoid being baited into a \"rigged\" fight where the other person is looking for an emotional reaction.\n\n• A narcissistic or toxic person uses your anger to validate their own importance; if they can make you explode, they still have control.\n• Indifference—giving as little energy as possible—is the only \"punishment\" that works because it makes the manipulator feel powerless.\n• Typical phrases: \"Okay.\", \"I hear you.\", \"That’s your perspective.\", (Silence). **Mindset:** \"I will not give my peace away as a reward for your toxicity.\".",
       inputs: [
         { q: "A toxic person says, \"You’re so selfish, no one else would ever put up with you.\".", a: "\"I hear that’s how you feel.\"", bundle: 'free' },
@@ -7215,8 +7215,8 @@ const collections = {
     },
     {
       name: "Authenticity Over Pleasing",
-      guideFront: "Choose authenticity over pleasing when...",
-      guideBack: "A possible response.",
+      guideFront: "Say what you really want when...",
+      guideBack: "An honest need or no",
       description: "Overcome \"Nice Guy\" or people-pleaser patterns by being honest about your needs, even if it causes temporary conflict.\n\n• People-pleasing is often a trauma response used to avoid abandonment, but it eventually leads to deep resentment.\n• Authenticity is more attractive and healthy than being a \"doormat\" who always agrees to keep the peace.\n• Typical phrases: \"Actually, I don't want to do that,\" \"This is what I need,\" \"I’m not okay with this.\" **Mindset:** \"I would rather be rejected for who I am than loved for a version of myself I have to maintain.\".",
       inputs: [
         { q: "You are asked to do a favor that you genuinely don't have the capacity for.", a: "\"I’d love to help, but I can’t do that this time. I need that time to recharge.\"", bundle: 'free' },
@@ -7231,8 +7231,8 @@ const collections = {
     },
     {
       name: "The Bare Minimum Standard",
-      guideFront: "Enforce the bare minimum standard when...",
-      guideBack: "A possible response.",
+      guideFront: "Hold the line on respect when...",
+      guideBack: "A limit, and what you'll do",
       description: "Get clear on non-negotiable standards for how you must be treated (no yelling, no name-calling, no belittling).\n\n• You deserve respect and kindness as a baseline; these are not \"extras\" you have to earn.\n• If you don't enforce your own \"floor,\" people will step on it to see how far you'll sink.\n• Typical phrases: \"I will not be yelled at,\" \"Respect is level zero,\" \"I’m leaving the room now.\" **Mindset:** \"I love myself enough to walk away from anyone who treats me like I’m worthless.\".",
       inputs: [
         { q: "Your partner starts calling you names during an argument.", a: "\"I’m happy to talk, but I won't be called names. I’m taking a 30-minute break.\"", bundle: 'free' },
@@ -7247,8 +7247,8 @@ const collections = {
     },
     {
       name: "Healing the Shame Trigger",
-      guideFront: "Manage a shame trigger when...",
-      guideBack: "A possible response.",
+      guideFront: "Admit the shame out loud when...",
+      guideBack: "The shame, named out loud",
       description: "Recognize when your partner’s feedback triggers a childhood wound of \"not being enough\" and choose a vulnerable response instead of a defensive attack.\n\n• Defensiveness is often a shield against the intense pain of feeling like a failure.\n• Choosing to be vulnerable about the _feeling_ of shame prevents the \"Counter-attack\" cycle.\n• Typical phrases: \"I'm feeling like a failure right now,\" \"The story I'm telling myself is that you think I'm bad,\" \"I'm struggling not to defend myself.\" **Mindset:** \"Your feedback is information about your needs, not a verdict on my soul.\".",
       inputs: [
         { q: "Your partner says, \"It hurt when you forgot our plans,\" and you feel a hot flash of shame.", a: "\"I’m starting to feel like a failure, and it’s making me want to get defensive. Give me a second.\"", bundle: 'free' },
@@ -13466,8 +13466,8 @@ const collectionsModeData = {
   parenting1: [
     {
       name: "Emotional First Aid",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response (strategy in brackets).",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Naming the Feeling and Taking the Side of Feelings. Use these when a child is in the \"fire\" of an emotion and cannot yet hear reason.\nThe goal is to provide \"emotional oxygen\" so the child can settle their system enough to hear the limit.",
       inputs: [
         { q: "They are crying because they can't have a second cookie.", a: "\"You really wish you could have another one. They are so good.\" (Taking Side)", bundle: 'pro' },
@@ -13480,8 +13480,8 @@ const collectionsModeData = {
   parenting2: [
     {
       name: "Tools for Structure",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Describe What You See, One-Word Cue, and Options Within the Limit. These strategies provide the \"Architecture\" of the home without resorting to nagging or anger.\nThey shift the focus from the parent's \"will\" to the objective reality and the child's own choices.",
       inputs: [
         { q: "You see their dirty laundry on the floor for the third time today.", a: "\"Laundry.\" (One-Word Cue)", bundle: 'pro' },
@@ -13494,8 +13494,8 @@ const collectionsModeData = {
   parenting3: [
     {
       name: "The Productive Struggle",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Naming the Struggle, Staying Close, and Brainstorm Inquiry. Use these when a child is facing a hurdle that is within their ability to solve, but outside their comfort zone.\nThe goal is to provide enough support that they don't give up, but not so much that they don't learn.",
       inputs: [
         { q: "They are whining \"I can't do it!\" while trying to zip a coat.", a: "\"That zipper is tricky. What if you hold the bottom while I pull?\" (Naming Struggle / Staying Close)", bundle: 'pro' },
@@ -13508,8 +13508,8 @@ const collectionsModeData = {
   parenting4: [
     {
       name: "Holding the Frame",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response (strategy in brackets).",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Respond vs. React and Expect Pushback. Use these to maintain your internal and external authority during daily friction.\nThe focus is on remaining the stable anchor so the child's storm doesn't become your storm.",
       inputs: [
         { q: "They are whining that you are \"the meanest parent\" for saying no to candy.", a: "\"I know, you really wish you could have it. And, the answer is still no.\" (Expect Pushback / Taking Sides)", bundle: 'pro' },
@@ -13521,8 +13521,8 @@ const collectionsModeData = {
   parenting5: [
     {
       name: "The Path of Repair",
-      guideFront: "Choose a strategy to repair when...",
-      guideBack: "A possible response (strategy in brackets).",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The Joy of Repentance, Modeling the Apology, and the Tangible Follow-up. Use these to heal the relationship after a \"rupture\" or a mistake.\nThe focus is on moving quickly from the failure to the restoration of connection.",
       inputs: [
         { q: "You realized you spoke too harshly to your child.", a: "\"I'm sorry, I was too hard on you. Will you forgive me?\" (Modeling the Apology)", bundle: 'pro' },
@@ -13784,8 +13784,8 @@ const collectionsModeData = {
   praxdread1: [
     {
       name: "Initial Shifts",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "STFU, The 2/3rds Rule, and The Tow Rope. Use these in the first 3 months of Dread to break the old beta-dynamic and build your own frame. Focus on becoming \"unattractive\" (to her old frame) before becoming \"desirable\" (to her new one).",
       inputs: [
         { q: "you walk in from a long day and she immediately starts complaining about the kids", a: "(STFU. Maintain eye contact. Give her a hug, then go to the gym.) (STFU / Tow Rope)", bundle: 'pro' },
@@ -13797,8 +13797,8 @@ const collectionsModeData = {
   praxdread2: [
     {
       name: "Marketing the Prize",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Scarcity Signaling, Loss Aversion, and Covert Marketing. These are your tools for shifting from a \"commodity\" husband to a \"luxury brand\" partner. The goal is to stop acting like a \"plow horse\" and start acting like a man who has options and high expectations.",
       inputs: [
         { q: "you've received five texts from her asking where you put the keys", a: "(Reply to the second or third one.) \"In the bowl. Busy now, see you later.\" (Scarcity / 2/3rds Rule)", bundle: 'pro' },
@@ -13810,8 +13810,8 @@ const collectionsModeData = {
   praxdread3: [
     {
       name: "Standards of the Prize",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Gym Bag Routine, \"This Isn't Working,\" and Leading Without Permission. Use these to shift from \"Commodity Husband\" to \"Luxury Brand Partner.\" The goal is to stop acting like a \"dependent\" and start acting like a man who has options and high expectations for his environment.",
       inputs: [
         { q: "she rejects your initiation for sex at 11 PM with a \"vicious rebuttal\"", a: "(Grab your bag and leave for a workout with a smile.) (Gym Bag Routine)", bundle: 'pro' },
@@ -13824,8 +13824,8 @@ const collectionsModeData = {
   praxdread4: [
     {
       name: "Emotional Regulation",
-      guideFront: "Choose a strategy to manage the tension when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Controlled Anger and Manufactured Outrage. Use these to stop being a \"pushover\" and start being the \"asshole\" who leads the emotional weather of the home. The goal is to move from a reactive state of being \"butthurt\" to a proactive state of using emotion as a tool for attraction and boundaries.",
       inputs: [
         { q: "she is being \"bratty\" and challenging your authority in front of friends", a: "\"Stop. We are not doing this here.\" (Match intensity level +1). (Controlled Anger)", bundle: 'pro' },
@@ -13835,8 +13835,8 @@ const collectionsModeData = {
     },
     {
       name: "Managing the Hamster",
-      guideFront: "Choose a strategy to manage the tension when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Accusation Responses and Navigating the Main Event. These strategies address the deep insecurities and \"hamster maze\" logic that arise as you become a luxury brand. You provide the mystery and the anxiety, but also the big \"EXIT\" sign of investment and sex.",
       inputs: [
         { q: "she accuses you of \"acting like you're single\" because you are scarcer", a: "\"I'm just a charming guy. Ask me in the morning.\" (Cocky/Funny Response)", bundle: 'pro' },
@@ -13848,8 +13848,8 @@ const collectionsModeData = {
   praxdread5: [
     {
       name: "Exercising Agency",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The Come to Jesus Moment, Control of the Treasury, and Stay/Go Congruence. These strategies represent the final stages of the Dread roadmap, where you transition from \"bailing water\" to \"steering the ship\". The goal is to stop being a \"passenger\" in your own life and start being the one who decides the terms of commitment.",
       inputs: [
         { q: "a Main Event has just finished and she is sobbing, asking what you want", a: "\"I see myself in a relationship with a woman who treats me with investment and respect.\" (Come to Jesus Moment)", bundle: 'pro' },
@@ -14527,94 +14527,94 @@ const collectionsModeData = {
   oconnor1: [
     {
       name: "Calling Them Out",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A tactical response [Strategy Name].",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Strategies for directly addressing inappropriate behavior by drawing sharp professional lines or exposing subtext. **Mindset:** Assertive neutrality; making the subtext the text.",
       inputs: [
-        { q: "A colleague asks a snide question about your promotion.", a: "\"It sounds to me like you're saying I'm incompetent and haven't earned this. Is that what you're saying?\" [The Clarifying Question]", bundle: 'free' },
-        { q: "A manager makes a \"joke\" about your appearance.", a: "\"I'm surprised you'd make a personal comment like that when our relationship has been professional.\" [The Professional Boundary]", bundle: 'pro' },
-        { q: "A peer tries to shame you in front of a group.", a: "\"Is this the appropriate venue for that type of question?\" [The Power of 'What']", bundle: 'pro' },
-        { q: "Someone implies you only got an opportunity through favors.", a: "\"When you say that, it sounds like you're impugning my integrity. Is that what you're trying to say?\" [The Clarifying Question]", bundle: 'pro' },
+        { q: "A colleague asks a snide question about your promotion.", a: "\"It sounds to me like you're saying I'm incompetent and haven't earned this. Is that what you're saying?\" [The Clarifying Question]", bundle: 'free', guideBack: "Their subtext, asked back plainly" },
+        { q: "A manager makes a \"joke\" about your appearance.", a: "\"I'm surprised you'd make a personal comment like that when our relationship has been professional.\" [The Professional Boundary (I'm Surprised)]", bundle: 'pro', guideBack: "Surprise, and the professional line" },
+        { q: "A peer tries to shame you in front of a group.", a: "\"Is this the appropriate venue for that type of question?\" [The Power of 'What']", bundle: 'pro', guideBack: "A 'what' question about their behavior" },
+        { q: "Someone implies you only got an opportunity through favors.", a: "\"When you say that, it sounds like you're impugning my integrity. Is that what you're trying to say?\" [The Clarifying Question]", bundle: 'pro', guideBack: "Their subtext, asked back plainly" },
       ]
     },
     {
       name: "Taking Control",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A tactical response [Strategy Name].",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Strategies to establish physical and verbal dominance in an environment and exit toxic interactions. **Mindset:** I have dominion; I am the cause.",
       inputs: [
-        { q: "You need to project authority against a workplace bully.", a: "(Face them head-on, eyelids slightly lowered over the iris, voice deep). [Power Tone and Icy Stare]", bundle: 'free' },
-        { q: "A conversation has become a waste of time.", a: "\"I value both of our time too much to continue this unproductive conversation. Goodbye.\" [The Power-Down]", bundle: 'pro' },
-        { q: "You are being ignored in a meeting.", a: "(Use territorial markers—pen, notebook—to take up space and lean forward). [Power Tone and Icy Stare]", bundle: 'pro' },
-        { q: "You need to shut down a looping argument.", a: "\"I think we both understand each other's position; I'm ending this conversation now. Have a pleasant day.\" [The Power-Down]", bundle: 'pro' },
+        { q: "You need to project authority against a workplace bully.", a: "(Face them head-on, eyelids slightly lowered over the iris, voice deep). [The Power Tone and Icy Stare]", bundle: 'free', guideBack: "A steady stare or low, firm voice" },
+        { q: "A conversation has become a waste of time.", a: "\"I value both of our time too much to continue this unproductive conversation. Goodbye.\" [The Power-Down (Exiting Conversations)]", bundle: 'pro', guideBack: "A closing line and your exit" },
+        { q: "You are being ignored in a meeting.", a: "(Use territorial markers—pen, notebook—to take up space and lean forward). [The Power Tone and Icy Stare]", bundle: 'pro', guideBack: "A steady stare or low, firm voice" },
+        { q: "You need to shut down a looping argument.", a: "\"I think we both understand each other's position; I'm ending this conversation now. Have a pleasant day.\" [The Power-Down (Exiting Conversations)]", bundle: 'pro', guideBack: "A closing line and your exit" },
       ]
     },
     {
       name: "Professional Leverage",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A tactical response [Strategy Name].",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Strategies for increasing persuasiveness and handling reputation attacks with results-oriented logic. **Mindset:** Service-oriented and evidence-based.",
       inputs: [
-        { q: "You are proposing a project to a busy manager.", a: "\"We should do this so you can have more time for yourself and not feel you have to do everything.\" [Benefit Statements]", bundle: 'free' },
-        { q: "Someone blames you for a client loss.", a: "\"I understand losing a client is hard, but my work speaks for itself and I'm surprised you'd attack me here.\" [Selective Engagement]", bundle: 'pro' },
-        { q: "You want to dismiss a petty insult about your work.", a: "\"Your beliefs are of no consequence to me; my track record speaks for itself.\" [Selective Engagement]", bundle: 'pro' },
-        { q: "You need to decline a request while sounding like a team player.", a: "\"I'd like to be helpful, however I'm afraid I have plans tonight, so I'm wondering if I can help in the morning?\" [Benefit Statements]", bundle: 'pro' },
+        { q: "You are proposing a project to a busy manager.", a: "\"We should do this so you can have more time for yourself and not feel you have to do everything.\" [Benefit Statements]", bundle: 'free', guideBack: "Your ask, tied to their benefit" },
+        { q: "Someone blames you for a client loss.", a: "\"I understand losing a client is hard, but my work speaks for itself and I'm surprised you'd attack me here.\" [Selective Engagement]", bundle: 'pro', guideBack: "A short, unbothered line or look" },
+        { q: "You want to dismiss a petty insult about your work.", a: "\"Your beliefs are of no consequence to me; my track record speaks for itself.\" [Selective Engagement]", bundle: 'pro', guideBack: "A short, unbothered line or look" },
+        { q: "You need to decline a request while sounding like a team player.", a: "\"I'd like to be helpful, however I'm afraid I have plans tonight, so I'm wondering if I can help in the morning?\" [Benefit Statements]", bundle: 'pro', guideBack: "Your ask, tied to their benefit" },
       ]
     },
   ],
   oconnor2: [
     {
       name: "Managing Your Time",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Use The B-I-B script to stop work-dumping and The Availability Monitor to manage interruptions. These tools help you reclaim your focused work hours and train others to respect your schedule. **Mindset:** My time is a resource that I must manage, or someone else will manage it for me.",
       inputs: [
-        { q: "You’ve been taking on too many favors and your own work is suffering.", a: "\"I've noticed I'm saying yes when I should be saying no. If you see me doing that, remind me of this talk. That way, I'll be more productive for the team.\" [The B-I-B Script]", bundle: 'pro' },
-        { q: "You want to prevent \"Time Suckers\" from walking into your cubicle all day.", a: "\"I'm implementing a red/green sign system. When it's red, I'm in deep focus mode. Can I count on your support with this?\" [The Availability Monitor]", bundle: 'pro' },
-        { q: "Someone asks \"Quick question?\" while you are clearly working on a deadline.", a: "(Point to your 'Unavailable' sign and stay focused). [The Availability Monitor]", bundle: 'pro' },
-        { q: "You want to set the groundwork for a new boundary with a needy coworker.", a: "\"Mary, I need your help. I've found I haven't been managing my time efficiently, so I'm asking you to help me stay on track.\" [The Availability Monitor]", bundle: 'pro' },
-        { q: "You want to explain why you are rejecting a task to keep the team strong.", a: "\"I've noticed I'm taking on work others can do. If I do that, it hinders your growth. Let's make sure you handle this one.\" [The B-I-B Script]", bundle: 'pro' },
+        { q: "You’ve been taking on too many favors and your own work is suffering.", a: "\"I've noticed I'm saying yes when I should be saying no. If you see me doing that, remind me of this talk. That way, I'll be more productive for the team.\" [The B-I-B Script]", bundle: 'pro', guideBack: "Your limit, their cue and the benefit" },
+        { q: "You want to prevent \"Time Suckers\" from walking into your cubicle all day.", a: "\"I'm implementing a red/green sign system. When it's red, I'm in deep focus mode. Can I count on your support with this?\" [The Availability Monitor]", bundle: 'pro', guideBack: "Your availability, shown or said" },
+        { q: "Someone asks \"Quick question?\" while you are clearly working on a deadline.", a: "(Point to your 'Unavailable' sign and stay focused). [The Availability Monitor]", bundle: 'pro', guideBack: "Your availability, shown or said" },
+        { q: "You want to set the groundwork for a new boundary with a needy coworker.", a: "\"Mary, I need your help. I've found I haven't been managing my time efficiently, so I'm asking you to help me stay on track.\" [The Availability Monitor]", bundle: 'pro', guideBack: "Your availability, shown or said" },
+        { q: "You want to explain why you are rejecting a task to keep the team strong.", a: "\"I've noticed I'm taking on work others can do. If I do that, it hinders your growth. Let's make sure you handle this one.\" [The B-I-B Script]", bundle: 'pro', guideBack: "Your limit, their cue and the benefit" },
       ]
     },
     {
       name: "Ending the Interaction",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Use The Diplomatic Decline to refuse a new request and Power-Down Phrases to exit an existing conversation. Use the Decline when the work hasn't started yet; use Power-Down when you are already in the room and need to leave. **Mindset:** I am in charge of my relationships and my exits.",
       inputs: [
-        { q: "A coworker asks you to do their report because they \"have a life.\"", a: "\"I'd like to be helpful, however unfortunately I have my own deadlines to meet. Could we look at it together Monday?\" [The Diplomatic Decline]", bundle: 'pro' },
-        { q: "You are in a meeting that has become a \"circular argument\" with no end in sight.", a: "\"We both understand our positions. Since there's nothing more to contribute, I'm ending this conversation. Have a good day.\" [Power-Down Phrases]", bundle: 'pro' },
-        { q: "Your boss asks you to switch to a new software that you know will slow you down.", a: "\"I'd like to help, but I'm afraid that switch would double my project time. Could we stick to the current plan for this month?\" [The Diplomatic Decline]", bundle: 'pro' },
-        { q: "You are caught in a gossip session and want to leave without looking like a \"worker bee.\"", a: "\"I have nothing valuable to add to this, so I'm going to get back to my project. You know where to find me if you need anything.\" [Power-Down Phrases]", bundle: 'pro' },
-        { q: "A client asks for a discount you aren't authorized to give.", a: "\"I understand the budget is tight, but unfortunately I can't change the rate. I can, however, offer a smaller package that fits your needs.\" [The Diplomatic Decline]", bundle: 'pro' },
+        { q: "A coworker asks you to do their report because they \"have a life.\"", a: "\"I'd like to be helpful, however unfortunately I have my own deadlines to meet. Could we look at it together Monday?\" [The Diplomatic Decline]", bundle: 'pro', guideBack: "A warm no with an alternative" },
+        { q: "You are in a meeting that has become a \"circular argument\" with no end in sight.", a: "\"We both understand our positions. Since there's nothing more to contribute, I'm ending this conversation. Have a good day.\" [Power-Down Phrases]", bundle: 'pro', guideBack: "A closing line and your exit" },
+        { q: "Your boss asks you to switch to a new software that you know will slow you down.", a: "\"I'd like to help, but I'm afraid that switch would double my project time. Could we stick to the current plan for this month?\" [The Diplomatic Decline]", bundle: 'pro', guideBack: "A warm no with an alternative" },
+        { q: "You are caught in a gossip session and want to leave without looking like a \"worker bee.\"", a: "\"I have nothing valuable to add to this, so I'm going to get back to my project. You know where to find me if you need anything.\" [Power-Down Phrases]", bundle: 'pro', guideBack: "A closing line and your exit" },
+        { q: "A client asks for a discount you aren't authorized to give.", a: "\"I understand the budget is tight, but unfortunately I can't change the rate. I can, however, offer a smaller package that fits your needs.\" [The Diplomatic Decline]", bundle: 'pro', guideBack: "A warm no with an alternative" },
       ]
     },
   ],
   oconnor3: [
     {
       name: "Disempowering the Narcissist",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Use the Communication Hamburger to address behavior, Selective Engagement to ignore bait, Empowering Statements to manage control, and the \"Irrelevant\" Block to cut emotional ties.\n\n• If they want a reaction, use Selective Engagement.\n• If they want control, use an Empowering Statement.\n• If they want intimacy (even negative), use the \"Irrelevant\" Block.\n• Mindset: I am the master of my conversations.",
       inputs: [
-        { q: "A narcissist says, \"You're only successful because you're lucky. Everyone knows you're incompetent.\"", a: "\"Frankly, your beliefs are of no consequence to me. Let's get back to the agenda.\" [Selective Engagement]", bundle: 'pro' },
-        { q: "Your coworker keeps asking why you're being \"so mean\" to them after you set a work boundary.", a: "\"It's an impossibility that I'm being mean to you, as that would imply a personal relationship that does not exist here.\" [The \"Irrelevant\" Block]", bundle: 'pro' },
-        { q: "They are yelling at you in your own office about a deadline.", a: "\"I don't allow that type of aggressive talk in my office. Would you like to continue this now with respect, or should we reschedule for tomorrow?\" [Empowering Statements]", bundle: 'pro' },
-        { q: "You notice they are \"forgetting\" your contributions to the team project for the third time.", a: "\"John, when my contributions are omitted from the summary, it concerns me because it appears you aren't aware of the work I've done.\" [The Communication Hamburger]", bundle: 'pro' },
-        { q: "They try to \"gotcha\" you by bringing up a mistake you made during your first week.", a: "(Maintain eye contact for 3 seconds, then turn to the person next to you) \"So, where were we on the budget?\" [Selective Engagement]", bundle: 'pro' },
+        { q: "A narcissist says, \"You're only successful because you're lucky. Everyone knows you're incompetent.\"", a: "\"Frankly, your beliefs are of no consequence to me. Let's get back to the agenda.\" [Selective Engagement]", bundle: 'pro', guideBack: "A short, unbothered line or look" },
+        { q: "Your coworker keeps asking why you're being \"so mean\" to them after you set a work boundary.", a: "\"It's an impossibility that I'm being mean to you, as that would imply a personal relationship that does not exist here.\" [The \"Irrelevant\" Block]", bundle: 'pro', guideBack: "A line that removes the personal" },
+        { q: "They are yelling at you in your own office about a deadline.", a: "\"I don't allow that type of aggressive talk in my office. Would you like to continue this now with respect, or should we reschedule for tomorrow?\" [Empowering Statements]", bundle: 'pro', guideBack: "A choice where both keep your limit" },
+        { q: "You notice they are \"forgetting\" your contributions to the team project for the third time.", a: "\"John, when my contributions are omitted from the summary, it concerns me because it appears you aren't aware of the work I've done.\" [The Communication Hamburger]", bundle: 'pro', guideBack: "The behavior, your concern and why" },
+        { q: "They try to \"gotcha\" you by bringing up a mistake you made during your first week.", a: "(Maintain eye contact for 3 seconds, then turn to the person next to you) \"So, where were we on the budget?\" [Selective Engagement]", bundle: 'pro', guideBack: "A short, unbothered line or look" },
       ]
     },
   ],
   oconnor4: [
     {
       name: "Influential Leadership",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Use Lead-in Lines to open the door, LBNT to guide performance, and D-A-R-T to enforce boundaries.\n\n• Professionalism is a game; these are the moves that separate the \"worker bees\" from the leaders.\n• Mindset: I bring the dignity to my social interactions.",
       inputs: [
         { q: "You need to tell a direct report that their presentation style needs to change.", a: "\"John, I'm concerned. [Lead-in] I liked your passion today. Next time, if you add more data, it will land better. [LBNT] Can I count on you for that? [Closer]\" [Dan 4 strategies]", bundle: 'pro' },
-        { q: "Your boss is constantly interrupting your focus time to give you \"ideas.\"", a: "\"I'm here to be your most productive team member. [D] However, these interruptions break my pattern. [A] Let's wait for my 'Green' block to discuss ideas. [R] That sounds reasonable, doesn't it? [T]\" [D-A-R-T]", bundle: 'pro' },
-        { q: "You want to praise a teammate in front of others without sounding like a \"mom.\"", a: "\"I really appreciate your attention to detail on this brochure. Were you aware that everyone here values your professionalism?\" [\"I\" instead of \"You\"]", bundle: 'pro' },
+        { q: "Your boss is constantly interrupting your focus time to give you \"ideas.\"", a: "\"I'm here to be your most productive team member. [D] However, these interruptions break my pattern. [A] Let's wait for my 'Green' block to discuss ideas. [R] That sounds reasonable, doesn't it? [T]\" [D-A-R-T for Accountability]", bundle: 'pro', guideBack: "Your aim, the problem and a redirect" },
+        { q: "You want to praise a teammate in front of others without sounding like a \"mom.\"", a: "\"I really appreciate your attention to detail on this brochure. Were you aware that everyone here values your professionalism?\" [\"I\" Instead of \"You\"]", bundle: 'pro', guideBack: "An I-statement" },
         { q: "You are delivering a correction to someone who is older or more experienced than you.", a: "\"I find it difficult when our deadlines shift without notice. [I-statement] I'd like to help, however unfortunately my schedule is full. [Diplomatic Decline] Can we pick a fixed update time?\" [Dan 4 / Dan 2 mix]", bundle: 'pro' },
       ]
     },
@@ -14622,8 +14622,8 @@ const collectionsModeData = {
   oconnor5: [
     {
       name: "Projecting Presence",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Use The Steeple to signal confidence in your message, Territorial Markers to show you belong, and Vocal Power Tone to command attention.\n\n• Presence is the total package of non-verbal cues that tell the room you are in charge of yourself.\n• Mindset: I bring the dignity to my social interactions.",
       inputs: [
         { q: "You are sitting in the lobby of a major corporation waiting for a high-stakes interview.", a: "(Set your bag on the chair next to you, sit with an open posture, and hum 'mm-hmm' to warm your voice).", bundle: 'pro' },
@@ -14637,133 +14637,133 @@ const collectionsModeData = {
   oconnor6: [
     {
       name: "Professional Resilience",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Use Coping Statements for internal control, The Broken Record for persistence, \"I Forgive You\" to maintain worth, and The Value Journal to quantify your power.\n\n• If you feel the pressure internally, regulate.\n• If the pressure is external, repeat.\n• If they mess up, forgive.\n• If you want more, prove it.\n• Mindset: I am the master of my internal and external environment.",
       inputs: [
-        { q: "You feel your face getting flushed because a colleague is mocking your idea.", a: "(Internal) \"I am cool, calm, and collected. My work speaks for itself.\" [Coping Statements]", bundle: 'pro' },
-        { q: "A coworker tries to bait you into explaining why you won't work through lunch.", a: "\"I understand there's a lot to do, however I use my lunch hour to recharge so I can be productive this afternoon.\" [The Broken Record]", bundle: 'pro' },
-        { q: "Your boss says \"I'm sorry I threw you under the bus in that meeting, I was stressed.\"", a: "\"I understand you were under pressure. I forgive you. Let's move past it.\" [\"I Forgive You\"]", bundle: 'pro' },
-        { q: "You are sitting at home feeling like you'll never get the recognition you deserve.", a: "(Open your Value Journal and record the three ways you saved the company money today). [The Value Journal]", bundle: 'pro' },
-        { q: "They keep asking \"Why can't you just do this one little favor?\" after you said no.", a: "\"That may be, but as I said, I have other plans and cannot take that on today.\" [The Broken Record]", bundle: 'pro' },
+        { q: "You feel your face getting flushed because a colleague is mocking your idea.", a: "(Internal) \"I am cool, calm, and collected. My work speaks for itself.\" [Coping Statements]", bundle: 'pro', guideBack: "A present-tense line to yourself" },
+        { q: "A coworker tries to bait you into explaining why you won't work through lunch.", a: "\"I understand there's a lot to do, however I use my lunch hour to recharge so I can be productive this afternoon.\" [The Broken Record]", bundle: 'pro', guideBack: "The same line, again" },
+        { q: "Your boss says \"I'm sorry I threw you under the bus in that meeting, I was stressed.\"", a: "\"I understand you were under pressure. I forgive you. Let's move past it.\" [\"I Forgive You\"]", bundle: 'pro', guideBack: "An explicit forgiveness" },
+        { q: "You are sitting at home feeling like you'll never get the recognition you deserve.", a: "(Open your Value Journal and record the three ways you saved the company money today). [The Value Journal]", bundle: 'pro', guideBack: "An entry with the value counted" },
+        { q: "They keep asking \"Why can't you just do this one little favor?\" after you said no.", a: "\"That may be, but as I said, I have other plans and cannot take that on today.\" [The Broken Record]", bundle: 'pro', guideBack: "The same line, again" },
       ]
     },
   ],
   oconnor7: [
     {
       name: "Social Initiation",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Use PPT Openers to start, the Visual Hook to remember names, and the OFF Technique to build instant rapport.\n\n• These moves establish you as a \"Cause\" of social fluidity rather than a victim of awkwardness.\n• Mindset: I belong here, and it is my job to make others feel comfortable.",
       inputs: [
-        { q: "You arrive at a party where you only know the host.", a: "\"I haven't had a chance to meet you yet. I'm [Your Name]. What's your name?\" [Visual Hook / 222]", bundle: 'pro' },
-        { q: "You want to start a conversation with the person standing next to you in a museum.", a: "\"That antique tile on the floor is phenomenal. Did you happen to see it on your way in?\" [PPT Opener]", bundle: 'pro' },
-        { q: "You just met 'Midge' and want to ensure you don't forget her name in five minutes.", a: "(Picture a tiny midge fly buzzing around her head, and repeat 'Midge' three times in the first minute). [Visual Hook]", bundle: 'pro' },
-        { q: "You are sitting next to a stranger and want to bridge into a deeper talk.", a: "\"I'm going to grab a water. Would you like me to grab you one as well?\" [OFF Technique]", bundle: 'pro' },
-        { q: "You need to step away from a new acquaintance to decompress.", a: "\"I'll be right back. Save my spot for me, would you?\" [OFF Technique]", bundle: 'pro' },
+        { q: "You arrive at a party where you only know the host.", a: "\"I haven't had a chance to meet you yet. I'm [Your Name]. What's your name?\" [The Visual Hook for Names]", bundle: 'pro', guideBack: "An image, or the name used aloud" },
+        { q: "You want to start a conversation with the person standing next to you in a museum.", a: "\"That antique tile on the floor is phenomenal. Did you happen to see it on your way in?\" [The \"Person, Place, or Thing\" Opener]", bundle: 'pro', guideBack: "A remark or question about what's here" },
+        { q: "You just met 'Midge' and want to ensure you don't forget her name in five minutes.", a: "(Picture a tiny midge fly buzzing around her head, and repeat 'Midge' three times in the first minute). [The Visual Hook for Names]", bundle: 'pro', guideBack: "An image, or the name used aloud" },
+        { q: "You are sitting next to a stranger and want to bridge into a deeper talk.", a: "\"I'm going to grab a water. Would you like me to grab you one as well?\" [The OFF Technique]", bundle: 'pro', guideBack: "An offer, a favor or a familiar line" },
+        { q: "You need to step away from a new acquaintance to decompress.", a: "\"I'll be right back. Save my spot for me, would you?\" [The OFF Technique]", bundle: 'pro', guideBack: "An offer, a favor or a familiar line" },
       ]
     },
   ],
   jimmy1: [
     {
       name: "Establishing the Baseline",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Use Character Discernment to pick the right person, Values Alignment to ensure you're heading the same way, and Enforcing Mutual Respect to keep the environment safe.\n\n• If they fail the character test, the values don't matter.\n• If they don't respect your boundaries, the relationship isn't a partnership.\n• Mindset: Safety first, compatibility second.",
       inputs: [
-        { q: "You notice they are incredibly kind to you but rude to their own mother.", a: "(observe this as a red flag for future behavior) [Character Discernment]", bundle: 'pro' },
-        { q: "You are deciding whether to move to a new city together.", a: "\"This is a big life goal for me. Does this align with the vision you have for us?\" [Values Alignment]", bundle: 'pro' },
-        { q: "During a heated talk about money, they roll their eyes and call your idea \"stupid.\"", a: "\"I won't continue this talk if I'm being mocked. Let's take a break.\" [Enforcing Mutual Respect]", bundle: 'pro' },
-        { q: "You want to know if they will actually 'show up' when things get hard.", a: "\"If things ever got rocky, would you be willing to go to counseling with me?\" [Character Discernment]", bundle: 'pro' },
-        { q: "You are discussing how you view 'faith' versus 'career' in terms of priority.", a: "\"I need to know where we both stand on what comes first in our home.\" [Values Alignment]", bundle: 'pro' },
+        { q: "You notice they are incredibly kind to you but rude to their own mother.", a: "(observe this as a red flag for future behavior) [Character Discernment]", bundle: 'pro', guideBack: "A telling question, or a quiet check" },
+        { q: "You are deciding whether to move to a new city together.", a: "\"This is a big life goal for me. Does this align with the vision you have for us?\" [Values Alignment]", bundle: 'pro', guideBack: "Your value, then a question about theirs" },
+        { q: "During a heated talk about money, they roll their eyes and call your idea \"stupid.\"", a: "\"I won't continue this talk if I'm being mocked. Let's take a break.\" [Enforcing Mutual Respect]", bundle: 'pro', guideBack: "A limit, and what you'll do" },
+        { q: "You want to know if they will actually 'show up' when things get hard.", a: "\"If things ever got rocky, would you be willing to go to counseling with me?\" [Character Discernment]", bundle: 'pro', guideBack: "A telling question, or a quiet check" },
+        { q: "You are discussing how you view 'faith' versus 'career' in terms of priority.", a: "\"I need to know where we both stand on what comes first in our home.\" [Values Alignment]", bundle: 'pro', guideBack: "Your value, then a question about theirs" },
       ]
     },
   ],
   jimmy2: [
     {
       name: "Expressing Yourself",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Use a Soft Startup to open the door, the Expression Formula to be clear, and Requests Over Criticism to ask for change.\n\n• If you lead with an attack, you've already lost the chance to be heard.\n• Focus on your feelings, not their flaws.\n• Mindset: \"I am fighting for connection, not to win an argument\".",
       inputs: [
-        { q: "You've been feeling unheard lately and want to bring it up on a Sunday night.", a: "\"I have something on my heart. Is now a safe time to talk?\" [The Soft Startup]", bundle: 'pro' },
-        { q: "You are about to tell your partner they are \"too sensitive\" about your jokes.", a: "\"I feel bad that I hurt you. What can I do differently in the future?\" [Requests Over Criticism]", bundle: 'pro' },
-        { q: "You want to explain why you were upset about them being late.", a: "\"When you were late, I felt disrespected. I told myself that you don't value our time together.\" [The Expression Formula]", bundle: 'pro' },
-        { q: "You want to turn your anger about the messy kitchen into a request.", a: "\"I’m feeling overwhelmed by the kitchen. Would you be willing to help me clear it tonight?\" [Requests Over Criticism]", bundle: 'pro' },
-        { q: "You want to bridge the gap after a small misunderstanding.", a: "\"The story I was telling myself was pretty negative. Can you help me understand what you meant?\" [Owning the Narrative]", bundle: 'pro' },
+        { q: "You've been feeling unheard lately and want to bring it up on a Sunday night.", a: "\"I have something on my heart. Is now a safe time to talk?\" [The Soft Startup]", bundle: 'pro', guideBack: "A gentle opener with a check-in" },
+        { q: "You are about to tell your partner they are \"too sensitive\" about your jokes.", a: "\"I feel bad that I hurt you. What can I do differently in the future?\" [Requests Over Criticism]", bundle: 'pro', guideBack: "A specific, positive request" },
+        { q: "You want to explain why you were upset about them being late.", a: "\"When you were late, I felt disrespected. I told myself that you don't value our time together.\" [The Expression Formula]", bundle: 'pro', guideBack: "The event, your feeling and your need" },
+        { q: "You want to turn your anger about the messy kitchen into a request.", a: "\"I’m feeling overwhelmed by the kitchen. Would you be willing to help me clear it tonight?\" [Requests Over Criticism]", bundle: 'pro', guideBack: "A specific, positive request" },
+        { q: "You want to bridge the gap after a small misunderstanding.", a: "\"The story I was telling myself was pretty negative. Can you help me understand what you meant?\" [Owning the Narrative]", bundle: 'pro', guideBack: "Your story, offered for checking" },
       ]
     },
   ],
   jimmy3: [
     {
       name: "Emotional Presence",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Use Validation Without Agreement to lower their guard, Compassionate Curiosity to find the root cause, and Turning Toward Bids to keep the connection alive daily.\n\n• Presence is about the _energy_ you bring, not just being in the same room.\n• Curiosity is the antidote to defensiveness.\n• Mindset: I am here, I am engaged, and you are my priority.",
       inputs: [
-        { q: "They are explaining why they are stressed about the family budget.", a: "\"I can see why that's weighing on you. What can I do to help carry that burden?\" [Validation Without Agreement]", bundle: 'pro' },
-        { q: "You realize you've been on your phone for 20 minutes while they've been talking.", a: "\"I'm sorry, I was distracted. Can you tell me that last part again? I want to hear it.\" [Turning Toward Bids]", bundle: 'pro' },
-        { q: "They say, \"I feel like I'm doing everything alone in this house.\"", a: "\"That sounds exhausting and lonely. What led you to feel that way specifically?\" [Compassionate Curiosity]", bundle: 'pro' },
-        { q: "They show you a photo of a dress they are thinking of buying.", a: "\"That looks great on you! What made you pick that style?\" [Turning Toward Bids]", bundle: 'pro' },
-        { q: "They share a hurt using the word \"Vulnerable.\"", a: "\"Thank you for trusting me with that. I'm listening with my whole heart.\" [The \"Vulnerable\" Code Word]", bundle: 'pro' },
+        { q: "They are explaining why they are stressed about the family budget.", a: "\"I can see why that's weighing on you. What can I do to help carry that burden?\" [Validation Without Agreement]", bundle: 'pro', guideBack: "The feeling, acknowledged as real" },
+        { q: "You realize you've been on your phone for 20 minutes while they've been talking.", a: "\"I'm sorry, I was distracted. Can you tell me that last part again? I want to hear it.\" [Turning Toward Bids]", bundle: 'pro', guideBack: "Attention, a word or a touch back" },
+        { q: "They say, \"I feel like I'm doing everything alone in this house.\"", a: "\"That sounds exhausting and lonely. What led you to feel that way specifically?\" [Compassionate Curiosity]", bundle: 'pro', guideBack: "A possible question" },
+        { q: "They show you a photo of a dress they are thinking of buying.", a: "\"That looks great on you! What made you pick that style?\" [Turning Toward Bids]", bundle: 'pro', guideBack: "Attention, a word or a touch back" },
+        { q: "They share a hurt using the word \"Vulnerable.\"", a: "\"Thank you for trusting me with that. I'm listening with my whole heart.\" [The \"Vulnerable\" Code Word]", bundle: 'pro', guideBack: "The code word, or full attention" },
       ]
     },
   ],
   jimmy4: [
     {
       name: "Managing the Heat",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Use the 30-Minute Reset to stop a fight before it starts and Safety Boundaries to ensure respect is maintained.\n\n• If you are too flooded to think, reset.\n• If they are being disrespectful, set a boundary.\n• Mindset: Safety is the foundation; without it, communication is impossible.",
       inputs: [
-        { q: "Your partner starts calling you \"stupid\" and \"selfish\" in a loud voice.", a: "\"I won't be yelled at or called names. I’m taking 30 minutes to get regulated.\" [Safety Boundaries]", bundle: 'pro' },
-        { q: "You feel your face getting flushed and you are starting to argue rather than listen.", a: "\"I can feel myself getting flooded. I need a 30-minute break so I can be respectful.\" [The 30-Minute Reset]", bundle: 'pro' },
-        { q: "They follow you to the kitchen while yelling after you asked for a break.", a: "\"I am enforcing my boundary and leaving the house for 30 minutes. I’ll be back soon.\" [Safety Boundaries]", bundle: 'pro' },
-        { q: "You want to pick up a difficult talk but want to set a \"safety net\" first.", a: "\"I want to talk about this, but can we agree to a 30-minute timeout if things get too heated?\" [The 30-Minute Reset]", bundle: 'pro' },
-        { q: "They mock your request for a reset by saying \"you're just running away.\"", a: "\"I’m not running away; I’m staying in control of myself so I don't hurt our relationship.\" [The 30-Minute Reset]", bundle: 'pro' },
+        { q: "Your partner starts calling you \"stupid\" and \"selfish\" in a loud voice.", a: "\"I won't be yelled at or called names. I’m taking 30 minutes to get regulated.\" [Safety Boundaries]", bundle: 'pro', guideBack: "A limit, and your exit" },
+        { q: "You feel your face getting flushed and you are starting to argue rather than listen.", a: "\"I can feel myself getting flooded. I need a 30-minute break so I can be respectful.\" [The 30-Minute Reset]", bundle: 'pro', guideBack: "A pause, with a time to return" },
+        { q: "They follow you to the kitchen while yelling after you asked for a break.", a: "\"I am enforcing my boundary and leaving the house for 30 minutes. I’ll be back soon.\" [Safety Boundaries]", bundle: 'pro', guideBack: "A limit, and your exit" },
+        { q: "You want to pick up a difficult talk but want to set a \"safety net\" first.", a: "\"I want to talk about this, but can we agree to a 30-minute timeout if things get too heated?\" [The 30-Minute Reset]", bundle: 'pro', guideBack: "A pause, with a time to return" },
+        { q: "They mock your request for a reset by saying \"you're just running away.\"", a: "\"I’m not running away; I’m staying in control of myself so I don't hurt our relationship.\" [The 30-Minute Reset]", bundle: 'pro', guideBack: "A pause, with a time to return" },
       ]
     },
     {
       name: "Rebuilding the Bond",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Use Radical Accountability to own your part and Validating Past Pain to heal old wounds.\n\n• Accountability fixes the present rupture.\n• Validation fixes the past foundation.\n• Mindset: The relationship is more important than my pride.",
       inputs: [
-        { q: "They are crying about how lonely they felt when you were working all those late nights last year.", a: "\"It makes so much sense why you felt abandoned. I’m so sorry I didn't see your pain then.\" [Validating Past Pain]", bundle: 'pro' },
-        { q: "You realize you were passive-aggressive all morning because you were annoyed.", a: "\"I’m sorry I was passive-aggressive earlier. That was my immaturity, and you didn't deserve it.\" [Radical Accountability]", bundle: 'pro' },
-        { q: "They say \"I don't even know if I can trust you anymore\" after a small lie.", a: "\"I broke your trust and that is on me. I want to do the work to show you I’m reliable.\" [Radical Accountability]", bundle: 'pro' },
-        { q: "You want to invite them to share a \"heavy\" thing they've been keeping inside.", a: "\"I know I haven't been a safe place for your hurts in the past. I want to change that. Tell me what's on your heart.\" [Validating Past Pain]", bundle: 'pro' },
-        { q: "You find yourself wanting to say \"I only did that because you were mean.\"", a: "\"Wait—I’m making excuses. I’m sorry for my part in that. I should have been more considerate.\" [Radical Accountability]", bundle: 'pro' },
+        { q: "They are crying about how lonely they felt when you were working all those late nights last year.", a: "\"It makes so much sense why you felt abandoned. I’m so sorry I didn't see your pain then.\" [Validating Past Pain]", bundle: 'pro', guideBack: "An invitation to tell you more" },
+        { q: "You realize you were passive-aggressive all morning because you were annoyed.", a: "\"I’m sorry I was passive-aggressive earlier. That was my immaturity, and you didn't deserve it.\" [Radical Accountability]", bundle: 'pro', guideBack: "A clean apology and a fix" },
+        { q: "They say \"I don't even know if I can trust you anymore\" after a small lie.", a: "\"I broke your trust and that is on me. I want to do the work to show you I’m reliable.\" [Radical Accountability]", bundle: 'pro', guideBack: "A clean apology and a fix" },
+        { q: "You want to invite them to share a \"heavy\" thing they've been keeping inside.", a: "\"I know I haven't been a safe place for your hurts in the past. I want to change that. Tell me what's on your heart.\" [Validating Past Pain]", bundle: 'pro', guideBack: "An invitation to tell you more" },
+        { q: "You find yourself wanting to say \"I only did that because you were mean.\"", a: "\"Wait—I’m making excuses. I’m sorry for my part in that. I should have been more considerate.\" [Radical Accountability]", bundle: 'pro', guideBack: "A clean apology and a fix" },
       ]
     },
   ],
   jimmy5: [
     {
       name: "Prioritizing the Bond",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Use Out-Loud Appreciation and Non-Sexual Affection to fill the \"Love Tank\" daily, and Sharing the Mental Load to prove you are a dedicated teammate.\n\n• These proactive moves create the safety needed for the Weekly Check-in to be successful.\n• Mindset: I am the lead servant in this relationship.",
       inputs: [
-        { q: "Your partner looks beautiful but also exhausted from a long day of chores.", a: "\"You're so beautiful, but I can see how hard you've been working. Let me finish the laundry while you rest.\" [Out-Loud Appreciation / Sharing the Mental Load]", bundle: 'pro' },
-        { q: "You want to make sure your partner knows they are more than just a \"roommate\" to you.", a: "(Reach for their hand and look them in the eyes) \"I'm so glad we're in this together. Thank you for being my person.\" [Non-Sexual Affection / Out-Loud Appreciation]", bundle: 'pro' },
-        { q: "You notice the \"Love Tank\" is getting low and you've both been a bit snappy.", a: "\"I miss us. Can we sit down tonight for 20 minutes and just check in on how we're doing?\" [The Weekly Check-in]", bundle: 'pro' },
-        { q: "You realize your partner has been the one doing all the \"invisible\" planning for the kids' school.", a: "\"I see all the work you put into their schedule. I'll take over the emails for the rest of the week.\" [Sharing the Mental Load]", bundle: 'pro' },
-        { q: "You want to build physical intimacy that doesn't feel like \"pressure.\"", a: "(Give them a long, lingering hug with no other move) \"I just needed a 'you' fix.\" [Non-Sexual Affection]", bundle: 'pro' },
+        { q: "Your partner looks beautiful but also exhausted from a long day of chores.", a: "\"You're so beautiful, but I can see how hard you've been working. Let me finish the laundry while you rest.\" [Out-Loud Appreciation]", bundle: 'pro', guideBack: "Specific thanks, with the reason" },
+        { q: "You want to make sure your partner knows they are more than just a \"roommate\" to you.", a: "(Reach for their hand and look them in the eyes) \"I'm so glad we're in this together. Thank you for being my person.\" [Non-Sexual Affection]", bundle: 'pro', guideBack: "A touch or a warm word" },
+        { q: "You notice the \"Love Tank\" is getting low and you've both been a bit snappy.", a: "\"I miss us. Can we sit down tonight for 20 minutes and just check in on how we're doing?\" [The Weekly Check-in]", bundle: 'pro', guideBack: "A check-in question" },
+        { q: "You realize your partner has been the one doing all the \"invisible\" planning for the kids' school.", a: "\"I see all the work you put into their schedule. I'll take over the emails for the rest of the week.\" [Sharing the Mental Load]", bundle: 'pro', guideBack: "A task you take on" },
+        { q: "You want to build physical intimacy that doesn't feel like \"pressure.\"", a: "(Give them a long, lingering hug with no other move) \"I just needed a 'you' fix.\" [Non-Sexual Affection]", bundle: 'pro', guideBack: "A touch or a warm word" },
       ]
     },
   ],
   jimmy6: [
     {
       name: "Defending Your Worth",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Use Indifference to Manipulation to stop \"rigged\" fights, Authenticity Over Pleasing to stay true to yourself, and The Bare Minimum Standard to enforce respect.\n\n• If they won't respect the standard, indifference is your exit strategy.\n• Safety is not just the absence of abuse, but the presence of integrity.\n• Mindset: I am the gatekeeper of my own peace.",
       inputs: [
-        { q: "A partner who has been hot-and-cold tries to bait you into a fight about \"why you're so distant.\".", a: "\"I’m prioritizing my peace right now. We can talk when things are calm.\" [Indifference to Manipulation]", bundle: 'pro' },
-        { q: "You want to say \"no\" to an event, but you're worried they'll think you're \"boring.\".", a: "\"I’m not up for it tonight. I’m going to stay in and rest.\" [Authenticity Over Pleasing]", bundle: 'pro' },
-        { q: "During a discussion about money, they roll their eyes and say \"Only you could be this dumb.\".", a: "\"That’s contempt. I won't be talked to that way. I'm taking 30 minutes.\" [The Bare Minimum Standard]", bundle: 'pro' },
-        { q: "You realize you’ve been doing 90% of the emotional labor just to keep them happy.", a: "\"I’m realizing this dynamic isn't equal, and I’m no longer okay with it.\" [Authenticity Over Pleasing]", bundle: 'pro' },
-        { q: "They demand you stop seeing a friend because they \"don't like them.\".", a: "\"I decide who I spend my time with. That is my boundary.\" [The Bare Minimum Standard]", bundle: 'pro' },
+        { q: "A partner who has been hot-and-cold tries to bait you into a fight about \"why you're so distant.\".", a: "\"I’m prioritizing my peace right now. We can talk when things are calm.\" [Indifference to Manipulation]", bundle: 'pro', guideBack: "A short, flat line, or silence" },
+        { q: "You want to say \"no\" to an event, but you're worried they'll think you're \"boring.\".", a: "\"I’m not up for it tonight. I’m going to stay in and rest.\" [Authenticity Over Pleasing]", bundle: 'pro', guideBack: "An honest need or no" },
+        { q: "During a discussion about money, they roll their eyes and say \"Only you could be this dumb.\".", a: "\"That’s contempt. I won't be talked to that way. I'm taking 30 minutes.\" [The Bare Minimum Standard]", bundle: 'pro', guideBack: "A limit, and what you'll do" },
+        { q: "You realize you’ve been doing 90% of the emotional labor just to keep them happy.", a: "\"I’m realizing this dynamic isn't equal, and I’m no longer okay with it.\" [Authenticity Over Pleasing]", bundle: 'pro', guideBack: "An honest need or no" },
+        { q: "They demand you stop seeing a friend because they \"don't like them.\".", a: "\"I decide who I spend my time with. That is my boundary.\" [The Bare Minimum Standard]", bundle: 'pro', guideBack: "A limit, and what you'll do" },
       ]
     },
   ],

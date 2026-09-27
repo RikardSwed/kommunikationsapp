@@ -6084,8 +6084,6 @@ const memorizeCollections = {
   parenting1: [
     {
       name: "The Principles of Heart",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The core concepts of connection and the Mamalakis approach.",
       cards: [
         { q: "What is the main goal of parenting in this model?", a: "To help the child become a person who can choose the good, not just someone who obeys out of fear.", bundle: 'free' },
@@ -6100,8 +6098,6 @@ const memorizeCollections = {
   parenting2: [
     {
       name: "The Principles of Limits",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The core concepts of creating structure and managing pushback.",
       cards: [
         { q: "What does \"Expect pushback, not compliance\" mean?", a: "Expect that children will protest limits as part of their learning process; don't take it personally.", bundle: 'free' },
@@ -6116,8 +6112,6 @@ const memorizeCollections = {
   parenting3: [
     {
       name: "The Mechanics of Learning",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The principles of productive struggle and long-term character building.",
       cards: [
         { q: "What is \"Productive Struggle\"?", a: "The process of a child working through a difficulty to develop competence and character.", bundle: 'free' },
@@ -6132,8 +6126,6 @@ const memorizeCollections = {
   parenting4: [
     {
       name: "The Principles of Calm",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theoretical foundation of self-regulation and pushback management.",
       cards: [
         { q: "What is the difference between reacting and responding?", a: "Reacting is an automatic emotional explosion; responding is a chosen, purposeful action.", bundle: 'free' },
@@ -6148,8 +6140,6 @@ const memorizeCollections = {
   parenting5: [
     {
       name: "The Principles of Return",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theoretical foundation of repentance and modeling.",
       cards: [
         { q: "What is the \"Sixth Principle\" of the Kingdom model?", a: "Teach the joy of repentance—the path of doing wrong and returning to the good.", bundle: 'free' },
@@ -6860,8 +6850,6 @@ const memorizeCollections = {
   praxdread1: [
     {
       name: "STFU",
-      guideFront: "A question about STFU.",
-      guideBack: "The answer.",
       description: "The theoretical foundation of silent frame.",
       cards: [
         { q: "What are the three channels of communication?", a: "55% body language, 38% intonation, and 7% actual words.", bundle: 'free' },
@@ -6873,8 +6861,6 @@ const memorizeCollections = {
     },
     {
       name: "The 2/3rds Rule",
-      guideFront: "A question about the 2/3rds Rule.",
-      guideBack: "The answer.",
       description: "",
       cards: [
         { q: "What is the core rule of 2/3rds?", a: "Give back to her 2/3rds of whatever non-sexual investment you receive from her.", bundle: 'free' },
@@ -6886,8 +6872,6 @@ const memorizeCollections = {
     },
     {
       name: "The 1,000-Foot Tow Rope",
-      guideFront: "A question about the Tow Rope.",
-      guideBack: "The answer.",
       description: "",
       cards: [
         { q: "What is the \"slack\" in the rope?", a: "The period where your self-improvement doesn't yet affect her frame or behavior.", bundle: 'free' },
@@ -6899,8 +6883,6 @@ const memorizeCollections = {
     },
     {
       name: "Standard-Setting Lead",
-      guideFront: "A question about Standard-Setting.",
-      guideBack: "The answer.",
       description: "",
       cards: [
         { q: "What is a \"Drunk Captain\"?", a: "A man who wants authority but cannot lead his own life or perform adult tasks competently.", bundle: 'free' },
@@ -6914,8 +6896,6 @@ const memorizeCollections = {
   praxdread2: [
     {
       name: "Luxury Branding Mechanics",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Key definitions for mastering the \"Marketing of Value.\"",
       cards: [
         { q: "What are the four concepts of luxury branding?", a: "Scarcity, Loss Aversion, Conditioning, and Framing.", bundle: 'free' },
@@ -6930,8 +6910,6 @@ const memorizeCollections = {
   praxdread3: [
     {
       name: "Enforcing Standards",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Key definitions for the transition from Beta to Alpha.",
       cards: [
         { q: "What is \"Magic Pussy Syndrome\"?", a: "A woman's ego-driven assumption that her sexual rejection should cause a man to spiral into misery.", bundle: 'free' },
@@ -6946,8 +6924,6 @@ const memorizeCollections = {
   praxdread4: [
     {
       name: "Emotional Mechanics",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Key definitions for mastering interpersonal friction.",
       cards: [
         { q: "What are the three components of communication?", a: "55% body language, 38% intonation, and 7% actual words.", bundle: 'free' },
@@ -6962,8 +6938,6 @@ const memorizeCollections = {
   praxdread5: [
     {
       name: "The Roadmap Principles",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Theoretical foundations of agency and the final Dread outcomes.",
       cards: [
         { q: "What defines a \"Main Event\"?", a: "The mother of all comfort tests where she realizes she might lose you and is out of ideas.", bundle: 'free' },
@@ -9026,8 +9000,6 @@ const memorizeCollections = {
   oconnor2: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Key concepts from Dan O’Connor’s \"Professional Boundaries\" teachings.",
       cards: [
         { q: "What are the four 'S's of the Diplomatic Decline?", a: "Sympathize, Say No, Say Why (Benefit), and Suggest Alternatives.", bundle: 'free' },
@@ -9045,8 +9017,6 @@ const memorizeCollections = {
   oconnor3: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Key principles for handling high-conflict and narcissistic personalities.",
       cards: [
         { q: "What is the \"Number One Rule\" when dealing with a narcissist?", a: "Don't defend yourself. We only defend against what we perceive to be vulnerable.", bundle: 'free' },
@@ -9063,8 +9033,6 @@ const memorizeCollections = {
   oconnor4: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Key concepts on leadership and professional image from Dan O'Connor.",
       cards: [
         { q: "What does LBNT stand for?", a: "Liked Best / Next Time.", bundle: 'free' },
@@ -9082,8 +9050,6 @@ const memorizeCollections = {
   oconnor5: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Key concepts on non-verbal power from Dan O'Connor.",
       cards: [
         { q: "What is the \"Power Hum\"?", a: "Saying \"mm-hmm\" to find the vibration at the bottom of the throat for a more credible power tone.", bundle: 'free' },
@@ -9101,8 +9067,6 @@ const memorizeCollections = {
   oconnor6: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Key concepts on persistence and internal regulation from Dan O'Connor.",
       cards: [
         { q: "What are the two components of a properly formed Coping Statement?", a: "It must be in the Present Tense and Positively Phrased.", bundle: 'free' },
@@ -9119,8 +9083,6 @@ const memorizeCollections = {
   oconnor7: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Fundamental concepts of social fluidity and connection from Dan O’Connor.",
       cards: [
         { q: "What does the acronym 'OFF' stand for?", a: "Offer, Favor, and Familiar language.", bundle: 'free' },
@@ -9138,8 +9100,6 @@ const memorizeCollections = {
   jimmy1: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The fundamental requirements for a relationship to survive beyond the infatuation stage.",
       cards: [
         { q: "What is the \"Level Zero\" requirement for any relationship?", a: "Safety. Without it, everything else (intimacy, friendship, playfulness) crumbles.", bundle: 'free' },
@@ -9154,8 +9114,6 @@ const memorizeCollections = {
   jimmy2: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Key concepts from Jimmy’s teachings on how conversations determine the life or death of a marriage.",
       cards: [
         { q: "What did Dr. John Gottman say about how marriages die?", a: "\"Marriages die in the conversations that never happen.\"", bundle: 'free' },
@@ -9171,8 +9129,6 @@ const memorizeCollections = {
   jimmy3: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Fundamental concepts of emotional responsiveness and \"Turning Toward\" according to Jimmy and Dr. Gottman.",
       cards: [
         { q: "What percentage of the time do happy couples \"turn toward\" bids for connection?", a: "86%. Divorcing couples only turn toward 33% of the time.", bundle: 'free' },
@@ -9188,8 +9144,6 @@ const memorizeCollections = {
   jimmy4: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Key concepts on how conflict resolution predicts the life or death of a relationship.",
       cards: [
         { q: "What did Dr. John Gottman say was the \"Single Greatest Predictor of Divorce\"?", a: "The presence of Contempt.", bundle: 'free' },
@@ -9207,8 +9161,6 @@ const memorizeCollections = {
   jimmy5: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Key concepts on proactive maintenance and the \"Love Tank\" from Jimmy’s teachings.",
       cards: [
         { q: "What did Dr. Sue Johnson say is the \"Virus\" in a relationship?", a: "Disconnection. (Conflict is just the \"inflammation\") [01:19, 408].", bundle: 'free' },
@@ -9224,8 +9176,6 @@ const memorizeCollections = {
   jimmy6: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Fundamental concepts on narcissism and self-worth according to Jimmy’s teachings.",
       cards: [
         { q: "What is the \"Kryptonite\" of every narcissist?", a: "Accountability..", bundle: 'free' },

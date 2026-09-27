@@ -3601,8 +3601,8 @@ const mindsetCollections = {
   parenting1: [
     {
       name: "Parent with the End in Mind",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Shifting focus from \"How do I get them to obey now?\" to \"Who do I want them to be as an adult?\".\nWhen you focus on the long-term, today's struggles become learning opportunities rather than personal attacks.",
       inputs: [
         { q: "I feel like a failure because they are shouting at me.", a: "\"This isn't a failure; it's a 'struggle' where they are learning to handle frustration.\"", bundle: 'pro' },
@@ -3614,8 +3614,8 @@ const mindsetCollections = {
   parenting2: [
     {
       name: "Expectations vs. Reactivity",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The \"Mamalakis balance\": holding very high expectations for behavior while maintaining very low emotional reactivity when they fail to meet them.",
       inputs: [
         { q: "I feel like they are disrespecting my authority when they don't obey.", a: "\"Their 'No' is just a struggle they are having. My job is to be the calm guide through that struggle.\"", bundle: 'pro' },
@@ -3627,8 +3627,8 @@ const mindsetCollections = {
   parenting3: [
     {
       name: "Growth through Friction",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Embracing the \"struggle\" as a sign that learning is happening, rather than a sign that something is wrong.",
       inputs: [
         { q: "I hate seeing my child so frustrated; it makes me feel like a bad parent.", a: "\"Their frustration is the sound of them growing. My job is to be the guide, not the rescuer.\"", bundle: 'pro' },
@@ -3640,8 +3640,8 @@ const mindsetCollections = {
   parenting4: [
     {
       name: "Authority is Calm",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Realizing that true authority doesn't need to shout to be heard. Calmness is the clearest signal that you are in control of yourself and the situation.",
       inputs: [
         { q: "If I don't get angry, they won't think I'm serious.", a: "\"My anger escalates the fight; my calmness holds the line. Calmness is the sound of authority.\"", bundle: 'pro' },
@@ -3653,8 +3653,8 @@ const mindsetCollections = {
   parenting5: [
     {
       name: "Repair is the Learning",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Realizing that the goal of parenting isn't to never have conflicts, but to use conflicts as the classroom for learning how to return to love.",
       inputs: [
         { q: "I feel like a failure when we have a big fight.", a: "\"A fight is just a 'struggle' in progress. The real win is how we repair it afterward.\"", bundle: 'pro' },
@@ -3996,8 +3996,8 @@ const mindsetCollections = {
   praxdread1: [
     {
       name: "Luxury is Covert",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Understanding that women hate \"sales\" but love \"marketing\". If you explain the rules of Dread, you kill the magic and signal desperation.",
       inputs: [
         { q: "I want to tell her that I'm lifting so she'll find me sexier", a: "\"Telling her is 'sales.' Letting her see the muscles is 'marketing.' Let the hamster find the exit on its own.\"", bundle: 'pro' },
@@ -4009,8 +4009,8 @@ const mindsetCollections = {
   praxdread2: [
     {
       name: "Luxury is Earned",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Realizing that you cannot market a product that doesn't exist. You must do the passive work of self-improvement to become a legitimate luxury brand. You are what you do; do attractive things and the high-status identity will follow.",
       inputs: [
         { q: "I'm afraid she'll think I'm being \"manipulative\"", a: "\"Marketing isn't manipulation; it's communicating value. My value is real.\"", bundle: 'pro' },
@@ -4022,8 +4022,8 @@ const mindsetCollections = {
   praxdread3: [
     {
       name: "You Are the Gatekeeper",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Realizing that while she may be the gatekeeper of sex, you are the gatekeeper of the relationship. You decide if she is providing enough value to earn your commitment, attention, and resources.",
       inputs: [
         { q: "I feel like a \"failure\" because she won't fuck me", a: "\"My job is to be fuckable; her job is to fuck me. If she fails her job, I find her replacement.\"", bundle: 'pro' },
@@ -4035,8 +4035,8 @@ const mindsetCollections = {
   praxdread4: [
     {
       name: "Anger is a Tool",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Breaking the \"Blue Pill\" conditioning that anger is always shameful. Anger is the social signal that a boundary has been crossed.",
       inputs: [
         { q: "I'm afraid that getting angry makes me a \"bad person.\"", a: "\"My anger is valuable. It protects my frame and marks my boundaries.\"", bundle: 'pro' },
@@ -4048,8 +4048,8 @@ const mindsetCollections = {
   praxdread5: [
     {
       name: "Responsibility vs Blame",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Realizing that while she may be \"to blame\" for her behavior, only you are responsible for the quality of your life and your reactions.",
       inputs: [
         { q: "I feel like a \"victim\" because she cheated.", a: "\"I am not a victim. I am the leader of my own life, and I am responsible for what I tolerate.\"", bundle: 'pro' },
@@ -5271,8 +5271,8 @@ const mindsetCollections = {
   oconnor2: [
     {
       name: "Substance Over Form",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The internal shift required to stop worrying about \"the perfect words\" and start focusing on your \"true intention.\" If your intention is to be a loving, peaceful, and professional person, the words will follow naturally.",
       inputs: [
         { q: "I'm afraid I'll stumble over my words when I say no.", a: "\"The form (words) is less important than the substance (intention). If my intention is to be a productive teammate, they will feel that regardless of stumbles.\"", bundle: 'pro' },
@@ -5283,8 +5283,8 @@ const mindsetCollections = {
     },
     {
       name: "We Train People How To Treat Us",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Accepting total responsibility for the patterns of behavior you allow in your workspace. What gets rewarded gets repeated. If you allow the \"Time Sucker\" to stay, you are rewarding them with your attention.",
       inputs: [
         { q: "People always dump work on me; it's so unfair.", a: "\"The first time was about them. The 10th time is about me. I am training them that I am the one who always says yes.\"", bundle: 'pro' },
@@ -5297,8 +5297,8 @@ const mindsetCollections = {
   oconnor3: [
     {
       name: "Substance Over Form",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The internal shift from \"What will they think of me?\" to \"Who am I being in this moment?\"",
       inputs: [
         { q: "I'm afraid I'll look mean if I use the \"Irrelevant\" block.", a: "\"I am made of love, and setting professional boundaries is an act of self-love. I refuse to let your chaos dictate who I am today.\"", bundle: 'pro' },
@@ -5311,8 +5311,8 @@ const mindsetCollections = {
   oconnor4: [
     {
       name: "Influential Leadership",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The internal shifts from \"Reaction\" to \"Intention.\" Leaders are the cause, never just the effect.",
       inputs: [
         { q: "I have to explain myself so they understand my side.", a: "\"We only defend what we believe to be vulnerable. My position is based on data and merit; explaining makes it look weak. I choose to state the instruction and move on.\"", bundle: 'pro' },
@@ -5325,8 +5325,8 @@ const mindsetCollections = {
   oconnor5: [
     {
       name: "Executive Presence",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The internal shifts required to stop \"acting\" like an intern and start \"being\" a leader.",
       inputs: [
         { q: "I don't want to look like I'm \"too much\" or arrogant.", a: "\"Dignity is not arrogance. Taking up space and speaking clearly is a favor to the room; it makes it easier for everyone to know where they stand.\"", bundle: 'pro' },
@@ -5339,8 +5339,8 @@ const mindsetCollections = {
   oconnor6: [
     {
       name: "Mindful Resilience",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The internal shifts required to move from \"Victim of Circumstance\" to \"Cause of Change.\"",
       inputs: [
         { q: "I'm afraid if I keep repeating myself I'll look stupid.", a: "\"The moment I introduce a new defense, I have lost. I choose the power of the Broken Record to show my message is valid and unchanging.\"", bundle: 'pro' },
@@ -5353,8 +5353,8 @@ const mindsetCollections = {
   oconnor7: [
     {
       name: "Substance Over Form",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The internal posture of a person who values connection over \"getting the words right.\"",
       inputs: [
         { q: "I'm too nervous to start a conversation with that executive.", a: "\"I belong here as much as anyone else. I am comfortable as if I were in my own home, and I have a service attitude to offer.\"", bundle: 'pro' },
@@ -5367,8 +5367,8 @@ const mindsetCollections = {
   jimmy1: [
     {
       name: "The Foundation of Safety",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The internal posture required to build a relationship that lasts. It shifts from \"fear of loss\" to \"commitment to self-worth.\"",
       inputs: [
         { q: "I'm afraid if I talk about my non-negotiables, they'll leave.", a: "\"If they leave because of my values, they weren't my person anyway. Better to know now than in ten years.\"", bundle: 'pro' },
@@ -5381,8 +5381,8 @@ const mindsetCollections = {
   jimmy2: [
     {
       name: "Healthy Expression",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The internal shifts required to move from \"protecting yourself\" to \"prioritizing the relationship\".",
       inputs: [
         { q: "I shouldn't have to tell them what I need; they should just know.", a: "\"Assuming they can read my mind is an unhealthy need. I choose the maturity of being clear and direct.\"", bundle: 'pro' },
@@ -5395,8 +5395,8 @@ const mindsetCollections = {
   jimmy3: [
     {
       name: "Listening & Presence",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The internal posture of being a \"Detective of the Heart\" rather than a \"Judge of the Facts\".",
       inputs: [
         { q: "If I validate them, they'll think they're \"right\" and I'm \"wrong.\"", a: "\"Validation isn't about facts; it's about acknowledging their humanity. We can handle the facts once they feel safe.\"", bundle: 'pro' },
@@ -5409,8 +5409,8 @@ const mindsetCollections = {
   jimmy4: [
     {
       name: "Handling Conflict",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The internal posture needed to move from \"US vs. THEM\" to \"US vs. THE PROBLEM\".",
       inputs: [
         { q: "If I walk away for a break, they'll think I don't care.", a: "\"Leaving a fight to get regulated is an act of love for the relationship. I am protecting us from my own worst impulses.\"", bundle: 'pro' },
@@ -5423,8 +5423,8 @@ const mindsetCollections = {
   jimmy5: [
     {
       name: "Nurturing Connection",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The internal posture of a partner who views the relationship as a \"third entity\" that needs constant watering and sunlight.",
       inputs: [
         { q: "I shouldn't have to \"work\" this hard if we truly love each other.", a: "\"Love is the fuel, but intentionality is the engine. Even the best car doesn't run without maintenance.\"", bundle: 'pro' },
@@ -5437,8 +5437,8 @@ const mindsetCollections = {
   jimmy6: [
     {
       name: "Defending Your Worth",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The internal shifts required to move from \"protecting them\" to \"honoring yourself.\"",
       inputs: [
         { q: "If I set this boundary, I’m being \"mean\" or \"abandoning\" them.", a: "\"They abandon me every time they mistreat me. Honoring my limits is an act of love for both of us.\".", bundle: 'pro' },
