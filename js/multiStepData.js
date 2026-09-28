@@ -6039,6 +6039,94 @@ const multiStepCollections = {
             { front: "The 1,000-Foot Tow Rope — (You return from the gym and she is using the \"Silent Treatment\").", back: "\"The birds are still singing. I'm going to make some eggs. Do you want some?\" (Need nothing. Stay the Oak.)", guideFront: "Keep to your own course when...", guideBack: "An autonomous lead" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "You are preparing your clean meal prep on Sunday afternoon. She snaps: \"So my cooking isn't good enough for you anymore?\"",
+          steps: [
+            { front: "STFU (The Superpower) — she waits for you to apologize or offer long explanations.", back: "(Silence. Do not DEER. Continue prepping your food calmly.)", guideFront: "Stop explaining and go quiet when...", guideBack: "Silence, or one short line" },
+            { front: "Standard-Setting Lead — she demands you eat her sugary dessert instead.", back: "\"I'm sticking to my health plan. I'll make my own meals this week.\"", guideFront: "Handle it your way when...", guideBack: "A proactive decision" },
+            { front: "The 1,000-Foot Tow Rope — she sulks on the couch and gives you cold shoulder treatment.", back: "(Stay completely unbothered and execute your afternoon reading) \"I'm heading to the study.\"", guideFront: "Keep to your own course when...", guideBack: "An autonomous lead" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You decide to lock your home office door during client focus calls. She rattles the handle and shouts that you are being secretive.",
+          steps: [
+            { front: "STFU (The Superpower) — she demands you open the door immediately to argue.", back: "(Maintain quiet focus until your work block finishes. Do not argue through the door.)", guideFront: "Stop explaining and go quiet when...", guideBack: "Silence, or one short line" },
+            { front: "Standard-Setting Lead — you step out after the call and she confronts you in the hall.", back: "\"Office doors stay locked during client blocks. I work here until four PM.\"", guideFront: "Handle it your way when...", guideBack: "A proactive decision" },
+            { front: "The 1,000-Foot Tow Rope — she threatens to go visit her mother for the weekend.", back: "\"Have a great trip. I'll see you on Sunday evening.\"", guideFront: "Keep to your own course when...", guideBack: "An autonomous lead" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Calibrating Under Fire",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A sequence for navigating emotional distance and testing:\n1. **The 2/3rds Rule** — withdraw excess investment and match her tone at a calibrated ratio\n2. **STFU (The Superpower)** — refuse to fill the uncomfortable silence with nervous chatter\n3. **Standard-Setting Lead** — take executive action on your household responsibilities\n\nWhy this order: calibrating investment removes unearned rewards, silence prevents explanation traps, and direct leadership demonstrates grounded frame.\n\nWhat people do instead: over-invest to buy peace, chatter nervously, and surrender control.\n\nMindset: calibrate investment, embrace silence, lead directly.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She arrives home irritated and ignores your greeting to see if you will scramble to comfort her.",
+          steps: [
+            { front: "The 2/3rds Rule — she offers cold monosyllabic answers to your initial question.", back: "(Calibrate investment down. Offer warm attention for two-thirds of her engagement.)", guideFront: "Give back a little less when...", guideBack: "A calibrated investment" },
+            { front: "STFU (The Superpower) — she sits across the room waiting for you to ask what is wrong.", back: "(Close your mouth. Read your book peacefully without fishing for her mood.)", guideFront: "Stop explaining and go quiet when...", guideBack: "Silence, or one short line" },
+            { front: "Standard-Setting Lead — she complains that dinner isn't ready on her unstated schedule.", back: "\"I'm cooking steak at seven. It will be ready then.\"", guideFront: "Handle it your way when...", guideBack: "A proactive decision" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She texts short standoffish replies after you refuse to fund an unapproved shopping spree.",
+          steps: [
+            { front: "The 2/3rds Rule — she sends three cold one-word texts during your work day.", back: "(Reply to two of them cleanly without pleading or extra emojis.)", guideFront: "Give back a little less when...", guideBack: "A calibrated investment" },
+            { front: "STFU (The Superpower) — when you meet at home, she tries to provoke a fight about your text tone.", back: "(Hold steady eye contact and offer zero verbal defense.)", guideFront: "Stop explaining and go quiet when...", guideBack: "Silence, or one short line" },
+            { front: "Standard-Setting Lead — she refuses to plan the weekend family errands.", back: "\"I've set the weekend errand schedule for Saturday morning. We launch at nine.\"", guideFront: "Handle it your way when...", guideBack: "A proactive decision" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She complains that you don't pamper her enough while she actively ignores your efforts.",
+          steps: [
+            { front: "The 2/3rds Rule — she demands extra affection while offering zero warmth in return.", back: "(Provide warm presence for two-thirds of her effort. Withdraw unearned comfort.)", guideFront: "Give back a little less when...", guideBack: "A calibrated investment" },
+            { front: "STFU (The Superpower) — she accuses you of becoming cold and unfeeling.", back: "\"I'm right here. I converse when tone is adult.\"", guideFront: "Stop explaining and go quiet when...", guideBack: "Silence, or one short line" },
+            { front: "Standard-Setting Lead — she attempts to delay the family home maintenance schedule.", back: "\"Maintenance starts at ten AM tomorrow. I'm executing the plan.\"", guideFront: "Handle it your way when...", guideBack: "A proactive decision" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Steering the Ship",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A sequence for taking executive control of relationship trajectory:\n1. **Standard-Setting Lead** — establish household logistics and rules on your timeline\n2. **The 1,000-Foot Tow Rope** — advance your course without waiting for her immediate approval\n3. **STFU (The Superpower)** — keep quiet when she tests the new structure with complaints\n\nWhy this order: establishing the standard sets the destination, keeping your course builds momentum, and silence eliminates debate.\n\nWhat people do instead: ask permission, stall when opposed, and debate until the plan dies.\n\nMindset: set the standard, stay on course, cut the debate.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Household spending is out of control and joint accounts are being drained on consumer luxury.",
+          steps: [
+            { front: "Standard-Setting Lead — you set up structured asset accounts and budget limits.", back: "\"I've restructured our accounts to secure our capital. Here is the new budget.\"", guideFront: "Handle it your way when...", guideBack: "A proactive decision" },
+            { front: "The 1,000-Foot Tow Rope — she claims she won't follow any budget limits you set.", back: "(Execute the asset allocations cleanly without panicking over her protest.)", guideFront: "Keep to your own course when...", guideBack: "An autonomous lead" },
+            { front: "STFU (The Superpower) — she throws a tantrum about lost luxury spending privileges.", back: "(Maintain calm composure. Do not defend or negotiate the budget.)", guideFront: "Stop explaining and go quiet when...", guideBack: "Silence, or one short line" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Household routines have devolved into screen addiction and passive weekend stagnation.",
+          steps: [
+            { front: "Standard-Setting Lead — you establish a strict phone dock rule at eight PM.", back: "\"Phones go into the dock at eight PM daily. We reclaim our evening focus.\"", guideFront: "Handle it your way when...", guideBack: "A proactive decision" },
+            { front: "The 1,000-Foot Tow Rope — she ignores the rule on night one and stays on her phone.", back: "(Dock your phone cleanly, open your book, and enjoy your quiet evening.)", guideFront: "Keep to your own course when...", guideBack: "An autonomous lead" },
+            { front: "STFU (The Superpower) — she criticizes your new routine as rigid and boring.", back: "(Smile gently and continue reading.)", guideFront: "Stop explaining and go quiet when...", guideBack: "Silence, or one short line" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You decide to eliminate junk food and build a high-performance home physical standard.",
+          steps: [
+            { front: "Standard-Setting Lead — you clear the pantry of junk and stock high-quality nutrition.", back: "\"I've updated our household pantry. We focus on clean nutrition now.\"", guideFront: "Handle it your way when...", guideBack: "A proactive decision" },
+            { front: "The 1,000-Foot Tow Rope — she refuses to join your morning workout routine.", back: "\"Workout starts at six AM. You're welcome to join, otherwise see you at breakfast.\"", guideFront: "Keep to your own course when...", guideBack: "An autonomous lead" },
+            { front: "STFU (The Superpower) — she complains that you are becoming too strict about health.", back: "(Hold steady eye contact and refrain from arguing about health.)", guideFront: "Stop explaining and go quiet when...", guideBack: "Silence, or one short line" },
+          ]
+        },
       ]
     },
   ],

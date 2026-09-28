@@ -6849,7 +6849,7 @@ const memorizeCollections = {
   ],
   praxdread1: [
     {
-      name: "STFU",
+      name: "STFU (The Superpower)",
       description: "The theoretical foundation of silent frame.",
       cards: [
         { q: "What are the three channels of communication?", a: "55% body language, 38% intonation, and 7% actual words.", bundle: 'free' },
@@ -6857,6 +6857,9 @@ const memorizeCollections = {
         { q: "When should you use words in Dread?", a: "To offer a direct explanation of _observed_ changes in behavior, after they have been established.", bundle: 'free' },
         { q: "What is the \"7% rule\" in practice?", a: "Verbal affirmations are \"cope\"; only 93% action and body language paint a clear picture of change.", bundle: 'pro' },
         { q: "What is \"Magic Pussy Syndrome\"?", a: "A woman's ego-driven assumption that her sexual rejection should put a man into a \"spiral of misery.\"", bundle: 'pro' },
+        { q: "Why is \"explaining yourself\" during conflict a tactical error?", a: "Because explaining signals that you require her permission and validation for your choices.", bundle: 'pro' },
+        { q: "How does non-verbal posture enforce frame better than words?", a: "Body language and intonation carry 93% of communication, proving status directly.", bundle: 'pro' },
+        { q: "What should you do when tempted to whine about lack of intimacy?", a: "STFU completely; complaining destroys sexual desire and projects needy weakness.", bundle: 'pro' },
       ]
     },
     {
@@ -6868,6 +6871,9 @@ const memorizeCollections = {
         { q: "What happens if you are too predictable?", a: "People only follow your incentives when they want something; intermittent rewards create investment.", bundle: 'free' },
         { q: "What is \"Choreplay\"?", a: "The failed strategy of doing dishes to \"lower her stress\" in hopes of getting sex.", bundle: 'pro' },
         { q: "What is the \"Cardinal Rule\" of relationships?", a: "The person who needs the other person less has the power.", bundle: 'pro' },
+        { q: "Why does over-investing domestic labor fail to produce sexual desire?", a: "Because non-sexual \"choreplay\" provides comfort, not sexual polarity or scarcity.", bundle: 'pro' },
+        { q: "How do intermittent rewards increase relationship investment?", a: "Unpredictable warmth forces her to value your attention rather than taking it for granted.", bundle: 'pro' },
+        { q: "What is the risk of rewarding cold or disrespectful behavior?", a: "Operant conditioning teaches her that disrespect is the trigger to receive your attention.", bundle: 'pro' },
       ]
     },
     {
@@ -6879,6 +6885,9 @@ const memorizeCollections = {
         { q: "What does \"Outcome Independence\" mean here?", a: "Becoming a high-value man for yourself, regardless of whether she stays or goes.", bundle: 'free' },
         { q: "Why is the \"Stay Plan\" the same as the \"Go Plan\"?", a: "Because both require you to become the most attractive, competent version of yourself.", bundle: 'pro' },
         { q: "What is \"Evolutionary Selfishness\"?", a: "The phase where a woman instinctively distances herself from a man who has lost his frame.", bundle: 'pro' },
+        { q: "What is the \"slack\" in the 1,000-foot tow rope?", a: "The time period where your self-improvement proceeds without immediate feedback from her.", bundle: 'pro' },
+        { q: "What causes the \"jerk\" on the tow rope line?", a: "Her realization that your autonomous momentum is leaving her behind unless she steps up.", bundle: 'pro' },
+        { q: "Why must self-improvement be conducted without \"Mommy, look!\" boasting?", a: "Because boasting is \"sales\"; true luxury branding relies on covert \"marketing.\"", bundle: 'pro' },
       ]
     },
     {
@@ -6890,6 +6899,93 @@ const memorizeCollections = {
         { q: "What is the best \"apology\" for a mistake?", a: "Correcting the mistake and ensuring it doesn't happen again.", bundle: 'free' },
         { q: "What are the 4 outcomes of a chore?", a: "1. Her standard/her timeline, 2. Her standard/your timeline, 3. Your standard/her timeline, 4. Your standard/your timeline.", bundle: 'pro' },
         { q: "Which outcome signifies a man with Frame?", a: "Outcome 4: Your standard on your timeline.", bundle: 'pro' },
+        { q: "What are the four outcomes of a household task?", a: "Her standard/her timeline, her standard/your timeline, your standard/her timeline, your standard/your timeline.", bundle: 'pro' },
+        { q: "Which outcome demonstrates a man operating with Frame?", a: "Outcome 4: Your standard on your own timeline.", bundle: 'pro' },
+        { q: "Why is asking permission to lead a contradiction?", a: "Because seeking permission surrenders authority to the person you are asking.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "The core ideas behind Praxeology Dread 01: The Silent Shift by Rian Stone.\n• **STFU (The Superpower)** — eliminate verbal DEERing and let non-verbal action establish frame\n• **The 2/3rds Rule** — calibrate non-sexual investment to restore scarcity and desire\n• **The 1,000-Foot Tow Rope** — pursue autonomous self-improvement independent of her reaction\n• **Standard-Setting Lead** — take direct responsibility for household standards on your timeline\n\nDread shifts you from a sexless plow horse to an autonomous, high-value masculine leader.",
+      cards: [
+        { q: "What are the four core strategies in Praxeology Dread 01?", a: "STFU (The Superpower), The 2/3rds Rule, The 1,000-Foot Tow Rope, Standard-Setting Lead.", bundle: 'free' },
+        { q: "What is the main objective of Dread Level 1?", a: "To get out of your wife's frame, stop being taken for granted, and build self-anchored authority.", bundle: 'free' },
+        { q: "Why is silence called a \"superpower\" in conflict?", a: "Because 93% of communication is non-verbal; words without status signal weakness.", bundle: 'free' },
+        { q: "What does \"Outcome Independence\" mean in Dread?", a: "Becoming a high-value man for yourself, regardless of whether she stays or goes.", bundle: 'free' },
+        { q: "What is the core rule of non-sexual investment?", a: "Give back two-thirds of the attention, time, and warmth you receive.", bundle: 'free' },
+        { q: "Why is the \"Stay Plan\" identical to the \"Go Plan\"?", a: "Because both require you to build maximum competence, physical shape, and frame.", bundle: 'pro' },
+        { q: "What is the \"Drunken Captain\" relationship dynamic?", a: "A man who demands authority but fails to lead his own life or handle adult tasks.", bundle: 'pro' },
+        { q: "What is the ultimate goal of dismantling covert contracts?", a: "Shifting from needy scorekeeping to authentic masculine leadership and genuine desire.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n• **Initial Shifts** — STFU, The 2/3rds Rule, or The Tow Rope for the first 3 months\n• **Holding the Line** — STFU, The 2/3rds Rule, or Standard-Setting Lead during pushback\n• **Building Autonomy** — The Tow Rope, Standard-Setting Lead, or STFU for independent vision\n\nOne question decides nearly all of it: are you stopping speech, calibrating warmth, or taking proactive charge?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Initial Shifts, Holding the Line, and Building Autonomy.", bundle: 'free' },
+        { q: "What is the focus of \"Initial Shifts\"?", a: "Breaking the old beta dynamic in the first three months by building internal frame.", bundle: 'free' },
+        { q: "What does \"Holding the Line\" make you choose between?", a: "STFU, The 2/3rds Rule, and Standard-Setting Lead under active pushback.", bundle: 'free' },
+        { q: "What is the primary goal of \"Building Autonomy\"?", a: "Executing your independent vision without seeking permission or waiting for validation.", bundle: 'free' },
+        { q: "When do you choose \"STFU (The Superpower)\" in Collections?", a: "When any spoken answer would DEER, debate, or validate an emotional argument.", bundle: 'free' },
+        { q: "When do you choose \"The 2/3rds Rule\"?", a: "When calibrating non-sexual investment and attention restores scarcity.", bundle: 'free' },
+        { q: "When do you choose \"Standard-Setting Lead\"?", a: "When taking executive charge of household logistics on your standard and timeline.", bundle: 'pro' },
+        { q: "What is the primary trap in Collections?", a: "Reverting to long explanations, over-investing to buy peace, or asking permission to lead.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n1. **Handling the Initial Pushback** — STFU → Standard-Setting Lead → The Tow Rope\n2. **Calibrating Under Fire** — The 2/3rds Rule → STFU → Standard-Setting Lead\n3. **Steering the Ship** — Standard-Setting Lead → The Tow Rope → STFU\n\nIn each sequence, the order of the steps is what enforces the new dynamic cleanly.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Handling the Initial Pushback, Calibrating Under Fire, and Steering the Ship.", bundle: 'free' },
+        { q: "What is the order in \"Handling the Initial Pushback\"?", a: "STFU (The Superpower), then Standard-Setting Lead, and finally The 1,000-Foot Tow Rope.", bundle: 'free' },
+        { q: "Why does \"Handling the Initial Pushback\" start with STFU?", a: "Because stopping verbal debate precedes setting standards and maintaining course.", bundle: 'free' },
+        { q: "What is the order in \"Calibrating Under Fire\"?", a: "The 2/3rds Rule, then STFU, and finally Standard-Setting Lead.", bundle: 'free' },
+        { q: "What does \"Steering the Ship\" train you to do?", a: "Establish logistics, advance your course autonomously, and silence complaints.", bundle: 'free' },
+        { q: "Why is order critical in relationship sequences?", a: "Because doing the right moves in the wrong order creates argument loops and frame loss.", bundle: 'pro' },
+        { q: "What mistake do men make when faced with initial pushback?", a: "They DEER (Defend, Explain, Excuse, Rationalize) instead of holding silence and executing.", bundle: 'pro' },
+        { q: "How does a completed sequence enforce the new dynamic?", a: "By combining non-verbal composure, calibrated warmth, and executive action.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n• **The Complaining Passenger** — stopping nag loops and returning to your origin\n• **The Shaming Hamster** — handling irrational accusations and \"Are you cheating?\" traps\n• **Choreplay & Double Binds** — refusing chore bargaining while maintaining clean standards\n• **Covert Contracts & Revenge** — eliminating scorekeeping and post-rejection seething\n• **The Drunken Captain Dynamic** — eliminating the \"man-child\" frame through competence\n\nEach category organizes by problem type rather than strategy.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Complaining Passenger, The Shaming Hamster, Choreplay & Double Binds, Covert Contracts & Revenge, and The Drunken Captain Dynamic.", bundle: 'free' },
+        { q: "How do you handle \"The Complaining Passenger\"?", a: "By using Standard-Setting Lead and STFU to handle logistics without fixing her mood.", bundle: 'free' },
+        { q: "What is the core move during \"The Shaming Hamster\"?", a: "Remaining aloof, using STFU, and letting her anxiety settle without defensiveness.", bundle: 'free' },
+        { q: "How do you resolve \"Choreplay & Double Binds\"?", a: "By doing tasks for your standards on your timeline, refusing chore-for-sex bargains.", bundle: 'free' },
+        { q: "How do you handle \"Covert Contracts & Revenge\"?", a: "By withdrawing unearned warmth, burning the scoreboard, and remaining outcome independent.", bundle: 'free' },
+        { q: "How do you eliminate \"The Drunken Captain Dynamic\"?", a: "By demonstrating executive competence in household tasks without asking for permission.", bundle: 'pro' },
+        { q: "What is your partner really testing in these challenges?", a: "Whether your new masculine frame is authentic or just a temporary bluff.", bundle: 'pro' },
+        { q: "Why is seething after rejection a fatal mistake?", a: "Because seething betrays emotional dependence and confirms you lack outcome independence.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four mindsets you practise in this pack:\n• **Luxury is Covert** — marketing over sales; let the hamster find the exit\n• **Silence** — silence is power; stop explaining and let actions speak\n• **Investment** — attention costs something; calibrate investment and burn scoreboards\n• **Autonomy** — stay plan is the go plan; lead your life with outcome independence\n\nIn every one, the belief that gets in the way feels like safety or politeness from the inside.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Luxury is Covert, Silence, Investment, and Autonomy.", bundle: 'free' },
+        { q: "What does \"Luxury is Covert\" teach you?", a: "That spouting Red Pill rules is \"sales,\" while silent self-improvement is \"marketing.\"", bundle: 'free' },
+        { q: "What is the core truth behind \"Silence\"?", a: "That words without status signal weakness; silence in conflict preserves frame.", bundle: 'free' },
+        { q: "What is the core block in the \"Investment\" mindset?", a: "Believing that over-investing domestic labor will buy sexual desire.", bundle: 'free' },
+        { q: "What is the primary lesson of the \"Autonomy\" mindset?", a: "That a true leader takes responsibility for his vision without asking permission.", bundle: 'free' },
+        { q: "Why does \"marketing\" work better than \"sales\" in relationships?", a: "Because people resist overt sales pitches but desire luxury goods they fear losing.", bundle: 'pro' },
+        { q: "How does DEERing destroy masculine authority?", a: "By treating your choices as subject to her approval and validation.", bundle: 'pro' },
+        { q: "What is the ultimate goal of these four mindsets?", a: "To shift from needy approval-seeking to self-anchored, autonomous leadership.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Scoreboard Model",
+      description: "The Scoreboard Model from Rian Stone's Praxeology Volume 2: Dread:\n• **Phase 1: Losing the Game** — 0% desirable, 100% likable plow horse taking double binds\n• **Phase 2: Covering the Spread** — building frame, stopping the shutout, becoming less likable but competent\n• **Phase 3: Removing the Scoreboard** — self-actualization, pulling her into your frame, throwing away the scoreboard\n\nUnderstanding the Scoreboard Model guides a man through the three stages of relationship transformation.",
+      cards: [
+        { q: "What are the three phases of the Scoreboard Model?", a: "Phase 1: Losing the Game; Phase 2: Covering the Spread; Phase 3: Removing the Scoreboard.", bundle: 'pro' },
+        { q: "What defines a man in Phase 1 of the Scoreboard?", a: "A 0% desirable, 100% likable plow horse who relies on covert contracts and takes double binds.", bundle: 'pro' },
+        { q: "What happens when a man enters Phase 2 (Covering the Spread)?", a: "He enforces boundaries and builds frame; he becomes less likable to her old frame but competent.", bundle: 'pro' },
+        { q: "Why do wives complain when a husband enters Phase 2?", a: "Because he stops losing, exits her frame, and disrupts the old status quo.", bundle: 'pro' },
+        { q: "What is the objective of Phase 3 (Removing the Scoreboard)?", a: "Pulling her into your self-actualized frame and eliminating scorekeeping entirely.", bundle: 'pro' },
+        { q: "Why must a man pass through Phase 2 before Phase 3?", a: "Because competence and frame must be built before a man can offer genuine leadership.", bundle: 'pro' },
+        { q: "What is the relationship between Fuckability and Frame?", a: "Fuckable men have frame, physical fitness, mental models, and a clear personal vision.", bundle: 'pro' },
+        { q: "What is the ultimate outcome of removing the scoreboard?", a: "Achieving covert outcome independence where you are never taken for granted again.", bundle: 'pro' },
       ]
     },
   ],

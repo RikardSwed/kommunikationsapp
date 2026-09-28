@@ -3263,9 +3263,9 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "When emotions are high and words are loud. The challenge is to respond with presence rather than reacting with your own anger.\nUse Naming the Feeling and Venerating the Child to remain the calm anchor in their storm.",
       inputs: [
-        { q: "They scream \"I HATE YOU!\" after you say no to a friend coming over.", a: "\"Wow, you are really angry with me right now.\" (Naming Feeling)", bundle: 'pro' },
-        { q: "They are sobbing uncontrollably because they broke a cheap balloon.", a: "(Kneel down and just hold them) \"I'm right here. I see how sad you are.\" (Venerating / Naming)", bundle: 'pro' },
-        { q: "They are throwing toys because they are \"bored.\"", a: "\"You seem really frustrated and restless today.\" (Naming Feeling)", bundle: 'pro' },
+        { q: "They scream \"I HATE YOU!\" after you say no to a friend coming over.", a: "\"Wow, you are really angry with me right now.\" [Naming the Feeling]", bundle: 'pro', guideBack: "A curious observation" },
+        { q: "They are sobbing uncontrollably because they broke a cheap balloon.", a: "(Kneel down and just hold them) \"I'm right here. I see how sad you are.\" [Venerating the Child]", bundle: 'pro', guideBack: "A respectful action or inquiry" },
+        { q: "They are throwing toys because they are \"bored.\"", a: "\"You seem really frustrated and restless today.\" [Naming the Feeling]", bundle: 'pro', guideBack: "A curious observation" },
       ]
     },
   ],
@@ -3277,8 +3277,8 @@ const challengesCollections = {
       description: "When the child simply says \"No\" or ignores you. The challenge is to maintain \"High Expectations + Calm Presence\"—holding the limit without exploding.",
       inputs: [
         { q: "You ask them to put away their shoes and they say \"Make me!\".", a: "\"I hear you're feeling very defiant right now. And, the shoes need to be in the bin.\" (Name Struggle / Limit)", bundle: 'pro' },
-        { q: "You tell them \"iPad away\" and they simply ignore you and keep playing.", a: "(Walk over, put a hand on their shoulder) \"iPad.\" (One-Word Cue / Physical Follow-up)", bundle: 'pro' },
-        { q: "They are shouting \"I'M NOT DOING IT!\" about a chore.", a: "\"I can see you're really angry. Do you want to do it now or in three minutes?\" (Name Feeling / Options Within)", bundle: 'pro' },
+        { q: "You tell them \"iPad away\" and they simply ignore you and keep playing.", a: "(Walk over, put a hand on their shoulder) \"iPad.\" [The One-Word Cue]", bundle: 'pro', guideBack: "A one-word cue" },
+        { q: "They are shouting \"I'M NOT DOING IT!\" about a chore.", a: "\"I can see you're really angry. Do you want to do it now or in three minutes?\" [Options Within the Limit]", bundle: 'pro', guideBack: "A choice between two options" },
       ]
     },
   ],
@@ -3289,9 +3289,9 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "When the struggle turns into a total shutdown. The challenge is to remain the \"Calm Anchor\" and not take over the task just to end the noise.",
       inputs: [
-        { q: "They throw their pencil across the room and sob \"I'm too stupid for this!\".", a: "\"You're having a really hard time with this page. I'm going to sit right here while you breathe.\" (Naming Struggle / Staying Close)", bundle: 'pro' },
-        { q: "They are refusing to even try a new task.", a: "\"It’s scary to try something for the first time. What’s the very first tiny step?\" (Naming Struggle / Brainstorm)", bundle: 'pro' },
-        { q: "They are demanding that you do their chore for them.", a: "\"I know you wish I would just do it. And, I know you can learn this. Where should we start?\" (Taking Side of Feelings / Naming Struggle)", bundle: 'pro' },
+        { q: "They throw their pencil across the room and sob \"I'm too stupid for this!\".", a: "\"You're having a really hard time with this page. I'm going to sit right here while you breathe.\" [Naming the Struggle]", bundle: 'pro', guideBack: "An observation of their effort" },
+        { q: "They are refusing to even try a new task.", a: "\"It’s scary to try something for the first time. What’s the very first tiny step?\" [Naming the Struggle]", bundle: 'pro', guideBack: "An observation of their effort" },
+        { q: "They are demanding that you do their chore for them.", a: "\"I know you wish I would just do it. And, I know you can learn this. Where should we start?\" [Naming the Struggle]", bundle: 'pro', guideBack: "An observation of their effort" },
       ]
     },
   ],
@@ -3302,9 +3302,9 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "When the child uses \"mean words,\" name-calling, or insults. The challenge is to remain the adult and not \"fight back\" at a child's level.",
       inputs: [
-        { q: "They shout \"I hate this house and I hate you!\"", a: "\"Wow, you are feeling really unhappy right now.\" (Meet the Frustration)", bundle: 'pro' },
-        { q: "They call you a \"jerk\" after a correction.", a: "\"Ouch. That was a mean thing to say. You must be very frustrated.\" (Meet the Frustration / Ouch)", bundle: 'pro' },
-        { q: "They are mocking your tone of voice.", a: "(Stay calm and silent) \"The shoes still need to be in the bin.\" (Heartful Silence / One-Word Cue)", bundle: 'pro' },
+        { q: "They shout \"I hate this house and I hate you!\"", a: "\"Wow, you are feeling really unhappy right now.\" [Meet the Frustration, Not the Words]", bundle: 'pro', guideBack: "The feeling, named back" },
+        { q: "They call you a \"jerk\" after a correction.", a: "\"Ouch. That was a mean thing to say. You must be very frustrated.\" [Meet the Frustration, Not the Words]", bundle: 'pro', guideBack: "The feeling, named back" },
+        { q: "They are mocking your tone of voice.", a: "(Stay calm and silent) \"The shoes still need to be in the bin.\" [The Heartful Silence]", bundle: 'pro', guideBack: "A calm action or brief cue" },
       ]
     },
   ],
@@ -3315,9 +3315,9 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "When a child is stuck in shame, anger, or a refusal to repair. The challenge is to remain the \"Safe Leader\" who invites them back without shaming them.",
       inputs: [
-        { q: "They refuse to apologize, saying \"I DON'T CARE!\".", a: "\"I hear you're still feeling very angry. Let's take another two-minute reset.\" (Time-Out Reset / Meet Frustration)", bundle: 'pro' },
-        { q: "They are sobbing because they think they are a \"bad kid\" after a mistake.", a: "\"You aren't a bad kid; you just had a bad moment. I'm right here with you.\" (Follow-up / Venerating)", bundle: 'pro' },
-        { q: "They are mocking your own attempt to apologize to them.", a: "(Stay calm) \"I'm being serious because our relationship matters to me. I'm sorry I yelled.\" (Modeling Apology / Respond vs React)", bundle: 'pro' },
+        { q: "They refuse to apologize, saying \"I DON'T CARE!\".", a: "\"I hear you're still feeling very angry. Let's take another two-minute reset.\" [The Time-Out Reset]", bundle: 'pro', guideBack: "A pause, framed as a reset" },
+        { q: "They are sobbing because they think they are a \"bad kid\" after a mistake.", a: "\"You aren't a bad kid; you just had a bad moment. I'm right here with you.\" [The Tangible Follow-up]", bundle: 'pro', guideBack: "A warm action or statement" },
+        { q: "They are mocking your own attempt to apologize to them.", a: "(Stay calm) \"I'm being serious because our relationship matters to me. I'm sorry I yelled.\" [Modeling the Apology]", bundle: 'pro', guideBack: "A plain apology" },
       ]
     },
   ],
@@ -3738,9 +3738,78 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "When she treats you like a \"minion\" or \"man-child\" by nagging and setting the frame for your behavior. The challenge is to stop \"fixing her comfort\" and instead return to your own Mental Point of Origin.",
       inputs: [
-        { q: "she yells \"You never do anything right!\" because you bought the wrong milk", a: "\"Damn, I didn't realize there were so many types. I'll get the other one Saturday.\" (STFU / Negative Assertion)", bundle: 'pro' },
-        { q: "she tries to \"gaslight\" you into feeling guilty for wanting a career change", a: "(Internal: Embrace the suck. I'm the leader of this vision.) (Tow Rope / STFU)", bundle: 'pro' },
-        { q: "she demands \"authorization\" to see your phone after you become distant", a: "\"No. My privacy is valuable. Ask me again when you're acting like a partner.\" (Standard Lead / 2/3rds Rule)", bundle: 'pro' },
+        { q: "she yells \"You never do anything right!\" because you bought the wrong milk", a: "\"Damn, I didn't realize there were so many types. I'll get the other one Saturday.\" [STFU (The Superpower)]", bundle: 'pro', guideBack: "Silence, or one short line" },
+        { q: "she tries to \"gaslight\" you into feeling guilty for wanting a career change", a: "(Internal: Embrace the suck. I'm the leader of this vision.) [The 1,000-Foot Tow Rope]", bundle: 'pro', guideBack: "An autonomous lead" },
+        { q: "she demands \"authorization\" to see your phone after you become distant", a: "\"No. My privacy is valuable. Ask me again when you're acting like a partner.\" [Standard-Setting Lead]", bundle: 'pro', guideBack: "A proactive decision" },
+        { q: "She criticizes how you loaded the groceries into the car trunk after shopping.", a: "(Smile calmly, close the trunk, and get into the driver's seat) \"Car is packed and ready.\" [Standard-Setting Lead]", bundle: 'pro', guideBack: "A proactive decision" },
+        { q: "She sighs dramatically about the route you chose to drive to a family gathering.", a: "(Maintain relaxed driving posture without defending the route) \"We arrive at two PM.\" [STFU (The Superpower)]", bundle: 'pro', guideBack: "Silence, or one short line" },
+        { q: "She demands that you apologize for not fixing a door hinge on her exact timeline.", a: "\"I've scheduled home repairs for Saturday morning. It will be handled then.\" [Standard-Setting Lead]", bundle: 'pro', guideBack: "A proactive decision" },
+        { q: "She nitpicks your choice of attire before going out for a casual dinner.", a: "\"Outfit works well for dinner. Let me grab the keys.\" [The 1,000-Foot Tow Rope]", bundle: 'pro', guideBack: "An autonomous lead" },
+        { q: "She attempts to reframe your calm decision on house maintenance as total incompetence.", a: "(Hold steady gaze with zero defensiveness) \"Maintenance is executed.\" [STFU (The Superpower)]", bundle: 'pro', guideBack: "Silence, or one short line" },
+      ]
+    },
+    {
+      name: "The Shaming Hamster",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Handling irrational accusations, baited insecurity questions like \"Are you cheating?\", and emotional guilt traps.\n\nThis challenge trains you to remain aloof, refuse to DEER, and let her emotional anxiety settle without panicking.\n• **STFU (The Superpower)** — stop explaining, refuse to validate irrational claims, and hold your frame\n• **The 1,000-Foot Tow Rope** — stay outcome independent while her emotional hamster runs the maze\n\nMindset: her anxiety is her emotional weather; remain the unshakeable oak.",
+      inputs: [
+        { q: "She catches you dressing sharp for a work presentation and asks \"Are you seeing someone else?\".", a: "(Smile aloofly, check your watch, and pick up your briefcase) \"Heading to my presentation now.\" [STFU (The Superpower)]", bundle: 'pro', guideBack: "Silence, or one short line" },
+        { q: "She accuses you of being cold and unloving because you didn't text her every hour.", a: "(Maintain calm presence without apologizing) \"Busy work block. Good to see you.\" [The 2/3rds Rule]", bundle: 'pro', guideBack: "A calibrated investment" },
+        { q: "She claims \"You only care about your muscle gains, not this family!\" when you head to train.", a: "(Keep your posture relaxed and proceed to your training session) \"Back at seven.\" [The 1,000-Foot Tow Rope]", bundle: 'pro', guideBack: "An autonomous lead" },
+        { q: "She uses a tearful guilt trap to force you to drop your planned weekend career seminar.", a: "(Offer a single calm hand on her shoulder, then prepare your luggage) \"Seminar starts at eight.\" [STFU (The Superpower)]", bundle: 'pro', guideBack: "Silence, or one short line" },
+        { q: "She demands you hand over your unlocked phone to inspect your private messages.", a: "\"No. My privacy is maintained. Ask me again when you're acting like a partner.\" [Standard-Setting Lead]", bundle: 'pro', guideBack: "A proactive decision" },
+        { q: "She tries to bait you into an argument by saying \"My mother warned me about men like you!\".", a: "(Hold steady eye contact and offer zero verbal defense) \"Dinner is at six.\" [STFU (The Superpower)]", bundle: 'pro', guideBack: "Silence, or one short line" },
+        { q: "She claims your new financial boundaries mean you don't trust her with money.", a: "\"Financial structures protect our family capital. The allocations stand.\" [Standard-Setting Lead]", bundle: 'pro', guideBack: "A proactive decision" },
+        { q: "She threatens to stay at a hotel for the night to see if you will collapse into panic.", a: "\"Have a safe stay. I'll see you tomorrow.\" [The 1,000-Foot Tow Rope]", bundle: 'pro', guideBack: "An autonomous lead" },
+      ]
+    },
+    {
+      name: "Choreplay & Double Binds",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Handling chore negotiations, moving goalposts, and the trap of trying to earn affection through domestic labor.\n\nThis challenge builds mastery in doing tasks to your own standards as a leader while refusing chore-for-sex bargains.\n• **Standard-Setting Lead** — handle household logistics on your standard and timeline\n• **The 2/3rds Rule** — stop over-investing domestic labor in hopes of receiving an \"attaboy\"\n\nMindset: do chores for clean standards, never as choreplay to buy affection.",
+      inputs: [
+        { q: "She hints that if you clean the entire kitchen tonight, she \"might\" be in the mood.", a: "(Clean the kitchen to your standard, then head to your study without asking for a reward) [Standard-Setting Lead]", bundle: 'pro', guideBack: "A proactive decision" },
+        { q: "She complains that you folded the laundry incorrectly after you spent an hour clearing it.", a: "\"Laundry is folded and clean. If you want a different fold, go for it.\" [Standard-Setting Lead]", bundle: 'pro', guideBack: "A proactive decision" },
+        { q: "She shifts the goalposts after you complete three requested errands, adding four more.", a: "\"I've completed my scheduled errands for today. Remaining items wait for next week.\" [The 2/3rds Rule]", bundle: 'pro', guideBack: "A calibrated investment" },
+        { q: "She attempts to assign you a list of minor chores right as you step out for your gym block.", a: "\"I'm heading to my workout now. I'll review chores on Saturday.\" [The 1,000-Foot Tow Rope]", bundle: 'pro', guideBack: "An autonomous lead" },
+        { q: "She accuses you of being a lazy partner despite you running the entire household logistics.", a: "(Refuse to list your accomplishments or DEER) \"Logistics are covered.\" [STFU (The Superpower)]", bundle: 'pro', guideBack: "Silence, or one short line" },
+        { q: "She expects you to do all the heavy yard work while she watches television.", a: "(Calibrate your labor investment) \"I'm clearing the front yard path today. Back yard is next month.\" [The 2/3rds Rule]", bundle: 'pro', guideBack: "A calibrated investment" },
+        { q: "She demands you re-mow the lawn because she dislikes the direction of the lines.", a: "\"Lawn is mowed cleanly. The cut stands.\" [Standard-Setting Lead]", bundle: 'pro', guideBack: "A proactive decision" },
+        { q: "She tries to turn meal prep into a high-drama debate over who contributed more.", a: "(Finish your meal prep quietly and pack your lunch) \"Food is prepped.\" [STFU (The Superpower)]", bundle: 'pro', guideBack: "Silence, or one short line" },
+      ]
+    },
+    {
+      name: "Covert Contracts & Revenge",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Handling withheld affection, scorekeeping, revenge impulses, and post-rejection dynamics.\n\nThis challenge teaches you to eliminate covert contracts, handle sexual rejection without throwing tantrums, and stay autonomous.\n• **The 2/3rds Rule** — withdraw unearned warmth and comfort when taken for granted\n• **STFU (The Superpower)** — handle rejection with total composure, zero huffing, and zero seething\n\nMindset: eliminate covert bargains; be the prize and hold outcome independence.",
+      inputs: [
+        { q: "She rejects your sexual initiation at night and watches to see if you will huff or seethe.", a: "(Grab your book and go read in the living room peacefully) [STFU (The Superpower)]", bundle: 'pro', guideBack: "Silence, or one short line" },
+        { q: "You realize you bought her expensive jewelry solely hoping she would feel obligated to give sex.", a: "(Recognize the covert contract. Keep the jewelry or give it with zero expectations) [The 2/3rds Rule]", bundle: 'pro', guideBack: "A calibrated investment" },
+        { q: "She offers \"starfish\" unengaged duty sex to get you to stop asking about bedroom intimacy.", a: "(Stop cleanly) \"This isn't working out tonight. We can try again later.\" [Standard-Setting Lead]", bundle: 'pro', guideBack: "A proactive decision" },
+        { q: "You feel a strong bitter impulse to cancel a favor you promised her as revenge for rejection.", a: "(Execute the favor cleanly as part of your vision, then withdraw extra warmth) [The 1,000-Foot Tow Rope]", bundle: 'pro', guideBack: "An autonomous lead" },
+        { q: "She attempts to scoreboard past household favors to force you into canceling your gym trip.", a: "\"Past favors don't alter my workout schedule. My gym block stands.\" [Standard-Setting Lead]", bundle: 'pro', guideBack: "A proactive decision" },
+        { q: "She acts sweet for one afternoon after two weeks of coldness and expects immediate lavish gifts.", a: "(Return 66% of her warmth without over-investing capital) \"Good to see you smiling.\" [The 2/3rds Rule]", bundle: 'pro', guideBack: "A calibrated investment" },
+        { q: "She tries to make you feel guilty for enjoying your solo weekend hiking trip.", a: "(Enjoy your trip with total outcome independence) \"Hike was excellent. Good to be back.\" [The 1,000-Foot Tow Rope]", bundle: 'pro', guideBack: "An autonomous lead" },
+        { q: "She asks why you stopped bringing her morning coffee in bed every single day.", a: "\"I make coffee when it fits my morning routine.\" [The 2/3rds Rule]", bundle: 'pro', guideBack: "A calibrated investment" },
+      ]
+    },
+    {
+      name: "The Drunken Captain Dynamic",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Handling attempts to frame you as incompetent, lazy, or irresponsible in front of family or friends.\n\nThis challenge trains you to take firm executive authority, demonstrate competence, and eliminate the \"man-child\" frame.\n• **Standard-Setting Lead** — take direct charge of domestic logistics and executive choices\n• **STFU (The Superpower)** — refuse to engage in defensive arguments when your authority is probed\n\nMindset: demonstrate competence through calm execution; never play the helpless husband.",
+      inputs: [
+        { q: "She tells relatives at a dinner party that \"He can't even remember to buy the right groceries!\".", a: "(Hold a relaxed posture, smile unbothered, and change the subject cleanly) \"Logistics are set.\" [STFU (The Superpower)]", bundle: 'pro', guideBack: "Silence, or one short line" },
+        { q: "She tries to take over driving the family car because she claims you don't know the route.", a: "\"I've mapped our route. I'm driving us to the venue.\" [Standard-Setting Lead]", bundle: 'pro', guideBack: "A proactive decision" },
+        { q: "She speaks to you in a condescending \"motherly\" tone in front of your children.", a: "\"Speak to me as an adult. We discuss family logistics calmly.\" [Standard-Setting Lead]", bundle: 'pro', guideBack: "A proactive decision" },
+        { q: "She attempts to override your decision on home repair contractors in front of the worker.", a: "\"I've selected the contractor for this build. We execute this contract.\" [Standard-Setting Lead]", bundle: 'pro', guideBack: "A proactive decision" },
+        { q: "She claims to neighbors that she has to \"run the whole house\" because you are passive.", a: "(Execute your household leadership tasks silently without public debate) [The 1,000-Foot Tow Rope]", bundle: 'pro', guideBack: "An autonomous lead" },
+        { q: "She mocks your financial management skills during a conversation with her friends.", a: "(Maintain calm composure with zero defensive over-explaining) \"Our treasury is structured.\" [STFU (The Superpower)]", bundle: 'pro', guideBack: "Silence, or one short line" },
+        { q: "She expects you to ask her for a \"to-do list\" every Saturday morning like a hired hand.", a: "\"I've set my weekend work list. I'm handling the garage and yard.\" [Standard-Setting Lead]", bundle: 'pro', guideBack: "A proactive decision" },
+        { q: "She attempts to manage your personal work schedule and tell you when to take breaks.", a: "\"I manage my work blocks directly. I'll see you at six PM.\" [The 1,000-Foot Tow Rope]", bundle: 'pro', guideBack: "An autonomous lead" },
       ]
     },
   ],
@@ -3751,9 +3820,9 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "Handling the emotional \"weather\" and manipulation attempts that arise as she processes your new value. The challenge is to provide a clear \"exit\" (pleasantness/sex) for her anxiety while refusing to be moved from your frame.",
       inputs: [
-        { q: "she starts crying and says \"I don't even know who you are anymore!\"", a: "\"I'm the same man, just focused on my vision. Come give me a hug.\" (The Oak / Operant Conditioning)", bundle: 'pro' },
-        { q: "she tries to \"gaslight\" you into feeling guilty for your new style", a: "\"I like the look. You should enjoy the change.\" (Negative Assertion / Scarcity)", bundle: 'pro' },
-        { q: "she gives you a \"Backhanded Compliment\" to lower your status", a: "\"Thanks. I'm glad you noticed the hard work.\" (Covert Marketing / Gratitude)", bundle: 'pro' },
+        { q: "she starts crying and says \"I don't even know who you are anymore!\"", a: "\"I'm the same man, just focused on my vision. Come give me a hug.\" [Operant Conditioning]", bundle: 'pro', guideBack: "A reward or withdrawal of attention" },
+        { q: "she tries to \"gaslight\" you into feeling guilty for your new style", a: "\"I like the look. You should enjoy the change.\" [Scarcity Signaling]", bundle: 'pro', guideBack: "A brief, busy, unhurried line" },
+        { q: "she gives you a \"Backhanded Compliment\" to lower your status", a: "\"Thanks. I'm glad you noticed the hard work.\" [Covert Marketing]", bundle: 'pro', guideBack: "A subtle demonstration of value" },
       ]
     },
   ],
@@ -3764,9 +3833,9 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "When she uses \"negotiated desire\" or \"obligated compliance\" to maintain control without investment. The challenge is to reject the low-quality intimacy and return to your own standards.",
       inputs: [
-        { q: "she says \"Fine, let's just get it over with\" before sex", a: "\"I'll pass. I'm interested in desire, not a chore. I'm going for a run.\" (This Isn't Working / Scarcity)", bundle: 'pro' },
+        { q: "she says \"Fine, let's just get it over with\" before sex", a: "\"I'll pass. I'm interested in desire, not a chore. I'm going for a run.\" [\"This Isn't Working\"]", bundle: 'pro', guideBack: "A calm, unhurried stop" },
         { q: "she \"zeroes you out\" by ignoring you for two days after you set a boundary", a: "(Need nothing. Continue your mission happily. Enjoy the quiet.) (The Oak / STFU)", bundle: 'pro' },
-        { q: "she tries to \"authorize\" your leadership: \"I'll let you pick the restaurant if you do X.\"", a: "\"I've already picked the place. We're leaving at seven.\" (Leading Without Permission)", bundle: 'pro' },
+        { q: "she tries to \"authorize\" your leadership: \"I'll let you pick the restaurant if you do X.\"", a: "\"I've already picked the place. We're leaving at seven.\" [Leading Without Permission]", bundle: 'pro', guideBack: "A plan you've already set" },
       ]
     },
   ],
@@ -3777,9 +3846,9 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "When emotions go to 10/10. The challenge is to remain the \"Captain\" and not get drawn into her \"Neurotic\" or \"Hysterical\" frame. You are the anchor; she is the weather.",
       inputs: [
-        { q: "she is screaming \"YOU DON'T LOVE ME!\" and throwing things", a: "\"STOP. I am leaving until you are an adult again.\" (Controlled Anger)", bundle: 'pro' },
-        { q: "she is sobbing \"I don't know who you are anymore!\" after your months of Dread", a: "(Internal: Stay silent. Provide a calm \"Pull\" hug.) (Navigating the Main Event)", bundle: 'pro' },
-        { q: "she accuses you of \"manipulating\" her with \"Internet rules\"", a: "\"That's an interesting theory. I'll give it some thought.\" (Cocky/Funny Response)", bundle: 'pro' },
+        { q: "she is screaming \"YOU DON'T LOVE ME!\" and throwing things", a: "\"STOP. I am leaving until you are an adult again.\" [Controlled Anger]", bundle: 'pro', guideBack: "A firm, deliberate stop" },
+        { q: "she is sobbing \"I don't know who you are anymore!\" after your months of Dread", a: "(Internal: Stay silent. Provide a calm \"Pull\" hug.) [Navigating the Main Event]", bundle: 'pro', guideBack: "A calm presence, or a brief direction" },
+        { q: "she accuses you of \"manipulating\" her with \"Internet rules\"", a: "\"That's an interesting theory. I'll give it some thought.\" [Cocky/Funny Accusation Response]", bundle: 'pro', guideBack: "A cocky, playful dodge" },
       ]
     },
   ],
@@ -3790,9 +3859,9 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "Situations involving infidelity or major trust violations. The challenge is to stop \"looking with your heart\" and start \"looking with your eyes\" to assess real value. You must be willing to destroy the dynamic to save yourself.",
       inputs: [
-        { q: "she claims she is \"sorry\" but refuses to tell you who it was with", a: "\"Nothing is forgivable if you expect it to be forgettable. I need full disclosure.\" (The Remorse Checklist)", bundle: 'pro' },
-        { q: "she tells you \"just get over it, it was a year ago\"", a: "(Internal: She lacks the patience for true remorse.) \"Remorse lasts as long as I need it to.\" (The Remorse Checklist)", bundle: 'pro' },
-        { q: "you confirm she is cheating but are afraid of being alone", a: "(Internal: The stay plan and go plan are the same.) (Continue lifting and networking to build abundance.) (Stay/Go Congruence)", bundle: 'pro' },
+        { q: "she claims she is \"sorry\" but refuses to tell you who it was with", a: "\"Nothing is forgivable if you expect it to be forgettable. I need full disclosure.\" [The Remorse Checklist]", bundle: 'pro', guideBack: "A line that asks for proof in action" },
+        { q: "she tells you \"just get over it, it was a year ago\"", a: "(Internal: She lacks the patience for true remorse.) \"Remorse lasts as long as I need it to.\" [The Remorse Checklist]", bundle: 'pro', guideBack: "A line that asks for proof in action" },
+        { q: "you confirm she is cheating but are afraid of being alone", a: "(Internal: The stay plan and go plan are the same.) (Continue lifting and networking to build abundance.) [Stay/Go Congruence]", bundle: 'pro', guideBack: "A line about your own path" },
       ]
     },
   ],
