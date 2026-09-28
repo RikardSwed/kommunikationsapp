@@ -7000,6 +7000,134 @@ const memorizeCollections = {
         { q: "What is \"Magic Pussy Syndrome\"?", a: "A woman's ego-driven assumption that her sexual rejection should cause a man to spiral into misery.", bundle: 'pro' },
         { q: "What is \"Intermittent Reward\" in conditioning?", a: "Providing rewards only after desired behavior and not every time, which ensures the behavior continues by default.", bundle: 'pro' },
         { q: "What is the \"Tow Rope\" model?", a: "A mental model where your self-improvement takes time to affect her behavior; you must lead regardless of her immediate reaction.", bundle: 'pro' },
+        { q: "What is the risk of \"Overt Sales\" when applying Dread?", a: "Direct sales pitches signal desperation, triggering immediate resistance and killing sexual desire.", bundle: 'pro' },
+        { q: "How does \"Covert Outcome Independence\" function in marriage?", a: "You build real options and self-worth quietly without bragging, forcing her hamster to recognize your value.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "The core principles of Praxeology Dread 02: The Marketing of Value by Rian Stone.\n• **Scarcity Signaling** — signal scarcity and unhurried mission focus\n• **Loss Aversion Exploitation** — let the risk of loss stand to enforce boundaries\n• **Operant Conditioning** — reward good behavior and withdraw attention from bad behavior\n• **Covert Marketing** — market your value through action rather than overt sales pitches\n\nTransforming from a commodity husband into a high-status luxury brand restores desire and authority.",
+      cards: [
+        { q: "What are the four core strategies in Praxeology Dread 02?", a: "Scarcity Signaling, Loss Aversion Exploitation, Operant Conditioning, Covert Marketing.", bundle: 'free' },
+        { q: "What is the primary objective of \"The Marketing of Value\"?", a: "To shift from a commodity husband to a luxury brand through covert value signaling.", bundle: 'free' },
+        { q: "Why do women \"hate sales but love marketing\"?", a: "Because overt commands feel sleazy and desperate, while covert marketing triggers genuine desire.", bundle: 'free' },
+        { q: "What is the \"Cardinal Rule\" of relationships?", a: "The person who needs the other person less has the power.", bundle: 'free' },
+        { q: "Why is passive self-improvement the foundation of Dread?", a: "Because you cannot market a luxury product that doesn't exist; real value precedes marketing.", bundle: 'free' },
+        { q: "What is the difference between active and passive Dread?", a: "Passive Dread builds general value through fitness and frame; active Dread enforces boundaries and conditions behavior.", bundle: 'pro' },
+        { q: "What is the outcome of \"negotiated desire\"?", a: "Negotiated desire leads only to obligated compliance, never genuine attraction.", bundle: 'pro' },
+        { q: "What is the ultimate goal of luxury branding in marriage?", a: "To establish unshakeable masculine authority so you are never taken for granted again.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Scarcity Signaling",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Scarcity Signaling\"?", a: "Presenting yourself as a rare and valuable resource that is available but not abundant.", bundle: 'free' },
+        { q: "Why does human nature value scarce resources?", a: "Because scarcity creates anxiety over potential loss, elevating perceived status and worth.", bundle: 'free' },
+        { q: "How do you signal scarcity during daily work hours?", a: "Maintain unhurried focus on your mission and reply to messages on your schedule.", bundle: 'free' },
+        { q: "What is \"Mission Scarcity\"?", a: "Being anchored in your personal goals and vision rather than hovering for relationship comfort.", bundle: 'free' },
+        { q: "How does instant digital availability erode status?", a: "It signals zero scarcity, turning you into a predictable and taken-for-granted commodity.", bundle: 'free' },
+        { q: "What is \"Social Scarcity\"?", a: "Maintaining an active personal life, hobbies, and social connections outside the home.", bundle: 'pro' },
+        { q: "How do you handle her complaints that you are \"never home\"?", a: "State calmly: 'I'm enjoying my new project. Let me make the most of our time together.'", bundle: 'pro' },
+        { q: "Why is seeking permission to engage in hobbies fatal to scarcity?", a: "Because seeking permission surrenders authority and signals that your time belongs to her.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Loss Aversion Exploitation",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Loss Aversion Exploitation\"?", a: "Utilizing the fact that humans feel the pain of loss twice as strongly as the joy of gain.", bundle: 'free' },
+        { q: "Why does loss aversion motivate relationship investment?", a: "Because a woman who fears losing a valuable partner will work harder to retain him.", bundle: 'free' },
+        { q: "How do you enforce a boundary using loss aversion?", a: "Hold your line calmly without panicking: 'I expect us to be partners; otherwise, I'm not interested.'", bundle: 'free' },
+        { q: "Why should you minimize your own loss aversion?", a: "Because fearing divorce or conflict causes you to make weak concessions and surrender frame.", bundle: 'free' },
+        { q: "What is the \"Threat Point\" in relationship dynamics?", a: "The boundary where you are genuinely willing to walk away rather than accept disrespect.", bundle: 'free' },
+        { q: "How does active Dread utilize loss aversion?", a: "By allowing the risk of losing your presence and commitment to stand when boundaries are crossed.", bundle: 'pro' },
+        { q: "Why is bluffing about walking away dangerous?", a: "Because an unbacked bluff is exposed quickly, destroying credibility and authority.", bundle: 'pro' },
+        { q: "How does outcome independence neutralize emotional manipulation?", a: "By making your self-worth independent of her approval, eliminating your fear of loss.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Operant Conditioning",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Operant Conditioning\"?", a: "Rewarding good behavior and withdrawing rewards or attention for bad behavior.", bundle: 'free' },
+        { q: "Why are \"intermittent rewards\" more powerful than constant rewards?", a: "Because unpredictable rewards create higher engagement and prevent your attention from being taken for granted.", bundle: 'free' },
+        { q: "How do you respond when she displays rude or passive-aggressive behavior?", a: "Withdraw your attention and warmth cleanly without throwing an angry tantrum.", bundle: 'free' },
+        { q: "How do you respond when she initiates warm intimacy or adds value?", a: "Reward her enthusiastically with your presence, affection, and quality time.", bundle: 'free' },
+        { q: "What is the \"exit\" from her emotional hamster maze?", a: "Providing comfort and warmth as a reward when she chooses sexual availability and pleasantness.", bundle: 'free' },
+        { q: "Why does \"choreplay\" fail as a conditioning tool?", a: "Because doing chores during bad behavior rewards disrespect and destroys sexual polarity.", bundle: 'pro' },
+        { q: "How does the dopamine reward pathway reinforce operant conditioning?", a: "Comfort following anxiety releases dopamine, reinforcing her desire to seek comfort from you.", bundle: 'pro' },
+        { q: "What is the primary mistake men make during operant conditioning?", a: "Giving away unearned comfort during her outbursts, which conditions her to continue throwing tantrums.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Covert Marketing",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Covert Marketing\"?", a: "Signaling status and value through actions and subtext rather than overt sales pitches.", bundle: 'free' },
+        { q: "Why do women \"hate sales but love marketing\"?", a: "Because sales pitches feel sleazy and needy, whereas covert marketing triggers intrigue and desire.", bundle: 'free' },
+        { q: "How does the Socratic Method apply to covert marketing?", a: "You present high-value actions and subtext, letting her draw her own conclusions about your worth.", bundle: 'free' },
+        { q: "Why is dressing well for mundane tasks an effective covert signal?", a: "It demonstrates high personal standards without asking for her verbal validation.", bundle: 'free' },
+        { q: "What is the danger of spouting Red Pill rules out loud?", a: "It turns luxury branding into an overt salesman pitch, destroying mystery and attraction.", bundle: 'free' },
+        { q: "What is the difference between covertly running Dread and covert contracts?", a: "Covert contracts expect unspoken trades; covert marketing builds genuine value for yourself.", bundle: 'pro' },
+        { q: "How does covert marketing handle \"pre-selection\"?", a: "You act charming and high-status naturally, letting her observe other women responding to you.", bundle: 'pro' },
+        { q: "Why does directness signal low status in luxury branding?", a: "Because high-value luxury goods never beg customers to buy; their value speaks for itself.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n• **Marketing the Prize** — Scarcity Signaling, Loss Aversion Exploitation, or Covert Marketing\n• **Conditioning and Boundaries** — Operant Conditioning, Loss Aversion Exploitation, or Covert Marketing\n• **Covert Positioning** — Covert Marketing, Scarcity Signaling, or Operant Conditioning\n\nOne question decides nearly all of it: are you signaling scarcity, holding a loss boundary, conditioning behavior, or showing value covertly?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Marketing the Prize, Conditioning and Boundaries, and Covert Positioning.", bundle: 'free' },
+        { q: "What is the focus of \"Marketing the Prize\"?", a: "Shifting from a commodity husband to a luxury brand using scarcity, loss, and covert marketing.", bundle: 'free' },
+        { q: "What does \"Conditioning and Boundaries\" make you choose between?", a: "Operant Conditioning, Loss Aversion Exploitation, and Covert Marketing.", bundle: 'free' },
+        { q: "What is the primary goal of \"Covert Positioning\"?", a: "Position yourself as luxury through action, scarcity, and calibrated conditioning.", bundle: 'free' },
+        { q: "When do you choose \"Scarcity Signaling\" in Collections?", a: "When unhurried availability and mission focus demonstrate high status.", bundle: 'free' },
+        { q: "When do you choose \"Loss Aversion Exploitation\"?", a: "When letting the risk of loss stand enforces a firm boundary against disrespect.", bundle: 'free' },
+        { q: "When do you choose \"Operant Conditioning\"?", a: "When withdrawing attention from coldness or rewarding warm investment reinforces standards.", bundle: 'pro' },
+        { q: "What is the primary trap in Collections?", a: "Making overt sales pitches, pleading for affection, or rewarding bad behavior.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n1. **The Scarcity to Reward Cycle** — Scarcity Signaling → Loss Aversion Exploitation → Operant Conditioning\n2. **The Covert Marketing Sequence** — Covert Marketing → Scarcity Signaling → Operant Conditioning\n3. **The Loss Aversion Reclaim** — Loss Aversion Exploitation → Covert Marketing → Operant Conditioning\n\nIn each sequence, the order of the steps is what enforces luxury positioning.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Scarcity to Reward Cycle, The Covert Marketing Sequence, and The Loss Aversion Reclaim.", bundle: 'free' },
+        { q: "What is the order in \"The Scarcity to Reward Cycle\"?", a: "Scarcity Signaling, then Loss Aversion Exploitation, and finally Operant Conditioning.", bundle: 'free' },
+        { q: "Why does \"The Scarcity to Reward Cycle\" start with Scarcity Signaling?", a: "Because demonstrating scarcity builds value before holding boundaries and offering comfort.", bundle: 'free' },
+        { q: "What is the order in \"The Covert Marketing Sequence\"?", a: "Covert Marketing, then Scarcity Signaling, and finally Operant Conditioning.", bundle: 'free' },
+        { q: "What does \"The Loss Aversion Reclaim\" train you to do?", a: "Let loss stand during disrespect, focus on covert value, and reward positive return.", bundle: 'free' },
+        { q: "Why is step order critical in relationship sequences?", a: "Because doing moves in the wrong order creates argument loops and destroys luxury positioning.", bundle: 'pro' },
+        { q: "What mistake do men make when faced with emotional pushback?", a: "They offer unearned comfort first instead of letting scarcity and boundaries create desire.", bundle: 'pro' },
+        { q: "How does a completed sequence resolve her emotional hamster maze?", a: "By building anxiety through scarcity and providing a clear comfort exit upon her investment.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n• **The Hamster Maze** — navigating her emotional anxiety without breaking frame\n• **Overt Sales and Pleading** — replacing salesman pitches with covert marketing\n• **Rewarding Bad Behavior** — withdrawing attention from disrespect and rewarding value\n• **Comfort Tests and Insecurity** — holding unshakeable frame during anxiety probes\n• **Commodity Husband Traps** — refusing commodity plow horse roles and enforcing standards\n\nEach category organizes by problem type rather than strategy.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Hamster Maze, Overt Sales and Pleading, Rewarding Bad Behavior, Comfort Tests and Insecurity, and Commodity Husband Traps.", bundle: 'free' },
+        { q: "How do you handle \"The Hamster Maze\"?", a: "By offering a clear comfort exit when she invests, without explaining your strategy.", bundle: 'free' },
+        { q: "What is the core move during \"Overt Sales and Pleading\"?", a: "Replacing needy speeches with covert marketing and unhurried action.", bundle: 'free' },
+        { q: "How do you resolve \"Rewarding Bad Behavior\"?", a: "By using Operant Conditioning to withdraw attention from disrespect and reward value.", bundle: 'free' },
+        { q: "How do you handle \"Comfort Tests and Insecurity\"?", a: "By using Covert Marketing and Scarcity Signaling to offer unbothered warmth without DEERing.", bundle: 'free' },
+        { q: "How do you escape \"Commodity Husband Traps\"?", a: "By enforcing expectations, managing capital strictly, and positioning yourself as luxury.", bundle: 'pro' },
+        { q: "What is your partner really testing in these challenges?", a: "Whether your new luxury brand identity is authentic or just a temporary bluff.", bundle: 'pro' },
+        { q: "Why is explaining Red Pill rules a fatal mistake in challenges?", a: "Because explaining rules converts luxury marketing into a sleazy used-car sales pitch.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four mindsets you practise in this pack:\n• **Luxury is Earned** — do the passive work of self-improvement to become a luxury brand\n• **Scarcity** — true value requires scarcity and unhurried mission focus\n• **Conditioning** — rewards must be earned through positive investment\n• **Covert Marketing** — stop selling; market your value covertly through action\n\nIn every one, the belief that gets in the way feels like safety or politeness from the inside.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Luxury is Earned, Scarcity, Conditioning, and Covert Marketing.", bundle: 'free' },
+        { q: "What does \"Luxury is Earned\" teach you?", a: "That you cannot market a product that doesn't exist; passive self-improvement builds real value.", bundle: 'free' },
+        { q: "What is the core truth behind \"Scarcity\"?", a: "That instant digital availability destroys status, while mission focus creates desire.", bundle: 'free' },
+        { q: "What is the core block in the \"Conditioning\" mindset?", a: "Believing that giving unconditional warmth during disrespect will earn her love.", bundle: 'free' },
+        { q: "What is the primary lesson of \"Covert Marketing\"?", a: "That women hate sales pitches but love marketing; let actions speak covertly.", bundle: 'free' },
+        { q: "Why is \"rational egoism\" essential for masculine leadership?", a: "Because a man must build his own strength and frame first to lead his family effectively.", bundle: 'pro' },
+        { q: "How does DEERing destroy luxury positioning?", a: "By treating your choices as subject to her approval and validation.", bundle: 'pro' },
+        { q: "What is the ultimate goal of these four mindsets?", a: "To shift from an interchangeable commodity husband into an unshakeable luxury brand.", bundle: 'pro' },
       ]
     },
   ],
@@ -7014,6 +7142,134 @@ const memorizeCollections = {
         { q: "What is \"Hysteric Bonding\"?", a: "A neurotic, pathological need for sex that functions like a fight-or-flight response to the fear of losing a man.", bundle: 'pro' },
         { q: "What is \"Briffault’s Law\"?", a: "The principle that the female, not the male, determines all the conditions of the animal family.", bundle: 'pro' },
         { q: "What is the \"Emasculation Paradox\"?", a: "Submitting to avoid conflict, which creates the contempt that makes future conflict more certain.", bundle: 'pro' },
+        { q: "What is \"Briffault’s Law\" and how does it apply to Dread?", a: "The law stating that the female determines all conditions of the family; a man must remain valuable for her to invest.", bundle: 'pro' },
+        { q: "What is the \"Emasculation Paradox\" in marriage dynamics?", a: "The cycle where submitting to avoid conflict creates the contempt that makes future conflict guaranteed.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "This pack teaches how to stop being taken for granted, enforce boundaries, and command respect in a relationship.\n\n1. **The Gym Bag Routine**\n2. **\"This Isn't Working\"**\n3. **Leading Without Permission**\n4. **Separating Sex and Intimacy**\n\nHow do the four fit together? Lead without permission, enforce high standards for sex, pivot cleanly away from rejection, and balance alpha anxiety with beta comfort.",
+      cards: [
+        { q: "What are the four core strategies in this pack?", a: "The Gym Bag Routine, \"This Isn't Working\", Leading Without Permission, Separating Sex and Intimacy.", bundle: 'free' },
+        { q: "What is the primary goal of practicing Dread in this pack?", a: "To stop being taken for granted and turn yourself into a high-value, luxury brand partner.", bundle: 'free' },
+        { q: "How do the four strategies fit together?", a: "Lead without permission, enforce high standards for sex, pivot cleanly away from rejection, and balance alpha anxiety with beta comfort.", bundle: 'free' },
+        { q: "What is the difference between \"active\" and \"passive\" Dread?", a: "Passive Dread builds your personal value (fitness, vision); active Dread enforces boundaries and starves unearned rewards.", bundle: 'free' },
+        { q: "What is the cardinal rule of power dynamics in relationships?", a: "The person who needs the other person less has the power.", bundle: 'free' },
+        { q: "Why is \"negotiated desire\" a complete fail state?", a: "Because it produces only obligated compliance, which feels sterile to the man and like violation to the woman.", bundle: 'pro' },
+        { q: "What is the core principle behind \"the stay plan is the same as the go plan\"?", a: "Both require building your frame, physique, and independence so you thrive regardless of the relationship outcome.", bundle: 'pro' },
+        { q: "Why must Dread strategies be executed covertly rather than overtly?", a: "Because women love marketing but hate sales; overt commands invite emotional resistance and fights over rules.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Gym Bag Routine",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of The Gym Bag Routine?", a: "Initiating intimacy shortly before a scheduled workout, so a rejection leads directly to pursuing a high-value activity.", bundle: 'free' },
+        { q: "Why must your gym bag be packed by the door in advance?", a: "Having the bag ready prevents hesitation and allows an immediate, seamless pivot upon rejection.", bundle: 'free' },
+        { q: "How should you handle a \"vicious rebuttal\" or harsh rejection when initiating?", a: "Maintain a calm smile, say nothing defensive, pick up your gym bag, and leave for your workout.", bundle: 'free' },
+        { q: "What psychological signal does a smiling exit send to your partner?", a: "It proves outcome independence and shatters the assumption that rejection will cause you to mope.", bundle: 'free' },
+        { q: "Where should you direct the frustration resulting from sexual rejection?", a: "Into your physical workout at the gym, never into verbal arguments or pouting at home.", bundle: 'free' },
+        { q: "How do you respond if she asks \"Are you mad?\" as you leave for the gym?", a: "Smile warmly and say: \"Not at all. I just want to get my lift in.\"", bundle: 'pro' },
+        { q: "What should you do when you return home from the gym after a rejection?", a: "Act as if nothing happened; shower, focus on your goals, and maintain unbothered frame.", bundle: 'pro' },
+        { q: "Why does throwing a \"temper tantrum\" after rejection sabotage your progress?", a: "It signals low value, emotional dependency, and confirms her belief that you are easily manipulated.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "\"This Isn't Working\"",
+      description: "",
+      cards: [
+        { q: "What is the primary purpose of the \"This Isn't Working\" strategy?", a: "To stop unenthusiastic, \"starfish\", or duty sex immediately without anger or resentment.", bundle: 'free' },
+        { q: "What exact phrase is used when halting a lackluster encounter?", a: "\"This isn't working out, and that's OK. We can try again later.\"", bundle: 'free' },
+        { q: "Why is it critical to get dressed and get on with your day without showing anger?", a: "Calm disengagement proves high standards, whereas anger makes the disengagement look like a punishment.", bundle: 'free' },
+        { q: "How does \"This Isn't Working\" affect a woman's sexual ego?", a: "It challenges her assumption of \"Magic Pussy Syndrome\" by showing that her presence alone is not enough.", bundle: 'free' },
+        { q: "What often happens after a man calmly enforces \"This Isn't Working\"?", a: "In many cases, the woman becomes sexually aggressive because her sexual pride has been challenged.", bundle: 'free' },
+        { q: "How should you respond if she becomes sexually aggressive after you halt unenthusiastic sex?", a: "Reward the new genuine investment warmly and re-engage in intimacy.", bundle: 'pro' },
+        { q: "What should you do if she accuses you of being \"weird\" or \"mean\" for stopping?", a: "State calmly that you have standards for intimacy, then move on to another activity.", bundle: 'pro' },
+        { q: "Why is accepting \"duty sex\" damaging to long-term attraction?", a: "It reinforces obligated compliance, lowers your perceived value, and turns intimacy into a chore.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Leading Without Permission",
+      description: "",
+      cards: [
+        { q: "What is the foundational mindset behind Leading Without Permission?", a: "Leaders do not ask for authorization to lead; they take responsibility and execute their vision.", bundle: 'free' },
+        { q: "How do you handle household decisions or plans under this strategy?", a: "Inform her of the logistics and schedule, rather than asking \"if\" you are allowed to do them.", bundle: 'free' },
+        { q: "How should you respond if she complains about a task you completed autonomously?", a: "State calmly that you handled it to your standard, and that she is free to do it next time if she prefers.", bundle: 'free' },
+        { q: "Why is seeking \"approval\" after completing a task counterproductive?", a: "Asking for praise (\"Mommy, look!\") signals needy, child-like behavior rather than masculine leadership.", bundle: 'free' },
+        { q: "What should you do when she nags about a task that isn't urgent for you?", a: "Acknowledge her input calmly, state when it will fit into your timeline, and stick to your schedule.", bundle: 'free' },
+        { q: "Why is \"servant leadership\" in a romantic relationship described as a delusion?", a: "You cannot serve a partner who needs to look up to you without losing the qualities worth looking up to.", bundle: 'pro' },
+        { q: "How do you manage family vacations or activities using this strategy?", a: "Plan the logistics fully, present the schedule clearly, and lead the execution with unshakeable confidence.", bundle: 'pro' },
+        { q: "What is the \"Emasculation Paradox\"?", a: "Submitting to her demands to avoid conflict, which creates the contempt that guarantees future conflict.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Separating Sex and Intimacy",
+      description: "",
+      cards: [
+        { q: "What is the core distinction between \"Alpha\" and \"Beta\" behaviors in this strategy?", a: "Alpha behaviors create anxiety and sexual desire; Beta behaviors provide comfort, bonding, and relief.", bundle: 'free' },
+        { q: "When should you provide warmth, cuddles, and emotional availability to your partner?", a: "As a reward following her genuine sexual investment, never as a bribe to earn sex later.", bundle: 'free' },
+        { q: "How should you respond if she demands emotional comfort while remaining sexually cold?", a: "Maintain calm, focused distance on your own goals until her investment returns.", bundle: 'free' },
+        { q: "Why does giving \"Beta comfort\" to fix her bad mood backfire?", a: "It teaches her that she can get the rewards of commitment without providing value or desire.", bundle: 'free' },
+        { q: "What is the purpose of the \"Push and Pull\" cycle in long-term relationships?", a: "Pushing creates the anxiety necessary for desire, while pulling back provides the comfort that reinforces it.", bundle: 'free' },
+        { q: "How should you act immediately after sex when she has invested enthusiastically?", a: "Be 100% present, warm, affectionate, and available to reinforce her positive behavior.", bundle: 'pro' },
+        { q: "What should you do if she \"starfishes\" during sex but you complete the encounter anyway?", a: "Withdraw comfort afterward: skip post-sex cuddles, get up calmly, and shower immediately.", bundle: 'pro' },
+        { q: "Why is acting as her \"therapist\" or emotional dumping ground harmful to attraction?", a: "It demotes you to a comfortable confidant while destroying the sexual tension required for desire.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Standards of the Prize** — shift from commodity husband to luxury partner when tested\n• **Establish the Frame** — choose the right boundary move when facing resistance\n• **Reclaim the Prize** — pick the move that demonstrates outcome independence\n\nOne question decides nearly all of it: which standard is being tested in this moment?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Standards of the Prize, Establish the Frame, and Reclaim the Prize.", bundle: 'pro' },
+        { q: "What choice does \"Standards of the Prize\" present to the user?", a: "Picking between workout pivots, stopping mediocre sex, or autonomous leadership when tested.", bundle: 'pro' },
+        { q: "What is the primary question used to select a strategy in Collections?", a: "What did the other person just do, and which specific boundary is being tested?", bundle: 'pro' },
+        { q: "Which move fits when she offers duty sex to keep you from leaving the house?", a: "\"This Isn't Working\" — disengage cleanly to reject obligated compliance.", bundle: 'pro' },
+        { q: "Which move fits when she demands you get her permission before making a financial decision?", a: "Leading Without Permission — state that the budget is handled according to your vision.", bundle: 'pro' },
+        { q: "Which move fits when she rejects your bedtime initiation with a dismissive jab?", a: "The Gym Bag Routine — grab your bag with a smile and go pursue your workout.", bundle: 'pro' },
+        { q: "Which move fits when she seeks hours of emotional validation while staying physically cold?", a: "Separating Sex and Intimacy — withdraw your attention and focus on your mission.", bundle: 'pro' },
+        { q: "How does a man choose between \"This Isn't Working\" and Separating Sex and Intimacy when facing resistance?", a: "\"This Isn't Working\" halts unenthusiastic sexual encounters on the spot, while Separating Sex and Intimacy reserves emotional warmth until she invests.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Rejection Pivot** — STFU → The Gym Bag Routine → The Oak\n2. **The Quality Reset** — Leading Without Permission → \"This Isn't Working\" → Separating Sex and Intimacy\n3. **The Boundary Sequence** — Separating Sex and Intimacy → The Gym Bag Routine → Leading Without Permission\n\nIn each sequence, the order does the work: establishing frame before boundary enforcement prevents your moves from looking like emotional outbursts.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Rejection Pivot, The Quality Reset, and The Boundary Sequence.", bundle: 'pro' },
+        { q: "What is the exact three-step chain in \"The Rejection Pivot\"?", a: "STFU → The Gym Bag Routine → The Oak.", bundle: 'pro' },
+        { q: "Why must STFU come before The Gym Bag Routine when turned down?", a: "Going quiet prevents DEERing (defending, explaining), ensuring the exit looks like outcome independence.", bundle: 'pro' },
+        { q: "What is the exact three-step chain in \"The Quality Reset\"?", a: "Leading Without Permission → \"This Isn't Working\" → Separating Sex and Intimacy.", bundle: 'pro' },
+        { q: "Why is Leading Without Permission the first step in \"The Quality Reset\"?", a: "Establishing autonomous leadership first ensures that halting mediocre sex is seen as a high standard, not a tantrum.", bundle: 'pro' },
+        { q: "What is the exact three-step chain in \"The Boundary Sequence\"?", a: "Separating Sex and Intimacy → The Gym Bag Routine → Leading Without Permission.", bundle: 'pro' },
+        { q: "What does \"The Boundary Sequence\" train a man to execute?", a: "Responding to emotional distance, sexual rejection, and returning focused on his mission without needing approval.", bundle: 'pro' },
+        { q: "Why does a Dread sequence establish autonomous leadership before halting unenthusiastic intimacy?", a: "Leading without permission builds a strong frame first, so ending low-quality sex is perceived as holding high standards rather than throwing a tantrum.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories to master in this pack:\n\n• **The Compliance Trap** — unenthusiastic duty sex used as control\n• **Choreplay** — the delusion that domestic labor buys attraction\n• **Spouting the Rules** — verbal arguments and appeals to rulebooks\n• **Manufactured Outrage** — emotional meltdowns testing your frame\n• **The Light Switch Effect** — rewriting relationship history to justify detachment\n\nEach category organizes recurring real-world obstacles around this pack's core strategies.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "The Compliance Trap, Choreplay, Spouting the Rules, Manufactured Outrage, and The Light Switch Effect.", bundle: 'pro' },
+        { q: "What is the core mistake men make in the \"Choreplay\" challenge?", a: "Believing the covert contract that washing dishes or doing housework will earn sexual desire.", bundle: 'pro' },
+        { q: "How do you solve the \"Spouting the Rules\" challenge when she accuses you of playing games?", a: "Refuse to debate theory; execute your vision through quiet action rather than verbal arguments.", bundle: 'pro' },
+        { q: "What is the goal of a woman creating \"Manufactured Outrage\"?", a: "To test whether your new frame is real or a bluff by attempting to draw you into emotional chaos.", bundle: 'pro' },
+        { q: "What is \"The Light Switch Effect\" in relationship dynamics?", a: "A woman's psychological rewriting of history to convince herself she was always unhappy and you were always abusive.", bundle: 'pro' },
+        { q: "How do you handle \"The Compliance Trap\" when she offers duty sex to quiet you down?", a: "Reject the low-effort offer cleanly using \"This Isn't Working\" and focus on high-value goals.", bundle: 'pro' },
+        { q: "Why is \"negotiated desire\" fundamentally flawed in all challenge situations?", a: "Because desire cannot be bargained; attempts to negotiate only yield resentment and obligated compliance.", bundle: 'pro' },
+        { q: "Why does doing more household chores in response to \"Choreplay\" fail to restore intimacy?", a: "Because comfort is the antithesis of sexual desire, and attempting to trade domestic labor for sex creates covert contracts rather than genuine attraction.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **You Are the Gatekeeper** — you control inclusion in your life and relationship\n• **Permission** — leadership is taken through action, never requested\n• **Rejections** — frustration belongs to the iron, not your partner\n• **Scarcity** — mediocre duty sex is worse than no sex\n\nIn each area, the limiting belief feels like polite compliance, while the reset restores masculine dignity.",
+      cards: [
+        { q: "What are the four mindset decks in this pack?", a: "You Are the Gatekeeper, Permission, Rejections, and Scarcity.", bundle: 'pro' },
+        { q: "What is the limiting belief in the \"Permission\" mindset deck?", a: "\"I need my wife's approval before I can make decisions for our household or lead our family.\"", bundle: 'pro' },
+        { q: "What is the mindset reset for handling sexual rejection in \"Rejections\"?", a: "\"My frustration belongs to the iron at the gym, not to verbal temper tantrums at home.\"", bundle: 'pro' },
+        { q: "What is the core reset in the \"Scarcity\" mindset deck?", a: "\"You are the prize; mediocre duty sex is worse than no sex.\"", bundle: 'pro' },
+        { q: "What is the reset in \"You Are the Gatekeeper\"?", a: "\"She is the gatekeeper of sex, but I am the gatekeeper of the relationship.\"", bundle: 'pro' },
+        { q: "Why does Rian Stone emphasize that \"genuine desire only comes from the choice of investment\"?", a: "Because negotiating for sex produces only obligated compliance, whereas a woman must feel scarcity and choose to invest to experience real attraction.", bundle: 'pro' },
+        { q: "What does Rian Stone mean when he states \"the stay plan and the go plan are the same plan\"?", a: "Both require building personal value, frame, and outcome independence so you become a self-actualized man regardless of whether the marriage survives or ends.", bundle: 'pro' },
+        { q: "Why is seeking a wife's approval to lead described as \"covert submission\"?", a: "If a man needs her authorization to make decisions, she remains the captain, destroying the masculine frame required for her to respect his authority.", bundle: 'pro' },
       ]
     },
   ],
@@ -7028,6 +7284,134 @@ const memorizeCollections = {
         { q: "What defines a \"Main Event\"?", a: "A massive blowup of desperation where she admits she doesn't know how to keep you.", bundle: 'pro' },
         { q: "What is the goal of \"Controlled Anger\"?", a: "To make her escalation uncomfortable and her de-escalation comfortable (operant conditioning).", bundle: 'pro' },
         { q: "Why is \"Mystery\" essential for a prize?", a: "Because explaining the rules kills the magic and signals the desperation of a salesman.", bundle: 'pro' },
+        { q: "What is the \"Continuum of Force\" in relationship dynamics?", a: "Using measured, escalating levels of controlled anger to discourage bad behavior and de-escalating immediately once boundaries are respected.", bundle: 'pro' },
+        { q: "Why is \"operant conditioning\" effective in managing emotional friction?", a: "Because it makes escalation uncomfortable and de-escalation comfortable, guiding her hamster out of anxiety toward positive investment.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "This pack teaches how to master emotional regulation, handle relationship friction, and lead through tension.\n\n1. **Controlled Anger**\n2. **Manufactured Outrage**\n3. **Cocky/Funny Accusation Response**\n4. **Navigating the Main Event**\n\nHow do the four fit together? Use controlled anger for boundaries, manufacture outrage to maintain attraction, deflect accusations with cocky mystery, and hold unshakeable frame during the Main Event.",
+      cards: [
+        { q: "What are the four core strategies in this pack?", a: "Controlled Anger, Manufactured Outrage, Cocky/Funny Accusation Response, Navigating the Main Event.", bundle: 'free' },
+        { q: "What is the cardinal rule regarding women's reaction to communication?", a: "Women love marketing, but hate sales.", bundle: 'free' },
+        { q: "Why is uncontrolled anger a total loss of frame?", a: "Because it overshadows the actual boundary issue and signals that you have no other tools left.", bundle: 'free' },
+        { q: "What two conditions are necessary to produce genuine anger?", a: "Grievance and pain.", bundle: 'free' },
+        { q: "What is the purpose of the \"Hamster Maze\" analogy?", a: "It describes a woman's irrational flurry of anxiety-driven thoughts searching for comfort and direction.", bundle: 'free' },
+        { q: "Why is comfort described as \"the antithesis of sexual desire\"?", a: "Because attraction requires emotional tension, and desire arrives at the tail end of anxiety released through comfort.", bundle: 'pro' },
+        { q: "What is the \"Come to Jesus\" moment?", a: "A succinct, direct statement of your vision for the relationship delivered after the storm of a Main Event.", bundle: 'pro' },
+        { q: "What is \"Goldfish Memory\"?", a: "Resetting to normal immediately after a conflict and refusing to hold a grudge or revisit past arguments.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Controlled Anger",
+      description: "",
+      cards: [
+        { q: "What is the core definition of Controlled Anger?", a: "Using anger as a measured, deliberate social signal and tool rather than a reactive outburst.", bundle: 'free' },
+        { q: "Why does uncontrolled anger fail as a boundary enforcement?", a: "Because your emotional outburst becomes the only issue, allowing her to ignore her original infraction.", bundle: 'free' },
+        { q: "What is the \"Scale Match\" technique in Controlled Anger?", a: "Ranking her emotional intensity on a 1-10 scale and matching her level plus one to dominate the interaction.", bundle: 'free' },
+        { q: "What is a \"Warning Shot\" in Controlled Anger?", a: "A clear, firm verbal boundary fired before escalating to full confrontation.", bundle: 'free' },
+        { q: "What should you do when she attempts to \"revisit\" a fight after de-escalation?", a: "Execute Goldfish Memory: state that you have no idea what she's talking about and move on.", bundle: 'free' },
+        { q: "Why is anger considered the only true \"social emotion\"?", a: "Because it requires two people—a grievance and pain—and sends the limbic signal to stop an action.", bundle: 'pro' },
+        { q: "How does Controlled Anger utilize \"operant conditioning\"?", a: "It makes boundary crossing uncomfortable through escalation and de-escalation comfortable through immediate warmth.", bundle: 'pro' },
+        { q: "Why must a man be emotionally detached before using Controlled Anger?", a: "Because if he is genuinely hurt or emotional, he cannot calibrate his force or de-escalate cleanly.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Manufactured Outrage",
+      description: "",
+      cards: [
+        { q: "What is the primary purpose of Manufactured Outrage?", a: "To proactively initiate a conflict over a minor matter to regulate emotional tension and sustain attraction.", bundle: 'free' },
+        { q: "Why do women enjoy the soreness after a good fight?", a: "Because strong emotions (negative and positive) provide hormone rewards and satisfy the need for engagement.", bundle: 'free' },
+        { q: "How do you initiate Manufactured Outrage?", a: "Target a tiny, inconsequential flaw or mess and escalate it into a dramatic, staged complaint.", bundle: 'free' },
+        { q: "How do you handle the \"climax\" of a manufactured argument?", a: "Suddenly lose interest, drop the subject, and walk away to read or relax.", bundle: 'free' },
+        { q: "What should you do if she brings up the manufactured complaint ten minutes later?", a: "Dismiss it lightly: \"What, that? That was forever ago, babe. No one cares.\"", bundle: 'free' },
+        { q: "Why is Manufactured Outrage preferable to waiting for her to start a fight?", a: "Because manufacturing the fight allows you to control the timing, intensity, and de-escalation on your terms.", bundle: 'pro' },
+        { q: "What is the danger of manufacturing outrage while you are genuinely angry?", a: "You will lose your emotional aloofness, turning the exercise into real resentment and defensive fighting.", bundle: 'pro' },
+        { q: "Why is leadership described as \"more than doing the dishes\"?", a: "Because doing chores creates comfort, whereas leading requires driving the emotional weather of the home.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Cocky/Funny Accusation Response",
+      description: "",
+      cards: [
+        { q: "What is the core purpose of Cocky/Funny Accusation Response?", a: "To handle accusations of infidelity or secrecy with aloof, cocky humor rather than defensive denials.", bundle: 'free' },
+        { q: "Why is offering defensive reassurances counterproductive when accused of cheating?", a: "It relieves her anxiety too early, kills the mystery, and makes you look like a used car salesman.", bundle: 'free' },
+        { q: "How should you respond if she catches you in bed and asks \"Are you cheating on me?\"", a: "\"I'm trying to sleep. Ask me when I don't have work in the morning.\"", bundle: 'free' },
+        { q: "What is the \"Accountability Courtesy\" statement?", a: "\"I love you enough that if I were to have an affair, you'd be the first to know. I expect the same.\"", bundle: 'free' },
+        { q: "Why does a woman's imagination thrive on mystery?", a: "Because her hamster needs an itch to scratch; covert changes signal high sexual market value.", bundle: 'free' },
+        { q: "What is the difference between \"marketing\" and \"sales\" when dealing with accusations?", a: "Sales is explaining and reassuring; marketing is projecting high value and letting her draw her own conclusions.", bundle: 'pro' },
+        { q: "Why do women level accusations of cheating when a man improves his SMV?", a: "Because they see him doing what they would do if they were preparing to leave, triggering loss aversion.", bundle: 'pro' },
+        { q: "How does Cocky/Funny Accusation Response exploit \"Loss Aversion\"?", a: "It keeps the threat of losing a luxury partner present without making explicit threats or bluffs.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Navigating the Main Event",
+      description: "",
+      cards: [
+        { q: "What is the definition of a \"Main Event\"?", a: "The mother of all comfort tests—a massive, overt blowup where she realizes she doesn't know how to keep you.", bundle: 'free' },
+        { q: "What is the hallmark sign that a real Main Event is occurring?", a: "Snot bubbles, diaphragm spasms, and genuine desperation, not a standard temper tantrum.", bundle: 'free' },
+        { q: "Why must a man be \"checked-out\" for a Main Event to occur?", a: "Because genuine outcome independence changes his body language and proves he no longer seeks her validation.", bundle: 'free' },
+        { q: "What is the \"Come to Jesus\" moment?", a: "Succinctly communicating your vision for the relationship after her emotional storm has cleared.", bundle: 'free' },
+        { q: "What three elements must a Come to Jesus speech contain?", a: "A clear vision, succinct delivery, and an actionable exit from her hamster maze.", bundle: 'free' },
+        { q: "Why is \"I want us to have sex three times a week\" an invalid vision?", a: "Because a vision is a narrative of intent and expectations, not a binary goal or chore checklist.", bundle: 'pro' },
+        { q: "Why do men who look for a Main Event fail to experience one?", a: "Looking for one betrays a covert contract where the man is still trying to manipulate her affection.", bundle: 'pro' },
+        { q: "What does \"the stay plan and the go plan are the same plan\" mean in the Main Event?", a: "Both require building unshakeable frame, self-actualization, and independence regardless of her choice.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Emotional Regulation** — Controlled Anger or Manufactured Outrage\n• **Managing the Hamster** — Cocky/Funny Accusation Response or Navigating the Main Event\n• **The Continuum of Force** — everything mixed, and no warning about which boundary is tested\n\nOne question decides nearly all of it: is she testing a boundary, seeking emotional tension, fishing for reassurance, or experiencing a total frame collapse?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Emotional Regulation, Managing the Hamster, and The Continuum of Force.", bundle: 'pro' },
+        { q: "What choice does \"Emotional Regulation\" present to the user?", a: "Choosing between boundary-enforcing Controlled Anger and tension-creating Manufactured Outrage.", bundle: 'pro' },
+        { q: "What is the primary question used to select a strategy in Collections?", a: "Is she testing a boundary, seeking emotional tension, fishing for reassurance, or in full meltdown?", bundle: 'pro' },
+        { q: "Which move fits when she challenges your authority in front of friends?", a: "Controlled Anger — fire a firm warning shot to mark the boundary immediately.", bundle: 'pro' },
+        { q: "Which move fits when the relationship has been overly quiet and attraction is waning?", a: "Manufactured Outrage — pick a tiny flaw to inject needed emotional tension.", bundle: 'pro' },
+        { q: "Which move fits when she asks suspiciously why you are getting high-dollar haircuts?", a: "Cocky/Funny Accusation Response — deflect with cocky mystery rather than defensive explanations.", bundle: 'pro' },
+        { q: "Which move fits when she breaks down sobbing and asks what you expect of her?", a: "Navigating the Main Event — hold steady and state your Come to Jesus vision.", bundle: 'pro' },
+        { q: "How do you choose between Manufactured Outrage and Navigating the Main Event when facing emotional distance?", a: "Manufactured Outrage is a proactive, low-stakes tool used to inject tension when attraction is stagnant, whereas Navigating the Main Event is a passive, high-stakes stance maintained during a genuine, full-scale emotional crisis.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Escalation Ladder** — Controlled Anger → Controlled Anger → Goldfish Memory\n2. **The Tension Reset** — Manufactured Outrage → Controlled Anger → Navigating the Main Event\n3. **The Crisis Navigation** — Controlled Anger → Cocky/Funny Accusation Response → Navigating the Main Event\n\nIn each sequence, the order does the work: establishing frame and managing tension before delivering vision prevents your moves from looking like emotional outbursts.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Escalation Ladder, The Tension Reset, and The Crisis Navigation.", bundle: 'pro' },
+        { q: "What is the exact three-step chain in \"The Escalation Ladder\"?", a: "Controlled Anger (Warning) → Controlled Anger (Escalation) → Goldfish Memory.", bundle: 'pro' },
+        { q: "Why must Goldfish Memory follow Controlled Anger in \"The Escalation Ladder\"?", a: "Resetting immediately proves you use anger as a tool, not a lingering, resentful grudge.", bundle: 'pro' },
+        { q: "What is the exact three-step chain in \"The Tension Reset\"?", a: "Manufactured Outrage → Controlled Anger → Navigating the Main Event.", bundle: 'pro' },
+        { q: "Why is Controlled Anger the second step in \"The Tension Reset\"?", a: "If she counter-attacks during staged outrage, Controlled Anger enforces the boundary before stating vision.", bundle: 'pro' },
+        { q: "What is the exact three-step chain in \"The Crisis Navigation\"?", a: "Controlled Anger → Cocky/Funny Accusation Response → Navigating the Main Event.", bundle: 'pro' },
+        { q: "What does \"The Crisis Navigation\" train a man to execute?", a: "Stopping disrespect, deflecting panic accusations, and holding frame through her meltdown to deliver vision.", bundle: 'pro' },
+        { q: "Why must Controlled Anger precede Cocky/Funny Accusation Response when responding to disrespect coupled with panic accusations?", a: "Fire a firm warning shot first to establish a boundary against disrespect, because deflecting with cocky humor while she is being actively disrespectful surrenders frame and rewards bad behavior.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories to master in this pack:\n\n• **The High-Intensity Meltdown** — 10/10 emotional blowups\n• **The Hamster Wheel** — spinning in anxiety and fishing for explanations\n• **Accusations of Cheating** — projecting insecurity when your value rises\n• **Hysteric Bonding** — panic sex after a crisis\n• **The Discomfort Trap** — using guilt and tears to break your frame\n\nEach category organizes recurring real-world obstacles around this pack's core strategies.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "The High-Intensity Meltdown, The Hamster Wheel, Accusations of Cheating, Hysteric Bonding, and The Discomfort Trap.", bundle: 'pro' },
+        { q: "What is the core mistake men make in \"The Hamster Wheel\" challenge?", a: "Offering direct explanations and reassurances, which relieves her anxiety too early and kills mystery.", bundle: 'pro' },
+        { q: "How do you solve \"Accusations of Cheating\" when she confronts you suspiciously?", a: "Use Cocky/Funny Accusation Response to tease instead of offering defensive, low-value denials.", bundle: 'pro' },
+        { q: "What is the danger of \"Hysteric Bonding\"?", a: "Mistaking temporary panic sex for a permanent fix, dropping your frame, and slipping back into old habits.", bundle: 'pro' },
+        { q: "What is \"The Discomfort Trap\"?", a: "Her use of tears, guilt, and public scenes to make you feel like an \"asshole\" for enforcing standards.", bundle: 'pro' },
+        { q: "How do you handle \"The High-Intensity Meltdown\" when she is throwing things?", a: "Use Controlled Anger to mark the line firmly, or stay silent as The Oak until the storm passes.", bundle: 'pro' },
+        { q: "Why does offering direct reassurances during \"The Hamster Wheel\" challenge sabotage a man's position?", a: "Direct reassurances relieve her anxiety prematurely through defensive sales pitches, destroying mystery and stopping her hamster before it reaches your vision.", bundle: 'pro' },
+        { q: "How does a man avoid falling into \"The Discomfort Trap\" when his wife uses tears to make him feel guilty for enforcing boundaries?", a: "By becoming comfortable being perceived as an \"asshole\", recognizing that her emotional discomfort is simply the limbic signal that a boundary was successfully set.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Anger is a Tool** — controlled anger is a social signal and operant conditioning\n• **Emotional Tension** — comfort is the antithesis of sexual desire\n• **Accusations** — accusations are comfort tests requiring mystery, not sales\n• **Meltdowns** — stay unshakeable during her storm to give her an exit\n\nIn each area, the limiting belief feels like polite compliance, while the reset restores masculine authority.",
+      cards: [
+        { q: "What are the four mindset decks in this pack?", a: "Anger is a Tool, Emotional Tension, Accusations, and Meltdowns.", bundle: 'pro' },
+        { q: "What is the limiting belief in the \"Emotional Tension\" mindset deck?", a: "\"I should keep the peace at all costs and avoid picking fights or creating unnecessary conflict in my home.\"", bundle: 'pro' },
+        { q: "What is the mindset reset for handling accusations of cheating in \"Accusations\"?", a: "\"An accusation is a comfort test; meet it with cocky mystery, not defensive sales pitches.\"", bundle: 'pro' },
+        { q: "What is the core reset in the \"Meltdowns\" mindset deck?", a: "\"Be the unshakeable Oak; her meltdown is her hamster searching for your vision.\"", bundle: 'pro' },
+        { q: "What is the reset in \"Anger is a Tool\"?", a: "\"My anger is valuable. It protects my frame and marks my boundaries.\"", bundle: 'pro' },
+        { q: "What is the mindset shift required regarding anger when a man feels guilty for raising his voice during a confrontation?", a: "Reframe anger from an uncontrollable outburst into a measured, social tool used deliberately for operant conditioning and boundary enforcement.", bundle: 'pro' },
+        { q: "What is the mindset reset when a man fears that manufacturing outrage over a minor flaw will ruin a peaceful household?", a: "Recognize that a peaceful, friction-free household leads to emotional stagnation, and that women require emotional tension to feel attraction.", bundle: 'pro' },
+        { q: "How does a man reset his mindset when tempted to defend himself against accusations of cheating?", a: "Shift from defensive sales to luxury marketing, remembering that an accusation is a comfort test best met with cocky mystery and loss aversion.", bundle: 'pro' },
       ]
     },
   ],
@@ -7042,6 +7426,148 @@ const memorizeCollections = {
         { q: "What is \"Stay/Go Congruence\"?", a: "Acting so that your self-improvement is the same whether you stay or leave.", bundle: 'pro' },
         { q: "What is \"Magic Pussy Syndrome\"?", a: "A woman's ego-driven assumption that her sexual rejection should cause a man's misery.", bundle: 'pro' },
         { q: "What is the \"Emasculation Paradox\"?", a: "Submitting to avoid conflict, which actually creates the contempt that makes conflict certain.", bundle: 'pro' },
+        { q: "What is the ultimate goal of moving along the Dread Roadmap?", a: "To transition from passive, reactive bailing of water in a failing relationship to active, outcome-independent self-actualization and leadership.", bundle: 'pro' },
+        { q: "Why does Rian Stone insist that a man must be willing to destroy a dysfunctional relationship to fix it?", a: "Because holding onto a broken, disrespectful status quo out of fear prevents establishing the strong masculine frame required for genuine desire.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "This pack teaches how to reclaim personal agency, command finances, evaluate remorse, and navigate the Dread roadmap.\n\n1. **The Come to Jesus Moment**\n2. **Control of the Treasury**\n3. **The Remorse Checklist**\n4. **Stay/Go Congruence**\n\nHow do the four fit together? Control the treasury to establish physical reality, state your succinct vision during a Come to Jesus moment, judge remorse through actions, and maintain stay/go congruence.",
+      cards: [
+        { q: "What are the four core strategies in this pack?", a: "The Come to Jesus Moment, Control of the Treasury, The Remorse Checklist, Stay/Go Congruence.", bundle: 'free' },
+        { q: "What is the primary purpose of the Dread Roadmap?", a: "To move from passive bailing of water to active, outcome-independent leadership of your own life.", bundle: 'free' },
+        { q: "What is a \"Come to Jesus Moment\"?", a: "Succinctly communicating your personal vision and actionable terms to your partner after a Main Event.", bundle: 'free' },
+        { q: "How does a leader execute \"Control of the Treasury\"?", a: "Through silent infrastructure preparation followed by announcing the new financial structure as a fact.", bundle: 'free' },
+        { q: "What is the core rule of \"The Remorse Checklist\"?", a: "Judge a partner's sincerity strictly through observable actions over time, never through cheap words.", bundle: 'free' },
+        { q: "What does \"the stay plan and the go plan are the same plan\" mean?", a: "Both require building your physique, career, frame, and legal readiness so you thrive in any outcome.", bundle: 'pro' },
+        { q: "What are the two axes that define the five outcomes of Dread?", a: "Whether you separate or stay together, and whether you continue to sleep together or not.", bundle: 'pro' },
+        { q: "Why is \"Schrödinger’s Relationship\" a useful mental model?", a: "You treat the old dead marriage as gone; if she flutters with genuine new life and investment, you act accordingly.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Come to Jesus Moment",
+      description: "",
+      cards: [
+        { q: "When should a Come to Jesus speech be delivered?", a: "Only after the emotional storm of a Main Event has cleared and you have her full, undivided attention.", bundle: 'free' },
+        { q: "What are the three essential guidelines for a Come to Jesus Moment?", a: "1. Articulate a narrative vision. 2. Keep it succinct. 3. Provide a clear exit from her hamster maze.", bundle: 'free' },
+        { q: "Why is \"I want sex three times a week\" an invalid vision statement?", a: "Because a vision is a narrative of intent and high standards, not a binary goal or chore checklist.", bundle: 'free' },
+        { q: "What is an example of a succinct, articulate vision?", a: "\"I see myself in a relationship with a woman who treats me with genuine respect, warmth, and investment.\"", bundle: 'free' },
+        { q: "How many times should you state your vision during the Come to Jesus Moment?", a: "Say it once with total clarity; hammering it home signals desperation and invites debate.", bundle: 'free' },
+        { q: "What does \"providing an exit from her hamster maze\" mean?", a: "Giving her clear, actionable steps she can take to align with your vision and keep you in her life.", bundle: 'pro' },
+        { q: "Why do men who try to explain their vision for 20 minutes fail?", a: "Because taking 20 minutes to explain means you don't have a vision—you have a babbling mess.", bundle: 'pro' },
+        { q: "Why is genuine Frame required before a Come to Jesus Moment can work?", a: "Because without Frame, direct communication sounds like a bluff or an overt demand from a weak man.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Control of the Treasury",
+      description: "",
+      cards: [
+        { q: "What is the first phase of Control of the Treasury?", a: "Silent preparation: opening private sole accounts, closing joint credit lines, and setting PO boxes before speaking.", bundle: 'free' },
+        { q: "How is the new financial structure communicated to the family?", a: "As an established decision and fact, never as a proposal or request for permission.", bundle: 'free' },
+        { q: "What budget system is implemented for daily household expenses?", a: "A weekly cash allowance system backed by strict receipt review.", bundle: 'free' },
+        { q: "Why must you close joint credit cards and brokerage accounts?", a: "To eliminate unauthorized debt liabilities and stop giving away your financial value for free.", bundle: 'free' },
+        { q: "How should you respond when she demands to know \"why\" you took control of the money?", a: "State plainly: \"Because we were spending more than was coming in, and I am managing our budget.\"", bundle: 'free' },
+        { q: "Why is \"servant leadership\" described as a lie in financial management?", a: "You cannot serve a partner who needs to look up to your authority without destroying the leadership she relies on.", bundle: 'pro' },
+        { q: "How do you handle her opening a new secret charge account after joint lines are closed?", a: "Execute certified letters to credit agencies and close the account immediately without debate.", bundle: 'pro' },
+        { q: "What is the \"Zero Tolerance\" policy regarding expense receipts?", a: "Requiring itemized receipts before replenishing the cash fund; if receipts aren't provided, the fund stops.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Remorse Checklist",
+      description: "",
+      cards: [
+        { q: "What is the fundamental difference between cheap remorse and real remorse?", a: "Cheap remorse is tears and words because she got caught; real remorse is consistent, humble action over time.", bundle: 'free' },
+        { q: "What is \"The Initiative Check\" in evaluating remorse?", a: "Observing whether she takes proactive, unprompted steps to repair damage without you managing her.", bundle: 'free' },
+        { q: "What is \"The Patience Check\" in evaluating remorse?", a: "Seeing if she accepts your timeline for healing without complaining that you \"should be over it by now\".", bundle: 'free' },
+        { q: "How should you respond if she says \"just get over it already\" after a betrayal?", a: "Recognize that the test is over—she lacks real remorse—and proceed with your Go Plan.", bundle: 'free' },
+        { q: "What role do post-nuptial agreements play in evaluating financial or sexual remorse?", a: "They force her to put real financial skin in the game to prove her commitment to repair.", bundle: 'free' },
+        { q: "Why must you refuse to let her control the timeline for rebuilding trust?", a: "Because remorse lasts as long as the injured party needs it to; letting her dictate time surrenders frame.", bundle: 'pro' },
+        { q: "What is \"trickle truth\" and how should a leader handle it?", a: "Draining out facts bit by bit under pressure; state that nothing is forgivable if expected to be forgettable.", bundle: 'pro' },
+        { q: "Why is public accountability (e.g., coming clean to her family) a valid test of remorse?", a: "Because if her external reputation matters more to her than your relationship, her remorse is a fake.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stay/Go Congruence",
+      description: "",
+      cards: [
+        { q: "What is the core definition of Stay/Go Congruence?", a: "Operating so that your fitness, career, frame, and self-improvement are identical whether you stay or leave.", bundle: 'free' },
+        { q: "What is \"Internal Decoupling\"?", a: "Removing the requirement for her approval or affection to validate your daily happiness and self-respect.", bundle: 'free' },
+        { q: "What is a \"Legal Safety Blanket\"?", a: "Consulting a divorce lawyer early and keeping a completed asset/custody dossier in a private desk drawer.", bundle: 'free' },
+        { q: "How does having a legal safety blanket change your body language in marriage?", a: "It removes abstract panic, raises your floor, and communicates genuine, unshakeable outcome independence.", bundle: 'free' },
+        { q: "How should you respond if she accuses you of \"acting like you're single\" while building your vision?", a: "\"I'm focused on my vision. You're welcome to be a part of it.\"", bundle: 'free' },
+        { q: "What is \"Schrödinger’s Relationship\"?", a: "Treating the marriage as dead already while observing whether she shows genuine new life in your frame.", bundle: 'pro' },
+        { q: "Why is \"building options in the sexual marketplace\" necessary for stay/go congruence?", a: "Knowing you can replace her with a younger, tighter partner removes the desperation that enables her disrespect.", bundle: 'pro' },
+        { q: "What is the cardinal rule regarding covert contracts during Stay/Go Congruence?", a: "Never improve yourself to \"win her back\"; improve yourself because you demand excellence from your life.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Exercising Agency** — choose between vision, financial control, and outcome independence\n• **Reclaiming Authority** — pick the boundary move that asserts leadership\n• **Defining the Terms** — select the strategy that addresses what she is withholding\n\nOne question decides nearly all of it: which area of agency or boundary enforcement is being tested right now?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Exercising Agency, Reclaiming Authority, and Defining the Terms.", bundle: 'pro' },
+        { q: "What choice does \"Exercising Agency\" present to the user?", a: "Choosing between financial control, stating vision, action-based remorse checks, and outcome independence.", bundle: 'pro' },
+        { q: "What is the primary question used to select a strategy in Collections?", a: "Which specific boundary or area of leadership is being tested in this moment?", bundle: 'pro' },
+        { q: "Which move fits when she maxes out joint credit cards and refuses to budget?", a: "Control of the Treasury — take unilateral control of all accounts and assign a cash budget.", bundle: 'pro' },
+        { q: "Which move fits when a Main Event clears the air and she asks for your expectations?", a: "The Come to Jesus Moment — state your succinct vision and actionable exit from her maze.", bundle: 'pro' },
+        { q: "Which move fits when she offers an emotional apology for an affair but refuses to block the lover?", a: "The Remorse Checklist — demand proof in action rather than accepting cheap words.", bundle: 'pro' },
+        { q: "Which move fits when she threatens to file for divorce to force you to drop a boundary?", a: "Stay/Go Congruence — maintain your standards and show complete outcome independence.", bundle: 'pro' },
+        { q: "How do you choose between Control of the Treasury and The Come to Jesus Moment when taking back authority?", a: "Control of the Treasury addresses physical and financial insolvency through silent execution, whereas The Come to Jesus Moment articulates your long-term narrative vision once emotional storms have cleared.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Navigating the Roadmap** — STFU → The Come to Jesus Moment → Stay/Go Congruence\n2. **The Agency Reset** — Control of the Treasury → The Come to Jesus Moment → Stay/Go Congruence\n3. **The Reconstruction Chain** — The Remorse Checklist → The Come to Jesus Moment → Stay/Go Congruence\n\nIn each sequence, the order does the work: establishing physical reality and evaluating remorse before delivering vision prevents your terms from sounding like bluffs.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Navigating the Roadmap, The Agency Reset, and The Reconstruction Chain.", bundle: 'pro' },
+        { q: "What is the exact three-step chain in \"Navigating the Roadmap\"?", a: "STFU → The Come to Jesus Moment → Stay/Go Congruence.", bundle: 'pro' },
+        { q: "What is the exact three-step chain in \"The Agency Reset\"?", a: "Control of the Treasury → The Come to Jesus Moment → Stay/Go Congruence.", bundle: 'pro' },
+        { q: "Why must Control of the Treasury precede The Come to Jesus Moment in \"The Agency Reset\"?", a: "Establishing financial control first creates concrete leverage, so stating vision is backed by physical reality.", bundle: 'pro' },
+        { q: "What is the exact three-step chain in \"The Reconstruction Chain\"?", a: "The Remorse Checklist → The Come to Jesus Moment → Stay/Go Congruence.", bundle: 'pro' },
+        { q: "What does \"The Reconstruction Chain\" train a man to execute?", a: "Evaluating betrayal through actions, stating relationship terms, and maintaining outcome independence.", bundle: 'pro' },
+        { q: "Why is Stay/Go Congruence the final step in all three sequences?", a: "Because long-term authority requires that your personal mission continues regardless of her choice to follow.", bundle: 'pro' },
+        { q: "Why must Control of the Treasury or STFU come before The Come to Jesus Moment in a sequence?", a: "Because establishing financial reality or emotional quiet first creates concrete leverage and authority, preventing your vision statement from sounding like an empty bluff or a needy negotiation.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories to master in this pack:\n\n• **Betrayal and Evaluation** — judging sincerity after trust violations\n• **Financial Sabotage** — stopping reckless joint spending and debt\n• **The Divorce Threat** — meeting threats with unshakeable outcome independence\n• **Chinese Knock-off Remorse** — rejecting cheap words without action\n• **The Five Outcomes** — navigating relationship destinations without delusion\n\nEach category organizes recurring real-world obstacles around this pack's core strategies.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "Betrayal and Evaluation, Financial Sabotage, The Divorce Threat, Chinese Knock-off Remorse, and The Five Outcomes.", bundle: 'pro' },
+        { q: "What is the core mistake men make in \"Financial Sabotage\"?", a: "Trying to negotiate a budget committee where the wife retains veto power over reckless spending.", bundle: 'pro' },
+        { q: "How do you solve \"The Divorce Threat\" challenge when she threatens separation?", a: "Use Stay/Go Congruence: build your value, retain a lawyer, and show unshakeable outcome independence.", bundle: 'pro' },
+        { q: "What is \"Chinese Knock-off Remorse\"?", a: "Cheap apologies, tears, and excuses offered to avoid consequences without taking real action to repair trust.", bundle: 'pro' },
+        { q: "What is the goal of mastering \"The Five Outcomes\"?", a: "To understand every potential relationship destination so you make decisions from clarity rather than fear.", bundle: 'pro' },
+        { q: "How do you handle \"Betrayal and Evaluation\" when she refuses to give full disclosure?", a: "Use The Remorse Checklist to state that nothing is forgivable if expected to be forgettable.", bundle: 'pro' },
+        { q: "How does a man handle the \"Chinese Knock-off Remorse\" challenge when a wife offers cheap apologies for betrayal?", a: "By ignoring her tears and emotional words, judging her sincerity strictly through observable, unprompted actions and patience over an extended timeline.", bundle: 'pro' },
+        { q: "What resolves \"The Divorce Threat\" challenge when a wife weaponizes separation to break a boundary?", a: "Demonstrating complete Stay/Go Congruence by retaining a lawyer, understanding legal reality, and showing unshakeable outcome independence.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Responsibility vs Blame** — you are responsible for fixing your life regardless of blame\n• **Finances** — leadership of the treasury is taken, never granted\n• **Betrayals** — remorse requires time and observable proof\n• **Divorce** — the stay plan and the go plan are the same plan\n\nIn each area, the limiting belief feels like polite compliance, while the reset restores executive agency.",
+      cards: [
+        { q: "What are the four mindset decks in this pack?", a: "Responsibility vs Blame, Finances, Betrayals, and Divorce.", bundle: 'pro' },
+        { q: "What is the limiting belief in the \"Finances\" mindset deck?", a: "\"I can't take unilateral control of our money without her permission, or she'll accuse me of being financially abusive.\"", bundle: 'pro' },
+        { q: "What is the mindset reset for handling betrayal in \"Betrayals\"?", a: "\"Remorse is proved through consistent action over time, not promised in emotional words.\"", bundle: 'pro' },
+        { q: "What is the core reset in the \"Divorce\" mindset deck?", a: "\"The stay plan and the go plan are the same plan: become a self-actualized luxury brand.\"", bundle: 'pro' },
+        { q: "What is the reset in \"Responsibility vs Blame\"?", a: "\"Focus on who is responsible for fixing your lot in life: you.\"", bundle: 'pro' },
+        { q: "What is the mindset reset when a man feels guilty for taking unilateral control of the family treasury?", a: "A leader takes responsibility for long-term financial survival; seeking permission to manage household assets surrenders authority and enables ruin.", bundle: 'pro' },
+        { q: "How does a man reset the limiting belief that divorce means his life is completely ruined?", a: "Recognize that the stay plan and the go plan are the same plan: build your value, physique, and independence so you thrive in any outcome.", bundle: 'pro' },
+        { q: "What is the mindset reset when a man feels obligated to forgive a betrayal immediately to end conflict?", a: "Forgiveness without proof of action-based remorse invites repeated betrayals; real remorse is proved through consistent action over time.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The 5 Outcomes of Dread",
+      description: "The five distinct destinations resulting from conducting Dread in a failing or sexless relationship.\n\n• **Sex life improves** — wife responds well, marriage continues\n• **Stay and open up** — stay and open the relationship on your end\n• **Stay and accept** — stay and accept the old status quo on your terms\n• **Leave and replace** — leave and find her replacement\n• **Leave and continue** — leave and continue sleeping with her\n\nUnderstanding all options creates abundance and removes the fear of the unknown.",
+      cards: [
+        { q: "What is Outcome 1 of the Dread Roadmap?", a: "Sex life improves, wife responds well to leadership, and the marriage continues in high value.", bundle: 'pro' },
+        { q: "What is Outcome 2 of the Dread Roadmap?", a: "You stay in the marriage for logistics or family, but open up the relationship on your end.", bundle: 'pro' },
+        { q: "What is Outcome 3 of the Dread Roadmap?", a: "You stay and accept the status quo on your terms, focusing your energy on career and self-actualization.", bundle: 'pro' },
+        { q: "What is Outcome 4 of the Dread Roadmap?", a: "You leave the marriage cleanly and find a younger, tighter, more appreciative replacement.", bundle: 'pro' },
+        { q: "What is Outcome 5 of the Dread Roadmap?", a: "You leave the marriage officially but continue to sleep with your ex-wife casually.", bundle: 'pro' },
+        { q: "Why is understanding all five outcomes essential before conducting active Dread?", a: "Because knowing that every outcome can lead to a successful life removes the fear of divorce.", bundle: 'pro' },
+        { q: "What is the single mistake men make when choosing Outcome 4?", a: "Cutting and running without doing the internal work, leading to repeating the exact same failure with a new woman.", bundle: 'pro' },
+        { q: "Why are none of the five outcomes considered \"failures\" for a praxeological man?", a: "Because every outcome allows a man who has built his frame and value to live on his own terms.", bundle: 'pro' },
       ]
     },
   ],

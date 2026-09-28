@@ -6146,6 +6146,94 @@ const multiStepCollections = {
             { front: "Operant Conditioning — (Later, she softens and asks \"How was your gym?\")", back: "\"It was great, thanks for asking. Come here and tell me about your day.\" (Reward the investment.)", guideFront: "Reward it or withdraw when...", guideBack: "A reward or withdrawal of attention" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "You plan a weekend camping trip for yourself. She throws a tantrum and demands you stay home to clean the house.",
+          steps: [
+            { front: "Scarcity Signaling — she demands you cancel your trip to prove you care about her.", back: "\"Trip is booked for Saturday morning. I'm executing my plans.\"", guideFront: "Signal scarcity when...", guideBack: "A brief, busy, unhurried line" },
+            { front: "Loss Aversion Exploitation — she threatens to pack her bags and leave if you go.", back: "\"You are free to make your choices. I expect us to be partners.\"", guideFront: "Let the risk of loss stand when...", guideBack: "An unworried line, or a held boundary" },
+            { front: "Operant Conditioning — on Sunday evening, she returns with a warm attitude and cooks dinner.", back: "\"Thanks for dinner, Love. Glad to sit together.\"", guideFront: "Reward it or withdraw when...", guideBack: "A reward or withdrawal of attention" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She incurs major unapproved spending on luxury clothes and demands you pay the card bill.",
+          steps: [
+            { front: "Scarcity Signaling — she texts frantic demands during your work day.", back: "\"In work meetings until five PM. We discuss numbers at home.\"", guideFront: "Signal scarcity when...", guideBack: "A brief, busy, unhurried line" },
+            { front: "Loss Aversion Exploitation — when you meet, she claims you are financially abusive.", back: "\"Unapproved spending exceeds our limit. Independent accounts keep us structured.\"", guideFront: "Let the risk of loss stand when...", guideBack: "An unworried line, or a held boundary" },
+            { front: "Operant Conditioning — three days later, she adheres to the budget and presents clean accounts.", back: "\"Excellent budgeting work. Let me take us out for dinner tonight.\"", guideFront: "Reward it or withdraw when...", guideBack: "A reward or withdrawal of attention" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Covert Marketing Sequence",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A sequence for demonstrating luxury value:\n\n1. **Covert Marketing** — show high-status value through action rather than verbal sales\n2. **Scarcity Signaling** — maintain unhurried focus on your personal mission\n3. **Operant Conditioning** — reward her positive re-engagement with warm presence\n\nWhy this order: demonstrating value covertly sparks intrigue, signaling scarcity builds intrigue into desire, and conditioning rewards her investment.\n\nWhat people do instead: brag overtly, hover needy, and reward disrespect.\n\nMindset: show value covertly, remain scarce, reward real investment.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You decide to overhaul your professional trajectory and physical fitness without announcing a big speech.",
+          steps: [
+            { front: "Covert Marketing — she notices your new tailored wardrobe and fitness progress.", back: "(Smile calmly, adjust your jacket) \"Upgrading my standards. Heading out to work.\"", guideFront: "Show it rather than sell it when...", guideBack: "A subtle demonstration of value" },
+            { front: "Scarcity Signaling — she texts five times during lunch asking why you're dressing sharp.", back: "\"Busy afternoon block. I'll see you at home tonight.\"", guideFront: "Signal scarcity when...", guideBack: "A brief, busy, unhurried line" },
+            { front: "Operant Conditioning — when you arrive home, she welcomes you with a warm hug and dinner.", back: "\"I appreciate the warm welcome, Love. Great to see you.\"", guideFront: "Reward it or withdraw when...", guideBack: "A reward or withdrawal of attention" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You set up an independent home workspace and start executing focus blocks.",
+          steps: [
+            { front: "Covert Marketing — she asks why you reorganized the study without asking permission.", back: "\"I set up the workspace for quiet focus blocks. The office is ready.\"", guideFront: "Show it rather than sell it when...", guideBack: "A subtle demonstration of value" },
+            { front: "Scarcity Signaling — she rattles the door handle during your afternoon work block.", back: "(Maintain quiet focus until your block ends. Do not debate through the door.)", guideFront: "Signal scarcity when...", guideBack: "A brief, busy, unhurried line" },
+            { front: "Operant Conditioning — she brings a tray of coffee later and asks how your work went.", back: "\"Thanks for the coffee, Love. Work block was very productive.\"", guideFront: "Reward it or withdraw when...", guideBack: "A reward or withdrawal of attention" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You eliminate junk food from the pantry and establish a daily morning workout routine.",
+          steps: [
+            { front: "Covert Marketing — she asks why you stopped eating processed sugar and fast food.", back: "\"I train for high performance. Clean nutrition drives my energy.\"", guideFront: "Show it rather than sell it when...", guideBack: "A subtle demonstration of value" },
+            { front: "Scarcity Signaling — she complains that you wake up at six AM on Saturdays to train.", back: "\"Saturday workout starts at six AM. I'm back home at seven thirty.\"", guideFront: "Signal scarcity when...", guideBack: "A brief, busy, unhurried line" },
+            { front: "Operant Conditioning — she joins you for a healthy breakfast and asks about your workout.", back: "\"Glad you joined me for breakfast, Love. Great start to the day.\"", guideFront: "Reward it or withdraw when...", guideBack: "A reward or withdrawal of attention" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Loss Aversion Reclaim",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A sequence for reclaiming authority during disrespect:\n\n1. **Loss Aversion Exploitation** — let the risk of losing you stand without panicking\n2. **Covert Marketing** — focus quietly on your personal standards and mission\n3. **Operant Conditioning** — reward her return to respectful behavior with warmth\n\nWhy this order: letting loss stand stops disrespect, covert marketing builds intrigue, and conditioning reinforces the exit from her anxiety.\n\nWhat people do instead: plead for affection, negotiate limits, and reward bad behavior.\n\nMindset: let loss stand, build value covertly, reward positive choices.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She tries to embarrass you at a social dinner by mocking your firm financial limits.",
+          steps: [
+            { front: "Loss Aversion Exploitation — she mocks your budget in front of dinner guests.", back: "\"Household capital is managed by real numbers, not public opinion.\"", guideFront: "Let the risk of loss stand when...", guideBack: "An unworried line, or a held boundary" },
+            { front: "Covert Marketing — during the drive home, she waits for you to lose your temper.", back: "(Maintain calm driving posture, whistle softly, and focus on the road.)", guideFront: "Show it rather than sell it when...", guideBack: "A subtle demonstration of value" },
+            { front: "Operant Conditioning — the next morning, she apologizes calmly and brings you breakfast.", back: "\"Thank you for the apology, Love. I appreciate your respect.\"", guideFront: "Reward it or withdraw when...", guideBack: "A reward or withdrawal of attention" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She gives you the silent treatment for three days because you refused to buy an expensive luxury car.",
+          steps: [
+            { front: "Loss Aversion Exploitation — she states 'If you won't buy it, maybe I should find a man who will'.", back: "\"You are free to make your choices. I expect us to be partners.\"", guideFront: "Let the risk of loss stand when...", guideBack: "An unworried line, or a held boundary" },
+            { front: "Covert Marketing — you continue your daily routines, fitness, and career blocks calmly.", back: "(Execute your priorities smoothly with zero defensive over-explaining.)", guideFront: "Show it rather than sell it when...", guideBack: "A subtle demonstration of value" },
+            { front: "Operant Conditioning — she drops her cold stance, hugs you, and initiates intimacy.", back: "(Receive her warmth enthusiastically and match her passion.)", guideFront: "Reward it or withdraw when...", guideBack: "A reward or withdrawal of attention" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She attempts to negotiate sex, stating she will only be intimate if you clean the whole house first.",
+          steps: [
+            { front: "Loss Aversion Exploitation — she demands choreplay in exchange for bedroom intimacy.", back: "\"I do chores to maintain my home standards. I don't trade chores for sex.\"", guideFront: "Let the risk of loss stand when...", guideBack: "An unworried line, or a held boundary" },
+            { front: "Covert Marketing — you clean your portion of the house to your standard, then head to train.", back: "(Execute your tasks cleanly, grab your gym bag, and head to your workout.)", guideFront: "Show it rather than sell it when...", guideBack: "A subtle demonstration of value" },
+            { front: "Operant Conditioning — she comes to your study later, offers a warm massage, and initiates intimacy.", back: "\"This feels great, Love. Glad we are close tonight.\"", guideFront: "Reward it or withdraw when...", guideBack: "A reward or withdrawal of attention" },
+          ]
+        },
       ]
     },
   ],
@@ -6163,6 +6251,94 @@ const multiStepCollections = {
             { front: "STFU — she waits for you to whine or explain.", back: "(Silence. Do not DEER. Maintain a calm, unbothered gaze for three seconds.)", guideFront: "Stop explaining and go quiet when...", guideBack: "Silence, or one short line" },
             { front: "The Gym Bag Routine — you stand up and grab your gear.", back: "\"No worries. I'm heading to the gym for an hour. See you when I get back.\"", guideFront: "Take the no and go train when...", guideBack: "A light exit to your workout" },
             { front: "The Oak — you return and she says \"You're just trying to make me feel guilty by leaving.\"", back: "\"The birds are still singing, Love. I'm going to make a protein shake. Want one?\"", guideFront: "Stay grounded through her storm when...", guideBack: "An unbothered, steady line" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You initiate sex in the morning, but she rejects you and accuses you of only caring about sex.",
+          steps: [
+            { front: "STFU — she waits for you to argue or defend yourself.", back: "(Maintain a calm, silent gaze. Do not explain or apologize.)", guideFront: "Stop explaining and go quiet when...", guideBack: "Silence, or one short line" },
+            { front: "The Gym Bag Routine — you stand up and pick up your workout clothes.", back: "\"I'm heading out to the gym for my morning lift. See you later.\"", guideFront: "Take the no and go train when...", guideBack: "A light exit to your workout" },
+            { front: "The Oak — you return home and she tries to start a debate about your departure.", back: "\"Everything is fine, Love. I'm going to make breakfast now.\"", guideFront: "Stay grounded through her storm when...", guideBack: "An unbothered, steady line" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You initiate intimacy on Saturday afternoon, but she turns you down with a harsh jab about your priorities.",
+          steps: [
+            { front: "STFU — she looks at you to see if her jab hurt your feelings.", back: "(Say nothing. Smile calmly without a word of defense.)", guideFront: "Stop explaining and go quiet when...", guideBack: "Silence, or one short line" },
+            { front: "The Gym Bag Routine — you grab your pre-packed gym bag from by the door.", back: "\"No worries. I'll go take care of my workout now. Back in an hour.\"", guideFront: "Take the no and go train when...", guideBack: "A light exit to your workout" },
+            { front: "The Oak — she meets you at the door when you return, accusing you of leaving out of spite.", back: "\"I had a great session. I'm going to shower.\"", guideFront: "Stay grounded through her storm when...", guideBack: "An unbothered, steady line" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Quality Reset",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence for establishing leadership, halting unenthusiastic compliance, and resetting emotional distance.\n\n1. **Leading Without Permission** — take charge of the situation and execute your plan\n2. **\"This Isn't Working\"** — disengage immediately if intimacy lacks genuine desire\n3. **Separating Sex and Intimacy** — maintain calm distance until she chooses to invest\n\nIf step 2 happens before step 1, stopping sex feels like a punishment rather than a boundary backed by leadership. Men often plead or argue first, which surrenders frame and invites obligated compliance.\n\nMindset: Do not negotiate for desire; lead your life and let her choose to follow.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She tries to dictate how you manage the evening household schedule, then offers duty sex.",
+          steps: [
+            { front: "Leading Without Permission — she demands you follow her chore list before bed.", back: "\"I've set our evening schedule. The chores are handled.\"", guideFront: "Take charge on your own terms when...", guideBack: "A plan you've already set" },
+            { front: "\"This Isn't Working\" — in bed, she starfishes and tells you to hurry up.", back: "\"This isn't working out, and that's OK. Let's stop.\"", guideFront: "Stop it calmly when...", guideBack: "A calm, unhurried stop" },
+            { front: "Separating Sex and Intimacy — she expects you to cuddle and apologize for stopping.", back: "\"I'm going to read downstairs for a bit. Goodnight.\"", guideFront: "Save warmth for her investment when...", guideBack: "Distance, or a warm pull back" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You plan a date night autonomously, but she acts unengaged and offers transactional intimacy afterward.",
+          steps: [
+            { front: "Leading Without Permission — she asks where you are taking her and criticizes the choice.", back: "\"I've booked our table for eight. Get ready, we're leaving soon.\"", guideFront: "Take charge on your own terms when...", guideBack: "A plan you've already set" },
+            { front: "\"This Isn't Working\" — at home, she lies back like a blow-up doll.", back: "\"I'm not feeling a real connection here. Let's try another time.\"", guideFront: "Stop it calmly when...", guideBack: "A calm, unhurried stop" },
+            { front: "Separating Sex and Intimacy — she gets annoyed that you ended the encounter.", back: "\"I'm focused on getting a good night's sleep. See you in the morning.\"", guideFront: "Save warmth for her investment when...", guideBack: "Distance, or a warm pull back" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You organize a family activity, but she complains about your direction and offers transactional sex later to keep the peace.",
+          steps: [
+            { front: "Leading Without Permission — she tries to take over planning the afternoon.", back: "\"I've mapped out the drive and the activities. Follow my lead.\"", guideFront: "Take charge on your own terms when...", guideBack: "A plan you've already set" },
+            { front: "\"This Isn't Working\" — later, she offers a mechanical encounter without warmth.", back: "\"I'd rather wait until we're both fully engaged. Let's pause.\"", guideFront: "Stop it calmly when...", guideBack: "A calm, unhurried stop" },
+            { front: "Separating Sex and Intimacy — she expects you to stay and comfort her insecurity.", back: "\"I'm heading to the study to work on my project.\"", guideFront: "Save warmth for her investment when...", guideBack: "Distance, or a warm pull back" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Boundary Sequence",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A sequence for responding to emotional withholding, sexual rejection, and reclaiming personal frame.\n\n1. **Separating Sex and Intimacy** — pull back emotional comfort when she is distant or argumentative\n2. **The Gym Bag Routine** — pivot smoothly to your workout when she turns down initiation\n3. **Leading Without Permission** — return focused on your mission without seeking her validation\n\nIf step 3 is skipped, leaving for the gym looks like a temper tantrum instead of an independent life. Most men seek approval after a rejection, which reinforces her control.\n\nMindset: Your mission continues regardless of her mood.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She spends the day giving you silent treatment, then turns down your initiation at night.",
+          steps: [
+            { front: "Separating Sex and Intimacy — she demands you comfort her bad mood without explaining it.", back: "\"I see you need space. I'll be in my office.\"", guideFront: "Save warmth for her investment when...", guideBack: "Distance, or a warm pull back" },
+            { front: "The Gym Bag Routine — she turns down your initiation with a cold glance.", back: "\"No worries at all. I'm heading out for a night run.\"", guideFront: "Take the no and go train when...", guideBack: "A light exit to your workout" },
+            { front: "Leading Without Permission — you return and proceed with your planned Sunday schedule.", back: "\"I've set our breakfast plan for eight. We're on schedule.\"", guideFront: "Take charge on your own terms when...", guideBack: "A plan you've already set" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She criticizes your presence around the house and rejects intimacy when you try to connect.",
+          steps: [
+            { front: "Separating Sex and Intimacy — she complains about your work hours while remaining emotionally distant.", back: "\"I'm focused on my goals. Let me know when you're ready to be pleasant.\"", guideFront: "Save warmth for her investment when...", guideBack: "Distance, or a warm pull back" },
+            { front: "The Gym Bag Routine — she rejects your attempt to get intimate before your workout.", back: "(Grab your bag with a smile) \"Understood. Off to the gym.\"", guideFront: "Take the no and go train when...", guideBack: "A light exit to your workout" },
+            { front: "Leading Without Permission — you return and take care of household priorities autonomously.", back: "\"I'm handling the garage maintenance today. It'll be done by noon.\"", guideFront: "Take charge on your own terms when...", guideBack: "A plan you've already set" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She acts cold towards you during a party, then rejects you when you get home.",
+          steps: [
+            { front: "Separating Sex and Intimacy — she ignores you in front of friends to signal displeasure.", back: "(Maintain calm independence. Engage warmly with others while staying aloof with her.)", guideFront: "Save warmth for her investment when...", guideBack: "Distance, or a warm pull back" },
+            { front: "The Gym Bag Routine — at home, she refuses your initiation with a dismissive comment.", back: "\"Fair enough. I'm going to do my night stretching routine.\"", guideFront: "Take the no and go train when...", guideBack: "A light exit to your workout" },
+            { front: "Leading Without Permission — the next morning, you execute family plans without waiting for her mandate.", back: "\"I've packed the car for our day trip. We leave in ten minutes.\"", guideFront: "Take charge on your own terms when...", guideBack: "A plan you've already set" },
           ]
         },
       ]
@@ -6184,6 +6360,94 @@ const multiStepCollections = {
             { front: "Goldfish Memory — 15 minutes later, she comes back, looking sheepish.", back: "(Whistle and act as if nothing happened) \"Hey babe, do you want to help me with these burgers?\"", guideFront: "Let it go completely when...", guideBack: "A light line, as if nothing happened" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "She chirps at you constantly while you prepare dinner, trying to provoke an argument.",
+          steps: [
+            { front: "Controlled Anger — she complains about how you chop vegetables.", back: "\"Do you really want to have this fight? Because you aren't going to like it.\"", guideFront: "Mark the line firmly when...", guideBack: "A firm, deliberate stop" },
+            { front: "Controlled Anger — she keeps nagging, testing if you will back down.", back: "(Match her intensity +1) \"I said enough! You can step out of the kitchen if you can't be pleasant.\"", guideFront: "Mark the line firmly when...", guideBack: "A firm, deliberate stop" },
+            { front: "Goldfish Memory — 15 minutes later, she returns to the kitchen silently.", back: "(Whistle cheerfully and dish out the plates) \"Dinner's served, Love.\"", guideFront: "Let it go completely when...", guideBack: "A light line, as if nothing happened" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She challenges your weekend schedule aggressively in front of family members.",
+          steps: [
+            { front: "Controlled Anger — she snaps that your plans are inconvenient for her.", back: "\"We aren't doing this here. Keep your voice down.\"", guideFront: "Mark the line firmly when...", guideBack: "A firm, deliberate stop" },
+            { front: "Controlled Anger — she doubles down and demands an immediate argument.", back: "\"You want a fight? Let's have a fight. Step outside right now!\"", guideFront: "Mark the line firmly when...", guideBack: "A firm, deliberate stop" },
+            { front: "Goldfish Memory — after cooling off, she sits next to you in the living room.", back: "\"Hand me that cushion, please. Thanks.\"", guideFront: "Let it go completely when...", guideBack: "A light line, as if nothing happened" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Tension Reset",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence for managing emotional stagnation: Manufactured Outrage → Controlled Anger → Navigating the Main Event.\n\n1. **Manufactured Outrage** — pick a tiny logistical flaw to inject needed emotional tension\n2. **Controlled Anger** — enforce a firm boundary if she attempts to counter-attack with disrespect\n3. **Navigating the Main Event** — stay grounded and state your vision once the storm clears\n\nIf step 2 is skipped when she counters aggressively, manufactured outrage collapses into a loss of frame.\n\nMindset: Lead the emotional weather; comfortable stability kills desire.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "The relationship has been overly quiet and comfortable for weeks, and her attraction is waning.",
+          steps: [
+            { front: "Manufactured Outrage — you target a minor mess she left on the counter.", back: "\"You left the coffee grounds everywhere? I can't believe how messy this is.\"", guideFront: "Start a small fight on purpose when...", guideBack: "A staged complaint, then a drop" },
+            { front: "Controlled Anger — she snaps back with a personal insult about your attitude.", back: "\"Do you really want to turn this into a fight? Watch your tone.\"", guideFront: "Mark the line firmly when...", guideBack: "A firm, deliberate stop" },
+            { front: "Navigating the Main Event — after she processes the tension, she asks what you want from her.", back: "\"I want a pleasant home and a woman who respects my standards.\"", guideFront: "Hold steady through her meltdown when...", guideBack: "A calm presence, or a brief direction" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Routine chores become a source of unspoken resentment, and she acts emotionally aloof.",
+          steps: [
+            { front: "Manufactured Outrage — you stage a dramatic complaint about an unmade bed.", back: "\"This bed is a disaster zone today. Are we living in a dorm?\"", guideFront: "Start a small fight on purpose when...", guideBack: "A staged complaint, then a drop" },
+            { front: "Controlled Anger — she tries to lecture you about your own habits.", back: "\"This behavior is unacceptable. We are not arguing about my habits.\"", guideFront: "Mark the line firmly when...", guideBack: "A firm, deliberate stop" },
+            { front: "Navigating the Main Event — she breaks down her defensiveness and seeks your direction.", back: "\"I see myself leading a household where we support each other without drama.\"", guideFront: "Hold steady through her meltdown when...", guideBack: "A calm presence, or a brief direction" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "After a smooth social gathering, she acts disengaged and tests your boundaries.",
+          steps: [
+            { front: "Manufactured Outrage — you call out a tiny delay in leaving the party.", back: "\"We missed the highway turn because you took twenty minutes with your coat.\"", guideFront: "Start a small fight on purpose when...", guideBack: "A staged complaint, then a drop" },
+            { front: "Controlled Anger — she gets hostile and raises her voice in the car.", back: "\"I said enough! Drive in silence or pull over.\"", guideFront: "Mark the line firmly when...", guideBack: "A firm, deliberate stop" },
+            { front: "Navigating the Main Event — at home, she calms down and looks for reassurance.", back: "\"I expect sexual availability and pleasant company. That's who I build with.\"", guideFront: "Hold steady through her meltdown when...", guideBack: "A calm presence, or a brief direction" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Crisis Navigation",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A sequence for responding to boundary testing, panic accusations, and full emotional meltdowns: Controlled Anger → Cocky/Funny Accusation Response → Navigating the Main Event.\n\n1. **Controlled Anger** — fire a clear warning shot when she crosses a boundary\n2. **Cocky/Funny Accusation Response** — deflect her panic accusations without offering defensive sales pitches\n3. **Navigating the Main Event** — stay aloof through her breakdown and deliver your Come to Jesus speech\n\nSkipping step 2 and giving honest reassurances releases her anxiety too early, killing the luxury branding.\n\nMindset: Hold frame through the storm; her meltdown is her hamster searching for your vision.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She notices your increased fitness and scarcity, and tries to start a late-night fight.",
+          steps: [
+            { front: "Controlled Anger — she starts insulting your late work hours.", back: "\"Stop right there. You're not going to talk to me like that.\"", guideFront: "Mark the line firmly when...", guideBack: "A firm, deliberate stop" },
+            { front: "Cocky/Funny Accusation Response — she asks suspiciously, \"Are you cheating on me?\"", back: "\"I'm trying to sleep. Ask me when I don't have a 6 AM meeting.\"", guideFront: "Tease instead of denying when...", guideBack: "A cocky, playful dodge" },
+            { front: "Navigating the Main Event — she breaks into tears and admits she's terrified of losing you.", back: "\"I see two people building a power couple. Be the woman who fits that vision.\"", guideFront: "Hold steady through her meltdown when...", guideBack: "A calm presence, or a brief direction" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You return from a workout, and she confronts you with built-up insecurity and anger.",
+          steps: [
+            { front: "Controlled Anger — she screams at you for prioritizing yourself over her.", back: "\"We aren't doing this. Keep your voice at an adult level.\"", guideFront: "Mark the line firmly when...", guideBack: "A firm, deliberate stop" },
+            { front: "Cocky/Funny Accusation Response — she demands to know who you were really with at the gym.", back: "\"Are you sure you want to know?\"", guideFront: "Tease instead of denying when...", guideBack: "A cocky, playful dodge" },
+            { front: "Navigating the Main Event — her hamster runs out of maze and she asks how to fix things.", back: "\"I'm an easy man to keep happy. Give me a soft landing and real investment.\"", guideFront: "Hold steady through her meltdown when...", guideBack: "A calm presence, or a brief direction" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She finds your secret fitness tracking or field notes and throws a dramatic tantrum.",
+          steps: [
+            { front: "Controlled Anger — she attempts to shame you for reading books online.", back: "\"Your tone is unacceptable. We're done discussing my reading.\"", guideFront: "Mark the line firmly when...", guideBack: "A firm, deliberate stop" },
+            { front: "Cocky/Funny Accusation Response — she demands to know if you're writing about other women.", back: "\"I love you enough that if I had an affair, you'd be the first to know.\"", guideFront: "Tease instead of denying when...", guideBack: "A cocky, playful dodge" },
+            { front: "Navigating the Main Event — she drops her hostility, crying, and asks for a clear way forward.", back: "\"I want a high-value partner who chooses to invest in me every day.\"", guideFront: "Hold steady through her meltdown when...", guideBack: "A calm presence, or a brief direction" },
+          ]
+        },
       ]
     },
   ],
@@ -6201,6 +6465,94 @@ const multiStepCollections = {
             { front: "STFU — she shouts \"Why won't you just tell me what's wrong?!\".", back: "(Maintain a calm, silent presence. Give her a minute to settle.)", guideFront: "Stop explaining and go quiet when...", guideBack: "Silence, or one short line" },
             { front: "The Come to Jesus Moment — she catches her breath and asks \"What do I need to do to keep you?\".", back: "\"I see myself in a relationship with a woman who treats me with respect and investment. If that's who you want to be, I'm right here.\"", guideFront: "State your vision and terms when...", guideBack: "Your vision, said in a sentence" },
             { front: "Stay/Go Congruence — she says she'll try, but asks if you'll stop going to the gym.", back: "\"My health is part of my vision. I'm going to the gym at seven. You're welcome to join me.\"", guideFront: "Keep improving either way when...", guideBack: "A line about your own path" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She launches into a heated late-night rant accusing you of emotionally checking out of the marriage.",
+          steps: [
+            { front: "STFU — she waits for you to argue, defend yourself, or apologize.", back: "(Maintain calm, steady silence. Do not explain or defend.)", guideFront: "Stop explaining and go quiet when...", guideBack: "Silence, or one short line" },
+            { front: "The Come to Jesus Moment — after her anger spends itself, she asks what you actually want.", back: "\"I see myself leading a home filled with genuine respect, warmth, and shared investment.\"", guideFront: "State your vision and terms when...", guideBack: "Your vision, said in a sentence" },
+            { front: "Stay/Go Congruence — she asks if you will leave her if she can't meet that standard.", back: "\"I'm focused on my personal growth and standards. I hope you choose to join me.\"", guideFront: "Keep improving either way when...", guideBack: "A line about your own path" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She confronts you during a weekend getaway, demanding to know why you stopped seeking her approval.",
+          steps: [
+            { front: "STFU — she baits you with insults to provoke a defensive argument.", back: "(Hold an unbothered, quiet gaze without offering explanations.)", guideFront: "Stop explaining and go quiet when...", guideBack: "Silence, or one short line" },
+            { front: "The Come to Jesus Moment — she drops her hostility, crying, and asks how to move forward.", back: "\"I want a partner who respects my leadership and brings passion to our relationship.\"", guideFront: "State your vision and terms when...", guideBack: "Your vision, said in a sentence" },
+            { front: "Stay/Go Congruence — she asks if you are planning to divorce her in the future.", back: "\"My stay plan and my go plan are identical: I build my value and hold my standards.\"", guideFront: "Keep improving either way when...", guideBack: "A line about your own path" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Agency Reset",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence for taking control of family finances, establishing vision during a crisis, and maintaining outcome independence: Control of the Treasury → The Come to Jesus Moment → Stay/Go Congruence.\n\n1. **Control of the Treasury** — secure financial accounts silently and state the new structure as a fact\n2. **The Come to Jesus Moment** — articulate your succinct vision and actionable terms\n3. **Stay/Go Congruence** — continue your fitness, career, and personal mission regardless of her reaction\n\nIf step 2 happens before step 1, stating your vision lacks financial leverage and reads like empty words. Most men argue about money first, which surrenders authority.\n\nMindset: Take control of the physical reality before communicating the vision.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You discover mounting joint credit card debt, execute silent preparation, and present the new reality.",
+          steps: [
+            { front: "Control of the Treasury — she demands you hand back the master credit card.", back: "\"All credit accounts are closed. I will provide cash for household expenses every Monday.\"", guideFront: "State the money decision when...", guideBack: "A money decision, stated as fact" },
+            { front: "The Come to Jesus Moment — she realizes her financial dominance is gone and asks what you want from her.", back: "\"I want a partner who respects my leadership and builds a secure future with me.\"", guideFront: "State your vision and terms when...", guideBack: "Your vision, said in a sentence" },
+            { front: "Stay/Go Congruence — she threatens to get her own lawyer if she doesn't get card access.", back: "\"My stay plan and go plan are identical. Manage the cash budget or make your choice.\"", guideFront: "Keep improving either way when...", guideBack: "A line about your own path" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She secretively maxes out a personal line of credit, threatening your family's solvency.",
+          steps: [
+            { front: "Control of the Treasury — you consolidate the debt and close her purchasing authority.", back: "\"I've paid off the balance and frozen the credit line. I am managing the treasury now.\"", guideFront: "State the money decision when...", guideBack: "A money decision, stated as fact" },
+            { front: "The Come to Jesus Moment — she collapses in tears, asking how you can ever trust her again.", back: "\"I trust systems, not promises. Follow my financial structure and build real investment.\"", guideFront: "State your vision and terms when...", guideBack: "Your vision, said in a sentence" },
+            { front: "Stay/Go Congruence — she asks if you still love her after taking away her credit cards.", back: "\"I'm becoming the man I want to be. I hope you choose to be the woman beside me.\"", guideFront: "Keep improving either way when...", guideBack: "A line about your own path" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She tries to sabotage your new business venture by demanding you turn over your personal revenue.",
+          steps: [
+            { front: "Control of the Treasury — she demands equal signature rights on your business account.", back: "\"My business accounts stay in my name. I manage my enterprise autonomously.\"", guideFront: "State the money decision when...", guideBack: "A money decision, stated as fact" },
+            { front: "The Come to Jesus Moment — she realizes she cannot block your growth and asks what her role is.", back: "\"Your role is to offer a soft landing at home while I build our wealth.\"", guideFront: "State your vision and terms when...", guideBack: "Your vision, said in a sentence" },
+            { front: "Stay/Go Congruence — she claims you care more about your company than your marriage.", back: "\"My vision drives my work. You are welcome to share in the rewards if you align with it.\"", guideFront: "Keep improving either way when...", guideBack: "A line about your own path" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Reconstruction Chain",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence for handling betrayal, setting relationship terms, and maintaining personal frame: The Remorse Checklist → The Come to Jesus Moment → Stay/Go Congruence.\n\n1. **The Remorse Checklist** — evaluate her actions over time without accepting cheap Chinese knock-off remorse\n2. **The Come to Jesus Moment** — outline the clear exit from her hamster maze with succinct expectations\n3. **Stay/Go Congruence** — execute your stay/go plan with total outcome independence\n\nSkipping step 1 and jumping straight to forgiveness invites repeated betrayals and destroys your authority.\n\nMindset: Remorse is proved through action over time, not promised in words.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You uncover evidence of a secret emotional affair, and she offers immediate tears and excuses.",
+          steps: [
+            { front: "The Remorse Checklist — she begs for immediate forgiveness and promises it meant nothing.", back: "\"Remorse isn't promised in tears. Show me through complete disclosure and action.\"", guideFront: "Judge her remorse by actions when...", guideBack: "A line that asks for proof in action" },
+            { front: "The Come to Jesus Moment — she asks what specific actions she must take to save the marriage.", back: "\"Block him everywhere, sign a post-nup, and bring genuine passion back to our bed.\"", guideFront: "State your vision and terms when...", guideBack: "Your vision, said in a sentence" },
+            { front: "Stay/Go Congruence — she asks if doing those things guarantees you won't file for divorce later.", back: "\"Nothing is guaranteed except my commitment to my standards. I am building my value.\"", guideFront: "Keep improving either way when...", guideBack: "A line about your own path" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She hides thousands of dollars in secret gambling debts, then claims it was a minor mistake.",
+          steps: [
+            { front: "The Remorse Checklist — she expects you to pay the debt without asking for account access.", back: "\"If you won't turn over all statements, your remorse is a Chinese knock-off.\"", guideFront: "Judge her remorse by actions when...", guideBack: "A line that asks for proof in action" },
+            { front: "The Come to Jesus Moment — she surrenders all accounts and asks how to rebuild the home.", back: "\"Follow my treasury budget, account for every dollar, and respect my financial leadership.\"", guideFront: "State your vision and terms when...", guideBack: "Your vision, said in a sentence" },
+            { front: "Stay/Go Congruence — she asks if you will ever treat her as an equal partner again.", back: "\"Equal responsibility requires equal accountability. I am leading our path forward.\"", guideFront: "Keep improving either way when...", guideBack: "A line about your own path" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She publicly berates you at a dinner party, then tries to brush it off as a harmless joke the next day.",
+          steps: [
+            { front: "The Remorse Checklist — she says you are \"overreacting\" to her public insult.", back: "\"Respect isn't negotiable. If you can't own the disrespect, you aren't remorseful.\"", guideFront: "Judge her remorse by actions when...", guideBack: "A line that asks for proof in action" },
+            { front: "The Come to Jesus Moment — she realizes you are prepared to walk away and asks for terms.", back: "\"I expect public respect and private warmth. That is the baseline for my wife.\"", guideFront: "State your vision and terms when...", guideBack: "Your vision, said in a sentence" },
+            { front: "Stay/Go Congruence — she asks what happens if she slips up again in public.", back: "\"I don't tolerate public disrespect. My stay plan and go plan are ready.\"", guideFront: "Keep improving either way when...", guideBack: "A line about your own path" },
           ]
         },
       ]
