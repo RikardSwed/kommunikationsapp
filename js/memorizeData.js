@@ -9730,6 +9730,120 @@ const memorizeCollections = {
         { q: "What are the two factors the success of a relationship is \"solely dependent\" on?", a: "A partner's ability to listen lovingly and a partner's ability to share feelings respectfully.", bundle: 'free' },
         { q: "Why is the concept of \"The One\" dangerous?", a: "It creates a false belief that finding the right person will magically fix all your baggage and trauma.", bundle: 'pro' },
         { q: "What is the difference between a boundary and an ultimatum?", a: "A boundary is about what YOU will do; an ultimatum is an attempt to control what THEY do.", bundle: 'pro' },
+        { q: "What does Jimmy mean by \"keeping short accounts\"?", a: "Addressing disconnections and hurts weekly so resentment cannot take root.", bundle: 'free' },
+        { q: "What is the primary cause of divorce according to Sue Johnson?", a: "Decreased affection and emotional responsiveness, not increased conflict.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Character Discernment",
+      description: "",
+      cards: [
+        { q: "What is the primary focus of Character Discernment?", a: "Assessing a person's core values by observing how they treat people who can do nothing for them.", bundle: 'pro' },
+        { q: "Why is early observation more reliable than verbal promises?", a: "Words are easy in the infatuation stage, but consistent actions reveal true character patterns.", bundle: 'pro' },
+        { q: "What does true kindness look like across different settings?", a: "It is consistent across all interactions, including customer service staff, family, and strangers.", bundle: 'pro' },
+        { q: "What is the danger of focusing on a partner's \"potential\"?", a: "You end up committing to a fantasy rather than evaluating the real person in front of you today.", bundle: 'pro' },
+        { q: "How does a trustworthy person handle making a mistake?", a: "They own the mistake directly, apologize without excuses, and demonstrate changed behavior.", bundle: 'pro' },
+        { q: "What does Jimmy identify as a key indicator of a \"taker\"?", a: "Someone who rarely asks about your inner world, needs, or stressors without being prompted.", bundle: 'pro' },
+        { q: "Why should you pay attention to how a partner treats their family?", a: "It provides a window into how they will eventually treat you once the honeymoon phase ends.", bundle: 'pro' },
+        { q: "What is the core mindset of Character Discernment?", a: "\"I am choosing my future based on their current patterns, not their potential.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Values Alignment",
+      description: "",
+      cards: [
+        { q: "What is the main goal of Values Alignment?", a: "Explicitly discussing non-negotiables like religion, finances, kids, and lifestyle early in dating.", bundle: 'pro' },
+        { q: "Why can't \"love\" overcome fundamental value differences?", a: "Love does not magically resolve opposite goals or conflicting expectations regarding family and lifestyle.", bundle: 'pro' },
+        { q: "What topics belong in early compatibility discussions?", a: "Religion, politics, sex, money, kids, in-laws, domestic labor, and career expectations.", bundle: 'pro' },
+        { q: "What happens when you delay hard conversations about values?", a: "You don't prevent the conflict; you merely delay it until after emotional attachment or marriage.", bundle: 'pro' },
+        { q: "How should non-negotiables regarding exclusivity be handled?", a: "State your boundaries on fidelity, adult content, and emotional intimacy explicitly upfront.", bundle: 'pro' },
+        { q: "Why is sharing your authentic needs better than being \"chill\"?", a: "Pretending to be easygoing leads to deep resentment when unstated expectations are missed.", bundle: 'pro' },
+        { q: "What is the core mindset of Values Alignment?", a: "\"I would rather be rejected for who I am than chosen for a version of myself I have to maintain.\"", bundle: 'pro' },
+        { q: "What is the role of shared gratitude and outlook in alignment?", a: "Matching positive outlooks and shared joys prevents chronic friction over daily perspectives.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Accepting Influence",
+      description: "",
+      cards: [
+        { q: "What does Accepting Influence mean in a partnership?", a: "Allowing your partner's perspective to affect your choices and sharing decision-making power.", bundle: 'pro' },
+        { q: "What statistic did Dr. Gottman find regarding men who refuse to share power?", a: "Their relationships have an 81% rate of self-destruction or divorce.", bundle: 'pro' },
+        { q: "How does Accepting Influence affect conflict resolution?", a: "It shifts the dynamic from \"me vs. you\" to a collaborative \"us vs. the problem.\"", bundle: 'pro' },
+        { q: "What does it mean to be \"malleable\" in a relationship?", a: "Being open to constructive feedback and willing to adjust habits for your partner's well-being.", bundle: 'pro' },
+        { q: "Why do partners get defensive when given feedback?", a: "They mistake feedback about a specific behavior as a total attack on their identity or character.", bundle: 'pro' },
+        { q: "How does Accepting Influence build emotional safety?", a: "It shows your partner that their feelings matter and that their input actively shapes the team.", bundle: 'pro' },
+        { q: "What is the core mindset of Accepting Influence?", a: "\"I trust my partner's heart, so their feedback is information, not an attack.\"", bundle: 'pro' },
+        { q: "How does sharing power prevent resentment?", a: "Both partners feel like equal co-CEOs of the home rather than one ruling over the other.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Enforcing Mutual Respect",
+      description: "",
+      cards: [
+        { q: "What is the core principle of Enforcing Mutual Respect?", a: "Maintaining a zero-tolerance policy for belittling, yelling, name-calling, or contempt during conflict.", bundle: 'pro' },
+        { q: "What is the crucial difference between a boundary and control?", a: "A boundary dictates what YOU will do (e.g. leave the room); control dictates what THEY must do.", bundle: 'pro' },
+        { q: "Why is respect called \"Level Zero\" in a relationship?", a: "Without basic respect, emotional safety, trust, intimacy, and friendship cannot survive.", bundle: 'pro' },
+        { q: "How should you respond when an argument turns into yelling?", a: "State clearly that you will not be yelled at, and take a 20-30 minute break to cool down.", bundle: 'pro' },
+        { q: "What is the danger of allowing small disrespects to slide?", a: "What gets rewarded gets repeated; unaddressed disrespect quickly becomes the relationship norm.", bundle: 'pro' },
+        { q: "How does contempt affect a marriage?", a: "Dr. Gottman identified contempt as the single greatest predictor of relationship dissolution.", bundle: 'pro' },
+        { q: "What is the core mindset of Enforcing Mutual Respect?", a: "\"I respect myself enough to walk away from a conversation that has become unsafe.\"", bundle: 'pro' },
+        { q: "Why is taking a \"30-minute reset\" effective during flooded fights?", a: "It allows the physiological nervous system to calm down so the thinking brain can re-engage.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three Collections decks in this pack guide how to choose among strategies:\n\n• **Establishing the Baseline** — combining discernment, alignment, and respect early on\n• **Testing the Waters** — actively evaluating character and flexibility during dating\n• **Navigating Difference** — choosing the right move when disagreements and misalignment arise\n\nSelecting the right strategy depends on whether you are observing, aligning, yielding, or setting a hard limit.",
+      cards: [
+        { q: "What does the Establishing the Baseline collection focus on?", a: "Setting the foundational requirements of character, values, and respect before committing fully.", bundle: 'pro' },
+        { q: "What does the Testing the Waters collection train?", a: "Evaluating a partner's character and openness to influence during the early dating stages.", bundle: 'pro' },
+        { q: "What does the Navigating Difference collection focus on?", a: "Choosing between yielding, setting boundaries, or aligning when disagreements occur.", bundle: 'pro' },
+        { q: "How do you choose between Character Discernment and Enforcing Mutual Respect?", a: "Use Discernment to observe patterns quietly; use Enforcing Respect when a boundary is actively crossed.", bundle: 'pro' },
+        { q: "When should you choose Values Alignment over Accepting Influence?", a: "Use Values Alignment for non-negotiables; use Accepting Influence for daily preferences and flexible compromises.", bundle: 'pro' },
+        { q: "What is the danger of using Accepting Influence when a boundary is broken?", a: "Yielding when disrespected results in self-abandonment and reinforces toxic behavior.", bundle: 'pro' },
+        { q: "When evaluating a new partner, why prioritize Character Discernment over Values Alignment?", a: "Because observing real-time treatment of others reveals actual integrity, whereas stated values can easily be performative in early dating.", bundle: 'pro' },
+        { q: "Why choose Enforcing Mutual Respect over Accepting Influence when a partner becomes contemptuous?", a: "Because yielding to contempt enables disrespect and destroys emotional safety, which must exist before power can be shared.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequence combos in this pack train how strategies chain together in order:\n\n• **The Foundation Check** — Character Discernment → Values Alignment → Enforcing Mutual Respect\n• **Handling a \"Power Struggle\"** — Accepting Influence → Enforcing Mutual Respect → Accepting Influence\n• **Aligning Under Pressure** — Values Alignment → Accepting Influence → Enforcing Mutual Respect\n\nExecuting moves in the correct sequence transforms high-stakes talks into constructive team alignment.",
+      cards: [
+        { q: "What is the 3-step order of The Foundation Check combo?", a: "Character Discernment, then Values Alignment, then Enforcing Mutual Respect.", bundle: 'pro' },
+        { q: "Why does Character Discernment come first in The Foundation Check?", a: "Observing character patterns must precede discussing shared values or negotiating boundaries.", bundle: 'pro' },
+        { q: "What is the 3-step order of the Handling a Power Struggle combo?", a: "Accepting Influence, then Enforcing Mutual Respect, then Accepting Influence.", bundle: 'pro' },
+        { q: "Why is Enforcing Mutual Respect placed in the middle of a Power Struggle combo?", a: "To stop hostility or attacks mid-talk before returning to collaborative compromise.", bundle: 'pro' },
+        { q: "What is the 3-step order of the Aligning Under Pressure combo?", a: "Values Alignment, then Accepting Influence, then Enforcing Mutual Respect.", bundle: 'pro' },
+        { q: "Why does Values Alignment open the Aligning Under Pressure combo?", a: "Grounding the talk in shared core goals makes flexible compromise on details much easier.", bundle: 'pro' },
+        { q: "In a relationship check, why must Character Discernment come before discussing Values Alignment?", a: "Because observing a person's baseline character reveals whether they are honest enough for a sincere conversation about core values.", bundle: 'pro' },
+        { q: "During a power struggle, why must Enforcing Mutual Respect happen before returning to Accepting Influence?", a: "Because collaborative compromise is impossible while hostility is occurring; safety must be restored before influence can be accepted.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five problem categories in this pack organize real-world relational hurdles:\n\n• **The \"One-Sided\" Trap** — when you are the only partner sacrificing or holding boundaries\n• **The Red Flag Blindspot** — ignoring early warning signs during the infatuation stage\n• **The Defensiveness Spiral** — counter-attacking or shutting down when feedback is given\n• **The Compatibility Illusion** — sweeping major life value differences under the rug\n• **The Disrespect Escalation** — handling arguments that cross into yelling, insults, or contempt\n\nMastering these categories helps you recognize relationship hazards and respond with firm safety moves.",
+      cards: [
+        { q: "What defines The \"One-Sided\" Trap category?", a: "Situations where one partner takes while the other constantly sacrifices or gets ignored.", bundle: 'pro' },
+        { q: "What defines The Red Flag Blindspot category?", a: "Overlooking subtle signs of anger, control, or deceit because of early romantic attraction.", bundle: 'pro' },
+        { q: "What defines The Defensiveness Spiral category?", a: "Reacting to feedback with counter-blame, stone-walling, or guilt-tripping instead of listening.", bundle: 'pro' },
+        { q: "What defines The Compatibility Illusion category?", a: "Pretending major differences in money, kids, or lifestyle don't matter until conflict erupts.", bundle: 'pro' },
+        { q: "What defines The Disrespect Escalation category?", a: "Fights that deteriorate into yelling, name-calling, eye-rolling, or public belittling.", bundle: 'pro' },
+        { q: "How does a partner's response in Challenges test relationship safety?", a: "Their willingness to respect boundaries in these moments reveals if the relationship is safe.", bundle: 'pro' },
+        { q: "What makes \"The Red Flag Blindspot\" so dangerous in early dating?", a: "Infatuation chemicals flood the brain, causing people to rationalize overt signs of anger, control, or dishonesty as temporary quirks.", bundle: 'pro' },
+        { q: "How does \"The Defensiveness Spiral\" systematically erode emotional safety during conflict?", a: "It treats a partner's vulnerability as an attack, shifting the focus to counter-blame and forcing the hurt partner to retreat.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four Mindset decks in this pack target the internal beliefs that block relationship safety:\n\n• **The Foundation of Safety** — overcoming fear of loss to prioritize self-worth and truth\n• **Discernment** — releasing the urge to fix or excuse unsafe partners\n• **Boundaries** — dismantling the belief that setting limits is selfish or mean\n• **Sharing Power** — overcoming pride to view vulnerability and compromise as strength\n\nResetting these limiting beliefs shifts your internal posture from fear to courageous self-respect.",
+      cards: [
+        { q: "What limiting belief is addressed in The Foundation of Safety deck?", a: "The fear that speaking up about non-negotiables will cause a partner to abandon you.", bundle: 'pro' },
+        { q: "What limiting belief is addressed in the Discernment mindset deck?", a: "The false idea that you can change or \"out-love\" an unsafe partner's toxic habits.", bundle: 'pro' },
+        { q: "What limiting belief is addressed in the Boundaries mindset deck?", a: "The belief that setting firm limits makes you mean, selfish, or unlovable.", bundle: 'pro' },
+        { q: "What limiting belief is addressed in the Sharing Power mindset deck?", a: "The prideful thought that admitting mistakes or yielding to a partner makes you weak.", bundle: 'pro' },
+        { q: "How does resetting mindset impact daily relationship behavior?", a: "Internal certainty about your worth eliminates the urge to people-please or defend frantically.", bundle: 'pro' },
+        { q: "Why is the belief \"setting firm boundaries makes me unloving\" fundamentally wrong?", a: "Boundaries define what you require to remain safe and present, which protects the relationship from resentment and self-abandonment.", bundle: 'pro' },
+        { q: "Why is the belief \"I can change my partner's toxic habits if I am patient enough\" a trap?", a: "True personal change requires internal conviction; attempting to fix a partner creates an unequal, therapeutic dynamic instead of a partnership.", bundle: 'pro' },
+        { q: "Why is the belief \"admitting my mistakes during a disagreement makes me weak\" destructive?", a: "Taking accountability demonstrates emotional maturity and builds trust, whereas stubborn defensiveness turns communication into a power struggle.", bundle: 'pro' },
       ]
     },
   ],
@@ -9745,6 +9859,119 @@ const memorizeCollections = {
         { q: "What is the difference between a Complaint and a Criticism?", a: "A complaint focuses on a specific behavior; a criticism is an attack on the partner's character.", bundle: 'pro' },
         { q: "What does \"Owning the Narrative\" mean?", a: "Using phrases like \"The story I'm telling myself\" to admit that your interpretation might not be the objective truth.", bundle: 'pro' },
         { q: "What is the \"15 to 1 ratio\"?", a: "The need for 15 positive interactions for every 1 negative interaction/complaint to keep the \"love tank\" full.", bundle: 'pro' },
+        { q: "What does Jimmy identify as the core requirement for healthy expression?", a: "Replacing criticism and blame with calm, respectful vulnerability about your inner world.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Soft Startup",
+      description: "",
+      cards: [
+        { q: "What is the main purpose of a Soft Startup?", a: "Beginning a complaint gently and checking timing so the conversation leads to collaboration instead of a fight.", bundle: 'pro' },
+        { q: "Why is the first minute of a discussion so critical?", a: "John Gottman's research shows the first minute predicts the outcome of the entire conversation with over 90% accuracy.", bundle: 'pro' },
+        { q: "What step should always open a Soft Startup?", a: "Asking if your partner has the mental and emotional capacity to talk right now (e.g. \"Is now a good time?\").", bundle: 'pro' },
+        { q: "What responsibility falls on the partner who asks to delay a conversation?", a: "They must take the initiative to circle back and set a specific future time to talk.", bundle: 'pro' },
+        { q: "How does a Soft Startup prevent physiological flooding?", a: "By keeping emotional volume low and avoiding character attacks that trigger the fight-or-flight response.", bundle: 'pro' },
+        { q: "What is the difference between a soft startup and conflict avoidance?", a: "A soft startup directly addresses the complaint, but does so with gentleness, respect, and emotional control.", bundle: 'pro' },
+        { q: "Why should global words like \"always\" and \"never\" be excluded from a soft startup?", a: "Global words generalize past behavior into character flaws, triggering immediate defensiveness.", bundle: 'pro' },
+        { q: "What is the core mindset behind The Soft Startup?", a: "\"How I begin a discussion determines whether we connect or fight.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Expression Formula",
+      description: "",
+      cards: [
+        { q: "What are the four steps of The Expression Formula?", a: "Fact → Feeling → Meaning → Need.", bundle: 'pro' },
+        { q: "What defines the \"Fact\" step in the Expression Formula?", a: "Stating the observable event like a video camera recorded it, without interpretation or global words.", bundle: 'pro' },
+        { q: "What defines a true \"Feeling\" word in healthy expression?", a: "Naming an actual emotion (e.g. hurt, lonely, anxious) rather than an accusation (\"I feel like you're selfish\").", bundle: 'pro' },
+        { q: "What is the purpose of the \"Meaning\" step in the formula?", a: "Owning \"the story I'm telling myself\" to distinguish between what happened and your internal interpretation.", bundle: 'pro' },
+        { q: "What defines the \"Need\" step in the formula?", a: "Stating a clear, forward-looking action that would help restore emotional safety and connection.", bundle: 'pro' },
+        { q: "Why is accusing a partner of character flaws ineffective?", a: "Attacks on character trigger self-defense and shame spiraling, blocking empathy and active listening.", bundle: 'pro' },
+        { q: "How does the Expression Formula foster emotional safety?", a: "It relays information about your inner world without declaring a verdict on your partner's worth.", bundle: 'pro' },
+        { q: "What is the core mindset behind The Expression Formula?", a: "\"I am sharing my inner world as information, not as a verdict on my partner's character.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Requests Over Criticism",
+      description: "",
+      cards: [
+        { q: "What is the primary focus of Requests Over Criticism?", a: "Converting complaints about past mistakes into specific, positive requests for future behavior.", bundle: 'pro' },
+        { q: "Why is criticism ineffective at producing long-term relationship change?", a: "Criticism focuses on past failures and character flaws, leaving the partner feeling hopeless and defensive.", bundle: 'pro' },
+        { q: "What makes a request \"positive and specific\"?", a: "Stating what you DO want your partner to do in concrete terms, rather than what you want them to STOP doing.", bundle: 'pro' },
+        { q: "How does replacing criticism with requests protect the \"Love Tank\"?", a: "It reduces negative interactions, helping maintain the positive-to-negative ratio needed for intimacy.", bundle: 'pro' },
+        { q: "Why do people resort to criticism instead of making direct requests?", a: "Criticism acts as a protective shield against the vulnerability of asking directly and risking rejection.", bundle: 'pro' },
+        { q: "What is the difference between a request and a demand?", a: "A request respects your partner's autonomy and invites willingness; a demand threatens punishment if denied.", bundle: 'pro' },
+        { q: "How should a partner respond if a positive request cannot be met immediately?", a: "They should offer an alternative or collaborate on a compromise that honours both partners' needs.", bundle: 'pro' },
+        { q: "What is the core mindset behind Requests Over Criticism?", a: "\"Asking directly is an act of clarity that replaces resentment with opportunity.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Owning the Narrative",
+      description: "",
+      cards: [
+        { q: "What is the core technique of Owning the Narrative?", a: "Using the phrase \"The story I'm telling myself\" to present your interpretation as a feeling to be checked, not a fact.", bundle: 'pro' },
+        { q: "Why does sharing your internal narrative reduce partner defensiveness?", a: "It acknowledges that your interpretation is shaped by your own lens and invites your partner to clarify their intent.", bundle: 'pro' },
+        { q: "What role do childhood wounds play in personal narratives?", a: "Old wounds often cause us to project past fears of abandonment or inadequacy onto current partner actions.", bundle: 'pro' },
+        { q: "How does Owning the Narrative help separate fact from fiction?", a: "It draws a clear line between the objective event that occurred and the story your brain constructed about it.", bundle: 'pro' },
+        { q: "Why is it dangerous to treat your internal narrative as absolute truth?", a: "Acting as if your story is fact leads to accusing your partner of intentions they never actually held.", bundle: 'pro' },
+        { q: "How should a partner respond when an internal narrative is shared?", a: "With curiosity and gentle reassurance, clarifying their true intent without attacking the shared story.", bundle: 'pro' },
+        { q: "What does Owning the Narrative require from the speaker?", a: "Humility and the willingness to admit that their initial perception or assumption might be wrong.", bundle: 'pro' },
+        { q: "What is the core mindset behind Owning the Narrative?", a: "\"I am responsible for the meaning I give to things, and I'm willing to be wrong.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three Collections decks in this pack guide how to choose among strategies:\n\n• **Expressing Yourself** — combining startups, formulas, and requests for general sharing\n• **Unpacking the Hurt** — selecting the right move when addressing recurring or deep pain\n• **Turning Towards** — choosing proactive vulnerability to initiate reconnection and intimacy\n\nSelecting the right strategy depends on whether you need to open, structure, frame, or request.",
+      cards: [
+        { q: "What does the Expressing Yourself collection focus on?", a: "Using gentle startups, formulas, and requests to communicate daily feelings cleanly.", bundle: 'pro' },
+        { q: "What does the Unpacking the Hurt collection train?", a: "Choosing appropriate strategies to bring sensitive or historical hurts into the light safely.", bundle: 'pro' },
+        { q: "What does the Turning Towards collection focus on?", a: "Selecting proactive vulnerability moves to initiate closeness and build emotional intimacy.", bundle: 'pro' },
+        { q: "How do you choose between The Soft Startup and The Expression Formula?", a: "Use Soft Startup to check timing and open the door; use Expression Formula to state facts and needs once open.", bundle: 'pro' },
+        { q: "When should you choose Owning the Narrative over Requests Over Criticism?", a: "Use Owning Narrative when checking internal assumptions; use Requests when asking for a specific future behavior.", bundle: 'pro' },
+        { q: "Why choose The Soft Startup over The Expression Formula when initiating a conversation?", a: "Use The Soft Startup to check your partner's emotional capacity first; stating facts and needs is ineffective if your partner is already overwhelmed or unprepared.", bundle: 'pro' },
+        { q: "Why choose Owning the Narrative over Requests Over Criticism when you feel irrationally hurt?", a: "Use Owning the Narrative to examine your internal assumptions first, as your emotional reaction may be driven by past wounds rather than your partner's actual intent.", bundle: 'pro' },
+        { q: "When should you combine The Expression Formula with Requests Over Criticism?", a: "Combine them when a specific event has occurred and you need to communicate its emotional impact while providing a clear, positive roadmap for future behavior.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequence combos in this pack train how strategies chain together in order:\n\n• **The Vulnerable Reveal**: The Soft Startup → The Expression Formula: Facts, Feelings & Meaning, Need\n• **Correcting a \"Hard\" Startup**: The Soft Startup → Requests Over Criticism → Owning the Narrative\n• **Reconnecting After Disconnection**: The Soft Startup → Owning the Narrative → Requests Over Criticism\n\nExecuting moves in the correct order ensures emotional safety is established before deep needs are stated.",
+      cards: [
+        { q: "Why must a conversation about deep hurt begin with a Soft Startup?", a: "Because Gottman's research shows the first minute determines the conversation's outcome, and a gentle check-in prevents physiological fight-or-flight flooding.", bundle: 'pro' },
+        { q: "In \"The Vulnerable Reveal,\" why do facts come before expressing feelings and meaning?", a: "Stating objective facts like a video camera recorded them grounds the discussion before personal interpretations and emotions are introduced.", bundle: 'pro' },
+        { q: "In \"The Vulnerable Reveal,\" why is the story you tell yourself shared together with the feeling?", a: "It distinguishes between raw emotional experience and the internal assumptions or fears constructed around the event.", bundle: 'pro' },
+        { q: "Why does \"The Vulnerable Reveal\" conclude with stating a clear need?", a: "Naming a concrete, forward-looking need gives your partner a clear, actionable pathway to restore emotional safety.", bundle: 'pro' },
+        { q: "In \"Correcting a Hard Startup,\" why must you call a timeout and reset immediately?", a: "Stopping early interrupts the fight-or-flight defensive cycle before emotional armor and counter-attacks become permanent.", bundle: 'pro' },
+        { q: "Why does \"Requests Over Criticism\" immediately follow the reset in \"Correcting a Hard Startup\"?", a: "Reframe past criticism into a positive request while momentum is fresh, giving your partner a constructive alternative instead of an accusation to defend against.", bundle: 'pro' },
+        { q: "In \"Reconnecting After Disconnection,\" why does \"Owning the Narrative\" precede making a request?", a: "Disclosing your own internal story reveals vulnerability first, making it safe for your partner to hear your request without feeling blamed for the distance.", bundle: 'pro' },
+        { q: "Why is sequence order essential when navigating emotional tension with a partner?", a: "Following a deliberate sequence establishes safety and mutual understanding before asking for behavioral changes or commitments.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five problem categories in this pack organize real-world relational hurdles:\n\n• **The Criticism Trigger** — resisting the urge to attack when frustrated\n• **The Stonewalling Trap** — reaching across withdrawal and silent treatments safely\n• **The Shame Spiral** — managing internal feelings of failure when receiving feedback\n• **The Blame Game** — stopping finger-pointing and refocusing on present facts\n• **The Unmet Need** — cleanly naming desires for intimacy and affection\n\nMastering these categories helps you interrupt negative cycles and respond with safe expression moves.",
+      cards: [
+        { q: "What defines The Criticism Trigger category?", a: "Situations where emotional frustration tempts you to attack your partner's character instead of stating a need.", bundle: 'pro' },
+        { q: "What defines The Stonewalling Trap category?", a: "Moments where a partner shuts down, retreats into silence, or refuses to engage during conflict.", bundle: 'pro' },
+        { q: "What defines The Shame Spiral category?", a: "Occasions where feedback triggers overwhelming feelings of personal failure and defensiveness.", bundle: 'pro' },
+        { q: "What defines The Blame Game category?", a: "Arguments that devolve into scorekeeping, finger-pointing, and digging up past mistakes.", bundle: 'pro' },
+        { q: "What defines The Unmet Need category?", a: "Moments where long-held desires for affection, intimacy, or recognition remain unstated.", bundle: 'pro' },
+        { q: "Why does defensiveness naturally arise when a partner feels criticized?", a: "Criticism attacks character and past failures, which triggers the brain's threat-response system and forces the partner to defend their self-worth.", bundle: 'pro' },
+        { q: "How does stonewalling damage a relationship over time?", a: "Stonewalling creates an emotional vacuum that breeds isolation, leaving the other partner feeling abandoned and forcing them into heightened anxiety or anger.", bundle: 'pro' },
+        { q: "What causes couples to fall into \"The Blame Game\" during conflict?", a: "Partners use blame as a protective shield to avoid the vulnerability of admitting their own fear, hurt, or responsibility for the disconnection.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four Mindset decks in this pack target internal beliefs that block healthy expression:\n\n• **Healthy Expression** — overcoming the urge to protect self at the expense of relationship\n• **Soft Startups** — dismantling the belief that volume and aggression equal strength\n• **Vulnerability** — releasing fear of rejection to share your true inner world\n• **Making Requests** — overcoming the myth that partners \"should just know\" your needs\n\nResetting these limiting beliefs shifts your internal posture from self-defense to courageous intimacy.",
+      cards: [
+        { q: "What limiting belief is addressed in the Soft Startups mindset deck?", a: "The false idea that coming in loud and aggressive is necessary to be taken seriously.", bundle: 'pro' },
+        { q: "What limiting belief is addressed in the Vulnerability mindset deck?", a: "The belief that opening up your heart makes you weak and guarantees you will be hurt.", bundle: 'pro' },
+        { q: "What limiting belief is addressed in the Making Requests mindset deck?", a: "The expectation that a partner should read your mind and satisfy unstated needs.", bundle: 'pro' },
+        { q: "What limiting belief is addressed in the Healthy Expression deck?", a: "The thought that keeping quiet about complaints protects the peace, when it actually breeds resentment.", bundle: 'pro' },
+        { q: "How does resetting mindset impact daily communication?", a: "Changing internal posture eliminates defensiveness and allows you to express needs cleanly.", bundle: 'pro' },
+        { q: "Why is the belief \"if I come in loud and angry, my partner will finally take me seriously\" false?", a: "Loudness and anger trigger physiological flooding and emotional armor in your partner, ensuring your core message is lost in self-defense.", bundle: 'pro' },
+        { q: "Why is the belief \"showing vulnerability makes me weak and easy to hurt\" a barrier to intimacy?", a: "Vulnerability is the prerequisite for emotional connection; hiding behind anger or walls guarantees isolation rather than protection.", bundle: 'pro' },
+        { q: "Why is the expectation \"my partner should know what I need without me asking\" destructive?", a: "It replaces clear communication with covert demands and mind-reading, inevitably resulting in unstated expectations and deep resentment.", bundle: 'pro' },
       ]
     },
   ],
@@ -9760,6 +9987,119 @@ const memorizeCollections = {
         { q: "What is the primary purpose of the \"Vulnerable\" code word?", a: "To signal that the \"Thinking brain\" needs to stay on and the \"Defensive brain\" needs to stand down.", bundle: 'pro' },
         { q: "What are the three \"threads\" worth pulling in Compassionate Curiosity?", a: "The Meaning (their story), the Needs (what's missing), and the History (old wounds).", bundle: 'pro' },
         { q: "Why is \"indifference\" worse than \"anger\" in a relationship?", a: "Indifference signals that you have stopped caring about their experience entirely; anger at least shows the bond still matters.", bundle: 'pro' },
+        { q: "What does Dr. Sue Johnson say is the true cause of most relationship fights?", a: "Protests over emotional disconnection rather than disputes over surface facts.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Validation Without Agreement",
+      description: "",
+      cards: [
+        { q: "What is the core definition of Validation Without Agreement?", a: "Acknowledging that your partner's feeling is real and important, without needing to agree with their facts or accusations.", bundle: 'free' },
+        { q: "Why does validating a partner's feelings calm an argument?", a: "It calms their nervous system by communicating that their pain matters, stopping the need to get louder to be heard.", bundle: 'free' },
+        { q: "What is the crucial distinction between validating feelings and validating accusations?", a: "You validate the emotional pain (e.g. \"it makes sense you felt hurt\"), not character attacks (e.g. \"you are selfish\").", bundle: 'free' },
+        { q: "How does validation differ from \"shame spiraling\"?", a: "Validation holds space for the partner's feeling; shame spiraling makes the conflict about your own feelings of failure.", bundle: 'free' },
+        { q: "What are the three levels of validation in this strategy?", a: "Validating the feeling, validating the experience/logic, and validating the courage to share.", bundle: 'free' },
+        { q: "What should you do when tempted to correct a partner's facts during an emotional talk?", a: "Pause the urge to correct facts, focus entirely on understanding their emotion, and validate the feeling first.", bundle: 'pro' },
+        { q: "How does Dr. Sue Johnson describe the \"Protest Polka\"?", a: "A destructive cycle where one partner gets louder and more critical to force emotional responsiveness from a disconnected partner.", bundle: 'pro' },
+        { q: "What is the core mindset of Validation Without Agreement?", a: "\"I am not a judge deciding if their feeling is rational; I am a partner acknowledging that it is real.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Compassionate Curiosity",
+      description: "",
+      cards: [
+        { q: "What is the main goal of Compassionate Curiosity?", a: "Asking open-ended questions to understand the internal meaning, needs, and history behind a partner's emotional reaction.", bundle: 'free' },
+        { q: "How does curious inquiry shift the dynamic of a conflict?", a: "It changes the energy from a defensive \"me vs. you\" battle into a collaborative \"us vs. the misunderstanding.\"", bundle: 'free' },
+        { q: "What are the three core questions used in Compassionate Curiosity?", a: "The Meaning question (\"what story did you tell yourself?\"), the Needs question, and the History question.", bundle: 'free' },
+        { q: "What does the \"Meaning question\" help uncover?", a: "The internal narrative or assumption your partner constructed about an event or behavior.", bundle: 'free' },
+        { q: "What should you do when a partner struggles to articulate what they need?", a: "Offer gentle reassurance and collaborate with them to figure out the underlying need together.", bundle: 'free' },
+        { q: "Why is asking \"What led you to feel that way?\" better than asking \"Why are you mad?\"", a: "\"What led you\" invites story sharing, whereas \"Why\" often triggers defensiveness and justification.", bundle: 'pro' },
+        { q: "How does checking for \"History\" help during disproportionate reactions?", a: "It identifies whether current stress is triggering unhealed wounds or fears from childhood or past relationships.", bundle: 'pro' },
+        { q: "What is the core mindset of Compassionate Curiosity?", a: "\"I trust my partner's heart, so if they are upset, there is something valuable for me to learn.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Turning Toward Bids",
+      description: "",
+      cards: [
+        { q: "What is a \"bid for connection\" in a relationship?", a: "Any small attempt by a partner for attention, affection, humor, or support, such as a look, touch, or comment.", bundle: 'free' },
+        { q: "What percentage of bids do happily married couples turn toward compared to divorcing couples?", a: "Happy couples turn toward bids 86% of the time, while divorcing couples turn toward only 33% of the time.", bundle: 'free' },
+        { q: "What are the three primary types of bids?", a: "Informational bids (\"did you see this?\"), Emotional bids (\"I had a hard day\"), and Affectionate bids (touch or a look).", bundle: 'free' },
+        { q: "What does \"turning away\" from a bid look like in daily life?", a: "Ignoring the reach, staying absorbed in a screen, or responding with flat, disinterested distraction.", bundle: 'free' },
+        { q: "How do daily small bids protect a couple during future arguments?", a: "They make regular deposits into the \"Love Bank,\" building emotional reserves that buffer against conflict.", bundle: 'free' },
+        { q: "What should you do when a bid occurs while you are genuinely busy?", a: "Acknowledge the bid warmly, state when you will be free, and follow through on giving full attention.", bundle: 'pro' },
+        { q: "Why is responding to bids essential for intimacy?", a: "Because marriages rarely die from explosive events; they die from quiet neglect and unreturned bids over time.", bundle: 'pro' },
+        { q: "What is the core mindset of Turning Toward Bids?", a: "\"Every small interaction is a deposit into our Love Tank that protects us during future fights.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The \"Vulnerable\" Code Word",
+      description: "",
+      cards: [
+        { q: "What is the primary function of the \"Vulnerable\" code word?", a: "To signal that a conversation requires extra emotional safety, prompting both partners to drop defensiveness.", bundle: 'free' },
+        { q: "How should a partner respond when hearing the code word used?", a: "Put away distractions, stop defensiveness, and signal full, safe attention (e.g. \"I'm listening with my whole heart\").", bundle: 'free' },
+        { q: "How can the code word be used during a flooded argument?", a: "As a \"pause button\" to interrupt defensiveness and request a temporary reset before continuing.", bundle: 'free' },
+        { q: "What fear does using the code word protect against?", a: "The fear that opening up about deep insecurities or complaints will result in being mocked, judged, or dismissed.", bundle: 'free' },
+        { q: "What should a partner do if they hear the code word but are too dysregulated to listen?", a: "Acknowledge the code word, state the need for a 30-minute cooling break, and commit to returning.", bundle: 'free' },
+        { q: "Why is establishing a pre-agreed code word effective?", a: "It creates a shared relational rule that overrides automatic fight-or-flight habits with explicit safety.", bundle: 'pro' },
+        { q: "What step should follow a successful \"vulnerable\" conversation?", a: "Expressing gratitude for the courage shared and validating the closeness created by the conversation.", bundle: 'pro' },
+        { q: "What is the core mindset of The \"Vulnerable\" Code Word?", a: "\"This word is a pause button for our egos; the relationship is more important than being right.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Emotional Presence** — combining validation, curiosity, and turning toward bids for daily connection\n• **De-escalating Disconnection** — choosing the right move when emotional distance or conflict arises\n• **Deepening Intimacy** — selecting proactive vulnerability and code words to share inner worlds\n\nSelecting the right strategy depends on whether your partner needs validation, inquiry, attention, or explicit safety.",
+      cards: [
+        { q: "What does the Emotional Presence collection focus on?", a: "Choosing appropriate strategies to bring warm, attentive energy to daily interactions.", bundle: 'pro' },
+        { q: "What does the De-escalating Disconnection collection train?", a: "Selecting validation, curiosity, or code words to lower defensiveness when distance or arguments occur.", bundle: 'pro' },
+        { q: "What does the Deepening Intimacy collection focus on?", a: "Using bids, open curiosity, and vulnerable code words to proactively explore inner worlds.", bundle: 'pro' },
+        { q: "How do you choose between Validation Without Agreement and Compassionate Curiosity?", a: "Use Validation when your partner is expressing pain; use Curiosity when you need to understand what led to it.", bundle: 'pro' },
+        { q: "When should you choose The \"Vulnerable\" Code Word over Turning Toward Bids?", a: "Use the Code Word when a discussion feels risky or heated; use Turning Toward Bids for daily reaches for closeness.", bundle: 'pro' },
+        { q: "What is the danger of using logical debate when a collection situation calls for Validation?", a: "Arguing facts when a partner is hurting invalidates their experience and escalates the Protest Polka.", bundle: 'pro' },
+        { q: "Why should you lead with Validation Without Agreement rather than Compassionate Curiosity when a partner is actively panicked or weeping?", a: "Because a dysregulated nervous system requires immediate emotional soothing and presence before it has the capacity to answer open-ended questions.", bundle: 'pro' },
+        { q: "When a partner expresses feeling emotionally unsafe during a conflict, why choose The \"Vulnerable\" Code Word over Turning Toward Bids?", a: "Because the code word explicitly resets relational safety and halts defensiveness, whereas a simple bid response does not address active conflict threat.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Safe Harbor Loop** — The \"Vulnerable\" Code Word → Compassionate Curiosity → Validation Without Agreement → Compassionate Curiosity\n2. **Responding to a \"Bid\" for Connection** — Turning Toward Bids → Compassionate Curiosity → Turning Toward Bids\n3. **The De-escalation Bridge** — The \"Vulnerable\" Code Word → Validation Without Agreement → Compassionate Curiosity\n\nExecuting moves in the correct sequence transforms high-stakes talks into safe harbor moments.",
+      cards: [
+        { q: "What is the 4-step order of The Safe Harbor Loop combo?", a: "The \"Vulnerable\" Code Word, then Compassionate Curiosity, then Validation Without Agreement, then Compassionate Curiosity.", bundle: 'pro' },
+        { q: "Why does The \"Vulnerable\" Code Word open The Safe Harbor Loop?", a: "Establishing explicit safety upfront prevents defensive armor from locking in before deep sharing begins.", bundle: 'pro' },
+        { q: "What is the 3-step order of the Responding to a \"Bid\" for Connection combo?", a: "Turning Toward Bids, then Compassionate Curiosity, then Turning Toward Bids.", bundle: 'pro' },
+        { q: "Why is Compassionate Curiosity placed in the middle of a Bid combo?", a: "It turns a small momentary reach into an active, engaging conversation about your partner's world.", bundle: 'pro' },
+        { q: "What is the 3-step order of The De-escalation Bridge combo?", a: "The \"Vulnerable\" Code Word, then Validation Without Agreement, then Compassionate Curiosity.", bundle: 'pro' },
+        { q: "Why does Validation Without Agreement precede Curiosity in The De-escalation Bridge?", a: "Soothing the immediate emotional pain with validation must happen before asking curious questions about fixes.", bundle: 'pro' },
+        { q: "In \"The De-escalation Bridge,\" why must Validation Without Agreement come before Compassionate Curiosity?", a: "Because validating emotional pain calms physiological flooding, making it safe for your partner to reflect on curious questions about solutions.", bundle: 'pro' },
+        { q: "In \"Responding to a 'Bid' for Connection,\" why is Compassionate Curiosity placed between two moves of Turning Toward Bids?", a: "Because initial attention acknowledges the reach, open curiosity deepens the engagement into real intimacy, and final warmth seals the connection.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories in this pack:\n\n• **The Defensive Reflex** — staying curious when shame or fear triggers self-defense\n• **The Stonewalling Wall** — reaching across shutdown and emotional withdrawal safely\n• **The Missed Bid** — repairing small rejections before they turn into chronic distance\n• **The Invalidating Environment** — validating feelings when the atmosphere turns critical\n• **The Hidden Hurt** — uncovering underlying pain beneath surface complaints\n\nMastering these categories helps you interrupt negative cycles and respond with safe presence moves.",
+      cards: [
+        { q: "What defines The Defensive Reflex category?", a: "Moments where a complaint or critique triggers internal shame, tempting you to counter-attack or justify facts.", bundle: 'pro' },
+        { q: "What defines The Stonewalling Wall category?", a: "Situations where a partner shuts down, goes silent, or retreats behind emotional armor during conflict.", bundle: 'pro' },
+        { q: "What defines The Missed Bid category?", a: "Occasions where small reaches for connection were ignored or rejected, requiring micro-repairs.", bundle: 'pro' },
+        { q: "What defines The Invalidating Environment category?", a: "Interactions where feelings are dismissed as dramatic, irrational, or overly sensitive.", bundle: 'pro' },
+        { q: "What defines The Hidden Hurt category?", a: "Surface battles over chores or schedules that mask deeper emotional protests over disconnection.", bundle: 'pro' },
+        { q: "What underlying emotional state drives \"The Stonewalling Wall\" during intense relational arguments?", a: "Extreme physiological flooding and a desperate need to protect oneself from overwhelming criticism or emotional judgment.", bundle: 'pro' },
+        { q: "Why is \"The Invalidating Environment\" so damaging to long-term relational health?", a: "It shames a partner for having legitimate emotions, forcing them to suppress their truth until it explodes as rage or turns into hopeless distance.", bundle: 'pro' },
+        { q: "What causes \"The Hidden Hurt\" to manifest as disproportionate anger over trivial logistics like unwashed dishes?", a: "The surface anger acts as a protective cover for deeper, unspoken fears of being unappreciated, unloved, or emotionally abandoned.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindset areas you practise in this pack:\n\n• **Listening & Presence** — being a detective of the heart rather than a judge of facts\n• **Validation** — understanding that validating feelings is not agreeing with accusations\n• **Bids for Connection** — realizing small daily interactions build the love tank\n• **Vulnerability** — overcoming fear of rejection to share your true inner world\n\nResetting these limiting beliefs shifts your posture from self-defense to emotional safety.",
+      cards: [
+        { q: "What limiting belief is addressed in the Validation mindset deck?", a: "The false idea that validating a partner's emotional pain means agreeing with unfair accusations or admitting failure.", bundle: 'pro' },
+        { q: "What limiting belief is addressed in the Bids for Connection mindset deck?", a: "The myth that small daily reaches don't matter compared to big grand gestures.", bundle: 'pro' },
+        { q: "What limiting belief is addressed in the Vulnerability mindset deck?", a: "The belief that laying down emotional defenses makes you weak and exposes you to being taken advantage of.", bundle: 'pro' },
+        { q: "What limiting belief is addressed in the Listening & Presence deck?", a: "The thought that staying calm and listening while a partner vents makes you a pushover.", bundle: 'pro' },
+        { q: "How does resetting mindset impact daily interactions?", a: "Internal certainty about safety eliminates defensiveness and allows you to show up with genuine empathy.", bundle: 'pro' },
+        { q: "Why is the belief \"if I validate my partner's pain, I am admitting I am a terrible person\" fundamentally flawed?", a: "Validation acknowledges the reality of your partner's emotional experience, which is distinct from accepting total guilt or character flaws.", bundle: 'pro' },
+        { q: "Why is the belief \"small daily bids for attention don't matter compared to big date nights\" wrong according to Gottman's research?", a: "Relationships fade through daily micro-neglect, and small consistent turning-toward moments create the emotional bank account needed during crisis.", bundle: 'pro' },
+        { q: "Why is the assumption \"showing vulnerability makes me weak and easily manipulated\" destructive to intimacy?", a: "Real emotional connection requires laying down armor, as hiding behind anger or detachment locks out the very closeness you seek.", bundle: 'pro' },
       ]
     },
   ],
@@ -9779,6 +10119,118 @@ const memorizeCollections = {
         { q: "According to Sue Johnson, what is the \"Virus\" in a relationship?", a: "Disconnection. (Conflict is just the \"inflammation\").", bundle: 'pro' },
       ]
     },
+    {
+      name: "The 30-Minute Reset",
+      description: "",
+      cards: [
+        { q: "What defines physiological flooding during an argument?", a: "A state of high nervous system arousal (heart rate over 100 bpm) where the thinking brain shuts off and fight-or-flight takes over.", bundle: 'pro' },
+        { q: "Why is a 30-minute break necessary when flooding occurs?", a: "It takes at least 20 to 30 minutes for stress hormones like adrenaline and cortisol to clear the bloodstream.", bundle: 'pro' },
+        { q: "What step must accompany calling a reset to prevent a partner from feeling abandoned?", a: "Offering explicit reassurance that you love them, care about the topic, and will return at a specific time.", bundle: 'pro' },
+        { q: "What is the main goal during the 30-minute break?", a: "Calming your physical nervous system through deep breathing and self-soothing, rather than rehearsing argument points.", bundle: 'pro' },
+        { q: "Why is continuing an argument while flooded dangerous for a relationship?", a: "Dysregulated brains default to attack, criticism, and contempt, saying things that inflict long-term damage.", bundle: 'pro' },
+        { q: "How does Gottman distinguish a mature reset from stonewalling?", a: "A mature reset is communicative, timed, and reassuring; stonewalling is an unannounced, cold withdrawal.", bundle: 'pro' },
+        { q: "What should you do when you return after 30 minutes?", a: "Re-engage with curiosity, softness, and a commitment to listen to your partner's experience.", bundle: 'pro' },
+        { q: "What mindset shift makes taking a break possible during a fight?", a: "Viewing a break as a mature commitment to protect the relationship rather than an act of weakness or surrender.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Safety Boundaries",
+      description: "",
+      cards: [
+        { q: "What is Level Zero in a relationship according to Jimmy?", a: "Mutual respect. Without basic respect, emotional safety and intimacy cannot exist.", bundle: 'pro' },
+        { q: "What is the fundamental difference between a boundary and control?", a: "A boundary defines what YOU will do to protect yourself; control attempts to dictate what THEY must do.", bundle: 'pro' },
+        { q: "What is the correct response when an argument crosses into yelling or name-calling?", a: "Enforcing a boundary by calmly stating you will not be mistreated and removing yourself for 30 minutes.", bundle: 'pro' },
+        { q: "Why is having a zero-tolerance policy for contempt essential?", a: "Gottman's research shows contempt is the single greatest predictor of divorce because it erodes respect.", bundle: 'pro' },
+        { q: "How do boundaries protect both partners during high-conflict moments?", a: "They prevent temporary anger from escalating into verbal or physical abuse that permanently damages trust.", bundle: 'pro' },
+        { q: "Why is explaining or arguing your boundary counterproductive?", a: "Boundaries are personal standards of safety, not topics for debate or negotiation with a dysregulated partner.", bundle: 'pro' },
+        { q: "What should you do if a partner follows you into another room after you set a boundary?", a: "Maintain the boundary firmly by leaving the house or stepping into a safe, neutral space for 30 minutes.", bundle: 'pro' },
+        { q: "What mindset shift makes setting boundaries feel empowering?", a: "Understanding that protecting your emotional safety is an act of self-worth that establishes a healthy baseline.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Radical Accountability",
+      description: "",
+      cards: [
+        { q: "What does it mean to be a \"lead apologizer\" in a relationship?", a: "Taking ownership of your role in a conflict first, without waiting for your partner to apologize or admit fault.", bundle: 'pro' },
+        { q: "Why must counter-attacks be excluded from a genuine apology?", a: "Bringing up your partner's flaws during an apology deflects blame and transforms repair into scorekeeping.", bundle: 'pro' },
+        { q: "What are the essential components of Radical Accountability?", a: "Owning the specific mistake, expressing genuine remorse, validating the impact, and offering a plan for change.", bundle: 'pro' },
+        { q: "How does defensiveness destroy the possibility of repair?", a: "Defensiveness tells your partner that your self-protection matters more than their emotional pain.", bundle: 'pro' },
+        { q: "Why should you apologize for impact even when your intention was good?", a: "Unintentional harm is still real harm; validating impact shows you value your partner's experience over your ego.", bundle: 'pro' },
+        { q: "What makes a \"cheap apology\" ineffective?", a: "Saying \"I'm sorry you felt that way\" shifts blame onto the partner's reaction rather than owning the behavior.", bundle: 'pro' },
+        { q: "How does taking responsibility build long-term trust?", a: "It proves to your partner that you are self-reflective, mature, and safe enough to handle feedback.", bundle: 'pro' },
+        { q: "What mindset shift enables Radical Accountability?", a: "Realizing that taking responsibility for a mistake demonstrates integrity and strength, not weakness.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Validating Past Pain",
+      description: "",
+      cards: [
+        { q: "Why do unaddressed past hurts resurface during current arguments?", a: "Because unvalidated pain festers as resentment until the partner feels heard, understood, and safe.", bundle: 'pro' },
+        { q: "How should you respond when a partner brings up a mistake from months ago?", a: "Resist saying \"not this again\" and instead invite them to share what is still weighing on their heart.", bundle: 'pro' },
+        { q: "What is the primary purpose of Validating Past Pain?", a: "Holding space for lingering anger and hurt so the partner can process the pain and rebuild trust.", bundle: 'pro' },
+        { q: "Why is validating lingering mistrust essential after a broken promise?", a: "Trust is rebuilt slowly through consistent validation and action; expecting instant trust invalidates their experience.", bundle: 'pro' },
+        { q: "What is the difference between validating pain and accepting permanent guilt?", a: "Validating pain acknowledges past damage; permanent guilt keeps you stuck, whereas validation leads to healing.", bundle: 'pro' },
+        { q: "Why does running away from past mistakes keep a couple stuck?", a: "Sweeping pain under the rug creates an invisible barrier that prevents present emotional intimacy.", bundle: 'pro' },
+        { q: "What does Jimmy mean by \"wading through the pain together\"?", a: "Courageously sitting with your partner's historical hurt without defending yourself or rushing to fix it.", bundle: 'pro' },
+        { q: "What mindset shift makes validating past pain possible?", a: "Recognizing that holding space for old hurt frees the relationship to build a safe, connected future.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Managing the Heat** — de-escalating using resets or boundaries when conflict gets intense\n• **Rebuilding the Bond** — repairing using accountability or validation when trust is strained\n• **Navigating Disconnection** — choosing among all four strategies to manage conflict and repair\n\nOne question decides nearly all of it: is the threat internal flooding or relational disrespect?",
+      cards: [
+        { q: "What does the Managing the Heat collection focus on?", a: "Choosing between resets and boundaries to de-escalate emotional flooding and disrespect.", bundle: 'pro' },
+        { q: "What does the Rebuilding the Bond collection train?", a: "Selecting accountability or validation to repair present ruptures and heal historical wounds.", bundle: 'pro' },
+        { q: "What does the Navigating Disconnection collection focus on?", a: "Selecting among all four strategies to restore safety and connection during relational tension.", bundle: 'pro' },
+        { q: "How do you choose between The 30-Minute Reset and Safety Boundaries?", a: "Use a Reset when internal flooding occurs; use Safety Boundaries when external disrespect or yelling happens.", bundle: 'pro' },
+        { q: "When should you choose Validating Past Pain over Radical Accountability?", a: "Use Radical Accountability to own a fresh mistake; use Validating Past Pain when historical wounds resurface.", bundle: 'pro' },
+        { q: "What is the danger of using logical debate when a situation calls for a Reset?", a: "Arguing with a flooded brain escalates conflict and leads to hurtful words you will regret.", bundle: 'pro' },
+        { q: "Why is choosing the correct repair move crucial during conflict?", a: "Matching the right strategy to the moment calms the nervous system and re-establishes emotional safety.", bundle: 'pro' },
+        { q: "When an argument turns to active yelling or contempt, why must you choose Safety Boundaries over attempting instant repair?", a: "Because relational disrespect destroys basic emotional safety, making constructive discussion or genuine repair impossible until a firm boundary is enforced.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **From Heat to Regulation** — The 30-Minute Reset (recognize) → The 30-Minute Reset (reassure) → The 30-Minute Reset (re-engage)\n2. **The Deep Repair** — Radical Accountability (own) → Radical Accountability (impact) → Validating Past Pain (history) → Radical Accountability (plan)\n3. **The De-escalation and Repair Bridge** — Safety Boundaries → The 30-Minute Reset → Radical Accountability\n\nIn each one the order is doing the work, not the individual strategies.",
+      cards: [
+        { q: "What is the 3-step order of the From Heat to Regulation combo?", a: "Recognize flooding, reassure your partner before leaving, and return after 30 minutes to re-engage.", bundle: 'pro' },
+        { q: "Why is offering explicit reassurance essential before stepping away for a Reset?", a: "It prevents your partner from interpreting the break as cold abandonment or stonewalling.", bundle: 'pro' },
+        { q: "What is the 4-step order of The Deep Repair combo?", a: "Own the mistake, validate the impact, check for past patterns, and offer a concrete plan for change.", bundle: 'pro' },
+        { q: "Why does validating the impact precede checking for past patterns in The Deep Repair?", a: "Owning the immediate hurt establishes the safety needed before exploring deeper historical wounds.", bundle: 'pro' },
+        { q: "What is the 3-step order of The De-escalation and Repair Bridge combo?", a: "Enforce a Safety Boundary, take a 30-Minute Reset, and return with Radical Accountability.", bundle: 'pro' },
+        { q: "Why does enforcing a boundary come before taking a reset in high-conflict moments?", a: "Setting a clear limit stops active mistreatment immediately before taking time to regulate.", bundle: 'pro' },
+        { q: "Why is sequence order vital when handling emotional volatility?", a: "Executing moves in order ensures safety is established before deep accountability or repair is attempted.", bundle: 'pro' },
+        { q: "In \"The De-escalation and Repair Bridge,\" why must Safety Boundaries come before Radical Accountability?", a: "Because active mistreatment must be stopped and the nervous system regulated before either partner can safely offer or receive genuine accountability.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories in this pack:\n\n• **The High-Conflict Trap** — managing rapid escalation and contempt\n• **The Blame Game** — stopping scorekeeping and finger-pointing\n• **The Stonewalling Wall** — reaching across shutdown and withdrawal\n• **The Unresolved Past** — healing historical grievances and broken trust\n• **The Defensiveness Reflex** — staying grounded when feedback triggers shame\n\nMastering these categories helps you interrupt negative fight loops.",
+      cards: [
+        { q: "What defines The High-Conflict Trap category?", a: "Moments where fights escalate rapidly into yelling, physical intimidation, or the Four Horsemen.", bundle: 'pro' },
+        { q: "What defines The Blame Game category?", a: "Arguments that devolve into finger-pointing, scorekeeping, and deflecting responsibility.", bundle: 'pro' },
+        { q: "What defines The Stonewalling Wall category?", a: "Situations where emotional flooding causes a partner to shut down, go silent, or retreat behind armor.", bundle: 'pro' },
+        { q: "What defines The Unresolved Past category?", a: "Conflicts driven by historical grievances, broken promises, and unhealed betrayals.", bundle: 'pro' },
+        { q: "What defines The Defensiveness Reflex category?", a: "Occasions where feedback triggers shame and an urge to counter-attack or justify behavior.", bundle: 'pro' },
+        { q: "What triggers \"The High-Conflict Trap\" and causes arguments to rapidly escalate out of control?", a: "Unchecked emotional flooding combined with contempt and personal attacks, which destroys safety and forces both partners into fight-or-flight reactions.", bundle: 'pro' },
+        { q: "Why does \"The Unresolved Past\" cause old grievances to resurface during unrelated current disagreements?", a: "Unvalidated historical pain festers as underlying resentment, making partners hypersensitive to any sign that past betrayals or broken promises are repeating.", bundle: 'pro' },
+        { q: "Why does \"The Defensiveness Reflex\" kick in when a partner shares a legitimate complaint?", a: "The complaint is perceived as a direct attack on character or self-worth, triggering shame that forces a person to counter-attack or justify facts instead of listening.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindset areas you practise in this pack:\n\n• **Handling Conflict** — shifting from \"us vs them\" to \"us vs the problem\"\n• **Setting Boundaries** — realizing limits protect safety rather than abandon partners\n• **Taking Responsibility** — understanding that owning mistakes is strength, not submission\n• **Past Pain** — recognizing that validating old hurts creates present trust\n\nResetting these limiting beliefs shifts your posture from self-defense to courageous repair.",
+      cards: [
+        { q: "What limiting belief is addressed in the Handling Conflict deck?", a: "The thought that walking away for a 30-minute break means losing the argument or showing weakness.", bundle: 'pro' },
+        { q: "What limiting belief is addressed in the Setting Boundaries deck?", a: "The fear that enforcing limits on disrespect is selfish or will cause a partner to leave.", bundle: 'pro' },
+        { q: "What limiting belief is addressed in the Taking Responsibility deck?", a: "The prideful thought that apologizing first makes you submissive or proves you are the bad guy.", bundle: 'pro' },
+        { q: "What limiting belief is addressed in the Past Pain deck?", a: "The belief that listening to old hurts keeps you trapped in the past rather than building future trust.", bundle: 'pro' },
+        { q: "How does changing internal mindset alter conflict outcomes?", a: "Internal certainty eliminates the urge to defend frantically, allowing you to show up as a safe partner.", bundle: 'pro' },
+        { q: "Why is shifting from \"US vs THEM\" to \"US vs THE PROBLEM\" essential?", a: "It aligns both partners as a team fighting for emotional safety rather than opponents trying to win.", bundle: 'pro' },
+        { q: "Why is the belief \"enforcing a boundary against disrespectful language will permanently ruin our relationship\" wrong?", a: "Establishing clear standards of mutual respect protects the relationship from toxic resentment, creating the baseline safety required for lasting intimacy.", bundle: 'pro' },
+        { q: "Why is the belief \"if I apologize first without waiting for my partner to admit their fault, I lose all my leverage\" flawed?", a: "Lead accountability demonstrates emotional maturity and courage, breaking destructive fight loops and inviting your partner to reflect on their own behavior.", bundle: 'pro' },
+      ]
+    },
   ],
   jimmy5: [
     {
@@ -9792,6 +10244,119 @@ const memorizeCollections = {
         { q: "Why is \"indifference\" more dangerous than \"anger\"?", a: "Anger shows the bond still matters; indifference signals that you have stopped caring about their experience entirely.", bundle: 'pro' },
         { q: "What is the \"Team Meeting\" of a relationship?", a: "The Weekly Check-in—a structured time to ensure no hurts are being \"swept under the rug.\"", bundle: 'pro' },
         { q: "What does Jimmy mean by \"Accepting Influence\"?", a: "Being malleable and responsive to your partner's feedback and perspective in your decision-making.", bundle: 'pro' },
+        { q: "What does Jimmy identify as the ultimate goal of proactive connection habits?", a: "Protecting against the natural current of relationship drift by intentionally building an emotional bank account.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Out-Loud Appreciation",
+      description: "",
+      cards: [
+        { q: "What is the core definition of Out-Loud Appreciation?", a: "Expressing specific, evidence-based gratitude for your partner's actions, focusing on why it matters to you.", bundle: 'free' },
+        { q: "Why is unexpressed gratitude dangerous in a relationship?", a: "Unexpressed gratitude is almost always interpreted as entitlement or ingratitude by the receiving partner.", bundle: 'free' },
+        { q: "What does Jimmy mean by \"making deposits in the Love Tank\"?", a: "Consistently offering genuine appreciation and affection to build emotional reserves before conflicts happen.", bundle: 'free' },
+        { q: "How does specific appreciation differ from general politeness?", a: "Specific appreciation names the exact action and its impact, proving that you were actively paying attention.", bundle: 'free' },
+        { q: "Why should partners thank each other for routine domestic chores?", a: "Routine efforts cost daily energy, and naming their value keeps tasks from feeling like invisible martyrdom.", bundle: 'free' },
+        { q: "How does Out-Loud Appreciation impact the 15-to-1 positive ratio?", a: "It provides frequent, genuine positive interactions that keep the ratio high and buffer against future stress.", bundle: 'pro' },
+        { q: "What mindset shift makes daily appreciation natural?", a: "\"I will not let my partner's efforts become wallpaper; I will name their value daily out loud.\"", bundle: 'pro' },
+        { q: "Why is praising character behind an action so powerful?", a: "Because praising who someone is validates their core identity rather than just evaluating their utility.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Non-Sexual Affection",
+      description: "",
+      cards: [
+        { q: "What is the primary purpose of Non-Sexual Affection?", a: "Offering physical touch, hugs, and kisses with zero expectation of the bedroom to build deep emotional safety.", bundle: 'free' },
+        { q: "What does Jimmy mean when he says \"foreplay starts at breakfast\"?", a: "Emotional connection, thoughtful gestures, and non-sexual touch throughout the day build the trust that enables desire.", bundle: 'free' },
+        { q: "Why do women especially need non-sexual affection in daily life?", a: "It communicates that you value their personhood and emotional presence, not just their physical body.", bundle: 'free' },
+        { q: "How does pressure-free touch impact a dysregulated nervous system?", a: "It lowers cortisol and stress levels, reassuring your partner that they are safe and held.", bundle: 'free' },
+        { q: "What are examples of non-sexual affection moves?", a: "A 20-second hug, holding hands in public, gentle shoulder rubs, and kissing without ulterior motives.", bundle: 'free' },
+        { q: "How should a partner handle touch when the other is not in the mood for sex?", a: "Respect their boundary immediately and offer gentle cuddling or holding without sulking or guilt-tripping.", bundle: 'pro' },
+        { q: "What is the difference between transactional touch and connection touch?", a: "Transactional touch seeks an immediate bedroom payoff; connection touch seeks to unite two hearts.", bundle: 'pro' },
+        { q: "What is the core mindset of Non-Sexual Affection?", a: "\"I am using touch to connect our hearts, not just to initiate a transaction.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sharing the Mental Load",
+      description: "",
+      cards: [
+        { q: "What is \"the mental load\" in a household?", a: "The invisible cognitive effort of anticipating, researching, scheduling, and managing domestic and family needs.", bundle: 'free' },
+        { q: "Why is asking \"what can I do to help?\" insufficient for true partnership?", a: "It puts the burden of management and instruction onto your partner, treating them as a boss rather than a co-CEO.", bundle: 'free' },
+        { q: "What does it mean to \"run diagnostics\" in your own home?", a: "Looking around, identifying what needs to be cleaned, restocked, or scheduled, and doing it without being asked.", bundle: 'free' },
+        { q: "How does sharing the mental load directly affect emotional intimacy?", a: "Relieving domestic exhaustion frees up mental energy and builds the trust necessary for passion and closeness.", bundle: 'free' },
+        { q: "What is an example of taking initiative on invisible labor?", a: "Booking date night sitters, updating school forms, or managing grocery inventory unprompted.", bundle: 'free' },
+        { q: "Why does Jimmy call initiative \"sexy\"?", a: "Because taking unasked responsibility demonstrates competence, maturity, and deep consideration for your partner.", bundle: 'pro' },
+        { q: "What is the difference between a \"subordinate\" mindset and a \"co-CEO\" mindset?", a: "A subordinate waits for orders; a co-CEO actively shares ownership of the vision and daily operations.", bundle: 'pro' },
+        { q: "What is the core mindset behind Sharing the Mental Load?", a: "\"I am a co-CEO of this home, not a subordinate waiting for instructions.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Weekly Check-in",
+      description: "",
+      cards: [
+        { q: "What is the primary function of The Weekly Check-in?", a: "A structured, planned routine to reflect on the relationship, celebrate wins, and address unmet needs before resentment builds.", bundle: 'free' },
+        { q: "What does Dr. John Gottman say about how marriages die?", a: "\"Marriages die in the conversations that never happen.\"", bundle: 'free' },
+        { q: "What is the first step before starting a weekly check-in?", a: "Looking into each other's eyes and reassuring each other with words of love and team alignment.", bundle: 'free' },
+        { q: "What core questions are asked during a weekly check-in?", a: "Assessing connection on a 1-to-5 scale, reviewing domestic fairness, and asking for two specific ways to support each other.", bundle: 'free' },
+        { q: "What does \"keeping short accounts\" mean in a relationship?", a: "Address small disconnects and complaints weekly so they don't accumulate into explosive conflicts.", bundle: 'free' },
+        { q: "How should a receiving partner handle uncomfortable honesty during a check-in?", a: "Listen with curiosity and humility, avoiding defensiveness, excuses, or counter-accusations.", bundle: 'pro' },
+        { q: "Why are check-in rules against interrupting and blaming essential?", a: "They protect the check-in as an explicitly safe harbor where vulnerability is honored rather than punished.", bundle: 'pro' },
+        { q: "What is the core mindset behind The Weekly Check-in?", a: "\"This is a team meeting for our most important partnership; your heart is the agenda.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three Collections decks in this pack, and what each one makes you choose between:\n\n• **Prioritizing the Bond** — choosing among appreciation, affection, check-ins, and mental load for foundational connection\n• **Daily Maintenance** — selecting the right move for ordinary daily habits of care\n• **Reconnecting After Distance** — choosing proactive vulnerability moves when emotional drift occurs\n\nSelecting the right strategy depends on whether your partner needs verbal gratitude, physical touch, practical relief, or structured alignment.",
+      cards: [
+        { q: "What distinguishes the Daily Maintenance collection from Reconnecting After Distance?", a: "Daily Maintenance builds ongoing reserves during smooth periods, whereas Reconnecting addresses active emotional drift.", bundle: 'pro' },
+        { q: "How do you choose between Non-Sexual Affection and Sharing the Mental Load when your partner is exhausted?", a: "Offer Mental Load if physical tasks are overwhelming them; offer Non-Sexual Affection if they need immediate emotional soothing.", bundle: 'pro' },
+        { q: "When should you choose The Weekly Check-in over Out-Loud Appreciation?", a: "Choose the Check-in when structured alignment on deeper needs is required; choose Appreciation for immediate positive reinforcement.", bundle: 'pro' },
+        { q: "Why does leading with initiative on chores build trust during distance?", a: "Action proves commitment without putting emotional demands on a partner who feels overwhelmed or disconnected.", bundle: 'pro' },
+        { q: "What happens when a partner misreads a need for practical help as a need for verbal praise?", a: "The partner feels misunderstood, as empty words without practical support do not relieve their actual burden.", bundle: 'pro' },
+        { q: "What is the overarching goal of all three Collections decks in this pack?", a: "Transforming ordinary daily interactions into intentional deposits into the relationship's emotional bank account.", bundle: 'pro' },
+        { q: "When your partner is physically and mentally exhausted from household chaos, why should you lead with Sharing the Mental Load over Out-Loud Appreciation?", a: "Because practical relief removes immediate cognitive fatigue and stress, whereas verbal praise without action leaves them carrying the physical burden alone.", bundle: 'pro' },
+        { q: "Why choose Non-Sexual Affection over The Weekly Check-in upon greeting a partner after a stressful workday?", a: "Because pressure-free physical touch immediately soothes a dysregulated nervous system, whereas jumping straight into structured relationship questions can feel overwhelming.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequence combos in this pack, and the order each one runs in:\n\n1. **The Daily Reconnection** — Non-Sexual Affection → Out-Loud Appreciation → Sharing the Mental Load\n2. **A Deep Check-In** — The Weekly Check-in (mood) → The Weekly Check-in (scale) → Sharing the Mental Load → Non-Sexual Affection\n3. **Proactive Burden Carrying** — Sharing the Mental Load → Non-Sexual Affection → Out-Loud Appreciation → The Weekly Check-in\n\nExecuting moves in the correct order ensures emotional safety is established before deep sharing or tasks are handled.",
+      cards: [
+        { q: "What is the 3-step order of The Daily Reconnection combo?", a: "Non-Sexual Affection upon greeting, then Out-Loud Appreciation, then Sharing the Mental Load.", bundle: 'pro' },
+        { q: "Why does Non-Sexual Affection come first in The Daily Reconnection sequence?", a: "Establishing immediate physical presence and warmth eases the nervous system out of work mode before addressing chores.", bundle: 'pro' },
+        { q: "What is the 4-step order of A Deep Check-In combo?", a: "Weekly Check-in for mood, Weekly Check-in for scale, Sharing the Mental Load, then Non-Sexual Affection.", bundle: 'pro' },
+        { q: "Why does A Deep Check-In conclude with Non-Sexual Affection?", a: "Touch and eye contact seal the conversation with emotional safety, confirming that you remain on the same team.", bundle: 'pro' },
+        { q: "What is the 4-step order of Proactive Burden Carrying combo?", a: "Sharing the Mental Load, then Non-Sexual Affection, then Out-Loud Appreciation, then The Weekly Check-in.", bundle: 'pro' },
+        { q: "Why does taking unasked initiative open the Proactive Burden Carrying sequence?", a: "Practical action removes immediate stress, creating the mental space required for warm touch and alignment.", bundle: 'pro' },
+        { q: "In \"The Daily Reconnection,\" why must Non-Sexual Affection precede Sharing the Mental Load upon greeting?", a: "Because establishing immediate physical warmth and presence reconnects your hearts before moving into functional domestic tasks and chores.", bundle: 'pro' },
+        { q: "In \"Proactive Burden Carrying,\" why does taking unasked initiative on a chore open the sequence before holding a Weekly Check-in?", a: "Because taking care of invisible labor removes active domestic stress, clearing the mental space required for a calm, productive relationship discussion.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories in this pack:\n\n• **The Complacency Drift** — overcoming the natural current toward roommate status\n• **The Invisible Load** — balancing domestic logistics and cognitive household labor\n• **The Touch Vacuum** — reintroducing non-sexual affection when physical touch dries up\n• **Unexpressed Gratitude** — ensuring daily efforts do not become taken-for-granted wallpaper\n• **The Avoided Check-In** — breaking through fear of conflict to hold regular alignment talks\n\nMastering these categories helps you protect your marriage against quiet drift.",
+      cards: [
+        { q: "What defines The Complacency Drift challenge category?", a: "The gradual, unnoticeable transition from passionate partners into functional roommates caused by routine and busyness.", bundle: 'pro' },
+        { q: "What defines The Invisible Load challenge category?", a: "Conflicts and resentment arising from one partner carrying the unacknowledged weight of home management.", bundle: 'pro' },
+        { q: "What defines The Touch Vacuum challenge category?", a: "Situations where physical touch has evaporated or become strictly associated with sexual expectations.", bundle: 'pro' },
+        { q: "What defines the Unexpressed Gratitude challenge category?", a: "Moments where daily kindness and hard work go unacknowledged, leading to feelings of entitlement.", bundle: 'pro' },
+        { q: "What defines The Avoided Check-In challenge category?", a: "Avoiding structured relationship talks out of busyness or fear that honesty will trigger arguments.", bundle: 'pro' },
+        { q: "Why is relationship drift described as a natural current?", a: "Because without conscious, proactive effort, stress and schedules automatically pull couples apart over time.", bundle: 'pro' },
+        { q: "What causes \"The Invisible Load\" to create deep resentment in a relationship even when both partners work hard?", a: "One partner carries the unacknowledged cognitive effort of anticipating, planning, and managing household logistics while the other acts only when instructed.", bundle: 'pro' },
+        { q: "Why does \"The Touch Vacuum\" develop when physical touch occurs exclusively in the bedroom?", a: "Touch becomes associated solely with sexual expectations or demands, causing a partner to pull away from daily affection to avoid feeling pressured.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindset areas you practise in this pack:\n\n• **Nurturing Connection** — viewing the relationship as a third entity requiring daily care\n• **Expressing Appreciation** — overcoming the belief that partners \"already know\" you're grateful\n• **Physical Touch** — uncoupling non-sexual affection from bedroom expectations\n• **Mental Load & Initiative** — shifting from a managed subordinate to an active co-CEO\n\nResetting these limiting beliefs shifts your posture from passive observer to proactive lead servant.",
+      cards: [
+        { q: "What is the core posture of the Nurturing Connection mindset?", a: "Viewing the relationship as a living bond that requires constant, intentional maintenance to thrive.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Expressing Appreciation mindset deck?", a: "The myth that partners already know they are valued, making explicit daily verbal praise unnecessary.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Physical Touch mindset deck?", a: "The idea that non-sexual physical touch is a waste of time unless it leads directly to sex.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Mental Load & Initiative mindset deck?", a: "The passive belief that waiting to be told what chores to do makes you a supportive partner.", bundle: 'pro' },
+        { q: "Why is asking \"what can I do to help?\" considered a mindset flaw?", a: "It forces your partner to carry the mental burden of management rather than sharing full ownership.", bundle: 'pro' },
+        { q: "How does changing internal posture alter relational health?", a: "Internal clarity eliminates passivity, empowering you to act with spontaneous warmth and service.", bundle: 'pro' },
+        { q: "Why is love described as sacrificial in nature?", a: "Because true connection requires putting your partner's genuine needs above your personal comfort or pride.", bundle: 'pro' },
+        { q: "Why is the belief \"asking my partner 'what can I do to help?' makes me a supportive co-CEO\" flawed according to Jimmy?", a: "Because asking what to do forces your partner to manage and delegate, placing the entire mental load of planning on them instead of you taking unprompted initiative.", bundle: 'pro' },
       ]
     },
   ],
@@ -9807,6 +10372,119 @@ const memorizeCollections = {
         { q: "What is the \"rigged system\" in a narcissistic fight?", a: "A dynamic where your defense is used as ammunition to prove you are the \"abusive\" one..", bundle: 'pro' },
         { q: "Why is \"Indifference\" more powerful than \"Anger\" against a manipulator?", a: "Because anger shows you still care; indifference shows they have lost their importance and control..", bundle: 'pro' },
         { q: "What does it mean to \"abandon yourself\"?", a: "Prioritizing someone else's comfort or needs over your own core values and safety to avoid conflict..", bundle: 'pro' },
+        { q: "What is the fundamental difference between an ultimatum and a healthy boundary?", a: "An ultimatum tries to force and control another person's choices; a boundary defines what you will do to protect your own safety and peace.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Indifference to Manipulation",
+      description: "",
+      cards: [
+        { q: "What is the primary definition of Indifference to Manipulation?", a: "Responding with short, flat, neutral lines or silence to starve a manipulator of emotional fuel.", bundle: 'free' },
+        { q: "Why does anger fail as a defense against a narcissistic or toxic person?", a: "Because anger communicates that they still hold power and importance, validating their need for control.", bundle: 'free' },
+        { q: "What is the \"Kryptonite\" of every narcissistic manipulator according to Jimmy?", a: "Personal accountability and emotional indifference.", bundle: 'free' },
+        { q: "How does giving a flat response (\"Okay\") protect your energy during a fight?", a: "It stops you from getting pulled into a \"rigged\" argument designed to exhaust you into submission.", bundle: 'free' },
+        { q: "What is the mindset behind Indifference to Manipulation?", a: "\"I will not give my peace away as a reward for your toxicity.\"", bundle: 'free' },
+        { q: "Why do manipulators use dramatic baiting tactics during disagreements?", a: "To trigger an emotional outburst in you, which they then use as evidence that you are the unstable one.", bundle: 'pro' },
+        { q: "What should you do when a toxic partner over-explains or lies to provoke you?", a: "Hold steady eye contact and offer a flat line or total silence rather than correcting their facts.", bundle: 'pro' },
+        { q: "What is the ultimate outcome of practicing indifference over time?", a: "The manipulator realizes they can no longer control your emotional state and loses their influence over you.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Authenticity Over Pleasing",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of Authenticity Over Pleasing?", a: "Stating your real needs, preferences, and refusals clearly, even when it creates temporary conflict.", bundle: 'free' },
+        { q: "What root fear drives people-pleasing and shape-shifting behaviors?", a: "A subconscious fear of abandonment, rejection, or being deemed \"too difficult\" to love.", bundle: 'free' },
+        { q: "Why is people-pleasing described as toxic self-abandonment?", a: "Because it sacrifices your core values and boundaries to buy short-term peace, breeding long-term resentment.", bundle: 'free' },
+        { q: "How does authentic expression impact long-term relationship quality?", a: "It weeds out users and attracts partners who respect your true self rather than a compliant persona.", bundle: 'free' },
+        { q: "What is the mindset behind Authenticity Over Pleasing?", a: "\"I would rather be rejected for who I am than loved for a version of myself I have to maintain.\"", bundle: 'free' },
+        { q: "Why is a \"Nice Guy\" or doormat persona unattractive in a relationship?", a: "Because dishonesty and passivity destroy trust; partners want an authentic, equal teammate with a backbone.", bundle: 'pro' },
+        { q: "How should you handle the internal guilt that arises when saying a clear \"no\"?", a: "Recognize the guilt as a familiar habit from past conditioning, but hold your refusal firmly anyway.", bundle: 'pro' },
+        { q: "What is the difference between being \"nice\" and being \"kind\"?", a: "Being nice pleases others out of fear; being kind honors both yourself and others with clear, loving truth.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Bare Minimum Standard",
+      description: "",
+      cards: [
+        { q: "What is the core definition of The Bare Minimum Standard?", a: "Defining non-negotiable floor limits for respect (no yelling, no name-calling, no contempt) and enforcing them.", bundle: 'free' },
+        { q: "What does Jimmy call Level Zero in any human relationship?", a: "Basic mutual respect. Without respect, no emotional safety or intimacy can exist.", bundle: 'free' },
+        { q: "How do you enforce a boundary when someone starts yelling at you?", a: "State calmly that you will not be yelled at, and step away from the conversation for 30 minutes.", bundle: 'free' },
+        { q: "What happens when you fail to enforce your own minimum standards?", a: "People push past your boundary and lower your standard until you tolerate mistreatment as normal.", bundle: 'free' },
+        { q: "What is the mindset behind The Bare Minimum Standard?", a: "\"I love myself enough to walk away from anyone who treats me like I'm worthless.\"", bundle: 'free' },
+        { q: "What should you do if a partner follows you into another room after you set a boundary?", a: "Maintain the boundary firmly by stepping outside the house or into a neutral, safe space for 30 minutes.", bundle: 'pro' },
+        { q: "Why is arguing or debating your boundary counterproductive?", a: "Boundaries are personal standards of safety, not negotiable proposals that require another person's consent.", bundle: 'pro' },
+        { q: "What distinguishes a healthy boundary from controlling behavior?", a: "Boundaries define what YOU will do to stay safe; control attempts to dictate what THEY must do.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Healing the Shame Trigger",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of Healing the Shame Trigger?", a: "Recognizing when feedback triggers childhood feelings of failure, and choosing vulnerability over defensiveness.", bundle: 'free' },
+        { q: "How does Brené Brown distinguish between guilt and shame?", a: "Guilt says \"I did something bad\"; shame says \"I am bad.\"", bundle: 'free' },
+        { q: "Why does shame cause people to counter-attack or shut down during fights?", a: "Because feeling like a failure triggers a survival response to defend character at all costs.", bundle: 'free' },
+        { q: "How can you interrupt a shame spiral during a relationship discussion?", a: "Name the internal feeling out loud (e.g. \"I'm feeling like a failure right now, and I'm struggling not to defend myself\").", bundle: 'free' },
+        { q: "What is the mindset behind Healing the Shame Trigger?", a: "\"Your feedback is information about your needs, not a verdict on my soul.\"", bundle: 'free' },
+        { q: "Why do unhealed childhood wounds make adult relationship critiques feel dangerous?", a: "Adult nervous systems project past trauma onto present partners, interpreting mild complaints as complete rejection.", bundle: 'pro' },
+        { q: "What is the benefit of naming your shame out loud to a safe partner?", a: "It de-escalates internal panic, stops defensive fight loops, and invites mutual empathy and repair.", bundle: 'pro' },
+        { q: "How does separating identity from behavior enable healthy conflict resolution?", a: "It allows you to own a specific mistake cleanly without collapsing into self-hate or exploding in anger.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Defending Your Worth** — using indifference, authenticity, and minimum standards to protect self-worth\n• **Handling Toxic Relationships** — choosing the right boundary move when facing gaslighting or baiting\n• **Overcoming People-Pleasing** — selecting authentic expression over submission and self-abandonment\n\nSelecting the right strategy depends on whether you face active manipulation, people-pleasing pressure, or disrespect.",
+      cards: [
+        { q: "What distinguishes the Defending Your Worth collection from Overcoming People-Pleasing?", a: "Defending Your Worth focuses on resisting external disrespect; Overcoming People-Pleasing focuses on overcoming internal urges to appease.", bundle: 'pro' },
+        { q: "How do you choose between Indifference to Manipulation and The Bare Minimum Standard?", a: "Use Indifference when facing verbal baiting or gaslighting; use Minimum Standards when active yelling or abuse occurs.", bundle: 'pro' },
+        { q: "When should you choose Authenticity Over Pleasing over Healing the Shame Trigger?", a: "Choose Authenticity when you need to state a clear refusal or need; choose Shame Healing when internal feelings of inadequacy hit.", bundle: 'pro' },
+        { q: "Why is detaching with indifference effective against a manipulative partner?", a: "It starves the manipulator of the emotional reaction they need to maintain control over the dynamic.", bundle: 'pro' },
+        { q: "What risk do you take when choosing Authenticity Over Pleasing in a high-conflict moment?", a: "You risk short-term conflict or disappointment, but preserve long-term self-respect and honest connection.", bundle: 'pro' },
+        { q: "Why should you lead with Indifference to Manipulation rather than Authenticity Over Pleasing when a manipulator uses aggressive verbal baiting or gaslighting?", a: "Because over-explaining your authentic feelings gives a manipulator emotional fuel to twist, whereas flat indifference starves them of control.", bundle: 'pro' },
+        { q: "Why choose The Bare Minimum Standard over Indifference to Manipulation when someone escalates to screaming or physical intimidation?", a: "Because active abuse or physical intimidation violates basic safety, requiring an immediate non-negotiable exit boundary rather than passive detachment.", bundle: 'pro' },
+        { q: "When facing intense pressure to appease an unreasonable demand, why choose Authenticity Over Pleasing over Healing the Shame Trigger?", a: "Because stating a clear refusal directly stops self-abandonment, whereas shame healing addresses internal feelings of inadequacy rather than setting the external limit.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequence combos in this pack, and the order each one runs in:\n\n1. **Handling the \"Victim\" Bait** — The Bare Minimum Standard → Indifference to Manipulation → Indifference to Manipulation\n2. **Navigating a Shame Spiral** — Healing the Shame Trigger → Healing the Shame Trigger → Authenticity Over Pleasing\n3. **Enforcing a Safety Boundary** — The Bare Minimum Standard → Authenticity Over Pleasing → Indifference to Manipulation\n\nExecuting moves in order ensures safety is reasserted before emotional detachment or authentic demands are made.",
+      cards: [
+        { q: "What is the 3-step order of the Handling the \"Victim\" Bait combo?", a: "The Bare Minimum Standard to reassert the limit, then Indifference to Manipulation twice to close the loop.", bundle: 'pro' },
+        { q: "Why does The Bare Minimum Standard open the \"Victim\" Bait sequence?", a: "Reasserting the boundary cleanly upfront establishes that your limit is non-negotiable before detaching.", bundle: 'pro' },
+        { q: "What is the 3-step order of the Navigating a Shame Spiral combo?", a: "Name the shame trigger, separate identity from behavior, then state an authentic need.", bundle: 'pro' },
+        { q: "Why does Healing the Shame Trigger precede stating an authentic need in a shame spiral?", a: "De-escalating internal shame and panic first clears the emotional space required to express genuine needs.", bundle: 'pro' },
+        { q: "What is the 3-step order of the Enforcing a Safety Boundary combo?", a: "The Bare Minimum Standard, then Authenticity Over Pleasing, then Indifference to Manipulation.", bundle: 'pro' },
+        { q: "Why does Indifference to Manipulation close the Enforcing a Safety Boundary sequence?", a: "If a partner escalates or mocks your boundary, responding with flat indifference stops the fight loop.", bundle: 'pro' },
+        { q: "In \"Enforcing a Safety Boundary,\" why must The Bare Minimum Standard come before Authenticity Over Pleasing and Indifference to Manipulation?", a: "Because establishing a firm limit on disrespect restores basic safety first, before stating an authentic need or detaching from further emotional bait.", bundle: 'pro' },
+        { q: "In \"Navigating a Shame Spiral,\" why must you acknowledge the internal shame trigger out loud before expressing an authentic need?", a: "Because de-escalating internal panic and separating identity from the mistake clears the emotional space required to speak honestly without defensiveness.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories in this pack:\n\n• **The Toxic Pushback** — standing firm when a manipulator weaponizes your limits\n• **The Gaslighting Trap** — maintaining your reality when past facts are denied\n• **The Guilt-Trip Cycle** — resisting emotional blackmail and forced martyrdom\n• **The Self-Abandonment Spiral** — overcoming the urge to appease and shape-shift\n• **The Narcissistic Rage** — enforcing safety boundaries when explosive anger erupts\n\nMastering these categories protects your peace against high-conflict dynamics.",
+      cards: [
+        { q: "What defines The Toxic Pushback challenge category?", a: "High-conflict situations where a partner or co-parent intentionally tests, mocks, or punishes your boundaries.", bundle: 'pro' },
+        { q: "What defines The Gaslighting Trap challenge category?", a: "Moments where a manipulator lies, denies past events, or calls your sanity into question to make you doubt reality.", bundle: 'pro' },
+        { q: "What defines The Guilt-Trip Cycle challenge category?", a: "Interactions where exaggerated martyrdom and drama are used to make you feel like a bad person for having limits.", bundle: 'pro' },
+        { q: "What defines The Self-Abandonment Spiral challenge category?", a: "Internal struggles where fear of rejection tempts you to appease, shape-shift, and sacrifice your core needs.", bundle: 'pro' },
+        { q: "What defines The Narcissistic Rage challenge category?", a: "Dangerous situations where a boundary triggers explosive anger, threats, or physical intimidation.", bundle: 'pro' },
+        { q: "Why is arguing over facts counterproductive in The Gaslighting Trap?", a: "Because a gaslighter is committed to controlling the narrative, not reaching shared truth; disengaging protects your sanity.", bundle: 'pro' },
+        { q: "What causes \"The Gaslighting Trap\" to be so psychologically disorienting for a partner in a relationship?", a: "The manipulator systematically denies past facts and reality, forcing the partner to doubt their own memory and rely entirely on the manipulator's narrative.", bundle: 'pro' },
+        { q: "What drives \"The Narcissistic Rage\" when a manipulator is confronted with a firm, non-negotiable boundary?", a: "The boundary shatters the manipulator's illusion of total control and triggers intense underlying shame, causing an explosive outburst to force compliance.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindset areas you practise in this pack:\n\n• **Defending Your Worth** — shifting from protecting a manipulator to honoring yourself\n• **Setting Boundaries** — realizing that limits protect safety rather than cause harm\n• **Authenticity & Self-Worth** — overcoming the need to shape-shift for external approval\n• **Shame & Defensiveness** — separating your identity from mistakes to stop defensive fight loops\n\nResetting these limiting beliefs empowers you to act as the gatekeeper of your own peace.",
+      cards: [
+        { q: "What limiting belief is dismantled in the Setting Boundaries deck?", a: "The false belief that setting boundaries is selfish, mean, or destructive to loving relationships.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Authenticity & Self-Worth deck?", a: "The myth that you must shape-shift and agree with everyone to be deemed worthy of love and acceptance.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Shame & Defensiveness deck?", a: "The destructive thought that making a mistake proves you are a complete failure as a partner.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Defending Your Worth deck?", a: "The idea that you must over-explain your boundaries until a toxic person finally agrees with them.", bundle: 'pro' },
+        { q: "How does changing internal posture alter boundary enforcement?", a: "Internal certainty eliminates guilt and hesitation, allowing you to hold limits calmly and firmly.", bundle: 'pro' },
+        { q: "Why is self-worth described as an internal gatekeeper?", a: "Because when you know your worth, you naturally refuse access to anyone who treats you with disrespect.", bundle: 'pro' },
+        { q: "Why is the belief \"I must over-explain my reasons until a toxic partner understands and agrees with my boundary\" wrong according to Jimmy?", a: "Because a boundary is a personal standard for your own peace that requires no permission, and over-explaining merely invites debate and manipulation.", bundle: 'pro' },
+        { q: "Why is the assumption \"if I express my true needs and opinions, people will realize I'm flawed and abandon me\" destructive to self-worth?", a: "Because hiding your real self breeds quiet resentment, whereas authentic expression weeds out unsafe people and creates real intimacy with those who respect you.", bundle: 'pro' },
       ]
     },
   ],

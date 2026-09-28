@@ -8265,6 +8265,24 @@ const multiStepCollections = {
             { front: "Enforcing Mutual Respect — they share their values, and you discuss how to handle disagreements.", back: "\"If we do this, can we agree that yelling and name-calling are off-limits, no matter how mad we get?\"", guideFront: "Refuse the disrespect when...", guideBack: "A limit, and what you'll do" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "You are four weeks into dating someone and want to see if their character and values support a safe relationship.",
+          steps: [
+            { front: "Character Discernment — they tell a story about a coworker who made a mistake on a joint project.", back: "\"How did you handle that with them when it happened?\"", guideFront: "Watch how they treat others when...", guideBack: "A telling question, or a quiet check" },
+            { front: "Values Alignment — you transition the talk to how you both view partnership and family.", back: "\"I value emotional openness and shared decisions. What does a healthy home look like to you?\"", guideFront: "Align on values when...", guideBack: "Your value, then a question about theirs" },
+            { front: "Enforcing Mutual Respect — they make a sarcastic jab about your past relationship choices.", back: "\"I'm open to discussing the future, but I won't accept jabs about my past.\"", guideFront: "Refuse the disrespect when...", guideBack: "A limit, and what you'll do" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are discussing marriage plans and want to confirm that safety and shared standards exist.",
+          steps: [
+            { front: "Character Discernment — you observe how they react when a service employee makes an error with your bill.", back: "(notice whether they become rude and demanding)", guideFront: "Watch how they treat others when...", guideBack: "A telling question, or a quiet check" },
+            { front: "Values Alignment — you ask about expectations regarding finances and career priorities.", back: "\"I plan to continue working full-time after marriage. How do you see our financial goals?\"", guideFront: "Align on values when...", guideBack: "Your value, then a question about theirs" },
+            { front: "Enforcing Mutual Respect — they get defensive and say you are being too analytical.", back: "\"We can pause this talk, but I need us to address big questions without dismissal.\"", guideFront: "Refuse the disrespect when...", guideBack: "A limit, and what you'll do" },
+          ]
+        },
       ]
     },
     {
@@ -8280,6 +8298,59 @@ const multiStepCollections = {
             { front: "Accepting Influence — they explain their fear about the savings account.", back: "\"You're right to be concerned about the safety net. Let's look at the numbers together.\"", guideFront: "Accept their influence when...", guideBack: "A step toward their view" },
             { front: "Enforcing Mutual Respect — they get frustrated and say, \"You're always so impulsive!\"", back: "\"I hear your frustration, but 'you always' feels like an attack. Can we stick to the car?\"", guideFront: "Refuse the disrespect when...", guideBack: "A limit, and what you'll do" },
             { front: "Accepting Influence — they apologize and suggest a compromise.", back: "\"I can wait six months if we hit a specific savings goal first. I trust your judgment on the timing.\"", guideFront: "Accept their influence when...", guideBack: "A step toward their view" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You and your partner are locked in a tense debate over where to spend Thanksgiving.",
+          steps: [
+            { front: "Accepting Influence — they explain that they feel disconnected from their family and really want to visit them.", back: "\"I understand why that visit matters to you so much. Let's look at how we can make it work.\"", guideFront: "Accept their influence when...", guideBack: "A step toward their view" },
+            { front: "Enforcing Mutual Respect — they snap: \"You never care about my family anyway!\"", back: "\"I am willing to compromise, but I won't be accused of not caring. Let's stay on topic.\"", guideFront: "Refuse the disrespect when...", guideBack: "A limit, and what you'll do" },
+            { front: "Accepting Influence — they take a breath and apologize for snapping.", back: "\"Thank you. Let's agree to split the holiday week so both families get time.\"", guideFront: "Accept their influence when...", guideBack: "A step toward their view" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You feel overburdened by domestic labor and bring it up during a busy evening.",
+          steps: [
+            { front: "Accepting Influence — they point out that their work hours doubled this week and they are exhausted.", back: "\"That's a fair point. You have been pulling huge hours at the office.\"", guideFront: "Accept their influence when...", guideBack: "A step toward their view" },
+            { front: "Enforcing Mutual Respect — they follow up by saying, \"You're just bad at organizing your day.\"", back: "\"My organizational skills aren't the issue here. I need us to speak respectfully.\"", guideFront: "Refuse the disrespect when...", guideBack: "A limit, and what you'll do" },
+            { front: "Accepting Influence — they acknowledge the disrespect and offer to handle the laundry on weekends.", back: "\"I appreciate that. Let's try that schedule for the next two weeks.\"", guideFront: "Accept their influence when...", guideBack: "A step toward their view" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Aligning Under Pressure",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Align on core values, accept their perspective on the details, and enforce mutual respect if the conversation becomes heated.\n\n• Moving from shared vision to flexible execution keeps discussions productive.\n• Setting procedural safety rules ensures hard topics can be revisited without fear.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are considering buying a home together and need to navigate differing financial styles.",
+          steps: [
+            { front: "Values Alignment — you initiate the talk about long-term financial security and debt.", back: "\"I value having a six-month emergency fund before buying. What is your comfort level?\"", guideFront: "Align on values when...", guideBack: "Your value, then a question about theirs" },
+            { front: "Accepting Influence — they suggest buying a smaller property first to keep mortgage payments low.", back: "\"That is a smart way to preserve our safety net. Let's look at smaller listings.\"", guideFront: "Accept their influence when...", guideBack: "A step toward their view" },
+            { front: "Enforcing Mutual Respect — they dismiss your concern about property taxes as \"foolish.\"", back: "\"I am open to your plan, but I won't have my financial concerns labeled as foolish.\"", guideFront: "Refuse the disrespect when...", guideBack: "A limit, and what you'll do" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are expecting a child and need to agree on discipline and household routines.",
+          steps: [
+            { front: "Values Alignment — you share your core belief about gentle discipline and emotional regulation.", back: "\"I believe in teaching emotional skills rather than punishing feelings. How do you view discipline?\"", guideFront: "Align on values when...", guideBack: "Your value, then a question about theirs" },
+            { front: "Accepting Influence — they suggest setting clear, consistent boundaries around bedtime routines.", back: "\"I agree with that. Structure will help the child feel secure.\"", guideFront: "Accept their influence when...", guideBack: "A step toward their view" },
+            { front: "Enforcing Mutual Respect — they raise their voice when you question an old family tradition.", back: "\"I want us to raise this child as a team, which means no yelling when we disagree.\"", guideFront: "Refuse the disrespect when...", guideBack: "A limit, and what you'll do" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "One partner gets a promotion that requires frequent travel, impacting home routines.",
+          steps: [
+            { front: "Values Alignment — you discuss how important quality time together is for maintaining intimacy.", back: "\"Our relationship needs dedicated weekly time to stay strong. How will travel fit into that?\"", guideFront: "Align on values when...", guideBack: "Your value, then a question about theirs" },
+            { front: "Accepting Influence — they propose blocking off full weekends with zero work calls when they return.", back: "\"That would make a huge difference. I can support the travel if weekends are sacred.\"", guideFront: "Accept their influence when...", guideBack: "A step toward their view" },
+            { front: "Enforcing Mutual Respect — they roll their eyes when you express anxiety about being alone during trips.", back: "\"My feelings about the distance are real. I need you to listen without eye-rolling.\"", guideFront: "Refuse the disrespect when...", guideBack: "A limit, and what you'll do" },
           ]
         },
       ]
@@ -8302,6 +8373,26 @@ const multiStepCollections = {
             { front: "The Expression Formula (Need) — ask for reconnection.", back: "\"What I really need is for us to have a dedicated 'us' night this weekend to feel like a priority again.\"", guideFront: "Ask for what would help when...", guideBack: "A clear need" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "You feel exhausted by weekend social commitments with extended family and want to share your limits gently.",
+          steps: [
+            { front: "The Soft Startup — check for emotional capacity before bringing up your exhaustion", back: "\"Hey, I've been feeling pretty drained lately. Do you have a few minutes to talk?\"", guideFront: "Start gently and check timing when...", guideBack: "A gentle opener with a check-in" },
+            { front: "The Expression Formula (Facts) — state the exact frequency of recent events without exaggeration", back: "\"We have had family gatherings every weekend for the past month.\"", guideFront: "State only what happened when...", guideBack: "The plain event" },
+            { front: "The Expression Formula (Feelings & Meaning) — share your emotional state and the internal story", back: "\"I am feeling exhausted, and the story I tell myself is that we don't have space for our own home life.\"", guideFront: "Name the feeling and your story when...", guideBack: "A feeling, and the story behind it" },
+            { front: "The Expression Formula (Need) — state a clear, actionable request to protect weekend rest", back: "\"I need us to reserve next weekend just for the two of us to rest.\"", guideFront: "Ask for what would help when...", guideBack: "A clear need" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You feel overburdened managing doctor appointments, school schedules, and groceries for the household.",
+          steps: [
+            { front: "The Soft Startup — ask for a quiet moment to share a heavy feeling without launching an attack", back: "\"I have something on my heart about our weekly organization. Is now a good time?\"", guideFront: "Start gently and check timing when...", guideBack: "A gentle opener with a check-in" },
+            { front: "The Expression Formula (Facts) — outline the specific organizational tasks you handled this week", back: "\"I scheduled all three medical checkups and ordered all the household supplies this week.\"", guideFront: "State only what happened when...", guideBack: "The plain event" },
+            { front: "The Expression Formula (Feelings & Meaning) — share your underlying anxiety and fear of burnout", back: "\"I feel overwhelmed, and the narrative in my head is that I'm carrying the home alone.\"", guideFront: "Name the feeling and your story when...", guideBack: "A feeling, and the story behind it" },
+            { front: "The Expression Formula (Need) — offer a concrete proposal for shared planning", back: "\"Would you take complete ownership of managing the family calendar next month?\"", guideFront: "Ask for what would help when...", guideBack: "A clear need" },
+          ]
+        },
       ]
     },
     {
@@ -8317,6 +8408,59 @@ const multiStepCollections = {
             { front: "The Soft Startup — realize you've been \"disregulated\" and call a timeout.", back: "\"Wait—stop. My heart is racing and I just attacked you. Let me take 30 seconds to breathe and start over.\"", guideFront: "Start gently and check timing when...", guideBack: "A gentle opener with a check-in" },
             { front: "Requests Over Criticism — rephrase the attack into a vulnerable request.", back: "\"I'm feeling really overwhelmed by the state of the house. Would you be willing to spend 15 minutes helping me tidy up?\"", guideFront: "Turn the complaint into a request when...", guideBack: "A specific, positive request" },
             { front: "Owning the Narrative — explain the \"why\" behind the snap.", back: "\"I'm sorry I called you lazy. The story I told myself was that I'm alone in this, but I know that's not fair.\"", guideFront: "Own your narrative when...", guideBack: "Your story, offered for checking" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You walked into the kitchen tired and snapped, \"Why can't you ever clean up after yourself?\"",
+          steps: [
+            { front: "The Soft Startup — pause immediately, apologize for the harsh opening, and request a reset", back: "\"That came out sharp and unhelpful. I'm sorry. Can I take a breath and restart?\"", guideFront: "Start gently and check timing when...", guideBack: "A gentle opener with a check-in" },
+            { front: "Requests Over Criticism — state a forward-looking, positive request for the kitchen", back: "\"Would you be willing to clear the sink before we sit down for the evening?\"", guideFront: "Turn the complaint into a request when...", guideBack: "A specific, positive request" },
+            { front: "Owning the Narrative — acknowledge the internal stress that caused you to snap", back: "\"I snapped because I was stressed about my workday, and the story I told myself was that I had to do it all.\"", guideFront: "Own your narrative when...", guideBack: "Your story, offered for checking" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You realized your partner forgot to pick up the dry cleaning and yelled, \"You never remember anything I ask!\"",
+          steps: [
+            { front: "The Soft Startup — interrupt the fight cycle right away to lower the emotional temperature", back: "\"I'm sorry for raising my voice just now. I want to talk about this calmly.\"", guideFront: "Start gently and check timing when...", guideBack: "A gentle opener with a check-in" },
+            { front: "Requests Over Criticism — reframe the frustration into a specific, helpful request", back: "\"Could we set a shared reminder on our phones so logistics don't fall through the cracks?\"", guideFront: "Turn the complaint into a request when...", guideBack: "A specific, positive request" },
+            { front: "Owning the Narrative — disclose the underlying fear that fueled your outburst", back: "\"When the errand was missed, the story I told myself was that my time wasn't being respected.\"", guideFront: "Own your narrative when...", guideBack: "Your story, offered for checking" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Reconnecting After Disconnection",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Use a Soft Startup to gauge readiness, Owning the Narrative to share vulnerability, and Requests Over Criticism to establish a path forward.\n\n• Rebuilding closeness after a cold period requires clear, non-defensive steps.\n• Moving from awareness of distance to a positive request restores safety.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "An unresolved argument led to hours of tension and silence, and you want to bridge the gap.",
+          steps: [
+            { front: "The Soft Startup — check if your partner has emotional bandwidth to reconnect.", back: "\"Hey, I don't like the distance between us. Are you open to sitting together for a minute?\"", guideFront: "Start gently and check timing when...", guideBack: "A gentle opener with a check-in" },
+            { front: "Owning the Narrative — disclose your internal fear without blaming them for the silence.", back: "\"When we stopped talking, the story I told myself was that you were giving up on the conversation.\"", guideFront: "Own your narrative when...", guideBack: "Your story, offered for checking" },
+            { front: "Requests Over Criticism — ask for a concrete action to restore warmth.", back: "\"Could we hold hands and just talk about how to solve this as a team?\"", guideFront: "Turn the complaint into a request when...", guideBack: "A specific, positive request" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A discussion about family visits turned defensive, and you want to repair the bond.",
+          steps: [
+            { front: "The Soft Startup — invite your partner into a safe, non-judgmental space.", back: "\"I hate that we got defensive earlier. Can we try talking about this from a place of love?\"", guideFront: "Start gently and check timing when...", guideBack: "A gentle opener with a check-in" },
+            { front: "Owning the Narrative — take ownership of the narrative that fueled your defensiveness.", back: "\"When you criticized my family plans, the story I told myself was that you didn't respect my roots.\"", guideFront: "Own your narrative when...", guideBack: "Your story, offered for checking" },
+            { front: "Requests Over Criticism — state what you need to feel supported during holiday planning.", back: "\"Could we look at the calendar together and find a holiday schedule that feels fair to both of us?\"", guideFront: "Turn the complaint into a request when...", guideBack: "A specific, positive request" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "An unaddressed tension from the morning left both of you silent and cold all evening.",
+          steps: [
+            { front: "The Soft Startup — check for emotional availability to bridge the cold distance", back: "\"I really dislike this wall between us tonight. Do you have a moment to sit together?\"", guideFront: "Start gently and check timing when...", guideBack: "A gentle opener with a check-in" },
+            { front: "Owning the Narrative — share your internal vulnerability without accusing them of pulling away", back: "\"When we stayed silent, the story I told myself was that you didn't want to connect with me.\"", guideFront: "Own your narrative when...", guideBack: "Your story, offered for checking" },
+            { front: "Requests Over Criticism — propose a simple, concrete action to restore warmth", back: "\"Could we put our work away and just hold hands on the couch for ten minutes?\"", guideFront: "Turn the complaint into a request when...", guideBack: "A specific, positive request" },
           ]
         },
       ]
@@ -8339,6 +8483,26 @@ const multiStepCollections = {
             { front: "Compassionate Curiosity — dig for the solution.", back: "\"What do you need from me tonight to feel like a priority again?\"", guideFront: "Practice curiosity when...", guideBack: "A possible question" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "You notice rising tension regarding upcoming holiday plans and want to address it safely.",
+          steps: [
+            { front: "The \"Vulnerable\" Code Word — pause the discussion to request safety.", back: "\"Vulnerable. I'm feeling anxious about holiday planning and I want us to stay on the same team.\"", guideFront: "Ask for safety, or give it when...", guideBack: "The code word, or full attention" },
+            { front: "Compassionate Curiosity — explore what is driving their frustration.", back: "\"What meaning did you give my suggestion about where we stay?\"", guideFront: "Practice curiosity when...", guideBack: "A possible question" },
+            { front: "Validation Without Agreement — validate their emotional reaction without arguing facts.", back: "\"I can see why you felt overwhelmed by that schedule. It makes sense that you felt squeezed.\"", guideFront: "Validate their feeling when...", guideBack: "The feeling, acknowledged as real" },
+            { front: "Compassionate Curiosity — ask for what would create safety for both of you.", back: "\"What do you need from the schedule so you can feel rested and prioritized?\"", guideFront: "Practice curiosity when...", guideBack: "A possible question" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You feel a wall between you and your partner after days of living like rushed roommates.",
+          steps: [
+            { front: "The \"Vulnerable\" Code Word — signal a desire for deep connection.", back: "\"Vulnerable. I miss you and I'm feeling scared about how distant we've been.\"", guideFront: "Ask for safety, or give it when...", guideBack: "The code word, or full attention" },
+            { front: "Compassionate Curiosity — invite them to share their inner world.", back: "\"What has been going on inside your heart over these past few busy days?\"", guideFront: "Practice curiosity when...", guideBack: "A possible question" },
+            { front: "Validation Without Agreement — validate their experience of exhaustion and neglect.", back: "\"It makes complete sense that you felt lonely when I came home late every night.\"", guideFront: "Validate their feeling when...", guideBack: "The feeling, acknowledged as real" },
+            { front: "Compassionate Curiosity — ask how to repair the closeness.", back: "\"How can we reconnect tonight in a way that feels gentle for both of us?\"", guideFront: "Practice curiosity when...", guideBack: "A possible question" },
+          ]
+        },
       ]
     },
     {
@@ -8354,6 +8518,59 @@ const multiStepCollections = {
             { front: "Turning Toward Bids — give them your attention.", back: "(Mute the TV and look at them) \"That's amazing! I know how much work you put into that.\"", guideFront: "Turn toward a bid when...", guideBack: "Attention, a word or a touch back" },
             { front: "Compassionate Curiosity — explore the win.", back: "\"What part of it did they like the most? Tell me the details.\"", guideFront: "Practice curiosity when...", guideBack: "A possible question" },
             { front: "Turning Toward Bids — celebrate as a team.", back: "\"You've been crushing it lately. Let's go out for a treat tonight to celebrate.\"", guideFront: "Turn toward a bid when...", guideBack: "Attention, a word or a touch back" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are working on your computer when your partner proudly displays a completed craft project.",
+          steps: [
+            { front: "Turning Toward Bids — give full visual and verbal attention.", back: "(Close your laptop lid and look up with a smile) \"Look at that! You finished it!\"", guideFront: "Turn toward a bid when...", guideBack: "Attention, a word or a touch back" },
+            { front: "Compassionate Curiosity — ask about their creative process.", back: "\"What was the most challenging part of putting that together?\"", guideFront: "Practice curiosity when...", guideBack: "A possible question" },
+            { front: "Turning Toward Bids — offer enthusiastic encouragement.", back: "\"I love seeing your creativity in action. Where are we going to display it?\"", guideFront: "Turn toward a bid when...", guideBack: "Attention, a word or a touch back" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are reading on the couch and your partner comes over and sits close, resting their head on your shoulder.",
+          steps: [
+            { front: "Turning Toward Bids — acknowledge the touch warmly.", back: "(Put your arm around them and squeeze gently) \"Hey you. I'm glad you came over.\"", guideFront: "Turn toward a bid when...", guideBack: "Attention, a word or a touch back" },
+            { front: "Compassionate Curiosity — check in on their emotional state.", back: "\"How has your afternoon been feeling? You seemed a little quiet.\"", guideFront: "Practice curiosity when...", guideBack: "A possible question" },
+            { front: "Turning Toward Bids — offer a shared moment of rest.", back: "\"Let me put my book down. Let's just sit together like this for a few minutes.\"", guideFront: "Turn toward a bid when...", guideBack: "Attention, a word or a touch back" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The De-escalation Bridge",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Use The \"Vulnerable\" Code Word to interrupt a fight, Validation Without Agreement to soothe emotional pain, and Compassionate Curiosity to find a collaborative path forward.\n\n• Stopping a fight early protects the relationship from destructive words.\n• Moving from reset to validation to curiosity restores interdependence.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A discussion about an unexpected expense devolves into raised voices and mutual accusations.",
+          steps: [
+            { front: "The \"Vulnerable\" Code Word — call a timeout to protect emotional safety.", back: "\"Vulnerable. We're getting heated and I don't want us to hurt each other. Let's pause.\"", guideFront: "Ask for safety, or give it when...", guideBack: "The code word, or full attention" },
+            { front: "Validation Without Agreement — validate the fear behind the financial worry.", back: "\"I can see how anxious this expense made you feel. It makes sense that you felt unsafe.\"", guideFront: "Validate their feeling when...", guideBack: "The feeling, acknowledged as real" },
+            { front: "Compassionate Curiosity — explore what would help restore financial security.", back: "\"What can we do together to adjust the budget so you feel secure again?\"", guideFront: "Practice curiosity when...", guideBack: "A possible question" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your partner snaps about forgotten chores, triggering defensiveness in you.",
+          steps: [
+            { front: "The \"Vulnerable\" Code Word — reset the tone before counter-attacking.", back: "\"Vulnerable. I feel defensive right now, but I know you're hurting. Let's start over.\"", guideFront: "Ask for safety, or give it when...", guideBack: "The code word, or full attention" },
+            { front: "Validation Without Agreement — validate their feeling of being overburdened.", back: "\"I hear that you feel overwhelmed and unsupported in keeping up the house. That makes sense.\"", guideFront: "Validate their feeling when...", guideBack: "The feeling, acknowledged as real" },
+            { front: "Compassionate Curiosity — ask how to divide tasks fairly going forward.", back: "\"What specific chores can I take off your plate this week to make things feel equal?\"", guideFront: "Practice curiosity when...", guideBack: "A possible question" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your partner made a sharp joke at your expense in front of friends, and you bring it up in the car.",
+          steps: [
+            { front: "The \"Vulnerable\" Code Word — open the conversation with explicit safety.", back: "\"Vulnerable. I felt really hurt by that joke earlier, and I need us to talk gently.\"", guideFront: "Ask for safety, or give it when...", guideBack: "The code word, or full attention" },
+            { front: "Validation Without Agreement — validate their intention while holding your boundary.", back: "\"I hear that you were just trying to be funny, but I felt embarrassed in front of everyone.\"", guideFront: "Validate their feeling when...", guideBack: "The feeling, acknowledged as real" },
+            { front: "Compassionate Curiosity — explore how to protect each other in public settings.", back: "\"How can we agree to handle humor when we're around friends so we both feel safe?\"", guideFront: "Practice curiosity when...", guideBack: "A possible question" },
           ]
         },
       ]
@@ -8375,6 +8592,24 @@ const multiStepCollections = {
             { front: "The 30-Minute Reset — return and re-initiate the talk.", back: "\"Thank you for the break. I’m feeling much calmer. Can we try again? I want to understand what's worrying you about the bill.\"", guideFront: "Call a timed break when...", guideBack: "A pause, with a time to return" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "An argument about family holiday visits is escalating into yelling and personal frustration.",
+          steps: [
+            { front: "The 30-Minute Reset — recognize flooding during the argument", back: "\"My heart rate is climbing and I can feel myself wanting to yell. I need to take 30 minutes to cool down.\"", guideFront: "Call a timed break when...", guideBack: "A pause, with a time to return" },
+            { front: "The 30-Minute Reset — reassure your partner before stepping away", back: "\"I love you and I care about our holiday plans. I just need 30 minutes so I can listen to you respectfully. I'll be back at 4:30.\"", guideFront: "Call a timed break when...", guideBack: "A pause, with a time to return" },
+            { front: "The 30-Minute Reset — return after the break to resume the talk", back: "\"Thank you for giving me that time. I'm feeling calm now, and I'd like to hear what you need for the holidays.\"", guideFront: "Call a timed break when...", guideBack: "A pause, with a time to return" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A discussion about household chores turns intense after a long, exhausting workday.",
+          steps: [
+            { front: "The 30-Minute Reset — notice physical cues of flooding", back: "\"I can feel my face getting hot and my voice getting louder. I need to pause for 30 minutes.\"", guideFront: "Call a timed break when...", guideBack: "A pause, with a time to return" },
+            { front: "The 30-Minute Reset — offer clear reassurance to protect connection", back: "\"This topic matters to me, but I want to be a safe partner. Let's reset for 30 minutes and talk at 7:00.\"", guideFront: "Call a timed break when...", guideBack: "A pause, with a time to return" },
+            { front: "The 30-Minute Reset — re-engage calmly after regulating", back: "\"I'm ready to talk now. Thank you for waiting so we could handle this as a team.\"", guideFront: "Call a timed break when...", guideBack: "A pause, with a time to return" },
+          ]
+        },
       ]
     },
     {
@@ -8391,6 +8626,61 @@ const multiStepCollections = {
             { front: "Radical Accountability — validate the impact.", back: "\"I imagine that made you feel like you aren't a priority in my life, and that hurts my heart to think about.\"", guideFront: "Own your part fully when...", guideBack: "A clean apology and a fix" },
             { front: "Validating Past Pain — check if this triggered an old wound.", back: "\"Does this feel like a pattern of me neglecting you that we need to talk about? I want to hear the whole story.\"", guideFront: "Make room for the old hurt when...", guideBack: "An invitation to tell you more" },
             { front: "Radical Accountability — offer a plan for change.", back: "\"I’ve set a recurring alert in my calendar and my phone for next year. I want you to be able to count on me.\"", guideFront: "Own your part fully when...", guideBack: "A clean apology and a fix" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You made a major financial purchase without checking with your partner first.",
+          steps: [
+            { front: "Radical Accountability — own the mistake cleanly without making excuses", back: "\"I bought that equipment without checking with you, and that was selfish and wrong. I own that completely.\"", guideFront: "Own your part fully when...", guideBack: "A clean apology and a fix" },
+            { front: "Radical Accountability — validate the emotional impact on your partner", back: "\"I see how that broke your trust and made you feel like your input doesn't matter in our marriage.\"", guideFront: "Own your part fully when...", guideBack: "A clean apology and a fix" },
+            { front: "Validating Past Pain — check if this triggered an underlying pattern of mistrust", back: "\"Does this bring up past times where you felt financially unsafe or ignored by me?\"", guideFront: "Make room for the old hurt when...", guideBack: "An invitation to tell you more" },
+            { front: "Radical Accountability — offer a concrete plan for future accountability", back: "\"I've returned the item, and I commit to consulting you on any purchase over \\$100 going forward.\"", guideFront: "Own your part fully when...", guideBack: "A clean apology and a fix" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You spoke dismissively to your partner in front of your close friends during dinner.",
+          steps: [
+            { front: "Radical Accountability — take full responsibility for the public disrespect", back: "\"I spoke to you dismissively at dinner tonight, and there is no excuse for my behavior. I'm deeply sorry.\"", guideFront: "Own your part fully when...", guideBack: "A clean apology and a fix" },
+            { front: "Radical Accountability — acknowledge the embarrassment you caused", back: "\"It was disrespectful and I imagine it made you feel humiliated and unsupported in front of everyone.\"", guideFront: "Own your part fully when...", guideBack: "A clean apology and a fix" },
+            { front: "Validating Past Pain — invite them to share how past public comments affected them", back: "\"I know I've made sharp comments in public before. I want to listen if there's old hurt you need to share.\"", guideFront: "Make room for the old hurt when...", guideBack: "An invitation to tell you more" },
+            { front: "Radical Accountability — state your commitment to protecting them in public", back: "\"I am committed to treating you with total respect in public, and I will check myself if I ever feel sharp.\"", guideFront: "Own your part fully when...", guideBack: "A clean apology and a fix" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The De-escalation and Repair Bridge",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Enforce a Safety Boundary when disrespect occurs, take a 30-Minute Reset to cool down, and return with Radical Accountability to repair the moment.\n\n• Setting a boundary stops mistreatment instantly.\n• Taking a timed reset allows the nervous system to regulate.\n• Returning with accountability fixes the rupture cleanly.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your partner yells and insults you during an argument over evening plans.",
+          steps: [
+            { front: "Safety Boundaries — set a firm limit on the yelling", back: "\"I will not stay in a conversation where I am being yelled at or insulted.\"", guideFront: "Enforce a safety boundary when...", guideBack: "A limit, and your exit" },
+            { front: "The 30-Minute Reset — call a timed reset to regulate", back: "\"I am taking 30 minutes to calm down, and I will be back at 8:00 so we can try again.\"", guideFront: "Call a timed break when...", guideBack: "A pause, with a time to return" },
+            { front: "Radical Accountability — return and own your own initial sharp tone", back: "\"I'm back. I want to apologize for my initial sharp tone before things escalated. That was my part.\"", guideFront: "Own your part fully when...", guideBack: "A clean apology and a fix" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A debate about in-law visits turns hostile and personal.",
+          steps: [
+            { front: "Safety Boundaries — stop the hostile personal attacks", back: "\"I won't participate in personal attacks about my family. I am leaving the room.\"", guideFront: "Enforce a safety boundary when...", guideBack: "A limit, and your exit" },
+            { front: "The 30-Minute Reset — take a timed break to lower emotional volume", back: "\"I need 30 minutes to regulate my nervous system. I promise to return at 5:00.\"", guideFront: "Call a timed break when...", guideBack: "A pause, with a time to return" },
+            { front: "Radical Accountability — re-engage with clean ownership of your defensiveness", back: "\"Thank you for the break. I'm sorry for getting defensive when you first brought up my parents.\"", guideFront: "Own your part fully when...", guideBack: "A clean apology and a fix" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your partner slams a door and screams after a disagreement over spending.",
+          steps: [
+            { front: "Safety Boundaries — enforce a boundary against physical intimidation", back: "\"Slamming doors and screaming is unsafe. I am stepping outside for 30 minutes.\"", guideFront: "Enforce a safety boundary when...", guideBack: "A limit, and your exit" },
+            { front: "The 30-Minute Reset — announce a clear return time", back: "\"I am taking 30 minutes to reset so we can speak calmly. I will see you at 9:00.\"", guideFront: "Call a timed break when...", guideBack: "A pause, with a time to return" },
+            { front: "Radical Accountability — return to take responsibility for ignoring the budget discussion", back: "\"I'm ready to talk. I apologize for avoiding the budget talk earlier—that was wrong of me.\"", guideFront: "Own your part fully when...", guideBack: "A clean apology and a fix" },
           ]
         },
       ]
@@ -8412,6 +8702,24 @@ const multiStepCollections = {
             { front: "Sharing the Mental Load — look for an immediate way to serve.", back: "\"The kitchen looks like it was a battleground today. Let me take over the dishes while you tell me about your day.\"", guideFront: "Take on a task unasked when...", guideBack: "A task you take on" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "Your partner returns home looking drained and carrying heavy work bags.",
+          steps: [
+            { front: "Non-Sexual Affection — greet them with physical presence before discussing logistics.", back: "(Put your phone down, walk over, and give them a warm, 20-second hug)", guideFront: "Reach out with touch when...", guideBack: "A touch or a warm word" },
+            { front: "Out-Loud Appreciation — express explicit joy and gratitude for seeing them.", back: "\"I'm so glad you're home. Having you here is the best part of my evening.\"", guideFront: "Say thanks and why when...", guideBack: "Specific thanks, with the reason" },
+            { front: "Sharing the Mental Load — step in immediately to relieve an evening task.", back: "\"Go sit down for ten minutes. I'll unpack your bags and get dinner started.\"", guideFront: "Take on a task unasked when...", guideBack: "A task you take on" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You both arrive back at the house late after separate community meetings.",
+          steps: [
+            { front: "Non-Sexual Affection — initiate physical closeness as soon as you meet in the hall.", back: "(Take their hand, pull them gently close, and kiss their cheek)", guideFront: "Reach out with touch when...", guideBack: "A touch or a warm word" },
+            { front: "Out-Loud Appreciation — thank them for handling their part of the busy evening.", back: "\"Thank you for managing the school run earlier so I could make my meeting. You're a great teammate.\"", guideFront: "Say thanks and why when...", guideBack: "Specific thanks, with the reason" },
+            { front: "Sharing the Mental Load — take care of the final evening routine unasked.", back: "\"I'll make sure the doors are locked and the kitchen is tidied up. You head up to bed.\"", guideFront: "Take on a task unasked when...", guideBack: "A task you take on" },
+          ]
+        },
       ]
     },
     {
@@ -8428,6 +8736,64 @@ const multiStepCollections = {
             { front: "The Weekly Check-in — check the connection scale.", back: "\"On a scale of 1 to 5, how connected have you felt to me? I want to know what I can do to move that closer to a 5.\"", guideFront: "Run the check-in when...", guideBack: "A check-in question" },
             { front: "Sharing the Mental Load — identify a burden to carry.", back: "\"What's one thing weighing on you for this coming week that I can handle for you?\"", guideFront: "Take on a task unasked when...", guideBack: "A task you take on" },
             { front: "Non-Sexual Affection — seal the talk with connection.", back: "(Reach over, hold their hand, and maintain eye contact) \"Thank you for being honest with me. I'm on your team.\"", guideFront: "Reach out with touch when...", guideBack: "A touch or a warm word" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You sit down together on the couch for your weekly relationship check-in.",
+          steps: [
+            { front: "The Weekly Check-in — open with general life highlights and lowlights.", back: "\"I love you. Let's do our check-in. How has your week felt overall?\"", guideFront: "Run the check-in when...", guideBack: "A check-in question" },
+            { front: "The Weekly Check-in — evaluate relational closeness on a scale.", back: "\"On a scale of 1 to 5, how connected have you felt to me this week? What would help raise that number?\"", guideFront: "Run the check-in when...", guideBack: "A check-in question" },
+            { front: "Sharing the Mental Load — ask for a specific burden you can take off their plate.", back: "\"What's one task or worry coming up next week that I can handle completely for you?\"", guideFront: "Take on a task unasked when...", guideBack: "A task you take on" },
+            { front: "Non-Sexual Affection — seal the check-in with physical intimacy.", back: "(Hold both their hands, look into their eyes, and give them a warm squeeze) \"Thank you for being open with me.\"", guideFront: "Reach out with touch when...", guideBack: "A touch or a warm word" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You notice subtle emotional distance and invite your partner into a check-in space.",
+          steps: [
+            { front: "The Weekly Check-in — start with warm reassurance and ask about connection.", back: "\"I value us so much. Do you have a moment to check in on how we're feeling together?\"", guideFront: "Run the check-in when...", guideBack: "A check-in question" },
+            { front: "The Weekly Check-in — ask about unmet emotional needs directly.", back: "\"Do you feel like your emotional needs were prioritized this week, or is there an area where you felt neglected?\"", guideFront: "Run the check-in when...", guideBack: "A check-in question" },
+            { front: "Sharing the Mental Load — offer to take over a domestic chore causing stress.", back: "\"I hear that household organization was overwhelming. Let me take over meal planning for the month.\"", guideFront: "Take on a task unasked when...", guideBack: "A task you take on" },
+            { front: "Non-Sexual Affection — close the conversation with loving touch.", back: "(Wrap your arms around them in a gentle hug and hold them close) \"We're in this together.\"", guideFront: "Reach out with touch when...", guideBack: "A touch or a warm word" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Proactive Burden Carrying",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Use Sharing the Mental Load to identify an unasked chore, Non-Sexual Affection to offer comfort, Out-Loud Appreciation to express value, and The Weekly Check-in to align on future needs.\n\n• Taking initiative on invisible labor demonstrates true partnership.\n• Combining practical help with emotional touch transforms routine tasks into bonding moments.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "It's Saturday morning and the house is full of unhandled domestic tasks.",
+          steps: [
+            { front: "Sharing the Mental Load — take complete ownership of an unasked chore.", back: "(Clean the entire kitchen and wash the breakfast dishes without being prompted)", guideFront: "Take on a task unasked when...", guideBack: "A task you take on" },
+            { front: "Non-Sexual Affection — offer physical warmth while they rest.", back: "(Bring them a cup of tea, sit down next to them, and rub their neck) \"Take it easy for a bit.\"", guideFront: "Reach out with touch when...", guideBack: "A touch or a warm word" },
+            { front: "Out-Loud Appreciation — voice specific gratitude for their efforts during the week.", back: "\"I was thinking about how hard you worked on the yard yesterday. It looks fantastic.\"", guideFront: "Say thanks and why when...", guideBack: "Specific thanks, with the reason" },
+            { front: "The Weekly Check-in — ask how to support them in the week ahead.", back: "\"What's one thing coming up on the calendar next week where you need my support?\"", guideFront: "Run the check-in when...", guideBack: "A check-in question" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Meal planning and grocery shopping are causing stress for your partner.",
+          steps: [
+            { front: "Sharing the Mental Load — execute the entire meal plan and grocery run.", back: "\"I've made the meal plan for the week, ordered the groceries, and I'll pick them up after work.\"", guideFront: "Take on a task unasked when...", guideBack: "A task you take on" },
+            { front: "Non-Sexual Affection — offer a spontaneous hug when returning.", back: "(Put the groceries down, give them a warm hug, and kiss their cheek) \"Glad I could handle that for us.\"", guideFront: "Reach out with touch when...", guideBack: "A touch or a warm word" },
+            { front: "Out-Loud Appreciation — state what you love about how they care for the home.", back: "\"Thank you for always keeping our home so cozy. I really notice the effort you put in.\"", guideFront: "Say thanks and why when...", guideBack: "Specific thanks, with the reason" },
+            { front: "The Weekly Check-in — check in on their emotional energy levels.", back: "\"How are your energy levels feeling for the rest of the week? How can I help you decompress?\"", guideFront: "Run the check-in when...", guideBack: "A check-in question" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Extended family logistics are creating mental fatigue for your partner.",
+          steps: [
+            { front: "Sharing the Mental Load — handle all communication and scheduling unasked.", back: "\"I texted my family about the weekend timing and arranged the carpool so you don't have to.\"", guideFront: "Take on a task unasked when...", guideBack: "A task you take on" },
+            { front: "Non-Sexual Affection — connect with affectionate touch after resolving the issue.", back: "(Hold their hand gently and squeeze it while sitting together) \"That's all sorted out now.\"", guideFront: "Reach out with touch when...", guideBack: "A touch or a warm word" },
+            { front: "Out-Loud Appreciation — compliment their patience with family dynamics.", back: "\"I really appreciate how gracious you always are with my family. It means the world to me.\"", guideFront: "Say thanks and why when...", guideBack: "Specific thanks, with the reason" },
+            { front: "The Weekly Check-in — ensure they feel prioritized during family visits.", back: "\"Do you feel like we're on the same team for this weekend's visit? What boundaries do we need?\"", guideFront: "Run the check-in when...", guideBack: "A check-in question" },
           ]
         },
       ]
@@ -8449,6 +8815,24 @@ const multiStepCollections = {
             { front: "Indifference to Manipulation — they follow you, still complaining.", back: "(Say nothing, go to your designated space, and close the door).", guideFront: "Give the bait almost nothing when...", guideBack: "A short, flat line, or silence" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "You tell your partner you are spending Saturday morning with friends, and they accuse you of abandoning them.",
+          steps: [
+            { front: "The Bare Minimum Standard — hold your limit without apologizing for having a life.", back: "\"I am allowed to spend time with my friends. Having personal hobbies is healthy for our relationship.\"", guideFront: "Hold the line on respect when...", guideBack: "A limit, and what you'll do" },
+            { front: "Indifference to Manipulation — respond neutrally when they play the martyr.", back: "\"I hear that you're disappointed, but my plans for Saturday are set.\"", guideFront: "Give the bait almost nothing when...", guideBack: "A short, flat line, or silence" },
+            { front: "Indifference to Manipulation — remain flat when they try to start a prolonged argument.", back: "\"Okay.\"", guideFront: "Give the bait almost nothing when...", guideBack: "A short, flat line, or silence" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A toxic co-parent claims your household rules are \"ruining the kids' happiness\" and causing them pain.",
+          steps: [
+            { front: "The Bare Minimum Standard — reassert your parental authority cleanly.", back: "\"My household standards are designed for the kids' well-being, and they are not up for debate.\"", guideFront: "Hold the line on respect when...", guideBack: "A limit, and what you'll do" },
+            { front: "Indifference to Manipulation — give zero emotional fuel to their dramatic accusations.", back: "\"That's your perspective.\"", guideFront: "Give the bait almost nothing when...", guideBack: "A short, flat line, or silence" },
+            { front: "Indifference to Manipulation — end the interaction flatly when they continue to attack.", back: "(Keep eye contact calmly, then turn back to your task in silence)", guideFront: "Give the bait almost nothing when...", guideBack: "A short, flat line, or silence" },
+          ]
+        },
       ]
     },
     {
@@ -8464,6 +8848,59 @@ const multiStepCollections = {
             { front: "Healing the Shame Trigger — name the internal reaction.", back: "\"I’m hearing 'you’re a bad spouse,' and it’s triggering a lot of shame in me right now.\"", guideFront: "Admit the shame out loud when...", guideBack: "The shame, named out loud" },
             { front: "Healing the Shame Trigger — separate the identity from the behavior.", back: "\"I know you didn't say that, but I’m struggling not to get defensive. Can we pause for 60 seconds?\"", guideFront: "Admit the shame out loud when...", guideBack: "The shame, named out loud" },
             { front: "Authenticity Over Pleasing — state your actual need for reassurance.", back: "\"What I need to know right now is that you still see me as a good partner, even though I messed up the timing.\".", guideFront: "Say what you really want when...", guideBack: "An honest need or no" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your partner points out that you forgot to pick up the dry cleaning, triggering an intense feeling of failure.",
+          steps: [
+            { front: "Healing the Shame Trigger — acknowledge the internal shame trigger out loud.", back: "\"I'm feeling a flash of shame right now, and the story I'm telling myself is that I'm a complete screw-up.\"", guideFront: "Admit the shame out loud when...", guideBack: "The shame, named out loud" },
+            { front: "Healing the Shame Trigger — separate your self-worth from the mistake.", back: "\"I know you're just pointing out an errand, but I'm struggling not to get defensive. Let me take a breath.\"", guideFront: "Admit the shame out loud when...", guideBack: "The shame, named out loud" },
+            { front: "Authenticity Over Pleasing — state your genuine need for a reset and future action.", back: "\"I dropped the ball on the errand, and I'm sorry. I need a moment to regulate, and I'll pick it up tomorrow.\"", guideFront: "Say what you really want when...", guideBack: "An honest need or no" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your partner shares that they felt unappreciated during the week, triggering your fear of being a bad partner.",
+          steps: [
+            { front: "Healing the Shame Trigger — name the vulnerability of feeling inadequate.", back: "\"Hearing that makes me feel like a failure, and I want to shut down to protect myself.\"", guideFront: "Admit the shame out loud when...", guideBack: "The shame, named out loud" },
+            { front: "Healing the Shame Trigger — pause the defensive impulse consciously.", back: "\"I know you're sharing a hurt, not calling me bad. I'm sitting with this discomfort so I can hear you.\"", guideFront: "Admit the shame out loud when...", guideBack: "The shame, named out loud" },
+            { front: "Authenticity Over Pleasing — ask for reassurance while committing to growth.", back: "\"I care about your heart. I need us to stay on the same team while I work on showing more appreciation.\"", guideFront: "Say what you really want when...", guideBack: "An honest need or no" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Enforcing a Safety Boundary",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Enforce a firm limit when disrespect occurs, state your authentic need clearly, and respond with indifference if they try to manipulate or bait you.\n\n• Setting a boundary establishes safety immediately.\n• Refusing to engage in a rigged argument starves the manipulator of control.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "An argument about extended family visits escalates into yelling and finger-pointing.",
+          steps: [
+            { front: "The Bare Minimum Standard — enforce a firm boundary against yelling.", back: "\"I will not participate in a conversation with raised voices. Respect is level zero for me.\"", guideFront: "Hold the line on respect when...", guideBack: "A limit, and what you'll do" },
+            { front: "Authenticity Over Pleasing — state your authentic need for a regulated discussion.", back: "\"I need us to take a 30-minute break so we can talk like adults who care about each other.\"", guideFront: "Say what you really want when...", guideBack: "An honest need or no" },
+            { front: "Indifference to Manipulation — give a flat response if they accuse you of running away.", back: "\"I am taking my 30 minutes. I'll see you at 8:00.\"", guideFront: "Give the bait almost nothing when...", guideBack: "A short, flat line, or silence" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your partner makes a sarcastic, condescending remark about your intelligence during a decision.",
+          steps: [
+            { front: "The Bare Minimum Standard — call out the contempt immediately.", back: "\"Contempt and sarcasm are unacceptable in our marriage. I won't stay in this talk.\"", guideFront: "Hold the line on respect when...", guideBack: "A limit, and what you'll do" },
+            { front: "Authenticity Over Pleasing — express your boundary authentically.", back: "\"I need a relationship where my perspective is treated with dignity, even when we disagree.\"", guideFront: "Say what you really want when...", guideBack: "An honest need or no" },
+            { front: "Indifference to Manipulation — refuse to take the bait if they mock your boundary.", back: "\"Okay.\"", guideFront: "Give the bait almost nothing when...", guideBack: "A short, flat line, or silence" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your partner insists on continuing a heated argument past midnight when you are exhausted.",
+          steps: [
+            { front: "The Bare Minimum Standard — set a firm limit on late-night fighting.", back: "\"I am not having high-stakes discussions when we're exhausted. I am going to sleep.\"", guideFront: "Hold the line on respect when...", guideBack: "A limit, and what you'll do" },
+            { front: "Authenticity Over Pleasing — propose a clear, healthy alternative time.", back: "\"I want to hear you, but I need us to discuss this tomorrow morning over coffee when we are rested.\"", guideFront: "Say what you really want when...", guideBack: "An honest need or no" },
+            { front: "Indifference to Manipulation — maintain your boundary flatly if they accuse you of avoiding them.", back: "\"Goodnight. We will talk in the morning.\"", guideFront: "Give the bait almost nothing when...", guideBack: "A short, flat line, or silence" },
           ]
         },
       ]
