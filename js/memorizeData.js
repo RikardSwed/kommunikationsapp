@@ -6092,6 +6092,134 @@ const memorizeCollections = {
         { q: "What is the \"90% Rule\" of behavior?", a: "Most \"crazy\" behavior comes from the child not feeling loved, heard, or led.", bundle: 'pro' },
         { q: "What does it mean to \"Venerate\" a child?", a: "To treat them as a person with inherent dignity (an icon), not as a problem to be fixed.", bundle: 'pro' },
         { q: "How should you handle a child's protest (pushback)?", a: "Expect it as a normal part of the learning process rather than a threat to your authority.", bundle: 'pro' },
+        { q: "How does teaching the joy of repentance differ from imposing shame?", a: "Repentance offers a clear, forgiving path back to relationship, whereas shame isolates the child.", bundle: 'pro' },
+        { q: "What does Philip Mamalakis mean by productive struggle in character formation?", a: "Allowing children to experience normal frustrations so they develop internal resilience and problem-solving skills.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "Parenting toward the kingdom by prioritizing long-term character formation over short-term behavioral control through heart-centered connection:\n\n1. **Connection Before Correction**\n2. **Naming the Feeling**\n3. **Taking the Side of Feelings**\n4. **Venerating the Child**\n\nDiscipline becomes an opportunity to guide the child through life's normal struggles toward internalized virtue.",
+      cards: [
+        { q: "What is the ultimate goal of discipline in Parenting Toward the Kingdom?", a: "To shape long-term character and virtue, not merely enforce short-term compliance.", bundle: 'free' },
+        { q: "What are the four core heart strategies in this pack?", a: "Connection Before Correction, Naming the Feeling, Taking the Side of Feelings, and Venerating the Child.", bundle: 'free' },
+        { q: "Why does Mamalakis view a child's resistance as a \"struggle\" rather than an attack?", a: "Because resistance is the natural process of a child learning to choose good despite frustration.", bundle: 'free' },
+        { q: "How do the four heart strategies work together during a conflict?", a: "They build emotional safety and trust so the child can absorb the parent's boundary without resentment.", bundle: 'free' },
+        { q: "What is the difference between reacting and responding to a child?", a: "Reacting matches the child's emotional intensity, while responding pauses to address their internal struggle.", bundle: 'free' },
+        { q: "Why must feelings be separated from behaviors in parenting?", a: "All emotions are legitimate and need to be heard, while not all actions are acceptable.", bundle: 'pro' },
+        { q: "What happens when a parent enforces limits without emotional care?", a: "Discipline becomes cold and authoritarian, driving the child away from connection.", bundle: 'pro' },
+        { q: "How does prioritizing heart connection transform daily parenting?", a: "It turns moments of conflict into opportunities for long-term moral and emotional growth.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Connection Before Correction",
+      description: "",
+      cards: [
+        { q: "What is the primary purpose of Connection Before Correction?", a: "To establish relational warmth and safety before giving instructions or addressing behavior.", bundle: 'free' },
+        { q: "Why do children struggle to obey when a parent jumps straight to correction?", a: "Because a child needs to feel that the parent is \"with them\" before they can open up to guidance.", bundle: 'free' },
+        { q: "How can a parent connect before correcting during a high-stress transition?", a: "By making physical eye contact, touching a shoulder, or asking a warm question before stating the direction.", bundle: 'free' },
+        { q: "What is a re-entry moment in parenting?", a: "Rejoining the child after time apart, such as after school or work, where connection must come before demands.", bundle: 'free' },
+        { q: "Why is pausing to take a breath essential before correcting a child?", a: "It allows the parent to regulate their own stress so they can offer calm presence rather than annoyance.", bundle: 'free' },
+        { q: "What does barking orders across a room communicate to a child?", a: "That the parent values the task being completed over the relationship with the child.", bundle: 'pro' },
+        { q: "How does Connection Before Correction prevent unnecessary power struggles?", a: "It disarms the child's defensive reflex by showing that the parent is an ally, not an opponent.", bundle: 'pro' },
+        { q: "What should a parent do if a child ignores an initial request?", a: "Walk over, establish gentle physical proximity, and connect relationally before repeating the instruction.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Naming the Feeling",
+      description: "",
+      cards: [
+        { q: "How does Naming the Feeling help an overwhelmed child?", a: "It provides words for their chaotic internal state, helping them feel seen and emotionally understood.", bundle: 'free' },
+        { q: "Why should a parent guess a feeling with curiosity rather than diagnosing it?", a: "Saying \"You seem frustrated\" communicates respect and invites the child to share, whereas \"You are mad\" feels judging.", bundle: 'free' },
+        { q: "What is the main objective of asking about a child's emotions?", a: "To express genuine care and respect for their heart, not merely to gather factual information.", bundle: 'free' },
+        { q: "How does naming emotions assist in long-term emotional development?", a: "It teaches children self-awareness so they can eventually identify and regulate their own feelings.", bundle: 'free' },
+        { q: "What should a parent do when a child denies the feeling you named?", a: "Accept their correction calmly, as the goal was showing care rather than being right.", bundle: 'free' },
+        { q: "Why is \"You seem sad\" more effective than telling a child to calm down?", a: "Telling them to calm down invalidates their heart, while naming the emotion calms their nervous system.", bundle: 'pro' },
+        { q: "What underlying need is expressed when a child acts out with \"mean words\"?", a: "An overwhelming internal emotion that they lack the verbal maturity to express constructively.", bundle: 'pro' },
+        { q: "How does Naming the Feeling preserve the boundary being set?", a: "It acknowledges the emotional pain of the limit without surrendering or weakening the limit itself.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Taking the Side of Feelings",
+      description: "",
+      cards: [
+        { q: "What does it mean to take the side of a child's feelings?", a: "Standing with the child emotionally in their disappointment while keeping the external limit firm.", bundle: 'free' },
+        { q: "How does sharing a wish help a child accept a hard \"No\"?", a: "Saying \"I wish we could stay too\" shows empathy for their desire without changing reality.", bundle: 'free' },
+        { q: "Why does validation prevent a parent from becoming the child's enemy?", a: "It demonstrates that the difficulty comes from reality or the rule, not from parental hostility.", bundle: 'free' },
+        { q: "What is the difference between standing on the child's side emotionally vs against the rule?", a: "Emotional support validates their sorrow, whereas joining against the rule destroys consistent boundaries.", bundle: 'free' },
+        { q: "Why do children fight harder when parents argue against their desires?", a: "Because the child feels compelled to defend their wish, escalating the conflict into a debate.", bundle: 'free' },
+        { q: "How can a parent respond when a child claims an outcome is \"not fair\"?", a: "Validate how unfair it feels to miss out, while calmly maintaining the necessary boundary.", bundle: 'pro' },
+        { q: "Why is empathy crucial precisely at the moment a consequence is delivered?", a: "It proves that the parent still loves and supports the child even when enforcing a limit.", bundle: 'pro' },
+        { q: "What does a child learn when their disappointment is validated consistently?", a: "That sadness and frustration can be endured safely without resorting to destructive behavior.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Venerating the Child",
+      description: "",
+      cards: [
+        { q: "What does it mean to venerate a child according to Philip Mamalakis?", a: "To treat the child as a unique person created in God's image with inherent dignity, not as a problem to manage.", bundle: 'free' },
+        { q: "How does physical posture convey veneration to a young child?", a: "Kneeling down to their eye level reduces perceived threat and communicates focused respect.", bundle: 'free' },
+        { q: "Why is active, patient listening described as an act of love?", a: "It requires setting aside parental convenience to give full, undivided attention to the child's personhood.", bundle: 'free' },
+        { q: "What is the danger of viewing children primarily as obstacles or interruptions?", a: "It leads to reactive, controlling discipline that erodes long-term trust and mutual respect.", bundle: 'free' },
+        { q: "How should a parent respond when a child expresses an illogical fear?", a: "Listen attentively to their experience without dismissing or ridiculing their feelings.", bundle: 'free' },
+        { q: "Why should parents refrain from interrupting a child who is struggling for words?", a: "Patiently waiting honors their effort and communicates that their voice matters.", bundle: 'pro' },
+        { q: "How does treating a child with dignity influence their self-concept?", a: "It teaches them that their worth is grounded in who they are rather than how conveniently they behave.", bundle: 'pro' },
+        { q: "What should a parent do when realizing they have treated a child like a task item?", a: "Pause, apologize for rushing, and offer full relational presence.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Emotional First Aid** — the child is overwhelmed by raw emotion: do you name their internal state or share their wish?\n• **First Response in Frustration** — the child is struggling with limits: do you connect first, name the feeling, or offer patient dignity?\n• **All Four Heart Strategies** — all moments mixed together without warning about which heart response fits\n\nOne question decides nearly all of it: what does the child's heart need right now?",
+      cards: [
+        { q: "When should a parent choose Emotional First Aid over direct instruction?", a: "When the child is caught in a storm of emotion and needs emotional oxygen before they can process logic.", bundle: 'pro' },
+        { q: "What distinguishes First Response in Frustration from standard limit enforcement?", a: "It evaluates whether the child needs connection, emotion naming, or patient dignity before restating the boundary.", bundle: 'pro' },
+        { q: "How does All Four Heart Strategies train a parent's discernment in daily life?", a: "It requires reading the child's immediate internal state and selecting the exact heart response needed.", bundle: 'pro' },
+        { q: "Why does Naming the Feeling feature in both Emotional First Aid and First Response in Frustration?", a: "Because putting words to emotion both calms emotional overload and de-escalates active resistance.", bundle: 'pro' },
+        { q: "How does a parent decide whether to offer Connection Before Correction or Taking the Side of Feelings?", a: "Connection Before Correction is used before giving a limit; Taking the Side of Feelings is used after a limit is set.", bundle: 'pro' },
+        { q: "Why is selecting the wrong heart strategy during conflict counterproductive?", a: "Offering logic when a child needs emotional validation causes them to feel unheard and escalate further.", bundle: 'pro' },
+        { q: "What core question unifies all three collections in this pack?", a: "\"What does my child's heart need right now to feel safe and guided?\"", bundle: 'pro' },
+        { q: "When a child is shut down and silent, why does the book prioritize Venerating the Child over Naming the Feeling?", a: "Because a shut-down child needs patient, non-intrusive presence and dignity before they can process verbal questions about their emotions.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **From Resistance to Connection** — Connection Before Correction → Naming the Feeling → Taking the Side of Feelings\n2. **Listening Through the Storm** — Venerating the Child → Naming the Feeling → Taking the Side of Feelings\n3. **The Connection Bridge** — Connection Before Correction → Venerating the Child → Naming the Feeling\n\nIn each sequence the order of relational steps builds trust and de-escalates conflict.",
+      cards: [
+        { q: "Why does From Resistance to Connection begin with Connection Before Correction?", a: "Because attempting to address defiance without first establishing relational warmth causes further pushback.", bundle: 'pro' },
+        { q: "What role does Naming the Feeling play as the second step in From Resistance to Connection?", a: "It acknowledges the internal emotion driving the defiance before any wish or boundary is discussed.", bundle: 'pro' },
+        { q: "Why does Listening Through the Storm open with Venerating the Child?", a: "Lowering body posture and offering quiet presence calms intense hostility before words can be heard.", bundle: 'pro' },
+        { q: "How does The Connection Bridge guide a withdrawn or defensive child back to trust?", a: "By moving from physical proximity to respectful listening, and finally to gentle emotion labeling.", bundle: 'pro' },
+        { q: "Why must Taking the Side of Feelings precede restating a boundary in a multi-step sequence?", a: "Validating the child's wish first proves that the parent understands their heart before the boundary is held.", bundle: 'pro' },
+        { q: "What makes the order of steps in a sequence essential for de-escalation?", a: "Each step prepares the child's nervous system and heart to receive the next step without defensiveness.", bundle: 'pro' },
+        { q: "What goes wrong when a parent skips the middle steps of a connection sequence?", a: "Moving directly from initial contact to holding the limit feels abrupt and ignores the child's emotional struggle.", bundle: 'pro' },
+        { q: "How do multi-step sequences transform bedtime or screen time conflicts?", a: "They replace immediate power struggles with a predictable, empathetic path toward peaceful compliance.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories to master in this pack:\n\n• **The Big Meltdown** — high emotional intensity where presence matters most\n• **Public Pushback** — defiance in stores or public places needing calm anchors\n• **Verbal Hostility** — harsh words like \"I hate you\" requiring feelings to be separated from behavior\n• **Sibling Outbursts** — conflict between children requiring dignity and limit holding\n• **Transition Resistance** — difficulty ending fun activities or switching routines\n\nEach category represents a key relational hurdle in raising children.",
+      cards: [
+        { q: "What makes The Big Meltdown uniquely difficult for parents to navigate?", a: "High emotional volume triggers the parent's own stress response, tempting them to react with anger.", bundle: 'pro' },
+        { q: "How does Public Pushback challenge a parent's commitment to heart connection?", a: "Embarrassment in front of strangers tempts parents to choose quick public control over emotional care.", bundle: 'pro' },
+        { q: "What drives a child to use severe words in Verbal Hostility?", a: "Intense internal frustration that overwhelms their coping skills, leading them to strike out verbally.", bundle: 'pro' },
+        { q: "Why is Sibling Outbursts an important category for practicing Venerating the Child?", a: "Conflict between children requires the parent to protect both children's dignity without taking cold sides.", bundle: 'pro' },
+        { q: "What makes Transition Resistance a recurring problem in daily family routines?", a: "Children naturally struggle with ending enjoyable activities and accepting parental boundaries.", bundle: 'pro' },
+        { q: "Why is calm parental presence the key response across all five challenge categories?", a: "A parent cannot help a child regulate their emotional storm if the parent loses self-control.", bundle: 'pro' },
+        { q: "What should a parent avoid when a child shouts \"I hate you!\" during a conflict?", a: "Arguing about the disrespect in the heat of the moment; address the emotion now and the language later.", bundle: 'pro' },
+        { q: "How does holding firm limits during public tantrums build long-term security?", a: "It proves to the child that the parent's boundaries are reliable and not dictated by public pressure.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Parent with the End in Mind** — short-term compliance vs long-term virtue\n• **Emotions** — feeling an emotion vs acting upon it\n• **Limits** — firm boundaries delivered with warmth rather than coldness\n• **Dignity** — viewing a child as a person rather than a problem to manage\n\nIn every one, the limiting belief treats the child's struggle as an attack rather than an opportunity to teach.",
+      cards: [
+        { q: "What limiting belief is challenged in Parent with the End in Mind?", a: "The belief that a child's resistance is a personal attack rather than a long-term learning opportunity.", bundle: 'pro' },
+        { q: "How does the Emotions mindset redefine a child's crying or anger?", a: "It views feelings as internal information to be heard rather than bad behavior to be suppressed.", bundle: 'pro' },
+        { q: "What cost is highlighted in the Limits mindset when boundaries are enforced coldly?", a: "Cold limits create external compliance out of fear while destroying internal trust and character growth.", bundle: 'pro' },
+        { q: "How does the Dignity mindset shift a parent's perception of daily interruptions?", a: "It reframes the child from a nuisance disrupting tasks into a person entrusted to the parent's care.", bundle: 'pro' },
+        { q: "Why is expecting pushback essential for maintaining parental calm?", a: "Expecting resistance prevents parents from feeling surprised or threatened when children struggle with limits.", bundle: 'pro' },
+        { q: "What is the danger of prioritizing immediate peace over long-term character formation?", a: "Parents settle for short-term fixes like giving in or threatening rather than teaching internalized virtue.", bundle: 'pro' },
+        { q: "How does resetting one's mindset transform a parent's emotional reactivity?", a: "It changes the inner narrative from \"How do I make them stop?\" to \"How can I guide them right now?\".", bundle: 'pro' },
+        { q: "Why must parents extend grace and repentance to themselves when they fail?", a: "Parenting toward the kingdom is a shared journey where parental humility models repentance for the child.", bundle: 'pro' },
       ]
     },
   ],
@@ -6106,6 +6234,134 @@ const memorizeCollections = {
         { q: "What is \"Empathetic Firmness\"?", a: "Caring about how the child feels while refusing to budge on the necessary limit.", bundle: 'pro' },
         { q: "When should you \"Follow up physically\"?", a: "When words aren't working—move to calm action, like taking a toy away or leading the child by the hand.", bundle: 'pro' },
         { q: "Why offer \"Options within the limit\"?", a: "To give the child a sense of autonomy and reduce the likelihood of a power struggle.", bundle: 'pro' },
+        { q: "How does firm limit-setting express genuine parental love according to Mamalakis?", a: "It protects children from their own unregulated impulses and provides the structural safety they need to grow.", bundle: 'pro' },
+        { q: "What is the long-term character outcome of learning to obey reasonable limits?", a: "The development of internalized self-discipline and the capacity to choose virtue over immediate desire.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "The architecture of limits in Parenting Toward the Kingdom: establishing clear, firm boundaries with high expectations and low emotional reactivity through four core strategies:\n\n1. **Describe What You See**\n2. **The One-Word Cue**\n3. **Pathway to Yes**\n4. **Options Within the Limit**\n\nLimits provide the structural safety children need to develop internalized virtue and self-discipline.",
+      cards: [
+        { q: "What is the primary purpose of setting limits in Parenting Toward the Kingdom?", a: "To provide structural safety and guide long-term character formation, not merely to enforce immediate compliance.", bundle: 'free' },
+        { q: "What are the four core strategies for setting limits in this pack?", a: "Describe What You See, The One-Word Cue, Pathway to Yes, and Options Within the Limit.", bundle: 'free' },
+        { q: "What does Philip Mamalakis mean by \"High Expectations + Calm Presence\"?", a: "Holding firm behavioral standards while remaining emotionally regulated when a child struggles to meet them.", bundle: 'free' },
+        { q: "Why are firm limits described as an expression of love?", a: "Because limits protect children from their own unregulated desires and create a safe environment for growth.", bundle: 'free' },
+        { q: "How does a parent avoid turning a limit into a power struggle?", a: "By separating the objective reality of the limit from emotional reactivity or personal attacks.", bundle: 'free' },
+        { q: "What is the difference between an authoritarian rule and a healthy boundary?", a: "Authoritarian rules demand submissive compliance; healthy boundaries guide self-discipline with warmth.", bundle: 'pro' },
+        { q: "Why must limits be kept firm even when a child expresses intense anger?", a: "Because giving in teaches children that emotional outbursts can manipulate reality and dismantle boundaries.", bundle: 'pro' },
+        { q: "How do clear structural tools prepare a child for adulthood?", a: "They teach the child to navigate real-world boundaries, responsibilities, and natural consequences.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Describe What You See",
+      description: "",
+      cards: [
+        { q: "How does Describe What You See reduce defensiveness in a child?", a: "It states objective facts without adding judgment, accusation, or personal criticism.", bundle: 'free' },
+        { q: "What is the key tone to maintain when describing an objective situation?", a: "A neutral, matter-of-fact tone that acts as a mirror for reality rather than a judge.", bundle: 'free' },
+        { q: "Why is \"There is a coat on the rug\" better than \"You left your coat on the rug again\"?", a: "The first presents a problem to solve; the second attacks the child's character and invites an argument.", bundle: 'free' },
+        { q: "How does objective description encourage independent problem-solving?", a: "It prompts the child to notice the environmental cue and decide on the corrective action themselves.", bundle: 'free' },
+        { q: "What should a parent avoid adding after describing what they see?", a: "Avoid adding scolding, lectures, or emotional sighs that undo the objective nature of the statement.", bundle: 'free' },
+        { q: "Why does accusing a child during a mess lead to power struggles?", a: "Because the child shifts their energy into defending their ego rather than cleaning up the mess.", bundle: 'pro' },
+        { q: "How does Describe What You See build situational awareness in children?", a: "It trains them to observe their surroundings and recognize when something needs attention.", bundle: 'pro' },
+        { q: "In what moments is Describe What You See most effective?", a: "During daily routines when objects, chores, or physical boundaries have been overlooked.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The One-Word Cue",
+      description: "",
+      cards: [
+        { q: "What is the main purpose of using a single-word cue?", a: "To prompt a known rule or routine concisely without resorting to nagging or over-talking.", bundle: 'free' },
+        { q: "Why do children tune out parents who give long explanations for daily rules?", a: "Because excessive words turn instructions into background noise, causing emotional fatigue.", bundle: 'free' },
+        { q: "What assumption about the child underlies The One-Word Cue?", a: "It assumes the child already knows the rule and simply needs a brief reminder to act.", bundle: 'free' },
+        { q: "How does a one-word cue preserve relational dignity during routines?", a: "It avoids talking down to the child or treating them as if they are ignorant of the expectations.", bundle: 'free' },
+        { q: "What types of tasks are best suited for a one-word cue?", a: "Frequent, daily routines such as putting on shoes, clearing plates, or brushing teeth.", bundle: 'free' },
+        { q: "Why is a calm, neutral voice essential when delivering a one-word cue?", a: "A sharp or snapping tone turns a helpful reminder into an aggressive command, sparking resistance.", bundle: 'pro' },
+        { q: "What should a parent do if a one-word cue does not produce immediate movement?", a: "Pause patiently, avoid adding a lecture, and follow up with calm physical presence if needed.", bundle: 'pro' },
+        { q: "How does minimizing words help a parent maintain emotional self-regulation?", a: "Speaking less prevents the parent from working themselves up into frustration while waiting.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Pathway to Yes",
+      description: "",
+      cards: [
+        { q: "How does Pathway to Yes reframe a refusal for a child?", a: "It turns an absolute \"No\" into a conditional \"Not yet,\" showing the exact step needed to reach \"Yes.\"", bundle: 'free' },
+        { q: "What structural lesson does Pathway to Yes teach children about life?", a: "It teaches that privileges follow responsibilities rather than preceding them.", bundle: 'free' },
+        { q: "What is the standard structure of a Pathway to Yes phrase?", a: "\"Yes, as soon as [responsibility] is completed, then [privilege] opens up.\"", bundle: 'free' },
+        { q: "Why does showing the path to \"Yes\" prevent limits from feeling like arbitrary power plays?", a: "It proves that the parent is not an obstacle to fun, but a guide helping them earn their goal.", bundle: 'free' },
+        { q: "How does Pathway to Yes encourage internal motivation in a child?", a: "It puts the timeline in the child's hands: the faster they complete the task, the sooner they enjoy the activity.", bundle: 'free' },
+        { q: "What should a parent do if a child demands the privilege before finishing the condition?", a: "Hold the condition calmly without arguing: the privilege remains unavailable until the task is done.", bundle: 'pro' },
+        { q: "How does this strategy support long-term character development?", a: "It builds delayed gratification, teaching children to handle work before seeking entertainment.", bundle: 'pro' },
+        { q: "Why is consistency vital when offering a pathway to yes?", a: "If the privilege is granted early without the step being completed, the teaching power of the boundary collapses.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Options Within the Limit",
+      description: "",
+      cards: [
+        { q: "How do options within a limit satisfy a child's need for autonomy?", a: "They give the child control over \"how\" or \"which way\" a task is done while keeping the outcome non-negotiable.", bundle: 'free' },
+        { q: "What defines an acceptable choice when using Options Within the Limit?", a: "Both options offered must be completely acceptable to the parent and lead to the required boundary.", bundle: 'free' },
+        { q: "Why must both choices offered lead to the same required outcome?", a: "Because the overall goal is non-negotiable; only the method or detail is open for the child to pick.", bundle: 'free' },
+        { q: "How does offering choices prevent unnecessary power struggles during routines?", a: "It channels the child's natural urge for control into a constructive decision rather than defiance.", bundle: 'free' },
+        { q: "What should a parent do if a child rejects both offered options?", a: "Calmly state: \"Since you can't choose right now, I will choose for you,\" and execute the limit.", bundle: 'free' },
+        { q: "How does giving limited choices adapt as a child grows older?", a: "As children mature, the scope of choices expands within larger boundaries, broadening their responsibility.", bundle: 'pro' },
+        { q: "Why is offering options particularly effective for strong-willed children?", a: "Strong-willed children resist feeling forced; choices give them dignity while keeping the boundary intact.", bundle: 'pro' },
+        { q: "How do options within limits maintain parental authority while sharing control?", a: "The parent defines the safe container (the limit), while the child exercises freedom inside that container.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Tools for Structure** — Describe What You See, The One-Word Cue, or Options Within the Limit\n• **First Response to Resistance** — evaluating whether the child needs facts, a cue, a route, or options\n• **All Four Limit Strategies** — all four strategies mixed without warning about which moment you are in\n\nOne question decides nearly all of it: what does the situation require right now?",
+      cards: [
+        { q: "What distinguishes Tools for Structure from First Response to Resistance?", a: "Tools for Structure provides routine household cues; First Response to Resistance handles active pushback.", bundle: 'pro' },
+        { q: "When should a parent choose The One-Word Cue over Describe What You See?", a: "Use a one-word cue when the rule is well known; use objective description when a physical mess needs pointing out.", bundle: 'pro' },
+        { q: "How does a parent decide between Pathway to Yes and Options Within the Limit?", a: "Pathway to Yes applies when a privilege is requested; Options Within the Limit applies when a task must be done now.", bundle: 'pro' },
+        { q: "Why is assessing the child's immediate state crucial when selecting a limit strategy?", a: "Matching the right tool to the child's struggle prevents unnecessary escalation and power struggles.", bundle: 'pro' },
+        { q: "What is the danger of relying exclusively on one limit strategy for every situation?", a: "A single tool used repeatedly loses effectiveness and fails to address different types of resistance.", bundle: 'pro' },
+        { q: "How do the four limit strategies work together to build home architecture?", a: "They establish clear expectations, minimize nagging, and provide structured paths to cooperation.", bundle: 'pro' },
+        { q: "What core question helps a parent choose the right structural tool during a routine?", a: "\"Does my child need an objective observation, a brief reminder, a condition, or a choice?\"", bundle: 'pro' },
+        { q: "How does matching the strategy to the struggle preserve relational warmth?", a: "It addresses the specific point of friction cleanly without resorting to frustration or shouting.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Gentle Hammer** — Naming the Struggle → Describe What You See → Options Within the Limit → Re-stating the Limit\n2. **Clear Path to Cooperation** — Describe What You See → Pathway to Yes → Options Within the Limit\n3. **The Structure Bridge** — Describe What You See → The One-Word Cue → Options Within the Limit\n\nIn each sequence the order of relational steps builds clarity and guides cooperation.",
+      cards: [
+        { q: "How does Describe What You See function as the starting step in a limit sequence?", a: "It establishes objective reality first, removing emotional debate before directions or choices are given.", bundle: 'pro' },
+        { q: "Why does Clear Path to Cooperation place Pathway to Yes before Options Within the Limit?", a: "Showing the clear condition first clarifies the boundary, while choices afterwards make taking action easier.", bundle: 'pro' },
+        { q: "What makes The Structure Bridge effective for bedtime and morning transitions?", a: "Moving from objective facts to a concise cue and then to small choices keeps routine momentum steady.", bundle: 'pro' },
+        { q: "Why must the non-negotiable limit remain firm even when options are offered at the end of a sequence?", a: "Offering choices is about execution; if the boundary itself bends, the sequence loses authority.", bundle: 'pro' },
+        { q: "What goes wrong when a parent skips the objective description step and jumps straight to demands?", a: "The child feels personally attacked or rushed, triggering immediate defensiveness before the rule is processed.", bundle: 'pro' },
+        { q: "How does following a structured sequence keep a parent emotionally calm during pushback?", a: "It provides a clear roadmap so the parent focuses on the next step rather than reacting to the child's drama.", bundle: 'pro' },
+        { q: "Why is physical follow-through sometimes necessary at the end of a sequence?", a: "When verbal steps and options are ignored, calm physical action enforces the boundary without shouting.", bundle: 'pro' },
+        { q: "How do multi-step limit sequences build long-term predictability for children?", a: "Children learn that boundaries are consistent, fair, and steadily maintained regardless of resistance.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories to master in this pack:\n\n• **The Flat Refusal** — flat defiance or ignoring where calm presence matters most\n• **Morning Rush Resistance** — time-sensitive departure struggles requiring swift structure\n• **Screen Time Showdowns** — digital transitions requiring clear conditions and non-negotiable limits\n• **Chores and Clean-Up Defiance** — resistance to household work transformed into choices\n• **Bedtime Stalling** — late-night delay tactics requiring quiet, minimal cues\n\nEach category represents a key structural hurdle in family life.",
+      cards: [
+        { q: "What drives a child's behavior during a Flat Refusal?", a: "A desire to test parental authority or an overflow of emotional frustration with a boundary.", bundle: 'pro' },
+        { q: "Why do morning and bedtime routines frequently trigger resistance to limits?", a: "Time pressure and fatigue lower a child's self-regulation, making transitions harder to manage.", bundle: 'pro' },
+        { q: "How can a parent remain a calm anchor when facing Screen Time Showdowns?", a: "Focus on objective timer cues and clear pathways to yes rather than arguing over game details.", bundle: 'pro' },
+        { q: "What makes Chores and Clean-Up Defiance a prime opportunity for teaching responsibility?", a: "It provides a direct environment for learning that privileges are earned after work is completed.", bundle: 'pro' },
+        { q: "Why should a parent avoid matching a child's emotional intensity during a challenge?", a: "Matching their intensity escalates the conflict into a shouting match where true authority is lost.", bundle: 'pro' },
+        { q: "How does holding limits consistently across challenge categories build security?", a: "It demonstrates to the child that parental boundaries are stable, dependable, and safe.", bundle: 'pro' },
+        { q: "What role does physical follow-through play when verbal cues fail in public or at home?", a: "Moving to calm action—such as leading by the hand or putting a toy away—enforces the limit peacefully.", bundle: 'pro' },
+        { q: "How do structural tools turn daily challenge moments into character-building lessons?", a: "They require the child to practice self-control and decision-making within clear, loving boundaries.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Expectations vs. Reactivity** — high standards paired with low emotional reactivity\n• **Lectures** — believing long speeches are necessary for compliance\n• **Negotiation** — fearing that conditional agreements surrender authority\n• **Control** — believing that giving choices within limits weakens power\n\nIn every one, the limiting belief treats resistance as a threat to authority rather than an opportunity to teach.",
+      cards: [
+        { q: "What core principle defines the Expectations vs. Reactivity mindset?", a: "Holding high behavioral expectations while maintaining complete emotional calm when children struggle.", bundle: 'pro' },
+        { q: "How does the Lectures mindset hinder effective communication of limits?", a: "It assumes children need constant speeches, whereas concise cues communicate respect and gain cooperation.", bundle: 'pro' },
+        { q: "What fear underlies the Negotiation mindset, and how is it corrected?", a: "The fear that offering a path to 'Yes' surrenders control; reframing shows that work precedes privilege.", bundle: 'pro' },
+        { q: "How does the Control mindset misinterpret offering choices within limits?", a: "It views giving choices as weakness, whereas offering choices builds autonomy within a safe boundary.", bundle: 'pro' },
+        { q: "Why is expecting pushback essential for staying emotionally calm as a parent?", a: "Expecting resistance prevents parents from taking defiance personally or panicking when limits are tested.", bundle: 'pro' },
+        { q: "What is the difference between healthy parental authority and authoritarian control?", a: "Healthy authority guides character through firm limits with warmth; authoritarian control demands blind obedience.", bundle: 'pro' },
+        { q: "How does resetting one's mindset prevent a parent from engaging in power struggles?", a: "It shifts the parent's role from fighting for dominance to calmly maintaining objective reality.", bundle: 'pro' },
+        { q: "Why is parental self-regulation the foundation for enforcing effective limits?", a: "Children regulate their behavior by mirroring the calm, regulated presence of the parent.", bundle: 'pro' },
       ]
     },
   ],
@@ -6120,6 +6376,134 @@ const memorizeCollections = {
         { q: "What does it mean to \"Parent with the end in mind\"?", a: "Focusing on the adult you want them to become rather than just today's obedience.", bundle: 'pro' },
         { q: "Why use \"Inquiry\" instead of \"Directions\"?", a: "Inquiry forces the child to think and take ownership of the solution.", bundle: 'pro' },
         { q: "When is a failure \"safe\"?", a: "When the consequences are logical and informative rather than dangerous or shaming.", bundle: 'pro' },
+        { q: "What is the role of \"scaffolding\" in developing a child's independence?", a: "Providing the minimum support necessary for the child to accomplish the next step of a task.", bundle: 'pro' },
+        { q: "How does teaching the joy of obedience connect with mastering the struggle?", a: "Obedience trains the child to choose the good and complete responsibility even when they don't feel like it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "Mastering the struggle in Parenting Toward the Kingdom: guiding children through normal life friction to build internal competence, executive function, and resilience through four core strategies:\n\n1. **Naming the Struggle**\n2. **Staying Close**\n3. **The Brainstorm Inquiry**\n4. **Identify Consequences**\n\nFrustration becomes the natural classroom where character and virtue are developed.",
+      cards: [
+        { q: "What is the core philosophy behind Mastering the Struggle?", a: "Viewing frustration and friction as necessary opportunities for building competence and character.", bundle: 'free' },
+        { q: "What are the four core struggle strategies in this pack?", a: "Naming the Struggle, Staying Close, The Brainstorm Inquiry, and Identify Consequences.", bundle: 'free' },
+        { q: "What is \"Productive Struggle\" according to Philip Mamalakis?", a: "The process of a child working through difficulty without the parent taking over or rescuing them.", bundle: 'free' },
+        { q: "Why is immediately rescuing a child from frustration harmful in the long run?", a: "It teaches the child that they are incapable and trains them to rely on external rescue.", bundle: 'free' },
+        { q: "How does a parent act as a \"Calm Anchor\" during a child's frustration?", a: "By remaining regulated, warm, and present while letting the child do the cognitive work.", bundle: 'free' },
+        { q: "What is the ultimate goal of guiding a child through daily hurdles?", a: "Building internalized self-discipline, problem-solving skills, and executive function.", bundle: 'pro' },
+        { q: "How do high expectations and calm presence work together in this pack?", a: "The parent maintains high standards for responsibility while offering warm, non-reactive presence.", bundle: 'pro' },
+        { q: "What does Mamalakis mean by \"joining the struggle vs stealing the struggle\"?", a: "Standing near with support rather than taking over the task and removing the learning.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Naming the Struggle",
+      description: "",
+      cards: [
+        { q: "What is the main purpose of Naming the Struggle?", a: "To validate the child's effort and reality without taking over the task.", bundle: 'free' },
+        { q: "How does naming a child's effort differ from praising a result?", a: "It focuses on the character and hard work put in rather than whether the outcome was successful.", bundle: 'free' },
+        { q: "Why should a parent describe the difficulty rather than saying \"It's easy\"?", a: "Saying \"It's easy\" invalidates their experience, while acknowledging difficulty shows empathy.", bundle: 'free' },
+        { q: "What are the two underlying categories of Naming the Struggle?", a: "Naming the Effort (focusing on work) and Naming the Emotion (focusing on frustration).", bundle: 'free' },
+        { q: "How does Naming the Struggle keep responsibility on the child?", a: "It shows the parent sees the hard work while leaving the actual task in the child's hands.", bundle: 'free' },
+        { q: "When should a parent name a struggle after a good decision?", a: "When the child resisted an impulse or did the right thing despite intense difficulty.", bundle: 'pro' },
+        { q: "Why is saying \"You're working really hard\" effective during a hurdle?", a: "It highlights their agency and perseverance rather than fixed intelligence.", bundle: 'pro' },
+        { q: "How does Naming the Struggle help a child handle disappointment?", a: "It puts words to the gap between what they wanted to achieve and reality.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Staying Close",
+      description: "",
+      cards: [
+        { q: "What does Staying Close provide for a struggling child?", a: "A safety net of emotional connection and physical presence without taking over the task.", bundle: 'free' },
+        { q: "Why is quiet physical presence effective when a child wants to quit?", a: "It calms their nervous system and signals that they do not have to face friction alone.", bundle: 'free' },
+        { q: "What are the two underlying categories of Staying Close?", a: "Quiet Presence (silent support) and Minimal Assistance (smallest help needed to proceed).", bundle: 'free' },
+        { q: "How does Staying Close prevent a child from feeling abandoned?", a: "It proves that the parent remains close even when the child is experiencing unpleasant emotions.", bundle: 'free' },
+        { q: "What is minimal assistance in scaffolding a child's learning?", a: "Giving only the smallest hint or physical hold required for the child to do the rest.", bundle: 'free' },
+        { q: "How does Staying Close support emotional regulation during a time-out reset?", a: "It sits with the child until their body calms rather than sending them away in exiling isolation.", bundle: 'pro' },
+        { q: "What should a parent do if a child resists physical proximity while upset?", a: "Offer quiet presence nearby or right outside the door so safety remains available.", bundle: 'pro' },
+        { q: "Why does staying close require parental self-regulation?", a: "Because sitting with a child's frustration requires tolerating discomfort without rushing to fix it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Brainstorm Inquiry",
+      description: "",
+      cards: [
+        { q: "What is the main objective of The Brainstorm Inquiry?", a: "To transfer problem-solving and executive function thinking from the parent to the child.", bundle: 'free' },
+        { q: "Why is asking \"What could you try next?\" better than giving directions?", a: "It forces the child's brain to do the heavy lifting of generating solutions.", bundle: 'free' },
+        { q: "What are the two underlying categories of The Brainstorm Inquiry?", a: "Open Inquiry (for older kids) and Narrowed Inquiry (offering choices for younger kids).", bundle: 'free' },
+        { q: "How should a parent respond when a child offers a \"bad\" suggestion?", a: "Pause silently, identify consequences, and ask what they think will happen if tried.", bundle: 'free' },
+        { q: "What is the benefit of asking questions during sibling toy disputes?", a: "It trains the children in negotiation and peer problem-solving rather than relying on a referee.", bundle: 'free' },
+        { q: "When is the best time to conduct a brainstorm inquiry with a child?", a: "When the child is emotionally regulated, or after initial empathy has calmed the storm.", bundle: 'pro' },
+        { q: "How does brainstorming prepare a child for real-world independence?", a: "It builds confidence that they can analyze problems and create working solutions on their own.", bundle: 'pro' },
+        { q: "What should a parent do if a young child cannot generate any ideas?", a: "Offer two simple, acceptable suggestions and let the child choose between them.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Identify Consequences",
+      description: "",
+      cards: [
+        { q: "How does Identify Consequences shift a child's perspective on rules?", a: "It moves focus from parental arbitrary authority to the logical rules of reality.", bundle: 'free' },
+        { q: "What is the difference between physical consequences and social consequences?", a: "Physical consequences involve objects and safety; social consequences involve others' feelings.", bundle: 'free' },
+        { q: "Why is asking \"What happens if you do that?\" better than shouting a warning?", a: "It prompts the child to foresee outcomes and develop an internal cause-and-effect compass.", bundle: 'free' },
+        { q: "How does experiencing natural consequences teach character?", a: "Reality delivers an unarguable lesson without creating resentment against the parent.", bundle: 'free' },
+        { q: "When should a parent allow a safe failure to occur?", a: "When the outcome is informative and non-dangerous, allowing natural learning to take place.", bundle: 'free' },
+        { q: "Why must emotional anger be removed when discussing consequences?", a: "Parental anger turns a natural reality lesson into a personal power struggle.", bundle: 'pro' },
+        { q: "How does identifying consequences prevent impulsive behavior?", a: "It trains the child to pause and consider future results before acting.", bundle: 'pro' },
+        { q: "What is the role of empathy when a natural consequence lands?", a: "The parent offers warmth and comfort for the sadness while letting the reality stand.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **The Productive Struggle** — Naming the Struggle, Staying Close, or The Brainstorm Inquiry\n• **Guiding the Problem-Solving** — The Brainstorm Inquiry, Identify Consequences, or Naming the Struggle\n• **All Four Struggle Strategies** — all four strategies mixed without warning about which moment you are in\n\nOne question decides nearly all of it: what kind of support does the child's heart need right now?",
+      cards: [
+        { q: "How does a parent decide whether to use Naming the Struggle or The Brainstorm Inquiry?", a: "Use Naming the Struggle when emotional frustration is high; use Brainstorm Inquiry when calm enough to think.", bundle: 'pro' },
+        { q: "What distinguishes Guiding the Problem-Solving from The Productive Struggle?", a: "Productive Struggle supports ongoing physical/mental effort; Guiding Problem-Solving addresses choices and hurdles.", bundle: 'pro' },
+        { q: "Why does All Four Struggle Strategies mix all tools without warning?", a: "Because real-life parenting moments require selecting the exact support needed on the fly.", bundle: 'pro' },
+        { q: "What happens if a parent skips Naming the Struggle and jumps straight to Brainstorm Inquiry?", a: "An overwhelmed child feels rushed and defensive because their emotional state was ignored.", bundle: 'pro' },
+        { q: "How does a parent know a child is ready for Identify Consequences during a hurdle?", a: "When the child suggests an impulsive fix and needs help foreseeing the result.", bundle: 'pro' },
+        { q: "Why is Staying Close included in collections for physical and emotional hurdles?", a: "Because presence provides the grounding safety necessary before problem-solving can occur.", bundle: 'pro' },
+        { q: "What core question guides the parent across all three collections in this pack?", a: "\"What level of support does my child need right now to stay in the struggle and learn?\"", bundle: 'pro' },
+        { q: "When is offering minimal assistance appropriate within a collection choice?", a: "When the child has attempted the task repeatedly and needs a tiny push to achieve success.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **From \"I Can't\" to \"I Did\"** — Naming the Struggle → Staying Close → The Brainstorm Inquiry → Identify Consequences\n2. **Building Independence** — Naming the Struggle → The Brainstorm Inquiry → Identify Consequences\n3. **Calm Presence in Friction** — Staying Close → Naming the Struggle → The Brainstorm Inquiry\n\nIn each sequence the order of relational steps builds confidence and de-escalates overwhelm.",
+      cards: [
+        { q: "Why does From \"I Can't\" to \"I Did\" begin with Naming the Struggle?", a: "Validating the emotional frustration lowers nervous system arousal before problem-solving begins.", bundle: 'pro' },
+        { q: "What role does Staying Close play as the second step in a struggle sequence?", a: "It provides comforting presence so the child feels supported while pausing to think.", bundle: 'pro' },
+        { q: "Why must The Brainstorm Inquiry precede Identify Consequences in Building Independence?", a: "The child must first generate an idea before they can evaluate its consequences.", bundle: 'pro' },
+        { q: "How does Calm Presence in Friction help a child experiencing acute panic or fear?", a: "Moving from presence to naming difficulty and then to light inquiry gently restores agency.", bundle: 'pro' },
+        { q: "What goes wrong when a parent starts a sequence with Identify Consequences?", a: "It sounds like a threat or warning, triggering defensiveness instead of reflection.", bundle: 'pro' },
+        { q: "Why is the exact order of steps in a sequence critical for de-escalation?", a: "Each step prepares the child emotionally and cognitively for the demands of the next step.", bundle: 'pro' },
+        { q: "How do multi-step struggle sequences build long-term executive function?", a: "They model a repeatable internal process: calm down, state the problem, generate ideas, pick one.", bundle: 'pro' },
+        { q: "What should a parent do if a child gets stuck at step three of a sequence?", a: "Return briefly to step one or two (presence or empathy) before re-offering the inquiry.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories to master in this pack:\n\n• **The \"I Can't!\" Meltdown** — emotional shutdown requiring calm anchor presence\n• **Impulsive Solutions** — reckless or short-sighted fixes requiring consequence inquiry\n• **Giving Up Early** — quitting at first friction requiring presence and effort recognition\n• **Sibling Problem Solving** — disputes between children requiring guided brainstorming\n• **Peer and Social Friction** — playground and friendship hurdles requiring empathy and reflection\n\nEach category represents a key competence hurdle in raising resilient children.",
+      cards: [
+        { q: "What makes The \"I Can't!\" Meltdown uniquely challenging for parents?", a: "The child's emotional volume tempts the parent to react with anger or take over the task.", bundle: 'pro' },
+        { q: "How does Impulsive Solutions turn reckless ideas into learning moments?", a: "By asking questions that guide the child to foresee logical outcomes before acting.", bundle: 'pro' },
+        { q: "What drives a child's behavior in Giving Up Early?", a: "Fear of failure or low tolerance for the normal discomfort of learning a new skill.", bundle: 'pro' },
+        { q: "Why is Sibling Problem Solving an important category for practicing Brainstorm Inquiry?", a: "It prevents the parent from acting as an authoritarian judge and teaches peer conflict resolution.", bundle: 'pro' },
+        { q: "How does Peer and Social Friction help children navigate playground hurdles?", a: "It uses empathy and reflective questions to build social resilience and emotional awareness.", bundle: 'pro' },
+        { q: "Why must a parent remain a calm anchor across all five challenge categories?", a: "Children cannot regulate their friction if the parent matches their emotional chaos.", bundle: 'pro' },
+        { q: "What should a parent avoid when a child screams \"I hate this!\" during a hurdle?", a: "Arguing about the statement; address the emotional struggle now and the task steps next.", bundle: 'pro' },
+        { q: "How does holding the boundary while supporting the struggle build long-term grit?", a: "It proves to the child that discomfort can be endured and overcome safely.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Growth through Friction** — seeing struggle as learning rather than a problem\n• **Rescuing** — joining the struggle vs stealing the struggle\n• **Control** — building an internal compass vs external remote control\n• **Consequences** — reality as the teacher vs parental anger\n\nIn every one, the limiting belief treats friction as a failure rather than the classroom of character.",
+      cards: [
+        { q: "What limiting belief is challenged in Growth through Friction?", a: "The belief that a child's frustration is a sign of bad parenting or failure rather than growth.", bundle: 'pro' },
+        { q: "How does the Rescuing mindset shift a parent's urge to fix everything?", a: "It reframes taking over as control, and standing close with support as true love.", bundle: 'pro' },
+        { q: "What distinction is made in the Control mindset regarding authority?", a: "True authority builds the child's internal compass rather than relying on external remote control.", bundle: 'pro' },
+        { q: "How does the Consequences mindset reframe reality's lessons?", a: "It views reality as the teacher and the parent as an empathetic ally rather than a punishing judge.", bundle: 'pro' },
+        { q: "Why is expecting friction essential for maintaining parental calm?", a: "Expecting struggle prevents parents from feeling surprised or threatened when tasks get hard.", bundle: 'pro' },
+        { q: "What is the long-term cost of short-term parental convenience?", a: "Doing tasks for children saves minutes today but robs them of lifelong competence tomorrow.", bundle: 'pro' },
+        { q: "How does resetting one's mindset prevent power struggles during challenges?", a: "It shifts the parent's role from forcing compliance to guiding character development.", bundle: 'pro' },
+        { q: "Why is parental self-regulation the foundation for mastering the struggle?", a: "Children learn to endure friction by co-regulating with the calm, steady presence of the parent.", bundle: 'pro' },
       ]
     },
   ],
@@ -6134,6 +6518,134 @@ const memorizeCollections = {
         { q: "What is \"Heartful Silence\"?", a: "Choosing to stop arguing and instead use calm action or brief cues to hold a limit.", bundle: 'pro' },
         { q: "Why is \"High Expectations + Calm\" the target?", a: "It provides the child with both the clear standard they need and the safe container they require to meet it.", bundle: 'pro' },
         { q: "What does it mean to \"Abandon the Struggle\"?", a: "Either giving in to the child to end the noise, or leaving them to handle overwhelming emotions alone.", bundle: 'pro' },
+        { q: "How does parental self-regulation reflect kingdom parenting principles?", a: "It demonstrates that authority is rooted in love, peace, and self-control rather than worldly dominance.", bundle: 'pro' },
+        { q: "What long-term virtue is formed in a child who experiences consistent parental calm during meltdowns?", a: "Internalized emotional resilience and the ability to remain peaceful under pressure.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "Calm in the storm in Parenting Toward the Kingdom: maintaining emotional self-regulation and quiet authority during child meltdowns through four core strategies:\n\n1. **Respond vs. React**\n2. **Expect Pushback**\n3. **Meet the Frustration, Not the Words**\n4. **The Heartful Silence**\n\nBy remaining a steady anchor, parents provide the emotional safety children need to learn self-control.",
+      cards: [
+        { q: "What is the core objective of Calm in the Storm according to Philip Mamalakis?", a: "To maintain parental emotional self-regulation and serve as a steady anchor during conflict.", bundle: 'free' },
+        { q: "What are the four core strategies for maintaining calm in this pack?", a: "Respond vs. React, Expect Pushback, Meet the Frustration Not the Words, and The Heartful Silence.", bundle: 'free' },
+        { q: "What happens when a parent reacts with the same emotional intensity as a child?", a: "The parent loses authority, escalates the conflict, and leaves the child without a calm anchor.", bundle: 'free' },
+        { q: "Why is a child's meltdown described as a \"storm\" rather than an attack?", a: "Because it represents an internal overflow of frustration that requires a safe container to pass.", bundle: 'free' },
+        { q: "What is the ultimate goal of staying calm during a child's resistance?", a: "Modeling emotional self-control so the child can eventually internalize virtue and peace.", bundle: 'free' },
+        { q: "How do high expectations and calm presence function together in this pack?", a: "The parent maintains firm standards for behavior while providing a regulated, non-reactive presence.", bundle: 'pro' },
+        { q: "What is the difference between emotional acceptance and behavioral surrender?", a: "Emotional acceptance validates all feelings; behavioral surrender gives up on necessary limits.", bundle: 'pro' },
+        { q: "How does parental self-regulation support the child's nervous system?", a: "Children co-regulate with the parent's steady presence, learning that big emotions can be safely endured.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Respond vs. React",
+      description: "",
+      cards: [
+        { q: "What is the fundamental difference between responding and reacting?", a: "Reacting is an automatic emotional outburst; responding is an intentional, chosen action.", bundle: 'free' },
+        { q: "Why is taking a pause before answering critical during a conflict?", a: "It allows the parent's nervous system to settle so they can address the child's heart rather than their noise.", bundle: 'free' },
+        { q: "What are the two underlying categories of Respond vs. React?", a: "The Pause (taking a physical or mental moment) and The Purposeful Action (choosing long-term goals).", bundle: 'free' },
+        { q: "How does lowering one's voice pitch de-escalate a heated argument?", a: "It signals calm authority and invites the child's nervous system to match the lower volume.", bundle: 'free' },
+        { q: "What should a parent do when they realize they are about to lose their temper?", a: "State calmly that they are stepping away for a moment to settle down before continuing.", bundle: 'free' },
+        { q: "Why does matching a child's screaming destroy parental authority?", a: "It communicates that the parent has lost self-control, reducing them to the child's emotional level.", bundle: 'pro' },
+        { q: "What is the \"Respond vs. React\" mindset?", a: "\"My behavior is determined by my values, not by my child's mood.\"", bundle: 'pro' },
+        { q: "How does stepping away briefly during friction model character for a child?", a: "It demonstrates that adults handle overwhelming anger through self-regulation rather than outbursts.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Expect Pushback",
+      description: "",
+      cards: [
+        { q: "What does Expect Pushback mean in kingdom parenting?", a: "Accepting that children will naturally protest limits as they learn to navigate disappointment.", bundle: 'free' },
+        { q: "Why does expecting resistance prevent parents from getting angry?", a: "It stops the parent from taking the child's protest as a personal attack or a threat to authority.", bundle: 'free' },
+        { q: "What are the two underlying categories of Expect Pushback?", a: "Prophylactic Expectation (knowing protest is coming) and Non-Negotiable Calm (holding the line).", bundle: 'free' },
+        { q: "What should a parent do when a child obeys a boundary while complaining loudly?", a: "Hold the boundary calmly and ignore the complaining, recognizing that compliance is occurring.", bundle: 'free' },
+        { q: "How does a parent hold the line without adding unnecessary punishments?", a: "By restating the limit with warmth without taking the child's emotional reaction personally.", bundle: 'free' },
+        { q: "Why is \"It's okay to be mad about the rule\" an effective response?", a: "It allows the child freedom to feel disappointed while keeping the boundary completely firm.", bundle: 'pro' },
+        { q: "What is the risk of expecting instant, cheerful compliance at all times?", a: "Parents feel personally disrespected by normal emotional protest and react with harsh penalties.", bundle: 'pro' },
+        { q: "How does Expect Pushback protect the relationship between parent and child?", a: "It allows the parent to remain a loving ally even while enforcing non-negotiable boundaries.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Meet the Frustration, Not the Words",
+      description: "",
+      cards: [
+        { q: "What does Meet the Frustration, Not the Words instruct a parent to do?", a: "Ignore hurtful or dramatic statements during a meltdown and validate the emotional struggle underneath.", bundle: 'free' },
+        { q: "Why do children use harsh phrases like \"I hate you!\" during a conflict?", a: "Because they are overwhelmed by emotional pain and lack the verbal skill to express it constructively.", bundle: 'free' },
+        { q: "What are the two underlying categories of this strategy?", a: "The Verbal Shield (letting bad words pass) and The Heart Search (identifying the feeling behind the attack).", bundle: 'free' },
+        { q: "Why is correcting a child's disrespectful language mid-meltdown ineffective?", a: "During an emotional storm, the child's brain cannot process lectures; address feelings now and words later.", bundle: 'free' },
+        { q: "How can a parent respond when a child shouts \"You're the worst parent ever!\"?", a: "Say: \"You are feeling really, really angry with me right now.\"", bundle: 'free' },
+        { q: "When should disrespectful language be addressed if not during the meltdown?", a: "Later, when both parent and child are completely calm and receptive to teaching.", bundle: 'pro' },
+        { q: "How does meeting the feeling underneath de-escalate a child's emotional storm?", a: "It proves to the child that their heart is understood, reducing their need to scream louder.", bundle: 'pro' },
+        { q: "What is the mindset behind Meet the Frustration, Not the Words?", a: "\"Their words are symptoms of their struggle, not a report on my parenting.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Heartful Silence",
+      description: "",
+      cards: [
+        { q: "What is the core action of The Heartful Silence?", a: "Ending verbal negotiations and moving to peaceful physical follow-through or quiet presence.", bundle: 'free' },
+        { q: "Why does over-explaining a boundary during a conflict fail?", a: "Excessive words turn the parent into background noise and invite the child into an endless debate.", bundle: 'free' },
+        { q: "What are the two underlying categories of The Heartful Silence?", a: "The Verbal Exit (signaling the end of discussion) and Physical Follow-up (peaceful action).", bundle: 'free' },
+        { q: "How does a parent execute peaceful physical follow-through?", a: "By calmly leading the child by the hand, taking away a device, or guiding them without shouting.", bundle: 'free' },
+        { q: "What phrase can a parent use to signal the end of a debate?", a: "\"I've answered that question. The talking time is over.\"", bundle: 'free' },
+        { q: "Why is physical follow-through distinct from aggressive physical handling?", a: "It is executed with complete emotional calm, gentleness, and respect for the child's dignity.", bundle: 'pro' },
+        { q: "What is the mindset behind The Heartful Silence?", a: "\"When the talking stops, the leadership begins.\"", bundle: 'pro' },
+        { q: "How does quiet physical presence help a child who is wildly overwhelmed?", a: "Sitting close in silence provides a safe, non-judgmental container until the emotional storm passes.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Holding the Frame** — Respond vs. React or Expect Pushback: maintaining internal and external authority during friction\n• **De-escalating the Storm** — Respond vs. React, Meet the Frustration, Not the Words, or The Heartful Silence: choosing how to handle emotional volume\n• **All Four Calm Strategies** — all four strategies mixed without warning about which moment you are in\n\nOne question decides nearly all of it: what does the situation require right now?",
+      cards: [
+        { q: "What distinguishes Holding the Frame from De-escalating the Storm?", a: "Holding the Frame focuses on maintaining boundaries against protest; De-escalating the Storm handles emotional spikes.", bundle: 'pro' },
+        { q: "When should a parent choose Respond vs. React over Meet the Frustration, Not the Words?", a: "Use Respond vs. React when your own anger is rising; use Meet the Frustration when the child is hurling insults.", bundle: 'pro' },
+        { q: "How does a parent decide when to transition to The Heartful Silence?", a: "Transition to silence when verbal validation has been given and the child continues looping in debate.", bundle: 'pro' },
+        { q: "Why is reading the child's immediate state essential before selecting a calm strategy?", a: "Matching the right tool to the child's emotional condition prevents unnecessary power struggles.", bundle: 'pro' },
+        { q: "What core question guides the parent across all three collections in this pack?", a: "\"Do I need to regulate my own heart, validate their feeling, hold the limit, or take quiet action?\"", bundle: 'pro' },
+        { q: "Why does All Four Calm Strategies test a parent's real-time discernment?", a: "It requires instant recognition of whether the moment calls for self-control, empathy, limit-holding, or silence.", bundle: 'pro' },
+        { q: "What goes wrong when a parent uses endless verbal empathy without ever using The Heartful Silence?", a: "The child stays stuck in an ungrounded emotional loop because no clear physical boundary was established.", bundle: 'pro' },
+        { q: "How do these three collections build a parent's long-term emotional stability?", a: "They provide repeatable frameworks so the parent remains a calm anchor regardless of the child's storm.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Weathering the Storm** — Respond vs. React → Meet the Frustration, Not the Words → Expect Pushback → The Heartful Silence\n2. **The Quiet Anchor** — Respond vs. React → Expect Pushback → The Heartful Silence\n3. **Listening Through Insults** — Respond vs. React → Meet the Frustration, Not the Words → Expect Pushback\n\nIn each sequence the order of relational steps maintains self-regulation and de-escalates conflict.",
+      cards: [
+        { q: "Why does Weathering the Storm always begin with Respond vs. React?", a: "A parent must regulate their own internal state before attempting to validate or guide an upset child.", bundle: 'pro' },
+        { q: "What role does Meet the Frustration, Not the Words play as the second step in Weathering the Storm?", a: "It provides emotional safety by acknowledging the child's pain before restating the boundary.", bundle: 'pro' },
+        { q: "Why does The Quiet Anchor move directly from Expect Pushback to The Heartful Silence?", a: "When a boundary is clear and the child protests without harsh insults, quiet physical action enforces the limit cleanly.", bundle: 'pro' },
+        { q: "What makes Listening Through Insults uniquely effective for verbal attacks?", a: "Moving from self-calming to feeling validation and then to limit holding diffuses hostility without arguing.", bundle: 'pro' },
+        { q: "What goes wrong when a parent skips Respond vs. React and jumps straight to physical action?", a: "The physical action feels aggressive and angry rather than calm and supportive.", bundle: 'pro' },
+        { q: "Why is the sequence order critical for de-escalating high-intensity meltdowns?", a: "Each step settles a layer of emotional arousal, preparing the child for the next level of guidance.", bundle: 'pro' },
+        { q: "How do multi-step calm sequences protect parental dignity during public scenes?", a: "They give the parent a clear, structured plan to follow instead of reacting out of embarrassment.", bundle: 'pro' },
+        { q: "What should a parent do if a child remains dysregulated after step four of Weathering the Storm?", a: "Maintain calm physical presence and wait patiently for the child's nervous system to settle.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories to master in this pack:\n\n• **Verbal Attacks** — harsh insults and mean words requiring feelings to be met\n• **Public Meltdowns** — emotional explosions in public places requiring calm anchor presence\n• **Endless Negotiations** — looping arguments requiring firm, quiet boundaries\n• **Sibling Explosions** — heated disputes between children requiring de-escalation\n• **Bedtime and Routine Refusals** — stubborn transition resistance requiring physical structure\n\nEach category represents a key emotional hurdle in family life.",
+      cards: [
+        { q: "What makes Verbal Attacks particularly challenging for parents to navigate?", a: "Personal insults trigger parental defensiveness and tempt the parent to fight back at a child's level.", bundle: 'pro' },
+        { q: "How can a parent maintain calm during Public Meltdowns?", a: "Focus entirely on the child's struggle and ignore the fear of public judgment from onlookers.", bundle: 'pro' },
+        { q: "What drives a child to engage in Endless Negotiations?", a: "A desire to find weakness in the boundary or stall the transition to responsibility.", bundle: 'pro' },
+        { q: "Why is Sibling Explosions a vital category for practicing Respond vs. React?", a: "Heated sibling chaos easily tempts parents to join the shouting match instead of bringing calm.", bundle: 'pro' },
+        { q: "How does Bedtime and Routine Refusals benefit from The Heartful Silence?", a: "Transition fatigue makes late-night lectures useless; quiet, physical leadership moves the routine forward.", bundle: 'pro' },
+        { q: "Why is parental self-regulation the common thread across all five challenge categories?", a: "A parent cannot bring peace to a child's emotional storm if the parent loses internal control.", bundle: 'pro' },
+        { q: "What should a parent avoid when a child screams \"You ruin everything!\" in a public store?", a: "Arguing about the statement; handle the emotional distress calmly and execute the exit if needed.", bundle: 'pro' },
+        { q: "How does holding boundaries calmly during acute challenges build long-term security?", a: "It proves to the child that parental love and limits are stable, safe, and unshakeable.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Authority is Calm** — quiet self-control vs emotional shouting\n• **Reactivity** — pausing to respond vs exploding in anger\n• **Pushback** — expecting protest as normal vs taking it as an attack\n• **Over-talking** — peaceful physical action vs endless lecturing\n\nIn every one, the limiting belief treats the child's meltdown as a threat to authority rather than an opportunity to model calm.",
+      cards: [
+        { q: "What core truth is established in the Authority is Calm mindset?", a: "True authority is demonstrated through quiet self-control, not emotional shouting or force.", bundle: 'pro' },
+        { q: "How does the Reactivity mindset reframe parental anger during conflict?", a: "It identifies emotional outbursts as a loss of control, while a deliberate pause restores leadership.", bundle: 'pro' },
+        { q: "What shift occurs when a parent adopts the Pushback mindset?", a: "Emotional protest is recognized as a normal part of accepting limits, rather than a personal revolt.", bundle: 'pro' },
+        { q: "Why is the Over-talking mindset critical for ending circular arguments?", a: "It reframes endless lecturing as noise and recognizes peaceful action as effective guidance.", bundle: 'pro' },
+        { q: "How does expecting emotional storms prevent parental burnout?", a: "Expecting friction eliminates surprise, allowing parents to stay calm when meltdowns occur.", bundle: 'pro' },
+        { q: "What is the long-term character cost of ruling a home through emotional shouting?", a: "Children learn to obey out of fear or mirror the shouting, failing to develop internal self-discipline.", bundle: 'pro' },
+        { q: "How does resetting one's mindset transform a parent's presence in the home?", a: "It changes the parent from an emotional reactor into a peaceful, reliable anchor for the family.", bundle: 'pro' },
+        { q: "Why must parents offer grace to themselves when they fail to stay calm?", a: "Self-regulation is an ongoing practice; apologizing when you lose your temper models repentance.", bundle: 'pro' },
       ]
     },
   ],
@@ -6148,6 +6660,134 @@ const memorizeCollections = {
         { q: "What is the difference between \"Guilt\" and \"Repentance\"?", a: "Guilt is about who you are (shame); Repentance is about what you did and turning to make it right.", bundle: 'pro' },
         { q: "What does it mean to \"Parent with the End in Mind\"?", a: "Focusing on the adult you want them to become (someone who can repent) rather than today's obedience.", bundle: 'pro' },
         { q: "How does \"Connection Before Correction\" apply to repentance?", a: "A child must feel loved and secure (connection) before they can have the courage to admit a mistake (repentance).", bundle: 'pro' },
+        { q: "How does teaching repentance embody the Christian gospel in family life?", a: "It models God's unconditional love and forgiveness, demonstrating that grace is always available to restore relationship.", bundle: 'pro' },
+        { q: "What is the long-term relational outcome of practicing consistent repair at home?", a: "Deep emotional trust, resilience against conflict, and a lifelong capacity for healthy reconciliation.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "The path of repentance in Parenting Toward the Kingdom: transforming conflict into relational repair and long-term character formation through four core strategies:\n\n1. **The Joy of Repentance**\n2. **Modeling the Apology**\n3. **The Time-Out Reset**\n4. **The Tangible Follow-up**\n\nMistakes become the classroom where forgiveness, humility, and reconciliation are learned and lived.",
+      cards: [
+        { q: "What is the core goal of The Path of Repentance according to Philip Mamalakis?", a: "To teach children the joy of returning to the good after a mistake, rather than trapping them in shame.", bundle: 'free' },
+        { q: "What are the four core repair strategies in this pack?", a: "The Joy of Repentance, Modeling the Apology, The Time-Out Reset, and The Tangible Follow-up.", bundle: 'free' },
+        { q: "What is the distinction between shame and repentance in kingdom parenting?", a: "Shame focuses on guilt over who you are; repentance focuses on turning back from what you did.", bundle: 'free' },
+        { q: "Why is parental apology considered one of the most powerful teaching tools?", a: "Because children learn character by watching parents model humility, repentance, and repair in real time.", bundle: 'free' },
+        { q: "How does a Time-Out Reset differ from punitive isolation?", a: "A reset calms a dysregulated nervous system as a sports timeout, rather than inflicting emotional exile.", bundle: 'free' },
+        { q: "What does Mamalakis mean by \"Teach the Joy of Repentance\"?", a: "Showing children that making amends restores relationship and brings freedom, peace, and joy.", bundle: 'pro' },
+        { q: "How do high expectations and unconditional connection work together in repair?", a: "The limit remains firm and non-negotiable, while love and physical connection remain completely unshakeable.", bundle: 'pro' },
+        { q: "What is the ultimate character outcome of practicing relational repair at home?", a: "Developing adults who possess the humility to admit failure, seek forgiveness, and reconcile with others.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Joy of Repentance",
+      description: "",
+      cards: [
+        { q: "What is the primary purpose of The Joy of Repentance?", a: "To frame mistakes as opportunities to return to the good rather than sources of permanent shame.", bundle: 'free' },
+        { q: "How does a parent invite a child to repent after a wrong choice?", a: "By naming the mistake calmly and asking: \"How can you make this right?\"", bundle: 'free' },
+        { q: "Why is \"What do you need to do to fix this?\" better than \"Why did you do that?\"?", a: "It focuses energy on constructive restoration rather than defensive excuses or self-pity.", bundle: 'free' },
+        { q: "What are the two underlying categories of The Joy of Repentance?", a: "The Turn (moving from wrong to right) and The Request (inviting apology or restitution).", bundle: 'free' },
+        { q: "How does this strategy separate a child's identity from their mistake?", a: "It communicates that they are a good child who made a bad choice, and can now choose the good.", bundle: 'free' },
+        { q: "What should a parent do when a child is stuck in a \"shame spiral\" after failing?", a: "Reassure them of unconditional love while guiding them toward one simple step of repair.", bundle: 'pro' },
+        { q: "Why is celebrating a successful turn essential for long-term character growth?", a: "It reinforces the joy and relief of reconciliation, making future repentance easier.", bundle: 'pro' },
+        { q: "How does teaching repentance prepare a child for spiritual maturity?", a: "It instills an internal compass that views repentance as the joyful path back to God and neighbor.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Modeling the Apology",
+      description: "",
+      cards: [
+        { q: "What does Modeling the Apology instruct a parent to do?", a: "Admit parental failures plainly to the child and ask for forgiveness without making excuses.", bundle: 'free' },
+        { q: "Why is it crucial to avoid adding \"but you were disobedient\" to a parental apology?", a: "Adding excuses turns a genuine apology into a justification, destroying its teaching power.", bundle: 'free' },
+        { q: "What are the two underlying categories of Modeling the Apology?", a: "Ownership (naming specific unskillful behavior) and Restoration (asking for forgiveness).", bundle: 'free' },
+        { q: "How does seeing a parent apologize impact a child's perception of authority?", a: "It demonstrates that authority is grounded in truth, integrity, and humility rather than perfection.", bundle: 'free' },
+        { q: "What should a parent do if they lose their temper while setting a valid limit?", a: "Apologize for the emotional shouting while keeping the behavioral limit completely firm.", bundle: 'free' },
+        { q: "How does parental apology teach children how to handle their own future failures?", a: "It provides a clear, practical model for taking responsibility without falling into defensiveness.", bundle: 'pro' },
+        { q: "What does a parent communicate when asking a child \"Will you forgive me?\"?", a: "That the child's heart and the relationship matter more than parental pride.", bundle: 'pro' },
+        { q: "How can a parent involve a child in the repair process after a parental mistake?", a: "Ask them directly: \"What can I do to make things right between us?\".", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Time-Out Reset",
+      description: "",
+      cards: [
+        { q: "What is the main function of The Time-Out Reset?", a: "To provide a brief, non-punitive pause for a dysregulated nervous system to regain calm.", bundle: 'free' },
+        { q: "Why is a child unable to repent or learn while in the middle of an emotional storm?", a: "High emotional arousal shuts down executive function and reflective thinking.", bundle: 'free' },
+        { q: "What are the two underlying categories of The Time-Out Reset?", a: "Self-Regulation (calming the body) and Non-Punitive Pause (framing the break as a tool).", bundle: 'free' },
+        { q: "How should a parent frame a time-out to avoid making it feel like punishment?", a: "Say: \"Take two minutes until your body is calm so we can solve this together.\"", bundle: 'free' },
+        { q: "What can a parent do if a young child resists taking a reset alone?", a: "Sit quietly beside the child during the pause, offering co-regulating calm presence.", bundle: 'free' },
+        { q: "What is the indication that a Time-Out Reset is complete?", a: "The child's body posture, breathing, and tone indicate that emotional regulation has returned.", bundle: 'pro' },
+        { q: "How can parents use a time-out reset for themselves during acute friction?", a: "State calmly: \"I am taking a five-minute reset so I can respond with peace.\"", bundle: 'pro' },
+        { q: "What long-term skill does the Time-Out Reset build in a developing child?", a: "Self-awareness of internal emotional states and the ability to self-regulate under stress.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Tangible Follow-up",
+      description: "",
+      cards: [
+        { q: "What is the core action of The Tangible Follow-up?", a: "Re-establishing physical or emotional warmth immediately after a conflict or repair is finished.", bundle: 'free' },
+        { q: "Why is tangible follow-up vital after holding a firm limit?", a: "It proves to the child that the relationship is safe and that parental love is unconditional.", bundle: 'free' },
+        { q: "What are the two underlying categories of The Tangible Follow-up?", a: "The Bridge (moving back to normal life) and Affirmation of Love (stating relationship safety).", bundle: 'free' },
+        { q: "What physical gestures can be used for a tangible follow-up?", a: "A hug, a gentle hand on the shoulder, a warm smile, or a secret handshake.", bundle: 'free' },
+        { q: "How does tangible follow-up prevent post-conflict lingering resentment?", a: "It signals clearly that the incident is completely closed and relationship is restored.", bundle: 'free' },
+        { q: "What should a parent do if a child feels hesitant or distant after discipline?", a: "Open arms warmly and reassure them: \"The struggle is over; my love for you hasn't moved.\"", bundle: 'pro' },
+        { q: "Why is praising a child's courage after they apologize effective?", a: "It highlights their effort and character, reinforcing the positive identity of a repenting person.", bundle: 'pro' },
+        { q: "How does The Tangible Follow-up seal the entire repentance process?", a: "It provides the warm, joyful reunion that completes the arc from rupture back to communion.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **The Path of Repair** — evaluating whether the moment requires an apology, an invitation to repent, or tangible warmth\n• **Resetting and Reconnecting** — choosing between calming the nervous system, turning back, or restoring physical connection\n• **All Four Repair Strategies** — all four strategies mixed without warning about which moment you are in\n\nOne question decides nearly all of it: what does the heart need to return to relationship?",
+      cards: [
+        { q: "What distinguishes The Path of Repair from Resetting and Reconnecting?", a: "The Path of Repair focuses on resolving failures; Resetting and Reconnecting manages emotional regulation and reunion.", bundle: 'pro' },
+        { q: "When should a parent choose The Time-Out Reset over The Joy of Repentance?", a: "Use The Time-Out Reset when emotional arousal is high; use The Joy of Repentance when the child is calm.", bundle: 'pro' },
+        { q: "How does a parent decide when to execute The Tangible Follow-up?", a: "Immediately after amends have been made or when a firm limit has been held and connection needs warmth.", bundle: 'pro' },
+        { q: "Why is reading the child's emotional state crucial before inviting an apology?", a: "Attempting to demand an apology during peak meltdown triggers defensiveness instead of genuine repentance.", bundle: 'pro' },
+        { q: "What core question guides the parent across all three collections in this pack?", a: "\"Does my child's heart need emotional calm, guided restoration, modeled humility, or physical warmth?\"", bundle: 'pro' },
+        { q: "Why does All Four Repair Strategies test real-time parenting discernment?", a: "It requires instant recognition of whether the parent failed, the child is dysregulated, or repair is ready.", bundle: 'pro' },
+        { q: "What goes wrong when a parent skips Modeling the Apology when they were in the wrong?", a: "The child perceives hypocrisy and learns that authority means never admitting failure.", bundle: 'pro' },
+        { q: "How do these three collections transform family culture over time?", a: "They replace cold grudges and shame with a predictable, loving pathway back to connection.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Full Turn** — The Time-Out Reset → The Joy of Repentance → The Tangible Follow-up\n2. **Parental Repair** — Modeling the Apology → The Joy of Repentance → The Tangible Follow-up\n3. **The Calm Restoration** — The Time-Out Reset → Modeling the Apology → The Tangible Follow-up\n\nIn each sequence the order of relational steps guides complete emotional repair.",
+      cards: [
+        { q: "Why does The Full Turn begin with The Time-Out Reset?", a: "Settle the body's nervous system first so the heart is capable of genuine reflection and repentance.", bundle: 'pro' },
+        { q: "What role does The Joy of Repentance play as the second step in The Full Turn?", a: "It names the mistake clearly and guides the child to take responsibility and make amends.", bundle: 'pro' },
+        { q: "Why must The Tangible Follow-up complete every repair sequence?", a: "It seals the reunion with warmth, proving that forgiveness is complete and relationship is restored.", bundle: 'pro' },
+        { q: "What makes Parental Repair uniquely effective when a parent loses self-control?", a: "Moving from humble apology to mutual reset and warm affection restores trust without taking back limits.", bundle: 'pro' },
+        { q: "What goes wrong when a parent skips step one (Reset) and demands immediate repentance?", a: "The child feels forced and utters an insincere, sarcastic apology while remaining emotionally hostile.", bundle: 'pro' },
+        { q: "How does following a structured sequence prevent lingering family tension?", a: "It ensures every mistake moves through a complete cycle: calm, repair, reunion, and moving on.", bundle: 'pro' },
+        { q: "Why is the exact order of steps in a sequence critical for de-escalation?", a: "Each step opens the nervous system and heart for the next level of relational restoration.", bundle: 'pro' },
+        { q: "What should a parent do if a child becomes dysregulated again during step two?", a: "Return briefly to step one (The Time-Out Reset) until emotional calm is restored before continuing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories to master in this pack:\n\n• **The Stubborn Heart** — refusal to apologize or repair requiring safe leadership\n• **Shame Spirals** — self-condemnation after failure requiring identity reframing\n• **Parental Failures** — parent losing temper or being unfair requiring modeled repentance\n• **Reluctance to Amends** — hesitation to fix damage requiring guided restoration\n• **Post-Conflict Distance** — lingering coldness requiring proactive warmth\n\nEach category represents a key relational hurdle in healing after a rupture.",
+      cards: [
+        { q: "What drives a child's behavior in The Stubborn Heart?", a: "Fear of shame, lingering anger, or a defensive reflex against feeling condemned.", bundle: 'pro' },
+        { q: "How can a parent break a child's Shame Spiral after a mistake?", a: "Reassure them of unconditional love and separate their identity as a good child from their bad action.", bundle: 'pro' },
+        { q: "Why is Parental Failures a vital category for kingdom parenting?", a: "It turns parental mistakes into the primary classroom for modeling humility and genuine repentance.", bundle: 'pro' },
+        { q: "How does Reluctance to Amends help a child move past fear of fixing damage?", a: "By offering small, guided steps and standing close with support while amends are made.", bundle: 'pro' },
+        { q: "Why is Post-Conflict Distance dangerous if left unaddressed?", a: "Lingering coldness creates emotional distance and trains children to believe affection is conditional.", bundle: 'pro' },
+        { q: "What is the common thread across all five challenge categories?", a: "Maintaining safe, non-shaming leadership that consistently opens the path back to relationship.", bundle: 'pro' },
+        { q: "What should a parent avoid when a child screams \"I DON'T CARE!\" after a wrong choice?", a: "Getting drawn into an argument; pause for a reset and address the heart when calm.", bundle: 'pro' },
+        { q: "How does executing repair consistently build long-term family security?", a: "It proves to children that no rupture is permanent and that love and forgiveness are unshakeable.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Repair is the Learning** — conflicts as classrooms for reconciliation\n• **Shame** — guilt over identity vs repentance for action\n• **Vulnerability** — apologizing as strength vs fear of losing authority\n• **Reconnection** — unconditional connection vs conditional affection\n\nIn every one, the limiting belief treats failure as a dead end rather than an opportunity for grace.",
+      cards: [
+        { q: "What core truth is established in the Repair is the Learning mindset?", a: "That conflict and mistakes are normal classrooms for learning forgiveness and character growth.", bundle: 'pro' },
+        { q: "How does the Shame mindset contrast with true kingdom repentance?", a: "Shame condemns personhood and isolates; repentance turns behavior around and restores relationship.", bundle: 'pro' },
+        { q: "What fear is dismantled in the Vulnerability mindset regarding parental apology?", a: "The fear that apologizing surrenders authority; owning mistakes demonstrates genuine integrity and strength.", bundle: 'pro' },
+        { q: "What shift occurs when a parent adopts the Reconnection mindset?", a: "Physical warmth and love are recognized as unconditional, even when behavioral limits are firm.", bundle: 'pro' },
+        { q: "Why is expecting mistakes essential for maintaining parental patience?", a: "Expecting failures prevents parents from feeling shocked, offended, or helpless when ruptures happen.", bundle: 'pro' },
+        { q: "What is the long-term character cost of raising children with guilt and shame?", a: "Children grow into defensive or anxious adults who hide mistakes rather than seeking reconciliation.", bundle: 'pro' },
+        { q: "How does resetting one's mindset transform a parent's posture after a conflict?", a: "It shifts the parent from a punishing judge into a loving guide opening the path back home.", bundle: 'pro' },
+        { q: "Why is modeling repentance the ultimate key to raising repenting children?", a: "Children do not learn repentance from lectures; they learn it by experiencing parental humility and grace.", bundle: 'pro' },
       ]
     },
   ],

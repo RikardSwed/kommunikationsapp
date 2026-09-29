@@ -5398,6 +5398,94 @@ const multiStepCollections = {
             { front: "Re-stating the Limit — (After the connection).", back: "\"And, it's still time to go. Do you want to walk or should I carry you?\"", guideFront: "Restate the limit calmly when...", guideBack: "The limit, with a simple choice" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "It is time to turn off the tablet, and your child clutches it tightly, shouting that they won't stop playing.",
+          steps: [
+            { front: "Connection Before Correction — you sit beside them on the couch and watch for a moment.", back: "\"That looks like an intense game! Show me what character you're playing.\"", guideFront: "Connect with the heart first when...", guideBack: "A warm point of contact" },
+            { front: "Naming the Feeling — they pause and look up at you with frustrated eyes.", back: "\"You seem really disappointed that screen time is ending for today.\"", guideFront: "Acknowledge their internal state when...", guideBack: "A curious observation" },
+            { front: "Taking the Side of Feelings — they sigh and complain that it's unfair to stop now.", back: "\"I know, I wish we could play games all evening too. It's really hard to stop when it's fun.\"", guideFront: "Share their wish when...", guideBack: "A validating \"wish\" or statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You need to leave the shop, but your child lies down on the floor near the toy display and refuses to move.",
+          steps: [
+            { front: "Connection Before Correction — you walk over and kneel down quietly next to them on the floor.", back: "\"I'm right here with you. Take a deep breath.\"", guideFront: "Connect with the heart first when...", guideBack: "A warm point of contact" },
+            { front: "Naming the Feeling — they glare at you with tears in their eyes.", back: "\"You're feeling so angry that we have to put that set back on the shelf.\"", guideFront: "Acknowledge their internal state when...", guideBack: "A curious observation" },
+            { front: "Taking the Side of Feelings — they huff and say they want to take it home right now.", back: "\"I get it. I wish I could buy all these cool toys for you today too.\"", guideFront: "Share their wish when...", guideBack: "A validating \"wish\" or statement" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Listening Through the Storm",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence for de-escalating heightened conflict: **Venerating the Child** → **Naming the Feeling** → **Taking the Side of Feelings**. First offer dignified posture and listening, then label the emotion, then validate the wish.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your child slams their textbook shut and shouts that homework is stupid and they refuse to do another page.",
+          steps: [
+            { front: "Venerating the Child — you pull up a chair and sit down at eye level without raising your voice.", back: "\"I'm right here. Tell me what's feeling so tough about this page.\"", guideFront: "Treat them with dignity when...", guideBack: "A respectful action or inquiry" },
+            { front: "Naming the Feeling — they slump in their chair and mumble that they can't figure out the problems.", back: "\"You seem really overwhelmed and frustrated with these math questions.\"", guideFront: "Acknowledge their internal state when...", guideBack: "A curious observation" },
+            { front: "Taking the Side of Feelings — they nod and say they wish homework didn't exist at all.", back: "\"I know. I wish you could just play after school without any pages to complete too.\"", guideFront: "Share their wish when...", guideBack: "A validating \"wish\" or statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your child snatches a truck back from their brother and screams that it is theirs and nobody else can touch it.",
+          steps: [
+            { front: "Venerating the Child — you kneel down between them calmly and make eye contact.", back: "\"Let's pause together. I want to hear what happened.\"", guideFront: "Treat them with dignity when...", guideBack: "A respectful action or inquiry" },
+            { front: "Naming the Feeling — they point angrily at their brother.", back: "\"You're feeling really mad because he grabbed it without asking you first.\"", guideFront: "Acknowledge their internal state when...", guideBack: "A curious observation" },
+            { front: "Taking the Side of Feelings — they wipe a tear and say they were still playing with it.", back: "\"That makes sense. You wish you could finish your turn without anyone taking it.\"", guideFront: "Share their wish when...", guideBack: "A validating \"wish\" or statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "It is past bedtime, and your child stands in the hallway crying that they are not tired and won't go to bed.",
+          steps: [
+            { front: "Venerating the Child — you walk over to them, squat down, and offer an open hand.", back: "\"Come here for a second. I'm right here with you.\"", guideFront: "Treat them with dignity when...", guideBack: "A respectful action or inquiry" },
+            { front: "Naming the Feeling — they lean into your shoulder while sniffling.", back: "\"Are you feeling pretty sad that the day is over?\"", guideFront: "Acknowledge their internal state when...", guideBack: "A curious observation" },
+            { front: "Taking the Side of Feelings — they whisper that they want to stay up with the grown-ups.", back: "\"I know. It's really hard to go to bed when everyone else is still awake. I wish we could stay up all night.\"", guideFront: "Share their wish when...", guideBack: "A validating \"wish\" or statement" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Connection Bridge",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence for approaching a child who is withdrawn or defensive: **Connection Before Correction** → **Venerating the Child** → **Naming the Feeling**. Establish warmth, offer dignified presence, and gently inquire about their heart.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your teenager comes home from school, slams the front door, and marches straight to their room without speaking.",
+          steps: [
+            { front: "Connection Before Correction — you knock gently on their door, open it slowly, and sit on the edge of the bed.", back: "\"Hey love. I missed you today. I'm so glad you're home.\"", guideFront: "Connect with the heart first when...", guideBack: "A warm point of contact" },
+            { front: "Venerating the Child — they stay turned toward the wall, staying quiet.", back: "(Sit quietly in silence for a moment without demanding answers)", guideFront: "Treat them with dignity when...", guideBack: "A respectful action or inquiry" },
+            { front: "Naming the Feeling — they turn around slightly and sigh.", back: "\"It looks like it was a really heavy day at school.\"", guideFront: "Acknowledge their internal state when...", guideBack: "A curious observation" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your child sits at the dinner table pushing their food around, refusing to talk or join the family conversation.",
+          steps: [
+            { front: "Connection Before Correction — you gently place a hand on their arm and smile warmly.", back: "\"I'm really glad we're all sitting here eating dinner together.\"", guideFront: "Connect with the heart first when...", guideBack: "A warm point of contact" },
+            { front: "Venerating the Child — they look at you, still silent and defensive.", back: "\"You don't have to talk right now. I'm just happy you're here beside me.\"", guideFront: "Treat them with dignity when...", guideBack: "A respectful action or inquiry" },
+            { front: "Naming the Feeling — their posture softens slightly.", back: "\"Are you feeling a bit upset about something that happened earlier?\"", guideFront: "Acknowledge their internal state when...", guideBack: "A curious observation" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "After being corrected for speaking harshly, your child retreats to the couch and buries their face in a pillow.",
+          steps: [
+            { front: "Connection Before Correction — you walk over and sit on the edge of the couch near them.", back: "\"Hey, look at me for a second. I love you no matter what.\"", guideFront: "Connect with the heart first when...", guideBack: "A warm point of contact" },
+            { front: "Venerating the Child — they look out from behind the pillow.", back: "\"I value you so much, and I want us to be okay.\"", guideFront: "Treat them with dignity when...", guideBack: "A respectful action or inquiry" },
+            { front: "Naming the Feeling — they nod slowly with teary eyes.", back: "\"You seem pretty sad about how that conversation went.\"", guideFront: "Acknowledge their internal state when...", guideBack: "A curious observation" },
+          ]
+        },
       ]
     },
   ],
@@ -5416,6 +5504,96 @@ const multiStepCollections = {
             { front: "Describe What You See — you point to the clock or the bathroom.", back: "\"The water is in the tub and it's time for your bath.\"", guideFront: "Describe the situation objectively when...", guideBack: "A plain description" },
             { front: "Options Within the Limit — they are still pouting.", back: "\"Do you want to bring your toy boat to the tub or the plastic dinosaur?\"", guideFront: "Offer choices within your boundary when...", guideBack: "A choice between two options" },
             { front: "Re-stating the Limit — (If they still refuse).", back: "\"Bath is happening now. Do you want to walk yourself or should I carry you?\"", guideFront: "Restate the limit calmly when...", guideBack: "The limit, with a simple choice" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your child sits on the swings and shouts that they will not leave the playground for dinner.",
+          steps: [
+            { front: "Naming the Struggle — they cling tightly to the swing chains with tears in their eyes.", back: "\"It's really hard to stop playing and leave when you're having so much fun.\"", guideFront: "Acknowledge the difficulty when...", guideBack: "An observation of their effort" },
+            { front: "Describe What You See — you point toward the parking lot.", back: "\"The streetlights are turning on and our car is waiting.\"", guideFront: "Describe the situation objectively when...", guideBack: "A plain description" },
+            { front: "Options Within the Limit — they remain on the swing seat, pouting.", back: "\"Do you want to hop off the swing yourself, or take my hand to stand up?\"", guideFront: "Offer choices within your boundary when...", guideBack: "A choice between two options" },
+            { front: "Re-stating the Limit — they hold the chains without moving.", back: "\"It is time to go to the car now; you can walk with me or I can help you off the swing.\"", guideFront: "Restate the limit calmly when...", guideBack: "The limit, with a simple choice" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your child slams their textbook shut and yells that they are not doing any math homework tonight.",
+          steps: [
+            { front: "Naming the Struggle — they slump back in their desk chair with a heavy sigh.", back: "\"That math page looks really long and exhausting after a full day at school.\"", guideFront: "Acknowledge the difficulty when...", guideBack: "An observation of their effort" },
+            { front: "Describe What You See — you gesture to the open workbook on the desk.", back: "\"The worksheet is sitting on the desk and five problems are left to solve.\"", guideFront: "Describe the situation objectively when...", guideBack: "A plain description" },
+            { front: "Options Within the Limit — they stare at the desk, refusing to grab a pencil.", back: "\"Do you want to solve problem number one first, or problem number two?\"", guideFront: "Offer choices within your boundary when...", guideBack: "A choice between two options" },
+            { front: "Re-stating the Limit — they leave the pencil lying on the table.", back: "\"Math needs to be finished before dinner; you can pick up the pencil or take a one-minute breath first.\"", guideFront: "Restate the limit calmly when...", guideBack: "The limit, with a simple choice" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Clear Path to Cooperation",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence for guiding resistance into structured compliance: **Describe What You See** → **Pathway to Yes** → **Options Within the Limit**. First state objective reality, then show the conditional path forward, then offer choices to execute it.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your child turns on the TV after school and insists they are going to watch shows all afternoon.",
+          steps: [
+            { front: "Describe What You See — you walk into the room and look at the screen and backpack.", back: "\"The TV is on, and your math worksheet is still in your backpack.\"", guideFront: "Describe the situation objectively when...", guideBack: "A plain description" },
+            { front: "Pathway to Yes — they groan that homework is boring.", back: "\"Yes, as soon as that math page is finished, the TV can go back on.\"", guideFront: "Reframe a \"No\" as \"Not Yet\" when...", guideBack: "A yes, once the step is done" },
+            { front: "Options Within the Limit — they sit at the desk reluctantly.", back: "\"Do you want to do the first three problems at the kitchen table or at your desk?\"", guideFront: "Offer choices within your boundary when...", guideBack: "A choice between two options" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your child grabs their skateboard and heads for the door while their household chores remain completely untouched.",
+          steps: [
+            { front: "Describe What You See — you stand near the coat rack and point to the trash bin.", back: "\"The kitchen trash bin is completely full.\"", guideFront: "Describe the situation objectively when...", guideBack: "A plain description" },
+            { front: "Pathway to Yes — they complain that their friends are waiting outside right now.", back: "\"You can head out on your board as soon as the trash bag is in the outdoor bin.\"", guideFront: "Reframe a \"No\" as \"Not Yet\" when...", guideBack: "A yes, once the step is done" },
+            { front: "Options Within the Limit — they hold the trash bag in frustration.", back: "\"Do you want to take out the recycling now too, or leave that for after dinner?\"", guideFront: "Offer choices within your boundary when...", guideBack: "A choice between two options" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your child asks for ice cream immediately after dinner while leaving their dirty plate and cup at the table.",
+          steps: [
+            { front: "Describe What You See — you look down at the dinner table.", back: "\"There are still dirty dishes sitting at your place.\"", guideFront: "Describe the situation objectively when...", guideBack: "A plain description" },
+            { front: "Pathway to Yes — they whine that they want dessert right now.", back: "\"As soon as your dishes are in the sink, ice cream is served.\"", guideFront: "Reframe a \"No\" as \"Not Yet\" when...", guideBack: "A yes, once the step is done" },
+            { front: "Options Within the Limit — they pick up their plate.", back: "\"Do you want vanilla ice cream tonight, or chocolate?\"", guideFront: "Offer choices within your boundary when...", guideBack: "A choice between two options" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Structure Bridge",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence for resolving stalling during daily transitions: **Describe What You See** → **The One-Word Cue** → **Options Within the Limit**. Move from objective observation to a concise reminder, then offer structured choices.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "School departure time has arrived, but your child is wandering around the living room in socks, ignoring the clock.",
+          steps: [
+            { front: "Describe What You See — you point to the shoes by the front door.", back: "\"The front door is open and the bus is coming in five minutes.\"", guideFront: "Describe the situation objectively when...", guideBack: "A plain description" },
+            { front: "The One-Word Cue — they freeze and look at you.", back: "\"Shoes.\"", guideFront: "Give a one-word reminder when...", guideBack: "A one-word cue" },
+            { front: "Options Within the Limit — they reach for their boots.", back: "\"Do you want to tie your laces inside or out on the porch?\"", guideFront: "Offer choices within your boundary when...", guideBack: "A choice between two options" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Bedtime was announced ten minutes ago, but your child is still lying on the floor reading comic books.",
+          steps: [
+            { front: "Describe What You See — you walk into the bedroom and look at the clock.", back: "\"The bedroom clock says 8:30 PM.\"", guideFront: "Describe the situation objectively when...", guideBack: "A plain description" },
+            { front: "The One-Word Cue — they sigh and close the book.", back: "\"Pyjamas.\"", guideFront: "Give a one-word reminder when...", guideBack: "A one-word cue" },
+            { front: "Options Within the Limit — they stand up near the closet.", back: "\"Do you want to read one story in bed tonight or two short ones?\"", guideFront: "Offer choices within your boundary when...", guideBack: "A choice between two options" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Dinner is served on the table, but your child remains in the basement playing video games despite two calls.",
+          steps: [
+            { front: "Describe What You See — you walk to the top of the basement stairs.", back: "\"The food is hot and sitting on the dining table.\"", guideFront: "Describe the situation objectively when...", guideBack: "A plain description" },
+            { front: "The One-Word Cue — they look up from the screen.", back: "\"Dinner.\"", guideFront: "Give a one-word reminder when...", guideBack: "A one-word cue" },
+            { front: "Options Within the Limit — they pause the game.", back: "\"Do you want to walk upstairs normally or race me to the table?\"", guideFront: "Offer choices within your boundary when...", guideBack: "A choice between two options" },
           ]
         },
       ]
@@ -5439,6 +5617,98 @@ const multiStepCollections = {
             { front: "Recognition of Effort — (After they finally get it out).", back: "\"You were really stuck, but you kept thinking until you found a way. You did it.\"", guideFront: "Name the effort it took when...", guideBack: "Praise for how they kept going" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "Your child slams their pencil down on the desk and yells that math is impossible and they will never understand it.",
+          steps: [
+            { front: "Naming the Struggle — you walk into the room and sit nearby.", back: "\"That math worksheet is looking really tough tonight. You're working through a hard problem.\"", guideFront: "Acknowledge the difficulty when...", guideBack: "An observation of their effort" },
+            { front: "Staying Close — you pull up a chair right next to their desk.", back: "\"I'm right here with you. I won't do the math for you, but I'll stay while you try.\"", guideFront: "Offer your presence when...", guideBack: "A comforting action or statement" },
+            { front: "The Brainstorm Inquiry — they take a breath and look back at problem three.", back: "\"What's the very first step you need to do on this problem?\"", guideFront: "Shift problem-solving to them when...", guideBack: "A curious, leading question" },
+            { front: "Identify Consequences — they suggest guessing a random number just to finish fast.", back: "\"If you guess a number without doing the steps, what happens when the teacher checks it tomorrow?\"", guideFront: "Help them see outcomes when...", guideBack: "A question about the result" },
+            { front: "Recognition of Effort — they work through the calculation, write down the correct answer, and smile with relief.", back: "\"You were really stuck on that math question, but you stayed focused and worked through it step by step. Look at what you did!\"", guideFront: "Name the effort it took when...", guideBack: "Praise for how they kept going" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your child is trying to double-knot their sneakers for school, gets the laces tangled, and begins to cry in frustration.",
+          steps: [
+            { front: "Naming the Struggle — you kneel down on the floor beside them.", back: "\"Those laces are really tricky to cross over. You're trying so hard to get it right.\"", guideFront: "Acknowledge the difficulty when...", guideBack: "An observation of their effort" },
+            { front: "Staying Close — you sit on the hallway floor next to them.", back: "\"I'm staying right here beside you while you work on this.\"", guideFront: "Offer your presence when...", guideBack: "A comforting action or statement" },
+            { front: "The Brainstorm Inquiry — they wipe away tears and hold the two loops.", back: "\"Where does that loop need to go next to make the knot?\"", guideFront: "Shift problem-solving to them when...", guideBack: "A curious, leading question" },
+            { front: "Identify Consequences — they suggest pulling both ends as hard as possible in opposite directions.", back: "\"If you pull super hard right there, what happens to that loop?\"", guideFront: "Help them see outcomes when...", guideBack: "A question about the result" },
+            { front: "Recognition of Effort — they loop the second lace around, pull the double knot tight, and stand up proudly.", back: "\"Those laces were completely tangled earlier, but you kept trying until you got the bow tied yourself. You did it!\"", guideFront: "Name the effort it took when...", guideBack: "Praise for how they kept going" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Building Independence",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence for guiding a child through a problem they want you to solve for them: **Naming the Struggle** → **The Brainstorm Inquiry** → **Identify Consequences**. First validate the effort, then ask for solutions, then evaluate the outcome.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your child stands in their doorway whining that their room is a total disaster and demands that you clean it up for them.",
+          steps: [
+            { front: "Naming the Struggle — you look into the room with them.", back: "\"There are toys everywhere. It feels overwhelming to know where to start.\"", guideFront: "Acknowledge the difficulty when...", guideBack: "An observation of their effort" },
+            { front: "The Brainstorm Inquiry — they sigh and look at the floor.", back: "\"What is one group of toys we could pick up first?\"", guideFront: "Shift problem-solving to them when...", guideBack: "A curious, leading question" },
+            { front: "Identify Consequences — they suggest pushing everything under the rug.", back: "\"If we push them under the rug, what happens when someone walks into the room?\"", guideFront: "Help them see outcomes when...", guideBack: "A question about the result" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your child comes crying to you saying their brother won't give them the remote control car.",
+          steps: [
+            { front: "Naming the Struggle — you kneel down to listen.", back: "\"It's really hard to wait when you really want to play with the car.\"", guideFront: "Acknowledge the difficulty when...", guideBack: "An observation of their effort" },
+            { front: "The Brainstorm Inquiry — they wipe their nose and look at their brother.", back: "\"What could you offer him so you both get a turn?\"", guideFront: "Shift problem-solving to them when...", guideBack: "A curious, leading question" },
+            { front: "Identify Consequences — they suggest snatching it out of his hands when he looks away.", back: "\"If you snatch it, what do you think he will do next?\"", guideFront: "Help them see outcomes when...", guideBack: "A question about the result" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your child is stomping around the living room shouting that they can't find their favorite action figure.",
+          steps: [
+            { front: "Naming the Struggle — you pause and look at them calmly.", back: "\"It's so frustrating when something you love isn't where you expected it to be.\"", guideFront: "Acknowledge the difficulty when...", guideBack: "An observation of their effort" },
+            { front: "The Brainstorm Inquiry — they stop stomping.", back: "\"Where was the very last place you were playing with it?\"", guideFront: "Shift problem-solving to them when...", guideBack: "A curious, leading question" },
+            { front: "Identify Consequences — they suggest tearing all the sofa cushions onto the floor.", back: "\"If you throw all the cushions on the floor, what will we have to do before dinner?\"", guideFront: "Help them see outcomes when...", guideBack: "A question about the result" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Calm Presence in Friction",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence for supporting a child through acute anxiety or frustration: **Staying Close** → **Naming the Struggle** → **The Brainstorm Inquiry**. Establish supportive presence first, name the difficulty, then guide problem-solving.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your child freezes at the entrance of a new summer camp classroom and grips your hand tightly, refusing to enter.",
+          steps: [
+            { front: "Staying Close — you squat down beside them and wrap an arm around their shoulder.", back: "\"I'm right here with you. I'm not going to rush you.\"", guideFront: "Offer your presence when...", guideBack: "A comforting action or statement" },
+            { front: "Naming the Struggle — they lean into your side and look at the floor.", back: "\"It's scary to walk into a room where you don't know anyone yet.\"", guideFront: "Acknowledge the difficulty when...", guideBack: "An observation of their effort" },
+            { front: "The Brainstorm Inquiry — they take a slow breath.", back: "\"What would help you feel ready to take one step inside?\"", guideFront: "Shift problem-solving to them when...", guideBack: "A curious, leading question" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your child falls off their bicycle onto the grass, lies on their side crying, and says they will never ride again.",
+          steps: [
+            { front: "Staying Close — you jog over, sit on the grass beside them, and place a hand on their back.", back: "\"I'm right here with you. Take your time.\"", guideFront: "Offer your presence when...", guideBack: "A comforting action or statement" },
+            { front: "Naming the Struggle — they sniffle and sit up slowly.", back: "\"That was a sudden fall, and it scared you. You were being so brave trying that turn.\"", guideFront: "Acknowledge the difficulty when...", guideBack: "An observation of their effort" },
+            { front: "The Brainstorm Inquiry — they look over at the bike lying on the lawn.", back: "\"What do you want to do next with the bike?\"", guideFront: "Shift problem-solving to them when...", guideBack: "A curious, leading question" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Five minutes before the school play, your child stands backstage trembling and saying they can't go on stage.",
+          steps: [
+            { front: "Staying Close — you kneel down beside them backstage and hold both of their hands gently.", back: "\"I'm standing right here with you. I'm not leaving.\"", guideFront: "Offer your presence when...", guideBack: "A comforting action or statement" },
+            { front: "Naming the Struggle — they look into your eyes with big tears.", back: "\"It takes a lot of courage to step out in front of all those people.\"", guideFront: "Acknowledge the difficulty when...", guideBack: "An observation of their effort" },
+            { front: "The Brainstorm Inquiry — they take a deep breath.", back: "\"What is one thing we can do together right now to settle your body?\"", guideFront: "Shift problem-solving to them when...", guideBack: "A curious, leading question" },
+          ]
+        },
       ]
     },
   ],
@@ -5459,6 +5729,96 @@ const multiStepCollections = {
             { front: "The Heartful Silence — the talking isn't helping anymore.", back: "(Stop talking. Gently pick them up or lead them by the hand to the car).", guideFront: "Stop the argument when...", guideBack: "A calm action or brief cue" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "Your child throws their stuffed animal across the room and screams \"I'M NOT GOING TO BED!\" after you turn off the bedroom light.",
+          steps: [
+            { front: "Respond vs. React — you feel your jaw clench and your frustration rise.", back: "(Pause in the doorway, take a slow breath) \"I am calm. I can handle this storm.\"", guideFront: "Pause before you answer when...", guideBack: "A calm, intentional statement" },
+            { front: "Meet the Frustration, Not the Words — you sit on the edge of their bed.", back: "\"You're feeling so angry that the fun part of the day is over.\"", guideFront: "Meet the feeling underneath when...", guideBack: "The feeling, named back" },
+            { front: "Expect Pushback — they sob into their pillow that it's completely unfair.", back: "\"I know you want to stay up. It's really hard when bedtime comes.\"", guideFront: "Maintain your stance when...", guideBack: "Their feeling heard, the limit kept" },
+            { front: "The Heartful Silence — words are no longer being heard.", back: "(Stop talking, smooth their blanket quietly, and sit in silence beside them)", guideFront: "Stop the argument when...", guideBack: "A calm action or brief cue" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your child drops to the floor in the cereal aisle, kicking and screaming because you placed the sugary box back on the shelf.",
+          steps: [
+            { front: "Respond vs. React — shoppers turn to look, and embarrassment floods your body.", back: "(Breathe deeply and whisper to yourself) \"My child is struggling, not attacking me.\"", guideFront: "Pause before you answer when...", guideBack: "A calm, intentional statement" },
+            { front: "Meet the Frustration, Not the Words — you squat down on the floor near them.", back: "\"You are so disappointed that we can't buy that cereal today.\"", guideFront: "Meet the feeling underneath when...", guideBack: "The feeling, named back" },
+            { front: "Expect Pushback — they yell \"I WANT IT NOW!\" and slap the floor.", back: "\"I hear how much you want it. And we are leaving it on the shelf today.\"", guideFront: "Maintain your stance when...", guideBack: "Their feeling heard, the limit kept" },
+            { front: "The Heartful Silence — onlookers watch as the screaming continues.", back: "(Stop speaking, gently lift them into your arms, and walk calmly to the checkout)", guideFront: "Stop the argument when...", guideBack: "A calm action or brief cue" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Quiet Anchor",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence for de-escalating heightened defiance: **Respond vs. React** → **Expect Pushback** → **The Heartful Silence**. First regulate yourself, then maintain the boundary against pushback, then transition to quiet action.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your child clutches the tablet tightly and shouts that they will not turn it off despite three prior warnings.",
+          steps: [
+            { front: "Respond vs. React — you feel an impulse to snatch the device angrily.", back: "(Pause, exhale slowly, and lower your posture) \"I will stay calm.\"", guideFront: "Pause before you answer when...", guideBack: "A calm, intentional statement" },
+            { front: "Expect Pushback — they glare at you and say \"You can't force me!\".", back: "\"I hear that you're really mad. And screen time is over for today.\"", guideFront: "Maintain your stance when...", guideBack: "Their feeling heard, the limit kept" },
+            { front: "The Heartful Silence — they hold the tablet, refusing to hand it over.", back: "(Reach out quietly, take the tablet firmly, and set it on the high shelf)", guideFront: "Stop the argument when...", guideBack: "A calm action or brief cue" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your child clings to the swing chains at the park, screaming that they refuse to go home for dinner.",
+          steps: [
+            { front: "Respond vs. React — you feel annoyed that you are being made late.", back: "(Take a deep breath and relax your shoulders) \"I won't yell.\"", guideFront: "Pause before you answer when...", guideBack: "A calm, intentional statement" },
+            { front: "Expect Pushback — they kick their legs in the air, protesting loudly.", back: "\"You really wish we could stay and play all night. It's still time to head home.\"", guideFront: "Maintain your stance when...", guideBack: "Their feeling heard, the limit kept" },
+            { front: "The Heartful Silence — they refuse to unclamp their hands from the chain.", back: "(Stop arguing, lift them gently off the swing, and walk toward the car)", guideFront: "Stop the argument when...", guideBack: "A calm action or brief cue" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your child slams their workbook shut and stands up from the desk shouting that they refuse to write another word.",
+          steps: [
+            { front: "Respond vs. React — you feel tempted to give a long speech on responsibility.", back: "(Wait three seconds before speaking) \"I'm keeping my voice quiet.\"", guideFront: "Pause before you answer when...", guideBack: "A calm, intentional statement" },
+            { front: "Expect Pushback — they huff and say homework is a waste of time.", back: "\"I know you hate doing this worksheet right now. And it needs to be completed.\"", guideFront: "Maintain your stance when...", guideBack: "Their feeling heard, the limit kept" },
+            { front: "The Heartful Silence — they stand by the desk with crossed arms.", back: "(Pull up a chair silently, sit beside the desk, and point calmly to problem one)", guideFront: "Stop the argument when...", guideBack: "A calm action or brief cue" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Listening Through Insults",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence for diffusing verbal hostility: **Respond vs. React** → **Meet the Frustration, Not the Words** → **Expect Pushback**. First pause to regulate your own heart, then validate the feeling behind the harsh words, then maintain the limit calmly.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "After being told they cannot go to a friend's house, your child shouts \"YOU ARE THE WORST PARENT IN THE WORLD!\".",
+          steps: [
+            { front: "Respond vs. React — the insult stings and makes you feel defensive.", back: "(Take a breath and remind yourself) \"Their words are a symptom of their pain.\"", guideFront: "Pause before you answer when...", guideBack: "A calm, intentional statement" },
+            { front: "Meet the Frustration, Not the Words — they glare at you with tearful eyes.", back: "\"You are so furious with me for saying no to your plans.\"", guideFront: "Meet the feeling underneath when...", guideBack: "The feeling, named back" },
+            { front: "Expect Pushback — they yell \"I'm never talking to you again!\".", back: "\"I hear how angry you are. And the decision remains no for tonight.\"", guideFront: "Maintain your stance when...", guideBack: "Their feeling heard, the limit kept" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your child snatches a toy back from their sibling and screams \"I HATE YOU!\" when you intervene.",
+          steps: [
+            { front: "Respond vs. React — the sudden aggression triggers your own anger.", back: "(Pause and unclench your hands) \"I am going to respond with peace.\"", guideFront: "Pause before you answer when...", guideBack: "A calm, intentional statement" },
+            { front: "Meet the Frustration, Not the Words — they clutch the toy defensively.", back: "\"You were so worried you wouldn't get your toy back.\"", guideFront: "Meet the feeling underneath when...", guideBack: "The feeling, named back" },
+            { front: "Expect Pushback — they huff that you always take their sibling's side.", back: "\"I know it feels unfair when I step in. We still don't snatch.\"", guideFront: "Maintain your stance when...", guideBack: "Their feeling heard, the limit kept" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You announce that the family park trip is cancelled due to rain, and your child shouts \"YOU RUIN EVERYTHING!\".",
+          steps: [
+            { front: "Respond vs. React — you feel tempted to snap back at their disrespect.", back: "(Close your eyes for a moment) \"I will not match their emotional volume.\"", guideFront: "Pause before you answer when...", guideBack: "A calm, intentional statement" },
+            { front: "Meet the Frustration, Not the Words — they stomp around the living room.", back: "\"You were so excited to go to the park today and this feels terrible.\"", guideFront: "Meet the feeling underneath when...", guideBack: "The feeling, named back" },
+            { front: "Expect Pushback — they cry that rain is stupid and you should go anyway.", back: "\"I know you really wish it wasn't raining. We're still staying home.\"", guideFront: "Maintain your stance when...", guideBack: "Their feeling heard, the limit kept" },
+          ]
+        },
       ]
     },
   ],
@@ -5476,6 +5836,94 @@ const multiStepCollections = {
             { front: "The Time-Out Reset — they are still breathing fast and looking defiant.", back: "\"You're too upset to be safe right now. Take two minutes until your body is calm.\"", guideFront: "Offer a calming pause when...", guideBack: "A pause, framed as a reset" },
             { front: "The Joy of Repentance — (After 2 minutes) they look calm but sheepish.", back: "\"Throwing was wrong. Now you have a chance to make it right. What do you need to do?\"", guideFront: "Teach the path back when...", guideBack: "The mistake named, and a way to fix it" },
             { front: "The Tangible Follow-up — they apologize and pick up the block.", back: "\"Thank you for fixing that. I'm so glad we're back on the same team. Come here.\"", guideFront: "Restore the connection when...", guideBack: "A warm action or statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your child gets furious at their sibling and shoves them off the playground bench onto the grass.",
+          steps: [
+            { front: "The Time-Out Reset — your child is breathing heavily and glaring angrily.", back: "\"You are too worked up to play safely right now. Take two minutes on the bench to calm down.\"", guideFront: "Offer a calming pause when...", guideBack: "A pause, framed as a reset" },
+            { front: "The Joy of Repentance — after two minutes, their body softens and they look at the ground.", back: "\"Pushing was wrong. Now you can choose the good. What do you need to say to your sister?\"", guideFront: "Teach the path back when...", guideBack: "The mistake named, and a way to fix it" },
+            { front: "The Tangible Follow-up — they walk over, apologize, and offer a hand to help their sister up.", back: "\"I'm so proud of you for turning that around. Come give me a big hug.\"", guideFront: "Restore the connection when...", guideBack: "A warm action or statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your child throws the remote control at the couch and screams when you announce screen time is over.",
+          steps: [
+            { front: "The Time-Out Reset — they lie on the carpet crying and kicking their legs.", back: "\"Your body is overwhelmed. Let's pause together right here until your breathing slows down.\"", guideFront: "Offer a calming pause when...", guideBack: "A pause, framed as a reset" },
+            { front: "The Joy of Repentance — their crying stops and they wipe their eyes.", back: "\"Throwing things is unsafe. What can we do now to reset and make this right?\"", guideFront: "Teach the path back when...", guideBack: "The mistake named, and a way to fix it" },
+            { front: "The Tangible Follow-up — they hand you the remote nicely and put it on the shelf.", back: "\"Thank you for fixing that. I'm so glad we're back on the same team.\"", guideFront: "Restore the connection when...", guideBack: "A warm action or statement" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Parental Repair",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence for restoring connection after parental failure: **Modeling the Apology** → **The Joy of Repentance** → **The Tangible Follow-up**. First own your mistake plainly, then guide the child into mutual restoration, then seal the bond with warmth.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You lose your temper and shout loudly at your child for spilling a glass of water on the rug.",
+          steps: [
+            { front: "Modeling the Apology — you take a deep breath, kneel down, and look into their eyes.", back: "\"I'm so sorry I yelled at you just now. I was stressed, but yelling at you was wrong.\"", guideFront: "Own your own mistake when...", guideBack: "A plain apology" },
+            { front: "The Joy of Repentance — they look up at you, surprised and softening.", back: "\"I want us to start over. Let's wipe this spill up together and speak with kindness.\"", guideFront: "Teach the path back when...", guideBack: "The mistake named, and a way to fix it" },
+            { front: "The Tangible Follow-up — you wipe the rug together and look at each other.", back: "\"Thank you for forgiving me. Give me a big hug—I love you so much.\"", guideFront: "Restore the connection when...", guideBack: "A warm action or statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You sternly punish your child for taking a cookie, only to discover their older sibling took it instead.",
+          steps: [
+            { front: "Modeling the Apology — you walk into their room and sit on the edge of the bed.", back: "\"I made a big mistake earlier. I blamed you without knowing the facts, and that wasn't fair.\"", guideFront: "Own your own mistake when...", guideBack: "A plain apology" },
+            { front: "The Joy of Repentance — they nod slowly and sniffle.", back: "\"I want to make this right. Will you forgive me for accusing you?\"", guideFront: "Teach the path back when...", guideBack: "The mistake named, and a way to fix it" },
+            { front: "The Tangible Follow-up — they nod and lean into your chest.", back: "\"I'm so glad we can talk openly. Come on out and let me fix you a fresh snack.\"", guideFront: "Restore the connection when...", guideBack: "A warm action or statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You promised to play a board game after school but spent the whole evening working on your laptop instead.",
+          steps: [
+            { front: "Modeling the Apology — you close your laptop, walk over, and sit beside them.", back: "\"I broke my promise to play our game tonight. I let you down, and I'm really sorry.\"", guideFront: "Own your own mistake when...", guideBack: "A plain apology" },
+            { front: "The Joy of Repentance — they look at the floor with disappointed eyes.", back: "\"I made a mistake with my time tonight. Let's set up the board right now so I can fix it.\"", guideFront: "Teach the path back when...", guideBack: "The mistake named, and a way to fix it" },
+            { front: "The Tangible Follow-up — they smile and pull out the game pieces.", back: "\"I love spending time with you. Thanks for giving me a second chance tonight.\"", guideFront: "Restore the connection when...", guideBack: "A warm action or statement" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Calm Restoration",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence for resolving mutual dysregulation: **The Time-Out Reset** → **Modeling the Apology** → **The Tangible Follow-up**. First pause to settle nervous systems, then apologize for your own harshness, then restore physical warmth.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Bedtime degenerates into a shouting match between you and your child in the hallway.",
+          steps: [
+            { front: "The Time-Out Reset — both of you are red-faced and breathing fast.", back: "\"We are both too angry to talk right now. Let's take a two-minute reset in our rooms.\"", guideFront: "Offer a calming pause when...", guideBack: "A pause, framed as a reset" },
+            { front: "Modeling the Apology — after two minutes, you walk into their room with a calm voice.", back: "\"I'm sorry for raising my voice at you earlier. I lost my composure, and that was wrong.\"", guideFront: "Own your own mistake when...", guideBack: "A plain apology" },
+            { front: "The Tangible Follow-up — they look relieved and lean into a hug.", back: "\"I'm so glad we settled down. Let's tuck you in warmly now.\"", guideFront: "Restore the connection when...", guideBack: "A warm action or statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You and your child get into a stressed fight over finding shoes while heading out the door.",
+          steps: [
+            { front: "The Time-Out Reset — you stand by the front door stressed and overwhelmed.", back: "\"Let's both pause right here for ten seconds and take one deep breath together.\"", guideFront: "Offer a calming pause when...", guideBack: "A pause, framed as a reset" },
+            { front: "Modeling the Apology — you exhale and drop your shoulders.", back: "\"I'm sorry for rushing you and speaking harshly. I was anxious about being late.\"", guideFront: "Own your own mistake when...", guideBack: "A plain apology" },
+            { front: "The Tangible Follow-up — they hand you their shoes with a small smile.", back: "\"Thank you for helping us restart. Squeeze my hand—let's walk to the car together.\"", guideFront: "Restore the connection when...", guideBack: "A warm action or statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your child refuses dinner loudly, and you respond by slamming your fork down in frustration.",
+          steps: [
+            { front: "The Time-Out Reset — silence falls across the dinner table.", back: "\"I need a two-minute timeout to settle my mind. I'll sit quietly right here.\"", guideFront: "Offer a calming pause when...", guideBack: "A pause, framed as a reset" },
+            { front: "Modeling the Apology — you look at your child with a calm expression.", back: "\"I was wrong to slam my fork down. I felt frustrated, but reacting that way wasn't right.\"", guideFront: "Own your own mistake when...", guideBack: "A plain apology" },
+            { front: "The Tangible Follow-up — they soften and reach for their bread roll.", back: "\"I'm glad we're eating together. Thanks for being patient with me.\"", guideFront: "Restore the connection when...", guideBack: "A warm action or statement" },
           ]
         },
       ]
