@@ -10422,4 +10422,168 @@ const mindsetCollections = {
       ]
     },
   ],
+  parenting6: [
+    {
+      name: "Pre-planning",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Planning in advance takes too much time and my kids won't remember agreements anyway.\"\n\nFearing that pre-planning is a waste of effort prevents parents from practicing **Planning in Advance**. Setting clear rules during calm moments grounds expectations and prevents in-the-moment battles.\n\nMindset: Thirty seconds of pre-planning saves thirty minutes of public struggle.",
+      inputs: [
+        { q: "Planning in advance takes too much time when we are already busy.", a: "\"Taking thirty seconds to agree before going in saves thirty minutes of emotional conflict.\"", bundle: 'pro' },
+        { q: "My children are too young to remember rules we agreed on in the car.", a: "\"Asking them to repeat the plan back builds their memory and mental preparation.\"", bundle: 'pro' },
+        { q: "If I set rules beforehand, it ruins the fun and spontaneity of the outing.", a: "\"Clear boundaries create the safe container within which real fun can happen.\"", bundle: 'pro' },
+        { q: "I shouldn't have to explain rules before every single grocery trip.", a: "\"Consistent pre-planning builds habits until the behavior becomes second nature.\"", bundle: 'pro' },
+        { q: "They agreed in the car, so they shouldn't feel tempted once inside the store.", a: "\"Pre-planning gives a clear standard to return to when temptations arise.\"", bundle: 'pro' },
+        { q: "Pre-planning makes me sound like a nagging, overly strict parent.", a: "\"Agreeing during calm is loving leadership; waiting for friction leads to yelling.\"", bundle: 'pro' },
+        { q: "If they break the agreement, it proves that pre-planning doesn't work.", a: "\"Breaking an agreement gives a clear reference point to hold the boundary without drama.\"", bundle: 'pro' },
+        { q: "I should only bring up rules when bad behavior actually starts happening.", a: "\"Waiting for bad behavior means reacting in anger rather than guiding in peace.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Parental Control",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I must physically force my child to obey my commands right now.\"\n\nBelieving that authority requires controlling the child's body prevents parents from practicing **Stating Parent Action**. Focusing on parent-controlled actions establishes immovable boundaries with complete calm.\n\nMindset: I cannot control their body, but I can completely control my own actions.",
+      inputs: [
+        { q: "If I can't physically force them to clean up, I have no authority.", a: "\"Controlling my own actions—like putting uncollected toys away—executes firm authority.\"", bundle: 'pro' },
+        { q: "I have to keep yelling commands until they physically move their body.", a: "\"Yelling commands creates power struggles; stating parent action creates calm reality.\"", bundle: 'pro' },
+        { q: "Stating what I will do sounds passive and weak.", a: "\"Executing a calm parent action is the strongest, most unshakeable form of leadership.\"", bundle: 'pro' },
+        { q: "If they ignore my command, I am losing the battle.", a: "\"I don't need them to agree; I simply execute my stated parent action steadily.\"", bundle: 'pro' },
+        { q: "I need to grab their arm and force them to put their coat on.", a: "\"I can state when the car departs and let reality guide their choice.\"", bundle: 'pro' },
+        { q: "Focusing on my own actions means letting them get away with defiance.", a: "\"Parent action enforces consequences cleanly without getting into physical wrestling.\"", bundle: 'pro' },
+        { q: "I must make them say 'Yes sir' before I carry out the routine.", a: "\"Demanding verbal submission creates resentment; executing parent action builds quiet order.\"", bundle: 'pro' },
+        { q: "If I pull the car over, they win because we are delayed.", a: "\"Pulling over proves that safety is non-negotiable, establishing long-term peace.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Directives",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Telling my child 'Don't do that!' should be enough for them to stop.\"\n\nBelieving that negative prohibitions are clear instruction keeps parents from practicing **Positive Directives**. Giving positive replacement instructions gives the child's brain a concrete action to execute.\n\nMindset: Directing what TO do gives their brain a clear picture to follow.",
+      inputs: [
+        { q: "Shouting 'Don't run!' is simple and obvious enough for anyone.", a: "\"A child's brain pictures running; saying 'Use walking feet' gives them the exact action to do.\"", bundle: 'pro' },
+        { q: "They know what they are supposed to do, so I shouldn't have to specify.", a: "\"Naming the positive replacement behavior removes ambiguity and guides their energy.\"", bundle: 'pro' },
+        { q: "Telling them what to stop doing is faster than explaining what to do.", a: "\"Prohibitions trigger defensiveness; positive directives guide constructive behavior.\"", bundle: 'pro' },
+        { q: "If I say 'Don't hit!', they should automatically know to use gentle hands.", a: "\"In moments of high stress, naming 'Use gentle hands' gives them the immediate alternative.\"", bundle: 'pro' },
+        { q: "Focusing on positive directives feels like soft, weak parenting.", a: "\"Clear, direct positive instructions require strong clarity and active leadership.\"", bundle: 'pro' },
+        { q: "I shouldn't have to remind them to use indoor voices every time.", a: "\"Calm positive reminders build internal volume control without scolding.\"", bundle: 'pro' },
+        { q: "Saying 'Don't interrupt!' teaches them manners better than asking for a hand gesture.", a: "\"Giving them a physical action—like placing a hand on my arm—gives them a working tool.\"", bundle: 'pro' },
+        { q: "If I don't point out what they are doing wrong, they won't learn.", a: "\"Directing them toward what is right forms the positive habit far faster.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Household Routines",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"My child is just lazy and disobedient when daily transitions go badly.\"\n\nViewing recurring friction as a character failure prevents parents from practicing **Overhauling the Routine**. Redesigning environment and systems eliminates daily battles at their root.\n\nMindset: A recurring battle is usually a broken routine, not a broken child.",
+      inputs: [
+        { q: "If morning departure is chaotic, it's because my kids are lazy.", a: "\"Chaotic mornings mean our system is broken; setting up a door launch pad fixes the system.\"", bundle: 'pro' },
+        { q: "Bedtime battles happen because my child is inherently stubborn.", a: "\"Bedtime friction means the transition routine is unstructured; a visual chart creates order.\"", bundle: 'pro' },
+        { q: "Redesigning routines takes too much effort when they should just obey.", a: "\"Investing twenty minutes to fix a routine saves hundreds of hours of future arguing.\"", bundle: 'pro' },
+        { q: "If a routine fails once, it means changing systems doesn't work.", a: "\"Routines require fine-tuning during calm until the new habit locks in.\"", bundle: 'pro' },
+        { q: "I shouldn't have to put up picture charts for older children.", a: "\"Visual structure supports executive function for people of all ages.\"", bundle: 'pro' },
+        { q: "Planning routines makes our family life feel rigid and unnatural.", a: "\"Predictable routines create the underlying order that frees the family to relax.\"", bundle: 'pro' },
+        { q: "If they refuse to clean up, it's a moral failure that requires punishment.", a: "\"If cleanup fails daily, the storage system is overwhelming; labeling clear bins fixes it.\"", bundle: 'pro' },
+        { q: "I should be able to yell instructions from the kitchen and have them executed.", a: "\"Building environmental cues works infinitely better than shouting across rooms.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Child Responsibility",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"It's faster and cleaner if I just do all the household chores myself.\"\n\nFearing mess or delay keeps parents from practicing **Assigning Real Ownership**. Trusting children with real household roles builds genuine competence, dignity, and family contribution.\n\nMindset: Children thrive when they know the family truly needs their real help.",
+      inputs: [
+        { q: "It takes three times longer when my child sets the table, so I'd rather do it.", a: "\"Investing time now to teach them builds lifelong competence and real responsibility.\"", bundle: 'pro' },
+        { q: "My child is too young to handle real household chores without making a mess.", a: "\"Small, real responsibilities teach care and make them feel like a valued contributor.\"", bundle: 'pro' },
+        { q: "Chores should only be given as punishments for bad behavior.", a: "\"Standing family roles build dignity and show that everyone contributes to our home.\"", bundle: 'pro' },
+        { q: "If I assign a job, I have to inspect and criticize every tiny flaw.", a: "\"Thanking their real contribution builds confidence, while perfectionism destroys initiative.\"", bundle: 'pro' },
+        { q: "Children should spend all their time playing rather than doing household work.", a: "\"Real contribution satisfies a child's deep desire to feel needed and capable.\"", bundle: 'pro' },
+        { q: "If they complain about their assigned role, I should take it away.", a: "\"Holding the role steadily teaches them that family membership includes real duty.\"", bundle: 'pro' },
+        { q: "Paying them money for every basic chore is the only way to motivate them.", a: "\"Contributing to the home is a joy of belonging, not a commercial business transaction.\"", bundle: 'pro' },
+        { q: "They will feel overworked if I give them a daily standing responsibility.", a: "\"Meaningful standing roles build strong character, executive function, and self-worth.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  parentingadv: [
+    {
+      name: "Multi-step Anxiety",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Combining strategies feels scripted, fake, and overly complicated.\"\n\nFearing that combining relational moves sounds technical stops parents from practicing advanced sequences. Practicing combinations until they flow naturally builds genuine relational skill and unshakeable calm.\n\nMindset: Combining moves isn't a script; it is a complete relational response.",
+      inputs: [
+        { q: "Using three strategies in one response sounds like I'm reading a textbook.", a: "\"Combining moves is like learning music; once the notes are practiced, the harmony flows naturally.\"", bundle: 'pro' },
+        { q: "I can't remember all the steps when my child is screaming at me.", a: "\"Practicing one combination at a time during calm builds muscle memory for the storm.\"", bundle: 'pro' },
+        { q: "If I pause to think of the next move, my child will know I'm using a technique.", a: "\"A thoughtful pause signals calm authority and gives my brain space to choose love.\"", bundle: 'pro' },
+        { q: "It feels unnatural to validate feelings right before enforcing a limit.", a: "\"Connection and boundaries belong together; empathy softens the heart for the limit.\"", bundle: 'pro' },
+        { q: "I should just be able to speak naturally without planning combinations.", a: "\"My natural reaction is anger; planning combinations trains my heart to respond with grace.\"", bundle: 'pro' },
+        { q: "Combining moves takes too much mental energy during a busy day.", a: "\"Investing energy in smooth combinations saves hours of explosive, draining arguments.\"", bundle: 'pro' },
+        { q: "If my child sees me using a sequence, they will feel manipulated.", a: "\"Children feel deeply safe when parents respond with calm, structured, and predictable love.\"", bundle: 'pro' },
+        { q: "Advanced combinations are only needed for severe behavioral problems.", a: "\"Multi-step repair builds strong character in ordinary daily friction, not just severe meltdowns.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Emotional Impatience",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I don't have time to validate feelings or connect when things need to happen now.\"\n\nBelieving that connection wastes time during transitions causes parents to rush straight to commands, triggering resistance. Connecting before correcting saves time by removing defensiveness.\n\nMindset: Taking thirty seconds to connect saves thirty minutes of power struggle.",
+      inputs: [
+        { q: "I am too rushed in the morning to connect before giving an instruction.", a: "\"Connecting for ten seconds opens their heart, making the whole morning departure faster.\"", bundle: 'pro' },
+        { q: "Validating their wish makes them think I am going to give in to their demand.", a: "\"Validating their wish shows I understand their heart; holding the limit keeps reality steady.\"", bundle: 'pro' },
+        { q: "If I listen to their complaint, it just prolongs the argument.", a: "\"Hearing their struggle lets the emotional heat escape so they can accept the boundary.\"", bundle: 'pro' },
+        { q: "They should just obey my instruction immediately without needing empathy.", a: "\"Children obey far more willingly when they feel heard and respected as real people.\"", bundle: 'pro' },
+        { q: "Expressing empathy when they are misbehaving feels like rewarding bad behavior.", a: "\"Empathy isn't a reward for good behavior; it is the environment in which virtue grows.\"", bundle: 'pro' },
+        { q: "I don't have the emotional energy to listen to their drama today.", a: "\"Absorbing their drama with calm presence prevents an explosive meltdown later.\"", bundle: 'pro' },
+        { q: "If I validate their sadness, it will make them cry even more.", a: "\"Naming their sadness gives them permission to process it cleanly so it can pass.\"", bundle: 'pro' },
+        { q: "Giving choices within limits sounds like I'm negotiating my authority away.", a: "\"Offering choices within my boundary grants them healthy agency while keeping the limit firm.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Fear of Surrender",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Apologizing to my child or offering choices makes me look weak and surrenders control.\"\n\nFearing that humility or flexibility weakens parental standing keeps adults trapped in rigid power struggles. Owning mistakes and offering choices demonstrates genuine strength and builds deep trust.\n\nMindset: True authority is demonstrated through humility, self-control, and firm grace.",
+      inputs: [
+        { q: "If I apologize for losing my temper, my child will lose respect for my authority.", a: "\"Owning my mistakes models genuine integrity and earns deep, authentic respect.\"", bundle: 'pro' },
+        { q: "Giving them choices about how to do a chore surrenders my parental power.", a: "\"I set the destination; letting them choose the path builds competence and dignity.\"", bundle: 'pro' },
+        { q: "A strong parent never admits that they made a mistake or were unfair.", a: "\"Pretending perfection teaches hypocrisy; modeling repentance teaches the gospel.\"", bundle: 'pro' },
+        { q: "If I step away to regulate my own anger, my child wins the argument.", a: "\"Stepping away to calm down proves that I am in control of myself, not reacting blindly.\"", bundle: 'pro' },
+        { q: "Asking for forgiveness from a child turns the household hierarchy upside down.", a: "\"Asking forgiveness restores relational safety without changing my role as leader.\"", bundle: 'pro' },
+        { q: "If I don't get the last word in a debate, I have lost control of the home.", a: "\"Demanding the last word is pride; holding the boundary quietly is true authority.\"", bundle: 'pro' },
+        { q: "Offering a reset after a meltdown lets them off the hook too easily.", a: "\"A reset calms their nervous system so they can actually make genuine amends.\"", bundle: 'pro' },
+        { q: "If I show warmth after holding a hard boundary, they will think the rule didn't matter.", a: "\"Warmth proves that my love is permanent, even when the limit is immovable.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Shame over Relapse",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If my child has another meltdown after a reset, the advanced method failed.\"\n\nViewing repeated behavioral friction as evidence of failure causes parents to abandon structured moves in frustration. Character formation is a long-term process requiring repeated practice over time.\n\nMindset: Relapse is not failure; it is the normal process of learning virtue over time.",
+      inputs: [
+        { q: "We did the whole repair sequence yesterday, and today they exploded again.", a: "\"Learning virtue takes hundreds of repetitions; consistency today builds character tomorrow.\"", bundle: 'pro' },
+        { q: "If my child still throws tantrums, it means my advanced strategies aren't working.", a: "\"Meltdowns are the natural sound of a young brain learning self-regulation under stress.\"", bundle: 'pro' },
+        { q: "I must be doing the combinations wrong because my child is still stubborn.", a: "\"My job is to provide steady, loving leadership; their growth happens at its own pace.\"", bundle: 'pro' },
+        { q: "If a boundary triggers tears, I must have chosen the wrong combination.", a: "\"Tears are a healthy emotional release when a child accepts an immovable boundary.\"", bundle: 'pro' },
+        { q: "We keep having the same argument over screen time every single evening.", a: "\"Consistent structure held calmly over time eventually turns friction into habit.\"", bundle: 'pro' },
+        { q: "I feel like a terrible parent when my child explodes in front of other people.", a: "\"Public meltdowns test my self-regulation, not my worth or reputation as a parent.\"", bundle: 'pro' },
+        { q: "If they don't apologize with tears, their repentance wasn't genuine.", a: "\"Repentance is about turning behavior around, not performing emotional drama.\"", bundle: 'pro' },
+        { q: "Having to repeat the reset protocol proves that the discipline isn't sticking.", a: "\"Repetition is how neural pathways form; every reset reinforces self-control.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Parental Perfectionism",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I must execute every step of every sequence perfectly or I am ruining my child.\"\n\nFearing that minor errors in application ruin character growth creates anxiety and emotional rigidity in parents. Children thrive on consistent, loving presence, not mechanical perfection.\n\nMindset: Parenting requires faithful presence and grace, not mechanical perfection.",
+      inputs: [
+        { q: "I forgot step two of the sequence, so the whole discipline moment was wasted.", a: "\"Parenting is relational, not mechanical; my calm presence matters more than exact steps.\"", bundle: 'pro' },
+        { q: "I raised my voice slightly during step three, so I failed the whole process.", a: "\"Minor stumbles are normal; I can adjust my tone mid-sentence and keep leading in peace.\"", bundle: 'pro' },
+        { q: "If I don't use the exact wording from the strategy, it won't work.", a: "\"The heart of the move matters far more than quoting exact textbook phrases.\"", bundle: 'pro' },
+        { q: "I feel overwhelmed trying to monitor my tone, my words, and my steps all at once.", a: "\"Focus on staying calm and loving first; the strategic steps will follow naturally.\"", bundle: 'pro' },
+        { q: "Other parents seem to handle meltdowns effortlessly without stumbling.", a: "\"I see other families from the outside; everyone struggles and learns in private.\"", bundle: 'pro' },
+        { q: "If I mess up a repair sequence, I will cause long-term emotional damage.", a: "\"Children are resilient; modeling how I recover from a blunder teaches them grace.\"", bundle: 'pro' },
+        { q: "I need to master all five combinations perfectly before I try them at home.", a: "\"Trying one move awkwardly today builds the skill far better than waiting for perfection.\"", bundle: 'pro' },
+        { q: "When a strategy doesn't work instantly, I panic and try five different things.", a: "\"Sticking calmly to one solid combination gives my child the stability they need.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };

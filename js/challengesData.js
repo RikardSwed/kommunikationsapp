@@ -10368,4 +10368,168 @@ const challengesCollections = {
       ]
     },
   ],
+  parenting6: [
+    {
+      name: "Store and Public Outings",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Managing public environments like grocery stores, shopping malls, and restaurants proactively before excitement or impulse takes over.",
+      inputs: [
+        { q: "They begin pulling items off low grocery shelves while walking down the aisle.", a: "\"Keep two hands on the shopping cart handle, please.\" [Positive Directives]", bundle: 'pro', guideBack: "A positive replacement directive" },
+        { q: "They demand an expensive toy displayed at the store entrance checkout lane.", a: "\"Before we walked in, we agreed: we are buying only the items on our grocery list today.\" [Planning in Advance]", bundle: 'pro', guideBack: "An advance agreement" },
+        { q: "They begin running fast through the narrow clothing racks in a department store.", a: "\"Use walking feet right beside me, please.\" [Positive Directives]", bundle: 'pro', guideBack: "A positive replacement directive" },
+        { q: "They beg for a sugary drink in the checkout line despite prior rules.", a: "\"I purchase items that were written on our family shopping list before we left home.\" [Stating Parent Action]", bundle: 'pro', guideBack: "A statement of parent action" },
+        { q: "They start climbing on the booth seating at a crowded sit-down restaurant.", a: "\"Keep your bottom flat on the seat cushion, please.\" [Positive Directives]", bundle: 'pro', guideBack: "A positive replacement directive" },
+        { q: "They scream loudly when told they cannot get a second dessert at a buffet.", a: "\"I stay at restaurant tables where voices are quiet. We can step outside to the car until calm.\" [Stating Parent Action]", bundle: 'pro', guideBack: "A statement of parent action" },
+        { q: "They touch fragile glass ornaments on display at an outdoor holiday market.", a: "\"Put your hands in your jacket pockets while we look at the glass, please.\" [Positive Directives]", bundle: 'pro', guideBack: "A positive replacement directive" },
+        { q: "You arrive at a busy public library for children's story time.", a: "\"Before we step inside, remember our agreement: whispered voices and walking feet.\" [Planning in Advance]", bundle: 'pro', guideBack: "An advance agreement" },
+      ]
+    },
+    {
+      name: "Morning Rush Chaos",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Overcoming frantic morning departures, missing belongings, and transition delays through proactive structure and clear parent boundaries.",
+      inputs: [
+        { q: "Shoes and backpacks are missing five minutes before the school bus arrives.", a: "\"Our morning is stressed. Starting today, our bags and shoes live at the door launch pad every night.\" [Overhauling the Routine]", bundle: 'pro', guideBack: "A calm routine agreement" },
+        { q: "They lie in bed refusing to get up when the morning alarm sounds.", a: "\"I open the bedroom curtains and start breakfast when the morning alarm rings.\" [Stating Parent Action]", bundle: 'pro', guideBack: "A statement of parent action" },
+        { q: "They argue for ten minutes about which socks to wear with their sneakers.", a: "\"Pick between the blue socks or the white socks on your bed, please.\" [Positive Directives]", bundle: 'pro', guideBack: "A positive replacement directive" },
+        { q: "They leave their pajamas in a heap in the middle of the bathroom floor.", a: "\"Hang your pajamas on your bedroom door hook, please.\" [Positive Directives]", bundle: 'pro', guideBack: "A positive replacement directive" },
+        { q: "They stall at the breakfast table playing with cereal rather than eating.", a: "\"The breakfast table clears at 7:30 AM so we can head to the bus on time.\" [Stating Parent Action]", bundle: 'pro', guideBack: "A statement of parent action" },
+        { q: "They complain every morning that they can't find their completed homework folder.", a: "\"You are our official backpack auditor. Your job is placing your signed folder in your bag after dinner.\" [Assigning Real Ownership]", bundle: 'pro', guideBack: "An assignment of responsibility" },
+        { q: "Getting ready for school involves constant nagging about teeth brushing and hair combing.", a: "\"Nagging is exhausting. Let's put up a visual morning checklist in the bathroom to guide your steps.\" [Overhauling the Routine]", bundle: 'pro', guideBack: "A calm routine agreement" },
+        { q: "They run around the house without shoes when it's time to walk out the front door.", a: "\"Put your sneakers on your feet at the door mat, please.\" [Positive Directives]", bundle: 'pro', guideBack: "A positive replacement directive" },
+      ]
+    },
+    {
+      name: "Bedtime and Evening Stalling",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Ending late-night negotiations, endless water requests, and bedtime delays through pre-established routines and parent-controlled actions.",
+      inputs: [
+        { q: "They request three extra glasses of water and two additional stories after lights out.", a: "\"Before we started bedtime, we agreed: two stories and one water cup by the bed.\" [Planning in Advance]", bundle: 'pro', guideBack: "An advance agreement" },
+        { q: "They come out of their bedroom five times after bedtime announcing they aren't tired.", a: "\"I return children to their beds quietly when lights out time has passed.\" [Stating Parent Action]", bundle: 'pro', guideBack: "A statement of parent action" },
+        { q: "They throw their dirty clothes on the bedroom carpet instead of the hamper.", a: "\"Place your shirt and pants inside the bedroom laundry hamper, please.\" [Positive Directives]", bundle: 'pro', guideBack: "A positive replacement directive" },
+        { q: "The evening transition from dinner to bath time involves constant whining and hiding.", a: "\"Evening transitions are tough. Let's set a fun 5-minute music timer that signals bath time.\" [Overhauling the Routine]", bundle: 'pro', guideBack: "A calm routine agreement" },
+        { q: "They argue about turning off their bedroom reading light at 8:30 PM.", a: "\"I turn the hallway nightlight on and switch off the bedroom lamp at 8:30 PM.\" [Stating Parent Action]", bundle: 'pro', guideBack: "A statement of parent action" },
+        { q: "They refuse to brush their teeth at the bathroom sink after pajamas are on.", a: "\"Hold your toothbrush and brush your front teeth, please.\" [Positive Directives]", bundle: 'pro', guideBack: "A positive replacement directive" },
+        { q: "They complain that their bedroom feels messy and uncomfortable before sleep.", a: "\"You are our evening bed inspector. Your responsibility is smoothing your blanket before story time.\" [Assigning Real Ownership]", bundle: 'pro', guideBack: "An assignment of responsibility" },
+        { q: "Bedtime reading turns into a nightly power struggle over how many books are read.", a: "\"Book arguments are exhausting. Let's put two books on the nightstand during afternoon prep.\" [Overhauling the Routine]", bundle: 'pro', guideBack: "A calm routine agreement" },
+      ]
+    },
+    {
+      name: "Household Chores Resistance",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Transforming chore battles into smooth household systems through standing responsibility roles and positive directives.",
+      inputs: [
+        { q: "Toys remain scattered across the living room carpet hours after play has ended.", a: "\"Place the wooden train tracks inside the blue bin, please.\" [Positive Directives]", bundle: 'pro', guideBack: "A positive replacement directive" },
+        { q: "They complain that picking up the playroom is unfair and too much work for one person.", a: "\"Cleanup feels huge when toys are mixed. Let's assign picture labels to four bins so sorting is fast.\" [Overhauling the Routine]", bundle: 'pro', guideBack: "A calm routine agreement" },
+        { q: "They leave their dirty dinner plate on the kitchen table after finishing their meal.", a: "\"Carry your plate over and set it inside the kitchen sink, please.\" [Positive Directives]", bundle: 'pro', guideBack: "A positive replacement directive" },
+        { q: "They refuse to help clear the dinner table claiming it isn't their job.", a: "\"You are our official table manager. Clearing the napkin holder and cups is your standing family role.\" [Assigning Real Ownership]", bundle: 'pro', guideBack: "An assignment of responsibility" },
+        { q: "Clean laundry stays in the hallway basket for days without being put away.", a: "\"I fold laundry when clothes are brought to the laundry room; put your hamper by the door.\" [Stating Parent Action]", bundle: 'pro', guideBack: "A statement of parent action" },
+        { q: "They whine about having to feed the family pet every afternoon.", a: "\"Our dog relies on your care. Fill the water bowl to the silver line, please.\" [Positive Directives]", bundle: 'pro', guideBack: "A positive replacement directive" },
+        { q: "They drop their wet bath towel on the wooden bedroom floor after showering.", a: "\"Hang your wet towel on the bathroom door hook, please.\" [Positive Directives]", bundle: 'pro', guideBack: "A positive replacement directive" },
+        { q: "Trash containers in the study overflow because no one feels responsible for them.", a: "\"You are our waste coordinator. Emptying the office paper bin every Friday is your real role.\" [Assigning Real Ownership]", bundle: 'pro', guideBack: "An assignment of responsibility" },
+      ]
+    },
+    {
+      name: "Car Rides and Transitions",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Maintaining safety, calm, and order during car trips, arrivals, and physical transitions between places.",
+      inputs: [
+        { q: "They unbuckle their seatbelt while the car is moving down the street.", a: "\"I drive the car when all seatbelts stay clicked. I am pulling the car over now.\" [Stating Parent Action]", bundle: 'pro', guideBack: "A statement of parent action" },
+        { q: "They scream loudly across the back seat to fight with their sibling while driving.", a: "\"Use quiet, low voices in the back seat, please.\" [Positive Directives]", bundle: 'pro', guideBack: "A positive replacement directive" },
+        { q: "They throw snack wrappers onto the carpet floor of the car during a trip.", a: "\"Put your snack wrapper inside the door pocket bag, please.\" [Positive Directives]", bundle: 'pro', guideBack: "A positive replacement directive" },
+        { q: "Getting into the car for school involves stalling, running around the driveway, and delay.", a: "\"Before we walk out the front door, remember our agreement: straight to your car seat.\" [Planning in Advance]", bundle: 'pro', guideBack: "An advance agreement" },
+        { q: "They kick the back of the driver's seat repeatedly while sitting in their car seat.", a: "\"Rest your feet flat against the car seat cushion, please.\" [Positive Directives]", bundle: 'pro', guideBack: "A positive replacement directive" },
+        { q: "Trash and water bottles accumulate in chaotic piles on the floor of the family car.", a: "\"You are our official car captain. Your responsibility is clearing all bottles from the car when we park.\" [Assigning Real Ownership]", bundle: 'pro', guideBack: "An assignment of responsibility" },
+        { q: "They refuse to get out of the car upon arriving at school in the morning.", a: "\"I open the car door and walk students to the school gate at 8:15 AM.\" [Stating Parent Action]", bundle: 'pro', guideBack: "A statement of parent action" },
+        { q: "Long road trips turn into constant arguments over screen devices and music.", a: "\"Road trips are stressful. Let's create a written trip schedule with alternating music and tablet hours.\" [Overhauling the Routine]", bundle: 'pro', guideBack: "A calm routine agreement" },
+      ]
+    },
+  ],
+  parentingadv: [
+    {
+      name: "High-Intensity Explosions",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Managing acute meltdowns, screaming, and physical aggression where parental self-regulation and quiet anchoring are required.",
+      inputs: [
+        { q: "They throw a toy across the room and yell that they hate everyone in the house.", a: "\"Throwing toys is unsafe. Take two minutes on the sofa until your body is calm.\" [Resetting and Restoring]", bundle: 'pro', guideBack: "A restorative connection" },
+        { q: "They scream \"YOU NEVER CARE ABOUT ME!\" when told screen time is over.", a: "\"I see how much fun you were having. I wish we could watch shows all day. And screen time is over—do you want to turn off the TV or hand me the remote?\" [Empathetic Limit Setting]", bundle: 'pro', guideBack: "An empathetic boundary" },
+        { q: "They sit under the dining table crying uncontrollably after a major discipline moment.", a: "(Drop your shoulders, keep your tone low) \"You're feeling so deeply hurt and upset right now.\" (Sit quietly beside the table) [Anchoring the Meltdown]", bundle: 'pro', guideBack: "A calm, steady response" },
+        { q: "They kick the bedroom wall in anger after being told to brush their teeth.", a: "\"Kicking walls is unsafe. Let's take a two-minute pause together on your bed until your heart settles.\" [Resetting and Restoring]", bundle: 'pro', guideBack: "A restorative connection" },
+        { q: "They scream at the top of their lungs at the library checkout desk when told to return a book.", a: "(Take a breath, ignore watching crowds) \"You are so disappointed to leave that book today.\" (Gently hold their hand and walk to the car) [Anchoring the Meltdown]", bundle: 'pro', guideBack: "A calm, steady response" },
+        { q: "They slam their bedroom door hard enough to rattle the hallway picture frames.", a: "\"Slamming doors causes damage. Take two minutes to settle your body, and then we'll talk about making it right.\" [Resetting and Restoring]", bundle: 'pro', guideBack: "A restorative connection" },
+        { q: "They sob bitterly into their pillow because a family park trip was cancelled due to rain.", a: "\"I know how much you were looking forward to the park today. I wish it wasn't raining too. And we're staying home—do you want to play a board game or draw?\" [Empathetic Limit Setting]", bundle: 'pro', guideBack: "An empathetic boundary" },
+        { q: "They smash their hand onto the birthday cake in anger because they were not allowed to blow out the candles first.", a: "(Breathe deeply, unclench your jaw) \"You are so angry and disappointed that you couldn't blow out the candles first.\" [Anchoring the Meltdown]", bundle: 'pro', guideBack: "A calm, steady response" },
+      ]
+    },
+    {
+      name: "Deep Resistance and Refusal",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Addressing stubborn refusals, refusals to clean up, and task stalling through guided problem-solving and structured choices.",
+      inputs: [
+        { q: "They slump over their desk crying that they cannot complete their math homework.", a: "\"That math page looks really long and tough today. What is one small problem you could solve first? Yes, as soon as that page is finished, you can go play.\" [Guided Problem Solving]", bundle: 'pro', guideBack: "A problem-solving prompt" },
+        { q: "They cross their arms and stand in the hallway shouting \"I'm not putting on my shoes!\".", a: "\"I know you want to keep playing inside. I hear you, and it's time to leave—do you want to put on your sneakers or your boots?\" [Empathetic Limit Setting]", bundle: 'pro', guideBack: "An empathetic boundary" },
+        { q: "They complain that their bedroom is too messy to ever clean up alone.", a: "\"Cleaning that big pile of clothes feels overwhelming. How could we break the room into two zones? Yes, once the floor is clear, you can go outside.\" [Guided Problem Solving]", bundle: 'pro', guideBack: "A problem-solving prompt" },
+        { q: "They lie limp on the living room rug pretending they cannot move to wash their hands for dinner.", a: "\"I see how comfortable you are on the rug. I get it, and dinner is served—do you want to walk like a penguin or hop like a frog to the sink?\" [Empathetic Limit Setting]", bundle: 'pro', guideBack: "An empathetic boundary" },
+        { q: "They sit crying on the hallway floor claiming they don't know how to pack their school bag.", a: "\"Packing all those folders takes careful planning. What heavy book should go in first? Yes, as soon as the bag is zipped, you can watch your show.\" [Guided Problem Solving]", bundle: 'pro', guideBack: "A problem-solving prompt" },
+        { q: "They refuse to get dressed for school, sitting under their bed blanket.", a: "\"I know getting out of a warm bed is hard in the morning. I hear you, and school departure is coming—do you want to put on your shirt first or your pants?\" [Empathetic Limit Setting]", bundle: 'pro', guideBack: "An empathetic boundary" },
+        { q: "They complain that they don't know how to fix a Lego tower that broke.", a: "\"Rebuilding a broken tower takes a lot of patience. Which corner piece do you want to snap down first? As soon as the base is set, the walls go up fast.\" [Guided Problem Solving]", bundle: 'pro', guideBack: "A problem-solving prompt" },
+        { q: "They refuse to help clear the dinner table, claiming it is unfair.", a: "\"I know you'd rather go straight to playing after dinner. I get it, and clearing the table is your standing role—do you want to carry the cups or the napkins?\" [Empathetic Limit Setting]", bundle: 'pro', guideBack: "An empathetic boundary" },
+      ]
+    },
+    {
+      name: "Parental Emotional Overload",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Navigating moments when parental anger flares, shouting occurs, or unfair accusations require modeled repentance and reconnecting.",
+      inputs: [
+        { q: "You promised to read three bedtime stories but skipped them out of exhaustion and irritation.", a: "(Take a deep breath) \"I broke my promise about reading three stories tonight because I was tired and annoyed. That wasn't fair, and I'm sorry. Let's make sure we read three tomorrow.\" [Parental Reset and Repair]", bundle: 'pro', guideBack: "A humble apology and reconnect" },
+        { q: "You lost your temper and pulled the car over aggressively during a noisy ride to swimming lessons.", a: "\"I lost my cool and pulled the car over in anger. That was unsafe and scary, and I'm sorry. Will you forgive me?\" [Parental Reset and Repair]", bundle: 'pro', guideBack: "A humble apology and reconnect" },
+        { q: "You mocked your child's crying voice when they threw a fit about wearing dress shoes to church.", a: "\"I made fun of your crying earlier, and that was mean and disrespectful of me. I'm really sorry. Come give me a hug.\" [Parental Reset and Repair]", bundle: 'pro', guideBack: "A humble apology and reconnect" },
+        { q: "You feel yourself boiling with rage as your child screams continuously about having their hair brushed.", a: "(Pause, drop your shoulders, lower your voice) \"You are feeling so hurt and overwhelmed by having your hair brushed right now.\" [Anchoring the Meltdown]", bundle: 'pro', guideBack: "A calm, steady response" },
+        { q: "You grabbed your child's backpack out of their hands and tossed it onto the porch in frustration.", a: "\"I threw your backpack in frustration, and that was wrong of me. I want to handle my anger with peace. I'm sorry.\" [Parental Reset and Repair]", bundle: 'pro', guideBack: "A humble apology and reconnect" },
+        { q: "You realize you're about to explode at your child for knocking over a bucket of paint in the garage.", a: "\"Take two minutes on the bench while I take a quiet breath. Spilling paint was a mistake—let's get towels and clean it together.\" [Resetting and Restoring]", bundle: 'pro', guideBack: "A restorative connection" },
+        { q: "You threatened to throw away all their birthday presents during a heated argument over bedtime.", a: "\"I threatened to throw away your toys in anger, and that was wrong and unfair. I am so sorry. Our rules stay firm, but I will speak with love.\" [Parental Reset and Repair]", bundle: 'pro', guideBack: "A humble apology and reconnect" },
+        { q: "You scolded your child harshly for making you late to an appointment when you were the one who mislaid the keys.", a: "\"I yelled at you for being late, but I was the one who misplaced the keys. That was unfair to you, and I'm sorry.\" [Parental Reset and Repair]", bundle: 'pro', guideBack: "A humble apology and reconnect" },
+      ]
+    },
+    {
+      name: "Sibling and Relational Ruptures",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Addressing heated disputes between children, toy snatching, and physical shoving through guided repair and warm follow-up.",
+      inputs: [
+        { q: "They shove their sibling off the sofa during a fight over the TV remote.", a: "\"Your body is too upset to play safely right now. Take two minutes on the chair to settle. (After 2 minutes) Shoving was wrong—what do you need to do to make it right? Thank you for apologizing; give me a hug.\" [Resetting and Restoring]", bundle: 'pro', guideBack: "A restorative connection" },
+        { q: "They snatch a game controller directly out of their brother's hands in anger.", a: "\"I see how much you want a turn with the game. I wish you could play right now. And snatching is not allowed—do you want to ask nicely for a turn or set the timer?\" [Empathetic Limit Setting]", bundle: 'pro', guideBack: "An empathetic boundary" },
+        { q: "They scream \"I HATE YOU AND I'LL NEVER SHARE WITH YOU AGAIN!\" at their sister.", a: "(Pause, keep your tone low) \"You are so furious and hurt by what happened in the game right now.\" (Sit quietly near them until breathing slows) [Anchoring the Meltdown]", bundle: 'pro', guideBack: "A calm, steady response" },
+        { q: "They throw a couch cushion at their sibling across the living room.", a: "\"Throwing cushions at people is unsafe. Take a two-minute pause on the rug to calm down. Thank you for fixing that mistake—come here and squeeze my hand.\" [Resetting and Restoring]", bundle: 'pro', guideBack: "A restorative connection" },
+        { q: "They complain bitterly that their sibling got a larger slice of cake at dessert.", a: "\"I know it feels unfair when a slice looks bigger. I hear you, and this is your piece—do you want to eat the crust first or the frosting?\" [Empathetic Limit Setting]", bundle: 'pro', guideBack: "An empathetic boundary" },
+        { q: "They lock their sibling out of the playroom in anger during a game dispute.", a: "\"Locking your brother out was wrong. Take a short reset, and then let's unlock the door and make peace together. I'm so proud of you for choosing the good!\" [Resetting and Restoring]", bundle: 'pro', guideBack: "A restorative connection" },
+        { q: "They raise their fist to hit their sibling during an argument over a Lego brick.", a: "(Step quietly between them, hold their arm gently) \"I won't let you hit. You're feeling super angry, and we keep hands safe.\" [Anchoring the Meltdown]", bundle: 'pro', guideBack: "A calm, steady response" },
+        { q: "They refuse to say sorry to their sibling after accidentally breaking their drawing.", a: "\"Saying sorry feels really hard when you're embarrassed. How could we help fix the drawing together? Yes, as soon as we tape it up, we can go play.\" [Guided Problem Solving]", bundle: 'pro', guideBack: "A problem-solving prompt" },
+      ]
+    },
+    {
+      name: "Transition and Habit Hurdles",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Overcoming recurring transition friction, departure delays, and daily routine resistance through pre-planning, parent actions, and restorative follow-up.",
+      inputs: [
+        { q: "They refuse to get into their car seat at school pickup, locking their legs straight.", a: "\"I know you're tired and don't want to get in the car seat. I hear you, and safety requires buckled seats—do you want to climb in yourself or have me lift you?\" [Empathetic Limit Setting]", bundle: 'pro', guideBack: "An empathetic boundary" },
+        { q: "They unbuckle their seatbelt while the car is moving down the street.", a: "\"I drive the car when all seatbelts remain clicked. I am pulling over to the curb now.\" (Stop the car calmly and wait) [Anchoring the Meltdown]", bundle: 'pro', guideBack: "A calm, steady response" },
+        { q: "Getting ready for school involves constant nagging about teeth brushing and shoe tying.", a: "\"Nagging every morning is exhausting. What picture checklist could we put in the bathroom to guide your steps? Yes, as soon as the checklist is checked, morning screen time opens.\" [Guided Problem Solving]", bundle: 'pro', guideBack: "A problem-solving prompt" },
+        { q: "They throw their shoes across the front entryway when told it is time to leave for practice.", a: "\"Throwing shoes is unsafe. Take two minutes on the doorway bench to reset your body. Thank you for putting them on—let's walk to the car together.\" [Resetting and Restoring]", bundle: 'pro', guideBack: "A restorative connection" },
+        { q: "They refuse to turn off their bedroom reading lamp at bedtime after three warnings.", a: "\"I know you really wish you could keep reading for another hour. I get it, and bedtime is now—do you want to switch off the lamp or have me do it?\" [Empathetic Limit Setting]", bundle: 'pro', guideBack: "An empathetic boundary" },
+        { q: "They stall at the breakfast table playing with cereal rather than eating before the school bus.", a: "\"Our departure is in ten minutes. What steps do you need to take to be ready on time? Yes, as soon as your shoes are on, you can grab your backpack.\" [Guided Problem Solving]", bundle: 'pro', guideBack: "A problem-solving prompt" },
+        { q: "They lie in bed refusing to wake up when the morning alarm rings.", a: "\"I open the bedroom curtains and start breakfast when the morning alarm rings.\" (Open curtains calmly and head to the kitchen) [Anchoring the Meltdown]", bundle: 'pro', guideBack: "A calm, steady response" },
+        { q: "They refuse to wash their hands at the bathroom sink after coming in from outdoor play.", a: "\"I know you want to go straight to eating your snack. I hear you, and clean hands are required—do you want to use the blue soap or the green soap?\" [Empathetic Limit Setting]", bundle: 'pro', guideBack: "An empathetic boundary" },
+      ]
+    },
+  ],
 };

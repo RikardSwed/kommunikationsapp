@@ -11458,6 +11458,170 @@ const collections = {
       ]
     },
   ],
+  parenting6: [
+    {
+      name: "Planning in Advance",
+      guideFront: "Agree on the plan before...",
+      guideBack: "An advance agreement",
+      description: "Establishing clear expectations, rules, and agreements with your child before entering a challenging or high-friction situation (such as a grocery store, restaurant, church service, or playdate).\n\n• **Set expectations early** — explain the plan while everyone is calm and receptive before stepping into the environment\n• **Ask for verbal confirmation** — have the child repeat the agreed plan back in their own words\n• **Connect boundary to outcome** — state clearly what will happen if the agreement is kept or broken\n\nProactive agreements replace in-the-moment battles with pre-established clarity.\n\nMindset: Preparing before the storm prevents the storm from taking over.",
+      inputs: [
+        { q: "You are about to walk into a busy grocery store with your young child.", a: "\"Before we go inside, let's review our plan: hands stay on the cart and we pick two fruits together.\"", bundle: 'free' },
+        { q: "You are pulling up to a restaurant for a family dinner.", a: "\"Before we walk in, remember our agreement: we stay seated at the table and use quiet indoor voices.\"", bundle: 'free' },
+        { q: "You are driving to a playdate at a friend's house.", a: "\"Before we arrive, what is our plan for when it's time to clean up the toys and say goodbye?\"", bundle: 'free' },
+        { q: "You are about to start a Sunday morning church service.", a: "\"Before we go in, let's remember our plan: quiet drawing during the talk, and we stay in our pew.\"", bundle: 'free' },
+        { q: "You are heading into a department store with breakable items on low shelves.", a: "\"Before we enter, what do we do with our hands when we see glass items on the shelves?\"", bundle: 'free' },
+        { q: "You are preparing to host several children for a birthday party at your home.", a: "\"Before our guests arrive, let's agree on which special toys stay in your closet and which ones we share.\"", bundle: 'pro' },
+        { q: "You are about to embark on a three-hour road trip in the car.", a: "\"Before we start the car, let's agree: tablet time starts after we pass the big bridge.\"", bundle: 'pro' },
+        { q: "You are walking toward a neighborhood park with a splash pad.", a: "\"Before we head to the water, let's agree: when I give the five-minute warning, we dry off without arguing.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stating Parent Action",
+      guideFront: "State what you will do when...",
+      guideBack: "A statement of parent action",
+      description: "Stating what you as the parent will do to maintain a boundary, rather than trying to forcibly control the child's body or barking orders.\n\n• **Focus on your agency** — state the action that is 100% within your personal control to execute\n• **Eliminate nagging** — replace repeated commands (\"Buckle up!\") with calm parent action (\"The car moves when belts are buckled\")\n• **Execute with quiet calm** — carry out your stated action steadily without anger or dramatic speeches\n\nStating parent action grounds authority in clear, calm reality rather than power struggles.\n\nMindset: I cannot control their body, but I can completely control my own actions.",
+      inputs: [
+        { q: "Your children are shouting loudly in the back seat while you are driving.", a: "\"I drive the car when the noise level is safe and quiet. I am pulling over until it's quiet.\"", bundle: 'free' },
+        { q: "Toys are scattered across the living room floor past pickup time.", a: "\"I am putting away any toys left on the rug into the garage box for the week.\"", bundle: 'free' },
+        { q: "Your child is interrupting you repeatedly while you speak on the phone.", a: "\"I answer questions when your voice is quiet and my call is finished.\"", bundle: 'free' },
+        { q: "Your child refuses to put on their seatbelt in the driveway.", a: "\"The car starts moving as soon as all seatbelts are clicked.\"", bundle: 'free' },
+        { q: "Your child is splashing water out of the bathtub onto the bathroom tile.", a: "\"Bath time continues while water stays in the tub. I am draining the water now.\"", bundle: 'free' },
+        { q: "Your child is throwing couch cushions across the family room.", a: "\"Cushions stay on the sofa. I am setting the cushions in the closet for tonight.\"", bundle: 'pro' },
+        { q: "Your child is demanding dessert while leaving their dinner plate completely untouched.", a: "\"I serve dessert after the main dinner meal is completed.\"", bundle: 'pro' },
+        { q: "Your children are fighting loudly over who holds the TV remote control.", a: "\"I turn the television on when everyone agrees politely on a show.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Positive Directives",
+      guideFront: "Tell them what to do when...",
+      guideBack: "A positive replacement directive",
+      description: "Directing a child toward the specific positive behavior they should do, rather than shouting what they should stop doing.\n\n• **Specify replacement behavior** — name the exact physical action you want to see (\"Walking feet\" instead of \"Don't run\")\n• **Keep it concrete** — use simple, actionable language that a child's brain can picture immediately\n• **State it with calm confidence** — deliver the directive as a clear, polite instruction rather than a plea\n\nPositive directives guide a child's energy toward constructive action.\n\nMindset: Telling them what to do gives their brain a clear picture to follow.",
+      inputs: [
+        { q: "Your child is running at full speed down a slick hallway indoors.", a: "\"Use walking feet in the hallway, please.\"", bundle: 'free' },
+        { q: "Your child is shouting loudly across the kitchen table during lunch.", a: "\"Use your indoor quiet voice at the table.\"", bundle: 'free' },
+        { q: "Your child is grabbing a toy directly out of their sibling's hands.", a: "\"Ask with words: 'May I have a turn when you're finished?'\"", bundle: 'free' },
+        { q: "Your child is slamming the front screen door hard when walking outside.", a: "\"Guide the door softly with your hand until it closes.\"", bundle: 'free' },
+        { q: "Your child is standing on a kitchen chair to reach a high counter.", a: "\"Keep both feet flat on the floor, please.\"", bundle: 'free' },
+        { q: "Your child is throwing small wooden blocks across the playroom carpet.", a: "\"Keep the blocks on the rug and stack them up.\"", bundle: 'pro' },
+        { q: "Your child is interrupting a conversation between two adults.", a: "\"Place your hand gently on my wrist to show me you need me.\"", bundle: 'pro' },
+        { q: "Your child is dragging their muddy boots across the clean living room rug.", a: "\"Step onto the doorway mat and take your boots off there.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Overhauling the Routine",
+      guideFront: "Redesign the routine when...",
+      guideBack: "A calm routine agreement",
+      description: "Analyzing recurring daily friction (such as morning departure, bedtime stalling, or homework battles) as a structural routine problem rather than an obedience failure, and redesigning the system together when calm.\n\n• **Identify systemic friction** — notice which daily transitions consistently trigger stress or conflict\n• **Redesign during peace** — discuss and create new visual or structural steps when everyone is calm and rested\n• **Build environmental cues** — use charts, set out clothes early, or create fixed physical stations\n\nFixing the routine eliminates recurring power struggles at their root.\n\nMindset: A recurring battle is usually a broken routine, not a broken child.",
+      inputs: [
+        { q: "Every morning is chaotic because shoes, backpacks, and jackets are missing at departure time.", a: "\"Our morning departure is stressed. Let's set up a launch pad by the front door every night before bed.\"", bundle: 'free' },
+        { q: "Bedtime takes over an hour every night because of endless requests for water, stories, and bathroom visits.", a: "\"Bedtime feels rushed and tiring. Let's make a visual picture chart showing our four steps in order.\"", bundle: 'free' },
+        { q: "Homework creates a daily argument immediately after school when everyone is exhausted.", a: "\"Doing homework right after school is frustrating. Let's agree on a 30-minute snack and play break first.\"", bundle: 'free' },
+        { q: "Getting dressed in the morning turns into a 20-minute debate over outfits.", a: "\"Choosing clothes in the morning is stressful. Let's pick out two complete outfits every Sunday night.\"", bundle: 'free' },
+        { q: "Dinner prep is interrupted constantly by children whining for snacks right before the meal.", a: "\"Pre-dinner whining happens daily. Let's create an official 4:00 PM appetizer plate of fresh veggies.\"", bundle: 'free' },
+        { q: "Cleaning up the playroom at night feels overwhelming because toys are mixed in big bins.", a: "\"Playroom cleanup is overwhelming. Let me label four clear bins with pictures so everything has a home.\"", bundle: 'pro' },
+        { q: "Entering the house after school results in backpacks and coats dumped in the middle of the hallway.", a: "\"Entering the house creates a mountain of bags. Let's assign everyone their own hook and cubby by the door.\"", bundle: 'pro' },
+        { q: "Getting into the bathtub every evening is met with stalling and whining.", a: "\"Bath transition is tough. Let's set a fun 5-minute timer that plays a song when it's bath time.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Assigning Real Ownership",
+      guideFront: "Give a real role when...",
+      guideBack: "An assignment of responsibility",
+      description: "Giving children genuine, age-appropriate household responsibilities and standing roles so they build real competence, dignity, and a sense of contribution within the family.\n\n• **Assign meaningful roles** — give real household tasks that genuinely matter to the family's functioning\n• **Focus on contribution** — frame the responsibility as vital help that the family relies on\n• **Provide initial training then step back** — teach the skill clearly, then trust them to own the role\n\nAssigning real ownership satisfies a child's need for significance through real contribution.\n\nMindset: Children thrive when they know the family truly needs their real help.",
+      inputs: [
+        { q: "Your child feels bored and unneeded while you prepare dinner every evening.", a: "\"You are our official table manager. Your job is to set the napkins and water cups every night.\"", bundle: 'free' },
+        { q: "Unopened mail and groceries pile up on the counter after family shopping trips.", a: "\"You are in charge of sorting the mail into folders and putting the pantry boxes away.\"", bundle: 'free' },
+        { q: "The family dog needs feeding every morning before school departure.", a: "\"You are the official pet care leader. Our dog relies on you to fill the breakfast bowl each morning.\"", bundle: 'free' },
+        { q: "Plants in the living room are wilting from forgotten watering schedules.", a: "\"You are our plant specialist. Every Saturday morning, check the soil and water our living room plants.\"", bundle: 'free' },
+        { q: "Trash bins in the bedrooms overflow before anyone notices them.", a: "\"You are in charge of environmental waste. Every Tuesday evening, collect the small room bins for the big curb bin.\"", bundle: 'free' },
+        { q: "Family shoes are scattered in a chaotic pile inside the front entry.", a: "\"You are our entryway coordinator. Your responsibility is keeping the family shoe rack organized.\"", bundle: 'pro' },
+        { q: "Clean laundry sits in baskets for days without being folded or put away.", a: "\"You are the towel specialist. Your job is folding and stacking all the bath towels after laundry day.\"", bundle: 'pro' },
+        { q: "Family road trips start with forgotten water bottles and missing travel snacks.", a: "\"You are our travel prep captain. Your responsibility is packing the snack bag and water bottles for car trips.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  parentingadv: [
+    {
+      name: "Empathetic Limit Setting",
+      guideFront: "Set a limit with empathy when...",
+      guideBack: "An empathetic boundary",
+      description: "Combining warm relational connection and emotional validation with a clear, immovable boundary.\n\n• **Connect first** — establish eye contact or physical warmth before stating the boundary\n• **Validate the desire** — name the child's wish or frustration without taking back the limit\n• **Offer structured choices** — present two acceptable options within the boundary\n\nThis combination uses **Connection Before Correction** (Pack 01), **Taking the Side of Feelings** (Pack 01), and **Options Within the Limit** (Pack 02).\n\nMindset: Empathy opens the heart; firm limits protect the behavior.",
+      inputs: [
+        { q: "Your child screams that they do not want to stop playing video games for dinner.", a: "\"I see how much fun you're having. I wish you could play all night. And dinner is ready—do you want to turn off the console or hand me the controller?\"", bundle: 'free' },
+        { q: "Your toddler cries and refuses to hold your hand while crossing a busy parking lot.", a: "\"I know you want to walk like a big kid. I'm right here with you, and cars are moving—do you want to hold my hand or have me carry you?\"", bundle: 'free' },
+        { q: "Your child stomps their feet because you will not buy a candy bar at the grocery checkout.", a: "\"You really wish we could get that treat today. I hear you, and we're not buying candy—do you want to put the box on the belt or set it back on the shelf?\"", bundle: 'free' },
+        { q: "Your child whines that they do not want to take a bath right now.", a: "\"Bath time feels like a big interruption when you're busy playing. I get it, and it's time for bath—do you want to hop like a frog to the tub or take big giant steps?\"", bundle: 'free' },
+        { q: "Your teenager complains bitterly about having to clean their bedroom before going to a friend's house.", a: "\"I know it feels annoying to clean up when you're excited to see your friends. I hear you, and the room needs to be clear—do you want to tackle the floor first or the desk?\"", bundle: 'free' },
+        { q: "Your child refuses to put away their art supplies after drawing on the dining table.", a: "\"You made such a wonderful drawing today. I know cleaning up is no fun, and the table needs to be cleared—do you want to gather the markers or the paper first?\"", bundle: 'pro' },
+        { q: "Your child throws a tantrum because they cannot stay up late on a school night.", a: "\"I know you wish you could stay up and keep reading. I hear how disappointed you are, and bedtime is now—do you want to read one page together or turn off the light now?\"", bundle: 'pro' },
+        { q: "Your child complains that they hate wearing their winter coat in freezing weather.", a: "\"I know the coat feels bulky and uncomfortable. I hear you, and it's freezing outside—do you want to zip it up yourself or have me help you?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Anchoring the Meltdown",
+      guideFront: "Anchor a child's meltdown when...",
+      guideBack: "A calm, steady response",
+      description: "Maintaining absolute parental self-regulation while absorbing verbal drama and moving to quiet physical action.\n\n• **Pause to regulate** — take a slow breath and lower your vocal tone before speaking\n• **Acknowledge the feeling** — address the emotional pain rather than arguing with harsh words\n• **Transition to quiet action** — stop endless talking and execute peaceful physical follow-through\n\nThis combination uses **Respond vs. React** (Pack 04), **Meet the Frustration, Not the Words** (Pack 04), and **The Heartful Silence** (Pack 04).\n\nMindset: My steady calm is the container that holds their emotional storm.",
+      inputs: [
+        { q: "Your child screams \"YOU ARE THE WORST PARENT IN THE WORLD!\" when you turn off the TV.", a: "(Pause, exhale slowly) \"You are so furious with me that TV time ended.\" (Walk over calmly and set the remote on the high shelf)", bundle: 'free' },
+        { q: "Your child slams their bedroom door and yells \"I HATE YOU!\" after being told to brush their teeth.", a: "(Drop your shoulders, keep your voice low) \"You're feeling deeply upset about bedtime.\" (Stand by the doorway with a gentle, patient posture)", bundle: 'free' },
+        { q: "Your child drops to the floor in a public hallway, kicking and screaming \"LEAVE ME ALONE!\".", a: "(Take a deep breath to settle your own heart) \"You are completely overwhelmed right now.\" (Sit quietly on the floor near them until breathing slows)", bundle: 'free' },
+        { q: "Your child shouts \"YOU NEVER CARE ABOUT MY FEELINGS!\" during an argument about chores.", a: "(Pause for three seconds) \"It sounds like you're feeling really misunderstood and hurt right now.\" (Point calmly to the dish rack without arguing)", bundle: 'free' },
+        { q: "Your child huffs, rolls their eyes, and mocks your voice when you give an instruction.", a: "(Unclench your jaw, keep your posture relaxed) \"You're really mad about this requirement.\" (Maintain quiet eye contact and wait patiently)", bundle: 'free' },
+        { q: "Your child throws a pillow across the living room and shouts that your rules are completely unfair.", a: "(Breathe deeply) \"You're so frustrated with this boundary.\" (Walk over silently, pick up the pillow, and set it on the sofa)", bundle: 'pro' },
+        { q: "Your child screams \"I'M NEVER TALKING TO YOU AGAIN!\" and sits under the table.", a: "(Pause and lower your voice to a whisper) \"You are feeling so deeply hurt right now.\" (Sit beside the table in peaceful silence)", bundle: 'pro' },
+        { q: "Your child stands in the entryway yelling that they refuse to get into the car for school.", a: "(Exhale slowly) \"I see how overwhelmed and angry you are this morning.\" (Gently take their hand and walk steadily toward the car)", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Guided Problem Solving",
+      guideFront: "Guide self-directed solutions when...",
+      guideBack: "A problem-solving prompt",
+      description: "Acknowledging the child's difficulty, transferring responsibility for the solution back to them, and framing progress conditionally.\n\n• **Acknowledge the hurdle** — validate that the task is hard without taking over or rescuing\n• **Ask brainstorming questions** — prompt the child to generate potential solutions\n• **Show the path forward** — frame the outcome as \"Yes, as soon as you find a way to complete it\"\n\nThis combination uses **Naming the Struggle** (Pack 03), **The Brainstorm Inquiry** (Pack 03), and **Pathway to Yes** (Pack 02).\n\nMindset: I am here to support your thinking, not to solve your problem for you.",
+      inputs: [
+        { q: "Your child slumps over their math homework crying that it is impossible and they want to play outside.", a: "\"That math page looks really long and challenging today. What is one small step you could try first? Yes, as soon as that page is done, you can head outside.\"", bundle: 'free' },
+        { q: "Your child complains that their bedroom is too messy to clean up and asks to go to a friend's house.", a: "\"Cleaning all those toys feels completely overwhelming. How could we break this room into smaller zones? Yes, once the floor is clear, you can go to your friend's.\"", bundle: 'free' },
+        { q: "Your child whimpers that they cannot tie their shoes and wants you to do it for them before going to the park.", a: "\"Tying double knots takes a lot of practice. Which loop do you want to start with? Yes, as soon as your shoes are tied, we're off to the park.\"", bundle: 'free' },
+        { q: "Your child whines that they cannot find their soccer jersey five minutes before practice.", a: "\"It's stressful when gear is missing right before practice. Where was the last place you wore it? As soon as you locate the jersey, we'll head to the car.\"", bundle: 'free' },
+        { q: "Your child complains that they don't know what to draw for their art assignment and wants to watch cartoons instead.", a: "\"Starting a blank art page is tough when ideas aren't coming. What are three things in this room you could sketch? Yes, after art is complete, screen time opens up.\"", bundle: 'free' },
+        { q: "Your child argues that they cannot build their Lego set because two pieces are stuck together.", a: "\"Those two small bricks are really jammed together tightly. What tool or angle could you try to separate them? As soon as they're unstuck, your tower can grow.\"", bundle: 'pro' },
+        { q: "Your child sits on the floor crying that they can't pack their backpack for school.", a: "\"Fitting all those books and folders inside takes careful planning. What heavy item should go in first? Yes, as soon as the bag is zipped, you can play.\"", bundle: 'pro' },
+        { q: "Your child complains that they don't know how to make peace with a friend after an argument.", a: "\"Fixing a disagreement with a friend takes a lot of courage. What words could you say to start over? Yes, once you reach out, you'll feel much better.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Resetting and Restoring",
+      guideFront: "Lead through reset to restoration when...",
+      guideBack: "A restorative connection",
+      description: "Pausing a dysregulated moment, guiding the child to take responsibility and make amends, and sealing the repair with warmth.\n\n• **Offer a calming reset** — provide a non-punitive pause until emotional arousal settles\n• **Guide repentance** — name the mistake calmly and invite the child to make it right\n• **Seal with tangible warmth** — restore relationship with physical contact and unconditional reassurance\n\nThis combination uses **The Time-Out Reset** (Pack 05), **The Joy of Repentance** (Pack 05), and **The Tangible Follow-up** (Pack 05).\n\nMindset: The reset calms the body; repentance turns the heart; warmth restores the bond.",
+      inputs: [
+        { q: "Your child shoves their sibling off a chair in anger, then stands breathing heavily.", a: "\"Your body is too upset to play safely. Take two minutes on the sofa to settle. (After 2 minutes) Shoving was wrong—what can you do to make it right? Thank you for apologizing; give me a big hug.\"", bundle: 'free' },
+        { q: "Your child throws a toy train across the room during a meltdown over screen time.", a: "\"Let's take a quick reset together on the rug until our breathing is slow. Throwing toys is unsafe—how can we fix this mistake? I'm so proud of you for picking it up; come here!\"", bundle: 'free' },
+        { q: "Your child lies on the floor screaming after losing a board game with family.", a: "\"Take a three-minute pause in your room until you feel calm inside. Knocking over the game was wrong—what do you need to say to everyone? I love you so much; let's set up the next game.\"", bundle: 'free' },
+        { q: "Your child snatches a book out of a friend's hands and glares at them.", a: "\"Let's pause on the bench together for one minute to reset. Snatching is wrong—how can you return the book nicely? Great job turning that around—high five!\"", bundle: 'free' },
+        { q: "Your child slams their cupboard door hard enough to crack the frame during a dispute.", a: "\"Take five minutes on your bed until your heart settles. Slamming doors causes damage—how can we repair this? Thank you for telling me you're sorry; I love you always.\"", bundle: 'free' },
+        { q: "Your child spills milk on purpose during a dinner argument and sits fuming.", a: "\"Let's take a two-minute quiet reset right here. Spilling milk on purpose was wrong—let's grab paper towels and clean it together. You fixed it nicely—squeeze my hand.\"", bundle: 'pro' },
+        { q: "Your child screams a mean insult at their brother during a game dispute.", a: "\"We need a short pause on the couch to calm our voices. Mean words hurt people—what can you say to repair your brother's heart? I'm so glad we're back on the same team; give me a hug.\"", bundle: 'pro' },
+        { q: "Your child kicks the kitchen wall in frustration after being told no to dessert.", a: "\"Take two minutes on the chair to let your body settle. Kicking walls is unsafe—what do you need to do now? Thank you for resetting so well; come sit beside me.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Parental Reset and Repair",
+      guideFront: "Model repentance after a failure when...",
+      guideBack: "A humble apology and reconnect",
+      description: "Pausing when your own temper flares, owning your parental failure plainly without making excuses, and reconnecting with warmth.\n\n• **Pause your own reactivity** — recognize your rising anger and take a conscious breath or brief timeout\n• **Model a plain apology** — admit your specific wrong behavior (\"I shouted\") and ask for forgiveness\n• **Restore warm connection** — seal the repair with physical affection and relational reassurance\n\nThis combination uses **Respond vs. React** (Pack 04), **Modeling the Apology** (Pack 05), and **The Tangible Follow-up** (Pack 05).\n\nMindset: My willingness to apologize models integrity and proves that love is stronger than mistakes.",
+      inputs: [
+        { q: "You lose your temper and shout loudly at your child for spilling juice on the carpet.", a: "(Pause, exhale slowly) \"I am so sorry I shouted at you just now. I felt stressed, but shouting was wrong. Will you forgive me? (Wrap your arm around them) I love you so much.\"", bundle: 'free' },
+        { q: "You harshly accuse your child of breaking a dish before realizing it was dropped by accident.", a: "(Close your eyes, take a breath) \"I made a big mistake. I blamed you without knowing the facts, and that wasn't fair to you. I'm really sorry. (Hold their hands) We're completely okay.\"", bundle: 'free' },
+        { q: "You snap at your child for asking a question while you are trying to finish a work phone call.", a: "(Drop your shoulders, lower your tone) \"I snapped at you when you asked for help, and that was wrong of me. You deserve kindness. Come give me a hug.\"", bundle: 'free' },
+        { q: "You slam a cupboard door in frustration during a stressful morning departure.", a: "(Pause in the kitchen) \"I lost my cool and slammed that door. That was a bad example of handling anger, and I'm sorry. (Pat their shoulder) Let me hold your hand as we walk to the car.\"", bundle: 'free' },
+        { q: "You promise to take your child to the park after school but forget because of work meetings.", a: "(Take a deep breath) \"I broke my promise to take you to the park today. I let you down, and I am so sorry. (Sit beside them) Thanks for forgiving me—let's set a timer for tomorrow.\"", bundle: 'free' },
+        { q: "You interrupt your child rudely while they are trying to tell you a story about their day.", a: "\"I interrupted you while you were talking, and that was disrespectful. I'm sorry. Please tell me your story now—I'm listening with my whole heart.\"", bundle: 'pro' },
+        { q: "You set a harsh, unreasonable punishment in a moment of sudden anger.", a: "\"I set that punishment in sudden anger, and it wasn't fair or reasonable. I was wrong, and I'm sorry. Let's reset together and talk about a fair boundary.\"", bundle: 'pro' },
+        { q: "You speak sarcastically to your child about their messy bedroom in front of family.", a: "\"I made a sarcastic comment about your room, and that was mean. I'm sorry for hurting your feelings in front of others. Give me a big hug—I love you.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -17816,6 +17980,106 @@ const collectionsModeData = {
         { q: "She demands you adopt her emotional frame during a home renovation choice.", a: "\"We execute renovation choices by facts and budget. That is our frame.\" [Auditing and Controlling Frame]", bundle: 'pro', guideBack: "An unswayable frame assertion" },
         { q: "She nitpicks how you parked the car in a crowded shopping lot.", a: "(Smirk playfully) \"Parked within the lines cleanly. Masterful maneuver.\" [Amused Mastery on Complaints]", bundle: 'pro', guideBack: "A playful, unbothered quip" },
         { q: "She pushes you away emotionally to see if you will collapse into needy panic.", a: "(Pat her arm gently) \"Rest up, Love. I'm heading down to my reading block.\" [Managing Avoidant Cycles]", bundle: 'pro', guideBack: "A calm refusal to chase" },
+      ]
+    },
+  ],
+  parenting6: [
+    {
+      name: "Proactive Preparation",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Planning in Advance**, **Stating Parent Action**, and **Positive Directives** before entering or navigating challenging daily situations.\n\n• **Planning in Advance** — when stepping into a high-risk environment that needs pre-established rules\n• **Stating Parent Action** — when a boundary depends entirely on what the parent will do\n• **Positive Directives** — when a child needs clear, immediate instruction on what behavior to execute\n\nOne question decides it: do you need a mutual agreement beforehand, a clear parent boundary, or a positive action direction?",
+      inputs: [
+        { q: "You are pulling into the park parking lot with your excited children.", a: "\"Before we unbuckle, let's review our agreement: stay where I can see you, and come when called.\" [Planning in Advance]", bundle: 'pro', guideBack: "An advance agreement" },
+        { q: "Your children are running and pushing each other in the church hallway.", a: "\"Use walking feet in the hallway, please.\" [Positive Directives]", bundle: 'pro', guideBack: "A positive replacement directive" },
+        { q: "Your child refuses to put their dishes in the sink after snack time.", a: "\"Screen time begins after all dishes are placed in the sink.\" [Stating Parent Action]", bundle: 'pro', guideBack: "A statement of parent action" },
+        { q: "You are about to enter a library with your energetic toddler.", a: "\"Before we open the library doors, what voice level do we use inside?\" [Planning in Advance]", bundle: 'pro', guideBack: "An advance agreement" },
+        { q: "Your child is screaming across the house to get your attention from another room.", a: "\"Walk into the room where I am and speak with a calm voice, please.\" [Positive Directives]", bundle: 'pro', guideBack: "A positive replacement directive" },
+        { q: "Your child is splashing water wildly outside the shower curtain.", a: "\"Shower time continues while water stays inside the tub. I am turning the water off now.\" [Stating Parent Action]", bundle: 'pro', guideBack: "A statement of parent action" },
+        { q: "You are walking into a grocery store during a busy weekend rush.", a: "\"Before we take a cart, remember our plan: two hands stay on the handle.\" [Planning in Advance]", bundle: 'pro', guideBack: "An advance agreement" },
+        { q: "Your child is jumping up and down on the living room sofa.", a: "\"Keep your feet flat on the rug, please.\" [Positive Directives]", bundle: 'pro', guideBack: "A positive replacement directive" },
+      ]
+    },
+    {
+      name: "Structuring the Environment",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Overhauling the Routine**, **Assigning Real Ownership**, and **Stating Parent Action** to build an orderly, smooth family environment.\n\n• **Overhauling the Routine** — when a recurring transition or time of day is consistently chaotic\n• **Assigning Real Ownership** — when a child needs a standing role to build responsibility and competence\n• **Stating Parent Action** — when enforcing a boundary requires parent-controlled execution\n\nStructure the environment so that responsibility becomes the natural, smooth path.",
+      inputs: [
+        { q: "Every evening after dinner, packing school lunches creates chaos and arguments.", a: "\"Packing lunches at night is chaotic. Let's create a dedicated lunch station in the fridge and prep together at 7:00 PM.\" [Overhauling the Routine]", bundle: 'pro', guideBack: "A calm routine agreement" },
+        { q: "Clean laundry piles up in the hallway because no one claims responsibility for towels.", a: "\"You are our family towel manager. Your standing job is folding and stacking the bath towels.\" [Assigning Real Ownership]", bundle: 'pro', guideBack: "An assignment of responsibility" },
+        { q: "Children leave dirty dishes scattered across coffee tables and desks after homework.", a: "\"I serve afternoon snacks once all previous dishes are cleared to the kitchen sink.\" [Stating Parent Action]", bundle: 'pro', guideBack: "A statement of parent action" },
+        { q: "Morning departure is delayed daily because shoes and jackets are scattered across the house.", a: "\"Departure is stressed every morning. Let's set up individual cubbies by the front door for shoes and bags.\" [Overhauling the Routine]", bundle: 'pro', guideBack: "A calm routine agreement" },
+        { q: "The family cat is forgotten during busy weekday mornings.", a: "\"You are our official pet caretaker. The family counts on you to feed the cat every morning at 7:30 AM.\" [Assigning Real Ownership]", bundle: 'pro', guideBack: "An assignment of responsibility" },
+        { q: "Toys remain scattered across the family room floor at bedtime despite multiple reminders.", a: "\"I am placing any toys remaining on the floor at 8:00 PM into the garage storage bin for the week.\" [Stating Parent Action]", bundle: 'pro', guideBack: "A statement of parent action" },
+        { q: "Bedtime stalling occurs every single night due to endless requests for water and extra books.", a: "\"Bedtime takes too long. Let's build a visual four-step bedtime checklist and stick to it every night.\" [Overhauling the Routine]", bundle: 'pro', guideBack: "A calm routine agreement" },
+        { q: "Setting the table for dinner creates daily arguments over who has to help.", a: "\"You are our official meal setting manager. Setting the table every evening is your special contribution.\" [Assigning Real Ownership]", bundle: 'pro', guideBack: "An assignment of responsibility" },
+      ]
+    },
+    {
+      name: "All Five Proactive Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "All five proactive strategies in this pack mixed together: **Planning in Advance**, **Stating Parent Action**, **Positive Directives**, **Overhauling the Routine**, and **Assigning Real Ownership**.\n\n• **Planning in Advance** — pre-establish rules before challenging events\n• **Stating Parent Action** — state what you will do to maintain a boundary\n• **Positive Directives** — instruct what behavior to do rather than what to stop\n• **Overhauling the Routine** — redesign recurring friction points during calm times\n• **Assigning Real Ownership** — give standing household responsibilities to build competence\n\nProactive parenting establishes order, clarity, and competence before conflict erupts.",
+      inputs: [
+        { q: "You are about to walk into a crowded play center with multiple play areas.", a: "\"Before we step inside, let's agree: when I give the wave, we meet at the shoe benches.\" [Planning in Advance]", bundle: 'pro', guideBack: "An advance agreement" },
+        { q: "Your child is yelling loudly while trying to explain a story to you.", a: "\"Lower your voice to a quiet conversational tone, please.\" [Positive Directives]", bundle: 'pro', guideBack: "A positive replacement directive" },
+        { q: "Your child refuses to put on their coat when it is freezing outside.", a: "\"We head out to the car as soon as coats are zipped up.\" [Stating Parent Action]", bundle: 'pro', guideBack: "A statement of parent action" },
+        { q: "Getting ready for school every morning is a battle over waking up and dressing.", a: "\"Mornings are stressful. Let's set a morning playlist that guides us through waking, dressing, and eating.\" [Overhauling the Routine]", bundle: 'pro', guideBack: "A calm routine agreement" },
+        { q: "The house plants are dying because no one remembers to check them.", a: "\"You are our official plant doctor. Checking and watering the porch plants every Sunday is your role.\" [Assigning Real Ownership]", bundle: 'pro', guideBack: "An assignment of responsibility" },
+        { q: "You are heading to a family dinner at a relative's house with fragile decorations.", a: "\"Before we walk through the front door, what is our plan for sitting politely at the table?\" [Planning in Advance]", bundle: 'pro', guideBack: "An advance agreement" },
+        { q: "Your child is slamming wooden cabinet doors in the kitchen.", a: "\"Close the cabinet doors softly using the handles, please.\" [Positive Directives]", bundle: 'pro', guideBack: "A positive replacement directive" },
+        { q: "Your child is begging for dessert while refusing to touch their dinner vegetables.", a: "\"I clear the table and offer dessert after dinner meals are finished.\" [Stating Parent Action]", bundle: 'pro', guideBack: "A statement of parent action" },
+      ]
+    },
+  ],
+  parentingadv: [
+    {
+      name: "Relational vs Structural Moves",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Empathetic Limit Setting**, **Guided Problem Solving**, and **Anchoring the Meltdown** based on whether the moment calls for connection, competence, or emotional self-regulation.\n\n• **Empathetic Limit Setting** — when a boundary must be held with warmth and choices\n• **Guided Problem Solving** — when a child faces a task hurdle they need to solve independently\n• **Anchoring the Meltdown** — when emotional volume is spiking and requires parent calm\n\nOne question decides it: does the child's heart need a boundary with empathy, a problem-solving prompt, or a regulated anchor?",
+      inputs: [
+        { q: "Your child screams that they refuse to turn off their tablet for dinner.", a: "\"I see how much fun you're having. I wish you could play all night. And screen time is over—do you want to turn it off yourself or hand it to me?\" [Empathetic Limit Setting]", bundle: 'pro', guideBack: "An empathetic boundary" },
+        { q: "Your child slumps over their homework desk crying that the essay is impossible.", a: "\"Writing an essay feels really long and tough today. What is one sentence you could draft first? Yes, as soon as your draft is done, screen time opens up.\" [Guided Problem Solving]", bundle: 'pro', guideBack: "A problem-solving prompt" },
+        { q: "Your child stands in the hallway shouting \"YOU ARE THE WORST PARENT EVER!\" after a refusal.", a: "(Pause, exhale slowly) \"You are feeling so deeply angry and upset with me right now.\" (Stand by quietly without arguing) [Anchoring the Meltdown]", bundle: 'pro', guideBack: "A calm, steady response" },
+        { q: "Your child whines that they don't want to get into the bathtub right now.", a: "\"I know bath time feels like an interruption. I get it, and bath time is now—do you want to walk like a penguin or jump like a frog?\" [Empathetic Limit Setting]", bundle: 'pro', guideBack: "An empathetic boundary" },
+        { q: "Your child complains that their Lego castle collapsed and they want to give up forever.", a: "\"Rebuilding a collapsed tower takes a lot of patience. What base piece could you place down first? As soon as the base is set, the walls go up fast.\" [Guided Problem Solving]", bundle: 'pro', guideBack: "A problem-solving prompt" },
+        { q: "Your child drops to the kitchen rug screaming and kicking because their cup is the wrong color.", a: "(Breathe deeply, lower your voice) \"You are so disappointed about that cup right now.\" (Sit beside them on the rug in peaceful presence) [Anchoring the Meltdown]", bundle: 'pro', guideBack: "A calm, steady response" },
+        { q: "Your child complains that they hate cleaning their closet before playing outside.", a: "\"I know cleaning the closet feels annoying. I hear you, and the closet needs to be clear—do you want to pick up shoes first or clothes?\" [Empathetic Limit Setting]", bundle: 'pro', guideBack: "An empathetic boundary" },
+        { q: "Your child whimpers that they cannot tie their shoe laces before going to the playground.", a: "\"Tying laces takes a lot of practice. Which loop do you want to cross over first? Yes, as soon as your shoes are tied, we're off to the park.\" [Guided Problem Solving]", bundle: 'pro', guideBack: "A problem-solving prompt" },
+      ]
+    },
+    {
+      name: "In-the-Moment vs Restorative Moves",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Anchoring the Meltdown**, **Resetting and Restoring**, and **Parental Reset and Repair** depending on whether conflict is active, ready for amends, or caused by parental failure.\n\n• **Anchoring the Meltdown** — during peak emotional explosion when calm presence is required\n• **Resetting and Restoring** — after the meltdown passes and the child is ready to make amends\n• **Parental Reset and Repair** — when the parent lost self-control and needs to model repentance\n\nRead the emotional stage of the conflict and choose the exact move that restores relationship.",
+      inputs: [
+        { q: "Your child is screaming at the top of their lungs because you cancelled a park outing due to rain.", a: "(Pause, exhale slowly) \"You are so furious and disappointed that rain ruined our plans.\" (Sit near them quietly without lecturing) [Anchoring the Meltdown]", bundle: 'pro', guideBack: "A calm, steady response" },
+        { q: "Your child threw a book at their sibling in anger, but their breathing has now slowed down.", a: "\"Your body is calm now. Throwing books is wrong—what do you need to do to make it right with your brother? Thank you for apologizing; give me a hug.\" [Resetting and Restoring]", bundle: 'pro', guideBack: "A restorative connection" },
+        { q: "You raised your voice and shouted at your child during the hectic morning school rush.", a: "(Take a deep breath) \"I am so sorry I raised my voice at you earlier. I felt rushed, but shouting at you was wrong. Will you forgive me? I love you so much.\" [Parental Reset and Repair]", bundle: 'pro', guideBack: "A humble apology and reconnect" },
+        { q: "Your child stands in the living room shouting \"I'M NEVER CLEANING MY ROOM!\" with red cheeks.", a: "(Drop your shoulders, keep your tone low) \"You are feeling completely overwhelmed by this chore right now.\" (Maintain quiet, steady eye contact) [Anchoring the Meltdown]", bundle: 'pro', guideBack: "A calm, steady response" },
+        { q: "Your child completed their two-minute time-out reset on the sofa and looks sheepish.", a: "\"Slamming the door was wrong—how can we make this right together? I'm so proud of you for turning that around; give me a big hug.\" [Resetting and Restoring]", bundle: 'pro', guideBack: "A restorative connection" },
+        { q: "You snapped at your child for asking a question while you were stressed on a phone call.", a: "\"I snapped at you when you asked a question, and that was wrong. You deserve kindness. Come give me a hug—I'm ready to listen now.\" [Parental Reset and Repair]", bundle: 'pro', guideBack: "A humble apology and reconnect" },
+        { q: "Your child screams \"I HATE YOU!\" and slams a couch cushion onto the floor.", a: "(Unclench your hands, breathe slowly) \"You're feeling so angry with me right now.\" (Pick up the cushion silently and sit down) [Anchoring the Meltdown]", bundle: 'pro', guideBack: "A calm, steady response" },
+        { q: "You made an unfair accusation about who broke a glass before checking the facts.", a: "\"I made a big mistake. I blamed you without knowing what happened, and that wasn't fair. I'm really sorry. We are completely okay.\" [Parental Reset and Repair]", bundle: 'pro', guideBack: "A humble apology and reconnect" },
+      ]
+    },
+    {
+      name: "All Five Advanced Combinations",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "All five advanced combinations mixed together: **Empathetic Limit Setting**, **Anchoring the Meltdown**, **Guided Problem Solving**, **Resetting and Restoring**, and **Parental Reset and Repair**.\n\n• **Empathetic Limit Setting** — hold boundaries with connection and choices\n• **Anchoring the Meltdown** — absorb emotional storms with calm self-regulation\n• **Guided Problem Solving** — transfer task responsibility through questions and conditions\n• **Resetting and Restoring** — guide the child from reset through repentance to reunion\n• **Parental Reset and Repair** — model humble apology and warm reconnection after adult failure\n\nIn complex family life, read the heart, the boundary, and the failure, and deploy the full combination.",
+      inputs: [
+        { q: "Your child screams that they refuse to put on their winter coat before heading outside.", a: "\"I know the coat feels bulky and hot. I hear you, and it's freezing outside—do you want to zip it up yourself or have me help?\" [Empathetic Limit Setting]", bundle: 'pro', guideBack: "An empathetic boundary" },
+        { q: "Your child lies on the carpet kicking and shouting \"YOU NEVER LET ME DO ANYTHING!\".", a: "(Pause, exhale slowly) \"You are feeling so deeply angry and frustrated right now.\" (Sit quietly near them without lecturing) [Anchoring the Meltdown]", bundle: 'pro', guideBack: "A calm, steady response" },
+        { q: "Your child sits crying over a difficult puzzle, saying they want to throw it away.", a: "\"That puzzle has a lot of tricky corner pieces. What color section could you look for first? Yes, as soon as the border is finished, we can take a break.\" [Guided Problem Solving]", bundle: 'pro', guideBack: "A problem-solving prompt" },
+        { q: "Your child knocked over their sibling's tower in anger and is now sitting quietly.", a: "\"Knocking that tower down was wrong. What do you need to do to make it right with your sister? Thank you for helping her rebuild; give me a high five!\" [Resetting and Restoring]", bundle: 'pro', guideBack: "A restorative connection" },
+        { q: "You lost your patience and slammed a door during a stressful afternoon transition.", a: "(Take a breath) \"I lost my temper and slammed that door. That was wrong of me, and I'm sorry for setting a bad example. Give me a big hug—I love you.\" [Parental Reset and Repair]", bundle: 'pro', guideBack: "A humble apology and reconnect" },
+        { q: "Your child demands a second popsicle before dinner while leaving their main meal.", a: "\"I see how much you love popsicles. I wish we could eat dessert all day. And popsicles come after dinner—do you want to finish your chicken or your broccoli first?\" [Empathetic Limit Setting]", bundle: 'pro', guideBack: "An empathetic boundary" },
+        { q: "Your child whimpers that they cannot tie their jacket strings and wants to give up.", a: "\"Tying those thin strings takes a lot of hand strength. Which side do you want to loop over first? Yes, as soon as it's tied, you can run outside.\" [Guided Problem Solving]", bundle: 'pro', guideBack: "A problem-solving prompt" },
+        { q: "Your child threw their shoes across the hallway at bedtime and now looks calm.", a: "\"Throwing shoes was unsafe. How can we turn this mistake around and make it right? I'm so glad we settled down—let's tuck you in warmly.\" [Resetting and Restoring]", bundle: 'pro', guideBack: "A restorative connection" },
       ]
     },
   ],

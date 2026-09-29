@@ -18433,4 +18433,302 @@ const memorizeCollections = {
       ]
     },
   ],
+  parenting6: [
+    {
+      name: "Core Idea",
+      description: "Proactive structure in Parenting Toward the Kingdom: establishing order, expectations, and real ownership before friction arises through five core strategies:\n\n1. **Planning in Advance**\n2. **Stating Parent Action**\n3. **Positive Directives**\n4. **Overhauling the Routine**\n5. **Assigning Real Ownership**\n\nProactive leadership builds a calm household environment where virtue and responsibility thrive.",
+      cards: [
+        { q: "What is the core objective of Proactive Structure according to Philip Mamalakis?", a: "Establishing clear expectations, systems, and roles before friction erupts, preventing unnecessary power struggles.", bundle: 'free' },
+        { q: "What are the five core proactive strategies in this pack?", a: "Planning in Advance, Stating Parent Action, Positive Directives, Overhauling the Routine, and Assigning Real Ownership.", bundle: 'free' },
+        { q: "What is the fundamental difference between proactive structure and reactive discipline?", a: "Proactive structure prepares the environment and expectations beforehand; reactive discipline responds after conflict starts.", bundle: 'free' },
+        { q: "Why is \"Thirty seconds of pre-planning saves thirty minutes of struggle\" a core principle?", a: "Because agreeing on expectations during calm prevents emotional chaos when entering challenging settings.", bundle: 'free' },
+        { q: "How does assigning real household ownership build a child's internal character?", a: "It satisfies their deep need for significance by making them a needed, contributing member of the family.", bundle: 'free' },
+        { q: "What does Mamalakis mean by \"A recurring battle is a broken routine, not a broken child\"?", a: "Frequent daily friction usually indicates a lack of environmental structure rather than intentional child defiance.", bundle: 'pro' },
+        { q: "How do proactive strategies support long-term executive function in children?", a: "They teach children to anticipate expectations, follow visual systems, and manage responsibilities independently.", bundle: 'pro' },
+        { q: "What is the ultimate goal of establishing proactive structure in the home?", a: "Creating an orderly, peaceful environment where children develop internalized self-discipline and dignity.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Planning in Advance",
+      description: "",
+      cards: [
+        { q: "What is the main purpose of Planning in Advance?", a: "To set clear expectations, rules, and agreements with children before entering a challenging setting.", bundle: 'free' },
+        { q: "Why should pre-planning agreements be made before stepping into a store or event?", a: "Because children are calm and receptive before entering, whereas high-stimulation environments trigger impulse.", bundle: 'free' },
+        { q: "What are the two underlying categories of Planning in Advance?", a: "Expectation Setting (naming the rules) and Verbal Confirmation (having the child repeat the plan).", bundle: 'free' },
+        { q: "Why is asking a child to repeat the plan back in their own words effective?", a: "It ensures true understanding and engages their active memory before they face temptation.", bundle: 'free' },
+        { q: "How does Planning in Advance protect the parent-child relationship during outings?", a: "It provides an agreed standard to reference calmly, eliminating the need for surprise scolding.", bundle: 'free' },
+        { q: "What should a parent do if a child breaks an advance agreement during an event?", a: "Reference the agreed plan calmly and execute the pre-established boundary without emotional drama.", bundle: 'pro' },
+        { q: "How does pre-planning prevent impulse buying and begging in grocery stores?", a: "By establishing beforehand exactly what items are being purchased and what the child's role will be.", bundle: 'pro' },
+        { q: "Why does setting rules beforehand increase a child's sense of security?", a: "Knowing the boundaries in advance eliminates anxiety about unpredictable parental reactions.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stating Parent Action",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of Stating Parent Action?", a: "Focusing on what the parent will do to maintain a boundary rather than trying to force the child's body.", bundle: 'free' },
+        { q: "Why is \"The car moves when belts are buckled\" better than barking \"Buckle up!\"?", a: "It grounds the boundary in a calm, parent-controlled reality rather than an escalating verbal power struggle.", bundle: 'free' },
+        { q: "What are the two underlying categories of Stating Parent Action?", a: "Parent Agency (actions 100% in parent control) and Quiet Execution (carrying it out calmly).", bundle: 'free' },
+        { q: "How does stating parent action eliminate nagging and repeated commands?", a: "The parent states the boundary once and executes the action, letting reality teach the lesson.", bundle: 'free' },
+        { q: "Why is physical force or shouting unnecessary when executing parent action?", a: "Because the parent controls the environment (car movement, screen power, toy access) with quiet authority.", bundle: 'free' },
+        { q: "What mindset shift is required for a parent to use Stating Parent Action effectively?", a: "Recognizing that you cannot control the child's body, but you can completely control your own actions.", bundle: 'pro' },
+        { q: "How does stating parent action maintain parental dignity during conflict?", a: "It stops the parent from engaging in undignified shouting matches or physical wrestling.", bundle: 'pro' },
+        { q: "Why is calm emotional delivery essential when carrying out a parent action?", a: "Anger turns a clear environmental boundary into a personal punishment, triggering defensiveness.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Positive Directives",
+      description: "",
+      cards: [
+        { q: "What is the primary function of Positive Directives?", a: "Telling a child the exact positive replacement behavior to execute rather than shouting what to stop.", bundle: 'free' },
+        { q: "Why does \"Use walking feet\" work better than shouting \"Don't run!\"?", a: "It gives the child's brain a concrete physical action to picture and follow immediately.", bundle: 'free' },
+        { q: "What are the two underlying categories of Positive Directives?", a: "Replacement Behavior (naming the right action) and Concrete Cues (simple, clear phrasing).", bundle: 'free' },
+        { q: "How do positive directives reduce defensiveness in children?", a: "They guide constructive behavior with clear instruction rather than criticizing or forbidding.", bundle: 'free' },
+        { q: "Why is abstract language like \"Behave!\" less effective than a positive directive?", a: "\"Behave\" is vague, whereas \"Keep your hands in your lap\" gives an unambiguous physical command.", bundle: 'free' },
+        { q: "How do positive directives help children develop self-regulation in noisy settings?", a: "By giving them specific, repeatable replacement habits like \"indoor voice\" or \"gentle hands.\"", bundle: 'pro' },
+        { q: "What should a parent do if a child ignores a positive directive?", a: "Repeat the directive calmly while standing close, or pair it with a parent action if needed.", bundle: 'pro' },
+        { q: "How does phrasing directives positively impact the emotional tone of the home?", a: "It replaces constant negative prohibitions (\"No! Don't! Stop!\") with constructive guidance.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Overhauling the Routine",
+      description: "",
+      cards: [
+        { q: "What is the main objective of Overhauling the Routine?", a: "Redesigning recurring chaotic daily transitions (mornings, bedtime, chores) during calm times.", bundle: 'free' },
+        { q: "Why must routine overhauls be planned during moments of peace rather than during conflict?", a: "Because problem-solving requires reflective thinking, which is impossible during peak stress.", bundle: 'free' },
+        { q: "What are the two underlying categories of Overhauling the Routine?", a: "Friction Analysis (identifying broken systems) and Environmental Cues (charts, stations, timers).", bundle: 'free' },
+        { q: "How do visual charts and door launch pads support executive function in children?", a: "They transfer the memory load from parental nagging to clear environmental structure.", bundle: 'free' },
+        { q: "Why does Mamalakis emphasize that recurring battles are usually system problems?", a: "Because children usually struggle with disorganized transitions rather than possessing malicious intent.", bundle: 'free' },
+        { q: "How can parents involve children in redesigning a broken family routine?", a: "Sit down during weekend calm, name the friction together, and ask: \"How can we make this smoother?\"", bundle: 'pro' },
+        { q: "What is the benefit of setting out clothes and packing backpacks the night before?", a: "It eliminates morning decision fatigue and prevents panic during departure time.", bundle: 'pro' },
+        { q: "How does a successful routine overhaul reduce parental fatigue?", a: "It automates daily transitions, freeing parents from constant scolding and micro-management.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Assigning Real Ownership",
+      description: "",
+      cards: [
+        { q: "What does Assigning Real Ownership instruct parents to do?", a: "Give children genuine, age-appropriate household responsibilities and standing roles.", bundle: 'free' },
+        { q: "Why is giving real responsibility better than fabricating artificial chores?", a: "Children recognize when work is meaningful, and real contribution builds genuine self-worth and dignity.", bundle: 'free' },
+        { q: "What are the two underlying categories of Assigning Real Ownership?", a: "Standing Duty (ongoing household roles) and Genuine Contribution (tasks the family relies on).", bundle: 'free' },
+        { q: "How does having a standing role (like pet care or table manager) foster belonging?", a: "It proves to the child that they are a necessary, valuable part of the family team.", bundle: 'free' },
+        { q: "Why should parents refrain from criticizing minor flaws in a child's chore execution?", a: "Hyper-criticism destroys initiative, whereas thanking their real effort reinforces competence.", bundle: 'free' },
+        { q: "How does real household ownership prevent adolescent entitlement?", a: "It grounds them in the reality that living in a family involves shared work and mutual duty.", bundle: 'pro' },
+        { q: "What should a parent do when a child complains about their assigned standing role?", a: "Reaffirm the importance of their contribution calmly: \"Our family relies on you for this job.\"", bundle: 'pro' },
+        { q: "How does real ownership prepare children for adult independence?", a: "It builds practical life skills, accountability, and executive function through daily practice.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Proactive Preparation** — Planning in Advance, Stating Parent Action, or Positive Directives before events\n• **Structuring the Environment** — Overhauling the Routine, Assigning Real Ownership, or Stating Parent Action for daily systems\n• **All Five Proactive Strategies** — all five strategies mixed without warning about which moment you are in\n\nOne question decides nearly all of it: what level of proactive structure does the environment require?",
+      cards: [
+        { q: "What distinguishes Proactive Preparation from Structuring the Environment?", a: "Proactive Preparation manages upcoming events; Structuring the Environment builds daily household systems.", bundle: 'pro' },
+        { q: "When should a parent choose Planning in Advance over Positive Directives?", a: "Use Planning in Advance before entering a setting; use Positive Directives for immediate behavior instruction.", bundle: 'pro' },
+        { q: "How does a parent decide when to use Stating Parent Action within a collection?", a: "Use Stating Parent Action when enforcing a boundary requires an action fully within parent control.", bundle: 'pro' },
+        { q: "Why is pre-event preparation more effective than reacting during a public outing?", a: "Pre-event preparation establishes clear mental pictures before sensory stimulation triggers impulse.", bundle: 'pro' },
+        { q: "What core question guides the parent across all three collections in this pack?", a: "\"Do we need an advance agreement, a routine overhaul, a standing role, or a parent action?\"", bundle: 'pro' },
+        { q: "Why does All Five Proactive Strategies test a parent's real-time discernment?", a: "It requires instant recognition of whether a situation calls for pre-planning, directives, or systems.", bundle: 'pro' },
+        { q: "What goes wrong when a parent relies entirely on positive directives without overhauling broken routines?", a: "The parent ends up constantly repeating directives because the underlying environment remains chaotic.", bundle: 'pro' },
+        { q: "How do these three collections transform family culture over time?", a: "They replace chaotic reactivity with predictable order, mutual responsibility, and calm leadership.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Pre-Event Preparation** — Planning in Advance → Positive Directives → Stating Parent Action\n2. **Routine Restructuring** — Overhauling the Routine → Assigning Real Ownership → Planning in Advance\n3. **Boundary Execution** — Positive Directives → Stating Parent Action → Assigning Real Ownership\n\nIn each sequence the order of proactive steps builds order, clarity, and compliance.",
+      cards: [
+        { q: "Why does Pre-Event Preparation begin with Planning in Advance?", a: "Agreeing on rules beforehand sets expectations while everyone is calm and receptive.", bundle: 'pro' },
+        { q: "What role do Positive Directives play as the second step in Pre-Event Preparation?", a: "They give immediate, clear instruction on what behavior to execute when friction begins.", bundle: 'pro' },
+        { q: "Why does Routine Restructuring start with Overhauling the Routine during calm times?", a: "You must analyze and redesign the system when calm before assigning roles or enforcing plans.", bundle: 'pro' },
+        { q: "How does Boundary Execution move smoothly from instruction to parent action?", a: "Direct the positive action first; if resistance occurs, execute the parent-controlled boundary cleanly.", bundle: 'pro' },
+        { q: "What goes wrong when a parent skips step one (Planning in Advance) before a grocery trip?", a: "The parent is forced to react angrily to sudden impulses in the store without an agreed standard.", bundle: 'pro' },
+        { q: "How does following a structured sequence prevent power struggles during transitions?", a: "It provides a predictable roadmap that guides the child from expectation to execution smoothly.", bundle: 'pro' },
+        { q: "Why is assigning a standing role the final step in Routine Restructuring?", a: "Giving the child clear ownership anchors their personal investment in making the new system work.", bundle: 'pro' },
+        { q: "What should a parent do if a sequence breaks down during execution?", a: "Maintain calm emotional presence, execute the parent action, and review the routine during peace.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories to master in this pack:\n\n• **Store and Public Outings** — pre-planning and directives for public settings\n• **Morning Rush Chaos** — routine overhauling and parent actions for departures\n• **Bedtime and Evening Stalling** — visual structure and parent boundaries for sleep\n• **Household Chores Resistance** — standing ownership and positive instructions for work\n• **Car Rides and Transitions** — safety rules, parent actions, and roles for travel\n\nEach category represents a key structural hurdle in family life.",
+      cards: [
+        { q: "What makes Store and Public Outings particularly challenging for proactive structure?", a: "High sensory stimulation and public pressure tempt parents to react with panic instead of pre-planning.", bundle: 'pro' },
+        { q: "How does Overhauling the Routine solve Morning Rush Chaos?", a: "By setting up night-before launch pads and visual checklists that eliminate morning decision fatigue.", bundle: 'pro' },
+        { q: "What drives Bedtime and Evening Stalling in young children?", a: "Transition fatigue and a desire to prolong parental connection, which require clear visual structure.", bundle: 'pro' },
+        { q: "Why is Assigning Real Ownership essential for overcoming Household Chores Resistance?", a: "It replaces arbitrary scolding with genuine, standing responsibility that satisfies their need for dignity.", bundle: 'pro' },
+        { q: "How does Stating Parent Action maintain safety during Car Rides and Transitions?", a: "By making car movement conditional on safety (e.g., pulling over until seatbelts are buckled).", bundle: 'pro' },
+        { q: "What is the common thread across all five challenge categories?", a: "Replacing reactive nagging with clear advance expectations, parent actions, and environmental systems.", bundle: 'pro' },
+        { q: "What should a parent avoid when a child complains about a new morning routine?", a: "Abandoning the system; hold the routine steadily for two weeks until the new habit locks in.", bundle: 'pro' },
+        { q: "How does establishing proactive structure across these five categories build long-term grit?", a: "It teaches children that life functions smoothly through order, preparation, and shared responsibility.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Pre-planning** — pre-planning saves struggle vs pre-planning is a waste of time\n• **Parental Control** — controlling my actions vs trying to force their body\n• **Directives** — directing what to do vs shouting what to stop\n• **Household Routines** — broken routines vs broken children\n• **Child Responsibility** — real contribution builds dignity vs doing it myself is faster\n\nIn every one, the limiting belief relies on reactive control rather than proactive structure.",
+      cards: [
+        { q: "What core truth is established in the Pre-planning mindset?", a: "Thirty seconds of pre-planning during calm saves thirty minutes of emotional struggle during events.", bundle: 'pro' },
+        { q: "How does the Parental Control mindset reframe parental authority?", a: "Authority is executed by controlling one's own actions steadily, not by forcing the child's body.", bundle: 'pro' },
+        { q: "What shift occurs when a parent adopts the Directives mindset?", a: "Prohibitions (\"Don't!\") are replaced with clear positive instructions (\"Use walking feet\").", bundle: 'pro' },
+        { q: "Why is the Household Routines mindset critical for ending daily battles?", a: "It recognizes that recurring friction is a system problem to fix, not a moral failure in the child.", bundle: 'pro' },
+        { q: "How does the Child Responsibility mindset transform a child's self-concept?", a: "It proves that they are needed and capable through real household contribution rather than helplessness.", bundle: 'pro' },
+        { q: "What is the long-term character cost of raising children without proactive structure?", a: "Children grow up anxious, disorganized, and reactive, lacking internal executive function skills.", bundle: 'pro' },
+        { q: "How does resetting one's mindset transform a parent's presence in the home?", a: "It changes the parent from a frantic reactor into a calm, proactive architect of family life.", bundle: 'pro' },
+        { q: "Why is proactive structure an act of deep love for children?", a: "It provides the safe, predictable container within which children can relax, grow, and flourish.", bundle: 'pro' },
+      ]
+    },
+  ],
+  parentingadv: [
+    {
+      name: "Core Idea",
+      description: "Advanced integration in Parenting Toward the Kingdom: combining strategies across Packs 01–06 to navigate complex behavioral disruptions, meltdowns, and repair through five master combinations:\n\n1. **Empathetic Limit Setting**\n2. **Anchoring the Meltdown**\n3. **Guided Problem Solving**\n4. **Resetting and Restoring**\n5. **Parental Reset and Repair**\n\nMastery combines connection, limits, self-regulation, problem-solving, and repair into seamless relational wisdom.",
+      cards: [
+        { q: "What is the core objective of Parenting — Advanced?", a: "Integrating strategies from Packs 01–06 into multi-step relational moves for complex parenting challenges.", bundle: 'free' },
+        { q: "What are the five master combinations in this pack?", a: "Empathetic Limit Setting, Anchoring the Meltdown, Guided Problem Solving, Resetting and Restoring, and Parental Reset and Repair.", bundle: 'free' },
+        { q: "How does combining strategies differ from using single strategies in isolation?", a: "Single strategies drill isolated moves; advanced combinations synthesize connection, limits, regulation, and repair together.", bundle: 'free' },
+        { q: "What is the relationship between parental self-regulation and child de-escalation?", a: "A child co-regulates with the parent's calm presence; adult self-regulation is the prerequisite for all de-escalation.", bundle: 'free' },
+        { q: "Why is parental apology considered an advanced leadership skill?", a: "Because modeling humble repentance demonstrates integrity, dismantles defensiveness, and teaches children how to own failures.", bundle: 'free' },
+        { q: "How do high expectations and unconditional warmth function together in advanced combinations?", a: "Boundaries remain firm and non-negotiable while relational warmth and physical connection remain completely unshakeable.", bundle: 'pro' },
+        { q: "What is the role of sequences in mastering complex behavioral disruptions?", a: "Sequences provide a structured roadmap that guides parent and child smoothly from emotional rupture back to full restoration.", bundle: 'pro' },
+        { q: "What is the long-term character goal of practicing integrated kingdom parenting at home?", a: "Forming mature adults who possess emotional self-control, internal responsibility, humility, and the capacity for healthy reconciliation.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Empathetic Limit Setting",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of Empathetic Limit Setting?", a: "Combining warm relational connection and emotional validation with a clear, non-negotiable boundary and structured choices.", bundle: 'free' },
+        { q: "Which strategies from earlier packs are combined in Empathetic Limit Setting?", a: "Connection Before Correction (Pack 01), Taking the Side of Feelings (Pack 01), and Options Within the Limit (Pack 02).", bundle: 'free' },
+        { q: "Why does validating a child's wish prevent power struggles over limits?", a: "Because acknowledging their desire proves their heart is understood, reducing their need to fight the boundary.", bundle: 'free' },
+        { q: "How do structured choices support compliance within a firm boundary?", a: "Offering two acceptable options grants the child healthy agency while ensuring the non-negotiable goal is met.", bundle: 'free' },
+        { q: "What is the risk of offering empathy without holding a firm boundary?", a: "Empathy without boundaries leads to behavioral surrender, leaving the child ungrounded and undisciplined.", bundle: 'free' },
+        { q: "What is the risk of enforcing a boundary without offering emotional empathy?", a: "Boundaries without empathy create resentment, distance, and rebellion because the child feels unheard.", bundle: 'pro' },
+        { q: "How does Empathetic Limit Setting preserve relational safety during discipline?", a: "It proves that the parent remains a loving ally even while enforcing firm behavioral standards.", bundle: 'pro' },
+        { q: "How can a parent execute this combination during a public outing?", a: "Connect with eye contact, state \"I wish we could stay, and it's time to go,\" and offer two walking choices.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Anchoring the Meltdown",
+      description: "",
+      cards: [
+        { q: "What does Anchoring the Meltdown instruct a parent to do during an explosion?", a: "Maintain absolute parental self-regulation, absorb verbal insults without defending, and transition to quiet physical action.", bundle: 'free' },
+        { q: "Which strategies from earlier packs are combined in Anchoring the Meltdown?", a: "Respond vs. React (Pack 04), Meet the Frustration Not the Words (Pack 04), and The Heartful Silence (Pack 04).", bundle: 'free' },
+        { q: "Why is matching a child's screaming volume destructive to parental authority?", a: "It communicates that the adult has lost internal self-control, reducing them to the child's emotional level.", bundle: 'free' },
+        { q: "How does a parent ignore harsh insults (\"I hate you!\") without condoning disrespect?", a: "By recognizing bad words as symptoms of emotional pain during meltdowns, addressing feelings now and words later.", bundle: 'free' },
+        { q: "When should a parent transition from verbal empathy to The Heartful Silence?", a: "When verbal validation has been offered and the child continues looping in emotional debate.", bundle: 'free' },
+        { q: "How does quiet physical follow-through differ from aggressive physical force?", a: "It is executed with complete emotional calm, gentleness, and respect for the child's dignity.", bundle: 'pro' },
+        { q: "What is the mindset behind Anchoring the Meltdown?", a: "\"My steady calm is the container that holds their emotional storm.\"", bundle: 'pro' },
+        { q: "What long-term virtue is formed in a child who experiences consistent parental calm during meltdowns?", a: "Internalized emotional resilience and the ability to remain peaceful under pressure.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Guided Problem Solving",
+      description: "",
+      cards: [
+        { q: "What is the primary objective of Guided Problem Solving?", a: "Acknowledging a task hurdle, transferring problem-solving responsibility to the child, and framing completion conditionally.", bundle: 'free' },
+        { q: "Which strategies from earlier packs are combined in Guided Problem Solving?", a: "Naming the Struggle (Pack 03), The Brainstorm Inquiry (Pack 03), and Pathway to Yes (Pack 02).", bundle: 'free' },
+        { q: "Why is jumping in to rescue a struggling child detrimental to their development?", a: "Rescuing deprives the child of productive struggle, preventing the growth of internal competence and executive function.", bundle: 'free' },
+        { q: "How does asking \"What is one small step you could try?\" activate a child's brain?", a: "It shifts the brain from emotional overwhelm to logical problem-solving and self-directed action.", bundle: 'free' },
+        { q: "How does Pathway to Yes frame boundaries positively?", a: "It reframes a refusal from \"No\" to \"Yes, as soon as you find a way to complete the task.\"", bundle: 'free' },
+        { q: "What should a parent do if a child responds \"I don't know!\" to a brainstorming prompt?", a: "Offer a warm, quiet presence, suggest two simple starting options, and wait patiently for them to choose.", bundle: 'pro' },
+        { q: "How does Guided Problem Solving build long-term grit and self-reliance?", a: "It teaches children to view obstacles as solvable puzzles rather than dead-end failures.", bundle: 'pro' },
+        { q: "Why is Naming the Struggle the essential first step before asking brainstorming questions?", a: "Because an dysregulated, frustrated child cannot access logical problem-solving until their struggle is validated.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Resetting and Restoring",
+      description: "",
+      cards: [
+        { q: "What is the core trajectory of Resetting and Restoring?", a: "Pausing a dysregulated moment, guiding the child to take responsibility and make amends, and sealing repair with warmth.", bundle: 'free' },
+        { q: "Which strategies from earlier packs are combined in Resetting and Restoring?", a: "The Time-Out Reset (Pack 05), The Joy of Repentance (Pack 05), and The Tangible Follow-up (Pack 05).", bundle: 'free' },
+        { q: "How does a Time-Out Reset differ from punitive isolation or banishment?", a: "A reset is a brief, non-punitive pause to calm a dysregulated nervous system, not a sentence of emotional exile.", bundle: 'free' },
+        { q: "Why is framing repentance as \"choosing the good\" effective?", a: "It separates identity from behavior, teaching that a good child made a bad choice and can now turn back.", bundle: 'free' },
+        { q: "What is the function of The Tangible Follow-up after amends are made?", a: "It re-establishes physical warmth and emotional safety, proving that forgiveness is complete and relationship is restored.", bundle: 'free' },
+        { q: "What goes wrong when a parent demands an apology while the child is still dysregulated?", a: "The child utters an insincere, forced apology while remaining emotionally defensive and bitter.", bundle: 'pro' },
+        { q: "How does Resetting and Restoring eliminate long-term grudges in the home?", a: "It provides a clear, repeatable three-step cycle: settle the body, repair the damage, and reunite in warmth.", bundle: 'pro' },
+        { q: "How does this combination teach children the Christian pattern of reconciliation?", a: "It models grace, repentance, and clean forgiveness, embedding the joy of return into family life.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Parental Reset and Repair",
+      description: "",
+      cards: [
+        { q: "What does Parental Reset and Repair instruct an adult to do after losing their temper?", a: "Pause their own emotional reactivity, model a plain, unexcused apology to the child, and restore warm connection.", bundle: 'free' },
+        { q: "Which strategies from earlier packs are combined in Parental Reset and Repair?", a: "Respond vs. React (Pack 04), Modeling the Apology (Pack 05), and The Tangible Follow-up (Pack 05).", bundle: 'free' },
+        { q: "Why must a parental apology avoid adding \"but you were disobedient\"?", a: "Adding excuses turns a genuine apology into a self-justification, destroying its teaching power and integrity.", bundle: 'free' },
+        { q: "How does seeing a parent apologize impact a child's willingness to admit failure?", a: "It provides a safe, real-world model of humility, proving that admitting mistakes is strength rather than weakness.", bundle: 'free' },
+        { q: "Does apologizing for shouting mean the parent takes back the underlying boundary?", a: "No; the parent apologizes for their reactive delivery while keeping the behavioral limit firm.", bundle: 'free' },
+        { q: "What should a parent do immediately upon realizing they are exploding in anger?", a: "State calmly: \"I am taking a five-minute reset so I can speak with peace,\" and step away briefly.", bundle: 'pro' },
+        { q: "How does asking a child \"Will you forgive me?\" restore relational trust?", a: "It demonstrates that the child's heart and the relationship matter more than parental pride or ego.", bundle: 'pro' },
+        { q: "Why is physical affection (hugs, hand squeezes) vital after a parental apology?", a: "It provides the physical reassurance that the relationship is completely safe and fully restored.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Relational vs Structural Moves** — Empathetic Limit Setting, Guided Problem Solving, or Anchoring the Meltdown\n• **In-the-Moment vs Restorative Moves** — Anchoring the Meltdown, Resetting and Restoring, or Parental Reset and Repair\n• **All Five Advanced Combinations** — all five combinations mixed without warning about which moment fits\n\nOne question decides nearly all of it: what level of relational intervention does the moment require?",
+      cards: [
+        { q: "What distinguishes Relational vs Structural Moves from In-the-Moment vs Restorative Moves?", a: "Relational vs Structural handles daily tasks and boundaries; In-the-Moment vs Restorative handles conflict arcs and repair.", bundle: 'pro' },
+        { q: "When should a parent choose Empathetic Limit Setting over Guided Problem Solving?", a: "Use Empathetic Limit Setting for non-negotiable boundaries; use Guided Problem Solving when the child faces a task hurdle.", bundle: 'pro' },
+        { q: "How does a parent decide when to execute Parental Reset and Repair?", a: "Immediately upon realizing that their own adult anger flared and caused an unskillful outburst.", bundle: 'pro' },
+        { q: "Why is reading the child's emotional state essential before selecting a master combination?", a: "Matching the right combination to the child's heart condition prevents unnecessary power struggles.", bundle: 'pro' },
+        { q: "What core question guides the parent across all three collections in this pack?", a: "\"Does this moment require an empathetic limit, problem-solving guidance, calm anchoring, child repair, or adult repentance?\"", bundle: 'pro' },
+        { q: "Why does All Five Advanced Combinations test a parent's real-time discernment?", a: "It requires instant recognition of whether a situation calls for boundaries, regulation, problem-solving, or repair.", bundle: 'pro' },
+        { q: "What goes wrong when a parent relies exclusively on Empathetic Limit Setting without ever using Anchoring the Meltdown?", a: "The parent keeps offering choices during peak meltdowns when the child's brain is too dysregulated to process choices.", bundle: 'pro' },
+        { q: "How do these three collections transform family culture over time?", a: "They replace chaotic emotional reactivity with predictable, loving, and effective relational mastery.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Complete Disruption Protocol** — Respond vs. React → Naming the Struggle → Taking the Side of Feelings → The Brainstorm Inquiry → The Joy of Repentance → The Tangible Follow-up\n2. **De-escalation to Restoration** — Respond vs. React → Meet the Frustration → Expect Pushback → The Time-Out Reset → The Tangible Follow-up\n3. **Proactive to Reactive Transition** — Planning in Advance → Positive Directives → Stating Parent Action → The Tangible Follow-up\n\nIn each sequence the exact order of relational steps guides complete emotional repair and order.",
+      cards: [
+        { q: "Why does The Complete Disruption Protocol begin with Respond vs. React?", a: "A parent must regulate their own nervous system before attempting to validate or guide an upset child.", bundle: 'pro' },
+        { q: "What role does Taking the Side of Feelings play in the middle of a disruption protocol?", a: "It provides emotional safety by validating the child's wish before asking them to brainstorm solutions.", bundle: 'pro' },
+        { q: "Why does De-escalation to Restoration move from Expect Pushback directly to The Time-Out Reset?", a: "When verbal validation has been offered and the child continues exploding, a calming physical reset is required.", bundle: 'pro' },
+        { q: "How does Proactive to Reactive Transition bridge pre-event planning with boundary execution?", a: "It sets rules beforehand, gives positive directives, executes parent actions if resisted, and restores warmth.", bundle: 'pro' },
+        { q: "What goes wrong when a parent skips step one (Respond vs. React) in a high-intensity meltdown?", a: "The parent explodes in anger, turning the discipline moment into a chaotic power struggle.", bundle: 'pro' },
+        { q: "Why is the exact order of steps in an advanced sequence critical for de-escalation?", a: "Each step settles a layer of emotional arousal, opening the brain for the next level of guidance.", bundle: 'pro' },
+        { q: "What should a parent do if a child becomes dysregulated again during step four of a protocol?", a: "Pause the verbal inquiry, return to quiet physical presence or a reset, and wait for calm to return.", bundle: 'pro' },
+        { q: "How does following these multi-step sequences build long-term emotional resilience in children?", a: "It gives them a predictable, safe roadmap for navigating big feelings, taking responsibility, and restoring love.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories to master in this pack:\n\n• **High-Intensity Explosions** — acute meltdowns and physical screaming requiring calm anchoring\n• **Deep Resistance and Refusal** — stubborn task refusal requiring guided problem-solving and options\n• **Parental Emotional Overload** — adult anger outbursts requiring modeled repentance\n• **Sibling and Relational Ruptures** — fights between children requiring guided repair and limits\n• **Transition and Habit Hurdles** — routine resistance requiring proactive structure and conditional steps\n\nEach category represents a major structural hurdle in family life.",
+      cards: [
+        { q: "What drives a child's behavior in High-Intensity Explosions?", a: "An internal overflow of frustration and nervous system dysregulation that requires a safe anchor.", bundle: 'pro' },
+        { q: "How does Guided Problem Solving dismantle Deep Resistance and Refusal?", a: "By validating the struggle, breaking the task into small steps, and offering conditional progress.", bundle: 'pro' },
+        { q: "Why is Parental Emotional Overload a vital category for advanced parenting?", a: "It turns adult mistakes into the primary classroom for modeling genuine repentance and humility.", bundle: 'pro' },
+        { q: "How does Resetting and Restoring heal Sibling and Relational Ruptures?", a: "By providing a calming pause, guiding amends, and sealing the reunion with physical warmth.", bundle: 'pro' },
+        { q: "Why are Transition and Habit Hurdles particularly challenging for parents?", a: "Transition fatigue tempts parents to nag and scold rather than executing clear structure and choices.", bundle: 'pro' },
+        { q: "What is the common thread across all five challenge categories?", a: "Maintaining regulated, non-shaming leadership that guides the child from friction back to relationship.", bundle: 'pro' },
+        { q: "What should a parent avoid when a child screams \"YOU DON'T LOVE ME!\" during a refusal?", a: "Arguing about the statement; validate the emotional hurt calmly and hold the boundary steadily.", bundle: 'pro' },
+        { q: "How does executing advanced combinations across these categories build long-term family security?", a: "It proves to children that love is permanent, boundaries are safe, and every rupture can be repaired.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Multi-step Anxiety** — combining moves is a complete relational response, not a technical script\n• **Emotional Impatience** — taking thirty seconds to connect saves thirty minutes of struggle\n• **Fear of Surrender** — authority is demonstrated through humility, self-control, and firm grace\n• **Shame over Relapse** — relapse is a normal part of learning virtue over time\n• **Parental Perfectionism** — parenting requires faithful presence and grace, not mechanical perfection\n\nIn every one, the limiting belief treats complexity as an obstacle rather than an opportunity for growth.",
+      cards: [
+        { q: "What core truth is established in the Multi-step Anxiety mindset?", a: "Combining strategies is a complete relational response that flows naturally with practice, not a technical script.", bundle: 'pro' },
+        { q: "How does the Emotional Impatience mindset reframe the time spent connecting?", a: "Taking thirty seconds to connect opens the child's heart, saving thirty minutes of explosive power struggle.", bundle: 'pro' },
+        { q: "What fear is dismantled in the Fear of Surrender mindset regarding parental apology?", a: "The fear that apologizing surrenders authority; owning mistakes demonstrates genuine integrity and strength.", bundle: 'pro' },
+        { q: "What shift occurs when a parent adopts the Shame over Relapse mindset?", a: "Behavioral relapse is recognized as a normal part of learning virtue over time, rather than a failure of method.", bundle: 'pro' },
+        { q: "Why is dismantling Parental Perfectionism essential for emotional peace in the home?", a: "Children thrive on faithful, regulated presence and grace, not on mechanical, perfectionist execution.", bundle: 'pro' },
+        { q: "What is the long-term character cost of abandoning combinations when meltdowns recur?", a: "Parents revert to shouting and control, depriving children of the consistent structure needed for virtue.", bundle: 'pro' },
+        { q: "How does resetting one's mindset transform a parent's posture during complex conflicts?", a: "It shifts the parent from a frantic reactor into a calm, wise architect of relational restoration.", bundle: 'pro' },
+        { q: "Why is practicing advanced mindsets an act of deep love for the entire family?", a: "It creates a peaceful, resilient home environment where both parents and children can stumble, repair, and grow.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Principles of Integration",
+      description: "The foundational model and theological framework of integrating Parenting Toward the Kingdom strategies into daily family life.\n\n• **Relational Co-Regulation** — regulating adult emotions to provide a safe container for the child\n• **The Disruption Protocol** — moving from emotional rupture to guided problem solving and repentance\n• **Kingdom Character Formation** — using daily discipline friction to build internalized virtue and grace\n\nIntegrating connection, boundaries, regulation, problem-solving, and repair transforms family discipline into character formation.",
+      cards: [
+        { q: "How does mastering advanced strategy combinations embody kingdom parenting in daily life?", a: "It integrates love, truth, self-control, and repentance into every daily interaction, modeling the gospel at home.", bundle: 'pro' },
+        { q: "What is the ultimate relational fruit of practicing integrated parenting across childhood?", a: "Deep emotional trust, unshakeable security, internal self-discipline, and a lifelong capacity for healthy reconciliation.", bundle: 'pro' },
+        { q: "Why is parental self-regulation the foundational prerequisite for all advanced combinations?", a: "Because a dysregulated parent cannot provide the emotional safety necessary for a child to self-regulate or make amends.", bundle: 'pro' },
+        { q: "How do high expectations and unconditional warmth function together in advanced integration?", a: "Boundaries remain firm and non-negotiable while relational warmth and physical connection remain completely unshakeable.", bundle: 'pro' },
+        { q: "What is the distinction between short-term compliance and long-term kingdom character formation?", a: "Short-term compliance relies on external fear and force; character formation builds internal virtue, self-control, and humility.", bundle: 'pro' },
+        { q: "How does the pattern of Resetting and Restoring reflect the theology of repentance?", a: "It models God's unconditional grace, showing children that failure is never final and the path back to relationship is always open.", bundle: 'pro' },
+        { q: "Why does Guided Problem Solving build executive function better than adult rescuing?", a: "Because transferring the problem-solving task to the child engages their reflective thinking and builds self-directed competence.", bundle: 'pro' },
+        { q: "What transforms a home from a place of chronic friction into a sanctuary of peace?", a: "Parents consistently responding with regulated calm, clear boundaries, guided problem-solving, and humble repair.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

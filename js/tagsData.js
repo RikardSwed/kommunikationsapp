@@ -457,6 +457,12 @@ const packTags = {
   praxbest4: [
     'praxeology', 'volume 4', 'frame control', 'attachment styles', 'rian stone'
   ],
+  parenting6: [
+    'parenting', 'proactive', 'routines', 'structure', 'mamalakis', 'kingdom'
+  ],
+  parentingadv: [
+    'parenting', 'advanced', 'mamalakis', 'kingdom', 'integration', 'mastery'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -525,7 +531,7 @@ const TOPICS = [
   { id: 'selfpresentation',      title: 'Self-Presentation',             packs: [] },
   { id: 'flirt',                 title: 'Flirting',                      packs: ['danbacon1', 'danbacon2', 'danbacon3', 'danbacon4', 'toddv1', 'toddv2', 'toddv3', 'toddv4', 'toddv5'] },
   { id: 'leadership',            title: 'Leadership',                    packs: ['praxframe5', 'praxdread5', 'oconnor4', 'oconnor5'] },
-  { id: 'relationshipcomm',      title: 'Communication in Relationships',packs: ['masculine1', 'masculine2', 'masculine3', 'masculine4', 'masculine5', 'masculine6', 'masculinesv', 'parenting1', 'parenting2', 'parenting3', 'parenting4', 'parenting5', 'praxframe1', 'praxframe2', 'praxframe3', 'praxframe4', 'praxdread1', 'praxdread2', 'praxdread3', 'jimmy1', 'jimmy2', 'jimmy5', 'seenandtrusted1thesafetyshereads', 'seenandtrusted2careshedidnotaskf', 'seenandtrusted3askingtobetrusted', 'alexandergrace1', 'alexandergrace2', 'alexandergrace3', 'alexandergrace4', 'alexandergrace5', 'alexandergrace6', 'alexandergrace7', 'alexandergrace8', 'praxfield1', 'praxfield2', 'praxfield3', 'praxfield4', 'praxbest1', 'praxbest2', 'praxbest3', 'praxbest4'] },
+  { id: 'relationshipcomm',      title: 'Communication in Relationships',packs: ['masculine1', 'masculine2', 'masculine3', 'masculine4', 'masculine5', 'masculine6', 'masculinesv', 'parenting1', 'parenting2', 'parenting3', 'parenting4', 'parenting5', 'praxframe1', 'praxframe2', 'praxframe3', 'praxframe4', 'praxdread1', 'praxdread2', 'praxdread3', 'jimmy1', 'jimmy2', 'jimmy5', 'seenandtrusted1thesafetyshereads', 'seenandtrusted2careshedidnotaskf', 'seenandtrusted3askingtobetrusted', 'alexandergrace1', 'alexandergrace2', 'alexandergrace3', 'alexandergrace4', 'alexandergrace5', 'alexandergrace6', 'alexandergrace7', 'alexandergrace8', 'praxfield1', 'praxfield2', 'praxfield3', 'praxfield4', 'praxbest1', 'praxbest2', 'praxbest3', 'praxbest4', 'parenting6', 'parentingadv'] },
 
   // ── Mutual care in a congregation (v1.27.54) ──────────────────────
   // Added for the Jay Adams packs. Both sit at minLevel 'complete', so this

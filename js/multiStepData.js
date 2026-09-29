@@ -14843,4 +14843,236 @@ const multiStepCollections = {
       ]
     },
   ],
+  parenting6: [
+    {
+      name: "Pre-Event Preparation",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A three-step proactive sequence for managing public outings and events: **Planning in Advance** → **Positive Directives** → **Stating Parent Action**. First agree on expectations, give clear positive instructions during the event, and state calm parent boundaries if friction arises.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are taking your child grocery shopping during a busy afternoon.",
+          steps: [
+            { front: "Planning in Advance — you sit in the parked car before entering the store.", back: "\"Before we go inside, let's agree: hands stay on the shopping cart, and we pick out two healthy snacks together.\"", guideFront: "Agree on the plan before...", guideBack: "An advance agreement" },
+            { front: "Positive Directives — inside the aisle, your child reaches excitedly toward a shelf.", back: "\"Keep two hands on the cart handle, please.\"", guideFront: "Tell them what to do when...", guideBack: "A positive replacement directive" },
+            { front: "Stating Parent Action — your child begins begging loudly for a sugary candy box.", back: "\"I purchase items that are on our shopping list today.\"", guideFront: "State what you will do when...", guideBack: "A statement of parent action" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You arrive at a sit-down restaurant for dinner with your young children.",
+          steps: [
+            { front: "Planning in Advance — you pause outside the restaurant doors.", back: "\"Before we walk in, let's review our agreement: quiet indoor voices and staying seated at our table.\"", guideFront: "Agree on the plan before...", guideBack: "An advance agreement" },
+            { front: "Positive Directives — at the table, your child speaks in a loud shouting voice.", back: "\"Use your quiet restaurant voice, please.\"", guideFront: "Tell them what to do when...", guideBack: "A positive replacement directive" },
+            { front: "Stating Parent Action — your child begins standing up and crawling under the table.", back: "\"I stay at tables where everyone remains seated. We can step outside to the foyer until you're ready to sit.\"", guideFront: "State what you will do when...", guideBack: "A statement of parent action" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You arrive at a busy neighborhood playground for an afternoon playdate.",
+          steps: [
+            { front: "Planning in Advance — you stop at the park entrance gate.", back: "\"Before we run to the swings, let's agree: when I give the five-minute call, we gather our water bottles without arguing.\"", guideFront: "Agree on the plan before...", guideBack: "An advance agreement" },
+            { front: "Positive Directives — your child starts running wildly up the slide where others are coming down.", back: "\"Use the ladder for climbing up, please.\"", guideFront: "Tell them what to do when...", guideBack: "A positive replacement directive" },
+            { front: "Stating Parent Action — your child refuses to leave the swing when the five-minute warning ends.", back: "\"I pack up the park toys when it's departure time. I am walking to the car now.\"", guideFront: "State what you will do when...", guideBack: "A statement of parent action" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Routine Restructuring",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence for rebuilding chaotic daily routines: **Overhauling the Routine** → **Assigning Real Ownership** → **Planning in Advance**. First redesign the system during calm, give the child a real role within it, and review the plan before execution.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Every morning departure is a chaotic scramble of lost shoes and forgotten backpacks.",
+          steps: [
+            { front: "Overhauling the Routine — sitting together on the couch on Sunday afternoon.", back: "\"Our morning departure is stressed. Let's create a launch pad station by the front door where everything lives.\"", guideFront: "Redesign the routine when...", guideBack: "A calm routine agreement" },
+            { front: "Assigning Real Ownership — assigning clear responsibilities for the new station.", back: "\"You are our launch pad manager. Your responsibility is checking that backpacks and shoes are parked there every night.\"", guideFront: "Give a real role when...", guideBack: "An assignment of responsibility" },
+            { front: "Planning in Advance — checking in right before bedtime on Sunday night.", back: "\"Before we head to sleep, let's review our plan: launch pad loaded tonight so tomorrow morning is smooth.\"", guideFront: "Agree on the plan before...", guideBack: "An advance agreement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Bedtime takes over an hour every night due to stalling, extra water requests, and arguments.",
+          steps: [
+            { front: "Overhauling the Routine — discussing bedtime structure over weekend lunch.", back: "\"Bedtime feels rushed and exhausting for everyone. Let's draw a four-step bedtime picture chart together.\"", guideFront: "Redesign the routine when...", guideBack: "A calm routine agreement" },
+            { front: "Assigning Real Ownership — giving the child ownership of the new routine chart.", back: "\"You are our bedtime chart leader. Your job is moving the clothes-pin down each step as we finish it.\"", guideFront: "Give a real role when...", guideBack: "An assignment of responsibility" },
+            { front: "Planning in Advance — pausing right after dinner before bedtime starts.", back: "\"Before we start bedtime, let's look at our chart and review our plan for two books and lights out.\"", guideFront: "Agree on the plan before...", guideBack: "An advance agreement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Evening toy cleanup results in crying, refusal, and parents doing all the work.",
+          steps: [
+            { front: "Overhauling the Routine — organizing the playroom together on Saturday morning.", back: "\"Cleanup is overwhelming because toys are mixed. Let's label four clear bins with picture tags so everything has a home.\"", guideFront: "Redesign the routine when...", guideBack: "A calm routine agreement" },
+            { front: "Assigning Real Ownership — designating specific area ownership.", back: "\"You are the official block and puzzle curator. Your responsibility is keeping the block bin organized.\"", guideFront: "Give a real role when...", guideBack: "An assignment of responsibility" },
+            { front: "Planning in Advance — pausing fifteen minutes before dinner time.", back: "\"Before we start cleanup, let's review our plan: five minutes of bin sorting, then we wash hands for dinner.\"", guideFront: "Agree on the plan before...", guideBack: "An advance agreement" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Boundary Execution",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence for establishing and maintaining clear behavioral expectations: **Positive Directives** → **Stating Parent Action** → **Assigning Real Ownership**. Direct the positive action, state your boundary action if resistance occurs, and assign a positive role to anchor compliance.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Children are yelling and throwing paper wrappers across the back seat of the car.",
+          steps: [
+            { front: "Positive Directives — you look in the rear-view mirror while driving safely.", back: "\"Keep your hands in your lap and use quiet voices, please.\"", guideFront: "Tell them what to do when...", guideBack: "A positive replacement directive" },
+            { front: "Stating Parent Action — the shouting continues and a wrapper hits the window.", back: "\"I drive the car when the back seat is safe and quiet. I am pulling over to the shoulder now.\"", guideFront: "State what you will do when...", guideBack: "A statement of parent action" },
+            { front: "Assigning Real Ownership — after the car is quiet and moving again.", back: "\"You are our back-seat safety captain. Your job is making sure trash goes into the door bag.\"", guideFront: "Give a real role when...", guideBack: "An assignment of responsibility" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your child is banging their fork on the glass table and yelling for milk.",
+          steps: [
+            { front: "Positive Directives — you pause at the kitchen counter.", back: "\"Set your fork flat on the napkin and ask politely with words, please.\"", guideFront: "Tell them what to do when...", guideBack: "A positive replacement directive" },
+            { front: "Stating Parent Action — the fork banging continues loudly.", back: "\"I serve drinks and food when the table is quiet and calm.\"", guideFront: "State what you will do when...", guideBack: "A statement of parent action" },
+            { front: "Assigning Real Ownership — once the table is calm and milk is poured.", back: "\"You are our drink assistant. Your job is passing the napkin box to everyone at dinner.\"", guideFront: "Give a real role when...", guideBack: "An assignment of responsibility" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Screen time ends and your child begins whining and refusing to turn off the TV.",
+          steps: [
+            { front: "Positive Directives — you walk into the living room calmly.", back: "\"Press the red power button and hand the remote to me, please.\"", guideFront: "Tell them what to do when...", guideBack: "A positive replacement directive" },
+            { front: "Stating Parent Action — your child holds the remote away and argues.", back: "\"Screen time ends at 5:00 PM. I am unplugging the media console for the evening.\"", guideFront: "State what you will do when...", guideBack: "A statement of parent action" },
+            { front: "Assigning Real Ownership — after the screen is off and console unplugged.", back: "\"You are our evening lights manager. Your responsibility is turning on the porch lights for sunset.\"", guideFront: "Give a real role when...", guideBack: "An assignment of responsibility" },
+          ]
+        },
+      ]
+    },
+  ],
+  parentingadv: [
+    {
+      name: "The Complete Disruption Protocol",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A comprehensive six-step sequence for navigating a major behavioral rupture: **Respond vs. React** → **Naming the Struggle** → **Taking the Side of Feelings** → **The Brainstorm Inquiry** → **The Joy of Repentance** → **The Tangible Follow-up**.\n\n1. **Respond vs. React** — pause to regulate your own nervous system before acting\n2. **Naming the Struggle** — acknowledge the child's difficulty without taking over\n3. **Taking the Side of Feelings** — validate their internal emotional wish\n4. **The Brainstorm Inquiry** — prompt the child to generate a constructive fix\n5. **The Joy of Repentance** — guide them to make amends and restore what was broken\n6. **The Tangible Follow-up** — seal the reconciliation with physical warmth and love\n\nMoving through this order settles dysregulation, validates the heart, transfers responsibility, and achieves full relational repair.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your child gets furious at their sibling over a toy, shoves them off the bench, and screams.",
+          steps: [
+            { front: "Respond vs. React — you feel your jaw clench and embarrassment flood your body.", back: "(Pause in your steps, take a slow exhale) \"I am calm. I can handle this storm.\"", guideFront: "Pause before you answer when...", guideBack: "A calm, intentional statement" },
+            { front: "Naming the Struggle — you walk over calmly and kneel by your child.", back: "\"You were really struggling to share that bench when you felt rushed.\"", guideFront: "Acknowledge the difficulty when...", guideBack: "An observation of their effort" },
+            { front: "Taking the Side of Feelings — they glare and say \"He had it too long!\".", back: "\"I get it. You wished you could have had a turn on the bench all to yourself.\"", guideFront: "Share their wish when...", guideBack: "A validating \"wish\" or statement" },
+            { front: "The Brainstorm Inquiry — their shoulders drop and breathing slows down.", back: "\"Pushing is unsafe. What could you do right now to make this right with your brother?\"", guideFront: "Transfer problem-solving when...", guideBack: "A question that invites a solution" },
+            { front: "The Joy of Repentance — they walk over to their sibling, apologize, and offer a hand up.", back: "\"Thank you for making that right. Turning a mistake around takes real character.\"", guideFront: "Teach the path back when...", guideBack: "The mistake named, and a way to fix it" },
+            { front: "The Tangible Follow-up — they look relieved and glance up at you.", back: "\"I am so proud of how you handled that. Give me a big hug—we're back on the team.\"", guideFront: "Restore the connection when...", guideBack: "A warm action or statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your child throws the television remote at the wall and screams when screen time ends.",
+          steps: [
+            { front: "Respond vs. React — the loud crash of the remote triggers your own anger.", back: "(Close your eyes for one second, drop your shoulders) \"I will stay calm.\"", guideFront: "Pause before you answer when...", guideBack: "A calm, intentional statement" },
+            { front: "Naming the Struggle — you sit on the sofa near them.", back: "\"It's really hard to turn off a show when you're right in the middle of a fun part.\"", guideFront: "Acknowledge the difficulty when...", guideBack: "An observation of their effort" },
+            { front: "Taking the Side of Feelings — they sob into a cushion that it's unfair.", back: "\"I know. I wish we could watch movies together all afternoon too.\"", guideFront: "Share their wish when...", guideBack: "A validating \"wish\" or statement" },
+            { front: "The Brainstorm Inquiry — their crying stops and they wipe their eyes.", back: "\"Throwing the remote was unsafe. How can we repair the remote and restart our afternoon?\"", guideFront: "Transfer problem-solving when...", guideBack: "A question that invites a solution" },
+            { front: "The Joy of Repentance — they pick up the remote, set it on the shelf, and apologize.", back: "\"Thank you for fixing that. Choosing the good after a mistake brings peace.\"", guideFront: "Teach the path back when...", guideBack: "The mistake named, and a way to fix it" },
+            { front: "The Tangible Follow-up — they stand quietly waiting for your response.", back: "\"You turned that around nicely. Come here and let me hold you.\"", guideFront: "Restore the connection when...", guideBack: "A warm action or statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your child drops to the floor in a store aisle, kicking and screaming because you placed a toy back on the shelf.",
+          steps: [
+            { front: "Respond vs. React — shoppers turn to look and judgment feels heavy.", back: "(Take a deep breath and whisper to yourself) \"My child is struggling, not attacking me.\"", guideFront: "Pause before you answer when...", guideBack: "A calm, intentional statement" },
+            { front: "Naming the Struggle — you squat down on the floor near them.", back: "\"It's really tough to see a toy you love and have to leave it on the shelf.\"", guideFront: "Acknowledge the difficulty when...", guideBack: "An observation of their effort" },
+            { front: "Taking the Side of Feelings — they cry that everyone else gets new toys.", back: "\"I hear you. I wish I could buy you every fun toy in this store today.\"", guideFront: "Share their wish when...", guideBack: "A validating \"wish\" or statement" },
+            { front: "The Brainstorm Inquiry — their kicking stops and they look at you.", back: "\"We're not buying toys today. What could we do so you remember this toy for your birthday list?\"", guideFront: "Transfer problem-solving when...", guideBack: "A question that invites a solution" },
+            { front: "The Joy of Repentance — they stand up, wipe their tears, and put the toy on the list paper.", back: "\"Thank you for helping us make a plan. You chose a great way to handle disappointment.\"", guideFront: "Teach the path back when...", guideBack: "The mistake named, and a way to fix it" },
+            { front: "The Tangible Follow-up — they reach out for your hand as you walk down the aisle.", back: "\"Squeeze my hand tight. I love going on store trips with you.\"", guideFront: "Restore the connection when...", guideBack: "A warm action or statement" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "De-escalation to Restoration",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A five-step sequence for diffusing hostility and achieving complete repair: **Respond vs. React** → **Meet the Frustration, Not the Words** → **Expect Pushback** → **The Time-Out Reset** → **The Tangible Follow-up**.\n\n1. **Respond vs. React** — pause to stay regulated when insults or harsh words are hurled\n2. **Meet the Frustration, Not the Words** — look past disrespect to validate the underlying emotional pain\n3. **Expect Pushback** — hold the limit steadily while accepting the emotional protest\n4. **The Time-Out Reset** — offer a brief calming pause when words stop working\n5. **The Tangible Follow-up** — seal the reconciliation with physical warmth once calm returns\n\nFirst settle adult anger, validate the child's pain, hold the line, pause for calm, and reunite warmly.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "After being told they cannot go to a friend's house, your child shouts \"YOU ARE THE WORST PARENT IN THE WORLD!\".",
+          steps: [
+            { front: "Respond vs. React — the personal insult stings and triggers defensiveness.", back: "(Take a slow breath and remind yourself) \"Their words are a symptom of their pain.\"", guideFront: "Pause before you answer when...", guideBack: "A calm, intentional statement" },
+            { front: "Meet the Frustration, Not the Words — you keep your tone low and gentle.", back: "\"You are so furious with me for saying no to your playdate plans tonight.\"", guideFront: "Meet the feeling underneath when...", guideBack: "The feeling, named back" },
+            { front: "Expect Pushback — they yell \"I'm never talking to you again!\" and slam a pillow.", back: "\"I hear how angry you are. And the decision remains no for tonight.\"", guideFront: "Maintain your stance when...", guideBack: "Their feeling heard, the limit kept" },
+            { front: "The Time-Out Reset — words are no longer being processed effectively.", back: "\"Let's both take a two-minute reset in our rooms until our breathing is calm.\"", guideFront: "Offer a calming pause when...", guideBack: "A pause, framed as a reset" },
+            { front: "The Tangible Follow-up — after two minutes, you walk in with open arms.", back: "\"The struggle is over now. Come give me a big hug—I love you always.\"", guideFront: "Restore the connection when...", guideBack: "A warm action or statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You announce that the family park outing is cancelled due to rain, and your child shouts \"YOU RUIN EVERYTHING!\".",
+          steps: [
+            { front: "Respond vs. React — you feel tempted to snap back about their disrespect.", back: "(Close your eyes for a second) \"I will not match their emotional volume.\"", guideFront: "Pause before you answer when...", guideBack: "A calm, intentional statement" },
+            { front: "Meet the Frustration, Not the Words — you sit on the floor near them.", back: "\"You were so excited to go to the park today and this rain feels terrible.\"", guideFront: "Meet the feeling underneath when...", guideBack: "The feeling, named back" },
+            { front: "Expect Pushback — they cry that rain is stupid and demand to go anyway.", back: "\"I know you really wish it wasn't raining. We're still staying home today.\"", guideFront: "Maintain your stance when...", guideBack: "Their feeling heard, the limit kept" },
+            { front: "The Time-Out Reset — they sob loudly and stomp around the room.", back: "\"Your body is overwhelmed by disappointment. Take two minutes on the couch to rest.\"", guideFront: "Offer a calming pause when...", guideBack: "A pause, framed as a reset" },
+            { front: "The Tangible Follow-up — their sobbing subsides and they look at you.", back: "\"I'm so glad we settled down. Let's go make hot chocolate together in the kitchen.\"", guideFront: "Restore the connection when...", guideBack: "A warm action or statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your child loses a board game to their sibling, throws the pieces, and shouts \"YOU CHEATED!\".",
+          steps: [
+            { front: "Respond vs. React — sudden sibling chaos tempts you to yell.", back: "(Pause, unclench your hands) \"I am responding with peace and leadership.\"", guideFront: "Pause before you answer when...", guideBack: "A calm, intentional statement" },
+            { front: "Meet the Frustration, Not the Words — you step between them calmly.", back: "\"You are so angry and disappointed about losing that game.\"", guideFront: "Meet the feeling underneath when...", guideBack: "The feeling, named back" },
+            { front: "Expect Pushback — they shout \"It's not fair, I hate this game!\".", back: "\"I hear how unfair it feels to lose. Throwing pieces is still not okay.\"", guideFront: "Maintain your stance when...", guideBack: "Their feeling heard, the limit kept" },
+            { front: "The Time-Out Reset — they glare at the board with red eyes.", back: "\"Let's take a two-minute pause right here until everyone's body is calm.\"", guideFront: "Offer a calming pause when...", guideBack: "A pause, framed as a reset" },
+            { front: "The Tangible Follow-up — they help gather two game pieces silently.", back: "\"Thank you for helping clean up. Give me a squeeze—we're all good.\"", guideFront: "Restore the connection when...", guideBack: "A warm action or statement" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Proactive to Reactive Transition",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A four-step sequence bridging proactive planning with reactive limit enforcement: **Planning in Advance** → **Positive Directives** → **Stating Parent Action** → **The Tangible Follow-up**.\n\n1. **Planning in Advance** — establish clear rules before entering the setting\n2. **Positive Directives** — give clear positive instruction when friction begins\n3. **Stating Parent Action** — execute parent-controlled boundaries if resistance occurs\n4. **The Tangible Follow-up** — restore warm connection once the boundary is settled\n\nFirst plan during calm, direct positively, execute parent boundaries cleanly, and seal the bond with love.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are taking your child grocery shopping during a busy weekend afternoon.",
+          steps: [
+            { front: "Planning in Advance — you sit in the parked car before entering the store.", back: "\"Before we go inside, let's agree: hands stay on the shopping cart, and we pick two fruits together.\"", guideFront: "Agree on the plan before...", guideBack: "An advance agreement" },
+            { front: "Positive Directives — inside the aisle, your child reaches excitedly for candy shelves.", back: "\"Keep two hands on the cart handle, please.\"", guideFront: "Tell them what to do when...", guideBack: "A positive replacement directive" },
+            { front: "Stating Parent Action — your child begins whining and pulling at candy boxes.", back: "\"I purchase items that were written on our family shopping list before we left.\"", guideFront: "State what you will do when...", guideBack: "A statement of parent action" },
+            { front: "The Tangible Follow-up — as you reach the checkout lane, your child walks nicely beside you.", back: "\"Thank you for keeping your hands on the cart. Give me a big high five!\"", guideFront: "Restore the connection when...", guideBack: "A warm action or statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Driving home from school with tired, noisy children in the back seat.",
+          steps: [
+            { front: "Planning in Advance — before putting the car in drive at the school gate.", back: "\"Before we start driving, remember our agreement: quiet voices and seatbelts stay clicked.\"", guideFront: "Agree on the plan before...", guideBack: "An advance agreement" },
+            { front: "Positive Directives — halfway home, two children begin shouting and wrestling.", back: "\"Use quiet, low voices in the back seat, please.\"", guideFront: "Tell them what to do when...", guideBack: "A positive replacement directive" },
+            { front: "Stating Parent Action — one child unbuckles their seatbelt while shouting.", back: "\"I drive the car when all seatbelts are clicked. I am pulling over to the curb now.\"", guideFront: "State what you will do when...", guideBack: "A statement of parent action" },
+            { front: "The Tangible Follow-up — once the seatbelt clicks back and the car is quiet.", back: "\"Thank you for buckling up safely. I love driving home with you guys.\"", guideFront: "Restore the connection when...", guideBack: "A warm action or statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Arriving at a sit-down restaurant for a family dinner outing.",
+          steps: [
+            { front: "Planning in Advance — pausing in the restaurant lobby before seating.", back: "\"Before we sit down, let's review our plan: quiet voices and staying seated at our table.\"", guideFront: "Agree on the plan before...", guideBack: "An advance agreement" },
+            { front: "Positive Directives — at the table, your child begins shouting across the room.", back: "\"Use your quiet indoor voice at the table, please.\"", guideFront: "Tell them what to do when...", guideBack: "A positive replacement directive" },
+            { front: "Stating Parent Action — your child begins standing up and crawling under the table.", back: "\"I stay at restaurant tables where everyone remains seated. We can step outside to the lobby until you're ready.\"", guideFront: "State what you will do when...", guideBack: "A statement of parent action" },
+            { front: "The Tangible Follow-up — back at the table, your child sits quietly and eats their bread roll.", back: "\"I'm so glad we're enjoying dinner together. Squeeze my hand!\"", guideFront: "Restore the connection when...", guideBack: "A warm action or statement" },
+          ]
+        },
+      ]
+    },
+  ],
 };

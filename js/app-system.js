@@ -735,6 +735,8 @@ applyInputCounterVisibility();
     praxbest2: { label: 'Praxeology Best Men 02 – Unearthing Covert Contracts', minLevel: 'complete' },
     praxbest3: { label: 'Praxeology Best Men 03 – Tactical Boundary Enforcement', minLevel: 'complete' },
     praxbest4: { label: 'Praxeology Best Men 04 – Advanced Frame & Attachment Dynamics', minLevel: 'complete' },
+    parenting6: { label: 'Parenting 06 – Proactive Structure', minLevel: 'complete' },
+    parentingadv: { label: 'Parenting — Advanced', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -3486,6 +3488,34 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
+  parenting6: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  parentingadv: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
 };
 window.BUNDLE_DEFS = BUNDLE_DEFS;
 
@@ -4376,6 +4406,7 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.30', date: 'September 2026', title: 'Parenting 06 and Parenting \u2014 Advanced', audience: 'dev', items: ['Two new complete-tier packs under Communication in Relationships, built by NotebookLM after it reviewed the finished Parenting series against the book: <em>Parenting 06 \u2013 Proactive Structure</em> (key parenting6: Planning in Advance, Stating Parent Action, Positive Directives, Overhauling the Routine, Assigning Real Ownership) and <em>Parenting \u2014 Advanced</em> (key parentingadv), whose five strategies combine moves from Parenting 01\u201305 and whose Sequences also use Parenting 06.', 'Both packs at full volume in all six modes. Content is NotebookLM\'s own, kept as written. Fixed: quotation marks around 80 Mindset fronts and one grammar slip. In the Advanced pack, eight Challenges cards that repeated Single Strategy cards were replaced with new cards written by NotebookLM.'] },
   { version: 'v1.29.29', date: 'September 2026', title: 'Parenting Toward the Kingdom 01\u201305 completed with NotebookLM', audience: 'dev', items: ['Collections, Sequences, Challenges, Mindset and Memorize filled out in all five Parenting packs (The Heart of Connection, The Architecture of Limits, Mastering the Struggle, Calm in the Storm, The Path of Repentance), merged into the existing packs (added only). Every pack now has 3 Collections decks, 9 scenarios, 40 Challenges cards, 32 Mindset cards and 10 Memorize decks with 80 cards.', 'Content is NotebookLM\'s own, kept as written. Fixed: quotation marks around 145 Mindset fronts, Memorize headings written as <em>## Strategy:</em>, three Swedish words in English lines, a few grammar slips, one reply that contradicted its situation, and one back that prescribed a stance. Only one Memorize card about Deckstack itself (Parenting 01), replaced.', 'Parenting 02: two new scenarios in <em>The Gentle Hammer</em> ran in a different order than the deck and were replaced. Parenting 03: two new scenarios in <em>From \u201cI Can\u2019t\u201d to \u201cI Did\u201d</em> were missing the deck\'s fifth step, <em>Recognition of Effort</em>, which NotebookLM added.', 'First series run with the shorter brief (pack-gap.js, about 3 000 characters) and its explicit ban on Memorize cards about the app.'] },
   { version: 'v1.29.28', date: 'September 2026', title: 'Jimmy on Relationships 1\u20136 completed with NotebookLM', audience: 'dev', items: ['Collections, Sequences, Challenges, Mindset and Memorize filled out in all six Jimmy packs (The Foundations of Safety, Healthy Expression, Listening &amp; Emotional Presence, Handling Conflict &amp; Repair, Nurturing Connection, Boundaries &amp; Your Worth), merged into the existing packs (added only). Every pack now has 3 Collections decks, 9 scenarios, 40 Challenges cards, 32 Mindset cards and 9 Memorize decks.', 'Content is NotebookLM\'s own, kept as written. Fixed: descriptions that rendered as one paragraph, Memorize headings written as <em>## Strategy:</em>, 28 inline <em>[Fact]</em>/<em>[Feeling]</em>/<em>[Need]</em> tags inside Collections and Challenges lines in Jimmy 2, and three backs that prescribed a stance. 53 Memorize cards that asked about Deckstack\'s own modes and rules instead of the book were replaced with new cards from NotebookLM.', 'In Jimmy 2, five new scenarios that ran in a different order than their combo were replaced, and the Memorize deck Sequences was rewritten to match, so every sequence in the series trains one order.', 'Jimmy 3: the Protest Polka is credited to Sue Johnson, not Gottman. The old step names <em>The Expression Formula (Facts)</em> and so on in Jimmy 2 are left for review.'] },
   { version: 'v1.29.27', date: 'September 2026', title: 'Praxeology Dread 02\u201305 completed with NotebookLM', audience: 'dev', items: ['Collections, Sequences, Challenges, Mindset and Memorize filled out in The Marketing of Value, Enforcing Expectations, Emotional Mechanics and The Roadmap to Agency, merged into the existing packs (added only). With Dread 01 in v1.29.26 the whole series is now complete: 3 Collections decks, 9 scenarios, 40 Challenges cards and 32 Mindset cards per pack.', 'Content is NotebookLM\'s own, kept as written. Fixed: 195 situations that began in lower case, Memorize headings written as <em>## Strategy:</em>, one step carrying another strategy\'s guide, one back that prescribed a stance. 20 Memorize cards that asked about Deckstack\'s own build rules instead of the book were replaced with new cards from NotebookLM.', 'In Navigating the Roadmap (Dread 05) two new scenarios that ran in a different order than the deck were replaced, so every sequence in the series trains one order.', 'Dread 05 has two concepts decks in Memorize, The Roadmap Principles and The 5 Outcomes of Dread; left for review.'] },
