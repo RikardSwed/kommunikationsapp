@@ -15054,6 +15054,10 @@ const collectionsModeData = {
         { q: "A manager makes a \"joke\" about your appearance.", a: "\"I'm surprised you'd make a personal comment like that when our relationship has been professional.\" [The Professional Boundary (I'm Surprised)]", bundle: 'pro', guideBack: "Surprise, and the professional line" },
         { q: "A peer tries to shame you in front of a group.", a: "\"Is this the appropriate venue for that type of question?\" [The Power of 'What']", bundle: 'pro', guideBack: "A 'what' question about their behavior" },
         { q: "Someone implies you only got an opportunity through favors.", a: "\"When you say that, it sounds like you're impugning my integrity. Is that what you're trying to say?\" [The Clarifying Question]", bundle: 'pro', guideBack: "Their subtext, asked back plainly" },
+        { q: "A peer sarcastically asks if you need help reading the project guidelines.", a: "\"When you say that, it sounds like you're implying I'm incompetent. Is that what you're trying to say?\" [The Clarifying Question]", bundle: 'pro', guideBack: "Their subtext, asked back plainly" },
+        { q: "Your boss asks a personal question about your dating life during a staff meeting.", a: "\"Mary, I'm surprised you would make a personal comment like that when our relationship has always been professional.\" [The Professional Boundary (I'm Surprised)]", bundle: 'pro', guideBack: "Surprise, and the professional line" },
+        { q: "A coworker makes a snide remark about your work schedule in front of the team.", a: "\"What did I do to prompt that type of comment from you right now?\" [The Power of 'What']", bundle: 'pro', guideBack: "A 'what' question about their behavior" },
+        { q: "A colleague jokes that you only got promoted because the director likes you.", a: "\"When you say that, it sounds to me like you're saying I haven't earned my role through merit. Is that what you're saying?\" [The Clarifying Question]", bundle: 'pro', guideBack: "Their subtext, asked back plainly" },
       ]
     },
     {
@@ -15066,6 +15070,10 @@ const collectionsModeData = {
         { q: "A conversation has become a waste of time.", a: "\"I value both of our time too much to continue this unproductive conversation. Goodbye.\" [The Power-Down (Exiting Conversations)]", bundle: 'pro', guideBack: "A closing line and your exit" },
         { q: "You are being ignored in a meeting.", a: "(Use territorial markers—pen, notebook—to take up space and lean forward). [The Power Tone and Icy Stare]", bundle: 'pro', guideBack: "A steady stare or low, firm voice" },
         { q: "You need to shut down a looping argument.", a: "\"I think we both understand each other's position; I'm ending this conversation now. Have a pleasant day.\" [The Power-Down (Exiting Conversations)]", bundle: 'pro', guideBack: "A closing line and your exit" },
+        { q: "A toxic colleague attempts to corner you at your desk and start a loud argument.", a: "(Square your shoulders, drop your voice to your power tone, and hold a firm, steady look). [The Power Tone and Icy Stare]", bundle: 'pro', guideBack: "A steady stare or low, firm voice" },
+        { q: "A meeting has degenerated into petty finger-pointing and off-topic complaining.", a: "\"I value everyone's time too much to continue this conversation without agenda items. Let's reconnect later.\" [The Power-Down (Exiting Conversations)]", bundle: 'pro', guideBack: "A closing line and your exit" },
+        { q: "Someone stands over your chair trying to physically intimidate you into agreeing.", a: "(Maintain the icy stare with eyelids slightly lowered over your irises, showing complete calm). [The Power Tone and Icy Stare]", bundle: 'pro', guideBack: "A steady stare or low, firm voice" },
+        { q: "An aggressive peer refuses to stop demanding immediate answers to unreasonable requests.", a: "\"I am ending this conversation now so we can both focus on our priorities. Have a good afternoon.\" [The Power-Down (Exiting Conversations)]", bundle: 'pro', guideBack: "A closing line and your exit" },
       ]
     },
     {
@@ -15078,6 +15086,10 @@ const collectionsModeData = {
         { q: "Someone blames you for a client loss.", a: "\"I understand losing a client is hard, but my work speaks for itself and I'm surprised you'd attack me here.\" [Selective Engagement]", bundle: 'pro', guideBack: "A short, unbothered line or look" },
         { q: "You want to dismiss a petty insult about your work.", a: "\"Your beliefs are of no consequence to me; my track record speaks for itself.\" [Selective Engagement]", bundle: 'pro', guideBack: "A short, unbothered line or look" },
         { q: "You need to decline a request while sounding like a team player.", a: "\"I'd like to be helpful, however I'm afraid I have plans tonight, so I'm wondering if I can help in the morning?\" [Benefit Statements]", bundle: 'pro', guideBack: "Your ask, tied to their benefit" },
+        { q: "You want a busy team member to turn in their quarterly reports on time.", a: "\"If you get those reports to me by three, you won't have to worry about weekend follow-ups.\" [Benefit Statements]", bundle: 'pro', guideBack: "Your ask, tied to their benefit" },
+        { q: "A rival tries to discredit your past experience during a project review.", a: "\"I understand that past results matter, but my record and credentials speak for themselves.\" [Selective Engagement]", bundle: 'pro', guideBack: "A short, unbothered line or look" },
+        { q: "A toxic peer tells everyone that your proposal is completely unrealistic.", a: "\"Your opinion regarding my proposal is of no consequence to me; let's stick to the data.\" [Selective Engagement]", bundle: 'pro', guideBack: "A short, unbothered line or look" },
+        { q: "You need to decline taking on an extra project while staying professional.", a: "\"I'd like to be helpful, but I am at full capacity today so that I can deliver my current work at top quality.\" [Benefit Statements]", bundle: 'pro', guideBack: "Your ask, tied to their benefit" },
       ]
     },
   ],
@@ -15093,6 +15105,9 @@ const collectionsModeData = {
         { q: "Someone asks \"Quick question?\" while you are clearly working on a deadline.", a: "(Point to your 'Unavailable' sign and stay focused). [The Availability Monitor]", bundle: 'pro', guideBack: "Your availability, shown or said" },
         { q: "You want to set the groundwork for a new boundary with a needy coworker.", a: "\"Mary, I need your help. I've found I haven't been managing my time efficiently, so I'm asking you to help me stay on track.\" [The Availability Monitor]", bundle: 'pro', guideBack: "Your availability, shown or said" },
         { q: "You want to explain why you are rejecting a task to keep the team strong.", a: "\"I've noticed I'm taking on work others can do. If I do that, it hinders your growth. Let's make sure you handle this one.\" [The B-I-B Script]", bundle: 'pro', guideBack: "Your limit, their cue and the benefit" },
+        { q: "A colleague asks if you have \"five quick minutes\" to brainstorm while you are in the middle of writing a critical report.", a: "\"I am in a focus block right now, but I can give you ten minutes at 3:00 PM.\" [The Availability Monitor]", bundle: 'pro', guideBack: "Your availability, shown or said" },
+        { q: "Your supervisor wants you to attend an optional afternoon committee meeting that overlaps with your key deadline.", a: "\"I'd like to be helpful, but I need to focus on the Q3 deliverable today so that it stays on schedule.\" [The Diplomatic Decline]", bundle: 'pro', guideBack: "A warm no with an alternative" },
+        { q: "A peer drops by your desk to chat about weekend plans while you are rushing to finish an urgent email.", a: "\"I have to finish this priority task right now, so let me catch up with you at lunch.\" [Power-Down Phrases]", bundle: 'pro', guideBack: "A closing line and your exit" },
       ]
     },
     {
@@ -15106,6 +15121,25 @@ const collectionsModeData = {
         { q: "Your boss asks you to switch to a new software that you know will slow you down.", a: "\"I'd like to help, but I'm afraid that switch would double my project time. Could we stick to the current plan for this month?\" [The Diplomatic Decline]", bundle: 'pro', guideBack: "A warm no with an alternative" },
         { q: "You are caught in a gossip session and want to leave without looking like a \"worker bee.\"", a: "\"I have nothing valuable to add to this, so I'm going to get back to my project. You know where to find me if you need anything.\" [Power-Down Phrases]", bundle: 'pro', guideBack: "A closing line and your exit" },
         { q: "A client asks for a discount you aren't authorized to give.", a: "\"I understand the budget is tight, but unfortunately I can't change the rate. I can, however, offer a smaller package that fits your needs.\" [The Diplomatic Decline]", bundle: 'pro', guideBack: "A warm no with an alternative" },
+        { q: "A vendor keeps pushing their sales pitch after you have already stated you aren't purchasing.", a: "\"I value your time, but our decision is final and I am closing this meeting now. Good luck.\" [Power-Down Phrases]", bundle: 'pro', guideBack: "A closing line and your exit" },
+        { q: "A coworker lingers at your office door continuing to debate a decision that was made yesterday.", a: "\"The decision is set, so I am getting back to my schedule now. Have a good afternoon.\" [Power-Down Phrases]", bundle: 'pro', guideBack: "A closing line and your exit" },
+        { q: "A project partner keeps adding small side discussions at the end of a long status call.", a: "\"I want to respect everyone's calendar, so I am ending the call here. Thank you all.\" [Power-Down Phrases]", bundle: 'pro', guideBack: "A closing line and your exit" },
+      ]
+    },
+    {
+      name: "Protecting Your Workload",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choose among The Diplomatic Decline, The B-I-B Script, The Availability Monitor, and Power-Down Phrases when extra tasks or scope creep threaten your capacity.\n\n• Saying yes to every request dilutes the quality of your core deliverables.\n• Framing refusals around professional standards and mutual benefit maintains respect.\n• Mindset: \"Protecting my capacity ensures I deliver top-quality work on my primary responsibilities.\"",
+      inputs: [
+        { q: "A manager asks you to take on an extra project while your current queue is completely full.", a: "\"I'd like to help, but my schedule is at full capacity so that I can maintain quality on my primary projects.\" [The Diplomatic Decline]", bundle: 'pro', guideBack: "A warm no with an alternative" },
+        { q: "A partner team asks you to join a recurring weekly task force without clear objectives.", a: "\"I'm not able to join the task force right now, but I can review your final summary document.\" [The Diplomatic Decline]", bundle: 'pro', guideBack: "A warm no with an alternative" },
+        { q: "A peer repeatedly stops by to ask you to double-check their basic spreadsheet calculations.", a: "\"I am in a dedicated focus block until 4:00 PM, so I won't be able to review spreadsheet drafts today.\" [The Availability Monitor]", bundle: 'pro', guideBack: "Your availability, shown or said" },
+        { q: "A senior leader asks if you can take on an urgent side request outside your department's scope.", a: "\"I'd love to assist, but doing so would compromise my current project deadlines, so I must decline.\" [The Diplomatic Decline]", bundle: 'pro', guideBack: "A warm no with an alternative" },
+        { q: "An external consultant attempts to assign you follow-up research tasks after a workshop.", a: "\"I'm not in a position to take on additional research, so I'll leave those follow-ups with your team.\" [The Diplomatic Decline]", bundle: 'pro', guideBack: "A warm no with an alternative" },
+        { q: "A team member continues to argue after you declined taking over their client calls.", a: "\"My decision stands and I am returning to my priority work now. Thank you for understanding.\" [Power-Down Phrases]", bundle: 'pro', guideBack: "A closing line and your exit" },
+        { q: "You realize you keep agreeing to take on extra team administrative tasks that derail your main project.", a: "\"I've noticed I'm saying yes to so many admin tasks that my core work is falling behind. If you see me volunteering for extra admin, please stop me—that way, my main deliverables will stay top quality for the team.\" [The B-I-B Script]", bundle: 'pro', guideBack: "Your limit, their cue and the benefit" },
+        { q: "A peer routinely asks you to review their client presentations right before your own deadlines.", a: "\"I've noticed I've been taking on so many last-minute slide reviews that I'm rushing my own analysis. When I start agreeing to quick reviews, remind me to check my schedule first, so when I do review your decks, you get my absolute best feedback.\" [The B-I-B Script]", bundle: 'pro', guideBack: "Your limit, their cue and the benefit" },
       ]
     },
   ],
@@ -15121,6 +15155,41 @@ const collectionsModeData = {
         { q: "They are yelling at you in your own office about a deadline.", a: "\"I don't allow that type of aggressive talk in my office. Would you like to continue this now with respect, or should we reschedule for tomorrow?\" [Empowering Statements]", bundle: 'pro', guideBack: "A choice where both keep your limit" },
         { q: "You notice they are \"forgetting\" your contributions to the team project for the third time.", a: "\"John, when my contributions are omitted from the summary, it concerns me because it appears you aren't aware of the work I've done.\" [The Communication Hamburger]", bundle: 'pro', guideBack: "The behavior, your concern and why" },
         { q: "They try to \"gotcha\" you by bringing up a mistake you made during your first week.", a: "(Maintain eye contact for 3 seconds, then turn to the person next to you) \"So, where were we on the budget?\" [Selective Engagement]", bundle: 'pro', guideBack: "A short, unbothered line or look" },
+        { q: "They interrupt you mid-sentence during a division meeting to rephrase your point as their own.", a: "\"John, when you interrupt me during my presentation, it concerns me because it appears as though you're trying to take over the floor.\" [The Communication Hamburger]", bundle: 'pro', guideBack: "The behavior, your concern and why" },
+        { q: "A toxic peer tries to bait you by asking if you're \"worried about getting fired\" after a bad quarter.", a: "\"My work and my results speak for themselves, so I'm not worried.\" [Selective Engagement]", bundle: 'pro', guideBack: "A short, unbothered line or look" },
+        { q: "They demand that you explain why you didn't invite them to an executive lunch.", a: "\"If I've given you the impression that our relationship is at a level where I report my lunch plans to you, I apologize. To me, ours is strictly professional.\" [The \"Irrelevant\" Block]", bundle: 'pro', guideBack: "A line that removes the personal" },
+      ]
+    },
+    {
+      name: "Stopping the Manipulation",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choose among The Communication Hamburger, Selective Engagement, Empowering Statements, and The \"Irrelevant\" Block when facing active manipulation.\n\n• **The Communication Hamburger** — when specific unwanted behavior needs a structured confrontation\n• **Selective Engagement** — when they throw emotional bait or snide remarks to get a reaction\n• **Empowering Statements** — when they push limits and need a choice between two acceptable paths\n• **The \"Irrelevant\" Block** — when they weaponize personal intimacy or guilt\n\nMindset: I refuse to let toxic energy dictate my emotional state or derail my focus.",
+      inputs: [
+        { q: "A narcissist accuses you of being \"uncooperative\" because you won't do their research for them.", a: "\"When you label my schedule constraints as being uncooperative, it concerns me because it suggests you expect me to prioritize your tasks over my primary role.\" [The Communication Hamburger]", bundle: 'pro', guideBack: "The behavior, your concern and why" },
+        { q: "They send you a passive-aggressive text late at night regarding a minor project detail.", a: "(Wait until morning office hours, then respond calmly with data without acknowledging the late-night drama). [Selective Engagement]", bundle: 'pro', guideBack: "A short, unbothered line or look" },
+        { q: "They raise their voice and slam doors because a client chose your design over theirs.", a: "\"I don't allow screaming in this workspace. Would you like to discuss this calmly now, or do you need a few minutes to collect yourself?\" [Empowering Statements]", bundle: 'pro', guideBack: "A choice where both keep your limit" },
+        { q: "They say \"I thought we were a team, but you're stabbing me in the back\" when you report a factual error.", a: "\"There is no personal backstabbing here, Nancy. I reported a data discrepancy, and our relationship remains purely professional.\" [The \"Irrelevant\" Block]", bundle: 'pro', guideBack: "A line that removes the personal" },
+        { q: "They roll their eyes publicly while you are answering a director's question.", a: "(Maintain neutral eye contact for 3 seconds, then complete your sentence with your power tone). [Selective Engagement]", bundle: 'pro', guideBack: "A short, unbothered line or look" },
+        { q: "They demand that you apologize for \"making them look bad\" during a project review.", a: "\"I'm not interested in assessing blame; I'm simply interested in making sure our client reports are accurate.\" [Selective Engagement]", bundle: 'pro', guideBack: "A short, unbothered line or look" },
+        { q: "They try to force you into a personal argument about company politics during a break.", a: "\"I use my breaks to recharge quietly. Would you like to talk about the Q3 budget now, or should we connect during office hours?\" [Empowering Statements]", bundle: 'pro', guideBack: "A choice where both keep your limit" },
+        { q: "They make a subtle personal jab about your family background during a team dinner.", a: "\"I'm surprised you'd bring up personal matters at a work dinner when my relationship with everyone here is strictly professional.\" [The \"Irrelevant\" Block]", bundle: 'pro', guideBack: "A line that removes the personal" },
+      ]
+    },
+    {
+      name: "Reclaiming Control",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choose among Empowering Statements, Selective Engagement, The \"Irrelevant\" Block, and The Communication Hamburger to stay in the driver's seat.\n\n• **Empowering Statements** — give the illusion of choice while keeping your boundary\n• **Selective Engagement** — starve their need for dramatic fight loops\n• **The \"Irrelevant\" Block** — dismantle claims of personal friendship or special connection\n• **The Communication Hamburger** — state the logical implication of their actions\n\nMindset: You choose the lane, but I choose the destination.",
+      inputs: [
+        { q: "A narcissist insists on breaking an agreement you both signed regarding meeting length.", a: "\"What will it take for you to respect the agreement we made? Should we adjust the schedule now, or stick to the original plan?\" [Empowering Statements]", bundle: 'pro', guideBack: "A choice where both keep your limit" },
+        { q: "They try to provoke you by saying \"everyone knows you can't handle high-pressure accounts.\"", a: "\"Frankly, your opinion regarding my account handling is of no consequence to me.\" [Selective Engagement]", bundle: 'pro', guideBack: "A short, unbothered line or look" },
+        { q: "They attempt to guilt-trip you by saying \"after everything I've done for your career, you treat me like this!\"", a: "\"If I've led you to believe I owe personal favors for professional guidance, I apologize. My focus is strictly on our work.\" [The \"Irrelevant\" Block]", bundle: 'pro', guideBack: "A line that removes the personal" },
+        { q: "They repeatedly leave your name off meeting invitations for joint accounts.", a: "\"When my name is omitted from client invites, it concerns me because it appears as though you are attempting to manage these accounts solo.\" [The Communication Hamburger]", bundle: 'pro', guideBack: "The behavior, your concern and why" },
+        { q: "They demand an instant answer to an unreasonable request in front of junior staff.", a: "\"I need time to review my calendar. Would you like my decision tomorrow morning, or do you want to move forward without my involvement?\" [Empowering Statements]", bundle: 'pro', guideBack: "A choice where both keep your limit" },
+        { q: "They make a loud, sarcastic comment about your working hours as you pack up at 5:00 PM.", a: "(Look them directly in the eyes for 3 seconds, offer a calm nod, and walk out the door). [Selective Engagement]", bundle: 'pro', guideBack: "A short, unbothered line or look" },
+        { q: "They try to extract personal gossip about a colleague by pretending to be your ally.", a: "\"I don't engage in personal gossip at work. Shall we return to the project agenda, or are we done for today?\" [Empowering Statements]", bundle: 'pro', guideBack: "A choice where both keep your limit" },
+        { q: "They claim you are being \"cold and unfeeling\" because you enforced a deadline.", a: "\"Enforcing project deadlines is a professional requirement, not a personal statement. Let's keep our focus on the deliverable.\" [The \"Irrelevant\" Block]", bundle: 'pro', guideBack: "A line that removes the personal" },
       ]
     },
   ],
@@ -15135,6 +15204,42 @@ const collectionsModeData = {
         { q: "Your boss is constantly interrupting your focus time to give you \"ideas.\"", a: "\"I'm here to be your most productive team member. [D] However, these interruptions break my pattern. [A] Let's wait for my 'Green' block to discuss ideas. [R] That sounds reasonable, doesn't it? [T]\" [D-A-R-T for Accountability]", bundle: 'pro', guideBack: "Your aim, the problem and a redirect" },
         { q: "You want to praise a teammate in front of others without sounding like a \"mom.\"", a: "\"I really appreciate your attention to detail on this brochure. Were you aware that everyone here values your professionalism?\" [\"I\" Instead of \"You\"]", bundle: 'pro', guideBack: "An I-statement" },
         { q: "You are delivering a correction to someone who is older or more experienced than you.", a: "\"I find it difficult when our deadlines shift without notice. [I-statement] I'd like to help, however unfortunately my schedule is full. [Diplomatic Decline] Can we pick a fixed update time?\" [Dan 4 / Dan 2 mix]", bundle: 'pro' },
+        { q: "A senior manager asks you to give input on a struggling project without causing panic.", a: "\"I'm here to support this launch. However, current communication gaps are creating delays. Let's establish daily five-minute huddles. Does that sound doable?\" [D-A-R-T for Accountability]", bundle: 'pro', guideBack: "Your aim, the problem and a redirect" },
+        { q: "An employee submits a well-written proposal that lacks financial details.", a: "\"I liked best how clearly you outlined the strategic goals. Next time, if you include the estimated budget in section two, it will be even more compelling.\" [The LBNT System]", bundle: 'pro', guideBack: "What worked, then one change" },
+        { q: "You want to address a peer who frequently misses scheduled team check-ins.", a: "\"David, I'm concerned. I find it difficult to coordinate our joint accounts when our check-ins are postponed.\" [\"I\" Instead of \"You\"]", bundle: 'pro', guideBack: "An I-statement" },
+        { q: "You need to deliver a firm closing decision to a vendor who keeps re-opening negotiations.", a: "\"Our procurement decision is final, so I am closing our discussion now. Can I count on your support for a smooth transition?\" [Lead-in & Closing Lines]", bundle: 'pro', guideBack: "A named opener or a closing question" },
+      ]
+    },
+    {
+      name: "Guiding Performance",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choose among The LBNT System, \"I\" Instead of \"You\", and Lead-in & Closing Lines when coaching growth and improving work output.\n\n• Giving vague praise or harsh criticism fails to inspire better results.\n• Structuring feedback around positive observations, future changes, and \"I\" statements ensures clarity and buy-in.\n• Mindset: \"Focusing on future performance removes defensive churn and drives continuous improvement.\"",
+      inputs: [
+        { q: "A junior analyst presents a detailed deck that lacks a concise executive summary.", a: "\"I liked the thoroughness of your research today. Next time, if you place a three-bullet summary on slide one, it will be much easier for executives to digest.\" [The LBNT System]", bundle: 'pro', guideBack: "What worked, then one change" },
+        { q: "A team member handles a customer complaint well but forgets to log the ticket.", a: "\"I liked best how calmly you de-escalated the client. Next time, if you log the ticket immediately after the call, our records will stay completely accurate.\" [The LBNT System]", bundle: 'pro', guideBack: "What worked, then one change" },
+        { q: "You want to point out a typo in an otherwise excellent project proposal.", a: "\"I liked the strength of your market analysis. Next time, if you run a final spell-check on the appendices, the proposal will look 100% polished.\" [The LBNT System]", bundle: 'pro', guideBack: "What worked, then one change" },
+        { q: "A colleague delivers a presentation with great energy but exceeds their allotted time.", a: "\"I liked the passion you brought to the room. Next time, if you keep your remarks to fifteen minutes, we'll have plenty of time for Q&A.\" [The LBNT System]", bundle: 'pro', guideBack: "What worked, then one change" },
+        { q: "An employee's written tone in client emails comes across as slightly blunt.", a: "\"I find it uncomfortable when client emails lack a warm greeting, because I value our company's customer service reputation.\" [\"I\" Instead of \"You\"]", bundle: 'pro', guideBack: "An I-statement" },
+        { q: "You want to encourage a quiet team member who shared a valuable idea in a meeting.", a: "\"Sarah, I need your help. I really appreciated your suggestion today, and I'd like you to lead the follow-up task force.\" [Lead-in & Closing Lines]", bundle: 'pro', guideBack: "A named opener or a closing question" },
+        { q: "A direct report turns in a report that meets the basic requirements but lacks innovation.", a: "\"I liked best how cleanly you followed the template. Next time, if you add two strategic recommendations, it will add even more value.\" [The LBNT System]", bundle: 'pro', guideBack: "What worked, then one change" },
+        { q: "You need to start a performance check-in without putting the employee on the defensive.", a: "\"Alex, I need your help. I'm concerned about our project timeline, and I'd like to review your current task list together.\" [Lead-in & Closing Lines]", bundle: 'pro', guideBack: "A named opener or a closing question" },
+      ]
+    },
+    {
+      name: "Holding Accountability",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choose among D-A-R-T for Accountability, \"I\" Instead of \"You\", and Lead-in & Closing Lines when confronting rule breaches or boundary violations.\n\n• Allowing violations to pass unaddressed rewards bad behavior and erodes authority.\n• Linking intent, distraction, and a redirecting tag question maintains control without emotional drama.\n• Mindset: \"I am the driver of this conversation, establishing clear rules of engagement for my workspace.\"",
+      inputs: [
+        { q: "A team member routinely arrives ten minutes late to morning stand-up meetings.", a: "\"I'm here to ensure our stand-ups run efficiently. However, late arrivals disrupt the team's momentum. Let me count on you to be seated by 9:00 AM. Reasonable, isn't it?\" [D-A-R-T for Accountability]", bundle: 'pro', guideBack: "Your aim, the problem and a redirect" },
+        { q: "A colleague makes sarcastic digs about company policy during a department call.", a: "\"I find it difficult to maintain a productive meeting environment when sarcastic comments are made about team guidelines.\" [\"I\" Instead of \"You\"]", bundle: 'pro', guideBack: "An I-statement" },
+        { q: "An employee shifts blame to another department when asked about a missed deadline.", a: "\"I'm here to solve the operational breakdown. However, assessing blame takes us away from fixing the workflow. Let's focus on the correction. Agree?\" [D-A-R-T for Accountability]", bundle: 'pro', guideBack: "Your aim, the problem and a redirect" },
+        { q: "A supervisor interrupts your project update to ask unrelated administrative questions.", a: "\"I want this presentation to be clear for everyone. However, jumping to administrative topics disrupts the flow. Let's address those at the end. Can I count on your support?\" [D-A-R-T for Accountability]", bundle: 'pro', guideBack: "Your aim, the problem and a redirect" },
+        { q: "A peer attempts to pass off an unassigned task onto your team's workload.", a: "\"I find it uncomfortable when tasks are handed off without prior agreement, as my team is at full capacity on core priorities.\" [\"I\" Instead of \"You\"]", bundle: 'pro', guideBack: "An I-statement" },
+        { q: "A direct report continues to debate an established policy after a decision was made.", a: "\"Continuing this debate is not an option for us right now. I'm closing this topic so we can return to work. Goodbye.\" [Lead-in & Closing Lines]", bundle: 'pro', guideBack: "A named opener or a closing question" },
+        { q: "A contractor fails to submit required progress reports according to their agreement.", a: "\"I'm here to ensure our project stays on track. However, missing progress reports makes it impossible to monitor quality. Let's stick to the agreed schedule. You can honor that, can't you?\" [D-A-R-T for Accountability]", bundle: 'pro', guideBack: "Your aim, the problem and a redirect" },
+        { q: "An employee uses an unprofessional tone when speaking to a peer in the office.", a: "\"I find it concerning when voices are raised in the workspace, because I value mutual respect on our team.\" [\"I\" Instead of \"You\"]", bundle: 'pro', guideBack: "An I-statement" },
       ]
     },
   ],
@@ -15150,6 +15255,41 @@ const collectionsModeData = {
         { q: "Your boss asks for your opinion on a controversial project in front of the VP.", a: "(Lean into the table, implement a 4-second steeple, and speak loudly).", bundle: 'pro' },
         { q: "You are being introduced to a new team and want to look like a leader, not a \"worker bee.\"", a: "(Face them head-on, chest to chest, and use your power tone).", bundle: 'pro' },
         { q: "You're being given \"constructive criticism\" that feels like a personal attack.", a: "(Use the Icy Stare to stay cool, plant your forearms on the table, and listen without fidgeting).", bundle: 'pro' },
+        { q: "You are about to deliver a critical report to the board and feel your heart racing.", a: "(Form a relaxed steeple with your fingertips and speak in a calm, lowered power tone). [The Steeple]", bundle: 'pro', guideBack: "A steeple, with or without words" },
+        { q: "A colleague tries to intimidate you by leaning over your desk during a budget dispute.", a: "(Sit upright with an open posture, look away briefly to check your notes, then return your gaze). [The Look Away]", bundle: 'pro', guideBack: "A held or broken gaze" },
+        { q: "You enter a crowded conference room for a negotiation where seats are packed tightly together.", a: "(Firmly place your folder and notebook on the table to mark your workspace). [Territorial Markers]", bundle: 'pro', guideBack: "A move that claims space" },
+      ]
+    },
+    {
+      name: "Commanding the Room",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choose among The Steeple, The Look Away, Territorial Markers, and Vocal Power Tone when taking charge of group settings and meetings.\n\n• Setting physical boundaries and managing vocal volume commands instant respect.\n• Mindset: I bring dignity and presence to every professional interaction.",
+      inputs: [
+        { q: "You sit down at an executive roundtable where colleagues have spread their files into your space.", a: "(Gently slide their loose papers back to their side and place your notebook firmly on the table). [Territorial Markers]", bundle: 'pro', guideBack: "A move that claims space" },
+        { q: "You are opening a department-wide meeting and need to cut through background chatter.", a: "(Stand tall, hum 'mm-hmm' internally to find your resonance, and deliver your greeting clearly). [Vocal Power Tone]", bundle: 'pro', guideBack: "A clear, full-volume line" },
+        { q: "A senior manager asks you a direct, high-pressure question about project delays.", a: "(Plant your forearms on the table, form a four-second steeple, and deliver your concise answer). [The Steeple]", bundle: 'pro', guideBack: "A steeple, with or without words" },
+        { q: "You notice you have been staring intensely at a board member for ten seconds without blinking.", a: "(Glance down at your agenda briefly for two seconds before returning your gaze to their irises). [The Look Away]", bundle: 'pro', guideBack: "A held or broken gaze" },
+        { q: "You are invited to present your proposal at the front of a large auditorium.", a: "(Reject the hand mic, step out from behind the lectern, and use your natural power tone). [Vocal Power Tone]", bundle: 'pro', guideBack: "A clear, full-volume line" },
+        { q: "You sit in a low, uncomfortable guest chair across from a high-control director.", a: "(Move the chair forward six inches, lean into the table, and rest your forearms in an open posture). [Territorial Markers]", bundle: 'pro', guideBack: "A move that claims space" },
+        { q: "Someone makes a snide, passive-aggressive remark while you are explaining a slide.", a: "(Face them chest-to-chest, deliver an Icy Stare with lowered eyelids, then pivot). [The Look Away]", bundle: 'pro', guideBack: "A held or broken gaze" },
+        { q: "You want to project complete authority while answering a complex technical question.", a: "(Hold your hands in a clear steeple for four seconds while stating your solution). [The Steeple]", bundle: 'pro', guideBack: "A steeple, with or without words" },
+      ]
+    },
+    {
+      name: "Handling Pressure",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choose among Vocal Power Tone, The Look Away, The Steeple, and Territorial Markers when put on the spot or challenged.\n\n• Remaining physically calm and grounded prevents panic and projects executive authority.\n• Mindset: My physical composure confirms the strength of my message under pressure.",
+      inputs: [
+        { q: "An aggressive peer interrupts your presentation to claim your numbers are inaccurate.", a: "(Keep your eyelids relaxed in the Icy Stare position and state your source in a calm power tone). [Vocal Power Tone]", bundle: 'pro', guideBack: "A clear, full-volume line" },
+        { q: "You are called into an unannounced meeting with leadership regarding a missed deadline.", a: "(Take up your full space at the table, place your hands visibly on the desk, and avoid fidgeting). [Territorial Markers]", bundle: 'pro', guideBack: "A move that claims space" },
+        { q: "You feel your voice wavering and becoming high-pitched during a tense Q&A session.", a: "(Pause, take a deep diaphragm breath, hum 'mm-hmm' internally, and resume speaking). [Vocal Power Tone]", bundle: 'pro', guideBack: "A clear, full-volume line" },
+        { q: "A challenger attempts to lock you in an aggressive stare-down during a contract debate.", a: "(Maintain a steady gaze for seven seconds, then look down at your notes before looking back). [The Look Away]", bundle: 'pro', guideBack: "A held or broken gaze" },
+        { q: "You are asked to justify your team's budget requests in front of a skeptical committee.", a: "(Steeple your fingers for four seconds while stating the return on investment). [The Steeple]", bundle: 'pro', guideBack: "A steeple, with or without words" },
+        { q: "Someone tries to crowd your personal space at the whiteboard to make you step back.", a: "(Maintain your ground firmly, keep your shoulders open, and continue your explanation). [Territorial Markers]", bundle: 'pro', guideBack: "A move that claims space" },
+        { q: "You realize you are clutching your portfolio to your chest like a protective shield.", a: "(Set the portfolio on the table, plant your forearms, and form a relaxed steeple). [The Steeple]", bundle: 'pro', guideBack: "A steeple, with or without words" },
+        { q: "A toxic colleague tries to rattle your focus by rolling their eyes publicly.", a: "(Look at them for three silent seconds with a neutral expression, then return to your talk). [The Look Away]", bundle: 'pro', guideBack: "A held or broken gaze" },
       ]
     },
   ],
@@ -15165,6 +15305,41 @@ const collectionsModeData = {
         { q: "Your boss says \"I'm sorry I threw you under the bus in that meeting, I was stressed.\"", a: "\"I understand you were under pressure. I forgive you. Let's move past it.\" [\"I Forgive You\"]", bundle: 'pro', guideBack: "An explicit forgiveness" },
         { q: "You are sitting at home feeling like you'll never get the recognition you deserve.", a: "(Open your Value Journal and record the three ways you saved the company money today). [The Value Journal]", bundle: 'pro', guideBack: "An entry with the value counted" },
         { q: "They keep asking \"Why can't you just do this one little favor?\" after you said no.", a: "\"That may be, but as I said, I have other plans and cannot take that on today.\" [The Broken Record]", bundle: 'pro', guideBack: "The same line, again" },
+        { q: "A pushy coworker keeps pressuring you to bend company policy for their project.", a: "\"I understand your deadline is tight, but I am sticking to the established security protocol.\" [The Broken Record]", bundle: 'pro', guideBack: "The same line, again" },
+        { q: "You realize your manager has taken full credit for a major optimization project you completed.", a: "(Log the project in your journal) \"Designed and deployed optimization protocol. Saved 20 team hours weekly. (Value: $8,000 annual productivity gain).\" [The Value Journal]", bundle: 'pro', guideBack: "An entry with the value counted" },
+        { q: "Someone apologizes after making a rude personal comment during a team review.", a: "\"Thank you for acknowledging that. I forgive you. Let me move forward.\" [\"I Forgive You\"]", bundle: 'pro', guideBack: "An explicit forgiveness" },
+      ]
+    },
+    {
+      name: "Holding Your Ground",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choose among Coping Statements, The Broken Record, \"I Forgive You\", and The Value Journal when resisting pressure and setting firm boundaries.\n\n• **Coping Statements** — when internal emotional pressure threatens your composure\n• **The Broken Record** — when external pushing requires repeating a calm, firm limit\n• **\"I Forgive You\"** — when an apology is offered and standards must be maintained\n• **The Value Journal** — when your workload or role expansion needs factual proof\n\nMindset: I am the cause of my boundaries, not the effect of other people's emotional pressure.",
+      inputs: [
+        { q: "A peer insists that you stay late on Friday to finish a report that is assigned to them.", a: "\"I understand this report is important, but I am leaving at my scheduled time of 5:00 PM.\" [The Broken Record]", bundle: 'pro', guideBack: "The same line, again" },
+        { q: "A toxic colleague makes a passive-aggressive dig about your competence during a meeting.", a: "(Internal) \"I am calm, centered, and completely secure in my professional record.\" [Coping Statements]", bundle: 'pro', guideBack: "A present-tense line to yourself" },
+        { q: "A teammate apologizes for yelling at you during a heated disagreement.", a: "\"I appreciate your apology. I forgive you. Let's return to our agenda.\" [\"I Forgive You\"]", bundle: 'pro', guideBack: "An explicit forgiveness" },
+        { q: "You are asked to manage two additional accounts without any adjustment in title or pay.", a: "(Log the extra workload) \"Assumed full management of Accounts X and Y. (Value: $12,000 portfolio expansion).\" [The Value Journal]", bundle: 'pro', guideBack: "An entry with the value counted" },
+        { q: "Someone repeatedly interrupts you while you are giving a status update.", a: "\"I understand you have input, but I am finishing my update before taking questions.\" [The Broken Record]", bundle: 'pro', guideBack: "The same line, again" },
+        { q: "You feel your heart pounding before confronting a boundary-crossing boss.", a: "(Internal) \"I am in total control of my emotional state and my communication.\" [Coping Statements]", bundle: 'pro', guideBack: "A present-tense line to yourself" },
+        { q: "A peer who belittled your work in public comes to your desk to say they are sorry.", a: "\"Thank you for saying that. I forgive you. Let me get back to my focus block.\" [\"I Forgive You\"]", bundle: 'pro', guideBack: "An explicit forgiveness" },
+        { q: "You saved a key client from terminating their contract through quick intervention.", a: "(Log the intervention) \"Resolved escalation for Client Smith. Retained account. (Value: $15,000 annual recurring revenue).\" [The Value Journal]", bundle: 'pro', guideBack: "An entry with the value counted" },
+      ]
+    },
+    {
+      name: "Negotiating Your Worth",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choose among The Value Journal, Coping Statements, The Broken Record, and \"I Forgive You\" when demonstrating professional value and advocating for compensation.\n\n• **The Value Journal** — when documenting quantifiable revenue impact and time saved\n• **Coping Statements** — when anxiety or imposter thoughts surface before a negotiation\n• **The Broken Record** — when management offers standard corporate budget excuses\n• **\"I Forgive You\"** — when past slights or late recognitions are resolved\n\nMindset: I justify a return on investment through clear, unarguable data.",
+      inputs: [
+        { q: "You are preparing your materials for an annual compensation review with leadership.", a: "\"I've compiled a summary of my quantifiable contributions this year. I'd like us to review these metrics together.\" [The Value Journal]", bundle: 'pro', guideBack: "An entry with the value counted" },
+        { q: "You feel anxious right before walking into a high-stakes salary meeting.", a: "(Internal) \"I am a high-value professional presenting clear, unarguable facts.\" [Coping Statements]", bundle: 'pro', guideBack: "A present-tense line to yourself" },
+        { q: "Your manager says \"corporate has instituted a blanket freeze on all promotional raises.\"", a: "\"I understand corporate policy, however my documented ROI of $40k justifies an exception.\" [The Broken Record]", bundle: 'pro', guideBack: "The same line, again" },
+        { q: "Your supervisor apologizes for delaying your performance review by three months.", a: "\"I accept your apology. I forgive you. Let's focus on reviewing my value log today.\" [\"I Forgive You\"]", bundle: 'pro', guideBack: "An explicit forgiveness" },
+        { q: "You need to justify a request for an administrative assistant or extra software license.", a: "(Reference journal metrics) \"Automating this task saves 10 hours weekly. (Value: $6,000 annual productivity gain).\" [The Value Journal]", bundle: 'pro', guideBack: "An entry with the value counted" },
+        { q: "The director claims that \"everyone worked hard this year, so individual raises aren't possible.\"", a: "\"I appreciate the team's effort, however my individual log shows a 20% revenue increase on my accounts.\" [The Broken Record]", bundle: 'pro', guideBack: "The same line, again" },
+        { q: "You catch yourself thinking \"maybe I shouldn't ask for the full raise amount.\"", a: "(Internal) \"I am worthy of fair compensation based on my proven impact.\" [Coping Statements]", bundle: 'pro', guideBack: "A present-tense line to yourself" },
+        { q: "A manager says \"we're sorry we couldn't offer you this raise last year.\"", a: "\"I appreciate that. I forgive you. Let's look at this year's data.\" [\"I Forgive You\"]", bundle: 'pro', guideBack: "An explicit forgiveness" },
       ]
     },
   ],
@@ -15180,6 +15355,41 @@ const collectionsModeData = {
         { q: "You just met 'Midge' and want to ensure you don't forget her name in five minutes.", a: "(Picture a tiny midge fly buzzing around her head, and repeat 'Midge' three times in the first minute). [The Visual Hook for Names]", bundle: 'pro', guideBack: "An image, or the name used aloud" },
         { q: "You are sitting next to a stranger and want to bridge into a deeper talk.", a: "\"I'm going to grab a water. Would you like me to grab you one as well?\" [The OFF Technique]", bundle: 'pro', guideBack: "An offer, a favor or a familiar line" },
         { q: "You need to step away from a new acquaintance to decompress.", a: "\"I'll be right back. Save my spot for me, would you?\" [The OFF Technique]", bundle: 'pro', guideBack: "An offer, a favor or a familiar line" },
+        { q: "You notice a colleague standing alone at a company dinner and want to break the ice.", a: "\"I really appreciate the level of professionalism you brought to today's review. You should be really proud of yourself.\" [Empowering Praise]", bundle: 'pro', guideBack: "Praise that hands them the pride" },
+        { q: "You are waiting in a long security line at a conference venue.", a: "\"That architectural lighting overhead is phenomenal. Did you happen to see it when you walked in?\" [The \"Person, Place, or Thing\" Opener]", bundle: 'pro', guideBack: "A remark or question about what's here" },
+        { q: "You want to offer a small courtesy to a new acquaintance before walking to the coffee station.", a: "\"I'm going to grab a fresh coffee. Would you like me to grab you one as well?\" [The OFF Technique]", bundle: 'pro', guideBack: "An offer, a favor or a familiar line" },
+      ]
+    },
+    {
+      name: "Building Instant Rapport",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choose among The Visual Hook for Names, The OFF Technique, The \"Person, Place, or Thing\" Opener, and Empowering Praise to create immediate warmth.\n\n• **The Visual Hook for Names** — when meeting people in fast-moving social environments\n• **The OFF Technique** — when establishing ease, service, and familiar connection\n• **The \"Person, Place, or Thing\" Opener** — when grounding small talk in shared surroundings\n• **Empowering Praise** — when highlighting someone's choices and boosting self-esteem\n\nMindset: I actively create ease and belonging for everyone around me.",
+      inputs: [
+        { q: "You are introduced to a new team member named 'Barrum' in a noisy lobby.", a: "(Picture a bass drum beating beside him and repeat 'Barrum' three times in your greeting). [The Visual Hook for Names]", bundle: 'pro', guideBack: "An image, or the name used aloud" },
+        { q: "You sit down next to a stranger at a workshop table.", a: "\"Nice to meet you. Did you happen to see the display in the lobby as you came in?\" [The \"Person, Place, or Thing\" Opener]", bundle: 'pro', guideBack: "A remark or question about what's here" },
+        { q: "You notice a colleague looking for a chair in a crowded breakroom.", a: "\"I'll pull up a seat for you right here. Save my spot for a second while I grab my notebook, okay?\" [The OFF Technique]", bundle: 'pro', guideBack: "An offer, a favor or a familiar line" },
+        { q: "A teammate successfully facilitates a difficult client presentation.", a: "\"Your passion really came through in that deck today. You should be extremely proud of yourself.\" [Empowering Praise]", bundle: 'pro', guideBack: "Praise that hands them the pride" },
+        { q: "You want to use a visual hook for someone named 'Melanie'.", a: "(In your mind, picture a giant melon balanced on her head as you shake hands). [The Visual Hook for Names]", bundle: 'pro', guideBack: "An image, or the name used aloud" },
+        { q: "You need to step away from a conversation at a networking mixer.", a: "\"I'm going to grab a glass of water. Can you do me a quick favor and watch my bag while I step away?\" [The OFF Technique]", bundle: 'pro', guideBack: "An offer, a favor or a familiar line" },
+        { q: "You want to praise a junior specialist's attention to detail on a shared report.", a: "\"I really appreciate your attention to detail on these numbers; it's why I enjoy working with you.\" [Empowering Praise]", bundle: 'pro', guideBack: "Praise that hands them the pride" },
+        { q: "You arrive early to a committee meeting and want to comment on the room.", a: "\"This venue is beautiful. Have you ever attended an event in this hall before?\" [The \"Person, Place, or Thing\" Opener]", bundle: 'pro', guideBack: "A remark or question about what's here" },
+      ]
+    },
+    {
+      name: "Elevating Conversations",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choose among Empowering Praise, The OFF Technique, The \"Person, Place, or Thing\" Opener, and The Visual Hook for Names to turn casual chats into lasting connections.\n\n• **Empowering Praise** — shift validation to their internal pride and choices\n• **The OFF Technique** — lower social friction through offers, favors, and warm phrasing\n• **The \"Person, Place, or Thing\" Opener** — fish for engaging subjects using positive details\n• **The Visual Hook for Names** — lock in identities to make others feel genuinely seen\n\nMindset: Every interaction is an opportunity to uplift others and drive social fluidity.",
+      inputs: [
+        { q: "A colleague shows you a customized template they built for client tracking.", a: "\"You did a fantastic job on this template. You should be really proud of yourself.\" [Empowering Praise]", bundle: 'pro', guideBack: "Praise that hands them the pride" },
+        { q: "You are getting an event program and see a coworker standing without one.", a: "\"I'm grabbing a program from the desk—would you like me to grab you one as well?\" [The OFF Technique]", bundle: 'pro', guideBack: "An offer, a favor or a familiar line" },
+        { q: "You want to open a conversation with someone standing near an impressive art piece.", a: "\"That painting on the wall is incredible, isn't it? Did you notice it when you walked in?\" [The \"Person, Place, or Thing\" Opener]", bundle: 'pro', guideBack: "A remark or question about what's here" },
+        { q: "You are introduced to a director named 'Victor' and want to lock in his name instantly.", a: "\"Nice to meet you, Victor.\" (Picture a large 'V' victory sign over his head and repeat 'Victor' three times). [The Visual Hook for Names]", bundle: 'pro', guideBack: "An image, or the name used aloud" },
+        { q: "An employee handles a difficult phone call with great composure.", a: "\"The way you stayed calm on that call was remarkable. Were you aware of how impressive that was?\" [Empowering Praise]", bundle: 'pro', guideBack: "Praise that hands them the pride" },
+        { q: "You return to your table after getting coffee and want to thank a peer for watching your seat.", a: "\"Thanks for saving my spot! You're in charge while I organize these notes.\" [The OFF Technique]", bundle: 'pro', guideBack: "An offer, a favor or a familiar line" },
+        { q: "You are attending an outdoor company picnic and want to open a talk with a peer.", a: "\"This park is fantastic for an event. Are you here with family or did you come solo?\" [The \"Person, Place, or Thing\" Opener]", bundle: 'pro', guideBack: "A remark or question about what's here" },
+        { q: "You met three people at a roundtable and want to anchor the name 'Sarah'.", a: "(Picture Princess Sarah wearing a crown next to her while confirming her name out loud). [The Visual Hook for Names]", bundle: 'pro', guideBack: "An image, or the name used aloud" },
       ]
     },
   ],

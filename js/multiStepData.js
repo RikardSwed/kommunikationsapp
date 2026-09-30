@@ -8438,6 +8438,24 @@ const multiStepCollections = {
             { front: "3: Question/Clarify.", back: "\"Could you please show me when I've turned them in late so we can fix the breakdown immediately?\"", guideFront: "Ask for the specifics when...", guideBack: "A question for the facts" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "Your supervisor tells the client on a group call that the project delay was caused by your team missing deadline turn-ins.",
+          steps: [
+            { front: "Empathize & Validate — acknowledge the client's frustration politely", back: "\"I can completely understand why you'd be concerned about the project schedule if you were told our deliverables were delayed.\"", guideFront: "Acknowledge their upset when...", guideBack: "Their concern, acknowledged" },
+            { front: "Address Behavior/Take Responsibility Tactically — step up calmly to take tactical accountability in front of everyone", back: "\"Since my team owns this workflow and I take full responsibility for our performance, I'd appreciate everyone's help right here on the call to address this immediately.\"", guideFront: "Own it and ask for help when...", guideBack: "Responsibility, taken tactically" },
+            { front: "Question/Clarify — ask for the specific dates and records to clarify facts", back: "\"Could you share the specific dates or email threads where those turn-in delays occurred so we can review the log together?\"", guideFront: "Ask for the specifics when...", guideBack: "A question for the facts" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "In a department meeting, a senior manager claims your unit failed to submit key budget forecasts on time.",
+          steps: [
+            { front: "Empathize & Validate — validate the concern about budget deadlines", back: "\"I understand why the leadership team is worried about timing if there's a perception that our figures were held up.\"", guideFront: "Acknowledge their upset when...", guideBack: "Their concern, acknowledged" },
+            { front: "Address Behavior/Take Responsibility Tactically — offer to address the issue publicly and take ownership", back: "\"Because I am accountable for our department's submissions, I want to step up right now in front of the room and get this resolved.\"", guideFront: "Own it and ask for help when...", guideBack: "Responsibility, taken tactically" },
+            { front: "Question/Clarify — ask to examine the specific timestamps and files", back: "\"Could you point out which specific forecast files were missing so we can pull up the server submission receipts right now?\"", guideFront: "Ask for the specifics when...", guideBack: "A question for the facts" },
+          ]
+        },
       ]
     },
     {
@@ -8455,6 +8473,24 @@ const multiStepCollections = {
             { front: "3: \"What will it take?\" Statement.", back: "\"John, we made an agreement on feedback. What will it take to get you to respect that agreement?\"", guideFront: "Ask what it will take when...", guideBack: "A question that holds them to it" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "Your boss walks up to your desk every thirty minutes to ask for progress updates on a routine assignment.",
+          steps: [
+            { front: "A-E-I-O-U Script — explain your new time management system and why it helps", back: "\"I've realized that constant context-switching is slowing down my output, so I'm adopting a structured focus block system to boost delivery speed.\"", guideFront: "Explain your new system when...", guideBack: "The system, and why it helps" },
+            { front: "Availability Monitor — introduce and point to your physical indicator", back: "(Point to the color-coded status disk on your partition). \"When the red side is facing out, I'm deep in production; when it's green, I'm open for drop-in chats.\"", guideFront: "Point to your signal when...", guideBack: "Your availability, shown or said" },
+            { front: "\"What will it take?\" Statement — hold them cleanly to your prior agreement", back: "\"Sarah, we agreed on two consolidated updates per day. What will it take for us to stick to that agreement?\"", guideFront: "Ask what it will take when...", guideBack: "A question that holds them to it" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A supervisor sends ten frantic emails a day demanding instant status checks on ongoing tasks.",
+          steps: [
+            { front: "A-E-I-O-U Script — lay out your new email batching process to boost output", back: "\"I noticed that monitoring my inbox continuously is fragmenting my concentration, so I'm switching to a scheduled batch-processing model.\"", guideFront: "Explain your new system when...", guideBack: "The system, and why it helps" },
+            { front: "Availability Monitor — direct them to your status indicator or scheduled update block", back: "(Indicate the status banner in your chat profile). \"My status updates to 'Focus Mode' between 9:00 and 12:00, so check there to see when I'm reviewing incoming messages.\"", guideFront: "Point to your signal when...", guideBack: "Your availability, shown or said" },
+            { front: "\"What will it take?\" Statement — call out rule-breaking with a direct question", back: "\"Mark, we set up a rule for urgent escalation via phone only. What will it take to get you to honor that workflow?\"", guideFront: "Ask what it will take when...", guideBack: "A question that holds them to it" },
+          ]
+        },
       ]
     },
     {
@@ -8470,6 +8506,24 @@ const multiStepCollections = {
             { front: "1: 3-Second Look.", back: "(Look them directly in the eyes for three seconds of silence; let them \"cook their own goose\").", guideFront: "Hold a silent look when...", guideBack: "Three seconds of silent eye contact" },
             { front: "2: Clarifying Question.", back: "\"When you say that, it sounds to me like you're trying to shame me in front of the group. Is that what you're saying?\"", guideFront: "Spell out what they implied when...", guideBack: "Their subtext, asked back plainly" },
             { front: "3: Icy Stare.", back: "(Maintain eye contact with eyelids slightly covering the iris, then pivot). \"Charlie, could you pass the coffee?\"", guideFront: "Hold a firm look and tone when...", guideBack: "A steady stare or low, firm voice" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A coworker makes a snide, mocking remark about your recent promotion in front of colleagues.",
+          steps: [
+            { front: "3-Second Look — hold silent, unbothered eye contact to let the discomfort land", back: "(Turn squarely to face them and hold calm, unwavering eye contact for three silent seconds).", guideFront: "Hold a silent look when...", guideBack: "Three seconds of silent eye contact" },
+            { front: "Clarifying Question — make their hidden subtext explicit in front of the group", back: "\"When you say that, it sounds to me like you're implying I didn't earn this position on merit. Is that what you're trying to say?\"", guideFront: "Spell out what they implied when...", guideBack: "Their subtext, asked back plainly" },
+            { front: "Icy Stare — deliver a firm, lowered-eyelid stare with your power tone and pivot", back: "(Slightly lower your eyelids over your irises, drop your voice to a deep resonance, then turn away). \"David, do you have the Q3 report?\"", guideFront: "Hold a firm look and tone when...", guideBack: "A steady stare or low, firm voice" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A peer makes a sarcastic comment about you leaving on time as you walk past their desk.",
+          steps: [
+            { front: "3-Second Look — pause and turn chest-to-chest with a silent three-second look", back: "(Stop in your tracks, align your shoulders chest-to-chest, and hold a silent three-second look).", guideFront: "Hold a silent look when...", guideBack: "Three seconds of silent eye contact" },
+            { front: "Clarifying Question — translate their passive aggression into plain text", back: "\"When you make that comment, it sounds like you're suggesting I'm slacking on my responsibilities. Is that what you mean?\"", guideFront: "Spell out what they implied when...", guideBack: "Their subtext, asked back plainly" },
+            { front: "Icy Stare — execute the icy stare with your power tone before walking away", back: "(Hold a firm, unblinking power glare with lowered eyelids, then speak in a calm baritone). \"Rachel, have a good evening.\"", guideFront: "Hold a firm look and tone when...", guideBack: "A steady stare or low, firm voice" },
           ]
         },
       ]
@@ -8492,6 +8546,26 @@ const multiStepCollections = {
             { front: "Turning Toward — later, when you turn the sign to Green.", back: "\"Hey Mary! I'm green now. What was that thing you wanted to tell me this morning? I'm all yours.\"", guideFront: "Come back to them when...", guideBack: "Full attention, offered" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "Setting up a focus block system to prevent afternoon drop-in interruptions from team members.",
+          steps: [
+            { front: "The Availability Monitor (Groundwork) — announce your focus blocks to the team during morning check-in", back: "\"I'm establishing a two-hour focus window every afternoon from 2:00 to 4:00 to ensure error-free reporting.\"", guideFront: "Explain the system first when...", guideBack: "The system, and why it helps" },
+            { front: "The Availability Monitor (Signal) — set up a physical or digital signal when starting focus time", back: "(Slide the door sign to 'Focus Block in Progress' and set chat status to do-not-disturb).", guideFront: "Say what red and green mean when...", guideBack: "The rule, and what they gain" },
+            { front: "The Availability Monitor (Enforcer) — enforce the signal when a peer drops by during focus time", back: "\"My sign is on red right now because I'm in deep work, so please drop by after 4:00 PM.\"", guideFront: "Point to the sign when...", guideBack: "A silent point to the signal" },
+            { front: "Turning Toward — re-engage warmly once your focus block concludes", back: "\"My focus window is finished. How can I help you with your question now?\"", guideFront: "Come back to them when...", guideBack: "Full attention, offered" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Protecting deep work hours from non-urgent office pop-ins while working on client proposals.",
+          steps: [
+            { front: "The Availability Monitor (Groundwork) — inform your department of designated open door hours", back: "\"To ensure proposal accuracy, I'll be unavailable between 10:00 and 12:00, but open for chats at 1:00.\"", guideFront: "Explain the system first when...", guideBack: "The system, and why it helps" },
+            { front: "The Availability Monitor (Signal) — activate your availability indicator outside your workspace", back: "(Place the desk flag in the red upright position and mute incoming desktop alerts).", guideFront: "Say what red and green mean when...", guideBack: "The rule, and what they gain" },
+            { front: "The Availability Monitor (Enforcer) — remind an interrupter of the visual monitor", back: "\"I'm currently in a red flag focus block, so let's connect during my open window at 1:00 PM.\"", guideFront: "Point to the sign when...", guideBack: "A silent point to the signal" },
+            { front: "Turning Toward — connect with full attention during open hours", back: "\"It's 1:00 PM and my open window is starting. Let me hear what you needed.\"", guideFront: "Come back to them when...", guideBack: "Full attention, offered" },
+          ]
+        },
       ]
     },
     {
@@ -8508,6 +8582,61 @@ const multiStepCollections = {
             { front: "Broken Record — they say \"But I really need this done before Monday morning.\"", back: "\"That may be, but I have already made plans for this weekend and cannot come in. I’ll be happy to do it Monday.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
             { front: "Broken Record — they try guilt: \"I guess the team just isn't a priority for you.\"", back: "\"That may be, but again, I've made other plans. I look forward to tackling this with a fresh mind on Monday.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
             { front: "Power-Down Phrases — they won't let it go.", back: "\"I think we both understand the situation. I'm going to get back to work now so I can finish today's tasks. Goodbye.\"", guideFront: "Close it and leave when...", guideBack: "A closing line and your exit" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Declining an invitation to manage an extra weekend trade show booth when your queue is full.",
+          steps: [
+            { front: "The Diplomatic Decline — offer a polite, clear refusal based on capacity", back: "\"I'd like to help, but my current project load requires my full weekend focus, so I cannot attend.\"", guideFront: "Say no warmly and briefly when...", guideBack: "A warm no with an alternative" },
+            { front: "Broken Record — repeat your initial refusal calmly when pressured", back: "\"I understand it's important, but my current workload does not allow me to take on weekend events.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
+            { front: "Broken Record — hold your position unchanged on a third attempt", back: "\"As I mentioned, I am unable to commit to the trade show this weekend.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
+            { front: "Power-Down Phrases — close the conversation firmly and exit", back: "\"My answer is final, so I am returning to my work now. Have a good trip.\"", guideFront: "Close it and leave when...", guideBack: "A closing line and your exit" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Resisting pressure from a peer to take over their presentation deck preparation.",
+          steps: [
+            { front: "The Diplomatic Decline — state an honest refusal tied to primary responsibilities", back: "\"I'm not able to prepare the deck for you, as my schedule is dedicated to client deliverables today.\"", guideFront: "Say no warmly and briefly when...", guideBack: "A warm no with an alternative" },
+            { front: "Broken Record — repeat the core refusal without adding excuses", back: "\"I hear that you're in a pinch, but I am unable to take over your presentation deck.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
+            { front: "Broken Record — restate the limit flatly when they continue pleading", back: "\"I am at full capacity and cannot prepare the deck for you.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
+            { front: "Power-Down Phrases — cap the interaction and walk away", back: "\"I need to get back to my deliverables now. Good luck with the preparation.\"", guideFront: "Close it and leave when...", guideBack: "A closing line and your exit" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Work-Dumper Reset",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Enlist colleagues in your boundary using **The B-I-B Script**, deliver a concise refusal with **The Diplomatic Decline**, and close the exchange with **Power-Down Phrases**.\n\n• Work-dumpers exploit hesitation and over-explaining to pass off their responsibilities.\n• Setting an explicit boundary and closing negotiation protects your workload and focus.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A teammate attempts to hand off their routine monthly file organizing to you right before lunch.",
+          steps: [
+            { front: "The B-I-B Script — enlist them in your boundary by stating your observation, cue, and mutual benefit", back: "\"I've noticed I'm taking on so many extra file tasks that my main work is falling behind. If you see me accepting extra filing, remind me to stop, so that when I collaborate with you, I can give full focus.\"", guideFront: "Enlist them in your limit when...", guideBack: "Your limit, their cue and the benefit" },
+            { front: "The Diplomatic Decline — refuse the task dump warmly while offering a lighter alternative", back: "\"I'm not able to organize those files for you today, but I can send over my folder structure template.\"", guideFront: "Say no warmly and briefly when...", guideBack: "A warm no with an alternative" },
+            { front: "Power-Down Phrases — close the conversation firmly and return to your priority work", back: "\"I'm getting back to my primary project now. Thanks for understanding.\"", guideFront: "Close it and leave when...", guideBack: "A closing line and your exit" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A colleague asks you to take over drafting market research summaries that were assigned to them.",
+          steps: [
+            { front: "The B-I-B Script — share your boundary observation and ask for their help holding the line", back: "\"I've noticed I'm agreeing to take on so much extra research that my core deliverables suffer. When you see me taking on extra research, remind me of my limit—that way, my core work stays top tier.\"", guideFront: "Enlist them in your limit when...", guideBack: "Your limit, their cue and the benefit" },
+            { front: "The Diplomatic Decline — deliver a warm, brief refusal with a self-service alternative", back: "\"I'm unable to write the summary for you, but you can access all the raw data links in our shared drive.\"", guideFront: "Say no warmly and briefly when...", guideBack: "A warm no with an alternative" },
+            { front: "Power-Down Phrases — cap the interaction and walk back to your desk", back: "\"My schedule is set for the day, so I'm ending our chat here. Good luck with the report.\"", guideFront: "Close it and leave when...", guideBack: "A closing line and your exit" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A team member tries to drop an incomplete project log on your desk at 4:30 PM on Friday.",
+          steps: [
+            { front: "The B-I-B Script — explain your boundary observation and ask them to hold you accountable", back: "\"I've noticed I'm accepting last-minute Friday tasks so often that I'm burning out. If I start agreeing to late drops, remind me to hold my weekend boundary, so I come back refreshed on Monday.\"", guideFront: "Enlist them in your limit when...", guideBack: "Your limit, their cue and the benefit" },
+            { front: "The Diplomatic Decline — state a brief refusal while offering to review it during normal hours", back: "\"I can't review this incomplete log today, but I can look at it first thing Monday morning.\"", guideFront: "Say no warmly and briefly when...", guideBack: "A warm no with an alternative" },
+            { front: "Power-Down Phrases — close up your desk and exit the workspace", back: "\"I am packing up for the weekend now. Have a great weekend.\"", guideFront: "Close it and leave when...", guideBack: "A closing line and your exit" },
           ]
         },
       ]
@@ -8529,6 +8658,24 @@ const multiStepCollections = {
             { front: "Selective Engagement — they try to backtrack: \"Jeez, I was just kidding!\"", back: "(Maintain the 3-second look again, then go back to your burger without responding to the excuse).", guideFront: "Refuse the bait when...", guideBack: "A short, unbothered line or look" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "A toxic peer makes a sarcastic remark about your slides while you are standing at the projector.",
+          steps: [
+            { front: "Selective Engagement — hold silent eye contact to let the room register the comment.", back: "(Pause speaking, face them chest-to-chest, and hold a silent 3-second icy stare).", guideFront: "Refuse the bait when...", guideBack: "A short, unbothered line or look" },
+            { front: "Empowering Statements — offer a choice that forces professional decorum.", back: "\"I want to finish this briefing without personal commentary. Would you like to save your thoughts for the Q&A, or step out?\"", guideFront: "Offer two acceptable paths when...", guideBack: "A choice where both keep your limit" },
+            { front: "Selective Engagement — disengage completely when they mumble an excuse.", back: "(Nod once calmly without taking the bait, and turn back to your presentation slides).", guideFront: "Refuse the bait when...", guideBack: "A short, unbothered line or look" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A coworker makes a snide comment about you \"knowing the right people\" as you pass in the corridor.",
+          steps: [
+            { front: "Selective Engagement — pause and deliver a silent 3-second look.", back: "(Stop walking, turn squarely toward them, and look at them silently for 3 seconds).", guideFront: "Refuse the bait when...", guideBack: "A short, unbothered line or look" },
+            { front: "Empowering Statements — give them a choice on how to interact.", back: "\"If you have a genuine question about my promotion, we can schedule 10 minutes, or we can drop it. Which do you prefer?\"", guideFront: "Offer two acceptable paths when...", guideBack: "A choice where both keep your limit" },
+            { front: "Selective Engagement — walk away smoothly when they make a defensive joke.", back: "(Maintain a completely unbothered posture, pivot, and continue walking to your destination).", guideFront: "Refuse the bait when...", guideBack: "A short, unbothered line or look" },
+          ]
+        },
       ]
     },
     {
@@ -8544,6 +8691,59 @@ const multiStepCollections = {
             { front: "The Communication Hamburger — address the behavior.", back: "\"John, when you check my draft every hour, it concerns me because it appears you don't believe I'm capable of finishing it on time.\"", guideFront: "Name the act and its impact when...", guideBack: "The behavior, your concern and why" },
             { front: "The \"Irrelevant\" Block — they say, \"I'm just trying to be a good friend and help you out.\"", back: "\"I appreciate the thought, but to me, our relationship has always been strictly professional. I'd thank you for keeping it that way.\"", guideFront: "Keep it strictly professional when...", guideBack: "A line that removes the personal" },
             { front: "Empowering Statements — set the rule.", back: "\"I'll have the update for you at 5:00. Would you like to wait until then, or would you prefer to let the manager handle the coordination?\"", guideFront: "Offer two acceptable paths when...", guideBack: "A choice where both keep your limit" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A coworker repeatedly asks nosy questions about your financial situation or marriage in front of the team.",
+          steps: [
+            { front: "The Communication Hamburger — address the intrusive behavior clearly.", back: "\"John, when you ask personal questions about my finances at work, it concerns me because it appears you don't recognize standard professional boundaries.\"", guideFront: "Name the act and its impact when...", guideBack: "The behavior, your concern and why" },
+            { front: "The \"Irrelevant\" Block — dismantle their excuse of \"just being friendly.\"", back: "\"I appreciate that you see it as friendly, but to me, our relationship is purely professional, and I'd thank you for keeping it that way.\"", guideFront: "Keep it strictly professional when...", guideBack: "A line that removes the personal" },
+            { front: "Empowering Statements — cap the topic with a clear choice.", back: "\"Would you like to return to discussing the marketing strategy, or should we end our meeting here?\"", guideFront: "Offer two acceptable paths when...", guideBack: "A choice where both keep your limit" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your boss asks personal questions about why you need time off and tries to guilt you into working.",
+          steps: [
+            { front: "The Communication Hamburger — state the boundary violation cleanly.", back: "\"When my approved time off is questioned on a personal level, it concerns me because it suggests my professional output is being doubted.\"", guideFront: "Name the act and its impact when...", guideBack: "The behavior, your concern and why" },
+            { front: "The \"Irrelevant\" Block — cut off attempts to leverage personal loyalty.", back: "\"My commitment to my work is solid, but my personal time remains private. I keep a clear line between the two.\"", guideFront: "Keep it strictly professional when...", guideBack: "A line that removes the personal" },
+            { front: "Empowering Statements — offer a choice regarding coverage plans.", back: "\"I have arranged full coverage for my accounts. Would you like me to review the hand-off document with you now, or send it via email?\"", guideFront: "Offer two acceptable paths when...", guideBack: "A choice where both keep your limit" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Neutralizing Personal Attacks",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Use The \"Irrelevant\" Block to cut emotional ties, Empowering Statements to set a firm boundary, and Selective Engagement to exit the fight loop.\n\n• Manipulators use personal attacks to draw you into emotional self-defense.\n• Establishing that no personal relationship exists deprives their insults of leverage.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A toxic colleague claims in front of leadership that you are \"untrustworthy and difficult to work with.\"",
+          steps: [
+            { front: "The \"Irrelevant\" Block — declare that personal opinions are irrelevant to professional results.", back: "\"Whether you trust me personally is irrelevant; my work and my record on this account speak for themselves.\"", guideFront: "Keep it strictly professional when...", guideBack: "A line that removes the personal" },
+            { front: "Empowering Statements — offer a choice focused strictly on objective data.", back: "\"We can either review the project metrics together right now, or you can bring specific data errors to my manager. Which would you prefer?\"", guideFront: "Offer two acceptable paths when...", guideBack: "A choice where both keep your limit" },
+            { front: "Selective Engagement — starve their attempt to continue arguing.", back: "\"I've stated the two options. I won't engage in further personal debate.\"", guideFront: "Refuse the bait when...", guideBack: "A short, unbothered line or look" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A peer accuses you of \"sabotaging their career\" because you accepted a high-profile assignment they wanted.",
+          steps: [
+            { front: "The \"Irrelevant\" Block — remove personal drama from a business management decision.", back: "\"I didn't assign this project, and there is no personal sabotage here. My relationship with you is strictly professional.\"", guideFront: "Keep it strictly professional when...", guideBack: "A line that removes the personal" },
+            { front: "Empowering Statements — redirect the focus to future collaboration choices.", back: "\"We can collaborate professionally on this project as assigned, or you can discuss account allocation with management. Which option works for you?\"", guideFront: "Offer two acceptable paths when...", guideBack: "A choice where both keep your limit" },
+            { front: "Selective Engagement — execute a clean 3-second look when they escalate.", back: "(Hold calm, unwavering eye contact for 3 seconds, then return to reviewing your project files).", guideFront: "Refuse the bait when...", guideBack: "A short, unbothered line or look" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A manipulator comes to your desk and claims everyone in the department is talking bad about you behind your back.",
+          steps: [
+            { front: "The \"Irrelevant\" Block — dismiss third-party gossip as irrelevant to your work.", back: "\"What people say behind my back is of no consequence to me. My focus is strictly on my professional responsibilities.\"", guideFront: "Keep it strictly professional when...", guideBack: "A line that removes the personal" },
+            { front: "Empowering Statements — force them to choose between direct action or dropping the topic.", back: "\"If someone has a professional concern, tell them to bring it to me directly, or let's drop this topic entirely. Which will it be?\"", guideFront: "Offer two acceptable paths when...", guideBack: "A choice where both keep your limit" },
+            { front: "Selective Engagement — end the exchange without taking the bait.", back: "\"I have work to finish now. Have a good afternoon.\"", guideFront: "Refuse the bait when...", guideBack: "A short, unbothered line or look" },
           ]
         },
       ]
@@ -8566,6 +8766,26 @@ const multiStepCollections = {
             { front: "Lead-in & Closing Lines — wrap it up.", back: "\"Does that sound doable for you? [Pause] Great. I'm going to get back to my desk now. Goodbye.\"", guideFront: "Open or close with a set line when...", guideBack: "A named opener or a closing question" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "You are reviewing a junior manager's monthly report. The data is thorough, but key conclusions are buried in long paragraphs.",
+          steps: [
+            { front: "Lead-in Lines — use their name and \"I\" language", back: "\"Sarah, I need your help. I'm concerned about how the monthly report findings are being presented.\"", guideFront: "Open with their name when...", guideBack: "A named opener" },
+            { front: "LBNT (Liked Best) — highlight the positive observation", back: "\"I liked best the depth of the data you gathered across all three departments.\"", guideFront: "Start with what worked when...", guideBack: "One specific thing you liked" },
+            { front: "LBNT (Next Time) — deliver the specific future instruction", back: "\"Next time, if you highlight the top three findings in bold at the beginning, the executive team will grasp the impact instantly.\"", guideFront: "Give one change for next time when...", guideBack: "A next-time suggestion" },
+            { front: "Lead-in & Closing Lines — wrap up with a closed-ended confirmation", back: "\"Does that sound doable for your next draft? Excellent. I look forward to seeing it.\"", guideFront: "Open or close with a set line when...", guideBack: "A named opener or a closing question" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A peer facilitated a client workshop well, but ran out of time before agreeing on next steps.",
+          steps: [
+            { front: "Lead-in Lines — open with an \"I\" lead-in line", back: "\"Jason, I have a thought I'd like to share regarding today's client workshop.\"", guideFront: "Open with their name when...", guideBack: "A named opener" },
+            { front: "LBNT (Liked Best) — state what worked in their delivery", back: "\"I liked best how engaged you kept the client group during the brainstorming session.\"", guideFront: "Start with what worked when...", guideBack: "One specific thing you liked" },
+            { front: "LBNT (Next Time) — offer the future adjustment", back: "\"Next time, if you reserve the last ten minutes specifically for confirming action items, we'll lock in decisions faster.\"", guideFront: "Give one change for next time when...", guideBack: "A next-time suggestion" },
+            { front: "Lead-in & Closing Lines — close cleanly", back: "\"Can I count on your support for that adjustment in next week's session?\"", guideFront: "Open or close with a set line when...", guideBack: "A named opener or a closing question" },
+          ]
+        },
       ]
     },
     {
@@ -8581,6 +8801,59 @@ const multiStepCollections = {
             { front: "\"I\" Instead of \"You\" — state the observation.", back: "\"I find it difficult to run an effective meeting when we have to repeat the first 10 minutes.\"", guideFront: "Lead with an \"I\" statement when...", guideBack: "An I-statement" },
             { front: "D-A-R-T (Describe & Address) — show the intent and the distraction.", back: "\"I'm here to ensure our team hits its goals. However, late starts are counterproductive to our mission.\"", guideFront: "State your aim and the problem when...", guideBack: "Your aim, then the behavior" },
             { front: "D-A-R-T (Redirect & Tag) — ask for the change.", back: "\"What do you say we all agree to be in our seats by 9:00 sharp? That's reasonable, isn't it?\"", guideFront: "Redirect and ask for agreement when...", guideBack: "A new path and a tag question" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A team member repeatedly skips wearing mandatory protective gear on the warehouse floor.",
+          steps: [
+            { front: "\"I\" Instead of \"You\" — state the observation using \"I\" language", back: "\"I find it concerning when safety guidelines are not followed, because I value everyone's physical well-being on this floor.\"", guideFront: "Lead with an \"I\" statement when...", guideBack: "An I-statement" },
+            { front: "D-A-R-T (Describe & Address) — state your intent and how their action conflicts with it", back: "\"I'm here to maintain a zero-incident workplace. However, skipping protective gear puts you and your teammates at risk.\"", guideFront: "State your aim and the problem when...", guideBack: "Your aim, then the behavior" },
+            { front: "D-A-R-T (Redirect & Tag) — redirect energy back to compliance with a tag question", back: "\"So what do you say we agree to wear full gear every time we step onto the floor? That's fair, isn't it?\"", guideFront: "Redirect and ask for agreement when...", guideBack: "A new path and a tag question" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A colleague submits final design files directly to production without getting the required manager sign-off.",
+          steps: [
+            { front: "\"I\" Instead of \"You\" — express concern tied to team standards", back: "\"I'm concerned when design files bypass the sign-off review, as unverified errors create expensive re-prints.\"", guideFront: "Lead with an \"I\" statement when...", guideBack: "An I-statement" },
+            { front: "D-A-R-T (Describe & Address) — articulate the goal and how the breach distracts", back: "\"I'm here to ensure our production quality remains error-free. However, skipping sign-offs undermines that quality check.\"", guideFront: "State your aim and the problem when...", guideBack: "Your aim, then the behavior" },
+            { front: "D-A-R-T (Redirect & Tag) — secure tag question buy-in", back: "\"What do you say we stick strictly to the sign-off protocol for all future files? You can honor that, can't you?\"", guideFront: "Redirect and ask for agreement when...", guideBack: "A new path and a tag question" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Executive Reset",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Use Lead-in & Closing Lines to set an authoritative frame, \"I\" Instead of \"You\" to state the observation, and D-A-R-T for Accountability to secure buy-in.\n\n• Unscripted responses to boundary breaches often turn into emotional arguments or trailing apologies.\n• Executing a structured three-step reset establishes immediate executive presence and redirects energy to goals.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A senior specialist repeatedly interrupts a division strategy meeting to vent about personal grievances.",
+          steps: [
+            { front: "Lead-in & Closing Lines — open with an authoritative lead-in", back: "\"Robert, I need your help. I'm concerned about our meeting focus today.\"", guideFront: "Open or close with a set line when...", guideBack: "A named opener or a closing question" },
+            { front: "\"I\" Instead of \"You\" — state your observation using \"I\" language", back: "\"I find it difficult to complete our strategic agenda when personal grievances distract the group.\"", guideFront: "Lead with an \"I\" statement when...", guideBack: "An I-statement" },
+            { front: "D-A-R-T for Accountability — execute D-A-R-T to redirect to the agenda", back: "\"I'm here to finalize our Q4 strategy. However, these side topics take us off course. So what do you say we return strictly to the agenda? Reasonable, isn't it?\"", guideFront: "State your aim, then the problem when...", guideBack: "Your aim, the problem and a redirect" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A supplier attempts to increase service fees mid-project without delivering agreed deliverables.",
+          steps: [
+            { front: "Lead-in & Closing Lines — deliver a firm lead-in opener", back: "\"Karen, I have made a decision regarding our account relationship.\"", guideFront: "Open or close with a set line when...", guideBack: "A named opener or a closing question" },
+            { front: "\"I\" Instead of \"You\" — express the boundary cleanly", back: "\"I was under the impression that our fee structure was fixed by contract, and I find unexpected fee increases unacceptable.\"", guideFront: "Lead with an \"I\" statement when...", guideBack: "An I-statement" },
+            { front: "D-A-R-T for Accountability — redirect to contract terms", back: "\"I'm here to build a long-term partnership. However, shifting terms undermines our trust. Let's honor the original agreement. Can I count on your support?\"", guideFront: "State your aim, then the problem when...", guideBack: "Your aim, the problem and a redirect" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "An account manager handles an escalating client complaint independently without notifying leadership.",
+          steps: [
+            { front: "Lead-in & Closing Lines — name the employee and open the talk", back: "\"Marcus, I'm concerned. I need your full attention on our escalation process.\"", guideFront: "Open or close with a set line when...", guideBack: "A named opener or a closing question" },
+            { front: "\"I\" Instead of \"You\" — state the professional standard", back: "\"I find it troubling when major client escalations are handled without leadership awareness, because I value account retention.\"", guideFront: "Lead with an \"I\" statement when...", guideBack: "An I-statement" },
+            { front: "D-A-R-T for Accountability — enforce protocol buy-in", back: "\"I'm here to safeguard our client relationships. However, unmonitored escalations risk account loss. So let's agree that all tier-one complaints get logged immediately. That's fair, isn't it?\"", guideFront: "State your aim, then the problem when...", guideBack: "Your aim, the problem and a redirect" },
           ]
         },
       ]
@@ -8603,6 +8876,26 @@ const multiStepCollections = {
             { front: "The Look Away — manage the connection.", back: "(Maintain eye contact for 7 seconds, then glance at your slides before returning your gaze to the CEO).", guideFront: "Manage your gaze when...", guideBack: "A held or broken gaze" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "You walk into the client's glass conference room where five representatives are reviewing materials.",
+          steps: [
+            { front: "Territorial Markers — claim your space", back: "(Move your guest chair up to the table, lay your laptop open, and place your notebook firmly in your space).", guideFront: "Take up your space when...", guideBack: "A move that claims space" },
+            { front: "Vocal Power Tone — capture the room's attention", back: "(Speak from the diaphragm with full resonance) \"Good morning, everyone. Thank you for making time today.\"", guideFront: "Speak from the diaphragm when...", guideBack: "A clear, full-volume line" },
+            { front: "The Steeple — anchor your first key point", back: "(Plant your forearms on the table and form a steeple for four seconds while delivering your opening statement).", guideFront: "Bring your fingertips together when...", guideBack: "A steeple, with or without words" },
+            { front: "The Look Away — manage the connection", back: "(Hold comfortable eye contact for seven seconds, then glance at your agenda before looking back).", guideFront: "Manage your gaze when...", guideBack: "A held or broken gaze" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You arrive at the department review where team members are sitting slumped in their chairs.",
+          steps: [
+            { front: "Territorial Markers — claim your space", back: "(Set your pen and documents on the table, pull your chair in close, and sit with a high, open chest).", guideFront: "Take up your space when...", guideBack: "A move that claims space" },
+            { front: "Vocal Power Tone — capture the room's attention", back: "(Deliver your opening remark loudly enough to reach the back corner without straining) \"Let's bring this review to order.\"", guideFront: "Speak from the diaphragm when...", guideBack: "A clear, full-volume line" },
+            { front: "The Steeple — anchor your first key point", back: "(Form a precise steeple with your fingertips as you outline the meeting objectives).", guideFront: "Bring your fingertips together when...", guideBack: "A steeple, with or without words" },
+            { front: "The Look Away — manage the connection", back: "(Maintain a warm, open gaze across the room, breaking contact smoothly every seven seconds).", guideFront: "Manage your gaze when...", guideBack: "A held or broken gaze" },
+          ]
+        },
       ]
     },
     {
@@ -8618,6 +8911,59 @@ const multiStepCollections = {
             { front: "The Look Away — notice the aggression and stay calm.", back: "(Meet their eyes comfortably, keeping your eyelids in the 'Icy Stare' position—eyelids covering the top of the iris).", guideFront: "Manage your gaze when...", guideBack: "A held or broken gaze" },
             { front: "Selective Engagement — use the 3-second look.", back: "(Simply look at them for 3 seconds without smiling or speaking. Let them 'cook their own goose').", guideFront: "Refuse the bait when...", guideBack: "A short, unbothered line or look" },
             { front: "The Look Away — break the tension on your terms.", back: "(After 7 seconds, calmly look down at your keyboard and continue your work as if they aren't there).", guideFront: "Manage your gaze when...", guideBack: "A held or broken gaze" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A peer who lost an account to your unit stands in the corridor staring at you hostilely.",
+          steps: [
+            { front: "The Look Away — notice the aggression and stay calm", back: "(Turn chest-to-chest, keeping your eyelids in the calm Icy Stare position covering the top of your iris).", guideFront: "Manage your gaze when...", guideBack: "A held or broken gaze" },
+            { front: "Selective Engagement — use the 3-second look", back: "(Hold silent, unwavering eye contact for three seconds without smiling or frowning).", guideFront: "Refuse the bait when...", guideBack: "A short, unbothered line or look" },
+            { front: "The Look Away — break the tension on your terms", back: "(Look down smoothly at your wristwatch, then look back up before turning calmly away).", guideFront: "Manage your gaze when...", guideBack: "A held or broken gaze" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A toxic colleague stares intently at you without speaking after you decline their request.",
+          steps: [
+            { front: "The Look Away — notice the aggression and stay calm", back: "(Align your posture squarely to face them with relaxed, unblinking eyelids).", guideFront: "Manage your gaze when...", guideBack: "A held or broken gaze" },
+            { front: "Selective Engagement — use the 3-second look", back: "(Let the silent three-second look sit in the room to make them 'cook their own goose').", guideFront: "Refuse the bait when...", guideBack: "A short, unbothered line or look" },
+            { front: "The Look Away — break the tension on your terms", back: "(Glance down at your notebook to make a quick entry, ending the stare-down on your terms).", guideFront: "Manage your gaze when...", guideBack: "A held or broken gaze" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Neutralizing Intimidation",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Use Vocal Power Tone to set authority, Territorial Markers to hold your ground, and The Steeple to close the exchange.\n\n• Intimidators rely on shrinking body language and quiet responses to dominate.\n• Standing tall, claiming space, and using a steeple forces the challenger onto equal footing.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A manager stands up at the table and raises their voice to demand you alter your report.",
+          steps: [
+            { front: "Vocal Power Tone — establish vocal authority", back: "(Match their projection without matching their anger) \"I hear your concern, but my figures are verified.\"", guideFront: "Speak from the diaphragm when...", guideBack: "A clear, full-volume line" },
+            { front: "Territorial Markers — claim physical ground", back: "(Remain seated with a tall spine, plant your forearms heavily on the table, and keep your chest open).", guideFront: "Take up your space when...", guideBack: "A move that claims space" },
+            { front: "The Steeple — deliver the unassailable conclusion", back: "(Form a fingertip steeple for four seconds) \"We will proceed with the verified data as submitted.\"", guideFront: "Bring your fingertips together when...", guideBack: "A steeple, with or without words" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your boss stands directly behind your desk chair hovering over your shoulder to inspect your typing.",
+          steps: [
+            { front: "Vocal Power Tone — establish vocal authority", back: "(Turn your chair squarely, look up, and speak with a clear, resonant power tone) \"David, let me step you through this draft.\"", guideFront: "Speak from the diaphragm when...", guideBack: "A clear, full-volume line" },
+            { front: "Territorial Markers — claim physical ground", back: "(Lean back slightly in your chair, place your hands calmly on your armrests, and claim your desk boundary).", guideFront: "Take up your space when...", guideBack: "A move that claims space" },
+            { front: "The Steeple — deliver the unassailable conclusion", back: "(Bring your fingertips into a relaxed steeple) \"I'll have the complete file in your inbox by 4:00 PM.\"", guideFront: "Bring your fingertips together when...", guideBack: "A steeple, with or without words" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A vendor tries to dismiss your contract terms by talking over you in a small meeting room.",
+          steps: [
+            { front: "Vocal Power Tone — establish vocal authority", back: "(Increase your vocal volume calmly from the diaphragm) \"Let me pause you there so we stay on the core terms.\"", guideFront: "Speak from the diaphragm when...", guideBack: "A clear, full-volume line" },
+            { front: "Territorial Markers — claim physical ground", back: "(Slide your notebook to the center of the table and rest your elbows firmly in your space).", guideFront: "Take up your space when...", guideBack: "A move that claims space" },
+            { front: "The Steeple — deliver the unassailable conclusion", back: "(Form a four-second steeple pose) \"Our fee structure is fixed, so that is where we will focus.\"", guideFront: "Bring your fingertips together when...", guideBack: "A steeple, with or without words" },
           ]
         },
       ]
@@ -8640,6 +8986,26 @@ const multiStepCollections = {
             { front: "\"I Forgive You\" — Mark cools down and says, \"Sorry Dan, I'm just stressed about the deadline.\"", back: "\"I understand the pressure. I forgive you. Let's get back to work.\"", guideFront: "Answer the apology with forgiveness when...", guideBack: "An explicit forgiveness" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "A coworker demands that you spend your Saturday reviewing their project proposal.",
+          steps: [
+            { front: "Coping Statements — internal emotional surge", back: "(Internal) \"I am calm, composed, and in total control of my personal time.\"", guideFront: "Tell yourself one calm line when...", guideBack: "A present-tense line to yourself" },
+            { front: "The Broken Record — deliver the first boundary", back: "\"I understand your timeline is tight, but I do not work on weekends. I can review it Monday morning.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
+            { front: "The Broken Record — they attempt to guilt-trip you", back: "\"That may be, but again, I do not work on weekends. You can count on my feedback Monday.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
+            { front: "\"I Forgive You\" — they back down and offer a hasty apology", back: "\"I understand you're under pressure. I forgive you. See you Monday.\"", guideFront: "Answer the apology with forgiveness when...", guideBack: "An explicit forgiveness" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A peer from another department asks for restricted account data that they lack clearance to view.",
+          steps: [
+            { front: "Coping Statements — feeling pressure from their aggressive tone", back: "(Internal) \"I am a principled professional who protects company standards.\"", guideFront: "Tell yourself one calm line when...", guideBack: "A present-tense line to yourself" },
+            { front: "The Broken Record — state the initial refusal", back: "\"I understand you want to review the account, but I cannot share restricted files.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
+            { front: "The Broken Record — they accuse you of being uncooperative", back: "\"I hear your frustration, but as I stated, I cannot share restricted files without sign-off.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
+            { front: "\"I Forgive You\" — they realize their error and apologize", back: "\"I appreciate your understanding. I forgive you. Let me connect you with the compliance team.\"", guideFront: "Answer the apology with forgiveness when...", guideBack: "An explicit forgiveness" },
+          ]
+        },
       ]
     },
     {
@@ -8655,6 +9021,59 @@ const multiStepCollections = {
             { front: "The Value Journal — a week before the meeting.", back: "\"I've dropped off a summary of my quantifiable contributions this year. I'd like us to reference those during our review.\"", guideFront: "Log the value you created when...", guideBack: "An entry with the value counted" },
             { front: "Coping Statements — you are sitting in the hallway waiting to be called in.", back: "(Internal) \"I am a high-value asset to this team. I am calm and confident.\"", guideFront: "Tell yourself one calm line when...", guideBack: "A present-tense line to yourself" },
             { front: "The Broken Record — the manager says, \"The budget is tight this year for everyone.\"", back: "\"I understand the budget constraints, however based on the $50k in new revenue I generated, a raise is a logical return on investment.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are meeting with leadership to present data for an off-cycle salary adjustment.",
+          steps: [
+            { front: "The Value Journal — submit data ahead of time", back: "\"I've dropped off a log detailing $30,000 in cost savings I generated this quarter for your review.\"", guideFront: "Log the value you created when...", guideBack: "An entry with the value counted" },
+            { front: "Coping Statements — center yourself before entering", back: "(Internal) \"I am prepared, capable, and presenting objective business facts.\"", guideFront: "Tell yourself one calm line when...", guideBack: "A present-tense line to yourself" },
+            { front: "The Broken Record — respond to budget pushback", back: "\"I understand overall budgets are tight, but my $30,000 cost savings makes this raise a net gain.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are interviewing with your department head for a title change and pay bump.",
+          steps: [
+            { front: "The Value Journal — share documented proof of higher duties", back: "\"My journal shows I've performed senior-level account duties for six months, generating $25k in added value.\"", guideFront: "Log the value you created when...", guideBack: "An entry with the value counted" },
+            { front: "Coping Statements — manage nervous energy in the chair", back: "(Internal) \"I am calm, confident, and clearly qualified for this advancement.\"", guideFront: "Tell yourself one calm line when...", guideBack: "A present-tense line to yourself" },
+            { front: "The Broken Record — handle reluctance from management", back: "\"I hear your concern about timing, but my documented senior-level output justifies the formal promotion today.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Resisting Workplace Pressure",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Use Coping Statements to maintain internal composure, The Broken Record to hold your boundary against pushback, and The Value Journal to record the operational outcome.\n\n• Internal calm prevents reactive emotional explosions under fire.\n• Steady repetition and objective logging demonstrate unshakeable professional presence.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A colleague attempts to dump their routine data entry tasks onto your desk.",
+          steps: [
+            { front: "Coping Statements — regulate internal annoyance", back: "(Internal) \"I am calm, focused, and dedicated to my primary responsibilities.\"", guideFront: "Tell yourself one calm line when...", guideBack: "A present-tense line to yourself" },
+            { front: "The Broken Record — deliver the clear refusal", back: "\"I understand you're busy, but I cannot take on your data entry tasks as I am at full capacity.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
+            { front: "The Value Journal — document the boundary enforcement", back: "(Write in journal) \"Declined unassigned admin work. Preserved 5 focus hours for core deliverables.\"", guideFront: "Log the value you created when...", guideBack: "An entry with the value counted" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A manager insists you complete a three-day analysis project overnight.",
+          steps: [
+            { front: "Coping Statements — maintain internal poise when challenged", back: "(Internal) \"I am a high-performing professional who protects quality standards.\"", guideFront: "Tell yourself one calm line when...", guideBack: "A present-tense line to yourself" },
+            { front: "The Broken Record — hold the realistic delivery date", back: "\"I understand the urgency, but delivering thorough quality requires three days. I can finish it by Thursday.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
+            { front: "The Value Journal — log the quality deliverable", back: "(Write in journal) \"Delivered error-free analysis on Thursday. Prevented critical reporting errors.\"", guideFront: "Log the value you created when...", guideBack: "An entry with the value counted" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A peer tries to put you on the spot during a division call to volunteer for an unbudgeted committee.",
+          steps: [
+            { front: "Coping Statements — control the urge to agree out of awkwardness", back: "(Internal) \"I am comfortable saying no to maintain focus on my core accounts.\"", guideFront: "Tell yourself one calm line when...", guideBack: "A present-tense line to yourself" },
+            { front: "The Broken Record — state your limit in front of the team", back: "\"I appreciate the invitation, but I am focused on my primary accounts and cannot join the committee.\"", guideFront: "Repeat your decision calmly when...", guideBack: "The same line, again" },
+            { front: "The Value Journal — record the saved capacity", back: "(Write in journal) \"Maintained focus on Account Alpha. Generated $10k expansion this month.\"", guideFront: "Log the value you created when...", guideBack: "An entry with the value counted" },
           ]
         },
       ]
@@ -8677,6 +9096,26 @@ const multiStepCollections = {
             { front: "The OFF Technique (Familiar Language) — as you walk away.", back: "\"I'll be right back, Joe. You're in charge of the cookies while I'm gone!\"", guideFront: "Talk like old friends when...", guideBack: "A familiar, easy line" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "You sit down next to an unfamiliar colleague before a seminar begins.",
+          steps: [
+            { front: "The \"Person, Place, or Thing\" Opener — notice a detail in the room.", back: "\"The staging for this seminar is really impressive, isn't it?\"", guideFront: "Open on something you notice when...", guideBack: "A remark or question about what's here" },
+            { front: "The Visual Hook for Names — they introduce themselves as 'David'.", back: "\"Nice to meet you, David. I'm Dan.\" (Picture King David holding a shield next to him; repeat 'David' three times).", guideFront: "Picture a hook for the name when...", guideBack: "An image, or the name used aloud" },
+            { front: "The OFF Technique (Offer) — offer a small courtesy.", back: "\"David, I'm heading to grab a pen from the registration desk—would you like me to grab one for you as well?\"", guideFront: "Offer something small when...", guideBack: "A small offer" },
+            { front: "The OFF Technique (Familiar Language) — deliver a warm familiar exit line.", back: "\"I'll be right back, David. You're in charge of saving my seat!\"", guideFront: "Talk like old friends when...", guideBack: "A familiar, easy line" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You meet a newly assigned project partner near the coffee machine.",
+          steps: [
+            { front: "The \"Person, Place, or Thing\" Opener — comment on the venue or setup.", back: "\"This new espresso machine in the breakroom is a huge upgrade, isn't it?\"", guideFront: "Open on something you notice when...", guideBack: "A remark or question about what's here" },
+            { front: "The Visual Hook for Names — they give their name as 'Rachel'.", back: "\"Rachel, great to connect with you.\" (Picture Rachel from Friends standing beside her; repeat 'Rachel' three times).", guideFront: "Picture a hook for the name when...", guideBack: "An image, or the name used aloud" },
+            { front: "The OFF Technique (Offer) — make an 'as well' offer.", back: "\"Rachel, I'm getting fresh water before our meeting—can I grab a glass for you as well?\"", guideFront: "Offer something small when...", guideBack: "A small offer" },
+            { front: "The OFF Technique (Familiar Language) — wrap up with familiar phrasing.", back: "\"I'll be right back. Hold down the fort for us!\"", guideFront: "Talk like old friends when...", guideBack: "A familiar, easy line" },
+          ]
+        },
       ]
     },
     {
@@ -8692,6 +9131,59 @@ const multiStepCollections = {
             { front: "\"Your\" instead of \"You\" — make it personable.", back: "\"Mary, your attention to detail on this file really shines through. It solved exactly the problem I was having.\"", guideFront: "Make it about their work when...", guideBack: "Praise that starts with your" },
             { front: "Empowering Praise — shift the pride to her.", back: "\"You did a fantastic job. You should be really proud of yourself for this one.\"", guideFront: "Tell them to be proud when...", guideBack: "Praise that hands them the pride" },
             { front: "Empowering Praise (Engagement) — add the tag question.", back: "\"Were you aware that the whole team has been noticing how much you've stepped up lately?\"", guideFront: "Add a tag question when...", guideBack: "A question that hands them the praise" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A team member shows you a client proposal they spent days refining.",
+          steps: [
+            { front: "\"Your\" instead of \"You\" — make the compliment personable.", back: "\"Jason, your strategic clarity in section two really shines through on this proposal.\"", guideFront: "Make it about their work when...", guideBack: "Praise that starts with your" },
+            { front: "Empowering Praise — hand them internal pride.", back: "\"You did an outstanding job pulling this together. You should be really proud of yourself.\"", guideFront: "Tell them to be proud when...", guideBack: "Praise that hands them the pride" },
+            { front: "Empowering Praise (Engagement) — close with an engaging tag question.", back: "\"Did you know that leadership was specifically asking about who authored this?\"", guideFront: "Add a tag question when...", guideBack: "A question that hands them the praise" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "An administrative assistant successfully coordinates an offsite executive retreat.",
+          steps: [
+            { front: "\"Your\" instead of \"You\" — compliment their specific quality.", back: "\"Elena, your organizational skill was evident in every single detail of this retreat.\"", guideFront: "Make it about their work when...", guideBack: "Praise that starts with your" },
+            { front: "Empowering Praise — focus on their self-worth.", back: "\"Everything ran flawlessly today. You should be incredibly proud of yourself.\"", guideFront: "Tell them to be proud when...", guideBack: "Praise that hands them the pride" },
+            { front: "Empowering Praise (Engagement) — add the engaging tag question.", back: "\"Were you aware of how many directors complimented the schedule today?\"", guideFront: "Add a tag question when...", guideBack: "A question that hands them the praise" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Connecting at a Social Event",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Combine The \"Person, Place, or Thing\" Opener, The Visual Hook for Names, and Empowering Praise to establish instant rapport and elevate others.\n\n• The \"Person, Place, or Thing\" Opener — comment on a positive shared detail in the venue\n• The Visual Hook for Names — anchor their name with a memorable visual image and repetition\n• Empowering Praise — give sincere praise that highlights their choice and hands them the pride\n\nMindset: I lead social exchanges by bringing warmth, observation, and genuine validation.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You approach a guest speaker at the end of a panel discussion.",
+          steps: [
+            { front: "The \"Person, Place, or Thing\" Opener — notice a venue or presentation detail.", back: "\"The presentation slides you projected in the main hall were phenomenal.\"", guideFront: "Open on something you notice when...", guideBack: "A remark or question about what's here" },
+            { front: "The Visual Hook for Names — anchor their name upon meeting.", back: "\"I'm Dan. Great to meet you, Marcus.\" (Picture Marcus Aurelius wearing a crown; repeat 'Marcus' three times).", guideFront: "Picture a hook for the name when...", guideBack: "An image, or the name used aloud" },
+            { front: "Empowering Praise — deliver praise that highlights their choice.", back: "\"The way you handled the audience Q&A was brilliant. You should be really proud of yourself.\"", guideFront: "Tell them to be proud when...", guideBack: "Praise that hands them the pride" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A first-time attendee sits down next to you at a networking dinner table.",
+          steps: [
+            { front: "The \"Person, Place, or Thing\" Opener — open on the venue environment.", back: "\"This dining room setup is fantastic for a large gathering, isn't it?\"", guideFront: "Open on something you notice when...", guideBack: "A remark or question about what's here" },
+            { front: "The Visual Hook for Names — confirm and anchor their name.", back: "\"Welcome! I'm Dan. What's your name? Ah, Lisa—wonderful to meet you, Lisa.\" (Picture Mona Lisa beside her).", guideFront: "Picture a hook for the name when...", guideBack: "An image, or the name used aloud" },
+            { front: "Empowering Praise — validate their decision to attend.", back: "\"Stepping into a new group takes confidence. You should be really proud of yourself for coming out tonight.\"", guideFront: "Tell them to be proud when...", guideBack: "Praise that hands them the pride" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You join a coworker standing near the awards table during an office celebration.",
+          steps: [
+            { front: "The \"Person, Place, or Thing\" Opener — comment on the event detail.", back: "\"The glass trophies on the display table look incredible this year, don't they?\"", guideFront: "Open on something you notice when...", guideBack: "A remark or question about what's here" },
+            { front: "The Visual Hook for Names — anchor the name during the greeting.", back: "\"Great to see you here, Tom.\" (Picture Tom Sawyer holding a paintbrush; repeat 'Tom' three times).", guideFront: "Picture a hook for the name when...", guideBack: "An image, or the name used aloud" },
+            { front: "Empowering Praise — praise their contribution.", back: "\"Your leadership on the Q3 rollout made this milestone possible. You should be very proud of yourself.\"", guideFront: "Tell them to be proud when...", guideBack: "Praise that hands them the pride" },
           ]
         },
       ]

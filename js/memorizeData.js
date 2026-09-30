@@ -10258,6 +10258,174 @@ const memorizeCollections = {
         { q: "What are \"Territorial Markers\" and why use them?", a: "Physical objects (pen, notebook) placed on a table to mark your space, project confidence, and signal you belong.", bundle: 'pro' },
       ]
     },
+    {
+      name: "Core Idea",
+      description: "Tactical verbal defense principles and power phrases to disarm workplace toxicity, establish boundaries, and project executive authority.",
+      cards: [
+        { q: "What are Dan O'Connor's \"Three Watchmen\" you encounter after standing your ground?", a: "1. The Supporter (in awe), 2. The Competitor (jealous/scared), 3. The Decision Maker (sees leadership material).", bundle: 'free' },
+        { q: "What is the fundamental difference between asking \"Why\" and asking \"What\"?", a: "\"Why\" leads to excuses, defensiveness, and rumination; \"What\" gets specific facts or calls out inappropriate behavior.", bundle: 'free' },
+        { q: "How do you correctly execute the \"Icy Stare\"?", a: "Maintain direct eye contact with eyelids slightly covering the top of the iris, avoiding wide-open \"psychosis eyes.\"", bundle: 'free' },
+        { q: "How do you locate your professional \"Power Tone\"?", a: "Look down into your lap, say a phrase, and lift your chin as you finish the sentence to find your diaphragm resonance.", bundle: 'free' },
+        { q: "What is Level Zero in any workplace relationship according to Dan O'Connor?", a: "Basic mutual respect. Without respect, no productive collaboration or communication can occur.", bundle: 'free' },
+        { q: "What are the two mandatory rules for formulating an effective coping statement?", a: "It must be in the present tense (\"I am\") and positively framed (\"I am calm\" rather than \"I won't panic\").", bundle: 'pro' },
+        { q: "What are \"Territorial Markers\" and why should you use them in high-stakes meetings?", a: "Physical items (notebook, pen, water glass) placed intentionally on the table to mark space and project belonging.", bundle: 'pro' },
+        { q: "What is the core rule regarding defending yourself against workplace attacks?", a: "Never defend. We only defend what we perceive to be vulnerable; state facts or let your work speak for itself.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Professional Boundary (I'm Surprised)",
+      description: "",
+      cards: [
+        { q: "What is the primary mechanism behind saying \"I'm surprised\"?", a: "It removes the expected emotional reward of defensiveness and highlights that the speaker has deviated from professional norms.", bundle: 'free' },
+        { q: "Why is \"I'm surprised\" particularly effective against passive-aggressive comments?", a: "It reframes their comment as an odd, uncalled-for departure from professional standards without starting a fight.", bundle: 'free' },
+        { q: "What phrase completes \"I'm surprised that you would make a personal comment like that...\"?", a: "\"...when to me our relationship has always been strictly professional.\"", bundle: 'free' },
+        { q: "How should you respond if someone claims \"I was just kidding\" after you set a boundary?", a: "Repeat the core boundary: \"That may be, but again, to me our relationship is purely professional.\"", bundle: 'free' },
+        { q: "What should you do if you previously blurred professional boundaries with a colleague?", a: "Offer a clean apology: \"If in the past I gave you any reason to believe we were on that level of familiarity, I apologize.\"", bundle: 'free' },
+        { q: "Why is silence (the three-second look) paired so effectively with \"I'm surprised\"?", a: "Silence creates discomfort that forces the other person to fill the air, often exposing their own bad motives.", bundle: 'pro' },
+        { q: "How does \"I'm surprised\" protect your executive image in front of leadership?", a: "It demonstrates that you operate at a high professional level and hold unshakeable standards for workplace decorum.", bundle: 'pro' },
+        { q: "What is the mindset shift behind using The Professional Boundary?", a: "Shifting from \"I need them to like me\" to \"I am defining the professional rules of engagement for my space.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Clarifying Question",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of The Clarifying Question?", a: "Translating passive-aggressive subtext into a blunt, factual statement and asking if that is what was meant.", bundle: 'free' },
+        { q: "What is the standard lead-in structure for a Clarifying Question?", a: "\"When you say [X], it sounds to me like what you're saying is [subtext]. Is that what you're trying to say?\"", bundle: 'free' },
+        { q: "Why do passive-aggressive colleagues usually back down when asked a Clarifying Question?", a: "Passive aggression relies on hidden subtext; making the subtext explicit forces them to either own the attack or retreat.", bundle: 'free' },
+        { q: "How do you respond if they accuse you of \"getting defensive\" after a Clarifying Question?", a: "\"I'm not being defensive; I'm clarifying your comment. So, is that what you were trying to say?\"", bundle: 'free' },
+        { q: "What is an example of a Clarifying Question for a snide comment about turning work in on time?", a: "\"It sounds to me like you're saying I have been the reason for past delays. Is that what you're trying to say?\"", bundle: 'free' },
+        { q: "Why should you avoid slinging insults back when someone snipes at you?", a: "Insulting back lowers your status to their level and rewards them with the fight they were looking for.", bundle: 'pro' },
+        { q: "How does a Clarifying Question shift the perceived power in a room?", a: "The person asking the questions and requiring answers holds the perceived power in the interaction.", bundle: 'pro' },
+        { q: "What mindset enables you to ask Clarifying Questions without flinching?", a: "\"I am an assertive communicator who brings dark subtext into the clear light of direct conversation.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Selective Engagement",
+      description: "",
+      cards: [
+        { q: "What is the core principle of Selective Engagement?", a: "Choosing not to address the false content of an accusation, but instead addressing the behavior or letting your work speak for itself.", bundle: 'free' },
+        { q: "What is Dan O'Connor's signature power phrase for dismissing toxic opinions?", a: "\"Frankly, your beliefs regarding [topic] are of no consequence to me.\"", bundle: 'free' },
+        { q: "Why is saying \"my work speaks for itself\" better than explaining your actions?", a: "Explaining sounds like an attempt to justify; stating your work speaks for itself projects total confidence in your track record.", bundle: 'free' },
+        { q: "How does Selective Engagement disarm workplace narcissists?", a: "Narcissists thrive on emotional reactions; refusing to engage starves them of emotional supply.", bundle: 'free' },
+        { q: "What should you say when someone accuses you of failing on an account in front of others?", a: "\"I can understand why you'd be upset if you thought that, but my reputation for results speaks for itself.\"", bundle: 'free' },
+        { q: "Why do we only defend what we believe to be vulnerable?", a: "Because if you genuinely know your position is solid, defending it implies you secretly fear you might be wrong.", bundle: 'pro' },
+        { q: "How do you use Selective Engagement when someone questions your credentials?", a: "\"My credentials and my record speak for themselves; I don't feel the need to defend them.\"", bundle: 'pro' },
+        { q: "What is the ultimate goal of Selective Engagement in toxic work environments?", a: "Deciding for yourself who you respond to, how you respond, and keeping your internal peace intact.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Power of 'What'",
+      description: "",
+      cards: [
+        { q: "Why is asking \"What\" superior to asking \"Why\" when handling rude behavior?", a: "\"Why\" invites excuses, justifications, and rumination; \"What\" forces a factual answer about behavior or setting.", bundle: 'free' },
+        { q: "What is an example of a 'What' question when someone asks an inappropriately rude question?", a: "\"What made you ask a question like that?\"", bundle: 'free' },
+        { q: "How do you use a 'What' question to address an interrupter in a meeting?", a: "\"What is the reason for the interruption right now?\"", bundle: 'free' },
+        { q: "How do you challenge the setting when someone makes a personal attack in a high-stakes meeting?", a: "\"Is this the appropriate venue for that type of question?\"", bundle: 'free' },
+        { q: "What 'What' question calls out a colleague making snide remarks about your lunch?", a: "\"What factor led you to believe I'd be interested in your opinion on my meal?\"", bundle: 'free' },
+        { q: "How does asking 'What' shift the emotional brain state of the conversation?", a: "It pulls both speakers out of emotional fight-or-flight and forces the logical brain to process facts.", bundle: 'pro' },
+        { q: "What 'What' question disarms a narcissist trying to shame you in front of your boss?", a: "\"What have I done to lead you to believe we are on that level of intimacy where you could make that comment?\"", bundle: 'pro' },
+        { q: "What is the mindset shift behind replacing 'Why' with 'What'?", a: "\"I am not seeking their emotional explanation; I am holding them accountable for objective behavior.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Benefit Statements",
+      description: "",
+      cards: [
+        { q: "What is the core definition of a Benefit Statement?", a: "Framing a request, proposal, or refusal around what the other person gains or avoids by complying.", bundle: 'free' },
+        { q: "Why do Benefit Statements dramatically increase agreement rates?", a: "People naturally care most about their own interests, time, and stress levels; showing their gain honors that reality.", bundle: 'free' },
+        { q: "What is an example of a Benefit Statement when proposing a new workflow to a busy manager?", a: "\"We should adopt this system so you can save three hours a week and not have to handle manual entry.\"", bundle: 'free' },
+        { q: "How do you use a Benefit Statement when declining an after-hours request?", a: "\"I'd like to be helpful, but I am leaving at 5:00 so I can be fully rested to deliver the presentation tomorrow.\"", bundle: 'free' },
+        { q: "What structure makes a request service-oriented rather than needy?", a: "Lead with the benefit to them, then state the specific request (\"So that you don't have to wait, could you...\").", bundle: 'free' },
+        { q: "Why does asking for things without stating benefits make you look needy at work?", a: "It presents you as someone bringing demands and burdens to others rather than offering mutual value.", bundle: 'pro' },
+        { q: "How do Benefit Statements transform a diplomatic decline into a team player move?", a: "By offering an alternative that protects quality or time for both parties rather than a flat refusal.", bundle: 'pro' },
+        { q: "What is the mindset behind Benefit Statements?", a: "\"I honor other people's priorities by showing them how my requests serve their goals.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Power Tone and Icy Stare",
+      description: "",
+      cards: [
+        { q: "How do you locate your professional \"Power Tone\"?", a: "Look down into your lap, say a phrase, and lift your chin as you finish the sentence to speak from your diaphragm.", bundle: 'free' },
+        { q: "What are the exact physical mechanics of the \"Icy Stare\"?", a: "Maintain direct eye contact with eyelids slightly covering the top of the iris, keeping your face completely calm.", bundle: 'free' },
+        { q: "Why are wide open eyes dangerous when trying to project authority?", a: "Wide open eyes signal panic, aggression, or psychosis, showing the attacker that they have gotten your goat.", bundle: 'free' },
+        { q: "What stance should your body take when facing a workplace bully head-on?", a: "Square your shoulders, turn chest-to-chest, and maintain grounded eye contact without shrinking away.", bundle: 'free' },
+        { q: "How long should you hold a silent Icy Stare before speaking or pivoting?", a: "Three seconds of silence is ideal to let the discomfort land without becoming a stare-down contest.", bundle: 'free' },
+        { q: "What percentage of communication impact is carried by non-verbal cues versus spoken words?", a: "Non-verbal cues carry over 80-90% of the emotional message and authority in high-conflict moments.", bundle: 'pro' },
+        { q: "What are \"Territorial Markers\" and how do they enhance non-verbal presence in meetings?", a: "Placing items like pens or notebooks firmly on the table and leaning forward slightly to claim physical space.", bundle: 'pro' },
+        { q: "What mindset makes the Icy Stare unshakeable?", a: "\"I am an unbothered, quality professional; your hostility cannot penetrate my calm authority.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Power-Down (Exiting Conversations)",
+      description: "",
+      cards: [
+        { q: "What is the primary function of The Power-Down strategy?", a: "Ending a looping, disrespectful, or unproductive conversation with a firm closing line and an immediate physical exit.", bundle: 'free' },
+        { q: "Why is having a pre-scripted closing line essential for exiting conversations?", a: "When emotionally charged, formulating an exit on the spot is difficult; a scripted closing line prevents awkward trailing off.", bundle: 'free' },
+        { q: "What is an example of a polished closing line for a time-sucking conversation?", a: "\"I value both of our time too much to continue this unproductive discussion. Have a good afternoon.\"", bundle: 'free' },
+        { q: "What is the \"Porky the Pig\" mistake in exiting conversations?", a: "Continuing to explain why you are leaving or saying \"that's all folks\" instead of delivering one clean closing question.", bundle: 'free' },
+        { q: "What type of question works best as a closing line to secure agreement?", a: "A closed-ended question that prompts a quick yes (e.g. \"Can I count on your support on this?\").", bundle: 'free' },
+        { q: "Why is walking away from a toxic debate an act of strength rather than defeat?", a: "It proves that you govern your own time and energy rather than allowing toxic people to trap you.", bundle: 'pro' },
+        { q: "What should you do immediately after delivering a Power-Down closing line?", a: "Turn, walk away, and return to your work without waiting for further debate or taking last-minute bait.", bundle: 'pro' },
+        { q: "What mindset shift makes The Power-Down natural?", a: "\"My dignity and time are non-negotiable; I do not stay in conversations that do not serve a purpose.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Calling Them Out** — confronting rude behavior using clarifying questions, boundaries, or 'what' prompts\n• **Taking Control** — establishing non-verbal authority with power tones or exiting unproductive talks\n• **Professional Leverage** — using benefit statements or selective engagement to handle reputation attacks\n\nSelecting the right strategy depends on whether you need to expose subtext, project authority, or frame leverage.",
+      cards: [
+        { q: "When facing a passive-aggressive dig, why choose The Clarifying Question over The Professional Boundary?", a: "Choose Clarifying Questions to force them to own hidden subtext; choose Professional Boundaries when explicit personal limits are crossed.", bundle: 'pro' },
+        { q: "What distinguishes the Taking Control collection from Professional Leverage?", a: "Taking Control focuses on physical presence and exits; Professional Leverage focuses on persuasive logic and reputation defense.", bundle: 'pro' },
+        { q: "How do you choose between Selective Engagement and Benefit Statements when attacked in a meeting?", a: "Use Selective Engagement to dismiss false accusations; use Benefit Statements to redirect the room to future solutions.", bundle: 'pro' },
+        { q: "Why is exposing subtext in Calling Them Out effective against workplace bullies?", a: "Bullies rely on plausible deniability; exposing their hidden subtext publicly destroys their leverage.", bundle: 'pro' },
+        { q: "What happens when you use The Power-Down in Taking Control?", a: "It caps an unproductive argument instantly and reclaims your time without engaging in further debate.", bundle: 'pro' },
+        { q: "What is the overarching goal of all three Collections decks in this pack?", a: "Equipping you to choose the exact level of verbal defense required for any workplace encounter.", bundle: 'pro' },
+        { q: "Why does matching the right strategy to the situation preserve your professional status?", a: "It ensures you neither overreact with emotional defensiveness nor underreact with passive submission.", bundle: 'pro' },
+        { q: "When a boss accuses you of losing a major account, why choose Selective Engagement over defending your record?", a: "Defending implies your record is vulnerable, whereas Selective Engagement validates their concern while stating your work speaks for itself.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequence combos in this pack, and the order each one runs in:\n\n• **The Public Bus-Throwing** — Empathize & Validate → Address Behavior/Take Responsibility Tactically → Question/Clarify\n• **The Micromanager Reset** — A-E-I-O-U Script → Availability Monitor → \"What will it take?\" Statement\n• **The Toxic Colleague Trap** — 3-Second Look → Clarifying Question → Icy Stare\n\nExecuting tactics in this precise order elevates your communication and de-escalates workplace attacks.",
+      cards: [
+        { q: "Why does \"The Public Bus-Throwing\" combo open with Empathize & Validate before addressing the accusation?", a: "Empathizing with their emotional state removes their expected fight response and elevates your status before addressing facts.", bundle: 'pro' },
+        { q: "In \"The Public Bus-Throwing,\" why does taking tactical responsibility precede asking a Question/Clarify?", a: "Publicly taking clean ownership demonstrates unshakeable integrity, forcing the attacker to produce concrete evidence when questioned.", bundle: 'pro' },
+        { q: "Why does \"The Micromanager Reset\" open with the A-E-I-O-U Script before introducing the Availability Monitor?", a: "Framing the system around your own productivity goals secures buy-in before enforcing a physical focus boundary.", bundle: 'pro' },
+        { q: "In \"The Micromanager Reset,\" why is the \"What will it take?\" Statement placed as the final step?", a: "Direct accountability questions are reserved for when a manager continues to breach agreed-upon communication rules.", bundle: 'pro' },
+        { q: "Why does \"The Toxic Colleague Trap\" open with a 3-Second Look before asking a Clarifying Question?", a: "A three-second silent stare creates social discomfort, stopping the attacker's momentum before you make their subtext explicit.", bundle: 'pro' },
+        { q: "In \"The Toxic Colleague Trap,\" why is the Icy Stare paired with a subject pivot at the very end?", a: "Holding a calm non-verbal stare while pivoting to a mundane topic demonstrates complete emotional control and ends the trap.", bundle: 'pro' },
+        { q: "According to Dan O'Connor, why is step order essential when responding to workplace disrespect?", a: "Executing emotional composure and boundary setting before exiting prevents defensive fight loops and preserves executive poise.", bundle: 'pro' },
+        { q: "Why is asking a Clarifying Question without first establishing calm body language ineffective?", a: "Speaking while visibly flustered makes your question sound like defensive arguing rather than an unbothered boundary check.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories in this pack:\n\n• **The Office Narcissist** — disarming boundary-pushing egoists and credit-stealers\n• **The Time Sucker** — capping long-winded ramblers and unproductive meetings\n• **Passive-Aggressive Comments** — disarming snide digs, sticky notes, and backhanded compliments\n• **High-Risk Resignations** — maintaining authority during tense career transitions\n• **The Workplace Sniper** — confronting covert attacks made in public settings\n\nMastering these categories protects your peace, focus, and career reputation.",
+      cards: [
+        { q: "What defines The Office Narcissist challenge category?", a: "Dealing with colleagues who manipulate, take credit for your work, and push personal boundaries.", bundle: 'pro' },
+        { q: "What defines The Time Sucker challenge category?", a: "Handling individuals who drain your working hours with endless monologues, unneeded meetings, and personal venting.", bundle: 'pro' },
+        { q: "What defines the Passive-Aggressive Comments challenge category?", a: "Disarming subtle jabs, snide remarks, and sarcasm designed to undermine you without open fight.", bundle: 'pro' },
+        { q: "What defines the High-Risk Resignations challenge category?", a: "Navigating hostile reactions, guilt-trips, and threats when leaving a job or supervisor.", bundle: 'pro' },
+        { q: "What defines The Workplace Sniper challenge category?", a: "Confronting covert public attacks, sarcastic jokes, and rumor-mongering made in group settings.", bundle: 'pro' },
+        { q: "Why are snipers particularly dangerous in workplace environments?", a: "Snipers use humor or subtext to attack your credibility while maintaining plausible deniability.", bundle: 'pro' },
+        { q: "What is the ultimate outcome of mastering all five Challenges categories?", a: "Becoming an unbothered, highly respected communicator who holds firm boundaries across every work scenario.", bundle: 'pro' },
+        { q: "What underlying driver causes \"Time Suckers\" to continuously interrupt your working hours with long monologues?", a: "They lack self-managed productivity structures and rely on external boundaries from colleagues to regulate their time.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindset areas you practise in this pack:\n\n• **Boundaries** — realizing that setting limits establishes professional respect rather than arrogance\n• **Directness** — understanding that calling out subtext disarms passive aggression\n• **Defensiveness** — recognizing that defending yourself exposes perceived vulnerability\n• **Asking Questions** — replacing emotional 'why' questions with factual 'what' questions\n• **Offering Benefits** — framing requests around mutual gain to secure agreement\n• **Authority** — projecting unshakeable presence through non-verbal posture and power tone\n• **Exiting** — knowing that walking away from toxic conversations preserves your dignity and time\n\nResetting these limiting beliefs empowers you to show up as a grounded, executive-level communicator.",
+      cards: [
+        { q: "What is the core posture of the Tactical Verbal Defense mindset?", a: "Viewing yourself as an unbothered, mindful communicator who sets the rules of engagement for your space.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Boundaries mindset deck?", a: "The false belief that setting firm limits makes you look cold, arrogant, or uncooperative.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Directness mindset deck?", a: "The myth that ignoring passive-aggressive subtext is safer than calling it out plainly.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Defensiveness mindset deck?", a: "The idea that you must defend against every false attack to protect your reputation.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Asking Questions mindset deck?", a: "The habit of asking 'why' instead of using 'what' questions to demand objective facts.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Offering Benefits mindset deck?", a: "The assumption that people should comply with requests without hearing what is in it for them.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Authority mindset deck?", a: "The misconception that authority requires loud arguing rather than calm non-verbal presence.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Exiting mindset deck?", a: "The urge to stay in looping arguments until you win, rather than powering down to protect your time.", bundle: 'pro' },
+      ]
+    },
   ],
   oconnor2: [
     {
@@ -10275,6 +10443,118 @@ const memorizeCollections = {
         { q: "What are \"Power-Down Phrases\"?", a: "Closing statements that firm up your position and signal you are exiting an unproductive conversation.", bundle: 'pro' },
       ]
     },
+    {
+      name: "The Diplomatic Decline",
+      description: "",
+      cards: [
+        { q: "What is the primary function of The Diplomatic Decline?", a: "Refusing requests clearly and politely based on schedule capacity without inviting negotiation or over-explaining.", bundle: 'free' },
+        { q: "What key phrase opens a classic Diplomatic Decline?", a: "\"I'd like to be helpful, but my schedule is at full capacity so I must decline.\"", bundle: 'free' },
+        { q: "Why should you avoid over-explaining the reasons when declining a request?", a: "Over-explaining provides details that others can debate, bargain with, or attempt to solve.", bundle: 'free' },
+        { q: "How does framing a refusal around \"capacity\" protect your professional status?", a: "It grounds the decision in operational limits rather than personal preference or laziness.", bundle: 'free' },
+        { q: "What should you do if someone continues to press after a Diplomatic Decline?", a: "Repeat the core refusal calmly using the Broken Record technique without altering your position.", bundle: 'free' },
+        { q: "How does The Diplomatic Decline protect work quality across core projects?", a: "By preventing workload bloat and preserving time for high-priority deliverables.", bundle: 'pro' },
+        { q: "What is the mindset shift behind using The Diplomatic Decline?", a: "\"Saying no to extra demands allows me to say yes to quality on my primary commitments.\"", bundle: 'pro' },
+        { q: "What distinguishes a diplomatic decline from a blunt refusal?", a: "A diplomatic decline maintains professional warmth while holding a firm, unnegotiable boundary.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The B-I-B Script",
+      description: "",
+      cards: [
+        { q: "What do the letters B-I-B stand for in Dan O'Connor's boundary script?", a: "Boundary, Instruction, Benefit.", bundle: 'free' },
+        { q: "How is the Boundary element formulated in a B-I-B Script?", a: "As a personal observation about your own habit (e.g. \"I've noticed I'm taking on so much I can't do my own work well\").", bundle: 'free' },
+        { q: "How is the Instruction element formulated in a B-I-B Script?", a: "As a request telling the other person how to help enforce your limit (e.g. \"If you see me saying yes to everything, please remind me\").", bundle: 'free' },
+        { q: "How is the Benefit element formulated in a B-I-B Script?", a: "As a statement highlighting what is in it for the listener when you hold your limit (e.g. \"That way, when I do say yes, you'll get my best\").", bundle: 'free' },
+        { q: "Why does the B-I-B Script frame the boundary as your own personal observation?", a: "It prevents defensiveness by owning the problem rather than accusing or blaming the other person.", bundle: 'free' },
+        { q: "How does enlisting the other person with an Instruction change the interpersonal dynamic?", a: "It turns a potential conflict into a collaborative effort where they act as an ally in protecting your capacity.", bundle: 'pro' },
+        { q: "Why is stating the Benefit to the listener essential for an effective B-I-B Script?", a: "It gives them a positive incentive to respect your boundary by showing how your focus yields higher quality for them.", bundle: 'pro' },
+        { q: "How does The B-I-B Script disarm chronic work-dumpers without starting an argument?", a: "By non-defensively stating your limit and showing how focused attention benefits future shared work.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Availability Monitor",
+      description: "",
+      cards: [
+        { q: "What is the primary mechanism of The Availability Monitor?", a: "Using clear visual or digital signals to indicate focus hours versus open availability to colleagues.", bundle: 'free' },
+        { q: "What are common examples of physical Availability Monitors?", a: "Colored door indicators, desk flags, focus signs, or updated chat status banners.", bundle: 'free' },
+        { q: "What are the three steps in implementing an Availability Monitor?", a: "Lay the groundwork (announce the system), display the signal, and enforce the signal consistently.", bundle: 'free' },
+        { q: "How do you enforce an Availability Monitor when a peer interrupts your focus block?", a: "Point to the signal and state firmly when your open window begins.", bundle: 'free' },
+        { q: "What is the final step after enforcing an Availability Monitor?", a: "Turning Toward—re-engaging warmly once your focus window opens.", bundle: 'free' },
+        { q: "Why is laying the groundwork essential before displaying an Availability Monitor?", a: "It sets team expectations in advance so the visual signal is understood as a tool for productivity.", bundle: 'pro' },
+        { q: "How does consistent enforcement of the Availability Monitor alter workplace culture?", a: "It teaches colleagues to respect focus time and plan non-urgent questions for designated open windows.", bundle: 'pro' },
+        { q: "What mindset makes the Availability Monitor successful?", a: "\"Visual boundaries eliminate ambiguity and protect my capacity for error-free deep work.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Power-Down Phrases",
+      description: "",
+      cards: [
+        { q: "What is the primary function of Power-Down Phrases?", a: "Delivering polished, definitive closing lines to end looping, lingering, or unproductive conversations.", bundle: 'free' },
+        { q: "What is an example of a Power-Down Phrase for an ending meeting?", a: "\"I value everyone's time, so I am ending our discussion here. Thank you all.\"", bundle: 'free' },
+        { q: "Why should you avoid lingering or continuing to chat after delivering a Power-Down Phrase?", a: "Lingering invites the other person to reopen debate or introduce new non-essential topics.", bundle: 'free' },
+        { q: "How do Power-Down Phrases disarm persistent interrupters?", a: "They state clearly that the interaction is concluded and redirect focus back to primary work.", bundle: 'free' },
+        { q: "What should you do immediately after speaking a Power-Down Phrase?", a: "Turn, return to your task, close your door, or exit the workspace calmly.", bundle: 'free' },
+        { q: "How do Power-Down Phrases protect your executive presence during high-conflict moments?", a: "They project composure, authority, and complete control over your own time and calendar.", bundle: 'pro' },
+        { q: "Why is a pre-scripted Power-Down Phrase superior to improvising an exit?", a: "Improvising under stress often leads to rambling, excessive apologies, or trailing off awkwardly.", bundle: 'pro' },
+        { q: "What mindset shift enables clean execution of Power-Down Phrases?", a: "\"My time is valuable, and I have the full right to end conversations that no longer serve a purpose.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Managing Your Time** — protecting your calendar and focus windows from unscheduled demands\n• **Ending the Interaction** — closing conversations cleanly without lingering or over-explaining\n• **Protecting Your Workload** — declining extra tasks, scope creep, and task-dumping diplomatically\n\nSelecting the right strategy depends on whether you are managing time, ending an interaction, or defending capacity.",
+      cards: [
+        { q: "When facing an extra assignment from a peer, why choose The Diplomatic Decline over Power-Down Phrases?", a: "Choose The Diplomatic Decline to refuse the workload based on capacity; use Power-Down Phrases to close lingering negotiation.", bundle: 'pro' },
+        { q: "What distinguishes the Managing Your Time collection from Protecting Your Workload?", a: "Managing Your Time focuses on schedule protection and focus blocks; Protecting Your Workload focuses on declining task offloading.", bundle: 'pro' },
+        { q: "Why is framing operational impact in Protecting Your Workload effective against scope creep?", a: "It demonstrates that adding extra tasks directly delays core deliverables, making refusal business-logical.", bundle: 'pro' },
+        { q: "What outcome is achieved when selecting Power-Down Phrases in Ending the Interaction?", a: "It caps unproductive chats immediately and reclaims your working hours without emotional friction.", bundle: 'pro' },
+        { q: "Why is matching the right strategy to the moment essential for professional boundary defense?", a: "It ensures you maintain professional warmth while firmly protecting your schedule and work quality.", bundle: 'pro' },
+        { q: "What is the overarching goal of all three Collections decks in this pack?", a: "Equipping you to protect your focus, calendar, and workload through polished, pre-planned verbal moves.", bundle: 'pro' },
+        { q: "According to Dan O'Connor, why should you choose The Diplomatic Decline over a detailed explanation when declining extra workload?", a: "Detailed explanations invite others to debate, negotiate, or solve your reasons, whereas a concise diplomatic decline settles the refusal based on capacity.", bundle: 'pro' },
+        { q: "How does selecting Power-Down Phrases in a lingering interaction protect professional leverage?", a: "Delivering a definitive closing line asserts control over your calendar and prevents unnecessary scope creep or endless debate.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequence combos in this pack, and the order each one runs in:\n\n• **Implementing the Monitor** — Availability Monitor (Groundwork) → Availability Monitor (Signal) → Availability Monitor (Enforcer) → Turning Toward\n• **The Firm No** — The Diplomatic Decline → Broken Record → Broken Record → Power-Down Phrases\n• **The Work-Dumper Reset** — The B-I-B Script → The Diplomatic Decline → Power-Down Phrases\n\nExecuting moves in this precise order establishes clarity and prevents scope creep.",
+      cards: [
+        { q: "What is the 4-step order of the Implementing the Monitor combo?", a: "Lay the groundwork, display the visual signal, enforce the signal firmly, then turn toward them when open.", bundle: 'pro' },
+        { q: "Why does laying the groundwork precede displaying the signal in Implementing the Monitor?", a: "Announcing the system in advance ensures team members understand the signal as a tool for productivity rather than rejection.", bundle: 'pro' },
+        { q: "Why does Turning Toward conclude the Implementing the Monitor sequence?", a: "Re-engaging warmly during open hours confirms that you are collaborative while holding firm focus boundaries.", bundle: 'pro' },
+        { q: "What is the 4-step order of The Firm No combo?", a: "Deliver a Diplomatic Decline, repeat the refusal via Broken Record twice, then execute Power-Down Phrases.", bundle: 'pro' },
+        { q: "Why is Broken Record repeated twice in The Firm No combo?", a: "Persistent boundary-pushers test initial refusals; repeating your exact position without adding excuses shuts down bargaining.", bundle: 'pro' },
+        { q: "What is the 3-step order of The Work-Dumper Reset combo?", a: "State the B-I-B script, deliver a Diplomatic Decline, then execute Power-Down Phrases.", bundle: 'pro' },
+        { q: "In \"The Work-Dumper Reset\" sequence, why does The B-I-B Script open the combo before The Diplomatic Decline?", a: "Enlisting the other person in your boundary first establishes collaborative logic and mutual benefit before delivering the specific refusal.", bundle: 'pro' },
+        { q: "Why is a Power-Down Phrase placed as the final step in workplace boundary sequences?", a: "Ending with a clear closing line prevents lingering negotiation and physically caps the interaction so both parties return to work.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories in this pack:\n\n• **The Work-Dumper** — handling colleagues who pass off their responsibilities onto you\n• **The Interrupter** — managing chronic interrupters during meetings and deep work\n• **The Boundary-Pusher** — standing firm against people who test and ignore your limits\n• **The Scope-Creeper** — resisting gradual task additions that expand your workload\n• **The Time-Bandit** — stopping unscheduled drop-ins and endless monologues\n\nMastering these categories protects your focus and professional boundaries.",
+      cards: [
+        { q: "What defines The Work-Dumper challenge category?", a: "Facing colleagues or peers who attempt to offload their assigned tasks or admin onto your schedule.", bundle: 'pro' },
+        { q: "What defines The Interrupter challenge category?", a: "Dealing with individuals who break into your deep work, speech, or focus windows without invitation.", bundle: 'pro' },
+        { q: "What defines The Boundary-Pusher challenge category?", a: "Handling persistent people who test, negotiate, or repeatedly try to bypass your established refusals.", bundle: 'pro' },
+        { q: "What defines The Scope-Creeper challenge category?", a: "Resisting unapproved task additions or contract expansions that inflate your workload without extra resources.", bundle: 'pro' },
+        { q: "What defines The Time-Bandit challenge category?", a: "Managing individuals who drain your calendar through unscheduled drop-ins, long monologues, and late-running meetings.", bundle: 'pro' },
+        { q: "Why is scope creep particularly dangerous to professional delivery?", a: "It sneaks small tasks onto your queue until core deliverables suffer from diluted focus and missed deadlines.", bundle: 'pro' },
+        { q: "What is the ultimate outcome of mastering all five Challenges categories in this pack?", a: "Gaining total control over your schedule, focus hours, and professional capacity across every workplace scenario.", bundle: 'pro' },
+        { q: "What underlying dynamic enables \"The Scope-Creeper\" to gradually inflate project deliverables beyond agreed boundaries?", a: "A lack of explicit capacity limits and the target's habit of accepting minor unbudgeted requests without re-evaluating timelines.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindset areas you practise in this pack:\n\n• **Substance Over Form** — focusing on clear communication rather than pleasing everyone\n• **We Train People How To Treat Us** — teaching colleagues to respect your time through consistent limits\n• **The Fear of Saying No** — overcoming the anxiety of disappointing others when declining requests\n• **Protecting Focus & Capacity** — treating your work hours as a finite, valuable asset\n\nResetting these limiting beliefs empowers you to defend your schedule with poise.",
+      cards: [
+        { q: "What is the core posture of the Professional Boundaries mindset?", a: "Viewing your calendar and focus hours as finite, essential assets that require disciplined protection.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Substance Over Form deck?", a: "The false belief that pleasing everyone with constant availability is more important than delivering core results.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the We Train People How To Treat Us deck?", a: "The myth that allowing small boundary breaches is harm-free, rather than training people to ignore your limits.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in The Fear of Saying No deck?", a: "The anxiety that declining extra requests makes you uncooperative, lazy, or an unsupportive team member.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Protecting Focus & Capacity deck?", a: "The assumption that your calendar should be open to anyone at all times without visual or operational limits.", bundle: 'pro' },
+        { q: "How does changing internal posture alter boundary enforcement?", a: "Internal conviction eliminates guilt and hesitation, allowing you to deliver refusals with calm professional poise.", bundle: 'pro' },
+        { q: "Why is self-management described as the foundation of executive respect?", a: "Leaders who manage their own time and capacity with discipline naturally earn the trust and respect of peers and superiors.", bundle: 'pro' },
+        { q: "How do mindset resets transform daily workplace interactions?", a: "They replace people-pleasing passivity with assertive, polished communication that protects both peace and productivity.", bundle: 'pro' },
+      ]
+    },
   ],
   oconnor3: [
     {
@@ -10289,6 +10569,118 @@ const memorizeCollections = {
         { q: "Why is \"I don't appreciate...\" a weak phrase?", a: "It has no real meaning at work. Focus on the behavior and the logical consequences instead.", bundle: 'pro' },
         { q: "What is \"illuminating the battlefield\"?", a: "Calling out the behavior for what it is (e.g., \"You're trying to embarrass me\") to reveal the true nature of the interaction.", bundle: 'pro' },
         { q: "What does Dan say about \"taking away the reward\"?", a: "Since toxic behavior is driven by the reaction it gets, taking away the reaction stops the behavior from being repeated.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Communication Hamburger",
+      description: "",
+      cards: [
+        { q: "What is the primary function of The Communication Hamburger strategy?", a: "Addressing unwanted behavior by wrapping confrontation in a structured three-layer formula.", bundle: 'free' },
+        { q: "What are the three exact layers of The Communication Hamburger formula?", a: "\"When you (action), I feel (emotion or concern), because (implication).\"", bundle: 'free' },
+        { q: "Why does The Communication Hamburger trigger less immediate defensiveness?", a: "It focuses on observable behavior and its logical impact rather than attacking the person's character.", bundle: 'free' },
+        { q: "What phrase represents the emotional/concern layer in Dan O'Connor's formula?", a: "\"...it concerns me...\"", bundle: 'free' },
+        { q: "What is the mindset behind executing The Communication Hamburger?", a: "\"I am not a victim of your behavior; I am a professional observer describing a breakdown in protocol.\"", bundle: 'free' },
+        { q: "How does stating the logical implication in the third layer disarm a manipulator?", a: "It highlights the negative business consequence of their action, shifting the focus from personal friction to operational standards.", bundle: 'pro' },
+        { q: "What type of words should be strictly avoided when describing the behavioral layer?", a: "Absolute generalizations like \"always,\" \"never,\" or \"every time.\"", bundle: 'pro' },
+        { q: "Why is naming a professional concern superior to saying \"you hurt my feelings\"?", a: "Professional concerns ground the statement in workplace standards rather than personal vulnerability.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Selective Engagement",
+      description: "",
+      cards: [
+        { q: "What is the core definition of Selective Engagement?", a: "Consciously deciding who you respond to, how you respond, and which comments deserve your energy.", bundle: 'free' },
+        { q: "Why does Selective Engagement disarm workplace narcissists?", a: "Narcissists thrive on emotional reactions; refusing to engage starves them of the emotional reward they seek.", bundle: 'free' },
+        { q: "What is the physical mechanic of the \"3-Second Look\"?", a: "Maintain direct, silent eye contact for three seconds without smiling or frowning to let the discomfort land.", bundle: 'free' },
+        { q: "What signature power phrase dismisses a manipulator's character judgment?", a: "\"Frankly, your beliefs regarding [topic] are of no consequence to me.\"", bundle: 'free' },
+        { q: "What is the foundational mindset behind Selective Engagement?", a: "\"We only defend what we believe to be vulnerable; since my worth is not vulnerable, insults require no defense.\"", bundle: 'free' },
+        { q: "How do you redirect a personal attack back to productive work using Selective Engagement?", a: "By stating: \"I'm not interested in assessing blame; I'm simply interested in correcting the problem.\"", bundle: 'pro' },
+        { q: "Why does getting defensive when attacked publicly destroy your executive credibility?", a: "Defending implies you secretly fear the accusation might be true, validating the attacker's power.", bundle: 'pro' },
+        { q: "What should you do in the sliver of time between an event and your verbal response?", a: "Take three diaphragm breaths, reflect on your personal compass, and choose a deliberate response.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Empowering Statements",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of an Empowering Statement?", a: "Offering two acceptable paths, both of which result in your boundary being respected.", bundle: 'free' },
+        { q: "Why are Empowering Statements uniquely effective against high-control narcissists?", a: "They create the \"illusion of choice,\" satisfying the narcissist's need for control while keeping your limit.", bundle: 'free' },
+        { q: "What are the three steps in delivering an Empowering Statement?", a: "1. Name the infraction, 2. Offer two choices, 3. Use a tag question for confirmation.", bundle: 'free' },
+        { q: "What is an example of a tag question used at the end of an Empowering Statement?", a: "\"That sounds reasonable, doesn't it?\"", bundle: 'free' },
+        { q: "What is the mindset shift behind using Empowering Statements?", a: "\"I am the driver of this conversation. You choose the lane, but I choose the destination.\"", bundle: 'free' },
+        { q: "What phrasing template structure delivers an Empowering Statement based on readiness?", a: "\"When you're ready to [rule], I'll be ready to [action]. Which do you prefer?\"", bundle: 'pro' },
+        { q: "How does offering two choices prevent prolonged back-and-forth debate?", a: "It restricts the conversation options strictly to two paths that both satisfy your operational boundary.", bundle: 'pro' },
+        { q: "What should you do if a narcissist refuses both choices offered in an Empowering Statement?", a: "Enforce the default boundary exit: \"Since you can't choose, we will end this conversation now.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The \"Irrelevant\" Block",
+      description: "",
+      cards: [
+        { q: "What is the core function of The \"Irrelevant\" Block strategy?", a: "Formally declaring that the relationship is strictly professional to eliminate personal intimacy as a weapon.", bundle: 'free' },
+        { q: "Why does declaring a relationship \"strictly professional\" disarm guilt trips?", a: "Personal judgments, guilt trips, and claims of betrayal become logically impossible if no personal bond exists.", bundle: 'free' },
+        { q: "What power phrase counters the manipulator's claim \"Why are you doing this to me?\"", a: "\"There is no 'you' and 'me'; ours is a strictly professional relationship.\"", bundle: 'free' },
+        { q: "How do you handle guilt trips where a peer claims \"I thought we were friends\"?", a: "\"If I've given you the impression that our relationship is at that level of familiarity, I apologize. To me, it is purely professional.\"", bundle: 'free' },
+        { q: "What is the core mindset behind The \"Irrelevant\" Block?", a: "\"You cannot hurt me personally because you do not know me personally.\"", bundle: 'free' },
+        { q: "What is the \"King Kahuna\" script for a narcissist who claims you dislike or sabotage them?", a: "\"It's not that I dislike you; for me to judge you on that level would presuppose a relationship we do not have.\"", bundle: 'pro' },
+        { q: "How does The \"Irrelevant\" Block reframe a personal attack into an operational mismatch?", a: "By showing that personal feelings have no place or relevance in professional data execution.", bundle: 'pro' },
+        { q: "Why is expressing surprise effective when opening an \"Irrelevant\" Block?", a: "It highlights that the manipulator's personal comment is an unexpected departure from professional decorum.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Disempowering the Narcissist** — selecting between Hamburger, Selective Engagement, Empowering Statements, or \"Irrelevant\" Block\n• **Stopping the Manipulation** — choosing the right boundary move when facing active guilt, yelling, or passive aggression\n• **Reclaiming Control** — using choices, detachment, or professional boundaries to hold the driver's seat\n\nSelecting the right strategy depends on whether the narcissist seeks a reaction, control, or false intimacy.",
+      cards: [
+        { q: "When a narcissist demands an emotional reaction, why choose Selective Engagement over argument?", a: "Argument rewards them with the dramatic reaction they crave, whereas Selective Engagement starves them of fuel.", bundle: 'pro' },
+        { q: "When a manipulator tries to weaponize personal friendship to get a favor, which strategy fits best?", a: "The \"Irrelevant\" Block, because it formally declares the relationship purely professional and cuts emotional leverage.", bundle: 'pro' },
+        { q: "Why choose The Communication Hamburger over an Empowering Statement when addressing omitted credit?", a: "Choose the Hamburger to state the behavioral breakdown and logical impact; choose Empowering Statements when enforcing choices.", bundle: 'pro' },
+        { q: "How do you choose between Selective Engagement and Empowering Statements when interrupted?", a: "Use Selective Engagement (3-second look) for minor digs; use Empowering Statements to offer a choice when chronic interruption occurs.", bundle: 'pro' },
+        { q: "What is the overarching goal of all three Collections decks in this pack?", a: "Equipping you to choose the exact level of disempowering response required for any narcissistic encounter.", bundle: 'pro' },
+        { q: "Why does matching the right strategy to the situation maintain executive status?", a: "It demonstrates that you respond with calibrated, professional poise rather than emotional reactivity.", bundle: 'pro' },
+        { q: "What single question guides your strategy choice in Collections?", a: "\"What is the narcissist seeking right now—a reaction, control, or false personal intimacy?\"", bundle: 'pro' },
+        { q: "When a toxic colleague attacks your credibility in front of leadership, why choose The \"Irrelevant\" Block over The Communication Hamburger?", a: "Because The \"Irrelevant\" Block immediately declares that personal opinions have no bearing on professional results, whereas The Communication Hamburger focuses on addressing specific behavioral infractions.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequence combos in this pack, and the order each one runs in:\n\n• **Handling the Office Sniper** — Selective Engagement → Empowering Statements → Selective Engagement\n• **The \"Professional\" Shield** — The Communication Hamburger → The \"Irrelevant\" Block → Empowering Statements\n• **Neutralizing Personal Attacks** — The \"Irrelevant\" Block → Empowering Statements → Selective Engagement\n\nExecuting moves in order ensures boundary clarity and emotional detachment before exiting.",
+      cards: [
+        { q: "What is the 3-step order of the Handling the Office Sniper combo?", a: "Selective Engagement (3-second look), Empowering Statements (offer a choice), then Selective Engagement (disengage).", bundle: 'pro' },
+        { q: "Why does Selective Engagement open the Handling the Office Sniper sequence?", a: "Holding a silent 3-second look lets the discomfort land in the room before delivering a verbal choice.", bundle: 'pro' },
+        { q: "What is the 3-step order of The \"Professional\" Shield combo?", a: "The Communication Hamburger, then The \"Irrelevant\" Block, then Empowering Statements.", bundle: 'pro' },
+        { q: "Why does The Communication Hamburger precede The \"Irrelevant\" Block in The \"Professional\" Shield?", a: "Stating the behavioral infraction first sets the stage before cutting off claims of personal intimacy.", bundle: 'pro' },
+        { q: "What is the 3-step order of the Neutralizing Personal Attacks combo?", a: "The \"Irrelevant\" Block, then Empowering Statements, then Selective Engagement.", bundle: 'pro' },
+        { q: "Why does The \"Irrelevant\" Block open the Neutralizing Personal Attacks combo?", a: "Establishing that personal opinions are irrelevant disarms the insult before offering an operational choice.", bundle: 'pro' },
+        { q: "Why is sequence order vital when dealing with high-conflict narcissists?", a: "Executing moves in logical order re-establishes authority and boundaries before disengaging cleanly.", bundle: 'pro' },
+        { q: "In \"The 'Professional' Shield\" combo, why must The Communication Hamburger precede The \"Irrelevant\" Block?", a: "Stating the specific behavioral infraction and its operational impact first establishes factual ground before cutting off claims of personal intimacy.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories in this pack:\n\n• **The Bait & Switch** — standing firm when a narcissist uses guilt or false claims\n• **The Credit Stealer** — confronting individuals who claim your accomplishments\n• **The Public Sniping** — neutralizing sarcastic jabs and insults made in front of peers\n• **The Victim Role** — resisting emotional blackmail and exaggerated martyrdom\n• **The Interrogation** — stopping rapid-fire intrusive questioning\n\nMastering these categories protects your dignity and peace against high-conflict dynamics.",
+      cards: [
+        { q: "What defines The Bait & Switch challenge category?", a: "Facing manipulators who use false guilt, twisted narratives, or shame to force you into self-defense.", bundle: 'pro' },
+        { q: "What defines The Credit Stealer challenge category?", a: "Handling peers or supervisors who claim your work, minimize your role, or hijack shared credit.", bundle: 'pro' },
+        { q: "What defines The Public Sniping challenge category?", a: "Neutralizing sarcastic digs, backhanded compliments, and insults delivered in front of groups.", bundle: 'pro' },
+        { q: "What defines The Victim Role challenge category?", a: "Resisting emotional blackmail, weeping, and exaggerated claims that your limits are \"hurting\" them.", bundle: 'pro' },
+        { q: "What defines The Interrogation challenge category?", a: "Stopping rapid-fire, intrusive, or nosy questioning designed to make you feel on trial.", bundle: 'pro' },
+        { q: "Why do narcissists frequently adopt The Victim Role when confronted with limits?", a: "To exploit your empathy and manipulate you into abandoning your boundary out of guilt.", bundle: 'pro' },
+        { q: "What is the ultimate outcome of mastering all five Challenges categories?", a: "Becoming an unbothered, highly respected communicator who holds non-negotiable boundaries.", bundle: 'pro' },
+        { q: "What psychological mechanism drives a narcissist to adopt \"The Victim Role\" when confronted with a firm boundary?", a: "Exaggerated martyrdom and weeping are used to exploit your empathy, trigger false guilt, and manipulate you into abandoning your limit.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindset areas you practise in this pack:\n\n• **Substance Over Form** — shifting from protecting a manipulator to honoring yourself\n• **Setting Limits** — realizing that firm boundaries establish professional respect\n• **External Validation** — overcoming the need for personal approval from toxic people\n• **Taking the Bait** — separating self-worth from insults to stop emotional reactivity\n\nResetting these limiting beliefs empowers you to remain the unbothered driver of your conversations.",
+      cards: [
+        { q: "What is the core posture of the Disempowering Narcissists mindset?", a: "Viewing yourself as an unbothered, mindful communicator who sets the rules of engagement.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Substance Over Form deck?", a: "The false belief that you must over-explain your boundaries or win arguments to prove your worth.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Setting Limits deck?", a: "The anxiety that setting strict boundaries is mean, aggressive, or causes unnecessary conflict.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the External Validation deck?", a: "The myth that you need personal approval or warmth from toxic colleagues to be successful.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Taking the Bait deck?", a: "The urge to react emotionally and defend your character whenever a narcissist throws an insult.", bundle: 'pro' },
+        { q: "How does internal posture alter boundary enforcement?", a: "Internal certainty eliminates guilt and hesitation, allowing you to deliver refusals with calm poise.", bundle: 'pro' },
+        { q: "Why is emotional detachment described as the ultimate power over a narcissist?", a: "Because disengaging emotionally starves the narcissist of fuel and demonstrates complete self-possession.", bundle: 'pro' },
+        { q: "How do mindset resets transform daily workplace interactions?", a: "They replace defensive fighting with calm authority, making you an unshakeable presence.", bundle: 'pro' },
       ]
     },
   ],
@@ -10308,6 +10700,118 @@ const memorizeCollections = {
         { q: "What is the \"Number One\" rule for maintaining power?", a: "We only defend against what we believe to be vulnerable. If you are sure of yourself, you don't defend.", bundle: 'pro' },
       ]
     },
+    {
+      name: "The LBNT System",
+      description: "",
+      cards: [
+        { q: "What do the letters LBNT stand for in Dan O'Connor's feedback framework?", a: "Liked Best / Next Time.", bundle: 'free' },
+        { q: "Why is the LBNT system superior to traditional \"constructive criticism\"?", a: "It focuses on future performance rather than past failures, eliminating defensive biochemical churn.", bundle: 'free' },
+        { q: "What are the two core steps in delivering an LBNT feedback statement?", a: "1. State a specific positive observation (Liked Best), 2. Give a specific instruction for the future (Next Time).", bundle: 'free' },
+        { q: "What phrase structure is used to deliver the \"Next Time\" component of LBNT?", a: "\"Next time, if you [action], it will be [benefit].\"", bundle: 'free' },
+        { q: "Why should you avoid vague compliments like \"great job\" when delivering feedback?", a: "Vague praise lacks coaching value; naming specific observations makes feedback believable and actionable.", bundle: 'free' },
+        { q: "How does LBNT feedback transform the manager's role in the employee's mind?", a: "It positions the manager as a supportive coach driving future growth rather than a judge assessing past blame.", bundle: 'pro' },
+        { q: "What is an example of an LBNT statement for improving a presentation deck?", a: "\"I liked best the clarity of your figures. Next time, if you include bullet points for key takeaways, it will be even more persuasive.\"", bundle: 'pro' },
+        { q: "Why is focusing on future performance effective when correcting repeated errors?", a: "The past cannot be changed, so directing energy toward future execution provides an immediate, constructive path forward.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "D-A-R-T for Accountability",
+      description: "",
+      cards: [
+        { q: "What do the letters D-A-R-T stand for in Dan O'Connor's boundary framework?", a: "Describe, Address, Redirect, Tag Question.", bundle: 'free' },
+        { q: "What is the purpose of the \"Describe\" step in the D-A-R-T framework?", a: "Stating your helpful or primary intent (e.g., \"I'm here to find solutions so this doesn't happen again\").", bundle: 'free' },
+        { q: "What occurs during the \"Address\" step of a D-A-R-T statement?", a: "Stating how the unwanted behavior distracts from or conflicts with the primary goal.", bundle: 'free' },
+        { q: "What is the function of a \"Tag Question\" at the end of a D-A-R-T script?", a: "Eliciting a quick yes/no confirmation to secure explicit buy-in for the requested change.", bundle: 'free' },
+        { q: "What is an example of a Tag Question used in D-A-R-T?", a: "\"That sounds reasonable, doesn't it?\" or \"Can I count on your support?\"", bundle: 'free' },
+        { q: "Why does D-A-R-T reduce emotional defensiveness during behavioral corrections?", a: "It ties the correction directly to a shared operational goal rather than attacking the person's character.", bundle: 'pro' },
+        { q: "What is an example of a complete D-A-R-T statement for resetting a micromanaging boss?", a: "\"I'm here to deliver this report perfectly. However, hourly check-ins make it harder to focus. Let's wait for the end-of-day update. Reasonable, isn't it?\"", bundle: 'pro' },
+        { q: "How does D-A-R-T maintain executive authority during workplace conflict?", a: "It keeps the speaker in the driver's seat by establishing intent, pointing out distractions, and requiring buy-in.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "\"I\" Instead of \"You\"",
+      description: "",
+      cards: [
+        { q: "Why is leading with \"I\" language superior to leading with \"You\" language in conflict?", a: "\"You\" language triggers an immediate internal defense, whereas \"I\" language slows down self-talk and shares information.", bundle: 'free' },
+        { q: "What are the three steps in formulating a complete \"I\" statement?", a: "1. The 'I' Lead (observation/feeling), 2. The Link (professional standard), 3. The Question (tag for agreement).", bundle: 'free' },
+        { q: "What phrase structure opens a classic \"I\" statement for workplace boundaries?", a: "\"I find it uncomfortable when...\" or \"I'm concerned when...\"", bundle: 'free' },
+        { q: "Why should you avoid using conclusions like \"when you humiliate me\" in \"I\" statements?", a: "Conclusions assign motives; stating objective observable facts prevents defensive arguments.", bundle: 'free' },
+        { q: "What is an example of linking an \"I\" statement to a professional standard?", a: "\"...because I value our professional relationship and want to maintain high team standards.\"", bundle: 'free' },
+        { q: "How does using \"I\" language protect your professional reputation in front of peers?", a: "It presents you as an assertive, non-confrontational communicator who lays down clear ground rules with dignity.", bundle: 'pro' },
+        { q: "What mindset shift supports replacing \"You\" with \"I\"?", a: "\"I am the cause, not the effect; I am responsible for setting the ground rules in all my relationships.\"", bundle: 'pro' },
+        { q: "What tag question completes an \"I\" statement regarding personal comments at work?", a: "\"...I think we should keep our interaction strictly professional. That wouldn't be a problem, would it?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Lead-in & Closing Lines",
+      description: "",
+      cards: [
+        { q: "What is the primary function of a Lead-in Line in professional communication?", a: "Setting a powerful, polished tone and capturing attention before delivering the core message.", bundle: 'free' },
+        { q: "What are the three elements of an effective Lead-in Line?", a: "1. Use the person's name, 2. Use \"I\" language, 3. Include a slight pause.", bundle: 'free' },
+        { q: "What is a \"Porky the Pig\" mistake in closing a conversation?", a: "Trailing off awkwardly at the end of a message with phrases like \"So... yeah, that's about it.\"", bundle: 'free' },
+        { q: "What type of question makes the most effective Closing Line?", a: "A closed-ended question that prompts a quick one-word confirmation (yes or no).", bundle: 'free' },
+        { q: "What are examples of effective Closing Line questions?", a: "\"Can I count on your support?\", \"Are we on the same page?\", or \"Does that sound doable for you?\"", bundle: 'free' },
+        { q: "Why are pre-scripted Lead-in and Closing Lines critical during high-stress talks?", a: "Stress draws communicators out of the language brain; scripted openers and closers ensure control and prevent trailing off.", bundle: 'pro' },
+        { q: "What should you do immediately after delivering a Closing Line and receiving agreement?", a: "Deliver a polite wrap-up (\"Great, have a pleasant afternoon\") and physically exit or return to work.", bundle: 'pro' },
+        { q: "What mindset shift enables clean execution of Lead-in and Closing Lines?", a: "\"I am never bound to linger in conversations; I signal the beginning and the end with executive authority.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Influential Leadership** — selecting moves that elevate your status and guide team performance\n• **Guiding Performance** — choosing between LBNT feedback, \"I\" statements, and set lead-ins to improve output\n• **Holding Accountability** — applying D-A-R-T scripts or \"I\" statements to enforce workplace standards\n\nSelecting the right strategy depends on whether you are correcting performance, setting boundaries, or guiding growth.",
+      cards: [
+        { q: "When coaching an employee's report layout, why choose The LBNT System over D-A-R-T?", a: "Choose LBNT to guide future work performance constructively; choose D-A-R-T when active rule breaches or distractions require a boundary.", bundle: 'pro' },
+        { q: "What distinguishes the Guiding Performance collection from Holding Accountability?", a: "Guiding Performance focuses on coaching output and growth; Holding Accountability focuses on enforcing workplace standards and protocols.", bundle: 'pro' },
+        { q: "How do you choose between an \"I\" statement and a D-A-R-T script when a peer interrupts?", a: "Use an \"I\" statement to express personal observation; use D-A-R-T to link the interruption to project intent and get tag buy-in.", bundle: 'pro' },
+        { q: "Why is framing operational benefit in Guiding Performance effective for team buy-in?", a: "Showing how a specific adjustment improves clarity or saves time gives team members a positive incentive to comply.", bundle: 'pro' },
+        { q: "What outcome is achieved when selecting Lead-in & Closing Lines in Holding Accountability?", a: "It opens difficult talks with authority and caps negotiations cleanly without trailing off or inviting debate.", bundle: 'pro' },
+        { q: "Why is matching the right strategy to the moment essential for executive presence?", a: "It demonstrates calibrated leadership poise rather than emotional overreaction or passive conflict avoidance.", bundle: 'pro' },
+        { q: "What single question guides your strategy choice across the Collections decks in this pack?", a: "\"Am I coaching a performance improvement, stating a personal boundary, or resetting an operational rule breach?\"", bundle: 'pro' },
+        { q: "When an employee presents a report with strong analysis but a messy layout, why choose The LBNT System over D-A-R-T for Accountability?", a: "Choose The LBNT System to coach future performance improvements; choose D-A-R-T when an active rule breach or boundary violation requires immediate operational realignment.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequence combos in this pack, and the order each one runs in:\n\n• **The Forward-Focused Feedback** — Lead-in Lines → LBNT (Liked Best) → LBNT (Next Time) → Lead-in & Closing Lines\n• **Correcting a Rule-Breaker** — \"I\" Instead of \"You\" → D-A-R-T (Describe & Address) → D-A-R-T (Redirect & Tag)\n• **The Executive Reset** — Lead-in & Closing Lines → \"I\" Instead of \"You\" → D-A-R-T for Accountability\n\nExecuting moves in logical order establishes rapport and clarity before delivering corrections.",
+      cards: [
+        { q: "What is the 4-step order of The Forward-Focused Feedback combo?", a: "Lead-in Lines → LBNT (Liked Best) → LBNT (Next Time) → Lead-in & Closing Lines.", bundle: 'pro' },
+        { q: "Why does a Lead-in Line open The Forward-Focused Feedback sequence?", a: "Using their name and \"I\" language focuses their attention and sets a supportive tone before delivering performance feedback.", bundle: 'pro' },
+        { q: "What is the 3-step order of the Correcting a Rule-Breaker combo?", a: "\"I\" Instead of \"You\" → D-A-R-T (Describe & Address) → D-A-R-T (Redirect & Tag).", bundle: 'pro' },
+        { q: "Why does an \"I\" statement precede the D-A-R-T script in Correcting a Rule-Breaker?", a: "Stating an unassailable personal observation first prevents immediate fight loops before linking the breach to operational goals.", bundle: 'pro' },
+        { q: "What is the 3-step order of The Executive Reset combo?", a: "Lead-in & Closing Lines → \"I\" Instead of \"You\" → D-A-R-T for Accountability.", bundle: 'pro' },
+        { q: "Why does the D-A-R-T script conclude The Executive Reset combo?", a: "Linking intent, distraction, and a redirecting tag question secures explicit agreement and closes the boundary reset cleanly.", bundle: 'pro' },
+        { q: "Why is sequence order vital when delivering difficult workplace corrections?", a: "Executing moves in logical order establishes rapport, states standards, and secures buy-in without triggering defensiveness.", bundle: 'pro' },
+        { q: "In \"The Executive Reset\" combo, why does \"I\" Instead of \"You\" precede D-A-R-T for Accountability?", a: "Stating an objective personal observation using \"I\" language first lowers defensive self-talk before linking the distraction to project goals and securing tag buy-in.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories in this pack:\n\n• **The Feedback Trap** — avoiding defensive arguments when giving or receiving criticism\n• **The Rule-Breaker** — holding colleagues accountable when workplace agreements are violated\n• **The Micromanaging Superior** — resetting boundaries with over-supervising bosses\n• **The Defensive Subordinate** — guiding team members who make excuses or react emotionally\n• **The Derailing Interrupter** — maintaining control when meeting participants disrupt the flow\n\nMastering these categories establishes your reputation as a polished, influential leader.",
+      cards: [
+        { q: "What defines The Feedback Trap challenge category?", a: "Facing situations where you are tempted to deliver blame-filled criticism or respond defensively to attacks.", bundle: 'pro' },
+        { q: "What defines The Rule-Breaker challenge category?", a: "Handling team members or peers who ignore established protocols, miss deadlines, or bypass workplace agreements.", bundle: 'pro' },
+        { q: "What defines The Micromanaging Superior challenge category?", a: "Setting boundaries with supervisors who hover, over-inspect routine tasks, or interrupt deep focus windows.", bundle: 'pro' },
+        { q: "What defines The Defensive Subordinate challenge category?", a: "Guiding employees who respond to feedback with excuses, blame-shifting, or emotional outbursts.", bundle: 'pro' },
+        { q: "What defines The Derailing Interrupter challenge category?", a: "Managing colleagues who interrupt presentations, hijack meeting agendas, or make off-topic remarks.", bundle: 'pro' },
+        { q: "Why is micromanagement particularly damaging to professional output?", a: "Constant hovering fragments attention, creates operational bottlenecks, and erodes worker autonomy.", bundle: 'pro' },
+        { q: "What is the ultimate outcome of mastering all five Challenges categories in this pack?", a: "Becoming an unbothered, highly respected leader who commands executive authority and drives continuous performance.", bundle: 'pro' },
+        { q: "What underlying driver causes \"The Micromanaging Superior\" to hover and over-inspect routine employee tasks?", a: "Supervisor anxiety and past operational breakdowns, which prompt the manager to seek control through continuous monitoring rather than outcome-based check-ins.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindset areas you practise in this pack:\n\n• **Influential Leadership** — shifting from reactive emotional habits to intentional leadership presence\n• **Delivering Criticism** — realizing that future-focused feedback coaches growth rather than assessing blame\n• **Holding Accountability** — understanding that firm boundaries command executive respect\n• **Direct Communication** — recognizing that direct, structured language builds trust and clarity\n\nResetting these limiting beliefs empowers you to guide others with unshakeable authority.",
+      cards: [
+        { q: "What is the core posture of the Influential Leadership mindset?", a: "Viewing yourself as the cause rather than the effect, guiding conversations with intentional leadership presence.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Delivering Criticism mindset deck?", a: "The false belief that giving critical feedback causes resentment, rather than coaching future capability.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Holding Accountability mindset deck?", a: "The fear that confronting rule-breakers creates hostility, rather than establishing fair team standards.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Direct Communication mindset deck?", a: "The assumption that structured verbal patterns sound robotic, rather than projecting calm authority.", bundle: 'pro' },
+        { q: "How does shifting from past blame to future growth alter feedback reception?", a: "Removing past judgment eliminates defensive biochemical churn, allowing employees to focus on next-time execution.", bundle: 'pro' },
+        { q: "Why is self-management described as the foundation of leadership respect?", a: "Leaders who govern their own emotions and boundaries with discipline naturally earn the trust of peers and superiors.", bundle: 'pro' },
+        { q: "How do mindset resets transform daily workplace leadership?", a: "They replace people-pleasing passivity and emotional outbursts with polished, unassailable communication.", bundle: 'pro' },
+        { q: "What single principle summarizes the Dan O'Connor leadership philosophy?", a: "Professional communication is a structured skill; setting clear rules of engagement commands executive respect.", bundle: 'pro' },
+      ]
+    },
   ],
   oconnor5: [
     {
@@ -10323,6 +10827,118 @@ const memorizeCollections = {
         { q: "What biochemical changes happen during a \"Power Pose\"?", a: "Testosterone levels go up (increasing confidence) and cortisol levels go down (decreasing stress).", bundle: 'pro' },
         { q: "Why should you avoid looking UP when breaking eye contact?", a: "Because looking down is a natural cognitive break; looking up can appear dismissive or confused.", bundle: 'pro' },
         { q: "What is the \"Porky the Pig\" mistake in executive presence?", a: "Trailing off at the end of a message (e.g., \"So... yeah\"); use a closing question instead.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Steeple",
+      description: "",
+      cards: [
+        { q: "What is the primary physical mechanic of The Steeple strategy?", a: "Bringing your fingertips together in the shape of a steeple while keeping your palms separated.", bundle: 'free' },
+        { q: "Why is The Steeple an effective non-verbal power move?", a: "It subconsciously communicates to listeners that you possess complete confidence and conviction in your message.", bundle: 'free' },
+        { q: "How long should you hold The Steeple gesture during a talk?", a: "No more than four seconds at a time to prevent the gesture from appearing overpowering or arrogant.", bundle: 'free' },
+        { q: "Where should your forearms be positioned when executing a table steeple?", a: "Planted heavily and firmly on the table surface.", bundle: 'free' },
+        { q: "What physical habit does The Steeple replace when you feel nervous?", a: "Low-status fidgeting, pen tapping, or neck scratching.", bundle: 'free' },
+        { q: "How does pairing The Steeple with a forward lean alter perception?", a: "It signals that you are an active, powerful listener who is fully engaged in the exchange.", bundle: 'pro' },
+        { q: "What internal mindset supports the execution of The Steeple?", a: "\"My physical presence confirms the strength of the words I am delivering.\"", bundle: 'pro' },
+        { q: "Why should you return your hands to an interlocked position after steepling?", a: "Restricting the gesture to key points preserves its visual impact and authority.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Look Away",
+      description: "",
+      cards: [
+        { q: "What is the \"7-second rule\" for gaze management?", a: "Breaking eye contact every seven to ten seconds to prevent your gaze from feeling aggressive or intense.", bundle: 'free' },
+        { q: "What threat response is triggered if you hold unbroken eye contact past ten seconds?", a: "The listener's brain interprets continuous staring as a sign of aggression, dominance, or psychosis.", bundle: 'free' },
+        { q: "What is the physical mechanic of the \"Icy Stare\"?", a: "Relaxing your eyelids so they barely cover the top of your iris, signaling cool focus without panic.", bundle: 'free' },
+        { q: "Directionally, where should you look when breaking eye contact during a talk?", a: "Downward toward your notes or table, rather than upward at the ceiling.", bundle: 'free' },
+        { q: "Why is looking upward when breaking eye contact counterproductive?", a: "Looking up can make you appear dismissive, flustered, or confused.", bundle: 'free' },
+        { q: "How does the \"3-second look\" disarm passive-aggressive interrupters?", a: "Holding silent eye contact for three seconds creates social discomfort, letting them \"cook their own goose.\"", bundle: 'pro' },
+        { q: "How do you manage gaze during virtual or video conference calls?", a: "Look directly into the camera lens for key points, then glance down at your screen data every seven seconds.", bundle: 'pro' },
+        { q: "What mindset shift enables comfortable gaze management under pressure?", a: "\"I use eye contact to connect with people, not to conquer or stare them down.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Territorial Markers",
+      description: "",
+      cards: [
+        { q: "What is the primary function of Territorial Markers?", a: "Using your posture and physical objects to claim space and signal that you belong in the room.", bundle: 'free' },
+        { q: "What are common examples of physical Territorial Markers?", a: "Notebooks, pens, water glasses, laptop placement, or moving your chair closer to the table.", bundle: 'free' },
+        { q: "What low-status physical behavior do people exhibit when they feel they don't belong?", a: "Shrinking their posture, clutching bags on their lap, or trying to occupy as little space as possible.", bundle: 'free' },
+        { q: "What is the \"Chair Move\" in executive presence?", a: "Adjusting and moving your chair firmly up to the table rather than remaining seated two yards away.", bundle: 'free' },
+        { q: "Where should you place personal items like coats or bags when sitting in a lobby?", a: "On the seat or table beside you, never on your lap or slumped on the floor under your chair.", bundle: 'free' },
+        { q: "Why is placing items under your chair considered a low-status signal?", a: "Bending over under a chair signals that you feel unentitled to space and are hiding your belongings.", bundle: 'pro' },
+        { q: "What is the \"Big X\" power pose?", a: "Standing with feet shoulder-width apart and arms outstretched in an X shape for two minutes to adjust biochemistry.", bundle: 'pro' },
+        { q: "What biochemical changes occur during a two-minute power pose?", a: "Testosterone levels rise (increasing confidence) and cortisol levels drop (reducing stress).", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Vocal Power Tone",
+      description: "",
+      cards: [
+        { q: "What is the primary mechanism of Vocal Power Tone?", a: "Speaking from the diaphragm at a resonant volume so no listener ever has to ask you to repeat yourself.", bundle: 'free' },
+        { q: "What simple exercise helps you locate your deep power tone pitch?", a: "Saying \"mm-hmm\" and feeling the vibration at the bottom of your throat.", bundle: 'free' },
+        { q: "What is the \"20-foot rule\" for vocal projection?", a: "Speaking at a volume that allows someone twenty feet away to hear you clearly without you feeling like you are shouting.", bundle: 'free' },
+        { q: "Why should you generally decline the offer of a microphone in a medium room?", a: "Relying on a mic forces you to lower your natural volume, altering the energetic dynamic of your message.", bundle: 'free' },
+        { q: "How is soft talking subconsciously interpreted by listeners?", a: "As a sign of timidity, uncertainty, or that the speaker does not believe their message is worthy of being heard.", bundle: 'free' },
+        { q: "How do you restore your vocal tone when feeling nervous or high-pitched?", a: "Pause, perform a four-second box breath, and hum 'mm-hmm' internally to drop your pitch.", bundle: 'pro' },
+        { q: "Why do listeners perceive loud, clear speakers as more credible leaders?", a: "Clear volume signals unshakeable conviction and eliminates the friction of listener strain.", bundle: 'pro' },
+        { q: "What mindset supports speaking with full vocal volume in everyday work?", a: "\"My message is worthy of being heard, and I will not force my listener to do the work of hearing me.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Projecting Presence** — selecting non-verbal power moves to project calm authority\n• **Commanding the Room** — selecting physical and vocal moves to lead group settings\n• **Handling Pressure** — maintaining composure and status when challenged\n\nSelecting the right strategy depends on whether you are entering a room, leading a group, or standing under pressure.",
+      cards: [
+        { q: "When entering a board meeting, why choose Territorial Markers over Vocal Power Tone first?", a: "Choose Territorial Markers first to claim your physical space and ground yourself before opening your mouth to speak.", bundle: 'pro' },
+        { q: "When an interrupter tries to cut you off in a meeting, which strategy takes back the floor?", a: "Vocal Power Tone, by increasing volume from the diaphragm to state \"I'm speaking\" without emotional anger.", bundle: 'pro' },
+        { q: "How do you choose between The Steeple and Territorial Markers during a presentation?", a: "Use Territorial Markers to set your stance at the stage or table; use The Steeple to visually anchor key takeaway points.", bundle: 'pro' },
+        { q: "Why is matching the right non-verbal move to the situation essential for executive status?", a: "It communicates calm self-possession and high status without resorting to aggressive verbal fighting.", bundle: 'pro' },
+        { q: "What outcome is achieved when selecting The Look Away during an aggressive stare-down?", a: "It breaks the dominance contest on your terms, showing you are comfortable with power without playing childish games.", bundle: 'pro' },
+        { q: "Why does framing physical presence in Collections elevate professional reputation?", a: "It replaces nervous, low-status habits with polished physical cues that command automatic respect from peers.", bundle: 'pro' },
+        { q: "What single question guides your strategy choice across the Collections decks in this pack?", a: "\"What non-verbal boundary or signal is required right now—claiming space, anchoring points, or managing gaze?\"", bundle: 'pro' },
+        { q: "When answering a high-pressure question, why choose The Steeple over The Look Away as your primary gesture?", a: "The Steeple physically anchors your hands to project non-verbal conviction in your answer, whereas The Look Away is a gaze-management technique used to prevent eye contact from becoming an aggressive stare-down.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequence combos in this pack, and the order each one runs in:\n\n• **The Executive Entry** — Territorial Markers → Vocal Power Tone → The Steeple → The Look Away\n• **Handling a \"Stare Down\"** — The Look Away → Selective Engagement → The Look Away\n• **Neutralizing Intimidation** — Vocal Power Tone → Territorial Markers → The Steeple\n\nExecuting physical moves in this precise order builds unshakeable executive presence.",
+      cards: [
+        { q: "What is the 4-step order of The Executive Entry combo?", a: "Territorial Markers (claim space) → Vocal Power Tone (greet room) → The Steeple (anchor point) → The Look Away (manage gaze).", bundle: 'pro' },
+        { q: "Why does Territorial Markers open The Executive Entry sequence before speaking?", a: "Claiming physical ground and settling your environment grounds your posture before you deliver your opening line.", bundle: 'pro' },
+        { q: "What is the 3-step order of the Handling a \"Stare Down\" combo?", a: "The Look Away (Icy Stare) → Selective Engagement (3-second look) → The Look Away (break on your terms).", bundle: 'pro' },
+        { q: "Why does the 3-second look sit in the middle of the Handling a \"Stare Down\" sequence?", a: "Holding three seconds of unbothered silence forces the challenger to feel the awkwardness of their own aggression.", bundle: 'pro' },
+        { q: "What is the 3-step order of the Neutralizing Intimidation combo?", a: "Vocal Power Tone → Territorial Markers → The Steeple.", bundle: 'pro' },
+        { q: "Why does Vocal Power Tone open the Neutralizing Intimidation combo when confronted loudly?", a: "Matching vocal projection immediately asserts equal authority before grounding your physical stance with markers and steeples.", bundle: 'pro' },
+        { q: "Why is sequence order vital when executing non-verbal communication moves?", a: "Executing physical moves in logical sequence establishes composure and territory before delivering core conclusions.", bundle: 'pro' },
+        { q: "In \"The Executive Entry\" combo, why does Vocal Power Tone immediately follow Territorial Markers before delivering your core points?", a: "Claiming your physical space first grounds your posture, so that delivering your vocal power tone captures the room's auditory attention before you introduce key takeaway points.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories in this pack:\n\n• **Confidence Killers** — overriding internal nerves and low-status physical habits\n• **The High-Stakes Meeting** — maintaining non-verbal authority during critical reviews\n• **The Dominance Game** — neutralizing subtle territory grabs and stare-downs\n• **The Public Speech** — projecting presence and vocal power to large audiences\n• **The Unannounced Audit** — holding composure when put on the spot unexpectedly\n\nMastering these categories establishes your reputation as a high-status leader.",
+      cards: [
+        { q: "What defines the Confidence Killers challenge category?", a: "Facing internal nerves or high-pressure triggers that normally prompt low-status habits like fidgeting or whispering.", bundle: 'pro' },
+        { q: "What defines The High-Stakes Meeting challenge category?", a: "Maintaining non-verbal poise and authority when presenting to board members, executives, or critical clients.", bundle: 'pro' },
+        { q: "What defines The Dominance Game challenge category?", a: "Countering subtle physical aggression like space crowding, stare-downs, or loud interrupters.", bundle: 'pro' },
+        { q: "What defines The Public Speech challenge category?", a: "Projecting physical presence, stage command, and vocal volume when speaking to large auditoriums.", bundle: 'pro' },
+        { q: "What defines The Unannounced Audit challenge category?", a: "Holding complete physical composure and unbothered control when surprised by sudden inspections or reviews.", bundle: 'pro' },
+        { q: "Why do high-pressure situations frequently trigger neck scratching and wide eyes?", a: "Adrenaline flooding the right brain draws you into panic mode, triggering subconscious self-soothing or fight responses.", bundle: 'pro' },
+        { q: "What is the ultimate outcome of mastering all five Challenges categories in this pack?", a: "Gaining total command over your non-verbal communication, posture, and vocal presence in any high-stakes scenario.", bundle: 'pro' },
+        { q: "What physical and psychological reaction drives the low-status habits seen in \"Confidence Killers\"?", a: "Sudden surges of adrenaline draw the brain into panic mode, triggering subconscious self-soothing gestures like neck scratching, pen fidgeting, and quiet whispering.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindset areas you practise in this pack:\n\n• **Executive Presence** — shifting internal posture from worker bee to confident leader\n• **Claiming Your Space** — recognizing that taking up physical space is an act of dignity\n• **Vocal Authority** — realizing that speaking clearly and loudly serves the listener\n• **Managing Eye Contact** — understanding that comfortable gaze management builds trust\n\nResetting these limiting beliefs allows you to project authentic presence.",
+      cards: [
+        { q: "What is the core posture of the Executive Presence mindset?", a: "Viewing yourself as a person of consequence who belongs in the room and brings dignity to every talk.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Claiming Your Space deck?", a: "The myth that setting your belongings on the table or moving your chair is arrogant, rather than an act of belonging.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Vocal Authority deck?", a: "The fear that speaking loudly is pushy or rude, rather than a courtesy that makes hearing effortless for listeners.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Managing Eye Contact deck?", a: "The false assumption that confident leaders maintain unbroken, continuous eye contact without looking away.", bundle: 'pro' },
+        { q: "How does changing internal posture alter non-verbal execution?", a: "Internal conviction eliminates physical fidgeting, allowing posture, gaze, and volume to project natural authority.", bundle: 'pro' },
+        { q: "Why is acting yourself into a new way of thinking effective for executive presence?", a: "Adopting high-status physical poses triggers biochemical changes that lower stress hormones and raise confidence.", bundle: 'pro' },
+        { q: "How do mindset resets transform daily workplace interactions?", a: "They replace timid, shrinking habits with calm, unshakeable physical poise that commands automatic respect.", bundle: 'pro' },
+        { q: "What single principle summarizes the Dan O'Connor executive presence philosophy?", a: "You are in charge of every relationship; taking up space and speaking with vocal power establishes your authority.", bundle: 'pro' },
       ]
     },
   ],
@@ -10341,6 +10957,118 @@ const memorizeCollections = {
         { q: "How does a Value Journal help during a \"budget freeze\"?", a: "It allows you to show that your specific role is generating revenue or saving costs, making you an exception to the freeze.", bundle: 'pro' },
       ]
     },
+    {
+      name: "Coping Statements",
+      description: "",
+      cards: [
+        { q: "What are the two essential components of a properly formed Coping Statement?", a: "It must be phrased in the Present Tense and Positively Framed (e.g. \"I am calm\").", bundle: 'free' },
+        { q: "Why does the brain fail to process coping statements phrased in the future like \"I will not get angry\"?", a: "The brain needs actionable instructions for right now, and future phrasing delays processing.", bundle: 'free' },
+        { q: "Why does the phrase \"I am not going to cry\" often cause a person to start crying?", a: "Because the brain focuses on the core concept \"cry\" while ignoring negative qualifiers like \"not.\"", bundle: 'free' },
+        { q: "What simple template structure builds a properly formed Coping Statement?", a: "Using the phrase \"I am...\" followed by a positive present-tense state (e.g. \"I am cool, calm, and collected\").", bundle: 'free' },
+        { q: "What is the primary purpose of practicing Coping Statements when you are calm?", a: "Stress deactivates language centers, so pre-practiced statements ensure instant access when emotions run high.", bundle: 'free' },
+        { q: "How does using a present-tense Coping Statement alter body chemistry under fire?", a: "It slows heart rate, lowers cortisol, and shifts brain activity from emotional reactivity back to logical clarity.", bundle: 'pro' },
+        { q: "What should you do in the sliver of time between an emotional trigger and your verbal response?", a: "Take three diaphragm breaths while internally reciting a present-tense coping statement.", bundle: 'pro' },
+        { q: "How does internal emotional regulation protect professional status during conflict?", a: "Remaining calm prevents emotional outbursts that adversaries can use to label you as unprofessional.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Broken Record",
+      description: "",
+      cards: [
+        { q: "What is the core definition of The Broken Record strategy?", a: "Repeating a valid decision or message calmly and unchanged without adding new justifications or defenses.", bundle: 'free' },
+        { q: "Why is adding new reasons or explanations dangerous when holding a boundary?", a: "New explanations provide ammunition for the other person to debate, negotiate, or challenge your stance.", bundle: 'free' },
+        { q: "What happens on a conscious and subconscious level when you introduce a new defense?", a: "The other person realizes you are on the run and will continue pressuring you until you give in.", bundle: 'free' },
+        { q: "What mindset shift supports the execution of The Broken Record?", a: "\"We only defend what we believe to be vulnerable; since my boundary is solid, it needs no new explanation.\"", bundle: 'free' },
+        { q: "How does repeating your exact message alter the manipulator's behavior over time?", a: "It demonstrates that your stance is unshakeable, forcing them to accept your limit or drop the topic.", bundle: 'free' },
+        { q: "What phrase structure softens a Broken Record statement without diluting the boundary?", a: "\"I understand (their point), however (repeat your exact decision).\"", bundle: 'pro' },
+        { q: "How many times do you typically need to repeat a Broken Record statement before a pushy person backs down?", a: "Usually two to three repetitions deliver complete boundary clarity.", bundle: 'pro' },
+        { q: "Why is The Broken Record particularly effective for new managers enforcing policy?", a: "It prevents junior staff from pulling the manager into circular debates over established operational rules.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "\"I Forgive You\"",
+      description: "",
+      cards: [
+        { q: "Why should you scratch the phrase \"It's okay\" from your response when someone apologizes?", a: "Saying \"It's okay\" when it was not okay devalues your worth and signals that mistreatment is acceptable.", bundle: 'free' },
+        { q: "What is the power phrase to use when someone apologizes for mistreating you?", a: "\"I forgive you.\"", bundle: 'free' },
+        { q: "How does saying \"I forgive you\" impact your self-worth compared to saying \"don't worry about it\"?", a: "It acknowledges that a boundary was breached while maintaining your personal standards and dignity.", bundle: 'free' },
+        { q: "What two-step combination pairs with \"I forgive you\" to close an issue cleanly?", a: "\"I forgive you. Let's put a period on this and move forward.\"", bundle: 'free' },
+        { q: "What is the foundational mindset behind using \"I Forgive You\"?", a: "\"I value myself too much to tell people it's okay to mistreat me; forgiveness is a gift that honors both of us.\"", bundle: 'free' },
+        { q: "How does explicit forgiveness prevent chronic workplace resentment?", a: "It formally settles the emotional transgression so both parties can resume clean professional interaction.", bundle: 'pro' },
+        { q: "What should you do if someone continues mistreating you after saying \"I forgive you\"?", a: "Transition from forgiveness to firm boundary enforcement using The Broken Record.", bundle: 'pro' },
+        { q: "Why does saying \"I forgive you\" command immediate respect from colleagues watching the exchange?", a: "It marks you as a high-status communicator who holds firm standards without harboring petty grudges.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Value Journal",
+      description: "",
+      cards: [
+        { q: "What is the primary function of a Value Journal?", a: "Daily logging and quantifying the extra financial revenue, time saved, or efficiency generated in your role.", bundle: 'free' },
+        { q: "What is the number one mistake people make when going into salary or raise negotiations?", a: "Winging the negotiation based on feelings or \"hard work\" rather than presenting objective data.", bundle: 'free' },
+        { q: "How far in advance should you drop off your Value Journal summary before a review meeting?", a: "About one week before the meeting, allowing decision-makers time to review the metrics.", bundle: 'free' },
+        { q: "Why should you share your Value Journal with accounting, HR, or the CFO before a review?", a: "Decision-makers who don't know you personally evaluate numbers, making data the universal language of raises.", bundle: 'free' },
+        { q: "What is the core mindset behind maintaining a Value Journal?", a: "\"I am a professional whose value is measured in numbers; I don't beg for a raise, I justify a return on investment.\"", bundle: 'free' },
+        { q: "How does a Value Journal protect you during company-wide budget freezes?", a: "It proves that your specific role generates net revenue or savings, making you a logical exception to the freeze.", bundle: 'pro' },
+        { q: "How do you log \"invisible labor\" like training new hires or fixing workflow errors in a Value Journal?", a: "Calculate the hours spent multiplied by hourly rates or saved onboarding costs to assign a dollar value.", bundle: 'pro' },
+        { q: "What is the typical outcome reported by professionals who consistently use a Value Journal?", a: "Securing maximum salary increases, merit bonuses, and faster promotional advancement.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Professional Resilience** — selecting between coping statements, repetition, forgiveness, and value tracking\n• **Holding Your Ground** — choosing the right boundary move when facing pressure, task-dumping, or disrespect\n• **Negotiating Your Worth** — demonstrating ROI, managing compensation anxiety, and backing raise requests with data\n\nSelecting the right strategy depends on whether you are regulating internal state, holding a firm limit, forgiving a fault, or proving numerical value.",
+      cards: [
+        { q: "When an aggressive colleague demands access to confidential files, why choose The Broken Record over Coping Statements?", a: "Choose The Broken Record to deliver external boundary persistence; use Coping Statements internally to regulate emotional charge.", bundle: 'pro' },
+        { q: "When a supervisor apologizes for delaying your performance review, why choose \"I Forgive You\" over The Value Journal?", a: "Choose \"I Forgive You\" to resolve the personal transgression with dignity; use The Value Journal to present performance data.", bundle: 'pro' },
+        { q: "What distinguishes Holding Your Ground from Negotiating Your Worth in Collections?", a: "Holding Your Ground focuses on resisting task-dumping and disrespect; Negotiating Your Worth focuses on proving ROI for raises.", bundle: 'pro' },
+        { q: "How do you choose between Coping Statements and The Value Journal when feeling underpaid?", a: "Use Coping Statements to overcome internal imposter anxiety; use The Value Journal to assemble unarguable financial proof.", bundle: 'pro' },
+        { q: "Why is framing operational benefit in Negotiating Your Worth effective for executive buy-in?", a: "Proving that your raise is backed by generated revenue presents the request as a sound business investment.", bundle: 'pro' },
+        { q: "What outcome is achieved when selecting \"I Forgive You\" in Holding Your Ground?", a: "It accepts an apology without diminishing self-worth, closing the issue so work can resume cleanly.", bundle: 'pro' },
+        { q: "Why does matching the right strategy to the pressure moment maintain executive presence?", a: "It demonstrates calibrated emotional resilience rather than defensive arguments or passive submission.", bundle: 'pro' },
+        { q: "What single question guides your strategy choice across the Collections decks in this pack?", a: "\"Am I regulating internal state, holding a firm limit, forgiving a fault, or proving numerical value?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequence combos in this pack, and the order each one runs in:\n\n• **Handling a Pushy Request** — Coping Statements → The Broken Record → The Broken Record → \"I Forgive You\"\n• **Preparing for the Raise Talk** — The Value Journal → Coping Statements → The Broken Record\n• **Resisting Workplace Pressure** — Coping Statements → The Broken Record → The Value Journal\n\nExecuting moves in logical order establishes internal composure and boundary clarity before closing the exchange.",
+      cards: [
+        { q: "What is the 4-step order of the Handling a Pushy Request combo?", a: "Coping Statements → The Broken Record → The Broken Record → \"I Forgive You\".", bundle: 'pro' },
+        { q: "Why does Coping Statements open the Handling a Pushy Request sequence?", a: "Regulating internal emotional charge first prevents reactive blowing up before delivering the verbal refusal.", bundle: 'pro' },
+        { q: "What is the 3-step order of the Preparing for the Raise Talk combo?", a: "The Value Journal → Coping Statements → The Broken Record.", bundle: 'pro' },
+        { q: "Why does The Value Journal precede Coping Statements in Preparing for the Raise Talk?", a: "Submitting quantified ROI data in advance creates the objective foundation before managing meeting anxiety.", bundle: 'pro' },
+        { q: "What is the 3-step order of the Resisting Workplace Pressure combo?", a: "Coping Statements → The Broken Record → The Value Journal.", bundle: 'pro' },
+        { q: "Why does The Value Journal conclude the Resisting Workplace Pressure combo?", a: "Documenting the saved hours or avoided distraction logs the operational gain achieved by holding the line.", bundle: 'pro' },
+        { q: "Why is sequence order vital when handling high-pressure workplace interactions?", a: "Executing moves in logical order establishes internal composure and boundary clarity before closing the exchange.", bundle: 'pro' },
+        { q: "How does combining Coping Statements and The Broken Record in sequence neutralize pushy people?", a: "Internal regulation keeps your voice calm while repetition demonstrates that your limit is non-negotiable.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories in this pack:\n\n• **Boundary Breakers** — resisting pushy requests and holding firm standards under pressure\n• **The Persistent Offloader** — stopping peers or managers who repeatedly attempt to dump tasks onto your desk\n• **The Budget Freezer** — countering corporate claims that blanket policy limits make individual raises impossible\n• **The Apology Minimizer** — stopping people who expect a quick pleasantry to dismiss their bad behavior\n• **The Emotionally Charged Meeting** — maintaining poise and executive presence when discussions turn hostile\n\nMastering these categories establishes your reputation as an unbothered, highly resilient communicator.",
+      cards: [
+        { q: "What defines the Boundary Breakers challenge category?", a: "Facing situations where individuals attempt to bulldoze your decisions or guilt-trip you for having standards.", bundle: 'pro' },
+        { q: "What defines The Persistent Offloader challenge category?", a: "Handling peers or managers who repeatedly attempt to pass off their assigned workload onto your desk.", bundle: 'pro' },
+        { q: "What defines The Budget Freezer challenge category?", a: "Countering corporate claims that blanket budget freezes or policy limits make individual raises impossible.", bundle: 'pro' },
+        { q: "What defines The Apology Minimizer challenge category?", a: "Stopping people who mistreat you and expect a quick \"it's okay\" to dismiss their bad behavior.", bundle: 'pro' },
+        { q: "What defines The Emotionally Charged Meeting challenge category?", a: "Maintaining poise and executive presence when discussions turn hostile, tense, or aggressive.", bundle: 'pro' },
+        { q: "Why do offloaders rely on creating guilt and awkwardness during task dumps?", a: "Guilt prompts people to break their own boundaries and take on extra work just to relieve short-term tension.", bundle: 'pro' },
+        { q: "What is the ultimate outcome of mastering all five Challenges categories in this pack?", a: "Becoming an unbothered, highly resilient communicator who commands respect and fair compensation.", bundle: 'pro' },
+        { q: "What organizational tactic drives management in \"The Budget Freezer\" category during compensation talks?", a: "Relying on generic corporate policy limits and blanket budget freezes allows management to discourage individual negotiations and deflect focus away from an employee's quantifiable ROI.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindset areas you practise in this pack:\n\n• **Mindful Resilience** — shifting from reactive emotional habits to intentional, unshakeable boundary management\n• **Internal Regulation** — recognizing that present-tense positive syntax restores cool rational control under fire\n• **Forgiveness and Self-Worth** — understanding that explicit forgiveness honors dignity without condoning mistreatment\n• **Quantifying Value** — realizing that documenting financial impact turns salary talks into logical business decisions\n\nResetting these limiting beliefs empowers you to navigate workplace pressure with unshakeable authority.",
+      cards: [
+        { q: "What is the core posture of the Mindful Resilience mindset?", a: "Viewing yourself as the cause of your communication environment rather than the victim of external pressure.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Internal Regulation mindset deck?", a: "The myth that emotional reactions cannot be controlled, rather than using present-tense syntax to guide the brain.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Forgiveness and Self-Worth mindset deck?", a: "The assumption that saying \"it's okay\" is polite, rather than recognizing that it condones mistreatment.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the Quantifying Value mindset deck?", a: "The false hope that hard work speaks for itself, rather than documenting quantifiable financial data.", bundle: 'pro' },
+        { q: "How does present-tense syntax alter neurological response during stress?", a: "Present-tense phrasing (\"I am calm\") gives immediate direction to the brain, whereas future phrasing gets ignored.", bundle: 'pro' },
+        { q: "Why is self-worth described as the ultimate foundation of boundary enforcement?", a: "Knowing your inherent value eliminates the urge to over-explain or apologize for having legitimate limits.", bundle: 'pro' },
+        { q: "How do mindset resets transform daily workplace interactions?", a: "They replace defensive argument loops and passive compliance with calm, unshakeable authority.", bundle: 'pro' },
+        { q: "What single principle summarizes the Dan O'Connor mindful communication philosophy?", a: "You are in charge of every relationship; internal regulation and factual value command professional respect.", bundle: 'pro' },
+      ]
+    },
   ],
   oconnor7: [
     {
@@ -10356,6 +11084,118 @@ const memorizeCollections = {
         { q: "Why should you avoid rejecting an offer (like coffee or water)?", a: "Rejection breaks social protocol and stops the fluidity of the interaction.", bundle: 'pro' },
         { q: "What are three great \"reel-in\" questions for small talk?", a: "\"Tell me about...\", \"How do you feel about...\", and \"What do you think about...\".", bundle: 'pro' },
         { q: "What does Dan say about being \"the cause\" in social situations?", a: "You are the driver of the interaction; if it’s awkward, you have the power to fix it using tactics.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Visual Hook for Names",
+      description: "",
+      cards: [
+        { q: "What is the primary function of The Visual Hook for Names strategy?", a: "Associating a new name with a familiar character or vivid story to trigger long-term recall.", bundle: 'free' },
+        { q: "Why does relying on simple auditory repetition fail when trying to remember names?", a: "The brain gets overloaded with raw speech data and requires a visual, emotional anchor to store memory.", bundle: 'free' },
+        { q: "What type of character should you picture when forming a visual hook?", a: "A cartoon character, movie icon, or well-known person who shares the exact same name.", bundle: 'free' },
+        { q: "What physical action should you imagine between the character and the new person?", a: "A vivid, humorous physical interaction, such as shaking hands, high-fiving, or standing shoulder-to-shoulder.", bundle: 'free' },
+        { q: "How many times out loud should you repeat a new name during an initial conversation?", a: "At least three times during the initial greeting and parting exchange.", bundle: 'free' },
+        { q: "How does using a visual hook eliminate the \"friend-pretending\" game when a name is forgotten?", a: "It provides an unshakeable mental anchor, allowing you to recall names confidently or ask directly without awkwardness.", bundle: 'pro' },
+        { q: "What mental mindset supports Dan O'Connor's visual hook technique?", a: "Viewing name recall as a fun mental game that makes other people feel genuinely seen and valued.", bundle: 'pro' },
+        { q: "Why does adding humor to a visual hook make a name easier to remember later?", a: "Humorous or absurd mental images strike an emotional chord, which locks the memory into long-term brain storage.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The OFF Technique",
+      description: "",
+      cards: [
+        { q: "What do the letters in the acronym OFF stand for?", a: "Offer, Favor, and Familiar language.", bundle: 'free' },
+        { q: "What is the purpose of making an \"as well\" offer when stepping away?", a: "Showing a service attitude by offering to grab something for them while getting it for yourself.", bundle: 'free' },
+        { q: "Why does asking someone for a small favor increase their affinity for you?", a: "Asking for help forces the other person's brain to rationalize why they helped, creating subconscious rapport.", bundle: 'free' },
+        { q: "What is an example of familiar language used in the OFF technique?", a: "Phrasing like \"I'll be right back\" or \"You're in charge while I'm gone!\"", bundle: 'free' },
+        { q: "Why is rejecting an offer (like coffee or water) considered a social mistake?", a: "Rejection breaks social protocol and momentarily halts the fluid flow of interaction.", bundle: 'free' },
+        { q: "How does using familiar language signal instant rapport with new acquaintances?", a: "It uses warm phrasing normally reserved for close friends, removing artificial social barriers.", bundle: 'pro' },
+        { q: "Why is stepping away using OFF helpful during high-anxiety networking events?", a: "It allows you to decompress and review your notes while leaving a warm, open door to return.", bundle: 'pro' },
+        { q: "What mindset shift underpins the OFF Technique?", a: "\"I belong here, and I bring dignity and service to every social exchange.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The \"Person, Place, or Thing\" Opener",
+      description: "",
+      cards: [
+        { q: "What are the three components of a PPT Opener?", a: "Person, Place, or Thing.", bundle: 'free' },
+        { q: "Why should an opening observation always focus on a positive detail?", a: "Positive observations invite shared enthusiasm, whereas negative complaints create instant social friction.", bundle: 'free' },
+        { q: "What defines the \"Thing\" component of a PPT Opener?", a: "A physical or architectural detail in the immediate environment, such as flooring, lighting, or artwork.", bundle: 'free' },
+        { q: "What defines the \"Person\" component of a PPT Opener?", a: "A participant, performer, or speaker at the event.", bundle: 'free' },
+        { q: "What defines the \"Place\" component of a PPT Opener?", a: "The venue, location, or atmosphere of the gathering.", bundle: 'free' },
+        { q: "What are three open-ended \"reel-in\" questions to use after someone takes the opener bait?", a: "\"Tell me about...\", \"How do you feel about...\", and \"What do you think about...\".", bundle: 'pro' },
+        { q: "How does a PPT Opener avoid making the other person feel \"interviewed\"?", a: "It makes a statement about shared surroundings rather than firing rapid, intrusive personal questions.", bundle: 'pro' },
+        { q: "What mindset supports starting conversations with PPT Openers?", a: "\"I don't need to be interesting; I just need to notice one positive truth about our environment.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Empowering Praise",
+      description: "",
+      cards: [
+        { q: "What is the core phrase shift in Empowering Praise?", a: "Moving from \"I am proud of you\" to \"You should be proud of yourself.\"", bundle: 'free' },
+        { q: "Why is telling someone \"you should be proud of yourself\" more empowering than validating them yourself?", a: "It hands them internal permission to recognize their own worth rather than depending on external approval.", bundle: 'free' },
+        { q: "What physical posture change often occurs when someone receives empowering praise?", a: "Their chest goes up, chin elevates, and they visibly embody self-worth.", bundle: 'free' },
+        { q: "How do you praise a choice rather than unearned luck or genetics?", a: "Complimenting their decisions, style, or effort rather than unearned physical traits.", bundle: 'free' },
+        { q: "What is the function of a tag question at the end of empowering praise?", a: "Engaging the receiver with a confirmation like \"Were you aware of how much that helped?\"", bundle: 'free' },
+        { q: "Why should leaders and drivers adopt Empowering Praise with direct reports?", a: "It builds independent capability and self-esteem without making feedback sound patronizing.", bundle: 'pro' },
+        { q: "What is the difference between praising work output versus praising character?", a: "Output praise acknowledges the task, while character praise validates who they are as a professional.", bundle: 'pro' },
+        { q: "What mindset posture governs Empowering Praise?", a: "\"I use my words to help others recognize and inhabit their own inherent greatness.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Social Initiation** — selecting openers, visual hooks, or OFF techniques when starting fresh\n• **Building Instant Rapport** — choosing the right move to establish warmth, ease, and familiarity\n• **Elevating Conversations** — using praise, positive details, or OFF offers to deepen connection\n\nSelecting the right strategy depends on whether you are initiating, building ease, or validating others.",
+      cards: [
+        { q: "What drives the choice between a PPT Opener and The Visual Hook when meeting someone new?", a: "Use a PPT Opener to break the ice with a shared observation; use The Visual Hook when anchoring their name during the greeting.", bundle: 'pro' },
+        { q: "When should you choose The OFF Technique over Empowering Praise during small talk?", a: "Use The OFF Technique when creating service-oriented ease or stepping away; use Empowering Praise when highlighting someone's specific accomplishment.", bundle: 'pro' },
+        { q: "How does selecting Empowering Praise in \"Elevating Conversations\" impact team dynamics?", a: "It shifts recognition from generic approval to deep, internal self-worth, making team members feel truly visible.", bundle: 'pro' },
+        { q: "What distinguishes \"Social Initiation\" from \"Building Instant Rapport\"?", a: "Social Initiation focuses on opening fresh talk; Building Instant Rapport focuses on establishing warmth and familiar connection.", bundle: 'pro' },
+        { q: "Why is matching the right strategy to the social moment essential for fluidity?", a: "It ensures your response flows naturally from what happened rather than sounding like an artificial script.", bundle: 'pro' },
+        { q: "How does using OFF offers in \"Building Instant Rapport\" lower social friction?", a: "It demonstrates a service attitude, making the other person feel welcomed without obligation.", bundle: 'pro' },
+        { q: "What single question guides your strategy selection across Collections decks in this pack?", a: "\"Am I initiating a fresh opener, building familiar ease, or empowering the other person's self-worth?\"", bundle: 'pro' },
+        { q: "What is the ultimate outcome of mastering strategy selection in Collections?", a: "Becoming a socially fluid communicator who effortlessly drives connections in any environment.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequence combos in this pack, and the order each one runs in:\n\n• **The Masterful Introduction** — The \"Person, Place, or Thing\" Opener → The Visual Hook for Names → The OFF Technique (Offer) → The OFF Technique (Familiar Language)\n• **Empowering a Teammate** — \"Your\" instead of \"You\" → Empowering Praise → Empowering Praise (Engagement)\n• **Connecting at a Social Event** — The \"Person, Place, or Thing\" Opener → The Visual Hook for Names → Empowering Praise\n\nExecuting moves in logical order establishes environment grounding before personal rapport and validation.",
+      cards: [
+        { q: "What is the 4-step order of \"The Masterful Introduction\" combo?", a: "The \"Person, Place, or Thing\" Opener → The Visual Hook for Names → The OFF Technique (Offer) → The OFF Technique (Familiar Language).", bundle: 'pro' },
+        { q: "Why does a PPT Opener open \"The Masterful Introduction\" sequence?", a: "Commenting on a shared environment detail breaks the ice smoothly before transitioning to personal names.", bundle: 'pro' },
+        { q: "What is the 3-step order of the \"Empowering a Teammate\" combo?", a: "\"Your\" instead of \"You\" → Empowering Praise → Empowering Praise (Engagement).", bundle: 'pro' },
+        { q: "Why does \"Your\" language precede Empowering Praise when recognizing a colleague?", a: "Leading with \"Your [quality]\" focuses attention on their specific work before handing them internal pride.", bundle: 'pro' },
+        { q: "What is the 3-step order of \"Connecting at a Social Event\"?", a: "The \"Person, Place, or Thing\" Opener → The Visual Hook for Names → Empowering Praise.", bundle: 'pro' },
+        { q: "Why does The Visual Hook sit in the middle of \"Connecting at a Social Event\"?", a: "Locking in their name during the initial exchange allows you to use it naturally when delivering praise later.", bundle: 'pro' },
+        { q: "Why is sequence order vital when guiding social interactions?", a: "Executing moves in logical order moves the exchange smoothly from shared environment to personal connection and validation.", bundle: 'pro' },
+        { q: "How does executing \"The Masterful Introduction\" in sequence transform networking?", a: "It replaces awkward stuttering with a polished, fluid conversation arc that leaves a lasting impression.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories in this pack:\n\n• **The Social Stall** — reviving conversations when answers run dry or questions feel like an interrogation\n• **The Forgotten Name** — handling name recall pressure in fast-moving social settings\n• **The Awkward Silence** — breaking lulls and rigid tension using positive environmental details\n• **The Self-Doubt Trigger** — overcoming hesitation when entering high-status rooms or talking to seniors\n• **The Unsung Contribution** — recognizing quiet effort and elevating others through specific praise\n\nMastering these categories establishes your reputation as a warm, socially fluid communicator.",
+      cards: [
+        { q: "What defines \"The Social Stall\" challenge category?", a: "Reviving dying conversations when one-word answers or closed statements stall the flow.", bundle: 'pro' },
+        { q: "What defines \"The Forgotten Name\" challenge category?", a: "Managing name recall pressure and social anxiety when introduced to multiple strangers.", bundle: 'pro' },
+        { q: "What defines \"The Awkward Silence\" challenge category?", a: "Navigating sudden lulls or rigid tension in group settings without panicking.", bundle: 'pro' },
+        { q: "What defines \"The Self-Doubt Trigger\" challenge category?", a: "Overcoming internal hesitation and feeling unentitled when entering high-status environments.", bundle: 'pro' },
+        { q: "What defines \"The Unsung Contribution\" challenge category?", a: "Recognizing quiet effort and validating colleagues whose hard work goes unacknowledged.", bundle: 'pro' },
+        { q: "Why do one-word answers frequently cause social conversations to stall?", a: "They leave the other person carrying the entire conversational load without providing fresh material to build on.", bundle: 'pro' },
+        { q: "What is the ultimate outcome of mastering all five Challenges categories in this pack?", a: "Transforming from a hesitant participant into an unbothered, highly welcoming social presence.", bundle: 'pro' },
+        { q: "What psychological dynamic drives \"The Self-Doubt Trigger\" when stepping into high-status social rooms?", a: "Feeling unentitled to space, which causes individuals to shrink their physical presence, hesitate to speak, and reflexively reject social offers.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindset areas you practise in this pack:\n\n• **Substance Over Form** — shifting internal posture from self-conscious performance to genuine service\n• **Social Initiation** — realizing that noticing one positive truth makes starting conversations effortless\n• **Remembering Names** — understanding that visual hooks and repetition show you value others' identity\n• **Giving Praise** — recognizing that empowering praise hands internal self-worth to the receiver\n\nResetting these limiting beliefs empowers you to drive social exchanges with natural ease.",
+      cards: [
+        { q: "What is the core posture of the Social Fluidity mindset?", a: "Viewing yourself as the cause of social warmth, responsible for making others feel comfortable and seen.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the \"Substance Over Form\" mindset deck?", a: "The false belief that you must be fascinating or perform, rather than noticing one true, ordinary detail.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the \"Social Initiation\" mindset deck?", a: "The fear that starting a conversation with a stranger makes you look pushy or intrusive.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the \"Remembering Names\" mindset deck?", a: "The myth that name recall is an innate talent rather than a practiced visual game.", bundle: 'pro' },
+        { q: "What limiting belief is dismantled in the \"Giving Praise\" mindset deck?", a: "The anxiety that praising others out loud sounds fake, rather than empowering their internal worth.", bundle: 'pro' },
+        { q: "How does adopting a \"service attitude\" eliminate social self-consciousness?", a: "Focusing on making others feel comfortable removes the internal spotlight from your own performance.", bundle: 'pro' },
+        { q: "How do mindset resets transform daily social interactions?", a: "They replace hesitant withdrawal with confident, gracious warmth that draws people in.", bundle: 'pro' },
+        { q: "What single principle summarizes Dan O'Connor's social fluidity philosophy?", a: "You are in charge of every relationship; bringing dignity and ease makes social connection effortless.", bundle: 'pro' },
       ]
     },
   ],
