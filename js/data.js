@@ -11622,6 +11622,88 @@ const collections = {
       ]
     },
   ],
+  jfisher3: [
+    {
+      name: "Standing by Decisions",
+      guideFront: "Standing by a past choice when...",
+      guideBack: "A clear decision statement",
+      description: "Stand firmly behind a past action or choice without getting pulled into post-hoc interrogation or defensive justification.\n\nIt works by anchoring your decision to the facts and information available at the time, refusing to be judged by hindsight.\n\n• State the choice plainly without apology\n• Anchor the decision to the information available at the time\n• Close the door on Monday-morning quarterbacking\n\nMindset: You made the best choice with what you knew then. You do not owe a trial in hindsight.",
+      inputs: [
+        { q: "A manager questions why you chose a specific vendor last month after minor delays occurred.", a: "\"This was the path I took under the information I had at the time.\"", bundle: 'free' },
+        { q: "A partner asks aggressively why you bought a specific appliance without consulting them first.", a: "\"I made that choice based on the details we had at the store that morning.\"", bundle: 'free' },
+        { q: "A teammate critiques your project layout after the client changes their requirements.", a: "\"That was the best decision given the parameters we were working with then.\"", bundle: 'free' },
+        { q: "A relative questions why you decided to change your holiday travel plans.", a: "\"I made that choice based on the conditions and details available when I booked.\"", bundle: 'free' },
+        { q: "A client asks why you structured the initial proposal the way you did.", a: "\"That layout was chosen based on the initial specs we agreed upon.\"", bundle: 'free' },
+        { q: "A sibling blames you for how a family event turned out last year.", a: "\"I made the best choice I could with the facts available to me back then.\"", bundle: 'pro' },
+        { q: "An executive asks why your team didn't anticipate a sudden market shift.", a: "\"We evaluated the risk and made the call using the data present at that moment.\"", bundle: 'pro' },
+        { q: "A friend criticizes you for leaving a job before securing the next offer.", a: "\"I made that decision grounded in what I knew and felt was right then.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Curious Origin Questions",
+      guideFront: "Exploring how they formed a belief when...",
+      guideBack: "An origin question",
+      description: "Drain a speaker's emotional pitcher by asking curious questions about how they arrived at a belief or decision.\n\nThis strategy is strictly distinct from Decoding Intent: it explores the origin of a belief or conclusion, never the motive behind a snarky remark.\n\n• Ask how they came to their conclusion\n• Listen to the story without interrupting\n• Separate deeply held assumptions from immediate reactions\n\nMindset: Curious questions drain the emotional pitcher so calm reasoning can begin.",
+      inputs: [
+        { q: "A colleague passionately insists that your team's current strategy will fail completely.", a: "\"How did you come to that conclusion?\"", bundle: 'free' },
+        { q: "A family member announces a drastic life decision that surprises everyone.", a: "\"What led to that decision?\"", bundle: 'free' },
+        { q: "A teenager claims that all their teachers are unfair and targeting them.", a: "\"How did you arrive at that impression?\"", bundle: 'free' },
+        { q: "A client strongly asserts that your product pricing is out of line with the market.", a: "\"What brought you to that perspective on our pricing?\"", bundle: 'free' },
+        { q: "A friend insists that a mutual acquaintance dislikes you.", a: "\"What built that impression in your mind?\"", bundle: 'free' },
+        { q: "An associate argues firmly that a new company policy is going to ruin morale.", a: "\"What path led you to that conclusion about the policy?\"", bundle: 'pro' },
+        { q: "A neighbor claims that the community board is plotting against the homeowners.", a: "\"How did you form that view of the board?\"", bundle: 'pro' },
+        { q: "A spouse insists that moving to a new city is the only way to save money.", a: "\"What experiences brought you to that idea?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Fact-Feeling Checks",
+      guideFront: "Separating emotional claims from facts when...",
+      guideBack: "A fact versus feeling check",
+      description: "Disentangle objective reality from dramatic accusations by asking whether a statement is a fact or a feeling.\n\nIt works by inviting the speaker to categorize their own claim, bringing cognitive clarity to an emotionally clouded argument.\n\n• Pause and listen to the emotional claim\n• Ask directly if the claim is a fact or a feeling\n• Keep your tone neutral and curious, not patronizing\n\nMindset: Feelings are valid experiences, but they are not automatically objective facts.",
+      inputs: [
+        { q: "A partner dramatically claims that you never support any of their career goals.", a: "\"Are you saying that is a fact or a feeling?\"", bundle: 'free' },
+        { q: "A coworker angrily asserts that the entire department is conspiring against them.", a: "\"Is that an objective fact, or is that how it feels to you right now?\"", bundle: 'free' },
+        { q: "A teenager screams that nobody in the family ever listens to what they want.", a: "\"Are you sharing a fact with me, or expressing a feeling?\"", bundle: 'free' },
+        { q: "A client passionately declares that your service is the worst in the industry.", a: "\"Is that a documented fact, or are you describing how you feel about the service?\"", bundle: 'free' },
+        { q: "A relative claims that everyone at the dinner is judging their life choices.", a: "\"Are you stating a fact about the room, or sharing a personal feeling?\"", bundle: 'free' },
+        { q: "An associate insists that management hates our team and wants to fire everyone.", a: "\"Is management actually firing everyone a fact, or is that a feeling in the team?\"", bundle: 'pro' },
+        { q: "A friend tearfully claims that you don't care about their friendship anymore.", a: "\"Are you expressing a feeling, or are you saying that is a proven fact?\"", bundle: 'pro' },
+        { q: "A sibling angrily states that you were always the favorite child growing up.", a: "\"Is that a fact from our childhood, or how it felt from your perspective?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Isolating Objections",
+      guideFront: "Pinning down the real issue when...",
+      guideBack: "An isolation question",
+      description: "Pin down moving targets and endless excuses by isolating whether a specific objection is the only true barrier.\n\nIt works in family life, friendships, and negotiations when someone brings a new reason every time you answer the last one.\n\n• Listen to the raised objection calmly\n• Ask if that specific issue is the only barrier\n• Prevent new excuses from surfacing once answered\n\nMindset: Address the real bottleneck instead of chasing a moving target of endless excuses.",
+      inputs: [
+        { q: "A teenager gives a reason why they can't do their homework, after you solved their last excuse.", a: "\"Aside from that, is there anything else holding you back?\"", bundle: 'free' },
+        { q: "A friend hesitates to join a weekend trip, bringing up a new concern every minute.", a: "\"If we solve that, is there any other reason keeping you from coming?\"", bundle: 'free' },
+        { q: "A client raises a concern about delivery times after you settled the price issue.", a: "\"Other than delivery times, is there any other barrier to moving forward?\"", bundle: 'free' },
+        { q: "A family member makes an excuse about attending a gathering after you fixed the transport issue.", a: "\"If that's taken care of, is there anything else preventing you from coming?\"", bundle: 'free' },
+        { q: "A coworker objects to taking on a project phase after you cleared their schedule.", a: "\"Besides that task, is there anything else stopping you from taking this on?\"", bundle: 'free' },
+        { q: "A spouse brings up a new worry about buying a home after all budget questions were answered.", a: "\"Putting that concern aside, is there anything else making you hesitate?\"", bundle: 'pro' },
+        { q: "A vendor raises a new clause issue after all terms were agreed upon.", a: "\"Setting that clause aside, is there anything else holding up the signature?\"", bundle: 'pro' },
+        { q: "A sibling makes excuses about helping clear out a storage unit.", a: "\"If we handle that detail, is there any other reason you can't assist?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Flat Acknowledgment",
+      guideFront: "Refusing to compete or argue when...",
+      guideBack: "A neutral acknowledgment",
+      description: "Neutralize one-upmanship, status plays, and competitive bragging by offering a flat, calm acknowledgment.\n\nIt works because it acts like water off a duck's back, refusing to supply the emotional reaction or competition the speaker seeks.\n\n• Listen to the bragging or status play without emotion\n• Deliver a short, flat acknowledgment line\n• Let the conversation settle without competing\n\nMindset: You do not need to compete with someone who is fishing for status. Let them stand alone.",
+      inputs: [
+        { q: "An acquaintance boasts about their expensive new car and expects you to look envious.", a: "\"Okay, noted. I got it.\"", bundle: 'free' },
+        { q: "A coworker brags about working ninety hours this week to make you feel unproductive.", a: "\"Understood. Thanks for sharing.\"", bundle: 'free' },
+        { q: "A relative name-drops wealthy connections at a dinner party to establish hierarchy.", a: "\"I see. Noted.\"", bundle: 'free' },
+        { q: "A peer tries to one-up your vacation story with a grander tale of their own.", a: "\"Got it. Sounds like quite a trip.\"", bundle: 'free' },
+        { q: "A competitive friend lists all their recent achievements in a rapid flex.", a: "\"Understood. Good to know.\"", bundle: 'free' },
+        { q: "A client boasts about how easily they crushed another competitor's price.", a: "\"Noted. I hear you.\"", bundle: 'pro' },
+        { q: "A sibling brags about being praised by your parents to stir up rival friction.", a: "\"I hear you. Noted.\"", bundle: 'pro' },
+        { q: "An associate brags about having inside information from executive leadership.", a: "\"Got it. Thanks for the update.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -18290,6 +18372,56 @@ const collectionsModeData = {
         { q: "Your child demands a second popsicle before dinner while leaving their main meal.", a: "\"I see how much you love popsicles. I wish we could eat dessert all day. And popsicles come after dinner—do you want to finish your chicken or your broccoli first?\" [Empathetic Limit Setting]", bundle: 'pro', guideBack: "An empathetic boundary" },
         { q: "Your child whimpers that they cannot tie their jacket strings and wants to give up.", a: "\"Tying those thin strings takes a lot of hand strength. Which side do you want to loop over first? Yes, as soon as it's tied, you can run outside.\" [Guided Problem Solving]", bundle: 'pro', guideBack: "A problem-solving prompt" },
         { q: "Your child threw their shoes across the hallway at bedtime and now looks calm.", a: "\"Throwing shoes was unsafe. How can we turn this mistake around and make it right? I'm so glad we settled down—let's tuck you in warmly.\" [Resetting and Restoring]", bundle: 'pro', guideBack: "A restorative connection" },
+      ]
+    },
+  ],
+  jfisher3: [
+    {
+      name: "Inquire and Anchor",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choose between **Curious Origin Questions**, **Standing by Decisions**, and **Flat Acknowledgment** when facing questioning, past choices, or status plays.\n\n• **Curious Origin Questions** — use when you need to explore how someone arrived at an ingrained belief.\n• **Standing by Decisions** — use when you need to firm up a past choice against hindsight judgment.\n• **Flat Acknowledgment** — use when someone is bragging or attempting a status play.\n\nThe crucial choice: are you exploring their origin, defending your choice, or deflecting status noise?\n\nMindset: De-escalation begins when you stop offering emotional fuel to the fire.",
+      inputs: [
+        { q: "An uncle suddenly claims at dinner that going to university is a complete waste of money for young people.", a: "\"What brought you to that perspective?\" [Curious Origin Questions]", bundle: 'pro', guideBack: "An origin question" },
+        { q: "A supervisor asks why you handled a customer escalation using a refund instead of store credit.", a: "\"I made that call based on the policy and customer history available at the moment.\" [Standing by Decisions]", bundle: 'pro', guideBack: "A clear decision statement" },
+        { q: "A workout partner constantly flexes how much weight they can lift to make your routine look weak.", a: "\"Understood. I hear you loud and clear.\" [Flat Acknowledgment]", bundle: 'pro', guideBack: "A neutral acknowledgment" },
+        { q: "A software engineer on your team insists that the new design framework will ruin system performance.", a: "\"How did you arrive at that conclusion?\" [Curious Origin Questions]", bundle: 'pro', guideBack: "An origin question" },
+        { q: "Your partner questions why you chose to book a morning flight instead of an evening one.", a: "\"I chose that time based on the schedule and pricing we had in front of us.\" [Standing by Decisions]", bundle: 'pro', guideBack: "A clear decision statement" },
+        { q: "A neighbor brags about how much their home value increased compared to the rest of the street.", a: "\"Got it. Noted.\" [Flat Acknowledgment]", bundle: 'pro', guideBack: "A neutral acknowledgment" },
+        { q: "A client firmly declares that remote work is destroying employee productivity across all sectors.", a: "\"What led you to that view?\" [Curious Origin Questions]", bundle: 'pro', guideBack: "An origin question" },
+        { q: "A former mentor critiques your choice to start your own freelance practice instead of staying corporate.", a: "\"That was the right path for me given the information and priorities I had then.\" [Standing by Decisions]", bundle: 'pro', guideBack: "A clear decision statement" },
+      ]
+    },
+    {
+      name: "Clarify the Issue",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choose between **Fact-Feeling Checks**, **Isolating Objections**, and **Flat Acknowledgment** to cut through dramatic claims and moving excuses.\n\n• **Fact-Feeling Checks** — use when emotional accusations cloud the objective facts.\n• **Isolating Objections** — use when someone raises excuse after excuse to stall progress.\n• **Flat Acknowledgment** — use when someone uses one-upmanship or grandstanding.\n\nThe crucial choice: is the primary obstacle emotional drama, a moving excuse, or competitive flexing?\n\nMindset: Separate emotional noise from the actual bottleneck on the table.",
+      inputs: [
+        { q: "A teammate angrily claims that management is deliberately hiding project deadlines from them.", a: "\"Are you presenting that as a factual certainty, or expressing how it feels?\" [Fact-Feeling Checks]", bundle: 'pro', guideBack: "A fact versus feeling check" },
+        { q: "A roommate brings up a noise concern after you already agreed to quiet hours.", a: "\"Besides the noise level, is there any other barrier to us sharing this space comfortably?\" [Isolating Objections]", bundle: 'pro', guideBack: "An isolation question" },
+        { q: "A colleague brags at lunch about how close they are with the company CEO.", a: "\"Noted. Understood.\" [Flat Acknowledgment]", bundle: 'pro', guideBack: "A neutral acknowledgment" },
+        { q: "A parent tearfully insists that none of their children care about family traditions anymore.", a: "\"Is that a proven fact, or is that expressing how you feel today?\" [Fact-Feeling Checks]", bundle: 'pro', guideBack: "A fact versus feeling check" },
+        { q: "A seller raises an issue about the closing date after you agreed to their full asking price.", a: "\"Other than the closing date, is there anything else holding up this agreement?\" [Isolating Objections]", bundle: 'pro', guideBack: "An isolation question" },
+        { q: "A group member boasts about how effortlessly they passed an exam while everyone else struggled.", a: "\"I see. Got it.\" [Flat Acknowledgment]", bundle: 'pro', guideBack: "A neutral acknowledgment" },
+        { q: "A client insists that your team completely ignored every single one of their feedback notes.", a: "\"Are you saying that is a documented fact, or is that how the revision felt?\" [Fact-Feeling Checks]", bundle: 'pro', guideBack: "A fact versus feeling check" },
+        { q: "A teenager complains about transport to basketball practice after you arranged a carpool.", a: "\"If we fix the rides, is there any other reason stopping you from going?\" [Isolating Objections]", bundle: 'pro', guideBack: "An isolation question" },
+      ]
+    },
+    {
+      name: "The Full Set",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "All five de-escalation and inquiry strategies mixed together without situational warning.\n\n• **Standing by Decisions** · **Curious Origin Questions** · **Fact-Feeling Checks** · **Isolating Objections** · **Flat Acknowledgment**\n\nThe crucial choice: identify the type of emotional noise thrown at you, and select the single matching tool.\n\nMindset: Stay calm, stay curious, and hold your ground without justification.",
+      inputs: [
+        { q: "A board member asks why you didn't hire a larger team at the start of Q1.", a: "\"We made that hiring call based on the budget data available at the time.\" [Standing by Decisions]", bundle: 'pro', guideBack: "A clear decision statement" },
+        { q: "A friend insists that taking a gap year will completely ruin your career prospects.", a: "\"What led you to that conclusion?\" [Curious Origin Questions]", bundle: 'pro', guideBack: "An origin question" },
+        { q: "A spouse angrily declares that you always take your family's side during disagreements.", a: "\"Are you stating that as an absolute fact, or sharing how you feel right now?\" [Fact-Feeling Checks]", bundle: 'pro', guideBack: "A fact versus feeling check" },
+        { q: "A vendor hesitates to sign a contract, bringing up a new insurance clause.", a: "\"Putting the insurance clause aside, is there anything else keeping us from signing?\" [Isolating Objections]", bundle: 'pro', guideBack: "An isolation question" },
+        { q: "An associate flexes about their exclusive VIP tickets to a sold-out conference.", a: "\"Noted. Thanks for telling me.\" [Flat Acknowledgment]", bundle: 'pro', guideBack: "A neutral acknowledgment" },
+        { q: "A relative asserts that young people today have no work ethic whatsoever.", a: "\"How did you form that perspective?\" [Curious Origin Questions]", bundle: 'pro', guideBack: "An origin question" },
+        { q: "A partner hesitates to commit to a weekend getaway after you cleared the budget.", a: "\"Besides the cost, is there any other concern holding you back?\" [Isolating Objections]", bundle: 'pro', guideBack: "An isolation question" },
+        { q: "A junior developer insists that the senior team intentionally gave them the worst bugs.", a: "\"Is that a fact you confirmed, or a feeling about the task distribution?\" [Fact-Feeling Checks]", bundle: 'pro', guideBack: "A fact versus feeling check" },
       ]
     },
   ],

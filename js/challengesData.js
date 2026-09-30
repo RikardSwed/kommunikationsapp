@@ -10964,4 +10964,86 @@ const challengesCollections = {
       ]
     },
   ],
+  jfisher3: [
+    {
+      name: "Post-Hoc Interrogation",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Facing Monday-morning quarterbacking where people question and critique past choices using hindsight.\n\nWhat goes wrong: Getting pulled into long, defensive justifications that validate their right to put your past choices on trial.\n\nWhich strategies bite: **Standing by Decisions** to anchor your choice to past parameters, and **Flat Acknowledgment** to starve hindsight snark.\n\nThe single thing to avoid: Apologizing for choices that were made in good faith with available facts.\n\nMindset: You made the best choice with what you knew then. You do not owe a trial in hindsight.",
+      inputs: [
+        { q: "A colleague makes a snide hindsight comment about your project presentation in front of peers.", a: "\"Okay, noted. I got it.\" [Flat Acknowledgment]", bundle: 'pro', guideBack: "A neutral acknowledgment" },
+        { q: "A client questions why you chose a specific software platform for their site six months ago.", a: "\"That platform was chosen based on the technical specs and budget available then.\" [Standing by Decisions]", bundle: 'pro', guideBack: "A clear decision statement" },
+        { q: "A peer makes a passive-aggressive remark about how much better the event would have been if they planned it.", a: "\"Understood. Noted.\" [Flat Acknowledgment]", bundle: 'pro', guideBack: "A neutral acknowledgment" },
+        { q: "Your partner interrogates why you picked a certain road trip route after encountering unexpected construction.", a: "\"I took that route based on the traffic report in front of us when we left.\" [Standing by Decisions]", bundle: 'pro', guideBack: "A clear decision statement" },
+        { q: "A manager asks why your department did not hire extra seasonal staff before a sudden demand spike.", a: "\"We made our staffing decisions grounded in the historical projections available at the time.\" [Standing by Decisions]", bundle: 'pro', guideBack: "A clear decision statement" },
+        { q: "A family member smugly points out a minor flaw in your home renovation project months later.", a: "\"Got it. I hear you.\" [Flat Acknowledgment]", bundle: 'pro', guideBack: "A neutral acknowledgment" },
+        { q: "An investor asks why you launched product variant A before variant B last quarter.", a: "\"That was the decision we made under the market conditions present at launch.\" [Standing by Decisions]", bundle: 'pro', guideBack: "A clear decision statement" },
+        { q: "A coworker sarcastically remarks that anyone could have predicted the supplier delay you experienced.", a: "\"I see. Noted.\" [Flat Acknowledgment]", bundle: 'pro', guideBack: "A neutral acknowledgment" },
+      ]
+    },
+    {
+      name: "Moving Goalposts",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Facing individuals who continuously invent new objections, excuses, or barriers as soon as you address the previous one.\n\nWhat goes wrong: Exhausting yourself by answering every new excuse, turning the conversation into a moving target.\n\nWhich strategies bite: **Isolating Objections** to pin down the true remaining barrier, and **Fact-Feeling Checks** to check if the goalpost is emotional.\n\nThe single thing to avoid: Chasing endless excuses without isolating the primary bottleneck.\n\nMindset: Address the real bottleneck instead of chasing a moving target of endless excuses.",
+      inputs: [
+        { q: "A client brings up a new formatting concern after you already made three rounds of revisions.", a: "\"Besides the formatting, is there any other barrier to approving this design?\" [Isolating Objections]", bundle: 'pro', guideBack: "An isolation question" },
+        { q: "A teenager claims that doing their chores will destroy their social life for the entire month.", a: "\"Are you saying that is a fact, or describing how it feels?\" [Fact-Feeling Checks]", bundle: 'pro', guideBack: "A fact versus feeling check" },
+        { q: "A buyer raises a concern about carpet color after you agreed to cover all repairs.", a: "\"Setting the carpet aside, is there anything else keeping us from signing?\" [Isolating Objections]", bundle: 'pro', guideBack: "An isolation question" },
+        { q: "A partner claims that you're intentionally making plans that exclude them.", a: "\"Is that a factual truth, or a feeling you are experiencing right now?\" [Fact-Feeling Checks]", bundle: 'pro', guideBack: "A fact versus feeling check" },
+        { q: "A coworker hesitates to take over a weekly report after you created a step-by-step template for them.", a: "\"If the template works, is there any other reason stopping you from doing it?\" [Isolating Objections]", bundle: 'pro', guideBack: "An isolation question" },
+        { q: "A contractor passionately asserts that no supplier in the city can meet your timeline.", a: "\"Are you stating that as an absolute fact, or is that your feeling about the market?\" [Fact-Feeling Checks]", bundle: 'pro', guideBack: "A fact versus feeling check" },
+        { q: "A relative makes a new excuse about visiting after you offered to pay for their train ticket.", a: "\"Other than the train ride, is there anything else keeping you from visiting?\" [Isolating Objections]", bundle: 'pro', guideBack: "An isolation question" },
+        { q: "A team member insists that the project scope is completely impossible for anyone to accomplish.", a: "\"Are you presenting that as a factual impossibility, or sharing a feeling of overload?\" [Fact-Feeling Checks]", bundle: 'pro', guideBack: "A fact versus feeling check" },
+      ]
+    },
+    {
+      name: "Dramatic Accusations",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Navigating emotionally charged claims where personal feelings or dramatic statements are presented as objective facts.\n\nWhat goes wrong: Getting defensive or arguing against their dramatic phrasing, which validates the drama and escalates tension.\n\nWhich strategies bite: **Fact-Feeling Checks** to invite them to categorize their claim, and **Curious Origin Questions** to explore root causes.\n\nThe single thing to avoid: Telling them that their feelings are stupid or completely invalid.\n\nMindset: Feelings are valid experiences, but they are not automatically objective facts.",
+      inputs: [
+        { q: "A partner tearfully asserts that you value your job ten times more than your family.", a: "\"Are you stating that as a fact, or is that expressing how you feel right now?\" [Fact-Feeling Checks]", bundle: 'pro', guideBack: "A fact versus feeling check" },
+        { q: "A coworker loudly claims that the entire executive team is corrupt and sabotaging projects.", a: "\"What led you to that conclusion?\" [Curious Origin Questions]", bundle: 'pro', guideBack: "An origin question" },
+        { q: "A friend dramatically claims that you never invite them anywhere anymore.", a: "\"Is that an objective fact, or how it feels from your side lately?\" [Fact-Feeling Checks]", bundle: 'pro', guideBack: "A fact versus feeling check" },
+        { q: "A client insists that your firm's work has completely ruined their brand reputation.", a: "\"How did you arrive at that impression?\" [Curious Origin Questions]", bundle: 'pro', guideBack: "An origin question" },
+        { q: "A sibling angrily claims that you have always looked down on their career choices.", a: "\"Are you stating a proven fact, or sharing a long-held feeling?\" [Fact-Feeling Checks]", bundle: 'pro', guideBack: "A fact versus feeling check" },
+        { q: "A neighbor angrily declares that your family is deliberately trying to ruin neighborhood peace.", a: "\"What brought you to that conclusion?\" [Curious Origin Questions]", bundle: 'pro', guideBack: "An origin question" },
+        { q: "An employee dramatically states that no one in the office has ever respected their work.", a: "\"Is that a documented fact, or is that expressing a feeling of being unappreciated?\" [Fact-Feeling Checks]", bundle: 'pro', guideBack: "A fact versus feeling check" },
+        { q: "A teenager screams that you are trying to control every single second of their life.", a: "\"What experiences led you to that belief?\" [Curious Origin Questions]", bundle: 'pro', guideBack: "An origin question" },
+      ]
+    },
+    {
+      name: "One-Upmanship",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Facing status plays, competitive flexing, and name-dropping designed to make you feel inferior or provoke an emotional response.\n\nWhat goes wrong: Competing with your own accomplishments, which engages you in an exhausting hierarchy game.\n\nWhich strategies bite: **Flat Acknowledgment** to starve the flex of attention, and **Standing by Decisions** to remain unbothered.\n\nThe single thing to avoid: Trying to match their flex with a bigger story of your own.\n\nMindset: You do not need to compete with someone who is fishing for status. Let them stand alone.",
+      inputs: [
+        { q: "A peer at a networking event boasts about their five-figure monthly passive income.", a: "\"Noted. Understood.\" [Flat Acknowledgment]", bundle: 'pro', guideBack: "A neutral acknowledgment" },
+        { q: "A competitive colleague brags about their complex workflow and asks why you keep yours simple.", a: "\"I chose this simple approach based on the team's needs and facts in front of us.\" [Standing by Decisions]", bundle: 'pro', guideBack: "A clear decision statement" },
+        { q: "An acquaintance brags about flying first class on every vacation to make your flight sound cheap.", a: "\"I see. Got it.\" [Flat Acknowledgment]", bundle: 'pro', guideBack: "A neutral acknowledgment" },
+        { q: "A relative flexes about their luxury car purchase and questions why you bought a modest sedan.", a: "\"I made that purchase call based on our budget and priorities at the time.\" [Standing by Decisions]", bundle: 'pro', guideBack: "A clear decision statement" },
+        { q: "A coworker flexes that they were invited to a high-level dinner that you weren't aware of.", a: "\"Got it. Thanks for sharing.\" [Flat Acknowledgment]", bundle: 'pro', guideBack: "A neutral acknowledgment" },
+        { q: "A rival business owner boasts about their rapid expansion and critiques your steady growth pace.", a: "\"We chose our growth pace deliberately under the risk parameters we set back then.\" [Standing by Decisions]", bundle: 'pro', guideBack: "A clear decision statement" },
+        { q: "A sibling flexes about being the favorite of their in-laws to provoke a competitive reaction.", a: "\"Understood. Noted.\" [Flat Acknowledgment]", bundle: 'pro', guideBack: "A neutral acknowledgment" },
+        { q: "A peer brags about using an expensive external agency and questions why you managed your project in-house.", a: "\"That in-house decision was made based on the budget and skills we had available.\" [Standing by Decisions]", bundle: 'pro', guideBack: "A clear decision statement" },
+      ]
+    },
+    {
+      name: "Deeply Ingrained Beliefs",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Engaging with people who hold strong, stubborn assumptions or ideological beliefs that derail logical conversation.\n\nWhat goes wrong: Telling them they are wrong or arguing logic against a belief tied to their identity.\n\nWhich strategies bite: **Curious Origin Questions** to explore how they formed the belief, and **Fact-Feeling Checks** to clarify perceptions.\n\nThe single thing to avoid: Trying to debate or disprove their core belief in one sitting.\n\nMindset: Curious questions drain the emotional pitcher so calm reasoning can begin.",
+      inputs: [
+        { q: "A relative firmly asserts that all modern medicine is a scam designed to keep people sick.", a: "\"How did you arrive at that conclusion?\" [Curious Origin Questions]", bundle: 'pro', guideBack: "An origin question" },
+        { q: "A coworker passionately claims that working from home completely destroys company loyalty.", a: "\"Are you presenting that as a factual truth, or sharing your feeling on remote work?\" [Fact-Feeling Checks]", bundle: 'pro', guideBack: "A fact versus feeling check" },
+        { q: "A client insists that buying property is always a terrible financial move in any market.", a: "\"What led you to that perspective?\" [Curious Origin Questions]", bundle: 'pro', guideBack: "An origin question" },
+        { q: "A friend stubbornly states that artificial intelligence will make all creative jobs extinct by next year.", a: "\"Is that a documented fact, or how you feel about current tech trends?\" [Fact-Feeling Checks]", bundle: 'pro', guideBack: "A fact versus feeling check" },
+        { q: "An associate claims that traditional schooling is useless for anyone wanting to build a business.", a: "\"What experiences brought you to that conclusion?\" [Curious Origin Questions]", bundle: 'pro', guideBack: "An origin question" },
+        { q: "A family member insists that budget planning is a waste of time because the economy is rigged anyway.", a: "\"Are you saying that is a proven fact, or expressing a feeling of helplessness?\" [Fact-Feeling Checks]", bundle: 'pro', guideBack: "A fact versus feeling check" },
+        { q: "A neighbor asserts that local government officials are all actively working to ruin the town.", a: "\"What led to that belief?\" [Curious Origin Questions]", bundle: 'pro', guideBack: "An origin question" },
+        { q: "A colleague stubbornly declares that leadership training programs never produce any real results.", a: "\"Are you stating that as an objective fact, or describing how those programs felt to you?\" [Fact-Feeling Checks]", bundle: 'pro', guideBack: "A fact versus feeling check" },
+      ]
+    },
+  ],
 };

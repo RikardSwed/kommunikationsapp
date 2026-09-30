@@ -737,6 +737,7 @@ applyInputCounterVisibility();
     praxbest4: { label: 'Praxeology Best Men 04 – Advanced Frame & Attachment Dynamics', minLevel: 'complete' },
     parenting6: { label: 'Parenting 06 – Proactive Structure', minLevel: 'complete' },
     parentingadv: { label: 'Parenting — Advanced', minLevel: 'complete' },
+    jfisher3: { label: 'Jefferson Fisher 3 — De-escalation & Inquiry', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -3516,6 +3517,20 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
+  jfisher3: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
 };
 window.BUNDLE_DEFS = BUNDLE_DEFS;
 
@@ -4406,6 +4421,7 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.33', date: 'September 2026', title: 'Jefferson Fisher 3 \u2014 De-escalation & Inquiry', audience: 'dev', items: ['New complete-tier pack under Assertiveness &amp; Pressure (key jfisher3), built by NotebookLM after it reviewed the finished Jefferson Fisher series: Standing by Decisions, Curious Origin Questions, Fact-Feeling Checks, Isolating Objections and Flat Acknowledgment.', 'Full volume in all six modes: 5 Single decks with 40 cards, 3 Collections decks, 9 scenarios, 40 Challenges cards, 40 Mindset cards and 10 Memorize decks with 80 cards.', 'Content is NotebookLM\'s own, kept as written. Fixed through NotebookLM: Collections, Challenges and sequence replies that copied Single Strategy cards, Single decks where every card had the same reply, and Memorize cards that repeated existing questions. Topic changed from a non-existent one to Assertiveness &amp; Pressure, as in Jefferson Fisher 1\u20132.'] },
   { version: 'v1.29.32', date: 'September 2026', title: 'Jefferson Fisher 1\u20132 completed \u2014 all eight NotebookLM series done', audience: 'dev', items: ['Memorize filled out in both Jefferson Fisher packs (Control under Pressure, Assertive Connection), merged into the existing packs (added only). Both packs now have 10 Memorize decks with 80 cards.', 'Cards that repeated existing cards in the same deck were replaced through NotebookLM.', 'With this, all eight series completed with NotebookLM (Dan Bacon, Todd V, Praxeology Frame, Praxeology Dread, Jimmy on Relationships, Parenting Toward the Kingdom, Dan o Connor, Jefferson Fisher) are full in all six modes.'] },
   { version: 'v1.29.31', date: 'September 2026', title: 'Dan o Connor 1\u20137 completed with NotebookLM', audience: 'dev', items: ['Collections, Sequences, Challenges, Mindset and Memorize filled out in all seven Dan o Connor packs, merged into the existing packs (added only). Every pack now has 3 Collections decks, 9 scenarios, 40 Challenges cards, a Mindset deck per strategy and full Memorize decks.', 'Content is NotebookLM\'s own, kept as written. Fixed: invented guide lines replaced by each strategy\'s own pair, square brackets inside Memorize answers made round, escaped dollar signs, and Memorize cards about Deckstack itself replaced.', 'Replaced through NotebookLM: all six new scenarios in Dan o Connor 1 (wrong step order, then copied replies), everything built on a wrong definition of The B-I-B Script in pack 2 (Benefit, Inconvenience, Benefit instead of Boundary, Instruction, Benefit), cards that copied existing cards in packs 5\u20137, and two cards in pack 7 labelled with the wrong strategy.', 'The brief (pack-gap.js --brief) now lists every existing combo with its steps, and asks for new lines in new scenarios.'] },
   { version: 'v1.29.30', date: 'September 2026', title: 'Parenting 06 and Parenting \u2014 Advanced', audience: 'dev', items: ['Two new complete-tier packs under Communication in Relationships, built by NotebookLM after it reviewed the finished Parenting series against the book: <em>Parenting 06 \u2013 Proactive Structure</em> (key parenting6: Planning in Advance, Stating Parent Action, Positive Directives, Overhauling the Routine, Assigning Real Ownership) and <em>Parenting \u2014 Advanced</em> (key parentingadv), whose five strategies combine moves from Parenting 01\u201305 and whose Sequences also use Parenting 06.', 'Both packs at full volume in all six modes. Content is NotebookLM\'s own, kept as written. Fixed: quotation marks around 80 Mindset fronts and one grammar slip. In the Advanced pack, eight Challenges cards that repeated Single Strategy cards were replaced with new cards written by NotebookLM.'] },

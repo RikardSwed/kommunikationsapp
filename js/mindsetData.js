@@ -11000,4 +11000,86 @@ const mindsetCollections = {
       ]
     },
   ],
+  jfisher3: [
+    {
+      name: "Justification",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I must explain and justify every past choice to prove that I made no mistakes.\"\n\n• **You do not owe a trial in hindsight** — decisions are made under specific conditions with available information.\n• **Justification invites debate** — the more reasons you offer, the more material they have to attack.\n• **Stand by your choice with calm authority** — state the path you took and close the door.\n\nMindset: You made the best choice with what you knew then. You do not owe a trial in hindsight.",
+      inputs: [
+        { q: "\"I must explain every detail of my past choice so they see I was right.\"", a: "You made the best choice with what you knew then. You do not owe a trial in hindsight.", bundle: 'pro' },
+        { q: "\"If someone critiques a past decision, I must prove I made no mistakes.\"", a: "Hindsight is easy. Own the decision you made under the conditions available then.", bundle: 'pro' },
+        { q: "\"Apologizing for an imperfect outcome is the best way to keep peace.\"", a: "Don't apologize for choices made in good faith with available facts.", bundle: 'pro' },
+        { q: "\"The more reasons I give for my choice, the more they will respect it.\"", a: "Every reason you add gives them a new handle to judge your past.", bundle: 'pro' },
+        { q: "\"I must defend choices I made years ago as if I were on trial.\"", a: "Your past choices don't need a defense attorney. State them and move on.", bundle: 'pro' },
+        { q: "\"If a plan failed due to market changes, it means I made a bad decision.\"", a: "Outcomes don't change the validity of a decision made with facts then.", bundle: 'pro' },
+        { q: "\"I should let them walk me through everything I did wrong.\"", a: "Refuse to participate in Monday-morning quarterbacking.", bundle: 'pro' },
+        { q: "\"If I don't justify my choice, people will think I acted carelessly.\"", a: "Stating your decision with calm authority shows competence, not weakness.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Interrogation",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"When someone aggressively questions my beliefs, I must defend my position and prove them wrong.\"\n\n• **Curious questions drain emotional pitchers** — asking how they formed a belief shifts the work to them.\n• **Arguing validates their interrogation** — fighting their stance makes it an identity war.\n• **Explore without absorbing** — ask origin questions while keeping your own mind quiet.\n\nMindset: Curious questions drain the emotional pitcher so calm reasoning can begin.",
+      inputs: [
+        { q: "\"I must debate their extreme opinion until they admit they are wrong.\"", a: "Curious questions drain the emotional pitcher so calm reasoning can begin.", bundle: 'pro' },
+        { q: "\"If I don't argue back when questioned, I look like I agree with them.\"", a: "Asking how they arrived at a belief explores their mind, not your surrender.", bundle: 'pro' },
+        { q: "\"I should tell them why their conclusion is completely illogical.\"", a: "Logic rarely works on identity beliefs. Ask curious origin questions instead.", bundle: 'pro' },
+        { q: "\"When someone challenges my views, I must counter with my own evidence.\"", a: "Draining their pitcher first makes room for them to actually hear you later.", bundle: 'pro' },
+        { q: "\"I must match their aggressive questioning energy to hold parity.\"", a: "Stay calm and curious. Asking \"What led to that decision?\" puts the work on them.", bundle: 'pro' },
+        { q: "\"If they state a wild assumption, I am forced to correct it immediately.\"", a: "Let their assumption sit on the table. Ask how they arrived there.", bundle: 'pro' },
+        { q: "\"Asking questions makes me look like I don't have a strong stance.\"", a: "Questions are the ultimate tool of authority. They control the conversation.", bundle: 'pro' },
+        { q: "\"I need to convince them to change their mind in this exact conversation.\"", a: "Real shift takes time. Plant a curious question and let it work.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Emotional Drama",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"When someone makes a dramatic, emotional accusation, I must treat it as an objective fact.\"\n\n• **Feelings are valid, but not automatically facts** — separate emotional claims from objective reality.\n• **Arguing against drama escalates it** — ask if their claim is a fact or a feeling to bring clarity.\n• **Stay centered in objective reality** — don't absorb their emotional storm as truth.\n\nMindset: Feelings are valid experiences, but they are not automatically objective facts.",
+      inputs: [
+        { q: "\"If they feel hurt, it means I am objectively guilty of doing something wrong.\"", a: "Feelings are valid experiences, but they are not automatically objective facts.", bundle: 'pro' },
+        { q: "\"I must defend myself against dramatic accusations like 'you never listen'.\"", a: "Ask if that is a fact or a feeling to bring cognitive clarity to the drama.", bundle: 'pro' },
+        { q: "\"When someone gets emotional, their statement becomes an absolute truth.\"", a: "A statement spoken with high emotion is still an internal perception, not a fact.", bundle: 'pro' },
+        { q: "\"I should match their emotional intensity so they feel understood.\"", a: "Matching emotional intensity creates a storm. Stay grounded in reality.", bundle: 'pro' },
+        { q: "\"If I don't accept their dramatic framing, I am being unfeeling.\"", a: "You can care about their state without adopting their exaggerated facts.", bundle: 'pro' },
+        { q: "\"I need to prove that their emotional accusation is factually incorrect.\"", a: "Invite them to categorize their own claim rather than fighting it.", bundle: 'pro' },
+        { q: "\"When an argument gets dramatic, objective reality no longer matters.\"", a: "Objective reality is your anchor. Keep distinguishing facts from feelings.", bundle: 'pro' },
+        { q: "\"I am responsible for fixing their dramatic emotional perception.\"", a: "Protect your presence. Let them sort through their own emotional claims.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Objections",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I must address every single excuse or objection someone raises, no matter how many they bring.\"\n\n• **Address the real bottleneck** — isolate whether an objection is the single barrier before solving it.\n• **Chasing endless excuses is a trap** — moving goalposts signal that the objection isn't the real issue.\n• **Pin down the barrier early** — ask \"Aside from that, is there anything else?\" to stop moving targets.\n\nMindset: Address the real bottleneck instead of chasing a moving target of endless excuses.",
+      inputs: [
+        { q: "\"I must solve every new concern they bring up as soon as they mention it.\"", a: "Address the real bottleneck instead of chasing a moving target of endless excuses.", bundle: 'pro' },
+        { q: "\"If they have ten objections, I need to provide ten detailed solutions.\"", a: "Isolate whether one issue is the true barrier before spending your energy on it.", bundle: 'pro' },
+        { q: "\"When someone keeps making excuses, it means I haven't explained well enough.\"", a: "Continuous excuses mean they are avoiding the real issue. Pin it down.", bundle: 'pro' },
+        { q: "\"I should let them bring up new concerns indefinitely without interrupting.\"", a: "Ask \"Aside from that, is there anything else holding you back?\" to lock the door.", bundle: 'pro' },
+        { q: "\"Solving their small excuses will eventually convince them to move forward.\"", a: "Solving fake excuses just gives them time to invent new ones. Isolate the core.", bundle: 'pro' },
+        { q: "\"I must answer every 'what if' scenario they throw at me.\"", a: "Focus on what is actually stopping progress today, not endless hypothetical fears.", bundle: 'pro' },
+        { q: "\"If they change the goalposts, I have to keep running after them.\"", a: "Stand still. Expose the moving goalpost by asking for the single barrier.", bundle: 'pro' },
+        { q: "\"I should negotiate every objection on its own individual merit.\"", a: "Group their concerns together and isolate the true bottleneck first.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Competition",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"When someone brags or flexes status, I must compete to maintain my hierarchy and worth.\"\n\n• **You do not need to compete** — status plays are fishing for an emotional reaction or envy.\n• **Flat acknowledgment starves status flexing** — \"Okay, noted. I got it\" leaves them standing alone.\n• **Quiet certainty beats loud flexing** — true confidence doesn't need to one-up anyone.\n\nMindset: You do not need to compete with someone who is fishing for status. Let them stand alone.",
+      inputs: [
+        { q: "\"I must tell a grander story to prove I am just as successful as they are.\"", a: "You do not need to compete with someone who is fishing for status. Let them stand alone.", bundle: 'pro' },
+        { q: "\"If I don't react to their bragging, they will think I am inferior.\"", a: "Flat acknowledgment shows quiet certainty. Let their flex fall flat.", bundle: 'pro' },
+        { q: "\"I should point out the flaws in their flex to take them down a notch.\"", a: "Attacking their flex validates the competition. A neutral acknowledgment ends it.", bundle: 'pro' },
+        { q: "\"When someone name-drops, I must mention my own powerful connections.\"", a: "Name-dropping is an insecurity play. Don't play the game.", bundle: 'pro' },
+        { q: "\"I need to win the status battle in front of the group.\"", a: "The person who refuses to compete holds the real authority in the room.", bundle: 'pro' },
+        { q: "\"If they brag about working non-stop, I must defend my own work ethic.\"", a: "Say \"Okay, noted. I got it.\" and let them carry their exhaustion.", bundle: 'pro' },
+        { q: "\"I must correct their exaggerated claims of personal achievement.\"", a: "You don't need to police their ego. Offer a flat acknowledgment and move on.", bundle: 'pro' },
+        { q: "\"Ignoring a flex makes me look like I lost the interaction.\"", a: "Refusing the bait is the ultimate power move. Protect your peace.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

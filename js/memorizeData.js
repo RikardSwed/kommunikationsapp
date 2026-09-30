@@ -19622,4 +19622,146 @@ const memorizeCollections = {
       ]
     },
   ],
+  jfisher3: [
+    {
+      name: "Core Idea",
+      description: "The shape of this pack: five de-escalation and inquiry strategies to drain emotional tension, clarify issues, and stand by past choices.\n\n1. **Standing by Decisions** — anchor past choices to the information available then.\n2. **Curious Origin Questions** — explore how beliefs were formed.\n3. **Fact-Feeling Checks** — separate emotional claims from reality.\n4. **Isolating Objections** — pin down moving targets and excuses.\n5. **Flat Acknowledgment** — neutralize one-upmanship without competing.",
+      cards: [
+        { q: "What are the five de-escalation and inquiry strategies in this pack?", a: "Standing by Decisions, Curious Origin Questions, Fact-Feeling Checks, Isolating Objections, and Flat Acknowledgment.", bundle: 'free' },
+        { q: "What is the core premise of De-escalation & Inquiry?", a: "True conversational control comes from draining emotional tension, clarifying real issues, and standing firm without justification.", bundle: 'free' },
+        { q: "How does inquiring differ from arguing in high-stress dialogue?", a: "Arguing fights an identity war, whereas inquiring drains the emotional pitcher by exploring how a belief was formed.", bundle: 'free' },
+        { q: "Which strategy is designed to handle Monday-morning quarterbacking?", a: "Standing by Decisions — anchoring choices to the information available at the time.", bundle: 'free' },
+        { q: "What does this pack teach about handling dramatic, exaggerated claims?", a: "Ask whether the claim is a fact or a feeling to bring cognitive clarity to the drama.", bundle: 'free' },
+        { q: "Why is a flat acknowledgment line effective against competitive bragging?", a: "It acts like water off a duck's back, refusing to supply the emotional reaction or envy the flexer seeks.", bundle: 'pro' },
+        { q: "What is the target mindset when someone brings excuse after excuse?", a: "Address the real bottleneck using Isolating Objections instead of chasing a moving target.", bundle: 'pro' },
+        { q: "Why does Jefferson Fisher advocate using inquiry rather than defensiveness when someone presents a hostile claim?", a: "Because inquiry shifts the cognitive burden back to the speaker, draining emotional momentum and uncovering the true basis of their claim.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Standing by Decisions",
+      description: "",
+      cards: [
+        { q: "What is the core move of Standing by Decisions?", a: "Stand firmly behind a past choice without getting pulled into post-hoc interrogation or defensive justification.", bundle: 'free' },
+        { q: "What is a typical phrase for Standing by Decisions?", a: "\"This was the path I took under the information I had at the time.\"", bundle: 'free' },
+        { q: "Why should you avoid apologizing when someone critiques a past choice in hindsight?", a: "Apologizing for a choice made in good faith validates their right to put your past on trial.", bundle: 'free' },
+        { q: "What is Monday-morning quarterbacking in communication?", a: "Critiquing a past decision using information or conditions that were not available when the choice was made.", bundle: 'free' },
+        { q: "How does anchoring your choice to available facts close the door on debate?", a: "It states your decision as an unarguable historical fact rather than an ongoing negotiation.", bundle: 'free' },
+        { q: "Why does giving multiple reasons to justify a past decision backfire?", a: "Every reason you add gives the interrogator a new handle to critique and judge your past process.", bundle: 'pro' },
+        { q: "How should you handle a situation where a past decision had an unexpected bad outcome?", a: "Anchor the decision to what you knew then: \"That was the best decision given the parameters we were working with.\"", bundle: 'pro' },
+        { q: "What is the core mindset of Standing by Decisions?", a: "You made the best choice with what you knew then; you do not owe a trial in hindsight.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Curious Origin Questions",
+      description: "",
+      cards: [
+        { q: "What is the core move of Curious Origin Questions?", a: "Drain a speaker's emotional pitcher by asking curious questions about how they arrived at a belief or decision.", bundle: 'free' },
+        { q: "What are two typical Curious Origin Question phrases?", a: "\"How did you come to that conclusion?\" and \"What led to that decision?\"", bundle: 'free' },
+        { q: "What is the key difference between Curious Origin Questions and Decoding Intent?", a: "Curious Origin Questions explores how a belief was formed, while Decoding Intent targets the motive behind snark.", bundle: 'free' },
+        { q: "What happens to a person's emotional state when you ask them an origin question?", a: "It forces them to pause and access their logical brain to explain their reasoning, draining emotional tension.", bundle: 'free' },
+        { q: "Why should you listen without interrupting after asking an origin question?", a: "Interrupting refills their emotional pitcher and turns a curious exploration back into an argument.", bundle: 'free' },
+        { q: "How does Curious Origin Questions handle extreme or stubborn assumptions?", a: "By inviting the speaker to walk you through their thought process, exposing weak logic without direct attack.", bundle: 'pro' },
+        { q: "Why is curious inquiry considered more authoritative than arguing logic?", a: "Inquiring puts the work on the other person to explain their stance while keeping you calm and in control.", bundle: 'pro' },
+        { q: "What mindset grounds the use of Curious Origin Questions?", a: "Curious questions drain the emotional pitcher so calm reasoning can begin.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Fact-Feeling Checks",
+      description: "",
+      cards: [
+        { q: "What is the core move of Fact-Feeling Checks?", a: "Disentangle objective reality from dramatic accusations by asking whether a statement is a fact or a feeling.", bundle: 'free' },
+        { q: "What is the exact phrasing for a Fact-Feeling Check?", a: "\"Are you saying that is a fact or a feeling?\"", bundle: 'free' },
+        { q: "Why is asking whether a claim is a fact or a feeling so effective?", a: "It invites the speaker to categorize their own claim, bringing cognitive clarity to an emotional assertion.", bundle: 'free' },
+        { q: "What is a common dramatic claim that requires a Fact-Feeling Check?", a: "Statements like \"You never listen to me\" or \"Everyone in this company hates our team.\"", bundle: 'free' },
+        { q: "Why must you keep your tone neutral and curious when asking a Fact-Feeling Check?", a: "A patronizing tone makes the question sound like an attack, triggering defensiveness instead of self-awareness.", bundle: 'free' },
+        { q: "How does a Fact-Feeling Check respect the speaker while protecting objective reality?", a: "It acknowledges that their feelings are valid internal experiences without accepting them as objective facts.", bundle: 'pro' },
+        { q: "What should you do after the speaker categorizes their claim as a feeling?", a: "Acknowledge the feeling calmly, then redirect the conversation to the objective facts on the table.", bundle: 'pro' },
+        { q: "What mindset supports the Fact-Feeling Checks strategy?", a: "Feelings are valid experiences, but they are not automatically objective facts.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Isolating Objections",
+      description: "",
+      cards: [
+        { q: "What is the core move of Isolating Objections?", a: "Pin down moving targets and endless excuses by isolating whether a specific objection is the only true barrier.", bundle: 'free' },
+        { q: "What is the typical phrase for Isolating Objections?", a: "\"Aside from that, is there anything else holding you back?\"", bundle: 'free' },
+        { q: "How does Isolating Objections work with teenagers or family members?", a: "It stops them from inventing excuse after excuse by pinning down the single remaining issue.", bundle: 'free' },
+        { q: "Why is chasing endless excuses a trap in negotiation or daily life?", a: "Solving un-isolated excuses wastes energy on fake barriers while the real bottleneck remains untouched.", bundle: 'free' },
+        { q: "What step must you take after asking an isolation question?", a: "Wait for their answer to confirm that clearing this single issue will resolve the barrier completely.", bundle: 'free' },
+        { q: "What should you do if someone raises three new excuses after an isolation question?", a: "Group the new excuses together and ask again if those three represent the absolute final barriers.", bundle: 'pro' },
+        { q: "How does Isolating Objections prevent moving goalposts?", a: "It locks the current scope of concerns so new goalposts cannot be introduced once the issue is solved.", bundle: 'pro' },
+        { q: "What mindset grounds the Isolating Objections strategy?", a: "Address the real bottleneck instead of chasing a moving target of endless excuses.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Flat Acknowledgment",
+      description: "",
+      cards: [
+        { q: "What is the core move of Flat Acknowledgment?", a: "Neutralize one-upmanship, status plays, and competitive bragging by offering a flat, calm acknowledgment.", bundle: 'free' },
+        { q: "What is the exact phrase for a Flat Acknowledgment?", a: "\"Okay, noted. I got it.\"", bundle: 'free' },
+        { q: "Why does a flat acknowledgment line stop competitive flexing in its tracks?", a: "It starves the flexer of the emotional reaction, envy, or competition they were fishing for.", bundle: 'free' },
+        { q: "What common mistake do people make when someone brags about their achievements?", a: "Trying to one-up the story with their own achievement, which engages them in an exhausting hierarchy game.", bundle: 'free' },
+        { q: "How should your tone sound when delivering a Flat Acknowledgment?", a: "Completely flat, calm, and neutral — like water off a duck's back.", bundle: 'free' },
+        { q: "How does Flat Acknowledgment preserve your authority in a group setting?", a: "Refusing to compete shows that you are secure in your position and unaffected by status plays.", bundle: 'pro' },
+        { q: "When should you use Flat Acknowledgment instead of calling out subtext?", a: "Use Flat Acknowledgment when the behavior is pure status bragging rather than a direct personal attack.", bundle: 'pro' },
+        { q: "What mindset grounds the Flat Acknowledgment strategy?", a: "You do not need to compete with someone who is fishing for status; let them stand alone.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Inquire and Anchor** — do you need to explore their belief, defend a past choice, or give a flat acknowledgment?\n• **Clarify the Issue** — is the obstacle a dramatic accusation, a moving objection, or status bragging?\n• **The Full Set** — all five strategies mixed together with no situational warning.\n\nOne question decides nearly all of it: what kind of emotional noise is the other person throwing at you?",
+      cards: [
+        { q: "What diagnostic question helps you choose between Curious Origin Questions and Standing by Decisions?", a: "Are you trying to explore how they formed their belief, or are you holding firm on a past choice of your own?", bundle: 'pro' },
+        { q: "Which strategy in Clarify the Issue fits best when someone brings a new excuse every minute?", a: "Isolating Objections — asking \"Aside from that, is there anything else holding you back?\"", bundle: 'pro' },
+        { q: "Which strategy should you select when an associate name-drops executive contacts to flex status?", a: "Flat Acknowledgment — saying \"Okay, noted. I got it.\"", bundle: 'pro' },
+        { q: "In Inquire and Anchor, when is Standing by Decisions preferred over Flat Acknowledgment?", a: "When they are directly interrogating a past choice you made, rather than just flexing their own status.", bundle: 'pro' },
+        { q: "What is the target mindset when training in The Full Set collection?", a: "Stay calm, stay curious, and hold your ground without offering emotional fuel or justification.", bundle: 'pro' },
+        { q: "When selecting between Fact-Feeling Checks and Isolating Objections in Clarify the Issue, what determines your choice?", a: "Choose Fact-Feeling Checks when an emotional claim obscures reality, and Isolating Objections when a series of changing excuses delays progress.", bundle: 'pro' },
+        { q: "What is the primary function of the Inquire and Anchor collection?", a: "To balance curious exploration of their beliefs with firm anchoring of your own past decisions.", bundle: 'pro' },
+        { q: "Why does The Full Set collection mix all five strategies without situational warnings?", a: "To train instant, real-time recognition of whether a speaker is interrogating, escalating drama, making excuses, or status-flexing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Origin Audit** — Curious Origin Questions → Fact-Feeling Checks → Standing by Decisions\n2. **The Moving Target** — Isolating Objections → Fact-Feeling Checks → Flat Acknowledgment\n3. **The Quiet De-escalation** — Flat Acknowledgment → Curious Origin Questions → Standing by Decisions\n\nIn each one, the order of the steps is what does the work of defusing the conflict.",
+      cards: [
+        { q: "Why does The Origin Audit open with Curious Origin Questions before checking facts versus feelings?", a: "Asking how they arrived at their stance drains the emotional pitcher first, making them open to checking facts.", bundle: 'pro' },
+        { q: "Why does The Moving Target use Isolating Objections as its opening step?", a: "Isolating the issue stops them from shifting goalposts before you clarify if the concern is a fact or a feeling.", bundle: 'pro' },
+        { q: "In The Quiet De-escalation, why is Flat Acknowledgment used before asking an origin question?", a: "Delivering a flat acknowledgment starves their status flex first, shifting the room to quiet exploration.", bundle: 'pro' },
+        { q: "How does ending with Standing by Decisions in The Origin Audit lock in your boundary?", a: "After exploring their view and checking facts, stating your past choice anchors your boundary with a firm period.", bundle: 'pro' },
+        { q: "Why does The Moving Target sequence end with a Flat Acknowledgment line?", a: "To stop any remaining status plays or final flexes after the core objection has been isolated and clarified.", bundle: 'pro' },
+        { q: "What conversational problem does The Origin Audit sequence specifically solve?", a: "It systematically defuses an aggressive attack on a past choice by draining emotional momentum before asserting your decision.", bundle: 'pro' },
+        { q: "Why must step order remain strict when executing a three-step de-escalation combo?", a: "Because attempting to assert a decision before draining emotional tension or isolating objections re-ignites defensiveness.", bundle: 'pro' },
+        { q: "In The Origin Audit sequence, why is Fact-Feeling Checks placed immediately after the origin question?", a: "It bridges the gap between draining their initial emotional momentum and anchoring your past choice, forcing them to separate feelings from objective reality.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **Post-Hoc Interrogation** — dealing with Monday-morning quarterbacking of your choices\n• **Moving Goalposts** — handling people who raise excuse after excuse\n• **Dramatic Accusations** — navigating emotional claims confused with facts\n• **One-Upmanship** — deflecting status plays and competitive flexing\n• **Deeply Ingrained Beliefs** — exploring rigid assumptions without arguing\n\nEach challenge category represents a distinct way a conversation can derail.",
+      cards: [
+        { q: "How does Standing by Decisions handle Monday-morning quarterbacking in Post-Hoc Interrogation?", a: "By anchoring the choice to the parameters available at the time: \"This was the path I took under the information I had then.\"", bundle: 'pro' },
+        { q: "What is the primary mistake people make when facing Moving Goalposts?", a: "Answering every new excuse individually without asking if it is the single remaining barrier.", bundle: 'pro' },
+        { q: "Why is Fact-Feeling Checks effective against Dramatic Accusations?", a: "It forces the speaker to acknowledge that their exaggerated claim is an internal perception rather than objective truth.", bundle: 'pro' },
+        { q: "How does Flat Acknowledgment neutralize status plays in the One-Upmanship challenge?", a: "By delivering a flat \"Okay, noted. I got it,\" which denies them the envy or competition they are trying to provoke.", bundle: 'pro' },
+        { q: "What causes people to struggle when responding to Dramatic Accusations?", a: "Taking the exaggerated emotional claim personally and trying to debate the drama rather than checking fact versus feeling.", bundle: 'pro' },
+        { q: "In the Deeply Ingrained Beliefs challenge, why is direct debate usually counterproductive?", a: "Direct debate threatens identity, causing the speaker to double down on their belief rather than examine how they formed it.", bundle: 'pro' },
+        { q: "Why is asking a Fact-Feeling Check when facing a Deeply Ingrained Belief more effective than challenging the belief itself?", a: "It redirects focus from an identity-based argument to whether their claim is an internal perception or a verifiable fact.", bundle: 'pro' },
+        { q: "Why is Monday-morning quarterbacking in Post-Hoc Interrogation so effective at triggering defensiveness?", a: "It uses hindsight knowledge to make a well-reasoned past decision appear incompetent, tempting you to defend your intelligence.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Justification** — you make choices with available information: no hindsight trial needed\n• **Interrogation** — curious questions drain emotional pitchers without argument\n• **Emotional Drama** — feelings are valid, but they are not automatically objective facts\n• **Objections** — isolate the real bottleneck instead of chasing endless excuses\n• **Competition** — you do not need to compete with status plays: let them stand alone\n\nIn every mindset deck, you train to replace a limiting belief with a grounded, courtroom-tested truth.",
+      cards: [
+        { q: "In the Interrogation mindset, why does answering aggressive questions immediately weaken your authority?", a: "It accepts the premise that you are accountable to their trial, rather than shifting the cognitive work back to them.", bundle: 'pro' },
+        { q: "What limiting thought traps people during Emotional Drama encounters?", a: "Believing that an intense emotional outburst automatically means you are objectively guilty of wronging them.", bundle: 'pro' },
+        { q: "Why does the reset in the Emotional Drama mindset focus on distinguishing feelings from facts?", a: "Because validating someone's emotional experience does not require accepting their exaggerated narrative as objective truth.", bundle: 'pro' },
+        { q: "What limiting belief fuels the urge to respond when someone brags in the Competition mindset?", a: "The fear that staying silent makes you look inferior or defeated in front of others.", bundle: 'pro' },
+        { q: "What underlying insecurity drives the constant urge to justify past decisions when questioned?", a: "The fear that if an outcome was imperfect or criticized, others will view you as incompetent or irresponsible.", bundle: 'pro' },
+        { q: "How does your internal posture shift once you release the need to justify past choices to others?", a: "You stop viewing conversations as court trials where you are the defendant, reclaiming peace and calm authority.", bundle: 'pro' },
+        { q: "What psychological fear causes people to treat every raised excuse as a genuine barrier that must be solved?", a: "The fear of conflict and disagreement, which makes them believe that satisfying every demand is the only way to earn cooperation.", bundle: 'pro' },
+        { q: "What personal clarity do you gain once you reset the habit of entertaining moving excuses?", a: "You stop wasting emotional bandwidth on secondary noise and regain control over where your time and energy are spent.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

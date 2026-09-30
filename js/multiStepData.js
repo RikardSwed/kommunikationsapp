@@ -15567,4 +15567,111 @@ const multiStepCollections = {
       ]
     },
   ],
+  jfisher3: [
+    {
+      name: "The Origin Audit",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "De-escalate a rigid stance by exploring origins, separating facts from feelings, and standing by your choice.\n\n1. **Curious Origin Questions** — ask how they formed their firm conclusion.\n2. **Fact-Feeling Checks** — separate their emotional perception from objective reality.\n3. **Standing by Decisions** — state your past decision as an unarguable fact.\n\nWhy this order: Exploring origin drains the initial pitcher, checking fact versus feeling brings cognitive clarity, and standing by decisions anchors your boundary.\n\nMindset: Drain their emotional pitcher before you anchor your ground.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A relative aggressively criticizes your choice of holiday travel accommodation.",
+          steps: [
+            { front: "Curious Origin Questions — they declare your choice is terrible", back: "\"What information brought you to that view of the place?\"", guideFront: "Exploring how they formed a belief when...", guideBack: "An origin question" },
+            { front: "Fact-Feeling Checks — they claim everyone will have a miserable time", back: "\"Is everyone having a bad time an established fact, or how you feel about the trip?\"", guideFront: "Separating emotional claims from facts when...", guideBack: "A fact versus feeling check" },
+            { front: "Standing by Decisions — they insist you should have asked them first", back: "\"I reserved those rooms based on the availability and prices we had at that moment.\"", guideFront: "Standing by a past choice when...", guideBack: "A clear decision statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A colleague passionately attacks a project layout you finalized last week.",
+          steps: [
+            { front: "Curious Origin Questions — they assert that the layout ruins the presentation", back: "\"What specific elements brought you to that impression of the layout?\"", guideFront: "Exploring how they formed a belief when...", guideBack: "An origin question" },
+            { front: "Fact-Feeling Checks — they claim the client will hate it and drop the firm", back: "\"Is the client dropping us a confirmed fact, or an anxious feeling about the review?\"", guideFront: "Separating emotional claims from facts when...", guideBack: "A fact versus feeling check" },
+            { front: "Standing by Decisions — they demand to know why you didn't use their draft", back: "\"I finalized that layout using the project guidelines provided to us last week.\"", guideFront: "Standing by a past choice when...", guideBack: "A clear decision statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A partner demands to know why you allocated funds to a specific repair.",
+          steps: [
+            { front: "Curious Origin Questions — they claim you wasted money needlessly", back: "\"What led you to believe that allocation was wasteful?\"", guideFront: "Exploring how they formed a belief when...", guideBack: "An origin question" },
+            { front: "Fact-Feeling Checks — they tearfully claim you don't value the family safety", back: "\"Are you stating as a fact that I don't care, or expressing a feeling of worry?\"", guideFront: "Separating emotional claims from facts when...", guideBack: "A fact versus feeling check" },
+            { front: "Standing by Decisions — they keep questioning the contractor choice", back: "\"I selected that contractor based on the quotes and credentials we received back then.\"", guideFront: "Standing by a past choice when...", guideBack: "A clear decision statement" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Moving Target",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Pin down an elusive objector by isolating barriers, checking facts, and offering a flat acknowledgment.\n\n1. **Isolating Objections** — ask if a raised issue is the single remaining barrier.\n2. **Fact-Feeling Checks** — clarify whether their remaining concern is factual or emotional.\n3. **Flat Acknowledgment** — deliver a flat acknowledgment line when they attempt a final flex.\n\nWhy this order: Isolating stops moving excuses, checking facts clarifies real concerns, and flat acknowledgment stops status games.\n\nMindset: Pin down the real bottleneck so moving goalposts disappear.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A teenager brings up excuse after excuse to avoid completing their weekend task.",
+          steps: [
+            { front: "Isolating Objections — they bring up a new issue after you solved the last one", back: "\"If we clear up that concern, is there any other hurdle keeping you from finishing?\"", guideFront: "Pinning down the real issue when...", guideBack: "An isolation question" },
+            { front: "Fact-Feeling Checks — they claim you always treat them unfairer than their sibling", back: "\"Are you sharing a factual difference in workload, or is that how it feels right now?\"", guideFront: "Separating emotional claims from facts when...", guideBack: "A fact versus feeling check" },
+            { front: "Flat Acknowledgment — they brag that their friends' parents never make them do chores", back: "\"I hear you. That's noted.\"", guideFront: "Refusing to compete or argue when...", guideBack: "A neutral acknowledgment" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A client raises continuous minor objections to delay signing a contract renewal.",
+          steps: [
+            { front: "Isolating Objections — they raise a concern about shipping after pricing was set", back: "\"If shipping terms are settled, is there any remaining obstacle to closing the agreement?\"", guideFront: "Pinning down the real issue when...", guideBack: "An isolation question" },
+            { front: "Fact-Feeling Checks — they dramatically claim your firm doesn't prioritize them", back: "\"Is our firm neglecting your account a factual reality, or a concern you're feeling today?\"", guideFront: "Separating emotional claims from facts when...", guideBack: "A fact versus feeling check" },
+            { front: "Flat Acknowledgment — they brag about having three other vendors begging for their deal", back: "\"Got it. Loud and clear.\"", guideFront: "Refusing to compete or argue when...", guideBack: "A neutral acknowledgment" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A friend keeps inventing reasons why they might cancel joining a group vacation.",
+          steps: [
+            { front: "Isolating Objections — they bring up work busywork after you adjusted dates", back: "\"Besides your work schedule, is there any other factor preventing you from joining?\"", guideFront: "Pinning down the real issue when...", guideBack: "An isolation question" },
+            { front: "Fact-Feeling Checks — they state that the group will probably ignore them anyway", back: "\"Is being ignored a factual certainty, or a personal feeling about the group?\"", guideFront: "Separating emotional claims from facts when...", guideBack: "A fact versus feeling check" },
+            { front: "Flat Acknowledgment — they flex about how high-demand their schedule is right now", back: "\"Understood. Thanks for giving me the heads up.\"", guideFront: "Refusing to compete or argue when...", guideBack: "A neutral acknowledgment" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Quiet De-escalation",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Neutralize competitive posturing, explore the underlying belief, and anchor your past decision.\n\n1. **Flat Acknowledgment** — refuse to engage with status flexing or one-upmanship.\n2. **Curious Origin Questions** — ask how they arrived at their stance once the flex fails.\n3. **Standing by Decisions** — state your decision firmly without defending or justifying.\n\nWhy this order: Flat acknowledgment starves status plays, curious questions shift to real inquiry, and standing by decisions closes the issue.\n\nMindset: Refuse the bait, explore the root, and hold your line.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A competitive coworker boasts about their achievements before attacking your report.",
+          steps: [
+            { front: "Flat Acknowledgment — they brag about working ninety hours to make you look bad", back: "\"Understood. That's clear.\"", guideFront: "Refusing to compete or argue when...", guideBack: "A neutral acknowledgment" },
+            { front: "Curious Origin Questions — they claim your project draft will be rejected by leadership", back: "\"What data brought you to that impression of my draft?\"", guideFront: "Exploring how they formed a belief when...", guideBack: "An origin question" },
+            { front: "Standing by Decisions — they ask why you didn't follow their personal template", back: "\"I structured the report based on the specific mandate handed down by the director.\"", guideFront: "Standing by a past choice when...", guideBack: "A clear decision statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A relative name-drops at dinner before criticizing your career decisions.",
+          steps: [
+            { front: "Flat Acknowledgment — they boast about executive contacts to establish hierarchy", back: "\"I see. Thanks for sharing that.\"", guideFront: "Refusing to compete or argue when...", guideBack: "A neutral acknowledgment" },
+            { front: "Curious Origin Questions — they claim your field has no long-term stability", back: "\"What experience formed that outlook on my career path?\"", guideFront: "Exploring how they formed a belief when...", guideBack: "An origin question" },
+            { front: "Standing by Decisions — they ask why you left your previous secure company", back: "\"I made that career move based on the opportunities and personal goals I had at that time.\"", guideFront: "Standing by a past choice when...", guideBack: "A clear decision statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A client brags about crushing competitors before questioning your scope.",
+          steps: [
+            { front: "Flat Acknowledgment — they brag about getting massive discounts elsewhere", back: "\"Understood. Duly noted.\"", guideFront: "Refusing to compete or argue when...", guideBack: "A neutral acknowledgment" },
+            { front: "Curious Origin Questions — they claim your package includes unnecessary hours", back: "\"What led you to think those hours aren't necessary for the scope?\"", guideFront: "Exploring how they formed a belief when...", guideBack: "An origin question" },
+            { front: "Standing by Decisions — they demand to know why you set the initial timeline", back: "\"We set that timeline based on the project requirements agreed upon during onboarding.\"", guideFront: "Standing by a past choice when...", guideBack: "A clear decision statement" },
+          ]
+        },
+      ]
+    },
+  ],
 };
