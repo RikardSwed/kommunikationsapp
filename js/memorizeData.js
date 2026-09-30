@@ -12868,6 +12868,7 @@ const memorizeCollections = {
         { q: "What is the psychological effect of an intent question?", a: "It forces them to look in a mirror and listen to their own words, which instantly stops the fun of the power play.", bundle: 'pro' },
         { q: "Why does Decoding Intent help you stay calm?", a: "Because it reminds you that their belittling remark is a projection of their insecurity, not a threat to your worth.", bundle: 'pro' },
         { q: "When should you avoid using Decoding Intent?", a: "When you are with close loved ones where the issue is deep vulnerability rather than everyday workplace snark.", bundle: 'pro' },
+        { q: "What hidden need or driver usually underlies a belittling or snarky comment?", a: "Inner insecurity and a desperate grab for conversational hierarchy or dominance.", bundle: 'pro' },
       ]
     },
     {
@@ -12880,6 +12881,8 @@ const memorizeCollections = {
         { q: "What is the risk of answering an insult with a direct counter-attack?", a: "You match their frequency, validate their tone, and make yourself look out of control.", bundle: 'pro' },
         { q: "What do you say if you want to use their exact words against them?", a: "Wait five seconds, then repeat their insult flatly as a question: \"I'm an idiot?\"", bundle: 'pro' },
         { q: "How does Return to Sender take the oxygen out of the room for a bully?", a: "It delays their gratification. They wanted an instant, defensive reaction, and instead they got silent observation.", bundle: 'pro' },
+        { q: "What happens if a hostile person double-downs when asked to repeat an insult?", a: "You repeat their insult flatly as a question, leaving the spotlight and awkwardness entirely on them.", bundle: 'pro' },
+        { q: "What should you say if someone doubles down on an insult after you ask them to repeat it?", a: "Say \"Thank you\" — thanking them for showing you who they are so you know where you stand.", bundle: 'pro' },
       ]
     },
     {
@@ -12892,6 +12895,8 @@ const memorizeCollections = {
         { q: "What is the cat-and-laser-pointer metaphor in gaslighting?", a: "The gaslighter is trying to make you the cat chasing their laser pointer everywhere but the truth. To stop it, stand still.", bundle: 'pro' },
         { q: "Why is \"Period\" such an important part of the response?", a: "It signals that your memory is a firm state, not a negotiation or an invitation to argue.", bundle: 'pro' },
         { q: "How does Straightening the Record handle their twisted timeline?", a: "It completely bypasses the details of their story and simply claims your own experience with quiet authority.", bundle: 'pro' },
+        { q: "What distinction does Jefferson Fisher draw between owning facts versus owning someone's narrative?", a: "You own the objective facts of what happened, but never their negative story, labels, or emotional accusations.", bundle: 'pro' },
+        { q: "How do you distinguish between an honest difference in memory and active gaslighting?", a: "An honest difference allows both perspectives to exist, whereas gaslighting demands that you abandon your reality to accept theirs.", bundle: 'pro' },
       ]
     },
     {
@@ -12904,6 +12909,8 @@ const memorizeCollections = {
         { q: "What do you say if someone sends a brief, freezing text message?", a: "\"Did you mean for that to sound short?\" This gives them a clear path to clarify rather than let the tension fester.", bundle: 'pro' },
         { q: "Why is \"Should I read into that?\" so effective?", a: "It forces them to either own their hidden attitude or backtrack and say \"No, I'm just busy.\"", bundle: 'pro' },
         { q: "What is the mistake people make after exposing subtext?", a: "Pressing too hard. Once you've signaled \"I see what you're doing,\" let it go — don't trap them like a wild animal.", bundle: 'pro' },
+        { q: "How does gently naming friction or coldness change the dynamic of passive aggression?", a: "It brings the unspoken tension into the open, making the hidden game unrewarding to continue.", bundle: 'pro' },
+        { q: "How can you respond when someone tries to dismiss a hurtful comment with \"I was just joking\"?", a: "Play off the word joke by calmly replying \"Then make it funnier\" or \"Then work on your material.\"", bundle: 'pro' },
       ]
     },
     {
@@ -12916,6 +12923,8 @@ const memorizeCollections = {
         { q: "Why does Naming the Reaction show high emotional intelligence?", a: "It signals that you are self-aware and in control of your tempo, rather than letting your triggers drive your behavior.", bundle: 'pro' },
         { q: "How does Naming the Reaction handle crying or physical shaking?", a: "By labeling the physical state (\"These are stressed tears, keep talking\") so it doesn't serve as a distraction or a weapon.", bundle: 'pro' },
         { q: "When should you use \"I can tell I'm not ready for this conversation\"?", a: "When you are too emotionally flooded to think analytically, especially late at night or during an unexpected ambush.", bundle: 'pro' },
+        { q: "How does voicing physical cues like tight shoulders or adrenaline restore your self-control?", a: "Stating the feeling out loud creates cognitive distance so you observe the emotion instead of becoming it.", bundle: 'pro' },
+        { q: "Why is taking a timed timeout an act of responsibility rather than avoidance?", a: "It prevents emotional flooding from driving bad decisions and preserves the relationship until calm returns.", bundle: 'pro' },
       ]
     },
     {
@@ -12925,6 +12934,11 @@ const memorizeCollections = {
         { q: "What does the Pressure Defense collection make you choose between?", a: "Straightening the Record for fact-twisting, Return to Sender for insults, and Decoding Intent for snark.", bundle: 'pro' },
         { q: "What is the key to the Expose and Regulate collection?", a: "Choosing between Calling Out Subtext for their passive-aggressive digs, and Naming the Reaction for your own physical tension.", bundle: 'pro' },
         { q: "Why are there multiple collections in this pack?", a: "To allow you to train separate, smaller pairs of defenses before testing your skills against the full mixed set.", bundle: 'pro' },
+        { q: "What single diagnostic question helps you choose between Straightening the Record and Return to Sender?", a: "Are they attacking your character with direct insults, or are they rewriting history and gaslighting?", bundle: 'pro' },
+        { q: "Which strategy fits best when someone uses sarcastic jokes or icy text messages?", a: "Calling Out Subtext — it brings the hidden friction into the open.", bundle: 'pro' },
+        { q: "Which strategy should you choose when your own body signals fight-or-flight flooding?", a: "Naming the Reaction — claim your internal state out loud to stay regulated.", bundle: 'pro' },
+        { q: "In The Full Set collection, how do you handle a snide comment meant to grab hierarchy?", a: "Use Decoding Intent to ask what motive drove the remark.", bundle: 'pro' },
+        { q: "What is the main mistake when choosing a pressure-defense strategy?", a: "Trying to win an argument or match hostility instead of choosing the single move that protects your peace.", bundle: 'pro' },
       ]
     },
     {
@@ -12935,6 +12949,10 @@ const memorizeCollections = {
         { q: "Why does Return to Sender come before the intent check in a direct attack?", a: "Because the silence and repetition drain the emotional energy before you spotlight their motive.", bundle: 'pro' },
         { q: "What is the order in The Clean Deflection?", a: "Calling Out Subtext, then Decoding Intent, then Naming the Reaction.", bundle: 'pro' },
         { q: "What is the purpose of The Pause and Reset sequence?", a: "To recognize emotional flooding, label the circular argument, and exit cleanly with a set return time.", bundle: 'pro' },
+        { q: "Why does silence come before requesting a repetition in The Neutral Ground sequence?", a: "A five-to-seven-second pause drains the immediate amygdala charge before you force them to speak.", bundle: 'pro' },
+        { q: "In The Clean Deflection, why is Calling Out Subtext used as the opening move?", a: "Exposing the passive-aggressive undertone immediately stops the hidden game before asking about intent.", bundle: 'pro' },
+        { q: "What is the final step in The Pause and Reset sequence when an argument goes in circles?", a: "Setting a specific time to return to the conversation once both nervous systems are calm.", bundle: 'pro' },
+        { q: "Why should you avoid explaining your memory during the final step of The Neutral Ground?", a: "Explaining or justifying gives the gaslighter more material to twist; stating it as a period closes the door.", bundle: 'pro' },
       ]
     },
     {
@@ -12945,6 +12963,10 @@ const memorizeCollections = {
         { q: "What is the key to the Passive Aggression challenge?", a: "Exposing the subtext to the light rather than pretending you didn't notice the dig to keep the peace.", bundle: 'pro' },
         { q: "What is the target error in the Timeline Twisting challenge?", a: "Going down the rabbit hole to litigate every detail of their twisted history.", bundle: 'pro' },
         { q: "How does the Emotional Flooding challenge handle crying?", a: "By continuing to look at them normally and focusing on the words, rather than acting exasperated or rolling your eyes.", bundle: 'pro' },
+        { q: "What drives pushy people in the Rapid Fire challenge category?", a: "They use accelerated pacing to bypass your analytical brain and force a rapid concession.", bundle: 'pro' },
+        { q: "How does Naming the Reaction neutralize the Rapid Fire challenge?", a: "By stating out loud that you are being rushed and taking time to think on your own timeframe.", bundle: 'pro' },
+        { q: "What makes Timeline Twisting so effective for a manipulator?", a: "It acts as a laser pointer, tempting you to chase every detail rather than standing firm on your truth.", bundle: 'pro' },
+        { q: "What is the primary goal when facing the Emotional Flooding challenge?", a: "Protect your presence and stay regulated rather than absorbing or trying to fix their emotional storm.", bundle: 'pro' },
       ]
     },
     {
@@ -12954,6 +12976,11 @@ const memorizeCollections = {
         { q: "What is the limiting belief in the Hostility mindset?", a: "That you must strike back immediately with an aggressive zinger to survive and win the moment.", bundle: 'pro' },
         { q: "Why is over-apologizing considered harmful in the Apologies mindset?", a: "Because apologizing for having boundaries or taking up space silently corrodes your self-worth.", bundle: 'pro' },
         { q: "What is the core premise of the Speed mindset?", a: "That pushy people use accelerated timelines to bypass your analytical brain, and slowing down is your ultimate defense.", bundle: 'pro' },
+        { q: "What is the truth behind the Silence mindset when a conversation goes quiet?", a: "Silence is control and a space where people think; two seconds is not a verdict.", bundle: 'pro' },
+        { q: "What is the hidden cost of sending a poetic zinger according to the Zingers mindset?", a: "Zingers feel good for a moment but leave a bad aftertaste and destroy the relationship.", bundle: 'pro' },
+        { q: "What belief about hostility leads people to escalate arguments?", a: "The belief that an attack is a threat to your worth, rather than a projection of their insecurity.", bundle: 'pro' },
+        { q: "How does the Speed mindset reframe taking a breath before answering?", a: "Let your breath be your first word to anchor the room to your tempo and maintain authority.", bundle: 'pro' },
+        { q: "What is the reset truth when you feel the urge to apologize for standing firm?", a: "Save apologies for real, intentional mistakes; standing firm in a boundary is kinder than placating.", bundle: 'pro' },
       ]
     },
   ],
@@ -12983,6 +13010,7 @@ const memorizeCollections = {
         { q: "What is the checkered flag in Conversational Framing?", a: "The specific outcome or takeaway you want to walk away with from the discussion.", bundle: 'pro' },
         { q: "What do you do once they agree to the frame?", a: "Keep the discussion strictly within that frame — do not let other collateral issues pull you off track.", bundle: 'pro' },
         { q: "Why is getting their buy-in considered an implicit contract?", a: "Because people have a strong internal need to remain consistent with their word once they have explicitly agreed to a frame.", bundle: 'pro' },
+        { q: "Why should you label the conversation itself before delivering difficult feedback?", a: "Labeling the conversation gives the other person a moment to steady their nervous system instead of being caught off guard.", bundle: 'pro' },
       ]
     },
     {
@@ -12996,6 +13024,7 @@ const memorizeCollections = {
         { q: "What is the most common failure in boundary-setting?", a: "Failing to follow through with the stated consequence, which teaches them that your boundaries are just suggestions.", bundle: 'pro' },
         { q: "Why should you avoid giving a long list of reasons for your boundary?", a: "Because reasons give the other person a handle to negotiate your limits and justify their overreach.", bundle: 'pro' },
         { q: "How does a boundary differ from a demand to change their behavior?", a: "A demand tries to control them, which fails. A boundary simply states what you will do in response to their behavior.", bundle: 'pro' },
+        { q: "What is the relationship between saying yes when you mean no and personal power?", a: "Saying yes when you mean no teaches people to push your boundaries without resistance, slowly eroding your personal power.", bundle: 'pro' },
       ]
     },
     {
@@ -13008,6 +13037,8 @@ const memorizeCollections = {
         { q: "How does an Agreement Check separate the person from the problem?", a: "It stops the personal tug-of-war and focuses the conversation on whether consensus is a factual requirement for the task.", bundle: 'pro' },
         { q: "What is the timing component in Agreement Checks?", a: "Asking \"Do we need to agree on this right now?\" to add distance and pacing when you are being rushed.", bundle: 'pro' },
         { q: "What do you do if they answer \"No\" to your Agreement Check?", a: "Say \"Great, let's move on\" and proceed with the discussion without conceding your perspective.", bundle: 'pro' },
+        { q: "Why does asking \"Is this something we have to agree on?\" immediately deflate a pushy argument?", a: "Pushy personalities often insist on consensus out of habit, and asking exposes that agreement is not actually required.", bundle: 'pro' },
+        { q: "If someone insists that agreement IS required after an Agreement Check, what question isolates the true bottleneck?", a: "Ask \"What specifically depends on us agreeing right now?\" to separate actual operational needs from emotional insistence on consensus.", bundle: 'pro' },
       ]
     },
     {
@@ -13021,6 +13052,7 @@ const memorizeCollections = {
         { q: "Why does over-apologizing corrode your self-worth over time?", a: "Because it sends a silent signal to yourself and others that you are apologizing for occupying space or having limits.", bundle: 'pro' },
         { q: "How does \"Serving It Neat\" apply to spoken requests?", a: "By asking for what you need in one specific sentence, and then stopping. Let the silence do the work.", bundle: 'pro' },
         { q: "What is the difference between being short and serving your words neat?", a: "Being short is cold and dismissive. Serving it neat is warm, clear, and direct, without the defensive clutter.", bundle: 'pro' },
+        { q: "Why does giving a long, wordy answer create more opportunity for miscommunication?", a: "Longer answers invite confusion, give others more material to twist or misinterpret, and make you sound hesitant.", bundle: 'pro' },
       ]
     },
     {
@@ -13033,6 +13065,8 @@ const memorizeCollections = {
         { q: "Who pioneered the use of No-Oriented Questions in negotiations?", a: "FBI negotiator Chris Voss in his book \"Never Split the Difference,\" whose framework Jefferson Fisher adopts.", bundle: 'pro' },
         { q: "How does a No-Oriented Question calm down an angry person?", a: "By giving them the control to say \"No\" to the negative, which instantly lowers their defenses and opens up communication.", bundle: 'pro' },
         { q: "When should you avoid using a No-Oriented Question?", a: "When you want to check if they are completely aligned on a positive goal, where a direct framing check is more appropriate.", bundle: 'pro' },
+        { q: "How do you construct a No-Oriented Question grammatically?", a: "Begin the sentence with a negative prefix like \"Are you against...\", \"Is it unreasonable...\", or \"Are you opposed...\".", bundle: 'pro' },
+        { q: "Why is forcing a quick \"Yes\" in a high-stress conversation often less reliable than getting a \"No\"?", a: "A quick \"Yes\" is frequently counterfeit or defensive, given merely to ease the pressure without true buy-in or commitment.", bundle: 'pro' },
       ]
     },
     {
@@ -13042,6 +13076,11 @@ const memorizeCollections = {
         { q: "What does the Framing First collection make you choose between?", a: "Conversational Framing to set the topic and checkered flag, and Agreement Checks to neutralize pushy consensus demands.", bundle: 'pro' },
         { q: "What is the key to the State Your Terms collection?", a: "Choosing between Boundary Consequences to set firm limits with follow-through, and Serving It Neat to speak with direct authority.", bundle: 'pro' },
         { q: "Why does this pack contain multiple collections?", a: "To allow you to train separate, smaller pairs of assertive moves before testing your skills against the full mixed set.", bundle: 'pro' },
+        { q: "What diagnostic question helps you choose between Conversational Framing and Agreement Checks?", a: "Are you trying to set the contract for a new discussion, or are you neutralizing someone who is already pushing consensus on you?", bundle: 'pro' },
+        { q: "Which strategy in the State Your Terms collection fits best when someone repeatedly crosses a boundary?", a: "Boundary Consequences — it sets a firm limit with a clear, objective follow-through.", bundle: 'pro' },
+        { q: "Which strategy should you select when you catch yourself about to add filler words or apologize for asking?", a: "Serving It Neat — it delivers your spoken point undiluted without self-undercutting hedges.", bundle: 'pro' },
+        { q: "In the Framing First collection, when is a No-Oriented Question preferred over Conversational Framing?", a: "When the other person is already defensive or elevated, and you need to give them a safe \"No\" to lower their guard.", bundle: 'pro' },
+        { q: "What is the target mindset when choosing among the strategies in The Full Set collection?", a: "Establish quiet conversational parity on your own timeframe rather than reacting or trying to win an argument.", bundle: 'pro' },
       ]
     },
     {
@@ -13052,6 +13091,10 @@ const memorizeCollections = {
         { q: "Why does \"I'm not\" come before \"I'm open\" in the Reconciliation Runway?", a: "Because you must remove their anticipated defense mechanism before they can safely open up and listen to you.", bundle: 'pro' },
         { q: "What is the order in The Soft Dismiss?", a: "Eliminate small talk, then Label the conversation, then Deliver the bad news.", bundle: 'pro' },
         { q: "What is the purpose of The Collaborative Pivot sequence?", a: "To separate the person from the problem by shifting a face-to-face conflict into a side-by-side problem-solving session.", bundle: 'pro' },
+        { q: "Why does The Reconciliation Runway open with an \"I know\" statement agreeing on facts?", a: "It breaks the ice on shared, undeniable ground so both people start from a place of mutual agreement.", bundle: 'pro' },
+        { q: "Why does The Soft Dismiss eliminate small talk before delivering bad news?", a: "Small talk creates a false sense of pleasantry that feels deceptive when followed by a sudden termination or refusal.", bundle: 'pro' },
+        { q: "In The Collaborative Pivot, why must you validate their feelings before objectifying the issue?", a: "Validation stops their immediate fight-or-flight reflex, making them willing to look at the problem as a neutral object.", bundle: 'pro' },
+        { q: "How does objectifying the problem in The Collaborative Pivot turn an opponent into a teammate?", a: "It separates the person's character from the issue on the table, allowing both of you to work together on solving the bottleneck.", bundle: 'pro' },
       ]
     },
     {
@@ -13062,6 +13105,10 @@ const memorizeCollections = {
         { q: "What is the key to the Pushy Personalities challenge?", a: "Refusing to get sucked into an exhausting debate to prove them wrong. Use Agreement Checks instead.", bundle: 'pro' },
         { q: "What is the target error in the Overcommitment challenge?", a: "Giving a long list of reasons and apologies, which invites the other person to negotiate your decision.", bundle: 'pro' },
         { q: "How does the Compliment Sandwich challenge handle insincere praise?", a: "By cutting straight to the issue with Conversational Framing, and demanding direct feedback with Boundary Consequences.", bundle: 'pro' },
+        { q: "How does Boundary Consequences handle an avoidant partner who continually reschedules important talks?", a: "By stating that you won't remain in a relationship that avoids difficult conversations, and executing the stated consequence if it happens again.", bundle: 'pro' },
+        { q: "What is the primary mistake people make when facing Unclear Standards in a project or relationship?", a: "Trying to read the other person's mind or using small talk instead of setting a clear Conversational Frame at the start.", bundle: 'pro' },
+        { q: "Why is a \"compliment sandwich\" ineffective when giving or receiving feedback?", a: "Soft compliments wrapped around critique create confusion and anxiety, making the praise feel insincere and watering down the feedback.", bundle: 'pro' },
+        { q: "How does No-Oriented Questions help prevent Overcommitment when asked for an unexpected favor?", a: "It allows you to protect your schedule and establish limits early by asking if it's unreasonable to handle the task on a later date.", bundle: 'pro' },
       ]
     },
     {
@@ -13072,6 +13119,10 @@ const memorizeCollections = {
         { q: "Why is hyper-independence considered a trap in the Asking for Help mindset?", a: "Because it cuts you off from deep connection and leads to isolation, when people actually love to be helpful.", bundle: 'pro' },
         { q: "What is the core premise of the Rescuing mindset?", a: "That trying to fix another person's emotional state is a boundary overreach that suffocates their autonomy.", bundle: 'pro' },
         { q: "How does the Patience mindset approach relationship repair?", a: "By understanding that real connection cannot be forced or resolved in one heated marathon talk.", bundle: 'pro' },
+        { q: "What is the reset truth in the Arguments mindset when you feel the urge to win a heated debate?", a: "An argument is a knot to unravel together, not a war to win; winning the point often means losing the person.", bundle: 'pro' },
+        { q: "Why does the No-Saying mindset claim that giving three excuses with a refusal makes it worse?", a: "Every excuse you give provides a handle for the other person to negotiate, turning your decision into an argument.", bundle: 'pro' },
+        { q: "How does the Rescuing mindset reframe other people's emotional reactions to your boundaries?", a: "You are responsible for protecting your own presence and standards, not for controlling or fixing their emotional disappointment.", bundle: 'pro' },
+        { q: "What does the Asking for Help mindset teach about asking for support early versus late?", a: "Asking for help early shows self-awareness and invites collaboration, while asking late under pressure looks like panic.", bundle: 'pro' },
       ]
     },
   ],
