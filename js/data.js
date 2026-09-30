@@ -11704,6 +11704,88 @@ const collections = {
       ]
     },
   ],
+  jfisheradv: [
+    {
+      name: "Exposing the Dig",
+      guideFront: "Calling out subtext and setting a limit when...",
+      guideBack: "A subtext callout with a firm limit",
+      description: "Combine naming hidden friction with setting an immediate, non-negotiable boundary consequence.\n\n• Calling Out Subtext (Pack 1): Name the hidden tension or coldness directly.\n• Boundary Consequences (Pack 2): State the clear limit and objective follow-through.\n\nMindset: Set limits the moment subtext turns disrespect into a habit.",
+      inputs: [
+        { q: "A colleague makes a passive-aggressive jab about your workload in front of the team.", a: "\"(Pause.) Was that supposed to be funny? Because if we can't talk respectfully, I'm stepping out of this meeting.\"", bundle: 'free' },
+        { q: "A family member makes a sarcastic remark about your parenting choices at dinner.", a: "\"Should I read into that comment? If you have feedback, share it constructively, or this conversation is over.\"", bundle: 'free' },
+        { q: "A client makes an eye-rolling comment about your proposal turnaround time.", a: "\"Is there a problem with the timeline? I expect professional communication, or we can reschedule when tempers cool.\"", bundle: 'free' },
+        { q: "A teammate sends a cold, passive-aggressive text questioning your dedication.", a: "\"I sense some subtext in this message. We discuss issues directly, or I won't engage over text.\"", bundle: 'free' },
+        { q: "A relative makes a snide remark about your career trajectory during a holiday gathering.", a: "\"Was that meant as a joke, or a dig? I don't participate in backhanded comments, so let me know if you want a real chat.\"", bundle: 'free' },
+        { q: "An associate uses condescending humor to dismiss your budget presentation.", a: "\"Are you trying to be funny, or was that critical? If you have concerns, present them professionally, or I'm moving to the next topic.\"", bundle: 'pro' },
+        { q: "A friend makes a backhanded compliment about your appearance before an event.", a: "\"Was that intended as a compliment? I don't accept jabs disguised as praise, so let's keep things respectful.\"", bundle: 'pro' },
+        { q: "A supervisor makes a sarcastic comment about your team leaving on time.", a: "\"Should I read into that remark? We deliver our work on schedule, and if there's a concern, let's address it directly in my office.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Contracting the Scope",
+      guideFront: "Setting a frame and isolating objections when...",
+      guideBack: "A framed boundary with an isolation check",
+      description: "Establish the explicit frame and target outcome of a talk, then immediately isolate remaining objections.\n\n• Conversational Framing (Pack 2): Set the topic, purpose, and checkered flag at the start.\n• Isolating Objections (Pack 3): Pin down whether a raised concern is the single remaining barrier.\n\nMindset: Frame the destination first so moving goalposts cannot take root.",
+      inputs: [
+        { q: "A client wants to discuss contract terms, but keeps bringing up unrelated past disputes.", a: "\"I want to focus strictly on Q4 deliverables today so we leave with a signed agreement. Aside from pricing, is there any other barrier?\"", bundle: 'free' },
+        { q: "A partner hesitates to agree on a vacation budget, raising random concerns.", a: "\"Let's talk about our summer travel budget so we can lock in the flights today. Setting the flight cost aside, is anything else keeping us from agreeing?\"", bundle: 'free' },
+        { q: "A coworker delays committing to a project role, making vague excuses.", a: "\"My goal is to assign project owners before 3 PM today. Other than time commitment, is there any other concern holding you back?\"", bundle: 'free' },
+        { q: "A teenager bargains endlessly about weekend curfew times.", a: "\"We are setting the weekend house rules now so everyone enjoys Friday night. Putting the 10 PM curfew aside, is there any other objection?\"", bundle: 'free' },
+        { q: "A vendor raises minor issues during contract renewal talks.", a: "\"I want to lock in our renewal terms in this call. Besides the delivery window, is there any other hurdle to signing?\"", bundle: 'free' },
+        { q: "A housemate makes excuses about agreeing to a shared chore schedule.", a: "\"Let's set up our weekly cleaning schedule right now so expectations are clear. Aside from Sunday mornings, is anything else holding you back?\"", bundle: 'pro' },
+        { q: "An associate stalls on confirming a joint presentation date.", a: "\"I'm framing this meeting to lock down our presentation date before noon. Setting room availability aside, is there any other conflict?\"", bundle: 'pro' },
+        { q: "A relative hesitates to confirm attendance for a family reunion.", a: "\"I want to get a final headcount for dinner by tonight. Other than transportation, is there any reason you wouldn't be there?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Anchoring History",
+      guideFront: "Checking facts before stating your record when...",
+      guideBack: "A fact-feeling check with a firm period",
+      description: "Disentangle emotional perceptions from objective reality, then state your memory as an unarguable period.\n\n• Fact-Feeling Checks (Pack 3): Ask whether a claim is an objective fact or a feeling.\n• Straightening the Record (Pack 1): State your experience firmly as a period without debating.\n\nMindset: Separate emotional drama from historical facts, then state your truth without justification.",
+      inputs: [
+        { q: "A partner dramatically claims you agreed to host a party you never discussed.", a: "\"Are you stating that as an objective fact, or sharing a feeling? I never agreed to host. Period.\"", bundle: 'free' },
+        { q: "A colleague angrily claims you promised to complete their report for them.", a: "\"Is that a documented fact, or how you recalled our talk? My commitment was to review your draft. Period.\"", bundle: 'free' },
+        { q: "A relative dramatically asserts that you ignored their calls all week.", a: "\"Are you sharing a fact, or describing how you felt? I received one call on Tuesday and replied by text. Period.\"", bundle: 'free' },
+        { q: "A client passionately declares that your team missed three crucial deadlines.", a: "\"Is that a verified fact, or an impression? We delivered every milestone on the schedule agreed upon in May. Period.\"", bundle: 'free' },
+        { q: "A sibling claims you promised to lend them money for a trip.", a: "\"Are you presenting that as a fact, or expressing a wish? I offered to help you budget, not lend funds. Period.\"", bundle: 'free' },
+        { q: "A coworker insists that you took credit for their presentation design.", a: "\"Is that a factual statement, or how you perceive the deck? I designed these slides independently on Thursday. Period.\"", bundle: 'pro' },
+        { q: "A teenager tearfully screams that you promised they could go to an unchaperoned party.", a: "\"Are you expressing a feeling, or stating a fact? I said we would discuss it once we spoke to the parents. Period.\"", bundle: 'pro' },
+        { q: "A vendor claims you verbally approved an extra fee over the phone.", a: "\"Is that fee in our written contract as a fact, or an assumption? Our agreement covers the flat rate only. Period.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Disarming the Flex",
+      guideFront: "Checking intent and neutralizing status flexing when...",
+      guideBack: "An intent check with a flat acknowledgment",
+      description: "Expose the hidden motive behind a status play or snarky comment, then starve the flex with a flat acknowledgment.\n\n• Decoding Intent (Pack 1): Ask what motive or driver lies behind a snarky remark.\n• Flat Acknowledgment (Pack 3): Deliver a flat, neutral acknowledgment to refuse competition.\n\nMindset: Expose the hierarchy grab, then let their flex fall completely flat.",
+      inputs: [
+        { q: "A peer at a meeting condescendingly asks if you need help understanding basic metrics.", a: "\"Did you ask that to be helpful, or to put me down? ... Okay, noted. I got it.\"", bundle: 'free' },
+        { q: "A relative name-drops wealthy executives at dinner to make your career sound small.", a: "\"Are you trying to impress the table, or share a story? ... Understood. Noted.\"", bundle: 'free' },
+        { q: "A competitive friend boasts about their luxury watch and asks why you wear a plain one.", a: "\"Was that comment meant to criticize my choice? ... Got it. Loud and clear.\"", bundle: 'free' },
+        { q: "A coworker snidely points out that leadership invited them to an exclusive strategy lunch.", a: "\"Are you telling me to share news, or to flex status? ... I see. Noted.\"", bundle: 'free' },
+        { q: "A client boasts about how easily they forced another vendor to cut prices by half.", a: "\"Is that story meant as a subtle threat to our rates? ... Understood. Thanks for sharing.\"", bundle: 'free' },
+        { q: "An associate flexes their expensive car keys on the table during a team lunch.", a: "\"Are you looking for a reaction from the team? ... Okay, noted. I got it.\"", bundle: 'pro' },
+        { q: "A rival business owner boasts that their firm doubled its revenue while yours stayed steady.", a: "\"Was that remark intended as friendly banter, or a competitive dig? ... Got it. Good to know.\"", bundle: 'pro' },
+        { q: "An acquaintance patronizingly offers to give you career advice unprompted.", a: "\"Did you offer that because I asked, or to establish hierarchy? ... Understood. I hear you.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Draining Consensus",
+      guideFront: "Exploring origin and checking if agreement is needed when...",
+      guideBack: "An origin check with an agreement check",
+      description: "Ask how a speaker arrived at an aggressive conclusion, then immediately question whether consensus is required.\n\n• Curious Origin Questions (Pack 3): Ask how they arrived at a belief or decision.\n• Agreement Checks (Pack 2): Ask if agreement is actually required to move forward.\n\nMindset: Understand their origin without granting them veto power over your choices.",
+      inputs: [
+        { q: "A colleague passionately insists that your new software choice will ruin department efficiency.", a: "\"How did you come to that conclusion? ... And is this something we actually have to agree on today?\"", bundle: 'free' },
+        { q: "A relative strongly asserts that your child should attend a private boarding school.", a: "\"What experiences brought you to that belief? ... Is this a decision we need to agree on as a family?\"", bundle: 'free' },
+        { q: "A dominant friend argues forcefully that everyone in the group must vote for a specific politician.", a: "\"What sources led you to that outlook? ... Is political consensus required for us to stay friends?\"", bundle: 'free' },
+        { q: "A client firmly argues that your agency's branding direction is completely wrong.", a: "\"What path brought you to that perspective? ... Is this an area where we must have total agreement to proceed?\"", bundle: 'free' },
+        { q: "A coworker demands that the team adopt their specific coding style guide.", a: "\"How did you arrive at that coding preference? ... Is this something the entire department has to agree on?\"", bundle: 'free' },
+        { q: "A partner insists that you must buy a specific brand of car over all others.", a: "\"What research led you to that strong preference? ... Is vehicle brand something we need absolute consensus on?\"", bundle: 'pro' },
+        { q: "A neighbor aggressively dictates how everyone on the street should landscape their yards.", a: "\"What led you to that conclusion about neighborhood standards? ... Is this something homeowners are required to agree on?\"", bundle: 'pro' },
+        { q: "A vendor firmly asserts that your company is managing vendor relations incorrectly.", a: "\"What experiences built that view in your company? ... Is that something we have to agree on for this contract?\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -18422,6 +18504,56 @@ const collectionsModeData = {
         { q: "A relative asserts that young people today have no work ethic whatsoever.", a: "\"How did you form that perspective?\" [Curious Origin Questions]", bundle: 'pro', guideBack: "An origin question" },
         { q: "A partner hesitates to commit to a weekend getaway after you cleared the budget.", a: "\"Besides the cost, is there any other concern holding you back?\" [Isolating Objections]", bundle: 'pro', guideBack: "An isolation question" },
         { q: "A junior developer insists that the senior team intentionally gave them the worst bugs.", a: "\"Is that a fact you confirmed, or a feeling about the task distribution?\" [Fact-Feeling Checks]", bundle: 'pro', guideBack: "A fact versus feeling check" },
+      ]
+    },
+  ],
+  jfisheradv: [
+    {
+      name: "Direct Guardrails",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choose between **Exposing the Dig**, **Anchoring History**, and **Contracting the Scope** when setting immediate boundaries and history checks.\n\n• **Exposing the Dig** — use when snark or sarcasm requires an immediate subtext callout and limit.\n• **Anchoring History** — use when emotional drama twists past facts and requires a firm period.\n• **Contracting the Scope** — use when setting a clear discussion frame and isolating remaining obstacles.\n\nThe crucial choice: are you checking current disrespect, establishing past facts, or locking in a conversational scope?\n\nMindset: Combine moves cleanly so boundaries hold without debate.",
+      inputs: [
+        { q: "A supervisor makes a snide remark about your project timeline during a status meeting.", a: "\"Was that supposed to be funny? If you have feedback, let's discuss it professionally, or I'm moving on.\" [Exposing the Dig]", bundle: 'pro', guideBack: "A subtext callout with a firm limit" },
+        { q: "A partner passionately claims you forgot a major family obligation last month.", a: "\"Is that a factual certainty, or how you remember the week? I added it to our shared calendar on May 1st. Period.\" [Anchoring History]", bundle: 'pro', guideBack: "A fact-feeling check with a firm period" },
+        { q: "A client stalls on approving a scope change, raising random concerns.", a: "\"I want to lock in our project scope before 5 PM today. Aside from the milestone schedule, is there any other hurdle?\" [Contracting the Scope]", bundle: 'pro', guideBack: "A framed boundary with an isolation check" },
+        { q: "A relative makes a passive-aggressive jab about your financial choices during dinner.", a: "\"Should I read into that comment? If you want to talk finances, we do it respectfully, or I'm leaving the table.\" [Exposing the Dig]", bundle: 'pro', guideBack: "A subtext callout with a firm limit" },
+        { q: "A colleague angrily asserts that you promised to share your entire client database with them.", a: "\"Are you sharing a fact, or how you recalled our meeting? I promised to send two contact references. Period.\" [Anchoring History]", bundle: 'pro', guideBack: "A fact-feeling check with a firm period" },
+        { q: "A teenager bargains endlessly about study hours before exams.", a: "\"We are setting the study schedule now so you have free time on Sunday. Putting the phone rule aside, is there any other concern?\" [Contracting the Scope]", bundle: 'pro', guideBack: "A framed boundary with an isolation check" },
+        { q: "An associate uses condescending humor to dismiss your team's research finding.", a: "\"Are you trying to be critical, or was that a joke? If there are flaws in the research, address them constructively, or we proceed.\" [Exposing the Dig]", bundle: 'pro', guideBack: "A subtext callout with a firm limit" },
+        { q: "A vendor claims you promised an extension on their project delivery over lunch.", a: "\"Is that extension written in our agreement, or an assumption? Our delivery deadline remains Friday. Period.\" [Anchoring History]", bundle: 'pro', guideBack: "A fact-feeling check with a firm period" },
+      ]
+    },
+    {
+      name: "De-escalating Moves",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choose between **Disarming the Flex**, **Draining Consensus**, and **Anchoring History** to disarm status games and emotional claims.\n\n• **Disarming the Flex** — use when someone flexes status or hierarchy and needs a flat acknowledgment.\n• **Draining Consensus** — use when exploring an aggressive belief while questioning if agreement is needed.\n• **Anchoring History** — use when emotional accusations require a fact-feeling check and a firm period.\n\nThe crucial choice: is the speaker flexing status, demanding consensus, or twisting historical facts?\n\nMindset: De-escalate high tension by stripping emotional reactions from your response.",
+      inputs: [
+        { q: "A colleague patronizingly asks if you need a simplified explanation of the new software update.", a: "\"Did you ask that to offer real help, or to sound superior? ... Understood. Noted.\" [Disarming the Flex]", bundle: 'pro', guideBack: "An intent check with a flat acknowledgment" },
+        { q: "A friend stubbornly asserts that everyone in your group must adopt their diet plan.", a: "\"What led you to that strong dietary conclusion? ... Is this something our group actually needs to agree on?\" [Draining Consensus]", bundle: 'pro', guideBack: "An origin check with an agreement check" },
+        { q: "A relative tearfully claims you never visited them during the holidays.", a: "\"Are you stating that as a fact, or sharing how you felt? I visited for three days in December. Period.\" [Anchoring History]", bundle: 'pro', guideBack: "A fact-feeling check with a firm period" },
+        { q: "A competitive colleague boasts about their direct access to executive leadership.", a: "\"Are you sharing news, or trying to flex status? ... Understood. Noted.\" [Disarming the Flex]", bundle: 'pro', guideBack: "An intent check with a flat acknowledgment" },
+        { q: "A client firmly argues that your firm's strategy model is outdated.", a: "\"How did you arrive at that conclusion about our model? ... Is this an area where we must have total consensus to proceed?\" [Draining Consensus]", bundle: 'pro', guideBack: "An origin check with an agreement check" },
+        { q: "A coworker passionately declares that you erased their name from a joint report.", a: "\"Is that a verified fact, or an impression? Both our names were submitted on the title page. Period.\" [Anchoring History]", bundle: 'pro', guideBack: "A fact-feeling check with a firm period" },
+        { q: "A acquaintance flexes their luxury vacation photos to make your trip sound ordinary.", a: "\"Was that story meant to share memories, or establish hierarchy? ... Got it. Good to know.\" [Disarming the Flex]", bundle: 'pro', guideBack: "An intent check with a flat acknowledgment" },
+        { q: "A neighbor aggressively demands that all house paints on the block match.", a: "\"What brought you to that view of neighborhood rules? ... Is house color something homeowners are required to agree on?\" [Draining Consensus]", bundle: 'pro', guideBack: "An origin check with an agreement check" },
+      ]
+    },
+    {
+      name: "The Full Set",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "All five advanced combinations mixed together with no situational warning.\n\n• **Exposing the Dig** · **Contracting the Scope** · **Anchoring History** · **Disarming the Flex** · **Draining Consensus**\n\nThe crucial choice: identify the type of pressure thrown at you, and select the single matching two-beat tool.\n\nMindset: Run your combination with quiet certainty and zero over-explanation.",
+      inputs: [
+        { q: "A teammate sends a cold, sarcastic email about your project turnaround.", a: "\"Was that meant as humor, or a dig? If you have feedback, share it directly, or I won't respond over email.\" [Exposing the Dig]", bundle: 'pro', guideBack: "A subtext callout with a firm limit" },
+        { q: "A client wants to settle Q3 terms, but keeps bringing up minor past complaints.", a: "\"I want to focus on our Q3 terms today so we leave with a signed agreement. Aside from rate, is anything else keeping us from locking this in?\" [Contracting the Scope]", bundle: 'pro', guideBack: "A framed boundary with an isolation check" },
+        { q: "A partner angrily claims you forgot to pay a bill you settled yesterday.", a: "\"Are you sharing a fact, or describing a worry? I paid that bill online yesterday morning. Period.\" [Anchoring History]", bundle: 'pro', guideBack: "A fact-feeling check with a firm period" },
+        { q: "A peer conspicuously places their high-level industry award on the table during a casual team coffee.", a: "\"Was that meant to spark a conversation, or flex status? ... I see. Got it.\" [Disarming the Flex]", bundle: 'pro', guideBack: "An intent check with a flat acknowledgment" },
+        { q: "A dominant colleague demands that your team switch to their project software.", a: "\"What experiences brought you to that software choice? ... Is software selection something we must agree on today?\" [Draining Consensus]", bundle: 'pro', guideBack: "An origin check with an agreement check" },
+        { q: "An acquaintance makes a snide jab about your modest house size during a dinner party.", a: "\"Was that meant as humor, or a subtle dig? I don't entertain backhanded comments, so let me know if you want to speak respectfully.\" [Exposing the Dig]", bundle: 'pro', guideBack: "A subtext callout with a firm limit" },
+        { q: "A supplier brings up multiple minor past shipping delays during a meeting framed to sign an annual renewal.", a: "\"I want to frame this discussion strictly around signing our annual contract today. Setting the March delivery aside, is there any other hurdle?\" [Contracting the Scope]", bundle: 'pro', guideBack: "A framed boundary with an isolation check" },
+        { q: "A sibling claims you promised to give them your old laptop for free.", a: "\"Are you stating a fact, or expressing a hope? I agreed to sell it at a discount. Period.\" [Anchoring History]", bundle: 'pro', guideBack: "A fact-feeling check with a firm period" },
       ]
     },
   ],

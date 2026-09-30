@@ -19764,4 +19764,146 @@ const memorizeCollections = {
       ]
     },
   ],
+  jfisheradv: [
+    {
+      name: "Core Idea",
+      description: "The shape of this pack: five advanced strategy combinations that pair proven moves into high-impact two-beat responses.\n\n• **Exposing the Dig** — Calling Out Subtext + Boundary Consequences\n• **Contracting the Scope** — Conversational Framing + Isolating Objections\n• **Anchoring History** — Fact-Feeling Checks + Straightening the Record\n• **Disarming the Flex** — Decoding Intent + Flat Acknowledgment\n• **Draining Consensus** — Curious Origin Questions + Agreement Checks\n\nCombining moves establishes immediate conversational parity, protects personal margin, and eliminates endless debate.",
+      cards: [
+        { q: "When is a single strategy move sufficient without executing a second combination beat?", a: "When the speaker makes an isolated remark without active subtext, escalating volume, or persistent boundary pushing.", bundle: 'free' },
+        { q: "What signals that a situation requires a two-beat combination rather than a single move?", a: "When the initial statement carries underlying disrespect, history-twisting, or status flexing designed to provoke debate.", bundle: 'free' },
+        { q: "How do you identify whether incoming pressure requires Exposing the Dig versus Contracting the Scope?", a: "Exposing the Dig targets active disrespect and sarcasm, while Contracting the Scope targets conversational drift and moving excuses.", bundle: 'free' },
+        { q: "What risk occurs if you combine the wrong pair of strategies under pressure?", a: "It creates a mismatched response, such as threatening a boundary consequence when an origin question was needed to drain emotional volume first.", bundle: 'free' },
+        { q: "Why should you stop after the first beat if the speaker immediately corrects their behavior?", a: "Because enforcing a second beat after compliance turns a healthy boundary into unnecessary punishment.", bundle: 'free' },
+        { q: "How do you determine whether to stop after the first beat or proceed to the second when executing a two-step move?", a: "Proceed to the second beat only if the speaker doubles down, dodges, or continues their disrespectful pressure after your opening line.", bundle: 'pro' },
+        { q: "What is the main advantage of delivering a structured two-beat move over a single reaction?", a: "It addresses both the underlying conversational subtext and sets an unyielding boundary in one turn.", bundle: 'pro' },
+        { q: "What internal posture is required to execute advanced strategy combinations successfully?", a: "Quiet certainty, slow tempo, and the discipline to avoid adding unnecessary justifications.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Exposing the Dig",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of Exposing the Dig?", a: "Name hidden sarcasm or subtext directly, then state a non-negotiable boundary consequence in the same turn.", bundle: 'free' },
+        { q: "Which two single strategies build Exposing the Dig?", a: "Calling Out Subtext from Pack 1 and Boundary Consequences from Pack 2.", bundle: 'free' },
+        { q: "What is a typical opening phrase when executing Exposing the Dig?", a: "\"Was that supposed to be funny? Because if we can't talk respectfully, I'm stepping out.\"", bundle: 'free' },
+        { q: "Why must a boundary consequence immediately follow a subtext callout?", a: "Calling out subtext identifies the jab, but adding a consequence stops disrespect from becoming a habit.", bundle: 'free' },
+        { q: "How should you handle a speaker who claims \"I was just joking\" after you expose a dig?", a: "Enforce your stated boundary consequence calmly without getting drawn into a debate over their joke.", bundle: 'free' },
+        { q: "How does Exposing the Dig handle passive-aggressive comments in team meetings?", a: "It forces the speaker to clarify their intent publicly or face an immediate halt to the conversation.", bundle: 'pro' },
+        { q: "Why is a calm, neutral tone essential when delivering Exposing the Dig?", a: "High emotional volume makes your boundary sound like a retaliatory attack rather than a firm limit.", bundle: 'pro' },
+        { q: "What mindset grounds the Exposing the Dig combination?", a: "Set limits the moment subtext turns disrespect into a habit.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Contracting the Scope",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of Contracting the Scope?", a: "Set the explicit topic and target outcome of a meeting, then immediately isolate remaining objections.", bundle: 'free' },
+        { q: "Which two strategies are combined in Contracting the Scope?", a: "Conversational Framing from Pack 2 and Isolating Objections from Pack 3.", bundle: 'free' },
+        { q: "What is a typical phrase for Contracting the Scope?", a: "\"I want to focus on Q4 deliverables today. Aside from pricing, is there any other barrier?\"", bundle: 'free' },
+        { q: "How does framing the topic first make isolating objections more effective?", a: "It establishes a clear checkered flag so any raised objection is evaluated against a fixed goal.", bundle: 'free' },
+        { q: "When should you use Contracting the Scope in professional or personal life?", a: "When entering discussions with people who constantly introduce side issues or moving goalposts.", bundle: 'free' },
+        { q: "How does Contracting the Scope stop a negotiator from bringing up endless small demands?", a: "It pins them down to a single remaining hurdle within the defined frame before you address it.", bundle: 'pro' },
+        { q: "Why should you avoid answering an objection before isolating whether it is the only barrier?", a: "Solving un-isolated objections wastes time on fake hurdles while the true bottleneck remains unstated.", bundle: 'pro' },
+        { q: "What mindset supports Contracting the Scope?", a: "Frame the destination first so moving goalposts cannot take root.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Anchoring History",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of Anchoring History?", a: "Ask whether a claim is a fact or a feeling, then state your objective memory as an unarguable period.", bundle: 'free' },
+        { q: "Which two strategies form the Anchoring History combination?", a: "Fact-Feeling Checks from Pack 3 and Straightening the Record from Pack 1.", bundle: 'free' },
+        { q: "What is a typical response phrase when executing Anchoring History?", a: "\"Are you stating that as a fact, or sharing a feeling? I never agreed to host. Period.\"", bundle: 'free' },
+        { q: "Why is ending your record statement with a period crucial in Anchoring History?", a: "A period signals that your memory is firm and not open for negotiation or debate.", bundle: 'free' },
+        { q: "How does Anchoring History neutralize gaslighting attempts?", a: "It separates emotional drama from verifiable facts, refusing to accept a distorted historical narrative.", bundle: 'free' },
+        { q: "What mistake do people make when someone presents a dramatic accusation about the past?", a: "Getting defensive and offering long explanations, which gives the gaslighter more material to attack.", bundle: 'pro' },
+        { q: "Why does a Fact-Feeling Check open the door for a clean record statement?", a: "It invites the speaker to recognize their emotional state before you anchor objective reality.", bundle: 'pro' },
+        { q: "What mindset grounds Anchoring History?", a: "Separate emotional drama from historical facts, then state your truth without justification.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Disarming the Flex",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of Disarming the Flex?", a: "Ask a question to expose the motive behind a status play, then follow with a flat, neutral acknowledgment.", bundle: 'free' },
+        { q: "Which two strategies are combined in Disarming the Flex?", a: "Decoding Intent from Pack 1 and Flat Acknowledgment from Pack 3.", bundle: 'free' },
+        { q: "What is a typical phrase structure for Disarming the Flex?", a: "\"Did you ask that to be helpful, or to put me down? ... Okay, noted. I got it.\"", bundle: 'free' },
+        { q: "Why does a flat acknowledgment follow the intent question in Disarming the Flex?", a: "It starves the flexer of any emotional reaction, envy, or competition after their motive is exposed.", bundle: 'free' },
+        { q: "How should you deliver the flat acknowledgment after asking about intent?", a: "Completely flat and emotionless — like water off a duck's back.", bundle: 'free' },
+        { q: "Why is competing with a status-flexer an exhausting trap?", a: "Competing validates their hierarchy game and signals that your worth depends on their perception.", bundle: 'pro' },
+        { q: "How does Disarming the Flex protect your position in social or business settings?", a: "It shines a light on hidden arrogance without lowering you to their competitive level.", bundle: 'pro' },
+        { q: "What mindset supports Disarming the Flex?", a: "Expose the hierarchy grab, then let their flex fall completely flat.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Draining Consensus",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of Draining Consensus?", a: "Ask how a speaker arrived at a strong conclusion, then question whether consensus is required.", bundle: 'free' },
+        { q: "Which two strategies combine to create Draining Consensus?", a: "Curious Origin Questions from Pack 3 and Agreement Checks from Pack 2.", bundle: 'free' },
+        { q: "What is a typical phrase when executing Draining Consensus?", a: "\"How did you come to that conclusion? And is this something we actually have to agree on today?\"", bundle: 'free' },
+        { q: "Why is asking an origin question first necessary before checking agreement?", a: "Exploring their origin drains their emotional pitcher, making them receptive to the agreement check.", bundle: 'free' },
+        { q: "How does Draining Consensus protect your independence against pushy personalities?", a: "It proves that you can listen to and understand their view without being required to adopt it.", bundle: 'free' },
+        { q: "What naturally happens when you ask if agreement is required after draining an origin?", a: "The speaker realizes that their strong opinion does not automatically grant them control over your choice.", bundle: 'pro' },
+        { q: "When should you use Draining Consensus instead of direct boundary setting?", a: "When dealing with opinionated peers or relatives who push unasked advice or ideological stances.", bundle: 'pro' },
+        { q: "What mindset grounds Draining Consensus?", a: "Understand their origin without granting them veto power over your choices.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Direct Guardrails** — do you need to call out subtext, anchor past history, or lock in a conversational scope?\n• **De-escalating Moves** — is the speaker flexing status, demanding consensus, or twisting past facts?\n• **The Full Set** — all five advanced combinations mixed together with no situational warning.\n\nOne question decides nearly all of it: what type of pressure or disrespect is the other person throwing at you?",
+      cards: [
+        { q: "Which combination in De-escalating Moves fits best when someone brags about luxury purchases to make you feel small?", a: "Disarming the Flex — asking their intent and following with a flat acknowledgment.", bundle: 'pro' },
+        { q: "Which combination should you select when someone presents an exaggerated emotional claim about a past agreement?", a: "Anchoring History — checking fact versus feeling and stating your record as a period.", bundle: 'pro' },
+        { q: "In Direct Guardrails, when is Anchoring History preferred over Exposing the Dig?", a: "Use Anchoring History for historical disputes over past facts, and Exposing the Dig for active subtext or disrespect.", bundle: 'pro' },
+        { q: "What is the target mindset when practicing combinations in The Full Set collection?", a: "Identify the incoming pressure instantly and execute your two-beat response with quiet certainty.", bundle: 'pro' },
+        { q: "How does choosing Direct Guardrails over De-escalating Moves alter your conversational tone?", a: "Direct Guardrails sets firm behavioral boundaries immediately, whereas De-escalating Moves starves status plays and drains emotional momentum.", bundle: 'pro' },
+        { q: "In De-escalating Moves, when should you choose Draining Consensus over Disarming the Flex?", a: "Choose Draining Consensus when an opinionated speaker pushes an ideological stance, and Disarming the Flex when they flex status or hierarchy.", bundle: 'pro' },
+        { q: "What makes mastering The Full Set collection essential for high-stress dialogue?", a: "It trains rapid, instinctual selection of the exact two-beat combination required for any form of incoming pressure.", bundle: 'pro' },
+        { q: "How does selecting a combination from Direct Guardrails prevent a high-conflict conversation from turning into an unscripted argument?", a: "It replaces emotional defense with an explicit choice between respecting the boundary or ending the interaction.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three multi-beat sequences in this pack, and the order each one runs in:\n\n1. **The De-escalation Highway** — Naming the Reaction → Fact-Feeling Checks → Conversational Framing → Boundary Consequences\n2. **The High-Pressure Pivot** — Return to Sender → No-Oriented Questions → Serving It Neat\n3. **The Accountability Alignment** — Curious Origin Questions → Straightening the Record → Agreement Checks\n\nIn each one, the order of the steps is what does the work of defusing severe conflict and establishing accountability.",
+      cards: [
+        { q: "Why does The De-escalation Highway sequence open with Naming the Reaction?", a: "Claiming internal physical regulation first prevents emotional flooding before you address facts or boundaries.", bundle: 'pro' },
+        { q: "How does The High-Pressure Pivot use No-Oriented Questions in step two?", a: "It gives the pushy speaker a safe 'no' space, lowering their guard before you deliver your unwatered-down response.", bundle: 'pro' },
+        { q: "What conversational work does step two perform in The Accountability Alignment sequence?", a: "Straightening the Record anchors objective reality as a period after exploring their distorted memory in step one.", bundle: 'pro' },
+        { q: "Why must step four in The De-escalation Highway enforce a clear boundary consequence?", a: "If framing and fact-checking fail to stop shouting, the boundary consequence provides the final safe exit.", bundle: 'pro' },
+        { q: "How does The High-Pressure Pivot handle an ambushing authority figure differently than a standard refusal?", a: "It forces repetition first to expose the pressure, creates 'no' space, and closes with an undiluted decision neat.", bundle: 'pro' },
+        { q: "In The Accountability Alignment, why is Curious Origin Questions placed before Straightening the Record?", a: "Exploring their memory first drains their emotional pitcher, making them listen when you anchor your record as a period.", bundle: 'pro' },
+        { q: "Why does step three in The Accountability Alignment ask if agreement is required?", a: "To demonstrate that resolving historical differences is not required to move forward with today's operational task.", bundle: 'pro' },
+        { q: "What risk occurs if you skip step three (Conversational Framing) in The De-escalation Highway?", a: "The conversation drifts back into raw emotional accusations without a clear, bounded destination.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five advanced challenges to master in this pack:\n\n• **Multi-Beat Escalation** — managing interactions where snark escalates into loud shouting\n• **Persistent Gaslighting** — handling individuals who combine history-twisting with emotional drama\n• **Piled-On Demands** — navigating rapid-fire demands coupled with status flexing\n• **Boundary Pushback** — responding when someone attempts to mock or negotiate your boundary\n• **Moving Targets in Groups** — holding parity when multiple people bring different claims at once\n\nEach challenge category represents a distinct way complex interpersonal pressure can derail dialogue.",
+      cards: [
+        { q: "How does Exposing the Dig neutralize initial snark in the Multi-Beat Escalation challenge?", a: "It brings the hidden jab into the open and sets a behavioral limit before volume escalates further.", bundle: 'pro' },
+        { q: "What makes Persistent Gaslighting particularly difficult in high-pressure conversations?", a: "The speaker combines emotional drama with rewritten history to make you doubt your own memory.", bundle: 'pro' },
+        { q: "How does Draining Consensus help you handle Piled-On Demands from a pushy authority figure?", a: "It explores their reasoning while questioning whether their rapid demands actually require your immediate agreement.", bundle: 'pro' },
+        { q: "What is the primary trap to avoid during the Boundary Pushback challenge?", a: "Getting dragged into a second debate to justify your boundary rules after they mock or challenge them.", bundle: 'pro' },
+        { q: "How does Contracting the Scope resolve the Moving Targets in Groups challenge?", a: "It anchors the entire meeting to a single defined frame and isolates remaining objections one by one.", bundle: 'pro' },
+        { q: "In Multi-Beat Escalation, what should you do if an opponent responds to a subtext callout by screaming?", a: "Transition to Anchoring History to check fact versus feeling and state your boundary as a period.", bundle: 'pro' },
+        { q: "Why does Disarming the Flex break up Piled-On Demands in corporate environments?", a: "It exposes the status play behind their rapid demands and starves their pressure with a flat acknowledgment.", bundle: 'pro' },
+        { q: "Why do traditional meeting management techniques fail during the Moving Targets in Groups challenge?", a: "Because addressing multiple un-isolated group complaints individually creates chaotic drift and surrenders control of the room.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Combination Guilt** — structure is not manipulation: two clean moves keep dialogue safe\n• **Second-Step Panic** — trust the pause: execute step one, breathe, and let their response guide step two\n• **Resolution Urgency** — two clean moves establish parity: real resolution happens on a calm timeframe\n• **Over-Explaining** — brevity is authority: extra explanations dilute your boundary\n• **Reverting to Debating** — pushback is the cue for your second move, not an invitation to debate\n\nIn every mindset deck, you train to replace a limiting belief with a grounded, courtroom-tested truth.",
+      cards: [
+        { q: "What reset truth overcomes the limiting belief in Combination Guilt?", a: "Structure is not manipulation. Two clean moves protect the boundary and keep dialogue safe.", bundle: 'pro' },
+        { q: "How does the Second-Step Panic mindset reframe a short pause between turns?", a: "A calm three-second pause demonstrates quiet authority and gives you time to select your second move.", bundle: 'pro' },
+        { q: "What is the reset truth in Resolution Urgency when a conflict feels uncomfortable?", a: "Two clean moves establish parity. Real resolution happens on a calm timeframe, not in a panic.", bundle: 'pro' },
+        { q: "Why does the Over-Explaining mindset state that extra explanations dilute your authority?", a: "Because adding justifications signals self-doubt and gives the other person new handles to attack.", bundle: 'pro' },
+        { q: "How does letting go of Resolution Urgency alter your behavior during an argument?", a: "You stop demanding an immediate verbal apology and allow your two-beat move to establish boundary parity over time.", bundle: 'pro' },
+        { q: "Why does overcoming Combination Guilt increase your confidence in high-stress dialogue?", a: "You realize that using structured, multi-beat moves is a respectful way to maintain safety and clarity for both speakers.", bundle: 'pro' },
+        { q: "What psychological freedom do you gain once you conquer the habit of Over-Explaining?", a: "You stop treating conversations like courtroom trials where you must defend your right to hold personal boundaries.", bundle: 'pro' },
+        { q: "What underlying emotional driver causes someone to fall into Reverting to Debating when an opponent challenges their first move?", a: "The instinctual urge to prove intellectual correctness and gain verbal validation rather than holding a calm, non-negotiable boundary.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

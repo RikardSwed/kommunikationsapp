@@ -11082,4 +11082,86 @@ const mindsetCollections = {
       ]
     },
   ],
+  jfisheradv: [
+    {
+      name: "Combination Guilt",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Using two moves in a row feels manipulative, like running a scripted routine on someone.\"\n\n• Two moves in sequence are not manipulation; they are conversational architecture that prevents chaos.\n• Disrespect and boundary crossing are unscripted attacks; responding with structure protects both people.\n• Holding a structured boundary is kinder than letting a conversation devolve into shouting or resentment.\n\nMindset: Structure is not manipulation. Two clean moves protect the boundary and keep dialogue safe.",
+      inputs: [
+        { q: "\"If I combine two techniques, I am manipulating the other person instead of being authentic.\"", a: "Structure is not manipulation. Two clean moves protect the boundary and keep dialogue safe.", bundle: 'pro' },
+        { q: "\"I feel guilty planning a second move before they even answer my first sentence.\"", a: "Planning two beats is conversational architecture, keeping both of you out of emotional chaos.", bundle: 'pro' },
+        { q: "\"Delivering a subtext callout followed by a boundary feels too aggressive and rehearsed.\"", a: "Responding to disrespect with clean structure is setting a healthy boundary, not an attack.", bundle: 'pro' },
+        { q: "\"I should just speak naturally from my emotions instead of using a structured combination.\"", a: "Unstructured emotional reactions feed the conflict. Structured moves protect your peace.", bundle: 'pro' },
+        { q: "\"It feels cold to use a two-step framework on a friend or family member.\"", a: "Holding a clear boundary with structure is the kindest way to preserve a relationship.", bundle: 'pro' },
+        { q: "\"If they notice I am using a strategic response, they will accuse me of playing games.\"", a: "Clear boundaries and curious questions are honest communication tools, not political games.", bundle: 'pro' },
+        { q: "\"I should give people multiple chances before enforcing a combined boundary move.\"", a: "Enforcing a boundary on the very first sign of disrespect prevents bad habits from forming.", bundle: 'pro' },
+        { q: "\"Using a pre-planned sequence makes me feel fake during an argument.\"", a: "Remaining calm and structured under pressure is true self-regulation, not fake behavior.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Second-Step Panic",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I get so focused on delivering the first move that my mind goes completely blank on what to say next.\"\n\n• You do not need to pre-script every word of step two before step one leaves your mouth.\n• Trust the pause between turns; taking three seconds to breathe gives your brain time to select the next move.\n• Focus entirely on executing the first move cleanly, then listen to their answer to choose the second.\n\nMindset: Trust the pause. Execute step one cleanly, breathe, and let their response guide step two.",
+      inputs: [
+        { q: "\"My mind goes completely blank after I deliver my first sentence in a heated argument.\"", a: "Trust the pause. Execute step one cleanly, breathe, and let their response guide step two.", bundle: 'pro' },
+        { q: "\"I get so anxious about what to say second that I mess up my opening move.\"", a: "Give your full focus to step one. You only need to deliver one sentence at a time.", bundle: 'pro' },
+        { q: "\"If I pause for three seconds after their reply, I will look weak and unprepared.\"", a: "A calm three-second pause shows quiet authority and gives you time to pick your next move.", bundle: 'pro' },
+        { q: "\"I must have the entire four-step sequence memorized word-for-word before I open my mouth.\"", a: "Sequences are guideposts, not rigid scripts. Adapt your next step based on what they say.", bundle: 'pro' },
+        { q: "\"When they react angrily to my first move, I panic and lose my train of thought.\"", a: "Their anger is the cue for your second move. Take a breath and let the framework carry you.", bundle: 'pro' },
+        { q: "\"I rush my second move because I can't stand the awkward silence between turns.\"", a: "Let the silence do the heavy lifting. Silence forces them to reflect on your first move.", bundle: 'pro' },
+        { q: "\"If I don't respond instantly to their pushback, they will dominate the conversation.\"", a: "Speed is panic. Operating on your own slow timeframe demonstrates complete control.", bundle: 'pro' },
+        { q: "\"I get overwhelmed trying to remember which strategy pairs with which in real time.\"", a: "Focus on the core goal: call out the behavior, then set the limit. Keep it simple.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Resolution Urgency",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I feel an overwhelming need to resolve the entire argument right now instead of letting two clean moves do their work.\"\n\n• High-pressure conflict is rarely solved in a single minute; forcing a fast resolution leads to fake concessions.\n• Two clean moves establish boundary parity today so genuine resolution can happen on a calm timeframe.\n• Let your moves land and hold the line; you do not need an immediate surrender to win peace.\n\nMindset: Two clean moves establish parity. Real resolution happens on a calm timeframe, not in a panic.",
+      inputs: [
+        { q: "\"I must force them to agree with my boundary before this conversation ends today.\"", a: "Two clean moves establish parity. Real resolution happens on a calm timeframe, not in a panic.", bundle: 'pro' },
+        { q: "\"If they walk away without apologizing, my combination move completely failed.\"", a: "Your goal is setting a boundary, not extracting an apology. Holding the line is the victory.", bundle: 'pro' },
+        { q: "\"I feel frantic if a disagreement isn't fully settled within five minutes.\"", a: "Forcing a fast resolution leads to counterfeit agreements. Let your moves land and give it time.", bundle: 'pro' },
+        { q: "\"I need to keep arguing until they verbally admit that their behavior was wrong.\"", a: "Demanding verbal surrender sparks defensiveness. State your boundary and let them process it.", bundle: 'pro' },
+        { q: "\"Leaving an issue unresolved overnight means the relationship is falling apart.\"", a: "Stepping away after setting a firm boundary gives emotional heat time to dissipate.", bundle: 'pro' },
+        { q: "\"I should accept a weak compromise just to end the uncomfortable tension right now.\"", a: "Never surrender a boundary to buy temporary comfort. Stand firm in your two-beat move.", bundle: 'pro' },
+        { q: "\"If I don't get the last word in, they will think they won the argument.\"", a: "The last word is an ego trap. Delivering a clear boundary and stopping is real authority.", bundle: 'pro' },
+        { q: "\"I feel compelled to keep talking until the room feels warm and friendly again.\"", a: "Boundary setting creates temporary coldness. Learn to sit comfortably in that quiet space.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Over-Explaining",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I don't add a long explanation between my moves, they will think I am being cold, rude, or dismissive.\"\n\n• Over-explaining waters down your boundary and provides the other person with new handles to critique.\n• A clear combination delivered without fluff shows quiet authority and respect for both parties.\n• Brevity is confidence; long justifications signal that you doubt your own right to set limits.\n\nMindset: Brevity is authority. Extra explanations dilute your boundary and invite endless debate.",
+      inputs: [
+        { q: "\"I need to explain the reasons behind my boundary so they don't think I'm being mean.\"", a: "Brevity is authority. Extra explanations dilute your boundary and invite endless debate.", bundle: 'pro' },
+        { q: "\"Adding three paragraphs of justification makes my refusal sound more polite and reasonable.\"", a: "Long justifications signal self-doubt. Deliver your move neat and let it stand.", bundle: 'pro' },
+        { q: "\"If I just say 'Period' without explaining my memory, they will call me unreasonable.\"", a: "Explaining your memory opens a trial. Stating your record as a period closes the door.", bundle: 'pro' },
+        { q: "\"I should soften my subtext callout with a long preamble about how much I respect them.\"", a: "Softening preambles blur your message. Call out the subtext directly and set the limit.", bundle: 'pro' },
+        { q: "\"They deserve a detailed history of why I decided to set this new rule today.\"", a: "You owe clarity, not a historical defense. State the new frame in one clean sentence.", bundle: 'pro' },
+        { q: "\"I feel naked if I deliver a two-word flat acknowledgment without adding my own opinion.\"", a: "A flat acknowledgment starves status flexing. Adding your opinion engages you in their game.", bundle: 'pro' },
+        { q: "\"If I don't justify why agreement isn't required, they will think I am dismissing them.\"", a: "Questioning if agreement is needed is self-explanatory. Let the question do its job.", bundle: 'pro' },
+        { q: "\"I worry that short, direct sentences sound aggressive in everyday conversation.\"", a: "Clear, short sentences are respectful and unambiguous. Fluff creates confusion.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Reverting to Debating",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"When they push back on my first move, my instinct drags me right back into an exhausting logical debate.\"\n\n• Pushback on your first move is expected; it is an invitation to execute your second planned move, not to debate.\n• Logical debate against emotional drama or disrespect validates their bad behavior and exhausts your energy.\n• Pivot directly to your second move instead of taking the debate bait.\n\nMindset: Pushback is the cue for your second move, not an invitation to re-enter a debate.",
+      inputs: [
+        { q: "\"When they argue against my subtext callout, I feel compelled to prove they were sarcastic.\"", a: "Pushback is the cue for your second move, not an invitation to re-enter a debate.", bundle: 'pro' },
+        { q: "\"I get dragged into arguing over facts when they challenge my Fact-Feeling Check.\"", a: "Don't debate their feeling. State your record as an unarguable period and step back.", bundle: 'pro' },
+        { q: "\"If they challenge my meeting frame, I must explain why my agenda is superior.\"", a: "Debating the agenda surrenders control. Isolate their remaining objection and move forward.", bundle: 'pro' },
+        { q: "\"I lose my temper and start debating when they mock my boundary consequence.\"", a: "Mockery is a test. Execute your stated consequence calmly instead of arguing your worth.", bundle: 'pro' },
+        { q: "\"When they dodge my intent question, I feel the urge to lecture them on etiquette.\"", a: "Don't lecture. Deliver a flat acknowledgment and let the awkwardness stay on them.", bundle: 'pro' },
+        { q: "\"I try to logically prove why consensus isn't required when they insist on agreeing.\"", a: "Logical proofs prolong the argument. Ask your agreement check and let it sit.", bundle: 'pro' },
+        { q: "\"I fall back into defending my past choices whenever they bring up new hindsight critiques.\"", a: "Refuse the trial. Anchor your choice to available facts and close the discussion.", bundle: 'pro' },
+        { q: "\"When an argument escalates, my old habit of fighting for logical victory takes over.\"", a: "Winning the logical point loses the boundary. Trust your two-step combination move.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

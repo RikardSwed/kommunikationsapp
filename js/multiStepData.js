@@ -15674,4 +15674,114 @@ const multiStepCollections = {
       ]
     },
   ],
+  jfisheradv: [
+    {
+      name: "The De-escalation Highway",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Move an interaction from raw internal flooding all the way to structured, bounded dialogue across four clean beats.\n\n1. **Naming the Reaction** (Pack 1): Name internal physical reactions out loud to claim self-regulation.\n2. **Fact-Feeling Checks** (Pack 3): Separate dramatic claims from objective facts.\n3. **Conversational Framing** (Pack 2): Set the explicit topic, purpose, and checkered flag for the talk.\n4. **Boundary Consequences** (Pack 2): Enforce strict behavioral limits with a clear follow-through.\n\nWhy this order: Self-regulation comes first, fact-checking clarifies reality, framing sets the road, and boundary consequences keep it safe.\n\nMindset: Move from personal regulation to clear boundaries without getting dragged into drama.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "An angry colleague barges into your office, shouting about a project mistake and making personal accusations.",
+          steps: [
+            { front: "Naming the Reaction — you feel your pulse spike and chest tighten as they yell", back: "\"I can tell my body is reacting to this volume, so I'm taking a slow breath before I answer.\"", guideFront: "Say how you're reacting when...", guideBack: "Your own reaction, named out loud" },
+            { front: "Fact-Feeling Checks — they claim you ruined the entire product launch single-handedly", back: "\"Is my ruining the launch a factual certainty, or are you expressing how stressed you feel right now?\"", guideFront: "Separating emotional claims from facts when...", guideBack: "A fact versus feeling check" },
+            { front: "Conversational Framing — they continue ranting about team incompetence", back: "\"I want to frame this discussion strictly around fixing the code error so we leave with a patch plan.\"", guideFront: "Set the topic and goal first when...", guideBack: "A topic, a goal and a check-in" },
+            { front: "Boundary Consequences — they raise their voice again and slam their notebook down", back: "\"I don't engage in shouting matches. If we can speak calmly, we finish the patch, or I am walking out.\"", guideFront: "State the limit and consequence when...", guideBack: "A limit, and what you'll do next" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A relative escalates a disagreement over holiday arrangements into a shouting match about family loyalty.",
+          steps: [
+            { front: "Naming the Reaction — you feel adrenaline surging and your jaw clenching", back: "\"I'm noticing tension in my shoulders, so I am taking a pause before responding.\"", guideFront: "Say how you're reacting when...", guideBack: "Your own reaction, named out loud" },
+            { front: "Fact-Feeling Checks — they dramatically scream that you have destroyed every family holiday for years", back: "\"Are you stating that as an objective fact, or sharing an emotional feeling about past years?\"", guideFront: "Separating emotional claims from facts when...", guideBack: "A fact versus feeling check" },
+            { front: "Conversational Framing — they attempt to drag in unrelated grievances from five years ago", back: "\"Let's frame this conversation strictly on scheduling Christmas dinner so we leave with a time.\"", guideFront: "Set the topic and goal first when...", guideBack: "A topic, a goal and a check-in" },
+            { front: "Boundary Consequences — they insult your character across the room", back: "\"I do not tolerate personal insults. If we converse respectfully, we settle the time, or I am leaving.\"", guideFront: "State the limit and consequence when...", guideBack: "A limit, and what you'll do next" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A key client panics over a minor delay, making aggressive accusations about your firm's integrity over video call.",
+          steps: [
+            { front: "Naming the Reaction — you feel your stomach drop and adrenaline flood your thoughts", back: "\"I am feeling my nervous system react, so I am taking a breath to stay focused.\"", guideFront: "Say how you're reacting when...", guideBack: "Your own reaction, named out loud" },
+            { front: "Fact-Feeling Checks — they declare that your agency is incompetent and fraudulent", back: "\"Is fraudulent work a verified fact, or are you describing your frustration with the timeline?\"", guideFront: "Separating emotional claims from facts when...", guideBack: "A fact versus feeling check" },
+            { front: "Conversational Framing — they threaten to pull all contracts immediately", back: "\"I want to frame this call around resolving the milestone delay so we leave with a revised schedule.\"", guideFront: "Set the topic and goal first when...", guideBack: "A topic, a goal and a check-in" },
+            { front: "Boundary Consequences — they interrupt aggressively and scoff at your explanation", back: "\"I expect professional dialogue. If we discuss this constructively, we fix the schedule, or I end the call.\"", guideFront: "State the limit and consequence when...", guideBack: "A limit, and what you'll do next" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The High-Pressure Pivot",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Force repetition of a pushy demand, give a safe 'no' space, and deliver an undiluted refusal.\n\n1. **Return to Sender** (Pack 1): Force the speaker to repeat a pushy or disrespectful demand flatly.\n2. **No-Oriented Questions** (Pack 2): Give them a safe 'no' framework that satisfies their need for control.\n3. **Serving It Neat** (Pack 2): Deliver your clear, unwatered-down decision without self-undercutting hedges.\n\nWhy this order: Forcing repetition exposes the pressure, a no-oriented question lowers their guard, and serving it neat closes the door.\n\nMindset: Neutralize pushy speed, give them control through 'no', and deliver your decision neat.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A senior manager ambushes you in the hallway, demanding you take on an emergency weekend task.",
+          steps: [
+            { front: "Return to Sender — they rush up and demand you sacrifice your weekend without context", back: "\"I need you to repeat that request to me one more time.\"", guideFront: "Make them say it again when...", guideBack: "A request to repeat, or their words echoed" },
+            { front: "No-Oriented Questions — they repeat the demand while standing over you pushily", back: "\"Is it unreasonable for us to discuss this task during regular office hours on Monday?\"", guideFront: "Ask for an easy no when...", guideBack: "A question built for a no" },
+            { front: "Serving It Neat — they attempt to push for an immediate verbal commitment", back: "\"I do not work on weekends. I will review the request on Monday morning.\"", guideFront: "Drop the hedge and say it when...", guideBack: "A clean, confident statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A pushy vendor presses you during a lunch meeting to sign an expensive software add-on immediately.",
+          steps: [
+            { front: "Return to Sender — they push a contract across the table and demand an instant signature", back: "\"Please repeat that closing pitch so I am sure I heard you clearly.\"", guideFront: "Make them say it again when...", guideBack: "A request to repeat, or their words echoed" },
+            { front: "No-Oriented Questions — they repeat the press, claiming the discount expires today", back: "\"Are you opposed to giving our legal team forty-eight hours to review the terms?\"", guideFront: "Ask for an easy no when...", guideBack: "A question built for a no" },
+            { front: "Serving It Neat — they continue pushing for a fast signature before lunch ends", back: "\"We do not sign unreviewed contracts. I will follow up with you next week.\"", guideFront: "Drop the hedge and say it when...", guideBack: "A clean, confident statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A pushy relative demands that you lend them your vehicle for a weekend road trip.",
+          steps: [
+            { front: "Return to Sender — they casually demand your car keys as if it were already decided", back: "\"Say that request again so I know exactly what you are asking.\"", guideFront: "Make them say it again when...", guideBack: "A request to repeat, or their words echoed" },
+            { front: "No-Oriented Questions — they repeat the request with an entitled, pressuring tone", back: "\"Is it crazy if I keep my car for my own planned errands this weekend?\"", guideFront: "Ask for an easy no when...", guideBack: "A question built for a no" },
+            { front: "Serving It Neat — they start offering excuses for why they need it more", back: "\"I am not lending my car. You will need to make other travel arrangements.\"", guideFront: "Drop the hedge and say it when...", guideBack: "A clean, confident statement" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Accountability Alignment",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Explore a distorted historical claim, anchor objective reality as a period, and check if consensus is even required.\n\n1. **Curious Origin Questions** (Pack 3): Ask how they arrived at their distorted memory or claim.\n2. **Straightening the Record** (Pack 1): State your actual experience firmly as an unarguable period.\n3. **Agreement Checks** (Pack 2): Ask whether consensus on the past is actually required to move forward.\n\nWhy this order: Exploring their view drains their pitcher, stating your record sets reality, and checking agreement stops endless debate.\n\nMindset: Uncover their story, state your truth as a period, and test if agreement even matters.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A business partner accuses you of violating an oral agreement made six months ago.",
+          steps: [
+            { front: "Curious Origin Questions — they claim you agreed to split all overhead costs fifty-fifty", back: "\"How did you arrive at that impression of our discussion last winter?\"", guideFront: "Exploring how they formed a belief when...", guideBack: "An origin question" },
+            { front: "Straightening the Record — they insist that you gave your word over drinks", back: "\"I remember that conversation clearly. I agreed to cover software costs, not general overhead. Period.\"", guideFront: "State your memory and stop when...", guideBack: "Your version, stated as final" },
+            { front: "Agreement Checks — they attempt to re-argue the entire history of the partnership", back: "\"Is agreeing on six months ago required for us to approve today's invoice?\"", guideFront: "Ask if you must agree when...", guideBack: "A question about the need to agree" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A coworker claims in a team sync that they came up with the core concept for your project.",
+          steps: [
+            { front: "Curious Origin Questions — they tell the team that you stole their idea from a coffee chat", back: "\"What specific details brought you to that memory of our coffee chat?\"", guideFront: "Exploring how they formed a belief when...", guideBack: "An origin question" },
+            { front: "Straightening the Record — they double down on claiming full authorship of the draft", back: "\"I developed this framework independently and submitted it to management last month. Period.\"", guideFront: "State your memory and stop when...", guideBack: "Your version, stated as final" },
+            { front: "Agreement Checks — they continue trying to debate who thought of it first", back: "\"Is consensus on the origin required for us to execute this project today?\"", guideFront: "Ask if you must agree when...", guideBack: "A question about the need to agree" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A sibling angrily claims you promised to take care of a shared family property task alone.",
+          steps: [
+            { front: "Curious Origin Questions — they assert you took full responsibility during a family phone call", back: "\"What led you to that conclusion about what I said on the call?\"", guideFront: "Exploring how they formed a belief when...", guideBack: "An origin question" },
+            { front: "Straightening the Record — they insist everyone heard you volunteer for the whole job", back: "\"I offered to organize the quotes, not do the manual work. Period.\"", guideFront: "State your memory and stop when...", guideBack: "Your version, stated as final" },
+            { front: "Agreement Checks — they start listing old family grievances about past responsibilities", back: "\"Do we need to agree on that phone call to hire the painter today?\"", guideFront: "Ask if you must agree when...", guideBack: "A question about the need to agree" },
+          ]
+        },
+      ]
+    },
+  ],
 };

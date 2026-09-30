@@ -466,6 +466,9 @@ const packTags = {
   jfisher3: [
     'de-escalation', 'inquiry', 'boundaries', 'conflict', 'communication'
   ],
+  jfisheradv: [
+    'advanced', 'communication', 'conflict', 'boundaries', 'de-escalation'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -516,7 +519,7 @@ const TOPICS = [
   // ── Standing your ground ──────────────────────────────────────────
   { id: 'opinions',              title: 'Opinions & Argumentation',      packs: ['influenceframing', 'agreeing', 'disagreeing', 'givingcounterexamples', 'discussing'] },
   { id: 'persuasion',            title: 'Persuasion & Negotiation',      packs: ['influenceframing', 'persuasionandinfluence1', 'persuasionandinfluence2', 'negotiationandcompromise'] },
-  { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression', 'oconnor1', 'oconnor3', 'jfisher1', 'jfisher2', 'assertivecomm1', 'assertivecomm2', 'assertivecommadv', 'integratedmaster', 'jfisher3'] },
+  { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression', 'oconnor1', 'oconnor3', 'jfisher1', 'jfisher2', 'assertivecomm1', 'assertivecomm2', 'assertivecommadv', 'integratedmaster', 'jfisher3', 'jfisheradv'] },
   { id: 'boundaries',            title: 'Asking & Saying No',            packs: ['playfulrefusals', 'thehappyno', 'theregretfulno', 'makingrequests', 'sayingno', 'oconnor2', 'jimmy6', 'askingpermission'] },
 
   // ── The hard end ──────────────────────────────────────────────────
