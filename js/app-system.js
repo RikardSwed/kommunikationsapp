@@ -2887,6 +2887,12 @@ const BUNDLE_DEFS = {
       name: 'Pro Bundle',
       description: '',
     },
+    {
+      id: 'exactwords',
+      tier: 'pro-opt',
+      name: 'Exact Words',
+      description: 'The same situations, with the other person\u2019s exact words on the front.',
+    },
   ],
   jfisher2: [
     {
@@ -4436,6 +4442,7 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.35', date: 'October 2026', title: 'Exact Words \u2014 a test bundle in Jefferson Fisher 1', audience: 'dev', items: ['New optional input bundle in Jefferson Fisher 1 \u2014 Control under Pressure: <em>Exact Words</em>. It holds the same cards as the pack, but where a situation only described what the other person said (<em>a snide remark about your presentation</em>), the front now quotes it (<em>\u201cWow. Did anyone actually follow those slides, or was that just me?\u201d</em>). Backs are unchanged.', '93 situations rewritten across Single Strategy, Collections, Sequences and Challenges; 20 that already quoted the other person, or describe something wordless (rolled eyes, silence), are kept as they are. Mindset and Memorize are copied unchanged, so the bundle works on its own with the Pro Bundle turned off.', 'Pack import (--merge) now treats a card as already there only if the same face exists in the same bundle, so an extra bundle can repeat a card on purpose.'] },
   { version: 'v1.29.34', date: 'September 2026', title: 'Jefferson Fisher \u2014 Advanced', audience: 'dev', items: ['New complete-tier pack under Assertiveness &amp; Pressure (key jfisheradv), built by NotebookLM from an approved plan after Jefferson Fisher 3 was done. Its five strategies each combine two moves from Jefferson Fisher 1\u20133 into one turn: Exposing the Dig, Contracting the Scope, Anchoring History, Disarming the Flex and Draining Consensus. Its three sequences chain three or four moves across the packs.', 'Full volume in all six modes. Content is NotebookLM\'s own, kept as written. Fixed through NotebookLM: Challenges and Collections cards that copied Single Strategy cards, and Memorize cards that repeated existing questions. Fixed here: sequence steps carry each strategy\'s own guide pair from its home pack, and the mode-level guide lines are the standard rows.'] },
   { version: 'v1.29.33', date: 'September 2026', title: 'Jefferson Fisher 3 \u2014 De-escalation & Inquiry', audience: 'dev', items: ['New complete-tier pack under Assertiveness &amp; Pressure (key jfisher3), built by NotebookLM after it reviewed the finished Jefferson Fisher series: Standing by Decisions, Curious Origin Questions, Fact-Feeling Checks, Isolating Objections and Flat Acknowledgment.', 'Full volume in all six modes: 5 Single decks with 40 cards, 3 Collections decks, 9 scenarios, 40 Challenges cards, 40 Mindset cards and 10 Memorize decks with 80 cards.', 'Content is NotebookLM\'s own, kept as written. Fixed through NotebookLM: Collections, Challenges and sequence replies that copied Single Strategy cards, Single decks where every card had the same reply, and Memorize cards that repeated existing questions. Topic changed from a non-existent one to Assertiveness &amp; Pressure, as in Jefferson Fisher 1\u20132.'] },
   { version: 'v1.29.32', date: 'September 2026', title: 'Jefferson Fisher 1\u20132 completed \u2014 all eight NotebookLM series done', audience: 'dev', items: ['Memorize filled out in both Jefferson Fisher packs (Control under Pressure, Assertive Connection), merged into the existing packs (added only). Both packs now have 10 Memorize decks with 80 cards.', 'Cards that repeated existing cards in the same deck were replaced through NotebookLM.', 'With this, all eight series completed with NotebookLM (Dan Bacon, Todd V, Praxeology Frame, Praxeology Dread, Jimmy on Relationships, Parenting Toward the Kingdom, Dan o Connor, Jefferson Fisher) are full in all six modes.'] },
