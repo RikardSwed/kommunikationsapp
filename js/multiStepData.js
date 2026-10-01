@@ -10567,6 +10567,33 @@ const multiStepCollections = {
             { front: "Straightening the Record — they claim \"Your prices are robbery anyway.\"", back: "\"My prices match the standards we agreed on. I see things differently.\"", guideFront: "State your memory and stop when...", guideBack: "Your version, stated as final" },
           ]
         },
+        {
+          bundle: 'linesonly',
+          situation: "\"Your work is sloppy, and the rest of us have to clean up after you.\"",
+          steps: [
+            { front: "Return to Sender — you let five seconds of silence hang, then look them in the eye.", back: "\"Can you say that again for me?\"", guideFront: "Make them say it again when...", guideBack: "A request to repeat, or their words echoed" },
+            { front: "Decoding Intent — they stammer and backtrack, saying \"I just meant the layout was messy.\"", back: "\"Did you say that to make me look bad in front of the team?\"", guideFront: "Ask what they meant by it when...", guideBack: "A question about their motive" },
+            { front: "Straightening the Record — they say \"No, I was just frustrated.\"", back: "\"I remember the quality of my work differently. Let's stick to the facts.\"", guideFront: "State your memory and stop when...", guideBack: "Your version, stated as final" },
+          ]
+        },
+        {
+          bundle: 'linesonly',
+          situation: "\"No wonder you're still single. Who could put up with you?\"",
+          steps: [
+            { front: "Return to Sender — you drop your hands, wait five seconds, and speak calmly.", back: "\"I need you to say that again.\"", guideFront: "Make them say it again when...", guideBack: "A request to repeat, or their words echoed" },
+            { front: "Decoding Intent — they go red and try to shrug it off with \"Never mind.\"", back: "\"Did you say that to hurt my feelings, or did you want to embarrass me?\"", guideFront: "Ask what they meant by it when...", guideBack: "A question about their motive" },
+            { front: "Naming the Reaction — they double down and say \"You're just too sensitive.\"", back: "\"I can tell I'm getting defensive, so I'm stepping away from this table.\"", guideFront: "Say how you're reacting when...", guideBack: "Your own reaction, named out loud" },
+          ]
+        },
+        {
+          bundle: 'linesonly',
+          situation: "\"You're a scammer. Everyone here should know that.\"",
+          steps: [
+            { front: "Return to Sender — you stand still, breathe, let the silence settle for six seconds.", back: "\"I need you to say that again to me.\"", guideFront: "Make them say it again when...", guideBack: "A request to repeat, or their words echoed" },
+            { front: "Decoding Intent — they look around, feeling the room go quiet, and sputter.", back: "\"Did you say that to pressure me into giving you a discount?\"", guideFront: "Ask what they meant by it when...", guideBack: "A question about their motive" },
+            { front: "Straightening the Record — they claim \"Your prices are robbery anyway.\"", back: "\"My prices match the standards we agreed on. I see things differently.\"", guideFront: "State your memory and stop when...", guideBack: "Your version, stated as final" },
+          ]
+        },
       ]
     },
     {
@@ -10629,6 +10656,33 @@ const multiStepCollections = {
             { front: "Naming the Reaction — they huff and say \"You can't take any feedback.\"", back: "\"I can tell I'm getting frustrated, so I'm changing the subject.\"", guideFront: "Say how you're reacting when...", guideBack: "Your own reaction, named out loud" },
           ]
         },
+        {
+          bundle: 'linesonly',
+          situation: "\"Oh, you finally got that promotion. I guess they had to fill the slot.\"",
+          steps: [
+            { front: "Calling Out Subtext — you pause, keeping your tone perfectly flat.", back: "\"Was that supposed to be a compliment, or was that the other kind of comment?\"", guideFront: "Name the undertone out loud when...", guideBack: "The undertone, named or asked about" },
+            { front: "Decoding Intent — they sputter, saying \"I was just joking, don't be so sensitive.\"", back: "\"Did you mean for that to sound belittling?\"", guideFront: "Ask what they meant by it when...", guideBack: "A question about their motive" },
+            { front: "Naming the Reaction — they roll their eyes and turn away.", back: "\"I can tell this isn't a productive conversation for me, so I'm heading back to my desk.\"", guideFront: "Say how you're reacting when...", guideBack: "Your own reaction, named out loud" },
+          ]
+        },
+        {
+          bundle: 'linesonly',
+          situation: "\"Great job, genius.\" (After a minor error is found.)",
+          steps: [
+            { front: "Calling Out Subtext — you look directly at them.", back: "\"Should I read into that tone?\"", guideFront: "Name the undertone out loud when...", guideBack: "The undertone, named or asked about" },
+            { front: "Decoding Intent — they claim \"I didn't mean anything by it.\"", back: "\"Did you say that to undermine my contribution?\"", guideFront: "Ask what they meant by it when...", guideBack: "A question about their motive" },
+            { front: "Naming the Reaction — they shrug and look at their phone.", back: "\"I don't respond to sarcasm. If we want to solve this, we speak respectfully.\"", guideFront: "Say how you're reacting when...", guideBack: "Your own reaction, named out loud" },
+          ]
+        },
+        {
+          bundle: 'linesonly',
+          situation: "\"Well, I guess comfort is your main priority now.\" (Looking at your outfit.)",
+          steps: [
+            { front: "Calling Out Subtext — you let their words hang.", back: "\"I'm feeling some friction from you. Is everything okay?\"", guideFront: "Name the undertone out loud when...", guideBack: "The undertone, named or asked about" },
+            { front: "Decoding Intent — they say \"I'm just saying, in my day we dressed up.\"", back: "\"Did you say that to make me feel uncomfortable?\"", guideFront: "Ask what they meant by it when...", guideBack: "A question about their motive" },
+            { front: "Naming the Reaction — they huff and say \"You can't take any feedback.\"", back: "\"I can tell I'm getting frustrated, so I'm changing the subject.\"", guideFront: "Say how you're reacting when...", guideBack: "Your own reaction, named out loud" },
+          ]
+        },
       ]
     },
     {
@@ -10685,6 +10739,33 @@ const multiStepCollections = {
         {
           bundle: 'exactwords',
           situation: "Your sibling screams: \"You've always been after Dad's money, and now you're taking the house!\"",
+          steps: [
+            { front: "Naming the Reaction — you feel yourself starting to shake.", back: "\"I can tell I'm not ready to have this conversation at this volume.\"", guideFront: "Say how you're reacting when...", guideBack: "Your own reaction, named out loud" },
+            { front: "Calling Out Subtext — you label the conflict.", back: "\"This is getting too heated, and we're not actually listening to each other.\"", guideFront: "Name the undertone out loud when...", guideBack: "The undertone, named or asked about" },
+            { front: "Naming the Reaction — you take a deep breath.", back: "\"Let's put a time frame on this. I'll call you tomorrow night at six to discuss it.\"", guideFront: "Say how you're reacting when...", guideBack: "Your own reaction, named out loud" },
+          ]
+        },
+        {
+          bundle: 'linesonly',
+          situation: "\"You always do this! You never listen to me!\" (Midnight, the same fight again.)",
+          steps: [
+            { front: "Naming the Reaction — you feel your chest tightening and your breathing get shallow.", back: "\"I can tell I'm getting defensive and I'm starting to snap.\"", guideFront: "Say how you're reacting when...", guideBack: "Your own reaction, named out loud" },
+            { front: "Calling Out Subtext — you notice the familiar argument loop.", back: "\"We're running in circles here, and it's doing more harm than good right now.\"", guideFront: "Name the undertone out loud when...", guideBack: "The undertone, named or asked about" },
+            { front: "Naming the Reaction — you pause to breathe.", back: "\"I'm not leaving the conversation, but I need a thirty-minute walk to reset.\"", guideFront: "Say how you're reacting when...", guideBack: "Your own reaction, named out loud" },
+          ]
+        },
+        {
+          bundle: 'linesonly',
+          situation: "\"This is a disaster, and it's all on you!\"",
+          steps: [
+            { front: "Naming the Reaction — you feel your temper flare.", back: "\"I can tell I'm getting frustrated and my blood is starting to boil.\"", guideFront: "Say how you're reacting when...", guideBack: "Your own reaction, named out loud" },
+            { front: "Calling Out Subtext — you address the dynamic, not the details.", back: "\"I don't respond to that volume. It's blocking us from finding a solution.\"", guideFront: "Name the undertone out loud when...", guideBack: "The undertone, named or asked about" },
+            { front: "Naming the Reaction — you stand up slowly.", back: "\"I'm taking a ten-minute break. I'll be back at my desk when we're ready to speak calmly.\"", guideFront: "Say how you're reacting when...", guideBack: "Your own reaction, named out loud" },
+          ]
+        },
+        {
+          bundle: 'linesonly',
+          situation: "\"You've always been after Dad's money, and now you're taking the house!\"",
           steps: [
             { front: "Naming the Reaction — you feel yourself starting to shake.", back: "\"I can tell I'm not ready to have this conversation at this volume.\"", guideFront: "Say how you're reacting when...", guideBack: "Your own reaction, named out loud" },
             { front: "Calling Out Subtext — you label the conflict.", back: "\"This is getting too heated, and we're not actually listening to each other.\"", guideFront: "Name the undertone out loud when...", guideBack: "The undertone, named or asked about" },

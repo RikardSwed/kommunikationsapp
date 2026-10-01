@@ -2893,6 +2893,12 @@ const BUNDLE_DEFS = {
       name: 'Exact Words',
       description: 'The same situations, with the other person\u2019s exact words on the front.',
     },
+    {
+      id: 'linesonly',
+      tier: 'pro-opt',
+      name: 'Lines Only',
+      description: 'Only what the other person says, with as little context as possible.',
+    },
   ],
   jfisher2: [
     {
@@ -3568,7 +3574,10 @@ function setBundleState(packKey, state) {
 }
 
 // Get active bundle IDs for a pack, based on access level
-function getActiveBundles(packKey) {
+// v1.29.36 — `defaultsOnly` returns the pack's standard view (free, plus pro
+// for pro users) and ignores the user's toggles. Used as the fallback for a
+// deck that none of the active bundles has any cards in.
+function getActiveBundles(packKey, defaultsOnly) {
   const defs = BUNDLE_DEFS[packKey];
   if (!defs) return null;
 
@@ -3598,7 +3607,7 @@ function getActiveBundles(packKey) {
     return false;
   };
 
-  const saved = getBundleState(packKey) || [];
+  const saved = defaultsOnly ? [] : (getBundleState(packKey) || []);
   const proOffMarker = saved.includes('pro:off');
   const hasProBundle = defs.some(b => b.tier === 'pro');
   const hasFreeBundle = defs.some(b => b.tier === 'free');
@@ -3649,9 +3658,15 @@ window.filterInputsByBundle = function(inputs, packKey) {
   if (!active) return inputs;
   // Stable sort by bundle order in BUNDLE_DEFS (untagged cards count as free)
   const order = id => defs.findIndex(b => b.id === id);
-  return inputs
-    .filter(inp => !inp.bundle || active.includes(inp.bundle))
+  const pick = list => inputs
+    .filter(inp => !inp.bundle || list.includes(inp.bundle))
     .sort((a, b) => order(a.bundle) - order(b.bundle));
+  // v1.29.36 — fallback per deck: if none of the active bundles has a single
+  // card in THIS deck, show the standard cards instead of an empty deck. A
+  // bundle can then leave out whole modes (Mindset, Memorize) or decks, and a
+  // user who turned Pro off still gets something to train there.
+  const out = pick(active);
+  return (out.length || !inputs.length) ? out : pick(getActiveBundles(packKey, true) || []);
 };
 
 window.filterCardsByBundle = function(cards, packKey) {
@@ -3660,9 +3675,11 @@ window.filterCardsByBundle = function(cards, packKey) {
   const active = getActiveBundles(packKey);
   if (!active) return cards;
   const order = id => defs.findIndex(b => b.id === id);
-  return cards
-    .filter(c => !c.bundle || active.includes(c.bundle))
+  const pick = list => cards
+    .filter(c => !c.bundle || list.includes(c.bundle))
     .sort((a, b) => order(a.bundle) - order(b.bundle));
+  const out = pick(active);
+  return (out.length || !cards.length) ? out : pick(getActiveBundles(packKey, true) || []);
 };
 
 // Render Input Bundles section into a settings panel
@@ -3745,7 +3762,13 @@ function bundleDescFor(packKey, bundle) {
   const flavour = (bundle.description || '').trim();
   const mode = activeBundleMode();
   const c = mode ? countBundleItems(packKey, mode, bundle.id) : null;
-  if (!c) return flavour;
+  if (!c) {
+    // v1.29.36 — an optional bundle with nothing in this mode: say so, since
+    // the decks then fall back to the standard cards (filterInputsByBundle).
+    if (mode && mode.src() && (bundle.tier === 'pro-opt' || bundle.tier === 'extended'))
+      return (flavour ? flavour + ' ' : '') + 'Not in this mode \u2014 the standard cards are shown here.';
+    return flavour;
+  }
 
   const amount = c.per;
   const unit   = amount === 1 ? mode.unit[0] : mode.unit[1];
@@ -4442,6 +4465,7 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.36', date: 'October 2026', title: 'Lines Only \u2014 a second test bundle in Jefferson Fisher 1; empty decks fall back to the standard cards', audience: 'dev', items: ['New optional input bundle in Jefferson Fisher 1: <em>Lines Only</em>. The front is just what the other person says, in quotes (<em>\u201cWow. Did anyone actually follow those slides, or was that just me?\u201d</em>), with a short note in brackets only where the reply depends on it (<em>(You feel tears coming.)</em>) or where nothing is said (<em>(They roll their eyes while you\u2019re speaking.)</em>). Single Strategy, Collections, Sequences and Challenges; backs and sequence steps unchanged. Pro Bundle and Exact Words are untouched.', 'Fallback per deck: when none of the active bundles has a card in a deck, the deck shows the standard cards (free, plus pro for pro users) instead of being empty. Lines Only has no Mindset or Memorize cards, so those modes show the standard decks; the same now holds for the older optional bundles (assertive, brokenrecord, humourpractise), which had empty modes with Pro turned off. The bundle settings say so in a mode the bundle does not cover.'] },
   { version: 'v1.29.35', date: 'October 2026', title: 'Exact Words \u2014 a test bundle in Jefferson Fisher 1', audience: 'dev', items: ['New optional input bundle in Jefferson Fisher 1 \u2014 Control under Pressure: <em>Exact Words</em>. It holds the same cards as the pack, but where a situation only described what the other person said (<em>a snide remark about your presentation</em>), the front now quotes it (<em>\u201cWow. Did anyone actually follow those slides, or was that just me?\u201d</em>). Backs are unchanged.', '93 situations rewritten across Single Strategy, Collections, Sequences and Challenges; 20 that already quoted the other person, or describe something wordless (rolled eyes, silence), are kept as they are. Mindset and Memorize are copied unchanged, so the bundle works on its own with the Pro Bundle turned off.', 'Pack import (--merge) now treats a card as already there only if the same face exists in the same bundle, so an extra bundle can repeat a card on purpose.'] },
   { version: 'v1.29.34', date: 'September 2026', title: 'Jefferson Fisher \u2014 Advanced', audience: 'dev', items: ['New complete-tier pack under Assertiveness &amp; Pressure (key jfisheradv), built by NotebookLM from an approved plan after Jefferson Fisher 3 was done. Its five strategies each combine two moves from Jefferson Fisher 1\u20133 into one turn: Exposing the Dig, Contracting the Scope, Anchoring History, Disarming the Flex and Draining Consensus. Its three sequences chain three or four moves across the packs.', 'Full volume in all six modes. Content is NotebookLM\'s own, kept as written. Fixed through NotebookLM: Challenges and Collections cards that copied Single Strategy cards, and Memorize cards that repeated existing questions. Fixed here: sequence steps carry each strategy\'s own guide pair from its home pack, and the mode-level guide lines are the standard rows.'] },
   { version: 'v1.29.33', date: 'September 2026', title: 'Jefferson Fisher 3 \u2014 De-escalation & Inquiry', audience: 'dev', items: ['New complete-tier pack under Assertiveness &amp; Pressure (key jfisher3), built by NotebookLM after it reviewed the finished Jefferson Fisher series: Standing by Decisions, Curious Origin Questions, Fact-Feeling Checks, Isolating Objections and Flat Acknowledgment.', 'Full volume in all six modes: 5 Single decks with 40 cards, 3 Collections decks, 9 scenarios, 40 Challenges cards, 40 Mindset cards and 10 Memorize decks with 80 cards.', 'Content is NotebookLM\'s own, kept as written. Fixed through NotebookLM: Collections, Challenges and sequence replies that copied Single Strategy cards, Single decks where every card had the same reply, and Memorize cards that repeated existing questions. Topic changed from a non-existent one to Assertiveness &amp; Pressure, as in Jefferson Fisher 1\u20132.'] },
