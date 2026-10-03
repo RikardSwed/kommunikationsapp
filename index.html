@@ -7,10 +7,10 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Deckstack" />
-  <link rel="manifest" href="manifest.json?v=12937" />
+  <link rel="manifest" href="manifest.json?v=12938" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12937" />
+  <link rel="stylesheet" href="css/style.css?v=12938" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -149,6 +149,7 @@
     <div id="dashLastPackSection" style="display:none;">
       <div class="dash-section-label">Continue</div>
       <div id="dashLastPackCard"></div>
+      <div id="dashRecentPacksList"></div>
     </div>
 
     <!-- Favorite packs -->
@@ -2775,6 +2776,18 @@
       <label>Tag mode</label>
       <label class="toggle"><input type="checkbox" id="tagModeToggle" /><span class="toggle-slider"></span></label>
     </div>
+    <!-- v1.29.38 — how many recently opened packs the home screen shows under
+         Continue, newest first. Developer-only for now; everyone else gets 1. -->
+    <div class="settings-row">
+      <label>Show recent packs</label>
+      <select class="settings-select" id="devRecentPacksSelect">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
     <!-- v1.26.90 — clears a redeemed beta code. Without this the only way back
          to freemium on a device that has redeemed one is to wait out the 60
          days or clear site data by hand. -->
@@ -3091,20 +3104,20 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12937"></script>
-<script src="js/tagsData.js?v=12937"></script>
-<script src="js/programsData.js?v=12937"></script>
-<script src="js/challengesData.js?v=12937"></script>
-<script src="js/mindsetData.js?v=12937"></script>
-<script src="js/multiStepData.js?v=12937"></script>
-<script src="js/memorizeData.js?v=12937"></script>
-<script src="js/mode-engine.js?v=12937"></script>
-<script src="js/app-core.js?v=12937"></script>
-<script src="js/app-modes.js?v=12937"></script>
-<script src="js/app-handsfree.js?v=12937"></script>
-<script src="js/app-system.js?v=12937"></script>
-<script src="js/app-ui.js?v=12937"></script>
-<script src="js/app-back.js?v=12937"></script>
+<script src="js/data.js?v=12938"></script>
+<script src="js/tagsData.js?v=12938"></script>
+<script src="js/programsData.js?v=12938"></script>
+<script src="js/challengesData.js?v=12938"></script>
+<script src="js/mindsetData.js?v=12938"></script>
+<script src="js/multiStepData.js?v=12938"></script>
+<script src="js/memorizeData.js?v=12938"></script>
+<script src="js/mode-engine.js?v=12938"></script>
+<script src="js/app-core.js?v=12938"></script>
+<script src="js/app-modes.js?v=12938"></script>
+<script src="js/app-handsfree.js?v=12938"></script>
+<script src="js/app-system.js?v=12938"></script>
+<script src="js/app-ui.js?v=12938"></script>
+<script src="js/app-back.js?v=12938"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
