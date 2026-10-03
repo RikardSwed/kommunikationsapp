@@ -4421,7 +4421,7 @@ if (clearCodesBtn) clearCodesBtn.addEventListener('click', () => {
 
 const resetFirstRunBtn = document.getElementById('resetFirstRunBtn');
 if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
-  ['fav_packs', 'dash_last_pack', 'ds_last_modes', 'ds_tap_hint_count',
+  ['fav_packs', 'dash_last_pack', 'dash_recent_packs', 'ds_last_modes', 'ds_tap_hint_count',
    'ds_onboarding_done', 'ds_onboarding', 'ds_reco_packs',
    'ds_seen_home', 'ds_pro_nudge', 'ds_reco'].forEach(k => localStorage.removeItem(k));
   // Pack intro counters (v1.26.44) and guide flags (v1.27.09) — dynamic keys.
@@ -6118,6 +6118,7 @@ const RECO_RULES = {
     if (taps >= 7) {
       localStorage.setItem(KEY, 'true');
       apply(true);
+      if (window.renderContinueCard) window.renderContinueCard();
       taps = 0;
       if (window.showToast) showToast('Developer settings unlocked.');
     } else if (taps >= 4 && window.showToast) {
@@ -6129,7 +6130,22 @@ const RECO_RULES = {
   if (hideBtn) hideBtn.addEventListener('click', () => {
     localStorage.removeItem(KEY);
     apply(false);
+    if (window.renderContinueCard) window.renderContinueCard();
     if (window.showToast) showToast('Developer settings hidden.');
+  });
+})();
+
+// ─── SHOW RECENT PACKS (v1.29.38) ─────────────────────────────────────────
+// Developer setting: how many recently opened packs the home screen shows
+// under Continue (1–5, default 1). See dsSetLastPack in app-core.js.
+(function initRecentPacksSetting() {
+  const sel = document.getElementById('devRecentPacksSelect');
+  if (!sel) return;
+  const n = parseInt(localStorage.getItem('ds_recent_packs_count'), 10);
+  sel.value = (n >= 1 && n <= 5) ? String(n) : '1';
+  sel.addEventListener('change', () => {
+    localStorage.setItem('ds_recent_packs_count', sel.value);
+    if (window.renderContinueCard) window.renderContinueCard();
   });
 })();
 

@@ -248,7 +248,7 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
         if (ex && ex.key === key) pct = ex.progressPct || 0;
       } catch {}
     }
-    localStorage.setItem(LASTPACK_KEY, JSON.stringify({ key, label, progressPct: pct }));
+    dsSetLastPack(JSON.stringify({ key, label, progressPct: pct }));
   }
 
   // ── Welcome text (v1.26.66) ──────────────────────────────────────────────
@@ -289,9 +289,61 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
   }
 
   // ── Last pack render ──────────────────────────────────────────────────────
+  function lastModeLabel(key) {
+    const m = getLastMode && getLastMode(key);
+    const l = { modeFlashcard:'Single Strategy', modeMemorize:'Memorize', modeFlow:'Sequences',
+                modeCollections:'Collections', modeChallenges:'Challenges', modeMindset:'Mindset',
+                modeHandsfree:'Handsfree', modeGuided:'Guided' };
+    return m && l[m] ? l[m] : 'Continue';
+  }
+
+  // v1.29.38 — "Show recent packs" (developer setting, 1–5). The Continue card
+  // stays exactly as it was; the packs opened before it are drawn underneath,
+  // newest first, in the same card style but without the accent border so the
+  // latest one still stands out. Packs the user can no longer open are skipped.
+  function renderRecentPacks(last) {
+    let list = document.getElementById('dashRecentPacksList');
+    if (!list && lastPackCard && lastPackCard.parentNode) {
+      list = document.createElement('div');
+      list.id = 'dashRecentPacksList';
+      lastPackCard.parentNode.appendChild(list);
+    }
+    if (!list) return;
+    list.innerHTML = '';
+    const count = window.dsRecentPacksCount ? dsRecentPacksCount() : 1;
+    if (!last || count <= 1 || !window.dsGetRecentPacks) return;
+    const extra = dsGetRecentPacks()
+      .filter(p => p.key !== last.key)
+      .filter(p => !window.accessLevel || !window.accessLevel.packVisibility || window.accessLevel.packVisibility(p.key) !== 'hidden')
+      .filter(p => !window.accessLevel || !window.accessLevel.canAccess || window.accessLevel.canAccess(p.key))
+      .slice(0, count - 1);
+    extra.forEach(p => {
+      const card = document.createElement('div');
+      card.className = 'dash-continue-card dash-continue-card--recent';
+      card.innerHTML = `
+        <div class="dash-continue-inner">
+          <div>
+            <div class="dash-continue-name">${p.label}</div>
+            <div class="dash-continue-meta">${lastModeLabel(p.key)}</div>
+          </div>
+          <div class="dash-continue-arrow">›</div>
+        </div>
+        <div class="dash-continue-progress">
+          <div class="dash-continue-progress-fill" style="width:${p.progressPct || 0}%"></div>
+        </div>`;
+      let sY = 0, mv = false;
+      card.ontouchstart = e => { sY = e.touches[0].clientY; mv = false; };
+      card.ontouchmove  = e => { if (Math.abs(e.touches[0].clientY - sY) > 8) mv = true; };
+      card.ontouchend   = e => { if (!mv) { e.preventDefault(); launchLastMode(p.key, p.label); } };
+      card.onclick      = () => launchLastMode(p.key, p.label);
+      list.appendChild(card);
+    });
+  }
+
   function renderLastPack() {
     const last = getLastPack();
     if (!lastPackSec) return;
+    renderRecentPacks(last);
     const secLabel = lastPackSec.querySelector('.dash-section-label');
     if (!last) {
       // Start here (v1.26.34): before any training has happened, point new
@@ -324,7 +376,7 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
       <div class="dash-continue-inner">
         <div>
           <div class="dash-continue-name">${last.label}</div>
-          <div class="dash-continue-meta">${(()=>{const m=getLastMode&&getLastMode(last.key);const l={modeFlashcard:'Single Strategy',modeMemorize:'Memorize',modeFlow:'Sequences',modeCollections:'Collections',modeChallenges:'Challenges',modeMindset:'Mindset',modeHandsfree:'Handsfree',modeGuided:'Guided'};return m&&l[m]?l[m]:'Continue';})()}</div>
+          <div class="dash-continue-meta">${lastModeLabel(last.key)}</div>
         </div>
         <div class="dash-continue-arrow">›</div>
       </div>
@@ -1023,7 +1075,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         const existing = JSON.parse(localStorage.getItem('dash_last_pack') || 'null');
         if (existing && existing.key) {
           existing.progressPct = Math.round((cardIndex / cardTotal) * 100);
-          localStorage.setItem('dash_last_pack', JSON.stringify(existing));
+          dsSetLastPack(JSON.stringify(existing));
         }
       } catch {}
     }
@@ -1040,7 +1092,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     if (!key || !total) return;
     try {
       const pct = total > 1 ? Math.round((idx / (total - 1)) * 100) : 100;
-      localStorage.setItem('dash_last_pack', JSON.stringify({
+      dsSetLastPack(JSON.stringify({
         key, label, progressPct: Math.max(0, Math.min(100, pct))
       }));
     } catch {}
@@ -1050,7 +1102,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   window.progSetProgress = function(pct) {
     if (!_sessionPack) return;
     try {
-      localStorage.setItem('dash_last_pack', JSON.stringify({
+      dsSetLastPack(JSON.stringify({
         key: _sessionPack.key,
         label: _sessionPack.label,
         progressPct: Math.max(0, Math.min(100, Math.round(pct)))

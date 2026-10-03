@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.29.37';
+const VERSION = 'v1.29.38';
 
 // Keep every version label in the UI in sync with VERSION (v1.26.44).
 // The hardcoded strings in index.html are only fallbacks — this runs at
@@ -436,7 +436,7 @@ function showModeScreen(key, label, opts) {
   try {
     const _lpExisting = JSON.parse(localStorage.getItem('dash_last_pack') || 'null');
     const _lpPct = (_lpExisting && _lpExisting.key === key) ? (_lpExisting.progressPct || 0) : 0;
-    localStorage.setItem('dash_last_pack', JSON.stringify({ key, label, progressPct: _lpPct }));
+    dsSetLastPack(JSON.stringify({ key, label, progressPct: _lpPct }));
     if (window.recordPackTrained) recordPackTrained(key);
     if (window._favRenderDash) _favRenderDash();
   } catch {}
@@ -557,7 +557,7 @@ function goNextPack() {
   try {
     const _lpExisting = JSON.parse(localStorage.getItem('dash_last_pack') || 'null');
     const _lpPct = (_lpExisting && _lpExisting.key === next.key) ? (_lpExisting.progressPct || 0) : 0;
-    localStorage.setItem('dash_last_pack', JSON.stringify({ key: next.key, label: next.label, progressPct: _lpPct }));
+    dsSetLastPack(JSON.stringify({ key: next.key, label: next.label, progressPct: _lpPct }));
     if (window.recordPackTrained) recordPackTrained(next.key);
     if (window._favRenderDash) _favRenderDash();
   } catch {}
@@ -576,6 +576,62 @@ function goNextPack() {
   // Pack intro (v1.26.44): arrow-navigation counts as opening the pack too
   if (window.maybeShowPackIntro) maybeShowPackIntro(next.key);
 }
+
+// ─── RECENT PACKS (v1.29.38) ──────────────────────────────────────────────────
+// Every write of the Continue-card entry (dash_last_pack) goes through
+// dsSetLastPack, which also keeps a short history in dash_recent_packs —
+// newest first, one entry per pack, at most 5. The developer setting
+// "Show recent packs" (ds_recent_packs_count, 1–5, default 1) decides how many
+// of them the home screen shows under Continue. The setting only counts while
+// developer settings are unlocked AND present in the build (the release build
+// deletes #devSection), so an ordinary user always gets 1 — the Continue card
+// exactly as before.
+const RECENT_PACKS_KEY   = 'dash_recent_packs';
+const RECENT_PACKS_COUNT = 'ds_recent_packs_count';
+const RECENT_PACKS_MAX   = 5;
+function dsGetRecentPacks() {
+  let list = [];
+  try { list = JSON.parse(localStorage.getItem(RECENT_PACKS_KEY) || '[]') || []; } catch {}
+  if (!Array.isArray(list)) list = [];
+  list = list.filter(p => p && p.key);
+  // Users from before v1.29.38 have a last pack but no history yet
+  if (!list.length) {
+    try {
+      const last = JSON.parse(localStorage.getItem('dash_last_pack') || 'null');
+      if (last && last.key) list = [last];
+    } catch {}
+  }
+  return list;
+}
+function dsSetLastPack(json) {
+  // Read the history BEFORE overwriting dash_last_pack — for a user from
+  // before v1.29.38 the old last pack is the seed of the history.
+  let list = [];
+  try { list = dsGetRecentPacks(); } catch {}
+  localStorage.setItem('dash_last_pack', json);
+  try {
+    const e = JSON.parse(json);
+    if (!e || !e.key) return;
+    const prev     = list.find(p => p.key === e.key);
+    const wasFront = !!(list[0] && list[0].key === e.key);
+    // Opening a pack writes progress 0 because the Continue entry belonged to
+    // another pack. In the history that pack keeps the position it had.
+    let pct = e.progressPct || 0;
+    if (!pct && prev && !wasFront) pct = prev.progressPct || 0;
+    list = list.filter(p => p.key !== e.key);
+    list.unshift({ key: e.key, label: e.label || (prev && prev.label) || e.key, progressPct: pct });
+    localStorage.setItem(RECENT_PACKS_KEY, JSON.stringify(list.slice(0, RECENT_PACKS_MAX)));
+  } catch {}
+}
+function dsRecentPacksCount() {
+  if (localStorage.getItem('ds_dev_unlocked') !== 'true') return 1;
+  if (!document.getElementById('devRecentPacksSelect')) return 1;
+  const n = parseInt(localStorage.getItem(RECENT_PACKS_COUNT), 10);
+  return (n >= 1 && n <= RECENT_PACKS_MAX) ? n : 1;
+}
+window.dsSetLastPack      = dsSetLastPack;
+window.dsGetRecentPacks   = dsGetRecentPacks;
+window.dsRecentPacksCount = dsRecentPacksCount;
 
 // Save which training mode was last used for a pack
 function saveLastMode(packKey, modeName) {
@@ -629,7 +685,7 @@ function launchLastMode(packKey, packLabel) {
     try {
       const existing = JSON.parse(localStorage.getItem('dash_last_pack') || 'null');
       const progressPct = (existing && existing.key === packKey) ? (existing.progressPct || 0) : 0;
-      localStorage.setItem('dash_last_pack', JSON.stringify({ key: packKey, label: packLabel, progressPct }));
+      dsSetLastPack(JSON.stringify({ key: packKey, label: packLabel, progressPct }));
       if (window.recordPackTrained) recordPackTrained(packKey);
       if (window._favRenderDash) _favRenderDash();
     } catch {}
