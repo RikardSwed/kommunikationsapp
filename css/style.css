@@ -2263,6 +2263,9 @@ body.pb-enabled .divider::after {
   border: 1.5px solid var(--ds-acc);
 }
 .dash-continue-card:active { opacity: 0.88; transform: scale(0.98); }
+/* v1.29.38 — older recent packs under Continue: same card, no accent border,
+   so the latest pack still stands out. */
+.dash-continue-card--recent { border-color: var(--ds-border); }
 .dash-continue-inner {
   display: flex;
   align-items: center;
