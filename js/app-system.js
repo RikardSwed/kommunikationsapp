@@ -743,6 +743,9 @@ applyInputCounterVisibility();
     parentingadv: { label: 'Parenting — Advanced', minLevel: 'complete' },
     jfisher3: { label: 'Jefferson Fisher 3 — De-escalation & Inquiry', minLevel: 'complete' },
     jfisheradv: { label: 'Jefferson Fisher — Advanced', minLevel: 'complete' },
+    conflictresolution: { label: 'Conflict Resolution', minLevel: 'complete' },
+    aftertheargument: { label: 'After the Argument', minLevel: 'complete' },
+    twosidesofthestory: { label: 'Two Sides of the Story', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -3568,6 +3571,48 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
+  conflictresolution: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  aftertheargument: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  twosidesofthestory: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
 };
 window.BUNDLE_DEFS = BUNDLE_DEFS;
 
@@ -4475,6 +4520,7 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.40', date: 'October 2026', title: 'Three packs about the talk after a conflict', audience: 'dev', items: ['Three new complete-tier packs under Repair &amp; Apology, all built as grid packs (card N is the same conflict in every strategy) and all at <strong>0 errors and 0 warnings</strong> in check-pack. Mindset has one deck per strategy from the start.', '<strong>Conflict Resolution</strong> (<code>conflictresolution</code>) \u2014 Rikard\u2019s own process: feelings first, then both sides\u2019 values, then both sides\u2019 needs, and your own hurt last. <em>Their Feelings First, Ask What Mattered to Them, Say What Mattered to You, Offer What They Need, Ask for What You Need, Find Where It Clashed, Say What Hurt, Last.</em> The sequence <em>The Short Way</em> ends after the needs, because the last two steps are often never needed.', '<strong>After the Argument</strong> (<code>aftertheargument</code>) \u2014 repair: listen, speak, own your part, agree on next time, and <em>Pause and Come Back</em> for when the talk crosses a line.', '<strong>Two Sides of the Story</strong> (<code>twosidesofthestory</code>) \u2014 understanding what happened: intent and impact, contribution instead of blame, the third story, and letting two memories stand.', 'First packs built under the trial rule for <strong>composite strategies</strong>: a strategy may hold two or three parts of one process; each card trains one of your replies, with the other person\u2019s reply on the front.'] },
   { version: 'v1.29.39', date: 'October 2026', title: 'Describe Things goes free; three new packs into Pro and the programmes', audience: 'dev', items: ['<strong>Describe Things</strong> moved from Pro to <strong>freemium</strong>, on the same terms as the other free packs: Single Strategy and the free part of Memorize. Its cards were already tagged that way, so nothing in the data changed. Free is now six packs.', '<strong>Calibrating Humour</strong> is <strong>Part 4</strong> of the Humour programme, <em>Getting the size right</em>, with a new 40-question checkpoint (hum-cp4). It opens inside the programme when hum-cp3 is passed and everywhere else when hum-cp4 is passed. Programme description now says four steps.', '<strong>Asking for Clarity</strong> sits next to Show Understanding \u2014 Pt. 2 in <strong>Listening in Depth, Part 3</strong>. lid-cp3 got 20 questions about it (bank 60, 20 drawn).', '<strong>Asking for Permission</strong> is <strong>open in Pro</strong> and also sits in <strong>Difficult Conversations, Part 1</strong>, next to Making Requests and Saying No. dc-cp1 got 20 questions about it (bank 60, 20 drawn).', 'The three packs leave the complete tier and enter the release scope, which goes from 52 to 55 packs. Open in Pro stays at 24: Describe Things left, Asking for Permission came in.'] },
   { version: 'v1.29.38', date: 'October 2026', title: 'Show recent packs (developer setting)', audience: 'dev', items: ['New developer setting <strong>Show recent packs</strong> (1\u20135, default 1). Above 1, the home screen shows the packs opened before the Continue pack underneath it, newest first, each with its last mode and progress.', 'Every write of the Continue entry now goes through <code>dsSetLastPack</code>, which also keeps <code>dash_recent_packs</code> (max 5). A pack keeps its own progress in the history.', 'Only applies while developer settings are unlocked and present; the release build removes #devSection, so ordinary users always get 1. New test suite <code>test-recent</code>.'] },
   { version: 'v1.29.37', date: 'October 2026', title: 'Who Says It \u2014 a third test bundle in Jefferson Fisher 1', audience: 'dev', items: ['New optional input bundle in Jefferson Fisher 1: <em>Who Says It</em>. The front names the speaker, then quotes them: <em>A colleague says to the team: \u201cWow. Did anyone actually follow those slides, or was that just me?\u201d</em>. The speaker note also carries the channel or moment where the reply depends on it (<em>A friend texts: \u201cSure.\u201d</em>), so fewer notes in brackets are needed than in Lines Only. Single Strategy, Collections, Sequences and Challenges; backs and steps unchanged.', 'Lines Only: the eight Straightening the Record cards now end with a short note on what really happened, e.g. <em>(You never promised that.)</em>, since the reply assumes the claim is wrong.'] },

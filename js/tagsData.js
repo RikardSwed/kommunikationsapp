@@ -469,6 +469,15 @@ const packTags = {
   jfisheradv: [
     'advanced', 'communication', 'conflict', 'boundaries', 'de-escalation'
   ],
+  conflictresolution: [
+    'conflict', 'after an argument', 'values', 'needs', 'repair', 'understanding', 'making up', 'relationships'
+  ],
+  aftertheargument: [
+    'after an argument', 'repair', 'listening', 'apology', 'taking responsibility', 'pause', 'making up', 'relationships'
+  ],
+  twosidesofthestory: [
+    'misunderstanding', 'intent and impact', 'blame', 'two versions', 'memory', 'conflict', 'understanding', 'identity'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -514,7 +523,7 @@ const TOPICS = [
   // ── Giving and taking it ──────────────────────────────────────────
   { id: 'praise',                title: 'Praise & Compliments',          packs: ['compliments', 'praiseandencouragement', 'complimenting'] },
   { id: 'feedback',              title: 'Feedback & Criticism',          packs: ['criticism', 'givingcriticism', 'receivingfeedbackandcriticism'] },
-  { id: 'repair',                title: 'Repair & Apology',              packs: ['apologizing2', 'apologizing1', 'jimmy4', 'brokenpromises'] },
+  { id: 'repair',                title: 'Repair & Apology',              packs: ['apologizing2', 'apologizing1', 'jimmy4', 'brokenpromises', 'conflictresolution', 'aftertheargument', 'twosidesofthestory'] },
 
   // ── Standing your ground ──────────────────────────────────────────
   { id: 'opinions',              title: 'Opinions & Argumentation',      packs: ['influenceframing', 'agreeing', 'disagreeing', 'givingcounterexamples', 'discussing'] },

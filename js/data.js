@@ -11906,6 +11906,364 @@ const collections = {
       ]
     },
   ],
+  conflictresolution: [
+    {
+      name: "Their Feelings First",
+      guideFront: "Let them tell it first when...",
+      guideBack: "Their feeling, heard and owned",
+      description: "Start the talk after a conflict with how it was for them. Let them say how it felt, show that you understand it, and say that hurting them was never the aim — and that you regret how it landed. \"I can hear how small that made you feel. That was never what I wanted, and I'm sorry it landed like that.\"\n\nIt works because nobody can listen to your side while their own is still burning. Once they have been heard, the rest of the talk has room to happen. Starting with your side, even calmly, tends to start the argument again.\n\nRegretting how it landed is not the same as saying you were wrong about everything. It says you care what it did to them.\n\nTypical phrases: \"How was it for you?\", \"I'd like to hear your side first.\", \"That makes sense.\", \"That was never what I wanted.\", \"I'm sorry it landed like that.\"\n\nThree parts, in order:\n\n1. Ask, and listen — \"Can we talk about last night? I'd like to hear how it was for you first.\"\n\n2. Show you understand — \"Being the one who always gets dropped — that's a horrible feeling.\"\n\n3. Say it was not the aim, and that you regret how it landed — \"I didn't mean to make you feel that, and I'm sorry I did.\"\n\nMindset: their side first is not losing. It is how the talk gets room to happen.",
+      inputs: [
+        { q: "It's the morning after you missed your anniversary dinner because you stayed late at work. Your partner is quiet over breakfast.", a: "\"Can we talk about last night? I'd like to hear how it was for you first.\"", bundle: 'free' },
+        { q: "Maria tells you that seeing her slides changed in front of the client made her feel like a junior again.", a: "\"That makes sense. You'd built them, and then they weren't yours in front of everyone. That was never what I meant, and I'm sorry it landed like that.\"", bundle: 'free' },
+        { q: "Jonas says your last-minute cancel made him feel like he's always the one who gets dropped.", a: "\"Always being the one who gets dropped — that's a horrible feeling. I didn't mean to make you feel that, and I'm sorry I did.\"", bundle: 'free' },
+        { q: "Your sister says she felt completely alone when you told her you can't do more for Dad.", a: "\"You've been carrying it, and then I made it sound like it wasn't my problem. I can hear how alone that felt. I'm sorry.\"", bundle: 'free' },
+        { q: "Your partner says your reaction to the new bike made them feel like a child being told off.", a: "\"I can see that. I spoke to you as if you'd done something wrong before I'd even asked. I regret that.\"", bundle: 'free' },
+        { q: "Sam has avoided you since your message about his guests in the flat's group chat. You knock on his door.", a: "\"Have you got a minute? I'd like to hear how that message felt for you before I say anything.\"", bundle: 'pro' },
+        { q: "Leo, sixteen, says being shouted at in front of his friends was the worst part of the night he came home late.", a: "\"In front of your friends — yes. That must have been humiliating. I was scared, but that's not how I wanted to show it. I'm sorry.\"", bundle: 'pro' },
+        { q: "Your manager says that when you answered her back in the meeting, she felt she'd lost control of the team.", a: "\"I understand that. I answered you in front of everyone, and it undermined you. That wasn't my aim, and I regret it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What Mattered to Them",
+      guideFront: "Ask what was important to them when...",
+      guideBack: "What mattered to them, said back",
+      description: "Ask what was important to them in the situation — what they were trying to protect or make happen — and show that you understand it. \"What were you hoping the evening would be? … So it was about time that's only ours. That makes sense.\"\n\nIt works because behind most of what people do in a conflict there is something they value: being able to count on others, fairness, their own work, freedom, safety. Once you can see it, their behaviour stops looking like an attack and starts looking like a reason.\n\nThe question is the easy part. The hard part is what you do with the answer: say it back, and let it make sense, even if you would have done it differently.\n\nTypical phrases: \"What was important to you?\", \"What were you hoping for?\", \"So it was about…\", \"That makes sense.\"\n\nThree parts, in order:\n\n1. Ask what mattered — \"What was important to you about last night?\"\n\n2. Listen, and guess if they cannot say — \"Was it partly about it being fair?\"\n\n3. Say it back, with understanding — \"So it was about your work being seen as yours. That makes complete sense.\"\n\nMindset: they were protecting something that mattered. Find out what.",
+      inputs: [
+        { q: "Your partner has told you how hurt they were about the missed dinner. You want to know what the evening meant to them.", a: "\"What were you hoping last night would be — what was important to you about it?\"", bundle: 'free' },
+        { q: "You asked Maria what mattered to her. She says: \"They were my slides. I wanted the client to see my work.\"", a: "\"So it was about your work being seen as yours. That makes complete sense.\"", bundle: 'free' },
+        { q: "Jonas says: \"I'd moved my whole weekend around. I just want people to do what they say.\"", a: "\"Being able to count on people — that's what matters to you. And I let that down.\"", bundle: 'free' },
+        { q: "You ask your sister what she needed from you that day. She says she doesn't know — she was just angry.", a: "\"Was it partly about it being fair — both of us doing our share for Dad?\"", bundle: 'free' },
+        { q: "Your partner says: \"I've wanted to get fit for a year. I didn't want to have to ask permission.\"", a: "\"So it was about your health, and deciding things for yourself. I get that.\"", bundle: 'free' },
+        { q: "You want to understand why Sam's friends stay over so often.", a: "\"What does it mean to you, having people stay over?\"", bundle: 'pro' },
+        { q: "Leo says: \"Everyone else was staying. I didn't want to be the one who leaves first again.\"", a: "\"Being part of the group mattered — not being the one who always has to go home. That makes sense at sixteen.\"", bundle: 'pro' },
+        { q: "Your manager says the client deadline was all she could think about in that meeting.", a: "\"So getting it to the client on time was what mattered most right then. I understand why you pushed.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say What Mattered to You",
+      guideFront: "Say what drove you when...",
+      guideBack: "What mattered to you, and what it did to you",
+      description: "Say what was important to you in the situation, and how it affected you — as an explanation of where you stood, not as a defence. \"Not letting the team down matters a lot to me. That's why I stayed — and why I didn't think to call.\"\n\nIt works because they have just been understood, and now they can do the same for you. A value is easier to hear than a reason: \"I was busy\" invites an argument, \"being reliable to the team matters to me\" invites understanding.\n\nIt comes after their side on purpose. Said first, the same sentence sounds like an excuse.\n\nTypical phrases: \"For me it was about…\", \"What matters to me is…\", \"That's why I…\", \"It left me feeling…\"\n\nTwo parts:\n\n1. The value — \"Getting it right for the client matters a lot to me.\"\n\n2. What it did to you — \"I was worried all evening, and I let that run over asking you.\"\n\nMindset: your reasons are not excuses. Said after theirs, they become part of the picture.",
+      inputs: [
+        { q: "Your partner asks why you stayed so late at work on your anniversary.", a: "\"The team was stuck, and not letting people down matters a lot to me. That's why I stayed — and why I didn't think to call.\"", bundle: 'free' },
+        { q: "Maria asks why you changed her slides without asking.", a: "\"I was worried about the client, and getting it right matters a lot to me. I let that run over asking you.\"", bundle: 'free' },
+        { q: "Jonas asks what was so important that you cancelled.", a: "\"My mum needed me, and when it's urgent, family comes first for me. I felt torn the whole time.\"", bundle: 'free' },
+        { q: "Your sister wants to know why you said you can't do more for Dad.", a: "\"I've got the kids and a job I'm already behind in. Being there for them matters to me too, and I'm scared of breaking.\"", bundle: 'free' },
+        { q: "Your partner asks why the bike made you so angry.", a: "\"We'd been saving for the trip together, and that feeling of safety matters to me. When the money suddenly went, I panicked.\"", bundle: 'free' },
+        { q: "Sam asks what the big problem is with having guests.", a: "\"I need my sleep before early shifts. Rest at home matters a lot to me, and I didn't say so in time.\"", bundle: 'pro' },
+        { q: "Leo asks why you were so angry that night.", a: "\"Keeping you safe is what I care about most. When you didn't answer, I imagined the worst.\"", bundle: 'pro' },
+        { q: "Your manager asks why you answered her back in front of the team.", a: "\"Being treated with respect in front of the team matters to me. In that moment it felt like it was gone.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Offer What They Need",
+      guideFront: "Offer something for next time when...",
+      guideBack: "A concrete offer for their need",
+      description: "Look ahead. Based on what they need and what matters to them, offer something concrete you are willing to do. \"Next time something comes up at work, I'll call before six. I'm willing to do that for you.\"\n\nIt works because understanding the past is only half of it. The other person needs to know that something will be different. An offer built on their own value shows you were listening, and it makes the next time safer.\n\nKeep it concrete and keep it real. A small offer you will keep is worth more than a big one you won't.\n\nTypical phrases: \"I'm willing to…\", \"Next time, I'll…\", \"I can do that for you.\", \"Would that help?\"\n\nTwo parts:\n\n1. Name their need — \"You need to be able to count on plans.\"\n\n2. Offer something concrete — \"If I have to cancel, I'll tell you as soon as I know, and suggest a new day myself.\"\n\nMindset: an offer is not giving in. It is building the next time.",
+      inputs: [
+        { q: "Your partner has said they need to feel that the time you plan together is safe.", a: "\"Next time something comes up at work, I'll call before six — and our evenings stay ours. I'm willing to do that.\"", bundle: 'free' },
+        { q: "Maria has said she needs her work to stay hers.", a: "\"If I see something in your slides, I'll come to you first. They're yours to change.\"", bundle: 'free' },
+        { q: "Jonas has said he needs to be able to count on plans.", a: "\"If I ever have to cancel, I'll tell you as soon as I know — and I'll suggest a new day myself.\"", bundle: 'free' },
+        { q: "Your sister has said she needs Dad's care to feel shared.", a: "\"I can take Dad to his appointments every Thursday. That's something I can keep.\"", bundle: 'free' },
+        { q: "Your partner has said they need to be able to decide some things alone.", a: "\"Things for yourself below a certain amount are yours to decide. I'll trust that.\"", bundle: 'free' },
+        { q: "Sam has said his friends matter a lot to him.", a: "\"Guests at weekends are fine with me. And if something bothers me, I'll say it to you, not in the group.\"", bundle: 'pro' },
+        { q: "Leo has said he needs not to be the first one sent home.", a: "\"I can make it eleven at weekends, if you text me at ten. That's me trusting you.\"", bundle: 'pro' },
+        { q: "Your manager has said she needs to be able to push when a deadline is close.", a: "\"If you need something faster, I'll do it. If I disagree, I'll tell you afterwards, not in the meeting.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for What You Need",
+      guideFront: "Ask for something for yourself when...",
+      guideBack: "A clear request from your side",
+      description: "Say what you would like from them in future, based on what matters to you. \"And I'd like it if, when I'm late, we talk the next day rather than that same night.\"\n\nIt works because a conflict usually has two sets of needs in it. If only theirs is met, the same thing will happen again from your side. A request — clear, specific and kind — gives them something they can actually do.\n\nIt comes after your offer on purpose. Asking first sounds like a condition. Asking after sounds like a deal between two people.\n\nTypical phrases: \"I'd like it if…\", \"What would help me is…\", \"Could we…?\", \"That's all I need.\"\n\nTwo parts:\n\n1. Name your need — \"I need to be able to plan around my early shifts.\"\n\n2. Ask for something concrete — \"Could you give me a heads-up the day before?\"\n\nMindset: asking for what you need is part of fixing it, not a new complaint.",
+      inputs: [
+        { q: "Your partner has heard your side about the anniversary. You'd like something too.", a: "\"And I'd like it if, when I'm late, we talk about it the next day rather than that same night.\"", bundle: 'free' },
+        { q: "You've offered Maria to come to her first. Now there's something you need.", a: "\"And I'd like to be able to tell you when I'm worried about a deadline, without it sounding like criticism.\"", bundle: 'free' },
+        { q: "Jonas has accepted your offer. There's something you'd like from him.", a: "\"I'd like it if you told me when you're hurt, instead of a message like that. I'd rather hear it straight.\"", bundle: 'free' },
+        { q: "You've offered your sister Thursdays. You need something from her too.", a: "\"I'd like us to plan Dad's care together each month, so it's not decided in the middle of a crisis.\"", bundle: 'free' },
+        { q: "You've told your partner their own things are theirs to decide. You have a need as well.", a: "\"I'd like us to talk before anything over five hundred. Not for permission — so I'm not surprised.\"", bundle: 'free' },
+        { q: "You've told Sam that weekend guests are fine.", a: "\"I'd like a heads-up the day before on weeknights, so I can plan around my early shifts.\"", bundle: 'pro' },
+        { q: "You've offered Leo eleven o'clock at weekends.", a: "\"And I'd like you to answer when I call, even with just 'I'm fine'. That's all I need.\"", bundle: 'pro' },
+        { q: "You've told your manager you'll do things faster when she needs it.", a: "\"I'd like it if criticism of my work came to me alone first, not in front of the team.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Find Where It Clashed",
+      guideFront: "Look for the clash together when...",
+      guideBack: "Both values, side by side",
+      description: "When it still does not feel settled, put both values side by side and look together for the place they collided. Ask how they see it. \"I think your 'this evening is ours' ran straight into my 'I can't leave the team stuck'. Does that sound right to you?\"\n\nIt works because many conflicts are not about one person being wrong. Two good things met at a bad moment. Naming the clash moves the problem from \"you\" to \"the two things we both care about\" — and that is something you can solve together.\n\nYou often do not need this step. If the needs have been heard and met, the clash has already been dealt with. Use it when the same conflict keeps coming back.\n\nTypical phrases: \"I think your… ran into my…\", \"Both are real.\", \"Is that how you see it?\", \"Where do you think they pulled apart?\"\n\nTwo parts:\n\n1. Put both values side by side — \"You're fighting for fairness, and I'm fighting for my limits.\"\n\n2. Ask how they see it — \"Where do you think they pulled apart?\"\n\nMindset: often nobody was wrong. Two good things met at a bad moment.",
+      inputs: [
+        { q: "You've both said what mattered about the anniversary, and it still doesn't quite feel settled.", a: "\"I think your 'this evening is ours' ran straight into my 'I can't leave the team stuck'. Does that sound right to you?\"", bundle: 'free' },
+        { q: "The talk with Maria keeps going round in circles.", a: "\"My worry about the client and your ownership of the work crashed into each other at ten at night, when I didn't ask. How do you see it?\"", bundle: 'free' },
+        { q: "Jonas says it still feels like you just don't value him.", a: "\"I think your 'plans are plans' and my 'family first' met on the one weekend both mattered. Is that how it looks to you?\"", bundle: 'free' },
+        { q: "You and your sister keep coming back to who does more.", a: "\"You're fighting for fairness, and I'm fighting for my limits. Both are real. Where do you think they pulled apart?\"", bundle: 'free' },
+        { q: "You and your partner are going round the same argument about money again.", a: "\"Your freedom and my need to feel safe about money — that's the clash, isn't it? Not the bike.\"", bundle: 'free' },
+        { q: "You and Sam agree on weekends, but weeknights still feel tense.", a: "\"Your being a good host and my need to sleep — I think they only collide on weeknights. What do you think?\"", bundle: 'pro' },
+        { q: "Leo says you'll never trust him, whatever he does.", a: "\"Your wanting to belong and my wanting you safe both happened at midnight. Can we find where they actually clash?\"", bundle: 'pro' },
+        { q: "Your manager says she still doesn't see what she did wrong.", a: "\"Your pressure from the client met my need to be treated as a professional. Do you see it the same way?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say What Hurt, Last",
+      guideFront: "Say what still hurts when...",
+      guideBack: "Your feeling, said last and plainly",
+      description: "If something still sits with you after the rest has been said, say it now: how you felt, and what they did that caused it. Say it plainly, as your feeling, and keep it to the one thing. \"There's one thing still with me. When you said I always choose work, that hurt.\"\n\nIt comes last on purpose. Said at the start, the same sentence is an accusation, and it starts the argument again. Said at the end, after both sides have been heard, it is information — and the other person is now able to take it in.\n\nOften you never get here. If the talk has gone well, what hurt has already lost its weight. Use this step only for what is still there.\n\nTypical phrases: \"There's one thing still with me.\", \"One last thing.\", \"When you…, I felt…\", \"I needed to say that.\"\n\nTwo parts:\n\n1. What they did — \"When you called me selfish…\"\n\n2. How it felt — \"…that cut deep. I needed to say it, and now I can let it go.\"\n\nMindset: your feelings matter. Saying them last is how they get heard.",
+      inputs: [
+        { q: "The talk about the anniversary has gone well, but one thing your partner said still sits with you.", a: "\"There's one thing still with me. When you said I always choose work, that hurt. It isn't how I see us.\"", bundle: 'free' },
+        { q: "You and Maria have agreed how to work. But being snapped at in front of the team still stings.", a: "\"One last thing. Being snapped at in front of the team stung. I'd rather we had it out in private.\"", bundle: 'free' },
+        { q: "You and Jonas have made a new plan. His message is still on your mind.", a: "\"And the 'don't bother next time' message hurt. I've thought about it all week.\"", bundle: 'free' },
+        { q: "You and your sister have a plan for Dad. Being called selfish still hurts.", a: "\"When you called me selfish, that cut deep. I needed to say that, and now I can let it go.\"", bundle: 'free' },
+        { q: "You and your partner have agreed about money. One thing still bothers you.", a: "\"There's one thing left. Finding out about the bike from the bank statement made me feel shut out.\"", bundle: 'free' },
+        { q: "You and Sam have sorted out the guests. But his silence afterwards still sits with you.", a: "\"One more thing. When you stopped talking to me for two days, I felt pushed out of my own home.\"", bundle: 'pro' },
+        { q: "You and Leo have agreed on a new time. One part of that night still sits with you.", a: "\"And when you switched your phone off, I was really frightened. That's the part I needed you to know.\"", bundle: 'pro' },
+        { q: "You and your manager have agreed how to handle feedback. One word still stays with you.", a: "\"One thing still sits with me. Hearing my work called 'sloppy' in front of everyone was hard.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  aftertheargument: [
+    {
+      name: "Ask for the Talk",
+      guideFront: "Ask to talk it through when...",
+      guideBack: "An invitation, with its purpose",
+      description: "Choose a calm moment, ask to talk about what happened, and say what the talk is for — understanding, not deciding who was right. If they are not ready, accept it and leave the door open. \"Can we talk about yesterday? Not to go over who was right — I want to understand how it was for you.\"\n\nIt works because the purpose changes how the question lands. \"We need to talk\" sounds like a trial. \"I want to understand\" sounds like an offer. And a \"not now\" accepted calmly often turns into a \"yes\" later.\n\nPick the moment: not in the middle of something, not when one of you is tired or hungry, and not by message if you can talk.\n\nTypical phrases: \"Can we talk about yesterday?\", \"Not to go over who was right.\", \"I want to understand.\", \"Whenever you're ready.\"\n\nTwo parts:\n\n1. Ask, with the purpose — \"Can we talk about the party? I want to understand how it was for you.\"\n\n2. If not now, leave the door open — \"Okay. If you want to talk later, I'd like that.\"\n\nMindset: the way you ask for the talk sets the tone for the whole of it.",
+      inputs: [
+        { q: "Tom left the party early after your joke about his new job. It's the next day, and you call him.", a: "\"Hey — can we talk about last night? Not to explain the joke. I want to understand how it was for you.\"", bundle: 'free' },
+        { q: "The car journey with your partner ended in silence. You're home now, and things have calmed down.", a: "\"Can we talk about the car? Not who was right about the road — I didn't like how we spoke to each other.\"", bundle: 'free' },
+        { q: "Your partner had to leave work to pick up the kids you forgot. You want to talk, and she says, \"Not now.\"", a: "\"Okay. I'd like to talk when you're ready — whenever that is.\"", bundle: 'free' },
+        { q: "Sara hasn't replied since your \"ok\" to her long message.", a: "\"Could we talk about my reply the other day? I think it came across badly, and I'd like to hear how.\"", bundle: 'free' },
+        { q: "After the match, Ali is packing his bag in silence.", a: "\"Can we talk for a minute, away from the others? Not about the mistake — about how I spoke to you.\"", bundle: 'free' },
+        { q: "Two days after you argued at his door, you see your neighbour Mr Berg in the stairwell.", a: "\"Mr Berg, have you got a minute some time? I'd like to sort out what happened the other night.\"", bundle: 'pro' },
+        { q: "Your mum hasn't called since you hung up on her. You call her. She says, \"I don't want to argue.\"", a: "\"Neither do I. Whenever you feel like talking about it, I'd like that.\"", bundle: 'pro' },
+        { q: "Lisa looks tense after the meeting where you interrupted her.", a: "\"Lisa, could we talk after lunch? I'd like to hear how the meeting was for you.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Their Side First",
+      guideFront: "Invite their side when...",
+      guideBack: "An open door, and you listening",
+      description: "Before anything else, ask how it was for them — and then listen without correcting, explaining or defending. \"Tell me how it was for you. I'll just listen.\"\n\nIt works because people cannot listen while they are still waiting to be heard. Letting them go first is not agreeing with them. It is making room for your side to land later.\n\nThe hard part is the listening. The urge to correct a detail — \"that's not what I said\" — is strongest exactly when it matters most to stay quiet.\n\nTypical phrases: \"How was it for you?\", \"Tell me what it was like.\", \"I'll just listen.\", \"Go on.\", \"What else?\"\n\nTwo parts:\n\n1. Invite it — \"Tell me how it was for you.\"\n\n2. Keep listening, without correcting — \"Go on. What else?\"\n\nMindset: their side first is not agreeing with it. It is making room.",
+      inputs: [
+        { q: "Tom has agreed to talk about the party joke. You're sitting down together.", a: "\"Tell me how it was for you, when I said it. I'll just listen.\"", bundle: 'free' },
+        { q: "Your partner starts talking about the car, and says you made them feel stupid. You want to explain about the road.", a: "\"Go on. What was it like for you?\"", bundle: 'free' },
+        { q: "Your partner says leaving work for the kids was a disaster. A detail is wrong — it wasn't her biggest meeting.", a: "\"Tell me what happened when you got the call.\"", bundle: 'free' },
+        { q: "Sara says your \"ok\" felt like a door slammed in her face.", a: "\"I'd like to hear more. What did it feel like when you read it?\"", bundle: 'free' },
+        { q: "Ali says he felt humiliated in front of the team. You want to say you were just frustrated with the result.", a: "\"Go on. What was the worst part for you?\"", bundle: 'free' },
+        { q: "Mr Berg has agreed to talk and says he's tired of the noise.", a: "\"Tell me what it's been like, living next door to it.\"", bundle: 'pro' },
+        { q: "Your mum has agreed to talk. She says she was only asking a question.", a: "\"Tell me how it was for you when I hung up.\"", bundle: 'pro' },
+        { q: "Lisa says she felt invisible in that meeting. You want to say you were only excited about the idea.", a: "\"Go on. What happened for you in the meeting?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Get Their Version Right",
+      guideFront: "Say their version back when...",
+      guideBack: "Their experience, in your words",
+      description: "Say back what they experienced — what happened for them and how it felt — in your own words, until they say \"yes, that's it\". \"So when I left the table, it felt like I didn't care how the evening went?\"\n\nIt works because being understood is different from being listened to. When they hear their own experience said back correctly, they stop needing to repeat it — and often the anger drops away right there.\n\nGetting it right may take two or three tries. Each correction they give you is progress, not failure.\n\nTypical phrases: \"So for you…\", \"It sounds like…\", \"Have I got that right?\", \"What did I miss?\"\n\nTwo parts:\n\n1. Say it back — \"So it felt like I was laughing at you, in front of people you'd just met?\"\n\n2. Check it, and adjust — \"Have I got that right, or is there more?\"\n\nMindset: they know they have been understood when they hear it, not when you say so.",
+      inputs: [
+        { q: "Tom says the joke made him feel like his new job was something to be ashamed of, in front of people he'd just met.", a: "\"So it felt like I was laughing at your job, in front of people you didn't know yet. Is that right?\"", bundle: 'free' },
+        { q: "Your partner says that in the car, it felt like nothing they said counted.", a: "\"So it felt like you weren't allowed an opinion in your own car. Have I got that?\"", bundle: 'free' },
+        { q: "Your partner says: \"It's not the kids. It's that I'm always the one who has to drop everything.\"", a: "\"So it's not about one afternoon. It's about always being the one who drops everything.\"", bundle: 'free' },
+        { q: "Sara says she'd written that message for an hour, and got two letters back.", a: "\"So you'd put a lot into it, and it felt like I didn't even read it. Have I got that right?\"", bundle: 'free' },
+        { q: "Ali says: \"You shouted at me like I'd lost us the season.\"", a: "\"So it felt like I was blaming you for everything, not just one chance. Is that it?\"", bundle: 'free' },
+        { q: "Mr Berg says the banging on the wall felt like being attacked in his own home.", a: "\"So it felt like I'd come into your home, not just complained about the noise. Is that right?\"", bundle: 'pro' },
+        { q: "Your mum says she only wanted to know you're okay, and you made her feel like an enemy.", a: "\"So you were worried about me, and I treated you like you were attacking me. Have I got that?\"", bundle: 'pro' },
+        { q: "Lisa says: \"Every time I started, you finished my sentence — with a different point.\"", a: "\"So it wasn't just being interrupted. It was your idea getting replaced by mine. Is that right?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Makes Sense Because",
+      guideFront: "Explain why their reaction fits when...",
+      guideBack: "Their reaction, made sense of",
+      description: "Show that their reaction makes sense, given how they saw it — without having to agree with everything. \"If you thought I was laughing at you, of course you got angry.\"\n\nIt works because people often feel they have to defend their reaction as well as explain it. When you say it makes sense, the defence is no longer needed — and the talk can move on from \"was I allowed to feel that\" to \"what happened\".\n\nIt is not the same as saying their version is the only true one. It is saying that from where they stood, the reaction fits.\n\nTypical phrases: \"That makes sense.\", \"Of course you…\", \"If I'd thought that, I'd have…\", \"From where you stood…\"\n\nTwo parts:\n\n1. Name how they saw it — \"If you thought I was laughing at your job…\"\n\n2. Say the reaction fits — \"…of course you left early.\"\n\nMindset: understanding their reaction is not the same as agreeing with their version.",
+      inputs: [
+        { q: "Tom says he left the party early because he couldn't stand being there after the joke.", a: "\"If it felt like I was laughing at you, of course you didn't want to stay.\"", bundle: 'free' },
+        { q: "Your partner says they went silent for the rest of the drive.", a: "\"If nothing you said seemed to count, going quiet makes complete sense.\"", bundle: 'free' },
+        { q: "Your partner says she shouted at you on the phone.", a: "\"You'd had to drop everything again, without warning. Of course you were furious.\"", bundle: 'free' },
+        { q: "Sara says she was too hurt to reply for three days.", a: "\"After putting an hour into it, getting 'ok' back — I'd have gone quiet too.\"", bundle: 'free' },
+        { q: "Ali says he didn't come to the next training.", a: "\"If you felt blamed for the whole season, I understand not wanting to come back.\"", bundle: 'free' },
+        { q: "Mr Berg says he shouted at you at the door.", a: "\"If it felt like someone was attacking your home, shouting back makes sense.\"", bundle: 'pro' },
+        { q: "Your mum says she cried after you hung up.", a: "\"You'd been worried about me, and I hung up on you. Of course that hurt.\"", bundle: 'pro' },
+        { q: "Lisa says she stopped talking for the rest of the meeting.", a: "\"If every time you started, your point disappeared, I'd have stopped too.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Your Side, Not the Verdict",
+      guideFront: "Tell your side when...",
+      guideBack: "Your experience, as yours",
+      description: "When they have been heard, tell your side — what you saw, thought and felt — as your experience, not as a verdict on what they did. \"From where I stood, I thought we'd agreed on seven. When it got to eight, I started to feel stupid for waiting.\"\n\nIt works because your experience is something they cannot argue with: it is yours. A verdict — \"you were late\", \"you overreacted\" — invites a counter-verdict, and the talk becomes a trial. \"From where I stood\" invites them to see your side.\n\nIt comes after their side on purpose. The same words said first sound like a defence.\n\nTypical phrases: \"From where I stood…\", \"What I thought was…\", \"For me, it was…\", \"I felt…\"\n\nTwo parts:\n\n1. What you saw and thought — \"From where I stood, I thought we were all joking around.\"\n\n2. What you felt — \"When you left, I felt awful, and I didn't know why.\"\n\nMindset: your side is a description, not a ruling.",
+      inputs: [
+        { q: "Tom has been heard and asks what you were thinking at the party.", a: "\"From where I stood, we were all teasing each other. I didn't see it was different for you until you left — and then I felt awful.\"", bundle: 'free' },
+        { q: "Your partner asks what the car was like for you.", a: "\"For me, I was sure we were going to miss the ferry. I was panicking, and it came out as me taking over.\"", bundle: 'free' },
+        { q: "Your partner asks how you could forget the kids.", a: "\"I'd swapped days with you in my head and never checked. When you called, I felt sick.\"", bundle: 'free' },
+        { q: "Sara asks why you only wrote \"ok\".", a: "\"I read it in a meeting, meant to answer properly later, and sent 'ok' so you'd know I'd seen it. I didn't think how it would look.\"", bundle: 'free' },
+        { q: "Ali asks why you shouted.", a: "\"From where I stood, we'd worked so hard for that match, and when the chance went, I lost it.\"", bundle: 'free' },
+        { q: "Mr Berg asks why you banged on the wall.", a: "\"For me, it was the third night running, and I had an early start. I was exhausted, and I didn't think about how it would feel next door.\"", bundle: 'pro' },
+        { q: "Your mum asks why you hung up.", a: "\"From where I stood, it felt like the same question again — whether my job is good enough. I felt small, and I ran.\"", bundle: 'pro' },
+        { q: "Lisa asks why you kept interrupting.", a: "\"For me, I was excited, and I thought I was building on your point. I didn't notice I was taking it over.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Own Your Part",
+      guideFront: "Name your part when...",
+      guideBack: "Your specific part, said plainly",
+      description: "Name your specific part in what happened — not a general \"sorry if I upset you\", but the one thing you did. \"My part was raising my voice when you were already stressed.\"\n\nIt works because a specific part shows you have actually looked at yourself. A general apology can mean anything; a specific one means you know. And it often makes it easier for the other person to own theirs — without being asked to.\n\nYour part can be small, and it still counts. Owning a small part is not taking the whole blame.\n\nTypical phrases: \"My part was…\", \"What I did was…\", \"That's on me.\", \"I should have…\"\n\nTwo parts:\n\n1. Name what you did — \"My part was making the joke about something new and important to you.\"\n\n2. Say it plainly — no \"but\", no explanation after it.\n\nMindset: owning your part is not taking all the blame. It is being exact about yours.",
+      inputs: [
+        { q: "Tom has explained, and the talk is calm. You want to say your part.", a: "\"My part was making a joke about something new and important to you, in front of people you'd just met.\"", bundle: 'free' },
+        { q: "Your partner admits they were snappy too. You want to name your part first.", a: "\"My part was taking over and not listening to you in the car.\"", bundle: 'free' },
+        { q: "Your partner is calmer now. She says she knows you've been busy.", a: "\"I still should have checked the calendar. That's on me.\"", bundle: 'free' },
+        { q: "Sara says she might have expected too much.", a: "\"Maybe, but my part was sending 'ok' to something that clearly mattered.\"", bundle: 'free' },
+        { q: "Ali says he did miss an easy chance.", a: "\"You did, and I still shouldn't have shouted at you in front of everyone. That was mine.\"", bundle: 'free' },
+        { q: "Mr Berg admits the music has been loud.", a: "\"And my part was banging on the wall instead of knocking on your door.\"", bundle: 'pro' },
+        { q: "Your mum says she shouldn't keep asking about your job.", a: "\"And I shouldn't have hung up on you. That was my part.\"", bundle: 'pro' },
+        { q: "Lisa says she could have spoken up sooner.", a: "\"Maybe — but my part was not letting you finish, three times.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Agree on Next Time",
+      guideFront: "Settle one change when...",
+      guideBack: "One concrete change, and a word for the two of you",
+      description: "End with one concrete thing you will do differently next time, and a sentence about the relationship. \"Next time one of us gets sharp in the car, we say 'pause'. I'm glad we talked.\"\n\nIt works because a talk that ends without anything changing can feel like it was only words. One small agreement makes the next time different. The sentence about the relationship tells the other person that the talk was for the two of you, not just about the problem.\n\nKeep the agreement small enough to keep. One real change beats three promises.\n\nTypical phrases: \"Next time, let's…\", \"From now on, I'll…\", \"Can we agree that…?\", \"I'm glad we talked.\"\n\nTwo parts:\n\n1. One concrete change — \"Next time I'm not sure about a joke, I'll keep it for people I know well.\"\n\n2. A word about the two of you — \"You matter to me. I'm glad we sorted this.\"\n\nMindset: a good talk ends with one thing different and both of you closer.",
+      inputs: [
+        { q: "You and Tom have both said your sides about the party.", a: "\"Next time I'm not sure about a joke, I'll keep it for people I know well. And I'm really glad you got the job.\"", bundle: 'free' },
+        { q: "You and your partner have talked the car through.", a: "\"Next time one of us gets sharp while driving, we say 'pause'. I'm glad we talked.\"", bundle: 'free' },
+        { q: "You and your partner have talked about the kids.", a: "\"From now on, I'll put pickups in the shared calendar the night before. I don't want you to always be the one.\"", bundle: 'free' },
+        { q: "You and Sara have talked about your reply.", a: "\"If I can't answer properly, I'll say 'I'll reply tonight' instead of 'ok'. You matter more than that.\"", bundle: 'free' },
+        { q: "You and Ali have talked about the match.", a: "\"If I'm angry after a match, I'll wait till the changing room to say anything. You're important to this team.\"", bundle: 'free' },
+        { q: "You and Mr Berg have talked about the noise.", a: "\"If it's too loud, I'll knock, not bang. And thanks for talking — I'd rather get on with you.\"", bundle: 'pro' },
+        { q: "You and your mum have talked about the call.", a: "\"If a question gets to me, I'll say so instead of hanging up. I love talking to you, Mum.\"", bundle: 'pro' },
+        { q: "You and Lisa have talked about the meeting.", a: "\"Next meeting, I'll wait till you've finished before I add anything. I like working with you.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Pause and Come Back",
+      guideFront: "Call a pause when...",
+      guideBack: "A stop, and a time to come back",
+      description: "When the talk crosses a line — feelings too strong to listen through, a personal attack, or you so triggered that you are about to do the same — stop. Say why, and say when you will come back. \"We're back in it, and I'm not being fair either. Ten minutes, then let's try again?\"\n\nIt works because some moments cannot be talked through. Past a certain point, both people are only defending, and every sentence makes it worse. A pause with a time to return is not running away — it protects the talk you both still want to have.\n\nMost of the time, the talk can be saved by going back to listening. Use the pause when that is no longer possible.\n\nTypical phrases: \"Let's stop for ten minutes.\", \"I'm too angry to listen well.\", \"I want to finish this — just not like this.\", \"Can we try again after dinner?\"\n\nThree parts:\n\n1. Name it — \"We're back in it.\"\n\n2. Stop — \"I need a few minutes. I'm too angry to listen well.\"\n\n3. Say when you will come back — \"Can we try again after dinner?\"\n\nMindset: a pause with a time to return protects the talk. A pause without one is walking away.",
+      inputs: [
+        { q: "Tom says, \"You've always been like this — you think you're funnier than everyone.\" You feel yourself about to hit back.", a: "\"I can feel myself getting defensive, and I don't want to say something stupid. Can we stop for ten minutes and come back to it?\"", bundle: 'free' },
+        { q: "The talk about the car gets loud again, and your partner calls you \"a control freak\".", a: "\"We're back in it. Let's take a break and try again after we've eaten.\"", bundle: 'free' },
+        { q: "Your partner is crying and shaking, and every word you say makes it worse.", a: "\"I don't want to push this now. Let's stop, and talk tonight when the kids are asleep.\"", bundle: 'free' },
+        { q: "Sara says, \"Honestly, you're the worst friend I have.\"", a: "\"That's hard to hear, and I'm too upset to answer well. Can I call you tomorrow?\"", bundle: 'free' },
+        { q: "Ali starts shouting back in front of the team.", a: "\"Not here, not like this. Let's talk after the others have gone.\"", bundle: 'free' },
+        { q: "Mr Berg calls you an idiot, and you are about to say something worse.", a: "\"I'm going to stop now before I say something I regret. Can we try again tomorrow evening?\"", bundle: 'pro' },
+        { q: "Your mum brings up every failure in your life, and you're starting to shout.", a: "\"Mum, I'm getting too upset to listen. Let me call you back in an hour.\"", bundle: 'pro' },
+        { q: "Lisa says, \"You always do this, you just love the sound of your voice.\"", a: "\"I want to hear this properly, and right now I can't. Could we talk again after four?\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  twosidesofthestory: [
+    {
+      name: "Ask What They Saw",
+      guideFront: "Find out their view when...",
+      guideBack: "A question about their view",
+      description: "Before you decide what happened, ask what it looked like from where they were — what they saw, heard and knew that you did not. \"What did it look like from where you were?\"\n\nIt works because two people in the same situation almost never have the same information. They saw the message without your tone; you saw the plan without their phone call. Most misunderstandings are not about different values but about different facts — and you can only find theirs by asking.\n\nAsk it as a real question, not as a trap. You are trying to learn something, not to catch them out.\n\nTypical phrases: \"What did it look like from where you were?\", \"What did you hear?\", \"What did you know at that point?\", \"What did I miss?\"\n\nTwo parts:\n\n1. Ask about their view — \"What did that message look like when you read it?\"\n\n2. Listen for what you did not know — \"I didn't know you'd already booked.\"\n\nMindset: you were there, but you did not see everything.",
+      inputs: [
+        { q: "Ida was hurt by your text \"Sure, if you really want to.\" You don't understand why.", a: "\"What did my message sound like when you read it?\"", bundle: 'free' },
+        { q: "You and your partner both thought the weekend was agreed — with different plans.", a: "\"What did you hear me say when we talked about the weekend?\"", bundle: 'free' },
+        { q: "Erik is cold with you since your manager thanked you for the presentation.", a: "\"What did it look like from where you were, when she thanked me?\"", bundle: 'free' },
+        { q: "Max is offended that you asked for the money back.", a: "\"What did you understand when I gave you the money?\"", bundle: 'free' },
+        { q: "Your brother-in-law says he doesn't see what's wrong with his joke about your job.", a: "\"What did you mean, when you said I just play on computers?\"", bundle: 'free' },
+        { q: "Your cousin didn't invite your partner to her wedding. You want to understand before you get angry.", a: "\"What was going on for you when you made the guest list?\"", bundle: 'pro' },
+        { q: "None of your friends came to help you move.", a: "\"What did you know about my move — did you know I needed help?\"", bundle: 'pro' },
+        { q: "Your team lead chose the supplier while you were on holiday.", a: "\"What did the situation look like to you that week?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Their Story Makes Sense Too",
+      guideFront: "Find their version that fits when...",
+      guideBack: "Their reading, made sense of",
+      description: "Look for the version of events in which their reading is reasonable — and say it. \"If you'd only seen the message and not heard the call, I'd have thought the same.\"\n\nIt works because in most disagreements, both stories make sense from the inside. When you can say how theirs makes sense, they stop needing to prove it, and you both have room to look at what actually happened.\n\nSaying their story makes sense does not mean yours does not. Two stories can both make sense at once.\n\nTypical phrases: \"From where you were, that makes sense.\", \"If I'd known only what you knew…\", \"I can see how it looked like that.\", \"Your version makes sense, and so does mine.\"\n\nTwo parts:\n\n1. Name what they knew — \"If all you saw was the text…\"\n\n2. Say their reading fits — \"…then 'sure, if you really want to' does sound like a dig.\"\n\nMindset: two stories can both make sense. Finding theirs does not cancel yours.",
+      inputs: [
+        { q: "Ida says your text read like you were annoyed with her plan.", a: "\"If all you had was the text, without my voice, it does read like a dig. I can see that.\"", bundle: 'free' },
+        { q: "Your partner says they were sure you'd agreed to their friends' barbecue.", a: "\"If you heard me say 'sounds good' while I was distracted, I can see why you thought it was agreed.\"", bundle: 'free' },
+        { q: "Erik says it looked like you let the manager believe it was all your work.", a: "\"If you only saw her thanking me and me saying thanks, it would look exactly like that.\"", bundle: 'free' },
+        { q: "Max says he thought the money was a gift because you said \"don't worry about it\".", a: "\"If I said 'don't worry about it', a gift is a fair reading. That makes sense.\"", bundle: 'free' },
+        { q: "Your brother-in-law says he jokes like that about everyone's job.", a: "\"If that's how you joke with everyone, I can see why you didn't think it was a big deal.\"", bundle: 'free' },
+        { q: "Your cousin says the wedding was only for married partners and long-term couples.", a: "\"If that was the rule, and you didn't know we'd been together three years, leaving him out makes sense.\"", bundle: 'pro' },
+        { q: "Your friends say they thought you'd hired movers.", a: "\"If I'd mentioned the van company, I can see why you thought it was sorted.\"", bundle: 'pro' },
+        { q: "Your team lead says the supplier's offer ran out the day before you came back.", a: "\"If the offer was about to go, deciding without me makes sense.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Intent and Impact",
+      guideFront: "Separate what was meant from how it landed when...",
+      guideBack: "The intent and the impact, both named",
+      description: "Separate what was meant from how it landed — in both directions. When you hurt them: name your intent, and own the impact anyway. When they hurt you: say how it landed, without assuming they meant it. \"I meant it as a joke. I can see it landed as a dig.\"\n\nIt works because most conflicts tangle the two. The person who caused hurt defends their intent; the person who was hurt argues about the impact. Both are right about their half, and the argument goes round. Naming both ends it.\n\nGood intent does not cancel the impact. And a painful impact does not prove a bad intent.\n\nTypical phrases: \"I meant… and I can see it landed as…\", \"I don't think you meant it, and it hurt.\", \"What I wanted was… what happened was…\"\n\nTwo directions:\n\n1. When you caused it — \"I meant to help. I can see it felt like I took over.\"\n\n2. When it happened to you — \"I don't think you meant it this way, but it landed as contempt.\"\n\nMindset: good intent doesn't cancel the impact, and a painful impact doesn't prove bad intent.",
+      inputs: [
+        { q: "Ida says your text sounded passive-aggressive. You meant it as a simple yes.", a: "\"I meant it as a simple yes. I can see it landed as me being annoyed.\"", bundle: 'free' },
+        { q: "Your partner says you made them look silly in front of their friends by cancelling.", a: "\"I meant to keep my parents' plan, not to embarrass you. I can see it did.\"", bundle: 'free' },
+        { q: "Erik says you made him invisible in front of the manager.", a: "\"I didn't mean to take the credit — I was caught off guard. But the impact was that your work disappeared.\"", bundle: 'free' },
+        { q: "Max says asking for the money back made him feel like a beggar.", a: "\"I meant it as sorting out a loan. I can see it landed as me thinking less of you.\"", bundle: 'free' },
+        { q: "Your brother-in-law's joke about your job keeps coming back to you.", a: "\"I don't think you meant it badly, and it still landed as you thinking my work isn't real.\"", bundle: 'free' },
+        { q: "Your cousin says she never meant to insult your partner.", a: "\"I believe you didn't mean it. It still landed as him not counting as family.\"", bundle: 'pro' },
+        { q: "Your friends say they never meant to leave you alone with the move.", a: "\"I don't think you meant to. It still felt like being left on my own.\"", bundle: 'pro' },
+        { q: "Your team lead says she only wanted to save the deal.", a: "\"I believe that. It still landed as my opinion not mattering.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Contribution, Not Blame",
+      guideFront: "Map what each of you did when...",
+      guideBack: "What each of you added to it",
+      description: "Instead of asking whose fault it was, map what each of you did that led there. \"I didn't check, and you didn't ask. Both of those got us here.\"\n\nIt works because blame looks backwards and asks for a guilty person. Contribution looks at how it happened — and almost always, both people did something. Seeing your own part does not mean taking all of it, and seeing theirs does not mean accusing them.\n\nIt also points forward: if you know what each of you added, you know what each of you can change.\n\nTypical phrases: \"I did… and you did…\", \"Both of those got us here.\", \"My part was… yours was…\", \"What did each of us add?\"\n\nTwo parts:\n\n1. Name your part — \"I didn't say clearly that I needed help.\"\n\n2. Name theirs, without blame — \"And you didn't ask. Both of those got us here.\"\n\nMindset: blame asks who. Contribution asks how — and that is the question you can do something about.",
+      inputs: [
+        { q: "Ida says your text was the problem.", a: "\"My text was short, and you read it at a bad moment. Both of those got us here.\"", bundle: 'free' },
+        { q: "Your partner says it's your fault the weekend was double-booked.", a: "\"I said 'sounds good' without listening, and you didn't check the date with me. Both of those did it.\"", bundle: 'free' },
+        { q: "Erik says you stole his credit.", a: "\"I didn't correct the manager, and we'd never agreed who would present. Both of those got us here.\"", bundle: 'free' },
+        { q: "Max says you should have been clear it was a loan.", a: "\"I said 'don't worry about it', and you didn't ask what I meant. We both added to this.\"", bundle: 'free' },
+        { q: "Your partner says you should just have laughed off your brother-in-law's joke.", a: "\"He made the joke, and I went quiet instead of saying it bothered me. Both of those made it bigger.\"", bundle: 'free' },
+        { q: "Your cousin says you should have told her you were serious about your partner.", a: "\"I didn't tell you much about us, and you didn't ask before leaving him out. We both added to it.\"", bundle: 'pro' },
+        { q: "Your friends say you should have asked them directly.", a: "\"I mentioned a van and never asked, and you didn't check. Both of those left me alone with it.\"", bundle: 'pro' },
+        { q: "Your team lead says you should have left contact details.", a: "\"I didn't leave a number, and you didn't wait for me to come back. Both of those got us here.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Third Story",
+      guideFront: "Describe it from the outside when...",
+      guideBack: "What a neutral person would see",
+      description: "Describe what happened the way a neutral person — someone fond of you both — would describe it. \"We both wanted the weekend to go well, and had different pictures of what that meant.\"\n\nIt works because your story and theirs both have a hero and a problem. The third story has neither. It describes the difference without taking a side, and both of you can agree with it — which gives the talk a place to start from.\n\nIt is not cold. It is the version you could both say out loud.\n\nTypical phrases: \"From the outside, it looks like…\", \"We both wanted… and…\", \"A friend would probably say…\", \"It sounds like we each…\"\n\nTwo parts:\n\n1. Describe both sides without judging — \"You wanted a quiet yes, and I wrote a quick one.\"\n\n2. Name the difference — \"We just read the same message differently.\"\n\nMindset: the third story is the one you could both agree with.",
+      inputs: [
+        { q: "You and Ida have both explained your sides of the text.", a: "\"From the outside, it looks like I wrote a quick yes, and you read it on a day you needed a warm one.\"", bundle: 'free' },
+        { q: "You and your partner keep arguing about who agreed to what.", a: "\"We both wanted the weekend to go well, and had two different pictures of what that meant.\"", bundle: 'free' },
+        { q: "You and Erik each see the presentation differently.", a: "\"A neutral person would say: we did it together, and only one of us was in the room when she said thanks.\"", bundle: 'free' },
+        { q: "You and Max both feel hurt about the money.", a: "\"It sounds like I meant a loan, you heard a gift, and neither of us checked.\"", bundle: 'free' },
+        { q: "You and your brother-in-law can't agree whether the joke was rude.", a: "\"From the outside, it looks like you made a joke you make often, and it hit something I'm touchy about.\"", bundle: 'free' },
+        { q: "You and your cousin are going in circles about the wedding list.", a: "\"We each had a rule in our heads — hers about partners, mine about family — and they didn't match.\"", bundle: 'pro' },
+        { q: "You and your friends are arguing about the move.", a: "\"A neutral person would say: I needed help, you thought I had it, and nobody asked.\"", bundle: 'pro' },
+        { q: "You and your team lead both feel wronged about the supplier.", a: "\"From the outside, it looks like the deadline came while I was away, and nobody had a plan for that.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Let Both Memories Stand",
+      guideFront: "Stop arguing about the record when...",
+      guideBack: "Both memories kept, and on to what it meant",
+      description: "When you remember it differently — what was said, who agreed to what — stop arguing about the record. Let both memories stand, and move on to what it meant to each of you. \"We remember it differently, and I don't think we'll settle that. What I want to understand is how it felt for you.\"\n\nIt works because memory is not a recording. Two honest people can remember the same conversation in two ways, and arguing about it rarely changes either memory. What can change is how you each feel about what happened — and that does not need the record settled.\n\nLetting their memory stand does not mean you were wrong. It means you are choosing the part of the talk that can go somewhere.\n\nTypical phrases: \"We remember it differently.\", \"I don't think we'll settle that.\", \"Maybe we both remember part of it.\", \"What matters more is…\"\n\nTwo parts:\n\n1. Name the difference, and let it be — \"We remember it differently, and I don't think we'll settle it.\"\n\n2. Move on to what it meant — \"What I'd like to understand is how it felt for you.\"\n\nMindset: you don't have to agree on what happened to agree on what to do next.",
+      inputs: [
+        { q: "Ida says your message was \"Sure, if you REALLY want to.\" You're sure there were no capitals.", a: "\"We remember it differently, and the message is gone. What I'd like to understand is how it felt.\"", bundle: 'free' },
+        { q: "Your partner says you definitely agreed to the barbecue. You're sure you said \"maybe\".", a: "\"We remember that talk differently. Maybe we both heard part of it. Let's work out the weekend from here.\"", bundle: 'free' },
+        { q: "Erik says you said \"my project\" in the meeting. You remember saying \"our project\".", a: "\"We remember it differently. What matters more is that it felt like your work was taken.\"", bundle: 'free' },
+        { q: "Max says you said \"keep it\". You remember saying \"pay me back whenever\".", a: "\"We remember it differently, and I don't think we'll settle that. Can we just agree on what happens now?\"", bundle: 'free' },
+        { q: "Your brother-in-law says the joke was much milder than you remember.", a: "\"We remember it differently. What I'd like you to know is how it landed for me.\"", bundle: 'free' },
+        { q: "Your cousin says she told you months ago that partners weren't invited. You don't remember it.", a: "\"I don't remember that, and you do. Maybe we both have part of it. What matters now is how we handle it.\"", bundle: 'pro' },
+        { q: "Your friends say you told them you had it covered. You don't remember saying that.", a: "\"We remember it differently. Let's not argue about who said what — I'd like to understand what happened for you.\"", bundle: 'pro' },
+        { q: "Your team lead says she sent you a message about the deadline. You never saw one.", a: "\"We remember that week differently. Rather than go over it, can we agree what happens next time?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What It Says About Me",
+      guideFront: "Name what it touches in you when...",
+      guideBack: "The fear underneath, said and tested",
+      description: "Notice when part of the hurt is about what it seems to say about you — that you are a bad friend, selfish, not good enough. Say it, and test it. \"Part of why this stings is that I'm scared it means I'm a bad friend. I don't think it does.\"\n\nIt works because the strongest reactions in a conflict are often not about the event, but about identity. When a criticism lands on who you are, you either defend too hard or collapse. Naming the fear takes away some of its power, and testing it — is that really true? — puts it back in proportion.\n\nIt works the other way too: you can ask what the conflict touched in them.\n\nTypical phrases: \"Part of why this stings is…\", \"I'm scared it means I'm…\", \"I don't think it does.\", \"Is there something this touched in you?\"\n\nTwo parts:\n\n1. Name the fear — \"Part of why this stings is that I'm scared I'm a bad friend.\"\n\n2. Test it — \"One short text doesn't make me one.\"\n\nMindset: one mistake is something you did, not something you are.",
+      inputs: [
+        { q: "Ida's hurt about your text makes you feel like a terrible friend.", a: "\"Part of why this stings is that I'm scared I'm a bad friend. I don't think one short text makes me one.\"", bundle: 'free' },
+        { q: "Your partner's anger about the weekend makes you feel selfish.", a: "\"Part of me hears 'you only think of yourself', and that's hard. I don't think it's true, but it's why I got defensive.\"", bundle: 'free' },
+        { q: "Erik's accusation makes you feel like a fraud.", a: "\"This hits me because I'm scared I took credit I didn't earn. I want to be fair to you.\"", bundle: 'free' },
+        { q: "Max's reaction makes you feel mean for wanting the money back.", a: "\"Part of why this is hard is I'm worried it makes me look petty. I don't think wanting it back makes me petty.\"", bundle: 'free' },
+        { q: "Your brother-in-law's joke makes you feel your work isn't real.", a: "\"It stung because I'm already unsure whether what I do counts. That's my sore spot more than your joke.\"", bundle: 'free' },
+        { q: "The wedding list makes you feel your partner isn't accepted.", a: "\"What hurts is the fear that he's not seen as part of the family. I'd like to know if that's true.\"", bundle: 'pro' },
+        { q: "Nobody coming to the move makes you feel you don't matter to your friends.", a: "\"Part of why this hurts is I'm scared it means I don't matter to you. I'd like to hear that it doesn't.\"", bundle: 'pro' },
+        { q: "The supplier decision makes you feel you're not trusted at work.", a: "\"This touched something — the worry that I'm not trusted here. I'd like to check that with you.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -18746,6 +19104,156 @@ const collectionsModeData = {
         { q: "An acquaintance makes a snide jab about your modest house size during a dinner party.", a: "\"Was that meant as humor, or a subtle dig? I don't entertain backhanded comments, so let me know if you want to speak respectfully.\" [Exposing the Dig]", bundle: 'pro', guideBack: "A subtext callout with a firm limit" },
         { q: "A supplier brings up multiple minor past shipping delays during a meeting framed to sign an annual renewal.", a: "\"I want to frame this discussion strictly around signing our annual contract today. Setting the March delivery aside, is there any other hurdle?\" [Contracting the Scope]", bundle: 'pro', guideBack: "A framed boundary with an isolation check" },
         { q: "A sibling claims you promised to give them your old laptop for free.", a: "\"Are you stating a fact, or expressing a hope? I agreed to sell it at a discount. Period.\" [Anchoring History]", bundle: 'pro', guideBack: "A fact-feeling check with a firm period" },
+      ]
+    },
+  ],
+  conflictresolution: [
+    {
+      name: "Theirs or Yours?",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Their Feelings First**, **Ask What Mattered to Them** and **Offer What They Need** are about their side. **Say What Mattered to You** and **Ask for What You Need** are about yours.\n\n• **Their Feelings First** — they have not yet been heard\n• **Ask What Mattered to Them** — you know how they felt, not why\n• **Offer What They Need** — you understand them, and something should change\n• **Say What Mattered to You** — they have been heard, and you have not\n• **Ask for What You Need** — you have offered, and you need something too\n\nThe question that decides it: whose turn is it — has the other person been heard yet?\n\nThe usual wrong choice is your side before theirs. The same words sound like a defence when they come first.\n\nMindset: their side first, then yours — not instead of yours.",
+      inputs: [
+        { q: "Your brother is still upset that you skipped his birthday drinks. You want to explain about the train strike.", a: "\"Before I explain — how was it for you, when I didn't turn up?\" [Their Feelings First]", bundle: 'pro', guideBack: "Their feeling, heard and owned" },
+        { q: "Your colleague has told you how angry she was that you took the project lead. She hasn't said why it mattered so much.", a: "\"What was important to you about leading this one?\" [Ask What Mattered to Them]", bundle: 'pro', guideBack: "What mattered to them, said back" },
+        { q: "Your friend has explained why it hurt that you shared her news. You both understand it now.", a: "\"From now on, anything you tell me stays with me unless you say otherwise.\" [Offer What They Need]", bundle: 'pro', guideBack: "A concrete offer for their need" },
+        { q: "Your partner has been fully heard about the holiday plans. They ask why you booked without them.", a: "\"Getting a good price matters a lot to me, and I was scared it would go. I didn't think about how it would feel to you.\" [Say What Mattered to You]", bundle: 'pro', guideBack: "What mattered to you, and what it did to you" },
+        { q: "You've offered your neighbour to keep the music down after ten. There's something you'd like too.", a: "\"And I'd like you to knock on my door if it's too loud, rather than leaving a note.\" [Ask for What You Need]", bundle: 'pro', guideBack: "A clear request from your side" },
+        { q: "Your teenager slams the door after an argument about phones at dinner. An hour later you sit down together.", a: "\"I'd like to hear how dinner was for you first.\" [Their Feelings First]", bundle: 'pro', guideBack: "Their feeling, heard and owned" },
+        { q: "Your friend says: \"I just wanted one weekend where I didn't have to organise everything.\"", a: "\"So it was about not always being the one who carries it. That makes sense.\" [Ask What Mattered to Them]", bundle: 'pro', guideBack: "What mattered to them, said back" },
+        { q: "Your flatmate has agreed to clean more often. There's still something you need.", a: "\"I'd like us to make a rota together, so it isn't me reminding you.\" [Ask for What You Need]", bundle: 'pro', guideBack: "A clear request from your side" },
+      ]
+    },
+    {
+      name: "Go On or Go Back?",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "In the middle of the talk, the choice is often between taking the next step and going back to an earlier one. **Their Feelings First** and **Ask What Mattered to Them** are where you go back to. **Offer What They Need**, **Find Where It Clashed** and **Say What Hurt, Last** are where you go on to.\n\nGo back when they have flared up again, or are not ready. Go on when they have been heard, and the talk has room for the next step.\n\nThe question that decides it: how is the other person right now — calm enough to hear something new?\n\nThe usual wrong choice is pushing on when they have flared up. When the heat comes back, the way forward is a step back.\n\nMindset: going back a step is not failing. It is how the talk keeps going.",
+      inputs: [
+        { q: "You start explaining your side, and your partner says, \"So it was my fault?\"", a: "\"No. I've jumped ahead. Tell me again how it was for you.\" [Their Feelings First]", bundle: 'pro', guideBack: "Their feeling, heard and owned" },
+        { q: "Your colleague has calmed down and says she understands why you did it.", a: "\"Then next time, I'll check with you before I touch your part. Would that help?\" [Offer What They Need]", bundle: 'pro', guideBack: "A concrete offer for their need" },
+        { q: "You mention what matters to you, and your friend says, \"It's always about you.\"", a: "\"Fair — let's go back. What mattered most to you that evening?\" [Ask What Mattered to Them]", bundle: 'pro', guideBack: "What mattered to them, said back" },
+        { q: "You've both made offers, but the same argument about chores keeps coming back.", a: "\"I think your 'everything clean now' and my 'it can wait till the weekend' keep colliding. Is that it?\" [Find Where It Clashed]", bundle: 'pro', guideBack: "Both values, side by side" },
+        { q: "Everything is agreed with your sister, but her comment about you \"always disappearing\" still sits with you.", a: "\"One last thing. When you said I always disappear, that hurt.\" [Say What Hurt, Last]", bundle: 'pro', guideBack: "Your feeling, said last and plainly" },
+        { q: "Your partner's voice rises again when you mention the money.", a: "\"I can hear this is still sore. What was it like for you, finding out?\" [Their Feelings First]", bundle: 'pro', guideBack: "Their feeling, heard and owned" },
+        { q: "Your teammate goes quiet and says, \"Forget it, it doesn't matter.\"", a: "\"It matters to me. What were you hoping would happen at practice?\" [Ask What Mattered to Them]", bundle: 'pro', guideBack: "What mattered to them, said back" },
+        { q: "Your friend smiles and says she feels much better about the wedding plans.", a: "\"So would it help if I sent you the plans before I send them to anyone else?\" [Offer What They Need]", bundle: 'pro', guideBack: "A concrete offer for their need" },
+      ]
+    },
+    {
+      name: "All Seven",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order real talks go rather than the order they were taught.\n\nThe seven follow one process. **Their Feelings First** and **Ask What Mattered to Them** are about them. **Say What Mattered to You** is about you. **Offer What They Need** and **Ask for What You Need** look forward. **Find Where It Clashed** and **Say What Hurt, Last** are for when it is still not settled — and often you never need them.\n\nIf you are unsure, ask two things: have they been heard yet? And is something still unsettled, or is it done?\n\nMindset: the aim is not to win the conflict but to come out of it closer.",
+      inputs: [
+        { q: "Your dad is still hurt that you forgot to call on his birthday. You go round the next day.", a: "\"I'm sorry I didn't call. How was it for you, waiting?\" [Their Feelings First]", bundle: 'pro', guideBack: "Their feeling, heard and owned" },
+        { q: "Your colleague says she felt overlooked when you presented the idea alone. You don't yet know why it hit so hard.", a: "\"What was important to you about presenting it together?\" [Ask What Mattered to Them]", bundle: 'pro', guideBack: "What mattered to them, said back" },
+        { q: "Your friend asks why you left the party without saying goodbye.", a: "\"I'd hit my limit, and leaving quietly matters to me when I'm that tired. I didn't think about how it would look.\" [Say What Mattered to You]", bundle: 'pro', guideBack: "What mattered to you, and what it did to you" },
+        { q: "Your partner has said they need to feel included in decisions about your parents.", a: "\"From now on, I'll talk to you before I agree to anything with them.\" [Offer What They Need]", bundle: 'pro', guideBack: "A concrete offer for their need" },
+        { q: "Your housemate has agreed to pay the bills on time. There's still something you need.", a: "\"I'd like us to set up one shared account, so I'm not chasing anyone.\" [Ask for What You Need]", bundle: 'pro', guideBack: "A clear request from your side" },
+        { q: "You and your partner keep having the same fight about visiting your family.", a: "\"I think your need for rest and my need to see them both land on Sundays. Does that sound right?\" [Find Where It Clashed]", bundle: 'pro', guideBack: "Both values, side by side" },
+        { q: "The talk with your friend has gone well, but her comment about you being \"fake\" still sits with you.", a: "\"There's one thing left. Being called fake hurt, and I needed to say it.\" [Say What Hurt, Last]", bundle: 'pro', guideBack: "Your feeling, said last and plainly" },
+        { q: "You start telling your side about the car, and your partner says, \"Here we go.\"", a: "\"You're right, I've started with me. What was it like for you?\" [Their Feelings First]", bundle: 'pro', guideBack: "Their feeling, heard and owned" },
+      ]
+    },
+  ],
+  aftertheargument: [
+    {
+      name: "Listen or Speak?",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Their Side First**, **Get Their Version Right** and **It Makes Sense Because** are for listening. **Your Side, Not the Verdict** and **Own Your Part** are for speaking.\n\n• **Their Side First** — they have not yet said how it was\n• **Get Their Version Right** — they have said it, and need to hear it understood\n• **It Makes Sense Because** — they are defending their reaction\n• **Your Side, Not the Verdict** — they have been heard, and you have not\n• **Own Your Part** — the talk is calm enough for your part\n\nThe question that decides it: have they been heard yet — and would they say so?\n\nThe usual wrong choice is speaking too early. Your side lands best after theirs has been understood.\n\nMindset: listen until they feel heard, then speak.",
+      inputs: [
+        { q: "Your friend is still angry that you forgot her birthday. You want to explain about your week.", a: "\"Before I explain — how was it for you, when the day came and went?\" [Their Side First]", bundle: 'pro', guideBack: "An open door, and you listening" },
+        { q: "Your brother says it felt like you only came to the wedding to be seen.", a: "\"So it felt like I was there for me, not for you. Have I got that right?\" [Get Their Version Right]", bundle: 'pro', guideBack: "Their experience, in your words" },
+        { q: "Your colleague says she knows she overreacted in the meeting.", a: "\"If you thought I was going over your head, of course you reacted.\" [It Makes Sense Because]", bundle: 'pro', guideBack: "Their reaction, made sense of" },
+        { q: "Your partner says, \"Okay, I've said my bit. What about you?\"", a: "\"From where I stood, I thought we'd agreed to keep it small. When everyone came, I felt overwhelmed.\" [Your Side, Not the Verdict]", bundle: 'pro', guideBack: "Your experience, as yours" },
+        { q: "Your friend has calmed down and says, \"I just needed you to see it.\"", a: "\"I do. My part was making plans without asking you first.\" [Own Your Part]", bundle: 'pro', guideBack: "Your specific part, said plainly" },
+        { q: "Your teenager says, \"You always take Dad's side.\"", a: "\"Tell me more. When did it feel like that?\" [Their Side First]", bundle: 'pro', guideBack: "An open door, and you listening" },
+        { q: "Your neighbour says the hedge you cut was the one thing that gave her privacy.", a: "\"So it wasn't just a hedge — it was your privacy. Is that it?\" [Get Their Version Right]", bundle: 'pro', guideBack: "Their experience, in your words" },
+        { q: "Your flatmate asks, \"So what was going on for you?\"", a: "\"For me, it had been a horrible week, and the dishes were the last straw.\" [Your Side, Not the Verdict]", bundle: 'pro', guideBack: "Your experience, as yours" },
+      ]
+    },
+    {
+      name: "Open, Pause or Close",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Ask for the Talk**, **Pause and Come Back** and **Agree on Next Time** are about running the talk itself — starting it, stopping it, and ending it.\n\n• **Ask for the Talk** — it hasn't started yet\n• **Pause and Come Back** — it has crossed a line\n• **Agree on Next Time** — both sides have been heard, and it is time to end well\n\nThe question that decides it: where is the talk — not started, out of control, or nearly done?\n\nThe usual wrong choice is ending without agreeing anything, or pausing without saying when you will come back.\n\nMindset: a good talk has a beginning, a way to stop, and an ending.",
+      inputs: [
+        { q: "Since the argument about the holiday, you and your partner have been polite but distant for two days.", a: "\"Can we talk about the holiday thing? I don't want to win it — I want us back.\" [Ask for the Talk]", bundle: 'pro', guideBack: "An invitation, with its purpose" },
+        { q: "Your brother starts shouting that you've always been the selfish one.", a: "\"I'm stopping here before it gets worse. Can we talk again tomorrow?\" [Pause and Come Back]", bundle: 'pro', guideBack: "A stop, and a time to come back" },
+        { q: "You and your friend have both said your sides about the cancelled trip.", a: "\"Next time plans change, I'll call instead of texting. I'm glad we did this.\" [Agree on Next Time]", bundle: 'pro', guideBack: "One concrete change, and a word for the two of you" },
+        { q: "Your colleague is avoiding you after your comment in the meeting.", a: "\"Could we talk about yesterday? I'd like to understand how it came across.\" [Ask for the Talk]", bundle: 'pro', guideBack: "An invitation, with its purpose" },
+        { q: "You can feel your voice rising, and you are about to bring up something from last year.", a: "\"I need ten minutes. I'm about to say something unfair.\" [Pause and Come Back]", bundle: 'pro', guideBack: "A stop, and a time to come back" },
+        { q: "You and your dad have talked about the comment at dinner.", a: "\"If something I say gets to you, tell me then. I like having dinner with you.\" [Agree on Next Time]", bundle: 'pro', guideBack: "One concrete change, and a word for the two of you" },
+        { q: "Your friend says, \"I can't talk about this now.\"", a: "\"Okay. Whenever you're ready, I'm here.\" [Ask for the Talk]", bundle: 'pro', guideBack: "An invitation, with its purpose" },
+        { q: "Your partner says, \"I can't believe I'm with someone like you.\"", a: "\"That's too much for me to answer well right now. Let's try again tonight.\" [Pause and Come Back]", bundle: 'pro', guideBack: "A stop, and a time to come back" },
+      ]
+    },
+    {
+      name: "All Eight",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order real talks go rather than the order they were taught.\n\nThe eight follow one talk. **Ask for the Talk** opens it. **Their Side First**, **Get Their Version Right** and **It Makes Sense Because** listen. **Your Side, Not the Verdict** and **Own Your Part** speak. **Agree on Next Time** closes it. **Pause and Come Back** is for when it crosses a line.\n\nIf you are unsure, ask: have they been heard yet? And can this talk still be had right now?\n\nMindset: the aim is not to settle who was right, but to come out of it closer.",
+      inputs: [
+        { q: "Your sister has been cold since you missed her son's party.", a: "\"Can we talk about the party? I'd like to hear how it was for you.\" [Ask for the Talk]", bundle: 'pro', guideBack: "An invitation, with its purpose" },
+        { q: "Your friend starts telling you how hurt she was that you didn't come to the hospital.", a: "\"Tell me. What was it like, waiting for me?\" [Their Side First]", bundle: 'pro', guideBack: "An open door, and you listening" },
+        { q: "Your partner says it felt like you chose your friends over their birthday.", a: "\"So it felt like you came second, on your own birthday. Have I got that?\" [Get Their Version Right]", bundle: 'pro', guideBack: "Their experience, in your words" },
+        { q: "Your colleague says she sent that angry email because she thought you'd taken her client.", a: "\"If you thought I'd taken your client, that email makes sense.\" [It Makes Sense Because]", bundle: 'pro', guideBack: "Their reaction, made sense of" },
+        { q: "Your brother asks what happened from your side.", a: "\"From where I stood, I thought Mum had asked me to sort it, not you.\" [Your Side, Not the Verdict]", bundle: 'pro', guideBack: "Your experience, as yours" },
+        { q: "Your friend admits she was hard on you, too.", a: "\"And my part was not telling you sooner that I couldn't come.\" [Own Your Part]", bundle: 'pro', guideBack: "Your specific part, said plainly" },
+        { q: "You and your partner have talked through the weekend.", a: "\"Next time, let's plan the weekend together on Thursday. I love that we can talk like this.\" [Agree on Next Time]", bundle: 'pro', guideBack: "One concrete change, and a word for the two of you" },
+        { q: "Your friend says, \"You're just a really selfish person.\" You feel yourself about to say something cruel.", a: "\"I'm too angry to listen well. Can we try again in an hour?\" [Pause and Come Back]", bundle: 'pro', guideBack: "A stop, and a time to come back" },
+      ]
+    },
+  ],
+  twosidesofthestory: [
+    {
+      name: "Theirs, Yours or Ours?",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The seven strategies look at the story from three places. **Ask What They Saw** and **Their Story Makes Sense Too** look from their side. **Intent and Impact** and **What It Says About Me** look from yours. **Contribution, Not Blame**, **The Third Story** and **Let Both Memories Stand** look at the two of you together.\n\nThe question that decides it: whose view is missing from the talk right now?\n\nThe usual wrong choice is staying in your own view, when what is missing is theirs — or the view from outside.\n\nMindset: the whole story needs all three places.",
+      inputs: [
+        { q: "Your friend says you ignored her at the party. You don't remember doing anything.", a: "\"What did it look like from where you were?\" [Ask What They Saw]", bundle: 'pro', guideBack: "A question about their view" },
+        { q: "Your colleague says it looked like you took her desk on purpose.", a: "\"If you came back to find your things moved, I can see why it looked like that.\" [Their Story Makes Sense Too]", bundle: 'pro', guideBack: "Their reading, made sense of" },
+        { q: "Your partner says your comment about their cooking was cruel.", a: "\"I meant it as teasing. I can see it landed as criticism.\" [Intent and Impact]", bundle: 'pro', guideBack: "The intent and the impact, both named" },
+        { q: "Your sister says you never call her. You feel like the worst sibling.", a: "\"Part of why this hurts is I'm scared I'm a bad sister. I don't think I am, but I know I've been distant.\" [What It Says About Me]", bundle: 'pro', guideBack: "The fear underneath, said and tested" },
+        { q: "Your flatmate says the broken lamp was your fault.", a: "\"I put it on the edge, and you knocked into the table. Both of those did it.\" [Contribution, Not Blame]", bundle: 'pro', guideBack: "What each of you added to it" },
+        { q: "You and your friend keep arguing about who was rude first.", a: "\"From the outside, it looks like we were both tired and both short with each other.\" [The Third Story]", bundle: 'pro', guideBack: "What a neutral person would see" },
+        { q: "Your dad says you promised to come for Easter. You're sure you said \"maybe\".", a: "\"We remember it differently. Let's work out what we can do now.\" [Let Both Memories Stand]", bundle: 'pro', guideBack: "Both memories kept, and on to what it meant" },
+        { q: "Your colleague is angry about the email you sent the client. You don't know why.", a: "\"What did you know about the client that I didn't?\" [Ask What They Saw]", bundle: 'pro', guideBack: "A question about their view" },
+      ]
+    },
+    {
+      name: "What Happened or What It Meant?",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Some strategies are about what happened: **Ask What They Saw**, **The Third Story**, **Let Both Memories Stand**. Others are about what it meant: **Intent and Impact**, **What It Says About Me**. **Their Story Makes Sense Too** and **Contribution, Not Blame** sit in between.\n\nThe question that decides it: are you stuck on the facts, or on what the facts did to you?\n\nThe usual wrong choice is arguing about the facts when the real problem is what they meant — or the other way round.\n\nMindset: if the facts won't settle, talk about the meaning.",
+      inputs: [
+        { q: "You and your partner keep arguing about what time you said you'd be home.", a: "\"We remember it differently. What matters more is that you were worried.\" [Let Both Memories Stand]", bundle: 'pro', guideBack: "Both memories kept, and on to what it meant" },
+        { q: "Your friend says your comment about her new boyfriend was hurtful. You meant it as a compliment.", a: "\"I meant it as a compliment. I can see it landed as a warning.\" [Intent and Impact]", bundle: 'pro', guideBack: "The intent and the impact, both named" },
+        { q: "You don't understand why your colleague is so upset about the schedule change.", a: "\"What did the change look like on your side?\" [Ask What They Saw]", bundle: 'pro', guideBack: "A question about their view" },
+        { q: "Your brother says you \"always\" leave him out. It stings more than you expected.", a: "\"Part of why that stings is I'm scared I really do. I'd like to know when it felt like that.\" [What It Says About Me]", bundle: 'pro', guideBack: "The fear underneath, said and tested" },
+        { q: "You and your neighbour each blame the other for the fence.", a: "\"From the outside, it looks like neither of us knew whose fence it was.\" [The Third Story]", bundle: 'pro', guideBack: "What a neutral person would see" },
+        { q: "Your friend is sure you told her secret to someone. You only told your partner.", a: "\"If you heard it from someone else, I can see why you thought I'd told everyone.\" [Their Story Makes Sense Too]", bundle: 'pro', guideBack: "Their reading, made sense of" },
+        { q: "Your team and you both think the other caused the late delivery.", a: "\"I didn't flag the delay, and you didn't ask for an update. Both of those got us here.\" [Contribution, Not Blame]", bundle: 'pro', guideBack: "What each of you added to it" },
+        { q: "Your mum says you were rude at dinner. You remember being quiet, not rude.", a: "\"We remember it differently. Can you tell me how it felt for you?\" [Let Both Memories Stand]", bundle: 'pro', guideBack: "Both memories kept, and on to what it meant" },
+      ]
+    },
+    {
+      name: "All Seven",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order real misunderstandings go rather than the order they were taught.\n\nEach one looks at the story from a different place: their view (**Ask What They Saw**, **Their Story Makes Sense Too**), your view (**Intent and Impact**, **What It Says About Me**), and the view of the two of you (**Contribution, Not Blame**, **The Third Story**, **Let Both Memories Stand**).\n\nIf you are unsure, ask: what is missing from the story right now — their view, mine, or the view from outside?\n\nMindset: there is rarely one true version. There are two sides, and a story that holds both.",
+      inputs: [
+        { q: "Your friend says you left her out of the group chat. You didn't know it existed.", a: "\"What did you see — who made the chat?\" [Ask What They Saw]", bundle: 'pro', guideBack: "A question about their view" },
+        { q: "Your partner thought you'd forgotten their birthday, because you didn't say anything in the morning.", a: "\"If all you saw was me rushing out, I can see why you thought I'd forgotten.\" [Their Story Makes Sense Too]", bundle: 'pro', guideBack: "Their reading, made sense of" },
+        { q: "Your colleague says your feedback was humiliating. You meant to be helpful.", a: "\"I meant to help. I can see it landed as humiliating.\" [Intent and Impact]", bundle: 'pro', guideBack: "The intent and the impact, both named" },
+        { q: "Your brother says the argument with your dad was your fault.", a: "\"I raised my voice, and you joined in on his side. Both of those made it worse.\" [Contribution, Not Blame]", bundle: 'pro', guideBack: "What each of you added to it" },
+        { q: "You and your partner have both told your side about the holiday booking.", a: "\"From the outside, it looks like we both wanted a good trip and booked for different ones.\" [The Third Story]", bundle: 'pro', guideBack: "What a neutral person would see" },
+        { q: "Your friend says you promised to be her bridesmaid. You don't remember promising.", a: "\"I don't remember it, and you do. What matters is that you're hurt. Let's start there.\" [Let Both Memories Stand]", bundle: 'pro', guideBack: "Both memories kept, and on to what it meant" },
+        { q: "Your teammate says you're \"always negative\". It lands hard.", a: "\"That stings because I'm afraid it's true. I'd like an example, so I can check.\" [What It Says About Me]", bundle: 'pro', guideBack: "The fear underneath, said and tested" },
+        { q: "Your neighbour is angry about your car in \"his\" space. You thought spaces were shared.", a: "\"What were you told about the spaces when you moved in?\" [Ask What They Saw]", bundle: 'pro', guideBack: "A question about their view" },
       ]
     },
   ],

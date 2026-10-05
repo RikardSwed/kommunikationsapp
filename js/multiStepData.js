@@ -16027,4 +16027,364 @@ const multiStepCollections = {
       ]
     },
   ],
+  conflictresolution: [
+    {
+      name: "The Short Way",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "The talk from the start to where it is often already settled.\n\n1. **Their Feelings First** — how it was for them, heard and owned.\n2. **Ask What Mattered to Them** — what they were protecting.\n3. **Say What Mattered to You** — yours, as an explanation.\n4. **Offer What They Need** — something concrete for them.\n5. **Ask for What You Need** — something for you.\n\nWhy this order: feelings before values, values before needs, theirs before yours. By then the clash has usually solved itself, and the talk can stop here.\n\nThe usual order is the reverse: your feelings first, their side only if there is time.\n\nMindset: you can stop when it feels settled. Not every talk needs every step.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your friend Lena organised a group dinner. You arrived an hour late without telling anyone, and she was short with you all evening. The next day you call her.",
+          steps: [
+            { front: "Their Feelings First — she says: \"I felt really stupid, holding the table and making excuses for you.\"", back: "\"That sounds awful — holding the table for me. I didn't mean to put you in that position, and I'm sorry I did.\"", guideFront: "Let them tell it first when...", guideBack: "Their feeling, heard and owned" },
+            { front: "Ask What Mattered to Them — she has calmed down, but you still don't know why the evening mattered so much.", back: "\"What was important to you about the dinner?\"", guideFront: "Ask what was important to them when...", guideBack: "What mattered to them, said back" },
+            { front: "Say What Mattered to You — she says, \"It's the first time we've all been together in a year. And why didn't you just text?\"", back: "\"My sister was having a hard time, and I don't hang up on her. I should have texted — I just didn't want to rush her.\"", guideFront: "Say what drove you when...", guideBack: "What mattered to you, and what it did to you" },
+            { front: "Offer What They Need — she says, \"I get it. I just need to know where people are.\"", back: "\"Then if I'm ever running late, I'll text you before the time, not after.\"", guideFront: "Offer something for next time when...", guideBack: "A concrete offer for their need" },
+            { front: "Ask for What You Need — she says, \"That would help.\"", back: "\"And I'd like it if you told me straight away when you're annoyed, instead of a whole evening of short answers.\"", guideFront: "Ask for something for yourself when...", guideBack: "A clear request from your side" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "At work, you sent a report to the client without waiting for your colleague Omar's last check. He found an error in it the next morning and said nothing to you all day.",
+          steps: [
+            { front: "Their Feelings First — you ask how it was for him. He says, \"It felt like my part didn't count.\"", back: "\"I can see why. I went past you, and that's how it would feel. That wasn't the aim, and I'm sorry.\"", guideFront: "Let them tell it first when...", guideBack: "Their feeling, heard and owned" },
+            { front: "Ask What Mattered to Them — he says, \"Okay. I just want it to go out right.\"", back: "\"So quality matters most to you — getting it right before it leaves. That makes sense.\"", guideFront: "Ask what was important to them when...", guideBack: "What mattered to them, said back" },
+            { front: "Say What Mattered to You — he asks why you didn't wait.", back: "\"Keeping the promise to the client mattered to me — I'd told them Friday. I was stressed about letting them down.\"", guideFront: "Say what drove you when...", guideBack: "What mattered to you, and what it did to you" },
+            { front: "Offer What They Need — he nods: \"So we both cared about the client, in different ways.\"", back: "\"From now on, I'll build in a day for your check before any deadline I promise.\"", guideFront: "Offer something for next time when...", guideBack: "A concrete offer for their need" },
+            { front: "Ask for What You Need — he says, \"That would work.\"", back: "\"And if you find something after it's gone, I'd like you to tell me that day. The silence was hard.\"", guideFront: "Ask for something for yourself when...", guideBack: "A clear request from your side" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your partner made plans with their parents for the whole weekend without asking you. You said, \"You never ask me anything,\" and went to bed. In the morning you want to talk.",
+          steps: [
+            { front: "Their Feelings First — they say, \"I felt attacked. I thought you'd be pleased.\"", back: "\"You thought it would be nice, and I made you feel attacked. That's not what I wanted. I'm sorry I said 'never'.\"", guideFront: "Let them tell it first when...", guideBack: "Their feeling, heard and owned" },
+            { front: "Ask What Mattered to Them — they say they just wanted to say yes before their mum got upset.", back: "\"So keeping things good with your mum mattered — not making her wait. I understand that.\"", guideFront: "Ask what was important to them when...", guideBack: "What mattered to them, said back" },
+            { front: "Say What Mattered to You — they ask, \"So why were you so upset?\"", back: "\"Having a say in our weekends matters to me. I've had a hard week, and I'd been looking forward to one quiet day.\"", guideFront: "Say what drove you when...", guideBack: "What mattered to you, and what it did to you" },
+            { front: "Offer What They Need — they say, \"I didn't know you needed that.\"", back: "\"I'll come on Saturday, gladly. Your parents matter to me too.\"", guideFront: "Offer something for next time when...", guideBack: "A concrete offer for their need" },
+            { front: "Ask for What You Need — they smile: \"Thank you.\"", back: "\"And I'd like it if we checked with each other before saying yes to whole weekends.\"", guideFront: "Ask for something for yourself when...", guideBack: "A clear request from your side" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "All the Way",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "All seven, for conflicts that do not settle after the needs.\n\n1. **Their Feelings First**\n2. **Ask What Mattered to Them**\n3. **Say What Mattered to You**\n4. **Offer What They Need**\n5. **Ask for What You Need**\n6. **Find Where It Clashed** — it is still not settled\n7. **Say What Hurt, Last** — the one thing that still sits with you\n\nWhy this order: the last two only work when everything before them is said. The clash needs both values on the table; the hurt needs them calm enough to take it in.\n\nThe usual order starts at step 7.\n\nMindset: the harder the conflict, the more the order matters.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your brother Karl borrowed your car for a week and returned it with a dent and an empty tank. You told him he's \"always been like this\". You meet for coffee a week later.",
+          steps: [
+            { front: "Their Feelings First — he says, \"'Always been like this' really got to me. Like I'm still twelve.\"", back: "\"That makes sense — I spoke to you like you're still the kid brother. That's not how I see you, and I'm sorry I said it.\"", guideFront: "Let them tell it first when...", guideBack: "Their feeling, heard and owned" },
+            { front: "Ask What Mattered to Them — he relaxes a little.", back: "\"What was going on for you that week, with the car?\"", guideFront: "Ask what was important to them when...", guideBack: "What mattered to them, said back" },
+            { front: "Say What Mattered to You — he explains he was moving flats and it was chaos. He asks why you were so angry.", back: "\"Looking after my things matters a lot to me — I saved for that car for years. Seeing it dented made me feel like it didn't matter to anyone else.\"", guideFront: "Say what drove you when...", guideBack: "What mattered to you, and what it did to you" },
+            { front: "Offer What They Need — he says, \"I need to feel I can ask you for help without being judged.\"", back: "\"You can. If you need the car again, ask — and I'll ask what you need, not assume.\"", guideFront: "Offer something for next time when...", guideBack: "A concrete offer for their need" },
+            { front: "Ask for What You Need — he says, \"Okay. Thanks.\"", back: "\"And I'd like it back the way it went out — and if something happens, tell me before I find it.\"", guideFront: "Ask for something for yourself when...", guideBack: "A clear request from your side" },
+            { front: "Find Where It Clashed — he agrees, but says, \"You still think I'm careless.\"", back: "\"I think your 'help me when I'm struggling' and my 'look after my things' crashed into each other that week. Is that how you see it?\"", guideFront: "Look for the clash together when...", guideBack: "Both values, side by side" },
+            { front: "Say What Hurt, Last — he says, \"Yeah. That's it, actually.\"", back: "\"One last thing. Finding the dent myself, without a word from you, hurt more than the dent.\"", guideFront: "Say what still hurts when...", guideBack: "Your feeling, said last and plainly" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your friend Priya planned her wedding and asked you to be a witness — then gave the role to her new colleague without telling you. You found out from someone else and stopped replying to her messages.",
+          steps: [
+            { front: "Their Feelings First — she finally calls and says, \"Your silence felt like a punishment.\"", back: "\"I can see that. Going silent was my way of coping, and it hurt you. I'm sorry for that.\"", guideFront: "Let them tell it first when...", guideBack: "Their feeling, heard and owned" },
+            { front: "Ask What Mattered to Them — she sounds relieved.", back: "\"Can I ask what was going on for you, when you changed the plan?\"", guideFront: "Ask what was important to them when...", guideBack: "What mattered to them, said back" },
+            { front: "Say What Mattered to You — she says she felt pressure at work and didn't know how to tell you. She asks what it was like for you.", back: "\"Being told things directly matters a lot to me, especially by you. Hearing it from someone else knocked me sideways.\"", guideFront: "Say what drove you when...", guideBack: "What mattered to you, and what it did to you" },
+            { front: "Offer What They Need — she says, \"I need you not to disappear when you're hurt.\"", back: "\"Then I'll tell you when something's wrong, even if all I can say is 'I need a day'.\"", guideFront: "Offer something for next time when...", guideBack: "A concrete offer for their need" },
+            { front: "Ask for What You Need — she says, \"That would mean a lot.\"", back: "\"And I'd like to hear hard news from you first, even when it's awkward.\"", guideFront: "Ask for something for yourself when...", guideBack: "A clear request from your side" },
+            { front: "Find Where It Clashed — she agrees, then says, \"But it still feels like a big thing between us.\"", back: "\"I think your fear of an awkward talk met my need to be told straight. Both were real, and they met at the worst time.\"", guideFront: "Look for the clash together when...", guideBack: "Both values, side by side" },
+            { front: "Say What Hurt, Last — she says, \"Yes. I avoided you because I felt guilty.\"", back: "\"Thank you. There's one thing left: I felt I'd been replaced. I needed to say it, and I don't think it's true now.\"", guideFront: "Say what still hurts when...", guideBack: "Your feeling, said last and plainly" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your daughter Ella, nineteen, moved back home. She used your bank card for food without asking, and you said she \"takes everything for granted\". She hasn't spoken to you for two days.",
+          steps: [
+            { front: "Their Feelings First — you knock and ask how it was for her. She says, \"You made me feel like a thief.\"", back: "\"I can hear that. That's a terrible thing to feel in your own home, and I'm sorry I said it like that.\"", guideFront: "Let them tell it first when...", guideBack: "Their feeling, heard and owned" },
+            { front: "Ask What Mattered to Them — she sits up.", back: "\"What was going on for you, with the card?\"", guideFront: "Ask what was important to them when...", guideBack: "What mattered to them, said back" },
+            { front: "Say What Mattered to You — she says she was ashamed of having no money and didn't want to ask. She asks why you were so angry.", back: "\"Being asked matters to me — it's how I know what's going on. When I saw the statement, I felt shut out of my own money.\"", guideFront: "Say what drove you when...", guideBack: "What mattered to you, and what it did to you" },
+            { front: "Offer What They Need — she says, \"I need to not feel like a burden.\"", back: "\"You're not one. I'll put money in your account every week for food, so you don't have to ask each time.\"", guideFront: "Offer something for next time when...", guideBack: "A concrete offer for their need" },
+            { front: "Ask for What You Need — she says, \"Okay. Thank you.\"", back: "\"And I'd like you to tell me if you need more, instead of finding a way round me.\"", guideFront: "Ask for something for yourself when...", guideBack: "A clear request from your side" },
+            { front: "Find Where It Clashed — she agrees, but says it still feels strange between you.", back: "\"I think your pride and my need to be asked collided over a bank card. Does that sound right?\"", guideFront: "Look for the clash together when...", guideBack: "Both values, side by side" },
+            { front: "Say What Hurt, Last — she laughs a little: \"Yes. Exactly that.\"", back: "\"One last thing. Two days of silence was hard for me. I'd rather we talk, even when it's awkward.\"", guideFront: "Say what still hurts when...", guideBack: "Your feeling, said last and plainly" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Back a Step",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Say What Mattered to You**, then **Their Feelings First**, then **Ask What Mattered to Them**. What to do when the talk flares up again when it is your turn.\n\n1. **Say What Mattered to You** — you start on your side.\n2. **Their Feelings First** — they hear it as an accusation and flare up; go back to their side.\n3. **Ask What Mattered to Them** — once they have settled, find out what they were protecting.\n\nWhy this order: when the heat comes back, the way forward is a step back. Defending your side again — louder — is how the talk turns into the argument it was meant to repair.\n\nThe usual order is to repeat your point until they accept it.\n\nMindset: going back a step is not giving up. It is how the talk keeps going.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You and your flatmate Nora argued about the cleaning. Today you sit down to talk, and she has already told you how fed up she was.",
+          steps: [
+            { front: "Say What Mattered to You — she asks what's going on for you.", back: "\"A clean kitchen matters a lot to me. When I come home and it's a mess, I can't relax.\"", guideFront: "Say what drove you when...", guideBack: "What mattered to you, and what it did to you" },
+            { front: "Their Feelings First — she snaps: \"So I'm the messy one. Great.\"", back: "\"No — I've gone too fast. You were fed up too. Tell me what it's been like for you.\"", guideFront: "Let them tell it first when...", guideBack: "Their feeling, heard and owned" },
+            { front: "Ask What Mattered to Them — she says she feels she's always the one being told off.", back: "\"So it's about not being the one who's always wrong. What would feel fair to you?\"", guideFront: "Ask what was important to them when...", guideBack: "What mattered to them, said back" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your colleague Adam was angry that you took a day off during the busiest week. He has told you how it felt to cover for you, and now it is your turn.",
+          steps: [
+            { front: "Say What Mattered to You — he asks why you took that day.", back: "\"My son was ill, and being there for him matters more to me than any deadline. I felt torn about it.\"", guideFront: "Say what drove you when...", guideBack: "What mattered to you, and what it did to you" },
+            { front: "Their Feelings First — he says: \"Everybody has kids. I still had to do two jobs.\"", back: "\"You're right, you carried it. Tell me how that day actually was.\"", guideFront: "Let them tell it first when...", guideBack: "Their feeling, heard and owned" },
+            { front: "Ask What Mattered to Them — he says he worked until midnight and nobody noticed.", back: "\"So it's about the work being seen — not just being expected. What would have helped that week?\"", guideFront: "Ask what was important to them when...", guideBack: "What mattered to them, said back" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your partner was upset that you told your friends about their new job before they had told anyone. They have said how it felt, and now you explain.",
+          steps: [
+            { front: "Say What Mattered to You — they ask why you told them.", back: "\"I was proud of you, and sharing good news matters to me. I just got carried away.\"", guideFront: "Say what drove you when...", guideBack: "What mattered to you, and what it did to you" },
+            { front: "Their Feelings First — they say: \"It's always about how you feel.\"", back: "\"That's fair — I'm doing it again. It was your news. How was it, hearing that they already knew?\"", guideFront: "Let them tell it first when...", guideBack: "Their feeling, heard and owned" },
+            { front: "Ask What Mattered to Them — they say it felt like the moment was taken from them.", back: "\"So it mattered to tell people yourself — your news, your moment. I understand that now.\"", guideFront: "Ask what was important to them when...", guideBack: "What mattered to them, said back" },
+          ]
+        },
+      ]
+    },
+  ],
+  aftertheargument: [
+    {
+      name: "The Full Repair",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "The whole talk, from asking for it to agreeing on next time.\n\n1. **Ask for the Talk** — invite it, with its purpose.\n2. **Their Side First** — let them tell it.\n3. **Get Their Version Right** — say it back until they say yes.\n4. **It Makes Sense Because** — show their reaction fits.\n5. **Your Side, Not the Verdict** — now yours.\n6. **Own Your Part** — your specific part.\n7. **Agree on Next Time** — one change, and a word for the two of you.\n\nWhy this order: listening first gives your side room to land; owning your part after your side shows you are not defending; the agreement only means something at the end.\n\nThe usual order is your side first, their side only if they insist.\n\nMindset: listen, then speak, then build.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "At your friend Malin's dinner party, you told a story about her ex. She went quiet, and you haven't spoken since.",
+          steps: [
+            { front: "Ask for the Talk — it's been three days. You call her.", back: "\"Malin, can we talk about the dinner? I'm not calling to explain — I want to hear how it was for you.\"", guideFront: "Ask to talk it through when...", guideBack: "An invitation, with its purpose" },
+            { front: "Their Side First — she says, \"Fine. Go on, then.\"", back: "\"No — you go first. How was it for you?\"", guideFront: "Invite their side when...", guideBack: "An open door, and you listening" },
+            { front: "Get Their Version Right — she says it felt like being dragged back to the worst year of her life, in front of her new partner.", back: "\"So it wasn't just an old story. It was your worst year, in front of someone new. Have I got that?\"", guideFront: "Say their version back when...", guideBack: "Their experience, in your words" },
+            { front: "It Makes Sense Because — she says, \"Yes. And then I couldn't even enjoy my own party.\"", back: "\"Of course not. If it felt like that, I'd have gone quiet too.\"", guideFront: "Explain why their reaction fits when...", guideBack: "Their reaction, made sense of" },
+            { front: "Your Side, Not the Verdict — she asks, \"What were you even thinking?\"", back: "\"From where I stood, I thought it was a funny story about how far you've come. I didn't see it from your side at all.\"", guideFront: "Tell your side when...", guideBack: "Your experience, as yours" },
+            { front: "Own Your Part — she says, \"I know you didn't mean it.\"", back: "\"I still told it without asking you. That was my part.\"", guideFront: "Name your part when...", guideBack: "Your specific part, said plainly" },
+            { front: "Agree on Next Time — she says, \"Thank you for saying that.\"", back: "\"From now on, your old stories are yours to tell. I'm really glad you're in my life.\"", guideFront: "Settle one change when...", guideBack: "One concrete change, and a word for the two of you" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "At work, you told your manager that a project was late because of your colleague Johan. He heard about it from someone else.",
+          steps: [
+            { front: "Ask for the Talk — Johan has been avoiding you all week.", back: "\"Johan, could we talk today? I'd like to hear how this has been for you.\"", guideFront: "Ask to talk it through when...", guideBack: "An invitation, with its purpose" },
+            { front: "Their Side First — he says, \"There's not much to say.\"", back: "\"I think there is. Tell me — I'll just listen.\"", guideFront: "Invite their side when...", guideBack: "An open door, and you listening" },
+            { front: "Get Their Version Right — he says he felt stabbed in the back, after covering for you twice.", back: "\"So it felt like I went behind your back, after you'd covered for me. Is that right?\"", guideFront: "Say their version back when...", guideBack: "Their experience, in your words" },
+            { front: "It Makes Sense Because — he says, \"Yes. So I stopped trusting you.\"", back: "\"If I'd been through that, I'd stop trusting me too.\"", guideFront: "Explain why their reaction fits when...", guideBack: "Their reaction, made sense of" },
+            { front: "Your Side, Not the Verdict — he asks why you did it.", back: "\"For me, the manager asked me straight out, and I panicked. I said the first thing that wasn't me.\"", guideFront: "Tell your side when...", guideBack: "Your experience, as yours" },
+            { front: "Own Your Part — he says, \"So it was panic.\"", back: "\"It was panic, and it was wrong. My part was putting it on you instead of saying I didn't know.\"", guideFront: "Name your part when...", guideBack: "Your specific part, said plainly" },
+            { front: "Agree on Next Time — he nods slowly.", back: "\"I'll go back to the manager and correct it today. And next time, I'll talk to you first. You matter to me on this team.\"", guideFront: "Settle one change when...", guideBack: "One concrete change, and a word for the two of you" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your partner found out you'd told your parents about their health worries before they had decided to tell anyone.",
+          steps: [
+            { front: "Ask for the Talk — it's the next morning. The kitchen is quiet.", back: "\"Can we talk about my parents? Not to explain myself. I want to understand what it did to you.\"", guideFront: "Ask to talk it through when...", guideBack: "An invitation, with its purpose" },
+            { front: "Their Side First — they say, \"I don't know if I can, without getting angry.\"", back: "\"That's okay. Tell me how it was for you, angry or not.\"", guideFront: "Invite their side when...", guideBack: "An open door, and you listening" },
+            { front: "Get Their Version Right — they say it felt like losing control of something that's theirs.", back: "\"So it wasn't just being told about. It felt like I took something that was yours to share. Is that it?\"", guideFront: "Say their version back when...", guideBack: "Their experience, in your words" },
+            { front: "It Makes Sense Because — they say, \"Yes. I couldn't even look at you last night.\"", back: "\"That makes sense. If I'd done that to you, I'd feel the same.\"", guideFront: "Explain why their reaction fits when...", guideBack: "Their reaction, made sense of" },
+            { front: "Your Side, Not the Verdict — they ask why you told them.", back: "\"From where I stood, I was scared, and Mum asked me what was wrong. I needed someone, and I didn't think.\"", guideFront: "Tell your side when...", guideBack: "Your experience, as yours" },
+            { front: "Own Your Part — they say, \"I understand being scared.\"", back: "\"But my part was telling them before you were ready. That was yours to decide.\"", guideFront: "Name your part when...", guideBack: "Your specific part, said plainly" },
+            { front: "Agree on Next Time — they take your hand.", back: "\"From now on, anything about your health is yours to share. I'm with you in this, whatever it is.\"", guideFront: "Settle one change when...", guideBack: "One concrete change, and a word for the two of you" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When They Come to You",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Their Side First**, **Get Their Version Right**, **Own Your Part**, then **Your Side, Not the Verdict**. When the other person brings it up.\n\n1. **Their Side First** — let them tell it.\n2. **Get Their Version Right** — say it back.\n3. **Own Your Part** — your specific part.\n4. **Your Side, Not the Verdict** — and only then, your side.\n\nWhy this order: when they come to you, your part comes before your side. Your side said first sounds like a defence; said after your part, it sounds like an explanation.\n\nThe usual order is to answer their complaint with your side straight away.\n\nMindset: when they come to you, own it before you explain it.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your friend Elin comes up to you at work and says she needs to talk about your comment at the pub on Friday.",
+          steps: [
+            { front: "Their Side First — she says, \"It's about what you said about my running.\"", back: "\"Okay. Tell me how it was for you.\"", guideFront: "Invite their side when...", guideBack: "An open door, and you listening" },
+            { front: "Get Their Version Right — she says it felt like you were making fun of something she's finally proud of.", back: "\"So it felt like I was laughing at the one thing you're proud of right now. Is that right?\"", guideFront: "Say their version back when...", guideBack: "Their experience, in your words" },
+            { front: "Own Your Part — she says, \"Yes, exactly.\"", back: "\"My part was joking about it in front of everyone, without thinking what it means to you.\"", guideFront: "Name your part when...", guideBack: "Your specific part, said plainly" },
+            { front: "Your Side, Not the Verdict — she says, \"Why did you even say it?\"", back: "\"From where I stood, I was a bit jealous, honestly. You've done something I keep putting off.\"", guideFront: "Tell your side when...", guideBack: "Your experience, as yours" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your partner sits down next to you and says, \"Can we talk about how you spoke to my brother?\"",
+          steps: [
+            { front: "Their Side First — they say, \"I was embarrassed all evening.\"", back: "\"Tell me what it was like for you.\"", guideFront: "Invite their side when...", guideBack: "An open door, and you listening" },
+            { front: "Get Their Version Right — they say it felt like they had to choose between you and him.", back: "\"So it felt like I put you in the middle, in front of your family. Have I got that?\"", guideFront: "Say their version back when...", guideBack: "Their experience, in your words" },
+            { front: "Own Your Part — they say, \"Yes. It was horrible.\"", back: "\"My part was arguing with him at your parents' table. I made you choose.\"", guideFront: "Name your part when...", guideBack: "Your specific part, said plainly" },
+            { front: "Your Side, Not the Verdict — they ask, \"What happened, from your side?\"", back: "\"For me, his comments about my work have been building up for months. That night, I'd had enough.\"", guideFront: "Tell your side when...", guideBack: "Your experience, as yours" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A teammate, Fredrik, stops you in the car park and says he wants to talk about the last team meeting.",
+          steps: [
+            { front: "Their Side First — he says, \"You made a decision about my area without asking me.\"", back: "\"Okay. Tell me how that was for you.\"", guideFront: "Invite their side when...", guideBack: "An open door, and you listening" },
+            { front: "Get Their Version Right — he says it felt like he wasn't trusted with his own work.", back: "\"So it felt like I didn't trust you with your own area. Is that it?\"", guideFront: "Say their version back when...", guideBack: "Their experience, in your words" },
+            { front: "Own Your Part — he says, \"That's exactly it.\"", back: "\"My part was deciding it in the meeting, instead of talking to you first.\"", guideFront: "Name your part when...", guideBack: "Your specific part, said plainly" },
+            { front: "Your Side, Not the Verdict — he asks, \"So why did you?\"", back: "\"From where I stood, the deadline was the next day, and I didn't think there was time. I should have made the time.\"", guideFront: "Tell your side when...", guideBack: "Your experience, as yours" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Pause and Try Again",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Your Side, Not the Verdict**, **Pause and Come Back**, **Their Side First**, then **Own Your Part**. When the talk crosses a line, and you come back to it.\n\n1. **Your Side, Not the Verdict** — you start on your side.\n2. **Pause and Come Back** — it crosses a line; stop, and say when you will come back.\n3. **Their Side First** — when you come back, start with them.\n4. **Own Your Part** — and your part, before anything else.\n\nWhy this order: after a pause, the talk starts again from listening, not from where it broke. Picking up where you left off usually means picking up the argument.\n\nThe usual mistake is pausing without saying when you will come back, or coming back to win the last point.\n\nMindset: a pause is part of the talk, not the end of it.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You and your partner are talking about why you didn't come to their work party. They've said how it was for them.",
+          steps: [
+            { front: "Your Side, Not the Verdict — they ask why you didn't come.", back: "\"For me, I was exhausted after the week, and big parties drain me.\"", guideFront: "Tell your side when...", guideBack: "Your experience, as yours" },
+            { front: "Pause and Come Back — they shout, \"You're always exhausted when it's about me!\" You feel yourself about to shout back.", back: "\"I'm getting too angry to listen. Can we stop and try again after dinner?\"", guideFront: "Call a pause when...", guideBack: "A stop, and a time to come back" },
+            { front: "Their Side First — after dinner, you sit down again.", back: "\"I'd like to start with you. What was it like, being there without me?\"", guideFront: "Invite their side when...", guideBack: "An open door, and you listening" },
+            { front: "Own Your Part — they say they felt like everyone was asking where you were.", back: "\"My part was not telling you earlier that I wasn't coming, so you had to explain me.\"", guideFront: "Name your part when...", guideBack: "Your specific part, said plainly" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You and your brother are talking about your dad's house. He's said his side.",
+          steps: [
+            { front: "Your Side, Not the Verdict — he asks what you think.", back: "\"From where I stand, selling now feels too soon. I'm not ready to lose it.\"", guideFront: "Tell your side when...", guideBack: "Your experience, as yours" },
+            { front: "Pause and Come Back — he says, \"You've never cared about anything but yourself.\"", back: "\"That's too much. I'm stopping now. Let's talk again on Sunday.\"", guideFront: "Call a pause when...", guideBack: "A stop, and a time to come back" },
+            { front: "Their Side First — on Sunday, you call him.", back: "\"I'd like to hear your side again — properly this time. What's it been like for you?\"", guideFront: "Invite their side when...", guideBack: "An open door, and you listening" },
+            { front: "Own Your Part — he says he's been carrying the house alone for a year.", back: "\"My part was not helping with it, and then telling you how to decide.\"", guideFront: "Name your part when...", guideBack: "Your specific part, said plainly" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You and a colleague, Karin, are talking about a project that failed. She's told you how frustrated she was.",
+          steps: [
+            { front: "Your Side, Not the Verdict — she asks what happened on your end.", back: "\"For me, the plan kept changing, and I couldn't keep up.\"", guideFront: "Tell your side when...", guideBack: "Your experience, as yours" },
+            { front: "Pause and Come Back — she says, \"That's pathetic. Everyone else managed.\" You feel yourself getting hot.", back: "\"I want to finish this, but not like this. Can we pick it up after four?\"", guideFront: "Call a pause when...", guideBack: "A stop, and a time to come back" },
+            { front: "Their Side First — at four, you meet again.", back: "\"Before I say anything — what was the worst part of it for you?\"", guideFront: "Invite their side when...", guideBack: "An open door, and you listening" },
+            { front: "Own Your Part — she says it was having to explain the failure to the client alone.", back: "\"My part was not telling you I was behind, so you found out too late.\"", guideFront: "Name your part when...", guideBack: "Your specific part, said plainly" },
+          ]
+        },
+      ]
+    },
+  ],
+  twosidesofthestory: [
+    {
+      name: "Untangle It",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Ask What They Saw**, **Their Story Makes Sense Too**, **Intent and Impact**, then **Contribution, Not Blame**. From their view to a shared responsibility.\n\n1. **Ask What They Saw** — find out what they knew.\n2. **Their Story Makes Sense Too** — say how their reading fits.\n3. **Intent and Impact** — separate what was meant from how it landed.\n4. **Contribution, Not Blame** — what each of you added.\n\nWhy this order: you cannot see the contribution until you know what they saw, and they cannot hear your intent until their reading has been understood.\n\nThe usual order starts with your intent — \"I didn't mean it\" — before you know what they saw.\n\nMindset: understand their story before you explain yours.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your friend Johanna is upset that you posted a photo of her from the party.",
+          steps: [
+            { front: "Ask What They Saw — she says, \"You knew I didn't want that online.\"", back: "\"What did you see when it went up — had you told me before?\"", guideFront: "Find out their view when...", guideBack: "A question about their view" },
+            { front: "Their Story Makes Sense Too — she says she told the whole group that night she didn't want photos posted.", back: "\"I wasn't there for that bit. But if you'd said it to everyone, I can see why it looked like I ignored you.\"", guideFront: "Find their version that fits when...", guideBack: "Their reading, made sense of" },
+            { front: "Intent and Impact — she says, \"It still feels like you didn't care.\"", back: "\"I meant to share a good night. I can see it landed as me not caring what you wanted.\"", guideFront: "Separate what was meant from how it landed when...", guideBack: "The intent and the impact, both named" },
+            { front: "Contribution, Not Blame — she says, \"I suppose you weren't there when I said it.\"", back: "\"I posted without asking, and the message didn't reach me. Both of those got us here. I'll take it down now.\"", guideFront: "Map what each of you did when...", guideBack: "What each of you added to it" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A colleague, Pär, is angry that you sent the report to the client before his final check.",
+          steps: [
+            { front: "Ask What They Saw — he says, \"You went behind my back.\"", back: "\"What did it look like from your side that morning?\"", guideFront: "Find out their view when...", guideBack: "A question about their view" },
+            { front: "Their Story Makes Sense Too — he says he'd told the manager he'd check it by noon, and you sent it at eleven.", back: "\"If you'd promised noon and saw it go at eleven, of course it looked like I went behind your back.\"", guideFront: "Find their version that fits when...", guideBack: "Their reading, made sense of" },
+            { front: "Intent and Impact — he says, \"It made me look like I don't do my job.\"", back: "\"I meant to meet the client's deadline. I can see it made you look bad in front of the manager.\"", guideFront: "Separate what was meant from how it landed when...", guideBack: "The intent and the impact, both named" },
+            { front: "Contribution, Not Blame — he says, \"Nobody told me the deadline moved.\"", back: "\"I didn't tell you the deadline had moved, and we never agreed who would send it. Both of those did it.\"", guideFront: "Map what each of you did when...", guideBack: "What each of you added to it" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your partner is upset that you invited your parents for Christmas without asking.",
+          steps: [
+            { front: "Ask What They Saw — they say, \"You just decided.\"", back: "\"What did you hear when we talked about Christmas last month?\"", guideFront: "Find out their view when...", guideBack: "A question about their view" },
+            { front: "Their Story Makes Sense Too — they say they thought you'd agreed to a quiet Christmas, just the two of you.", back: "\"If you heard 'quiet Christmas' and then saw my parents coming, of course it felt like I'd decided without you.\"", guideFront: "Find their version that fits when...", guideBack: "Their reading, made sense of" },
+            { front: "Intent and Impact — they say, \"It felt like I don't get a say.\"", back: "\"I meant to stop my mum being alone. I can see it landed as you not getting a say.\"", guideFront: "Separate what was meant from how it landed when...", guideBack: "The intent and the impact, both named" },
+            { front: "Contribution, Not Blame — they say, \"I didn't say how much the quiet one meant to me.\"", back: "\"And I invited them without checking. Both of those got us here.\"", guideFront: "Map what each of you did when...", guideBack: "What each of you added to it" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Both Memories",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Let Both Memories Stand**, **The Third Story**, then **Contribution, Not Blame**. When you cannot agree on what happened.\n\n1. **Let Both Memories Stand** — stop arguing about the record.\n2. **The Third Story** — describe it from the outside.\n3. **Contribution, Not Blame** — what each of you added.\n\nWhy this order: until you stop arguing about the record, nobody can see the bigger picture. The third story gives you a version you can both agree with, and from there the contributions are easy to see.\n\nThe usual order is to keep arguing about who said what until one of you gives up.\n\nMindset: you don't have to agree on what happened to agree on what to do next.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You and your partner are arguing about whether you agreed to look after their sister's dog for a week.",
+          steps: [
+            { front: "Let Both Memories Stand — they say, \"You said yes on Sunday.\" You're sure you said you'd think about it.", back: "\"We remember Sunday differently, and I don't think we'll settle it. Can we work from here?\"", guideFront: "Stop arguing about the record when...", guideBack: "Both memories kept, and on to what it meant" },
+            { front: "The Third Story — they say, \"Okay. But my sister's counting on us.\"", back: "\"From the outside, it looks like you heard a yes, I meant a maybe, and your sister made plans in between.\"", guideFront: "Describe it from the outside when...", guideBack: "What a neutral person would see" },
+            { front: "Contribution, Not Blame — they say, \"That's probably right.\"", back: "\"I wasn't clear, and you didn't check before telling her. Both of those got us here. Let's figure out the dog together.\"", guideFront: "Map what each of you did when...", guideBack: "What each of you added to it" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You and your friend Kim disagree about whether you promised to drive her to the airport.",
+          steps: [
+            { front: "Let Both Memories Stand — she says, \"You definitely offered.\" You remember saying \"if I'm free\".", back: "\"I remember 'if I'm free', you remember an offer. Let's not argue about it — how are you getting there now?\"", guideFront: "Stop arguing about the record when...", guideBack: "Both memories kept, and on to what it meant" },
+            { front: "The Third Story — she says, \"I've booked nothing else, because I counted on you.\"", back: "\"It sounds like I made a half-offer, and you heard a full one — and nobody checked.\"", guideFront: "Describe it from the outside when...", guideBack: "What a neutral person would see" },
+            { front: "Contribution, Not Blame — she says, \"I should have confirmed.\"", back: "\"And I should have been clearer. We both added to this. I'll look at whether I can move my morning.\"", guideFront: "Map what each of you did when...", guideBack: "What each of you added to it" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "At work, you and your colleague Sanna disagree about who said they'd book the meeting room.",
+          steps: [
+            { front: "Let Both Memories Stand — she says, \"You said you'd do it.\" You remember her saying it.", back: "\"We remember it the other way round. Let's not go over it — the room's gone, so what do we do?\"", guideFront: "Stop arguing about the record when...", guideBack: "Both memories kept, and on to what it meant" },
+            { front: "The Third Story — she says, \"Fine. But this keeps happening.\"", back: "\"From the outside, it looks like we both left the meeting thinking the other had it.\"", guideFront: "Describe it from the outside when...", guideBack: "What a neutral person would see" },
+            { front: "Contribution, Not Blame — she says, \"Yeah. That's about it.\"", back: "\"Neither of us wrote it down, and neither of us checked. From now on, whoever says it writes it in the chat.\"", guideFront: "Map what each of you did when...", guideBack: "What each of you added to it" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When It Hurts Who You Are",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**What It Says About Me**, **Intent and Impact**, then **Their Story Makes Sense Too**. When a conflict hits your sense of who you are.\n\n1. **What It Says About Me** — name the fear, and test it.\n2. **Intent and Impact** — separate what they meant from how it landed.\n3. **Their Story Makes Sense Too** — now that you are steadier, see how their view fits.\n\nWhy this order: when a criticism lands on who you are, you cannot see their side until you have dealt with the fear. Naming it first steadies you enough to listen.\n\nThe usual order is to defend yourself straight away — which proves to you that the criticism hit.\n\nMindset: one mistake is something you did, not something you are.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your friend says, \"You're always late. You just don't respect other people's time.\"",
+          steps: [
+            { front: "What It Says About Me — it lands hard, and you feel yourself getting defensive.", back: "\"Part of why this stings is that I'm scared it's true — that I'm disrespectful. I don't think I am, but I am often late.\"", guideFront: "Name what it touches in you when...", guideBack: "The fear underneath, said and tested" },
+            { front: "Intent and Impact — she says, \"Well, it feels like it.\"", back: "\"I don't mean any disrespect. I can see that's how it lands, every time.\"", guideFront: "Separate what was meant from how it landed when...", guideBack: "The intent and the impact, both named" },
+            { front: "Their Story Makes Sense Too — she says, \"I always wait twenty minutes for you.\"", back: "\"If you're always the one waiting, it makes sense that it feels like disrespect.\"", guideFront: "Find their version that fits when...", guideBack: "Their reading, made sense of" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your manager says in your review that you're \"not a team player\". You've always seen yourself as helpful.",
+          steps: [
+            { front: "What It Says About Me — you feel your face go hot.", back: "\"That's hard to hear, because helping is something I'm proud of. I'd like to understand it.\"", guideFront: "Name what it touches in you when...", guideBack: "The fear underneath, said and tested" },
+            { front: "Intent and Impact — she says you often finish things alone without telling anyone.", back: "\"I mean to save people time. I can see it lands as me shutting them out.\"", guideFront: "Separate what was meant from how it landed when...", guideBack: "The intent and the impact, both named" },
+            { front: "Their Story Makes Sense Too — she says the team often finds out after it's done.", back: "\"If people only see it once it's done, I can see why it looks like I'm not working with them.\"", guideFront: "Find their version that fits when...", guideBack: "Their reading, made sense of" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your teenage daughter says, \"You care more about your job than about me.\"",
+          steps: [
+            { front: "What It Says About Me — it hits you in the stomach.", back: "\"That really hurts, because the thing I'm most scared of is being a bad parent. Can you tell me more?\"", guideFront: "Name what it touches in you when...", guideBack: "The fear underneath, said and tested" },
+            { front: "Intent and Impact — she says you missed her concert for a meeting.", back: "\"I meant to come straight after. I can see it landed as the meeting mattering more than you.\"", guideFront: "Separate what was meant from how it landed when...", guideBack: "The intent and the impact, both named" },
+            { front: "Their Story Makes Sense Too — she says, \"You were on your phone at dinner too.\"", back: "\"If you see me at work during dinner and missing your concert, of course it looks like my job comes first.\"", guideFront: "Find their version that fits when...", guideBack: "Their reading, made sense of" },
+          ]
+        },
+      ]
+    },
+  ],
 };

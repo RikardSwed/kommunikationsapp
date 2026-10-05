@@ -19986,4 +19986,528 @@ const memorizeCollections = {
       ]
     },
   ],
+  conflictresolution: [
+    {
+      name: "Core Idea",
+      description: "Seven strategies for the talk after a conflict, in order:\n\n1. Their Feelings First\n2. Ask What Mattered to Them\n3. Say What Mattered to You\n4. Offer What They Need\n5. Ask for What You Need\n6. Find Where It Clashed\n7. Say What Hurt, Last\n\nOften the talk is settled after step 5.",
+      cards: [
+        { q: "What are the seven strategies in this pack?", a: "Their Feelings First, Ask What Mattered to Them, Say What Mattered to You, Offer What They Need, Ask for What You Need, Find Where It Clashed, Say What Hurt, Last.", bundle: 'free' },
+        { q: "What is the order of the whole pack?", a: "Their feelings, then both sides' values, then both sides' needs — and your own hurt last.", bundle: 'free' },
+        { q: "Why does your own hurt come last?", a: "Said first, it sounds like an accusation and starts the argument again. Said last, it can be heard.", bundle: 'free' },
+        { q: "Do you always need all seven steps?", a: "No. Often the talk is settled after the needs, and the last two are never needed.", bundle: 'free' },
+        { q: "What is the aim of the whole pack?", a: "Not to win the conflict, but to come out of it closer.", bundle: 'free' },
+        { q: "What is behind most of what people do in a conflict?", a: "Something they value — fairness, freedom, their work, someone they love.", bundle: 'pro' },
+        { q: "What do you do when the talk flares up again?", a: "Go back a step, to their feelings or what mattered to them.", bundle: 'pro' },
+        { q: "Why are some strategies in this pack more than one step?", a: "Each is one part of the process with two or three parts inside it. Different cards train different parts.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Their Feelings First",
+      description: "",
+      cards: [
+        { q: "What is Their Feelings First?", a: "Starting the talk with how it was for them: listening, showing you understand, and saying you regret how it landed.", bundle: 'free' },
+        { q: "How does Their Feelings First sound?", a: "\"I can hear how small that made you feel. That was never what I wanted, and I'm sorry it landed like that.\"", bundle: 'free' },
+        { q: "When is Their Feelings First the right one?", a: "At the start of the talk, and whenever it flares up again.", bundle: 'free' },
+        { q: "What does Their Feelings First protect?", a: "The room for the rest of the talk. Nobody can listen while their own side is still burning.", bundle: 'free' },
+        { q: "What are the three parts of Their Feelings First?", a: "Ask and listen, show you understand, and say it was not the aim and you regret how it landed.", bundle: 'free' },
+        { q: "When does Their Feelings First go wrong?", a: "When the regret comes with a \"but\" — then it turns into your side.", bundle: 'pro' },
+        { q: "What is Their Feelings First better than, and why?", a: "Starting with your side. The same words sound like a defence when they come first.", bundle: 'pro' },
+        { q: "Which strategy often follows Their Feelings First?", a: "Ask What Mattered to Them — now that they've been heard, find out what they were protecting.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What Mattered to Them",
+      description: "",
+      cards: [
+        { q: "What is Ask What Mattered to Them?", a: "Asking what was important to them in the situation, and showing you understand it.", bundle: 'free' },
+        { q: "How does Ask What Mattered to Them sound?", a: "\"What were you hoping for? … So it was about time that's only ours. That makes sense.\"", bundle: 'free' },
+        { q: "When is Ask What Mattered to Them the right one?", a: "When you know how they felt, but not why it mattered so much.", bundle: 'free' },
+        { q: "What does Ask What Mattered to Them protect?", a: "Your understanding of them. Their behaviour stops looking like an attack and starts looking like a reason.", bundle: 'free' },
+        { q: "What are the three parts of Ask What Mattered to Them?", a: "Ask, listen — and guess if they cannot say — then say it back with understanding.", bundle: 'free' },
+        { q: "When does Ask What Mattered to Them go wrong?", a: "When the guess is said as a statement — \"you were just jealous\".", bundle: 'pro' },
+        { q: "What is Ask What Mattered to Them better than, and why?", a: "Assuming they did it because they don't care. Not caring is the rarest reason.", bundle: 'pro' },
+        { q: "Which strategy often follows Ask What Mattered to Them?", a: "Say What Mattered to You — they've been understood, so now they can understand you.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say What Mattered to You",
+      description: "",
+      cards: [
+        { q: "What is Say What Mattered to You?", a: "Saying what was important to you in the situation, and how it affected you — as an explanation, not a defence.", bundle: 'free' },
+        { q: "How does Say What Mattered to You sound?", a: "\"Not letting the team down matters a lot to me. That's why I stayed.\"", bundle: 'free' },
+        { q: "When is Say What Mattered to You the right one?", a: "After they've been heard, when they don't yet know what you were protecting.", bundle: 'free' },
+        { q: "What does Say What Mattered to You protect?", a: "Your half of the picture.", bundle: 'free' },
+        { q: "What are the two parts of Say What Mattered to You?", a: "The value, and what it did to you.", bundle: 'free' },
+        { q: "When does Say What Mattered to You go wrong?", a: "When it comes before their side. Then it sounds like an excuse.", bundle: 'pro' },
+        { q: "What is Say What Mattered to You better than, and why?", a: "Giving reasons like \"I was busy\". A value invites understanding; a reason invites an argument.", bundle: 'pro' },
+        { q: "Which strategy often follows Say What Mattered to You?", a: "Offer What They Need — both sides are understood, so look forward.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Offer What They Need",
+      description: "",
+      cards: [
+        { q: "What is Offer What They Need?", a: "Offering something concrete for the future, based on what they need and what matters to them.", bundle: 'free' },
+        { q: "How does Offer What They Need sound?", a: "\"Next time something comes up at work, I'll call before six. I'm willing to do that for you.\"", bundle: 'free' },
+        { q: "When is Offer What They Need the right one?", a: "When you understand their need, and something should be different next time.", bundle: 'free' },
+        { q: "What does Offer What They Need protect?", a: "The next time.", bundle: 'free' },
+        { q: "What are the two parts of Offer What They Need?", a: "Name their need, and offer something concrete.", bundle: 'free' },
+        { q: "When does Offer What They Need go wrong?", a: "When the offer is too big to keep.", bundle: 'pro' },
+        { q: "What is Offer What They Need better than, and why?", a: "A general promise to do better. A concrete offer can actually be kept.", bundle: 'pro' },
+        { q: "Which strategy often follows Offer What They Need?", a: "Ask for What You Need — after an offer, a request sounds like a deal, not a condition.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for What You Need",
+      description: "",
+      cards: [
+        { q: "What is Ask for What You Need?", a: "Saying what you would like from them in future, based on what matters to you.", bundle: 'free' },
+        { q: "How does Ask for What You Need sound?", a: "\"I'd like it if, when I'm late, we talk the next day rather than that same night.\"", bundle: 'free' },
+        { q: "When is Ask for What You Need the right one?", a: "After your offer, when you need something to be different too.", bundle: 'free' },
+        { q: "What does Ask for What You Need protect?", a: "Your side of the next time.", bundle: 'free' },
+        { q: "What are the two parts of Ask for What You Need?", a: "Name your need, and ask for something concrete.", bundle: 'free' },
+        { q: "When does Ask for What You Need go wrong?", a: "When it comes before your offer — then it sounds like a condition.", bundle: 'pro' },
+        { q: "What is Ask for What You Need better than, and why?", a: "Hoping they'll know. Unspoken needs stay unmet and become the next conflict.", bundle: 'pro' },
+        { q: "Which strategy often follows Ask for What You Need?", a: "Often none — the talk is settled. If it still isn't, Find Where It Clashed.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Find Where It Clashed",
+      description: "",
+      cards: [
+        { q: "What is Find Where It Clashed?", a: "Putting both values side by side and looking together for where they collided.", bundle: 'free' },
+        { q: "How does Find Where It Clashed sound?", a: "\"I think your 'this evening is ours' ran straight into my 'I can't leave the team stuck'. Does that sound right to you?\"", bundle: 'free' },
+        { q: "When is Find Where It Clashed the right one?", a: "When the talk still doesn't feel settled, or the same conflict keeps coming back.", bundle: 'free' },
+        { q: "What does Find Where It Clashed protect?", a: "Both values. The problem moves from \"you\" to \"the two things we both care about\".", bundle: 'free' },
+        { q: "What are the two parts of Find Where It Clashed?", a: "Put both values side by side, and ask how they see it.", bundle: 'free' },
+        { q: "When does Find Where It Clashed go wrong?", a: "When it's used before both values have been said.", bundle: 'pro' },
+        { q: "What is Find Where It Clashed better than, and why?", a: "Deciding whose value is more important. Then one person stays hurt.", bundle: 'pro' },
+        { q: "Is Find Where It Clashed always needed?", a: "No. If the needs have been heard and met, the clash has usually been dealt with already.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say What Hurt, Last",
+      description: "",
+      cards: [
+        { q: "What is Say What Hurt, Last?", a: "Saying what still hurts — how you felt, and what they did — at the very end, plainly.", bundle: 'free' },
+        { q: "How does Say What Hurt, Last sound?", a: "\"There's one thing still with me. When you said I always choose work, that hurt.\"", bundle: 'free' },
+        { q: "When is Say What Hurt, Last the right one?", a: "When everything else has been said, and one thing still sits with you.", bundle: 'free' },
+        { q: "What does Say What Hurt, Last protect?", a: "Your feelings — by saying them where they can be heard.", bundle: 'free' },
+        { q: "What are the two parts of Say What Hurt, Last?", a: "What they did, and how it felt.", bundle: 'free' },
+        { q: "When does Say What Hurt, Last go wrong?", a: "When it turns into a list of everything they did.", bundle: 'pro' },
+        { q: "What is Say What Hurt, Last better than, and why?", a: "Swallowing it. Then it comes out at the next conflict.", bundle: 'pro' },
+        { q: "Why is this step often never needed?", a: "By the end of a good talk, what hurt has usually lost its weight.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Theirs or Yours?** — whose turn it is\n• **Go On or Go Back?** — the next step, or a step back\n• **All Seven** — no cue given, which is the real thing\n\nOne question decides most of it: has the other person been heard yet?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Theirs or Yours?, Go On or Go Back?, and All Seven.", bundle: 'pro' },
+        { q: "What is the question that decides Theirs or Yours?", a: "Whose turn is it — has the other person been heard yet?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Theirs or Yours?", a: "Your side before theirs.", bundle: 'pro' },
+        { q: "What is the question that decides Go On or Go Back?", a: "Is the other person calm enough to hear something new?", bundle: 'pro' },
+        { q: "Where do you go back to?", a: "Their Feelings First or Ask What Mattered to Them.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Go On or Go Back?", a: "Pushing on when they have flared up.", bundle: 'pro' },
+        { q: "What two questions help in All Seven?", a: "Have they been heard yet? And is something still unsettled, or is it done?", bundle: 'pro' },
+        { q: "What is the aim in All Seven?", a: "Not to win the conflict, but to come out of it closer.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Short Way** — Their Feelings First → Ask What Mattered to Them → Say What Mattered to You → Offer What They Need → Ask for What You Need\n2. **All the Way** — all seven, ending with Find Where It Clashed and Say What Hurt, Last\n3. **Back a Step** — Say What Mattered to You → Their Feelings First → Ask What Mattered to Them\n\nThe order is the point: theirs before yours, values before needs, hurt last.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Short Way, All the Way, and Back a Step.", bundle: 'pro' },
+        { q: "Where does The Short Way end?", a: "At Ask for What You Need — often the talk is settled there.", bundle: 'pro' },
+        { q: "When do you need All the Way?", a: "When the conflict still isn't settled after the needs have been said.", bundle: 'pro' },
+        { q: "What are the last two steps of All the Way?", a: "Find Where It Clashed, then Say What Hurt, Last.", bundle: 'pro' },
+        { q: "What happens in Back a Step?", a: "The talk flares up when it's your turn, so you go back to their feelings and what mattered to them.", bundle: 'pro' },
+        { q: "What is the usual wrong order?", a: "Starting with your own hurt, then your reasons, and their side only if there is time.", bundle: 'pro' },
+        { q: "Why does Say What Hurt come last?", a: "It needs the other person to be calm enough to take it in.", bundle: 'pro' },
+        { q: "What do you do when the heat comes back?", a: "Go back a step.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **It Starts Again** — the argument comes back mid-talk\n• **They Jump to Blame** — they open with what you did wrong\n• **They Can't Say What Mattered** — \"I don't know, I was just angry\"\n• **Your Needs Pull Opposite Ways** — both needs are real and point apart\n• **It Still Sits in You** — everything is said, and one thing still hurts\n\nEach one is solved by going to the right step — often an earlier one.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "It Starts Again, They Jump to Blame, They Can't Say What Mattered, Your Needs Pull Opposite Ways, and It Still Sits in You.", bundle: 'pro' },
+        { q: "What is the main strategy when it starts again?", a: "Their Feelings First — go back to their side.", bundle: 'pro' },
+        { q: "What should you avoid when it starts again?", a: "Repeating your point until they accept it.", bundle: 'pro' },
+        { q: "What is an accusation, usually?", a: "A feeling that hasn't been heard yet.", bundle: 'pro' },
+        { q: "What do you do when they can't say what mattered?", a: "Offer a guess as a question, or say what mattered to you first.", bundle: 'pro' },
+        { q: "What should you avoid when your needs pull opposite ways?", a: "Deciding whose need is more important.", bundle: 'pro' },
+        { q: "What is the main strategy when something still sits in you?", a: "Say What Hurt, Last.", bundle: 'pro' },
+        { q: "What should you avoid when you say what still hurts?", a: "Turning it into a list of everything they did.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **The Resolution Mindset** — someone has to admit they were wrong\n• **Listening First** — hearing them first means it was my fault\n• **Their Reasons** — they did it because they don't care\n• **My Reasons** — explaining my side is making excuses\n• **Giving Way** — if I offer something, I've lost\n• **Asking for Mine** — they should just know\n• **The Clash** — if our values clash, one of us is wrong\n• **Getting It Out** — I have to say how angry I was first\n\nMost of them turn the talk back into a contest.",
+      cards: [
+        { q: "What are the eight mindsets in this pack?", a: "The Resolution Mindset, Listening First, Their Reasons, My Reasons, Giving Way, Asking for Mine, The Clash, and Getting It Out.", bundle: 'pro' },
+        { q: "What is true instead of \"someone has to admit they were wrong\"?", a: "Both acted from something that mattered. The talk ends well when both are understood.", bundle: 'pro' },
+        { q: "Is listening first the same as admitting fault?", a: "No. It's about order, not blame.", bundle: 'pro' },
+        { q: "What is the difference between an excuse and your reasons?", a: "An excuse avoids responsibility. A value helps them understand you.", bundle: 'pro' },
+        { q: "Why ask for what you need instead of hoping they'll know?", a: "Nobody can read your mind, and unspoken needs become the next conflict.", bundle: 'pro' },
+        { q: "Can two people both be right when their values clash?", a: "Yes. Two good values can meet at a bad moment.", bundle: 'pro' },
+        { q: "Why not start with how angry you were?", a: "Said first, it starts the fight again. Said last, it gets heard.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They turn the talk back into a contest.", bundle: 'pro' },
+      ]
+    },
+  ],
+  aftertheargument: [
+    {
+      name: "Core Idea",
+      description: "Eight strategies for the talk after an argument:\n\n1. Ask for the Talk\n2. Their Side First\n3. Get Their Version Right\n4. It Makes Sense Because\n5. Your Side, Not the Verdict\n6. Own Your Part\n7. Agree on Next Time\n8. Pause and Come Back\n\nListen first, then speak, then build.",
+      cards: [
+        { q: "What are the eight strategies in this pack?", a: "Ask for the Talk, Their Side First, Get Their Version Right, It Makes Sense Because, Your Side Not the Verdict, Own Your Part, Agree on Next Time, Pause and Come Back.", bundle: 'free' },
+        { q: "What is the order of the whole talk?", a: "Ask for it, listen, speak, own your part, and agree on next time.", bundle: 'free' },
+        { q: "Which three strategies are for listening?", a: "Their Side First, Get Their Version Right, It Makes Sense Because.", bundle: 'free' },
+        { q: "What is Pause and Come Back for?", a: "When the talk crosses a line — too strong, a personal attack, or you too triggered.", bundle: 'free' },
+        { q: "What is the aim of the whole pack?", a: "Not to settle who was right, but to come out of it closer.", bundle: 'free' },
+        { q: "How is this pack different from Conflict Resolution?", a: "Conflict Resolution is about values and needs. This one is about being heard and owning your part.", bundle: 'pro' },
+        { q: "What do you do first when the talk gets heated?", a: "Usually go back to listening. Pause only when that is no longer possible.", bundle: 'pro' },
+        { q: "Why does your side come after theirs?", a: "Said first, it sounds like a defence. Said after, it sounds like an explanation.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for the Talk",
+      description: "",
+      cards: [
+        { q: "What is Ask for the Talk?", a: "Asking to talk about what happened, at a calm moment, and saying what the talk is for.", bundle: 'free' },
+        { q: "How does Ask for the Talk sound?", a: "\"Can we talk about yesterday? Not to go over who was right — I want to understand.\"", bundle: 'free' },
+        { q: "When is Ask for the Talk the right one?", a: "When something happened and it hasn't been talked about yet.", bundle: 'free' },
+        { q: "What does Ask for the Talk protect?", a: "The tone of the whole talk.", bundle: 'free' },
+        { q: "What are the two parts of Ask for the Talk?", a: "Ask with the purpose, and if not now, leave the door open.", bundle: 'free' },
+        { q: "When does Ask for the Talk go wrong?", a: "When it sounds like a trial — \"we need to talk\" — or happens in the middle of something.", bundle: 'pro' },
+        { q: "What is Ask for the Talk better than, and why?", a: "Waiting for it to blow over. Unspoken hurt comes back in the next argument.", bundle: 'pro' },
+        { q: "Which strategy often follows Ask for the Talk?", a: "Their Side First.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Their Side First",
+      description: "",
+      cards: [
+        { q: "What is Their Side First?", a: "Asking how it was for them, and listening without correcting.", bundle: 'free' },
+        { q: "How does Their Side First sound?", a: "\"Tell me how it was for you. I'll just listen.\"", bundle: 'free' },
+        { q: "When is Their Side First the right one?", a: "At the start of the talk, and whenever you come back after a pause.", bundle: 'free' },
+        { q: "What does Their Side First protect?", a: "The room for your side to land later.", bundle: 'free' },
+        { q: "What are the two parts of Their Side First?", a: "Invite it, and keep listening without correcting.", bundle: 'free' },
+        { q: "When does Their Side First go wrong?", a: "When you correct a detail while they're still talking.", bundle: 'pro' },
+        { q: "What is Their Side First better than, and why?", a: "Starting with your side. People can't listen while they're still waiting to be heard.", bundle: 'pro' },
+        { q: "Which strategy often follows Their Side First?", a: "Get Their Version Right.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Get Their Version Right",
+      description: "",
+      cards: [
+        { q: "What is Get Their Version Right?", a: "Saying back what they experienced, in your own words, until they say \"yes, that's it\".", bundle: 'free' },
+        { q: "How does Get Their Version Right sound?", a: "\"So when I left the table, it felt like I didn't care how the evening went?\"", bundle: 'free' },
+        { q: "When is Get Their Version Right the right one?", a: "When they've told you how it was, and need to hear it understood.", bundle: 'free' },
+        { q: "What does Get Their Version Right protect?", a: "The moment they feel understood — often when the anger drops away.", bundle: 'free' },
+        { q: "What are the two parts of Get Their Version Right?", a: "Say it back, then check it and adjust.", bundle: 'free' },
+        { q: "When does Get Their Version Right go wrong?", a: "When you say back the facts instead of their experience.", bundle: 'pro' },
+        { q: "What is Get Their Version Right better than, and why?", a: "Saying \"I understand\". They know they've been understood when they hear it.", bundle: 'pro' },
+        { q: "Which strategy often follows Get Their Version Right?", a: "It Makes Sense Because.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Makes Sense Because",
+      description: "",
+      cards: [
+        { q: "What is It Makes Sense Because?", a: "Showing that their reaction makes sense, given how they saw it.", bundle: 'free' },
+        { q: "How does It Makes Sense Because sound?", a: "\"If you thought I was laughing at you, of course you got angry.\"", bundle: 'free' },
+        { q: "When is It Makes Sense Because the right one?", a: "When they're defending their reaction, or you're tempted to say they overreacted.", bundle: 'free' },
+        { q: "What does It Makes Sense Because protect?", a: "Their need to defend how they reacted.", bundle: 'free' },
+        { q: "What are the two parts of It Makes Sense Because?", a: "Name how they saw it, and say the reaction fits.", bundle: 'free' },
+        { q: "When does It Makes Sense Because go wrong?", a: "When it turns into agreeing with their whole version of events.", bundle: 'pro' },
+        { q: "What is It Makes Sense Because better than, and why?", a: "\"You overreacted\". That makes them defend the reaction instead of moving on.", bundle: 'pro' },
+        { q: "Which strategy often follows It Makes Sense Because?", a: "Your Side, Not the Verdict.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Your Side, Not the Verdict",
+      description: "",
+      cards: [
+        { q: "What is Your Side, Not the Verdict?", a: "Telling what you saw, thought and felt — as your experience, not a ruling on them.", bundle: 'free' },
+        { q: "How does Your Side, Not the Verdict sound?", a: "\"From where I stood, I thought we'd agreed on seven, and by eight I felt stupid for waiting.\"", bundle: 'free' },
+        { q: "When is Your Side, Not the Verdict the right one?", a: "When they've been heard and you haven't.", bundle: 'free' },
+        { q: "What does Your Side, Not the Verdict protect?", a: "Your side being heard rather than argued with.", bundle: 'free' },
+        { q: "What are the two parts of Your Side, Not the Verdict?", a: "What you saw and thought, and what you felt.", bundle: 'free' },
+        { q: "When does Your Side, Not the Verdict go wrong?", a: "When it turns into a verdict — \"you were late\", \"you overreacted\".", bundle: 'pro' },
+        { q: "What is Your Side, Not the Verdict better than, and why?", a: "Telling them what they did wrong. A verdict invites a counter-verdict.", bundle: 'pro' },
+        { q: "Which strategy often follows Your Side, Not the Verdict?", a: "Own Your Part.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Own Your Part",
+      description: "",
+      cards: [
+        { q: "What is Own Your Part?", a: "Naming your specific part in what happened.", bundle: 'free' },
+        { q: "How does Own Your Part sound?", a: "\"My part was raising my voice when you were already stressed.\"", bundle: 'free' },
+        { q: "When is Own Your Part the right one?", a: "When the talk is calm enough, and especially when they come to you.", bundle: 'free' },
+        { q: "What does Own Your Part protect?", a: "Trust that you've actually looked at yourself.", bundle: 'free' },
+        { q: "What are the two parts of Own Your Part?", a: "Name what you did, and say it plainly — no \"but\".", bundle: 'free' },
+        { q: "When does Own Your Part go wrong?", a: "When it's general — \"sorry if I upset you\" — or followed by \"but\".", bundle: 'pro' },
+        { q: "What is Own Your Part better than, and why?", a: "Waiting for them to own theirs. Owning yours first often makes it easier for them.", bundle: 'pro' },
+        { q: "Which strategy often follows Own Your Part?", a: "Agree on Next Time.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Agree on Next Time",
+      description: "",
+      cards: [
+        { q: "What is Agree on Next Time?", a: "Ending with one concrete thing that will be different, and a word about the relationship.", bundle: 'free' },
+        { q: "How does Agree on Next Time sound?", a: "\"Next time one of us gets sharp in the car, we say 'pause'. I'm glad we talked.\"", bundle: 'free' },
+        { q: "When is Agree on Next Time the right one?", a: "When both sides have been heard and the talk is nearly done.", bundle: 'free' },
+        { q: "What does Agree on Next Time protect?", a: "The next time — and the feeling that the talk was for the two of you.", bundle: 'free' },
+        { q: "What are the two parts of Agree on Next Time?", a: "One concrete change, and a word about the two of you.", bundle: 'free' },
+        { q: "When does Agree on Next Time go wrong?", a: "When the promise is too big to keep.", bundle: 'pro' },
+        { q: "What is Agree on Next Time better than, and why?", a: "Ending with \"okay, we're fine\". Without a change, the same thing tends to happen again.", bundle: 'pro' },
+        { q: "What does a good talk end with?", a: "One thing different, and both of you closer.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Pause and Come Back",
+      description: "",
+      cards: [
+        { q: "What is Pause and Come Back?", a: "Stopping the talk when it crosses a line, and saying when you'll come back to it.", bundle: 'free' },
+        { q: "How does Pause and Come Back sound?", a: "\"We're back in it, and I'm not being fair either. Ten minutes, then let's try again?\"", bundle: 'free' },
+        { q: "When is Pause and Come Back the right one?", a: "When feelings are too strong, there's a personal attack, or you're about to do the same.", bundle: 'free' },
+        { q: "What does Pause and Come Back protect?", a: "The talk you both still want to have.", bundle: 'free' },
+        { q: "What are the three parts of Pause and Come Back?", a: "Name it, stop, and say when you'll come back.", bundle: 'free' },
+        { q: "When does Pause and Come Back go wrong?", a: "When there's no time to come back — then it's walking away.", bundle: 'pro' },
+        { q: "What is Pause and Come Back better than, and why?", a: "Pushing through. Past a certain point, every sentence makes it worse.", bundle: 'pro' },
+        { q: "What do you do when you come back after a pause?", a: "Start again with their side, not where it broke.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Listen or Speak?** — whether they have been heard yet\n• **Open, Pause or Close** — where the talk itself is\n• **All Eight** — no cue given, which is the real thing\n\nOne question decides most of it: have they been heard yet?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Listen or Speak?, Open Pause or Close, and All Eight.", bundle: 'pro' },
+        { q: "What is the question that decides Listen or Speak?", a: "Have they been heard yet — and would they say so?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Listen or Speak?", a: "Speaking too early.", bundle: 'pro' },
+        { q: "What is the question that decides Open, Pause or Close?", a: "Where is the talk — not started, out of control, or nearly done?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Open, Pause or Close?", a: "Ending without agreeing anything, or pausing without saying when you'll come back.", bundle: 'pro' },
+        { q: "Which strategies run the talk itself?", a: "Ask for the Talk, Pause and Come Back, and Agree on Next Time.", bundle: 'pro' },
+        { q: "What two questions help in All Eight?", a: "Have they been heard yet? And can this talk still be had right now?", bundle: 'pro' },
+        { q: "What is the aim in All Eight?", a: "Not to settle who was right, but to come out of it closer.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Full Repair** — the whole talk, from asking to agreeing\n2. **When They Come to You** — Their Side First → Get Their Version Right → Own Your Part → Your Side\n3. **Pause and Try Again** — Your Side → Pause and Come Back → Their Side First → Own Your Part\n\nThe order is the point: listen before you speak.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Full Repair, When They Come to You, and Pause and Try Again.", bundle: 'pro' },
+        { q: "How many steps does The Full Repair have?", a: "Seven — every strategy except Pause and Come Back.", bundle: 'pro' },
+        { q: "What comes before your side in When They Come to You?", a: "Own Your Part.", bundle: 'pro' },
+        { q: "Why does your part come first when they come to you?", a: "Your side said first sounds like a defence.", bundle: 'pro' },
+        { q: "Where does the talk start again after a pause?", a: "With their side, not where it broke.", bundle: 'pro' },
+        { q: "What is the usual mistake with a pause?", a: "Not saying when you'll come back, or coming back to win the last point.", bundle: 'pro' },
+        { q: "What is the usual wrong order in The Full Repair?", a: "Your side first, theirs only if they insist.", bundle: 'pro' },
+        { q: "What does a good talk end with?", a: "One concrete change, and a word about the two of you.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **It's Fine, Forget It** — they don't want to talk\n• **You Get Defensive** — you want to correct them\n• **It Was Mostly Them** — and you still want to repair it\n• **They Apologise Too Fast** — sorry as a way out of the talk\n• **It Crosses a Line** — too far for talking to fix\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "It's Fine Forget It, You Get Defensive, It Was Mostly Them, They Apologise Too Fast, and It Crosses a Line.", bundle: 'pro' },
+        { q: "What should you avoid when they say \"forget it\"?", a: "Insisting.", bundle: 'pro' },
+        { q: "What is the main strategy when you get defensive?", a: "Get Their Version Right.", bundle: 'pro' },
+        { q: "What should you avoid when it was mostly them?", a: "Making the talk about getting them to admit it.", bundle: 'pro' },
+        { q: "What do you do when they apologise too fast?", a: "Thank them, and still ask how it was for them.", bundle: 'pro' },
+        { q: "What is the main strategy when it crosses a line?", a: "Pause and Come Back.", bundle: 'pro' },
+        { q: "What should you avoid when you pause?", a: "Walking away without saying when you'll come back.", bundle: 'pro' },
+        { q: "Is owning a small part the same as taking all the blame?", a: "No. It's being exact about yours.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **The Repair Mindset** — we need to settle who was right\n• **Bringing It Up** — talking will make it worse\n• **They Should Go First** — I'm not listening until they've heard me\n• **Listening Means Agreeing** — saying it back means admitting it\n• **Being Reasonable** — they overreacted\n• **Who Was Right** — my side has to prove I was right\n• **My Part Was Small** — mine was nothing next to theirs\n• **One Talk Fixes It** — if we've talked, it's done\n• **Stopping Means Losing** — a pause is running away\n\nMost of them turn the repair back into a trial.",
+      cards: [
+        { q: "What are the nine mindsets in this pack?", a: "The Repair Mindset, Bringing It Up, They Should Go First, Listening Means Agreeing, Being Reasonable, Who Was Right, My Part Was Small, One Talk Fixes It, and Stopping Means Losing.", bundle: 'pro' },
+        { q: "What is the talk, if not a trial?", a: "A repair.", bundle: 'pro' },
+        { q: "Is saying their version back the same as agreeing with it?", a: "No. It's saying how it felt for them.", bundle: 'pro' },
+        { q: "What is your side, if not a verdict?", a: "A description of your experience.", bundle: 'pro' },
+        { q: "What is true about one talk fixing it?", a: "A talk does a lot, but without one concrete change, it tends to happen again.", bundle: 'pro' },
+        { q: "What is the difference between a pause and running away?", a: "A time to come back.", bundle: 'pro' },
+        { q: "Does a small part still count?", a: "Yes. Small or not, it's yours to name.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They turn the repair back into a trial.", bundle: 'pro' },
+      ]
+    },
+  ],
+  twosidesofthestory: [
+    {
+      name: "Core Idea",
+      description: "Seven ways to understand what happened between you:\n\n1. Ask What They Saw\n2. Their Story Makes Sense Too\n3. Intent and Impact\n4. Contribution, Not Blame\n5. The Third Story\n6. Let Both Memories Stand\n7. What It Says About Me\n\nTheir view, your view, and the view of the two of you.",
+      cards: [
+        { q: "What are the seven strategies in this pack?", a: "Ask What They Saw, Their Story Makes Sense Too, Intent and Impact, Contribution Not Blame, The Third Story, Let Both Memories Stand, What It Says About Me.", bundle: 'free' },
+        { q: "What is the main idea of the pack?", a: "There is rarely one true version. There are two sides, and a story that holds both.", bundle: 'free' },
+        { q: "Which strategies look from their side?", a: "Ask What They Saw and Their Story Makes Sense Too.", bundle: 'free' },
+        { q: "Which strategies look from your side?", a: "Intent and Impact and What It Says About Me.", bundle: 'free' },
+        { q: "Which strategies look at the two of you?", a: "Contribution Not Blame, The Third Story, and Let Both Memories Stand.", bundle: 'free' },
+        { q: "How is this pack different from After the Argument?", a: "After the Argument is a talk, step by step. This one is about understanding what happened.", bundle: 'pro' },
+        { q: "Why do two people remember the same thing differently?", a: "Memory isn't a recording, and they had different information.", bundle: 'pro' },
+        { q: "Does this pack work when you were the one who got hurt?", a: "Yes. Every strategy works in both directions.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What They Saw",
+      description: "",
+      cards: [
+        { q: "What is Ask What They Saw?", a: "Asking what it looked like from where they were — what they saw, heard and knew.", bundle: 'free' },
+        { q: "How does Ask What They Saw sound?", a: "\"What did it look like from where you were?\"", bundle: 'free' },
+        { q: "When is Ask What They Saw the right one?", a: "When their reaction doesn't make sense to you yet.", bundle: 'free' },
+        { q: "What does Ask What They Saw protect?", a: "The missing piece — often the one that explains everything.", bundle: 'free' },
+        { q: "What are the two parts of Ask What They Saw?", a: "Ask about their view, and listen for what you didn't know.", bundle: 'free' },
+        { q: "When does Ask What They Saw go wrong?", a: "When it's asked as a trap, to catch them out.", bundle: 'pro' },
+        { q: "What is Ask What They Saw better than, and why?", a: "Deciding what happened alone. You were there, but you didn't see everything.", bundle: 'pro' },
+        { q: "Which strategy often follows Ask What They Saw?", a: "Their Story Makes Sense Too.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Their Story Makes Sense Too",
+      description: "",
+      cards: [
+        { q: "What is Their Story Makes Sense Too?", a: "Finding and saying the version in which their reading is reasonable.", bundle: 'free' },
+        { q: "How does Their Story Makes Sense Too sound?", a: "\"If you'd only seen the message and not heard the call, I'd have thought the same.\"", bundle: 'free' },
+        { q: "When is Their Story Makes Sense Too the right one?", a: "When you're sure you're right and their version seems unreasonable.", bundle: 'free' },
+        { q: "What does Their Story Makes Sense Too protect?", a: "Their need to prove their version.", bundle: 'free' },
+        { q: "What are the two parts of Their Story Makes Sense Too?", a: "Name what they knew, and say their reading fits.", bundle: 'free' },
+        { q: "When does Their Story Makes Sense Too go wrong?", a: "When it turns into giving up your own version.", bundle: 'pro' },
+        { q: "What is Their Story Makes Sense Too better than, and why?", a: "Telling them they're wrong. Two stories can both make sense.", bundle: 'pro' },
+        { q: "Which strategy often follows Their Story Makes Sense Too?", a: "Intent and Impact.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Intent and Impact",
+      description: "",
+      cards: [
+        { q: "What is Intent and Impact?", a: "Separating what was meant from how it landed — in both directions.", bundle: 'free' },
+        { q: "How does Intent and Impact sound?", a: "\"I meant it as a joke. I can see it landed as a dig.\"", bundle: 'free' },
+        { q: "When is Intent and Impact the right one?", a: "When one person argues about intent and the other about impact.", bundle: 'free' },
+        { q: "What does Intent and Impact protect?", a: "Both truths: what was meant, and what it did.", bundle: 'free' },
+        { q: "What are the two directions of Intent and Impact?", a: "When you caused it, and when it happened to you.", bundle: 'free' },
+        { q: "When does Intent and Impact go wrong?", a: "When it's only \"I didn't mean it\", with nothing about the impact.", bundle: 'pro' },
+        { q: "What is Intent and Impact better than, and why?", a: "Defending your intent. Good intent doesn't cancel the impact.", bundle: 'pro' },
+        { q: "What does a painful impact not prove?", a: "Bad intent.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Contribution, Not Blame",
+      description: "",
+      cards: [
+        { q: "What is Contribution, Not Blame?", a: "Mapping what each of you did that led there, instead of asking whose fault it was.", bundle: 'free' },
+        { q: "How does Contribution, Not Blame sound?", a: "\"I didn't check, and you didn't ask. Both of those got us here.\"", bundle: 'free' },
+        { q: "When is Contribution, Not Blame the right one?", a: "When the talk has become a search for the guilty person.", bundle: 'free' },
+        { q: "What does Contribution, Not Blame protect?", a: "Honesty — owning a part without taking all of it.", bundle: 'free' },
+        { q: "What are the two parts of Contribution, Not Blame?", a: "Name your part, and name theirs without blame.", bundle: 'free' },
+        { q: "When does Contribution, Not Blame go wrong?", a: "When it's used to split the blame fifty-fifty, or to list only their part.", bundle: 'pro' },
+        { q: "What is Contribution, Not Blame better than, and why?", a: "Blame. Blame asks who; contribution asks how, and that you can change.", bundle: 'pro' },
+        { q: "Which part do you name first?", a: "Your own.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Third Story",
+      description: "",
+      cards: [
+        { q: "What is The Third Story?", a: "Describing what happened the way a neutral person, fond of you both, would.", bundle: 'free' },
+        { q: "How does The Third Story sound?", a: "\"We both wanted the weekend to go well, and had different pictures of what that meant.\"", bundle: 'free' },
+        { q: "When is The Third Story the right one?", a: "When both stories have been told and you need a version you can both agree with.", bundle: 'free' },
+        { q: "What does The Third Story protect?", a: "Common ground.", bundle: 'free' },
+        { q: "What are the two parts of The Third Story?", a: "Describe both sides without judging, and name the difference.", bundle: 'free' },
+        { q: "When does The Third Story go wrong?", a: "When it quietly takes your side.", bundle: 'pro' },
+        { q: "What is The Third Story better than, and why?", a: "Arguing whose story is true. The third one holds both.", bundle: 'pro' },
+        { q: "Is The Third Story cold?", a: "No. It's the version a friend of you both would tell.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Let Both Memories Stand",
+      description: "",
+      cards: [
+        { q: "What is Let Both Memories Stand?", a: "Letting both memories stand when you remember it differently, and moving on to what it meant.", bundle: 'free' },
+        { q: "How does Let Both Memories Stand sound?", a: "\"We remember it differently, and I don't think we'll settle that. What I want to understand is how it felt.\"", bundle: 'free' },
+        { q: "When is Let Both Memories Stand the right one?", a: "When you're arguing about who said what.", bundle: 'free' },
+        { q: "What does Let Both Memories Stand protect?", a: "The part of the talk that can go somewhere.", bundle: 'free' },
+        { q: "What are the two parts of Let Both Memories Stand?", a: "Name the difference and let it be, then move on to what it meant.", bundle: 'free' },
+        { q: "When does Let Both Memories Stand go wrong?", a: "When it's used to dismiss their memory as wrong.", bundle: 'pro' },
+        { q: "What is Let Both Memories Stand better than, and why?", a: "Proving your memory right. It rarely changes either memory.", bundle: 'pro' },
+        { q: "Do you need to agree on what happened?", a: "No. You need to agree on what to do next.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What It Says About Me",
+      description: "",
+      cards: [
+        { q: "What is What It Says About Me?", a: "Naming the fear about who you are that the conflict touched, and testing it.", bundle: 'free' },
+        { q: "How does What It Says About Me sound?", a: "\"Part of why this stings is that I'm scared it means I'm a bad friend. I don't think it does.\"", bundle: 'free' },
+        { q: "When is What It Says About Me the right one?", a: "When a criticism lands on who you are, not just what you did.", bundle: 'free' },
+        { q: "What does What It Says About Me protect?", a: "Your balance — so you neither defend too hard nor collapse.", bundle: 'free' },
+        { q: "What are the two parts of What It Says About Me?", a: "Name the fear, and test it.", bundle: 'free' },
+        { q: "When does What It Says About Me go wrong?", a: "When it turns into \"you're right, I'm awful\".", bundle: 'pro' },
+        { q: "What is What It Says About Me better than, and why?", a: "Defending yourself straight away, which proves to you the criticism hit.", bundle: 'pro' },
+        { q: "What is one mistake, if not who you are?", a: "Something you did.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Theirs, Yours or Ours?** — whose view is missing\n• **What Happened or What It Meant?** — the facts, or what they did to you\n• **All Seven** — no cue given, which is the real thing\n\nOne question decides most of it: what is missing from the story right now?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Theirs Yours or Ours?, What Happened or What It Meant?, and All Seven.", bundle: 'pro' },
+        { q: "What is the question that decides Theirs, Yours or Ours?", a: "Whose view is missing from the talk right now?", bundle: 'pro' },
+        { q: "Which strategies look at \"ours\"?", a: "Contribution Not Blame, The Third Story, and Let Both Memories Stand.", bundle: 'pro' },
+        { q: "What is the question that decides What Happened or What It Meant?", a: "Are you stuck on the facts, or on what the facts did to you?", bundle: 'pro' },
+        { q: "Which strategies are about what it meant?", a: "Intent and Impact, and What It Says About Me.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in What Happened or What It Meant?", a: "Arguing about the facts when the problem is the meaning — or the other way round.", bundle: 'pro' },
+        { q: "What question helps in All Seven?", a: "What is missing from the story — their view, mine, or the view from outside?", bundle: 'pro' },
+        { q: "What is the aim in All Seven?", a: "A story that holds both sides.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Untangle It** — Ask What They Saw → Their Story Makes Sense Too → Intent and Impact → Contribution, Not Blame\n2. **Both Memories** — Let Both Memories Stand → The Third Story → Contribution, Not Blame\n3. **When It Hurts Who You Are** — What It Says About Me → Intent and Impact → Their Story Makes Sense Too\n\nEach one starts where you are stuck.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Untangle It, Both Memories, and When It Hurts Who You Are.", bundle: 'pro' },
+        { q: "What is the first step of Untangle It?", a: "Ask What They Saw.", bundle: 'pro' },
+        { q: "Why does Untangle It start with their view?", a: "They can't hear your intent until their reading has been understood.", bundle: 'pro' },
+        { q: "What is the first step of Both Memories?", a: "Let Both Memories Stand — stop arguing about the record.", bundle: 'pro' },
+        { q: "What does The Third Story do in Both Memories?", a: "Gives you a version you can both agree with.", bundle: 'pro' },
+        { q: "What is the first step of When It Hurts Who You Are?", a: "What It Says About Me.", bundle: 'pro' },
+        { q: "Why does the fear come first when it hurts who you are?", a: "You can't see their side until you've dealt with the fear.", bundle: 'pro' },
+        { q: "What do all three sequences end with?", a: "Something shared — a contribution, or their story making sense.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **Two Different Memories** — you remember it differently\n• **\"You Meant to Hurt Me\"** — they're sure it was deliberate\n• **\"It's All Your Fault\"** — a search for the guilty person\n• **It Hits Who You Are** — the criticism lands on your identity\n• **You're Sure You're Right** — nothing to discuss\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Two Different Memories, \"You Meant to Hurt Me\", \"It's All Your Fault\", It Hits Who You Are, and You're Sure You're Right.", bundle: 'pro' },
+        { q: "What should you avoid when you remember it differently?", a: "Arguing about the record.", bundle: 'pro' },
+        { q: "What is the main strategy when they think you meant to hurt them?", a: "Intent and Impact.", bundle: 'pro' },
+        { q: "What should you avoid when they say it was deliberate?", a: "\"I didn't mean it\", with nothing after it.", bundle: 'pro' },
+        { q: "What is the main strategy when it's all your fault?", a: "Contribution, Not Blame.", bundle: 'pro' },
+        { q: "What should you avoid when blamed?", a: "Answering blame with blame.", bundle: 'pro' },
+        { q: "What is the main strategy when it hits who you are?", a: "What It Says About Me.", bundle: 'pro' },
+        { q: "What is the main strategy when you're sure you're right?", a: "Their Story Makes Sense Too.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **The Two-Stories Mindset** — there is one true version, and it's mine\n• **I Know What I Saw** — I was there, I don't need to ask\n• **They're Just Being Difficult** — nobody could see it their way\n• **If It Hurt, They Meant It** — the hurt proves the intent\n• **Fault** — if I contributed, it's my fault\n• **Neutral Is Cold** — a neutral story means I don't care\n• **The Record** — we must agree on what happened\n• **If They Say It, It's True** — their criticism is who I am\n\nMost of them make one version the only one.",
+      cards: [
+        { q: "What are the eight mindsets in this pack?", a: "The Two-Stories Mindset; I Know What I Saw; They're Just Being Difficult; If It Hurt, They Meant It; Fault; Neutral Is Cold; The Record; and If They Say It, It's True.", bundle: 'pro' },
+        { q: "What is true instead of \"there is one true version\"?", a: "Both stories can be true from the inside.", bundle: 'pro' },
+        { q: "Is being there the same as seeing everything?", a: "No.", bundle: 'pro' },
+        { q: "Does a painful impact prove bad intent?", a: "No. Most hurt in close relationships isn't intended.", bundle: 'pro' },
+        { q: "Is contributing the same as being to blame?", a: "No. Almost every conflict has two contributions.", bundle: 'pro' },
+        { q: "Do you need to agree on what happened?", a: "No — only on what to do next.", bundle: 'pro' },
+        { q: "What is a criticism, if not a verdict on who you are?", a: "Information about what you did and how it landed.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They make one version the only one.", bundle: 'pro' },
+      ]
+    },
+  ],
 };
