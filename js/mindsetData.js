@@ -11610,4 +11610,134 @@ const mindsetCollections = {
       ]
     },
   ],
+  describeactions: [
+    {
+      name: "The Missing Verb",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I don't know the word, I can't say it.\" The pack-wide belief that stops the conversation when a verb is missing.\n\nWhat is true instead: describing an action is a normal part of speaking, in every language, for everyone. The body, the movement, the reason, a scene — one of them almost always gets there.\n\nIt feels reasonable because the word feels like the only correct answer, and anything else feels like a detour.\n\nWhat it costs is the conversation. Stopping to search for the word leaves everyone waiting.\n\nMindset: describing around a missing word is speaking, not failing.",
+      inputs: [
+        { q: "If I don't know the word, I can't say it.", a: "\"I can say what the body does, and they'll find the word.\"", bundle: 'pro' },
+        { q: "Everyone will notice I don't know the word.", a: "\"They'll notice I'm explaining clearly.\"", bundle: 'pro' },
+        { q: "I should stop and think until it comes.", a: "\"A description now is better than a word in a minute.\"", bundle: 'pro' },
+        { q: "Describing it takes too long.", a: "\"One good angle takes one sentence.\"", bundle: 'pro' },
+        { q: "Native speakers always know the word.", a: "\"Native speakers describe around words all the time.\"", bundle: 'pro' },
+        { q: "If I describe it, I'll sound like a beginner.", a: "\"I'll sound like someone who can always get the point across.\"", bundle: 'pro' },
+        { q: "They'll get bored waiting.", a: "\"They'll enjoy guessing. It's a small game.\"", bundle: 'pro' },
+        { q: "I'll just use a different sentence without that action.", a: "\"Then they won't know what happened. Describe it instead.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sounding Childish",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Talking about legs and arms sounds childish.\" The belief that stops What the Body Does.\n\nWhat is true instead: the simplest words are the clearest. \"You bend your knees and push up\" says jump better than a long, clever sentence.\n\nIt feels reasonable because simple words feel like the language of children, and you want to sound capable.\n\nWhat it costs is clarity. The fancy description often misses, and the simple one lands.\n\nMindset: the simplest words — hands, legs, eyes — are the ones that get you there.",
+      inputs: [
+        { q: "Talking about legs and arms sounds childish.", a: "\"It sounds clear. That's what matters.\"", bundle: 'pro' },
+        { q: "I should use better words than 'hands' and 'feet'.", a: "\"Hands and feet are the words everyone understands.\"", bundle: 'pro' },
+        { q: "Describing my body is embarrassing.", a: "\"Describing a movement is just describing a movement.\"", bundle: 'pro' },
+        { q: "A clever sentence is better.", a: "\"A clear sentence is better.\"", bundle: 'pro' },
+        { q: "Adults don't talk like that.", a: "\"Adults do, when they can't find a word.\"", bundle: 'pro' },
+        { q: "They'll laugh at me.", a: "\"They'll more likely guess the word.\"", bundle: 'pro' },
+        { q: "I need a technical word for the movement.", a: "\"I need the simple one. That's what gets me there.\"", bundle: 'pro' },
+        { q: "Simple words make me sound less fluent.", a: "\"Simple and clear sounds fluent.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Too Simple",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Fast, slow, up, down — that's too basic to help.\" The belief that skips How It Moves.\n\nWhat is true instead: those small words are exactly what separates most near actions. Walk and run, push and pull, shout and whisper — the difference is speed, direction or force.\n\nIt feels reasonable because the words are so ordinary that they don't feel like information.\n\nWhat it costs is the difference. Without speed or direction, the listener lands on the neighbour.\n\nMindset: if two actions use the same body, the difference is in how they move.",
+      inputs: [
+        { q: "Fast, slow, up, down — that's too basic to help.", a: "\"Those are the words that tell walk from run.\"", bundle: 'pro' },
+        { q: "They'll know it's fast without me saying it.", a: "\"They won't, unless I say it.\"", bundle: 'pro' },
+        { q: "Direction doesn't matter much.", a: "\"It's the only thing that separates push from pull.\"", bundle: 'pro' },
+        { q: "I should describe the action, not the speed.", a: "\"The speed is part of the action.\"", bundle: 'pro' },
+        { q: "Saying 'quickly' isn't a real description.", a: "\"It's half of one.\"", bundle: 'pro' },
+        { q: "I need more interesting words.", a: "\"I need clearer ones.\"", bundle: 'pro' },
+        { q: "They'll think I'm stating the obvious.", a: "\"The obvious is what helps them guess.\"", bundle: 'pro' },
+        { q: "Speed and direction are for physics, not talking.", a: "\"They're for anyone who wants to be understood.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Reason Is Extra",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Why people do it isn't part of the action.\" The belief that skips Why People Do It.\n\nWhat is true instead: for many actions, the reason is the action. Apologising, warning, convincing — take away the reason and nothing is left to describe.\n\nIt feels reasonable because describing seems to mean describing what you can see.\n\nWhat it costs is every action you can't see.\n\nMindset: if you can't see the action, ask why people do it.",
+      inputs: [
+        { q: "Why people do it isn't part of the action.", a: "\"For a lot of actions, the reason is the action.\"", bundle: 'pro' },
+        { q: "I should describe what it looks like.", a: "\"Some actions don't look like anything.\"", bundle: 'pro' },
+        { q: "The reason is too personal.", a: "\"The usual reason is enough — why people in general do it.\"", bundle: 'pro' },
+        { q: "Talking about reasons is explaining, not describing.", a: "\"Here, the reason is a clue to the word.\"", bundle: 'pro' },
+        { q: "They'll think I'm judging the action.", a: "\"I'm giving a reason, not an opinion.\"", bundle: 'pro' },
+        { q: "Reasons are too complicated.", a: "\"'You do it to say sorry' is one line.\"", bundle: 'pro' },
+        { q: "The reason is obvious.", a: "\"Then it'll get them there quickly.\"", bundle: 'pro' },
+        { q: "I'll describe the body instead.", a: "\"For 'apologise', the body says nothing.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Just a Story",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Saying where it happens is just a story, not a description.\" The belief that skips When It Happens.\n\nWhat is true instead: a familiar moment is one of the fastest descriptions there is. \"What people do at airports\" brings a whole picture with it.\n\nIt feels reasonable because a situation seems to be about something else — the airport, not the action.\n\nWhat it costs is the shortcut. One familiar place can do the work of three sentences.\n\nMindset: the more ordinary the situation, the faster they'll see it.",
+      inputs: [
+        { q: "Saying where it happens is just a story.", a: "\"It's a shortcut to a picture they already have.\"", bundle: 'pro' },
+        { q: "The situation isn't the action.", a: "\"But it's where they'll see the action.\"", bundle: 'pro' },
+        { q: "They might not have been there.", a: "\"Then I'll pick a more ordinary place.\"", bundle: 'pro' },
+        { q: "It's too indirect.", a: "\"Indirect and quick beats direct and slow.\"", bundle: 'pro' },
+        { q: "I should stick to the action itself.", a: "\"Actions live in situations. Naming one helps.\"", bundle: 'pro' },
+        { q: "Giving a place is lazy.", a: "\"It's efficient.\"", bundle: 'pro' },
+        { q: "They'll guess the situation, not the action.", a: "\"Then I'll say 'what do people do there?'\"", bundle: 'pro' },
+        { q: "A good description doesn't need examples.", a: "\"A good description uses whatever lands.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Only the Action",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"What happens afterwards isn't part of the action.\" The belief that skips What It Changes.\n\nWhat is true instead: many actions are defined by their result. Drop ends on the floor, open ends with a door that isn't closed, rescue ends with someone safe.\n\nIt feels reasonable because the result seems to come after the action, not inside it.\n\nWhat it costs is the clearest clue for actions done to things.\n\nMindset: before and after, side by side, often says the word for you.",
+      inputs: [
+        { q: "What happens afterwards isn't part of the action.", a: "\"For a lot of actions, the result is what makes them different.\"", bundle: 'pro' },
+        { q: "I should describe the movement, not the result.", a: "\"Push and pull move the same — the result is the difference.\"", bundle: 'pro' },
+        { q: "The result is obvious.", a: "\"Then saying it gets them there.\"", bundle: 'pro' },
+        { q: "Before and after sounds like a story.", a: "\"It's two short sentences, and they're very clear.\"", bundle: 'pro' },
+        { q: "Results are for science, not conversation.", a: "\"'It ended up on the floor' is ordinary conversation.\"", bundle: 'pro' },
+        { q: "I'll focus on how it's done.", a: "\"And add where things end up.\"", bundle: 'pro' },
+        { q: "They need to know the action, not what it does.", a: "\"What it does often is the action.\"", bundle: 'pro' },
+        { q: "The result might be different every time.", a: "\"I'll give the usual one.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Close Enough",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I compare it to another action, they'll just say that one.\" The belief that avoids What It Resembles.\n\nWhat is true instead: a comparison only fails when you stop at the similarity. Name the familiar action, then the one difference — and they move from the neighbour to the word you mean.\n\nIt feels reasonable because you have seen people land on the neighbour.\n\nWhat it costs is the fastest route to the word.\n\nMindset: borrow a picture they already have, and change one thing.",
+      inputs: [
+        { q: "If I compare it, they'll just say the other word.", a: "\"Not if I say the difference straight after.\"", bundle: 'pro' },
+        { q: "Comparing is cheating.", a: "\"It's borrowing a picture they already have.\"", bundle: 'pro' },
+        { q: "I should describe it on its own.", a: "\"One familiar action and one change is quicker.\"", bundle: 'pro' },
+        { q: "The comparison isn't exact.", a: "\"It doesn't need to be. The change does the rest.\"", bundle: 'pro' },
+        { q: "They'll get confused between the two.", a: "\"The one difference is what clears it up.\"", bundle: 'pro' },
+        { q: "I need a perfect comparison.", a: "\"I need one they know.\"", bundle: 'pro' },
+        { q: "Two comparisons will be clearer.", a: "\"Two changes start taking the picture apart. One is enough.\"", bundle: 'pro' },
+        { q: "Comparing makes me sound unsure.", a: "\"It makes me sound clear.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Too Long",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Making up a scene takes too long.\" The belief that skips Paint a Scene.\n\nWhat is true instead: a good scene is one or two sentences, and it often gets there faster than three separate details, because it gives the whole picture at once.\n\nIt feels reasonable because \"story\" sounds long.\n\nWhat it costs is the way in for actions that are hard to break into parts.\n\nMindset: when the parts won't come, give them the whole picture.",
+      inputs: [
+        { q: "Making up a scene takes too long.", a: "\"One sentence starting with 'imagine' is enough.\"", bundle: 'pro' },
+        { q: "I'm not creative enough.", a: "\"An ordinary scene works best.\"", bundle: 'pro' },
+        { q: "A scene is too much detail.", a: "\"It's one picture, not a list.\"", bundle: 'pro' },
+        { q: "They'll get lost in the story.", a: "\"Not if the action is in the middle of it.\"", bundle: 'pro' },
+        { q: "Scenes are for children's games.", a: "\"Scenes are how everyone explains things.\"", bundle: 'pro' },
+        { q: "I should stick to facts.", a: "\"A scene is the fastest way to show the facts together.\"", bundle: 'pro' },
+        { q: "I can't think of a good situation.", a: "\"A situation they've been in is good enough.\"", bundle: 'pro' },
+        { q: "A scene is a last resort.", a: "\"For some actions, it's the first and best choice.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };

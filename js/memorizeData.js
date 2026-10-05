@@ -20510,4 +20510,174 @@ const memorizeCollections = {
       ]
     },
   ],
+  describeactions: [
+    {
+      name: "Core Idea",
+      description: "Seven ways to describe an action when you can't find the verb:\n\n1. What the Body Does\n2. How It Moves\n3. Why People Do It\n4. When It Happens\n5. What It Changes\n6. What It Resembles\n7. Paint a Scene\n\nActions you can see, and actions you can't.",
+      cards: [
+        { q: "What are the seven strategies in this pack?", a: "What the Body Does, How It Moves, Why People Do It, When It Happens, What It Changes, What It Resembles, Paint a Scene.", bundle: 'free' },
+        { q: "What is the goal of describing an action?", a: "That the listener finds the word — without you saying it.", bundle: 'free' },
+        { q: "Which strategies work best for actions you can see?", a: "What the Body Does, How It Moves, and What It Changes.", bundle: 'free' },
+        { q: "Which strategies work for actions you can't see?", a: "Why People Do It, When It Happens, What It Resembles, and Paint a Scene.", bundle: 'free' },
+        { q: "How many angles does a good description usually use?", a: "Two or three — chosen, not all seven.", bundle: 'free' },
+        { q: "How is this pack different from Describe Things?", a: "Describe Things describes objects. This one describes what people do.", bundle: 'pro' },
+        { q: "What does a wrong guess tell you?", a: "Which angle is missing.", bundle: 'pro' },
+        { q: "What do you do when they land on a near word?", a: "Describe the difference, not the action.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What the Body Does",
+      description: "",
+      cards: [
+        { q: "What is What the Body Does?", a: "Describing which parts of the body are used, and what they do.", bundle: 'free' },
+        { q: "How does What the Body Does sound?", a: "\"She put her mouth right next to his ear and spoke with hardly any voice at all.\"", bundle: 'free' },
+        { q: "When is What the Body Does the right one?", a: "For a physical action you could film.", bundle: 'free' },
+        { q: "Why does it work?", a: "Everyone has a body to imagine the movement with.", bundle: 'free' },
+        { q: "What are the three ways to describe the body?", a: "The part that does the work, the order of the movements, and the position.", bundle: 'free' },
+        { q: "When does What the Body Does go wrong?", a: "For actions you can't see — \"you sit still\" fits a hundred of them.", bundle: 'pro' },
+        { q: "What is What the Body Does better than, and why?", a: "\"You move your body\". The exact part is what narrows it down.", bundle: 'pro' },
+        { q: "Which strategy often follows What the Body Does?", a: "How It Moves — to add speed or direction.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "How It Moves",
+      description: "",
+      cards: [
+        { q: "What is How It Moves?", a: "Describing the speed, direction and force of the action.", bundle: 'free' },
+        { q: "How does How It Moves sound?", a: "\"Slowly and quietly, keeping low, so nobody would notice it.\"", bundle: 'free' },
+        { q: "When is How It Moves the right one?", a: "When two actions use the same body and differ in how they move.", bundle: 'free' },
+        { q: "What three things does it give?", a: "Speed, direction, and force or manner.", bundle: 'free' },
+        { q: "Which pairs does How It Moves separate?", a: "Walk and run, push and pull, shout and whisper.", bundle: 'free' },
+        { q: "When does How It Moves go wrong?", a: "When it's used alone for an action where the body is the clue.", bundle: 'pro' },
+        { q: "Give five useful words for How It Moves.", a: "Any five of: fast, slow, up, down, forward, towards, away, in a circle, gently, with force.", bundle: 'pro' },
+        { q: "Which strategy often follows How It Moves?", a: "What It Changes, or What It Resembles.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Why People Do It",
+      description: "",
+      cards: [
+        { q: "What is Why People Do It?", a: "Saying why people do the action — what they want to happen.", bundle: 'free' },
+        { q: "How does Why People Do It sound?", a: "\"You do it when you want to tell one person something without anyone else hearing.\"", bundle: 'free' },
+        { q: "When is Why People Do It the right one?", a: "For actions you can't see, and when many actions look alike.", bundle: 'free' },
+        { q: "What are the three kinds of reason?", a: "What you want to happen, what you want to avoid, and what you want to show.", bundle: 'free' },
+        { q: "Is the reason a judgement?", a: "No — it's a clue to the word.", bundle: 'free' },
+        { q: "When does Why People Do It go wrong?", a: "When the reason fits many actions — \"you do it to have fun\".", bundle: 'pro' },
+        { q: "Which actions is it the only way into?", a: "Actions like ignore, pretend and convince.", bundle: 'pro' },
+        { q: "Which strategy often follows Why People Do It?", a: "When It Happens.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "When It Happens",
+      description: "",
+      cards: [
+        { q: "What is When It Happens?", a: "Naming a situation where people usually do the action.", bundle: 'free' },
+        { q: "How does When It Happens sound?", a: "\"It's what people do in the cinema, or in class when the teacher is talking.\"", bundle: 'free' },
+        { q: "When is When It Happens the right one?", a: "When a familiar moment brings the action with it.", bundle: 'free' },
+        { q: "What are the three kinds of moment?", a: "A place, a time, and a feeling.", bundle: 'free' },
+        { q: "What kind of situation works best?", a: "An ordinary one the listener has actually been in.", bundle: 'free' },
+        { q: "When does When It Happens go wrong?", a: "When the place has many actions in it, and you don't say which one.", bundle: 'pro' },
+        { q: "What is When It Happens better than, and why?", a: "A long description. One familiar place can do the work of three sentences.", bundle: 'pro' },
+        { q: "Which strategy often follows When It Happens?", a: "Paint a Scene.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What It Changes",
+      description: "",
+      cards: [
+        { q: "What is What It Changes?", a: "Describing what is different after the action.", bundle: 'free' },
+        { q: "How does What It Changes sound?", a: "\"At the start he was locked in. At the end he was free.\"", bundle: 'free' },
+        { q: "When is What It Changes the right one?", a: "For actions done to things, and when the result is what makes the action different.", bundle: 'free' },
+        { q: "What are the three kinds of result?", a: "Where something ends up, how someone feels, and what someone knows or has.", bundle: 'free' },
+        { q: "Which actions is it especially good for?", a: "Push, pull, drop, lift, open, break.", bundle: 'free' },
+        { q: "When does What It Changes go wrong?", a: "When the result could come from many actions.", bundle: 'pro' },
+        { q: "Which pair does What It Changes separate?", a: "Throw and drop — one goes through the air, one goes straight down.", bundle: 'pro' },
+        { q: "What is the shape of What It Changes?", a: "Before and after, side by side.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What It Resembles",
+      description: "",
+      cards: [
+        { q: "What is What It Resembles?", a: "Starting with an action they know, and saying how this one is different.", bundle: 'free' },
+        { q: "How does What It Resembles sound?", a: "\"It's like walking, but slowly and silently, so nobody notices you.\"", bundle: 'free' },
+        { q: "When is What It Resembles the right one?", a: "When the action is a familiar one with one change.", bundle: 'free' },
+        { q: "How many changes should you give?", a: "One. A second starts taking the picture apart.", bundle: 'free' },
+        { q: "What are the three ways to compare?", a: "A familiar action with one change; faster, slower, harder or softer; on purpose or by accident.", bundle: 'free' },
+        { q: "When does What It Resembles go wrong?", a: "When you stop at the similarity, and they say the familiar word.", bundle: 'pro' },
+        { q: "Why does it work so well?", a: "You borrow a picture they already have.", bundle: 'pro' },
+        { q: "Which pack has a strategy with the same name?", a: "Describe Things — it's the same move, used for objects.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Paint a Scene",
+      description: "",
+      cards: [
+        { q: "What is Paint a Scene?", a: "Making up a short scene where the action happens.", bundle: 'free' },
+        { q: "How does Paint a Scene sound?", a: "\"Imagine you come home at two in the morning and get to your room without a sound.\"", bundle: 'free' },
+        { q: "When is Paint a Scene the right one?", a: "When the action is hard to break into parts.", bundle: 'free' },
+        { q: "How long should the scene be?", a: "One or two sentences, with the action in the middle.", bundle: 'free' },
+        { q: "What are the three kinds of scene?", a: "An everyday scene, a scene from a film or story, and a scene with the listener in it.", bundle: 'free' },
+        { q: "When does Paint a Scene go wrong?", a: "When the scene is long and the action gets lost in it.", bundle: 'pro' },
+        { q: "Why does a scene work?", a: "It gives the body, the reason and the moment all at once.", bundle: 'pro' },
+        { q: "What word usually starts a scene?", a: "\"Imagine…\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Actions You Can See** — the body, the movement, or the result\n• **Actions You Can't See** — the reason, a moment, a scene, or a comparison\n• **All Seven** — no cue given, which is the real thing\n\nOne question decides most of it: could you film this action?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Actions You Can See, Actions You Can't See, and All Seven.", bundle: 'pro' },
+        { q: "Which strategies are in Actions You Can See?", a: "What the Body Does, How It Moves, and What It Changes.", bundle: 'pro' },
+        { q: "Which strategies are in Actions You Can't See?", a: "Why People Do It, When It Happens, Paint a Scene, and What It Resembles.", bundle: 'pro' },
+        { q: "What is the question that decides Actions You Can See?", a: "What makes this action different — the body, the movement, or the result?", bundle: 'pro' },
+        { q: "What is the usual wrong choice for push and pull?", a: "Describing the body. The difference is the direction.", bundle: 'pro' },
+        { q: "What is the usual wrong choice for actions you can't see?", a: "Describing the body.", bundle: 'pro' },
+        { q: "What question helps in All Seven?", a: "Could I film this action?", bundle: 'pro' },
+        { q: "How many angles does All Seven train you to use?", a: "Two or three, chosen.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Building It Up** — What the Body Does → How It Moves → What It Resembles\n2. **Why, Then When** — Why People Do It → When It Happens → Paint a Scene\n3. **Close, But Not Quite** — What It Resembles → How It Moves → What It Changes\n\nEach one adds the angle their last guess was missing.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Building It Up, Why Then When, and Close But Not Quite.", bundle: 'pro' },
+        { q: "What is Building It Up for?", a: "A physical action, when one angle isn't enough.", bundle: 'pro' },
+        { q: "What is Why, Then When for?", a: "An action you can't see.", bundle: 'pro' },
+        { q: "What is Close, But Not Quite for?", a: "When they keep landing on the word next door.", bundle: 'pro' },
+        { q: "What is the usual mistake in Building It Up?", a: "Repeating the same angle louder.", bundle: 'pro' },
+        { q: "What separates push and pull in Close, But Not Quite?", a: "The direction, or the result.", bundle: 'pro' },
+        { q: "Why doesn't the body help for invisible actions?", a: "There's no movement to describe.", bundle: 'pro' },
+        { q: "What does each step in these sequences do?", a: "Adds the angle the last guess was missing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **Too General** — \"you move your body\"\n• **Two Actions That Look Alike** — walk and run, push and pull\n• **An Action You Can't See** — think, ignore, pretend\n• **They Guess Wrong** — a completely different word\n• **You Can't Show It** — on the phone, or with your hands full\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Too General, Two Actions That Look Alike, An Action You Can't See, They Guess Wrong, and You Can't Show It.", bundle: 'pro' },
+        { q: "What is the fix for a description that's too general?", a: "Name the exact body part, and add speed or direction.", bundle: 'pro' },
+        { q: "What should you avoid when two actions look alike?", a: "Adding more details that fit both words.", bundle: 'pro' },
+        { q: "What is the main strategy for an action you can't see?", a: "Why People Do It.", bundle: 'pro' },
+        { q: "What should you avoid when they guess wrong?", a: "Saying the same thing again.", bundle: 'pro' },
+        { q: "What does their wrong guess tell you?", a: "Which angle is missing.", bundle: 'pro' },
+        { q: "What should you avoid when they can't see you?", a: "\"Like this\".", bundle: 'pro' },
+        { q: "Which strategy puts a mime into words?", a: "What the Body Does.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **The Missing Verb** — if I don't know the word, I can't say it\n• **Sounding Childish** — legs and arms sound childish\n• **Too Simple** — fast and slow are too basic\n• **The Reason Is Extra** — why isn't part of the action\n• **Just a Story** — a situation isn't a description\n• **Only the Action** — the result comes after\n• **Close Enough** — they'll just say the other word\n• **Too Long** — a scene takes too long\n\nMost of them make a simple, clear description feel not good enough.",
+      cards: [
+        { q: "What are the eight mindsets in this pack?", a: "The Missing Verb, Sounding Childish, Too Simple, The Reason Is Extra, Just a Story, Only the Action, Close Enough, and Too Long.", bundle: 'pro' },
+        { q: "What is true instead of \"if I don't know the word, I can't say it\"?", a: "Describing around a missing word is a normal part of speaking.", bundle: 'pro' },
+        { q: "Are simple words like \"hands\" and \"legs\" childish?", a: "No — they're the clearest.", bundle: 'pro' },
+        { q: "Why are fast and slow useful?", a: "They separate near actions like walk and run.", bundle: 'pro' },
+        { q: "Why does the reason matter?", a: "For many actions, the reason is the action.", bundle: 'pro' },
+        { q: "Why use the result?", a: "Many actions are defined by what they change.", bundle: 'pro' },
+        { q: "How do you stop a comparison landing on the wrong word?", a: "Say the one difference straight after.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They make a simple, clear description feel not good enough.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

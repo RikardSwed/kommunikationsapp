@@ -12264,6 +12264,120 @@ const collections = {
       ]
     },
   ],
+  describeactions: [
+    {
+      name: "What the Body Does",
+      guideFront: "Say which parts move when...",
+      guideBack: "The body, part by part",
+      description: "Describe which parts of the body are used, and what they do. \"She put her mouth right next to his ear and spoke with hardly any voice at all.\"\n\nIt works because almost every action is something a body does, and everyone has a body to imagine it with. The listener can copy the movement in their head — or even with their hands — and the word comes to them.\n\nName the parts in the order they move. Hands, arms, legs, feet, eyes, mouth: the simple words are the useful ones here.\n\nTypical phrases: \"You do it with your…\", \"You move your…\", \"You bend your…\", \"Your hands…\"\n\nThree ways to describe the body:\n\n1. The part that does the work — \"You use your legs to push yourself up into the air.\"\n\n2. The order of the movements — \"You swing your arm back, then forward, and let go.\"\n\n3. The position — \"You lie flat on your stomach and move forward on your hands and knees.\"\n\nMindset: the simplest words — hands, legs, eyes — are the ones that get you there.",
+      inputs: [
+        { q: "Telling a friend about a film scene, you can't find the word \"whisper\".", a: "\"She put her mouth right next to his ear and spoke with hardly any voice at all.\"", bundle: 'free' },
+        { q: "Telling your family how the cat got onto the table, you can't find the word \"sneak\".", a: "\"It crouched really low, belly almost on the floor, and put its paws down one at a time.\"", bundle: 'free' },
+        { q: "Explaining a game to a new classmate, you can't find the word \"throw\".", a: "\"You hold the ball, swing your arm back over your shoulder, and let it go towards your teammate.\"", bundle: 'free' },
+        { q: "Telling a friend about a man on the bus, you can't find the word \"stare\".", a: "\"His eyes were fixed on me, and he didn't blink or look away.\"", bundle: 'free' },
+        { q: "Telling someone how your grandmother met the new baby, you can't find the word \"hug\".", a: "\"She put both arms around him and held him close against her chest.\"", bundle: 'free' },
+        { q: "Telling a colleague about your hike, you can't find the word \"climb\".", a: "\"You use your hands and feet to pull yourself up the rocks, one step at a time.\"", bundle: 'pro' },
+        { q: "Telling a friend how you found out about the surprise party, you can't find the word \"overhear\".", a: "\"My ears caught it while I was doing something else — I wasn't even facing them.\"", bundle: 'pro' },
+        { q: "Describing the end of a prison film, you can't find the word \"escape\".", a: "\"He crawled through a tunnel on his stomach, then got up and ran as fast as his legs would go.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "How It Moves",
+      guideFront: "Give the speed and direction when...",
+      guideBack: "Speed, direction and force",
+      description: "Describe how the action moves: how fast, in which direction, with how much force. \"Slowly and quietly, keeping low, so nobody would notice it.\"\n\nIt works because many actions use the same body parts and differ only in how they move. Walking and running both use the legs — the difference is speed. Pushing and pulling both use the hands — the difference is direction.\n\nA small set of words does most of the work.\n\nTypical phrases: \"You move quickly…\", \"slowly\", \"up\", \"down\", \"forward\", \"away from you\", \"towards you\", \"in a circle\", \"smoothly\", \"suddenly\", \"gently\", \"with force\"\n\nThree things to give:\n\n1. Speed — fast, slow, suddenly. \"You move much faster than walking.\"\n\n2. Direction — up, down, towards, away, round. \"You move something away from you.\"\n\n3. Force or manner — gently, hard, quietly, smoothly. \"You do it gently, so you don't wake anyone.\"\n\nMindset: if two actions use the same body, the difference is in how they move.",
+      inputs: [
+        { q: "Telling a friend about a film scene, you can't find the word \"whisper\".", a: "\"Really quietly and really close — so soft that only he could hear it.\"", bundle: 'free' },
+        { q: "Telling your family how the cat got onto the table, you can't find the word \"sneak\".", a: "\"Slowly and quietly, keeping low, so nobody would notice it.\"", bundle: 'free' },
+        { q: "Explaining a game to a new classmate, you can't find the word \"throw\".", a: "\"The ball goes quickly through the air, away from you, towards another player.\"", bundle: 'free' },
+        { q: "Telling a friend about a man on the bus, you can't find the word \"stare\".", a: "\"He didn't move at all. He just kept looking at me for a really long time, without stopping.\"", bundle: 'free' },
+        { q: "Telling someone how your grandmother met the new baby, you can't find the word \"hug\".", a: "\"She moved towards him and held him tightly for a long, long moment.\"", bundle: 'free' },
+        { q: "Telling a colleague about your hike, you can't find the word \"climb\".", a: "\"You go upwards, slowly, using your hands as much as your feet.\"", bundle: 'pro' },
+        { q: "Telling a friend how you found out about the surprise party, you can't find the word \"overhear\".", a: "\"The sound came to me by accident, from across the room — I wasn't trying to listen.\"", bundle: 'pro' },
+        { q: "Describing the end of a prison film, you can't find the word \"escape\".", a: "\"He went fast and away — out of the place before anyone could stop him.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Why People Do It",
+      guideFront: "Give the reason behind it when...",
+      guideBack: "The reason, as a clue",
+      description: "Say why people do the action — what they want to happen. \"You do it when you want to tell one person something without anyone else hearing.\"\n\nIt works because the reason narrows the field fast. Many actions look alike, but few have the same purpose. And for actions you cannot see — ignore, pretend, convince — the reason is often the only way in.\n\nThe reason is a clue here, not a judgement. You are helping them find the word, not saying whether the action is good.\n\nTypical phrases: \"You do it when you want to…\", \"You do this because…\", \"The point is to…\", \"People do it so that…\"\n\nThree kinds of reason:\n\n1. What you want to happen — \"You do it to get the ball to someone far away.\"\n\n2. What you want to avoid — \"You do it so nobody notices you.\"\n\n3. What you want to show — \"You do it to show someone you're happy to see them.\"\n\nMindset: if you can't see the action, ask why people do it.",
+      inputs: [
+        { q: "Telling a friend about a film scene, you can't find the word \"whisper\".", a: "\"You do it when you want to tell one person something without anyone else hearing.\"", bundle: 'free' },
+        { q: "Telling your family how the cat got onto the table, you can't find the word \"sneak\".", a: "\"You do it when you want to get somewhere without anyone noticing you.\"", bundle: 'free' },
+        { q: "Explaining a game to a new classmate, you can't find the word \"throw\".", a: "\"You do it to get the ball to someone who's too far away to hand it to.\"", bundle: 'free' },
+        { q: "Telling a friend about a man on the bus, you can't find the word \"stare\".", a: "\"People do it when something surprises them — or when they want to make you feel uncomfortable.\"", bundle: 'free' },
+        { q: "Telling someone how your grandmother met the new baby, you can't find the word \"hug\".", a: "\"You do it to show someone you love them, or that you're happy to see them.\"", bundle: 'free' },
+        { q: "Telling a colleague about your hike, you can't find the word \"climb\".", a: "\"You do it to get to the top of something steep.\"", bundle: 'pro' },
+        { q: "Telling a friend how you found out about the surprise party, you can't find the word \"overhear\".", a: "\"Nobody does it on purpose — it just happens when you're near people who are talking.\"", bundle: 'pro' },
+        { q: "Describing the end of a prison film, you can't find the word \"escape\".", a: "\"You do it to get out of a place where someone is keeping you.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "When It Happens",
+      guideFront: "Name the moment it shows up when...",
+      guideBack: "The typical moment",
+      description: "Name a situation where people usually do the action. \"It's what people do in the cinema, or in class when the teacher is talking.\"\n\nIt works because actions live in situations. Everyone has been in a cinema, at an airport, on a bus — and the moment you name one, the listener can see what people do there.\n\nChoose a situation the listener has actually been in. The more ordinary, the better.\n\nTypical phrases: \"It's what people do when…\", \"You usually do this when…\", \"You often see it at…\", \"It happens when…\"\n\nThree kinds of moment:\n\n1. A place — \"It's what people do at airports when someone comes home.\"\n\n2. A time — \"It's what teenagers do when they come home late at night.\"\n\n3. A feeling — \"People often do it when they're tired and want to rest.\"\n\nMindset: the more ordinary the situation, the faster they'll see it.",
+      inputs: [
+        { q: "Telling a friend about a film scene, you can't find the word \"whisper\".", a: "\"It's what people do in the cinema, or in class when the teacher is talking.\"", bundle: 'free' },
+        { q: "Telling your family how the cat got onto the table, you can't find the word \"sneak\".", a: "\"It's what teenagers do when they come home late and don't want to wake their parents.\"", bundle: 'free' },
+        { q: "Explaining a game to a new classmate, you can't find the word \"throw\".", a: "\"It's what you do in basketball, in dodgeball, or with a frisbee in the park.\"", bundle: 'free' },
+        { q: "Telling a friend about a man on the bus, you can't find the word \"stare\".", a: "\"It's what little kids do on the bus when they see something they've never seen before.\"", bundle: 'free' },
+        { q: "Telling someone how your grandmother met the new baby, you can't find the word \"hug\".", a: "\"It's what people do at airports when someone comes home after a long time away.\"", bundle: 'free' },
+        { q: "Telling a colleague about your hike, you can't find the word \"climb\".", a: "\"It's what you do on a ladder, up a tree, or on a really steep path.\"", bundle: 'pro' },
+        { q: "Telling a friend how you found out about the surprise party, you can't find the word \"overhear\".", a: "\"It happens on the train, when the people behind you are talking about something private.\"", bundle: 'pro' },
+        { q: "Describing the end of a prison film, you can't find the word \"escape\".", a: "\"It's what happens in films when someone gets out of prison, or away from a kidnapper.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What It Changes",
+      guideFront: "Say what's different afterwards when...",
+      guideBack: "The result, before and after",
+      description: "Describe what is different after the action: where something ends up, how someone feels, what has changed. \"At the start he was locked in. At the end he was free.\"\n\nIt works because many actions are defined by their result. Throwing ends with the ball somewhere else; opening ends with a door that is no longer closed. Before and after, said side by side, often names the action without you having to.\n\nIt is especially useful for actions done to objects: push, pull, drop, lift, break.\n\nTypical phrases: \"Afterwards…\", \"At the start… at the end…\", \"It ends up…\", \"After you do it…\"\n\nThree kinds of result:\n\n1. Where something ends up — \"The ball leaves your hand and ends up with someone far away.\"\n\n2. How someone feels — \"Afterwards I felt so uncomfortable I had to move seats.\"\n\n3. What someone knows or has — \"Afterwards I knew about the party, and they had no idea.\"\n\nMindset: before and after, side by side, often says the word for you.",
+      inputs: [
+        { q: "Telling a friend about a film scene, you can't find the word \"whisper\".", a: "\"After she did it, he knew the secret — and nobody else in the room did.\"", bundle: 'free' },
+        { q: "Telling your family how the cat got onto the table, you can't find the word \"sneak\".", a: "\"One moment it was by the door, the next it was on the table, and none of us heard a thing.\"", bundle: 'free' },
+        { q: "Explaining a game to a new classmate, you can't find the word \"throw\".", a: "\"The ball leaves your hand and ends up with someone far away from you.\"", bundle: 'free' },
+        { q: "Telling a friend about a man on the bus, you can't find the word \"stare\".", a: "\"After a while I felt so uncomfortable that I had to change seats.\"", bundle: 'free' },
+        { q: "Telling someone how your grandmother met the new baby, you can't find the word \"hug\".", a: "\"Afterwards she was crying happy tears, and the baby was warm and calm against her.\"", bundle: 'free' },
+        { q: "Telling a colleague about your hike, you can't find the word \"climb\".", a: "\"You start at the bottom and end up at the top, higher than everything around you.\"", bundle: 'pro' },
+        { q: "Telling a friend how you found out about the surprise party, you can't find the word \"overhear\".", a: "\"Afterwards I knew all about the party — and they had no idea that I knew.\"", bundle: 'pro' },
+        { q: "Describing the end of a prison film, you can't find the word \"escape\".", a: "\"At the start he was locked in. At the end he was free, and they were all looking for him.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What It Resembles",
+      guideFront: "Compare it to something they know when...",
+      guideBack: "A known thing, one change",
+      description: "Start with an action the listener knows, and say how this one is different. \"It's like walking, but slowly and silently, so nobody notices you.\"\n\nIt works because you borrow a picture they already have and change one thing. Walk, look, talk, hold — almost everyone knows these, and most harder verbs are one of them with one change.\n\nOne change is usually enough. A second change starts taking the picture apart again.\n\nTypical phrases: \"It's like…, but…\", \"It's similar to…, except…\", \"It's a kind of…\", \"Same as…, only…\"\n\nThree ways to compare:\n\n1. A familiar action, one change — \"It's like talking, but almost without any voice.\"\n\n2. Faster, slower, harder, softer — \"It's like walking, but much faster.\"\n\n3. On purpose or by accident — \"It's like listening, but by accident.\"\n\nMindset: borrow a picture they already have, and change one thing.",
+      inputs: [
+        { q: "Telling a friend about a film scene, you can't find the word \"whisper\".", a: "\"It's like talking, but almost without any voice — just breath.\"", bundle: 'free' },
+        { q: "Telling your family how the cat got onto the table, you can't find the word \"sneak\".", a: "\"It's like walking, but slowly and silently, so nobody notices you.\"", bundle: 'free' },
+        { q: "Explaining a game to a new classmate, you can't find the word \"throw\".", a: "\"It's like passing, but the ball goes through the air instead of from hand to hand.\"", bundle: 'free' },
+        { q: "Telling a friend about a man on the bus, you can't find the word \"stare\".", a: "\"It's like looking at someone, but for much too long.\"", bundle: 'free' },
+        { q: "Telling someone how your grandmother met the new baby, you can't find the word \"hug\".", a: "\"It's like holding someone's hand, but with your whole arms around them.\"", bundle: 'free' },
+        { q: "Telling a colleague about your hike, you can't find the word \"climb\".", a: "\"It's like walking up stairs, but you need your hands too.\"", bundle: 'pro' },
+        { q: "Telling a friend how you found out about the surprise party, you can't find the word \"overhear\".", a: "\"It's like listening, but by accident — you weren't meant to hear it.\"", bundle: 'pro' },
+        { q: "Describing the end of a prison film, you can't find the word \"escape\".", a: "\"It's like running away, but from a place where you were locked in.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Paint a Scene",
+      guideFront: "Tell a tiny story when...",
+      guideBack: "A small scene with the action in it",
+      description: "Make up a short scene where the action happens, and let the listener find the word in it. \"Imagine you come home at two in the morning and your parents are asleep. You take your shoes off and go to your room without a sound.\"\n\nIt works because a scene gives the listener everything at once — the body, the reason, the moment — in a form they can see. For actions that are hard to break into parts, a story is often the fastest way.\n\nKeep it short: one or two sentences, with the action in the middle.\n\nTypical phrases: \"Imagine…\", \"Say you…\", \"Picture this:…\", \"You know when…\"\n\nThree kinds of scene:\n\n1. An everyday scene — \"Imagine your friend shouts 'Give me the ball!' from across the garden.\"\n\n2. A scene from a film or story — \"Imagine a man digs a tunnel for months, and one night he's gone.\"\n\n3. A scene with the listener in it — \"Imagine you're in the toilet and two colleagues come in talking about you.\"\n\nMindset: when the parts won't come, give them the whole picture.",
+      inputs: [
+        { q: "Telling a friend about a film scene, you can't find the word \"whisper\".", a: "\"Imagine you're in the cinema and want to tell your friend the film's boring — without the whole row hearing.\"", bundle: 'free' },
+        { q: "Telling your family how the cat got onto the table, you can't find the word \"sneak\".", a: "\"Imagine you come home at two in the morning, your parents are asleep, and you get to your room without a sound.\"", bundle: 'free' },
+        { q: "Explaining a game to a new classmate, you can't find the word \"throw\".", a: "\"Imagine your friend shouts 'Give me the ball!' from the other end of the garden, and you send it over to them.\"", bundle: 'free' },
+        { q: "Telling a friend about a man on the bus, you can't find the word \"stare\".", a: "\"Imagine someone on the bus looking at you without blinking for ten minutes, and you don't know why.\"", bundle: 'free' },
+        { q: "Telling someone how your grandmother met the new baby, you can't find the word \"hug\".", a: "\"Imagine your best friend gets off a plane after a year away, and you run up and put your arms round her.\"", bundle: 'free' },
+        { q: "Telling a colleague about your hike, you can't find the word \"climb\".", a: "\"Imagine there's a huge rock in front of you, and the only way is up — hands first, then feet.\"", bundle: 'pro' },
+        { q: "Telling a friend how you found out about the surprise party, you can't find the word \"overhear\".", a: "\"Imagine you're in a toilet cubicle, and two colleagues come in talking about your birthday surprise.\"", bundle: 'pro' },
+        { q: "Describing the end of a prison film, you can't find the word \"escape\".", a: "\"Imagine a man in prison digs a hole for months, and one night his cell is empty.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -19254,6 +19368,56 @@ const collectionsModeData = {
         { q: "Your friend says you promised to be her bridesmaid. You don't remember promising.", a: "\"I don't remember it, and you do. What matters is that you're hurt. Let's start there.\" [Let Both Memories Stand]", bundle: 'pro', guideBack: "Both memories kept, and on to what it meant" },
         { q: "Your teammate says you're \"always negative\". It lands hard.", a: "\"That stings because I'm afraid it's true. I'd like an example, so I can check.\" [What It Says About Me]", bundle: 'pro', guideBack: "The fear underneath, said and tested" },
         { q: "Your neighbour is angry about your car in \"his\" space. You thought spaces were shared.", a: "\"What were you told about the spaces when you moved in?\" [Ask What They Saw]", bundle: 'pro', guideBack: "A question about their view" },
+      ]
+    },
+  ],
+  describeactions: [
+    {
+      name: "Actions You Can See",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**What the Body Does**, **How It Moves** and **What It Changes** — the strategies for actions you could film: kick, crawl, drop, push.\n\n• **What the Body Does** — which parts move\n• **How It Moves** — speed, direction, force\n• **What It Changes** — where things end up\n\nThe question that decides it: what is the one thing that makes this action different from the ones next to it — the body, the way it moves, or the result?\n\nThe usual wrong choice is describing the body when the difference is in the direction — push and pull use exactly the same hands.\n\nMindset: find the one difference, and describe that.",
+      inputs: [
+        { q: "You're telling someone about a football match, and the word \"kick\" won't come.", a: "\"You hit the ball hard with your foot.\" [What the Body Does]", bundle: 'pro', guideBack: "The body, part by part" },
+        { q: "You're describing what your baby nephew has just learned to do, and the word \"crawl\" won't come.", a: "\"He moves forward on his hands and knees, slowly, close to the floor.\" [How It Moves]", bundle: 'pro', guideBack: "Speed, direction and force" },
+        { q: "You're telling a friend about breaking a glass, and the word \"drop\" won't come.", a: "\"It slipped out of my hand and fell straight down onto the floor.\" [What It Changes]", bundle: 'pro', guideBack: "The result, before and after" },
+        { q: "You're describing a dance move, and the word \"spin\" won't come.", a: "\"You turn round and round in a circle, really fast, on one foot.\" [How It Moves]", bundle: 'pro', guideBack: "Speed, direction and force" },
+        { q: "You're telling someone how you said goodbye from the train, and the word \"wave\" won't come.", a: "\"I lifted my hand and moved it from side to side.\" [What the Body Does]", bundle: 'pro', guideBack: "The body, part by part" },
+        { q: "You're explaining how to open a heavy door, and the word \"push\" won't come.", a: "\"You put your hands on it and move it away from you, hard.\" [How It Moves]", bundle: 'pro', guideBack: "Speed, direction and force" },
+        { q: "You're telling someone why you fell on the ice, and the word \"slip\" won't come.", a: "\"One moment my feet were under me, the next they'd gone and I was on the ground.\" [What It Changes]", bundle: 'pro', guideBack: "The result, before and after" },
+        { q: "You're explaining how you moved the sofa, and the word \"lift\" won't come.", a: "\"We bent our knees, held it underneath, and stood up with it.\" [What the Body Does]", bundle: 'pro', guideBack: "The body, part by part" },
+      ]
+    },
+    {
+      name: "Actions You Can't See",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Why People Do It**, **When It Happens**, **Paint a Scene** and **What It Resembles** — for actions with no clear movement: ignore, pretend, apologise, convince.\n\n• **Why People Do It** — the reason is the clue\n• **When It Happens** — a moment they know\n• **Paint a Scene** — a small story with the action in it\n• **What It Resembles** — a familiar action, one change\n\nThe question that decides it: if you can't film it, what would make them see it — the reason, a moment, a scene, or a comparison?\n\nThe usual wrong choice is trying to describe the body. \"You stand still and don't move\" fits ignoring, waiting and thinking equally well.\n\nMindset: if you can't see it, describe why, when, or where.",
+      inputs: [
+        { q: "You're telling a friend about a colleague, and the word \"ignore\" won't come.", a: "\"It's like listening to someone, except you act as if they aren't there.\" [What It Resembles]", bundle: 'pro', guideBack: "A known thing, one change" },
+        { q: "You're describing what your little sister does with her toys, and the word \"pretend\" won't come.", a: "\"Imagine a child holding a banana to her ear and saying, 'Hello? Grandma?'\" [Paint a Scene]", bundle: 'pro', guideBack: "A small scene with the action in it" },
+        { q: "You're explaining what you did after the argument, and the word \"apologise\" won't come.", a: "\"It's what you do when you've hurt someone and want to show you're sorry.\" [Why People Do It]", bundle: 'pro', guideBack: "The reason, as a clue" },
+        { q: "You're telling someone how you got your dad to agree, and the word \"convince\" won't come.", a: "\"You do it when someone thinks one thing, and you want them to think something else.\" [Why People Do It]", bundle: 'pro', guideBack: "The reason, as a clue" },
+        { q: "You're complaining about a meeting, and the word \"interrupt\" won't come.", a: "\"It's what people do when someone else is talking and they start talking anyway.\" [When It Happens]", bundle: 'pro', guideBack: "The typical moment" },
+        { q: "You're telling someone how you found your lost keys, and the word \"notice\" won't come.", a: "\"It's like seeing, but suddenly — something you hadn't seen before catches your eye.\" [What It Resembles]", bundle: 'pro', guideBack: "A known thing, one change" },
+        { q: "You're describing your team after the final, and the word \"celebrate\" won't come.", a: "\"It's what people do at birthdays, or when their team wins.\" [When It Happens]", bundle: 'pro', guideBack: "The typical moment" },
+        { q: "You're explaining why you take the long way home, and the word \"avoid\" won't come.", a: "\"Imagine there's a dog that barks at you on the short road, so you go round the other way.\" [Paint a Scene]", bundle: 'pro', guideBack: "A small scene with the action in it" },
+      ]
+    },
+    {
+      name: "All Seven",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, with actions of every kind — moving, talking, looking, feeling.\n\nThe seven fall into two groups. **What the Body Does**, **How It Moves** and **What It Changes** work best for actions you can see. **Why People Do It**, **When It Happens**, **What It Resembles** and **Paint a Scene** work for any action, and are the only way in for the ones you can't see.\n\nIf you are unsure, ask: could I film this action? If yes, start with the body or the movement. If not, start with why or when.\n\nMindset: two or three angles usually find the word. Pick the one that fits the action.",
+      inputs: [
+        { q: "You're telling someone about your dog in the park, and the word \"chase\" won't come.", a: "\"He runs fast after the ball, trying to catch it before it stops.\" [How It Moves]", bundle: 'pro', guideBack: "Speed, direction and force" },
+        { q: "You're describing what happened on the stairs, and the word \"stumble\" won't come.", a: "\"It's like walking, but you lose your balance for a second and nearly fall.\" [What It Resembles]", bundle: 'pro', guideBack: "A known thing, one change" },
+        { q: "You're telling someone how your brother treats you, and the word \"tease\" won't come.", a: "\"You do it to annoy someone a little, for fun — usually someone you like.\" [Why People Do It]", bundle: 'pro', guideBack: "The reason, as a clue" },
+        { q: "You're explaining what the sign by the river did, and the word \"warn\" won't come.", a: "\"It's what you do when you see danger coming and want someone else to know before it reaches them.\" [When It Happens]", bundle: 'pro', guideBack: "The typical moment" },
+        { q: "You're describing your teenager's answer to a question, and the word \"shrug\" won't come.", a: "\"He lifted both shoulders up and dropped them again.\" [What the Body Does]", bundle: 'pro', guideBack: "The body, part by part" },
+        { q: "You're telling someone about a news story, and the word \"rescue\" won't come.", a: "\"At the start the kids were stuck in the cave. At the end they were all safe outside.\" [What It Changes]", bundle: 'pro', guideBack: "The result, before and after" },
+        { q: "You're describing a street performer, and the word \"juggle\" won't come.", a: "\"Imagine someone keeping three balls in the air at once, catching and throwing, without dropping any.\" [Paint a Scene]", bundle: 'pro', guideBack: "A small scene with the action in it" },
+        { q: "You're explaining how your teacher said yes without speaking, and the word \"nod\" won't come.", a: "\"She moved her head up and down, once.\" [What the Body Does]", bundle: 'pro', guideBack: "The body, part by part" },
       ]
     },
   ],

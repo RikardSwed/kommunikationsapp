@@ -478,6 +478,9 @@ const packTags = {
   twosidesofthestory: [
     'misunderstanding', 'intent and impact', 'blame', 'two versions', 'memory', 'conflict', 'understanding', 'identity'
   ],
+  describeactions: [
+    'describing', 'verbs', 'actions', 'missing words', 'explaining', 'vocabulary', 'movement'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -517,7 +520,7 @@ const TOPICS = [
 
   // ── Holding the floor ─────────────────────────────────────────────
   { id: 'storytelling',          title: 'Storytelling',                  packs: ['storytelling', 'storytellingwiththesixws', 'storiesinconversation', 'buildingastory'] },
-  { id: 'explaining',            title: 'Explaining & Describing',       packs: ['describethings', 'explainthings', 'givingexamples', 'explainthings2'] },
+  { id: 'explaining',            title: 'Explaining & Describing',       packs: ['describethings', 'explainthings', 'givingexamples', 'explainthings2', 'describeactions'] },
   { id: 'interruptions',         title: 'Interruptions & Speaking Up',   packs: ['speakingupingroups', 'howtointerrupt', 'handleinterruptions'] },
 
   // ── Giving and taking it ──────────────────────────────────────────

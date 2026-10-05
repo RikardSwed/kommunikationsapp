@@ -11494,4 +11494,86 @@ const challengesCollections = {
       ]
     },
   ],
+  describeactions: [
+    {
+      name: "Too General",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Your description is true and fits fifty actions. \"You move your body.\" \"You do something with your hands.\" The listener is no closer than before.\n\nWhat goes wrong is staying at the level of \"move\" and \"do\". Those words are in every description, so they help with none of them.\n\n**What the Body Does** is the main move — name the exact part and what it does. **How It Moves** adds the speed or direction that rules out the neighbours.\n\nThe one thing to avoid: \"you move\" with nothing after it.\n\nMindset: one precise detail beats three general ones.",
+      inputs: [
+        { q: "You're describing \"kick\", and all you've said is \"you use your leg.\"", a: "\"You swing your foot forward and hit something hard with it.\" [What the Body Does]", bundle: 'pro', guideBack: "The body, part by part" },
+        { q: "You're describing \"run\", and you've said \"you move your body.\"", a: "\"You move forward much faster than walking.\" [How It Moves]", bundle: 'pro', guideBack: "Speed, direction and force" },
+        { q: "You're describing \"clap\", and you've said \"you do it with your hands.\"", a: "\"You hit your hands together, again and again, to make a noise.\" [What the Body Does]", bundle: 'pro', guideBack: "The body, part by part" },
+        { q: "You're describing \"swim\", and you've said \"you move in the water.\"", a: "\"You push the water behind you with your arms and kick your legs.\" [What the Body Does]", bundle: 'pro', guideBack: "The body, part by part" },
+        { q: "You're describing \"dance\", and you've said \"you move around.\"", a: "\"You move your whole body in time to music.\" [How It Moves]", bundle: 'pro', guideBack: "Speed, direction and force" },
+        { q: "You're describing \"roll\", and you've said \"it goes on the ground.\"", a: "\"It turns over and over, along the ground, like a ball.\" [How It Moves]", bundle: 'pro', guideBack: "Speed, direction and force" },
+        { q: "You're describing \"point\", and you've said \"you use your finger.\"", a: "\"You hold out one finger towards something, to show someone where it is.\" [What the Body Does]", bundle: 'pro', guideBack: "The body, part by part" },
+        { q: "You're describing \"fall\", and you've said \"you go down.\"", a: "\"You go down suddenly, without meaning to, and land on the ground.\" [How It Moves]", bundle: 'pro', guideBack: "Speed, direction and force" },
+      ]
+    },
+    {
+      name: "Two Actions That Look Alike",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The action you mean has a close neighbour: walk and run, look and stare, push and pull, follow and chase. Most of what you say fits both.\n\nWhat goes wrong is describing what the two have in common. The listener lands on the more common word, and you are stuck.\n\n**What It Resembles** is the main move — name the neighbour and give the one difference. **How It Moves** and **What It Changes** supply the difference when it is speed, direction or result.\n\nThe one thing to avoid: adding more details that fit both words.\n\nMindset: when they're close, describe the difference, not the action.",
+      inputs: [
+        { q: "You mean \"run\", and they keep saying \"walk\".", a: "\"It's like walking, but much faster — both feet leave the ground.\" [What It Resembles]", bundle: 'pro', guideBack: "A known thing, one change" },
+        { q: "You mean \"stare\", and they keep saying \"look\".", a: "\"It's like looking, but for much too long, without looking away.\" [What It Resembles]", bundle: 'pro', guideBack: "A known thing, one change" },
+        { q: "You mean \"overhear\", and they keep saying \"listen\".", a: "\"It's like listening, but by accident — you weren't meant to hear.\" [What It Resembles]", bundle: 'pro', guideBack: "A known thing, one change" },
+        { q: "You mean \"drop\", and they keep saying \"throw\".", a: "\"It goes straight down, not through the air — you just let go.\" [What It Changes]", bundle: 'pro', guideBack: "The result, before and after" },
+        { q: "You mean \"chase\", and they keep saying \"follow\".", a: "\"Fast, and you're trying to catch them — not just go where they go.\" [How It Moves]", bundle: 'pro', guideBack: "Speed, direction and force" },
+        { q: "You mean \"whisper\", and they keep saying \"shout\".", a: "\"The opposite — so quiet that only one person can hear.\" [How It Moves]", bundle: 'pro', guideBack: "Speed, direction and force" },
+        { q: "You mean \"pull\", and they keep saying \"push\".", a: "\"It moves towards you, not away from you.\" [How It Moves]", bundle: 'pro', guideBack: "Speed, direction and force" },
+        { q: "You mean \"escape\", and they keep saying \"hide\".", a: "\"You don't stay in the place — at the end you're outside, free.\" [What It Changes]", bundle: 'pro', guideBack: "The result, before and after" },
+      ]
+    },
+    {
+      name: "An Action You Can't See",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Some actions have no movement to describe: think, ignore, pretend, forgive, decide, trust. Describing the body gives nothing — \"you sit still\" fits a hundred of them.\n\nWhat goes wrong is trying anyway, and ending up with a description of someone sitting on a chair.\n\n**Why People Do It** is the main move — the reason is often the whole action. **Paint a Scene** shows it when the reason alone isn't enough. **When It Happens** gives them a moment they know.\n\nThe one thing to avoid: describing the body for an action that hasn't got one.\n\nMindset: if you can't see it, describe why, when, or where.",
+      inputs: [
+        { q: "You need to describe \"forgive\".", a: "\"You do it when someone hurt you, and you decide not to be angry about it any more.\" [Why People Do It]", bundle: 'pro', guideBack: "The reason, as a clue" },
+        { q: "You need to describe \"worry\".", a: "\"Imagine your friend is two hours late and not answering, and you keep thinking something bad has happened.\" [Paint a Scene]", bundle: 'pro', guideBack: "A small scene with the action in it" },
+        { q: "You need to describe \"ignore\".", a: "\"You do it when you don't want to deal with someone, so you act as if they aren't there.\" [Why People Do It]", bundle: 'pro', guideBack: "The reason, as a clue" },
+        { q: "You need to describe \"decide\".", a: "\"It's what you do in a shop when you've been looking at two jackets and finally choose one.\" [When It Happens]", bundle: 'pro', guideBack: "The typical moment" },
+        { q: "You need to describe \"forget\".", a: "\"Imagine you get to the shop and can't remember what you came for.\" [Paint a Scene]", bundle: 'pro', guideBack: "A small scene with the action in it" },
+        { q: "You need to describe \"trust\".", a: "\"You do it when you believe someone will do what they said, without checking.\" [Why People Do It]", bundle: 'pro', guideBack: "The reason, as a clue" },
+        { q: "You need to describe \"guess\".", a: "\"It's what you do in a quiz when you don't know the answer but say one anyway.\" [When It Happens]", bundle: 'pro', guideBack: "The typical moment" },
+        { q: "You need to describe \"daydream\".", a: "\"Imagine you're in a boring lesson, looking out of the window, thinking about the holidays.\" [Paint a Scene]", bundle: 'pro', guideBack: "A small scene with the action in it" },
+      ]
+    },
+    {
+      name: "They Guess Wrong",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You've described it, and they confidently say the wrong word. Not a neighbour — something else entirely.\n\nWhat goes wrong is repeating what you already said, louder. If one angle didn't work, saying it again won't either.\n\nTheir wrong guess tells you which angle is missing. **What It Changes** and **When It Happens** often add the piece they didn't have; **What It Resembles** can start from their guess — \"close, but…\".\n\nThe one thing to avoid: saying the same thing again.\n\nMindset: their guess tells you which angle to add.",
+      inputs: [
+        { q: "You described \"lift\", and they guessed \"carry\".", a: "\"Close — but you don't go anywhere. It just goes from the floor up to your chest.\" [What It Changes]", bundle: 'pro', guideBack: "The result, before and after" },
+        { q: "You described \"knock\", and they guessed \"hit\".", a: "\"It's what you do at someone's door before you go in.\" [When It Happens]", bundle: 'pro', guideBack: "The typical moment" },
+        { q: "You described \"yawn\", and they guessed \"shout\".", a: "\"It's like opening your mouth wide, but with no sound — when you're tired.\" [What It Resembles]", bundle: 'pro', guideBack: "A known thing, one change" },
+        { q: "You described \"sweep\", and they guessed \"clean\".", a: "\"Close — afterwards all the dust is in one little pile you can pick up.\" [What It Changes]", bundle: 'pro', guideBack: "The result, before and after" },
+        { q: "You described \"bow\", and they guessed \"fall\".", a: "\"It's what actors do at the end of a play, when everyone claps.\" [When It Happens]", bundle: 'pro', guideBack: "The typical moment" },
+        { q: "You described \"pour\", and they guessed \"drink\".", a: "\"Afterwards the juice is in the glass, not in the bottle.\" [What It Changes]", bundle: 'pro', guideBack: "The result, before and after" },
+        { q: "You described \"sigh\", and they guessed \"breathe\".", a: "\"It's like breathing out, but long and loud, when you're tired or fed up.\" [What It Resembles]", bundle: 'pro', guideBack: "A known thing, one change" },
+        { q: "You described \"shiver\", and they guessed \"dance\".", a: "\"It's what your body does when you're outside in winter without a coat.\" [When It Happens]", bundle: 'pro', guideBack: "The typical moment" },
+      ]
+    },
+    {
+      name: "You Can't Show It",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Normally you'd just do the action — wave your hand, mime the throw. But you're on the phone, writing a message, or your hands are full, and you have to do it all in words.\n\nWhat goes wrong is starting to mime anyway, or saying \"you know, like this\" to someone who can't see you.\n\n**What the Body Does** is the main move — put the movement into words. **How It Moves** adds the speed and direction your hands would have shown. **Paint a Scene** works when the movement is hard to put into words at all.\n\nThe one thing to avoid: \"like this\", when they can't see you.\n\nMindset: if they can't see your hands, your words have to do the moving.",
+      inputs: [
+        { q: "On the phone, you're describing \"wave\" to your grandmother.", a: "\"You hold your hand up and move it from side to side.\" [What the Body Does]", bundle: 'pro', guideBack: "The body, part by part" },
+        { q: "In a message, you're describing \"shrug\".", a: "\"You lift both shoulders up and let them drop, to show you don't know.\" [What the Body Does]", bundle: 'pro', guideBack: "The body, part by part" },
+        { q: "On the phone, you're describing \"spin\".", a: "\"You turn round and round in one place, really fast.\" [How It Moves]", bundle: 'pro', guideBack: "Speed, direction and force" },
+        { q: "In a message, you're describing \"wink\".", a: "\"You close one eye for a second, quickly, while the other stays open.\" [What the Body Does]", bundle: 'pro', guideBack: "The body, part by part" },
+        { q: "On the phone, your hands full, you're describing \"stir\".", a: "\"You move the spoon round and round in the pot, slowly.\" [How It Moves]", bundle: 'pro', guideBack: "Speed, direction and force" },
+        { q: "In a message, you're describing \"tickle\".", a: "\"Imagine moving your fingers lightly on someone's stomach until they laugh.\" [Paint a Scene]", bundle: 'pro', guideBack: "A small scene with the action in it" },
+        { q: "On the phone, you're describing \"nod\".", a: "\"You move your head down and up, once, to say yes.\" [What the Body Does]", bundle: 'pro', guideBack: "The body, part by part" },
+        { q: "In a message, you're describing \"stretch\".", a: "\"Imagine waking up and pulling your arms up as high as they go.\" [Paint a Scene]", bundle: 'pro', guideBack: "A small scene with the action in it" },
+      ]
+    },
+  ],
 };

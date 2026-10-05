@@ -16387,4 +16387,111 @@ const multiStepCollections = {
       ]
     },
   ],
+  describeactions: [
+    {
+      name: "Building It Up",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**What the Body Does**, then **How It Moves**, then **What It Resembles**. For a physical action, when one angle isn't enough.\n\n1. **What the Body Does** — start with the parts that move.\n2. **How It Moves** — they guess a nearby word; add the speed or direction.\n3. **What It Resembles** — still not there; give them a familiar action and one change.\n\nWhy this order: the body gives the rough shape, the movement narrows it, and the comparison usually lands it. Each step adds the one thing their last guess was missing.\n\nThe usual mistake is repeating the same angle louder instead of switching to a new one.\n\nMindset: when they guess wrong, their guess tells you which angle to add.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You're telling a friend what your baby niece did for the first time, and the word \"crawl\" won't come.",
+          steps: [
+            { front: "What the Body Does — your friend asks what she did.", back: "\"She got down on her hands and knees and moved forward.\"", guideFront: "Say which parts move when...", guideBack: "The body, part by part" },
+            { front: "How It Moves — your friend says, \"She walked?\"", back: "\"No — slowly, really close to the floor, one hand and one knee at a time.\"", guideFront: "Give the speed and direction when...", guideBack: "Speed, direction and force" },
+            { front: "What It Resembles — your friend says, \"Like a puppy?\"", back: "\"Sort of. It's like walking, but on all fours — before babies can stand.\"", guideFront: "Compare it to something they know when...", guideBack: "A known thing, one change" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You're telling your flatmate how you got past the sleeping dog, and the word \"tiptoe\" won't come.",
+          steps: [
+            { front: "What the Body Does — your flatmate asks how you did it.", back: "\"I walked only on the front part of my feet, with my heels up.\"", guideFront: "Say which parts move when...", guideBack: "The body, part by part" },
+            { front: "How It Moves — your flatmate says, \"You ran past?\"", back: "\"No, the opposite — really slowly and quietly, one small step at a time.\"", guideFront: "Give the speed and direction when...", guideBack: "Speed, direction and force" },
+            { front: "What It Resembles — your flatmate says, \"Like sneaking?\"", back: "\"Close. It's like walking, but on the tips of your toes, so your feet make no sound.\"", guideFront: "Compare it to something they know when...", guideBack: "A known thing, one change" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You're telling your PE teacher what you did before the race, and the word \"stretch\" won't come.",
+          steps: [
+            { front: "What the Body Does — your teacher asks how you warmed up.", back: "\"I held one leg out straight and reached down to touch my toes.\"", guideFront: "Say which parts move when...", guideBack: "The body, part by part" },
+            { front: "How It Moves — your teacher says, \"You jogged?\"", back: "\"No, I didn't move anywhere. I made my muscles long, slowly, and held it.\"", guideFront: "Give the speed and direction when...", guideBack: "Speed, direction and force" },
+            { front: "What It Resembles — your teacher says, \"Like yoga?\"", back: "\"A bit. It's like when you wake up and pull your arms up over your head, but for each part of your body.\"", guideFront: "Compare it to something they know when...", guideBack: "A known thing, one change" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Why, Then When",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Why People Do It**, then **When It Happens**, then **Paint a Scene**. For an action you can't see.\n\n1. **Why People Do It** — start with the reason.\n2. **When It Happens** — they're unsure; name a moment they know.\n3. **Paint a Scene** — still not there; give them a tiny story.\n\nWhy this order: the reason narrows the field, the moment makes it familiar, and the scene shows it whole. For invisible actions, the body tells them nothing.\n\nThe usual mistake is describing the body for an action that hasn't got one.\n\nMindset: if you can't film it, describe why, when, and then show it.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You're telling a friend what your colleague did after the mistake, and the word \"apologise\" won't come.",
+          steps: [
+            { front: "Why People Do It — your friend asks what he did.", back: "\"He did what you do when you've hurt someone and want them to know you feel bad about it.\"", guideFront: "Give the reason behind it when...", guideBack: "The reason, as a clue" },
+            { front: "When It Happens — your friend says, \"He explained himself?\"", back: "\"No — it's what you do after you've stepped on someone's foot, or forgotten their birthday.\"", guideFront: "Name the moment it shows up when...", guideBack: "The typical moment" },
+            { front: "Paint a Scene — your friend says, \"Oh, he said thanks?\"", back: "\"Imagine you break your friend's phone, and you go to them and say, 'I'm so sorry, it was my fault.'\"", guideFront: "Tell a tiny story when...", guideBack: "A small scene with the action in it" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You're telling your partner what your son did during the game, and the word \"pretend\" won't come.",
+          steps: [
+            { front: "Why People Do It — your partner asks what he did.", back: "\"He did what kids do when they want something to be real that isn't.\"", guideFront: "Give the reason behind it when...", guideBack: "The reason, as a clue" },
+            { front: "When It Happens — your partner says, \"He lied?\"", back: "\"Not really. It's what children do when they play — like when they're doctors or pirates for an afternoon.\"", guideFront: "Name the moment it shows up when...", guideBack: "The typical moment" },
+            { front: "Paint a Scene — your partner says, \"Imagining?\"", back: "\"Imagine he lies on the floor with his eyes shut so the dog will think he's asleep.\"", guideFront: "Tell a tiny story when...", guideBack: "A small scene with the action in it" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You're telling a friend about your neighbour at the barbecue, and the word \"brag\" won't come.",
+          steps: [
+            { front: "Why People Do It — your friend asks what he did.", back: "\"He talked about himself to make everyone think he's better than them.\"", guideFront: "Give the reason behind it when...", guideBack: "The reason, as a clue" },
+            { front: "When It Happens — your friend says, \"He gave a speech?\"", back: "\"No — it's what people do when someone mentions a car, and they have to say theirs is faster.\"", guideFront: "Name the moment it shows up when...", guideBack: "The typical moment" },
+            { front: "Paint a Scene — your friend says, \"Oh, he was competitive?\"", back: "\"Imagine someone says they ran five kilometres, and he says, 'Only five? I did twenty before breakfast.'\"", guideFront: "Tell a tiny story when...", guideBack: "A small scene with the action in it" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Close, But Not Quite",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**What It Resembles**, then **How It Moves**, then **What It Changes**. When the listener keeps landing on the word next door.\n\n1. **What It Resembles** — start with the nearest familiar action.\n2. **How It Moves** — they guess the familiar one; say how this one moves differently.\n3. **What It Changes** — still the wrong neighbour; say what's different afterwards.\n\nWhy this order: near verbs share most things, so you need the one detail that separates them. Movement separates many pairs; the result separates the rest — push and pull, throw and drop.\n\nThe usual mistake is giving more of what the two words share.\n\nMindset: when they're close, describe the difference, not the action.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You're telling someone how you broke the vase, and the word \"drop\" won't come.",
+          steps: [
+            { front: "What It Resembles — they ask what happened.", back: "\"It's a bit like throwing it — it left my hand.\"", guideFront: "Compare it to something they know when...", guideBack: "A known thing, one change" },
+            { front: "How It Moves — they say, \"You threw it?\"", back: "\"No — I didn't move my arm at all. It just slid out of my fingers by accident.\"", guideFront: "Give the speed and direction when...", guideBack: "Speed, direction and force" },
+            { front: "What It Changes — they say, \"You let it go?\"", back: "\"Yes, and it went straight down and smashed on the floor right by my feet.\"", guideFront: "Say what's different afterwards when...", guideBack: "The result, before and after" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You're telling a friend how you opened the stuck drawer, and the word \"pull\" won't come.",
+          steps: [
+            { front: "What It Resembles — your friend asks how you got it open.", back: "\"It's like pushing, but the other way.\"", guideFront: "Compare it to something they know when...", guideBack: "A known thing, one change" },
+            { front: "How It Moves — your friend says, \"You pushed it?\"", back: "\"No, I held the handle and moved it towards me, really hard.\"", guideFront: "Give the speed and direction when...", guideBack: "Speed, direction and force" },
+            { front: "What It Changes — your friend says, \"You yanked it?\"", back: "\"Yes — and afterwards the whole drawer was out on the floor.\"", guideFront: "Say what's different afterwards when...", guideBack: "The result, before and after" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You're telling your mum about your Sunday afternoon, and the word \"stroll\" won't come.",
+          steps: [
+            { front: "What It Resembles — your mum asks what you did.", back: "\"It's a kind of walking.\"", guideFront: "Compare it to something they know when...", guideBack: "A known thing, one change" },
+            { front: "How It Moves — your mum says, \"You went hiking?\"", back: "\"No — slowly, relaxed, with no hurry at all, just for pleasure.\"", guideFront: "Give the speed and direction when...", guideBack: "Speed, direction and force" },
+            { front: "What It Changes — your mum says, \"A walk in the park?\"", back: "\"Exactly — nowhere to get to. Afterwards I just felt calm.\"", guideFront: "Say what's different afterwards when...", guideBack: "The result, before and after" },
+          ]
+        },
+      ]
+    },
+  ],
 };
