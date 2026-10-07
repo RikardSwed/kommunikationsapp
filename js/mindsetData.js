@@ -11740,4 +11740,266 @@ const mindsetCollections = {
       ]
     },
   ],
+  supercomm1: [
+    {
+      name: "Conversations",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Many people treat conversations as performance tests where they must win, persuade, or appear clever. This deck reframes conversations as shared discovery where matching mindsets unlocks effortless connection.\n\n• Replace performance anxiety with curiosity about the speaker's mode\n• Remember that matching conversation types matters more than having witty replies\n• View conversational misalignment as a solvable technical gap rather than a personal clash\n\nMindset: Conversations are not performances to win; they are mindsets to align.",
+      inputs: [
+        { q: "I need to impress this person with clever solutions as soon as they speak.", a: "\"Listen first to identify whether they want practical solutions, emotional empathy, or social connection.\"", bundle: 'pro' },
+        { q: "If we aren't agreeing on facts immediately, this conversation is failing.", a: "\"Agreement on facts is impossible until you align on the conversation mindset first.\"", bundle: 'pro' },
+        { q: "Asking people how they want to talk feels unnatural and overly formal.", a: "\"Asking what someone needs from a conversation shows deep respect for their emotional state.\"", bundle: 'pro' },
+        { q: "Good communicators always know exactly what to say next.", a: "\"Supercommunicators focus on matching the other person's energy rather than scripting replies.\"", bundle: 'pro' },
+        { q: "If someone is venting, my job as a friend is to fix their problem immediately.", a: "\"Fixing a problem prematurely invalidates the speaker's emotional experience.\"", bundle: 'pro' },
+        { q: "Small talk is a meaningless social waste of time.", a: "\"Small talk is the essential calibration phase where two minds align their conversational frequency.\"", bundle: 'pro' },
+        { q: "Direct conversations about conversation goals create awkward tension.", a: "\"Declaring conversational goals removes hidden anxiety and creates instant clarity.\"", bundle: 'pro' },
+        { q: "When a conversation feels awkward, it means we have no chemistry.", a: "\"Awkwardness simply signals that you are operating in different conversation modes.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Questions",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Fear of looking intrusive often keeps people locked in surface-level questioning. This deck addresses limiting beliefs around asking deep questions and reframes inquiry as a generous gift.\n\n• Overcome the fear of asking about emotions, choices, and values\n• Recognize that deep questions honor the speaker rather than intruding\n• Shift from asking for dry factual updates to asking for personal stories\n\nMindset: Asking deep questions is an act of generosity, not an intrusion.",
+      inputs: [
+        { q: "Asking personal questions makes me come across as pushy or nosy.", a: "\"People love sharing their values and choices when asked with genuine warmth and care.\"", bundle: 'pro' },
+        { q: "It is safer to stick to factual questions like job titles and news updates.", a: "\"Factual questions trap conversations in cold, boring routine.\"", bundle: 'pro' },
+        { q: "Deep questions should only be asked after knowing someone for years.", a: "\"Deep questions build trust immediately, regardless of how long you've known someone.\"", bundle: 'pro' },
+        { q: "If I ask about feelings, people might become uncomfortable or upset.", a: "\"Inquiring about feelings gives people rare, valuable permission to be authentic.\"", bundle: 'pro' },
+        { q: "People prefer talking about their achievements rather than their struggles.", a: "\"Sharing choices and struggles creates far deeper connections than listing achievements.\"", bundle: 'pro' },
+        { q: "I need a perfect segue before I can ask a meaningful question.", a: "\"Simple, direct questions about values work brilliantly without any elaborate segue.\"", bundle: 'pro' },
+        { q: "Asking someone why they made a choice sounds like an interrogation.", a: "\"Asking what led to a choice invites storytelling when asked with humble curiosity.\"", bundle: 'pro' },
+        { q: "If they give a brief answer, it means they don't want to talk to me.", a: "\"Brief answers often mean they need a warmer, deeper question to feel safe opening up.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Listening",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Active listening is often misunderstood as quiet silence or head nodding. This deck counters limiting beliefs about passive listening and reinforces the necessity of proved listening.\n\n• Reframe listening as an active, visible demonstration rather than quiet silence\n• Embrace correction during looping as a sign of progress rather than failure\n• Recognize that paraphrasing back builds trust faster than agreement\n\nMindset: Silence is invisible; true listening must be proved through verification loops.",
+      inputs: [
+        { q: "Nodding quietly while someone talks is enough to show I am listening.", a: "\"Listening remains completely invisible to the speaker until you repeat back what you heard.\"", bundle: 'pro' },
+        { q: "Repeating back what someone said sounds like a robotic therapeutic gimmick.", a: "\"Paraphrasing in your own words with an accuracy check proves genuine respect.\"", bundle: 'pro' },
+        { q: "If the speaker corrects my paraphrase, it means I failed as a listener.", a: "\"Being corrected is a triumph—it refines your understanding and proves you care about accuracy.\"", bundle: 'pro' },
+        { q: "I should wait until they finish speaking so I can share my point of view.", a: "\"Listening to respond is just waiting your turn; listen to understand and verify.\"", bundle: 'pro' },
+        { q: "Paraphrasing wastes valuable time when we could be solving the issue.", a: "\"Checking understanding early prevents costly misunderstandings and wasted effort later.\"", bundle: 'pro' },
+        { q: "Asking 'Did I get that right?' makes me sound unsure of myself.", a: "\"Asking for confirmation demonstrates intellectual humility and deep commitment to truth.\"", bundle: 'pro' },
+        { q: "If I paraphrase their point, they will think I agree with their entire stance.", a: "\"Understanding someone's perspective is completely distinct from agreeing with it.\"", bundle: 'pro' },
+        { q: "Active listening requires remembering every single detail they said.", a: "\"Effective looping focuses on capturing the underlying feeling, not cataloging every word.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Vulnerability",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Vulnerability is frequently feared as a dangerous weakness that invites judgment. This deck transforms limiting beliefs around personal openness into a strategic tool for mutual entrainment.\n\n• See vulnerability as a courage signal that invites emotional safety\n• Avoid emotional hijacking by matching vulnerability rather than dominating\n• Recognize that perfection isolates while authentic struggle connects\n\nMindset: Perfection creates admiration; authentic vulnerability creates connection.",
+      inputs: [
+        { q: "Showing emotion or admitting struggle makes me look weak or unprofessional.", a: "\"Authentic vulnerability demonstrates psychological strength and invites trust.\"", bundle: 'pro' },
+        { q: "If I share a personal struggle, people will judge or disrespect me.", a: "\"People connect with genuine human struggle far more than polished perfection.\"", bundle: 'pro' },
+        { q: "Sharing vulnerability means dumping all my deepest secrets on strangers.", a: "\"Effective vulnerability matches the speaker's emotional depth step by step.\"", bundle: 'pro' },
+        { q: "I should maintain a stoic, flawless image to inspire confidence in my team.", a: "\"Flawless leaders create distance and anxiety; relatable leaders build loyalty.\"", bundle: 'pro' },
+        { q: "When someone shares a struggle, I should immediately reframe it positively.", a: "\"Rushing to silver linings invalidates their pain; match their depth first.\"", bundle: 'pro' },
+        { q: "Sharing a similar experience steals the spotlight from the other person.", a: "\"Reciprocal sharing builds a bridge when it validates their feeling before offering yours.\"", bundle: 'pro' },
+        { q: "I must wait for others to be vulnerable before I ever open up.", a: "\"Taking the risk to go first sets the emotional tone for the entire relationship.\"", bundle: 'pro' },
+        { q: "Non-verbal signals like laughter matter more than emotional words.", a: "\"Authentic connection requires matching emotional language alongside non-verbal cues.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Goals",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Hidden agendas breed suspicion and miscommunication. This deck counters the fear of transparency and reinforces the power of explicit goal alignment.\n\n• Reframe goal declaration as a tool for safety and clarity\n• Overcome the fear that stating intentions will restrict conversational flow\n• Recognize that aligning goals upfront saves time and prevents conflict\n\nMindset: Explicit goals eliminate hidden assumptions and set conversations free.",
+      inputs: [
+        { q: "Stating my goal for a conversation makes me sound manipulative or rigid.", a: "\"Declaring goals creates complete transparency and eliminates hidden suspicion.\"", bundle: 'pro' },
+        { q: "Conversations should flow completely organically without any structure or intent.", a: "\"Unstructured chats often drift into frustrating, mismatched expectations.\"", bundle: 'pro' },
+        { q: "Asking someone what they want out of a chat puts them on the spot.", a: "\"Asking for their goal empowers them to shape the discussion to meet their needs.\"", bundle: 'pro' },
+        { q: "My goals for a conversation should remain private so I maintain leverage.", a: "\"Hiding your agenda creates distrust and forces the other person onto the defensive.\"", bundle: 'pro' },
+        { q: "If our goals don't align immediately, we shouldn't have the conversation.", a: "\"Discovering misaligned goals early lets you adjust expectations before frustration builds.\"", bundle: 'pro' },
+        { q: "Professional meetings need agendas, but personal chats should never have goals.", a: "\"Knowing whether a personal chat is for venting or advice prevents endless friction.\"", bundle: 'pro' },
+        { q: "Declaring my intent takes away the element of surprise in communication.", a: "\"Surprises in communication usually trigger defensiveness rather than delight.\"", bundle: 'pro' },
+        { q: "If I state my outcome, I won't be able to adapt if the chat changes direction.", a: "\"Clear goals provide a baseline anchor while leaving room for flexible discovery.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Laughter",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Laughter is an evolutionary signal of connection and psychological safety rather than mere entertainment. This deck addresses limiting beliefs around shared laughter, showing how non-verbal humor bids build neural entrainment.\n\n• Reframe laughter as a bid for emotional connection rather than a response to jokes\n• Overcome the fear that laughing in professional settings erodes seriousness\n• Recognize that matching laughter signals mutual safety and lowers social walls\n\nMindset: Laughter is an invitation to connect, not a performance to judge.",
+      inputs: [
+        { q: "Laughter is only appropriate when someone tells a genuinely funny joke.", a: "\"Laughter is primarily a social signal of warmth and safety, rarely about jokes.\"", bundle: 'pro' },
+        { q: "Laughing at work makes me look un-serious or incompetent to executives.", a: "\"Shared laughter reduces social anxiety and signals high psychological safety.\"", bundle: 'pro' },
+        { q: "If someone laughs nervously, I should ignore it and stay completely solemn.", a: "\"Matching laughter warmly de-escalates tension and puts the speaker at ease.\"", bundle: 'pro' },
+        { q: "I need to hold back my natural laughter to maintain professional control.", a: "\"Withholding warmth creates artificial distance and prevents genuine entrainment.\"", bundle: 'pro' },
+        { q: "Laughing together is a childish distraction from important discussions.", a: "\"Shared laughter releases neural tension and opens minds to creative alignment.\"", bundle: 'pro' },
+        { q: "If I laugh during a tense moment, people will think I am mocking them.", a: "\"Warm, empathetic laughter signals goodwill and lowers emotional defensiveness.\"", bundle: 'pro' },
+        { q: "Humor in communication requires quick wit and hilarious punchlines.", a: "\"Conversational humor relies on lighthearted connection, not formal comedy.\"", bundle: 'pro' },
+        { q: "I should only laugh if everyone else in the room laughs first.", a: "\"Offering genuine warmth first signals emotional courage and invites connection.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  supercomm2: [
+    {
+      name: "Emotion",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "In high-conflict discussions, unacknowledged feelings block logical reasoning and escalate defensiveness. This deck addresses limiting beliefs around emotional acknowledgment and reinforces that validating feelings is distinct from surrendering facts.\n\n• Recognize that naming an observed emotion lowers defensiveness without surrendering logic\n• Overcome the fear that acknowledging anger encourages louder shouting\n• Separate emotional validation from agreement with accusations or claims\n\nMindset: Validating an emotion is not surrendering a position; it is the prerequisite for logic.",
+      inputs: [
+        { q: "Validating their anger means I am surrendering my side of the argument.", a: "\"Validating an emotion simply acknowledges their human experience; it never requires surrendering facts.\"", bundle: 'pro' },
+        { q: "If I acknowledge their feelings, they will think I agree with their accusations.", a: "\"Naming someone's emotional pain is completely distinct from agreeing with their logical claims.\"", bundle: 'pro' },
+        { q: "Ignoring emotional outbursts allows us to focus faster on rational facts.", a: "\"Unacknowledged emotions linger and block logical reasoning until they are explicitly validated.\"", bundle: 'pro' },
+        { q: "Strong emotions have no place in professional or strategic negotiations.", a: "\"Conflict is inherently emotional, and acknowledging feelings unlocks constructive problem-solving.\"", bundle: 'pro' },
+        { q: "I should wait for them to calm down before I acknowledge how angry they are.", a: "\"Naming their anger directly in the moment is what allows them to calm down.\"", bundle: 'pro' },
+        { q: "Telling them 'I understand' is enough to show I recognize their pain.", a: "\"Generic statements feel dismissive; specifically naming their observed emotion proves real empathy.\"", bundle: 'pro' },
+        { q: "Validating intense anger will only encourage them to shout louder.", a: "\"Feeling genuinely heard de-escalates anger and lowers conversational volume.\"", bundle: 'pro' },
+        { q: "Emotional acknowledgment is just a cheap trick to manipulate the other person.", a: "\"Sincere emotional validation creates genuine psychological safety during high-stakes friction.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Self-Control",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "In intense disagreements, individuals naturally fight for control, and trying to force control over others triggers immediate resistance. This deck reframes self-control as an internal anchor that invites mutual composure.\n\n• Replace immediate defensiveness with a deliberate, self-regulated pause\n• Recognize that modeling self-control invites partnership rather than compliance\n• View physical arousal as a signal to slow down conversational pacing\n\nMindset: You cannot control another person, but you can invite them to share your self-control.",
+      inputs: [
+        { q: "Pausing during a heated argument makes me look weak or unprepared.", a: "\"Taking a deliberate pause demonstrates self-mastery and prevents impulsive escalation.\"", bundle: 'pro' },
+        { q: "I need to defend myself immediately when someone makes a sharp accusation.", a: "\"Immediate defensiveness fuels conflict; a brief pause lets you choose a strategic response.\"", bundle: 'pro' },
+        { q: "Asking for a pause will make the other person even more impatient and angry.", a: "\"Framing a pause around your own need to digest information invites mutual composure.\"", bundle: 'pro' },
+        { q: "If the argument is escalating, I must raise my voice to maintain control.", a: "\"You cannot force control over another person, but you can invite them to share your calm.\"", bundle: 'pro' },
+        { q: "Taking a breath in the middle of a fight wastes precious negotiating time.", a: "\"Ten seconds of quiet prevents hours of destructive, anger-driven miscommunication.\"", bundle: 'pro' },
+        { q: "I should tell the other person to calm down so we can talk logically.", a: "\"Ordering someone to calm down triggers resistance; modeling self-control invites partnership.\"", bundle: 'pro' },
+        { q: "Feeling my heart race means the negotiation is already falling apart.", a: "\"Physical arousal is a natural signal to pause, breathe, and regulate your pacing.\"", bundle: 'pro' },
+        { q: "Stepping back for a moment means letting them win the argument.", a: "\"Pausing protects the relationship and ensures you respond with clarity rather than emotion.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Environment",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Attempting to resolve deep disagreements when exhausted, in public view, or through rapid text messages amplifies misunderstandings. This deck targets beliefs that block shifting the setting of a fight.\n\n• Recognize that changing time and physical setting protects conversational success\n• Overcome the worry that postponing a late-night argument is avoidance\n• Shift from high-friction channels like text to private, face-to-face dialogue\n\nMindset: Changing where and when you talk changes how you listen.",
+      inputs: [
+        { q: "We must finish this argument right now, no matter how late or exhausted we are.", a: "\"Discussing complex issues during fatigue or late hours guarantees emotional escalation.\"", bundle: 'pro' },
+        { q: "Shifting the time or location of a fight is just a cowardly tactic to avoid the issue.", a: "\"Proposing a better time or place prioritizes the relationship and ensures a fair outcome.\"", bundle: 'pro' },
+        { q: "It doesn't matter where we argue as long as we speak the truth.", a: "\"Public spaces, noise, and bad timing actively distort how messages are sent and received.\"", bundle: 'pro' },
+        { q: "If they bring up an issue in public, I am forced to fight it out right there.", a: "\"You can always propose stepping into a private room to give the topic proper focus.\"", bundle: 'pro' },
+        { q: "Text messages and emails are faster for resolving heated personal disagreements.", a: "\"Digital messaging strips away tone and body language, compounding hostility.\"", bundle: 'pro' },
+        { q: "Postponing a tense discussion until tomorrow will ruin the entire evening.", a: "\"Pausing a late-night fight allows both sides to reset and negotiate with fresh minds.\"", bundle: 'pro' },
+        { q: "Changing the setting gives the other person time to build a stronger case against me.", a: "\"A neutral setting gives both parties equal footing to resolve the issue constructively.\"", bundle: 'pro' },
+        { q: "Environmental factors like hunger, fatigue, and audience have little impact on logic.", a: "\"Physical state and setting heavily shape emotional tolerance and conversational success.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Boundaries",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "In heated arguments, people often pile past grievances and unrelated flaws onto the current topic, overwhelming both participants. This deck reframes boundary setting as a protective tool that keeps conflicts solvable.\n\n• Confine arguments strictly to a single issue to prevent kitchen sinking\n• Establish mutual ground rules that exclude past historical mistakes\n• Recognize that tight boundaries make immediate resolution achievable\n\nMindset: Restricting the boundary of a conflict keeps it small enough to solve.",
+      inputs: [
+        { q: "To settle this argument, we need to address every past mistake in our history.", a: "\"Kitchen sinking past grievances overwhelms the argument and makes resolution impossible.\"", bundle: 'pro' },
+        { q: "Restricting the topic boundary prevents us from reaching true long-term closure.", a: "\"Confining conflict to a single solvable issue builds momentum for broader trust.\"", bundle: 'pro' },
+        { q: "Letting them bring up unrelated past mistakes shows that I am a patient listener.", a: "\"Allowing topic drift expands hostilities; firm boundaries protect constructive focus.\"", bundle: 'pro' },
+        { q: "Setting ground rules for an argument sounds controlling and overly rigid.", a: "\"Mutual boundaries establish safety rules that prevent personal insults and topic sprawl.\"", bundle: 'pro' },
+        { q: "If they attack my character, I have to bring up their past flaws to balance things.", a: "\"Retaliating with past grievances guarantees escalation rather than resolution.\"", bundle: 'pro' },
+        { q: "Big conflicts require solving all underlying relationship problems simultaneously.", a: "\"Complex conflicts are solved step by step by isolating one specific issue at a time.\"", bundle: 'pro' },
+        { q: "Agreeing to leave past arguments out of this discussion means forfeiting my rights.", a: "\"Focusing on today's issue does not erase history; it makes current resolution achievable.\"", bundle: 'pro' },
+        { q: "Boundaries are only necessary when dealing with unreasonable or hostile strangers.", a: "\"Strict topic boundaries are essential for protecting close personal and professional bonds.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Disagreement",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Many people fear that paraphrasing an opponent's stance signals surrender or agreement. This deck addresses limiting beliefs around conflict verification, showing how looping the other side dismantles defensiveness.\n\n• Separate proving understanding of an opposing stance from factual agreement\n• View corrections from an opponent as progress toward accurate comprehension\n• Shift from trying to defeat an opponent to establishing mutual understanding\n\nMindset: Proving you understand an opposing view is not surrendering; it is building a bridge.",
+      inputs: [
+        { q: "Repeating an opponent's argument makes it sound like I am surrendering my position.", a: "\"Proving you understand an opposing view is entirely distinct from agreeing with it.\"", bundle: 'pro' },
+        { q: "If I paraphrase their stance accurately, they will think they have won the argument.", a: "\"Looping an opponent's stance removes their defensiveness and forces them to listen to yours.\"", bundle: 'pro' },
+        { q: "The goal of a disagreement is to prove the other person completely wrong.", a: "\"Constructive conflict seeks mutual understanding and workable solutions, not total defeat.\"", bundle: 'pro' },
+        { q: "If they correct my summary of their stance, it means my listening was a complete failure.", a: "\"Accepting corrections humbly proves genuine commitment to truth and deepens trust.\"", bundle: 'pro' },
+        { q: "I should focus my energy on preparing my counter-argument while they are speaking.", a: "\"Formulating counter-attacks while they speak prevents true comprehension and prolongs conflict.\"", bundle: 'pro' },
+        { q: "People in deep disagreement will never listen to reason until they are forced to.", a: "\"Opponents become open to reason only after they feel their own stance has been fully understood.\"", bundle: 'pro' },
+        { q: "Acknowledging valid points in their opposing argument weakens my overall leverage.", a: "\"Acknowledging valid points demonstrates intellectual honesty and invites reciprocal concessions.\"", bundle: 'pro' },
+        { q: "Looping an opponent's view takes too much time when we need an immediate decision.", a: "\"Proving understanding upfront eliminates endless circular arguments and saves time.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  supercomm3: [
+    {
+      name: "In-Group",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "In group conflicts and tribal divisions, people often assume that highlighting shared bonds erodes their own group's distinct identity. This deck addresses limiting beliefs around bridging social divides, showing how superordinate identities create safety for discussing differences.\n\n• Identify shared identities that unite competing groups on equal footing\n• Overcome the fear that finding common ground means compromising core values\n• View group divisions as opportunities for building broader, inclusive trust\n\nMindset: Shared identity creates the safety needed to discuss differences.",
+      inputs: [
+        { q: "Emphasizing common ground with another group means compromising my own group's core values.", a: "\"Highlighting a shared superordinate identity creates the safety needed to address differences.\"", bundle: 'pro' },
+        { q: "Out-group members will never understand or respect our distinct cultural background.", a: "\"Validating shared human goals builds mutual respect across deep cultural divides.\"", bundle: 'pro' },
+        { q: "Mentioning what unites us makes it look like I am betraying my team's interests.", a: "\"Building bridges strengthens your team's standing by turning opponents into partners.\"", bundle: 'pro' },
+        { q: "We are too different from the other department to ever find meaningful common ground.", a: "\"Every group shares superordinate goals when you look at the larger organizational mission.\"", bundle: 'pro' },
+        { q: "If the other group pushes back, it proves that bridging divides is a complete waste of time.", a: "\"Skeptical pushback is a normal phase; re-affirming shared purpose overcomes initial doubt.\"", bundle: 'pro' },
+        { q: "Focusing on shared identity erodes the unique achievements of my own group.", a: "\"You can honor your group's unique history while simultaneously celebrating shared goals.\"", bundle: 'pro' },
+        { q: "Social divisions are too deeply entrenched for simple bridging statements to matter.", a: "\"Small, explicit reminders of shared identity reset neural entrainment and lower tribal hostility.\"", bundle: 'pro' },
+        { q: "Bridging divides requires convincing the other group to adopt our exact worldview.", a: "\"Bridging requires discovering shared purpose, not forcing ideological uniformity.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Identities",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "When people are reduced to a single label or department, they retreat into defensive stereotyping. This deck addresses limiting beliefs around exploring multiple identities, demonstrating how drawing out multifaceted roles dismantles polarization.\n\n• Avoid trapping colleagues or opponents in one-dimensional social labels\n• Inquire into diverse life experiences, roles, and background perspectives\n• Reframe identity complexity as a rich asset for collaborative problem-solving\n\nMindset: People are mosaics of multiple identities; inviting the whole person builds connection.",
+      inputs: [
+        { q: "People prefer to be viewed strictly through their professional job title or department role.", a: "\"Inviting people to share their multifaceted roles unlocks deeper, authentic connection.\"", bundle: 'pro' },
+        { q: "Asking someone about their different life roles sounds intrusive or overly personal.", a: "\"Inquiring how diverse experiences shape someone's perspective demonstrates genuine respect.\"", bundle: 'pro' },
+        { q: "A person's political or departmental label tells me everything I need to know about them.", a: "\"Single labels create false stereotypes; every individual holds complex, overlapping identities.\"", bundle: 'pro' },
+        { q: "Exploring multiple identities distracts from the core professional topic at hand.", a: "\"Surface-level discussions miss key insights that multifaceted background experiences provide.\"", bundle: 'pro' },
+        { q: "If someone disagrees with my project proposal, it is because of their rigid departmental identity.", a: "\"Disagreements stem from conflicting priorities, not fixed tribal identities.\"", bundle: 'pro' },
+        { q: "People should leave their personal background and diverse identities at the door when at work.", a: "\"Psychological safety grows when people feel welcomed to bring their full selves to dialogue.\"", bundle: 'pro' },
+        { q: "Asking how someone balances dual roles puts them on the spot and causes discomfort.", a: "\"Acknowledging the complex hats someone wears validates their hard work and dedication.\"", bundle: 'pro' },
+        { q: "Complex identity exploration is only relevant during diversity workshops or formal retreats.", a: "\"Drawing out multifaceted identities enriches everyday problem-solving and team alignment.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Affirmation",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Identity threat triggers intense defensiveness, leading individuals to dig in or withdraw during difficult conversations. This deck targets limiting beliefs around identity affirmation, showing how validating professional standing and social identity removes perceived threat.\n\n• Explicitly affirm individual competence and cultural value before challenging topics\n• Separate critiques of specific ideas from attacks on core identity or group belonging\n• Eliminate stereotype threat by demonstrating genuine respect for personal expertise\n\nMindset: Affirming someone's identity removes threat and opens the door to constructive dialogue.",
+      inputs: [
+        { q: "Affirming someone's professional identity before giving feedback makes me sound soft.", a: "\"Affirming identity removes defensiveness, allowing people to actually hear your feedback.\"", bundle: 'pro' },
+        { q: "Highly experienced professionals do not need reassurance about their competence or value.", a: "\"Identity threat affects everyone; explicit affirmation preserves psychological safety.\"", bundle: 'pro' },
+        { q: "If I praise their technical mastery, they will resist making necessary workflow changes.", a: "\"Respecting their core mastery gives them the confidence needed to adopt new methods.\"", bundle: 'pro' },
+        { q: "Identity affirmation is unnecessary praise that wastes valuable meeting time.", a: "\"Validating a person's standing upfront prevents hours of anxiety-driven pushback later.\"", bundle: 'pro' },
+        { q: "Critiquing an idea naturally implies that I doubt the person's overall capability.", a: "\"Separate the quality of an idea from the inherent worth and expertise of the person.\"", bundle: 'pro' },
+        { q: "People from minority or specialized backgrounds prefer that their identity not be acknowledged.", a: "\"Explicitly valuing unique cultural or technical perspectives makes people feel seen.\"", bundle: 'pro' },
+        { q: "Affirming identity feels fake if I disagree with the person's current proposal.", a: "\"You can sincerely respect someone's long-term expertise while challenging a specific plan.\"", bundle: 'pro' },
+        { q: "Acknowledging identity threat is the other person's responsibility to manage internally.", a: "\"Supercommunicators actively eliminate identity threat to foster open, trust-filled dialogue.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Intent",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Digital channels strip away vocal pitch, facial expressions, and body language, leading recipients to instinctively interpret ambiguous text as negative or sarcastic. This deck addresses limiting beliefs around overcommunicating intent in written messages.\n\n• Explicitly state positive motives and warmth at the start of written messages\n• Overcompensate for missing non-verbal cues with warmth, gratitude, and politeness\n• Recognize that written brevity is easily misread as coldness, cynicism, or hostility\n\nMindset: Written channels hide your warmth; you must explicitly state your intent to be understood.",
+      inputs: [
+        { q: "My positive intentions should be obvious to anyone reading my email or Slack message.", a: "\"Digital text strips away tone; if you do not explicitly state warmth, readers assume coldness.\"", bundle: 'pro' },
+        { q: "Overcommunicating intent makes written messages sound overly polite or wordy.", a: "\"Explicit intent markers prevent costly misinterpretations and preserve digital goodwill.\"", bundle: 'pro' },
+        { q: "Short, blunt text messages are more efficient for getting work done quickly.", a: "\"Brief text without intent markers triggers defensiveness, wasting time on damage control.\"", bundle: 'pro' },
+        { q: "Adding warm phrasing or intent markers in work messages looks unprofessional.", a: "\"Digital warmth signals psychological safety and builds strong remote working relationships.\"", bundle: 'pro' },
+        { q: "If a recipient misinterprets my message as sarcastic, that is their fault for assuming bad intent.", a: "\"The sender is responsible for compensating for the digital channel's missing vocal cues.\"", bundle: 'pro' },
+        { q: "Stating my constructive intent upfront gives away my leverage in a negotiation.", a: "\"Clear intent removes hidden suspicion, creating transparency that leads to faster agreements.\"", bundle: 'pro' },
+        { q: "Intent markers are only needed when sending bad news or difficult critiques.", a: "\"Routine check-ins and quick questions benefit immensely from explicit intent framing.\"", bundle: 'pro' },
+        { q: "Emojis and polite opening phrases are a childish substitute for clear writing.", a: "\"Digital markers replace missing facial expressions and signal genuine human connection.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Medium",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Every communication channel—email, text, Slack, phone, and video—has its own implicit norms, speed, and constraints. This deck addresses limiting beliefs around channel selection, showing how matching the medium prevents written friction.\n\n• Adapt message speed, formality, and structure to match the specific medium\n• Transition emotionally charged or complex discussions off text/email onto voice calls\n• Recognize that miscommunication often stems from using the wrong channel, not wrong ideas\n\nMindset: Every communication channel has its own rules; match the medium to match the mind.",
+      inputs: [
+        { q: "Any topic can be resolved over text or email if people just read carefully.", a: "\"Complex or emotionally sensitive topics require the rich vocal cues of voice or video calls.\"", bundle: 'pro' },
+        { q: "Switching from chat to a phone call is an inconvenient interruption to the workday.", a: "\"A two-minute phone call resolves tense misunderstandings faster than twenty chat messages.\"", bundle: 'pro' },
+        { q: "Formal emails are outdated; everything should be communicated via rapid chat apps.", a: "\"Different channels serve different purposes; match formality to the medium and message.\"", bundle: 'pro' },
+        { q: "If a text thread becomes tense, I should keep replying in text until it is settled.", a: "\"Text friction signals that the channel has failed; change the medium immediately.\"", bundle: 'pro' },
+        { q: "Calling someone unexpectedly is intrusive, so I should always stick to written messages.", a: "\"Offering a quick, warm voice call shows care and prevents written misinterpretation.\"", bundle: 'pro' },
+        { q: "The channel used does not affect how my message is received as long as the facts are right.", a: "\"Medium selection sets the conversational rules and heavily shapes recipient interpretation.\"", bundle: 'pro' },
+        { q: "Using informal chat channels for formal bug reports or policy updates is harmless.", a: "\"Matching official channels ensures critical information is tracked and triaged properly.\"", bundle: 'pro' },
+        { q: "If someone sends me an angry email, I must respond in writing to document my side.", a: "\"De-escalate written hostility by picking up the phone before documenting resolution in writing.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };

@@ -16494,4 +16494,322 @@ const multiStepCollections = {
       ]
     },
   ],
+  supercomm1: [
+    {
+      name: "The Connection Arc",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Deep, meaningful conversations do not happen by accident; they follow a natural progression from initial alignment to mutual openness. This sequence demonstrates how to initiate a conversation with transparent goals, draw out the speaker's core values using deep questions, and prove active listening through verification loops. By structuring interactions around this three-stage arc, you eliminate hidden anxiety, establish psychological safety, and transform surface-level small talk into genuine human connection.\n\nMindset: Conversation moves from intent to inquiry to proved understanding.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You sit down with a colleague who seems disengaged and distant during your regular check-in.",
+          steps: [
+            { front: "Declaring Goals — Initiating the chat", back: "\"My goal today is just to catch up and see how you're really doing. What would make this check-in feel worthwhile for you?\"", guideFront: "Share your intent when...", guideBack: "A goal declaration" },
+            { front: "Deep Questioning — Surface their core experience", back: "\"When you look at your current projects, what part of your work is feeling most rewarding or most frustrating right now?\"", guideFront: "Ask about values when...", guideBack: "A deep question" },
+            { front: "Looping for Understanding — Prove you listened", back: "\"So what I hear is that you feel disconnected from the big picture decisions — did I capture that right?\"", guideFront: "Prove you listened when...", guideBack: "A looping verification" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A close friend calls you feeling anxious about a potential job change.",
+          steps: [
+            { front: "Match the Conversation — Align mindsets upfront", back: "\"That sounds like a massive decision. Do you want to map out the practical options together, or do you just need space to talk through how you feel?\"", guideFront: "Align your mindset when...", guideBack: "A mindset matching invitation" },
+            { front: "Deep Questioning — Explore underlying motivations", back: "\"What core values or personal goals are driving you toward making a change right now?\"", guideFront: "Ask about values when...", guideBack: "A deep question" },
+            { front: "Reciprocal Vulnerability — Share matching experience", back: "\"I know that fear so well. When I left my last company, I spent weeks terrified that I was making a huge mistake.\"", guideFront: "Share authentic feelings when...", guideBack: "A shared personal experience" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A family member is quiet and withdrawn during a family gathering.",
+          steps: [
+            { front: "Match the Conversation — Offer low-pressure alignment", back: "\"I notice you're quiet tonight. Do you want a quiet corner to relax, or would you like to chat about something light?\"", guideFront: "Align your mindset when...", guideBack: "A mindset matching invitation" },
+            { front: "Reciprocal Vulnerability — Offer authentic connection", back: "\"Honestly, I've been feeling pretty drained by social events lately myself.\"", guideFront: "Share authentic feelings when...", guideBack: "A shared personal experience" },
+            { front: "Looping for Understanding — Confirm their perspective", back: "\"So you just need a bit of time to recharge your battery before joining the group — am I reading that right?\"", guideFront: "Prove you listened when...", guideBack: "A looping verification" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Empathetic Bridge",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Building emotional safety during moments of vulnerability requires a deliberate step-by-step approach. This sequence demonstrates how to create a supportive environment by declaring transparent intentions, confirming the speaker's emotional state through verification loops, and offering reciprocal personal openness. Rather than rushing to fix problems or offering unsolicited advice, this structured arc validates the speaker's feelings, removes fear of judgment, and establishes authentic, mutual trust.\n\nMindset: Empathetic connection requires listening before sharing your own story.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your team is showing signs of extreme stress after a difficult product release.",
+          steps: [
+            { front: "Declaring Goals — State supportive purpose", back: "\"My goal in bringing us together today is to support the team and review our workload. What do you need most right now?\"", guideFront: "Share your intent when...", guideBack: "A goal declaration" },
+            { front: "Looping for Understanding — Reflect team sentiment", back: "\"What you're saying is that the constant shifting priorities make it feel impossible to do quality work — is that accurate?\"", guideFront: "Prove you listened when...", guideBack: "A looping verification" },
+            { front: "Reciprocal Vulnerability — Match emotional honesty", back: "\"I hear you, and honestly, I've felt overwhelmed and exhausted by these executive demands too.\"", guideFront: "Share authentic feelings when...", guideBack: "A shared personal experience" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A new team member arrives at a networking dinner looking hesitant and overwhelmed.",
+          steps: [
+            { front: "Declaring Goals — Put them at ease", back: "\"My only agenda tonight is to make sure you feel welcome and enjoy dinner. What can I introduce you to?\"", guideFront: "Share your intent when...", guideBack: "A goal declaration" },
+            { front: "Deep Questioning — Invite personal story", back: "\"What originally drew you to this field, and what has been the most exciting surprise so far?\"", guideFront: "Ask about values when...", guideBack: "A deep question" },
+            { front: "Reciprocal Vulnerability — Normalize their experience", back: "\"I remember my first week here vividly — I was so nervous I almost walked out of the opening dinner!\"", guideFront: "Share authentic feelings when...", guideBack: "A shared personal experience" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A peer confides that they made a significant mistake on a joint project.",
+          steps: [
+            { front: "Match the Conversation — Clarify support mode", back: "\"Thank you for telling me. Do you want to figure out a fix together, or do you need a moment to process the stress first?\"", guideFront: "Align your mindset when...", guideBack: "A mindset matching invitation" },
+            { front: "Reciprocal Vulnerability — Remove shame", back: "\"I've made painful mistakes on key projects before too. It's horrible, but we will handle it.\"", guideFront: "Share authentic feelings when...", guideBack: "A shared personal experience" },
+            { front: "Looping for Understanding — Verify the core concern", back: "\"So your main concern is losing trust with the client — did I get that right?\"", guideFront: "Prove you listened when...", guideBack: "A looping verification" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Deep Alignment",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Achieving long-term strategic and interpersonal alignment requires navigating complex conversations without triggering defensiveness. This sequence shows how to establish shared intent upfront, explore core motivations and underlying values through deep questions, and lock in mutual agreement using precise verification loops. By guiding interactions through these three deliberate stages, you ensure both parties feel fully heard, clarify hidden expectations, and turn potential friction into lasting collaboration.\n\nMindset: Lasting alignment is built by discovering values and verifying agreement.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You and your manager have differing ideas on how to structure an upcoming initiative.",
+          steps: [
+            { front: "Declaring Goals — Frame constructive dialogue", back: "\"My objective today is to make sure our initiative succeeds while protecting team capacity. What is your primary focus?\"", guideFront: "Share your intent when...", guideBack: "A goal declaration" },
+            { front: "Deep Questioning — Surface strategic values", back: "\"What long-term outcomes matter most to you when you look at the future of our department?\"", guideFront: "Ask about values when...", guideBack: "A deep question" },
+            { front: "Looping for Understanding — Validate strategic concerns", back: "\"So what you care about most is maintaining rapid delivery speed, even if we adjust scope — did I get that right?\"", guideFront: "Prove you listened when...", guideBack: "A looping verification" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You and a close partner keep having small arguments over household planning.",
+          steps: [
+            { front: "Match the Conversation — Check conversational readiness", back: "\"I want us to feel on the same page. Are we in a problem-solving mindset right now, or are we just sharing feelings?\"", guideFront: "Align your mindset when...", guideBack: "A mindset matching invitation" },
+            { front: "Deep Questioning — Inquire into underlying feelings", back: "\"What part of this planning situation makes you feel most stressed or unappreciated?\"", guideFront: "Ask about values when...", guideBack: "A deep question" },
+            { front: "Looping for Understanding — Lock in real agreement", back: "\"So for you, it's not about the chores themselves, but feeling like we make decisions as a team — is that right?\"", guideFront: "Prove you listened when...", guideBack: "A looping verification" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A long-time coworker is upset about executive management changes.",
+          steps: [
+            { front: "Reciprocal Vulnerability — Share mutual grounding", back: "\"I'm feeling the uncertainty too — it's tough when everything feels like it's shifting at once.\"", guideFront: "Share authentic feelings when...", guideBack: "A shared personal experience" },
+            { front: "Deep Questioning — Uncover core priorities", back: "\"What aspect of your daily work or culture do you care most about protecting through this transition?\"", guideFront: "Ask about values when...", guideBack: "A deep question" },
+            { front: "Declaring Goals — Offer collaborative support", back: "\"I want to make sure we advocate for our team together. How can we support each other best this month?\"", guideFront: "Share your intent when...", guideBack: "A goal declaration" },
+          ]
+        },
+      ]
+    },
+  ],
+  supercomm2: [
+    {
+      name: "Acknowledge, Then Loop",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Resolving intense interpersonal conflicts requires validating the opponent's emotional state before attempting to clarify factual positions. This sequence demonstrates how to name and acknowledge intense feelings first to calm psychological defensiveness, followed immediately by looping their opposing stance to prove accurate understanding. By separating emotional validation from factual agreement, you lower hostility, establish mutual respect, and create space for constructive negotiation without surrendering your own position.\n\nMindset: Naming emotion calms defensiveness before you prove you understand their stance.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A key software vendor threatens to cut off service access, angry about overdue custom integration payments.",
+          steps: [
+            { front: "Emotional Acknowledgment — Validate their business frustration", back: "\"It makes complete sense that you're furious about this payment delay, and I see why unfulfilled terms feel totally unacceptable.\"", guideFront: "Validate feelings when...", guideBack: "An emotional validation" },
+            { front: "Loop the Other Side — Prove understanding of their stance", back: "\"So from your perspective, continuing technical support without settled invoice logs puts your operational budget at risk — did I state your position accurately?\"", guideFront: "Prove understanding during disagreement when...", guideBack: "A disagreement verification loop" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A peer confronts you after a executive briefing, shouting that you stole credit for their team's research.",
+          steps: [
+            { front: "Emotional Acknowledgment — Validate feeling unappreciated", back: "\"I can see the deep anger and disrespect you're feeling, and it is undeniably frustrating when hard work appears to go unrecognized.\"", guideFront: "Validate feelings when...", guideBack: "An emotional validation" },
+            { front: "Loop the Other Side — Confirm their core accusation", back: "\"So what you're saying is that by presenting the summary slides myself, I made it look like my team did all the research — is that how you see it?\"", guideFront: "Prove understanding during disagreement when...", guideBack: "A disagreement verification loop" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A sibling angrily accuses you of neglecting maintenance responsibilities for a shared family vacation home.",
+          steps: [
+            { front: "Emotional Acknowledgment — Validate emotional exhaustion", back: "\"You're carrying a huge emotional burden here, and feeling resentful about handling maintenance alone is entirely understandable.\"", guideFront: "Validate feelings when...", guideBack: "An emotional validation" },
+            { front: "Loop the Other Side — Verify their proposed solution", back: "\"So for you, the core issue is establishing a fixed schedule where I take full charge of repairs during summer months — did I capture your expectation right?\"", guideFront: "Prove understanding during disagreement when...", guideBack: "A disagreement verification loop" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Reset the Setting and Scope",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Heated arguments often escalate rapidly because bad timing, public audiences, or expanding topic lists prevent reasonable discussion. This sequence shows how to model self-control during an emotional flare-up, shift the physical or temporal environment to a neutral setting, and enforce strict topic boundaries around a single solvable issue. By taking control of the conversational container, you prevent kitchen sinking and turn chaotic fights into structured discussions.\n\nMindset: Changing where, when, and what you argue keeps conflict manageable.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your housemate starts a loud, angry argument about overdue bills in the hallway at midnight.",
+          steps: [
+            { front: "Sharing Self-Control — Invite a shared pause", back: "\"I hear how upset you are, but my mind is racing. Let's both take a deep breath so we don't shout in the middle of the night.\"", guideFront: "Share a pause when...", guideBack: "A shared self-control invitation" },
+            { front: "Controlling the Environment — Shift timing and location", back: "\"It's midnight and we're exhausted. Can we pause and sit down in the kitchen tomorrow morning at 8 AM to go through the bills together?\"", guideFront: "Shift the setting when...", guideBack: "An environmental shift proposal" },
+            { front: "Controlling the Boundaries — Restrict topic scope", back: "\"When we meet tomorrow, let's agree to focus strictly on clearing this electricity bill, and talk about house chores separately.\"", guideFront: "Set topic limits when...", guideBack: "A boundary agreement proposal" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A team member interrupts a client presentation, angrily criticizing department budget allocations in front of stakeholders.",
+          steps: [
+            { front: "Sharing Self-Control — Model executive composure", back: "\"That is a significant concern. Give me ten seconds to take that in so we don't debate budget figures emotionally in this review.\"", guideFront: "Share a pause when...", guideBack: "A shared self-control invitation" },
+            { front: "Controlling the Environment — Move to a private setting", back: "\"Internal budget allocations need dedicated focus. Let's pause this topic now and step into a private conference room immediately after this presentation.\"", guideFront: "Shift the setting when...", guideBack: "An environmental shift proposal" },
+            { front: "Controlling the Boundaries — Enforce meeting scope", back: "\"In our private session, let's agree to restrict our discussion strictly to Q3 software licenses, and leave next year's headcount out of it.\"", guideFront: "Set topic limits when...", guideBack: "A boundary agreement proposal" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "An angry customer approaches your service counter, shouting loudly about a failed product in front of a long line of shoppers.",
+          steps: [
+            { front: "Emotional Acknowledgment — Name customer frustration", back: "\"I hear how furious and disappointed you are, and I completely acknowledge how frustrating it is when a product fails you.\"", guideFront: "Validate feelings when...", guideBack: "An emotional validation" },
+            { front: "Controlling the Environment — Shift to a private counter", back: "\"I want to give this your full attention without store noise. Can we step over to our quiet customer service desk so I can process this properly?\"", guideFront: "Shift the setting when...", guideBack: "An environmental shift proposal" },
+            { front: "Controlling the Boundaries — Focus on immediate remedy", back: "\"Let's focus strictly on processing your refund or replacement today, and I'll submit your product feedback directly to management.\"", guideFront: "Set topic limits when...", guideBack: "A boundary agreement proposal" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Conflict Bridge",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Building a bridge across a deep ideological or professional disagreement requires a complete de-escalation framework. This sequence demonstrates how to acknowledge underlying emotional strain, restrict the conflict boundary to a solvable scope, and loop the opponent's stance until complete understanding is proved. By systematically working through these three stages, you dismantle defensiveness, establish psychological safety, and transform hostile standoffs into productive problem-solving sessions.\n\nMindset: Bridging conflict requires emotional validation, tight focus, and proved understanding.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A major client calls demanding contract cancellation after a severe service outage disrupted their business.",
+          steps: [
+            { front: "Emotional Acknowledgment — Acknowledge business impact", back: "\"I fully realize the severe stress and anger this outage has caused, and there's no question that your operations suffered serious disruption.\"", guideFront: "Validate feelings when...", guideBack: "An emotional validation" },
+            { front: "Controlling the Boundaries — Limit discussion scope", back: "\"I want to fix this with you, but can we agree to focus strictly on restoring your system stability today, and review contract SLA penalties tomorrow?\"", guideFront: "Set topic limits when...", guideBack: "A boundary agreement proposal" },
+            { front: "Loop the Other Side — Confirm their core demand", back: "\"So from your perspective, system restoration is meaningless without a guaranteed uptime SLA from our engineering lead — did I state your position accurately?\"", guideFront: "Prove understanding during disagreement when...", guideBack: "A disagreement verification loop" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Co-founders argue bitterly over company strategic direction during an executive board retreat.",
+          steps: [
+            { front: "Sharing Self-Control — De-escalate personal anger", back: "\"We both care deeply about this company, but we're speaking in anger. Let's take thirty seconds of silence to calm down before we continue.\"", guideFront: "Share a pause when...", guideBack: "A shared self-control invitation" },
+            { front: "Controlling the Boundaries — Confine scope to core strategy", back: "\"Can we agree to restrict our discussion strictly to our enterprise sales strategy, and leave past hiring decisions out of this?\"", guideFront: "Set topic limits when...", guideBack: "A boundary agreement proposal" },
+            { front: "Loop the Other Side — Verify strategic concerns", back: "\"So what you're saying is that pivoting to enterprise sales now risks draining our cash reserves before product-market fit — did I capture your concern right?\"", guideFront: "Prove understanding during disagreement when...", guideBack: "A disagreement verification loop" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A neighbor angrily confronts you over a shared fence replacement, claiming your contractor damaged their landscaping.",
+          steps: [
+            { front: "Emotional Acknowledgment — Validate neighbor anger", back: "\"It is completely valid that you're upset about your yard, and seeing your property damaged like that is deeply upsetting.\"", guideFront: "Validate feelings when...", guideBack: "An emotional validation" },
+            { front: "Controlling the Environment — Shift from yard to private porch", back: "\"Let's step onto the porch and sit down with a glass of water so we can look at the contractor's repair plan quietly.\"", guideFront: "Shift the setting when...", guideBack: "An environmental shift proposal" },
+            { front: "Loop the Other Side — Confirm repair expectations", back: "\"So for you, the key issue is having the contractor replace the specific damaged shrubs by Friday — even though I need to check their schedule, did I get that right?\"", guideFront: "Prove understanding during disagreement when...", guideBack: "A disagreement verification loop" },
+          ]
+        },
+      ]
+    },
+  ],
+  supercomm3: [
+    {
+      name: "The Digital Bridge",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Digital channels often strip away vocal warmth and identity context, leading group discussions to quickly deteriorate into rigid misunderstandings or text-based hostility. This sequence demonstrates how to navigate tense digital exchanges by overcommunicating positive intent in writing, affirming the speaker's professional identity, and transitioning the conversation onto a voice or video medium. By establishing digital warmth and shifting to a rich communication channel, you restore psychological safety and resolve group tension smoothly.\n\nMindset: Digital warmth and channel matching turn written friction into collaborative dialogue.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A Slack debate between marketing and engineering over a product launch date becomes sarcastic and hostile.",
+          steps: [
+            { front: "Overcommunicating Intent — A marketing lead posts a sharp comment about missed deadlines", back: "\"Posting with complete respect for engineering — my intent is simply to make sure our launch event aligns with your delivery schedule!\"", guideFront: "Clarify digital motives when...", guideBack: "An explicit intent statement" },
+            { front: "Identity Affirmation — An engineer replies that marketing does not understand technical complexity", back: "\"Your technical rigor is what makes our product great, and we deeply value your team's dedication to quality.\"", guideFront: "Affirm social identity when...", guideBack: "An identity affirmation statement" },
+            { front: "Matching the Medium — The engineer notes that text chat makes everything sound combative", back: "\"Chat is making this sound hostile — let's jump on a quick 5-minute video call right now to align smoothly!\"", guideFront: "Adapt your channel when...", guideBack: "A channel-matched digital message" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "An email thread about budget allocations between design and analytics devolves into accusatory reply-all chains.",
+          steps: [
+            { front: "Overcommunicating Intent — An analyst emails that design's request ignores data constraints", back: "\"Writing with genuine goodwill — my goal is just to help us find a balanced budget that supports both design and analytics!\"", guideFront: "Clarify digital motives when...", guideBack: "An explicit intent statement" },
+            { front: "Exploring Multiple Identities — The lead designer notes that they feel treated as mere decorators", back: "\"Given your dual background in visual arts and user research, how do you see our budget balancing aesthetics and data?\"", guideFront: "Draw out identities when...", guideBack: "A multi-identity exploration question" },
+            { front: "Matching the Medium — The analyst agrees that email chains cause unnecessary defensiveness", back: "\"This email chain is creating clutter — I've set up a 15-minute call tomorrow so we can finalize the budget together!\"", guideFront: "Adapt your channel when...", guideBack: "A channel-matched digital message" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A remote contractor receives written feedback on a draft report and sends an anxious message fearing contract termination.",
+          steps: [
+            { front: "Identity Affirmation — The contractor texts that they feel their expertise is being questioned", back: "\"Your specialist expertise is highly valued on this project, and your standing with our team is completely solid.\"", guideFront: "Affirm social identity when...", guideBack: "An identity affirmation statement" },
+            { front: "Overcommunicating Intent — The contractor asks why so many redline edits were made in the document", back: "\"Sending these notes with great appreciation — my intent is purely to polish the formatting for the board review!\"", guideFront: "Clarify digital motives when...", guideBack: "An explicit intent statement" },
+            { front: "Matching the Medium — The contractor expresses relief but admits text messaging created anxiety", back: "\"Text notes can easily sound harsh — let's do a quick phone call whenever you're free so we can review the edits together!\"", guideFront: "Adapt your channel when...", guideBack: "A channel-matched digital message" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Identity Alignment",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Group conflicts frequently arise when individuals feel reduced to a single label or perceive a threat to their professional standing. This sequence illustrates how to navigate group friction by establishing a shared superordinate identity, affirming individual professional value, and drawing out multifaceted background experiences. By elevating what unites the group while honoring individual complexity, supercommunicators eliminate social identity threat and foster genuine collaboration across divisional boundaries.\n\nMindset: Uniting shared purpose while honoring individual identity creates deep group alignment.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A committee of sales leads and product managers clashes over feature prioritization for the upcoming sprint.",
+          steps: [
+            { front: "In-Group Bridging — Sales claims product managers are out of touch with customers", back: "\"As teammates who both want our company to succeed, our shared mission is to deliver maximum value to our users.\"", guideFront: "Bridge social divides when...", guideBack: "An in-group bridging statement" },
+            { front: "Identity Affirmation — Product managers argue that sales ignores technical constraints", back: "\"Your frontline sales experience brings indispensable client insights that our entire team relies on.\"", guideFront: "Affirm social identity when...", guideBack: "An identity affirmation statement" },
+            { front: "Exploring Multiple Identities — A sales lead mentions having worked in technical support previously", back: "\"Bringing your experience from both technical support and direct sales, how should we weigh these sprint items?\"", guideFront: "Draw out identities when...", guideBack: "A multi-identity exploration question" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Staff from two recently merged regional offices argue over whose client onboarding process should be adopted.",
+          steps: [
+            { front: "In-Group Bridging — Staff from office A claim office B's process is slow and outdated", back: "\"As members of one united company now, our common goal is to build an onboarding flow that serves all our clients well.\"", guideFront: "Bridge social divides when...", guideBack: "An in-group bridging statement" },
+            { front: "Identity Affirmation — Staff from office B express fear that their legacy accomplishments are being erased", back: "\"Your office's outstanding track record and deep client loyalty over the past decade are deeply respected across our firm.\"", guideFront: "Affirm social identity when...", guideBack: "An identity affirmation statement" },
+            { front: "Exploring Multiple Identities — A manager from office B notes they worked at office A's headquarters years ago", back: "\"With your unique background in both regional operations, what hybrid onboarding model would work best for our team?\"", guideFront: "Draw out identities when...", guideBack: "A multi-identity exploration question" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A specialized research scientist feels alienated and ignored by commercial operations managers during product planning.",
+          steps: [
+            { front: "Identity Affirmation — The scientist states that commercial goals are diluting scientific integrity", back: "\"Your scientific rigor and research excellence are the foundation of this company, and we deeply honor your work.\"", guideFront: "Affirm social identity when...", guideBack: "An identity affirmation statement" },
+            { front: "In-Group Bridging — The scientist notes that commercial managers only care about short-term profits", back: "\"We are all partners on the same team, dedicated to turning groundbreaking research into real-world human impact.\"", guideFront: "Bridge social divides when...", guideBack: "An in-group bridging statement" },
+            { front: "Exploring Multiple Identities — The scientist reveals they previously founded an educational startup", back: "\"Given your background both as a research scientist and an entrepreneur, how can we balance rigor with launch speed?\"", guideFront: "Draw out identities when...", guideBack: "A multi-identity exploration question" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Constructive Dialogue Arc",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "Leading a team through sensitive organizational discussions requires balancing digital clarity with personal empathy. This sequence demonstrates how to initiate a complex group discussion by overcommunicating positive intent, drawing out multifaceted perspectives, and establishing a shared superordinate identity. By explicitly framing intentions and inviting individual complexity before defining group goals, you ensure every participant feels valued and empowered to contribute to the collective outcome.\n\nMindset: Explicit intent and shared identity transform potentially defensive meetings into constructive dialogue.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A department meeting regarding new remote work guidelines becomes tense and emotionally charged.",
+          steps: [
+            { front: "Overcommunicating Intent — A team member asks if management is attempting to reduce workplace flexibility", back: "\"Reaching out with complete support for our team — my intent in reviewing these rules is to protect both flexibility and collaboration!\"", guideFront: "Clarify digital motives when...", guideBack: "An explicit intent statement" },
+            { front: "Exploring Multiple Identities — A senior engineer mentions balancing family care with intense coding projects", back: "\"Wearing your different hats as a senior developer and a family caregiver, what policy structure supports your productivity best?\"", guideFront: "Draw out identities when...", guideBack: "A multi-identity exploration question" },
+            { front: "In-Group Bridging — Another member worries that different schedules will divide full-time and part-time staff", back: "\"As colleagues who trust one another, our shared commitment is to build a fair system that supports everyone on this team.\"", guideFront: "Bridge social divides when...", guideBack: "An in-group bridging statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A project review with external partners, internal engineers, and client leads stalls over conflicting requirements.",
+          steps: [
+            { front: "Overcommunicating Intent — An external partner asks why internal engineers are challenging their proposal", back: "\"Speaking with total goodwill — our intent in asking these questions is simply to ensure seamless system compatibility!\"", guideFront: "Clarify digital motives when...", guideBack: "An explicit intent statement" },
+            { front: "Identity Affirmation — Internal engineers argue that external partner code lacks necessary security compliance", back: "\"Your technical team's security standards are top-tier, and we rely on your vigilance to protect our platform.\"", guideFront: "Affirm social identity when...", guideBack: "An identity affirmation statement" },
+            { front: "In-Group Bridging — The client lead expresses frustration that technical debate is delaying market launch", back: "\"We are all partners united on this launch, and our shared goal is to deliver a secure, world-class product together.\"", guideFront: "Bridge social divides when...", guideBack: "An in-group bridging statement" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A neighborhood association board meeting over local park funding devolves into personal accusations between long-time residents and new homeowners.",
+          steps: [
+            { front: "In-Group Bridging — A long-time resident claims new homeowners do not care about neighborhood history", back: "\"We are all neighbors who love this community and want our local park to be a safe, beautiful space for our children.\"", guideFront: "Bridge social divides when...", guideBack: "An in-group bridging statement" },
+            { front: "Identity Affirmation — A new homeowner worries their financial contributions are viewed as an attempt to take over", back: "\"Your generous investment and active participation in our neighborhood board are deeply appreciated by everyone here.\"", guideFront: "Affirm social identity when...", guideBack: "An identity affirmation statement" },
+            { front: "Exploring Multiple Identities — A board member mentions being both a local business owner and a parent", back: "\"Looking at this park plan as both a local business owner and a parent, what funding compromise serves our neighborhood best?\"", guideFront: "Draw out identities when...", guideBack: "A multi-identity exploration question" },
+          ]
+        },
+      ]
+    },
+  ],
 };

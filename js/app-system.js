@@ -747,6 +747,9 @@ applyInputCounterVisibility();
     aftertheargument: { label: 'After the Argument', minLevel: 'complete' },
     twosidesofthestory: { label: 'Two Sides of the Story', minLevel: 'complete' },
     describeactions: { label: 'Describe Actions', minLevel: 'pro' },
+    supercomm1: { label: 'Supercommunicators 1 — The Language of Connection', minLevel: 'complete' },
+    supercomm2: { label: 'Supercommunicators 2 — Connecting in Conflict', minLevel: 'complete' },
+    supercomm3: { label: 'Supercommunicators 3 — Group Dynamics & Digital Connection', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -3628,6 +3631,48 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
+  supercomm1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  supercomm2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  supercomm3: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
 };
 window.BUNDLE_DEFS = BUNDLE_DEFS;
 
@@ -4515,6 +4560,36 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
   overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('open'); });
 })();
 
+// ─── LEGAL LINKS (v1.29.42) ─────────────────────────────────────────────────
+// Public pages for Terms of Use, Privacy Policy and Support. They live outside
+// the app (Webbsidor/deckstack-legal in the vault) and can be hosted anywhere.
+// Paste the full URLs here once they are published. An empty string hides
+// that link; with all three empty the link rows stay hidden entirely.
+// The same URLs go into App Store Connect (Privacy Policy URL, Support URL,
+// and the EULA/terms field).
+const LEGAL_LINKS = {
+  terms:   '',
+  privacy: '',
+  support: ''
+};
+(function initLegalLinks() {
+  const labels = { terms: 'Terms of Use', privacy: 'Privacy Policy', support: 'Support' };
+  const items = Object.keys(labels).filter(k => /^https?:\/\//.test(LEGAL_LINKS[k] || ''));
+  document.querySelectorAll('[data-legal-links]').forEach(el => {
+    el.innerHTML = '';
+    items.forEach((k, i) => {
+      if (i) el.appendChild(document.createTextNode(' \u00B7 '));
+      const a = document.createElement('a');
+      a.href = LEGAL_LINKS[k];
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.textContent = labels[k];
+      el.appendChild(a);
+    });
+    el.hidden = items.length === 0;
+  });
+})();
+
 // ─── WHAT'S NEW (v1.26.66) ──────────────────────────────────────────
 // A user-facing release list, reached from its own row in Settings — the
 // version number keeps opening developer settings after 7 taps.
@@ -4535,6 +4610,8 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.43', date: 'October 2026', title: 'Supercommunicators 1\u20133 \u2014 a new Notebook series', audience: 'dev', items: ['Three packs built by Notebook from <em>Supercommunication.pdf</em> (interviews and talks with Charles Duhigg about <em>Supercommunicators</em>), imported at <strong>complete</strong>: <strong>The Language of Connection</strong> (<code>supercomm1</code>, Depth &amp; Connection), <strong>Connecting in Conflict</strong> (<code>supercomm2</code>, Opinions &amp; Argumentation) and <strong>Group Dynamics &amp; Digital Connection</strong> (<code>supercomm3</code>, Messages &amp; Writing).', 'Packs 1 and 2 are <strong>grid packs</strong>; pack 3 is not. <em>Looping for Understanding</em>, <em>Loop the Other Side</em> and <em>In-Group Bridging</em> are composite strategies (rulebook \u00a72d).', 'First series written with the new grid add-on and in three parts per pack. All three at 0 errors in check-pack. Review notes in <em>Appdokumentation/Supercommunicators 1\u20133 \u2014 att titta p\u00e5.md</em>.'] },
+  { version: 'v1.29.42', date: 'October 2026', title: 'Links to Terms, Privacy and Support', audience: 'dev', items: ['New <code>LEGAL_LINKS</code> in app-system.js. Paste the public URLs there and the links appear in About, under the Upgrade screen and under the Extended screen. Empty means hidden, so nothing shows until the pages are published.', 'The three pages themselves are in <em>Webbsidor/deckstack-legal</em> in the vault, separate from the app, so they can be hosted anywhere.', 'Short disclaimer added to About and to the last onboarding step: <em>Deckstack is a practice tool, not therapy or professional advice.</em>'] },
   { version: 'v1.29.41', date: 'October 2026', title: 'Describe Actions \u2014 a new Pro pack next to Describe Things', audience: 'dev', items: ['New <strong>Pro</strong> pack <strong>Describe Actions</strong> (<code>describeactions</code>) under Explaining &amp; Describing, built from Rikard\u2019s material in <em>grundmaterial</em>. Describe Things describes objects; this one describes what people do \u2014 especially when the verb is missing.', 'Seven strategies: <em>What the Body Does, How It Moves, Why People Do It, When It Happens, What It Changes, What It Resembles, Paint a Scene.</em> <em>What It Resembles</em> shares its name and guide pair with Describe Things, because it is the same move.', '<strong>Grid pack</strong>: card N is the same verb in every strategy (whisper, sneak, throw, stare, hug, climb, overhear, escape). The material\u2019s similar-actions exercise became the challenge <em>Two Actions That Look Alike</em> and the sequence <em>Close, But Not Quite</em>.', '0 errors and 0 warnings in check-pack. Open in Pro is now 25 packs.'] },
   { version: 'v1.29.40', date: 'October 2026', title: 'Three packs about the talk after a conflict', audience: 'dev', items: ['Three new complete-tier packs under Repair &amp; Apology, all built as grid packs (card N is the same conflict in every strategy) and all at <strong>0 errors and 0 warnings</strong> in check-pack. Mindset has one deck per strategy from the start.', '<strong>Conflict Resolution</strong> (<code>conflictresolution</code>) \u2014 Rikard\u2019s own process: feelings first, then both sides\u2019 values, then both sides\u2019 needs, and your own hurt last. <em>Their Feelings First, Ask What Mattered to Them, Say What Mattered to You, Offer What They Need, Ask for What You Need, Find Where It Clashed, Say What Hurt, Last.</em> The sequence <em>The Short Way</em> ends after the needs, because the last two steps are often never needed.', '<strong>After the Argument</strong> (<code>aftertheargument</code>) \u2014 repair: listen, speak, own your part, agree on next time, and <em>Pause and Come Back</em> for when the talk crosses a line.', '<strong>Two Sides of the Story</strong> (<code>twosidesofthestory</code>) \u2014 understanding what happened: intent and impact, contribution instead of blame, the third story, and letting two memories stand.', 'First packs built under the trial rule for <strong>composite strategies</strong>: a strategy may hold two or three parts of one process; each card trains one of your replies, with the other person\u2019s reply on the front.'] },
   { version: 'v1.29.39', date: 'October 2026', title: 'Describe Things goes free; three new packs into Pro and the programmes', audience: 'dev', items: ['<strong>Describe Things</strong> moved from Pro to <strong>freemium</strong>, on the same terms as the other free packs: Single Strategy and the free part of Memorize. Its cards were already tagged that way, so nothing in the data changed. Free is now six packs.', '<strong>Calibrating Humour</strong> is <strong>Part 4</strong> of the Humour programme, <em>Getting the size right</em>, with a new 40-question checkpoint (hum-cp4). It opens inside the programme when hum-cp3 is passed and everywhere else when hum-cp4 is passed. Programme description now says four steps.', '<strong>Asking for Clarity</strong> sits next to Show Understanding \u2014 Pt. 2 in <strong>Listening in Depth, Part 3</strong>. lid-cp3 got 20 questions about it (bank 60, 20 drawn).', '<strong>Asking for Permission</strong> is <strong>open in Pro</strong> and also sits in <strong>Difficult Conversations, Part 1</strong>, next to Making Requests and Saying No. dc-cp1 got 20 questions about it (bank 60, 20 drawn).', 'The three packs leave the complete tier and enter the release scope, which goes from 52 to 55 packs. Open in Pro stays at 24: Describe Things left, Asking for Permission came in.'] },

@@ -20680,4 +20680,444 @@ const memorizeCollections = {
       ]
     },
   ],
+  supercomm1: [
+    {
+      name: "Core Idea",
+      description: "Charles Duhigg's core thesis in Supercommunicators: human connection relies on achieving neural entrainment by identifying the conversation mode, asking deep questions, proving understanding, and sharing authentic identity.",
+      cards: [
+        { q: "What is the foundational requirement for supercommunication according to Charles Duhigg?", a: "Achieving conversational alignment by recognizing and matching the specific conversation mindset.", bundle: 'free' },
+        { q: "What are the three distinct types of conversations identified in the source?", a: "Practical problem-solving (What's this really about?), Emotional empathy (How do we feel?), and Social identity (Who are we?).", bundle: 'free' },
+        { q: "What is neural entrainment in human communication?", a: "The neurological phenomenon where listener and speaker brain waves, heart rates, and breathing synchronize during deep connection.", bundle: 'free' },
+        { q: "What happens when two people engage in different conversation types simultaneously?", a: "They talk past each other, leading to frustration, misunderstanding, and emotional disconnection.", bundle: 'free' },
+        { q: "What is a deep question?", a: "A question that inquires about values, beliefs, emotions, choices, or experiences rather than cold facts.", bundle: 'free' },
+        { q: "What are the three essential steps of Looping for Understanding?", a: "(1) Paraphrase back in your own words, (2) Ask if you got it right, and (3) If corrected, adjust and re-loop.", bundle: 'free' },
+        { q: "Why is silence insufficient for active listening?", a: "Because listening is invisible to the speaker until it is explicitly proved through a verification loop.", bundle: 'free' },
+        { q: "What is the role of Reciprocal Vulnerability in building trust?", a: "Matching emotional openness with equal personal vulnerability creates psychological safety and mutual entrainment.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Match the Conversation",
+      description: "",
+      cards: [
+        { q: "What is the core move of the Strategy Match the Conversation?", a: "Explicitly identifying the conversation mode or offering a choice between problem-solving and emotional listening.", bundle: 'free' },
+        { q: "What is the practical mindset in a conversation focused on?", a: "Analyzing options, making decisions, and solving concrete problems.", bundle: 'free' },
+        { q: "What is the emotional mindset in a conversation focused on?", a: "Expressing feelings, seeking empathy, and feeling understood without immediate judgment.", bundle: 'free' },
+        { q: "What is the social mindset in a conversation focused on?", a: "Exploring identities, relationships, social roles, and group belonging.", bundle: 'free' },
+        { q: "How do you match someone who is venting emotionally about work?", a: "Validate their emotion first and ask if they want empathy or practical brainstorming.", bundle: 'free' },
+        { q: "What mistake do people frequently make when encountering an emotional conversation?", a: "Offering unsolicited practical solutions and advice prematurely.", bundle: 'free' },
+        { q: "How does matching the conversation mode affect conflict?", a: "It de-escalates tension by ensuring both participants are operating on the same frequency.", bundle: 'free' },
+        { q: "Why should you ask \"Do you want to be helped, hugged, or heard?\"", a: "It explicitly clarifies whether the speaker seeks practical advice, physical/emotional comfort, or active listening.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Deep Questioning",
+      description: "",
+      cards: [
+        { q: "What distinguishes a deep question from a surface question?", a: "Surface questions ask for facts and numbers; deep questions ask about feelings, values, and choices.", bundle: 'free' },
+        { q: "Instead of asking \"What do you do?\", what deep question should you ask?", a: "\"What made you choose that line of work?\" or \"What do you enjoy most about what you do?\"", bundle: 'free' },
+        { q: "Why do deep questions accelerate human connection?", a: "They invite the speaker to reveal their authentic self and internal values.", bundle: 'free' },
+        { q: "What key elements should a deep question target?", a: "Values, beliefs, choices, memories, and core emotional experiences.", bundle: 'free' },
+        { q: "How do deep questions transform routine networking?", a: "They shift transactional small talk into meaningful discussions about motivations and passions.", bundle: 'free' },
+        { q: "What type of answer does a deep question discourage?", a: "One-word binary answers or superficial factual recitations.", bundle: 'free' },
+        { q: "Why are people usually willing to answer deep questions from acquaintances?", a: "Because people naturally enjoy talking about their personal values when invited warmly.", bundle: 'free' },
+        { q: "How do deep questions lay the groundwork for Looping for Understanding?", a: "They elicit rich emotional content that can be paraphrased and verified.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Looping for Understanding",
+      description: "",
+      cards: [
+        { q: "What is the primary purpose of Looping for Understanding?", a: "To prove to the speaker that you have truly understood their message and feeling.", bundle: 'free' },
+        { q: "What is Step 1 of a complete Looping for Understanding move?", a: "Paraphrase what you heard in your own words.", bundle: 'free' },
+        { q: "What is Step 2 of a complete Looping for Understanding move?", a: "Ask an explicit accuracy question, such as \"Did I get that right?\"", bundle: 'free' },
+        { q: "What is Step 3 of a complete Looping for Understanding move?", a: "If the speaker corrects your paraphrase, accept the correction and loop again.", bundle: 'free' },
+        { q: "Why must you use your own words when paraphrasing?", a: "Paraphrasing in your own words proves processing; exact repetition sounds like robotic mirroring.", bundle: 'free' },
+        { q: "Why is Step 2 (\"Did I get that right?\") critical?", a: "It demonstrates intellectual humility and grants the speaker ultimate authority over their meaning.", bundle: 'free' },
+        { q: "How does looping affect the speaker's brain state?", a: "It calms anxiety and triggers feelings of trust and psychological safety.", bundle: 'free' },
+        { q: "What should you do if a speaker says \"No, that's not what I meant\"?", a: "Immediately incorporate their clarification and present a revised paraphrase for verification.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Reciprocal Vulnerability",
+      description: "",
+      cards: [
+        { q: "What is Reciprocal Vulnerability?", a: "Matching another person's emotional openness with an equal, authentic personal experience or feeling.", bundle: 'free' },
+        { q: "What happens if someone opens up emotionally and you respond with distant advice?", a: "The speaker feels exposed, foolish, and emotionally isolated.", bundle: 'free' },
+        { q: "What is the \"boomeranging\" trap in vulnerability?", a: "Hijacking the conversation by immediately redirecting focus to your own story without validating theirs first.", bundle: 'free' },
+        { q: "How do you avoid boomeranging when sharing vulnerability?", a: "Validate and loop their feeling thoroughly before introducing your matching personal experience.", bundle: 'free' },
+        { q: "Why is perfection an obstacle to communication?", a: "Perfection creates admiration or envy, whereas shared struggle builds trust and connection.", bundle: 'free' },
+        { q: "What degree of vulnerability should you share in a conversation?", a: "Match the specific emotional depth and intensity introduced by the speaker.", bundle: 'free' },
+        { q: "How does vulnerability impact group dynamics?", a: "It creates psychological safety, signaling that team members can take risks without fear.", bundle: 'free' },
+        { q: "Why is vulnerability considered a signal of courage?", a: "Because it risks social rejection to build an authentic bridge between two minds.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Declaring Goals",
+      description: "",
+      cards: [
+        { q: "What is the Strategy Declaring Goals?", a: "Explicitly stating your intent for a conversation and asking what the other person wants from it.", bundle: 'free' },
+        { q: "Why do unspoken goals create friction in conversations?", a: "Unspoken goals foster suspicion, misinterpretation, and hidden agendas.", bundle: 'free' },
+        { q: "What question can you ask to discover the other person's goal?", a: "\"What would make this conversation a total success for you?\"", bundle: 'free' },
+        { q: "How does declaring goals benefit professional check-in meetings?", a: "It aligns expectations, removes hidden pressure, and focuses discussion on mutual priorities.", bundle: 'free' },
+        { q: "Does declaring goals make a conversation rigid?", a: "No; it establishes clarity while leaving room for flexible, creative dialogue.", bundle: 'free' },
+        { q: "When should you declare your goals in an interaction?", a: "At the very beginning of a conversation or when shifting topics.", bundle: 'free' },
+        { q: "How does goal declaration reduce defensiveness in difficult chats?", a: "It assures the other person that you are not hiding motives or trying to trap them.", bundle: 'free' },
+        { q: "What is a collaborative goal declaration?", a: "Aligning on a shared objective that honors both participants' needs.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "In Supercommunicators, connecting across complex social situations requires choosing the right conversational tool for the specific moment. This deck tests how different strategy combinations align mindsets, surface hidden feelings, and build trust.",
+      cards: [
+        { q: "Why is aligning conversation mindsets necessary before giving advice?", a: "Because unsolicited problem-solving during an emotional conversation invalidates the speaker's feelings and breaks connection.", bundle: 'pro' },
+        { q: "How do deep questions and verification loops work together to uncover depth?", a: "Deep questions invite the speaker to share personal values, while verification loops prove those values were accurately understood.", bundle: 'pro' },
+        { q: "What builds psychological safety when someone confides a personal struggle?", a: "Validating their emotion and matching their depth with authentic reciprocal vulnerability.", bundle: 'pro' },
+        { q: "How does declaring intent reduce friction in high-stakes professional meetings?", a: "It eliminates hidden agendas, reassures participants, and aligns focus on shared objectives.", bundle: 'pro' },
+        { q: "What defines an emotional conversation in Duhigg's framework?", a: "A discussion focused on processing feelings, seeking empathy, and feeling heard without judgment.", bundle: 'pro' },
+        { q: "How does matching the speaker's communication frequency impact neural entrainment?", a: "It synchronizes heart rate, breathing, and neural activity between speaker and listener.", bundle: 'pro' },
+        { q: "Why does asking about choices open up deeper dialogue than asking about facts?", a: "Choices reveal personal values, motivations, and character, whereas facts yield cold recitations.", bundle: 'pro' },
+        { q: "What is the risk of withholding vulnerability when a speaker opens up to you?", a: "The speaker feels exposed, judged, and emotionally isolated, destroying trust.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "Human connection follows a natural progression over the course of a dialogue. This deck explores how multi-turn conversational arcs move from initial goal declaration to deep inquiry, verified understanding, and reciprocal trust.",
+      cards: [
+        { q: "What is the first stage in a complete connection arc during a conversation?", a: "Establishing clear, transparent intent so both participants feel safe and aligned.", bundle: 'pro' },
+        { q: "What role does Looping for Understanding play in a multi-turn conversation?", a: "It bridges the gap between hearing a person's thoughts and confirming that your understanding is correct.", bundle: 'pro' },
+        { q: "Why should deep questioning precede sharing your own personal story?", a: "It ensures the other person feels fully heard and prevents you from hijacking the spotlight.", bundle: 'pro' },
+        { q: "How does a three-step sequence build alignment during strategic workplace discussions?", a: "By framing mutual goals, exploring underlying priorities, and verifying agreement on key points.", bundle: 'pro' },
+        { q: "What prevents a multi-step conversation from feeling like an interrogation?", a: "Balancing deep questions with reciprocal vulnerability and explicit accuracy checks.", bundle: 'pro' },
+        { q: "Why is checking accuracy crucial before concluding a complex conversation?", a: "It catches subtle misunderstandings before they turn into costly errors or resentment.", bundle: 'pro' },
+        { q: "How does matching conversation types at the start of a dialogue set up success?", a: "It ensures both participants are operating in the same mode—practical, emotional, or social.", bundle: 'pro' },
+        { q: "What sustains conversational momentum when a speaker reveals a difficult truth?", a: "Validating their courage, accepting corrections humbly, and offering matching personal openness.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "Real-world conversations often take place in difficult environments marked by workplace stress, closed-off family dynamics, superficial socializing, or sudden grief. This deck tests how supercommunication principles resolve real-world friction.",
+      cards: [
+        { q: "How should you respond when a colleague is visibly overwhelmed by workplace stress?", a: "Validate their emotional pressure first and offer an explicit choice between empathy and problem-solving.", bundle: 'pro' },
+        { q: "What is the most effective way to engage a family member who is quiet and closed off?", a: "Offer low-pressure choices, share a small vulnerable feeling of your own, and avoid forcing deep talk.", bundle: 'pro' },
+        { q: "How do supercommunicators transform dull networking small talk into real connection?", a: "By shifting from factual questions about job titles to deep questions about choices and passions.", bundle: 'pro' },
+        { q: "Why does organizational change cause widespread anxiety among team members?", a: "Because uncertainty threatens psychological safety, social identity, and a sense of personal control.", bundle: 'pro' },
+        { q: "What is the key to supporting someone through intense personal grief or strain?", a: "Offering quiet presence and emotional validation rather than unsolicited advice or shallow clichés.", bundle: 'pro' },
+        { q: "Why do surface-level conversations stall quickly in social gatherings?", a: "Because factual recitations fail to trigger neural entrainment or emotional engagement.", bundle: 'pro' },
+        { q: "How does declaring goals stabilize a meeting during team restructuring?", a: "It replaces anxiety-driven rumors with transparent, collaborative intent.", bundle: 'pro' },
+        { q: "Why should you avoid giving silver-lining advice to someone in distress?", a: "Premature positivity invalidates their suffering and signals that you are uncomfortable with their pain.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "External communication habits reflect internal mental models. This deck examines the core mindset shifts required in Supercommunicators to overcome performance anxiety, fear of intrusion, passive listening, and emotional guardedness.",
+      cards: [
+        { q: "What internal mindset shift is required to stop viewing conversations as performances?", a: "Seeing dialogue as a collaborative effort to match mindsets rather than a test to win or impress.", bundle: 'pro' },
+        { q: "How must you reframe deep questions to overcome the fear of sounding intrusive?", a: "Recognizing that asking about values and choices is a generous invitation that makes people feel valued.", bundle: 'pro' },
+        { q: "What mental model shift transforms passive listening into active connection?", a: "Understanding that listening is invisible until you explicitly loop back what you heard and check accuracy.", bundle: 'pro' },
+        { q: "How does reframing vulnerability help overcome the fear of looking weak?", a: "Seeing vulnerability as a courage signal that creates the psychological safety needed for trust.", bundle: 'pro' },
+        { q: "What is the main cognitive obstacle to declaring goals in personal relationships?", a: "Fearing that stating intentions sounds manipulative, when it actually creates safety and clarity.", bundle: 'pro' },
+        { q: "Why is perfection an obstacle to human connection?", a: "Perfection creates envy or distance, whereas relatable struggle builds authentic empathy.", bundle: 'pro' },
+        { q: "How should you view corrections when looping back a speaker's words?", a: "As valuable gifts that refine your understanding and demonstrate genuine commitment to truth.", bundle: 'pro' },
+        { q: "What mental trap leads people to offer unsolicited advice when others vent?", a: "Believing that their value lies in fixing problems rather than offering emotional presence.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Three Conversations & Four Rules",
+      description: "The foundational framework from Charles Duhigg's Supercommunicators: the three conversation types and the four rules of a learning conversation.",
+      cards: [
+        { q: "What are the three kinds of conversations identified in Supercommunicators?", a: "Practical (What's this really about?), Emotional (How do we feel?), and Social (Who are we?).", bundle: 'pro' },
+        { q: "What is Rule 1 of a learning conversation, word for word from the source?", a: "Pay attention to what kind of conversation is occurring.", bundle: 'pro' },
+        { q: "What is Rule 2 of a learning conversation, word for word from the source?", a: "Share your goals and ask about theirs.", bundle: 'pro' },
+        { q: "What is Rule 3 of a learning conversation, word for word from the source?", a: "Ask about feelings, thoughts, and beliefs (and share your own).", bundle: 'pro' },
+        { q: "What is Rule 4 of a learning conversation, word for word from the source?", a: "Explore if identities are important to the discussion.", bundle: 'pro' },
+        { q: "What question defines a Practical conversation?", a: "What's this really about?", bundle: 'pro' },
+        { q: "What question defines an Emotional conversation?", a: "How do we feel?", bundle: 'pro' },
+        { q: "What question defines a Social conversation?", a: "Who are we?", bundle: 'pro' },
+      ]
+    },
+  ],
+  supercomm2: [
+    {
+      name: "Core Idea",
+      description: "In Supercommunicators, Charles Duhigg demonstrates that conflict resolution requires controlling the conversation together rather than trying to control each other. By managing emotional volatility, establishing shared control over pacing, setting environmental conditions, defining topic boundaries, and proving understanding through conflict verification loops, opponents transform destructive arguments into constructive dialogues.",
+      cards: [
+        { q: "What is the core insight regarding control during conflict in Charles Duhigg's Supercommunicators?", a: "People in conflict naturally fight for control, so supercommunicators establish three things they can control together rather than trying to control each other.", bundle: 'free' },
+        { q: "What are the three specific elements that participants can control together during a conflict?", a: "Their own self-control and pacing, the environment (time, place, and medium), and the boundaries of the disagreement.", bundle: 'free' },
+        { q: "Why is emotional acknowledgment necessary before introducing logic during an argument?", a: "Because unacknowledged feelings do not dissipate; they intensify and block rational problem-solving.", bundle: 'free' },
+        { q: "What is the crucial distinction between validating an emotion and agreeing with a claim?", a: "Validating an emotion recognizes a person's human experience, whereas agreement surrenders factual or strategic positions.", bundle: 'free' },
+        { q: "What is \"kitchen sinking\" in conflict resolution?", a: "The destructive expansion of an argument by bringing up past grievances, old mistakes, and unrelated personal flaws.", bundle: 'free' },
+        { q: "How does looping an opponent's perspective alter conflict dynamics?", a: "It proves you understand their stance, which removes their defensiveness and makes them far more receptive to your view.", bundle: 'free' },
+        { q: "Why is trying to control the other person's behavior counterproductive during a fight?", a: "Attempting to exert control over another person triggers immediate psychological resistance and escalates hostility.", bundle: 'free' },
+        { q: "What proved outcome emerged from Duhigg's research on gun rights mediation sessions?", a: "Advocates on opposing sides built mutual trust and progress only after learning to loop each other's stances until verified.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Emotional Acknowledgment",
+      description: "",
+      cards: [
+        { q: "What is the core objective of the Strategy Emotional Acknowledgment?", a: "To name and validate the speaker's emotional state before addressing facts, logic, or counter-arguments.", bundle: 'free' },
+        { q: "Does acknowledging someone's anger mean you admit fault for their distress?", a: "No; it acknowledges their observed emotional reality without assigning guilt or surrendering your position.", bundle: 'free' },
+        { q: "What happens to strong emotions when they are ignored during a negotiation?", a: "Unacknowledged emotions intensify, disrupt logical reasoning, and resurface destructively later in the discussion.", bundle: 'free' },
+        { q: "How does Charles Duhigg phrase the distinction between acknowledgment and agreement?", a: "\"I'm not agreeing with you, but I am acknowledging your emotion.\"", bundle: 'free' },
+        { q: "Why should you validate emotions before offering counter-points or explanations?", a: "Because emotional validation lowers psychological defensiveness, clearing mental space for logical discussion.", bundle: 'free' },
+        { q: "What specific emotional states should be targeted for validation in conflict?", a: "Observed feelings such as frustration, anxiety, feeling unappreciated, or feeling overwhelmed.", bundle: 'free' },
+        { q: "How does emotional acknowledgment impact conversational volume in an argument?", a: "Naming anger directly lowers conversational volume and de-escalates shouting matches.", bundle: 'free' },
+        { q: "Why are generic phrases like \"I understand\" ineffective for emotional acknowledgment?", a: "Generic phrases sound dismissive, whereas specifically naming the observed feeling proves real empathy.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Sharing Self-Control",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of the Strategy Sharing Self-Control?", a: "Managing your own internal reactivity and explicitly inviting the other person to share a deliberate pause together.", bundle: 'free' },
+        { q: "Why is ordering someone else to \"calm down\" ineffective during an argument?", a: "It criticizes their behavior, implies superiority, and triggers immediate defensive resistance.", bundle: 'free' },
+        { q: "How should a pause invitation be framed to avoid accusing the other person?", a: "Frame the pause around your own need to digest information or take a breath before responding.", bundle: 'free' },
+        { q: "What physical signals indicate that a self-control pause is required?", a: "Accelerated heart rate, rapid breathing, feeling defensive, or raising your voice.", bundle: 'free' },
+        { q: "How long does a typical self-control pause need to be during a heated discussion?", a: "A brief pause of ten to thirty seconds is often enough to reset emotional reactivity.", bundle: 'free' },
+        { q: "What does modeling self-control demonstrate to an opponent in a negotiation?", a: "It demonstrates self-mastery, high executive composure, and commitment to a fair outcome.", bundle: 'free' },
+        { q: "Why is immediate reaction dangerous during a high-stakes accusation?", a: "Immediate reactions are driven by defensive instincts rather than strategic reasoning.", bundle: 'free' },
+        { q: "How does sharing a pause shift the power dynamic in an argument?", a: "It shifts the dynamic from mutual hostility to joint regulation of the conversation's pace.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Controlling the Environment",
+      description: "",
+      cards: [
+        { q: "What is the core focus of the Strategy Controlling the Environment?", a: "Proposing a shared shift in the physical location, time, or medium of a conflict to ensure constructive dialogue.", bundle: 'free' },
+        { q: "What environmental hazards amplify misunderstandings during arguments?", a: "Late-night fatigue, loud public spaces, lack of privacy, and rapid digital messaging threads.", bundle: 'free' },
+        { q: "Why should late-night arguments be postponed until the morning?", a: "Because physical exhaustion severely degrades emotional regulation and tolerance for compromise.", bundle: 'free' },
+        { q: "How does proposing a quiet, private setting protect a high-stakes discussion?", a: "It removes public audiences, eliminates distraction, and provides psychological privacy.", bundle: 'free' },
+        { q: "Why is text messaging or email hazardous for resolving heated personal conflicts?", a: "Digital channels strip away vocal tone and body language, leading to negative misinterpretations.", bundle: 'free' },
+        { q: "How do you reassure an opponent when proposing to postpone a discussion?", a: "Explicitly state that the topic is highly important and deserves focused attention at a better time.", bundle: 'free' },
+        { q: "What does shifting the environment demonstrate about your view of the conflict?", a: "It shows you prioritize resolving the issue properly over winning an impulsive fight.", bundle: 'free' },
+        { q: "How does a neutral physical setting affect negotiation dynamics?", a: "It places both participants on equal footing and lowers territorial defensiveness.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Controlling the Boundaries",
+      description: "",
+      cards: [
+        { q: "What is the primary purpose of the Strategy Controlling the Boundaries?", a: "Restricting the scope of a disagreement to a single solvable issue, preventing kitchen sinking.", bundle: 'free' },
+        { q: "How does topic expansion make a conflict impossible to resolve?", a: "Piling past grievances and unrelated flaws onto an argument creates cognitive and emotional overload.", bundle: 'free' },
+        { q: "What is a historical exclusion boundary?", a: "A mutual agreement to focus strictly on today's immediate situation and leave past mistakes out of the discussion.", bundle: 'free' },
+        { q: "How should you propose a boundary when an opponent brings up unrelated grievances?", a: "Validate their concern, but request a mutual commitment to resolve the primary issue first.", bundle: 'free' },
+        { q: "Does setting a boundary mean ignoring past grievances permanently?", a: "No; it means postponing historical issues so they can be addressed separately in an organized manner.", bundle: 'free' },
+        { q: "What are behavioral boundaries in conflict resolution?", a: "Agreed ground rules that exclude personal insults, raised voices, or interruptions during discussion.", bundle: 'free' },
+        { q: "Why is a small, restricted conflict easier to solve than a broad one?", a: "Isolating one issue keeps demands manageable and builds momentum toward mutual compromise.", bundle: 'free' },
+        { q: "How do strict topic limits protect close personal and professional relationships?", a: "They prevent temporary disagreements from turning into destructive attacks on character or history.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Loop the Other Side",
+      description: "",
+      cards: [
+        { q: "What is the three-part composite structure of Loop the Other Side?", a: "(1) Paraphrase their conflict stance neutrally, (2) Ask an accuracy check, and (3) Re-loop when corrected.", bundle: 'free' },
+        { q: "How does Loop the Other Side differ from ordinary looping for understanding?", a: "It is specifically designed for opponents in a deep disagreement, proving understanding without agreeing.", bundle: 'free' },
+        { q: "Why is proving you understand an opposing view necessary for changing their mind?", a: "Because people will not listen to counter-arguments until they are convinced their own stance is fully understood.", bundle: 'free' },
+        { q: "What phrasing explicitly separates understanding from agreement during a loop?", a: "\"Even though I see the situation differently, did I state your position accurately?\"", bundle: 'free' },
+        { q: "What should you do if an opponent responds \"No, that's not my point\" to your paraphrase?", a: "Incorporate their exact correction immediately and present a revised paraphrase for verification.", bundle: 'free' },
+        { q: "How does conflict looping affect an opponent's defensiveness?", a: "It removes their need to repeat themselves loudly and lowers their emotional hostility.", bundle: 'free' },
+        { q: "Why must you use your own words when paraphrasing an opponent's stance?", a: "Paraphrasing in your own words proves cognitive processing, whereas exact repetition sounds patronizing.", bundle: 'free' },
+        { q: "What was the primary goal of the Washington DC meeting between gun rights and gun control advocates?", a: "The goal was not to reach a policy compromise or agreement, but simply to see if opponents could hold a civil conversation and understand each other's perspectives without screaming.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "In Supercommunicators, conflict resolution requires choosing the right strategic response for specific high-friction moments. This deck tests how strategy choices de-escalate emotional heat, focus disagreement boundaries, and navigate tough bargaining.",
+      cards: [
+        { q: "What combination of strategies best de-escalates an explosive emotional outburst?", a: "Validating emotional state, proposing a self-control pause, and shifting to a private setting.", bundle: 'pro' },
+        { q: "What is the main objective of the Collection De-escalate Heat?", a: "Lowering emotional volatility and modeling composure during explosive clashes.", bundle: 'pro' },
+        { q: "What focus defines the Collection Focus the Disagreement?", a: "Restricting topic scope, shifting hostile environments, and verifying factual positions.", bundle: 'pro' },
+        { q: "What purpose drives the Collection Navigate Tough Bargaining?", a: "Managing hardball negotiation tactics through emotional validation, strict boundaries, and conflict looping.", bundle: 'pro' },
+        { q: "Why do supercommunicators combine different strategies like emotional acknowledgment and boundary setting in a single conflict?", a: "Because high-friction discussions involve multiple needs at once—calming intense feelings, preventing topic sprawl, and locking in mutual focus.", bundle: 'pro' },
+        { q: "How does selecting the right conversational strategy prevent \"two ships passing in the night\" during a disagreement?", a: "It ensures both participants align on the same conversational mindset (practical, emotional, or social) at the exact same moment.", bundle: 'pro' },
+        { q: "What determines whether a multi-strategy approach successfully de-escalates an argument?", a: "Authenticity and accurate matching of the speaker's emotional state, rather than mechanical repetition or manipulative tactics.", bundle: 'pro' },
+        { q: "How does combining goal declaration with verification loops build psychological safety?", a: "Declaring intentions upfront removes hidden agendas, while verification loops prove that the speaker's needs are genuinely understood.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "Resolving complex disputes requires executing multi-turn conversational chains in a precise order. This deck explores how multi-step combos move from initial emotional de-escalation to boundary setting, environmental shifts, and conflict verification loops.",
+      cards: [
+        { q: "What two steps form the Combo Acknowledge, Then Loop?", a: "Emotional Acknowledgment followed immediately by Loop the Other Side.", bundle: 'pro' },
+        { q: "Why must emotional validation precede conflict looping in a heated dispute?", a: "Because emotional volatility prevents an opponent from listening to a factual paraphrase of their stance.", bundle: 'pro' },
+        { q: "What three steps form the Combo Reset the Setting and Scope?", a: "Sharing Self-Control, Controlling the Environment, and Controlling the Boundaries.", bundle: 'pro' },
+        { q: "How does Reset the Setting and Scope transform a chaotic argument?", a: "It restores personal composure, moves the fight to a neutral space, and restricts the topic to a single issue.", bundle: 'pro' },
+        { q: "What three steps form the Combo The Conflict Bridge?", a: "Emotional Acknowledgment, Controlling the Boundaries, and Loop the Other Side.", bundle: 'pro' },
+        { q: "Why is executing conversational steps in a deliberate order crucial for resolving deep conflict?", a: "Because emotional volatility blocks logical processing, requiring emotional validation and self-control before attempting factual alignment or problem-solving.", bundle: 'pro' },
+        { q: "What happens when a speaker attempts to jump directly to problem-solving before validating an opponent's feelings?", a: "The opponent feels ignored and defensive, perceiving logical advice as a brush-off rather than genuine support.", bundle: 'pro' },
+        { q: "How does moving systematically from goal declaration to deep inquiry and verified understanding transform a standoff?", a: "It removes suspicion, uncovers core values driving the disagreement, and verifies agreement before concluding the interaction.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "Conflict manifests across diverse real-world contexts, including high-stakes negotiations, workplace confrontations, domestic family arguments, client complaints, and neighborhood disputes. This deck tests de-escalation moves in specialized environments.",
+      cards: [
+        { q: "What strategic approach resolves severe client complaints over service delays?", a: "Validating business impact, restricting scope to immediate fixes, and looping custom requirements.", bundle: 'pro' },
+        { q: "How should you handle a workplace confrontation regarding project ownership?", a: "Acknowledge feeling uncredited, move to a private huddle room, and restrict discussion to current deliverables.", bundle: 'pro' },
+        { q: "What strategy combination prevents domestic family arguments from escalating into historical feuds?", a: "Validating daily stress, setting strict topic limits excluding past history, and shifting timing to morning hours.", bundle: 'pro' },
+        { q: "How should negotiators respond to hardball price increase demands from vendors?", a: "Validate supplier cost pressures, enforce discussion boundaries, and loop underlying financial constraints.", bundle: 'pro' },
+        { q: "What de-escalation sequence works best for hostile doorstep interactions with neighbors?", a: "Validate noise disruption, invite a calm shared pause, and move the discussion onto a neutral porch.", bundle: 'pro' },
+        { q: "Why do high-stakes real-world environments like contract negotiations or public complaints escalate so rapidly?", a: "Because perceived threats to autonomy, finances, or social identity trigger fight-or-flight defensiveness that overrides rational discussion.", bundle: 'pro' },
+        { q: "How does shrinking the boundaries of a conflict prevent historical \"kitchen sinking\" in workplace or family disputes?", a: "It restricts the argument to a single solvable issue, preventing past grievances and character attacks from overwhelming the conversation.", bundle: 'pro' },
+        { q: "What makes digital channels like email or text particularly prone to rapid conflict escalation?", a: "Digital channels strip away non-verbal cues, tone, and facial expressions, leading participants to interpret ambiguous messages as hostile.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "External conflict behaviors reflect internal mental models. This deck examines the core mindset reframes required in Supercommunicators to overcome fear of surrendering, defensiveness, topic drift, and hostility.",
+      cards: [
+        { q: "What internal mindset shift is required to validate an opponent's intense anger?", a: "Recognizing that naming feelings acknowledges human pain without surrendering factual positions.", bundle: 'pro' },
+        { q: "How must you reframe a self-control pause to overcome the fear of looking weak?", a: "Viewing a pause as a demonstration of self-mastery that invites mutual composure.", bundle: 'pro' },
+        { q: "What mental model shift enables shifting the environment during an argument?", a: "Understanding that changing where and when you talk actively shapes how well both parties listen.", bundle: 'pro' },
+        { q: "How does reframing topic boundaries help eliminate historical kitchen sinking?", a: "Realizing that keeping conflict small and focused makes immediate resolution achievable.", bundle: 'pro' },
+        { q: "What cognitive trap makes people hesitate to loop an opponent's perspective?", a: "Fearing that paraphrasing an opposing view implies surrender, when it actually removes defensiveness.", bundle: 'pro' },
+        { q: "Why is trying to control an opponent's behavior counterproductive during a fight?", a: "Because forcing control triggers resistance, whereas controlling the process together builds partnership.", bundle: 'pro' },
+        { q: "How should you view physical arousal during a heated negotiation?", a: "As a clear signal to slow down, take a breath, and regulate conversational pacing.", bundle: 'pro' },
+        { q: "What mental trap leads people to retaliate with past grievances during an argument?", a: "Believing that bringing up historical flaws balances the score, when it actually guarantees escalation.", bundle: 'pro' },
+      ]
+    },
+  ],
+  supercomm3: [
+    {
+      name: "Core Idea",
+      description: "In Supercommunicators, Charles Duhigg demonstrates that group dynamics and digital communication require mastering social identity and channel rules. Group discussions trigger social identity threat and tribal defensiveness, which supercommunicators defuse by establishing superordinate shared identities, affirming individual competence, and drawing out multifaceted roles. In digital channels, text strips away vocal pitch and body language, requiring senders to overcommunicate positive intent and select the appropriate medium to prevent written friction.",
+      cards: [
+        { q: "Why do group conversations and digital interactions present unique communication challenges?", a: "Because group dynamics trigger social identity threat and tribal defensiveness, while digital media strip away vocal tone and body language.", bundle: 'free' },
+        { q: "What causes social identity threat during group discussions according to Charles Duhigg?", a: "The perception that an interaction threatens a person's sense of belonging, cultural background, or professional standing.", bundle: 'free' },
+        { q: "How do supercommunicators defuse tribal polarization between competing groups?", a: "By establishing a superordinate shared identity that unites participants before addressing specific differences.", bundle: 'free' },
+        { q: "Why do digital communication channels like text and email require explicit intent overcommunication?", a: "Because human minds instinctively fill written ambiguity with negative assumptions, cynicism, or perceived sarcasm.", bundle: 'free' },
+        { q: "What is the primary cause of written miscommunication across digital platforms?", a: "Treating all digital channels as identical rather than adapting to the specific speed, tone, and rules of each medium.", bundle: 'free' },
+        { q: "How does exploring multiple identities impact group polarization?", a: "It prevents people from being trapped in one-dimensional stereotypes by drawing out their complex, overlapping roles.", bundle: 'free' },
+        { q: "Why is identity affirmation essential before delivering challenging feedback?", a: "It establishes psychological safety by reassuring the person that their fundamental worth and competence are respected.", bundle: 'free' },
+        { q: "What role does neural entrainment play in remote or digital communications?", a: "Vocal and visual channels enable heart rate and brainwave synchronization, whereas text channels require explicit intent markers to build alignment.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "In-Group Bridging",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of the Strategy In-Group Bridging?", a: "Elevating a shared superordinate identity that connects participants across social or departmental divides.", bundle: 'free' },
+        { q: "What historical study in Supercommunicators illustrates the power of in-group bridging?", a: "Research on Christian and Muslim soccer players in post-ISIS Iraq who built trust by uniting under a shared team identity.", bundle: 'free' },
+        { q: "What are the three composite parts of In-Group Bridging?", a: "Establishing shared ground, validating out-group background, and re-bridging after skeptical pushback.", bundle: 'free' },
+        { q: "How does establishing a superordinate identity alter group dynamics?", a: "It lowers tribal defensiveness, making differences feel non-threatening and manageable.", bundle: 'free' },
+        { q: "Does bridging social divides require ignoring or erasing group differences?", a: "No; it acknowledges distinct backgrounds while grounding the interaction in a larger common purpose.", bundle: 'free' },
+        { q: "How should you respond when an opponent expresses skepticism toward a shared bridging statement?", a: "Validate their specific concern while re-affirming the overarching shared bond that unites you.", bundle: 'free' },
+        { q: "Why is in-group bridging effective across departmental silos in organizations?", a: "It reminds competing departments that they share a unified corporate mission and common clients.", bundle: 'free' },
+        { q: "What happens when groups interact without establishing a shared superordinate identity?", a: "Members default to in-group bias and view out-group participants with suspicion or hostility.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Exploring Multiple Identities",
+      description: "",
+      cards: [
+        { q: "What is the main objective of Exploring Multiple Identities?", a: "Inviting individuals to share their multifaceted roles and life experiences rather than trapping them in a single label.", bundle: 'free' },
+        { q: "Why is reducing a person to a single identity label dangerous in group discussions?", a: "It triggers stereotype threat and forces the person to defend a rigid, one-dimensional group stance.", bundle: 'free' },
+        { q: "How do open-ended questions about diverse roles dismantle polarization?", a: "They reveal personal complexity and shared values, breaking down rigid Us vs Them thinking.", bundle: 'free' },
+        { q: "What types of multifaceted roles can be explored during dialogue?", a: "Professional backgrounds, personal family roles, community contributions, and dual-field experiences.", bundle: 'free' },
+        { q: "How does exploring multiple identities enhance organizational problem-solving?", a: "It surfaces unique insights from employees who bridge different technical, operational, or cultural domains.", bundle: 'free' },
+        { q: "What phrasing effectively invites someone to share their multifaceted perspective?", a: "Asking how their background across two distinct roles shapes their view of a current challenge.", bundle: 'free' },
+        { q: "How does drawing out complex identities foster psychological safety?", a: "It signals that the speaker is valued as a complete human being rather than a mere representative of a group.", bundle: 'free' },
+        { q: "What did Duhigg observe when participants in polarizing debates discussed their various life roles?", a: "Participants discovered unexpected overlaps and became far more willing to listen to opposing views.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Identity Affirmation",
+      description: "",
+      cards: [
+        { q: "What is the core principle of Identity Affirmation?", a: "Explicitly recognizing and respecting a person's social, cultural, or professional standing during sensitive discussions.", bundle: 'free' },
+        { q: "Why do people become defensive when their professional or social identity feels threatened?", a: "Because identity threat triggers visceral fight-or-flight anxiety about belonging and personal worth.", bundle: 'free' },
+        { q: "How does affirming identity before giving constructive feedback alter the conversation?", a: "It separates the critique of a specific idea from an attack on the person's competence, preserving trust.", bundle: 'free' },
+        { q: "What specific aspects of identity should be targeted for affirmation?", a: "Hard-earned technical mastery, cultural heritage, community dedication, and professional track record.", bundle: 'free' },
+        { q: "How does identity affirmation eliminate stereotype threat in high-stakes environments?", a: "By explicitly reassuring individuals that their competence and belonging are valued and secure.", bundle: 'free' },
+        { q: "Does affirming someone's professional identity mean you must agree with their proposal?", a: "No; you can sincerely respect their overarching expertise while debating a specific project plan.", bundle: 'free' },
+        { q: "Why is identity affirmation particularly important during organizational restructuring?", a: "Because major structural shifts cause employees to fear that their past contributions are being erased.", bundle: 'free' },
+        { q: "What phrasing demonstrates authentic identity affirmation?", a: "Reassuring the person that their specialized wisdom and track record remain foundational to the team.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Overcommunicating Intent",
+      description: "",
+      cards: [
+        { q: "Why do digital media channels require overcommunicating intent according to Charles Duhigg?", a: "Because written text strips away vocal tone, pitch, and facial expressions, leaving messages vulnerable to negative bias.", bundle: 'free' },
+        { q: "What psychological tendency occurs when recipients read ambiguous text messages?", a: "The human mind instinctively fills ambiguity with negative assumptions, perceived criticism, or sarcasm.", bundle: 'free' },
+        { q: "How does stating positive motives at the start of a written message protect goodwill?", a: "It frames the recipient's interpretation, ensuring feedback or questions are received as constructive.", bundle: 'free' },
+        { q: "What role do politeness, warmth, and gratitude play in digital messaging?", a: "They act as essential emotional markers that compensate for missing non-verbal vocal and facial cues.", bundle: 'free' },
+        { q: "How should you frame a quick written request to prevent sounding abrupt or demanding?", a: "Explicitly state your constructive goal and mention that brevity is due to time constraints, not rudeness.", bundle: 'free' },
+        { q: "Why is intent overcommunication vital when delivering written critiques on draft work?", a: "It clarifies that edits are intended to polish the deliverable rather than criticize the author's ability.", bundle: 'free' },
+        { q: "How does intent framing prevent digital conflict escalation in team chat channels?", a: "It eliminates hidden suspicion and reassures colleagues that questions stem from genuine curiosity.", bundle: 'free' },
+        { q: "What happens when senders rely on recipients to \"read between the lines\" in digital communications?", a: "Misinterpretation skyrockets, leading to unnecessary defensiveness and damaged digital relationships.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Matching the Medium",
+      description: "",
+      cards: [
+        { q: "What is the core rule of Matching the Medium in Supercommunicators?", a: "Adapting the speed, formality, and channel choice to match the specific rules and complexity of the message.", bundle: 'free' },
+        { q: "Why is treating all digital channels as identical a recipe for miscommunication?", a: "Because each medium—email, chat, phone, video—has distinct norms, latency, and emotional bandwidth.", bundle: 'free' },
+        { q: "When should a written discussion be transitioned onto a voice or video call?", a: "When text threads become emotionally charged, overly complex, or prone to rapid misinterpretation.", bundle: 'free' },
+        { q: "How do formal email channels differ in function from rapid text or chat apps?", a: "Emails provide structured, asynchronous documentation, whereas chat apps favor brief, real-time coordination.", bundle: 'free' },
+        { q: "What is the risk of using informal chat channels for complex, high-stakes announcements?", a: "Critical context gets lost in fast scrolling text, creating confusion and anxiety among team members.", bundle: 'free' },
+        { q: "How should you handle a text thread that begins to feel sarcastic or hostile?", a: "Recognize that the text medium has failed and propose an immediate shift to a phone or video call.", bundle: 'free' },
+        { q: "What role does channel choice play in establishing conversational alignment?", a: "Selecting the right medium sets expected response times and creates the appropriate space for discussion.", bundle: 'free' },
+        { q: "Why do voice and video calls de-escalate written friction so rapidly?", a: "They restore vocal pitch, inflection, and visual cues, enabling heart rate and neural entrainment.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The Collections mode groups scenarios by communication challenges where learners choose between strategic moves. This deck tests how strategy choices bridge social divides, establish digital warmth, and navigate complex identity dynamics.",
+      cards: [
+        { q: "How does selecting the right strategy in a group setting prevent tribal polarization?", a: "It shifts the conversation from rigid Us vs Them positioning to shared superordinate goals and mutual respect.", bundle: 'pro' },
+        { q: "What strategy combination best resolves a tense, multi-reply email deadlock between departments?", a: "Overcommunicating positive intent in writing and immediately transitioning the topic to a voice call.", bundle: 'pro' },
+        { q: "What defines the focus of the Collection Bridging Social Divides?", a: "Uniting competing groups through shared identity, affirming professional standing, and drawing out multifaceted roles.", bundle: 'pro' },
+        { q: "What purpose drives the Collection Digital Clarity & Warmth?", a: "Preventing written misinterpretation by overcommunicating intent, adding warmth, and matching channels.", bundle: 'pro' },
+        { q: "What focus defines the Collection Navigating Complex Identity?", a: "Eliminating identity threat, honoring cultural heritage, and exploring multifaceted background experiences.", bundle: 'pro' },
+        { q: "How does selecting the appropriate communication strategy help navigate group polarization?", a: "It elevates superordinate shared identities and affirms individual standing, moving participants out of rigid tribal defensiveness into collaborative dialogue.", bundle: 'pro' },
+        { q: "Why is combining intent overcommunication with channel matching essential in digital communication?", a: "Because written text strips away non-verbal vocal cues, requiring explicit statements of positive motive alongside selecting a medium rich enough for the interaction's complexity.", bundle: 'pro' },
+        { q: "How do supercommunicators address social identity threat when leading multi-stakeholder discussions?", a: "They explicitly affirm individual expertise and explore multifaceted roles, reassuring participants that their standing and belonging are fully respected.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The Sequences mode trains multi-turn conversational chains across complex social and digital interactions. This deck explores how multi-step combos build digital bridges, align group identities, and guide constructive dialogue.",
+      cards: [
+        { q: "What three steps form the Combo The Digital Bridge?", a: "Overcommunicating Intent, Identity Affirmation, and Matching the Medium.", bundle: 'pro' },
+        { q: "How does The Digital Bridge resolve an escalating group chat debate?", a: "It clarifies positive motives in writing, affirms professional value, and shifts the discussion to a video call.", bundle: 'pro' },
+        { q: "What three steps form the Combo The Identity Alignment?", a: "In-Group Bridging, Identity Affirmation, and Exploring Multiple Identities.", bundle: 'pro' },
+        { q: "How does The Identity Alignment unify a divided cross-functional committee?", a: "It establishes a shared mission, validates specialized team expertise, and draws out multifaceted experience.", bundle: 'pro' },
+        { q: "What three steps form the Combo The Constructive Dialogue Arc?", a: "Overcommunicating Intent, Exploring Multiple Identities, and In-Group Bridging.", bundle: 'pro' },
+        { q: "How does executing conversational steps in a deliberate sequence transform group dynamics?", a: "It systematically removes identity threat, establishes digital warmth, and builds superordinate alignment.", bundle: 'pro' },
+        { q: "Why is matching the medium the final step in de-escalating written digital friction?", a: "Because moving to voice or video restores full vocal entrainment after establishing positive intent.", bundle: 'pro' },
+        { q: "Why does a successful digital interaction often move from written intent clarification to a live voice or video session?", a: "Because establishing positive intent in writing removes suspicion, while switching to a live channel restores vocal pitch and facial cues that enable neural entrainment.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The Challenges mode tests supercommunication strategies across specialized real-world environments. This deck examines de-escalation moves across stereotype threat, digital disconnects, cross-departmental friction, online polarization, and multicultural dynamics.",
+      cards: [
+        { q: "How should a leader eliminate stereotype threat during a high-stakes technical review?", a: "By explicitly affirming individual competence and drawing out the speaker's multifaceted experience.", bundle: 'pro' },
+        { q: "What strategic approach defuses written hostility in cross-departmental email threads?", a: "Overcommunicating constructive intent upfront and scheduling a brief video call to align directly.", bundle: 'pro' },
+        { q: "How can community organizers defuse online polarization in public group channels?", a: "By elevating shared neighborhood goals, clarifying positive motives, and moving heated debates to video sessions.", bundle: 'pro' },
+        { q: "What strategy combination bridges friction between sales and engineering departments?", a: "Establishing a superordinate corporate mission, affirming technical rigor, and drawing out dual-background insights.", bundle: 'pro' },
+        { q: "How should multicultural team leads handle differences in communication styles?", a: "Validate diverse cultural perspectives, overcommunicate written intent, and adapt response channels.", bundle: 'pro' },
+        { q: "What psychological mechanism causes stereotype threat to impair performance in high-stakes environments?", a: "The visceral fear of being judged through a negative group lens triggers anxiety and cognitive overload, which supercommunicators defuse by affirming individual competence.", bundle: 'pro' },
+        { q: "How do interdepartmental rivalries between specialized groups escalate into toxic standoffs?", a: "Departments retreat into isolated tribal identities and view out-groups with suspicion, which is defused by establishing a shared superordinate organizational mission.", bundle: 'pro' },
+        { q: "Why do public digital forums and group chat threads polarize more rapidly than face-to-face meetings?", a: "Digital text removes emotional synchrony and tone cues, causing participants to interpret ambiguous comments as hostile attacks and respond with heightened defensiveness.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The Mindset mode examines internal belief reframes required to master group dynamics and digital communication. This deck addresses cognitive obstacles around social divides, identity threat, written warmth, and channel selection.",
+      cards: [
+        { q: "What internal mindset shift is required to bridge deep group or departmental divides?", a: "Recognizing that highlighting a shared superordinate identity creates the safety needed to discuss differences.", bundle: 'pro' },
+        { q: "How must you reframe exploring multiple identities to overcome fear of being intrusive?", a: "Seeing inquiries into multifaceted life roles as an act of respect that unlocks deeper connection.", bundle: 'pro' },
+        { q: "What mental model shift enables effective identity affirmation before giving feedback?", a: "Understanding that affirming personal worth removes defensiveness so critiques can be heard constructively.", bundle: 'pro' },
+        { q: "What cognitive obstacle prevents people from overcommunicating intent in digital text?", a: "Believing positive intent is obvious, when written text actually strips away tone and defaults to perceived coldness.", bundle: 'pro' },
+        { q: "How should you view switching from text chat to a phone call during a disagreement?", a: "As an efficient reset that restores vocal warmth and resolves written misunderstandings in minutes.", bundle: 'pro' },
+        { q: "Why is reducing colleagues to single departmental labels counterproductive?", a: "It triggers identity threat and forces people to defend rigid, one-dimensional group stances.", bundle: 'pro' },
+        { q: "How does reframing digital warmth impact remote team culture?", a: "Explicit intent markers and channel matching build psychological safety across asynchronous communications.", bundle: 'pro' },
+        { q: "What mental trap leads people to escalate written arguments in email threads?", a: "Believing they must defend their stance in writing, when changing the medium de-escalates friction immediately.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

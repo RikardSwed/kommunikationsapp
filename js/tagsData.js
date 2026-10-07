@@ -481,6 +481,15 @@ const packTags = {
   describeactions: [
     'describing', 'verbs', 'actions', 'missing words', 'explaining', 'vocabulary', 'movement'
   ],
+  supercomm1: [
+    'communication', 'supercommunicators', 'social skills', 'active listening', 'connection'
+  ],
+  supercomm2: [
+    'conflict', 'negotiation', 'supercommunicators', 'communication', 'connection'
+  ],
+  supercomm3: [
+    'group dynamics', 'digital communication', 'supercommunicators', 'social identity', 'connection'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -516,7 +525,7 @@ const TOPICS = [
 
   // ── Being with the other person ───────────────────────────────────
   { id: 'listening',             title: 'Listening & Understanding',     packs: ['listeningresponding', 'validation', 'listeningthroughquestions', 'showunderstanding2', 'jimmy3', 'showunderstanding', 'askingforclarity'] },
-  { id: 'depth',                 title: 'Depth & Connection',            packs: ['conversationaldepth', 'supportingconversations', 'talkingaboutyourself'] },
+  { id: 'depth',                 title: 'Depth & Connection',            packs: ['conversationaldepth', 'supportingconversations', 'talkingaboutyourself', 'supercomm1'] },
 
   // ── Holding the floor ─────────────────────────────────────────────
   { id: 'storytelling',          title: 'Storytelling',                  packs: ['storytelling', 'storytellingwiththesixws', 'storiesinconversation', 'buildingastory'] },
@@ -529,7 +538,7 @@ const TOPICS = [
   { id: 'repair',                title: 'Repair & Apology',              packs: ['apologizing2', 'apologizing1', 'jimmy4', 'brokenpromises', 'conflictresolution', 'aftertheargument', 'twosidesofthestory'] },
 
   // ── Standing your ground ──────────────────────────────────────────
-  { id: 'opinions',              title: 'Opinions & Argumentation',      packs: ['influenceframing', 'agreeing', 'disagreeing', 'givingcounterexamples', 'discussing'] },
+  { id: 'opinions',              title: 'Opinions & Argumentation',      packs: ['influenceframing', 'agreeing', 'disagreeing', 'givingcounterexamples', 'discussing', 'supercomm2'] },
   { id: 'persuasion',            title: 'Persuasion & Negotiation',      packs: ['influenceframing', 'persuasionandinfluence1', 'persuasionandinfluence2', 'negotiationandcompromise'] },
   { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression', 'oconnor1', 'oconnor3', 'jfisher1', 'jfisher2', 'assertivecomm1', 'assertivecomm2', 'assertivecommadv', 'integratedmaster', 'jfisher3', 'jfisheradv'] },
   { id: 'boundaries',            title: 'Asking & Saying No',            packs: ['playfulrefusals', 'thehappyno', 'theregretfulno', 'makingrequests', 'sayingno', 'oconnor2', 'jimmy6', 'askingpermission'] },
@@ -538,7 +547,7 @@ const TOPICS = [
   { id: 'emotions',              title: 'Emotions & Regulation',         packs: ['emotionlabellingandregulation', 'conflictemotions', 'praxdread4', 'reframing', 'oconnor6'] },
 
   // ── In writing (v1.29.12) ─────────────────────────────────────────
-  { id: 'written',               title: 'Messages & Writing',            packs: ['toneinmessages', 'replyingandnotreplying', 'whentostoptyping'] },
+  { id: 'written',               title: 'Messages & Writing',            packs: ['toneinmessages', 'replyingandnotreplying', 'whentostoptyping', 'supercomm3'] },
 
   // ── Lightness ─────────────────────────────────────────────────────
   { id: 'humour',                title: 'Humour & Banter',               packs: ['humour', 'teasing', 'selfhumour', 'humourpractise', 'playfulrefusals', 'rolebasedhumour', 'storybanter', 'responsivehumour', 'calibratinghumour'] },
