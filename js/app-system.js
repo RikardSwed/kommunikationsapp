@@ -4568,9 +4568,9 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // The same URLs go into App Store Connect (Privacy Policy URL, Support URL,
 // and the EULA/terms field).
 const LEGAL_LINKS = {
-  terms:   '',
-  privacy: '',
-  support: ''
+  terms:   'https://deckstack.app/terms.html',
+  privacy: 'https://deckstack.app/privacy.html',
+  support: 'https://deckstack.app/support.html'
 };
 (function initLegalLinks() {
   const labels = { terms: 'Terms of Use', privacy: 'Privacy Policy', support: 'Support' };
@@ -4610,6 +4610,7 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.44', date: 'October 2026', title: 'Legal links point to deckstack.app', audience: 'dev', items: ['<code>LEGAL_LINKS</code> now holds <strong>https://deckstack.app/terms.html</strong>, <strong>/privacy.html</strong> and <strong>/support.html</strong>, so the Terms, Privacy and Support links appear in About and under the store footers.', 'The site is hosted on Cloudflare Pages from <em>Webbsidor/deckstack-legal</em>; <code>support@deckstack.app</code> forwards by Email Routing.'] },
   { version: 'v1.29.43', date: 'October 2026', title: 'Supercommunicators 1\u20133 \u2014 a new Notebook series', audience: 'dev', items: ['Three packs built by Notebook from <em>Supercommunication.pdf</em> (interviews and talks with Charles Duhigg about <em>Supercommunicators</em>), imported at <strong>complete</strong>: <strong>The Language of Connection</strong> (<code>supercomm1</code>, Depth &amp; Connection), <strong>Connecting in Conflict</strong> (<code>supercomm2</code>, Opinions &amp; Argumentation) and <strong>Group Dynamics &amp; Digital Connection</strong> (<code>supercomm3</code>, Messages &amp; Writing).', 'Packs 1 and 2 are <strong>grid packs</strong>; pack 3 is not. <em>Looping for Understanding</em>, <em>Loop the Other Side</em> and <em>In-Group Bridging</em> are composite strategies (rulebook \u00a72d).', 'First series written with the new grid add-on and in three parts per pack. All three at 0 errors in check-pack. Review notes in <em>Appdokumentation/Supercommunicators 1\u20133 \u2014 att titta p\u00e5.md</em>.'] },
   { version: 'v1.29.42', date: 'October 2026', title: 'Links to Terms, Privacy and Support', audience: 'dev', items: ['New <code>LEGAL_LINKS</code> in app-system.js. Paste the public URLs there and the links appear in About, under the Upgrade screen and under the Extended screen. Empty means hidden, so nothing shows until the pages are published.', 'The three pages themselves are in <em>Webbsidor/deckstack-legal</em> in the vault, separate from the app, so they can be hosted anywhere.', 'Short disclaimer added to About and to the last onboarding step: <em>Deckstack is a practice tool, not therapy or professional advice.</em>'] },
   { version: 'v1.29.41', date: 'October 2026', title: 'Describe Actions \u2014 a new Pro pack next to Describe Things', audience: 'dev', items: ['New <strong>Pro</strong> pack <strong>Describe Actions</strong> (<code>describeactions</code>) under Explaining &amp; Describing, built from Rikard\u2019s material in <em>grundmaterial</em>. Describe Things describes objects; this one describes what people do \u2014 especially when the verb is missing.', 'Seven strategies: <em>What the Body Does, How It Moves, Why People Do It, When It Happens, What It Changes, What It Resembles, Paint a Scene.</em> <em>What It Resembles</em> shares its name and guide pair with Describe Things, because it is the same move.', '<strong>Grid pack</strong>: card N is the same verb in every strategy (whisper, sneak, throw, stare, hug, climb, overhear, escape). The material\u2019s similar-actions exercise became the challenge <em>Two Actions That Look Alike</em> and the sequence <em>Close, But Not Quite</em>.', '0 errors and 0 warnings in check-pack. Open in Pro is now 25 packs.'] },
