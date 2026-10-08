@@ -756,7 +756,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         t.className = 'mode-pin-toast';
         screen.appendChild(t);
       }
-      t.innerHTML = '<i class="ti ' + (pinned ? 'ti-pin-filled' : 'ti-pin') + '" aria-hidden="true"></i>'
+      t.innerHTML = '<i class="ti ' + (pinned ? 'ti-pinned' : 'ti-pin') + '" aria-hidden="true"></i>'
         + '<span>' + (pinned ? 'Pack pinned' : 'Pin removed') + '</span>';
       t.classList.add('show');
       clearTimeout(t._t);
