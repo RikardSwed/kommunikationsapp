@@ -409,9 +409,6 @@ function syncKeepCardPos() {
     row.classList.toggle('settings-row--locked', !allowed);
     const pill = row.querySelector('.settings-pro-pill');
     if (pill) pill.hidden = allowed;
-    const sub = row.querySelector('[data-grid-sub]');
-    if (sub) sub.textContent = !allowed ? 'Part of Pro'
-      : on ? 'Same card across every strategy' : 'One strategy at a time';
   });
 }
 window.syncKeepCardPos = syncKeepCardPos;
