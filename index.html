@@ -7,10 +7,10 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Deckstack" />
-  <link rel="manifest" href="manifest.json?v=12946" />
+  <link rel="manifest" href="manifest.json?v=12947" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12946" />
+  <link rel="stylesheet" href="css/style.css?v=12947" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -2043,9 +2043,9 @@
       <label>Shuffle inputs</label>
       <label class="toggle"><input type="checkbox" id="shuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-row">
-      <label>Stay on the same card</label>
-      <label class="toggle"><input type="checkbox" id="keepCardPos" /><span class="toggle-slider"></span></label>
+    <div class="settings-row settings-row--grid">
+      <label><span class="settings-name">Grid navigation<span class="settings-pro-pill" hidden>Pro</span></span><span class="settings-sub" data-grid-sub></span></label>
+      <label class="toggle"><input type="checkbox" class="grid-nav-toggle" id="keepCardPos" /><span class="toggle-slider"></span></label>
     </div>
     <div class="settings-row">
       <label>Show detailed guide text</label>
@@ -2160,6 +2160,10 @@
       <label>Shuffle inputs</label>
       <label class="toggle"><input type="checkbox" id="hfShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
+    <div class="settings-row settings-row--grid">
+      <label><span class="settings-name">Grid navigation<span class="settings-pro-pill" hidden>Pro</span></span><span class="settings-sub" data-grid-sub></span></label>
+      <label class="toggle"><input type="checkbox" class="grid-nav-toggle" id="hfKeepCardPos" /><span class="toggle-slider"></span></label>
+    </div>
     <div id="hfBundlePlaceholder"></div>
     <div class="settings-version">v1.26.44</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
@@ -2249,6 +2253,10 @@
     <div class="settings-row">
       <label>Shuffle inputs</label>
       <label class="toggle"><input type="checkbox" id="hfMemShuffleInputs" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row settings-row--grid">
+      <label><span class="settings-name">Grid navigation<span class="settings-pro-pill" hidden>Pro</span></span><span class="settings-sub" data-grid-sub></span></label>
+      <label class="toggle"><input type="checkbox" class="grid-nav-toggle" id="hfMemKeepCardPos" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfMemBundlePlaceholder"></div>
     <div class="settings-version">v1.26.44</div>
@@ -2508,6 +2516,10 @@
     <div class="settings-row">
       <label>Shuffle inputs</label>
       <label class="toggle"><input type="checkbox" id="hfMindShuffleInputs" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row settings-row--grid">
+      <label><span class="settings-name">Grid navigation<span class="settings-pro-pill" hidden>Pro</span></span><span class="settings-sub" data-grid-sub></span></label>
+      <label class="toggle"><input type="checkbox" class="grid-nav-toggle" id="hfMindKeepCardPos" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfMindBundlePlaceholder"></div>
     <div class="settings-version">v1.26.44</div>
@@ -3155,20 +3167,20 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12946"></script>
-<script src="js/tagsData.js?v=12946"></script>
-<script src="js/programsData.js?v=12946"></script>
-<script src="js/challengesData.js?v=12946"></script>
-<script src="js/mindsetData.js?v=12946"></script>
-<script src="js/multiStepData.js?v=12946"></script>
-<script src="js/memorizeData.js?v=12946"></script>
-<script src="js/mode-engine.js?v=12946"></script>
-<script src="js/app-core.js?v=12946"></script>
-<script src="js/app-modes.js?v=12946"></script>
-<script src="js/app-handsfree.js?v=12946"></script>
-<script src="js/app-system.js?v=12946"></script>
-<script src="js/app-ui.js?v=12946"></script>
-<script src="js/app-back.js?v=12946"></script>
+<script src="js/data.js?v=12947"></script>
+<script src="js/tagsData.js?v=12947"></script>
+<script src="js/programsData.js?v=12947"></script>
+<script src="js/challengesData.js?v=12947"></script>
+<script src="js/mindsetData.js?v=12947"></script>
+<script src="js/multiStepData.js?v=12947"></script>
+<script src="js/memorizeData.js?v=12947"></script>
+<script src="js/mode-engine.js?v=12947"></script>
+<script src="js/app-core.js?v=12947"></script>
+<script src="js/app-modes.js?v=12947"></script>
+<script src="js/app-handsfree.js?v=12947"></script>
+<script src="js/app-system.js?v=12947"></script>
+<script src="js/app-ui.js?v=12947"></script>
+<script src="js/app-back.js?v=12947"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
