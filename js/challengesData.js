@@ -11822,4 +11822,348 @@ const challengesCollections = {
       ]
     },
   ],
+  passiveaggression2: [
+    {
+      name: "Backhanded Compliments",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "It arrives as praise — \"You look great, for once\", \"I didn't think you had it in you\" — and you are left holding a thank-you and a bruise at the same time.\n\nWhat goes wrong is answering only the nice half. You say thank you, because it was technically a compliment, and the sting goes past unanswered. Or you attack the whole thing and look ungracious.\n\n**Return to Sender** works best: hand back the qualifier, the \"for once\" or the \"for a teacher\". **Calling Out Subtext** names the second half without accusing anyone. **Decoding Intent** is there when you honestly cannot tell.\n\nThe one thing to avoid: thanking them for the insult part.\n\nMindset: you can take the compliment and still pick up the sting.",
+      inputs: [
+        { q: "A colleague after your presentation: \"That was great. I didn't think you had it in you.\"", a: "\"Didn't think I had it in me?\" [Return to Sender]", bundle: 'pro', guideBack: "Their own word, handed back" },
+        { q: "Your aunt at a wedding: \"You look so well! So much better than last time.\"", a: "\"Was that meant as a compliment?\" [Decoding Intent]", bundle: 'pro', guideBack: "A yes-or-no question about intent" },
+        { q: "A friend: \"I love how you just don't care what people think of your clothes.\"", a: "\"That sounded like it had a second half. Should I read into it?\" [Calling Out Subtext]", bundle: 'pro', guideBack: "A named tone, and a question" },
+        { q: "A client: \"Well done. That's much more professional than your usual work.\"", a: "\"Than my usual work?\" [Return to Sender]", bundle: 'pro', guideBack: "Their own word, handed back" },
+        { q: "Your father, about your new flat: \"It's lovely. Cosy. You'd never fit a family in it, of course.\"", a: "\"I'm surprised to hear that, Dad. I'm really happy here.\" [I'm Surprised]", bundle: 'pro', guideBack: "A boundary without blame" },
+        { q: "A teammate: \"You're so bold, applying for that role.\"", a: "\"Was bold meant kindly?\" [Decoding Intent]", bundle: 'pro', guideBack: "A yes-or-no question about intent" },
+        { q: "At the school gate, another parent says, \"Your kids are always so relaxed. I wish I could be that laid-back about homework.\"", a: "\"You've brought up homework twice since we got here.\" [Describe What You Noticed]", bundle: 'pro', guideBack: "A plain observation" },
+        { q: "Your brother-in-law: \"Nice car. Didn't know teachers could afford one.\"", a: "\"Teachers?\" [Return to Sender]", bundle: 'pro', guideBack: "Their own word, handed back" },
+      ]
+    },
+    {
+      name: "Sarcasm",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The words say one thing and the tone says the opposite: \"Oh, wonderful\", \"Thanks for all your help\", a slow clap. Everyone hears the tone, and the words give them a way out.\n\nWhat goes wrong is answering the words — \"You're welcome\" — which sounds as if you missed it, or matching the sarcasm, which turns it into a contest.\n\n**Return to Sender** works well, because sarcasm lives in one word, and handed back flat it loses its music. **Calling Out Subtext** names the tone without calling it sarcasm. **Decoding Intent** asks straight whether it was meant.\n\nThe one thing to avoid: sarcasm back.\n\nMindset: the tone is the message, so answer the tone, calmly.",
+      inputs: [
+        { q: "You suggest a new way to share files, and a colleague says, \"Oh, wonderful. Another system.\"", a: "\"Another system?\" [Return to Sender]", bundle: 'pro', guideBack: "Their own word, handed back" },
+        { q: "You ask your partner to pick up milk. He says, \"Yes, sir. Right away, sir.\"", a: "\"Was that meant to sound like I'm bossing you around?\" [Decoding Intent]", bundle: 'pro', guideBack: "A yes-or-no question about intent" },
+        { q: "A customer, as you explain the returns policy: \"Wow. Fantastic service, really.\"", a: "\"That sounded like more than a compliment. Is there something I've missed?\" [Calling Out Subtext]", bundle: 'pro', guideBack: "A named tone, and a question" },
+        { q: "Your teenager, when the wifi goes off at ten: \"Thanks, Mum. Best parent ever.\"", a: "\"Best parent ever?\" [Return to Sender]", bundle: 'pro', guideBack: "Their own word, handed back" },
+        { q: "A coworker gives you a slow clap when you finally get the printer working.", a: "\"You clapped very slowly there.\" [Describe What You Noticed]", bundle: 'pro', guideBack: "A plain observation" },
+        { q: "Your flatmate, looking at the sink: \"Oh, don't worry. I love washing up.\"", a: "\"Did you mean that as a hint about the dishes?\" [Decoding Intent]", bundle: 'pro', guideBack: "A yes-or-no question about intent" },
+        { q: "After your update, your manager says, \"Great. So that's another week gone.\"", a: "\"I'm surprised to hear it put like that. The delay was agreed on Monday.\" [I'm Surprised]", bundle: 'pro', guideBack: "A boundary without blame" },
+        { q: "Your cousin: \"Oh, of course, you're far too busy and important for us.\"", a: "\"That had a real edge to it. Should I read into it?\" [Calling Out Subtext]", bundle: 'pro', guideBack: "A named tone, and a question" },
+      ]
+    },
+    {
+      name: "Sighs and Hints",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Nothing is said, or almost nothing: a long sigh, a cupboard shut a little too hard, \"No, it's fine\", a look at the pile of washing. You know something is wrong, and there is no sentence to answer.\n\nWhat goes wrong is guessing what the hint means and answering your guess, or acting as if nothing happened and stewing.\n\n**Describe What You Noticed** is the main strategy here: say what you saw, plainly. **Calling Out Subtext** fits when the hint clearly carries a message. **Return to Sender** works when there is one word to hand back.\n\nThe one thing to avoid: answering the hint you imagined.\n\nMindset: say what you saw, and let them say what it meant.",
+      inputs: [
+        { q: "Your partner sighs heavily each time you mention the trip with your friends.", a: "\"You sighed when I mentioned the trip.\" [Describe What You Noticed]", bundle: 'pro', guideBack: "A plain observation" },
+        { q: "A colleague puts your mug in the sink a little too loudly, looking at you.", a: "\"You looked at me as you put my mug in the sink.\" [Describe What You Noticed]", bundle: 'pro', guideBack: "A plain observation" },
+        { q: "Your mum: \"No, no, it's fine. I'll manage on my own.\"", a: "\"On your own?\" [Return to Sender]", bundle: 'pro', guideBack: "Their own word, handed back" },
+        { q: "Your housemate has left the full bin bag outside your door.", a: "\"The bin bag outside my door — is there a message in that?\" [Calling Out Subtext]", bundle: 'pro', guideBack: "A named tone, and a question" },
+        { q: "A team member rolls her eyes when the project is given to you.", a: "\"You rolled your eyes when Anna said my name.\" [Describe What You Noticed]", bundle: 'pro', guideBack: "A plain observation" },
+        { q: "Your father-in-law keeps glancing at his watch while you talk about your job.", a: "\"Is that a hint that we should go?\" [Decoding Intent]", bundle: 'pro', guideBack: "A yes-or-no question about intent" },
+        { q: "Your friend answers your long message with a single \"k\".", a: "\"That was a short reply. Should I read into it?\" [Calling Out Subtext]", bundle: 'pro', guideBack: "A named tone, and a question" },
+        { q: "Your son slams his door after you say no to the party.", a: "\"I'm surprised. That's not how we handle a no in this house.\" [I'm Surprised]", bundle: 'pro', guideBack: "A boundary without blame" },
+      ]
+    },
+    {
+      name: "Digs in Front of Others",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The remark is made with an audience: a joke at your expense in a meeting, a comment at the dinner table, a laugh that invites everyone else to join in. The audience is the point. It raises the price of saying anything.\n\nWhat goes wrong is laughing along so you do not look touchy, or answering too hard and becoming the person who made it awkward.\n\n**I'm Surprised** is built for this: short, calm, and it marks the line without a scene. **Return to Sender** hands the word back without a speech. **Decoding Intent** works if you can stay level, because the room hears the question too.\n\nThe one thing to avoid: a long answer in front of everyone.\n\nMindset: one calm sentence in front of others says more than a speech in private.",
+      inputs: [
+        { q: "In a meeting, a colleague says, \"Let's ask Sam, if she's awake yet.\" A few people laugh.", a: "\"I'm surprised to hear that in a meeting, Jon.\" [I'm Surprised]", bundle: 'pro', guideBack: "A boundary without blame" },
+        { q: "At a family dinner, your uncle tells everyone you are still \"finding yourself\".", a: "\"Finding myself?\" [Return to Sender]", bundle: 'pro', guideBack: "Their own word, handed back" },
+        { q: "At a party, your friend tells the group you \"never pay for a round\".", a: "\"Was that meant as a dig?\" [Decoding Intent]", bundle: 'pro', guideBack: "A yes-or-no question about intent" },
+        { q: "In front of the client, your manager said she would \"double-check anything\" you send. Now you are alone with her.", a: "\"In the meeting, you told the client you'd double-check my work.\" [Describe What You Noticed]", bundle: 'pro', guideBack: "A plain observation" },
+        { q: "At the school gate, another parent says to the group, \"Well, not everyone reads the newsletter, do they?\" and looks at you.", a: "\"Not everyone?\" [Return to Sender]", bundle: 'pro', guideBack: "Their own word, handed back" },
+        { q: "Your sister tells the whole table, \"Careful, she'll cry if you criticise her cooking.\"", a: "\"That got a laugh. Should I read anything into it?\" [Calling Out Subtext]", bundle: 'pro', guideBack: "A named tone, and a question" },
+        { q: "On a team call, a colleague says, \"Let's give Alex the easy part, to be safe.\"", a: "\"I'm surprised to hear that. I'd like the hard part, actually.\" [I'm Surprised]", bundle: 'pro', guideBack: "A boundary without blame" },
+        { q: "Your mother-in-law tells the guests, \"Oh, she does her best with the garden.\"", a: "\"Was that meant as a dig at the garden?\" [Decoding Intent]", bundle: 'pro', guideBack: "A yes-or-no question about intent" },
+      ]
+    },
+    {
+      name: "Convenient Forgetting",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The thing you asked for keeps not happening, and each time it was an accident. They forgot to add you to the invite, forgot to call, forgot it was their turn. Once is forgetting. The pattern is the message.\n\nWhat goes wrong is treating every time as the first: reminding again and again and never mentioning the pattern. Or accusing them of doing it on purpose, which they can simply deny.\n\n**Describe What You Noticed** is strongest here: count it out, plainly. **Decoding Intent** asks the closed question once the pattern is clear. **Calling Out Subtext** asks whether there is more behind it.\n\nThe one thing to avoid: calling them a liar.\n\nMindset: you do not have to prove it was on purpose. You only have to say what keeps happening.",
+      inputs: [
+        { q: "For the third meeting in a row, a colleague \"forgot\" to add you to the invite.", a: "\"This is the third meeting in a row I haven't been on the invite.\" [Describe What You Noticed]", bundle: 'pro', guideBack: "A plain observation" },
+        { q: "Your partner promised on Sunday to call the landlord, and has forgotten again.", a: "\"It keeps slipping. Should I read anything into that?\" [Calling Out Subtext]", bundle: 'pro', guideBack: "A named tone, and a question" },
+        { q: "Your flatmate has forgotten it was his turn to clean, for the fourth week running.", a: "\"Are you forgetting on purpose?\" [Decoding Intent]", bundle: 'pro', guideBack: "A yes-or-no question about intent" },
+        { q: "Your friend organised a birthday dinner and \"forgot\" to tell you about it.", a: "\"I'm surprised. I thought I'd be on that list.\" [I'm Surprised]", bundle: 'pro', guideBack: "A boundary without blame" },
+        { q: "Your manager has left your part of the project out of three updates in a row.", a: "\"In the last three updates, my part hasn't been mentioned.\" [Describe What You Noticed]", bundle: 'pro', guideBack: "A plain observation" },
+        { q: "Your mum keeps forgetting that you do not eat meat, and has made a roast again.", a: "\"That's the fourth Sunday in a row there's been nothing I can eat.\" [Describe What You Noticed]", bundle: 'pro', guideBack: "A plain observation" },
+        { q: "Your neighbour hands over your parcel three days late: \"Sorry, I forgot. Again.\"", a: "\"Again?\" [Return to Sender]", bundle: 'pro', guideBack: "Their own word, handed back" },
+        { q: "You mention the money your brother owes you, and he changes the subject, again.", a: "\"Did you mean to change the subject just then?\" [Decoding Intent]", bundle: 'pro', guideBack: "A yes-or-no question about intent" },
+      ]
+    },
+  ],
+  passiveaggression3: [
+    {
+      name: "The Martyr",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Someone does the job you did not do, loudly, with a sigh and a line: \"No, don't worry, I'll do it myself. I always do.\" Nothing is asked of you, and you are still the villain.\n\nWhat goes wrong is one of two things: you rush to apologise and grab the job back, or you start an argument about who really does more. Either way, the request under the sigh never gets made.\n\n**Ask What They Want** is strongest here, because a martyr is almost always a want in disguise. **Not Here** helps when it happens in front of others. **Play Along** or **Twist It** work for the small, half-joking ones, and **Let It Hang** when you will not take the guilt.\n\nThe one thing to avoid: taking the job back with a sigh of your own.\n\nMindset: the sigh is a request. Ask for it.",
+      inputs: [
+        { q: "Your partner wipes the counter around you and says, \"No, it's fine, I'll do it. I always do.\"", a: "\"Do you want us to split the kitchen properly? Tell me which bits you'd like me to take.\" [Ask What They Want]", bundle: 'pro', guideBack: "A question that invites a request" },
+        { q: "A colleague picks up the minutes and says, \"Don't worry, I'll take notes again. Someone has to.\"", a: "\"Shall we rotate it? I'll take next week's.\" [Ask What They Want]", bundle: 'pro', guideBack: "A question that invites a request" },
+        { q: "Your dad carries the shopping past you and says, \"Don't get up. I'm only seventy-two.\"", a: "\"Only seventy-two? You're a youngster. Give me the heavy one.\" [Twist It]", bundle: 'pro', guideBack: "A light joke that points elsewhere" },
+        { q: "Your housemate hoovers around your feet and says, \"Oh, I'll just do everyone's bit, shall I?\"", a: "(Pause. Hold their eye.) \"Thanks. I'll do the bathroom tomorrow.\" [Let It Hang]", bundle: 'pro', guideBack: "A held pause, then a calm next line" },
+        { q: "Your friend sighs over the group booking: \"I'll sort it. As usual. Nobody else will.\"", a: "\"We're hopeless. Without you we'd be meeting in a car park.\" [Play Along]", bundle: 'pro', guideBack: "A playful, overblown agreement" },
+        { q: "Clearing the table at Christmas, your sister says, \"No, you sit. You've had such a hard year.\"", a: "\"Let's talk about my year later, on a walk. For now, pass me a tea towel.\" [Not Here]", bundle: 'pro', guideBack: "An offer to talk it through in private" },
+        { q: "In front of your manager, a teammate says, \"Fine. I'll stay late and fix it. Again.\"", a: "\"Let's go through what needs fixing after this, the two of us.\" [Not Here]", bundle: 'pro', guideBack: "An offer to talk it through in private" },
+        { q: "Your teenager empties the dishwasher very loudly and says, \"It's fine. I'm basically the maid.\"", a: "\"Is there a job you'd rather swap for? Name it.\" [Ask What They Want]", bundle: 'pro', guideBack: "A question that invites a request" },
+      ]
+    },
+    {
+      name: "Per My Last Email",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The dig arrives in writing: \"As per my last email\", \"Just a gentle reminder\", \"Not sure if you saw this\", a reply-all with your mistake in it. It looks polite, and everyone can read the edge.\n\nWhat goes wrong is answering in the same tone, or writing a long defence. In writing, both stay, and both get forwarded.\n\n**Let It Hang** has a written form: take your time, then answer only the content. **Not Here** takes it off the page, to a call or a face-to-face chat. **Ask What They Want** turns the reminder into a question about what would actually help. **Play Along** works in a friendly group chat, never in a work thread.\n\nThe one thing to avoid: hitting reply-all while you are still annoyed.\n\nMindset: answer the content, not the tone.",
+      inputs: [
+        { q: "An email from a colleague reads, \"As per my last email, the deadline was Tuesday.\"", a: "(Wait an hour before replying.) \"Thanks, Sophie. The updated version is attached.\" [Let It Hang]", bundle: 'pro', guideBack: "A held pause, then a calm next line" },
+        { q: "A client writes, \"Just a gentle reminder, for the third time, about the invoice.\"", a: "\"Thanks for chasing. Would it help if I sent invoices straight to you from now on?\" [Ask What They Want]", bundle: 'pro', guideBack: "A question that invites a request" },
+        { q: "Your manager replies to everyone: \"Not sure if all of you saw this, but some of us met the deadline.\"", a: "\"Could we talk about the deadline on a quick call today?\" [Not Here]", bundle: 'pro', guideBack: "An offer to talk it through in private" },
+        { q: "In the family group chat, your brother writes, \"Nice of some people to finally reply.\"", a: "\"I'm here! I've been training my thumbs for weeks.\" [Play Along]", bundle: 'pro', guideBack: "A playful, overblown agreement" },
+        { q: "A parent in the class group chat writes, \"Reposting the newsletter for those of us who don't read it.\"", a: "\"That's me. I use it as a coaster. Thanks for the repost.\" [Play Along]", bundle: 'pro', guideBack: "A playful, overblown agreement" },
+        { q: "A teammate messages, \"Not sure if you saw my message yesterday?\"", a: "\"I saw it. It was so good I framed it. Answer below.\" [Twist It]", bundle: 'pro', guideBack: "A light joke that points elsewhere" },
+        { q: "Your landlord emails, \"I trust you'll find time to read the tenancy agreement this time.\"", a: "\"Happy to go over it. Could we do a quick call instead of email?\" [Not Here]", bundle: 'pro', guideBack: "An offer to talk it through in private" },
+        { q: "A colleague's instructions end with, \"Let me know if anything is unclear. Again.\"", a: "\"Thanks. Would it help if we kept these steps in one shared place?\" [Ask What They Want]", bundle: 'pro', guideBack: "A question that invites a request" },
+      ]
+    },
+    {
+      name: "Teasing With an Edge",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "It comes with a laugh, so it is a joke — except that it is half a dig. If you object, you are the one with no sense of humour.\n\nWhat goes wrong is laughing along at your own expense, again and again, or snapping and being \"touchy\". The first teaches them it is fine; the second proves their point.\n\n**Play Along** takes the tease and inflates it, which shows it did not land. **Twist It** keeps the laugh but points it somewhere new. **Let It Hang** is for when the edge outweighs the joke: no laugh, a pause, and on.\n\nThe one thing to avoid: a sharper joke back. That turns a tease into a contest.\n\nMindset: you can enjoy the joke and still decline the edge.",
+      inputs: [
+        { q: "At a work party, a colleague says, \"Careful, she'll make us a spreadsheet about it.\"", a: "\"Colour-coded, with a pivot table. You'll love it.\" [Play Along]", bundle: 'pro', guideBack: "A playful, overblown agreement" },
+        { q: "Your uncle asks, \"Still doing your little band thing?\"", a: "\"Very little. Next month we're touring my garage.\" [Play Along]", bundle: 'pro', guideBack: "A playful, overblown agreement" },
+        { q: "A friend watches you order a salad and says, \"Ooh, someone's being good.\"", a: "\"Don't tell the chips. They think I'm loyal.\" [Twist It]", bundle: 'pro', guideBack: "A light joke that points elsewhere" },
+        { q: "In front of the team, a teammate laughs, \"Don't ask him, he'll take three weeks.\"", a: "(Pause. No laugh. Hold his eye.) \"Ask me. It'll be Thursday.\" [Let It Hang]", bundle: 'pro', guideBack: "A held pause, then a calm next line" },
+        { q: "Your partner's friend says, \"Oh, you're the sensible one, aren't you?\"", a: "\"Terribly sensible. I iron my socks.\" [Play Along]", bundle: 'pro', guideBack: "A playful, overblown agreement" },
+        { q: "At a wedding, your cousin calls out, \"Look who finally learned to dance.\"", a: "\"Learned is a strong word. The floor is still recovering.\" [Twist It]", bundle: 'pro', guideBack: "A light joke that points elsewhere" },
+        { q: "A colleague looks you up and down and says, \"Nice shirt. Did you lose a bet?\"", a: "\"Lost the bet, won the shirt. I call that a good day.\" [Twist It]", bundle: 'pro', guideBack: "A light joke that points elsewhere" },
+        { q: "At the barbecue, your brother tells everyone, \"Let's see if he can manage not to burn them this time.\"", a: "(Pause. Hold his eye.) \"Who wants the first one?\" [Let It Hang]", bundle: 'pro', guideBack: "A held pause, then a calm next line" },
+      ]
+    },
+    {
+      name: "Comparisons",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You are measured against someone else: \"Your brother always calls on Sundays.\" \"Anna had the report in by Thursday.\" \"Her last boyfriend could fix anything.\"\n\nWhat goes wrong is defending yourself against the other person, or running them down. Both make the comparison the topic, and the real point disappears behind it.\n\n**Ask What They Want** works best, because a comparison is usually a want in disguise: more calls, an earlier report. **Twist It** keeps it light, as long as the joke never lands on the person you were compared with. **Not Here** helps when that person is in the room.\n\nThe one thing to avoid: comparing back.\n\nMindset: there is a request hiding behind the other name.",
+      inputs: [
+        { q: "Your mum says, \"Your brother calls every Sunday, you know.\"", a: "\"Would you like that from me too? Pick an evening.\" [Ask What They Want]", bundle: 'pro', guideBack: "A question that invites a request" },
+        { q: "Your manager says, \"Anna always had the report in by Thursday.\"", a: "\"Would you like Thursday to be the standard? I can do that.\" [Ask What They Want]", bundle: 'pro', guideBack: "A question that invites a request" },
+        { q: "Your father-in-law says, \"Her last boyfriend could fix anything.\"", a: "\"Then I'll keep his number. For emergencies.\" [Twist It]", bundle: 'pro', guideBack: "A light joke that points elsewhere" },
+        { q: "At the school gate, a parent says, \"Our Jamie's already reading chapter books.\"", a: "\"Lovely. Ours is reading the cereal box with real passion.\" [Twist It]", bundle: 'pro', guideBack: "A light joke that points elsewhere" },
+        { q: "Your friend says, \"Funny. Lisa always remembers my birthday.\"", a: "\"I know. Lisa's the champion. I'm still in training.\" [Play Along]", bundle: 'pro', guideBack: "A playful, overblown agreement" },
+        { q: "With your sister at the table, your aunt says, \"Your sister's done so well for herself.\"", a: "\"She has. Let's catch up properly later, Auntie, just us.\" [Not Here]", bundle: 'pro', guideBack: "An offer to talk it through in private" },
+        { q: "A customer says, \"The last person who served me was much quicker.\"", a: "\"What would help most right now — shall I start with the refund?\" [Ask What They Want]", bundle: 'pro', guideBack: "A question that invites a request" },
+        { q: "In front of friends, your partner says, \"Tom's wife plans all their holidays.\"", a: "\"Let's talk holidays tonight. I want to hear what you'd like.\" [Not Here]", bundle: 'pro', guideBack: "An offer to talk it through in private" },
+      ]
+    },
+    {
+      name: "The Cold Shoulder",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Nothing is said at all. Short answers, a \"fine\" that is not fine, a coffee round that skips you, a message that gets a single letter back.\n\nWhat goes wrong is chasing — \"Are you okay? Are you sure? Is it me?\" — or matching the coldness until neither of you remembers how it started.\n\n**Ask What They Want** makes one clear offer. **Not Here** names a time to talk, so the silence has somewhere to go. **Let It Hang** carries on warmly without chasing. Jokes rarely work here; there is no remark to play with.\n\nThe one thing to avoid: asking \"what's wrong?\" five times in one evening.\n\nMindset: make one clear offer, then let the silence be theirs.",
+      inputs: [
+        { q: "Your partner has answered everything with \"fine\" all evening.", a: "\"If something's up, I'd like to hear it. Can we talk after dinner?\" [Not Here]", bundle: 'pro', guideBack: "An offer to talk it through in private" },
+        { q: "A colleague does the coffee round and skips you without a word.", a: "(A beat.) \"No worries. Anyone need anything else from the kitchen?\" [Let It Hang]", bundle: 'pro', guideBack: "A held pause, then a calm next line" },
+        { q: "Since your argument, your teenager has stopped answering your messages.", a: "\"Is there something you'd like me to do differently? I'm listening.\" [Ask What They Want]", bundle: 'pro', guideBack: "A question that invites a request" },
+        { q: "Your friend left you out of the group plans and has not mentioned it.", a: "\"Saw the photos from Saturday. Would you want me along next time? I'd like that.\" [Ask What They Want]", bundle: 'pro', guideBack: "A question that invites a request" },
+        { q: "Your neighbour has stopped waving since your party.", a: "\"I think the party ran too loud. What would you like us to do next time?\" [Ask What They Want]", bundle: 'pro', guideBack: "A question that invites a request" },
+        { q: "Your mother-in-law talks to everyone at the table except you.", a: "(Pause. Hold her eye.) \"Could you pass the salt, please?\" [Let It Hang]", bundle: 'pro', guideBack: "A held pause, then a calm next line" },
+        { q: "Your sister answers your long message with \"k\".", a: "\"Can I ring you on Sunday? Easier than messages.\" [Not Here]", bundle: 'pro', guideBack: "An offer to talk it through in private" },
+        { q: "Since your review, your manager's replies have shrunk to single words.", a: "\"Could we find twenty minutes this week? I'd like to hear where things stand.\" [Not Here]", bundle: 'pro', guideBack: "An offer to talk it through in private" },
+      ]
+    },
+  ],
+  passiveaggression4: [
+    {
+      name: "Calm Denial",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You named it, gently, and they answer with a calm, slightly puzzled denial: \"What? I didn't mean anything by it.\" They look reasonable, and suddenly you look like the one who started something.\n\nWhat goes wrong is pressing for an admission — \"You did, though\" — which turns your fair question into an accusation and earns you a second, louder denial.\n\n**Take Them at Their Word** works when there is a practical point to build on. **Leave It With Them** works when saying it once was the point. **Impact, Not Intent** works when it matters too much to leave.\n\nThe one thing to avoid: arguing about what they meant.\n\nMindset: a denial is an answer. You can work with it.",
+      inputs: [
+        { q: "Your manager says, \"Thanks for finally sending it.\" You ask if she meant that to sound sharp. She says, \"Sharp? No, I'm just glad it's in.\"", a: "\"Good. Then I'll send the next one on Friday, as planned.\" [Take Them at Their Word]", bundle: 'pro', guideBack: "The denial, put to use" },
+        { q: "Your friend says, \"Oh, you came.\" You say she sounds a bit annoyed. She says, \"I'm not annoyed. Why would I be?\"", a: "\"Okay. Just thought I'd ask.\" [Leave It With Them]", bundle: 'pro', guideBack: "A short close, point still made" },
+        { q: "An old schoolfriend says, \"Oh, you're still at the same company?\" You ask what she means. She says, \"Nothing! I'm just surprised.\"", a: "\"Sure. It still came across as 'you should be further along'.\" [Impact, Not Intent]", bundle: 'pro', guideBack: "The effect, with the intent granted" },
+        { q: "Your colleague says, \"Some of us don't get to work from home.\" You say he has mentioned home working three times this week. He says, \"Have I? I didn't notice.\"", a: "\"You have. If it's ever a problem, I'd rather hear it.\" [Leave It With Them]", bundle: 'pro', guideBack: "A short close, point still made" },
+        { q: "Your mother-in-law says, \"Oh, you let them have sweets before dinner?\" You ask if you should read into that. She says, \"Of course not. I'm only asking.\"", a: "\"Good. Then yes — on Fridays they do.\" [Take Them at Their Word]", bundle: 'pro', guideBack: "The denial, put to use" },
+        { q: "Your neighbour says, \"Lovely that your car's finally off my side.\" You say you're surprised to hear that. He says, \"Oh, I didn't mean it like that.\"", a: "\"I believe you. It still sounded like it's bothered you for a while.\" [Impact, Not Intent]", bundle: 'pro', guideBack: "The effect, with the intent granted" },
+        { q: "Your partner says, \"No, go. Have fun with your friends.\" You say it sounds like she'd rather you stayed. She says, \"I didn't say that.\"", a: "\"You didn't. Okay — I'll be back by ten.\" [Take Them at Their Word]", bundle: 'pro', guideBack: "The denial, put to use" },
+        { q: "Your teammate says, \"Must be nice to get the easy accounts.\" You ask if that was aimed at you. She says, \"No! It wasn't about you at all.\"", a: "\"Okay. It still landed on me, so I wanted to say it.\" [Impact, Not Intent]", bundle: 'pro', guideBack: "The effect, with the intent granted" },
+      ]
+    },
+    {
+      name: "Just a Joke",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You asked about it, or said how it landed, and they laugh: \"Relax. It was a joke.\" Now the dig is protected — if you object, you are the person who cannot take a joke.\n\nWhat goes wrong is arguing that it was not funny, or that it was not really a joke. Both are arguments about their intent, and both make you look humourless while they look relaxed.\n\n**Impact, Not Intent** is the main strategy: joke or not, say how it landed. **Take Them at Their Word** works lightly — a joke, so nothing to discuss. **Leave It With Them** works when once is enough.\n\nThe one thing to avoid: explaining why the joke was not funny.\n\nMindset: you can let it be a joke and still say what it did.",
+      inputs: [
+        { q: "Your sister says, \"Nice of you to finally show up.\" You ask what she means. She laughs: \"God, relax. It was a joke.\"", a: "\"Fine, a joke. It still felt like a dig, and I'd rather they stopped.\" [Impact, Not Intent]", bundle: 'pro', guideBack: "The effect, with the intent granted" },
+        { q: "Your colleague says, \"Look, he's actually here before ten!\" You say, \"Actually?\" He says, \"It's banter, mate.\"", a: "\"Ha. Good — so my start time's not a problem, then.\" [Take Them at Their Word]", bundle: 'pro', guideBack: "The denial, put to use" },
+        { q: "Your friend says, \"Careful, she's on a diet,\" as you order. You say how that lands. She says, \"Oh, come on. I'm joking!\"", a: "\"I know. It still made me feel watched.\" [Impact, Not Intent]", bundle: 'pro', guideBack: "The effect, with the intent granted" },
+        { q: "Your teenage son says, \"Wow, Dad cooked. Call the newspapers.\" You ask if that's meant as a dig. He says, \"It's a joke! Chill.\"", a: "\"Okay. Joke heard. Eat up.\" [Leave It With Them]", bundle: 'pro', guideBack: "A short close, point still made" },
+        { q: "Your partner says, in the car, \"Shall I drive? I'd like to get there today.\" You say that sounded like a dig at your driving. She says, \"It was a joke. You know that.\"", a: "\"I believe you. It's the third this week, though, and they're adding up.\" [Impact, Not Intent]", bundle: 'pro', guideBack: "The effect, with the intent granted" },
+        { q: "Your manager says, \"Don't strain yourself,\" when you offer to help. You ask what she means. She says, \"Only joking! Thanks.\"", a: "\"Ha — good. Then I'll take the first half of the list.\" [Take Them at Their Word]", bundle: 'pro', guideBack: "The denial, put to use" },
+        { q: "Your father-in-law says, \"Still haven't found a real job, then?\" You say, \"A real job?\" He says, \"It's a joke. You used to laugh at my jokes.\"", a: "\"I still do, at most of them. That one stings.\" [Impact, Not Intent]", bundle: 'pro', guideBack: "The effect, with the intent granted" },
+        { q: "Your friend says, \"Oh, you're bringing your famous salad.\" You ask if you should read into \"famous\". She laughs: \"It's a joke, silly.\"", a: "\"Alright. I'll bring it anyway.\" [Leave It With Them]", bundle: 'pro', guideBack: "A short close, point still made" },
+      ]
+    },
+    {
+      name: "The Turnaround",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You named the remark, and they turn it on you: \"Wow, you're really touchy today.\" \"Why are you so sensitive?\" In one line the subject has changed from what they said to what you are like.\n\nWhat goes wrong is defending yourself — \"I'm not sensitive!\" — which proves the label in the eyes of anyone watching and leaves their remark forgotten.\n\n**Fogging** grants the label and keeps your point. **Negative Inquiry** asks what exactly they saw, and often they find nothing but their own remark. **Impact, Not Intent** works when \"you're overreacting\" really means \"I didn't mean it\".\n\nThe one thing to avoid: arguing about your character.\n\nMindset: you can be a little sensitive and still be right.",
+      inputs: [
+        { q: "Your colleague says, \"Oh, the expert has spoken.\" You ask what he means. He says, \"Wow, someone's touchy today.\"", a: "\"Maybe I am. I'd still rather you just said if you disagree.\" [Fogging]", bundle: 'pro', guideBack: "A partial agreement, point kept" },
+        { q: "Your brother says, \"Must be nice having Mum babysit for free.\" You say it sounded like a dig. He says, \"You're so sensitive.\"", a: "\"What's sensitive about asking?\" [Negative Inquiry]", bundle: 'pro', guideBack: "A curious question for the example" },
+        { q: "Your partner says, \"Oh good, you've decided to join the family.\" You ask if she's annoyed you were on your phone. She says, \"There you go again, always so dramatic.\"", a: "\"Fair, I can be. Is it the phone?\" [Fogging]", bundle: 'pro', guideBack: "A partial agreement, point kept" },
+        { q: "Your friend says, \"Not all of us can afford takeaways every night.\" You ask if that's about you. She says, \"Why are you so defensive?\"", a: "\"What about my question sounded defensive?\" [Negative Inquiry]", bundle: 'pro', guideBack: "A curious question for the example" },
+        { q: "Your mother says, \"I suppose your in-laws get Christmas again.\" You say you're surprised to hear her say that. She says, \"Honestly, you take everything so personally.\"", a: "\"Maybe I do. I'd still like to sort out Christmas fairly.\" [Fogging]", bundle: 'pro', guideBack: "A partial agreement, point kept" },
+        { q: "Your manager says, \"Let's hope it's right this time.\" You ask what she means by \"this time\". She says, \"Don't be so precious.\"", a: "\"What have I done that seems precious?\" [Negative Inquiry]", bundle: 'pro', guideBack: "A curious question for the example" },
+        { q: "Your teenage daughter says, \"Thanks for the lift. Eventually.\" You say, \"Eventually?\" She says, \"I didn't mean anything. You're overreacting.\"", a: "\"I believe you didn't mean it. It still landed as a dig.\" [Impact, Not Intent]", bundle: 'pro', guideBack: "The effect, with the intent granted" },
+        { q: "Your neighbour says, \"Some of us have to work in the morning.\" You say he has mentioned the morning twice now. He says, \"Why are you being so paranoid?\"", a: "\"What makes it sound paranoid? I'd like to know.\" [Negative Inquiry]", bundle: 'pro', guideBack: "A curious question for the example" },
+      ]
+    },
+    {
+      name: "The Counter-Question",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You raised it, and they come back with an irritated question of their own: \"Why are you making this a thing?\" \"Do we have to do this now?\" \"Is this an interrogation?\" The question puts you on trial for speaking up at all.\n\nWhat goes wrong is answering it as if it were a real question — explaining at length why you raised it, which proves their point — or firing back with the same heat.\n\n**Turn It Down** is the main strategy: slower, smaller, one sentence. **Leave It With Them** works when you have already said enough. **Take It Offline** works when now really is the wrong time or place.\n\nThe one thing to avoid: a long explanation of why you mentioned it.\n\nMindset: the shorter you are, the less of a thing it is.",
+      inputs: [
+        { q: "Your colleague says, \"Another coffee break?\" You ask what he means. He says, \"Why are you making this a thing?\"", a: "\"I'm not. It's my first one today, that's all.\" [Turn It Down]", bundle: 'pro', guideBack: "The point, in one sentence" },
+        { q: "Your partner says, \"Another night out?\" You ask if she minds. She says, \"Do we have to do this right now?\"", a: "\"No. Let's talk about it tomorrow, over breakfast.\" [Take It Offline]", bundle: 'pro', guideBack: "An offer to talk privately" },
+        { q: "Your mother says, \"I'll just see the photos online, then.\" You say that's the second time she has mentioned the photos. She says, \"Why are you picking at everything I say?\"", a: "\"I'm not. It's small — are you upset you weren't invited?\" [Turn It Down]", bundle: 'pro', guideBack: "The point, in one sentence" },
+        { q: "Your friend says, \"So now you have time for me.\" You say, \"Now?\" She says, \"Are we really doing this?\"", a: "\"Only for a second. It stung a bit — that's all.\" [Turn It Down]", bundle: 'pro', guideBack: "The point, in one sentence" },
+        { q: "Your team leader says, \"Nice of you to reply to an email.\" You say you're surprised to hear that. He says, \"Do we really need a conversation about this?\"", a: "\"No. I've said it, and that's enough for me.\" [Leave It With Them]", bundle: 'pro', guideBack: "A short close, point still made" },
+        { q: "Your teenage son says, \"Sure, because you're always right.\" You ask what he means. He says, \"Why do you have to make everything a big deal?\"", a: "\"It's not big. If you think I'm wrong, tell me why.\" [Turn It Down]", bundle: 'pro', guideBack: "The point, in one sentence" },
+        { q: "Your cousin says, \"Some of us have real jobs.\" You ask if that was aimed at you. She says, \"Oh, what's your problem?\"", a: "\"No problem. It was one line, and it stung.\" [Turn It Down]", bundle: 'pro', guideBack: "The point, in one sentence" },
+        { q: "Your housemate says, \"Someone's used all the milk again.\" You say, \"Again?\" He says, \"Do you really want to argue about milk?\"", a: "\"Not really. I'll pick some up. I've said my bit.\" [Leave It With Them]", bundle: 'pro', guideBack: "A short close, point still made" },
+      ]
+    },
+    {
+      name: "The Audience",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You answered the dig, and instead of answering you they turn to the room: \"Am I wrong, guys?\" \"Back me up here.\" \"Did everyone hear that?\" Now it is a vote, and you are standing alone in front of everyone.\n\nWhat goes wrong is arguing your case to the room. It makes the audience the judge, puts the others in an awkward spot, and turns a small remark into a scene.\n\n**Take It Offline** is the main strategy: not here, but later, alone. **Leave It With Them** works when it is not worth a later conversation. **Turn It Down** keeps your one line in the room calm and short.\n\nThe one thing to avoid: asking the others whose side they are on.\n\nMindset: you do not need the room to agree. You need a private conversation.",
+      inputs: [
+        { q: "In a meeting, your colleague says, \"Some of us actually read the brief.\" You ask what she means. She turns to the team: \"Am I wrong?\"", a: "\"Let's leave the team out of it. Can we talk after the meeting?\" [Take It Offline]", bundle: 'pro', guideBack: "An offer to talk privately" },
+        { q: "At dinner, your uncle says, \"Still doing the arty job, then?\" You ask what he means by arty. He looks round the table: \"What? Everyone's thinking it.\"", a: "\"Let's not put everyone on the spot. Tell me later, if you like.\" [Take It Offline]", bundle: 'pro', guideBack: "An offer to talk privately" },
+        { q: "At her birthday, your friend says, \"Look who could fit us in!\" You say, \"Fit you in?\" She turns to the others: \"Come on, back me up.\"", a: "\"Ha. Okay — happy birthday. I'm here now.\" [Leave It With Them]", bundle: 'pro', guideBack: "A short close, point still made" },
+        { q: "In the staffroom, a colleague says, \"Lovely new timetable — for some of us.\" You ask if that's aimed at you. He looks round: \"I'm only saying what we're all thinking.\"", a: "\"Then let's talk about it properly, just us, at break.\" [Take It Offline]", bundle: 'pro', guideBack: "An offer to talk privately" },
+        { q: "At a family barbecue, your father-in-law says, \"Shop-bought burgers, eh?\" You ask if you should read into that. He laughs to the others: \"Did everyone hear that? Touchy!\"", a: "\"Maybe. I'll find you later. Who wants cheese on theirs?\" [Take It Offline]", bundle: 'pro', guideBack: "An offer to talk privately" },
+        { q: "At the school gate, another parent says, \"Must be nice to have time for the bake sale.\" You say you're surprised to hear that. She turns to the others: \"I'm not the only one who thinks so.\"", a: "\"It's small. I'd just rather you said it to me.\" [Turn It Down]", bundle: 'pro', guideBack: "The point, in one sentence" },
+        { q: "In front of your kids, your partner says, \"Don't ask Mum, she'll just say no.\" You ask if he meant that to sound like a dig. He says to the kids, \"Am I right or am I right?\"", a: "\"Let's talk about it later, you and me. Kids, shoes on.\" [Take It Offline]", bundle: 'pro', guideBack: "An offer to talk privately" },
+        { q: "At parents' evening, another parent says, \"Some of us got here on time.\" You ask if that's for you. She looks at the others: \"Am I the only one who noticed?\"", a: "\"Let's not hold everyone up. Can we have a word after?\" [Take It Offline]", bundle: 'pro', guideBack: "An offer to talk privately" },
+      ]
+    },
+  ],
+  passiveaggression5: [
+    {
+      name: "The Sulky Yes",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "They give in — \"Fine. Whatever you want.\" — and the tone says the opposite. It usually comes after you held your point or asked what they would like, and it sounds as if you won.\n\nWhat goes wrong is taking the yes. The plan goes ahead, the resentment goes underground, and it comes back next week as another dig. The other mistake is arguing with the tone, which gets you \"I said fine!\"\n\n**Pin Down the \"Fine\"** is the main strategy: ask which kind of yes it is. **Leave the Door Open** fits when the fine comes with a turned back. **Welcome the Real Issue** is ready for the moment they say what the fine was covering.\n\nThe one thing to avoid: saying \"Great!\" and carrying on.\n\nMindset: a fake yes is not agreement. Ask for the real one.",
+      inputs: [
+        { q: "Your partner says, \"I suppose I'm cooking again.\" You say, \"I can cook tonight if you'd like.\" They say, \"No, fine. I'll do it. As always.\"", a: "\"Is that a real fine? 'As always' sounds like there's more.\" [Pin Down the \"Fine\"]", bundle: 'pro', guideBack: "An either-or question about their yes" },
+        { q: "A colleague says, \"Of course you get the window desk.\" You say, \"I asked for it in March, so I got it.\" She says, \"Fine. Good for you.\"", a: "\"Fine as in fair enough, or fine as in it's bothering you?\" [Pin Down the \"Fine\"]", bundle: 'pro', guideBack: "An either-or question about their yes" },
+        { q: "Your daughter says, \"Great, I'm babysitting again.\" You say, \"It's one evening, and I'll pay you.\" She says, \"Fine,\" and walks out of the kitchen.", a: "\"Okay. If it's more than one evening that's bothering you, I'd like to hear it.\" [Leave the Door Open]", bundle: 'pro', guideBack: "An open offer, with no pressure" },
+        { q: "Your friend says, \"We always end up at your local.\" You ask, \"Would you rather pick somewhere?\" He says, \"No, it's fine. Your place. Whatever.\"", a: "\"I'd honestly rather have a real answer. Where would you pick?\" [Pin Down the \"Fine\"]", bundle: 'pro', guideBack: "An either-or question about their yes" },
+        { q: "Your manager says, \"Must be nice to have Fridays off.\" You say, \"It's in my contract, and I work longer the other days.\" She says, \"Fine. Fine. Noted.\"", a: "\"Is it fine for you, or is it causing a problem on Fridays I should know about?\" [Pin Down the \"Fine\"]", bundle: 'pro', guideBack: "An either-or question about their yes" },
+        { q: "Your brother says, \"So I'm hosting Christmas, then?\" You say, \"I hosted the last two years.\" He says, \"Fine. Sure. I'll do it.\"", a: "\"Fine as in happy to, or fine as in stuck with it? We could split it.\" [Pin Down the \"Fine\"]", bundle: 'pro', guideBack: "An either-or question about their yes" },
+        { q: "Your flatmate says, \"I'll just clear my stuff off, shall I?\" You say, \"Yes please — that shelf is mine.\" She says, \"Fine,\" and then, \"I just don't have anywhere else to put it.\"", a: "\"Thanks for saying that. Let's work out where it can go.\" [Welcome the Real Issue]", bundle: 'pro', guideBack: "Thanks, and an invitation to say more" },
+        { q: "Your father says, \"I'll stay out of it, since my opinion doesn't count.\" You say, \"It does count — but this one's our decision.\" He says, \"Fine. Do what you want.\"", a: "\"I'd rather you didn't just go along. Do you think we're making a mistake?\" [Pin Down the \"Fine\"]", bundle: 'pro', guideBack: "An either-or question about their yes" },
+      ]
+    },
+    {
+      name: "The Silence",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You said your piece, and nothing comes back. They look away, go back to their phone, leave the room, or stop answering messages. It often follows a response that named the subtext, or one that put the talk off until later.\n\nWhat goes wrong is rushing to fill it — asking again, explaining yourself, or taking it all back so the silence will stop. Every push makes the silence longer, because it was a need for time, not a refusal.\n\n**Leave the Door Open** is the main strategy: say you would like to hear it, then stop. **Pin Down the \"Fine\"** fits when the silence is a shrug that agrees. **Bring Up Last Time** fits when this is a silence you have met before.\n\nThe one thing to avoid: chasing them into the next room.\n\nMindset: silence is not a problem you have to solve tonight.",
+      inputs: [
+        { q: "Your partner says, \"Some of us notice when the bins are full.\" You ask, \"Should I read something into that?\" They say nothing and start loading the dishwasher.", a: "\"Fair enough. If the bins are a bigger thing, tell me whenever you like.\" [Leave the Door Open]", bundle: 'pro', guideBack: "An open offer, with no pressure" },
+        { q: "A colleague says, \"Nice of management to tell you first.\" You ask, \"Did that sound sharper than you meant?\" She stares at her screen and doesn't reply.", a: "\"I'll leave it there. If you want to talk about it, I'm around this afternoon.\" [Leave the Door Open]", bundle: 'pro', guideBack: "An open offer, with no pressure" },
+        { q: "Your teenage son says, \"You don't even know my friends' names.\" You say, \"That sounds like you feel I don't take an interest.\" He shrugs and turns his music up.", a: "\"Okay. I'd really like to know them. Tell me about them some time.\" [Leave the Door Open]", bundle: 'pro', guideBack: "An open offer, with no pressure" },
+        { q: "Your friend texts, \"Have fun at the party I wasn't invited to.\" You reply, \"I'm sorry — it sounds like that hurt.\" Three days pass with no reply.", a: "\"No pressure. When you're up for it, I'd like to talk about the party.\" [Leave the Door Open]", bundle: 'pro', guideBack: "An open offer, with no pressure" },
+        { q: "Your mum says, \"I'll just sit here, then.\" You ask, \"Is there something you'd like me to do?\" She shrugs, nods and says, \"Mm.\"", a: "\"Is that a real yes, Mum, or would you like something else?\" [Pin Down the \"Fine\"]", bundle: 'pro', guideBack: "An either-or question about their yes" },
+        { q: "Your neighbour says, \"Lovely to have a car parked in front of my house.\" You say, \"Shall we talk about the parking another time?\" Since then he walks past without saying hello.", a: "\"Morning! I meant it about the parking — whenever suits you, knock on my door.\" [Leave the Door Open]", bundle: 'pro', guideBack: "An open offer, with no pressure" },
+        { q: "Last month your sister went silent for a week after you asked what she meant by a comment. Tonight it happens again: you ask, and she hangs up.", a: "\"This is like last month. I don't want another week of silence — I'm here when you're ready.\" [Bring Up Last Time]", bundle: 'pro', guideBack: "A calm reminder of what you said before" },
+        { q: "A team member says, \"I'll stay late, since nobody else will.\" You say, \"Let's talk about that tomorrow.\" The next morning she gives you one-word answers.", a: "\"About yesterday — the offer stands. Shall we take ten minutes after lunch?\" [Leave the Door Open]", bundle: 'pro', guideBack: "An open offer, with no pressure" },
+      ]
+    },
+    {
+      name: "Poor Me",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Your response is met with hurt: \"Sorry, I guess I can't say anything right,\" \"I'm a terrible mother, clearly,\" \"Forget I spoke.\" The focus shifts from what they said to how bad they feel.\n\nWhat goes wrong is rescuing them. You comfort them, take back what you said, and the original dig disappears under your apology for having noticed it. Or you accept their sorry, and the conversation ends with nothing said.\n\n**Skip the Apology** is the main strategy: set the sorry aside and ask for the straight version. **Welcome the Real Issue** is ready when the hurt turns into the real complaint. **Leave the Door Open** fits when they withdraw.\n\nThe one thing to avoid: apologising for having responded at all.\n\nMindset: you do not have to fix how they feel. Ask for what they meant.",
+      inputs: [
+        { q: "A colleague says, \"Another long lunch, I see.\" You say, \"That came across as a dig.\" He says, \"Sorry. Clearly I'm the bad guy now.\"", a: "\"You're not the bad guy. If my lunches cause you a problem, just tell me.\" [Skip the Apology]", bundle: 'pro', guideBack: "A request for the straight version" },
+        { q: "Your partner says, \"I'll just make my own plans, then.\" You say, \"That sounds like you're hurt.\" They say, \"Sorry. I'm needy. I know.\"", a: "\"You're not needy, and you don't need to be sorry. What plans did you want us to make?\" [Skip the Apology]", bundle: 'pro', guideBack: "A request for the straight version" },
+        { q: "Your mother-in-law says, \"I see the children don't need their grandmother anymore.\" You say, \"I'm surprised to hear you say that.\" She says, \"Well, excuse me for having feelings.\"", a: "\"Your feelings are welcome. I'd just like to hear them straight — would you like more time with them?\" [Skip the Apology]", bundle: 'pro', guideBack: "A request for the straight version" },
+        { q: "Your friend says, \"I'll just be the boring one, as usual.\" You ask, \"Did something happen?\" She says, \"Sorry, I'm being pathetic. I just never get asked to anything anymore.\"", a: "\"That's not pathetic, and I'm glad you said it. Tell me more.\" [Welcome the Real Issue]", bundle: 'pro', guideBack: "Thanks, and an invitation to say more" },
+        { q: "Your dad says, \"Don't worry about me, I'm only your father.\" You say, \"That sounds like you feel left out, Dad.\" He says, \"No, no. Sorry I mentioned it.\"", a: "\"I'm glad you mentioned it. No sorry needed — what would you like from me?\" [Skip the Apology]", bundle: 'pro', guideBack: "A request for the straight version" },
+        { q: "A customer says, \"I suppose I'll wait, like always.\" You ask, \"Has the waiting been long lately?\" She says, \"Oh, don't worry, I'm only the customer,\" and turns away.", a: "\"I'd really like to know what's happened. I'm at the desk whenever you want me.\" [Leave the Door Open]", bundle: 'pro', guideBack: "An open offer, with no pressure" },
+        { q: "Your sister says, \"Must be nice having a mum who helps.\" You ask, \"What do you mean?\" She says, \"Nothing. Sorry. I'm just jealous, aren't I?\"", a: "\"I'm not asking for a sorry. Tell me straight — do you feel Mum helps me more?\" [Skip the Apology]", bundle: 'pro', guideBack: "A request for the straight version" },
+        { q: "Your teenage son says, \"Thanks for coming to my match. Oh wait.\" You say, \"You're right that I missed it.\" He says, \"Sorry I even care about football.\"", a: "\"Don't be sorry for caring. Tell me straight how it felt that I wasn't there.\" [Skip the Apology]", bundle: 'pro', guideBack: "A request for the straight version" },
+      ]
+    },
+    {
+      name: "The Backpedal",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "They take it back: \"Okay, that came out wrong,\" \"Sorry — that was cheap,\" \"That's not what I meant.\" It often comes after you repeated their word back, said you were surprised, or simply let it hang.\n\nWhat goes wrong is not taking the win. You want a better apology, you explain how much it hurt, or you go back over the original line — and you punish the very thing you want more of. Next time they will deny instead.\n\n**Thank the Correction** is the main strategy: a short thanks, then carry on. **Welcome the Real Issue** fits when the backpedal comes with the real reason. **Pin Down the \"Fine\"** fits when the backpedal itself is a sulky one.\n\nThe one thing to avoid: making them apologise twice.\n\nMindset: a correction is a win. Take it and carry on.",
+      inputs: [
+        { q: "A colleague says, \"Oh, you've decided to join us.\" You echo it: \"Decided?\" She says, \"Sorry — that came out wrong. Traffic?\"", a: "\"Thanks. Yes, a crash on the ring road. Where are we?\" [Thank the Correction]", bundle: 'pro', guideBack: "A brief thanks, then the next thing" },
+        { q: "Your partner says, \"Nice of you to finally text back.\" You pause and look at them. They say, \"Sorry. That was snippy. I was worried.\"", a: "\"Thanks. And I'm sorry I worried you.\" [Thank the Correction]", bundle: 'pro', guideBack: "A brief thanks, then the next thing" },
+        { q: "Your manager says, \"I didn't think you had it in you.\" You say, \"I'm surprised to hear that.\" He says, \"That's not what I meant — I meant it was a big step up.\"", a: "\"Thanks, that's good to hear.\" [Thank the Correction]", bundle: 'pro', guideBack: "A brief thanks, then the next thing" },
+        { q: "Your friend says, \"So the new job's made you too good for us.\" You ask, \"Did you mean that to sting?\" She says, \"No. Sorry. I just miss you on Thursdays.\"", a: "\"Thanks for saying that. I miss Thursdays too. What's it been like?\" [Welcome the Real Issue]", bundle: 'pro', guideBack: "Thanks, and an invitation to say more" },
+        { q: "Your neighbour says, \"I see your hedge is having a good year.\" You ask, \"Is it blocking your light?\" He says, \"Sorry, that was sarcastic. Yes — a little.\"", a: "\"Thanks for telling me straight. I'll cut it back at the weekend.\" [Thank the Correction]", bundle: 'pro', guideBack: "A brief thanks, then the next thing" },
+        { q: "Your mum says, \"So you've finally bought a proper sofa.\" You say, \"Finally?\" She says, \"Fine, fine, I take it back,\" and rolls her eyes.", a: "\"That was a very quick take-back, Mum. Is it a real one, or is there something about the sofa?\" [Pin Down the \"Fine\"]", bundle: 'pro', guideBack: "An either-or question about their yes" },
+        { q: "A client says, \"I'm sure you'll get round to my email eventually.\" You ask, \"Has something been slow lately?\" She says, \"No, sorry — that was uncalled for. You're always quick.\"", a: "\"Thanks, appreciated. What did you need?\" [Thank the Correction]", bundle: 'pro', guideBack: "A brief thanks, then the next thing" },
+        { q: "Your brother says, \"Must be nice to have a garden.\" You let it hang for a moment. He says, \"Sorry. That was the jealousy talking. It's a lovely garden.\"", a: "\"Thanks. Come round for a barbecue on Sunday.\" [Thank the Correction]", bundle: 'pro', guideBack: "A brief thanks, then the next thing" },
+      ]
+    },
+    {
+      name: "The Real Issue",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The dig turns into the thing it was about: \"Since you ask — I'm annoyed you took the credit.\" It is often sharp, sometimes louder than the dig was, and it can sound like an attack on you.\n\nWhat goes wrong is defending yourself straight away. You explain, correct the facts, or point out what they did — and they learn that saying it straight gets punished, so they go back to digs.\n\n**Welcome the Real Issue** is the main strategy: thank them, and ask for more before you answer anything. **Leave the Door Open** fits when they say half and stop. **Thank the Correction** fits when they soften it themselves a moment later.\n\nThe one thing to avoid: \"Well, you also…\"\n\nMindset: the anger coming out straight is the problem finally becoming solvable.",
+      inputs: [
+        { q: "A colleague says, \"Lovely presentation. Very familiar.\" You ask, \"What did you mean by that?\" He says, \"You used my figures and didn't say they were mine. That's what I meant.\"", a: "\"Thank you for telling me straight. You're right — I'll put your name on it today.\" [Welcome the Real Issue]", bundle: 'pro', guideBack: "Thanks, and an invitation to say more" },
+        { q: "Your partner says, \"Enjoy your golf. Again.\" You ask, \"Is there something you'd like me to do differently?\" They say, \"Yes! I'd like one Saturday that isn't about you.\"", a: "\"Okay. I'm glad you said it. Tell me what that Saturday looks like.\" [Welcome the Real Issue]", bundle: 'pro', guideBack: "Thanks, and an invitation to say more" },
+        { q: "Your teenage daughter says, \"Don't worry, I'll raise myself.\" You say, \"That sounds like it's been building.\" She shouts, \"You never come to anything! Not one concert this year!\"", a: "\"You're right, and thank you for telling me. Which ones are coming up?\" [Welcome the Real Issue]", bundle: 'pro', guideBack: "Thanks, and an invitation to say more" },
+        { q: "Your flatmate says, \"Must be nice having a boyfriend who basically lives here.\" You ask, \"Should I read into that?\" She says, \"Yes. He's here five nights a week and doesn't pay a penny. And—\" Then she stops.", a: "\"Go on — I'd rather hear all of it.\" [Welcome the Real Issue]", bundle: 'pro', guideBack: "Thanks, and an invitation to say more" },
+        { q: "Your sister says, \"Funny how Dad always calls you.\" You ask, \"What is it about Dad and me?\" She says, \"It's just… you always got… Forget it.\"", a: "\"Okay. I won't push. But I'd really like to hear it when you're ready.\" [Leave the Door Open]", bundle: 'pro', guideBack: "An open offer, with no pressure" },
+        { q: "Your manager says, \"Glad someone has time for training courses.\" You ask, \"Is there something about the course you'd like to talk about?\" She says, \"Honestly? I asked for that course two years ago and was told there was no budget.\"", a: "\"I didn't know that. Thank you for telling me. That sounds really unfair.\" [Welcome the Real Issue]", bundle: 'pro', guideBack: "Thanks, and an invitation to say more" },
+        { q: "Your dad says, \"Your brother visits, at least.\" You ask, \"Would you like me to visit more?\" He says, \"Yes. Once a month would be nice. Sorry — that sounded like a complaint.\"", a: "\"Thanks, Dad, but it's a fair one. Once a month it is.\" [Thank the Correction]", bundle: 'pro', guideBack: "A brief thanks, then the next thing" },
+        { q: "A customer says, \"I suppose it's too much to ask for the right order.\" You ask, \"What's gone wrong with it?\" He snaps: \"Third time this month. I'm paying for something I'm not getting.\"", a: "\"Third time — that's fair to be angry about. Thank you for telling me. Let me sort it now.\" [Welcome the Real Issue]", bundle: 'pro', guideBack: "Thanks, and an invitation to say more" },
+      ]
+    },
+    {
+      name: "The Repeat",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The dig you already talked about is back. They agreed to stop, or said they didn't mean it, and a week later it comes again, often in almost the same words.\n\nWhat goes wrong is one of two things: you treat it as brand new and start from zero, or you let it slide because you already talked about it and raising it feels like nagging. Either way, the first conversation stops counting.\n\n**Bring Up Last Time** is the main strategy: one calm link to what you said before. **Welcome the Real Issue** is ready when the repeat shows the real reason was never said. **Pin Down the \"Fine\"** fits when they promise again with a sulky \"fine\".\n\nThe one thing to avoid: listing every time it has ever happened.\n\nMindset: bringing it up again is what makes the first talk count.",
+      inputs: [
+        { q: "Last week your colleague said he'd stop calling your desk \"the café\". Today he walks past your coffee and says, \"Table for one at the café?\"", a: "\"We talked about this last week, and it's back. Is it really about the coffee?\" [Bring Up Last Time]", bundle: 'pro', guideBack: "A calm reminder of what you said before" },
+        { q: "In March your friend agreed to drop the jokes about your accent. At dinner tonight she does the voice again.", a: "\"We talked about the accent jokes in March. I'd like them to stop — properly this time.\" [Bring Up Last Time]", bundle: 'pro', guideBack: "A calm reminder of what you said before" },
+        { q: "A week ago your partner said they didn't mean anything by \"Some of us work for a living.\" Tonight they say it again when you come home.", a: "\"That's the second time. Last week you said it didn't mean anything — I don't think that's quite true.\" [Bring Up Last Time]", bundle: 'pro', guideBack: "A calm reminder of what you said before" },
+        { q: "At Easter you talked with your mum about her comments on your weight. Now she says, \"Are you sure about the chips?\" You remind her of Easter. She sighs: \"Fine. I'll never say anything again.\"", a: "\"I don't need you to never say anything. Is it a real yes on the weight comments?\" [Pin Down the \"Fine\"]", bundle: 'pro', guideBack: "An either-or question about their yes" },
+        { q: "In your one-to-one, a team member promised to bring problems to you first. Today in the team chat he writes, \"Some of us read the brief.\"", a: "\"Can we talk after lunch? In our one-to-one we agreed you'd come to me first.\" [Bring Up Last Time]", bundle: 'pro', guideBack: "A calm reminder of what you said before" },
+        { q: "Two weeks ago your brother laughed off his comment about you being Mum's favourite. Today he says it again. You tell him it's the second time, and he says, \"Fine — I'm jealous, okay? She asks about you on every single call.\"", a: "\"Thank you for saying it. I didn't know that. Tell me more about the calls.\" [Welcome the Real Issue]", bundle: 'pro', guideBack: "Thanks, and an invitation to say more" },
+        { q: "In the summer your neighbour said he'd stop the comments about your bins. This morning he says, \"Bin day's Tuesday, by the way. In case anyone wondered.\"", a: "\"We talked about this in the summer. If my bins are a problem, just knock and tell me.\" [Bring Up Last Time]", bundle: 'pro', guideBack: "A calm reminder of what you said before" },
+        { q: "Last month your daughter agreed to ask instead of sniping. Today she says, \"Some parents actually give lifts.\"", a: "\"Remember what we said last month? Ask me straight — do you need a lift?\" [Bring Up Last Time]", bundle: 'pro', guideBack: "A calm reminder of what you said before" },
+      ]
+    },
+  ],
 };

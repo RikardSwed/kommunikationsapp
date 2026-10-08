@@ -1136,7 +1136,7 @@ const programsData = [
         id: 'section-2',
         title: "Part 2 — When they push back",
         packs: [
-          { key: "respondingtopassiveaggression", label: "Responding to Passive Aggression" },
+          { key: "respondingtopassiveaggression", label: "Responding to Passive Aggression — Pt. 1" },
           { key: "conflictemotions", label: "Conflict Emotions" },
         ],
         checkpoint: {

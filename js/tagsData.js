@@ -490,6 +490,18 @@ const packTags = {
   supercomm3: [
     'group dynamics', 'digital communication', 'supercommunicators', 'social identity', 'connection'
   ],
+  passiveaggression2: [
+    'passive aggression', 'subtext', 'digs', 'sarcasm', 'backhanded compliments', 'hints', 'boundaries', 'calling it out', 'assertiveness'
+  ],
+  passiveaggression3: [
+    'passive aggression', 'digs', 'sarcasm', 'teasing', 'silence', 'humour', 'redirecting', 'guilt-tripping', 'cold shoulder', 'assertiveness'
+  ],
+  passiveaggression4: [
+    'passive aggression', 'pushback', 'denial', 'just a joke', 'too sensitive', 'follow-up', 'defensiveness', 'audience', 'assertiveness'
+  ],
+  passiveaggression5: [
+    'passive aggression', 'follow-up', 'sulking', 'silent treatment', 'playing the victim', 'backpedalling', 'digs', 'resentment', 'recurring comments', 'assertiveness'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -540,7 +552,7 @@ const TOPICS = [
   // ── Standing your ground ──────────────────────────────────────────
   { id: 'opinions',              title: 'Opinions & Argumentation',      packs: ['influenceframing', 'agreeing', 'disagreeing', 'givingcounterexamples', 'discussing', 'supercomm2'] },
   { id: 'persuasion',            title: 'Persuasion & Negotiation',      packs: ['influenceframing', 'persuasionandinfluence1', 'persuasionandinfluence2', 'negotiationandcompromise'] },
-  { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression', 'oconnor1', 'oconnor3', 'jfisher1', 'jfisher2', 'assertivecomm1', 'assertivecomm2', 'assertivecommadv', 'integratedmaster', 'jfisher3', 'jfisheradv'] },
+  { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression', 'oconnor1', 'oconnor3', 'jfisher1', 'jfisher2', 'assertivecomm1', 'assertivecomm2', 'assertivecommadv', 'integratedmaster', 'jfisher3', 'jfisheradv', 'passiveaggression2', 'passiveaggression3', 'passiveaggression4', 'passiveaggression5'] },
   { id: 'boundaries',            title: 'Asking & Saying No',            packs: ['playfulrefusals', 'thehappyno', 'theregretfulno', 'makingrequests', 'sayingno', 'oconnor2', 'jimmy6', 'askingpermission'] },
 
   // ── The hard end ──────────────────────────────────────────────────

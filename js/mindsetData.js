@@ -12002,4 +12002,284 @@ const mindsetCollections = {
       ]
     },
   ],
+  passiveaggression2: [
+    {
+      name: "Looking Touchy",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I say something, I'll look oversensitive.\" The fear that noticing a dig makes you the problem.\n\nWhat is true instead: a calm, short sentence never looks touchy. What looks touchy is the outburst after ten swallowed digs.\n\nIt feels reasonable because passive aggression is built for exactly this. It is deniable, so anyone who reacts seems to be overreacting.\n\nWhat it costs is the next dig, and the one after that, each one easier for them because the last one cost them nothing.\n\nMindset: calm and short is never oversensitive.",
+      inputs: [
+        { q: "If I say something, I'll look oversensitive.", a: "\"One calm sentence doesn't look sensitive. Ten swallowed ones and then an outburst does.\"", bundle: 'pro' },
+        { q: "Everyone else laughed, so it must have been fine.", a: "\"They laughed because it was easier, not because it was fine.\"", bundle: 'pro' },
+        { q: "They'll only say it was a joke.", a: "\"Then they can say so, and it will still have been said out loud.\"", bundle: 'pro' },
+        { q: "Maybe I'm just in a bad mood today.", a: "\"My mood doesn't change what they said, and I can ask about the words.\"", bundle: 'pro' },
+        { q: "Grown-ups let things roll off them.", a: "\"Grown-ups can also say, calmly, that they heard it.\"", bundle: 'pro' },
+        { q: "I don't want to be known as difficult.", a: "\"Difficult is a scene. Handing back one word is not.\"", bundle: 'pro' },
+        { q: "If I react, they've won.", a: "\"They win when it works on me in silence, not when I bring it into the open.\"", bundle: 'pro' },
+        { q: "Pointing out a tone sounds paranoid.", a: "\"Asking whether to read into it is the opposite of jumping to conclusions.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Making a Scene",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"It's not worth a scene. I'm the one who keeps the peace.\" A belief that feels like maturity, and often is.\n\nWhat is true instead: bringing a dig into the open calmly is not a scene. Keeping quiet only shifts the cost somewhere else.\n\nIt feels reasonable because keeping the peace really is kind in a lot of places, and people like being around someone who does not make everything a thing.\n\nWhat it costs is slow and quiet: the digs keep coming, the resentment builds in you, and the peace you kept turns into distance.\n\nMindset: one calm sentence keeps more peace than a year of silence.",
+      inputs: [
+        { q: "It's not worth a scene.", a: "\"And every dig I let pass makes the next one a little cheaper for them.\"", bundle: 'pro' },
+        { q: "I'm the one who keeps the peace in this family.", a: "\"The peace I keep is the one where I go quiet and they carry on.\"", bundle: 'pro' },
+        { q: "I'd rather rise above it.", a: "\"Rising above it every time means it lands on me every time.\"", bundle: 'pro' },
+        { q: "It's only a small comment.", a: "\"Small comments are the whole method, and they only work because nobody mentions them.\"", bundle: 'pro' },
+        { q: "I don't want to ruin the evening.", a: "\"The evening is already a bit ruined, just only for me.\"", bundle: 'pro' },
+        { q: "Saying something would only make it worse.", a: "\"Saying nothing has been making it worse for months, just slowly.\"", bundle: 'pro' },
+        { q: "I can deal with it on my own.", a: "\"Dealing with it on my own means I'm the only one who knows it happened.\"", bundle: 'pro' },
+        { q: "I'm not someone who makes a fuss.", a: "\"So they have learned exactly what they can say to me.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Admission",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"There's no point unless they admit it.\" The belief that bringing it into the open only counts if they confess.\n\nWhat is true instead: they will almost always deny it, and it still worked. The point was to say it, not to win.\n\nIt feels reasonable because a denial feels like losing. You said the brave thing, and they said, \"What? I didn't mean anything.\"\n\nWhat it costs is the strategy itself. Either you push for a confession and turn one calm sentence into an argument, or you never start, because a confession seems out of reach.\n\nMindset: they do not have to admit it. They only have to know you noticed.",
+      inputs: [
+        { q: "There's no point unless they admit it.", a: "\"The point was to say it out loud, and I did.\"", bundle: 'pro' },
+        { q: "They'll just deny it.", a: "\"They can deny it and still know I noticed, and that's usually enough.\"", bundle: 'pro' },
+        { q: "If they say they didn't mean it, I've lost.", a: "\"If they say they didn't mean it, they've just signed up to a kinder version.\"", bundle: 'pro' },
+        { q: "I need to prove it was deliberate.", a: "\"I only need to say what happened. Proving it isn't my job.\"", bundle: 'pro' },
+        { q: "I'll wait until I have enough examples.", a: "\"One calm question now beats a file of examples later.\"", bundle: 'pro' },
+        { q: "If I can't make them see it, there's no point starting.", a: "\"I don't have to make them see anything. I just have to stop pretending I didn't.\"", bundle: 'pro' },
+        { q: "They'll only do it again anyway.", a: "\"Then next time it will cost them a little more, because I'll say something again.\"", bundle: 'pro' },
+        { q: "A denial means I was wrong about it.", a: "\"A denial means they would rather not own it, which is not the same thing.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Second-Guessing",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"Maybe I'm reading too much into it.\" A belief that is partly true, which is what makes it so hard to argue with.\n\nWhat is true: you might be. Tone is easy to misread, and some remarks really are just clumsy.\n\nWhat gets added is the next step: \"so I shouldn't say anything.\" Not being sure is exactly why you would ask, and every strategy in this pack works without being sure.\n\nWhat it costs is the dig that was real, left alone because you could not prove it.\n\nMindset: keep the doubt. Drop the idea that doubt means silence.",
+      inputs: [
+        { q: "Maybe I'm reading too much into it.", a: "\"True, maybe — but 'so I shouldn't ask' is the part I added.\"", bundle: 'pro' },
+        { q: "Tone is easy to misread.", a: "\"True — but 'so I'll ignore it' is the part I added.\"", bundle: 'pro' },
+        { q: "They're probably just tired.", a: "\"True, they might be — but 'so the comment doesn't count' is the part I added.\"", bundle: 'pro' },
+        { q: "I can't know what they meant.", a: "\"True — but 'so I can't say what I heard' is the part I added.\"", bundle: 'pro' },
+        { q: "Some people are just clumsy with words.", a: "\"True — but 'so this one was clumsy too' is the part I added.\"", bundle: 'pro' },
+        { q: "I'm sensitive about this topic.", a: "\"True, I am — but 'so my ears can't be trusted' is the part I added.\"", bundle: 'pro' },
+        { q: "Everyone has a bad day.", a: "\"True — but 'so the fourth bad day in a row means nothing' is the part I added.\"", bundle: 'pro' },
+        { q: "If I ask and I'm wrong, it'll be awkward.", a: "\"True, a little — but 'so I'll stay quietly hurt' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  passiveaggression3: [
+    {
+      name: "Losing Face",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I don't answer back, I've lost.\" The belief that every dig is a contest, and the last word wins it.\n\nWhat is true instead: the person who does not need to win the exchange usually looks like the strongest one in it.\n\nIt feels reasonable because a dig is built to provoke, and saying nothing sharp feels like being beaten in front of others.\n\nWhat it costs is that you play their game on their terms, every time, and the remark gets more weight than it ever had.\n\nMindset: I can change the game instead of trying to win it.",
+      inputs: [
+        { q: "If I don't answer back, I've lost.", a: "\"Not answering their way is the strongest answer I have.\"", bundle: 'pro' },
+        { q: "Everyone will think I'm a pushover.", a: "\"A calm pause and a plain next line don't look like a pushover.\"", bundle: 'pro' },
+        { q: "I need a comeback.", a: "\"A comeback keeps their game going, and I'd rather change it.\"", bundle: 'pro' },
+        { q: "They'll do it again if I let them get away with it.", a: "\"A dig that gets no reaction is the one least worth repeating.\"", bundle: 'pro' },
+        { q: "I always think of the perfect reply too late.", a: "\"I don't need a perfect reply. A pause and the next topic will do.\"", bundle: 'pro' },
+        { q: "If I joke along, they've won.", a: "\"If we're both laughing, nobody's won, and that's the point.\"", bundle: 'pro' },
+        { q: "Asking what they want is backing down.", a: "\"Asking what they want is me deciding what happens next.\"", bundle: 'pro' },
+        { q: "Moving it to later looks like I'm scared to face it.", a: "\"Choosing the time and place is facing it, on better ground.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Letting It Slide",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"If I make a joke of it, I'm letting them get away with it.\" A belief that is half true, which is why it is hard to put down.\n\nWhat is true: a joke does not settle a pattern, and humour on something that really hurts can sound like agreement.\n\nWhat gets added is the step from \"not always\" to \"never\": from \"a joke can't fix everything\" to \"a joke is always weakness\".\n\nWhat it costs is the lightest, quickest answer you have, used on exactly the small digs where it works best.\n\nMindset: keep the limit. Drop the idea that a laugh means you lost.",
+      inputs: [
+        { q: "Making a joke of it means letting it slide.", a: "\"True, if it's a pattern — but 'so I can never joke' is the part I added.\"", bundle: 'pro' },
+        { q: "Humour just shows I don't take it seriously.", a: "\"True for big things — but 'so I can't laugh at a small one' is the part I added.\"", bundle: 'pro' },
+        { q: "If I play along, I'm agreeing with them.", a: "\"True when it's something real — but 'so every label sticks' is the part I added.\"", bundle: 'pro' },
+        { q: "Laughing it off is what I always did, and it never helped.", a: "\"True, laughing at myself didn't — but 'so a twist won't either' is the part I added.\"", bundle: 'pro' },
+        { q: "A joke means they'll never hear that it bothered me.", a: "\"True, the joke won't tell them — but 'so I've lost my chance' is the part I added.\"", bundle: 'pro' },
+        { q: "Being funny about it is a way of hiding.", a: "\"True, sometimes — but 'so it always is' is the part I added.\"", bundle: 'pro' },
+        { q: "Serious people answer serious remarks seriously.", a: "\"True — but 'so every dig is a serious remark' is the part I added.\"", bundle: 'pro' },
+        { q: "If I joke now, I can't raise it later.", a: "\"True, it's harder — but 'so I can't ask for a talk next time' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Silence",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Leaving a silence is rude.\" The belief that every gap in a conversation is your job to fill, straight away.\n\nWhat is true instead: a short pause and a polite next line is about the most courteous answer a rude remark can get.\n\nIt feels reasonable because silence is uncomfortable, and most of us were taught that a good conversationalist keeps things moving.\n\nWhat it costs is that you rush in with a laugh, an apology or a defence, and the dig never has to be heard twice.\n\nMindset: two seconds of quiet is not rude. It is room for them to hear what they said.",
+      inputs: [
+        { q: "Leaving a silence is rude.", a: "\"A pause and then a polite next line is as courteous as it gets.\"", bundle: 'pro' },
+        { q: "Somebody has to say something.", a: "\"Somebody will, in two seconds, and it can be me with the next topic.\"", bundle: 'pro' },
+        { q: "A pause will make everyone uncomfortable.", a: "\"It's uncomfortable for the person who made the dig, and that's not my mess.\"", bundle: 'pro' },
+        { q: "If I go quiet, they'll think I'm sulking.", a: "\"Sulking has no next line. I'll carry on, and they'll see the difference.\"", bundle: 'pro' },
+        { q: "I'm no good at silences.", a: "\"I only need to manage one breath, then speak.\"", bundle: 'pro' },
+        { q: "Silence looks like I'm hurt.", a: "\"A calm look and an easy next line look like the opposite.\"", bundle: 'pro' },
+        { q: "I should smooth it over for everyone's sake.", a: "\"Smoothing it over every time is how the digs get comfortable.\"", bundle: 'pro' },
+        { q: "They'll just fill the gap with another dig.", a: "\"Then I'll let that one hang too, and carry on.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Urgency",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I deal with things straight away. I don't let them fester.\" A belief that feels like honesty, and sometimes is.\n\nWhat is true instead: some things are better said later, in private, than now, in front of everyone, while you are both hot.\n\nIt feels reasonable because putting things off has gone badly before, and speaking up at once feels brave.\n\nWhat it costs is that the real conversation turns into a sharp exchange with an audience, and nobody says what they actually meant.\n\nMindset: settling it properly matters more than settling it now.",
+      inputs: [
+        { q: "I deal with things straight away.", a: "\"And straight away, in front of everyone, is when I say it worst.\"", bundle: 'pro' },
+        { q: "I don't let things fester.", a: "\"Saying 'tonight, just us' is a date, and nothing festers with a date.\"", bundle: 'pro' },
+        { q: "If I leave it, I'll lose my nerve.", a: "\"If I lose it by tonight, it was the heat talking, not the point.\"", bundle: 'pro' },
+        { q: "I'm a direct person.", a: "\"Direct and in front of an audience usually ends up as a show.\"", bundle: 'pro' },
+        { q: "It has to be sorted before we leave this room.", a: "\"Sorting it in this room means sorting it with everyone watching.\"", bundle: 'pro' },
+        { q: "Later never comes.", a: "\"Later comes when I name a time, so I name one.\"", bundle: 'pro' },
+        { q: "If I don't react now, it looks like I accept it.", a: "\"'Let's talk after the meeting' doesn't sound like accepting anything.\"", bundle: 'pro' },
+        { q: "I need them to know, right now, that it wasn't okay.", a: "\"They'll hear it better in ten minutes, without the room watching.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  passiveaggression4: [
+    {
+      name: "Admissions",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If they won't admit it, it didn't count.\" The belief that a follow-up only works if it ends with them owning up.\n\nWhat is true instead: saying it once, calmly, is what counts. An admission is a bonus.\n\nIt feels reasonable because a denial feels like being told you imagined it, and an admission would settle the question for good.\n\nWhat it costs is the second, third and fourth round — each one pushing for a confession they will never give, and each one making you look like the problem.\n\nMindset: they heard it, and that was the point.",
+      inputs: [
+        { q: "If they won't admit it, it didn't count.", a: "\"It counted the moment they heard it.\"", bundle: 'pro' },
+        { q: "They're lying, and they know it.", a: "\"Maybe — and I can still carry on without them saying so.\"", bundle: 'pro' },
+        { q: "I need them to say sorry.", a: "\"An apology would be nice, but I've already said what I needed to.\"", bundle: 'pro' },
+        { q: "If I let the denial stand, they've won.", a: "\"There's nothing to win: I said it, and they'll think twice next time.\"", bundle: 'pro' },
+        { q: "They'll think I believed them.", a: "\"They'll know I noticed, because I said so.\"", bundle: 'pro' },
+        { q: "I have to prove what they meant.", a: "\"I can't prove what they meant, but I can say how it landed.\"", bundle: 'pro' },
+        { q: "Accepting a denial is letting them off.", a: "\"Accepting it for now is not the same as forgetting it.\"", bundle: 'pro' },
+        { q: "Unless they admit it, it'll keep happening.", a: "\"If it happens again, I'll say it again, and that's what stops it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sensitivity",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"Maybe they're right. Maybe I am too sensitive.\" A belief with some truth in it — which is exactly why \"you're so sensitive\" works so well as a turnaround.\n\nWhat is true: you might be sensitive about this, and it is fine to say so.\n\nWhat gets added is the step from \"I'm sensitive\" to \"so I had no right to say anything\" — as if noticing a dig were the problem, and not the dig.\n\nWhat it costs is your point. The moment you start defending your character, nobody is talking about the remark any more.\n\nMindset: keep the honesty about yourself. Drop the idea that it cancels your point.",
+      inputs: [
+        { q: "Maybe I really am too sensitive.", a: "\"Maybe — but 'so I shouldn't have said anything' is the part I added.\"", bundle: 'pro' },
+        { q: "I do take things personally sometimes.", a: "\"True, sometimes — but 'so this one wasn't a dig' is the part I added.\"", bundle: 'pro' },
+        { q: "They know me well, so they're probably right.", a: "\"They do know me — but 'so they're right about this' is the part I added.\"", bundle: 'pro' },
+        { q: "I was a bit sharp when I asked.", a: "\"True, a little — but 'so their remark was fine' is the part I added.\"", bundle: 'pro' },
+        { q: "Everyone else laughed, so it must have been fine.", a: "\"They did laugh — but 'so it didn't land on me' is the part I added.\"", bundle: 'pro' },
+        { q: "I've had a long day, so I'm probably overreacting.", a: "\"True, I'm tired — but 'so I imagined it' is the part I added.\"", bundle: 'pro' },
+        { q: "I should be able to take a joke.", a: "\"I can take most — but 'so I have to take every one' is the part I added.\"", bundle: 'pro' },
+        { q: "If they call me sensitive, I have to prove I'm not.", a: "\"They might have a point — but 'so I have to argue about it' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Persistence",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I don't let things slide. If I keep at it, they'll see it.\" A belief that feels like strength — honesty, backbone, not being a pushover.\n\nWhat is true instead: after a denial or a turnaround, pushing harder almost never makes them see it. It makes them defend it.\n\nIt feels reasonable because you are right, and it seems that one more clear explanation should be enough.\n\nWhat it costs is quiet and real: every extra round makes it about the argument, not the remark, and gives them a reason to call you the difficult one.\n\nMindset: say it once, clearly, and let it work.",
+      inputs: [
+        { q: "I don't let things slide.", a: "\"And every extra round I push gives them something new to deny.\"", bundle: 'pro' },
+        { q: "If I explain it clearly enough, they'll see it.", a: "\"The clearer my case gets, the harder they have to defend theirs.\"", bundle: 'pro' },
+        { q: "I'm just being honest.", a: "\"Honest the first time. By the fourth time it sounds like a lecture.\"", bundle: 'pro' },
+        { q: "I stand up for myself.", a: "\"Standing up once is strong; standing there arguing is how I end up the difficult one.\"", bundle: 'pro' },
+        { q: "I won't be talked over.", a: "\"And so I talk louder, and now the volume is the problem.\"", bundle: 'pro' },
+        { q: "I finish what I start.", a: "\"Some conversations finish better when I'm the one who stops first.\"", bundle: 'pro' },
+        { q: "I always say what I think.", a: "\"I said it once, and saying it again teaches them I can be drawn into a fight.\"", bundle: 'pro' },
+        { q: "Someone has to make them see sense.", a: "\"Pushing them to see it makes them dig in, and that costs us both the next conversation.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Scenes",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I say anything now, in front of everyone, it'll be a scene.\" The fear that answering pushback with people watching is worse than staying silent.\n\nWhat is true instead: one calm, short line is never a scene. A scene is two people arguing for the audience.\n\nIt feels reasonable because the room has gone quiet, everyone is looking, and the other person has just asked them to take sides.\n\nWhat it costs is the swallowed line — and the lesson, for them, that an audience is the safest place to aim a dig.\n\nMindset: one calm line, and later a private conversation. Neither is a scene.",
+      inputs: [
+        { q: "If I say anything now, it'll be a scene.", a: "\"One calm sentence isn't a scene; an argument for the audience is.\"", bundle: 'pro' },
+        { q: "Everyone's looking at me.", a: "\"They're looking to see if I'll stay calm, and I can.\"", bundle: 'pro' },
+        { q: "They've got the room on their side.", a: "\"The room doesn't have a side until someone asks it to choose.\"", bundle: 'pro' },
+        { q: "I'll embarrass everyone if I answer.", a: "\"A short line and a change of subject embarrasses nobody.\"", bundle: 'pro' },
+        { q: "Better to laugh along than make it awkward.", a: "\"Laughing along tells them the room is a safe place for the next one.\"", bundle: 'pro' },
+        { q: "I'll look petty in front of them.", a: "\"Saying 'let's talk later' makes me the calmest person here.\"", bundle: 'pro' },
+        { q: "It's not worth spoiling the evening.", a: "\"Then I won't spoil it — I'll take it up tomorrow, just us.\"", bundle: 'pro' },
+        { q: "If I don't answer now, I've lost.", a: "\"Not answering now and talking tomorrow is the opposite of losing.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  passiveaggression5: [
+    {
+      name: "Agreement",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Fine means fine. They said yes, so it's settled.\" The belief that the words count and the tone does not.\n\nWhat is true instead: a sulky yes is a no that has gone quiet, and it usually comes back as the next dig.\n\nIt feels reasonable because you got what you asked for, and asking again feels like reopening something that has just closed.\n\nWhat it costs is the resentment that grows under the yes — and the next argument, about something else, with the same feeling underneath.\n\nMindset: a fake yes is not agreement. One more question finds the real one.",
+      inputs: [
+        { q: "They said fine, so it's settled.", a: "\"They said fine. The tone said something else, and the tone is what comes back.\"", bundle: 'pro' },
+        { q: "If I ask again, I'll reopen the argument.", a: "\"One question now is smaller than the argument next week.\"", bundle: 'pro' },
+        { q: "I got what I wanted. Why push it?", a: "\"I got a yes on paper. I'd rather have one that holds.\"", bundle: 'pro' },
+        { q: "It's not my job to read their tone.", a: "\"I don't have to read it. I can just ask which fine it was.\"", bundle: 'pro' },
+        { q: "Asking if it's a real yes sounds like I'm calling them a liar.", a: "\"Asking gives them a way out of a yes they didn't mean.\"", bundle: 'pro' },
+        { q: "They're an adult. If they meant no, they'd say no.", a: "\"If saying no were easy for them, they wouldn't need digs.\"", bundle: 'pro' },
+        { q: "I'll take the yes and leave it there.", a: "\"A yes I don't believe isn't a win. It's a delay.\"", bundle: 'pro' },
+        { q: "A real no would be worse than a sulky yes.", a: "\"A real no is something we can work with. A sulky yes isn't.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Quiet",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If they go quiet, I have to fix it right now.\" The belief that silence is an emergency.\n\nWhat is true instead: silence after a direct response is usually time, not a verdict, and it ends sooner when nobody chases it.\n\nIt feels reasonable because silence is uncomfortable, and talking feels like doing something about it.\n\nWhat it costs is the conversation you were hoping for. Every push makes them retreat further, and the real thing never gets said.\n\nMindset: open the door, then let them walk through it.",
+      inputs: [
+        { q: "If they go quiet, I have to fix it now.", a: "\"Silence isn't broken. It just isn't finished yet.\"", bundle: 'pro' },
+        { q: "If I don't say something, it'll get worse.", a: "\"Usually it gets worse because I keep saying something.\"", bundle: 'pro' },
+        { q: "They're punishing me with the silence.", a: "\"Maybe. Or maybe they need time to find the words.\"", bundle: 'pro' },
+        { q: "I should take back what I said, so things go back to normal.", a: "\"Taking it back buys a quiet evening and the same dig next week.\"", bundle: 'pro' },
+        { q: "If I leave it, they'll think I don't care.", a: "\"Saying I'd like to hear it shows I care. Chasing them shows I'm anxious.\"", bundle: 'pro' },
+        { q: "I can't sleep with this unresolved.", a: "\"It doesn't have to be resolved tonight. It just has to be open.\"", bundle: 'pro' },
+        { q: "If they won't talk now, they never will.", a: "\"People often talk the next day, once nobody is pushing.\"", bundle: 'pro' },
+        { q: "The silence means I was wrong to say anything.", a: "\"The silence means they heard it. That was the point.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Guilt",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"When someone feels bad, I make it better.\" A belief that feels like kindness, and often is.\n\nWhat is true instead: rescuing them from guilt also rescues them from saying what they meant — and the issue goes back underground.\n\nIt feels reasonable because comforting people is a good instinct, and their hurt looks real, because it usually is.\n\nWhat it costs is quiet: you apologise for noticing the dig, the dig stays, and you both learn that hurt is how a conversation ends.\n\nMindset: the kind thing is to ask for the straight version, not to take the blame for it.",
+      inputs: [
+        { q: "I always comfort people when they're upset.", a: "\"And every time I do, the thing they were upset about goes unsaid.\"", bundle: 'pro' },
+        { q: "I'd rather apologise than see someone hurt.", a: "\"Then I end up apologising for a dig I didn't make.\"", bundle: 'pro' },
+        { q: "I'm good at smoothing things over.", a: "\"Smoothed over is still there. It just has a rug on top.\"", bundle: 'pro' },
+        { q: "I don't like making people feel bad.", a: "\"They feel bad either way. Rescuing them just means nothing changes.\"", bundle: 'pro' },
+        { q: "When someone says sorry, I always accept it.", a: "\"Accepting a sorry that ends the talk means the real thing never gets said.\"", bundle: 'pro' },
+        { q: "I'm the peacemaker in my family.", a: "\"The peace lasts until the next dig, and I'm the one who pays for it.\"", bundle: 'pro' },
+        { q: "I'd rather drop it than upset them more.", a: "\"Dropping it teaches us both that being upset is how a talk ends.\"", bundle: 'pro' },
+        { q: "I always put other people's feelings first.", a: "\"Their hurt goes first, my point goes last, and what they actually meant never comes up at all.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Their Anger",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If they finally say it, I have to defend myself.\" The belief that the real complaint is an attack that needs an answer.\n\nWhat is true instead: the real issue coming out straight is what you were hoping for, and the first thing it needs is to be heard, not answered.\n\nIt feels reasonable because direct anger is often sharp, and some of it may be unfair.\n\nWhat it costs is the next time. If saying it straight gets a defence, they go back to digs, and you never hear it plainly again.\n\nMindset: hear all of it first. You can answer once it has been said.",
+      inputs: [
+        { q: "If they finally say it, I have to defend myself.", a: "\"I can defend myself later. First I need to hear all of it.\"", bundle: 'pro' },
+        { q: "They're being unfair, so I should correct them.", a: "\"Some of it may be unfair. I'll know which part once they've finished.\"", bundle: 'pro' },
+        { q: "If I don't answer back, I'm agreeing.", a: "\"Listening isn't agreeing. It's finding out what I'm dealing with.\"", bundle: 'pro' },
+        { q: "I asked for honesty, not an attack.", a: "\"Honesty that's been held in for months often comes out sharp.\"", bundle: 'pro' },
+        { q: "Thanking them would mean they're right.", a: "\"I'm thanking them for saying it straight, not for being right.\"", bundle: 'pro' },
+        { q: "They should have said it nicely.", a: "\"They should have said it months ago. Now they have, and that's the part to reward.\"", bundle: 'pro' },
+        { q: "If I let them shout, they'll walk all over me.", a: "\"Hearing it once isn't being walked over. It's how the digs stop.\"", bundle: 'pro' },
+        { q: "I've got my own list too.", a: "\"My list can wait one conversation. Theirs has waited longer.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Old Ground",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"We already talked about it. I can't bring it up again.\" A belief that is partly true, which is what makes it stick.\n\nWhat is true: raising the same thing over and over, with nothing new to prompt it, does become nagging, and nobody wants to live inside an old argument.\n\nWhat gets added is the step from \"not for no reason\" to \"not at all\" — from \"I won't keep raising it\" to \"I can't raise it even when it happens again.\"\n\nWhat it costs is the first talk. If the repeat goes unmentioned, the agreement quietly stops counting.\n\nMindset: keep the restraint. Drop the idea that one talk uses up your right to another.",
+      inputs: [
+        { q: "We already talked about it, so I can't bring it up again.", a: "\"True, I shouldn't keep raising it — but 'not even when it happens again' is the part I added.\"", bundle: 'pro' },
+        { q: "Bringing it up again is nagging.", a: "\"True, if there's no reason — but 'even when they've done it again' is the part I added.\"", bundle: 'pro' },
+        { q: "They said they'd stop, so I have to trust them.", a: "\"True — but 'so I can't mention it when they don't' is the part I added.\"", bundle: 'pro' },
+        { q: "It's only the second time.", a: "\"True, it's not a pattern yet — but 'so I'll wait for the fifth' is the part I added.\"", bundle: 'pro' },
+        { q: "People don't change overnight.", a: "\"True — but 'so I should say nothing while they slip back' is the part I added.\"", bundle: 'pro' },
+        { q: "Bringing up the past keeps old arguments alive.", a: "\"True, digging up old fights does — but 'so I can't link it to last week' is the part I added.\"", bundle: 'pro' },
+        { q: "I don't want to be the one keeping score.", a: "\"True — but 'so I can't say it's happened again' is the part I added.\"", bundle: 'pro' },
+        { q: "It was only a small comment this time.", a: "\"True, it was small — but 'so it doesn't count' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };

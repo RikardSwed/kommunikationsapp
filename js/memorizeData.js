@@ -21120,4 +21120,614 @@ const memorizeCollections = {
       ]
     },
   ],
+  passiveaggression2: [
+    {
+      name: "Core Idea",
+      description: "Five first strategies for saying the unsaid part of a dig out loud, calmly:\n\n1. Decoding Intent\n2. Return to Sender\n3. I'm Surprised\n4. Calling Out Subtext\n5. Describe What You Noticed\n\nThey run from light to clear: a word handed back, a fact, a tone, a question about intent, a line.",
+      cards: [
+        { q: "What are the five strategies in this pack?", a: "Decoding Intent, Return to Sender, I'm Surprised, Calling Out Subtext, Describe What You Noticed.", bundle: 'free' },
+        { q: "What do all five have in common?", a: "Each one says the unsaid part out loud, calmly, so the dig can no longer hide behind deniability.", bundle: 'free' },
+        { q: "Which strategy is the lightest, and which is the clearest?", a: "Return to Sender is the lightest — one word handed back. I'm Surprised is the clearest — a line that asks for nothing.", bundle: 'free' },
+        { q: "Why does a passive-aggressive remark need its subtext?", a: "The sting lands while the sender keeps the right to deny it. Bringing it into the open takes that away.", bundle: 'free' },
+        { q: "Which strategies ask a question, and which only state?", a: "Return to Sender, Calling Out Subtext and Decoding Intent ask. Describe What You Noticed and I'm Surprised state.", bundle: 'free' },
+        { q: "How is this pack different from Pt. 1?", a: "Pt. 1 answers the remark, asks what it meant, or says how it felt. Pt. 2 brings the hidden part — the word, the tone, the intent, the pattern — into the open.", bundle: 'pro' },
+        { q: "How do you choose where to start?", a: "With the most concrete thing you have: a word, then a fact, then a tone. Go clearer only when the lighter one would not be heard.", bundle: 'pro' },
+        { q: "What does a denial mean for these strategies?", a: "Very little. They work without a confession — the point is that the dig has been said out loud.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Decoding Intent",
+      description: "",
+      cards: [
+        { q: "What is Decoding Intent?", a: "Asking one closed yes-or-no question about what they meant to do, not about what they said.", bundle: 'free' },
+        { q: "How does Decoding Intent sound?", a: "\"Did you mean for that to sound rude?\"", bundle: 'free' },
+        { q: "When is Decoding Intent the right one?", a: "When the dig is clear enough to ask about, and you can take a \"no\" calmly.", bundle: 'free' },
+        { q: "What does Decoding Intent leave the other person to do?", a: "Choose: own the dig with a yes, or stand behind a kinder version with a no.", bundle: 'free' },
+        { q: "What are the three things Decoding Intent can ask about?", a: "The tone, the target, and the label.", bundle: 'free' },
+        { q: "When does Decoding Intent go wrong?", a: "When it is said as a charge — \"You meant that to be rude\" — or when you argue with their no.", bundle: 'pro' },
+        { q: "How is Decoding Intent different from Ask What They Mean in Pt. 1?", a: "Ask What They Mean asks openly about the content. Decoding Intent asks a closed question about the intent.", bundle: 'pro' },
+        { q: "Where does Decoding Intent come on the ladder?", a: "Near the top. It ends Into the Open and is the middle step of The Full Stop.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Return to Sender",
+      description: "",
+      cards: [
+        { q: "What is Return to Sender?", a: "Repeating their loaded word back to them, calmly, as a question, and then stopping.", bundle: 'free' },
+        { q: "How does Return to Sender sound?", a: "\"Finally?\"", bundle: 'free' },
+        { q: "When is Return to Sender the right one?", a: "When the sting sits in one word or a short phrase you can hand back.", bundle: 'free' },
+        { q: "What does Return to Sender leave the other person to do?", a: "Hear their own word on its own, and then explain it or drop it.", bundle: 'free' },
+        { q: "What are the three ways to hand it back?", a: "The one word, the phrase, and turned round.", bundle: 'free' },
+        { q: "When does Return to Sender go wrong?", a: "When it sounds cold or mocking instead of curious, or when a speech follows it.", bundle: 'pro' },
+        { q: "How is Return to Sender different from Describe What You Noticed?", a: "Return to Sender hands back their word as a question. Describe What You Noticed reports what they did or said, as a statement.", bundle: 'pro' },
+        { q: "Where does Return to Sender come on the ladder?", a: "At the bottom. It is the lightest strategy, and the first step of The Clear Line.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "I'm Surprised",
+      description: "",
+      cards: [
+        { q: "What is I'm Surprised?", a: "Saying calmly that you are surprised to hear it: a line drawn without blame.", bundle: 'free' },
+        { q: "How does I'm Surprised sound?", a: "\"I'm surprised to hear you say that.\"", bundle: 'free' },
+        { q: "When is I'm Surprised the right one?", a: "When you do not need an answer, only for it to stop — often in front of others.", bundle: 'free' },
+        { q: "What does I'm Surprised leave the other person to do?", a: "Nothing out loud. It asks no question; it only tells them it was below what you expected.", bundle: 'free' },
+        { q: "What are the three ways to say it?", a: "The plain line, with their name, and with what you expected.", bundle: 'free' },
+        { q: "When does I'm Surprised go wrong?", a: "When it is said in anger, or followed by a question or a long explanation.", bundle: 'pro' },
+        { q: "How is I'm Surprised different from Say How It Lands in Pt. 1?", a: "Say How It Lands tells them how it felt. I'm Surprised only says it was unexpected, and asks for nothing.", bundle: 'pro' },
+        { q: "Where does I'm Surprised come on the ladder?", a: "At the top. It is the last step of both The Clear Line and The Full Stop.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Calling Out Subtext",
+      description: "",
+      cards: [
+        { q: "What is Calling Out Subtext?", a: "Saying that you hear something under the words, and asking whether you should read into it.", bundle: 'free' },
+        { q: "How does Calling Out Subtext sound?", a: "\"That had a bit of an edge. Should I read into it?\"", bundle: 'free' },
+        { q: "When is Calling Out Subtext the right one?", a: "When there is a tone, but no word to quote and nothing you could point to.", bundle: 'free' },
+        { q: "What does Calling Out Subtext leave the other person to do?", a: "Choose between \"no, nothing\" and saying the real thing.", bundle: 'free' },
+        { q: "What are the three ways to call it out?", a: "The bare question, naming the tone first, and asking if there is more.", bundle: 'free' },
+        { q: "When does Calling Out Subtext go wrong?", a: "When the tone becomes a label for the person — \"you're being sarcastic\" — instead of how it sounded to you.", bundle: 'pro' },
+        { q: "How is Calling Out Subtext different from Decoding Intent?", a: "Decoding Intent asks whether they meant it. Calling Out Subtext asks whether there is more behind it.", bundle: 'pro' },
+        { q: "Where does Calling Out Subtext come on the ladder?", a: "In the middle. It is the middle step of Into the Open and opens The Full Stop.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Describe What You Noticed",
+      description: "",
+      cards: [
+        { q: "What is Describe What You Noticed?", a: "Saying only what you saw or heard — no reading, no label, no question.", bundle: 'free' },
+        { q: "How does Describe What You Noticed sound?", a: "\"You sighed when I said Friday.\"", bundle: 'free' },
+        { q: "When is Describe What You Noticed the right one?", a: "When the dig is a sigh, a look or a pattern: something anyone could have seen.", bundle: 'free' },
+        { q: "What does Describe What You Noticed leave the other person to do?", a: "Explain it, laugh it off, or say the real thing. They cannot argue with what happened.", bundle: 'free' },
+        { q: "What are the three things to describe?", a: "What they did, what they said word for word, and how often.", bundle: 'free' },
+        { q: "When does Describe What You Noticed go wrong?", a: "When a reading slips in — \"you were annoyed\" — instead of what a camera would have caught.", bundle: 'pro' },
+        { q: "How is Describe What You Noticed different from Name the Feeling in Pt. 1?", a: "Name the Feeling guesses their emotion. Describe What You Noticed says only what anyone could see or hear.", bundle: 'pro' },
+        { q: "Where does Describe What You Noticed come on the ladder?", a: "Low down. It opens Into the Open and is the middle step of The Clear Line.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Point at It** — a word to hand back, something you saw, or only a tone\n• **Ask or Draw the Line** — whether you want an answer, or want it to stop\n• **All Five Strategies** — everything mixed, with no warning about which dig comes next\n\nOne question runs through all three: what do I actually have, and what do I want from them?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Point at It, Ask or Draw the Line, and All Five Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Point at It?", a: "What do I actually have — a word, a fact, or only a tone?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Point at It?", a: "Naming the tone when there was a word right there to hand back.", bundle: 'pro' },
+        { q: "There is one loaded word. Which strategy?", a: "Return to Sender.", bundle: 'pro' },
+        { q: "There is only a tone, and nothing to quote. Which strategy?", a: "Calling Out Subtext.", bundle: 'pro' },
+        { q: "What is the question that decides Ask or Draw the Line?", a: "Do I want to hear more, or do I want this to be the last one?", bundle: 'pro' },
+        { q: "You do not need an answer; you need it to stop. Which strategy?", a: "I'm Surprised.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Ask or Draw the Line?", a: "A question when you wanted a line — and an answer you did not want, at length, in front of everyone.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Into the Open** — Describe What You Noticed → Calling Out Subtext → Decoding Intent\n2. **The Clear Line** — Return to Sender → Describe What You Noticed → I'm Surprised\n3. **The Full Stop** — Calling Out Subtext → Decoding Intent → I'm Surprised\n\nEach one is a ladder: the same person, several digs, and every step a little clearer than the last.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Into the Open, The Clear Line, and The Full Stop.", bundle: 'pro' },
+        { q: "What is the order in Into the Open?", a: "Describe What You Noticed, Calling Out Subtext, Decoding Intent.", bundle: 'pro' },
+        { q: "Why does Into the Open start with Describe What You Noticed?", a: "It asks the least of them. The intent question is saved for when the evidence is clear.", bundle: 'pro' },
+        { q: "What is the order in The Clear Line?", a: "Return to Sender, Describe What You Noticed, I'm Surprised.", bundle: 'pro' },
+        { q: "Why does the line come last in The Clear Line?", a: "After two chances to drop it, the line is believable. On the first small remark it would look like an overreaction.", bundle: 'pro' },
+        { q: "What is the order in The Full Stop?", a: "Calling Out Subtext, Decoding Intent, I'm Surprised.", bundle: 'pro' },
+        { q: "Why does The Full Stop end without a question?", a: "You have asked twice and taken their no twice. A line needs no answer.", bundle: 'pro' },
+        { q: "What is the usual mistake on any ladder?", a: "Silence for a week, then everything at once — or the clearest step on the smallest remark.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **Backhanded Compliments** — praise with a sting in it\n• **Sarcasm** — the words say one thing, the tone the opposite\n• **Sighs and Hints** — nothing is said, and something is wrong\n• **Digs in Front of Others** — the audience is the point\n• **Convenient Forgetting** — every time an accident, and the pattern is the message\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Backhanded Compliments, Sarcasm, Sighs and Hints, Digs in Front of Others, and Convenient Forgetting.", bundle: 'pro' },
+        { q: "What goes wrong with a backhanded compliment?", a: "You say thank you for the whole thing, and the sting goes past unanswered.", bundle: 'pro' },
+        { q: "Why does Return to Sender work on sarcasm?", a: "Sarcasm lives in one word. Handed back flat, it loses its music.", bundle: 'pro' },
+        { q: "What is the main strategy for Sighs and Hints?", a: "Describe What You Noticed — say what you saw, and let them say what it meant.", bundle: 'pro' },
+        { q: "What should you avoid with sighs and hints?", a: "Answering the hint you imagined.", bundle: 'pro' },
+        { q: "Which strategy is built for Digs in Front of Others?", a: "I'm Surprised — one calm sentence, and no scene.", bundle: 'pro' },
+        { q: "What is the message in Convenient Forgetting?", a: "The pattern. Once is forgetting; the third time is the message.", bundle: 'pro' },
+        { q: "What do you not have to prove with Convenient Forgetting?", a: "That it was on purpose. You only have to say what keeps happening.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Looking Touchy** — saying something makes me the problem\n• **Making a Scene** — keeping the peace means keeping quiet\n• **The Admission** — it only counts if they confess\n• **Second-Guessing** — maybe I'm reading too much into it\n\nEach one keeps the unsaid part unsaid.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Looking Touchy, Making a Scene, The Admission, and Second-Guessing.", bundle: 'pro' },
+        { q: "What is true instead of \"I'll look oversensitive\"?", a: "One calm sentence never looks touchy. The outburst after ten swallowed digs does.", bundle: 'pro' },
+        { q: "What does keeping the peace quietly cost?", a: "The digs keep coming, and the peace turns into distance.", bundle: 'pro' },
+        { q: "Do they have to admit it?", a: "No. They only have to know you noticed.", bundle: 'pro' },
+        { q: "What does a denial actually mean?", a: "That they would rather not own it — not that you were wrong.", bundle: 'pro' },
+        { q: "What is true about \"maybe I'm reading too much into it\"?", a: "You might be. What gets added is \"so I shouldn't say anything\".", bundle: 'pro' },
+        { q: "Why does doubt not have to mean silence?", a: "Every strategy in this pack works without being sure. They ask or describe; none of them accuses.", bundle: 'pro' },
+        { q: "What do these four mindsets have in common?", a: "Each one keeps the unsaid part unsaid.", bundle: 'pro' },
+      ]
+    },
+  ],
+  passiveaggression3: [
+    {
+      name: "Core Idea",
+      description: "Five strategies that change the frame instead of playing the game a dig sets up:\n\n1. Let It Hang\n2. Ask What They Want\n3. Not Here\n4. Play Along\n5. Twist It\n\nOne uses silence, two steer the conversation somewhere better, and two use humour.",
+      cards: [
+        { q: "What are the five strategies in this pack?", a: "Let It Hang, Ask What They Want, Not Here, Play Along, Twist It.", bundle: 'free' },
+        { q: "How do the five fit together?", a: "Let It Hang uses silence. Ask What They Want and Not Here steer the conversation. Play Along and Twist It use humour.", bundle: 'free' },
+        { q: "What does it mean to change the frame?", a: "Instead of answering the dig on its own terms, you change what kind of conversation it is.", bundle: 'free' },
+        { q: "What do all five refuse to do?", a: "Play the dig's game — defend yourself, hit back, or sulk.", bundle: 'free' },
+        { q: "Which strategy has a pause in it, and what always follows the pause?", a: "Let It Hang. A spoken line always follows, because the pause is delivery, not the whole strategy.", bundle: 'free' },
+        { q: "How is this pack different from Pt. 1?", a: "Pt. 1 answers the remark or asks about it directly. Here you change the game around it.", bundle: 'pro' },
+        { q: "How is this pack different from Pt. 2?", a: "Pt. 2 brings the undertone into the open and says it out loud. Here you never name it.", bundle: 'pro' },
+        { q: "What must the humour in this pack never be?", a: "A counter-dig. It is light and kind, or it is not used.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Let It Hang",
+      description: "",
+      cards: [
+        { q: "What is Let It Hang?", a: "A deliberate pause with a calm look after a dig, then a plain line that carries on with the subject.", bundle: 'free' },
+        { q: "How does Let It Hang sound?", a: "(Pause. Hold their eye.) \"Anyway — the figures.\"", bundle: 'free' },
+        { q: "When is Let It Hang the right one?", a: "When the dig needs no answer, but you want them to know you heard it.", bundle: 'free' },
+        { q: "What does Let It Hang leave the other person with?", a: "Their own words, hanging in the air unanswered, and nothing to argue with.", bundle: 'free' },
+        { q: "What are the three ways to carry on after the pause?", a: "Back to the subject, a practical question, or one flat word and then on.", bundle: 'free' },
+        { q: "When does Let It Hang go wrong?", a: "When the pause turns into a glare or a sigh, or when no line follows and it becomes a sulk.", bundle: 'pro' },
+        { q: "How is Let It Hang different from Let It Go in Pt. 1?", a: "Let It Go carries on as if nothing was said. Let It Hang marks the remark with a held pause, then carries on.", bundle: 'pro' },
+        { q: "Which strategy often follows Let It Hang?", a: "Not Here. If the digs keep coming, the next one can be moved to a proper talk.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What They Want",
+      description: "",
+      cards: [
+        { q: "What is Ask What They Want?", a: "Treating the dig as a request that has not been made yet, and asking for it.", bundle: 'free' },
+        { q: "How does Ask What They Want sound?", a: "\"Is there something you'd like me to do differently?\"", bundle: 'free' },
+        { q: "When is Ask What They Want the right one?", a: "When the dig sounds like a want — more help, more contact, a different way of doing things.", bundle: 'free' },
+        { q: "What does Ask What They Want leave the other person with?", a: "A real question about next time, and an open door to say it straight.", bundle: 'free' },
+        { q: "What are the three ways to ask?", a: "The open offer, the guessed need, and the next-time question.", bundle: 'free' },
+        { q: "When does Ask What They Want go wrong?", a: "When it sounds like a challenge — \"go on, then\" — or when it is asked in front of an audience.", bundle: 'pro' },
+        { q: "How is Ask What They Want different from Ask What They Mean in Pt. 1?", a: "That asks what the remark meant. This skips the meaning and asks what would change.", bundle: 'pro' },
+        { q: "Which strategy often follows Ask What They Want?", a: "Not Here. If the answer needs a proper conversation, set a time for it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Not Here",
+      description: "",
+      cards: [
+        { q: "What is Not Here?", a: "Saying there is something to talk about, and taking it to another time or place — usually later, and in private.", bundle: 'free' },
+        { q: "How does Not Here sound?", a: "\"Let's talk about that after the meeting.\"", bundle: 'free' },
+        { q: "When is Not Here the right one?", a: "When there is an audience, no time, or too much heat to talk well right now.", bundle: 'free' },
+        { q: "What does Not Here leave the other person with?", a: "A proper conversation with a time on it, instead of a sharp exchange in front of others.", bundle: 'free' },
+        { q: "What are the three ways to take it elsewhere?", a: "To after, to just the two of you, and to a set time.", bundle: 'free' },
+        { q: "When does Not Here go wrong?", a: "When the later talk never happens. Then it was only a polite way of ignoring it.", bundle: 'pro' },
+        { q: "How is Not Here different from simply letting a remark pass?", a: "It is said out loud, and it sets a time. The remark is not dropped; it is moved.", bundle: 'pro' },
+        { q: "Which strategy often follows Not Here?", a: "Ask What They Want. Once you are alone, ask what they would like to change.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Play Along",
+      description: "",
+      cards: [
+        { q: "What is Play Along?", a: "Agreeing with the dig and exaggerating it, playfully, so it becomes a joke you share.", bundle: 'free' },
+        { q: "How does Play Along sound?", a: "\"Yes, I'm famously slow. It's part of my charm.\"", bundle: 'free' },
+        { q: "When is Play Along the right one?", a: "When the dig is a small, harmless label about you.", bundle: 'free' },
+        { q: "What does Play Along leave the other person with?", a: "A joke to laugh at, instead of a defence to push against.", bundle: 'free' },
+        { q: "What are the three ways to play along?", a: "Agree and inflate, make it a title, and promise more of it.", bundle: 'free' },
+        { q: "When does Play Along go wrong?", a: "When the dig touches something real or someone is hurt. Then the joke sounds like agreement, or like you are not listening.", bundle: 'pro' },
+        { q: "How is Play Along different from Twist It?", a: "Play Along takes the label about you and makes it bigger. Twist It bends the dig into a joke about something else.", bundle: 'pro' },
+        { q: "Which strategy often follows Play Along?", a: "Twist It. If the same person tries again, change the direction of the joke.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Twist It",
+      description: "",
+      cards: [
+        { q: "What is Twist It?", a: "Turning a dig into a light joke that points somewhere else — the situation, a thing, or the word itself.", bundle: 'free' },
+        { q: "How does Twist It sound?", a: "\"Finally? I was building suspense.\"", bundle: 'free' },
+        { q: "When is Twist It the right one?", a: "When one word in the dig can be bent into something funny.", bundle: 'free' },
+        { q: "What does Twist It leave the other person with?", a: "A laugh, a new direction, and no label accepted.", bundle: 'free' },
+        { q: "What are the three ways to twist?", a: "Bend the word, blame a thing, and go somewhere bigger.", bundle: 'free' },
+        { q: "When does Twist It go wrong?", a: "When the joke points back at them. Then it is a counter-dig, not a twist.", bundle: 'pro' },
+        { q: "How is Twist It different from Play Along?", a: "Twist It does not accept the label; it changes what the joke is about. Play Along accepts the label and inflates it.", bundle: 'pro' },
+        { q: "Which strategy often follows Twist It?", a: "Ask What They Want. If the digs keep coming after a laugh or two, ask what is under them.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Keep It Light** — a label to wear, a word to bend, or a pause\n• **Steer It Elsewhere** — a request now, a talk later, or nothing to do at all\n• **All Five Strategies** — no cue given, which is the real thing\n\nTwo questions decide most of it: is there something real under this, and does it deserve a laugh?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Keep It Light, Steer It Elsewhere, and All Five Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Keep It Light?", a: "Is this a label I can wear, a word I can bend, or neither?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Keep It Light?", a: "Play Along when the dig touches something real. Agreeing, even as a joke, makes it sound true.", bundle: 'pro' },
+        { q: "The dig is a harmless label about you. Which strategy?", a: "Play Along.", bundle: 'pro' },
+        { q: "What is the question that decides Steer It Elsewhere?", a: "Is there a real request in this, and is this the place to hear it?", bundle: 'pro' },
+        { q: "There is a need under the dig, but an audience is listening. Which strategy?", a: "Not Here.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Steer It Elsewhere?", a: "Ask What They Want in front of others. The question becomes a show, and they defend the dig instead of answering.", bundle: 'pro' },
+        { q: "What is the usual wrong choice across all five?", a: "Reaching for humour every time. On a pattern, jokes teach them the dig costs nothing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Hang, Twist, Then Talk** — Let It Hang → Twist It → Not Here\n2. **Laugh, Then Ask** — Play Along → Twist It → Ask What They Want\n3. **Offer Once, Then Wait** — Ask What They Want → Not Here → Let It Hang\n\nEach one follows the same person through several digs over a day or a week.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Hang, Twist, Then Talk; Laugh, Then Ask; and Offer Once, Then Wait.", bundle: 'pro' },
+        { q: "What is the order in Hang, Twist, Then Talk?", a: "Let It Hang, Twist It, Not Here.", bundle: 'pro' },
+        { q: "Why does Not Here come last in Hang, Twist, Then Talk?", a: "By the third dig it is a pattern. Taking the first one to a private talk would make a small remark too big.", bundle: 'pro' },
+        { q: "What is the order in Laugh, Then Ask?", a: "Play Along, Twist It, Ask What They Want.", bundle: 'pro' },
+        { q: "Why does humour come before the question in Laugh, Then Ask?", a: "Two easy laughs show you are not rattled and give them a chance to drop it. Then a calm question has been earned.", bundle: 'pro' },
+        { q: "What is the order in Offer Once, Then Wait?", a: "Ask What They Want, Not Here, Let It Hang.", bundle: 'pro' },
+        { q: "Why does Let It Hang come last in Offer Once, Then Wait?", a: "After two offers, a third would be chasing. The pause leaves the offer standing.", bundle: 'pro' },
+        { q: "What do all three sequences have in common?", a: "The same person, several digs, and each answer chosen for where the pattern has got to.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **The Martyr** — \"I'll just do it myself, then\"\n• **Per My Last Email** — the dig comes in writing\n• **Teasing With an Edge** — a joke that is half a dig\n• **Comparisons** — measured against someone else\n• **The Cold Shoulder** — nothing is said at all\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Martyr, Per My Last Email, Teasing With an Edge, Comparisons, and The Cold Shoulder.", bundle: 'pro' },
+        { q: "What is the strongest strategy against The Martyr?", a: "Ask What They Want. The sigh is almost always a want in disguise.", bundle: 'pro' },
+        { q: "What should you avoid with The Martyr?", a: "Taking the job back with a sigh of your own.", bundle: 'pro' },
+        { q: "What is the written form of Let It Hang?", a: "Take your time, then answer only the content.", bundle: 'pro' },
+        { q: "What goes wrong with Teasing With an Edge?", a: "Laughing along at your own expense, or snapping and being called touchy.", bundle: 'pro' },
+        { q: "What should you avoid with Comparisons?", a: "Comparing back.", bundle: 'pro' },
+        { q: "What goes wrong with The Cold Shoulder?", a: "Chasing them, or matching the coldness.", bundle: 'pro' },
+        { q: "In which challenge do jokes rarely work, and why?", a: "The Cold Shoulder. There is no remark to play with.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Losing Face** — if I don't answer back, I've lost\n• **Letting It Slide** — a joke means they get away with it\n• **Silence** — leaving a pause is rude\n• **Urgency** — it has to be settled right now\n\nMost of them push you back into the game the dig set up.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Losing Face, Letting It Slide, Silence, and Urgency.", bundle: 'pro' },
+        { q: "What is true instead of \"if I don't answer back, I've lost\"?", a: "The person who does not need to win the exchange usually looks strongest in it.", bundle: 'pro' },
+        { q: "What is true about humour letting it slide?", a: "A joke does not settle a pattern. What gets added is \"so a joke is always weakness\".", bundle: 'pro' },
+        { q: "What does a joke cost when you never allow yourself one?", a: "The lightest, quickest answer you have, on exactly the small digs where it works best.", bundle: 'pro' },
+        { q: "What is true instead of \"leaving a silence is rude\"?", a: "A short pause and a polite next line is about the most courteous answer a rude remark can get.", bundle: 'pro' },
+        { q: "What does rushing to fill the silence cost?", a: "The dig never has to be heard twice.", bundle: 'pro' },
+        { q: "What does dealing with it straight away quietly cost?", a: "The real conversation turns into a sharp exchange with an audience.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They push you back into the game the dig set up.", bundle: 'pro' },
+      ]
+    },
+  ],
+  passiveaggression4: [
+    {
+      name: "Core Idea",
+      description: "Seven follow-up strategies for when you answer a dig and they push back:\n\n1. Leave It With Them\n2. Take Them at Their Word\n3. Impact, Not Intent\n4. Fogging\n5. Negative Inquiry\n6. Turn It Down\n7. Take It Offline\n\nThree for a denial or a joke, two for a turnaround, two for heat and an audience.",
+      cards: [
+        { q: "What are the seven strategies in this pack?", a: "Leave It With Them, Take Them at Their Word, Impact, Not Intent, Fogging, Negative Inquiry, Turn It Down, and Take It Offline.", bundle: 'free' },
+        { q: "How do the seven fit together?", a: "Three for a denial or a joke, two for a turnaround, and two for heat and an audience.", bundle: 'free' },
+        { q: "What does every card in this pack train?", a: "Your second line — what you say after you have already answered the remark and they push back.", bundle: 'free' },
+        { q: "What should you ask yourself first?", a: "What did they just do: deny it, laugh it off, turn it on me, get irritated, or turn to the room?", bundle: 'free' },
+        { q: "Why should you expect pushback at all?", a: "A passive-aggressive remark is built to be deniable, so a denial is the most common first answer when you name it.", bundle: 'free' },
+        { q: "What is the most common mistake after pushback?", a: "Pushing harder with the same question until they have to defend the remark.", bundle: 'pro' },
+        { q: "How does this pack relate to Pt. 5?", a: "Pt. 4 is for when they push back. Pt. 5 is for when they give in, pull back or open up.", bundle: 'pro' },
+        { q: "Where do Fogging and Negative Inquiry come from?", a: "Manuel J. Smith, When I Say No, I Feel Guilty (1975).", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Leave It With Them",
+      description: "",
+      cards: [
+        { q: "What is Leave It With Them?", a: "Accepting their denial for now, letting what you said stand, and carrying on.", bundle: 'free' },
+        { q: "How does Leave It With Them sound?", a: "\"Okay. I just wanted to say it.\"", bundle: 'free' },
+        { q: "When is Leave It With Them the right one?", a: "After a denial or a joke, when saying it once was the point.", bundle: 'free' },
+        { q: "Why does Leave It With Them work?", a: "They heard it. Pressing for an admission only gives them something to deny more loudly.", bundle: 'free' },
+        { q: "What are the three ways to leave it with them?", a: "Accept and close, accept and leave a door open, and accept and get back to business.", bundle: 'free' },
+        { q: "When does Leave It With Them go wrong?", a: "When the same dig keeps coming. A pattern needs Impact, Not Intent, not another \"okay\".", bundle: 'pro' },
+        { q: "What is Leave It With Them better than, and why?", a: "Pushing for an admission. A second round makes your fair question look like an accusation.", bundle: 'pro' },
+        { q: "How is Leave It With Them different from simply letting a remark go?", a: "You have already named it once. You are choosing not to name it twice.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Take Them at Their Word",
+      description: "",
+      cards: [
+        { q: "What is Take Them at Their Word?", a: "Treating their denial as true and building on it out loud.", bundle: 'free' },
+        { q: "How does Take Them at Their Word sound?", a: "\"Good — then I misread it. So Friday works.\"", bundle: 'free' },
+        { q: "When is Take Them at Their Word the right one?", a: "After a denial or a joke, when there is a practical point to build on.", bundle: 'free' },
+        { q: "Why does Take Them at Their Word work?", a: "They cannot take the denial back without admitting the dig.", bundle: 'free' },
+        { q: "What are the three ways to build on a denial?", a: "The relief, the consequence, and the joke kept a joke.", bundle: 'free' },
+        { q: "When does Take Them at Their Word go wrong?", a: "When it is said with a smirk. Then it is a point scored, and the next round starts.", bundle: 'pro' },
+        { q: "What is Take Them at Their Word better than, and why?", a: "Arguing about what they meant. You do not have to believe the denial to use it.", bundle: 'pro' },
+        { q: "Which strategy often follows Take Them at Their Word?", a: "Fogging — if they now turn it on you, grant the label and keep your point.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Impact, Not Intent",
+      description: "",
+      cards: [
+        { q: "What is Impact, Not Intent?", a: "Letting go of what they meant and saying how it landed.", bundle: 'free' },
+        { q: "How does Impact, Not Intent sound?", a: "\"Maybe you didn't mean it. It still landed as a dig.\"", bundle: 'free' },
+        { q: "When is Impact, Not Intent the right one?", a: "After a denial or \"it was a joke\", when the remark matters too much to leave.", bundle: 'free' },
+        { q: "Why does Impact, Not Intent work?", a: "Intent cannot be proven, but nobody can tell you how it landed.", bundle: 'free' },
+        { q: "What are the three ways to say Impact, Not Intent?", a: "Grant the intent, joke or not, and impact plus a wish.", bundle: 'free' },
+        { q: "When does Impact, Not Intent go wrong?", a: "When \"maybe you didn't mean it\" is said as a trap rather than sincerely.", bundle: 'pro' },
+        { q: "What is Impact, Not Intent better than, and why?", a: "Arguing that they did mean it — an argument they win just by repeating \"I didn't\".", bundle: 'pro' },
+        { q: "How is Impact, Not Intent different from saying how it lands in Pt. 1?", a: "Pt. 1 says it as a first answer to the dig. Impact, Not Intent comes after they deny the intent, and sets the intent aside on purpose.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Fogging",
+      description: "",
+      cards: [
+        { q: "What is Fogging in this pack?", a: "Agreeing with whatever could be true about you, while keeping your point.", bundle: 'free' },
+        { q: "How does Fogging sound?", a: "\"Maybe I am touchy about it. I'd still rather hear it straight.\"", bundle: 'free' },
+        { q: "When is Fogging the right one?", a: "When they turn it on you: \"you're too sensitive\", \"you're touchy today\".", bundle: 'free' },
+        { q: "Why does Fogging work?", a: "The label has nothing solid to hit, so the conversation stays on the remark instead of your character.", bundle: 'free' },
+        { q: "What are the three ways to fog?", a: "Agree with the label, agree with the odds, and agree with the logic.", bundle: 'free' },
+        { q: "When does Fogging go wrong?", a: "When the second half is missing. Agreement on its own sounds like backing down.", bundle: 'pro' },
+        { q: "What is Fogging better than, and why?", a: "Defending yourself. \"I'm not sensitive!\" proves the label and leaves the remark forgotten.", bundle: 'pro' },
+        { q: "Who described Fogging?", a: "Manuel J. Smith, in When I Say No, I Feel Guilty (1975).", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Negative Inquiry",
+      description: "",
+      cards: [
+        { q: "What is Negative Inquiry?", a: "Asking calmly what exactly they saw in the behaviour they criticise.", bundle: 'free' },
+        { q: "How does Negative Inquiry sound?", a: "\"What did I do that came across as touchy?\"", bundle: 'free' },
+        { q: "When is Negative Inquiry the right one?", a: "When they turn it on you with a vague label.", bundle: 'free' },
+        { q: "Why does Negative Inquiry work?", a: "A vague label becomes something concrete — and often the honest answer is their own remark.", bundle: 'free' },
+        { q: "What are the three ways to ask?", a: "About the behaviour, about the size, and about the problem with it.", bundle: 'free' },
+        { q: "When does Negative Inquiry go wrong?", a: "When it is asked with an edge. Then it is a counter-attack, not a question.", bundle: 'pro' },
+        { q: "What is Negative Inquiry better than, and why?", a: "Arguing with the label. The question asks for an example; the argument only repeats the label back.", bundle: 'pro' },
+        { q: "How do Fogging and Negative Inquiry differ?", a: "Fogging agrees with the label. Negative Inquiry asks what is behind it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Turn It Down",
+      description: "",
+      cards: [
+        { q: "What is Turn It Down?", a: "Lowering the pace and saying your point in one sentence.", bundle: 'free' },
+        { q: "How does Turn It Down sound?", a: "\"I'm not trying to make it a thing. Short version: it stung.\"", bundle: 'free' },
+        { q: "When is Turn It Down the right one?", a: "When they come back with an irritated counter-question.", bundle: 'free' },
+        { q: "Why does Turn It Down work?", a: "It shrinks the conversation back to its real size, instead of turning it into a fight about the conversation.", bundle: 'free' },
+        { q: "What are the three ways to turn it down?", a: "Shrink it, the short version, and slower and quieter.", bundle: 'free' },
+        { q: "When does Turn It Down go wrong?", a: "When the short version becomes a long explanation, which proves their point.", bundle: 'pro' },
+        { q: "What is Turn It Down better than, and why?", a: "Matching their heat. That makes the conversation itself the argument.", bundle: 'pro' },
+        { q: "Which strategy often follows Turn It Down?", a: "Take It Offline — if they turn to the room, take it out of the room.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Take It Offline",
+      description: "",
+      cards: [
+        { q: "What is Take It Offline?", a: "Taking the conversation out of the room and into a private talk later.", bundle: 'free' },
+        { q: "How does Take It Offline sound?", a: "\"Let's talk about it, just the two of us.\"", bundle: 'free' },
+        { q: "When is Take It Offline the right one?", a: "When they bring in an audience: \"Am I wrong, guys?\"", bundle: 'free' },
+        { q: "Why does Take It Offline work?", a: "An audience makes it a vote and a performance. Without one, both of you can back down.", bundle: 'free' },
+        { q: "What are the three ways to take it offline?", a: "Later alone, leave them out, and back to the room.", bundle: 'free' },
+        { q: "When does Take It Offline go wrong?", a: "When \"later\" never comes. Then it is just dropping it.", bundle: 'pro' },
+        { q: "What is Take It Offline better than, and why?", a: "Arguing your case to the room, which makes the audience the judge.", bundle: 'pro' },
+        { q: "How is Take It Offline different from the first strategy for digs in front of others in Pt. 3?", a: "Pt. 3 answers the dig itself. Take It Offline comes after they have already turned to the room.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Answer the Denial** — they say they meant nothing: leave it, build on it, or say how it landed?\n• **Keep the Point** — it has turned on you: grant the label, ask about it, or turn it down?\n• **All Seven Strategies** — everything mixed, with no warning about the kind of pushback\n\nOne question decides nearly all of it: what did they just do?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Answer the Denial, Keep the Point, and All Seven Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Answer the Denial?", a: "Does this need to go any further?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Answer the Denial?", a: "Arguing about what they meant — the one argument they cannot lose.", bundle: 'pro' },
+        { q: "After a denial, there is a practical point waiting. Which strategy?", a: "Take Them at Their Word.", bundle: 'pro' },
+        { q: "What is the question that decides Keep the Point?", a: "Are they attacking me, or the conversation?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Keep the Point?", a: "Defending yourself. Then the remark is forgotten and you are on trial.", bundle: 'pro' },
+        { q: "They call you sensitive and give no example. Which strategy?", a: "Negative Inquiry — ask what they actually saw.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in All Seven Strategies?", a: "Pushing harder with your first strategy — asking what they meant again and again.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Accept, Fog, Slow Down** — Take Them at Their Word → Fogging → Turn It Down\n2. **Fog, Ask, Leave It** — Fogging → Negative Inquiry → Leave It With Them\n3. **Out of the Spotlight** — Impact, Not Intent → Turn It Down → Take It Offline\n\nIn each one, every step answers what they just did — and is a little calmer than their last line.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Accept, Fog, Slow Down; Fog, Ask, Leave It; and Out of the Spotlight.", bundle: 'pro' },
+        { q: "What is the order in Accept, Fog, Slow Down?", a: "Take Them at Their Word, Fogging, Turn It Down.", bundle: 'pro' },
+        { q: "Why does Accept, Fog, Slow Down start by taking the denial?", a: "It costs nothing, and it often ends the conversation right there.", bundle: 'pro' },
+        { q: "What is the order in Fog, Ask, Leave It?", a: "Fogging, Negative Inquiry, Leave It With Them.", bundle: 'pro' },
+        { q: "Why fog before you ask?", a: "Fogging takes the sting out of the label, so the question sounds curious rather than hurt.", bundle: 'pro' },
+        { q: "What is the order in Out of the Spotlight?", a: "Impact, Not Intent, Turn It Down, Take It Offline.", bundle: 'pro' },
+        { q: "When does the room become the problem in Out of the Spotlight?", a: "Only when they turn to the audience. Then leave the room out of it, rather than trying to win it.", bundle: 'pro' },
+        { q: "What is the usual mistake in all three?", a: "Arguing at every step, which raises the temperature each round.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack — five kinds of pushback, and the follow-ups that fit:\n\n• **Calm Denial** — \"I didn't mean anything\": build on it, leave it, or say how it landed\n• **Just a Joke** — \"Relax, it was a joke\": joke or not, say how it landed\n• **The Turnaround** — \"You're too sensitive\": fog it, or ask what they saw\n• **The Counter-Question** — \"Why are you making this a thing?\": turn it down\n• **The Audience** — \"Am I wrong, guys?\": take it offline\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Calm Denial, Just a Joke, The Turnaround, The Counter-Question, and The Audience.", bundle: 'pro' },
+        { q: "What does Calm Denial sound like, and what goes wrong?", a: "\"What? I didn't mean anything by it.\" Pressing for an admission turns your fair question into an accusation.", bundle: 'pro' },
+        { q: "What is the main strategy for Just a Joke?", a: "Impact, Not Intent — joke or not, say how it landed.", bundle: 'pro' },
+        { q: "What should you avoid with Just a Joke?", a: "Explaining why the joke was not funny.", bundle: 'pro' },
+        { q: "Which two strategies fit The Turnaround?", a: "Fogging and Negative Inquiry.", bundle: 'pro' },
+        { q: "What should you avoid in The Turnaround?", a: "Arguing about your character.", bundle: 'pro' },
+        { q: "What is the main strategy for The Counter-Question, and what should you avoid?", a: "Turn It Down — and avoid a long explanation of why you mentioned it.", bundle: 'pro' },
+        { q: "What is the main strategy for The Audience?", a: "Take It Offline — not here, but later, alone.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Admissions** — if they won't admit it, it didn't count\n• **Sensitivity** — maybe I really am too sensitive\n• **Persistence** — if I keep at it, they'll see it\n• **Scenes** — answering in front of everyone will cause a scene\n\nMost of them push you into one more round when the first one was enough.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Admissions, Sensitivity, Persistence, and Scenes.", bundle: 'pro' },
+        { q: "What is true instead of \"if they won't admit it, it didn't count\"?", a: "Saying it once, calmly, is what counts. An admission is a bonus.", bundle: 'pro' },
+        { q: "What part of \"maybe I'm too sensitive\" is true, and what gets added?", a: "You might be sensitive about this. What gets added is \"so I shouldn't have said anything\".", bundle: 'pro' },
+        { q: "What does pushing harder after a denial usually do?", a: "It makes them defend the remark instead of seeing it.", bundle: 'pro' },
+        { q: "What does persistence quietly cost?", a: "It makes it about the argument, not the remark, and makes you the difficult one.", bundle: 'pro' },
+        { q: "What is a scene, and what is not?", a: "A scene is two people arguing for the audience. One calm line is not.", bundle: 'pro' },
+        { q: "What does laughing along teach them?", a: "That an audience is the safest place for the next dig.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They push you into one more round when the first one was enough.", bundle: 'pro' },
+      ]
+    },
+  ],
+  passiveaggression5: [
+    {
+      name: "Core Idea",
+      description: "Six follow-up strategies for the moment after your first response, when they back away or open up:\n\n1. Pin Down the \"Fine\"\n2. Leave the Door Open\n3. Skip the Apology\n4. Thank the Correction\n5. Welcome the Real Issue\n6. Bring Up Last Time\n\nEach one meets a different reaction, and all six aim at the straight version.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Pin Down the \"Fine\", Leave the Door Open, Skip the Apology, Thank the Correction, Welcome the Real Issue, and Bring Up Last Time.", bundle: 'free' },
+        { q: "What does this pack train?", a: "Your next line — what you say after your first response, when they give in, go quiet, play the victim, backpedal, open up, or repeat the dig.", bundle: 'free' },
+        { q: "Which reactions do the first four strategies meet?", a: "The sulky yes, the silence, poor me, and the backpedal — in that order.", bundle: 'free' },
+        { q: "What is the aim of every follow-up in this pack?", a: "To make the straight version easy to say, and welcome when it comes.", bundle: 'free' },
+        { q: "Where does the attitude of this pack come from?", a: "The Angry Smile, by Long, Long and Whitson: accept the denial for now, revisit it when it recurs, and be ready to receive the anger when it comes out directly.", bundle: 'free' },
+        { q: "How is this pack different from Pt. 4, Handling Pushback?", a: "Pt. 4 is for when they push back — deny it, call it a joke, or turn it on you. Pt. 5 is for when they back away or open up.", bundle: 'pro' },
+        { q: "Why does your reaction matter so much when the real issue finally comes out?", a: "It decides whether they ever say it straight again, or go back to digs.", bundle: 'pro' },
+        { q: "Why is a retreat not the end of the conversation?", a: "A sulky yes, a silence or a sorry usually leaves the real issue unsaid, and it comes back as the next dig.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Pin Down the \"Fine\"",
+      description: "",
+      cards: [
+        { q: "What is Pin Down the \"Fine\"?", a: "Asking which kind of yes a sulky \"fine\" is — a real yes, or a sign that you should talk.", bundle: 'free' },
+        { q: "How does Pin Down the \"Fine\" sound?", a: "\"Fine as in yes, or fine as in we should talk?\"", bundle: 'free' },
+        { q: "When is Pin Down the \"Fine\" the right one?", a: "When they give in to your response, and the tone says the opposite.", bundle: 'free' },
+        { q: "What does Pin Down the \"Fine\" protect?", a: "The agreement. A yes they meant will hold; a sulky one comes back as the next dig.", bundle: 'free' },
+        { q: "What are the three ways to pin it down?", a: "The either-or, the permission to say no, and the concrete check on the plan.", bundle: 'free' },
+        { q: "When does Pin Down the \"Fine\" go wrong?", a: "When it argues with the tone — \"Don't say fine like that\" — instead of asking which fine it is.", bundle: 'pro' },
+        { q: "What is Pin Down the \"Fine\" better than, and why?", a: "Taking the yes and carrying on. The resentment goes underground and comes back later.", bundle: 'pro' },
+        { q: "Which strategy often follows Pin Down the \"Fine\"?", a: "Leave the Door Open if they go quiet, or Welcome the Real Issue if the real thing comes out.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Leave the Door Open",
+      description: "",
+      cards: [
+        { q: "What is Leave the Door Open?", a: "Saying you'd like to hear it whenever they're ready — and then actually letting it rest.", bundle: 'free' },
+        { q: "How does Leave the Door Open sound?", a: "\"No rush. If something's bothering you, I'd like to hear it.\"", bundle: 'free' },
+        { q: "When is Leave the Door Open the right one?", a: "When they go quiet, walk off, or stop answering after your response.", bundle: 'free' },
+        { q: "What does Leave the Door Open protect?", a: "The next conversation. Pushing turns a silence into a standoff.", bundle: 'free' },
+        { q: "What are the three ways to leave the door open?", a: "The no-pressure line, offering a time and place, and a note afterwards.", bundle: 'free' },
+        { q: "When does Leave the Door Open go wrong?", a: "When it's followed a minute later by \"So?\" A door you keep pointing at is a chase.", bundle: 'pro' },
+        { q: "What is Leave the Door Open better than, and why?", a: "Chasing them. Every push makes the silence longer.", bundle: 'pro' },
+        { q: "Which strategy often follows Leave the Door Open?", a: "Welcome the Real Issue, when they come back and say it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Skip the Apology",
+      description: "",
+      cards: [
+        { q: "What is Skip the Apology?", a: "Setting aside their \"sorry, I can't say anything right\" and asking for the straight version instead.", bundle: 'free' },
+        { q: "How does Skip the Apology sound?", a: "\"I'm not asking for an apology. Just say it to me directly.\"", bundle: 'free' },
+        { q: "When is Skip the Apology the right one?", a: "When they turn your response into how hurt they are.", bundle: 'free' },
+        { q: "What does Skip the Apology protect?", a: "The original point. Rescue them, and it disappears under your comfort.", bundle: 'free' },
+        { q: "What are the three ways to skip the apology?", a: "Set the sorry aside, say what you are asking for, and lower the stakes.", bundle: 'free' },
+        { q: "When does Skip the Apology go wrong?", a: "When it sounds cold — \"Stop playing the victim.\" The point is to decline the sorry kindly, not to judge it.", bundle: 'pro' },
+        { q: "What is Skip the Apology better than, and why?", a: "Comforting them or taking back what you said. Then hurt becomes the way conversations end.", bundle: 'pro' },
+        { q: "Which strategy often follows Skip the Apology?", a: "Welcome the Real Issue — once the sorry is set aside, the real thing often comes out.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Thank the Correction",
+      description: "",
+      cards: [
+        { q: "What is Thank the Correction?", a: "Taking a backpedal briefly and warmly, and then carrying on.", bundle: 'free' },
+        { q: "How does Thank the Correction sound?", a: "\"Thanks, that helps.\"", bundle: 'free' },
+        { q: "When is Thank the Correction the right one?", a: "When they take the dig back — \"Okay, that came out wrong.\"", bundle: 'free' },
+        { q: "What does Thank the Correction protect?", a: "Their willingness to correct themselves next time. A cheap correction is one they'll make again.", bundle: 'free' },
+        { q: "What are the three ways to thank the correction?", a: "The plain thanks, the thanks and the next thing, and the thanks and an invitation to say it properly.", bundle: 'free' },
+        { q: "When does Thank the Correction go wrong?", a: "When the thanks turns into a lesson on how hurtful the dig was.", bundle: 'pro' },
+        { q: "What is Thank the Correction better than, and why?", a: "Asking for a fuller apology. You punish the correction, and next time they deny instead.", bundle: 'pro' },
+        { q: "Which strategy often follows Thank the Correction?", a: "Usually none — the dig is withdrawn. If the correction hints at more, Welcome the Real Issue.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Welcome the Real Issue",
+      description: "",
+      cards: [
+        { q: "What is Welcome the Real Issue?", a: "Thanking them for saying the real complaint straight, and asking for more before you answer.", bundle: 'free' },
+        { q: "How does Welcome the Real Issue sound?", a: "\"Thanks for saying it straight. Tell me more.\"", bundle: 'free' },
+        { q: "When is Welcome the Real Issue the right one?", a: "When the dig finally turns into what it was really about.", bundle: 'free' },
+        { q: "What does Welcome the Real Issue protect?", a: "Their directness. Your reaction decides whether they say it straight again or go back to digs.", bundle: 'free' },
+        { q: "What are the three ways to welcome the real issue?", a: "The thanks, the request for more, and naming what is true before anything else.", bundle: 'free' },
+        { q: "When does Welcome the Real Issue go wrong?", a: "When the thanks is followed by \"but\" and a defence.", bundle: 'pro' },
+        { q: "What is Welcome the Real Issue better than, and why?", a: "Defending yourself straight away. Then saying it straight gets punished.", bundle: 'pro' },
+        { q: "What does The Angry Smile say about this moment?", a: "Be ready to receive the anger when it finally comes out directly.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Bring Up Last Time",
+      description: "",
+      cards: [
+        { q: "What is Bring Up Last Time?", a: "Linking a dig that has come back to the conversation you already had about it.", bundle: 'free' },
+        { q: "How does Bring Up Last Time sound?", a: "\"We talked about this last week, and it's happened again.\"", bundle: 'free' },
+        { q: "When is Bring Up Last Time the right one?", a: "When a dig you have already talked about returns.", bundle: 'free' },
+        { q: "What does Bring Up Last Time protect?", a: "The first conversation. Without the link, it stops counting.", bundle: 'free' },
+        { q: "What are the three ways to bring up last time?", a: "The plain link, the reminder of what you agreed, and the question about the pattern.", bundle: 'free' },
+        { q: "When does Bring Up Last Time go wrong?", a: "When it becomes a list of every time it has ever happened.", bundle: 'pro' },
+        { q: "What is Bring Up Last Time better than, and why?", a: "Starting from zero, or letting it slide because you already talked. Both make the first talk count for nothing.", bundle: 'pro' },
+        { q: "What does The Angry Smile say about a dig that comes back?", a: "Accept the denial for now, and revisit it when it recurs.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Read the Retreat** — they backed away: did they give in, go quiet, feel sorry for themselves, or take it back?\n• **Meet the Opening** — they came towards you: a correction, the real issue, or only halfway?\n• **All Six Strategies** — everything mixed, with no warning about which reaction is coming\n\nOne question decides nearly all of it: what did they just do with my first response?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Read the Retreat, Meet the Opening, and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Read the Retreat?", a: "What did they do with my response — give in, go quiet, feel sorry for themselves, or take it back?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Read the Retreat?", a: "Pushing a silence as if it were a sulky yes.", bundle: 'pro' },
+        { q: "What is the question that decides Meet the Opening?", a: "Did they take the dig back, say the real thing, or only get halfway?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Meet the Opening?", a: "Meeting the real issue like a correction — \"Thanks, noted\" — and carrying on.", bundle: 'pro' },
+        { q: "What do you do when they start to say it and then stop?", a: "Leave the Door Open — say you'd like to hear it, and don't push.", bundle: 'pro' },
+        { q: "What two questions help in All Six Strategies?", a: "What did they do with my first response? And have we been here before?", bundle: 'pro' },
+        { q: "Which strategy answers an old dig that comes back?", a: "Bring Up Last Time.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Full Opening** — Pin Down the \"Fine\" → Leave the Door Open → Welcome the Real Issue\n2. **The Straight Version** — Skip the Apology → Welcome the Real Issue → Thank the Correction\n3. **Round Two** — Bring Up Last Time → Pin Down the \"Fine\" → Welcome the Real Issue\n\nEach one runs from a retreat towards the real conversation, with less pressure at every step.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Full Opening, The Straight Version, and Round Two.", bundle: 'pro' },
+        { q: "What is the order in The Full Opening?", a: "Pin Down the \"Fine\", then Leave the Door Open, then Welcome the Real Issue.", bundle: 'pro' },
+        { q: "Why does Leave the Door Open come before Welcome the Real Issue?", a: "Because the real issue usually comes out once nobody is pushing.", bundle: 'pro' },
+        { q: "What starts The Straight Version?", a: "A \"poor me\" — so the first step is Skip the Apology.", bundle: 'pro' },
+        { q: "Why does Thank the Correction come last in The Straight Version?", a: "Once they've said it sharply, they often soften it themselves. A short thanks lets them.", bundle: 'pro' },
+        { q: "What is Round Two for?", a: "A dig you already talked about, back again.", bundle: 'pro' },
+        { q: "Why does Round Two start with Bring Up Last Time?", a: "The link makes it a pattern, not a new fight.", bundle: 'pro' },
+        { q: "What is the usual wrong order after a sulky yes?", a: "Taking the fine, feeling the chill all evening, and arguing about something else later.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The six challenges to master in this pack — six ways people react to your first response, and the follow-up that fits each:\n\n• **The Sulky Yes** — \"Fine. Whatever.\" Ask which kind of yes it is.\n• **The Silence** — no answer at all. Leave the door open, and stop.\n• **Poor Me** — \"Sorry, I can't say anything right.\" Set the sorry aside.\n• **The Backpedal** — \"That came out wrong.\" Thank them and carry on.\n• **The Real Issue** — what it was really about. Welcome it before you answer.\n• **The Repeat** — the old dig, back again. Link it to last time.\n\nName the reaction, and the follow-up is usually clear.",
+      cards: [
+        { q: "What are the six challenges in this pack?", a: "The Sulky Yes, The Silence, Poor Me, The Backpedal, The Real Issue, and The Repeat.", bundle: 'pro' },
+        { q: "What does a sulky yes sound like, and what fits it?", a: "\"Fine. Whatever you want.\" Pin Down the \"Fine\" — ask which kind of yes it is.", bundle: 'pro' },
+        { q: "What goes wrong with the silence?", a: "Rushing to fill it. Leave the Door Open instead, and stop there.", bundle: 'pro' },
+        { q: "What does poor me do to the conversation?", a: "It shifts the focus from what they said to how bad they feel. Skip the Apology brings it back.", bundle: 'pro' },
+        { q: "What should you avoid with a backpedal?", a: "Making them apologise twice. Thank the Correction and carry on.", bundle: 'pro' },
+        { q: "What should you avoid when the real issue comes out?", a: "\"Well, you also…\" Welcome the Real Issue first, and answer later.", bundle: 'pro' },
+        { q: "What are the two mistakes with a repeat?", a: "Treating it as brand new, or letting it slide because you already talked about it.", bundle: 'pro' },
+        { q: "Which two reactions are a step towards you?", a: "The backpedal and the real issue. The other four are ways of backing away.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Agreement** — fine means fine; in fact, a sulky yes is a quiet no\n• **Quiet** — I have to fix the silence now; in fact, it ends sooner when nobody chases it\n• **Guilt** — I make it better when they feel bad; in fact, rescuing them buries the point\n• **Their Anger** — I have to defend myself; in fact, it needs to be heard first\n• **Old Ground** — we already talked about it; in fact, one talk does not use up the right to another\n\nMost of them end the conversation one step too early.",
+      cards: [
+        { q: "What are the five mindsets in this pack?", a: "Agreement, Quiet, Guilt, Their Anger, and Old Ground.", bundle: 'pro' },
+        { q: "What is true instead of \"fine means fine\"?", a: "A sulky yes is a no that has gone quiet, and it usually comes back.", bundle: 'pro' },
+        { q: "Why not fix a silence straight away?", a: "It is usually time, not a verdict, and pushing makes it longer.", bundle: 'pro' },
+        { q: "What does rescuing someone from guilt cost?", a: "What they meant. The dig stays, and hurt becomes the way conversations end.", bundle: 'pro' },
+        { q: "Is thanking someone for their anger the same as agreeing with them?", a: "No. You thank them for saying it straight, not for being right.", bundle: 'pro' },
+        { q: "What is true about bringing it up again?", a: "Raising it for no reason is nagging. Linking it when it happens again is what makes the first talk count.", bundle: 'pro' },
+        { q: "Which mindset feels like a strength?", a: "Guilt — comforting people feels kind, and it quietly costs the point.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They end the conversation one step too early.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

@@ -633,7 +633,7 @@ applyInputCounterVisibility();
     disagreeing: { label: 'Disagreeing', minLevel: 'pro' },
     persuasionandinfluence1: { label: 'Persuasion and Influence — Pt. 1', minLevel: 'pro' },
     brokenrecord: { label: 'Broken Record', minLevel: 'pro' },
-    respondingtopassiveaggression: { label: 'Responding to Passive Aggression', minLevel: 'pro' },
+    respondingtopassiveaggression: { label: 'Responding to Passive Aggression — Pt. 1', minLevel: 'pro' },
     makingrequests: { label: 'Making Requests', minLevel: 'pro' },
     sayingno: { label: 'Saying No', minLevel: 'pro' },
     rolebasedhumour: { label: 'Role Based Humour', minLevel: 'program' },      // Humour, Part 2,
@@ -750,6 +750,10 @@ applyInputCounterVisibility();
     supercomm1: { label: 'Supercommunicators 1 — The Language of Connection', minLevel: 'complete' },
     supercomm2: { label: 'Supercommunicators 2 — Connecting in Conflict', minLevel: 'complete' },
     supercomm3: { label: 'Supercommunicators 3 — Group Dynamics & Digital Connection', minLevel: 'complete' },
+    passiveaggression2: { label: 'Responding to Passive Aggression — Pt. 2: Bring It Into the Open', minLevel: 'complete' },
+    passiveaggression3: { label: 'Responding to Passive Aggression — Pt. 3: Change the Frame', minLevel: 'complete' },
+    passiveaggression4: { label: 'Responding to Passive Aggression — Pt. 4: Handling Pushback', minLevel: 'complete' },
+    passiveaggression5: { label: 'Responding to Passive Aggression — Pt. 5: Handling Retreat', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -3673,6 +3677,62 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
+  passiveaggression2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  passiveaggression3: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  passiveaggression4: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  passiveaggression5: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
 };
 window.BUNDLE_DEFS = BUNDLE_DEFS;
 
@@ -4610,6 +4670,8 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.46', date: 'October 2026', title: 'Responding to Passive Aggression \u2014 Pt. 2\u20135', audience: 'dev', items: ['Four new Deckstack Originals extend <strong>Responding to Passive Aggression</strong> into a series, imported at <strong>complete</strong> under Assertiveness &amp; Pressure: <strong>Pt. 2: Bring It Into the Open</strong> (<code>passiveaggression2</code>, grid) and <strong>Pt. 3: Change the Frame</strong> (<code>passiveaggression3</code>, grid) add first strategies; <strong>Pt. 4: Handling Pushback</strong> (<code>passiveaggression4</code>) and <strong>Pt. 5: Handling Retreat</strong> (<code>passiveaggression5</code>) are follow-up strategies for what the other person says next.', 'In Pt. 4 and Pt. 5 every front carries the remark, your first response and their reaction; the reaction types are the challenge categories (Calm Denial, Just a Joke, The Turnaround, The Counter-Question, The Audience; The Sulky Yes, The Silence, Poor Me, The Backpedal, The Real Issue, The Repeat).', 'The existing pack is relabelled <strong>Responding to Passive Aggression \u2014 Pt. 1</strong>; its key is unchanged. All four new packs at 0 errors in check-pack. Plan: <em>Packs/Deckstack Originals/_Plan \u2014 Responding to Passive Aggression Pt. 2\u20135.md</em>.'] },
+  { version: 'v1.29.45', date: 'October 2026', title: 'Feedback goes to support@deckstack.app', audience: 'dev', items: ['<code>FEEDBACK_ENDPOINT</code> is set to the Formspree form <em>Deckstack feedback</em> (project Deckstack). A message written after “Not really” is now delivered by email to <code>support@deckstack.app</code>, which forwards to Gmail.', 'Messages written while offline wait in the queue and are sent at the next start.'] },
   { version: 'v1.29.44', date: 'October 2026', title: 'Legal links point to deckstack.app', audience: 'dev', items: ['<code>LEGAL_LINKS</code> now holds <strong>https://deckstack.app/terms.html</strong>, <strong>/privacy.html</strong> and <strong>/support.html</strong>, so the Terms, Privacy and Support links appear in About and under the store footers.', 'The site is hosted on Cloudflare Pages from <em>Webbsidor/deckstack-legal</em>; <code>support@deckstack.app</code> forwards by Email Routing.'] },
   { version: 'v1.29.43', date: 'October 2026', title: 'Supercommunicators 1\u20133 \u2014 a new Notebook series', audience: 'dev', items: ['Three packs built by Notebook from <em>Supercommunication.pdf</em> (interviews and talks with Charles Duhigg about <em>Supercommunicators</em>), imported at <strong>complete</strong>: <strong>The Language of Connection</strong> (<code>supercomm1</code>, Depth &amp; Connection), <strong>Connecting in Conflict</strong> (<code>supercomm2</code>, Opinions &amp; Argumentation) and <strong>Group Dynamics &amp; Digital Connection</strong> (<code>supercomm3</code>, Messages &amp; Writing).', 'Packs 1 and 2 are <strong>grid packs</strong>; pack 3 is not. <em>Looping for Understanding</em>, <em>Loop the Other Side</em> and <em>In-Group Bridging</em> are composite strategies (rulebook \u00a72d).', 'First series written with the new grid add-on and in three parts per pack. All three at 0 errors in check-pack. Review notes in <em>Appdokumentation/Supercommunicators 1\u20133 \u2014 att titta p\u00e5.md</em>.'] },
   { version: 'v1.29.42', date: 'October 2026', title: 'Links to Terms, Privacy and Support', audience: 'dev', items: ['New <code>LEGAL_LINKS</code> in app-system.js. Paste the public URLs there and the links appear in About, under the Upgrade screen and under the Extended screen. Empty means hidden, so nothing shows until the pages are published.', 'The three pages themselves are in <em>Webbsidor/deckstack-legal</em> in the vault, separate from the app, so they can be hosted anywhere.', 'Short disclaimer added to About and to the last onboarding step: <em>Deckstack is a practice tool, not therapy or professional advice.</em>'] },
@@ -5751,14 +5813,14 @@ const PRO_NUDGE_RULES = {
 // either way — the only thing that ever leaves the device is text they typed.
 //
 // TO FINISH BEFORE RELEASE:
-//   1. FEEDBACK_ENDPOINT — paste the Formspree form URL. Until it is set,
-//      messages are kept in a local queue and sent once it is.
+//   1. FEEDBACK_ENDPOINT — DONE v1.29.45 (Formspree 'Deckstack feedback' ->
+//      support@deckstack.app). Messages queued before that are sent on start.
 //   2. APP_STORE_ID — the numeric id, once the app exists in the store. Used
 //      only as a fallback when the native plugin is not available.
 //   3. In DeckstackApp: npm i @capacitor-community/in-app-review (8.x for
 //      Capacitor 8 — the major tracks Capacitor's, same trap as the TTS
 //      plugin), then npx cap sync on the Mac.
-const FEEDBACK_ENDPOINT = '';   // e.g. 'https://formspree.io/f/xxxxxxxx'
+const FEEDBACK_ENDPOINT = 'https://formspree.io/f/mqpeppvq';
 const APP_STORE_ID      = '';   // e.g. '1234567890'
 
 const RATING_RULES = {
