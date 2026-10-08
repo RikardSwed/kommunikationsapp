@@ -762,6 +762,27 @@ body.pb-enabled .divider::after {
 .settings-row:last-of-type { border-bottom: none; }
 .settings-row label { font-size: 15px; color: var(--ds-txt); }
 
+/* v1.29.47 — fold-out explanations and the Grid navigation row */
+.settings-row--help > label:first-child { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.settings-row--help .settings-name::after {
+  content: ''; display: inline-block; width: 6px; height: 6px; margin-left: 8px;
+  border-right: 1.5px solid var(--ds-txt3); border-bottom: 1.5px solid var(--ds-txt3);
+  transform: rotate(45deg); vertical-align: 3px; transition: transform 0.2s;
+}
+.settings-row--help.is-open .settings-name::after { transform: rotate(-135deg); vertical-align: -1px; }
+.settings-row.is-open { border-bottom: none; padding-bottom: 6px; }
+.settings-help {
+  font-size: 13px; line-height: 1.45; color: var(--ds-txt2);
+  padding: 0 64px 12px 0; border-bottom: 1px solid var(--ds-border-sub);
+}
+.settings-sub { display: block; font-size: 12px; color: var(--ds-txt2); margin-top: 2px; }
+.settings-pro-pill {
+  display: inline-block; margin-left: 8px; padding: 1px 7px; border-radius: 8px;
+  font-size: 11px; font-weight: 700; color: #fff; background: var(--ds-pro-badge); vertical-align: 2px;
+}
+.settings-pro-pill[hidden] { display: none; }
+.settings-row--locked .toggle { opacity: 0.4; }
+
 .settings-version { margin-top: 16px; font-size: 12px; color: var(--ds-txt3); text-align: center; }
 
 .toggle { position: relative; width: 48px; height: 28px; }
@@ -4135,3 +4156,16 @@ html.ds-vh-pinned .extended-screen {
   line-height: 1.45;
   color: var(--ds-txt2);
 }
+
+/* ─── LEGAL LINKS (v1.29.42) ─── filled from LEGAL_LINKS in app-system.js */
+.legal-links {
+  font-size: 12px;
+  color: var(--ds-txt3);
+  text-align: center;
+  margin: 14px 0 4px;
+}
+.legal-links a { color: var(--ds-acc); text-decoration: none; }
+.legal-links a:active { opacity: .7; }
+.legal-links--store { margin: 4px 0 16px; }
+.legal-links[hidden] { display: none; }
+.ob-disclaimer { margin-top: 18px; font-size: 12px; }
