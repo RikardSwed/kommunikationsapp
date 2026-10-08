@@ -383,22 +383,157 @@ DS.openTrainingSettings = function () {
   document.getElementById('settingsOverlay').classList.add('open');
 };
 
-// ─── STAY ON THE SAME CARD (v1.28.99) ─────────────────────────────────────
-// Unlike the two shuffle toggles above it, this one is remembered: it is a
-// way of working rather than a setting for one session. The engine reads the
-// key directly (carryPos in mode-engine.js), so the checkbox only has to keep
-// it up to date.
+// ─── GRID NAVIGATION (v1.28.99 → v1.29.47) ────────────────────────────────
+// Was "Stay on the same card". Same stored key (ds_keep_card_pos), so nobody's
+// choice is lost. It now appears in the general training settings AND in the
+// handsfree settings for the three strategy-column modes (Single Strategy,
+// Memorize, Mindset), where it also changes the reading order. Every copy of
+// the toggle carries class grid-nav-toggle and they are kept in step.
+//
+// Pro feature: on a freemium device the toggle is disabled, shows a Pro pill,
+// and the engine (window.dsGridNav.on) reads it as off whatever is stored.
 const KEEP_CARD_POS_KEY = 'ds_keep_card_pos';
-function syncKeepCardPos() {
-  const cb = document.getElementById('keepCardPos');
-  if (cb) cb.checked = localStorage.getItem(KEEP_CARD_POS_KEY) === 'true';
+function gridNavAllowedUI() {
+  return !(window.dsGridNav && window.dsGridNav.allowed && !window.dsGridNav.allowed());
 }
+function syncKeepCardPos() {
+  let stored = false;
+  try { stored = localStorage.getItem(KEEP_CARD_POS_KEY) === 'true'; } catch (e) {}
+  const allowed = gridNavAllowedUI();
+  const on = allowed && stored;
+  document.querySelectorAll('.grid-nav-toggle').forEach(cb => {
+    cb.checked = on;
+    cb.disabled = !allowed;
+    const row = cb.closest('.settings-row');
+    if (!row) return;
+    row.classList.toggle('settings-row--locked', !allowed);
+    const pill = row.querySelector('.settings-pro-pill');
+    if (pill) pill.hidden = allowed;
+    const sub = row.querySelector('[data-grid-sub]');
+    if (sub) sub.textContent = !allowed ? 'Part of Pro'
+      : on ? 'Same card across every strategy' : 'One strategy at a time';
+  });
+}
+window.syncKeepCardPos = syncKeepCardPos;
 (function bindKeepCardPos() {
-  const cb = document.getElementById('keepCardPos');
-  if (!cb) return;
+  document.querySelectorAll('.grid-nav-toggle').forEach(cb => {
+    cb.addEventListener('change', () => {
+      if (!gridNavAllowedUI()) { syncKeepCardPos(); return; }
+      try { localStorage.setItem(KEEP_CARD_POS_KEY, cb.checked ? 'true' : 'false'); } catch (e) {}
+      syncKeepCardPos();
+      refreshOpenHelp();
+    });
+  });
   syncKeepCardPos();
-  cb.addEventListener('change', () => {
-    try { localStorage.setItem(KEEP_CARD_POS_KEY, cb.checked ? 'true' : 'false'); } catch (e) {}
+})();
+
+// ─── SETTINGS EXPLANATIONS (v1.29.47) ─────────────────────────────────────
+// Tap the name of any row in the training and handsfree settings and a short
+// explanation folds out right under it. Tap again to fold it away. The texts
+// are keyed by the control's id with the handsfree prefix removed, so one
+// text serves every sheet; a few read differently inside handsfree.
+const HF_PREFIXES = ['hfMem', 'hfMind', 'hfChall', 'hfFlow', 'hfColl', 'hf'];
+function settingKey(id) {
+  for (const pre of HF_PREFIXES) {
+    if (id.startsWith(pre) && id.length > pre.length && /[A-Z]/.test(id[pre.length])) {
+      const rest = id.slice(pre.length);
+      return rest[0].toLowerCase() + rest.slice(1);
+    }
+  }
+  return id.replace(/^show(GuideText)/, 'guideText').replace(/^showGuideTextBasic$/, 'guideTextBasic');
+}
+const GRID_HF_SHEETS = { hfSettingsOverlay: 1, hfMemSettingsOverlay: 1, hfMindSettingsOverlay: 1 };
+function settingHelp(key, overlayId) {
+  const hf = overlayId !== 'settingsOverlay';
+  const gridHf = !!GRID_HF_SHEETS[overlayId];
+  switch (key) {
+    case 'keepCardPos': {
+      let t = 'Swiping sideways keeps the same card number: card 3 of one strategy takes you to card 3 of the next. ' +
+              'Made for grid packs, where card 3 is the same situation in every strategy.';
+      if (gridHf) t += ' In handsfree it also changes the reading order: card 1 in every strategy, then card 2, and so on.';
+      if (!gridNavAllowedUI()) t += ' Grid navigation is part of Pro.';
+      return t;
+    }
+    case 'shuffleStrategies': return 'Mixes the order of the decks in this mode.';
+    case 'shuffleInputs':
+      return (gridHf && window.dsGridNav && window.dsGridNav.on())
+        ? 'Mixes the order of the cards. With Grid navigation on, whole rows are mixed, so each row stays one situation.'
+        : 'Mixes the order of the cards inside each deck.';
+    case 'guideText':
+      return 'Shows a short instruction above the card, written for this strategy: what to do with the front, and what kind of line the back is.' +
+             (hf ? ' Handsfree reads it aloud before each side.' : '');
+    case 'guideTextBasic':
+      return 'Shows one plain instruction for every card in the mode instead of the strategy’s own. Turn both guide texts off for none.' +
+             (hf ? ' Handsfree reads it aloud too.' : '');
+    case 'showHints': return 'Shows the small line under the card that says how to flip it and move on.';
+    case 'showInputCounter': return 'Shows which card you are on inside the deck, next to the deck counter at the top.';
+    case 'showProgressBar': return 'Shows a thin bar with how far you are through the deck.';
+    case 'explanation': return 'Reads the deck’s explanation aloud before its first card.';
+    case 'cardBack': return 'Reads the back of each card after the thinking pause. Turn it off to answer only in your head.';
+    case 'maxInputs': case 'maxCards':
+      return 'How many cards of each deck are read before moving on. Useful for a short walk.';
+    case 'thinkPause': return 'The silence after the front: your time to answer in your head before the back is read.';
+    case 'genPause': return 'The short pause between everything else: titles, explanations and backs.';
+    case 'rate': return 'How fast the voice speaks.';
+    case 'voice': return 'The voice that reads. Better voices can be downloaded on iPhone in Settings, Accessibility, Spoken Content, Voices.';
+    case 'loopStrategy':
+      return (gridHf && window.dsGridNav && window.dsGridNav.on())
+        ? 'Repeats the current row until you stop it.'
+        : 'Repeats the current deck until you stop it.';
+    default: return '';
+  }
+}
+function refreshOpenHelp() {
+  document.querySelectorAll('.settings-help').forEach(h => {
+    const row = h.previousElementSibling;
+    const ov = h.closest('.settings-overlay');
+    if (row && ov && row._helpKey) h.textContent = settingHelp(row._helpKey, ov.id);
+  });
+}
+(function bindSettingsHelp() {
+  const sheets = ['settingsOverlay'].concat(Object.keys({
+    hfSettingsOverlay: 1, hfMemSettingsOverlay: 1, hfChallSettingsOverlay: 1,
+    hfFlowSettingsOverlay: 1, hfMindSettingsOverlay: 1, hfCollSettingsOverlay: 1 }));
+  sheets.forEach(ovId => {
+    const ov = document.getElementById(ovId);
+    if (!ov) return;
+    ov.querySelectorAll('.settings-row').forEach(row => {
+      const ctl = row.querySelector('input[id], select[id]');
+      if (!ctl) return;
+      const key = settingKey(ctl.id);
+      if (!settingHelp(key, ovId)) return;
+      const name = row.querySelector('label:first-child');
+      if (!name) return;
+      // Wrap a plain label's text so the fold-out marker sits after the name.
+      if (!name.querySelector('.settings-name')) {
+        const span = document.createElement('span');
+        span.className = 'settings-name';
+        while (name.firstChild) span.appendChild(name.firstChild);
+        name.appendChild(span);
+      }
+      row._helpKey = key;
+      row.classList.add('settings-row--help');
+      name.addEventListener('click', e => {
+        e.preventDefault();
+        const next = row.nextElementSibling;
+        if (next && next.classList.contains('settings-help')) {
+          next.remove(); row.classList.remove('is-open'); return;
+        }
+        const h = document.createElement('div');
+        h.className = 'settings-help';
+        h.textContent = settingHelp(key, ovId);
+        row.after(h);
+        row.classList.add('is-open');
+      });
+    });
+    // Each time a sheet opens: fold everything away and bring the Grid
+    // navigation rows up to date (level and stored choice can have changed).
+    new MutationObserver(() => {
+      if (!ov.classList.contains('open')) return;
+      ov.querySelectorAll('.settings-help').forEach(h => h.remove());
+      ov.querySelectorAll('.settings-row.is-open').forEach(r => r.classList.remove('is-open'));
+      syncKeepCardPos();
+    }).observe(ov, { attributes: true, attributeFilter: ['class'] });
   });
 })();
 

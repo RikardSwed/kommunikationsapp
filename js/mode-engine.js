@@ -62,9 +62,21 @@ const DS = (function () {
   // that way, and it is read live so the toggle takes effect on the next
   // swipe rather than on the next reload.
   const KEEP_POS_KEY = 'ds_keep_card_pos';
+  // v1.29.47 — shown to the user as GRID NAVIGATION, and a Pro feature. The
+  // stored key and the name in code stay as they were, so nobody's setting is
+  // lost. A freemium device reads it as off, whatever is stored.
+  function gridNavAllowed() {
+    try {
+      const a = window.accessLevel;
+      if (!a || typeof a.getLevel !== 'function') return true;
+      return a.getLevel() !== 'freemium';
+    } catch (e) { return true; }
+  }
   function keepCardPos() {
+    if (!gridNavAllowed()) return false;
     try { return localStorage.getItem(KEEP_POS_KEY) === 'true'; } catch (e) { return false; }
   }
+  window.dsGridNav = { on: keepCardPos, allowed: gridNavAllowed, key: KEEP_POS_KEY };
   // The new group may be shorter than the old one, so the position is clamped
   // rather than wrapped: landing on card 3 of 3 is right, wrapping to card 1
   // would quietly undo the whole point of the setting.
@@ -981,6 +993,41 @@ const DS = (function () {
     const items = g => cfg.getItems(g) || [];
     const speakBack = cfg.speakBack || (() => true);
 
+    // ── Grid navigation in handsfree (v1.29.47) ──────────────────────────
+    // With Grid navigation on, the three modes whose decks are strategies
+    // read ACROSS: card 1 of every strategy, then card 2, and so on. In a grid
+    // pack that is one situation handled every way in turn. Collections,
+    // Challenges and Sequences have no strategy columns and keep their order.
+    const GRID_HF = { modeHandsfree: 1, modeHandsfreeMemorize: 1, modeHandsfreeMindset: 1 };
+    const acrossOn = () => !!GRID_HF[cfg.id] && keepCardPos();
+    mode.acrossOn = acrossOn;
+
+    // The play plan for reading across. "Shuffle inputs" shuffles ROWS, with
+    // one order shared by every column, so a grid row stays one situation.
+    function acrossPlan(s) {
+      const groupOrder = s.shuffleGroups ? shuffle(mode.groups.map((_, i) => i))
+                                         : mode.groups.map((_, i) => i);
+      const maxLen = mode.groups.reduce((m, g) => Math.max(m, items(g).length), 0);
+      const base = Array.from({ length: maxLen }, (_, i) => i);
+      const rowPerm = s.shuffleItems ? shuffle(base) : base;
+      const maxItems = s.maxItems === 'all' ? Infinity : parseInt(s.maxItems);
+      const rows = Math.min(maxLen, maxItems);
+      return { groupOrder, rowPerm, rows };
+    }
+    // Where a session starts: the row holding the current card, and the
+    // current strategy's place in the column order.
+    function acrossStart(plan) {
+      const r = plan.rowPerm.indexOf(mode.ii);
+      const p = plan.groupOrder.indexOf(mode.gi);
+      return { r: r < 0 ? 0 : r, p: p < 0 ? 0 : p };
+    }
+    // The first column in the plan that has a card on row r.
+    function firstGiOfRow(plan, r) {
+      const idx = plan.rowPerm[r];
+      for (const gi of plan.groupOrder) if (idx < items(mode.groups[gi]).length) return gi;
+      return plan.groupOrder[0];
+    }
+
     // ── Guide text (v1.26.25) — shown on the card AND read aloud ────────
     // Same per-pack + per-mode persistence as the card modes: the key's
     // absence means ON, 'off' means the user disabled it for this pack.
@@ -1191,9 +1238,73 @@ const DS = (function () {
       return v ? v.name : null;
     }
 
+    // Grid navigation, iOS app: the same flat step list, built row by row.
+    // Every row starts a "group" for native, so PREVIOUS restarts the row —
+    // the same situation from its first strategy — rather than a strategy.
+    // The strategy's name is spoken before each card only when guide text is
+    // off; with guide text on, the guide already says what to do.
+    function startNativeAcross() {
+      const s = settings();
+      const plan = acrossPlan(s);
+      const st = acrossStart(plan);
+      mode.pausedInGroup = null;
+      const voiceId = DSNative.voiceIdForName(currentVoiceName(s));
+      const steps = [];
+      const push = (text, side, postMs, gi, ii, groupStart, gTitle) => {
+        if (!text) return;
+        steps.push({ text: text, voiceId: voiceId, rate: s.rate,
+                     postDelayMs: postMs, gi: gi, ii: ii, side: side,
+                     groupStart: groupStart, groupTitle: gTitle });
+      };
+      const loop = !!s.loop;
+      const lastRow = loop ? st.r : plan.rows - 1;
+      let pStart = st.p;
+      for (let r = st.r; r <= lastRow; r++) {
+        const idx = plan.rowPerm[r];
+        let firstOfRow = true;
+        for (let pp = pStart; pp < plan.groupOrder.length; pp++) {
+          const realGi = plan.groupOrder[pp];
+          const g = mode.groups[realGi];
+          const list = items(g);
+          if (idx >= list.length) continue;
+          const it = list[idx];
+          const gTitle = cfg.groupTitle(g);
+          const [effGF, effGB] = guideTextsFor(g, it);
+          const lead = effGF ? dsSpokenGuide(effGF) : (gTitle ? gTitle + '. ' : '');
+          const gBack = effGB ? dsSpokenGuide(effGB) : '';
+          push(lead + cfg.itemFront(it, g), 'front', s.thinkPause * 1000, realGi, idx, firstOfRow, gTitle);
+          firstOfRow = false;
+          if (s.cardBack && speakBack(it)) {
+            push(gBack + cfg.itemBack(it, g), 'back', s.genPause * 1000, realGi, idx, false, gTitle);
+          }
+        }
+        pStart = 0;
+      }
+      if (!steps.length) return;
+      mode.playing = true; mode.abort = false; mode._nativeActive = true;
+      mode._nativePaused = false;
+      hfInfoOpen = false; hideInfo();
+      updateButtons();
+      applyNativeStep(steps[0]);
+      bindNativeForeground();
+      DSNative.start({ steps: steps, loop: loop, loopStartIndex: 0, subtitle: packSubtitle() },
+                     onNativeStep, onNativeDone, onNativePlayState);
+    }
+
+    // The second line on the lock screen: the pack's name.
+    function packSubtitle() {
+      try {
+        const k = typeof activeCollectionKey !== 'undefined' ? activeCollectionKey : '';
+        const el = k && document.querySelector('[data-key="' + k + '"][data-label]');
+        const label = el ? el.getAttribute('data-label') : '';
+        return label ? label + ' \u00b7 Deckstack' : 'Deckstack';
+      } catch (e) { return 'Deckstack'; }
+    }
+
     // Build the whole session as a flat step list — the SAME sequence the JS
     // loop below would speak — and hand it to native in one call.
     function startNativeSession() {
+      if (acrossOn()) { startNativeAcross(); return; }
       const s = settings();
       const maxItems = s.maxItems === 'all' ? Infinity : parseInt(s.maxItems);
       const startGi = mode.gi, startIi = mode.ii;
@@ -1273,7 +1384,7 @@ const DS = (function () {
 
       applyNativeStep(steps[0]);   // show the first card at once; events then drive it
       bindNativeForeground();
-      DSNative.start({ steps: steps, loop: loop, loopStartIndex: loopStartIndex },
+      DSNative.start({ steps: steps, loop: loop, loopStartIndex: loopStartIndex, subtitle: packSubtitle() },
                      onNativeStep, onNativeDone, onNativePlayState);
     }
 
@@ -1360,6 +1471,7 @@ const DS = (function () {
       // iOS app: hand the whole session to native so it survives a screen lock.
       // Browser and PWA fall through to the Web Speech loop below, unchanged.
       if (DSNative.isReady()) { startNativeSession(); return; }
+      if (acrossOn()) { return playAcross(); }
 
       // iOS unlock (browser only — the native engine needs no gesture)
       TTS.unlock();
@@ -1457,6 +1569,68 @@ const DS = (function () {
       updateButtons();
     }
 
+    // Grid navigation, browser and PWA: the Web Speech loop, row by row.
+    async function playAcross() {
+      TTS.unlock();
+      TTS.keepAlive(true);
+      mode.playing = true; mode.abort = false; mode.skipStep = false;
+      mode._acrossPlaying = true;
+      hfInfoOpen = false; hideInfo();
+      updateButtons();
+
+      const s = settings();
+      const plan = acrossPlan(s);
+      const st = acrossStart(plan);
+      mode._acrossPlan = plan;
+      mode.pausedInGroup = null;
+      let pStart = st.p;
+
+      outer:
+      for (let r = st.r; r < plan.rows; r++) {
+        mode._acrossRow = r;
+        const idx = plan.rowPerm[r];
+        for (let pp = pStart; pp < plan.groupOrder.length; pp++) {
+          if (mode.abort) break outer;
+          const gi = plan.groupOrder[pp];
+          const g = mode.groups[gi];
+          const list = items(g);
+          if (idx >= list.length) continue;
+          mode.gi = gi; mode.ii = idx;
+          const it = list[idx];
+          const front = cfg.itemFront(it, g);
+          const back  = cfg.itemBack(it, g);
+          const gTitle = cfg.groupTitle(g);
+          const [effGF, effGB] = guideTextsFor(g, it);
+          const lead  = effGF ? dsSpokenGuide(effGF) : (gTitle ? gTitle + '. ' : '');
+          const gBack = effGB ? dsSpokenGuide(effGB) : '';
+
+          showCard(front, back, false, it);
+          await speak(lead + front, s);
+          if (mode.abort) break outer;
+          if (!mode.skipStep) await delay(s.thinkPause * 1000);
+          mode.skipStep = false;
+
+          if (s.cardBack && speakBack(it)) {
+            showCard(front, back, true, it);
+            await speak(gBack + back, s);
+            if (mode.abort) break outer;
+            if (!mode.skipStep) await delay(s.genPause * 1000);
+            mode.skipStep = false;
+          }
+        }
+        pStart = 0;
+        if (s.loop) r--;
+      }
+
+      mode._acrossPlaying = false;
+      if (mode._acrossRestart) return;   // skipBack is starting a new pass
+      mode.playing = false; mode.abort = false; mode.skipStep = false;
+      TTS.stop();
+      TTS.keepAlive(false);
+      clearTimeouts();
+      updateButtons();
+    }
+
     function stop() {
       mode.abort = true; mode.playing = false; mode.skipStep = false;
       // Resume marker (v1.26.35): remember which strategy we paused in so
@@ -1508,6 +1682,26 @@ const DS = (function () {
       }
       // Native session owns playback — let it restart the strategy.
       if (mode._nativeActive) { DSNative.prev(); return; }
+      // Grid navigation (browser): back restarts the row — the same situation
+      // from its first strategy — or goes to the previous row from its start.
+      if (mode._acrossPlaying && mode._acrossPlan) {
+        const plan = mode._acrossPlan;
+        let r = mode._acrossRow || 0;
+        if (mode.gi === firstGiOfRow(plan, r) && r > 0) r--;
+        mode.ii = plan.rowPerm[r];
+        mode.gi = firstGiOfRow(plan, r);
+        mode._acrossRestart = true;
+        mode.abort = true;
+        TTS.stop();
+        clearTimeouts();
+        if (mode.delayResolve) { mode.delayResolve(); mode.delayResolve = null; }
+        setTimeout(() => {
+          mode._acrossRestart = false;
+          mode.abort = false; mode.playing = false;
+          play();
+        }, 50);
+        return;
+      }
       if (mode.ii === 0 && mode.gi > 0) mode.gi--;
       mode.ii = 0;
       mode.abort = true;
