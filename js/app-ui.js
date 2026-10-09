@@ -2925,6 +2925,22 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
           'Everything works in all your training modes, including handsfree.',
         ],
       },
+      // v1.29.51 — the second Extended program: the whole passive-aggression
+      // series. Part 1 is the Pro pack, so the start is familiar; Parts 2–5
+      // hold four packs at minLevel 'program' that exist nowhere else.
+      {
+        id: 'handling-passive-aggression',
+        title: 'Handling Passive Aggression',
+        icon: 'ti-message-circle-bolt',
+        description: 'Five steps through the digs, hints and sighs \u2014 from the first reply to what you say when they deny it, turn it on you, or go quiet.',
+        price: '59 kr',
+        details: [
+          'A guided program, not a pack. Five Parts, each ending in a test you have to pass before the next one opens \u2014 and passing releases that Part\u2019s pack into your library for good.',
+          'Part 1 starts on ground you know: answering the remark without taking the bait. Parts 2 and 3 are new first replies \u2014 bringing a dig into the open calmly, and changing the frame with a pause, a question or a joke. Parts 4 and 5 are what nobody teaches: what to say next, when they deny it, call you sensitive, turn to the room, sulk, go quiet or finally say what it was about.',
+          'Four of its packs \u2014 Responding to Passive Aggression Pt. 2 to Pt. 5 \u2014 exist nowhere else in the app. This program is the only way to reach them.',
+          'Everything works in all your training modes, including handsfree.',
+        ],
+      },
       // 'conversation-skills' was removed in v1.26.80 — see the note below.
       // EMPTY BEFORE THAT (v1.26.80): 'conversation-skills' (Conversation Skills
       // Foundations, 49 kr) was taken out of the store. Three reasons, in
@@ -3008,14 +3024,16 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         id: 'kit-everything',
         title: 'The Complete Kit',
         icon: 'ti-diamond',
-        description: 'Everything in Extended, including the Difficult Conversations program — nothing left to buy.',
+        description: 'Everything in Extended, including both programs — nothing left to buy.',
         // 189 av 252 är 75 %. Steget upp från The Communicator Kit är 40 kr
         // för ett program som kostar 59 styckvis — uppgraderingen ska vara
         // det uppenbara valet för den som ändå står vid kassan.
+        // v1.29.51: Handling Passive Aggression (59 kr) tillkom; priset ligger
+        // kvar på 189 kr enligt Rikards beslut, så kitet är nu 189 av 311.
         price: '189 kr',
         details: [
-          'Every single thing in Extended in one purchase: all six extra packs, the extra Broken Record situations, and the Difficult Conversations program. Bought one by one it comes to {separately}.',
-          'The program is what makes this different from The Communicator Kit. Three Parts with a test at the end of each, and three packs \u2014 Conflict Emotions, Giving Criticism and Receiving Feedback and Criticism \u2014 that exist nowhere else in the app.',
+          'Every single thing in Extended in one purchase: all six extra packs, the extra Broken Record situations, and both programs \u2014 Difficult Conversations and Handling Passive Aggression. Bought one by one it comes to {separately}.',
+          'The programs are what make this different from The Communicator Kit. Each is a path of Parts with a test at the end of each, and between them they hold seven packs that exist nowhere else in the app: Conflict Emotions, Giving Criticism and Receiving Feedback and Criticism, and Responding to Passive Aggression Pt. 2 to Pt. 5.',
           'Around it sit the six extra packs: the last step of the Starting Conversations ladder, the deep half of Apologizing, the second half of Explain Things, the shape of a story from first sentence to last, and Reframing \u2014 the other reading of the same facts. Plus the family pressure that makes Broken Record hard in the first place.',
           'Everything unlocks immediately and works in all your training modes, including handsfree. After this there is nothing else in Extended to buy.',
         ],
@@ -3028,6 +3046,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
           { type: 'pack',    id: 'reframing' },
           { type: 'bundle',  id: 'brokenrecord::family' },
           { type: 'program', id: 'difficult-conversations' },
+          { type: 'program', id: 'handling-passive-aggression' },
         ],
       },
       {
@@ -3042,7 +3061,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         code: 'DEMO2026',
         details: [
           'The same packs and bundles as The Communicator Kit, at a special rate for classroom and group use \u2014 unlocked with an access code from your teacher or course leader.',
-          'Six extra packs and the extra Broken Record situations, {separately} bought separately, all available in every training mode. The Difficult Conversations program is not included; that one is in The Complete Kit.',
+          'Six extra packs and the extra Broken Record situations, {separately} bought separately, all available in every training mode. The programs are not included; they are in The Complete Kit.',
         ],
         contents: [
           { type: 'pack',   id: 'assertivecomm2' },

@@ -780,10 +780,10 @@ applyInputCounterVisibility();
     supercomm1: { label: 'Supercommunicators 1 — The Language of Connection', minLevel: 'complete' },
     supercomm2: { label: 'Supercommunicators 2 — Connecting in Conflict', minLevel: 'complete' },
     supercomm3: { label: 'Supercommunicators 3 — Group Dynamics & Digital Connection', minLevel: 'complete' },
-    passiveaggression2: { label: 'Responding to Passive Aggression — Pt. 2: Bring It Into the Open', minLevel: 'complete' },
-    passiveaggression3: { label: 'Responding to Passive Aggression — Pt. 3: Change the Frame', minLevel: 'complete' },
-    passiveaggression4: { label: 'Responding to Passive Aggression — Pt. 4: Handling Pushback', minLevel: 'complete' },
-    passiveaggression5: { label: 'Responding to Passive Aggression — Pt. 5: Handling Retreat', minLevel: 'complete' },
+    passiveaggression2: { label: 'Responding to Passive Aggression — Pt. 2: Bring It Into the Open', minLevel: 'program' }, // Handling Passive Aggression, Part 2 (v1.29.51)
+    passiveaggression3: { label: 'Responding to Passive Aggression — Pt. 3: Change the Frame', minLevel: 'program' }, // Handling Passive Aggression, Part 3 (v1.29.51)
+    passiveaggression4: { label: 'Responding to Passive Aggression — Pt. 4: Handling Pushback', minLevel: 'program' }, // Handling Passive Aggression, Part 4 (v1.29.51)
+    passiveaggression5: { label: 'Responding to Passive Aggression — Pt. 5: Handling Retreat', minLevel: 'program' }, // Handling Passive Aggression, Part 5 (v1.29.51)
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -816,10 +816,12 @@ applyInputCounterVisibility();
     'persuasion-negotiation': { minLevel: 'pro' },
     'humour':                 { minLevel: 'pro' },
     // v1.27.00 — the listening programme. Pro like the other four handbook
-    // programmes; Extended already carries Difficult Conversations and a
-    // second paid programme would thin both.
+    // programmes. (The note here used to say a second paid programme would
+    // thin Extended; in v1.29.51 Rikard added Handling Passive Aggression as one.)
     'listening-in-depth':     { minLevel: 'pro' },
     'difficult-conversations': { minLevel: 'extended' },
+    // v1.29.51 — the second Extended programme (Rikard's call, 2026-10-09).
+    'handling-passive-aggression': { minLevel: 'extended' },
   };
   const _warnedPrograms = {};
 
@@ -4700,6 +4702,7 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.51', date: 'October 2026', title: 'Handling Passive Aggression \u2014 a second Extended programme', audience: 'dev', items: ['New programme <code>handling-passive-aggression</code>, <strong>extended</strong>, 59 kr in the store. Five Parts, one pack each: Pt. 1 (stays Pro, also Part 2 of Difficult Conversations) and Pt. 2\u20135, which move from <strong>complete</strong> to <strong>program</strong> and so reach the release build for the first time.', 'Five new checkpoints, <code>hpa-cp1</code>\u2013<code>hpa-cp5</code>, 40 questions each, 20 drawn, 30 s. Written from each pack\u2019s descriptions, Challenges, Mindset and Sequences.', 'The Complete Kit now contains both programmes; price unchanged at 189 kr (Rikard\u2019s call), so it is 189 of 311 bought separately. Classroom Kit text says the programmes are not included.'] },
   { version: 'v1.29.50', date: 'October 2026', title: 'Library cards show Grid', audience: 'dev', items: ['Pack cards in the Library now end in <strong>Grid</strong> when the pack is a grid pack. In <strong>Packs</strong> the line is the topic (or the strategy count if the pack is in no topic); in <strong>Topics</strong> it is the strategy count, since the topic is already the heading. The old <em>Flashcard mode</em> wording on Topics cards is gone. Grid packs are listed in <code>GRID_PACKS</code> at the top of <code>app-system.js</code>; new grid packs must be added there.'] },
   { version: 'v1.29.49', date: 'October 2026', title: 'Icon font bundled', audience: 'dev', items: ['The Tabler icon font (3.49.0, woff2 only) now ships in <code>css/tabler/</code> instead of loading from jsDelivr, so icons work offline in the iOS app. Two icons that never existed in the font are replaced: the pinned toast (<code>ti-pinned</code>) and the old selfhumour pack (<code>ti-mood-happy</code>).'] },
   { version: 'v1.29.48', date: 'October 2026', title: 'Settings show names only', audience: 'dev', items: ['The live line under <strong>Grid navigation</strong> is gone. Every row in the training and handsfree settings now shows only its name; tapping the name folds out the explanation, the same for all rows. On freemium the Pro pill stays.'] },
@@ -5573,6 +5576,14 @@ const WHATS_NEW = [
 //   • Lägg bara till när något nytt är värt att öppna appen för. De flesta
 //     versioner ska ALDRIG stå här.
 const WHATS_NEW_USER = [
+  {
+    date: 'October 2026', title: 'Handling Passive Aggression',
+    items: [
+      'A new programme in the Extended store: <strong>Handling Passive Aggression</strong>. Five Parts, from the first reply to a dig to what you say when they deny it, turn it on you, or go quiet.',
+      'Four of its packs exist nowhere else in the app, and each one is yours once you pass its checkpoint.',
+      'Grid packs are now marked <strong>Grid</strong> in the Library.',
+    ],
+  },
   {
     date: 'October 2026', title: 'Grid navigation',
     items: [
