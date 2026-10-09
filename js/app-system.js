@@ -53,22 +53,52 @@ function navFromSettings() {
 // Done at startup rather than in the markup because import-pack.js writes the
 // old wording into every card it creates — fixing the HTML would last exactly
 // until the next import.
+// v1.29.50 — the two Library tabs say different things, because each already
+// shows half the story. The Packs tab has no topic headings, so the card names
+// its topic. The Topics tab sits under a topic heading, so repeating it is
+// noise; that card says how many strategies the pack has instead. Either way a
+// grid pack gets "Grid" last. (Topics cards are copies made by renderTopics in
+// app-core.js BEFORE this runs, which is why they used to keep the old
+// "Flashcard mode" wording.)
+//
+// GRID_PACKS: packs whose Single Strategy is built as a grid — card N is the
+// same situation in every strategy (see "Grid-pack — tillägg till
+// regelboken.md"). Grid packs can't be told apart from the data, so they are
+// listed here. ADD NEW GRID PACKS TO THIS LIST.
+const GRID_PACKS = new Set([
+  'askingforclarity', 'calibratinghumour', 'askingpermission',
+  'toneinmessages', 'replyingandnotreplying', 'whentostoptyping',
+  'conflictresolution', 'aftertheargument', 'twosidesofthestory',
+  'describeactions',
+  'supercomm1', 'supercomm2',
+  'passiveaggression2', 'passiveaggression3',
+]);
+window.dsIsGridPack = key => GRID_PACKS.has(key);
+
 function relabelPackCards() {
   if (typeof collections === 'undefined') return;
   const topicOf = {};
   (typeof TOPICS !== 'undefined' ? TOPICS : []).forEach(t => {
     (t.packs || []).forEach(k => { if (!topicOf[k]) topicOf[k] = t.title; });
   });
-  document.querySelectorAll('#libTabPacks .collection-card').forEach(card => {
+  const strategies = key => {
+    const n = (collections[key] || []).length;
+    return n ? n + (n === 1 ? ' strategy' : ' strategies') : '';
+  };
+  const write = (card, first) => {
     const key  = card.dataset.key;
     const meta = card.querySelector('.collection-meta');
     if (!key || !meta) return;
-    const n    = (collections[key] || []).length;
-    const bits = [];
-    if (n) bits.push(n + (n === 1 ? ' strategy' : ' strategies'));
-    if (topicOf[key]) bits.push(topicOf[key]);
+    const bits = [first(key)].filter(Boolean);
+    if (GRID_PACKS.has(key)) bits.push('Grid');
     if (bits.length) meta.innerHTML = bits.join(' &nbsp;\u00b7&nbsp; ');
-  });
+  };
+  // Packs tab: topic (falls back to the strategy count for a pack in no topic).
+  document.querySelectorAll('#libTabPacks .collection-card')
+    .forEach(card => write(card, key => topicOf[key] || strategies(key)));
+  // Topics tab: the strategy count.
+  document.querySelectorAll('#libTabTopics .collection-card')
+    .forEach(card => write(card, strategies));
 }
 relabelPackCards();
 
@@ -4670,6 +4700,8 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.50', date: 'October 2026', title: 'Library cards show Grid', audience: 'dev', items: ['Pack cards in the Library now end in <strong>Grid</strong> when the pack is a grid pack. In <strong>Packs</strong> the line is the topic (or the strategy count if the pack is in no topic); in <strong>Topics</strong> it is the strategy count, since the topic is already the heading. The old <em>Flashcard mode</em> wording on Topics cards is gone. Grid packs are listed in <code>GRID_PACKS</code> at the top of <code>app-system.js</code>; new grid packs must be added there.'] },
+  { version: 'v1.29.49', date: 'October 2026', title: 'Icon font bundled', audience: 'dev', items: ['The Tabler icon font (3.49.0, woff2 only) now ships in <code>css/tabler/</code> instead of loading from jsDelivr, so icons work offline in the iOS app. Two icons that never existed in the font are replaced: the pinned toast (<code>ti-pinned</code>) and the old selfhumour pack (<code>ti-mood-happy</code>).'] },
   { version: 'v1.29.48', date: 'October 2026', title: 'Settings show names only', audience: 'dev', items: ['The live line under <strong>Grid navigation</strong> is gone. Every row in the training and handsfree settings now shows only its name; tapping the name folds out the explanation, the same for all rows. On freemium the Pro pill stays.'] },
   { version: 'v1.29.47', date: 'October 2026', title: 'Grid navigation, setting explanations, lock screen', audience: 'dev', items: ['<strong>Stay on the same card</strong> is renamed <strong>Grid navigation</strong> (same key, <code>ds_keep_card_pos</code>) with a live line under the name: <em>One strategy at a time</em> / <em>Same card across every strategy</em>. It is now also in the handsfree settings for Single Strategy, Memorize and Mindset, all copies kept in step (<code>.grid-nav-toggle</code>).', 'With it on, handsfree in those three modes reads <strong>across</strong>: row by row, every strategy in turn. Built in both paths \u2014 <code>playAcross()</code> for Web Speech and <code>startNativeAcross()</code> for the iOS plugin. Each row is a native group, so Previous restarts the row. The strategy name is spoken before each card only when guide text is off. Shuffle inputs shuffles whole rows; Loop repeats the current row. Strategy explanations are not read in this order.', '<strong>Pro feature:</strong> on freemium the toggle is disabled with a Pro pill and <code>window.dsGridNav.on()</code> is false whatever is stored.', 'Every row in the training and handsfree settings folds out a one- or two-line explanation when its name is tapped. The handsfree part of the Grid navigation text only appears in the handsfree sheets.', 'Lock screen: JS sends the pack name as <code>subtitle</code>; <em>DeckstackSpeechPlugin.swift</em> shows it as the second line and loads <code>public/apple-touch-icon.png</code> as artwork. Needs the new Swift file pasted into Xcode.'] },
   { version: 'v1.29.46', date: 'October 2026', title: 'Responding to Passive Aggression \u2014 Pt. 2\u20135', audience: 'dev', items: ['Four new Deckstack Originals extend <strong>Responding to Passive Aggression</strong> into a series, imported at <strong>complete</strong> under Assertiveness &amp; Pressure: <strong>Pt. 2: Bring It Into the Open</strong> (<code>passiveaggression2</code>, grid) and <strong>Pt. 3: Change the Frame</strong> (<code>passiveaggression3</code>, grid) add first strategies; <strong>Pt. 4: Handling Pushback</strong> (<code>passiveaggression4</code>) and <strong>Pt. 5: Handling Retreat</strong> (<code>passiveaggression5</code>) are follow-up strategies for what the other person says next.', 'In Pt. 4 and Pt. 5 every front carries the remark, your first response and their reaction; the reaction types are the challenge categories (Calm Denial, Just a Joke, The Turnaround, The Counter-Question, The Audience; The Sulky Yes, The Silence, Poor Me, The Backpedal, The Real Issue, The Repeat).', 'The existing pack is relabelled <strong>Responding to Passive Aggression \u2014 Pt. 1</strong>; its key is unchanged. All four new packs at 0 errors in check-pack. Plan: <em>Packs/Deckstack Originals/_Plan \u2014 Responding to Passive Aggression Pt. 2\u20135.md</em>.'] },
