@@ -502,6 +502,24 @@ const packTags = {
   passiveaggression5: [
     'passive aggression', 'follow-up', 'sulking', 'silent treatment', 'playing the victim', 'backpedalling', 'digs', 'resentment', 'recurring comments', 'assertiveness'
   ],
+  toneboundaries1: [
+    'raised voice', 'shouting', 'snapping', 'tone', 'de-escalation', 'staying calm', 'boundaries', 'assertiveness'
+  ],
+  toneboundaries2: [
+    'tone', 'sharp tone', 'curt orders', 'accusing questions', 'condescension', 'talking down', 'clipped replies', 'boundaries', 'assertiveness'
+  ],
+  toneboundaries3: [
+    'tone', 'shouting', 'raised voice', 'boundaries', 'follow-up', 'broken record', 'pause', 'consequences', 'follow through', 'assertiveness'
+  ],
+  toneboundaries4: [
+    'tone', 'raised voice', 'shouting', 'snapping', 'follow-up', 'apology', 'after an argument', 'repair', 'recurring arguments', 'assertiveness'
+  ],
+  networking1: [
+    'networking', 'events', 'conferences', 'meetups', 'introductions', 'career', 'making contacts', 'following up'
+  ],
+  networking2: [
+    'networking', 'following up', 'informational interview', 'introductions', 'reconnecting', 'staying in touch', 'career', 'advice', 'thank you'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -534,6 +552,7 @@ const TOPICS = [
   { id: 'questions',             title: 'Questions & Curiosity',         packs: ['deepquestions'] },
   { id: 'flowtransitions',       title: 'Flow & Transitions',            packs: ['conversational', 'transitions', 'reactingtounexpectedstatements', 'changingtopics'] },
   { id: 'endingconversations',   title: 'Ending Conversations',          packs: ['endingconversations'] },
+  { id: 'networking',            title: 'Networking & Career',           packs: ['networking1', 'networking2'] },   // v1.29.55
 
   // ── Being with the other person ───────────────────────────────────
   { id: 'listening',             title: 'Listening & Understanding',     packs: ['listeningresponding', 'validation', 'listeningthroughquestions', 'showunderstanding2', 'jimmy3', 'showunderstanding', 'askingforclarity'] },
@@ -552,8 +571,8 @@ const TOPICS = [
   // ── Standing your ground ──────────────────────────────────────────
   { id: 'opinions',              title: 'Opinions & Argumentation',      packs: ['influenceframing', 'agreeing', 'disagreeing', 'givingcounterexamples', 'discussing', 'supercomm2'] },
   { id: 'persuasion',            title: 'Persuasion & Negotiation',      packs: ['influenceframing', 'persuasionandinfluence1', 'persuasionandinfluence2', 'negotiationandcompromise'] },
-  { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression', 'oconnor1', 'oconnor3', 'jfisher1', 'jfisher2', 'assertivecomm1', 'assertivecomm2', 'assertivecommadv', 'integratedmaster', 'jfisher3', 'jfisheradv', 'passiveaggression2', 'passiveaggression3', 'passiveaggression4', 'passiveaggression5'] },
-  { id: 'boundaries',            title: 'Asking & Saying No',            packs: ['playfulrefusals', 'thehappyno', 'theregretfulno', 'makingrequests', 'sayingno', 'oconnor2', 'jimmy6', 'askingpermission'] },
+  { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression', 'oconnor1', 'oconnor3', 'jfisher1', 'jfisher2', 'assertivecomm1', 'assertivecomm2', 'assertivecommadv', 'integratedmaster', 'jfisher3', 'jfisheradv', 'passiveaggression2', 'passiveaggression3', 'passiveaggression4', 'passiveaggression5', 'toneboundaries1', 'toneboundaries2', 'toneboundaries3', 'toneboundaries4'] },
+  { id: 'boundaries',            title: 'Asking & Saying No',            packs: ['playfulrefusals', 'thehappyno', 'theregretfulno', 'makingrequests', 'sayingno', 'oconnor2', 'jimmy6', 'askingpermission', 'toneboundaries1', 'toneboundaries2'] },
 
   // ── The hard end ──────────────────────────────────────────────────
   { id: 'emotions',              title: 'Emotions & Regulation',         packs: ['emotionlabellingandregulation', 'conflictemotions', 'praxdread4', 'reframing', 'oconnor6'] },

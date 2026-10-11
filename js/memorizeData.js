@@ -21730,4 +21730,940 @@ const memorizeCollections = {
       ]
     },
   ],
+  toneboundaries1: [
+    {
+      name: "Core Idea",
+      description: "Five first strategies for when someone raises their voice or snaps at you: don't meet the volume, and say calmly how you want to be spoken to.\n\n1. Stay Low and Slow\n2. Name the Volume\n3. The Calm Request\n4. State the Line\n5. Acknowledge, Then the Issue\n\nThey run from your own voice to a clear line.",
+      cards: [
+        { q: "What are the five strategies in this pack?", a: "Stay Low and Slow, Name the Volume, The Calm Request, State the Line, Acknowledge, Then the Issue.", bundle: 'free' },
+        { q: "What is the stance behind all five?", a: "I don't meet the volume, and I say calmly how I want to be spoken to.", bundle: 'free' },
+        { q: "Which strategy is the lightest, and which is the clearest?", a: "Stay Low and Slow is the lightest — it only changes your own voice. State the Line is the clearest — it says how you will listen.", bundle: 'free' },
+        { q: "Which strategies talk about the volume, and which do not?", a: "Name the Volume, The Calm Request and State the Line talk about it. Stay Low and Slow and Acknowledge, Then the Issue lower it without mentioning it.", bundle: 'free' },
+        { q: "In which strategy is the delivery the strategy?", a: "Stay Low and Slow. The line is ordinary; saying it quietly and slowly is what does the work.", bundle: 'free' },
+        { q: "How is this pack different from Pt. 2?", a: "Pt. 1 is about volume: shouting and snapping. Pt. 2 is about tone that changes what the words mean, like a question that sounds like an order.", bundle: 'pro' },
+        { q: "How is this series different from the Passive Aggression series?", a: "This series is about direct sharpness, said out loud. Passive Aggression is about indirect digs, sighs and hints.", bundle: 'pro' },
+        { q: "What do you do if you ever feel unsafe?", a: "Leave. That is the right response, not a communication problem to solve.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stay Low and Slow",
+      description: "",
+      cards: [
+        { q: "What is Stay Low and Slow?", a: "Answering in a lower voice and at a slower pace than theirs, with short, plain sentences.", bundle: 'free' },
+        { q: "How does Stay Low and Slow sound?", a: "Quietly and slowly: \"I hear you. Let's figure out the deadline.\"", bundle: 'free' },
+        { q: "When is Stay Low and Slow the right one?", a: "Early, while the conversation still works, and whenever your own voice wants to rise to match theirs.", bundle: 'free' },
+        { q: "What does Stay Low and Slow leave the other person to do?", a: "Come down to your volume, often without noticing. It is hard to keep shouting at someone who is not shouting back.", bundle: 'free' },
+        { q: "What are the three things to say, low and slow?", a: "The next step, what you will do, and that you are listening.", bundle: 'free' },
+        { q: "When does Stay Low and Slow go wrong?", a: "When the quiet voice turns cold or mocking, or when the line becomes a long defence.", bundle: 'pro' },
+        { q: "How is Stay Low and Slow different from Name the Volume?", a: "Stay Low and Slow changes only your own voice and says nothing about theirs. Name the Volume says out loud what is happening.", bundle: 'pro' },
+        { q: "Where does Stay Low and Slow come in the sequences?", a: "First, in Lower the Volume.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name the Volume",
+      description: "",
+      cards: [
+        { q: "What is Name the Volume?", a: "Saying plainly and neutrally what is happening to the volume — no judgement, no request.", bundle: 'free' },
+        { q: "How does Name the Volume sound?", a: "\"You're raising your voice.\" Or: \"We're both getting loud.\"", bundle: 'free' },
+        { q: "When is Name the Volume the right one?", a: "When they do not seem to notice how loud they have got.", bundle: 'free' },
+        { q: "What does Name the Volume leave the other person to do?", a: "Hear themselves, and adjust on their own.", bundle: 'free' },
+        { q: "What are the three ways to name it?", a: "Their volume, both of you, and the change.", bundle: 'free' },
+        { q: "When does Name the Volume go wrong?", a: "When it is said loudly, or when it becomes an order (\"Calm down\") or a label for the person.", bundle: 'pro' },
+        { q: "How is Name the Volume different from The Calm Request?", a: "Name the Volume only describes what is happening. The Calm Request asks for a change.", bundle: 'pro' },
+        { q: "Where does Name the Volume come in the sequences?", a: "First, in both Back to the Point and The Clear Line.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Calm Request",
+      description: "",
+      cards: [
+        { q: "What is The Calm Request?", a: "Asking for a lower volume with a negatively framed question, where \"no\" means yes.", bundle: 'free' },
+        { q: "How does The Calm Request sound?", a: "\"Are you opposed to talking about this at a normal volume?\"", bundle: 'free' },
+        { q: "When is The Calm Request the right one?", a: "When the volume needs to come down, and you want to leave them room to choose it.", bundle: 'free' },
+        { q: "What does The Calm Request leave the other person to do?", a: "Agree by saying no, which lets them keep control and keep their pride.", bundle: 'free' },
+        { q: "What are the three ways to frame it?", a: "\"Are you opposed to...\", \"Would you be against...\" and \"Is it unreasonable to...\"", bundle: 'free' },
+        { q: "When does The Calm Request go wrong?", a: "When it is turned into an order — \"Can you calm down?\" — or asked again and again without waiting for an answer.", bundle: 'pro' },
+        { q: "How is The Calm Request different from State the Line?", a: "The Calm Request asks a question they can answer. State the Line says how you will listen, and needs no answer.", bundle: 'pro' },
+        { q: "Where does The Calm Request come in the sequences?", a: "In the middle of both Back to the Point and The Clear Line.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "State the Line",
+      description: "",
+      cards: [
+        { q: "What is State the Line?", a: "Saying what you want to listen to, and how — firm but kind.", bundle: 'free' },
+        { q: "How does State the Line sound?", a: "\"I want to hear this. I can't while we're shouting.\"", bundle: 'free' },
+        { q: "When is State the Line the right one?", a: "When the lighter strategies have not worked, or when it is simply too much.", bundle: 'free' },
+        { q: "What does State the Line leave the other person to do?", a: "Choose: bring the volume down and be heard, or keep shouting and not be.", bundle: 'free' },
+        { q: "What are the three ways to state it?", a: "Yes to the topic and no to the volume, what you will and won't do, and how you want to be spoken to.", bundle: 'free' },
+        { q: "When does State the Line go wrong?", a: "When it comes first, on a small outburst, or when it turns into a threat.", bundle: 'pro' },
+        { q: "How is State the Line different from The Calm Request?", a: "The Calm Request leaves them a choice through a question. State the Line is a statement about you, and asks for nothing.", bundle: 'pro' },
+        { q: "Where does State the Line come in the sequences?", a: "Last, in both Lower the Volume and The Clear Line.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Acknowledge, Then the Issue",
+      description: "",
+      cards: [
+        { q: "What is Acknowledge, Then the Issue?", a: "Showing that you see their frustration, then steering to the actual problem, in one breath.", bundle: 'free' },
+        { q: "How does Acknowledge, Then the Issue sound?", a: "\"You're clearly frustrated about the deadline. What's the biggest problem?\"", bundle: 'free' },
+        { q: "When is Acknowledge, Then the Issue the right one?", a: "When there is a real problem under the noise.", bundle: 'free' },
+        { q: "What does Acknowledge, Then the Issue leave the other person to do?", a: "Stop pushing to be heard, and talk about the problem instead.", bundle: 'free' },
+        { q: "What are the three ways to do it?", a: "The feeling then a question, what's fair then the problem, and the cause then the next step.", bundle: 'free' },
+        { q: "When does Acknowledge, Then the Issue go wrong?", a: "When the acknowledgement turns into agreeing with everything, or the second part never comes.", bundle: 'pro' },
+        { q: "How is Acknowledge, Then the Issue different from Stay Low and Slow?", a: "Stay Low and Slow only changes your voice. Acknowledge, Then the Issue names their frustration and points to the problem.", bundle: 'pro' },
+        { q: "Where does Acknowledge, Then the Issue come in the sequences?", a: "In the middle of Lower the Volume, and last in Back to the Point.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Bring It Down** — what is driving the noise: the moment, not noticing, or a real problem?\n• **Ask or Tell** — how much room to leave them to fix the volume themselves\n• **All Five Strategies** — everything mixed, with no warning about which outburst comes next\n\nOne question runs through all three: what is the noise about, and how much room can I still give them?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Bring It Down, Ask or Tell, and All Five Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Bring It Down?", a: "Is the noise about the moment, about not noticing, or about something real?", bundle: 'pro' },
+        { q: "There is a real problem under the noise. Which strategy?", a: "Acknowledge, Then the Issue.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Bring It Down?", a: "Naming the volume when they are upset about something real.", bundle: 'pro' },
+        { q: "What is the question that decides Ask or Tell?", a: "How much room do I want to give them to fix it themselves?", bundle: 'pro' },
+        { q: "You want them to bring it down, and you want to leave them the choice. Which strategy?", a: "The Calm Request.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Ask or Tell?", a: "The line first, on someone who has only just got loud.", bundle: 'pro' },
+        { q: "When you are unsure, where do you start?", a: "Light: your own voice first, and say something about theirs only when it keeps climbing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Lower the Volume** — Stay Low and Slow → Acknowledge, Then the Issue → State the Line\n2. **Back to the Point** — Name the Volume → The Calm Request → Acknowledge, Then the Issue\n3. **The Clear Line** — Name the Volume → The Calm Request → State the Line\n\nEach one escalates gently: the lightest step first, and the line only when it is needed.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Lower the Volume, Back to the Point, and The Clear Line.", bundle: 'pro' },
+        { q: "What is the order in Lower the Volume?", a: "Stay Low and Slow, Acknowledge, Then the Issue, State the Line.", bundle: 'pro' },
+        { q: "Why does Lower the Volume start with your own voice?", a: "It asks nothing of them. The line is saved for when two lighter steps have not worked.", bundle: 'pro' },
+        { q: "What is the order in Back to the Point?", a: "Name the Volume, The Calm Request, Acknowledge, Then the Issue.", bundle: 'pro' },
+        { q: "Why does the problem come last in Back to the Point?", a: "At full volume, the problem only gets shouted about again. Bring the volume down first.", bundle: 'pro' },
+        { q: "What is the order in The Clear Line?", a: "Name the Volume, The Calm Request, State the Line.", bundle: 'pro' },
+        { q: "Why is the line fair at the end of The Clear Line?", a: "You named it and asked first, so they had two chances to bring it down.", bundle: 'pro' },
+        { q: "What is the usual mistake in all three?", a: "Shouting back straight away, or saying nothing for a long time and then snapping.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **The Raised Voice** — the volume climbs, sentence by sentence\n• **Snapping Under Stress** — a short, sharp burst from someone under pressure\n• **On the Phone** — no face to read, and one voice at a time\n• **In Front of Others** — the outburst has an audience\n• **From Someone Above You** — the person shouting has power over you\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Raised Voice, Snapping Under Stress, On the Phone, In Front of Others, and From Someone Above You.", bundle: 'pro' },
+        { q: "What goes wrong with The Raised Voice?", a: "You match it, and soon you are both shouting about something that was never that big.", bundle: 'pro' },
+        { q: "What should you avoid when someone snaps under stress?", a: "Snapping back.", bundle: 'pro' },
+        { q: "Why does Stay Low and Slow matter most on the phone?", a: "Your voice is all they have of you.", bundle: 'pro' },
+        { q: "What goes wrong on the phone?", a: "Talking over them, because a phone carries one voice at a time.", bundle: 'pro' },
+        { q: "Why does Stay Low and Slow work in front of others?", a: "The room follows the calmer voice.", bundle: 'pro' },
+        { q: "What should you avoid with someone above you?", a: "Apologising for things you did not do, just to make the noise stop.", bundle: 'pro' },
+        { q: "What does their position give them, and what does it not?", a: "A say over your work, not over how loudly they speak to you.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Staying Calm** — calm is not giving in; it is choosing how this goes\n• **Shouting Back** — standing up for yourself does not need a raised voice\n• **Calming Them Down** — you can help, but their temper is not your job\n• **Making It Worse** — a calm word now is smaller than an explosion later\n\nEach one is a reason to meet the volume, or to say nothing at all.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Staying Calm, Shouting Back, Calming Them Down, and Making It Worse.", bundle: 'pro' },
+        { q: "What is true instead of \"if I stay calm, they win\"?", a: "Calm is not agreeing. It is keeping control of your side of the conversation.", bundle: 'pro' },
+        { q: "What does shouting back quietly cost?", a: "The volume becomes the topic, and what you wanted to say gets lost.", bundle: 'pro' },
+        { q: "Which form does Shouting Back use?", a: "The price: a belief that feels like a strength, and what it quietly costs.", bundle: 'pro' },
+        { q: "What is true about \"it's my job to calm them down\"?", a: "You can help. What gets added is \"it's my job\".", bundle: 'pro' },
+        { q: "What do you do if you feel unsafe?", a: "Leave. That is the right response, not a communication problem to solve.", bundle: 'pro' },
+        { q: "What is true instead of \"saying something will make it worse\"?", a: "One calm, short sentence rarely makes it worse. The silence that builds until you shout does.", bundle: 'pro' },
+        { q: "What do these four mindsets have in common?", a: "Each one pushes you to meet the volume, or to say nothing at all.", bundle: 'pro' },
+      ]
+    },
+  ],
+  toneboundaries2: [
+    {
+      name: "Core Idea",
+      description: "Five first strategies for when the words are reasonable but the tone makes them something else:\n\n1. Answer the Words\n2. Ask for the Ask\n3. Check What It Was\n4. Say It Back Softer\n5. Say How It Sounded\n\nThey run from lightest to most direct: deal with the matter, then the tone.",
+      cards: [
+        { q: "What are the five strategies in this pack?", a: "Answer the Words, Ask for the Ask, Check What It Was, Say It Back Softer, Say How It Sounded.", bundle: 'free' },
+        { q: "What is the stance of this pack?", a: "The words can be fine. It is the tone that changes them into an order, a charge or a closed door.", bundle: 'free' },
+        { q: "Which strategy is the lightest, and which is the most direct?", a: "Answer the Words is the lightest — it deals only with the matter. Say How It Sounded is the most direct — it says what the tone did.", bundle: 'free' },
+        { q: "Which strategies say nothing at all about the tone?", a: "Answer the Words and Say It Back Softer. They take the content and leave the tone behind.", bundle: 'free' },
+        { q: "Which strategies ask a question?", a: "Check What It Was always does. Ask for the Ask and Say How It Sounded both end with one.", bundle: 'free' },
+        { q: "How is this pack different from Pt. 1, When the Volume Rises?", a: "Pt. 1 is about raised voices and snapping. Pt. 2 is about tone that changes what the words mean, even at a normal volume.", bundle: 'pro' },
+        { q: "How do you choose where to start?", a: "If you know what they meant and it is a one-off, deal with the words. If you do not know, check. Name the tone when it keeps coming.", bundle: 'pro' },
+        { q: "What do all five strategies keep alive?", a: "The actual matter. Even when you mention the tone, the request, question or fact still gets dealt with.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Answer the Words",
+      description: "",
+      cards: [
+        { q: "What is Answer the Words?", a: "Replying to the reasonable part of what they said — the request, question or fact — and leaving the tone where it is.", bundle: 'free' },
+        { q: "How does Answer the Words sound?", a: "\"Sure, I'll send it now.\"", bundle: 'free' },
+        { q: "When is Answer the Words the right one?", a: "When it is a one-off, often from someone in a hurry or under stress, and the matter is what counts.", bundle: 'free' },
+        { q: "What does Answer the Words leave the other person to do?", a: "Nothing about the tone. There is nothing for it to catch on, so it usually fades.", bundle: 'free' },
+        { q: "What are the three ways to reply to the words?", a: "The plain yes, the real reply to the question, and the fact taken at face value.", bundle: 'free' },
+        { q: "When does Answer the Words go wrong?", a: "When the same tone keeps coming and you never mention it, or when the yes comes out cold.", bundle: 'pro' },
+        { q: "How is Answer the Words different from Say It Back Softer?", a: "Answer the Words deals with the matter. Say It Back Softer repeats their message calmly, so they hear their own point in a normal voice.", bundle: 'pro' },
+        { q: "Where does Answer the Words come in the sequences?", a: "It opens Words, Then Tone, and it ends both The Proper Ask and Back to the Words.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for the Ask",
+      description: "",
+      cards: [
+        { q: "What is Ask for the Ask?", a: "Saying you are willing, and asking them to put it as a request instead of an order.", bundle: 'free' },
+        { q: "How does Ask for the Ask sound?", a: "\"Happy to. Can you ask me rather than tell me?\"", bundle: 'free' },
+        { q: "When is Ask for the Ask the right one?", a: "When it was clearly an order, and you are happy to do the task itself.", bundle: 'free' },
+        { q: "What does Ask for the Ask leave the other person to do?", a: "Say it again as a request — usually with a \"could you\".", bundle: 'free' },
+        { q: "What are the three ways to ask for the ask?", a: "Ask me, don't tell me; try that again; and say what you'd like.", bundle: 'free' },
+        { q: "When does Ask for the Ask go wrong?", a: "When it turns into a lecture about manners, or when the yes is missing and it sounds like a refusal.", bundle: 'pro' },
+        { q: "How is Ask for the Ask different from Say How It Sounded?", a: "Ask for the Ask says yes and asks for a different way of asking. Say How It Sounded says what the tone did and asks what they need.", bundle: 'pro' },
+        { q: "Where does Ask for the Ask come in the sequences?", a: "In the middle of The Proper Ask, after the check and before the yes.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Check What It Was",
+      description: "",
+      cards: [
+        { q: "What is Check What It Was?", a: "Asking which of two things they meant: a question or a criticism, a wish or an order, a real \"fine\" or not.", bundle: 'free' },
+        { q: "How does Check What It Was sound?", a: "\"Is that a question, or are you unhappy with how I did it?\"", bundle: 'free' },
+        { q: "When is Check What It Was the right one?", a: "When you honestly cannot tell what the tone made the words into.", bundle: 'free' },
+        { q: "What does Check What It Was leave the other person to do?", a: "Choose one of the two, and say it straight.", bundle: 'free' },
+        { q: "What are the three things to check?", a: "Question or criticism, wish or order, and okay or not okay.", bundle: 'free' },
+        { q: "When does Check What It Was go wrong?", a: "When one option clearly sounds like the one you believe, so the question becomes a charge.", bundle: 'pro' },
+        { q: "How is Check What It Was different from Say How It Sounded?", a: "Check What It Was asks what it was. Say How It Sounded already knows how it came across, and says so.", bundle: 'pro' },
+        { q: "Where does Check What It Was come in the sequences?", a: "It opens The Proper Ask, and it is the middle step of Back to the Words.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say It Back Softer",
+      description: "",
+      cards: [
+        { q: "What is Say It Back Softer?", a: "Putting their message into your own calm words, so the content is received and the tone is not.", bundle: 'free' },
+        { q: "How does Say It Back Softer sound?", a: "\"So you need the report by three. Got it.\"", bundle: 'free' },
+        { q: "When is Say It Back Softer the right one?", a: "When you want them to hear their own point in a normal voice, without saying a word about their tone.", bundle: 'free' },
+        { q: "What does Say It Back Softer leave the other person to do?", a: "Hear that you got it, and hear the difference between your voice and theirs.", bundle: 'free' },
+        { q: "What are the three things to say back?", a: "The content, the wish under it, and the feeling under the short word.", bundle: 'free' },
+        { q: "When does Say It Back Softer go wrong?", a: "When it copies their words in their tone. Then it is mimicking, and it starts a fight.", bundle: 'pro' },
+        { q: "How is Say It Back Softer different from Answer the Words?", a: "Answer the Words deals with the matter. Say It Back Softer restates the message first, in a calm voice.", bundle: 'pro' },
+        { q: "Where does Say It Back Softer come in the sequences?", a: "It is the middle step of Words, Then Tone — the second time the sharpness comes.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say How It Sounded",
+      description: "",
+      cards: [
+        { q: "What is Say How It Sounded?", a: "Saying how the tone came across and what it did to you, without saying what they are, and then asking what they need.", bundle: 'free' },
+        { q: "How does Say How It Sounded sound?", a: "\"That came out like an order, and I bristled. What do you need?\"", bundle: 'free' },
+        { q: "When is Say How It Sounded the right one?", a: "When the tone itself has become the problem — it stung, or it keeps happening.", bundle: 'free' },
+        { q: "What does Say How It Sounded leave the other person to do?", a: "Hear how it came out, and say again what they actually need.", bundle: 'free' },
+        { q: "What are the three ways to say how it sounded?", a: "How it came across, what it did to you, and who else heard it.", bundle: 'free' },
+        { q: "When does Say How It Sounded go wrong?", a: "When it labels the person — \"you're rude\" — or when you are not sure what they meant and should have checked first.", bundle: 'pro' },
+        { q: "How is Say How It Sounded different from Say How It Lands in Responding to Passive Aggression?", a: "Say How It Lands is about a hidden dig. Say How It Sounded is about sharpness that is out in the open.", bundle: 'pro' },
+        { q: "Where does Say How It Sounded come in the sequences?", a: "It ends Words, Then Tone, and it opens Back to the Words.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Pick What to Answer** — the words, their message in a calm voice, or the tone itself\n• **Clear It Up** — check what it was, ask for a request, or say what the tone did\n• **All Five Strategies** — everything mixed, with no warning about what comes next\n\nOne question runs through all three: do I know what they meant, and does the tone need a word?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Pick What to Answer, Clear It Up, and All Five Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Pick What to Answer?", a: "Is this a one-off I can let pass, or has the tone become the thing to talk about?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Pick What to Answer?", a: "Naming the tone on a one-off from someone under stress.", bundle: 'pro' },
+        { q: "It is a one-off, and the matter is what counts. Which strategy?", a: "Answer the Words.", bundle: 'pro' },
+        { q: "What is the question that decides Clear It Up?", a: "Do I know what they meant?", bundle: 'pro' },
+        { q: "You honestly cannot tell if it was a question or a criticism. Which strategy?", a: "Check What It Was.", bundle: 'pro' },
+        { q: "It was clearly an order, and you are happy to do the task. Which strategy?", a: "Ask for the Ask.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Clear It Up?", a: "Saying how it sounded when you were not sure what they meant. A quick check would have cost less.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Words, Then Tone** — Answer the Words → Say It Back Softer → Say How It Sounded\n2. **The Proper Ask** — Check What It Was → Ask for the Ask → Answer the Words\n3. **Back to the Words** — Say How It Sounded → Check What It Was → Answer the Words\n\nEach one keeps the actual matter in sight, even when the tone gets a word.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Words, Then Tone, The Proper Ask, and Back to the Words.", bundle: 'pro' },
+        { q: "What is the order in Words, Then Tone?", a: "Answer the Words, Say It Back Softer, Say How It Sounded.", bundle: 'pro' },
+        { q: "Why does the tone only get named on the third step of Words, Then Tone?", a: "It has had two chances to fade on its own, so naming it cannot look like an overreaction.", bundle: 'pro' },
+        { q: "What is the order in The Proper Ask?", a: "Check What It Was, Ask for the Ask, Answer the Words.", bundle: 'pro' },
+        { q: "Why does the check come first in The Proper Ask?", a: "So you never treat a real question as an order.", bundle: 'pro' },
+        { q: "What is the order in Back to the Words?", a: "Say How It Sounded, Check What It Was, Answer the Words.", bundle: 'pro' },
+        { q: "Why does Back to the Words end with Answer the Words?", a: "So the talk about tone does not become the whole conversation, and the matter still gets dealt with.", bundle: 'pro' },
+        { q: "What is the usual mistake these sequences prevent?", a: "Swallowing it twice and snapping, or arguing about the tone and never getting back to the matter.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **The Bark** — a request with everything polite taken out\n• **The Question That Accuses** — shaped like a question, said like a charge\n• **Talking Down** — an explanation delivered as if to a child\n• **The Clipped Reply** — one flat word, and a door closes\n• **Sharp in Writing** — no voice to hear, so you fill in the tone\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Bark, The Question That Accuses, Talking Down, The Clipped Reply, and Sharp in Writing.", bundle: 'pro' },
+        { q: "What goes wrong with The Bark?", a: "You react to the bark and forget the request: you refuse, or you do it in silence and resent it.", bundle: 'pro' },
+        { q: "Which strategy is built for The Bark?", a: "Ask for the Ask — yes to the task, and one light request about how it is asked.", bundle: 'pro' },
+        { q: "What is the main strategy for The Question That Accuses?", a: "Check What It Was: was it a question or a criticism?", bundle: 'pro' },
+        { q: "What should you avoid with Talking Down?", a: "Proving you know more than them. You can just say how it sounded.", bundle: 'pro' },
+        { q: "What should you avoid with The Clipped Reply?", a: "Asking \"what's wrong\" over and over until it turns into a fight.", bundle: 'pro' },
+        { q: "Why is Check What It Was especially useful in writing?", a: "You cannot hear the voice, so the tone you hear is often your own guess.", bundle: 'pro' },
+        { q: "What is the one thing to avoid with Sharp in Writing?", a: "Sending the reply you wrote while angry.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Giving In** — replying to the words means accepting the tone\n• **Snapping Back** — matching their tone is only fair\n• **Thin Skin** — maybe I'm just too sensitive to tone\n• **Rank** — you can't mention the tone of someone above you\n• **Pettiness** — the words were fine, so mentioning tone is petty\n\nEach one makes the tone harder to deal with calmly.",
+      cards: [
+        { q: "What are the five mindsets in this pack?", a: "Giving In, Snapping Back, Thin Skin, Rank, and Pettiness.", bundle: 'pro' },
+        { q: "What is true instead of \"replying to the words means accepting the tone\"?", a: "Replying to the words is a choice about what to deal with first. It says nothing about what you accept.", bundle: 'pro' },
+        { q: "What does snapping back quietly cost?", a: "Two sharp people instead of one, the matter forgotten, and a habit that is hard to break.", bundle: 'pro' },
+        { q: "What is true about \"maybe I'm too sensitive to tone\"?", a: "You might be. What gets added is \"so I shouldn't say anything\".", bundle: 'pro' },
+        { q: "Why does doubt not have to mean silence?", a: "Every strategy in this pack works without being sure, and Check What It Was is built for doubt.", bundle: 'pro' },
+        { q: "What does rank change?", a: "How you say it, not whether you can.", bundle: 'pro' },
+        { q: "Why is mentioning tone not petty?", a: "Tone is half of what was said. \"Fine\" said flat and \"fine\" said warmly are two different messages.", bundle: 'pro' },
+        { q: "What do these five mindsets have in common?", a: "Each one makes the tone harder to deal with calmly.", bundle: 'pro' },
+      ]
+    },
+  ],
+  toneboundaries3: [
+    {
+      name: "Core Idea",
+      description: "Six follow-up strategies for when you have asked for a normal voice and they deny it, explain it, turn it on you, or keep going:\n\n1. Describe, Don't Debate\n2. Grant the Reason, Keep the Line\n3. Repeat the Line\n4. Call a Pause\n5. Name the Consequence\n6. Follow Through\n\nThree for pushback on your words, three for when it keeps going.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Describe, Don't Debate; Grant the Reason, Keep the Line; Repeat the Line; Call a Pause; Name the Consequence; and Follow Through.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Three answer pushback on your words. Three are for when it keeps going: pause, warn, and do it.", bundle: 'free' },
+        { q: "What does every card in this pack train?", a: "Your second line — what you say after you have already asked for a calmer tone, and they push back or keep going.", bundle: 'free' },
+        { q: "What should you ask yourself first?", a: "What did they just do: deny it, explain it, argue with my line, or simply keep going?", bundle: 'free' },
+        { q: "What do all six strategies have in common?", a: "They keep your line without raising your voice or debating it.", bundle: 'free' },
+        { q: "What is the most common mistake after pushback on the tone?", a: "Getting louder to be heard, or arguing about whether it is shouting.", bundle: 'pro' },
+        { q: "How does this pack relate to Pt. 4?", a: "Pt. 3 is for when they push back or keep going. Pt. 4 is for after the storm, when it has calmed down — or comes back.", bundle: 'pro' },
+        { q: "Where does the idea behind Repeat the Line come from?", a: "The Broken Record, from Manuel J. Smith's When I Say No, I Feel Guilty (1975).", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Describe, Don't Debate",
+      description: "",
+      cards: [
+        { q: "What is Describe, Don't Debate?", a: "Saying how the tone sounds to you, instead of arguing about whether it is shouting.", bundle: 'free' },
+        { q: "How does Describe, Don't Debate sound?", a: "\"Maybe it doesn't feel loud to you. It does to me.\"", bundle: 'free' },
+        { q: "When is Describe, Don't Debate the right one?", a: "When they deny the tone: \"I'm not shouting!\"", bundle: 'free' },
+        { q: "Why does Describe, Don't Debate work?", a: "Nobody can tell you how loud it sounds to you, so there is nothing left to deny.", bundle: 'free' },
+        { q: "What are the three ways to describe it?", a: "Their view and yours, what it does to you, and letting them keep the word.", bundle: 'free' },
+        { q: "When does Describe, Don't Debate go wrong?", a: "When it turns into a verdict — \"You're shouting and you know it.\"", bundle: 'pro' },
+        { q: "What is Describe, Don't Debate better than, and why?", a: "Arguing about the word. That argument has no judge, and it is always louder than the first one.", bundle: 'pro' },
+        { q: "Which strategy often follows Describe, Don't Debate?", a: "Repeat the Line — if they keep arguing, say the same sentence again.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Grant the Reason, Keep the Line",
+      description: "",
+      cards: [
+        { q: "What is Grant the Reason, Keep the Line?", a: "Accepting their reason for the tone, and keeping your line anyway.", bundle: 'free' },
+        { q: "How does Grant the Reason, Keep the Line sound?", a: "\"You might well be exhausted. I still need us to talk normally.\"", bundle: 'free' },
+        { q: "When is Grant the Reason, Keep the Line the right one?", a: "When they justify the tone: \"You'd shout too if you'd had my day.\"", bundle: 'free' },
+        { q: "Why does Grant the Reason, Keep the Line work?", a: "Granting the reason stops them defending it, and \"still\" carries the line through.", bundle: 'free' },
+        { q: "What are the three ways to grant the reason?", a: "Grant the day, grant the point, and grant the label.", bundle: 'free' },
+        { q: "When does Grant the Reason, Keep the Line go wrong?", a: "When the second half is missing. Granting the reason alone sounds like saying the shouting was fine.", bundle: 'pro' },
+        { q: "What is Grant the Reason, Keep the Line better than, and why?", a: "Arguing with the reason. The true half of it makes you look cold.", bundle: 'pro' },
+        { q: "Which variant of Grant the Reason, Keep the Line is Fogging?", a: "Grant the label — \"You might be right that I'm sensitive. I'd still like a normal voice.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Repeat the Line",
+      description: "",
+      cards: [
+        { q: "What is Repeat the Line?", a: "Saying the same sentence again, in the same calm tone, without new reasons.", bundle: 'free' },
+        { q: "How does Repeat the Line sound?", a: "\"I want to hear this. Not like this.\"", bundle: 'free' },
+        { q: "When is Repeat the Line the right one?", a: "When they argue with your line itself.", bundle: 'free' },
+        { q: "Why does Repeat the Line work?", a: "Every new reason is a new thing to argue with. The same short sentence gives them nothing to grab.", bundle: 'free' },
+        { q: "What are the three ways to repeat it?", a: "Word for word, with a short nod first, and shorter each time.", bundle: 'free' },
+        { q: "When does Repeat the Line go wrong?", a: "When it gets louder or faster each time. Then it becomes a fight.", bundle: 'pro' },
+        { q: "What is Repeat the Line better than, and why?", a: "Finding a new argument. A long answer invites a long reply.", bundle: 'pro' },
+        { q: "Which strategy often follows Repeat the Line?", a: "Name the Consequence — if it still goes on, say what you will do.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Call a Pause",
+      description: "",
+      cards: [
+        { q: "What is Call a Pause?", a: "Suggesting a break, and saying when you will come back.", bundle: 'free' },
+        { q: "How does Call a Pause sound?", a: "\"Let's stop for ten minutes. I'll come back at half past.\"", bundle: 'free' },
+        { q: "When is Call a Pause the right one?", a: "When it keeps going or keeps rising, and it could work later.", bundle: 'free' },
+        { q: "Why does Call a Pause work?", a: "Heat drops with time, and the time to come back shows the conversation is not over.", bundle: 'free' },
+        { q: "What are the three ways to call a pause?", a: "Minutes, later today or tomorrow, and until you can stop.", bundle: 'free' },
+        { q: "When does Call a Pause go wrong?", a: "When there is no time to come back, or you don't come back when you said you would.", bundle: 'pro' },
+        { q: "What is Call a Pause better than, and why?", a: "Walking out with no word. Without a time, a pause feels like being left.", bundle: 'pro' },
+        { q: "What makes a pause different from a walk-out?", a: "The time. A pause says when you will come back.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name the Consequence",
+      description: "",
+      cards: [
+        { q: "What is Name the Consequence?", a: "Saying calmly what you will do if it carries on.", bundle: 'free' },
+        { q: "How does Name the Consequence sound?", a: "\"If it stays at this volume, I'll end the call.\"", bundle: 'free' },
+        { q: "When is Name the Consequence the right one?", a: "When you have already asked, and it keeps going.", bundle: 'free' },
+        { q: "Why does Name the Consequence work?", a: "It is a plan about your own action, not an order to them, so it gives fair warning and a real choice.", bundle: 'free' },
+        { q: "What are the three kinds of consequence?", a: "End the call, leave the room, and change how you talk — for example, by email.", bundle: 'free' },
+        { q: "When does Name the Consequence go wrong?", a: "When it is a threat or a punishment, or something you won't really do.", bundle: 'pro' },
+        { q: "What is Name the Consequence better than, and why?", a: "Asking again and again. A request can be ignored; a plan is yours.", bundle: 'pro' },
+        { q: "Which strategy follows Name the Consequence if it keeps going?", a: "Follow Through — do what you said.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Follow Through",
+      description: "",
+      cards: [
+        { q: "What is Follow Through?", a: "Doing what you said you would do — briefly, with an offer to come back.", bundle: 'free' },
+        { q: "How does Follow Through sound?", a: "\"I said I'd hang up. I'm going to. I'll call you tonight.\"", bundle: 'free' },
+        { q: "When is Follow Through the right one?", a: "When you have said what you will do, and it keeps happening.", bundle: 'free' },
+        { q: "Why does Follow Through work?", a: "People learn what your line means from what you do. Do it once, and next time the warning is enough.", bundle: 'free' },
+        { q: "What are the three ways to follow through?", a: "End the call, leave the room, and change the channel.", bundle: 'free' },
+        { q: "When does Follow Through go wrong?", a: "When it becomes a long goodbye, or a last word. A long exit is a new argument.", bundle: 'pro' },
+        { q: "Why does Follow Through include an offer to come back?", a: "It shows you are leaving the shouting, not the person.", bundle: 'pro' },
+        { q: "What should you do if you ever feel unsafe?", a: "Leave. That is not a communication problem, and you don't owe anyone a sentence first.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Answer the Pushback** — they denied it, explained it, or argued with your line: describe, grant, or repeat?\n• **Step Out Well** — it keeps going: pause, name the consequence, or follow through?\n• **All Six Strategies** — everything mixed, with no warning about the kind of reaction\n\nOne question decides nearly all of it: what did they just do?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Answer the Pushback, Step Out Well, and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Answer the Pushback?", a: "What did they push back on — the word, the reason, or the line?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Answer the Pushback?", a: "Debating — whether it is shouting, or whether their reason is good enough.", bundle: 'pro' },
+        { q: "They explain the tone with a real reason. Which strategy?", a: "Grant the Reason, Keep the Line.", bundle: 'pro' },
+        { q: "What is the question that decides Step Out Well?", a: "Have I already said what I will do? If not, pause or name it. If yes, do it.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Step Out Well?", a: "Walking out without a word, or warning again and again without doing it.", bundle: 'pro' },
+        { q: "You said you'd hang up if it carried on, and it carries on. Which strategy?", a: "Follow Through.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in All Six Strategies?", a: "Raising your own voice to be heard.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Full Hold** — Describe, Don't Debate → Repeat the Line → Call a Pause\n2. **The Clean Exit** — Repeat the Line → Name the Consequence → Follow Through\n3. **Grant, Pause, Go** — Grant the Reason, Keep the Line → Call a Pause → Follow Through\n\nIn each one, every step answers what they just did, and costs a little more than the step before.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Full Hold, The Clean Exit, and Grant, Pause, Go.", bundle: 'pro' },
+        { q: "What is the order in The Full Hold?", a: "Describe, Don't Debate; Repeat the Line; Call a Pause.", bundle: 'pro' },
+        { q: "Why does The Full Hold start by describing?", a: "It keeps you out of the argument about the word \"shouting\".", bundle: 'pro' },
+        { q: "What is the order in The Clean Exit?", a: "Repeat the Line; Name the Consequence; Follow Through.", bundle: 'pro' },
+        { q: "Why name the consequence before you follow through?", a: "Following through without a warning feels like a punishment. The warning makes it fair.", bundle: 'pro' },
+        { q: "What is the order in Grant, Pause, Go?", a: "Grant the Reason, Keep the Line; Call a Pause; Follow Through.", bundle: 'pro' },
+        { q: "Why grant the reason before calling a pause?", a: "It shows you are not against them, so the pause sounds like care, not escape.", bundle: 'pro' },
+        { q: "What is the usual mistake in all three?", a: "Arguing, then raising your voice, then leaving with no warning and no time to come back.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack — five kinds of reaction, and the follow-ups that fit:\n\n• **\"I'm Not Shouting!\"** — they deny the tone: describe your side, don't debate the word\n• **\"You Made Me\"** — they justify it: grant the reason, keep the line\n• **The Turnaround** — they make it about you: grant the label, or repeat the line\n• **It Gets Louder** — they keep going: pause, name the consequence, follow through\n• **You Can't Leave** — a car, a meeting, your boss: pause until you can stop\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "\"I'm Not Shouting!\", \"You Made Me\", The Turnaround, It Gets Louder, and You Can't Leave.", bundle: 'pro' },
+        { q: "What should you avoid with \"I'm Not Shouting!\"?", a: "Trying to prove that they are shouting.", bundle: 'pro' },
+        { q: "What is the main strategy for \"You Made Me\"?", a: "Grant the Reason, Keep the Line — yes to the reason, no to the tone.", bundle: 'pro' },
+        { q: "What should you avoid with \"You Made Me\"?", a: "Deciding whose fault the shouting is.", bundle: 'pro' },
+        { q: "What goes wrong in The Turnaround?", a: "Defending yourself, which starts a new argument about you while the shouting carries on.", bundle: 'pro' },
+        { q: "What should you avoid when It Gets Louder?", a: "Raising your voice to match theirs.", bundle: 'pro' },
+        { q: "What is the main strategy for You Can't Leave?", a: "Call a Pause — until you are parked, or after the meeting.", bundle: 'pro' },
+        { q: "What should you avoid when you can't leave?", a: "A consequence you can't carry out.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Winning** — if I end it now, they win\n• **Politeness** — leaving is rude\n• **Convincing** — I have to make them see it\n• **Explanations** — a boundary needs to be explained\n\nMost of them keep you in a loud conversation longer than it helps anyone.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Winning, Politeness, Convincing, and Explanations.", bundle: 'pro' },
+        { q: "What is true instead of \"if I end it now, they win\"?", a: "There is nothing to win while they are shouting. Stopping is how you get to the real conversation.", bundle: 'pro' },
+        { q: "What does staying while someone shouts teach them?", a: "That shouting gets your full attention.", bundle: 'pro' },
+        { q: "What is the polite version of leaving?", a: "A calm exit, with a time to come back.", bundle: 'pro' },
+        { q: "What is true instead of \"I have to make them see it\"?", a: "You don't need them to see it. You need the volume to change.", bundle: 'pro' },
+        { q: "What part of \"a boundary needs to be explained\" is true?", a: "One short reason can help them hear it.", bundle: 'pro' },
+        { q: "What gets added to that true part?", a: "The idea that the line only holds once they agree with it.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They keep you in a loud conversation longer than it helps anyone.", bundle: 'pro' },
+      ]
+    },
+  ],
+  toneboundaries4: [
+    {
+      name: "Core Idea",
+      description: "Six follow-up strategies for after the storm, when the raised voice has come down — or comes back:\n\n1. Thank the Shift\n2. Take the Apology\n3. Come Back as Promised\n4. Now Take Their Point\n5. Own Your Part\n6. Name the Pattern\n\nEach meets a different ending, and all six turn the calm into a real conversation.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Thank the Shift, Take the Apology, Come Back as Promised, Now Take Their Point, Own Your Part, and Name the Pattern.", bundle: 'free' },
+        { q: "What does this pack train?", a: "What you say after a sharp moment — when they calm down, apologise, you come back after a pause, you realise you were loud too, or it happens again.", bundle: 'free' },
+        { q: "Which two strategies answer the very first moment of calm?", a: "Thank the Shift when their voice drops, and Take the Apology when they say sorry.", bundle: 'free' },
+        { q: "Which two strategies are for later?", a: "Come Back as Promised after a pause, and Name the Pattern when the same tone keeps returning.", bundle: 'free' },
+        { q: "What is the aim of every follow-up in this pack?", a: "To make the calm voice the one that works — so the boundary holds and the subject gets solved.", bundle: 'free' },
+        { q: "How is this pack different from Passive Aggression Pt. 5, Handling Retreat?", a: "There, the problem was a hidden dig. Here, the sharpness was open — a raised voice or a sharp tone.", bundle: 'pro' },
+        { q: "Why does the tone boundary need a follow-up at all?", a: "If calming down gets them nothing, they learn that shouting was the only way to be heard.", bundle: 'pro' },
+        { q: "What do Now Take Their Point and Own Your Part have in common?", a: "Both keep the boundary fair: you refused the tone, not the person or their point.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Thank the Shift",
+      description: "",
+      cards: [
+        { q: "What is Thank the Shift?", a: "Noticing briefly, and without any victory, that their voice has come down.", bundle: 'free' },
+        { q: "How does Thank the Shift sound?", a: "\"Thanks. That's easier.\"", bundle: 'free' },
+        { q: "When is Thank the Shift the right one?", a: "When their voice drops after you asked for a calmer tone, before anything else has been said.", bundle: 'free' },
+        { q: "What does Thank the Shift protect?", a: "The calm. A small thanks makes the lower voice worth it, so it is more likely next time.", bundle: 'free' },
+        { q: "What are the three ways to thank the shift?", a: "The plain thanks, the thanks and the subject, and the shared reset.", bundle: 'free' },
+        { q: "When does Thank the Shift go wrong?", a: "When it sounds like a win — \"See? Wasn't that better?\" — and turns their climb-down into a defeat.", bundle: 'pro' },
+        { q: "What is Thank the Shift better than, and why?", a: "A lesson on how they spoke before. That makes calming down feel like losing.", bundle: 'pro' },
+        { q: "Which strategy often follows Thank the Shift?", a: "Now Take Their Point, once they say calmly what was wrong.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Take the Apology",
+      description: "",
+      cards: [
+        { q: "What is Take the Apology?", a: "Accepting their sorry cleanly, with no lecture, and going back to the subject.", bundle: 'free' },
+        { q: "How does Take the Apology sound?", a: "\"Thanks for saying that. So — Friday.\"", bundle: 'free' },
+        { q: "When is Take the Apology the right one?", a: "When they apologise for snapping or shouting.", bundle: 'free' },
+        { q: "What does Take the Apology protect?", a: "Their willingness to say sorry next time. An easy sorry is one they will say again.", bundle: 'free' },
+        { q: "What are the three ways to take it?", a: "The plain acceptance, the acceptance and the subject, and the fresh start.", bundle: 'free' },
+        { q: "When does Take the Apology go wrong?", a: "When the thanks turns into a lecture on how much it hurt.", bundle: 'pro' },
+        { q: "What is Take the Apology better than, and why?", a: "Asking for a better apology. They learn that saying sorry starts a second argument.", bundle: 'pro' },
+        { q: "What do you do with a half apology — \"Sorry, but…\"?", a: "Take the part that is there, and leave the \"but\" for later.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Come Back as Promised",
+      description: "",
+      cards: [
+        { q: "What is Come Back as Promised?", a: "Returning at the time you said after a pause, and opening the subject again.", bundle: 'free' },
+        { q: "How does Come Back as Promised sound?", a: "\"I said I'd come back. Shall we try again?\"", bundle: 'free' },
+        { q: "When is Come Back as Promised the right one?", a: "When you stopped a heated talk and said when you would return.", bundle: 'free' },
+        { q: "What does Come Back as Promised protect?", a: "The pause. If you come back when you said, they learn that stopping is safe.", bundle: 'free' },
+        { q: "What are the three ways to come back?", a: "Name the promise, reopen the subject, and check they are ready.", bundle: 'free' },
+        { q: "When does Come Back as Promised go wrong?", a: "When you come back late, or not at all, and the pause turns into walking out.", bundle: 'pro' },
+        { q: "What is Come Back as Promised better than, and why?", a: "Letting the calm silence carry on. The subject stays unsolved and comes back at the old volume.", bundle: 'pro' },
+        { q: "Which strategy often follows Come Back as Promised?", a: "Own Your Part if you were sharp too, then Now Take Their Point.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Now Take Their Point",
+      description: "",
+      cards: [
+        { q: "What is Now Take Their Point?", a: "Taking their actual concern seriously once the sharp tone has gone.", bundle: 'free' },
+        { q: "How does Now Take Their Point sound?", a: "\"You're right that the deadline's tight. What would help?\"", bundle: 'free' },
+        { q: "When is Now Take Their Point the right one?", a: "When they say calmly what they were shouting about.", bundle: 'free' },
+        { q: "What does Now Take Their Point protect?", a: "The calm voice. If speaking calmly gets them heard, they have no reason to shout.", bundle: 'free' },
+        { q: "What are the three ways to take their point?", a: "Name what is true, ask what would help, and put a step on it.", bundle: 'free' },
+        { q: "When does Now Take Their Point go wrong?", a: "When you hold the line on the tone and then ignore what they said.", bundle: 'pro' },
+        { q: "What is Now Take Their Point better than, and why?", a: "Treating the shouting as proof that they were wrong. A raised voice does not cancel a real concern.", bundle: 'pro' },
+        { q: "What does Now Take Their Point show about the boundary?", a: "That you were refusing the shouting, never refusing to hear them.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Own Your Part",
+      description: "",
+      cards: [
+        { q: "What is Own Your Part?", a: "Saying briefly that you got sharp too, and apologising only for your share.", bundle: 'free' },
+        { q: "How does Own Your Part sound?", a: "\"I got loud too. I'm sorry for that part.\"", bundle: 'free' },
+        { q: "When is Own Your Part the right one?", a: "When you raised your voice, snapped back, or were sarcastic as well.", bundle: 'free' },
+        { q: "What does Own Your Part protect?", a: "The fairness of the boundary. The rule then applies to you both.", bundle: 'free' },
+        { q: "What are the three ways to own it?", a: "Just your part, no \"but\", and owning it before going back to the subject.", bundle: 'free' },
+        { q: "When does Own Your Part go wrong?", a: "When it comes with \"but you started it\" — or grows into taking the blame for everything.", bundle: 'pro' },
+        { q: "What is Own Your Part better than, and why?", a: "Defending your tone, or dropping the boundary altogether. Owning it keeps you in the conversation.", bundle: 'pro' },
+        { q: "What often happens after you own your part?", a: "It becomes easier for them to own theirs.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name the Pattern",
+      description: "",
+      cards: [
+        { q: "What is Name the Pattern?", a: "Raising a repeated sharp tone in a calm moment, and agreeing how you will talk when it is tense.", bundle: 'free' },
+        { q: "How does Name the Pattern sound?", a: "\"It's the third time this month. Can we agree how we talk when it's tense?\"", bundle: 'free' },
+        { q: "When is Name the Pattern the right one?", a: "The third time, not the first — and when things are calm.", bundle: 'free' },
+        { q: "What does Name the Pattern protect?", a: "The relationship. A habit will not change one storm at a time.", bundle: 'free' },
+        { q: "What are the three ways to name the pattern?", a: "The pattern itself, the agreement, and the question behind it.", bundle: 'free' },
+        { q: "When does Name the Pattern go wrong?", a: "When it is said in the middle of the next storm, as \"You always do this!\"", bundle: 'pro' },
+        { q: "What is Name the Pattern better than, and why?", a: "Treating every storm as the first. Nothing changes.", bundle: 'pro' },
+        { q: "What should the pattern talk end with?", a: "An agreement you both say yes to — a signal, a pause, a time to come back.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Read the Calm** — the storm just ended: did the tone drop, did they apologise, are they making their point, or were you loud too?\n• **Pick It Back Up** — later: is this the return you promised, or a pattern to talk about?\n• **All Six Strategies** — everything mixed, with no warning about how the storm ended\n\nOne question decides nearly all of it: how did the storm end — and is this the first time?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Read the Calm, Pick It Back Up, and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Read the Calm?", a: "Did the tone drop, did they apologise, are they making their point, or did I get loud too?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Read the Calm?", a: "Stopping at the thanks, and leaving their point untouched.", bundle: 'pro' },
+        { q: "What is the question that decides Pick It Back Up?", a: "Is this the return I promised, or a habit we need to talk about?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Pick It Back Up?", a: "Naming the pattern when all you promised was to come back.", bundle: 'pro' },
+        { q: "What do you do when you realise you were sharp too?", a: "Own Your Part — briefly, and only your share.", bundle: 'pro' },
+        { q: "What two questions help in All Six Strategies?", a: "How did the storm end? And is this the first time?", bundle: 'pro' },
+        { q: "Which strategy answers the same tone coming back for the third time?", a: "Name the Pattern, in a calm moment.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Full Return** — Come Back as Promised → Own Your Part → Now Take Their Point\n2. **Calm, Then Heard** — Thank the Shift → Now Take Their Point → Take the Apology\n3. **The New Agreement** — Take the Apology → Name the Pattern → Now Take Their Point\n\nEach one ends in the same place: their point, taken seriously, once the tone has gone.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Full Return, Calm, Then Heard, and The New Agreement.", bundle: 'pro' },
+        { q: "What is the order in The Full Return?", a: "Come Back as Promised, then Own Your Part, then Now Take Their Point.", bundle: 'pro' },
+        { q: "Why does Own Your Part come before Now Take Their Point in The Full Return?", a: "It makes it easier for them to speak calmly, without bracing for round two.", bundle: 'pro' },
+        { q: "Why does Take the Apology come last in Calm, Then Heard?", a: "People rarely apologise until they feel heard.", bundle: 'pro' },
+        { q: "What is the usual wrong order in Calm, Then Heard?", a: "Waiting for an apology before you will listen to the point.", bundle: 'pro' },
+        { q: "What is The New Agreement for?", a: "A sorry you have heard before, and the calm talk that changes the habit.", bundle: 'pro' },
+        { q: "Why does Name the Pattern come later, not in the same breath as the apology?", a: "So it does not sound like \"your apology isn't good enough\".", bundle: 'pro' },
+        { q: "Where do all three sequences end?", a: "With their point taken seriously, once the tone has gone.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack — five ways things go after the storm, and the follow-up that fits each:\n\n• **The Sulky Calm** — quiet, with a sigh. Thank the lower voice and ignore the sulk.\n• **The Half Apology** — \"Sorry, but…\" Take the part that is there.\n• **It Happens Again** — the same tone, a week later. Name the pattern in the calm afterwards.\n• **You Got Loud Too** — the sharpness was not all theirs. Own your part.\n• **Nobody Mentions It** — everyone acts as if it never happened. Come back to it.\n\nName how the storm ended, and the follow-up is usually clear.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Sulky Calm, The Half Apology, It Happens Again, You Got Loud Too, and Nobody Mentions It.", bundle: 'pro' },
+        { q: "What should you avoid with a sulky calm?", a: "Commenting on the sulk. Thank the Shift, and ignore the sigh.", bundle: 'pro' },
+        { q: "What should you avoid with a half apology?", a: "Demanding a better one. Take the Apology — the part that is there.", bundle: 'pro' },
+        { q: "When do you name a pattern that keeps coming back?", a: "In the calm afterwards, never while they are still shouting.", bundle: 'pro' },
+        { q: "What should you avoid when you got loud too?", a: "\"I'm sorry, but you started it.\" Own Your Part, and stop there.", bundle: 'pro' },
+        { q: "What goes wrong when nobody mentions it?", a: "You join in the pretending, and the subject comes back at the old volume.", bundle: 'pro' },
+        { q: "Which strategy reopens a quiet morning without making it a trial?", a: "Now Take Their Point — through their concern, not their tone.", bundle: 'pro' },
+        { q: "Which challenge is about you, not them?", a: "You Got Loud Too.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Letting Go** — if I let it go, they'll do it again; true, but it need not happen in the same breath\n• **Apologies** — they should apologise properly; in fact, a welcome sorry leads to better ones\n• **Reopening** — bringing it up reopens the fight; in fact, calm is the safest time to talk\n• **Hypocrisy** — if I got loud too, I lost my say; in fact, owning it gives it back\n• **The Point** — they shouted, so I don't have to listen; in fact, the tone was the problem, not the point\n\nMost of them turn the calm after the storm into a second round.",
+      cards: [
+        { q: "What are the five mindsets in this pack?", a: "Letting Go, Apologies, Reopening, Hypocrisy, and The Point.", bundle: 'pro' },
+        { q: "What is true in \"if I let it go, they'll do it again\"?", a: "A raised voice that is never mentioned often returns. What gets added is that it must be dealt with right now.", bundle: 'pro' },
+        { q: "What does insisting on a proper apology cost?", a: "The next apology. Sorry becomes harder to say, and they stop trying.", bundle: 'pro' },
+        { q: "Why is a calm moment a good time to bring it up again?", a: "The fight was about the volume, and the volume has gone.", bundle: 'pro' },
+        { q: "What gives you back the right to a boundary after you got loud too?", a: "Owning your part.", bundle: 'pro' },
+        { q: "Does a raised voice cancel their point?", a: "No. The tone was the problem with how they said it, not with what they said.", bundle: 'pro' },
+        { q: "Which mindset feels like a strength?", a: "Apologies — having standards feels right, and it quietly costs the next sorry.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They turn the calm after the storm into a second round.", bundle: 'pro' },
+      ]
+    },
+  ],
+  networking1: [
+    {
+      name: "Core Idea",
+      description: "Seven strategies for a conversation at an event that carries on after it:\n\n1. What Brought You Here?\n2. The Three-Line Intro\n3. Ask What They're Working On\n4. Find the Overlap\n5. Offer Something First\n6. Make the Introduction\n7. Exit With a Next Step\n\nThey run from the first question to a plan to meet again, with giving in the middle.",
+      cards: [
+        { q: "What are the seven strategies in this pack?", a: "What Brought You Here?, The Three-Line Intro, Ask What They're Working On, Find the Overlap, Offer Something First, Make the Introduction, Exit With a Next Step.", bundle: 'free' },
+        { q: "What makes networking different from ordinary small talk?", a: "It has a purpose: a connection that carries on after the event.", bundle: 'free' },
+        { q: "How do the seven fit together?", a: "Three open the conversation, three give something in the middle, and one turns it into a plan.", bundle: 'free' },
+        { q: "What is the tone of every strategy in this pack?", a: "Curiosity and generosity. Never a pitch.", bundle: 'free' },
+        { q: "What should every good conversation at an event end with?", a: "One concrete next step — an email, a coffee, a link.", bundle: 'free' },
+        { q: "Which strategies open the conversation?", a: "What Brought You Here?, The Three-Line Intro and Ask What They're Working On.", bundle: 'pro' },
+        { q: "Which strategies give something?", a: "Find the Overlap, Offer Something First and Make the Introduction.", bundle: 'pro' },
+        { q: "What counts as a good evening at an event?", a: "One or two real conversations with a next step, not a pocket full of business cards.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What Brought You Here?",
+      description: "",
+      cards: [
+        { q: "In What Brought You Here?, what do you open with?", a: "The thing you both share — the event, the talk, the room — instead of yourself or a job title.", bundle: 'free' },
+        { q: "How can What Brought You Here? sound?", a: "\"What brought you here tonight?\" or \"What did you make of that talk?\"", bundle: 'free' },
+        { q: "Why is the event the best place to start?", a: "It is the one thing you definitely share, it is easy to answer, and it is not personal.", bundle: 'free' },
+        { q: "What does the answer tell you?", a: "What they came for — to learn, to hire, to meet people. That is usually the best thread in the conversation.", bundle: 'free' },
+        { q: "What are the three things to ask about?", a: "The reason they came, the content you both heard, and the setting.", bundle: 'free' },
+        { q: "When does What Brought You Here? go wrong?", a: "When it stays on the event and never moves on to the person.", bundle: 'pro' },
+        { q: "How is it different from a general opener about the situation?", a: "It has a purpose: finding out what they came for, because that is where the connection starts.", bundle: 'pro' },
+        { q: "Where does What Brought You Here? come in the sequences?", a: "First, in The Real Connection.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Three-Line Intro",
+      description: "",
+      cards: [
+        { q: "What are the three lines?", a: "Your name, what you do, and one thing they can hook on to.", bundle: 'free' },
+        { q: "How can The Three-Line Intro sound?", a: "\"I'm Sara. I teach English, and I'm building a language app on the side. What about you?\"", bundle: 'free' },
+        { q: "How long should it take?", a: "Under fifteen seconds.", bundle: 'free' },
+        { q: "What comes after the three lines?", a: "A question back, so they get the turn before you start a speech.", bundle: 'free' },
+        { q: "What are the three kinds of hook?", a: "Something current, something on the side, and something linked to the event.", bundle: 'free' },
+        { q: "What are the two usual mistakes?", a: "The CV — every job since school — and the shrug, \"oh, nothing exciting\".", bundle: 'pro' },
+        { q: "Why does the hook matter more than the title?", a: "People hear many titles at an event. They remember the hook, and it is the line they ask about.", bundle: 'pro' },
+        { q: "Where does The Three-Line Intro come in the sequences?", a: "First, in The Generous Start.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What They're Working On",
+      description: "",
+      cards: [
+        { q: "What do you ask about?", a: "What is happening now — a project, a problem, a plan — not the job title.", bundle: 'free' },
+        { q: "How can Ask What They're Working On sound?", a: "\"What are you working on at the moment?\"", bundle: 'free' },
+        { q: "Why is a job title hard to follow up?", a: "It is a label. A project gives you several places to go next.", bundle: 'free' },
+        { q: "Who is the wider version for?", a: "People without a neat job title: students, people between jobs, parents at home, freelancers.", bundle: 'free' },
+        { q: "What are the three ways to ask?", a: "About the project, the wider version — \"What's taking up your time?\" — and the problem or the next thing.", bundle: 'free' },
+        { q: "When does Ask What They're Working On go wrong?", a: "When it turns into an interview: question after question, and nothing of yours in return.", bundle: 'pro' },
+        { q: "What can it do with someone who only pitches?", a: "Asked about the hard part, it often brings out the person behind the pitch.", bundle: 'pro' },
+        { q: "Where does Ask What They're Working On come in the sequences?", a: "Second in The Real Connection, and first in Introduce, Then Leave.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Find the Overlap",
+      description: "",
+      cards: [
+        { q: "What is Find the Overlap?", a: "Saying out loud what you share: a problem, an interest, a place, a need.", bundle: 'free' },
+        { q: "How can Find the Overlap sound?", a: "\"I've been stuck on exactly that. How did you solve it?\"", bundle: 'free' },
+        { q: "Why does overlap matter?", a: "It gives two people a reason to talk again. Politeness alone does not.", bundle: 'free' },
+        { q: "Why do most overlaps go past unnoticed?", a: "Nobody names them.", bundle: 'free' },
+        { q: "What are the three kinds of overlap?", a: "The shared problem, the shared background, and the useful fit.", bundle: 'free' },
+        { q: "Which overlap is the strongest?", a: "The shared problem, because it gives you something to work on together.", bundle: 'pro' },
+        { q: "What is the useful fit?", a: "One of you has what the other is looking for.", bundle: 'pro' },
+        { q: "Where does Find the Overlap come in the sequences?", a: "Third in The Real Connection — it is what the next step is built on.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Offer Something First",
+      description: "",
+      cards: [
+        { q: "What is Offer Something First?", a: "Giving something small — a tip, a link, a name — with no request attached.", bundle: 'free' },
+        { q: "How can Offer Something First sound?", a: "\"There's a podcast on exactly that. I'll send you the link.\"", bundle: 'free' },
+        { q: "Where does the idea come from?", a: "Adam Grant's Give and Take: helping without keeping score.", bundle: 'free' },
+        { q: "What are the three things to offer?", a: "A tip, a resource, and a name.", bundle: 'free' },
+        { q: "What makes the offer work?", a: "That no ask comes after it.", bundle: 'free' },
+        { q: "When does Offer Something First go wrong?", a: "When it is followed by \"and maybe you could…\", which turns the gift into a trade.", bundle: 'pro' },
+        { q: "How is it different from Make the Introduction?", a: "Offering a name gives them a resource. Make the Introduction actually brings the two people together.", bundle: 'pro' },
+        { q: "Where does Offer Something First come in the sequences?", a: "In the middle of The Generous Start, after the intro and before the introduction.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Make the Introduction",
+      description: "",
+      cards: [
+        { q: "What is Make the Introduction?", a: "Connecting two people you have met, with both names and one reason to talk.", bundle: 'free' },
+        { q: "How can Make the Introduction sound?", a: "\"Dana, this is Leo. You're both starting mentoring schemes.\"", bundle: 'free' },
+        { q: "Why is the reason the important part?", a: "It gives them their first question. Without it, they just stand there.", bundle: 'free' },
+        { q: "What are the three ways to do it?", a: "Both present, ask first, and bring someone in.", bundle: 'free' },
+        { q: "What does it do for you?", a: "You are no longer the only link, so you can move on.", bundle: 'free' },
+        { q: "When should you ask first?", a: "When one of them might not want it, or is not standing nearby.", bundle: 'pro' },
+        { q: "What do you need to make a good introduction?", a: "Not importance — only to have listened to both people.", bundle: 'pro' },
+        { q: "Where does Make the Introduction come in the sequences?", a: "Last in The Generous Start, and in the middle of Introduce, Then Leave.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Exit With a Next Step",
+      description: "",
+      cards: [
+        { q: "What is Exit With a Next Step?", a: "Leaving warmly with one concrete next step: an email, a coffee, a link.", bundle: 'free' },
+        { q: "How can Exit With a Next Step sound?", a: "\"I'd love to continue this. Can I email you about the course?\"", bundle: 'free' },
+        { q: "Why does the next step matter?", a: "Without one, a good conversation usually ends in nothing.", bundle: 'free' },
+        { q: "What are the three kinds of next step?", a: "The send, the meeting, and the next time.", bundle: 'free' },
+        { q: "Why is \"let's stay in touch\" not enough?", a: "It is not a step. Nobody knows who does what, or when.", bundle: 'free' },
+        { q: "How is it different from an ordinary goodbye?", a: "An ordinary goodbye ends the talk. This one makes sure it carries on.", bundle: 'pro' },
+        { q: "What should a promise in an exit include?", a: "When you will do it — \"tonight\", \"on Monday\".", bundle: 'pro' },
+        { q: "Where does Exit With a Next Step come in the sequences?", a: "Last in The Real Connection and in Introduce, Then Leave.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Open the Door** — the first minute: whose turn is it, and what do you know?\n• **Be Useful** — the middle: who has the answer to what they just said?\n• **All Seven Strategies** — everything mixed: start, middle or end?\n\nOne question runs through all three: where are we in the conversation, and what did I just hear?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Open the Door, Be Useful, and All Seven Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Open the Door?", a: "Whose turn is it? No one has spoken, they asked about you, or they answered with a title.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Open the Door?", a: "Opening with \"So what do you do?\", which gets a label back and leaves you both stuck.", bundle: 'pro' },
+        { q: "Nobody has spoken yet, and you share the event. Which strategy?", a: "What Brought You Here?", bundle: 'pro' },
+        { q: "What is the question that decides Be Useful?", a: "Who has the answer to what they just said — both of us, me, or someone else in the room?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Be Useful?", a: "Turning their need into a sale. \"I could do that for you\" lands as a pitch.", bundle: 'pro' },
+        { q: "Someone else in the room has what they need. Which strategy?", a: "Make the Introduction.", bundle: 'pro' },
+        { q: "What is most often left out in All Seven Strategies?", a: "The end: a good talk, and no next step.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Real Connection** — What Brought You Here? → Ask What They're Working On → Find the Overlap → Exit With a Next Step\n2. **The Generous Start** — The Three-Line Intro → Offer Something First → Make the Introduction\n3. **Introduce, Then Leave** — Ask What They're Working On → Make the Introduction → Exit With a Next Step\n\nEach one ends with the conversation carrying on — with a plan, or with someone new.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Real Connection, The Generous Start, and Introduce, Then Leave.", bundle: 'pro' },
+        { q: "What is the order in The Real Connection?", a: "What Brought You Here?, Ask What They're Working On, Find the Overlap, Exit With a Next Step.", bundle: 'pro' },
+        { q: "Why does the overlap come before the exit?", a: "The next step is built on it. Without an overlap, the plan has nothing to stand on.", bundle: 'pro' },
+        { q: "What is the order in The Generous Start?", a: "The Three-Line Intro, Offer Something First, Make the Introduction.", bundle: 'pro' },
+        { q: "Why does the small offer come before the introduction?", a: "It shows you were listening. An introduction straight away can feel as if you are passing them on.", bundle: 'pro' },
+        { q: "What is the order in Introduce, Then Leave?", a: "Ask What They're Working On, Make the Introduction, Exit With a Next Step.", bundle: 'pro' },
+        { q: "Why ask what they are working on before introducing them?", a: "You can only introduce well once you know what they need.", bundle: 'pro' },
+        { q: "What do people usually do instead of these sequences?", a: "Talk for twenty minutes and part with \"lovely to meet you\" — and nothing else.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The six challenges to master in this pack:\n\n• **You Know No One** — every face is new, and nobody comes over\n• **A Closed Circle** — a tight group with no obvious way in\n• **Someone You Admire** — your mind goes blank, or fills with praise\n• **The Person Who Only Pitches** — every question becomes part of the sale\n• **Stuck With One Person** — the talk has run out, and leaving feels rude\n• **Online Event** — cameras off, silence, and a room that closes\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the six challenges in this pack?", a: "You Know No One, A Closed Circle, Someone You Admire, The Person Who Only Pitches, Stuck With One Person, and Online Event.", bundle: 'pro' },
+        { q: "What goes wrong when you know no one?", a: "Waiting for someone to come to you. At most events, nobody does.", bundle: 'pro' },
+        { q: "How do you join a closed circle?", a: "Wait for a pause, then ask about the talk or the event, and join their topic before yours.", bundle: 'pro' },
+        { q: "What should you avoid with someone you admire?", a: "A long speech of praise, or a big favour in the first minute.", bundle: 'pro' },
+        { q: "What should you never do with someone who only pitches?", a: "Pitch back. Then there are two sales talks and no conversation.", bundle: 'pro' },
+        { q: "What is the kindest way out when you are stuck with one person?", a: "Make the Introduction — leave them with someone, not alone.", bundle: 'pro' },
+        { q: "Why must the next step come early at an online event?", a: "The room can close at any moment, often before anyone has swapped details.", bundle: 'pro' },
+        { q: "Which strategy works in almost every challenge?", a: "Exit With a Next Step — every challenge is easier when the talk ends in a plan.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Authenticity** — \"networking is fake\" is half true; curiosity is not fake\n• **Worth** — you always have something to offer, even if it is small\n• **Intruding** — at an event, being talked to is the point\n• **Belonging** — most of the room met tonight\n\nEach one keeps you at the edge of the room.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Authenticity, Worth, Intruding, and Belonging.", bundle: 'pro' },
+        { q: "Which part of \"networking is fake\" is true?", a: "The pitching and the card collecting can be. A curious conversation is not.", bundle: 'pro' },
+        { q: "When is networking actually fake?", a: "When you pretend. Being curious is the cure.", bundle: 'pro' },
+        { q: "What can you offer if you feel you have nothing?", a: "A tip, a link, a name, or your full attention.", bundle: 'pro' },
+        { q: "Why does \"I'm bothering them\" feel right?", a: "Interrupting strangers is rude in daily life. An event is the one room where that rule does not apply.", bundle: 'pro' },
+        { q: "What does an email they can read in ten seconds cost them?", a: "Almost nothing. It is a kindness, not a nuisance.", bundle: 'pro' },
+        { q: "Why does everyone seem to know each other already?", a: "Groups that formed ten minutes ago look like old friends from the outside.", bundle: 'pro' },
+        { q: "What do these four mindsets have in common?", a: "Each one keeps you at the edge of the room.", bundle: 'pro' },
+      ]
+    },
+  ],
+  networking2: [
+    {
+      name: "Core Idea",
+      description: "Seven strategies for after you meet someone:\n\n1. Follow Up Within a Day\n2. Ask for Advice, Not a Favour\n3. Ask for Twenty Minutes\n4. Ask for an Introduction\n5. Reconnect After a Long Gap\n6. Stay in Touch Without an Ask\n7. Close the Loop\n\nOne follow-up, three small asks, three ways to stay close.",
+      cards: [
+        { q: "What are the seven strategies in this pack?", a: "Follow Up Within a Day, Ask for Advice, Not a Favour, Ask for Twenty Minutes, Ask for an Introduction, Reconnect After a Long Gap, Stay in Touch Without an Ask, and Close the Loop.", bundle: 'free' },
+        { q: "How do the seven fit together?", a: "One follow-up right after you meet, three small ways to ask, and three ways to stay in touch over time.", bundle: 'free' },
+        { q: "What is networking, in this pack?", a: "Building a relationship over time — not making one big request.", bundle: 'free' },
+        { q: "What do the three asks have in common?", a: "Each one is small, specific and easy to say no to.", bundle: 'free' },
+        { q: "What should most of your messages contain?", a: "Something for them — a detail, a promise kept, something useful or a thank-you — and no ask.", bundle: 'free' },
+        { q: "How is this pack different from Making Requests?", a: "Making Requests is about one request and its answer. This pack is about a relationship that lasts long after any request.", bundle: 'pro' },
+        { q: "How does this pack relate to Pt. 1?", a: "Pt. 1 is the conversation at the event. Pt. 2 is everything that happens after it.", bundle: 'pro' },
+        { q: "Which strategy makes people most likely to help you again?", a: "Close the Loop — because now they know their help mattered.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Follow Up Within a Day",
+      description: "",
+      cards: [
+        { q: "What is Follow Up Within a Day?", a: "A short message within a day of meeting, with one concrete detail from your talk and whatever you promised.", bundle: 'free' },
+        { q: "How does Follow Up Within a Day sound?", a: "\"Good to talk about your onboarding problem last night. Here's the article I mentioned.\"", bundle: 'free' },
+        { q: "Why within a day?", a: "Memory fades fast. The next morning they remember you; a week later you are one name among forty.", bundle: 'free' },
+        { q: "Why include a detail from the conversation?", a: "It shows it was a real conversation. \"Great to meet you\" could have been sent to anyone.", bundle: 'free' },
+        { q: "What are the three ways to follow up?", a: "Detail and delivery, detail and a thank-you, and detail and a small next step.", bundle: 'free' },
+        { q: "What should a first follow-up leave out?", a: "Any ask — no CV, no favour, no meeting request yet.", bundle: 'pro' },
+        { q: "What does a promise kept show?", a: "That you do what you say, which is what everything later is built on.", bundle: 'pro' },
+        { q: "When does a follow-up need an explanation?", a: "When it comes a month later instead of the next day.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for Advice, Not a Favour",
+      description: "",
+      cards: [
+        { q: "What is Ask for Advice, Not a Favour?", a: "Asking what they would do, or wish they had known, instead of asking for a job or a favour.", bundle: 'free' },
+        { q: "How does Ask for Advice, Not a Favour sound?", a: "\"If you were starting where I am, what would you do first?\"", bundle: 'free' },
+        { q: "Why does advice work better than a favour?", a: "Everyone has advice to give, and most people enjoy being asked. A favour puts them on the spot.", bundle: 'free' },
+        { q: "What are the three kinds of advice question?", a: "The first step, the mistake to avoid, and the choice between two options.", bundle: 'free' },
+        { q: "What often happens after someone gives advice?", a: "They start to want it to go well for you, and often offer more than you asked for.", bundle: 'free' },
+        { q: "When does Ask for Advice, Not a Favour go wrong?", a: "When it is a hidden request for a job. People notice.", bundle: 'pro' },
+        { q: "What is it better than, and why?", a: "Asking for a favour, because a no to a favour is awkward for both of you.", bundle: 'pro' },
+        { q: "Which strategy often follows Ask for Advice, Not a Favour?", a: "Close the Loop — telling them what you did with the advice.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for Twenty Minutes",
+      description: "",
+      cards: [
+        { q: "What is Ask for Twenty Minutes?", a: "Asking for a short conversation with a clear limit, and saying what you would like to hear about.", bundle: 'free' },
+        { q: "How does Ask for Twenty Minutes sound?", a: "\"Could I buy you a coffee for twenty minutes? I'd like to hear how you got into it.\"", bundle: 'free' },
+        { q: "What is this kind of conversation often called?", a: "An informational interview — you are there to learn, not to ask for a job.", bundle: 'free' },
+        { q: "Why give a number?", a: "\"Can we meet?\" sounds open-ended. A number makes it small and safe.", bundle: 'free' },
+        { q: "What are the three ways to ask?", a: "Coffee, a call, or questions in writing.", bundle: 'free' },
+        { q: "What makes them say yes next time?", a: "Keeping to the time you asked for.", bundle: 'pro' },
+        { q: "What do you offer when they are very busy?", a: "The smallest version: a few questions by email, answered whenever, or not at all.", bundle: 'pro' },
+        { q: "Why make it easy to say no?", a: "It shows you won't be hurt if they can't, which makes a yes easier too.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for an Introduction",
+      description: "",
+      cards: [
+        { q: "What is Ask for an Introduction?", a: "Asking someone you know to connect you with someone they know, and making it easy for them.", bundle: 'free' },
+        { q: "How does Ask for an Introduction sound?", a: "\"Would you be open to introducing me to Lena? I can send two lines you could forward.\"", bundle: 'free' },
+        { q: "What is a double opt-in introduction?", a: "Your contact asks the other person first whether they'd like to be introduced, and only then connects you.", bundle: 'free' },
+        { q: "Why offer to write the lines yourself?", a: "It takes the work off them, and the other person can say yes or no without awkwardness.", bundle: 'free' },
+        { q: "What are the three parts of a good request?", a: "Who and why, their comfort first, and the lines to forward.", bundle: 'free' },
+        { q: "What does an introduction cost your contact?", a: "A loan of their name.", bundle: 'pro' },
+        { q: "What do you do if they seem uneasy about it?", a: "Let it go, and ask if there's anyone they'd feel happier introducing you to.", bundle: 'pro' },
+        { q: "How is this different from introducing people in Pt. 1?", a: "In Pt. 1 you connect two people yourself. Here you ask someone to connect you.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Reconnect After a Long Gap",
+      description: "",
+      cards: [
+        { q: "What is Reconnect After a Long Gap?", a: "Getting back in touch after a long time, saying plainly that it's been a while, and giving a real reason.", bundle: 'free' },
+        { q: "How does Reconnect After a Long Gap sound?", a: "\"It's been ages — I saw your post about the school project and thought of you.\"", bundle: 'free' },
+        { q: "What did Levin, Walter and Murnighan find about old contacts?", a: "That quiet, old ties often bring fresher ideas than the people you talk to every week — and the trust is still there.", bundle: 'free' },
+        { q: "How much should you apologise for the gap?", a: "One line. Then the reason, then a light question.", bundle: 'free' },
+        { q: "What are the three real reasons to write?", a: "Something you saw, something that reminded you, or something you're working on.", bundle: 'free' },
+        { q: "When does Reconnect After a Long Gap go wrong?", a: "When the apology is so long that the gap becomes the main topic.", bundle: 'pro' },
+        { q: "What has usually stopped in a dormant tie?", a: "Only the habit of talking. The relationship is still there.", bundle: 'pro' },
+        { q: "How do most people feel when an old contact writes late?", a: "Glad they wrote at all.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stay in Touch Without an Ask",
+      description: "",
+      cards: [
+        { q: "What is Stay in Touch Without an Ask?", a: "Sending a contact something useful or kind now and then, with nothing attached.", bundle: 'free' },
+        { q: "How does Stay in Touch Without an Ask sound?", a: "\"Saw this and thought of our chat. No need to reply.\"", bundle: 'free' },
+        { q: "Why does a no-ask message stand out?", a: "Most people only hear from their network when someone needs something.", bundle: 'free' },
+        { q: "What does \"no need to reply\" do?", a: "It turns the message into a gift instead of a task.", bundle: 'free' },
+        { q: "What are the three kinds of no-ask message?", a: "Something useful, a congratulation, and a question about their news.", bundle: 'free' },
+        { q: "Which book describes givers building strong networks?", a: "Adam Grant's Give and Take.", bundle: 'pro' },
+        { q: "What ruins a no-ask message?", a: "A \"by the way, do you know anyone…\" at the end.", bundle: 'pro' },
+        { q: "How does this help when you do need something one day?", a: "Your request does not come out of nowhere. It comes from someone who has been generous.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Close the Loop",
+      description: "",
+      cards: [
+        { q: "What is Close the Loop?", a: "Telling someone who helped you what happened, and thanking them.", bundle: 'free' },
+        { q: "How does Close the Loop sound?", a: "\"I took your advice and called Lena. We're meeting next week — thank you.\"", bundle: 'free' },
+        { q: "Why does it matter so much?", a: "People almost never find out whether their help made a difference.", bundle: 'free' },
+        { q: "What are the three times to close the loop?", a: "Right after, when it pays off, and when it didn't work out.", bundle: 'free' },
+        { q: "Should you close the loop if it didn't work out?", a: "Yes. \"It didn't come to anything, but I learned a lot\" is still worth sending.", bundle: 'free' },
+        { q: "What does closing the loop do for next time?", a: "It makes them far more likely to help again, because they know their time was well spent.", bundle: 'pro' },
+        { q: "Is it ever too late to close the loop?", a: "Rarely. \"A year late, but I wanted you to know\" still lands.", bundle: 'pro' },
+        { q: "What does Close the Loop turn one good turn into?", a: "A relationship.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Choose Your Ask** — their experience, their time, or someone they know?\n• **Keep It Warm** — met yesterday, not spoken for years, nothing to ask, or something to report?\n• **All Seven Strategies** — everything mixed, from the first note to the last thank-you\n\nOne question decides most of it: when did we last speak, and do I need something right now?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Choose Your Ask, Keep It Warm, and All Seven Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Choose Your Ask?", a: "What does this person have that I need — their experience, their time, or their contacts?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Choose Your Ask?", a: "The introduction first, before they know what you are doing or why.", bundle: 'pro' },
+        { q: "Someone offers to help, and one question would be enough. Which strategy?", a: "Ask for Advice, Not a Favour.", bundle: 'pro' },
+        { q: "What is the question that decides Keep It Warm?", a: "When did we last speak, and did they help me with something?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Keep It Warm?", a: "Adding a small ask at the end, which turns a gift into a request.", bundle: 'pro' },
+        { q: "Someone helped you, and you know how it turned out. Which strategy?", a: "Close the Loop.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in All Seven Strategies?", a: "An ask, when a no-ask message was what the moment needed.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Full Follow-Up** — Follow Up Within a Day → Ask for Advice, Not a Favour → Close the Loop\n2. **Back in Touch** — Reconnect After a Long Gap → Ask for Twenty Minutes → Ask for an Introduction\n3. **The Long Game** — Stay in Touch Without an Ask → Ask for an Introduction → Close the Loop\n\nIn each one, something is given before anything is asked.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Full Follow-Up, Back in Touch, and The Long Game.", bundle: 'pro' },
+        { q: "What is the order in The Full Follow-Up?", a: "Follow Up Within a Day, Ask for Advice, Not a Favour, Close the Loop.", bundle: 'pro' },
+        { q: "Why does the follow-up come before the question?", a: "It makes you a real person to them, so the question feels natural rather than cold.", bundle: 'pro' },
+        { q: "What is the order in Back in Touch?", a: "Reconnect After a Long Gap, Ask for Twenty Minutes, Ask for an Introduction.", bundle: 'pro' },
+        { q: "Why not ask for the introduction in the first message after years of silence?", a: "The old trust needs one warm message first, and an introduction only makes sense once they know what you do now.", bundle: 'pro' },
+        { q: "What is the order in The Long Game?", a: "Stay in Touch Without an Ask, Ask for an Introduction, Close the Loop.", bundle: 'pro' },
+        { q: "What do the no-ask messages do in The Long Game?", a: "They mean the request does not come out of nowhere.", bundle: 'pro' },
+        { q: "What do all three sequences have in common?", a: "Something is given before anything is asked.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack — five ways keeping in touch gets hard:\n\n• **No Reply** — silence: send something useful, or make the ask smaller\n• **It's Been a Year** — the gap: say so plainly, with a real reason\n• **They Can't Help** — a kind no: ask for advice instead, or thank them anyway\n• **A Cold Message** — a stranger: one short question, no job request\n• **You Only Got in Touch When You Needed Something** — be honest about why you are writing\n\nEach one tempts you to either give up or push too hard.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "No Reply, It's Been a Year, They Can't Help, A Cold Message, and You Only Got in Touch When You Needed Something.", bundle: 'pro' },
+        { q: "What does silence usually mean?", a: "A busy week, not an answer about you.", bundle: 'pro' },
+        { q: "What should you avoid with No Reply?", a: "\"Just checking you got my last three messages.\"", bundle: 'pro' },
+        { q: "What should you avoid with It's Been a Year?", a: "Pretending no time has passed — or a whole paragraph of apology.", bundle: 'pro' },
+        { q: "What should you avoid with They Can't Help?", a: "Treating \"I can't\" as \"I won't\".", bundle: 'pro' },
+        { q: "Which strategy fits They Can't Help best?", a: "Ask for Advice, Not a Favour — it asks for what they can always give.", bundle: 'pro' },
+        { q: "What should you avoid in A Cold Message?", a: "Asking for a job in the first message.", bundle: 'pro' },
+        { q: "What should you avoid when you only got in touch because you need something?", a: "Pretending it's a social call.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Pushiness** — following up is pushy\n• **Time Gaps** — too much time has passed\n• **News** — I'll only get in touch when I have news\n• **Needing Help** — asking for advice makes me look weak\n\nAll four end the same way: you stay quiet, and the contact fades.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Pushiness, Time Gaps, News, and Needing Help.", bundle: 'pro' },
+        { q: "What is true instead of \"following up is pushy\"?", a: "A short follow-up is normal and usually welcome. It shows you were listening.", bundle: 'pro' },
+        { q: "What is actually pushy?", a: "Asking again after a no — not a thank-you note.", bundle: 'pro' },
+        { q: "What is true instead of \"too much time has passed\"?", a: "Old contacts are often glad to hear from you, and the trust is usually still there.", bundle: 'pro' },
+        { q: "What is a complete explanation for a long silence?", a: "\"It's been a while.\"", bundle: 'pro' },
+        { q: "What does waiting for real news quietly cost?", a: "When you finally write, it's to someone who barely remembers you.", bundle: 'pro' },
+        { q: "What is true instead of \"asking for advice makes me look weak\"?", a: "It usually makes people think better of you. It shows you take the work seriously.", bundle: 'pro' },
+        { q: "What do all four mindsets have in common?", a: "They keep you quiet, and the contact fades.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

@@ -72,6 +72,7 @@ const GRID_PACKS = new Set([
   'describeactions',
   'supercomm1', 'supercomm2',
   'passiveaggression2', 'passiveaggression3',
+  'toneboundaries1', 'toneboundaries2',
 ]);
 window.dsIsGridPack = key => GRID_PACKS.has(key);
 
@@ -783,7 +784,13 @@ applyInputCounterVisibility();
     passiveaggression2: { label: 'Responding to Passive Aggression — Pt. 2: Bring It Into the Open', minLevel: 'program' }, // Handling Passive Aggression, Part 2 (v1.29.51)
     passiveaggression3: { label: 'Responding to Passive Aggression — Pt. 3: Change the Frame', minLevel: 'program' }, // Handling Passive Aggression, Part 3 (v1.29.51)
     passiveaggression4: { label: 'Responding to Passive Aggression — Pt. 4: Handling Pushback', minLevel: 'program' }, // Handling Passive Aggression, Part 4 (v1.29.51)
-    passiveaggression5: { label: 'Responding to Passive Aggression — Pt. 5: Handling Retreat', minLevel: 'program' }, // Handling Passive Aggression, Part 5 (v1.29.51)
+    passiveaggression5: { label: 'Responding to Passive Aggression — Pt. 5: Handling Retreat', minLevel: 'program' }, // Handling Passive Aggression, Part 5 (v1.29.51),
+    toneboundaries1: { label: 'Tone Boundaries — Pt. 1: When the Volume Rises', minLevel: 'complete' },
+    toneboundaries2: { label: 'Tone Boundaries — Pt. 2: When the Tone Changes the Words', minLevel: 'complete' },
+    toneboundaries3: { label: 'Tone Boundaries — Pt. 3: Holding the Line', minLevel: 'complete' },
+    toneboundaries4: { label: 'Tone Boundaries — Pt. 4: After the Storm', minLevel: 'complete' },
+    networking1: { label: 'Networking — Pt. 1: At the Event', minLevel: 'complete' },
+    networking2: { label: 'Networking — Pt. 2: After the Event', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -3765,6 +3772,90 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
+  toneboundaries1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  toneboundaries2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  toneboundaries3: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  toneboundaries4: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  networking1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  networking2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
 };
 window.BUNDLE_DEFS = BUNDLE_DEFS;
 
@@ -4702,6 +4793,7 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.55', date: 'October 2026', title: 'Tone Boundaries Pt. 1\u20134 and Networking Pt. 1\u20132', audience: 'dev', items: ['Six new Deckstack Originals, built after <em>_Plan \u2014 Tone Boundaries och Networking.md</em> (four parallel builders, then check-pack: 0 errors, 0 warnings each), imported at <strong>complete</strong> until Rikard has tested them.', '<strong>Tone Boundaries</strong> (Assertiveness &amp; Pressure): Pt. 1 When the Volume Rises (<code>toneboundaries1</code>, grid) and Pt. 2 When the Tone Changes the Words (<code>toneboundaries2</code>, grid) are first strategies for direct sharpness \u2014 a raised voice, an order where a request should be. Both also sit under Asking &amp; Saying No. Pt. 3 Holding the Line and Pt. 4 After the Storm are follow-up strategies: when they push back or keep going, and once it has calmed down or comes back.', '<strong>Networking</strong> under a new topic, <strong>Networking &amp; Career</strong> (<code>networking</code>): Pt. 1 At the Event and Pt. 2 After the Event.', 'GRID_PACKS gains toneboundaries1 and toneboundaries2. Kartan: all 93 new decks tagged; new subtype <code>starting.networking</code>.'] },
   { version: 'v1.29.54', date: 'October 2026', title: 'Progress \u2014 space under the banner', audience: 'dev', items: ['The first card on the Progress screen sat almost against the banner. <code>.progress-scroll</code> top padding 8px \u2192 18px.'] },
   { version: 'v1.29.53', date: 'October 2026', title: 'Progress \u2014 Rikard\u2019s adjustments', audience: 'dev', items: ['The calendar is month-only, with no view switch and no week-number column, as in the design; the line under it explaining the rings is gone. The goal-day summary stays.', '<em>Where your time went</em> has a Week / Month switch again (<code>prog_period</code>): Week is this calendar week, Month is the month the calendar shows.', 'Topics start collapsed: only the topic and its minutes. Tapping a topic folds out one row per pack trained under it, with its own minutes and bar; tapping again folds it away.'] },
   { version: 'v1.29.52', date: 'October 2026', title: 'Progress screen rebuilt \u2014 Goal first', audience: 'dev', items: ['The Progress screen follows design 2, <em>Goal first</em> (canvas \u201cDeckstack Progress \u2014 designf\u00f6rslag\u201d). A big ring for today, a row of day rings for this calendar week, a This week card (weekly goal, goal days, streak), a calendar of day rings (Week / 2 weeks / Month) with a goal-day summary, <em>Where your time went</em> by Topics or Packs, and an All time row (minutes, goal days, sessions). The intro sentence, the separate weekly and daily rings, the Squares/Bars switch and the Week/Month toggle are gone.', 'Rings fill toward <code>dailyRef()</code>: the daily goal, or the weekly goal / 7 when none is set. <strong>This week</strong> is now the calendar week (Mon\u2013Sun), not the last seven days.', 'Where your time went follows the period the calendar shows. A pack in several topics counts in each (Rikard\u2019s call), so topic rows can add up to more than the total; packs with no topic go under Other. Choice stored in <code>prog_time_split</code>.', 'Streak: new mode <code>goal</code> (Reached my daily goal), now the default; a one-time migration (<code>prog_streak_goal_v1</code>) moves the old default <code>card</code> to it and leaves <code>time</code> alone. Today no longer breaks the streak before it is over.', 'New token <code>--ds-ring-track</code> (light and dark). No new session data: everything is computed from <code>prog_sessions</code>.'] },

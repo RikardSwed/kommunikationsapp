@@ -12282,4 +12282,432 @@ const mindsetCollections = {
       ]
     },
   ],
+  toneboundaries1: [
+    {
+      name: "Staying Calm",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I stay calm, they win.\" The fear that a calm voice looks like giving in.\n\nWhat is true instead: calm is not agreeing. It is keeping control of your side of the conversation.\n\nIt feels reasonable because in the moment, loud feels strong and quiet feels like losing.\n\nWhat it costs is a shouting match where nobody wins, and the real problem gets forgotten under the noise.\n\nMindset: calm is not giving in. It is choosing how this goes.",
+      inputs: [
+        { q: "If I stay calm, they win.", a: "\"Staying calm isn't agreeing; it's keeping hold of my side of this.\"", bundle: 'pro' },
+        { q: "They'll think they can walk all over me.", a: "\"Calm with a clear line is the opposite of being walked over.\"", bundle: 'pro' },
+        { q: "Quiet looks weak.", a: "\"A quiet, steady voice is usually the strongest one in the room.\"", bundle: 'pro' },
+        { q: "They need to see that I'm angry too.", a: "\"I can say I'm angry in a normal voice, and they'll hear it better.\"", bundle: 'pro' },
+        { q: "If I don't match them, they'll take over.", a: "\"The person who stays calm is the one who gets to steer.\"", bundle: 'pro' },
+        { q: "Being calm means I'm letting it go.", a: "\"I can be calm and still say this isn't okay.\"", bundle: 'pro' },
+        { q: "They'll think I don't care.", a: "\"Keeping my voice low shows I care enough not to make it worse.\"", bundle: 'pro' },
+        { q: "Someone has to show them they can't do this.", a: "\"A calm line shows them that better than any shout.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Shouting Back",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"Raising my voice back is standing up for myself.\" A belief that feels like courage.\n\nWhat is true instead: you can stand up for yourself in a normal voice. Shouting back mostly turns their outburst into a shared fight.\n\nIt feels reasonable because nobody wants to be a pushover, and matching the volume feels like refusing to back down.\n\nWhat it costs is quiet and slow: the volume becomes the topic, what you wanted to say gets lost, and people around you learn that this is how you argue.\n\nMindset: standing up for yourself does not need a raised voice.",
+      inputs: [
+        { q: "Raising my voice back is standing up for myself.", a: "\"It also turns their outburst into our fight, and then nobody hears what I wanted to say.\"", bundle: 'pro' },
+        { q: "I won't let anyone shout me down.", a: "\"Shouting louder lets them decide how loud this conversation gets.\"", bundle: 'pro' },
+        { q: "At least I'm not a pushover.", a: "\"I've swapped being a pushover for being half of a shouting match.\"", bundle: 'pro' },
+        { q: "I'm just giving as good as I get.", a: "\"Then the volume becomes the topic, and the real problem waits.\"", bundle: 'pro' },
+        { q: "If I don't shout, they won't take me seriously.", a: "\"When I shout, the thing they take seriously is the shouting.\"", bundle: 'pro' },
+        { q: "I'm only loud because they were.", a: "\"Afterwards, nobody remembers who started; they remember that we both shouted.\"", bundle: 'pro' },
+        { q: "Being loud gets results.", a: "\"It gets a quick result and a slow cost: people stop telling me things.\"", bundle: 'pro' },
+        { q: "Fighting fire with fire is fair.", a: "\"Fire with fire just means more fire, and I'm standing in it too.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Calming Them Down",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"It's my job to calm them down.\" A belief that is partly true, which is what makes it hard to put down.\n\nWhat is true: you can help. A low voice and a kind word often do bring someone down.\n\nWhat gets added is \"it's my job\". Their temper is theirs. You are responsible for how you speak, not for how they feel. And if you ever feel unsafe, leaving is the right response. That is not a communication problem to solve.\n\nWhat it costs is you: walking on eggshells, staying too long, and blaming yourself when they stay angry.\n\nMindset: keep the kindness. Drop the job.",
+      inputs: [
+        { q: "It's my job to calm them down.", a: "\"True, I can help — but 'it's my job' is the part I added.\"", bundle: 'pro' },
+        { q: "If they're still angry, I've failed.", a: "\"True, I wanted it calmer — but 'so I failed' is the part I added.\"", bundle: 'pro' },
+        { q: "If I just find the right words, they'll stop.", a: "\"True, words can help — but 'the right words will always fix it' is the part I added.\"", bundle: 'pro' },
+        { q: "We live together, so their mood is my problem.", a: "\"True, we share a home — but 'so I carry their mood' is the part I added.\"", bundle: 'pro' },
+        { q: "A good team player smooths things over.", a: "\"True, smoothing helps — but 'at any cost to me' is the part I added.\"", bundle: 'pro' },
+        { q: "I have to stay until they've calmed down.", a: "\"True, sometimes — but 'no matter what' is the part I added, and if I feel unsafe, I leave.\"", bundle: 'pro' },
+        { q: "They're upset, so I must have done something wrong.", a: "\"True, maybe I did — but 'so I deserve to be shouted at' is the part I added.\"", bundle: 'pro' },
+        { q: "I should have seen it coming and stopped it.", a: "\"True, I might spot the signs — but 'so it's on me' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Making It Worse",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Saying something will make it worse.\" The fear that mentioning the volume will only add fuel.\n\nWhat is true instead: one calm, short sentence rarely makes it worse. What makes it worse is the silence that builds until you shout too.\n\nIt feels reasonable because they are already angry, and anything you say might be the thing that sets them off.\n\nWhat it costs is the lesson they learn: that shouting at you works, and costs nothing.\n\nMindset: a calm word now is smaller than an explosion later.",
+      inputs: [
+        { q: "Saying something will make it worse.", a: "\"One calm sentence rarely makes it worse; the silence that turns into my own outburst does.\"", bundle: 'pro' },
+        { q: "If I mention the volume, they'll explode.", a: "\"Most people lower their voice when it's named calmly, even if they grumble first.\"", bundle: 'pro' },
+        { q: "Better to wait until it blows over.", a: "\"Waiting it out teaches both of us that shouting is how we talk.\"", bundle: 'pro' },
+        { q: "I'll only embarrass them.", a: "\"A quiet question embarrasses no one; a scene does.\"", bundle: 'pro' },
+        { q: "They're already angry, so it's the wrong time.", a: "\"This is exactly when a calm voice is needed most.\"", bundle: 'pro' },
+        { q: "I'll say it wrong.", a: "\"A short, calm line doesn't have to be perfect to work.\"", bundle: 'pro' },
+        { q: "It's not my place to tell them how to talk.", a: "\"It is my place to say how I'll listen.\"", bundle: 'pro' },
+        { q: "Last time I said something, it got worse.", a: "\"Maybe last time I said it loudly; quiet and short is a different thing.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  toneboundaries2: [
+    {
+      name: "Giving In",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I just reply to the words, I'm letting them talk to me like that.\" The fear that dealing with the matter means accepting the tone.\n\nWhat is true instead: replying to the words is a choice about what to deal with first. It says nothing about what you accept.\n\nIt feels reasonable because a sharp tone feels like a test, and saying a plain yes can feel like failing it.\n\nWhat it costs is the matter itself. Every sharp sentence turns into a fight about tone, and the file, the shelf or the dishes never get sorted.\n\nMindset: I choose what to reply to. The tone does not choose for me.",
+      inputs: [
+        { q: "If I just reply to the words, I'm letting them talk to me like that.", a: "\"I'm choosing what to deal with first. I can still mention the tone later.\"", bundle: 'pro' },
+        { q: "Saying yes to a bark means they've won.", a: "\"There's no contest. I'm doing the task, not agreeing with the voice.\"", bundle: 'pro' },
+        { q: "If I ignore the tone, they'll think it's fine.", a: "\"One plain reply doesn't say it's fine. A pattern of silence would.\"", bundle: 'pro' },
+        { q: "I can't help them until they ask nicely.", a: "\"I can help now and ask for nicer later. Those don't cancel each other out.\"", bundle: 'pro' },
+        { q: "Replying calmly makes me look weak.", a: "\"A calm reply to a sharp sentence usually looks like the stronger one in the room.\"", bundle: 'pro' },
+        { q: "I have to react, or it'll keep happening.", a: "\"If it keeps happening, I'll say so then. Once is not a pattern yet.\"", bundle: 'pro' },
+        { q: "They don't deserve a straight answer.", a: "\"The matter deserves one, and I'm the one who wants it sorted.\"", bundle: 'pro' },
+        { q: "Letting it pass is the same as being a doormat.", a: "\"A doormat never chooses. I just did.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Snapping Back",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"If they're short with me, I'm short back. That's only fair.\" A belief that feels like self-respect.\n\nWhat is true instead: matching their tone feels even, but it doubles the sharpness, and nobody gets what they wanted from the conversation.\n\nIt feels reasonable because giving as good as you get looks like standing up for yourself, and taking it calmly can look like being pushed around.\n\nWhat it costs is quiet and steady: two sharp people instead of one, the matter forgotten, and a habit between you that is hard to break.\n\nMindset: I can stand up for myself without borrowing their tone.",
+      inputs: [
+        { q: "If they're short with me, I'm short back. That's only fair.", a: "\"Fair for a second, and then we're both short and nothing gets done.\"", bundle: 'pro' },
+        { q: "I don't let people talk down to me.", a: "\"Talking down back just puts us both on the floor.\"", bundle: 'pro' },
+        { q: "Matching their tone shows I'm not a pushover.", a: "\"It shows they can set my tone for me, which is the opposite.\"", bundle: 'pro' },
+        { q: "They started it.", a: "\"And now I get to decide whether it carries on.\"", bundle: 'pro' },
+        { q: "A sharp reply is just being honest.", a: "\"Honest is saying it stung. Sharp is making them feel it too.\"", bundle: 'pro' },
+        { q: "If I stay polite, they'll think they can do it again.", a: "\"What stops it is one clear sentence about it, not a sharp one.\"", bundle: 'pro' },
+        { q: "I'm only giving back what I got.", a: "\"Then they get to choose how every conversation with me sounds.\"", bundle: 'pro' },
+        { q: "Snapping back clears the air.", a: "\"It clears it for a minute, and then we both remember who snapped.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Thin Skin",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"Maybe I'm just too sensitive to tone.\" A belief that is partly true, which is what makes it hard to argue with.\n\nWhat is true: you might be. Tone is easy to misread, people have bad days, and some voices just sound sharper than they mean to.\n\nWhat gets added is the next step: \"so I shouldn't say anything.\" Not being sure is exactly why you would check, and every strategy in this pack works without being sure.\n\nWhat it costs is the sharp tone that was real, left alone because you doubted your own ears.\n\nMindset: keep the doubt. Drop the idea that doubt means silence.",
+      inputs: [
+        { q: "Maybe I'm just too sensitive to tone.", a: "\"True, maybe — but 'so I shouldn't ask' is the part I added.\"", bundle: 'pro' },
+        { q: "It's just how she talks.", a: "\"True — but 'so it doesn't land on me' is the part I added.\"", bundle: 'pro' },
+        { q: "He's under a lot of pressure right now.", a: "\"True — but 'so I have to take whatever voice he uses' is the part I added.\"", bundle: 'pro' },
+        { q: "I might have heard it wrong.", a: "\"True — but 'so I can't check what it was' is the part I added.\"", bundle: 'pro' },
+        { q: "Other people don't seem bothered.", a: "\"True — but 'so I shouldn't be either' is the part I added.\"", bundle: 'pro' },
+        { q: "I'm tired, and everything sounds sharp when I'm tired.", a: "\"True — but 'so this one doesn't count' is the part I added.\"", bundle: 'pro' },
+        { q: "It was only one word.", a: "\"True — but 'so the way it was said can't matter' is the part I added.\"", bundle: 'pro' },
+        { q: "If I mention it and I'm wrong, I'll look silly.", a: "\"True, a little — but 'so I'll stay quietly hurt' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Rank",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"You can't comment on the tone of your boss, your parent or a customer.\" The belief that rank decides who gets to mention tone.\n\nWhat is true instead: rank changes how you say it, not whether you can. A calm question or one plain sentence works upward as well as downward.\n\nIt feels reasonable because the cost of upsetting someone above you is real, and many of us grew up being told not to answer back.\n\nWhat it costs is a whole part of your life where you are talked to in a way you would never accept anywhere else.\n\nMindset: I can be respectful and still ask to be spoken to with respect.",
+      inputs: [
+        { q: "You can't comment on your boss's tone.", a: "\"I can ask what she meant, calmly. That's not insubordination.\"", bundle: 'pro' },
+        { q: "The customer is always right.", a: "\"About the coffee, maybe. Not about how to speak to me.\"", bundle: 'pro' },
+        { q: "You don't tell your parents how to talk to you.", a: "\"I'm an adult now. I can ask for an adult conversation.\"", bundle: 'pro' },
+        { q: "It's not my place to say anything.", a: "\"My place is in the conversation, so I can say one calm thing in it.\"", bundle: 'pro' },
+        { q: "Mentioning it will cost me at work.", a: "\"Snapping might. A calm 'Is that urgent, or a request?' rarely does.\"", bundle: 'pro' },
+        { q: "Older people just talk like that.", a: "\"Maybe. I can still ask, kindly, to be asked.\"", bundle: 'pro' },
+        { q: "If I say something, they'll pull rank.", a: "\"Then I'll know where I stand, and I'll have said it well.\"", bundle: 'pro' },
+        { q: "Being polite to them means taking it.", a: "\"Being polite means how I say it, not that I say nothing.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Pettiness",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"The words were fine. Mentioning the tone is petty.\" The belief that only words count, so a complaint about tone is a complaint about nothing.\n\nWhat is true instead: tone is half of what was said. \"Fine\" said flat and \"fine\" said warmly are two different messages, and everyone knows it.\n\nIt feels reasonable because tone is hard to prove. Point at it and they can say, \"All I said was 'fine'.\"\n\nWhat it costs is a slow pile of small sharp moments that you never mention, and then one day too many.\n\nMindset: tone is part of the message, so it is fair to talk about.",
+      inputs: [
+        { q: "The words were fine. Mentioning the tone is petty.", a: "\"The words were fine. The tone turned them into something else, and that's worth one sentence.\"", bundle: 'pro' },
+        { q: "They'll just say, \"I only asked a question.\"", a: "\"Then I'll ask whether it was a question, and they can tell me.\"", bundle: 'pro' },
+        { q: "I can't prove how it sounded.", a: "\"I don't need proof. I can say how it sounded to me.\"", bundle: 'pro' },
+        { q: "Grown-ups don't fuss over tone.", a: "\"Grown-ups can say, in one calm sentence, that something came out sharp.\"", bundle: 'pro' },
+        { q: "It's such a small thing.", a: "\"It's small once. It's the tenth time that makes it big.\"", bundle: 'pro' },
+        { q: "Everybody gets snappy sometimes.", a: "\"True, and saying 'that came out sharp' is how we both notice it.\"", bundle: 'pro' },
+        { q: "If I mention tone, I'm the difficult one.", a: "\"Difficult is a scene. One calm question is not a scene.\"", bundle: 'pro' },
+        { q: "I should just be glad they said anything at all.", a: "\"I can be glad they spoke and still ask how they spoke.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  toneboundaries3: [
+    {
+      name: "Winning",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I end it now, they win.\" The belief that stopping a shouted conversation means losing the argument.\n\nWhat is true instead: there is nothing to win while they are shouting. Stopping is how you get to the real conversation.\n\nIt feels reasonable because walking away can look like giving up, and the last word feels like the winning one.\n\nWhat it costs is staying in a conversation that only gets louder — and, often, saying something you will have to take back.\n\nMindset: ending it calmly, with a time to come back, is not losing. It is choosing when to win.",
+      inputs: [
+        { q: "If I end it now, they win.", a: "\"Nobody wins a shouting match. I'm just choosing a better time.\"", bundle: 'pro' },
+        { q: "If I walk away, they'll think they were right.", a: "\"What they think about who's right can wait until they're calm.\"", bundle: 'pro' },
+        { q: "I have to have the last word.", a: "\"The last word in a shouting match is just the loudest one.\"", bundle: 'pro' },
+        { q: "Stopping now means I'm weak.", a: "\"Stopping calmly when they can't is the strongest thing in the room.\"", bundle: 'pro' },
+        { q: "If I leave, I'll never get to say my side.", a: "\"I'll say my side at eight, when they can actually hear it.\"", bundle: 'pro' },
+        { q: "They'll just do it again if I back down.", a: "\"Stopping isn't backing down. Staying and taking it is.\"", bundle: 'pro' },
+        { q: "If I pause, it'll look like I've got no answer.", a: "\"I have an answer, and I'll give it when it can be heard.\"", bundle: 'pro' },
+        { q: "I can't let them get away with talking to me like that.", a: "\"Ending the call is how they don't get away with it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Politeness",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"Leaving is rude. You don't walk out on people.\" A belief that feels like good manners, and usually is.\n\nWhat is true instead: staying while someone shouts at you is not politeness. It teaches them that shouting gets your full attention.\n\nIt feels reasonable because you were brought up to stay, listen and not hang up on people — and most of the time that is exactly right.\n\nWhat it costs is quiet: you stay, the volume stays, and the person who shouts learns that you will always be there for it.\n\nMindset: a calm exit, with a time to come back, is the polite version of leaving.",
+      inputs: [
+        { q: "Leaving is rude.", a: "\"And every time I stay, they learn that shouting keeps me in the room.\"", bundle: 'pro' },
+        { q: "You don't hang up on people.", a: "\"So the shouting goes on for as long as they like, and I'm the one who pays for my manners.\"", bundle: 'pro' },
+        { q: "I always hear people out.", a: "\"Hearing them out at this volume means I hear nothing, and they learn it's fine.\"", bundle: 'pro' },
+        { q: "It's respectful to stay until they've finished.", a: "\"Then they decide how long I get shouted at, and respect only goes one way.\"", bundle: 'pro' },
+        { q: "I'd never walk out on my family.", a: "\"Staying for every shout means the shouting becomes part of the family.\"", bundle: 'pro' },
+        { q: "A good employee doesn't leave a meeting.", a: "\"And so the meeting becomes the place where it's safe to shout at me.\"", bundle: 'pro' },
+        { q: "I'm the patient one.", a: "\"My patience is what keeps the volume up, because it never runs out.\"", bundle: 'pro' },
+        { q: "I don't want to make a scene by leaving.", a: "\"The scene is already happening, and staying puts me in the middle of it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Convincing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I have to make them see that they're shouting.\" The belief that your line only counts once they agree it was needed.\n\nWhat is true instead: you don't need them to see it. You need the volume to change — and it can change without an admission.\n\nIt feels reasonable because it is true, and it seems that one more clear explanation should be enough to make them see it.\n\nWhat it costs is round after round of argument about the shouting — while the shouting carries on.\n\nMindset: they don't have to agree with your line for you to keep it.",
+      inputs: [
+        { q: "I have to make them see they're shouting.", a: "\"I only have to keep my line. Whether they see it is up to them.\"", bundle: 'pro' },
+        { q: "If they don't admit it, my line doesn't count.", a: "\"My line counts because I keep it, not because they agree.\"", bundle: 'pro' },
+        { q: "One more explanation and they'll get it.", a: "\"Every explanation is one more thing to argue with.\"", bundle: 'pro' },
+        { q: "They're wrong, and I need them to know it.", a: "\"They can be wrong and still lower their voice.\"", bundle: 'pro' },
+        { q: "If I could record it, they'd see.", a: "\"I don't need proof. I need a normal voice.\"", bundle: 'pro' },
+        { q: "They think they're calm, so I have to correct them.", a: "\"They can think they're calm. I can still say it's too loud for me.\"", bundle: 'pro' },
+        { q: "I can't drop it until they understand.", a: "\"I can drop the argument and keep the line.\"", bundle: 'pro' },
+        { q: "If they won't see it, there's no point saying anything.", a: "\"Saying it is the point. Seeing it is their job, maybe later.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Explanations",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"A boundary needs to be explained. I can't just say it.\" A belief with some truth in it — which is why it is so easy to talk yourself out of a line.\n\nWhat is true: one short reason can help them hear it. \"I can't think when it's this loud\" is fair to say.\n\nWhat gets added is the step from one reason to a full defence — as if the line only holds once they agree with it.\n\nWhat it costs is the line. Every new reason is something to argue with, and soon you are debating the boundary instead of keeping it.\n\nMindset: keep the one reason. Drop the idea that the line needs their approval.",
+      inputs: [
+        { q: "A boundary needs to be explained.", a: "\"One reason is fair — but 'until they agree with it' is the part I added.\"", bundle: 'pro' },
+        { q: "If I don't give a reason, I'm being unfair.", a: "\"One reason is enough — 'a new one every time they argue' is the part I added.\"", bundle: 'pro' },
+        { q: "They deserve to know why.", a: "\"They do, once — but 'so I have to keep explaining' is the part I added.\"", bundle: 'pro' },
+        { q: "I should be able to justify my line.", a: "\"I can — but 'so the line waits until I've won the argument' is the part I added.\"", bundle: 'pro' },
+        { q: "If my reason isn't good enough, I don't have a right to the line.", a: "\"My reason might be simple — 'so the line doesn't count' is the part I added.\"", bundle: 'pro' },
+        { q: "Just repeating myself sounds cold.", a: "\"It can sound flat — but 'so I need a new argument' is the part I added.\"", bundle: 'pro' },
+        { q: "I need to make them understand my feelings.", a: "\"I can tell them how it feels — 'and keep going until they get it' is the part I added.\"", bundle: 'pro' },
+        { q: "A good boundary is one they accept.", a: "\"It's nicer when they do — but 'so it only counts if they accept it' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  toneboundaries4: [
+    {
+      name: "Letting Go",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"If I let it go, they'll do it again.\" A belief that is partly true, which is what makes it stick.\n\nWhat is true: if a raised voice is never mentioned at all, it often comes back, and the same storm repeats.\n\nWhat gets added is the step from \"it should be dealt with\" to \"I have to make a point of it now, while they are calming down\" — a lecture, a victory line, or a better apology.\n\nWhat it costs is the calm itself. Pushing at the moment they climb down makes calming down feel like losing.\n\nMindset: keep the follow-up. Drop the idea that it has to happen in the same breath.",
+      inputs: [
+        { q: "If I let it go, they'll do it again.", a: "\"True, if it's never mentioned — but 'so I have to make a point of it right now' is the part I added.\"", bundle: 'pro' },
+        { q: "If I just say thanks, they'll think shouting is fine.", a: "\"True, it needs saying some time — but 'so I can't thank them for calming down' is the part I added.\"", bundle: 'pro' },
+        { q: "They need to know how much that upset me.", a: "\"True, they might — but 'so they need to hear it while they're apologising' is the part I added.\"", bundle: 'pro' },
+        { q: "Accepting the apology so quickly lets them off the hook.", a: "\"True, one sorry doesn't fix a habit — but 'so I should refuse this one' is the part I added.\"", bundle: 'pro' },
+        { q: "If I don't react, it'll become a habit.", a: "\"True, a habit needs a talk — but 'so it has to be now, in the storm' is the part I added.\"", bundle: 'pro' },
+        { q: "I need to show them this isn't okay.", a: "\"True — but 'so I have to show it again after they've stopped' is the part I added.\"", bundle: 'pro' },
+        { q: "Saying nothing about the tone means I've accepted it.", a: "\"True, if I never say anything — but 'so I have to say it every time' is the part I added.\"", bundle: 'pro' },
+        { q: "They got away with it last time.", a: "\"True, maybe — but 'so this time I have to win' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Apologies",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"They should apologise properly.\" A belief that feels like having standards, and sometimes is.\n\nWhat is true instead: asking for a better apology usually gets a worse one — or none next time.\n\nIt feels reasonable because \"sorry, but\" really is half an apology, and you deserve more than half.\n\nWhat it costs is quiet: every sorry you send back for improvement makes the next one harder for them to say, and soon they stop trying.\n\nMindset: take the sorry that came. The full one is more likely next time if this one was welcome.",
+      inputs: [
+        { q: "I don't accept half-apologies.", a: "\"Then I mostly get none, because half was all they could manage today.\"", bundle: 'pro' },
+        { q: "I want them to say exactly what they did wrong.", a: "\"And while I wait for the perfect wording, the real subject sits there untouched.\"", bundle: 'pro' },
+        { q: "A proper apology has no \"but\" in it.", a: "\"True, and refusing the one with a 'but' teaches them not to try again.\"", bundle: 'pro' },
+        { q: "I have standards for how people treat me.", a: "\"My standard was the tone. Grading the apology is a second test they didn't sign up for.\"", bundle: 'pro' },
+        { q: "I won't pretend it's fine when it isn't.", a: "\"Taking a sorry isn't pretending. It's letting the conversation go on.\"", bundle: 'pro' },
+        { q: "If I accept it too easily, it doesn't mean anything.", a: "\"An easy sorry is one they'll say again. That's exactly what I want.\"", bundle: 'pro' },
+        { q: "They need to feel how much it hurt.", a: "\"They already feel it. That's why they said sorry.\"", bundle: 'pro' },
+        { q: "I'll accept it when they mean it.", a: "\"I can't see whether they mean it. I can only make it worth saying.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Reopening",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Bringing it up later just reopens the fight.\" The belief that once things are calm, the subject has to stay closed.\n\nWhat is true instead: coming back in a calm moment is the safest time to talk — the fight was about the volume, and the volume has gone.\n\nIt feels reasonable because the calm is a relief, and nobody wants another storm.\n\nWhat it costs is the subject. It stays unsolved, and it comes back at the old volume, often at a worse moment.\n\nMindset: a calm moment is where the conversation belongs, not what it puts at risk.",
+      inputs: [
+        { q: "If I bring it up again, we'll just fight again.", a: "\"We fought at the old volume. Now we can talk at this one.\"", bundle: 'pro' },
+        { q: "Things are finally nice. Why spoil it?", a: "\"Nice is the best time to talk. The storm was the worst.\"", bundle: 'pro' },
+        { q: "I said I'd come back, but they seem fine now.", a: "\"They seem fine because the subject is waiting. I said I'd come back.\"", bundle: 'pro' },
+        { q: "Maybe they've forgotten about it.", a: "\"The volume has gone. The problem probably hasn't.\"", bundle: 'pro' },
+        { q: "Coming back to it looks like I'm holding a grudge.", a: "\"Coming back when I said is keeping my word, not holding a grudge.\"", bundle: 'pro' },
+        { q: "If they wanted to talk, they'd bring it up.", a: "\"They might be waiting for me. I'm the one who called the pause.\"", bundle: 'pro' },
+        { q: "It's better to let sleeping dogs lie.", a: "\"This dog wakes up every week. Better to talk while it's quiet.\"", bundle: 'pro' },
+        { q: "Talking about the pattern will make them defensive.", a: "\"Less now than in the middle of the next storm.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Hypocrisy",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I got loud too, I lost the right to say anything.\" The belief that one sharp moment of yours cancels every boundary.\n\nWhat is true instead: owning your part is what gives you the right back. Say it, and the boundary applies to you both.\n\nIt feels reasonable because it seems unfair to ask someone to lower their voice when you raised yours.\n\nWhat it costs is the subject, their point, and the boundary — all dropped because of one moment you could simply have owned.\n\nMindset: own your part, and keep your place in the conversation.",
+      inputs: [
+        { q: "I shouted too, so I can't ask them not to.", a: "\"I can say I shouted too. Then the rule is for both of us.\"", bundle: 'pro' },
+        { q: "I'm a hypocrite if I set a boundary now.", a: "\"A hypocrite pretends they didn't do it. I'm saying I did.\"", bundle: 'pro' },
+        { q: "It's my fault as much as theirs, so let's just forget it.", a: "\"Half each is still something to talk about.\"", bundle: 'pro' },
+        { q: "I have to apologise for everything now.", a: "\"Just my part. Not the whole argument.\"", bundle: 'pro' },
+        { q: "If I admit I got loud, they'll use it against me.", a: "\"It's easier for them to own their part once I've owned mine.\"", bundle: 'pro' },
+        { q: "I lost my temper, so my point doesn't count.", a: "\"My tone was wrong. My point can still be right.\"", bundle: 'pro' },
+        { q: "I should have stayed calm, so I've failed.", a: "\"I didn't stay calm. I can still come back calm.\"", bundle: 'pro' },
+        { q: "They'll never take me seriously after that.", a: "\"People take you more seriously when you own your part.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Point",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If they shouted, I don't have to listen to what they said.\" The belief that a raised voice cancels the point.\n\nWhat is true instead: the tone was the problem with how they said it, not with what they said. Once it has gone, the point deserves an answer.\n\nIt feels reasonable because being shouted at hurts, and taking their point can feel like rewarding the shouting.\n\nWhat it costs is the next calm conversation. If the calm voice gets nothing, the loud one is all they have left.\n\nMindset: refuse the tone, and take the point.",
+      inputs: [
+        { q: "They shouted, so I don't have to take them seriously.", a: "\"I didn't have to take the shouting. The point is a different matter.\"", bundle: 'pro' },
+        { q: "If I agree with them now, shouting worked.", a: "\"If I agree now, calm worked. They stopped shouting first.\"", bundle: 'pro' },
+        { q: "Anyone who shouts has lost the argument.", a: "\"They lost the tone. They might still be right.\"", bundle: 'pro' },
+        { q: "They can come back when they've learned to ask nicely.", a: "\"They just did. This is them asking nicely.\"", bundle: 'pro' },
+        { q: "I set the boundary, so I've done my part.", a: "\"I set the boundary on the tone. Listening is the other half.\"", bundle: 'pro' },
+        { q: "Taking their point means they win.", a: "\"There's no winner. There's a problem we can fix now.\"", bundle: 'pro' },
+        { q: "Why should I listen when they didn't?", a: "\"Because one of us has to go first, and I'm calmer.\"", bundle: 'pro' },
+        { q: "They're only upset because they're stressed.", a: "\"Maybe. And the thing stressing them might be real.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  networking1: [
+    {
+      name: "Authenticity",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"Networking is fake. Everyone's just using each other.\"\n\nWhat is true instead: some of it is fake — the pitching, the card collecting. A curious conversation with a stranger is not.\n\nIt feels right because you have met the person who only pitches, and nobody wants to be that person.\n\nWhat it costs: you skip the event, or you go and stay silent, and you miss the people who would have been glad to meet you.\n\nMindset: networking is only fake when you pretend. Be curious instead.",
+      inputs: [
+        { q: "Networking is fake.", a: "\"Some of it is. The part where I'm curious about someone is not.\"", bundle: 'pro' },
+        { q: "Everyone here just wants something from me.", a: "\"Some do. Most just want someone to talk to, the same as me.\"", bundle: 'pro' },
+        { q: "Talking to people because they might be useful is cynical.", a: "\"Talking only for use would be. Talking because they might be interesting is not.\"", bundle: 'pro' },
+        { q: "I hate small talk, and that's all networking is.", a: "\"Small talk is the first minute. What comes after can be real.\"", bundle: 'pro' },
+        { q: "Planning what I'll say makes it fake.", a: "\"Planning a speech would. Planning one good question is just getting ready.\"", bundle: 'pro' },
+        { q: "Real friendships happen by accident, not at events.", a: "\"Plenty do. Plenty of others started with someone saying hello at one of these.\"", bundle: 'pro' },
+        { q: "Following up afterwards would look like I'm using them.", a: "\"It would if I only wrote when I wanted something. Sending the link I promised is keeping my word.\"", bundle: 'pro' },
+        { q: "People who are good at networking are fake.", a: "\"Some are smooth. The good ones are just curious, and curious isn't fake.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Worth",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I've got nothing to offer. Why would anyone want to talk to me?\"\n\nWhat is true instead: you always have something to give — a tip, a link, a name, or your full attention.\n\nIt feels right because at events everyone seems more senior, more successful and more sure of themselves. You are comparing your inside to their outside.\n\nWhat it costs: you hang back, you apologise for yourself, and you never find out what you could have given.\n\nMindset: you do not need to be impressive to be useful.",
+      inputs: [
+        { q: "I have nothing to offer these people.", a: "\"I have a tip, a link, a name and a good question. That's plenty.\"", bundle: 'pro' },
+        { q: "I'm only a student.", a: "\"Students know things nobody else here knows, like what students actually want.\"", bundle: 'pro' },
+        { q: "They're more senior than me, so I'm wasting their time.", a: "\"Senior people were glad of a good question once too. I can ask one.\"", bundle: 'pro' },
+        { q: "My job is too ordinary to mention.", a: "\"Ordinary jobs are full of details other people find interesting.\"", bundle: 'pro' },
+        { q: "I'll start going to events when I've achieved something.", a: "\"By then I'll have more to say, and fewer people to say it to.\"", bundle: 'pro' },
+        { q: "I can't help anyone, so I can't talk to anyone.", a: "\"Listening well is help. So is remembering who else they should meet.\"", bundle: 'pro' },
+        { q: "They'll see I'm new at this.", a: "\"New people ask the best questions. That's a reason to talk to me.\"", bundle: 'pro' },
+        { q: "I don't know anyone worth introducing them to.", a: "\"I've met three people tonight already. That's three possible introductions.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Intruding",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I'm bothering them. They've got better people to talk to.\"\n\nWhat is true instead: at an event, being approached is the point. People came so that someone would talk to them.\n\nIt feels right because in daily life, interrupting strangers is rude. You are carrying a good rule into the one room where it does not apply.\n\nWhat it costs: you wait to be invited, the invitation does not come, and you leave thinking nobody wanted to talk to you.\n\nMindset: at an event, a friendly question is not an interruption. It is what everyone came for.",
+      inputs: [
+        { q: "I'm bothering them.", a: "\"They came to an event full of strangers. Being talked to is the point.\"", bundle: 'pro' },
+        { q: "They're busy talking to someone more important.", a: "\"Then I'll wait for a pause and say hello in it.\"", bundle: 'pro' },
+        { q: "Sending a follow-up email is a nuisance.", a: "\"An email they can read in ten seconds isn't a nuisance. It's a kindness.\"", bundle: 'pro' },
+        { q: "If they wanted to talk to me, they'd come over.", a: "\"They're probably thinking the same thing about me.\"", bundle: 'pro' },
+        { q: "Introducing two strangers puts them on the spot.", a: "\"Two names and a reason is a gift. They can talk for a minute or for an hour.\"", bundle: 'pro' },
+        { q: "The speaker is tired and wants to go home.", a: "\"Maybe. One short question and a thank you takes a minute.\"", bundle: 'pro' },
+        { q: "Joining a group interrupts their conversation.", a: "\"Waiting for a pause and joining their topic is how groups grow.\"", bundle: 'pro' },
+        { q: "Offering a tip they didn't ask for is pushy.", a: "\"One tip with nothing attached is easy to take or leave.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Belonging",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Everyone already knows each other. I'm the only outsider here.\"\n\nWhat is true instead: it only looks that way. Many of the people in those small groups met ten minutes ago.\n\nIt feels right because groups that formed quickly look like old friends from the outside, and the people standing alone are the ones you do not notice.\n\nWhat it costs: you stay at the edge all evening, and the belief is never tested.\n\nMindset: most of the room met tonight. You are not late; you are next.",
+      inputs: [
+        { q: "Everyone already knows each other.", a: "\"Half of them met ten minutes ago. I can meet someone in the next ten.\"", bundle: 'pro' },
+        { q: "I'm the only one here on my own.", a: "\"I'm the one who noticed. Someone else on their own is hoping I'll say hello.\"", bundle: 'pro' },
+        { q: "That group are clearly old friends.", a: "\"Maybe. Or they met in the coffee queue, the way I could.\"", bundle: 'pro' },
+        { q: "Everyone here is from the same company.", a: "\"Then I'm the new face, and new faces are interesting.\"", bundle: 'pro' },
+        { q: "They'll think it's strange that I came alone.", a: "\"Coming alone is normal at events. It means I'm here to meet people.\"", bundle: 'pro' },
+        { q: "In the breakout room, everyone seems to know the host.", a: "\"Knowing the host doesn't mean knowing each other. Someone still has to start.\"", bundle: 'pro' },
+        { q: "I missed the first day, so the groups are fixed now.", a: "\"Groups at events change all the time. The next coffee break resets everything.\"", bundle: 'pro' },
+        { q: "The other parents have known each other for years.", a: "\"Some have. Some are as new as me, standing by the same noticeboard.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  networking2: [
+    {
+      name: "Pushiness",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Following up is pushy. If they wanted to stay in touch, they'd have written first.\" For example, the morning after a good talk with a carpenter at a trade show.\n\nWhat is true instead: a short follow-up is normal and usually welcome. It shows you were listening.\n\nIt feels reasonable because nobody likes a salesperson, and from the inside every follow-up feels like a sales call.\n\nWhat it costs: the connection fades within a week, and each of you thinks the other wasn't interested.\n\nMindset: pushy is asking again after a no. A thank-you note is not pushy.",
+      inputs: [
+        { q: "If they wanted to stay in touch, they'd have written first.", a: "\"They're probably thinking exactly the same about me.\"", bundle: 'pro' },
+        { q: "A follow-up the next day looks too keen.", a: "\"It looks like I was listening, and that's a good look.\"", bundle: 'pro' },
+        { q: "I'll just be one more message they have to deal with.", a: "\"A short note with no ask takes ten seconds to read, and most people like getting one.\"", bundle: 'pro' },
+        { q: "I don't want to be like a salesperson.", a: "\"A salesperson wants something; I'm sending what I promised.\"", bundle: 'pro' },
+        { q: "They were just being polite last night.", a: "\"Maybe — and a polite note back costs them nothing.\"", bundle: 'pro' },
+        { q: "If they don't reply, I'll have embarrassed myself.", a: "\"No reply usually means a busy week, not a verdict on me.\"", bundle: 'pro' },
+        { q: "Writing twice is too much.", a: "\"Twice in a month with something useful is friendly, not pushy.\"", bundle: 'pro' },
+        { q: "I'll wait until they get in touch.", a: "\"Waiting means the conversation ends here, and I liked that conversation.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Time Gaps",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Too much time has passed. It would be weird to write now.\" Like an old colleague you haven't spoken to since you both left the same job.\n\nWhat is true instead: old contacts are often glad to hear from you, and the trust is usually still there.\n\nIt feels reasonable because the longer the silence, the more it seems to need an explanation — and you don't have a good one.\n\nWhat it costs: every month makes it harder, until the contact is lost for good.\n\nMindset: \"it's been a while\" is a complete explanation.",
+      inputs: [
+        { q: "It's been too long to write now.", a: "\"It's been a while, and that's exactly what I'll say.\"", bundle: 'pro' },
+        { q: "They've probably forgotten me.", a: "\"If they have, one line will remind them, and if not, they'll be pleased.\"", bundle: 'pro' },
+        { q: "I should have written months ago.", a: "\"True, and today is still better than next year.\"", bundle: 'pro' },
+        { q: "They'll wonder why I'm getting in touch now.", a: "\"So I'll tell them the real reason in one line.\"", bundle: 'pro' },
+        { q: "I need a good excuse for the silence.", a: "\"Life got busy — the excuse everyone already understands.\"", bundle: 'pro' },
+        { q: "We've both changed too much.", a: "\"That's what makes catching up interesting.\"", bundle: 'pro' },
+        { q: "It'll be awkward.", a: "\"The first line might be awkward; the rest is usually easy.\"", bundle: 'pro' },
+        { q: "If they'd wanted to keep in touch, they would have.", a: "\"They've had the same busy years I've had.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "News",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I don't want to waste their time. I'll get in touch when I have real news.\" A belief that feels like respect — for a busy editor, say, who must get a hundred emails a day.\n\nWhat is true instead: real news rarely comes, so contact rarely happens, and the relationship goes cold while you wait.\n\nIt feels reasonable because it looks considerate, and small messages feel like clutter.\n\nWhat it costs: when you finally have news, or need help, you are writing to someone who barely remembers you.\n\nMindset: small, kind messages are what keep a contact a contact.",
+      inputs: [
+        { q: "I don't want to waste their time.", a: "\"And so they never hear from me, and forget why we got on.\"", bundle: 'pro' },
+        { q: "I'll write when I've got something to show.", a: "\"That could take a year, and by then I'm a stranger again.\"", bundle: 'pro' },
+        { q: "Busy people don't want small messages.", a: "\"Busy people get few kind ones, and that's why they remember them.\"", bundle: 'pro' },
+        { q: "I only write when it matters.", a: "\"Which means the only time they hear from me is when I need something.\"", bundle: 'pro' },
+        { q: "I don't want to fill up their inbox.", a: "\"So the one message they do get from me is an ask.\"", bundle: 'pro' },
+        { q: "I'm respecting their time.", a: "\"And quietly letting the relationship run out.\"", bundle: 'pro' },
+        { q: "My news isn't big enough yet.", a: "\"Waiting for big news means missing all the small chances to stay close.\"", bundle: 'pro' },
+        { q: "Staying quiet is the polite thing.", a: "\"Polite, and also how good contacts turn into names I can't use.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Needing Help",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Asking for advice makes me look weak — like I can't manage on my own.\" Like the new apprentice who would rather guess than ask an old hand.\n\nWhat is true instead: asking for advice usually makes people think better of you, not worse. It shows you take the work seriously.\n\nIt feels reasonable because we are taught to be independent, and asking feels like admitting you are behind.\n\nWhat it costs: you learn everything the slow way, and people who would have liked to help never get the chance.\n\nMindset: asking good questions is what capable people do.",
+      inputs: [
+        { q: "Asking for advice makes me look weak.", a: "\"It makes me look like someone who wants to get it right.\"", bundle: 'pro' },
+        { q: "I should be able to work this out myself.", a: "\"I can, slowly — or I can ask someone who already has.\"", bundle: 'pro' },
+        { q: "They'll think I don't know what I'm doing.", a: "\"A good question shows I know exactly what I don't know.\"", bundle: 'pro' },
+        { q: "Successful people don't ask for help.", a: "\"Most successful people got there by asking a lot of people.\"", bundle: 'pro' },
+        { q: "I'll owe them something.", a: "\"I'll owe them a thank-you and an update, and I can give both.\"", bundle: 'pro' },
+        { q: "Asking shows I'm behind.", a: "\"Everyone was behind once, and the person I'm asking remembers it.\"", bundle: 'pro' },
+        { q: "They'll say no and I'll feel stupid.", a: "\"If they say no, they've answered a question — that's all.\"", bundle: 'pro' },
+        { q: "I don't want to be a burden.", a: "\"Most people enjoy being asked what they know.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };

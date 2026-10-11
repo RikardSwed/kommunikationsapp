@@ -13000,6 +13000,594 @@ const collections = {
       ]
     },
   ],
+  toneboundaries1: [
+    {
+      name: "Stay Low and Slow",
+      guideFront: "Answer quieter and slower when...",
+      guideBack: "A short line, said softly",
+      description: "Answer in a lower voice and at a slower pace than theirs: short sentences, said softly, with small pauses. (Quietly) \"I hear you. Let's figure out the deadline.\" The words are ordinary. The delivery is the strategy.\n\nIt works because people tend to match the voice in front of them. Meet a shout with a shout and it climbs. Meet it with a low, slow voice and most people come down to meet you, often without noticing. You are not telling them to calm down; you are showing them the volume you want, and it is hard to keep shouting at someone who is not shouting back. The idea comes from Jefferson Fisher and from de-escalation training.\n\nKeep the line itself short and plain: what happens next, or what you will do. No speech, no defence. Say every card in this deck quietly and slowly, out loud.\n\nTypical phrases: \"Okay. Let's look at it.\", \"I'm here. Go on.\", \"I'll sort it now.\", \"One thing at a time.\"\n\nThree things to say, low and slow:\n\n1. The next step — \"Let me pull up your order.\"\n\n2. What you will do — \"I'll ring them in the morning.\"\n\n3. That you are listening — \"I'm here. Tell me.\"\n\nMindset: your voice can lead. You do not have to follow theirs.",
+      inputs: [
+        { q: "In the Monday meeting, Tom's voice rises across the table: \"I've asked for these figures three times! Where are they?\"", a: "(Quietly, slowly.) \"Okay, Tom. They came in this morning. Let me share them now.\"", bundle: 'free' },
+        { q: "Alex is at the kitchen sink, louder with every word: \"You said you'd pay the electricity bill! Now there's a late fee!\"", a: "\"I forgot the bill. I'll ring them first thing tomorrow.\"", bundle: 'free' },
+        { q: "Mr Barker is shouting so loudly you move the phone away from your ear. His sofa is two weeks late.", a: "\"I'm here, Mr Barker. Let me pull up your order.\"", bundle: 'free' },
+        { q: "Your mum's voice climbs at her kitchen table: \"Why did I hear about your new job from your brother?\"", a: "\"Mum. I'm here now. I wanted to tell you myself.\"", bundle: 'free' },
+        { q: "Ella shouts at you in the hallway after you say no to the party: \"You never let me do anything!\"", a: "\"I know. It's still a no. Come and find me when you want to talk.\"", bundle: 'free' },
+        { q: "Karen stands at your desk, loud enough for the whole office: \"Why is this report still not done?\"", a: "\"It'll be with you by three. I'm on the last section.\"", bundle: 'pro' },
+        { q: "Mr Doyle shouts across the drive at twenty to eight: \"Your car's blocking my drive again!\"", a: "\"Sorry, Mr Doyle. Moving it now.\"", bundle: 'pro' },
+        { q: "Across the café table, Jamie snaps: \"You still haven't paid me back for the tickets!\"", a: "\"Okay. I'm sending it now, while we sit here.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name the Volume",
+      guideFront: "Say plainly what's happening when...",
+      guideBack: "A neutral observation",
+      description: "Say, plainly and neutrally, what is happening to the volume. \"You're raising your voice.\" Or: \"We're both getting loud.\" No judgement, no request, and nothing about what kind of person they are.\n\nIt works because people who shout often do not notice they are doing it. Naming it holds up a mirror: they hear it, and many adjust on their own. Because you only describe what anyone in the room could hear, there is very little to argue with. It comes from the observation step in Nonviolent Communication, and from de-escalation practice.\n\nKeep your own voice low when you say it. Said loudly, it becomes one more loud thing in the room.\n\nTypical phrases: \"You're raising your voice.\", \"We're both getting loud.\", \"Your voice just went up.\", \"That's very loud.\"\n\nThree ways to name it:\n\n1. Their volume — \"You're shouting, Ella.\"\n\n2. Both of you — \"We're both getting loud.\"\n\n3. The change — \"Your voice just went up a lot.\"\n\nIt is not \"Calm down\", which is an order, and not \"Stop shouting at me\", which is a demand. This one only says what is happening.\n\nMindset: saying what is happening is not an attack. It is information.",
+      inputs: [
+        { q: "Tom gets louder with each sentence about the missing figures, and the others start looking at their laptops.", a: "\"Tom, you're raising your voice.\"", bundle: 'free' },
+        { q: "Alex is nearly shouting about the late fee, and you notice your own voice is rising to match.", a: "\"We're both getting loud.\"", bundle: 'free' },
+        { q: "Mr Barker has been shouting down the phone since he gave his order number.", a: "\"Mr Barker, you're shouting. I can hear you fine.\"", bundle: 'free' },
+        { q: "A minute ago your mum was talking normally. Now, about the new job, her voice is climbing fast.", a: "\"Mum, your voice just went up a lot.\"", bundle: 'free' },
+        { q: "Ella is shouting at you from halfway up the stairs.", a: "\"You're shouting, Ella.\"", bundle: 'free' },
+        { q: "Karen's question about the report is so loud that heads turn all across the office.", a: "\"Karen, that's loud. The whole floor can hear.\"", bundle: 'pro' },
+        { q: "Mr Doyle is shouting from his drive, and a curtain moves across the road.", a: "\"You're shouting across the street, Mr Doyle.\"", bundle: 'pro' },
+        { q: "Jamie's voice cuts across the café, and the people at the next table look over.", a: "\"We've gone loud, Jamie. The next table's looking.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Calm Request",
+      guideFront: "Ask for a lower volume when...",
+      guideBack: "A question where no means yes",
+      description: "Ask for a lower volume with a question that is easy to say no to, because here \"no\" means yes. \"Are you opposed to talking about this at a normal volume?\" This framing comes from Jefferson Fisher, who builds requests this way on purpose.\n\nIt works because people under pressure push back against being told what to do. \"Can you calm down?\" invites \"I am calm!\" A negatively framed question turns that round: to agree, they only have to say \"No, I'm not\", and saying no feels like keeping control. It also sounds reasonable to anyone listening, which makes it hard to refuse.\n\nAsk it once, slowly, and then wait for the answer.\n\nTypical phrases: \"Are you opposed to...\", \"Would you be against...\", \"Is it unreasonable to ask...\", \"Would you be opposed to...\"\n\nThree ways to frame it:\n\n1. \"Are you opposed to...\" — \"Are you opposed to going through this at a normal volume?\"\n\n2. \"Would you be against...\" — \"Would you be against sitting down and talking more quietly?\"\n\n3. \"Is it unreasonable to...\" — \"Is it unreasonable to ask that we keep our voices down?\"\n\nMindset: asking is not begging. A calm question is a clear request that lets them keep their pride.",
+      inputs: [
+        { q: "Tom is still loud about the figures, and the meeting has stopped.", a: "\"Tom, are you opposed to going through this at a normal volume?\"", bundle: 'free' },
+        { q: "Alex is pacing the kitchen, loud about the late fee.", a: "\"Would you be against us sitting down and talking about it more quietly?\"", bundle: 'free' },
+        { q: "Mr Barker is still shouting about the sofa, and you cannot get a word in.", a: "\"Is it unreasonable to ask that we keep our voices down, so I can sort this out properly?\"", bundle: 'free' },
+        { q: "Your mum is loud and hurt about hearing the news from your brother.", a: "\"Mum, would you be opposed to us starting again, a bit more quietly?\"", bundle: 'free' },
+        { q: "Ella is still shouting about the party, and you want to hear her side.", a: "\"Would you be against lowering your voice, so I can actually hear your side?\"", bundle: 'free' },
+        { q: "Karen is questioning you about the report in front of the whole office.", a: "\"Would you be opposed to talking about the report in your office?\"", bundle: 'pro' },
+        { q: "Mr Doyle is shouting at you from the far side of two drives.", a: "\"Are you opposed to me coming over, so we don't have to shout across the street?\"", bundle: 'pro' },
+        { q: "Jamie is loud about the ticket money, and the café has gone quiet.", a: "\"Is it unreasonable to ask that we talk about this a bit more quietly?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "State the Line",
+      guideFront: "Say how you'll listen when...",
+      guideBack: "A firm, kind limit",
+      description: "Say what you want to listen to, and how. \"I want to hear this. I can't while we're shouting.\" Firm but kind: you keep the door open to what they are saying, and close it to the way they are saying it.\n\nIt works because it separates the message from the volume. They hear that you are not refusing the conversation, only the shouting, so there is less to fight about. And it is about you, what you can take in and what you will do, so it is not a rule for them to break.\n\nSay it once, calmly, and keep it short. Leave out threats and what happens if they carry on; this pack stops at the line.\n\nTypical phrases: \"I want to hear this. Not like this.\", \"I can't take it in while you're shouting.\", \"I'll always listen. I won't be shouted at.\", \"Talk to me, not at me.\"\n\nThree ways to state it:\n\n1. Yes to the topic, no to the volume — \"I want to talk about the bill. Not at this volume.\"\n\n2. What you will and won't do — \"I'll always listen to you. I won't be shouted at.\"\n\n3. How you want to be spoken to — \"I'd like you to talk to me, not shout at me.\"\n\nMindset: a line about how you are spoken to is not a punishment. It is the way back to the real conversation.",
+      inputs: [
+        { q: "Tom is still shouting about the figures, across the meeting table.", a: "\"Tom, I want to sort the figures out. I can't do that while you're shouting.\"", bundle: 'free' },
+        { q: "Alex's voice fills the kitchen. You do want to talk about the late fee.", a: "\"I want to talk about the bill. Not at this volume.\"", bundle: 'free' },
+        { q: "Mr Barker is still shouting down the line about the sofa and his money.", a: "\"I want to help you get this fixed, Mr Barker. I can do that when we're talking, not shouting.\"", bundle: 'free' },
+        { q: "Your mum is shouting about the new job, and you can feel yourself closing up.", a: "\"Mum, I want to hear why this hurt. I can't take it in when you're shouting at me.\"", bundle: 'free' },
+        { q: "Ella shouts again that you never let her do anything.", a: "\"I'll always listen to you. I won't be shouted at.\"", bundle: 'free' },
+        { q: "Karen is still at your desk, still loud, and the whole office is listening.", a: "\"Karen, I'm happy to talk about the report. I'd like to do it calmly, and not in front of everyone.\"", bundle: 'pro' },
+        { q: "Mr Doyle is shouting at you about the car again, keys in his hand.", a: "\"I'll move the car. And I'd like you to talk to me, not shout at me.\"", bundle: 'pro' },
+        { q: "Jamie snaps at you again over the money, louder this time.", a: "\"You're owed that money, and I'll sort it. Please don't snap at me in here.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Acknowledge, Then the Issue",
+      guideFront: "Name their frustration, then refocus when...",
+      guideBack: "An acknowledgement, then the real problem",
+      description: "Show that you see their frustration, then steer to the actual problem, in one breath. \"You're clearly frustrated about the deadline. What's the biggest problem?\" Two parts: the feeling first, then the issue.\n\nIt works because a lot of shouting comes from a person who does not feel heard. Naming the frustration takes away the reason to keep pushing, and the question straight after gives their energy somewhere useful to go. It is the validate-and-redirect step from de-escalation training.\n\nAcknowledging is not agreeing. \"You're frustrated\" is not \"you're right\". Keep the second part concrete: a question about the problem, or the next step.\n\nTypical phrases: \"You're clearly fed up. What's the biggest problem?\", \"That's a long time to wait. Let me look now.\", \"No wonder you're annoyed. What do you need first?\"\n\nThree ways to do it:\n\n1. The feeling, then a question — \"You're fed up with waiting. Which figures do you need first?\"\n\n2. What's fair, then the problem — \"You're angry about the fee, and that's fair. How much is it?\"\n\n3. The cause, then the next step — \"Two weeks is a long time to wait. Let me look at your order now.\"\n\nMindset: you can take their frustration seriously without taking the shouting.",
+      inputs: [
+        { q: "Tom has asked three times for the figures, and now he is loud about it in front of everyone.", a: "\"You're clearly fed up with waiting for these, Tom. Which figures do you need first?\"", bundle: 'free' },
+        { q: "Alex is shouting about the late fee on the electricity bill you forgot.", a: "\"You're angry about the fee, and that's fair. How much is it, and when's it due?\"", bundle: 'free' },
+        { q: "Mr Barker is shouting that he has waited two weeks for his sofa.", a: "\"Two weeks is a long time to wait for a sofa. Would you rather have a refund or a firm delivery date?\"", bundle: 'free' },
+        { q: "Your mum is loud and upset that your brother knew about the job before she did.", a: "\"It hurt to hear it from him first. Can I tell you about the job now, properly?\"", bundle: 'free' },
+        { q: "Ella is shouting that everyone else is going to the party.", a: "\"You really wanted to go, and it feels unfair. What's the part that matters most to you?\"", bundle: 'free' },
+        { q: "Karen is loud at your desk about the report, and she has a board meeting at four.", a: "\"You're under pressure with the board at four. What do you need from the report by then?\"", bundle: 'pro' },
+        { q: "Mr Doyle is shouting that he will be late because of your car.", a: "\"Being blocked in when you're running late is maddening. I'm moving it now.\"", bundle: 'pro' },
+        { q: "Jamie snaps that she is sick of chasing you for the ticket money.", a: "\"You've had to chase me, and that's annoying. Let's settle it now. Was it forty-five?\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  toneboundaries2: [
+    {
+      name: "Answer the Words",
+      guideFront: "Reply to the actual request when...",
+      guideBack: "A plain yes, or the plain facts",
+      description: "Reply to the reasonable part of what they said, the request, the question or the fact, and leave the tone where it is. \"Sure, I'll send it now.\" Nothing about how it was said.\n\nIt works because a sharp tone is usually looking for something to push against. When the content gets a calm, plain reply, there is nothing for the tone to catch on, and the conversation stays on the actual matter. Very often the sharpness was stress or hurry, and it fades on its own once the thing is dealt with.\n\nIt is a choice, not a surrender. You have heard the tone; you are deciding that this time the words matter more. It is the same idea as Answer It Straight in Responding to Passive Aggression, used here for sharpness that is out in the open.\n\nTypical phrases: \"Sure, sending it now.\", \"You're right, I'll fix that.\", \"Two minutes.\", \"Okay. Then I'll ring you on Wednesday.\"\n\nThree ways to reply to the words:\n\n1. The plain yes — they asked for something; say yes and do it. \"Sure. It's on its way.\"\n\n2. The real reply to the question — treat the question as a real question. \"I followed the instructions: shelves first, then the back.\"\n\n3. The fact taken at face value — when they are right, say so; when they say \"fine\", take it as fine. \"You're right, it's the old one. I'll switch it.\"\n\nMindset: replying to the words is not agreeing with the tone. It is choosing what to reply to.",
+      inputs: [
+        { q: "Karen, your manager, leans round your door. No hello, no please: \"Send me the file.\"", a: "\"Sure. The budget file's on its way now.\"", bundle: 'free' },
+        { q: "You have just finished building the new bookshelf. Alex walks in and says sharply, \"Why did you do it like that?\"", a: "\"I followed the instructions: shelves first, then the back panel.\"", bundle: 'free' },
+        { q: "You tell your mum you can't make Sunday lunch this week. She says, \"Fine,\" and turns back to the sink.", a: "\"Okay. I'll come the Sunday after, and I'll ring you on Wednesday.\"", bundle: 'free' },
+        { q: "Tom calls across the open-plan office, loud enough for everyone: \"That's the wrong template!\" He is right.", a: "\"You're right, thanks. I'll switch to the new one.\"", bundle: 'free' },
+        { q: "You have been in the bathroom for ten minutes. Josh bangs on the door: \"Are you done yet?\"", a: "\"Two minutes, then it's yours.\"", bundle: 'free' },
+        { q: "You knock on your daughter's door to ask about dinner. Without looking up, Mia snaps, \"What do you want?\"", a: "\"Pasta or curry tonight? Your choice.\"", bundle: 'pro' },
+        { q: "A customer pushes the coffee back across the counter: \"I asked for oat milk.\" You got it wrong.", a: "\"Sorry about that. I'll make you a fresh one with oat.\"", bundle: 'pro' },
+        { q: "At games night, Jonas explains the rule for the third time, slowly, as if to a child: \"No. You. Draw. Two. First.\"", a: "\"Got it. And after that I can play a card?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for the Ask",
+      guideFront: "Agree, then invite a request when...",
+      guideBack: "A willing yes, and a request for a request",
+      description: "Say you are willing, and ask them to put it as a request instead of an order. \"Happy to. Can you ask me rather than tell me?\" The yes is in the sentence. You are not refusing the task; you are asking for a different way of being asked.\n\nIt works because it splits the task from the tone. The task gets a yes, so there is nothing to fight about. The tone gets one small, clear request. Most people hear the difference at once, and many simply say it again with a \"could you\".\n\nKeep it light. A smile in your voice, one sentence, no lecture about manners. If it sounds like a telling-off, it becomes one.\n\nTypical phrases: \"Happy to. Can you ask me, though?\", \"Sure. Try that again with a please?\", \"If you'd like it done another way, just ask me.\", \"Ask me, don't tell me, and it's yours.\"\n\nThree ways to ask for the ask:\n\n1. Ask me, don't tell me — for an order. \"Happy to. Can you ask me rather than tell me?\"\n\n2. Try that again — invite them to say it once more, kindly. \"Shall we try that one again?\"\n\n3. Say what you'd like — when the wish is hidden inside a question or a short word. \"If you'd like it done another way, just ask. I'll probably say yes.\"\n\nMindset: you have already said yes. Asking to be asked is not being difficult.",
+      inputs: [
+        { q: "Karen's \"Send me the file\" comes with no hello and no please, for the third time this week.", a: "\"Happy to, Karen. Can you ask me rather than tell me, though?\"", bundle: 'free' },
+        { q: "Alex's \"Why did you do it like that?\" sounds like they wanted the bookshelf done some other way.", a: "\"If you'd like it done another way, just ask me. I'll probably say yes.\"", bundle: 'free' },
+        { q: "Your mum's \"Fine\" about Sunday lunch sounds a lot like she wants you to change your mind.", a: "\"If you'd like me to come, Mum, ask me. Don't just say fine.\"", bundle: 'free' },
+        { q: "Tom has shouted \"That's the wrong template!\" across the office. You go over to his desk.", a: "\"Fair, I'll fix it. Next time, can you come over and ask me instead of calling it across the room?\"", bundle: 'free' },
+        { q: "Josh is still banging on the bathroom door: \"Are you done yet?\"", a: "\"Nearly. Next time, can you knock and ask instead of banging?\"", bundle: 'free' },
+        { q: "Mia snaps \"What do you want?\" before you have said a word.", a: "\"Let's try that one again. I knock, and you say, 'Yes?'\"", bundle: 'pro' },
+        { q: "The customer's \"I asked for oat milk\" comes with the cup pushed back hard enough to spill.", a: "\"Of course, I'll remake it. Could you just ask me, though, instead of pushing it back?\"", bundle: 'pro' },
+        { q: "Jonas is spelling the rule out to you word by word: \"You. Draw. Two.\"", a: "\"Can you tell me again at normal speed? I'll ask if I get lost.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Check What It Was",
+      guideFront: "Ask which one they meant when...",
+      guideBack: "An either-or question",
+      description: "Ask plainly which of two things they meant: a question or a criticism, a wish or an order, a real \"fine\" or a not-really \"fine\". \"Is that a question, or are you unhappy with how I did it?\" You name both and let them choose.\n\nIt works because tone can turn one sentence into two different things, and you honestly cannot tell which one you got. Sometimes they cannot tell either. An either-or question makes them pick, and say it straight. Whichever they pick, you know what you are dealing with: a real question you can answer, or a real complaint you can talk about.\n\nIt is a question, not a charge. Keep your voice curious, and give both options the same weight. If the second option sounds like the one you believe, it stops being a question.\n\nTypical phrases: \"Is that a question, or a criticism?\", \"Is that a request, or does it need to happen now?\", \"Is that a real fine, or a not-really fine?\", \"Are you explaining, or are you annoyed?\"\n\nThree things to check:\n\n1. Question or criticism — \"Is that a real question, or are you unhappy with it?\"\n\n2. Wish or order — \"Is that an 'as soon as you can', or a 'drop everything'?\"\n\n3. Okay or not okay — \"Is that a real fine, Mum, or a not-really fine?\"\n\nMindset: you are not catching them out. You are letting them choose what they meant.",
+      inputs: [
+        { q: "Karen says, \"Send me the file,\" while you are halfway through the report she asked for this morning.", a: "\"Is that an 'as soon as you can', or a 'drop everything'?\"", bundle: 'free' },
+        { q: "Alex looks at the bookshelf and asks, sharply, \"Why did you do it like that?\"", a: "\"Is that a question, or are you unhappy with how I did it?\"", bundle: 'free' },
+        { q: "Your mum's \"Fine\" is flat, and she will not look at you.", a: "\"Is that a real fine, Mum, or a not-really fine?\"", bundle: 'free' },
+        { q: "Tom's \"That's the wrong template!\" came across the room at full volume.", a: "\"Was that a heads-up, Tom, or are you annoyed with me?\"", bundle: 'free' },
+        { q: "Josh's \"Are you done yet?\" could mean anything from a question to a complaint.", a: "\"Is that a 'how long?' or a 'hurry up'? I can do either.\"", bundle: 'free' },
+        { q: "Mia's \"What do you want?\" is short, and you cannot tell if it is about you.", a: "\"Is that a 'what is it?' or a 'go away'?\"", bundle: 'pro' },
+        { q: "The customer's \"I asked for oat milk\" sounds bigger than one wrong coffee.", a: "\"Is it just the milk, or is there something else I can put right?\"", bundle: 'pro' },
+        { q: "Jonas has slowed right down: \"No. You. Draw. Two. First.\"", a: "\"Are you explaining it, or do you think I'm being slow?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say It Back Softer",
+      guideFront: "Repeat their point calmly when...",
+      guideBack: "A neutral restatement",
+      description: "Put their message into your own calm words and say it back, so the content is received and the tone is not. \"So you need the report by three. Got it.\" It is a mirror with the edge taken off.\n\nIt works for two reasons. They hear that you got the message, which takes away the reason to push harder. And they hear their own point in a normal voice, right next to the way they said it, so the difference speaks for itself. You have not said one word about their tone.\n\nKeep the content exactly as they meant it and change only the voice. It is not copying their words back, and never in their tone: that is mimicking, and it starts a fight.\n\nTypical phrases: \"So you need it now. Okay.\", \"So it should have been the other one.\", \"So you'd rather I did it differently.\", \"So this isn't a good time.\"\n\nThree things to say back:\n\n1. The content — what they need. \"So you need the budget file before your meeting.\"\n\n2. The wish under it — what they seem to want. \"So you'd have put the shelves the other way round.\"\n\n3. The feeling under the short word — what \"fine\" or \"what\" seems to carry. \"So you're disappointed I can't come.\"\n\nMindset: you can take the message and leave the tone where it was.",
+      inputs: [
+        { q: "Karen has a meeting at ten. At five to, she leans in: \"Send me the file.\"", a: "\"So you need the budget file before your meeting. On it.\"", bundle: 'free' },
+        { q: "Alex is looking at the shelves you have just put in: \"Why did you do it like that?\"", a: "\"So you'd have put them in a different order.\"", bundle: 'free' },
+        { q: "Your mum's \"Fine\" comes with a sigh and her back to you.", a: "\"So you're disappointed I can't come this Sunday.\"", bundle: 'free' },
+        { q: "Tom's shout across the office: \"That's the wrong template!\"", a: "\"So I've used the old template and it needs the new one. Okay.\"", bundle: 'free' },
+        { q: "Josh, through the bathroom door: \"Are you done yet?\" He sounds rushed.", a: "\"So you're running late and need the bathroom. I'll be out in two.\"", bundle: 'free' },
+        { q: "Mia's \"What do you want?\" comes with her headphones still on.", a: "\"So now's not a good time. I'll come back in ten.\"", bundle: 'pro' },
+        { q: "The customer's \"I asked for oat milk\" is said loud enough for the queue to hear.", a: "\"So it should have been oat milk, and it isn't. I'll sort that.\"", bundle: 'pro' },
+        { q: "Jonas, slowly, for the third time: \"No. You. Draw. Two. First.\"", a: "\"So you've explained it three times and I keep getting it wrong. Fair enough.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say How It Sounded",
+      guideFront: "Describe what the tone did when...",
+      guideBack: "What the tone did, and a question",
+      description: "Say how it came across and what it did to you, without saying what they are, and then ask what they need. \"That came out like an order, and I bristled. What do you need?\" You describe the tone, not the person: \"that sounded sharp\", never \"you're rude\".\n\nIt works because the sharp person often has no idea how it came out. Said calmly, your description gives them a chance to hear it and say it again. \"You're rude\" starts an argument about their character, which nobody wins. \"That sounded sharp\" is about one sentence, and it is hard to argue with how something sounded to you.\n\nThe question at the end matters. It keeps the actual matter alive, and it shows you are not out to win. Not the same as Say How It Lands in Responding to Passive Aggression, which is about a hidden dig; here the sharpness is out in the open.\n\nTypical phrases: \"That came out like an order.\", \"That sounded like a telling-off.\", \"I got defensive just then.\", \"What do you need?\"\n\nThree ways to say how it sounded, each with a question after it:\n\n1. How it came across — \"That sounded like a telling-off. What's bothering you about it?\"\n\n2. What it did to you — \"The banging made me jump. Are you in a hurry?\"\n\n3. Who else heard it — \"That came across loud, in front of everyone. What do you need me to change?\"\n\nMindset: you are describing a sound, not judging a person.",
+      inputs: [
+        { q: "Karen's \"Send me the file\" came with no hello, and she was gone before you could reply. You find her at her desk.", a: "\"That came out like an order, and I bristled. Is something urgent going on?\"", bundle: 'free' },
+        { q: "Alex's \"Why did you do it like that?\" lands like a charge, and you feel yourself getting defensive.", a: "\"That sounded like a telling-off, and I got defensive. What's bothering you about it?\"", bundle: 'free' },
+        { q: "Your mum says \"Fine\" and turns away, and the kitchen goes quiet.", a: "\"That 'fine' sounded like a door shutting, Mum. What's wrong?\"", bundle: 'free' },
+        { q: "The whole office heard Tom shout, \"That's the wrong template!\"", a: "\"That came across loud, Tom, in front of everyone. What do you need me to change?\"", bundle: 'free' },
+        { q: "Josh bangs so hard on the bathroom door that you drop your toothbrush: \"Are you done yet?\"", a: "\"The banging made me jump. Are you in a hurry?\"", bundle: 'free' },
+        { q: "Mia's \"What do you want?\" makes you feel like an intruder in your own house.", a: "\"That sounded like I'm not welcome. Is now a bad time?\"", bundle: 'pro' },
+        { q: "The customer's \"I asked for oat milk\" is sharp enough that your colleague looks up.", a: "\"I'll fix it straight away. That sounded quite sharp, though. Is everything okay?\"", bundle: 'pro' },
+        { q: "Jonas is still spelling out the rule, slowly, while the others watch.", a: "\"When you say it that slowly, I feel about six. Which bit do I keep missing?\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  toneboundaries3: [
+    {
+      name: "Describe, Don't Debate",
+      guideFront: "Say how it sounds to you when...",
+      guideBack: "Your side of it, not a verdict",
+      description: "When they deny the tone — \"I'm not shouting!\" — don't argue about whether it is shouting. Say what it is like on your side. \"Maybe it doesn't feel loud to you. It does to me.\" You are not giving a verdict on them. You are reporting what you hear.\n\nIt works because \"Is this shouting?\" is an argument with no judge. They know how it feels from the inside; you know how it sounds from where you are standing. Argue about the word and you have started a second fight, louder than the first. Describe your side, and there is nothing left to deny: nobody can tell you how loud it sounds to you.\n\nTypical phrases: \"Maybe it doesn't feel loud to you. It does to me.\", \"Call it what you like. It's too loud for me.\", \"From where I'm standing, it's loud.\", \"I'm not saying you're shouting. I'm saying I can't think.\"\n\nThree ways to describe it:\n\n1. Their view and yours — \"It might not feel loud to you. It does to me.\"\n\n2. What it does to you — \"At this volume, I can't follow what you're saying.\"\n\n3. Let them keep the word — \"Fine, not shouting. It's still too loud for me.\"\n\nMindset: you don't have to win the word. Your side of it is enough.",
+      inputs: [
+        { q: "Your partner raises his voice in the kitchen about the bills. You say, quietly, \"We're both getting loud.\" He says, \"I'm not shouting!\"", a: "\"Maybe it doesn't feel loud to you. It does to me.\"", bundle: 'free' },
+        { q: "In a meeting, your colleague Dana snaps, \"Just send it already!\" You ask if she'd mind talking about it at a normal volume. She says, \"This is a normal volume.\"", a: "\"It might be for you. From where I'm sitting, it's too loud to think.\"", bundle: 'free' },
+        { q: "Your father raises his voice on the phone about Christmas. You say you want to hear him, but not while he's shouting. He says, \"I'm not shouting. This is just how I talk.\"", a: "\"I know it's how you talk. On the phone, it's still too loud for me.\"", bundle: 'free' },
+        { q: "Your teenage son yells, \"You never let me do anything!\" You answer quietly and slowly. He shouts, \"Stop acting like I'm screaming!\"", a: "\"I'm not saying you're screaming. I'm saying I can't hear you properly like this.\"", bundle: 'free' },
+        { q: "A customer on the phone is getting louder about a late delivery. You say, \"You're raising your voice.\" He says, \"I'm not raising my voice, I'm being clear!\"", a: "\"Okay, clear. On my end it still comes across as loud.\"", bundle: 'free' },
+        { q: "Your friend Maya snaps at you in a café about cancelled plans. You say that's coming out pretty sharp. She says, \"Sharp? I'm completely calm.\"", a: "\"Maybe you feel calm. To me it sounds sharp, and I'd like to talk properly.\"", bundle: 'pro' },
+        { q: "Your manager raises his voice about the figures. You say you want to fix it, and ask to go through it calmly. He says, \"If you think this is shouting, you've never heard shouting.\"", a: "\"Could be. It's still louder than I can work with.\"", bundle: 'pro' },
+        { q: "Your sister shouts across the table about who looks after Mum. You say, \"We're both getting loud.\" She says, \"I'm not angry, I'm passionate!\"", a: "\"Call it passion if you like. It's still too loud for me to listen.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Grant the Reason, Keep the Line",
+      guideFront: "Agree they have cause when...",
+      guideBack: "A yes to the reason, a no to the tone",
+      description: "When they justify the tone — \"You'd shout too if you'd had my day\" — accept the reason and keep your line. \"You might well be exhausted. I still need us to talk normally.\" The reason can be real. It just doesn't change how you want to be spoken to.\n\nIt works because a justification is usually half true, and arguing with the true half makes you look cold. Granting it takes away their reason to keep defending, and the word \"still\" carries your line through untouched. Two parts, one breath: yes to the reason, no to the tone.\n\nTypical phrases: \"You might be right. I still…\", \"That sounds like a rough day. I still want…\", \"Fair enough — and I still need…\", \"I get why. I'd still like…\"\n\nThree ways to grant the reason:\n\n1. Grant the day — for stress and tiredness. \"You've had a long day. I still need a normal voice.\"\n\n2. Grant the point — when they are right about the problem. \"You're right, I forgot. I still want us to talk about it calmly.\"\n\n3. Grant the label — when they turn it on you. This is Fogging, from Manuel J. Smith's When I Say No, I Feel Guilty, used here for the tone. \"You might be right that I'm sensitive. I'd still like a normal voice.\"\n\nMindset: they can have a good reason, and you can still have a line.",
+      inputs: [
+        { q: "Your partner shouts about the dishes after a long shift. You say, quietly, that you want to hear it, but not like this. She says, \"You'd shout too if you'd had my day.\"", a: "\"You might well be exhausted. I still need us to talk normally.\"", bundle: 'free' },
+        { q: "Your colleague Jonas barks at you over a missing file. You ask if he could ask rather than tell. He says, \"I've asked you three times already!\"", a: "\"That's fair, and I'm sorry it took three. I still want to be asked, not barked at.\"", bundle: 'free' },
+        { q: "Your mother raises her voice because you're late again. You say, \"We're getting loud.\" She says, \"Of course I'm loud — I've been waiting an hour!\"", a: "\"You're right, I'm late, and that's on me. I'd still like us to talk without shouting.\"", bundle: 'free' },
+        { q: "Your boss snaps at you on a call about the client. You answer calmly and slowly. He says, \"I'm under a lot of pressure here, all right?\"", a: "\"I can hear that. I still need us to keep it level so I can help.\"", bundle: 'free' },
+        { q: "Your teenage daughter yells about her phone being taken away. You say you'll listen when she's not shouting. She says, \"You'd yell too if someone took your phone!\"", a: "\"Maybe I would. I'll still listen when it's at a normal volume.\"", bundle: 'free' },
+        { q: "Your neighbour shouts over the fence about your dog. You ask if he'd mind talking about it calmly. He says, \"Calmly? That dog barked all night!\"", a: "\"That's a real problem, and I want to fix it. I still need you to stop shouting at me.\"", bundle: 'pro' },
+        { q: "Your brother raises his voice about money you owe him. You say, \"You're raising your voice.\" He says, \"God, you're so sensitive.\"", a: "\"You might be right that I'm sensitive. I'd still like a normal voice.\"", bundle: 'pro' },
+        { q: "A customer snaps at you at the desk about the queue. You say you want to help and would like to keep it calm. She says, \"I've been standing here for forty minutes!\"", a: "\"Forty minutes is too long, you're right. I still need you to stop shouting so I can sort it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Repeat the Line",
+      guideFront: "Say the same sentence again when...",
+      guideBack: "The same sentence, just as calm",
+      description: "When they argue with your line, don't argue back — say it again. Same sentence, same calm tone. \"I want to hear this. Not like this.\" The idea is the Broken Record from Manuel J. Smith's When I Say No, I Feel Guilty: you repeat your position without adding new reasons.\n\nIt works because every new reason is a new thing to argue with. A long answer invites a long reply; the same short sentence gives them nothing to grab. Said a second and a third time, calmly, it shows that the line is not up for debate, and that you are not going anywhere either.\n\nThe calm is the strategy. Repeat it louder or faster and it becomes a fight.\n\nTypical phrases: \"I want to hear this. Not like this.\", \"I'll listen when it's quieter.\", \"Same as before: a normal voice, please.\", \"I hear you. And — not like this.\"\n\nThree ways to repeat it:\n\n1. Word for word — \"I want to hear this. Not like this.\"\n\n2. With a short nod first — \"I hear you. I still want to hear it calmer.\"\n\n3. Shorter each time — \"Not like this.\"\n\nMindset: you don't need a new argument. You need the same sentence, said calmly again.",
+      inputs: [
+        { q: "Your partner raises his voice about the holiday. You say, \"I want to hear this. Not like this.\" He says, \"Oh, so now I'm not allowed to be upset?\"", a: "\"You can be upset. I want to hear it. Not like this.\"", bundle: 'free' },
+        { q: "Your colleague Priya snaps at you in the corridor about the rota. You say you'll listen when it's quieter. She says, \"That's ridiculous. Just answer me!\"", a: "\"I'll answer. When it's quieter.\"", bundle: 'free' },
+        { q: "Your father shouts on the phone about the car. You say you'd like to talk at a normal volume. He says, \"Don't you lecture me about volume!\"", a: "\"I'm not lecturing. I'd like us to talk at a normal volume.\"", bundle: 'free' },
+        { q: "Your teenage son yells about his curfew. You say you'll talk about it when he's not yelling. He yells, \"You never listen anyway!\"", a: "\"I'm listening. I'll talk about it when you're not yelling.\"", bundle: 'free' },
+        { q: "A customer on the phone shouts about a refund. You say you want to help, and you need him to stop shouting. He says, \"Then help me!\"", a: "\"I want to help. I need you to stop shouting.\"", bundle: 'free' },
+        { q: "Your friend Leo snaps at you about money in the pub. You say, \"Not like this, Leo.\" He says, \"Like what? Like an adult?\"", a: "\"Not like this. Let's talk when it's calmer.\"", bundle: 'pro' },
+        { q: "Your manager raises her voice about the report. You say you want to fix it, and you need a calmer tone to do it. She says, \"My tone is not the issue here!\"", a: "\"I want to fix it. I need a calmer tone to do it.\"", bundle: 'pro' },
+        { q: "Your aunt shouts across the kitchen about the wedding seating. You say you'd like to talk, but not at this volume. She says, \"Oh, here we go again.\"", a: "\"Yes, here we go again: not at this volume.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Call a Pause",
+      guideFront: "Suggest a break and a time when...",
+      guideBack: "A break, with a time to come back",
+      description: "When it keeps going or keeps rising, suggest a break — and say when you will come back. \"Let's stop for ten minutes. I'll come back at half past.\" The time is what makes it a pause and not a walk-out.\n\nIt works because heat drops with time. Twenty minutes apart does more for the volume than any sentence. Without a time, a pause feels like being left, and the other person often follows you to finish it. With a time, they know the conversation is not over — only this round of it.\n\nThen keep your word: come back when you said you would.\n\nTypical phrases: \"Let's stop for ten minutes.\", \"I'll come back at half past.\", \"Can we pick this up after dinner?\", \"Let's take a break and try again at four.\"\n\nThree ways to call a pause:\n\n1. Minutes — a short break. \"Let's stop for ten minutes and try again.\"\n\n2. Later today or tomorrow — when it needs a night. \"Let's leave it for tonight. Tomorrow at breakfast?\"\n\n3. Until you can stop — when you can't leave, in a car or a meeting. \"Let's not do this while I'm driving. At home, I'm all yours.\"\n\nMindset: a pause with a time is not running away. It is the fastest way back to the conversation.",
+      inputs: [
+        { q: "Your partner shouts about the weekend plans. You say, \"We're both getting loud.\" He says, \"Of course I'm loud, you never listen!\"", a: "\"Let's stop for ten minutes. I'll come back at half past, and I'll listen.\"", bundle: 'free' },
+        { q: "Your colleague Sam snaps at you about the budget in his office. You ask if he'd mind talking at a normal volume. He keeps going, louder.", a: "\"Let's take a break. I'll come back at three, and we'll go through it.\"", bundle: 'free' },
+        { q: "Your daughter yells about her exam results. You answer quietly and slowly. She yells, \"Stop talking to me like that!\"", a: "\"Okay. Let's stop for a bit. I'll knock on your door in twenty minutes.\"", bundle: 'free' },
+        { q: "Your mother shouts on the phone about the funeral plans. You say you want to hear her, but not while she's shouting. She says, \"Then when, exactly?\"", a: "\"Tonight at eight. Let's stop now, and I'll call you then.\"", bundle: 'free' },
+        { q: "Your housemate raises his voice about the bills. You say you'll listen when it's quieter. He says, \"It's not going to get quieter!\"", a: "\"Then let's leave it until tomorrow. Breakfast, nine o'clock?\"", bundle: 'free' },
+        { q: "Your partner raises her voice in the car on the way to her parents'. You say, quietly, \"We're getting loud.\" She says, \"Well, I'm angry!\"", a: "\"That's fair. Let's not do this while I'm driving. Tonight, at home, I'm all yours.\"", bundle: 'pro' },
+        { q: "Your manager snaps at you in a one-to-one about a missed deadline. You say you want to fix it and ask to keep it calm. He says, \"Calm? We've lost the client!\"", a: "\"Let's take fifteen minutes. I'll come back at two with a plan.\"", bundle: 'pro' },
+        { q: "Your friend Nora shouts at you about something you said at the party. You say, \"I want to hear this. Not like this.\" She says, \"This is the only way you ever listen!\"", a: "\"Let's stop for tonight. Can I call you tomorrow at six?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name the Consequence",
+      guideFront: "Say what you'll do next when...",
+      guideBack: "A calm if-then about your own action",
+      description: "When it keeps going after you have asked, say calmly what you will do if it carries on. \"If it stays at this volume, I'll end the call.\" It is not a threat and not a punishment. It is information about your own next step.\n\nIt works because a request can be ignored, but a plan is yours. You are not telling them what they must do — you are telling them what you will do. That makes it something you can actually carry out, and it gives them a fair warning and a real choice.\n\nKeep it to something you can and will do: end the call, leave the room, carry on by email. A consequence you won't carry out teaches them that your words don't count.\n\nTypical phrases: \"If it stays at this volume, I'll…\", \"If the shouting carries on, I'm going to…\", \"If we can't keep it level, I'll…\", \"Then I'll go, and we'll talk tonight.\"\n\nThree kinds of consequence:\n\n1. End the call — \"If it stays this loud, I'll hang up and ring you tonight.\"\n\n2. Leave the room — \"If this keeps going, I'm going to step outside for a while.\"\n\n3. Change how you talk — \"If we can't keep it level, I'll put the rest in an email.\"\n\nMindset: a consequence is a plan, not a punishment. Say only what you will really do.",
+      inputs: [
+        { q: "Your brother shouts on the phone about your mum's care. You say, \"I want to hear this. Not like this.\" He gets louder.", a: "\"If it stays at this volume, I'll end the call and ring you tonight.\"", bundle: 'free' },
+        { q: "Your colleague Marcus raises his voice across the desk about a mistake. You ask him to keep it down. He says, \"I'll talk however I want.\"", a: "\"Okay. If it stays this loud, I'll go back to my desk and email you instead.\"", bundle: 'free' },
+        { q: "Your partner shouts about money in the living room. You say, \"We're both getting loud.\" She keeps going.", a: "\"If this carries on, I'm going for a walk. I'll be back in half an hour.\"", bundle: 'free' },
+        { q: "A customer on the phone swears at you about a cancelled order. You say you want to help and ask him to stop shouting. He says, \"Then do your job!\"", a: "\"I want to. If the shouting continues, I'll end this call, and you can write to us.\"", bundle: 'free' },
+        { q: "Your teenage son yells through his door about his laptop. You say you'll talk when he's not yelling. He keeps yelling.", a: "\"If you keep yelling, I'm going downstairs. Come and find me when you're ready.\"", bundle: 'free' },
+        { q: "Your father raises his voice at dinner about your new job. You say, \"Dad, that's too loud.\" He says, \"Don't you dare threaten me.\"", a: "\"It's not a threat. If it stays like this, I'll go home early, and we'll talk on Sunday.\"", bundle: 'pro' },
+        { q: "Your manager shouts at you on a video call. You ask, calmly, to keep it level. She gets louder.", a: "\"If it stays at this volume, I'll leave the call and send you my notes in writing.\"", bundle: 'pro' },
+        { q: "Your ex shouts at you when you drop off the kids. You say you want to talk about the schedule, but not like this. He says, \"What, you're going to walk off?\"", a: "\"Yes. If it stays like this, I'll go, and we'll sort the schedule by text.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Follow Through",
+      guideFront: "Do what you said when...",
+      guideBack: "A short exit, with a way back",
+      description: "When you have said what you will do and it keeps happening, do it — briefly, without a speech, and with an offer to come back. \"I said I'd hang up. I'm going to. I'll call you tonight.\" It is not a punishment and not a last word. It is keeping your word.\n\nIt works because people learn what your line means from what you do, not from what you say. Do it once, calmly, and next time the warning is enough. Don't do it, and every warning after that is noise. The offer to come back matters: it shows you are leaving the shouting, not the person.\n\nKeep it short. A long goodbye is a new argument.\n\nAnd if you ever feel unsafe, leave. That is not a communication problem, and you don't owe anyone a sentence first.\n\nTypical phrases: \"I said I'd go, so I'm going.\", \"I'm hanging up now. I'll call you at eight.\", \"Back in half an hour.\", \"Let's pick this up in writing.\"\n\nThree ways to follow through:\n\n1. End the call — \"I said I'd hang up. I'm going to now. I'll call you at eight.\"\n\n2. Leave the room — \"I'm going for that walk. Back at seven.\"\n\n3. Change the channel — \"I'm stopping here. You'll have the rest by email this afternoon.\"\n\nMindset: doing what you said, calmly, is what makes your words count next time.",
+      inputs: [
+        { q: "Your brother shouts on the phone. You ask for a normal voice, then say you'll end the call if it stays this loud. He keeps shouting.", a: "\"I said I'd hang up, so I'm going to. I'll call you tonight at eight.\"", bundle: 'free' },
+        { q: "Your partner shouts in the kitchen. You say that if it carries on, you'll go for a walk. He says, \"Fine, go then!\"", a: "\"I'm going. Back in half an hour, and then I want to talk.\"", bundle: 'free' },
+        { q: "Your colleague Ellen keeps raising her voice at your desk. You said that if it stayed this loud, you'd carry on by email. She hasn't stopped.", a: "\"I'm going to stop here. You'll have my answer by email before lunch.\"", bundle: 'free' },
+        { q: "A customer on the phone is shouting about a refund. You asked him to stop and said you'd end the call if he swore again. He swears again.", a: "\"I'm ending the call now. You can write to us at the address on your order.\"", bundle: 'free' },
+        { q: "Your teenage daughter is yelling about the phone rules. You said you'd go downstairs if the yelling went on. It goes on.", a: "\"I'm going downstairs now. Come down when you want to talk. I'll be there.\"", bundle: 'free' },
+        { q: "Your father raises his voice at dinner. You said that if it stayed like this, you'd go home early. He says, \"Oh, so you're just going to storm off?\"", a: "(Calmly, putting on your coat.) \"Not storming. Just going. I'll call you on Sunday.\"", bundle: 'pro' },
+        { q: "Your manager is shouting on a video call. You said you'd leave the call if it stayed at this volume. It stays.", a: "\"I'm going to leave the call now. I'll send my notes this afternoon, and I'm happy to talk again tomorrow.\"", bundle: 'pro' },
+        { q: "Your ex shouts at you at the school gate about the weekend. You said you'd go and sort it by text if it stayed like this. He gets louder.", a: "\"I'm going now. I'll text you about Saturday tonight.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  toneboundaries4: [
+    {
+      name: "Thank the Shift",
+      guideFront: "Notice the calmer tone when...",
+      guideBack: "A short thanks, with no victory in it",
+      description: "When their voice comes down, notice it — briefly, warmly, and without a hint of winning. \"Thanks. That's easier.\" Then get on with what they were trying to say. It is not \"See? Wasn't that better?\" and it is not a lesson on how they spoke before.\n\nIt works because calming down in the middle of an argument is hard, and they just did it. A small thanks makes the calmer tone worth it, so it is more likely next time. A victory line does the opposite: it turns their climb-down into a defeat, and people who feel beaten often get loud again. Saying nothing can work too, but a short thanks tells them you noticed — and that you are ready to listen now.\n\nTypical phrases: \"Thanks. That's easier.\", \"Thank you — I can hear you better now.\", \"That helps. Go on.\", \"Thanks. So, what's the problem?\"\n\nThree ways to thank the shift:\n\n1. The plain thanks — \"Thanks. That's easier.\"\n\n2. The thanks and the subject — \"Thanks. So — the deadline. What's the problem?\"\n\n3. The shared reset — \"That's better for both of us. Where were we?\"\n\nMindset: their calmer voice is the result you wanted. Thank it, and let it be enough.",
+      inputs: [
+        { q: "Your colleague Marcus raises his voice in a meeting about the new schedule. You stay calm and say you'd like to hear it at a normal volume. He sighs, sits back and says, more quietly, \"Fine. The schedule doesn't work for me.\"", a: "\"Thanks, that's easier to hear. Which part doesn't work?\"", bundle: 'free' },
+        { q: "Your partner snaps, \"Can you just stop!\" while you're both cooking. You say quietly that you'd rather talk without snapping. They put the knife down and say, in a normal voice, \"I need you to stop moving my things.\"", a: "\"Thanks. Okay — which things?\"", bundle: 'free' },
+        { q: "A customer is shouting on the phone about a late delivery. You speak slowly and quietly and tell her you want to help. She stops, breathes out and says, \"Right. Okay. It was due on Monday.\"", a: "\"Thank you. Monday — let me look that up now.\"", bundle: 'free' },
+        { q: "Your teenage son yells, \"You never listen!\" You stay calm and say you'll listen if he talks to you, not at you. He drops onto a chair and mutters, \"Fine. I need a lift on Saturday.\"", a: "\"Thanks for that. Saturday — what time?\"", bundle: 'free' },
+        { q: "Your dad raises his voice about the cost of the wedding. You lower yours and ask if you can talk about it calmly. He nods, and his voice drops: \"All right. I just think it's a lot of money.\"", a: "\"Thanks, Dad. That helps. Tell me what worries you about the cost.\"", bundle: 'free' },
+        { q: "Your manager snaps, \"Just get it done!\" across the office. You calmly ask if you can go through it in her office. Inside, she speaks normally: \"Okay. The client has called me twice this morning.\"", a: "\"Thanks — this is much easier. What did the client say?\"", bundle: 'pro' },
+        { q: "Your neighbour shouts over the fence about your dog. You say you'd like to sort it out, but not like this. He lowers his voice: \"Look, it barks every morning at six.\"", a: "\"Thank you. I can hear you properly now. Every morning at six?\"", bundle: 'pro' },
+        { q: "Your friend Jess writes in capitals in the group chat. You reply that you'd like to talk it through without the caps. She writes back in normal letters: \"ok. I'm annoyed you booked without asking.\"", a: "\"Thanks for that. Let's talk about the booking — can I call you tonight?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Take the Apology",
+      guideFront: "Accept the sorry cleanly when...",
+      guideBack: "A clean acceptance, then the subject",
+      description: "When they apologise for snapping or shouting, accept it — cleanly, in a sentence — and then go back to the subject. \"Thanks for saying that. So — Friday.\" No lecture on how it felt, no \"you really need to work on that\", and no asking for a better apology.\n\nIt works because an apology is a risk. They have just admitted they were wrong, and your answer decides whether that was worth it. Accept it simply, and saying sorry becomes easy for them, which is exactly what you want more of. Add a lecture, and they learn that apologising starts a second argument. Going back to the subject also shows that the sharp moment is over and the real conversation can start.\n\nTypical phrases: \"Thanks for saying that.\", \"Thank you. I appreciate it.\", \"Apology accepted. So, about Friday…\", \"No harm done. Let's start again.\"\n\nThree ways to take it:\n\n1. The plain acceptance — \"Thanks. I appreciate that.\"\n\n2. The acceptance and the subject — \"Thanks for saying it. So — the report. Is Friday still okay?\"\n\n3. The fresh start — \"Apology accepted. Let's start again.\"\n\nMindset: an apology is a gift that was hard to give. Take it, and do not ask for a better one.",
+      inputs: [
+        { q: "Your colleague Priya snaps, \"Not now!\" when you ask about the report. You say you'll come back when she's ready. An hour later she comes to your desk: \"Sorry I bit your head off earlier.\"", a: "\"Thanks for saying that. So — the report. Is Friday still okay?\"", bundle: 'free' },
+        { q: "Your partner shouts about the bank card. You say you'll talk when you're both calmer and go for a walk. When you get back, they say, \"I'm sorry I yelled. That wasn't fair.\"", a: "\"Thank you. I appreciate it. Shall we look at the statement together?\"", bundle: 'free' },
+        { q: "Your mum raises her voice on the phone about Christmas. You ask her to speak more calmly. She stops and says, \"Sorry, love. I didn't mean to shout.\"", a: "\"That's okay, Mum. Thanks. So — Christmas. What were you hoping for?\"", bundle: 'free' },
+        { q: "A customer snaps at you at the till. You stay calm and keep serving him. As he packs his bag, he says, \"Sorry. Bad day. Not your fault.\"", a: "\"No problem at all, thanks. Have you got everything you need?\"", bundle: 'free' },
+        { q: "Your teenage daughter screams, \"Get out of my room!\" You say you'll talk later and leave. At dinner she says, \"Sorry I screamed at you.\"", a: "\"Thanks, love. Apology accepted. Can we talk about the phone bill now?\"", bundle: 'free' },
+        { q: "Your manager snaps at you in front of the team. You ask to talk in private. The next morning he says, \"I was out of line yesterday. I'm sorry.\"", a: "\"Thanks, I appreciate you saying it. Can we go over the plan for the launch?\"", bundle: 'pro' },
+        { q: "Your brother yells at you about Dad's care. You say you'll talk when it isn't a shouting match and end the call. That night he texts, \"Sorry about earlier. I was stressed.\"", a: "\"Thanks, I get it. When can we talk about the care plan?\"", bundle: 'pro' },
+        { q: "Your flatmate snaps about the noise at midnight. You turn the music down and say you'll talk in the morning. At breakfast she says, \"Sorry about last night. I was half asleep and grumpy.\"", a: "\"No harm done, thanks. Shall we agree a quiet time for weeknights?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Come Back as Promised",
+      guideFront: "Return and reopen the subject when...",
+      guideBack: "An invitation to try again",
+      description: "When you stopped a heated talk and said you would come back, come back — at the time you said — and open the subject again. \"I said I'd come back. Shall we try again?\" The return is what makes the pause a pause and not a door slammed in their face.\n\nIt works because a pause only calms things if the other person trusts that it will end. If you say \"ten minutes\" and come back in ten, they learn that stopping is safe, and the next pause will be easier to take. If you never come back, the pause becomes a way of winning by walking out, and next time they will chase you to the door. Reopening the subject also shows you were never trying to avoid it — only the shouting.\n\nTypical phrases: \"I said I'd come back.\", \"It's four o'clock, as I said.\", \"Shall we try again?\", \"Is now still a good time?\"\n\nThree ways to come back:\n\n1. Name the promise — \"I said I'd come back at four. Here I am.\"\n\n2. Reopen the subject — \"So — the rota. Where did we get to?\"\n\n3. Check they're ready — \"Is now still good, or would after lunch be better?\"\n\nMindset: a pause only works if you come back. Keep the time you gave, even when it would be easier not to.",
+      inputs: [
+        { q: "You and your partner are arguing about money, and they're getting louder. You say you'll take ten minutes and come back. Ten minutes later, you walk back into the kitchen.", a: "\"I said I'd come back. Shall we try again — the credit card?\"", bundle: 'free' },
+        { q: "Your colleague Tom is raising his voice about the rota. You say, \"Let's stop here. I'll come by at three.\" It's three o'clock, and you're at his desk.", a: "\"Hi — three o'clock, as I said. Shall we look at the rota again?\"", bundle: 'free' },
+        { q: "Your son shouts about the new homework rules. You say you'll talk about it after dinner. Dinner is over, and he's on the sofa.", a: "\"Okay, it's after dinner, like I said. Let's talk about the homework.\"", bundle: 'free' },
+        { q: "A client is shouting on a call about the invoice. You say you'll check the figures and call back within the hour. Forty minutes later, you dial her number.", a: "\"Hi, it's Lena — calling back as promised. I've got the figures. Can we go through them?\"", bundle: 'free' },
+        { q: "Your sister gets loud about the holiday plans. You say you'll ring her tomorrow when you've both slept on it. It's the next evening, and you call.", a: "\"Hi. I said I'd ring today. Can we have another go at the holiday plans?\"", bundle: 'free' },
+        { q: "Your manager is snapping at everyone in the budget meeting. You say you'll come to her office at four to finish it. It's four, and you knock on her door.", a: "\"It's four — I said I'd come back. Is now still good to talk about the budget?\"", bundle: 'pro' },
+        { q: "Your dad raises his voice about selling the house. You say you'll come back on Sunday to talk it through. It's Sunday, and you're on his doorstep.", a: "\"I said I'd come back on Sunday, Dad. Can we talk about the house again?\"", bundle: 'pro' },
+        { q: "Your partner sends angry messages in capitals late at night. You write, \"I'm going to stop for tonight. Let's talk at breakfast.\" It's breakfast, and they're pouring coffee.", a: "\"Morning. I said we'd talk at breakfast. Do you still want to?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Now Take Their Point",
+      guideFront: "Answer their real concern when...",
+      guideBack: "An acknowledgement of what they got right",
+      description: "Once the tone is gone, take their actual concern seriously. \"You're right that the deadline's tight. What would help?\" The shouting was the problem with how they said it — it does not mean what they said was wrong.\n\nIt works because most people raise their voice about something that matters to them. If you hold the line on the tone and then ignore the point, they learn that calming down gets them nothing, and shouting was the only way to be heard. Take the point seriously once they speak normally, and the calm voice becomes the one that works. It also keeps the boundary honest: you were never refusing to hear them, only refusing to be shouted at.\n\nTypical phrases: \"You're right about that.\", \"That's a fair point.\", \"That's a real problem. Let's fix it.\", \"What would help most?\"\n\nThree ways to take it:\n\n1. Name what is true — \"You're right — two weeks is too long to wait.\"\n\n2. Ask what would help — \"That's fair. What do you need from me?\"\n\n3. Put a step on it — \"That's a real problem. Let me fix it now.\"\n\nMindset: the tone was the problem, not the point. Once the tone has gone, the point deserves a real answer.",
+      inputs: [
+        { q: "Your colleague shouts that your team always misses deadlines. You ask him to say it calmly. He does: \"We've been waiting on your figures for two weeks.\"", a: "\"You're right, two weeks is too long. What do you need first?\"", bundle: 'free' },
+        { q: "Your partner yells that you never help at bedtime. You say you'd like to talk without shouting. They sit down and say quietly, \"I do bedtime five nights out of seven.\"", a: "\"That's true, and it isn't fair. Which nights do you want me to take?\"", bundle: 'free' },
+        { q: "A customer raises her voice about her bill. You stay calm and ask her to show you. She calms down: \"I've been charged twice for the same month.\"", a: "\"Charged twice — that's a real problem. Let me fix it now.\"", bundle: 'free' },
+        { q: "Your teenage daughter yells that you never let her go anywhere. You ask her to tell you calmly. She does: \"Everyone else can stay out until ten.\"", a: "\"Okay, that's a fair thing to raise. Let's talk about ten.\"", bundle: 'free' },
+        { q: "Your neighbour shouts about your car blocking his drive. You stay calm, and his voice drops: \"I couldn't get to work on time this morning.\"", a: "\"That's fair. You can't be late because of me. I'll park on the street from now on.\"", bundle: 'free' },
+        { q: "Your manager snaps at you about the report. You ask for ten minutes, and when you come back she's calm: \"The numbers in section two were wrong, and the client saw them.\"", a: "\"You're right, they were wrong. Let me find out how and fix it today.\"", bundle: 'pro' },
+        { q: "Your mum raises her voice on the phone. You ask her not to shout. She goes quiet, then says, \"I just never see the children anymore.\"", a: "\"That's fair, Mum. It's been months. Let's put a date in now.\"", bundle: 'pro' },
+        { q: "A team member yells in the stand-up that he's doing everyone's work. You stop the meeting for a break. Afterwards he says calmly, \"I've covered three people's tickets this week.\"", a: "\"Three people's tickets is too much. Let's take it to planning together.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Own Your Part",
+      guideFront: "Admit your own sharpness when...",
+      guideBack: "A short apology for your share",
+      description: "If you got sharp too, say so — briefly, and only about your share. \"I got loud too. I'm sorry for that part.\" No \"but you started it\", no long confession, and no taking the blame for everything.\n\nIt works because it is very hard to hear \"please lower your voice\" from someone who was also shouting. Owning your part removes that problem: it shows you hold yourself to the same rule you asked of them. It often makes it easier for them to own theirs, too. And it keeps the apology the right size — your share, not the whole argument — so you can still go back to the subject on equal footing.\n\nTypical phrases: \"I got loud too.\", \"I snapped back. That's on me.\", \"I'm sorry for my part.\", \"I was sharp with you as well.\"\n\nThree ways to own it:\n\n1. Just your part — \"I got loud too. I'm sorry for that part.\"\n\n2. No \"but\" — \"I was sharp with you. That's on me.\" Stop there.\n\n3. Own it and go back to the subject — \"I raised my voice as well. Sorry. Can we look at the money again?\"\n\nMindset: owning your part does not cancel your boundary. It makes it fair.",
+      inputs: [
+        { q: "You and your partner both get loud about the holiday. Now it's quiet, and you're both clearing up in the kitchen.", a: "\"I got loud too. I'm sorry for my part.\"", bundle: 'free' },
+        { q: "Your colleague snaps at you in a meeting, and you snap back. Afterwards he comes over to your desk.", a: "\"I snapped back in there. That wasn't okay of me.\"", bundle: 'free' },
+        { q: "Your teenage son shouts at you, and you shout back even louder. Now he's in his room with the door open.", a: "\"I shouted too, and I'm the adult here. I'm sorry.\"", bundle: 'free' },
+        { q: "You ask your mum to stop shouting, but your own voice is half a shout. She calms down and goes quiet.", a: "\"Mum, I asked you to stop shouting, and I was shouting too. Sorry.\"", bundle: 'free' },
+        { q: "Your friend raises his voice about the money he lent you, and you raise yours. The next day he texts, \"We good?\"", a: "\"I got sharp yesterday too. Sorry for that. Yes, we're good.\"", bundle: 'free' },
+        { q: "Your manager snaps at you, and you answer with a sarcastic comment. You both take a break. When she comes back, she's calm and ready to start.", a: "\"Before we start — I was sarcastic earlier. I'm sorry for that.\"", bundle: 'pro' },
+        { q: "Your partner shouts, you say you'll take a break, and you slam the door on the way out. When you come back, they say, \"Sorry I yelled.\"", a: "\"Thanks. And I slammed the door, which didn't help. Sorry.\"", bundle: 'pro' },
+        { q: "A customer shouts at you, and you get short and curt with her. She's calmer now and waiting for an answer.", a: "\"I'm sorry, I was short with you too. Let's sort this out.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name the Pattern",
+      guideFront: "Raise the repeat calmly when...",
+      guideBack: "A calm observation and a proposal",
+      description: "When the same sharp tone keeps coming back — the third time, not the first — raise the pattern in a calm moment, and agree how you will talk when it gets tense. \"It's the third time this month. Can we agree how we talk when it's tense?\" Not in the middle of the next storm, and not as a list of every time.\n\nIt works because one sharp moment is a bad day, but three is a habit, and a habit will not change one storm at a time. In the middle of an argument, \"you always do this\" is fuel. In a calm moment, the same thought becomes a shared problem you can solve together. The agreement is the point: a signal, a pause, a time to come back — something you both say yes to before the next time.\n\nTypical phrases: \"Can I raise something while it's calm?\", \"It's the third time this month.\", \"Can we agree what we do when it gets tense?\", \"What's going on when it gets like that?\"\n\nThree ways to name it:\n\n1. The pattern — \"Every Sunday the homework talk ends in shouting.\"\n\n2. The agreement — \"When it gets tense, can we both take ten minutes?\"\n\n3. The question behind it — \"What's going on for you when it gets like that?\"\n\nMindset: one storm is a bad day. A pattern needs a calm talk, not a bigger reaction.",
+      inputs: [
+        { q: "For the third time this month, a money talk with your partner has turned into shouting. Now it's Sunday morning, and you're both relaxed over coffee.", a: "\"Can I raise something while it's calm? It's the third money talk this month that's ended in shouting. Can we agree how we talk when it gets tense?\"", bundle: 'free' },
+        { q: "Your colleague Dan has snapped at you in three meetings in a row. Now you're both at the coffee machine, and he's in a good mood.", a: "\"Can I mention something while it's quiet? It's got sharp between us in three meetings now. How do we want to handle it next time?\"", bundle: 'free' },
+        { q: "Every Sunday night, your daughter screams when you ask about homework. Now it's Saturday breakfast, and everyone's in a good mood.", a: "\"Every Sunday the homework talk ends in shouting. What if we agree a time for it, and a way to say when it's too much?\"", bundle: 'free' },
+        { q: "Every time you bring up your dad's driving, he shouts. Now you're out on a calm walk together.", a: "\"Dad, every time we talk about the driving, it gets loud. Can we agree to talk about it without shouting?\"", bundle: 'free' },
+        { q: "Every time a bill arrives, your flatmate snaps at you. Tonight it's quiet, and you're both watching TV.", a: "\"Each time a bill comes in, we end up snapping at each other. Shall we agree a way to do the bills?\"", bundle: 'free' },
+        { q: "Your manager raises her voice in most Monday meetings. Now you're in your one-to-one, and the mood is relaxed.", a: "\"Can I raise a pattern? Most Mondays the meeting gets loud. I'd like us to agree how we handle it when it's tense.\"", bundle: 'pro' },
+        { q: "Every family dinner this year has ended with your brother shouting about politics. Now it's just the two of you, walking to the car.", a: "\"Every dinner this year has ended in shouting about politics. Can we agree what we do when it starts?\"", bundle: 'pro' },
+        { q: "Your partner snaps at you, then apologises — the third time this week. They say, \"Sorry. I don't know why I keep doing that.\"", a: "\"Thanks. It's the third time, though. When we're both calm, can we work out what's going on?\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  networking1: [
+    {
+      name: "What Brought You Here?",
+      guideFront: "Ask about the event you share when...",
+      guideBack: "An opening question about the shared moment",
+      description: "Open with the thing you are both standing in — the event, the talk, the room — instead of with yourself or a job title. \"What brought you here tonight?\"\n\nIt works because the event is the one thing you definitely share. A question about it is easy to answer and not personal, and the answer tells you far more than a title would: whether they came to learn, to hire, to find people, or because a friend dragged them along. That reason is usually the best thread in the whole conversation.\n\nIt is a question with a purpose. At a party, small talk can go anywhere. At an event, you want to find out what the other person came for, and this asks exactly that, in a friendly way.\n\nTypical phrases: \"What brought you here tonight?\", \"What did you make of that talk?\", \"Is this your first time at one of these?\"\n\nThree things to ask about:\n\n1. The reason — why they came. \"What made you sign up for this one?\"\n\n2. The content — the talk, the panel, the session you both just heard. \"What did you make of that last speaker?\"\n\n3. The setting — the room, the queue, the coffee, the breakout room. \"Is the coffee line always this long here?\"\n\nMindset: you are not interrupting anyone. Everyone in this room came to talk to someone.",
+      inputs: [
+        { q: "You are both refilling your coffee at a teachers' conference, between sessions.", a: "\"What brought you here today — the whole conference, or one session?\"", bundle: 'free' },
+        { q: "The talk at a tech meetup has just ended, and the developer next to you is still in her seat.", a: "\"What did you make of that talk? I'm still thinking about the part on testing.\"", bundle: 'free' },
+        { q: "You are standing near the door at a local business evening, and so is a man holding a name badge he has not put on.", a: "\"Is this your first one of these? It's mine.\"", bundle: 'free' },
+        { q: "At a nursing conference, the woman beside you in the lunch queue is reading the programme.", a: "\"Which sessions are you here for? I can't decide about this afternoon.\"", bundle: 'free' },
+        { q: "At the launch of a friend's design studio, you end up beside another guest at the window.", a: "\"How do you know Nadia? I'm trying to work out who everyone is.\"", bundle: 'free' },
+        { q: "You have just been put in an online breakout room with two strangers, and nobody has spoken.", a: "\"Shall I start? What made you both sign up for this one?\"", bundle: 'pro' },
+        { q: "At a trade fair for builders, a carpenter is watching the same tool demonstration as you.", a: "\"Are you here for the tools or for the people? I can never decide which is the real reason.\"", bundle: 'pro' },
+        { q: "On the first evening of a weekend songwriting course, the musician next to you is tuning a guitar.", a: "\"What made you sign up for this? I nearly didn't come.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Three-Line Intro",
+      guideFront: "Say who you are, briefly, when...",
+      guideBack: "A short intro with a hook, and a question back",
+      description: "When someone asks who you are, give three short lines and then ask them back: your name, what you do, and one thing they can hook on to. \"I'm Sara. I teach English, and I'm building a language app on the side. What about you?\" All of it in under fifteen seconds.\n\nIt works because people at events hear a lot of introductions, and they remember the hook, not the title. \"I teach English\" is one of a hundred jobs in the room; \"I'm building an app on the side\" is the line they will ask about. The question at the end matters just as much: it hands the turn back before you have time to give a speech.\n\nShort is the discipline. The usual mistakes are the CV — every job since school — and the shrug, \"oh, nothing exciting\". Three lines sit between them.\n\nTypical phrases: \"I'm Tom. I'm a nurse on a children's ward, and I've just started night shifts. What about you?\", \"I'm Amira. I'm a carpenter, mostly kitchens. How about you?\"\n\nThree kinds of hook:\n\n1. Something current — what you are in the middle of. \"I'm halfway through my first big project.\"\n\n2. Something on the side — a hobby, a side project, a change. \"I'm a developer, and I play bass in a band at weekends.\"\n\n3. Something linked to the event — why you came. \"I'm here because I want to start teaching evening classes.\"\n\nMindset: you are not selling yourself. You are giving them one thing to be curious about, and then being curious back.",
+      inputs: [
+        { q: "A woman at a design meetup turns to you: \"So, what do you do?\"", a: "\"I'm Jonas. I design packaging, and right now I'm a bit obsessed with cardboard. What about you?\"", bundle: 'free' },
+        { q: "At a parents' evening, another parent asks which child is yours.", a: "\"I'm Leila, Omar's mum. I'm a nurse, so I've come straight from a shift. Which one's yours?\"", bundle: 'free' },
+        { q: "Someone asks what you do, and you are about to list every job you have had since school.", a: "\"I'm Petra. I run a small bakery, and we've just started doing wedding cakes. How about you?\"", bundle: 'free' },
+        { q: "You are a student, and a developer at a meetup asks what brings you here.", a: "\"I'm Sam. I'm a second-year student, and I've just built my first app, badly. And you?\"", bundle: 'free' },
+        { q: "Someone asks about your job, and you are about to say, \"Oh, nothing exciting.\"", a: "\"I'm Ruth. I'm a school librarian, which is louder than it sounds. What about you?\"", bundle: 'free' },
+        { q: "In an online event, the host asks everyone in the breakout room to introduce themselves in turn.", a: "\"I'm Daniel, a carpenter from Leeds. I'm here because I want to take on an apprentice. Who's next?\"", bundle: 'pro' },
+        { q: "At a music industry evening, someone asks if you are in a band.", a: "\"I'm Kim. I play drums in a band called Low Tide, and we're recording our first album. Do you play?\"", bundle: 'pro' },
+        { q: "The speaker you came to hear asks what you do, and your mind goes blank.", a: "\"I'm Elin. I teach maths, and I'm trying your feedback idea on Monday. What made you start with it?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What They're Working On",
+      guideFront: "Ask about their current project when...",
+      guideBack: "A question about now, not the job title",
+      description: "Ask about what is happening now, not about the title. \"What are you working on at the moment?\" instead of \"What do you do?\"\n\nIt works because a title is a label, and labels are hard to follow up. \"I'm a project manager\" gives you nowhere to go. \"We're moving the whole hospital to a new booking system\" gives you five places to go. The question asks about something alive — a project, a problem, a plan — and people talk much more easily about what they are in the middle of than about what they are.\n\nIt also works for people without a neat job title: students, people between jobs, parents at home, freelancers. \"What's keeping you busy at the moment?\" fits all of them.\n\nTypical phrases: \"What are you working on at the moment?\", \"What's keeping you busy these days?\", \"What's the big project right now?\"\n\nThree ways to ask:\n\n1. The project — the work itself. \"What's on your desk this month?\"\n\n2. The wider version — for anyone without a neat job. \"What's taking up most of your time these days?\"\n\n3. The problem or the next thing — the part with energy in it. \"What's the tricky part of it right now?\"\n\nMindset: a title tells you what to call someone. A project tells you who they are this year.",
+      inputs: [
+        { q: "A man at a conference tells you he is \"in IT\", and that seems to be the whole answer.", a: "\"And what are you working on at the moment, inside IT?\"", bundle: 'free' },
+        { q: "At a launch party, you are about to ask a woman what she does for a living.", a: "\"What's keeping you busy these days?\"", bundle: 'free' },
+        { q: "A nurse at a health conference says she works in A&E.", a: "\"What's the big thing on your ward right now?\"", bundle: 'free' },
+        { q: "A designer at a meetup has told you her job title and stopped.", a: "\"And what's on your desk this month?\"", bundle: 'free' },
+        { q: "At a friend's birthday party, you meet a man who says he is between jobs.", a: "\"What's taking up most of your time at the moment?\"", bundle: 'free' },
+        { q: "A carpenter at a trade fair says he is \"doing kitchens, same as always\".", a: "\"What's the tricky kitchen right now? There's always one.\"", bundle: 'pro' },
+        { q: "A student at a career evening apologises that she does not really do anything yet.", a: "\"Studying counts. What's taking up your time this term?\"", bundle: 'pro' },
+        { q: "In an online breakout room, a developer says he has been at the same company for ten years.", a: "\"Ten years — so what's the newest thing you're working on there?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Find the Overlap",
+      guideFront: "Name what you have in common when...",
+      guideBack: "A shared point, said out loud",
+      description: "When you hear something you share — a problem, an interest, a place, a need — say it out loud. \"I've been stuck on exactly that. How did you solve it?\"\n\nIt works because overlap is what turns a polite chat into a connection. Two people with something in common have a reason to talk again; two people who have only been polite do not. Most overlaps go past unnoticed because nobody names them. Saying it plainly is the whole strategy.\n\nThe overlap does not have to be big. The same problem, the same town, the same first job, the same favourite tool. And it can be an overlap of needs: they have something you are looking for, or the other way round.\n\nTypical phrases: \"I've been stuck on exactly that.\", \"Wait — you're from Gothenburg too?\", \"That's the problem we've got at our school.\", \"We're trying to do the same thing from opposite ends.\"\n\nThree kinds of overlap:\n\n1. The shared problem — the strongest, because it gives you something to work on together. \"We've got the same staffing problem. What did you try?\"\n\n2. The shared background — a place, a training, a past job, a hobby. \"You trained as a nurse too? Where?\"\n\n3. The useful fit — one of you has what the other is looking for. \"You need a drummer, and I know three.\"\n\nMindset: you are not hunting for something clever to say. You are listening for the place where your two stories touch.",
+      inputs: [
+        { q: "A designer at a meetup mentions that her clients never pay on time.", a: "\"Oh, mine neither. That's been my whole autumn. What have you tried?\"", bundle: 'free' },
+        { q: "A man at a conference says he grew up in a small town in the north.", a: "\"Which town? I'm from Kiruna, so I know that feeling exactly.\"", bundle: 'free' },
+        { q: "A teacher on your course says her class won't read anything longer than a page.", a: "\"That's my class too. Have you found anything that works?\"", bundle: 'free' },
+        { q: "A developer says his team is moving everything to a new system next year.", a: "\"We did exactly that last spring. I can tell you what went wrong, if that helps.\"", bundle: 'free' },
+        { q: "A small-business owner at a market evening says she cannot find a cheap place to print labels.", a: "\"I've been hunting for the same thing for months. Let's compare notes.\"", bundle: 'free' },
+        { q: "A musician at a party says she has just started teaching guitar.", a: "\"So have I — piano, though. How are you finding students?\"", bundle: 'pro' },
+        { q: "At a parents' evening, another parent says she is trying to start a reading club.", a: "\"I've wanted to do exactly that. Could we do it together?\"", bundle: 'pro' },
+        { q: "A carpenter at a trade fair says he needs someone to do the electrics on his jobs.", a: "\"You need an electrician, and I keep turning down jobs that need a carpenter. We should talk.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Offer Something First",
+      guideFront: "Give a tip, link or name when...",
+      guideBack: "A small offer with no ask attached",
+      description: "Give something small before you ask for anything — a tip, a link, a name — and attach no request to it. \"There's a podcast on exactly that. I'll send you the link.\"\n\nThe idea comes from Adam Grant's Give and Take: helping without keeping score. People who give freely are remembered as useful and kind, and as someone worth hearing from again. You do not give in order to get; you give because you heard something you could help with.\n\nThe offer is small on purpose. A link costs you a minute. A name costs you a message. A tip costs nothing. What makes it work is that no ask comes after it — not \"and maybe you could…\", not a business card pressed into their hand.\n\nTypical phrases: \"I'll send you the link.\", \"There's a book on that — I'll write down the title.\", \"If it helps, I know someone who did that last year.\"\n\nThree things to offer:\n\n1. A tip — something you learned the hard way. \"Book the room before you send the invites. Trust me.\"\n\n2. A resource — a link, a book, a tool, a podcast. \"There's a free tool for that. I'll send it.\"\n\n3. A name — someone they should know. \"My colleague Ali did exactly this. Want his email?\"\n\nMindset: you always have something to give. It only has to be useful to them, not impressive to you.",
+      inputs: [
+        { q: "A teacher on a course says she cannot find good short texts for her class.", a: "\"There's a free site with exactly that. I'll send you the link tonight.\"", bundle: 'free' },
+        { q: "A small-business owner says he is dreading doing his own accounts.", a: "\"Get a separate bank account for the business first. It saved me a week every spring.\"", bundle: 'free' },
+        { q: "A student at a career evening says she wants to get into game design.", a: "\"There's a game jam here in March, and beginners are welcome. I'll write down the name for you.\"", bundle: 'free' },
+        { q: "A nurse at a conference says she is thinking about moving into teaching.", a: "\"A friend of mine did exactly that last year. Would you like her email?\"", bundle: 'free' },
+        { q: "A musician says he is trying to record at home without spending much.", a: "\"There's a podcast on home recording that's brilliant. I'll send it to you.\"", bundle: 'free' },
+        { q: "You have just given someone a tip, and you are about to add, \"And maybe you could…\"", a: "\"That's it, really — no catch. I just wish someone had told me.\"", bundle: 'pro' },
+        { q: "A developer in an online breakout room mentions a bug she has been fighting all week.", a: "\"I had that exact error last month. I'll drop the fix in the chat.\"", bundle: 'pro' },
+        { q: "A carpenter at a trade fair says he is looking for a reliable timber supplier.", a: "\"The place I use in Uppsala has never let me down. I'll text you their number.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Make the Introduction",
+      guideFront: "Connect two people you've met when...",
+      guideBack: "Two names and a reason to talk",
+      description: "When you have met two people who should know each other, connect them — with both names and one reason to talk. \"Dana, this is Leo. You're both trying to start a mentoring scheme.\"\n\nIt works because a good introduction is one of the most valuable things you can give at an event, and it costs you almost nothing. It also means you are no longer the only link: the conversation can carry on without you, which helps when you want to move on.\n\nThe reason is the important part. \"You two should talk\" with no reason leaves them standing there, wondering why. One line about what they share gives them their first question.\n\nTypical phrases: \"Dana, this is Leo. You're both starting mentoring schemes.\", \"Have you met Kim? She's the one I mentioned.\", \"Would you like me to introduce you to Sami? He's done exactly this.\"\n\nThree ways to do it:\n\n1. Both present — names and the reason, then step back a little. \"Ana, Ben — you're both nurses who moved into tech.\"\n\n2. Ask first — check that one of them wants it before you bring them over. \"Would you like to meet the woman who runs the course?\"\n\n3. Bring someone in — when you are in a group and someone is standing at the edge. \"Come and join us. This is Maja, she's just started here too.\"\n\nMindset: you do not need to be important to introduce people. You only need to have listened to both of them.",
+      inputs: [
+        { q: "At a meetup, you have just met two developers who are both building apps for schools.", a: "\"Sofia, this is Karim. You're both making apps for schools — you should compare notes.\"", bundle: 'free' },
+        { q: "At a conference coffee break, a woman is standing at the edge of your group.", a: "\"Come and join us. This is Ben, and this is Anna — we're all here for the reading session.\"", bundle: 'free' },
+        { q: "A nurse you met earlier wants to move into teaching, and the course leader is a few metres away.", a: "\"Would you like to meet the woman who runs the teaching course? She's just over there.\"", bundle: 'free' },
+        { q: "At a friend's party, two guests have both told you they are about to start a podcast.", a: "\"Jamal, have you met Eva? You're both starting podcasts, and she's a few months ahead.\"", bundle: 'free' },
+        { q: "At a parents' evening, two different parents have both told you they want a homework club.", a: "\"Have you two met? You both said the words homework club to me in the last five minutes.\"", bundle: 'free' },
+        { q: "You have introduced two people by name, and they are both looking at you, waiting.", a: "\"Lena makes furniture, and Tariq needs furniture for his new café. I'll let you two talk.\"", bundle: 'pro' },
+        { q: "In an online breakout room, two people mention the same problem with funding.", a: "\"Can I connect you two? Hanna, Felix — you're both stuck on the same grant. Swap emails in the chat.\"", bundle: 'pro' },
+        { q: "A designer you just met would be perfect for a friend's new website, but the friend is not here.", a: "\"Would you be happy if I introduced you to my friend Mats by email? He needs exactly what you do.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Exit With a Next Step",
+      guideFront: "Leave warmly with a plan when...",
+      guideBack: "A goodbye with a concrete plan",
+      description: "Leave the conversation warmly, and name one concrete thing that happens next — an email, a coffee, a link. \"I'd love to continue this. Can I email you about the course?\"\n\nIt works because most good conversations at events end in \"lovely to meet you\" and then nothing. Both people meant it, and neither did anything. A next step is what turns a nice talk into a connection that continues after the event. It also makes leaving easy: you are not escaping, you are making a plan.\n\nThe step should be small and specific. Not \"let's stay in touch\", which means nothing, but \"I'll send you the link tonight\" or \"Could we have coffee next week?\" If you promise something, say when. This is not a general way to end a conversation; its job is to make sure this one carries on.\n\nTypical phrases: \"I'll email you the link tomorrow.\", \"Could we get a coffee next week?\", \"I'll add you tonight.\", \"I'll find you at the next meetup.\"\n\nThree kinds of next step:\n\n1. The send — something you promised. \"I'll send you that article tonight.\"\n\n2. The meeting — a coffee, a call, a visit. \"Could I call you next week and hear more?\"\n\n3. The next time — the same event, or another one. \"Are you coming in March? Let's sit together.\"\n\nMindset: leaving is not rude when you leave with a plan. The plan is the whole point.",
+      inputs: [
+        { q: "You have had a good talk with a designer, and you would like to meet a few more people.", a: "\"I'd love to continue this. Can I email you tomorrow about the project?\"", bundle: 'free' },
+        { q: "Earlier you promised a teacher a link, and now you are about to leave.", a: "\"I'll send you that link tonight. What's the best email for you?\"", bundle: 'free' },
+        { q: "You and a small-business owner have talked about doing something together.", a: "\"Could we get a coffee next week and look at it properly?\"", bundle: 'free' },
+        { q: "The conference is ending, and a nurse you met wants to hear more about your ward.", a: "\"Let's not lose this. Can I call you next Thursday?\"", bundle: 'free' },
+        { q: "You want to leave a conversation with a developer who goes to this meetup every month.", a: "\"Are you coming next month? Let's sit together, and you can show me the app.\"", bundle: 'free' },
+        { q: "You are about to say \"let's stay in touch\" and walk away.", a: "\"Let's actually stay in touch — I'll message you on Monday with the details.\"", bundle: 'pro' },
+        { q: "An online event is ending, and the breakout room is about to close.", a: "\"Before they close the room — can I add you and send you that guide?\"", bundle: 'pro' },
+        { q: "A musician you met at a friend's party might want to play at your event.", a: "\"I'll text you the date tomorrow. If it works, great. If not, no pressure at all.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  networking2: [
+    {
+      name: "Follow Up Within a Day",
+      guideFront: "Write the next morning when...",
+      guideBack: "A short note: one detail, one promise kept",
+      description: "Within a day of meeting someone, send a short message that does two things: it names one concrete detail from your conversation, and it delivers whatever you promised. \"Good to talk about your onboarding problem last night. Here's the article I mentioned.\" Not a general \"great to meet you\" — that could have been sent to anyone.\n\nIt works because memory fades fast after an event. The next morning they still remember your face and what you talked about; a week later you are one name among forty. The detail shows it was a real conversation, and the promise kept shows that you do what you say — which is what everything later is built on.\n\nKeep it short, and leave them nothing to do. No ask, no CV, no meeting request yet.\n\nTypical phrases: \"Good to meet you at the fair.\", \"Here's the link I mentioned.\", \"I keep thinking about what you said about prices.\", \"No need to reply.\"\n\nThree ways to do it:\n\n1. Detail and delivery — the standard. \"Good talking about rotas. Here's the template I mentioned.\"\n\n2. Detail and a thank-you — when you promised nothing. \"Thanks for the tip about the night market. I'm going on Saturday.\"\n\n3. Detail and a small next step — when you both said you would talk again. \"You mentioned coffee in March. I'll send a couple of dates nearer the time.\"\n\nMindset: the day after, a follow-up is welcome. A month after, it needs an explanation.",
+      inputs: [
+        { q: "Yesterday at a hospitality fair you talked to Marco, a head chef, about staff leaving after a month. You promised to send an article on training new staff.", a: "\"Good to meet you yesterday, Marco. Here's the article I mentioned — the part about the first week is the bit I meant.\"", bundle: 'free' },
+        { q: "At a teachers' conference you chatted with Aisha, who runs a school library, about getting teenagers to read. You said you would send your reading list.", a: "\"Hi Aisha, thanks for the chat about reluctant readers. Here's the list — the graphic novels at the bottom work best with Year 9.\"", bundle: 'free' },
+        { q: "After a gig last night, the sound engineer, Tom, gave you a tip about cheap microphones. You promised nothing, but it helped.", a: "\"Thanks for the mic tip last night, Tom. I ordered one this morning — I'll tell you how it sounds.\"", bundle: 'free' },
+        { q: "At a farmers' market meet-up you talked to Ingrid, a beekeeper, about selling to local shops. You both said you'd talk again after the summer.", a: "\"Good to meet you on Saturday, Ingrid. You said we should talk after the harvest — I'll get in touch in October.\"", bundle: 'free' },
+        { q: "At a careers evening you met Daniel, a firefighter, who told you about the fitness test. You said you'd send him the training plan your coach wrote.", a: "\"Hi Daniel, thanks for being so honest about the fitness test. Here's the plan I mentioned. No need to reply.\"", bundle: 'free' },
+        { q: "You met a lot of people at a design meet-up and can barely remember your talk with Priya, an illustrator. You remember one thing: her cat-shaped business card.", a: "\"Hi Priya, I'm the one who laughed at your cat-shaped card. Your point about pricing small jobs has stayed with me.\"", bundle: 'pro' },
+        { q: "You promised Femi, a vet you met at a wedding, the name of a good accountant. It has taken you two days to find it.", a: "\"Hi Femi, sorry this took two days. The accountant I mentioned is Sara Holm, and she's very good with small clinics.\"", bundle: 'pro' },
+        { q: "You met Lena, a stage lighting designer, at an online event. You're tempted to ask her for work in the same message.", a: "\"Lovely to meet you at the online session, Lena. Here's the article on stage lights I mentioned. Hope the tour goes well.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for Advice, Not a Favour",
+      guideFront: "Ask what they would do when...",
+      guideBack: "A question about their experience",
+      description: "Instead of asking for a job, a contract or a favour, ask for their advice — what they would do, or what they wish they had known. \"If you were starting where I am, what would you do first?\"\n\nIt works because a favour puts the other person on the spot: either they have it to give or they don't, and a no is awkward for both of you. Advice is something everyone has, and most people enjoy being asked for it. It also draws them into your situation. Someone who has thought about your problem often starts to want it to go well — and offers more than you asked for.\n\nThe question has to be real. If you are secretly asking for a job, they will notice.\n\nTypical phrases: \"What would you do in my place?\", \"What do you wish you'd known at the start?\", \"Is there anything you'd avoid?\"\n\nThree kinds of advice question:\n\n1. The first step — \"If you were starting where I am, what would you do first?\"\n\n2. The mistake to avoid — \"What do people in my position usually get wrong?\"\n\n3. The choice — when you are weighing two options. \"Would you take the course, or start with small jobs?\"\n\nMindset: asking for advice is not asking for less. It is asking for something they can always give.",
+      inputs: [
+        { q: "You want to become an electrician. Kofi, who runs his own firm and met you at a trade fair, has replied kindly to your follow-up.", a: "\"Thanks, Kofi. Can I ask you one thing? If you were starting where I am, what would you do first?\"", bundle: 'free' },
+        { q: "You are thinking of opening a small bakery. Over coffee, Maria, who has run one for twenty years, asks what you're hoping to get from her.", a: "\"Honestly, your advice. What do you wish you'd known before you signed the lease?\"", bundle: 'free' },
+        { q: "You want to write for a newspaper. You are about to ask Jonas, an editor you met at a book festival, if he has any work for you.", a: "\"Could I ask your advice instead? What do new writers usually get wrong when they pitch to you?\"", bundle: 'free' },
+        { q: "You're a nurse thinking about midwifery. Grace, a midwife you met on a course, asks how she can help.", a: "\"I'd love your honest view. Would you train now, or work on a maternity ward first?\"", bundle: 'free' },
+        { q: "You play in a band and want more paid gigs. A venue owner you met at a festival, Rui, says, \"Let me know if I can help.\"", a: "\"Thanks, Rui. One question: what makes you book a band you've never heard of?\"", bundle: 'free' },
+        { q: "You'd like to ask Hana, a landscape architect you met once, to take you on as an assistant.", a: "\"Can I ask your advice rather than anything bigger? How did you get your first real project?\"", bundle: 'pro' },
+        { q: "A senior game developer, Omar, answered your first message with \"What do you need?\" — and what you need is a job.", a: "\"Nothing big. I'd value your view: is a portfolio of small games better than one large one?\"", bundle: 'pro' },
+        { q: "You're worried that asking Mr Okafor, a retired head teacher, for advice will waste his time.", a: "\"I'll keep it to one question: what would you look for if you were hiring me?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for Twenty Minutes",
+      guideFront: "Request a short, fixed chat when...",
+      guideBack: "A small request, easy to decline",
+      description: "Ask for a short conversation with a clear limit — twenty minutes, a coffee, a call — and say what you would like to hear about. \"Could I buy you a coffee for twenty minutes? I'd like to hear how you got into it.\" This is often called an informational interview: you are there to learn, not to ask for a job.\n\nIt works because \"can we meet?\" sounds open-ended, and busy people protect their time from open-ended things. A number makes it small and safe. Naming the topic shows you have thought about it, and making it easy to say no shows that you will not be hurt if they can't.\n\nThen keep to the time. Ending at twenty minutes is what makes them say yes the next time.\n\nTypical phrases: \"Twenty minutes, whenever suits.\", \"A phone call is fine.\", \"No worries at all if it's a busy time.\"\n\nThree ways to ask:\n\n1. Coffee — \"Could I buy you a coffee for twenty minutes near your work?\"\n\n2. A call — easier for them. \"Would a fifteen-minute call some time this month work?\"\n\n3. Questions in writing — the smallest version. \"If a call is too much, could I send you three questions?\"\n\nMindset: a small ask that ends on time is a gift to them as well.",
+      inputs: [
+        { q: "You'd like to hear how Ellie became a physiotherapist for a football club. You met her once at a sports conference.", a: "\"Could I buy you a coffee for twenty minutes some time? I'd love to hear how you got into club work.\"", bundle: 'free' },
+        { q: "You want to learn about running a plant nursery. The owner, Bram, is friendly but clearly busy.", a: "\"Would a fifteen-minute call this month work? No worries at all if it's your busy season.\"", bundle: 'free' },
+        { q: "You are about to message Sofia, a translator, asking if you can \"pick her brain some time\".", a: "\"Could I have twenty minutes, by phone or over coffee? I'd like to know how you found your first clients.\"", bundle: 'free' },
+        { q: "A pilot you met at your cousin's wedding, Ahmed, said you could ask him about flight school.", a: "\"You said I could ask about flight school. Could I call you for fifteen minutes one evening?\"", bundle: 'free' },
+        { q: "You want to talk to Yuki, a wedding photographer, but you know June is her busiest month.", a: "\"Could I buy you a coffee for twenty minutes in July, once the season calms down?\"", bundle: 'free' },
+        { q: "The person you'd like to talk to, a social worker named Paul, has already said he's swamped.", a: "\"Then could I send you three questions by email instead? Answer whenever, or not at all.\"", bundle: 'pro' },
+        { q: "You are at the coffee and it has been twenty minutes. Rosa, a brewer, is still talking happily.", a: "\"That's our twenty minutes — I promised. Thank you, this was really useful.\"", bundle: 'pro' },
+        { q: "You want to ask Dr Haddad, an archaeologist, for some time, but you're not sure what you'd ask her.", a: "\"Could I have twenty minutes? I'd like to ask what a normal week on a dig really looks like.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for an Introduction",
+      guideFront: "Ask them to connect you when...",
+      guideBack: "A request that is easy to pass on",
+      description: "Ask someone you know to introduce you to someone they know — and make it easy. Check that they are comfortable, and offer to write the message they can pass on. \"Would you be open to introducing me to Lena? I can send two lines you could forward.\"\n\nIt works because a word from someone they trust opens doors that a message from a stranger does not. But it also costs your contact something: their name is on it. The polite way is called a double opt-in. Your contact first asks the other person whether they would like to be introduced, and only then connects you. Nobody is put on the spot.\n\nWriting the two lines yourself takes the work off them. They forward it, and the other person can say yes or no without any awkwardness.\n\nTypical phrases: \"Would you be comfortable introducing me?\", \"Feel free to check with her first.\", \"I can send two lines you could pass on.\", \"No problem at all if it doesn't feel right.\"\n\nThree parts of a good request:\n\n1. Who and why — \"I'd love to talk to Lena about her school garden project.\"\n\n2. Their comfort first — \"Only if you know her well enough to ask.\"\n\n3. The lines to forward — \"Here's a short note you could send her, if it helps.\"\n\nMindset: an introduction is a loan of their name. Make it easy to lend, and easy to refuse.",
+      inputs: [
+        { q: "An old colleague, Mia, mentions that she knows Lena, who started a school garden project you admire.", a: "\"Would you be open to introducing me to Lena? I can send two lines you could pass on.\"", bundle: 'free' },
+        { q: "Steve, a carpenter you met at a trade show, says he knows the man who runs the furniture workshop you'd love to join.", a: "\"Would you be comfortable asking if he'd talk to me? Only if you know him well enough.\"", bundle: 'free' },
+        { q: "Your friend Leila has agreed to introduce you to a radio producer.", a: "\"Thank you! Here's a short note you could forward: who I am, what I'd like to ask, and that a no is fine.\"", bundle: 'free' },
+        { q: "Tariq, a pharmacist you know, offers to \"just give her your number\".", a: "\"That's kind. Could you check with her first that she's happy to hear from me?\"", bundle: 'free' },
+        { q: "You'd like to meet Jade, a tattoo artist your cousin Ben knows from art school.", a: "\"Ben, would you mind asking Jade if she'd be up for a quick chat about apprenticeships? I can write the message.\"", bundle: 'free' },
+        { q: "You are not sure your contact, Nils, knows the person well enough to introduce you.", a: "\"How well do you know Kemi? If it's only a little, please don't feel you have to.\"", bundle: 'pro' },
+        { q: "Marta, a film editor, has just introduced you to a director, Joel, by email. Now it's your turn to reply.", a: "\"Thanks, Marta, I'll take it from here. Hi Joel, lovely to meet you — would a short call next week suit you?\"", bundle: 'pro' },
+        { q: "You asked Ola for an introduction to a hiring manager, and she is clearly uneasy about it.", a: "\"No problem at all. Is there anyone else you'd feel happier putting me in touch with?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Reconnect After a Long Gap",
+      guideFront: "Get back in touch when...",
+      guideBack: "An honest hello with a real reason",
+      description: "Write to someone you have not spoken to for a long time. Say plainly that it has been a while, and give a real reason for writing now. \"It's been ages — I saw your post about the school project and thought of you.\"\n\nIt works because old contacts are often more useful than new ones. The researchers Levin, Walter and Murnighan studied people who got back in touch with contacts they had not spoken to for years. They found that these quiet, old ties often brought fresher ideas than the people they spoke to every week, and that the old trust was still there. Only the habit had stopped.\n\nDo not over-apologise. One line about the gap is enough. Then the reason, then a light question.\n\nTypical phrases: \"It's been far too long.\", \"I saw this and thought of you.\", \"I've often wondered how the bakery went.\", \"No reason beyond that, really.\"\n\nThree real reasons to write:\n\n1. Something you saw — \"I saw your post about the new studio.\"\n\n2. Something that reminded you — \"I drove past our old office and thought of you.\"\n\n3. Something you're working on — \"I've started teaching, and I remember how good you were at it.\"\n\nMindset: they are rarely annoyed that you wrote late. Most are glad you wrote at all.",
+      inputs: [
+        { q: "You haven't spoken to Jess, who you trained with as a nurse, for six years. You've just seen that she's running a new clinic.", a: "\"Jess! It's been ages. I saw the news about your clinic and wanted to say congratulations.\"", bundle: 'free' },
+        { q: "You want to write to your old football coach, Mr Daley, now that you're coaching children yourself.", a: "\"It's been about ten years, I know. I've just started coaching under-tens, and I keep using your drills.\"", bundle: 'free' },
+        { q: "Raj, an old colleague, was great at pricing projects, and you've just gone freelance. You haven't spoken in four years.", a: "\"Hi Raj, it's been far too long. I've just gone freelance and I keep thinking about how you priced jobs.\"", bundle: 'free' },
+        { q: "You drove past the café where you and your friend Nina used to work. You haven't spoken in three years.", a: "\"I drove past the old café today and thought of you. How are you, really?\"", bundle: 'free' },
+        { q: "You're about to start a message to a former classmate, Lucas, with a long apology for not writing.", a: "\"I'll skip the long apology — it's been too long, that's all. I saw your bike shop opened, and I'm really pleased for you.\"", bundle: 'free' },
+        { q: "The last time you wrote to Dina, a former manager, was five years ago, to ask for a reference.", a: "\"I know last time I wrote it was for a reference. This time there's no ask — I saw your talk online and loved it.\"", bundle: 'pro' },
+        { q: "You want to get back in touch with Pavel, a mechanic you used to work alongside, but nothing special has happened.", a: "\"No big news, Pavel. I was thinking about the old garage today and wondered how you're doing.\"", bundle: 'pro' },
+        { q: "Amara, a friend from university, replies warmly but asks, \"What made you get in touch?\"", a: "\"Honestly? I'm thinking of switching to teaching, and you're the person I most wanted to ask.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stay in Touch Without an Ask",
+      guideFront: "Share something useful when...",
+      guideBack: "A useful share, no reply needed",
+      description: "Every so often, send a contact something useful or kind — an article, a job ad, a congratulation — with nothing attached. \"Saw this and thought of our chat. No need to reply.\"\n\nIt works because most people only hear from their network when someone needs something. A message with no ask stands out, and it keeps the relationship warm, so that when you do need help one day, it does not come out of nowhere. Adam Grant's Give and Take describes how givers — people who help without keeping score — often end up with the strongest networks over time.\n\n\"No need to reply\" is the key line. It turns the message into a gift instead of a task.\n\nTypical phrases: \"Saw this and thought of you.\", \"No need to reply.\", \"Congratulations on the new job.\", \"This made me think of what you said.\"\n\nThree kinds of no-ask message:\n\n1. Something useful — \"This course looks like what you described. No need to reply.\"\n\n2. A congratulation — \"Saw the news about your book. Well deserved.\"\n\n3. A question about their news — \"How did opening night go? Hope it was brilliant.\"\n\nMindset: a network is kept warm by small gifts, not by big asks.",
+      inputs: [
+        { q: "Three months ago you met Carla, a florist who wanted to start running workshops. You've just seen a grant for small businesses.", a: "\"Saw this and thought of our chat about workshops. No need to reply.\"", bundle: 'free' },
+        { q: "Ade, a plumber you met at a training day, has just won a local business award.", a: "\"Saw you won the award — well deserved, Ade. No need to reply, I just wanted to say it.\"", bundle: 'free' },
+        { q: "You read an article about a problem a teacher you met, Mrs Lund, told you about.", a: "\"This made me think of what you said about phones in class. Might be useful. No reply needed.\"", bundle: 'free' },
+        { q: "You know Viktor, a theatre technician, was nervous about his first big show last week.", a: "\"How did opening night go? Hope it was brilliant. No need to answer if you're still recovering.\"", bundle: 'free' },
+        { q: "You see a job ad that would suit Ruth, a data analyst you met at a workshop. It's of no use to you.", a: "\"This looks like the job you described wanting. Ignore it if not. Good luck either way.\"", bundle: 'free' },
+        { q: "You'd like to stay in touch with Simone, a gallery owner, but you have nothing useful to send.", a: "\"Just a hello — I walked past the gallery today, and the new window looks great.\"", bundle: 'pro' },
+        { q: "You're about to add \"By the way, do you know anyone who's hiring?\" to a friendly message to Jamal, a chef.", a: "\"Saw this recipe and thought of your autumn menu. That's all — no need to reply.\"", bundle: 'pro' },
+        { q: "Rania, a vet you send articles to now and then, apologises for never replying.", a: "\"Please don't apologise. They're not meant to need an answer.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Close the Loop",
+      guideFront: "Report back and say thanks when...",
+      guideBack: "A thank-you with the outcome",
+      description: "After someone has helped you — with advice, a contact or a tip — tell them what happened, and thank them. \"I took your advice and called Lena. We're meeting next week — thank you.\"\n\nIt works because people almost never find out whether their help made a difference. Hearing that it did is one of the nicest messages anyone can get, and it shows that you listen and act. It also makes them far more likely to help again, because now they know their time was well spent.\n\nClose the loop even when it did not work out. \"It didn't come to anything, but the conversation taught me a lot\" is still worth sending.\n\nTypical phrases: \"I took your advice.\", \"Just wanted to let you know how it went.\", \"Thanks again — it made a real difference.\", \"It didn't work out, but I learned a lot.\"\n\nThree times to close the loop:\n\n1. Right after — when you have acted on it. \"I called her today. Thank you for the introduction.\"\n\n2. When it pays off — weeks or months later. \"I got the place on the course. Your advice about the interview helped.\"\n\n3. When it didn't work out — still worth saying. \"No job in the end, but I learned a lot from talking to him.\"\n\nMindset: the thank-you afterwards is what turns one good turn into a relationship.",
+      inputs: [
+        { q: "Mia introduced you to Lena last month. You and Lena have now met.", a: "\"I met Lena on Tuesday — she's lovely, and I'm doing a trial day next month. Thank you so much for the introduction.\"", bundle: 'free' },
+        { q: "Kofi, the electrician, advised you to start as an apprentice instead of taking the long course. You've just been taken on.", a: "\"I took your advice, Kofi — I start as an apprentice on Monday. Thank you.\"", bundle: 'free' },
+        { q: "Maria, the baker, told you to have the shop's drains checked before signing. They were broken.", a: "\"You were right about the drains. I didn't sign, and I'm so glad. Thanks, Maria.\"", bundle: 'free' },
+        { q: "You talked to Ahmed, a pilot, about flight school months ago. You've just passed your first exam.", a: "\"Just wanted to tell you I passed my first flight exam. Our chat in the spring is what got me started.\"", bundle: 'free' },
+        { q: "Your cousin Ben introduced you to Jade, the tattoo artist, but she had no room for an apprentice.", a: "\"Jade had no space this year, but she gave me great advice. Thanks for setting it up, Ben.\"", bundle: 'free' },
+        { q: "Six months ago Aisha, a librarian, suggested a course to you. You never told her you did it.", a: "\"This is late, but I did the course you suggested, and it changed how I teach. Thank you.\"", bundle: 'pro' },
+        { q: "Rui, the venue owner, gave you advice about getting gigs. Nothing has worked yet.", a: "\"A quick update: no gigs yet, but we've changed our demo the way you said. I'll let you know.\"", bundle: 'pro' },
+        { q: "Jonas, an editor, told you what pitches he likes. Your first article has just come out in another magazine.", a: "\"My first article's out — not with you, but your advice on pitching is all over it. Thanks, Jonas.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -20406,6 +20994,306 @@ const collectionsModeData = {
         { q: "Last week your friend agreed to stop calling you \"the flaky one\". Tonight, when you arrive ten minutes late, he says, \"Look who's flaked in.\"", a: "\"We said last week the flaky jokes were done. I'd like that to stick.\" [Bring Up Last Time]", bundle: 'pro', guideBack: "A calm reminder of what you said before" },
         { q: "Your teenage daughter says, \"Great, another lecture.\" You say, \"Okay — no lecture. What would you rather talk about?\" She says nothing and puts her headphones in.", a: "\"Fair enough. I'm around later if you want to talk — no lecture.\" [Leave the Door Open]", bundle: 'pro', guideBack: "An open offer, with no pressure" },
         { q: "At New Year you talked with your sister about her comments on your parenting. Tonight she says, \"Letting him have screens at dinner now, are we?\"", a: "\"We talked about this at New Year. If my parenting worries you, tell me straight — but not like that.\" [Bring Up Last Time]", bundle: 'pro', guideBack: "A calm reminder of what you said before" },
+      ]
+    },
+  ],
+  toneboundaries1: [
+    {
+      name: "Bring It Down",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Stay Low and Slow**, **Name the Volume** and **Acknowledge, Then the Issue** — three ways to lower the temperature without asking them for anything, and the choice is what is driving the noise.\n\n• **Stay Low and Slow** — the moment is heated, but the conversation still works; let your voice lead\n• **Name the Volume** — they do not seem to notice how loud they have got\n• **Acknowledge, Then the Issue** — there is a real problem under the noise\n\nThe question that decides it: is the noise about the moment, about not noticing, or about something real?\n\nThe usual wrong choice is naming the volume when they are upset about something real. It sounds as if you only care about the noise. Acknowledge the problem first.\n\nMindset: find out what the noise is about before you answer it.",
+      inputs: [
+        { q: "Your brother shouts down the stairs that someone has taken his phone charger.", a: "\"It's on the kitchen table. I'll bring it up.\" [Stay Low and Slow]", bundle: 'pro', guideBack: "A short line, said softly" },
+        { q: "In a planning meeting, your colleague Nadia's voice has risen steadily, and she does not seem to notice.", a: "\"Nadia, your voice has gone up quite a bit.\" [Name the Volume]", bundle: 'pro', guideBack: "A neutral observation" },
+        { q: "A father at the football club shouts at you, the volunteer coach, that his son never gets to play.", a: "\"You want him to get more time on the pitch. Can we look at the next three matches together?\" [Acknowledge, Then the Issue]", bundle: 'pro', guideBack: "An acknowledgement, then the real problem" },
+        { q: "Your partner, rushing out, snaps loudly that the car keys are never where they should be.", a: "\"On the hook by the door. Here.\" [Stay Low and Slow]", bundle: 'pro', guideBack: "A short line, said softly" },
+        { q: "At a family dinner, your uncle gets louder and louder about house prices, and he is talking straight at you.", a: "\"We've got quite loud over here, Uncle Mike.\" [Name the Volume]", bundle: 'pro', guideBack: "A neutral observation" },
+        { q: "A guest at the hotel where you work shouts at reception that his room has not been cleaned.", a: "\"Coming back to an uncleaned room is the last thing you want. I'll get housekeeping up now.\" [Acknowledge, Then the Issue]", bundle: 'pro', guideBack: "An acknowledgement, then the real problem" },
+        { q: "Your flatmate yells from the bathroom that there is no toilet roll, again.", a: "\"There's more in the hall cupboard. Passing it in now.\" [Stay Low and Slow]", bundle: 'pro', guideBack: "A short line, said softly" },
+        { q: "Over dinner in a restaurant, your friend is telling you about her ex more and more loudly.", a: "\"You're getting really loud. People are turning round.\" [Name the Volume]", bundle: 'pro', guideBack: "A neutral observation" },
+      ]
+    },
+    {
+      name: "Ask or Tell",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Name the Volume**, **The Calm Request** and **State the Line** — three ways to speak about the volume itself, and the choice is how much room you leave them to fix it.\n\n• **Name the Volume** — say what is happening, and let them adjust on their own\n• **The Calm Request** — ask for a lower volume with a question that is easy to agree to\n• **State the Line** — they have had their chance, or it is too much; say how you will listen\n\nThe question that decides it: how much room do I want to give them to fix it themselves?\n\nThe usual wrong choice is the line first, on someone who has only just got loud. It sounds like a telling-off, and now they have something to fight. Start lighter.\n\nMindset: start with the most room you can give, and give less only when you need to.",
+      inputs: [
+        { q: "A colleague raises his voice at you over a double-booked meeting room.", a: "\"Are you opposed to sorting this out without raising our voices?\" [The Calm Request]", bundle: 'pro', guideBack: "A question where no means yes" },
+        { q: "Your father has been shouting at you about your career for ten minutes.", a: "\"Dad, I want to hear what worries you. I can't listen while you're shouting.\" [State the Line]", bundle: 'pro', guideBack: "A firm, kind limit" },
+        { q: "Your friend's voice jumps when you say you cannot come to her party.", a: "\"That came out loud, Priya.\" [Name the Volume]", bundle: 'pro', guideBack: "A neutral observation" },
+        { q: "At the school gate, another parent raises her voice at you about a parking space.", a: "\"Would you be against talking about this at a normal volume?\" [The Calm Request]", bundle: 'pro', guideBack: "A question where no means yes" },
+        { q: "Your boyfriend shouts, for the third time tonight, during an argument about holiday plans.", a: "\"I want to plan this with you. Not while we're shouting.\" [State the Line]", bundle: 'pro', guideBack: "A firm, kind limit" },
+        { q: "A client on a video call suddenly gets loud about a delay.", a: "\"You've gone quite loud, Peter.\" [Name the Volume]", bundle: 'pro', guideBack: "A neutral observation" },
+        { q: "A delivery driver yells at you because there is nowhere to park outside your shop.", a: "\"Is it unreasonable to ask that we keep this calm? I'll show you where to stop.\" [The Calm Request]", bundle: 'pro', guideBack: "A question where no means yes" },
+        { q: "In the car, your grown-up son starts shouting at you about money.", a: "\"I'm happy to talk about money. Not with shouting in the car.\" [State the Line]", bundle: 'pro', guideBack: "A firm, kind limit" },
+      ]
+    },
+    {
+      name: "All Five Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, with no warning about which kind of outburst comes next.\n\nThe five run from the lightest to the clearest. **Stay Low and Slow** changes only your own voice. **Acknowledge, Then the Issue** answers the frustration. **Name the Volume** says what is happening. **The Calm Request** asks for a lower volume. **State the Line** says how you will listen.\n\nIf you are unsure, start light: your own voice first, and say something about theirs only when it keeps climbing.\n\nThe usual wrong choice is jumping to the line when they only snapped once. Then you look like the one who made it bigger.\n\nMindset: the lightest strategy that still works is usually the right one.",
+      inputs: [
+        { q: "A team member snaps at you when you ask for an update on her project.", a: "\"Sounds like this week's been a lot. What's holding the update up?\" [Acknowledge, Then the Issue]", bundle: 'pro', guideBack: "An acknowledgement, then the real problem" },
+        { q: "Your sister shouts across the living room about who is hosting Christmas.", a: "\"Would you be opposed to sitting down and talking this through quietly?\" [The Calm Request]", bundle: 'pro', guideBack: "A question where no means yes" },
+        { q: "At the pharmacy where you work, a man in the queue shouts at you that it is taking far too long.", a: "\"Nearly there. Two more, then yours.\" [Stay Low and Slow]", bundle: 'pro', guideBack: "A short line, said softly" },
+        { q: "Your partner raises his voice about the dishes, and you hear your own voice rising to match.", a: "\"We're both getting loud about the dishes.\" [Name the Volume]", bundle: 'pro', guideBack: "A neutral observation" },
+        { q: "Your landlord is shouting at you in the hallway about a late rent payment.", a: "\"I'll talk about the rent with you. I need you not to shout while we do.\" [State the Line]", bundle: 'pro', guideBack: "A firm, kind limit" },
+        { q: "Your teenage son yells that you have ruined his life by taking his phone for the weekend.", a: "\"Losing your phone feels huge. Let's talk about how you get it back.\" [Acknowledge, Then the Issue]", bundle: 'pro', guideBack: "An acknowledgement, then the real problem" },
+        { q: "A stressed colleague barks \"Not now!\" when you ask a quick question.", a: "\"Okay. I'll come back at two.\" [Stay Low and Slow]", bundle: 'pro', guideBack: "A short line, said softly" },
+        { q: "Your neighbour's voice rises over the fence about a fallen fence panel.", a: "\"Your voice is going up, Gary.\" [Name the Volume]", bundle: 'pro', guideBack: "A neutral observation" },
+      ]
+    },
+  ],
+  toneboundaries2: [
+    {
+      name: "Pick What to Answer",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Answer the Words**, **Say It Back Softer** and **Say How It Sounded** — three choices about how much of the tone to take on, from none of it to all of it.\n\n• **Answer the Words** — a one-off; the matter is what counts, so deal with it\n• **Say It Back Softer** — you want them to hear their own point in a calm voice\n• **Say How It Sounded** — the tone itself has become the problem\n\nThe question that decides it: is this a one-off I can let pass, or has the tone become the thing to talk about?\n\nThe usual wrong choice is naming the tone on a one-off from someone under stress. Then you are the one who made it a thing, and the matter gets lost.\n\nMindset: not every sharp sentence needs a comment, and not every one can go without.",
+      inputs: [
+        { q: "Your sister, packing for the airport in a rush: \"Where are the passports?\"", a: "\"Top drawer, left side.\" [Answer the Words]", bundle: 'pro', guideBack: "A plain yes, or the plain facts" },
+        { q: "For the fourth meeting running, your colleague Ben cuts in on you with \"Can we get to the point?\"", a: "\"That came out pretty sharp, Ben, and it's the fourth time. What do you need from me in these?\" [Say How It Sounded]", bundle: 'pro', guideBack: "What the tone did, and a question" },
+        { q: "Your manager, tense before a client visit: \"This place needs to be tidy by eleven.\"", a: "\"So everything's clear and tidy by eleven. Got it.\" [Say It Back Softer]", bundle: 'pro', guideBack: "A neutral restatement" },
+        { q: "A delivery driver at your door, clearly late: \"Name. Quickly.\"", a: "\"Sam Okafor.\" [Answer the Words]", bundle: 'pro', guideBack: "A plain yes, or the plain facts" },
+        { q: "Your partner, with friends due in ten minutes: \"The table isn't even laid.\"", a: "\"So we need the table done before they get here. I'll do it now.\" [Say It Back Softer]", bundle: 'pro', guideBack: "A neutral restatement" },
+        { q: "Your father has said \"Don't be ridiculous\" to every idea you have had this evening.", a: "\"That sounds like you're dismissing me, Dad, and it keeps happening. Can I finish one?\" [Say How It Sounded]", bundle: 'pro', guideBack: "What the tone did, and a question" },
+        { q: "A stressed nurse at the reception desk: \"Date of birth.\"", a: "\"Fourth of May, eighty-six.\" [Answer the Words]", bundle: 'pro', guideBack: "A plain yes, or the plain facts" },
+        { q: "Your teammate, after your third question about the new system: \"It's in the guide.\"", a: "\"So the answer's in the guide. I'll look there first.\" [Say It Back Softer]", bundle: 'pro', guideBack: "A neutral restatement" },
+      ]
+    },
+    {
+      name: "Clear It Up",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Check What It Was**, **Ask for the Ask** and **Say How It Sounded** — for when the tone has to be dealt with, and the choice is how.\n\n• **Check What It Was** — you honestly cannot tell what it was\n• **Ask for the Ask** — it was clearly an order, and you are willing to do it\n• **Say How It Sounded** — it stung, and they need to know\n\nThe question that decides it: do I know what they meant?\n\nThe usual wrong choice is Say How It Sounded when you were not sure. You report a sting from a tone they never meant, and now you are arguing about that instead. A quick check would have cost far less.\n\nMindset: find out what it was before you tell them what it did.",
+      inputs: [
+        { q: "Your colleague Priya, reading over your shoulder: \"You're doing it in that order?\"", a: "\"Is that a real question, or do you think it's wrong?\" [Check What It Was]", bundle: 'pro', guideBack: "An either-or question" },
+        { q: "Your brother texts, \"Pick me up at six.\" Nothing else.", a: "\"Happy to. Can you ask me, though, rather than book me?\" [Ask for the Ask]", bundle: 'pro', guideBack: "A willing yes, and a request for a request" },
+        { q: "In front of your team, your manager says, \"Let me explain this one more time, very slowly.\"", a: "\"That sounded like you think I can't follow, and I didn't like it. What's the part you're worried about?\" [Say How It Sounded]", bundle: 'pro', guideBack: "What the tone did, and a question" },
+        { q: "Your partner, as you pick up your phone: \"Are you really doing that now?\"", a: "\"Is that a question, or do you want me to put it away?\" [Check What It Was]", bundle: 'pro', guideBack: "An either-or question" },
+        { q: "Your flatmate points at the bin and says, \"Out. Tonight.\"", a: "\"Sure. Try that again with a please?\" [Ask for the Ask]", bundle: 'pro', guideBack: "A willing yes, and a request for a request" },
+        { q: "A parent at football practice says to you, loudly, \"Your son needs to learn to pass.\"", a: "\"That came across like a telling-off, in front of everyone. Did something happen in the game?\" [Say How It Sounded]", bundle: 'pro', guideBack: "What the tone did, and a question" },
+        { q: "Your father, about your new job: \"And that pays the bills, does it?\"", a: "\"Is that a real question, Dad, or are you worried about it?\" [Check What It Was]", bundle: 'pro', guideBack: "An either-or question" },
+        { q: "Your manager, walking past your desk: \"Coffee. Black.\"", a: "\"I can do that. Can you ask me rather than order it, though?\" [Ask for the Ask]", bundle: 'pro', guideBack: "A willing yes, and a request for a request" },
+      ]
+    },
+    {
+      name: "All Five Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, with no hint about what kind of sharpness is coming next.\n\nThe five run from lightest to most direct. **Answer the Words** deals with the matter and leaves the tone. **Say It Back Softer** takes the message in a calm voice. **Check What It Was** asks what they meant. **Ask for the Ask** says yes and asks for a request. **Say How It Sounded** says what the tone did.\n\nIf you are unsure, ask yourself: do I know what it was, and does the tone need a word this time?\n\nThe usual wrong choice is going straight to the most direct one on a single sharp sentence. Then you look like the one who made it a thing.\n\nMindset: the lightest strategy that will still be heard is usually the right one.",
+      inputs: [
+        { q: "Your neighbour, over the fence: \"Your car's in front of my drive.\" It is.", a: "\"Sorry, you're right. I'll shift it now.\" [Answer the Words]", bundle: 'pro', guideBack: "A plain yes, or the plain facts" },
+        { q: "A colleague, handing you a stack of forms: \"Copy these. Twenty each.\"", a: "\"Sure. Can you ask me, though, rather than hand them over like that?\" [Ask for the Ask]", bundle: 'pro', guideBack: "A willing yes, and a request for a request" },
+        { q: "Your mother-in-law watches you hold the baby and says, \"You're supporting his head, aren't you?\"", a: "\"Is that a question, or do you think I'm doing it wrong?\" [Check What It Was]", bundle: 'pro', guideBack: "An either-or question" },
+        { q: "Your partner, through gritted teeth: \"The bins go out on Thursday.\"", a: "\"So the bins have to go out tonight. I'll do them after dinner.\" [Say It Back Softer]", bundle: 'pro', guideBack: "A neutral restatement" },
+        { q: "Your team lead reads your draft and says, \"Did you even read the brief?\"", a: "\"That sounded like you think I didn't try, and it stung. What's missing?\" [Say How It Sounded]", bundle: 'pro', guideBack: "What the tone did, and a question" },
+        { q: "A customer on the phone: \"Your website. Doesn't. Work.\"", a: "\"So you can't get the page to load. Let's fix that.\" [Say It Back Softer]", bundle: 'pro', guideBack: "A neutral restatement" },
+        { q: "Your teenage son, when you ask about his weekend plans: \"Why do you need to know?\"", a: "\"Is that a real question, or do you want me to back off?\" [Check What It Was]", bundle: 'pro', guideBack: "An either-or question" },
+        { q: "A friend, as you pull out of the car park: \"Left here. Left!\"", a: "\"Left, got it.\" [Answer the Words]", bundle: 'pro', guideBack: "A plain yes, or the plain facts" },
+      ]
+    },
+  ],
+  toneboundaries3: [
+    {
+      name: "Answer the Pushback",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Describe, Don't Debate**, **Grant the Reason, Keep the Line** and **Repeat the Line** — three follow-up strategies for when they push back on what you said about the tone.\n\n• **Describe, Don't Debate** — they deny it: \"I'm not shouting!\"\n• **Grant the Reason, Keep the Line** — they explain it: \"You'd shout too if…\"\n• **Repeat the Line** — they argue with the line itself: \"So I'm not allowed to be upset?\"\n\nThe question that decides it: what did they push back on — the word, the reason, or the line?\n\nThe usual wrong choice is debating. Arguing about whether it is shouting, or whether their reason is good enough, starts a second fight on top of the first.\n\nMindset: you don't have to win their argument. You only have to keep your line.",
+      inputs: [
+        { q: "Your partner raises her voice about the car keys. You say, \"We're both getting loud.\" She says, \"I'm not loud. You're just quiet.\"", a: "\"Maybe. From where I'm standing, it's too loud to think.\" [Describe, Don't Debate]", bundle: 'pro', guideBack: "Your side of it, not a verdict" },
+        { q: "Your colleague Tom snaps at you about the printer queue. You ask if he could ask rather than tell. He says, \"I've had three hours' sleep, okay?\"", a: "\"That sounds rough. I'd still like to be asked.\" [Grant the Reason, Keep the Line]", bundle: 'pro', guideBack: "A yes to the reason, a no to the tone" },
+        { q: "Your son shouts about his football kit. You say you'll listen when he's not shouting. He says, \"That's so unfair!\"", a: "\"I'll listen when you're not shouting.\" [Repeat the Line]", bundle: 'pro', guideBack: "The same sentence, just as calm" },
+        { q: "Your mother raises her voice on the phone about the visit. You answer quietly and slowly. She says, \"Don't use that voice with me, I'm perfectly calm.\"", a: "\"Maybe you feel calm. On my end it sounds loud.\" [Describe, Don't Debate]", bundle: 'pro', guideBack: "Your side of it, not a verdict" },
+        { q: "Your manager snaps at you about the slides. You ask to go through it calmly. She says, \"If you'd done it right the first time, I wouldn't need to.\"", a: "\"Fair — I missed it. I still want to go through it calmly.\" [Grant the Reason, Keep the Line]", bundle: 'pro', guideBack: "A yes to the reason, a no to the tone" },
+        { q: "Your friend Jamal shouts at you about the bill. You say, \"Not like this.\" He says, \"Oh, come on, stop being dramatic.\"", a: "\"Not like this. Let's sort it when we're calmer.\" [Repeat the Line]", bundle: 'pro', guideBack: "The same sentence, just as calm" },
+        { q: "Your neighbour shouts about your hedge. You say you want to hear it, but not shouted across the street. He says, \"I've asked nicely twice!\"", a: "\"You have, and I'm sorry it's taken so long. I'd still like you to stop shouting.\" [Grant the Reason, Keep the Line]", bundle: 'pro', guideBack: "A yes to the reason, a no to the tone" },
+        { q: "Your brother-in-law raises his voice at the barbecue about politics. You say, \"You're raising your voice.\" He says, \"This isn't raising my voice!\"", a: "\"Call it what you like. It's too loud for me.\" [Describe, Don't Debate]", bundle: 'pro', guideBack: "Your side of it, not a verdict" },
+      ]
+    },
+    {
+      name: "Step Out Well",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Call a Pause**, **Name the Consequence** and **Follow Through** — three follow-up strategies for when it keeps going, and talking more won't help right now.\n\n• **Call a Pause** — it could work later: stop, and name a time to come back\n• **Name the Consequence** — you have asked, and it goes on: say calmly what you'll do\n• **Follow Through** — you said what you'd do, and it goes on: do it, and offer a way back\n\nThe question that decides it: have I already said what I will do? If not, pause or name it. If yes, do it.\n\nThe usual wrong choice is walking out without a word — or warning again and again without ever doing it.\n\nMindset: stepping out well is part of the conversation, not the end of it.",
+      inputs: [
+        { q: "Your partner shouts about his mother's visit. You say, \"We're both getting loud.\" He keeps going.", a: "\"Let's stop for twenty minutes. I'll come back at nine, and we'll finish this.\" [Call a Pause]", bundle: 'pro', guideBack: "A break, with a time to come back" },
+        { q: "Your colleague Ruth raises her voice on the phone about the invoice. You ask her to keep it level. She gets louder.", a: "\"If it stays at this volume, I'll end the call and email you the figures.\" [Name the Consequence]", bundle: 'pro', guideBack: "A calm if-then about your own action" },
+        { q: "Your father is shouting at the dinner table. You said you'd leave if it carried on. He carries on.", a: "\"I'm going now, Dad. I'll ring you tomorrow.\" [Follow Through]", bundle: 'pro', guideBack: "A short exit, with a way back" },
+        { q: "Your daughter yells about a party you said no to. You say you'll listen when she's not yelling. She says, \"I'll never stop yelling, then!\"", a: "\"Okay. Let's leave it until after dinner. I'll come up at seven.\" [Call a Pause]", bundle: 'pro', guideBack: "A break, with a time to come back" },
+        { q: "A tenant shouts at you on the phone about the heating. You say you want to fix it and need him to stop shouting. He keeps shouting.", a: "\"If the shouting goes on, I'll hang up and send you the repair times by text.\" [Name the Consequence]", bundle: 'pro', guideBack: "A calm if-then about your own action" },
+        { q: "Your friend Sofia is still shouting at you in her car park. You said you'd go home if it stayed like this. It does.", a: "\"I'm heading home. Call me tomorrow, and we'll talk properly.\" [Follow Through]", bundle: 'pro', guideBack: "A short exit, with a way back" },
+        { q: "Your manager snaps at you in a corridor about a complaint. You ask to talk about it calmly. He says, \"There's nothing calm about this!\"", a: "\"Then let's take ten minutes. I'll come to your office at eleven.\" [Call a Pause]", bundle: 'pro', guideBack: "A break, with a time to come back" },
+        { q: "Your sister shouts at you in the kitchen about the holidays. You say, \"Not like this.\" She says, \"Oh, what are you going to do about it?\"", a: "\"If it stays like this, I'll go home, and we'll talk on Saturday.\" [Name the Consequence]", bundle: 'pro', guideBack: "A calm if-then about your own action" },
+      ]
+    },
+    {
+      name: "All Six Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every follow-up strategy in the pack, mixed, in the order pushback really comes — with no warning about which kind it will be.\n\nThe six fall into two groups. For pushback on your words: **Describe, Don't Debate**, **Grant the Reason, Keep the Line** and **Repeat the Line**. For when it keeps going: **Call a Pause**, **Name the Consequence** and **Follow Through**.\n\nIf you are unsure, ask what they just did: denied it, explained it, argued with your line, or simply kept going?\n\nThe usual wrong choice is raising your own voice to be heard, which gives them the volume they were denying.\n\nMindset: their reaction tells you which follow-up fits. Listen to it, not to the volume.",
+      inputs: [
+        { q: "Your colleague Ben barks across the office, \"Where's the report?\" You answer his words calmly. He says, \"Don't look at me like I'm shouting.\"", a: "\"I'm not saying you're shouting. It just comes across as loud from here.\" [Describe, Don't Debate]", bundle: 'pro', guideBack: "Your side of it, not a verdict" },
+        { q: "Your partner raises his voice about the late train. You say you want to hear it, but not like this. He says, \"I've been standing on a platform for two hours!\"", a: "\"That sounds awful. I'd still like a normal voice.\" [Grant the Reason, Keep the Line]", bundle: 'pro', guideBack: "A yes to the reason, a no to the tone" },
+        { q: "Your teenage daughter shouts about her room. You say you'll talk when she's not shouting. She says, \"You're impossible!\"", a: "\"I'll talk when you're not shouting.\" [Repeat the Line]", bundle: 'pro', guideBack: "The same sentence, just as calm" },
+        { q: "Your father shouts at you in the garden about the fence. You say, \"We're both getting loud.\" He keeps going.", a: "\"Let's stop here. I'll come back after lunch, and we'll look at it together.\" [Call a Pause]", bundle: 'pro', guideBack: "A break, with a time to come back" },
+        { q: "A supplier shouts at you on the phone about a late payment. You ask him to keep it level. He gets louder.", a: "\"If it stays at this volume, I'll end the call and email you the payment date.\" [Name the Consequence]", bundle: 'pro', guideBack: "A calm if-then about your own action" },
+        { q: "Your friend Kim keeps shouting on the phone. You said you'd hang up if it carried on. It does.", a: "\"I'm hanging up now, Kim. I'll call you tomorrow.\" [Follow Through]", bundle: 'pro', guideBack: "A short exit, with a way back" },
+        { q: "Your mother-in-law raises her voice about the christening. You ask if she'd mind talking about it calmly. She says, \"Oh, you're far too sensitive.\"", a: "\"You might be right that I'm sensitive. I'd still like us to talk calmly.\" [Grant the Reason, Keep the Line]", bundle: 'pro', guideBack: "A yes to the reason, a no to the tone" },
+        { q: "Your team leader snaps, \"Just do what I say!\" You ask if he could ask rather than tell. He says, \"I'm not snapping, I'm busy.\"", a: "\"Maybe it's just busy. From here it sounds like snapping.\" [Describe, Don't Debate]", bundle: 'pro', guideBack: "Your side of it, not a verdict" },
+      ]
+    },
+  ],
+  toneboundaries4: [
+    {
+      name: "Read the Calm",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Thank the Shift**, **Take the Apology**, **Now Take Their Point** and **Own Your Part** — four follow-up strategies for the moment the storm ends, and which one fits the way it ended.\n\n• **Thank the Shift** — their voice came down, but nothing has been said yet\n• **Take the Apology** — they said sorry for the tone\n• **Now Take Their Point** — they are saying calmly what they were shouting about\n• **Own Your Part** — you were sharp too\n\nThe question that decides it: what just happened — did the tone drop, did they apologise, are they making their point, or did you get loud as well?\n\nThe usual wrong choice is stopping at the thanks. \"Thanks, that's better\" and nothing more tells them the calm voice gets them nothing, and the point they were shouting about is still waiting.\n\nMindset: the calm is not the end of the conversation. It is where the real one starts.",
+      inputs: [
+        { q: "Your colleague raises his voice about the parking spaces. You stay calm and ask him to talk normally. He sighs and says, more quietly, \"Okay. Fine.\"", a: "\"Thanks, that's easier. What's going on with the parking?\" [Thank the Shift]", bundle: 'pro', guideBack: "A short thanks, with no victory in it" },
+        { q: "Your partner shouts about the washing. You say you'll talk when it's calmer. Later they say, \"I'm sorry I shouted about the washing.\"", a: "\"Thanks for saying that. So — shall we work out a system?\" [Take the Apology]", bundle: 'pro', guideBack: "A clean acceptance, then the subject" },
+        { q: "A customer shouts that the repair hasn't worked. You stay calm, and she calms down: \"It's the third time I've brought it back.\"", a: "\"Three times is too many. Let me get the manager and sort it properly.\" [Now Take Their Point]", bundle: 'pro', guideBack: "An acknowledgement of what they got right" },
+        { q: "Your teenage son shouts at you, and you yell back. Now he's at the kitchen table, not looking at you.", a: "\"I yelled too. I'm sorry for that.\" [Own Your Part]", bundle: 'pro', guideBack: "A short apology for your share" },
+        { q: "Your manager snaps at you about a missed call. You ask to talk it through calmly. She takes a breath: \"Sorry. That came out wrong.\"", a: "\"Thanks, I appreciate it. What was the call about?\" [Take the Apology]", bundle: 'pro', guideBack: "A clean acceptance, then the subject" },
+        { q: "Your dad raises his voice about the garden. You lower yours, and he does too: \"I just can't do the hedge on my own anymore.\"", a: "\"That's fair, Dad. I'll come and do it with you on Saturday.\" [Now Take Their Point]", bundle: 'pro', guideBack: "An acknowledgement of what they got right" },
+        { q: "Your friend shouts down the phone about the cancelled trip. You stay calm. After a moment she says, quietly, \"Okay. I'm calmer now.\"", a: "\"Thanks. I'm glad. Tell me what happened with the trip.\" [Thank the Shift]", bundle: 'pro', guideBack: "A short thanks, with no victory in it" },
+        { q: "Your flatmate snaps at you about the rent, and you answer sharply. Now you're both quiet in the hallway.", a: "\"I was sharp back there. Sorry. Can we look at the rent again?\" [Own Your Part]", bundle: 'pro', guideBack: "A short apology for your share" },
+      ]
+    },
+    {
+      name: "Pick It Back Up",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Come Back as Promised**, **Name the Pattern**, **Now Take Their Point** and **Own Your Part** — for later, when you return to a talk that got loud: after a pause, the next day, or the third time.\n\n• **Come Back as Promised** — you said you'd come back, and now it is time\n• **Name the Pattern** — it is the third time, and today is calm\n• **Now Take Their Point** — you are back, and their concern still needs an answer\n• **Own Your Part** — looking back, you were sharp too\n\nThe question that decides it: is this the return I promised, or a habit we need to talk about?\n\nThe usual wrong choice is naming the pattern when all you promised was to come back. A return that opens with \"this keeps happening\" feels like a trial, and the next pause will be harder to agree to.\n\nMindset: coming back is part of the boundary. Do it on time, and keep it the right size.",
+      inputs: [
+        { q: "Your partner gets loud about the holiday. You say you'll take twenty minutes and come back. Twenty minutes later, you sit down next to them.", a: "\"I said I'd come back. Shall we try the holiday again?\" [Come Back as Promised]", bundle: 'pro', guideBack: "An invitation to try again" },
+        { q: "For the third time in a month, your colleague has shouted at you about the shared calendar. Now it's Friday afternoon, and things are relaxed.", a: "\"Can I raise something while it's calm? The calendar has turned into shouting three times now. Can we agree how to handle it?\" [Name the Pattern]", bundle: 'pro', guideBack: "A calm observation and a proposal" },
+        { q: "Your son shouted about his curfew last night. You said you'd talk in the morning. Now you're back, and he says calmly, \"Everyone else can stay out later.\"", a: "\"That's fair to raise. Let's talk about a later time on Fridays.\" [Now Take Their Point]", bundle: 'pro', guideBack: "An acknowledgement of what they got right" },
+        { q: "Yesterday you and your sister both shouted on the phone about your mum. You said you'd ring today. She picks up.", a: "\"Hi. Before anything else — I shouted too yesterday. I'm sorry.\" [Own Your Part]", bundle: 'pro', guideBack: "A short apology for your share" },
+        { q: "Your manager raised her voice in a meeting, and you said you'd come to her office at two. It's two.", a: "\"It's two, as I said. Is now still good to finish the meeting?\" [Come Back as Promised]", bundle: 'pro', guideBack: "An invitation to try again" },
+        { q: "Your neighbour has shouted at you about the bins three times this summer. Today you meet him at the gate, and he's friendly.", a: "\"Can I mention the bins while we're both calm? It's turned into shouting three times. Can we agree a way to sort it?\" [Name the Pattern]", bundle: 'pro', guideBack: "A calm observation and a proposal" },
+        { q: "A client shouted about the price, and you said you'd call back after lunch. You call, and she says, \"I just can't pay that much this year.\"", a: "\"That's a real problem, and I understand. Let's see what we can take out.\" [Now Take Their Point]", bundle: 'pro', guideBack: "An acknowledgement of what they got right" },
+        { q: "Your partner sent angry messages last night, and you wrote back, \"Let's talk tomorrow at six.\" It's six, and you're both home.", a: "\"It's six. I said we'd talk. Do you still want to?\" [Come Back as Promised]", bundle: 'pro', guideBack: "An invitation to try again" },
+      ]
+    },
+    {
+      name: "All Six Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every follow-up strategy in the pack, mixed, in the order real conversations bring them rather than the order they were taught.\n\nThe six fall into two groups. Four answer the moment right after the storm: **Thank the Shift** when their voice comes down, **Take the Apology** when they say sorry, **Now Take Their Point** when they say calmly what they were shouting about, and **Own Your Part** when you were sharp too. Two answer what comes later: **Come Back as Promised** after a pause, and **Name the Pattern** when the same tone keeps returning.\n\nIf you are unsure, ask two questions: how did the storm end — and is this the first time?\n\nMindset: the boundary was the first half. What you say after the storm decides whether it holds.",
+      inputs: [
+        { q: "Your colleague shouts at you over the phone about a lost file. You say you'll help once you can talk normally. He breathes out: \"Okay. Okay. Sorry.\"", a: "\"Thanks, that's easier. Which file is it?\" [Thank the Shift]", bundle: 'pro', guideBack: "A short thanks, with no victory in it" },
+        { q: "Your mum yells at you about missing her birthday lunch. You say you'll talk when she's calmer. Later she rings: \"I'm sorry I shouted, love.\"", a: "\"Thanks, Mum. I'm sorry I missed it. Can we go for lunch on Sunday?\" [Take the Apology]", bundle: 'pro', guideBack: "A clean acceptance, then the subject" },
+        { q: "Your teenage daughter shouts that you read her messages. You ask her to tell you calmly. She does: \"You looked at my phone without asking.\"", a: "\"You're right, I did, and I shouldn't have. Let's talk about how we handle it.\" [Now Take Their Point]", bundle: 'pro', guideBack: "An acknowledgement of what they got right" },
+        { q: "You and your partner both raise your voices about the in-laws. Now it's quiet, and they come and sit beside you.", a: "\"I got loud too. Sorry for my part.\" [Own Your Part]", bundle: 'pro', guideBack: "A short apology for your share" },
+        { q: "Your brother is shouting about the inheritance. You say you'll call him back at eight. It's eight, and you dial his number.", a: "\"Hi, it's eight, as I said. Can we try again?\" [Come Back as Promised]", bundle: 'pro', guideBack: "An invitation to try again" },
+        { q: "Your manager has snapped at you before every deadline this term. Now the project is done, and she's relaxed.", a: "\"Can I raise something now it's calm? Before every deadline it gets sharp between us. Can we agree what we do next time?\" [Name the Pattern]", bundle: 'pro', guideBack: "A calm observation and a proposal" },
+        { q: "A customer shouts that his order is wrong. You stay calm and slow. He lowers his voice: \"I ordered blue, not black.\"", a: "\"Thank you — that's clear. Let me check the blue for you now.\" [Thank the Shift]", bundle: 'pro', guideBack: "A short thanks, with no victory in it" },
+        { q: "Your friend snaps at you at the party, and you say something cutting back. The next day she texts, \"Sorry about last night.\"", a: "\"Thanks — and I'm sorry too. I said something unkind.\" [Own Your Part]", bundle: 'pro', guideBack: "A short apology for your share" },
+      ]
+    },
+  ],
+  networking1: [
+    {
+      name: "Open the Door",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**What Brought You Here?**, **The Three-Line Intro** and **Ask What They're Working On** — the first minute of a conversation at an event, and the choice of how to begin it.\n\n• **What Brought You Here?** — nobody has spoken yet, and you share the event\n• **The Three-Line Intro** — the question has come to you: who are you?\n• **Ask What They're Working On** — they gave you a title, and the talk stopped\n\nThe question that decides it: whose turn is it? If no one has spoken, ask about the event. If they asked about you, answer in three lines. If they answered with a title, ask about now.\n\nThe usual wrong choice is the job-title question as the very first thing. \"So what do you do?\" gets a label back, and then you are both stuck.\n\nMindset: start from what you share, and keep your own part short.",
+      inputs: [
+        { q: "You and a stranger are both studying the programme at a nursing conference.", a: "\"Which session are you here for? I can't choose between the two after lunch.\" [What Brought You Here?]", bundle: 'pro', guideBack: "An opening question about the shared moment" },
+        { q: "A man at a meetup says, \"So, tell me about yourself.\"", a: "\"I'm Anders. I fix bikes for a living, and I'm here because I want to open a second shop. And you?\" [The Three-Line Intro]", bundle: 'pro', guideBack: "A short intro with a hook, and a question back" },
+        { q: "A woman tells you she is \"in marketing\" and stops there.", a: "\"What's the big project you're on right now?\" [Ask What They're Working On]", bundle: 'pro', guideBack: "A question about now, not the job title" },
+        { q: "You are both in the cloakroom queue after a book launch.", a: "\"What did you think of the reading? I want to buy the book now.\" [What Brought You Here?]", bundle: 'pro', guideBack: "An opening question about the shared moment" },
+        { q: "At a parents' evening, a teacher asks what you do.", a: "\"I'm Grace, Leo's mum. I'm a vet, so I'm used to patients who won't sit still. What about you?\" [The Three-Line Intro]", bundle: 'pro', guideBack: "A short intro with a hook, and a question back" },
+        { q: "A student at a career fair tells you she is \"just studying\".", a: "\"Studying what? And what's taking up most of your time this term?\" [Ask What They're Working On]", bundle: 'pro', guideBack: "A question about now, not the job title" },
+        { q: "The breakout room opens, and two faces look at you.", a: "\"Hello, both. Was it the first talk that brought you here, or the second?\" [What Brought You Here?]", bundle: 'pro', guideBack: "An opening question about the shared moment" },
+        { q: "At a party, a guest asks how you know the host.", a: "\"I'm Tove. I play cello with Anna in an orchestra, and I teach kids at weekends. How do you know her?\" [The Three-Line Intro]", bundle: 'pro', guideBack: "A short intro with a hook, and a question back" },
+      ]
+    },
+    {
+      name: "Be Useful",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Find the Overlap**, **Offer Something First** and **Make the Introduction** — the middle of the conversation, when you have heard something and can do something with it.\n\n• **Find the Overlap** — you share the problem, the place or the interest\n• **Offer Something First** — they need something small that you have\n• **Make the Introduction** — someone else has what they need\n\nThe question that decides it: who has the answer to what they just said — both of us, me, or someone else in the room?\n\nThe usual wrong choice is turning a need into a sale. \"I could do that for you\" sounds helpful and lands as a pitch. A link, a name or an honest \"me too\" builds far more.\n\nMindset: listen for what they need, then give the smallest useful thing.",
+      inputs: [
+        { q: "A teacher on a course says she wants to start a chess club at her school.", a: "\"I started one two years ago. What's stopping you so far?\" [Find the Overlap]", bundle: 'pro', guideBack: "A shared point, said out loud" },
+        { q: "A developer mentions he cannot find a good mentor.", a: "\"There's a free mentoring scheme through this meetup. I'll send you the link.\" [Offer Something First]", bundle: 'pro', guideBack: "A small offer with no ask attached" },
+        { q: "A designer needs a printer for a small job, and a printer is standing at the next table.", a: "\"Come and meet Oskar — he prints small runs. Oskar, this is Mira. She has a job for you.\" [Make the Introduction]", bundle: 'pro', guideBack: "Two names and a reason to talk" },
+        { q: "A carpenter at a trade fair mentions he is moving into restoring old windows.", a: "\"So am I — I did my first one last month. Where are you finding the glass?\" [Find the Overlap]", bundle: 'pro', guideBack: "A shared point, said out loud" },
+        { q: "A nurse says she is nervous about giving her first conference talk.", a: "\"Practise it once out loud to one friend. That one time made all the difference for me.\" [Offer Something First]", bundle: 'pro', guideBack: "A small offer with no ask attached" },
+        { q: "Two people you have met tonight both run food trucks.", a: "\"Have you met Ayo? You both run food trucks, and he knows every market in the city.\" [Make the Introduction]", bundle: 'pro', guideBack: "Two names and a reason to talk" },
+        { q: "A shop owner at a launch says she is tired of doing everything on her own.", a: "\"Me too. I do my books at midnight. Which part is hardest for you?\" [Find the Overlap]", bundle: 'pro', guideBack: "A shared point, said out loud" },
+        { q: "A student says she wants to work in a hospital, and your neighbour, a hospital nurse, is here tonight.", a: "\"Would you like to meet my neighbour Rosa? She's a nurse at the hospital, and she loves students.\" [Make the Introduction]", bundle: 'pro', guideBack: "Two names and a reason to talk" },
+      ]
+    },
+    {
+      name: "All Seven Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order real events produce them rather than the order they were taught:\n\n• **What Brought You Here?** — open from what you share\n• **The Three-Line Intro** — answer who you are, then ask back\n• **Ask What They're Working On** — ask about now, not the title\n• **Find the Overlap** — name where your stories touch\n• **Offer Something First** — give something small, no ask\n• **Make the Introduction** — connect two people\n• **Exit With a Next Step** — leave with a plan\n\nThe question that decides it: where are we in the conversation — the start, the middle, or the end?\n\nThe usual wrong choice is leaving out the end: a good talk, and no next step.\n\nMindset: one good conversation with a next step beats ten without one.",
+      inputs: [
+        { q: "At a tech meetup, the man beside you has just closed his laptop after the talk.", a: "\"What did you make of that? I lost the thread in the middle.\" [What Brought You Here?]", bundle: 'pro', guideBack: "An opening question about the shared moment" },
+        { q: "At a conference dinner, the woman next to you asks, \"And who are you?\"", a: "\"I'm Bea. I'm a dentist, and I'm here to learn how to talk to nervous patients. What about you?\" [The Three-Line Intro]", bundle: 'pro', guideBack: "A short intro with a hook, and a question back" },
+        { q: "A man says he is a lawyer, and the conversation stops.", a: "\"What are you working on at the moment? Anything you can talk about?\" [Ask What They're Working On]", bundle: 'pro', guideBack: "A question about now, not the job title" },
+        { q: "A musician says she cannot find anywhere to rehearse.", a: "\"Nor can we. We've been rehearsing in a garage. Where have you looked?\" [Find the Overlap]", bundle: 'pro', guideBack: "A shared point, said out loud" },
+        { q: "A teacher mentions she wants to make a podcast with her class.", a: "\"My class made one last year. I'll send you the free app we used.\" [Offer Something First]", bundle: 'pro', guideBack: "A small offer with no ask attached" },
+        { q: "Two people you have met have both offered to host the next meetup.", a: "\"You two should meet. Kai, this is Lou — you both offered to host in the spring.\" [Make the Introduction]", bundle: 'pro', guideBack: "Two names and a reason to talk" },
+        { q: "You have had a good talk with a carpenter about building shelves for your classroom.", a: "\"Can I call you next week about the shelves? I'd like to do this properly.\" [Exit With a Next Step]", bundle: 'pro', guideBack: "A goodbye with a concrete plan" },
+        { q: "The launch is ending, and you promised someone the title of a book.", a: "\"I'll text you the book title tonight. It was really good to meet you.\" [Exit With a Next Step]", bundle: 'pro', guideBack: "A goodbye with a concrete plan" },
+      ]
+    },
+  ],
+  networking2: [
+    {
+      name: "Choose Your Ask",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Ask for Advice, Not a Favour**, **Ask for Twenty Minutes** and **Ask for an Introduction** — the three small asks in this pack. A brewer offers to help: do you want her view, her time, or someone she knows?\n\n• **Ask for Advice, Not a Favour** — one real question they can answer right away\n• **Ask for Twenty Minutes** — a short, fixed conversation when one question is not enough\n• **Ask for an Introduction** — when the person you need is someone they know\n\nThe question that decides it: what does this person have that you need — their experience, their time, or their contacts?\n\nThe usual wrong choice is the introduction first, before they know what you are doing or why. It asks for their name before they have had a reason to lend it.\n\nMindset: start with the smallest ask that would really help.",
+      inputs: [
+        { q: "Elsa, a potter you met at a craft fair, replies to your follow-up: \"Anything I can do, just say.\" You want to start selling your own work.", a: "\"Thank you! One question: how did you get your first shop to stock you?\" [Ask for Advice, Not a Favour]", bundle: 'pro', guideBack: "A question about their experience" },
+        { q: "You want to hear how Marcus, a park ranger, got his job, and he seems open to a chat.", a: "\"Could I buy you a coffee for twenty minutes some time? I'd love to hear how you started.\" [Ask for Twenty Minutes]", bundle: 'pro', guideBack: "A small request, easy to decline" },
+        { q: "Your neighbour, Agnes, mentions that her son works at the animation studio you dream of joining.", a: "\"Would he be open to a short chat? I could write two lines you could send him.\" [Ask for an Introduction]", bundle: 'pro', guideBack: "A request that is easy to pass on" },
+        { q: "Dr Patel, a dentist you know from your running club, told you to \"drop her a line\" about dental school. You have a lot of questions.", a: "\"Would a fifteen-minute call next week suit you? I've got three questions about the course.\" [Ask for Twenty Minutes]", bundle: 'pro', guideBack: "A small request, easy to decline" },
+        { q: "You are about to ask Chloe, a sound engineer, whether her studio has any jobs.", a: "\"Could I ask your advice instead? What would make you hire someone with no studio experience?\" [Ask for Advice, Not a Favour]", bundle: 'pro', guideBack: "A question about their experience" },
+        { q: "Your old music teacher, Mr Berg, says he knows the head of the college you're applying to.", a: "\"Would you feel comfortable asking her if she'd talk to me? Only if you know her well.\" [Ask for an Introduction]", bundle: 'pro', guideBack: "A request that is easy to pass on" },
+        { q: "Lars, a farmer who answered your message, writes, \"Happy to help, but I'm in the fields until September.\"", a: "\"Then could I send you two questions by email? Answer whenever suits, or not at all.\" [Ask for Twenty Minutes]", bundle: 'pro', guideBack: "A small request, easy to decline" },
+        { q: "You are choosing between two courses, and Wen, a graphic designer you met at a portfolio review, has offered to help.", a: "\"Which would you choose: the one-year course, or freelance work and evening classes?\" [Ask for Advice, Not a Favour]", bundle: 'pro', guideBack: "A question about their experience" },
+      ]
+    },
+    {
+      name: "Keep It Warm",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Follow Up Within a Day**, **Reconnect After a Long Gap**, **Stay in Touch Without an Ask** and **Close the Loop** — four ways to be in touch without asking for anything. A mechanic you met once has just opened a garage: which message fits?\n\n• **Follow Up Within a Day** — you met yesterday\n• **Reconnect After a Long Gap** — it has been a year or more\n• **Stay in Touch Without an Ask** — you're in touch, and you have something useful or kind to send\n• **Close the Loop** — they helped you, and you know how it turned out\n\nThe question that decides it: when did you last speak, and did they help you with something?\n\nThe usual wrong choice is adding a small ask at the end. One \"by the way, do you know anyone…\" turns a gift into a request.\n\nMindset: most of your messages should want nothing back.",
+      inputs: [
+        { q: "Last night at a startup meet-up you talked to Kai about his app for dog walkers. You promised to send him a podcast.", a: "\"Good to talk about the dog-walking app last night, Kai. Here's the podcast I mentioned.\" [Follow Up Within a Day]", bundle: 'pro', guideBack: "A short note: one detail, one promise kept" },
+        { q: "You haven't spoken to Beth, a nurse you trained with, in five years. You've just seen she's become a ward manager.", a: "\"Beth, it's been far too long! I saw you're running the ward now. Congratulations.\" [Reconnect After a Long Gap]", bundle: 'pro', guideBack: "An honest hello with a real reason" },
+        { q: "Ollie, a carpenter you met, said he'd like to teach. You've just seen an evening class that needs a teacher.", a: "\"Saw this and remembered you wanted to teach. No need to reply.\" [Stay in Touch Without an Ask]", bundle: 'pro', guideBack: "A useful share, no reply needed" },
+        { q: "Mrs Adeyemi, a head teacher, gave you advice before your interview. You got the job.", a: "\"I got the job! Your tip about the sample lesson made the difference. Thank you.\" [Close the Loop]", bundle: 'pro', guideBack: "A thank-you with the outcome" },
+        { q: "At a book fair yesterday you chatted with Ivo, who runs a small bookshop. You promised nothing, but you remember his story about the cat in the window.", a: "\"Thanks for the chat yesterday, Ivo. Say hello to the bookshop cat from me.\" [Follow Up Within a Day]", bundle: 'pro', guideBack: "A short note: one detail, one promise kept" },
+        { q: "You last spoke to Hannah, a former colleague, two years ago. You'd like to know how her garden business is going.", a: "\"It's been two years, I know. I saw a photo of one of your gardens and wanted to ask how it's all going.\" [Reconnect After a Long Gap]", bundle: 'pro', guideBack: "An honest hello with a real reason" },
+        { q: "Sam, a mechanic who once helped you with your van, has just opened his own garage.", a: "\"Congratulations on the new garage, Sam. Well deserved. No need to reply.\" [Stay in Touch Without an Ask]", bundle: 'pro', guideBack: "A useful share, no reply needed" },
+        { q: "Months ago Femi, a vet, introduced you to his accountant. You've used her all year.", a: "\"Just a note to say Sara has been brilliant all year. Thanks again for the introduction, Femi.\" [Close the Loop]", bundle: 'pro', guideBack: "A thank-you with the outcome" },
+      ]
+    },
+    {
+      name: "All Seven Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order real contacts need them — a follow-up one day, a thank-you six months later. For example: a school counsellor you met at a training day, from the first note to the news that you started the course.\n\nThe seven fall into three groups. Right after you meet: **Follow Up Within a Day**. When you need something: **Ask for Advice, Not a Favour**, **Ask for Twenty Minutes** and **Ask for an Introduction**. Over time: **Reconnect After a Long Gap**, **Stay in Touch Without an Ask** and **Close the Loop**.\n\nIf you are unsure, ask: when did we last speak, and do I need something right now?\n\nThe usual wrong choice is an ask when a no-ask message was what the moment needed.\n\nMindset: give more often than you ask, and always report back.",
+      inputs: [
+        { q: "This morning you remember that you promised Odile, a wedding planner you met yesterday, the name of a good caterer.", a: "\"Lovely to meet you at the fair, Odile. The caterer I mentioned is Green Table — ask for Mo.\" [Follow Up Within a Day]", bundle: 'pro', guideBack: "A short note: one detail, one promise kept" },
+        { q: "Bilal, a civil engineer, replies to your note: \"Happy to help any way I can.\" You're thinking of changing careers into engineering.", a: "\"Thank you. What would you do first if you were starting in engineering at thirty?\" [Ask for Advice, Not a Favour]", bundle: 'pro', guideBack: "A question about their experience" },
+        { q: "You'd like to hear what life is like as a school counsellor. Ines, who you met at a training day, said she's happy to talk.", a: "\"Could we have a twenty-minute call one evening? I'd like to hear what a normal week looks like.\" [Ask for Twenty Minutes]", bundle: 'pro', guideBack: "A small request, easy to decline" },
+        { q: "Your cousin Theo is friends with a woman who runs the dog-grooming business you'd like to learn from.", a: "\"Would you be up for asking her if I could get in touch? I can write a short message for you to send.\" [Ask for an Introduction]", bundle: 'pro', guideBack: "A request that is easy to pass on" },
+        { q: "You find out that Rob, who you studied with nine years ago, now teaches carpentry — the thing you've just started.", a: "\"It's been nine years, Rob, I know. I've just started carpentry and saw that you teach it now.\" [Reconnect After a Long Gap]", bundle: 'pro', guideBack: "An honest hello with a real reason" },
+        { q: "Freya, a journalist you met, wrote about housing last year. You've just read a report she might find useful.", a: "\"Thought this report might be useful for your housing work. No need to reply.\" [Stay in Touch Without an Ask]", bundle: 'pro', guideBack: "A useful share, no reply needed" },
+        { q: "Your call with Ines helped you decide to train as a school counsellor. You've just started the course.", a: "\"I started the counselling course this week. Our call is the reason I applied. Thank you.\" [Close the Loop]", bundle: 'pro', guideBack: "A thank-you with the outcome" },
+        { q: "Noor, an illustrator, says she can't take you on, but suggests you talk to her agent.", a: "\"That's kind, thank you. Would you be comfortable passing on my details? I can send you two lines.\" [Ask for an Introduction]", bundle: 'pro', guideBack: "A request that is easy to pass on" },
       ]
     },
   ],
