@@ -4215,6 +4215,7 @@ html.ds-vh-pinned .extended-screen {
 .pg-ring svg { width: 100%; height: 100%; display: block; }
 .pg-ring .pg-disc { fill: none; }
 .pg-ring.met .pg-disc { fill: var(--ds-prog-acc); }
+.pg-ring.met .pg-ring-track { stroke: var(--ds-prog-acc); }
 .pg-ring-check {
   position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
   color: var(--ds-cal-4-txt); font-size: 16px;
@@ -4238,7 +4239,7 @@ html.ds-vh-pinned .extended-screen {
 .pg-week-days strong { color: var(--ds-txt); }
 
 /* Calendar of rings */
-.pg-cal-grid { display: grid; grid-template-columns: 20px repeat(7, minmax(0, 1fr)); gap: 4px; }
+.pg-cal-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; }
 .pg-cal-grid .prog-cal-dow { font-size: 11px; color: var(--ds-txt2); }
 .pg-day {
   position: relative; border: none; background: none; padding: 0; font-family: inherit;
@@ -4259,12 +4260,30 @@ html.ds-vh-pinned .extended-screen {
 .pg-day.today { box-shadow: inset 0 0 0 2px var(--ds-prog-acc); }
 .pg-cal-sum { margin-top: 12px; font-size: 13px; color: var(--ds-txt2); text-align: center; }
 .pg-cal-sum strong { color: var(--ds-txt); }
-.pg-cal-note { margin-top: 4px; font-size: 12px; color: var(--ds-txt2); text-align: center; opacity: .85; }
 
 /* Where your time went */
 .pg-time-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 8px; }
 .pg-time-title { font-size: 15px; font-weight: 700; color: var(--ds-txt); }
-.pg-time-period { font-size: 13px; white-space: nowrap; }
+.pg-time-period { font-size: 13px; margin: -2px 0 6px; }
+.pg-seg { display: flex; background: var(--ds-subnav-btn); border-radius: 10px; padding: 3px; }
+.pg-seg-btn {
+  border: none; background: none; font-family: inherit; cursor: pointer; border-radius: 8px;
+  height: 30px; padding: 0 12px; font-size: 13px; font-weight: 600; color: var(--ds-txt2);
+  -webkit-tap-highlight-color: transparent;
+}
+.pg-seg-btn.active { background: var(--ds-card); color: var(--ds-txt); font-weight: 700; box-shadow: 0 1px 3px var(--ds-shadow); }
+.pg-row--topic {
+  border: none; background: none; padding: 0; font-family: inherit; text-align: left;
+  cursor: pointer; width: 100%; -webkit-tap-highlight-color: transparent;
+}
+.pg-row-name .ti { font-size: 14px; color: var(--ds-txt2); margin-left: 4px; vertical-align: -1px; transition: transform .2s; display: inline-block; }
+.pg-topic.open .pg-row-name .ti { transform: rotate(90deg); }
+.pg-subrows { display: none; flex-direction: column; gap: 9px; margin: 10px 0 2px 14px; padding-left: 12px; border-left: 2px solid var(--ds-ring-track); }
+.pg-topic.open .pg-subrows { display: flex; }
+.pg-subrow { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; align-items: center; }
+.pg-subrow .pg-row-name { font-size: 13px; font-weight: 500; }
+.pg-subrow .pg-row-val { font-size: 13px; }
+.pg-subrow .pg-row-track, .pg-subrow .pg-row-fill { height: 4px; }
 .pg-tabs { display: flex; gap: 18px; border-bottom: 1px solid var(--ds-border-sub); margin-bottom: 12px; }
 .pg-tab {
   border: none; background: none; padding: 8px 0; font-family: inherit; cursor: pointer;
