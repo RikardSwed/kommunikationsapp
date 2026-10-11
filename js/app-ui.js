@@ -1338,14 +1338,27 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     });
     return m;
   }
+  // Week = this calendar week. Month = the month the calendar shows, so
+  // browsing back to September and choosing Month shows September.
+  // Topics start collapsed; tapping one shows the packs trained under it.
+  const _openTopics = new Set();
+  function timePeriod() { return getSettings().period === 'month' ? 'month' : 'week'; }
   function renderTimeSplit(sessions) {
-    const r = calRange();
     const today = dayOnly(new Date());
-    const fromS = dstr(r.from);
-    const toS   = dstr(r.to > today ? today : r.to);
+    const period = timePeriod();
+    let from, to, label;
+    if (period === 'month') {
+      const r = calRange();
+      from = r.from; to = r.to > today ? today : r.to; label = calTitleText(r);
+    } else {
+      from = startOfWeek(today); to = today;
+      label = 'This week \u00b7 ' + calFmtRange(from, addDays(from, 6));
+    }
+    const fromS = dstr(from), toS = dstr(to);
     const inRange = sessions.filter(x => x.date >= fromS && x.date <= toS);
     const per = document.getElementById('pgTimePeriod');
-    if (per) per.textContent = calTitleText(r);
+    if (per) per.textContent = label;
+    document.querySelectorAll('.pg-seg-btn').forEach(b => b.classList.toggle('active', b.dataset.period === period));
     const split = timeSplit();
     document.querySelectorAll('.pg-tab').forEach(b => {
       const on = b.dataset.split === split;
@@ -1356,7 +1369,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     const rows = {};
     if (split === 'packs') {
       inRange.forEach(x => {
-        const e = rows[x.packKey] || (rows[x.packKey] = { name: x.packLabel, min: 0, sub: '' });
+        const e = rows[x.packKey] || (rows[x.packKey] = { name: x.packLabel, min: 0 });
         e.min += x.minutes;
       });
     } else {
@@ -1369,9 +1382,6 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
           e.packs[x.packLabel] = (e.packs[x.packLabel] || 0) + x.minutes;
         });
       });
-      Object.values(rows).forEach(e => {
-        e.sub = Object.keys(e.packs).sort((a, b) => e.packs[b] - e.packs[a]).join(' \u00b7 ');
-      });
     }
     const list = Object.values(rows).sort((a, b) => b.min - a.min);
     const host  = document.getElementById('progBars');
@@ -1380,14 +1390,26 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     if (!list.length) { host.innerHTML = ''; if (empty) empty.style.display = ''; return; }
     if (empty) empty.style.display = 'none';
     const max = list[0].min || 1;
-    host.innerHTML = list.map(e =>
-      `<div class="pg-row">` +
-        `<div class="pg-row-name">${calEsc(e.name)}</div>` +
-        `<div class="pg-row-val">${fmtMin(e.min)}<span> min</span></div>` +
-        `<div class="pg-row-track"><div class="pg-row-fill" style="width:${Math.max(2, Math.round(e.min / max * 100))}%"></div></div>` +
-        (e.sub ? `<div class="pg-row-sub">${calEsc(e.sub)}</div>` : '') +
-      `</div>`).join('');
+    const bar = (min, of) => `<div class="pg-row-track"><div class="pg-row-fill" style="width:${Math.max(2, Math.round(min / of * 100))}%"></div></div>`;
+    host.innerHTML = list.map(e => {
+      if (split === 'packs') {
+        return `<div class="pg-row"><div class="pg-row-name">${calEsc(e.name)}</div>` +
+          `<div class="pg-row-val">${fmtMin(e.min)}<span> min</span></div>${bar(e.min, max)}</div>`;
+      }
+      const packs = Object.keys(e.packs).map(n => ({ n, m: e.packs[n] })).sort((a, b) => b.m - a.m);
+      const pmax = packs[0].m || 1;
+      const open = _openTopics.has(e.name);
+      return `<div class="pg-topic${open ? ' open' : ''}">` +
+        `<button type="button" class="pg-row pg-row--topic" data-topic="${calEsc(e.name)}" aria-expanded="${open}">` +
+          `<span class="pg-row-name">${calEsc(e.name)}<i class="ti ti-chevron-right" aria-hidden="true"></i></span>` +
+          `<span class="pg-row-val">${fmtMin(e.min)}<span> min</span></span>${bar(e.min, max)}</button>` +
+        `<div class="pg-subrows">` + packs.map(p =>
+          `<div class="pg-subrow"><div class="pg-row-name">${calEsc(p.n)}</div>` +
+          `<div class="pg-row-val">${fmtMin(p.m)}<span> min</span></div>${bar(p.m, pmax)}</div>`).join('') +
+        `</div></div>`;
+    }).join('');
   }
+
 
   // ─ Settings overlay ───────────────────────────────────────────────────
   function loadSettingsUI() {
@@ -1562,7 +1584,10 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     return 1 + Math.round((t - firstThu) / 604800000);
   }
 
+  // v1.29.53 — the Progress calendar is month-only (Rikard): the week is
+  // already shown as rings at the top of the screen.
   function calView() {
+    return 'month';
     if (_calView) return _calView;
     const v = get(CAL_VIEW_KEY);
     _calView = (v === '2weeks' || v === 'month') ? v : 'week';
@@ -1633,13 +1658,10 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       ? Math.ceil((Math.round((r.to - r.gridFrom) / 86400000) + 1) / 7)
       : (r.view === '2weeks' ? 2 : 1);
 
-    let html = '<div class="prog-cal-dow"></div>' +
-      ['M','T','W','T','F','S','S'].map(d => `<div class="prog-cal-dow">${d}</div>`).join('');
+    let html = ['M','T','W','T','F','S','S'].map(d => `<div class="prog-cal-dow">${d}</div>`).join('');
     let goalDays = 0, counted = 0, minutes = 0;
     for (let w = 0; w < rows; w++) {
       const wkStart = addDays(r.gridFrom, w * 7);
-      const wkNum   = isoWeek(wkStart);
-      html += `<button type="button" class="prog-cal-wk" data-week="${dstr(wkStart)}" aria-label="Week ${wkNum}">${wkNum}</button>`;
       for (let i = 0; i < 7; i++) {
         const d   = addDays(wkStart, i);
         const ds  = dstr(d);
@@ -1775,6 +1797,23 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         set(SPLIT_KEY, btn.dataset.split);
         renderTimeSplit(getSessions());
       });
+    });
+    document.querySelectorAll('.pg-seg-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        set(K.period, btn.dataset.period);
+        renderTimeSplit(getSessions());
+      });
+    });
+    const rowsHost = document.getElementById('progBars');
+    if (rowsHost) rowsHost.addEventListener('click', e => {
+      const t = e.target.closest('.pg-row--topic');
+      if (!t) return;
+      const name = t.dataset.topic;
+      const wrap = t.closest('.pg-topic');
+      if (_openTopics.has(name)) _openTopics.delete(name); else _openTopics.add(name);
+      const open = _openTopics.has(name);
+      if (wrap) wrap.classList.toggle('open', open);
+      t.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
 
     const ov = document.getElementById('progDetailOverlay');
