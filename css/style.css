@@ -32,6 +32,7 @@
   --ds-cal-3:       #CC9473;
   --ds-cal-4:       #B05A28;
   --ds-cal-4-txt:   #FFFFFF;
+  --ds-ring-track:  #EEE6DB;   /* progress day rings (v1.29.52) */
   --ds-shadow:      rgba(44,31,16,0.10);
   --ds-topbar-btn:  #FFFFFF;
   --ds-topbar-btnT: #8A6040;
@@ -81,6 +82,7 @@ body.theme-ember {
   --ds-cal-3:       #B34C20;
   --ds-cal-4:       #F2622A;
   --ds-cal-4-txt:   #18120A;
+  --ds-ring-track:  #33240F;
   --ds-shadow:      rgba(0,0,0,0.35);
   --ds-topbar-btn:  #2A1C0A;
   --ds-topbar-btnT: #8A6A50;
@@ -4169,3 +4171,117 @@ html.ds-vh-pinned .extended-screen {
 .legal-links--store { margin: 4px 0 16px; }
 .legal-links[hidden] { display: none; }
 .ob-disclaimer { margin-top: 18px; font-size: 12px; }
+
+/* ─── PROGRESS — "Goal first" layout (v1.29.52) ──────────────────────────────
+   Every day is a ring that fills toward the daily goal: the big ring is today,
+   the small rings are this week, and the calendar is made of the same rings.
+   A filled disc is a goal day. Rendered by renderProgress() in app-ui.js. */
+.pg-card {
+  background: var(--ds-card); border-radius: 18px;
+  padding: 18px; margin-bottom: 14px;
+}
+.pg-dim { color: var(--ds-txt2); font-weight: 500; }
+.pg-ring-track { fill: none; stroke: var(--ds-ring-track); }
+.pg-ring-fill  { fill: none; stroke: var(--ds-prog-acc); stroke-linecap: round; transition: stroke-dashoffset .5s ease; }
+
+/* Today */
+.pg-hero { display: flex; flex-direction: column; align-items: center; gap: 14px; padding-top: 22px; }
+.pg-hero-ring { position: relative; width: 168px; height: 168px; }
+.pg-hero-ring svg { width: 168px; height: 168px; display: block; }
+.pg-hero-center {
+  position: absolute; inset: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+}
+.pg-hero-num { font-size: 40px; font-weight: 800; line-height: 1; color: var(--ds-txt); }
+.pg-hero-of { font-size: 20px; font-weight: 600; color: var(--ds-txt2); }
+.pg-hero-lbl { font-size: 13px; color: var(--ds-txt2); margin-top: 4px; }
+.pg-hero-msg { font-size: 15px; font-weight: 600; color: var(--ds-txt); text-align: center; }
+.pg-weekrings {
+  width: 100%; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px;
+  border-top: 1px solid var(--ds-border-sub); padding-top: 6px;
+}
+.pg-wr {
+  border: none; background: none; padding: 8px 0 2px; font-family: inherit; cursor: pointer;
+  display: flex; flex-direction: column; align-items: center; gap: 5px;
+  -webkit-tap-highlight-color: transparent;
+}
+.pg-wr-day { font-size: 12px; font-weight: 700; color: var(--ds-txt2); }
+.pg-wr.today .pg-wr-day { color: var(--ds-prog-acc); }
+.pg-wr-min { font-size: 12px; color: var(--ds-txt2); }
+.pg-wr.future { cursor: default; opacity: .45; }
+
+/* A day ring — used in the week row and the calendar */
+.pg-ring { position: relative; display: block; }
+.pg-ring svg { width: 100%; height: 100%; display: block; }
+.pg-ring .pg-disc { fill: none; }
+.pg-ring.met .pg-disc { fill: var(--ds-prog-acc); }
+.pg-ring-check {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  color: var(--ds-cal-4-txt); font-size: 16px;
+}
+.pg-wr .pg-ring { width: 38px; height: 38px; }
+
+/* This week */
+.pg-week { display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; }
+.pg-week-head { display: flex; justify-content: space-between; align-items: baseline; }
+.pg-week-title { font-size: 15px; font-weight: 700; color: var(--ds-txt); }
+.pg-week-val { font-size: 15px; font-weight: 700; color: var(--ds-txt); }
+.pg-bar { height: 10px; border-radius: 5px; background: var(--ds-ring-track); overflow: hidden; }
+.pg-bar-fill { height: 100%; width: 0; border-radius: 5px; background: var(--ds-prog-acc); transition: width .5s ease; }
+.pg-week-foot {
+  display: flex; justify-content: space-between; align-items: center; gap: 10px;
+  font-size: 13px; color: var(--ds-txt2); flex-wrap: wrap;
+}
+.pg-streak { display: inline-flex; align-items: center; gap: 4px; color: var(--ds-txt); }
+.pg-streak .ti { font-size: 17px; color: var(--ds-prog-acc); }
+.pg-week-days { font-size: 13px; color: var(--ds-txt2); }
+.pg-week-days strong { color: var(--ds-txt); }
+
+/* Calendar of rings */
+.pg-cal-grid { display: grid; grid-template-columns: 20px repeat(7, minmax(0, 1fr)); gap: 4px; }
+.pg-cal-grid .prog-cal-dow { font-size: 11px; color: var(--ds-txt2); }
+.pg-day {
+  position: relative; border: none; background: none; padding: 0; font-family: inherit;
+  cursor: pointer; aspect-ratio: 1 / 1; max-height: 46px; width: 100%;
+  display: flex; align-items: center; justify-content: center; border-radius: 12px;
+  -webkit-tap-highlight-color: transparent;
+}
+.pg-day .pg-ring { width: 92%; height: 92%; max-width: 42px; max-height: 42px; }
+.pg-day-num {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 700; color: var(--ds-txt);
+}
+.pg-day.met .pg-day-num { color: var(--ds-cal-4-txt); }
+.pg-day.future { cursor: default; }
+.pg-day.future .pg-ring-track { stroke: transparent; }
+.pg-day.future .pg-day-num { color: var(--ds-txt3); }
+.pg-day.out { opacity: .4; }
+.pg-day.today { box-shadow: inset 0 0 0 2px var(--ds-prog-acc); }
+.pg-cal-sum { margin-top: 12px; font-size: 13px; color: var(--ds-txt2); text-align: center; }
+.pg-cal-sum strong { color: var(--ds-txt); }
+.pg-cal-note { margin-top: 4px; font-size: 12px; color: var(--ds-txt2); text-align: center; opacity: .85; }
+
+/* Where your time went */
+.pg-time-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 8px; }
+.pg-time-title { font-size: 15px; font-weight: 700; color: var(--ds-txt); }
+.pg-time-period { font-size: 13px; white-space: nowrap; }
+.pg-tabs { display: flex; gap: 18px; border-bottom: 1px solid var(--ds-border-sub); margin-bottom: 12px; }
+.pg-tab {
+  border: none; background: none; padding: 8px 0; font-family: inherit; cursor: pointer;
+  font-size: 14px; font-weight: 600; color: var(--ds-txt2); min-height: 36px;
+  -webkit-tap-highlight-color: transparent;
+}
+.pg-tab.active { color: var(--ds-txt); font-weight: 700; box-shadow: inset 0 -2px 0 var(--ds-prog-acc); }
+.pg-rows { display: flex; flex-direction: column; gap: 12px; }
+.pg-row { display: grid; grid-template-columns: 1fr auto; gap: 5px 10px; align-items: center; }
+.pg-row-name { font-size: 14px; font-weight: 600; color: var(--ds-txt); }
+.pg-row-val { font-size: 14px; font-weight: 700; color: var(--ds-txt); white-space: nowrap; }
+.pg-row-val span { font-weight: 500; color: var(--ds-txt2); }
+.pg-row-track { grid-column: 1 / 3; height: 6px; border-radius: 3px; background: var(--ds-ring-track); }
+.pg-row-fill { height: 6px; border-radius: 3px; background: var(--ds-prog-acc); }
+.pg-row-sub { grid-column: 1 / 3; font-size: 12px; color: var(--ds-txt2); margin-top: -2px; }
+
+/* All time */
+.pg-totals { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; text-align: center; }
+.pg-total-num { font-size: 24px; font-weight: 800; color: var(--ds-txt); }
+.pg-total-lbl { font-size: 12px; color: var(--ds-txt2); }
