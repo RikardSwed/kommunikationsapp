@@ -7,11 +7,11 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Deckstack" />
-  <link rel="manifest" href="manifest.json?v=12951" />
+  <link rel="manifest" href="manifest.json?v=12952" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12951" />
-  <link rel="stylesheet" href="css/tabler/tabler-icons.min.css?v=12951" />
+  <link rel="stylesheet" href="css/style.css?v=12952" />
+  <link rel="stylesheet" href="css/tabler/tabler-icons.min.css?v=12952" />
 </head>
 <body>
 
@@ -213,8 +213,6 @@
   <!-- Scrollable content -->
   <div class="progress-scroll" id="progressScroll">
 
-    <!-- Intro text -->
-    <p class="prog-intro">Track your training and see how your consistency builds over time.</p>
 
     <!-- Disabled state -->
     <div id="progressDisabledMsg" style="display:none;">
@@ -224,124 +222,78 @@
       </div>
     </div>
 
-    <!-- Active state -->
+    <!-- Active state — "Goal first" layout (v1.29.52). Every day is a ring
+         that fills toward the daily goal; rendered by renderProgress() and
+         renderCalendar() in app-ui.js from prog_sessions. -->
     <div id="progressContent">
 
-      <!-- Streak -->
-      <div class="prog-section">
-        <div class="prog-section-label">Streak</div>
-        <div class="prog-streak-row">
-          <div class="prog-streak-fire">🔥</div>
-          <div>
-            <div class="prog-streak-num" id="progStreakNum">0</div>
-            <div class="prog-streak-sub">days in a row</div>
-          </div>
-          <div class="prog-streak-best">
-            <div class="prog-streak-best-num" id="progStreakBest">0</div>
-            <div class="prog-streak-sub">best</div>
-          </div>
-        </div>
-        <!-- Calendar (v1.26.49) — week / 2 weeks / month. Tap a day, a week
-             number or the title to see what was trained. Rendered by
-             renderCalendar() in app-ui.js from the existing session data. -->
-        <div class="prog-cal">
-          <div class="prog-cal-head">
-            <button type="button" class="prog-cal-nav" id="progCalPrev" aria-label="Previous period">&#8249;</button>
-            <button type="button" class="prog-cal-title" id="progCalTitle">&nbsp;</button>
-            <button type="button" class="prog-cal-nav" id="progCalNext" aria-label="Next period">&#8250;</button>
-          </div>
-          <div class="prog-cal-toggle">
-            <button type="button" class="prog-cal-view active" data-view="week">Week</button>
-            <button type="button" class="prog-cal-view" data-view="2weeks">2 weeks</button>
-            <button type="button" class="prog-cal-view" data-view="month">Month</button>
-          </div>
-          <!-- Week view only (v1.26.66): squares or minutes-per-day bars.
-               Shown/hidden by renderCalendar(). -->
-          <div class="prog-cal-modes" id="progCalWeekMode" style="display:none;">
-            <button type="button" class="prog-cal-mode active" data-mode="grid">Squares</button>
-            <button type="button" class="prog-cal-mode" data-mode="bars">Bars</button>
-          </div>
-          <div class="prog-cal-grid" id="progCalGrid"></div>
-          <div class="prog-cal-legend">
-            <span>Less</span>
-            <span class="prog-cal-key"></span>
-            <span class="prog-cal-key l1"></span>
-            <span class="prog-cal-key l2"></span>
-            <span class="prog-cal-key l3"></span>
-            <span class="prog-cal-key l4"></span>
-            <span>More</span>
+      <!-- Today -->
+      <div class="pg-card pg-hero">
+        <div class="pg-hero-ring">
+          <svg viewBox="0 0 168 168" aria-hidden="true">
+            <circle class="pg-ring-track" cx="84" cy="84" r="72" stroke-width="14" />
+            <circle class="pg-ring-fill" id="pgTodayRing" cx="84" cy="84" r="72" stroke-width="14"
+              stroke-dasharray="452.4" stroke-dashoffset="452.4" transform="rotate(-90 84 84)" />
+          </svg>
+          <div class="pg-hero-center">
+            <div class="pg-hero-num"><span id="pgTodayMin">0</span><span class="pg-hero-of" id="pgTodayOf"></span></div>
+            <div class="pg-hero-lbl">minutes today</div>
           </div>
         </div>
+        <div class="pg-hero-msg" id="pgTodayMsg">&nbsp;</div>
+        <div class="pg-weekrings" id="pgWeekRings"></div>
       </div>
 
-      <!-- Goal -->
-      <div class="prog-section">
-        <div class="prog-section-label">Weekly goal</div>
-        <div class="prog-goal-row">
-          <div class="prog-goal-ring-wrap">
-            <svg class="prog-goal-ring" viewBox="0 0 64 64">
-              <circle class="prog-ring-bg" cx="32" cy="32" r="26" />
-              <circle class="prog-ring-fill" id="progRingFill" cx="32" cy="32" r="26"
-                stroke-dasharray="163.4" stroke-dashoffset="163.4" />
-            </svg>
-            <div class="prog-ring-label" id="progRingLabel">0%</div>
-          </div>
-          <div class="prog-goal-text">
-            <div class="prog-goal-main" id="progGoalMain">0 / 0 min</div>
-            <div class="prog-goal-sub" id="progGoalSub">this week</div>
-          </div>
+      <!-- This week: weekly goal, goal days, streak -->
+      <div class="pg-card pg-week">
+        <div class="pg-week-head">
+          <div class="pg-week-title">This week</div>
+          <div class="pg-week-val"><span id="pgWeekMin">0</span><span class="pg-dim" id="pgWeekOf"> / 60 min</span></div>
         </div>
+        <div class="pg-bar"><div class="pg-bar-fill" id="pgWeekBar"></div></div>
+        <div class="pg-week-foot">
+          <span id="pgWeekMsg">&nbsp;</span>
+          <span class="pg-streak"><i class="ti ti-flame" aria-hidden="true"></i><strong id="progStreakNum">No streak yet</strong><span class="pg-dim">&nbsp;· best <span id="progStreakBest">0</span></span></span>
+        </div>
+        <div class="pg-week-days" id="pgWeekGoalDays">&nbsp;</div>
       </div>
 
-      <!-- Daily goal -->
-      <div class="prog-section" id="progDailySection">
-        <div class="prog-section-label">Daily goal</div>
-        <div class="prog-goal-row">
-          <div class="prog-goal-ring-wrap">
-            <svg class="prog-goal-ring" viewBox="0 0 64 64">
-              <circle class="prog-ring-bg" cx="32" cy="32" r="26" />
-              <circle class="prog-ring-fill" id="progDailyRingFill" cx="32" cy="32" r="26"
-                stroke-dasharray="163.4" stroke-dashoffset="163.4" />
-            </svg>
-            <div class="prog-ring-label" id="progDailyRingLabel">0%</div>
-          </div>
-          <div class="prog-goal-text">
-            <div class="prog-goal-main" id="progDailyGoalMain">0 / 0 min</div>
-            <div class="prog-goal-sub">today</div>
-          </div>
+      <!-- Calendar -->
+      <div class="pg-card pg-cal">
+        <div class="prog-cal-head">
+          <button type="button" class="prog-cal-nav" id="progCalPrev" aria-label="Previous period">&#8249;</button>
+          <button type="button" class="prog-cal-title" id="progCalTitle">&nbsp;</button>
+          <button type="button" class="prog-cal-nav" id="progCalNext" aria-label="Next period">&#8250;</button>
         </div>
+        <div class="prog-cal-toggle">
+          <button type="button" class="prog-cal-view active" data-view="week">Week</button>
+          <button type="button" class="prog-cal-view" data-view="2weeks">2 weeks</button>
+          <button type="button" class="prog-cal-view" data-view="month">Month</button>
+        </div>
+        <div class="pg-cal-grid" id="progCalGrid"></div>
+        <div class="pg-cal-sum" id="pgCalSum">&nbsp;</div>
+        <div class="pg-cal-note">Each day fills toward your daily goal. A full circle means you reached it.</div>
       </div>
 
-      <!-- Period toggle + bars -->
-      <div class="prog-section">
-        <div class="prog-bar-header">
-          <div class="prog-section-label">Time per pack</div>
-          <div class="prog-period-toggle">
-            <button class="prog-period-btn active" id="progPeriodWeek" data-period="week">Week</button>
-            <button class="prog-period-btn" id="progPeriodMonth" data-period="month">Month</button>
-          </div>
+      <!-- Where the time went — follows the calendar's period -->
+      <div class="pg-card pg-time">
+        <div class="pg-time-head">
+          <div class="pg-time-title">Where your time went</div>
+          <div class="pg-dim pg-time-period" id="pgTimePeriod">&nbsp;</div>
         </div>
-        <div class="prog-bars" id="progBars"></div>
-        <div class="prog-no-data" id="progBarsEmpty" style="display:none;">No training recorded yet.</div>
+        <div class="pg-tabs" role="tablist">
+          <button type="button" class="pg-tab active" data-split="topics" role="tab">Topics</button>
+          <button type="button" class="pg-tab" data-split="packs" role="tab">Packs</button>
+        </div>
+        <div class="pg-rows" id="progBars"></div>
+        <div class="prog-no-data" id="progBarsEmpty" style="display:none;">No training in this period.</div>
       </div>
 
-      <!-- Total stats -->
-      <div class="prog-section">
-        <div class="prog-section-label">All time</div>
-        <div class="prog-totals">
-          <div class="prog-total-item">
-            <div class="prog-total-num" id="progTotalMin">0</div>
-            <div class="prog-total-label">total minutes</div>
-          </div>
-          <div class="prog-total-item">
-            <div class="prog-total-num" id="progTotalCards">0</div>
-            <div class="prog-total-label">cards flipped</div>
-          </div>
-          <div class="prog-total-item">
-            <div class="prog-total-num" id="progTotalSessions">0</div>
-            <div class="prog-total-label">sessions</div>
-          </div>
-        </div>
+      <!-- All time -->
+      <div class="pg-card pg-totals">
+        <div><div class="pg-total-num" id="progTotalMin">0</div><div class="pg-total-lbl">minutes</div></div>
+        <div><div class="pg-total-num" id="progTotalGoalDays">0</div><div class="pg-total-lbl">goal days</div></div>
+        <div><div class="pg-total-num" id="progTotalSessions">0</div><div class="pg-total-lbl">sessions</div></div>
       </div>
 
     </div><!-- end progressContent -->
@@ -362,7 +314,12 @@
       </div>
       <div class="settings-row prog-indent">
         <label class="settings-radio-label">
-          <input type="radio" name="streakMode" value="card" id="streakModeCard" checked /> Flipped at least 1 card
+          <input type="radio" name="streakMode" value="goal" id="streakModeGoal" checked /> Reached my daily goal
+        </label>
+      </div>
+      <div class="settings-row prog-indent">
+        <label class="settings-radio-label">
+          <input type="radio" name="streakMode" value="card" id="streakModeCard" /> Flipped at least 1 card
         </label>
       </div>
       <div class="settings-row prog-indent">
@@ -3167,20 +3124,20 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12951"></script>
-<script src="js/tagsData.js?v=12951"></script>
-<script src="js/programsData.js?v=12951"></script>
-<script src="js/challengesData.js?v=12951"></script>
-<script src="js/mindsetData.js?v=12951"></script>
-<script src="js/multiStepData.js?v=12951"></script>
-<script src="js/memorizeData.js?v=12951"></script>
-<script src="js/mode-engine.js?v=12951"></script>
-<script src="js/app-core.js?v=12951"></script>
-<script src="js/app-modes.js?v=12951"></script>
-<script src="js/app-handsfree.js?v=12951"></script>
-<script src="js/app-system.js?v=12951"></script>
-<script src="js/app-ui.js?v=12951"></script>
-<script src="js/app-back.js?v=12951"></script>
+<script src="js/data.js?v=12952"></script>
+<script src="js/tagsData.js?v=12952"></script>
+<script src="js/programsData.js?v=12952"></script>
+<script src="js/challengesData.js?v=12952"></script>
+<script src="js/mindsetData.js?v=12952"></script>
+<script src="js/multiStepData.js?v=12952"></script>
+<script src="js/memorizeData.js?v=12952"></script>
+<script src="js/mode-engine.js?v=12952"></script>
+<script src="js/app-core.js?v=12952"></script>
+<script src="js/app-modes.js?v=12952"></script>
+<script src="js/app-handsfree.js?v=12952"></script>
+<script src="js/app-system.js?v=12952"></script>
+<script src="js/app-ui.js?v=12952"></script>
+<script src="js/app-back.js?v=12952"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
