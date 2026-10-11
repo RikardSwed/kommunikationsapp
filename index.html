@@ -7,11 +7,11 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Deckstack" />
-  <link rel="manifest" href="manifest.json?v=12952" />
+  <link rel="manifest" href="manifest.json?v=12953" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12952" />
-  <link rel="stylesheet" href="css/tabler/tabler-icons.min.css?v=12952" />
+  <link rel="stylesheet" href="css/style.css?v=12953" />
+  <link rel="stylesheet" href="css/tabler/tabler-icons.min.css?v=12953" />
 </head>
 <body>
 
@@ -265,22 +265,20 @@
           <button type="button" class="prog-cal-title" id="progCalTitle">&nbsp;</button>
           <button type="button" class="prog-cal-nav" id="progCalNext" aria-label="Next period">&#8250;</button>
         </div>
-        <div class="prog-cal-toggle">
-          <button type="button" class="prog-cal-view active" data-view="week">Week</button>
-          <button type="button" class="prog-cal-view" data-view="2weeks">2 weeks</button>
-          <button type="button" class="prog-cal-view" data-view="month">Month</button>
-        </div>
         <div class="pg-cal-grid" id="progCalGrid"></div>
         <div class="pg-cal-sum" id="pgCalSum">&nbsp;</div>
-        <div class="pg-cal-note">Each day fills toward your daily goal. A full circle means you reached it.</div>
       </div>
 
       <!-- Where the time went — follows the calendar's period -->
       <div class="pg-card pg-time">
         <div class="pg-time-head">
           <div class="pg-time-title">Where your time went</div>
-          <div class="pg-dim pg-time-period" id="pgTimePeriod">&nbsp;</div>
+          <div class="pg-seg" role="group" aria-label="Period">
+            <button type="button" class="pg-seg-btn active" data-period="week">Week</button>
+            <button type="button" class="pg-seg-btn" data-period="month">Month</button>
+          </div>
         </div>
+        <div class="pg-dim pg-time-period" id="pgTimePeriod">&nbsp;</div>
         <div class="pg-tabs" role="tablist">
           <button type="button" class="pg-tab active" data-split="topics" role="tab">Topics</button>
           <button type="button" class="pg-tab" data-split="packs" role="tab">Packs</button>
@@ -3124,20 +3122,20 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12952"></script>
-<script src="js/tagsData.js?v=12952"></script>
-<script src="js/programsData.js?v=12952"></script>
-<script src="js/challengesData.js?v=12952"></script>
-<script src="js/mindsetData.js?v=12952"></script>
-<script src="js/multiStepData.js?v=12952"></script>
-<script src="js/memorizeData.js?v=12952"></script>
-<script src="js/mode-engine.js?v=12952"></script>
-<script src="js/app-core.js?v=12952"></script>
-<script src="js/app-modes.js?v=12952"></script>
-<script src="js/app-handsfree.js?v=12952"></script>
-<script src="js/app-system.js?v=12952"></script>
-<script src="js/app-ui.js?v=12952"></script>
-<script src="js/app-back.js?v=12952"></script>
+<script src="js/data.js?v=12953"></script>
+<script src="js/tagsData.js?v=12953"></script>
+<script src="js/programsData.js?v=12953"></script>
+<script src="js/challengesData.js?v=12953"></script>
+<script src="js/mindsetData.js?v=12953"></script>
+<script src="js/multiStepData.js?v=12953"></script>
+<script src="js/memorizeData.js?v=12953"></script>
+<script src="js/mode-engine.js?v=12953"></script>
+<script src="js/app-core.js?v=12953"></script>
+<script src="js/app-modes.js?v=12953"></script>
+<script src="js/app-handsfree.js?v=12953"></script>
+<script src="js/app-system.js?v=12953"></script>
+<script src="js/app-ui.js?v=12953"></script>
+<script src="js/app-back.js?v=12953"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
