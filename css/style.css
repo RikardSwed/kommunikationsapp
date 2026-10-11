@@ -1933,7 +1933,7 @@ body.pb-enabled .divider::after {
 .progress-scroll {
   flex: 1; overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 8px 20px 100px;
+  padding: 18px 20px 100px;   /* v1.29.54: a little air under the banner */
 }
 
 .prog-section {
