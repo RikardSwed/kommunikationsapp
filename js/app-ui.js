@@ -1008,12 +1008,29 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   function getSettings() {
     return {
       enabled:      bool(K.enabled),
-      streakMode:   get(K.streakMode)   || 'card',
+      streakMode:   get(K.streakMode)   || 'goal',
       streakMinMin: get(K.streakMinMin) || 5,
       weeklyGoal:   get(K.weeklyGoal)   || 60,
       dailyGoal:    get(K.dailyGoal)    || 0,
       period:       get(K.period)       || 'week',
     };
+  }
+
+  // v1.29.52 — the streak counts goal days by default. One-time move for
+  // anyone still on the old default ('card'); a deliberate 'time' setting stays.
+  try {
+    if (!localStorage.getItem('prog_streak_goal_v1')) {
+      const m = get(K.streakMode);
+      if (!m || m === 'card') set(K.streakMode, 'goal');
+      localStorage.setItem('prog_streak_goal_v1', '1');
+    }
+  } catch {}
+
+  // The daily goal every ring fills toward. With no daily goal set, the
+  // weekly goal spread over seven days stands in for it.
+  function dailyRef(s) {
+    s = s || getSettings();
+    return s.dailyGoal > 0 ? s.dailyGoal : Math.max(1, Math.round(s.weeklyGoal / 7));
   }
 
   // ─ Session tracking ───────────────────────────────────────────────────
@@ -1145,6 +1162,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     if (!daySess.length) return false;
     if (s.streakMode === 'card') return daySess.some(x => x.cards > 0);
     const mins = daySess.reduce((a, x) => a + x.minutes, 0);
+    if (s.streakMode === 'goal') return mins >= dailyRef(s);
     return mins >= s.streakMinMin;
   }
 
@@ -1153,6 +1171,9 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     const today = todayStr();
     let cur = 0;
     let d = new Date();
+    // v1.29.52 — today still counts as open: a streak is not broken until the
+    // day is over, so if today does not qualify yet, count from yesterday.
+    if (!qualifiesForStreak(sessions, today)) d.setDate(d.getDate() - 1);
     while (true) {
       const ds = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
       if (!qualifiesForStreak(sessions, ds)) break;
@@ -1187,6 +1208,30 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   renderDashStreak();
 
   // ─ Render ────────────────────────────────────────────────────────────────
+  // v1.29.52 — "Goal first": today's ring, this calendar week's rings, the
+  // weekly goal and goal days, a calendar of rings, and where the time went
+  // (topics or packs) for the period the calendar shows.
+  function sumByDate(sessions) {
+    const m = {};
+    sessions.forEach(x => { m[x.date] = (m[x.date] || 0) + x.minutes; });
+    return m;
+  }
+  function fmtMin(m) {
+    if (m <= 0) return '0';
+    const r = Math.round(m);
+    return r === 0 ? '<1' : String(r);
+  }
+  const RING_SVG = (r, off, extraCls) =>
+    `<span class="pg-ring${extraCls}"><svg viewBox="0 0 40 40" aria-hidden="true">` +
+    `<circle class="pg-disc pg-ring-track" cx="20" cy="20" r="${r}" stroke-width="4"></circle>` +
+    `<circle class="pg-ring-fill" cx="20" cy="20" r="${r}" stroke-width="4" stroke-dasharray="${(2 * Math.PI * r).toFixed(1)}" stroke-dashoffset="${off}" transform="rotate(-90 20 20)"></circle>` +
+    `</svg></span>`;
+  function dayRing(minutes, goal, r) {
+    const frac = Math.max(0, Math.min(1, minutes / goal));
+    const off  = (2 * Math.PI * r * (1 - frac)).toFixed(1);
+    return { met: minutes >= goal, off };
+  }
+
   function renderProgress() {
     const s = getSettings();
     const disabled = document.getElementById('progressDisabledMsg');
@@ -1199,93 +1244,149 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     if (disabled) disabled.style.display = 'none';
     if (content)  content.style.display  = '';
 
+    const el = id => document.getElementById(id);
     const sessions = getSessions();
-    const today = todayStr();
+    const byDate   = sumByDate(sessions);
+    const goal     = dailyRef(s);
+    const hasDaily = s.dailyGoal > 0;
+    const today    = dayOnly(new Date());
+    const todayS   = dstr(today);
+
+    // Today
+    const todayMin = byDate[todayS] || 0;
+    const tFrac = Math.min(1, todayMin / goal);
+    const ring = el('pgTodayRing');
+    if (ring) ring.style.strokeDashoffset = (452.4 * (1 - tFrac)).toFixed(1);
+    if (el('pgTodayMin')) el('pgTodayMin').textContent = fmtMin(todayMin);
+    if (el('pgTodayOf'))  el('pgTodayOf').textContent  = ' / ' + goal;
+    const left = Math.max(0, Math.ceil(goal - todayMin - 1e-9));
+    let msg;
+    if (todayMin >= goal) msg = hasDaily ? 'Daily goal reached' : 'On pace for your weekly goal';
+    else if (hasDaily)    msg = left + (left === 1 ? ' minute' : ' minutes') + ' to your daily goal';
+    else                  msg = left + ' min to stay on pace for your weekly goal';
+    if (el('pgTodayMsg')) el('pgTodayMsg').textContent = msg;
+
+    // This calendar week, Monday to Sunday
+    const wk = startOfWeek(today);
+    let weekMin = 0, goalDays = 0, countedDays = 0;
+    const wr = [];
+    for (let i = 0; i < 7; i++) {
+      const d  = addDays(wk, i);
+      const ds = dstr(d);
+      const m  = byDate[ds] || 0;
+      const future = d > today;
+      const isToday = ds === todayS;
+      const r = dayRing(m, goal, 15);
+      weekMin += m;
+      if (!future) {
+        if (r.met) goalDays++;
+        if (!isToday || r.met) countedDays++;
+      }
+      wr.push(`<button type="button" class="pg-wr${isToday ? ' today' : ''}${future ? ' future' : ''}" data-day="${ds}" aria-label="${CAL_DOW[i]} ${d.getDate()}: ${fmtMin(m)} min">` +
+        `<span class="pg-wr-day">${CAL_DOW[i][0]}</span>` +
+        `<span class="pg-ring${r.met ? ' met' : ''}">` +
+          `<svg viewBox="0 0 38 38" aria-hidden="true"><circle class="pg-disc pg-ring-track" cx="19" cy="19" r="15" stroke-width="5"></circle>` +
+          `<circle class="pg-ring-fill" cx="19" cy="19" r="15" stroke-width="5" stroke-dasharray="94.2" stroke-dashoffset="${r.off}" transform="rotate(-90 19 19)"></circle></svg>` +
+          (r.met ? '<span class="pg-ring-check"><i class="ti ti-check" aria-hidden="true"></i></span>' : '') +
+        `</span>` +
+        `<span class="pg-wr-min">${future ? '' : (m > 0 ? fmtMin(m) + 'm' : '\u2013')}</span>` +
+        `</button>`);
+    }
+    if (el('pgWeekRings')) el('pgWeekRings').innerHTML = wr.join('');
+
+    const wGoal = s.weeklyGoal;
+    if (el('pgWeekMin')) el('pgWeekMin').textContent = fmtMin(weekMin);
+    if (el('pgWeekOf'))  el('pgWeekOf').textContent  = ' / ' + wGoal + ' min';
+    if (el('pgWeekBar')) el('pgWeekBar').style.width = Math.min(100, Math.round(weekMin / wGoal * 100)) + '%';
+    const wLeft = Math.max(0, Math.ceil(wGoal - weekMin - 1e-9));
+    if (el('pgWeekMsg')) el('pgWeekMsg').textContent = weekMin >= wGoal ? 'Weekly goal reached' : wLeft + ' min to your weekly goal';
+    if (el('pgWeekGoalDays')) {
+      el('pgWeekGoalDays').innerHTML = countedDays
+        ? `${hasDaily ? 'Daily goal' : 'Daily pace'} reached on <strong>${goalDays} of ${countedDays} day${countedDays === 1 ? '' : 's'}</strong> this week`
+        : 'Your first day of the week starts today';
+    }
 
     // Streak
     updateStreak();
     const cur  = get(K.streakCur)  || 0;
     const best = get(K.streakBest) || 0;
-    document.getElementById('progStreakNum').textContent  = cur;
-    document.getElementById('progStreakBest').textContent = best;
+    if (el('progStreakNum'))  el('progStreakNum').textContent  = cur ? cur + '-day streak' : 'No streak yet';
+    if (el('progStreakBest')) el('progStreakBest').textContent = best;
 
-    // Calendar (v1.26.49) — real calendar, rendered from the same sessions
+    // Calendar, and the breakdown for the same period
     renderCalendar(sessions);
+    renderTimeSplit(sessions);
 
-    // Period
-    const period = s.period;
-    const cutoff = new Date();
-    if (period === 'week') cutoff.setDate(cutoff.getDate() - 6);
-    else cutoff.setDate(cutoff.getDate() - 29);
-    const cutoffStr = `${cutoff.getFullYear()}-${String(cutoff.getMonth()+1).padStart(2,'0')}-${String(cutoff.getDate()).padStart(2,'0')}`;
-    const periodSess = sessions.filter(x => x.date >= cutoffStr);
+    // All time
+    const totalMin = sessions.reduce((a, x) => a + x.minutes, 0);
+    const allGoalDays = Object.keys(byDate).filter(k => byDate[k] >= goal).length;
+    if (el('progTotalMin'))      el('progTotalMin').textContent      = Math.round(totalMin);
+    if (el('progTotalGoalDays')) el('progTotalGoalDays').textContent = allGoalDays;
+    if (el('progTotalSessions')) el('progTotalSessions').textContent = sessions.length;
+  }
 
-    // Weekly goal ring
-    const weekCutoff = new Date(); weekCutoff.setDate(weekCutoff.getDate() - 6);
-    const weekStr = `${weekCutoff.getFullYear()}-${String(weekCutoff.getMonth()+1).padStart(2,'0')}-${String(weekCutoff.getDate()).padStart(2,'0')}`;
-    const weekMins = sessions.filter(x => x.date >= weekStr).reduce((a, x) => a + x.minutes, 0);
-    const wGoal = s.weeklyGoal;
-    const wPct  = Math.min(100, Math.round((weekMins / wGoal) * 100));
-    const circumference = 163.4;
-    const wOffset = circumference - (circumference * wPct / 100);
-    const ringFill = document.getElementById('progRingFill');
-    if (ringFill) ringFill.style.strokeDashoffset = wOffset;
-    const ringLabel = document.getElementById('progRingLabel');
-    if (ringLabel) ringLabel.textContent = wPct + '%';
-    const goalMain = document.getElementById('progGoalMain');
-    if (goalMain) goalMain.textContent = `${Math.round(weekMins)} / ${wGoal} min`;
-
-    // Daily goal ring
-    const dailySection = document.getElementById('progDailySection');
-    if (dailySection) dailySection.style.display = s.dailyGoal > 0 ? '' : 'none';
-    if (s.dailyGoal > 0) {
-      const dayMins = sessions.filter(x => x.date === today).reduce((a, x) => a + x.minutes, 0);
-      const dPct = Math.min(100, Math.round((dayMins / s.dailyGoal) * 100));
-      const dOffset = circumference - (circumference * dPct / 100);
-      const dRing = document.getElementById('progDailyRingFill');
-      if (dRing) dRing.style.strokeDashoffset = dOffset;
-      const dLabel = document.getElementById('progDailyRingLabel');
-      if (dLabel) dLabel.textContent = dPct + '%';
-      const dMain = document.getElementById('progDailyGoalMain');
-      if (dMain) dMain.textContent = `${Math.round(dayMins)} / ${s.dailyGoal} min`;
-    }
-
-    // Bars per pack
-    const packTotals = {};
-    periodSess.forEach(x => {
-      if (!packTotals[x.packKey]) packTotals[x.packKey] = { label: x.packLabel, minutes: 0 };
-      packTotals[x.packKey].minutes += x.minutes;
+  // Where your time went — topics or packs, for the calendar's period.
+  // A pack that sits in several topics counts in each of them (Rikard,
+  // 2026-10-11): training it trains every one of those areas. So the topic
+  // rows can add up to more than the total time; the packs rows never do.
+  const SPLIT_KEY = 'prog_time_split';
+  function timeSplit() { return get(SPLIT_KEY) === 'packs' ? 'packs' : 'topics'; }
+  function topicsOfPack() {
+    const m = {};
+    (typeof TOPICS !== 'undefined' && Array.isArray(TOPICS) ? TOPICS : []).forEach(t => {
+      (t.packs || []).forEach(k => { (m[k] = m[k] || []).push(t.title); });
     });
-    const sortedPacks = Object.values(packTotals).sort((a, b) => b.minutes - a.minutes);
-    const maxMins = sortedPacks.length ? sortedPacks[0].minutes : 1;
-    const barsEl = document.getElementById('progBars');
-    const emptyEl = document.getElementById('progBarsEmpty');
-    if (barsEl) {
-      if (!sortedPacks.length) {
-        barsEl.innerHTML = '';
-        if (emptyEl) emptyEl.style.display = '';
-      } else {
-        if (emptyEl) emptyEl.style.display = 'none';
-        barsEl.innerHTML = sortedPacks.map(p => {
-          const pct = Math.round((p.minutes / maxMins) * 100);
-          const label = Math.round(p.minutes) + 'm';
-          return `<div class="prog-bar-row">
-            <div class="prog-bar-name" title="${p.label}">${p.label}</div>
-            <div class="prog-bar-track"><div class="prog-bar-fill" style="width:${pct}%"></div></div>
-            <div class="prog-bar-val">${label}</div>
-          </div>`;
-        }).join('');
-      }
-    }
+    return m;
+  }
+  function renderTimeSplit(sessions) {
+    const r = calRange();
+    const today = dayOnly(new Date());
+    const fromS = dstr(r.from);
+    const toS   = dstr(r.to > today ? today : r.to);
+    const inRange = sessions.filter(x => x.date >= fromS && x.date <= toS);
+    const per = document.getElementById('pgTimePeriod');
+    if (per) per.textContent = calTitleText(r);
+    const split = timeSplit();
+    document.querySelectorAll('.pg-tab').forEach(b => {
+      const on = b.dataset.split === split;
+      b.classList.toggle('active', on);
+      b.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
 
-    // Totals
-    const totalMin   = sessions.reduce((a, x) => a + x.minutes, 0);
-    const totalCards = sessions.reduce((a, x) => a + x.cards, 0);
-    const totalSess  = sessions.length;
-    const el = id => document.getElementById(id);
-    if (el('progTotalMin'))     el('progTotalMin').textContent     = Math.round(totalMin);
-    if (el('progTotalCards'))   el('progTotalCards').textContent   = totalCards;
-    if (el('progTotalSessions'))el('progTotalSessions').textContent = totalSess;
+    const rows = {};
+    if (split === 'packs') {
+      inRange.forEach(x => {
+        const e = rows[x.packKey] || (rows[x.packKey] = { name: x.packLabel, min: 0, sub: '' });
+        e.min += x.minutes;
+      });
+    } else {
+      const tp = topicsOfPack();
+      inRange.forEach(x => {
+        const ts = tp[x.packKey] && tp[x.packKey].length ? tp[x.packKey] : ['Other'];
+        ts.forEach(t => {
+          const e = rows[t] || (rows[t] = { name: t, min: 0, packs: {} });
+          e.min += x.minutes;
+          e.packs[x.packLabel] = (e.packs[x.packLabel] || 0) + x.minutes;
+        });
+      });
+      Object.values(rows).forEach(e => {
+        e.sub = Object.keys(e.packs).sort((a, b) => e.packs[b] - e.packs[a]).join(' \u00b7 ');
+      });
+    }
+    const list = Object.values(rows).sort((a, b) => b.min - a.min);
+    const host  = document.getElementById('progBars');
+    const empty = document.getElementById('progBarsEmpty');
+    if (!host) return;
+    if (!list.length) { host.innerHTML = ''; if (empty) empty.style.display = ''; return; }
+    if (empty) empty.style.display = 'none';
+    const max = list[0].min || 1;
+    host.innerHTML = list.map(e =>
+      `<div class="pg-row">` +
+        `<div class="pg-row-name">${calEsc(e.name)}</div>` +
+        `<div class="pg-row-val">${fmtMin(e.min)}<span> min</span></div>` +
+        `<div class="pg-row-track"><div class="pg-row-fill" style="width:${Math.max(2, Math.round(e.min / max * 100))}%"></div></div>` +
+        (e.sub ? `<div class="pg-row-sub">${calEsc(e.sub)}</div>` : '') +
+      `</div>`).join('');
   }
 
   // ─ Settings overlay ───────────────────────────────────────────────────
@@ -1296,7 +1397,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     const body = document.getElementById('progSettingsBody');
     if (body) body.style.opacity = s.enabled ? '1' : '0.4';
 
-    const sm = document.getElementById(s.streakMode === 'time' ? 'streakModeTime' : 'streakModeCard');
+    const sm = document.getElementById(s.streakMode === 'time' ? 'streakModeTime' : s.streakMode === 'card' ? 'streakModeCard' : 'streakModeGoal');
     if (sm) sm.checked = true;
     const smt = document.getElementById('streakMinThreshold');
     if (smt) smt.value = s.streakMinMin;
@@ -1328,7 +1429,8 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     set(K.enabled, tog ? tog.checked : false);
 
     const smTime = document.getElementById('streakModeTime');
-    set(K.streakMode, smTime && smTime.checked ? 'time' : 'card');
+    const smCard = document.getElementById('streakModeCard');
+    set(K.streakMode, smTime && smTime.checked ? 'time' : smCard && smCard.checked ? 'card' : 'goal');
     const smt = document.getElementById('streakMinThreshold');
     set(K.streakMinMin, smt ? parseInt(smt.value) || 5 : 5);
 
@@ -1407,16 +1509,6 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     });
   }
 
-  // Period toggle
-  document.querySelectorAll('.prog-period-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.prog-period-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      set(K.period, btn.dataset.period);
-      renderProgress();
-    });
-  });
-
   // Reset button
   const resetBtn = document.getElementById('progResetBtn');
   if (resetBtn) {
@@ -1433,13 +1525,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   const origShowTab = showTab;
   window.showTab = function(tab) {
     origShowTab(tab);
-    if (tab === 'progress') {
-      const ps = getSettings();
-      const periodBtn = document.getElementById(ps.period === 'month' ? 'progPeriodMonth' : 'progPeriodWeek');
-      document.querySelectorAll('.prog-period-btn').forEach(b => b.classList.remove('active'));
-      if (periodBtn) periodBtn.classList.add('active');
-      renderProgress();
-    }
+    if (tab === 'progress') renderProgress();
   };
 
   // Calendar (v1.26.49)
@@ -1483,26 +1569,6 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     return _calView;
   }
 
-  // Week view only (v1.26.66): squares or a bar chart of minutes per day.
-  // Stored separately from the view so switching to Month and back keeps it.
-  const CAL_WEEKMODE_KEY = 'prog_cal_weekmode';
-  let _calWeekMode = null;   // 'grid' | 'bars'
-  function calWeekMode() {
-    if (_calWeekMode) return _calWeekMode;
-    _calWeekMode = get(CAL_WEEKMODE_KEY) === 'bars' ? 'bars' : 'grid';
-    return _calWeekMode;
-  }
-
-  // Shading steps by minutes trained that day. Level 1 also covers days that
-  // only have card flips logged (streak mode 'card' with almost no time).
-  function calLevel(minutes, hasCards) {
-    if (minutes <= 0 && !hasCards) return 0;
-    if (minutes < 5)  return 1;
-    if (minutes < 15) return 2;
-    if (minutes < 30) return 3;
-    return 4;
-  }
-
   function calDayMap(sessions) {
     const m = {};
     sessions.forEach(x => {
@@ -1543,48 +1609,9 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       : calFmtRange(r.from, r.to);
   }
 
-  // Week-as-bars markup (v1.26.66). Same session data as the squares, drawn
-  // by height instead of shading. Bars are scaled to the busiest day in the
-  // week shown, so the tallest bar is always full height; a day with any time
-  // at all gets a visible stub so it never reads as zero.
-  function calBarsHtml(r, map, today, todayS) {
-    const days = [];
-    for (let i = 0; i < 7; i++) {
-      const d  = addDays(r.from, i);
-      const ds = dstr(d);
-      const e  = map[ds];
-      days.push({ d, ds, minutes: e ? Math.round(e.minutes) : 0 });
-    }
-    // v1.26.68 — scale against a real reference, not just the week's own peak.
-    // Scaling to the peak alone meant a week with two one-minute sessions drew
-    // two full-height bars, which reads as a great week. The reference is the
-    // daily goal when one is set, otherwise 30 minutes — and a genuinely
-    // bigger day still wins, so a heavy week is never clipped.
-    let goal = 0;
-    try { goal = Number(getSettings().dailyGoal) || 0; } catch {}
-    const ref  = Math.max(goal, 30);
-    const peak = Math.max.apply(null, days.map(x => x.minutes).concat([ref]));
-    // v1.26.73 — a scale down the left. Without it a bar is only comparable to
-    // the other bars in the same week, so a light week and a heavy one look
-    // identical. Three marks is enough: the top of the scale, the middle, zero.
-    const axis = '<div class="prog-cal-baraxis">'
-      + '<span>' + Math.round(peak) + 'm</span>'
-      + '<span>' + Math.round(peak / 2) + '</span>'
-      + '<span>0</span>'
-      + '</div>';
-    return axis + days.map((x, i) => {
-      const cls = ['prog-cal-barcol'];
-      if (x.d > today)      cls.push('future');
-      if (x.ds === todayS)  cls.push('today');
-      const pct = x.minutes > 0 ? Math.max(4, Math.round((x.minutes / peak) * 100)) : 0;
-      return `<button type="button" class="${cls.join(' ')}" data-day="${x.ds}">`
-        + `<div class="prog-cal-barval">${x.minutes || ''}</div>`
-        + `<div class="prog-cal-bartrack"><div class="prog-cal-bar" style="height:${pct}%"></div></div>`
-        + `<div class="prog-cal-barday">${CAL_DOW[i][0]}</div>`
-        + `</button>`;
-    }).join('');
-  }
-
+  // v1.29.52 — the calendar is made of day rings: each fills toward the
+  // daily goal and becomes a filled disc on a goal day. Replaces the old
+  // squares (fixed 5/15/30-minute shading) and the week-as-bars view.
   function renderCalendar(sessions) {
     const grid = document.getElementById('progCalGrid');
     if (!grid) return;
@@ -1592,39 +1619,23 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     const map   = calDayMap(sessions);
     const today = dayOnly(new Date());
     const todayS = dstr(today);
+    const goal  = dailyRef();
 
     const titleEl = document.getElementById('progCalTitle');
     if (titleEl) titleEl.textContent = calTitleText(r);
-
     document.querySelectorAll('.prog-cal-view').forEach(b => {
       b.classList.toggle('active', b.dataset.view === r.view);
     });
-
     const nextBtn = document.getElementById('progCalNext');
     if (nextBtn) nextBtn.disabled = r.to >= today;
 
-    // Squares / Bars switch — only meaningful in the week view (v1.26.66)
-    const modeRow = document.getElementById('progCalWeekMode');
-    const asBars  = r.view === 'week' && calWeekMode() === 'bars';
-    if (modeRow) modeRow.style.display = r.view === 'week' ? '' : 'none';
-    document.querySelectorAll('.prog-cal-mode').forEach(b => {
-      b.classList.toggle('active', b.dataset.mode === calWeekMode());
-    });
-    const legend = document.querySelector('.prog-cal-legend');
-    if (legend) legend.style.display = asBars ? 'none' : '';
-    grid.classList.toggle('prog-cal-grid--bars', asBars);
-    if (asBars) { grid.innerHTML = calBarsHtml(r, map, today, todayS); return; }
-
-    let rows;
-    if (r.view === 'month') {
-      rows = Math.ceil((Math.round((r.to - r.gridFrom) / 86400000) + 1) / 7);
-    } else {
-      rows = r.view === '2weeks' ? 2 : 1;
-    }
+    const rows = r.view === 'month'
+      ? Math.ceil((Math.round((r.to - r.gridFrom) / 86400000) + 1) / 7)
+      : (r.view === '2weeks' ? 2 : 1);
 
     let html = '<div class="prog-cal-dow"></div>' +
       ['M','T','W','T','F','S','S'].map(d => `<div class="prog-cal-dow">${d}</div>`).join('');
-
+    let goalDays = 0, counted = 0, minutes = 0;
     for (let w = 0; w < rows; w++) {
       const wkStart = addDays(r.gridFrom, w * 7);
       const wkNum   = isoWeek(wkStart);
@@ -1633,15 +1644,31 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         const d   = addDays(wkStart, i);
         const ds  = dstr(d);
         const e   = map[ds];
-        const lvl = e ? calLevel(e.minutes, e.cards > 0) : 0;
-        const cls = ['prog-cal-day', 'l' + lvl];
-        if (r.view === 'month' && d.getMonth() !== r.from.getMonth()) cls.push('out');
-        if (d > today) cls.push('future');
+        const m   = e ? e.minutes : 0;
+        const out = r.view === 'month' && d.getMonth() !== r.from.getMonth();
+        const future = d > today;
+        const ring = dayRing(m, goal, 16);
+        if (!out && !future) {
+          minutes += m;
+          if (ring.met) goalDays++;
+          if (ds !== todayS || ring.met) counted++;
+        }
+        const cls = ['pg-day'];
+        if (ring.met && !future) cls.push('met');
+        if (out)    cls.push('out');
+        if (future) cls.push('future');
         if (ds === todayS) cls.push('today');
-        html += `<button type="button" class="${cls.join(' ')}" data-day="${ds}">${d.getDate()}</button>`;
+        html += `<button type="button" class="${cls.join(' ')}" data-day="${ds}" aria-label="${d.getDate()} ${CAL_MON_SH[d.getMonth()]}: ${fmtMin(m)} min${ring.met ? ', goal reached' : ''}">` +
+          RING_SVG(16, future ? (2 * Math.PI * 16).toFixed(1) : ring.off, ring.met && !future ? ' met' : '') +
+          `<span class="pg-day-num">${d.getDate()}</span></button>`;
       }
     }
     grid.innerHTML = html;
+
+    const sum = document.getElementById('pgCalSum');
+    if (sum) sum.innerHTML = counted
+      ? `Goal reached on <strong>${goalDays} of ${counted} day${counted === 1 ? '' : 's'}</strong> \u00b7 ${Math.round(minutes)} min`
+      : 'Nothing to show yet for this period';
   }
 
   // Day / week / month detail
@@ -1700,13 +1727,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     const grid = document.getElementById('progCalGrid');
     if (grid) {
       grid.addEventListener('click', e => {
-        const bar = e.target.closest('.prog-cal-barcol');
-        if (bar) {
-          if (bar.classList.contains('future')) return;
-          showCalDetail(calDayTitle(bar.dataset.day), bar.dataset.day, bar.dataset.day);
-          return;
-        }
-        const day = e.target.closest('.prog-cal-day');
+        const day = e.target.closest('.pg-day');
         if (day) {
           if (day.classList.contains('future')) return;
           showCalDetail(calDayTitle(day.dataset.day), day.dataset.day, day.dataset.day);
@@ -1743,11 +1764,16 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       });
     });
 
-    document.querySelectorAll('.prog-cal-mode').forEach(btn => {
+    const wrs = document.getElementById('pgWeekRings');
+    if (wrs) wrs.addEventListener('click', e => {
+      const b = e.target.closest('.pg-wr');
+      if (!b || b.classList.contains('future')) return;
+      showCalDetail(calDayTitle(b.dataset.day), b.dataset.day, b.dataset.day);
+    });
+    document.querySelectorAll('.pg-tab').forEach(btn => {
       btn.addEventListener('click', () => {
-        _calWeekMode = btn.dataset.mode;
-        set(CAL_WEEKMODE_KEY, _calWeekMode);
-        renderProgress();
+        set(SPLIT_KEY, btn.dataset.split);
+        renderTimeSplit(getSessions());
       });
     });
 

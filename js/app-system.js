@@ -4702,6 +4702,7 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.52', date: 'October 2026', title: 'Progress screen rebuilt \u2014 Goal first', audience: 'dev', items: ['The Progress screen follows design 2, <em>Goal first</em> (canvas \u201cDeckstack Progress \u2014 designf\u00f6rslag\u201d). A big ring for today, a row of day rings for this calendar week, a This week card (weekly goal, goal days, streak), a calendar of day rings (Week / 2 weeks / Month) with a goal-day summary, <em>Where your time went</em> by Topics or Packs, and an All time row (minutes, goal days, sessions). The intro sentence, the separate weekly and daily rings, the Squares/Bars switch and the Week/Month toggle are gone.', 'Rings fill toward <code>dailyRef()</code>: the daily goal, or the weekly goal / 7 when none is set. <strong>This week</strong> is now the calendar week (Mon\u2013Sun), not the last seven days.', 'Where your time went follows the period the calendar shows. A pack in several topics counts in each (Rikard\u2019s call), so topic rows can add up to more than the total; packs with no topic go under Other. Choice stored in <code>prog_time_split</code>.', 'Streak: new mode <code>goal</code> (Reached my daily goal), now the default; a one-time migration (<code>prog_streak_goal_v1</code>) moves the old default <code>card</code> to it and leaves <code>time</code> alone. Today no longer breaks the streak before it is over.', 'New token <code>--ds-ring-track</code> (light and dark). No new session data: everything is computed from <code>prog_sessions</code>.'] },
   { version: 'v1.29.51', date: 'October 2026', title: 'Handling Passive Aggression \u2014 a second Extended programme', audience: 'dev', items: ['New programme <code>handling-passive-aggression</code>, <strong>extended</strong>, 59 kr in the store. Five Parts, one pack each: Pt. 1 (stays Pro, also Part 2 of Difficult Conversations) and Pt. 2\u20135, which move from <strong>complete</strong> to <strong>program</strong> and so reach the release build for the first time.', 'Five new checkpoints, <code>hpa-cp1</code>\u2013<code>hpa-cp5</code>, 40 questions each, 20 drawn, 30 s. Written from each pack\u2019s descriptions, Challenges, Mindset and Sequences.', 'The Complete Kit now contains both programmes; price unchanged at 189 kr (Rikard\u2019s call), so it is 189 of 311 bought separately. Classroom Kit text says the programmes are not included.'] },
   { version: 'v1.29.50', date: 'October 2026', title: 'Library cards show Grid', audience: 'dev', items: ['Pack cards in the Library now end in <strong>Grid</strong> when the pack is a grid pack. In <strong>Packs</strong> the line is the topic (or the strategy count if the pack is in no topic); in <strong>Topics</strong> it is the strategy count, since the topic is already the heading. The old <em>Flashcard mode</em> wording on Topics cards is gone. Grid packs are listed in <code>GRID_PACKS</code> at the top of <code>app-system.js</code>; new grid packs must be added there.'] },
   { version: 'v1.29.49', date: 'October 2026', title: 'Icon font bundled', audience: 'dev', items: ['The Tabler icon font (3.49.0, woff2 only) now ships in <code>css/tabler/</code> instead of loading from jsDelivr, so icons work offline in the iOS app. Two icons that never existed in the font are replaced: the pinned toast (<code>ti-pinned</code>) and the old selfhumour pack (<code>ti-mood-happy</code>).'] },
@@ -5576,6 +5577,14 @@ const WHATS_NEW = [
 //   • Lägg bara till när något nytt är värt att öppna appen för. De flesta
 //     versioner ska ALDRIG stå här.
 const WHATS_NEW_USER = [
+  {
+    date: 'October 2026', title: 'A new Progress screen',
+    items: [
+      'Every day is now a ring that fills toward your daily goal. A full circle means you reached it — in today\u2019s ring, in this week\u2019s row and across the whole calendar.',
+      'See where your time went by <strong>topic</strong> as well as by pack, for whatever week or month the calendar shows.',
+      'Your streak now counts the days you reach your daily goal, and it no longer drops to zero in the morning before you have trained.',
+    ],
+  },
   {
     date: 'October 2026', title: 'Handling Passive Aggression',
     items: [
