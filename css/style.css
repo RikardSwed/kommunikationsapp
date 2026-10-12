@@ -1877,8 +1877,9 @@ body.pb-enabled .divider::after {
   transition: color 0.18s;
 }
 
-.mode-hf-toggle.active .mode-hf-toggle-label {
-  color: #fff;
+.mode-hf-toggle.active .mode-hf-toggle-label,
+.mode-hf-toggle.active .mode-hf-toggle-icon {
+  color: var(--ds-card);
 }
 
 .mode-flip-card {
