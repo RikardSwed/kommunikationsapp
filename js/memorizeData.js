@@ -22666,4 +22666,1040 @@ const memorizeCollections = {
       ]
     },
   ],
+  jobinterview1: [
+    {
+      name: "Core Idea",
+      description: "Five strategies for the questions almost every job interview asks:\n\n1. Present, Past, Future\n2. Answer With a Story\n3. The Honest Weakness\n4. Why This Job\n5. Ask Them a Question\n\nThree are about you, one is about them, and the last is your turn.",
+      cards: [
+        { q: "What are the five strategies in this pack?", a: "Present, Past, Future, Answer With a Story, The Honest Weakness, Why This Job, and Ask Them a Question.", bundle: 'free' },
+        { q: "What is the idea behind the whole pack?", a: "An interview is a conversation about a job, not a hearing. Answer short, concrete and true — and ask back.", bundle: 'free' },
+        { q: "How long should the core of an answer be?", a: "One to three sentences. An answer that takes 20–40 seconds in real life has a short core.", bundle: 'free' },
+        { q: "How do the five fit together?", a: "Three are about you, one is about them, and the last is your turn to ask.", bundle: 'free' },
+        { q: "What makes an answer believable?", a: "A concrete detail — a number, a result, a real day — said plainly.", bundle: 'free' },
+        { q: "What should you ask yourself when a question comes?", a: "What are they asking for: who I am, an example, a flaw, a reason, or my questions?", bundle: 'pro' },
+        { q: "How is this pack different from Talking About Yourself?", a: "There, \"what do you do?\" is a social question. Here it is the interview.", bundle: 'pro' },
+        { q: "What does Pt. 2 of Job Interview cover?", a: "The hard parts: gaps in your CV, mistakes, things you don't know, salary, personal questions, and following up.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Present, Past, Future",
+      description: "",
+      cards: [
+        { q: "What is Present, Past, Future?", a: "Answering \"tell me about yourself\" in three parts: what you do now, what led you here, and why this job.", bundle: 'free' },
+        { q: "How does Present, Past, Future sound?", a: "\"I'm a nurse on a surgical ward. Before that I worked in elderly care. Now I want to work with children.\"", bundle: 'free' },
+        { q: "Why does the present come first?", a: "It is the most relevant thing about you. The past only explains how you got there.", bundle: 'free' },
+        { q: "What is the open question really asking?", a: "Who you are, and why you are sitting in this chair.", bundle: 'free' },
+        { q: "What are the three shapes it can take?", a: "The straight line, the career change, and the first job.", bundle: 'free' },
+        { q: "When does Present, Past, Future go wrong?", a: "When it turns into a life story — starting with school or listing every job.", bundle: 'pro' },
+        { q: "What does the future part do?", a: "It ties your story to this job, and gives them an easy next question.", bundle: 'pro' },
+        { q: "How long should the whole answer take?", a: "Under a minute.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Answer With a Story",
+      description: "",
+      cards: [
+        { q: "What is Answer With a Story?", a: "Answering \"tell me about a time...\" with one real example: the situation, what you did, and how it turned out.", bundle: 'free' },
+        { q: "What does STAR stand for?", a: "Situation, Task, Action, Result.", bundle: 'free' },
+        { q: "How does Answer With a Story sound?", a: "\"Our supplier failed the week before Christmas. I called three others and found one. We didn't miss an order.\"", bundle: 'free' },
+        { q: "Why does a story work better than a quality?", a: "\"I'm good under pressure\" is a claim. One real day is proof they can picture.", bundle: 'free' },
+        { q: "Which part of the story should be biggest?", a: "What you did — said with \"I\", not \"we\".", bundle: 'free' },
+        { q: "How should the story end?", a: "With the result: a number, an outcome, or what changed. If it went badly, what you do differently now.", bundle: 'pro' },
+        { q: "What are the three kinds of story worth having ready?", a: "The problem solved, the people story, and the thing that went wrong.", bundle: 'pro' },
+        { q: "Do you need your best story?", a: "No. A true one, told short, with an ending.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Honest Weakness",
+      description: "",
+      cards: [
+        { q: "What is The Honest Weakness?", a: "Naming a real weakness, not a strength in disguise, and saying what you do about it.", bundle: 'free' },
+        { q: "How does The Honest Weakness sound?", a: "\"I used to say yes to everything. Now I check my week before I take on more.\"", bundle: 'free' },
+        { q: "What is the weakness question really checking?", a: "Whether you know yourself and can improve.", bundle: 'free' },
+        { q: "What is wrong with \"I'm a perfectionist\"?", a: "It tells them you have practised an answer, not thought about yourself.", bundle: 'free' },
+        { q: "Which part of the answer matters most?", a: "What you do about it now.", bundle: 'free' },
+        { q: "How do you choose which weakness to name?", a: "Something true that is not the heart of the job.", bundle: 'pro' },
+        { q: "What are the three parts?", a: "The weakness, what it has cost if they ask, and what you do now.", bundle: 'pro' },
+        { q: "Is The Honest Weakness a confession?", a: "No. A weakness with a fix shows you know yourself.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Why This Job",
+      description: "",
+      cards: [
+        { q: "What is Why This Job?", a: "Giving one specific thing about them, and connecting it to you.", bundle: 'free' },
+        { q: "How does Why This Job sound?", a: "\"I've used your app for two years, and I'd like to work on the part I complain about most.\"", bundle: 'free' },
+        { q: "What is \"why us?\" really checking?", a: "Whether you chose them, or just applied everywhere.", bundle: 'free' },
+        { q: "What is wrong with \"it seems like a great company\"?", a: "It could be said to any employer, and they can hear that.", bundle: 'free' },
+        { q: "Where can you find the detail?", a: "As a customer, in the job ad, or from someone who works there.", bundle: 'free' },
+        { q: "When should you find the detail?", a: "Before the interview.", bundle: 'pro' },
+        { q: "What does the link to you add?", a: "It shows why you would stay.", bundle: 'pro' },
+        { q: "Which strategy often comes right before Why This Job?", a: "Present, Past, Future — its last part already points at this job.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask Them a Question",
+      description: "",
+      cards: [
+        { q: "What is Ask Them a Question?", a: "Having a real question ready when they ask if you have any — about the work, the team or the first months.", bundle: 'free' },
+        { q: "How does Ask Them a Question sound?", a: "\"What would a great first year look like in this role?\"", bundle: 'free' },
+        { q: "What is wrong with \"No, I think you've covered everything\"?", a: "It sounds as if you are not that interested.", bundle: 'free' },
+        { q: "What does a good question show?", a: "That you are already picturing yourself in the job.", bundle: 'free' },
+        { q: "What are the three kinds of question?", a: "About success, about the team, and about something they said.", bundle: 'free' },
+        { q: "What should wait until later than the first interview?", a: "Pay and holidays.", bundle: 'pro' },
+        { q: "Which kind of question is often the best?", a: "One about something they said earlier in the interview.", bundle: 'pro' },
+        { q: "How many questions are enough?", a: "One or two — and listen to the answers.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Show Who You Are** — a question about you: who you are, what you did, or what you find hard?\n• **Prove the Fit** — you and this job: proof, a reason, or your own question?\n• **All Five Strategies** — everything mixed, with no warning about the next question\n\nOne question decides nearly all of it: what did they just ask for?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Show Who You Are, Prove the Fit, and All Five Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Show Who You Are?", a: "Are they asking who I am, what I did, or what I struggle with?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Show Who You Are?", a: "Answering \"tell me about a time\" with a description of yourself instead of a real day.", bundle: 'pro' },
+        { q: "What is the question that decides Prove the Fit?", a: "Do they want proof, a reason, or my side of the conversation?", bundle: 'pro' },
+        { q: "They ask, \"Why should we hire you over the others?\" Which strategy?", a: "Answer With a Story — prove it with one real example.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Prove the Fit?", a: "Answering \"why you?\" with a list of qualities.", bundle: 'pro' },
+        { q: "They ask, \"Why our company?\" Which strategy?", a: "Why This Job.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in All Five Strategies?", a: "Giving the same prepared speech to every question.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Whole Interview** — Present, Past, Future → Why This Job → Ask Them a Question\n2. **Back It Up** — Present, Past, Future → Answer With a Story → The Honest Weakness\n3. **Finish Strong** — The Honest Weakness → Why This Job → Ask Them a Question\n\nEach one keeps every answer short, so the next question follows on its own.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Whole Interview, Back It Up, and Finish Strong.", bundle: 'pro' },
+        { q: "What is the order in The Whole Interview?", a: "Present, Past, Future, then Why This Job, then Ask Them a Question.", bundle: 'pro' },
+        { q: "Why does Why This Job follow Present, Past, Future so easily?", a: "The intro already ends with the future, pointing at this job.", bundle: 'pro' },
+        { q: "What is the order in Back It Up?", a: "Present, Past, Future, then Answer With a Story, then The Honest Weakness.", bundle: 'pro' },
+        { q: "Why does the story come before the weakness in Back It Up?", a: "After the proof, a weakness sounds like honesty. Without it, it sounds like a confession.", bundle: 'pro' },
+        { q: "What is the order in Finish Strong?", a: "The Honest Weakness, then Why This Job, then Ask Them a Question.", bundle: 'pro' },
+        { q: "Why end on your own question?", a: "The last thing they hear is you already thinking about the job.", bundle: 'pro' },
+        { q: "What do people do instead in The Whole Interview?", a: "A long life story, a general \"great company\", and \"no questions\".", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack, and what goes wrong in each:\n\n• **The Open Start** — \"Tell me about yourself\": the life story\n• **Tell Me About a Time** — the request for proof: a quality instead of a day\n• **The Trap Question** — weakness, \"why you?\", five years: the polished dodge\n• **Why Us?** — praise without a detail\n• **Your Turn to Ask** — \"no questions\"\n\nEach one has a short, true answer that works better than the prepared one.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Open Start, Tell Me About a Time, The Trap Question, Why Us?, and Your Turn to Ask.", bundle: 'pro' },
+        { q: "What goes wrong in The Open Start?", a: "Filling the space — school, every job, the CV read aloud.", bundle: 'pro' },
+        { q: "What is the main strategy for Tell Me About a Time?", a: "Answer With a Story — the situation, what you did, and how it ended.", bundle: 'pro' },
+        { q: "What should you avoid in Tell Me About a Time?", a: "A story without an ending.", bundle: 'pro' },
+        { q: "Which strategy answers \"why should we hire you over the others?\"", a: "Answer With a Story — proof instead of adjectives.", bundle: 'pro' },
+        { q: "What should you avoid in The Trap Question?", a: "A strength dressed up as a weakness.", bundle: 'pro' },
+        { q: "What should you avoid in Why Us?", a: "Praise without a detail.", bundle: 'pro' },
+        { q: "What should you avoid in Your Turn to Ask?", a: "\"No questions\" — or opening with pay and holidays in a first interview.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Perfection** — I have to sound perfect\n• **Bragging** — talking about what I've done is bragging\n• **Power** — they hold all the power\n• **Slip-Ups** — one bad answer ruins everything\n\nEach one makes the interview feel like an exam instead of a conversation.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Perfection, Bragging, Power, and Slip-Ups.", bundle: 'pro' },
+        { q: "What is true instead of \"I have to sound perfect\"?", a: "They are hiring a person, not a speech. Short and true is fine.", bundle: 'pro' },
+        { q: "What does aiming for perfection cost?", a: "Polished answers sound rehearsed, and the real person hides behind them.", bundle: 'pro' },
+        { q: "What part of \"talking about what I've done is bragging\" is true, and what gets added?", a: "Boasting is off-putting. What gets added is \"so I can't say what happened\".", bundle: 'pro' },
+        { q: "What is true instead of \"they hold all the power\"?", a: "They choose you, and you choose them. Both of you are finding out if it fits.", bundle: 'pro' },
+        { q: "What does the power belief cost?", a: "Your half of the conversation — no questions and no real reasons.", bundle: 'pro' },
+        { q: "What is true instead of \"one bad answer ruins everything\"?", a: "They remember the whole conversation, and you can go back and fix an answer.", bundle: 'pro' },
+        { q: "What do all four mindsets have in common?", a: "They turn the interview into an exam instead of a conversation.", bundle: 'pro' },
+      ]
+    },
+  ],
+  jobinterview2: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for the hard parts of a job interview, and the time just after:\n\n1. Explain the Gap\n2. Own a Mistake\n3. When You Don't Know\n4. The Salary Question\n5. Turn a Personal Question\n6. Follow Up After\n\nThree for weak spots, two for private-feeling questions, one for afterwards.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Explain the Gap, Own a Mistake, When You Don't Know, The Salary Question, Turn a Personal Question, and Follow Up After.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Three for weak spots in your record, two for questions that feel private, and one for after the interview.", bundle: 'free' },
+        { q: "What is the idea behind the whole pack?", a: "The hard parts are not dangerous if you say them plainly, briefly, and without apologising.", bundle: 'free' },
+        { q: "What do all the answers in this pack have in common?", a: "They are short, calm and true — one to three sentences you could say out loud.", bundle: 'free' },
+        { q: "What is the most common mistake in the hard parts of an interview?", a: "The long, nervous answer, which makes a small problem sound big.", bundle: 'free' },
+        { q: "How does this pack relate to Job Interview Pt. 1?", a: "Pt. 1 covers the usual questions. Pt. 2 covers the hard moments and what happens after.", bundle: 'pro' },
+        { q: "Which three strategies deal with weak spots in your record?", a: "Explain the Gap, Own a Mistake, and When You Don't Know.", bundle: 'pro' },
+        { q: "Where do most answers in this pack end?", a: "Pointing forward — at the job, the plan, or the next step.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Explain the Gap",
+      description: "",
+      cards: [
+        { q: "What is Explain the Gap?", a: "Explaining a gap in your CV in two short parts — why, and where you are now — then moving on to the job.", bundle: 'free' },
+        { q: "How does Explain the Gap sound?", a: "\"I was at home with my dad for a year while he was ill. I'm ready to work full time again.\"", bundle: 'free' },
+        { q: "What is the interviewer really checking when they ask about a gap?", a: "Whether you are hiding a problem, and whether you are ready now.", bundle: 'free' },
+        { q: "What are the three kinds of gap?", a: "Life happened, you lost a job, or you chose it.", bundle: 'free' },
+        { q: "Which part of the answer matters most?", a: "The forward part. End on the job, not on the gap.", bundle: 'free' },
+        { q: "What does a long, nervous answer about a gap do?", a: "It makes them wonder what the long version is protecting.", bundle: 'pro' },
+        { q: "How do you talk about a gap you chose?", a: "Own it as a choice, and say what it gave you.", bundle: 'pro' },
+        { q: "What should you never do with a gap?", a: "Apologise for it. It is a fact, not a confession.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Own a Mistake",
+      description: "",
+      cards: [
+        { q: "What is Own a Mistake?", a: "Naming a real mistake, saying it was yours, and saying what you did about it and what you do differently now.", bundle: 'free' },
+        { q: "How does Own a Mistake sound?", a: "\"I sent a price list with the wrong numbers. I called the customer myself, fixed it, and now I check everything twice.\"", bundle: 'free' },
+        { q: "What are the three parts?", a: "What happened, what you did, and what changed.", bundle: 'free' },
+        { q: "What is the interviewer really asking?", a: "What you do when you get something wrong.", bundle: 'free' },
+        { q: "What three things do they listen for?", a: "That you name it without making it smaller, that you do not blame others, and that something changed.", bundle: 'free' },
+        { q: "Why is \"I care too much\" a bad answer?", a: "It is a strength in disguise, and it answers nothing.", bundle: 'pro' },
+        { q: "What kind of mistake should you pick?", a: "A real one with a real fix — not a disaster, and not a fake.", bundle: 'pro' },
+        { q: "What if others were involved too?", a: "Talk about your part. It is the only part you can own.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "When You Don't Know",
+      description: "",
+      cards: [
+        { q: "What is When You Don't Know?", a: "Saying honestly that you do not know or have not done something, then showing how you would handle it.", bundle: 'free' },
+        { q: "How does When You Don't Know sound?", a: "\"I haven't used that system. I learned our last one in two weeks, and I'd do the same here.\"", bundle: 'free' },
+        { q: "What is the interviewer often testing with these questions?", a: "Whether you will bluff, and whether you can learn.", bundle: 'free' },
+        { q: "What are the three ways to follow the honest no?", a: "Something close you have done, how fast you learn, or how you would find out.", bundle: 'free' },
+        { q: "How long should the \"no\" part be?", a: "One sentence. Spend the rest of the answer on the plan.", bundle: 'free' },
+        { q: "Why is a bluff so risky?", a: "It is easy to spot, and one follow-up question can bring it down.", bundle: 'pro' },
+        { q: "What should you do if you have already bluffed?", a: "Correct yourself straight away. Honest now beats found out on day one.", bundle: 'pro' },
+        { q: "What is a failed answer here?", a: "Not \"I don't know\" — pretending.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Salary Question",
+      description: "",
+      cards: [
+        { q: "What is The Salary Question?", a: "Giving a range based on what jobs like this usually pay, or asking what range they have.", bundle: 'free' },
+        { q: "How does The Salary Question sound?", a: "\"From what I've seen, jobs like this pay between 34 and 38 thousand a month. What range do you have in mind?\"", bundle: 'free' },
+        { q: "Why a range and not one number?", a: "A range gives them room without leaving you with nothing. One number can be too low for you or too high for them.", bundle: 'free' },
+        { q: "What is wrong with \"whatever you think is fair\"?", a: "It hands the whole decision to them.", bundle: 'free' },
+        { q: "What should your range be based on?", a: "What the job usually pays — not on your bills.", bundle: 'free' },
+        { q: "What homework makes \"from what I've seen\" true?", a: "Job ads, pay tables, and people you know in the same work.", bundle: 'pro' },
+        { q: "When should you ask for their range first?", a: "When you have nothing to go on.", bundle: 'pro' },
+        { q: "What can you put next to the range?", a: "The whole offer — hours, holidays, training.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Turn a Personal Question",
+      description: "",
+      cards: [
+        { q: "What is Turn a Personal Question?", a: "Answering what the job needs to know when they ask about your private life, and leaving the rest.", bundle: 'free' },
+        { q: "How does Turn a Personal Question sound?", a: "\"I'm fully able to work the hours. Is there something about the schedule you're wondering about?\"", bundle: 'free' },
+        { q: "What kinds of questions is it for?", a: "Family plans, age, religion, health, a partner, or where you come from.", bundle: 'free' },
+        { q: "What is usually under a personal question?", a: "A real worry: will you be there, can you do the shifts, will you stay?", bundle: 'free' },
+        { q: "What are the three ways to turn it?", a: "Answer the worry underneath, ask what they need to know, or say it is private and move on.", bundle: 'free' },
+        { q: "Do you have to give the private answer?", a: "No. You answer what the job needs.", bundle: 'pro' },
+        { q: "Why keep it warm?", a: "Most of these questions come from clumsiness, and a calm answer is the quickest way back to the interview.", bundle: 'pro' },
+        { q: "What should you avoid when you turn it?", a: "A lecture. You want the job, not the argument.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Follow Up After",
+      description: "",
+      cards: [
+        { q: "What is Follow Up After?", a: "A short thank-you after the interview with one real detail, and a question about the next step if they did not say.", bundle: 'free' },
+        { q: "How does Follow Up After sound?", a: "\"Thank you for today. I keep thinking about your plan for the new store. When can I expect to hear from you?\"", bundle: 'free' },
+        { q: "Why does one detail matter?", a: "It shows you were listening, and keeps you in their mind as a person, not a CV.", bundle: 'free' },
+        { q: "What are the three times to use it?", a: "The same day, after silence, and after a no.", bundle: 'free' },
+        { q: "How many check-ins after silence?", a: "One friendly one, with no complaint.", bundle: 'free' },
+        { q: "How do you answer a rejection?", a: "Thank them, and leave the door open for the next job.", bundle: 'pro' },
+        { q: "Is asking about the next step pushy?", a: "No. It is the only way to plan.", bundle: 'pro' },
+        { q: "What can you ask for after a no?", a: "One thing you could do better next time.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Own the Weak Spot** — is the weak spot about time, something you did, or something you cannot do yet?\n• **Answer or Steer** — does the job really need this answer: money, time away, or your private life?\n• **All Six Strategies** — everything mixed, with no warning about which hard moment comes next\n\nOne question decides most of it: what are they really asking about?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Own the Weak Spot, Answer or Steer, and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Own the Weak Spot?", a: "Is it about time, about something you did, or about something you cannot do yet?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Own the Weak Spot?", a: "Treating a gap as a mistake, which makes a plain fact sound like a fault.", bundle: 'pro' },
+        { q: "What is the question that decides Answer or Steer?", a: "Does the job really need this answer?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Answer or Steer?", a: "Treating money as private, which leaves them to pick the number for you.", bundle: 'pro' },
+        { q: "They ask about your religion. Which strategy?", a: "Turn a Personal Question.", bundle: 'pro' },
+        { q: "They ask why you have not worked for a year. Which strategy?", a: "Explain the Gap.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in All Six Strategies?", a: "The long, nervous answer. Any strategy said short beats the right one said for two minutes.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Honest Record** — Explain the Gap → Own a Mistake → When You Don't Know\n2. **Range, Ask, Follow Up** — The Salary Question → The Salary Question → Follow Up After\n3. **Back to the Work** — Turn a Personal Question → Explain the Gap → When You Don't Know\n\nIn each one, every answer ends facing forward, towards the job.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Honest Record; Range, Ask, Follow Up; and Back to the Work.", bundle: 'pro' },
+        { q: "What is the order in The Honest Record?", a: "Explain the Gap, Own a Mistake, When You Don't Know.", bundle: 'pro' },
+        { q: "What do people do instead in The Honest Record?", a: "Defend the gap, which makes the mistake behind it sound bigger.", bundle: 'pro' },
+        { q: "What is the order in Range, Ask, Follow Up?", a: "Give your range, ask for theirs when they push back, then follow up with one detail.", bundle: 'pro' },
+        { q: "Why does your range come first?", a: "So the talk starts from what the job is worth.", bundle: 'pro' },
+        { q: "What do people do when they hear \"too high\"?", a: "Drop the number at once, instead of asking for theirs.", bundle: 'pro' },
+        { q: "What is the order in Back to the Work?", a: "Turn a Personal Question, Explain the Gap, When You Don't Know.", bundle: 'pro' },
+        { q: "What goes wrong if you answer the private question in full?", a: "It opens three more.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack, and what goes wrong in each:\n\n• **The Gap** — the long answer makes the gap sound bigger\n• **Your Biggest Mistake** — a fake mistake, or blame passed on\n• **A Skill You Don't Have** — the bluff\n• **What Do You Expect to Earn?** — no number, or one number with no room\n• **The Question That Isn't Their Business** — answering in full, or in anger\n\nEach has a short, calm answer.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Gap, Your Biggest Mistake, A Skill You Don't Have, What Do You Expect to Earn?, and The Question That Isn't Their Business.", bundle: 'pro' },
+        { q: "What should you avoid in The Gap?", a: "Apologising for the time.", bundle: 'pro' },
+        { q: "What are the two escapes in Your Biggest Mistake?", a: "A fake mistake, or a real one blamed on someone else.", bundle: 'pro' },
+        { q: "What should you avoid in A Skill You Don't Have?", a: "Saying yes to something you would have to fake on day one.", bundle: 'pro' },
+        { q: "What is the main strategy for What Do You Expect to Earn?", a: "The Salary Question — a range from what the job usually pays, or a question about theirs.", bundle: 'pro' },
+        { q: "What should your salary range not be based on?", a: "Your bills. It should come from the job.", bundle: 'pro' },
+        { q: "What are the two ways The Question That Isn't Their Business goes wrong?", a: "Answering it in full, or answering it with anger.", bundle: 'pro' },
+        { q: "What should you avoid with a personal question?", a: "A lecture. You want the job, not the argument.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Gaps** — a gap in my CV is a red flag\n• **Mistakes** — admitting a mistake makes me look bad\n• **Money** — naming a number is greedy\n• **Not Knowing** — if I don't know, I've failed\n\nEach one pushes you towards a long, nervous or dishonest answer when a short, true one would do.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Gaps, Mistakes, Money, and Not Knowing.", bundle: 'pro' },
+        { q: "What part of \"a gap is a red flag\" is true, and what gets added?", a: "They will notice it and ask. What gets added is that it decides the outcome — your answer does more.", bundle: 'pro' },
+        { q: "What does a mistake told well show?", a: "That you can see your own work clearly and fix it.", bundle: 'pro' },
+        { q: "What does staying quiet about money quietly cost?", a: "They pick the number, and it often stays low for years.", bundle: 'pro' },
+        { q: "Why does \"naming a number is greedy\" feel right?", a: "It feels modest and safe, and nobody wants to seem to care only about money.", bundle: 'pro' },
+        { q: "What is true instead of \"if I don't know, I've failed\"?", a: "An honest \"I don't know\" with a plan is often the best answer in the room.", bundle: 'pro' },
+        { q: "What does \"not knowing\" usually lead to?", a: "The bluff, which one follow-up question can bring down.", bundle: 'pro' },
+        { q: "What do all four mindsets have in common?", a: "They push you towards a long, nervous or dishonest answer when a short, true one would do.", bundle: 'pro' },
+      ]
+    },
+  ],
+  talkingtoyourmanager: [
+    {
+      name: "Core Idea",
+      description: "Five strategies for talking to the person who decides about your work:\n\n1. Bottom Line First\n2. Ask Them to Choose\n3. Disagree, Then Commit\n4. Bad News Early\n5. Ask for What You Want\n\nYour manager decides; each strategy makes it easier for them to understand, choose or help.",
+      cards: [
+        { q: "What are the five strategies in this pack?", a: "Bottom Line First, Ask Them to Choose, Disagree, Then Commit, Bad News Early, and Ask for What You Want.", bundle: 'free' },
+        { q: "What is the stance of the whole pack?", a: "Your manager has too little time and too little information. They decide; you make it easy for them to understand, choose and help.", bundle: 'free' },
+        { q: "How do the five fit together?", a: "Three keep your manager informed — Bottom Line First, Bad News Early and Ask Them to Choose. Two say what you think and what you need — Disagree, Then Commit and Ask for What You Want.", bundle: 'free' },
+        { q: "What should you ask yourself first?", a: "What does my manager need to do next: understand, act, choose, think again, or help me?", bundle: 'free' },
+        { q: "What do all five strategies leave with the manager?", a: "The decision.", bundle: 'free' },
+        { q: "What is the most common mistake across the pack?", a: "Waiting — for a better moment, for a fix, or for the manager to notice.", bundle: 'pro' },
+        { q: "Where does this pack end and Making Requests begin?", a: "Making Requests is about asking anyone for anything. Here the ask goes upwards, at work, with facts as the case.", bundle: 'pro' },
+        { q: "What does the pack never ask you to do?", a: "Threaten, sulk, or go around your manager.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Bottom Line First",
+      description: "",
+      cards: [
+        { q: "What is Bottom Line First?", a: "Starting with the conclusion, then the one fact that matters most, then what you need.", bundle: 'free' },
+        { q: "How does Bottom Line First sound?", a: "\"The order goes out Friday, not Wednesday. The parts are late. I need you to tell the customer.\"", bundle: 'free' },
+        { q: "When is Bottom Line First the right one?", a: "Whenever your manager wants an update, especially when they are short of time.", bundle: 'free' },
+        { q: "Why does Bottom Line First work?", a: "They are listening for one thing — does this change anything for me? — and now they hear it first.", bundle: 'free' },
+        { q: "What are the three shapes?", a: "The status, the change, and the need.", bundle: 'free' },
+        { q: "When does Bottom Line First go wrong?", a: "When the headline is hidden behind \"So, on Monday…\" and the story is told in order.", bundle: 'pro' },
+        { q: "What is Bottom Line First better than, and why?", a: "The full story in order. Told that way, the answer arrives after they have stopped listening.", bundle: 'pro' },
+        { q: "What does BLUF stand for?", a: "Bottom line up front.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask Them to Choose",
+      description: "",
+      cards: [
+        { q: "What is Ask Them to Choose?", a: "Laying out the trade-off and letting your manager decide what comes first.", bundle: 'free' },
+        { q: "How does Ask Them to Choose sound?", a: "\"I can finish the report or the training plan by Friday, not both. Which matters more?\"", bundle: 'free' },
+        { q: "When is Ask Them to Choose the right one?", a: "When there is more work than time, or something new lands on a full week.", bundle: 'free' },
+        { q: "Why does Ask Them to Choose work?", a: "Priorities are your manager's job, and this gives them the facts they need to do it.", bundle: 'free' },
+        { q: "What are the three ways to put the choice?", a: "Either-or, in or out, and fast or full.", bundle: 'free' },
+        { q: "When does Ask Them to Choose go wrong?", a: "When it becomes a way to refuse everything. It is a real question, and either answer must be fine.", bundle: 'pro' },
+        { q: "What is Ask Them to Choose better than, and why?", a: "Saying yes to everything, which hides the problem until something is late — or a flat no, which takes a decision that is not yours.", bundle: 'pro' },
+        { q: "What do you say when they answer \"everything's a priority\"?", a: "\"If you had to pick one for this week, which would it be?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Disagree, Then Commit",
+      description: "",
+      cards: [
+        { q: "What is Disagree, Then Commit?", a: "Saying you disagree, once, with one clear reason, and that you will follow the decision if it stands.", bundle: 'free' },
+        { q: "How does Disagree, Then Commit sound?", a: "\"I think the new rota will cost us our weekend staff. If you still want it, I'll make it work.\"", bundle: 'free' },
+        { q: "When is Disagree, Then Commit the right one?", a: "When your manager decides something you think will cause problems — best before the decision is final.", bundle: 'free' },
+        { q: "Why does Disagree, Then Commit work?", a: "They hear the problem in time, and they know you will not fight the decision afterwards.", bundle: 'free' },
+        { q: "What are the three moments?", a: "Before the decision, after the decision, and when it is final.", bundle: 'free' },
+        { q: "When does Disagree, Then Commit go wrong?", a: "When it is said more than once, with five reasons, or with a sulk or a threat.", bundle: 'pro' },
+        { q: "What is Disagree, Then Commit better than, and why?", a: "Silence and complaining later. The manager never gets the information, and the team gets the resentment.", bundle: 'pro' },
+        { q: "Why does the second half matter so much?", a: "It makes the first half safe to say. You are giving information, not taking a stand against them.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Bad News Early",
+      description: "",
+      cards: [
+        { q: "What is Bad News Early?", a: "Telling your manager about a problem as soon as you know, plainly, with a plan.", bundle: 'free' },
+        { q: "How does Bad News Early sound?", a: "\"I've made a mistake with the invoices. Here's what happened, and here's how I'll fix it today.\"", bundle: 'free' },
+        { q: "When is Bad News Early the right one?", a: "As soon as you know something has gone wrong, or is about to.", bundle: 'free' },
+        { q: "Why does Bad News Early work?", a: "A problem told early is still small, and your manager has time to act.", bundle: 'free' },
+        { q: "What are the three parts?", a: "The problem, your part in it, and a plan or a proposal.", bundle: 'free' },
+        { q: "When does Bad News Early go wrong?", a: "When it starts with a long build-up, or with blaming someone else.", bundle: 'pro' },
+        { q: "What is Bad News Early better than, and why?", a: "Fixing it first in secret. Found out late, a small problem becomes a question of trust.", bundle: 'pro' },
+        { q: "Do you need the whole fix ready before you tell them?", a: "No. A first step or a proposal is enough. Telling them is part of fixing it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for What You Want",
+      description: "",
+      cards: [
+        { q: "What is Ask for What You Want?", a: "Asking your manager for something you want — pay, training, a responsibility, hours, a title — with facts first and then a concrete ask.", bundle: 'free' },
+        { q: "How does Ask for What You Want sound?", a: "\"I've run the night shift alone since March. I'd like to talk about a raise. Can we book half an hour?\"", bundle: 'free' },
+        { q: "When is Ask for What You Want the right one?", a: "When you want something for yourself at work and have been waiting for someone to notice.", bundle: 'free' },
+        { q: "Why does Ask for What You Want work?", a: "Facts make the case without bragging, and a concrete ask gives them something to say yes to.", bundle: 'free' },
+        { q: "What are the three kinds of ask?", a: "A conversation, a yes or no, and a path.", bundle: 'free' },
+        { q: "When does Ask for What You Want go wrong?", a: "When it is a hint, a feeling instead of facts, or a comparison with a named colleague.", bundle: 'pro' },
+        { q: "What is Ask for What You Want better than, and why?", a: "Waiting for them to offer. Most good work goes unseen until someone names it.", bundle: 'pro' },
+        { q: "What do you ask when the answer is \"not yet\"?", a: "For a path: \"What would I need to show to get there by next year?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Keep Them Informed** — news, a warning, or a decision: headline, bad news early, or a choice?\n• **Speak Up for Yourself** — their decision, your future, or your time: disagree, ask, or let them choose?\n• **All Five Strategies** — everything mixed, with no warning about what the week brings\n\nOne question decides nearly all of it: what does my manager need to do next?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Keep Them Informed, Speak Up for Yourself, and All Five Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Keep Them Informed?", a: "What do they need from me right now — news, a warning, or a decision?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Keep Them Informed?", a: "The long update that hides the problem in the middle.", bundle: 'pro' },
+        { q: "Something has just gone wrong and your manager does not know. Which strategy?", a: "Bad News Early.", bundle: 'pro' },
+        { q: "What is the question that decides Speak Up for Yourself?", a: "Is this about their decision, my future, or my time?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Speak Up for Yourself?", a: "Saying nothing and complaining later.", bundle: 'pro' },
+        { q: "They are asking for more than you can do. Which strategy?", a: "Ask Them to Choose.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in All Five Strategies?", a: "Waiting for a better moment.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Own It Early** — Bad News Early → Bottom Line First → Ask Them to Choose\n2. **The Real Ask** — Ask for What You Want → Ask Them to Choose → Disagree, Then Commit\n3. **Speak Once, Then Deliver** — Bottom Line First → Disagree, Then Commit → Ask Them to Choose\n\nIn each one, the manager makes the final call, and your last step makes that call easier.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Own It Early, The Real Ask, and Speak Once, Then Deliver.", bundle: 'pro' },
+        { q: "What is the order in Own It Early?", a: "Bad News Early, Bottom Line First, Ask Them to Choose.", bundle: 'pro' },
+        { q: "Why does a headline follow the bad news in Own It Early?", a: "When they get irritated, a short headline calms things faster than a long explanation.", bundle: 'pro' },
+        { q: "What is the order in The Real Ask?", a: "Ask for What You Want, Ask Them to Choose, Disagree, Then Commit.", bundle: 'pro' },
+        { q: "Why does The Real Ask go on after \"not now\"?", a: "\"Not now\" is not a no. A choice keeps the door open.", bundle: 'pro' },
+        { q: "What is the order in Speak Once, Then Deliver?", a: "Bottom Line First, Disagree, Then Commit, Ask Them to Choose.", bundle: 'pro' },
+        { q: "Why does the concern come before the work in Speak Once, Then Deliver?", a: "It can still change something then. Afterwards, asking what to drop is planning, not resistance.", bundle: 'pro' },
+        { q: "What do people usually do instead?", a: "Apologise at length, drop it after \"not now\", or say yes in the meeting and complain afterwards.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack, and what goes wrong in each:\n\n• **Just Give Me the Short Version** — the story told in order, headline last\n• **Too Much on Your Plate** — yes to everything, then something quietly missed\n• **A Decision You Think Is Wrong** — silence, then complaining, or the same fight every week\n• **You Messed Up** — waiting until it is fixed\n• **The Raise** — hinting, or feelings instead of facts\n\nEach one has a main strategy, and two that help.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Just Give Me the Short Version, Too Much on Your Plate, A Decision You Think Is Wrong, You Messed Up, and The Raise.", bundle: 'pro' },
+        { q: "What is the main strategy for Just Give Me the Short Version?", a: "Bottom Line First.", bundle: 'pro' },
+        { q: "What should you avoid in Just Give Me the Short Version?", a: "Starting with \"So, on Monday…\".", bundle: 'pro' },
+        { q: "What is the main strategy for Too Much on Your Plate, and what should you avoid?", a: "Ask Them to Choose — and avoid \"I'll try\" when you know you can't.", bundle: 'pro' },
+        { q: "What is the main strategy for A Decision You Think Is Wrong?", a: "Disagree, Then Commit.", bundle: 'pro' },
+        { q: "What should you avoid after you have committed?", a: "Bringing it up again.", bundle: 'pro' },
+        { q: "What should you avoid when you have messed up?", a: "Blaming someone else first.", bundle: 'pro' },
+        { q: "What should you avoid in The Raise?", a: "Comparing yourself with a named colleague.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Limits** — a good employee never says no\n• **Bad News** — bad news can wait until I've fixed it\n• **Loyalty** — disagreeing with my manager is disloyal\n• **Recognition** — if I deserved a raise, they would offer it\n\nEach one keeps your manager from hearing something they need to know.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Limits, Bad News, Loyalty, and Recognition.", bundle: 'pro' },
+        { q: "What does \"a good employee never says no\" quietly cost?", a: "Late nights, missed deadlines without warning, and a manager who never learns how full your week is.", bundle: 'pro' },
+        { q: "What part of \"bad news can wait until I've fixed it\" is true?", a: "Bringing a plan, and fixing it yourself, are both good.", bundle: 'pro' },
+        { q: "What part of it is added?", a: "\"Before I tell them.\"", bundle: 'pro' },
+        { q: "What is true instead of \"disagreeing is disloyal\"?", a: "Saying a real concern once, in time, is one of the most loyal things you can do.", bundle: 'pro' },
+        { q: "What often happens when people do not disagree out loud?", a: "They complain where the manager cannot hear it.", bundle: 'pro' },
+        { q: "What is true instead of \"if I deserved a raise, they would offer it\"?", a: "Most good work goes unnoticed until someone names it. Asking is how they find out.", bundle: 'pro' },
+        { q: "What do all four mindsets have in common?", a: "Each one keeps your manager from hearing something they need to know.", bundle: 'pro' },
+      ]
+    },
+  ],
+  newatwork: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for your first weeks in a new job, when you are allowed to ask about everything:\n\n1. The Work Intro\n2. Ask What Good Looks Like\n3. Show What You Tried\n4. Ask How Things Work Here\n5. Coffee With a Colleague\n6. Ask for Feedback Early\n\nThree for the work, three for the people and the place.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "The Work Intro, Ask What Good Looks Like, Show What You Tried, Ask How Things Work Here, Coffee With a Colleague, and Ask for Feedback Early.", bundle: 'free' },
+        { q: "What is the stance of this pack?", a: "In your first weeks, you are allowed to ask about everything — so use it.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Three are about the work: what good looks like, what you tried, and feedback. Three are about the people and the place: the intro, the unwritten rules, and a coffee.", bundle: 'free' },
+        { q: "Why do the first weeks matter so much?", a: "Questions cost least then. The same question in month six sounds strange.", bundle: 'free' },
+        { q: "Which book does the pack draw on?", a: "Michael D. Watkins, The First 90 Days, together with common advice for starting a new job.", bundle: 'free' },
+        { q: "What is the most common mistake in a new job?", a: "Staying quiet and guessing, so as not to look new.", bundle: 'pro' },
+        { q: "How is this pack different from Receiving Feedback?", a: "Receiving Feedback is about taking feedback well. Here you ask for it, as a new person.", bundle: 'pro' },
+        { q: "How is this pack different from Asking for Clarity?", a: "Asking for Clarity is about understanding what someone just said. Here you ask about the job and the place.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Work Intro",
+      description: "",
+      cards: [
+        { q: "What are the four parts of The Work Intro?", a: "Your name, your role, one small thing about you, and a question about them.", bundle: 'free' },
+        { q: "How does The Work Intro sound?", a: "\"Hi, I'm Omar. I've just started in accounts. I hear you're the one who knows the old system?\"", bundle: 'free' },
+        { q: "Why does The Work Intro end with a question?", a: "It shows you are easy to talk to, and it hands the conversation to them.", bundle: 'free' },
+        { q: "What three things do colleagues want to know about a newcomer?", a: "Who you are, where you fit, and whether you are easy to talk to.", bundle: 'free' },
+        { q: "What are the three ways to end the intro?", a: "Ask about their job, ask about something you have heard, or ask about the place.", bundle: 'free' },
+        { q: "What is The Work Intro not?", a: "A speech — or waiting to be introduced.", bundle: 'pro' },
+        { q: "What if you have walked past someone for days without a word?", a: "Say it lightly and introduce yourself now: \"We keep passing each other — I'm Daniel.\"", bundle: 'pro' },
+        { q: "What is true when the intro feels awkward?", a: "Nobody is waiting for you to be impressive. They are waiting to learn your name.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What Good Looks Like",
+      description: "",
+      cards: [
+        { q: "What is Ask What Good Looks Like?", a: "Asking your manager, early and plainly, what doing the job well would look like.", bundle: 'free' },
+        { q: "How does Ask What Good Looks Like sound?", a: "\"What would a good first three months look like for you?\"", bundle: 'free' },
+        { q: "Where does the idea come from?", a: "Michael D. Watkins, The First 90 Days: agree on expectations with your manager early, instead of guessing.", bundle: 'free' },
+        { q: "Why is \"Is there anything I should know?\" a weak question?", a: "It gets a shrug. Ask for something they can picture.", bundle: 'free' },
+        { q: "What are the three versions of the question?", a: "The time frame, the priority, and the opposite — what can wait until later.", bundle: 'free' },
+        { q: "What goes wrong without it?", a: "You work hard at the wrong thing, because nobody said what the right thing was.", bundle: 'pro' },
+        { q: "What does the answer give you besides a goal?", a: "A fair way to judge yourself, instead of going on your nerves.", bundle: 'pro' },
+        { q: "What do you ask if you are told to \"just settle in\"?", a: "What \"settled\" would look like to them by a set time.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Show What You Tried",
+      description: "",
+      cards: [
+        { q: "What is Show What You Tried?", a: "Saying what you have already done, and then asking your question.", bundle: 'free' },
+        { q: "How does Show What You Tried sound?", a: "\"I checked the manual and tried restarting it. Am I missing a step?\"", bundle: 'free' },
+        { q: "Why does Show What You Tried work?", a: "The first sentence makes the same question sound capable rather than helpless, and shows them where the problem is.", bundle: 'free' },
+        { q: "How long should the \"what I tried\" part be?", a: "One sentence — enough for them to see where you are, not a report on your morning.", bundle: 'free' },
+        { q: "What are the three kinds of \"what I tried\"?", a: "What you looked at, what you did, and who you asked.", bundle: 'free' },
+        { q: "What does \"How does this work?\" ask of the other person?", a: "To start from zero.", bundle: 'pro' },
+        { q: "How does it help with a question you have asked before?", a: "You say what you remember and where it stops, so the repeat question sounds like progress.", bundle: 'pro' },
+        { q: "How does it help after a mistake?", a: "You say what happened and what you have already done about it, and then you ask.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask How Things Work Here",
+      description: "",
+      cards: [
+        { q: "What is Ask How Things Work Here?", a: "Asking about the unwritten rules: who to ask, what people really do, and what matters more than it looks.", bundle: 'free' },
+        { q: "How does Ask How Things Work Here sound?", a: "\"Is there anything people do here that a newcomer wouldn't know?\"", bundle: 'free' },
+        { q: "What are the two sets of rules in every workplace?", a: "The written ones in the handbook, and the unwritten ones you learn by getting them wrong — unless you ask.", bundle: 'free' },
+        { q: "When is the best moment to ask?", a: "Early. In week one it sounds curious; in month six it sounds strange.", bundle: 'free' },
+        { q: "What three things are worth asking about?", a: "Habits, people, and the mistakes new people usually make.", bundle: 'free' },
+        { q: "How does a newcomer who asks look, compared with one who guesses wrong?", a: "The one who asks looks careful. The one who guesses wrong looks rude, even though nobody told them.", bundle: 'pro' },
+        { q: "What is a good question about mistakes?", a: "\"What's the thing new people usually get wrong here?\"", bundle: 'pro' },
+        { q: "What does asking about local habits show?", a: "Respect for the place, not ignorance.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Coffee With a Colleague",
+      description: "",
+      cards: [
+        { q: "What is Coffee With a Colleague?", a: "Asking a colleague for a short, easy chat about their part of the work.", bundle: 'free' },
+        { q: "How does Coffee With a Colleague sound?", a: "\"Could I buy you a coffee one day? I'd like to understand what your team does.\"", bundle: 'free' },
+        { q: "What does Watkins say about relationships in a new job?", a: "They matter as much as tasks, and are best built early, before you need them.", bundle: 'free' },
+        { q: "Why give a reason with the invitation?", a: "Without one it can sound odd. With one it sounds like a new person doing the job well.", bundle: 'free' },
+        { q: "What are the three good reasons to give?", a: "Their part of the work, their experience, and working together.", bundle: 'free' },
+        { q: "Why keep it short?", a: "Ten minutes or one coffee is easy to say yes to.", bundle: 'pro' },
+        { q: "When does the invitation make most sense?", a: "After you have talked at least once. From a stranger, it is strange.", bundle: 'pro' },
+        { q: "What is true when it feels like taking their time?", a: "You are giving them the chance to help you start well.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for Feedback Early",
+      description: "",
+      cards: [
+        { q: "What is Ask for Feedback Early?", a: "Asking for feedback in your first weeks, and asking for one concrete thing.", bundle: 'free' },
+        { q: "How does Ask for Feedback Early sound?", a: "\"I'm three weeks in. What's one thing I could do better?\"", bundle: 'free' },
+        { q: "Why ask early?", a: "A habit slightly wrong in week three is a five-second comment. In month six it is a difficult conversation.", bundle: 'free' },
+        { q: "Why ask for one thing, not \"any feedback\"?", a: "\"Any feedback?\" gets \"you're doing great\". One thing gets an answer.", bundle: 'free' },
+        { q: "What are the three moments to ask?", a: "After a first, at a set point, and after a small mistake.", bundle: 'free' },
+        { q: "What does asking early tell your manager?", a: "That you want to know.", bundle: 'pro' },
+        { q: "What if they just say \"you're doing great\"?", a: "Thank them, and ask for one small thing you could still do better.", bundle: 'pro' },
+        { q: "How is this different from the pack Receiving Feedback?", a: "That pack is about taking feedback well. This strategy is about asking for it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Meet the Team** — the people and the place: introduce yourself, ask how things work, or invite someone for a coffee?\n• **Learn the Job** — the work: ask what good looks like, show what you tried, or ask for feedback?\n• **All Six Strategies** — everything mixed, in the order the first weeks bring it\n\nOne question sorts most of it: is the gap about the people, or about the work?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Meet the Team, Learn the Job, and All Six Strategies.", bundle: 'pro' },
+        { q: "What decides Meet the Team?", a: "How well you already know the person.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Meet the Team?", a: "Skipping the intro and going straight to questions, so people help you without learning your name.", bundle: 'pro' },
+        { q: "What decides Learn the Job?", a: "Whether you are before, in the middle of, or after the task.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Learn the Job?", a: "Asking for feedback before you know what was expected.", bundle: 'pro' },
+        { q: "You are in the middle of a task and stuck. Which strategy?", a: "Show What You Tried.", bundle: 'pro' },
+        { q: "You have never spoken to this colleague. Which strategy?", a: "The Work Intro.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in All Six Strategies?", a: "None of them — staying quiet and guessing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The First Week** — The Work Intro → Ask How Things Work Here → Coffee With a Colleague\n2. **The First Check-In** — Ask What Good Looks Like → Show What You Tried → Ask for Feedback Early\n3. **Try, Ask, Connect** — Show What You Tried → Ask How Things Work Here → Coffee With a Colleague\n\nIn all three, each step earns the next one.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The First Week, The First Check-In, and Try, Ask, Connect.", bundle: 'pro' },
+        { q: "What is the order in The First Week?", a: "The Work Intro, Ask How Things Work Here, Coffee With a Colleague.", bundle: 'pro' },
+        { q: "Why does the intro come first in The First Week?", a: "It makes you a person rather than \"the new one\", so the next question sounds friendly.", bundle: 'pro' },
+        { q: "What is the order in The First Check-In?", a: "Ask What Good Looks Like, Show What You Tried, Ask for Feedback Early.", bundle: 'pro' },
+        { q: "Why ask what good looks like before asking for feedback?", a: "The goal gives the feedback something to point at.", bundle: 'pro' },
+        { q: "What do people do instead of The First Check-In?", a: "Say \"everything's fine\" and nothing else, which wastes the meeting.", bundle: 'pro' },
+        { q: "What is the order in Try, Ask, Connect?", a: "Show What You Tried, Ask How Things Work Here, Coffee With a Colleague.", bundle: 'pro' },
+        { q: "Why does the coffee come last in Try, Ask, Connect?", a: "By then you have a real reason — they have already helped you.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack, and what goes wrong in each:\n\n• **Everyone Knows Each Other** — waiting to be let in\n• **You Asked Twice Already** — guessing rather than asking a third time\n• **Nobody Explained It** — deciding you should have known\n• **The Lunch Table** — eating alone with your phone\n• **Your First Mistake** — hiding it, or apologising too much\n\nIn every one, the quiet option feels safest and costs the most.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Everyone Knows Each Other, You Asked Twice Already, Nobody Explained It, The Lunch Table, and Your First Mistake.", bundle: 'pro' },
+        { q: "What goes wrong in Everyone Knows Each Other?", a: "Waiting to be let in. Nobody is keeping you out; they just have not noticed.", bundle: 'pro' },
+        { q: "How do you ask a third time in You Asked Twice Already?", a: "With Show What You Tried — say what you remember and where it stops.", bundle: 'pro' },
+        { q: "Which strategies fit Nobody Explained It?", a: "Ask What Good Looks Like, Ask How Things Work Here, and Show What You Tried.", bundle: 'pro' },
+        { q: "What should you avoid in Nobody Explained It?", a: "Complaining that nobody told you. Ask instead.", bundle: 'pro' },
+        { q: "What goes wrong at The Lunch Table?", a: "The phone. It feels safe, and every day it makes joining a table harder.", bundle: 'pro' },
+        { q: "What should you avoid after Your First Mistake?", a: "Hiding it, or the long apology. One sorry is enough.", bundle: 'pro' },
+        { q: "What do all five challenges have in common?", a: "The quiet option feels safest and costs the most.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Questions** — asking makes me look incompetent\n• **Not Knowing** — I should already know this\n• **Proving Yourself** — I have to prove myself before I speak up\n• **Busy Colleagues** — they are too busy for me\n\nAll four make silence feel like the safe choice for a new person.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Questions, Not Knowing, Proving Yourself, and Busy Colleagues.", bundle: 'pro' },
+        { q: "What is true instead of \"asking questions makes me look incompetent\"?", a: "In your first weeks, questions are expected, and a good one shows you are thinking.", bundle: 'pro' },
+        { q: "What part of \"I should already know this\" is true, and what gets added?", a: "Some things you could have looked up. What gets added is \"so I can't ask now\".", bundle: 'pro' },
+        { q: "Why does \"prove myself first\" feel right?", a: "It feels like modesty and hard work, and nobody likes a new person who knows everything.", bundle: 'pro' },
+        { q: "What does \"prove myself first\" quietly cost?", a: "Nobody knows what you need, you aim at the wrong target, and the habit of silence sets.", bundle: 'pro' },
+        { q: "What is true instead of \"they're too busy for me\"?", a: "Most people like helping a new colleague, and a short, clear ask takes very little time.", bundle: 'pro' },
+        { q: "When does speaking up cost least?", a: "In the first weeks. Waiting makes it harder, not easier.", bundle: 'pro' },
+        { q: "What do all four mindsets have in common?", a: "They make silence feel like the safe choice for a new person.", bundle: 'pro' },
+      ]
+    },
+  ],
+  emotionalcalibration1: [
+    {
+      name: "Core Idea",
+      description: "Five strategies for the moment someone's feeling shifts in the middle of a conversation:\n\n1. Spot the Shift\n2. Name the Nuance\n3. Ask How It Landed\n4. Read What They Need\n5. Leave the Door Open\n\nNotice it, guess the feeling, check your part, ask what helps, or step back.",
+      cards: [
+        { q: "What are the five strategies in this pack?", a: "Spot the Shift, Name the Nuance, Ask How It Landed, Read What They Need, Leave the Door Open.", bundle: 'free' },
+        { q: "How do the five fit together?", a: "Spot the Shift notices, Name the Nuance guesses, Ask How It Landed checks your part, Read What They Need asks what helps, and Leave the Door Open steps back.", bundle: 'free' },
+        { q: "What is a shift?", a: "A moment when the other person's feeling changes mid-conversation, often right after something you said: a short \"fine\", a quick topic change, a laugh that stops.", bundle: 'free' },
+        { q: "What do all five have in common?", a: "They say gently that something changed, instead of pretending you did not see it.", bundle: 'free' },
+        { q: "Why are the lines in this pack guesses, not verdicts?", a: "You cannot know what someone feels. \"Is that close?\" leaves them free to correct you.", bundle: 'free' },
+        { q: "Which strategy makes no guess at all?", a: "Spot the Shift. It says only what you saw or heard.", bundle: 'pro' },
+        { q: "Which strategy is about your words rather than their feeling?", a: "Ask How It Landed.", bundle: 'pro' },
+        { q: "What comes after this pack in the series?", a: "Pt. 2, Changing Course, for when the conversation needs a new direction, and Pt. 3, Meeting the Feeling, for when the feeling is out in the open.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Spot the Shift",
+      description: "",
+      cards: [
+        { q: "What is Spot the Shift?", a: "Saying only what you saw or heard change, with no reading of what it means.", bundle: 'free' },
+        { q: "How does Spot the Shift sound?", a: "\"You went quiet when I mentioned the new job.\"", bundle: 'free' },
+        { q: "When is Spot the Shift the right one?", a: "When the signal is small and you do not know what it means.", bundle: 'free' },
+        { q: "What does Spot the Shift leave the other person to do?", a: "Explain it, wave it off, or say what is going on. They cannot argue with what happened.", bundle: 'free' },
+        { q: "What are the three things Spot the Shift can point at?", a: "The words, the body, and the timing.", bundle: 'free' },
+        { q: "When does Spot the Shift go wrong?", a: "When a reading slips in — \"you're annoyed\" — instead of what a camera would have caught.", bundle: 'pro' },
+        { q: "How is Spot the Shift different from Name the Nuance?", a: "Spot the Shift says what changed. Name the Nuance guesses what they feel.", bundle: 'pro' },
+        { q: "What often follows Spot the Shift?", a: "Leave the Door Open if they say it's nothing, or Name the Nuance if they say a little more.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name the Nuance",
+      description: "",
+      cards: [
+        { q: "What is Name the Nuance?", a: "A careful, precise guess at the feeling, checked with them.", bundle: 'free' },
+        { q: "How does Name the Nuance sound?", a: "\"You sound more let down than angry. Is that close?\"", bundle: 'free' },
+        { q: "When is Name the Nuance the right one?", a: "When you have a fair guess at the exact feeling, and the signal is not strong enough for them to have named it.", bundle: 'free' },
+        { q: "What does Name the Nuance leave the other person to do?", a: "Agree, or correct the word. Either way, they are now talking about the feeling.", bundle: 'free' },
+        { q: "What are the three ways to guess?", a: "One word and a check, this not that, and tied to the moment.", bundle: 'free' },
+        { q: "When does Name the Nuance go wrong?", a: "When it is said as a verdict — \"you're jealous\" — or when the word is too vague, like \"upset\".", bundle: 'pro' },
+        { q: "How is Name the Nuance different from Spot the Shift?", a: "Spot the Shift makes no guess. Name the Nuance puts a precise word on the feeling.", bundle: 'pro' },
+        { q: "What often follows Name the Nuance?", a: "Read What They Need. Once the feeling is named, ask what would help.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask How It Landed",
+      description: "",
+      cards: [
+        { q: "What is Ask How It Landed?", a: "Asking how what you just said or did came across to them.", bundle: 'free' },
+        { q: "How does Ask How It Landed sound?", a: "\"How did that land with you?\"", bundle: 'free' },
+        { q: "When is Ask How It Landed the right one?", a: "When the shift came right after your own words.", bundle: 'free' },
+        { q: "What does Ask How It Landed leave the other person to do?", a: "Tell you, in their own words, how it was to hear.", bundle: 'free' },
+        { q: "What are the three ways to ask?", a: "The open check, name what you said, and own the delivery first.", bundle: 'free' },
+        { q: "When does Ask How It Landed go wrong?", a: "When it becomes a closed question like \"Did I upset you?\", which invites a quick \"no\", or when you defend yourself after they answer.", bundle: 'pro' },
+        { q: "How is Ask How It Landed different from Name the Nuance?", a: "Ask How It Landed asks about your words. Name the Nuance guesses their feeling.", bundle: 'pro' },
+        { q: "What often follows Ask How It Landed?", a: "Name the Nuance, once they have told you how it landed.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Read What They Need",
+      description: "",
+      cards: [
+        { q: "What is Read What They Need?", a: "Asking what kind of conversation they want right now: help to fix it, someone to listen, or a break.", bundle: 'free' },
+        { q: "How does Read What They Need sound?", a: "\"Do you want ideas, or do you just want me to listen?\"", bundle: 'free' },
+        { q: "When is Read What They Need the right one?", a: "When something has shifted and they are willing to talk, but you do not know what would help.", bundle: 'free' },
+        { q: "What does Read What They Need leave the other person to do?", a: "Choose the kind of help they want, instead of getting the kind you guessed.", bundle: 'free' },
+        { q: "What are the three choices to offer?", a: "Fix or listen, now or later, and a practical offer.", bundle: 'free' },
+        { q: "When does Read What They Need go wrong?", a: "When one of the options is not meant, or when you ignore their answer and give advice anyway.", bundle: 'pro' },
+        { q: "How is Read What They Need different from Leave the Door Open?", a: "Read What They Need asks which kind of talk they want. Leave the Door Open steps back when they want none.", bundle: 'pro' },
+        { q: "Which three kinds of conversation does Supercommunicators describe?", a: "Practical, emotional and social. Trouble starts when two people are having different kinds.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Leave the Door Open",
+      description: "",
+      cards: [
+        { q: "What is Leave the Door Open?", a: "Not pushing when they do not want to talk, and saying clearly that you are open whenever they are.", bundle: 'free' },
+        { q: "How does Leave the Door Open sound?", a: "\"No need to talk about it now. If I said something wrong, I'd want to know.\"", bundle: 'free' },
+        { q: "When is Leave the Door Open the right one?", a: "When they say \"it's nothing\", \"leave it\" or \"not now\".", bundle: 'free' },
+        { q: "What does Leave the Door Open leave the other person to do?", a: "Come back when they are ready, on their own terms.", bundle: 'free' },
+        { q: "What are the three ways to leave it open?", a: "The open offer, own your part, and a light next step.", bundle: 'free' },
+        { q: "When does Leave the Door Open go wrong?", a: "When you keep knocking — \"Are you sure?\" — or when the offer sounds hurt instead of warm.", bundle: 'pro' },
+        { q: "How is Leave the Door Open different from saying nothing?", a: "Saying nothing leaves them unsure you noticed. Leave the Door Open shows you saw it and are ready to hear it.", bundle: 'pro' },
+        { q: "What usually comes just before Leave the Door Open?", a: "Spot the Shift, and a \"no, it's nothing\".", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Read the Signal** — what you saw, a guess at the feeling, or a question about your words\n• **Follow Their Lead** — what to do after nothing, something, or \"not now\"\n• **All Five Strategies** — everything mixed, with no warning about what kind of shift comes next\n\nOne question runs through all three: what do I actually know, and what have they just told me?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Read the Signal, Follow Their Lead, and All Five Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Read the Signal?", a: "What do I actually know — only that something changed, what they might feel, or that it was something I said?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Read the Signal?", a: "Guessing a feeling on thin evidence. One short answer is not enough for \"you seem hurt\".", bundle: 'pro' },
+        { q: "The signal is small and you have no idea what it means. Which strategy?", a: "Spot the Shift.", bundle: 'pro' },
+        { q: "What is the question that decides Follow Their Lead?", a: "What did they just tell me — nothing yet, something, or \"not now\"?", bundle: 'pro' },
+        { q: "They have just said, \"Leave it.\" Which strategy?", a: "Leave the Door Open.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Follow Their Lead?", a: "Asking more after they have said \"leave it\".", bundle: 'pro' },
+        { q: "If you are unsure in All Five Strategies, where do you start?", a: "With what you saw, going one step further only when they give you more.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Open Door** — Spot the Shift → Leave the Door Open\n2. **The Full Read** — Spot the Shift → Name the Nuance → Read What They Need\n3. **Ask, Then Name** — Ask How It Landed → Name the Nuance\n\nEach step waits for their answer before the next one.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Open Door, The Full Read, and Ask, Then Name.", bundle: 'pro' },
+        { q: "What is the order in The Open Door?", a: "Spot the Shift, then Leave the Door Open.", bundle: 'pro' },
+        { q: "What does the other person say between the two steps of The Open Door?", a: "That it's nothing.", bundle: 'pro' },
+        { q: "What is the order in The Full Read?", a: "Spot the Shift, Name the Nuance, Read What They Need.", bundle: 'pro' },
+        { q: "Why does the feeling come before the offer in The Full Read?", a: "Offer help before you know the feeling, and you may fix the wrong thing.", bundle: 'pro' },
+        { q: "What is the order in Ask, Then Name?", a: "Ask How It Landed, then Name the Nuance.", bundle: 'pro' },
+        { q: "Why does the question come before the guess in Ask, Then Name?", a: "Their own words give your guess something real to stand on.", bundle: 'pro' },
+        { q: "What is the usual mistake in all three?", a: "Skipping a step: from \"you've gone quiet\" straight to advice, or from a guess straight to an apology.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **It's Fine** — the word says okay, and the tone does not\n• **Laughing It Off** — a laugh that covers a feeling\n• **The Sudden Topic Change** — the speed is the signal\n• **In Front of Others** — the shift happens with an audience\n• **Over Text** — no face, no voice, only a short reply\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "It's Fine, Laughing It Off, The Sudden Topic Change, In Front of Others, and Over Text.", bundle: 'pro' },
+        { q: "What goes wrong with It's Fine?", a: "You take the word at face value, or argue with it: \"You're obviously not fine.\"", bundle: 'pro' },
+        { q: "What should you avoid with Laughing It Off?", a: "Another joke on top.", bundle: 'pro' },
+        { q: "What is the signal in The Sudden Topic Change?", a: "Not the new topic, but how fast they moved to it.", bundle: 'pro' },
+        { q: "What should you never say in The Sudden Topic Change?", a: "\"Don't change the subject.\"", bundle: 'pro' },
+        { q: "Where do you talk about a shift that happened In Front of Others?", a: "Afterwards, alone, or with a quiet word only they can hear.", bundle: 'pro' },
+        { q: "Which strategy works especially well Over Text, and why?", a: "Spot the Shift. What changed is right there on the screen.", bundle: 'pro' },
+        { q: "What should you avoid Over Text?", a: "A long message about how they seem, or three worried messages in a row.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Waiting to Be Told** — if they had a problem, they'd say so\n• **Awkwardness** — pointing it out will make it awkward\n• **Mind-Reading** — I should be able to read people without asking\n• **Other People's Moods** — their moods aren't my job\n\nEach one keeps you quiet at the moment a gentle sentence would help most.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Waiting to Be Told, Awkwardness, Mind-Reading, and Other People's Moods.", bundle: 'pro' },
+        { q: "What is true instead of \"if they had a problem, they'd say so\"?", a: "Most people show a feeling long before they say it. The short answer is the showing.", bundle: 'pro' },
+        { q: "What does waiting to be told cost?", a: "The easy moment. The feeling comes out later, bigger, about something else.", bundle: 'pro' },
+        { q: "What is true instead of \"pointing it out will make it awkward\"?", a: "It is already a little awkward. One gentle sentence usually makes it easier.", bundle: 'pro' },
+        { q: "What is true about \"I should be able to read people\"?", a: "You can notice a lot. What gets added is \"so I should know what it means without asking\".", bundle: 'pro' },
+        { q: "What is the difference between seeing a shift and knowing the feeling?", a: "You can see that something changed. Which feeling it is, you have to check.", bundle: 'pro' },
+        { q: "What does \"other people's moods aren't my job\" quietly cost?", a: "The people closest to you handle their feelings alone, and you miss it when your words hurt.", bundle: 'pro' },
+        { q: "What do these four mindsets have in common?", a: "Each one keeps you quiet at the moment a gentle sentence would help most.", bundle: 'pro' },
+      ]
+    },
+  ],
+  emotionalcalibration2: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for changing course when a talk has gone wrong:\n\n1. Pause the Point\n2. Talk About the Talk\n3. Say What You Don't Mean\n4. Slow It Down\n5. Turn to Care\n6. Ask Instead of Argue\n\nThree change how you talk; three reach the person.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Pause the Point, Talk About the Talk, Say What You Don't Mean, Slow It Down, Turn to Care, Ask Instead of Argue.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Pause the Point, Slow It Down and Talk About the Talk change how you are talking. Say What You Don't Mean, Turn to Care and Ask Instead of Argue reach the other person.", bundle: 'free' },
+        { q: "What does it mean to change course?", a: "To stop driving your point when the conversation has gone the wrong way, and turn it somewhere better.", bundle: 'free' },
+        { q: "Does changing course mean giving up your view?", a: "No. Every strategy keeps your view. Only Turn to Care says the relationship matters more than the point.", bundle: 'free' },
+        { q: "What are the signs that a talk is going the wrong way?", a: "Going in circles, the other person getting hurt or going silent, voices rising, you wanting to win, or a practical talk turning emotional.", bundle: 'free' },
+        { q: "How is this pack different from Pt. 1?", a: "Pt. 1 notices that something has shifted. Pt. 2 changes the direction of the talk once it has.", bundle: 'pro' },
+        { q: "How is this pack different from Pt. 3?", a: "Pt. 3 meets the feeling once it is on the table. Pt. 2 gets the conversation out of the wrong track first.", bundle: 'pro' },
+        { q: "Which source do most of these strategies come from?", a: "Crucial Conversations by Kerry Patterson and colleagues, with ideas from Charles Duhigg's Supercommunicators and John Gottman.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Pause the Point",
+      description: "",
+      cards: [
+        { q: "What is Pause the Point?", a: "Saying out loud that you are going to stop pushing your side, for now.", bundle: 'free' },
+        { q: "How does Pause the Point sound?", a: "\"Let me stop pushing my point for a minute.\"", bundle: 'free' },
+        { q: "When is Pause the Point the right one?", a: "When you notice you are the one pushing, and nobody is listening any more.", bundle: 'free' },
+        { q: "What does Pause the Point do to the conversation?", a: "It takes away the thing they have to push against, so the talk can turn.", bundle: 'free' },
+        { q: "What are the three ways to say it?", a: "The plain stop, naming what you are putting down, and stopping while pointing at what comes next.", bundle: 'free' },
+        { q: "When does Pause the Point go wrong?", a: "When the stop is silent and looks like sulking, or when it is followed straight away by \"but…\" and the same point.", bundle: 'pro' },
+        { q: "How is Pause the Point different from Slow It Down?", a: "Pause the Point puts your argument down. Slow It Down keeps the argument but changes the speed.", bundle: 'pro' },
+        { q: "Which sequences use Pause the Point?", a: "Slow, Stop, Ask, where it is the middle step, and Back to Us, where it comes first.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Talk About the Talk",
+      description: "",
+      cards: [
+        { q: "What is Talk About the Talk?", a: "Stepping out of the topic and talking about how the conversation is going.", bundle: 'free' },
+        { q: "How does Talk About the Talk sound?", a: "\"We keep going round in circles. Can we look at how this is going?\"", bundle: 'free' },
+        { q: "When is Talk About the Talk the right one?", a: "When you are stuck in a pattern: the same lines, the same roles, the same ending.", bundle: 'free' },
+        { q: "What does Talk About the Talk do to the conversation?", a: "It gives you both a place to stand outside the pattern, instead of running it again.", bundle: 'free' },
+        { q: "What are the three things to talk about?", a: "The circle, the roles, and the drift.", bundle: 'free' },
+        { q: "When does Talk About the Talk go wrong?", a: "When it describes the person instead of the pattern — \"you never listen\" — and becomes one more point.", bundle: 'pro' },
+        { q: "How is Talk About the Talk different from Pause the Point?", a: "Pause the Point stops your side. Talk About the Talk names what you are both doing.", bundle: 'pro' },
+        { q: "Which sequence starts with Talk About the Talk?", a: "Step Out, Clear It Up.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say What You Don't Mean",
+      description: "",
+      cards: [
+        { q: "What is Say What You Don't Mean?", a: "Saying first what you do not mean, then what you do mean, when they have heard something you never said.", bundle: 'free' },
+        { q: "How does Say What You Don't Mean sound?", a: "\"I'm not saying you're careless. I'm saying this deadline worries me.\"", bundle: 'free' },
+        { q: "When is Say What You Don't Mean the right one?", a: "When they have heard an insult in your point — \"so you think I'm stupid\".", bundle: 'free' },
+        { q: "What does Say What You Don't Mean do to the conversation?", a: "It takes away their fear, and puts your real point back on the table.", bundle: 'free' },
+        { q: "What are the two parts, in order?", a: "What you don't mean, then what you do mean.", bundle: 'free' },
+        { q: "When does Say What You Don't Mean go wrong?", a: "When the first part is not true, or when it turns into an apology instead of saying what you meant.", bundle: 'pro' },
+        { q: "How is Say What You Don't Mean different from an apology?", a: "An apology says you were wrong. Say What You Don't Mean says what you meant.", bundle: 'pro' },
+        { q: "Which sequence uses Say What You Don't Mean?", a: "Step Out, Clear It Up, where it answers the hurt that naming the circle brings out.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Slow It Down",
+      description: "",
+      cards: [
+        { q: "What is Slow It Down?", a: "Saying out loud that you want to slow the conversation down, and then doing it.", bundle: 'free' },
+        { q: "How does Slow It Down sound?", a: "\"Let's slow down. I want to get this right.\"", bundle: 'free' },
+        { q: "When is Slow It Down the right one?", a: "When voices are rising and you are both answering before the other has finished.", bundle: 'free' },
+        { q: "What does Slow It Down do to the conversation?", a: "It lets both of you breathe and listen, without anyone backing down.", bundle: 'free' },
+        { q: "What are the three ways to slow it?", a: "The plain call, the call with a reason, and the call with a practical step.", bundle: 'free' },
+        { q: "When does Slow It Down go wrong?", a: "When your own voice stays fast, so the words sound like a telling-off.", bundle: 'pro' },
+        { q: "How is Slow It Down different from Talk About the Talk?", a: "Slow It Down changes the speed. Talk About the Talk names the pattern.", bundle: 'pro' },
+        { q: "Which sequence starts with Slow It Down?", a: "Slow, Stop, Ask.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Turn to Care",
+      description: "",
+      cards: [
+        { q: "What is Turn to Care?", a: "Saying plainly that the person, or what you have together, matters more than the point.", bundle: 'free' },
+        { q: "How does Turn to Care sound?", a: "\"I care more about us than about being right here.\"", bundle: 'free' },
+        { q: "When is Turn to Care the right one?", a: "When they feel you would rather win than keep them.", bundle: 'free' },
+        { q: "What does Turn to Care do to the conversation?", a: "It takes away the fear that you would choose the point over them, so they can stop defending themselves.", bundle: 'free' },
+        { q: "What are the three things to put first?", a: "Us, them, and working together.", bundle: 'free' },
+        { q: "When does Turn to Care go wrong?", a: "When it is not meant, or when a \"but\" brings the argument straight back.", bundle: 'pro' },
+        { q: "How is Turn to Care different from the other five strategies?", a: "It is the only one that sets the point aside on purpose. The others keep it.", bundle: 'pro' },
+        { q: "Which sequences use Turn to Care?", a: "Step Out, Clear It Up, where it comes last, and Back to Us, where it is the middle step.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask Instead of Argue",
+      description: "",
+      cards: [
+        { q: "What is Ask Instead of Argue?", a: "Taking the next argument you were about to make, and asking a real question instead.", bundle: 'free' },
+        { q: "How does Ask Instead of Argue sound?", a: "\"Help me understand what worries you most about it.\"", bundle: 'free' },
+        { q: "When is Ask Instead of Argue the right one?", a: "When you have been making claims at each other and nobody has really heard the other side.", bundle: 'free' },
+        { q: "What does Ask Instead of Argue do to the conversation?", a: "It changes its shape: one of you explains and the other listens.", bundle: 'free' },
+        { q: "What are the three kinds of question?", a: "What it means to them, how they got there, and what would help.", bundle: 'free' },
+        { q: "When does Ask Instead of Argue go wrong?", a: "When the question is an argument in disguise — \"Don't you think that's a bit silly?\"", bundle: 'pro' },
+        { q: "How is Ask Instead of Argue different from Say What You Don't Mean?", a: "Say What You Don't Mean clears up what they heard. Ask Instead of Argue finds out what they think.", bundle: 'pro' },
+        { q: "Which sequences end with Ask Instead of Argue?", a: "Slow, Stop, Ask and Back to Us.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Step Back** — my pushing, the speed, or the circle we are in\n• **Bring Them Back** — a misreading, a fear about us, or a view nobody has heard\n• **All Six Strategies** — everything mixed, with no hint about what has gone wrong\n\nOne question runs through all three: is the problem the talk, or the person in it?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Step Back, Bring Them Back, and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Step Back?", a: "What is going wrong — my pushing, the speed, or the circle we are in?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Step Back?", a: "Slow It Down when the trouble is the circle. A slower circle is still a circle.", bundle: 'pro' },
+        { q: "You are stuck in the same pattern as last time. Which strategy?", a: "Talk About the Talk.", bundle: 'pro' },
+        { q: "What is the question that decides Bring Them Back?", a: "What is in the way — a misreading, a fear about us, or a view nobody has heard?", bundle: 'pro' },
+        { q: "They have heard an insult you never meant. Which strategy?", a: "Say What You Don't Mean.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Bring Them Back?", a: "Ask Instead of Argue on top of a hurt. It feels like a cross-examination.", bundle: 'pro' },
+        { q: "What is the first question in All Six Strategies?", a: "Is the problem the talk, or the person in it?", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Slow, Stop, Ask** — Slow It Down → Pause the Point → Ask Instead of Argue\n2. **Step Out, Clear It Up** — Talk About the Talk → Say What You Don't Mean → Turn to Care\n3. **Back to Us** — Pause the Point → Turn to Care → Ask Instead of Argue\n\nEach one turns a conversation that has gone wrong, one step at a time.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Slow, Stop, Ask; Step Out, Clear It Up; and Back to Us.", bundle: 'pro' },
+        { q: "What is the order in Slow, Stop, Ask?", a: "Slow It Down, Pause the Point, Ask Instead of Argue.", bundle: 'pro' },
+        { q: "Why does Slow It Down come first in Slow, Stop, Ask?", a: "At full speed, a stop sounds like storming off and a question sounds like a trap.", bundle: 'pro' },
+        { q: "What is the order in Step Out, Clear It Up?", a: "Talk About the Talk, Say What You Don't Mean, Turn to Care.", bundle: 'pro' },
+        { q: "Why does Say What You Don't Mean follow Talk About the Talk?", a: "Naming the circle often brings out the hurt — what they think you meant — and then you can answer it.", bundle: 'pro' },
+        { q: "What is the order in Back to Us?", a: "Pause the Point, Turn to Care, Ask Instead of Argue.", bundle: 'pro' },
+        { q: "Why does Turn to Care come before the question in Back to Us?", a: "Straight after a hurt, a question sounds like the next round. Once they know you care, it sounds like a question.", bundle: 'pro' },
+        { q: "What is the usual mistake in all three?", a: "One more lap of the same argument, a little louder.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **Going in Circles** — the same argument, the same ending\n• **They're Hurt, You're Still Arguing** — their voice changes, and you go on\n• **You Want to Win** — the point has stopped mattering\n• **They've Gone Silent** — they have left without leaving the room\n• **Practical Turned Emotional** — the topic changed under you\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Going in Circles, They're Hurt, You're Still Arguing, You Want to Win, They've Gone Silent, and Practical Turned Emotional.", bundle: 'pro' },
+        { q: "What is the main strategy for Going in Circles?", a: "Talk About the Talk — name the circle instead of running it again.", bundle: 'pro' },
+        { q: "What should you avoid when they are hurt and you are still arguing?", a: "Finishing your point first.", bundle: 'pro' },
+        { q: "What does winning the argument often cost?", a: "The person. They stop telling you things.", bundle: 'pro' },
+        { q: "What should you avoid in You Want to Win?", a: "The clever last line.", bundle: 'pro' },
+        { q: "What does silence in an argument usually mean?", a: "Not agreement. Someone who has stopped trying.", bundle: 'pro' },
+        { q: "What goes wrong when a practical talk turns emotional?", a: "You keep answering with facts to someone who is no longer talking about facts.", bundle: 'pro' },
+        { q: "Which strategy finds out what the practical thing means to them?", a: "Ask Instead of Argue.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Backing Off** — if I stop now, they'll think I agree\n• **Winning** — changing course means I lose\n• **Finishing** — we have to settle this now\n• **Feelings and Facts** — feelings are getting in the way of the facts\n\nEach one keeps you pushing in a conversation that needs to turn.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Backing Off, Winning, Finishing, and Feelings and Facts.", bundle: 'pro' },
+        { q: "What is true instead of \"if I stop now, they'll think I agree\"?", a: "Stopping is not agreeing, and you can say so. Your view is still yours.", bundle: 'pro' },
+        { q: "What does always holding your ground quietly cost?", a: "People stop arguing with you, and then stop telling you things.", bundle: 'pro' },
+        { q: "Is changing course the same as backing down?", a: "No. You can keep your view and still stop fighting for it.", bundle: 'pro' },
+        { q: "What does settling it right now often cost?", a: "You settle it at the worst moment, when neither of you can hear.", bundle: 'pro' },
+        { q: "What is true about \"feelings are getting in the way of the facts\"?", a: "Strong feelings can make it harder to think. What gets added is \"so the feelings should be ignored\".", bundle: 'pro' },
+        { q: "Why are feelings part of the facts?", a: "A plan nobody feels good about will not hold.", bundle: 'pro' },
+        { q: "What do these four mindsets have in common?", a: "Each one keeps you pushing in a conversation that needs to turn.", bundle: 'pro' },
+      ]
+    },
+  ],
+  emotionalcalibration3: [
+    {
+      name: "Core Idea",
+      description: "Five strategies for when a feeling is out in the open, and the hard part is meeting it:\n\n1. Validate Without Agreeing\n2. The Feeling Under the Feeling\n3. Match Their Pace\n4. Stay, Don't Fix\n5. Repair in the Moment\n\nTwo for heat, two for quiet, and one for when you made it worse.",
+      cards: [
+        { q: "What are the five strategies in this pack?", a: "Validate Without Agreeing, The Feeling Under the Feeling, Match Their Pace, Stay, Don't Fix, and Repair in the Moment.", bundle: 'free' },
+        { q: "How do the five fit together?", a: "Two for heat, two for quiet, and one for when you made it worse yourself.", bundle: 'free' },
+        { q: "What is the idea behind the whole pack?", a: "When a feeling is on the table, meet it where it is before you do anything else.", bundle: 'free' },
+        { q: "What makes these the harder cases?", a: "You don't agree, the feeling isn't the one that shows, they want you to fix it, or you made it worse.", bundle: 'free' },
+        { q: "What should you ask yourself first?", a: "What is the feeling doing right now: burning, hiding, struggling to come out, or reacting to me?", bundle: 'free' },
+        { q: "How does this pack fit into the Emotional Calibration series?", a: "Pt. 1 notices the shift, Pt. 2 changes course, and Pt. 3 meets the feeling.", bundle: 'pro' },
+        { q: "What is the most common mistake with a feeling on the table?", a: "Doing something with it — arguing, fixing, hurrying — before meeting it.", bundle: 'pro' },
+        { q: "Whose work does this pack draw on?", a: "Marsha Linehan, Susan Johnson, Charles Duhigg's Supercommunicators, and John Gottman.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Validate Without Agreeing",
+      description: "",
+      cards: [
+        { q: "What is Validate Without Agreeing?", a: "Saying that their feeling makes sense, and that you see it differently — both, side by side.", bundle: 'free' },
+        { q: "How does Validate Without Agreeing sound?", a: "\"I see it differently, and I still get why it hurt.\"", bundle: 'free' },
+        { q: "When is Validate Without Agreeing the right one?", a: "When someone is upset and you don't share their view of what happened.", bundle: 'free' },
+        { q: "Why does Validate Without Agreeing work?", a: "A feeling and a view are separate. Once the feeling is met, they can usually hear your view.", bundle: 'free' },
+        { q: "What are the three ways to hold both?", a: "The feeling then your view, your view then the feeling, or no position yet.", bundle: 'free' },
+        { q: "When does Validate Without Agreeing go wrong?", a: "When a \"but\" cancels the first half: \"I get why you're upset, but…\"", bundle: 'pro' },
+        { q: "What is Validate Without Agreeing better than, and why?", a: "Correcting the facts first, which tells them the feeling is wrong too.", bundle: 'pro' },
+        { q: "Whose idea is it that understanding a feeling is not agreeing with it?", a: "It draws on Marsha Linehan's work on validation.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Feeling Under the Feeling",
+      description: "",
+      cards: [
+        { q: "What is The Feeling Under the Feeling?", a: "A gentle guess at the softer feeling under anger, irritation or coldness.", bundle: 'free' },
+        { q: "How does The Feeling Under the Feeling sound?", a: "\"I wonder if under the anger there's some worry about the money?\"", bundle: 'free' },
+        { q: "When is The Feeling Under the Feeling the right one?", a: "When someone is angry, sharp or cold, and it doesn't quite fit what happened.", bundle: 'free' },
+        { q: "Why does The Feeling Under the Feeling work?", a: "Answering the anger brings more anger. Naming what's under it lets them soften.", bundle: 'free' },
+        { q: "Which three feelings often hide under anger?", a: "Worry, hurt, and feeling alone.", bundle: 'free' },
+        { q: "When does The Feeling Under the Feeling go wrong?", a: "When the guess becomes a verdict: \"You're just scared.\"", bundle: 'pro' },
+        { q: "What is The Feeling Under the Feeling better than, and why?", a: "Answering the anger on its own terms, which buries the softer feeling deeper.", bundle: 'pro' },
+        { q: "Where does the idea come from?", a: "Susan Johnson's work with couples: a sharp feeling on top often guards a more tender one.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Match Their Pace",
+      description: "",
+      cards: [
+        { q: "What is Match Their Pace?", a: "Slowing down to their speed — fewer words, longer gaps, and permission to take time.", bundle: 'free' },
+        { q: "How does Match Their Pace sound?", a: "\"No rush. Take your time.\"", bundle: 'free' },
+        { q: "When is Match Their Pace the right one?", a: "When someone is finding it hard to get the words out.", bundle: 'free' },
+        { q: "Why does Match Their Pace work?", a: "If you hurry, they feel pushed and stop. Matching their tempo tells them there is room.", bundle: 'free' },
+        { q: "What are the three ways to match their pace?", a: "Give them time, say less, and slow your own voice.", bundle: 'free' },
+        { q: "When does Match Their Pace go wrong?", a: "When \"take your time\" is followed by three questions in a row.", bundle: 'pro' },
+        { q: "What is Match Their Pace better than, and why?", a: "Finishing their sentences or filling every pause, which takes the words away from them.", bundle: 'pro' },
+        { q: "Where does the idea of matching come from?", a: "Charles Duhigg's Supercommunicators.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stay, Don't Fix",
+      description: "",
+      cards: [
+        { q: "What is Stay, Don't Fix?", a: "Offering no solution, and saying out loud that you are there.", bundle: 'free' },
+        { q: "How does Stay, Don't Fix sound?", a: "\"I don't have an answer. I'm just glad you told me.\"", bundle: 'free' },
+        { q: "When is Stay, Don't Fix the right one?", a: "When it can't be fixed, or when they need company more than a plan.", bundle: 'free' },
+        { q: "Why does Stay, Don't Fix work?", a: "Early advice treats the feeling as a problem to clear away. Feeling understood comes before being helped.", bundle: 'free' },
+        { q: "What are the three ways to stay?", a: "Admit there's no answer, name what you're not doing, and offer company.", bundle: 'free' },
+        { q: "When is Stay, Don't Fix hardest?", a: "When every part of you wants to fix it, or when they ask you to.", bundle: 'pro' },
+        { q: "What is Stay, Don't Fix better than, and why?", a: "A list of solutions, which can feel like being handed a leaflet and shown the door.", bundle: 'pro' },
+        { q: "How is Stay, Don't Fix different from just listening?", a: "You say it out loud: you are not going to fix it, and you are staying.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Repair in the Moment",
+      description: "",
+      cards: [
+        { q: "What is Repair in the Moment?", a: "Saying straight away that something you said made it worse, and trying again.", bundle: 'free' },
+        { q: "How does Repair in the Moment sound?", a: "\"That came out wrong. Let me try again.\"", bundle: 'free' },
+        { q: "When is Repair in the Moment the right one?", a: "When your last line made their face drop, their voice go flat, or the conversation close.", bundle: 'free' },
+        { q: "Why does Repair in the Moment work?", a: "A bad line grows when nobody mentions it. A repair caught in seconds stops that.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Catch it, take it back, and try again — in one breath.", bundle: 'free' },
+        { q: "When does Repair in the Moment go wrong?", a: "When it turns into a long apology, and the conversation becomes about your mistake.", bundle: 'pro' },
+        { q: "What is Repair in the Moment better than, and why?", a: "Carrying on as if nothing happened, which lets them decide what you meant.", bundle: 'pro' },
+        { q: "Who calls these small bids to get back on track repair attempts?", a: "John Gottman.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Meet the Heat** — the feeling is hot: a disagreement, a hidden feeling, or your last line?\n• **Make Room** — the feeling is quiet: still coming out, already said, or being hidden?\n• **All Five Strategies** — everything mixed, with no warning about what kind of feeling is coming\n\nOne question decides nearly all of it: what is the feeling doing right now?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Meet the Heat, Make Room, and All Five Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Meet the Heat?", a: "What is fuelling the heat — a disagreement, a hidden feeling, or my last line?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Meet the Heat?", a: "Arguing the facts, which tells them the feeling is wrong too.", bundle: 'pro' },
+        { q: "What is the question that decides Make Room?", a: "Are they still trying to say it, have they said it, or are they hiding it?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Make Room?", a: "Jumping to advice, which ends the conversation just as it was starting.", bundle: 'pro' },
+        { q: "They have said it, and nothing can be fixed. Which strategy?", a: "Stay, Don't Fix.", bundle: 'pro' },
+        { q: "Your last line made it worse. Which strategy?", a: "Repair in the Moment.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in All Five Strategies?", a: "Doing something with the feeling — arguing, fixing, hurrying — before meeting it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Under the Anger** — Validate Without Agreeing → The Feeling Under the Feeling → Stay, Don't Fix\n2. **The Second Try** — Repair in the Moment → Match Their Pace → Stay, Don't Fix\n3. **The Real Feeling** — Match Their Pace → The Feeling Under the Feeling → Validate Without Agreeing\n\nIn each one, you meet the feeling first and leave solving for later, if at all.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Under the Anger, The Second Try, and The Real Feeling.", bundle: 'pro' },
+        { q: "What is the order in Under the Anger?", a: "Validate Without Agreeing, The Feeling Under the Feeling, Stay, Don't Fix.", bundle: 'pro' },
+        { q: "Why validate before you guess at what's under the anger?", a: "Validating lowers the heat enough for the guess to be heard. Too early, it sounds like dodging.", bundle: 'pro' },
+        { q: "What is the order in The Second Try?", a: "Repair in the Moment, Match Their Pace, Stay, Don't Fix.", bundle: 'pro' },
+        { q: "Why does The Second Try end with staying, not fixing?", a: "Jumping to advice would repeat the first mistake.", bundle: 'pro' },
+        { q: "What is the order in The Real Feeling?", a: "Match Their Pace, The Feeling Under the Feeling, Validate Without Agreeing.", bundle: 'pro' },
+        { q: "Why does The Real Feeling end with Validate Without Agreeing?", a: "The real feeling often arrives with a complaint about you, and arguing it would close the door you just opened.", bundle: 'pro' },
+        { q: "What is the usual mistake in all three?", a: "Arguing or fixing before the feeling has been met.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack — five hard ways a feeling can arrive, and what fits each:\n\n• **You Don't Agree** — the feeling makes sense, and you see it differently: say both\n• **Anger That Isn't Anger** — the heat doesn't fit: guess gently at what's under it\n• **They Want You to Fix It** — \"Just tell me what to do\": stay, and say you are staying\n• **You Made It Worse** — your line landed badly: catch it and try again\n• **The Feeling Comes Out Sideways** — it arrives as a complaint or a joke: look under the surface\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "You Don't Agree, Anger That Isn't Anger, They Want You to Fix It, You Made It Worse, and The Feeling Comes Out Sideways.", bundle: 'pro' },
+        { q: "What goes wrong in You Don't Agree?", a: "Correcting the facts first, so every correction sounds like \"your feeling is wrong\".", bundle: 'pro' },
+        { q: "What should you avoid in You Don't Agree?", a: "\"I get it, but…\"", bundle: 'pro' },
+        { q: "What is the main strategy for Anger That Isn't Anger?", a: "The Feeling Under the Feeling — a gentle guess at what's beneath.", bundle: 'pro' },
+        { q: "What should you avoid with Anger That Isn't Anger?", a: "Telling them what they \"really\" feel.", bundle: 'pro' },
+        { q: "What is the main strategy for They Want You to Fix It?", a: "Stay, Don't Fix — said openly.", bundle: 'pro' },
+        { q: "What should you avoid in You Made It Worse?", a: "A long defence of your good intentions.", bundle: 'pro' },
+        { q: "What goes wrong in The Feeling Comes Out Sideways?", a: "Answering the surface — the kitchen, the joke, the flat \"fine\".", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Agreement** — if I say it makes sense, they'll think I agree\n• **Fixing** — I'm the practical one, so I sort it out\n• **Silence** — if nobody's talking, I should say something\n• **Mistakes** — taking back what I said will make me look weak\n\nEach one pulls you away from the feeling and towards doing something else.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Agreement, Fixing, Silence, and Mistakes.", bundle: 'pro' },
+        { q: "What is true instead of \"if I say it makes sense, they'll think I agree\"?", a: "Understanding a feeling and sharing a view are separate, and you can say both.", bundle: 'pro' },
+        { q: "What does arguing the facts cost while a feeling is fresh?", a: "They defend their hurt, and never hear your view.", bundle: 'pro' },
+        { q: "What does being \"the practical one\" quietly cost?", a: "People stop bringing you their feelings, and bring you only their problems.", bundle: 'pro' },
+        { q: "What is true instead of \"silence is awkward, so I should fill it\"?", a: "A pause is often the other person finding the words.", bundle: 'pro' },
+        { q: "What part of \"I said the wrong thing\" is true, and what gets added?", a: "You did slip. What gets added is \"so I'd better stand by it\", or \"so I've ruined it\".", bundle: 'pro' },
+        { q: "What does an unmended slip cost?", a: "It stays in the air, they decide what you meant, and the conversation closes.", bundle: 'pro' },
+        { q: "What do all four mindsets have in common?", a: "They pull you away from the feeling and towards doing something else.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

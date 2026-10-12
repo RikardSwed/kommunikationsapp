@@ -12710,4 +12710,466 @@ const mindsetCollections = {
       ]
     },
   ],
+  jobinterview1: [
+    {
+      name: "Perfection",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I have to sound perfect.\" The belief that every answer must be polished, clever and without a single \"um\".\n\nWhat is true instead: they are hiring a person, not a speech. Short, true and a little nervous is fine.\n\nIt feels reasonable because the stakes are high and you want to be ready for anything.\n\nWhat it costs is the person. Polished answers sound rehearsed, and real people end up hiding behind them.\n\nMindset: true and short beats smooth and long.",
+      inputs: [
+        { q: "I have to sound perfect.", a: "\"They're hiring a person, not a speech.\"", bundle: 'pro' },
+        { q: "I need a brilliant answer for every question.", a: "\"A short, true answer is a brilliant answer.\"", bundle: 'pro' },
+        { q: "If I pause, they'll think I don't know.", a: "\"A pause to think sounds like someone thinking.\"", bundle: 'pro' },
+        { q: "I have to learn my answers word for word.", a: "\"I'll learn my stories, not my sentences.\"", bundle: 'pro' },
+        { q: "They'll notice I'm nervous.", a: "\"They expect nerves. Everyone in this chair has them.\"", bundle: 'pro' },
+        { q: "My stories aren't impressive enough.", a: "\"A real story with a result beats an impressive one I made bigger.\"", bundle: 'pro' },
+        { q: "I said \"um\" three times.", a: "\"They're listening to what I said, not counting.\"", bundle: 'pro' },
+        { q: "Everyone else will have better answers.", a: "\"I only need mine to be true and clear.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Bragging",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"Talking about what I've done is bragging.\" A belief with something true in it — nobody likes a show-off.\n\nWhat is true: boasting and inflating are off-putting, and modesty is a good thing to keep.\n\nWhat gets added is the step from \"don't boast\" to \"don't say what I did\". Saying what happened, plainly, with a number or a result, is not bragging. It is information they asked for.\n\nWhat it costs is the job going to someone who said what they did.\n\nMindset: keep the modesty in the tone. Keep the facts in the answer.",
+      inputs: [
+        { q: "Talking about my results is bragging.", a: "\"Boasting is off-putting — but 'so I can't say what happened' is the part I added.\"", bundle: 'pro' },
+        { q: "It was a team effort, so I can't say \"I\".", a: "\"The team mattered — but 'so my part doesn't count' is the part I added.\"", bundle: 'pro' },
+        { q: "Modest people don't talk about themselves.", a: "\"Modesty is good — but 'so I stay quiet in an interview' is the part I added.\"", bundle: 'pro' },
+        { q: "Anyone could have done what I did.", a: "\"Maybe — but 'so it isn't worth telling' is the part I added.\"", bundle: 'pro' },
+        { q: "Giving a number sounds like showing off.", a: "\"Some people do show off — but 'so a plain number is boasting' is the part I added.\"", bundle: 'pro' },
+        { q: "I don't want to sound like I think I'm great.", a: "\"I don't have to sound great — but 'so I can't sound good at anything' is the part I added.\"", bundle: 'pro' },
+        { q: "They'll find out what I'm like once I start.", a: "\"They will — but 'so I don't need to tell them now' is the part I added.\"", bundle: 'pro' },
+        { q: "It's rude to say I'm better than the others.", a: "\"It would be — but 'so I can't say what I've done' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Power",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"They hold all the power. I just have to hope they like me.\" The belief that an interview is an exam you can only pass or fail.\n\nWhat is true instead: they decide whether to offer the job, and you decide whether to take it. Both of you are finding out if it fits.\n\nIt feels reasonable because they ask the questions, they know the result, and you need the job.\n\nWhat it costs is your half of the conversation: no questions, no real reasons, and a job you know nothing about until you start.\n\nMindset: an interview is a conversation about a job, not a hearing.",
+      inputs: [
+        { q: "They hold all the power.", a: "\"They choose me, and I choose them. We're both finding out.\"", bundle: 'pro' },
+        { q: "I just have to hope they like me.", a: "\"I can also find out whether I like them.\"", bundle: 'pro' },
+        { q: "I shouldn't ask questions — it's their interview.", a: "\"Half of it is mine. A good question shows I'm serious.\"", bundle: 'pro' },
+        { q: "I'll take any job they offer.", a: "\"I'd still rather know what the job is before I say yes.\"", bundle: 'pro' },
+        { q: "They're judging every word.", a: "\"They're mostly hoping I'm the one, so they can stop looking.\"", bundle: 'pro' },
+        { q: "If I don't get this, I've failed.", a: "\"If it isn't a fit, it isn't a fit. That's useful too.\"", bundle: 'pro' },
+        { q: "I can't say what I really want from a job.", a: "\"Saying what I want helps them see if I'll stay.\"", bundle: 'pro' },
+        { q: "I have to agree with everything they say.", a: "\"I can be polite and still be honest about what I think.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Slip-Ups",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"One bad answer and it's over.\" The belief that a single weak moment decides the whole interview.\n\nWhat is true instead: interviewers remember the whole conversation, not one answer. And you can go back and fix it.\n\nIt feels reasonable because the bad answer is the one replaying in your head while they ask the next question.\n\nWhat it costs is the next answer. Worrying about the last one is what makes you lose the next.\n\nMindset: one answer is one answer. Let it go, or fix it, and carry on.",
+      inputs: [
+        { q: "That answer was terrible. It's over.", a: "\"It was one answer out of twenty. The next one counts too.\"", bundle: 'pro' },
+        { q: "I forgot what I was going to say.", a: "\"I can say, 'Let me start that again,' and they'll wait.\"", bundle: 'pro' },
+        { q: "I blanked on the example.", a: "\"I can ask for a moment, or come back to it later.\"", bundle: 'pro' },
+        { q: "I said the wrong thing about my old job.", a: "\"I can go back to it: 'Can I add something to what I said earlier?'\"", bundle: 'pro' },
+        { q: "They frowned, so I've lost them.", a: "\"A frown is often just someone thinking.\"", bundle: 'pro' },
+        { q: "I'll be thinking about it all interview.", a: "\"I'll note it, and listen to the next question instead.\"", bundle: 'pro' },
+        { q: "I talked for too long on that one.", a: "\"Then I'll keep the next one short. That's all it takes.\"", bundle: 'pro' },
+        { q: "If I mess up, they'll remember only that.", a: "\"They'll remember how I handled it as much as the slip.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  jobinterview2: [
+    {
+      name: "Gaps",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"A gap in my CV is a red flag.\" A belief with some truth in it — interviewers do notice gaps, and they will ask.\n\nWhat is true instead: they notice, and they ask. What they decide depends mostly on how you answer.\n\nIt feels true because job advice often warns about gaps, and because the empty line on the page is the first thing your own eye goes to.\n\nWhat it costs: you walk in already apologising, and the long, nervous answer makes the gap sound far bigger than it is.\n\nMindset: they will ask about it. A short answer is all it needs.",
+      inputs: [
+        { q: "A gap in my CV is a red flag.", a: "\"It's a question they'll ask, and I have a short answer ready.\"", bundle: 'pro' },
+        { q: "They'll think I was lazy for a year.", a: "\"They might wonder — and one sentence tells them what really happened.\"", bundle: 'pro' },
+        { q: "Nobody hires someone who's been out of work this long.", a: "\"It's harder, yes, but people are hired after gaps every day.\"", bundle: 'pro' },
+        { q: "I have to explain every month of it.", a: "\"They need one reason and where I am now, not the whole year.\"", bundle: 'pro' },
+        { q: "Looking after my dad doesn't count as anything.", a: "\"It doesn't go on the CV as a job, but it says a lot about me.\"", bundle: 'pro' },
+        { q: "I should hide the gap with vague dates.", a: "\"They might spot it, and an honest gap is much easier to explain than a hidden one.\"", bundle: 'pro' },
+        { q: "The gap is all they'll remember about me.", a: "\"Only if I make it the longest part of the interview.\"", bundle: 'pro' },
+        { q: "I need a good excuse for the gap.", a: "\"I don't need an excuse, just the reason, said plainly.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mistakes",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Admitting a mistake makes me look bad.\" The belief that an interview is the place to look flawless.\n\nWhat is true instead: a mistake told well makes you look trustworthy. It shows you can see your own work clearly and fix it.\n\nIt feels right because the whole interview seems to be about showing your best side, and a mistake looks like the opposite.\n\nWhat it costs: the fake mistake and the blamed colleague, both of which the interviewer has heard a hundred times.\n\nMindset: they are not asking if you make mistakes. They are asking what you do next.",
+      inputs: [
+        { q: "Admitting a mistake makes me look bad.", a: "\"Owning it and fixing it makes me look like someone they can trust.\"", bundle: 'pro' },
+        { q: "They'll think I'm careless.", a: "\"One mistake with a fix and a new habit doesn't sound careless.\"", bundle: 'pro' },
+        { q: "I should pick a mistake that's secretly a strength.", a: "\"They've heard that trick before, and a real one is more convincing.\"", bundle: 'pro' },
+        { q: "If I tell them, I won't get the job.", a: "\"Everyone in that room has made mistakes, and they know I have too.\"", bundle: 'pro' },
+        { q: "It wasn't really my fault anyway.", a: "\"My part in it is the only part I can talk about honestly.\"", bundle: 'pro' },
+        { q: "I can't think of a mistake small enough to admit.", a: "\"It doesn't have to be small, just finished — fixed and learned from.\"", bundle: 'pro' },
+        { q: "Talking about it will make me look nervous.", a: "\"Three plain sentences are calmer than a nervous dodge.\"", bundle: 'pro' },
+        { q: "A good candidate doesn't have mistakes to talk about.", a: "\"A good candidate has mistakes and knows what they learned from them.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Money",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"Naming a number is greedy.\" It feels modest, polite and easy to work with — which is why it is so hard to let go of.\n\nWhat is true instead: they expect a number. Giving a range is part of the job, not a lack of manners.\n\nIt feels like a virtue because nobody wants to look as if they only care about money, and staying quiet seems like the safe, humble choice.\n\nWhat it costs: they pick the number for you, and it often stays low for years, because every raise starts from where you began.\n\nMindset: a calm range is not greed. It is a fair answer to a fair question.",
+      inputs: [
+        { q: "I'm not here for the money.", a: "\"True — and saying so out loud can cost me thousands every year.\"", bundle: 'pro' },
+        { q: "I'll just take whatever they offer.", a: "\"Then they decide what my work is worth, and that number follows me.\"", bundle: 'pro' },
+        { q: "It's polite to let them name the figure.", a: "\"Polite, and it means I start the talk with nothing to say.\"", bundle: 'pro' },
+        { q: "Asking for more might lose me the job.", a: "\"A calm range rarely loses a job, but saying nothing can lose the pay.\"", bundle: 'pro' },
+        { q: "I'm grateful just to be asked to the interview.", a: "\"Being grateful and being paid fairly can go together.\"", bundle: 'pro' },
+        { q: "Talking about pay makes me look difficult.", a: "\"Avoiding it makes me look unsure, and they'll see that too.\"", bundle: 'pro' },
+        { q: "I'll ask for more once I've proved myself.", a: "\"Then I'll be proving myself from a lower number, every year.\"", bundle: 'pro' },
+        { q: "Money talk is a bit vulgar.", a: "\"It's only vulgar if I make it about me, and I'm talking about the job.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Not Knowing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I don't know, I've failed.\" The belief that every question has a right answer and you must have it.\n\nWhat is true instead: an honest \"I don't know\" with a plan is often the best answer in the room. Nobody knows everything.\n\nIt feels true because school taught us that a question you cannot answer costs you marks, and an interview feels like an exam.\n\nWhat it costs: the bluff — and one follow-up question can bring it down, with everything else you said.\n\nMindset: they are hiring someone who can learn. Show them how you would.",
+      inputs: [
+        { q: "If I don't know, I've failed.", a: "\"If I don't know and say how I'd find out, I've answered well.\"", bundle: 'pro' },
+        { q: "Everyone else will know this.", a: "\"Some might, and some will bluff, and I can be the honest one.\"", bundle: 'pro' },
+        { q: "I should say yes and learn it later.", a: "\"Saying no now, with a plan, is easier than faking it on day one.\"", bundle: 'pro' },
+        { q: "They'll think I'm not good enough.", a: "\"They'll see that I'm honest about what I can do, and that I learn.\"", bundle: 'pro' },
+        { q: "A good candidate has an answer for everything.", a: "\"A good candidate knows where their knowledge ends.\"", bundle: 'pro' },
+        { q: "I can't say \"I don't know\" in a job interview.", a: "\"I can, as long as I say what I'd do next.\"", bundle: 'pro' },
+        { q: "One gap in my skills will cost me the job.", a: "\"They rarely hire someone who has every skill, but often someone who can learn the rest.\"", bundle: 'pro' },
+        { q: "Admitting it will make me look nervous.", a: "\"Bluffing is what makes people look nervous, and a plain no is calm.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  talkingtoyourmanager: [
+    {
+      name: "Limits",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"A good employee never says no.\" A belief that feels like a strength — hard-working, reliable, a team player.\n\nWhat is true instead: a good employee tells the truth about time. Saying yes to everything only pushes the no to later, when something is already late.\n\nIt feels right because saying yes is rewarded at first, and managers like people who are willing.\n\nWhat it costs is quiet: work done badly at nine in the evening, deadlines missed without warning, and a manager who never learns how full your week is.\n\nMindset: being willing and being honest about time go together.",
+      inputs: [
+        { q: "I'm the one who never says no.", a: "\"And so nobody knows when I'm already full.\"", bundle: 'pro' },
+        { q: "I'll just work late and get it done.", a: "\"Every late night hides the problem my manager needs to see.\"", bundle: 'pro' },
+        { q: "Saying yes shows I'm committed.", a: "\"A yes I can't keep looks worse on Friday than an honest question on Monday.\"", bundle: 'pro' },
+        { q: "I don't want to be difficult.", a: "\"A deadline missed without warning is far more difficult for them.\"", bundle: 'pro' },
+        { q: "My manager has enough problems already.", a: "\"Then a hidden problem is the last thing I should give them.\"", bundle: 'pro' },
+        { q: "Other people cope, so I should too.", a: "\"Maybe they're quietly drowning too, and nobody is saying it.\"", bundle: 'pro' },
+        { q: "I'll find a way somehow.", a: "\"Somehow usually means something else gets done badly.\"", bundle: 'pro' },
+        { q: "If I say no, the good projects will go to someone else.", a: "\"If I always say yes, the good projects get my tired evenings.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Bad News",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"Bad news can wait until I've fixed it.\" Half of this is true, which is why it is so convincing.\n\nWhat is true: you should bring a plan, and fixing it yourself is good.\n\nWhat gets added is \"before I tell them\". By the time it is fixed, it may be too late for your manager to warn the customer, move people around, or protect you.\n\nWhat it costs is trust. A manager who finds out late starts to wonder what else they have not been told.\n\nMindset: keep the plan. Drop the waiting.",
+      inputs: [
+        { q: "I should fix it before I tell anyone.", a: "\"Fixing it is right — but 'before I tell anyone' is the part I added.\"", bundle: 'pro' },
+        { q: "I don't want to bring a problem without a solution.", a: "\"A plan is good — but 'so I'll wait for a perfect one' is the part I added.\"", bundle: 'pro' },
+        { q: "It might sort itself out.", a: "\"It might — but 'so they don't need to know yet' is the part I added.\"", bundle: 'pro' },
+        { q: "It was my mistake, so it's my job to fix it.", a: "\"True — but 'so it's mine to keep quiet' is the part I added.\"", bundle: 'pro' },
+        { q: "They're stressed enough already.", a: "\"They are — but 'so they'd rather not know' is the part I added.\"", bundle: 'pro' },
+        { q: "Small problems don't need reporting.", a: "\"Some don't — but 'so this one doesn't' is the part I added.\"", bundle: 'pro' },
+        { q: "I'll look bad if I tell them.", a: "\"For a minute, maybe — but 'so I'll look better if they find out later' is the part I added.\"", bundle: 'pro' },
+        { q: "I'll mention it at the weekly meeting.", a: "\"The meeting is a fine place — but 'so it can wait four days' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Loyalty",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Disagreeing with my manager is disloyal.\" The belief that a good team member keeps quiet and goes along.\n\nWhat is true instead: telling them a real concern, once, before it is too late, is one of the most loyal things you can do.\n\nIt feels right because disagreement can feel like a challenge to their authority, and some managers do react badly at first.\n\nWhat it costs is the information they needed — and, often, the complaining that happens instead, where they cannot hear it.\n\nMindset: disagree to their face, once, and then support the decision.",
+      inputs: [
+        { q: "It's not my place to disagree.", a: "\"It's my place to tell them what I can see from where I stand.\"", bundle: 'pro' },
+        { q: "If I push back, they'll think I'm not on their side.", a: "\"Saying I'll make it work if it stands shows exactly whose side I'm on.\"", bundle: 'pro' },
+        { q: "They're the manager, so they must know better.", a: "\"They know more about some things, and I know more about my part of the job.\"", bundle: 'pro' },
+        { q: "Disagreeing will damage our relationship.", a: "\"One calm reason won't; months of quiet resentment might.\"", bundle: 'pro' },
+        { q: "Everyone else seems fine with it.", a: "\"Maybe they're thinking the same and waiting for someone to say it.\"", bundle: 'pro' },
+        { q: "It's already decided, so there's no point.", a: "\"Then I can still say it once, briefly, and commit.\"", bundle: 'pro' },
+        { q: "I'll just do it my own way quietly.", a: "\"That isn't loyalty either; it's a disagreement they never got to hear.\"", bundle: 'pro' },
+        { q: "If I disagree and I'm wrong, I'll look stupid.", a: "\"If I'm wrong, they'll tell me, and I'll have learned something.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Recognition",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I deserved a raise, they would offer it.\" The belief that good work speaks for itself, and that asking is greedy or ungrateful.\n\nWhat is true instead: managers are busy, and most good work goes unnoticed until someone names it. Asking is how they find out.\n\nIt feels right because it would be fair, and because asking means risking a no.\n\nWhat it costs is years — of waiting, of resentment, and sometimes of leaving for a job that pays what you were too polite to ask for.\n\nMindset: they cannot reward what they have not noticed. Tell them.",
+      inputs: [
+        { q: "If I deserved it, they'd offer it.", a: "\"They might never notice unless I tell them what I've done.\"", bundle: 'pro' },
+        { q: "Asking for more money is greedy.", a: "\"Asking for pay that matches my work is ordinary, not greedy.\"", bundle: 'pro' },
+        { q: "I should be grateful to have a job at all.", a: "\"I can be grateful and still ask to be paid fairly.\"", bundle: 'pro' },
+        { q: "My work speaks for itself.", a: "\"My work speaks quietly; facts said out loud are easier to hear.\"", bundle: 'pro' },
+        { q: "I'll wait for my yearly review.", a: "\"By the review, the budget may already be set.\"", bundle: 'pro' },
+        { q: "If they say no, it'll be awkward.", a: "\"A no today still tells me what to do next.\"", bundle: 'pro' },
+        { q: "Nice people don't talk about money.", a: "\"Nice people get paid fairly when someone asks.\"", bundle: 'pro' },
+        { q: "They know how hard I work.", a: "\"They know some of it; I'm the only one who knows all of it.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  newatwork: [
+    {
+      name: "Questions",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Asking questions makes me look incompetent.\" The belief that every question shows people what you do not know.\n\nWhat is true instead: in your first weeks, questions are what people expect. A good question shows that you are thinking.\n\nIt feels reasonable because at school and in interviews you were judged on what you knew, and not knowing felt like failing.\n\nWhat it costs is guessing, avoidable mistakes, and a month of slowly learning what one question would have taught you in a minute.\n\nMindset: the new person who asks looks careful. The one who guesses looks careless.",
+      inputs: [
+        { q: "Asking questions makes me look incompetent.", a: "\"In my first weeks, a good question makes me look careful.\"", bundle: 'pro' },
+        { q: "If I ask, they'll wonder why they hired me.", a: "\"They hired me knowing I was new. Questions are part of the deal.\"", bundle: 'pro' },
+        { q: "Everyone else seems to know what they're doing.", a: "\"They've had years here. I've had a week.\"", bundle: 'pro' },
+        { q: "I'll work it out on my own eventually.", a: "\"Eventually is slow. One question now saves me the whole afternoon.\"", bundle: 'pro' },
+        { q: "A clever person wouldn't need to ask.", a: "\"A clever person asks early, before the mistake.\"", bundle: 'pro' },
+        { q: "They'll get tired of my questions.", a: "\"They'd get more tired of fixing my guesses.\"", bundle: 'pro' },
+        { q: "I've already asked one question today.", a: "\"There's no limit on questions in week two. The mistakes are what cost.\"", bundle: 'pro' },
+        { q: "I don't want to interrupt with something small.", a: "\"Small questions are the cheapest kind. They take a minute.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Not Knowing",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"I should already know this.\" A belief with some truth in it — some things really are in the handbook, or were said on day one.\n\nWhat is true: some things you could have looked up, and it is fair to look first.\n\nWhat gets added is the step from \"I could have known\" to \"so I can't ask now\" — as if missing something once meant you had to stay stuck.\n\nWhat it costs is hours of quiet guessing, and a mistake that is bigger than the question would have been.\n\nMindset: look first, then ask. Not knowing yet is simply being new.",
+      inputs: [
+        { q: "I should already know this.", a: "\"Maybe I could have — but 'so I can't ask now' is the part I added.\"", bundle: 'pro' },
+        { q: "They told me on the first day.", a: "\"True, they did — but 'so I can't ask again' is the part I added.\"", bundle: 'pro' },
+        { q: "It's probably in the handbook somewhere.", a: "\"It might be, so I'll look first — but 'so I'm not allowed to ask' is the part I added.\"", bundle: 'pro' },
+        { q: "Everyone else learned this in training.", a: "\"They did — but 'so I'm behind for good' is the part I added.\"", bundle: 'pro' },
+        { q: "I've worked in this field before, so I should know.", a: "\"I know a lot — but 'so this place works the same way' is the part I added.\"", bundle: 'pro' },
+        { q: "It's such a simple thing.", a: "\"It is simple — but 'so I'm stupid for not knowing it' is the part I added.\"", bundle: 'pro' },
+        { q: "I had a whole career before this, so I should be quicker.", a: "\"I do have years of experience — but 'so I should know a new job already' is the part I added.\"", bundle: 'pro' },
+        { q: "My manager looked surprised that I didn't know.", a: "\"She did look surprised — but 'so I mustn't ask her again' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Proving Yourself",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'll keep my head down and prove myself first. Then I'll speak up.\" A belief that feels like modesty and hard work.\n\nWhat is true instead: the first weeks are when speaking up costs least. Waiting makes it harder, not easier.\n\nIt feels reasonable because nobody likes a new person who knows everything, and hard work really does matter.\n\nWhat it costs is quiet and real: nobody knows what you need, you aim at the wrong target, and by the time you have proved yourself, the habit of silence is set.\n\nMindset: work hard and speak up. You do not have to choose.",
+      inputs: [
+        { q: "I'll keep my head down until I've proved myself.", a: "\"And while my head's down, nobody learns what I'm good at or what I need.\"", bundle: 'pro' },
+        { q: "Hard work speaks for itself.", a: "\"Not if I'm working hard at the wrong thing.\"", bundle: 'pro' },
+        { q: "I don't want to seem pushy in my first month.", a: "\"Never asking costs me more than seeming a little keen.\"", bundle: 'pro' },
+        { q: "I'll ask for feedback once I'm good at this.", a: "\"By then the small mistakes are habits, and much harder to fix.\"", bundle: 'pro' },
+        { q: "I'm only the summer help, so it's not my place to speak.", a: "\"Saying nothing all summer means I learn the least of anyone here.\"", bundle: 'pro' },
+        { q: "I'll save my ideas until people trust me.", a: "\"Trust comes from talking, too, not only from waiting.\"", bundle: 'pro' },
+        { q: "I don't want to bother my manager.", a: "\"Not bothering her means she finds out late what I needed early.\"", bundle: 'pro' },
+        { q: "Real professionals figure it out alone.", a: "\"And they lose a week on what one question would have fixed.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Busy Colleagues",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"They're too busy for me.\" The belief that every question or coffee invitation takes something from people who have no time to give.\n\nWhat is true instead: most people like helping a new colleague, and a short, clear ask takes very little time.\n\nIt feels reasonable because they really are busy, and you can see it.\n\nWhat it costs: you learn alone and slowly, and the people who could have helped you stay strangers.\n\nMindset: a short ask fits into a busy day. Let them say if it does not.",
+      inputs: [
+        { q: "They're too busy for me.", a: "\"They're busy. A two-minute question still fits into their day.\"", bundle: 'pro' },
+        { q: "Asking someone for a coffee is taking their time.", a: "\"It's ten minutes, and they can always say no.\"", bundle: 'pro' },
+        { q: "My manager has more important things to do.", a: "\"Helping a new person start well is one of her important things.\"", bundle: 'pro' },
+        { q: "I'll wait until things calm down.", a: "\"Things don't calm down. They just start to feel normal.\"", bundle: 'pro' },
+        { q: "They didn't offer, so they don't want to help.", a: "\"They can't know what I need until I say it.\"", bundle: 'pro' },
+        { q: "The nurses are run off their feet, and I can't add to that.", a: "\"A clear question now costs them less than my mistake later.\"", bundle: 'pro' },
+        { q: "Nobody has time to show the new person around.", a: "\"Then I'll ask for one small thing at a time.\"", bundle: 'pro' },
+        { q: "If they wanted to get to know me, they'd ask.", a: "\"They're busy too. Someone has to go first, and it can be me.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  emotionalcalibration1: [
+    {
+      name: "Waiting to Be Told",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If they had a problem, they'd say so.\" The belief that a feeling only counts once it is said out loud.\n\nWhat is true instead: most people show a feeling long before they say it, if they ever do. The short answer is the showing.\n\nIt feels reasonable because adults are supposed to speak up, and guessing at other people's feelings can seem like overstepping.\n\nWhat it costs is the easy moment. The feeling stays unspoken, and it comes out later, bigger, about something else.\n\nMindset: a shift is a message too, and it is fair to answer it gently.",
+      inputs: [
+        { q: "If they had a problem, they'd say so.", a: "\"Most people show it long before they say it, and this is the showing.\"", bundle: 'pro' },
+        { q: "They're an adult. They can speak up.", a: "\"They can, and one gentle question makes it easier to.\"", bundle: 'pro' },
+        { q: "They said \"fine\", so it's fine.", a: "\"They said 'fine'. The way they said it is information too.\"", bundle: 'pro' },
+        { q: "It's not my place to ask.", a: "\"Asking once, gently, is always my place.\"", bundle: 'pro' },
+        { q: "If I wait, it'll come out by itself.", a: "\"If I wait, it usually comes out later, and bigger.\"", bundle: 'pro' },
+        { q: "They'd tell me if it was about me.", a: "\"If it was about me, I'm the hardest person for them to tell.\"", bundle: 'pro' },
+        { q: "Asking would put words in their mouth.", a: "\"A guess they can correct doesn't put words anywhere.\"", bundle: 'pro' },
+        { q: "If it mattered, they wouldn't have changed the subject.", a: "\"People change the subject most when it matters.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Awkwardness",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Pointing it out will make it awkward.\" The fear that naming a shift creates the problem.\n\nWhat is true instead: the moment is already a little awkward. One gentle sentence usually makes it easier, not harder.\n\nIt feels reasonable because nobody likes an uncomfortable pause, and carrying on as if nothing happened seems polite.\n\nWhat it costs is the rest of the evening, spent with something both of you can feel and neither of you mentions.\n\nMindset: the shift already happened. Saying so only catches up with it.",
+      inputs: [
+        { q: "Pointing it out will make it awkward.", a: "\"It's already a bit awkward. Saying it gently usually makes it easier.\"", bundle: 'pro' },
+        { q: "They'll be embarrassed that I noticed.", a: "\"One gentle line embarrasses less than an evening of pretending.\"", bundle: 'pro' },
+        { q: "It'll spoil the mood.", a: "\"The mood already changed. I'm only catching up with it.\"", bundle: 'pro' },
+        { q: "I'll sound like a therapist.", a: "\"'You went quiet just then' sounds like a friend, not a therapist.\"", bundle: 'pro' },
+        { q: "Better to carry on as if nothing happened.", a: "\"I can carry on, after one sentence that shows I saw it.\"", bundle: 'pro' },
+        { q: "What if I've got it completely wrong?", a: "\"Then they'll tell me, and that's the end of it.\"", bundle: 'pro' },
+        { q: "They'll think I'm making it about me.", a: "\"Asking how my words landed is about them, not about me.\"", bundle: 'pro' },
+        { q: "It's only a small thing.", a: "\"Small things are easiest to fix while they're still small.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mind-Reading",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"I should be able to read people without asking.\" A belief that is partly true, which is what makes it so hard to drop.\n\nWhat is true: you can notice a lot, and paying attention matters. Many people are good at spotting a shift.\n\nWhat gets added is the next step: \"so I should know what it means, without checking\". Seeing that something changed is not the same as knowing which feeling it is.\n\nWhat it costs is the wrong guess, acted on in silence, and a person who never got to say what was really going on.\n\nMindset: keep the noticing. Drop the idea that a good reader never asks.",
+      inputs: [
+        { q: "I should be able to read people without asking.", a: "\"True, I notice a lot — but 'so I never need to ask' is the part I added.\"", bundle: 'pro' },
+        { q: "Good friends just know.", a: "\"True, they often notice — but 'so they never check' is the part I added.\"", bundle: 'pro' },
+        { q: "Asking shows I wasn't paying attention.", a: "\"True, attention matters — but 'so a question proves I wasn't paying it' is the part I added.\"", bundle: 'pro' },
+        { q: "I'm usually right about people.", a: "\"True, maybe — but 'so this time I don't need to check' is the part I added.\"", bundle: 'pro' },
+        { q: "I can see exactly what she's feeling.", a: "\"True, I can see something — but 'so I know which feeling it is' is the part I added.\"", bundle: 'pro' },
+        { q: "If I have to ask, I've failed.", a: "\"True, I missed it at first — but 'so asking now is failing again' is the part I added.\"", bundle: 'pro' },
+        { q: "Body language says it all.", a: "\"True, it says a lot — but 'so it also tells me why' is the part I added.\"", bundle: 'pro' },
+        { q: "A guess I have to check isn't worth saying.", a: "\"True, it might be wrong — but 'so I should keep it to myself' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Other People's Moods",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"Other people's moods aren't my job. I respect their space.\" A belief that feels like good manners, and sometimes is.\n\nWhat is true instead: you do not have to fix anyone's mood. But noticing, and asking once, is part of any close conversation.\n\nIt feels reasonable because nobody wants to be the person who hovers, and taking people at their word seems fair.\n\nWhat it costs is quiet. The people closest to you handle their feelings alone, and you miss the moment your own words hurt someone.\n\nMindset: respecting their space can include one gentle question.",
+      inputs: [
+        { q: "Other people's moods aren't my job.", a: "\"And so the people closest to me deal with theirs alone.\"", bundle: 'pro' },
+        { q: "I don't get involved in other people's feelings.", a: "\"Which also means I miss the moment my own words hurt someone.\"", bundle: 'pro' },
+        { q: "I respect people's privacy.", a: "\"Respect could also be asking once and letting them choose.\"", bundle: 'pro' },
+        { q: "I'm not a mind-reader, and I don't pretend to be.", a: "\"Nobody asked me to read minds. Only to notice the short 'fine'.\"", bundle: 'pro' },
+        { q: "I keep things professional at work.", a: "\"And my team learns that nobody will notice when something lands badly.\"", bundle: 'pro' },
+        { q: "I take people at their word.", a: "\"And their word was 'fine', in a voice that meant the opposite.\"", bundle: 'pro' },
+        { q: "I let people come to me.", a: "\"And the ones who never come are left with it.\"", bundle: 'pro' },
+        { q: "I'm easygoing. I don't make a thing of moods.", a: "\"And the small thing I didn't notice becomes the big thing later.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  emotionalcalibration2: [
+    {
+      name: "Backing Off",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I stop now, they'll think I agree.\" The fear that putting your point down means giving it away.\n\nWhat is true instead: stopping is not agreeing, and you can say so. Your view is still yours after a pause.\n\nIt feels reasonable because in many arguments the last one talking seems to win, and silence has been taken as a yes before.\n\nWhat it costs is that you keep pushing long after anyone is listening, and the conversation goes nowhere you want.\n\nMindset: a pause keeps your point. Pushing on usually loses it.",
+      inputs: [
+        { q: "If I stop now, they'll think I agree.", a: "\"I can stop and still say I see it differently.\"", bundle: 'pro' },
+        { q: "If I don't say it again, they'll forget it.", a: "\"They heard it the first five times. A sixth won't help.\"", bundle: 'pro' },
+        { q: "Stopping looks weak.", a: "\"Stopping on purpose takes more strength than pushing on.\"", bundle: 'pro' },
+        { q: "If I give them space, they'll take over.", a: "\"Giving them space is how I find out what they actually think.\"", bundle: 'pro' },
+        { q: "If I put it down, I'll never get it back.", a: "\"I can pick it up again when we're both ready to listen.\"", bundle: 'pro' },
+        { q: "They have to hear my whole case first.", a: "\"Half my case, heard, is worth more than all of it, ignored.\"", bundle: 'pro' },
+        { q: "Silence means they won.", a: "\"Nobody wins an argument nobody's listening to.\"", bundle: 'pro' },
+        { q: "I can't stop halfway through.", a: "\"Halfway is a fine place to stop when the other half isn't landing.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Winning",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I don't back down when I'm right.\" A belief that feels like honesty and backbone, and sometimes is.\n\nWhat is true instead: changing course is not backing down. You can keep your view and still stop fighting for it.\n\nIt feels reasonable because being right matters, and people who give in too easily get walked over.\n\nWhat it costs is quiet: people stop arguing with you, and then stop telling you things at all.\n\nMindset: I can be right and still change course.",
+      inputs: [
+        { q: "I don't back down when I'm right.", a: "\"And sometimes being right is all I'm left with.\"", bundle: 'pro' },
+        { q: "Changing course means I lose.", a: "\"Each time I win like this, they tell me a little less.\"", bundle: 'pro' },
+        { q: "I stand by what I say.", a: "\"Standing by it is fine. Repeating it louder costs the conversation.\"", bundle: 'pro' },
+        { q: "If I'm right, I should make them see it.", a: "\"Making them see it usually makes them stop looking.\"", bundle: 'pro' },
+        { q: "I'm just being honest.", a: "\"Honest and relentless feel the same from the other side.\"", bundle: 'pro' },
+        { q: "Someone has to hold the line.", a: "\"Holding the line while they're hurt teaches them not to bring things to me.\"", bundle: 'pro' },
+        { q: "Letting it go would be fake.", a: "\"Pausing my point isn't fake. Pretending I'm not hurting them would be.\"", bundle: 'pro' },
+        { q: "I've never been one to give up.", a: "\"And I've won arguments with people who then stopped calling.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Finishing",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"We have to finish this now. I don't leave things unsettled.\" A belief that feels responsible, and often is.\n\nWhat is true instead: a hot conversation rarely ends well, and a talk you come back to tomorrow is not one you have dropped.\n\nIt feels reasonable because unfinished arguments can hang over a whole evening, and leaving them has gone badly before.\n\nWhat it costs is that you settle things at the worst possible moment, when both of you are least able to hear.\n\nMindset: settling it well matters more than settling it now.",
+      inputs: [
+        { q: "We have to finish this now.", a: "\"Finishing it now usually means finishing it badly.\"", bundle: 'pro' },
+        { q: "I don't go to bed angry.", a: "\"Staying up to argue doesn't make us less angry, only more tired.\"", bundle: 'pro' },
+        { q: "If we stop, it'll never get sorted.", a: "\"It gets sorted when we name a time and keep it.\"", bundle: 'pro' },
+        { q: "Leaving it unsettled is avoiding it.", a: "\"Coming back to it calmly is the opposite of avoiding it.\"", bundle: 'pro' },
+        { q: "I need to know where we stand before I can relax.", a: "\"My need to know right now is pushing us further apart.\"", bundle: 'pro' },
+        { q: "Slowing down just drags it out.", a: "\"Fast has dragged this out for three nights already.\"", bundle: 'pro' },
+        { q: "I'm the one who deals with things.", a: "\"Dealing with it at full speed means they're dealing with me.\"", bundle: 'pro' },
+        { q: "Once we've started, we can't stop halfway.", a: "\"Stopping halfway is how we avoid finishing in the wrong place.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Feelings and Facts",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"Feelings are getting in the way of the facts.\" A belief that is partly true, which makes it hard to put down.\n\nWhat is true: strong feelings can make it hard to think clearly, and the facts still matter.\n\nWhat gets added is \"so the feelings should be ignored\". The feelings are part of the facts. A plan nobody feels good about will not hold.\n\nWhat it costs is a conversation where you keep giving facts to someone who is no longer hearing them.\n\nMindset: keep the facts. Drop the idea that feelings are in the way of them.",
+      inputs: [
+        { q: "Feelings are getting in the way of the facts.", a: "\"True, they make it harder — but 'so I should ignore them' is the part I added.\"", bundle: 'pro' },
+        { q: "We should keep emotion out of it.", a: "\"True, shouting won't help — but 'so feelings don't belong here' is the part I added.\"", bundle: 'pro' },
+        { q: "The numbers speak for themselves.", a: "\"True, the numbers are clear — but 'so how they feel doesn't matter' is the part I added.\"", bundle: 'pro' },
+        { q: "They're being too sensitive.", a: "\"True, they're upset — but 'so it's not worth slowing down' is the part I added.\"", bundle: 'pro' },
+        { q: "Once they calm down, they'll see I'm right.", a: "\"True, calm helps — but 'so I'll keep arguing till they're calm' is the part I added.\"", bundle: 'pro' },
+        { q: "This is a practical question, not an emotional one.", a: "\"True, it started practical — but 'so it still is' is the part I added.\"", bundle: 'pro' },
+        { q: "Talking about feelings is a distraction.", a: "\"True, it can be — but 'so it always is' is the part I added.\"", bundle: 'pro' },
+        { q: "I'm just being logical.", a: "\"True, my points are logical — but 'so how they land doesn't count' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  emotionalcalibration3: [
+    {
+      name: "Agreement",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I say it makes sense, they'll think I agree.\" The belief that validating a feeling means accepting their version of events.\n\nWhat is true instead: understanding a feeling and sharing a view are separate, and you can say both.\n\nIt feels reasonable because in a disagreement every word seems to count as a point given away.\n\nWhat it costs is the conversation: you argue the facts while the feeling grows, and they never hear your view because they are busy defending their hurt.\n\nMindset: I can understand how they feel and still see it my way.",
+      inputs: [
+        { q: "If I say it makes sense, they'll think I agree.", a: "\"I can say the feeling makes sense and still say I see it differently.\"", bundle: 'pro' },
+        { q: "They've got the facts wrong, so the feeling must be wrong too.", a: "\"A feeling isn't right or wrong the way a fact is. It's just there.\"", bundle: 'pro' },
+        { q: "If I validate it, I'm rewarding the shouting.", a: "\"I'm answering the hurt under the shouting, not the shouting.\"", bundle: 'pro' },
+        { q: "I have to correct them first.", a: "\"They'll hear the correction far better once they feel understood.\"", bundle: 'pro' },
+        { q: "Saying I understand is basically saying sorry.", a: "\"Understanding isn't apologising. I can do one without the other.\"", bundle: 'pro' },
+        { q: "If I don't argue now, their version becomes the official one.", a: "\"I can say my view clearly, right after I've met their feeling.\"", bundle: 'pro' },
+        { q: "I can't validate something that's unfair to me.", a: "\"I can think it's unfair and still see why they feel the way they do.\"", bundle: 'pro' },
+        { q: "Validating is just being nice.", a: "\"It's being accurate: the feeling makes sense, even where I disagree.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Fixing",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'm the practical one. When someone's upset, I sort it out.\" A belief that feels like care — and often is.\n\nWhat is true instead: while a feeling is still fresh, a solution often feels like being hurried along.\n\nIt feels reasonable because helping is how you show you care, and doing nothing feels useless.\n\nWhat it quietly costs: people stop bringing you their feelings. They bring you their problems, or nothing at all.\n\nMindset: sometimes the help is staying, not solving.",
+      inputs: [
+        { q: "I'm a problem-solver.", a: "\"So people bring me their problems, and take their feelings somewhere else.\"", bundle: 'pro' },
+        { q: "If I can't fix it, I'm useless.", a: "\"Rushing to fix it tells them their sadness is something I need gone.\"", bundle: 'pro' },
+        { q: "I always know what to do.", a: "\"Which leaves them nothing to do but agree, while they still feel awful.\"", bundle: 'pro' },
+        { q: "Advice is the kindest thing I can give.", a: "\"Given too early, it sounds like 'please stop feeling this'.\"", bundle: 'pro' },
+        { q: "I hate seeing people suffer.", a: "\"So I hurry them out of it, and they learn not to show me.\"", bundle: 'pro' },
+        { q: "I like to be useful.", a: "\"Being useful keeps me busy, when what they needed was me, still.\"", bundle: 'pro' },
+        { q: "There's always something that can be done.", a: "\"Sometimes there isn't, and pretending there is leaves them alone with it.\"", bundle: 'pro' },
+        { q: "I'm just trying to help.", a: "\"Help that comes before listening often feels like not being heard.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Silence",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If nobody's talking, I should say something.\" The belief that a pause is a problem, and that it is your job to end it.\n\nWhat is true instead: in an emotional conversation, a pause is often the other person finding the words.\n\nIt feels reasonable because silence feels awkward, and filling it feels kind.\n\nWhat it costs is the thing they were about to say. You interrupt it, and they take your words as a sign to stop.\n\nMindset: a pause is room, not a gap to fill.",
+      inputs: [
+        { q: "Silence is awkward, so I should fill it.", a: "\"It's awkward for me. For them it may be room to think.\"", bundle: 'pro' },
+        { q: "If I don't say something, they'll think I don't care.", a: "\"Staying calm and close says I care more than any sentence.\"", bundle: 'pro' },
+        { q: "A long pause means the conversation's dying.", a: "\"A long pause often means the hard part is on its way.\"", bundle: 'pro' },
+        { q: "I should ask another question.", a: "\"One question at a time. Let them answer the first one.\"", bundle: 'pro' },
+        { q: "I need to say something wise.", a: "\"Nobody needs wise right now. 'Take your time' is enough.\"", bundle: 'pro' },
+        { q: "They've stopped, so they must be done.", a: "\"They might be gathering themselves. I can wait a little longer.\"", bundle: 'pro' },
+        { q: "If I wait, it'll get uncomfortable.", a: "\"It might. That's a small price for hearing what they really mean.\"", bundle: 'pro' },
+        { q: "Someone has to keep it going.", a: "\"They will, when they're ready. My job is to keep the door open.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mistakes",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"I said the wrong thing. Taking it back will only make me look weak.\" A belief with some truth in it — you did slip.\n\nWhat is true: you said it badly, and it is fine to own that.\n\nWhat gets added is the step from \"I said it badly\" to \"so I'd better stand by it\" — or \"so I've ruined it\".\n\nWhat it costs: the slip stays in the air, they decide what you meant, and the conversation closes.\n\nMindset: keep the honesty about the slip. Drop the idea that it can't be mended.",
+      inputs: [
+        { q: "I said the wrong thing.", a: "\"True — but 'so I have to stand by it' is the part I added.\"", bundle: 'pro' },
+        { q: "Taking it back makes me look weak.", a: "\"I did get it wrong — but 'so admitting it is weak' is the part I added.\"", bundle: 'pro' },
+        { q: "I've ruined the whole conversation.", a: "\"I made it worse — but 'so it can't be saved' is the part I added.\"", bundle: 'pro' },
+        { q: "They've already heard it.", a: "\"They have — but 'so a second try won't count' is the part I added.\"", bundle: 'pro' },
+        { q: "I meant well.", a: "\"I did — but 'so it can't have hurt' is the part I added.\"", bundle: 'pro' },
+        { q: "I'm bad at this kind of thing.", a: "\"I slipped this time — but 'so I should stay out of it' is the part I added.\"", bundle: 'pro' },
+        { q: "If I apologise, I'll make it all about me.", a: "\"A long apology would — but 'so I can't say anything' is the part I added.\"", bundle: 'pro' },
+        { q: "They're overreacting to one comment.", a: "\"Maybe a little — but 'so I don't need to repair it' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };

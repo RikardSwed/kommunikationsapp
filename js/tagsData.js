@@ -520,6 +520,27 @@ const packTags = {
   networking2: [
     'networking', 'following up', 'informational interview', 'introductions', 'reconnecting', 'staying in touch', 'career', 'advice', 'thank you'
   ],
+  jobinterview1: [
+    'job interview', 'interview questions', 'tell me about yourself', 'behavioural questions', 'star', 'weakness question', 'why this job', 'questions for the interviewer', 'career'
+  ],
+  jobinterview2: [
+    'job interview', 'cv gap', 'mistakes', 'salary', 'personal questions', 'follow-up', 'rejection', 'career'
+  ],
+  talkingtoyourmanager: [
+    'manager', 'boss', 'work', 'status update', 'workload', 'priorities', 'disagreeing at work', 'bad news', 'mistakes', 'raise', 'salary', 'training', 'career'
+  ],
+  newatwork: [
+    'new job', 'first weeks', 'starting work', 'onboarding', 'colleagues', 'asking questions', 'unwritten rules', 'feedback', 'career'
+  ],
+  emotionalcalibration1: [
+    'emotions', 'emotional calibration', 'noticing', 'reading people', 'check-ins', 'feelings', 'emotional granularity', 'listening', 'empathy', 'tone'
+  ],
+  emotionalcalibration2: [
+    'emotions', 'de-escalation', 'arguments', 'changing course', 'contrasting', 'curiosity', 'repair', 'self-regulation', 'conflict'
+  ],
+  emotionalcalibration3: [
+    'emotions', 'validation', 'anger', 'hurt', 'comfort', 'listening', 'repair', 'empathy', 'disagreement', 'difficult conversations'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -552,10 +573,10 @@ const TOPICS = [
   { id: 'questions',             title: 'Questions & Curiosity',         packs: ['deepquestions'] },
   { id: 'flowtransitions',       title: 'Flow & Transitions',            packs: ['conversational', 'transitions', 'reactingtounexpectedstatements', 'changingtopics'] },
   { id: 'endingconversations',   title: 'Ending Conversations',          packs: ['endingconversations'] },
-  { id: 'networking',            title: 'Networking & Career',           packs: ['networking1', 'networking2'] },   // v1.29.55
+  { id: 'networking',            title: 'Networking & Career',           packs: ['networking1', 'networking2', 'jobinterview1', 'jobinterview2', 'talkingtoyourmanager', 'newatwork'] },   // v1.29.55
 
   // ── Being with the other person ───────────────────────────────────
-  { id: 'listening',             title: 'Listening & Understanding',     packs: ['listeningresponding', 'validation', 'listeningthroughquestions', 'showunderstanding2', 'jimmy3', 'showunderstanding', 'askingforclarity'] },
+  { id: 'listening',             title: 'Listening & Understanding',     packs: ['listeningresponding', 'validation', 'listeningthroughquestions', 'showunderstanding2', 'jimmy3', 'showunderstanding', 'askingforclarity', 'emotionalcalibration1'] },
   { id: 'depth',                 title: 'Depth & Connection',            packs: ['conversationaldepth', 'supportingconversations', 'talkingaboutyourself', 'supercomm1'] },
 
   // ── Holding the floor ─────────────────────────────────────────────
@@ -575,7 +596,7 @@ const TOPICS = [
   { id: 'boundaries',            title: 'Asking & Saying No',            packs: ['playfulrefusals', 'thehappyno', 'theregretfulno', 'makingrequests', 'sayingno', 'oconnor2', 'jimmy6', 'askingpermission', 'toneboundaries1', 'toneboundaries2'] },
 
   // ── The hard end ──────────────────────────────────────────────────
-  { id: 'emotions',              title: 'Emotions & Regulation',         packs: ['emotionlabellingandregulation', 'conflictemotions', 'praxdread4', 'reframing', 'oconnor6'] },
+  { id: 'emotions',              title: 'Emotions & Regulation',         packs: ['emotionlabellingandregulation', 'conflictemotions', 'praxdread4', 'reframing', 'oconnor6', 'emotionalcalibration1', 'emotionalcalibration2', 'emotionalcalibration3'] },
 
   // ── In writing (v1.29.12) ─────────────────────────────────────────
   { id: 'written',               title: 'Messages & Writing',            packs: ['toneinmessages', 'replyingandnotreplying', 'whentostoptyping', 'supercomm3'] },

@@ -13588,6 +13588,628 @@ const collections = {
       ]
     },
   ],
+  jobinterview1: [
+    {
+      name: "Present, Past, Future",
+      guideFront: "Sum up your path when...",
+      guideBack: "A three-part intro that ends here",
+      description: "When they say \"Tell me about yourself\", answer in three short parts: what you do now, what led you here, and why this job is the next step. Not your life story, and not your CV read out loud. \"I'm a nurse on a busy surgical ward. Before that I worked in elderly care. Now I want to work with children, which is why this job caught my eye.\"\n\nIt works because the open question is really asking two things: who are you, and why are you sitting in this chair? Three parts answer both in under a minute, and the last part gives them an easy next question. Starting with school, or listing every job you have had, makes them wait for the point.\n\nThe present comes first because it is the most relevant thing about you. The past is only there to explain how you got to now. The future ties it all to this job.\n\nTypical phrases: \"Right now I...\", \"Before that I...\", \"So the next step for me is...\", \"That's why this job caught my eye.\"\n\nThree shapes it can take:\n\n1. The straight line — each step leads to the next. \"I run the bakery counter now. I started on the tills. I'd like to manage a whole shop.\"\n\n2. The career change — the past explains the jump. \"I've taught maths for eight years, and for two I've built our school's spreadsheets. I'd like to do that full time.\"\n\n3. The first job — the present is school. \"I'm in my second year at school. I've helped at my aunt's café on Saturdays, and I'd like a summer job where I'm busy.\"\n\nMindset: they are not asking for your life story. They are asking why you are here.",
+      inputs: [
+        { q: "Interview for a nurse job on a children's ward. Maria smiles and says, \"So, tell me about yourself.\"", a: "\"I'm a nurse on a busy surgical ward. Before that I worked four years in elderly care. Now I want to work with children, which is why this job caught my eye.\"", bundle: 'free' },
+        { q: "Interview for a warehouse job. The shift manager, Dave, starts with, \"Tell me a bit about you.\"", a: "\"I drive a forklift at a garden centre at the moment. Before that I packed orders for two years. I'd like a bigger site with night shifts, and that's what you have.\"", bundle: 'free' },
+        { q: "Interview for a junior developer job. Priya says, \"Walk me through your background.\"", a: "\"Right now I build small websites for local shops. Before that I studied IT at college. Now I want to work in a team on one product, with people who know more than I do.\"", bundle: 'free' },
+        { q: "Interview for a summer job at a supermarket. Linda says, \"So, tell me a bit about yourself.\"", a: "\"I'm in my second year at school. I've helped at my aunt's café every Saturday since spring. I'd like a summer job where I'm busy and talking to people.\"", bundle: 'free' },
+        { q: "Henrik asks you to introduce yourself for an accountant job, and you are about to start with where you went to school.", a: "\"Right now I do the monthly accounts for three small firms. Before that I was in a large audit team. I'd like to work for one company and really know its numbers.\"", bundle: 'free' },
+        { q: "You have taught for ten years and are interviewing for a training job at a software company. Jonas says, \"Tell me about yourself.\"", a: "\"I've taught English for ten years, and for the last three I've also trained new teachers. I'd like to do that full time, and training people on your system is close to it.\"", bundle: 'pro' },
+        { q: "Interview for a cook's job in a hotel kitchen. The head chef, Marco, says, \"Go on, who am I talking to?\"", a: "\"I'm a line cook at a busy pizza place, mostly on the oven. Before that I did a year in a school kitchen. I want to learn a full menu, and your kitchen cooks everything from scratch.\"", bundle: 'pro' },
+        { q: "You have talked about your old jobs for two minutes, and Sara, who is hiring a shop manager, is still waiting for the point.", a: "\"So, short version: I'm an assistant manager now, and running my own shop is the next step. That's why I'm here.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Answer With a Story",
+      guideFront: "Tell one real example when...",
+      guideBack: "A short story with a result",
+      description: "When they ask \"Tell me about a time when...\", tell one real example: the situation in a sentence, what you did, and how it turned out. \"Our supplier failed the week before Christmas. I called three others that day and found one. We didn't miss a single order.\" This is the STAR method — Situation, Task, Action, Result — said short.\n\nIt works because a question like this is asking for proof, not opinion. \"I'm good under pressure\" is a claim anyone can make. One real day, with what you did and what happened, is something they can picture and remember.\n\nMake what you did the biggest part, and say \"I\" for your own part, not \"we\". End with the result — a number, an outcome, or what changed. If it went badly, the result is what you do differently now.\n\nTypical phrases: \"There was a week when...\", \"What I did was...\", \"In the end...\", \"Since then we've...\"\n\nThree kinds of story worth having ready:\n\n1. The problem solved — \"The fridge broke on a Saturday. I moved everything to the bar's cold room, and we only lost two boxes of salad.\"\n\n2. The people story — a disagreement or a difficult customer. \"A colleague and I disagreed about the rota. I asked to see her version, and we used half of each.\"\n\n3. The thing that went wrong — \"I sent the wrong file to a customer. I called them the same hour, and now I check before I press send.\"\n\nMindset: you do not need your best story. You need a true one, told short, that ends with what happened.",
+      inputs: [
+        { q: "Dave asks, for the warehouse job, \"Tell me about a time you worked under pressure.\"", a: "\"Our supplier failed the week before Christmas. I called three others that morning and found one by lunch. We didn't miss a single order.\"", bundle: 'free' },
+        { q: "Maria asks, for the nurse job, \"Tell me about a time you dealt with an upset family.\"", a: "\"A daughter was angry that her dad's pain relief was late. I sat down with her, checked his chart and got the doctor within ten minutes. She thanked me the next day.\"", bundle: 'free' },
+        { q: "Linda asks, for the supermarket job, \"Can you give me an example of good customer service?\"", a: "\"A man needed a birthday present we'd sold out of. I rang our other shop, they had one, and I asked them to keep it for him. He came back the next week.\"", bundle: 'free' },
+        { q: "Priya asks, for the developer job, \"Tell me about a time you disagreed with a colleague.\"", a: "\"A colleague wanted to rebuild a whole page, and I wanted to fix it. We each wrote down how many hours it would take. Fixing it won, and we used his design later.\"", bundle: 'free' },
+        { q: "Henrik asks, \"Tell me about a time you took the initiative,\" and you are about to say, \"I'm a very proactive person.\"", a: "\"Our invoices went out late every month. I made a one-page checklist and shared it with the team. Two months later they were going out on time.\"", bundle: 'free' },
+        { q: "Marco asks, for the hotel kitchen, \"Tell me about a time something went wrong in a kitchen.\"", a: "\"The fridge broke on a Saturday morning. I moved everything to the bar's cold room and changed two lunch dishes. We lost two boxes of salad, nothing else.\"", bundle: 'pro' },
+        { q: "Anna, interviewing you for a teaching job, asks, \"Tell me about a lesson that didn't work.\"", a: "\"My first poetry lesson with Year 8 fell flat — nobody said a word. The next day I let them write song lyrics instead. Half the class read theirs out loud.\"", bundle: 'pro' },
+        { q: "You have never had a job. Tom, who runs a café, asks, \"Tell me about a time you worked in a team.\"", a: "\"Our class ran a stall at the Christmas market to pay for a trip. I did the money and counted it every evening. It matched every night, and we paid for the whole trip.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Honest Weakness",
+      guideFront: "Name a real flaw when...",
+      guideBack: "A true flaw, and the fix",
+      description: "When they ask \"What's your biggest weakness?\", name a real one — not a strength in disguise — and say what you do about it. \"I used to say yes to everything. Now I check my week before I take on more.\"\n\nIt works because the question is not a trap for a confession. They want to see whether you know yourself and whether you can improve. \"I'm a perfectionist\" tells them you have practised an answer. A real, ordinary weakness, with a habit that keeps it in check, tells them you will be easy to work with.\n\nChoose something true that is not the heart of the job. A nurse who panics under stress is a problem; a nurse who is slow with the computer system has a fixable one.\n\nTypical phrases: \"Honestly, I...\", \"What I do about it is...\", \"It's better than it was.\", \"I'm still working on it.\"\n\nThree parts, and the third matters most:\n\n1. The weakness, plainly — \"I find it hard to speak up in big meetings.\"\n\n2. What it has cost, if they ask — \"Once it meant someone else got the credit for my idea.\"\n\n3. What you do now — \"Now I write one point down before the meeting and say it in the first ten minutes.\"\n\nMindset: a weakness with a fix is not a confession. It shows them you know yourself.",
+      inputs: [
+        { q: "Anna asks, for the teaching job, \"What's your biggest weakness?\"", a: "\"I used to say yes to every extra job at school. Now I check my week before I take anything on.\"", bundle: 'free' },
+        { q: "Priya asks, for the developer job, \"What do you need to work on?\"", a: "\"When I'm stuck, I go quiet and lose half a day. Now I give myself one hour, and then I ask someone.\"", bundle: 'free' },
+        { q: "Linda asks, for the supermarket job, \"What are you not so good at?\"", a: "\"I find it hard to say no to pushy people. I'm practising saying the rule as it is — 'I can't do that, but I can do this' — and not apologising.\"", bundle: 'free' },
+        { q: "Henrik asks, \"What's a weakness of yours?\" and \"I'm a perfectionist\" is on the tip of your tongue.", a: "\"I'm slow to hand work over — I'd rather do it myself. I'm learning to explain a task once and then let it go.\"", bundle: 'free' },
+        { q: "Dave asks, for the warehouse job, \"Anything you find difficult?\"", a: "\"Paperwork. I'm quick on the floor and slow with the forms. I do them at the end of every shift now, so they don't pile up.\"", bundle: 'free' },
+        { q: "Maria asks, for the nurse job, \"What would your colleagues say you could do better?\"", a: "\"That my handovers take too long. I've started using a short list, and it's brought them down to about five minutes.\"", bundle: 'pro' },
+        { q: "Tom asks, for your first café job, \"What's your weakness, would you say?\"", a: "\"I get nervous on the phone. I've started making calls for my family to practise, and it's getting easier.\"", bundle: 'pro' },
+        { q: "You told Marco you lose track of time on a busy shift. He asks, \"Has that ever caused a problem?\"", a: "\"Once — a tray of bread burnt during a rush. Since then I put a timer on everything, even the toast.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Why This Job",
+      guideFront: "Say what drew you here when...",
+      guideBack: "A specific reason, tied to you",
+      description: "When they ask \"Why do you want this job?\" or \"Why us?\", give one specific thing about them and connect it to you. Not \"it seems like a great company\" — something only they have. \"I've used your app for two years, and I'd like to work on the part I complain about most.\"\n\nIt works because the question checks whether you chose them or just applied everywhere. A general answer could be said to any employer, and they can hear that. One concrete detail — something you saw, used, read or heard — shows you looked, and the link to you shows why you would stay.\n\nFind the detail before the interview: on their website, in the job ad, as a customer, or from someone who works there.\n\nTypical phrases: \"What caught my eye was...\", \"I noticed that you...\", \"That fits me because...\", \"I've been a customer for...\"\n\nThree places to find the detail:\n\n1. What you have seen as a customer — \"I shop here every week, and your staff always know where things are.\"\n\n2. What the job ad says — \"Your ad says you train new drivers for two weeks. That's exactly what I need.\"\n\n3. What you have heard or read — \"A friend who works here says new nurses get a mentor for the first year.\"\n\nMindset: they do not need flattery. They need one reason that is true about them and true about you.",
+      inputs: [
+        { q: "Priya asks, for the developer job, \"Why do you want to work here?\"", a: "\"I've used your app for two years, and I'd like to work on the part I complain about most — the search.\"", bundle: 'free' },
+        { q: "Linda asks, for the supermarket summer job, \"Why this shop?\"", a: "\"I shop here with my mum every week, and the staff always know where everything is. I'd like to be one of them.\"", bundle: 'free' },
+        { q: "Maria asks, for the nurse job, \"Why this ward?\"", a: "\"Your ward lets parents stay overnight, and I've seen how much that calms a child. I want to work somewhere that thinks like that.\"", bundle: 'free' },
+        { q: "Dave asks, for the warehouse job, \"Why us and not the place down the road?\"", a: "\"Your ad says you train every new driver for two weeks. I want to learn the big trucks properly, not be thrown in.\"", bundle: 'free' },
+        { q: "Anna asks, \"Why our school?\" and you are about to say, \"It just seems like a great school.\"", a: "\"You put two teachers in the first-year maths classes. I've seen what that does for the students who are struggling.\"", bundle: 'free' },
+        { q: "Henrik asks, \"Why leave audit for a job like ours?\"", a: "\"In audit I see a company for two weeks a year. Here I'd follow one company's numbers all year, and that's the part I like.\"", bundle: 'pro' },
+        { q: "Marco asks, for the hotel kitchen, \"Why my kitchen?\"", a: "\"I ate here in March. The fish was cooked better than anything I can make, and I'd like to learn how.\"", bundle: 'pro' },
+        { q: "Jonas asks, for the training job, \"Why leave teaching for us?\"", a: "\"I'm not really leaving teaching. I'd be teaching adults to use your system, and your ad says that's half the job.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask Them a Question",
+      guideFront: "Ask about the real work when...",
+      guideBack: "A genuine question about the role",
+      description: "When they say \"Do you have any questions for us?\", have a real one ready — about the work, the team or the first months. \"What would a great first year look like in this role?\"\n\nIt works because \"No, I think you've covered everything\" sounds as if you are not that interested. A real question shows that you are already picturing yourself in the job, and the answer tells you whether you want it. An interview is a conversation about a job, and this is your half.\n\nAsk about the job itself, not pay or holidays — in a first interview those can wait. One or two questions are enough, and listen to the answer.\n\nTypical phrases: \"What would a good first year look like?\", \"What does a normal day look like?\", \"What do new people find hardest?\", \"What's the next step after today?\"\n\nThree kinds of question:\n\n1. About success — \"What would you like the new person to have done by Christmas?\"\n\n2. About the team — \"Who would I work with most closely?\"\n\n3. About something they said — often the best one. \"You mentioned the new shop. What would my part in that be?\"\n\nMindset: the interview is a conversation. Your question is your half of it.",
+      inputs: [
+        { q: "At the end of the developer interview, Priya asks, \"Do you have any questions for us?\"", a: "\"What would a great first year look like in this role?\"", bundle: 'free' },
+        { q: "Maria closes her notebook: \"That's all from us. Anything you'd like to ask?\"", a: "\"What do new nurses on this ward find hardest in their first months?\"", bundle: 'free' },
+        { q: "Dave says, \"Any questions?\" and you are about to say, \"No, I think you've covered everything.\"", a: "\"Yes — who would I be working with most on the night shift?\"", bundle: 'free' },
+        { q: "Earlier, Anna mentioned a new reading project. Now she asks if you have any questions.", a: "\"You mentioned the new reading project. What would my part in it be?\"", bundle: 'free' },
+        { q: "Linda asks, for the supermarket summer job, \"Anything you want to know?\"", a: "\"What does a normal day look like for a summer worker here?\"", bundle: 'free' },
+        { q: "Henrik has answered your first question and glances at his watch. \"Anything else?\"", a: "\"Just one — what's the next step after today, and when will I hear from you?\"", bundle: 'pro' },
+        { q: "Marco asks, \"Questions?\" You want to ask about pay, but it is the first interview.", a: "\"What would you want me to be able to cook on my own after three months?\"", bundle: 'pro' },
+        { q: "Jonas asks, for the training job, \"What else would you like to know?\"", a: "\"What made the last person in this role good at it?\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  jobinterview2: [
+    {
+      name: "Explain the Gap",
+      guideFront: "Give one reason and look ahead when...",
+      guideBack: "A short reason, then forward",
+      description: "Explain a gap in your CV in two short parts — one sentence on why, one on where you are now — and then move on to the job. \"I was at home with my dad for a year while he was ill. I'm ready to work full time again.\"\n\nIt works because the interviewer is rarely judging the gap itself. They are checking two things: is there a problem you are hiding, and are you ready now? A calm, short answer settles both. A long, nervous one makes them wonder what the long version is protecting.\n\nThe forward part matters most. End on the job, not on the gap, so the next question is about the work.\n\nTypical phrases: \"I took a year to care for my mother.\", \"I was made redundant and used the time to get my forklift licence.\", \"That part of my life is settled now, and I'm ready to be back.\"\n\nThree kinds of gap, and how each one sounds:\n\n1. Life happened — illness, family, a move. Name it plainly and stop. \"We moved countries, and I spent a year learning the language.\"\n\n2. You lost a job — say so without blame. \"The shop closed. Since then I've done short contracts while I looked for the right place.\"\n\n3. You chose it — a break, a course, a business. Own it as a choice. \"I ran my own café for a year. It taught me a lot about costs, and now I want to be part of a team.\"\n\nMindset: a gap is a fact, not a confession. Say it once, keep it short, and point at what comes next.",
+      inputs: [
+        { q: "At a warehouse interview, the manager points at your CV: \"There's a year here with nothing on it. What happened?\"", a: "\"I was at home with my dad while he was ill. He's doing much better now, and I'm ready to work full time again.\"", bundle: 'free' },
+        { q: "You are applying for a nursing job after two years at home with your children. The interviewer asks what you have been doing since 2023.", a: "\"I've been at home with my two kids. They're both in school now, and I've kept my registration up to date the whole time.\"", bundle: 'free' },
+        { q: "At a bank, the interviewer asks why you have not worked since your last job ended eight months ago.", a: "\"My job was cut when the office closed. I used the time to finish an accounting course, and now I'm ready for the next step.\"", bundle: 'free' },
+        { q: "A school head asks about the year on your CV marked \"travelling\".", a: "\"I travelled for a year and taught English in Vietnam for part of it. It made me sure that I want to teach full time.\"", bundle: 'free' },
+        { q: "A café owner asks why your CV jumps from 2021 to 2023.", a: "\"I was ill for most of that time. I'm fully well now, and I've been looking forward to getting back to work.\"", bundle: 'free' },
+        { q: "You have explained the gap, and the interviewer asks again: \"But what did you actually do all that time?\"", a: "\"Mostly I looked after my mum. I also kept the books for a neighbour's small firm, so I haven't lost touch with the work.\"", bundle: 'pro' },
+        { q: "The gap was spent running your own cleaning company, which did not work out. The interviewer asks about it.", a: "\"I ran my own cleaning company for two years. It didn't make enough money, but I learned a lot about customers, and I'd like to bring that here.\"", bundle: 'pro' },
+        { q: "You can feel yourself starting a long, nervous explanation of the year you took off after burning out.", a: "\"Short version: I needed a year off after a very hard job. I'm rested now, and I'm ready.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Own a Mistake",
+      guideFront: "Admit the error and the fix when...",
+      guideBack: "An admission with a lesson",
+      description: "Name a real mistake, say it was yours, and say what you did about it and what you do differently now. \"I sent a price list with the wrong numbers to a customer. I called them myself, fixed it, and now I check everything twice before it leaves.\"\n\nIt works because the question is not \"have you ever got anything wrong?\" — everyone has. The question is \"what do you do when you get something wrong?\" An interviewer listens for three things: that you can name it without making it smaller, that you do not blame someone else, and that something changed afterwards.\n\nPick a real mistake with a real fix — not a disaster, and not a strength in disguise. \"I care too much\" answers nothing.\n\nTypical phrases: \"That one was on me.\", \"I fixed it by calling them the same day.\", \"Now I always check before I send.\", \"What I do differently now is...\"\n\nThree parts, said in one go:\n\n1. What happened — one sentence, plainly. \"I booked two school groups into the same room.\"\n\n2. What you did — the fix, by you. \"I called both teachers that morning and found a second room.\"\n\n3. What changed — the habit you have now. \"Now every booking goes into one shared calendar.\"\n\nMindset: owning a mistake shows them the thing they are really hiring for — what you do next.",
+      inputs: [
+        { q: "A shop manager asks, \"Tell me about a mistake you've made at work.\"", a: "\"I once ordered three times too much milk. We sold what we could at a discount, and now I check every order against last week's before I send it.\"", bundle: 'free' },
+        { q: "At a hospital interview, they ask about a time something went wrong.", a: "\"I once forgot to pass on a patient's allergy at handover. A colleague caught it. Since then I write every allergy at the top of my notes, every shift.\"", bundle: 'free' },
+        { q: "A tech company asks, \"What's the biggest mistake you've made in a job?\"", a: "\"I pushed a change on a Friday that broke the login page for an hour. I rolled it back myself, and now I never release anything on a Friday afternoon.\"", bundle: 'free' },
+        { q: "You are about to explain that the mistake was really your colleague's fault.", a: "\"Others were involved, but my part was not checking the figures. Now I always check them before I sign off.\"", bundle: 'free' },
+        { q: "A school asks about a lesson that went badly.", a: "\"I once planned a lesson that was far too hard, and I lost the class in ten minutes. I stopped and asked what they knew, and now I always start with a quick check.\"", bundle: 'free' },
+        { q: "You have told them about the mistake, and they ask, \"And what did your manager say?\"", a: "\"She wasn't happy, and she was right. I told her what I'd already fixed before she had to ask, and that helped.\"", bundle: 'pro' },
+        { q: "You are tempted to give a safe answer like \"I work too hard\" instead of a real mistake.", a: "\"A real one: I promised a customer a delivery date without checking with the warehouse, and we missed it. Now I check before I promise anything.\"", bundle: 'pro' },
+        { q: "A building firm asks about a mistake that cost money.", a: "\"I priced a job too low, and we lost about a week's profit on it. I told my boss the same day, and now I use a checklist for every quote.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "When You Don't Know",
+      guideFront: "Be honest, then show a plan when...",
+      guideBack: "An honest no, with a plan",
+      description: "When they ask about something you do not know or have not done, say so honestly, then show how you would handle it. \"I haven't used that system. I learned our last one in two weeks, and I'd do the same here.\"\n\nIt works because the interviewer often knows the answer already — it is on your CV, or it is not. What they are testing is whether you will bluff, and whether you can learn. A bluff is easy to spot and hard to recover from. An honest no followed by a plan answers the real question.\n\nKeep the no short. One sentence of honesty, then the plan, which is where your answer should spend its time.\n\nTypical phrases: \"I haven't, no.\", \"I don't know that one, but here's how I'd find out.\", \"I've done something close to it.\", \"I'd want to check that before I gave you an answer.\"\n\nThree ways to follow the honest no:\n\n1. Something close that you have done — \"I haven't driven a forklift, but I've used a pallet truck for three years.\"\n\n2. How fast you learn — with a real example. \"I'd never used a till before my last job, and by week three I was training others.\"\n\n3. How you would find out — for a question you cannot answer on the spot. \"I'm not sure of the rule there. I'd check with the pharmacist before giving the patient anything.\"\n\nMindset: \"I don't know\" is not a failed answer. Pretending is.",
+      inputs: [
+        { q: "A hotel manager asks if you have used their booking system.", a: "\"I haven't used that one. I learned the system at my last hotel in two weeks, and I'd expect the same here.\"", bundle: 'free' },
+        { q: "At a warehouse interview, they ask, \"Do you have a forklift licence?\"", a: "\"Not yet. I've used a pallet truck every day for three years, and I can book the licence course this month.\"", bundle: 'free' },
+        { q: "An accounting firm asks a technical question about a tax rule you do not know.", a: "\"I don't know that one off the top of my head. I'd check the official guidance before giving a client an answer I wasn't sure of.\"", bundle: 'free' },
+        { q: "A shop asks, \"Have you ever managed a team?\"", a: "\"Not officially. I trained the last four new starters on my shift, and I'd like to do more of that.\"", bundle: 'free' },
+        { q: "You are about to say you know a programming language well, when you have only tried it once.", a: "\"Honestly, only a little — one small project. I'm much stronger in Python, and I pick up new languages quickly.\"", bundle: 'free' },
+        { q: "At a nursing interview, they ask a clinical question you are not sure about.", a: "\"I'm not sure, and I wouldn't guess with a patient. I'd check the guidelines or ask the nurse in charge.\"", bundle: 'pro' },
+        { q: "You have said you have not used the software, and they push: \"So you have no experience with it at all?\"", a: "\"Not with that one, no. I've learned three similar programs, and the first two weeks are always the slowest.\"", bundle: 'pro' },
+        { q: "A travel company asks, \"Do you speak German?\"", a: "\"Only a little — enough to order dinner. If the job needs more, I'd start a course straight away.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Salary Question",
+      guideFront: "Give a range or ask theirs when...",
+      guideBack: "A range, or a question about theirs",
+      description: "When they ask what you expect to earn, give a range based on what jobs like this usually pay — or ask what range they have. \"From what I've seen, jobs like this pay between 34 and 38 thousand a month. What range do you have in mind?\"\n\nIt works because a range gives them room without leaving you with nothing. One number can feel like a demand, and it can be too low for you or too high for them. \"Whatever you think is fair\" hands the whole decision to them. A range that comes from the job, not from your bills, is easy to talk about: you are not asking for more, you are saying what this work usually pays.\n\nDo the homework before the interview — job ads, pay tables, people you know in the same work. Then \"from what I've seen\" is true.\n\nTypical phrases: \"From what I've seen, roles like this pay between...\", \"What range do you have for this job?\", \"Something around that, depending on the hours.\", \"Is there any room in that?\"\n\nThree ways in:\n\n1. Give your range — the default. \"From what I've seen, it's around 28 to 31 thousand a month for a role like this.\"\n\n2. Ask for theirs first — when you have nothing to go on. \"What range have you set for this role?\"\n\n3. Put the range next to the whole offer — hours, holidays, training. \"I'd say 32 to 35, and I'm flexible if the hours are.\"\n\nMindset: naming a number is not greedy. It is a normal part of the interview, and they are expecting it.",
+      inputs: [
+        { q: "At a warehouse interview, they ask, \"What salary are you looking for?\"", a: "\"From what I've seen, jobs like this pay around 27 to 30 thousand a month. What range do you have in mind?\"", bundle: 'free' },
+        { q: "A software company asks what you expect to earn, and you could not find any figures for this kind of role.", a: "\"I'd like to hear your range first. What have you set for this role?\"", bundle: 'free' },
+        { q: "A hospital asks, \"What do you expect to earn?\"", a: "\"From what I've seen, nurses with my experience get between 36 and 40 thousand a month. I'd expect something in that range.\"", bundle: 'free' },
+        { q: "You are about to say, \"Whatever you think is fair.\"", a: "\"I'd rather give you a range: between 31 and 34 thousand a month, depending on the hours.\"", bundle: 'free' },
+        { q: "A garden centre hiring for the summer says, \"We pay by the hour. What were you thinking?\"", a: "\"From what I've seen, summer work like this pays about 140 to 160 an hour. Is that close to yours?\"", bundle: 'free' },
+        { q: "You gave your range, and they say, \"That's a bit above what we planned.\"", a: "\"Okay. What range did you have in mind? I'm happy to look at the whole package, not just the number.\"", bundle: 'pro' },
+        { q: "The interviewer asks what you earn in your current job.", a: "\"I'm on 29 thousand now, but I'm looking at what this job pays. From what I've seen, that's about 32 to 35.\"", bundle: 'pro' },
+        { q: "A restaurant offers you the head chef job at a number lower than you expected.", a: "\"Thank you. From what I've seen, head chef jobs in this city pay 38 to 42 thousand. Is there any room in yours?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Turn a Personal Question",
+      guideFront: "Answer what the job needs when...",
+      guideBack: "A polite redirect to the work",
+      description: "When they ask something that has nothing to do with the job — family plans, age, religion, health, a partner, where you come from — answer what the job actually needs to know, and leave the rest. \"I'm fully able to work the hours. Is there something about the schedule you're wondering about?\"\n\nIt works because there is usually a real worry under the question: will you be there, can you do the shifts, will you stay? Answering that worry is polite, honest and short, and it brings the conversation back to the work without accusing anyone of anything. You do not have to give the private answer, and you do not have to lecture them about asking.\n\nKeep it warm. Most of these questions come from clumsiness, not bad intent, and a calm answer is the quickest way back to the interview.\n\nTypical phrases: \"Nothing will get in the way of the hours.\", \"Is there something about the job you're wondering about?\", \"I'd rather keep that private, but I'm fully committed to this role.\", \"What matters for the job is...\"\n\nThree ways to turn it:\n\n1. Answer the worry underneath — \"Are you planning to have children?\" becomes \"I'm planning to be here for the long term.\"\n\n2. Ask what they need to know — \"Is there something about the schedule you're wondering about?\"\n\n3. Say it is private, warmly, and move on — \"I keep that private, but I'm happy to talk about anything to do with the job.\"\n\nMindset: you can be polite without handing over your private life. Answer the job, not the question.",
+      inputs: [
+        { q: "At an office interview, the manager asks, \"Are you planning to have children soon?\"", a: "\"I'm planning to be here for the long term. Is there something about the role you're wondering about?\"", bundle: 'free' },
+        { q: "A shop owner asks, \"How old are you, if you don't mind me asking?\"", a: "\"Old enough to have done this kind of work for twenty years. What else would you like to know about my experience?\"", bundle: 'free' },
+        { q: "An engineering firm looks at your name and asks, \"Where are you originally from?\"", a: "\"I've lived and worked here for twelve years, and I have the right to work. Is that what you needed to check?\"", bundle: 'free' },
+        { q: "A supermarket asks, \"Does your religion affect which days you can work?\"", a: "\"I can work the rota as it's set out. Is there a particular day you're thinking of?\"", bundle: 'free' },
+        { q: "A warehouse asks, \"Do you have any health problems we should know about?\"", a: "\"Nothing that stops me doing this job. I'm used to lifting and being on my feet all day.\"", bundle: 'free' },
+        { q: "At a care home interview, they ask, \"What does your husband think about you working nights?\"", a: "\"I worked nights for five years at my last job, and it suits me. I'd be happy to do the same here.\"", bundle: 'pro' },
+        { q: "You have turned the question once, and they press: \"But do you have kids or not?\"", a: "\"I'd rather keep my family life out of it. What I can promise is that I'll be here on time and do the job well.\"", bundle: 'pro' },
+        { q: "Over coffee after the formal part, a friendly interviewer asks, \"So, are you married? Any big plans?\"", a: "\"Nothing that would get in the way of this job. Tell me more about the team I'd be joining.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Follow Up After",
+      guideFront: "Get back in touch briefly when...",
+      guideBack: "A short message with one detail",
+      description: "After the interview, send a short thank-you with one real detail from the conversation — and if they did not say what happens next, ask. \"Thank you for today. I keep thinking about your plan for the new store. When can I expect to hear from you?\"\n\nIt works because most people send nothing, and the few who do send something general. One real detail shows you were listening and keeps you in their mind as a person, not a CV. Asking about the next step is not pushy — it is the only way to plan.\n\nThe same short shape works when nothing comes back, and when the answer is no. A week or two of silence gets one friendly check-in. A rejection gets a thank-you and an open door, because the next job at that place may come sooner than you think.\n\nTypical phrases: \"Thank you for today.\", \"I enjoyed hearing about...\", \"When can I expect to hear from you?\", \"I'm still very interested in the role.\", \"Thank you for letting me know.\"\n\nThree times to use it:\n\n1. The same day — a thank-you with one detail. \"I enjoyed seeing the new kitchen.\"\n\n2. After silence — one check-in, no complaint. \"I wanted to ask where you are with the role. I'm still very interested.\"\n\n3. After a no — thanks, and an open door. \"Thank you for telling me. If anything else comes up, I'd love to hear about it.\"\n\nMindset: following up is not begging. It is finishing the conversation you started.",
+      inputs: [
+        { q: "It is the evening after your interview at a bakery, and you are writing a thank-you email.", a: "\"Thank you for showing me around today. I loved seeing the early bake, and I'd be glad to be part of it. When can I expect to hear from you?\"", bundle: 'free' },
+        { q: "An IT company interviewed you this morning but did not say when you would hear back.", a: "\"Thank you for your time today. The new booking app sounds like a great project. What are the next steps?\"", bundle: 'free' },
+        { q: "Ten days have passed since your interview for an office job, and you have heard nothing.", a: "\"Hi Lena, I'm checking in about the office manager role. I'm still very interested. Do you know when you'll decide?\"", bundle: 'free' },
+        { q: "A school emails to say they chose someone else for the teaching job.", a: "\"Thank you for letting me know. I really enjoyed meeting the English team, and if another post comes up, I'd love to hear about it.\"", bundle: 'free' },
+        { q: "You are writing your thank-you note, and it is turning into a whole page.", a: "\"Thank you for today. I liked what you said about training new staff on the floor. I look forward to hearing from you.\"", bundle: 'free' },
+        { q: "Two weeks after your interview at a care home, you decide to phone them.", a: "\"Hello, this is Amir. I interviewed for the night carer job on the twelfth, and I'm calling to ask if there's any news.\"", bundle: 'pro' },
+        { q: "A company has said no, and you would like to know why.", a: "\"Thank you for telling me. Would you be willing to share one thing I could do better next time?\"", bundle: 'pro' },
+        { q: "The garage said they would decide by Friday. It is now Tuesday.", a: "\"Hi Tom, I know you planned to decide last Friday. I'm still keen on the mechanic job — is there anything else you need from me?\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  talkingtoyourmanager: [
+    {
+      name: "Bottom Line First",
+      guideFront: "Lead with the conclusion when...",
+      guideBack: "The headline, then the need",
+      description: "Start with the conclusion, then the one fact that matters most, then what you need from them. Not the story of the week in the order it happened — \"The order goes out Friday, not Wednesday. The parts are late. I need you to tell the customer.\"\n\nIt works because your manager is listening for one thing: does this change anything for me? Told in order, the answer arrives last, after they have stopped listening. Told first, everything after it makes sense. Many offices and armies have a name for the habit: BLUF, bottom line up front.\n\nTypical phrases: \"Short version: we're on track.\", \"The headline is we'll be two days late.\", \"One thing you need to know, and one thing I need.\"\n\nThree shapes:\n\n1. The status — where it stands, in one line. \"We're on track for Friday.\"\n\n2. The change — what is different from what they expected. \"Friday is now Monday. The supplier let us down.\"\n\n3. The need — what you want them to do. \"I need you to sign off the overtime today.\"\n\nMindset: they do not need the whole story to trust you. They need the headline first, and the rest if they ask.",
+      inputs: [
+        { q: "Your warehouse manager, Tom, asks how Friday's delivery is going. It will be two days late because the parts are stuck at the port.", a: "\"We'll be two days late — Monday, not Friday. The parts are stuck at the port. Could you let the customer know today?\"", bundle: 'free' },
+        { q: "Your ward manager, Priya, stops you in the corridor: \"How's bay four?\" Two patients are stable and one is getting worse.", a: "\"Two are stable. Mr Hale's blood pressure is dropping, and I need a doctor to see him within the hour.\"", bundle: 'free' },
+        { q: "Your head of department, Mr Okafor, asks how the Year 9 marking is going. It is all done except one class.", a: "\"All done except 9C. You'll have those by Thursday.\"", bundle: 'free' },
+        { q: "In the middle of service, your head chef, Lena, asks why table twelve's food is so late.", a: "\"The fish was sent back once. The new plate goes out in two minutes.\"", bundle: 'free' },
+        { q: "Before a board meeting, your manager, Diane, asks for an update on the project. You have a long story ready.", a: "\"Short version: on budget, one week behind. The delay was the new software, and that's fixed now.\"", bundle: 'free' },
+        { q: "During a phone system failure at the call centre, your team leader, Raj, messages you one word: \"Status?\"", a: "\"Calls are at half speed and IT says thirty minutes. I need two people moved from email to phones.\"", bundle: 'pro' },
+        { q: "Your site manager, Grace, phones. You start explaining from the beginning, and she cuts in: \"Where are we?\"", a: "\"Sorry — the headline: the concrete pour is now Thursday because of the rain. Everything else is on time.\"", bundle: 'pro' },
+        { q: "In a five-minute catch-up, your store manager, Marcus, asks how the stock count went. There are three small issues and one big one.", a: "\"Mostly fine. One real problem: forty pairs of trainers are missing, and I think it's theft. Can we talk about cameras?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask Them to Choose",
+      guideFront: "Lay out the trade-off when...",
+      guideBack: "A clear either-or question",
+      description: "When you have more work than time, lay out the choice and let your manager decide what comes first. \"I can finish the report or the training plan by Friday, not both. Which matters more?\"\n\nIt works because priorities are your manager's job, and they cannot do that job with information they do not have. Saying yes to everything hides the problem until something is late. Saying no puts you in charge of a decision that is not yours. Asking them to choose does neither: it gives them the facts and hands back the decision. People sometimes call this managing up.\n\nTypical phrases: \"Which of these comes first?\", \"I can do one of these by Friday. Which one?\", \"If this comes in, what should come out?\"\n\nThree ways to put the choice:\n\n1. Either-or — two tasks, one slot. \"The report or the plan — which one by Friday?\"\n\n2. In or out — something new arrives. \"Happy to take it. What should I drop to make room?\"\n\n3. Fast or full — one task, two versions. \"I can give you a rough version today or a finished one on Monday.\"\n\nMindset: you are not refusing work. You are giving them the decision that belongs to them.",
+      inputs: [
+        { q: "Your manager, Helen, asks you to prepare slides for Thursday. You are already doing the budget, which is also due on Thursday.", a: "\"I can have the slides or the budget ready by Thursday, not both. Which one matters more?\"", bundle: 'free' },
+        { q: "Your charge nurse, Sam, asks you to take two extra patients. You are also meant to spend the afternoon training a new nurse.", a: "\"I can take the two patients or stay with the new nurse this afternoon. Which would you rather I did?\"", bundle: 'free' },
+        { q: "Tom asks you to unload an extra lorry. The picking for tomorrow morning's orders is not done yet.", a: "\"If I unload the lorry, the morning orders won't be packed. Which comes first?\"", bundle: 'free' },
+        { q: "Your deputy head, Ruth, asks you to plan the Year 8 school trip. You already run the exam revision clinic and the newsletter.", a: "\"Happy to take the trip. What should I drop to make room — the revision clinic or the newsletter?\"", bundle: 'free' },
+        { q: "Lena asks you to put together a new dessert menu for the weekend.", a: "\"I can give you a simple menu by Friday, or a properly tested one by next Wednesday. Which works better?\"", bundle: 'free' },
+        { q: "Raj adds a customer survey project to your week. Your call numbers will drop if you do it.", a: "\"If I do the survey this week, my call numbers will drop. Are you okay with that, or should the survey wait?\"", bundle: 'pro' },
+        { q: "Grace asks you to do the safety walk and finish the scaffold order this afternoon. Both need you at the same time.", a: "\"Both need me this afternoon. Do you want the safety walk done first, or the order?\"", bundle: 'pro' },
+        { q: "You ask your manager, Anders, what to focus on. He says, \"Everything's a priority.\"", a: "\"I understand. If you had to pick one for this week, which would it be?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Disagree, Then Commit",
+      guideFront: "Object once, then follow when...",
+      guideBack: "One reason, and a promise to follow",
+      description: "Say you disagree, once, with one clear reason — and say that you will follow the decision if it stands. \"I think the new rota will cost us our weekend staff. If you still want it, I'll make it work.\"\n\nIt works because a manager needs to hear the problem before the decision is final, and needs to know you will not fight it afterwards. One reason, said calmly, is easy to weigh. Five reasons sound like a campaign. The second half is what makes the first half safe to say: you are giving them information, not taking a stand against them. Many workplaces call this \"disagree and commit\".\n\nTypical phrases: \"I see it differently, and here's why.\", \"My worry is the cost. If you go ahead, I'm with you.\", \"I've said my piece. I'll make it work.\"\n\nThree moments:\n\n1. Before the decision — the best time. \"Before you decide, one concern: the weekend staff.\"\n\n2. After the decision — said once, then done. \"I'd have done it differently. I'll still make it work.\"\n\n3. When it is final — the commitment on its own. \"Understood. I'll tell the team on Monday.\"\n\nMindset: you can disagree and still be on their side. Saying it once is loyal. Saying it every week is not.",
+      inputs: [
+        { q: "Lena wants to cut the lunch menu to five dishes. You think the regulars will stop coming.", a: "\"I think we'll lose some regulars if we cut to five dishes. If you still want to try it, I'll help make it work.\"", bundle: 'free' },
+        { q: "Tom tells you the night shift will start an hour earlier from next month.", a: "\"My worry is that two of the night team can't start before ten because of childcare. If it stays, I'll help find cover.\"", bundle: 'free' },
+        { q: "Mr Okafor decides all homework will be online only. Some of your students have no computer at home.", a: "\"Some of my students don't have a computer at home, so they'll fall behind. If you go ahead, I'll print copies for them.\"", bundle: 'free' },
+        { q: "Diane picks a supplier you think is too slow.", a: "\"I'd go with the other supplier — this one missed three deadlines last year. But it's your call, and I'll make it work.\"", bundle: 'free' },
+        { q: "Priya says visiting hours on the ward will be shorter from next week.", a: "\"I think families will be upset, especially for the older patients. If it stays, I'll explain it to them kindly.\"", bundle: 'free' },
+        { q: "In Monday's meeting you told Grace you were against the new break times. She listened and kept the decision.", a: "\"Understood. I'll tell the crew tomorrow and make it work.\"", bundle: 'pro' },
+        { q: "Raj is about to announce that every call must be under four minutes. You think complaints will take longer than that.", a: "\"Before you announce it, one concern: complaints often take longer than four minutes. If you still want it, I'll coach the team on it.\"", bundle: 'pro' },
+        { q: "Weeks after the decision, Marcus asks if you are still unhappy about closing the fitting rooms at weekends.", a: "\"I still see it differently, but I've said why. I'm fully behind it now.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Bad News Early",
+      guideFront: "Report the problem at once when...",
+      guideBack: "The problem, plus a plan",
+      description: "Tell your manager about a problem as soon as you know, plainly, with what you plan to do about it. \"I've made a mistake with the invoices. Here's what happened, and here's how I'll fix it today.\"\n\nIt works because a problem told early is still small. Your manager has time to warn the customer, move people around or change the plan. The same problem found out late, or from someone else, is bigger — and now it is also a question of trust. Bad news brought early tells them they can rely on you to tell them things.\n\nTypical phrases: \"I need to tell you something before you hear it elsewhere.\", \"It's not good news, but it's early.\", \"Here's what happened, and here's my plan.\"\n\nThree parts, said together:\n\n1. The problem, plainly — no build-up. \"I sent the wrong price list to Hansen's.\"\n\n2. Your part in it — if you had one. \"That was my mistake.\"\n\n3. A plan, or a proposal — what happens next. \"I've called them, and the right list goes out at two.\"\n\nMindset: you do not have to fix it before you tell them. Telling them is part of fixing it.",
+      inputs: [
+        { q: "This morning you sent a customer the old price list. Diane does not know yet.", a: "\"I sent Hansen's the old price list this morning. That was my mistake. I've called them, and the right one goes out at two.\"", bundle: 'free' },
+        { q: "You can see that Friday's order will not be ready. Tom does not know yet.", a: "\"I need to tell you now: Friday's order won't be ready. Two pallets are missing. I can ship part of it Friday, or all of it Monday.\"", bundle: 'free' },
+        { q: "You gave a patient her medication an hour late. She is fine.", a: "\"I need to report something: Mrs Lund got her medication an hour late. She's fine, and I've filled in the form. I'd like to talk about how it happened.\"", bundle: 'free' },
+        { q: "The walk-in fridge broke overnight. Lena arrives at ten.", a: "\"Bad news before you hear it from anyone else: the walk-in fridge broke overnight. I've moved the fish to the bar fridge and called the repair company.\"", bundle: 'free' },
+        { q: "You realise you will not finish your Year 8 reports by Monday's deadline.", a: "\"I'm going to be late with the Year 8 reports — Wednesday, not Monday. Could someone check my marking on one class to help?\"", bundle: 'free' },
+        { q: "You are not sure yet, but the measurements on the building site may be wrong.", a: "\"It might be nothing, but I'd rather tell you early: the east wall doesn't match the drawings. I'm checking it again this afternoon.\"", bundle: 'pro' },
+        { q: "A customer has complained about you online, and Raj will see it soon.", a: "\"You'll probably see a complaint about me online. I lost my patience on a call yesterday. I've written to the customer to apologise.\"", bundle: 'pro' },
+        { q: "For two days you have been hoping to sort out a till mistake quietly before Marcus notices.", a: "\"I should have told you two days ago: the till was forty pounds short on Tuesday. I think I gave the wrong change. I'm sorry it took me this long.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for What You Want",
+      guideFront: "Make your case, then ask when...",
+      guideBack: "Facts first, then a concrete request",
+      description: "Ask your manager for something you want — a raise, training, a new responsibility, different hours, a better title — by giving the facts first and then a concrete ask. \"I've run the night shift alone since March. I'd like to talk about a raise. Can we book half an hour?\"\n\nIt works because managers are busy, and most good work goes unseen until someone names it. Facts make your case without bragging: what you have done, for how long, with what result. The concrete ask gives them something to say yes to — a meeting, a course, a date. \"I'd love to grow here someday\" gives them nothing to act on.\n\nTypical phrases: \"Since March I've…\", \"I'd like to talk about…\", \"Could we book half an hour this week?\", \"What would it take to get there?\"\n\nThree kinds of ask:\n\n1. A conversation — for big things like pay. \"I'd like to talk about my salary. Can we find half an hour?\"\n\n2. A yes or no — for a clear request. \"Could I do the first-aid course in May?\"\n\n3. A path — when the answer is \"not yet\". \"What would I need to show to get there by next year?\"\n\nMindset: asking is not ungrateful. A good manager would rather know what you want than lose you without warning.",
+      inputs: [
+        { q: "You have run the warehouse night shift alone since March. Nobody has mentioned your pay.", a: "\"I've run the night shift alone since March, with no missed orders. I'd like to talk about a raise. Can we book half an hour?\"", bundle: 'free' },
+        { q: "You would like to take a wound-care course, and you think the hospital should pay for it.", a: "\"I've done most of the wound dressings on the ward this year. I'd like to take the wound-care course in May. Could the ward pay for it?\"", bundle: 'free' },
+        { q: "For six months you have done a team leader's work at the office, without the title.", a: "\"For six months I've planned the rota and trained the new starters. I'd like the title to match. Can we talk about team leader?\"", bundle: 'free' },
+        { q: "You want to lead the school drama club next year, not just help.", a: "\"I've helped with the drama club for two years and ran the last show. I'd like to lead it next year. Could we talk before the timetable is set?\"", bundle: 'free' },
+        { q: "You want to work from home on Fridays at the call centre.", a: "\"My numbers have been in the top three every month this year. I'd like to work from home on Fridays. Could we try it for a month?\"", bundle: 'free' },
+        { q: "You asked Lena for a raise. She says, \"Not this year.\"", a: "\"Okay. What would I need to show to get there next year?\"", bundle: 'pro' },
+        { q: "You want to train as a crane operator. Grace has never thought of you for it.", a: "\"I've been on this site four years, and I'd like to move up. Could you put me forward for the crane course next spring?\"", bundle: 'pro' },
+        { q: "In your review, Marcus asks, \"Anything you want to raise?\" You usually say no.", a: "\"Yes, actually. I've opened and closed the shop alone for a year. I'd like to talk about becoming assistant manager.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  newatwork: [
+    {
+      name: "The Work Intro",
+      guideFront: "Say who you are when...",
+      guideBack: "A hello that ends in a question",
+      description: "Introduce yourself to a colleague in four quick parts: your name, your role, one small thing about you, and a question about them. \"Hi, I'm Omar. I've just started in accounts. I hear you're the one who knows the old system?\" It is not a speech, and it is not waiting to be introduced.\n\nIt works because people at work want to know three things about a newcomer: who you are, where you fit, and whether you are easy to talk to. Your name and role answer the first two. The question answers the third — and it hands the conversation to them, which is where most people are happiest.\n\nTypical phrases: \"Hi, I'm Lena — I've just started on the night shift.\", \"I'm the new one in the lab. Which project are you on?\", \"We haven't met yet. I'm Jonas, I'm here for the summer.\"\n\nThree ways to end the intro:\n\n1. Ask about their job — \"What do you look after here?\"\n\n2. Ask about something you have heard — \"Someone said you're the person to ask about the ordering system?\"\n\n3. Ask about the place — \"How long have you worked here?\"\n\nMindset: nobody is waiting for you to be impressive. They are waiting to learn your name.",
+      inputs: [
+        { q: "It is your first morning at a care home, and a carer you have not met is making tea in the staff room.", a: "\"Hi, I'm Amira. I've just started on days. How long have you worked here?\"", bundle: 'free' },
+        { q: "You have started as a part-time barista, and the person on the other till smiles at you in a quiet moment.", a: "\"I'm Theo — first week, weekends only. What's the drink everyone gets wrong?\"", bundle: 'free' },
+        { q: "You have joined a warehouse team, and a forklift driver nods at you in the canteen queue.", a: "\"Hi, I'm Marek. I've just started on the loading bay. Have you been on forklifts long?\"", bundle: 'free' },
+        { q: "You are the new maths teacher, and a colleague sits down next to you at your first staff meeting.", a: "\"Hi, I'm Sofia, new in maths. I've come from a much smaller school. What do you teach?\"", bundle: 'free' },
+        { q: "On your second day in an office, you realise you have walked past the same colleague four times without a word.", a: "\"We keep passing each other — I'm Daniel, I've just started in accounts. What does your team do?\"", bundle: 'free' },
+        { q: "You changed careers at fifty and have just started as a nurse. A younger nurse asks if you are the new one.", a: "\"I am — I'm Petra. I worked in a bank for twenty years before this. How long have you been on this ward?\"", bundle: 'pro' },
+        { q: "A mechanic looks up from an engine as you arrive for the first day of your summer job at a garage.", a: "\"Morning! I'm Ali, here for the summer. I'm keen but slow — where do you want me?\"", bundle: 'pro' },
+        { q: "Someone in your new lab says, \"Sorry, I didn't catch your name in the meeting.\"", a: "\"It's Ingrid — I'm the new technician on the soil project. And you're the one who runs the big freezer, right?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What Good Looks Like",
+      guideFront: "Ask what's expected when...",
+      guideBack: "A question about the goal",
+      description: "Ask your manager, early and plainly, what doing this job well would look like. \"What would a good first three months look like for you?\" Not \"is there anything I should know?\" — that question gets a shrug. Ask for something they can picture.\n\nThe idea comes from Michael D. Watkins's The First 90 Days: a new person should agree on expectations with their manager early, instead of guessing and finding out later. Many new people work very hard at the wrong thing for a month, because nobody said what the right thing was — and the manager thought it was obvious.\n\nIt also gives you a fair way to judge yourself. Without it, you only have your nerves to go on.\n\nTypical phrases: \"What would a good first month look like?\", \"If I'm doing well in three months, what will you see?\", \"What matters most to you in this role?\", \"What can I leave until later?\"\n\nThree versions of the question:\n\n1. The time frame — \"What should I be able to do on my own by the summer?\"\n\n2. The priority — \"Of everything on the list, what matters most right now?\"\n\n3. The opposite — \"What can wait until later without it being a problem?\"\n\nMindset: asking what good looks like is not doubt. It is how you aim.",
+      inputs: [
+        { q: "At the end of your first week in a shop, your new manager asks if you have any questions.", a: "\"Just one: what would a good first month look like for you?\"", bundle: 'free' },
+        { q: "You have started as a junior in an office and have been handed a long list of tasks.", a: "\"Of everything on this list, which matters most in the first few weeks?\"", bundle: 'free' },
+        { q: "You are a new nurse, and your ward manager stops to ask how your first shift went.", a: "\"It went well, thanks. What should I be able to do on my own by the end of the month?\"", bundle: 'free' },
+        { q: "You have your first one-to-one with your new head of department at school.", a: "\"If I'm doing well by Christmas, what will you see?\"", bundle: 'free' },
+        { q: "Your summer job at a café starts on Monday, and the owner asks if you have any questions.", a: "\"What does a good shift look like for you — speed, or getting every order right?\"", bundle: 'free' },
+        { q: "You are a new picker in a warehouse, and nobody has said what pace is expected.", a: "\"What's a normal number of orders an hour for someone new? I'd like to know what to aim for.\"", bundle: 'pro' },
+        { q: "You left teaching for a job in IT, and you feel behind everyone on the team.", a: "\"I know I'm starting from further back. What would be a good level for me by the spring?\"", bundle: 'pro' },
+        { q: "Your lab manager tells you to \"just get settled in\", and you are not sure what that means.", a: "\"Happy to. What would 'settled' look like to you by the end of the month?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Show What You Tried",
+      guideFront: "Share your attempt first when...",
+      guideBack: "What you did, then a question",
+      description: "When you are stuck, say what you have already done before you ask. \"I checked the manual and tried restarting it. Am I missing a step?\" One sentence about what you tried, then one question.\n\nIt works because the same question can sound helpless or capable, and the difference is the first sentence. \"How does this work?\" asks the other person to start from zero. \"I've done the first two steps and it stops here\" tells them you have been thinking, shows them where the problem is, and saves them time. People are much happier to help someone who has tried.\n\nKeep the first part short. It is not a report on your whole morning — just enough for them to see where you are.\n\nTypical phrases: \"I checked the manual and tried restarting it. Am I missing a step?\", \"I looked in the shared folder and couldn't find it. Where does it usually live?\", \"I asked Lisa, and she wasn't sure either. Who would know?\"\n\nThree kinds of \"what I tried\":\n\n1. What you looked at — \"I read the guide on the wall. It doesn't mention the night setting.\"\n\n2. What you did — \"I tried it twice, and both times it gave the same error.\"\n\n3. Who you asked — \"I asked Sam, but he's new too. Do you know?\"\n\nMindset: you are not asking because you are lost. You are asking because you have got this far.",
+      inputs: [
+        { q: "The coffee machine at the café shows a red light, and you have already emptied the tray.", a: "\"I've emptied the tray and checked the water, and the light's still red. What am I missing?\"", bundle: 'free' },
+        { q: "You cannot log in to the hospital system on your second day.", a: "\"I've tried my password twice and checked caps lock. Does a new account take a while to work?\"", bundle: 'free' },
+        { q: "A delivery has arrived at the warehouse with no order number on it.", a: "\"I looked on the sheet and in the system, and there's no number anywhere. Where do these usually go?\"", bundle: 'free' },
+        { q: "You need to book a meeting room at your new office and cannot find how.", a: "\"I've looked on the intranet and asked reception. Is there a booking system I haven't found?\"", bundle: 'free' },
+        { q: "At the garage, the part that has arrived does not match the car on the job sheet.", a: "\"I've checked the part number twice against the job sheet, and they don't match. Should I call the supplier, or ask you first?\"", bundle: 'free' },
+        { q: "A resident's daughter asks about visiting on the bank holiday, and you have already checked the noticeboard at the care home.", a: "\"I checked the noticeboard and there's nothing about the holiday. Who decides visiting times here?\"", bundle: 'pro' },
+        { q: "Your results in the lab look wrong, and you have already run the test a second time.", a: "\"I've run it twice and cleaned the samples, and I get the same strange numbers. Could you look at my method?\"", bundle: 'pro' },
+        { q: "You are new at a school, and a pupil has not turned up for your lesson.", a: "\"I've marked him absent and told the office. Is there anything else I'm supposed to do?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask How Things Work Here",
+      guideFront: "Ask about the unwritten rules when...",
+      guideBack: "A question about local habits",
+      description: "Ask about the rules nobody writes down: who to ask, what people actually do, what matters more than it looks. \"Is there anything people do here that a newcomer wouldn't know?\"\n\nEvery workplace has two sets of rules. The written ones are in the handbook. The unwritten ones — whose mug is whose, which meetings start on time, who really decides the rota — are learned by getting them wrong, unless you ask. A new person who asks looks careful. A new person who guesses wrong looks rude, even though nobody told them.\n\nThe best moment is early. In week one, the question sounds curious. In month six, it sounds strange.\n\nTypical phrases: \"Is there anything here a new person wouldn't know?\", \"How do people usually do this here?\", \"Who's the best person to ask about the rota?\", \"Is there an unwritten rule I should know about?\"\n\nThree things worth asking about:\n\n1. Habits — \"Do people eat together, or at their desks?\"\n\n2. People — \"Who should I ask when something breaks?\"\n\n3. Mistakes — \"What's the thing new people usually get wrong?\"\n\nMindset: every place has its own way. Asking about it shows respect, not ignorance.",
+      inputs: [
+        { q: "It is your first lunch break at an office, and you see some people at their desks and some in the kitchen.", a: "\"Do people usually eat together here, or is it more of a desk thing?\"", bundle: 'free' },
+        { q: "You have started at a supermarket and are not sure how breaks are decided.", a: "\"How do breaks work here? Do we choose, or does someone tell us when?\"", bundle: 'free' },
+        { q: "A colleague is showing you round the care home on your first day.", a: "\"Is there anything people do here that a new person wouldn't know?\"", bundle: 'free' },
+        { q: "You are new at a garage and do not know whose tools you can borrow.", a: "\"Which tools are shared, and which are someone's own? I don't want to grab the wrong ones.\"", bundle: 'free' },
+        { q: "In the staff room at your new school, there are two coffee machines and a list on the wall.", a: "\"Is there a system with the coffee? I'd rather ask than break a rule on day one.\"", bundle: 'free' },
+        { q: "You are a summer worker in a warehouse, and the shift lead asks, \"Any questions?\"", a: "\"Just one: what's the thing new people usually get wrong here?\"", bundle: 'pro' },
+        { q: "At the hospital, messages go round by email and in a group chat, and you are not sure which one to check.", a: "\"What do people actually read here — email or the group chat? I want to know where to look.\"", bundle: 'pro' },
+        { q: "You changed careers late and joined a design office. The Monday meeting seems relaxed, but you are not sure.", a: "\"Is it fine to speak up in the Monday meeting, or is it more of a listening meeting?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Coffee With a Colleague",
+      guideFront: "Invite someone to talk when...",
+      guideBack: "A short, clear invitation",
+      description: "Ask a colleague for a short, easy chat — a coffee, a walk, ten minutes — about their part of the work. \"Could I buy you a coffee one day? I'd like to understand what your team does.\"\n\nMichael D. Watkins's The First 90 Days makes the point that a new person's success depends on relationships as much as on tasks, and that those relationships are best built early, before you need them. A coffee is the simplest way to start. It is short, it has a clear reason, and it is easy to say yes to.\n\nThe reason matters. \"Could we have a coffee?\" can sound odd from someone new. \"Could we have a coffee — I'd like to hear how your team works\" sounds like a new person doing the job well.\n\nTypical phrases: \"Could I buy you a coffee one day this week?\", \"Have you got ten minutes on Thursday? I'd like to hear how the stock side works.\", \"Would you mind if I joined you for lunch? I'm still learning who does what.\"\n\nThree good reasons to give:\n\n1. Their part of the work — \"I'd like to understand what your team does.\"\n\n2. Their experience — \"You've been here longest. I'd love to hear how it's changed.\"\n\n3. Working together — \"We'll be sharing patients. It would help to know how you like things done.\"\n\nMindset: you are not taking their time. You are giving them the chance to help you start well.",
+      inputs: [
+        { q: "You have started in an office and keep hearing about the finance team, but you have never spoken to anyone there.", a: "\"Could I buy you a coffee this week? I'd like to understand what your team does.\"", bundle: 'free' },
+        { q: "You are a new teacher, and an experienced colleague in your department seems friendly but busy.", a: "\"Have you got ten minutes one lunchtime? I'd love to hear how you plan your Year 8 classes.\"", bundle: 'free' },
+        { q: "At the hospital, you will be working closely with the nurse in charge of nights.", a: "\"We'll be handing over every morning. Could we grab a coffee one day, so I know how you like things done?\"", bundle: 'free' },
+        { q: "Your summer job at a shop is going well, and the assistant manager has worked there for years.", a: "\"You've been here longest. Could I ask you a few things over a coffee one day?\"", bundle: 'free' },
+        { q: "In the lab, the person who looks after all the equipment eats lunch alone most days.", a: "\"Mind if I join you one lunchtime? I'd like to hear how you keep all this running.\"", bundle: 'free' },
+        { q: "You work part-time at a café and never overlap with the weekend team.", a: "\"I never see you lot. Could I come in half an hour early on Saturday and have a coffee with you?\"", bundle: 'pro' },
+        { q: "You changed careers late, and your new team is mostly much younger than you.", a: "\"I'm still learning how things work here. Would you let me buy you a coffee and pick your brain?\"", bundle: 'pro' },
+        { q: "At the warehouse, the person who plans the shifts is someone you have only ever emailed.", a: "\"I've only ever emailed you. Could I come by for ten minutes and put a face to the name?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for Feedback Early",
+      guideFront: "Ask what to improve when...",
+      guideBack: "A request for one concrete thing",
+      description: "Ask for feedback in your first weeks, and ask for one concrete thing. \"I'm three weeks in. What's one thing I could do better?\" Do not wait for the review at six months.\n\nIt works because small mistakes are easy to fix early and hard to fix late. A habit that is slightly wrong in week three is a five-second comment. The same habit in month six is a difficult conversation. Asking early also tells your manager something good about you: that you want to know.\n\nAsk for one thing, not everything. \"Any feedback?\" usually gets \"you're doing great\". \"What's one thing I could do better?\" gets an answer.\n\nTypical phrases: \"What's one thing I could do better?\", \"Is there anything I'm doing that's not quite how it's done here?\", \"How did I handle that customer?\", \"If you could change one thing about how I work, what would it be?\"\n\nThree moments to ask:\n\n1. After a first — the first shift alone, the first lesson someone watched. \"How did that look from where you stood?\"\n\n2. At a set point — two weeks, a month. \"I'm a month in. What's one thing to work on?\"\n\n3. After a small mistake — \"I got that order wrong earlier. Is there anything else I should watch for?\"\n\nMindset: feedback in week three is a gift. In month six it is a problem.",
+      inputs: [
+        { q: "You have just finished your first shift alone on the till.", a: "\"Before I go — what's one thing I could do better next time?\"", bundle: 'free' },
+        { q: "Your mentor at school has just watched your first lesson.", a: "\"Be honest — what's one thing you'd change about that lesson?\"", bundle: 'free' },
+        { q: "You are three weeks into a new office job, and your manager asks how it is going.", a: "\"Good, I think. I'm three weeks in — what's one thing I could do better?\"", bundle: 'free' },
+        { q: "A senior carer has worked next to you all morning at the care home.", a: "\"You've seen me all morning. Is there anything I'm doing that's not quite how it's done here?\"", bundle: 'free' },
+        { q: "You have just finished your first week at the garage.", a: "\"One week done. If you could change one thing about how I work, what would it be?\"", bundle: 'free' },
+        { q: "Your manager says, \"You're doing great,\" and nothing more.", a: "\"Thank you. Is there one small thing I could still do better?\"", bundle: 'pro' },
+        { q: "At the hospital, a doctor sighed after your handover but said nothing.", a: "\"I felt that handover didn't quite work for you. What would you like me to do differently?\"", bundle: 'pro' },
+        { q: "You changed careers late and joined a lab, and you sense people are being careful with you.", a: "\"Please don't go easy on me because I'm new to this. What's one thing I should work on?\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  emotionalcalibration1: [
+    {
+      name: "Spot the Shift",
+      guideFront: "Say what you saw when...",
+      guideBack: "A plain observation, with no reading",
+      description: "Say only what you saw or heard change, with no reading of what it means. \"You went quiet when I mentioned the new job.\" It points at the moment, not at the person.\n\nIt works because a shift is often the first sign that a conversation has stopped feeling easy for someone. The idea comes from Crucial Conversations: learn to notice the moment a talk turns quiet or tense, while it is still small. Said plainly, it is hard to argue with. You are not claiming to know what they feel, only that something changed.\n\nThe test is whether a camera would agree with you. \"You looked away\" passes. \"You're annoyed\" does not: that is a reading, and it can be denied.\n\nTypical phrases: \"You went quiet just then.\", \"That was a short 'fine'.\", \"You looked away when I said that.\", \"Your answers got shorter.\"\n\nThree things to point at:\n\n1. The words — what changed in what they said. \"That was a very short 'fine'.\"\n\n2. The body — a look, a laugh that stopped, folded arms. \"You looked down when I said the reorganisation.\"\n\n3. The timing — what it came straight after. \"You changed the subject right after I mentioned the house.\"\n\nMindset: you do not need to know what it means. Saying that you noticed is enough to open the door.",
+      inputs: [
+        { q: "You tell your partner her mother is staying for the whole Easter weekend. She says, \"Fine,\" and starts clearing the plates.", a: "\"That was a short 'fine', and you got up right after I said it.\"", bundle: 'free' },
+        { q: "By the coffee machine, you mention the reorganisation to Tom. His eyes drop to his phone and stay there.", a: "\"You looked down at your phone when I said the reorganisation.\"", bundle: 'free' },
+        { q: "At dinner you joke about your daughter Maya's maths grade. She laughs, then goes quiet and pushes her food around the plate.", a: "\"You laughed, and then you went quiet.\"", bundle: 'free' },
+        { q: "You tell your friend Jess about the house you have just bought. She says, \"Nice. Anyway,\" and starts talking about a TV series.", a: "\"You changed the subject pretty fast when I mentioned the house.\"", bundle: 'free' },
+        { q: "You tell Mr Davies his repair will take two more weeks. His answers shrink: \"Right.\" \"Okay.\" \"Sure.\"", a: "\"Your answers got a lot shorter after I said two weeks.\"", bundle: 'free' },
+        { q: "You tell your dad you can't make Sunday lunch. A moment later his voice is sharp about where you have parked the car.", a: "\"Your voice changed when I said I couldn't come on Sunday.\"", bundle: 'pro' },
+        { q: "In the team meeting you offer to take the client presentation. Priya sighs, leans back and folds her arms.", a: "\"You sighed and leaned back when I offered to do the presentation.\"", bundle: 'pro' },
+        { q: "You text Omar that you can't make his birthday drinks. He usually replies in a minute with three emojis. Three hours later: \"ok np\".", a: "\"Got your 'ok np'. That's a lot shorter than your usual.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name the Nuance",
+      guideFront: "Guess the exact feeling when...",
+      guideBack: "A precise guess, checked",
+      description: "Make a careful, precise guess at what they might be feeling, and check it. Not \"upset\" or \"angry\", but the exact word: let down, embarrassed, worried, left out, rushed, hurt, overwhelmed. \"You sound more let down than angry. Is that close?\"\n\nIt works because a precise word shows you have really looked. Lisa Feldman Barrett's work on emotional granularity points the same way: the more exactly a feeling is named, the easier it is to understand and deal with. \"Upset\" covers everything and helps nobody. \"Embarrassed\" can be answered.\n\nIt is a guess, not a verdict, so say it like one: \"I wonder if\", \"maybe\", \"Is that close?\" A wrong guess still helps. \"Not let down — embarrassed\" gets you there faster than a careful silence.\n\nTypical phrases: \"I wonder if you're feeling a bit left out.\", \"More worried than cross?\", \"You sound let down. Is that close?\", \"I might be wrong, but embarrassed, maybe?\"\n\nThree ways to guess:\n\n1. One word, and a check — \"Worried, maybe?\"\n\n2. This, not that — set the precise word against the obvious one. \"More hurt than angry?\"\n\n3. Tied to the moment — link the feeling to what just happened. \"I wonder if that joke embarrassed you.\"\n\nMindset: you do not have to be right. A precise guess they can correct is better than a vague one they can only nod at.",
+      inputs: [
+        { q: "Your partner's \"fine\" about her mother staying all Easter came out flat, and she is clearing the plates fast.", a: "\"You seem more overwhelmed than annoyed. Is that close?\"", bundle: 'free' },
+        { q: "Tom has gone quiet since you brought up the reorganisation, and he still hasn't looked up.", a: "\"I might be wrong, but are you worried about where you'll end up?\"", bundle: 'free' },
+        { q: "Maya's laugh at your joke about her maths grade faded fast, and now she is staring at her plate.", a: "\"I wonder if that joke embarrassed you a bit. Did it?\"", bundle: 'free' },
+        { q: "Jess has been saving for a flat for years. When you mention your new house, she changes the subject.", a: "\"I might be wrong, but did that feel a bit like being left behind?\"", bundle: 'free' },
+        { q: "Mr Davies has been down to one-word answers since you said two more weeks.", a: "\"That sounds more let down than angry. Am I close?\"", bundle: 'free' },
+        { q: "Your dad's sharp words about the parking came straight after you cancelled Sunday lunch.", a: "\"Is it Sunday you're hurt about, Dad, more than the car?\"", bundle: 'pro' },
+        { q: "Priya sighed and folded her arms the moment you offered to take the client presentation.", a: "\"I wonder if that felt like being pushed aside. Is that close?\"", bundle: 'pro' },
+        { q: "Omar's \"ok np\" came three hours after your message about missing his birthday.", a: "\"Are you a bit disappointed I'm missing it? I would be.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask How It Landed",
+      guideFront: "Check what your words did when...",
+      guideBack: "An open question about your impact",
+      description: "Ask how what you just said or did came across to them. \"How did that land with you?\" The question is about your words, not about their mood.\n\nIt works because the shift often came straight after something you said, and you cannot hear your own words from their side. Charles Duhigg's Supercommunicators treats checking how something was heard as a normal part of a good conversation, not an emergency. Asking also takes your share of it: it says you are willing to hear that it came out wrong.\n\nKeep it open and light. \"How did that land?\" invites an honest answer. \"Did I upset you?\" invites a quick \"no\".\n\nTypical phrases: \"How did that land?\", \"How did that come across?\", \"How was that to hear?\", \"That may have come out wrong. How did it sound to you?\"\n\nThree ways to ask:\n\n1. The open check — \"How did that land with you?\"\n\n2. Name what you said — point at the exact words. \"How did it sound when I said two more weeks?\"\n\n3. Own the delivery first — \"I said that pretty fast. How did it come across?\"\n\nMindset: asking how it landed is not admitting you did something wrong. It is wanting to know what you actually said.",
+      inputs: [
+        { q: "You have just told your partner her mother is staying all of Easter, and her \"fine\" was very short.", a: "\"I just dropped that on you. How did it land?\"", bundle: 'free' },
+        { q: "You brought up the reorganisation over coffee as if it were old news, and Tom's eyes went to his phone.", a: "\"I said that pretty casually, Tom. How did it sound to you?\"", bundle: 'free' },
+        { q: "Your joke about Maya's maths grade got a laugh, then a silence.", a: "\"That joke about maths, love. How did it actually feel?\"", bundle: 'free' },
+        { q: "You told Jess all about the new house: the garden, the extra room, the price. Then she moved on fast.", a: "\"I went on a bit about the house. How was that to hear?\"", bundle: 'free' },
+        { q: "You said \"two more weeks\" to Mr Davies as plainly as you could, and his answers got shorter.", a: "\"I know two more weeks isn't what you hoped for. How has that landed?\"", bundle: 'free' },
+        { q: "You dropped in on your dad and told him, in one quick sentence on the doorstep, that you can't make Sunday. Now he is complaining about your parking.", a: "\"I said that about Sunday very quickly, Dad. How did it sound?\"", bundle: 'pro' },
+        { q: "Your offer to take the client presentation came out in front of the whole team. Priya leaned back.", a: "\"Priya, I offered that in front of everyone. How did it come across?\"", bundle: 'pro' },
+        { q: "Your message to Omar about his birthday drinks just said, \"Can't make it, sorry, work.\"", a: "\"My message was pretty short. How did it land?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Read What They Need",
+      guideFront: "Ask which kind of talk helps when...",
+      guideBack: "An either-or offer",
+      description: "Ask what kind of conversation they want right now: help to fix it, someone to listen, or a break from it. \"Do you want ideas, or do you just want me to listen?\"\n\nIt works because the same moment can need very different things. Supercommunicators describes conversations as practical, emotional or social, and trouble starts when two people are having different kinds. You offer solutions to someone who wants to be heard, or sympathy to someone who wants a plan. A short either-or question saves you the guess.\n\nOffer two or three real options, and mean each one. Then follow their answer, even if it is \"neither, thanks\".\n\nTypical phrases: \"Do you want ideas, or just someone to listen?\", \"Talk now, or later?\", \"Shall we sort it out, or leave it for tonight?\", \"Would it help if I took that on, or not really?\"\n\nThree choices to offer:\n\n1. Fix or listen — \"Do you want ideas, or do you just want me to listen?\"\n\n2. Now or later — \"Do you want to talk now, or think about something else for a bit?\"\n\n3. A practical offer — name one thing you could actually do. \"Would a loan machine help in the meantime?\"\n\nMindset: you do not have to guess what they need. You are allowed to ask.",
+      inputs: [
+        { q: "Your partner's \"fine\" about her mother's visit is still hanging there as she clears the table.", a: "\"Do you want to plan the weekend together, or just tell me what you really think of it first?\"", bundle: 'free' },
+        { q: "Tom has been staring at his phone since you brought up the reorganisation.", a: "\"Do you want to talk it through, or would you rather think about something else for ten minutes?\"", bundle: 'free' },
+        { q: "Maya has been quiet at the table since your joke about her maths grade.", a: "\"Do you want some help with maths, or shall I just drop the subject?\"", bundle: 'free' },
+        { q: "Jess has steered the talk well away from your new house.", a: "\"Would you rather tonight was about you? I'm happy to save the house for another time.\"", bundle: 'free' },
+        { q: "Mr Davies has gone down to one-word answers since you said two more weeks.", a: "\"Would a loan machine help in the meantime, or would you rather I just rang you the day it's ready?\"", bundle: 'free' },
+        { q: "Your dad has been going on about the parking ever since you cancelled Sunday.", a: "\"Do you want to find another day, Dad, or do you just want to tell me you're cross?\"", bundle: 'pro' },
+        { q: "Priya has leaned back with her arms folded since you offered to take the presentation.", a: "\"Would it help to split it between us, or would you rather I stepped back from it?\"", bundle: 'pro' },
+        { q: "Omar's \"ok np\" came three hours after your message about his birthday.", a: "\"Want to grab a beer next week instead, or would you rather I just left it for now?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Leave the Door Open",
+      guideFront: "Give them space when...",
+      guideBack: "An invitation with no pressure",
+      description: "When they do not want to talk now, do not push. Say clearly that the door is open, and then actually let it go. \"No need to talk about it now. If I said something wrong, I'd want to know.\"\n\nIt works because pressure closes doors. Asking \"Are you sure?\" three times turns your care into something they have to manage. One calm invitation does the opposite: it makes it safe to come back later, on their terms, and it tells them you can hear it if the problem was you.\n\nSay it once, warmly, and then change the subject or leave them be. The door only stays open if you stop knocking.\n\nTypical phrases: \"Okay. I'm around if you want to talk.\", \"If I said something wrong, I'd want to know.\", \"No pressure. The offer stands.\", \"I'll leave it. You know where I am.\"\n\nThree ways to leave it open:\n\n1. The open offer — \"Whenever you want to talk, I'm here.\"\n\n2. Own your part — say you would want to hear it if it was you. \"If I got that wrong, I'd rather hear it than guess.\"\n\n3. A light next step — name a time, and make it easy to say no. \"I'll ring you on Wednesday, if that's okay.\"\n\nMindset: one clear invitation is enough. Chasing closes the door you are trying to open.",
+      inputs: [
+        { q: "You ask your partner about the short \"fine\", and she says, \"It's fine. Really. Leave it.\"", a: "\"Okay, I'll leave it. If the whole weekend is too much, I'd like to hear it, whenever.\"", bundle: 'free' },
+        { q: "Tom says, \"I'm fine. Just busy,\" and heads back to his desk.", a: "\"Fair enough. If you ever want to talk about the reorganisation, I'm around.\"", bundle: 'free' },
+        { q: "Maya says, \"It's nothing, Mum. Can I go?\"", a: "\"Of course. If that joke stung, I'd want to know. Any time.\"", bundle: 'free' },
+        { q: "Jess waves it away: \"Honestly, I'm happy for you. Can we talk about something else?\"", a: "\"Sure. And if it ever feels weird for you, you can tell me. I mean it.\"", bundle: 'free' },
+        { q: "Mr Davies says, \"It is what it is,\" and gets up to go.", a: "\"Here's my direct number. If anything about this isn't working for you, ring me.\"", bundle: 'free' },
+        { q: "Your dad says, \"Forget it. It doesn't matter.\"", a: "\"Okay, Dad. If it does matter, I'd like to know. I'll ring you on Wednesday.\"", bundle: 'pro' },
+        { q: "After the meeting, Priya says, \"It's fine. You do the presentation.\"", a: "\"Thanks. If I stepped on your toes, I'd really rather hear it than guess.\"", bundle: 'pro' },
+        { q: "You text Omar to check, and he answers, \"all good mate\".", a: "\"Cool. If it's not all good, just say. First round's on me next time either way.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  emotionalcalibration2: [
+    {
+      name: "Pause the Point",
+      guideFront: "Set your argument down when...",
+      guideBack: "A spoken stop",
+      description: "Say out loud that you are going to stop pushing your side, for now. \"Let me stop pushing my point for a minute.\" You do not drop your view. You put it down, so the conversation can turn.\n\nIt works because an argument needs two people pulling. While you keep pushing, the other person has to keep pushing back, and nobody can listen. Saying that you are stopping changes the direction at once. Saying it out loud matters: a silent stop looks like sulking or giving in. The idea comes from Crucial Conversations by Kerry Patterson and colleagues: when a talk turns into a contest, stop trying to win it first.\n\nTypical phrases: \"Let me stop pushing my point for a minute.\", \"I'm going to stop there.\", \"I'll put that down for now.\", \"I've made my case. That's enough from me.\"\n\nThree ways to say it:\n\n1. The plain stop — \"Let me stop pushing my point for a minute.\"\n\n2. Name what you are putting down — \"I'll leave the figures there for now.\"\n\n3. Stop, and point at what comes next — \"I'll stop arguing my side. I'd rather hear yours.\"\n\nPausing is not agreeing. Your view is still there, and you can come back to it once the conversation has turned.\n\nMindset: putting your point down for a minute does not mean you have lost it.",
+      inputs: [
+        { q: "It is the third evening of the Christmas argument with Sam. You hear yourself making the case for your parents' house again, word for word.", a: "\"Let me stop pushing my side of Christmas for a minute.\"", bundle: 'free' },
+        { q: "You are on the fourth problem with Maria's project plan. Her voice has gone shaky, and she has stopped taking notes.", a: "\"I'm going to stop there, Maria. That's enough of my list for now.\"", bundle: 'free' },
+        { q: "Leo has just pointed out that you are on your phone until midnight. You already have your comeback ready.", a: "\"Okay. I'm going to stop arguing for a minute.\"", bundle: 'free' },
+        { q: "You have given Jess three reasons not to quit her job. She is stirring her coffee and not looking at you.", a: "\"I'll stop making my case, Jess. I've said plenty.\"", bundle: 'free' },
+        { q: "You and your dad are getting louder about his driving. You are about to bring up the dent in the car again.", a: "\"I'm going to put the driving down for a minute, Dad.\"", bundle: 'free' },
+        { q: "The rota talk with Tom has turned into who does more. You have a list of every bin you have taken out this month.", a: "\"I'm putting my list away, Tom. I'll leave it there.\"", bundle: 'pro' },
+        { q: "Kate has snapped, \"Because I'm the useless one.\" You want to explain that it was only a joke.", a: "\"Okay. I'll stop defending the joke.\"", bundle: 'pro' },
+        { q: "You have corrected Priya's figures three times, and you are reaching for the fourth.", a: "\"I'll leave the figures there for now, Priya.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Talk About the Talk",
+      guideFront: "Step out of the topic when...",
+      guideBack: "A comment on how it's going",
+      description: "Step out of what you are arguing about, and talk about how the conversation is going. \"We keep going round in circles. Can we look at how this is going?\" For a moment, the subject is not Christmas or the budget. It is the two of you, talking.\n\nIt works because some arguments are stuck in a pattern, not in the facts: the same lines, the same order, the same ending. More arguing about the topic only runs the pattern again. Naming it gives you both a place to stand outside it. Crucial Conversations calls this stepping out of the content: when the talk itself has gone wrong, fix the talk before the topic.\n\nDescribe the pattern, not the person. \"We keep repeating ourselves\" is something you both can see. \"You never listen\" is one more point in the argument.\n\nTypical phrases: \"We keep going round in circles.\", \"Can we look at how this is going?\", \"This has turned into something else.\", \"We're just trading points now.\"\n\nThree things to talk about:\n\n1. The circle — \"We've had this exact talk three nights running.\"\n\n2. The roles — \"I've been listing, and you've been defending.\"\n\n3. The drift — \"We started on the rota, and now we're on who's the worse person.\"\n\nMindset: when the conversation is stuck, the conversation is the thing to talk about.",
+      inputs: [
+        { q: "Sam says, \"So my family just doesn't count?\" It is the same line as last night, and the night before.", a: "\"Sam, we've had this exact talk three nights running. Can we look at how it's going instead?\"", bundle: 'free' },
+        { q: "In the meeting room, it has become you listing problems and Maria defending them, point by point.", a: "\"Maria, I've been listing and you've been defending. Can we try this a different way?\"", bundle: 'free' },
+        { q: "Every time you make a point about Leo's phone, he makes one about yours, and you answer it.", a: "\"Leo, we're just trading points now. Can we talk about how we're talking?\"", bundle: 'free' },
+        { q: "Jess has gone quiet. You have been talking for ten minutes, and she has said four words.", a: "\"Jess, I've done all the talking, and you've gone quiet. That's not the chat I wanted.\"", bundle: 'free' },
+        { q: "Each time your dad gets louder, you get louder too. The neighbours could probably hear.", a: "\"Dad, we're both getting louder every time. Can we notice that for a second?\"", bundle: 'free' },
+        { q: "The rota chat with Tom started with the bins and is now about who is the bigger slob.", a: "\"Tom, we started on the rota, and now we're on who's the worse person. Can we go back a step?\"", bundle: 'pro' },
+        { q: "Kate's \"useless one\" has turned the birthday planning into a fight about who you both are.", a: "\"Kate, a joke about the time has turned into something much bigger. Can we look at what just happened?\"", bundle: 'pro' },
+        { q: "Your one-to-one has become you correcting Priya and Priya getting shorter with you.", a: "\"Priya, this has turned into me correcting you. Can we step back and look at how we're doing this?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say What You Don't Mean",
+      guideFront: "Clear up the misreading when...",
+      guideBack: "A contrast: not this, but this",
+      description: "When they have heard something you did not mean, say it in two parts: first what you do not mean, then what you do. \"I'm not saying you're careless. I'm saying this deadline worries me.\" The first part takes away the fear. The second part puts your real point back on the table.\n\nIt works because people rarely get hurt by your point. They get hurt by what they think it says about them: that they are careless, stupid, too old. While that fear is in the room, they cannot hear anything else. Crucial Conversations calls this contrasting.\n\nIt is not an apology. You are not saying you were wrong; you are saying what you meant. And it only works if both parts are true. If you do half think they are careless, the first part will sound false.\n\nTypical phrases: \"I'm not saying… I'm saying…\", \"This isn't about… It's about…\", \"I don't think… I think…\"\n\nTwo parts, always in this order:\n\n1. What you don't mean — name their fear, in their words. \"I'm not saying you're too old, Dad.\"\n\n2. What you do mean — your real point, small and concrete. \"I'm saying the near miss last week scared me.\"\n\nMindset: they are reacting to what they heard. Tell them what you meant.",
+      inputs: [
+        { q: "Sam says, \"So my family just doesn't count?\"", a: "\"I'm not saying your family doesn't count. I'm saying I miss mine at Christmas.\"", bundle: 'free' },
+        { q: "Maria looks up from the plan: \"So you think the whole thing's rubbish.\"", a: "\"I don't think it's rubbish, Maria. I think the June date is too tight.\"", bundle: 'free' },
+        { q: "Leo throws his phone on the sofa: \"You just don't trust me.\"", a: "\"This isn't about trust, Leo. It's about you getting enough sleep before your exams.\"", bundle: 'free' },
+        { q: "Jess says quietly, \"You think I'm being stupid.\"", a: "\"I don't think you're being stupid. I'm worried about how you'll pay the rent.\"", bundle: 'free' },
+        { q: "Your dad says, louder now, \"So I'm too old, am I?\"", a: "\"I'm not saying you're too old, Dad. I'm saying the near miss last week scared me.\"", bundle: 'free' },
+        { q: "Tom says, \"Just say it. You think I'm a slob.\"", a: "\"I don't think you're a slob. I think the rota isn't working, for either of us.\"", bundle: 'pro' },
+        { q: "Kate says, \"Right. Because I'm the useless one.\"", a: "\"I wasn't saying you're useless. I was teasing about the time, and I want you there from the start.\"", bundle: 'pro' },
+        { q: "Priya says, \"Fine. You clearly know better.\"", a: "\"I'm not saying I know better. I'm saying I want these numbers right before the board sees them.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Slow It Down",
+      guideFront: "Lower the pace out loud when...",
+      guideBack: "A call for a slower pace",
+      description: "Say out loud that you want to slow the conversation down, and then do it: fewer words, more space between them. \"Let's slow down. I want to get this right.\" Your point stays. Only the speed changes.\n\nIt works because heat and speed feed each other. When you both answer before the other has finished, nobody is listening; you are only waiting. Naming the pace lets both of you breathe without anyone backing down. Crucial Conversations and most ways of calming a conflict agree on this: lower the pace before you try to solve anything.\n\nSaying it is only half. Your own voice has to slow down too, or the words will sound like a telling-off.\n\nTypical phrases: \"Let's slow down.\", \"Hang on. Let's take this slower.\", \"There's no rush to sort this today.\", \"I want to get this right, not fast.\"\n\nThree ways to slow it:\n\n1. The plain call — \"Let's slow down.\"\n\n2. With a reason — say why it matters. \"Let's slow down. This matters too much to rush.\"\n\n3. With a practical step — \"Put the bags down, and let's do this properly.\"\n\nMindset: a slower conversation is not a weaker one. It is one you can both hear.",
+      inputs: [
+        { q: "The Christmas talk with Sam is speeding up. You are both answering before the other has finished.", a: "\"Let's slow down. We're both answering before the other one's done.\"", bundle: 'free' },
+        { q: "You are going through Maria's plan fast, problem after problem, and she cannot keep up.", a: "\"Let's slow down, Maria. This plan deserves more than a quick list.\"", bundle: 'free' },
+        { q: "You and Leo are firing lines at each other across the kitchen, faster and faster.", a: "\"Hang on, Leo. Let's slow this right down.\"", bundle: 'free' },
+        { q: "Jess has gone quiet, and you have only spoken faster to fill the gap.", a: "\"Let me slow down, Jess. There's no rush to sort this today.\"", bundle: 'free' },
+        { q: "Your dad's voice is rising, and yours is rising to meet it.", a: "(Lower your voice.) \"Dad, let's slow down. This matters too much to shout about.\"", bundle: 'free' },
+        { q: "You and Tom are talking over each other in the hallway, and neither of you has put the shopping down.", a: "\"Let's slow down, Tom. Put the bags down, and let's do this properly.\"", bundle: 'pro' },
+        { q: "Kate snapped, and you snapped straight back, within a second.", a: "\"Wait. Let's slow down, Kate. That all happened very fast.\"", bundle: 'pro' },
+        { q: "Your one-to-one with Priya has ten minutes left, and you are both talking faster to fit it in.", a: "\"Let's slow down, Priya. I'd rather get this right than get it done in ten minutes.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Turn to Care",
+      guideFront: "Put the relationship first when...",
+      guideBack: "A statement of what matters more",
+      description: "Say plainly that the person, or what you have together, matters more to you than the point you are arguing. \"I care more about us than about being right here.\" It is the only strategy in this pack that sets the point aside on purpose, because the relationship has become the bigger thing in the room.\n\nIt works because when people feel that you would rather win than keep them, everything you say sounds like an attack. Crucial Conversations calls this mutual respect: once it goes, the conversation is about defending yourself, not the topic. John Gottman's work on couples shows the same thing: small turns towards each other in a hard moment hold a relationship together.\n\nKeep it short and true. Say it only if you mean it, and do not add a \"but\" to bring the argument straight back.\n\nTypical phrases: \"I care more about us than about being right.\", \"You matter more to me than this.\", \"I'd rather we're okay than I win this one.\"\n\nThree things to put first:\n\n1. Us — \"I care more about us than about whose house we're in.\"\n\n2. Them — \"You matter more to me than whether I'm right about this job.\"\n\n3. Working together — \"I'd rather we work well together than be right about one column.\"\n\nMindset: the point will keep. The person might not wait.",
+      inputs: [
+        { q: "The Christmas argument has gone cold. Sam is sitting at the other end of the sofa, arms folded.", a: "\"Sam, I care more about us than about whose house we're in on the 25th.\"", bundle: 'free' },
+        { q: "Maria's eyes are wet. The plan has stopped being the main thing in the room.", a: "\"Maria, working well with you matters more to me than any date on this plan.\"", bundle: 'free' },
+        { q: "You realise you want the last word with Leo more than you want him to get some sleep.", a: "\"Leo, I'd rather we're okay than I win this one.\"", bundle: 'free' },
+        { q: "Jess has said, \"Whatever. It's fine,\" and is reaching for her coat.", a: "\"Jess, you matter more to me than whether I'm right about this job.\"", bundle: 'free' },
+        { q: "Your dad has gone red in the face and stopped answering.", a: "\"Dad, I love you, and that's bigger than the car.\"", bundle: 'free' },
+        { q: "Tom mutters, \"Maybe I should just find another flat.\"", a: "\"Tom, I like living with you. That matters more to me than the rota.\"", bundle: 'pro' },
+        { q: "Kate has gone quiet on the other end of the phone.", a: "\"Kate, I want you at Mum's party, and I want us to be fine. That's what matters.\"", bundle: 'pro' },
+        { q: "Priya's \"you clearly know better\" came with a tight smile.", a: "\"Priya, I'd rather we work well together than be right about one column.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask Instead of Argue",
+      guideFront: "Swap your claim for a question when...",
+      guideBack: "A curious, open question",
+      description: "Take the next argument you were about to make, and ask a real question instead. \"Help me understand what worries you most about it.\" You stop trying to change their mind for a moment and try to learn it.\n\nIt works because two people making claims can go on forever. A question changes the shape of the talk: now one of you is explaining and the other is listening. It also tells you what the argument is really about, which is often not what either of you has been saying. Crucial Conversations asks you to get curious when you most want to be right. Charles Duhigg's Supercommunicators adds that the question has to fit the conversation you are actually in: a feeling needs a feeling question, not a fact question.\n\nThe question has to be open and honest. \"Don't you think that's a bit silly?\" is an argument wearing a question mark.\n\nTypical phrases: \"Help me understand…\", \"What does this mean to you?\", \"What am I missing?\", \"What would help?\"\n\nThree kinds of question:\n\n1. What it means to them — \"What would giving up the car mean for you, Dad?\"\n\n2. How they got there — \"What made you choose June?\"\n\n3. What would help — \"What would actually help you put it down at night?\"\n\nMindset: you can learn their view without giving up yours.",
+      inputs: [
+        { q: "Sam keeps saying Christmas at his parents' \"just makes sense\". You have argued against it all evening.", a: "\"Help me understand. What does Christmas at your parents' mean to you?\"", bundle: 'free' },
+        { q: "You are about to tell Maria why her budget will not hold either.", a: "\"What made you choose June, Maria? I'd like to know how you got there.\"", bundle: 'free' },
+        { q: "You have told Leo five different ways that his phone at night is bad for him.", a: "\"What would actually help you put it down at night?\"", bundle: 'free' },
+        { q: "You have explained to Jess why quitting is risky. She has not said what she thinks.", a: "\"What's pulling you towards this, Jess? I'd really like to know.\"", bundle: 'free' },
+        { q: "You have another reason ready for why your dad should stop driving.", a: "\"Dad, what would giving up the car mean for you?\"", bundle: 'free' },
+        { q: "You were about to tell Tom what is wrong with the way he cleans.", a: "\"What does a fair rota look like to you, Tom?\"", bundle: 'pro' },
+        { q: "You want to tell Kate she is reading far too much into a joke.", a: "\"What did that joke sound like from where you're standing?\"", bundle: 'pro' },
+        { q: "You have a fourth correction ready for Priya's figures.", a: "\"Where did these numbers come from, Priya? I might be missing something.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  emotionalcalibration3: [
+    {
+      name: "Validate Without Agreeing",
+      guideFront: "Say it makes sense, and differ when...",
+      guideBack: "Understanding, with your own view beside it",
+      description: "Say that their feeling makes sense, and say that you see it differently — both, side by side, without a \"but\" that cancels the first half. \"I see it differently, and I still get why it hurt.\"\n\nIt works because a feeling and a view are two separate things. Their hurt is real whether or not you share their reading of what happened. Argue the facts first and they hear that the feeling is wrong too, so they defend it harder. Meet the feeling first and they can usually hear your view. The idea draws on Marsha Linehan's work on validation: understanding a feeling is not the same as agreeing with it.\n\nWatch the word \"but\". \"I get why you're upset, but…\" wipes out everything before it. Use \"and\", or two separate sentences.\n\nTypical phrases: \"That makes sense, and I see it a bit differently.\", \"I can see why that hurt. I remember it another way.\", \"Your feeling is fair. My view is different.\"\n\nThree ways to hold both:\n\n1. The feeling, then your view — \"It makes sense you felt left out. I didn't see it as leaving you out.\"\n\n2. Your view, then the feeling — \"I'd still make the same call. And I can see why it stung.\"\n\n3. No position yet — when you are not sure who is right. \"I don't know yet what I think about what happened. I do get why you're angry.\"\n\nMindset: understanding how they feel is not giving in. You can do both at once.",
+      inputs: [
+        { q: "Your partner says quietly, \"You always side with your mum. I felt so alone at dinner.\" You don't think you took sides.", a: "\"I didn't see it as taking sides. And I get why you felt alone at that table.\"", bundle: 'free' },
+        { q: "Your teenage son shouts, \"It's so unfair! Everyone else is going!\" You still think the answer is no.", a: "\"The answer's still no. And I can see why it feels really unfair right now.\"", bundle: 'free' },
+        { q: "Your colleague Priya says, tight-voiced, \"You took credit for my idea in that meeting.\" You remember presenting it as hers.", a: "\"I remember it differently. It still makes sense that you're angry, if that's how it came across.\"", bundle: 'free' },
+        { q: "Your friend says, hurt, \"You didn't even ask how my interview went.\" You thought she didn't want to talk about it.", a: "\"I thought you'd rather not talk about it. I can see how it felt like I didn't care.\"", bundle: 'free' },
+        { q: "Your flatmate says, irritated, \"The rota's a joke. I do far more than you.\" You count it as even.", a: "\"I count it as pretty even. And I get that it feels like you're carrying more.\"", bundle: 'free' },
+        { q: "Your sister says, close to tears, \"Dad always liked you more.\" You're not sure that's true, and you don't want to argue it now.", a: "\"I don't know if that's how it was. I do know it hurts you, and that matters to me.\"", bundle: 'pro' },
+        { q: "Your mother says coldly, \"You moved so far away. I hardly see the children.\" You would make the same choice again.", a: "\"I'd still make the same choice. And I understand why you miss them so much.\"", bundle: 'pro' },
+        { q: "Your neighbour says, upset, \"Your tree has ruined my garden. Nobody round here cares.\" You've had it cut back twice this year.", a: "\"We've cut it back twice, so I see it a bit differently. I can still see why you're fed up with it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Feeling Under the Feeling",
+      guideFront: "Guess gently at what's beneath when...",
+      guideBack: "A tentative guess, as a question",
+      description: "When someone is angry, irritated or cold, make a gentle guess at the softer feeling that might sit underneath — worry, hurt, fear, shame or loneliness. \"I wonder if under the anger there's some worry about the money?\"\n\nIt works because anger is often the feeling people show, while the one driving it is softer and harder to say. Answer the anger and you get more anger. Name what might be under it, gently, and the other person often softens, because someone has seen the part they were protecting. The idea draws on Susan Johnson's work with couples: a sharp feeling on top often guards a more tender one.\n\nThe guess must stay a guess. \"You're just scared\" tells them what they feel. \"Could it be that you're scared?\" lets them say no — and even a no brings the conversation closer.\n\nTypical phrases: \"I wonder if…\", \"Could it be that…?\", \"Is some of this about…?\", \"Tell me if I've got this wrong.\"\n\nThree feelings that often hide under anger:\n\n1. Worry — \"Could it be you're worried about what happens if it doesn't work out?\"\n\n2. Hurt — \"I wonder if it hurt that I didn't ask you first.\"\n\n3. Feeling alone — \"Is some of this about feeling like you're doing it all on your own?\"\n\nMindset: you might guess wrong, and that is fine. A wrong guess, said gently, still shows you are looking.",
+      inputs: [
+        { q: "Your partner snaps, \"Fine, buy the sofa. Clearly my opinion doesn't count.\"", a: "\"Could it be you're worried about money, more than angry about the sofa?\"", bundle: 'free' },
+        { q: "Your dad, a month after his fall, says sharply, \"Stop ringing me every day. I'm not a child.\"", a: "\"I wonder if all the checking makes you feel like you're losing some of your independence?\"", bundle: 'free' },
+        { q: "Your teenage daughter drops her bag on the floor: \"I don't care about the stupid results anyway.\"", a: "\"Is some of this that you're disappointed, and it's easier to say you don't care?\"", bundle: 'free' },
+        { q: "Your colleague says coldly, \"Great. Another reorganisation nobody asked us about.\"", a: "\"Could it be you're worried about where your job ends up?\"", bundle: 'free' },
+        { q: "Your friend says flatly, \"Have fun at the wedding. I'm sure I wouldn't have fitted in anyway.\"", a: "\"I wonder if it hurt not to be invited?\"", bundle: 'free' },
+        { q: "Your brother says, irritated, \"You've always got everything sorted, haven't you? Must be nice.\"", a: "\"Is some of this that things are hard for you right now, and it feels lonely?\"", bundle: 'pro' },
+        { q: "Your flatmate has been cold for two days, and says, \"I'm not upset. I just don't think you think about anyone else.\"", a: "\"Tell me if I've got this wrong. Could it be you felt left out on Saturday?\"", bundle: 'pro' },
+        { q: "You come home three hours late, and your partner says, without looking up, \"Do what you want. You always do.\"", a: "\"I wonder if under that there's some hurt — like you come second?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Match Their Pace",
+      guideFront: "Slow down and say less when...",
+      guideBack: "A short, unhurried invitation",
+      description: "Slow down to their speed. Use fewer words, leave longer gaps, and tell them it can take as long as it takes. \"No rush. Take your time.\"\n\nIt works because a person who is finding something hard to say is going slowly for a reason. If you speed up — finish their sentences, fill every pause, ask three questions in a row — they feel hurried, and they stop. When your pace matches theirs, it tells them there is room. Charles Duhigg's Supercommunicators describes this kind of matching: people open up when the other person meets them where they are, and that includes the tempo.\n\nShort is the point. Each line should be something they can hear without having to answer it.\n\nTypical phrases: \"No rush.\", \"Take your time.\", \"I'm listening.\", \"Whenever you're ready.\", \"We've got all evening.\"\n\nThree ways to match their pace:\n\n1. Give them time — \"Take as long as you need. I'm not going anywhere.\"\n\n2. Say less — one short line instead of a question. \"Mm. Go on.\"\n\n3. Slow your own voice — quieter and slower than usual. \"That's okay. Start wherever you like.\"\n\nMindset: a slow conversation is not a stuck one. Let it take the time it needs.",
+      inputs: [
+        { q: "Your friend starts, \"There's something I need to tell you… it's about Tom,\" and then stops.", a: "\"Take your time. I'm not going anywhere.\"", bundle: 'free' },
+        { q: "Your teenage son sits on the edge of his bed and says, very quietly, \"School's been… I don't know.\"", a: "\"That's okay. Whenever you're ready.\"", bundle: 'free' },
+        { q: "Your colleague comes into your office, closes the door and says, \"I'm not sure how to say this.\"", a: "\"No rush. Start wherever you like.\"", bundle: 'free' },
+        { q: "Your mother is silent on the phone for a long moment, then says, \"The doctor called.\"", a: "\"I'm here, Mum. Go slowly.\"", bundle: 'free' },
+        { q: "Your partner starts to cry halfway through a sentence and can't finish it.", a: "(Wait.) \"It's alright. We've got all evening.\"", bundle: 'free' },
+        { q: "Your neighbour stops you on the stairs and says haltingly, \"Sorry. It's just… it's a year today since Anna died.\"", a: "\"Oh, Erik. Take a moment. I'm in no hurry.\"", bundle: 'pro' },
+        { q: "Your flatmate is telling you about the break-up, and you notice you've asked three questions in a row.", a: "\"Sorry, too many questions. Tell it however you want.\"", bundle: 'pro' },
+        { q: "Your younger sister starts telling you something, then says, \"Forget it, it's stupid.\"", a: "\"It doesn't sound stupid. There's no hurry. I'd like to hear it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stay, Don't Fix",
+      guideFront: "Keep them company when...",
+      guideBack: "A statement of presence, no advice",
+      description: "When something can't be fixed, or when they need company more than a plan, offer no solution. Say that you are there. \"I don't have an answer. I'm just glad you told me.\"\n\nIt works because advice given too early tells the other person that the feeling is a problem to be cleared away. Most people already know the obvious solutions; what they lack is someone who will sit with them in it. John Gottman's work with couples and Duhigg's Supercommunicators point the same way: in an emotional conversation, feeling understood comes before being helped.\n\nThis is the hard case of listening — when every part of you wants to fix it, when they ask you to, or when there is simply nothing to fix. Saying out loud that you are not going to fix it takes the pressure off you both.\n\nTypical phrases: \"I don't have an answer. I'm here.\", \"That's awful. I'm not going anywhere.\", \"I'm not going to try to fix it. I just want to be with you in it.\"\n\nThree ways to stay:\n\n1. Admit there is no answer — \"I wish I knew what to say. I don't. I'm here.\"\n\n2. Name what you are not doing — \"I'm going to hold off on ideas. I just want to hear it.\"\n\n3. Offer company — \"Do you want company for a while? We don't have to talk.\"\n\nMindset: you don't have to make it better. Being there is the help.",
+      inputs: [
+        { q: "Your friend tells you, crying, that her dog had to be put down this morning.", a: "\"I'm so sorry. I don't have anything clever to say. I'm just here.\"", bundle: 'free' },
+        { q: "Your colleague says, close to tears, \"The redundancy list came out. I'm on it.\"", a: "\"That's awful. I don't have an answer right now. I'm here, though.\"", bundle: 'free' },
+        { q: "Your partner says, \"I don't even know why I'm so sad. Nothing's wrong.\"", a: "\"You don't need a reason. I'll just sit here with you.\"", bundle: 'free' },
+        { q: "Your teenage daughter says, \"Everyone's going to the party except me. It's the worst.\"", a: "\"That sounds really lonely. I'm not going to try to fix it. I'm just sorry.\"", bundle: 'free' },
+        { q: "Your dad says quietly, \"Your mum doesn't recognise me some days now.\"", a: "\"That must be so hard, Dad. I don't have an answer. I'm glad you told me.\"", bundle: 'free' },
+        { q: "Your friend says, \"Just tell me what to do. Should I leave him or not?\"", a: "\"I don't think I can answer that tonight. I can stay while you work it out.\"", bundle: 'pro' },
+        { q: "Your brother tells you the IVF didn't work again, and you feel the urge to mention adoption.", a: "\"I'm so sorry. That's all. I'm just really sorry.\"", bundle: 'pro' },
+        { q: "Your neighbour says, \"The house feels so empty since the kids moved out.\" You catch yourself thinking of hobbies to suggest.", a: "\"That's a big change. Would you like some company for a cup of tea?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Repair in the Moment",
+      guideFront: "Own the slip and try again when...",
+      guideBack: "A quick catch, then a second try",
+      description: "When something you just said made it worse, say so straight away and try again. \"That came out wrong. Let me try again.\"\n\nIt works because the damage from a bad line grows when nobody mentions it. The other person goes quiet, decides what you must have meant, and the conversation closes. A repair caught within seconds stops that. John Gottman calls these small bids to get back on track repair attempts, and sees them as one of the things that keep close relationships steady — far more than never slipping up.\n\nKeep it quick. A long apology turns the conversation towards your feelings about your mistake. One line, then back to them.\n\nTypical phrases: \"That came out wrong.\", \"Hang on — that's not what I meant. Let me start again.\", \"Sorry, I jumped to advice. Can I try that again?\", \"Scrap that. What I meant was…\"\n\nThree parts, said in one breath:\n\n1. Catch it — \"That came out wrong.\"\n\n2. Take it back — \"Forget the advice. That wasn't helpful.\"\n\n3. Try again — \"What I want to say is: that sounds really hard.\"\n\nMindset: a slip caught quickly does less harm than one left alone. Catching it shows you care how it landed.",
+      inputs: [
+        { q: "Your partner says she's dreading her review. You say, \"Well, you did miss a few deadlines.\" She looks away.", a: "\"That came out wrong. Sorry. You're worried, and I made it worse. Can I start again?\"", bundle: 'free' },
+        { q: "Your friend says he failed his driving test again. You laugh: \"Third time lucky!\" His face drops.", a: "\"Sorry, that was flippant. That's really frustrating. How are you doing?\"", bundle: 'free' },
+        { q: "Your teenage son says he feels stupid in maths. You say, \"Just work harder, then.\" He shrugs and walks off.", a: "\"Wait — that wasn't fair. Come back. You're not stupid, and I'd like to hear about it.\"", bundle: 'free' },
+        { q: "Your colleague says she's overwhelmed. You say, \"We're all busy.\" She goes quiet.", a: "\"Sorry, that sounded dismissive. Let me try again: what's on your plate right now?\"", bundle: 'free' },
+        { q: "Your sister says she's nervous about the operation. You say, \"Oh, it's a really common one.\" She says, \"Right. Okay.\"", a: "\"Hang on, I brushed that off. It's your operation, and of course you're nervous.\"", bundle: 'free' },
+        { q: "Your mother says she's felt lonely since the move. You ask, \"Have you thought about joining a club?\" She sighs: \"Everyone says that.\"", a: "\"You're right, I jumped to advice. Scrap that. Tell me what the days are like.\"", bundle: 'pro' },
+        { q: "Your flatmate says he's upset about the noise. You say, \"You're always complaining about something.\" His face hardens.", a: "\"That was a cheap shot. I take it back. You're upset about the noise — let's talk about that.\"", bundle: 'pro' },
+        { q: "Your friend tells you about her divorce. You say, \"At least you don't have kids.\" She goes silent.", a: "\"That was a terrible thing to say. I'm sorry. There's no 'at least' about this.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -21294,6 +21916,356 @@ const collectionsModeData = {
         { q: "Freya, a journalist you met, wrote about housing last year. You've just read a report she might find useful.", a: "\"Thought this report might be useful for your housing work. No need to reply.\" [Stay in Touch Without an Ask]", bundle: 'pro', guideBack: "A useful share, no reply needed" },
         { q: "Your call with Ines helped you decide to train as a school counsellor. You've just started the course.", a: "\"I started the counselling course this week. Our call is the reason I applied. Thank you.\" [Close the Loop]", bundle: 'pro', guideBack: "A thank-you with the outcome" },
         { q: "Noor, an illustrator, says she can't take you on, but suggests you talk to her agent.", a: "\"That's kind, thank you. Would you be comfortable passing on my details? I can send you two lines.\" [Ask for an Introduction]", bundle: 'pro', guideBack: "A request that is easy to pass on" },
+      ]
+    },
+  ],
+  jobinterview1: [
+    {
+      name: "Show Who You Are",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Present, Past, Future**, **Answer With a Story** and **The Honest Weakness** — the three for questions about you: who you are, what you have done, and what you find hard.\n\n• **Present, Past, Future** — an open question about you: now, before, and why this job\n• **Answer With a Story** — \"tell me about a time\": one real example with a result\n• **The Honest Weakness** — \"what's your weakness?\": a real one, and what you do about it\n\nThe question that decides it: are they asking who I am, what I did, or what I struggle with?\n\nThe usual wrong choice is answering a \"tell me about a time\" question with a description of yourself. \"I'm calm under pressure\" is a claim; they asked for the day it happened.\n\nMindset: short, concrete and true beats polished every time.",
+      inputs: [
+        { q: "Interview for a pharmacy assistant job. Eva says, \"Let's start with you. Who are you?\"", a: "\"I work on the tills at a garden centre. Before that I spent a year caring for my grandmother. I'd like a job where looking after people is the main part.\" [Present, Past, Future]", bundle: 'pro', guideBack: "A three-part intro that ends here" },
+        { q: "Dave asks, for the warehouse job, \"Tell me about a time you made a mistake at work.\"", a: "\"I loaded a pallet for the wrong shop. I saw it on the list an hour later, called the driver, and he swapped it on the way. Now I check the address twice.\" [Answer With a Story]", bundle: 'pro', guideBack: "A short story with a result" },
+        { q: "Priya asks, \"What's something you're not good at yet?\"", a: "\"Writing tests for my code. I've been skipping them when I'm in a hurry. This month I've written one for every change, and it's slower but better.\" [The Honest Weakness]", bundle: 'pro', guideBack: "A true flaw, and the fix" },
+        { q: "Marco says, \"So — tell me your story.\"", a: "\"I'm a line cook at a pizza place right now. Before that I worked in a school kitchen. I want to learn a full menu, and that's what you do here.\" [Present, Past, Future]", bundle: 'pro', guideBack: "A three-part intro that ends here" },
+        { q: "Anna asks, for the teaching job, \"Give me an example of how you handled a difficult student.\"", a: "\"A boy in Year 9 refused to write anything. I asked him to tell me his answer instead, and I wrote it down. By March he was writing half a page.\" [Answer With a Story]", bundle: 'pro', guideBack: "A short story with a result" },
+        { q: "Linda asks, for the supermarket job, \"Is there anything you find hard?\"", a: "\"I'm slow at maths in my head. I always use the till or my phone, and I count change back out loud.\" [The Honest Weakness]", bundle: 'pro', guideBack: "A true flaw, and the fix" },
+        { q: "Henrik asks, \"Tell me about a time you had to learn something fast.\"", a: "\"We changed accounting systems in January with two weeks' notice. I did the online course in the evenings and made a cheat sheet for the team. We closed the month on time.\" [Answer With a Story]", bundle: 'pro', guideBack: "A short story with a result" },
+        { q: "Interview for a bus driver job. Ali says, \"Tell me a little about your background.\"", a: "\"I drive a delivery van for a bakery now. Before that I was a postman for six years. I'd like to drive people instead of parcels, and on a fixed route.\" [Present, Past, Future]", bundle: 'pro', guideBack: "A three-part intro that ends here" },
+      ]
+    },
+    {
+      name: "Prove the Fit",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Answer With a Story**, **Why This Job** and **Ask Them a Question** — the three for the part of the interview about you and this job together.\n\n• **Answer With a Story** — \"why should we hire you?\": prove it with one real example\n• **Why This Job** — \"why us?\": one specific thing about them, tied to you\n• **Ask Them a Question** — your turn: a real question about the work\n\nThe question that decides it: do they want proof, a reason, or my side of the conversation?\n\nThe usual wrong choice is answering \"why should we hire you?\" with a list of qualities. Five adjectives are easy to forget; one story is not.\n\nMindset: you are not begging for the job. You are checking, together, whether it fits.",
+      inputs: [
+        { q: "Priya asks, \"Why should we hire you over the other candidates?\"", a: "\"I can't speak for the others. Last spring I took over a client site nobody wanted and cut its loading time in half. That's the kind of work I'd do here.\" [Answer With a Story]", bundle: 'pro', guideBack: "A short story with a result" },
+        { q: "Interview for a receptionist job at a dental clinic. Karin asks, \"Why our clinic?\"", a: "\"You're open in the evenings, and my dad could only ever come after work. I like that you plan for people like him.\" [Why This Job]", bundle: 'pro', guideBack: "A specific reason, tied to you" },
+        { q: "Maria asks, \"Any questions for us?\"", a: "\"How do new nurses get to know the children's routines here — is there a mentor?\" [Ask Them a Question]", bundle: 'pro', guideBack: "A genuine question about the role" },
+        { q: "Dave asks, \"What makes you right for nights?\"", a: "\"I worked nights at a petrol station for a year and never missed a shift. I like the quiet, and I sleep well in the day.\" [Answer With a Story]", bundle: 'pro', guideBack: "A short story with a result" },
+        { q: "Jonas asks, \"Why this company and not a school?\"", a: "\"Your customers are small firms with no IT person. I've spent ten years explaining things to people who don't think they're good at it.\" [Why This Job]", bundle: 'pro', guideBack: "A specific reason, tied to you" },
+        { q: "Marco says, \"That's my side. What do you want to know?\"", a: "\"Who would I be working next to on my first weeks?\" [Ask Them a Question]", bundle: 'pro', guideBack: "A genuine question about the role" },
+        { q: "Linda asks, \"Why do you want to work in a shop?\"", a: "\"I like it when someone comes in looking lost and leaves with what they needed. Your shop is busy enough that I'd get to do that all day.\" [Why This Job]", bundle: 'pro', guideBack: "A specific reason, tied to you" },
+        { q: "Henrik mentions that the company is opening an office in another city next year. Then he asks if you have questions.", a: "\"You mentioned the new office. Would this role help set up its accounts?\" [Ask Them a Question]", bundle: 'pro', guideBack: "A genuine question about the role" },
+      ]
+    },
+    {
+      name: "All Five Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order an interview really brings them — with no warning about which question is coming.\n\n• **Present, Past, Future** — the open start\n• **Answer With a Story** — \"tell me about a time\"\n• **The Honest Weakness** — the weakness question\n• **Why This Job** — \"why us?\"\n• **Ask Them a Question** — your turn at the end\n\nThe question that decides it: what did they just ask for — me, an example, a flaw, a reason, or my questions?\n\nThe usual wrong choice is giving the same prepared speech to every question. Listen to what was asked, and answer that, short.\n\nMindset: one question at a time. Each one only needs a short, true answer.",
+      inputs: [
+        { q: "Interview for a gardener job with the city parks team. Erik says, \"Tell me about yourself.\"", a: "\"I look after the grounds at a care home right now. Before that I did a two-year course in horticulture. I'd like to work on bigger parks with a team.\" [Present, Past, Future]", bundle: 'pro', guideBack: "A three-part intro that ends here" },
+        { q: "Linda asks, \"Tell me about a time you had to deal with a rude customer.\"", a: "\"A man shouted because his card didn't work. I kept my voice low, let him try again, and called my manager. He came back the next day and said sorry.\" [Answer With a Story]", bundle: 'pro', guideBack: "A short story with a result" },
+        { q: "Maria asks, \"What's your biggest weakness?\"", a: "\"I take other people's shifts too often and get tired. I've decided on one extra shift a month, no more.\" [The Honest Weakness]", bundle: 'pro', guideBack: "A true flaw, and the fix" },
+        { q: "Henrik asks, \"Why do you want to work for us in particular?\"", a: "\"You're a family firm that has grown every year without selling. I'd like to help keep the numbers that tidy.\" [Why This Job]", bundle: 'pro', guideBack: "A specific reason, tied to you" },
+        { q: "At the end, Priya asks, \"Is there anything you'd like to ask us?\"", a: "\"What does the team usually find hardest about a new person's first month?\" [Ask Them a Question]", bundle: 'pro', guideBack: "A genuine question about the role" },
+        { q: "Anna asks, \"Tell me about a time you worked with a parent who was unhappy.\"", a: "\"A mother emailed that her son's grade was unfair. I called her, showed her the three tasks it was based on, and we agreed on an extra one. She wrote to thank me in June.\" [Answer With a Story]", bundle: 'pro', guideBack: "A short story with a result" },
+        { q: "Marco asks, \"Why do you want to cook here and not in a restaurant?\"", a: "\"Your kitchen does breakfast, lunch and dinner. I'd learn three different services in one place.\" [Why This Job]", bundle: 'pro', guideBack: "A specific reason, tied to you" },
+        { q: "Tom asks, for the café, \"Is there something you're still working on?\"", a: "\"Remembering orders. I write everything down now, even for a table of two.\" [The Honest Weakness]", bundle: 'pro', guideBack: "A true flaw, and the fix" },
+      ]
+    },
+  ],
+  jobinterview2: [
+    {
+      name: "Own the Weak Spot",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Explain the Gap**, **Own a Mistake** and **When You Don't Know** — three strategies for the part of your record that looks weak.\n\n• **Explain the Gap** — a stretch of time with nothing on your CV\n• **Own a Mistake** — something you did that went wrong\n• **When You Don't Know** — something you have not done or cannot answer yet\n\nThe question that decides it: is the weak spot about time, about something you did, or about something you cannot do yet?\n\nThe usual wrong choice is treating a gap as a mistake. Apologising for a year at home with a sick parent makes a plain fact sound like a fault.\n\nMindset: every weak spot has a short, true answer. Find which kind it is.",
+      inputs: [
+        { q: "A bus company asks why there are two years missing from your CV.", a: "\"I was caring for my mother. That's over now, and I'm ready for full-time shifts again.\" [Explain the Gap]", bundle: 'pro', guideBack: "A short reason, then forward" },
+        { q: "A dentist's practice asks about a time you let a patient down.", a: "\"I once double-booked a patient and he waited an hour. I apologised and moved him to the front, and now I check the diary every morning.\" [Own a Mistake]", bundle: 'pro', guideBack: "An admission with a lesson" },
+        { q: "A council office asks if you have written a funding application before.", a: "\"I haven't. I've written plenty of reports, though, and I'd ask to see a good application first and follow its shape.\" [When You Don't Know]", bundle: 'pro', guideBack: "An honest no, with a plan" },
+        { q: "A cinema asks why you left your last job after only three months.", a: "\"I moved cities for my partner's job. I'm settled here now and looking for somewhere to stay.\" [Explain the Gap]", bundle: 'pro', guideBack: "A short reason, then forward" },
+        { q: "An event company asks, \"What's something you got badly wrong?\"", a: "\"I booked the wrong date for a band at a wedding. I found another band that night, and now I confirm every booking twice in writing.\" [Own a Mistake]", bundle: 'pro', guideBack: "An admission with a lesson" },
+        { q: "A builders' merchant asks if you know their stock system.", a: "\"Not that one. I learned two others in my last job, and I was quick on both.\" [When You Don't Know]", bundle: 'pro', guideBack: "An honest no, with a plan" },
+        { q: "A school asks why you have been doing supply work for a year instead of a full-time post.", a: "\"I wanted to see a lot of schools before I chose one. Now I know what I'm looking for, and this school is it.\" [Explain the Gap]", bundle: 'pro', guideBack: "A short reason, then forward" },
+        { q: "A bank asks a question about a law you have never heard of.", a: "\"I don't know that one. I'd look it up before I said anything to a customer about it.\" [When You Don't Know]", bundle: 'pro', guideBack: "An honest no, with a plan" },
+      ]
+    },
+    {
+      name: "Answer or Steer",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**The Salary Question**, **Explain the Gap** and **Turn a Personal Question** — three strategies for questions that feel private.\n\n• **The Salary Question** — money: give a range, or ask theirs\n• **Explain the Gap** — time away: one reason, then forward\n• **Turn a Personal Question** — your private life: answer what the job needs\n\nThe question that decides it: does the job really need this answer? Pay and time away are fair questions, so answer them plainly. Family, age, faith, health and origin usually are not, so answer the worry under them.\n\nThe usual wrong choice is treating money as private — \"I'd rather not say\" — which leaves them to pick the number for you.\n\nMindset: answer what belongs to the job. Steer what does not, kindly.",
+      inputs: [
+        { q: "A printing firm asks what kind of salary you have in mind.", a: "\"From what I've seen, jobs like this pay 29 to 32 thousand a month. Does that fit with your budget?\" [The Salary Question]", bundle: 'pro', guideBack: "A range, or a question about theirs" },
+        { q: "A recruiter asks why you were out of work for most of last year.", a: "\"I had surgery and a long recovery. I'm fully back on my feet, and I want to get going.\" [Explain the Gap]", bundle: 'pro', guideBack: "A short reason, then forward" },
+        { q: "A hotel asks, \"Do you have a family to think about?\"", a: "\"Nothing that would stop me working weekends, if that's what you're checking.\" [Turn a Personal Question]", bundle: 'pro', guideBack: "A polite redirect to the work" },
+        { q: "You feel like saying the salary is too private to discuss.", a: "\"Let me give you a range rather than dodge it: 33 to 36 thousand, depending on the hours.\" [The Salary Question]", bundle: 'pro', guideBack: "A range, or a question about theirs" },
+        { q: "An airline asks how old your children are.", a: "\"Everything at home is arranged so I can work the full rota. Is there a part of it you're wondering about?\" [Turn a Personal Question]", bundle: 'pro', guideBack: "A polite redirect to the work" },
+        { q: "A gym asks about the six months you spent travelling.", a: "\"I took six months to travel after university. It was the right time to do it, and now I'm ready to settle into a job.\" [Explain the Gap]", bundle: 'pro', guideBack: "A short reason, then forward" },
+        { q: "A cleaning company asks, \"What would you want to be paid?\"", a: "\"What range do you have for the role? Then I can tell you if it works for me.\" [The Salary Question]", bundle: 'pro', guideBack: "A range, or a question about theirs" },
+        { q: "A taxi firm asks, \"Is English your first language?\"", a: "\"I've worked in English for ten years, and I'm happy to do any test you use.\" [Turn a Personal Question]", bundle: 'pro', guideBack: "A polite redirect to the work" },
+      ]
+    },
+    {
+      name: "All Six Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "All six strategies in this pack, mixed, with no warning about which hard moment comes next.\n\n• **Explain the Gap** · **Own a Mistake** · **When You Don't Know** — the weak spots in your record\n• **The Salary Question** · **Turn a Personal Question** — the questions that feel private\n• **Follow Up After** — everything after you walk out of the room\n\nThe question that decides it: what are they really asking — about your time, your work, your skills, your pay, your private life, or what happens next?\n\nThe usual wrong choice is the long, nervous answer. Any of the six, said short, beats the right one said for two minutes.\n\nMindset: hard questions are normal in an interview. A short, true answer is enough.",
+      inputs: [
+        { q: "A library asks what you did in the year after you left university.", a: "\"I worked part time in a bookshop and figured out what I wanted. This job is the answer I came to.\" [Explain the Gap]", bundle: 'pro', guideBack: "A short reason, then forward" },
+        { q: "A garden firm asks, \"Tell me about a time you got something wrong.\"", a: "\"I cut back the wrong hedge at a customer's house. I told her straight away and paid for new plants, and now I walk the garden with the customer first.\" [Own a Mistake]", bundle: 'pro', guideBack: "An admission with a lesson" },
+        { q: "A pharmacy asks if you can work with their stock-ordering program.", a: "\"I haven't used it. I'd ask for an hour with someone who knows it, and I'd be up to speed within a week.\" [When You Don't Know]", bundle: 'pro', guideBack: "An honest no, with a plan" },
+        { q: "A charity asks, \"What salary are you expecting?\"", a: "\"From what I've seen, roles like this pay 30 to 33 thousand a month. What have you set aside for it?\" [The Salary Question]", bundle: 'pro', guideBack: "A range, or a question about theirs" },
+        { q: "A delivery company asks, \"Are you religious at all?\"", a: "\"I'd rather keep that private. I can tell you I'll work every shift on the rota.\" [Turn a Personal Question]", bundle: 'pro', guideBack: "A polite redirect to the work" },
+        { q: "A week after your interview at an architect's office, you have heard nothing.", a: "\"Hi Sara, I'm following up on the assistant role. I'm still very interested, and I'd be glad to send anything else you need.\" [Follow Up After]", bundle: 'pro', guideBack: "A short message with one detail" },
+        { q: "A sports shop emails to say you did not get the job.", a: "\"Thanks for letting me know. I enjoyed hearing about your running club, and I'd like to be considered for anything else that comes up.\" [Follow Up After]", bundle: 'pro', guideBack: "A short message with one detail" },
+        { q: "A call centre asks about the eight months since your last job.", a: "\"I was let go when the company shrank. I've spent the time on a customer service course, and I'm ready to start.\" [Explain the Gap]", bundle: 'pro', guideBack: "A short reason, then forward" },
+      ]
+    },
+  ],
+  talkingtoyourmanager: [
+    {
+      name: "Keep Them Informed",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Bottom Line First**, **Bad News Early** and **Ask Them to Choose** — three strategies for telling your manager where things stand.\n\n• **Bottom Line First** — they need an update: give the headline first\n• **Bad News Early** — something has gone wrong: tell them now, with a plan\n• **Ask Them to Choose** — there is more work than time: let them decide what comes first\n\nThe question that decides it: what do they need from me right now — news, a warning, or a decision?\n\nThe usual wrong choice is the long update that hides the problem in the middle. They hear \"fine\" at the start and miss the part that matters.\n\nMindset: make it easy for them to know what is going on.",
+      inputs: [
+        { q: "Marcus asks how the weekend went. Sales were good, and one till broke on Sunday.", a: "\"Good weekend — sales up ten per cent. One till is broken, and I've booked the repair.\" [Bottom Line First]", bundle: 'pro', guideBack: "The headline, then the need" },
+        { q: "You realise you forgot to order a patient's blood test this morning. Priya does not know.", a: "\"I forgot to order Mr Berg's blood test this morning. It's ordered now, and the results will be back by four.\" [Bad News Early]", bundle: 'pro', guideBack: "The problem, plus a plan" },
+        { q: "Helen gives you a third urgent task this week.", a: "\"I can take this, but then the client report waits until next week. Which would you rather?\" [Ask Them to Choose]", bundle: 'pro', guideBack: "A clear either-or question" },
+        { q: "Grace calls: \"Quick one — are we ready for the inspection?\"", a: "\"Yes, except the fire doors. They arrive tomorrow morning.\" [Bottom Line First]", bundle: 'pro', guideBack: "The headline, then the need" },
+        { q: "You see that an email to two hundred customers went out with the wrong phone number. Raj has not noticed.", a: "\"I need to flag something now: the customer email had the wrong phone number. I've drafted a correction for you to approve.\" [Bad News Early]", bundle: 'pro', guideBack: "The problem, plus a plan" },
+        { q: "Lena wants you to run a private party and train the new waiter on the same evening.", a: "\"I can run the party or train Jonas tonight, but not both well. Which do you want me on?\" [Ask Them to Choose]", bundle: 'pro', guideBack: "A clear either-or question" },
+        { q: "Ruth asks in the corridor how the class trip planning is going.", a: "\"On track. The bus is booked; I'm waiting for six permission slips.\" [Bottom Line First]", bundle: 'pro', guideBack: "The headline, then the need" },
+        { q: "Ten minutes ago you scraped a rack with the forklift. Nobody saw it.", a: "\"I scraped rack twelve with the forklift just now. Nobody's hurt, I've taped it off, and it needs checking before anyone uses it.\" [Bad News Early]", bundle: 'pro', guideBack: "The problem, plus a plan" },
+      ]
+    },
+    {
+      name: "Speak Up for Yourself",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Disagree, Then Commit**, **Ask for What You Want** and **Ask Them to Choose** — three strategies for saying what you think and what you need, while your manager still decides.\n\n• **Disagree, Then Commit** — they have decided something you think is wrong\n• **Ask for What You Want** — you want something for yourself: pay, training, hours, a title\n• **Ask Them to Choose** — they are asking for more than you can do\n\nThe question that decides it: is this about their decision, my future, or my time?\n\nThe usual wrong choice is saying nothing and complaining later — to colleagues, at home, or in the exit interview.\n\nMindset: speaking up once, clearly, is part of the job.",
+      inputs: [
+        { q: "Diane decides the team will move to open-plan desks. You think it will make focused work harder.", a: "\"I think open-plan will make the focused work harder. If you decide to go ahead, I'll help set it up.\" [Disagree, Then Commit]", bundle: 'pro', guideBack: "One reason, and a promise to follow" },
+        { q: "After three years of night shifts, you would like to move to days.", a: "\"I've done nights for three years without missing a shift. I'd like to move to days from the autumn. Could we talk about it at my review?\" [Ask for What You Want]", bundle: 'pro', guideBack: "Facts first, then a concrete request" },
+        { q: "Tom wants you to train two new starters and keep your picking target this week.", a: "\"I can train them or hit my picking target this week. Which matters more to you?\" [Ask Them to Choose]", bundle: 'pro', guideBack: "A clear either-or question" },
+        { q: "Marcus wants to stop the student discount.", a: "\"My worry is that students make up a lot of our Saturday sales. If you still want to stop it, I'll put up the new signs.\" [Disagree, Then Commit]", bundle: 'pro', guideBack: "One reason, and a promise to follow" },
+        { q: "You have been helping new call centre staff for months, and nobody has called it part of your job.", a: "\"I've mentored the last five new starters. I'd like that to be part of my role, with the title. Can we talk about it next week?\" [Ask for What You Want]", bundle: 'pro', guideBack: "Facts first, then a concrete request" },
+        { q: "Mr Okafor asks you to take an extra class next term.", a: "\"I could take the class if I give up the homework club. Would you rather I did that, or kept the club?\" [Ask Them to Choose]", bundle: 'pro', guideBack: "A clear either-or question" },
+        { q: "Yesterday you told Lena you thought the new opening hours were a mistake. Today she says they are staying.", a: "\"Okay. I've said my piece, and I'm with you. I'll tell the kitchen today.\" [Disagree, Then Commit]", bundle: 'pro', guideBack: "One reason, and a promise to follow" },
+        { q: "On the building site you are moving pallets most days, but you have no forklift licence.", a: "\"I've been moving pallets most days this month. Could the company pay for my forklift licence?\" [Ask for What You Want]", bundle: 'pro', guideBack: "Facts first, then a concrete request" },
+      ]
+    },
+    {
+      name: "All Five Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order real working weeks bring them — with no warning about which one is coming.\n\nThe five fall into two groups. **Bottom Line First**, **Bad News Early** and **Ask Them to Choose** keep your manager informed. **Disagree, Then Commit** and **Ask for What You Want** say what you think and what you need.\n\nIf you are unsure, ask what your manager needs to do next: understand, act, choose, think again, or help you?\n\nThe usual wrong choice is waiting for a better moment. Most of these are easier this week than next month.\n\nMindset: they decide. Your job is to make the decision easy.",
+      inputs: [
+        { q: "Anders says, \"Give me thirty seconds on the launch.\"", a: "\"We launch on the tenth as planned. The only risk is the translation, and it's due Monday.\" [Bottom Line First]", bundle: 'pro', guideBack: "The headline, then the need" },
+        { q: "You notice you signed the chart for a dose that another nurse gave.", a: "\"I need to correct something: I signed for a dose that Ali gave. I've told him, and I'd like to fix the chart with you now.\" [Bad News Early]", bundle: 'pro', guideBack: "The problem, plus a plan" },
+        { q: "Raj hands you a new project on top of the weekly report.", a: "\"I can start the new project this week if the weekly report waits until Monday. Is that okay, or should the report come first?\" [Ask Them to Choose]", bundle: 'pro', guideBack: "A clear either-or question" },
+        { q: "Ruth decides to cancel the spring concert. Your class has practised all term.", a: "\"I think the students will be very disappointed — they've practised all term. If it's final, I'll tell them myself.\" [Disagree, Then Commit]", bundle: 'pro', guideBack: "One reason, and a promise to follow" },
+        { q: "You want to learn the pastry station properly.", a: "\"I've covered pastry four times this month when Ana was off. I'd like to train there properly. Could I work with her for two weeks?\" [Ask for What You Want]", bundle: 'pro', guideBack: "Facts first, then a concrete request" },
+        { q: "Tom asks, \"Are we okay for Christmas?\"", a: "\"Not quite. We're three people short for December. I need you to approve agency staff by Friday.\" [Bottom Line First]", bundle: 'pro', guideBack: "The headline, then the need" },
+        { q: "You ordered the wrong window size for the second floor. Grace does not know yet.", a: "\"I ordered the wrong window size for the second floor. My mistake. The supplier can swap them by Thursday, so we lose two days.\" [Bad News Early]", bundle: 'pro', guideBack: "The problem, plus a plan" },
+        { q: "You have worked every Saturday at the shop for two years and would like some off.", a: "\"I've worked every Saturday for two years. I'd like two Saturdays off a month from June. Could we try that?\" [Ask for What You Want]", bundle: 'pro', guideBack: "Facts first, then a concrete request" },
+      ]
+    },
+  ],
+  newatwork: [
+    {
+      name: "Meet the Team",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**The Work Intro**, **Ask How Things Work Here** and **Coffee With a Colleague** — three strategies for getting to know the people and the place.\n\n• **The Work Intro** — you have not met yet: name, role, one question\n• **Ask How Things Work Here** — you have met, but you do not know the local habits\n• **Coffee With a Colleague** — you want to know someone better, or understand their part of the work\n\nThe question that decides it: how well do you know this person already? Not at all — introduce yourself. A little — ask how things work. Well enough to ask for ten minutes — invite them for a coffee.\n\nThe usual wrong choice is skipping the intro and going straight to questions. People help you, but they never learn your name.\n\nMindset: in the first weeks, every hello is part of the job.",
+      inputs: [
+        { q: "A cleaner is mopping the corridor at your new school on your first morning.", a: "\"Morning — I'm Hanna, the new English teacher. What's your name?\" [The Work Intro]", bundle: 'pro', guideBack: "A hello that ends in a question" },
+        { q: "Everyone at the café seems to know who opens and who closes, and nobody has told you.", a: "\"How is it decided who opens and who closes? I'd like to know how it works.\" [Ask How Things Work Here]", bundle: 'pro', guideBack: "A question about local habits" },
+        { q: "You have been at the hospital for two weeks and still do not understand what the discharge team does.", a: "\"Could I buy you a coffee one day? I'd like to understand how discharges work from your side.\" [Coffee With a Colleague]", bundle: 'pro', guideBack: "A short, clear invitation" },
+        { q: "A new face appears in the warehouse canteen, and everyone else seems to know him.", a: "\"Hi, I'm Marta — I started in returns on Monday. Which part are you in?\" [The Work Intro]", bundle: 'pro', guideBack: "A hello that ends in a question" },
+        { q: "You notice that nobody at the office uses the big meeting room, even when it is free.", a: "\"Is there a reason nobody uses the big room? I feel like there's a rule I've missed.\" [Ask How Things Work Here]", bundle: 'pro', guideBack: "A question about local habits" },
+        { q: "The owner of the garage has been there twenty years, and you have barely spoken to him.", a: "\"Could I have ten minutes with you this week? I'd like to hear how the place grew.\" [Coffee With a Colleague]", bundle: 'pro', guideBack: "A short, clear invitation" },
+        { q: "You work part-time in a shop and meet the weekend manager for the first time.", a: "\"Hi, I'm Kofi — I do Tuesdays and Thursdays. I hear weekends are a different world?\" [The Work Intro]", bundle: 'pro', guideBack: "A hello that ends in a question" },
+        { q: "At the care home, you see staff handing out the residents' newspapers in a particular order.", a: "\"Is there a system with the papers? I'd rather ask than mix them up.\" [Ask How Things Work Here]", bundle: 'pro', guideBack: "A question about local habits" },
+      ]
+    },
+    {
+      name: "Learn the Job",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Ask What Good Looks Like**, **Show What You Tried** and **Ask for Feedback Early** — three strategies for getting the work itself right.\n\n• **Ask What Good Looks Like** — before the task: what are you aiming for?\n• **Show What You Tried** — in the middle: you are stuck on one thing\n• **Ask for Feedback Early** — after: how did it go, and what is one thing to change?\n\nThe question that decides it: are you before, in the middle of, or after the task?\n\nThe usual wrong choice is asking for feedback when you never found out what was expected. Then the feedback comes as a surprise, for both of you.\n\nMindset: aim, try, check — and then again.",
+      inputs: [
+        { q: "Your new manager at the shop hands you the keys and says, \"You'll be closing on Fridays.\"", a: "\"Great. What does a good close look like for you?\" [Ask What Good Looks Like]", bundle: 'pro', guideBack: "A question about the goal" },
+        { q: "The label printer in the warehouse keeps printing blank labels, and you have already changed the roll.", a: "\"I've changed the roll and switched it off and on, and it's still blank. Is there a trick to it?\" [Show What You Tried]", bundle: 'pro', guideBack: "What you did, then a question" },
+        { q: "You have just run your first team meeting at the office.", a: "\"That was my first one. What's one thing I could do better next time?\" [Ask for Feedback Early]", bundle: 'pro', guideBack: "A request for one concrete thing" },
+        { q: "In the lab, you are given your first project with no deadline mentioned.", a: "\"What would good progress look like by the end of the month?\" [Ask What Good Looks Like]", bundle: 'pro', guideBack: "A question about the goal" },
+        { q: "At the care home, a resident's medicine list does not match the chart, and you have checked both twice.", a: "\"I've checked the list and the chart twice, and they don't match. Who should I tell?\" [Show What You Tried]", bundle: 'pro', guideBack: "What you did, then a question" },
+        { q: "You have just finished your first night shift at the hospital.", a: "\"Before I go home — is there one thing I should do differently tonight?\" [Ask for Feedback Early]", bundle: 'pro', guideBack: "A request for one concrete thing" },
+        { q: "You are the summer help at a garage, and you have been told to \"keep the place tidy\".", a: "\"Tidy how? What does it look like when it's done right?\" [Ask What Good Looks Like]", bundle: 'pro', guideBack: "A question about the goal" },
+        { q: "A parent emails you about a school trip, and you have already searched the staff handbook for the answer.", a: "\"I've looked in the handbook and can't find the trip rules. Who would know?\" [Show What You Tried]", bundle: 'pro', guideBack: "What you did, then a question" },
+      ]
+    },
+    {
+      name: "All Six Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order the first weeks really bring them — with no warning about which kind of moment is next.\n\n• **The Work Intro** — you have not met\n• **Ask How Things Work Here** — the habits nobody wrote down\n• **Coffee With a Colleague** — someone worth knowing better\n• **Ask What Good Looks Like** — the goal nobody named\n• **Show What You Tried** — you are stuck, and you have tried\n• **Ask for Feedback Early** — the task is done\n\nThe question that decides it: is the gap about the people, or about the work? Then: before, during or after?\n\nThe usual wrong choice is none of them — staying quiet and guessing. Any of the six beats that.\n\nMindset: the first weeks are when asking costs least.",
+      inputs: [
+        { q: "On your first day at the hospital, a physiotherapist holds the door open for you.", a: "\"Thanks — I'm Petra, new on the ward. Are you with us every day?\" [The Work Intro]", bundle: 'pro', guideBack: "A hello that ends in a question" },
+        { q: "Your new manager at the garage says, \"Just watch and learn this week.\"", a: "\"Happy to. What would you like me to be able to do by Friday?\" [Ask What Good Looks Like]", bundle: 'pro', guideBack: "A question about the goal" },
+        { q: "The dishwasher at the café has stopped in the middle of a cycle, and you have already checked the door.", a: "\"I've checked the door and the filter, and it won't start again. Is there a reset button?\" [Show What You Tried]", bundle: 'pro', guideBack: "What you did, then a question" },
+        { q: "Your colleagues at the office all leave at four on Fridays, and you are not sure if you can.", a: "\"Is leaving at four on Fridays a team thing? I don't want to go early by mistake.\" [Ask How Things Work Here]", bundle: 'pro', guideBack: "A question about local habits" },
+        { q: "The teacher in the next classroom has worked at the school for fifteen years.", a: "\"Could I buy you a coffee one break? I'd love to hear what you've learned about this school.\" [Coffee With a Colleague]", bundle: 'pro', guideBack: "A short, clear invitation" },
+        { q: "Your supervisor at the warehouse has watched you drive the forklift for an hour.", a: "\"You watched me for a while there. What's one thing I should tighten up?\" [Ask for Feedback Early]", bundle: 'pro', guideBack: "A request for one concrete thing" },
+        { q: "You work part-time in a shop, and the full-timers seem to know about shift swaps before you do.", a: "\"Is there a group chat for shifts? I think I'm missing the messages.\" [Ask How Things Work Here]", bundle: 'pro', guideBack: "A question about local habits" },
+        { q: "In the lab, a project leader asks you to \"tidy up the data\".", a: "\"Sure. What would tidy look like for you — fewer columns, or checked numbers?\" [Ask What Good Looks Like]", bundle: 'pro', guideBack: "A question about the goal" },
+      ]
+    },
+  ],
+  emotionalcalibration1: [
+    {
+      name: "Read the Signal",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Spot the Shift**, **Name the Nuance** and **Ask How It Landed** — three ways to open up a shift, and the choice is how much you can honestly say about it.\n\n• **Spot the Shift** — the signal is small, and you have no idea what it means\n• **Name the Nuance** — you have a fair guess at the exact feeling\n• **Ask How It Landed** — it came right after your words, and you want to know how they came across\n\nThe question that decides it: what do I actually know — only that something changed, what they might feel, or that it was something I said?\n\nThe usual wrong choice is guessing a feeling on thin evidence. \"You seem hurt\" after one short answer gets a quick \"no\", and now the door is harder to open. Start with what you saw.\n\nMindset: say only as much as you actually know.",
+      inputs: [
+        { q: "A new colleague stops smiling when you mention her old team. You have no idea why.", a: "\"You stopped smiling when I mentioned your old team.\" [Spot the Shift]", bundle: 'pro', guideBack: "A plain observation, with no reading" },
+        { q: "For months, your brother's voice has gone quiet and careful whenever Dad's money comes up.", a: "\"Whenever Dad's money comes up, you sound worried. Is that close?\" [Name the Nuance]", bundle: 'pro', guideBack: "A precise guess, checked" },
+        { q: "You told your flatmate her curry was \"interesting\", and she put her fork down.", a: "\"I said 'interesting' about your curry. How did that land?\" [Ask How It Landed]", bundle: 'pro', guideBack: "An open question about your impact" },
+        { q: "A customer's polite smile disappears when you mention the delivery fee.", a: "\"Your face changed when I said the delivery fee.\" [Spot the Shift]", bundle: 'pro', guideBack: "A plain observation, with no reading" },
+        { q: "Your friend's dog died last month. She goes quiet when you show her photos of your new puppy.", a: "\"I wonder if the puppy photos made you miss Biscuit. Is that close?\" [Name the Nuance]", bundle: 'pro', guideBack: "A precise guess, checked" },
+        { q: "You joked about your partner's driving in front of friends, and he hasn't said a word since you got in the car.", a: "\"That joke about your driving, in front of everyone. How did it come across?\" [Ask How It Landed]", bundle: 'pro', guideBack: "An open question about your impact" },
+        { q: "Your teenage son goes very still when you mention his cousin's exam results.", a: "\"You went very still when I mentioned Leo's results.\" [Spot the Shift]", bundle: 'pro', guideBack: "A plain observation, with no reading" },
+        { q: "A colleague's emails have been short since you were given the project she wanted.", a: "\"I might be wrong, but are you feeling passed over on this one?\" [Name the Nuance]", bundle: 'pro', guideBack: "A precise guess, checked" },
+      ]
+    },
+    {
+      name: "Follow Their Lead",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Ask How It Landed**, **Read What They Need** and **Leave the Door Open** — three ways to take the next step, and the choice depends on what they have just told you.\n\n• **Ask How It Landed** — they have said nothing yet, and you suspect your own words\n• **Read What They Need** — they have started to talk, and you don't know what kind of help they want\n• **Leave the Door Open** — they have said \"it's nothing\" or \"leave it\"\n\nThe question that decides it: what did they just tell me — nothing yet, something, or \"not now\"?\n\nThe usual wrong choice is asking more after they have said \"leave it\". It feels caring, and to them it sounds like you did not hear the answer.\n\nMindset: their last answer tells you which door to try next.",
+      inputs: [
+        { q: "Your friend says, \"Honestly, it's nothing. Can we just order?\"", a: "\"Sure, let's order. If it turns out to be something, I'm here.\" [Leave the Door Open]", bundle: 'pro', guideBack: "An invitation with no pressure" },
+        { q: "Your sister starts telling you about her boss, then stops: \"Sorry, I'm just ranting.\"", a: "\"Rant away. Do you want ideas, or just someone on your side?\" [Read What They Need]", bundle: 'pro', guideBack: "An either-or offer" },
+        { q: "You told your mother you had booked a holiday over her birthday. She said \"lovely\" and went into the kitchen.", a: "\"Mum, I sprang the holiday on you. How did that land?\" [Ask How It Landed]", bundle: 'pro', guideBack: "An open question about your impact" },
+        { q: "A colleague says, \"I've had a horrible morning,\" and looks at you.", a: "\"Do you want to talk about it, or do you want a coffee and some normal chat?\" [Read What They Need]", bundle: 'pro', guideBack: "An either-or offer" },
+        { q: "Your partner says, \"I don't want to talk about it tonight.\"", a: "\"Okay. Whenever you're ready, I'm listening.\" [Leave the Door Open]", bundle: 'pro', guideBack: "An invitation with no pressure" },
+        { q: "You told a friend you had invited his ex to your party, and his \"cool\" was very flat.", a: "\"I told you about inviting Sara pretty casually. How did it sound?\" [Ask How It Landed]", bundle: 'pro', guideBack: "An open question about your impact" },
+        { q: "Your teenage daughter says, \"School was bad, okay?\" and sits down next to you anyway.", a: "\"Do you want to tell me about it, or just sit here for a bit?\" [Read What They Need]", bundle: 'pro', guideBack: "An either-or offer" },
+        { q: "A customer says, \"Forget it, it's not your fault,\" and turns to go.", a: "\"Thanks. If there's anything I can still do, I'm Jo, and I'm here till six.\" [Leave the Door Open]", bundle: 'pro', guideBack: "An invitation with no pressure" },
+      ]
+    },
+    {
+      name: "All Five Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, with no hint about what kind of shift comes next.\n\nThe five follow the moment as it unfolds. **Spot the Shift** says what changed. **Name the Nuance** guesses the exact feeling. **Ask How It Landed** checks your own words. **Read What They Need** asks what kind of talk would help. **Leave the Door Open** steps back when they do not want to talk.\n\nIf you are unsure, start with what you saw, and go one step further only when they give you more.\n\nThe usual wrong choice is jumping straight to a feeling or a fix when all you have is a short answer. Then you are answering a story you made up.\n\nMindset: the smallest true thing you can say is usually the right place to start.",
+      inputs: [
+        { q: "Your friend's laugh stops halfway when you mention the wedding.", a: "\"Your laugh stopped when I mentioned the wedding.\" [Spot the Shift]", bundle: 'pro', guideBack: "A plain observation, with no reading" },
+        { q: "Your partner's \"sure, go\" about your weekend away sounded small and tired.", a: "\"I wonder if you're feeling a bit left out of the trip. Is that close?\" [Name the Nuance]", bundle: 'pro', guideBack: "A precise guess, checked" },
+        { q: "You told a team member her report \"needs a lot of work\", and she has been silent since.", a: "\"I said 'a lot of work' about your report. How did that come across?\" [Ask How It Landed]", bundle: 'pro', guideBack: "An open question about your impact" },
+        { q: "Your neighbour starts telling you about his wife's operation, and his eyes fill up.", a: "\"Do you want to tell me about it, or would a bit of normal chat help more?\" [Read What They Need]", bundle: 'pro', guideBack: "An either-or offer" },
+        { q: "Your son says, \"Nothing's wrong. Stop asking.\"", a: "\"Okay, I'll stop. If something comes up, you know where I am.\" [Leave the Door Open]", bundle: 'pro', guideBack: "An invitation with no pressure" },
+        { q: "A client goes quiet on the call when you mention the new price.", a: "\"You went quiet when I said the new price.\" [Spot the Shift]", bundle: 'pro', guideBack: "A plain observation, with no reading" },
+        { q: "Your friend tells you she didn't get the job, and her voice is completely flat.", a: "\"You sound really let down. Is that close?\" [Name the Nuance]", bundle: 'pro', guideBack: "A precise guess, checked" },
+        { q: "You cancelled a visit to your mum, and her text says, \"Of course. You're busy.\"", a: "\"I cancelled pretty suddenly. How did that land, Mum?\" [Ask How It Landed]", bundle: 'pro', guideBack: "An open question about your impact" },
+      ]
+    },
+  ],
+  emotionalcalibration2: [
+    {
+      name: "Step Back",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Pause the Point**, **Slow It Down** and **Talk About the Talk** — for when the trouble is the way you are talking, and the choice is what to change.\n\n• **Pause the Point** — you are the one pushing; stop pushing\n• **Slow It Down** — it is all going too fast; lower the pace\n• **Talk About the Talk** — you are stuck in the same pattern; name it\n\nThe question that decides it: what is going wrong — my pushing, the speed, or the circle we are in?\n\nThe usual wrong choice is Slow It Down when the trouble is the circle. A slower circle is still a circle, and you will end up in the same place, only later.\n\nMindset: change how you are talking before you try to change their mind.",
+      inputs: [
+        { q: "You and a colleague argue about the office heating every Monday, with the same lines each time.", a: "\"We have this exact talk every Monday. Can we look at why it keeps going round?\" [Talk About the Talk]", bundle: 'pro', guideBack: "A comment on how it's going" },
+        { q: "On the phone about your mum's care, you and your brother are talking over each other.", a: "\"Let's slow down. I can't hear you when we both talk at once.\" [Slow It Down]", bundle: 'pro', guideBack: "A call for a slower pace" },
+        { q: "You have made the case for the closer school to your partner five times tonight.", a: "\"I'll stop pushing the closer school for a minute.\" [Pause the Point]", bundle: 'pro', guideBack: "A spoken stop" },
+        { q: "At the residents' meeting, you and a neighbour are getting quicker and sharper about the parking.", a: "\"Let's slow down, Mr Lane. I want to get this right.\" [Slow It Down]", bundle: 'pro', guideBack: "A call for a slower pace" },
+        { q: "Every message with your friend about the holiday money ends in the same cold way.", a: "\"Every time we talk about the money, it ends like this. Can we talk about that first?\" [Talk About the Talk]", bundle: 'pro', guideBack: "A comment on how it's going" },
+        { q: "You are explaining to your teenage daughter why she cannot go to the festival, and you are starting on reason number six.", a: "\"Okay. I'm going to stop making my case now.\" [Pause the Point]", bundle: 'pro', guideBack: "A spoken stop" },
+        { q: "In a team meeting, you have answered every comment on your design with a defence.", a: "\"Let me stop defending this for a minute and just listen.\" [Pause the Point]", bundle: 'pro', guideBack: "A spoken stop" },
+        { q: "You and your partner have had the same fight about the dishwasher three times this week.", a: "\"This is the third time this week. Can we look at what keeps happening when we talk about it?\" [Talk About the Talk]", bundle: 'pro', guideBack: "A comment on how it's going" },
+      ]
+    },
+    {
+      name: "Bring Them Back",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Say What You Don't Mean**, **Turn to Care** and **Ask Instead of Argue** — for when the other person is hurt, defensive or pulling away, and the choice is what they need from you first.\n\n• **Say What You Don't Mean** — they have heard something you did not mean; clear it up\n• **Turn to Care** — they feel you would rather win than keep them; say what matters more\n• **Ask Instead of Argue** — they have not been heard yet; ask, and listen\n\nThe question that decides it: what is in the way right now — a misreading, a fear about us, or a view nobody has listened to?\n\nThe usual wrong choice is Ask Instead of Argue when they have heard an insult. A question on top of a hurt feels like a cross-examination. Clear up the misreading first.\n\nMindset: before your point can land, they need to be back in the conversation.",
+      inputs: [
+        { q: "You suggest your mum eats less salt. She says, \"So I'm a bad cook now.\"", a: "\"I'm not saying you're a bad cook, Mum. I'm saying I want you around for a long time.\" [Say What You Don't Mean]", bundle: 'pro', guideBack: "A contrast: not this, but this" },
+        { q: "Your friend Ana has gone silent since you disagreed about her wedding plans.", a: "\"Ana, you matter more to me than the seating plan.\" [Turn to Care]", bundle: 'pro', guideBack: "A statement of what matters more" },
+        { q: "All week, a colleague has said the old booking system was better, and you have argued for the new one.", a: "\"What did the old system do for you that the new one doesn't?\" [Ask Instead of Argue]", bundle: 'pro', guideBack: "A curious, open question" },
+        { q: "Your partner says, \"So you think I'm bad with money.\"", a: "\"I don't think you're bad with money. I think we need a plan for the car.\" [Say What You Don't Mean]", bundle: 'pro', guideBack: "A contrast: not this, but this" },
+        { q: "Your son walked off in the middle of the talk about his grades. Later, you knock on his door.", a: "\"Can I come in? I care about you a lot more than about that grade.\" [Turn to Care]", bundle: 'pro', guideBack: "A statement of what matters more" },
+        { q: "A customer is angry about the refund rules, and you have explained them twice.", a: "\"Help me understand what happened with the order.\" [Ask Instead of Argue]", bundle: 'pro', guideBack: "A curious, open question" },
+        { q: "In the middle of a talk about Dad's will, your brother says, \"You've always thought you were better than me.\"", a: "\"I've never thought that. I think we see Dad's money differently, that's all.\" [Say What You Don't Mean]", bundle: 'pro', guideBack: "A contrast: not this, but this" },
+        { q: "Your best friend's voice has gone flat after a long debate about politics.", a: "\"Hey. This friendship matters a lot more to me than who's right about the election.\" [Turn to Care]", bundle: 'pro', guideBack: "A statement of what matters more" },
+      ]
+    },
+    {
+      name: "All Six Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, with no hint about which way the conversation has gone wrong.\n\nThe six fall into two groups:\n\n• **Pause the Point**, **Slow It Down** and **Talk About the Talk** — change how you are talking\n• **Say What You Don't Mean**, **Turn to Care** and **Ask Instead of Argue** — reach the other person\n\nIf you are unsure, ask first: is the problem the talk, or the person in it? Then pick within the group.\n\nThe usual wrong choice is reaching for a fix to the talk when the person is hurt. Slowing down will not help someone who thinks you called them stupid.\n\nMindset: you can change course without changing your mind.",
+      inputs: [
+        { q: "Your partner says, \"So you think my job doesn't matter.\"", a: "\"I'm not saying your job doesn't matter. I'm saying I miss you in the evenings.\" [Say What You Don't Mean]", bundle: 'pro', guideBack: "A contrast: not this, but this" },
+        { q: "You and your business partner have argued about the new logo for an hour, faster and faster.", a: "\"Let's slow down. We'll make a better choice at half this speed.\" [Slow It Down]", bundle: 'pro', guideBack: "A call for a slower pace" },
+        { q: "Your uncle says, for the fourth time, that young people do not want to work. You have a fourth answer ready.", a: "\"What makes you see it that way? I'd like to hear.\" [Ask Instead of Argue]", bundle: 'pro', guideBack: "A curious, open question" },
+        { q: "You notice you have been making the same point about the garden fence to your neighbour for ten minutes.", a: "\"Let me stop pushing the fence for a minute.\" [Pause the Point]", bundle: 'pro', guideBack: "A spoken stop" },
+        { q: "Every talk with your sister about who visits Gran ends with a slammed phone.", a: "\"These talks always end with one of us hanging up. Can we talk about that?\" [Talk About the Talk]", bundle: 'pro', guideBack: "A comment on how it's going" },
+        { q: "Your daughter is crying after your argument about her university choice.", a: "\"Hey. You matter far more to me than which university it is.\" [Turn to Care]", bundle: 'pro', guideBack: "A statement of what matters more" },
+        { q: "In a planning meeting, you notice you are arguing just to beat a colleague you do not like.", a: "\"I'll stop arguing my side. I'd like to hear the rest of yours.\" [Pause the Point]", bundle: 'pro', guideBack: "A spoken stop" },
+        { q: "A friend says, \"So I'm a bad parent now?\" after your comment about screen time.", a: "\"I don't think you're a bad parent. I'm saying I worry about screens with my own kids too.\" [Say What You Don't Mean]", bundle: 'pro', guideBack: "A contrast: not this, but this" },
+      ]
+    },
+  ],
+  emotionalcalibration3: [
+    {
+      name: "Meet the Heat",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Validate Without Agreeing**, **The Feeling Under the Feeling** and **Repair in the Moment** — three strategies for when the feeling comes out hot: angry, accusing, or aimed at you.\n\n• **Validate Without Agreeing** — you see it differently, and the feeling still makes sense\n• **The Feeling Under the Feeling** — the anger seems to be covering something softer\n• **Repair in the Moment** — something you just said made it worse\n\nThe question that decides it: what is fuelling the heat — a disagreement, a hidden feeling, or my last line?\n\nThe usual wrong choice is arguing the facts. Even when you are right, it tells them the feeling is wrong too, and the heat goes up.\n\nMindset: meet the feeling first. The facts will still be there afterwards.",
+      inputs: [
+        { q: "Your partner says, hurt, \"You never back me up in front of your friends.\" You think you did last night.", a: "\"I thought I did last night. And I get why it feels like I don't.\" [Validate Without Agreeing]", bundle: 'pro', guideBack: "Understanding, with your own view beside it" },
+        { q: "Your dad snaps, \"I can drive myself to the hospital. I don't need a taxi service.\"", a: "\"Could it be it's hard having us fuss over you?\" [The Feeling Under the Feeling]", bundle: 'pro', guideBack: "A tentative guess, as a question" },
+        { q: "Your friend says she's angry with her boss. You say, \"To be fair, he has a point.\" She glares at you.", a: "\"Sorry, that came out wrong. You're angry, and I jumped to his side. Tell me what happened.\" [Repair in the Moment]", bundle: 'pro', guideBack: "A quick catch, then a second try" },
+        { q: "Your teenage daughter says coldly, \"Whatever. You never come to my games anyway.\"", a: "\"I wonder if it hurt that I missed Saturday?\" [The Feeling Under the Feeling]", bundle: 'pro', guideBack: "A tentative guess, as a question" },
+        { q: "Your colleague says, angry, \"You booked the meeting at the one time I can't make.\" You checked his calendar first.", a: "\"His calendar showed free, so I see it differently. I can still see why you feel left out of it.\" [Validate Without Agreeing]", bundle: 'pro', guideBack: "Understanding, with your own view beside it" },
+        { q: "Your brother says he's furious about the will. You say, \"It's only money.\" He goes red.", a: "\"That was careless. I take it back. It's not only money to you, and I get that.\" [Repair in the Moment]", bundle: 'pro', guideBack: "A quick catch, then a second try" },
+        { q: "Your flatmate slams a cupboard and says, \"I'm not angry. I'm just tired of being the only grown-up here.\"", a: "\"Is some of this that you feel alone with all of it?\" [The Feeling Under the Feeling]", bundle: 'pro', guideBack: "A tentative guess, as a question" },
+        { q: "Your mother says, upset, \"You've ruined Christmas by going to his family.\" You'd agreed to alternate years.", a: "\"We did agree to take turns. And I understand why this year feels empty to you.\" [Validate Without Agreeing]", bundle: 'pro', guideBack: "Understanding, with your own view beside it" },
+      ]
+    },
+    {
+      name: "Make Room",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Match Their Pace**, **Stay, Don't Fix** and **The Feeling Under the Feeling** — three strategies for when the feeling comes out slowly or quietly: sadness, hesitation, a flat or cold voice.\n\n• **Match Their Pace** — they are still struggling to get the words out\n• **Stay, Don't Fix** — they have said it, and nothing can be fixed right now\n• **The Feeling Under the Feeling** — what they show, flat or cold, doesn't match what seems to be going on\n\nThe question that decides it: are they still trying to say it, have they said it, or are they hiding it?\n\nThe usual wrong choice is jumping to advice. It ends the conversation just as it was starting.\n\nMindset: make room. The less you do, the more they can say.",
+      inputs: [
+        { q: "Your colleague sits down next to you and says, \"Can I… do you have a minute? It's personal.\"", a: "\"Of course. Take as long as you need.\" [Match Their Pace]", bundle: 'pro', guideBack: "A short, unhurried invitation" },
+        { q: "Your friend says quietly, \"The scan wasn't good.\"", a: "\"Oh no. I'm so sorry. I'm right here.\" [Stay, Don't Fix]", bundle: 'pro', guideBack: "A statement of presence, no advice" },
+        { q: "Your partner says flatly, \"It's fine that your sister's coming. Everything's fine.\"", a: "\"I wonder if it's not quite fine — maybe you're dreading it a bit?\" [The Feeling Under the Feeling]", bundle: 'pro', guideBack: "A tentative guess, as a question" },
+        { q: "Your teenage son says, after a long pause, \"Do you ever feel like… no, never mind.\"", a: "\"Mm. I'd like to hear it. No rush.\" [Match Their Pace]", bundle: 'pro', guideBack: "A short, unhurried invitation" },
+        { q: "Your mother says, \"I keep setting two plates out. Forty years of habit.\"", a: "\"Oh, Mum. Do you want me to come over and just be with you tonight?\" [Stay, Don't Fix]", bundle: 'pro', guideBack: "A statement of presence, no advice" },
+        { q: "Your flatmate answers \"Fine\" to everything tonight, in a voice that isn't fine.", a: "\"Is some of this about the phone call earlier?\" [The Feeling Under the Feeling]", bundle: 'pro', guideBack: "A tentative guess, as a question" },
+        { q: "Your friend says, \"I've been signed off work. I didn't even see it coming.\"", a: "\"That's a lot. I haven't got any answers. I'm glad you rang me.\" [Stay, Don't Fix]", bundle: 'pro', guideBack: "A statement of presence, no advice" },
+        { q: "Your neighbour starts to tell you about her son, and her voice catches.", a: "\"Take your time, Maria. I've got nowhere to be.\" [Match Their Pace]", bundle: 'pro', guideBack: "A short, unhurried invitation" },
+      ]
+    },
+    {
+      name: "All Five Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order feelings really arrive — with no warning about which kind is coming.\n\nThe five fall into three groups. For heat: **Validate Without Agreeing** and **The Feeling Under the Feeling**. For quiet: **Match Their Pace** and **Stay, Don't Fix**. For your own slip: **Repair in the Moment**.\n\nThe question that decides it: what is the feeling doing right now — burning, hiding, struggling to come out, or reacting to something I just said?\n\nThe usual wrong choice is doing something with the feeling — arguing it, fixing it, hurrying it — before you have met it.\n\nMindset: meet the feeling where it is before you do anything else.",
+      inputs: [
+        { q: "Your sister says, hurt, \"You told Mum before you told me.\" You thought she was away.", a: "\"I thought you were still travelling. And I can see why it hurt to hear it second.\" [Validate Without Agreeing]", bundle: 'pro', guideBack: "Understanding, with your own view beside it" },
+        { q: "Your partner says coldly, \"Go to your conference. I'll manage the kids. Like always.\"", a: "\"Could it be you're worn out, and worried about doing it on your own?\" [The Feeling Under the Feeling]", bundle: 'pro', guideBack: "A tentative guess, as a question" },
+        { q: "Your friend Jonas rings and says, \"Hi. Um. Have you got a second? I don't really know where to start.\"", a: "\"I've got all evening. Start anywhere.\" [Match Their Pace]", bundle: 'pro', guideBack: "A short, unhurried invitation" },
+        { q: "Your colleague tells you her marriage is over, and asks, \"What would you do?\"", a: "\"I honestly don't know. I'm just sorry, and I'm here.\" [Stay, Don't Fix]", bundle: 'pro', guideBack: "A statement of presence, no advice" },
+        { q: "Your teenage son says he's nervous about his exam. You say, \"You should have revised earlier.\" He turns away.", a: "\"Sorry, that wasn't helpful. You're nervous, and that's what matters right now.\" [Repair in the Moment]", bundle: 'pro', guideBack: "A quick catch, then a second try" },
+        { q: "Your dad says, irritated, \"Don't bother with the party. Nobody wants an old man there.\"", a: "\"I wonder if you've been feeling a bit left out of things lately?\" [The Feeling Under the Feeling]", bundle: 'pro', guideBack: "A tentative guess, as a question" },
+        { q: "Your flatmate says, angry, \"You invited people round without asking.\" You'd mentioned it on Monday.", a: "\"I did mention it on Monday. I still get why it felt like you had no say.\" [Validate Without Agreeing]", bundle: 'pro', guideBack: "Understanding, with your own view beside it" },
+        { q: "Your friend says she's grieving her grandmother. You say, \"Well, she had a long life.\" She goes quiet.", a: "\"That came out wrong. It doesn't make it hurt less. Tell me about her?\" [Repair in the Moment]", bundle: 'pro', guideBack: "A quick catch, then a second try" },
       ]
     },
   ],
