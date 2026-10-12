@@ -12658,7 +12658,7 @@ const challengesCollections = {
       ]
     },
     {
-      name: "You Only Got in Touch When You Needed Something",
+      name: "Only When You Need Something",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
       description: "You need help from someone you have not spoken to in a long time — and you only thought of them because you need it. A reference from an old colleague, say. Or they say it themselves: \"Long time! What do you need?\"\n\nWhat goes wrong is hiding the ask behind pretend small talk, or getting defensive when they name it.\n\n**Reconnect After a Long Gap** says honestly why you are writing. **Close the Loop** brings old help back to life with a thank-you. And afterwards, **Stay in Touch Without an Ask** shows that next time it won't only be about you.\n\nThe one thing to avoid: pretending it's a social call.\n\nMindset: an honest ask from an old contact is fine. A disguised one isn't.",

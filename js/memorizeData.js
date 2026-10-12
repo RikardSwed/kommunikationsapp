@@ -21866,7 +21866,7 @@ const memorizeCollections = {
         { q: "What does shouting back quietly cost?", a: "The volume becomes the topic, and what you wanted to say gets lost.", bundle: 'pro' },
         { q: "Which form does Shouting Back use?", a: "The price: a belief that feels like a strength, and what it quietly costs.", bundle: 'pro' },
         { q: "What is true about \"it's my job to calm them down\"?", a: "You can help. What gets added is \"it's my job\".", bundle: 'pro' },
-        { q: "What do you do if you feel unsafe?", a: "Leave. That is the right response, not a communication problem to solve.", bundle: 'pro' },
+        { q: "What does \"it's my job to calm them down\" cost you?", a: "Walking on eggshells, staying too long, and blaming yourself when they stay angry.", bundle: 'pro' },
         { q: "What is true instead of \"saying something will make it worse\"?", a: "One calm, short sentence rarely makes it worse. The silence that builds until you shout does.", bundle: 'pro' },
         { q: "What do these four mindsets have in common?", a: "Each one pushes you to meet the volume, or to say nothing at all.", bundle: 'pro' },
       ]
@@ -22639,9 +22639,9 @@ const memorizeCollections = {
     },
     {
       name: "Challenges",
-      description: "The five challenges to master in this pack — five ways keeping in touch gets hard:\n\n• **No Reply** — silence: send something useful, or make the ask smaller\n• **It's Been a Year** — the gap: say so plainly, with a real reason\n• **They Can't Help** — a kind no: ask for advice instead, or thank them anyway\n• **A Cold Message** — a stranger: one short question, no job request\n• **You Only Got in Touch When You Needed Something** — be honest about why you are writing\n\nEach one tempts you to either give up or push too hard.",
+      description: "The five challenges to master in this pack — five ways keeping in touch gets hard:\n\n• **No Reply** — silence: send something useful, or make the ask smaller\n• **It's Been a Year** — the gap: say so plainly, with a real reason\n• **They Can't Help** — a kind no: ask for advice instead, or thank them anyway\n• **A Cold Message** — a stranger: one short question, no job request\n• **Only When You Need Something** — be honest about why you are writing\n\nEach one tempts you to either give up or push too hard.",
       cards: [
-        { q: "What are the five challenges in this pack?", a: "No Reply, It's Been a Year, They Can't Help, A Cold Message, and You Only Got in Touch When You Needed Something.", bundle: 'pro' },
+        { q: "What are the five challenges in this pack?", a: "No Reply, It's Been a Year, They Can't Help, A Cold Message, and Only When You Need Something.", bundle: 'pro' },
         { q: "What does silence usually mean?", a: "A busy week, not an answer about you.", bundle: 'pro' },
         { q: "What should you avoid with No Reply?", a: "\"Just checking you got my last three messages.\"", bundle: 'pro' },
         { q: "What should you avoid with It's Been a Year?", a: "Pretending no time has passed — or a whole paragraph of apology.", bundle: 'pro' },
