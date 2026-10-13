@@ -799,6 +799,7 @@ applyInputCounterVisibility();
     emotionalcalibration1: { label: 'Emotional Calibration — Pt. 1: Reading the Shift', minLevel: 'complete' },
     emotionalcalibration2: { label: 'Emotional Calibration — Pt. 2: Changing Course', minLevel: 'complete' },
     emotionalcalibration3: { label: 'Emotional Calibration — Pt. 3: Meeting the Feeling', minLevel: 'complete' },
+    familygatherings: { label: 'Family Gatherings', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -3962,6 +3963,20 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
+  familygatherings: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
 };
 window.BUNDLE_DEFS = BUNDLE_DEFS;
 
@@ -4899,6 +4914,7 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.58', date: 'October 2026', title: 'Family Gatherings \u2014 a seasonal pack for the newsletter', audience: 'dev', items: ['New Deckstack Original <strong>Family Gatherings</strong> (<code>familygatherings</code>), under Asking &amp; Saying No and Flow &amp; Transitions, imported at <strong>complete</strong>. Seven strategies: Short Answer, New Topic \u00b7 Light Touch \u00b7 Park the Topic \u00b7 Name the Line Kindly \u00b7 Be Who You Are Now \u00b7 Draw Someone In \u00b7 Leave on Time. check-pack: 0 errors, 0 warnings.', 'Meant for the newsletter (December), together with Tone Boundaries Pt. 1, Job Interview Pt. 1 and New at Work \u2014 unlocked with Apple offer codes once purchases are live (Rikard 2026-10-13). Emotional Calibration is not a newsletter pack.', 'Kartan: all 16 new decks tagged.'] },
   { version: 'v1.29.57', date: 'October 2026', title: 'Career Conversations and Emotional Calibration \u2014 seven new packs', audience: 'dev', items: ['Seven new Deckstack Originals, built after <em>_Plan \u2014 Career Conversations och Emotional Calibration.md</em> (one builder per pack, check-pack: 0 errors, 0 warnings each), imported at <strong>complete</strong> until Rikard has tested them.', '<strong>Networking &amp; Career</strong>: Job Interview \u2014 Pt. 1: The Questions (<code>jobinterview1</code>), Job Interview \u2014 Pt. 2: The Hard Parts (<code>jobinterview2</code>), Talking to Your Manager (<code>talkingtoyourmanager</code>) and New at Work (<code>newatwork</code>). With Networking Pt. 1\u20132 they are the material for the coming Career Conversations programme.', '<strong>Emotions &amp; Regulation</strong>: Emotional Calibration \u2014 Pt. 1: Reading the Shift (<code>emotionalcalibration1</code>, grid, also under Listening &amp; Understanding), Pt. 2: Changing Course (<code>emotionalcalibration2</code>, grid) and Pt. 3: Meeting the Feeling (<code>emotionalcalibration3</code>).', 'GRID_PACKS gains emotionalcalibration1 and emotionalcalibration2. Kartan: all 101 new decks tagged; new family <strong>33 Work</strong> (job-interview, managing-up, new-job) and two new subtypes, <code>listening.read-shift</code> and <code>self-regulation.change-course</code>.'] },
   { version: 'v1.29.56', date: 'October 2026', title: 'Networking Pt. 1 opens in Pro, two small fixes', audience: 'dev', items: ['<strong>Networking \u2014 Pt. 1: At the Event</strong> moves from complete to <strong>pro</strong> (Rikard 2026-10-12): the open way into the coming Career Conversations programme. Pt. 2 stays at complete until the programme is built. The Pro screen now says 42 more packs (26 Pro packs plus 16 in the Pro programmes); the old 34 was stale.', 'Networking Pt. 2: the challenge <em>You Only Got in Touch When You Needed Something</em> is now <strong>Only When You Need Something</strong> (challenge, Memorize list card, Kartan key).', 'Tone Boundaries Pt. 1: the Memorize Mindset deck repeated the safety card from Core Idea word for word. It now asks what \u201cit\u2019s my job to calm them down\u201d costs, taken from the mindset itself. The safety card stays in Core Idea.', 'Dark mode: <em>Switch to Standard</em> on the pack screen was pale text on a pale button. The active toggle now uses the card colour for its text and icon, which reads in both themes.'] },
   { version: 'v1.29.55', date: 'October 2026', title: 'Tone Boundaries Pt. 1\u20134 and Networking Pt. 1\u20132', audience: 'dev', items: ['Six new Deckstack Originals, built after <em>_Plan \u2014 Tone Boundaries och Networking.md</em> (four parallel builders, then check-pack: 0 errors, 0 warnings each), imported at <strong>complete</strong> until Rikard has tested them.', '<strong>Tone Boundaries</strong> (Assertiveness &amp; Pressure): Pt. 1 When the Volume Rises (<code>toneboundaries1</code>, grid) and Pt. 2 When the Tone Changes the Words (<code>toneboundaries2</code>, grid) are first strategies for direct sharpness \u2014 a raised voice, an order where a request should be. Both also sit under Asking &amp; Saying No. Pt. 3 Holding the Line and Pt. 4 After the Storm are follow-up strategies: when they push back or keep going, and once it has calmed down or comes back.', '<strong>Networking</strong> under a new topic, <strong>Networking &amp; Career</strong> (<code>networking</code>): Pt. 1 At the Event and Pt. 2 After the Event.', 'GRID_PACKS gains toneboundaries1 and toneboundaries2. Kartan: all 93 new decks tagged; new subtype <code>starting.networking</code>.'] },

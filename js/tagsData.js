@@ -541,6 +541,9 @@ const packTags = {
   emotionalcalibration3: [
     'emotions', 'validation', 'anger', 'hurt', 'comfort', 'listening', 'repair', 'empathy', 'disagreement', 'difficult conversations'
   ],
+  familygatherings: [
+    'family', 'holidays', 'christmas', 'eid', 'diwali', 'relatives', 'personal questions', 'politics at the table', 'boundaries', 'leaving on time', 'in-laws'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -571,7 +574,7 @@ const TOPICS = [
   // ── Getting a conversation going ──────────────────────────────────
   { id: 'startingconversations', title: 'Starting Conversations',        packs: ['startingconnecting', 'setupstatement', 'startingconversations3', 'setupquestion', 'oconnor7', 'firststrategies', 'startingconversations1', 'startingconversations2', 'startingconversations4', 'exploringatopic'] },
   { id: 'questions',             title: 'Questions & Curiosity',         packs: ['deepquestions'] },
-  { id: 'flowtransitions',       title: 'Flow & Transitions',            packs: ['conversational', 'transitions', 'reactingtounexpectedstatements', 'changingtopics'] },
+  { id: 'flowtransitions',       title: 'Flow & Transitions',            packs: ['conversational', 'transitions', 'reactingtounexpectedstatements', 'changingtopics', 'familygatherings'] },
   { id: 'endingconversations',   title: 'Ending Conversations',          packs: ['endingconversations'] },
   { id: 'networking',            title: 'Networking & Career',           packs: ['networking1', 'networking2', 'jobinterview1', 'jobinterview2', 'talkingtoyourmanager', 'newatwork'] },   // v1.29.55
 
@@ -593,7 +596,7 @@ const TOPICS = [
   { id: 'opinions',              title: 'Opinions & Argumentation',      packs: ['influenceframing', 'agreeing', 'disagreeing', 'givingcounterexamples', 'discussing', 'supercomm2'] },
   { id: 'persuasion',            title: 'Persuasion & Negotiation',      packs: ['influenceframing', 'persuasionandinfluence1', 'persuasionandinfluence2', 'negotiationandcompromise'] },
   { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression', 'oconnor1', 'oconnor3', 'jfisher1', 'jfisher2', 'assertivecomm1', 'assertivecomm2', 'assertivecommadv', 'integratedmaster', 'jfisher3', 'jfisheradv', 'passiveaggression2', 'passiveaggression3', 'passiveaggression4', 'passiveaggression5', 'toneboundaries1', 'toneboundaries2', 'toneboundaries3', 'toneboundaries4'] },
-  { id: 'boundaries',            title: 'Asking & Saying No',            packs: ['playfulrefusals', 'thehappyno', 'theregretfulno', 'makingrequests', 'sayingno', 'oconnor2', 'jimmy6', 'askingpermission', 'toneboundaries1', 'toneboundaries2'] },
+  { id: 'boundaries',            title: 'Asking & Saying No',            packs: ['playfulrefusals', 'thehappyno', 'theregretfulno', 'makingrequests', 'sayingno', 'oconnor2', 'jimmy6', 'askingpermission', 'toneboundaries1', 'toneboundaries2', 'familygatherings'] },
 
   // ── The hard end ──────────────────────────────────────────────────
   { id: 'emotions',              title: 'Emotions & Regulation',         packs: ['emotionlabellingandregulation', 'conflictemotions', 'praxdread4', 'reframing', 'oconnor6', 'emotionalcalibration1', 'emotionalcalibration2', 'emotionalcalibration3'] },

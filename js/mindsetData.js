@@ -13172,4 +13172,70 @@ const mindsetCollections = {
       ]
     },
   ],
+  familygatherings: [
+    {
+      name: "Questions",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I have to answer every question.\" The belief that a relative's question comes with a duty to give a full and honest answer.\n\nWhat is true instead: you owe them kindness, not a report. A short answer is still an answer.\n\nIt feels reasonable because they are family, they ask out of love, and keeping things back can feel like lying.\n\nWhat it costs is the afternoon — long explanations of your love life, your money or your plans, in front of everyone, and the feeling afterwards of having given too much.\n\nMindset: be kind to the person, and as brief as you like with the question.",
+      inputs: [
+        { q: "I have to answer every question.", a: "\"I have to be kind to them, and I can be as brief as I like with the question.\"", bundle: 'pro' },
+        { q: "If I don't explain, they'll think something's wrong.", a: "\"A short, cheerful answer tells them I'm fine better than a long one does.\"", bundle: 'pro' },
+        { q: "It's rude to change the subject.", a: "\"Asking about their life is the opposite of rude.\"", bundle: 'pro' },
+        { q: "They asked, so they're owed the full story.", a: "\"They're owed a warm answer, not my whole year.\"", bundle: 'pro' },
+        { q: "If I keep it short, it means I'm hiding something.", a: "\"Short is not secret — it's just mine.\"", bundle: 'pro' },
+        { q: "Family shouldn't have secrets.", a: "\"We can be close and still have things that stay private.\"", bundle: 'pro' },
+        { q: "If I dodge it, they'll only ask again.", a: "\"If they ask again, I'll have one kind sentence ready.\"", bundle: 'pro' },
+        { q: "I owe Grandma an answer about getting married.", a: "\"I owe Grandma my love and my time, and she gets both today.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Limits",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I set a limit, I'll ruin the day.\" The fear that one clear sentence about what you won't discuss will spoil the whole gathering.\n\nWhat is true instead: one kind sentence ruins nothing. Days are spoiled by arguments and by swallowed anger, not by calm limits.\n\nIt feels reasonable because family days carry high hopes, everyone wants them to go well, and silence feels like the safest way to help.\n\nWhat it costs is the quiet hurt you carry home, and a family that never finds out where the edge is.\n\nMindset: a limit said kindly protects the day.",
+      inputs: [
+        { q: "If I set a limit, I'll ruin the day.", a: "\"One kind sentence ruins nothing; an afternoon of swallowed hurt might.\"", bundle: 'pro' },
+        { q: "Everyone will go quiet and look at me.", a: "\"If they do, it lasts a few seconds, and then someone passes the potatoes.\"", bundle: 'pro' },
+        { q: "It's Christmas, I should just put up with it.", a: "\"Christmas is a reason to be kind, and kind can include a clear line.\"", bundle: 'pro' },
+        { q: "They'll be hurt if I say anything.", a: "\"Most people would rather know than keep hurting me without noticing.\"", bundle: 'pro' },
+        { q: "Saying no makes me the difficult one.", a: "\"Saying it calmly once is what stops me becoming the difficult one later.\"", bundle: 'pro' },
+        { q: "I'll just laugh it off again.", a: "\"A laugh works for a light question; for my body, a clear sentence works better.\"", bundle: 'pro' },
+        { q: "Mum will be upset that I spoiled it.", a: "\"Mum would be sadder to know I sat there hurting all afternoon.\"", bundle: 'pro' },
+        { q: "If I say it, there'll be a big row.", a: "\"A row needs two people, and I'm only saying one calm sentence.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being Known",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"My family should know me by now.\" A belief with real truth in it — they have known you longer than anyone.\n\nWhat is true: they know a great deal about you, and it is fair to wish they saw who you are today.\n\nWhat gets added is the step from \"they should know me\" to \"so I shouldn't have to show them\" — as if the update had to happen on its own.\n\nWhat it costs is quiet resentment at every gathering, while the old picture stays where it is.\n\nMindset: keep the wish to be seen. Drop the idea that you can't help them see.",
+      inputs: [
+        { q: "My family should know me by now.", a: "\"They know a lot of me — but 'so I shouldn't have to show them' is the part I added.\"", bundle: 'pro' },
+        { q: "They knew me first, so they know me best.", a: "\"They did know me first — but 'so they know me now' is the part I added.\"", bundle: 'pro' },
+        { q: "They should be able to see I've changed.", a: "\"I have changed — but 'so they'll notice without being shown' is the part I added.\"", bundle: 'pro' },
+        { q: "Mum still treats me like I'm fifteen.", a: "\"Sometimes she does — but 'so she always will' is the part I added.\"", bundle: 'pro' },
+        { q: "If they really cared, they'd ask about my new life.", a: "\"They don't ask much — but 'so they don't care' is the part I added.\"", bundle: 'pro' },
+        { q: "My brother only sees the old me.", a: "\"He sees the old me most — but 'so there's no point in updating him' is the part I added.\"", bundle: 'pro' },
+        { q: "They never took my career change seriously.", a: "\"They doubted it at first — but 'so they never will' is the part I added.\"", bundle: 'pro' },
+        { q: "I shouldn't have to explain myself to my own family.", a: "\"I don't owe them an explanation — but 'so I can't give them an update' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Leaving Early",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"Leaving early is rude.\" A belief that feels like loyalty — the good son, the good daughter, the one who stays until the end.\n\nWhat is true instead: leaving at a time you said, with a warm goodbye, is good manners. Staying past your limit rarely is.\n\nIt feels reasonable because family time feels precious, and nobody wants to be the first to stand up.\n\nWhat it costs is quiet and real: the last hours spent tired and short-tempered, a long drive home in a bad mood, and a growing dread of the next visit.\n\nMindset: a planned goodbye is a kindness. An exhausted guest is not.",
+      inputs: [
+        { q: "Leaving early is rude.", a: "\"Staying past my limit turns me into the tired, snappy guest nobody wanted.\"", bundle: 'pro' },
+        { q: "A good daughter stays until the end.", a: "\"Staying to the end every time is teaching me to dread the next visit.\"", bundle: 'pro' },
+        { q: "I'll stay a bit longer to keep the peace.", a: "\"Every extra hour I don't want costs me the patience I'll need next time.\"", bundle: 'pro' },
+        { q: "Family comes first, so the time is theirs.", a: "\"When all the time is theirs, my partner and kids pay for it on the drive home.\"", bundle: 'pro' },
+        { q: "I never want to be the first to leave.", a: "\"Someone has to go first, and waiting for someone else costs me the whole evening.\"", bundle: 'pro' },
+        { q: "It's only polite to stay for one more coffee.", a: "\"One more coffee becomes three, and the goodbye gets harder, not easier.\"", bundle: 'pro' },
+        { q: "I'll just see how the day goes.", a: "\"Not deciding means bargaining for my exit at the door, with everyone watching.\"", bundle: 'pro' },
+        { q: "Saying a leaving time at the start would be cold.", a: "\"It feels cold for a second, and it saves a much colder scene at the door.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };

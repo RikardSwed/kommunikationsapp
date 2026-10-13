@@ -14210,6 +14210,120 @@ const collections = {
       ]
     },
   ],
+  familygatherings: [
+    {
+      name: "Short Answer, New Topic",
+      guideFront: "Answer briefly, then ask back when...",
+      guideBack: "One true line, then a real question",
+      description: "Give the personal question a short, true answer, then ask them about something else. \"Not yet, and we're happy as we are. How's the new kitchen coming along?\" It is not dodging — you did answer — and it is not a full report either.\n\nIt works because a nosy question at a family table is rarely a request for information. It is a way of joining in and showing interest. A short, true answer gives them that, and a question back gives them something better to talk about: their own life. Most relatives take the new topic gladly, and nobody feels shut out.\n\nKeep the answer to one sentence and make the question a real one. \"How's the kitchen?\" only works if you actually want to hear about the kitchen.\n\nTypical phrases: \"Not yet — how's the garden doing?\", \"Still looking. Are you still at the hospital?\", \"Nothing to report. Tell me about the trip.\"\n\nThree ways to turn it:\n\n1. Ask about them — \"Not yet. How's your knee these days?\"\n\n2. Ask about something they love — \"Still single, yes. Is the allotment still going?\"\n\n3. Ask about the day itself — \"No news from me. Who made the dal? It's amazing.\"\n\nMindset: an answer can be true and short at the same time. You decide the length.",
+      inputs: [
+        { q: "At Christmas dinner, Aunt Siobhan leans over: \"So, when are you two getting married?\"", a: "\"We're not in a hurry, and we're very happy. How was your trip to Galway?\"", bundle: 'free' },
+        { q: "At Eid lunch, Uncle Bilal asks how much your new job pays.", a: "\"Enough to be comfortable, thanks. Are you still thinking of retiring next year?\"", bundle: 'free' },
+        { q: "At Sunday dinner, your mother-in-law Rosa asks when she is getting grandchildren.", a: "\"Not yet, Rosa. How is your sister settling into the new flat?\"", bundle: 'free' },
+        { q: "At your cousin's wedding, Grandma Ingrid asks why you are still single.", a: "\"Single and doing well, Gran. Did you help with the flowers? They're lovely.\"", bundle: 'free' },
+        { q: "At Diwali, Auntie Meera asks if you have found a proper job since you left accounting.", a: "\"I'm a carpentry apprentice now, and I love it. Did you make the barfi this year?\"", bundle: 'free' },
+        { q: "At Easter lunch, your stepfather Mark asks when you are finally moving out of your mum's place.", a: "\"Hopefully by the summer — I'm saving for it. How's the boat coming along?\"", bundle: 'pro' },
+        { q: "At a birthday party, your cousin Mateo asks why your new partner is not working at the moment.", a: "\"He's between jobs and looking. Have you two booked anything for the summer?\"", bundle: 'pro' },
+        { q: "At Midsummer, your grandfather Henrik asks if you are still renting.", a: "\"Still renting, and it suits us for now. Did you catch anything at the lake this week?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Light Touch",
+      guideFront: "Turn it aside with a smile when...",
+      guideBack: "A warm, playful deflection",
+      description: "Turn the question aside with a warm smile and a light line, without taking offence. \"When there's news, you'll be the first to know. Promise.\" The joke is about the situation or about you — never about them.\n\nIt works because humour shows that the question did not hurt, and that takes the tension out of the table. A warm deflection answers the feeling behind the question — \"I care how you're doing\" — without handing over the details. And it lets them laugh with you instead of feeling told off.\n\nThe line between light and sharp is thin. If the joke needs them to look silly, it is a dig, not a light touch. Smile, keep it short, and carry on.\n\nTypical phrases: \"You'll be the first to know.\", \"Ask me again next Christmas.\", \"I'll put it on the list.\", \"If there's news, I'll bring it with dessert.\"\n\nThree ways to keep it light:\n\n1. Promise them the news — \"When there's news, you'll hear it first.\"\n\n2. Laugh at yourself — \"My love life is on a long holiday. It sends its regards.\"\n\n3. Put it off with a wink — \"Let's save that one for next year's Diwali.\"\n\nMindset: you can be untouched by a question and still be warm to the person who asked it.",
+      inputs: [
+        { q: "At Christmas, Aunt Farah asks, for the third year running, \"Any wedding bells yet?\"", a: "\"When there are bells, you'll hear them first. Promise.\"", bundle: 'free' },
+        { q: "At your niece's birthday, Uncle Kwame asks when you are having one of your own.", a: "\"For now I'm the fun aunt. It's a very busy job.\"", bundle: 'free' },
+        { q: "At Sunday dinner, your dad asks if you have grown out of the guitar thing yet.", a: "\"Not yet. I'm told it takes about another forty years.\"", bundle: 'free' },
+        { q: "At Eid, your grandmother Amina asks who will look after you if you never marry.", a: "\"You will, Nani, as long as you keep making this biryani.\"", bundle: 'free' },
+        { q: "At Easter, your cousin Priya asks how the dating apps are going.", a: "\"Let's just say I've met a lot of very nice dogs in profile pictures.\"", bundle: 'free' },
+        { q: "At a wedding, Aunt Bridget nudges you: \"You'll be next!\"", a: "\"I'll put it on my list, right after learning to dance.\"", bundle: 'pro' },
+        { q: "At Lunar New Year, Auntie Mei asks how much you earn now.", a: "\"Not enough to pay for a feast like this, sadly. These dumplings are perfect.\"", bundle: 'pro' },
+        { q: "At Midsummer, your new partner's father asks when the two of you are moving in together.", a: "\"We're still deciding whose sofa wins. It could take a while.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Park the Topic",
+      guideFront: "Set it aside for today when...",
+      guideBack: "An agreement to leave it",
+      description: "When politics, money or an old family argument comes up, say plainly that you see it differently, and put it aside for today. \"We won't agree on that today, and that's fine. Let's leave it for another time.\" You do not argue the point, and you do not pretend to agree.\n\nIt works because a family table is the wrong room for a debate nobody can win. Both sides have heard each other's case before, the stakes feel personal, and everyone in between has to sit through it. Parking it names the difference honestly and takes the fight off the table without anyone having to lose.\n\nPark it early. Two rounds in, it already sounds like backing down.\n\nTypical phrases: \"We see that differently, and that's fine.\", \"Let's not solve that one over dessert.\", \"That one can wait for another day.\", \"I love you too much to argue about this today.\"\n\nThree ways to park it:\n\n1. Name the difference — \"We see the election very differently. I'd rather enjoy the meal.\"\n\n2. Give it a later — \"That's a long talk. Call me next week and we'll have it properly.\"\n\n3. Protect the day — \"It's Grandma's birthday. Let's leave the old stuff for another time.\"\n\nMindset: you can disagree with someone you love and still choose not to fight about it today.",
+      inputs: [
+        { q: "At Christmas dinner, your uncle Raj brings up the election and asks who you voted for.", a: "\"We probably see that one differently, Uncle. Let's leave it for today and enjoy the food.\"", bundle: 'free' },
+        { q: "At Easter, your grandfather starts talking about immigration and looks at you to agree.", a: "\"We won't agree on that today, Grandpa, and that's fine. Let's leave it.\"", bundle: 'free' },
+        { q: "At your mum's birthday dinner, your sister brings up who still owes whom money from the holiday.", a: "\"Let's sort that out next week, just us. Today is for Mum.\"", bundle: 'free' },
+        { q: "At Sunday dinner, your father and your cousin start getting loud about the climate debate.", a: "\"You two will never agree on this one. Can we leave it for another day?\"", bundle: 'free' },
+        { q: "At Eid, Aunt Leila brings up the old argument about Grandma's house.", a: "\"That's a long story with a lot of feelings in it. Let's not open it today.\"", bundle: 'free' },
+        { q: "At a wedding, your brother-in-law Tomasz asks, with a grin, what you think about taxes.", a: "\"I think we'd need more than one wedding to agree on taxes. Let's dance instead.\"", bundle: 'pro' },
+        { q: "At Diwali, your uncle Sanjay says your career change was a waste of money and wants to go through the numbers.", a: "\"We see that differently, and I'm happy with my choice. Let's not do the sums tonight.\"", bundle: 'pro' },
+        { q: "At Midsummer, your mum brings up the falling-out with your aunt from five years ago.", a: "\"I love you, and I'm not going there today. Maybe on a quiet Sunday, just us.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name the Line Kindly",
+      guideFront: "Say once what is off-limits when...",
+      guideBack: "One clear, kind limit",
+      description: "When they keep going, or when it is about your body, your plate or your life choices, say once — kindly and clearly — what you would rather not talk about. \"I know you mean well. I'd rather not talk about my weight today.\" One sentence, said once. Not a speech, and not a list of old complaints.\n\nIt works because some topics should not be steered round with a joke. A clear, warm line shows them where the edge is, and the kind half tells them you are not angry with them. Most relatives step back at once; many had no idea it stung.\n\nSay it once. If it comes back, say the same sentence again, just as calmly. You do not need a new argument.\n\nTypical phrases: \"I know you mean well, but...\", \"I'd rather not talk about that today.\", \"That's something I keep to myself.\", \"Please leave my plate out of it.\"\n\nThree ways to say it:\n\n1. Good intent first — \"I know you care. I'd rather not talk about my body at dinner.\"\n\n2. Just the line — \"That's not something I want to discuss today.\"\n\n3. The line and a door — \"I'm not talking about that here. Ask me about the new job instead.\"\n\nMindset: one kind sentence is not a scene. It shows them where the edge is.",
+      inputs: [
+        { q: "At Christmas, Aunt Kerstin looks you up and down: \"Have you put on a bit of weight?\"", a: "\"I know you mean well. I'd rather not talk about my body today.\"", bundle: 'free' },
+        { q: "At Eid, you have already said you are happy being single, and Uncle Bilal asks again, louder.", a: "\"I've answered that, Uncle, and I'd like to leave it there.\"", bundle: 'free' },
+        { q: "At Sunday lunch, your father-in-law Hamid points out that you are only eating salad.", a: "\"Please leave my plate out of it. I'm really enjoying the meal.\"", bundle: 'free' },
+        { q: "At Easter, your stepmother asks why you and your partner still do not have children.", a: "\"That's private for the two of us, and I'd rather not discuss it at the table.\"", bundle: 'free' },
+        { q: "At Diwali, your aunt asks loudly whether your new partner is going to convert.", a: "\"I know you're curious, Auntie. That's between the two of us, though.\"", bundle: 'free' },
+        { q: "At a birthday, your cousin keeps asking about your divorce, after you have changed the subject twice.", a: "\"I know you care. I'm not talking about the divorce today.\"", bundle: 'pro' },
+        { q: "At a family barbecue, your mum tells your teenage son he eats like a bird.", a: "\"Mum, please leave his plate alone. He's fine.\"", bundle: 'pro' },
+        { q: "At Christmas, in front of everyone, your grandmother asks if you are still taking those pills for your nerves.", a: "\"Gran, I know you're asking out of love. My health is something I keep private.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Be Who You Are Now",
+      guideFront: "Answer as the adult you are when...",
+      guideBack: "A calm update on you today",
+      description: "When they treat you like the child you once were, answer as the adult you are today — calmly, without fighting about it. \"I know I used to forget everything. These days I'm actually the organised one.\" You do not argue about the past. You give them an update.\n\nIt works because families keep old pictures of each other, and the picture often stopped changing at fifteen. Arguing — \"I'm not a kid any more!\" — sounds exactly like the kid they remember. A calm, friendly update does the opposite: it shows them the adult, right there at the table.\n\nLet the past be true. \"Yes, I was hopeless at maths\" costs nothing, and it makes the update easier to hear.\n\nTypical phrases: \"That was me at fifteen. These days...\", \"I've changed a bit since then.\", \"I'll take care of it — I do this every day at work.\", \"I'd like to try, actually.\"\n\nThree ways to do it:\n\n1. Grant the old picture, give the new one — \"I was terrible with money at uni. Now I do budgets for a living.\"\n\n2. Show it by doing — \"I'll carve this year, Dad. I've practised.\"\n\n3. State the choice as yours — \"I've thought it through, and it's my decision. I'm happy with it.\"\n\nMindset: you do not have to convince them you have grown up. You only have to keep being grown up in front of them.",
+      inputs: [
+        { q: "At Christmas, your dad reminds everyone that you once set the kitchen on fire, and says you should stay away from the oven.", a: "\"That was me at twelve, Dad. I cook every night now — let me do the potatoes.\"", bundle: 'free' },
+        { q: "At Easter, Aunt Carmen tells your partner, \"Oh, she could never keep a plant alive.\"", a: "\"True when I was ten. These days I've got fourteen, and they're all doing well.\"", bundle: 'free' },
+        { q: "At a birthday, your older brother Oskar says, \"Give me the tickets, you'll only lose them.\"", a: "\"I've got them, thanks. I book the travel for a team of twenty at work.\"", bundle: 'free' },
+        { q: "At Sunday dinner, Grandpa Jun asks if your parents are still helping you with the rent.", a: "\"Not for years, Grandpa. I pay my own way now, and I'm proud of it.\"", bundle: 'free' },
+        { q: "At Eid, your aunt calls your switch from law to nursing just another phase.", a: "\"I can see why it looked like one. I've been a nurse for three years now, and I love it.\"", bundle: 'free' },
+        { q: "At Midsummer, your mum tells your new partner embarrassing stories about you as a teenager.", a: "\"Those were wild years, Mum. These days I'm the one who remembers everyone's birthday.\"", bundle: 'pro' },
+        { q: "At a wedding, your uncle laughs: \"You, giving a speech? You used to hide under the table.\"", a: "\"I did. I've grown out of the table, though — I'm looking forward to it.\"", bundle: 'pro' },
+        { q: "At Diwali, your father starts explaining the way to the temple, step by step, as he did when you were seventeen.", a: "\"Thanks, Papa. I've driven it many times. I'll meet you there.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Draw Someone In",
+      guideFront: "Bring in the quiet one when...",
+      guideBack: "An invitation to join in",
+      description: "Bring in the person who is on the outside: a new partner, a quiet cousin, a teenager on their phone, a grandparent nobody is talking to. Ask them something, or link them to someone else. \"Grandpa, you worked on boats too, didn't you? Tell Sam about that.\"\n\nIt works because family talk runs on old jokes, old names and old stories, and anyone who was not there ends up on the edge. One question aimed at them, about something they know, opens a way in. It often lifts the whole table too, because everyone gets something new to talk about.\n\nAsk about something they can answer well. \"What do you think about the election?\" puts them on the spot; \"How did you two meet?\" lets them shine.\n\nTypical phrases: \"You'd know about this —\", \"Have you two met properly?\", \"What was it like when you were her age, Grandma?\", \"Tell them about...\"\n\nThree ways to draw someone in:\n\n1. Ask them directly — \"Leo, what's the best game you've played this year?\"\n\n2. Link two people — \"Grandpa, you sailed too. Tell Sam about it.\"\n\n3. Explain the old story — \"This is the famous trifle story, Jonas. Let me catch you up.\"\n\nMindset: at every gathering, someone is on the edge. You can be the one who notices.",
+      inputs: [
+        { q: "At Christmas, your new partner Sam sits quietly while the family talks about people he has never met.", a: "\"Grandpa, you worked on boats too, didn't you? Sam's just started sailing.\"", bundle: 'free' },
+        { q: "At Eid, your teenage cousin Yusuf has been on his phone all afternoon.", a: "\"Yusuf, you're the expert — which of these films should we watch tonight?\"", bundle: 'free' },
+        { q: "At Sunday dinner, your grandmother Halina sits at the end of the table and nobody is talking to her.", a: "\"Babcia, what were Sunday dinners like when you were a girl?\"", bundle: 'free' },
+        { q: "At your sister's wedding, the groom's shy aunt is standing on her own by the cake.", a: "\"Hello, I'm the bride's sister. How do you know Daniel?\"", bundle: 'free' },
+        { q: "At Diwali, your sister-in-law Anika is new to the family, and everyone is laughing at an old story.", a: "\"This is the famous lamp story, Anika. Let me catch you up — it's worth it.\"", bundle: 'free' },
+        { q: "At Easter, your stepbrother Liam keeps leaving the table to stand in the kitchen.", a: "\"Liam, come and settle this — you're the only one here who knows football.\"", bundle: 'pro' },
+        { q: "At Midsummer, your mother's new partner, Kofi, is quiet while everyone sings the old family songs.", a: "\"Kofi, is there a summer song from where you grew up? Teach us one.\"", bundle: 'pro' },
+        { q: "At a birthday, your quiet cousin Aisha has just finished her degree, and nobody has asked about it.", a: "\"Aisha, you've just finished your degree! Tell everyone what your project was about.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Leave on Time",
+      guideFront: "Name your leaving time when...",
+      guideBack: "A clear time, then a warm goodbye",
+      description: "Say early when you will leave, and then leave warmly when it is time. \"We'll head off around eight. Thank you, this has been lovely.\" The time is not up for debate, and the goodbye is not an escape.\n\nIt works because a time given early is information, not a rejection. Nobody is surprised at eight, the host can plan, and you are not the one who suddenly wants to go. Without it, every attempt to leave becomes a negotiation — \"Stay for coffee! Just one more hour!\" — and the last hour is spent watching the clock.\n\nTwo parts, at two moments:\n\n1. Say it early — when you arrive, or as the meal starts. \"Just so you know, we need to leave at eight.\"\n\n2. Go warmly — at that time, thank them and go, even if they ask you to stay. \"We're off now. Thank you, it's been a lovely day.\"\n\nTypical phrases: \"We'll head off around eight.\", \"We've got a long drive, so we'll leave at six.\", \"I'd love to, but we're going now.\", \"Thank you — this was lovely.\"\n\nMindset: a clear time and a warm goodbye are a kindness to everyone, including you.",
+      inputs: [
+        { q: "You arrive at your aunt's Christmas party, and you need to be home for the babysitter by nine.", a: "\"Lovely to see you! Just so you know, we'll have to leave at half eight.\"", bundle: 'free' },
+        { q: "It is eight o'clock at Sunday dinner, the time you said, and your mum says, \"Stay for another coffee!\"", a: "\"I'd love to, Mum, but we're heading off now. Thank you, this was lovely.\"", bundle: 'free' },
+        { q: "At the start of Eid lunch, your grandmother asks how long you can stay.", a: "\"Until four, Nani. Then we've got the long drive home.\"", bundle: 'free' },
+        { q: "At the Diwali party, you said you would leave at ten. It is ten, and your uncle says, \"The sweets aren't even out yet!\"", a: "\"Save me one for next time, Uncle. We're off now — thank you for a wonderful evening.\"", bundle: 'free' },
+        { q: "Your partner's family expect you to stay the whole Easter weekend, and you plan to go home on Saturday evening.", a: "\"We're so happy to come. We'll be there for lunch and dinner on Saturday, then head home.\"", bundle: 'free' },
+        { q: "At Midsummer, it is your leaving time, and your father-in-law says, \"Leaving already? The party's just starting.\"", a: "\"Then it's had a great start! Thank you both — we're off now.\"", bundle: 'pro' },
+        { q: "At a birthday, it is nine, as you said, and your cousin says you always leave early and asks you to stay this time.", a: "\"Nine, like I said. I've loved every minute — thank you for having us.\"", bundle: 'pro' },
+        { q: "You arrive at a wedding knowing you will be too tired for the late-night dancing.", a: "\"We're so happy for you! We'll stay through the speeches and slip away around eleven.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -22266,6 +22380,72 @@ const collectionsModeData = {
         { q: "Your dad says, irritated, \"Don't bother with the party. Nobody wants an old man there.\"", a: "\"I wonder if you've been feeling a bit left out of things lately?\" [The Feeling Under the Feeling]", bundle: 'pro', guideBack: "A tentative guess, as a question" },
         { q: "Your flatmate says, angry, \"You invited people round without asking.\" You'd mentioned it on Monday.", a: "\"I did mention it on Monday. I still get why it felt like you had no say.\" [Validate Without Agreeing]", bundle: 'pro', guideBack: "Understanding, with your own view beside it" },
         { q: "Your friend says she's grieving her grandmother. You say, \"Well, she had a long life.\" She goes quiet.", a: "\"That came out wrong. It doesn't make it hurt less. Tell me about her?\" [Repair in the Moment]", bundle: 'pro', guideBack: "A quick catch, then a second try" },
+      ]
+    },
+  ],
+  familygatherings: [
+    {
+      name: "Handle the Question",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Short Answer, New Topic**, **Light Touch** and **Name the Line Kindly** — three strategies for the personal question at the table: marriage, children, money, jobs.\n\n• **Short Answer, New Topic** — you don't mind answering, as long as it stays short\n• **Light Touch** — it's the same old question, and a smile is enough\n• **Name the Line Kindly** — it touches something tender, or they have already asked twice\n\nThe question that decides it: how close to the bone is this one? A harmless question gets an answer, a tired one gets a smile, and a painful one gets a clear line.\n\nThe usual wrong choice is a joke on a topic that hurts. The laugh lets the question come back next year, and the year after.\n\nMindset: you choose how much of the answer they get.",
+      inputs: [
+        { q: "At Sunday lunch, your aunt Yasmin asks whether you are still working at the bank.", a: "\"Still there, and I've just been promoted. How's the new puppy?\" [Short Answer, New Topic]", bundle: 'pro', guideBack: "One true line, then a real question" },
+        { q: "At Christmas, Uncle Diego asks, as he does every year, when you are going to settle down.", a: "\"I'm settling down right now — on this sofa, with this pudding.\" [Light Touch]", bundle: 'pro', guideBack: "A warm, playful deflection" },
+        { q: "At a birthday, your aunt asks when you are having a baby, and you have been trying for two years.", a: "\"That's something we keep private, Auntie. I'd rather not talk about it today.\" [Name the Line Kindly]", bundle: 'pro', guideBack: "One clear, kind limit" },
+        { q: "At Diwali, your grandfather asks what your new partner does for a living.", a: "\"She's a vet, Dada. Didn't you have a dog when you were young?\" [Short Answer, New Topic]", bundle: 'pro', guideBack: "One true line, then a real question" },
+        { q: "At Easter, your cousin Carmen asks if you have managed to buy a flat yet.", a: "\"Not unless you know someone selling a castle cheap.\" [Light Touch]", bundle: 'pro', guideBack: "A warm, playful deflection" },
+        { q: "At Eid, Uncle Bilal asks for the third time why your engagement ended.", a: "\"I know you care, Uncle. I've said what I want to say about it.\" [Name the Line Kindly]", bundle: 'pro', guideBack: "One clear, kind limit" },
+        { q: "At a wedding, an older cousin asks how much you paid for your car.", a: "\"Less than it looks, more than I wanted. How was the drive up?\" [Short Answer, New Topic]", bundle: 'pro', guideBack: "One true line, then a real question" },
+        { q: "At Lunar New Year, Auntie Mei asks if you have a boyfriend yet.", a: "\"Not yet, Auntie. You'll be the very first to hear.\" [Light Touch]", bundle: 'pro', guideBack: "A warm, playful deflection" },
+      ]
+    },
+    {
+      name: "Stay Yourself",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Be Who You Are Now**, **Name the Line Kindly** and **Light Touch** — three strategies for when the comment is about you: your past, your body, your choices.\n\n• **Be Who You Are Now** — they are talking to the child you were, so show them the adult\n• **Name the Line Kindly** — it is about your body, your plate or something private\n• **Light Touch** — it is an old family joke, and you can laugh along without losing yourself\n\nThe question that decides it: are they out of date, out of line, or just teasing? Out of date gets an update. Out of line gets a kind limit. Teasing gets a smile.\n\nThe usual wrong choice is arguing about the past — \"I'm not twelve any more!\" — which makes you sound exactly twelve.\n\nMindset: the adult at the table is you. Let them meet that person.",
+      inputs: [
+        { q: "At Christmas, your mum tells your partner you were always the messy one.", a: "\"I was, Mum. These days I'm the one who irons the tablecloth.\" [Be Who You Are Now]", bundle: 'pro', guideBack: "A calm update on you today" },
+        { q: "At Easter, your aunt says, \"You look tired. Have you been eating properly?\"", a: "\"I know you mean well. I'd rather not talk about my eating today.\" [Name the Line Kindly]", bundle: 'pro', guideBack: "One clear, kind limit" },
+        { q: "At Sunday dinner, your brother tells the old story of you crying at the school play.", a: "\"I'm told it was a very moving performance.\" [Light Touch]", bundle: 'pro', guideBack: "A warm, playful deflection" },
+        { q: "At Diwali, your father says you were never good with money, so you should not have changed careers.", a: "\"I wasn't, at twenty. I planned this one carefully, and the numbers work.\" [Be Who You Are Now]", bundle: 'pro', guideBack: "A calm update on you today" },
+        { q: "At a wedding, your grandmother pinches your waist and says you have gone soft.", a: "\"Gran, please leave my body out of it. Shall we find our table?\" [Name the Line Kindly]", bundle: 'pro', guideBack: "One clear, kind limit" },
+        { q: "At Midsummer, your uncle calls you \"the baby of the family\" in front of your new partner.", a: "\"Thirty-four years old, and still the baby. It's a lifetime job.\" [Light Touch]", bundle: 'pro', guideBack: "A warm, playful deflection" },
+        { q: "At Eid, your older sister starts telling you how to talk to your own children.", a: "\"Thanks, Noor. I've got this one — I know them pretty well.\" [Be Who You Are Now]", bundle: 'pro', guideBack: "A calm update on you today" },
+        { q: "At a birthday, your stepfather asks whether going back to university at forty is a midlife crisis.", a: "\"If it is, it's a very well-planned one. Ask me about the course some time.\" [Light Touch]", bundle: 'pro', guideBack: "A warm, playful deflection" },
+      ]
+    },
+    {
+      name: "Keep the Day Kind",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Park the Topic**, **Draw Someone In** and **Leave on Time** — three strategies for the gathering as a whole: the mood of the table and the length of the day.\n\n• **Park the Topic** — a subject is heating up, and it will not be settled today\n• **Draw Someone In** — someone is on the outside of the talk\n• **Leave on Time** — the day needs an end, said early and kept warmly\n\nThe question that decides it: what is the problem right now — a topic, a person, or the clock?\n\nThe usual wrong choice is staying in a heated topic \"just to make one point\". One point becomes ten, and the people on the edge get even quieter.\n\nMindset: you can look after the whole day, not just your own corner of it.",
+      inputs: [
+        { q: "At Christmas, your father and your brother-in-law are getting louder about immigration.", a: "\"You two won't settle that tonight. Let's give it a rest and do the crackers.\" [Park the Topic]", bundle: 'pro', guideBack: "An agreement to leave it" },
+        { q: "At Eid, your partner's teenage son sits alone on the stairs with his headphones on.", a: "\"Zain, you know cars — come and tell Uncle Ali what you think of his new one.\" [Draw Someone In]", bundle: 'pro', guideBack: "An invitation to join in" },
+        { q: "You arrive at your in-laws' Sunday lunch, and you have a long drive home.", a: "\"Lovely to be here! We'll need to leave at five, because of the drive.\" [Leave on Time]", bundle: 'pro', guideBack: "A clear time, then a warm goodbye" },
+        { q: "At Easter, your mum and your aunt start on the old argument about who looked after Grandpa.", a: "\"That one's too big for today. Let's talk about it another time, just us.\" [Park the Topic]", bundle: 'pro', guideBack: "An agreement to leave it" },
+        { q: "At a wedding, your grandfather sits alone at the table while everyone else dances.", a: "\"Grandpa, how did you and Grandma dance at your wedding? Show me.\" [Draw Someone In]", bundle: 'pro', guideBack: "An invitation to join in" },
+        { q: "At Diwali, it is the time you said you would go, and your aunt says, \"One more round of chai!\"", a: "\"Next time, Auntie, I promise. Thank you for a beautiful evening.\" [Leave on Time]", bundle: 'pro', guideBack: "A clear time, then a warm goodbye" },
+        { q: "At a birthday, your cousin asks everyone at the table what they think about the election.", a: "\"I'm going to pass on that one today. Let's keep it to cake and gossip.\" [Park the Topic]", bundle: 'pro', guideBack: "An agreement to leave it" },
+        { q: "At Midsummer, your friend has come with you, and the family is talking about relatives she has never met.", a: "\"Elin grew up by the sea too. Mum, tell her about the summer house.\" [Draw Someone In]", bundle: 'pro', guideBack: "An invitation to join in" },
+      ]
+    },
+    {
+      name: "All Seven Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order a real family gathering throws them at you — with no warning about what comes next.\n\nThe seven fall into four groups. For the personal question: **Short Answer, New Topic** and **Light Touch**. For limits: **Park the Topic** and **Name the Line Kindly**. For old roles: **Be Who You Are Now**. For the room and the clock: **Draw Someone In** and **Leave on Time**.\n\nIf you are unsure, ask what is happening: a question, a topic, a comment about you, a person left out, or the end of the day?\n\nThe usual wrong choice is saying nothing and then saying too much, later, in the car home.\n\nMindset: warm to the people, clear about the limits. Every strategy here is both.",
+      inputs: [
+        { q: "At Easter, Aunt Siobhan asks whether you are still seeing \"that nice girl from work\".", a: "\"We're still together, and very happy. How's your new job going?\" [Short Answer, New Topic]", bundle: 'pro', guideBack: "One true line, then a real question" },
+        { q: "At Christmas, your grandmother asks if you will ever cut your hair properly.", a: "\"Only if you promise to cut it for me, Gran.\" [Light Touch]", bundle: 'pro', guideBack: "A warm, playful deflection" },
+        { q: "At Sunday dinner, your uncle starts on the climate debate and asks which side you are on.", a: "\"Let's not pick sides over the roast. Another day, Uncle.\" [Park the Topic]", bundle: 'pro', guideBack: "An agreement to leave it" },
+        { q: "At Eid, your aunt comments on how much you are eating, for the second time.", a: "\"Please leave my plate out of it, Auntie. The food is wonderful.\" [Name the Line Kindly]", bundle: 'pro', guideBack: "One clear, kind limit" },
+        { q: "At a birthday, your mum tells everyone you are \"hopeless with directions\" and gives the keys to your brother.", a: "\"I was, Mum. I drive for a delivery firm now — I'll take the car.\" [Be Who You Are Now]", bundle: 'pro', guideBack: "A calm update on you today" },
+        { q: "At Diwali, your brother's new wife sits quietly while the cousins speak a language she does not know.", a: "\"Let's do this in English for a bit. Priya, tell us how you two met.\" [Draw Someone In]", bundle: 'pro', guideBack: "An invitation to join in" },
+        { q: "At Midsummer, it is the time you said, and the whole table protests that it is still light outside.", a: "\"It's light till midnight! Thank you all — we're heading home.\" [Leave on Time]", bundle: 'pro', guideBack: "A clear time, then a warm goodbye" },
+        { q: "At a wedding, Uncle Dev asks when you will finally get a proper job instead of acting.", a: "\"Acting is the proper job, Uncle. Are you still playing golf?\" [Short Answer, New Topic]", bundle: 'pro', guideBack: "One true line, then a real question" },
       ]
     },
   ],

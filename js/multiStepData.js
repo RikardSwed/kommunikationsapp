@@ -18628,4 +18628,111 @@ const multiStepCollections = {
       ]
     },
   ],
+  familygatherings: [
+    {
+      name: "Answer, Smile, Name It",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For the personal question that keeps coming back across the afternoon.\n\n1. **Short Answer, New Topic** — they ask; answer briefly and ask them something.\n2. **Light Touch** — they ask again; turn it aside with a smile.\n3. **Name the Line Kindly** — they push a third time; say the line, once.\n\nWhy this order: each step is a little firmer than the last, and each one gives them a fair chance to stop. A clear line at the first question can feel heavy; a joke at the third lets it come back for ever.\n\nThe usual order is a long answer, then a sharp one, then a sulk.\n\nMindset: you can get firmer without getting colder.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "It is Christmas dinner, and Aunt Siobhan has your partner's hand in view.",
+          steps: [
+            { front: "Short Answer, New Topic — she asks, \"So, when's the wedding?\"", back: "\"No plans yet, and we're happy. How was Galway?\"", guideFront: "Answer briefly, then ask back when...", guideBack: "One true line, then a real question" },
+            { front: "Light Touch — over dessert, she asks, \"Not even a little plan?\"", back: "\"If there's ever a plan, you'll get the first invitation.\"", guideFront: "Turn it aside with a smile when...", guideBack: "A warm, playful deflection" },
+            { front: "Name the Line Kindly — at coffee, she says, \"You're not getting any younger, you know.\"", back: "\"I know you mean well. I'd like to stop talking about weddings now.\"", guideFront: "Say once what is off-limits when...", guideBack: "One clear, kind limit" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "It is Diwali at your parents' house, and Auntie Meera sits down next to you and your husband.",
+          steps: [
+            { front: "Short Answer, New Topic — she asks, \"Any good news for us yet?\"", back: "\"Not yet, Auntie. How is Rohan finding university?\"", guideFront: "Answer briefly, then ask back when...", guideBack: "One true line, then a real question" },
+            { front: "Light Touch — an hour later, she says, \"Don't wait too long!\"", back: "\"We'll let you know the minute there's anything to know.\"", guideFront: "Turn it aside with a smile when...", guideBack: "A warm, playful deflection" },
+            { front: "Name the Line Kindly — she asks, in front of everyone, if there is a problem.", back: "\"That's private for the two of us, Auntie, and I'd rather leave it there.\"", guideFront: "Say once what is off-limits when...", guideBack: "One clear, kind limit" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "It is Sunday dinner, and you have left your job in sales to retrain as a teacher.",
+          steps: [
+            { front: "Short Answer, New Topic — your stepfather asks, \"So, what are you living on now?\"", back: "\"My savings and a student loan, and it works. How's the garden?\"", guideFront: "Answer briefly, then ask back when...", guideBack: "One true line, then a real question" },
+            { front: "Light Touch — later, he says, \"Teachers don't get rich, you know.\"", back: "\"Good thing I didn't do it for the yacht.\"", guideFront: "Turn it aside with a smile when...", guideBack: "A warm, playful deflection" },
+            { front: "Name the Line Kindly — he starts listing what you gave up.", back: "\"I know you worry. I'm not going to go through my finances at dinner.\"", guideFront: "Say once what is off-limits when...", guideBack: "One clear, kind limit" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Calm Table",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For the topic that will not stay parked, at a gathering you still want to enjoy.\n\n1. **Park the Topic** — it comes up; say you see it differently and leave it for today.\n2. **Name the Line Kindly** — they keep going; say once, kindly, that you will not discuss it here.\n3. **Leave on Time** — it is the time you said; go warmly, without a last word on the topic.\n\nWhy this order: parking it costs nobody anything and often ends it. The line comes only if they push on. And leaving at your planned time means the evening ends on a goodbye, not on round four.\n\nThe usual order is to argue, give in, and leave in a hurry.\n\nMindset: the calmest goodbye is the one you planned.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "It is Christmas Eve at your uncle Raj's house, and you said when you arrived that you would leave at nine.",
+          steps: [
+            { front: "Park the Topic — he says, \"Come on, who did you vote for in the election?\"", back: "\"We see that differently, Uncle, and that's fine. Let's leave it for tonight.\"", guideFront: "Set it aside for today when...", guideBack: "An agreement to leave it" },
+            { front: "Name the Line Kindly — he says, \"Come on, I just want to know how you see it.\"", back: "\"I know you feel strongly. I'm not discussing the election tonight.\"", guideFront: "Say once what is off-limits when...", guideBack: "One clear, kind limit" },
+            { front: "Leave on Time — it is nine, and he says, \"Stay! I'll behave, I promise.\"", back: "\"Ha — we're off anyway. Thank you for a lovely Christmas Eve.\"", guideFront: "Name your leaving time when...", guideBack: "A clear time, then a warm goodbye" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "It is Easter lunch at your grandparents' house, and you told Grandma you would leave at four.",
+          steps: [
+            { front: "Park the Topic — your grandfather starts on immigration and turns to you.", back: "\"We won't agree on this one, Grandpa, and that's alright. Let's leave it today.\"", guideFront: "Set it aside for today when...", guideBack: "An agreement to leave it" },
+            { front: "Name the Line Kindly — he says, \"You young people never want to talk about anything real.\"", back: "\"I love talking with you. Just not about this, not today.\"", guideFront: "Say once what is off-limits when...", guideBack: "One clear, kind limit" },
+            { front: "Leave on Time — it is four, and Grandma says, \"Already? The cake's not cut.\"", back: "\"Wrap me a piece, Grandma. Thank you both, it's been a lovely Easter.\"", guideFront: "Name your leaving time when...", guideBack: "A clear time, then a warm goodbye" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "It is your mum's birthday, and your brother Oskar still feels he was treated unfairly when your father's will was settled.",
+          steps: [
+            { front: "Park the Topic — he says, \"We still haven't talked about Dad's things.\"", back: "\"We will, Oskar, but not today. Today is Mum's.\"", guideFront: "Set it aside for today when...", guideBack: "An agreement to leave it" },
+            { front: "Name the Line Kindly — he brings it up again over cake.", back: "\"I'm not talking about the will at Mum's party. Call me on Tuesday.\"", guideFront: "Say once what is off-limits when...", guideBack: "One clear, kind limit" },
+            { front: "Leave on Time — it is seven, the time you said, and he says, \"You always run off when it gets hard.\"", back: "\"I'm going because it's seven, like I said. Happy birthday, Mum — I love you.\"", guideFront: "Name your leaving time when...", guideBack: "A clear time, then a warm goodbye" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Whole Visit",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A whole gathering in three steps, from the front door to the goodbye.\n\n1. **Leave on Time** — you arrive; say early when you will leave.\n2. **Draw Someone In** — someone is on the edge; bring them into the talk.\n3. **Leave on Time** — it is time; go warmly, even when they ask you to stay.\n\nWhy this order: the time said at the door frees you to be fully there in between, without one eye on the clock. And because you said it early, the goodbye is no surprise — nobody has to talk you out of anything.\n\nThe usual order is to arrive with no plan, sit tense all evening, and then make a sudden exit.\n\nMindset: a planned end makes the middle better.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "It is Midsummer at your parents' summer house, and you have brought your new partner, Sam, for the first time.",
+          steps: [
+            { front: "Leave on Time — your mum asks if you are staying the night.", back: "\"Not this time, Mum. We'll head back around ten.\"", guideFront: "Name your leaving time when...", guideBack: "A clear time, then a warm goodbye" },
+            { front: "Draw Someone In — everyone is laughing at a story from 1998, and Sam is smiling politely.", back: "\"Dad, tell Sam about the year the boat sank. He sails too.\"", guideFront: "Bring in the quiet one when...", guideBack: "An invitation to join in" },
+            { front: "Leave on Time — it is ten, and your dad says, \"The best part of the night is still to come!\"", back: "\"Then save it for next time. Thank you both — this was perfect.\"", guideFront: "Name your leaving time when...", guideBack: "A clear time, then a warm goodbye" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "It is Eid at your grandparents' flat, and you have brought your two teenagers.",
+          steps: [
+            { front: "Leave on Time — your grandmother asks how long you can stay.", back: "\"Until six, Nani. The kids have school tomorrow.\"", guideFront: "Name your leaving time when...", guideBack: "A clear time, then a warm goodbye" },
+            { front: "Draw Someone In — your daughter Leila sits silently in the corner while the adults talk.", back: "\"Nana, Leila is learning to cook. What's the secret to your samosas?\"", guideFront: "Bring in the quiet one when...", guideBack: "An invitation to join in" },
+            { front: "Leave on Time — it is six, and your grandfather says, \"One more cup of tea!\"", back: "\"Next time, Nana, I promise. Thank you for a beautiful Eid.\"", guideFront: "Name your leaving time when...", guideBack: "A clear time, then a warm goodbye" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "It is your cousin's wedding, a long drive from home, and you are going alone.",
+          steps: [
+            { front: "Leave on Time — at the welcome drinks, your cousin asks if you are staying for the party.", back: "\"For the dinner and the speeches, then I'll slip away around eleven.\"", guideFront: "Name your leaving time when...", guideBack: "A clear time, then a warm goodbye" },
+            { front: "Draw Someone In — the groom's elderly grandmother sits alone while the others dance.", back: "\"May I sit with you? How did you meet your husband?\"", guideFront: "Bring in the quiet one when...", guideBack: "An invitation to join in" },
+            { front: "Leave on Time — at eleven, your aunt says, \"You can't go before the cake!\"", back: "\"I've had the best evening. Give the happy couple my love — I'm off.\"", guideFront: "Name your leaving time when...", guideBack: "A clear time, then a warm goodbye" },
+          ]
+        },
+      ]
+    },
+  ],
 };

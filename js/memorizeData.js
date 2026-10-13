@@ -23702,4 +23702,174 @@ const memorizeCollections = {
       ]
     },
   ],
+  familygatherings: [
+    {
+      name: "Core Idea",
+      description: "Seven strategies for family gatherings — warm to the people, clear about the limits:\n\n1. Short Answer, New Topic\n2. Light Touch\n3. Park the Topic\n4. Name the Line Kindly\n5. Be Who You Are Now\n6. Draw Someone In\n7. Leave on Time\n\nTwo for questions, two for limits, one for old roles, one for the room, one for the clock.",
+      cards: [
+        { q: "What are the seven strategies in this pack?", a: "Short Answer, New Topic, Light Touch, Park the Topic, Name the Line Kindly, Be Who You Are Now, Draw Someone In, and Leave on Time.", bundle: 'free' },
+        { q: "How do the seven fit together?", a: "Two for personal questions, two for limits, one for old roles, one for the people on the edge, and one for the clock.", bundle: 'free' },
+        { q: "What is the stance behind the whole pack?", a: "You can be warm to your family and still decide what you talk about, how long you stay, and who you are today.", bundle: 'free' },
+        { q: "What should you ask yourself first at the table?", a: "What is happening: a question, a topic, a comment about me, someone left out, or the end of the day?", bundle: 'free' },
+        { q: "Which strategy has two parts at two different moments?", a: "Leave on Time — say the time early, and go warmly when it comes.", bundle: 'free' },
+        { q: "What is the most common mistake at family gatherings?", a: "Saying nothing for hours, and then saying far too much at once.", bundle: 'pro' },
+        { q: "Which two strategies are for personal questions?", a: "Short Answer, New Topic and Light Touch — with Name the Line Kindly when they ask again.", bundle: 'pro' },
+        { q: "Which strategy looks after other people rather than yourself?", a: "Draw Someone In — bringing in whoever is on the edge of the talk.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Short Answer, New Topic",
+      description: "",
+      cards: [
+        { q: "What is Short Answer, New Topic?", a: "Giving a personal question a short, true answer, then asking them about something else.", bundle: 'free' },
+        { q: "How does Short Answer, New Topic sound?", a: "\"Not yet, and we're happy as we are. How's the new kitchen coming along?\"", bundle: 'free' },
+        { q: "When is Short Answer, New Topic the right one?", a: "When you don't mind answering, as long as the answer stays short.", bundle: 'free' },
+        { q: "Why does Short Answer, New Topic work?", a: "A nosy question is usually a way of joining in. A short answer gives them that, and the question back gives them their own life to talk about.", bundle: 'free' },
+        { q: "What are the three ways to turn it?", a: "Ask about them, ask about something they love, or ask about the day itself.", bundle: 'free' },
+        { q: "When does Short Answer, New Topic go wrong?", a: "When the new question is not a real one. It only works if you want to hear the answer.", bundle: 'pro' },
+        { q: "What is Short Answer, New Topic better than, and why?", a: "A full report. A long answer invites the whole table to discuss your life.", bundle: 'pro' },
+        { q: "How is it different from simply changing the subject?", a: "It answers the question first. Nobody can say you dodged it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Light Touch",
+      description: "",
+      cards: [
+        { q: "What is Light Touch?", a: "Turning a question aside with a warm smile and a light line, without taking offence.", bundle: 'free' },
+        { q: "How does Light Touch sound?", a: "\"When there's news, you'll be the first to know. Promise.\"", bundle: 'free' },
+        { q: "When is Light Touch the right one?", a: "For the same old question you hear every year, when it does not really hurt.", bundle: 'free' },
+        { q: "Why does Light Touch work?", a: "Humour shows the question didn't hurt, and lets them laugh with you instead of feeling told off.", bundle: 'free' },
+        { q: "What are the three ways to keep it light?", a: "Promise them the news, laugh at yourself, or put it off with a wink.", bundle: 'free' },
+        { q: "When does Light Touch go wrong?", a: "When the joke needs them to look silly. Then it is a dig, not a light touch.", bundle: 'pro' },
+        { q: "What is Light Touch better than, and why?", a: "Getting visibly hurt or sharp, which makes the question bigger than it was.", bundle: 'pro' },
+        { q: "When should you NOT use Light Touch?", a: "When the topic really hurts. A joke lets it come back; Name the Line Kindly fits better.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Park the Topic",
+      description: "",
+      cards: [
+        { q: "What is Park the Topic?", a: "Saying plainly that you see something differently, and putting it aside for today.", bundle: 'free' },
+        { q: "How does Park the Topic sound?", a: "\"We won't agree on that today, and that's fine. Let's leave it for another time.\"", bundle: 'free' },
+        { q: "When is Park the Topic the right one?", a: "When politics, money or an old family argument comes up at the table.", bundle: 'free' },
+        { q: "Why does Park the Topic work?", a: "It names the difference honestly and takes the fight off the table without anyone having to lose.", bundle: 'free' },
+        { q: "What are the three ways to park it?", a: "Name the difference, give it a later, and protect the day.", bundle: 'free' },
+        { q: "When does Park the Topic go wrong?", a: "When it comes too late. Two rounds in, it sounds like backing down.", bundle: 'pro' },
+        { q: "What is Park the Topic better than, and why?", a: "Trying to win. Nobody changes their mind over dinner, and everyone in between suffers.", bundle: 'pro' },
+        { q: "Does parking a topic mean pretending to agree?", a: "No. You say you see it differently — you just don't argue it today.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name the Line Kindly",
+      description: "",
+      cards: [
+        { q: "What is Name the Line Kindly?", a: "Saying once, kindly and clearly, what you would rather not talk about.", bundle: 'free' },
+        { q: "How does Name the Line Kindly sound?", a: "\"I know you mean well. I'd rather not talk about my weight today.\"", bundle: 'free' },
+        { q: "When is Name the Line Kindly the right one?", a: "When they keep going, or when it is about your body, your plate or your life choices.", bundle: 'free' },
+        { q: "Why does Name the Line Kindly work?", a: "The clear half shows where the edge is, and the kind half shows you are not angry.", bundle: 'free' },
+        { q: "What are the three ways to say it?", a: "Good intent first, just the line, and the line with a door to another topic.", bundle: 'free' },
+        { q: "How long should it be?", a: "One sentence. Not a speech, and not a list of old complaints.", bundle: 'pro' },
+        { q: "What do you do if they come back to it?", a: "Say the same sentence again, just as calmly. You do not need a new argument.", bundle: 'pro' },
+        { q: "What is Name the Line Kindly better than, and why?", a: "Laughing along while it stings, which tells them the comment was fine.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Be Who You Are Now",
+      description: "",
+      cards: [
+        { q: "What is Be Who You Are Now?", a: "Answering as the adult you are today when they treat you like the child you once were.", bundle: 'free' },
+        { q: "How does Be Who You Are Now sound?", a: "\"I know I used to forget everything. These days I'm actually the organised one.\"", bundle: 'free' },
+        { q: "When is Be Who You Are Now the right one?", a: "When they use an old picture of you: old stories, old nicknames, your choices called a phase.", bundle: 'free' },
+        { q: "Why does Be Who You Are Now work?", a: "A calm update shows them the adult. Arguing sounds exactly like the kid they remember.", bundle: 'free' },
+        { q: "What are the three ways to do it?", a: "Grant the old picture and give the new one, show it by doing, and state the choice as yours.", bundle: 'free' },
+        { q: "When does Be Who You Are Now go wrong?", a: "When it turns into an argument about the past.", bundle: 'pro' },
+        { q: "Why let the past be true?", a: "Granting it costs nothing, and it makes the update easier to hear.", bundle: 'pro' },
+        { q: "What is Be Who You Are Now better than, and why?", a: "\"I'm not a child any more!\" — which only proves the old picture.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Draw Someone In",
+      description: "",
+      cards: [
+        { q: "What is Draw Someone In?", a: "Bringing in the person on the outside by asking them something or linking them to someone else.", bundle: 'free' },
+        { q: "How does Draw Someone In sound?", a: "\"Grandpa, you worked on boats too, didn't you? Tell Sam about that.\"", bundle: 'free' },
+        { q: "Who is usually on the edge at a family gathering?", a: "A new partner, a quiet cousin, a teenager on their phone, or a grandparent nobody is talking to.", bundle: 'free' },
+        { q: "Why does Draw Someone In work?", a: "Family talk runs on old stories. One question about something they know opens a way in.", bundle: 'free' },
+        { q: "What are the three ways to draw someone in?", a: "Ask them directly, link two people, and explain the old story.", bundle: 'free' },
+        { q: "When does Draw Someone In go wrong?", a: "When the question puts them on the spot, like asking a newcomer about the election.", bundle: 'pro' },
+        { q: "What kind of question works best?", a: "One they can answer well, about something they know or love.", bundle: 'pro' },
+        { q: "What does Draw Someone In do for the rest of the table?", a: "It gives everyone a new subject, which often lifts the whole mood.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Leave on Time",
+      description: "",
+      cards: [
+        { q: "What is Leave on Time?", a: "Saying early when you will leave, and leaving warmly when it is time.", bundle: 'free' },
+        { q: "What are the two parts of Leave on Time?", a: "1. Say it early, when you arrive or as the meal starts. 2. Go warmly at that time, even if they ask you to stay.", bundle: 'free' },
+        { q: "How does Leave on Time sound?", a: "\"We'll head off around eight. Thank you, this has been lovely.\"", bundle: 'free' },
+        { q: "Why does Leave on Time work?", a: "A time given early is information, not a rejection. Nobody is surprised when you go.", bundle: 'free' },
+        { q: "What happens without the first part?", a: "Every attempt to leave becomes a negotiation, and the last hour is spent watching the clock.", bundle: 'free' },
+        { q: "When does Leave on Time go wrong?", a: "When you give in one coffee at a time, or slip out with an awkward excuse at the door.", bundle: 'pro' },
+        { q: "What should the goodbye include?", a: "Thanks and warmth — not a list of reasons.", bundle: 'pro' },
+        { q: "How is Leave on Time different from ending one conversation?", a: "It is about the whole gathering, not a single chat.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The four collections in this pack, and what each one makes you choose between:\n\n• **Handle the Question** — a personal question: answer briefly, smile, or name the line?\n• **Stay Yourself** — a comment about you: update them, set a limit, or laugh along?\n• **Keep the Day Kind** — the whole gathering: park a topic, bring someone in, or keep the clock?\n• **All Seven Strategies** — everything mixed, with no warning about what comes next\n\nOne question decides most of it: what is happening right now?",
+      cards: [
+        { q: "What are the four collections in this pack?", a: "Handle the Question, Stay Yourself, Keep the Day Kind, and All Seven Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Handle the Question?", a: "How close to the bone is this one?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Handle the Question?", a: "A joke on a topic that hurts — it lets the question come back every year.", bundle: 'pro' },
+        { q: "What is the question that decides Stay Yourself?", a: "Are they out of date, out of line, or just teasing?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Stay Yourself?", a: "Arguing about the past, which makes you sound exactly like the kid they remember.", bundle: 'pro' },
+        { q: "What is the question that decides Keep the Day Kind?", a: "What is the problem right now — a topic, a person, or the clock?", bundle: 'pro' },
+        { q: "A new partner sits quietly while everyone shares old stories. Which strategy?", a: "Draw Someone In.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in All Seven Strategies?", a: "Saying nothing, and then saying too much later, in the car home.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Answer, Smile, Name It** — Short Answer, New Topic → Light Touch → Name the Line Kindly\n2. **The Calm Table** — Park the Topic → Name the Line Kindly → Leave on Time\n3. **The Whole Visit** — Leave on Time → Draw Someone In → Leave on Time\n\nIn each one, every step is a little firmer, or a little warmer, than the last.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Answer, Smile, Name It; The Calm Table; and The Whole Visit.", bundle: 'pro' },
+        { q: "What is the order in Answer, Smile, Name It?", a: "Short Answer, New Topic, then Light Touch, then Name the Line Kindly.", bundle: 'pro' },
+        { q: "Why does Answer, Smile, Name It get firmer at each step?", a: "Each step gives them a fair chance to stop before the next one.", bundle: 'pro' },
+        { q: "What is the order in The Calm Table?", a: "Park the Topic, then Name the Line Kindly, then Leave on Time.", bundle: 'pro' },
+        { q: "Why does The Calm Table end with Leave on Time?", a: "Leaving at the planned time ends the evening on a goodbye, not on round four.", bundle: 'pro' },
+        { q: "What is the order in The Whole Visit?", a: "Leave on Time, Draw Someone In, and Leave on Time again.", bundle: 'pro' },
+        { q: "Why does Leave on Time come twice in The Whole Visit?", a: "Its two parts happen at two moments: the time said at the door, and the warm goodbye at the end.", bundle: 'pro' },
+        { q: "What is the usual mistake in all three?", a: "Waiting too long, then reacting too strongly.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack, and what goes wrong in each:\n\n• **The Big Question** — marriage, children, money: the full report you never meant to give\n• **About Your Body or Your Plate** — explaining yourself to the whole table\n• **Politics at the Table** — trying to win\n• **Treated Like a Kid Again** — arguing back like the teenager they remember\n• **Time to Go** — giving in, one coffee at a time\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Big Question, About Your Body or Your Plate, Politics at the Table, Treated Like a Kid Again, and Time to Go.", bundle: 'pro' },
+        { q: "What goes wrong with The Big Question?", a: "Answering at length until the whole table is discussing your life.", bundle: 'pro' },
+        { q: "What is the main strategy for About Your Body or Your Plate?", a: "Name the Line Kindly — one warm, clear sentence.", bundle: 'pro' },
+        { q: "What should you avoid with About Your Body or Your Plate?", a: "Justifying your body or your food.", bundle: 'pro' },
+        { q: "What is the main strategy for Politics at the Table?", a: "Park the Topic — name the difference and leave it for today.", bundle: 'pro' },
+        { q: "What is the main strategy for Treated Like a Kid Again?", a: "Be Who You Are Now — grant the past and give an update.", bundle: 'pro' },
+        { q: "What should you avoid in Treated Like a Kid Again?", a: "Fighting about who you used to be.", bundle: 'pro' },
+        { q: "What should you avoid in Time to Go?", a: "A long list of reasons at the door.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Questions** — \"I have to answer every question\": you owe kindness, not a report\n• **Limits** — \"If I set a limit, I'll ruin the day\": one kind sentence ruins nothing\n• **Being Known** — \"My family should know me by now\": true, but they still need to be shown\n• **Leaving Early** — \"Leaving early is rude\": staying past your limit costs more\n\nAll four keep you sitting quietly when one kind sentence would do.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Questions, Limits, Being Known, and Leaving Early.", bundle: 'pro' },
+        { q: "What is true instead of \"I have to answer every question\"?", a: "You owe them kindness, not a report. A short answer is still an answer.", bundle: 'pro' },
+        { q: "What is true instead of \"If I set a limit, I'll ruin the day\"?", a: "One kind sentence ruins nothing. Days are spoiled by arguments and swallowed anger.", bundle: 'pro' },
+        { q: "What part of \"My family should know me by now\" is true, and what gets added?", a: "They do know a lot about you. What gets added is \"so I shouldn't have to show them\".", bundle: 'pro' },
+        { q: "What does \"Leaving early is rude\" quietly cost?", a: "Tired, short-tempered last hours, a bad drive home, and dread of the next visit.", bundle: 'pro' },
+        { q: "Which mindset uses the form \"the part I added\"?", a: "Being Known — a belief with real truth in it, taken too far.", bundle: 'pro' },
+        { q: "Why does \"Leaving early is rude\" feel right?", a: "It feels like loyalty — the good son or daughter who stays to the end.", bundle: 'pro' },
+        { q: "What do all four mindsets have in common?", a: "They keep you quiet when one kind sentence would do.", bundle: 'pro' },
+      ]
+    },
+  ],
 };
