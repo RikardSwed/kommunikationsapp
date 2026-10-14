@@ -4914,6 +4914,7 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.60', date: 'October 2026', title: 'Explanations on every settings screen', audience: 'dev', items: ['<strong>Every settings screen explains its rows.</strong> Tap a row\u2019s name in the home settings (developer section included) or the Progress settings and a short explanation folds out, as in the training sheets.', '<strong>Bigger tap area:</strong> the whole stretch from the name up to the switch or button folds the explanation out, with a small gap before the control.', 'Training modes guide: both pages of modes are titled <em>The training modes</em>. Describe Things intro: three strategies a page.', 'About &amp; privacy in the app no longer says the icon font is loaded from jsDelivr (it is built in since v1.29.49).'] },
   { version: 'v1.29.59', date: 'October 2026', title: 'Shorter intros, strategies not moves, no chevrons', audience: 'dev', items: ['<strong>First Strategies intro</strong> is one page: the paragraph about six strategies making one small conversation. The two pages listing the strategies are gone (Rikard: too much text).', '<strong>Training modes guide:</strong> page titles are now <em>The training modes</em> and <em>More training modes</em> (were <em>From the strategy</em> / <em>From another angle</em>). The first page says what the six are: three that train the strategies directly, then Challenges, Mindset and Memorize.', '<strong>\u201cMove\u201d \u2192 \u201cstrategy\u201d</strong> in the guides and pack intros (the modes guide, the training guide\u2019s swipe page, Show Understanding, Exploring a Topic) and in two Extended store descriptions.', '<strong>No chevrons</strong> after the names in the training and handsfree settings or on the topics in <em>Where your time went</em>. Tapping still folds the explanation or the packs out.', '<strong>Describe Things</strong> gets a pack intro, so every freemium pack now has one: one page, the six strategies in a line each, one example.'] },
   { version: 'v1.29.58', date: 'October 2026', title: 'Family Gatherings \u2014 a seasonal pack for the newsletter', audience: 'dev', items: ['New Deckstack Original <strong>Family Gatherings</strong> (<code>familygatherings</code>), under Asking &amp; Saying No and Flow &amp; Transitions, imported at <strong>complete</strong>. Seven strategies: Short Answer, New Topic \u00b7 Light Touch \u00b7 Park the Topic \u00b7 Name the Line Kindly \u00b7 Be Who You Are Now \u00b7 Draw Someone In \u00b7 Leave on Time. check-pack: 0 errors, 0 warnings.', 'Meant for the newsletter (December), together with Tone Boundaries Pt. 1, Job Interview Pt. 1 and New at Work \u2014 unlocked with Apple offer codes once purchases are live (Rikard 2026-10-13). Emotional Calibration is not a newsletter pack.', 'Kartan: all 16 new decks tagged.'] },
   { version: 'v1.29.57', date: 'October 2026', title: 'Career Conversations and Emotional Calibration \u2014 seven new packs', audience: 'dev', items: ['Seven new Deckstack Originals, built after <em>_Plan \u2014 Career Conversations och Emotional Calibration.md</em> (one builder per pack, check-pack: 0 errors, 0 warnings each), imported at <strong>complete</strong> until Rikard has tested them.', '<strong>Networking &amp; Career</strong>: Job Interview \u2014 Pt. 1: The Questions (<code>jobinterview1</code>), Job Interview \u2014 Pt. 2: The Hard Parts (<code>jobinterview2</code>), Talking to Your Manager (<code>talkingtoyourmanager</code>) and New at Work (<code>newatwork</code>). With Networking Pt. 1\u20132 they are the material for the coming Career Conversations programme.', '<strong>Emotions &amp; Regulation</strong>: Emotional Calibration \u2014 Pt. 1: Reading the Shift (<code>emotionalcalibration1</code>, grid, also under Listening &amp; Understanding), Pt. 2: Changing Course (<code>emotionalcalibration2</code>, grid) and Pt. 3: Meeting the Feeling (<code>emotionalcalibration3</code>).', 'GRID_PACKS gains emotionalcalibration1 and emotionalcalibration2. Kartan: all 101 new decks tagged; new family <strong>33 Work</strong> (job-interview, managing-up, new-job) and two new subtypes, <code>listening.read-shift</code> and <code>self-regulation.change-course</code>.'] },
@@ -7242,6 +7243,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
     // v1.29.59 — Describe Things went freemium in v1.29.39 and had no intro.
     // Rikard: every freemium pack gets one, short and visual.
     describethings: {
+      // v1.29.60 — three strategies a page (Rikard: easier to take in).
       pages: [
         {
           title: 'Describe Things',
@@ -7252,6 +7254,12 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Name and Main Details</strong> &mdash; what it is, and what makes it different.</p></div>' +
             '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Size and Shape</strong> &mdash; compared with things everyone knows.</p></div>' +
             '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Material, Texture and Colour</strong> &mdash; what it is made of, and how it looks.</p></div>' +
+            '</div>'
+        },
+        {
+          title: 'Describe Things',
+          html:
+            '<div class="ob-how">' +
             '<div class="ob-how-row"><span class="ob-how-num">4</span><p><strong>Where You Find It</strong> &mdash; where it is, and what is next to it.</p></div>' +
             '<div class="ob-how-row"><span class="ob-how-num">5</span><p><strong>What It Is For</strong> &mdash; what you use it for.</p></div>' +
             '<div class="ob-how-row"><span class="ob-how-num">6</span><p><strong>What It Resembles</strong> &mdash; something they know, and how it differs.</p></div>' +
@@ -8060,7 +8068,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             '</div>'
         },
         {
-          title: 'More training modes',
+          title: 'The training modes',
           html:
             '<div class="gd-modes">' +
             '<div class="gd-mode"><div class="gd-mode-ic"><i class="ti ti-trophy" aria-hidden="true"></i></div>' +

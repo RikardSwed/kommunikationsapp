@@ -534,6 +534,94 @@ function refreshOpenHelp() {
   });
 })();
 
+// ─── MORE SETTINGS EXPLANATIONS (v1.29.60) ────────────────────────────────
+// Rikard: every settings screen should explain its rows, the same way as the
+// training sheets. Keyed by the id of the row's control, or by data-help on a
+// row that has no id'd control. Section headings and the streak radios carry
+// no key and stay plain.
+const MORE_HELP = {
+  // home settings
+  devDarkModeToggle: 'Switches the app to the dark Ember colours. Easier on the eyes in the evening.',
+  inputCounterDefaultToggle: 'Shows which card you are on inside a deck in every mode. You can still turn it off in a mode’s own settings.',
+  exportDataBtn: 'Makes a copy of everything the app has stored on this phone: progress, favourites, notes, settings and purchases. Copy it and keep it somewhere safe. Nothing is uploaded.',
+  importDataBtn: 'Puts a copy made with Export back into the app. It replaces what is in the app now.',
+  replayOnboardingBtn: 'Shows the welcome tour from the first start again.',
+  modeGuideBtn: 'Explains the six training modes and what each one is for.',
+  programGuideBtn: 'Explains what a program is, how Parts and checkpoints work, and what passing a checkpoint gives you.',
+  whatsNewBtn: 'New packs and features, newest first.',
+  aboutBtn: 'What Deckstack is, the privacy policy, and why it is a practice tool and not therapy.',
+  notesExportBtn: 'Saves the notes you have written on cards as one readable text. You write a note by tapping three times on the line under a card.',
+  betaCodeInput: 'If you have been given a code, type it here and tap Redeem. A code can open Pro or certain packs for a limited time.',
+  // developer
+  feedbackModeToggle: 'Shows rating and note controls on cards and decks, for collecting feedback while testing.',
+  accessLevelSuggestToggle: 'Shows controls for suggesting which level a pack or deck should have. Export the suggestions further down.',
+  tagModeToggle: 'Lets you edit the topic tags of packs, from the pack settings. Export the changes with Export tag changes.',
+  devRecentPacksSelect: 'How many recently opened packs the home screen shows under Continue. Everyone else sees one.',
+  clearGrantBtn: 'Removes what access codes have given this phone: a raised level or opened packs.',
+  resetAccessBtn: 'Removes access codes, store codes and Extended purchases in one go, so the app is back to its plain level.',
+  tagExportBtn: 'Exports the tag edits made in tag mode.',
+  alExportBtn: 'Exports the access level suggestions made with Suggest access level.',
+  feedbackExportBtn: 'Exports every rating and note made in feedback mode, as JSON.',
+  clearFeedbackBtn: 'Deletes every rating and note. Export them first if you need them.',
+  devLevelComplete: 'Shows the app as a user on that level sees it. Complete shows everything, including packs that are not released.',
+  packEditor: 'Opens the pack editor in a new tab.',
+  clearExtendedBtn: 'Removes all Extended purchases on this phone, to test the store from the start.',
+  clearCodesBtn: 'Removes the store codes that reveal hidden items in the Extended shop.',
+  resetFirstRunBtn: 'Shows the app as a new user sees it: favourites, Continue, hints, guides, pack intros and the welcome tour start over. Ratings and notes are kept.',
+  exportTagsBtn: 'Exports all pack tags, with your edits, as JSON.',
+  devShowProNudge: 'Shows the Pro upgrade prompt now, without waiting for its timer.',
+  devShowRating: 'Shows the rating prompt now, without waiting for its timer.',
+  devShowFeedback: 'Shows the feedback form that follows a “Not really” on the rating prompt.',
+  devShowWhatsNew: 'Shows What’s new with every entry, including the developer ones.',
+  devShowPackIntro: 'Replays the intro of the pack you opened last.',
+  devShowReco: 'Shows the suggestion for which pack to try next.',
+  devResetPrompts: 'Resets the timers for the Pro prompt and the rating prompt, so both can appear again.',
+  hideDevBtn: 'Hides these developer settings. Tap the version number seven times to bring them back.',
+  // progress settings
+  progTrackingToggle: 'Records how long you train and in which packs, so the Progress screen can show your goals, calendar and streak. Everything stays on this phone.',
+  streakMode: 'Decides which days count for your streak. Reached my daily goal: only days you reach your daily goal. Flipped at least 1 card: any day you train at all. Trained at least … min: days with at least that many minutes.',
+  progWeeklyGoalSelect: 'Your target minutes per week. The bar under This week fills towards it.',
+  progWeeklyCustom: 'Your own weekly goal, in minutes.',
+  progDailyGoalSelect: 'Your target minutes per day. The ring at the top and the days in the calendar fill towards it. With None, the weekly goal divided by seven is used.',
+  progDailyCustom: 'Your own daily goal, in minutes.',
+  progResetBtn: 'Deletes all recorded training time and your streak. It cannot be undone.',
+};
+(function bindMoreSettingsHelp() {
+  ['homeSettingsScreen', 'progressSettingsOverlay'].forEach(rootId => {
+    const root = document.getElementById(rootId);
+    if (!root) return;
+    root.querySelectorAll('.settings-row').forEach(row => {
+      let key = row.dataset.help;
+      if (!key) {
+        const ctl = row.querySelector('input[id], select[id], button[id]');
+        key = ctl && ctl.id;
+      }
+      if (!key || !MORE_HELP[key]) return;
+      const name = row.querySelector('label:first-child');
+      if (!name || name.classList.contains('settings-radio-label')) return;
+      if (!name.querySelector('.settings-name')) {
+        const span = document.createElement('span');
+        span.className = 'settings-name';
+        while (name.firstChild) span.appendChild(name.firstChild);
+        name.appendChild(span);
+      }
+      row.classList.add('settings-row--help');
+      name.addEventListener('click', e => {
+        e.preventDefault();
+        const next = row.nextElementSibling;
+        if (next && next.classList.contains('settings-help')) {
+          next.remove(); row.classList.remove('is-open'); return;
+        }
+        const h = document.createElement('div');
+        h.className = 'settings-help';
+        h.textContent = MORE_HELP[key];
+        row.after(h);
+        row.classList.add('is-open');
+      });
+    });
+  });
+})();
+
 function closeTrainingSettings() {
   document.getElementById('settingsOverlay').classList.remove('open');
   applySettings();
