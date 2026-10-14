@@ -4914,6 +4914,7 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.61', date: 'October 2026', title: 'A guide to grid packs', audience: 'dev', items: ['New guide <strong>Grid packs</strong>, under Guides in the settings of Single Strategy and of the handsfree sheets that have Grid navigation. Six pages with drawings of the grid: strategies across, cards down; swiping along a row with Grid navigation on; down a column; what happens with it off; the reading order in handsfree; where to turn it on.', '<em>The rest of the screen</em> mentions Grid navigation on its Settings page and points to the new guide.', 'First Strategies intro is two pages again: the overview with strategies 1\u20132, then 3\u20136, one line each.'] },
   { version: 'v1.29.60', date: 'October 2026', title: 'Explanations on every settings screen', audience: 'dev', items: ['<strong>Every settings screen explains its rows.</strong> Tap a row\u2019s name in the home settings (developer section included) or the Progress settings and a short explanation folds out, as in the training sheets.', '<strong>Bigger tap area:</strong> the whole stretch from the name up to the switch or button folds the explanation out, with a small gap before the control.', 'Training modes guide: both pages of modes are titled <em>The training modes</em>. Describe Things intro: three strategies a page.', 'About &amp; privacy in the app no longer says the icon font is loaded from jsDelivr (it is built in since v1.29.49).'] },
   { version: 'v1.29.59', date: 'October 2026', title: 'Shorter intros, strategies not moves, no chevrons', audience: 'dev', items: ['<strong>First Strategies intro</strong> is one page: the paragraph about six strategies making one small conversation. The two pages listing the strategies are gone (Rikard: too much text).', '<strong>Training modes guide:</strong> page titles are now <em>The training modes</em> and <em>More training modes</em> (were <em>From the strategy</em> / <em>From another angle</em>). The first page says what the six are: three that train the strategies directly, then Challenges, Mindset and Memorize.', '<strong>\u201cMove\u201d \u2192 \u201cstrategy\u201d</strong> in the guides and pack intros (the modes guide, the training guide\u2019s swipe page, Show Understanding, Exploring a Topic) and in two Extended store descriptions.', '<strong>No chevrons</strong> after the names in the training and handsfree settings or on the topics in <em>Where your time went</em>. Tapping still folds the explanation or the packs out.', '<strong>Describe Things</strong> gets a pack intro, so every freemium pack now has one: one page, the six strategies in a line each, one example.'] },
   { version: 'v1.29.58', date: 'October 2026', title: 'Family Gatherings \u2014 a seasonal pack for the newsletter', audience: 'dev', items: ['New Deckstack Original <strong>Family Gatherings</strong> (<code>familygatherings</code>), under Asking &amp; Saying No and Flow &amp; Transitions, imported at <strong>complete</strong>. Seven strategies: Short Answer, New Topic \u00b7 Light Touch \u00b7 Park the Topic \u00b7 Name the Line Kindly \u00b7 Be Who You Are Now \u00b7 Draw Someone In \u00b7 Leave on Time. check-pack: 0 errors, 0 warnings.', 'Meant for the newsletter (December), together with Tone Boundaries Pt. 1, Job Interview Pt. 1 and New at Work \u2014 unlocked with Apple offer codes once purchases are live (Rikard 2026-10-13). Emotional Calibration is not a newsletter pack.', 'Kartan: all 16 new decks tagged.'] },
@@ -7227,15 +7228,29 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
     // tre, med tva rader var \u2014 nog for att kanna igen ett namn nar det
     // dyker upp pa nasta skarm, och inte mer an sa.
     firststrategies: {
-      // v1.29.59 — Rikard: too much text. One page, the middle paragraph
-      // only; the two pages listing the strategies are gone. The names are
-      // met one at a time in training anyway.
+      // v1.29.61 — two pages (Rikard: one was too short): the overview and
+      // two strategies, then the other four. Same look as Describe Things.
       pages: [
         {
           title: 'First Strategies',
           html:
             '<p class="ob-text">This pack holds six strategies. Together they make one small ' +
-            'conversation, from the first remark to a good ending.</p>'
+            'conversation, from the first remark to a good ending.</p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Opening Statement</strong> &mdash; say something instead of asking something.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Follow the Thread</strong> &mdash; take one word from what they said and go into it.</p></div>' +
+            '</div>'
+        },
+        {
+          title: 'First Strategies',
+          html:
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Say It Back</strong> &mdash; show you understood before you add your own.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">4</span><p><strong>Ask Plainly</strong> &mdash; say what you want in one sentence.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">5</span><p><strong>A Friendly No</strong> &mdash; decline warmly and clearly at the same time.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">6</span><p><strong>Answer With a Hook</strong> &mdash; leave something in your answer for them to pick up.</p></div>' +
+            '</div>' +
+            '<p class="ob-text ob-text--dim">Start anywhere. You will meet them one at a time.</p>'
         }
       ]
     },
@@ -7915,6 +7930,32 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
   const label = (x, y, t, cls) =>
     '<text class="' + (cls || 'gd-label') + '" x="' + x + '" y="' + y + '" text-anchor="middle">' + t + '</text>';
 
+  // v1.29.61 — the grid: strategies across, situations down.
+  // hi: 'row' | 'col' | 'jump' | 'read' — which movement to draw.
+  const grid = hi => {
+    const X = [62, 120, 178], Y = [30, 68, 106], W = 46, H = 30;
+    let g = label(120, 12, 'STRATEGIES', 'gd-muted') + label(22, 72, 'CARDS', 'gd-muted');
+    ['A', 'B', 'C'].forEach((t, i) => { g += label(X[i] + W / 2, 25, t); });
+    [1, 2, 3].forEach((t, i) => { g += label(48, Y[i] + H / 2 + 3, String(t)); });
+    Y.forEach((y, r) => X.forEach((x, c) => {
+      const on = (hi === 'row' && r === 1) || (hi === 'col' && c === 0) ||
+                 (hi === 'jump' && ((r === 1 && c === 0) || (r === 0 && c === 1)));
+      g += '<rect class="gd-card" x="' + x + '" y="' + y + '" width="' + W + '" height="' + H + '" rx="6"/>' +
+           '<rect class="gd-line' + (on ? ' gd-line--strong' : '') + '" x="' + (x + 8) + '" y="' + (y + 13) + '" width="' + (W - 18) + '" height="4" rx="2"/>';
+      if (on) g += '<rect class="gd-ring" x="' + (x - 3) + '" y="' + (y - 3) + '" width="' + (W + 6) + '" height="' + (H + 6) + '" rx="8"/>';
+    }));
+    const hArrow = (y) => arrow(X[0] + W + 1, y, X[1] - 1, y, 'M' + (X[1] - 6) + ' ' + (y - 4) + ' L' + (X[1] - 1) + ' ' + y + ' L' + (X[1] - 6) + ' ' + (y + 4)) +
+                          arrow(X[1] + W + 1, y, X[2] - 1, y, 'M' + (X[2] - 6) + ' ' + (y - 4) + ' L' + (X[2] - 1) + ' ' + y + ' L' + (X[2] - 6) + ' ' + (y + 4));
+    if (hi === 'row') g += hArrow(Y[1] + H / 2);
+    if (hi === 'col') g += arrow(X[0] + W / 2, Y[0] + H + 1, X[0] + W / 2, Y[1] - 1, 'M' + (X[0] + W / 2 - 4) + ' ' + (Y[1] - 6) + ' L' + (X[0] + W / 2) + ' ' + (Y[1] - 1) + ' L' + (X[0] + W / 2 + 4) + ' ' + (Y[1] - 6)) +
+                           arrow(X[0] + W / 2, Y[1] + H + 1, X[0] + W / 2, Y[2] - 1, 'M' + (X[0] + W / 2 - 4) + ' ' + (Y[2] - 6) + ' L' + (X[0] + W / 2) + ' ' + (Y[2] - 1) + ' L' + (X[0] + W / 2 + 4) + ' ' + (Y[2] - 6));
+    if (hi === 'jump') g += '<path class="gd-arrow" d="M' + (X[0] + W + 1) + ' ' + (Y[1] + H / 2) + ' C ' + (X[0] + W + 12) + ' ' + (Y[1] + H / 2) + ', ' + (X[1] - 12) + ' ' + (Y[0] + H / 2) + ', ' + (X[1] - 1) + ' ' + (Y[0] + H / 2) + '"/>' +
+                           '<path class="gd-arrow" d="M' + (X[1] - 7) + ' ' + (Y[0] + H / 2 - 4) + ' L' + (X[1] - 1) + ' ' + (Y[0] + H / 2) + ' L' + (X[1] - 7) + ' ' + (Y[0] + H / 2 + 4) + '"/>';
+    if (hi === 'read') { g += hArrow(Y[0] + H / 2) + hArrow(Y[1] + H / 2) +
+                          '<path class="gd-arrow" d="M' + (X[2] + W / 2) + ' ' + (Y[0] + H + 1) + ' C ' + (X[2] + W / 2) + ' ' + (Y[0] + H + 6) + ', ' + (X[0] + W / 2) + ' ' + (Y[1] - 8) + ', ' + (X[0] + W / 2) + ' ' + (Y[1] - 1) + '" opacity=".5"/>'; }
+    return svg(150, g);
+  };
+
   const ART = {
     // tapping the deck name above the card opens its description
     deckName: () => svg(150,
@@ -8197,6 +8238,64 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
       ],
     },
 
+    // v1.29.61 — grid packs, explained with pictures. Reached from the
+    // settings of Single Strategy and of the handsfree sheets that have
+    // Grid navigation (Rikard 2026-10-14).
+    'grid-packs': {
+      title: 'Grid packs',
+      pages: [
+        {
+          title: 'A pack built as a grid',
+          html:
+            grid('') +
+            cap('Strategies across, cards down') +
+            P('In a grid pack, card 1 is the <strong>same situation</strong> in every strategy. Only the answer changes. Card 2 is the next situation, and so on.') +
+            Pdim('Grid packs are marked <strong>Grid</strong> in the library.'),
+        },
+        {
+          title: 'Sideways: same situation',
+          html:
+            grid('row') +
+            cap('Grid navigation on: swipe right along the row') +
+            P('With <strong>Grid navigation</strong> on, swiping sideways keeps the card number. Card 2 in strategy A takes you to card 2 in strategy B.') +
+            Pdim('You meet one situation answered several ways. That is how you learn which answer fits.'),
+        },
+        {
+          title: 'Down: new situation',
+          html:
+            grid('col') +
+            cap('Swipe down the column') +
+            P('Swiping down works as always: the same strategy, tried on the next situation.') +
+            Pdim('Down to practise one strategy. Sideways to compare them.'),
+        },
+        {
+          title: 'With it off',
+          html:
+            grid('jump') +
+            cap('Grid navigation off: back to card 1') +
+            P('With Grid navigation off, a grid pack works like any other. Swiping sideways starts the next strategy from its <strong>first card</strong>.') +
+            Pdim('Both ways work. Grid navigation just keeps the situation in place.'),
+        },
+        {
+          title: 'In handsfree',
+          html:
+            grid('read') +
+            cap('Row by row') +
+            P('In handsfree, Grid navigation changes the reading order: card 1 in every strategy, then card 2, and so on.') +
+            rows([
+              '<strong>Shuffle inputs</strong> mixes whole rows, so a row stays one situation.',
+              '<strong>Loop</strong> repeats the current row.',
+            ]),
+        },
+        {
+          title: 'Where to turn it on',
+          html:
+            P('<strong>Grid navigation</strong> is in the settings of Single Strategy, Memorize and Mindset, and in their handsfree settings. One switch covers both swiping and handsfree.') +
+            Pdim('Grid navigation is part of Pro.'),
+        },
+      ],
+    },
+
     'training-more': {
       title: 'The rest of the screen',
       pages: [
@@ -8233,8 +8332,9 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
               '<strong>Guide text</strong> &mdash; the small framing line above the card.',
               '<strong>Hints</strong> &mdash; the line under the card. Turning it off keeps the three-tap for notes.',
               '<strong>Progress bar</strong> &mdash; how far through the pack you are.',
+              '<strong>Grid navigation</strong> &mdash; in grid packs, swiping sideways keeps the same situation. The <strong>Grid packs</strong> guide shows how.',
             ]) +
-            Pdim('The same panel has a button for each of these two guides.'),
+            Pdim('The same panel has a button for each guide.'),
         },
       ],
     },
@@ -8460,12 +8560,12 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
   // Injected rather than written into index.html seven times: the standard
   // panel plus six handsfree ones, and a new mode would need an eighth.
   const PANELS = [
-    { overlay: 'settingsOverlay',       basics: 'training-basics',  more: 'training-more'  },
-    { overlay: 'hfSettingsOverlay',      basics: 'handsfree-basics', more: 'handsfree-more' },
-    { overlay: 'hfMemSettingsOverlay',   basics: 'handsfree-basics', more: 'handsfree-more' },
+    { overlay: 'settingsOverlay',       basics: 'training-basics',  more: 'training-more', grid: 'grid-packs' },
+    { overlay: 'hfSettingsOverlay',      basics: 'handsfree-basics', more: 'handsfree-more', grid: 'grid-packs' },
+    { overlay: 'hfMemSettingsOverlay',   basics: 'handsfree-basics', more: 'handsfree-more', grid: 'grid-packs' },
     { overlay: 'hfChallSettingsOverlay', basics: 'handsfree-basics', more: 'handsfree-more' },
     { overlay: 'hfFlowSettingsOverlay',  basics: 'handsfree-basics', more: 'handsfree-more' },
-    { overlay: 'hfMindSettingsOverlay',  basics: 'handsfree-basics', more: 'handsfree-more' },
+    { overlay: 'hfMindSettingsOverlay',  basics: 'handsfree-basics', more: 'handsfree-more', grid: 'grid-packs' },
     { overlay: 'hfCollSettingsOverlay',  basics: 'handsfree-basics', more: 'handsfree-more' },
   ];
 
@@ -8503,5 +8603,6 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
     add(head);
     add(mk(GUIDES[cfg.basics].title, cfg.basics));
     add(mk(GUIDES[cfg.more].title, cfg.more));
+    if (cfg.grid) add(mk(GUIDES[cfg.grid].title, cfg.grid));
   });
 })();
