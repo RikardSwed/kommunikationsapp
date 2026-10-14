@@ -23872,4 +23872,1494 @@ const memorizeCollections = {
       ]
     },
   ],
+  makingfriends1: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for turning a nice chat into a friend:\n\n1. Say You Liked It\n2. Suggest Something Specific\n3. Make It Easy to Say No\n4. Pick Up a Thread\n5. Ask Again\n6. Bring Them In\n\nFour for the moment you are together, two for the days after.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Say You Liked It, Suggest Something Specific, Make It Easy to Say No, Pick Up a Thread, Ask Again, and Bring Them In.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Four for the moment you are together, and two for the days after, when someone has to get in touch.", bundle: 'free' },
+        { q: "What does every card in this pack train?", a: "A line that takes you one step from a nice chat towards a real plan.", bundle: 'free' },
+        { q: "What is the most common reason a nice chat never becomes a friendship?", a: "Both people wait for the other to suggest something.", bundle: 'free' },
+        { q: "What should a good invitation always have?", a: "A day and a place, and a light way out.", bundle: 'free' },
+        { q: "What is the liking gap?", a: "After a conversation, we tend to underestimate how much the other person liked talking to us.", bundle: 'pro' },
+        { q: "What does Jeffrey Hall's research say friendships are made of?", a: "Time spent together — and that time has to be planned by someone.", bundle: 'pro' },
+        { q: "What does Marisa Franco suggest in Platonic?", a: "Assume people like you, take the first step, and be the one who reaches out again.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say You Liked It",
+      description: "",
+      cards: [
+        { q: "What is Say You Liked It?", a: "Saying plainly, before you part, that you enjoyed talking to them.", bundle: 'free' },
+        { q: "How does Say You Liked It sound?", a: "\"I really enjoyed this — I'm glad we got chatting.\"", bundle: 'free' },
+        { q: "When is Say You Liked It the right one?", a: "At the end of a good conversation, while you are still there.", bundle: 'free' },
+        { q: "Why does Say You Liked It work?", a: "Because of the liking gap: they are probably unsure how much you liked talking to them.", bundle: 'free' },
+        { q: "What are the three ways to say it?", a: "The plain version, the specific version, and the version with a door.", bundle: 'free' },
+        { q: "When does Say You Liked It go wrong?", a: "When it is thought on the bus home instead of said out loud.", bundle: 'pro' },
+        { q: "What is Say You Liked It better than, and why?", a: "A polite \"nice to meet you\". It tells them it was good for you, which makes a plan feel natural.", bundle: 'pro' },
+        { q: "Which strategy often follows Say You Liked It?", a: "Suggest Something Specific — while the good feeling is still there.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Suggest Something Specific",
+      description: "",
+      cards: [
+        { q: "What is Suggest Something Specific?", a: "Turning \"we should hang out sometime\" into one plan with what, where and when.", bundle: 'free' },
+        { q: "How does Suggest Something Specific sound?", a: "\"I'm going to the climbing wall on Saturday morning. Want to come?\"", bundle: 'free' },
+        { q: "When is Suggest Something Specific the right one?", a: "When there is a \"sometime\" in the air and nobody has named a day.", bundle: 'free' },
+        { q: "Why does Suggest Something Specific work?", a: "A real plan can be answered yes or no. \"Sometime\" asks nobody to do anything.", bundle: 'free' },
+        { q: "What are the three ways to make it specific?", a: "Join it to something you are doing anyway, name the day and offer two choices, or tie it to what you talked about.", bundle: 'free' },
+        { q: "When does Suggest Something Specific go wrong?", a: "When the plan is too big. A coffee is easier to say yes to than a whole day.", bundle: 'pro' },
+        { q: "What is Suggest Something Specific better than, and why?", a: "\"Yes, definitely, let's!\" It feels like a plan, but nobody has picked a day.", bundle: 'pro' },
+        { q: "How does Jeffrey Hall's research support it?", a: "Friends are made from time together, and time only happens when it is in someone's diary.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Make It Easy to Say No",
+      description: "",
+      cards: [
+        { q: "What is Make It Easy to Say No?", a: "Adding a light, honest way out to your invitation.", bundle: 'free' },
+        { q: "How does Make It Easy to Say No sound?", a: "\"Want to come? No pressure at all if it doesn't suit.\"", bundle: 'free' },
+        { q: "When is Make It Easy to Say No the right one?", a: "When they might feel cornered — they hesitate, they do not know you well, or the plan might not be their thing.", bundle: 'free' },
+        { q: "Why does Make It Easy to Say No work?", a: "A person who can refuse easily can also accept easily.", bundle: 'free' },
+        { q: "What are the three kinds of exit?", a: "The plain exit, the open door, and the not-your-thing exit.", bundle: 'free' },
+        { q: "When does Make It Easy to Say No go wrong?", a: "When it becomes a long apology for asking, which makes the invitation sound like a burden.", bundle: 'pro' },
+        { q: "What is Make It Easy to Say No better than, and why?", a: "An invitation with no way out, which can feel like a test to someone who does not know you yet.", bundle: 'pro' },
+        { q: "How does the exit protect you, too?", a: "A no to Saturday is then only about Saturday.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Pick Up a Thread",
+      description: "",
+      cards: [
+        { q: "What is Pick Up a Thread?", a: "Getting in touch about something they told you.", bundle: 'free' },
+        { q: "How does Pick Up a Thread sound?", a: "\"You mentioned that ramen place — I finally tried it. You were right.\"", bundle: 'free' },
+        { q: "When is Pick Up a Thread the right one?", a: "In the days after you met, when you want to get in touch but need a reason.", bundle: 'free' },
+        { q: "Why does Pick Up a Thread work?", a: "It shows you were listening, and it gives your message a ready-made reason.", bundle: 'free' },
+        { q: "What are the three kinds of thread?", a: "Their tip, their news, and their interest.", bundle: 'free' },
+        { q: "When does Pick Up a Thread go wrong?", a: "When the message is all about you, and the thread is only an excuse.", bundle: 'pro' },
+        { q: "What is Pick Up a Thread better than, and why?", a: "A cold \"hey, how are you?\", which gives them nothing easy to answer.", bundle: 'pro' },
+        { q: "Which strategy often follows Pick Up a Thread?", a: "Suggest Something Specific — once they answer warmly, name a plan.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask Again",
+      description: "",
+      cards: [
+        { q: "What is Ask Again?", a: "After a soft no or no reply, asking one more time, lightly.", bundle: 'free' },
+        { q: "How does Ask Again sound?", a: "\"No worries about Saturday. Next week instead?\"", bundle: 'free' },
+        { q: "When is Ask Again the right one?", a: "After a no that was about the day, or a message that may have got lost.", bundle: 'free' },
+        { q: "Why does Ask Again work?", a: "Most first noes are about the day, not about you. A cheerful second try shows the first no cost nothing.", bundle: 'free' },
+        { q: "What are the three ways to ask again?", a: "A new day, a smaller plan, and the gentle nudge after silence.", bundle: 'free' },
+        { q: "When should you stop asking again?", a: "After a second no with no other day offered, or more silence. Let it rest and leave the door open.", bundle: 'pro' },
+        { q: "What is Ask Again better than, and why?", a: "Taking the first no as final. Many friendships start on the second try.", bundle: 'pro' },
+        { q: "What does Marisa Franco say that supports Ask Again?", a: "Be the one who reaches out again — friendships grow where someone keeps the door open.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Bring Them In",
+      description: "",
+      cards: [
+        { q: "What is Bring Them In?", a: "Inviting them to something that is already happening.", bundle: 'free' },
+        { q: "How does Bring Them In sound?", a: "\"A few of us play quiz on Thursdays. Join us?\"", bundle: 'free' },
+        { q: "When is Bring Them In the right one?", a: "When you already have something regular, or when a one-to-one plan feels like too much.", bundle: 'free' },
+        { q: "Why does Bring Them In work?", a: "It is the lowest-pressure invitation: other people are there, and the plan would happen anyway.", bundle: 'free' },
+        { q: "What are the three ways in?", a: "The regular thing, the one-off, and the introduction.", bundle: 'free' },
+        { q: "When does Bring Them In go wrong?", a: "When it sounds like you are just filling a seat, rather than wanting them there.", bundle: 'pro' },
+        { q: "What is Bring Them In better than, and why?", a: "Waiting until you can find an evening alone together. A regular thing gives time together without planning.", bundle: 'pro' },
+        { q: "How does Bring Them In fit Jeffrey Hall's research?", a: "Friendships need regular time together, and a weekly group gives that for free.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Make the Invitation** — you are together: say you liked it, name a plan, give an exit, or bring them in?\n• **Reach Out Again** — you are apart: pick up a thread, ask again, or offer the group?\n• **All Six Strategies** — everything mixed, with no warning about which moment you are in\n\nOne question decides nearly all of it: are you still together, or deciding whether to get in touch?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Make the Invitation, Reach Out Again, and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Make the Invitation?", a: "What would make it easiest for them to say yes right now?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Make the Invitation?", a: "Saying you liked it and adding \"we should do this again sometime\", with no day.", bundle: 'pro' },
+        { q: "They say \"we should hang out sometime\". Which strategy?", a: "Suggest Something Specific.", bundle: 'pro' },
+        { q: "What is the question that decides Reach Out Again?", a: "Have I already invited them?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Reach Out Again?", a: "Waiting for them to get in touch first.", bundle: 'pro' },
+        { q: "One-to-one plans keep not working, but you have a weekly quiz. Which strategy?", a: "Bring Them In.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in All Six Strategies?", a: "The hopeful wait — enjoying the chat and hoping they make the first step.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The First Plan** — Say You Liked It → Suggest Something Specific → Make It Easy to Say No\n2. **The Second Try** — Pick Up a Thread → Suggest Something Specific → Ask Again\n3. **Into the Group** — Say You Liked It → Bring Them In → Make It Easy to Say No\n\nIn each one, the warm part comes first and the way out comes last.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The First Plan, The Second Try, and Into the Group.", bundle: 'pro' },
+        { q: "What is the order in The First Plan?", a: "Say You Liked It, Suggest Something Specific, Make It Easy to Say No.", bundle: 'pro' },
+        { q: "Why does The First Plan start with Say You Liked It?", a: "The warm line makes the plan feel natural instead of sudden.", bundle: 'pro' },
+        { q: "What is the order in The Second Try?", a: "Pick Up a Thread, Suggest Something Specific, Ask Again.", bundle: 'pro' },
+        { q: "Why does The Second Try start with a thread?", a: "It gives you a reason to get in touch, so the plan does not arrive out of nowhere.", bundle: 'pro' },
+        { q: "What is the order in Into the Group?", a: "Say You Liked It, Bring Them In, Make It Easy to Say No.", bundle: 'pro' },
+        { q: "Why does Into the Group start with the warm line?", a: "So the invitation sounds like a welcome, not like filling a seat.", bundle: 'pro' },
+        { q: "What is the usual mistake in The First Plan?", a: "The warm line, then \"we should do this again sometime\", and no plan.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack, and what goes wrong in each:\n\n• **We Should Hang Out Sometime** — \"yes, definitely!\" with no day\n• **They Said No** — never asking again, or pushing the same plan\n• **No Reply** — reading silence as a verdict, or sending three anxious messages\n• **The Work Friend** — waiting for an excuse that never comes\n• **New in Town** — waiting to be invited by people who are not looking\n\nEach one is a different reason the first plan never gets made.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "We Should Hang Out Sometime, They Said No, No Reply, The Work Friend, and New in Town.", bundle: 'pro' },
+        { q: "What is the main strategy for We Should Hang Out Sometime?", a: "Suggest Something Specific — turn \"sometime\" into a day and a place.", bundle: 'pro' },
+        { q: "Which strategy fits a soft no?", a: "Ask Again — a new day or a smaller plan, offered once.", bundle: 'pro' },
+        { q: "What should you avoid after a no?", a: "Asking why.", bundle: 'pro' },
+        { q: "What is the main strategy for No Reply?", a: "Ask Again — one light nudge that assumes the message got lost.", bundle: 'pro' },
+        { q: "What should you avoid with No Reply?", a: "\"Did I do something wrong?\"", bundle: 'pro' },
+        { q: "What should you avoid with The Work Friend?", a: "Making it sound like a work event.", bundle: 'pro' },
+        { q: "Why does being New in Town make asking easier, not harder?", a: "Being new is the easiest reason in the world to ask someone to show you round.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Initiative** — if they wanted to be friends, they'd ask me\n• **Neediness** — if I ask, I'll seem desperate\n• **Full Lives** — they already have enough friends\n• **Spontaneity** — friendship should just happen naturally\n\nAll four have the same result: everybody waits, and nobody asks.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Initiative, Neediness, Full Lives, and Spontaneity.", bundle: 'pro' },
+        { q: "What is true instead of \"if they wanted to, they'd ask me\"?", a: "They are most likely waiting for you, for the same reasons.", bundle: 'pro' },
+        { q: "What is true instead of \"I'll seem desperate\"?", a: "A clear, light invitation sounds warm and confident.", bundle: 'pro' },
+        { q: "Why does asking feel riskier than it is?", a: "The liking gap: we underestimate how much they liked talking to us.", bundle: 'pro' },
+        { q: "What part of \"they already have enough friends\" is true, and what gets added?", a: "They probably have a full life. What gets added is \"so there is no room for me\".", bundle: 'pro' },
+        { q: "What does \"it should happen naturally\" quietly cost?", a: "Months of nice chats that never become anything.", bundle: 'pro' },
+        { q: "Why did friendship seem to happen naturally at school?", a: "School did the planning for us. We saw the same people every day.", bundle: 'pro' },
+        { q: "What do all four mindsets have in common?", a: "They make you wait for the other person to go first.", bundle: 'pro' },
+      ]
+    },
+  ],
+  makingfriends2: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for keeping a friendship alive once it exists:\n\n1. Check In for No Reason\n2. Remember the Detail\n3. Make It a Habit\n4. Share Something Real\n5. Show Up for the Big Day\n6. Mend a Drift\n\nThree keep you in touch, two bring you closer, and one brings you back.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Check In for No Reason, Remember the Detail, Make It a Habit, Share Something Real, Show Up for the Big Day, and Mend a Drift.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Three keep you in touch, two bring you closer, and one brings you back after a drift.", bundle: 'free' },
+        { q: "Why do most adult friendships end?", a: "Not with a quarrel. They fade, because nobody gets in touch between the big occasions.", bundle: 'free' },
+        { q: "What does Jeffrey Hall's research say friendships need?", a: "Time together — many hours of it, not just a few good evenings.", bundle: 'free' },
+        { q: "What is the liking gap?", a: "We tend to underestimate how much other people enjoyed our company.", bundle: 'free' },
+        { q: "What is Marisa Franco's advice in Platonic?", a: "Assume people like you, take the first step, and be the one who reaches out again.", bundle: 'pro' },
+        { q: "How does this pack relate to Pt. 1 and Pt. 3?", a: "Pt. 1 takes a new acquaintance to the first plan. Pt. 2 keeps the friendship going. Pt. 3 handles the hard parts.", bundle: 'pro' },
+        { q: "What is the most common mistake in keeping a friendship going?", a: "Waiting for a good enough reason to get in touch, until the silence needs mending.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Check In for No Reason",
+      description: "",
+      cards: [
+        { q: "What is Check In for No Reason?", a: "Getting in touch with nothing to arrange and nothing to ask for, just because they crossed your mind.", bundle: 'free' },
+        { q: "How does Check In for No Reason sound?", a: "\"Saw this and thought of you. How's the new job?\"", bundle: 'free' },
+        { q: "When is Check In for No Reason the right one?", a: "Between the big occasions, when nothing is happening and you want them to know they are on your mind.", bundle: 'free' },
+        { q: "Why does Check In for No Reason work?", a: "Friendships fade when nobody gets in touch. A message with no agenda keeps you in their life and costs them almost nothing to answer.", bundle: 'free' },
+        { q: "What are the three ways to check in?", a: "Something that reminded you, a question about their life, and just hello.", bundle: 'free' },
+        { q: "When does Check In for No Reason go wrong?", a: "When it asks for a long reply. Then the check-in has turned into a task.", bundle: 'pro' },
+        { q: "What is Check In for No Reason better than, and why?", a: "Waiting for a good reason to get in touch. The reason rarely comes, and the gap keeps growing.", bundle: 'pro' },
+        { q: "Whose advice is behind Check In for No Reason?", a: "Marisa Franco's, in Platonic: be the one who reaches out, and then reach out again.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Remember the Detail",
+      description: "",
+      cards: [
+        { q: "What is Remember the Detail?", a: "Asking about something they told you last time.", bundle: 'free' },
+        { q: "How does Remember the Detail sound?", a: "\"How did your mum's operation go?\"", bundle: 'free' },
+        { q: "When is Remember the Detail the right one?", a: "When they shared something last time — news, a worry, something coming up.", bundle: 'free' },
+        { q: "Why does Remember the Detail work?", a: "It shows they were heard, and that their life matters to you between meetings.", bundle: 'free' },
+        { q: "What are the three ways to bring a detail back?", a: "Ask how it went, ask how it is going, and wish them luck before.", bundle: 'free' },
+        { q: "What can you do if your memory is not good?", a: "Make a quick note in your phone after you meet.", bundle: 'pro' },
+        { q: "What is Remember the Detail better than, and why?", a: "A general \"how are you?\", which anyone could ask and which leads to small talk.", bundle: 'pro' },
+        { q: "Which strategy often follows Remember the Detail?", a: "Make It a Habit — once the conversation flows, make the next one regular.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Make It a Habit",
+      description: "",
+      cards: [
+        { q: "What is Make It a Habit?", a: "Turning meeting up into something that repeats, so it no longer has to be arranged from scratch.", bundle: 'free' },
+        { q: "How does Make It a Habit sound?", a: "\"First Sunday of the month — walk and coffee?\"", bundle: 'free' },
+        { q: "When is Make It a Habit the right one?", a: "When you keep saying \"we should do this more often\", or meetings only happen by luck.", bundle: 'free' },
+        { q: "Why does Make It a Habit work?", a: "Friendships need many hours together, and a habit gives you those hours without anyone having to ask each time.", bundle: 'free' },
+        { q: "What are the three ways to make it a habit?", a: "A fixed day, booking the next one before you leave, and joining it to something you both do anyway.", bundle: 'free' },
+        { q: "When does Make It a Habit go wrong?", a: "When the habit suits your life but not theirs, like late dinners for a parent of small children.", bundle: 'pro' },
+        { q: "What is Make It a Habit better than, and why?", a: "\"We must do this more often\" — a promise with no date, which rarely happens.", bundle: 'pro' },
+        { q: "Whose research supports Make It a Habit?", a: "Jeffrey Hall's, on how friendships grow with time spent together.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Share Something Real",
+      description: "",
+      cards: [
+        { q: "What is Share Something Real?", a: "Telling a friend something a little more personal than usual — one step deeper, not the whole story.", bundle: 'free' },
+        { q: "How does Share Something Real sound?", a: "\"Honestly, I've been finding this year harder than I let on.\"", bundle: 'free' },
+        { q: "When is Share Something Real the right one?", a: "When a friend asks how you are and the honest answer is more than \"fine, busy\".", bundle: 'free' },
+        { q: "Why does Share Something Real work?", a: "Closeness grows in steps. Your step shows trust and makes it easier for them to take one too.", bundle: 'free' },
+        { q: "What are the three steps, from light to deeper?", a: "A real feeling about something ordinary, something you usually keep quiet, and something that matters, said plainly and briefly.", bundle: 'free' },
+        { q: "When does Share Something Real go wrong?", a: "When it becomes oversharing — too much at once, so they are left holding more than they were ready for.", bundle: 'pro' },
+        { q: "What is Share Something Real better than, and why?", a: "Always saying \"fine\". It keeps the friendship at the surface, and nobody really knows how you are.", bundle: 'pro' },
+        { q: "How do you know whether to take another step?", a: "Their answer tells you. If they meet you, you can go a little further.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Show Up for the Big Day",
+      description: "",
+      cards: [
+        { q: "What is Show Up for the Big Day?", a: "Being there, in words or in person, on the days that matter to them.", bundle: 'free' },
+        { q: "How does Show Up for the Big Day sound?", a: "\"I know Friday's the anniversary. Thinking of you.\"", bundle: 'free' },
+        { q: "When is Show Up for the Big Day the right one?", a: "On birthdays, a new baby, moving day, an exam — and the hard days, like an anniversary or a hospital result.", bundle: 'free' },
+        { q: "Why does Show Up for the Big Day work?", a: "People remember who turned up, especially on a hard day when everyone else has moved on.", bundle: 'free' },
+        { q: "What are the three kinds of big day?", a: "The happy day, the hard day, and the practical day.", bundle: 'free' },
+        { q: "When does Show Up for the Big Day go wrong?", a: "When you wait for the perfect words and the day passes.", bundle: 'pro' },
+        { q: "What is Show Up for the Big Day better than, and why?", a: "Saying nothing for fear of reminding them. They have not forgotten, and a message shows you have not either.", bundle: 'pro' },
+        { q: "Which strategy often follows Show Up for the Big Day?", a: "Remember the Detail — weeks later, ask how they are doing with it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mend a Drift",
+      description: "",
+      cards: [
+        { q: "What is Mend a Drift?", a: "Saying plainly that you have drifted apart, and reaching out anyway.", bundle: 'free' },
+        { q: "How does Mend a Drift sound?", a: "\"I've been bad at keeping in touch, and I miss you.\"", bundle: 'free' },
+        { q: "When is Mend a Drift the right one?", a: "When a friendship has faded through silence, not through a fight.", bundle: 'free' },
+        { q: "Why does Mend a Drift work?", a: "Both of you have noticed the silence. Naming it takes the awkwardness out, and an invitation gives the friendship somewhere to go.", bundle: 'free' },
+        { q: "What are the three ways to mend a drift?", a: "Own your part, say you miss them, and add an invitation.", bundle: 'free' },
+        { q: "When does Mend a Drift go wrong?", a: "When it turns into a long apology that explains every reason you went quiet.", bundle: 'pro' },
+        { q: "What is Mend a Drift better than, and why?", a: "A breezy \"hey!\" as if nothing happened. The silence is still there, and nothing invites the next step.", bundle: 'pro' },
+        { q: "How does the liking gap help with Mend a Drift?", a: "We underestimate how much others like us, so the friend is likely to be gladder to hear from you than you fear.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Keep in Touch** — staying in their life: a hello, a follow-up, or a regular plan?\n• **Go Deeper** — getting closer: follow up on their news, mark their day, or share something yourself?\n• **All Six Strategies** — everything mixed, with no warning about what the friendship needs\n\nOne question decides nearly all of it: what does this friendship need right now?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Keep in Touch, Go Deeper, and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Keep in Touch?", a: "What is this contact for — saying hello, following up on their news, or making sure the next meeting happens?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Keep in Touch?", a: "A general \"how are you?\" when you know a detail, or another \"we should meet up soon\" instead of a plan.", bundle: 'pro' },
+        { q: "You keep meeting a friend only by luck. Which strategy?", a: "Make It a Habit.", bundle: 'pro' },
+        { q: "What is the question that decides Go Deeper?", a: "Is this moment about them, or is it my turn?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Go Deeper?", a: "Answering their big moment with your own story.", bundle: 'pro' },
+        { q: "A friend has opened up and asked how you are. Which strategy?", a: "Share Something Real — take one step yourself.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in All Six Strategies?", a: "Waiting for the perfect reason to get in touch, until the gap needs mending.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Way Back** — Mend a Drift → Remember the Detail → Make It a Habit\n2. **Check In, Open Up, Repeat** — Check In for No Reason → Share Something Real → Make It a Habit\n3. **The Friend Who Stays** — Show Up for the Big Day → Remember the Detail → Share Something Real\n\nIn each one, the first step opens the door, and the last makes sure it stays open.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Way Back; Check In, Open Up, Repeat; and The Friend Who Stays.", bundle: 'pro' },
+        { q: "What is the order in The Way Back?", a: "Mend a Drift, Remember the Detail, Make It a Habit.", bundle: 'pro' },
+        { q: "Why does The Way Back start by naming the silence?", a: "It clears the awkwardness, so the question that follows sounds warm, not strange.", bundle: 'pro' },
+        { q: "What is the order in Check In, Open Up, Repeat?", a: "Check In for No Reason, Share Something Real, Make It a Habit.", bundle: 'pro' },
+        { q: "Why does sharing come second in Check In, Open Up, Repeat?", a: "It comes when they ask. Offered out of nowhere, it can feel like a weight.", bundle: 'pro' },
+        { q: "What is the order in The Friend Who Stays?", a: "Show Up for the Big Day, Remember the Detail, Share Something Real.", bundle: 'pro' },
+        { q: "Why does sharing come last in The Friend Who Stays?", a: "Only when they ask about you — so the friendship goes both ways without taking over their moment.", bundle: 'pro' },
+        { q: "What is the usual mistake in The Way Back?", a: "A breezy \"hey!\", then a vague \"we should meet up\", and then another year.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The four challenges to master in this pack — four ways a friendship can start to slip, and what keeps it going:\n\n• **It's Been Months** — the silence feels too long to break: mend the drift with one honest line\n• **Always the One Who Asks** — they never reach out first: make it a habit, and keep it light\n• **They Moved Away** — distance makes every meeting a project: give it a rhythm\n• **Life Got Busy** — children, work, a sick parent: make it easy to say yes\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the four challenges in this pack?", a: "It's Been Months, Always the One Who Asks, They Moved Away, and Life Got Busy.", bundle: 'pro' },
+        { q: "What is the main strategy for It's Been Months?", a: "Mend a Drift — one honest line and an invitation.", bundle: 'pro' },
+        { q: "What should you avoid with It's Been Months?", a: "A long explanation of why you went quiet.", bundle: 'pro' },
+        { q: "What goes wrong in Always the One Who Asks?", a: "Keeping score — going silent as a test, while the friendship quietly ends.", bundle: 'pro' },
+        { q: "Which strategy takes the asking away?", a: "Make It a Habit. With a standing plan, nobody has to ask.", bundle: 'pro' },
+        { q: "What should you avoid in They Moved Away?", a: "Saving everything for the next visit.", bundle: 'pro' },
+        { q: "What goes wrong in Life Got Busy?", a: "Taking their silence as a no, or asking for time they do not have.", bundle: 'pro' },
+        { q: "How does Check In for No Reason fit a busy friend?", a: "Add \"no need to reply\", so the message asks nothing of them.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Effort** — real friends don't need effort\n• **Time Apart** — too much time has passed to get in touch\n• **Opening Up** — if I share, they'll think less of me\n\nAll three keep you waiting for the friendship to look after itself.",
+      cards: [
+        { q: "What are the three mindsets in this pack?", a: "Effort, Time Apart, and Opening Up.", bundle: 'pro' },
+        { q: "What part of \"real friends don't need effort\" is true?", a: "The best friendships can feel easy, and some pick up again after months.", bundle: 'pro' },
+        { q: "What gets added to \"real friends don't need effort\"?", a: "\"So nobody has to do anything\" — when the ease came from time someone once made room for.", bundle: 'pro' },
+        { q: "What is true instead of \"too much time has passed\"?", a: "Most people are glad to hear from an old friend, and gladder than we expect.", bundle: 'pro' },
+        { q: "What does \"too much time has passed\" cost?", a: "The friend you still think about, and never message.", bundle: 'pro' },
+        { q: "What is true instead of \"if I share, they'll think less of me\"?", a: "A small, honest step usually brings people closer.", bundle: 'pro' },
+        { q: "What does keeping everything light cost?", a: "A friendship that stays at \"fine, busy\", where nobody really knows how you are.", bundle: 'pro' },
+        { q: "What do all three mindsets have in common?", a: "They keep you waiting for the friendship to look after itself.", bundle: 'pro' },
+      ]
+    },
+  ],
+  makingfriends3: [
+    {
+      name: "Core Idea",
+      description: "Five strategies for the hard parts of a friendship:\n\n1. Say You Felt Left Out\n2. Name the Pattern Kindly\n3. Say the Small Hurt Early\n4. Make Room for Their Change\n5. Let It Ease Off Kindly\n\nThree for saying that something hurt, and two for a friendship that is changing shape.",
+      cards: [
+        { q: "What are the five strategies in this pack?", a: "Say You Felt Left Out, Name the Pattern Kindly, Say the Small Hurt Early, Make Room for Their Change, and Let It Ease Off Kindly.", bundle: 'free' },
+        { q: "How do the five fit together?", a: "Three for saying that something hurt, and two for a friendship that is changing shape.", bundle: 'free' },
+        { q: "What do all the lines in this pack have in common?", a: "They are honest and kind, and never accuse, hint or threaten.", bundle: 'free' },
+        { q: "What should you ask yourself first?", a: "What do I want from this friendship now — more of it, a new shape of it, or less of it?", bundle: 'free' },
+        { q: "Why say it at all, instead of quietly pulling away?", a: "Friends cannot fix what they do not know about. Silence ends more friendships than honest words do.", bundle: 'free' },
+        { q: "What is the most common mistake in a hard friendship moment?", a: "Saying nothing, and slowly pulling away instead.", bundle: 'pro' },
+        { q: "How is this pack different from Repair & Apology?", a: "Repair & Apology is about conflict and saying sorry after a fight. This pack is about the everyday hard parts: small hurts, patterns and change.", bundle: 'pro' },
+        { q: "How does this pack relate to Pt. 1 and Pt. 2?", a: "Pt. 1 turns a hello into plans, Pt. 2 keeps a friendship going, and Pt. 3 handles the hard parts.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say You Felt Left Out",
+      description: "",
+      cards: [
+        { q: "What is Say You Felt Left Out?", a: "Saying that you would have liked to be there — plainly, without asking why you weren't.", bundle: 'free' },
+        { q: "How does Say You Felt Left Out sound?", a: "\"I saw the photos from Saturday. I'd have loved to come.\"", bundle: 'free' },
+        { q: "When is Say You Felt Left Out the right one?", a: "When you find out about a plan you were not part of.", bundle: 'free' },
+        { q: "Why does Say You Felt Left Out work?", a: "Most leaving out is not a decision. A wish tells them something they did not know — that you want to be asked.", bundle: 'free' },
+        { q: "What are the three ways to say it?", a: "The wish, the wish and the feeling, and \"let me say no myself\".", bundle: 'free' },
+        { q: "When does Say You Felt Left Out go wrong?", a: "When it turns into \"why wasn't I invited?\" — which makes them defend a choice they never really made.", bundle: 'pro' },
+        { q: "What is Say You Felt Left Out better than, and why?", a: "Pretending you do not care. Then they never learn that you want to be asked.", bundle: 'pro' },
+        { q: "What do you say when they assumed you would not want to come?", a: "\"Ask me next time, and let me be the one who says no.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name the Pattern Kindly",
+      description: "",
+      cards: [
+        { q: "What is Name the Pattern Kindly?", a: "Saying what keeps happening, in plain words, and following it with a caring question.", bundle: 'free' },
+        { q: "How does Name the Pattern Kindly sound?", a: "\"It feels like I'm usually the one who asks. Is everything okay?\"", bundle: 'free' },
+        { q: "When is Name the Pattern Kindly the right one?", a: "When the same thing keeps happening — cancelling, not replying, a friendship that runs one way.", bundle: 'free' },
+        { q: "Why does Name the Pattern Kindly work?", a: "A pattern is easy to miss from the inside. Saying it lets them see what you see, and the question gives them room to explain.", bundle: 'free' },
+        { q: "What are the three ways to name it?", a: "The pattern and a check, the pattern and a wish, and the pattern and a fix.", bundle: 'free' },
+        { q: "When does Name the Pattern Kindly go wrong?", a: "When it uses \"you always\" or \"you never\", which turns an observation into a verdict.", bundle: 'pro' },
+        { q: "What is Name the Pattern Kindly better than, and why?", a: "The silent test — going quiet to see if they notice. They usually do not, and you learn nothing.", bundle: 'pro' },
+        { q: "How is it different from Mend a Drift in Pt. 2?", a: "Mend a Drift is when you let it slip and own that. Name the Pattern Kindly is when the pattern is on their side.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say the Small Hurt Early",
+      description: "",
+      cards: [
+        { q: "What is Say the Small Hurt Early?", a: "Saying soon, and lightly, that something a friend said or did stung.", bundle: 'free' },
+        { q: "How does Say the Small Hurt Early sound?", a: "\"That joke about my job stung a bit, honestly.\"", bundle: 'free' },
+        { q: "When is Say the Small Hurt Early the right one?", a: "Right after one comment or action stings — while it is still small.", bundle: 'free' },
+        { q: "Why does Say the Small Hurt Early work?", a: "Small hurts grow when they are swallowed. Said early, a hurt is easy to hear and easy to fix.", bundle: 'free' },
+        { q: "What are the three ways to say it?", a: "Just the sting, the sting and a wish, and shrink it first.", bundle: 'free' },
+        { q: "When does Say the Small Hurt Early go wrong?", a: "When it waits too long and comes out as a list of old hurts.", bundle: 'pro' },
+        { q: "What is Say the Small Hurt Early better than, and why?", a: "Laughing it off. The hurt does not go away; it comes back bigger next time.", bundle: 'pro' },
+        { q: "Does \"light\" mean joking about it?", a: "No. Say it plainly and kindly, then let it go.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Make Room for Their Change",
+      description: "",
+      cards: [
+        { q: "What is Make Room for Their Change?", a: "Seeing that a friend's life has changed, and offering a way to meet that fits their life now.", bundle: 'free' },
+        { q: "How does Make Room for Their Change sound?", a: "\"I know your weekends look different now. What works for you?\"", bundle: 'free' },
+        { q: "When is Make Room for Their Change the right one?", a: "After a new partner, a baby, a move, a hard job, or an ill parent.", bundle: 'free' },
+        { q: "Why does Make Room for Their Change work?", a: "The friendship did not stop; the shape of their week did. Offering a new shape tells them you are staying.", bundle: 'free' },
+        { q: "What are the three ways to make room?", a: "Ask what works, offer the new shape, and say you're staying.", bundle: 'free' },
+        { q: "When does Make Room for Their Change go wrong?", a: "When it stays vague — \"let's catch up when things calm down\" — and the day never comes.", bundle: 'pro' },
+        { q: "What is Make Room for Their Change better than, and why?", a: "Waiting for the old shape to come back. That is how most friendships fade after a big change.", bundle: 'pro' },
+        { q: "What should you never do when a friend has a new partner?", a: "Compete with the partner or comment on them.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Let It Ease Off Kindly",
+      description: "",
+      cards: [
+        { q: "What is Let It Ease Off Kindly?", a: "Letting a friendship get smaller with a warm, honest line — without a fight and without disappearing.", bundle: 'free' },
+        { q: "How does Let It Ease Off Kindly sound?", a: "\"I don't have much time these days, but I'll always be glad to see you.\"", bundle: 'free' },
+        { q: "When is Let It Ease Off Kindly the right one?", a: "When a friendship has run its course, or you have asked and tried and nothing changes.", bundle: 'free' },
+        { q: "Why does Let It Ease Off Kindly work?", a: "It respects what you had, avoids both ghosting and a breakup talk, and leaves the door open.", bundle: 'free' },
+        { q: "What are the three ways to ease off?", a: "Less, warmly; different ways; and thank the friendship.", bundle: 'free' },
+        { q: "When does Let It Ease Off Kindly go wrong?", a: "When it is vague and guilty, or promises meetings you will not keep.", bundle: 'pro' },
+        { q: "What is Let It Ease Off Kindly better than, and why?", a: "Ghosting, which leaves them guessing, and a big talk, which turns a natural change into a breakup.", bundle: 'pro' },
+        { q: "What should come before easing off, if you still care?", a: "Naming the pattern, and making room for their change. Let go only once you have asked and tried.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Speak Up Gently** — something hurt: a missed invitation, a pattern, or one small sting?\n• **Adjust or Step Back** — the friendship is changing: ask why, find a new shape, or ease off?\n• **All Five Strategies** — everything mixed, with no warning which moment you are in\n\nOne question decides nearly all of it: what do I want from this friendship now?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Speak Up Gently, Adjust or Step Back, and All Five Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Speak Up Gently?", a: "Is this one moment, or the fifth time?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Speak Up Gently?", a: "Naming a pattern over one small thing, which makes a little sting sound like a list.", bundle: 'pro' },
+        { q: "A friend made one joke that stung. Which strategy?", a: "Say the Small Hurt Early.", bundle: 'pro' },
+        { q: "What is the question that decides Adjust or Step Back?", a: "Do I know why, and do I want to keep it?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Adjust or Step Back?", a: "Easing off too soon, when one honest question would have explained everything.", bundle: 'pro' },
+        { q: "You know why your friend has less time, and you want to keep the friendship. Which strategy?", a: "Make Room for Their Change.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in All Five Strategies?", a: "Saying nothing at all, and slowly pulling away.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Back in the Loop** — Say You Felt Left Out → Name the Pattern Kindly → Make Room for Their Change\n2. **Small Things First** — Say the Small Hurt Early → Say You Felt Left Out → Name the Pattern Kindly\n3. **The Kind Goodbye** — Name the Pattern Kindly → Make Room for Their Change → Let It Ease Off Kindly\n\nIn each one, you start small and only go further when their answer calls for it.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Back in the Loop, Small Things First, and The Kind Goodbye.", bundle: 'pro' },
+        { q: "What is the order in Back in the Loop?", a: "Say You Felt Left Out, Name the Pattern Kindly, Make Room for Their Change.", bundle: 'pro' },
+        { q: "Why does Back in the Loop start with the wish?", a: "It is small and easy to answer. The pattern only comes if the wish gets brushed off.", bundle: 'pro' },
+        { q: "What is the order in Small Things First?", a: "Say the Small Hurt Early, Say You Felt Left Out, Name the Pattern Kindly.", bundle: 'pro' },
+        { q: "Why start with the small hurt?", a: "The bigger picture only shows once the small thing is said. Starting with the pattern turns one comment into a case against them.", bundle: 'pro' },
+        { q: "What is the order in The Kind Goodbye?", a: "Name the Pattern Kindly, Make Room for Their Change, Let It Ease Off Kindly.", bundle: 'pro' },
+        { q: "Why does easing off come last in The Kind Goodbye?", a: "Letting go only feels right once you have asked and tried a new shape.", bundle: 'pro' },
+        { q: "What is the usual mistake these sequences prevent?", a: "Saving it all up and saying everything at once — or saying nothing and fading away.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack — five hard parts of a friendship, and what goes wrong in each:\n\n• **They Always Cancel** — saying \"no worries\" until the hurt comes out sharp\n• **You Weren't Invited** — asking why, or pretending not to care\n• **The One-Way Friend** — the silent test, to see if they notice\n• **A New Partner Takes All Their Time** — competing with the partner\n• **Growing Apart** — ghosting, or a big breakup talk\n\nEach one has its own way of going wrong, and a kinder way through.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "They Always Cancel, You Weren't Invited, The One-Way Friend, A New Partner Takes All Their Time, and Growing Apart.", bundle: 'pro' },
+        { q: "What is the main strategy for They Always Cancel?", a: "Name the Pattern Kindly — name it, and ask why.", bundle: 'pro' },
+        { q: "What should you avoid with They Always Cancel?", a: "Guilt, like \"I guess I'm not a priority.\"", bundle: 'pro' },
+        { q: "What is the main strategy for You Weren't Invited?", a: "Say You Felt Left Out — say you would have liked to come.", bundle: 'pro' },
+        { q: "What should you avoid in The One-Way Friend?", a: "The silent test — going quiet to see if they notice.", bundle: 'pro' },
+        { q: "What is the main strategy for A New Partner Takes All Their Time?", a: "Make Room for Their Change — find the new shape.", bundle: 'pro' },
+        { q: "What should you avoid with a friend's new partner?", a: "Any comment about the partner.", bundle: 'pro' },
+        { q: "What is the main strategy for Growing Apart, and what should you avoid?", a: "Let It Ease Off Kindly — and avoid disappearing without a word.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Speaking Up** — if I say something, I'll lose them\n• **Keeping the Peace** — I'm the easy-going one, so I let things go\n• **Blame** — it's my fault they pulled away\n• **Letting Go** — letting go means I failed\n\nMost of them keep you quiet when one kind sentence would help.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Speaking Up, Keeping the Peace, Blame, and Letting Go.", bundle: 'pro' },
+        { q: "What is true instead of \"if I say something, I'll lose them\"?", a: "A kind, honest sentence rarely ends a friendship. Silence and slow distance end far more.", bundle: 'pro' },
+        { q: "What does Keeping the Peace quietly cost?", a: "Your friends never learn what hurts you, and you feel less close without them knowing why.", bundle: 'pro' },
+        { q: "Is never saying anything the same as not minding?", a: "No. The hurts are still there; they just go unspoken.", bundle: 'pro' },
+        { q: "What part of \"it's my fault they pulled away\" is true, and what gets added?", a: "You may have played a part. What gets added is \"it's all my fault\".", bundle: 'pro' },
+        { q: "What does the Blame mindset cost?", a: "The courage to ask what really changed.", bundle: 'pro' },
+        { q: "What is true instead of \"letting go means I failed\"?", a: "Many friendships belong to one part of life. Letting one ease off kindly is part of having friends.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They keep you quiet when one kind sentence would help.", bundle: 'pro' },
+      ]
+    },
+  ],
+  namesandintroductions: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for the small name moments when you meet people:\n\n1. Say Your Name Clearly\n2. Use Their Name Once\n3. Ask Again Early\n4. Own the Forgotten Name\n5. Introduce With a Hook\n6. Get Them to Say It\n\nThree catch names, two rescue them, one brings people together.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Say Your Name Clearly, Use Their Name Once, Ask Again Early, Own the Forgotten Name, Introduce With a Hook, and Get Them to Say It.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Three catch names in the first minute, two rescue a lost name, and one brings people together.", bundle: 'free' },
+        { q: "Which three are for the first minute of meeting someone?", a: "Say Your Name Clearly, Use Their Name Once, and Ask Again Early.", bundle: 'free' },
+        { q: "Which two help when you have lost a name?", a: "Own the Forgotten Name and Get Them to Say It.", bundle: 'free' },
+        { q: "What should you ask yourself when you are not sure which strategy to use?", a: "Whose name is it, and do I have it right now?", bundle: 'free' },
+        { q: "What is the most common mistake with names?", a: "Pretending — smiling past a name you missed or forgot, and hoping it comes back.", bundle: 'pro' },
+        { q: "When is a name easiest to get?", a: "In the first minute. It gets a little harder every week after that.", bundle: 'pro' },
+        { q: "Is it ever too late to ask someone's name?", a: "No. Late is awkward for a moment; never knowing is awkward for years.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say Your Name Clearly",
+      description: "",
+      cards: [
+        { q: "What is Say Your Name Clearly?", a: "Saying your own name a little slower than feels natural, with a small handle to hold it by.", bundle: 'free' },
+        { q: "How does Say Your Name Clearly sound?", a: "\"I'm Rikard — with a K.\"", bundle: 'free' },
+        { q: "Why do people say their own name too fast?", a: "They have said it thousands of times, so it comes out quickly.", bundle: 'free' },
+        { q: "What are the three handles that help?", a: "The spelling, the sound, and a picture to link it to.", bundle: 'free' },
+        { q: "When is the sound handle useful?", a: "For names people often say wrong — \"Saoirse. It sounds like 'SEER-sha'.\"", bundle: 'free' },
+        { q: "When does Say Your Name Clearly go wrong?", a: "When it becomes a long speech about your name. One clear word and one handle is enough.", bundle: 'pro' },
+        { q: "What does a slow, clear name make easier for the other person?", a: "Remembering it, and saying it back.", bundle: 'pro' },
+        { q: "Which strategy helps when someone says your name wrong?", a: "Say Your Name Clearly — correct it early and lightly, with a handle.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Use Their Name Once",
+      description: "",
+      cards: [
+        { q: "What is Use Their Name Once?", a: "Saying someone's name back once, in a normal sentence, as soon as you hear it.", bundle: 'free' },
+        { q: "How does Use Their Name Once sound?", a: "\"Nice to meet you, Leila.\"", bundle: 'free' },
+        { q: "Why does saying the name back help?", a: "Saying it out loud is the quickest way to keep it.", bundle: 'free' },
+        { q: "What else does saying the name back check?", a: "That you heard it right — so they can fix it now, while it is easy.", bundle: 'free' },
+        { q: "What are the three good places to use the name?", a: "The greeting, the first question, and the check.", bundle: 'free' },
+        { q: "When does Use Their Name Once go wrong?", a: "When you use the name in every sentence. Then it sounds like a sales trick.", bundle: 'pro' },
+        { q: "What does the check sound like?", a: "\"Thanh — did I say that right?\"", bundle: 'pro' },
+        { q: "Why is \"once\" the right number?", a: "Once keeps the name. More than that starts to sound like a technique.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask Again Early",
+      description: "",
+      cards: [
+        { q: "What is Ask Again Early?", a: "Asking for a name again straight away, in the first minute, when you did not catch it.", bundle: 'free' },
+        { q: "How does Ask Again Early sound?", a: "\"Sorry — I missed your name?\"", bundle: 'free' },
+        { q: "Why ask early and not later?", a: "Early, it is a small, normal question. Late, it feels like a confession.", bundle: 'free' },
+        { q: "What are the three ways to ask?", a: "The plain question, the choice, and the spelling.", bundle: 'free' },
+        { q: "When do you use the choice?", a: "When you heard part of the name. \"Was that Mateo or Matteo?\"", bundle: 'free' },
+        { q: "What happens if you wait too long to ask?", a: "It gets harder, until you avoid their name all evening — or for years.", bundle: 'pro' },
+        { q: "Why is asking how to spell a name a good idea?", a: "It helps you hold on to it, and it shows you want to get it right.", bundle: 'pro' },
+        { q: "Which strategy helps with an unfamiliar name you are not sure how to say?", a: "Ask Again Early — ask to hear it once more, or how to spell it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Own the Forgotten Name",
+      description: "",
+      cards: [
+        { q: "What is Own the Forgotten Name?", a: "Saying honestly and lightly that you have forgotten someone's name, and showing what you do remember.", bundle: 'free' },
+        { q: "How does Own the Forgotten Name sound?", a: "\"I'm so sorry, I've forgotten your name. I remember the dog, though!\"", bundle: 'free' },
+        { q: "Why is it better than pretending?", a: "Pretending means avoiding them for months. Saying it takes five seconds.", bundle: 'free' },
+        { q: "Why show what you remember?", a: "It tells them they mattered, even if the name slipped.", bundle: 'free' },
+        { q: "What are the three ways to own it?", a: "The name and a memory, short and warm, and fixing the wrong name.", bundle: 'free' },
+        { q: "When does Own the Forgotten Name go wrong?", a: "When it becomes a long apology, and a small slip turns into a big moment.", bundle: 'pro' },
+        { q: "What do you say when you used the wrong name?", a: "Fix it in one short line: \"Sorry — Nadia, not Nadine.\"", bundle: 'pro' },
+        { q: "How do most people answer when you admit you've forgotten?", a: "\"Oh, don't worry\" — and then their name.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Introduce With a Hook",
+      description: "",
+      cards: [
+        { q: "What is Introduce With a Hook?", a: "Introducing two people with both names and one thing they could talk about.", bundle: 'free' },
+        { q: "How does Introduce With a Hook sound?", a: "\"Sam, this is Leila — she's just back from Japan.\"", bundle: 'free' },
+        { q: "What is wrong with a bare introduction?", a: "Two names and nothing else leaves them looking for a first question.", bundle: 'free' },
+        { q: "What are the three kinds of hook?", a: "Something they share, something interesting about one of them, and why you thought of them.", bundle: 'free' },
+        { q: "How does the hook help with names?", a: "Each name is joined to something, so it is easier to remember.", bundle: 'free' },
+        { q: "When does Introduce With a Hook go wrong?", a: "When the hook turns into a long story. One fact is enough; the rest is theirs to talk about.", bundle: 'pro' },
+        { q: "Why are you often the only person who can make an introduction?", a: "You are the one who knows both of them.", bundle: 'pro' },
+        { q: "What does \"why you thought of them\" sound like?", a: "\"I wanted you two to meet, because you're both new here.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Get Them to Say It",
+      description: "",
+      cards: [
+        { q: "What is Get Them to Say It?", a: "Letting people say their own names when you cannot remember one of them.", bundle: 'free' },
+        { q: "How does Get Them to Say It sound?", a: "\"Have you two met?\"", bundle: 'free' },
+        { q: "Why does it work?", a: "The other person answers with their own name, and you hear it too.", bundle: 'free' },
+        { q: "What are the three ways to bring the name out?", a: "The question, half an introduction, and handing it over.", bundle: 'free' },
+        { q: "What is half an introduction?", a: "Saying the name you know and stopping — \"This is my sister, Hanna.\"", bundle: 'free' },
+        { q: "Is Get Them to Say It a trick?", a: "No. The introduction still happens, and nobody is left out.", bundle: 'pro' },
+        { q: "What do you do if it does not work?", a: "Own the Forgotten Name — say honestly that the name has gone.", bundle: 'pro' },
+        { q: "Which strategy should come right after you hear the name?", a: "Use Their Name Once, so you keep it this time.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Catch the Name** — the first minute: say yours, say theirs back, or ask again?\n• **Rescue the Name** — the name has gone: ask, own it, or let them say it?\n• **All Six Strategies** — everything mixed, with no warning about the moment\n\nOne question decides nearly all of it: whose name is it, and do I have it right now?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Catch the Name, Rescue the Name, and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Catch the Name?", a: "Whose name is at risk right now — mine, or theirs?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Catch the Name?", a: "Nodding and smiling past a name you missed.", bundle: 'pro' },
+        { q: "What is the question that decides Rescue the Name?", a: "When did I hear it, and who else is here?", bundle: 'pro' },
+        { q: "You heard the name a minute ago and it has gone. Which strategy?", a: "Ask Again Early.", bundle: 'pro' },
+        { q: "You have known them for months, and it is just the two of you. Which strategy?", a: "Own the Forgotten Name.", bundle: 'pro' },
+        { q: "A friend joins you and someone whose name you have lost. Which strategy?", a: "Get Them to Say It.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in All Six Strategies?", a: "Saying nothing at all — no name back, no question, no introduction.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Clean Hello** — Say Your Name Clearly → Ask Again Early → Use Their Name Once\n2. **The Quiet Rescue** — Get Them to Say It → Use Their Name Once → Introduce With a Hook\n3. **The Second Hello** — Own the Forgotten Name → Use Their Name Once → Say Your Name Clearly\n\nAll three have Use Their Name Once in the middle — the step that keeps the name this time.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Clean Hello, The Quiet Rescue, and The Second Hello.", bundle: 'pro' },
+        { q: "What is the order in The Clean Hello?", a: "Say Your Name Clearly, Ask Again Early, Use Their Name Once.", bundle: 'pro' },
+        { q: "Why do you ask again before you use the name in The Clean Hello?", a: "You cannot use a name you only half heard.", bundle: 'pro' },
+        { q: "What is the order in The Quiet Rescue?", a: "Get Them to Say It, Use Their Name Once, Introduce With a Hook.", bundle: 'pro' },
+        { q: "Why does the hook come last in The Quiet Rescue?", a: "You need the name before you can give the hook.", bundle: 'pro' },
+        { q: "What is the order in The Second Hello?", a: "Own the Forgotten Name, Use Their Name Once, Say Your Name Clearly.", bundle: 'pro' },
+        { q: "Why does your own name come last in The Second Hello?", a: "It is a kindness — they may have lost your name too.", bundle: 'pro' },
+        { q: "What step do all three sequences share?", a: "Use Their Name Once, in the middle.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack, and what goes wrong in each:\n\n• **Two Names at Once** — you keep one name and lose the other\n• **Your Name Said Wrong** — you let it pass, and it sticks\n• **You Called Them the Wrong Name** — the apology gets bigger than the mistake\n• **The Big Group** — you give up on all the names\n• **An Unfamiliar Name** — you avoid saying it at all\n\nMost of them go wrong the same way: by saying nothing.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Two Names at Once, Your Name Said Wrong, You Called Them the Wrong Name, The Big Group, and An Unfamiliar Name.", bundle: 'pro' },
+        { q: "What goes wrong in Two Names at Once?", a: "You keep the name you caught and talk only to that person.", bundle: 'pro' },
+        { q: "What is the main strategy for Your Name Said Wrong?", a: "Say Your Name Clearly — correct it early and lightly, with a handle.", bundle: 'pro' },
+        { q: "What should you avoid when you called someone the wrong name?", a: "A long apology. One short fix is enough.", bundle: 'pro' },
+        { q: "What goes wrong in The Big Group?", a: "Giving up on all the names and saying \"you\" all evening.", bundle: 'pro' },
+        { q: "How many names do you need to keep in The Big Group?", a: "Not all of them. One or two, kept well, is a good start.", bundle: 'pro' },
+        { q: "What should you avoid with An Unfamiliar Name?", a: "A joke about the name being hard.", bundle: 'pro' },
+        { q: "What do most of these challenges have in common?", a: "They go wrong by saying nothing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Forgetting** — forgetting a name is unforgivable\n• **Timing** — it is too late to ask now\n• **Memory** — I am just bad with names\n• **Asking Twice** — asking twice is rude\n• **Corrections** — I don't mind what people call me\n• **Introducing Others** — introducing people is not my job\n\nEach one makes you hide from a name you could simply ask for, give, or share.",
+      cards: [
+        { q: "What are the six mindsets in this pack?", a: "Forgetting, Timing, Memory, Asking Twice, Corrections, and Introducing Others.", bundle: 'pro' },
+        { q: "What is true instead of \"forgetting a name is unforgivable\"?", a: "Forgetting is normal, and almost everyone forgives it at once.", bundle: 'pro' },
+        { q: "Is it ever too late to ask?", a: "No. Today is the easiest day left.", bundle: 'pro' },
+        { q: "What part of \"I'm bad with names\" is true, and what gets added?", a: "Names may be harder for you. What gets added is \"so there's nothing I can do\".", bundle: 'pro' },
+        { q: "What does asking for a name twice really show?", a: "That you want to get it right.", bundle: 'pro' },
+        { q: "What does letting the wrong name pass quietly cost?", a: "The wrong name spreads, and it gets harder to fix every week.", bundle: 'pro' },
+        { q: "Why are you often the right person to introduce two people?", a: "You are the only one who knows both of them.", bundle: 'pro' },
+        { q: "What do all six mindsets have in common?", a: "They make you hide from a name you could simply ask for, give, or share.", bundle: 'pro' },
+      ]
+    },
+  ],
+  phonecalls: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for an everyday phone call:\n\n1. Who and Why\n2. One Thing at a Time\n3. Say It Back\n4. The Clear Voicemail\n5. Ask for the Next Step\n6. Close the Call\n\nOne opens the call, two carry the middle, two end it, and one is for the beep.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Who and Why, One Thing at a Time, Say It Back, The Clear Voicemail, Ask for the Next Step, and Close the Call.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Who and Why opens the call, One Thing at a Time and Say It Back carry the middle, Ask for the Next Step and Close the Call end it, and The Clear Voicemail is for when nobody answers.", bundle: 'free' },
+        { q: "Which part of a call can you fully plan in advance?", a: "The first line — your name and why you are calling.", bundle: 'free' },
+        { q: "What should you ask yourself when you are unsure?", a: "Where am I in the call: the start, the middle, the end — or the beep?", bundle: 'free' },
+        { q: "What is the most common mistake in an everyday call?", a: "Rushing — a story instead of a name, three questions at once, and \"okay, bye\" before anything is checked.", bundle: 'free' },
+        { q: "Why are phone calls harder than talking face to face?", a: "There is no face to read. Your voice is all they have, and details are easy to mishear.", bundle: 'pro' },
+        { q: "What should you have ready before you dial?", a: "Your first line, your questions, and something to write with.", bundle: 'pro' },
+        { q: "How do you know a call is finished?", a: "You have checked the details, you know what happens next, and you have said goodbye.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Who and Why",
+      description: "",
+      cards: [
+        { q: "What is Who and Why?", a: "Saying your name and why you are calling in the first sentence or two.", bundle: 'free' },
+        { q: "How does Who and Why sound?", a: "\"Hi, my name's Sam Berg. I'm calling about a booking for Friday.\"", bundle: 'free' },
+        { q: "When is Who and Why the right one?", a: "Whenever someone picks up — and again whenever a new person comes on the line.", bundle: 'free' },
+        { q: "Why does Who and Why work?", a: "Until they know what the call is about, they cannot tell where to send you or what to ask.", bundle: 'free' },
+        { q: "What are the three ways in?", a: "The booking, the problem, and the returned call.", bundle: 'free' },
+        { q: "When does Who and Why go wrong?", a: "When the reason comes in the fourth sentence, after a story about how you got the number.", bundle: 'pro' },
+        { q: "What is Who and Why better than, and why?", a: "Starting with a question. They cannot answer well before they know who is asking and why.", bundle: 'pro' },
+        { q: "How does Who and Why help you, not just them?", a: "Once the first line is out, the hardest part of the call is over.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "One Thing at a Time",
+      description: "",
+      cards: [
+        { q: "What is One Thing at a Time?", a: "Asking one question, then waiting for the answer before asking the next.", bundle: 'free' },
+        { q: "How does One Thing at a Time sound?", a: "\"First — is the table for four still free on Saturday?\"", bundle: 'free' },
+        { q: "When is One Thing at a Time the right one?", a: "When you have several questions, or when one of your questions got lost.", bundle: 'free' },
+        { q: "Why does One Thing at a Time work?", a: "They cannot see your list. Ask three things at once and they answer the last or the easiest.", bundle: 'free' },
+        { q: "What are the three ways to keep it to one thing?", a: "Say how many, wait then ask the next, and bring them back to a lost question.", bundle: 'free' },
+        { q: "When does One Thing at a Time go wrong?", a: "When nerves make you rush and the questions come out in one breath.", bundle: 'pro' },
+        { q: "What is One Thing at a Time better than, and why?", a: "A fast call with every question at once — that often means a second call.", bundle: 'pro' },
+        { q: "What does One Thing at a Time give you, besides clear answers?", a: "A moment to think between questions.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say It Back",
+      description: "",
+      cards: [
+        { q: "What is Say It Back?", a: "Repeating the important details — times, dates, names and numbers — before the call ends.", bundle: 'free' },
+        { q: "How does Say It Back sound?", a: "\"So that's Friday at seven, under Berg. Thank you.\"", bundle: 'free' },
+        { q: "When is Say It Back the right one?", a: "Whenever a time, date, name or number has been given.", bundle: 'free' },
+        { q: "Why does Say It Back work?", a: "The phone is where details go wrong, and saying it back lets them catch a mistake while you are both still on the line.", bundle: 'free' },
+        { q: "What three things are worth saying back?", a: "The time and date, the name, and the number.", bundle: 'free' },
+        { q: "When does Say It Back go wrong?", a: "When it turns into a summary of the whole call instead of the details that matter.", bundle: 'pro' },
+        { q: "What is Say It Back better than, and why?", a: "Saying \"great\" and hoping. Fifteen and fifty sound alike on the phone.", bundle: 'pro' },
+        { q: "How should you say a number back?", a: "In small groups, slowly.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Clear Voicemail",
+      description: "",
+      cards: [
+        { q: "What is The Clear Voicemail?", a: "A message someone can act on without calling you to ask what you meant.", bundle: 'free' },
+        { q: "How does The Clear Voicemail sound?", a: "\"This is Sam Berg on 070-123 45 67, about the flat. Again, 070-123 45 67.\"", bundle: 'free' },
+        { q: "What are the four parts, in order?", a: "Your name, your number, why you called, and your number again.", bundle: 'free' },
+        { q: "Why say the number twice?", a: "The person listening is often writing it down, and a number said once, fast, is the part most often lost.", bundle: 'free' },
+        { q: "How should you say the number?", a: "Slowly, in small groups.", bundle: 'free' },
+        { q: "When does The Clear Voicemail go wrong?", a: "When it turns into a long story with the number said once at the very end.", bundle: 'pro' },
+        { q: "What can you say if they do not need to call back?", a: "\"No need to call me back.\"", bundle: 'pro' },
+        { q: "What can you add when it matters when they reach you?", a: "When you are free — \"after four is best.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for the Next Step",
+      description: "",
+      cards: [
+        { q: "What is Ask for the Next Step?", a: "Finding out what happens now, and when, before you hang up.", bundle: 'free' },
+        { q: "How does Ask for the Next Step sound?", a: "\"When can I expect to hear back?\"", bundle: 'free' },
+        { q: "When is Ask for the Next Step the right one?", a: "When the call ends with \"we'll look into it\" or \"we'll be in touch\".", bundle: 'free' },
+        { q: "Why does Ask for the Next Step work?", a: "Without a when, you do not know whether to wait a day or a month, or when it is fair to call again.", bundle: 'free' },
+        { q: "What three things can you ask about?", a: "The when, the who, and your part.", bundle: 'free' },
+        { q: "When does Ask for the Next Step go wrong?", a: "When you accept \"soon\" as an answer. Ask: soon today, or soon this week?", bundle: 'pro' },
+        { q: "What is Ask for the Next Step better than, and why?", a: "\"Okay, thanks\" and a vague hope — which can mean waiting for something that never comes.", bundle: 'pro' },
+        { q: "What is worth asking for if you have been let down before?", a: "A name, and a day to call back if you hear nothing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Close the Call",
+      description: "",
+      cards: [
+        { q: "What is Close the Call?", a: "Ending the call clearly and kindly, so both of you know it is over.", bundle: 'free' },
+        { q: "How does Close the Call sound?", a: "\"Great, that's everything. Thanks for your help. Bye.\"", bundle: 'free' },
+        { q: "When is Close the Call the right one?", a: "When you have what you need, or when there is nothing more to do today.", bundle: 'free' },
+        { q: "Why does Close the Call work?", a: "Nobody knows who should say goodbye first. A clear close tells them you are done, and they relax.", bundle: 'free' },
+        { q: "What are the three ways to close?", a: "Signal the end, thank them, and close with what happens next.", bundle: 'free' },
+        { q: "When does Close the Call go wrong?", a: "When it becomes a slow fade of \"okay ... okay then\" that nobody can end.", bundle: 'pro' },
+        { q: "What is Close the Call better than, and why?", a: "Waiting for them to end it. Someone has to go first, and they may be waiting for you.", bundle: 'pro' },
+        { q: "How do you close with a chatty person?", a: "Say it has been nice, that you have to go, thank them, and say goodbye.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Get the Details Right** — the middle of the call: ask, check, or find out what happens now?\n• **Start and Finish Well** — the edges: a person who just answered, a voicemail, or a goodbye?\n• **All Six Strategies** — everything mixed, with no warning about where in the call you are\n\nOne question decides nearly all of it: where am I in the call?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Get the Details Right, Start and Finish Well, and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Get the Details Right?", a: "What am I missing — an answer, certainty, or a when?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Get the Details Right?", a: "Asking another question when you need to check the answer you already have.", bundle: 'pro' },
+        { q: "They have just given you a time on a bad line. Which strategy?", a: "Say It Back.", bundle: 'pro' },
+        { q: "What is the question that decides Start and Finish Well?", a: "Who is on the line — a person who just answered, a recording, or a person you are done with?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Start and Finish Well?", a: "Treating a voicemail like a live call — chatting, and hanging up without saying the number twice.", bundle: 'pro' },
+        { q: "You hear a beep. Which strategy?", a: "The Clear Voicemail.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in All Six Strategies?", a: "Rushing to the end before the details are checked and the next step is known.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Booking** — Who and Why → One Thing at a Time → Say It Back → Close the Call\n2. **The Follow-Through** — Who and Why → Say It Back → Ask for the Next Step → Close the Call\n3. **The Callback** — The Clear Voicemail → One Thing at a Time → Ask for the Next Step\n\nIn each one, the call ends only when the details are checked or the next step is clear.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Booking, The Follow-Through, and The Callback.", bundle: 'pro' },
+        { q: "What is the order in The Booking?", a: "Who and Why, One Thing at a Time, Say It Back, Close the Call.", bundle: 'pro' },
+        { q: "Why does Say It Back come before Close the Call in The Booking?", a: "So a mistake gets caught while you are still on the line.", bundle: 'pro' },
+        { q: "What is The Follow-Through for?", a: "Calling about a problem and leaving with a plan instead of a promise.", bundle: 'pro' },
+        { q: "What is the order in The Follow-Through?", a: "Who and Why, Say It Back, Ask for the Next Step, Close the Call.", bundle: 'pro' },
+        { q: "Why check what they promised before asking when?", a: "So the when is attached to the right thing.", bundle: 'pro' },
+        { q: "What is the order in The Callback?", a: "The Clear Voicemail, One Thing at a Time, Ask for the Next Step.", bundle: 'pro' },
+        { q: "Why does One Thing at a Time matter so much in The Callback?", a: "When they call back, you are less ready than when you dialled, and one question at a time keeps you steady.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack — five things that make a call go sideways, and what helps:\n\n• **Put on Hold** — someone new comes back: say who and why again\n• **Passed Around** — the same story to a new person: give the short version fresh\n• **You Can't Hear Them** — half the words are missing: say it back, or call back\n• **Calling Someone You Don't Know** — a stranger wonders who you are: tell them first\n• **Caught Without the Details** — they ask for a number you do not have: ask for another way\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Put on Hold, Passed Around, You Can't Hear Them, Calling Someone You Don't Know, and Caught Without the Details.", bundle: 'pro' },
+        { q: "What goes wrong in Put on Hold?", a: "Assuming the person who comes back knows your story.", bundle: 'pro' },
+        { q: "What can you ask for when a hold gets long?", a: "To be called back instead, and when.", bundle: 'pro' },
+        { q: "What should you avoid in Passed Around?", a: "Telling the whole story again, crosser each time.", bundle: 'pro' },
+        { q: "What do you say to an automated menu that asks what you want?", a: "A few plain words — \"Change my address.\"", bundle: 'pro' },
+        { q: "What is the one thing to avoid in You Can't Hear Them?", a: "Pretending you heard.", bundle: 'pro' },
+        { q: "What should you avoid when calling someone you don't know?", a: "Apologising for calling before you have said why.", bundle: 'pro' },
+        { q: "What should you never do in Caught Without the Details?", a: "Make up a number to fill the silence.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Sounding Stupid** — they'll think I'm stupid\n• **Freezing** — my mind will go blank when they answer\n• **Texting** — texting is always better\n• **Bothering People** — I'm interrupting them\n• **Politeness** — checking, asking again and ending the call are rude\n• **Putting It Off** — I'll call tomorrow, when I feel more ready\n\nMost of them make the call feel bigger than the two minutes it takes.",
+      cards: [
+        { q: "What are the six mindsets in this pack?", a: "Sounding Stupid, Freezing, Texting, Bothering People, Politeness, and Putting It Off.", bundle: 'pro' },
+        { q: "What is true instead of \"they'll think I'm stupid\"?", a: "They take dozens of calls a day and will forget yours in an hour.", bundle: 'pro' },
+        { q: "What helps most against freezing?", a: "Writing the first line down. After that, they lead the call.", bundle: 'pro' },
+        { q: "What part of \"texting is always better\" is true, and what gets added?", a: "Messages are often better. What gets added is \"always\".", bundle: 'pro' },
+        { q: "What is true instead of \"I'm bothering them\"?", a: "Answering calls is often their job. You are their work, not an interruption.", bundle: 'pro' },
+        { q: "What does too much politeness quietly cost?", a: "The wrong appointment, the number you did not catch, and calls nobody can end.", bundle: 'pro' },
+        { q: "What does putting a call off usually do?", a: "It makes the call feel heavier, because now it is late too.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They make the call feel bigger than the two minutes it takes.", bundle: 'pro' },
+      ]
+    },
+  ],
+  whensomeoneishurting1: [
+    {
+      name: "Core Idea",
+      description: "Five strategies for the first words when someone is hurting:\n\n1. Say It Simply\n2. Say Their Name\n3. Ask What They Want\n4. Offer Something Specific\n5. Stay With It\n\nSay sorry and name the loss, let them choose, offer one real thing, and stay with what they feel.",
+      cards: [
+        { q: "What are the five strategies in this pack?", a: "Say It Simply, Say Their Name, Ask What They Want, Offer Something Specific, Stay With It.", bundle: 'free' },
+        { q: "How do the five fit together?", a: "Two are words (the sorry and the name), one hands them the choice, one is practical help, and one is staying with the feeling.", bundle: 'free' },
+        { q: "What do all five have in common?", a: "They are short, and none of them tries to explain the loss or make it smaller.", bundle: 'free' },
+        { q: "What are the first words after hard news for?", a: "To show that the news reached you and that you care. Not to make sense of it.", bundle: 'free' },
+        { q: "Which three lines does grief advice warn against?", a: "\"At least…\", \"I know exactly how you feel\", and \"Everything happens for a reason\".", bundle: 'free' },
+        { q: "What is Ring Theory?", a: "An idea from Susan Silk and Barry Goldman: comfort goes in, towards the person at the centre; your own shock and worry go out, to people further away.", bundle: 'pro' },
+        { q: "What does Ring Theory mean for the first words?", a: "This is not the moment for your own story or your own upset. The attention stays on them.", bundle: 'pro' },
+        { q: "How is this pack different from Pt. 2?", a: "Pt. 1 is the first words, when the news is new. Pt. 2 is the weeks after: checking in, dates, and talking about them later.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say It Simply",
+      description: "",
+      cards: [
+        { q: "What is Say It Simply?", a: "Saying you are sorry in a few plain words, and stopping — no explanation, no silver lining, no story of your own.", bundle: 'free' },
+        { q: "How does Say It Simply sound?", a: "\"I'm so sorry. That's awful news.\"", bundle: 'free' },
+        { q: "When is Say It Simply the right one?", a: "First, almost always — as soon as you hear the news.", bundle: 'free' },
+        { q: "What does Say It Simply give the other person?", a: "Proof that the news reached you and that you care, with nothing they have to answer.", bundle: 'free' },
+        { q: "What are the three ways to say it?", a: "Just the sorry, sorry and what it is, and sorry and that you care.", bundle: 'free' },
+        { q: "When does Say It Simply go wrong?", a: "When it grows: an \"at least\", an explanation, or \"everything happens for a reason\" tacked on the end.", bundle: 'pro' },
+        { q: "How is Say It Simply different from Stay With It?", a: "Say It Simply is the sorry when you first hear. Stay With It answers something painful they say after that, without fixing it.", bundle: 'pro' },
+        { q: "Where does Say It Simply come in the sequences?", a: "First, in both The First Words and The Real Offer.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say Their Name",
+      description: "",
+      cards: [
+        { q: "What is Say Their Name?", a: "Naming the person who died, or the one it is happening to, instead of talking around them.", bundle: 'free' },
+        { q: "How does Say Their Name sound?", a: "\"I'm so sorry about Anna. She was so kind to me.\"", bundle: 'free' },
+        { q: "When is Say Their Name the right one?", a: "When you know the name, and especially when everyone else is saying \"your loss\" or \"what happened\".", bundle: 'free' },
+        { q: "What does Say Their Name give the other person?", a: "The sense that the person was real and mattered, and that you are not afraid to talk about them.", bundle: 'free' },
+        { q: "What are the three ways to say it?", a: "The name on its own, the name and one memory, and the name of what was lost when it is not a death.", bundle: 'free' },
+        { q: "When does Say Their Name go wrong?", a: "When the memory becomes a long story of your own, and the attention shifts to you.", bundle: 'pro' },
+        { q: "How is Say Their Name different from Say It Simply?", a: "Say It Simply is the sorry. Say Their Name makes the sorry about someone in particular.", bundle: 'pro' },
+        { q: "Where does Say Their Name come in the sequences?", a: "Second in The First Words, after the sorry; second in Let Them Lead, once they have said they want to talk.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What They Want",
+      description: "",
+      cards: [
+        { q: "What is Ask What They Want?", a: "Asking what they would like right now, with two real options, and then going with their answer.", bundle: 'free' },
+        { q: "How does Ask What They Want sound?", a: "\"Do you want to talk about it, or would something else help today?\"", bundle: 'free' },
+        { q: "When is Ask What They Want the right one?", a: "When you have said sorry and cannot tell whether they want to talk, be distracted, or be left alone.", bundle: 'free' },
+        { q: "What does Ask What They Want give the other person?", a: "The lead. They choose, and they do not have to explain why.", bundle: 'free' },
+        { q: "What are the three things to ask about?", a: "Talking or not, how to reach them, and what others should know.", bundle: 'free' },
+        { q: "When does Ask What They Want go wrong?", a: "When it is a bare \"Do you want to talk?\", which can feel like a test, or when you argue with the answer.", bundle: 'pro' },
+        { q: "How is Ask What They Want different from Offer Something Specific?", a: "Ask What They Want lets them choose what happens. Offer Something Specific puts one concrete thing in front of them.", bundle: 'pro' },
+        { q: "Where does Ask What They Want come in the sequences?", a: "Last in The First Words, and first in Let Them Lead.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Offer Something Specific",
+      description: "",
+      cards: [
+        { q: "What is Offer Something Specific?", a: "Offering one concrete thing, with a day or a time, so they only have to say yes.", bundle: 'free' },
+        { q: "How does Offer Something Specific sound?", a: "\"I'll bring dinner on Thursday. Is six okay?\"", bundle: 'free' },
+        { q: "When is Offer Something Specific the right one?", a: "When there is a real practical job you could take off them.", bundle: 'free' },
+        { q: "What does Offer Something Specific give the other person?", a: "One less thing to do, and nothing to work out or ask for.", bundle: 'free' },
+        { q: "What are the three ways to offer?", a: "A task, a task with a time, and a regular thing.", bundle: 'free' },
+        { q: "What is wrong with \"Let me know if you need anything\"?", a: "It is kind, but it hands them a job: work out what they need and then ask. Hardly anyone does.", bundle: 'pro' },
+        { q: "How is Offer Something Specific different from Ask What They Want?", a: "Ask What They Want lets them choose. Offer Something Specific makes the choice easy by naming one thing.", bundle: 'pro' },
+        { q: "Where does Offer Something Specific come in the sequences?", a: "Last in The Real Offer, after you have listened.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stay With It",
+      description: "",
+      cards: [
+        { q: "What is Stay With It?", a: "Answering something painful with presence: no advice, no comparison, no bright side.", bundle: 'free' },
+        { q: "How does Stay With It sound?", a: "\"I don't know what to say. I'm just here.\"", bundle: 'free' },
+        { q: "When is Stay With It the right one?", a: "When they say something painful and you feel the urge to fix it.", bundle: 'free' },
+        { q: "What does Stay With It give the other person?", a: "Permission to feel what they feel, and someone who can bear to hear it.", bundle: 'free' },
+        { q: "What are the three ways to stay?", a: "Let the feeling be true, say you are there, and admit you have no words.", bundle: 'free' },
+        { q: "When does Stay With It go wrong?", a: "When a fix slips in — \"at least\", \"you'll find someone\", \"everything happens for a reason\".", bundle: 'pro' },
+        { q: "Where does the urge to fix usually come from?", a: "From our own discomfort, not from what they need.", bundle: 'pro' },
+        { q: "Where does Stay With It come in the sequences?", a: "In the middle of The Real Offer, and last in Let Them Lead.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Words or Help** — a sorry, a choice, or one practical thing\n• **Stay in the Room** — the name, a question, or staying with the feeling\n• **All Five Strategies** — everything mixed, with no warning about the news\n\nOne question runs through all three: what do they need from me right now?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Words or Help, Stay in the Room, and All Five Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Words or Help?", a: "What do they need in the next minute: to hear I care, to choose, or one less thing to do?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Words or Help?", a: "The offer before the sorry. It can sound as if you want the conversation over.", bundle: 'pro' },
+        { q: "You have only just heard the news. Which strategy?", a: "Say It Simply.", bundle: 'pro' },
+        { q: "What is the question that decides Stay in the Room?", a: "Are they avoiding the name, waiting to see what I want, or telling me how it feels?", bundle: 'pro' },
+        { q: "They say something painful, and you want to fix it. Which strategy?", a: "Stay With It.", bundle: 'pro' },
+        { q: "They keep saying \"since it happened\" and never the name. Which strategy?", a: "Say Their Name.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Stay in the Room?", a: "Answering a painful sentence with a fix, which closes the door they just opened.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The First Words** — Say It Simply → Say Their Name → Ask What They Want\n2. **The Real Offer** — Say It Simply → Stay With It → Offer Something Specific\n3. **Let Them Lead** — Ask What They Want → Say Their Name → Stay With It\n\nEach one keeps the first minute short and leaves the lead with them.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The First Words, The Real Offer, and Let Them Lead.", bundle: 'pro' },
+        { q: "What is the order in The First Words?", a: "Say It Simply, Say Their Name, Ask What They Want.", bundle: 'pro' },
+        { q: "Why does The First Words end with a question?", a: "The question hands the lead back, so they choose what comes next.", bundle: 'pro' },
+        { q: "What is the order in The Real Offer?", a: "Say It Simply, Stay With It, Offer Something Specific.", bundle: 'pro' },
+        { q: "Why does the offer come last in The Real Offer?", a: "After you have listened, the offer fits their real problem instead of your guess.", bundle: 'pro' },
+        { q: "What is the order in Let Them Lead?", a: "Ask What They Want, Say Their Name, Stay With It.", bundle: 'pro' },
+        { q: "Why does Let Them Lead start with a question?", a: "The sorry has already been said, so you let them choose whether to talk at all.", bundle: 'pro' },
+        { q: "What is the usual mistake in the first minute?", a: "\"So sorry — let me know if you need anything,\" all in one breath, and then nothing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **At Work** — nobody knows what is allowed, so nobody says anything\n• **Over Text** — waiting for the perfect words, or writing a paragraph\n• **Someone You Barely Know** — deciding it is not your place\n• **They Don't Want to Talk** — pushing, or disappearing\n• **Quiet Losses** — playing down a loss that is real to them\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "At Work, Over Text, Someone You Barely Know, They Don't Want to Talk, and Quiet Losses.", bundle: 'pro' },
+        { q: "What goes wrong at work?", a: "Saying nothing because it feels unprofessional, or making a big public moment of it.", bundle: 'pro' },
+        { q: "What is the rule for a text?", a: "Short and soon. A simple sorry today beats a perfect message next week.", bundle: 'pro' },
+        { q: "What is almost always enough with someone you barely know?", a: "Say It Simply — one kind sentence.", bundle: 'pro' },
+        { q: "What should you avoid when they don't want to talk?", a: "Taking \"not now\" as \"go away\".", bundle: 'pro' },
+        { q: "Which strategy gives company without words?", a: "Offer Something Specific — a walk, a meal, a lift.", bundle: 'pro' },
+        { q: "Which two words to avoid with a quiet loss?", a: "\"At least\" and \"only\".", bundle: 'pro' },
+        { q: "Who decides how big a loss is?", a: "The person who lost it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Wrong Words** — I'll say the wrong thing, so I'll say nothing\n• **Space** — they need space, so I'll stay away\n• **Closeness** — it's not my place, we're not close enough\n• **Comparisons** — my own story shows I understand\n\nEach one keeps you quiet, or keeps the attention on you, when they need your sorry.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Wrong Words, Space, Closeness, and Comparisons.", bundle: 'pro' },
+        { q: "What is true instead of \"I'll say the wrong thing\"?", a: "Silence is what people remember most. A short sorry is very hard to get wrong.", bundle: 'pro' },
+        { q: "What is true about \"they need space\"?", a: "Some people do want quiet. What gets added is \"so I'll say nothing at all\".", bundle: 'pro' },
+        { q: "What does space really mean?", a: "Not pushing. It does not mean disappearing.", bundle: 'pro' },
+        { q: "What is true instead of \"it's not my place\"?", a: "Saying sorry is everyone's place. One kind sentence is the right size.", bundle: 'pro' },
+        { q: "Why does \"we're not close enough\" cost so much?", a: "The people they see every day all look the other way.", bundle: 'pro' },
+        { q: "What does your own story cost in the first days?", a: "It pulls the attention to you, and they end up listening instead of being heard.", bundle: 'pro' },
+        { q: "What do these four mindsets have in common?", a: "Each one keeps you quiet, or keeps the attention on you, when they need your sorry.", bundle: 'pro' },
+      ]
+    },
+  ],
+  whensomeoneishurting2: [
+    {
+      name: "Core Idea",
+      description: "Five strategies for the weeks and months after a loss, when most people have stopped asking:\n\n1. Check In Later\n2. Remember the Date\n3. Talk About Them\n4. Mend a Clumsy Word\n5. Comfort In, Complain Out\n\nThree keep you close as time passes, one repairs, and one keeps your own feelings flowing the right way.",
+      cards: [
+        { q: "What are the five strategies in this pack?", a: "Check In Later, Remember the Date, Talk About Them, Mend a Clumsy Word, and Comfort In, Complain Out.", bundle: 'free' },
+        { q: "How do the five fit together?", a: "Three keep you close as time passes, one repairs a clumsy word, and one keeps your own feelings flowing away from the person at the centre.", bundle: 'free' },
+        { q: "What is this pack about?", a: "The weeks and months after a death or hard news — when the first rush of support has stopped.", bundle: 'free' },
+        { q: "Why are the weeks after often harder than the first days?", a: "The cards and calls stop, people return to work, and everyone assumes they are fine because nobody asks.", bundle: 'free' },
+        { q: "What should every card in this pack carry on its front?", a: "What happened, and how long ago — because the right words depend on where in the weeks after you are.", bundle: 'free' },
+        { q: "How does this pack relate to Pt. 1?", a: "Pt. 1, The First Words, is for when the news arrives. Pt. 2 is for everything after.", bundle: 'pro' },
+        { q: "Which strategy comes from a named source?", a: "Comfort In, Complain Out, from Susan Silk and Barry Goldman's Ring Theory.", bundle: 'pro' },
+        { q: "What is the most common mistake in the weeks after?", a: "Saying nothing — waiting for a better moment, or for them to bring it up.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Check In Later",
+      description: "",
+      cards: [
+        { q: "What is Check In Later?", a: "Asking again, weeks after the news, when most people have stopped asking.", bundle: 'free' },
+        { q: "How does Check In Later sound?", a: "\"It's been a month. How are you doing, really?\"", bundle: 'free' },
+        { q: "When is Check In Later the right one?", a: "On an ordinary day, weeks on, especially when everyone else has gone quiet.", bundle: 'free' },
+        { q: "Why does Check In Later work?", a: "Support comes in a rush and then stops. A question at six weeks says you have not forgotten.", bundle: 'free' },
+        { q: "What are the three ways to check in later?", a: "Name the time, ask past the update, and say you went quiet.", bundle: 'free' },
+        { q: "Why say how long it has been?", a: "It shows you have been counting too, and gives them permission to answer honestly.", bundle: 'pro' },
+        { q: "What does \"ask past the update\" mean?", a: "Asking about the person, not the treatment or the paperwork. \"I don't mean the forms. How are you?\"", bundle: 'pro' },
+        { q: "How is Check In Later different from Check In for No Reason in Making Friends Pt. 2?", a: "Check In for No Reason keeps a friendship alive. Check In Later asks about the loss, weeks after it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Remember the Date",
+      description: "",
+      cards: [
+        { q: "What is Remember the Date?", a: "Noticing the dates that will hurt, and saying so on or just before the day.", bundle: 'free' },
+        { q: "How does Remember the Date sound?", a: "\"I know tomorrow would have been his birthday. I'm thinking of you.\"", bundle: 'free' },
+        { q: "When is Remember the Date the right one?", a: "On a birthday, an anniversary, or any first — the first Christmas, the first holiday.", bundle: 'free' },
+        { q: "Why does Remember the Date work?", a: "Grief keeps a calendar. They already know what today is; the message tells them they are not carrying it alone.", bundle: 'free' },
+        { q: "What are the three kinds of date?", a: "Their date, the anniversary of the loss, and the firsts.", bundle: 'free' },
+        { q: "Does mentioning the date remind them of the loss?", a: "No. They have been thinking about it all week.", bundle: 'pro' },
+        { q: "How long should the message be?", a: "Short. You are not asking them to talk, only letting them know you know.", bundle: 'pro' },
+        { q: "What if you missed the date?", a: "Say so the next day. A late word still tells them someone remembered.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Talk About Them",
+      description: "",
+      cards: [
+        { q: "What is Talk About Them?", a: "Saying the name of the person who died, and sharing something you remember about them.", bundle: 'free' },
+        { q: "How does Talk About Them sound?", a: "\"I was thinking about your dad's terrible jokes today.\"", bundle: 'free' },
+        { q: "When is Talk About Them the right one?", a: "When the person comes to mind — a song, a place, a photo — or when nobody else says their name.", bundle: 'free' },
+        { q: "Why does Talk About Them work?", a: "Grieving people fear that everyone will stop mentioning the one they lost. Hearing the name says their person mattered.", bundle: 'free' },
+        { q: "What are the three ways in?", a: "A memory of your own, something that reminded you, and an invitation to tell you about them.", bundle: 'free' },
+        { q: "What if they cry?", a: "Tears are not a sign you got it wrong. They are often a relief.", bundle: 'pro' },
+        { q: "What if you did not know the person well?", a: "Use the invitation: \"Tell me about her. What was she like?\"", bundle: 'pro' },
+        { q: "What does it mean that the person can be \"forgotten twice\"?", a: "After the funeral the name disappears from conversation, and the loss feels repeated.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mend a Clumsy Word",
+      description: "",
+      cards: [
+        { q: "What is Mend a Clumsy Word?", a: "Going back to something clumsy you said about their loss, owning it briefly, and handing the conversation back.", bundle: 'free' },
+        { q: "How does Mend a Clumsy Word sound?", a: "\"I said something clumsy last week. I'm sorry.\"", bundle: 'free' },
+        { q: "When is Mend a Clumsy Word the right one?", a: "When you said a cliché, gave unasked advice, made it about you, or went missing.", bundle: 'free' },
+        { q: "Why does Mend a Clumsy Word work?", a: "The silence after a clumsy word does more damage than the word. Going back shows their feelings matter more than your embarrassment.", bundle: 'free' },
+        { q: "What are the three things you might be mending?", a: "A clumsy phrase, making it about you, and going missing.", bundle: 'free' },
+        { q: "When does Mend a Clumsy Word go wrong?", a: "When the apology is long. Then they end up comforting you.", bundle: 'pro' },
+        { q: "Which phrases often need mending?", a: "\"At least she had a long life\", \"everything happens for a reason\", and \"I know exactly how you feel\".", bundle: 'pro' },
+        { q: "How is Mend a Clumsy Word different from Mend a Drift in Making Friends Pt. 2?", a: "Mend a Drift repairs a friendship that faded. Mend a Clumsy Word repairs something you said or didn't say about a loss.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Comfort In, Complain Out",
+      description: "",
+      cards: [
+        { q: "What is Comfort In, Complain Out?", a: "Comfort goes inward, to the person at the centre. Complaining, worry and tiredness go outward, to someone further away.", bundle: 'free' },
+        { q: "How does Comfort In, Complain Out sound?", a: "\"This must be so much harder for you. How can I help?\"", bundle: 'free' },
+        { q: "When is Comfort In, Complain Out the right one?", a: "When your own feelings — sadness, tiredness, frustration — want to go to the person who is hurting most.", bundle: 'free' },
+        { q: "Why does Comfort In, Complain Out work?", a: "Your feelings are real, but the person at the centre should never have to look after you.", bundle: 'free' },
+        { q: "What are the three ways to use it?", a: "Comfort in, complain out, and keep your share small.", bundle: 'free' },
+        { q: "Who described Comfort In, Complain Out?", a: "Susan Silk and Barry Goldman, in their Ring Theory.", bundle: 'pro' },
+        { q: "How do you picture the rings?", a: "The person hurting most in the centre, the closest people in the next ring, and so on outward.", bundle: 'pro' },
+        { q: "Are you allowed to complain at all?", a: "Yes — to someone in a bigger ring than yours, such as a partner or a friend outside the family.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Keep Showing Up** — an ordinary day, a marked day, or the person comes to mind: ask, mark the date, or share a memory?\n• **Keep It About Them** — something of yours is in the way: your words, your feelings, or your silence?\n• **All Five Strategies** — everything mixed, with no warning about the moment\n\nOne question decides most of it: what does this moment need?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Keep Showing Up, Keep It About Them, and All Five Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Keep Showing Up?", a: "What kind of day is this — ordinary, marked, or one where the person comes to mind?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Keep Showing Up?", a: "Saying nothing, while waiting for a better moment that never comes.", bundle: 'pro' },
+        { q: "What is the question that decides Keep It About Them?", a: "What of mine is in the way — something I said, something I feel, or something I didn't do?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Keep It About Them?", a: "A long apology or explanation, which ends with them comforting you.", bundle: 'pro' },
+        { q: "Tomorrow is the first Mother's Day since her mum died. Which strategy?", a: "Remember the Date.", bundle: 'pro' },
+        { q: "You have not said a word since the funeral a month ago. Which strategy?", a: "Check In Later.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in All Five Strategies?", a: "Waiting for a better moment. In grief, the late word is still better than none.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Real Check-In** — Check In Later → Comfort In, Complain Out → Talk About Them\n2. **The Clean Repair** — Mend a Clumsy Word → Check In Later → Talk About Them\n3. **Mark the Day** — Remember the Date → Talk About Them → Comfort In, Complain Out\n\nEach one opens a door, keeps the attention on them, and lets the person they lost into the conversation.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Real Check-In, The Clean Repair, and Mark the Day.", bundle: 'pro' },
+        { q: "What is the order in The Real Check-In?", a: "Check In Later, Comfort In, Complain Out, then Talk About Them.", bundle: 'pro' },
+        { q: "Why does Comfort In, Complain Out come second in The Real Check-In?", a: "Grieving people often apologise and ask about you. Answering at length closes the door the question just opened.", bundle: 'pro' },
+        { q: "What is the order in The Clean Repair?", a: "Mend a Clumsy Word, Check In Later, then Talk About Them.", bundle: 'pro' },
+        { q: "Why apologise before you ask how they are?", a: "Asking first makes the question feel like a run-up to your apology.", bundle: 'pro' },
+        { q: "What is the order in Mark the Day?", a: "Remember the Date, Talk About Them, then Comfort In, Complain Out.", bundle: 'pro' },
+        { q: "Why does Comfort In, Complain Out come last in Mark the Day?", a: "If they ask how you are, you keep your share small, because today they are at the centre.", bundle: 'pro' },
+        { q: "What do people usually do instead of Mark the Day?", a: "Wait for them to mention the date, which they rarely will.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack, and what goes wrong in each:\n\n• **\"I'm Fine\"** — pushing until they explain, or never asking again\n• **You Said the Wrong Thing** — avoiding them, or apologising at length\n• **Everyone Else Stopped Asking** — assuming someone else is asking\n• **The Firsts** — acting as if it is an ordinary day\n• **Your Own Grief** — taking your feelings to the person at the centre\n\nMost of them go wrong through silence, not through words.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "\"I'm Fine\", You Said the Wrong Thing, Everyone Else Stopped Asking, The Firsts, and Your Own Grief.", bundle: 'pro' },
+        { q: "What should you avoid with \"I'm Fine\"?", a: "Arguing with it. Accept it today and ask again another day.", bundle: 'pro' },
+        { q: "What is the main strategy for You Said the Wrong Thing?", a: "Mend a Clumsy Word — own it in a sentence, then turn back to them.", bundle: 'pro' },
+        { q: "What should you avoid with You Said the Wrong Thing?", a: "Explaining what you really meant.", bundle: 'pro' },
+        { q: "What is the main strategy for Everyone Else Stopped Asking?", a: "Check In Later — be the one who still asks.", bundle: 'pro' },
+        { q: "What is the main strategy for The Firsts?", a: "Remember the Date — say you know what today is.", bundle: 'pro' },
+        { q: "What is the main strategy for Your Own Grief?", a: "Comfort In, Complain Out — comfort towards them, your worries out to someone further away.", bundle: 'pro' },
+        { q: "What do most of the challenges have in common?", a: "They go wrong through silence more often than through the wrong words.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Reminders** — mentioning it will upset them\n• **Fixing** — if I can't make it better, there's no point\n• **Space** — they need space, so I'll say nothing\n• **Timing** — it's been too long to say anything now\n\nEach one sounds like kindness, and each one ends in silence.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Reminders, Fixing, Space, and Timing.", bundle: 'pro' },
+        { q: "What is true instead of \"mentioning it will upset them\"?", a: "You cannot remind someone of a loss they think about every day. You can show them they are not alone with it.", bundle: 'pro' },
+        { q: "What does the belief \"I have to fix it\" quietly cost?", a: "Unasked advice, and the visits you skip because there is nothing to solve.", bundle: 'pro' },
+        { q: "What part of \"they need space\" is true, and what gets added?", a: "Some people want quiet. What gets added is \"so I'll say nothing for weeks\".", bundle: 'pro' },
+        { q: "How can you give space without going silent?", a: "Ask what they want, or send a short message that asks for no reply.", bundle: 'pro' },
+        { q: "What is true instead of \"it's been too long\"?", a: "A late word is almost always welcome, often more so, because hardly anyone else is still saying anything.", bundle: 'pro' },
+        { q: "Why does the silence get harder to break over time?", a: "Every week the gap grows, and saying something feels more like admitting you forgot.", bundle: 'pro' },
+        { q: "What do all four mindsets have in common?", a: "Each one sounds like kindness, and each one ends in silence.", bundle: 'pro' },
+      ]
+    },
+  ],
+  speakingupasacustomer: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for speaking up as a customer when something has gone wrong:\n\n1. Say What Went Wrong\n2. Say What You Want\n3. Friendly and Firm\n4. Repeat the Request\n5. Ask Who Can Help\n6. Confirm the Fix\n\nThree open the complaint, and three get it sorted.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Say What Went Wrong, Say What You Want, Friendly and Firm, Repeat the Request, Ask Who Can Help, and Confirm the Fix.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Three open the complaint — the fact, the fix, and the tone. Three get it sorted — ask again, find who decides, and say back the promise.", bundle: 'free' },
+        { q: "What is the rule underneath the whole pack?", a: "Friendly to the person, clear about the problem.", bundle: 'free' },
+        { q: "Why be friendly to the person at the desk?", a: "They almost never caused the mistake — and people go further for a customer who is on their side.", bundle: 'free' },
+        { q: "What should you decide before you start?", a: "What you want: a refund, a replacement, a repair, or a correction.", bundle: 'free' },
+        { q: "How is this pack different from Making Requests?", a: "Making Requests asks for something that is the other person's to give. Here you are asking for something you have already paid for or been promised.", bundle: 'pro' },
+        { q: "How is Repeat the Request different from Broken Record?", a: "The idea is the same, but here it is used only as a customer, and always together with a friendly tone to the person.", bundle: 'pro' },
+        { q: "What is the question to ask yourself in the middle of a complaint?", a: "Have I said it yet, or have they answered? Before, check what is missing. After, listen to what they said.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say What Went Wrong",
+      description: "",
+      cards: [
+        { q: "What is Say What Went Wrong?", a: "Stating the problem as a plain fact — what you bought or booked, what happened, and when.", bundle: 'free' },
+        { q: "How does Say What Went Wrong sound?", a: "\"The jacket I bought last week has a broken zip.\"", bundle: 'free' },
+        { q: "When is Say What Went Wrong the right one?", a: "At the start, when they do not yet know what the problem is.", bundle: 'free' },
+        { q: "Why does Say What Went Wrong work?", a: "A fact is something they can act on, and it is about the thing, not the person, so nobody has to defend themselves.", bundle: 'free' },
+        { q: "What are the three ways to say what went wrong?", a: "The thing and the fault, what was promised and what happened, and the fact with the proof.", bundle: 'free' },
+        { q: "When does Say What Went Wrong go wrong?", a: "When it turns into blame — \"you sold me a broken jacket\" — or a long story about how annoyed you are.", bundle: 'pro' },
+        { q: "What is Say What Went Wrong better than, and why?", a: "Starting with how angry you are. The anger puts them on the defensive before they know what the problem is.", bundle: 'pro' },
+        { q: "Which strategy usually comes straight after Say What Went Wrong?", a: "Say What You Want — the fix, so they have something to say yes to.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say What You Want",
+      description: "",
+      cards: [
+        { q: "What is Say What You Want?", a: "Naming the fix you are asking for: money back, a new one, a repair, or a corrected bill.", bundle: 'free' },
+        { q: "How does Say What You Want sound?", a: "\"I'd like to exchange it, please.\"", bundle: 'free' },
+        { q: "When is Say What You Want the right one?", a: "Once they know the problem, and before they offer their own fix.", bundle: 'free' },
+        { q: "Why does Say What You Want work?", a: "It turns a complaint into a question they can say yes to. Without it, they guess — usually the smallest fix.", bundle: 'free' },
+        { q: "What are the three kinds of fix?", a: "A replacement, your money back, and a correction with a time.", bundle: 'free' },
+        { q: "When does Say What You Want go wrong?", a: "When you have not decided what you want, and accept the first offer, then feel cheated later.", bundle: 'pro' },
+        { q: "What is Say What You Want better than, and why?", a: "Waiting to see what they offer. They will usually offer an apology or a voucher.", bundle: 'pro' },
+        { q: "What if you do not know what is fair to ask for?", a: "Name two fixes you would accept: \"A repair or a partial refund would both be fine.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Friendly and Firm",
+      description: "",
+      cards: [
+        { q: "What is Friendly and Firm?", a: "Being warm to the person and clear about the problem, in the same breath.", bundle: 'free' },
+        { q: "How does Friendly and Firm sound?", a: "\"I know it's not your fault. I still need this sorted today.\"", bundle: 'free' },
+        { q: "When is Friendly and Firm the right one?", a: "When the person in front of you did not cause it, or when you feel yourself tipping into \"never mind\" or into anger.", bundle: 'free' },
+        { q: "Why does Friendly and Firm work?", a: "You do not have to choose between kind and clear, and people go further for a customer who is on their side.", bundle: 'free' },
+        { q: "What are the three ways to hold both?", a: "Clear them and keep the need, thank them and then the point, and say the feeling small and the need clearly.", bundle: 'free' },
+        { q: "What are the two ways to get it wrong?", a: "Too friendly, and you drop it. Too firm, and you take it out on the person at the desk.", bundle: 'pro' },
+        { q: "What is Friendly and Firm better than, and why?", a: "Being only polite, or only firm. Each half alone loses either the fix or the person.", bundle: 'pro' },
+        { q: "What does \"the feeling small, the need clear\" sound like?", a: "\"I'm annoyed, but not with you. I just need a working heater.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Repeat the Request",
+      description: "",
+      cards: [
+        { q: "What is Repeat the Request?", a: "Showing you heard them, then saying your request again — calmly, and in the same words.", bundle: 'free' },
+        { q: "How does Repeat the Request sound?", a: "\"I understand. I'd still like a refund.\"", bundle: 'free' },
+        { q: "When is Repeat the Request the right one?", a: "When they slide away — with an explanation, another offer, or a change of subject.", bundle: 'free' },
+        { q: "Why does Repeat the Request work?", a: "Each new argument gives them a new point to answer. The same request keeps it on one thing.", bundle: 'free' },
+        { q: "What are the three ways to bring it back?", a: "Hear them then repeat, turn down the other offer then repeat, and bring it back after a detour.", bundle: 'free' },
+        { q: "When does Repeat the Request go wrong?", a: "When it gets louder each time, or comes with a new reason each time.", bundle: 'pro' },
+        { q: "Why use the same words?", a: "They tell the other person, without any heat, that you have not changed your mind.", bundle: 'pro' },
+        { q: "What comes after Repeat the Request if the answer is still no?", a: "Ask Who Can Help — the person may not be allowed to say yes.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask Who Can Help",
+      description: "",
+      cards: [
+        { q: "What is Ask Who Can Help?", a: "Asking, politely, for someone who can decide when the person in front of you cannot.", bundle: 'free' },
+        { q: "How does Ask Who Can Help sound?", a: "\"Is there someone who can decide this?\"", bundle: 'free' },
+        { q: "When is Ask Who Can Help the right one?", a: "When their answer is \"I can't\" or \"I'm not allowed\", rather than \"no\".", bundle: 'free' },
+        { q: "Why does Ask Who Can Help work?", a: "Many no's are really \"I'm not allowed to\", and the person is often glad to hand it on.", bundle: 'free' },
+        { q: "What are the three ways to ask?", a: "Who decides, a name and a time, and the next step in writing.", bundle: 'free' },
+        { q: "When does Ask Who Can Help go wrong?", a: "When it is said as a threat — \"get me your manager\" — in the first minute.", bundle: 'pro' },
+        { q: "What is Ask Who Can Help better than, and why?", a: "Arguing with someone who has no power to say yes. It wastes both your time.", bundle: 'pro' },
+        { q: "How do you ask for the manager without it sounding like a complaint about the person?", a: "Say so: \"This isn't about you. I just need someone who can decide.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Confirm the Fix",
+      description: "",
+      cards: [
+        { q: "What is Confirm the Fix?", a: "Saying back what has been agreed: what will happen, by when, and how you will know.", bundle: 'free' },
+        { q: "How does Confirm the Fix sound?", a: "\"So the new one arrives Tuesday, and I'll get an email. Thanks.\"", bundle: 'free' },
+        { q: "When is Confirm the Fix the right one?", a: "When they have said yes, before you leave or hang up.", bundle: 'free' },
+        { q: "Why does Confirm the Fix work?", a: "Promises at a counter are easy to forget. Saying them back catches mistakes and gives you both the same picture.", bundle: 'free' },
+        { q: "What are the three things to confirm?", a: "What and when, a reference or a name, and the promise in writing.", bundle: 'free' },
+        { q: "What do you do with a vague promise?", a: "Firm it up: \"sometime\" becomes a day, \"should be fine\" becomes a yes.", bundle: 'pro' },
+        { q: "Why ask for it in writing in an online chat?", a: "The chat closes, and the promise goes with it.", bundle: 'pro' },
+        { q: "When is a complaint really sorted?", a: "When you both say the fix the same way.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Open the Complaint** — the fact, the fix, or the warmth: which one is still missing?\n• **Get It Sorted** — they said no, can't, or yes: repeat, ask who decides, or confirm?\n• **All Six Strategies** — everything mixed, with no warning about which moment you are in\n\nOne question decides most of it: have I said it yet, or have they answered?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Open the Complaint, Get It Sorted, and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Open the Complaint?", a: "What is missing from what I have said — the fact, the fix, or the warmth?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Open the Complaint?", a: "Stopping after the problem and waiting, so they choose the smallest fix.", bundle: 'pro' },
+        { q: "What is the question that decides Get It Sorted?", a: "What did they just say — no, can't, or yes?", bundle: 'pro' },
+        { q: "They said \"I'm not allowed to do that.\" Which strategy?", a: "Ask Who Can Help.", bundle: 'pro' },
+        { q: "They offered a voucher instead of a refund. Which strategy?", a: "Repeat the Request.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Get It Sorted?", a: "Arguing with \"can't\". Someone who is not allowed to say yes cannot be talked into it.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in All Six Strategies?", a: "Getting louder instead of switching strategy.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Full Complaint** — Say What Went Wrong → Say What You Want → Confirm the Fix\n2. **Ask Again, Then Go Up** — Repeat the Request → Friendly and Firm → Ask Who Can Help\n3. **The Right Person** — Say What Went Wrong → Ask Who Can Help → Say What You Want → Confirm the Fix\n\nEach one ends with something you can hold on to: a promise, or the name of the person who can make one.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Full Complaint, Ask Again Then Go Up, and The Right Person.", bundle: 'pro' },
+        { q: "What is the order in The Full Complaint?", a: "Say What Went Wrong, Say What You Want, Confirm the Fix.", bundle: 'pro' },
+        { q: "What happens if you skip the middle step of The Full Complaint?", a: "They choose the fix for you.", bundle: 'pro' },
+        { q: "What is the order in Ask Again, Then Go Up?", a: "Repeat the Request, Friendly and Firm, Ask Who Can Help.", bundle: 'pro' },
+        { q: "Why does asking who can help come last in that sequence?", a: "By then you have asked again and been kind, so it lands as help, not as a threat.", bundle: 'pro' },
+        { q: "What is the order in The Right Person?", a: "Say What Went Wrong, Ask Who Can Help, Say What You Want, Confirm the Fix.", bundle: 'pro' },
+        { q: "What does the new person need in The Right Person?", a: "The fix, straight away — not the whole story again.", bundle: 'pro' },
+        { q: "What is the usual mistake in all three?", a: "Telling the whole story again and again, a little angrier each time.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack, and what goes wrong in each:\n\n• **The Wrong Bill** — arguing about whose mistake it was\n• **That's Our Policy** — arguing with the rule instead of asking who can bend it\n• **A Restaurant Mistake** — \"it's fine\" at the table, then complaining all the way home\n• **Nobody Takes Responsibility** — telling the story again to every new person\n• **Online Chat** — one long, angry paragraph\n\nEach one has its own way of pulling you off your request.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Wrong Bill, That's Our Policy, A Restaurant Mistake, Nobody Takes Responsibility, and Online Chat.", bundle: 'pro' },
+        { q: "What should you avoid with The Wrong Bill?", a: "Paying it anyway and planning to sort it out later.", bundle: 'pro' },
+        { q: "Which two strategies fit That's Our Policy best?", a: "Repeat the Request and Ask Who Can Help.", bundle: 'pro' },
+        { q: "What should you avoid with That's Our Policy?", a: "Telling them the policy is stupid. They did not write it.", bundle: 'pro' },
+        { q: "Which strategy fits A Restaurant Mistake best, and why?", a: "Friendly and Firm — the waiter is rarely the cause.", bundle: 'pro' },
+        { q: "What is the main strategy for Nobody Takes Responsibility?", a: "Ask Who Can Help — and get a name.", bundle: 'pro' },
+        { q: "What should you avoid in Online Chat?", a: "Writing everything in one long message.", bundle: 'pro' },
+        { q: "Why confirm the fix in writing in an online chat?", a: "When the chat closes, the promise goes with it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Complaining** — complaining is rude\n• **Hassle** — it's not worth the trouble\n• **Being Difficult** — they'll think I'm difficult\n• **Blame** — it's not her fault, so I can't ask her\n\nAll four keep you quiet when one kind, clear sentence would fix it.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Complaining, Hassle, Being Difficult, and Blame.", bundle: 'pro' },
+        { q: "What is true instead of \"complaining is rude\"?", a: "Rude is about how you say it, not whether you say it.", bundle: 'pro' },
+        { q: "What does \"it's not worth the trouble\" quietly cost?", a: "The broken thing kept, the wrong charge paid, and the annoyance every time you see it.", bundle: 'pro' },
+        { q: "What part of \"they'll think I'm difficult\" is true?", a: "They might, for a minute. Nobody enjoys a problem at the end of a shift.", bundle: 'pro' },
+        { q: "What gets added to \"they'll think I'm difficult\"?", a: "\"So I should stay quiet.\"", bundle: 'pro' },
+        { q: "What is true instead of \"it's not her fault, so I can't ask her\"?", a: "She did not cause it, and she can still help. Both are true.", bundle: 'pro' },
+        { q: "Who do you need — the person who made the mistake, or someone else?", a: "The person who can fix it.", bundle: 'pro' },
+        { q: "What do all four mindsets have in common?", a: "They keep you quiet when one kind, clear sentence would fix it.", bundle: 'pro' },
+      ]
+    },
+  ],
+  gettingtoknowsomeone: [
+    {
+      name: "Core Idea",
+      description: "Five strategies for getting to know who someone is, beyond their job title:\n\n1. Beyond the Job\n2. Where They're From\n3. What Shaped Them\n4. Find the Shared \"We\"\n5. Ask About the Difference\n\nThree open their story — now, where, and how — and two link it to yours.",
+      cards: [
+        { q: "What are the five strategies in this pack?", a: "Beyond the Job, Where They're From, What Shaped Them, Find the Shared \"We\", Ask About the Difference.", bundle: 'free' },
+        { q: "How do the five fit together?", a: "Three open their story: what they love now, where they started, how they got here. Two link it to yours: what you share, and where you differ.", bundle: 'free' },
+        { q: "What is this pack about?", a: "Getting to know who someone is, not just what they do.", bundle: 'free' },
+        { q: "Which strategy is a statement, not a question?", a: "Find the Shared \"We\". It names what you have in common, then hands the conversation back.", bundle: 'free' },
+        { q: "Which three strategies open their story?", a: "Beyond the Job, Where They're From and What Shaped Them.", bundle: 'free' },
+        { q: "What do all five avoid?", a: "Treating the person as a job title, a place on a map, or an example of a group.", bundle: 'pro' },
+        { q: "How is this pack different from Making Friends?", a: "Making Friends is about turning someone you know into a friend. This pack is about understanding who someone is, in the conversation itself.", bundle: 'pro' },
+        { q: "What keeps a conversation from feeling like an interview?", a: "Mixing questions with a real \"we\", so it does not all go in one direction.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Beyond the Job",
+      description: "",
+      cards: [
+        { q: "What is Beyond the Job?", a: "Asking about what someone cares about, not about their title.", bundle: 'free' },
+        { q: "How does Beyond the Job sound?", a: "\"What do you love doing when you're not working?\"", bundle: 'free' },
+        { q: "When is Beyond the Job the right one?", a: "When they have given you a role or a title, and nothing else.", bundle: 'free' },
+        { q: "What does Beyond the Job give the other person?", a: "A question that wakes up something they enjoy, instead of the flat answer they give about work.", bundle: 'free' },
+        { q: "What are the three ways to ask?", a: "Outside the role, the best part of the week, and back then.", bundle: 'free' },
+        { q: "When does Beyond the Job go wrong?", a: "When you ask another question about the job itself. \"What does a project manager actually do?\" keeps you at the desk.", bundle: 'pro' },
+        { q: "How is Beyond the Job different from What Shaped Them?", a: "Beyond the Job asks what they love now. What Shaped Them asks how they got to where they are.", bundle: 'pro' },
+        { q: "Which strategy often follows Beyond the Job?", a: "What Shaped Them. Once they tell you what they love, ask how they got into it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Where They're From",
+      description: "",
+      cards: [
+        { q: "What is Where They're From?", a: "Asking about the place someone comes from, and what it meant to them.", bundle: 'free' },
+        { q: "How does Where They're From sound?", a: "\"What was it like growing up there?\"", bundle: 'free' },
+        { q: "When is Where They're From the right one?", a: "When they mention a place, especially one you know nothing about.", bundle: 'free' },
+        { q: "What does Where They're From give the other person?", a: "A chance to share a memory, not just the name of a town.", bundle: 'free' },
+        { q: "What are the three ways to ask?", a: "Growing up there, what they miss, and what it gave them.", bundle: 'free' },
+        { q: "When does Where They're From go wrong?", a: "When it stops at the map, or asks where they \"really\" come from.", bundle: 'pro' },
+        { q: "How is Where They're From different from Ask About the Difference?", a: "Where They're From asks about the place. Ask About the Difference asks how a difference has been for them.", bundle: 'pro' },
+        { q: "Which strategy often follows Where They're From?", a: "Ask About the Difference, once you have heard the story around it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What Shaped Them",
+      description: "",
+      cards: [
+        { q: "What is What Shaped Them?", a: "Asking about a turning point: a choice, a person, or a moment that made them who they are.", bundle: 'free' },
+        { q: "How does What Shaped Them sound?", a: "\"How did you end up doing this?\"", bundle: 'free' },
+        { q: "When is What Shaped Them the right one?", a: "When you hear a change, a first, a \"nearly\" or an \"only when\".", bundle: 'free' },
+        { q: "What does What Shaped Them give the other person?", a: "An invitation to tell a story they are rarely asked for.", bundle: 'free' },
+        { q: "What are the three things to ask about?", a: "The path, the person, and the choice.", bundle: 'free' },
+        { q: "When does What Shaped Them go wrong?", a: "When it comes too early, before anything else has been shared. It asks the most of them.", bundle: 'pro' },
+        { q: "How is What Shaped Them different from Where They're From?", a: "Where They're From asks where they started. What Shaped Them asks what changed along the way.", bundle: 'pro' },
+        { q: "Where does What Shaped Them come in the sequences?", a: "In the middle of The Real Introduction, and last in Start Close, Go Deeper.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Find the Shared \"We\"",
+      description: "",
+      cards: [
+        { q: "What is Find the Shared \"We\"?", a: "Saying out loud, as a \"we\", something the two of you share.", bundle: 'free' },
+        { q: "How does Find the Shared \"We\" sound?", a: "\"So we're both the eldest. That explains a lot.\"", bundle: 'free' },
+        { q: "When is Find the Shared \"We\" the right one?", a: "When something they say matches your life, even something small.", bundle: 'free' },
+        { q: "What does Find the Shared \"We\" give the other person?", a: "The feeling of being on the same side as you, and the conversation back.", bundle: 'free' },
+        { q: "What are the three kinds of \"we\"?", a: "A shared fact, a shared past, and a shared spot right now.", bundle: 'free' },
+        { q: "When does Find the Shared \"We\" go wrong?", a: "When the shared thing is stretched or fake, or when it turns into a long story about you.", bundle: 'pro' },
+        { q: "How is Find the Shared \"We\" different from the other four strategies?", a: "It is a statement, not a question. The other four ask.", bundle: 'pro' },
+        { q: "Where does Find the Shared \"We\" come in the sequences?", a: "Last in The Real Introduction and Bridge the Gap, and first in Start Close, Go Deeper.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask About the Difference",
+      description: "",
+      cards: [
+        { q: "What is Ask About the Difference?", a: "Asking, with real curiosity, about something in their life that is different from yours.", bundle: 'free' },
+        { q: "How does Ask About the Difference sound?", a: "\"What surprised you most when you moved here?\"", bundle: 'free' },
+        { q: "When is Ask About the Difference the right one?", a: "When their life differs from yours, and you know enough to ask how it was for them.", bundle: 'free' },
+        { q: "What does Ask About the Difference give the other person?", a: "Interest in their own experience, instead of polite silence around it.", bundle: 'free' },
+        { q: "What are the three ways to ask?", a: "What surprised them, what you would get wrong, and how it was in their life.", bundle: 'free' },
+        { q: "When does Ask About the Difference go wrong?", a: "When it asks about their group instead of them, and makes them a spokesperson.", bundle: 'pro' },
+        { q: "How is Ask About the Difference different from Find the Shared \"We\"?", a: "One asks about where your lives differ. The other names where they meet.", bundle: 'pro' },
+        { q: "Which strategy often follows Ask About the Difference?", a: "Find the Shared \"We\", so the difference is not the last word.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Pick the Question** — a role, a place, or a change: which question fits?\n• **Same or Different** — something you share, something different, or a place you do not know yet\n• **All Five Strategies** — everything mixed, with no warning about what comes next\n\nOne question runs through all three: what did they just hand me?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Pick the Question, Same or Different, and All Five Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Pick the Question?", a: "What did they just hand me — a role, a place, or a change?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Pick the Question?", a: "Meeting a role with another question about the role.", bundle: 'pro' },
+        { q: "They mention a change, a first, or a \"nearly\". Which strategy?", a: "What Shaped Them.", bundle: 'pro' },
+        { q: "What is the question that decides Same or Different?", a: "Is this mine too, not mine at all, or not yet known?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Same or Different?", a: "Jumping to the difference before you know anything about their life there.", bundle: 'pro' },
+        { q: "They mention something you share. Which strategy?", a: "Find the Shared \"We\".", bundle: 'pro' },
+        { q: "What is the usual wrong choice across all five?", a: "Question after question with no \"we\", until it feels like an interview.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Real Introduction** — Beyond the Job → What Shaped Them → Find the Shared \"We\"\n2. **Bridge the Gap** — Where They're From → Ask About the Difference → Find the Shared \"We\"\n3. **Start Close, Go Deeper** — Find the Shared \"We\" → Ask About the Difference → What Shaped Them\n\nEach one is a single conversation that goes one step further than small talk.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Real Introduction, Bridge the Gap, and Start Close, Go Deeper.", bundle: 'pro' },
+        { q: "What is the order in The Real Introduction?", a: "Beyond the Job, What Shaped Them, Find the Shared \"We\".", bundle: 'pro' },
+        { q: "Why does the \"we\" come last in The Real Introduction?", a: "Their story comes first. Lead with the \"we\", and it can sound as if the conversation is about you.", bundle: 'pro' },
+        { q: "What is the order in Bridge the Gap?", a: "Where They're From, Ask About the Difference, Find the Shared \"We\".", bundle: 'pro' },
+        { q: "Why does the place come before the difference in Bridge the Gap?", a: "Then the question is about a life you have heard about, not only about the difference.", bundle: 'pro' },
+        { q: "What is the order in Start Close, Go Deeper?", a: "Find the Shared \"We\", Ask About the Difference, What Shaped Them.", bundle: 'pro' },
+        { q: "Why does What Shaped Them come last in Start Close, Go Deeper?", a: "It asks the most of them, and by then you have earned it.", bundle: 'pro' },
+        { q: "What is the usual mistake these sequences fix?", a: "Staying on the job or the weather, and saying goodbye without knowing them.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **Different Norms** — something normal for them is not normal for you\n• **New in the Group** — everyone knows each other but you, or but them\n• **The Short Answers** — one word back, every time\n• **Nothing in Common** — different age, tastes and life\n• **Shop Talk** — you know their job and not them\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Different Norms, New in the Group, The Short Answers, Nothing in Common, and Shop Talk.", bundle: 'pro' },
+        { q: "What should you avoid with Different Norms?", a: "Asking them to explain a whole culture.", bundle: 'pro' },
+        { q: "Which strategy works best for Different Norms?", a: "Ask About the Difference — how is it for them?", bundle: 'pro' },
+        { q: "What is strongest when you are New in the Group?", a: "Find the Shared \"We\". One small thing in common makes you part of something.", bundle: 'pro' },
+        { q: "What goes wrong with The Short Answers?", a: "Firing more questions until it feels like an interview, or giving up.", bundle: 'pro' },
+        { q: "Why does What Shaped Them help with short answers?", a: "It asks for a story, which is hard to answer in one word.", bundle: 'pro' },
+        { q: "What should you avoid with Nothing in Common?", a: "Deciding in the first minute.", bundle: 'pro' },
+        { q: "What is the main strategy for Shop Talk?", a: "Beyond the Job: step past the role, kindly.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Background** — asking about where someone comes from is rude\n• **Common Ground** — we have nothing in common\n• **Getting It Wrong** — I might say something ignorant\n• **Small Talk** — keeping it light is good manners\n\nEach one keeps people at the distance where you first met them.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Background, Common Ground, Getting It Wrong, and Small Talk.", bundle: 'pro' },
+        { q: "What is true instead of \"asking about background is rude\"?", a: "A curious question about their own story is a compliment. Assuming is what is rude.", bundle: 'pro' },
+        { q: "What does never asking about background cost?", a: "Some people only ever get asked about the weather.", bundle: 'pro' },
+        { q: "What is true instead of \"we have nothing in common\"?", a: "You do not know yet. A job, an age and a hobby are not a person.", bundle: 'pro' },
+        { q: "What is true about \"I might say something ignorant\"?", a: "You might. What gets added is \"so I'd better not ask at all\".", bundle: 'pro' },
+        { q: "Why is a question safer than a guess?", a: "A question about their own experience lets them tell you. A guess fills the gap with your idea.", bundle: 'pro' },
+        { q: "What does keeping things light quietly cost?", a: "People you have known for years, and still do not know.", bundle: 'pro' },
+        { q: "What do these four mindsets have in common?", a: "Each one keeps people at the distance where you first met them.", bundle: 'pro' },
+      ]
+    },
+  ],
+  whoyouare: [
+    {
+      name: "Core Idea",
+      description: "Five strategies for saying who you are, beyond the job title:\n\n1. The Roles You Play\n2. Where You Come From\n3. What Matters to You\n4. A Turning Point\n5. Correct the Label\n\nFour show a side of you; one fixes the picture when someone has got you wrong.",
+      cards: [
+        { q: "What are the five strategies in this pack?", a: "The Roles You Play, Where You Come From, What Matters to You, A Turning Point, and Correct the Label.", bundle: 'free' },
+        { q: "How do the five fit together?", a: "Four show a side of you — your roles, your background, a value, a turning point. One fixes the picture when someone has got you wrong.", bundle: 'free' },
+        { q: "What does this pack add to Talking About Yourself?", a: "That pack is about how you answer. This one is about what you say about who you are.", bundle: 'free' },
+        { q: "What is the useful question when someone asks about you?", a: "What is their question reaching for — my days, my past, my reasons, or my story?", bundle: 'free' },
+        { q: "How long should each answer be?", a: "One sentence. If they want more, they will ask.", bundle: 'free' },
+        { q: "What is the most common mistake this pack fixes?", a: "Letting the job title stand for the whole of you.", bundle: 'pro' },
+        { q: "What do you do when someone tells you who you are instead of asking?", a: "Correct the label lightly, then give them one of the other four.", bundle: 'pro' },
+        { q: "Which pack does the other side of this, asking people about themselves?", a: "Getting to Know Someone.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Roles You Play",
+      description: "",
+      cards: [
+        { q: "What is The Roles You Play?", a: "Answering \"what do you do?\" with more than one role — the job and the other things you are.", bundle: 'free' },
+        { q: "How does The Roles You Play sound?", a: "\"I'm a nurse, but mostly I'm a dad of two and a very average drummer.\"", bundle: 'free' },
+        { q: "Why does one role fall short?", a: "One role is one box, and people file you by it.", bundle: 'free' },
+        { q: "What are the three ways to do it?", a: "The job plus one, leading with the role that matters most right now, and roles without a job.", bundle: 'free' },
+        { q: "What do two or three roles give the other person?", a: "The shape of a life, and a choice of where to go next.", bundle: 'free' },
+        { q: "What if the most important role right now is unpaid?", a: "Lead with it. \"Mainly I'm looking after my mum. I also work at the library.\"", bundle: 'pro' },
+        { q: "How does it help when you are retired or between jobs?", a: "It gives a real answer without a job title: \"Retired — so gardener, babysitter and slow runner.\"", bundle: 'pro' },
+        { q: "Which part is often the least \"you\" in the answer?", a: "The job title.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Where You Come From",
+      description: "",
+      cards: [
+        { q: "What is Where You Come From?", a: "One sentence about your background, and what it left you with.", bundle: 'free' },
+        { q: "How does Where You Come From sound?", a: "\"I grew up on a farm, so I still wake up at five.\"", bundle: 'free' },
+        { q: "Why add what it left you with?", a: "A place on its own is a fact on a form. The second half turns it into you.", bundle: 'free' },
+        { q: "What are the three ways to do it?", a: "The place and the habit, the family, and two places.", bundle: 'free' },
+        { q: "How long should it be?", a: "One sentence. If they want the longer version, they will ask.", bundle: 'free' },
+        { q: "What does it let you do before someone else does?", a: "Choose the frame for your own background.", bundle: 'pro' },
+        { q: "How do you answer when there is more than one place?", a: "Name both, and what each gave you: \"Loud at dinner, quiet on the bus.\"", bundle: 'pro' },
+        { q: "Why is the second half of the sentence useful for the other person?", a: "It gives them something to ask about.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What Matters to You",
+      description: "",
+      cards: [
+        { q: "What is What Matters to You?", a: "Saying one thing you value, plainly, in your own words.", bundle: 'free' },
+        { q: "How does What Matters to You sound?", a: "\"I care a lot about people being treated fairly. It's why I ended up in HR.\"", bundle: 'free' },
+        { q: "What does a value tell people that a hobby does not?", a: "What you will do when it matters, not just how you spend Saturday.", bundle: 'free' },
+        { q: "What are the three ways to say it?", a: "The value plainly, the value and where it shows, and the value and what it costs you.", bundle: 'free' },
+        { q: "How do you keep it from sounding like a speech?", a: "One sentence, ordinary words.", bundle: 'free' },
+        { q: "Why admit what a value costs you?", a: "It keeps it human: \"Fairness matters to me — which is why I argue with referees.\"", bundle: 'pro' },
+        { q: "Why is a value said first to a stranger risky?", a: "Without any story or trust behind it, it can sound like a slogan.", bundle: 'pro' },
+        { q: "Is naming a value preaching?", a: "No. One value in plain words is the most useful thing you can tell someone about yourself.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Turning Point",
+      description: "",
+      cards: [
+        { q: "What is A Turning Point?", a: "Naming one thing that shaped you — an event, a person or a choice — in a single sentence.", bundle: 'free' },
+        { q: "How does A Turning Point sound?", a: "\"Moving abroad at twenty changed everything for me.\"", bundle: 'free' },
+        { q: "Why does a turning point work?", a: "It explains you faster than a list of facts, and it shows you as someone who changed.", bundle: 'free' },
+        { q: "What are the three kinds of turning point?", a: "The event, the person, and the choice.", bundle: 'free' },
+        { q: "What do you do after the sentence?", a: "Stop. If they want the story, they will ask for it.", bundle: 'free' },
+        { q: "How do you handle a turning point that was a hard time?", a: "Give it lightly, in one sentence, so they are free to ask or not.", bundle: 'pro' },
+        { q: "Who decides how much of it to share?", a: "You do.", bundle: 'pro' },
+        { q: "What does the headline do that the full story does not?", a: "It invites the question instead of answering it in advance.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Correct the Label",
+      description: "",
+      cards: [
+        { q: "What is Correct the Label?", a: "Fixing someone's assumption about you lightly, with a smile and one true detail.", bundle: 'free' },
+        { q: "How does Correct the Label sound?", a: "\"I'm Swedish, yes, but I've never actually been skiing.\"", bundle: 'free' },
+        { q: "What is a label, usually?", a: "A shortcut, not an insult.", bundle: 'free' },
+        { q: "What are the three ways to correct a label?", a: "Yes, but; the update; and the swap.", bundle: 'free' },
+        { q: "What is the one thing to avoid?", a: "The lecture.", bundle: 'free' },
+        { q: "What does letting a label stand cost?", a: "The conversation carries on with the wrong person.", bundle: 'pro' },
+        { q: "What does a lecture cost?", a: "It fixes the label but loses the conversation.", bundle: 'pro' },
+        { q: "What do you do straight after the correction?", a: "Carry on — ask them something, or go back to the topic.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Show a Side of You** — someone asks about you: your roles, your background, a value, or a turning point?\n• **Fix the Picture** — someone has a picture of you: is it wrong, or only too small?\n• **All Five Strategies** — everything mixed, with no warning about which moment you are in\n\nOne question decides nearly all of it: did they ask about me, or tell me who I am?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Show a Side of You, Fix the Picture, and All Five Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Show a Side of You?", a: "What is their question reaching for — my days, my past, my reasons, or my story?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Show a Side of You?", a: "Answering everything with the job title.", bundle: 'pro' },
+        { q: "What is the question that decides Fix the Picture?", a: "Is their picture wrong, or only small?", bundle: 'pro' },
+        { q: "Their picture is wrong. Which strategy?", a: "Correct the Label.", bundle: 'pro' },
+        { q: "Their picture is only one role. Which strategy?", a: "The Roles You Play.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Fix the Picture?", a: "Correcting a picture that was only small, which sounds touchy.", bundle: 'pro' },
+        { q: "They ask how you ended up doing what you do. Which strategy?", a: "A Turning Point.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Fuller Picture** — The Roles You Play → Where You Come From → What Matters to You\n2. **Past the Label** — Correct the Label → Where You Come From → A Turning Point\n3. **How You Got Here** — A Turning Point → What Matters to You → The Roles You Play\n\nEach step answers what they just asked, and each one shows a little more of you.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Fuller Picture, Past the Label, and How You Got Here.", bundle: 'pro' },
+        { q: "What is the order in The Fuller Picture?", a: "The Roles You Play, Where You Come From, What Matters to You.", bundle: 'pro' },
+        { q: "Why does the value come last in The Fuller Picture?", a: "It goes from the outside in, and the value lands once there is enough between you.", bundle: 'pro' },
+        { q: "What is the order in Past the Label?", a: "Correct the Label, Where You Come From, A Turning Point.", bundle: 'pro' },
+        { q: "Why does the correction stay small in Past the Label?", a: "So the conversation can carry on, and the real background can fill the space the label left.", bundle: 'pro' },
+        { q: "What is the order in How You Got Here?", a: "A Turning Point, What Matters to You, The Roles You Play.", bundle: 'pro' },
+        { q: "Why does the story come before the value in How You Got Here?", a: "Said first, a value sounds like a slogan. After the story, it sounds like something you learned.", bundle: 'pro' },
+        { q: "Why end How You Got Here with your roles?", a: "It brings the conversation back to everyday life, so it does not stay heavy.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack, and what goes wrong in each:\n\n• **The Stereotype** — a guess from a group you belong to: letting it stand, or lecturing\n• **\"Where Are You Really From?\"** — the second question: answering the version they expected\n• **The Job Question** — the title becomes the whole of you\n• **Meeting the Family** — interview answers instead of a person\n• **The Reunion** — slipping back into the old part\n\nThree are about someone else's picture of you; two are about giving them a fuller one.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Stereotype, \"Where Are You Really From?\", The Job Question, Meeting the Family, and The Reunion.", bundle: 'pro' },
+        { q: "What is the main strategy for The Stereotype?", a: "Correct the Label — one light \"yes, but\".", bundle: 'pro' },
+        { q: "What should you avoid with a stereotype?", a: "The lecture.", bundle: 'pro' },
+        { q: "Who decides how much to say when asked where you are really from?", a: "You do — how much of your story, and in what order.", bundle: 'pro' },
+        { q: "What word should you avoid in The Job Question?", a: "\"Just\" in front of who you are.", bundle: 'pro' },
+        { q: "What goes wrong when meeting the family?", a: "They get interview answers — a CV, not a person.", bundle: 'pro' },
+        { q: "What goes wrong at a reunion?", a: "You slip back into the part they remember.", bundle: 'pro' },
+        { q: "What is the difference between an update and a defence at a reunion?", a: "One line is an update. Ten lines is a defence.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **An Ordinary Life** — my life isn't interesting enough to talk about\n• **Showing Off** — talking about what I care about is bragging\n• **Privacy** — if I tell them anything, they'll want everything\n• **Correcting People** — I'm easygoing, so I let labels go\n\nEach one keeps the real you out of the conversation.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "An Ordinary Life, Showing Off, Privacy, and Correcting People.", bundle: 'pro' },
+        { q: "What is true instead of \"my life isn't interesting\"?", a: "People are asking who you are, not for an exciting life.", bundle: 'pro' },
+        { q: "What does \"nothing much\" cost?", a: "It gives them nothing to hold, and they never find out who is there.", bundle: 'pro' },
+        { q: "What is the difference between bragging and being known?", a: "Bragging is about being better than them. Being known is about them knowing you.", bundle: 'pro' },
+        { q: "What part of the privacy belief is true?", a: "Some of your story is yours to keep, and nobody is owed all of it.", bundle: 'pro' },
+        { q: "What gets added to the privacy belief?", a: "The step from \"some of it is private\" to \"so I say nothing at all\".", bundle: 'pro' },
+        { q: "What does letting every label go quietly cost?", a: "Each label becomes the person they know, and the real you never arrives.", bundle: 'pro' },
+        { q: "Is a light correction the opposite of easygoing?", a: "No. A smile and one true line is still easygoing.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

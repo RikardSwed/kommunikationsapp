@@ -544,6 +544,36 @@ const packTags = {
   familygatherings: [
     'family', 'holidays', 'christmas', 'eid', 'diwali', 'relatives', 'personal questions', 'politics at the table', 'boundaries', 'leaving on time', 'in-laws'
   ],
+  makingfriends1: [
+    'making friends', 'friendship', 'invitations', 'making plans', 'new in town', 'work friends', 'loneliness', 'social anxiety', 'reaching out'
+  ],
+  makingfriends2: [
+    'friendship', 'making friends', 'keeping in touch', 'staying close', 'old friends', 'long-distance friends', 'reconnecting', 'opening up', 'loneliness'
+  ],
+  makingfriends3: [
+    'friendship', 'adult friendships', 'feeling left out', 'cancelling', 'one-sided friendship', 'hurt feelings', 'new partner', 'new baby', 'moving away', 'growing apart', 'honesty'
+  ],
+  namesandintroductions: [
+    'names', 'introductions', 'remembering names', 'forgotten names', 'meeting new people', 'pronunciation', 'introducing people', 'first meetings'
+  ],
+  phonecalls: [
+    'phone calls', 'phone anxiety', 'booking appointments', 'voicemail', 'customer service', 'calling back', 'making a call', 'landlord', 'everyday calls'
+  ],
+  whensomeoneishurting1: [
+    'grief', 'loss', 'bad news', 'condolences', 'comfort', 'support', 'sympathy', 'what to say', 'death', 'diagnosis', 'divorce', 'job loss'
+  ],
+  whensomeoneishurting2: [
+    'grief', 'bereavement', 'loss', 'supporting someone', 'after a death', 'hard news', 'following up', 'anniversaries', 'ring theory', 'condolences'
+  ],
+  speakingupasacustomer: [
+    'complaints', 'customer service', 'refunds', 'returns', 'wrong bill', 'policy', 'asking for a manager', 'assertiveness', 'being polite and firm'
+  ],
+  gettingtoknowsomeone: [
+    'getting to know someone', 'curiosity', 'questions', 'background', 'common ground', 'differences', 'connection', 'depth', 'new people'
+  ],
+  whoyouare: [
+    'talking about yourself', 'identity', 'background', 'values', 'stereotypes', 'where are you from', 'labels', 'self-disclosure', 'meeting new people'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -572,19 +602,19 @@ const packTags = {
 // emotionalboundaries merged into emotions and boundaries.
 const TOPICS = [
   // ── Getting a conversation going ──────────────────────────────────
-  { id: 'startingconversations', title: 'Starting Conversations',        packs: ['startingconnecting', 'setupstatement', 'startingconversations3', 'setupquestion', 'oconnor7', 'firststrategies', 'startingconversations1', 'startingconversations2', 'startingconversations4', 'exploringatopic'] },
+  { id: 'startingconversations', title: 'Starting Conversations',        packs: ['startingconnecting', 'setupstatement', 'startingconversations3', 'setupquestion', 'oconnor7', 'firststrategies', 'startingconversations1', 'startingconversations2', 'startingconversations4', 'exploringatopic', 'namesandintroductions', 'phonecalls'] },
   { id: 'questions',             title: 'Questions & Curiosity',         packs: ['deepquestions'] },
   { id: 'flowtransitions',       title: 'Flow & Transitions',            packs: ['conversational', 'transitions', 'reactingtounexpectedstatements', 'changingtopics', 'familygatherings'] },
   { id: 'endingconversations',   title: 'Ending Conversations',          packs: ['endingconversations'] },
   { id: 'networking',            title: 'Networking & Career',           packs: ['networking1', 'networking2', 'jobinterview1', 'jobinterview2', 'talkingtoyourmanager', 'newatwork'] },   // v1.29.55
 
   // ── Being with the other person ───────────────────────────────────
-  { id: 'listening',             title: 'Listening & Understanding',     packs: ['listeningresponding', 'validation', 'listeningthroughquestions', 'showunderstanding2', 'jimmy3', 'showunderstanding', 'askingforclarity', 'emotionalcalibration1'] },
-  { id: 'depth',                 title: 'Depth & Connection',            packs: ['conversationaldepth', 'supportingconversations', 'talkingaboutyourself', 'supercomm1'] },
+  { id: 'listening',             title: 'Listening & Understanding',     packs: ['listeningresponding', 'validation', 'listeningthroughquestions', 'showunderstanding2', 'jimmy3', 'showunderstanding', 'askingforclarity', 'emotionalcalibration1', 'whensomeoneishurting1', 'whensomeoneishurting2'] },
+  { id: 'depth',                 title: 'Depth & Connection',            packs: ['conversationaldepth', 'supportingconversations', 'talkingaboutyourself', 'supercomm1', 'makingfriends1', 'makingfriends2', 'makingfriends3', 'gettingtoknowsomeone', 'whoyouare'] },
 
   // ── Holding the floor ─────────────────────────────────────────────
   { id: 'storytelling',          title: 'Storytelling',                  packs: ['storytelling', 'storytellingwiththesixws', 'storiesinconversation', 'buildingastory'] },
-  { id: 'explaining',            title: 'Explaining & Describing',       packs: ['describethings', 'explainthings', 'givingexamples', 'explainthings2', 'describeactions'] },
+  { id: 'explaining',            title: 'Explaining & Describing',       packs: ['describethings', 'explainthings', 'givingexamples', 'explainthings2', 'describeactions', 'phonecalls'] },
   { id: 'interruptions',         title: 'Interruptions & Speaking Up',   packs: ['speakingupingroups', 'howtointerrupt', 'handleinterruptions'] },
 
   // ── Giving and taking it ──────────────────────────────────────────
@@ -595,7 +625,7 @@ const TOPICS = [
   // ── Standing your ground ──────────────────────────────────────────
   { id: 'opinions',              title: 'Opinions & Argumentation',      packs: ['influenceframing', 'agreeing', 'disagreeing', 'givingcounterexamples', 'discussing', 'supercomm2'] },
   { id: 'persuasion',            title: 'Persuasion & Negotiation',      packs: ['influenceframing', 'persuasionandinfluence1', 'persuasionandinfluence2', 'negotiationandcompromise'] },
-  { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression', 'oconnor1', 'oconnor3', 'jfisher1', 'jfisher2', 'assertivecomm1', 'assertivecomm2', 'assertivecommadv', 'integratedmaster', 'jfisher3', 'jfisheradv', 'passiveaggression2', 'passiveaggression3', 'passiveaggression4', 'passiveaggression5', 'toneboundaries1', 'toneboundaries2', 'toneboundaries3', 'toneboundaries4'] },
+  { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression', 'oconnor1', 'oconnor3', 'jfisher1', 'jfisher2', 'assertivecomm1', 'assertivecomm2', 'assertivecommadv', 'integratedmaster', 'jfisher3', 'jfisheradv', 'passiveaggression2', 'passiveaggression3', 'passiveaggression4', 'passiveaggression5', 'toneboundaries1', 'toneboundaries2', 'toneboundaries3', 'toneboundaries4', 'speakingupasacustomer'] },
   { id: 'boundaries',            title: 'Asking & Saying No',            packs: ['playfulrefusals', 'thehappyno', 'theregretfulno', 'makingrequests', 'sayingno', 'oconnor2', 'jimmy6', 'askingpermission', 'toneboundaries1', 'toneboundaries2', 'familygatherings'] },
 
   // ── The hard end ──────────────────────────────────────────────────

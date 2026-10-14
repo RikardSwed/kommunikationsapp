@@ -13238,4 +13238,712 @@ const mindsetCollections = {
       ]
     },
   ],
+  makingfriends1: [
+    {
+      name: "Initiative",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If they wanted to be friends, they'd ask me.\" The belief that the other person's silence means they are not interested.\n\nWhat is true instead: they are most likely waiting for you, for the same reasons you are waiting for them.\n\nIt feels reasonable because it protects you. If you never ask, you never hear no. Marisa Franco, in Platonic, suggests the opposite habit: assume people like you, and take the first step.\n\nWhat it costs is the friendships that would have happened if one of you had gone first.\n\nMindset: someone has to go first. Let it be you.",
+      inputs: [
+        { q: "If they wanted to see me, they'd ask.", a: "\"They're probably thinking the same thing about me.\"", bundle: 'pro' },
+        { q: "I asked last time, so it's their turn.", a: "\"Friends don't keep score at the start; someone just has to keep the door open.\"", bundle: 'pro' },
+        { q: "They didn't suggest anything, so they're not interested.", a: "\"Not suggesting something is usually shyness or a busy week, not a verdict.\"", bundle: 'pro' },
+        { q: "I'll wait and see if they get in touch.", a: "\"Waiting is a plan where nothing happens.\"", bundle: 'pro' },
+        { q: "If I ask first, I'll care more than they do.", a: "\"Asking first only means I went first.\"", bundle: 'pro' },
+        { q: "They seem so confident; they'd have asked if they wanted to.", a: "\"Confident people wait to be asked too.\"", bundle: 'pro' },
+        { q: "It's not my place to invite them.", a: "\"Anyone can invite anyone to a coffee.\"", bundle: 'pro' },
+        { q: "If it's meant to be, they'll reach out.", a: "\"Most friendships start because one person decided to reach out.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Neediness",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I ask, I'll seem desperate.\" The fear that inviting someone shows how much you need a friend.\n\nWhat is true instead: a clear, light invitation sounds warm and confident. People usually feel flattered to be asked.\n\nIt feels reasonable because of the liking gap: after we talk to someone, we underestimate how much they liked us. So asking feels like a bigger risk than it is.\n\nWhat it costs is the invitation itself, and the friend it might have started.\n\nMindset: wanting company is normal. Asking for it lightly is attractive, not needy.",
+      inputs: [
+        { q: "If I ask, I'll seem desperate.", a: "\"One light invitation sounds friendly, not desperate.\"", bundle: 'pro' },
+        { q: "They'll know I don't have many friends.", a: "\"They'll know I enjoyed talking to them, and that's all an invitation says.\"", bundle: 'pro' },
+        { q: "Saying I enjoyed it is too much.", a: "\"They probably enjoyed it more than I think.\"", bundle: 'pro' },
+        { q: "Asking again after a no looks needy.", a: "\"One cheerful second try looks relaxed; it's the fifth message that looks needy.\"", bundle: 'pro' },
+        { q: "I'll come across as too keen.", a: "\"Keen and light is how most friendships start.\"", bundle: 'pro' },
+        { q: "They'll wonder why I'm asking them.", a: "\"They'll guess I liked them, and most people are glad to hear that.\"", bundle: 'pro' },
+        { q: "A grown adult shouldn't be looking for friends.", a: "\"Adults move, change jobs and lose touch, so making new friends is part of grown-up life.\"", bundle: 'pro' },
+        { q: "If they say no, it proves I was too much.", a: "\"A no proves they were busy on Saturday.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Full Lives",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"They already have enough friends.\" A belief with some truth in it, which is why it stops so many invitations.\n\nWhat is true: they probably have friends, a family and a busy week.\n\nWhat gets added is the step from \"they have a full life\" to \"so there is no room for me\". People are rarely as full as they look, and many adults have fewer close friends than they would like.\n\nWhat it costs is every invitation you decide for them, without asking.\n\nMindset: keep the respect for their time. Drop the idea that you know their answer.",
+      inputs: [
+        { q: "They already have lots of friends.", a: "\"They might — but 'so they don't need me' is the part I added.\"", bundle: 'pro' },
+        { q: "She's been here for years, so her circle is full.", a: "\"She has a circle — but 'so it's closed' is the part I added.\"", bundle: 'pro' },
+        { q: "He's married with kids; he has no time for new friends.", a: "\"His time is tight — but 'so he doesn't want any' is the part I added.\"", bundle: 'pro' },
+        { q: "Everyone at work already has their lunch group.", a: "\"They have groups — but 'so nobody would like an invitation' is the part I added.\"", bundle: 'pro' },
+        { q: "They're always out; they don't need more plans.", a: "\"They're busy — but 'so they'd say no to me' is the part I added.\"", bundle: 'pro' },
+        { q: "They seem so popular.", a: "\"They seem popular — but 'so they're not lonely' is the part I added.\"", bundle: 'pro' },
+        { q: "They're only being nice to me because they're polite.", a: "\"They are polite — but 'so they don't like me' is the part I added.\"", bundle: 'pro' },
+        { q: "I'd only be taking up their time.", a: "\"Their time matters — but 'so they wouldn't want to spend it with me' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Spontaneity",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"Friendship should just happen naturally.\" A belief that feels romantic and relaxed — as if planning would spoil it.\n\nWhat is true instead: as adults, friendship mostly happens when someone makes it happen. Jeffrey Hall's research shows that friends are made from time spent together, and that time rarely appears by itself.\n\nIt feels reasonable because school and university did the planning for us. We saw the same people every day without trying.\n\nWhat it costs is quiet: months of nice chats that never become anything.\n\nMindset: planning is not the opposite of natural. It is how adults make room for it.",
+      inputs: [
+        { q: "Friendship should just happen naturally.", a: "\"And waiting for it to happen means it mostly doesn't.\"", bundle: 'pro' },
+        { q: "Planning a coffee makes it feel forced.", a: "\"No plan makes it feel easy, and then it never happens.\"", bundle: 'pro' },
+        { q: "If we really click, we'll keep bumping into each other.", a: "\"Bumping into each other once a month won't build a friendship.\"", bundle: 'pro' },
+        { q: "I don't want to make it a big deal.", a: "\"Not making it a big deal is how a good chat stays just a chat.\"", bundle: 'pro' },
+        { q: "The best friendships just happen.", a: "\"The ones that just happened had school or work doing the planning for us.\"", bundle: 'pro' },
+        { q: "Inviting someone feels like a date.", a: "\"Avoiding the date feeling means we stay acquaintances for years.\"", bundle: 'pro' },
+        { q: "I'll go with the flow.", a: "\"The flow takes me home alone after every nice conversation.\"", bundle: 'pro' },
+        { q: "Real friends don't need a calendar.", a: "\"New friends need one, or there is never a second meeting.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  makingfriends2: [
+    {
+      name: "Effort",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"Real friends don't need effort. If it's real, it just happens.\" A belief with some truth in it — which is why it is so easy to hold.\n\nWhat is true: the best friendships can feel easy, and some pick up again after months as if no time has passed.\n\nWhat gets added is the step from \"it feels easy\" to \"so nobody has to do anything\". The ease usually comes from all the time already spent together — time someone once made room for.\n\nWhat it costs is the friendships that quietly fade while each of you waits for it to just happen.\n\nMindset: keep the ease. Drop the idea that nobody has to make it happen.",
+      inputs: [
+        { q: "Real friends don't need effort.", a: "\"Real friendships feel easy — but 'so nobody has to reach out' is the part I added.\"", bundle: 'pro' },
+        { q: "We can go months without talking and pick up where we left off.", a: "\"Some friends can — but 'so months of silence cost nothing' is the part I added.\"", bundle: 'pro' },
+        { q: "If they wanted to see me, they'd get in touch.", a: "\"They might want to — but 'so they'll be the one to ask' is the part I added.\"", bundle: 'pro' },
+        { q: "Planning a regular meet-up feels forced.", a: "\"It can feel planned — but 'so it isn't real' is the part I added.\"", bundle: 'pro' },
+        { q: "Good friendships happen naturally.", a: "\"Many start naturally — but 'so they keep going by themselves' is the part I added.\"", bundle: 'pro' },
+        { q: "I shouldn't have to remind people I exist.", a: "\"I shouldn't have to prove it — but 'so I should never reach out' is the part I added.\"", bundle: 'pro' },
+        { q: "If I have to work at it, maybe we're not that close.", a: "\"It does take some work — but 'so we're not close' is the part I added.\"", bundle: 'pro' },
+        { q: "Our friendship is strong enough to survive the silence.", a: "\"It probably is strong — but 'so it can survive any amount of silence' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Time Apart",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Too much time has passed. It would be weird to get in touch now.\" The fear that a long silence has closed the door for good.\n\nWhat is true instead: most people are glad to hear from an old friend, and gladder than we expect — we tend to underestimate how much others liked us.\n\nIt feels reasonable because the silence has grown heavier every month, and it seems the first message has to explain all of it.\n\nWhat it costs is the friend you still think about, and never message.\n\nMindset: one honest line is enough to break a long silence.",
+      inputs: [
+        { q: "Too much time has passed.", a: "\"Time makes the first message feel bigger, not less welcome.\"", bundle: 'pro' },
+        { q: "It would be weird to message them now.", a: "\"A bit awkward for ten seconds is better than never hearing from them again.\"", bundle: 'pro' },
+        { q: "They've probably forgotten about me.", a: "\"People rarely forget a good friend, they just stop expecting to hear from them.\"", bundle: 'pro' },
+        { q: "They have new friends now.", a: "\"New friends don't cancel old ones. There's room for both.\"", bundle: 'pro' },
+        { q: "I'd need to explain why I went quiet.", a: "\"One line is enough: I've been bad at keeping in touch, and I miss you.\"", bundle: 'pro' },
+        { q: "If they wanted to hear from me, they'd have messaged.", a: "\"They're probably thinking exactly the same about me.\"", bundle: 'pro' },
+        { q: "It's too late to fix it now.", a: "\"A drift isn't a fight. There's nothing to fix but the silence.\"", bundle: 'pro' },
+        { q: "They'll wonder why I'm getting in touch after so long.", a: "\"Then I'll tell them: I thought of them, and I missed them.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Opening Up",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I share what's really going on, they'll think less of me.\" The fear that a friend who sees the harder parts will like you less.\n\nWhat is true instead: a small, honest step usually brings people closer. It shows trust, and it gives them permission to be honest back.\n\nIt feels reasonable because you have kept things light for a long time, and the light version of you seems to be the one they like.\n\nWhat it costs is a friendship that stays at \"fine, busy\" — and the feeling that nobody really knows how you are.\n\nMindset: one small true thing, one step at a time, is how friends get close.",
+      inputs: [
+        { q: "If I share, they'll think less of me.", a: "\"Most people feel closer to someone who trusts them with something real.\"", bundle: 'pro' },
+        { q: "Nobody wants to hear about my problems.", a: "\"A close friend usually wants to know, as long as I don't hand them all of it at once.\"", bundle: 'pro' },
+        { q: "They'll think I'm weak.", a: "\"Saying one hard thing out loud takes more strength than saying fine.\"", bundle: 'pro' },
+        { q: "It'll make things awkward between us.", a: "\"One honest sentence is rarely awkward. A whole evening of it might be, so I'll start small.\"", bundle: 'pro' },
+        { q: "They've got enough going on.", a: "\"Sharing a little lets them share too. It doesn't have to be a weight.\"", bundle: 'pro' },
+        { q: "I'll seem needy.", a: "\"Needy is asking them to fix it. Honest is just letting them know.\"", bundle: 'pro' },
+        { q: "Everyone else seems to have it together.", a: "\"They're probably keeping it light too, waiting for someone to go first.\"", bundle: 'pro' },
+        { q: "Once I start, I won't be able to stop.", a: "\"I can choose the short version and tell more another time.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  makingfriends3: [
+    {
+      name: "Speaking Up",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I say something, I'll lose them.\" The fear that one honest sentence will end the friendship.\n\nWhat is true instead: a kind, honest sentence rarely ends a friendship. Silence and slow distance end far more of them.\n\nIt feels reasonable because the friendship matters, and saying \"that hurt\" feels like risking all of it.\n\nWhat it costs is the friendship you were trying to protect — slowly, as the small hurts pile up and you pull away without telling them why.\n\nMindset: one kind, honest sentence is how friendships last.",
+      inputs: [
+        { q: "If I say something, I'll lose them.", a: "\"A kind sentence is far less risky than slowly pulling away.\"", bundle: 'pro' },
+        { q: "They'll think I'm needy.", a: "\"Saying I'd like to be asked is not needy; it's honest.\"", bundle: 'pro' },
+        { q: "It'll make things awkward between us.", a: "\"It might be awkward for a minute, and the hurt would have lasted much longer.\"", bundle: 'pro' },
+        { q: "They'll get defensive.", a: "\"Maybe, at first — but a kind question is hard to stay defensive against.\"", bundle: 'pro' },
+        { q: "Real friends shouldn't need to be told.", a: "\"Even good friends can't see what I don't say.\"", bundle: 'pro' },
+        { q: "It's too small to mention.", a: "\"Small is exactly the right size to mention it.\"", bundle: 'pro' },
+        { q: "I'll ruin a nice evening.", a: "\"One quiet sentence on the walk home doesn't ruin anything.\"", bundle: 'pro' },
+        { q: "If they wanted to include me, they would.", a: "\"They may simply not know I want to be asked.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Keeping the Peace",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'm the easy-going one. I don't make a fuss about small things.\" A belief that feels like a strength — being low-maintenance, generous, a good friend.\n\nWhat is true instead: never saying anything is not the same as not minding. The hurts are still there; they just go unspoken.\n\nIt feels reasonable because easy-going people really are easier to be around, and nobody wants to be the friend who keeps score.\n\nWhat it costs is quiet: the friend never learns what hurts you, and you slowly feel less close without them knowing why.\n\nMindset: being easy-going includes saying the small thing, lightly.",
+      inputs: [
+        { q: "I'm the easy-going one.", a: "\"And so my friends have no idea when something lands badly.\"", bundle: 'pro' },
+        { q: "I don't make a fuss.", a: "\"No fuss means every small hurt stays with me instead.\"", bundle: 'pro' },
+        { q: "I let things go.", a: "\"Except I don't — I just stop mentioning them, and I keep them.\"", bundle: 'pro' },
+        { q: "Good friends don't keep score.", a: "\"Not saying anything is how I end up keeping score in my head.\"", bundle: 'pro' },
+        { q: "I'd rather keep the peace.", a: "\"The peace lasts until the pile gets too big to carry.\"", bundle: 'pro' },
+        { q: "I'm always fine with whatever they choose.", a: "\"And they've never had to learn what I'd choose.\"", bundle: 'pro' },
+        { q: "I don't want to be dramatic.", a: "\"Staying quiet is how a small thing turns into a dramatic one later.\"", bundle: 'pro' },
+        { q: "I'm the one who always understands.", a: "\"Always understanding them has left nobody understanding me.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Blame",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"It's my fault they pulled away.\" A belief with some truth in it — friendships take two people, and you may have played a part.\n\nWhat is true: you might have been busy, slow to reply, or hard to reach. That part is worth owning.\n\nWhat gets added is the step from \"I played a part\" to \"it's all my fault\" — as if their new job, new baby or new city had nothing to do with it.\n\nWhat it costs is the courage to ask. If it is all your fault, there is nothing to say but sorry, and nothing to learn about what really changed.\n\nMindset: keep your part. Drop the idea that it is the whole story.",
+      inputs: [
+        { q: "It's my fault they pulled away.", a: "\"I may have played a part — but 'all my fault' is the part I added.\"", bundle: 'pro' },
+        { q: "I wasn't there for them last year.", a: "\"True, I was busy — but 'so they've given up on me' is the part I added.\"", bundle: 'pro' },
+        { q: "I'm too much for people.", a: "\"I can be intense sometimes — but 'so nobody wants me around' is the part I added.\"", bundle: 'pro' },
+        { q: "I should have tried harder.", a: "\"Maybe a bit harder — but 'so nothing they did matters' is the part I added.\"", bundle: 'pro' },
+        { q: "I'm boring, so they stopped inviting me.", a: "\"I'm quieter than some — but 'so that's why' is a guess I added.\"", bundle: 'pro' },
+        { q: "I said something stupid last time we met.", a: "\"Maybe it was clumsy — but 'so they're angry with me' is the part I added.\"", bundle: 'pro' },
+        { q: "I moved away, so I lost them.", a: "\"Moving made it harder — but 'so it's over' is the part I added.\"", bundle: 'pro' },
+        { q: "Everyone drifts from me eventually.", a: "\"Some friendships have faded — but 'everyone, always' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Letting Go",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Letting go means I failed.\" The belief that a friendship that gets smaller, or ends, is proof that something went wrong with you.\n\nWhat is true instead: many friendships belong to one part of life, and they did their work. Letting one ease off kindly is part of having friends, not a failure at it.\n\nIt feels reasonable because we hear that real friends are forever, and because ending anything feels like losing.\n\nWhat it costs is holding on to friendships out of guilt — meetings that drain you, and less time for the friends who fit your life now.\n\nMindset: a friendship that ends kindly was still a good friendship.",
+      inputs: [
+        { q: "Letting go means I failed.", a: "\"It means the friendship belonged to a part of my life that has changed.\"", bundle: 'pro' },
+        { q: "Real friends are forever.", a: "\"Some are, and some are for a chapter — both are real.\"", bundle: 'pro' },
+        { q: "I'm a bad person if I step back.", a: "\"Stepping back warmly is kinder than staying out of guilt.\"", bundle: 'pro' },
+        { q: "All those years will be wasted.", a: "\"The years happened, and they were good; they don't disappear.\"", bundle: 'pro' },
+        { q: "They'll be hurt if I see them less.", a: "\"They may be a little hurt, and a kind word helps more than a slow fade.\"", bundle: 'pro' },
+        { q: "I should be able to make it work.", a: "\"Not every friendship needs to be made to work forever.\"", bundle: 'pro' },
+        { q: "If I let this go, I'll end up alone.", a: "\"Letting go of one gives me time for the friends who fit my life now.\"", bundle: 'pro' },
+        { q: "Saying it out loud is cruel.", a: "\"Saying it warmly is much kinder than just disappearing.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  namesandintroductions: [
+    {
+      name: "Forgetting",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Forgetting someone's name is unforgivable. They'll think I don't care.\"\n\nWhat is true instead: forgetting a name is one of the most normal things people do, and almost everyone forgives it at once.\n\nIt feels true because the moment is hot and awkward, and because being forgotten once stung you too.\n\nWhat it costs is the hiding — avoiding people, skipping introductions, and never saying the five honest words that would fix it.\n\nMindset: forgetting is normal. What people remember is how you handled it.",
+      inputs: [
+        { q: "Forgetting a name is unforgivable.", a: "\"It's one of the most forgiven things there is.\"", bundle: 'pro' },
+        { q: "They'll think I don't care about them.", a: "\"If I show what I do remember, they'll know I care.\"", bundle: 'pro' },
+        { q: "Everyone will see I've forgotten.", a: "\"One honest sentence, and the moment is over.\"", bundle: 'pro' },
+        { q: "I should have remembered it.", a: "\"Maybe, but I didn't — and now I can fix it.\"", bundle: 'pro' },
+        { q: "They remembered mine, so I've failed.", a: "\"They had a better day for names. I can still ask.\"", bundle: 'pro' },
+        { q: "Admitting it will make them feel small.", a: "\"Pretending, and avoiding them, would feel worse.\"", bundle: 'pro' },
+        { q: "It's rude to forget.", a: "\"It's normal to forget. Hiding it is what feels rude.\"", bundle: 'pro' },
+        { q: "I'll never live it down.", a: "\"They'll forget it before I do.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Timing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"It's too late to ask now. I've known them for weeks.\"\n\nWhat is true instead: it is never too late. It only gets a little more awkward each week — so today is the easiest day left.\n\nIt feels true because the right moment seems to have passed, and asking now feels like admitting weeks of pretending.\n\nWhat it costs is years of avoiding someone's name, and the quiet fear that someone will ask you to introduce them.\n\nMindset: late is better than never. Today is earlier than tomorrow.",
+      inputs: [
+        { q: "It's too late to ask now.", a: "\"It's later than it was, and earlier than it will be.\"", bundle: 'pro' },
+        { q: "We've been chatting for weeks.", a: "\"Then they'll understand. Weeks of chatting is a good reason to know their name.\"", bundle: 'pro' },
+        { q: "They'll know I've been pretending.", a: "\"They'll know I want to get it right.\"", bundle: 'pro' },
+        { q: "I'll just wait until someone else says it.", a: "\"That could take a year. Asking takes five seconds.\"", bundle: 'pro' },
+        { q: "Asking now will make it a big thing.", a: "\"It's only big if I make a speech. One line is small.\"", bundle: 'pro' },
+        { q: "I missed my chance.", a: "\"There's a chance every time we meet.\"", bundle: 'pro' },
+        { q: "I'll find out from someone else.", a: "\"Maybe, but asking them is faster and kinder.\"", bundle: 'pro' },
+        { q: "It's too embarrassing at this point.", a: "\"A little embarrassing today beats a lot embarrassing next year.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Memory",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"I'm just bad with names. Everyone else seems to remember them.\"\n\nWhat is true: names really are harder for some people, and it is fine to say so.\n\nWhat gets added is \"so there's nothing I can do\" — as if remembering names were a gift, not a habit. Most people who seem good with names are just doing small things, like saying the name back once.\n\nWhat it costs is the effort. If it is a fixed fact about you, there is no reason to try.\n\nMindset: keep the honesty about your memory. Drop the idea that it can't change.",
+      inputs: [
+        { q: "I'm just bad with names.", a: "\"Maybe I find them harder — but 'so I can't get better' is the part I added.\"", bundle: 'pro' },
+        { q: "Everyone else remembers names easily.", a: "\"Some do — but 'so it's natural, not practice' is the part I added.\"", bundle: 'pro' },
+        { q: "I forget names as soon as I hear them.", a: "\"Often, yes — but 'so there's no point trying' is the part I added.\"", bundle: 'pro' },
+        { q: "My memory has always been bad.", a: "\"It might be — but 'so I'll always lose names' is the part I added.\"", bundle: 'pro' },
+        { q: "Names just don't stick in my head.", a: "\"Not by themselves — but 'so nothing will help' is the part I added.\"", bundle: 'pro' },
+        { q: "I'm better with faces than names.", a: "\"True for lots of people — but 'so names aren't for me' is the part I added.\"", bundle: 'pro' },
+        { q: "I'll only forget it anyway.", a: "\"I might — but 'so I won't say it back' is the part I added.\"", bundle: 'pro' },
+        { q: "Good-with-names people are just born that way.", a: "\"Some are — but 'so the rest of us can't learn it' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Asking Twice",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Asking someone's name twice is rude. I should have listened the first time.\"\n\nWhat is true instead: asking again shows that you care about getting it right. Most people are pleased you asked.\n\nIt feels true because asking again seems to say you weren't paying attention, and nobody wants to look careless.\n\nWhat it costs is the name. Not asking means smiling, guessing, and avoiding it — which is far less polite than one quick question.\n\nMindset: asking twice is not rude. Not knowing for months is the real problem.",
+      inputs: [
+        { q: "Asking twice is rude.", a: "\"Asking twice says I want to get it right.\"", bundle: 'pro' },
+        { q: "I should have listened the first time.", a: "\"I was listening — it was loud. One more time is fine.\"", bundle: 'pro' },
+        { q: "They'll think I wasn't paying attention.", a: "\"They'll think I'm paying attention now.\"", bundle: 'pro' },
+        { q: "I'll look stupid if I ask again.", a: "\"Nobody has ever looked stupid asking for a name once more.\"", bundle: 'pro' },
+        { q: "I'll just guess.", a: "\"A guess can be wrong for months. A question is right in five seconds.\"", bundle: 'pro' },
+        { q: "They've already said it twice.", a: "\"Then a third time, and I'll write it down after.\"", bundle: 'pro' },
+        { q: "It's their name — I can't ask how to spell it.", a: "\"Asking how to spell it is a compliment to the name.\"", bundle: 'pro' },
+        { q: "I'll work it out later.", a: "\"Later is when it gets hard. Now is when it's easy.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Corrections",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I don't mind what people call me. I'm easy-going.\" A belief that feels like a strength — relaxed, polite, no fuss.\n\nWhat is true instead: a quick, light correction is not a fuss. Letting it pass is what turns one mistake into years of the wrong name.\n\nIt feels right because correcting someone feels like making them wrong, and you would rather keep the moment smooth.\n\nWhat it costs is quiet: the wrong name spreads, it gets harder to fix, and people never really know what you are called.\n\nMindset: saying your name right is easy-going too. It just happens earlier.",
+      inputs: [
+        { q: "I don't mind what people call me.", a: "\"And then a whole team learns the wrong name from one person.\"", bundle: 'pro' },
+        { q: "Correcting them would embarrass them.", a: "\"A small fix now saves a much bigger one in a year.\"", bundle: 'pro' },
+        { q: "It's close enough.", a: "\"Close enough today becomes the name everyone uses.\"", bundle: 'pro' },
+        { q: "My name is too hard, so it's my fault.", a: "\"And so they never get the chance to learn it.\"", bundle: 'pro' },
+        { q: "I'm not the kind of person who makes a fuss.", a: "\"One light sentence isn't a fuss — but a year of the wrong name is.\"", bundle: 'pro' },
+        { q: "It'll sort itself out.", a: "\"It only gets more fixed every time I let it pass.\"", bundle: 'pro' },
+        { q: "I've let it go for so long now.", a: "\"And every extra week makes the correction feel bigger.\"", bundle: 'pro' },
+        { q: "I'd rather keep things smooth.", a: "\"Smooth for them, and I hear the wrong name every day.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Introducing Others",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Introducing people isn't my job. They can introduce themselves.\"\n\nWhat is true instead: an introduction is one of the kindest small things you can do, and you are often the only person who can do it.\n\nIt feels true because introducing feels like hosting, and you might get a name wrong in front of both of them.\n\nWhat it costs is two people standing next to you in silence, both waiting for you.\n\nMindset: you know both of them. That makes you the bridge.",
+      inputs: [
+        { q: "Introducing people isn't my job.", a: "\"I'm the only one here who knows both of them.\"", bundle: 'pro' },
+        { q: "They can introduce themselves.", a: "\"They can — but most people wait to be introduced.\"", bundle: 'pro' },
+        { q: "I'll get a name wrong.", a: "\"If I do, they'll fix it, and everyone will laugh.\"", bundle: 'pro' },
+        { q: "I don't know what to say about them.", a: "\"One fact is enough. 'You both like running.'\"", bundle: 'pro' },
+        { q: "It's too formal.", a: "\"Two names and a sentence isn't formal. It's friendly.\"", bundle: 'pro' },
+        { q: "They might not want to meet each other.", a: "\"Then they'll have a short chat. That's fine too.\"", bundle: 'pro' },
+        { q: "I'm not a host.", a: "\"I don't have to be a host to say two names.\"", bundle: 'pro' },
+        { q: "Someone else will do it.", a: "\"Everyone thinks that, and so nobody does.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  phonecalls: [
+    {
+      name: "Sounding Stupid",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"They'll think I'm stupid.\" The fear that one stumble, one wrong word or one obvious question will make the person on the line judge you.\n\nWhat is true instead: they take dozens of calls a day and will forget yours in an hour.\n\nIt feels reasonable because on the phone your voice is all they have, so every pause feels huge to you.\n\nWhat it costs is the call itself — put off, or rushed and full of guesses.\n\nMindset: they are busy with their job, not with judging yours.",
+      inputs: [
+        { q: "They'll think I'm stupid.", a: "\"They'll think I'm the person calling about Friday, and then they'll forget me.\"", bundle: 'pro' },
+        { q: "I'll ask an obvious question.", a: "\"Obvious questions are the ones they answer best — they've heard them a hundred times.\"", bundle: 'pro' },
+        { q: "I'll mix up my words.", a: "\"Everyone does on the phone. They'll just wait for the rest of the sentence.\"", bundle: 'pro' },
+        { q: "I should already know how this works.", a: "\"If everyone knew, nobody would need to call. That's what they're there for.\"", bundle: 'pro' },
+        { q: "They'll hear how nervous I am.", a: "\"Maybe a little, and it won't change how they help me.\"", bundle: 'pro' },
+        { q: "I'll have to ask them to repeat it.", a: "\"People ask that all day. It sounds careful, not stupid.\"", bundle: 'pro' },
+        { q: "They'll laugh about me after.", a: "\"They'll be on the next call before I've put the phone down.\"", bundle: 'pro' },
+        { q: "Everyone else finds this easy.", a: "\"Lots of people dread calls. They just don't say so.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Freezing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I'll freeze.\" The fear that the moment someone answers, your mind will go blank and you will just breathe into the phone.\n\nWhat is true instead: you can plan the first line and write it down. After that, they lead the call.\n\nIt feels reasonable because it may have happened before, and a phone gives you no face to read for help.\n\nWhat it costs is the call — or a call made so fast that nothing gets said clearly.\n\nMindset: write the first line down. You only have to read one sentence.",
+      inputs: [
+        { q: "I'll freeze as soon as they answer.", a: "\"I'll have my first line written down, and I'll read it.\"", bundle: 'pro' },
+        { q: "My mind will go blank.", a: "\"Then I'll look at my note. That's what it's for.\"", bundle: 'pro' },
+        { q: "I won't know what to say after the first bit.", a: "\"After the first bit, they ask me questions. I just answer them.\"", bundle: 'pro' },
+        { q: "There'll be a horrible silence.", a: "\"A short pause on the phone is normal. They're often typing.\"", bundle: 'pro' },
+        { q: "They'll ask something I'm not ready for.", a: "\"I can say 'Let me check' — that buys me time.\"", bundle: 'pro' },
+        { q: "I froze last time, so I will again.", a: "\"Last time I didn't have a note. This time I do.\"", bundle: 'pro' },
+        { q: "I need to know the whole call in advance.", a: "\"I only need the first line and my questions. The rest happens on its own.\"", bundle: 'pro' },
+        { q: "If I start badly, the whole call is ruined.", a: "\"If I start badly, I can say 'Sorry — let me start again.'\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Texting",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"Texting is always better.\" A belief with a lot of truth in it — a message is easy to plan, easy to reread and easy to send at midnight.\n\nWhat is true: for many things, a message is better, and nobody needs to call to say they are running late.\n\nWhat gets added is \"always\" — as if a call were never the quicker, clearer or only way.\n\nWhat it costs is the flat that went to the person who called, and the problem still waiting after three emails.\n\nMindset: keep messages for what suits them. Call when a call is quicker.",
+      inputs: [
+        { q: "Texting is always better.", a: "\"Often, yes — but 'always' is the part I added.\"", bundle: 'pro' },
+        { q: "An email gives them time to think.", a: "\"True — and a call gets the answer before lunch.\"", bundle: 'pro' },
+        { q: "I can say it better in writing.", a: "\"Often I can — but a booking doesn't need good writing, just a time.\"", bundle: 'pro' },
+        { q: "Nobody calls anymore.", a: "\"Fewer people do — but the landlord still answers the person who rings.\"", bundle: 'pro' },
+        { q: "Calling is old-fashioned.", a: "\"Maybe — but the plumber who comes today is the one I called.\"", bundle: 'pro' },
+        { q: "If they wanted calls, they wouldn't have an email address.", a: "\"True, they have both — and the phone number is there for a reason too.\"", bundle: 'pro' },
+        { q: "I'll just send another email.", a: "\"Fair, if they're answering — but three emails without a reply means it's time to call.\"", bundle: 'pro' },
+        { q: "A message is more polite.", a: "\"It can be — but a two-minute call can be polite too, and it gets an answer.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Bothering People",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I'm bothering them.\" The feeling that a call interrupts someone, that you are taking up their time, and that you should only call if it is really important.\n\nWhat is true instead: answering calls is often their job. Your call is what they are there for.\n\nIt feels reasonable because a call arrives without warning, and you would not want to disturb a friend at dinner.\n\nWhat it costs is waiting — for a repair, a booking, an answer — that one call would have ended.\n\nMindset: you are not interrupting their work. You are their work.",
+      inputs: [
+        { q: "I'm bothering them.", a: "\"Taking calls is their job. I'm not interrupting it — I'm part of it.\"", bundle: 'pro' },
+        { q: "They're probably busy.", a: "\"If they're busy, they'll tell me, or they won't pick up.\"", bundle: 'pro' },
+        { q: "It's not important enough to call about.", a: "\"If it's important enough to worry about, it's important enough to call.\"", bundle: 'pro' },
+        { q: "I'll be taking up their time.", a: "\"Two clear minutes is less time than three confused emails.\"", bundle: 'pro' },
+        { q: "The landlord will be annoyed I'm calling again.", a: "\"He'd be more annoyed if the leak got worse because I didn't.\"", bundle: 'pro' },
+        { q: "I don't want to be a nuisance.", a: "\"One clear call isn't a nuisance. Five vague ones might be.\"", bundle: 'pro' },
+        { q: "They'll call me if they need me.", a: "\"Maybe — but it's my problem, so I'm the one who calls.\"", bundle: 'pro' },
+        { q: "I'll wait until they're less busy.", a: "\"They're never less busy. Now is as good as later.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Politeness",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"It's rude to make them repeat it, or to check, or to end the call.\" A belief that feels like good manners — not making a fuss, not wasting their time.\n\nWhat is true instead: checking a time or asking again is a normal part of a polite call.\n\nIt feels reasonable because interrupting, correcting and hanging up all feel like small rudeness.\n\nWhat it quietly costs is the wrong appointment, the number you did not catch, and calls that drag on long after both of you were done.\n\nMindset: being clear is part of being polite.",
+      inputs: [
+        { q: "I don't want to make them repeat it.", a: "\"So I nod along, and then I turn up on the wrong day.\"", bundle: 'pro' },
+        { q: "Checking the details would be rude.", a: "\"Not checking means a mistake that costs both of us a second call.\"", bundle: 'pro' },
+        { q: "It's rude to end the call first.", a: "\"Then we both say 'okay' for a minute and nobody can leave.\"", bundle: 'pro' },
+        { q: "I'll just accept what they offer.", a: "\"And then I'm at a Tuesday appointment I can't actually make.\"", bundle: 'pro' },
+        { q: "I don't want to correct their spelling of my name.", a: "\"Then the letter goes to someone who doesn't exist.\"", bundle: 'pro' },
+        { q: "I don't like asking when they'll call back.", a: "\"So I wait by the phone for a week, not knowing if it's coming.\"", bundle: 'pro' },
+        { q: "Interrupting a chatty person is bad manners.", a: "\"Staying quiet costs me twenty minutes and makes me late.\"", bundle: 'pro' },
+        { q: "It's kinder not to ask too many questions.", a: "\"And then I have to call back tomorrow with the ones I didn't ask.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Putting It Off",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I'll call tomorrow, when I feel more ready.\" The belief that there is a better moment coming, when the call will feel easier.\n\nWhat is true instead: the call rarely feels easier tomorrow. It feels heavier, because now it is late too.\n\nIt feels reasonable because putting it off brings instant relief, and the call really will still be there.\n\nWhat it costs is days of a small dread hanging over you — and sometimes the appointment, the flat or the job.\n\nMindset: the dread lasts until you call. The call itself lasts two minutes.",
+      inputs: [
+        { q: "I'll call tomorrow, when I feel more ready.", a: "\"Tomorrow I'll feel the same, plus a day late.\"", bundle: 'pro' },
+        { q: "It's probably too late in the day to call.", a: "\"If they're open, it isn't. I'll check the hours and call.\"", bundle: 'pro' },
+        { q: "I'll wait until I've got everything sorted first.", a: "\"I need my name, my reason and one question. I have those now.\"", bundle: 'pro' },
+        { q: "Maybe they'll email me instead.", a: "\"Maybe — and maybe I'll still be waiting next week.\"", bundle: 'pro' },
+        { q: "I'll do it after lunch.", a: "\"After lunch is fine — if I write the time down now.\"", bundle: 'pro' },
+        { q: "I'm not in the right mood for a call.", a: "\"I don't need a mood, just two minutes and my note.\"", bundle: 'pro' },
+        { q: "Somebody else might call for me.", a: "\"They might, but then it's their call, not mine.\"", bundle: 'pro' },
+        { q: "It can wait.", a: "\"It can, but the worrying can't. I'll call and be done.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  whensomeoneishurting1: [
+    {
+      name: "Wrong Words",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I'll say the wrong thing, so I'll say nothing.\" The fear that a clumsy sentence will make their pain worse.\n\nWhat is true instead: silence is the thing people remember most. A short, simple sorry is very hard to get wrong.\n\nIt feels reasonable because we have all heard someone say something awful at a funeral, and we do not want to be that person.\n\nWhat it costs is that they notice who stayed away, and wonder whether you knew, or cared.\n\nMindset: \"I'm so sorry\" is never the wrong thing.",
+      inputs: [
+        { q: "I'll say the wrong thing, so I'll say nothing.", a: "\"Saying nothing is the one thing they're sure to notice.\"", bundle: 'pro' },
+        { q: "I don't know what to say.", a: "\"Then that's what I can say: I don't know what to say, and I'm sorry.\"", bundle: 'pro' },
+        { q: "Anything I say will sound fake.", a: "\"A short sorry doesn't sound fake. A speech might.\"", bundle: 'pro' },
+        { q: "I'll make them cry.", a: "\"If they cry, it's the loss, not me. And I can stay while they do.\"", bundle: 'pro' },
+        { q: "I'll wait until I've found the right words.", a: "\"The right words are short, and I already know them.\"", bundle: 'pro' },
+        { q: "I'm no good with feelings.", a: "\"I don't need to be good with feelings. I only need one kind sentence.\"", bundle: 'pro' },
+        { q: "Someone closer to them will say it better.", a: "\"They might. I can still say my sentence.\"", bundle: 'pro' },
+        { q: "What if I start crying myself?", a: "\"Then they'll see it mattered to me too. That's not the wrong thing.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Space",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"They need space.\" A belief that is partly true, which is why it is such a comfortable reason to stay away.\n\nWhat is true: some people do want quiet, and pushing a long talk on them would be wrong.\n\nWhat gets added is the next step: \"so I'll keep away, and say nothing at all.\" Space means not pushing. It does not mean disappearing. Often it is our own discomfort, dressed up as respect.\n\nWhat it costs is that they get space from everyone at once, and it feels like being left alone.\n\nMindset: keep the space. Drop the silence.",
+      inputs: [
+        { q: "They need space.", a: "\"True — but 'so I'll say nothing at all' is the part I added.\"", bundle: 'pro' },
+        { q: "They'll want to be with family right now.", a: "\"True — but 'so a short text from me is too much' is the part I added.\"", bundle: 'pro' },
+        { q: "I don't want to intrude.", a: "\"True, I don't — but 'so I'll stay away' is the part I added.\"", bundle: 'pro' },
+        { q: "They'll get in touch when they're ready.", a: "\"Maybe — but 'so it's all on them' is the part I added.\"", bundle: 'pro' },
+        { q: "They've got so many people around them.", a: "\"True, now — but 'so they won't miss me' is the part I added.\"", bundle: 'pro' },
+        { q: "Grief is private.", a: "\"True — but 'so I can't even say sorry' is the part I added.\"", bundle: 'pro' },
+        { q: "Leaving them alone is the respectful thing.", a: "\"Not pushing is respectful — but 'so I'll vanish' is the part I added.\"", bundle: 'pro' },
+        { q: "I'll give it a few weeks.", a: "\"A few weeks for a long talk, fine — but 'so no sorry for now' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Closeness",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"It's not my place. We're not close enough.\" The belief that comfort belongs only to family and best friends.\n\nWhat is true instead: a few kind words from a colleague, a neighbour or the man at the shop often mean more than people expect.\n\nIt feels reasonable because you do not want to seem nosy, or to act closer than you are.\n\nWhat it costs is that the people at the edges of their life — the ones they see every day — all look the other way.\n\nMindset: you do not need to be close to be kind. One sentence is the right size.",
+      inputs: [
+        { q: "It's not my place.", a: "\"Saying sorry is everyone's place. Asking questions might not be.\"", bundle: 'pro' },
+        { q: "We're not close enough.", a: "\"One kind sentence is exactly the right size for us.\"", bundle: 'pro' },
+        { q: "They won't even remember who said what.", a: "\"They'll remember that people noticed.\"", bundle: 'pro' },
+        { q: "I'll seem nosy.", a: "\"Nosy is questions. A short sorry asks for nothing.\"", bundle: 'pro' },
+        { q: "It would be weird coming from me.", a: "\"It's only weird if I make it long.\"", bundle: 'pro' },
+        { q: "I barely knew the person who died.", a: "\"I know the person in front of me. That's enough.\"", bundle: 'pro' },
+        { q: "Their real friends will look after them.", a: "\"And I'm the one they see every morning at work.\"", bundle: 'pro' },
+        { q: "I'd only be saying it to make myself feel better.", a: "\"It can help us both. That doesn't make it wrong.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Comparisons",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"If I tell them about when my dad died, they'll know I understand.\" A belief that feels like empathy, and comes from a good place.\n\nWhat is true instead: in the first days, your story pulls the attention away from them, even when you mean to stand beside them.\n\nIt feels reasonable because a shared story is how we usually connect, and it feels honest to say \"me too\".\n\nWhat it costs is that they end up listening to you, and sometimes comforting you, in the week they most needed to be heard.\n\nMindset: your story can wait. Today the attention stays on them.",
+      inputs: [
+        { q: "If I tell them about my loss, they'll know I understand.", a: "\"And for those five minutes, they'll be listening to me instead.\"", bundle: 'pro' },
+        { q: "I've been through the same thing.", a: "\"Not the same thing. Their dad, their family, their week.\"", bundle: 'pro' },
+        { q: "Sharing my story is being open.", a: "\"Being open today means being open to theirs.\"", bundle: 'pro' },
+        { q: "It'll make them feel less alone.", a: "\"Later, maybe. Today it can make them feel less heard.\"", bundle: 'pro' },
+        { q: "I know exactly how they feel.", a: "\"Saying that tells them I've stopped listening.\"", bundle: 'pro' },
+        { q: "They might like some advice from someone who's been there.", a: "\"If they ask for it. Until then, it's one more thing to nod at.\"", bundle: 'pro' },
+        { q: "Silence after their news feels awkward.", a: "\"My story fills the silence, and takes it from them.\"", bundle: 'pro' },
+        { q: "I'm only trying to help.", a: "\"Then the help is listening, not talking.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  whensomeoneishurting2: [
+    {
+      name: "Reminders",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Mentioning it will upset them. Better not to remind them.\"\n\nWhat is true instead: you cannot remind someone of a loss they think about every day. What you can do is show them they are not alone with it.\n\nIt feels reasonable because you might see tears, and tears look like harm.\n\nWhat it costs is the silence that grieving people describe again and again — the name nobody says, and the feeling that their person has been forgotten.\n\nMindset: they have not forgotten. Your silence only tells them you have.",
+      inputs: [
+        { q: "Mentioning it will upset them.", a: "\"They're already thinking about it, so mentioning it just means they're not alone.\"", bundle: 'pro' },
+        { q: "If I say his name, she'll cry.", a: "\"Tears aren't damage, and they're often a relief.\"", bundle: 'pro' },
+        { q: "It's kinder to keep things light.", a: "\"Light all the time can feel like nobody remembers.\"", bundle: 'pro' },
+        { q: "They seem to be doing well, so why bring it up?", a: "\"Doing well and still missing him can both be true.\"", bundle: 'pro' },
+        { q: "I'll ruin a nice evening.", a: "\"One kind sentence won't ruin the evening, and it might make it.\"", bundle: 'pro' },
+        { q: "They'll talk about it if they want to.", a: "\"Most people wait to be asked, because they don't want to be a burden.\"", bundle: 'pro' },
+        { q: "I don't want to open old wounds.", a: "\"It's two months old, and it isn't closed yet.\"", bundle: 'pro' },
+        { q: "It's not my place to bring it up.", a: "\"Anyone who cares about them can say they remember.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Fixing",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I have to fix it. If I can't make it better, there's no point saying anything.\" A belief that feels like care — practical, useful, not just sympathy.\n\nWhat is true instead: grief cannot be fixed, and the person usually knows that better than you.\n\nIt feels reasonable because helping feels good, and sitting with sadness you cannot change feels useless.\n\nWhat it costs is quiet: the advice they did not ask for, and the visits you skip because you have nothing to solve.\n\nMindset: you are not there to fix it. You are there so they are not alone in it.",
+      inputs: [
+        { q: "I'm a practical person; I help by fixing things.", a: "\"And the advice I give leaves them feeling unheard.\"", bundle: 'pro' },
+        { q: "I need to find the right thing to say to make it better.", a: "\"While I search for the perfect words, they hear nothing at all.\"", bundle: 'pro' },
+        { q: "If I can't help, I should stay out of the way.", a: "\"Staying away is how I disappear exactly when the casseroles stop.\"", bundle: 'pro' },
+        { q: "I'll tell her about the grief counsellor who helped me.", a: "\"A tip offered too soon tells her I'd like her to feel better faster.\"", bundle: 'pro' },
+        { q: "I like to look on the bright side for people.", a: "\"The bright side, offered now, makes her hide the dark side from me.\"", bundle: 'pro' },
+        { q: "I always know what to do in a crisis.", a: "\"This isn't a crisis to solve, and treating it like one makes me the busy one in the room.\"", bundle: 'pro' },
+        { q: "I'll keep her busy so she doesn't dwell on it.", a: "\"Keeping her busy can mean she never gets to talk about him with me.\"", bundle: 'pro' },
+        { q: "I can't stand seeing people sad.", a: "\"Then they learn to be cheerful around me, and sad somewhere else.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Space",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"They need space. I'll give them time.\" A belief that is partly true — and that often covers for avoidance.\n\nWhat is true: some people do want quiet, and pushing is unkind.\n\nWhat gets added is \"so I'll say nothing for weeks\" — space chosen for them, without asking, that happens to suit your own discomfort.\n\nWhat it costs is the person who wanted company and assumed nobody cared.\n\nMindset: keep the respect for their quiet. Drop the idea that silence is the only way to give it.",
+      inputs: [
+        { q: "They need space right now.", a: "\"Some do — but 'so I won't ask them' is the part I added.\"", bundle: 'pro' },
+        { q: "She said she wanted to be alone.", a: "\"She did, that day — but 'so for the next month' is the part I added.\"", bundle: 'pro' },
+        { q: "I don't want to crowd him.", a: "\"True, I shouldn't crowd him — but 'so I'll send nothing' is the part I added.\"", bundle: 'pro' },
+        { q: "Family should come first, not me.", a: "\"Family comes first — but 'so a friend's message doesn't matter' is the part I added.\"", bundle: 'pro' },
+        { q: "They've got lots of people around them.", a: "\"They did, at the funeral — but 'so they still do now' is the part I added.\"", bundle: 'pro' },
+        { q: "Grief is private.", a: "\"Some of it is — but 'so nobody should mention it' is the part I added.\"", bundle: 'pro' },
+        { q: "I'll wait until they reach out.", a: "\"They might — but 'so I don't need to' is the part I added.\"", bundle: 'pro' },
+        { q: "I'm giving them time, not avoiding them.", a: "\"Time is kind — but 'so I'm not avoiding them' is the part I need to check.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Timing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"It's been too long now. Saying something after all this time would be strange.\"\n\nWhat is true instead: a late word is almost always welcome, and often more so, because by then hardly anyone else is saying anything.\n\nIt feels reasonable because the moment for condolences seems to have passed, and turning up late feels like admitting you forgot.\n\nWhat it costs is every week after the last one — the gap grows, and the silence gets harder to break.\n\nMindset: late is not too late. Late is when it is needed most.",
+      inputs: [
+        { q: "It's been too long to say anything now.", a: "\"Two months on is exactly when most people have stopped, so a word now matters more.\"", bundle: 'pro' },
+        { q: "I missed the funeral, so I missed my chance.", a: "\"The funeral was one day, and the missing goes on for years.\"", bundle: 'pro' },
+        { q: "They must be over it by now.", a: "\"Grief doesn't keep to a timetable, and three months is still early.\"", bundle: 'pro' },
+        { q: "It'll be awkward to bring it up out of nowhere.", a: "\"A little awkward for me is a lot kinder for them.\"", bundle: 'pro' },
+        { q: "I should have said something weeks ago.", a: "\"Maybe, and today is still better than next month.\"", bundle: 'pro' },
+        { q: "The anniversary has passed, so I'll leave it.", a: "\"A day late still tells them someone remembered.\"", bundle: 'pro' },
+        { q: "Bringing it up now will make it look like I forgot.", a: "\"Saying nothing makes it look like I forgot for good.\"", bundle: 'pro' },
+        { q: "They're probably past needing support by now.", a: "\"They might be doing better, and they'd still like to be asked.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  speakingupasacustomer: [
+    {
+      name: "Complaining",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Complaining is rude. Polite people just accept it.\" The belief that saying something is wrong is bad manners.\n\nWhat is true instead: rude is about how you say it, not whether you say it. A plain fact and a kind word are not rude.\n\nIt feels reasonable because most of us have watched someone shout at a waiter, and we never want to be that person.\n\nWhat it costs is money, time, and the quiet resentment of paying for something you did not get.\n\nMindset: saying it kindly is not rude. Shouting is.",
+      inputs: [
+        { q: "Complaining is rude.", a: "\"Shouting is rude; telling them the soup is cold is just information.\"", bundle: 'pro' },
+        { q: "Nice people don't make a fuss.", a: "\"One calm sentence isn't a fuss.\"", bundle: 'pro' },
+        { q: "I don't want to make a scene.", a: "\"A quiet word to the waiter is the opposite of a scene.\"", bundle: 'pro' },
+        { q: "My parents never complained about anything.", a: "\"I can be as polite as they were and still say the bill is wrong.\"", bundle: 'pro' },
+        { q: "It's ungrateful to complain when they've tried.", a: "\"I can thank them for trying and still say it isn't fixed.\"", bundle: 'pro' },
+        { q: "Everyone else seems happy with their food.", a: "\"They're eating their food; I'm the one with the cold plate.\"", bundle: 'pro' },
+        { q: "It's only a small thing.", a: "\"Small things are the easiest to fix, if I say them.\"", bundle: 'pro' },
+        { q: "Complaining makes me a negative person.", a: "\"Saying one thing is wrong doesn't make me a negative person.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Hassle",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"It's not worth the trouble. I'm easygoing — I let things go.\" A belief that feels like a good quality: relaxed, generous, above small things.\n\nWhat is true instead: most complaints take five minutes, and the easygoing customer pays for the mistakes everyone else gets fixed.\n\nIt feels reasonable because sometimes it really is not worth it, and letting a small thing go can be the right call.\n\nWhat it costs is quiet and adds up: the broken thing kept, the wrong charge paid every month, and the small annoyance every time you look at it.\n\nMindset: being easygoing is a choice. Make sure it is not just the easier way out.",
+      inputs: [
+        { q: "It's not worth the trouble.", a: "\"Five minutes at the counter costs less than a jacket I can't wear.\"", bundle: 'pro' },
+        { q: "I'm easygoing — I let things go.", a: "\"And the shop keeps the money for a zip that broke in a week.\"", bundle: 'pro' },
+        { q: "Life's too short to argue about a bill.", a: "\"Life's also too short to pay the same wrong charge every month.\"", bundle: 'pro' },
+        { q: "I'll just buy a new one somewhere else.", a: "\"Then I pay twice, and they never learn the first one was faulty.\"", bundle: 'pro' },
+        { q: "I don't have time to sort this out.", a: "\"I don't have time now, so it'll sit in the cupboard and annoy me for a year.\"", bundle: 'pro' },
+        { q: "I'm not the type to make a fuss.", a: "\"Not making a fuss is how the gym kept taking my money until June.\"", bundle: 'pro' },
+        { q: "It's only a few pounds.", a: "\"A few pounds every month is a lot by the end of the year.\"", bundle: 'pro' },
+        { q: "Someone else will probably complain.", a: "\"If everyone thinks that, the same mistake happens to the next person.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being Difficult",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"They'll think I'm difficult.\" A belief with some truth in it: some staff will find a complaint annoying, especially on a busy day.\n\nWhat is true: they might think that for a minute. Nobody enjoys a problem at the end of a shift.\n\nWhat gets added is \"so I should stay quiet\" — as if their passing thought mattered more than what you paid for.\n\nWhat it costs is the fix. You keep the broken thing to avoid a moment of someone else's mild annoyance.\n\nMindset: keep the care about how you come across. Drop the idea that it means saying nothing.",
+      inputs: [
+        { q: "They'll think I'm difficult.", a: "\"They might, for a minute — but 'so I should stay quiet' is the part I added.\"", bundle: 'pro' },
+        { q: "The waiter will be annoyed with me.", a: "\"He might be, briefly — but 'so I should eat the cold food' is the part I added.\"", bundle: 'pro' },
+        { q: "The hairdresser will be hurt if I say it's wrong.", a: "\"She might be a little — but 'so I should live with it' is the part I added.\"", bundle: 'pro' },
+        { q: "I've already complained once today.", a: "\"True — but 'so I can't say this one' is the part I added.\"", bundle: 'pro' },
+        { q: "They'll remember me as that customer.", a: "\"They might — but 'so it's not worth fixing' is the part I added.\"", bundle: 'pro' },
+        { q: "The landlord might not like me after this.", a: "\"Possibly — but 'so I should live without heating' is the part I added.\"", bundle: 'pro' },
+        { q: "The staff look tired, and I'm making their day worse.", a: "\"They do look tired — but 'so my problem doesn't count' is the part I added.\"", bundle: 'pro' },
+        { q: "Asking for the manager will look aggressive.", a: "\"It can, if I bark it — but 'so I can't ask at all' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Blame",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"It's not her fault, so I can't ask her to fix it.\" The belief that you can only raise a problem with the person who caused it.\n\nWhat is true instead: the person at the desk is there to help with problems, not to have caused them. You can clear her of blame and still ask.\n\nIt feels reasonable because blaming the wrong person is unfair, and you do not want to be unfair.\n\nWhat it costs is the fix — and often a silence that leaves her unable to help either.\n\nMindset: it is not her fault, and she can still help. Both are true.",
+      inputs: [
+        { q: "It's not her fault, so I can't ask her.", a: "\"It's not her fault, and she's still the one who can help me.\"", bundle: 'pro' },
+        { q: "He's just the delivery driver.", a: "\"He can still tell me who to call.\"", bundle: 'pro' },
+        { q: "The person on the phone didn't write the bill.", a: "\"No, but she can change it, and that's all I need.\"", bundle: 'pro' },
+        { q: "Complaining to her would be taking it out on her.", a: "\"Taking it out on her would be shouting; asking her kindly isn't.\"", bundle: 'pro' },
+        { q: "I should find whoever made the mistake.", a: "\"I don't need the person who made it, just the person who can fix it.\"", bundle: 'pro' },
+        { q: "She looks so young; I don't want to upset her.", a: "\"I can tell her it's not her fault and still ask for a new one.\"", bundle: 'pro' },
+        { q: "The manager isn't here, so there's no point.", a: "\"The person who is here can still help, or tell me when the manager is in.\"", bundle: 'pro' },
+        { q: "It's the company's fault, not the staff's.", a: "\"Right — so I'll be kind to the staff and clear about what the company owes me.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  gettingtoknowsomeone: [
+    {
+      name: "Background",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Asking about someone's background is rude.\" The fear that any question about where someone comes from is too personal.\n\nWhat is true instead: a curious question about their own story is a compliment. What is rude is assuming, or asking them to speak for a group.\n\nIt feels reasonable because many people are asked clumsy questions about their background, and you do not want to be one more.\n\nWhat it costs is that some people only ever get asked about the weather, by everyone.\n\nMindset: being curious about the person is not rude.",
+      inputs: [
+        { q: "Asking about someone's background is rude.", a: "\"Asking about their story, with real interest, is a compliment. Assuming is what's rude.\"", bundle: 'pro' },
+        { q: "They'll think I'm only interested because they're different.", a: "\"Not if I'm just as curious about the rest of their life.\"", bundle: 'pro' },
+        { q: "It's none of my business where people come from.", a: "\"It's theirs to share, and a kind question lets them choose.\"", bundle: 'pro' },
+        { q: "People get asked about that all the time.", a: "\"They get asked clumsily all the time. I can ask what it meant to them.\"", bundle: 'pro' },
+        { q: "I'd rather not risk being nosy.", a: "\"One open question isn't nosy. Pushing after they've changed the subject would be.\"", bundle: 'pro' },
+        { q: "Talking about background only divides people.", a: "\"Hearing someone's story is how the distance closes.\"", bundle: 'pro' },
+        { q: "If they wanted to talk about it, they'd bring it up.", a: "\"Most people wait to be asked. That's what the question is for.\"", bundle: 'pro' },
+        { q: "I treat everyone the same, so I don't ask.", a: "\"Treating everyone the same can mean being curious about everyone's story.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Common Ground",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"We have nothing in common.\" The belief, often formed in the first minute, that there is nothing to talk about.\n\nWhat is true instead: you do not know yet. You know a job, an age and maybe a hobby, and that is not a person.\n\nIt feels reasonable because the first things we notice — age, clothes, work — are often the most different things about us.\n\nWhat it costs is every conversation you end at the weather, and every person you never find out about.\n\nMindset: I have not found it yet. That is different from it not being there.",
+      inputs: [
+        { q: "We have nothing in common.", a: "\"I don't know that yet. So far I've only heard their job title.\"", bundle: 'pro' },
+        { q: "They're so much older than me.", a: "\"Age is one difference. There are a hundred other things we might share.\"", bundle: 'pro' },
+        { q: "What would a teenager and I ever talk about?", a: "\"Plenty, if I ask what they love instead of how school is.\"", bundle: 'pro' },
+        { q: "We'd never be friends anyway.", a: "\"I'm not picking a best friend. I'm getting to know a person.\"", bundle: 'pro' },
+        { q: "Our lives are just too different.", a: "\"The differences are the interesting part, and there's usually a small 'we' as well.\"", bundle: 'pro' },
+        { q: "They only care about sport, and I hate sport.", a: "\"Then I'll ask how they got into it. Their story isn't sport.\"", bundle: 'pro' },
+        { q: "I'll run out of things to say.", a: "\"Questions about them don't run out: where, how, and what it meant.\"", bundle: 'pro' },
+        { q: "If there were something to share, we'd have found it by now.", a: "\"We've talked about the weather. That isn't looking.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Getting It Wrong",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"I might say something ignorant about where they're from.\" A belief that is partly true, which is what makes it hard to put down.\n\nWhat is true: you might. You do not know their country, their family or their life, and a clumsy question can sting.\n\nWhat gets added is the next step: \"so I'd better not ask at all.\" Not knowing is exactly why you ask, and a question about their own experience is far safer than a guess.\n\nWhat it costs is that people from other places, ages and lives get the polite, empty version of you.\n\nMindset: keep the care. Drop the idea that care means silence.",
+      inputs: [
+        { q: "I might say something ignorant about their culture.", a: "\"True, I might — but 'so I'd better say nothing' is the part I added.\"", bundle: 'pro' },
+        { q: "I don't know anything about where they're from.", a: "\"True — but 'so I can't ask' is the part I added.\"", bundle: 'pro' },
+        { q: "I could easily offend them.", a: "\"True, it's possible — but 'so a kind question is too risky' is the part I added.\"", bundle: 'pro' },
+        { q: "I said something clumsy to someone last time.", a: "\"True, I did — but 'so I'll never get it right' is the part I added.\"", bundle: 'pro' },
+        { q: "I don't know the right words for things.", a: "\"True — but 'so I can't ask them what they call it' is the part I added.\"", bundle: 'pro' },
+        { q: "They might be tired of explaining.", a: "\"True, some are — but 'so nobody wants to be asked about their own life' is the part I added.\"", bundle: 'pro' },
+        { q: "I'm not an expert on other cultures.", a: "\"True — but 'so I can't be curious about one person' is the part I added.\"", bundle: 'pro' },
+        { q: "Asking about a difference will sound like pointing it out.", a: "\"True, if I ask about a group — but 'so I can't ask how it was for them' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Small Talk",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I keep things light. I don't pry.\" A belief that feels like good manners, and often is.\n\nWhat is true instead: one real question that they are free to decline is not prying, and light can last for years.\n\nIt feels reasonable because small talk is safe, nobody gets embarrassed, and most of us were taught that personal questions are for close friends.\n\nWhat it costs is quiet: colleagues, neighbours and in-laws you have known for years, and still do not know at all.\n\nMindset: light is a good start and a poor place to stay.",
+      inputs: [
+        { q: "I keep things light.", a: "\"And after years of light, I still don't know who they are.\"", bundle: 'pro' },
+        { q: "I never pry.", a: "\"So the people who'd love to be asked never get asked.\"", bundle: 'pro' },
+        { q: "Small talk is the polite option.", a: "\"Polite, and it keeps everyone exactly as far away as they started.\"", bundle: 'pro' },
+        { q: "I respect people's privacy.", a: "\"One question they can decline respects it too, and lets them in.\"", bundle: 'pro' },
+        { q: "Work talk is safe ground.", a: "\"Safe, and I know her projects better than I know her.\"", bundle: 'pro' },
+        { q: "I let people open up in their own time.", a: "\"Their own time can be ten years, if nobody ever asks.\"", bundle: 'pro' },
+        { q: "I'm not a deep-conversation person.", a: "\"I don't need deep. 'How did you end up here?' is enough.\"", bundle: 'pro' },
+        { q: "I don't want to make things awkward.", a: "\"A little awkward now costs less than years of polite strangers.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  whoyouare: [
+    {
+      name: "An Ordinary Life",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"My life isn't interesting. There's nothing to tell about me.\"\n\nWhat is true instead: people are not asking for an exciting life. They are asking who you are, and an ordinary life told plainly answers that.\n\nIt feels reasonable because other people's stories seem bigger, and your own life is too familiar to see.\n\nWhat it costs is the conversation: \"nothing much\" gives them nothing to hold, and they never find out who is there.\n\nMindset: an ordinary life, said plainly, is a real answer.",
+      inputs: [
+        { q: "My life isn't interesting.", a: "\"It doesn't have to be. It only has to be mine.\"", bundle: 'pro' },
+        { q: "There's nothing to tell about me.", a: "\"There's a place I grew up, a few things I care about and at least one turning point. That's plenty.\"", bundle: 'pro' },
+        { q: "Other people have much better stories.", a: "\"Their stories aren't better, they're just told out loud.\"", bundle: 'pro' },
+        { q: "I've never done anything special.", a: "\"Nobody asked for special. They asked who I am.\"", bundle: 'pro' },
+        { q: "My job is boring, so I'm boring.", a: "\"The job is one line of me. There are other lines.\"", bundle: 'pro' },
+        { q: "They'll be bored if I talk about my family.", a: "\"One sentence about where I come from bores nobody.\"", bundle: 'pro' },
+        { q: "Nothing has ever really changed me.", a: "\"Something has. It just didn't look big at the time.\"", bundle: 'pro' },
+        { q: "I'd rather hear about them — my life is too ordinary.", a: "\"Ordinary is what most lives are. That's why people recognise themselves in it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Showing Off",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Talking about what I care about, or what I've been through, is showing off.\"\n\nWhat is true instead: saying one true thing about yourself is not bragging. Bragging is about being better than them; this is about being known by them.\n\nIt feels reasonable because you were taught not to put yourself forward, and modesty is a real virtue.\n\nWhat it costs is that people only ever meet the polite outside of you, and you wonder why nobody knows you.\n\nMindset: being known is not the same as showing off.",
+      inputs: [
+        { q: "Talking about my values sounds preachy.", a: "\"One plain sentence isn't a sermon. It's an answer.\"", bundle: 'pro' },
+        { q: "If I mention my roles, it sounds like a list of achievements.", a: "\"Dad, drummer, bad cook — that's not a trophy cabinet.\"", bundle: 'pro' },
+        { q: "People will think I'm full of myself.", a: "\"People think that about someone who never asks back. I can do both.\"", bundle: 'pro' },
+        { q: "My turning point makes me sound like a hero.", a: "\"Not if I say it in one line and stop.\"", bundle: 'pro' },
+        { q: "Nobody likes someone who talks about themselves.", a: "\"Nobody likes someone who never stops. One sentence is a different thing.\"", bundle: 'pro' },
+        { q: "I should wait until they ask properly.", a: "\"They did ask. That's what the question was.\"", bundle: 'pro' },
+        { q: "My job sounds impressive, so I'd better hide it.", a: "\"Hiding it makes it bigger. Saying it lightly makes it normal.\"", bundle: 'pro' },
+        { q: "It's more modest to say nothing.", a: "\"Saying nothing isn't modest. It's just hard to get to know.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Privacy",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"My background is private. If I tell them anything, they'll want everything.\"\n\nWhat is true: some of your story is yours to keep, and nobody is owed all of it.\n\nWhat gets added is the step from \"some of it is private\" to \"so I say nothing at all\" — as if one sentence opened every door.\n\nWhat it costs is that people fill the gap with guesses, and the guesses are usually worse than one true line.\n\nMindset: keep what is private. Drop the idea that one sentence gives away everything.",
+      inputs: [
+        { q: "Where I come from is nobody's business.", a: "\"Some of it isn't — but 'so I tell them nothing' is the part I added.\"", bundle: 'pro' },
+        { q: "If I mention my family, they'll ask about everything.", a: "\"They might ask — but 'so I have to answer everything' is the part I added.\"", bundle: 'pro' },
+        { q: "My turning point was painful, so I can't mention it.", a: "\"It was painful — but 'so I can't say even one light sentence' is the part I added.\"", bundle: 'pro' },
+        { q: "People judge you once they know your background.", a: "\"Some people do — but 'so everyone will' is the part I added.\"", bundle: 'pro' },
+        { q: "I don't owe anyone my story.", a: "\"True — but 'so I shouldn't offer any of it' is the part I added.\"", bundle: 'pro' },
+        { q: "Being private is just who I am.", a: "\"It is — but 'so I can't share a single detail' is the part I added.\"", bundle: 'pro' },
+        { q: "Once it's out, I can't take it back.", a: "\"True — but 'so I can't choose a small part to share' is the part I added.\"", bundle: 'pro' },
+        { q: "If they really cared, they'd find out slowly.", a: "\"Slowly is fine — but 'so I give them nothing to start with' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Correcting People",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I just let labels go. I'm easygoing, and correcting people makes things awkward.\"\n\nWhat is true instead: a light correction is easygoing. Letting the wrong label stand is what slowly gets heavy.\n\nIt feels like a strength because it is kind, relaxed and keeps the peace, and most labels are not meant badly.\n\nWhat it costs is quiet: every label you let stand becomes the person they know, and the real you never quite arrives.\n\nMindset: a smile and one true line is still easygoing.",
+      inputs: [
+        { q: "I just let labels go.", a: "\"And then they get to know the label instead of me.\"", bundle: 'pro' },
+        { q: "I'm easygoing — it doesn't bother me.", a: "\"It doesn't bother me today. In a year, I'm still 'the quiet one'.\"", bundle: 'pro' },
+        { q: "Correcting people makes things awkward.", a: "\"The awkward part is hearing the same wrong label for the tenth time.\"", bundle: 'pro' },
+        { q: "They didn't mean anything by it.", a: "\"They didn't, and that's why a light correction is so easy for them to take.\"", bundle: 'pro' },
+        { q: "I don't want to be the touchy one.", a: "\"Saying nothing makes me the one they never really meet.\"", bundle: 'pro' },
+        { q: "It's only small talk.", a: "\"Small talk is where they decide who I am.\"", bundle: 'pro' },
+        { q: "I'll correct it later, when we know each other.", a: "\"By then the label is the thing they know best about me.\"", bundle: 'pro' },
+        { q: "Keeping the peace is more important.", a: "\"Peace built on the wrong picture of me isn't much peace for me.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };

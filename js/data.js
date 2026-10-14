@@ -14324,6 +14324,906 @@ const collections = {
       ]
     },
   ],
+  makingfriends1: [
+    {
+      name: "Say You Liked It",
+      guideFront: "Tell them you enjoyed it when...",
+      guideBack: "A warm parting line",
+      description: "Before you part, say plainly that you enjoyed talking to them. \"I really enjoyed this — I'm glad we got chatting.\" It is not a compliment about them, and it is not a plan yet. It is simply the news that the conversation was good for you.\n\nIt works because of what researchers call the liking gap: after a conversation, most of us underestimate how much the other person liked talking to us. They are probably walking away with the same doubt you have. One sentence closes the gap for both of you, and it makes the next step — an actual plan — feel natural instead of sudden.\n\nSay it at the end, while you are still there. Thought on the bus home, it does nothing.\n\nTypical phrases: \"I really enjoyed talking to you.\", \"That was the best part of my evening.\", \"I'm so glad we got chatting.\"\n\nThree ways to say it:\n\n1. The plain version — \"I really enjoyed this.\"\n\n2. The specific version — name the part you liked. \"I loved hearing about your allotment.\"\n\n3. The version with a door — add that you would happily do it again. \"That was fun. I'd like to do it again.\"\n\nMindset: they are probably wondering the same thing you are. Tell them first.",
+      inputs: [
+        { q: "You have been chatting with Priya by the coffee at a work conference, and the next session is about to start.", a: "\"I really enjoyed this. I'm glad we ended up in the same queue.\"", bundle: 'free' },
+        { q: "After choir practice you walked to the bus stop with Tomás and talked the whole way. Your bus is coming.", a: "\"That was the best part of my evening. See you on Thursday.\"", bundle: 'free' },
+        { q: "Your new neighbour Grace helped you carry a sofa upstairs, and you ended up talking over tea for an hour. She is getting up to leave.", a: "\"Thank you — and not just for the sofa. I really enjoyed talking to you.\"", bundle: 'free' },
+        { q: "At the school gate, you and another parent, Femi, have been laughing about the class assembly. The children are coming out.", a: "\"I'm so glad we got chatting. That made my morning.\"", bundle: 'free' },
+        { q: "You have had a long talk with Hana at a friend's birthday dinner, and people are starting to put their coats on.", a: "\"I loved hearing about your trip to Lisbon. I'm really glad I sat here.\"", bundle: 'free' },
+        { q: "After your first evening at a pottery class, you and Owen have been washing brushes and talking. You both reach the door.", a: "\"This was fun. I'd happily do it again — the talking as much as the clay.\"", bundle: 'pro' },
+        { q: "In an online book group, you and Leila kept chatting for twenty minutes after everyone else had left the call.", a: "\"That was the best part of the whole evening. Thanks for staying on.\"", bundle: 'pro' },
+        { q: "You talked with a new colleague, Jonas, at the end-of-term drinks. You are about to go home and feel a bit shy saying anything.", a: "\"I don't say this enough, but I really enjoyed that. Thanks, Jonas.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Suggest Something Specific",
+      guideFront: "Name a day and a place when...",
+      guideBack: "A concrete invitation",
+      description: "Turn \"we should hang out sometime\" into one real plan: what, where and when. \"I'm going to the climbing wall on Saturday morning. Want to come?\"\n\nIt works because \"sometime\" asks nobody to do anything. Both people mean it, and it almost never happens, because someone still has to pick the day and each of you waits for the other. A specific plan can be answered yes or no in one breath. Jeffrey Hall's research on friendship points the same way: friends are made from time spent together, and time only happens when it is in someone's diary.\n\nKeep it small. A coffee, a walk or a match on TV is easier to say yes to than a whole day.\n\nTypical phrases: \"Coffee on Thursday, after the class?\", \"I'm going to the market on Saturday — want to come?\", \"Are you free for a walk on Sunday morning?\"\n\nThree ways to make it specific:\n\n1. Join it to something you are doing anyway — \"I'm going to the climbing wall on Saturday. Want to come?\"\n\n2. Name the day and offer two choices — \"Coffee — Tuesday or Thursday?\"\n\n3. Tie it to what you talked about — \"You said you've never been to the night market. It's on this Friday.\"\n\nMindset: someone has to name a day. It might as well be you.",
+      inputs: [
+        { q: "Sol, from your Spanish class, says, \"We should get a drink sometime.\"", a: "\"Yes! How about Thursday, after class? There's a nice bar right next door.\"", bundle: 'free' },
+        { q: "You have met Aisha three times at the dog park, and you both love the river trail.", a: "\"I'm walking the river trail on Sunday morning with Bruno. Want to bring Pepper?\"", bundle: 'free' },
+        { q: "Mateo at work mentions that he has never tried the Ethiopian place round the corner.", a: "\"Let's go on Friday for lunch. Half twelve?\"", bundle: 'free' },
+        { q: "You and Ingrid, a parent from your son's football team, chat on the sideline every week.", a: "\"Coffee after Saturday's match? The café by the pitch does great cake.\"", bundle: 'free' },
+        { q: "You have been talking to Dev at the gym about running.", a: "\"I'm doing the park run on Saturday at nine. Come along?\"", bundle: 'free' },
+        { q: "Your new neighbour Rosa says, \"Let's get together once we've unpacked.\"", a: "\"Lovely. Come for a cup of tea on Sunday afternoon — boxes allowed.\"", bundle: 'pro' },
+        { q: "You and Kenji have played in the same online gaming group for weeks, and you have just found out you live in the same city.", a: "\"There's a board game café on Market Street. Saturday at two?\"", bundle: 'pro' },
+        { q: "You would like to invite Clara from choir, but you do not know her well enough to know what she likes.", a: "\"Coffee before rehearsal one day — Tuesday or Wednesday?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Make It Easy to Say No",
+      guideFront: "Offer a light way out when...",
+      guideBack: "An invitation with an exit",
+      description: "Add a light, honest way out to your invitation. \"Want to come? No pressure at all if it doesn't suit.\" The exit makes a yes easier, not less likely.\n\nIt works because a new acquaintance does not know you yet. They cannot tell whether a no will hurt you, so an invitation with no way out can feel like a test. Saying the no out loud takes that weight away — and a person who can refuse easily can also accept easily. It protects you too: a no to Saturday is only about Saturday.\n\nKeep it short and warm. One line is enough. A long apology for asking makes the invitation sound like a burden.\n\nTypical phrases: \"No pressure at all.\", \"Totally fine if not.\", \"Only if you fancy it.\", \"Say if it's not your thing.\"\n\nThree kinds of exit:\n\n1. The plain exit — \"No pressure at all if it doesn't suit.\"\n\n2. The open door — a no only means not this time. \"If not this time, another time.\"\n\n3. The not-your-thing exit — for when the plan itself might not fit them. \"And say if karaoke is your idea of a nightmare.\"\n\nMindset: an easy no is what makes a real yes possible.",
+      inputs: [
+        { q: "You are inviting Niamh, from your evening class, to a gig on Friday.", a: "\"I've got a spare ticket for Friday. Want it? No pressure at all if it doesn't suit.\"", bundle: 'free' },
+        { q: "You would like to ask a colleague, Marcus, to lunch, but he always seems busy.", a: "\"Lunch on Wednesday? Totally fine if your week's mad.\"", bundle: 'free' },
+        { q: "You ask your neighbour Elif if she wants to join your Sunday walk.", a: "\"I'm doing my usual walk on Sunday at ten. Join me if you fancy it — no pressure.\"", bundle: 'free' },
+        { q: "You are inviting Theo, a dad you know from the school gate, to a quiz night.", a: "\"Quiz at the Fox on Thursday? And say if quizzes are your idea of a nightmare.\"", bundle: 'free' },
+        { q: "You asked Ana from the gym to get coffee, and she hesitates.", a: "\"Honestly, no worries if not. If not this week, another time.\"", bundle: 'free' },
+        { q: "You want to invite Yusuf, who you met on a cookery course, to dinner with your friends, and you worry it is too much too soon.", a: "\"I'm having a few people over on Saturday. You'd be very welcome — and completely fine if it's too soon.\"", bundle: 'pro' },
+        { q: "Freya from choir says yes so quickly that you are not sure she means it.", a: "\"Great! And if your week fills up, just say. It won't bother me at all.\"", bundle: 'pro' },
+        { q: "You are inviting Imran, from your online running group, to meet in person for the first time.", a: "\"Fancy a run together on Sunday, in real life? Only if you want to — we can stay online running buddies too.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Pick Up a Thread",
+      guideFront: "Bring back something they mentioned when...",
+      guideBack: "A message that starts from them",
+      description: "Get in touch about something they told you. \"You mentioned that ramen place — I finally tried it. You were right.\" The message starts with them, not with you.\n\nIt works because it shows you were listening, which is one of the warmest things one person can show another. It also solves the hardest part of reaching out: having a reason. A thread they gave you is a ready-made reason, so the message does not feel random or needy, and it gives them something easy to answer.\n\nKeep the thread small and real: a film, a job interview, a recipe, a cat's operation. Then, if it fits, let it lead to a plan.\n\nTypical phrases: \"You mentioned…\", \"How did the interview go?\", \"I thought of you when I saw…\", \"I finally tried it.\"\n\nThree kinds of thread:\n\n1. Their tip — you tried what they recommended. \"I watched that series you mentioned. I'm hooked.\"\n\n2. Their news — ask how something went. \"How did the move go? Are you in?\"\n\n3. Their interest — you saw something that fits it. \"Saw this jazz night and thought of you. Are you going?\"\n\nMindset: you do not need a big reason to get in touch. Something they said is enough.",
+      inputs: [
+        { q: "A week ago, Rosa from book club told you about a ramen place near the station. You have just been.", a: "\"You mentioned that ramen place — I finally tried it. You were right.\"", bundle: 'free' },
+        { q: "Kenji, who you met at a friend's barbecue, said he had a big job interview on Monday. It is now Tuesday.", a: "\"How did the interview go? I've been wondering.\"", bundle: 'free' },
+        { q: "Your neighbour Grace told you her cat was having an operation this week.", a: "\"How's Biscuit after the operation? I hope she's home and bossing you about.\"", bundle: 'free' },
+        { q: "Luca from the climbing wall recommended a podcast, and you have now listened to three episodes.", a: "\"I'm three episodes into the podcast you mentioned. Why did nobody tell me sooner?\"", bundle: 'free' },
+        { q: "Amara, a parent from the school gate, said she was looking for a good bakery. You have found one.", a: "\"You were looking for a good bakery — the one on Mill Lane does amazing bread.\"", bundle: 'free' },
+        { q: "Owen from your pottery class said he loves old films. You see that the local cinema is showing one on Friday.", a: "\"The Rio is showing Casablanca on Friday. I thought of you straight away. Are you going?\"", bundle: 'pro' },
+        { q: "You want to get back in touch with Bea, who you met at a wedding a month ago, but it feels odd after so long.", a: "\"You said you were training for the half marathon. How's it going?\"", bundle: 'pro' },
+        { q: "Pete, from the volunteer group, said his daughter was starting school this week.", a: "\"How was Maya's first week at school? Big week for both of you.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask Again",
+      guideFront: "Invite them once more when...",
+      guideBack: "A second, lighter try",
+      description: "After a soft no or no reply, ask one more time, lightly. \"No worries about Saturday. Next week instead?\" Not a second push on the same plan — a fresh, easy offer.\n\nIt works because most first noes are about the day, not about you. People are busy, tired, or shy too. Marisa Franco, in Platonic, encourages being the one who reaches out again, because friendships tend to grow where someone keeps the door open. One cheerful second try tells them the first no cost nothing.\n\nOnce is the point. If the second try also gets a no with no other day offered, or more silence, let it rest and leave the door open. That is not giving up. It leaves room for them to come back to you.\n\nTypical phrases: \"No worries! Next week instead?\", \"Another time, then — what about Sunday?\", \"This might have got buried — still up for Thursday?\"\n\nThree ways to ask again:\n\n1. A new day — \"No problem. How about the week after?\"\n\n2. A smaller plan — \"Then just a quick coffee instead?\"\n\n3. The gentle nudge after silence — assume it got lost. \"This might have got buried — still up for Thursday?\"\n\nMindset: one no is about one day. Ask once more, lightly, and then let them choose.",
+      inputs: [
+        { q: "Tomás says he cannot come to the climbing wall on Saturday because his sister is visiting.", a: "\"No worries at all. How about the Saturday after?\"", bundle: 'free' },
+        { q: "You invited Hana to dinner last week, and she never replied.", a: "\"This might have got buried — still up for dinner some time this month?\"", bundle: 'free' },
+        { q: "Marcus says he is too busy for lunch this week.", a: "\"Fair enough. A quick coffee on Friday instead? Ten minutes.\"", bundle: 'free' },
+        { q: "Aisha says she cannot make the Sunday walk because of work.", a: "\"No problem. The trail will still be there next Sunday if you fancy it.\"", bundle: 'free' },
+        { q: "You asked Femi to the quiz night, and he said, \"Sorry, not this week.\"", a: "\"Another time, then. It's on every Thursday.\"", bundle: 'free' },
+        { q: "Sanna, from your yoga class, says, \"I'd love to, but things are hectic right now.\"", a: "\"Totally understand. I'll ask again in a few weeks — no pressure.\"", bundle: 'pro' },
+        { q: "You have asked Dev twice now. Both times he said he could not, and he did not suggest another day.", a: "\"No worries at all. If you ever fancy a run, just shout.\"", bundle: 'pro' },
+        { q: "Leila said no to the gig because she does not like loud places.", a: "\"Fair enough! Then how about a quiet drink one evening instead?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Bring Them In",
+      guideFront: "Add them to your plans when...",
+      guideBack: "An offer to join the group",
+      description: "Invite them to something that is already happening. \"A few of us play quiz on Thursdays. Join us?\" You are not building a plan around them — you are opening the door to one that exists.\n\nIt works because it is the lowest-pressure invitation there is. Nobody has to fill an evening one to one, there are other people to talk to, and it is easy to say yes to something that would happen anyway. It also gives a new friendship what Jeffrey Hall's research says it needs most: regular time together, without much planning. A weekly quiz, run or game does that for free.\n\nMake it clear they are wanted, not just allowed. Say who will be there and what it is like.\n\nTypical phrases: \"A few of us meet every Thursday. Join us?\", \"We've got a spare seat on Friday.\", \"Come along — you'd fit right in.\"\n\nThree ways in:\n\n1. The regular thing — \"We play five-a-side every Tuesday, and we're always one short.\"\n\n2. The one-off — \"It's my birthday drinks on Saturday. You'd be very welcome.\"\n\n3. The introduction — tell them who they will meet. \"Come — my friend Ravi is mad about birds too.\"\n\nMindset: you do not have to be the whole plan. Let them into one that already exists.",
+      inputs: [
+        { q: "Lotte, who is new at your office, eats lunch alone at her desk every day.", a: "\"A few of us take lunch to the park on Fridays. Join us?\"", bundle: 'free' },
+        { q: "You have chatted with Kwame at the bus stop for weeks. Your running club meets on Wednesdays.", a: "\"My running club meets on Wednesdays at seven, by the bandstand. All speeds. Come along?\"", bundle: 'free' },
+        { q: "Your quiz team is one short, and Chloe from your Spanish class loves trivia.", a: "\"We play quiz at the Fox on Thursdays, and we're always one short. You'd be perfect.\"", bundle: 'free' },
+        { q: "It is your birthday drinks on Saturday, and you would like to ask Oskar, who you met at the climbing wall.", a: "\"It's my birthday drinks on Saturday at the Anchor. You'd be very welcome.\"", bundle: 'free' },
+        { q: "Zainab has just joined the choir and stands on her own at the break.", a: "\"A few of us go for a drink after rehearsal. Come with us?\"", bundle: 'free' },
+        { q: "Your neighbour Elif mentioned she loves gardening. You help at the community garden on Sunday mornings.", a: "\"We're at the community garden on Sunday mornings. Come along — Ravi will talk tomatoes with you for hours.\"", bundle: 'pro' },
+        { q: "Ben, in an online parents' group, says he is new in town and knows nobody.", a: "\"Some of us meet at the playground café on Saturday mornings. Come and say hi — I'll introduce you.\"", bundle: 'pro' },
+        { q: "You worry that inviting Mia, a new colleague, to your friends' board game night will feel like too much.", a: "\"We do board games every other Friday. Very silly, very relaxed. You'd be welcome.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  makingfriends2: [
+    {
+      name: "Check In for No Reason",
+      guideFront: "Message them just because when...",
+      guideBack: "A message with no agenda",
+      description: "Get in touch with nothing to arrange and nothing to ask for — just because they crossed your mind. \"Saw this and thought of you. How's the new job?\" It is not a catch-up that needs a plan, and it is not a favour in disguise.\n\nIt works because most adult friendships do not end in a quarrel. They fade, because nobody gets in touch between the big occasions. A message with no agenda tells them they are on your mind, and it costs them almost nothing to answer. Marisa Franco, in Platonic, puts it simply: be the one who reaches out — and then reach out again.\n\nKeep it light. A check-in that asks for a long reply has turned into a task.\n\nTypical phrases: \"Saw this and thought of you.\", \"No reason, just wondering how you are.\", \"This song came on and I was back in your old flat.\", \"No need to reply — just saying hi.\"\n\nThree ways to check in:\n\n1. Something that reminded you — \"Walked past our old café today. Still terrible coffee, I assume?\"\n\n2. A question about their life — \"How's the new job? Still enjoying it?\"\n\n3. Just hello — \"No news, just thinking of you. Hope the week's kind to you.\"\n\nMindset: you do not need a reason to get in touch. Being on your mind is the reason.",
+      inputs: [
+        { q: "Your friend Sara started a new job a month ago, and you haven't heard from her since.", a: "\"Hey, no reason — just wondering how the new job's going. Still enjoying it?\"", bundle: 'free' },
+        { q: "A song comes on the radio that you and your old flatmate Jonas played all through university.", a: "\"This just came on and I'm back in our old kitchen. Hope you're well!\"", bundle: 'free' },
+        { q: "You walk past the café where you and Priya used to meet before she moved to Leeds.", a: "\"Walked past our café today and thought of you. How's Leeds treating you?\"", bundle: 'free' },
+        { q: "Your friend Tom had a baby in the spring. You don't want to ask for his time, just to say hello.", a: "\"No need to reply — just thinking of you three. Hope you're getting some sleep.\"", bundle: 'free' },
+        { q: "You see a dog in the park that looks exactly like your old school friend Emma's dog.", a: "\"Just met Biscuit's twin in the park. How are you both doing?\"", bundle: 'free' },
+        { q: "Your work friend Daniel moved to another department, and you no longer bump into each other at the coffee machine.", a: "\"I miss our coffee-machine chats. How's life on the third floor?\"", bundle: 'pro' },
+        { q: "Your friend Leila mentioned a few weeks ago that things were stressful at home. You want to get in touch without making it heavy.", a: "\"No agenda, just thinking of you. How are things at your end?\"", bundle: 'pro' },
+        { q: "Your friend Marcus lives in Lisbon, and the two of you only ever talk on birthdays.", a: "\"It's not your birthday, I just wanted to say hi. What's new in Lisbon?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Remember the Detail",
+      guideFront: "Ask about what they told you when...",
+      guideBack: "A question about their news",
+      description: "Ask about something they told you last time — the operation, the job interview, the toddler who would not settle at nursery. \"How did your mum's operation go?\" It is not a general \"how are you?\"; it is a question only someone who listened could ask.\n\nIt works because a remembered detail shows that they were heard, and that their life matters to you between meetings. It also makes the next conversation easy to start: you skip the small talk and go straight to something they care about.\n\nIf memory is not your strong point, that is fine. A quick note in your phone after you meet does the job, and nobody needs to know.\n\nTypical phrases: \"How did the interview go?\", \"Did your mum's operation go okay?\", \"Has the boiler been fixed yet?\", \"Last time you said work was mad. Has it calmed down?\"\n\nThree ways to bring it back:\n\n1. Ask how it went — for something that has happened. \"How did moving day go?\"\n\n2. Ask how it is going — for something still going on. \"How's your dad doing now?\"\n\n3. Wish them luck before — for something coming up. \"Good luck on Thursday. I'll be thinking of you.\"\n\nMindset: you do not need a great memory, just one detail. Write it down if you have to.",
+      inputs: [
+        { q: "Last time you met, your friend Anna said her mum was having an operation on Tuesday. It's now Thursday.", a: "\"How did your mum's operation go? I've been thinking about her.\"", bundle: 'free' },
+        { q: "Your old school friend Ben told you he had a job interview this week.", a: "\"So — how did the interview go? Tell me everything.\"", bundle: 'free' },
+        { q: "Your friend Nadia mentioned that her toddler had started nursery and was crying every morning.", a: "\"How's nursery going? Has she stopped crying at the door?\"", bundle: 'free' },
+        { q: "Your work friend Rosa said she was dreading a presentation on Monday. It's Monday evening.", a: "\"How did the presentation go? Are you still alive?\"", bundle: 'free' },
+        { q: "Your friend Karim, who moved to Glasgow, said he was struggling to find a flat.", a: "\"Any luck with the flat hunt? Last I heard it was grim.\"", bundle: 'free' },
+        { q: "Your friend Helen told you her dad starts his treatment next week.", a: "\"Good luck to your dad this week. I'll be thinking of you both.\"", bundle: 'pro' },
+        { q: "Your friend Leo said his knee was playing up during his marathon training. You meet him for a drink.", a: "\"Before anything else — how's the knee? Are you still running?\"", bundle: 'pro' },
+        { q: "Your friend Ingrid mentioned that her divorce papers would be signed this month.", a: "\"I know this is the month with the papers. How are you doing with it all?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Make It a Habit",
+      guideFront: "Suggest a standing plan when...",
+      guideBack: "An offer of a regular date",
+      description: "Turn meeting up into something that repeats, so it no longer has to be arranged from scratch. \"First Sunday of the month — walk and coffee?\" It is not a vague \"we must do this more often\"; it is a fixed time that comes round again.\n\nIt works because friendships grow with time spent together, and they need a lot of it. Jeffrey Hall's research on how friendships form points to many hours, not a few good evenings. A habit gives you those hours without anyone having to ask each time. Asking takes energy, and every long gap gives a friendship room to fade. A standing plan does the asking for you.\n\nMake it fit their life, not just yours. A habit that suits a parent of small children may be a walk with the pram, not a late dinner.\n\nTypical phrases: \"Same time next month?\", \"Shall we make Thursdays our thing?\", \"Let's put the next one in now.\", \"What about a call every other Sunday?\"\n\nThree ways to make it a habit:\n\n1. A fixed day — \"First Sunday of every month, the lake path?\"\n\n2. Book the next one before you leave — \"Before we go — same time in three weeks?\"\n\n3. Join it to something you both do anyway — \"You're at the pool on Saturdays too. Coffee after?\"\n\nMindset: a regular plan is not less special. It is what makes the friendship keep happening.",
+      inputs: [
+        { q: "You and your friend Sofie have just had a lovely walk, and you both say you should do it more often.", a: "\"Let's not leave it to chance. First Sunday of every month, same path?\"", bundle: 'free' },
+        { q: "You meet your old school friend Peter for a beer once a year, and it always feels too short.", a: "\"This is too good for once a year. Shall we make it every couple of months?\"", bundle: 'free' },
+        { q: "Your friend Maja has two small children and can't do evenings.", a: "\"What about a walk with the pram every other Wednesday morning? I'll come to you.\"", bundle: 'free' },
+        { q: "You are finishing lunch with your friend Ali, who moved to the other side of town.", a: "\"Before we go — same time next month? Let's put it in now.\"", bundle: 'free' },
+        { q: "You and your work friend Lisa both finish at five on Fridays.", a: "\"Shall we make Friday coffee after work our thing?\"", bundle: 'free' },
+        { q: "Your friend Chris lives in another city, and you only talk when one of you happens to remember.", a: "\"What if we did a call every other Sunday evening? Even twenty minutes.\"", bundle: 'pro' },
+        { q: "You and your friend Hanna both go to the climbing wall, but on different days.", a: "\"You go on Tuesdays, right? I could switch to Tuesdays too, and we'd go together.\"", bundle: 'pro' },
+        { q: "Your friend Omar is having a hard time and keeps saying he'll get in touch when things calm down.", a: "\"No need to plan anything. Could I just come by with coffee on Saturday mornings for a while?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Share Something Real",
+      guideFront: "Go one step deeper when...",
+      guideBack: "A small, honest disclosure",
+      description: "Tell a friend something a little more personal than usual — one step deeper, not the whole story at once. \"Honestly, I've been finding this year harder than I let on.\" It is not oversharing, and it is not a test of how much they can take.\n\nIt works because closeness grows in steps, and both people take them. When you go one level below the usual \"fine, busy\", you show that you trust them, and you make it easier for them to do the same. Go too far at once, though, and they are left holding more than they were ready for. One step is enough. Their answer tells you whether to take another.\n\nKeep it short, and leave room for them. A real sentence is an invitation; a long speech is a weight.\n\nTypical phrases: \"Honestly, it's been a harder year than I let on.\", \"Can I tell you something I haven't told many people?\", \"I'll be honest — I've been a bit lonely since we moved.\", \"I'm actually nervous about it.\"\n\nThree steps, from light to deeper:\n\n1. A real feeling about something ordinary — \"I'm actually quite nervous about the new job.\"\n\n2. Something you usually keep quiet — \"I've been a bit lonely since we moved, to be honest.\"\n\n3. Something that matters, said plainly and briefly — \"Things at home have been hard this year. I don't need advice, I just wanted you to know.\"\n\nMindset: one step deeper is enough. Let them take the next one with you.",
+      inputs: [
+        { q: "Your friend Elin asks how the new job is going. You usually say \"great\", but it has been hard.", a: "\"Honestly? Harder than I expected. I'm still finding my feet.\"", bundle: 'free' },
+        { q: "You are on the phone with your old friend Sam, who moved away last year. He says it's been ages since you talked properly.", a: "\"It has. To be honest, I've been a bit lonely since you left.\"", bundle: 'free' },
+        { q: "Your friend Julia tells you she's finding the first months with her baby really tough.", a: "\"I remember that feeling. I cried in the car most days, honestly.\"", bundle: 'free' },
+        { q: "Over coffee, your work friend Mehmet asks if you're looking forward to the holidays.", a: "\"Partly. Christmas with my family is always a bit tense, if I'm honest.\"", bundle: 'free' },
+        { q: "Your friend Carla asks why you've been so quiet lately.", a: "\"I've been a bit low, to be honest. Nothing dramatic, just a heavy few weeks.\"", bundle: 'free' },
+        { q: "Your friend Noah has just told you he's nervous about turning forty.", a: "\"Can I admit something? I felt exactly the same, and I still don't feel grown up.\"", bundle: 'pro' },
+        { q: "You and your friend Lina are walking home after dinner, and the conversation has been light all evening.", a: "\"Can I tell you something I haven't told many people? I've been thinking about changing careers.\"", bundle: 'pro' },
+        { q: "Over a quick lunch, your friend Pavel asks about your break-up, and you're about to tell him all of it, in detail.", a: "\"The short version: it's been a hard few months. I'll tell you more when we've got a whole evening.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Show Up for the Big Day",
+      guideFront: "Mark the moment that matters when...",
+      guideBack: "A message for the occasion",
+      description: "Be there, in words or in person, on the days that matter to them — a birthday, a new baby, moving day, an exam, and the hard days too: an anniversary, a funeral, a hospital result. \"I know Friday's the anniversary. Thinking of you.\" It is not a grand gesture; it is simply not letting the day pass.\n\nIt works because people remember who turned up. A message on a hard anniversary, when everyone else has moved on, can mean more than a long evening together. And the happy days count as much as the sad ones: being one of the first to say congratulations is part of being close.\n\nYou do not need the perfect words. A short message on the right day beats a beautiful one a week late.\n\nTypical phrases: \"I know Friday's the anniversary. Thinking of you.\", \"Happy birthday! Lunch is on me this week.\", \"Good luck today — you've got this.\", \"What time do you need me on moving day?\"\n\nThree kinds of big day:\n\n1. The happy day — a birthday, a new job, a baby. \"Congratulations! I'm so happy for you. When can I come and meet her?\"\n\n2. The hard day — an anniversary, a funeral, a result. \"I know today's the day. No need to reply. I'm thinking of you.\"\n\n3. The practical day — moving house, an exam, a first day. \"I'm free on Saturday. Shall I bring the car and some sandwiches?\"\n\nMindset: you do not need the right words. You need to remember the date and say something.",
+      inputs: [
+        { q: "Your friend Mona's father died two years ago this Friday.", a: "\"I know Friday is two years since your dad died. I'm thinking of you.\"", bundle: 'free' },
+        { q: "It's your old school friend Erik's birthday, and he lives five hours away.", a: "\"Happy birthday, old man! Call me this weekend? I want to hear everything.\"", bundle: 'free' },
+        { q: "Your friend Aisha is moving flats on Saturday.", a: "\"I'm free on Saturday. What time do you need me, and shall I bring lunch?\"", bundle: 'free' },
+        { q: "Your work friend Petra has her driving test this morning.", a: "\"Good luck today! You've practised for this. Tell me how it goes.\"", bundle: 'free' },
+        { q: "Your friend Lucas and his partner have just had a baby.", a: "\"Congratulations, both of you! No rush to reply. Can I drop off dinner next week?\"", bundle: 'free' },
+        { q: "Your friend Grace is getting the results of a scan today.", a: "\"Thinking of you today. I'm around all evening if you want to talk — or not.\"", bundle: 'pro' },
+        { q: "Your friend Jamal is running his first marathon on Sunday.", a: "\"I'll be at the twenty-mile mark with a sign. Try not to look too tired.\"", bundle: 'pro' },
+        { q: "Your friend Ruth, who lives abroad, has just lost her job.", a: "\"I just heard. I'm so sorry. Can I call you tonight, or would you rather text?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mend a Drift",
+      guideFront: "Admit the silence and reach out when...",
+      guideBack: "An admission, plus an invitation",
+      description: "When you and a friend have drifted apart, say so plainly and reach out anyway. \"I've been bad at keeping in touch, and I miss you.\" It is not a long apology or a list of everything that got in the way; it is one honest line and an open door.\n\nIt works because both of you have probably noticed the silence, and both are probably waiting for the other to break it. People also tend to underestimate how much others enjoyed their company — researchers call it the liking gap — so your friend is more likely to be glad to hear from you than you fear. Naming the gap takes the awkwardness out of it, and an invitation gives the friendship somewhere to go next.\n\nThis is for a quiet drift, not a fight. If something went wrong between you, that is a different conversation.\n\nTypical phrases: \"I've been bad at keeping in touch, and I miss you.\", \"It's been far too long. That's on me.\", \"I know it's been months. I'd love to catch up.\", \"I've thought about you a lot. I just never said.\"\n\nThree ways to mend it:\n\n1. Own your part — \"I've been terrible at keeping in touch. Sorry about that.\"\n\n2. Say you miss them — \"I miss our Thursday chats. I miss you.\"\n\n3. Add an invitation — \"It's been too long. Coffee next week?\"\n\nMindset: one honest message is enough to start. The silence is harder to keep than to break.",
+      inputs: [
+        { q: "You haven't spoken to your old university friend Freya for almost a year.", a: "\"I've been bad at keeping in touch, and I miss you. How are you?\"", bundle: 'free' },
+        { q: "Your friend Daniel had twins last year, and you quietly stopped inviting him to things.", a: "\"I stopped asking you along after the twins came, and I shouldn't have. Fancy a beer when you can?\"", bundle: 'free' },
+        { q: "You and your former colleague Amira had lunch every week until you changed jobs.", a: "\"I miss our lunches. It's been far too long, and that's on me. Next week?\"", bundle: 'free' },
+        { q: "Your school friend Jakob sent you a message months ago, and you never replied.", a: "\"I owe you a reply from about March. Sorry! I'd love to hear how you are.\"", bundle: 'free' },
+        { q: "You and your friend Kate used to be neighbours. Since she moved across town, you barely speak.", a: "\"It feels like we've drifted since you moved, and I don't want that. Walk on Sunday?\"", bundle: 'free' },
+        { q: "Your phone reminds you it's your friend Hassan's birthday. You haven't spoken in two years.", a: "\"Happy birthday! Two years is far too long. I'd love to catch up properly.\"", bundle: 'pro' },
+        { q: "Your friend Tilde had a hard time last year. You didn't know what to say, so you said nothing.", a: "\"I went quiet when things were hard for you, and I'm sorry. I'm here now, if you'd like.\"", bundle: 'pro' },
+        { q: "You and your friend Marco both stopped calling, and neither of you ever said why.", a: "\"I think we both let it slide. I miss you. Can we fix that?\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  makingfriends3: [
+    {
+      name: "Say You Felt Left Out",
+      guideFront: "Say you'd have liked to be there when...",
+      guideBack: "A wish to be included, not a complaint",
+      description: "Say that you would have liked to be there — plainly, without asking why you weren't. \"I saw the photos from Saturday. I'd have loved to come.\" It is a wish about next time, not a complaint about last time.\n\nIt works because most leaving out is not a decision. People make plans in a hurry, assume you are busy, or guess you would not be interested. \"Why wasn't I invited?\" makes them defend a choice they never really made. A wish tells them something they did not know — that you want to be asked — and it is easy to say yes to.\n\nLeave out the question of why. If there was a reason, it will come out on its own.\n\nTypical phrases: \"I'd have loved to come.\", \"Ask me next time.\", \"I'd really like to be in on that.\", \"Honestly, I felt a bit left out.\"\n\nThree ways to say it:\n\n1. The wish — \"It looked lovely. I'd have loved to come.\"\n\n2. The wish and the feeling — when it hurt more. \"I felt a bit left out, honestly. I'd like to be asked next time.\"\n\n3. Let me say no myself — when they guessed you would not want to. \"Ask me anyway, and let me be the one who says no.\"\n\nMindset: they probably did not decide to leave you out. Tell them you want in.",
+      inputs: [
+        { q: "You see photos from Saturday: three of your closest friends at a lake house. Nobody mentioned it to you.", a: "\"I saw the photos from Saturday. It looked lovely — I'd have loved to come.\"", bundle: 'free' },
+        { q: "Your friend Jonas mentions \"the usual quiz team\" that meets every Thursday. You never knew there was one.", a: "\"I didn't know you had a quiz team! I'd really like to join one week, if there's room.\"", bundle: 'free' },
+        { q: "Your lunch friends at work have started going out on Fridays without you. Today Mia talks about the new Thai place.", a: "\"Sounds like Friday lunch has become a thing. Can I come next time? I'd like that.\"", bundle: 'free' },
+        { q: "You hear from someone else that your friend Elin had a small birthday dinner last night.", a: "\"I heard about your birthday dinner. Honestly, I felt a bit left out — I'd have loved to be there.\"", bundle: 'free' },
+        { q: "Your old uni friends have a new group chat. You only found out because Sara forwarded you a message from it.", a: "\"Sara showed me the new group chat. I'd love to be in it, if that's okay.\"", bundle: 'free' },
+        { q: "Your neighbours had a barbecue in the street on Sunday. You were home all day, and nobody knocked.", a: "\"I saw the barbecue on Sunday. Next time, knock on my door — I'd have been out in a minute.\"", bundle: 'pro' },
+        { q: "You ask about the hike. Your friend says, \"Oh, we didn't think you'd want to come.\"", a: "\"I'd have wanted to, actually. Ask me next time, and let me be the one who says no.\"", bundle: 'pro' },
+        { q: "You and Leo used to go to football together. Now he goes with his brother-in-law, and he mentions Saturday's match.", a: "\"I miss our football trips. If there's ever a spare ticket, I'd love to come along.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name the Pattern Kindly",
+      guideFront: "Point out what keeps happening when...",
+      guideBack: "An observation and a caring question",
+      description: "Say what keeps happening, in plain words, and follow it with a caring question. \"It feels like I'm usually the one who asks. Is everything okay?\" You describe the pattern — the cancelled plans, the unanswered messages, the friendship that only runs one way — without turning it into a charge.\n\nIt works because a pattern is easy to miss from the inside. The friend who cancels sees three busy weeks; you see three cancellations in a row. Saying it out loud lets them see what you see. The question at the end matters most: it assumes there may be a reason, and it gives them room to tell you.\n\nKeep it to what you noticed. \"You always\" and \"you never\" turn an observation into a verdict.\n\nTypical phrases: \"I've noticed…\", \"It feels like I'm usually the one who…\", \"That's the third time, and I wanted to say it.\", \"Is everything okay?\"\n\nThree ways to name it:\n\n1. The pattern and a check — \"That's the third time this month. Is something going on?\"\n\n2. The pattern and a wish — \"I've noticed I'm usually the one who asks. I'd love it if you asked me sometimes.\"\n\n3. The pattern and a fix — \"We say 'let's catch up' every time. Shall we pick a date right now?\"\n\nMindset: naming a pattern is not an attack. It is the friendship asking to be noticed.",
+      inputs: [
+        { q: "You have suggested the last four coffees with Emma. She always says yes, but never asks you first.", a: "\"It feels like I'm usually the one who asks. Is everything okay with you?\"", bundle: 'free' },
+        { q: "Ben cancels on you an hour before, for the third time this month.", a: "\"That's the third time this month, and I've noticed it. Is something going on?\"", bundle: 'free' },
+        { q: "Your friend Priya mostly calls when she needs something. Today she asks you to water her plants while she's away.", a: "\"Happy to water them. I've noticed we mostly talk when you need a hand, though — I'd like to just hang out too.\"", bundle: 'free' },
+        { q: "Your friend Tom's messages arrive days later, or not at all. You're not sure where you stand.", a: "\"I've noticed my messages tend to sit for a while. No pressure — I just wanted to check we're okay.\"", bundle: 'free' },
+        { q: "Every time you meet Nadia in town, she says, \"We must catch up properly!\" It never happens.", a: "\"We say that every time, and it never happens. Shall we pick a date right now?\"", bundle: 'free' },
+        { q: "Your friend Anna is often forty minutes late, and you end up waiting alone in the café.", a: "\"I've noticed I'm often waiting quite a while. Is there a time that would really work better for you?\"", bundle: 'pro' },
+        { q: "Your gym friend always picks the class, the time and the place for coffee after.", a: "\"I've noticed we usually do it your way, which is fine. Could I choose next time?\"", bundle: 'pro' },
+        { q: "Your friend Oscar texts, \"So sorry, can't make it tonight. Next week?\" It's the fourth \"next week\" in a row.", a: "\"No worries. I've noticed next week keeps moving, though. Is now just a hard time for you?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say the Small Hurt Early",
+      guideFront: "Mention what stung when...",
+      guideBack: "A light, honest statement",
+      description: "When something a friend said or did stings a little, say so soon and keep it small. \"That joke about my job stung a bit, honestly.\" One sentence, said lightly, while it is still the size of one sentence.\n\nIt works because small hurts do not stay small when they are swallowed. They come back the next time, a little bigger, and after a few months there is a pile of them and no single one you can point to. Said early, a hurt is easy for a friend to hear and easy to fix. Said late, it sounds like a list.\n\nLight does not mean joking it away. Say it plainly and kindly, then let it go.\n\nTypical phrases: \"That stung a bit, honestly.\", \"Can I mention something small?\", \"It's small, but I wanted you to know.\", \"I'd rather say it now than let it grow.\"\n\nThree ways to say it:\n\n1. Just the sting — \"That comment stung a bit. That's all.\"\n\n2. The sting and a wish — \"That stung. I'd rather you didn't joke about my weight.\"\n\n3. Shrink it first — so they know the size. \"This is a small thing, but I was a bit sad you missed my birthday.\"\n\nMindset: a small hurt said now is a gift to the friendship. The same hurt in a year is a problem.",
+      inputs: [
+        { q: "At dinner, your friend jokes, \"Well, your job isn't exactly hard.\" Everyone laughs. Later, you're walking to the bus together.", a: "\"That joke about my job stung a bit, honestly. I wanted to say it before it grew.\"", bundle: 'free' },
+        { q: "Your friend Lina forgot your birthday this year. Two days later she texts about the weekend.", a: "\"Can I mention something small? I was a bit sad you missed my birthday. That's all.\"", bundle: 'free' },
+        { q: "Your friend told the others about your job interview, which you'd shared in private.", a: "\"I'd rather you hadn't told the others about my interview. It's small, but I wanted you to know.\"", bundle: 'free' },
+        { q: "At a party, your friend corrected you in front of everyone, a bit sharply.", a: "\"When you corrected me in front of everyone, it stung a little. I just wanted to say it.\"", bundle: 'free' },
+        { q: "Your friend calls your new boyfriend \"this one\" and rolls her eyes.", a: "\"The 'this one' comment stung a bit. I'd really like you to give him a chance.\"", bundle: 'free' },
+        { q: "You told your friend you finished your first half-marathon. She replied, \"lol okay.\"", a: "\"Honestly, the 'lol okay' felt a bit flat. It was a big deal for me.\"", bundle: 'pro' },
+        { q: "Your friend Marco makes another joke about your accent, the third this evening.", a: "\"I know you mean it kindly, but the accent jokes are starting to sting a bit.\"", bundle: 'pro' },
+        { q: "Your friends booked the holiday cottage for dates you can't make, without checking with you.", a: "\"I was a bit hurt the dates got booked without me. Next time, can we check together?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Make Room for Their Change",
+      guideFront: "Adjust to their new life when...",
+      guideBack: "An offer that fits their life now",
+      description: "When a friend's life changes — a new partner, a baby, a new city, a hard job, an ill parent — say that you see it, and offer a way to meet that fits their life as it is now. \"I know your weekends look different now. What works for you?\"\n\nIt works because the friendship did not stop; the shape of their week did. Most friendships that fade after a big change fade because both people keep waiting for the old shape to come back. A friend with a newborn cannot do Friday nights out, but can often do a Saturday walk with the pram. Offering the new shape tells them you are staying, and takes the guilt off them.\n\nAsk, and offer something small and concrete. \"We should catch up when things calm down\" leaves it to a day that may not come.\n\nTypical phrases: \"What works for you now?\", \"I know things look different now.\", \"How about something smaller?\", \"I'm not going anywhere.\"\n\nThree ways to make room:\n\n1. Ask what works — \"I know evenings are hard now. What would work for you?\"\n\n2. Offer the new shape — \"Could I come to you, and bring lunch?\"\n\n3. Say you're staying — for when they feel guilty. \"You're not a bad friend. Life changed. I'm still here.\"\n\nMindset: the friendship can change shape and still be the same friendship.",
+      inputs: [
+        { q: "Your friend Hanna has just had a baby, and she keeps cancelling evening plans.", a: "\"I know evenings are hard now. Could I come to you on Saturday morning and bring lunch?\"", bundle: 'free' },
+        { q: "Your friend Omar has a new partner, and his weekends are full.", a: "\"I know your weekends look different now. What works for you?\"", bundle: 'free' },
+        { q: "Your best friend has moved to another city, four hours away.", a: "\"Now that you're in Leeds, how about a call every other Sunday? And I'll come up in spring.\"", bundle: 'free' },
+        { q: "Your friend has started a demanding new job and keeps saying she's too tired to meet.", a: "\"Sounds like the new job's taking everything. Want to grab a quick coffee near your office instead?\"", bundle: 'free' },
+        { q: "Your friend has stopped drinking. You've always met at the pub.", a: "\"Since you've stopped drinking, shall we swap the pub for a walk or a film?\"", bundle: 'free' },
+        { q: "Your friend is caring for her ill mother and hasn't replied in two weeks.", a: "\"You've got so much on with your mum. I'm not going anywhere — text me when you've got ten minutes.\"", bundle: 'pro' },
+        { q: "Your friend's new girlfriend comes along to everything now.", a: "\"I really like that Sam comes along. Could we also do just the two of us now and then?\"", bundle: 'pro' },
+        { q: "Your friend just had twins. She says, \"I'm such a terrible friend these days.\"", a: "\"You're not a terrible friend — life just changed. Can I come over and hold a baby while you shower?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Let It Ease Off Kindly",
+      guideFront: "Step back warmly when...",
+      guideBack: "A warm step back, door left open",
+      description: "When a friendship has run its course, let it get smaller without a fight and without disappearing. Say something warm and true about the friendship, and something honest about how much you can give now. \"I don't have much time these days, but I'll always be glad to see you.\"\n\nIt works because most friendships do not end with a decision; they fade. The two hard ways to let them fade are ghosting, which leaves the other person guessing, and a big talk about why it is over, which turns a natural change into a breakup. A kind line in between respects what you had, and leaves the door open.\n\nBe warm and honest, never vague and guilty. Do not promise what you will not do.\n\nTypical phrases: \"I'll always be glad to see you.\", \"I think life has taken us different ways.\", \"I'm glad we were close when we were.\", \"I can't do as much as before.\"\n\nThree ways to ease off:\n\n1. Less, warmly — \"Monthly is a bit much for me now. Let's catch up when we can.\"\n\n2. Different ways — \"I think life has taken us different ways, and that's alright.\"\n\n3. Thank the friendship — \"I'm really glad we were close when we were.\"\n\nMindset: a friendship that has done its work deserves a kind ending, not a silent one.",
+      inputs: [
+        { q: "An old school friend keeps suggesting weekly drinks. You've drifted apart and have less and less in common.", a: "\"I don't have much time these days, but I'll always be glad to see you.\"", bundle: 'free' },
+        { q: "A friend from your old job wants to meet every month. You'd rather it was less often.", a: "\"Monthly is a bit much for me right now. Shall we catch up when we can — maybe before Christmas?\"", bundle: 'free' },
+        { q: "Your friend asks you to come back to the running club. You've moved on from it, and from most of that group.", a: "\"I think my running days are behind me. I really loved them with you, though.\"", bundle: 'free' },
+        { q: "After a long silence, a friend texts, \"We should meet up!\" You both know it has faded.", a: "\"It's lovely to hear from you. I hope things are good — let's say hi if we're ever in the same place.\"", bundle: 'free' },
+        { q: "Your friend Kim asks, \"Are we okay? We never see each other any more.\"", a: "\"We're okay. I think life has taken us different ways, and I still think of you really fondly.\"", bundle: 'free' },
+        { q: "Your friend wants to keep up your old Friday tradition. You no longer enjoy it, and you need your evenings.", a: "\"I'm going to step back from Fridays. It's not about you — I just need my evenings now. Let's still do your birthday.\"", bundle: 'pro' },
+        { q: "Every call with your friend is an hour of her problems, and it leaves you drained.", a: "\"I can't do the long calls like before. I still care how you are, so short messages are good.\"", bundle: 'pro' },
+        { q: "A friend you haven't seen in years sends you a birthday card.", a: "\"Thank you for the card. I'm so glad we were close when we were — I hope you have a really good year.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  namesandintroductions: [
+    {
+      name: "Say Your Name Clearly",
+      guideFront: "Give your name slowly when...",
+      guideBack: "Your name, with a memory aid",
+      description: "Say your own name a little slower than feels natural, and give it something to hold on to. \"I'm Rikard — with a K.\" It is not a speech about your name. It is one clear word, and if it helps, one small handle.\n\nIt works because most names are lost in the first second. You have said your own name thousands of times, so it comes out fast, and the other person is busy smiling and shaking hands. A slower name and a small handle give their memory a real chance. They also make it easy for them to say it back.\n\nTypical phrases: \"I'm Ngozi. N-G-O-Z-I.\", \"Hi, I'm Rose — like the flower.\", \"I'm Siobhan. You say it 'shi-VAWN'.\", \"It's Lars, from number twelve.\"\n\nThree handles that help:\n\n1. The spelling — for names people write wrong. \"Rikard, with a K.\"\n\n2. The sound — for names people say wrong. \"Saoirse. It sounds like 'SEER-sha'.\"\n\n3. The picture — something to link the name to. \"I'm Lars, from the house with the red door.\"\n\nMindset: your name is the first thing you give someone. Give it slowly enough to catch.",
+      inputs: [
+        { q: "It is your first day at a new job, and a colleague comes over to your desk.", a: "\"Hi, I'm Ngozi — N-G-O-Z-I. I've just started in finance.\"", bundle: 'free' },
+        { q: "You are at a party, and you know you always say your name too fast.", a: "(Slowly.) \"Hi. I'm Andreas. Nice to meet you.\"", bundle: 'free' },
+        { q: "At the school gate, another parent says hello and asks which child is yours.", a: "\"I'm Joaquín — it sounds like 'wah-KEEN'. I'm Lucas's dad.\"", bundle: 'free' },
+        { q: "You join a football team, and the captain asks your name.", a: "\"Siân. It sounds like 'Shaan' — it's the Welsh spelling.\"", bundle: 'free' },
+        { q: "You meet a new neighbour, and your full name is long.", a: "\"I'm Katarzyna, but everyone calls me Kasia. K-A-S-I-A.\"", bundle: 'free' },
+        { q: "Someone at a wedding hears your name and says, \"Sorry — what was it?\"", a: "\"Aoife. You say it 'EE-fa'. Nobody gets it the first time.\"", bundle: 'pro' },
+        { q: "It is loud at a networking event, and the other person leans in to hear.", a: "\"It's Tom. Tom Okafor. I look after the computers at the hospital.\"", bundle: 'pro' },
+        { q: "A new neighbour introduces herself, and you would like her to remember you.", a: "\"I'm Lars — from number twelve, the house with the red door.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Use Their Name Once",
+      guideFront: "Say their name back when...",
+      guideBack: "A greeting with their name in it",
+      description: "As soon as you hear someone's name, say it back once, in a normal sentence. \"Nice to meet you, Leila.\" Once is enough. Using it in every sentence sounds like a sales trick.\n\nIt works because saying a name out loud is the quickest way to keep it. It also checks that you heard it right. If you got it wrong, they will tell you now, while it is easy — not in three months, when it is embarrassing. And most people like hearing their own name said properly.\n\nTypical phrases: \"Nice to meet you, Leila.\", \"Good to meet you, Kofi.\", \"So, Daniel, how do you know Sam?\", \"Thanh — did I say that right?\"\n\nThree good places to use it:\n\n1. The greeting — straight away. \"Nice to meet you, Kofi.\"\n\n2. The first question — put the name in it. \"So, Ingrid, how do you know the bride?\"\n\n3. The check — when you are not sure you said it right. \"Nguyen — is that right?\"\n\nMindset: one time, right away. That is all it takes to keep a name.",
+      inputs: [
+        { q: "A new colleague says, \"Hi, I'm Leila.\"", a: "\"Nice to meet you, Leila. Welcome to the team.\"", bundle: 'free' },
+        { q: "At a friend's barbecue, a man says, \"I'm Kofi, I live next door.\"", a: "\"Good to meet you, Kofi. Sorry about all the smoke.\"", bundle: 'free' },
+        { q: "At the sports club, a woman says, \"I'm Ingrid, I run the Tuesday group.\"", a: "\"Ingrid — great. Is the Tuesday group okay for beginners?\"", bundle: 'free' },
+        { q: "A parent at the school gate says, \"I'm Mira, Zoe's mum.\"", a: "\"Hi, Mira. I think our two are best friends this week.\"", bundle: 'free' },
+        { q: "At a networking event, someone says, \"Hi, I'm Daniel. I work in design.\"", a: "\"Daniel, nice to meet you. What sort of design?\"", bundle: 'free' },
+        { q: "A new neighbour tells you her name is Thanh, and you are not sure you said it right.", a: "\"Thanh — did I say that right?\"", bundle: 'pro' },
+        { q: "An older customer says, \"It's Mr Adeyemi.\"", a: "\"Thank you, Mr Adeyemi. It'll be ready in five minutes.\"", bundle: 'pro' },
+        { q: "At a wedding, the guest next to you says, \"I'm Saoirse.\"", a: "\"Saoirse — what a lovely name. Are you here for the bride or the groom?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask Again Early",
+      guideFront: "Check a name you missed when...",
+      guideBack: "A quick, light question",
+      description: "If you did not catch someone's name, ask again straight away — in the first minute, not after an hour. \"Sorry — I missed your name?\" Asked early, it is a small and normal question. Asked late, it feels like a confession.\n\nIt works because nobody minds being asked again thirty seconds after they said it. Music is loud, people speak quickly, and two names often arrive at once. The longer you wait, the harder it gets, until you are avoiding their name all evening — or for years.\n\nTypical phrases: \"Sorry, I missed your name?\", \"Say it once more for me?\", \"Was that Anna or Hanna?\", \"How do you spell that?\"\n\nThree ways to ask:\n\n1. The plain question — \"Sorry, I didn't catch your name.\"\n\n2. The choice — when you heard part of it. \"Was that Mateo or Matteo?\"\n\n3. The spelling — when you heard it but cannot hold on to it. \"How do you spell that? I want to get it right.\"\n\nMindset: the first minute is the easy minute. Use it.",
+      inputs: [
+        { q: "Someone tells you their name just as the music gets loud.", a: "\"Sorry — I missed your name with the music. What was it?\"", bundle: 'free' },
+        { q: "Two new colleagues say their names at the same time.", a: "\"Sorry, one at a time — I want to get both.\"", bundle: 'free' },
+        { q: "At football training, the coach says a name you only half heard.", a: "\"Was that Mateusz or Matthias?\"", bundle: 'free' },
+        { q: "A neighbour tells you her name while you are carrying heavy shopping.", a: "\"Sorry, I was fighting with the bags — what was your name?\"", bundle: 'free' },
+        { q: "A parent at the school gate says a name you have never heard before.", a: "\"How do you spell that? I want to get it right.\"", bundle: 'free' },
+        { q: "One minute after meeting someone, you notice the name has already gone.", a: "\"This is silly, but can you say your name once more?\"", bundle: 'pro' },
+        { q: "At a networking event, someone's name badge has turned round.", a: "\"Your badge is hiding from me — what's your name?\"", bundle: 'pro' },
+        { q: "You heard the name, but you are not sure how to say it.", a: "\"Can you say it once more? I'd like to say it properly.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Own the Forgotten Name",
+      guideFront: "Admit you've forgotten when...",
+      guideBack: "An honest, light admission",
+      description: "When you have forgotten someone's name, say so honestly and lightly, and show what you do remember. \"I'm so sorry, I've forgotten your name. I remember the dog, though!\" It is not a big apology. It is a short, warm admission.\n\nIt works because pretending is worse. You avoid them, you skip the introductions, and you panic every time they come near. Saying it takes five seconds, and nearly everyone answers, \"Oh, don't worry — it's Oskar.\" Showing what you remember tells them they mattered, even if the name slipped.\n\nTypical phrases: \"I'm so sorry — your name's gone.\", \"Remind me of your name?\", \"I know we've met. I've just lost your name.\", \"Sorry — Nadia, not Nadine.\"\n\nThree ways to own it:\n\n1. The name and a memory — \"I've forgotten your name, but I remember your amazing bread.\"\n\n2. Short and warm — \"Remind me of your name? I'm sorry.\"\n\n3. The wrong name — when you used the wrong one. \"Sorry — Nadia, not Nadine. I do know that.\"\n\nMindset: forgetting a name is normal. Pretending you haven't is what makes it awkward.",
+      inputs: [
+        { q: "A neighbour stops to chat, and you cannot remember her name.", a: "\"I'm so sorry, I've forgotten your name. I remember your dog, though — Biscuit!\"", bundle: 'free' },
+        { q: "At the gym, someone you have talked to many times says hi.", a: "\"Okay, I have to admit it — I've lost your name. Remind me?\"", bundle: 'free' },
+        { q: "A parent from your child's class says, \"Hi again!\"", a: "\"Hi! Sorry — remind me of your name? I know you're Amir's mum.\"", bundle: 'free' },
+        { q: "At a work party, a colleague from another floor greets you by name.", a: "\"You remembered mine, and I've forgotten yours. Sorry — what is it?\"", bundle: 'free' },
+        { q: "You call a new colleague Nadine, and her name is Nadia.", a: "\"Sorry — Nadia. I do know that.\"", bundle: 'free' },
+        { q: "Someone at a wedding says, \"We met at Lisa's fortieth!\"", a: "\"We did — you told me about your boat. I'm sorry, your name has gone.\"", bundle: 'pro' },
+        { q: "A client you met last month comes over at a conference.", a: "\"Lovely to see you again. Remind me of your name? I've met so many people this month.\"", bundle: 'pro' },
+        { q: "You have been talking to someone for ten minutes, and the name they gave at the start is gone.", a: "\"I'm so sorry — you told me your name at the start, and I've lost it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Introduce With a Hook",
+      guideFront: "Connect two people when...",
+      guideBack: "An introduction with a topic",
+      description: "When you introduce two people, give both names and one thing they could talk about. \"Sam, this is Leila — she's just back from Japan.\" The hook is the part that helps them start.\n\nIt works because a bare introduction — \"Sam, Leila. Leila, Sam.\" — leaves them standing there, looking for a first question. One small fact solves that: now they have something to ask about. It also helps them remember each other's names, because each name is joined to something.\n\nTypical phrases: \"Sam, this is Leila — she's just back from Japan.\", \"You two should meet. You both run.\", \"Kofi, this is Priya. She's the one who fixed my bike.\"\n\nThree kinds of hook:\n\n1. Something they share — \"You both grew up by the sea.\"\n\n2. Something interesting about one of them — \"Ana has just started learning the drums.\"\n\n3. Why you thought of them — \"I wanted you two to meet, because you're both new here.\"\n\nMindset: an introduction is a gift. The hook is what makes it useful.",
+      inputs: [
+        { q: "At your party, your old friend Sam and your colleague Leila are standing near each other.", a: "\"Sam, this is Leila — she's just back from three months in Japan.\"", bundle: 'free' },
+        { q: "Your new neighbour meets your partner in the street.", a: "\"Jonas, this is Fatima from number fourteen. She grows tomatoes too.\"", bundle: 'free' },
+        { q: "At the sports club, a new member is standing alone next to a regular.", a: "\"Ali, this is Grace. Grace has been coming for years — she knows all the good routes.\"", bundle: 'free' },
+        { q: "At work, a new colleague needs to meet someone in IT.", a: "\"Nils, this is Amara. She's new in sales, and she's already found a bug for you.\"", bundle: 'free' },
+        { q: "At a wedding, your cousin and your friend both love walking holidays.", a: "\"Ella, this is Tomás. You two should talk — you've both walked the Camino.\"", bundle: 'free' },
+        { q: "At a networking event, you know two people who could help each other.", a: "\"Wei, meet Daniela. She's looking for a designer, and you're the best one I know.\"", bundle: 'pro' },
+        { q: "At the school gate, two parents of new children are standing near you.", a: "\"Ruth, this is Kwame. Both your kids started in Class 3 this week.\"", bundle: 'pro' },
+        { q: "Your mum visits and meets your flatmate for the first time.", a: "\"Mum, this is Oskar. He's the one who makes the amazing soup.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Get Them to Say It",
+      guideFront: "Let them introduce themselves when...",
+      guideBack: "A prompt that brings their name out",
+      description: "When you need to introduce someone and you cannot remember their name, let them say it themselves. \"Have you two met?\" Usually they introduce themselves, and you hear the name too.\n\nIt works because it saves the moment without anyone noticing. You introduce the person you do know, and the other person answers with their own name. It is kind, not a trick: the introduction still happens, and nobody is left standing outside the conversation. If it does not work, you can still say honestly that the name has gone.\n\nTypical phrases: \"Have you two met?\", \"Do you know each other?\", \"Come and say hello.\", \"This is my partner, Jonas.\"\n\nThree ways to bring the name out:\n\n1. The question — \"Have you two met?\"\n\n2. Half an introduction — say the name you know, and stop. \"This is my sister, Hanna.\" The other person almost always says theirs.\n\n3. Hand it over — \"Go on, introduce yourselves. I always mix up the order.\"\n\nMindset: you do not need the name to make the introduction. You only need to open the door.",
+      inputs: [
+        { q: "Your friend Mia joins you while you are talking to someone whose name you have forgotten.", a: "\"Mia! Have you two met?\"", bundle: 'free' },
+        { q: "At a party, your partner walks up, and you cannot remember the name of the man you are talking to.", a: "\"This is my partner, Jonas. Jonas, we've been talking about bikes.\"", bundle: 'free' },
+        { q: "At work, your manager joins you and a visitor whose name you have lost.", a: "\"Do you two know each other already?\"", bundle: 'free' },
+        { q: "At the school gate, your mum arrives while you are chatting with a parent whose name has gone.", a: "\"Mum, come and say hi — this is Leo's mum.\"", bundle: 'free' },
+        { q: "At a wedding, your friend Ben arrives, and you have forgotten the name of the guest beside you.", a: "\"Ben, come and meet my new friend from table six.\"", bundle: 'free' },
+        { q: "At the sports club, you are standing with two people whose names you only half know.", a: "\"You two must know each other by now?\"", bundle: 'pro' },
+        { q: "At a networking event, a colleague joins you and someone whose name you lost.", a: "\"Lena, you need to meet this person. Tell her about your app!\"", bundle: 'pro' },
+        { q: "Two people shake hands in front of you, and neither of them says a name.", a: "\"Go on, introduce yourselves properly. I always mix up the order.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  phonecalls: [
+    {
+      name: "Who and Why",
+      guideFront: "Give your name and reason when...",
+      guideBack: "Your name and reason, up front",
+      description: "Say your name and why you are calling in the first sentence or two, before anything else. \"Hi, my name's Sam Berg. I'm calling about a booking for Friday.\" Not a long story about how you got the number, and not a question before they know who is asking.\n\nIt works because the person who answers knows nothing yet. Until they hear what the call is about, they cannot tell where to send you, which screen to open or what to ask. A name and a reason up front give them both in five seconds, and the rest of the call goes faster. It helps you too: once the first line is out, the hardest part of the call is over.\n\nPlan the first line before you dial. It is the one part of a call you can fully prepare.\n\nTypical phrases: \"Hi, my name's ... I'm calling about ...\", \"Hello, this is ... — I'd like to book ...\", \"Hi, it's ..., returning your call.\"\n\nThree ways in:\n\n1. The booking — your name, then what you want. \"Hi, my name's Nora Lind. I'd like to book a haircut this week.\"\n\n2. The problem — your name, then the problem in one sentence. \"Hi, this is Ali Hassan in flat 4B. My kitchen tap is leaking.\"\n\n3. The returned call — your name, and that they called you. \"Hi, it's Maja Ek. I had a missed call from this number.\"\n\nMindset: the first line is the hardest. Plan it, say it, and the rest of the call has somewhere to go.",
+      inputs: [
+        { q: "You call a hair salon to book a cut.", a: "\"Hi, my name's Nora Lind. I'd like to book a haircut this week, if you have anything.\"", bundle: 'free' },
+        { q: "You call your landlord because the heating has stopped working.", a: "\"Hi, it's Ali Hassan from flat 4B. I'm calling because the heating's stopped working.\"", bundle: 'free' },
+        { q: "You call back a number that rang while you were in a meeting.", a: "\"Hi, this is Maja Ek. I had a missed call from this number about an hour ago.\"", bundle: 'free' },
+        { q: "You call about a flat you saw advertised online.", a: "\"Hi, my name's Jonas Holm. I'm calling about the flat on Park Street.\"", bundle: 'free' },
+        { q: "You call your son's school to say he is ill.", a: "\"Hello, this is Leila Karimi, Adam's mum in 7B. He's ill today and won't be in.\"", bundle: 'free' },
+        { q: "You call the dentist and feel the urge to tell the whole story of your tooth first.", a: "\"Hi, my name's Erik Dahl. I need an appointment for a broken filling.\"", bundle: 'pro' },
+        { q: "You call about a job ad, and the person who answers is not the one named in the ad.", a: "\"Hi, my name's Priya Shah. I'm calling about the warehouse job. Is Lena Berg there?\"", bundle: 'pro' },
+        { q: "You call a plumber your neighbour recommended.", a: "\"Hi, my name's Chloe Martin. My neighbour gave me your number. I've got a blocked drain.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "One Thing at a Time",
+      guideFront: "Ask one question, then wait when...",
+      guideBack: "A single, short question",
+      description: "Ask one question, then stop and wait for the answer before you ask the next. \"First — is the table for four still free on Saturday?\" Not three questions in one breath.\n\nIt works because on the phone the other person cannot see your list. Ask about the price, the time and the parking all at once, and they answer the last one, or the easiest one, and the others disappear. One question at a time gives them a clear job and gives you a clear answer you can write down.\n\nIt also gives you a moment to think between questions — the moment you lose when nerves make you rush.\n\nTypical phrases: \"First —\", \"Can I start with ...?\", \"And my second question:\", \"Just going back to ...\"\n\nThree ways to keep it to one thing:\n\n1. Say how many — so they know more is coming. \"I've got two quick questions. First, do you have anything on Thursday?\"\n\n2. Wait, then the next — only after the answer. \"Great. And the second one: how much is it?\"\n\n3. Bring them back — when one of your questions got lost. \"Sorry, just going back to the price — how much was that?\"\n\nMindset: a slow call with clear answers is quicker than a fast call you have to make twice.",
+      inputs: [
+        { q: "You are booking a table and want to ask about the time, a high chair and parking.", a: "\"First — do you have a table for four on Saturday at seven?\"", bundle: 'free' },
+        { q: "The vet's receptionist has just said yes to Thursday, and you also need to ask about the cost.", a: "\"Great, thanks. And my second question: roughly what does a check-up cost?\"", bundle: 'free' },
+        { q: "You call a garage with three questions about your car.", a: "\"I've got three quick questions. First, can you look at it this week?\"", bundle: 'free' },
+        { q: "You asked about the price and the opening hours, and they only answered the hours.", a: "\"Thanks. Just going back to the price — how much would that be?\"", bundle: 'free' },
+        { q: "You call a gym about joining and can feel the questions piling up.", a: "\"Let me take it one at a time. Is there a joining fee?\"", bundle: 'free' },
+        { q: "The person on the line is talking fast, and you are losing track.", a: "\"Sorry, could we slow down a little? Let's start with the date.\"", bundle: 'pro' },
+        { q: "You call the council about a parking permit and do not know what to ask first.", a: "\"Can I start with the basics? Do I apply online or by post?\"", bundle: 'pro' },
+        { q: "A customer service agent asks you three things at once.", a: "\"Let me answer the first one: my order number is 4471.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say It Back",
+      guideFront: "Repeat the details aloud when...",
+      guideBack: "A read-back of the details",
+      description: "Repeat the important details back before the call ends — times, dates, names and numbers. \"So that's Friday at seven, under Berg. Thank you.\" Not a summary of the whole call, just the parts that would cause trouble if one of you got them wrong.\n\nIt works because the phone is where details go wrong. Fifteen and fifty sound alike, a name gets spelled three different ways, and Tuesday turns into Thursday on a bad line. Saying it back takes five seconds and gives the other person a chance to catch a mistake while you are both still on the line. It also helps you remember it, because you have said it yourself.\n\nTypical phrases: \"So that's ...\", \"Just to check —\", \"Let me read that back:\", \"Can I spell that for you?\"\n\nThree things worth saying back:\n\n1. The time and date — \"So that's Tuesday the 14th at quarter past ten.\"\n\n2. The name — spell it if it matters. \"That's Lind, L-I-N-D.\"\n\n3. The number — in small groups, slowly. \"So that's 070-123 45 67.\"\n\nMindset: checking is not doubting them. It is making sure you both leave the call with the same plan.",
+      inputs: [
+        { q: "The dentist's receptionist says, \"We can do Tuesday the 14th at ten fifteen.\"", a: "\"So that's Tuesday the 14th at quarter past ten. Great.\"", bundle: 'free' },
+        { q: "The restaurant says, \"Lovely, a table for four on Friday at seven.\"", a: "\"So that's Friday at seven, for four, under Berg. Thank you.\"", bundle: 'free' },
+        { q: "The plumber gives you his mobile number very quickly.", a: "\"Let me read that back: 073-555 21 08?\"", bundle: 'free' },
+        { q: "The insurance agent gives you a claim number.", a: "\"Just to check — that's claim number 88 214?\"", bundle: 'free' },
+        { q: "Your landlord says someone will come to fix the heating between eight and twelve on Monday.", a: "\"So Monday, between eight and twelve. I'll make sure I'm in.\"", bundle: 'free' },
+        { q: "The school secretary takes your name, and you are not sure she got it right.", a: "\"Can I spell that for you? It's Karimi — K-A-R-I-M-I.\"", bundle: 'pro' },
+        { q: "It is Wednesday, and the hairdresser offers you \"next Thursday\".", a: "\"Just to check — is that tomorrow, or Thursday next week?\"", bundle: 'pro' },
+        { q: "A customer service agent explains what happens next in one long sentence.", a: "\"So you'll send a new card, and it should arrive within five working days. Is that right?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Clear Voicemail",
+      guideFront: "Leave name, number and reason when...",
+      guideBack: "A message they can act on",
+      description: "Leave a message someone can act on without having to call you to ask what you meant. \"This is Sam Berg on 070-123 45 67, about the flat. Again, 070-123 45 67.\" Short, in a set order, and with the number twice.\n\nIt works because the person listening is often busy, maybe writing your number on the back of a receipt. A number said once, quickly, at the end of a long message is the part most often lost. Your name tells them who, the reason tells them how urgent, and the number twice means they do not have to play it again.\n\nThe four parts, in order:\n\n1. Your name — \"Hi, this is Sam Berg.\"\n\n2. Your number — slowly, in small groups. \"My number's 070-123 45 67.\"\n\n3. Why you called — the short version. \"I'm calling about the flat on Park Street.\"\n\n4. The number again — \"Again, that's 070-123 45 67.\"\n\nIf they do not need to call back, say that instead: \"No need to call me back.\"\n\nTypical phrases: \"Hi, this is ... on ...\", \"I'm calling about ...\", \"Could you call me back on ...?\", \"Again, that's ...\"\n\nMindset: you are not performing for a recording. You are leaving four pieces of information. Say them, and hang up.",
+      inputs: [
+        { q: "You call about a flat, and it goes to the landlord's voicemail.", a: "\"Hi, this is Sam Berg on 070-123 45 67, calling about the flat on Park Street. Again, 070-123 45 67.\"", bundle: 'free' },
+        { q: "You call a plumber, and it goes to voicemail.", a: "\"Hi, it's Chloe Martin on 072-410 33 90. I've got a blocked drain and need someone this week. Again, 072-410 33 90.\"", bundle: 'free' },
+        { q: "You return a missed call from the health centre and get their answering machine.", a: "\"Hi, this is Erik Dahl returning your call. You can reach me on 076-208 14 55. That's 076-208 14 55.\"", bundle: 'free' },
+        { q: "You are about to say your number fast, right at the end of the message.", a: "(Slowly.) \"My number is 070 ... 123 ... 45 ... 67.\"", bundle: 'free' },
+        { q: "You call about a job ad and get a voicemail.", a: "\"Hi, my name's Priya Shah, on 073-881 02 46. I'm calling about the warehouse job. Again, 073-881 02 46.\"", bundle: 'free' },
+        { q: "You hear yourself rambling into a voicemail about why you are calling.", a: "\"Sorry — short version: the boiler's broken in 4B. This is Ali Hassan, on 070-555 18 72.\"", bundle: 'pro' },
+        { q: "You need them to know when they can reach you.", a: "\"I'm at work until four, so after four is best. Again, that's 070-123 45 67.\"", bundle: 'pro' },
+        { q: "You call your daughter's football coach to say she will miss training.", a: "\"Hi, it's Omar Saleh, Lina's dad. She'll miss training on Thursday. No need to call me back.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for the Next Step",
+      guideFront: "Find out what happens now when...",
+      guideBack: "A question about what comes after",
+      description: "Before you hang up, find out what happens now, and when. \"When can I expect to hear back?\" Not just \"okay, thanks\" and a vague feeling that something will happen.\n\nIt works because many calls end with the problem half-solved: someone will look into it, someone will call you, a form will be sent. Without a when, you are left waiting with no idea whether to wait a day or a month, and no way of knowing when it is fair to call again. One question gives you a date, a name, or the thing you need to do yourself.\n\nTypical phrases: \"What happens next?\", \"When can I expect to hear back?\", \"Is there anything I need to do?\", \"Who should I ask for if I call again?\"\n\nThree things to ask about:\n\n1. The when — \"When will I hear from you?\"\n\n2. The who — \"Is there a name I can ask for next time?\"\n\n3. Your part — \"Is there anything I need to send you?\"\n\nMindset: asking what happens next is not pushy. It is how you stop waiting for something that was never coming.",
+      inputs: [
+        { q: "The insurance agent says, \"I've passed it on to the claims team.\"", a: "\"Thanks. When can I expect to hear back from them?\"", bundle: 'free' },
+        { q: "Your landlord says, \"I'll get someone to look at it.\"", a: "\"Great. Do you know roughly when? This week?\"", bundle: 'free' },
+        { q: "You call about a job, and the manager says, \"We'll be in touch.\"", a: "\"Thanks. When do you think you'll decide?\"", bundle: 'free' },
+        { q: "The school office says a form needs to be signed.", a: "\"Is there anything I need to do — sign it and bring it in?\"", bundle: 'free' },
+        { q: "A customer service agent says your case has been noted.", a: "\"What happens next? Will someone call me, or should I call again?\"", bundle: 'free' },
+        { q: "Last time, you were promised a callback that never came.", a: "\"Last time I waited a week. Could I have a name, and a day to call back if I don't hear anything?\"", bundle: 'pro' },
+        { q: "The garage says your car should be ready soon.", a: "\"Soon today, or soon this week? I need to work out how to get to work.\"", bundle: 'pro' },
+        { q: "The council says your application is being processed.", a: "\"How long does it usually take? And is there a reference number I should keep?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Close the Call",
+      guideFront: "Say a clear goodbye when...",
+      guideBack: "A thank-you and a goodbye",
+      description: "End the call clearly and kindly, so both of you know it is over. \"Great, that's everything. Thanks for your help. Bye.\" Not a slow fade of \"okay ... yeah ... okay then\" until someone gives up.\n\nIt works because many people dread the end of a call almost as much as the start: nobody knows who should say goodbye first. A clear close does three small jobs. It says you have what you need, it thanks them, and it says goodbye. The other person usually relaxes, because they were waiting to find out whether you were done.\n\nTypical phrases: \"That's everything, thanks.\", \"Great, that's all I needed.\", \"Thanks for your help — bye.\", \"I'll let you go. Bye now.\"\n\nThree ways to close:\n\n1. Signal the end — \"Great, that's everything I needed.\"\n\n2. Thank them — for something specific, if you can. \"Thanks for fitting me in.\"\n\n3. Close with what happens next — \"Okay, I'll wait to hear from you on Friday. Thanks, bye.\"\n\nMindset: someone has to say goodbye first. It may as well be you, and it may as well be clear.",
+      inputs: [
+        { q: "You have booked the haircut, and there is an awkward pause.", a: "\"Great, that's everything. Thanks for your help — bye.\"", bundle: 'free' },
+        { q: "The receptionist found you a last-minute appointment.", a: "\"Thanks so much for fitting me in. See you Thursday. Bye.\"", bundle: 'free' },
+        { q: "You have the information you called for, and they ask, \"Anything else?\"", a: "\"No, that's all I needed. Thanks, bye.\"", bundle: 'free' },
+        { q: "The call has gone quiet after a few rounds of \"okay ... okay then.\"", a: "\"Right, I'll let you go. Thanks again, bye.\"", bundle: 'free' },
+        { q: "You have sorted out a repair with your landlord.", a: "\"Perfect. I'll be in on Monday. Thanks, bye now.\"", bundle: 'free' },
+        { q: "The person on the line is chatty, and you need to go.", a: "\"It's been nice talking. I'll have to go now, but thanks for your help. Bye.\"", bundle: 'pro' },
+        { q: "The call ends without a solution, but there is nothing more to do today.", a: "\"Okay. I'll wait to hear from you on Friday. Thanks for your help — bye.\"", bundle: 'pro' },
+        { q: "You called a friend's mum to arrange picking up the kids.", a: "\"Lovely, so I'll get them at five. Thanks, Anna — bye.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  whensomeoneishurting1: [
+    {
+      name: "Say It Simply",
+      guideFront: "Keep it short and true when...",
+      guideBack: "A short, honest sorry",
+      description: "Say you are sorry, in a few plain words, and stop. \"I'm so sorry. That's awful news.\" No explanation, no silver lining, no story of your own.\n\nIt works because the first words are not there to make sense of anything. They only have to show that the news reached you and that you care. A short sentence does that better than a long one: long ones drift into \"at least\", \"I know how you feel\" or \"everything happens for a reason\", and those are the lines people remember for years, for the wrong reasons.\n\nShort is not cold. Said warmly, with their name and a pause after it, a few words are enough.\n\nTypical phrases: \"I'm so sorry.\", \"That's awful news.\", \"Oh, Lena. I'm so sorry.\", \"That's really hard.\"\n\nThree ways to say it:\n\n1. Just the sorry — the shortest and often the best. \"I'm so sorry, Tom.\"\n\n2. Sorry, and what it is — say plainly that it is bad. \"I'm so sorry. That's awful news.\"\n\n3. Sorry, and that you care — when you know them well. \"I'm so sorry, Em. I love you.\"\n\nMindset: you do not need the right words. A short, true sentence is the right words.",
+      inputs: [
+        { q: "Tom, a colleague, is back at work after his father's funeral. You meet him at the coffee machine.", a: "\"Tom. I'm so sorry. That's really hard.\"", bundle: 'free' },
+        { q: "Over coffee, your friend Lena tells you her tests came back, and it's cancer.", a: "\"Oh, Lena. I'm so sorry. That's awful news.\"", bundle: 'free' },
+        { q: "Your neighbour Mr Okafor is at his gate with an empty lead. He tells you his old dog was put to sleep yesterday.", a: "\"I'm so sorry, Mr Okafor. That's a real loss.\"", bundle: 'free' },
+        { q: "Your sister Emma rings to say that she and Mark are getting divorced.", a: "\"Oh, Em. I'm so sorry. I love you.\"", bundle: 'free' },
+        { q: "Your friend Jonas tells you he was let go today, after nine years.", a: "\"That's awful, Jonas. I'm really sorry.\"", bundle: 'free' },
+        { q: "Before practice, Noah, 15, on the team you coach, tells you quietly that his grandmother died at the weekend.", a: "\"I'm really sorry, Noah. That's a big thing to happen.\"", bundle: 'pro' },
+        { q: "Mrs Hall, a customer, rings to rebook. She missed yesterday's meeting because her brother died suddenly.", a: "\"I'm so sorry, Mrs Hall. Please don't give the meeting a thought.\"", bundle: 'pro' },
+        { q: "A text from your old friend Sofia: \"Mum died this morning. Wanted you to know.\"", a: "\"Oh Sofia. I'm so sorry. Thinking of you.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say Their Name",
+      guideFront: "Name who or what was lost when...",
+      guideBack: "A sorry with a name in it",
+      description: "Name the person who died, or the one it is happening to, instead of talking around them. \"I'm so sorry about Anna. She was so kind to me.\" It is one of the oldest pieces of grief advice, and one of the most often skipped.\n\nIt works because people in grief often notice that everyone avoids the name. \"Your loss\", \"what happened\", \"the news\" — it can feel as if the person is already fading. Hearing the name says: they were real, they mattered, and I am not afraid to talk about them.\n\nWhen the loss is not a person — a pet, a job, a marriage — name that instead. The name makes it specific, and specific is what makes it feel seen.\n\nTypical phrases: \"I'm so sorry about Frank.\", \"I'll miss Biscuit at the gate.\", \"Nine years at Lindqvist.\", \"Twelve years with Mark.\"\n\nThree ways to say it:\n\n1. The name on its own — \"I'm so sorry about Peter.\"\n\n2. The name and one memory — small and true. \"I'm sorry about Biscuit. I'll miss seeing her at the gate.\"\n\n3. The name of what was lost — when it is not a death. \"Nine years at Lindqvist, Jonas. I'm sorry.\"\n\nMindset: you will not remind them of their loss. They have not forgotten it for a second.",
+      inputs: [
+        { q: "Tom's father was called Frank. You met him once, at the summer party, where he had everyone laughing.", a: "\"I'm so sorry about Frank. He had the whole summer party laughing.\"", bundle: 'free' },
+        { q: "Lena has told you about the cancer. Now she says, \"Sorry. I don't want to be the sick friend.\"", a: "\"You're not the sick friend, Lena. You're Lena. I'm so sorry this is happening to you.\"", bundle: 'free' },
+        { q: "Mr Okafor's dog was called Biscuit. You used to see them every morning on your way to work.", a: "\"I'm so sorry about Biscuit. I'll miss seeing her at the gate.\"", bundle: 'free' },
+        { q: "Emma talks about \"the divorce\" and \"the house\". Nobody in the family has said Mark's name all week.", a: "\"Twelve years with Mark, Em. That's a lot to lose, whatever comes next.\"", bundle: 'free' },
+        { q: "Jonas worked at Lindqvist Print for nine years and knew everyone there by name.", a: "\"Nine years at Lindqvist. You were part of that place, Jonas. I'm sorry.\"", bundle: 'free' },
+        { q: "Noah's grandmother was called Rose. She came to every home game in the same red hat.", a: "\"I'm sorry about Rose, Noah. I'll miss her red hat on the sideline.\"", bundle: 'pro' },
+        { q: "In her email, Mrs Hall wrote that her brother Peter died on Monday.", a: "\"I was so sorry to read about Peter, Mrs Hall.\"", bundle: 'pro' },
+        { q: "Sofia has texted that her mum died this morning. Her mum, Eva, used to drive you both to swimming.", a: "\"I'm so sorry about Eva. I still think of her driving us to swimming.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What They Want",
+      guideFront: "Let them choose what helps when...",
+      guideBack: "A question with a real choice",
+      description: "Ask what they would like right now, and give them two real options. \"Do you want to talk about it, or would something else help today?\" Then go with their answer.\n\nIt works because grief has no single right response. Some people want to talk for an hour; some want one normal afternoon. Guessing wrong in either direction hurts: a push to talk when they cannot, or a careful silence when they badly want to. A question with two options lets them steer, without having to explain themselves. And \"no\" stays easy to say.\n\nKeep the options concrete and both of them acceptable. \"Do you want to talk?\" on its own can feel like a test. \"Talk, or a normal day?\" does not.\n\nTypical phrases: \"Do you want to talk about it, or not today?\", \"Can I call, or is texting easier?\", \"Would you like me to tell the team?\", \"Talk, or a distraction?\"\n\nThree things to ask about:\n\n1. Talking or not — \"Do you want to talk about it, or would a normal day help more?\"\n\n2. How to reach them — \"Can I call you, or is texting easier right now?\"\n\n3. What others should know — \"Would you like me to tell the team, or would you rather do it?\"\n\nMindset: you do not have to guess what they need. You can ask.",
+      inputs: [
+        { q: "Tom is back at his desk. People keep glancing at him and looking away.", a: "\"Tom, do you want to talk about it, or would you rather just get on with work today?\"", bundle: 'free' },
+        { q: "Lena has told you the news. Now she is stirring her coffee and not saying much.", a: "\"Do you want to talk about it, or would it help to talk about something else for a bit?\"", bundle: 'free' },
+        { q: "Mr Okafor seems to want to chat about his dog, but keeps stopping halfway through a sentence.", a: "\"Would you like to tell me about her, or would you rather just have some company?\"", bundle: 'free' },
+        { q: "Emma says the hardest part is everyone in the family asking her questions.", a: "\"What would help more tonight, Em: talking it through, or a night off from it?\"", bundle: 'free' },
+        { q: "Jonas has told you about the job. You can't tell if he wants advice or just to be angry.", a: "\"Do you want ideas, or do you just want to be angry about it tonight?\"", bundle: 'free' },
+        { q: "Noah has told you about his gran, and practice starts in ten minutes.", a: "\"Do you want to play today, or sit this one out? Either is fine.\"", bundle: 'pro' },
+        { q: "Mrs Hall is on the phone to rebook, two days after her brother died.", a: "\"Would you like to keep this short today, or shall we just move it to next month?\"", bundle: 'pro' },
+        { q: "Sofia has texted you the news. You want to ring her, but you don't know if she wants that.", a: "\"Can I call you, or is texting easier right now?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Offer Something Specific",
+      guideFront: "Name one task and a time when...",
+      guideBack: "An offer they can say yes to",
+      description: "Offer one concrete thing, with a day or a time, so they only have to say yes. \"I'll bring dinner on Thursday. Is six okay?\" Not \"Let me know if you need anything.\"\n\nIt works because \"let me know\" is kind, but it hands them a job: work out what they need, decide whether it is too much, and then ask. Hardly anyone does. A specific offer does that work for them. It is easy to accept, and easy to turn down, because it is one small, clear thing.\n\nPick something real you can actually do, and keep it small. A meal, a lift, a shift covered, a box packed. The size matters less than the fact that it has a day on it.\n\nTypical phrases: \"I'll bring dinner on Thursday.\", \"I'll take the Friday report.\", \"Is six okay?\", \"Just send me the dates.\"\n\nThree ways to offer:\n\n1. A task — take one job off their list. \"I'll take the Friday report off your plate.\"\n\n2. A task with a time — the easiest to say yes to. \"I'll bring dinner on Thursday. Is six okay?\"\n\n3. A regular thing — for something that will last a while. \"I'll do the school run on your treatment days.\"\n\nMindset: you are not being pushy. You are saving them from having to ask.",
+      inputs: [
+        { q: "Tom has three weeks of emails waiting, and a report due on Friday.", a: "\"I'll take the Friday report off your plate, Tom. Just send me what you have.\"", bundle: 'free' },
+        { q: "Lena's treatment starts next month, and she has two kids at school.", a: "\"I'll do the school run on your treatment days. Just send me the dates.\"", bundle: 'free' },
+        { q: "Mr Okafor still has Biscuit's bed and bowls in the hall, and says he can't face sorting them.", a: "\"I could take her things to the animal shelter for you on Saturday, if you'd like.\"", bundle: 'free' },
+        { q: "Emma has to move out of the house she shared with Mark by the end of the month.", a: "\"I'll come and help you pack on Saturday. I'll bring boxes and lunch.\"", bundle: 'free' },
+        { q: "Jonas has to update his CV, and he hasn't touched it in nine years.", a: "\"Come over on Sunday and we'll do your CV together. I'll make the coffee.\"", bundle: 'free' },
+        { q: "Noah's family is busy with the funeral next week, and his gran used to drive him to practice.", a: "\"I'll pick you up for practice on Tuesday and Thursday, Noah. Is half five okay?\"", bundle: 'pro' },
+        { q: "Mrs Hall needs to rebook the meeting, and she sounds very tired.", a: "\"I'll email you two times for next week, and you can just reply with one.\"", bundle: 'pro' },
+        { q: "Sofia lives two hours away, and her mum's funeral is next Friday.", a: "\"I'll be at the funeral on Friday. And I'll ring you on Sunday evening, if that's okay.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stay With It",
+      guideFront: "Keep them company in the feeling when...",
+      guideBack: "A quiet line, with no advice",
+      description: "When they say something painful, stay with it. No advice, no comparison, no bright side. \"I don't know what to say. I'm just here.\" Let the feeling be as big as it is.\n\nIt works because the urge to fix comes from our own discomfort, not from what they need. \"At least he's not suffering\", \"everything happens for a reason\", \"I know exactly how you feel\" — each one tries to make the pain smaller, and each one tells them to feel less. Staying with it tells them the feeling is allowed, and that you can bear to hear it.\n\nRing Theory, from Susan Silk and Barry Goldman, puts it simply: comfort goes in, towards the person at the centre; your own shock and worry go out, to people further away. So this is not the moment for your story.\n\nTypical phrases: \"I'm just here.\", \"Of course you're angry.\", \"You don't have to be okay.\", \"I'm glad you told me.\"\n\nThree ways to stay:\n\n1. Let the feeling be true — \"Of course you're scared. That makes sense.\"\n\n2. Say you are there — \"I'm right here. I'm not going anywhere.\"\n\n3. Admit you have no words — \"I don't know what to say. I'm just here.\"\n\nMindset: you do not have to make it better. Being there is the help.",
+      inputs: [
+        { q: "Tom says, \"I keep thinking I should have visited him more.\"", a: "\"That sounds so heavy, Tom. I'm glad you told me.\"", bundle: 'free' },
+        { q: "Lena says, \"I'm scared. And everyone keeps telling me to stay positive.\"", a: "\"You don't have to be positive with me. Of course you're scared.\"", bundle: 'free' },
+        { q: "Mr Okafor says, \"People think it's silly. She was only a dog.\"", a: "\"It's not silly. She was with you for fourteen years.\"", bundle: 'free' },
+        { q: "Emma says, \"I feel like I've failed at the biggest thing in my life.\"", a: "\"That sounds so painful, Em. I'm right here, and I'm not going anywhere.\"", bundle: 'free' },
+        { q: "Jonas says, \"I don't know what I'm going to do now.\" You have ideas, but he did not ask for them.", a: "\"Yeah. That's a horrible place to be. I'm with you.\"", bundle: 'free' },
+        { q: "Noah goes quiet, then says, \"I don't really know what to say about it.\"", a: "\"That's okay. You don't have to say anything. I'm just glad you told me.\"", bundle: 'pro' },
+        { q: "Mrs Hall says, \"Sorry, I'm all over the place this week.\"", a: "\"Please don't apologise. Of course you are. Take all the time you need.\"", bundle: 'pro' },
+        { q: "Sofia texts back: \"I can't believe she's gone.\"", a: "\"I know. I can't either. I'm here, whenever you want.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  whensomeoneishurting2: [
+    {
+      name: "Check In Later",
+      guideFront: "Ask how they really are when...",
+      guideBack: "A fresh, open question",
+      description: "Ask again, weeks after the news, when most people have stopped asking. \"It's been a month. How are you doing, really?\" Not a reminder of the first message — a new question, asked now.\n\nIt works because support comes in a rush and then stops. The cards and casseroles arrive in the first fortnight; by week six the person is back at work, and everyone assumes they are fine because nobody has asked. That is often when it is hardest. A question at six weeks says: I have not forgotten, and you are allowed to still be sad.\n\nSaying how long it has been helps. It shows you have been counting too, and it gives them permission to answer honestly.\n\nTypical phrases: \"How are you doing, really?\", \"It's been a few weeks — how are you finding it?\", \"I haven't asked in a while. How are things now?\"\n\nThree ways to ask:\n\n1. Name the time — \"It's been six weeks. How are you?\"\n\n2. Ask past the update — for when people only ask about the practical side. \"I don't mean the paperwork. How are you?\"\n\n3. Say you went quiet — when you are the one who stopped asking. \"I've been quiet since the funeral. How are you doing now?\"\n\nMindset: the second question matters more than the first. Most people only ask once.",
+      inputs: [
+        { q: "Your colleague Sanna's father died six weeks ago. She is back at work, and nobody mentions it any more. You are alone with her by the coffee machine.", a: "\"It's been about six weeks now. How are you doing, really?\"", bundle: 'free' },
+        { q: "Your friend Omar lost his job a month ago. Everyone sent messages the first week and then went quiet.", a: "\"I've been thinking about you. How are you finding it all, a month on?\"", bundle: 'free' },
+        { q: "Your neighbour's wife died in the spring. It is now midsummer, and you see him watering her roses.", a: "\"The roses look lovely. How are you getting on these days?\"", bundle: 'free' },
+        { q: "Your sister's divorce came through two months ago. On the phone she only talks about forms and solicitors.", a: "\"Never mind the forms for a minute. How are you, two months in?\"", bundle: 'free' },
+        { q: "Your friend's dog died three weeks ago, and you realise you have not mentioned it since.", a: "\"I haven't asked since Biscuit died. How's the house without him?\"", bundle: 'free' },
+        { q: "Your manager's mother died two months ago. You are not sure it is your place to ask.", a: "\"I hope it's alright to ask. How have the last couple of months been?\"", bundle: 'pro' },
+        { q: "Your friend Priya started cancer treatment a month ago. When people ask, she gives them an update on the treatment.", a: "\"I don't mean the treatment. How are you, in yourself?\"", bundle: 'pro' },
+        { q: "Your teenage daughter's grandfather died in January. It is March, and she has stopped talking about him.", a: "\"Granddad's been gone two months now. How are you doing with it?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Remember the Date",
+      guideFront: "Mark the hard day when...",
+      guideBack: "A short word that marks the day",
+      description: "Notice the dates that will hurt — the birthday, the anniversary, the first Christmas — and say so, on or just before the day. \"I know tomorrow would have been his birthday. I'm thinking of you.\"\n\nIt works because grief keeps a calendar. The person who is hurting knows exactly what tomorrow is, and usually believes everyone else has forgotten. A short message on the day tells them they are not carrying the date alone. It does not remind them of anything; they have been thinking about it all week.\n\nKeep it short. You are not asking them to talk about it, only letting them know you know.\n\nTypical phrases: \"I know what today is.\", \"Thinking of you today.\", \"First Christmas without her — I'm here on the day.\"\n\nThree kinds of date:\n\n1. Their date — the birthday or wedding anniversary of the person who died. \"Thinking of you and Margaret today.\"\n\n2. The anniversary of the loss — a year since, a month since. \"I know it's a year this week.\"\n\n3. The firsts — the first Christmas, the first birthday, the first holiday without them. \"This must be a strange December for you.\"\n\nMindset: the date will hurt whether you mention it or not. Mentioning it means they are not alone with it.",
+      inputs: [
+        { q: "Your friend Lena's husband Tom died last year. Tomorrow would have been his birthday.", a: "\"I know tomorrow would have been Tom's birthday. I'm thinking of you.\"", bundle: 'free' },
+        { q: "Your colleague's mother died in October. It is the first week of December, and the office is putting up decorations.", a: "\"This must be a strange December for you. I just wanted to say I know.\"", bundle: 'free' },
+        { q: "Your neighbour Mrs Hale lost her husband Peter a year ago this week. You see her at the post box.", a: "\"I know it's a year this week. I've been thinking about you, and about Peter.\"", bundle: 'free' },
+        { q: "Your friend's divorce means her children will spend Christmas Eve with their dad for the first time.", a: "\"I know Christmas Eve will feel very quiet this year. I'll be thinking of you.\"", bundle: 'free' },
+        { q: "Your uncle's wife died eight months ago. Today would have been their wedding anniversary, and you are writing him a text.", a: "\"Thinking of you and Margaret today. Forty-one years is a lot to remember.\"", bundle: 'free' },
+        { q: "Months ago, a colleague mentioned the date her brother died. Today is that date, and she is at work as usual.", a: "\"I remembered what today is. No need to talk about it. I just didn't want it to pass without a word.\"", bundle: 'pro' },
+        { q: "Your friend lost his job a year ago today. He has since found a new one, but you know the date still stings.", a: "\"A year ago today was a rough day for you. Look how far you've come since.\"", bundle: 'pro' },
+        { q: "Your stepdaughter is about to have her first birthday since her mother died.", a: "\"I know this birthday feels different without your mum. We can do it however you like.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Talk About Them",
+      guideFront: "Share a memory of them when...",
+      guideBack: "A memory, said out loud",
+      description: "Say the name of the person who died, and share something you remember about them. \"I was thinking about your dad's terrible jokes today.\" Not a careful silence around the gap — the person, brought back into the room.\n\nIt works because the fear of grieving people is rarely that you will mention the one they lost. It is that everyone will stop. After the funeral, the name disappears from conversation, and it can feel as if the person is being forgotten twice. Hearing someone else say the name, with a real memory attached, tells them their person mattered to other people too.\n\nIt may bring tears. Tears are not a sign you got it wrong; they are often a relief.\n\nTypical phrases: \"I was thinking about your mum today.\", \"Tell me about him.\", \"She always used to say…\", \"I miss him at these things.\"\n\nThree ways in:\n\n1. A memory of your own — \"I'll never forget your dad fixing the office printer.\"\n\n2. Something that reminded you — a song, a place, a smell. \"They played Elvis on the radio and I thought of Daniel.\"\n\n3. An invitation — when you did not know them well. \"Tell me about her. What was she like?\"\n\nMindset: you are not reminding them. You are keeping them company in remembering.",
+      inputs: [
+        { q: "Your colleague Ben's father died two months ago. Nobody at work says his name. You remember he once visited the office.", a: "\"I was thinking about your dad today — the time he came in and fixed the printer.\"", bundle: 'free' },
+        { q: "Your friend's grandmother died in the winter. You are at your friend's flat and see a photo of her on the fridge.", a: "\"That's your gran, isn't it? I loved her stories about the dance halls.\"", bundle: 'free' },
+        { q: "Your neighbour's cat died last month. You pass the empty windowsill where she always sat.", a: "\"I keep expecting to see Pepper in the window. She was such a character.\"", bundle: 'free' },
+        { q: "Your sister-in-law's mother died three months ago. At family dinner, everyone talks around her.", a: "\"Your mum would have hated this gravy. She always said I used too much salt.\"", bundle: 'free' },
+        { q: "Your friend's husband Daniel died last spring. Today you heard a song he loved on the radio.", a: "\"They played Elvis on the radio today, and I thought of Daniel straight away.\"", bundle: 'free' },
+        { q: "Four months after her brother died, your friend tells you that nobody mentions him any more.", a: "\"Then tell me about him. What was he like as a kid?\"", bundle: 'pro' },
+        { q: "Your friend's son Leo died last year. You are afraid saying his name will make her cry.", a: "\"Can I talk about Leo? I miss him, and I don't want to act like he wasn't here.\"", bundle: 'pro' },
+        { q: "Your dad's oldest friend Harry died last month, and your dad has gone quiet.", a: "\"Tell me about you and Harry when you were young. I never heard the whole story.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mend a Clumsy Word",
+      guideFront: "Go back and apologise when...",
+      guideBack: "A short apology, then their turn",
+      description: "When you said something clumsy about their loss, go back to it, own it in a sentence or two, and then hand the conversation back to them. \"I said something clumsy last week. I'm sorry.\"\n\nIt works because almost everyone says the wrong thing at some point — \"at least she had a long life\", \"everything happens for a reason\", \"I know exactly how you feel\". The words themselves are rarely the lasting damage. The silence afterwards is, when the person is left wondering whether you meant it. Going back says you noticed, and that their feelings matter more than your embarrassment.\n\nKeep it short. A long apology makes them comfort you, which is the opposite of what you came to do.\n\nTypical phrases: \"That came out wrong, and I'm sorry.\", \"I said something thoughtless. I didn't mean it.\", \"I've been thinking about what I said.\"\n\nThree things you might be mending:\n\n1. A clumsy phrase — \"I said everything happens for a reason. I don't believe that, and I'm sorry.\"\n\n2. Making it about you — \"I talked about my own dad for an hour. Tell me about yours.\"\n\n3. Going missing — \"I avoided you because I didn't know what to say. I'm sorry.\"\n\nMindset: the mistake is normal. Leaving it unmended is the part that hurts.",
+      inputs: [
+        { q: "At the funeral two weeks ago, you told your friend, \"At least she had a long life.\" You saw her face drop.", a: "\"At the funeral I said 'at least she had a long life'. That was clumsy, and I'm sorry.\"", bundle: 'free' },
+        { q: "Last week, you told a colleague whose dog had just died, \"You can always get another one.\"", a: "\"I said something thoughtless about getting another dog. I'm sorry. Bonnie was family.\"", bundle: 'free' },
+        { q: "Ten days ago, after your friend told you about his diagnosis, you said, \"Everything happens for a reason.\"", a: "\"I said everything happens for a reason. I don't believe that, and I'm sorry I said it.\"", bundle: 'free' },
+        { q: "When your sister told you her husband had left, you said, \"I never liked him anyway.\" That was a week ago.", a: "\"I shouldn't have said I never liked him. It didn't help. How are you doing?\"", bundle: 'free' },
+        { q: "Your friend lost her job last week. You said, \"I know exactly how you feel,\" and then talked about your own redundancy for twenty minutes.", a: "\"Last week I made it all about my old job. Sorry. I'd like to hear how it is for you.\"", bundle: 'free' },
+        { q: "Your neighbour's wife Anna died a month ago. You have avoided him since, because you did not know what to say.", a: "\"I've been avoiding you since Anna died, because I didn't know what to say. I'm sorry.\"", bundle: 'pro' },
+        { q: "A colleague tells you it upset her when you asked about her father's death in front of the whole team.", a: "\"You're right. I shouldn't have asked in front of everyone. I'm sorry.\"", bundle: 'pro' },
+        { q: "Three weeks ago, your friend told you her mum's dementia is getting worse. You said, \"Well, she doesn't really know you any more anyway.\"", a: "\"I said something careless about your mum not knowing you. It's stayed with me. I'm sorry.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Comfort In, Complain Out",
+      guideFront: "Support them, vent elsewhere when...",
+      guideBack: "Comfort for them, or a vent outward",
+      description: "Picture the person who is hurting most in a small circle. Around them, a ring for the people closest to them; then a ring for the next closest, and so on. Comfort goes inward, towards the centre. Complaining, worry and tiredness go outward, to someone in a bigger ring than yours. The rule comes from Susan Silk and Barry Goldman's Ring Theory. \"This must be so much harder for you. How can I help?\"\n\nIt works because supporting someone is hard, and your own feelings about it are real. They just have a direction. The person at the centre should never have to look after you. You are still allowed to say you are exhausted or scared — to a friend, a partner, someone further out.\n\nTypical phrases: \"This must be so much harder for you.\", \"What would help this week?\", \"Can I vent for five minutes? It's not something I can say to her.\"\n\nThree ways to use it:\n\n1. Comfort in — when you are with them. \"Never mind me. How did you sleep?\"\n\n2. Complain out — to someone further from the centre. \"Watching my sister go through this is wearing me out.\"\n\n3. Keep your share small — when you are grieving too, but they are closer. \"I'll miss her so much. But she was your mum. How are you?\"\n\nMindset: your feelings are welcome. They just travel outward.",
+      inputs: [
+        { q: "Your best friend's husband died a month ago. You are worn out from helping, and she asks how you are.", a: "\"I'm fine — tired, but that's nothing. How did you sleep?\"", bundle: 'free' },
+        { q: "Your brother was diagnosed with MS three weeks ago. You are scared, and you are on the phone to him.", a: "\"This must be so much to take in. What can I do for you this week?\"", bundle: 'free' },
+        { q: "Your friend's father died six weeks ago, and she has cancelled your plans three times. You are frustrated, and she calls to cancel again.", a: "\"No problem at all about Saturday. Shall I drop some soup round instead?\"", bundle: 'free' },
+        { q: "Your sister's divorce has been hard on you too. You call your oldest friend, who is outside the family.", a: "\"Can I vent for five minutes? Watching my sister go through this is wearing me out.\"", bundle: 'free' },
+        { q: "Your aunt died last month. At the memorial, you want to tell her daughter, your cousin, how sad you are.", a: "\"I'll miss her so much. But she was your mum. How are you holding up?\"", bundle: 'free' },
+        { q: "A colleague whose wife is very ill says the office party you spent weeks planning is \"the last thing I care about.\"", a: "\"Of course. Skip it, honestly. Is there anything at work I can take off you?\"", bundle: 'pro' },
+        { q: "Your partner's mother died two months ago. You miss your old weekends, and you are talking to a friend about it.", a: "\"I love him, and I'll keep being there for him. I just need to tell someone I'm tired.\"", bundle: 'pro' },
+        { q: "Your friend, whose father died last month, snapped at you today. You are hurt, and you call your brother that evening.", a: "\"She snapped at me today, and it stung. I'm not saying anything to her — she's got enough on.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  speakingupasacustomer: [
+    {
+      name: "Say What Went Wrong",
+      guideFront: "Describe the problem plainly when...",
+      guideBack: "A plain fact, no blame",
+      description: "State the problem as a plain fact: what you bought or booked, what happened, and when. \"The jacket I bought last week has a broken zip.\" Not a story about how annoyed you are, and not a verdict on the shop.\n\nIt works because a fact is something the other person can act on. It is about the thing, not about them, so nobody has to defend themselves before they can help. The shorter and clearer it is, the faster it reaches the right fix.\n\nLeave out the blame. \"You sold me a broken jacket\" and \"the zip broke\" are the same facts, but only the second one lets the person in front of you stay on your side.\n\nTypical phrases: \"The zip broke the second time I wore it.\", \"My bill is twice the usual amount.\", \"The heating stopped working on Sunday.\", \"I ordered a large and got a medium.\"\n\nThree ways to say it:\n\n1. The thing and the fault — \"The heater in the flat stopped working on Sunday.\"\n\n2. What was promised, and what happened — \"I booked a trim, and this is a lot shorter.\"\n\n3. The fact, with the proof — \"Here's the receipt, and here's the photo from when it arrived.\"\n\nMindset: a fact is not an attack. Say what happened, and leave the blame out.",
+      inputs: [
+        { q: "You bought a jacket at Hartley's last week, and the zip broke the second time you wore it.", a: "\"Hi. I bought this jacket here last week, and the zip has already broken.\"", bundle: 'free' },
+        { q: "Your bill from Brightline Mobile is almost twice what it normally is.", a: "\"Hi, my bill this month is nearly double the usual amount, and I haven't changed anything.\"", bundle: 'free' },
+        { q: "The heating in your rented flat stopped working on Sunday. You call the landlord.", a: "\"Hi, it's Lena in flat 4. The heating stopped on Sunday, and it's still off.\"", bundle: 'free' },
+        { q: "Your online order has arrived, but it's the wrong size.", a: "\"My order came today. I ordered a large, and this is a medium.\"", bundle: 'free' },
+        { q: "At the hairdresser, the cut is much shorter than you asked for.", a: "\"I asked for just a trim, and this is quite a lot shorter than that.\"", bundle: 'free' },
+        { q: "The garage replaced your brakes on Tuesday, but the squeak is still there.", a: "\"You replaced the brakes on Tuesday, and the squeak sounds exactly the same.\"", bundle: 'pro' },
+        { q: "Your flight was cancelled, and you are about to start with how angry you are.", a: "\"Let me just say what happened. The flight was cancelled, and nobody told us until we got to the gate.\"", bundle: 'pro' },
+        { q: "Kestrel Gym has taken a payment after you cancelled your membership.", a: "\"I cancelled my membership in March, and a payment for April has gone out.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say What You Want",
+      guideFront: "Name the fix you need when...",
+      guideBack: "A concrete request",
+      description: "Say the fix you are asking for: your money back, a new one, a repair, or a corrected bill. \"I'd like to exchange it, please.\" The problem tells them what is wrong. This tells them what would make it right.\n\nIt works because without it the other person has to guess, and most people guess the smallest fix — an apology, a voucher, \"I'll pass it on\". Naming what you want turns a complaint into a question they can say yes to, and it is often quicker than you expect.\n\nDecide before you start. If you do not know what you want, you will accept whatever is offered first and feel cheated on the way home.\n\nTypical phrases: \"I'd like to exchange it, please.\", \"I'd like a refund to my card.\", \"Could you take the extra charge off?\", \"I'd like someone to fix it by Wednesday.\"\n\nThree kinds of fix:\n\n1. A replacement — \"I'd like a new one in the same size, please.\"\n\n2. Your money back — \"I'd prefer a refund to my card.\"\n\n3. A correction, with a time — \"Could you take the charge off and send me a new bill this week?\"\n\nMindset: they cannot give you what you have not named.",
+      inputs: [
+        { q: "You have explained about the broken zip, and the assistant is waiting to hear what you want.", a: "\"I'd like to exchange it for a new one, please.\"", bundle: 'free' },
+        { q: "You have told the phone company the bill is wrong.", a: "\"Could you take the extra charge off and send me a corrected bill?\"", bundle: 'free' },
+        { q: "Your online order from Parcelpoint was the wrong size.", a: "\"I'd like the large sent out, please, and a return label for this one.\"", bundle: 'free' },
+        { q: "The restaurant brought you the wrong dish, and your friends have nearly finished eating.", a: "\"I'd rather not wait for another one now. Could you take it off the bill?\"", bundle: 'free' },
+        { q: "The landlord asks what you want him to do about the heating.", a: "\"I'd like someone to come and fix it by Wednesday, please.\"", bundle: 'free' },
+        { q: "The shop offers you a voucher, but you want your money back.", a: "\"Thanks, but I'd prefer a refund to my card.\"", bundle: 'pro' },
+        { q: "You are not sure what is fair to ask for.", a: "\"I'm not sure what you usually do. A repair or a partial refund would both be fine with me.\"", bundle: 'pro' },
+        { q: "Northway Air cancelled your flight and offers you a seat in three days.", a: "\"I need to be there tomorrow. Could you put me on another flight, even with another airline?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Friendly and Firm",
+      guideFront: "Stay warm but clear when...",
+      guideBack: "A warm line, then the need",
+      description: "Be warm to the person and clear about the problem, in the same breath. \"I know it's not your fault. I still need this sorted today.\" The person in front of you almost never caused the mistake, and that does not change what you need.\n\nIt works because there are two easy ways to get this wrong, and they are opposites. Too friendly, and you drop it — \"oh, never mind, it's fine.\" Too firm, and you take it out on the person who happens to be at the desk. Saying both halves at once means you do not have to choose.\n\nKind words also make you easier to help. People go further for a customer who is on their side.\n\nTypical phrases: \"This isn't on you. I still need a refund.\", \"Thanks for looking into it. I still need it fixed this week.\", \"I'm frustrated, but not with you.\"\n\nThree ways to hold both:\n\n1. Clear them, keep the need — \"You didn't cause this. I'd still like it exchanged.\"\n\n2. Thank them, then the point — \"Thanks, you've been really patient. I still need the charge removed.\"\n\n3. Say the feeling small and the need clearly — \"I'm annoyed, not with you. I just need a working heater.\"\n\nMindset: kind to the person, clear about the problem. You can be both.",
+      inputs: [
+        { q: "The shop assistant says she only started this week and doesn't know the rules yet.", a: "\"No problem at all — you didn't cause this. I'd still like it exchanged today.\"", bundle: 'free' },
+        { q: "The waiter looks rushed off his feet, and your soup is cold.", a: "\"I can see you're busy, sorry. This is cold, though. Could you heat it up?\"", bundle: 'free' },
+        { q: "The person on the phone at Brightline Mobile apologises for the third time.", a: "\"Thank you, you've been really patient. I still need the extra charge removed.\"", bundle: 'free' },
+        { q: "You are about to say \"oh, never mind\" because the assistant looks awkward.", a: "\"I don't want to make your day harder. I do need this fixed, though.\"", bundle: 'free' },
+        { q: "You are angry, and the person at the desk had nothing to do with it.", a: "\"I'm frustrated, but not with you. I just need the heating working again.\"", bundle: 'free' },
+        { q: "The hairdresser looks upset that you are not happy with the cut.", a: "\"You've been lovely, honestly. It's just much shorter than I asked, and I'd like it fixed.\"", bundle: 'pro' },
+        { q: "The gate agent is being shouted at by other passengers.", a: "\"I'm not going to shout at you. I just need a seat on the next flight.\"", bundle: 'pro' },
+        { q: "The garage owner is an old friend of the family.", a: "\"I trust you, you know that. The squeak is still there, so I'd like you to look again.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Repeat the Request",
+      guideFront: "Say it again, calmly, when...",
+      guideBack: "The same ask, unchanged",
+      description: "When they slide away from what you asked — with an explanation, a different offer, or a change of subject — show that you heard them, and then say your request again. Calmly, and in the same words. \"I understand. I'd still like a refund.\"\n\nIt works because every new argument gives them a new point to answer, and the conversation drifts further from the thing you need. The same request, said again, keeps it on one thing. Using the same words also tells them, without any heat, that you have not changed your mind.\n\nKeep it short. One line to show you heard them, one line with the request. No new reasons, no raised voice.\n\nTypical phrases: \"I understand. I'd still like a refund.\", \"Thanks, but I'd still like it exchanged.\", \"That makes sense. I still need it fixed this week.\"\n\nThree ways to bring it back:\n\n1. Hear them, then repeat — \"I understand. I'd still like to exchange it.\"\n\n2. Turn down the other offer, then repeat — \"Thanks, but a voucher won't help. I'd like a refund.\"\n\n3. Bring it back after a detour — \"That's good to know. So — can you take the charge off?\"\n\nMindset: you do not need a new argument. The same request, said calmly again, is enough.",
+      inputs: [
+        { q: "The assistant explains that the jacket was on sale.", a: "\"I understand. I'd still like to exchange it.\"", bundle: 'free' },
+        { q: "The phone company offers you free data instead of removing the charge.", a: "\"Thanks, but I don't need data. I'd like the charge taken off.\"", bundle: 'free' },
+        { q: "The landlord says the plumber is very busy this month.", a: "\"I understand. I still need the heating fixed this week.\"", bundle: 'free' },
+        { q: "The online shop sends you a long message about delivery times.", a: "\"Thanks for explaining. I'd still like the large sent out, please.\"", bundle: 'free' },
+        { q: "The assistant has started telling you how popular this model is.", a: "\"I'm sure it is. So — can I exchange this one?\"", bundle: 'free' },
+        { q: "They offered a voucher, and you have already said no once.", a: "\"I know. I'd still like a refund to my card.\"", bundle: 'pro' },
+        { q: "The gym says your cancellation \"might not have gone through\".", a: "\"That may be. I cancelled in March, and I'd like April's payment back.\"", bundle: 'pro' },
+        { q: "You feel you need a new reason every time they say no.", a: "\"I don't have a new reason. I'd just still like it fixed.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask Who Can Help",
+      guideFront: "Ask for someone who decides when...",
+      guideBack: "A question about who has the power",
+      description: "When the person you are talking to cannot give you what you need, ask — politely — for someone who can. \"Is there someone who can decide this?\" Not a threat, and not \"get me your manager\". A practical question.\n\nIt works because many no's are not really no. They are \"I'm not allowed to\", and the person saying them is often glad to hand it on. Arguing with someone who has no power to say yes wastes both of your time.\n\nAsk it as a favour to them, not a punishment. It is not a complaint about the person; it is a search for the right one.\n\nTypical phrases: \"Is there someone who can decide this?\", \"Who would be able to approve that?\", \"Could I have a quick word with the manager?\", \"Is there an email for complaints?\"\n\nThree ways to ask:\n\n1. Who decides — \"Who would be able to approve a refund?\"\n\n2. A name and a time — \"Could you ask your manager and call me back today?\"\n\n3. The next step in writing — \"What's the best email address for this?\"\n\nMindset: asking for someone else is not an insult. It is the quickest way to the right person.",
+      inputs: [
+        { q: "The assistant says she isn't allowed to give refunds.", a: "\"That's fine. Is there someone here who can?\"", bundle: 'free' },
+        { q: "The man on the phone says the system won't let him remove the charge.", a: "\"I understand. Who would be able to remove it?\"", bundle: 'free' },
+        { q: "The waiter says he can't take anything off the bill.", a: "\"Okay. Could I have a quick word with the manager, please?\"", bundle: 'free' },
+        { q: "The online chat keeps sending you the same help pages.", a: "\"Could I talk to a person, please?\"", bundle: 'free' },
+        { q: "The receptionist at the garage says the mechanic has gone home.", a: "\"Could you ask him to call me tomorrow morning? Here's my number.\"", bundle: 'free' },
+        { q: "You have asked twice, and the answer is still no.", a: "\"I don't think you can help with this, and that's fine. Who can?\"", bundle: 'pro' },
+        { q: "The gym says head office deals with that.", a: "\"Great. What's the best way to reach head office, and who should I ask for?\"", bundle: 'pro' },
+        { q: "You worry that asking for the manager sounds rude.", a: "\"This isn't a complaint about you. I just need someone who can decide.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Confirm the Fix",
+      guideFront: "Say back what was promised when...",
+      guideBack: "A summary of the promise",
+      description: "Before you leave or hang up, say back what has been agreed: what will happen, by when, and how you will know. \"So the new one arrives Tuesday, and I'll get an email. Thanks.\"\n\nIt works because promises made at a counter are easy to forget — on both sides. Saying them back catches mistakes while you can still fix them, and it gives you both the same picture of what happens next. If it goes wrong later, you have something clear to point to.\n\nA vague promise is worth firming up. \"We'll have a look sometime\" becomes a day; \"it should be fine\" becomes a yes or a no.\n\nTypical phrases: \"So that's a refund within five days, to this card?\", \"Could I have a reference number?\", \"Could you send that to me by email?\"\n\nThree things to confirm:\n\n1. What, and when — \"So a new one, here by Friday.\"\n\n2. A reference or a name — \"Could I have a reference number for that?\"\n\n3. In writing — \"Could you email me that, so I have it?\"\n\nMindset: it isn't sorted until you both say it the same way.",
+      inputs: [
+        { q: "The assistant says she will order a new jacket for you.", a: "\"So a new one in my size, here by Friday, and you'll text me. Thank you.\"", bundle: 'free' },
+        { q: "The phone company agrees to remove the charge.", a: "\"Great. So the charge comes off, and I'll see that on next month's bill?\"", bundle: 'free' },
+        { q: "The landlord says he'll send someone about the heating.", a: "\"Thanks. So someone comes on Wednesday, before twelve?\"", bundle: 'free' },
+        { q: "The airline agent books you onto another flight.", a: "\"So that's the 7:40 tomorrow, the seat is confirmed, and my bag goes straight through?\"", bundle: 'free' },
+        { q: "The chat agent says your refund has been approved.", a: "\"Thank you. Could I have a reference number for that?\"", bundle: 'free' },
+        { q: "The garage says they'll \"have another look sometime\".", a: "\"Lovely. When should I bring it in — would Thursday morning work?\"", bundle: 'pro' },
+        { q: "The hairdresser offers to fix the cut.", a: "\"Thank you. So tomorrow at ten, and no charge — is that right?\"", bundle: 'pro' },
+        { q: "The gym says they will refund April's payment.", a: "\"Great. Could you send me an email saying that, so I have it?\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  gettingtoknowsomeone: [
+    {
+      name: "Beyond the Job",
+      guideFront: "Ask what they love doing when...",
+      guideBack: "A question about life outside work",
+      description: "Ask about what they care about, not about their title. \"What do you love doing when you're not working?\" A job tells you what someone does all day. It rarely tells you who they are.\n\nIt works because most people are asked about their job ten times a week, and they have a ready, flat answer for it. A question about what they love wakes up a different part of them, and the answer usually comes with some energy. It also tells them you are interested in them, not in their role.\n\nIt works without a job, too. With a teenager it is \"when you're not at school\". With someone retired it is \"these days\", or \"back then\".\n\nTypical phrases: \"What do you love doing when you're not working?\", \"What does a good Saturday look like for you?\", \"What could you talk about for hours?\"\n\nThree ways to ask:\n\n1. Outside the role — step past the title. \"And when you're not managing projects, what do you love doing?\"\n\n2. The best part of the week — ask about the time they choose for themselves. \"What's the best part of your week?\"\n\n3. Back then — for someone retired, or someone whose job was everything. \"What did you love doing back then, outside work?\"\n\nMindset: the title is where the conversation starts, not where the person is.",
+      inputs: [
+        { q: "It is Tom's first week. Over lunch in the staff kitchen, he tells you he's the new project manager. That is all you know about him.", a: "\"Welcome, Tom. And when you're not managing projects, what do you love doing?\"", bundle: 'free' },
+        { q: "By the snacks at Jonas's birthday, Priya introduces herself: \"I'm a nurse. Nights, mostly.\"", a: "\"Nights! So what do you do with your days off, when you finally get them?\"", bundle: 'free' },
+        { q: "Ruth, two doors down, is clearing snow next to you. In two years, all you have learned is that she drives the number 4 bus.", a: "\"I only know you as the number 4 driver, Ruth. What do you enjoy when you're off duty?\"", bundle: 'free' },
+        { q: "On the long drive to the summer house, your partner's father talks about timber and joints again. Bernard was a carpenter for fifty years.", a: "\"You clearly loved the work. What else did you love back then, outside the workshop?\"", bundle: 'free' },
+        { q: "On the sideline at Saturday football, Mia's mum tells you she's a lawyer, and then goes quiet.", a: "\"And what does Sofia like doing when she's not being a lawyer or standing in the rain?\"", bundle: 'free' },
+        { q: "In the break at choir, Yusuf mentions that he works in a pharmacy.", a: "\"So pharmacy by day and choir on Thursdays. What else fills your week, Yusuf?\"", bundle: 'pro' },
+        { q: "Harold, who is 84 and has the plot next to yours, tells you he was a postman for forty years.", a: "\"Forty years! And what did you love doing when you weren't on your round?\"", bundle: 'pro' },
+        { q: "At a family birthday, your partner's nephew Sami, 16, says school is \"fine\" and goes back to his phone.", a: "\"Fair enough. What do you actually like doing when you're not at school?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Where They're From",
+      guideFront: "Ask what home was like when...",
+      guideBack: "A question about what a place meant",
+      description: "Ask about the place someone comes from, and then about what it meant to them, not just where it is on a map. \"What was it like growing up there?\" The place is only the start. The story is what it was like to be there.\n\nIt works because \"Where are you from?\" gets a one-word answer, and the conversation stops at the name of a town. \"What was it like?\" asks for a memory, and memories come with people, smells and small details you can follow up on. It shows you care about their life there, not about placing them.\n\nAsk about where they grew up or lived, never where they \"really\" come from. Let them choose which place counts as home.\n\nTypical phrases: \"What was it like growing up there?\", \"What do you miss most about it?\", \"What did growing up there give you?\"\n\nThree ways to ask:\n\n1. Growing up there — the everyday life. \"What was it like growing up by the sea?\"\n\n2. What they miss — the part that still pulls at them. \"What do you miss most about the island?\"\n\n3. What it gave them — what they still carry with them. \"What did growing up in a fishing town teach you?\"\n\nMindset: a place is a doorway into someone's story. Ask what was behind the door.",
+      inputs: [
+        { q: "Tom mentions, between bites, that he grew up in a small seaside town in Cornwall.", a: "\"What was it like growing up by the sea down there?\"", bundle: 'free' },
+        { q: "Priya says she grew up in Leicester, in the flat above her parents' corner shop.", a: "\"Above the shop! What was that like as a kid?\"", bundle: 'free' },
+        { q: "Leaning on her shovel, Ruth says she grew up on a small island up north, \"with more sheep than people\".", a: "\"More sheep than people! What do you miss most about the island?\"", bundle: 'free' },
+        { q: "Bernard nods at the harbour you are driving past. He grew up in a fishing town just like it.", a: "\"What did growing up in a town like this teach you?\"", bundle: 'free' },
+        { q: "Sofia mentions that she grew up right in the middle of London.", a: "\"Right in the middle! What was it like being a kid there?\"", bundle: 'free' },
+        { q: "Yusuf tells you he grew up in Izmir, by the sea.", a: "\"What was Izmir like to grow up in? What do you miss most?\"", bundle: 'pro' },
+        { q: "Harold says he grew up in Glasgow, \"a very long time ago\".", a: "\"What was Glasgow like when you were a boy?\"", bundle: 'pro' },
+        { q: "Sami says his family moved from the city to a small town last year.", a: "\"That's a big change. What do you miss about the city?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What Shaped Them",
+      guideFront: "Ask how they got here when...",
+      guideBack: "A question about a turning point",
+      description: "Ask about a turning point: a choice, a person or a moment that made them who they are today. \"How did you end up doing this?\" It turns a fact about someone into a story about them.\n\nIt works because every surprising fact — a chef who became a project manager, a nurse who nearly did accounting — has a story behind it, and people are rarely asked for it. \"How did that happen?\" invites the story, and the story shows you what matters to them: what they chose, who helped, and what they walked away from.\n\nListen for the surprise in what they say. A change, a first, a \"nearly\", an \"only when\": that is where the turning point is.\n\nTypical phrases: \"How did you end up doing this?\", \"What made you decide to…?\", \"Who got you into it?\"\n\nThree things to ask about:\n\n1. The path — how they got from there to here. \"From chef to project manager — how did that happen?\"\n\n2. The person — who started it. \"Was it your uncle who got you into carpentry?\"\n\n3. The choice — the moment they decided. \"What made you start gardening when you retired?\"\n\nMindset: people are made of turning points. Ask about one, and you hear what they care about.",
+      inputs: [
+        { q: "Tom mentions that he was a chef until he was thirty. Now he manages IT projects.", a: "\"From chef to project manager — how did that happen?\"", bundle: 'free' },
+        { q: "Priya laughs and says she nearly studied accounting before she became a nurse.", a: "\"Nearly accounting! What changed your mind?\"", bundle: 'free' },
+        { q: "Ruth says she came to this street from the island thirty years ago, and never left.", a: "\"What brought you all the way down here, back then?\"", bundle: 'free' },
+        { q: "Bernard says he left school at fifteen to work with his uncle.", a: "\"Fifteen! Was it your uncle who got you into carpentry?\"", bundle: 'free' },
+        { q: "Sofia says she knew she would be a lawyer from the age of fourteen.", a: "\"Fourteen! What happened when you were fourteen?\"", bundle: 'free' },
+        { q: "Yusuf says he learned to sing from his grandmother.", a: "\"Tell me about her. How did she get you singing?\"", bundle: 'pro' },
+        { q: "Harold tells you he only started gardening the year he retired.", a: "\"What made you start, the year you retired?\"", bundle: 'pro' },
+        { q: "Sami says he makes music on his laptop, mostly late at night.", a: "\"How did you get into making music?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Find the Shared \"We\"",
+      guideFront: "Name your common ground when...",
+      guideBack: "A light statement of common ground",
+      description: "When you find something you share, say it out loud as a \"we\". \"So we're both the eldest. That explains a lot.\" It is a statement, not a question, and it turns two strangers into two people on the same side of something.\n\nIt works because a shared thing — a habit, a past, a small struggle — makes people feel closer faster than any question can. Saying \"we\" or \"both\" makes the link visible, and a little humour makes it warm. Then you hand the conversation back to them.\n\nThe shared thing has to be real, and small is fine. Do not stretch for one, and do not turn it into a long story about you. One line, then back to them.\n\nTypical phrases: \"So we're both…\", \"Me too! So we…\", \"Same here. So we're the two…\"\n\nThree kinds of \"we\":\n\n1. A shared fact — \"So we're both the eldest. That explains a lot.\"\n\n2. A shared past — \"I did a paper round at thirteen too. So we both know what a Sunday paper weighs.\"\n\n3. A shared spot — the two of you, in the same place right now. \"So we're the two parents who cheer at the wrong moments.\"\n\nMindset: you do not need much in common. One real \"we\" is enough to start.",
+      inputs: [
+        { q: "Tom says he cycles in along the canal every morning. So do you.", a: "\"So we're both on the canal path at eight. I'll wave tomorrow.\"", bundle: 'free' },
+        { q: "Priya laughs about Jonas singing karaoke at her choir's parties. You have heard him at university parties.", a: "\"So we've both survived Jonas's karaoke. That's a real bond.\"", bundle: 'free' },
+        { q: "Ruth says she is always up at six with the bees. You are always out at six with the dog.", a: "\"So we're the two early birds on this street. No wonder we keep nodding at each other.\"", bundle: 'free' },
+        { q: "Bernard mentions his paper round at thirteen, out in the dark before school. You had one too.", a: "\"I did a paper round at thirteen too. So we both know what a Sunday paper weighs.\"", bundle: 'free' },
+        { q: "Sofia admits she has no idea what offside means. Neither do you.", a: "\"Same here. So we're the two parents who cheer at the wrong moments.\"", bundle: 'free' },
+        { q: "Yusuf whispers that he can't read music. He just follows the person next to him, which is your method too.", a: "\"Me too. So we're both following each other. That explains the second verse.\"", bundle: 'pro' },
+        { q: "Harold tells you his dad grew potatoes in the back yard. So did yours.", a: "\"Mine too! So we were both raised on our dads' potatoes.\"", bundle: 'pro' },
+        { q: "Sami groans as his aunt gets the camera out for the family photo. You hate the photos too.", a: "\"Same. So we're the two people in this family who hate photos. Stand next to me.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask About the Difference",
+      guideFront: "Ask how it was for them when...",
+      guideBack: "A curious question about their own experience",
+      description: "Ask, with real curiosity, about something in their life that is different from yours, and ask about their own experience of it. \"What surprised you most when you moved here?\" You are interested in them, not in where they belong.\n\nIt works because differences hold some of the best stories, and most people step around them to be polite. A warm question about the difference says: I noticed, and I would like to know how it was for you. That is the opposite of pointing it out.\n\nThe rule: ask about them, never about their group. \"What was that like for you?\" is curious. \"What do people from there think about…?\" makes them a spokesperson. Never ask them to explain or defend a whole country, age group or job.\n\nTypical phrases: \"What was that like for you?\", \"What surprised you most?\", \"What's something people here get wrong about where you're from?\"\n\nThree ways to ask:\n\n1. What surprised them — \"What surprised you most when you moved here?\"\n\n2. What you would get wrong — \"What's one thing about being sixteen now that I'd get completely wrong?\"\n\n3. How it was in their life — \"Seven of you! What was that like at the dinner table?\"\n\nMindset: a difference is not something to step around. Asked about kindly, it is an invitation.",
+      inputs: [
+        { q: "Tom's last job was at a start-up with six people. Your company has six hundred.", a: "\"What's the strangest thing about a big office, after a team of six?\"", bundle: 'free' },
+        { q: "Priya works nights and sleeps while most people work. You have never done a night shift.", a: "\"I've never done a single night. What's that life like for you?\"", bundle: 'free' },
+        { q: "Ruth has lived on this street for thirty years. You have been here for two.", a: "\"You've seen thirty years of this street. What do newcomers like me not know about it?\"", bundle: 'free' },
+        { q: "Bernard grew up as one of seven children. You are an only child.", a: "\"Seven of you! What was that like at the dinner table?\"", bundle: 'free' },
+        { q: "Sofia grew up in central London. You grew up in a village of three hundred people and one shop.", a: "\"I grew up with one shop and three hundred people. What would surprise me about growing up in London?\"", bundle: 'free' },
+        { q: "Yusuf has lived here for two years now, after a whole life in Izmir.", a: "\"What surprised you most when you moved here?\"", bundle: 'pro' },
+        { q: "Harold is 84. You are half his age.", a: "\"What's different about being 84 from what you expected at my age?\"", bundle: 'pro' },
+        { q: "Sami is sixteen, and you were sixteen a long time ago.", a: "\"What's one thing about being sixteen now that I'd get completely wrong?\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  whoyouare: [
+    {
+      name: "The Roles You Play",
+      guideFront: "Name more than the job when...",
+      guideBack: "Two or three sides of you, in one line",
+      description: "Answer \"what do you do?\" or \"tell me about yourself\" with more than one role. Not just the job title — the job and the other things you are. \"I'm a nurse, but mostly I'm a dad of two and a very average drummer.\"\n\nIt works because one role is one box, and people file you by it. A job title tells them what to call you; two or three roles show them the shape of a life, and give them a choice of where to go next. Often the job is the least \"you\" part of the answer.\n\nTypical phrases: \"Engineer by day, choir on Tuesdays.\", \"Mostly I'm a grandad these days. I also fix bikes.\", \"I teach, and I coach the under-twelves on Saturdays.\"\n\nThree ways to do it:\n\n1. The job plus one — the easy start. \"I work in a bank, and I'm learning the cello, badly.\"\n\n2. Lead with the role that matters most right now — even if it is not paid. \"Mainly I'm looking after my mum at the moment. I also work at the library.\"\n\n3. Roles without a job — for when you are retired, studying or between jobs. \"I'm retired, which turns out to mean gardener, babysitter and slow runner.\"\n\nMindset: you are not one thing. Give them two or three, and let them pick.",
+      inputs: [
+        { q: "A new colleague asks what you do outside work.", a: "\"I'm a dad of two, mostly. And a very average drummer in a band nobody's heard of.\"", bundle: 'free' },
+        { q: "Someone at a party asks what you do.", a: "\"I'm a nurse. Also a stepmum, and the person who runs our street's book swap.\"", bundle: 'free' },
+        { q: "Your partner's friend asks you to tell them about yourself.", a: "\"Engineer by day. Choir on Tuesdays. And I've just become an auntie, which is my favourite job.\"", bundle: 'free' },
+        { q: "You are retired and a neighbour asks what you do with your days.", a: "\"Retired from the buses. Now I'm a gardener, a grandad on Wednesdays and a terrible chess player.\"", bundle: 'free' },
+        { q: "You are between jobs and someone asks what you do.", a: "\"Between jobs right now. Meanwhile I'm a full-time dog walker and a part-time student of Spanish.\"", bundle: 'free' },
+        { q: "The role that matters most right now is not your job.", a: "\"Mostly I'm looking after my mum at the moment. I also work three days a week at the library.\"", bundle: 'pro' },
+        { q: "A parent at the school gate only knows you as Leo's mum.", a: "\"Leo's mum, yes. Also a welder, which tends to surprise people.\"", bundle: 'pro' },
+        { q: "You are a student and someone treats that as the whole story.", a: "\"I'm studying law. I also work nights at a bakery and play football on Sundays.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Where You Come From",
+      guideFront: "Give one line of background when...",
+      guideBack: "A place, and what it left in you",
+      description: "Give one sentence about your background — where you grew up, or the family or world you came from — and what it left you with. \"I grew up on a farm, so I still wake up at five.\"\n\nIt works because a place on its own is a fact on a form. The second half, what it left in you, is what turns it into you, and it gives the other person something to ask about. It also lets you choose the frame before someone else does.\n\nTypical phrases: \"I grew up by the sea, so I get restless anywhere inland.\", \"I'm the oldest of five, which explains a lot.\", \"My mum ran a corner shop, so I grew up behind a till.\"\n\nThree ways to do it:\n\n1. The place and the habit — \"I'm from a tiny island. I still say hello to everyone I pass.\"\n\n2. The family — \"I'm the oldest of five. It's why I can't stop organising people.\"\n\n3. Two places — for when the honest answer has more than one part. \"My parents are from Chile and I grew up in Gothenburg, so I'm loud at dinner and quiet on the bus.\"\n\nKeep it to one sentence. If they want the longer version, they will ask.\n\nMindset: one sentence is enough. The place, and what it left you with.",
+      inputs: [
+        { q: "A colleague asks where you grew up.", a: "\"On a farm up north. I still wake up at five, even on Sundays.\"", bundle: 'free' },
+        { q: "Someone at a dinner asks about your family.", a: "\"I'm the oldest of five. It's why I can't stop organising people.\"", bundle: 'free' },
+        { q: "A neighbour asks if you are from around here.", a: "\"No, I grew up by the sea. I get restless anywhere I can't see water.\"", bundle: 'free' },
+        { q: "A new friend asks where your accent is from.", a: "\"Glasgow. Twelve years here and it still comes back when I'm tired.\"", bundle: 'free' },
+        { q: "Someone asks where you are from and you have two answers.", a: "\"My parents are from Chile and I grew up in Gothenburg. So I'm loud at dinner and quiet on the bus.\"", bundle: 'free' },
+        { q: "You grew up changing schools every couple of years.", a: "\"Everywhere, a bit. Army family, six schools by fourteen. I make friends very fast.\"", bundle: 'pro' },
+        { q: "You come from a small town nobody has heard of.", a: "\"A town of two thousand people and one bus. Everyone knew my business, so I'm good at keeping my own.\"", bundle: 'pro' },
+        { q: "Your manager asks about your background at an informal lunch.", a: "\"My mum ran a corner shop, so I grew up behind a till. I still add up faster than the spreadsheet.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What Matters to You",
+      guideFront: "Name a value plainly when...",
+      guideBack: "A value, in ordinary words",
+      description: "Say one thing you value, in your own plain words — and, if you like, where it shows in your life. \"I care a lot about people being treated fairly. It's why I ended up in HR.\"\n\nIt works because a value is what people really want to know about you, and the thing they almost never hear. A hobby tells them how you spend Saturday. A value tells them what you will do when it matters. Said in one ordinary sentence, it does not sound like a speech — it sounds like you.\n\nTypical phrases: \"Being on time matters to me — it's how I show respect.\", \"Family comes first. Not in a poster way, just Sunday dinners.\", \"I'd rather be honest than nice, which has got me into trouble.\"\n\nThree ways to say it:\n\n1. The value, plainly — \"I just can't stand people being left out.\"\n\n2. The value and where it shows — \"I hate waste. You'll find me fixing a toaster rather than buying one.\"\n\n3. The value and what it costs you — admitting the downside keeps it human. \"Fairness matters a lot to me, which is why I argue with referees at under-nines football.\"\n\nMindset: one value in plain words is not preaching. It is the most useful thing you can tell someone about yourself.",
+      inputs: [
+        { q: "A friend asks why you volunteer at the food bank.", a: "\"I just can't stand people going hungry when there's enough. That's really all it is.\"", bundle: 'free' },
+        { q: "A new colleague asks why you chose teaching.", a: "\"I care about every kid having one adult who's on their side. Teaching was the most direct way.\"", bundle: 'free' },
+        { q: "Your partner's parents ask what is important to you.", a: "\"Being honest, even when it's awkward. I'd rather have the hard conversation than the quiet one.\"", bundle: 'free' },
+        { q: "Someone asks why you always leave work at five.", a: "\"My kids' evenings matter more to me than anything on my desk. So at five I go.\"", bundle: 'free' },
+        { q: "A neighbour notices you repair everything yourself.", a: "\"I hate waste. I'll spend an hour on a toaster rather than buy a new one.\"", bundle: 'free' },
+        { q: "You want to admit what the value costs you.", a: "\"Fairness matters a lot to me. Which is why I'm not allowed to shout at referees any more.\"", bundle: 'pro' },
+        { q: "Someone asks what you would never compromise on.", a: "\"Keeping my word. If I say I'll be there, I'm there — even if it's raining sideways.\"", bundle: 'pro' },
+        { q: "On a second date, they ask what you want out of life.", a: "\"Honestly? Calm. A few good people, enough time, and nobody shouting.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Turning Point",
+      guideFront: "Name what changed you when...",
+      guideBack: "A before and after, in one sentence",
+      description: "Name one thing that shaped you — an event, a person, a choice — in a single sentence, and then stop. \"Moving abroad at twenty changed everything for me.\"\n\nIt works because a turning point explains you faster than a list of facts. It shows that you changed, which makes you a person with a story instead of a set of labels. The shortness is the point: the headline invites the question, and the full story comes only if they ask for it.\n\nTypical phrases: \"Losing my job at forty was the best thing that happened to me.\", \"A teacher in year nine changed everything.\", \"I was a different person before my daughter was born.\"\n\nThree kinds of turning point:\n\n1. The event — \"I spent a year in hospital at nineteen. I stopped waiting for the right moment after that.\"\n\n2. The person — \"My grandmother taught me to say what I think. I've never stopped.\"\n\n3. The choice — \"I left law at thirty-five to train as a carpenter. Best decision I ever made.\"\n\nIf the turning point was a hard time, give it lightly. You decide how much of it to share, and one sentence leaves them free to ask or not.\n\nMindset: one sentence, then stop. If they want the story, they will ask.",
+      inputs: [
+        { q: "A colleague asks how you ended up in this job.", a: "\"I was made redundant at forty. Worst week of my life, best thing that ever happened to me.\"", bundle: 'free' },
+        { q: "A friend's friend asks why you became a carpenter.", a: "\"I left law at thirty-five. One weekend building a shed and I knew.\"", bundle: 'free' },
+        { q: "Someone asks how you got so confident speaking up.", a: "\"A teacher in year nine told me my opinions were worth hearing. I believed her.\"", bundle: 'free' },
+        { q: "A new friend asks why you live here.", a: "\"I came here for one year when I was twenty. That was nineteen years ago.\"", bundle: 'free' },
+        { q: "Someone asks what you were like as a teenager.", a: "\"Very shy, until I joined a drama club at sixteen. That changed everything.\"", bundle: 'free' },
+        { q: "The turning point was a hard time and you want to keep it light.", a: "\"I was ill for a year in my twenties. It taught me not to put things off.\"", bundle: 'pro' },
+        { q: "Someone asks if you have always been this calm.", a: "\"Not at all. Becoming a dad at twenty-two calmed me down very fast.\"", bundle: 'pro' },
+        { q: "They seem interested and you want to leave the door open.", a: "\"Short version: my grandmother. The long version needs a coffee — do you want it?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Correct the Label",
+      guideFront: "Fix the assumption lightly when...",
+      guideBack: "A friendly \"yes, but\"",
+      description: "When someone puts you in a box — because of your nationality, job, age, family or an old version of you — fix it lightly, with a smile and one true detail. \"I'm Swedish, yes, but I've never actually been skiing.\"\n\nIt works because a label is usually a shortcut, not an insult. Let it stand and the conversation carries on with the wrong person. Lecture them and you fix the label but lose the conversation. A light \"yes, but\" keeps both: they get the real you, and nobody feels told off.\n\nTypical phrases: \"Accountant, yes — I also play bass in a punk band.\", \"That was me at school. I grew out of it.\", \"Easy mistake — I'm actually the owner.\"\n\nThree ways to do it:\n\n1. Yes, but — keep the true part, fix the rest. \"Swedish, yes. Skiing, never.\"\n\n2. The update — the label was true once. \"I was the quiet one at school. I've made up for it since.\"\n\n3. The swap — offer the label you would choose. \"Less 'the boss's daughter', more 'the one who does the payroll'.\"\n\nAnd one to avoid: the lecture. One sentence, a smile, then carry on — ask them something, or go back to what you were talking about.\n\nMindset: a label is a shortcut, not an attack. Fix it with a smile and keep talking.",
+      inputs: [
+        { q: "A new colleague says, \"You're Swedish — you must love skiing.\"", a: "\"Swedish, yes. I've never actually been skiing. I'm more of a sauna person.\"", bundle: 'free' },
+        { q: "Someone hears you are an accountant and says, \"So, quite a quiet life, then?\"", a: "\"On paper. I also play bass in a very loud punk band.\"", bundle: 'free' },
+        { q: "A younger colleague assumes you will not manage the new app.", a: "\"I'm sixty-two, not scared of phones. Show me the tricky bit and I'll be fine.\"", bundle: 'free' },
+        { q: "An old schoolfriend says, \"You were always the quiet one.\"", a: "\"I was! I've made up for it since — ask anyone at my work.\"", bundle: 'free' },
+        { q: "Someone at a party says, \"A nurse? You must be so patient.\"", a: "\"With patients, yes. With slow drivers, not at all.\"", bundle: 'free' },
+        { q: "A relative introduces you as \"the one who never settled down\".", a: "\"Ha — I settled. Just not the way you'd planned for me.\"", bundle: 'pro' },
+        { q: "A client assumes you are the assistant, not the owner.", a: "\"Easy mistake — I'm actually the owner. How can I help?\"", bundle: 'pro' },
+        { q: "Someone says, \"Farmer's son — so you'll know all about tractors.\"", a: "\"I know which end goes forward. My brother got the tractor gene.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -22446,6 +23346,506 @@ const collectionsModeData = {
         { q: "At Diwali, your brother's new wife sits quietly while the cousins speak a language she does not know.", a: "\"Let's do this in English for a bit. Priya, tell us how you two met.\" [Draw Someone In]", bundle: 'pro', guideBack: "An invitation to join in" },
         { q: "At Midsummer, it is the time you said, and the whole table protests that it is still light outside.", a: "\"It's light till midnight! Thank you all — we're heading home.\" [Leave on Time]", bundle: 'pro', guideBack: "A clear time, then a warm goodbye" },
         { q: "At a wedding, Uncle Dev asks when you will finally get a proper job instead of acting.", a: "\"Acting is the proper job, Uncle. Are you still playing golf?\" [Short Answer, New Topic]", bundle: 'pro', guideBack: "One true line, then a real question" },
+      ]
+    },
+  ],
+  makingfriends1: [
+    {
+      name: "Make the Invitation",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Say You Liked It**, **Suggest Something Specific**, **Make It Easy to Say No** and **Bring Them In** — the four strategies for the moment a good conversation could become a plan.\n\n• **Say You Liked It** — you are about to part, and they do not know it was good for you\n• **Suggest Something Specific** — there is a \"sometime\" in the air, and nobody has named a day\n• **Make It Easy to Say No** — you have asked, and they might feel cornered\n• **Bring Them In** — something is already happening that they could join\n\nThe question that decides it: what would make it easiest for them to say yes right now?\n\nThe usual wrong choice is stopping at Say You Liked It and adding \"we should do this again sometime\". It feels warm, and nothing ends up in anyone's diary.\n\nMindset: warmth opens the door. A day and a place walk through it.",
+      inputs: [
+        { q: "You and Hana have talked all evening at a friend's dinner, and she is putting her coat on.", a: "\"I'm so glad I sat next to you. That was the best part of tonight.\" [Say You Liked It]", bundle: 'pro', guideBack: "A warm parting line" },
+        { q: "Sol, from your Spanish class, says, \"We should get a coffee sometime.\"", a: "\"Yes! Thursday, before class? The café on the corner.\" [Suggest Something Specific]", bundle: 'pro', guideBack: "A concrete invitation" },
+        { q: "You have just asked Niamh to a gig, and she looks unsure.", a: "\"Honestly, no pressure. If gigs aren't your thing, that's completely fine.\" [Make It Easy to Say No]", bundle: 'pro', guideBack: "An invitation with an exit" },
+        { q: "Lotte, new at work, mentions that she has not met anyone outside the office yet.", a: "\"A few of us go for a drink on Friday after work. Come with us?\" [Bring Them In]", bundle: 'pro', guideBack: "An offer to join the group" },
+        { q: "After a yoga class, you and Sanna have been laughing about the instructor's playlist. You reach the door.", a: "\"That was fun. I'm glad we ended up on neighbouring mats.\" [Say You Liked It]", bundle: 'pro', guideBack: "A warm parting line" },
+        { q: "Dev at the gym says he wants to start running outside.", a: "\"I'm doing the park run on Saturday at nine. Want to come?\" [Suggest Something Specific]", bundle: 'pro', guideBack: "A concrete invitation" },
+        { q: "You are inviting Yusuf to a dinner where he will not know anyone else.", a: "\"You'd be very welcome on Saturday — and say if a room of strangers sounds awful.\" [Make It Easy to Say No]", bundle: 'pro', guideBack: "An invitation with an exit" },
+        { q: "Your neighbour Elif says she would love to learn to grow vegetables.", a: "\"We're at the community garden every Sunday morning. Come along and get your hands dirty.\" [Bring Them In]", bundle: 'pro', guideBack: "An offer to join the group" },
+      ]
+    },
+    {
+      name: "Reach Out Again",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Pick Up a Thread**, **Ask Again** and **Bring Them In** — three strategies for the days after you first met, when it is up to someone to get in touch.\n\n• **Pick Up a Thread** — you have not invited them yet, and you need a reason to get in touch\n• **Ask Again** — you invited them, and got a soft no or no reply\n• **Bring Them In** — one-to-one plans keep not working, but something regular is going on\n\nThe question that decides it: have I already invited them? If not, start from something they told you. If you have, ask once more, lightly — or offer the group instead.\n\nThe usual wrong choice is waiting for them to get in touch first. They are usually waiting too.\n\nMindset: being the one who gets in touch is not a weakness. It is how most friendships start.",
+      inputs: [
+        { q: "Bea, who you met at a wedding last month, mentioned she was training for a half marathon.", a: "\"You said you were training for the half marathon. How's it going?\" [Pick Up a Thread]", bundle: 'pro', guideBack: "A message that starts from them" },
+        { q: "Tomás says he cannot do Saturday because he is working.", a: "\"No worries. What about the Saturday after?\" [Ask Again]", bundle: 'pro', guideBack: "A second, lighter try" },
+        { q: "You and Chloe have tried to find an evening for coffee three times, and it never works.", a: "\"We play quiz every Thursday at the Fox. Just turn up any week — no planning needed.\" [Bring Them In]", bundle: 'pro', guideBack: "An offer to join the group" },
+        { q: "Kenji said he was starting a new job last Monday.", a: "\"How was the first week at the new job? Still alive?\" [Pick Up a Thread]", bundle: 'pro', guideBack: "A message that starts from them" },
+        { q: "You asked Hana to dinner ten days ago and heard nothing.", a: "\"This might have got lost — still up for dinner some time?\" [Ask Again]", bundle: 'pro', guideBack: "A second, lighter try" },
+        { q: "Amara from the school gate said she was trying to find a good swimming class for her son. You have found one.", a: "\"You were looking for a swimming class — the pool on Hill Road has one on Saturdays.\" [Pick Up a Thread]", bundle: 'pro', guideBack: "A message that starts from them" },
+        { q: "Marcus says he is too busy for lunch this week.", a: "\"Fair enough. A ten-minute coffee on Friday instead?\" [Ask Again]", bundle: 'pro', guideBack: "A second, lighter try" },
+        { q: "Ben, who is new in town, said no to a one-to-one coffee because he felt awkward.", a: "\"Some of the parents meet at the playground café on Saturdays. Come and say hi — no pressure.\" [Bring Them In]", bundle: 'pro', guideBack: "An offer to join the group" },
+      ]
+    },
+    {
+      name: "All Six Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order real situations arrive — with no warning about which moment you are in.\n\nThe six fall into two groups. Four for the moment you are together: **Say You Liked It**, **Suggest Something Specific**, **Make It Easy to Say No** and **Bring Them In**. Two for the days after: **Pick Up a Thread** and **Ask Again**.\n\nIf you are unsure, ask where you are: still together, or apart and deciding whether to get in touch?\n\nThe usual wrong choice is the hopeful wait — enjoying the chat, saying nothing, and hoping they take the first step.\n\nMindset: every one of these is small. Together they turn a nice chat into a friend.",
+      inputs: [
+        { q: "You and Owen have talked the whole way home from the pottery class. You reach his street.", a: "\"I really enjoyed that. You've made Tuesdays my favourite evening.\" [Say You Liked It]", bundle: 'pro', guideBack: "A warm parting line" },
+        { q: "Your new neighbour Rosa says, \"We must have you round when we're settled.\"", a: "\"I'd love that. Or come to mine first — tea on Sunday afternoon?\" [Suggest Something Specific]", bundle: 'pro', guideBack: "A concrete invitation" },
+        { q: "You are asking Theo, a dad from the school gate, to come climbing for the first time.", a: "\"Fancy trying the climbing wall on Saturday? Totally fine if heights aren't for you.\" [Make It Easy to Say No]", bundle: 'pro', guideBack: "An invitation with an exit" },
+        { q: "Luca told you last week he was trying to cook more vegetarian food. You have just made a great curry.", a: "\"You said you were cooking more veggie food — I've got a curry recipe you'd love. Want it?\" [Pick Up a Thread]", bundle: 'pro', guideBack: "A message that starts from them" },
+        { q: "Aisha says she cannot do Sunday's walk because her parents are visiting.", a: "\"No problem at all. Next Sunday instead?\" [Ask Again]", bundle: 'pro', guideBack: "A second, lighter try" },
+        { q: "Zainab, who is new in the choir, says she does not know anyone in town yet.", a: "\"A few of us go for pizza after the Thursday rehearsal. Come with us.\" [Bring Them In]", bundle: 'pro', guideBack: "An offer to join the group" },
+        { q: "After a long chat at the school gate, Femi says, \"Right, I'd better run.\"", a: "\"Me too. I'm really glad we got talking, though.\" [Say You Liked It]", bundle: 'pro', guideBack: "A warm parting line" },
+        { q: "Freya from choir said she might come to your birthday drinks, and you can hear she is unsure.", a: "\"Come if you can — and if it doesn't work out, honestly, no problem.\" [Make It Easy to Say No]", bundle: 'pro', guideBack: "An invitation with an exit" },
+      ]
+    },
+  ],
+  makingfriends2: [
+    {
+      name: "Keep in Touch",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Check In for No Reason**, **Remember the Detail** and **Make It a Habit** — three strategies for the everyday work of staying in someone's life.\n\n• **Check In for No Reason** — nothing is happening; you just want them to know they are on your mind\n• **Remember the Detail** — they told you something last time, and now you can ask about it\n• **Make It a Habit** — you keep meeting by luck, and it is time to make it regular\n\nThe question that decides it: what is this contact for — saying hello, following up on their news, or making sure the next meeting happens?\n\nThe usual wrong choice is the general \"how are you?\" when you know a detail, or another \"we should meet up soon\" when a fixed plan would do it.\n\nMindset: small and often keeps a friendship going better than big and rare.",
+      inputs: [
+        { q: "Your friend Selma told you last week that her cat was going in for an operation.", a: "\"How did Mittens get on? Is she home yet?\" [Remember the Detail]", bundle: 'pro', guideBack: "A question about their news" },
+        { q: "A photo of an old school trip pops up on your phone, with your friend Kalle in it.", a: "\"Look what my phone just found. Those haircuts! Hope you're well.\" [Check In for No Reason]", bundle: 'pro', guideBack: "A message with no agenda" },
+        { q: "You and your friend Bea have met for lunch three times this year, each time after weeks of trying to find a date.", a: "\"Why don't we just say the last Friday of every month and stop trying to find dates?\" [Make It a Habit]", bundle: 'pro', guideBack: "An offer of a regular date" },
+        { q: "Your work friend Ahmed has been on parental leave for two months.", a: "\"No work questions, I promise. Just saying hi. How's life with the little one?\" [Check In for No Reason]", bundle: 'pro', guideBack: "A message with no agenda" },
+        { q: "Your friend Clara mentioned she was starting an evening course in pottery.", a: "\"How's the pottery going? Have you made anything I'm allowed to see?\" [Remember the Detail]", bundle: 'pro', guideBack: "A question about their news" },
+        { q: "Your friend Viktor moved to Bergen, and your calls keep getting cancelled at the last minute.", a: "\"What if we fixed it — first Thursday of the month, eight o'clock? Then neither of us has to remember.\" [Make It a Habit]", bundle: 'pro', guideBack: "An offer of a regular date" },
+        { q: "You're at the market and see the cheese your old flatmate Nora was obsessed with.", a: "\"Standing in front of your cheese right now. Thought of you. How are things?\" [Check In for No Reason]", bundle: 'pro', guideBack: "A message with no agenda" },
+        { q: "Your friend Jonna said she had a big meeting with her landlord this morning.", a: "\"How did it go with the landlord? Did he agree to fix the windows?\" [Remember the Detail]", bundle: 'pro', guideBack: "A question about their news" },
+      ]
+    },
+    {
+      name: "Go Deeper",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Remember the Detail**, **Share Something Real** and **Show Up for the Big Day** — three strategies for when a friendship is ready to be closer than \"fine, busy\".\n\n• **Remember the Detail** — they shared something with you, and it deserves a follow-up\n• **Share Something Real** — it is your turn to say something true about yourself\n• **Show Up for the Big Day** — a date is coming that matters to them, happy or hard\n\nThe question that decides it: is this moment about them, or is it your turn? If it is about them, follow up or mark the day. If they have opened up and are waiting, take one step yourself.\n\nThe usual wrong choice is answering their big moment with your own story — sharing when it was time to listen.\n\nMindset: closeness is built in small steps, and some of the steps are simply turning up.",
+      inputs: [
+        { q: "Your friend Ida's first exhibition opens on Saturday.", a: "\"Saturday's the big day! I'll be there at six. So proud of you.\" [Show Up for the Big Day]", bundle: 'pro', guideBack: "A message for the occasion" },
+        { q: "Your friend Rasmus tells you he has been feeling lost since his kids left home, and asks how you're doing.", a: "\"Honestly, I've had a bit of that since I stopped working. I didn't expect it.\" [Share Something Real]", bundle: 'pro', guideBack: "A small, honest disclosure" },
+        { q: "Last month your friend Amal said her brother was going into rehab.", a: "\"I've been thinking about your brother. How is he doing?\" [Remember the Detail]", bundle: 'pro', guideBack: "A question about their news" },
+        { q: "It's a year tomorrow since your friend Teo's divorce came through.", a: "\"I know tomorrow is a year since the divorce. Fancy dinner? My treat.\" [Show Up for the Big Day]", bundle: 'pro', guideBack: "A message for the occasion" },
+        { q: "Your work friend Linnea asks how your weekend was. You spent it worrying about your mum.", a: "\"Honestly, a bit heavy. Mum's not been well, and I'm worried about her.\" [Share Something Real]", bundle: 'pro', guideBack: "A small, honest disclosure" },
+        { q: "Your friend Simon mentioned two weeks ago that his son was being bullied at school.", a: "\"How are things with Leo at school? Has it got any better?\" [Remember the Detail]", bundle: 'pro', guideBack: "A question about their news" },
+        { q: "Your friend Fatima starts her first day as a head teacher tomorrow.", a: "\"Good luck tomorrow! They're lucky to have you. Tell me everything on Friday.\" [Show Up for the Big Day]", bundle: 'pro', guideBack: "A message for the occasion" },
+        { q: "Your friend Oskar says he can never tell if you're actually okay, because you always say \"fine\".", a: "\"Fair. The truth is, I find it hard to say when I'm not. I'm working on it.\" [Share Something Real]", bundle: 'pro', guideBack: "A small, honest disclosure" },
+      ]
+    },
+    {
+      name: "All Six Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, the way real friendships throw them at you — with no warning about which one the moment needs.\n\nThe six fall into two groups. For staying in touch: **Check In for No Reason**, **Remember the Detail** and **Make It a Habit**. For getting closer and coming back: **Share Something Real**, **Show Up for the Big Day** and **Mend a Drift**.\n\nIf you are unsure, ask what the friendship needs right now: a hello, a follow-up, a plan, a step deeper, a day marked, or a way back.\n\nThe usual wrong choice is waiting for the perfect reason to get in touch, until the gap needs mending.\n\nMindset: any small message is better than the perfect one you never send.",
+      inputs: [
+        { q: "Your friend Matilda moved to Australia six months ago, and you haven't talked since her leaving party.", a: "\"I've been rubbish at keeping in touch since you left, and I miss you. Can we find a time to call?\" [Mend a Drift]", bundle: 'pro', guideBack: "An admission, plus an invitation" },
+        { q: "You see a poster for a band you and your friend Felix saw together years ago.", a: "\"Just saw they're touring again. Made me think of that sweaty night in Hamburg. How are you?\" [Check In for No Reason]", bundle: 'pro', guideBack: "A message with no agenda" },
+        { q: "Your friend Asha said her daughter was starting school this week.", a: "\"How was the first week of school? Did she love it?\" [Remember the Detail]", bundle: 'pro', guideBack: "A question about their news" },
+        { q: "You and your friend Anton keep having great evenings, but months pass between them.", a: "\"Let's stop leaving it so long. Second Friday of the month, the usual place?\" [Make It a Habit]", bundle: 'pro', guideBack: "An offer of a regular date" },
+        { q: "Your friend Moa asks how things are with your partner, and you usually just say \"good\".", a: "\"Mostly good. We've had a rocky few weeks, to be honest.\" [Share Something Real]", bundle: 'pro', guideBack: "A small, honest disclosure" },
+        { q: "Your friend Gustav's mum's funeral is on Thursday.", a: "\"I'll be there on Thursday. Is there anything I can do before then?\" [Show Up for the Big Day]", bundle: 'pro', guideBack: "A message for the occasion" },
+        { q: "You and your old teammate Ella used to talk every day. Now it's been a year.", a: "\"I know it's been a year. That's on me too. I'd love to hear your voice.\" [Mend a Drift]", bundle: 'pro', guideBack: "An admission, plus an invitation" },
+        { q: "Your friend Rahim has been working long hours, and you don't want to add to his list.", a: "\"No need to reply — just sending a hello. Hope the week ends soon.\" [Check In for No Reason]", bundle: 'pro', guideBack: "A message with no agenda" },
+      ]
+    },
+  ],
+  makingfriends3: [
+    {
+      name: "Speak Up Gently",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Say You Felt Left Out**, **Name the Pattern Kindly** and **Say the Small Hurt Early** — three ways to tell a friend that something hurt, without making it an accusation.\n\n• **Say You Felt Left Out** — you were not part of something, and you want to be next time\n• **Name the Pattern Kindly** — the same thing keeps happening\n• **Say the Small Hurt Early** — one thing they said or did stung\n\nThe question that decides it: is this one moment, or the fifth time? One moment is a small hurt or a missed invitation. The fifth time is a pattern.\n\nThe usual wrong choice is naming a pattern over one small thing — \"you always\" after a single joke — which makes a little sting sound like a list of complaints.\n\nMindset: say it while it is small, and say what you want.",
+      inputs: [
+        { q: "Your friends went to a gig on Friday. You saw the photos on Saturday morning.", a: "\"The gig looked brilliant. I'd have loved to come — ask me next time?\" [Say You Felt Left Out]", bundle: 'pro', guideBack: "A wish to be included, not a complaint" },
+        { q: "Your friend Simon has cancelled your last three plans, each time the same day.", a: "\"That's three in a row now, and I've noticed. Is everything okay?\" [Name the Pattern Kindly]", bundle: 'pro', guideBack: "An observation and a caring question" },
+        { q: "Your friend laughed at your new haircut in front of her sister.", a: "\"The haircut laugh stung a bit, honestly. That's all.\" [Say the Small Hurt Early]", bundle: 'pro', guideBack: "A light, honest statement" },
+        { q: "You have planned every one of your walks with Ida for a year. She's just texted, \"Walk soon?\"", a: "\"Yes please! I've noticed I'm usually the one who plans them. Would you pick the day this time?\" [Name the Pattern Kindly]", bundle: 'pro', guideBack: "An observation and a caring question" },
+        { q: "Your friend Jamal says the book club met at his place last night. You'd asked to join a month ago.", a: "\"Oh, I'd really have liked to come to that. Can you send me the next date?\" [Say You Felt Left Out]", bundle: 'pro', guideBack: "A wish to be included, not a complaint" },
+        { q: "Your friend said, \"You're always so serious,\" when you didn't laugh at her joke.", a: "\"The 'always so serious' bit stung a little. I just wanted to say it.\" [Say the Small Hurt Early]", bundle: 'pro', guideBack: "A light, honest statement" },
+        { q: "Your friend's messages only ever arrive when she needs advice about her ex.", a: "\"I'm always happy to help. I've noticed we mostly talk about him, though — I'd love to just catch up too.\" [Name the Pattern Kindly]", bundle: 'pro', guideBack: "An observation and a caring question" },
+        { q: "Your friend Eva went to your favourite restaurant for her birthday — the one you found — with other friends.", a: "\"Honestly, I felt a bit left out when I saw it. I'd love to go there together soon.\" [Say You Felt Left Out]", bundle: 'pro', guideBack: "A wish to be included, not a complaint" },
+      ]
+    },
+    {
+      name: "Adjust or Step Back",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Name the Pattern Kindly**, **Make Room for Their Change** and **Let It Ease Off Kindly** — three ways to answer a friendship that is changing shape.\n\n• **Name the Pattern Kindly** — something has changed, and you do not know why yet\n• **Make Room for Their Change** — you know why, and you want to keep the friendship in a new shape\n• **Let It Ease Off Kindly** — you no longer want to keep it as it was\n\nThe question that decides it: do I know why, and do I want to keep it? Not knowing calls for naming the pattern. Knowing, and wanting to keep it, calls for making room. Not wanting to keep it calls for easing off.\n\nThe usual wrong choice is easing off too soon — letting a friendship go when one honest question would have explained everything.\n\nMindset: ask first. Adjust if you can. Let go kindly if you must.",
+      inputs: [
+        { q: "Your friend Rosa has gone quiet for two months. No news, no reason.", a: "\"I've noticed we haven't spoken in a while, and I miss you. Is everything okay?\" [Name the Pattern Kindly]", bundle: 'pro', guideBack: "An observation and a caring question" },
+        { q: "Your friend Felix moved in with his partner across town, and Thursday squash has stopped.", a: "\"I know Thursdays are harder from your new place. Would Sunday mornings work better?\" [Make Room for Their Change]", bundle: 'pro', guideBack: "An offer that fits their life now" },
+        { q: "A friend from your old band wants to start practising again every week. You've lost interest.", a: "\"I don't think I'll play again, but I loved those years with you. Come to the pub with us sometime.\" [Let It Ease Off Kindly]", bundle: 'pro', guideBack: "A warm step back, door left open" },
+        { q: "Your friend Maja has had a baby. She says, \"Sorry I'm so useless at replying now.\"", a: "\"You're not useless — you've got a baby! Can I drop by with coffee one morning?\" [Make Room for Their Change]", bundle: 'pro', guideBack: "An offer that fits their life now" },
+        { q: "Your friend has said \"maybe\" to your last five invitations and come to none.", a: "\"I've noticed the maybes have been piling up. Is now a hard time, or is it the plans?\" [Name the Pattern Kindly]", bundle: 'pro', guideBack: "An observation and a caring question" },
+        { q: "An old colleague keeps inviting you to his long weekend dinners. You've grown apart and you'd rather not go.", a: "\"I'll pass on the dinners, but thank you for always asking. I hope you're doing well.\" [Let It Ease Off Kindly]", bundle: 'pro', guideBack: "A warm step back, door left open" },
+        { q: "Your friend has started a night-shift job and can only meet at odd hours.", a: "\"With your shifts, how about breakfast after you finish one day?\" [Make Room for Their Change]", bundle: 'pro', guideBack: "An offer that fits their life now" },
+        { q: "Your friend asks why you haven't been to the Sunday brunches lately. You've drifted from that group.", a: "\"I think I've drifted from brunch a bit. It's not about you — let's still meet, just the two of us.\" [Let It Ease Off Kindly]", bundle: 'pro', guideBack: "A warm step back, door left open" },
+      ]
+    },
+    {
+      name: "All Five Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, the way hard moments in a friendship really arrive — with no warning which one you are in.\n\nThe five fall into two groups. For something that hurt: **Say You Felt Left Out**, **Say the Small Hurt Early** and **Name the Pattern Kindly**. For a friendship that is changing: **Make Room for Their Change** and **Let It Ease Off Kindly**.\n\nIf you are unsure, ask what you want from this friendship now: more of it, a new shape of it, or less of it?\n\nThe usual wrong choice is saying nothing at all, and slowly pulling away instead.\n\nMindset: whatever you choose, say it kindly and say it out loud.",
+      inputs: [
+        { q: "Your running group did a Sunday trail run and posted the photos. Nobody told you about it.", a: "\"The trail run looked amazing. I'd have loved to come — count me in next time?\" [Say You Felt Left Out]", bundle: 'pro', guideBack: "A wish to be included, not a complaint" },
+        { q: "Your friend has cancelled your monthly dinner three times in a row, always at the last minute.", a: "\"That's three months now, and I've noticed. Is something going on?\" [Name the Pattern Kindly]", bundle: 'pro', guideBack: "An observation and a caring question" },
+        { q: "Your friend joked, \"Who'd hire you, though?\" when you mentioned a job you applied for.", a: "\"That one stung a bit, honestly. I really want this job.\" [Say the Small Hurt Early]", bundle: 'pro', guideBack: "A light, honest statement" },
+        { q: "Your friend Leila has a new partner and has turned down three invitations.", a: "\"I know your weekends are full now. Would a weekday lunch work better?\" [Make Room for Their Change]", bundle: 'pro', guideBack: "An offer that fits their life now" },
+        { q: "A friend from school wants to meet every week. You'd like it to be much less.", a: "\"Every week is too much for me now, but I'm always glad to see you. Let's do it every couple of months.\" [Let It Ease Off Kindly]", bundle: 'pro', guideBack: "A warm step back, door left open" },
+        { q: "Your neighbour friend is suddenly caring for her dad and can't do your evening walks.", a: "\"I know your evenings belong to your dad now. Can I walk with you to the shop on Saturday instead?\" [Make Room for Their Change]", bundle: 'pro', guideBack: "An offer that fits their life now" },
+        { q: "Your friend Viktor told the group a story you'd asked him to keep to himself.", a: "\"I'd rather that story had stayed between us. It's small, but I wanted you to know.\" [Say the Small Hurt Early]", bundle: 'pro', guideBack: "A light, honest statement" },
+        { q: "Your friend replies to your messages with one word, and has done for months.", a: "\"I've noticed our messages have got really short. Is everything okay with you?\" [Name the Pattern Kindly]", bundle: 'pro', guideBack: "An observation and a caring question" },
+      ]
+    },
+  ],
+  namesandintroductions: [
+    {
+      name: "Catch the Name",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Say Your Name Clearly**, **Use Their Name Once** and **Ask Again Early** — three strategies for the first minute of meeting someone, while the names are still new.\n\n• **Say Your Name Clearly** — it is your name that needs to land\n• **Use Their Name Once** — you heard their name, and you want to keep it\n• **Ask Again Early** — you missed their name, or only half heard it\n\nThe question that decides it: whose name is at risk right now — mine, or theirs? If it is yours, say it slowly. If you heard theirs, say it back. If you missed it, ask now.\n\nThe usual wrong choice is nodding and smiling past a name you missed. It saves two seconds and costs the whole evening.\n\nMindset: the first minute is when names are easy. Spend it on them.",
+      inputs: [
+        { q: "At a friend's birthday, a woman says, \"Hi, I'm Femi.\"", a: "\"Femi — lovely to meet you. How do you know Jo?\" [Use Their Name Once]", bundle: 'pro', guideBack: "A greeting with their name in it" },
+        { q: "A new colleague asks your name, and people often get it wrong.", a: "\"I'm Oluwaseun — Seun is fine. It sounds like 'SHEH-oon'.\" [Say Your Name Clearly]", bundle: 'pro', guideBack: "Your name, with a memory aid" },
+        { q: "At a busy café, the person sharing your table tells you a name you do not catch.", a: "\"Sorry — it's noisy in here. What was your name?\" [Ask Again Early]", bundle: 'pro', guideBack: "A quick, light question" },
+        { q: "At the school gate, a dad says, \"I'm Pedro, Sofia's dad.\"", a: "\"Hi, Pedro. Sofia talks about your dog all the time.\" [Use Their Name Once]", bundle: 'pro', guideBack: "A greeting with their name in it" },
+        { q: "At a party, someone says their name while you are taking off your coat.", a: "\"Sorry, I was fighting with my coat — say your name once more?\" [Ask Again Early]", bundle: 'pro', guideBack: "A quick, light question" },
+        { q: "You meet your new team leader, and your name has an unusual spelling.", a: "\"I'm Kristoffer — two Fs. Good to meet you.\" [Say Your Name Clearly]", bundle: 'pro', guideBack: "Your name, with a memory aid" },
+        { q: "At a climbing club, someone tells you their name is Niamh, and you are not sure how to say it.", a: "\"Niamh — is it 'Neev'? Did I get that right?\" [Use Their Name Once]", bundle: 'pro', guideBack: "A greeting with their name in it" },
+        { q: "At the gym, a trainer says a name you only half heard.", a: "\"Was that Jana or Hana?\" [Ask Again Early]", bundle: 'pro', guideBack: "A quick, light question" },
+      ]
+    },
+    {
+      name: "Rescue the Name",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Ask Again Early**, **Own the Forgotten Name** and **Get Them to Say It** — three strategies for when you do not have the name you need.\n\n• **Ask Again Early** — you only just heard it, so asking is still easy\n• **Own the Forgotten Name** — it has been a while, and you need to say so\n• **Get Them to Say It** — someone else is there, so an introduction can bring it out\n\nThe question that decides it: when did I hear it, and who else is here? A minute ago means ask. Long ago, and just the two of you, means own it. A third person means let them say it.\n\nThe usual wrong choice is pretending. It feels safe, but it lasts for months and gets harder every time.\n\nMindset: there is always a way to get the name back. Hiding is the only one that never works.",
+      inputs: [
+        { q: "A minute after meeting someone at a party, you realise you missed their name.", a: "\"Sorry, I didn't catch your name before — what was it?\" [Ask Again Early]", bundle: 'pro', guideBack: "A quick, light question" },
+        { q: "A neighbour you have known for a year says hello, and her name is gone.", a: "\"I'm so sorry, I've lost your name. I know you're the one with the lovely garden.\" [Own the Forgotten Name]", bundle: 'pro', guideBack: "An honest, light admission" },
+        { q: "Your brother joins you while you talk to a man whose name you cannot remember.", a: "\"Have you two met before?\" [Get Them to Say It]", bundle: 'pro', guideBack: "A prompt that brings their name out" },
+        { q: "At work, a colleague from another team says, \"Hi again!\" and you cannot remember her name.", a: "\"Hi! Remind me of your name? I know we did the training day together.\" [Own the Forgotten Name]", bundle: 'pro', guideBack: "An honest, light admission" },
+        { q: "At a dinner party, your friend arrives, and you have forgotten the name of the woman beside you.", a: "\"Kim! Come and say hello to my new neighbour at the table.\" [Get Them to Say It]", bundle: 'pro', guideBack: "A prompt that brings their name out" },
+        { q: "The host says three names quickly, and you only caught two of them.", a: "\"Sorry — Ana, Rui, and…? I missed the last one.\" [Ask Again Early]", bundle: 'pro', guideBack: "A quick, light question" },
+        { q: "Someone at your running club says, \"Great to see you, Tom!\" and you cannot remember their name.", a: "\"Great to see you too — and I'm sorry, your name has slipped. I remember the marathon story!\" [Own the Forgotten Name]", bundle: 'pro', guideBack: "An honest, light admission" },
+        { q: "At a party, your partner walks up while you talk to someone whose name has gone.", a: "\"This is my partner, Sam.\" [Get Them to Say It]", bundle: 'pro', guideBack: "A prompt that brings their name out" },
+      ]
+    },
+    {
+      name: "All Six Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order real name moments arrive — with no warning about which one is coming.\n\nThe six fall into three groups. For the first minute: **Say Your Name Clearly**, **Use Their Name Once** and **Ask Again Early**. For a name you have lost: **Own the Forgotten Name** and **Get Them to Say It**. For bringing two people together: **Introduce With a Hook**.\n\nIf you are unsure, ask: whose name is it, and do I have it right now?\n\nThe usual wrong choice is saying nothing at all — no name back, no question, no introduction.\n\nMindset: any of the six is better than a smile and silence.",
+      inputs: [
+        { q: "At a book club, a new member says, \"I'm Hamid.\"", a: "\"Hamid, welcome. Did you manage to finish it?\" [Use Their Name Once]", bundle: 'pro', guideBack: "A greeting with their name in it" },
+        { q: "At a wedding, an older guest asks your name and leans in to hear.", a: "\"It's Ingrid — I-N-G-R-I-D. Very nice to meet you.\" [Say Your Name Clearly]", bundle: 'pro', guideBack: "Your name, with a memory aid" },
+        { q: "Your new manager says a name you do not catch in the noise of the office.", a: "\"Sorry, what was your name again? The printer was louder than you.\" [Ask Again Early]", bundle: 'pro', guideBack: "A quick, light question" },
+        { q: "At the school gate, a dad you have spoken to every week for a month says hi.", a: "\"Hi! I'm sorry — I've forgotten your name. I know you coach the Saturday football.\" [Own the Forgotten Name]", bundle: 'pro', guideBack: "An honest, light admission" },
+        { q: "At your party, your sister and your colleague are both standing alone by the window.", a: "\"Hanna, this is Marek. You both just came back from Lisbon.\" [Introduce With a Hook]", bundle: 'pro', guideBack: "An introduction with a topic" },
+        { q: "Your friend joins you while you talk to someone whose name you have lost.", a: "\"Oh good — do you two know each other?\" [Get Them to Say It]", bundle: 'pro', guideBack: "A prompt that brings their name out" },
+        { q: "A new neighbour says, \"I'm Yusuf, from upstairs.\"", a: "\"Good to meet you, Yusuf. Shout if the piano is too loud.\" [Use Their Name Once]", bundle: 'pro', guideBack: "A greeting with their name in it" },
+        { q: "At a networking event, your old classmate and a new contact both work with schools.", a: "\"Chloe, this is Raj. You both build apps for teachers.\" [Introduce With a Hook]", bundle: 'pro', guideBack: "An introduction with a topic" },
+      ]
+    },
+  ],
+  phonecalls: [
+    {
+      name: "Get the Details Right",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**One Thing at a Time**, **Say It Back** and **Ask for the Next Step** — three strategies for the middle and end of a call, when the job is to leave with information you can trust.\n\n• **One Thing at a Time** — you still need an answer, or one got lost\n• **Say It Back** — you have the answer, but a time, name or number could be wrong\n• **Ask for the Next Step** — the call is ending and nobody has said what happens now\n\nThe question that decides it: what am I missing — an answer, certainty, or a when?\n\nThe usual wrong choice is asking another question when what you need is to check the answer you already have. A new question piles on; a read-back makes sure.\n\nMindset: you are allowed to slow the call down. It is your call too.",
+      inputs: [
+        { q: "You asked about the price and the opening hours, and only got the hours.", a: "\"Thanks. Just going back to the price — how much is it?\" [One Thing at a Time]", bundle: 'pro', guideBack: "A single, short question" },
+        { q: "The receptionist says, \"Wednesday the 3rd at four forty.\"", a: "\"So that's Wednesday the 3rd, twenty to five. Great.\" [Say It Back]", bundle: 'pro', guideBack: "A read-back of the details" },
+        { q: "The landlord says, \"Leave it with me.\"", a: "\"Thanks. When do you think you'll know?\" [Ask for the Next Step]", bundle: 'pro', guideBack: "A question about what comes after" },
+        { q: "You call a removal company with four questions written down.", a: "\"I've got a few questions. First, are you free on the 20th?\" [One Thing at a Time]", bundle: 'pro', guideBack: "A single, short question" },
+        { q: "The bank gives you a reference number on a noisy line.", a: "\"Let me read that back: 5 5 0 2 9?\" [Say It Back]", bundle: 'pro', guideBack: "A read-back of the details" },
+        { q: "The doctor's receptionist says the test results will be sent on.", a: "\"Will they come by post, or should I call in for them?\" [Ask for the Next Step]", bundle: 'pro', guideBack: "A question about what comes after" },
+        { q: "The restaurant takes the booking under a name you did not quite hear.", a: "\"Just to check — did you put it under Saleh, S-A-L-E-H?\" [Say It Back]", bundle: 'pro', guideBack: "A read-back of the details" },
+        { q: "The insurance agent is answering fast, and you have lost the thread.", a: "\"Sorry, can we go one at a time? Is the window covered?\" [One Thing at a Time]", bundle: 'pro', guideBack: "A single, short question" },
+      ]
+    },
+    {
+      name: "Start and Finish Well",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Who and Why**, **The Clear Voicemail** and **Close the Call** — three strategies for the edges of a call, where most of the nerves are.\n\n• **Who and Why** — someone has just picked up, and they do not know who you are yet\n• **The Clear Voicemail** — nobody picked up, and you hear the beep\n• **Close the Call** — you have what you need, and the call needs an ending\n\nThe question that decides it: who is on the line — a person who just answered, a recording, or a person you are done with?\n\nThe usual wrong choice is treating a voicemail like a live call: chatting, explaining, and hanging up without saying the number twice.\n\nMindset: the edges of a call are the parts you can plan. Plan them.",
+      inputs: [
+        { q: "The salon picks up: \"Hello, Hair by the Square.\"", a: "\"Hi, my name's Maja Ek. I'd like to book a cut and colour.\" [Who and Why]", bundle: 'pro', guideBack: "Your name and reason, up front" },
+        { q: "The vet's phone rings out, and then you hear a beep.", a: "\"Hi, this is Tom Reed on 070-312 88 41, about my cat's check-up. Again, 070-312 88 41.\" [The Clear Voicemail]", bundle: 'pro', guideBack: "A message they can act on" },
+        { q: "You have booked the table, and there is a pause.", a: "\"Great, that's everything. Thanks — bye.\" [Close the Call]", bundle: 'pro', guideBack: "A thank-you and a goodbye" },
+        { q: "A stranger answers the number from a sofa you saw for sale.", a: "\"Hi, my name's Anna Novak. I'm calling about the sofa you're selling.\" [Who and Why]", bundle: 'pro', guideBack: "Your name and reason, up front" },
+        { q: "The insurance company's voicemail asks you to leave a message.", a: "\"Hi, it's Leila Karimi, claim number 88 214, on 073-219 40 06. Again, 073-219 40 06.\" [The Clear Voicemail]", bundle: 'pro', guideBack: "A message they can act on" },
+        { q: "The garage owner keeps chatting after the booking is done.", a: "\"I'll let you get on. Thanks for your help — see you Tuesday.\" [Close the Call]", bundle: 'pro', guideBack: "A thank-you and a goodbye" },
+        { q: "You are returning a call, and a voice says, \"Reception, how can I help?\"", a: "\"Hi, it's Jonas Holm. I had a missed call from this number this morning.\" [Who and Why]", bundle: 'pro', guideBack: "Your name and reason, up front" },
+        { q: "You have sorted out your son's sick day with the school office.", a: "\"Thanks very much. He'll be back on Thursday. Bye.\" [Close the Call]", bundle: 'pro', guideBack: "A thank-you and a goodbye" },
+      ]
+    },
+    {
+      name: "All Six Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order real calls throw them at you — with no warning about which part of the call you are in.\n\nThe six follow the shape of a call. **Who and Why** opens it. **One Thing at a Time** and **Say It Back** carry the middle. **Ask for the Next Step** and **Close the Call** end it. **The Clear Voicemail** is for when nobody picks up.\n\nIf you are unsure, ask where you are in the call: the start, the middle, the end — or the beep.\n\nThe usual wrong choice is rushing to the end — saying \"okay, great, bye\" before you have checked the details or asked what happens now.\n\nMindset: a call is short. Six small strategies cover almost all of it.",
+      inputs: [
+        { q: "You call the council about a broken streetlight.", a: "\"Hi, my name's Erik Dahl. I'm calling to report a broken streetlight on Birch Road.\" [Who and Why]", bundle: 'pro', guideBack: "Your name and reason, up front" },
+        { q: "You call a dog groomer and want to ask about dates, prices and what to bring.", a: "\"First, do you have anything next week for a small dog?\" [One Thing at a Time]", bundle: 'pro', guideBack: "A single, short question" },
+        { q: "The optician says, \"Monday the 9th at eight thirty.\"", a: "\"So Monday the 9th, half past eight. Lovely.\" [Say It Back]", bundle: 'pro', guideBack: "A read-back of the details" },
+        { q: "You call about a part-time job at a café, and it goes to voicemail.", a: "\"Hi, it's Chloe Martin on 072-410 33 90, about the weekend job. Again, 072-410 33 90.\" [The Clear Voicemail]", bundle: 'pro', guideBack: "A message they can act on" },
+        { q: "The customer service agent says, \"I've made a note of it.\"", a: "\"Thanks. What happens next — will someone get back to me?\" [Ask for the Next Step]", bundle: 'pro', guideBack: "A question about what comes after" },
+        { q: "The plumber has agreed to come on Thursday, and you are both saying \"okay\" again.", a: "\"Great, Thursday it is. Thanks — bye.\" [Close the Call]", bundle: 'pro', guideBack: "A thank-you and a goodbye" },
+        { q: "A recruiter calls you back, and you did not catch her name.", a: "\"Sorry, could I take your name again? Was it Sara Lund?\" [Say It Back]", bundle: 'pro', guideBack: "A read-back of the details" },
+        { q: "The housing office says your request will go to a meeting.", a: "\"When is the meeting, and when will I hear?\" [Ask for the Next Step]", bundle: 'pro', guideBack: "A question about what comes after" },
+      ]
+    },
+  ],
+  whensomeoneishurting1: [
+    {
+      name: "Words or Help",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Say It Simply**, **Ask What They Want** and **Offer Something Specific** — the first thing you say after hard news, and whether it should be words, a choice, or a hand.\n\n• **Say It Simply** — you have only just heard, and nothing has been said yet\n• **Ask What They Want** — you have said sorry, and you cannot tell what would help\n• **Offer Something Specific** — there is a clear practical job you could take off them\n\nThe question that decides it: what do they need from me in the next minute — to hear that I care, to choose, or one less thing to do?\n\nThe usual wrong choice is jumping to the offer before the sorry. Help with no words in front of it can sound as if you want the conversation over.\n\nMindset: words first, then help, and when in doubt, ask.",
+      inputs: [
+        { q: "Your friend Amir tells you, out of nowhere, that his mum has had a stroke and is in hospital.", a: "\"Oh, Amir. I'm so sorry. That's frightening.\" [Say It Simply]", bundle: 'pro', guideBack: "A short, honest sorry" },
+        { q: "Your colleague Grace spends every evening at the hospital with her husband, and still comes to work in the mornings.", a: "\"I'll take your Thursday calls this week, so you can leave early.\" [Offer Something Specific]", bundle: 'pro', guideBack: "An offer they can say yes to" },
+        { q: "Your cousin's flat flooded last night, and she is staying with her in-laws. You have already said how sorry you are.", a: "\"Do you want help with the clean-up, or just someone to moan to tonight?\" [Ask What They Want]", bundle: 'pro', guideBack: "A question with a real choice" },
+        { q: "Your neighbour Bill tells you his wife has moved into a care home.", a: "\"I'm so sorry, Bill. That's a big change.\" [Say It Simply]", bundle: 'pro', guideBack: "A short, honest sorry" },
+        { q: "Your friend Hanna's father has dementia, and she drives to see him every weekend.", a: "\"I'll walk your dog on Saturdays while you're at your dad's.\" [Offer Something Specific]", bundle: 'pro', guideBack: "An offer they can say yes to" },
+        { q: "Your manager has told the team her mother died, and that she'll be off next week. You catch her alone afterwards.", a: "\"Do you want people to know more, or keep it quiet for now?\" [Ask What They Want]", bundle: 'pro', guideBack: "A question with a real choice" },
+        { q: "Your flatmate Ali comes home and says his six-year relationship ended tonight.", a: "\"Oh, Ali. I'm really sorry. That's horrible.\" [Say It Simply]", bundle: 'pro', guideBack: "A short, honest sorry" },
+        { q: "Your friend Ben's father is in a hospital an hour away, and Ben doesn't have a car.", a: "\"I'll drive you on Wednesday. I'm free from two.\" [Offer Something Specific]", bundle: 'pro', guideBack: "An offer they can say yes to" },
+      ]
+    },
+    {
+      name: "Stay in the Room",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Say Their Name**, **Ask What They Want** and **Stay With It** — for the moment after the first sorry, when they say something back and you have to keep the conversation open.\n\n• **Say Their Name** — they are talking around the person, or around what was lost\n• **Ask What They Want** — they go quiet, and you cannot tell if they want to go on\n• **Stay With It** — they say something painful, and you feel the urge to fix it\n\nThe question that decides it: are they avoiding the name, waiting to see what I want, or telling me how it feels?\n\nThe usual wrong choice is answering a painful sentence with a fix — \"at least\", \"you'll find someone\", \"he's in a better place\". It closes the very door they just opened.\n\nMindset: you do not have to lead. Keep the door open, and let them walk through it.",
+      inputs: [
+        { q: "Your aunt keeps saying \"since it happened\" and never says your uncle Erik's name.", a: "\"Tell me about Erik. I'd love to hear about him.\" [Say Their Name]", bundle: 'pro', guideBack: "A sorry with a name in it" },
+        { q: "Your friend Clara's dad died on Sunday. She says, \"Everyone keeps telling me he's in a better place.\"", a: "\"You don't have to feel that. You can just miss him.\" [Stay With It]", bundle: 'pro', guideBack: "A quiet line, with no advice" },
+        { q: "A colleague tells you his marriage is over, then goes quiet and stares at his screen.", a: "\"Do you want to talk, or would you rather I just sat here for a bit?\" [Ask What They Want]", bundle: 'pro', guideBack: "A question with a real choice" },
+        { q: "Your teammate Jamal's brother Sami died. People at the club only say \"your brother\".", a: "\"I'm so sorry about Sami. He came to every single match.\" [Say Their Name]", bundle: 'pro', guideBack: "A sorry with a name in it" },
+        { q: "Your friend's mother has dementia. Your friend says, \"She didn't know who I was today.\"", a: "\"Oh, that must have been so hard to hear. I'm here.\" [Stay With It]", bundle: 'pro', guideBack: "A quiet line, with no advice" },
+        { q: "Your son's friend, 13, says his parents are splitting up, then shrugs.", a: "\"Do you want to talk about it, or shall we just carry on with the game?\" [Ask What They Want]", bundle: 'pro', guideBack: "A question with a real choice" },
+        { q: "At the funeral, your grandmother's friend Margit says, \"Everyone is avoiding saying Olle's name.\"", a: "\"Olle was so kind to me when I was little.\" [Say Their Name]", bundle: 'pro', guideBack: "A sorry with a name in it" },
+        { q: "A coworker with a new cancer diagnosis says, \"I just want one day where nobody looks at me like that.\"", a: "\"Would you like me to just talk about normal stuff today?\" [Ask What They Want]", bundle: 'pro', guideBack: "A question with a real choice" },
+      ]
+    },
+    {
+      name: "All Five Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, with no hint about what kind of news is coming next.\n\n**Say It Simply** says sorry. **Say Their Name** names who or what was lost. **Ask What They Want** lets them choose. **Offer Something Specific** takes a job off them. **Stay With It** stays with what they feel, without fixing it.\n\nIf you are unsure, start with the sorry, add the name if you know it, and then let them steer: ask, offer, or simply stay.\n\nThe usual wrong choice is reaching for the clever sentence, the one that explains or makes it smaller. It is never needed, and it is the one they remember.\n\nMindset: simple and warm beats wise and polished.",
+      inputs: [
+        { q: "A colleague says her dog died at the weekend, then laughs: \"Silly to be this upset.\"", a: "\"It's not silly at all. You loved her.\" [Stay With It]", bundle: 'pro', guideBack: "A quiet line, with no advice" },
+        { q: "Your old schoolfriend's grandfather Gustav, who ran the corner shop you both grew up in, has died.", a: "\"I'm so sorry about Gustav. That shop was half our childhood.\" [Say Their Name]", bundle: 'pro', guideBack: "A sorry with a name in it" },
+        { q: "Your brother tells you he didn't get into the course he applied for twice.", a: "\"Oh, I'm sorry. That's really disappointing.\" [Say It Simply]", bundle: 'pro', guideBack: "A short, honest sorry" },
+        { q: "Your friend's wife is in hospital for a month, and he has two small kids at home.", a: "\"I'll have the kids after school on Monday and Wednesday.\" [Offer Something Specific]", bundle: 'pro', guideBack: "An offer they can say yes to" },
+        { q: "After class, a student tells you her father has lost his job and the family may have to move.", a: "\"Thank you for telling me. Do you want to talk about it, or just know that I know?\" [Ask What They Want]", bundle: 'pro', guideBack: "A question with a real choice" },
+        { q: "Your friend says, \"I should have seen that he was going to leave.\"", a: "\"That's a hard thought to carry. I'm listening.\" [Stay With It]", bundle: 'pro', guideBack: "A quiet line, with no advice" },
+        { q: "Your colleague goes into hospital for an operation next week, and she's worried about her cat.", a: "\"I'll feed your cat while you're in. Leave me the key on Friday.\" [Offer Something Specific]", bundle: 'pro', guideBack: "An offer they can say yes to" },
+        { q: "Your friend's house sale fell through, the day before they were meant to move.", a: "\"Oh no. I'm so sorry. After all that work.\" [Say It Simply]", bundle: 'pro', guideBack: "A short, honest sorry" },
+      ]
+    },
+  ],
+  whensomeoneishurting2: [
+    {
+      name: "Keep Showing Up",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Check In Later**, **Remember the Date** and **Talk About Them** — three ways to stay close in the weeks after, when nothing has gone wrong and you simply want to be there.\n\n• **Check In Later** — an ordinary day, weeks on: ask again, and mean it\n• **Remember the Date** — a day that will hurt: say you know what it is\n• **Talk About Them** — the person they lost comes up: say the name and a memory\n\nThe question that decides it: what kind of day is this? An ordinary one calls for a question. A marked one calls for the date. A moment when the person comes to mind calls for the person.\n\nThe usual wrong choice is saying nothing at all, waiting for a better moment that never comes.\n\nMindset: showing up again is the whole of it. You do not need the perfect words.",
+      inputs: [
+        { q: "Your friend Karin's mother died seven weeks ago. You are meeting her for lunch for the first time since the funeral.", a: "\"It's been nearly two months. How are you really?\" [Check In Later]", bundle: 'pro', guideBack: "A fresh, open question" },
+        { q: "Tomorrow is the first Mother's Day since Karin's mum died.", a: "\"I know tomorrow's Mother's Day. I'm thinking of you and your mum.\" [Remember the Date]", bundle: 'pro', guideBack: "A short word that marks the day" },
+        { q: "Your colleague's father died in the spring. She mentions the vegetable garden he left behind.", a: "\"He grew those huge tomatoes, didn't he? You brought some in once.\" [Talk About Them]", bundle: 'pro', guideBack: "A memory, said out loud" },
+        { q: "Your neighbour's partner died in March. It is June, and you have not spoken since the funeral.", a: "\"I haven't asked in a while. How are you getting on now?\" [Check In Later]", bundle: 'pro', guideBack: "A fresh, open question" },
+        { q: "A year ago this week, your friend's old dog Rufus died.", a: "\"It's a year since Rufus this week. I still miss him at the door.\" [Remember the Date]", bundle: 'pro', guideBack: "A short word that marks the day" },
+        { q: "Your grandfather died in the autumn. Your brother has not mentioned him since.", a: "\"I made Granddad's pancakes this morning. Nowhere near as good as his.\" [Talk About Them]", bundle: 'pro', guideBack: "A memory, said out loud" },
+        { q: "Your friend lost her job two months ago. Everyone else has stopped asking about it.", a: "\"Everyone's gone quiet, so I'm asking. How are you finding it all now?\" [Check In Later]", bundle: 'pro', guideBack: "A fresh, open question" },
+        { q: "Your manager's wife died last year. Today would have been their wedding anniversary.", a: "\"I know today was your anniversary. I'm sorry she isn't here for it.\" [Remember the Date]", bundle: 'pro', guideBack: "A short word that marks the day" },
+      ]
+    },
+    {
+      name: "Keep It About Them",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Mend a Clumsy Word**, **Comfort In, Complain Out** and **Check In Later** — three ways back when something of yours has got in the way of your support.\n\n• **Mend a Clumsy Word** — your words got in the way: go back, own it briefly, hand it back\n• **Comfort In, Complain Out** — your feelings are getting in the way: comfort them, vent elsewhere\n• **Check In Later** — your silence got in the way: ask again, now\n\nThe question that decides it: what of mine is in the way — something I said, something I feel, or something I didn't do?\n\nThe usual wrong choice is a long apology or explanation, which ends with them comforting you.\n\nMindset: whatever you fix, finish by turning the attention back to them.",
+      inputs: [
+        { q: "Last week, you told your friend her mother was \"in a better place.\" She went quiet.", a: "\"I said she's in a better place. That wasn't mine to say. I'm sorry.\" [Mend a Clumsy Word]", bundle: 'pro', guideBack: "A short apology, then their turn" },
+        { q: "Your friend's father died five weeks ago. She asks if you are alright, because you look tired.", a: "\"Just a long week. Nothing like yours. How are you?\" [Comfort In, Complain Out]", bundle: 'pro', guideBack: "Comfort for them, or a vent outward" },
+        { q: "Your colleague's sister died a month ago. You have not said a word to her since the funeral.", a: "\"I've been quiet since the funeral, and I'm sorry. How are you doing now?\" [Check In Later]", bundle: 'pro', guideBack: "A fresh, open question" },
+        { q: "You sent flowers when your friend's mother died, and she never mentioned them. You are telling your partner about it.", a: "\"I'm a bit hurt she didn't mention the flowers. I'm saying it to you, not to her.\" [Comfort In, Complain Out]", bundle: 'pro', guideBack: "Comfort for them, or a vent outward" },
+        { q: "Your cousin's divorce was two months ago. She tells you your joke about her \"freedom\" hurt.", a: "\"That joke was thoughtless, and I'm sorry. You didn't need that.\" [Mend a Clumsy Word]", bundle: 'pro', guideBack: "A short apology, then their turn" },
+        { q: "Your friend's husband has been in hospital for weeks. You are scared too, and she is on the phone.", a: "\"I'm scared too, but I've got people to lean on. What do you need from me?\" [Comfort In, Complain Out]", bundle: 'pro', guideBack: "Comfort for them, or a vent outward" },
+        { q: "Your neighbour's wife died last autumn. It is spring, and you are not sure he wants to be asked.", a: "\"I hope you don't mind me asking. How have the last few months been?\" [Check In Later]", bundle: 'pro', guideBack: "A fresh, open question" },
+        { q: "Over coffee, two months after her father died, you realise you have talked about your own father's death for most of an hour.", a: "\"I've talked about my dad for most of this. Sorry. I'd like to hear about yours.\" [Mend a Clumsy Word]", bundle: 'pro', guideBack: "A short apology, then their turn" },
+      ]
+    },
+    {
+      name: "All Five Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order the weeks after really bring them — with no warning about which moment is coming.\n\n• **Check In Later** · **Remember the Date** · **Talk About Them** — staying close as time passes\n• **Mend a Clumsy Word** — putting right something you said or didn't say\n• **Comfort In, Complain Out** — keeping your own feelings flowing the right way\n\nIf you are unsure, ask what the moment needs: a question, the date, the person, an apology, or for you to step back.\n\nThe usual wrong choice is waiting for a better moment. In grief, the late word is still better than none.\n\nMindset: you will not always pick the right one. Picking one is what matters.",
+      inputs: [
+        { q: "Your colleague Hannah's husband died ten weeks ago. People ask her about work, never about her.", a: "\"Not about work. How are you doing, ten weeks on?\" [Check In Later]", bundle: 'pro', guideBack: "A fresh, open question" },
+        { q: "On Sunday, your friend Erik has his first Father's Day since his dad died.", a: "\"Sunday's going to be hard. I'll be thinking of you and your dad.\" [Remember the Date]", bundle: 'pro', guideBack: "A short word that marks the day" },
+        { q: "At a barbecue, four months after your friend's mother died, her potato salad recipe is on the table.", a: "\"Is this your mum's potato salad? She made it for every party.\" [Talk About Them]", bundle: 'pro', guideBack: "A memory, said out loud" },
+        { q: "Two weeks ago, after his dog died, you told your teenage nephew, \"You'll get over it.\"", a: "\"I said you'd get over it. That was wrong of me. Max was your best mate.\" [Mend a Clumsy Word]", bundle: 'pro', guideBack: "A short apology, then their turn" },
+        { q: "Your sister's son has been in hospital for a month. You are sad too, and she asks how you are.", a: "\"I'm alright. It's you and Sam I'm thinking about. How was today?\" [Comfort In, Complain Out]", bundle: 'pro', guideBack: "Comfort for them, or a vent outward" },
+        { q: "Supporting your friend Lisa since her diagnosis has worn you out. You are home with your partner.", a: "\"I need to let off steam about how hard it is to help Lisa. Can I, for ten minutes?\" [Comfort In, Complain Out]", bundle: 'pro', guideBack: "Comfort for them, or a vent outward" },
+        { q: "Your friend lost her job three months ago and posts cheerful things online.", a: "\"Your posts look cheerful. How are you, away from the screen?\" [Check In Later]", bundle: 'pro', guideBack: "A fresh, open question" },
+        { q: "Your neighbour's husband Roger died in the winter. She mentions she still puts out two mugs in the morning.", a: "\"Roger and his strong tea. I can still see him on the bench with that mug.\" [Talk About Them]", bundle: 'pro', guideBack: "A memory, said out loud" },
+      ]
+    },
+  ],
+  speakingupasacustomer: [
+    {
+      name: "Open the Complaint",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Say What Went Wrong**, **Say What You Want** and **Friendly and Firm** — the three parts of a good opening, and the choice of which one is still missing.\n\n• **Say What Went Wrong** — they do not know the problem yet, or only half of it\n• **Say What You Want** — they know the problem, but not the fix you need\n• **Friendly and Firm** — the facts are clear, but the tone is about to tip one way or the other\n\nThe question that decides it: what is missing from what you have said so far — the fact, the fix, or the warmth?\n\nThe usual wrong choice is stopping after the problem and waiting. They hear what went wrong and offer the smallest fix they can.\n\nMindset: a good complaint is short. Fact, fix, and a kind word for the person.",
+      inputs: [
+        { q: "You walk up to the counter at a shoe shop with a pair whose sole has come loose.", a: "\"Hi. I bought these three weeks ago, and the sole is already coming off.\" [Say What Went Wrong]", bundle: 'pro', guideBack: "A plain fact, no blame" },
+        { q: "You have explained that the washing machine you ordered arrived with a dent. The man on the phone says, \"Oh dear. Sorry about that.\"", a: "\"Thanks. I'd like a new one delivered, and this one collected.\" [Say What You Want]", bundle: 'pro', guideBack: "A concrete request" },
+        { q: "The young waiter goes red when you say the steak is raw in the middle.", a: "\"Honestly, these things happen. I'd just like it cooked a bit longer, please.\" [Friendly and Firm]", bundle: 'pro', guideBack: "A warm line, then the need" },
+        { q: "You ring your landlord because the front-door lock is broken.", a: "\"Hi, it's Omar in flat 2. The front-door lock broke this morning, and the door won't close.\" [Say What Went Wrong]", bundle: 'pro', guideBack: "A plain fact, no blame" },
+        { q: "You have told the hairdresser the colour came out orange. She says, \"I'm so sorry. What can I do?\"", a: "\"Could you redo it this week, at no extra cost?\" [Say What You Want]", bundle: 'pro', guideBack: "A concrete request" },
+        { q: "The gym receptionist says, \"I really don't know anything about payments, sorry.\"", a: "\"That's okay, it's not your job. I still need to get April's money back.\" [Friendly and Firm]", bundle: 'pro', guideBack: "A warm line, then the need" },
+        { q: "Your train-ticket refund from Railhop has not arrived, and you start a phone call.", a: "\"Hi. My train was cancelled on the 3rd, and the refund still hasn't come.\" [Say What Went Wrong]", bundle: 'pro', guideBack: "A plain fact, no blame" },
+        { q: "The garage has found the cause of the squeak and asks how you want to handle it.", a: "\"Since I paid for brakes last week, I'd like this done without a new charge.\" [Say What You Want]", bundle: 'pro', guideBack: "A concrete request" },
+      ]
+    },
+    {
+      name: "Get It Sorted",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Repeat the Request**, **Ask Who Can Help** and **Confirm the Fix** — three strategies for after you have asked, depending on the answer you got back.\n\n• **Repeat the Request** — they said no, or offered something else\n• **Ask Who Can Help** — they said they cannot, rather than will not\n• **Confirm the Fix** — they said yes, and it needs to stay a yes\n\nThe question that decides it: what did they just say — no, can't, or yes?\n\nThe usual wrong choice is arguing with \"can't\". The person who is not allowed to say yes cannot be talked into it, however good your case is.\n\nMindset: listen to their answer. It tells you which strategy comes next.",
+      inputs: [
+        { q: "You asked for a refund on the dented washing machine. The man says, \"We can offer you a ten per cent discount.\"", a: "\"Thanks, but I'd still like a new one sent out.\" [Repeat the Request]", bundle: 'pro', guideBack: "The same ask, unchanged" },
+        { q: "The waiter says, \"Sorry, only the manager can take things off the bill.\"", a: "\"No problem. Could you ask her to come over when she has a minute?\" [Ask Who Can Help]", bundle: 'pro', guideBack: "A question about who has the power" },
+        { q: "The hairdresser says she can redo the colour on Saturday.", a: "\"Great — so Saturday at two, and there's nothing to pay?\" [Confirm the Fix]", bundle: 'pro', guideBack: "A summary of the promise" },
+        { q: "The shoe shop assistant says, \"They've been worn, so we can't really take them back.\"", a: "\"I understand. I'd still like them replaced — the sole shouldn't come off in three weeks.\" [Repeat the Request]", bundle: 'pro', guideBack: "The same ask, unchanged" },
+        { q: "The landlord's agent says, \"I'd need the landlord's okay for that.\"", a: "\"Okay. Could you ask him today and let me know by tonight?\" [Ask Who Can Help]", bundle: 'pro', guideBack: "A question about who has the power" },
+        { q: "Railhop says your refund will be processed.", a: "\"Thank you. When should I see it, and could I have a reference number?\" [Confirm the Fix]", bundle: 'pro', guideBack: "A summary of the promise" },
+        { q: "The phone company says your complaint has been \"noted\".", a: "\"Thanks. I'd still like the charge taken off, though.\" [Repeat the Request]", bundle: 'pro', guideBack: "The same ask, unchanged" },
+        { q: "The gym receptionist says she can't access the payment system.", a: "\"That's fine. Who can, and how do I reach them?\" [Ask Who Can Help]", bundle: 'pro', guideBack: "A question about who has the power" },
+      ]
+    },
+    {
+      name: "All Six Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order real complaints arrive — with no warning about which moment you are in.\n\nThe six fall into two halves. Three open the complaint: **Say What Went Wrong**, **Say What You Want** and **Friendly and Firm**. Three get it sorted: **Repeat the Request**, **Ask Who Can Help** and **Confirm the Fix**.\n\nIf you are unsure, ask where you are: have I said it yet, or have they answered? Before they answer, check what is missing. After, listen to what they said.\n\nThe usual wrong choice is getting louder instead of switching strategy.\n\nMindset: friendly to the person, clear about the problem — whichever strategy you are using.",
+      inputs: [
+        { q: "You pick up your dry cleaning, and there is a burn mark on the shirt.", a: "\"Sorry — this shirt has a burn mark on the collar that wasn't there before.\" [Say What Went Wrong]", bundle: 'pro', guideBack: "A plain fact, no blame" },
+        { q: "The airline lost your bag, and the agent asks what you need right now.", a: "\"I need money for a toothbrush and a change of clothes tonight, and the bag sent to my hotel.\" [Say What You Want]", bundle: 'pro', guideBack: "A concrete request" },
+        { q: "The cinema assistant is clearly on her own and very tired. You were charged twice.", a: "\"I can see you're on your own tonight. I've been charged twice, though, so I need one of them back.\" [Friendly and Firm]", bundle: 'pro', guideBack: "A warm line, then the need" },
+        { q: "The dry cleaner says, \"We can't be responsible for old fabric.\"", a: "\"I understand. I'd still like the shirt paid for.\" [Repeat the Request]", bundle: 'pro', guideBack: "The same ask, unchanged" },
+        { q: "The hotel receptionist says, \"I'd love to help, but I can't change the price.\"", a: "\"That's fine. Who can, and are they here today?\" [Ask Who Can Help]", bundle: 'pro', guideBack: "A question about who has the power" },
+        { q: "Parcelpoint agrees to collect the wrong item from your door.", a: "\"Thanks. So the driver comes on Monday, and I just leave it in the box?\" [Confirm the Fix]", bundle: 'pro', guideBack: "A summary of the promise" },
+        { q: "Your new laptop from a shop called Byte Corner won't turn on.", a: "\"Hi. I bought this laptop here on Saturday, and it won't switch on.\" [Say What Went Wrong]", bundle: 'pro', guideBack: "A plain fact, no blame" },
+        { q: "The garage owner says, \"Let's not fall out over this.\"", a: "\"I don't want to fall out either. I'd still like the squeak fixed at no charge.\" [Friendly and Firm]", bundle: 'pro', guideBack: "A warm line, then the need" },
+      ]
+    },
+  ],
+  gettingtoknowsomeone: [
+    {
+      name: "Pick the Question",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Beyond the Job**, **Where They're From** and **What Shaped Them** — three questions that take a conversation past small talk, and the choice is which one fits what they have just told you.\n\n• **Beyond the Job** — they gave you a role or a title\n• **Where They're From** — they mentioned a place\n• **What Shaped Them** — they mentioned a change, a first, or a surprise\n\nThe question that decides it: what did they just hand me — a role, a place, or a change?\n\nThe usual wrong choice is meeting a role with another question about the role. \"So what does a project manager actually do?\" keeps you both at the desk. Step past it instead.\n\nMindset: follow what they hand you.",
+      inputs: [
+        { q: "A new client opens with his job title and the name of his company, and nothing else.", a: "\"Good to meet you. And outside the office, what keeps you busy?\" [Beyond the Job]", bundle: 'pro', guideBack: "A question about life outside work" },
+        { q: "Your new flatmate mentions that she grew up in a tiny mountain village.", a: "\"A mountain village! What was it like growing up there?\" [Where They're From]", bundle: 'pro', guideBack: "A question about what a place meant" },
+        { q: "The plumber fixing your sink says he used to be a professional dancer.", a: "\"A dancer! How did you end up in plumbing?\" [What Shaped Them]", bundle: 'pro', guideBack: "A question about a turning point" },
+        { q: "At a wedding, the man next to you says he is \"in insurance\", and sighs.", a: "\"And when you're not in insurance, what do you love doing?\" [Beyond the Job]", bundle: 'pro', guideBack: "A question about life outside work" },
+        { q: "Your partner's best friend says she grew up in Dublin and still goes back every summer.", a: "\"Every summer! What do you miss most about Dublin?\" [Where They're From]", bundle: 'pro', guideBack: "A question about what a place meant" },
+        { q: "A teammate says he left his PhD in the final year.", a: "\"In the final year? What made you walk away?\" [What Shaped Them]", bundle: 'pro', guideBack: "A question about a turning point" },
+        { q: "A dad at the playground tells you he's a dentist, and asks what you do.", a: "\"I teach. But tell me — what do you do for fun, when you're not fixing teeth?\" [Beyond the Job]", bundle: 'pro', guideBack: "A question about life outside work" },
+        { q: "Your new manager mentions that she spent her childhood on a houseboat.", a: "\"A houseboat! What was that like as a child?\" [Where They're From]", bundle: 'pro', guideBack: "A question about what a place meant" },
+      ]
+    },
+    {
+      name: "Same or Different",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Find the Shared \"We\"**, **Ask About the Difference** and **Where They're From** — for when something about their life has just come up, and you have to decide what it is to you.\n\n• **Find the Shared \"We\"** — it is something you share\n• **Ask About the Difference** — it is different from your life, and you know enough to ask how it was for them\n• **Where They're From** — it is a place you know nothing about yet\n\nThe question that decides it: is this mine too, not mine at all, or not yet known?\n\nThe usual wrong choice is jumping to the difference before you know anything about their life there. Then it sounds like you are pointing at the difference, not asking about them.\n\nMindset: same or different, it is a way in.",
+      inputs: [
+        { q: "Your new colleague mentions that she is the eldest of five. So are you.", a: "\"So we're both the eldest. That explains a lot.\" [Find the Shared \"We\"]", bundle: 'pro', guideBack: "A light statement of common ground" },
+        { q: "A parent at the school gate mentions that he grew up in Kraków. You have never been.", a: "\"I've never been. What was Kraków like when you were growing up?\" [Where They're From]", bundle: 'pro', guideBack: "A question about what a place meant" },
+        { q: "Your new flatmate says her family never celebrated birthdays. Yours made a huge fuss every year.", a: "\"No birthdays at all! What was that like for you as a kid?\" [Ask About the Difference]", bundle: 'pro', guideBack: "A curious question about their own experience" },
+        { q: "At a party, a woman says she grew up in a town with one bus a day. So did you.", a: "\"One bus a day! So we both learned patience early.\" [Find the Shared \"We\"]", bundle: 'pro', guideBack: "A light statement of common ground" },
+        { q: "A colleague has lived in five countries. This is the first place she has stayed longer than three years.", a: "\"Five countries! What's it like for you, staying put for once?\" [Ask About the Difference]", bundle: 'pro', guideBack: "A curious question about their own experience" },
+        { q: "Your sister's new boyfriend says he's from a small town on the north coast.", a: "\"What was it like growing up on the north coast?\" [Where They're From]", bundle: 'pro', guideBack: "A question about what a place meant" },
+        { q: "A man in your evening class says he has worked nights his whole life. You never have.", a: "\"I've never worked a single night. What would surprise me about that life?\" [Ask About the Difference]", bundle: 'pro', guideBack: "A curious question about their own experience" },
+        { q: "Your new boss admits that she is a terrible cook. So are you.", a: "\"So we're both takeaway people. Good to know before the team dinner.\" [Find the Shared \"We\"]", bundle: 'pro', guideBack: "A light statement of common ground" },
+      ]
+    },
+    {
+      name: "All Five Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, with no hint about what the next person will hand you.\n\nThe five fall into two groups:\n\n• **Beyond the Job**, **Where They're From** and **What Shaped Them** — open their story: what they love now, where they started, how they got here\n• **Find the Shared \"We\"** and **Ask About the Difference** — link it to yours: what you share, and where you differ\n\nIf you are unsure, ask what they just gave you: a role, a place, a change, something you share, or something you do not.\n\nThe usual wrong choice is asking question after question and never offering a \"we\". Then it starts to feel like an interview.\n\nMindset: one good question and one real link go further than ten polite ones.",
+      inputs: [
+        { q: "Your friend's new partner says he works in banking, then quickly changes the subject.", a: "\"Fair enough! What do you enjoy when you're not at the bank?\" [Beyond the Job]", bundle: 'pro', guideBack: "A question about life outside work" },
+        { q: "Your new neighbour says she grew up on a farm, and you can hear she misses it.", a: "\"What do you miss most about the farm?\" [Where They're From]", bundle: 'pro', guideBack: "A question about what a place meant" },
+        { q: "A woman at your gym says she ran her first marathon at sixty.", a: "\"At sixty! What made you start?\" [What Shaped Them]", bundle: 'pro', guideBack: "A question about a turning point" },
+        { q: "The new teacher at your child's school turns out to have gone to your old school.", a: "\"Wait, so we both sat under the leaky roof in the music room?\" [Find the Shared \"We\"]", bundle: 'pro', guideBack: "A light statement of common ground" },
+        { q: "Your colleague grew up speaking three languages at home. You grew up with one.", a: "\"Three at home! What was that like for you as a kid?\" [Ask About the Difference]", bundle: 'pro', guideBack: "A curious question about their own experience" },
+        { q: "Your taxi driver tells you he used to teach maths.", a: "\"How did you go from maths teacher to taxi driver?\" [What Shaped Them]", bundle: 'pro', guideBack: "A question about a turning point" },
+        { q: "At a barbecue, your partner's cousin says she is \"just an accountant\".", a: "\"Just? And what do you love doing when the numbers are done?\" [Beyond the Job]", bundle: 'pro', guideBack: "A question about life outside work" },
+        { q: "A new member of your book club says she reads in two languages and can never decide which. Same as you.", a: "\"So we both read in two languages. Which one wins at bedtime?\" [Find the Shared \"We\"]", bundle: 'pro', guideBack: "A light statement of common ground" },
+      ]
+    },
+  ],
+  whoyouare: [
+    {
+      name: "Show a Side of You",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**The Roles You Play**, **Where You Come From**, **What Matters to You** and **A Turning Point** — four ways to answer when someone wants to know who you are.\n\n• **The Roles You Play** — they asked what you do: give more than the job\n• **Where You Come From** — they asked about your past: one line, and what it left you\n• **What Matters to You** — they asked why: name the value underneath\n• **A Turning Point** — they asked how you got here: the one thing that changed you\n\nThe question that decides it: what is their question reaching for — your days, your past, your reasons, or your story?\n\nThe usual wrong choice is answering everything with the job. It is the safest answer and the one that says least about you.\n\nMindset: every question about you has a side of you behind it. Pick the side and show it.",
+      inputs: [
+        { q: "A new neighbour asks what you do.", a: "\"I'm a bus driver, a dad of three and the man who runs the Friday quiz at the pub.\" [The Roles You Play]", bundle: 'pro', guideBack: "Two or three sides of you, in one line" },
+        { q: "A colleague asks where your love of cooking comes from.", a: "\"My grandparents had a restaurant in Izmir. I learned to cook before I learned to read.\" [Where You Come From]", bundle: 'pro', guideBack: "A place, and what it left in you" },
+        { q: "A friend asks why you turned down the promotion.", a: "\"It meant three nights a week away. Being home for the kids matters more to me.\" [What Matters to You]", bundle: 'pro', guideBack: "A value, in ordinary words" },
+        { q: "Someone asks how you became a midwife after twenty years in sales.", a: "\"My sister's first baby. I watched the midwife that night and thought, that's the job.\" [A Turning Point]", bundle: 'pro', guideBack: "A before and after, in one sentence" },
+        { q: "A friend's partner asks about your family.", a: "\"Only child of two very quiet librarians. It's why I talk so much now.\" [Where You Come From]", bundle: 'pro', guideBack: "A place, and what it left in you" },
+        { q: "Someone at the gym asks what you do with the rest of your week.", a: "\"I'm a student nurse, a weekend barista and an aunt to twins.\" [The Roles You Play]", bundle: 'pro', guideBack: "Two or three sides of you, in one line" },
+        { q: "Your new team leader asks why you always speak up for the new starters.", a: "\"I remember being new and invisible. I don't want anyone else feeling that.\" [What Matters to You]", bundle: 'pro', guideBack: "A value, in ordinary words" },
+        { q: "A cousin asks why you stopped drinking.", a: "\"A bad night at thirty. I woke up and decided that was the last one.\" [A Turning Point]", bundle: 'pro', guideBack: "A before and after, in one sentence" },
+      ]
+    },
+    {
+      name: "Fix the Picture",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Correct the Label**, **The Roles You Play**, **Where You Come From** and **What Matters to You** — for when someone has a picture of you that is wrong, or just too small.\n\n• **Correct the Label** — the picture is wrong: fix it lightly, with one true detail\n• **The Roles You Play** — the picture is one role: add the others\n• **Where You Come From** — they guessed your background: give the real one\n• **What Matters to You** — they guessed your reasons: say the real one\n\nThe question that decides it: is their picture wrong, or only small? Wrong needs a light correction. Small only needs more of you.\n\nThe usual wrong choice is correcting a picture that was only small. \"Actually, I'm not just a mum\" sounds touchy where \"I'm Leo's mum, and also a welder\" sounds warm.\n\nMindset: you are filling in the picture, not winning an argument about it.",
+      inputs: [
+        { q: "A guest at a wedding says, \"Oh, you're the bride's brother — the accountant?\"", a: "\"The accountant, yes. Also the one who baked the cake, so be nice.\" [The Roles You Play]", bundle: 'pro', guideBack: "Two or three sides of you, in one line" },
+        { q: "A colleague says, \"You're from Iran? You must be very religious.\"", a: "\"Iranian, yes. Religious, not at all — my mum still hasn't forgiven me.\" [Correct the Label]", bundle: 'pro', guideBack: "A friendly \"yes, but\"" },
+        { q: "Someone assumes you grew up rich because of where you live now.", a: "\"I grew up in a two-room flat with four sisters. I still can't stand a queue for the bathroom.\" [Where You Come From]", bundle: 'pro', guideBack: "A place, and what it left in you" },
+        { q: "A friend thinks you work late because you love your boss's approval.", a: "\"It's not that. I hate letting the team down — that's all it is.\" [What Matters to You]", bundle: 'pro', guideBack: "A value, in ordinary words" },
+        { q: "A stranger sees your tattoos and says, \"Let me guess — you're in a band?\"", a: "\"Ha, no. I'm a primary school teacher. The kids love them.\" [Correct the Label]", bundle: 'pro', guideBack: "A friendly \"yes, but\"" },
+        { q: "Your partner's friends only know you as \"the one who works in IT\".", a: "\"IT pays the bills. Mostly I'm a hiker, a gardener and a very keen uncle.\" [The Roles You Play]", bundle: 'pro', guideBack: "Two or three sides of you, in one line" },
+        { q: "A neighbour says, \"City people never last out here.\"", a: "\"City born, yes. But my granddad kept sheep, and I spent every summer with him.\" [Where You Come From]", bundle: 'pro', guideBack: "A place, and what it left in you" },
+        { q: "A teenager says, \"You only care about rules because you're old.\"", a: "\"Fair guess, but no. I care about people being treated the same — that's where the rules come from.\" [What Matters to You]", bundle: 'pro', guideBack: "A value, in ordinary words" },
+      ]
+    },
+    {
+      name: "All Five Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order real conversations bring them rather than the order they were taught.\n\nThe five fall into two groups. Four show a side of you: **The Roles You Play**, **Where You Come From**, **What Matters to You** and **A Turning Point**. One fixes a picture that has gone wrong: **Correct the Label**.\n\nThe question that decides it: did they ask about you, or tell you who you are? A question gets one of the four. An assumption gets a light correction first — and often one of the four straight after.\n\nThe usual wrong choice is the safe one: a job title for every question, and silence for every label.\n\nMindset: you get to say who you are. One sentence at a time is plenty.",
+      inputs: [
+        { q: "A stranger at a barbecue asks what you do.", a: "\"I'm a pharmacist, a foster mum and the slowest member of our running club.\" [The Roles You Play]", bundle: 'pro', guideBack: "Two or three sides of you, in one line" },
+        { q: "A colleague says, \"Engineers aren't very sociable, are they?\"", a: "\"Some of us are. I'm the one who organises the Christmas party.\" [Correct the Label]", bundle: 'pro', guideBack: "A friendly \"yes, but\"" },
+        { q: "A new friend asks why you are so careful with money.", a: "\"We had very little growing up in Lagos. I still count the change.\" [Where You Come From]", bundle: 'pro', guideBack: "A place, and what it left in you" },
+        { q: "Someone asks why you became a vet.", a: "\"Our dog was hit by a car when I was nine, and the vet saved her. That was it for me.\" [A Turning Point]", bundle: 'pro', guideBack: "A before and after, in one sentence" },
+        { q: "A friend asks why you never gossip at work.", a: "\"I'd want people to say things to my face. So I try to do the same.\" [What Matters to You]", bundle: 'pro', guideBack: "A value, in ordinary words" },
+        { q: "Your daughter's teacher assumes your husband handles the homework.", a: "\"Easy to think, but that's my job. He does the cooking.\" [Correct the Label]", bundle: 'pro', guideBack: "A friendly \"yes, but\"" },
+        { q: "A neighbour asks how you ended up running the community garden.", a: "\"I retired and was bored stiff for a month. Then I planted one tomato.\" [A Turning Point]", bundle: 'pro', guideBack: "A before and after, in one sentence" },
+        { q: "Someone at a course asks where you grew up.", a: "\"On a boat, mostly. My parents sailed. I'm still happiest near water.\" [Where You Come From]", bundle: 'pro', guideBack: "A place, and what it left in you" },
       ]
     },
   ],

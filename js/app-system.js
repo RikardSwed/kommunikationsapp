@@ -74,6 +74,7 @@ const GRID_PACKS = new Set([
   'passiveaggression2', 'passiveaggression3',
   'toneboundaries1', 'toneboundaries2',
   'emotionalcalibration1', 'emotionalcalibration2',
+  'whensomeoneishurting1', 'gettingtoknowsomeone',
 ]);
 window.dsIsGridPack = key => GRID_PACKS.has(key);
 
@@ -800,6 +801,16 @@ applyInputCounterVisibility();
     emotionalcalibration2: { label: 'Emotional Calibration — Pt. 2: Changing Course', minLevel: 'complete' },
     emotionalcalibration3: { label: 'Emotional Calibration — Pt. 3: Meeting the Feeling', minLevel: 'complete' },
     familygatherings: { label: 'Family Gatherings', minLevel: 'complete' },
+    makingfriends1: { label: 'Making Friends — Pt. 1: From Hello to Plans', minLevel: 'complete' },
+    makingfriends2: { label: 'Making Friends — Pt. 2: Keeping It Going', minLevel: 'complete' },
+    makingfriends3: { label: 'Making Friends — Pt. 3: When Friendship Is Hard', minLevel: 'complete' },
+    namesandintroductions: { label: 'Names and Introductions', minLevel: 'freemium' },
+    phonecalls: { label: 'Phone Calls', minLevel: 'complete' },
+    whensomeoneishurting1: { label: 'When Someone Is Hurting — Pt. 1: The First Words', minLevel: 'complete' },
+    whensomeoneishurting2: { label: 'When Someone Is Hurting — Pt. 2: The Weeks After', minLevel: 'complete' },
+    speakingupasacustomer: { label: 'Speaking Up as a Customer', minLevel: 'complete' },
+    gettingtoknowsomeone: { label: 'Getting to Know Someone', minLevel: 'complete' },
+    whoyouare: { label: 'Who You Are', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -3977,6 +3988,146 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
+  makingfriends1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  makingfriends2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  makingfriends3: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  namesandintroductions: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  phonecalls: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  whensomeoneishurting1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  whensomeoneishurting2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  speakingupasacustomer: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  gettingtoknowsomeone: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  whoyouare: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
 };
 window.BUNDLE_DEFS = BUNDLE_DEFS;
 
@@ -4914,6 +5065,8 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.65', date: 'October 2026', title: 'Five more new packs: When Someone Is Hurting Pt. 1\u20132, Speaking Up as a Customer, Getting to Know Someone, Who You Are', audience: 'dev', items: ['<strong>When Someone Is Hurting \u2014 Pt. 1: The First Words</strong> (<code>whensomeoneishurting1</code>, grid) and <strong>Pt. 2: The Weeks After</strong> (<code>whensomeoneishurting2</code>), under Listening &amp; Understanding.', '<strong>Speaking Up as a Customer</strong> (<code>speakingupasacustomer</code>), under Assertiveness &amp; Pressure.', '<strong>Getting to Know Someone</strong> (<code>gettingtoknowsomeone</code>, grid) and <strong>Who You Are</strong> (<code>whoyouare</code>, the sequel to Talking About Yourself), under Depth &amp; Connection.', 'All five at <strong>complete</strong> until tested. check-pack: 0 errors, 0 warnings. GRID_PACKS: the two grid packs added. Kartan: all new decks tagged.'] },
+  { version: 'v1.29.64', date: 'October 2026', title: 'Five new packs: Making Friends Pt. 1\u20133, Names and Introductions, Phone Calls', audience: 'dev', items: ['New Deckstack Originals: <strong>Making Friends Pt. 1: From Hello to Plans</strong> (<code>makingfriends1</code>), <strong>Pt. 2: Keeping It Going</strong> (<code>makingfriends2</code>) and <strong>Pt. 3: When Friendship Is Hard</strong> (<code>makingfriends3</code>), under Depth &amp; Connection, all at <strong>complete</strong>. Pt. 1 is meant to stay outside the coming Making Friends program; Pt. 2\u20133 go into it.', '<strong>Names and Introductions</strong> (<code>namesandintroductions</code>), under Starting Conversations, at <strong>freemium</strong>, with a two-page pack intro (3 + 3 strategies).', '<strong>Phone Calls</strong> (<code>phonecalls</code>), under Starting Conversations and Explaining &amp; Describing, at <strong>complete</strong>.', 'check-pack: 0 errors, 0 warnings on all five. Kartan: families 34 Friendship and 35 Phone added; all 76 new decks tagged.'] },
   { version: 'v1.29.63', date: 'October 2026', title: 'Checkpoint questions: strategy, not move', audience: 'dev', items: ['<strong>47 checkpoint questions</strong> said <em>move</em> where they meant a strategy or a choice: \u201cthe six moves in this pack\u201d, \u201cis which move?\u201d, \u201cthe main move?\u201d and so on. Now <em>strategy</em> where it is one of the pack\u2019s strategies, otherwise <em>response</em>, <em>choice</em> or <em>step</em>. Move as a verb (\u201cmove on\u201d) and the strategy name <em>Move Straight On</em> are unchanged. Answers and correct options are untouched.'] },
   { version: 'v1.29.62', date: 'October 2026', title: 'Programs: Parts become Stages', audience: 'dev', items: ['<strong>Parts \u2192 Stages</strong> in every program (Rikard 2026-10-14): the stage titles (<em>Stage 1 \u2014 First steps</em>, renamed from First moves, \u2026), the checkpoint questions that name them, the partial descriptions, and the program texts in the Extended store. Pack names keep <em>Pt.</em>, so a program stage and a pack part can no longer be confused.', '<strong>Programs guide</strong> is three short pages: a route, not a pack \u00b7 stages and checkpoints \u00b7 what passing gives you. The page about Pro-marked programs is gone.'] },
   { version: 'v1.29.61', date: 'October 2026', title: 'A guide to grid packs', audience: 'dev', items: ['New guide <strong>Grid packs</strong>, under Guides in the settings of Single Strategy and of the handsfree sheets that have Grid navigation. Six pages with drawings of the grid: strategies across, cards down; swiping along a row with Grid navigation on; down a column; what happens with it off; the reading order in handsfree; where to turn it on.', '<em>The rest of the screen</em> mentions Grid navigation on its Settings page and points to the new guide.', 'First Strategies intro is two pages again: the overview with strategies 1\u20132, then 3\u20136, one line each.'] },
@@ -7282,6 +7435,33 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             '<div class="ob-how-row"><span class="ob-how-num">6</span><p><strong>What It Resembles</strong> &mdash; something they know, and how it differs.</p></div>' +
             '</div>' +
             '<p class="ob-text ob-text--dim">&ldquo;It\u2019s a dark green rucksack, about the size of a shoebox, with a yellow patch on the front.&rdquo;</p>'
+        }
+      ]
+    },
+
+    namesandintroductions: {
+      // v1.29.64 \u2014 freemium pack, same 3 + 3 layout as Describe Things.
+      pages: [
+        {
+          title: 'Names and Introductions',
+          html:
+            '<p class="ob-text">Six strategies for the small name moments &mdash; saying yours, ' +
+            'keeping theirs, and the name you have already forgotten.</p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Say Your Name Clearly</strong> &mdash; slowly, with something to hold on to.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Use Their Name Once</strong> &mdash; say it back straight away, one time.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Ask Again Early</strong> &mdash; missed it? Ask in the first minute.</p></div>' +
+            '</div>'
+        },
+        {
+          title: 'Names and Introductions',
+          html:
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">4</span><p><strong>Own the Forgotten Name</strong> &mdash; admit it lightly, and show what you do remember.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">5</span><p><strong>Introduce With a Hook</strong> &mdash; two names, and something they can talk about.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">6</span><p><strong>Get Them to Say It</strong> &mdash; let them say the name you have lost.</p></div>' +
+            '</div>' +
+            '<p class="ob-text ob-text--dim">&ldquo;Hi, I&rsquo;m Rose &mdash; like the flower.&rdquo;</p>'
         }
       ]
     },
