@@ -766,12 +766,7 @@ body.pb-enabled .divider::after {
 
 /* v1.29.47 — fold-out explanations and the Grid navigation row */
 .settings-row--help > label:first-child { cursor: pointer; -webkit-tap-highlight-color: transparent; }
-.settings-row--help .settings-name::after {
-  content: ''; display: inline-block; width: 6px; height: 6px; margin-left: 8px;
-  border-right: 1.5px solid var(--ds-txt3); border-bottom: 1.5px solid var(--ds-txt3);
-  transform: rotate(45deg); vertical-align: 3px; transition: transform 0.2s;
-}
-.settings-row--help.is-open .settings-name::after { transform: rotate(-135deg); vertical-align: -1px; }
+/* v1.29.59 — no chevron after the names (Rikard: too much on screen). Tapping the name still folds the explanation out. */
 .settings-row.is-open { border-bottom: none; padding-bottom: 6px; }
 .settings-help {
   font-size: 13px; line-height: 1.45; color: var(--ds-txt2);
@@ -4277,8 +4272,6 @@ html.ds-vh-pinned .extended-screen {
   border: none; background: none; padding: 0; font-family: inherit; text-align: left;
   cursor: pointer; width: 100%; -webkit-tap-highlight-color: transparent;
 }
-.pg-row-name .ti { font-size: 14px; color: var(--ds-txt2); margin-left: 4px; vertical-align: -1px; transition: transform .2s; display: inline-block; }
-.pg-topic.open .pg-row-name .ti { transform: rotate(90deg); }
 .pg-subrows { display: none; flex-direction: column; gap: 9px; margin: 10px 0 2px 14px; padding-left: 12px; border-left: 2px solid var(--ds-ring-track); }
 .pg-topic.open .pg-subrows { display: flex; }
 .pg-subrow { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; align-items: center; }
