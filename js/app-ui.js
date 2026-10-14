@@ -2585,7 +2585,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
           + (passed ? 'Passed \u2713'
             : unlocked ? cp.drawCount + ' questions \u00b7 ' + cp.timeLimit + 's per question'
             : !tierOpen ? 'Requires Pro'
-            : 'Complete previous section to unlock')
+            : 'Pass the previous stage to unlock')
           + '</div>'
           + '</div>'
           + (unlocked && !passed ? '<div class="collection-arrow">\u203a</div>' : '')
@@ -2984,8 +2984,8 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         description: 'Three steps through the conversations people avoid — asking and refusing, staying steady when they push back, and saying the hard thing.',
         price: '59 kr',
         details: [
-          'A guided program, not a pack. Three Parts, each ending in a test you have to pass before the next one opens — and passing releases that Part\u2019s packs into your library for good.',
-          'Part 1 starts on ground you know: asking for something without the awkward run-up, and refusing without handing over reasons to argue with. Part 2 is the one people need most — what to do when the answer is a dig rather than a reply, and how to stay usable when a conversation turns hot. Part 3 is criticism in both directions, giving it and taking it.',
+          'A guided program, not a pack. Three stages, each ending in a test you have to pass before the next one opens — and passing releases that stage\u2019s packs into your library for good.',
+          'Stage 1 starts on ground you know: asking for something without the awkward run-up, and refusing without handing over reasons to argue with. Stage 2 is the one people need most — what to do when the answer is a dig rather than a reply, and how to stay usable when a conversation turns hot. Stage 3 is criticism in both directions, giving it and taking it.',
           'Three of its packs — Conflict Emotions, Giving Criticism and Receiving Feedback and Criticism — exist nowhere else in the app. This program is the only way to reach them.',
           'Everything works in all your training modes, including handsfree.',
         ],
@@ -3000,8 +3000,8 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         description: 'Five steps through the digs, hints and sighs \u2014 from the first reply to what you say when they deny it, turn it on you, or go quiet.',
         price: '59 kr',
         details: [
-          'A guided program, not a pack. Five Parts, each ending in a test you have to pass before the next one opens \u2014 and passing releases that Part\u2019s pack into your library for good.',
-          'Part 1 starts on ground you know: answering the remark without taking the bait. Parts 2 and 3 are new first replies \u2014 bringing a dig into the open calmly, and changing the frame with a pause, a question or a joke. Parts 4 and 5 are what nobody teaches: what to say next, when they deny it, call you sensitive, turn to the room, sulk, go quiet or finally say what it was about.',
+          'A guided program, not a pack. Five stages, each ending in a test you have to pass before the next one opens \u2014 and passing releases that stage\u2019s pack into your library for good.',
+          'Stage 1 starts on ground you know: answering the remark without taking the bait. Stages 2 and 3 are new first replies \u2014 bringing a dig into the open calmly, and changing the frame with a pause, a question or a joke. Stages 4 and 5 are what nobody teaches: what to say next, when they deny it, call you sensitive, turn to the room, sulk, go quiet or finally say what it was about.',
           'Four of its packs \u2014 Responding to Passive Aggression Pt. 2 to Pt. 5 \u2014 exist nowhere else in the app. This program is the only way to reach them.',
           'Everything works in all your training modes, including handsfree.',
         ],
@@ -3098,7 +3098,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         price: '189 kr',
         details: [
           'Every single thing in Extended in one purchase: all six extra packs, the extra Broken Record situations, and both programs \u2014 Difficult Conversations and Handling Passive Aggression. Bought one by one it comes to {separately}.',
-          'The programs are what make this different from The Communicator Kit. Each is a path of Parts with a test at the end of each, and between them they hold seven packs that exist nowhere else in the app: Conflict Emotions, Giving Criticism and Receiving Feedback and Criticism, and Responding to Passive Aggression Pt. 2 to Pt. 5.',
+          'The programs are what make this different from The Communicator Kit. Each is a path of stages with a test at the end of each, and between them they hold seven packs that exist nowhere else in the app: Conflict Emotions, Giving Criticism and Receiving Feedback and Criticism, and Responding to Passive Aggression Pt. 2 to Pt. 5.',
           'Around it sit the six extra packs: the last step of the Starting Conversations ladder, the deep half of Apologizing, the second half of Explain Things, the shape of a story from first sentence to last, and Reframing \u2014 the other reading of the same facts. Plus the family pressure that makes Broken Record hard in the first place.',
           'Everything unlocks immediately and works in all your training modes, including handsfree. After this there is nothing else in Extended to buy.',
         ],

@@ -15,18 +15,18 @@ const programsData = [
     // v1.26.84 — shown INSTEAD of `description` only to someone who cannot
     // reach every Part. A Pro user has the whole thing and should not be told
     // about a split that does not apply to them.
-    descriptionPartial: "Start here. Four steps from your first sentence to a conversation that actually goes somewhere. Parts 1 and 2 are free \u2014 Parts 3 and 4 come with Pro.",
+    descriptionPartial: "Start here. Four steps from your first sentence to a conversation that actually goes somewhere. Stages 1 and 2 are free \u2014 Stages 3 and 4 come with Pro.",
     icon: "ti-compass",
     sections: [
       {
         id: 'section-1',
-        title: "Part 1 — First moves",
+        title: "Stage 1 — First steps",
         packs: [
           { key: "firststrategies", label: "First Strategies" },
         ],
         checkpoint: {
           id: 'cf-cp1',
-          title: "First moves — check",
+          title: "First steps — check",
           timeLimit: 30,
           drawCount: 20,
           // DONE v1.26.84 — 40 questions, 20 drawn. Same for cf-cp2..cf-cp4.
@@ -76,7 +76,7 @@ const programsData = [
       },
       {
         id: 'section-2',
-        title: "Part 2 — Keeping it going",
+        title: "Stage 2 — Keeping it going",
         packs: [
           { key: "exploringatopic", label: "Exploring a Topic" },
           { key: "changingtopics", label: "Changing Topics" },
@@ -133,7 +133,7 @@ const programsData = [
       },
       {
         id: 'section-3',
-        title: "Part 3 \u2014 Take them seriously",
+        title: "Stage 3 \u2014 Take them seriously",
         // v1.26.82 — the freemium wall. Parts 1-2 are free; from here the
         // program needs Pro. Same program, same progress: a user who upgrades
         // carries on where they stopped instead of starting a second one.
@@ -194,7 +194,7 @@ const programsData = [
       },
       {
         id: 'section-4',
-        title: "Part 4 — Going deeper",
+        title: "Stage 4 — Going deeper",
         minLevel: 'pro',
         packs: [
           { key: "deepquestions", label: "Deep Questions" },
@@ -245,7 +245,7 @@ const programsData = [
             { id: 'cf4-37', q: "What is the risk of treating deep questions as a technique?", options: ["They stop working", "The other person can tell they are being worked through a list", "They become predictable", "You forget to listen"], correct: 1 },
             { id: 'cf4-38', q: "What usually comes before someone will answer something personal?", options: ["A long conversation", "Evidence that the last thing they gave you was received well", "A private setting", "A personal question from them"], correct: 1 },
             { id: 'cf4-39', q: "Which is the better closing move after a deep exchange?", options: ["Change to something light immediately", "Say plainly that you were glad they told you", "Ask one more question", "Summarise what they said"], correct: 1 },
-            { id: 'cf4-40', q: "What is the whole point of the four Parts together?", options: ["To cover every conversation", "To take one conversation from the first sentence to something worth having", "To teach twenty strategies", "To make small talk easier"], correct: 1 },
+            { id: 'cf4-40', q: "What is the whole point of the four stages together?", options: ["To cover every conversation", "To take one conversation from the first sentence to something worth having", "To teach twenty strategies", "To make small talk easier"], correct: 1 },
           ],
         },
       },
@@ -273,7 +273,7 @@ const programsData = [
     sections: [
       {
         id: 'section-1',
-        title: "Part 1 \u2014 Show that you heard",
+        title: "Stage 1 \u2014 Show that you heard",
         packs: [
           { key: "showunderstanding", label: "Show Understanding" },
         ],
@@ -328,7 +328,7 @@ const programsData = [
       },
       {
         id: 'section-2',
-        title: "Part 2 \u2014 Ask your way in",
+        title: "Stage 2 \u2014 Ask your way in",
         packs: [
           { key: "listeningthroughquestions", label: "Listening Through Questions" },
         ],
@@ -383,7 +383,7 @@ const programsData = [
       },
       {
         id: 'section-3',
-        title: "Part 3 \u2014 Get to what they mean",
+        title: "Stage 3 \u2014 Get to what they mean",
         packs: [
           { key: "showunderstanding2", label: "Show Understanding \u2014 Pt. 2" },
           { key: "askingforclarity", label: "Asking for Clarity" },
@@ -467,7 +467,7 @@ const programsData = [
     sections: [
       {
         id: 'section-1',
-        title: "Part 1 — The Happy No",
+        title: "Stage 1 — The Happy No",
         packs: [
           { key: "thehappyno", label: "The Happy No" },
         ],
@@ -487,7 +487,7 @@ const programsData = [
       },
       {
         id: 'section-2',
-        title: "Part 2 — The Regretful No",
+        title: "Stage 2 — The Regretful No",
         packs: [
           { key: "theregretfulno", label: "The Regretful No" },
         ],
@@ -702,7 +702,7 @@ const programsData = [
     sections: [
       {
         id: 'section-1',
-        title: "Part 1 — Say something about yourself",
+        title: "Stage 1 — Say something about yourself",
         packs: [
           { key: "talkingaboutyourself", label: "Talking About Yourself" },
         ],
@@ -757,7 +757,7 @@ const programsData = [
       },
       {
         id: 'section-2',
-        title: "Part 2 — Make it clear",
+        title: "Stage 2 — Make it clear",
         packs: [
           { key: "explainthings", label: "Explain Things" },
           { key: "givingexamples", label: "Giving Examples" },
@@ -813,7 +813,7 @@ const programsData = [
       },
       {
         id: 'section-3',
-        title: "Part 3 — Make it stick",
+        title: "Stage 3 — Make it stick",
         packs: [
           { key: "storytellingwiththesixws", label: "Storytelling with the Six W's" },
           { key: "storiesinconversation", label: "Stories in Conversation" },
@@ -878,7 +878,7 @@ const programsData = [
     sections: [
       {
         id: 'section-1',
-        title: "Part 1 — Notice it out loud",
+        title: "Stage 1 — Notice it out loud",
         packs: [
           { key: "complimenting", label: "Compliments" },
         ],
@@ -933,7 +933,7 @@ const programsData = [
       },
       {
         id: 'section-2',
-        title: "Part 2 — Make it land",
+        title: "Stage 2 — Make it land",
         packs: [
           { key: "praiseandencouragement", label: "Praise and Encouragement" },
           { key: "supportingconversations", label: "Supporting Conversations" },
@@ -989,7 +989,7 @@ const programsData = [
       },
       {
         id: 'section-3',
-        title: "Part 3 — Name what they feel",
+        title: "Stage 3 — Name what they feel",
         packs: [
           { key: "emotionlabellingandregulation", label: "Emotion Labelling and Regulation" },
         ],
@@ -1057,7 +1057,7 @@ const programsData = [
     sections: [
       {
         id: 'section-1',
-        title: "Part 1 — Ask, and say no",
+        title: "Stage 1 — Ask, and say no",
         packs: [
           { key: "makingrequests", label: "Making Requests" },
           { key: "sayingno", label: "Saying No" },
@@ -1134,7 +1134,7 @@ const programsData = [
       },
       {
         id: 'section-2',
-        title: "Part 2 — When they push back",
+        title: "Stage 2 — When they push back",
         packs: [
           { key: "respondingtopassiveaggression", label: "Responding to Passive Aggression — Pt. 1" },
           { key: "conflictemotions", label: "Conflict Emotions" },
@@ -1190,7 +1190,7 @@ const programsData = [
       },
       {
         id: 'section-3',
-        title: "Part 3 — Say the hard thing",
+        title: "Stage 3 — Say the hard thing",
         packs: [
           { key: "givingcriticism", label: "Giving Criticism" },
           { key: "receivingfeedbackandcriticism", label: "Receiving Feedback and Criticism" },
@@ -1258,7 +1258,7 @@ const programsData = [
     sections: [
       {
         id: 'section-1',
-        title: "Part 1 — Answer the remark",
+        title: "Stage 1 — Answer the remark",
         packs: [
           { key: "respondingtopassiveaggression", label: "Responding to Passive Aggression — Pt. 1" },
         ],
@@ -1313,7 +1313,7 @@ const programsData = [
       },
       {
         id: 'section-2',
-        title: "Part 2 — Bring it into the open",
+        title: "Stage 2 — Bring it into the open",
         packs: [
           { key: "passiveaggression2", label: "Responding to Passive Aggression — Pt. 2: Bring It Into the Open" },
         ],
@@ -1368,7 +1368,7 @@ const programsData = [
       },
       {
         id: 'section-3',
-        title: "Part 3 — Change the frame",
+        title: "Stage 3 — Change the frame",
         packs: [
           { key: "passiveaggression3", label: "Responding to Passive Aggression — Pt. 3: Change the Frame" },
         ],
@@ -1423,7 +1423,7 @@ const programsData = [
       },
       {
         id: 'section-4',
-        title: "Part 4 — When they push back",
+        title: "Stage 4 — When they push back",
         packs: [
           { key: "passiveaggression4", label: "Responding to Passive Aggression — Pt. 4: Handling Pushback" },
         ],
@@ -1478,7 +1478,7 @@ const programsData = [
       },
       {
         id: 'section-5',
-        title: "Part 5 — When they back off",
+        title: "Stage 5 — When they back off",
         packs: [
           { key: "passiveaggression5", label: "Responding to Passive Aggression — Pt. 5: Handling Retreat" },
         ],
@@ -1541,7 +1541,7 @@ const programsData = [
     sections: [
       {
         id: 'section-1',
-        title: "Part 1 — The easy openings",
+        title: "Stage 1 — The easy openings",
         packs: [
           { key: "startingconversations1", label: "Starting Conversations — Pt. 1" },
         ],
@@ -1575,14 +1575,14 @@ const programsData = [
             { id: 'oac1-22', q: "Which of these is wondering out loud?", options: ["\"It's much busier than last week.\"", "\"I wonder why they only ever open one till.\"", "\"This queue is testing me a bit.\"", "\"It was half this size last time.\""], correct: 1 },
             { id: 'oac1-23', q: "The comment does not have to be interesting. It has to be...", options: ["true", "short", "shared", "funny"], correct: 2 },
             { id: 'oac1-24', q: "What is the safest opener with a stranger who might not want to talk?", options: ["A question about the situation", "A compliment", "Introducing yourself", "A comment on the situation"], correct: 3 },
-            { id: 'oac1-25', q: "Which of the four Part 1 openers has the highest reply rate?", options: ["A question about the situation", "Introducing yourself", "A comment on the situation", "A greeting"], correct: 0 },
+            { id: 'oac1-25', q: "Which of the four Stage 1 openers has the highest reply rate?", options: ["A question about the situation", "Introducing yourself", "A comment on the situation", "A greeting"], correct: 0 },
             { id: 'oac1-26', q: "Why does that one get the most back?", options: ["It is friendlier", "A comment can be met with a nod; a question almost always gets words back", "It is easier to answer", "It flatters them"], correct: 1 },
             { id: 'oac1-27', q: "What does asking about the situation give them that a comment does not?", options: ["A subject", "Information", "A reason to speak", "A choice"], correct: 2 },
             { id: 'oac1-28', q: "Why ask the question you actually want answered?", options: ["A real question sounds different from an invented one, and people hear the difference immediately", "You get better information", "It is more honest", "It is easier to remember"], correct: 0 },
             { id: 'oac1-29', q: "Which of these is checking your own assumption?", options: ["\"Do you know if there's a break?\"", "\"Is this your first one of these?\"", "\"Do you know if we're supposed to sign in?\"", "\"This is the queue for the front section, isn't it?\""], correct: 3 },
             { id: 'oac1-30', q: "\"Do you know if we're supposed to sign in?\" invites them to be...", options: ["honest", "friendly", "helpful", "brief"], correct: 2 },
             { id: 'oac1-31', q: "Which opener turns a stranger into someone you have met?", options: ["Introducing yourself", "A greeting", "A comment on the situation", "A question about the situation"], correct: 0 },
-            { id: 'oac1-32', q: "What do all four Part 1 openers have in common?", options: ["They are questions", "None of them require knowing anything about the other person", "They are about the room", "They all get an answer"], correct: 1 },
+            { id: 'oac1-32', q: "What do all four Stage 1 openers have in common?", options: ["They are questions", "None of them require knowing anything about the other person", "They are about the room", "They all get an answer"], correct: 1 },
             { id: 'oac1-33', q: "You pass a neighbour on the stairs for the third time this week. What is often the right amount?", options: ["A question", "A greeting plus a hook", "A comment on the weather", "The plain greeting"], correct: 3 },
             { id: 'oac1-34', q: "What is the risk of an invented question?", options: ["You get an unhelpful answer", "It takes too long", "People can hear that it is invented", "You have to keep it going"], correct: 2 },
             { id: 'oac1-35', q: "Which of these asks least of the other person?", options: ["\"Do you know when it starts?\"", "\"I don't think we've met — I'm Rikard.\"", "\"Have you been to one of these before?\"", "\"Morning.\""], correct: 3 },
@@ -1590,13 +1590,13 @@ const programsData = [
             { id: 'oac1-37', q: "When is naming the fact that you have not met useful?", options: ["Always", "With someone senior", "In a large group", "When you might have met and neither of you is sure"], correct: 3 },
             { id: 'oac1-38', q: "Which of these is a greeting with a hook?", options: ["\"Hi — busy in here today.\"", "\"Morning, Sara.\"", "\"Morning.\"", "\"Hi, how are you?\""], correct: 0 },
             { id: 'oac1-39', q: "Why does the situation work as an opener even when you know nothing about the person?", options: ["The evidence is right in front of both of you", "It is neutral", "It is easy to talk about", "Everyone has an opinion about it"], correct: 0 },
-            { id: 'oac1-40', q: "What is the point of a Part 1 opener?", options: ["To find out about them", "To be memorable", "To put a low-cost offer into the air and let them take it or not", "To have something to say"], correct: 2 },
+            { id: 'oac1-40', q: "What is the point of a Stage 1 opener?", options: ["To find out about them", "To be memorable", "To put a low-cost offer into the air and let them take it or not", "To have something to say"], correct: 2 },
           ],
         },
       },
       {
         id: 'section-2',
-        title: "Part 2 — Setting it up",
+        title: "Stage 2 — Setting it up",
         packs: [
           { key: "startingconversations2", label: "Starting Conversations — Pt. 2" },
           { key: "setupstatement", label: "Setup Statement" },
@@ -1652,7 +1652,7 @@ const programsData = [
       },
       {
         id: 'section-3',
-        title: "Part 3 — No excuse to hide behind",
+        title: "Stage 3 — No excuse to hide behind",
         packs: [
           { key: "startingconversations3", label: "Starting Conversations — Pt. 3" },
         ],
@@ -1690,9 +1690,9 @@ const programsData = [
             { id: 'oac3-26', q: "What does the word \"actually\" do in \"how are you, actually?\"", options: ["Softens it", "Marks it as the real version of the question", "Makes it sound concerned", "Invites a longer answer"], correct: 1 },
             { id: 'oac3-27', q: "After you have asked, what should you do?", options: ["Offer something of your own", "Ask a follow-up", "Wait — and not fill the silence", "Say why you asked"], correct: 2 },
             { id: 'oac3-28', q: "Why does the pause matter so much here?", options: ["Most people need a beat before they answer honestly, and most askers fill it", "It shows patience", "It makes the question serious", "It gives them a way out"], correct: 0 },
-            { id: 'oac3-29', q: "What do all four Part 3 openers have in common?", options: ["They are questions", "They work best with people you know", "They need a quiet room", "They are about the person, not the situation"], correct: 3 },
-            { id: 'oac3-30', q: "What makes these harder than the Part 1 openers?", options: ["They take longer", "They are more personal", "There is no shared situation to point at, so the reason for speaking is you", "They need better timing"], correct: 2 },
-            { id: 'oac3-31', q: "Which Part 3 opener is the most direct of them all?", options: ["Ask About Them", "Make a Guess", "Compliment Something Specific", "Ask How They Really Are"], correct: 0 },
+            { id: 'oac3-29', q: "What do all four Stage 3 openers have in common?", options: ["They are questions", "They work best with people you know", "They need a quiet room", "They are about the person, not the situation"], correct: 3 },
+            { id: 'oac3-30', q: "What makes these harder than the Stage 1 openers?", options: ["They take longer", "They are more personal", "There is no shared situation to point at, so the reason for speaking is you", "They need better timing"], correct: 2 },
+            { id: 'oac3-31', q: "Which Stage 3 opener is the most direct of them all?", options: ["Ask About Them", "Make a Guess", "Compliment Something Specific", "Ask How They Really Are"], correct: 0 },
             { id: 'oac3-32', q: "Which is the fastest way to make a stranger feel seen?", options: ["A guess", "A specific compliment", "A real question", "An introduction"], correct: 1 },
             { id: 'oac3-33', q: "\"Notice something, ask once, and then stop talking\" describes which opener?", options: ["Compliment Something Specific", "Make a Guess", "Ask About Them", "Ask How They Really Are"], correct: 3 },
             { id: 'oac3-34', q: "Which is a compliment plus a question?", options: ["\"That's a good coat.\"", "\"You make that look far too easy.\"", "\"Great notebook. Where do you get those?\"", "\"That was a good question you asked in there.\""], correct: 2 },
@@ -1716,7 +1716,7 @@ const programsData = [
     sections: [
       {
         id: 'section-1',
-        title: "Part 1 — Making the case",
+        title: "Stage 1 — Making the case",
         packs: [
           { key: "persuasionandinfluence1", label: "Persuasion and Influence — Pt. 1" },
         ],
@@ -1754,7 +1754,7 @@ const programsData = [
             { id: 'pn1-26', q: "Which version is the most persuasive of all?", options: ["The time you were wrong and changed your mind", "The time it worked", "The time it did not work", "What you saw someone else do"], correct: 0 },
             { id: 'pn1-27', q: "Why is that one so strong?", options: ["It is unusual", "It costs you something to say", "It is more detailed", "It flatters the listener"], correct: 1 },
             { id: 'pn1-28', q: "You have no direct case of your own. What can you still use?", options: ["A general argument", "A hypothetical", "What you saw someone else do", "Nothing — use a different strategy"], correct: 2 },
-            { id: 'pn1-29', q: "What are all four Part 1 strategies doing?", options: ["Making the proposal sound better", "Removing objections", "Building authority", "Giving the other person something to weigh, rather than something to accept"], correct: 3 },
+            { id: 'pn1-29', q: "What are all four Stage 1 strategies doing?", options: ["Making the proposal sound better", "Removing objections", "Building authority", "Giving the other person something to weigh, rather than something to accept"], correct: 3 },
             { id: 'pn1-30', q: "Which is a benefit they can picture?", options: ["\"You'd get the whole of Friday back.\"", "\"It would be much more efficient.\"", "\"Everyone would be happier with it.\"", "\"It's better practice.\""], correct: 0 },
             { id: 'pn1-31', q: "Why does a vague benefit fail?", options: ["It is forgettable", "It sounds like sales talk", "It is too small", "It cannot be checked"], correct: 1 },
             { id: 'pn1-32', q: "\"We tried it the other way in March and lost a week\" is which kind of reason?", options: ["From a consequence", "Marked as opinion", "From experience", "From something they missed"], correct: 2 },
@@ -1765,13 +1765,13 @@ const programsData = [
             { id: 'pn1-37', q: "Which of these is honestly marked as an opinion?", options: ["\"Everyone knows this is the better order.\"", "\"The data says it is safer.\"", "\"It is obviously the right way round.\"", "\"I've got no proof. It just feels like the safer order to me.\""], correct: 3 },
             { id: 'pn1-38', q: "What does the benefit strategy assume about how people decide?", options: ["They evaluate a proposal by what it costs and returns for them", "They follow the strongest argument", "They dislike change", "They copy what others do"], correct: 0 },
             { id: 'pn1-39', q: "You have made your case and they still say no. What have the four strategies given you?", options: ["A stronger position for next time", "A proposal they have actually weighed, rather than one they deflected", "A record of what was said", "Nothing, if they said no"], correct: 1 },
-            { id: 'pn1-40', q: "What is the single sentence that summarises Part 1?", options: ["Make the strongest argument you have", "Ask for less than you want", "Their side, not yours — say what they get, why, what nothing costs, and what happened to you", "Never argue with someone who has decided"], correct: 2 },
+            { id: 'pn1-40', q: "What is the single sentence that summarises Stage 1?", options: ["Make the strongest argument you have", "Ask for less than you want", "Their side, not yours — say what they get, why, what nothing costs, and what happened to you", "Never argue with someone who has decided"], correct: 2 },
           ],
         },
       },
       {
         id: 'section-2',
-        title: "Part 2 — When it is not that easy",
+        title: "Stage 2 — When it is not that easy",
         packs: [
           { key: "persuasionandinfluence2", label: "Persuasion and Influence — Pt. 2" },
         ],
@@ -1809,7 +1809,7 @@ const programsData = [
             { id: 'pn2-26', q: "What separates influence from pressure?", options: ["The strength of the argument", "Whether the choice is genuinely theirs — and whether you were prepared to mean it", "How many times you ask", "Whether they owe you anything"], correct: 1 },
             { id: 'pn2-27', q: "What is a handover followed by three more attempts?", options: ["Persistence", "Normal negotiation", "Worse than never having said it", "A sign the proposal matters"], correct: 2 },
             { id: 'pn2-28', q: "Which closes the loop cleanly?", options: ["\"I've said my bit. I won't keep raising it.\"", "\"Think about it and let me know.\"", "\"I really do think it's the right call.\"", "\"Just say if you change your mind.\""], correct: 0 },
-            { id: 'pn2-29', q: "What do all four Part 2 strategies have in common?", options: ["They are used after the case is made", "They work best in writing", "They avoid disagreement", "They lower what the other person has to give up in order to move"], correct: 3 },
+            { id: 'pn2-29', q: "What do all four Stage 2 strategies have in common?", options: ["They are used after the case is made", "They work best in writing", "They avoid disagreement", "They lower what the other person has to give up in order to move"], correct: 3 },
             { id: 'pn2-30', q: "Which is the consequence question?", options: ["\"Which would you rather be doing in October?\"", "\"What happens if it's not ready by the Friday?\"", "\"What's the bit that worries you?\"", "\"How would you do it?\""], correct: 1 },
             { id: 'pn2-31', q: "Which acknowledges by adding rather than replacing?", options: ["\"I don't think that works.\"", "\"I see it differently.\"", "\"That works. There's also a version where…\"", "\"You're right, but there's a problem.\""], correct: 2 },
             { id: 'pn2-32', q: "Why does saying \"I'd have said the same a month ago\" work?", options: ["It is honest and disarming when true", "It flatters them", "It shows you have changed", "It ends the disagreement"], correct: 0 },
@@ -1818,7 +1818,7 @@ const programsData = [
             { id: 'pn2-35', q: "Why does a trial beat a decision?", options: ["It is faster", "It is easier to reverse", "A trial is not a decision, so agreeing costs almost nothing", "It commits nobody"], correct: 2 },
             { id: 'pn2-36', q: "What is the risk of asking a question you already know the answer to?", options: ["It is an argument wearing a question mark, and it is heard as one", "They answer it wrongly", "It takes too long", "It makes you look uncertain"], correct: 0 },
             { id: 'pn2-37', q: "Someone says \"your way is much simpler to explain, which matters\". What are they doing?", options: ["Conceding the argument", "Being polite before disagreeing", "Changing their position", "Naming what is right about it specifically, rather than as a formality"], correct: 3 },
-            { id: 'pn2-38', q: "What is the pattern that runs through the whole of Part 2?", options: ["Argue better, then wait", "Make agreeing cheap — in thinking, in commitment and in pride", "Ask more questions than you answer", "Never state your own view first"], correct: 1 },
+            { id: 'pn2-38', q: "What is the pattern that runs through the whole of Stage 2?", options: ["Argue better, then wait", "Make agreeing cheap — in thinking, in commitment and in pride", "Ask more questions than you answer", "Never state your own view first"], correct: 1 },
             { id: 'pn2-39', q: "Why does removing someone's idea make them argue for it?", options: ["They defend what has been taken off the table", "They dislike being corrected in public", "They think you have not understood it", "They have already told others about it"], correct: 0 },
             { id: 'pn2-40', q: "What is the honest reason to say \"it's your call\"?", options: ["It ends the conversation", "It makes agreement likelier", "Because it is true — you have made your case and the decision is genuinely theirs", "It protects you if it goes wrong"], correct: 2 },
           ],
@@ -1826,7 +1826,7 @@ const programsData = [
       },
       {
         id: 'section-3',
-        title: "Part 3 — Meeting in the middle",
+        title: "Stage 3 — Meeting in the middle",
         packs: [
           { key: "negotiationandcompromise", label: "Negotiation and Compromise" },
         ],
@@ -1889,7 +1889,7 @@ const programsData = [
     sections: [
       {
         id: 'section-1',
-        title: "Part 1 — Catching what is there",
+        title: "Stage 1 — Catching what is there",
         packs: [
           { key: "responsivehumour", label: "Responsive Humour" },
         ],
@@ -1944,7 +1944,7 @@ const programsData = [
       },
       {
         id: 'section-2',
-        title: "Part 2 — Playing a part",
+        title: "Stage 2 — Playing a part",
         packs: [
           { key: "rolebasedhumour", label: "Role Based Humour" },
         ],
@@ -2005,7 +2005,7 @@ const programsData = [
       // route to it.
       {
         id: 'section-3',
-        title: "Part 3 \u2014 Keeping it going",
+        title: "Stage 3 \u2014 Keeping it going",
         packs: [
           { key: "storybanter", label: "Story Banter" },
         ],
@@ -2064,7 +2064,7 @@ const programsData = [
       // passed, and in the rest of the app when hum-cp4 is passed.
       {
         id: 'section-4',
-        title: "Part 4 \u2014 Getting the size right",
+        title: "Stage 4 \u2014 Getting the size right",
         packs: [
           { key: "calibratinghumour", label: "Calibrating Humour" },
         ],

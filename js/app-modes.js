@@ -547,7 +547,7 @@ const MORE_HELP = {
   importDataBtn: 'Puts a copy made with Export back into the app. It replaces what is in the app now.',
   replayOnboardingBtn: 'Shows the welcome tour from the first start again.',
   modeGuideBtn: 'Explains the six training modes and what each one is for.',
-  programGuideBtn: 'Explains what a program is, how Parts and checkpoints work, and what passing a checkpoint gives you.',
+  programGuideBtn: 'Explains what a program is, how stages and checkpoints work, and what passing a checkpoint gives you.',
   whatsNewBtn: 'New packs and features, newest first.',
   aboutBtn: 'What Deckstack is, the privacy policy, and why it is a practice tool and not therapy.',
   notesExportBtn: 'Saves the notes you have written on cards as one readable text. You write a note by tapping three times on the line under a card.',

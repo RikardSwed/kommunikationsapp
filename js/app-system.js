@@ -4914,6 +4914,7 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.62', date: 'October 2026', title: 'Programs: Parts become Stages', audience: 'dev', items: ['<strong>Parts \u2192 Stages</strong> in every program (Rikard 2026-10-14): the stage titles (<em>Stage 1 \u2014 First steps</em>, renamed from First moves, \u2026), the checkpoint questions that name them, the partial descriptions, and the program texts in the Extended store. Pack names keep <em>Pt.</em>, so a program stage and a pack part can no longer be confused.', '<strong>Programs guide</strong> is three short pages: a route, not a pack \u00b7 stages and checkpoints \u00b7 what passing gives you. The page about Pro-marked programs is gone.'] },
   { version: 'v1.29.61', date: 'October 2026', title: 'A guide to grid packs', audience: 'dev', items: ['New guide <strong>Grid packs</strong>, under Guides in the settings of Single Strategy and of the handsfree sheets that have Grid navigation. Six pages with drawings of the grid: strategies across, cards down; swiping along a row with Grid navigation on; down a column; what happens with it off; the reading order in handsfree; where to turn it on.', '<em>The rest of the screen</em> mentions Grid navigation on its Settings page and points to the new guide.', 'First Strategies intro is two pages again: the overview with strategies 1\u20132, then 3\u20136, one line each.'] },
   { version: 'v1.29.60', date: 'October 2026', title: 'Explanations on every settings screen', audience: 'dev', items: ['<strong>Every settings screen explains its rows.</strong> Tap a row\u2019s name in the home settings (developer section included) or the Progress settings and a short explanation folds out, as in the training sheets.', '<strong>Bigger tap area:</strong> the whole stretch from the name up to the switch or button folds the explanation out, with a small gap before the control.', 'Training modes guide: both pages of modes are titled <em>The training modes</em>. Describe Things intro: three strategies a page.', 'About &amp; privacy in the app no longer says the icon font is loaded from jsDelivr (it is built in since v1.29.49).'] },
   { version: 'v1.29.59', date: 'October 2026', title: 'Shorter intros, strategies not moves, no chevrons', audience: 'dev', items: ['<strong>First Strategies intro</strong> is one page: the paragraph about six strategies making one small conversation. The two pages listing the strategies are gone (Rikard: too much text).', '<strong>Training modes guide:</strong> page titles are now <em>The training modes</em> and <em>More training modes</em> (were <em>From the strategy</em> / <em>From another angle</em>). The first page says what the six are: three that train the strategies directly, then Challenges, Mindset and Memorize.', '<strong>\u201cMove\u201d \u2192 \u201cstrategy\u201d</strong> in the guides and pack intros (the modes guide, the training guide\u2019s swipe page, Show Understanding, Exploring a Topic) and in two Extended store descriptions.', '<strong>No chevrons</strong> after the names in the training and handsfree settings or on the topics in <em>Where your time went</em>. Tapping still folds the explanation or the packs out.', '<strong>Describe Things</strong> gets a pack intro, so every freemium pack now has one: one page, the six strategies in a line each, one example.'] },
@@ -8144,38 +8145,31 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
     //
     // Rikard, 2026-09-03: the guide comes first, the programme screen after.
     'programs-overview': {
+      // v1.29.62 — Parts are now Stages, the text is shorter and the page
+      // about Pro-marked programmes is gone (Rikard 2026-10-14).
       title: 'Programs',
       pages: [
         {
           title: 'A route, not a pack',
           html:
-            P('A pack is a set of strategies you can train in any order. A <strong>program</strong> is a route through several of them, in the order that makes each one easier than it would have been alone.') +
-            P('You do not have to use one. They exist for the times when you know roughly what you want and not where to start.') +
-            Pdim('Everything inside a program is also a normal pack. Nothing is locked away in here.')
+            P('A <strong>program</strong> takes you through several packs in an order where each one builds on the last.') +
+            Pdim('Every pack in a program is also a normal pack.')
         },
         {
-          title: 'Parts and checkpoints',
+          title: 'Stages and checkpoints',
           html:
             rows([
-              'A program is split into <strong>Parts</strong>. Each Part is a pack, sometimes two.',
-              'At the end of a Part there is a <strong>checkpoint</strong> &mdash; a short test on what that Part taught.',
-              'Pass it and the next Part opens. <strong>70% is the pass mark</strong>, and the questions are drawn fresh each attempt, so a retake is a different test.',
+              'A program is split into <strong>stages</strong>. Each stage is a pack, sometimes two.',
+              'Each stage ends with a <strong>checkpoint</strong>: a short test.',
+              'Pass with <strong>70%</strong> and the next stage opens.',
             ]) +
-            Pdim('You can retake a checkpoint as often as you like. Nothing is lost by failing one.')
+            Pdim('You can retake a checkpoint as often as you like.')
         },
         {
           title: 'What passing gives you',
           html:
-            P('Passing a Part&rsquo;s checkpoint does two things. It opens the next Part &mdash; and it releases that Part&rsquo;s packs into your library, permanently.') +
-            P('That second one matters more than it sounds. In <strong>Conversation Foundations</strong> the later Parts are Pro packs, and a free user who works through the route earns them one checkpoint at a time.') +
-            Pdim('Once a pack is released it behaves like any other: your library, your favourites, handsfree, all of it.')
-        },
-        {
-          title: 'The ones marked Pro',
-          html:
-            P('A program with a <strong>Pro</strong> badge can still be opened. You can read every Part, see which packs it uses and what each checkpoint asks &mdash; you just cannot run it yet.') +
-            P('That is deliberate. Deciding whether a route is worth it is hard to do from a title alone.') +
-            Pdim('Next: the Parts, and where you are in them.')
+            P('Passing a checkpoint opens the next stage and puts that stage&rsquo;s packs in your library for good.') +
+            Pdim('That is how a free user earns the later packs of Conversation Foundations.')
         }
       ]
     },
