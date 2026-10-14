@@ -4914,6 +4914,7 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.59', date: 'October 2026', title: 'Shorter intros, strategies not moves, no chevrons', audience: 'dev', items: ['<strong>First Strategies intro</strong> is one page: the paragraph about six strategies making one small conversation. The two pages listing the strategies are gone (Rikard: too much text).', '<strong>Training modes guide:</strong> page titles are now <em>The training modes</em> and <em>More training modes</em> (were <em>From the strategy</em> / <em>From another angle</em>). The first page says what the six are: three that train the strategies directly, then Challenges, Mindset and Memorize.', '<strong>\u201cMove\u201d \u2192 \u201cstrategy\u201d</strong> in the guides and pack intros (the modes guide, the training guide\u2019s swipe page, Show Understanding, Exploring a Topic) and in two Extended store descriptions.', '<strong>No chevrons</strong> after the names in the training and handsfree settings or on the topics in <em>Where your time went</em>. Tapping still folds the explanation or the packs out.', '<strong>Describe Things</strong> gets a pack intro, so every freemium pack now has one: one page, the six strategies in a line each, one example.'] },
   { version: 'v1.29.58', date: 'October 2026', title: 'Family Gatherings \u2014 a seasonal pack for the newsletter', audience: 'dev', items: ['New Deckstack Original <strong>Family Gatherings</strong> (<code>familygatherings</code>), under Asking &amp; Saying No and Flow &amp; Transitions, imported at <strong>complete</strong>. Seven strategies: Short Answer, New Topic \u00b7 Light Touch \u00b7 Park the Topic \u00b7 Name the Line Kindly \u00b7 Be Who You Are Now \u00b7 Draw Someone In \u00b7 Leave on Time. check-pack: 0 errors, 0 warnings.', 'Meant for the newsletter (December), together with Tone Boundaries Pt. 1, Job Interview Pt. 1 and New at Work \u2014 unlocked with Apple offer codes once purchases are live (Rikard 2026-10-13). Emotional Calibration is not a newsletter pack.', 'Kartan: all 16 new decks tagged.'] },
   { version: 'v1.29.57', date: 'October 2026', title: 'Career Conversations and Emotional Calibration \u2014 seven new packs', audience: 'dev', items: ['Seven new Deckstack Originals, built after <em>_Plan \u2014 Career Conversations och Emotional Calibration.md</em> (one builder per pack, check-pack: 0 errors, 0 warnings each), imported at <strong>complete</strong> until Rikard has tested them.', '<strong>Networking &amp; Career</strong>: Job Interview \u2014 Pt. 1: The Questions (<code>jobinterview1</code>), Job Interview \u2014 Pt. 2: The Hard Parts (<code>jobinterview2</code>), Talking to Your Manager (<code>talkingtoyourmanager</code>) and New at Work (<code>newatwork</code>). With Networking Pt. 1\u20132 they are the material for the coming Career Conversations programme.', '<strong>Emotions &amp; Regulation</strong>: Emotional Calibration \u2014 Pt. 1: Reading the Shift (<code>emotionalcalibration1</code>, grid, also under Listening &amp; Understanding), Pt. 2: Changing Course (<code>emotionalcalibration2</code>, grid) and Pt. 3: Meeting the Feeling (<code>emotionalcalibration3</code>).', 'GRID_PACKS gains emotionalcalibration1 and emotionalcalibration2. Kartan: all 101 new decks tagged; new family <strong>33 Work</strong> (job-interview, managing-up, new-job) and two new subtypes, <code>listening.read-shift</code> and <code>self-regulation.change-course</code>.'] },
   { version: 'v1.29.56', date: 'October 2026', title: 'Networking Pt. 1 opens in Pro, two small fixes', audience: 'dev', items: ['<strong>Networking \u2014 Pt. 1: At the Event</strong> moves from complete to <strong>pro</strong> (Rikard 2026-10-12): the open way into the coming Career Conversations programme. Pt. 2 stays at complete until the programme is built. The Pro screen now says 42 more packs (26 Pro packs plus 16 in the Pro programmes); the old 34 was stale.', 'Networking Pt. 2: the challenge <em>You Only Got in Touch When You Needed Something</em> is now <strong>Only When You Need Something</strong> (challenge, Memorize list card, Kartan key).', 'Tone Boundaries Pt. 1: the Memorize Mindset deck repeated the safety card from Core Idea word for word. It now asks what \u201cit\u2019s my job to calm them down\u201d costs, taken from the mindset itself. The safety card stays in Core Idea.', 'Dark mode: <em>Switch to Standard</em> on the pack screen was pale text on a pale button. The active toggle now uses the card colour for its text and icon, which reads in both themes.'] },
@@ -7225,35 +7226,37 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
     // tre, med tva rader var \u2014 nog for att kanna igen ett namn nar det
     // dyker upp pa nasta skarm, och inte mer an sa.
     firststrategies: {
+      // v1.29.59 — Rikard: too much text. One page, the middle paragraph
+      // only; the two pages listing the strategies are gone. The names are
+      // met one at a time in training anyway.
       pages: [
         {
           title: 'First Strategies',
           html:
-            '<p class="ob-text">Deckstack is a rehearsal room. You practise things to say ' +
-            'here, so they are already yours when a real conversation arrives.</p>' +
-            '<p class="ob-text">This pack holds six moves. Together they make one small ' +
-            'conversation, from the first remark to a good ending.</p>' +
-            '<p class="ob-text ob-text--dim">The next two pages introduce them. You do not ' +
-            'have to remember the names &mdash; you will meet them one at a time.</p>'
-        },
+            '<p class="ob-text">This pack holds six strategies. Together they make one small ' +
+            'conversation, from the first remark to a good ending.</p>'
+        }
+      ]
+    },
+
+    // v1.29.59 — Describe Things went freemium in v1.29.39 and had no intro.
+    // Rikard: every freemium pack gets one, short and visual.
+    describethings: {
+      pages: [
         {
-          title: 'Getting it going',
+          title: 'Describe Things',
           html:
+            '<p class="ob-text">Six strategies for describing something so the other person can ' +
+            'picture it &mdash; a lost bag, a tool, the thing on the top shelf.</p>' +
             '<div class="ob-how">' +
-            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Opening Statement</strong><br>Say something instead of asking something. A remark hands the other person material; a question hands them a job.</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Follow the Thread</strong><br>Take one word out of what they just said and go into it. You never need a new topic.</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Say It Back</strong><br>Show that you understood before you add anything of your own. It is the cheapest way to be easy to talk to.</p></div>' +
-            '</div>'
-        },
-        {
-          title: 'Saying what you want',
-          html:
-            '<div class="ob-how">' +
-            '<div class="ob-how-row"><span class="ob-how-num">4</span><p><strong>Ask Plainly</strong><br>Say what you want in one sentence, without building up to it. The ask is shorter than the run-up.</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">5</span><p><strong>A Friendly No</strong><br>Decline warmly and clearly at the same time. Warmth is not the same as a maybe.</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">6</span><p><strong>Answer With a Hook</strong><br>Leave something in your answer for them to pick up, so the turn comes back to you.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Name and Main Details</strong> &mdash; what it is, and what makes it different.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Size and Shape</strong> &mdash; compared with things everyone knows.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Material, Texture and Colour</strong> &mdash; what it is made of, and how it looks.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">4</span><p><strong>Where You Find It</strong> &mdash; where it is, and what is next to it.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">5</span><p><strong>What It Is For</strong> &mdash; what you use it for.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">6</span><p><strong>What It Resembles</strong> &mdash; something they know, and how it differs.</p></div>' +
             '</div>' +
-            '<p class="ob-text ob-text--dim">Six moves, one conversation. Start anywhere.</p>'
+            '<p class="ob-text ob-text--dim">&ldquo;It\u2019s a dark green rucksack, about the size of a shoebox, with a yellow patch on the front.&rdquo;</p>'
         }
       ]
     },
@@ -7377,7 +7380,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
           // are alternatives rather than a sequence.
           title: 'Choosing One',
           html:
-            '<p class="ob-text">Knowing the three moves is the easy half. Reading which one ' +
+            '<p class="ob-text">Knowing the three strategies is the easy half. Reading which one ' +
             'the moment wants is the skill this pack trains.</p>' +
             '<div class="ob-how">' +
             '<div class="ob-how-row"><span class="ob-how-num">1</span><p>Still telling it &mdash; <strong>ask</strong>.</p></div>' +
@@ -7386,7 +7389,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             '</div>' +
             '<p class="ob-text">For anything difficult: loop first, ask second, relate last. ' +
             'Most people do it backwards.</p>' +
-            '<p class="ob-text ob-text--dim">One move, then wait. The pause is part of it.</p>'
+            '<p class="ob-text ob-text--dim">One strategy, then wait. The pause is part of it.</p>'
         }
       ]
     },
@@ -7649,7 +7652,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             '<div class="ob-how-row"><span class="ob-how-num">2</span><p>Yes, but it is your turn &mdash; <strong>share</strong>, then invite.</p></div>' +
             '<div class="ob-how-row"><span class="ob-how-num">3</span><p>No &mdash; <strong>expand sideways</strong>, and only sideways.</p></div>' +
             '</div>' +
-            '<p class="ob-text ob-text--dim">Stay one move longer than feels natural. That is where the conversation usually is.</p>'
+            '<p class="ob-text ob-text--dim">Stay one question longer than feels natural. That is where the conversation usually is.</p>'
         }
       ]
     },
@@ -8035,20 +8038,21 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
           title: 'Six ways to train',
           html:
             '<p class="ob-text">Every pack holds the same strategies, taught six different ways.</p>' +
-            '<p class="ob-text">Three of them start from a strategy and work outwards. ' +
-            'Three come at it from somewhere else entirely.</p>' +
+            '<p class="ob-text">The first three train the pack\u2019s strategies directly. ' +
+            'Then come <strong>Challenges</strong>, built around situations, <strong>Mindset</strong>, ' +
+            'for the thoughts that hold you back, and <strong>Memorize</strong>, to learn the whole pack by heart.</p>' +
             '<p class="ob-text ob-text--dim">You do not have to use them all. Most people ' +
             'live in one or two.</p>'
         },
         {
-          title: 'From the strategy',
+          title: 'The training modes',
           html:
             '<div class="gd-modes">' +
             '<div class="gd-mode"><div class="gd-mode-ic"><i class="ti ti-cards" aria-hidden="true"></i></div>' +
-            '<div class="gd-mode-tx"><strong>Single Strategy</strong><span>One move at a time. A situation on the front, something you could say on the back. This is where a move becomes yours.</span></div></div>' +
+            '<div class="gd-mode-tx"><strong>Single Strategy</strong><span>One strategy at a time. A situation on the front, something you could say on the back. This is where a strategy becomes yours.</span></div></div>' +
             
             '<div class="gd-mode"><div class="gd-mode-ic"><i class="ti ti-layout-grid" aria-hidden="true"></i></div>' +
-            '<div class="gd-mode-tx"><strong>Collections</strong><span>Two or more moves side by side, and the question of which one this moment calls for. Knowing a move and picking it are different skills.</span></div></div>' +
+            '<div class="gd-mode-tx"><strong>Collections</strong><span>Two or more strategies side by side, and the question of which one this moment calls for. Knowing a strategy and picking it are different skills.</span></div></div>' +
             
             '<div class="gd-mode"><div class="gd-mode-ic"><i class="ti ti-list-numbers" aria-hidden="true"></i></div>' +
             '<div class="gd-mode-tx"><strong>Sequences</strong><span>A whole conversation, step by step, with the other person answering in between. The only mode where the order is the lesson.</span></div></div>' +
@@ -8056,11 +8060,11 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             '</div>'
         },
         {
-          title: 'From another angle',
+          title: 'More training modes',
           html:
             '<div class="gd-modes">' +
             '<div class="gd-mode"><div class="gd-mode-ic"><i class="ti ti-trophy" aria-hidden="true"></i></div>' +
-            '<div class="gd-mode-tx"><strong>Challenges</strong><span>The same moves, sorted by the problem instead of the strategy. You meet the comment first and pick the answer yourself.</span></div></div>' +
+            '<div class="gd-mode-tx"><strong>Challenges</strong><span>The same strategies, sorted by the problem instead of by strategy. You meet the comment first and pick the answer yourself.</span></div></div>' +
             
             '<div class="gd-mode"><div class="gd-mode-ic"><i class="ti ti-sparkles" aria-hidden="true"></i></div>' +
             '<div class="gd-mode-tx"><strong>Mindset</strong><span>Not about what to say at all. It takes the belief that stops you saying it, one thought at a time.</span></div></div>' +
@@ -8169,7 +8173,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
           html:
             ART.nextDeck() +
             cap('A new thing to practise') +
-            P('Swiping left or right moves to the next <strong>' + D.one + '</strong> &mdash; a different move, with its own name, its own explanation and its own set of inputs.') +
+            P('Swiping left or right moves to the next <strong>' + D.one + '</strong> &mdash; a different strategy, with its own name, its own explanation and its own set of inputs.') +
             Pdim('A pack is a stack of ' + D.many + '. A ' + D.one + ' is a stack of input cards.'),
         },
         {
@@ -8200,7 +8204,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
           title: 'The arrows at the bottom',
           html:
             ART.navBar() +
-            cap('The same moves, as buttons') +
+            cap('The same gestures, as buttons') +
             P('The outer two step between ' + D.many + '. The inner two step between inputs. They do exactly what the swipes do, for when one hand is busy.') +
             Pdim('Go forward past the last ' + D.one + ' and you land in the <strong>next pack</strong> in whatever list you opened this one from.'),
         },

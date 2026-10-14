@@ -1401,7 +1401,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       const open = _openTopics.has(e.name);
       return `<div class="pg-topic${open ? ' open' : ''}">` +
         `<button type="button" class="pg-row pg-row--topic" data-topic="${calEsc(e.name)}" aria-expanded="${open}">` +
-          `<span class="pg-row-name">${calEsc(e.name)}<i class="ti ti-chevron-right" aria-hidden="true"></i></span>` +
+          `<span class="pg-row-name">${calEsc(e.name)}</span>` +
           `<span class="pg-row-val">${fmtMin(e.min)}<span> min</span></span>${bar(e.min, max)}</button>` +
         `<div class="pg-subrows">` + packs.map(p =>
           `<div class="pg-subrow"><div class="pg-row-name">${calEsc(p.n)}</div>` +
@@ -2890,7 +2890,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         icon: 'ti-users-group',
         description: 'The other half of assertiveness: starting things, saying what you want, and bargaining with people you are equal to.',
         details: [
-          'Part 1 is defence \u2014 what to do when criticism, pressure or guilt is coming at you. This is the half nobody teaches: the moves you make first, with people who have no authority over you.',
+          'Part 1 is defence \u2014 what to do when criticism, pressure or guilt is coming at you. This is the half nobody teaches: the strategies you use first, with people who have no authority over you.',
           'Four strategies from Manuel J. Smith\u2019s work: catching the details people drop without being asked, saying what you actually feel, declaring a want without a single excuse attached, and trading the practical half of a conflict without giving up the part that matters.',
           'The hard cases are the ones with no rulebook \u2014 parents who still speak to you as a child, a flatmate who assumes yes, a partner asking for something you do not want tonight, a room full of strangers.',
           'What you\u2019ll get better at: asking for things, and holding a limit with someone you want to keep.',
@@ -2904,7 +2904,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         description: 'The openers that take nerve — approaching a group, saying the thing first, and starting something with no excuse to hide behind.',
         price: '29 kr',
         details: [
-          'The fourth and last step of the Starting Conversations ladder. The first three give you the moves; this one is where you use them with nothing to hide behind.',
+          'The fourth and last step of the Starting Conversations ladder. The first three give you the strategies; this one is where you use them with nothing to hide behind.',
           'Every situation here has real risk in it \u2014 walking up to people who are already talking, opening without a reason to be there, saying something personal before you know how it will land.',
           'Built as a full pack: strategies with worked examples, collections that mix them, challenges, sequences and mindset cards for the part that is actually hard, which is not the words.',
           'What you\u2019ll get better at: starting things you would normally walk past.',
