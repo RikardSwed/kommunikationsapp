@@ -574,6 +574,24 @@ const packTags = {
   whoyouare: [
     'talking about yourself', 'identity', 'background', 'values', 'stereotypes', 'where are you from', 'labels', 'self-disclosure', 'meeting new people'
   ],
+  manipulation1: [
+    'manipulation', 'guilt', 'obligation', 'emotional blackmail', 'guilt-tripping', 'threats', 'saying no', 'family pressure', 'boundaries', 'assertiveness'
+  ],
+  manipulation2: [
+    'manipulation', 'denial', 'rewriting history', 'darvo', 'blame-shifting', 'minimising', 'memory', 'facts', 'assertiveness'
+  ],
+  manipulation3: [
+    'manipulation', 'gossip', 'rumours', 'triangulation', 'messengers', 'exclusion', 'jealousy', 'comparison', 'public scenes', 'group chats', 'assertiveness'
+  ],
+  manipulation4: [
+    'manipulation', 'emotional pressure', 'tears', 'sulking', 'silent treatment', 'withdrawn affection', 'hints', 'helplessness', 'charm', 'moods', 'assertiveness'
+  ],
+  manipulation5: [
+    'manipulation', 'double bind', 'false choice', 'moving goalposts', 'loaded question', 'false urgency', 'foot in the door', 'going in circles', 'pressure', 'assertiveness'
+  ],
+  manipulationadv: [
+    'manipulation', 'patterns', 'darvo', 'guilt', 'silent treatment', 'charm', 'family pressure', 'consequences', 'ending conversations', 'getting help', 'assertiveness'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -625,11 +643,11 @@ const TOPICS = [
   // ── Standing your ground ──────────────────────────────────────────
   { id: 'opinions',              title: 'Opinions & Argumentation',      packs: ['influenceframing', 'agreeing', 'disagreeing', 'givingcounterexamples', 'discussing', 'supercomm2'] },
   { id: 'persuasion',            title: 'Persuasion & Negotiation',      packs: ['influenceframing', 'persuasionandinfluence1', 'persuasionandinfluence2', 'negotiationandcompromise'] },
-  { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression', 'oconnor1', 'oconnor3', 'jfisher1', 'jfisher2', 'assertivecomm1', 'assertivecomm2', 'assertivecommadv', 'integratedmaster', 'jfisher3', 'jfisheradv', 'passiveaggression2', 'passiveaggression3', 'passiveaggression4', 'passiveaggression5', 'toneboundaries1', 'toneboundaries2', 'toneboundaries3', 'toneboundaries4', 'speakingupasacustomer'] },
-  { id: 'boundaries',            title: 'Asking & Saying No',            packs: ['playfulrefusals', 'thehappyno', 'theregretfulno', 'makingrequests', 'sayingno', 'oconnor2', 'jimmy6', 'askingpermission', 'toneboundaries1', 'toneboundaries2', 'familygatherings'] },
+  { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression', 'oconnor1', 'oconnor3', 'jfisher1', 'jfisher2', 'assertivecomm1', 'assertivecomm2', 'assertivecommadv', 'integratedmaster', 'jfisher3', 'jfisheradv', 'passiveaggression2', 'passiveaggression3', 'passiveaggression4', 'passiveaggression5', 'toneboundaries1', 'toneboundaries2', 'toneboundaries3', 'toneboundaries4', 'speakingupasacustomer', 'manipulation1', 'manipulation2', 'manipulation3', 'manipulation4', 'manipulation5', 'manipulationadv'] },
+  { id: 'boundaries',            title: 'Asking & Saying No',            packs: ['playfulrefusals', 'thehappyno', 'theregretfulno', 'makingrequests', 'sayingno', 'oconnor2', 'jimmy6', 'askingpermission', 'toneboundaries1', 'toneboundaries2', 'familygatherings', 'manipulation1'] },
 
   // ── The hard end ──────────────────────────────────────────────────
-  { id: 'emotions',              title: 'Emotions & Regulation',         packs: ['emotionlabellingandregulation', 'conflictemotions', 'praxdread4', 'reframing', 'oconnor6', 'emotionalcalibration1', 'emotionalcalibration2', 'emotionalcalibration3'] },
+  { id: 'emotions',              title: 'Emotions & Regulation',         packs: ['emotionlabellingandregulation', 'conflictemotions', 'praxdread4', 'reframing', 'oconnor6', 'emotionalcalibration1', 'emotionalcalibration2', 'emotionalcalibration3', 'manipulation4'] },
 
   // ── In writing (v1.29.12) ─────────────────────────────────────────
   { id: 'written',               title: 'Messages & Writing',            packs: ['toneinmessages', 'replyingandnotreplying', 'whentostoptyping', 'supercomm3'] },

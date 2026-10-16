@@ -15224,6 +15224,594 @@ const collections = {
       ]
     },
   ],
+  manipulation1: [
+    {
+      name: "Buy Time",
+      guideFront: "Delay your answer when...",
+      guideBack: "A promise to answer at a set time",
+      description: "Do not answer while the pressure is on. Say you will decide later, and say when. \"I'm not deciding now. I'll tell you tomorrow.\" It is not a hidden no and not a way to dodge. It is a real answer, given at a real time, when you can think.\n\nIt works because guilt pressure depends on speed. \"I need to know now\", \"just say yes\", \"everyone's waiting\" — the rush is part of the push. Susan Forward's advice in Emotional Blackmail is to buy time before you answer: away from their face and their voice, you can find out what you actually want. And a promised answer at a set time is hard to argue with.\n\nKeep it short, and always name the time. A delay with no time sounds like hiding, and invites them to keep pushing.\n\nTypical phrases: \"I'm not deciding now.\", \"Let me think about it. I'll call you tonight.\", \"I'll give you an answer on Sunday.\", \"I don't say yes to things like this on the spot.\"\n\nThree ways to buy time:\n\n1. A set time — \"I'll tell you tomorrow at lunch.\"\n\n2. A reason to check — \"Let me look at my week first. I'll come and find you before five.\"\n\n3. A change of place — when there is an audience. \"I'm not answering that across the table. I'll ring you tonight.\"\n\nMindset: you are allowed to think before you answer, even when they want it now.",
+      inputs: [
+        { q: "Your mum calls: \"You're coming for the whole Christmas week, aren't you? I've already told everyone.\"", a: "\"I haven't worked out Christmas yet, Mum. I'll call you on Sunday with an answer.\"", bundle: 'free' },
+        { q: "On Thursday afternoon, Tom, your manager, stops at your desk: \"I need you in on Saturday for the launch. You can do that, right?\"", a: "\"Let me check what I've got on, Tom. I'll come and find you before five.\"", bundle: 'free' },
+        { q: "Your partner Jonas sees the group message on your phone: \"A whole weekend at the cabin without me? You're not really going, are you?\"", a: "\"I haven't said yes yet. Let me think, and we'll talk about it after dinner.\"", bundle: 'free' },
+        { q: "Your friend Lisa calls: \"I need to borrow eight hundred again. Today, if you can. You're the only one I can ask.\"", a: "\"I'm not going to decide this on the phone, Lisa. I'll call you back tomorrow morning.\"", bundle: 'free' },
+        { q: "At Sunday lunch, in front of your parents, your brother Marcus says, \"So I can have your car for the month, yeah? Just say yes.\"", a: "\"I'm not answering that across the table. I'll ring you tonight.\"", bundle: 'free' },
+        { q: "Your neighbour Mrs Ahmed catches you at the gate: \"Can you have the dogs for two weeks in July? I need to book the flights tonight.\"", a: "\"Let me look at my July first. I'll knock on your door before eight.\"", bundle: 'pro' },
+        { q: "Five minutes before a meeting, your colleague Daniel says, \"Can you take over my half of the report while I'm on holiday? I need to know now.\"", a: "\"I don't say yes to something that big in a rush. I'll tell you after the meeting.\"", bundle: 'pro' },
+        { q: "Your daughter Sofia, 24, calls: \"Can you send the rent money again? It has to be today.\"", a: "\"I love you, and I'm not deciding this in five minutes. I'll call you back this evening.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Feeling Yes, Answer No",
+      guideFront: "Show you hear them, then decline when...",
+      guideBack: "An acknowledgment, then the same no",
+      description: "Say out loud that you see how they feel, and then give the same answer. \"I can hear you're disappointed. My answer is still no.\" Two halves, in that order, and the second half never changes because of the first.\n\nIt works because it takes the feeling seriously without letting it decide. Most people believe there are only two choices: be cold and keep the no, or be kind and give in. This strategy is the third choice. It also works whether the feeling is real or used as pressure. You do not need to know which, because you are kind to the feeling and firm about the answer either way.\n\nName the feeling simply, and leave out \"but\". A full stop, or \"and\", keeps the two halves equal; \"but\" wipes out the first one.\n\nTypical phrases: \"I can hear you're disappointed. It's still no.\", \"I can see this is hard for you, and I'm sorry. The answer stays the same.\", \"I know you're upset. I'm still not coming.\"\n\nThree ways to name the feeling:\n\n1. What you hear — \"I can hear how let down you feel.\"\n\n2. What you see — \"I can see you're frustrated.\"\n\n3. Sorry for the feeling, not for the answer — \"I'm sorry it's so hard right now. The answer is still no.\"\n\nMindset: their feeling is real, and it still does not decide your answer.",
+      inputs: [
+        { q: "You tell Mum you'll only be there for two days this Christmas. Her voice drops: \"Oh. I just thought this year would be different.\"", a: "\"I can hear you're disappointed, Mum, and I understand. It's still two days this year.\"", bundle: 'free' },
+        { q: "You tell Tom you can't work on Saturday. He rubs his face: \"Great. That really leaves me stuck.\"", a: "\"I can see it puts you in a tight spot, Tom, and I'm sorry. I still can't do Saturday.\"", bundle: 'free' },
+        { q: "You tell Jonas you're going to the cabin. He looks away: \"No, you go. I'll just sit here on my own. Don't worry about me.\"", a: "\"I can tell you're sad about it, and I don't want you to feel left out. I'm still going.\"", bundle: 'free' },
+        { q: "You tell Lisa you won't lend her the money. She goes quiet, then: \"Wow. I really thought you'd be there for me.\"", a: "\"I can hear how let down you feel, Lisa, and I'm sorry it's so hard right now. The answer is still no.\"", bundle: 'free' },
+        { q: "You tell Marcus he can't have the car for a month. He throws his hands up: \"Unbelievable. I thought you'd actually help for once.\"", a: "\"I can see you're frustrated, and I get why. It's still no to the month.\"", bundle: 'free' },
+        { q: "You tell Mrs Ahmed you can't take the dogs. Her face falls: \"Oh dear. I don't know who else I can ask.\"", a: "\"I can see that's a real worry, and I'm sorry. I still can't have them for two weeks.\"", bundle: 'pro' },
+        { q: "You tell Daniel you can't take over his half of the report. He leans back: \"Right. Thanks a lot. Really.\"", a: "\"I can tell you're stressed about this, Daniel, and that's fair. I still can't take your half.\"", bundle: 'pro' },
+        { q: "You tell Sofia you won't pay her rent this time. She starts to cry: \"I thought you of all people would help me.\"", a: "\"I can hear how upset you are, love, and I'm so sorry it's this hard. I'm still not paying the rent this month.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Thanks Isn't a Debt",
+      guideFront: "Thank them, then still decline when...",
+      guideBack: "Gratitude, kept apart from the answer",
+      description: "Thank them, sincerely, for what they have done, and then say that it does not change your answer. \"I'm grateful for everything you've done. It doesn't change this.\" The thanks is real, and so is the no.\n\nIt works because \"after all I've done for you\" turns old kindness into a bill. Susan Forward calls this obligation: one of the three pressures in emotional blackmail, next to fear and guilt. If you argue about how much they did, you lose twice. You sound ungrateful, and you are now arguing about the size of the debt. So agree with the past fully, and refuse the bill.\n\nDo not play down what they did, and do not list what you have done for them. Both start a count, and a count is exactly what the pressure needs.\n\nTypical phrases: \"I'm grateful for everything you've done. It doesn't change this.\", \"You did, and I'll never forget it. The answer is still no.\", \"That was a gift, and I'm thankful. It isn't something I owe you for.\"\n\nThree ways to say it:\n\n1. Thank them for the specific thing — \"You were there every night during my divorce. I'll never forget it.\"\n\n2. Say it is not a debt — \"That was love, not a loan.\"\n\n3. Keep both side by side — \"I'm grateful, and I'm still saying no.\"\n\nMindset: you can be deeply grateful and still say no. Thanks is not a payment plan.",
+      inputs: [
+        { q: "Mum: \"After everything I've done for you — all those Christmases on my own with you kids — you can't give me one week?\"", a: "\"You gave us so much, Mum, and I'm grateful for every bit of it. It doesn't change how we're doing Christmas.\"", bundle: 'free' },
+        { q: "Tom: \"I signed off your leave in the spring when nobody else would. I thought I could count on you.\"", a: "\"You did, Tom, and I was really grateful. It doesn't change Saturday. It's my daughter's birthday.\"", bundle: 'free' },
+        { q: "Jonas: \"I've done all the cooking this year while you worked late. And now you want a weekend away from me?\"", a: "\"You've carried so much this year, and I really see it. I'm still going to the cabin.\"", bundle: 'free' },
+        { q: "Lisa: \"I was on the phone with you every night through your divorce. And now you won't help me?\"", a: "\"You were, Lisa, and I'll never forget it. It still doesn't mean I can lend you the money.\"", bundle: 'free' },
+        { q: "Marcus: \"I helped you move flat twice. Twice! Family helps family.\"", a: "\"You did, and I was so grateful both times. Helping me move doesn't mean I owe you the car.\"", bundle: 'free' },
+        { q: "Mrs Ahmed: \"I watered your plants all last summer. I've taken in every one of your parcels.\"", a: "\"You've been a wonderful neighbour, and I'm thankful for all of it. I still can't have the dogs.\"", bundle: 'pro' },
+        { q: "Daniel: \"I covered your calls for a whole week when your dad was ill. I didn't think twice.\"", a: "\"You did, and it meant a lot to me. It's not something I can pay back by taking your half.\"", bundle: 'pro' },
+        { q: "Sofia: \"I came home every weekend when you were ill last year. I gave up my whole summer for you.\"", a: "\"You did, and I'll always be grateful. That was love, not a loan, and it doesn't change the rent.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Smaller Yes",
+      guideFront: "Offer what you can give when...",
+      guideBack: "A real offer, smaller than the ask",
+      description: "Offer the part you can really give, instead of all or nothing. \"I can't do the weekend. I can do Sunday lunch.\" The no stays a no. The smaller yes is a real offer next to it, not a step on the way to giving in.\n\nIt works because guilt pressure makes it feel like there are only two answers: everything they want, or nothing at all, and nothing feels cruel. A smaller yes shows you care, in a form you can keep. It also tests the request. If it was about the need, help usually helps. If it was about winning, the smaller yes will not be enough, and that is useful to know.\n\nOnly offer what you would gladly do. A smaller yes you resent is just a slower way of giving in. And say it once, clearly. It is your offer, not an opening bid.\n\nTypical phrases: \"I can't do the weekend. I can do Sunday lunch.\", \"Not the whole week. I can do two days.\", \"I won't lend money. I can help you sort out the budget.\"\n\nThree kinds of smaller yes:\n\n1. Less of it — \"I can't do the whole week. I can do two days.\"\n\n2. A different kind of help — \"I can't lend you money. I can help you go through your bills.\"\n\n3. Later — \"Not this weekend. I'll keep the one after just for you.\"\n\nMindset: you do not have to choose between everything and nothing.",
+      inputs: [
+        { q: "Mum still wants the whole week. You're with your partner's family from the 26th, but the days before Christmas are free.", a: "\"I can't do the whole week, Mum. I can come on the 23rd and stay until Christmas Day.\"", bundle: 'free' },
+        { q: "Tom still needs the launch covered. Saturday is your daughter's party, but Friday evening is free.", a: "\"I can't do Saturday. I can stay late on Friday and get everything ready for the launch.\"", bundle: 'free' },
+        { q: "Jonas still hates the idea of a weekend apart. The cabin is this weekend; the next one is free.", a: "\"I can't skip the cabin. I can keep next weekend just for us, and you pick what we do.\"", bundle: 'free' },
+        { q: "Lisa still can't pay her rent. You won't lend money again, but you're good with budgets and free on Thursday.", a: "\"I can't lend you money. I can come round on Thursday, and we'll go through your budget and call the landlord together.\"", bundle: 'free' },
+        { q: "Marcus still has to get to work while his car is in the garage. You need yours on weekdays, but not on Saturdays.", a: "\"I can't lend it for a month. I can drive you in on Monday, and you can have it every Saturday.\"", bundle: 'free' },
+        { q: "Mrs Ahmed still has nobody for the dogs. You can't keep them in your flat, but you're home every evening.", a: "\"I can't have them for two weeks. I can help you find a sitter, and I'll look in on them every evening.\"", bundle: 'pro' },
+        { q: "Daniel still has too much to finish before his holiday. You can't take his half, but you have a free hour on Wednesday.", a: "\"I can't take your half. I can read your draft on Wednesday afternoon and give you notes.\"", bundle: 'pro' },
+        { q: "Sofia still can't cover the rent. You won't pay it again, but you could help her get on top of her money.", a: "\"I won't pay the rent again. I can come over on Saturday, and we'll go through your bills together.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Same Answer, Same Warmth",
+      guideFront: "Repeat it kindly when...",
+      guideBack: "The same short answer, with no new reasons",
+      description: "When they ask again, give the same answer in the same kind voice, with no new reasons. \"I know. Still no — and I still love you.\" It builds on Manuel J. Smith's broken record from When I Say No, I Feel Guilty, and adds a second half: the warmth stays too.\n\nIt works because each new reason is a new thing to argue with, and each sharper tone shows them that the pressure is getting to you. The same short answer, said kindly every time, gives the pressure nothing new to hold on to. The warm half matters most with people you love. It shows that you are refusing the request, not the relationship.\n\nKeep it shorter each time, not longer. Do not explain again. Explaining is how a third ask turns into a fourth.\n\nTypical phrases: \"I know. Still no — and I still love you.\", \"Same answer, Mum. I'm looking forward to the two days.\", \"Still no to the money. Thursday still stands.\"\n\nThree ways to keep the warmth:\n\n1. A warm word — \"I know, Mum. Still two days.\"\n\n2. What you look forward to — \"It's still no, and I'm really looking forward to Christmas Eve.\"\n\n3. What still stands — \"Still no to the month. Saturdays are yours.\"\n\nMindset: you do not need a better reason. You need the same one, said kindly.",
+      inputs: [
+        { q: "Ten minutes later, on the same call, Mum tries again: \"So you'll think about the whole week, then?\"", a: "\"I know, Mum. It's still two days, and I'm really looking forward to them.\"", bundle: 'free' },
+        { q: "At the end of the day, Tom tries again: \"Just think about Saturday. Even a couple of hours.\"", a: "\"I know it matters, Tom. Saturday is still a no. Friday evening I'm all yours.\"", bundle: 'free' },
+        { q: "On Thursday night, Jonas asks again: \"Couldn't you go for just one night?\"", a: "\"I wish it felt easier for you. It's still the whole weekend, and I'll still miss you.\"", bundle: 'free' },
+        { q: "Two days later, Lisa texts: \"A real friend wouldn't make me ask twice.\"", a: "\"Still no to the money, Lisa, and I'm still your friend. Thursday stands.\"", bundle: 'free' },
+        { q: "That evening, Marcus texts: \"Come on. Just the month. You won't even notice it's gone.\"", a: "\"Sorry, Marcus. Still not the month. Saturdays are yours.\"", bundle: 'free' },
+        { q: "The next morning, Mrs Ahmed tries again: \"Do this one thing, and I promise I'll never ask you for anything again.\"", a: "\"That's kind of you. It's still no to the two weeks, and I'll still look in every evening.\"", bundle: 'pro' },
+        { q: "On Wednesday, Daniel tries once more: \"Come on. Nobody else on the team would say no to this.\"", a: "\"Maybe not. It's still no from me, and the offer of Wednesday stands.\"", bundle: 'pro' },
+        { q: "An hour later, Sofia calls back: \"Please. Just this once more, and you'll never hear about it again.\"", a: "\"I know, love. It's still no to the rent, and I'll still be there on Saturday.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Take the Threat Seriously",
+      guideFront: "Answer the threat with care when...",
+      guideBack: "Care, with your decision unchanged",
+      description: "When the pressure turns into a threat, treat it as real. Say what it means to you, accept that their choice is theirs, and keep your answer. \"I'd be sad if you didn't come. If that's your choice, I'll respect it. Our plans stay the same.\" You neither laugh it off nor give in.\n\nIt works because a threat is the last step of guilt pressure: the feeling and the debt did not work, so now there is a price. Giving in teaches that the price works. Laughing it off is cold, and may miss something real. Taking it seriously does neither.\n\nTwo kinds of threat, which Susan Forward calls the punisher and the self-punisher:\n\n1. They threaten to punish you — \"then don't come\", \"don't call me\". Say what it would mean, accept their choice, and leave the door open. \"I'd miss you. If you need space, I'll give it.\"\n\n2. They say they will fall apart — \"I don't know what I'll do\". Answer with care and real help, never with a changed answer. \"That worries me. Are you safe right now? Let's call someone together. I'm still going.\" If you think someone is in danger right now, call emergency services.\n\nTypical phrases: \"I'm taking that seriously.\", \"If that's your choice, I'll respect it.\", \"Are you safe right now?\", \"My answer stays the same.\"\n\nMindset: taking a threat seriously means caring about the person, not obeying the threat.",
+      inputs: [
+        { q: "Mum, sharply: \"Fine. Then don't bother coming at all.\"", a: "\"I'd be really sad not to see you, Mum. If that's what you decide, I'll respect it. Our plan stays, and the 23rd is still there for you.\"", bundle: 'free' },
+        { q: "Tom: \"Okay. Just so you know, the people who help out are the ones I remember at review time.\"", a: "\"I'm taking that seriously, Tom. If Saturday is going to affect my review, I'd like us to talk about it openly, with HR. Saturday is still a no.\"", bundle: 'free' },
+        { q: "As you pack the car, Jonas says quietly, \"If you go, I don't know what I'll do.\"", a: "\"That worries me, and I'm not brushing it off. If it's that bad, let's call your brother now, so you're not on your own. I'm still going this weekend.\"", bundle: 'free' },
+        { q: "Lisa: \"Fine. I guess I know who my real friends are. Don't call me.\"", a: "\"I'd be sad to lose you, Lisa, and I mean it. If you need space, I'll give it. I'm here when you want to talk, and it's still no to the loan.\"", bundle: 'free' },
+        { q: "Marcus: \"Then don't expect me at your birthday. Or anything else.\"", a: "\"I'd really miss you there, and I'm not taking that lightly. If you choose not to come, that's yours to decide. The answer about the car stays the same.\"", bundle: 'free' },
+        { q: "Mrs Ahmed, coldly: \"Well. Then don't expect me to take in your parcels any more.\"", a: "\"I understand, and that's your choice. I'll sort out my parcels. My offer to look in on the dogs still stands.\"", bundle: 'pro' },
+        { q: "Daniel: \"Fine. Next time you're stuck, don't come to me.\"", a: "\"That's your call, and I'll respect it. I'd still help you where I can. The report stays with you.\"", bundle: 'pro' },
+        { q: "Sofia, quietly: \"If you don't help me, I don't know what I'll do.\"", a: "\"I'm really worried when you say that, and I'm taking it seriously. Are you safe right now? I'm coming over tonight, and we'll get you some help. The answer about the rent stays the same.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  manipulation2: [
+    {
+      name: "Stick to What Happened",
+      guideFront: "Describe the event plainly when...",
+      guideBack: "A dated, factual account",
+      description: "Say what happened as plainly as a camera would have caught it: when, where, and what was said or done. \"On Tuesday you said you'd pay me back by Friday.\" No labels, no judgements about the person, and no guesses about why.\n\nIt works because a twisted version of events lives on vagueness. \"You always\" and \"you never\" can be argued with for ever; \"on Tuesday, in the kitchen\" is much harder to push away. George Simon's advice in In Sheep's Clothing is to stay with what actually happened, and this is that strategy: a short, dated fact gives the other person nothing to push against except the fact itself.\n\nLeave out the adjectives. \"You were sneaky\" is a judgement they can deny. \"You had my phone open on my messages\" is an event.\n\nTypical phrases: \"On Tuesday you said…\", \"In Monday's meeting, you told Martin…\", \"On Saturday morning I saw you…\", \"You agreed to Thursday, and you didn't come.\"\n\nThree things to put in:\n\n1. The when — a day, a place or a time. \"On Sunday, on the phone…\"\n\n2. The what — the words or the act, with nothing added. \"You said, 'I put this report together.'\"\n\n3. The gap — what was agreed, next to what happened. \"You said you'd pick up the kids. The school called me at four.\"\n\nMindset: you do not need to prove what it meant. Saying what happened is enough.",
+      inputs: [
+        { q: "On Tuesday night you came out of the shower and found your partner Tom scrolling through your messages. Now you want to raise it.", a: "\"On Tuesday night, when I came out of the shower, you had my phone open on my messages with Lena.\"", bundle: 'free' },
+        { q: "In Monday's meeting, your colleague Karen told Martin, the director, that she wrote the Q3 report. You wrote it.", a: "\"In Monday's meeting, you told Martin you put the Q3 report together. I wrote that report.\"", bundle: 'free' },
+        { q: "Your mum said on Sunday she would pick the kids up from school on Thursday. On Thursday the school rang you at four.", a: "\"On Sunday you said you'd pick the kids up on Thursday. The school rang me at four because nobody came.\"", bundle: 'free' },
+        { q: "Your friend Marcus borrowed two hundred pounds a month ago. It is three weeks past the date he gave you.", a: "\"On the Tuesday you borrowed it, you said you'd pay me back by that Friday. That was three weeks ago.\"", bundle: 'free' },
+        { q: "Your manager Helen approved your leave for the first week of August in March. On Monday you saw it had been moved to the end of the month.", a: "\"In March you approved my leave for the first week of August. On Monday it showed the last week, and nobody asked me.\"", bundle: 'free' },
+        { q: "On Saturday morning you watched your neighbour Mr Brandt on a ladder, cutting back your apple tree.", a: "\"On Saturday morning I saw you on a ladder, cutting the branches off my apple tree, on my side of the fence.\"", bundle: 'pro' },
+        { q: "Your sister Anna told your mum about your divorce on Sunday. You had asked her to keep it to herself.", a: "\"Last week I asked you to keep the divorce to yourself. On Sunday you told Mum.\"", bundle: 'pro' },
+        { q: "Your son Jake, 24, took your car on Friday night without asking. On Saturday morning there was a new dent in the back door.", a: "\"You took my car on Friday night without asking. On Saturday morning there was a new dent in the back door.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Don't Debate Your Memory",
+      guideFront: "Hold your version calmly when...",
+      guideBack: "A calm statement of what you know",
+      description: "Say once, calmly, that you remember it differently, that you know what you saw or heard, and that you are not going to argue about it. \"We remember it differently. I know what I heard.\" Then carry on with the conversation.\n\nIt works because an argument about whose memory is right is one you cannot win, and the longer it runs, the more your own memory starts to wobble. When someone says \"That never happened\" with total confidence, the pull is to bring more and more proof. You do not need to. You can let them keep their version and still keep yours.\n\nThis is not the same as Let Both Memories Stand in Two Sides of the Story, which is for honest differences where both of you might be partly right. Here you know what happened, and the denial is a way to close the subject.\n\nTypical phrases: \"We remember it differently. I know what I heard.\", \"I'm not going to argue about what happened.\", \"You can see it your way. I know what I saw.\"\n\nThree ways to hold it:\n\n1. Name the difference — \"We remember it differently.\"\n\n2. Keep yours — \"I know what I saw, and I'm sure of it.\"\n\n3. Step out of the debate — \"I'm not going to go round in circles about this.\"\n\nMindset: you do not have to win the argument about what happened to know what happened.",
+      inputs: [
+        { q: "You tell Tom what you saw on Tuesday night. He says, \"I never touched your phone. You're imagining things again.\"", a: "\"We remember Tuesday differently. I know what I saw, and I'm not going to argue about it.\"", bundle: 'free' },
+        { q: "You raise the Q3 report with Karen. She says, \"I said 'we', not 'I'. You're making things up.\"", a: "\"I know what I heard you say to Martin, Karen. I don't need us to agree on it.\"", bundle: 'free' },
+        { q: "Your mum says, \"I never said Thursday. I said I'd try. You never listen properly.\"", a: "\"We remember Sunday differently, Mum. I know what you told me.\"", bundle: 'free' },
+        { q: "Marcus laughs. \"I never said Friday. I said I'd pay you when I could.\"", a: "\"You can remember it your way. I know you said Friday.\"", bundle: 'free' },
+        { q: "Helen says, \"I never approved the first week. You must have misread it.\"", a: "\"I'm sure of what you approved, Helen, and I'd rather not go round in circles about it.\"", bundle: 'free' },
+        { q: "Mr Brandt says, \"I never touched your tree. The wind must have done it.\"", a: "\"We see it differently. I watched you do it, and I don't need to argue about that.\"", bundle: 'pro' },
+        { q: "Anna says, \"I never said a word to Mum. She must have guessed.\"", a: "\"I'm not going to argue about who said what, Anna. I know what happened.\"", bundle: 'pro' },
+        { q: "Jake says, \"That dent's been there for months. You just never noticed.\"", a: "\"We remember the car differently. I know it wasn't there on Friday, and I won't argue about it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Back to the Point",
+      guideFront: "Return to the issue when...",
+      guideBack: "A redirect to the original issue",
+      description: "When they turn the conversation round, so that suddenly you are the one on trial, give the new subject a brief nod and bring the talk back to what you came to discuss. \"We can talk about that next. Right now we're talking about the money.\"\n\nIt works because the turn is a change of subject dressed up as an answer. Jennifer Freyd calls the pattern DARVO: Deny, Attack, and Reverse Victim and Offender. First it didn't happen, then you are attacked for raising it, and then they are the one who has been hurt. People who are confronted this way often start to doubt themselves, and simply knowing the pattern makes it work less well. You do not have to name it out loud. You only have to notice it and go back.\n\nGive their subject a real place later if it deserves one. That keeps it fair, and it keeps it from being a dodge.\n\nTypical phrases: \"We can talk about that next. Right now we're talking about…\", \"That's a separate thing. I'd like to finish this first.\", \"I hear you. Let's come back to the car.\"\n\nThree ways back:\n\n1. Park it — give their subject a later slot. \"We can talk about that after.\"\n\n2. Feel it, then return — when they are hurt or in tears. \"I can see you're upset. I still need to talk about this.\"\n\n3. Just the topic — a few calm words. \"The money, though.\"\n\nMindset: you can care about their new complaint and still finish your own.",
+      inputs: [
+        { q: "Tom turns it round: \"So now I'm some kind of spy? Maybe ask yourself why you're so secretive.\"", a: "\"We can talk about secrets after, if you want. Right now we're talking about my phone.\"", bundle: 'free' },
+        { q: "Karen says, \"Wow. I've covered for you all year, and now you're accusing me of stealing?\"", a: "\"I've been grateful for that, and we can talk about it. Right now I'd like to sort out the report.\"", bundle: 'free' },
+        { q: "Your mum's voice shakes: \"After everything I do for you, now you're calling me a liar?\"", a: "\"I know how much you do, Mum. I still need to talk about Thursday.\"", bundle: 'free' },
+        { q: "Marcus says, \"Chasing me for money when you know I'm broke? Some friend you are.\"", a: "\"I'm still your friend, and I know money's tight. We're still talking about the two hundred.\"", bundle: 'free' },
+        { q: "Helen says, \"I've fought to keep you on this project, and this is the thanks I get?\"", a: "\"I'm grateful for that, Helen. Right now I'd like to sort out my leave.\"", bundle: 'free' },
+        { q: "Mr Brandt says, \"I've put up with your leaves in my gutter for ten years, and now you're attacking me?\"", a: "\"We can talk about the leaves next. Right now I want to talk about the tree.\"", bundle: 'pro' },
+        { q: "Anna starts to cry. \"I've been there for you through all of this, and now I'm the bad one?\"", a: "\"I can see you're upset, and I know you've been there for me. We still need to talk about Mum.\"", bundle: 'pro' },
+        { q: "Jake says, \"Great. Accuse me again. You never trust me, and you wonder why I don't come round.\"", a: "\"I do want you to come round, and we can talk about trust. First, the car.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for the Specific",
+      guideFront: "Request one concrete example when...",
+      guideBack: "A question for one real example",
+      description: "When they answer with a vague accusation — \"You're the controlling one\", \"You're always so difficult\" — ask calmly for one concrete example. \"What exactly did I do that was controlling?\" A vague label becomes a specific claim, or it falls away.\n\nIt works because a vague accusation is easy to throw and impossible to answer. You cannot defend yourself against \"you're always like this\", and trying makes you look guilty. A question for one example does two things at once: it takes them seriously, and it asks them to back it up. George Simon's advice is to ask for direct answers, and this is the same idea. If there is a real complaint, you will hear it. If there is not, the label usually goes quiet.\n\nAsk, then listen. Do not argue with the first example they give. Thank them for it, and decide later whether it is fair. Then the talk can go back to where it started.\n\nTypical phrases: \"What exactly did I do?\", \"Can you give me one example?\", \"When was the last time?\", \"Ungrateful how?\"\n\nThree ways to ask:\n\n1. For the act — \"What exactly did I do that was controlling?\"\n\n2. For the time — \"When? Tell me the last time it happened.\"\n\n3. For their word — \"Territorial how?\"\n\nMindset: a fair complaint survives a question. You lose nothing by asking.",
+      inputs: [
+        { q: "Tom says, \"Honestly, you're the controlling one in this relationship.\"", a: "\"What exactly have I done that's controlling? Give me one example.\"", bundle: 'free' },
+        { q: "Karen says, \"This is so typical. You're always so territorial about your work.\"", a: "\"Territorial how, Karen? Tell me one time, and I'll think about it.\"", bundle: 'free' },
+        { q: "Your mum says, \"You've always been so ungrateful.\"", a: "\"Ungrateful how, Mum? What's one thing I did?\"", bundle: 'free' },
+        { q: "Marcus says, \"You're obsessed with money. You always have been.\"", a: "\"When else have I chased you for money? I'd like to know.\"", bundle: 'free' },
+        { q: "Helen says, \"To be honest, you're just not a team player.\"", a: "\"Can you give me one specific time I wasn't a team player?\"", bundle: 'free' },
+        { q: "Mr Brandt says, \"You people have been a nightmare to live next to.\"", a: "\"What have we actually done? Tell me one thing, and I'll listen.\"", bundle: 'pro' },
+        { q: "Anna says, \"You're the one who's always keeping secrets in this family.\"", a: "\"Which secrets? Name one, and we can talk about it.\"", bundle: 'pro' },
+        { q: "Jake says, \"You're the one who treats me like I'm still twelve.\"", a: "\"What do I do that treats you like you're twelve? I'd like an example.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Judge the Act, Not the Motive",
+      guideFront: "Separate reason from deed when...",
+      guideBack: "Their reason granted, the act still named",
+      description: "When they explain that they did it for a good reason — they were worried, they were helping, they did it for you — accept that the reason may be real, and say that the act is still not okay. \"Maybe you were worried. Reading my messages still isn't okay.\"\n\nIt works because a good motive is very hard to argue with. You cannot see inside them, and if you say \"you weren't worried at all\", you are suddenly fighting about their heart. George Simon's point in In Sheep's Clothing is that you can judge what someone did without judging why: the motive they claim does not change the act. So you grant the motive and keep your eye on the act.\n\nThe word that does the work is \"still\". It lets both things be true at once.\n\nTypical phrases: \"Maybe you were worried. It still isn't okay.\", \"I believe you meant well. I still don't want it to happen again.\", \"Even if that's why, it's not something I'm okay with.\"\n\nThree things it can hold:\n\n1. The motive, granted — \"Maybe you were worried.\"\n\n2. The act, named — \"Reading my messages still isn't okay.\"\n\n3. The next time — \"Next time, ask me first.\"\n\nMindset: you do not have to doubt their reason to say no to what they did.",
+      inputs: [
+        { q: "In the end Tom says, \"Fine, I looked. I only did it because I was worried about you.\"", a: "\"Maybe you were worried. Going through my messages still isn't okay.\"", bundle: 'free' },
+        { q: "Karen says, \"I only presented it because you get so nervous in front of Martin.\"", a: "\"Maybe you meant to help. Saying it was yours still wasn't okay.\"", bundle: 'free' },
+        { q: "Your mum says, \"I only stayed away because you need to learn to manage without me.\"", a: "\"Maybe you think I do, Mum. Saying yes and then not coming still isn't okay.\"", bundle: 'free' },
+        { q: "Marcus says, \"I only didn't say anything because I didn't want to stress you out.\"", a: "\"I believe you didn't want to stress me. Not paying and not telling me still isn't okay.\"", bundle: 'free' },
+        { q: "Helen says, \"I only moved it because the client asked for you in August.\"", a: "\"That may be true. Changing my approved leave without asking me still isn't okay.\"", bundle: 'free' },
+        { q: "Mr Brandt says, \"I only cut it because those branches were going to fall on your car.\"", a: "\"Maybe they were. Cutting my tree without asking still wasn't okay.\"", bundle: 'pro' },
+        { q: "Anna says, \"I only told her because I thought she should be there for you.\"", a: "\"I believe you wanted to help. Telling her before I was ready still wasn't okay.\"", bundle: 'pro' },
+        { q: "Jake says, \"I only took it because I didn't want to wake you up to ask.\"", a: "\"That was kind of you to think of. Taking the car without asking still isn't okay.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Keep a Record",
+      guideFront: "Put it in writing when...",
+      guideBack: "A summary to confirm in writing",
+      description: "Write down what happened or what was agreed, and when it matters, say so and send it to them. \"Just so we're clear, I'll text you what we agreed.\" A written note settles a question that two memories never can.\n\nIt works because twisted versions grow in the gaps between conversations. If the only record is two memories, the more confident one usually wins. A short text, an email or a dated note gives both of you something to come back to, and it quietly tells the other person that the next version will be checked. It is also for you: on a day when you start doubting yourself, it is there.\n\nKeep it neutral and short: what happened, what was agreed, and the date. It is a note, not a list of charges.\n\nTypical phrases: \"Just so we're clear, I'll text you what we agreed.\", \"I'll send an email after this so we both have it.\", \"I'm writing down today's date and what was said.\"\n\nThree kinds of record:\n\n1. The confirming message — sent to them. \"I'll text you the dates now.\"\n\n2. The email after a meeting — for work. \"I'll put this in an email so we both have it.\"\n\n3. The note for yourself — dated, for you alone. \"I'm going to write this down tonight, so I remember it as it was.\"\n\nMindset: writing it down is not an attack. It is how you stop arguing about it later.",
+      inputs: [
+        { q: "The talk about your phone is over, and Tom has agreed not to look at it again.", a: "\"Just so we're clear, I'll send you a text: my phone is mine, and you'll ask me instead of looking.\"", bundle: 'free' },
+        { q: "Karen has agreed that you will present your own reports from now on.", a: "\"Thanks, Karen. I'll send a short email after this, so we both have it.\"", bundle: 'free' },
+        { q: "Your mum has agreed to do Thursdays again, starting next week.", a: "\"Thanks, Mum. I'll put the pick-up days in the family chat every Sunday, so we both have them.\"", bundle: 'free' },
+        { q: "Marcus agrees to pay you back fifty pounds a week.", a: "\"Okay. I'll text you what we just said: fifty a week, starting this Friday.\"", bundle: 'free' },
+        { q: "Helen agrees to give you back the first week of August.", a: "\"Thank you. I'll send you an email with the dates after this, so it's in writing.\"", bundle: 'free' },
+        { q: "Mr Brandt grumbles, but agrees that from now on you will both ask before touching anything on the other's side.", a: "\"Good. I'll put a short note through your door with what we agreed, so we both have it.\"", bundle: 'pro' },
+        { q: "Anna, still upset, says she will check with you before she shares your news again.", a: "\"Thank you. I'll text you that tonight, so we remember it the same way.\"", bundle: 'pro' },
+        { q: "Jake agrees to pay for the dent and to ask before he takes the car.", a: "\"Thanks. I'll send you the photos and the garage quote tonight, with what we just agreed.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  manipulation3: [
+    {
+      name: "Ask Who Said It",
+      guideFront: "Ask for names when...",
+      guideBack: "A calm request for names",
+      description: "When someone tells you that \"everyone\" or \"people\" think something about you, ask calmly who. \"Who, exactly? I'd like to talk to them myself.\" It is not an attack and not a demand for proof. It turns a crowd back into people.\n\nIt works because a vague majority borrows weight from people who are not in the room. \"Everyone thinks you've been selfish\" sounds like a verdict. Often it is one or two people, and sometimes only the person speaking. Names turn it into something you can deal with. And if they will not give any names, you have learned how much weight it really carries.\n\nKeep your voice curious, not cross. You are not trying to catch them out. You are trying to find the real conversation.\n\nTypical phrases: \"Who, exactly?\", \"Which people?\", \"Can you tell me who? I'd like to talk to them.\", \"And what do you think?\"\n\nThree ways to ask:\n\n1. Ask for the names. \"Who said that?\"\n\n2. Ask for their own view, when they hide behind the group. \"Leave everyone out of it for a second. Is it what you think?\"\n\n3. Offer to go yourself. \"Then I'll talk to them directly.\"\n\nMindset: a crowd you cannot name cannot be answered. One person can.",
+      inputs: [
+        { q: "Your colleague Mark leans over at lunch: \"Just so you know, everyone thinks you've been really selfish with the holiday rota.\"", a: "\"Who, exactly? I'd like to talk to them myself.\"", bundle: 'free' },
+        { q: "Your sister, on the phone: \"The whole family's saying you've changed since you moved in with him.\"", a: "\"Who's saying it? I'd rather hear it from them.\"", bundle: 'free' },
+        { q: "In the group chat, Nina writes: \"People are saying you were rude to Jo at the party.\"", a: "\"Which people? I'll ask them what they saw.\"", bundle: 'free' },
+        { q: "Your manager, Karen, says there is \"a feeling on the team\" that you are not pulling your weight.", a: "\"Can you tell me who? I'd like to sort it out with them directly.\"", bundle: 'free' },
+        { q: "Your partner, in the middle of an argument: \"All my friends think you're controlling.\"", a: "\"Which friends? And is that what you think too?\"", bundle: 'free' },
+        { q: "Your neighbour Mr Davies stops you at the gate: \"The whole street's unhappy about your hedge, you know.\"", a: "\"Who on the street? I'll knock and ask them.\"", bundle: 'pro' },
+        { q: "Your friend Tom says everyone has noticed you have gone quiet in the group, and then refuses to say who.", a: "\"Then let's leave everyone out of it. Is it something you've noticed?\"", bundle: 'pro' },
+        { q: "Your mother: \"Nobody at Christmas could believe you left so early.\"", a: "\"Who was upset, Mum? I'll give them a call.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Go to the Source",
+      guideFront: "Talk to the person directly when...",
+      guideBack: "A direct question to the person involved",
+      description: "Talk to the person a story is about, or the person it came from, instead of talking about them to others. \"I heard something secondhand. I'd rather hear it from you.\"\n\nIt works because a story told secondhand gets bent a little with every telling, and the person who carries it has their own reasons. Going straight to the source gives them a fair chance to explain, and it stops the story from growing. It is also the one thing gossip is not built for. Gossip needs people to talk about each other, not to each other.\n\nKeep it private, short and open. You are checking, not prosecuting, so say what you heard and then let them answer.\n\nTypical phrases: \"I heard something secondhand. I'd rather hear it from you.\", \"Is something wrong between us?\", \"Can we talk about it, just us?\"\n\nThree ways in:\n\n1. Say what you heard, plainly, without accusing. \"I heard you feel I took credit for your slides. Is that right?\"\n\n2. Ask instead of telling. \"Is something wrong between us?\"\n\n3. Name the silence, when there is no story at all, only the cold shoulder. \"I've noticed I'm not being invited lately. Have I done something?\"\n\nMindset: the person it is about deserves to hear it from you, and you deserve to hear it from them.",
+      inputs: [
+        { q: "A colleague tells you that Sofia, on your team, has been saying you took credit for her slides.", a: "\"Sofia, I heard you felt I took credit for your slides. I'd rather hear it from you.\"", bundle: 'free' },
+        { q: "A friend says your old flatmate Ben has been telling people you never paid your share of the bills.", a: "\"Ben, I've heard you're saying I didn't pay my share. Can we talk about it?\"", bundle: 'free' },
+        { q: "Your friends have been planning weekends without you for a month, and nobody has said why.", a: "\"Emma, I've noticed I'm not being invited lately. Have I done something?\"", bundle: 'free' },
+        { q: "Your brother says his wife, Rachel, thinks you look down on her.", a: "\"Rachel, I heard something secondhand and I didn't like hearing it that way. Do you feel I look down on you?\"", bundle: 'free' },
+        { q: "Your partner says your friend Leo told her that you complain about her behind her back.", a: "\"Leo, I heard you told Anna I complain about her. What did you actually hear me say?\"", bundle: 'free' },
+        { q: "Mrs Ahmed across the road has stopped saying hello since the residents' meeting.", a: "\"Mrs Ahmed, things have felt cool since the meeting. Is something wrong?\"", bundle: 'pro' },
+        { q: "Your boss mentions that \"someone in finance\" is unhappy with your figures, and you know it is Greg.", a: "\"Greg, I gather you've got concerns about my figures. I'd rather sort them out with you directly.\"", bundle: 'pro' },
+        { q: "Your cousin says your aunt has been telling people you only visit when you want something.", a: "\"Auntie Jean, I've heard you feel I only come round when I need something. I'd like to hear that from you.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Decline the Messenger Role",
+      guideFront: "Refuse to carry the message when...",
+      guideBack: "A kind refusal to stand in the middle",
+      description: "When someone asks you to carry a message, or delivers one to you on someone else's behalf, kindly refuse to be the one in the middle. \"I'm not going to pass that on. Tell her yourself.\" Or, from the other side: \"If Mum's hurt, I'd like her to tell me.\"\n\nIt works because a message sent through a third person gets bent on the way, cannot be questioned, and lets the real sender avoid the real conversation. It also drags the messenger into a fight that is not theirs. Refusing does not end the conversation. It sends it to the place where it can actually happen.\n\nBe warm with the messenger. They are often stuck in the middle too, and they did not ask to be.\n\nTypical phrases: \"I'd rather not carry that.\", \"Thanks for telling me. I'll talk to her myself.\", \"That's between Dad and me.\", \"I'm staying out of the middle.\"\n\nThree positions you can be in:\n\n1. Someone asks you to pass it on. \"I'd rather not carry that. You should tell him yourself.\"\n\n2. Someone hands you a message from somebody else. \"Thanks for telling me. I'll talk to Dad myself.\"\n\n3. Someone wants you to keep running between them. \"Can you find out if she's still angry?\" \"I'm staying out of the middle. Ask her.\"\n\nMindset: you can care about both of them and still refuse to be the phone line between them.",
+      inputs: [
+        { q: "Your sister: \"Mum asked me to tell you she's very hurt you didn't come on Sunday.\"", a: "\"Thanks for telling me. If Mum's hurt, I'd like to hear it from her. I'll call her tonight.\"", bundle: 'free' },
+        { q: "Your colleague Ahmed: \"Could you tell Lena her presentation was a mess? It's better coming from you.\"", a: "\"I'm not going to pass that on. If it matters, tell her yourself.\"", bundle: 'free' },
+        { q: "Your teenage son: \"Dad says to tell you he's not coming to the match unless you apologise.\"", a: "\"That's between Dad and me, love. You don't need to carry it. I'll talk to him.\"", bundle: 'free' },
+        { q: "A friend: \"Can you find out if Kim's still angry with me? Without saying I asked.\"", a: "\"I'd rather stay out of the middle. Kim's easy to reach. Ask her.\"", bundle: 'free' },
+        { q: "Your partner, after a row with your mother: \"You tell her she's not staying with us at Easter. She listens to you.\"", a: "\"I'm not going to say that for you. If that's what we want, we tell her together.\"", bundle: 'free' },
+        { q: "Your neighbour Mrs Clarke: \"Could you mention to the people at number six that their dog barks all day? You know them better.\"", a: "\"I'd rather not be the go-between. They're nice. Knock and tell them.\"", bundle: 'pro' },
+        { q: "A friend messages you privately: \"Can you tell Sam the rest of us are annoyed with her? I don't want drama.\"", a: "\"If you're annoyed, tell her yourself. I'm not going to carry it for everyone.\"", bundle: 'pro' },
+        { q: "Your ex-husband's new partner rings: \"Tom asked me to tell you he's not happy about the holiday dates.\"", a: "\"Thanks for calling. I'd like Tom to tell me that himself, so I'll ring him.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Don't Compete",
+      guideFront: "Step out of the contest when...",
+      guideBack: "An invitation to say it straight",
+      description: "When someone tries to make you jealous, or holds you up against somebody else, step out of the contest instead of trying to win it. \"If you're interested in him, tell me straight. I'm not going to compete.\" It is not coldness. It is a refusal to audition.\n\nIt works because jealousy games and comparisons only pay off if you join in: try harder, prove more, show how much you care. Every round you play raises the price of the next one. Saying calmly that you will not compete takes away the reward, and it invites the real conversation underneath, which is about what they actually want from you. Researchers who study couples, including David Buss, describe making a partner jealous on purpose as a common way of testing a bond, used by women and men alike.\n\nTypical phrases: \"I'm not going to compete with your ex.\", \"I'm not your sister. What do you need from me?\", \"If something's missing, tell me what.\"\n\nThree shapes it comes in:\n\n1. The jealousy game. \"Funny, Alex says I'm the only one who really gets him.\" \"Sounds like you're close. Is there something you want to tell me?\"\n\n2. The comparison with a partner's past. \"My ex never had a problem with this.\" \"I'm not him. Tell me what the problem is for you.\"\n\n3. The comparison with a sibling or a colleague. \"Your brother calls me every week.\" \"I'm not going to race him, Mum.\"\n\nMindset: you do not have to win a contest you never entered.",
+      inputs: [
+        { q: "Your girlfriend, scrolling her phone: \"Funny, Alex says I'm the only one who really gets him.\"", a: "\"Sounds like you two are close. If there's something you want to tell me, tell me straight.\"", bundle: 'free' },
+        { q: "Your husband: \"My ex never had a problem with me going out on Fridays.\"", a: "\"I'm not her, and I'm not going to compete with her. What's the problem for you?\"", bundle: 'free' },
+        { q: "Your mother, on the phone: \"Your brother rings me every Sunday, you know.\"", a: "\"I'm not going to race him, Mum. I'd love to ring you on Wednesdays.\"", bundle: 'free' },
+        { q: "Your manager: \"Priya would have had this finished by Tuesday.\"", a: "\"Maybe. I'm not Priya. Tell me what you need and by when, and I'll tell you if I can do it.\"", bundle: 'free' },
+        { q: "Your boyfriend mentions, for the third time this week, that a woman at work laughs at all his jokes.", a: "\"You've said that a few times. If you're interested in her, tell me. I'm not going to compete.\"", bundle: 'free' },
+        { q: "A friend: \"Hanna always remembers my birthday without a reminder.\"", a: "\"I'm glad she does. I'm not going to compete with Hanna. I'm sorry I forgot.\"", bundle: 'pro' },
+        { q: "The night after an argument, your partner posts photos with an ex and then asks if you have seen them.", a: "\"I saw them. I'm not going to play that. Can we talk about last night instead?\"", bundle: 'pro' },
+        { q: "Your father, at a family dinner: \"Your cousin's just bought his second flat.\"", a: "\"Good for him. I'm happy where I am, Dad.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Correct the Record Once",
+      guideFront: "Give the facts one time when...",
+      guideBack: "A short, factual correction",
+      description: "When a twisted version of you is going round, give one short, factual correction to the people who heard it, and then stop. \"That's not what happened. Here's what I actually said.\" No counter-rumour, and no campaign.\n\nIt works because one calm correction gives people the facts without turning you into the story. A long defence, or a tour of everyone you know, makes the rumour bigger and makes you look worried. Gossiping back makes you look like part of the problem. Most people only need to hear it once, from you, plainly.\n\nSay it to the people who actually heard the story, not to everyone who might have.\n\nTypical phrases: \"That's not what happened.\", \"For the record, here's what I said.\", \"I've said what happened, and I'll leave it there.\"\n\nThree parts, and the last one matters most:\n\n1. The plain fact. \"I didn't say she was lazy. I said the deadline was tight.\"\n\n2. The fact, with a nod to the story. \"I've heard there's a version going round. Here's what actually happened.\"\n\n3. The stop, when it comes up again. \"I've said what happened. I'm not going to keep going over it.\"\n\nMindset: the truth said once, calmly, lasts longer than a defence said ten times.",
+      inputs: [
+        { q: "In a meeting, a colleague says he heard you refused to help with the launch.", a: "\"I didn't refuse. I said I could help from Thursday. That's all it was.\"", bundle: 'free' },
+        { q: "A friend asks, \"Is it true you told everyone Mia's wedding was tacky?\"", a: "\"That's not what I said. I said it was a long day. That's the whole story.\"", bundle: 'free' },
+        { q: "In the family group chat, your uncle writes that you stormed out at Easter.", a: "\"I left early because Lily was ill. That's all that happened.\"", bundle: 'free' },
+        { q: "Your neighbour has told the street that you reported his extension to the council.", a: "\"For the record, I didn't call the council. I'll leave it there.\"", bundle: 'free' },
+        { q: "A new colleague asks if it is true you were sacked from your last job.", a: "\"No, I left to come here. Somebody's got that wrong.\"", bundle: 'free' },
+        { q: "Your ex has told mutual friends that you left without a word. A friend asks you about it.", a: "\"That's not how it went, but I won't go through all of it. We talked for weeks.\"", bundle: 'pro' },
+        { q: "You have corrected it once already, and someone brings it up again at lunch.", a: "\"I've said what happened. I'm not going to keep going over it.\"", bundle: 'pro' },
+        { q: "A friend urges you to tell everyone what your former boss is really like.", a: "\"No. If someone asks me, I'll say what happened, once. That's it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Take It Private",
+      guideFront: "Offer a one-to-one talk when...",
+      guideBack: "An offer to talk away from others",
+      description: "When a dig or an accusation lands in front of other people, offer to talk about it, but not here. \"I'm happy to talk about this. Just the two of us, after.\" You do not defend yourself to the room. You take the room away.\n\nIt works because a public scene is built so that you cannot answer freely. Defend yourself and you look rattled; stay silent and it looks like agreement. Offering a private talk removes the audience, which is where the pressure comes from, and keeps the real issue alive. It also shows everyone watching that you are willing to talk, which is usually all they need to see.\n\nIf they keep going in public, say the same sentence once more, calmly, and carry on with your evening.\n\nTypical phrases: \"Let's talk about it later, just us.\", \"Not here. Can we have a coffee this week?\", \"I'll message you directly.\"\n\nThree ways to take it private:\n\n1. The offer. \"Happy to talk about that, just you and me, later.\"\n\n2. The time and place. \"Can we go through it in my office at two?\"\n\n3. Out of the group chat. \"I'll message you directly about this.\"\n\nMindset: you can be willing to talk without being willing to perform.",
+      inputs: [
+        { q: "At dinner with friends, your partner says, \"Go on, tell them why we were late. Oh wait, it's always your fault.\"", a: "\"I'm happy to talk about that. Just the two of us, later.\"", bundle: 'free' },
+        { q: "In a team meeting, a colleague says, \"Maybe if Jonas actually read his emails, we wouldn't be behind.\"", a: "\"If there's a problem with my emails, let's talk after the meeting, just us.\"", bundle: 'free' },
+        { q: "In the group chat, your friend Elin writes: \"Still waiting for SOME people to pay me back for the cabin.\"", a: "\"Elin, I'll message you directly about the cabin.\"", bundle: 'free' },
+        { q: "At a family barbecue, your father-in-law says loudly, \"Of course, she's never liked us.\"", a: "\"I'd like to talk about that properly, Gary. Not here. Can we have a coffee this week?\"", bundle: 'free' },
+        { q: "Your sister, in front of the children: \"Why don't you tell them how you forgot Mum's birthday?\"", a: "\"Let's talk about that later, just you and me.\"", bundle: 'free' },
+        { q: "At the residents' meeting, Mr Lund looks straight at you: \"Some people seem to think the rules don't apply to them.\"", a: "\"If that's about me, let's talk after the meeting, Mr Lund.\"", bundle: 'pro' },
+        { q: "You have offered once to talk later, and your partner keeps going in front of everyone.", a: "\"I've said I'll talk about it, just us. I'm not doing it here.\"", bundle: 'pro' },
+        { q: "On a video call, your manager criticises your report in front of the client.", a: "\"Happy to go through that with you after the call, Anna.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  manipulation4: [
+    {
+      name: "Comfort Without Conceding",
+      guideFront: "Comfort them, keep the issue open when...",
+      guideBack: "A comforting word, issue still open",
+      description: "Comfort the person who is upset, fully and kindly, and keep the question you were discussing open. \"I can see this is hard, and I'm here. The question is still open.\" You don't choose between kindness and your position. You do both, and keep them apart.\n\nIt works because tears and hurt make us want to help and to stop whatever caused them. That is a good instinct. The trouble starts when comfort and the decision get tied together, so that the only way to comfort is to give in. If tears end the conversation every time, the subject never gets talked about — and that is true whether the tears are a tactic or completely real. Keeping the two apart gives the feeling all the room it needs, without letting it decide the issue.\n\nTypical phrases: \"Come here. I'm not going anywhere.\", \"I can see how upset you are.\", \"We don't have to solve it right now.\", \"Nothing has been decided.\"\n\nThree ways to say it:\n\n1. Comfort first, question second — \"I'm here. And we'll still need to decide about the money.\"\n\n2. Name both out loud — \"Your feelings matter to me. So does this.\"\n\n3. Comfort, not a verdict — \"Take your time. Nothing has been decided yet.\"\n\nMindset: comforting someone is not the same as agreeing with them. You can do the first fully and still not do the second.",
+      inputs: [
+        { q: "You tell your partner you can't afford the holiday this year. Her eyes fill with tears: \"You never want to do anything nice.\"", a: "\"Come here. I can see how much you wanted this. We still need to look at the money together.\"", bundle: 'free' },
+        { q: "Your teenage son starts crying when you say his phone stays downstairs at night.", a: "\"I know this feels really unfair. I'm right here. The phone still stays down here tonight.\"", bundle: 'free' },
+        { q: "Your mother cries when you ask to move her hospital visit to a day you're not working: \"I'm just a burden to you.\"", a: "\"You're not a burden, Mum. I love you. We still need to find a day that works for both of us.\"", bundle: 'free' },
+        { q: "Every time you bring up the shared bills, your flatmate Tom gets upset. Tonight his voice breaks: \"Why are you always on at me?\"", a: "\"I'm not trying to make you feel bad, Tom. I can see this is hard. The bills still need sorting, and I'll help.\"", bundle: 'free' },
+        { q: "Your friend Lena starts crying when you say you can't lend her money again.", a: "\"Oh, Lena. I'm so sorry things are this hard. I can't lend it, but I can sit with you and look at other options.\"", bundle: 'free' },
+        { q: "Your husband's eyes water when you say you want to go back to work full-time: \"So the family doesn't matter any more?\"", a: "\"The family matters more than anything. I can see this scares you. I still want us to talk it through properly.\"", bundle: 'pro' },
+        { q: "Your colleague Priya starts crying in your one-to-one when you raise the missed deadlines.", a: "\"Take a minute — there's no rush. I want to help. We do still need a plan for the deadlines.\"", bundle: 'pro' },
+        { q: "Your adult daughter cries when you say you won't pay her rent any more: \"I thought you'd always be there for me.\"", a: "\"I am always there for you. That's why I'm sitting here. And the rent is still yours from next month.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Pause, Don't Drop",
+      guideFront: "Stop for now, name a time when...",
+      guideBack: "A break with a time to come back",
+      description: "When the conversation can't go on right now — too many tears, too much heat — stop it, and say when you'll come back to it. \"Let's stop for now. We'll pick it up tomorrow evening.\" A pause has a time on it. Dropping it does not.\n\nIt works because some conversations really should stop. Pushing on while someone is crying or shut down gets you nowhere. But if every hard moment ends the subject for good, both of you learn that the subject can be ended that way. Naming a time keeps the pause honest: it gives the feeling space, and it says, kindly, that the question has not gone away.\n\nThen you have to actually come back. A pause you never return to is just a drop with better manners.\n\nTypical phrases: \"Let's leave it for tonight. Tomorrow after dinner?\", \"I don't want to push this now. Can we try again on Saturday?\", \"We'll come back to it.\"\n\nThree ways to pause:\n\n1. Pause with a time — \"Let's stop. Tomorrow at seven?\"\n\n2. Pause with a reason — \"You're upset and I'm tired. Let's try again in the morning.\"\n\n3. Come back as promised — \"It's Saturday. Is now still a good time for that talk?\"\n\nMindset: stopping is fine. Stopping for good, without saying so, is what lets a subject disappear.",
+      inputs: [
+        { q: "Your partner is in tears, and the talk about money is going round in circles.", a: "\"Let's stop for tonight. We'll pick it up tomorrow after dinner.\"", bundle: 'free' },
+        { q: "Your dad gets so upset about moving into a care home that he can't go on.", a: "\"This is a lot for one evening, Dad. Can we come back to it on Sunday?\"", bundle: 'free' },
+        { q: "Your sister walks out of the room crying when you bring up who hosts Christmas. You follow her to the door.", a: "\"I won't push it now. Can we talk about Christmas on Thursday?\"", bundle: 'free' },
+        { q: "Your colleague's voice is shaking as you go through the new rota together.", a: "\"Let's pause here. Can we sit down again at ten tomorrow?\"", bundle: 'free' },
+        { q: "It's Sunday, the day you agreed to come back to the holiday question. Your partner hasn't mentioned it.", a: "\"It's Sunday. Is now a good time to finish the holiday talk?\"", bundle: 'free' },
+        { q: "Your son starts crying every time university applications come up, and the subject has been dropped for three weeks.", a: "\"We keep stopping, and that's okay. But we won't stop for good. Wednesday, after school?\"", bundle: 'pro' },
+        { q: "After crying about her parents' visit, your partner says, \"Can we please just forget it?\"", a: "\"We can stop for now. I don't want to forget it, though. Saturday morning?\"", bundle: 'pro' },
+        { q: "Your friend Marcus gets upset when you raise the money he owes, and says he can't talk about it today.", a: "\"That's fine. Not today. Can we talk about it next week — say Tuesday?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for the Words",
+      guideFront: "Ask them to say it plainly when...",
+      guideBack: "A request to say it out loud",
+      description: "When you're expected to guess — a hint, a sigh, \"you should have known\" — ask them to say plainly what they want. \"I can't read minds. Tell me what you'd like, and I'll answer honestly.\" You move the conversation from guessing to asking.\n\nIt works because hints and mood signals put the whole job on you: work out what they want, give it, and get blamed if you guessed wrong. It also means they never have to hear a no, because they never asked. Asking for the words is fair to both of you. They get a real answer to a real question, and you get to say yes, no or something in between — instead of being marked on a test you didn't know you were taking.\n\nAsk with warmth. Said coldly, the same words sound like \"I don't care what you want\".\n\nTypical phrases: \"What would you like me to do?\", \"Tell me straight and I'll answer straight.\", \"I'd rather you asked than hoped I'd notice.\"\n\nThree ways to ask:\n\n1. After a hint — \"It sounds like you want something. What is it?\"\n\n2. After \"you should have known\" — \"Maybe. Tell me now, and next time I'll know.\"\n\n3. After a compliment with something behind it — \"Thank you. Is there something you'd like to ask me?\"\n\nMindset: you are not failing them by not guessing. Asking is how you take them seriously.",
+      inputs: [
+        { q: "Your wife sighs loudly every time you sit down on the sofa after dinner.", a: "\"That sigh sounds like it means something. What would you like me to do?\"", bundle: 'free' },
+        { q: "Your boyfriend says, \"If you really cared, I wouldn't have to tell you.\"", a: "\"I do care. And I can't read minds. Tell me what you'd like, and I'll answer honestly.\"", bundle: 'free' },
+        { q: "Your mother says, \"Some daughters ring their mothers every Sunday.\"", a: "\"Would you like me to ring every Sunday, Mum? Ask me, and I'll tell you what I can do.\"", bundle: 'free' },
+        { q: "Your colleague keeps saying how swamped she is, looking at you each time.", a: "\"It sounds like you might want help. What exactly would you like me to take?\"", bundle: 'free' },
+        { q: "Your friend says, \"You should have known I'd want to come.\"", a: "\"Maybe. Next time, just tell me you want to come, and I'll tell you if it works.\"", bundle: 'free' },
+        { q: "Your partner is quiet all evening. When you ask, he says, \"You know what you did.\"", a: "\"I honestly don't. Tell me in plain words, and I'll listen.\"", bundle: 'pro' },
+        { q: "Your father-in-law spends twenty minutes praising your cooking, then trails off: \"If only someone could help with my garden...\"", a: "\"Thank you. Is that a question? Ask me straight, and I'll answer straight.\"", bundle: 'pro' },
+        { q: "Your teenage daughter slams the cupboards and says, \"Nobody in this house ever notices anything.\"", a: "\"I'd like to notice. Tell me what I missed, and what you'd like now.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Invite, Don't Chase",
+      guideFront: "Offer to talk once when...",
+      guideBack: "One open offer, then no pursuit",
+      description: "When someone goes silent or pulls away to show they're unhappy, make one clear, warm invitation to talk — and then stop chasing. \"I'm ready to talk whenever you are.\" After that, you carry on with your day.\n\nIt works because silence after a no makes you uncomfortable until you come running: asking what's wrong again and again, apologising for things you didn't do, giving in to make it stop. Schrodt and colleagues' review of the demand–withdraw pattern found that the cycle of one person pushing while the other pulls away harms couples, whichever partner does which part. One invitation breaks the cycle. It shows you care, it puts the next step with them, and it doesn't reward the silence with a chase.\n\nYou don't need to decide whether the silence is a tactic. The invitation works either way.\n\nTypical phrases: \"I'm here when you want to talk.\", \"Whenever you're ready, I'll listen.\", \"I'll be in the kitchen.\"\n\nThree ways to invite:\n\n1. Face to face — \"I can see you're upset. I'm ready to talk when you are.\"\n\n2. In one message — \"I'd like to talk when you're ready. No rush.\"\n\n3. Once more, after days — one reminder, not ten. \"My offer still stands. I'd like us to talk.\"\n\nMindset: one invitation shows you care. Ten chases teach them that silence works.",
+      inputs: [
+        { q: "Your partner has gone silent since you said no to her mother staying for a month.", a: "\"I can see you're upset. I'm ready to talk whenever you are.\"", bundle: 'free' },
+        { q: "Your friend Jonas hasn't answered your messages for three days since you couldn't help with his move.", a: "\"I'd like to talk when you're ready. No rush.\"", bundle: 'free' },
+        { q: "Your husband has gone out to the garage and won't speak to you since you said you're not selling your car.", a: "\"I'll be in the kitchen. Come and find me whenever you want to talk.\"", bundle: 'free' },
+        { q: "Your dad hung up on you yesterday and hasn't called back.", a: "\"Dad, I didn't like how that call ended. I'd like to talk when you're ready.\"", bundle: 'free' },
+        { q: "Your colleague has given you one-word answers all day since you turned down her project.", a: "\"If something's bothering you about the project, I'm happy to talk. Just say.\"", bundle: 'free' },
+        { q: "Your sister hasn't spoken to you for a week since you said you won't lend her your car.", a: "\"My offer still stands. I'd like us to talk, whenever you want to.\"", bundle: 'pro' },
+        { q: "Your son has given you the silent treatment for two days since you said no to the party. You told him you'd talk when he's ready. He walks past you in the hall.", a: "\"Hey. Still here when you want to talk.\"", bundle: 'pro' },
+        { q: "Your best friend has stopped replying in your group chat since you said you couldn't be a bridesmaid.", a: "\"I miss you. I'm here when you want to talk about it — just you and me.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Show, Don't Take Over",
+      guideFront: "Teach it, then hand it back when...",
+      guideBack: "An offer to teach, not to do it",
+      description: "When someone says they can't do something — \"You're so much better at it. I'd only mess it up\" — offer to help them learn it, and then hand it back. \"I'll show you once, then it's yours.\" Support, not a takeover.\n\nIt works because helplessness keeps working as long as taking over is quicker. Doing it yourself saves ten minutes today and gives you the job for years. And it isn't always a strategy: many people really do feel unsure. Showing works for both. If they truly can't, now they can. If they were hoping you'd do it, they find out that your help comes as teaching, not as doing.\n\nBe patient with mistakes. If you take over the first time something goes wrong, you are back where you started.\n\nTypical phrases: \"Let me show you, then you try.\", \"I'll sit with you the first time.\", \"Have a go. I'm right here if you get stuck.\"\n\nThree ways to show:\n\n1. Show once — \"Watch me do it this month, and next month it's yours.\"\n\n2. Sit beside them — \"You do it, I'll sit next to you.\"\n\n3. Hand it back after a mistake — \"That's fine, it happens. Have another go.\"\n\nMindset: being bad at something at first is not a reason never to learn it. Your help is to teach, not to do it for them forever.",
+      inputs: [
+        { q: "Your husband says, \"You're so much better with the school forms. I'd only mess it up.\"", a: "\"I'll show you this one, then the next one's yours.\"", bundle: 'free' },
+        { q: "Your colleague says, \"You do the spreadsheets so fast. Mine always break.\"", a: "\"Let me show you the formula once. Then you try the next tab.\"", bundle: 'free' },
+        { q: "Your teenage son says, \"I can't do washing. I'll ruin your clothes.\"", a: "\"Let's do one load together. After that, Saturdays are yours.\"", bundle: 'free' },
+        { q: "Your mum says, \"I'm hopeless with online banking. You do it for me.\"", a: "\"I'll sit with you while you do it. You press the buttons, I'll help.\"", bundle: 'free' },
+        { q: "Your flatmate says, \"I don't know how to talk to the landlord. You're better at it.\"", a: "\"I'll help you write down what to say. Then you make the call.\"", bundle: 'free' },
+        { q: "Your partner tries cooking dinner, burns it, and says, \"See? This is why you should do it.\"", a: "\"That happens to everyone. Same recipe tomorrow — I'll be right next to you.\"", bundle: 'pro' },
+        { q: "Your friend says, \"You're so good at booking trips. Can you just do mine?\"", a: "\"I'll show you the site I use. It takes ten minutes once you know how.\"", bundle: 'pro' },
+        { q: "Your manager says, \"You're our presentation person. Nobody does it like you,\" for the fifth time this month.", a: "\"Thank you. I'll coach Sam on this one, so the team has two of us.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stay Warm, Stay Put",
+      guideFront: "Be friendly and keep your answer when...",
+      guideBack: "Everyday kindness, same position",
+      description: "When the mood around you turns cold because you said no, keep being your normal, friendly self — and keep your answer. \"Morning! Coffee's ready.\" The same kindness as always, and the same answer as yesterday.\n\nIt works because a sulk, a cold shoulder or a heavy mood puts pressure on you without a word being said. There are two easy ways to react, and both feed it. Give in, and the mood has worked. Go cold back, and you are in a contest of who can sulk longest. Staying warm does neither. It shows that the mood hasn't changed your answer — and hasn't changed how you treat them either. Buss's study of everyday manipulation lists sulking among its tactic families, but you don't have to name it to handle it.\n\nWarm is not cheerful at them. It is just ordinary life, carried on.\n\nTypical phrases: \"Morning! Want some toast?\", \"I'm off to the shop — need anything?\", \"Night. Sleep well.\"\n\nThree ways to stay put:\n\n1. Carry on as normal — \"I'm making pasta. Want some?\"\n\n2. Kind words, same answer — when they bring it up. \"Yes, I'm still going on Friday. Have a lovely evening.\"\n\n3. Friendly without chasing — no second \"what's wrong?\". \"Good morning. There's coffee in the pot.\"\n\nMindset: their mood is theirs to feel. Your answer and your kindness can both stay where they are.",
+      inputs: [
+        { q: "You said no to a weekend away with his friends. The next morning your partner is short with you.", a: "(Next morning, same answer as last night.) \"Morning! Coffee's ready.\"", bundle: 'free' },
+        { q: "Your daughter says, \"Fine,\" and sulks all evening because you said no to a sleepover.", a: "\"I'm making hot chocolate. Want one?\"", bundle: 'free' },
+        { q: "Your colleague has been cool with you since you didn't cover his shift.", a: "\"Morning, Erik. Good weekend?\"", bundle: 'free' },
+        { q: "Your wife turns away when you go to hug her goodnight, still upset that you won't change your holiday plans.", a: "\"Night, love. Sleep well.\"", bundle: 'free' },
+        { q: "Your mother gives one-word answers on the phone because you're not coming for Easter.", a: "\"It was lovely to hear from you, Mum. Talk on Sunday.\"", bundle: 'free' },
+        { q: "Your partner mutters, \"Enjoy your football, then,\" as you leave for the match you said you'd go to.", a: "\"Thanks, I will. Back by six. Want anything from town?\"", bundle: 'pro' },
+        { q: "Your brother has been cold all through dinner because you won't sign for his loan. He asks for the salt without looking at you.", a: "\"Here you go. Did you try the potatoes? They're really good.\"", bundle: 'pro' },
+        { q: "Your friend has been distant since you said you won't go to the wedding. Finally she says, \"I suppose you're still not coming.\"", a: "\"I'm still not coming. I'd love to see the photos, and I'd love to take you out for lunch next week.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  manipulation5: [
+    {
+      name: "Refuse the False Choice",
+      guideFront: "Name a third option when...",
+      guideBack: "A third option, neither of theirs",
+      description: "When someone offers you two options and both are rigged, say no to both and give your own answer. \"Neither. I'm going, and I care.\" It is not dodging the question. It is refusing a menu someone else wrote.\n\nIt works because an either-or only has power while you stay inside it. \"Either you're with me or against me\" and \"if you go you don't care, if you stay you're faking\" leave you nothing safe to pick, and every pick accepts the frame. A third answer shows that there was always more than two.\n\nYou do not need to know whether the trap was built on purpose. Plenty of people say \"either-or\" when they are scared. The answer is the same either way.\n\nTypical phrases: \"Neither.\", \"Those aren't the only two.\", \"Both can be true.\", \"There's a third way.\"\n\nThree ways to refuse it:\n\n1. Neither, then yours — \"Neither. I'm going on Saturday, and I care about us.\"\n\n2. Both — when the choice pretends two things cannot go together. \"I'm on your side, and I disagree with this plan.\"\n\n3. Say what you'll do — when every answer is wrong. \"Whatever I pick seems to be wrong, so I'll just tell you my plan.\"\n\nMindset: you do not have to choose from a list someone else made.",
+      inputs: [
+        { q: "Your partner Lena says, \"If you go to your brother's on Saturday, you don't care about us. If you stay, you're only doing it to look good.\"", a: "\"Neither. I'm going on Saturday, and I care about us. Both are true.\"", bundle: 'free' },
+        { q: "In a meeting, your colleague Marcus says, \"Either you're with me on this budget, or you're against me.\"", a: "\"Neither. I'm with you on the goal, and against cutting the training money.\"", bundle: 'free' },
+        { q: "Your mother says, \"Either you come for the whole of Christmas, or don't bother coming at all.\"", a: "\"Those aren't the only two, Mum. We'll come on the 24th and leave on the 26th.\"", bundle: 'free' },
+        { q: "Your friend Jonas says, \"You either trust me or you don't. So lend me the car.\"", a: "\"I trust you, and I'm not lending the car. Both of those are true.\"", bundle: 'free' },
+        { q: "A car salesman says, \"So, is it the premium package or the deluxe?\"", a: "\"Neither, for now. It's the basic model or nothing today.\"", bundle: 'free' },
+        { q: "Your manager Helen says, \"Either you take the weekend shift, or I'll assume you're not committed.\"", a: "\"I'm committed, and I can't take the weekend. I can do two extra evenings instead.\"", bundle: 'pro' },
+        { q: "Your adult son says, \"If you help Emma with her deposit, you have to help me too. Otherwise you love her more.\"", a: "\"I love you both the same. That isn't how I'm deciding about money.\"", bundle: 'pro' },
+        { q: "Your sister says, \"If you say nothing, you're agreeing with Dad. If you say something, you're stirring.\"", a: "\"Then I'll just say what I think, once: I'd like Dad to stay in the house.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What Would Count",
+      guideFront: "Pin down the target when...",
+      guideBack: "A question that fixes the goal",
+      description: "When the target keeps moving — you did it, but not \"properly\" — stop trying again and ask what done looks like, before you start. \"What would 'properly' look like? Tell me now, so we agree.\"\n\nIt works because moving goalposts depend on a goal nobody says out loud. Each try gets measured against a target that only appears after you have tried. A clear answer before the next attempt turns a vague standard into something you can both see. If it moves again, you will both notice.\n\nIt also helps when nobody is playing games. Many people only find out what they wanted when they see what they got. Either way, the question saves you a fourth attempt.\n\nTypical phrases: \"What would 'properly' look like?\", \"What would make this done for you?\", \"Tell me now, so we agree.\", \"If I do that, is it finished?\"\n\nThree ways to ask:\n\n1. Ask for the picture — \"What would a good version look like, exactly?\"\n\n2. Say it back and get a yes — \"So: dishes, counters and floor. Is that the whole list?\"\n\n3. Point to the last change — when it has moved before. \"Last week it needed charts, now a summary. What's the full list?\"\n\nMindset: you cannot hit a target nobody will show you. Ask to see it.",
+      inputs: [
+        { q: "Your partner Tom says, \"Okay, you cleaned the kitchen. But you didn't do it properly.\"", a: "\"What would 'properly' look like? Tell me now, so we agree.\"", bundle: 'free' },
+        { q: "Your manager Priya says, \"It's better, but it's still not what I wanted.\"", a: "\"What would make it done for you? Give me the list and I'll work to that.\"", bundle: 'free' },
+        { q: "Your mother says, \"Yes, you visited. But you weren't really there.\"", a: "\"What would 'really there' look like, Mum? Tell me, and I'll see what I can do.\"", bundle: 'free' },
+        { q: "Your landlord says, \"The flat's cleaner, but I can't give you the deposit back yet.\"", a: "\"What exactly needs doing for the full deposit? Could you put it in an email?\"", bundle: 'free' },
+        { q: "Your friend Sara says, \"You came to my party, but you left early, so it doesn't count.\"", a: "\"What would have counted? Tell me, so I know for next time.\"", bundle: 'free' },
+        { q: "A client says, \"We liked version three, but now we'd like something more modern.\"", a: "\"Before I start version four: what does 'modern' mean to you? Could you send two examples?\"", bundle: 'pro' },
+        { q: "Your father-in-law says, \"Good, you finally fixed the fence. Shame about the gate.\"", a: "\"Last month it was the fence, now it's the gate. What's the full list, so I can plan?\"", bundle: 'pro' },
+        { q: "Your colleague Anders says, \"Thanks for the figures. But you should have known I needed them by department.\"", a: "\"So, by department. Anything else? If I do that, is it finished?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Slow the Clock",
+      guideFront: "Take your own time when...",
+      guideBack: "A refusal to be rushed",
+      description: "When someone says you must decide right now, treat the hurry as a reason to slow down, not speed up. \"If it has to be now, then it's a no.\"\n\nIt works because a deadline is the cheapest pressure there is. It skips the part where you think, check and ask someone. Real deadlines exist, and when they do, people can usually explain them and give you an hour. A deadline that falls apart the moment you ask about it was pressure, not a deadline. And an offer that cannot survive one night's sleep was rarely a good one.\n\nSusan Forward gives the same advice in Emotional Blackmail: do not decide while the pressure is on.\n\nTypical phrases: \"I'll tell you tomorrow.\", \"If it has to be now, it's a no.\", \"What happens if I answer on Friday?\", \"I don't decide big things on the spot.\"\n\nThree ways to slow it:\n\n1. Name your own time — \"I'll give you my answer by Thursday.\"\n\n2. Ask what the deadline is — \"What happens if I decide tomorrow?\"\n\n3. Let the offer go — when they will not wait. \"Then I'll pass. If it's still there next week, call me.\"\n\nMindset: their hurry tells you about their pressure, not about your deadline.",
+      inputs: [
+        { q: "A salesperson says, \"This price is only for today. Decide now, or the offer's gone.\"", a: "\"If it has to be now, then it's a no. Call me if it's still there next week.\"", bundle: 'free' },
+        { q: "Your boyfriend Erik says, \"If you don't say yes to moving in tonight, I'll know you're not serious.\"", a: "\"I'm serious about us. I'll give you my answer at the weekend.\"", bundle: 'free' },
+        { q: "Your manager Karin says, \"I need your yes on the new role before you leave today.\"", a: "\"I'll give you an answer tomorrow morning. Is there a reason it has to be today?\"", bundle: 'free' },
+        { q: "A landlord says, \"Three other people want this flat. Sign now or lose it.\"", a: "\"I understand. I'll read the contract tonight and tell you by ten tomorrow.\"", bundle: 'free' },
+        { q: "Your friend Mia says, \"The tickets go in an hour. Are you in or not? I need the money now.\"", a: "\"If it's an hour, I'm out. I don't spend that much without thinking.\"", bundle: 'free' },
+        { q: "Your brother says, \"Just sign the papers for Mum's house. We have to do it today.\"", a: "\"What happens if we sign on Monday? I want a night to read them.\"", bundle: 'pro' },
+        { q: "A phone salesperson says, \"I can only hold this deal while we're on the call.\"", a: "\"Then I'll let it go. Send me the offer in writing and I'll look at it.\"", bundle: 'pro' },
+        { q: "Your partner says, \"Tell me now if you're coming to my parents' for Easter. I need to know right now.\"", a: "\"I can see you need an answer. You'll have it tonight, once I've checked my shifts.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Answer the Real Question",
+      guideFront: "Find what they need when...",
+      guideBack: "The worry addressed, not the charge",
+      description: "When a question has an accusation built into it — \"Why do you always have to ruin things?\" — do not defend yourself against the accusation. Correct it in a few words, or not at all, and answer what they actually need to know. \"I don't always ruin things. What's bothering you about tonight?\"\n\nIt works because a loaded question has two parts: the charge (\"you always ruin things\") and the real question under it (something about tonight has upset them). Answer the charge and you are on trial, and every reason you give accepts the \"always\". Answer the real question and you are talking about the actual problem, which is the only part that can be fixed.\n\nTypical phrases: \"Not always. What happened tonight?\", \"I don't think that's true. What's worrying you?\", \"Let's leave 'always' out of it. What do you need from me?\"\n\nThree ways to answer it:\n\n1. Correct it short, then ask — \"I don't always ruin things. What's bothering you about tonight?\"\n\n2. Skip the charge — when it is not worth a word. \"What's happened? You sound upset.\"\n\n3. Answer the practical part — when there is one. \"I was twenty minutes late tonight. Next time I'll text before I leave.\"\n\nMindset: a question is not a trial. Find the part that can be answered.",
+      inputs: [
+        { q: "At a party, your partner Anna says, \"Why do you always have to ruin things?\"", a: "\"I don't always ruin things. What's bothering you about tonight?\"", bundle: 'free' },
+        { q: "Your father says, \"Why can't you ever just be grateful?\"", a: "\"I am grateful, Dad. What's upset you?\"", bundle: 'free' },
+        { q: "Your manager David says, \"Why are you always the one slowing this project down?\"", a: "\"I'm not sure that's true. What's late that you're worried about?\"", bundle: 'free' },
+        { q: "Your friend Leo says, \"Why are you so selfish with your time these days?\"", a: "\"I've been busy, not selfish. Would you like us to meet up more?\"", bundle: 'free' },
+        { q: "Your mother-in-law says, \"Why do you never let me see the children?\"", a: "\"You saw them two weeks ago. Would you like a regular day with them?\"", bundle: 'free' },
+        { q: "Your sister says, \"When did you stop caring about this family?\"", a: "\"I haven't. What's happened that makes it feel that way?\"", bundle: 'pro' },
+        { q: "Your colleague Nadia says, \"Why do you always have to make everything so complicated?\"", a: "\"Let's leave 'always' out of it. Which part of the plan looks too complicated?\"", bundle: 'pro' },
+        { q: "Your adult daughter says, \"Why do you always take his side?\"", a: "\"I don't think I do. What's happened with your brother?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Step Out of the Loop",
+      guideFront: "Stop going round when...",
+      guideBack: "A clear stop, not a new reason",
+      description: "When the same argument comes round for the third or fourth time in new words, stop the circle. Say that you have been here before and end the round, without adding a new argument. \"We've been round this three times. I'm stopping here.\"\n\nIt works because a loop wears you down. Each time round, you add a reason, and each reason is something new to argue with. In the end people give in because they are tired, not because they are convinced, and the loop teaches both of you that tiredness wins.\n\nStepping out is not sulking or slamming a door. It is saying, calmly, that this round is over, and when it fits, when you will pick it up again.\n\nTypical phrases: \"We've been round this three times.\", \"I've given you my answer. I won't argue it again.\", \"Let's stop here. We can talk on Sunday.\"\n\nThree ways to step out:\n\n1. Count and stop — \"That's the third time round. I'm stopping here.\"\n\n2. Stop and set a time — \"Let's leave it tonight. We'll talk on Sunday with fresh heads.\"\n\n3. Stop and change the subject — when it is closed for good. \"I've said all I have to say about it. How's the garden?\"\n\nMindset: you do not owe anyone a fifth round. Ending a circle is not losing it.",
+      inputs: [
+        { q: "For the fourth time tonight, your husband Jakob says, \"But think about it, selling the summer house just makes sense.\"", a: "\"We've been round this four times tonight. I'm stopping here.\"", bundle: 'free' },
+        { q: "Your colleague Sofia says, \"Okay, but what if we look at it from the customer side?\" It's the third time she has reopened the same decision.", a: "\"I think we've looked at it from every side. My answer's the same. Let's go to the next point.\"", bundle: 'free' },
+        { q: "Your mother says, \"I'm just saying, if you'd taken that job in Stockholm…\" It's the fourth call this week.", a: "\"Mum, we've had this one a lot this week. I'm not going over it again. How's the garden?\"", bundle: 'free' },
+        { q: "Late at night, your friend Oskar asks for the fifth time, \"But why didn't you just tell me?\"", a: "\"I've answered that as well as I can. Let's stop for tonight and talk tomorrow.\"", bundle: 'free' },
+        { q: "A salesperson says for the third time, \"But have you thought about how much you'd save?\"", a: "\"I have, and the answer's still no. I'm going to end the call now. Thanks.\"", bundle: 'free' },
+        { q: "You stopped last night's argument. At breakfast, your partner Mikael says, \"I just don't understand why you won't…\"", a: "\"We stopped last night for a reason. Sunday afternoon, like we said.\"", bundle: 'pro' },
+        { q: "Your manager Linda reopens the summer holiday rota in every one-to-one.", a: "\"We decided this in March. If it needs reopening, let's book a meeting for it, not do it every week.\"", bundle: 'pro' },
+        { q: "In the family group chat, your sister starts the argument about Grandma's ring again.", a: "\"I've said everything I have to say about the ring. I won't go round it again here.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Watch the Ladder",
+      guideFront: "Hold your first level when...",
+      guideBack: "The original deal, said again",
+      description: "When a small yes keeps growing — one evening a week becomes every weekend, and then \"you promised\" — notice the steps and stay at the level you actually agreed to. \"I said one evening a week. That's still what I can do.\"\n\nIt works because each step is only a little bigger than the last, so no single step feels like the one to refuse. People call it getting a foot in the door. A yes seems to commit you to the next step, but it only covers what you said yes to. Saying the original deal out loud makes the climb visible to both of you without accusing anyone. Sometimes the other person had not noticed either.\n\nTypical phrases: \"I said one evening a week.\", \"That's more than I agreed to.\", \"I'm happy to keep doing what I said.\", \"Let's go back to what we agreed.\"\n\nThree ways to hold your level:\n\n1. Say the original — \"I said Tuesdays. Tuesdays still work.\"\n\n2. Name the step — \"That's the third time this has grown. I'm staying at once a week.\"\n\n3. Make a new deal on purpose — when you do want to give more. \"I can do more in May. Let's agree that as a new thing, with an end date.\"\n\nMindset: yes to the first step was yes to the first step. Every next step is a new question.",
+      inputs: [
+        { q: "Your partner Sanna says, \"You said you'd do one evening a week with my parents. So this weekend too, right? You promised.\"", a: "\"I said one evening a week. That's still what I can do.\"", bundle: 'free' },
+        { q: "Your neighbour Per borrowed your trailer for a day, then every weekend. Now he says, \"I'll just keep it at mine, okay?\"", a: "\"I was happy to lend it for a day. I'd like it back here tonight.\"", bundle: 'free' },
+        { q: "Your manager Jonas says, \"You covered Friday last time, so I've put you down for every Friday this month.\"", a: "\"I covered one Friday as a favour. I can't do every Friday.\"", bundle: 'free' },
+        { q: "You gave your friend Elin a lift once, then every morning. Now she says, \"You don't mind going via the gym, do you?\"", a: "\"I'm happy to do mornings, like we said. The gym's too far out of my way.\"", bundle: 'free' },
+        { q: "First it was Sunday dinners, then Saturdays too. Now your mother says, \"And Christmas at ours every year. You agreed.\"", a: "\"I agreed to Sunday dinners, and I love them. Christmas we'll decide each year.\"", bundle: 'free' },
+        { q: "Your landlord says, \"Since you let the plumber in last week, you can be there for all the repairs, right?\"", a: "\"I let him in once because I was home. For the other repairs, I'll need notice and a time that suits me.\"", bundle: 'pro' },
+        { q: "You lent your adult son money in January. Then in March. Now he says, \"You said you'd help me out each month.\"", a: "\"I helped twice, and I was glad to. I'm not able to make it monthly.\"", bundle: 'pro' },
+        { q: "You checked one slide for your colleague Fatima. Now she sends you a whole deck every week.", a: "\"I'm glad the slide helped. A whole deck every week is more than I can take on.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  manipulationadv: [
+    {
+      name: "Point Out the Pattern",
+      guideFront: "Describe what keeps happening when...",
+      guideBack: "A calm observation and an invitation",
+      description: "Name what keeps happening — once, calmly, as behaviour you have seen — and ask to talk about it. \"I've noticed that when I say no, there are a few days of silence. I'd like us to talk about that.\" It is not a diagnosis. You describe what happens, not what they are.\n\nIt works because one tactic can be a bad day, but a pattern only changes once it is out in the open. Said as an observation, it is hard to deny and easy to answer: they can tell you what is going on for them. Said as a label — \"you're manipulating me\", \"that's gaslighting\" — it becomes an attack, and the next round starts.\n\nPick a calm moment, not the middle of a row. Say it once. If nothing changes, the other strategies do the work.\n\nTypical phrases: \"I've noticed that when…\", \"This has happened a few times now.\", \"I'd like us to talk about it.\", \"What's going on for you when that happens?\"\n\nThree ways to point it out:\n\n1. When, then — the trigger and what follows. \"When I say no, the next few days go quiet.\"\n\n2. The count — how often, without a list of crimes. \"This is the third time a no has ended in tears and then silence.\"\n\n3. The invitation — end with a question, not a verdict. \"Can we talk about what happens for you then?\"\n\nMindset: describe the pattern, not the person. Once is enough.",
+      inputs: [
+        { q: "Your partner Daniel is warm all week, then goes cold the day you say you're seeing your friends. It's the third weekend in a row. Now it's a calm Sunday evening.", a: "\"Can I mention something? When I make plans without you, things go cold between us for a day or two. I'd like us to talk about that.\"", bundle: 'free' },
+        { q: "Your mother has cried on the phone each time you've said no this year, and then not called for a week. Today she's in a good mood.", a: "\"Mum, I've noticed that when I say no, you get upset, and then I don't hear from you for a while. Can we talk about that?\"", bundle: 'free' },
+        { q: "Every time you turn down extra work, your colleague Priya says how much she's covered for you. Then it comes up in the team meeting that you're \"not a team player\". You're having coffee, just the two of you.", a: "\"Priya, I've noticed something. When I say no to extra work, it comes up in the team meeting afterwards. I'd rather we talked about it directly.\"", bundle: 'free' },
+        { q: "When you disagree with your friend Tom, he says you've changed, and then you're left out of the group's plans for a few weeks. It's the third time this year.", a: "\"Tom, this has happened a few times now: we disagree, and then I'm left out for a while. What's going on for you when that happens?\"", bundle: 'free' },
+        { q: "Each time you won't lend your sister money, she says Dad would be ashamed of you. A week later she asks again, as if nothing happened.", a: "\"Can I say something I've noticed? When I say no about money, Dad comes up, and then the same question comes back a week later. I'd like to talk about how we do this.\"", bundle: 'free' },
+        { q: "When you raise the spending, your wife brings up something you did years ago, and the subject is gone. It's the fourth time. It's a quiet Saturday morning.", a: "\"I've noticed that when I bring up money, we end up talking about something from years ago, and we never get back to it. Can we talk about that?\"", bundle: 'pro' },
+        { q: "Your manager Karl praises you in front of everyone when you agree to weekend work, and is cool with you in meetings when you don't. You've booked a one-to-one.", a: "\"Karl, I'd like to mention something. When I say yes to weekends, things are great between us, and when I say no, they're cool for a while. Can we talk about that?\"", bundle: 'pro' },
+        { q: "When you say no to paying for something, your adult son says you never supported him, and then doesn't answer your messages for days. Tonight he has come for dinner.", a: "\"Leo, I love having you here. I've noticed that when I say no to money, you go quiet for days afterwards. I'd like us to be able to talk about that.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Same Line, Any Tactic",
+      guideFront: "Repeat one calm answer when...",
+      guideBack: "The same short line, again",
+      description: "When the tactics change — guilt, then tears, then an accusation — your answer does not. \"I hear you. It's still no.\" You give the same short line after each one, with warmth for whatever feeling comes with it.\n\nIt works because a run of tactics is looking for the one that gets to you. If guilt does not work, the turnaround might; if that does not, silence might. Each new reason you give is something new to argue with. One line that stays the same tells them, without a speech, that the tactic is not what decides it. Susan Forward's advice in Emotional Blackmail points the same way: a short, steady sentence, and no paying off the guilt.\n\nChange the warm half to fit the moment. Keep the answer half word for word.\n\nTypical phrases: \"I hear you. It's still no.\", \"I know. My answer's the same.\", \"I'm sorry it hurts. I'm still not coming.\", \"Maybe. And it's still no.\"\n\nThree ways to keep the line:\n\n1. Feeling, then line — \"I can see you're upset. It's still no.\"\n\n2. Grant the charge, keep the line — after a turnaround. \"Maybe I am being selfish. It's still no.\"\n\n3. Just the line — after the third or fourth tactic. \"My answer's the same.\"\n\nMindset: they can change tactics as often as they like. You only need one answer.",
+      inputs: [
+        { q: "Your mother wants you for the whole of Easter. You say you can do one day. She says, \"After everything I've done for you.\" You say one day is what you can do. Now she says, \"So I'm the bad mother now, am I?\"", a: "\"No, Mum. I love you. It's still one day.\"", bundle: 'free' },
+        { q: "Your boyfriend wants you to skip your friend's birthday. You say you're going. He says, \"Fine. I'll just sit here on my own.\" You say you'll be back by eleven. Now he starts to cry.", a: "\"I'm sorry this is hard. I'm still going, and I'll be back by eleven.\"", bundle: 'free' },
+        { q: "Your colleague Jana asks you to take her Friday shift. You say no. She says, \"I covered for you in March.\" You thank her and say it's still no. Now she says, \"Wow. Everyone said you were selfish.\"", a: "\"Maybe they did. It's still no for Friday.\"", bundle: 'free' },
+        { q: "Your brother asks to borrow money again. You say no. He says, \"Family helps family.\" You say you know, and it's still no. Now he says, \"Mum would be so disappointed in you.\"", a: "\"Maybe she would. My answer's the same.\"", bundle: 'free' },
+        { q: "Your partner wants to read your messages. You say no. She says, \"If you've got nothing to hide…\" You say it's still no. Now she goes quiet and turns away.", a: "\"I know you're upset. It's still no, and I'm here if you want to talk.\"", bundle: 'free' },
+        { q: "Your father wants you to take over the family shop. You say no. He says he built it for you. You thank him and say it's still no. Now he says, \"Fine. You were always ungrateful.\"", a: "\"I'm grateful, Dad. And it's still no.\"", bundle: 'pro' },
+        { q: "Your friend Ben wants you to cover for him with his girlfriend. You say no. He says, \"I thought you were my friend.\" You say you are, and it's still no. He laughs, \"Since when are you so holy?\" Then: \"Just this once.\"", a: "\"Just this once is still no.\"", bundle: 'pro' },
+        { q: "Your manager asks you to stay late for the fourth night running. You say not tonight. She says the team is counting on you. You say you know, and still not tonight. She says she'll remember this at review time, then smiles: \"Come on, you're my best person.\"", a: "\"Thanks. I'm still leaving at five.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "State the Consequence",
+      guideFront: "Say what you will do when...",
+      guideBack: "An if-then about your own action",
+      description: "Say what you will do if the tactic comes again — not what they must do. \"If it gets loud again, I'll leave and come back tomorrow.\" The consequence is your own action, and one you will really take.\n\nIt works because a demand — \"you have to stop shouting\" — starts a fight about whether they will, and they decide that. A consequence is in your hands. It gives them clear information, and it does not need their agreement. It is not a threat or a punishment: it is the plain truth about what you will do to look after yourself.\n\nOnly say what you will do. A consequence you do not carry out teaches them that your words are just words.\n\nTypical phrases: \"If… again, I'll…\", \"If this turns into…, I'm going to…\", \"From now on, when…, I'll…\", \"That's what I'll do.\"\n\nThree kinds of consequence:\n\n1. Leave and return — \"If it gets loud, I'll go for a walk, and we'll try again tomorrow.\"\n\n2. Change the channel — \"If the calls are about money, I'll answer by email.\"\n\n3. Step out of a role — \"If messages come through Dad again, I won't answer them through him.\"\n\nMindset: you cannot control what they do. You can tell them what you will do, and then do it.",
+      inputs: [
+        { q: "Your partner has raised his voice in the last three talks about money, and each time said you made him angry. Tonight you need to talk about money again.", a: "\"Before we start: if it gets loud again, I'll stop, and we'll try again tomorrow.\"", bundle: 'free' },
+        { q: "Your sister passes on messages from Mum, then says Mum is hurt that you never call. It's the third time this month.", a: "\"If Mum has something to say to me, I'll hear it from her. I won't answer messages that come through you.\"", bundle: 'free' },
+        { q: "Your friend Mia calls late at night, crying, whenever you won't do what she wants, and says you're the only one who cares. It's past midnight, and she's calling again.", a: "\"I do care about you. From now on, if it's after eleven, I'll call you back in the morning.\"", bundle: 'free' },
+        { q: "When you disagree with your colleague Erik in meetings, he says you're not a team player, and then he complains about you to your boss. It has happened twice.", a: "\"If there's a problem with my work, I'll talk about it with you. If it goes to the boss first again, I'll ask for the three of us to sit down.\"", bundle: 'free' },
+        { q: "Your adult daughter asks for money. You say no. She says then you won't see the grandchildren. A week later she asks again, and it's starting the same way.", a: "\"I love you. If the children come into this again, I'll end the call, and we'll talk another day.\"", bundle: 'free' },
+        { q: "After every disagreement, your husband stops talking to you for days, and then acts as if nothing happened. It's a calm evening, and you've decided to bring it up.", a: "\"If you stop talking to me for days again, I'll ask once if you want to talk, and then I'll get on with my weekend plans.\"", bundle: 'pro' },
+        { q: "Your neighbour Mr Wilson complains to you about the bins, then to the other neighbours, and last week he shouted at you on the stairs. You meet him in the hall.", a: "\"If you raise your voice at me on the stairs again, I'll walk on and put everything in writing.\"", bundle: 'pro' },
+        { q: "Your father's calls start with praise, then turn to asking for money, and end with him calling you heartless. He's on the phone, and the praise has just started.", a: "\"Dad, it's good to hear you. If the call turns to money again, I'll say goodbye and ring you on Sunday.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "End the Conversation",
+      guideFront: "Stop the talk kindly when...",
+      guideBack: "A kind, clear close",
+      description: "When it is not going anywhere — the tactics keep coming and your answer has been heard — end the conversation, kindly and clearly. \"I'm going to stop here. We can try again when it's calmer.\" You are not storming out and not giving in. You are closing this round.\n\nIt works because a chain of tactics needs you to stay in the room. Every extra minute is another chance for the guilt, the tears or the turnaround to land. Ending it calmly takes the pressure out of the moment, and it shows that a talk with you cannot be won by wearing you down.\n\nEnd it with words, not just by walking off. Say that you are stopping and, if you can, when you will be ready to talk again.\n\nTypical phrases: \"I'm going to stop here.\", \"This isn't helping either of us. Let's leave it for today.\", \"I've said what I think. I'm going to go now.\", \"We can try again when it's calmer.\"\n\nThree ways to end it:\n\n1. Stop and come back — \"Let's stop. I'll ring you on Sunday.\"\n\n2. Stop and go — \"I'm going to head home now. Drive safely.\"\n\n3. Stop the subject, not the visit — \"I'm done talking about money today. Shall we take the dog out?\"\n\nMindset: ending a conversation is not losing it. It is refusing to lose it by being worn down.",
+      inputs: [
+        { q: "Your sister asks you to host Christmas again. You say no. She says, \"After all I did when Dad was ill.\" You thank her and say it's still no. Now she says you always make everything about you.", a: "\"I'm going to stop here. Let's talk again next week, when we're both calmer.\"", bundle: 'free' },
+        { q: "Your boyfriend wants to know who you were texting. You've shown him it was your cousin. He asks again, then cries, then says you're making him paranoid.", a: "\"I've answered, and we're going round in circles. I'm going to bed. We can talk tomorrow.\"", bundle: 'free' },
+        { q: "You've told your manager Sarah you can't take on the new project. She says you're letting the team down, then that she's disappointed, then that others have noticed your attitude.", a: "\"I've given you my answer, and I don't think more talking will help today. Shall we pick this up on Monday?\"", bundle: 'free' },
+        { q: "You won't lend your father the car for a month. On the phone he says you owe him, then that you were always the difficult one, and then he goes quiet.", a: "\"Dad, I'm going to say goodbye now. I'll call you on Sunday.\"", bundle: 'free' },
+        { q: "You won't join your friend Ali's business. In the café he says he thought you believed in him, then that everyone else said yes, then that you'll regret it.", a: "\"I've said no, and I don't want us to fall out over it. Let's leave it there. Coffee's on me.\"", bundle: 'free' },
+        { q: "You've said you won't sell your late mother's flat yet. Your wife cries, then says you've never put her first, then goes quiet. An hour later she starts again.", a: "\"I can see how much this matters to you. I'm stopping for tonight. Let's sit down at the weekend, when it isn't so raw.\"", bundle: 'pro' },
+        { q: "Your adult daughter wants you to babysit every weekend. You've said two a month. She says you don't love the kids, then that her friends' parents help much more.", a: "\"I love you, and I love them. I'm done talking about it today. Shall we put the kettle on?\"", bundle: 'pro' },
+        { q: "Your neighbour Mrs Clarke wants your hedge cut down. You've said no. On your doorstep she says she's been a good neighbour to you, then that the whole street agrees, then that you'll be sorry.", a: "\"I've given you my answer. I'm going to go in now. Have a good evening.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Check Your Reality",
+      guideFront: "Ask someone you trust when...",
+      guideBack: "A question to someone outside it",
+      description: "When you start to doubt your own judgement, tell someone you trust what happened and ask how it sounds to them. \"Can I tell you what happened, and you tell me if I'm being unreasonable?\" A friend, a sister, a colleague, a doctor — someone outside it.\n\nIt works because a run of tactics can leave you doubting yourself. After guilt, a turnaround and a week of silence, you can come out sure that you were the problem. Jennifer Freyd's work on DARVO found that people who are turned on in this way often end up blaming themselves. An outside view is the quickest way to find out whether your sense of things is off, or was fine all along.\n\nTell it plainly and fairly, including your own part. You are asking for a view, not for someone to take your side.\n\nTypical phrases: \"Can I run something past you?\", \"Tell me honestly — am I being unreasonable?\", \"How does this sound from outside?\", \"I've stopped being sure what's normal.\"\n\nThree ways to check:\n\n1. The plain account — \"Can I tell you what happened, start to finish?\"\n\n2. The honest question — \"Was I out of order, or not?\"\n\n3. The bigger worry — when it is more than one row. \"I've stopped trusting my own sense of this. Can I tell you how it's been?\"\n\nMindset: doubting yourself after a run of tactics is normal. Checking with someone is how you find out.",
+      inputs: [
+        { q: "You said no to your partner's holiday plan. There were tears, then \"you never think of me\", then two days of silence. Now you're having lunch with your friend Hanna.", a: "\"Can I tell you what happened this week? I need someone to tell me if I was being unreasonable.\"", bundle: 'free' },
+        { q: "Your boss praised you all month, then called you disloyal when you turned down the transfer, and has hardly spoken to you since. You're with a colleague you trust.", a: "\"Can I run something past you? I want to know how it sounds from outside.\"", bundle: 'free' },
+        { q: "Your mother says the whole family thinks you're selfish for moving away. Your brother hasn't said anything to you. You call him.", a: "\"Mum says everyone thinks I'm selfish for moving. Is that what you think? Tell me honestly.\"", bundle: 'free' },
+        { q: "Every time you bring up last month's argument, your husband says you're remembering it wrong, and you've started writing things down. You're talking to your sister.", a: "\"I've stopped being sure what's normal at home. Can I tell you how it's been, and you tell me what you think?\"", bundle: 'free' },
+        { q: "Your best friend cried and said you'd abandoned her when you couldn't come to her party. She hasn't spoken to you since. You're talking to another friend.", a: "\"Tell me honestly — was missing one party really that bad? I can't tell any more.\"", bundle: 'free' },
+        { q: "Whenever you say no to your adult son, he says you ruined his childhood, and you've started to believe it. You're seeing a counsellor.", a: "\"Can I tell you what happens when I say no to my son? I want to know whether it's really me.\"", bundle: 'pro' },
+        { q: "Your girlfriend goes cold for days whenever you see your friends, and is lovely again when you cancel. You're on the phone to your oldest friend.", a: "\"Can I describe something, and you tell me if it sounds normal to you?\"", bundle: 'pro' },
+        { q: "Your team leader stops speaking to you after every disagreement, and colleagues say, \"That's just how he is.\" You're talking to someone in HR.", a: "\"Can I describe what happens after I disagree with my team leader? I'd like to know whether this is okay.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Check Yourself",
+      guideFront: "Look at your own part when...",
+      guideBack: "An honest self-check, said aloud",
+      description: "Before you treat something as a tactic, check two things: am I the one pushing, and could their feeling be real? \"Hang on — I've asked three times. That's me pushing.\" Then say what you find, out loud.\n\nIt works because the same tactics work in both directions. Anyone can guilt, sulk or turn things round — you included, especially when you are sure you are right. And not every tear, silence or \"after all I've done\" is a tactic; sometimes it is simply hurt. The other strategies in this pack work whether the feeling is real or not. This one makes sure you meet a real feeling as a real feeling.\n\nIt is not giving in. You can find your own part, own it, and still keep your answer.\n\nTypical phrases: \"Am I asking, or am I pushing?\", \"Hang on — was that fair of me?\", \"Are you really hurt by this? Tell me.\", \"I think I just did the thing I don't like.\"\n\nThree ways to check yourself:\n\n1. Your pushing — \"I've asked three times. I'll stop.\"\n\n2. Your own tactics — \"I've been giving you the cold shoulder. That's not fair. Can we talk?\"\n\n3. Their feeling — \"You look really hurt. Is this more painful than I realised?\"\n\nMindset: check your own side first. A real feeling deserves a real answer.",
+      inputs: [
+        { q: "You've asked your partner three times to come to your work party. He's said no each time. Now you hear yourself say, \"After everything I do for you…\"", a: "\"Hang on. That was me guilt-tripping you. Forget I said it. Your no is fine.\"", bundle: 'free' },
+        { q: "You tell your mother you won't come for Christmas, and she starts to cry. You're about to say, \"Not the tears again.\"", a: "\"Mum, you look really upset. Is this harder for you than I realised? Tell me.\"", bundle: 'free' },
+        { q: "Your flatmate said no to your friend staying for a week. You've been short with her for two days. Now she asks if you're okay.", a: "\"Honestly? I've been sulking about the weekend. That's not fair on you. Can we talk about it properly?\"", bundle: 'free' },
+        { q: "Your colleague Ahmed said no to swapping shifts. You've just told him, \"Everyone else would do it.\"", a: "\"Sorry, that wasn't fair. Is there a real reason Friday's hard for you?\"", bundle: 'free' },
+        { q: "Your teenage son has gone silent since you said no to the trip, and you've started to think he's punishing you.", a: "\"You've been quiet since last night. Are you okay, or upset about the trip? Either is fine to tell me.\"", bundle: 'free' },
+        { q: "Your friend Elin said no to lending you her car. You've been extra nice to her all evening, hoping she'll change her mind.", a: "\"I've just noticed I'm being extra nice so you'll say yes. That's not fair. Your no is a no.\"", bundle: 'pro' },
+        { q: "Your wife has been quiet since you said no to moving cities. In your head, you've been calling it her silent treatment.", a: "\"You've been quiet since we talked. I've been reading it as you punishing me, but maybe it's just hard. Is it?\"", bundle: 'pro' },
+        { q: "Your father says, \"After all I did for you,\" and you're about to snap that he always says that. Then you remember he's been ill and lonely.", a: "\"Dad, I can hear you're feeling alone. Is that what this is about? I want to know.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -23846,6 +24434,306 @@ const collectionsModeData = {
         { q: "Your daughter's teacher assumes your husband handles the homework.", a: "\"Easy to think, but that's my job. He does the cooking.\" [Correct the Label]", bundle: 'pro', guideBack: "A friendly \"yes, but\"" },
         { q: "A neighbour asks how you ended up running the community garden.", a: "\"I retired and was bored stiff for a month. Then I planted one tomato.\" [A Turning Point]", bundle: 'pro', guideBack: "A before and after, in one sentence" },
         { q: "Someone at a course asks where you grew up.", a: "\"On a boat, mostly. My parents sailed. I'm still happiest near water.\" [Where You Come From]", bundle: 'pro', guideBack: "A place, and what it left in you" },
+      ]
+    },
+  ],
+  manipulation1: [
+    {
+      name: "Name the Pressure",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Feeling Yes, Answer No**, **Thanks Isn't a Debt** and **Take the Threat Seriously** — three answers to three kinds of pressure, and the choice is which one they are leaning on.\n\n• **Feeling Yes, Answer No** — they are hurt, sad or disappointed\n• **Thanks Isn't a Debt** — they bring up what they did for you\n• **Take the Threat Seriously** — they put a price on your no\n\nThe question that decides it: are they leaning on a feeling, a debt, or a threat?\n\nThe usual wrong choice is answering a threat as if it were only a feeling. \"I can hear you're upset\" leaves the threat standing, and it comes back louder.\n\nMindset: name the pressure to yourself, and you know which answer it needs.",
+      inputs: [
+        { q: "When you say you won't take over the family shop, your father says, \"I built that place for you.\"", a: "\"You built something amazing, Dad, and I'm proud of it. It still isn't the work I want to do.\" [Thanks Isn't a Debt]", bundle: 'pro', guideBack: "Gratitude, kept apart from the answer" },
+        { q: "You tell your friend Maya you'll miss her party because of your exam. Her voice shakes: \"I just really wanted you there.\"", a: "\"I can hear how much it means to you, Maya, and I'm sorry to miss it. I'm still staying in to study.\" [Feeling Yes, Answer No]", bundle: 'pro', guideBack: "An acknowledgment, then the same no" },
+        { q: "Your sister: \"If you don't come to Dad's seventieth, don't bother coming to mine.\"", a: "\"I'd be sad to miss yours, and I hear you. If that's your choice, it's yours. I still can't come on the 12th.\" [Take the Threat Seriously]", bundle: 'pro', guideBack: "Care, with your decision unchanged" },
+        { q: "Your boss: \"I gave you this job when nobody else would. Surely you can move your holiday.\"", a: "\"You did, and I'm grateful every day. I'm still taking my holiday in August.\" [Thanks Isn't a Debt]", bundle: 'pro', guideBack: "Gratitude, kept apart from the answer" },
+        { q: "You tell your partner you don't want to move cities. He says quietly, \"I just thought you'd want this too.\"", a: "\"I can see how much you hoped I would, and I'm sorry. I still don't want to move.\" [Feeling Yes, Answer No]", bundle: 'pro', guideBack: "An acknowledgment, then the same no" },
+        { q: "A colleague: \"If you don't back my idea in the meeting, don't expect me to back yours.\"", a: "\"That's your call, and I'll take it seriously. I still can't back this one.\" [Take the Threat Seriously]", bundle: 'pro', guideBack: "Care, with your decision unchanged" },
+        { q: "Your grandmother: \"I looked after you every summer. And now you won't spend one with me?\"", a: "\"Those summers are some of my best memories, Gran. I still can't come for the whole summer.\" [Thanks Isn't a Debt]", bundle: 'pro', guideBack: "Gratitude, kept apart from the answer" },
+        { q: "You tell your mum you'll spend Easter at home with your own kids. She sighs: \"Oh. Well. I'll get used to it, I suppose.\"", a: "\"I can hear you're sad about it, Mum. We're still staying home at Easter.\" [Feeling Yes, Answer No]", bundle: 'pro', guideBack: "An acknowledgment, then the same no" },
+      ]
+    },
+    {
+      name: "No, Not Yet, or Some",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Buy Time**, **A Smaller Yes** and **Same Answer, Same Warmth** — three places you can be in when someone pushes, and the strategy that fits each one.\n\n• **Buy Time** — you have not decided yet, and they want it now\n• **A Smaller Yes** — you have decided, and there is a part you can gladly give\n• **Same Answer, Same Warmth** — you have answered, and they are asking again\n\nThe question that decides it: have I decided yet, and if I have, is there something I want to give?\n\nThe usual wrong choice is a smaller yes before you have decided. Under pressure, it is not an offer. It is giving in halfway.\n\nMindset: know where you stand before you choose what to say.",
+      inputs: [
+        { q: "A friend calls: \"Can you be the guarantor on my flat? I have to tell them within the hour.\"", a: "\"I don't sign something like that in an hour. I'll call you tomorrow morning.\" [Buy Time]", bundle: 'pro', guideBack: "A promise to answer at a set time" },
+        { q: "Your dad asks for the fourth time whether you'll drive him to the coast every weekend this summer.", a: "\"I know you'd love that, Dad. It's still not every weekend.\" [Same Answer, Same Warmth]", bundle: 'pro', guideBack: "The same short answer, with no new reasons" },
+        { q: "Your partner wants you to give up Thursday football. You're keeping it, and you could be home early on Wednesdays.", a: "\"I'm keeping Thursdays. I can be home by five every Wednesday, and that evening is ours.\" [A Smaller Yes]", bundle: 'pro', guideBack: "A real offer, smaller than the ask" },
+        { q: "Your manager: \"We need someone in the other office from next month. I need your yes by the end of today.\"", a: "\"That's a big change. I'll give you my answer on Monday morning.\" [Buy Time]", bundle: 'pro', guideBack: "A promise to answer at a set time" },
+        { q: "At the door, for the third time, your aunt asks you to host the whole family at Easter.", a: "\"Still no this year, and I'll still be there with a cake.\" [Same Answer, Same Warmth]", bundle: 'pro', guideBack: "The same short answer, with no new reasons" },
+        { q: "Your neighbour wants a lift to the airport at four in the morning. You won't do that, and you could book her a taxi tonight.", a: "\"I can't drive you at four. I can book you a taxi tonight and help you get the bags down.\" [A Smaller Yes]", bundle: 'pro', guideBack: "A real offer, smaller than the ask" },
+        { q: "Your son, 30, wants you to pick up his kids every day after school. Every day is too much, and Tuesdays work.", a: "\"Not every day. I can do every Tuesday, and I'd love that.\" [A Smaller Yes]", bundle: 'pro', guideBack: "A real offer, smaller than the ask" },
+        { q: "Your friend, for the third time this evening: \"Just come for one drink. One!\"", a: "\"I know. Still no tonight, and I'd love to see you on Saturday.\" [Same Answer, Same Warmth]", bundle: 'pro', guideBack: "The same short answer, with no new reasons" },
+      ]
+    },
+    {
+      name: "All Six Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, with no warning about which pressure comes next.\n\nThey follow the conversation. **Buy Time** at the first ask. **Feeling Yes, Answer No** at the disappointment. **Thanks Isn't a Debt** when the past is brought up. **A Smaller Yes** for what you can gladly give. **Same Answer, Same Warmth** when they ask again. **Take the Threat Seriously** when a price is put on your no.\n\nIf you are unsure, ask what just happened: a request, a feeling, a debt, a repeat, or a threat.\n\nThe usual wrong choice is a new explanation. None of the six strategies needs one.\n\nMindset: kind to the feeling, firm about the answer, whatever comes.",
+      inputs: [
+        { q: "The football coach, in front of the other parents: \"You'll do the bake sale again, right? I'll put your name down now.\"", a: "\"Don't put it down yet. I'll email you by Friday.\" [Buy Time]", bundle: 'pro', guideBack: "A promise to answer at a set time" },
+        { q: "Your uncle, who paid for your driving lessons, wants you to drive him around all summer: \"I paid for your lessons, remember?\"", a: "\"I do remember, and I'm grateful. I still can't be your driver all summer.\" [Thanks Isn't a Debt]", bundle: 'pro', guideBack: "Gratitude, kept apart from the answer" },
+        { q: "You tell your best friend you won't share a flat with her after all. She starts to cry: \"We've planned this for years.\"", a: "\"I can see how much this hurts, and I'm so sorry. I'm still not moving in.\" [Feeling Yes, Answer No]", bundle: 'pro', guideBack: "An acknowledgment, then the same no" },
+        { q: "Your father wants you there every Sunday. You don't want that, and the first Sunday of each month would be a pleasure.", a: "\"Not every Sunday, Dad. The first Sunday of every month is yours.\" [A Smaller Yes]", bundle: 'pro', guideBack: "A real offer, smaller than the ask" },
+        { q: "For the third time today, a colleague asks if you'll swap your holiday week with her.", a: "\"Still no, Emma. I hope you find someone.\" [Same Answer, Same Warmth]", bundle: 'pro', guideBack: "The same short answer, with no new reasons" },
+        { q: "Your grandfather: \"If you don't come to the farm this summer, don't expect anything from me.\"", a: "\"I hear you, Grandpa, and I'm taking it seriously. That's yours to decide. I'd still love to come in the autumn.\" [Take the Threat Seriously]", bundle: 'pro', guideBack: "Care, with your decision unchanged" },
+        { q: "Your partner's mother, when you say you won't stay for dinner: \"I'll just eat on my own, then. I'm used to it.\"", a: "\"I can hear you'd like company tonight, and I'm sorry. We still have to go at six.\" [Feeling Yes, Answer No]", bundle: 'pro', guideBack: "An acknowledgment, then the same no" },
+        { q: "Your friend: \"Lend me your flat for the weekend, and I'll finally stop going on about the wedding.\"", a: "\"I can't lend you the flat. You're welcome to come for dinner there on Saturday.\" [A Smaller Yes]", bundle: 'pro', guideBack: "A real offer, smaller than the ask" },
+      ]
+    },
+  ],
+  manipulation2: [
+    {
+      name: "Hold the Facts",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Stick to What Happened**, **Don't Debate Your Memory** and **Keep a Record** — three strategies for when the facts themselves are under attack, and which one the moment needs.\n\n• **Stick to What Happened** — the facts have not been said yet: say them, plainly\n• **Don't Debate Your Memory** — you have said them, and they deny it\n• **Keep a Record** — the talk is ending, or it keeps happening: put it in writing\n\nThe question that decides it: have I said the facts yet, and has the talk reached an end?\n\nThe usual wrong choice is arguing your memory with more and more proof when the facts are already on the table. It turns the talk into a contest of who sounds more sure.\n\nMindset: say it once, hold it, and write it down.",
+      inputs: [
+        { q: "Your flatmate ate half the cake you made for your mum's birthday. Nothing has been said yet.", a: "\"On Friday the cake for Mum's birthday was in the fridge. On Saturday morning half of it was gone.\" [Stick to What Happened]", bundle: 'pro', guideBack: "A dated, factual account" },
+        { q: "Your colleague Sam says, \"I never said I'd cover your shift. You've made that up.\"", a: "\"We remember it differently. I know what you said on Monday.\" [Don't Debate Your Memory]", bundle: 'pro', guideBack: "A calm statement of what you know" },
+        { q: "You and your uncle have just agreed he will pay back the loan in three parts.", a: "\"Great. I'll text you the three dates now, so we both have them.\" [Keep a Record]", bundle: 'pro', guideBack: "A summary to confirm in writing" },
+        { q: "Your partner Lucy says, \"Booking the hotel was never my job. I never said I'd do it.\"", a: "\"I'm not going to argue about who said what. I know what I heard.\" [Don't Debate Your Memory]", bundle: 'pro', guideBack: "A calm statement of what you know" },
+        { q: "Your friend Raj has not mentioned the petrol money for the second trip in a row. You have not said anything yet.", a: "\"On the drive up in March, you said we'd split the petrol both ways.\" [Stick to What Happened]", bundle: 'pro', guideBack: "A dated, factual account" },
+        { q: "After a tense meeting, your manager agrees that you will lead the new project.", a: "\"Thanks. I'll send you an email after this, so we both have it in writing.\" [Keep a Record]", bundle: 'pro', guideBack: "A summary to confirm in writing" },
+        { q: "Your neighbour Mrs Okafor says, \"I never agreed to share the cost of the fence.\"", a: "\"We remember that differently, and that's okay. I know what we agreed in June.\" [Don't Debate Your Memory]", bundle: 'pro', guideBack: "A calm statement of what you know" },
+        { q: "Your brother keeps telling people Dad left the watch to him. You have not mentioned what Dad said.", a: "\"Last summer, at the lake, Dad told both of us the watch was for me.\" [Stick to What Happened]", bundle: 'pro', guideBack: "A dated, factual account" },
+      ]
+    },
+    {
+      name: "Stay on Topic",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Back to the Point**, **Ask for the Specific** and **Judge the Act, Not the Motive** — three strategies for when the conversation slides away from what happened, and which way it is sliding.\n\n• **Back to the Point** — they turn it round on you, or the hurt becomes the new topic\n• **Ask for the Specific** — they throw a vague label at you\n• **Judge the Act, Not the Motive** — they explain that they meant well\n\nThe question that decides it: where did the conversation just go — to me, to a label, or to their reasons?\n\nThe usual wrong choice is defending yourself against the new charge. Then you are answering their topic, and yours is gone.\n\nMindset: notice where it went, and bring it back.",
+      inputs: [
+        { q: "You ask your partner Daniel about the credit card bill. He says, \"Oh, now I'm a criminal? You spend more than I do.\"", a: "\"We can look at my spending next. Right now it's the credit card bill.\" [Back to the Point]", bundle: 'pro', guideBack: "A redirect to the original issue" },
+        { q: "When you raise the missed deadline, a colleague says, \"You're always so negative about everything.\"", a: "\"Negative how? Give me one example from this week.\" [Ask for the Specific]", bundle: 'pro', guideBack: "A question for one real example" },
+        { q: "Your mother read your journal. She says, \"I only did it because I could see you weren't happy.\"", a: "\"Maybe you could see that. Reading my journal still isn't okay, Mum.\" [Judge the Act, Not the Motive]", bundle: 'pro', guideBack: "Their reason granted, the act still named" },
+        { q: "You mention that your friend Ella never paid for her concert ticket. She says, \"You're the one who's tight with money.\"", a: "\"Tight how? Tell me when.\" [Ask for the Specific]", bundle: 'pro', guideBack: "A question for one real example" },
+        { q: "Your boss changed your rota without asking. He says, \"I only did it so you could have a longer weekend.\"", a: "\"That was kind of you. Changing my rota without asking still isn't okay.\" [Judge the Act, Not the Motive]", bundle: 'pro', guideBack: "Their reason granted, the act still named" },
+        { q: "Your sister starts crying when you raise the money she borrowed: \"I can't believe you'd do this to me now.\"", a: "\"I'm sorry you're upset, and I'm here. We still need to talk about the money.\" [Back to the Point]", bundle: 'pro', guideBack: "A redirect to the original issue" },
+        { q: "Your neighbour moved your bins to the end of the road. He says, \"I only did it to keep the street tidy for everyone.\"", a: "\"I'm sure you like it tidy. Moving my bins without asking still isn't okay.\" [Judge the Act, Not the Motive]", bundle: 'pro', guideBack: "Their reason granted, the act still named" },
+        { q: "You mention the broken window. Your son-in-law says, \"Why do you always attack me?\"", a: "\"Always? What else have I attacked you about? Tell me, and we'll talk.\" [Ask for the Specific]", bundle: 'pro', guideBack: "A question for one real example" },
+      ]
+    },
+    {
+      name: "All Six Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, with no hint about which part of the conversation you are in.\n\nThe six follow the talk. **Stick to What Happened** opens it. **Don't Debate Your Memory** holds it when they deny it. **Back to the Point** brings it back when they turn it round. **Ask for the Specific** meets a vague charge. **Judge the Act, Not the Motive** meets a good reason. **Keep a Record** closes it.\n\nThe question that decides it: what did they just do — deny it, turn it, label me, explain it, or agree?\n\nThe usual wrong choice is answering their last sentence instead of your first one. Then each turn takes you further from what happened.\n\nMindset: I came to talk about one thing, and I can stay with it.",
+      inputs: [
+        { q: "Your housemate denies saying the party would end at midnight: \"I never said that.\"", a: "\"We remember it differently. I know what you told me.\" [Don't Debate Your Memory]", bundle: 'pro', guideBack: "A calm statement of what you know" },
+        { q: "You need to raise that your father-in-law parked across your drive again. Nothing has been said yet.", a: "\"On Saturday, and again on Monday, your car was parked across our drive.\" [Stick to What Happened]", bundle: 'pro', guideBack: "A dated, factual account" },
+        { q: "Your friend Leila says, \"Fine, I told her. I only did it because I thought it would help.\"", a: "\"I believe you. Telling her still wasn't okay.\" [Judge the Act, Not the Motive]", bundle: 'pro', guideBack: "Their reason granted, the act still named" },
+        { q: "Your partner says, \"You're the one who never wants to talk about anything.\"", a: "\"What do you mean by anything? Give me one thing, and we'll find a time.\" [Ask for the Specific]", bundle: 'pro', guideBack: "A question for one real example" },
+        { q: "When you raise that he deleted your file, a colleague says, \"Wow, okay. I'm the bad guy again.\"", a: "\"We can talk about that afterwards. I still need the file back.\" [Back to the Point]", bundle: 'pro', guideBack: "A redirect to the original issue" },
+        { q: "The talk with your landlord is over. He has agreed to fix the window by the 15th.", a: "\"Thanks. I'll email you now, so we both have the date in writing.\" [Keep a Record]", bundle: 'pro', guideBack: "A summary to confirm in writing" },
+        { q: "Your aunt says she never promised to lend you her dress for the wedding.", a: "\"I'm not going to argue about it. I know what you said at Christmas.\" [Don't Debate Your Memory]", bundle: 'pro', guideBack: "A calm statement of what you know" },
+        { q: "Your manager says, \"I only took you off the project because you looked stressed.\"", a: "\"Maybe I did. Taking me off it without asking me still wasn't okay.\" [Judge the Act, Not the Motive]", bundle: 'pro', guideBack: "Their reason granted, the act still named" },
+      ]
+    },
+  ],
+  manipulation3: [
+    {
+      name: "Trace It Back",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Ask Who Said It**, **Go to the Source**, **Decline the Messenger Role** and **Correct the Record Once**: four answers to something that reached you secondhand.\n\n• **Ask Who Said It** — it came as \"everyone\" or \"people\", with no names\n• **Go to the Source** — you know who it came from, or who it is about\n• **Decline the Messenger Role** — someone wants you to carry it, or is carrying it to you\n• **Correct the Record Once** — a twisted version is already out, and people have heard it\n\nThe question that decides it: who do I actually need to talk to, and do I know yet?\n\nThe usual wrong choice is correcting the record before going to the source. You end up defending yourself against a story nobody has confirmed, to people who were not involved.\n\nMindset: follow it back to one person before you answer it.",
+      inputs: [
+        { q: "Your flatmate says, \"Honestly, people think you've been a nightmare to live with lately.\"", a: "\"Which people? I'd rather talk to them myself.\" [Ask Who Said It]", bundle: 'pro', guideBack: "A calm request for names" },
+        { q: "A teammate tells you Oskar has been saying you missed the deadline on purpose.", a: "\"Oskar, I heard you think I missed the deadline deliberately. Can we talk about it?\" [Go to the Source]", bundle: 'pro', guideBack: "A direct question to the person involved" },
+        { q: "Your aunt: \"Your father wants me to tell you he won't come to the wedding if your mother's there.\"", a: "\"I'd like Dad to tell me that himself. I'll call him this evening.\" [Decline the Messenger Role]", bundle: 'pro', guideBack: "A kind refusal to stand in the middle" },
+        { q: "At the school gate, a parent asks if it is true you complained about the teacher.", a: "\"No, I asked about homework. That was all.\" [Correct the Record Once]", bundle: 'pro', guideBack: "A short, factual correction" },
+        { q: "Your girlfriend says her whole family thinks you are only with her for the house.", a: "\"Who in your family? I'd like to talk to them, not about them.\" [Ask Who Said It]", bundle: 'pro', guideBack: "A calm request for names" },
+        { q: "A colleague asks you to tell your manager, quietly, that the team is unhappy with her.", a: "\"I'm not going to carry that. If the team's unhappy, someone should tell her directly.\" [Decline the Messenger Role]", bundle: 'pro', guideBack: "A kind refusal to stand in the middle" },
+        { q: "You hear your neighbour Linnea has been saying you let your cat into her garden on purpose.", a: "\"Linnea, I've heard you're unhappy about my cat. I'd rather hear it from you.\" [Go to the Source]", bundle: 'pro', guideBack: "A direct question to the person involved" },
+        { q: "Your old team believes you asked to be moved off the project, and a former colleague asks why you did it.", a: "\"I didn't ask. I was offered the other role and said yes. That's all.\" [Correct the Record Once]", bundle: 'pro', guideBack: "A short, factual correction" },
+      ]
+    },
+    {
+      name: "Leave the Stage",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Take It Private**, **Don't Compete** and **Correct the Record Once**: three answers when the pressure comes from who is watching, or who you are being measured against.\n\n• **Take It Private** — there is an audience, and the scene needs one\n• **Don't Compete** — there is a rival, real or invented: an ex, a sibling, a colleague\n• **Correct the Record Once** — something false has been said where others heard it\n\nThe question that decides it: what gives this its power right now: the audience, the rival, or the false version?\n\nThe usual wrong choice is answering the rival in front of the audience. \"Well, your ex was impossible\" at a dinner table plays both games at once.\n\nMindset: no audience, no contest, and one plain fact if you need it.",
+      inputs: [
+        { q: "At a friend's birthday, your boyfriend says loudly, \"You never want to do anything fun.\"", a: "\"We can talk about that later, just us.\" [Take It Private]", bundle: 'pro', guideBack: "An offer to talk away from others" },
+        { q: "Your wife says, \"My sister's husband plans a surprise weekend every year.\"", a: "\"I'm not going to compete with him. Is there something you'd like from me?\" [Don't Compete]", bundle: 'pro', guideBack: "An invitation to say it straight" },
+        { q: "In a meeting, a colleague says you \"forgot\" to invite the client, and you did invite them.", a: "\"I sent the invitation on Monday. I'll forward it again now.\" [Correct the Record Once]", bundle: 'pro', guideBack: "A short, factual correction" },
+        { q: "Your mother-in-law, at Sunday lunch: \"Of course, Lucas's first wife was a wonderful cook.\"", a: "\"I'm sure she was. I'm happy with my lasagne.\" [Don't Compete]", bundle: 'pro', guideBack: "An invitation to say it straight" },
+        { q: "In the football parents' chat, someone writes that \"certain parents\" never help with lifts.", a: "\"Jon, if that's about me, I'll message you directly.\" [Take It Private]", bundle: 'pro', guideBack: "An offer to talk away from others" },
+        { q: "Your brother tells the whole table that you borrowed money from Dad and never paid it back.", a: "\"I paid it back in March. That's all I'll say about it.\" [Correct the Record Once]", bundle: 'pro', guideBack: "A short, factual correction" },
+        { q: "Your manager, in front of the team: \"Sara's numbers are always ready on time. Why aren't yours?\"", a: "\"Let's talk about my numbers after the meeting.\" [Take It Private]", bundle: 'pro', guideBack: "An offer to talk away from others" },
+        { q: "Your girlfriend says her ex used to drive her everywhere, and watches your face.", a: "\"I'm not him. If you'd like a lift, ask me.\" [Don't Compete]", bundle: 'pro', guideBack: "An invitation to say it straight" },
+      ]
+    },
+    {
+      name: "All Six Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, with no warning about which tactic is coming next.\n\nThe six fall into two groups. Four deal with things that reach you through someone else: **Ask Who Said It** for a nameless crowd, **Go to the Source** for the real person, **Decline the Messenger Role** for the go-between, and **Correct the Record Once** for a version that is already out. Two deal with things done in front of someone else: **Take It Private** for the audience, and **Don't Compete** for the rival.\n\nIf you are unsure, ask: who do I actually need to talk to, and is anyone else in the way?\n\nThe usual wrong choice is answering everyone except the person it is about.\n\nMindset: direct, with the right person, and without an audience.",
+      inputs: [
+        { q: "Your friend Ida: \"Everyone in the book club thinks you talk too much.\"", a: "\"Who, exactly? I'd like to hear it from them.\" [Ask Who Said It]", bundle: 'pro', guideBack: "A calm request for names" },
+        { q: "Your daughter, 15, says her dad told her you are the reason the holiday was cancelled.", a: "\"That's something for Dad and me to talk about, love. You don't need to carry it.\" [Decline the Messenger Role]", bundle: 'pro', guideBack: "A kind refusal to stand in the middle" },
+        { q: "A colleague tells you Henrik is saying you went over his head to the director.", a: "\"Henrik, I heard you think I went over your head. I'd rather hear it from you.\" [Go to the Source]", bundle: 'pro', guideBack: "A direct question to the person involved" },
+        { q: "Your partner says a friend's boyfriend \"would never forget an anniversary\".", a: "\"Maybe not. I'm not going to compete with him. I'm sorry I forgot.\" [Don't Compete]", bundle: 'pro', guideBack: "An invitation to say it straight" },
+        { q: "At a dinner, your friend Theo jokes that you \"always leave before the bill comes\".", a: "\"Let's talk about that another time, Theo, just us.\" [Take It Private]", bundle: 'pro', guideBack: "An offer to talk away from others" },
+        { q: "Word has gone round the office that you were given a warning, and your teammate asks about it.", a: "\"I wasn't given a warning. I had a normal review. That's all it was.\" [Correct the Record Once]", bundle: 'pro', guideBack: "A short, factual correction" },
+        { q: "Your neighbour: \"The other neighbours and I all think your parties are too loud.\"", a: "\"Which neighbours? I'd like to talk to them myself.\" [Ask Who Said It]", bundle: 'pro', guideBack: "A calm request for names" },
+        { q: "Your father: \"Your sister would have driven me to the hospital without being asked.\"", a: "\"I'm not going to race her, Dad. I can drive you on Thursday.\" [Don't Compete]", bundle: 'pro', guideBack: "An invitation to say it straight" },
+      ]
+    },
+  ],
+  manipulation4: [
+    {
+      name: "Keep the Question Open",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Comfort Without Conceding**, **Pause, Don't Drop** and **Stay Warm, Stay Put** — three strategies for when a big feeling arrives and threatens to settle the question for you.\n\n• **Comfort Without Conceding** — the feeling is here now, and you can comfort and still keep talking\n• **Pause, Don't Drop** — the conversation can't go on today, so stop it with a time to return\n• **Stay Warm, Stay Put** — the talk is over, and the feeling hangs in the air afterwards\n\nThe question that decides it: where is the feeling right now — in the conversation, too big for it, or in the mood afterwards?\n\nThe usual wrong choice is dropping the subject to make the feeling stop. It works for one evening, and it teaches both of you how to end the next conversation.\n\nMindset: the feeling gets room. The question stays on the table.",
+      inputs: [
+        { q: "Your husband starts crying when you say you want separate bank accounts.", a: "\"I'm right here, and I'm not angry. We'll still need to talk about the accounts.\" [Comfort Without Conceding]", bundle: 'pro', guideBack: "A comforting word, issue still open" },
+        { q: "Your mother is too upset to keep talking about selling the house.", a: "\"Let's leave it there for today. Can I come round on Saturday, and we'll carry on?\" [Pause, Don't Drop]", bundle: 'pro', guideBack: "A break with a time to come back" },
+        { q: "You said no to your partner's plan to buy a new car. The next morning he's silent over breakfast.", a: "\"Morning. I've left you the last of the bread.\" [Stay Warm, Stay Put]", bundle: 'pro', guideBack: "Everyday kindness, same position" },
+        { q: "Your friend Ana tears up when you say you can't share a flat with her after all.", a: "\"I'm so sorry, Ana. I know you were counting on it. I'll help you find someone else.\" [Comfort Without Conceding]", bundle: 'pro', guideBack: "A comforting word, issue still open" },
+        { q: "Your son is crying and shouting about his curfew, and nothing you say is landing.", a: "\"We're both too upset. Let's stop and talk at breakfast.\" [Pause, Don't Drop]", bundle: 'pro', guideBack: "A break with a time to come back" },
+        { q: "Your sister-in-law is cool at the family lunch because you won't host this year.", a: "\"Lovely to see you. Can I get you a coffee?\" [Stay Warm, Stay Put]", bundle: 'pro', guideBack: "Everyday kindness, same position" },
+        { q: "A week ago you agreed to come back to the question of your partner's spending. Today is the day.", a: "\"It's Friday. Shall we finish the money talk after dinner?\" [Pause, Don't Drop]", bundle: 'pro', guideBack: "A break with a time to come back" },
+        { q: "Your colleague's eyes fill with tears when you say you can't take his extra cases.", a: "\"This sounds really hard, and I'm sorry. I still can't take them. Let's go to the manager together.\" [Comfort Without Conceding]", bundle: 'pro', guideBack: "A comforting word, issue still open" },
+      ]
+    },
+    {
+      name: "Out of Guessing",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Ask for the Words**, **Invite, Don't Chase** and **Show, Don't Take Over** — three strategies for when something is left unsaid or undone and handed to you to fix.\n\n• **Ask for the Words** — they hint, sigh or expect you to know, so ask them to say it\n• **Invite, Don't Chase** — they've stopped talking, so offer to talk once and leave the next step with them\n• **Show, Don't Take Over** — they say they can't, so teach it and hand it back\n\nThe question that decides it: what are they not doing — saying it, talking at all, or doing it themselves?\n\nThe usual wrong choice is doing their part for them: guessing what they want, chasing them out of the silence, or taking the job over.\n\nMindset: their part is theirs. Your part is to make it easy to do.",
+      inputs: [
+        { q: "Your partner says, \"Anyone else would have booked a table for our anniversary.\"", a: "\"I'd like to get it right. What would you have liked?\" [Ask for the Words]", bundle: 'pro', guideBack: "A request to say it out loud" },
+        { q: "Your daughter has stopped talking to you since you said no to the festival.", a: "\"I'm here whenever you want to talk about it.\" [Invite, Don't Chase]", bundle: 'pro', guideBack: "One open offer, then no pursuit" },
+        { q: "Your wife says, \"You're much better at calling the plumber. I get flustered.\"", a: "\"I'll write down what to say, and you make the call.\" [Show, Don't Take Over]", bundle: 'pro', guideBack: "An offer to teach, not to do it" },
+        { q: "Your boss sighs, \"I suppose someone will have to stay late tonight,\" and looks at you.", a: "\"Are you asking me to stay? Ask me directly, and you'll get a clear answer.\" [Ask for the Words]", bundle: 'pro', guideBack: "A request to say it out loud" },
+        { q: "Your friend has left your messages unanswered for four days since you missed her party.", a: "\"I'm sorry I missed it. I'd love to talk when you're ready.\" [Invite, Don't Chase]", bundle: 'pro', guideBack: "One open offer, then no pursuit" },
+        { q: "Your dad says, \"I'll never understand this new phone. Just set it all up for me.\"", a: "\"Let's do it together. You hold it, and I'll talk you through it.\" [Show, Don't Take Over]", bundle: 'pro', guideBack: "An offer to teach, not to do it" },
+        { q: "Your brother has gone quiet in the family chat since you said no to the loan. You've already invited him to talk once, and you're about to write again.", a: "\"I said I'm here when you want to talk, and I meant it. I'll leave it with you.\" [Invite, Don't Chase]", bundle: 'pro', guideBack: "One open offer, then no pursuit" },
+        { q: "Your flatmate says, \"You know how I feel about dishes in the sink.\"", a: "\"I'm not sure I do. Tell me plainly, and we'll sort it out.\" [Ask for the Words]", bundle: 'pro', guideBack: "A request to say it out loud" },
+      ]
+    },
+    {
+      name: "All Six Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order feelings really arrive — with no warning about which kind is coming.\n\nThe six fall into three groups. For tears and big feelings in the moment: **Comfort Without Conceding** and **Pause, Don't Drop**. For hints and silence: **Ask for the Words** and **Invite, Don't Chase**. For helplessness and the cold mood afterwards: **Show, Don't Take Over** and **Stay Warm, Stay Put**.\n\nIf you are unsure, ask what the feeling is doing: ending the talk, replacing the words, or handing you a job?\n\nThe usual wrong choice is the quick fix — giving in so the feeling stops. It always works once, and that is the problem.\n\nMindset: be kind to the feeling. Let the question be decided on its own terms.",
+      inputs: [
+        { q: "Your mother cries on the phone when you say you'll spend Christmas with your partner's family.", a: "\"Mum, I can hear how sad you are, and I'm sorry. We'll still be at theirs this year. Let's plan New Year together.\" [Comfort Without Conceding]", bundle: 'pro', guideBack: "A comforting word, issue still open" },
+        { q: "Your partner is too upset to finish the talk about moving to another city.", a: "\"Let's stop here. Tomorrow evening, same place?\" [Pause, Don't Drop]", bundle: 'pro', guideBack: "A break with a time to come back" },
+        { q: "Your colleague says, \"If you were a real team player, you'd know what I need.\"", a: "\"I want to be. Tell me what you need, and I'll tell you what I can do.\" [Ask for the Words]", bundle: 'pro', guideBack: "A request to say it out loud" },
+        { q: "Your friend Ola hasn't spoken to you since you said no to the road trip.", a: "\"I'd like to talk about it when you're ready, Ola. I'm around.\" [Invite, Don't Chase]", bundle: 'pro', guideBack: "One open offer, then no pursuit" },
+        { q: "Your partner says, \"You're so good at talking to the bank. I'd only get it wrong.\"", a: "\"Let's call them together, and you do the talking. I'll be right here.\" [Show, Don't Take Over]", bundle: 'pro', guideBack: "An offer to teach, not to do it" },
+        { q: "Your dad sulks through Sunday lunch because you won't drive him to the coast.", a: "\"This roast is lovely, Dad. Shall I make coffee?\" [Stay Warm, Stay Put]", bundle: 'pro', guideBack: "Everyday kindness, same position" },
+        { q: "Your girlfriend won't hold your hand on the walk home because you're not moving in yet.", a: "\"That was a great film. Same time next week?\" [Stay Warm, Stay Put]", bundle: 'pro', guideBack: "Everyday kindness, same position" },
+        { q: "Your manager says you're the best on the team, then waits, as if you should offer to take the weekend shift again.", a: "\"Thank you, that's kind. Is there something you want to ask me?\" [Ask for the Words]", bundle: 'pro', guideBack: "A request to say it out loud" },
+      ]
+    },
+  ],
+  manipulation5: [
+    {
+      name: "Answer on Your Terms",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Refuse the False Choice**, **Ask What Would Count** and **Answer the Real Question** — three strategies for when the question itself is rigged, and you have to answer something other than what was asked.\n\n• **Refuse the False Choice** — the options are the trap: two choices, or every choice wrong\n• **Ask What Would Count** — the target is the trap: it keeps moving after you try\n• **Answer the Real Question** — the wording is the trap: an accusation built into the question\n\nThe question that decides it: which part of the question is broken — the options, the target, or the charge inside it?\n\nThe usual wrong choice is to answer inside the frame: pick the less bad option, try again harder, or defend yourself against the charge. Each one accepts the trap.\n\nMindset: when the question is rigged, your answer does not have to fit it.",
+      inputs: [
+        { q: "Your husband says, \"Either you come to the match with me, or just admit you don't like my friends.\"", a: "\"Neither. I like your friends, and I'm staying in on Sunday.\" [Refuse the False Choice]", bundle: 'pro', guideBack: "A third option, neither of theirs" },
+        { q: "Your boss says, \"You did the presentation, but it didn't have the energy I wanted.\"", a: "\"What would the right energy look like? Is there one from last year I can copy?\" [Ask What Would Count]", bundle: 'pro', guideBack: "A question that fixes the goal" },
+        { q: "Your father says, \"Why are you always so ungrateful?\"", a: "\"I don't think I am. Is this about your birthday?\" [Answer the Real Question]", bundle: 'pro', guideBack: "The worry addressed, not the charge" },
+        { q: "Your friend Alva says, \"Either you back me up with Kim, or you're on her side.\"", a: "\"Neither. I'm staying out of it, and I'm still your friend.\" [Refuse the False Choice]", bundle: 'pro', guideBack: "A third option, neither of theirs" },
+        { q: "Your partner says, \"You booked the trip. But you booked the wrong kind of trip.\"", a: "\"Tell me what the right kind would be, so next time we agree first.\" [Ask What Would Count]", bundle: 'pro', guideBack: "A question that fixes the goal" },
+        { q: "Your colleague Hugo says, \"Why do you always have to take the credit?\"", a: "\"I don't think I do. Did something in the meeting bother you?\" [Answer the Real Question]", bundle: 'pro', guideBack: "The worry addressed, not the charge" },
+        { q: "Your mother-in-law says, \"Either you let me do the school pickups, or you don't trust me.\"", a: "\"I do trust you. The pickups are ours. Would you like them for tea on Wednesdays?\" [Refuse the False Choice]", bundle: 'pro', guideBack: "A third option, neither of theirs" },
+        { q: "A client says, \"It's fine, but it's not quite there yet.\"", a: "\"What would 'there' look like? Give me two or three things, and I'll do those.\" [Ask What Would Count]", bundle: 'pro', guideBack: "A question that fixes the goal" },
+      ]
+    },
+    {
+      name: "Set Your Own Pace",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Slow the Clock**, **Step Out of the Loop** and **Watch the Ladder** — three strategies for when the pressure is in the timing, not the question: too fast, round and round, or a little more each time.\n\n• **Slow the Clock** — speed: you have to decide now\n• **Step Out of the Loop** — repetition: the same argument, again\n• **Watch the Ladder** — size: the yes keeps growing\n\nThe question that decides it: what is the pressure made of — speed, repetition, or size?\n\nThe usual wrong choice is to give in to end it: the quick yes to stop the hurry, the yes after round five, the next step up because you took the last one. All three trade a decision for some peace.\n\nMindset: you can set the pace, even when they set the topic.",
+      inputs: [
+        { q: "At the gym, a salesperson says, \"Sign up today or lose the joining discount.\"", a: "\"Then I'll lose it. I'll decide at home.\" [Slow the Clock]", bundle: 'pro', guideBack: "A refusal to be rushed" },
+        { q: "Your partner raises getting a dog for the fifth time tonight.", a: "\"That's round five tonight. I'm stopping, and we'll talk on Saturday.\" [Step Out of the Loop]", bundle: 'pro', guideBack: "A clear stop, not a new reason" },
+        { q: "Your friend Theo stayed in your flat for a weekend. Now he says, \"I'll stay the month, if that's okay.\"", a: "\"I said a weekend. A month isn't possible.\" [Watch the Ladder]", bundle: 'pro', guideBack: "The original deal, said again" },
+        { q: "Your manager says, \"I need your answer on the overtime in five minutes.\"", a: "\"I'll tell you at lunch. Five minutes is too fast for me.\" [Slow the Clock]", bundle: 'pro', guideBack: "A refusal to be rushed" },
+        { q: "Your sister brings up who should care for Dad, for the third time in one phone call.", a: "\"We've done this one three times now. I've said what I think. Let's talk on Thursday.\" [Step Out of the Loop]", bundle: 'pro', guideBack: "A clear stop, not a new reason" },
+        { q: "You agreed to water your neighbour's plants for a week. Now she says, \"And the cat and the post, for the summer?\"", a: "\"I said the plants, for a week. The whole summer is too much for me.\" [Watch the Ladder]", bundle: 'pro', guideBack: "The original deal, said again" },
+        { q: "A car dealer says, \"My manager will only approve this price if you sign now.\"", a: "\"Then it's a no for today. Here's my number.\" [Slow the Clock]", bundle: 'pro', guideBack: "A refusal to be rushed" },
+        { q: "Your boss says, \"You stayed late on Tuesday, so I've told the client you'll be on call evenings.\"", a: "\"I stayed late once. I'm not on call in the evenings. Please tell the client.\" [Watch the Ladder]", bundle: 'pro', guideBack: "The original deal, said again" },
+      ]
+    },
+    {
+      name: "All Six Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, with no warning about which kind of trap is coming.\n\n• **Refuse the False Choice** · **Ask What Would Count** · **Answer the Real Question** — the question is rigged\n• **Slow the Clock** · **Step Out of the Loop** · **Watch the Ladder** — the timing is rigged\n\nThe question that decides it: what is wrong here — the options, the target, the charge, the clock, the circle, or the size?\n\nThe usual wrong choice is to answer quickly and well inside the trap. A clever answer to a rigged question is still an answer to a rigged question.\n\nMindset: first see the shape of the trap. Then step outside it.",
+      inputs: [
+        { q: "Your father says, \"If you move to Malmö, you're abandoning us. If you stay, you'll blame us forever.\"", a: "\"Neither. I'm moving, and I'll be here every other weekend.\" [Refuse the False Choice]", bundle: 'pro', guideBack: "A third option, neither of theirs" },
+        { q: "Your manager Lars says, \"Good, the slides are done. But they should tell more of a story.\"", a: "\"What story should they tell? Give me the three points, and I'll build it round those.\" [Ask What Would Count]", bundle: 'pro', guideBack: "A question that fixes the goal" },
+        { q: "A double-glazing salesman says, \"I can only do this price if you sign before I leave.\"", a: "\"Then you'll leave without a signature. Send me the quote.\" [Slow the Clock]", bundle: 'pro', guideBack: "A refusal to be rushed" },
+        { q: "Your partner Selma says, \"Why are you always on your phone when I need you?\"", a: "\"I'm putting it away now. What do you need?\" [Answer the Real Question]", bundle: 'pro', guideBack: "The worry addressed, not the charge" },
+        { q: "Your friend Max says for the fourth time, \"But why won't you come on the trip? Just tell me.\"", a: "\"I've told you, and asking again won't change it. Let's talk about something else.\" [Step Out of the Loop]", bundle: 'pro', guideBack: "A clear stop, not a new reason" },
+        { q: "Your colleague says, \"You helped with the Monday report, so you'll do it every week now, right?\"", a: "\"I helped once. Every Monday is more than I can take on.\" [Watch the Ladder]", bundle: 'pro', guideBack: "The original deal, said again" },
+        { q: "Your brother-in-law says, \"Either you invest in the boat with us, or you're not really family.\"", a: "\"I'm family, and I'm not investing. I'd love to come out on it, though.\" [Refuse the False Choice]", bundle: 'pro', guideBack: "A third option, neither of theirs" },
+        { q: "Your daughter-in-law says, \"You babysat, but you didn't follow the routine.\"", a: "\"Could you write the routine down for me? Then I'll follow it exactly.\" [Ask What Would Count]", bundle: 'pro', guideBack: "A question that fixes the goal" },
+      ]
+    },
+  ],
+  manipulationadv: [
+    {
+      name: "Hold, Limit or Leave",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Same Line, Any Tactic**, **State the Consequence** and **End the Conversation** — three strategies for the middle of it, when one tactic follows another.\n\n• **Same Line, Any Tactic** — the tactics change, and your answer just needs to stay the same\n• **State the Consequence** — it has happened before, and you can say what you will do if it happens again\n• **End the Conversation** — your answer has been heard, and staying only gives the next tactic a chance\n\nThe question that decides it: is there anything left to say? If they are still hearing your answer, keep the line. If it keeps happening, say what you will do. If everything has been said, end it.\n\nThe usual wrong choice is a new explanation after every tactic. It gives each one something to argue with.\n\nMindset: one answer, one limit, one exit. You do not need more words.",
+      inputs: [
+        { q: "Your partner wants you to skip your work trip. You've said you're going. She says she'll be lonely, then that you always choose work, then that you clearly don't love her.", a: "\"I hear you, and I do love you. I'm still going.\" [Same Line, Any Tactic]", bundle: 'pro', guideBack: "The same short line, again" },
+        { q: "Your father has shouted on the last three calls about your job, and each time said you're the one who upsets him. He's ringing again now.", a: "\"Dad, before we start: if it gets loud, I'll say goodbye and ring you tomorrow.\" [State the Consequence]", bundle: 'pro', guideBack: "An if-then about your own action" },
+        { q: "Your friend Carl wants to borrow your car again. You've said no twice. He's tried guilt, then a joke, and now \"everyone else would\".", a: "\"I've given you my answer, and we're going in circles. Let's leave it and get a coffee.\" [End the Conversation]", bundle: 'pro', guideBack: "A kind, clear close" },
+        { q: "Your manager asks you to cancel your leave. You say no. She says the team will suffer, and then that she's disappointed in you.", a: "\"I understand. My leave is still booked.\" [Same Line, Any Tactic]", bundle: 'pro', guideBack: "The same short line, again" },
+        { q: "Every time you say no to a visit, your sister passes on how hurt Mum is. It has just happened again.", a: "\"If Mum's hurt, I'd like to hear it from her. I won't answer it through you.\" [State the Consequence]", bundle: 'pro', guideBack: "An if-then about your own action" },
+        { q: "You've said no to your mother-in-law moving in. Your husband has cried, said you hate his family, and now he's asking again at midnight.", a: "\"I'm going to stop here for tonight. We'll talk on Saturday morning.\" [End the Conversation]", bundle: 'pro', guideBack: "A kind, clear close" },
+        { q: "Your adult daughter wants you to sign for her loan. You say no. She says you never trusted her, and then that her dad would have done it.", a: "\"Maybe he would. It's still no.\" [Same Line, Any Tactic]", bundle: 'pro', guideBack: "The same short line, again" },
+        { q: "Your colleague Viktor raises his voice whenever you disagree, then says you're too sensitive. The meeting is about to start.", a: "\"Viktor, if this gets loud again, I'll stop the meeting, and we'll finish it by email.\" [State the Consequence]", bundle: 'pro', guideBack: "An if-then about your own action" },
+      ]
+    },
+    {
+      name: "Look at the Pattern",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Point Out the Pattern**, **Check Your Reality** and **Check Yourself** — three strategies for afterwards, when you step back and look at what keeps happening.\n\n• **Point Out the Pattern** — you are sure it repeats, and it is calm enough to raise it with them\n• **Check Your Reality** — you are no longer sure what is fair, and need a view from outside\n• **Check Yourself** — you might be part of it, or their feeling might be real\n\nThe question that decides it: how sure am I, and of what? Sure of the pattern: point it out. Unsure of what is normal: ask someone. Unsure of your own part: check yourself first.\n\nThe usual wrong choice is pointing it out before checking. If you were pushing too, the talk goes wrong from the first line.\n\nMindset: look before you name it.",
+      inputs: [
+        { q: "For months, your partner has gone quiet for days after every no. It's calm today, and you've both had a good morning.", a: "\"Can I mention something? When I say no, there are a few quiet days afterwards. I'd like us to talk about that.\" [Point Out the Pattern]", bundle: 'pro', guideBack: "A calm observation and an invitation" },
+        { q: "Your mother says everyone is upset with you, and you've started to believe you're the difficult one. You're having tea with your aunt.", a: "\"Can I ask you something honestly? Do people think I've been difficult lately?\" [Check Your Reality]", bundle: 'pro', guideBack: "A question to someone outside it" },
+        { q: "You've asked your housemate three times to swap rooms. She keeps saying no, and you've just said, \"After everything I've done for you.\"", a: "\"Sorry, that was me guilt-tripping you. Your no is fine.\" [Check Yourself]", bundle: 'pro', guideBack: "An honest self-check, said aloud" },
+        { q: "Your friend Lina cries whenever you disagree, then disappears for a week. You can't tell any more if you're too harsh. You're with your partner.", a: "\"Can I tell you what keeps happening with Lina, and you tell me if I'm being harsh?\" [Check Your Reality]", bundle: 'pro', guideBack: "A question to someone outside it" },
+        { q: "For six months, your boss has been friendly after every yes and frosty after every no. You have a one-to-one today.", a: "\"Can I mention something I've noticed? After I say no, things are cooler between us for a while. I'd like to talk about that.\" [Point Out the Pattern]", bundle: 'pro', guideBack: "A calm observation and an invitation" },
+        { q: "Your son has been silent since you said no to the trip. You're about to call it a sulk.", a: "\"You've been quiet since last night. Are you really upset? I'd like to hear it.\" [Check Yourself]", bundle: 'pro', guideBack: "An honest self-check, said aloud" },
+        { q: "Your brother brings up your late father every time you disagree about money. It's the fourth time this year. Now you're having a calm dinner.", a: "\"Can I say something? When we disagree about money, Dad comes up. I'd like us to keep him out of it and talk about the money.\" [Point Out the Pattern]", bundle: 'pro', guideBack: "A calm observation and an invitation" },
+        { q: "Your wife said no to selling the cottage, and you've been cold with her for two days.", a: "\"I've been cold with you since Sunday. That's not fair. Can we talk instead?\" [Check Yourself]", bundle: 'pro', guideBack: "An honest self-check, said aloud" },
+      ]
+    },
+    {
+      name: "All Six Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, with no warning about which kind of moment is coming.\n\nThe six fall into two groups. For the middle of it, when one tactic follows another: **Same Line, Any Tactic**, **State the Consequence** and **End the Conversation**. For afterwards, when you step back and look: **Point Out the Pattern**, **Check Your Reality** and **Check Yourself**.\n\nIf you are unsure, ask first: am I in it, or looking back at it? Then: is there anything left to say, and how sure am I of what I see?\n\nThe usual wrong choice is naming the pattern in the middle of a row. Then it sounds like an attack, and it becomes the next tactic's target.\n\nMindset: in the moment, hold. Afterwards, look.",
+      inputs: [
+        { q: "Your father says, \"After all I've done.\" You say your answer is the same. Now he says, \"So I'm the villain, am I?\"", a: "\"No, Dad. My answer's still the same.\" [Same Line, Any Tactic]", bundle: 'pro', guideBack: "The same short line, again" },
+        { q: "Each time you see your friends, your partner cries, and then there are two quiet days. It's the fifth time. Tonight is calm.", a: "\"When I see my friends, there are tears and then a quiet couple of days. Can we talk about it?\" [Point Out the Pattern]", bundle: 'pro', guideBack: "A calm observation and an invitation" },
+        { q: "Twice now, after you disagreed with your colleague Helen, she went straight to the boss. You have a meeting with her today.", a: "\"If there's a problem with my work, I'd like to hear it from you first. If it goes to the boss again, I'll ask for the three of us to meet.\" [State the Consequence]", bundle: 'pro', guideBack: "An if-then about your own action" },
+        { q: "Your sister has been on the phone for forty minutes: guilt, then tears, then \"everyone agrees with me\".", a: "\"I'm going to stop here. I'll call you tomorrow.\" [End the Conversation]", bundle: 'pro', guideBack: "A kind, clear close" },
+        { q: "After a week of silence from your boyfriend, you no longer know if you were unfair. You're with a friend.", a: "\"Can I tell you what happened, and you tell me honestly if I was unfair?\" [Check Your Reality]", bundle: 'pro', guideBack: "A question to someone outside it" },
+        { q: "You asked your friend three times to come to your party. She said no, and you've been sulky with her for a day.", a: "\"I've been sulky since you said no. That's on me. Your no is fine.\" [Check Yourself]", bundle: 'pro', guideBack: "An honest self-check, said aloud" },
+        { q: "Your mother-in-law is warm when you agree with her and cool when you don't. Today she's sweet, and asking again.", a: "\"Thank you. It's still no.\" [Same Line, Any Tactic]", bundle: 'pro', guideBack: "The same short line, again" },
+        { q: "Your husband has controlled the money for years and gets angry if you ask about it. You realise you're afraid to raise it. You're with your sister.", a: "\"Can I tell you how money works in our house? I need someone outside it.\" [Check Your Reality]", bundle: 'pro', guideBack: "A question to someone outside it" },
       ]
     },
   ],

@@ -19814,4 +19814,646 @@ const multiStepCollections = {
       ]
     },
   ],
+  manipulation1: [
+    {
+      name: "The Unhurried No",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "A no given in your own time, and kept when the disappointment and the second ask come.\n\n1. **Buy Time** — at the first ask, take the decision away from the rush.\n2. **Feeling Yes, Answer No** — when you give your answer, meet the disappointment.\n3. **Same Answer, Same Warmth** — when they ask again, give the same answer, kindly.\n\nBuying time first means the no you give is the one you chose, not the one the rush chose. That is what makes it easy to repeat later. Answer on the spot, and you either say yes, or spend the next week defending a no you never thought through.\n\nThe usual order is a quick yes now and a guilty no later.\n\nMindset: a no I had time to choose is a no I can keep.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your father-in-law wants you to join his business.",
+          steps: [
+            { front: "Buy Time — at dinner: \"So you'll start in January? Say yes, and I'll tell the others tonight.\"", back: "\"That's a big decision, and I'm not making it at dinner. I'll call you on Sunday.\"", guideFront: "Delay your answer when...", guideBack: "A promise to answer at a set time" },
+            { front: "Feeling Yes, Answer No — on Sunday you say no. He goes quiet: \"I really thought you'd want this.\"", back: "\"I can hear how much you hoped for it, and I'm touched you asked. It's still no.\"", guideFront: "Show you hear them, then decline when...", guideBack: "An acknowledgment, then the same no" },
+            { front: "Same Answer, Same Warmth — a week later: \"Have you thought about it again?\"", back: "\"I have. Still no, and I'm still glad you asked me.\"", guideFront: "Repeat it kindly when...", guideBack: "The same short answer, with no new reasons" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your friend Hannah is organising a group holiday you can't really afford.",
+          steps: [
+            { front: "Buy Time — in the group chat: \"Everyone's booked Spain. You're in, right? I need to know tonight.\"", back: "\"I need to look at my money first. I'll tell you tomorrow.\"", guideFront: "Delay your answer when...", guideBack: "A promise to answer at a set time" },
+            { front: "Feeling Yes, Answer No — you tell her you can't come. She writes, \"It won't be the same without you. I'm gutted.\"", back: "\"I'm gutted too, honestly, and I can hear you are. I'm still not coming this time.\"", guideFront: "Show you hear them, then decline when...", guideBack: "An acknowledgment, then the same no" },
+            { front: "Same Answer, Same Warmth — the next day: \"Just come! You'll regret it.\"", back: "\"Maybe. It's still no, and I want all the photos.\"", guideFront: "Repeat it kindly when...", guideBack: "The same short answer, with no new reasons" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your son's football coach wants a parent to run the team's fundraising.",
+          steps: [
+            { front: "Buy Time — after practice, in front of the other parents: \"You'll take the fundraising this year, won't you? Great.\"", back: "\"Let me think about it. I'll email you by Friday.\"", guideFront: "Delay your answer when...", guideBack: "A promise to answer at a set time" },
+            { front: "Feeling Yes, Answer No — you email him no. At the next practice he sighs: \"Honestly, I'm drowning here.\"", back: "\"I can see you're stretched thin, and I'm sorry. I still can't take it on.\"", guideFront: "Show you hear them, then decline when...", guideBack: "An acknowledgment, then the same no" },
+            { front: "Same Answer, Same Warmth — a week later: \"Sure you can't do it? Just this season?\"", back: "\"I'm sure. Still no, and I'll keep bringing the oranges.\"", guideFront: "Repeat it kindly when...", guideBack: "The same short answer, with no new reasons" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Grateful, Not Owing",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For when the past is used as a bill. You thank them, you give what you can, and you hold it.\n\n1. **Thanks Isn't a Debt** — thank them fully for what they did, and keep it apart from the answer.\n2. **A Smaller Yes** — offer the part you can gladly give.\n3. **Same Answer, Same Warmth** — when they push for more, give the same offer again.\n\nThe thanks comes first so the smaller yes is not read as a payment on the debt. Offer the smaller yes first, and it sounds like a first instalment, with more to come.\n\nThe usual order is to argue about who did what, and then give in to end the argument.\n\nMindset: I can be grateful for the past and still decide about today.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your aunt, who looked after you as a child, wants you to visit every Sunday.",
+          steps: [
+            { front: "Thanks Isn't a Debt — \"I looked after you every summer when your mum worked. Now I can't even get a Sunday?\"", back: "\"You did, and those summers mean the world to me. It still doesn't mean every Sunday.\"", guideFront: "Thank them, then still decline when...", guideBack: "Gratitude, kept apart from the answer" },
+            { front: "A Smaller Yes — she asks what you can do, then.", back: "\"I can come every other Sunday, and I'll call you on Wednesdays.\"", guideFront: "Offer what you can give when...", guideBack: "A real offer, smaller than the ask" },
+            { front: "Same Answer, Same Warmth — \"Every other Sunday? That's hardly anything.\"", back: "\"I know you'd like more. It's every other Sunday, and I'll be there.\"", guideFront: "Repeat it kindly when...", guideBack: "The same short answer, with no new reasons" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Gary, your old mentor, wants you to recommend his nephew for a job you don't think he's ready for.",
+          steps: [
+            { front: "Thanks Isn't a Debt — \"I got you your first job. Now I'm asking one small thing.\"", back: "\"You did, Gary, and I'm grateful every day. I still can't recommend him for this role.\"", guideFront: "Thank them, then still decline when...", guideBack: "Gratitude, kept apart from the answer" },
+            { front: "A Smaller Yes — he asks if there's anything you can do for the boy.", back: "\"I can meet him for coffee and tell him what the team looks for.\"", guideFront: "Offer what you can give when...", guideBack: "A real offer, smaller than the ask" },
+            { front: "Same Answer, Same Warmth — \"Just one line in an email. Nobody would know.\"", back: "\"I know it seems small. It's still no to the email, and the coffee's on me.\"", guideFront: "Repeat it kindly when...", guideBack: "The same short answer, with no new reasons" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your flatmate Elin wants you to drive her to her parents' every Friday.",
+          steps: [
+            { front: "Thanks Isn't a Debt — \"I looked after you for a whole week when you had flu.\"", back: "\"You did, and I was so grateful. It doesn't mean I can drive you every Friday.\"", guideFront: "Thank them, then still decline when...", guideBack: "Gratitude, kept apart from the answer" },
+            { front: "A Smaller Yes — she asks how often you could do it.", back: "\"I can drive you on the first Friday of each month.\"", guideFront: "Offer what you can give when...", guideBack: "A real offer, smaller than the ask" },
+            { front: "Same Answer, Same Warmth — \"Just Fridays! It's on your way anyway.\"", back: "\"I know. It's still the first Friday, and that one's a promise.\"", guideFront: "Repeat it kindly when...", guideBack: "The same short answer, with no new reasons" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Steady No",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For when the pressure climbs: first the hurt, then the second ask, then a threat. You meet each one with the strategy built for it, and the answer never moves.\n\n1. **Feeling Yes, Answer No** — meet the hurt, and keep the answer.\n2. **Same Answer, Same Warmth** — when they ask again, the same answer, kindly.\n3. **Take the Threat Seriously** — when a price comes, treat it as real and stay put.\n\nThe threat usually comes last, because it is what is left when the feeling and the repeat did not work. If you gave in at step 2, you taught them that asking again works. If you give in at step 3, you teach them that threats work.\n\nThe usual order is to hold through two rounds and give in at the threat.\n\nMindset: the answer does not change because the pressure gets bigger.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your mother wants the grandchildren for a month this summer. You have said two weeks.",
+          steps: [
+            { front: "Feeling Yes, Answer No — she says, in tears, \"You're keeping the children from me.\"", back: "\"I can see how much you miss them, Mum, and I'm sorry. It's still two weeks this summer.\"", guideFront: "Show you hear them, then decline when...", guideBack: "An acknowledgment, then the same no" },
+            { front: "Same Answer, Same Warmth — \"Three weeks, then.\"", back: "\"I know you'd like more. Still two weeks, and they can't wait.\"", guideFront: "Repeat it kindly when...", guideBack: "The same short answer, with no new reasons" },
+            { front: "Take the Threat Seriously — \"Then maybe I won't have them at all.\"", back: "\"I'd be sad for them and for you. If that's your choice, I'll respect it. The two weeks are there whenever you want them.\"", guideFront: "Answer the threat with care when...", guideBack: "Care, with your decision unchanged" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your friend Ola has just been left by his girlfriend, and you have a trip booked for Friday.",
+          steps: [
+            { front: "Feeling Yes, Answer No — \"I really need you here this week.\"", back: "\"I can hear how much you're hurting, Ola, and I'm so sorry. I'm still going on Friday.\"", guideFront: "Show you hear them, then decline when...", guideBack: "An acknowledgment, then the same no" },
+            { front: "Same Answer, Same Warmth — \"Couldn't you go later?\"", back: "\"I wish I could make this easier. I'm still going on Friday, and I'll call you every evening.\"", guideFront: "Repeat it kindly when...", guideBack: "The same short answer, with no new reasons" },
+            { front: "Take the Threat Seriously — \"If you go, I really don't know how I'll get through it.\"", back: "\"That worries me, and I'm not brushing it off. Let's call your sister now, so you're not on your own. I'm still going on Friday.\"", guideFront: "Answer the threat with care when...", guideBack: "Care, with your decision unchanged" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your manager Karin wants you to drop the Thursday classes you take for your degree.",
+          steps: [
+            { front: "Feeling Yes, Answer No — \"I'm disappointed. I thought you were committed to this team.\"", back: "\"I can see you're disappointed, Karin. I'm still keeping my Thursday classes.\"", guideFront: "Show you hear them, then decline when...", guideBack: "An acknowledgment, then the same no" },
+            { front: "Same Answer, Same Warmth — \"Couldn't you just skip this term?\"", back: "\"I know it would help you. It's still Thursdays.\"", guideFront: "Repeat it kindly when...", guideBack: "The same short answer, with no new reasons" },
+            { front: "Take the Threat Seriously — \"Then I can't promise you'll stay on the project.\"", back: "\"I take that seriously, and I'd like to understand it. Can we talk it through with HR? I'm still keeping Thursdays.\"", guideFront: "Answer the threat with care when...", guideBack: "Care, with your decision unchanged" },
+          ]
+        },
+      ]
+    },
+  ],
+  manipulation2: [
+    {
+      name: "The Plain Truth",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For when someone flatly denies what happened. You say it, you hold it, and you write it down.\n\n1. **Stick to What Happened** — say the facts, dated and plain.\n2. **Don't Debate Your Memory** — when they deny it, keep your version without a fight.\n3. **Keep a Record** — close by putting it in writing.\n\nThe order matters. Hold your memory before you have said the facts, and there is nothing to hold. Write it down before you have said it to them, and the note feels like an ambush.\n\nThe usual order is to say it, argue for twenty minutes, and give up.\n\nMindset: say it once, then stop defending it.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your housemate Pete agreed in January to pay a third of the heating. Now the bill has come.",
+          steps: [
+            { front: "Stick to What Happened — you bring up the heating bill.", back: "\"In January, in the kitchen, you agreed to pay a third of the heating.\"", guideFront: "Describe the event plainly when...", guideBack: "A dated, factual account" },
+            { front: "Don't Debate Your Memory — Pete says, \"I never agreed to that. You're making it up.\"", back: "\"We remember it differently, Pete. I know what you said.\"", guideFront: "Hold your version calmly when...", guideBack: "A calm statement of what you know" },
+            { front: "Keep a Record — he sighs: \"Fine. A third, from now on.\"", back: "\"Thanks. I'll put that in the house chat now, so we all have it.\"", guideFront: "Put it in writing when...", guideBack: "A summary to confirm in writing" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your aunt Ruth borrowed your camera for a trip in May, and you have not had it back.",
+          steps: [
+            { front: "Stick to What Happened — you ask about the camera.", back: "\"You borrowed my camera for your trip in May, and I haven't had it back.\"", guideFront: "Describe the event plainly when...", guideBack: "A dated, factual account" },
+            { front: "Don't Debate Your Memory — Ruth says, \"I gave it back in June. You've lost it and now you're blaming me.\"", back: "\"I remember it differently, and I'm not going to argue about it. It isn't at my place.\"", guideFront: "Hold your version calmly when...", guideBack: "A calm statement of what you know" },
+            { front: "Keep a Record — she agrees to look through her house at the weekend.", back: "\"Thanks, Ruth. I'll text you, so we both remember: you'll look this weekend and let me know.\"", guideFront: "Put it in writing when...", guideBack: "A summary to confirm in writing" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "In a one-to-one in May, your manager Dev said you could have Fridays off in July. Now it is July.",
+          steps: [
+            { front: "Stick to What Happened — you raise the summer Fridays.", back: "\"In our one-to-one on the 2nd of May, you said I could have Fridays off in July.\"", guideFront: "Describe the event plainly when...", guideBack: "A dated, factual account" },
+            { front: "Don't Debate Your Memory — Dev says, \"I'd never have said that. You must have misheard.\"", back: "\"I know what I heard, Dev. I'd rather not argue about it.\"", guideFront: "Hold your version calmly when...", guideBack: "A calm statement of what you know" },
+            { front: "Keep a Record — he agrees to two Fridays this month.", back: "\"Great. I'll email you the two dates now, so it's in writing.\"", guideFront: "Put it in writing when...", guideBack: "A summary to confirm in writing" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Hold the Thread",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For when raising something turns into a trial of you. You say what happened, bring it back when they turn it round, and ask for an example when they throw a label.\n\n1. **Stick to What Happened** — open with the facts.\n2. **Back to the Point** — when they turn it on you, bring it back.\n3. **Ask for the Specific** — when they reach for a label, ask for one example.\n\nWithout step 1 there is no point to come back to. And a question about their label, before you have steered back, makes their charge the main topic.\n\nThe usual order is to answer the counter-charge first and never get back.\n\nMindset: the subject stays mine until I have finished it.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Five hundred pounds has gone from the holiday fund you share with your partner Mia, and she has not mentioned it.",
+          steps: [
+            { front: "Stick to What Happened — you bring it up after dinner.", back: "\"On Monday there was nine hundred in the holiday fund. Today there's four hundred.\"", guideFront: "Describe the event plainly when...", guideBack: "A dated, factual account" },
+            { front: "Back to the Point — Mia says, \"So you're checking up on me now? You spent two hundred on shoes last month.\"", back: "\"We can talk about the shoes next. Right now it's the holiday fund.\"", guideFront: "Return to the issue when...", guideBack: "A redirect to the original issue" },
+            { front: "Ask for the Specific — \"You always do this. You make me feel like a criminal.\"", back: "\"What exactly do I do? Tell me one time, and I'll listen.\"", guideFront: "Request one concrete example when...", guideBack: "A question for one real example" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your colleague Leon sent the board a proposal you wrote, with only his name on it.",
+          steps: [
+            { front: "Stick to What Happened — you catch him after lunch.", back: "\"The proposal you sent the board on Tuesday is the one I wrote. Only your name is on it.\"", guideFront: "Describe the event plainly when...", guideBack: "A dated, factual account" },
+            { front: "Back to the Point — Leon says, \"Wow. I help you all year and now you're coming after me?\"", back: "\"I'm grateful for the help, Leon. We're still talking about the proposal.\"", guideFront: "Return to the issue when...", guideBack: "A redirect to the original issue" },
+            { front: "Ask for the Specific — \"You're so territorial. Nobody can work with you.\"", back: "\"Territorial how? Give me one example.\"", guideFront: "Request one concrete example when...", guideBack: "A question for one real example" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your sister-in-law Kim told the family you refused to host Christmas. You only said you couldn't do the 24th.",
+          steps: [
+            { front: "Stick to What Happened — you ring her the next day.", back: "\"I said I couldn't do the 24th. I didn't say I wouldn't host Christmas.\"", guideFront: "Describe the event plainly when...", guideBack: "A dated, factual account" },
+            { front: "Back to the Point — Kim starts crying: \"I can't believe you'd call me a liar in front of everyone.\"", back: "\"I'm sorry you're upset, Kim, and I'm not calling you anything. I'd still like the family to hear what I said.\"", guideFront: "Return to the issue when...", guideBack: "A redirect to the original issue" },
+            { front: "Ask for the Specific — \"You're always the one making trouble in this family.\"", back: "\"What trouble do you mean? Tell me one time.\"", guideFront: "Request one concrete example when...", guideBack: "A question for one real example" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Past the Excuse",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For when they admit it, but with a reason that is meant to end the talk. You grant the reason, keep the subject, and close it in writing.\n\n1. **Judge the Act, Not the Motive** — grant the reason, name the act.\n2. **Back to the Point** — when your answer is called ungrateful, return.\n3. **Keep a Record** — close with what you have agreed, in writing.\n\nGranting the reason first takes the heat out: they no longer have to defend their heart. Skip it and go straight to the record, and it sounds as if you never heard them.\n\nThe usual order is to argue about the reason until you are both worn out.\n\nMindset: I can believe them and still say no to what they did.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "While you were away, your father let himself into your flat with the spare key and cleared out your fridge.",
+          steps: [
+            { front: "Judge the Act, Not the Motive — he says, \"I only did it because I didn't want you coming home to rotten food.\"", back: "\"I know you meant well, Dad. Coming in without asking still isn't okay.\"", guideFront: "Separate reason from deed when...", guideBack: "Their reason granted, the act still named" },
+            { front: "Back to the Point — \"That's gratitude for you. I try to help, and I get told off.\"", back: "\"I am grateful you care. We're still talking about the key.\"", guideFront: "Return to the issue when...", guideBack: "A redirect to the original issue" },
+            { front: "Keep a Record — he agrees to text before he comes round.", back: "\"Thank you. I'll text you that now, so we both remember it.\"", guideFront: "Put it in writing when...", guideBack: "A summary to confirm in writing" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your friend Hannah signed you up for a 10K run and posted about it online.",
+          steps: [
+            { front: "Judge the Act, Not the Motive — she says, \"I only did it because you said you wanted to get fit.\"", back: "\"Maybe I did say that. Signing me up and posting it still wasn't okay.\"", guideFront: "Separate reason from deed when...", guideBack: "Their reason granted, the act still named" },
+            { front: "Back to the Point — \"You're so ungrateful. Most people would be pleased.\"", back: "\"We can talk about that later. Right now it's the post.\"", guideFront: "Return to the issue when...", guideBack: "A redirect to the original issue" },
+            { front: "Keep a Record — she agrees to take the post down and cancel the place.", back: "\"Thanks. I'll send you a message so we both know: you'll take it down today.\"", guideFront: "Put it in writing when...", guideBack: "A summary to confirm in writing" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your manager Petra gave your biggest client to a new colleague without telling you.",
+          steps: [
+            { front: "Judge the Act, Not the Motive — Petra says, \"I only moved them because I wanted to free you up for bigger things.\"", back: "\"That may be true. Moving my client without telling me still isn't okay.\"", guideFront: "Separate reason from deed when...", guideBack: "Their reason granted, the act still named" },
+            { front: "Back to the Point — \"I've been fighting for you, and this is what I get?\"", back: "\"I appreciate that, Petra. I'd still like to talk about the client.\"", guideFront: "Return to the issue when...", guideBack: "A redirect to the original issue" },
+            { front: "Keep a Record — she agrees to talk to you first before moving any of your clients.", back: "\"Thanks. I'll put that in an email after this, so we both have it.\"", guideFront: "Put it in writing when...", guideBack: "A summary to confirm in writing" },
+          ]
+        },
+      ]
+    },
+  ],
+  manipulation3: [
+    {
+      name: "The Direct Route",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For a story about you that arrives secondhand, from \"people\". You follow it back to one person, and then set it straight once.\n\n1. **Ask Who Said It** — turn \"people\" into a name.\n2. **Go to the Source** — talk to that person, not about them.\n3. **Correct the Record Once** — give the facts, once, to the person who needs them.\n\nThe order matters because a correction needs the right listener. Correct it first and you defend yourself to whoever happens to be in front of you, against a story you have not even heard properly.\n\nThe usual order is a round of explanations to everyone except the person it came from.\n\nMindset: find the one person, then say it once.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A colleague tells you over coffee that people think you took all the credit for the team's launch.",
+          steps: [
+            { front: "Ask Who Said It — Mark says, \"People are saying you took the credit for the launch.\"", back: "\"Which people? I'd like to talk to them myself.\"", guideFront: "Ask for names when...", guideBack: "A calm request for names" },
+            { front: "Go to the Source — he hesitates, then says, \"Mostly Sofia, I think.\"", back: "\"Sofia, I heard you feel I took the credit for the launch. I'd rather hear it from you.\"", guideFront: "Talk to the person directly when...", guideBack: "A direct question to the person involved" },
+            { front: "Correct the Record Once — Sofia says, \"You presented it as if it was all yours.\"", back: "\"I put your name on the first slide. Next time I'll say it out loud as well.\"", guideFront: "Give the facts one time when...", guideBack: "A short, factual correction" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your cousin says the whole family thinks you have stopped visiting your grandmother.",
+          steps: [
+            { front: "Ask Who Said It — your cousin says, \"Everyone's saying you never visit Grandma any more.\"", back: "\"Who's everyone? I'd like to talk to them.\"", guideFront: "Ask for names when...", guideBack: "A calm request for names" },
+            { front: "Go to the Source — she says, \"Well, Auntie Lena said it at dinner.\"", back: "\"Auntie Lena, I heard you think I've stopped visiting Grandma. Can we talk about it?\"", guideFront: "Talk to the person directly when...", guideBack: "A direct question to the person involved" },
+            { front: "Correct the Record Once — Lena says, \"Grandma says you haven't been since the summer.\"", back: "\"I go every other Sunday. She forgets, and that's all right. I'll leave it there.\"", guideFront: "Give the facts one time when...", guideBack: "A short, factual correction" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "The day after a party, your friend Nils messages you that people think you were rude to Jo.",
+          steps: [
+            { front: "Ask Who Said It — Nils writes, \"Just so you know, people think you were really rude to Jo on Saturday.\"", back: "\"Who, exactly? I'd rather talk to them than guess.\"", guideFront: "Ask for names when...", guideBack: "A calm request for names" },
+            { front: "Go to the Source — Nils writes back, \"Jo said it, mainly.\"", back: "\"Jo, I heard you felt I was rude on Saturday. Can you tell me what happened for you?\"", guideFront: "Talk to the person directly when...", guideBack: "A direct question to the person involved" },
+            { front: "Correct the Record Once — Jo says, \"You told everyone my job was a joke.\"", back: "\"I said the hours were a joke, not your job. I'm sorry it came out that way.\"", guideFront: "Give the facts one time when...", guideBack: "A short, factual correction" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Out of the Middle",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For a message that arrives through a go-between. You hand it back, go to the person it came from, and do not let them hide behind a crowd.\n\n1. **Decline the Messenger Role** — kindly refuse to have it through someone else.\n2. **Go to the Source** — talk to the real sender yourself.\n3. **Ask Who Said It** — if they widen it to \"everyone\", ask who.\n\nThe order matters because the second step only happens if the first one does. Answer the messenger and the real sender never has to speak to you. And the \"everyone\" usually turns up only once you are talking face to face.\n\nThe usual order is arguing with the messenger, who did not start it.\n\nMindset: one sender, one listener, and nobody in between.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You missed Sunday lunch at your parents' house, and your sister rings you that evening.",
+          steps: [
+            { front: "Decline the Messenger Role — your sister says, \"Mum asked me to tell you she's very hurt.\"", back: "\"Thanks for telling me, but I'd rather not have this through you. I'll ring Mum.\"", guideFront: "Refuse to carry the message when...", guideBack: "A kind refusal to stand in the middle" },
+            { front: "Go to the Source — you ring, and Mum says, \"Oh, I didn't want to make a fuss.\"", back: "\"Mum, Anna said you were hurt about Sunday. I'd like to hear it from you.\"", guideFront: "Talk to the person directly when...", guideBack: "A direct question to the person involved" },
+            { front: "Ask Who Said It — Mum says, \"It's not just me. Everyone thought it was rude.\"", back: "\"Who's everyone, Mum? Right now I'd rather hear what you think.\"", guideFront: "Ask for names when...", guideBack: "A calm request for names" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A colleague passes on a complaint about your reports from your manager, Karen.",
+          steps: [
+            { front: "Decline the Messenger Role — Ahmed says, \"Karen asked me to let you know she's unhappy with your reports.\"", back: "\"Thanks, Ahmed. I'd rather hear that from Karen. I'll book a time with her.\"", guideFront: "Refuse to carry the message when...", guideBack: "A kind refusal to stand in the middle" },
+            { front: "Go to the Source — Karen says, \"I didn't want to make it formal.\"", back: "\"I understand. I'd still rather hear it from you. What's wrong with the reports?\"", guideFront: "Talk to the person directly when...", guideBack: "A direct question to the person involved" },
+            { front: "Ask Who Said It — Karen says, \"A few people have said they're hard to follow.\"", back: "\"Can you tell me who? I'd like to ask them what would help.\"", guideFront: "Ask for names when...", guideBack: "A calm request for names" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your friend Lotta tells you that Mia is upset with you, and asks you not to say where you heard it.",
+          steps: [
+            { front: "Decline the Messenger Role — Lotta says, \"Mia's really upset with you. Don't tell her I said anything.\"", back: "\"I'd rather not carry secrets between you two. I'll ask Mia myself and leave you out of it.\"", guideFront: "Refuse to carry the message when...", guideBack: "A kind refusal to stand in the middle" },
+            { front: "Go to the Source — you call Mia, and she says, \"Who told you I was upset?\"", back: "\"It doesn't matter who. I'd just rather hear it from you. Are you upset with me?\"", guideFront: "Talk to the person directly when...", guideBack: "A direct question to the person involved" },
+            { front: "Ask Who Said It — Mia says, \"Everyone thinks you've been flaky lately.\"", back: "\"Who's everyone? I'm happy to talk to them, but first I'd love to know what you think.\"", guideFront: "Ask for names when...", guideBack: "A calm request for names" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Off the Stage",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For a scene played in front of others, where a comparison follows the first dig. You remove the audience, refuse the contest, and give one plain fact to the people who heard it.\n\n1. **Take It Private** — offer to talk, but not here.\n2. **Don't Compete** — when the rival comes in, step out of the contest.\n3. **Correct the Record Once** — if someone watching asks, give the facts and stop.\n\nThe order matters because the audience is what powers both of the others. Take it away first, and the comparison loses its stage. Correct the record before that and you are performing your defence to the room.\n\nThe usual order is answering the comparison, loudly, right there.\n\nMindset: no audience, no contest, one fact.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are at a restaurant with two other couples, and your table was lost by the booking system.",
+          steps: [
+            { front: "Take It Private — your partner says, \"Of course, he forgot to book again. Typical.\"", back: "\"Let's talk about that later, just us.\"", guideFront: "Offer a one-to-one talk when...", guideBack: "An offer to talk away from others" },
+            { front: "Don't Compete — your partner adds, \"My ex never forgot anything.\"", back: "\"I'm not going to compete with your ex. Later, just the two of us.\"", guideFront: "Step out of the contest when...", guideBack: "An invitation to say it straight" },
+            { front: "Correct the Record Once — a friend asks quietly, \"Did you really forget?\"", back: "\"I booked for eight. They lost it. That's all.\"", guideFront: "Give the facts one time when...", guideBack: "A short, factual correction" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "At the Monday sales meeting, your colleague Sam starts on your figures in front of the whole team.",
+          steps: [
+            { front: "Take It Private — Sam says, \"Some of us actually hit our targets.\"", back: "\"If that's about me, Sam, let's talk after the meeting.\"", guideFront: "Offer a one-to-one talk when...", guideBack: "An offer to talk away from others" },
+            { front: "Don't Compete — Sam says, \"Priya hit hers in two weeks.\"", back: "\"Priya did well. I'm not racing her. Happy to look at my numbers with you after.\"", guideFront: "Step out of the contest when...", guideBack: "An invitation to say it straight" },
+            { front: "Correct the Record Once — your manager asks, \"Did you miss the deadline?\"", back: "\"No, it's due on Friday, and it'll be in on Friday.\"", guideFront: "Give the facts one time when...", guideBack: "A short, factual correction" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your brother starts something about your father in the family group chat.",
+          steps: [
+            { front: "Take It Private — Erik writes, \"Some of us actually visit Dad every week.\"", back: "\"Erik, I'll ring you about this tonight.\"", guideFront: "Offer a one-to-one talk when...", guideBack: "An offer to talk away from others" },
+            { front: "Don't Compete — on the phone, Erik says, \"Even Dad says I'm the good son.\"", back: "\"You are a good son. I'm not going to compete for that. What's bothering you?\"", guideFront: "Step out of the contest when...", guideBack: "An invitation to say it straight" },
+            { front: "Correct the Record Once — later, your aunt asks in the chat if you have really stopped visiting.", back: "\"I visit every other Saturday. That's the whole story.\"", guideFront: "Give the facts one time when...", guideBack: "A short, factual correction" },
+          ]
+        },
+      ]
+    },
+  ],
+  manipulation4: [
+    {
+      name: "Comfort, Then Come Back",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For tears that would end the conversation: comfort, pause with a time, and stay kind through the cool hours that follow.\n\n1. **Comfort Without Conceding** — they're upset; comfort them and keep the question open.\n2. **Pause, Don't Drop** — they can't go on; stop, and name a time.\n3. **Stay Warm, Stay Put** — the mood is cool afterwards; carry on kindly.\n\nWhy this order: comfort comes first, because a pause offered before any comfort sounds like walking away. The pause comes only when the talk truly can't go on. And warmth afterwards keeps the pause from feeling like a punishment for either of you.\n\nThe usual order is pushing on through the tears, then giving in, then going cold.\n\nMindset: kind now, back to it later, and kind in between.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You tell your partner you don't want to spend the whole summer at his parents' house.",
+          steps: [
+            { front: "Comfort Without Conceding — his eyes fill with tears: \"I thought you liked my family.\"", back: "\"I do like them, and I can see this hurts. I'm here. We still need to decide about the summer.\"", guideFront: "Comfort them, keep the issue open when...", guideBack: "A comforting word, issue still open" },
+            { front: "Pause, Don't Drop — he says, \"I can't talk about this now.\"", back: "\"Okay. Let's stop. Tomorrow after work?\"", guideFront: "Stop for now, name a time when...", guideBack: "A break with a time to come back" },
+            { front: "Stay Warm, Stay Put — the next morning he's quiet and won't look at you.", back: "\"Morning. I made you coffee. Still on for tonight?\"", guideFront: "Be friendly and keep your answer when...", guideBack: "Everyday kindness, same position" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your mother wants you to visit every weekend. You've said you can come every other weekend.",
+          steps: [
+            { front: "Comfort Without Conceding — she starts crying: \"I'm so lonely since your dad died.\"", back: "\"I know, Mum. I miss him too, and I'm here. Every other weekend is still what I can do.\"", guideFront: "Comfort them, keep the issue open when...", guideBack: "A comforting word, issue still open" },
+            { front: "Pause, Don't Drop — she says, \"I can't think about it now.\"", back: "\"Then we won't. I'll ring you on Wednesday, and we'll plan the next visits.\"", guideFront: "Stop for now, name a time when...", guideBack: "A break with a time to come back" },
+            { front: "Stay Warm, Stay Put — on Wednesday she answers the phone with a flat \"Oh. It's you.\"", back: "\"Hi, Mum! It's me. How was choir?\"", guideFront: "Be friendly and keep your answer when...", guideBack: "Everyday kindness, same position" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You tell your colleague Nadia you can't keep covering her Friday shifts.",
+          steps: [
+            { front: "Comfort Without Conceding — she starts crying at her desk: \"I'm trying so hard, and nobody sees it.\"", back: "\"I see it, Nadia. You've had a really hard few months. The Fridays still need sorting.\"", guideFront: "Comfort them, keep the issue open when...", guideBack: "A comforting word, issue still open" },
+            { front: "Pause, Don't Drop — she says, \"Please, not now.\"", back: "\"Not now. Can we sit down at nine tomorrow?\"", guideFront: "Stop for now, name a time when...", guideBack: "A break with a time to come back" },
+            { front: "Stay Warm, Stay Put — the next morning she says a short \"hi\" and looks away.", back: "\"Morning! I brought you a cinnamon bun. Nine o'clock still okay?\"", guideFront: "Be friendly and keep your answer when...", guideBack: "Everyday kindness, same position" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Out of the Silence",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For the silent treatment after a no: one invitation, ordinary warmth while you wait, and plain words when the silence breaks.\n\n1. **Invite, Don't Chase** — they stop talking; offer to talk, once.\n2. **Stay Warm, Stay Put** — the silence goes on; carry on kindly.\n3. **Ask for the Words** — they speak, but in hints; ask them to say it.\n\nWhy this order: the invitation comes first, so they know you are willing. Warmth comes next, so the silence is neither rewarded nor matched. And when the silence finally breaks, it often breaks into a hint — so the last step asks for the words.\n\nThe usual order is chasing, then apologising, then giving in to be spoken to again.\n\nMindset: one invitation, then your normal life. The next step is theirs.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You told your wife you won't lend her brother money again. She has stopped talking to you.",
+          steps: [
+            { front: "Invite, Don't Chase — she walks past you without a word.", back: "\"I can see you're upset. I'm ready to talk whenever you are.\"", guideFront: "Offer to talk once when...", guideBack: "One open offer, then no pursuit" },
+            { front: "Stay Warm, Stay Put — two days later, there's still silence at breakfast.", back: "\"Morning. I'm picking up the kids today — anything you need from town?\"", guideFront: "Be friendly and keep your answer when...", guideBack: "Everyday kindness, same position" },
+            { front: "Ask for the Words — at last she says, \"You know exactly what you did.\"", back: "\"I know I said no to the loan. Tell me what else is hurting, in your words, and I'll listen.\"", guideFront: "Ask them to say it plainly when...", guideBack: "A request to say it out loud" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You said no when your friend Karim asked you to go into business with him. He has gone quiet.",
+          steps: [
+            { front: "Invite, Don't Chase — he hasn't replied to anything for four days.", back: "\"Hey Karim, I'd like to talk about it properly when you're ready. No rush.\"", guideFront: "Offer to talk once when...", guideBack: "One open offer, then no pursuit" },
+            { front: "Stay Warm, Stay Put — at football on Thursday, he nods at you and turns away.", back: "\"Good to see you. Want a lift home after?\"", guideFront: "Be friendly and keep your answer when...", guideBack: "Everyday kindness, same position" },
+            { front: "Ask for the Words — in the car, he says, \"Real friends back each other.\"", back: "\"I want to back you. Tell me what you need from me, apart from the money, and I'll be honest.\"", guideFront: "Ask them to say it plainly when...", guideBack: "A request to say it out loud" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your teenage son wanted an expensive gaming laptop for his birthday, and you said no. He has stopped speaking to you.",
+          steps: [
+            { front: "Invite, Don't Chase — he goes straight to his room after school.", back: "\"I'm downstairs if you want to talk about the laptop. I'd like to hear you out.\"", guideFront: "Offer to talk once when...", guideBack: "One open offer, then no pursuit" },
+            { front: "Stay Warm, Stay Put — at dinner, he eats in silence.", back: "\"There's more pasta if you want it. How was practice?\"", guideFront: "Be friendly and keep your answer when...", guideBack: "Everyday kindness, same position" },
+            { front: "Ask for the Words — he mutters, \"Everyone else's parents get it.\"", back: "\"Maybe. Tell me what you actually want, and why, and I'll give you a real answer.\"", guideFront: "Ask them to say it plainly when...", guideBack: "A request to say it out loud" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Fair Share",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For \"I'm hopeless at that\": teach it, comfort the frustration, and pause instead of taking the job back.\n\n1. **Show, Don't Take Over** — they say they can't; offer to teach.\n2. **Comfort Without Conceding** — it gets hard and they get upset; comfort them, and the job stays theirs.\n3. **Pause, Don't Drop** — they've had enough; stop, and name a time to finish.\n\nWhy this order: teaching is the answer to \"I can't\", so it comes first. Comfort comes when the frustration arrives, because the frustration is real. And the pause comes last, instead of taking over — taking the job back at the hard moment teaches that the hard moment works.\n\nThe usual order is showing once, sighing, and doing it yourself.\n\nMindset: help them learn it. Don't buy back the job with your patience.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your partner has always left the tax return to you.",
+          steps: [
+            { front: "Show, Don't Take Over — she says, \"You're so much better at it. I'd only mess it up.\"", back: "\"I'll sit with you this year and show you each part. Next year it's yours.\"", guideFront: "Teach it, then hand it back when...", guideBack: "An offer to teach, not to do it" },
+            { front: "Comfort Without Conceding — halfway through, she puts her head in her hands: \"I'm just stupid with numbers.\"", back: "\"You're not stupid. This form is awful for everyone. We're still doing it together.\"", guideFront: "Comfort them, keep the issue open when...", guideBack: "A comforting word, issue still open" },
+            { front: "Pause, Don't Drop — she says, \"I can't do any more tonight.\"", back: "\"Fair enough. Let's stop and finish it on Sunday morning.\"", guideFront: "Stop for now, name a time when...", guideBack: "A break with a time to come back" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Since your mum moved into a flat, you've been doing your dad's food shopping online for him.",
+          steps: [
+            { front: "Show, Don't Take Over — he says, \"You do it. I can't work these things.\"", back: "\"Let's do this week's order together. You press, I'll explain.\"", guideFront: "Teach it, then hand it back when...", guideBack: "An offer to teach, not to do it" },
+            { front: "Comfort Without Conceding — he gets flustered: \"I'm too old for this.\"", back: "\"You're not. It's confusing at first, and you've already done half. You'll get there.\"", guideFront: "Comfort them, keep the issue open when...", guideBack: "A comforting word, issue still open" },
+            { front: "Pause, Don't Drop — he says, \"That's enough for today.\"", back: "\"Okay. Let's do the rest on Thursday, when I come round.\"", guideFront: "Stop for now, name a time when...", guideBack: "A break with a time to come back" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your colleague Leo always asks you to write his difficult client emails.",
+          steps: [
+            { front: "Show, Don't Take Over — he says, \"You write them so well. I'd only upset them.\"", back: "\"Let's write this one together. You type, I'll suggest.\"", guideFront: "Teach it, then hand it back when...", guideBack: "An offer to teach, not to do it" },
+            { front: "Comfort Without Conceding — the client replies sharply, and he says, \"See? I'm terrible at this.\"", back: "\"That reply would rattle anyone. I'm here. You're still the one who answers it.\"", guideFront: "Comfort them, keep the issue open when...", guideBack: "A comforting word, issue still open" },
+            { front: "Pause, Don't Drop — he says, \"I need a break from this.\"", back: "\"Good idea. Let's take twenty minutes and finish it at two.\"", guideFront: "Stop for now, name a time when...", guideBack: "A break with a time to come back" },
+          ]
+        },
+      ]
+    },
+  ],
+  manipulation5: [
+    {
+      name: "The Way Out",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For a conversation that starts with an accusation, turns into an either-or, and then goes round in circles.\n\n1. **Answer the Real Question** — they ask a loaded question; find the worry under it.\n2. **Refuse the False Choice** — they give you two bad options; give your own.\n3. **Step Out of the Loop** — the same push comes round again; stop the round.\n\nWhy this order: the loaded question carries the feeling, so meeting it first lowers the heat. The either-or usually follows as pressure, and only when it starts repeating is it time to stop. Stopping first looks like refusing to talk.\n\nThe usual order is to defend yourself, argue both options, and give in when you are tired.\n\nMindset: find the worry, refuse the trap, end the circle.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are driving home from your work dinner. Your partner Ida has been quiet all evening.",
+          steps: [
+            { front: "Answer the Real Question — she says, \"Why do you always have to make me feel invisible?\"", back: "\"I don't want you to feel that way. What happened tonight?\"", guideFront: "Find what they need when...", guideBack: "The worry addressed, not the charge" },
+            { front: "Refuse the False Choice — she says, \"Either you stop going to these dinners, or admit your job matters more than me.\"", back: "\"Neither. I'll keep going, and next time I'll make sure you're part of the conversation.\"", guideFront: "Name a third option when...", guideBack: "A third option, neither of theirs" },
+            { front: "Step Out of the Loop — twenty minutes later she asks for the third time, \"But why do you even need to go?\"", back: "\"We've been round this three times. Let's stop for tonight and talk on Saturday.\"", guideFront: "Stop going round when...", guideBack: "A clear stop, not a new reason" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your brother Henrik calls about who will look after your mother after her operation.",
+          steps: [
+            { front: "Answer the Real Question — he says, \"Why do you always leave everything to me?\"", back: "\"I don't think I leave everything to you. Are you worried about the next two weeks?\"", guideFront: "Find what they need when...", guideBack: "The worry addressed, not the charge" },
+            { front: "Refuse the False Choice — he says, \"Either you take her for two weeks, or you just don't care about her.\"", back: "\"Neither. I'll take the first weekend and both Wednesdays, and I care about her a lot.\"", guideFront: "Name a third option when...", guideBack: "A third option, neither of theirs" },
+            { front: "Step Out of the Loop — he says again, \"If you really cared, you'd take the two weeks.\"", back: "\"We've gone round this three times. I've told you what I can do. Let's talk again on Thursday.\"", guideFront: "Stop going round when...", guideBack: "A clear stop, not a new reason" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "In a one-to-one, your manager Rebecka brings up the delayed launch.",
+          steps: [
+            { front: "Answer the Real Question — she says, \"Why are you always the one holding things up?\"", back: "\"I'm not sure that's fair. What's worrying you about the launch?\"", guideFront: "Find what they need when...", guideBack: "The worry addressed, not the charge" },
+            { front: "Refuse the False Choice — she says, \"Either you work this weekend, or I tell the director you're not committed.\"", back: "\"I'm committed, and I'm not working this weekend. I can stay late on Monday and Tuesday.\"", guideFront: "Name a third option when...", guideBack: "A third option, neither of theirs" },
+            { front: "Step Out of the Loop — she says once more, \"I just don't see why one weekend is such a problem.\"", back: "\"We've covered this a few times now. My answer is Monday and Tuesday. Shall we go through the plan?\"", guideFront: "Stop going round when...", guideBack: "A clear stop, not a new reason" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "A Clear Deal",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For a target that keeps moving, then grows, then comes with a deadline.\n\n1. **Ask What Would Count** — \"not quite right\"; get the target said out loud.\n2. **Watch the Ladder** — the deal grows; point back to what you agreed.\n3. **Slow the Clock** — they want a yes to the bigger deal now; take your time.\n\nWhy this order: you cannot hold a level that was never named, so the target comes first. Once it is named, a bigger request is easy to see and easy to point at. Slowing down at the end then sounds careful, not evasive.\n\nThe usual order is to try again, try harder, and say yes at the end to make it stop.\n\nMindset: name the deal, keep the deal, and take your time with a new one.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are building a website for a client, Martin, who has turned down two versions.",
+          steps: [
+            { front: "Ask What Would Count — he says, \"It's closer, but it's still not right.\"", back: "\"What would 'right' look like? Send me three sites you like, and we'll agree on a list.\"", guideFront: "Pin down the target when...", guideBack: "A question that fixes the goal" },
+            { front: "Watch the Ladder — after you agree the list, he says, \"Great. And add an online shop while you're at it. You said you'd make it work.\"", back: "\"I said I'd make the agreed list work. The shop is a new job, with a new price.\"", guideFront: "Hold your first level when...", guideBack: "The original deal, said again" },
+            { front: "Slow the Clock — he says, \"I need a yes on the shop today, or I'll find someone else.\"", back: "\"I'll send you a price by Friday. If that's too late, I understand.\"", guideFront: "Take your own time when...", guideBack: "A refusal to be rushed" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You spent Saturday helping your mother move into her new flat.",
+          steps: [
+            { front: "Ask What Would Count — she says, \"You helped, but you didn't really help.\"", back: "\"What would 'really helping' have looked like, Mum? Tell me, so I know.\"", guideFront: "Pin down the target when...", guideBack: "A question that fixes the goal" },
+            { front: "Watch the Ladder — she says, \"Coming every weekend until the boxes are done. You said you'd help.\"", back: "\"I said I'd help on moving day. I can come next Saturday too, but not every weekend.\"", guideFront: "Hold your first level when...", guideBack: "The original deal, said again" },
+            { front: "Slow the Clock — she says, \"I need to know right now if you're coming on Sunday.\"", back: "\"I'll tell you tonight, once I've talked to Jens. You'll have your answer by eight.\"", guideFront: "Take your own time when...", guideBack: "A refusal to be rushed" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are moving out, and your landlord, Mr Holm, is inspecting the flat.",
+          steps: [
+            { front: "Ask What Would Count — he says, \"This isn't clean enough for the deposit.\"", back: "\"What exactly needs doing? Could you write it down, so we both have the list?\"", guideFront: "Pin down the target when...", guideBack: "A question that fixes the goal" },
+            { front: "Watch the Ladder — after you've done the list, he says, \"And the walls need painting. Tenants always do that.\"", back: "\"The list we agreed was the oven, the windows and the floors. Painting wasn't on it.\"", guideFront: "Hold your first level when...", guideBack: "The original deal, said again" },
+            { front: "Slow the Clock — he says, \"Agree to pay for the painting now, or you won't see the deposit at all.\"", back: "\"I won't agree to anything on the spot. I'll read the contract tonight and reply by email.\"", guideFront: "Take your own time when...", guideBack: "A refusal to be rushed" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Time to Think",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For pressure that starts with a hurry, turns into an either-or when you slow down, and ends with a personal charge.\n\n1. **Slow the Clock** — they want a decision now; take your own time.\n2. **Refuse the False Choice** — \"either you want it, or you're wasting my time\"; refuse both.\n3. **Answer the Real Question** — \"why are you always like this?\"; answer the worry under it.\n\nWhy this order: the hurry is the first pressure, so it is the first thing to slow. Refusing the either-or protects the time you just took. By the end the charge is personal, and the fear under it is what is left to answer.\n\nThe usual order is to defend yourself against the charge while the clock is still running, and decide just to end it.\n\nMindset: slow first, then answer — never the other way round.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You have just test-driven a used car. The salesman, Robin, already has the contract on the desk.",
+          steps: [
+            { front: "Slow the Clock — he says, \"This price is only good until closing. Shall we sign?\"", back: "\"I don't sign big things on the spot. I'll call you tomorrow.\"", guideFront: "Take your own time when...", guideBack: "A refusal to be rushed" },
+            { front: "Refuse the False Choice — he says, \"Look, either you want the car or you're wasting my time.\"", back: "\"Neither. I like the car, and I want a night to think. That isn't wasting your time.\"", guideFront: "Name a third option when...", guideBack: "A third option, neither of theirs" },
+            { front: "Answer the Real Question — he says, \"Why is everyone so scared of a decision these days?\"", back: "\"I'm not scared, just careful. Would it help if you heard from me by ten tomorrow?\"", guideFront: "Find what they need when...", guideBack: "The worry addressed, not the charge" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your partner Viktor has been offered a job in Oslo and wants to know tonight if you'll move with him.",
+          steps: [
+            { front: "Slow the Clock — he says, \"I need to know tonight. They want my answer tomorrow.\"", back: "\"I want to give you a real answer, not a rushed one. Can you ask them for until Monday?\"", guideFront: "Take your own time when...", guideBack: "A refusal to be rushed" },
+            { front: "Refuse the False Choice — he says, \"Either you come with me, or we're finished.\"", back: "\"Those aren't the only two. We could try six months apart, and I'm taking this seriously.\"", guideFront: "Name a third option when...", guideBack: "A third option, neither of theirs" },
+            { front: "Answer the Real Question — he says, \"Why do you never back me on anything?\"", back: "\"I'm backing you on the job. Are you scared I won't come?\"", guideFront: "Find what they need when...", guideBack: "The worry addressed, not the charge" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your friend Hanna wants you to put money into her new café. Her meeting with the bank is tomorrow.",
+          steps: [
+            { front: "Slow the Clock — she says, \"I need your money in by tonight for the bank.\"", back: "\"Then it'll have to be without me tonight. I'll look at the numbers this week.\"", guideFront: "Take your own time when...", guideBack: "A refusal to be rushed" },
+            { front: "Refuse the False Choice — she says, \"Either you believe in me or you don't.\"", back: "\"I believe in you, and I still need to see the numbers. Both.\"", guideFront: "Name a third option when...", guideBack: "A third option, neither of theirs" },
+            { front: "Answer the Real Question — she says, \"Why do you always think I'll fail?\"", back: "\"I don't. Are you worried the bank will say no?\"", guideFront: "Find what they need when...", guideBack: "The worry addressed, not the charge" },
+          ]
+        },
+      ]
+    },
+  ],
+  manipulationadv: [
+    {
+      name: "Hold, Stop, Name",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For a run of tactics after a no: hold in the moment, stop the round, and name the pattern later.\n\n1. **Same Line, Any Tactic** — the guilt comes; keep your answer.\n2. **End the Conversation** — the turnaround comes; close this round kindly.\n3. **Point Out the Pattern** — later, when it is calm; describe what keeps happening.\n\nWhy this order: holding first shows that the tactic does not decide it. Ending stops the wearing down. Naming comes last because named in the middle of a row it sounds like an attack.\n\nThe usual order is to name it in the heat — \"you always do this!\" — and that becomes the next fight.\n\nMindset: hold now, name it later.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your mother wants you to give up your weekend to clear out her garage. You've said you can't this weekend.",
+          steps: [
+            { front: "Same Line, Any Tactic — she says, \"After all I've done for you, you can't spare one weekend?\"", back: "\"I know you've done a lot, Mum. I still can't this weekend.\"", guideFront: "Repeat one calm answer when...", guideBack: "The same short line, again" },
+            { front: "End the Conversation — she says, \"So I'm the villain now? You're the one being cold.\"", back: "\"I'm going to stop here, Mum. I'll call you on Sunday.\"", guideFront: "Stop the talk kindly when...", guideBack: "A kind, clear close" },
+            { front: "Point Out the Pattern — on Sunday, she's cheerful, as if nothing happened.", back: "\"Mum, can I mention something? When I say no, it often ends with me being the cold one. I'd like us to talk about that.\"", guideFront: "Describe what keeps happening when...", guideBack: "A calm observation and an invitation" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your partner Jonas wants you to drop your evening class to stay home with him. You've said you're going.",
+          steps: [
+            { front: "Same Line, Any Tactic — he says, \"Fine. I'll be here on my own, as usual.\"", back: "\"I hear you. I'm still going, and I'll be back at nine.\"", guideFront: "Repeat one calm answer when...", guideBack: "The same short line, again" },
+            { front: "End the Conversation — he starts to cry, then says you never put him first.", back: "\"I can see you're upset, and I don't want to fight. I'm going to go now. Let's talk when I'm back.\"", guideFront: "Stop the talk kindly when...", guideBack: "A kind, clear close" },
+            { front: "Point Out the Pattern — after two quiet days, he's warm again.", back: "\"Can we talk? When I go out on my own, there are tears, and then a couple of quiet days. I'd like to understand what happens for you.\"", guideFront: "Describe what keeps happening when...", guideBack: "A calm observation and an invitation" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your colleague Nadia wants you to put your name on her late report. You've said no.",
+          steps: [
+            { front: "Same Line, Any Tactic — she says, \"I covered for you in March. You owe me.\"", back: "\"Thanks for March. I'm still not putting my name on it.\"", guideFront: "Repeat one calm answer when...", guideBack: "The same short line, again" },
+            { front: "End the Conversation — she says, \"Wow. Everyone was right about you.\"", back: "\"I've given you my answer. I'm going to get back to work.\"", guideFront: "Stop the talk kindly when...", guideBack: "A kind, clear close" },
+            { front: "Point Out the Pattern — a week later, you're having coffee together.", back: "\"Nadia, I've noticed that when I say no, it ends with what everyone thinks of me. I'd rather we just talked about the work.\"", guideFront: "Describe what keeps happening when...", guideBack: "A calm observation and an invitation" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Look Before You Name",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For a pattern you think you see, but are not yet sure of.\n\n1. **Check Yourself** — first your own side: am I pushing, and could the feeling be real?\n2. **Check Your Reality** — then a view from someone you trust.\n3. **Point Out the Pattern** — then, if it still stands, raise it with them calmly.\n\nWhy this order: named first, a pattern can turn out to be wrong or one-sided, and then the talk goes badly from the first line. Checking first makes the observation fair, and makes you steadier when you say it.\n\nThe usual order is to name it first, and start doubting yourself only when they push back.\n\nMindset: check, then check again, then say it once.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "For the third time, your husband has cried and then gone quiet for days after you said no to his brother staying with you.",
+          steps: [
+            { front: "Check Yourself — he's quiet again this morning, and you're tempted to call it a sulk.", back: "\"You've been quiet since Friday. Is the thing with your brother really hurting you? I'd like to know.\"", guideFront: "Look at your own part when...", guideBack: "An honest self-check, said aloud" },
+            { front: "Check Your Reality — he says, \"I'm fine,\" and nothing changes for days. You meet your friend Sara.", back: "\"Can I tell you what keeps happening at home, and you tell me if I'm being unfair?\"", guideFront: "Ask someone you trust when...", guideBack: "A question to someone outside it" },
+            { front: "Point Out the Pattern — Sara says your no sounds fair. That evening is calm.", back: "\"Can I mention something? When I say no about your brother, there are tears, and then days of quiet. I'd like us to talk about that.\"", guideFront: "Describe what keeps happening when...", guideBack: "A calm observation and an invitation" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your friend Marco is lovely when you say yes to his plans and distant when you don't. This month you've said no twice.",
+          steps: [
+            { front: "Check Yourself — he's gone quiet in the group chat again.", back: "\"Marco, have I been short with you lately? If I have, tell me.\"", guideFront: "Look at your own part when...", guideBack: "An honest self-check, said aloud" },
+            { front: "Check Your Reality — he says, \"No, all good,\" but stays distant. You talk to your sister.", back: "\"Can I run something past you about Marco? I'd like to know how it sounds from outside.\"", guideFront: "Ask someone you trust when...", guideBack: "A question to someone outside it" },
+            { front: "Point Out the Pattern — your sister says she's seen it too. You meet Marco for a drink.", back: "\"Can I say something I've noticed? When I say yes, we're great, and when I say no, it goes cold for a while. What's going on there?\"", guideFront: "Describe what keeps happening when...", guideBack: "A calm observation and an invitation" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Each time you've turned down extra hours, your manager Hanne has called you \"not a team player\", and then left you off the next project email.",
+          steps: [
+            { front: "Check Yourself — another request for extra hours has come in, and you've said no to the last three.", back: "\"Before I answer, Hanne — have I been saying no more than is fair? I'd like your honest view.\"", guideFront: "Look at your own part when...", guideBack: "An honest self-check, said aloud" },
+            { front: "Check Your Reality — she says, \"It's not about the hours.\" You talk to a colleague you trust.", back: "\"Can I run something past you? I want to know if this is normal here.\"", guideFront: "Ask someone you trust when...", guideBack: "A question to someone outside it" },
+            { front: "Point Out the Pattern — your colleague says she's seen it happen to others. You have your one-to-one with Hanne.", back: "\"Hanne, I'd like to mention something. When I turn down extra hours, I'm left off the next project. Can we talk about that?\"", guideFront: "Describe what keeps happening when...", guideBack: "A calm observation and an invitation" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Line, Limit, Leave",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For a talk that gets worse with each round: keep the line, set the limit, and then do what you said.\n\n1. **Same Line, Any Tactic** — the first tactics come; keep your answer.\n2. **State the Consequence** — it starts to go where it has gone before; say what you will do.\n3. **End the Conversation** — it goes there anyway; do it.\n\nWhy this order: a limit only makes sense once your answer has been heard. And ending comes last because it is the consequence carried out — said first, it sounds like a threat; never done, the limit means nothing.\n\nThe usual order is to threaten at the start, or to walk out with no warning at all.\n\nMindset: say what you will do, and then do it.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your brother asks to borrow money again. You've said no.",
+          steps: [
+            { front: "Same Line, Any Tactic — he says, \"Family helps family. Dad would be ashamed of you.\"", back: "\"Maybe. It's still no.\"", guideFront: "Repeat one calm answer when...", guideBack: "The same short line, again" },
+            { front: "State the Consequence — he gets louder: \"You're so selfish. You always were!\"", back: "\"If you keep shouting, I'll end the call, and we can talk tomorrow.\"", guideFront: "Say what you will do when...", guideBack: "An if-then about your own action" },
+            { front: "End the Conversation — he shouts again.", back: "\"I'm going to end the call now. I'll ring you tomorrow.\"", guideFront: "Stop the talk kindly when...", guideBack: "A kind, clear close" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your partner wants you to skip your friend's wedding. You've said you're going.",
+          steps: [
+            { front: "Same Line, Any Tactic — she says, \"If you loved me, you'd stay.\"", back: "\"I do love you. I'm still going.\"", guideFront: "Repeat one calm answer when...", guideBack: "The same short line, again" },
+            { front: "State the Consequence — she says, \"Fine. Then I'll tell everyone what you're really like.\"", back: "\"If this turns into threats, I'm going to stop talking and go for a walk.\"", guideFront: "Say what you will do when...", guideBack: "An if-then about your own action" },
+            { front: "End the Conversation — she says, \"Go on, then. Run away, like you always do.\"", back: "\"I'm going for a walk now. I'll be back in an hour, and we can talk calmly.\"", guideFront: "Stop the talk kindly when...", guideBack: "A kind, clear close" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your adult son wants you to pay off his credit card again. You've said no.",
+          steps: [
+            { front: "Same Line, Any Tactic — he says, \"You never helped me with anything.\"", back: "\"I hear you. It's still no.\"", guideFront: "Repeat one calm answer when...", guideBack: "The same short line, again" },
+            { front: "State the Consequence — he says, \"Then don't expect to see the grandkids.\"", back: "\"If the children come into this again, I'll end the conversation. They're not part of money talks.\"", guideFront: "Say what you will do when...", guideBack: "An if-then about your own action" },
+            { front: "End the Conversation — he says, \"Fine. Then you won't see them.\"", back: "\"I'm going to stop here. I love you, and I love them. Call me when you'd like to talk about something else.\"", guideFront: "Stop the talk kindly when...", guideBack: "A kind, clear close" },
+          ]
+        },
+      ]
+    },
+  ],
 };

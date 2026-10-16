@@ -25362,4 +25362,940 @@ const memorizeCollections = {
       ]
     },
   ],
+  manipulation1: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for keeping a kind no when guilt, duty or a threat leans on it:\n\n1. Buy Time\n2. Feeling Yes, Answer No\n3. Thanks Isn't a Debt\n4. A Smaller Yes\n5. Same Answer, Same Warmth\n6. Take the Threat Seriously\n\nThey follow the conversation, from the first ask to the threat, and every one is kind to the feeling and firm about the answer.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Buy Time, Feeling Yes, Answer No, Thanks Isn't a Debt, A Smaller Yes, Same Answer, Same Warmth, and Take the Threat Seriously.", bundle: 'free' },
+        { q: "What do all six have in common?", a: "Each one is kind to the feeling and firm about the answer.", bundle: 'free' },
+        { q: "What are the three pressures in Susan Forward's FOG?", a: "Fear, obligation and guilt.", bundle: 'free' },
+        { q: "Do you need to know whether the guilt is genuine or a tactic?", a: "No. The strategies work either way, because they care about the feeling and keep the answer.", bundle: 'free' },
+        { q: "Which strategy fits which point in the conversation?", a: "Buy Time at the first ask, Feeling Yes, Answer No at the disappointment, Thanks Isn't a Debt at \"after all I've done\", A Smaller Yes for what you can give, Same Answer, Same Warmth when they ask again, Take the Threat Seriously at the threat.", bundle: 'free' },
+        { q: "What is the stance behind the whole pack?", a: "I can care about your feeling and still say no.", bundle: 'pro' },
+        { q: "Why not just say \"you're manipulating me\"?", a: "It turns the talk into a fight about motives. You don't need to know their motive to keep your answer.", bundle: 'pro' },
+        { q: "Which strategies come from the sources?", a: "Buy Time and Take the Threat Seriously from Susan Forward's Emotional Blackmail. Same Answer, Same Warmth builds on Manuel J. Smith's broken record.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Buy Time",
+      description: "",
+      cards: [
+        { q: "What is Buy Time?", a: "Not answering while the pressure is on: you say you will decide later, and you say when.", bundle: 'free' },
+        { q: "How does Buy Time sound?", a: "\"I'm not deciding now. I'll tell you tomorrow.\"", bundle: 'free' },
+        { q: "When is Buy Time the right one?", a: "When you are asked for an answer on the spot, in a rush, or in front of others.", bundle: 'free' },
+        { q: "What does Buy Time leave the other person to do?", a: "Wait for a real answer at a set time, instead of getting one squeezed out of you.", bundle: 'free' },
+        { q: "What are the three ways to buy time?", a: "A set time, a reason to check, and a change of place.", bundle: 'free' },
+        { q: "When does Buy Time go wrong?", a: "When no time is named, so it sounds like hiding — or when \"later\" never comes.", bundle: 'pro' },
+        { q: "How is Buy Time different from Same Answer, Same Warmth?", a: "Buy Time comes before you have answered. Same Answer, Same Warmth comes after, when they ask again.", bundle: 'pro' },
+        { q: "Where does Buy Time come in the conversation?", a: "At the very start, at the first ask. It opens The Unhurried No.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Feeling Yes, Answer No",
+      description: "",
+      cards: [
+        { q: "What is Feeling Yes, Answer No?", a: "Saying out loud that you see how they feel, and then giving the same answer.", bundle: 'free' },
+        { q: "How does Feeling Yes, Answer No sound?", a: "\"I can hear you're disappointed. My answer is still no.\"", bundle: 'free' },
+        { q: "When is Feeling Yes, Answer No the right one?", a: "When disappointment, hurt or tears follow your no.", bundle: 'free' },
+        { q: "What does Feeling Yes, Answer No leave the other person to do?", a: "Feel heard, without the feeling changing the answer.", bundle: 'free' },
+        { q: "What are the three ways to name the feeling?", a: "What you hear, what you see, and sorry for the feeling, not for the answer.", bundle: 'free' },
+        { q: "When does Feeling Yes, Answer No go wrong?", a: "When \"but\" wipes out the first half, or when the second half quietly turns into a maybe.", bundle: 'pro' },
+        { q: "How is Feeling Yes, Answer No different from Thanks Isn't a Debt?", a: "Feeling Yes, Answer No answers how they feel now. Thanks Isn't a Debt answers what they did before.", bundle: 'pro' },
+        { q: "Where does Feeling Yes, Answer No come in the conversation?", a: "Right after your no, when the disappointment shows. It opens The Steady No.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Thanks Isn't a Debt",
+      description: "",
+      cards: [
+        { q: "What is Thanks Isn't a Debt?", a: "Thanking them sincerely for what they did, and saying it does not change your answer.", bundle: 'free' },
+        { q: "How does Thanks Isn't a Debt sound?", a: "\"I'm grateful for everything you've done. It doesn't change this.\"", bundle: 'free' },
+        { q: "When is Thanks Isn't a Debt the right one?", a: "When \"after all I've done for you\" is used to get a yes.", bundle: 'free' },
+        { q: "What does Thanks Isn't a Debt leave the other person to do?", a: "Hear that their kindness is fully thanked, with no bill left to collect.", bundle: 'free' },
+        { q: "What are the three ways to say it?", a: "Thank them for the specific thing, say it is not a debt, and keep both side by side.", bundle: 'free' },
+        { q: "When does Thanks Isn't a Debt go wrong?", a: "When you play down what they did, or start listing what you have done for them.", bundle: 'pro' },
+        { q: "Which of Forward's three pressures does Thanks Isn't a Debt answer?", a: "Obligation: the feeling that you owe them.", bundle: 'pro' },
+        { q: "Where does Thanks Isn't a Debt come in the conversation?", a: "When the past is brought up. It opens Grateful, Not Owing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Smaller Yes",
+      description: "",
+      cards: [
+        { q: "What is A Smaller Yes?", a: "Offering the part you can really give, next to a clear no.", bundle: 'free' },
+        { q: "How does A Smaller Yes sound?", a: "\"I can't do the weekend. I can do Sunday lunch.\"", bundle: 'free' },
+        { q: "When is A Smaller Yes the right one?", a: "When you want to help, just not in the way they asked.", bundle: 'free' },
+        { q: "What does A Smaller Yes leave the other person to do?", a: "Take a real offer, or turn it down.", bundle: 'free' },
+        { q: "What are the three kinds of smaller yes?", a: "Less of it, a different kind of help, and later.", bundle: 'free' },
+        { q: "When does A Smaller Yes go wrong?", a: "When it is something you would resent, or when it is an opening bid that keeps growing.", bundle: 'pro' },
+        { q: "How is A Smaller Yes different from giving in halfway?", a: "You choose it freely, after you have decided, and you say it once. Giving in halfway is what the pressure squeezes out of you.", bundle: 'pro' },
+        { q: "Where does A Smaller Yes come in the conversation?", a: "After the no, when they still need something. It is the middle step of Grateful, Not Owing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Same Answer, Same Warmth",
+      description: "",
+      cards: [
+        { q: "What is Same Answer, Same Warmth?", a: "Giving the same answer, in the same kind voice, every time they ask again, with no new reasons.", bundle: 'free' },
+        { q: "How does Same Answer, Same Warmth sound?", a: "\"I know. Still no — and I still love you.\"", bundle: 'free' },
+        { q: "When is Same Answer, Same Warmth the right one?", a: "When they ask a second or a third time.", bundle: 'free' },
+        { q: "What does Same Answer, Same Warmth leave the other person to do?", a: "Face the same answer, with nothing new to argue with, and a relationship that is still warm.", bundle: 'free' },
+        { q: "What are the three ways to keep the warmth?", a: "A warm word, what you look forward to, and what still stands.", bundle: 'free' },
+        { q: "When does Same Answer, Same Warmth go wrong?", a: "When each repeat brings new reasons, a sharper voice, or a longer answer.", bundle: 'pro' },
+        { q: "Where does Same Answer, Same Warmth come from?", a: "Manuel J. Smith's broken record, from When I Say No, I Feel Guilty, with the warmth added.", bundle: 'pro' },
+        { q: "Where does Same Answer, Same Warmth come in the conversation?", a: "Whenever they ask again. It is a step in all three sequences.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Take the Threat Seriously",
+      description: "",
+      cards: [
+        { q: "What is Take the Threat Seriously?", a: "Treating a threat as real: saying what it means to you, accepting their choice, and keeping your answer.", bundle: 'free' },
+        { q: "How does Take the Threat Seriously sound?", a: "\"I'd be sad if you didn't come. If that's your choice, I'll respect it. Our plans stay the same.\"", bundle: 'free' },
+        { q: "When is Take the Threat Seriously the right one?", a: "When your no is met with a price, or with \"I don't know what I'll do\".", bundle: 'free' },
+        { q: "What does Take the Threat Seriously leave the other person to do?", a: "Make their own choice, knowing the threat has not changed your answer.", bundle: 'free' },
+        { q: "What are the two kinds of threat?", a: "Threats to punish you, and threats to fall apart: Forward's punisher and self-punisher.", bundle: 'free' },
+        { q: "When does Take the Threat Seriously go wrong?", a: "When you laugh it off, threaten back, or give in.", bundle: 'pro' },
+        { q: "Someone says, \"If you go, I don't know what I'll do.\" What do you do?", a: "Show you care, ask if they are safe, offer real help from others too, and keep your answer. If someone is in danger right now, call emergency services.", bundle: 'pro' },
+        { q: "Where does Take the Threat Seriously come in the conversation?", a: "Last, when the feeling and the repeat did not work. It ends The Steady No.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Name the Pressure** — are they leaning on a feeling, a debt, or a threat?\n• **No, Not Yet, or Some** — have you decided, and is there a part you want to give?\n• **All Six Strategies** — everything mixed, with no warning about which pressure comes next\n\nOne question runs through all three: what just happened, and what does it need from me?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Name the Pressure, No, Not Yet, or Some, and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Name the Pressure?", a: "Are they leaning on a feeling, a debt, or a threat?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Name the Pressure?", a: "Answering a threat as if it were only a feeling, so the threat is left standing.", bundle: 'pro' },
+        { q: "They bring up what they did for you. Which strategy?", a: "Thanks Isn't a Debt.", bundle: 'pro' },
+        { q: "What is the question that decides No, Not Yet, or Some?", a: "Have I decided yet, and if I have, is there something I want to give?", bundle: 'pro' },
+        { q: "You haven't decided, and they want an answer now. Which strategy?", a: "Buy Time.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in No, Not Yet, or Some?", a: "A smaller yes before you have decided. Under pressure, it is giving in halfway.", bundle: 'pro' },
+        { q: "In All Six Strategies, what does none of the six need?", a: "A new explanation.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Unhurried No** — Buy Time → Feeling Yes, Answer No → Same Answer, Same Warmth\n2. **Grateful, Not Owing** — Thanks Isn't a Debt → A Smaller Yes → Same Answer, Same Warmth\n3. **The Steady No** — Feeling Yes, Answer No → Same Answer, Same Warmth → Take the Threat Seriously\n\nEach one keeps the answer still while the pressure changes shape.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Unhurried No, Grateful, Not Owing, and The Steady No.", bundle: 'pro' },
+        { q: "What is the order in The Unhurried No?", a: "Buy Time, Feeling Yes, Answer No, Same Answer, Same Warmth.", bundle: 'pro' },
+        { q: "Why does The Unhurried No start with Buy Time?", a: "The no you give is then the one you chose, not the one the rush chose, and that makes it easy to repeat.", bundle: 'pro' },
+        { q: "What is the order in Grateful, Not Owing?", a: "Thanks Isn't a Debt, A Smaller Yes, Same Answer, Same Warmth.", bundle: 'pro' },
+        { q: "Why does the thanks come before the smaller yes?", a: "So the smaller yes is not heard as a first payment on the debt.", bundle: 'pro' },
+        { q: "What is the order in The Steady No?", a: "Feeling Yes, Answer No, Same Answer, Same Warmth, Take the Threat Seriously.", bundle: 'pro' },
+        { q: "Why does the threat usually come last?", a: "It is what is left when the feeling and the repeat did not work.", bundle: 'pro' },
+        { q: "What is the usual mistake in The Steady No?", a: "Holding through two rounds and giving in at the threat, which teaches that threats work.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The six challenges to master in this pack:\n\n• **After All I've Done** — old kindness comes back as a bill\n• **The Martyr** — they agree to your plan and make you pay for it\n• **A Real Friend Would** — your answer becomes a test of the relationship\n• **The Dangled Reward** — a prize if you give in\n• **The Punishment Threat** — a price on your no\n• **If You Leave, I'll Fall Apart** — your no, they say, will break them\n\nEach one leans on fear, obligation or guilt in its own way.",
+      cards: [
+        { q: "What are the six challenges in this pack?", a: "After All I've Done, The Martyr, A Real Friend Would, The Dangled Reward, The Punishment Threat, and If You Leave, I'll Fall Apart.", bundle: 'pro' },
+        { q: "What goes wrong with After All I've Done?", a: "Arguing about the past, or paying the bill to make the guilt stop.", bundle: 'pro' },
+        { q: "Which of Forward's four types is The Martyr?", a: "The sufferer.", bundle: 'pro' },
+        { q: "What should you avoid with A Real Friend Would?", a: "Arguing about what a real friend is.", bundle: 'pro' },
+        { q: "Which of Forward's four types is The Dangled Reward?", a: "The tantalizer.", bundle: 'pro' },
+        { q: "What is the one thing to avoid with The Punishment Threat?", a: "A threat of your own.", bundle: 'pro' },
+        { q: "Which of Forward's four types is If You Leave, I'll Fall Apart?", a: "The self-punisher.", bundle: 'pro' },
+        { q: "What is the one thing to avoid with If You Leave, I'll Fall Apart?", a: "Making their safety depend on your yes. Care and real help, yes. A changed answer, no.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Hurt Feelings** — if they're hurt, I've done something wrong\n• **Family Duty** — a good person always says yes to family\n• **Explaining** — if I explain better, they'll understand\n• **Losing Them** — one more no will cost me the relationship\n\nEach one turns their pressure into your own voice.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Hurt Feelings, Family Duty, Explaining, and Losing Them.", bundle: 'pro' },
+        { q: "What is true about \"if they're hurt, I've done something wrong\"?", a: "They may really be hurt. What gets added is \"so I did something wrong\".", bundle: 'pro' },
+        { q: "Can someone be hurt by a fair answer?", a: "Yes. Disappointment is not proof of a wrong.", bundle: 'pro' },
+        { q: "What does \"a good person always says yes to family\" quietly cost?", a: "They learn that guilt works, the yeses turn into resentment, and they never meet the real you.", bundle: 'pro' },
+        { q: "What does JADE stand for?", a: "Justify, argue, defend, explain — four ways of handing them something new to push against.", bundle: 'pro' },
+        { q: "What is true instead of \"if I explain better, they'll understand\"?", a: "They usually understood the first time. They just don't agree, and your no counts anyway.", bundle: 'pro' },
+        { q: "What does more damage than one honest no?", a: "Years of hidden resentment.", bundle: 'pro' },
+        { q: "What can you do when they say \"don't call me\"?", a: "Keep the door open without changing your answer.", bundle: 'pro' },
+      ]
+    },
+  ],
+  manipulation2: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for when someone denies, twists or explains away what happened:\n\n1. Stick to What Happened\n2. Don't Debate Your Memory\n3. Back to the Point\n4. Ask for the Specific\n5. Judge the Act, Not the Motive\n6. Keep a Record\n\nThey follow the conversation: say it, hold it, steer back, ask, judge the act, and write it down.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Stick to What Happened, Don't Debate Your Memory, Back to the Point, Ask for the Specific, Judge the Act, Not the Motive, and Keep a Record.", bundle: 'free' },
+        { q: "What do all six have in common?", a: "They keep the conversation on what happened, without needing to win the argument about it.", bundle: 'free' },
+        { q: "What is the stance behind this pack?", a: "You do not need to win the argument about what happened to know what happened.", bundle: 'free' },
+        { q: "In what order do the strategies usually come in one conversation?", a: "You say what happened, hold it when they deny it, steer back when they turn it round, ask for an example when they throw a label, judge the act when they give a reason, and write it down at the end.", bundle: 'free' },
+        { q: "What is DARVO?", a: "Jennifer Freyd's name for a pattern: Deny, Attack, and Reverse Victim and Offender. Knowing the pattern makes it work less well.", bundle: 'free' },
+        { q: "Do the strategies depend on whether their hurt or worry is genuine?", a: "No. They are kind to the feeling and firm on the facts, so they work either way.", bundle: 'pro' },
+        { q: "What is never the right answer in this pack?", a: "A diagnosis, such as \"you're manipulating me\" or \"that's gaslighting\". Say what happened instead.", bundle: 'pro' },
+        { q: "How is this pack different from Two Sides of the Story?", a: "Two Sides is for honest differences, where both of you may be partly right. This pack is for when what happened is denied, turned round or explained away.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stick to What Happened",
+      description: "",
+      cards: [
+        { q: "What is Stick to What Happened?", a: "Saying what happened as plainly as a camera would have caught it: when, where, and what was said or done.", bundle: 'free' },
+        { q: "How does Stick to What Happened sound?", a: "\"On Tuesday you said you'd pay me back by Friday.\"", bundle: 'free' },
+        { q: "When is Stick to What Happened the right one?", a: "At the start, before anything else: the facts have not been said yet.", bundle: 'free' },
+        { q: "What does Stick to What Happened leave the other person to do?", a: "Answer the fact itself. There is no label or judgement to push against.", bundle: 'free' },
+        { q: "What are the three things to put in?", a: "The when, the what, and the gap between what was agreed and what happened.", bundle: 'free' },
+        { q: "When does Stick to What Happened go wrong?", a: "When an adjective or a label slips in — \"you were sneaky\" — instead of the event.", bundle: 'pro' },
+        { q: "How is Stick to What Happened different from Keep a Record?", a: "Stick to What Happened says the facts out loud. Keep a Record puts them in writing, so they last.", bundle: 'pro' },
+        { q: "Where does Stick to What Happened come in the conversation?", a: "First. It opens The Plain Truth and Hold the Thread.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Don't Debate Your Memory",
+      description: "",
+      cards: [
+        { q: "What is Don't Debate Your Memory?", a: "Saying once, calmly, that you remember it differently, that you know what you saw or heard, and that you will not argue about it.", bundle: 'free' },
+        { q: "How does Don't Debate Your Memory sound?", a: "\"We remember it differently. I know what I heard.\"", bundle: 'free' },
+        { q: "When is Don't Debate Your Memory the right one?", a: "When you have said what happened and they say it never did.", bundle: 'free' },
+        { q: "What does Don't Debate Your Memory leave the other person to do?", a: "Keep their version if they want to. You keep yours, and the talk can move on.", bundle: 'free' },
+        { q: "What are the three ways to hold it?", a: "Name the difference, keep yours, and step out of the debate.", bundle: 'free' },
+        { q: "When does Don't Debate Your Memory go wrong?", a: "When it turns into a search for more and more proof, or a demand that they agree.", bundle: 'pro' },
+        { q: "How is Don't Debate Your Memory different from Let Both Memories Stand in Two Sides of the Story?", a: "Let Both Memories Stand is for honest differences, where both may be partly right. Don't Debate Your Memory is for when you know what happened and the denial is closing the subject.", bundle: 'pro' },
+        { q: "Where does Don't Debate Your Memory come in the conversation?", a: "Second, right after the denial. It is the middle step of The Plain Truth.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Back to the Point",
+      description: "",
+      cards: [
+        { q: "What is Back to the Point?", a: "Giving their new subject a brief nod and bringing the talk back to what you came to discuss.", bundle: 'free' },
+        { q: "How does Back to the Point sound?", a: "\"We can talk about that next. Right now we're talking about the money.\"", bundle: 'free' },
+        { q: "When is Back to the Point the right one?", a: "When they turn it round, so you are suddenly the one on trial, or their hurt becomes the new topic.", bundle: 'free' },
+        { q: "What does Back to the Point leave the other person to do?", a: "Come back to the subject, knowing their own complaint has a place later.", bundle: 'free' },
+        { q: "What are the three ways back?", a: "Park it, feel it then return, and just the topic.", bundle: 'free' },
+        { q: "When does Back to the Point go wrong?", a: "When the \"later\" never comes, or when you defend yourself against the new charge first.", bundle: 'pro' },
+        { q: "How is Back to the Point different from Ask for the Specific?", a: "Back to the Point leaves their new subject for later. Ask for the Specific takes a vague charge seriously and asks for an example.", bundle: 'pro' },
+        { q: "Where does Back to the Point come in the conversation?", a: "When they turn it round, often third. It is the middle step of Hold the Thread and Past the Excuse.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for the Specific",
+      description: "",
+      cards: [
+        { q: "What is Ask for the Specific?", a: "Asking calmly for one concrete example when they answer with a vague accusation.", bundle: 'free' },
+        { q: "How does Ask for the Specific sound?", a: "\"What exactly did I do that was controlling?\"", bundle: 'free' },
+        { q: "When is Ask for the Specific the right one?", a: "When they throw a label — controlling, ungrateful, always — instead of a fact.", bundle: 'free' },
+        { q: "What does Ask for the Specific leave the other person to do?", a: "Back up the label with one real example, or let it go.", bundle: 'free' },
+        { q: "What are the three ways to ask?", a: "For the act, for the time, and for their word.", bundle: 'free' },
+        { q: "When does Ask for the Specific go wrong?", a: "When you argue with the first example they give, or ask in a tone that dares them.", bundle: 'pro' },
+        { q: "How is Ask for the Specific different from Stick to What Happened?", a: "Stick to What Happened gives your facts. Ask for the Specific asks for theirs.", bundle: 'pro' },
+        { q: "Where does Ask for the Specific come in the conversation?", a: "When the charge turns vague, often after the turnaround. It ends Hold the Thread.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Judge the Act, Not the Motive",
+      description: "",
+      cards: [
+        { q: "What is Judge the Act, Not the Motive?", a: "Accepting that their good reason may be real, and saying that the act is still not okay.", bundle: 'free' },
+        { q: "How does Judge the Act, Not the Motive sound?", a: "\"Maybe you were worried. Reading my messages still isn't okay.\"", bundle: 'free' },
+        { q: "When is Judge the Act, Not the Motive the right one?", a: "When they explain they did it out of worry, love or help.", bundle: 'free' },
+        { q: "What does Judge the Act, Not the Motive leave the other person to do?", a: "Keep their good reason, and still face the act.", bundle: 'free' },
+        { q: "What three things can it hold?", a: "The motive granted, the act named, and what you want next time.", bundle: 'free' },
+        { q: "When does Judge the Act, Not the Motive go wrong?", a: "When you tell them what they really felt — \"you weren't worried, you were jealous\".", bundle: 'pro' },
+        { q: "Which word does the work in Judge the Act, Not the Motive?", a: "\"Still\". It lets the good reason and the wrong act both be true.", bundle: 'pro' },
+        { q: "Where does Judge the Act, Not the Motive come in the conversation?", a: "Late, once they admit it but give a reason. It opens Past the Excuse.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Keep a Record",
+      description: "",
+      cards: [
+        { q: "What is Keep a Record?", a: "Writing down what happened or what was agreed, and, when it matters, sending it to them.", bundle: 'free' },
+        { q: "How does Keep a Record sound?", a: "\"Just so we're clear, I'll text you what we agreed.\"", bundle: 'free' },
+        { q: "When is Keep a Record the right one?", a: "At the end of the talk, or when the same thing keeps being denied.", bundle: 'free' },
+        { q: "What does Keep a Record leave the other person to do?", a: "Live with the version you both agreed, in writing.", bundle: 'free' },
+        { q: "What are the three kinds of record?", a: "The confirming message, the email after a meeting, and the note for yourself.", bundle: 'free' },
+        { q: "When does Keep a Record go wrong?", a: "When the note turns into a list of charges, or arrives before you have said it to them.", bundle: 'pro' },
+        { q: "How is Keep a Record different from Don't Debate Your Memory?", a: "Don't Debate Your Memory holds your version in the moment. Keep a Record makes sure there is something to come back to later.", bundle: 'pro' },
+        { q: "Where does Keep a Record come in the conversation?", a: "Last. It closes The Plain Truth and Past the Excuse.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Hold the Facts** — say them, hold them when they are denied, or write them down\n• **Stay on Topic** — the talk has slid to you, to a label, or to their reasons\n• **All Six Strategies** — everything mixed, with no warning about which part of the talk you are in\n\nOne question runs through all three: what did they just do with what happened?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Hold the Facts, Stay on Topic, and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Hold the Facts?", a: "Have I said the facts yet, and has the talk reached an end?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Hold the Facts?", a: "Arguing your memory with more and more proof when the facts are already on the table.", bundle: 'pro' },
+        { q: "They deny what you have just said. Which strategy?", a: "Don't Debate Your Memory.", bundle: 'pro' },
+        { q: "What is the question that decides Stay on Topic?", a: "Where did the conversation just go — to me, to a label, or to their reasons?", bundle: 'pro' },
+        { q: "They say they did it because they were worried. Which strategy?", a: "Judge the Act, Not the Motive.", bundle: 'pro' },
+        { q: "They call you \"controlling\" without saying why. Which strategy?", a: "Ask for the Specific.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Stay on Topic?", a: "Defending yourself against the new charge, so their topic replaces yours.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Plain Truth** — Stick to What Happened → Don't Debate Your Memory → Keep a Record\n2. **Hold the Thread** — Stick to What Happened → Back to the Point → Ask for the Specific\n3. **Past the Excuse** — Judge the Act, Not the Motive → Back to the Point → Keep a Record\n\nEach one follows a single conversation, from the first fact to the last word.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Plain Truth, Hold the Thread, and Past the Excuse.", bundle: 'pro' },
+        { q: "What is the order in The Plain Truth?", a: "Stick to What Happened, Don't Debate Your Memory, Keep a Record.", bundle: 'pro' },
+        { q: "Why does The Plain Truth start with the facts?", a: "Until the facts are said, there is nothing to hold, and a written note would feel like an ambush.", bundle: 'pro' },
+        { q: "What is the order in Hold the Thread?", a: "Stick to What Happened, Back to the Point, Ask for the Specific.", bundle: 'pro' },
+        { q: "Why does Back to the Point come before Ask for the Specific in Hold the Thread?", a: "Asking about their label first makes their charge the main topic.", bundle: 'pro' },
+        { q: "What is the order in Past the Excuse?", a: "Judge the Act, Not the Motive, Back to the Point, Keep a Record.", bundle: 'pro' },
+        { q: "Why does Past the Excuse grant the reason first?", a: "It takes the heat out. They no longer have to defend their heart.", bundle: 'pro' },
+        { q: "What is the usual mistake in all three?", a: "Arguing the denial, the counter-charge or the reason until nobody remembers what happened.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The seven challenges to master in this pack:\n\n• **I Never Said That** — a flat denial of what you heard\n• **Rewriting History** — a whole new version of the story\n• **You're Overreacting** — it happened, but it was nothing\n• **The Turnaround** — suddenly you are the one in the wrong\n• **I Only Did It for You** — a good motive meant to close the subject\n• **You're the One Who…** — your charge handed straight back\n• **Who, Me?** — innocent, again, for the third time\n\nEach one moves the talk away from what happened.",
+      cards: [
+        { q: "What are the seven challenges in this pack?", a: "I Never Said That, Rewriting History, You're Overreacting, The Turnaround, I Only Did It for You, You're the One Who…, and Who, Me?", bundle: 'pro' },
+        { q: "What goes wrong with I Never Said That?", a: "The search for proof. The more you bring, the more unsure you look.", bundle: 'pro' },
+        { q: "What should you avoid with Rewriting History?", a: "Rebuilding the story with them, piece by piece.", bundle: 'pro' },
+        { q: "What does You're Overreacting do to the subject?", a: "It moves it from what they did to how you feel about it.", bundle: 'pro' },
+        { q: "Which strategy is the main one for The Turnaround?", a: "Back to the Point — park their complaint and return.", bundle: 'pro' },
+        { q: "Which strategy is built for I Only Did It for You?", a: "Judge the Act, Not the Motive.", bundle: 'pro' },
+        { q: "What should you avoid with You're the One Who…?", a: "Answering a label with a label.", bundle: 'pro' },
+        { q: "What do you not have to prove with Who, Me?", a: "That they knew. You only have to make sure they know now.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Certainty** — if they're this sure, maybe I'm wrong\n• **Admissions** — I need them to admit it\n• **Good Intentions** — if they meant well, it was okay\n• **Staying Calm** — staying calm means I'm letting it go\n\nEach one hands what happened back to the person who twisted it.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Certainty, Admissions, Good Intentions, and Staying Calm.", bundle: 'pro' },
+        { q: "What is true about \"if they're this sure, maybe I'm wrong\"?", a: "Memory is not perfect. What gets added is \"so their version must be right\".", bundle: 'pro' },
+        { q: "Does how sure someone sounds tell you who remembers better?", a: "No. A sure voice is easy to put on.", bundle: 'pro' },
+        { q: "Do they have to admit it?", a: "No. You only have to know it, and act on it.", bundle: 'pro' },
+        { q: "What does needing an admission cost?", a: "Every round of arguing gives them a new chance to twist it.", bundle: 'pro' },
+        { q: "What does \"they meant well, so it was okay\" quietly cost?", a: "Every act that comes with a good reason gets through.", bundle: 'pro' },
+        { q: "What is true instead of \"staying calm means I'm letting it go\"?", a: "Calm is how you hold the line. Anger gives them a new topic.", bundle: 'pro' },
+        { q: "What do these four mindsets have in common?", a: "Each one hands what happened back to the person who twisted it.", bundle: 'pro' },
+      ]
+    },
+  ],
+  manipulation3: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for when other people are used as tools against you:\n\n1. Ask Who Said It\n2. Go to the Source\n3. Decline the Messenger Role\n4. Don't Compete\n5. Correct the Record Once\n6. Take It Private\n\nAll six say the same thing: direct, with the right person, and without an audience.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Ask Who Said It, Go to the Source, Decline the Messenger Role, Don't Compete, Correct the Record Once, Take It Private.", bundle: 'free' },
+        { q: "What is the stance of this pack, in one line?", a: "Take it directly, with the right person, and without an audience.", bundle: 'free' },
+        { q: "What do the tactics in this pack have in common?", a: "Other people are used as tools: a nameless crowd, a rumour, a silence, a messenger, allies, a rival, or an audience.", bundle: 'free' },
+        { q: "How do the six divide?", a: "Four deal with things that reach you through someone else. Two deal with things done in front of someone else.", bundle: 'free' },
+        { q: "Do you need to know whether it is deliberate?", a: "No. The strategies are warm and direct, so they work whether it is a tactic or a genuine hurt.", bundle: 'free' },
+        { q: "What is the right answer never, in this pack?", a: "A diagnosis. \"You're manipulating me\" turns a calm, direct strategy into an accusation.", bundle: 'pro' },
+        { q: "Who uses these tactics?", a: "Women and men alike. Freezing people out, rumours and getting others to take sides are used by both.", bundle: 'pro' },
+        { q: "What is the common mistake underneath most of these situations?", a: "Answering everyone except the person it is about.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask Who Said It",
+      description: "",
+      cards: [
+        { q: "What is Ask Who Said It?", a: "Calmly asking for names when someone says \"everyone\" or \"people\" think something about you.", bundle: 'free' },
+        { q: "How does Ask Who Said It sound?", a: "\"Who, exactly? I'd like to talk to them myself.\"", bundle: 'free' },
+        { q: "When is Ask Who Said It the right one?", a: "When a complaint arrives as a crowd, with nobody named.", bundle: 'free' },
+        { q: "What does Ask Who Said It leave the other person to do?", a: "Name people, own the view themselves, or show that the crowd was mostly them.", bundle: 'free' },
+        { q: "What are the three ways to ask?", a: "Ask for the names, ask for their own view, or offer to go to the people yourself.", bundle: 'free' },
+        { q: "When does Ask Who Said It go wrong?", a: "When it sounds like a cross-examination. Curious works; cross does not.", bundle: 'pro' },
+        { q: "What if they refuse to give any names?", a: "Leave the crowd out of it and ask what they think. You have learned how much weight it carried.", bundle: 'pro' },
+        { q: "Which challenges is Ask Who Said It built for?", a: "Everyone Thinks So, and the vague \"the others\" in Taking Sides.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Go to the Source",
+      description: "",
+      cards: [
+        { q: "What is Go to the Source?", a: "Talking to the person a story is about, or the person it came from, instead of about them.", bundle: 'free' },
+        { q: "How does Go to the Source sound?", a: "\"I heard something secondhand. I'd rather hear it from you.\"", bundle: 'free' },
+        { q: "When is Go to the Source the right one?", a: "When you know who a story came from, or when a group has gone quiet on you.", bundle: 'free' },
+        { q: "What does Go to the Source leave the other person to do?", a: "Explain, deny or say what is wrong, face to face, instead of through others.", bundle: 'free' },
+        { q: "What are the three ways in?", a: "Say what you heard plainly, ask instead of telling, or name the silence.", bundle: 'free' },
+        { q: "When does Go to the Source go wrong?", a: "When it becomes a prosecution. You are checking, not proving.", bundle: 'pro' },
+        { q: "Why is gossip not built for it?", a: "Gossip needs people to talk about each other, not to each other.", bundle: 'pro' },
+        { q: "Which challenges is Go to the Source built for?", a: "The Rumour, Frozen Out and The Messenger.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Decline the Messenger Role",
+      description: "",
+      cards: [
+        { q: "What is Decline the Messenger Role?", a: "Kindly refusing to carry someone's message, or to receive one through a go-between.", bundle: 'free' },
+        { q: "How does Decline the Messenger Role sound?", a: "\"I'm not going to pass that on. Tell her yourself.\"", bundle: 'free' },
+        { q: "When is Decline the Messenger Role the right one?", a: "When a feeling or a demand arrives \"on behalf of\" someone, or someone asks you to deliver one.", bundle: 'free' },
+        { q: "What does Decline the Messenger Role leave the other person to do?", a: "Have the conversation themselves, with the person it is really for.", bundle: 'free' },
+        { q: "What are the three positions you can be in?", a: "Asked to pass it on, handed a message, or kept running between two people.", bundle: 'free' },
+        { q: "When does Decline the Messenger Role go wrong?", a: "When you are cold to the messenger, who is often stuck in the middle too.", bundle: 'pro' },
+        { q: "Why is a message through someone else a problem?", a: "It gets bent on the way, cannot be questioned, and lets the sender avoid the conversation.", bundle: 'pro' },
+        { q: "Who should never be the messenger?", a: "A child, even when the other adult has already put them there.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Don't Compete",
+      description: "",
+      cards: [
+        { q: "What is Don't Compete?", a: "Stepping out of a jealousy game or a comparison instead of trying to win it.", bundle: 'free' },
+        { q: "How does Don't Compete sound?", a: "\"If you're interested in him, tell me straight. I'm not going to compete.\"", bundle: 'free' },
+        { q: "When is Don't Compete the right one?", a: "When someone tries to make you jealous, or holds you up against an ex, a sibling or a colleague.", bundle: 'free' },
+        { q: "What does Don't Compete leave the other person to do?", a: "Say what they actually want from you.", bundle: 'free' },
+        { q: "What are the three shapes it comes in?", a: "The jealousy game, the comparison with a partner's past, and the comparison with a sibling or colleague.", bundle: 'free' },
+        { q: "When does Don't Compete go wrong?", a: "When it turns cold or sulky. It is a refusal to audition, not a refusal to care.", bundle: 'pro' },
+        { q: "Why does competing make it worse?", a: "Every round you play raises the price of the next one.", bundle: 'pro' },
+        { q: "What does research on couples say about making a partner jealous?", a: "Researchers such as David Buss describe it as a common way of testing a bond, used by women and men alike.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Correct the Record Once",
+      description: "",
+      cards: [
+        { q: "What is Correct the Record Once?", a: "One short, factual correction to the people who heard a twisted version, and then stopping.", bundle: 'free' },
+        { q: "How does Correct the Record Once sound?", a: "\"That's not what happened. Here's what I actually said.\"", bundle: 'free' },
+        { q: "When is Correct the Record Once the right one?", a: "When a false version of you is already out, and people have heard it.", bundle: 'free' },
+        { q: "What does Correct the Record Once leave the other person to do?", a: "Weigh the facts for themselves, without a campaign pushing them either way.", bundle: 'free' },
+        { q: "What are the three parts?", a: "The plain fact, the fact with a nod to the story, and the stop when it comes up again.", bundle: 'free' },
+        { q: "When does Correct the Record Once go wrong?", a: "When it becomes a defence tour, or a counter-rumour about the person who started it.", bundle: 'pro' },
+        { q: "Who should hear the correction?", a: "The people who actually heard the story, not everyone who might have.", bundle: 'pro' },
+        { q: "How is it different from Broken Record?", a: "Broken Record repeats the same line under pressure. Here you say it once and stop.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Take It Private",
+      description: "",
+      cards: [
+        { q: "What is Take It Private?", a: "Offering to talk about a public dig or accusation, but away from the audience.", bundle: 'free' },
+        { q: "How does Take It Private sound?", a: "\"I'm happy to talk about this. Just the two of us, after.\"", bundle: 'free' },
+        { q: "When is Take It Private the right one?", a: "When something is said in front of others so that you cannot answer freely.", bundle: 'free' },
+        { q: "What does Take It Private leave the other person to do?", a: "Talk to you without an audience, or drop it.", bundle: 'free' },
+        { q: "What are the three ways to take it private?", a: "The offer, a time and place, or out of the group chat.", bundle: 'free' },
+        { q: "When does Take It Private go wrong?", a: "When it becomes a way of never talking. The offer has to be real.", bundle: 'pro' },
+        { q: "What do you do if they keep going in public?", a: "Say the same sentence once more, calmly, and carry on with your evening.", bundle: 'pro' },
+        { q: "Why does a public scene work on people?", a: "Defending yourself looks rattled, and staying silent looks like agreement.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Trace It Back** — a crowd, a person, a go-between, or a story already out\n• **Leave the Stage** — an audience, a rival, or a false version\n• **All Six Strategies** — everything mixed, with no warning about which tactic comes next\n\nOne question runs through all three: who do I actually need to talk to?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Trace It Back, Leave the Stage, and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Trace It Back?", a: "Who do I actually need to talk to, and do I know yet?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Trace It Back?", a: "Correcting the record before going to the source.", bundle: 'pro' },
+        { q: "It came as \"everyone thinks\", with no names. Which strategy?", a: "Ask Who Said It.", bundle: 'pro' },
+        { q: "Someone is carrying a message to you on someone else's behalf. Which strategy?", a: "Decline the Messenger Role.", bundle: 'pro' },
+        { q: "What is the question that decides Leave the Stage?", a: "What gives this its power: the audience, the rival, or the false version?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Leave the Stage?", a: "Answering the rival in front of the audience.", bundle: 'pro' },
+        { q: "You are being compared with an ex. Which strategy?", a: "Don't Compete.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Direct Route** — Ask Who Said It → Go to the Source → Correct the Record Once\n2. **Out of the Middle** — Decline the Messenger Role → Go to the Source → Ask Who Said It\n3. **Off the Stage** — Take It Private → Don't Compete → Correct the Record Once\n\nEach one ends with fewer people in the conversation than it started with.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Direct Route, Out of the Middle, and Off the Stage.", bundle: 'pro' },
+        { q: "What is the order in The Direct Route?", a: "Ask Who Said It, Go to the Source, Correct the Record Once.", bundle: 'pro' },
+        { q: "Why does the correction come last in The Direct Route?", a: "A correction needs the right listener. Before that, you are defending yourself to whoever is nearby.", bundle: 'pro' },
+        { q: "What is the order in Out of the Middle?", a: "Decline the Messenger Role, Go to the Source, Ask Who Said It.", bundle: 'pro' },
+        { q: "Why does declining come first in Out of the Middle?", a: "Answer the messenger, and the real sender never has to talk to you.", bundle: 'pro' },
+        { q: "What is the order in Off the Stage?", a: "Take It Private, Don't Compete, Correct the Record Once.", bundle: 'pro' },
+        { q: "Why does Off the Stage start by taking it private?", a: "The audience powers both the comparison and the scene. Remove it first.", bundle: 'pro' },
+        { q: "What do all three sequences have in common?", a: "Each one ends with fewer people in the conversation than it started with.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The eight challenges to master in this pack:\n\n• **Everyone Thinks So** — a complaint wearing a crowd\n• **The Rumour** — a twisted version of you, told elsewhere\n• **Frozen Out** — silence as a punishment\n• **The Messenger** — a feeling sent through someone else\n• **Taking Sides** — allies recruited against you\n• **The Jealousy Game** — jealousy stirred on purpose\n• **The Comparison** — held up against someone else\n• **The Public Scene** — a dig made in front of others\n\nIn each one, someone else is standing between you and the person it is about.",
+      cards: [
+        { q: "What are the eight challenges in this pack?", a: "Everyone Thinks So, The Rumour, Frozen Out, The Messenger, Taking Sides, The Jealousy Game, The Comparison, and The Public Scene.", bundle: 'pro' },
+        { q: "What goes wrong with Everyone Thinks So?", a: "You defend yourself against a crowd that may be one person.", bundle: 'pro' },
+        { q: "What are the two ways The Rumour goes wrong?", a: "A defence tour, or a counter-rumour.", bundle: 'pro' },
+        { q: "What should you avoid when you are Frozen Out?", a: "A sharp public remark to the whole group. It gives the silence an audience.", bundle: 'pro' },
+        { q: "What should you avoid with The Messenger?", a: "Putting a child in the middle, even when the other adult already has.", bundle: 'pro' },
+        { q: "What should you avoid in Taking Sides?", a: "Building a counter-team.", bundle: 'pro' },
+        { q: "What is the one thing to avoid in The Jealousy Game and The Comparison?", a: "Playing: making them jealous back, or running down the person you are compared with.", bundle: 'pro' },
+        { q: "What is the main strategy for The Public Scene?", a: "Take It Private: willing to talk, but not here.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Damage Control** — if I don't defend myself to everyone, they'll believe it\n• **Getting Even** — gossiping back evens it out\n• **Proving You Care** — if they make me jealous, I should show I care more\n• **Being Left Out** — being left out means I did something wrong\n\nEach one pulls you into the game instead of out of it.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Damage Control, Getting Even, Proving You Care, and Being Left Out.", bundle: 'pro' },
+        { q: "What is true instead of \"I have to defend myself to everyone\"?", a: "Most people need to hear the facts once, calmly, from you.", bundle: 'pro' },
+        { q: "What does a defence tour cost?", a: "It makes the story bigger, and makes you look worried.", bundle: 'pro' },
+        { q: "What does gossiping back actually do?", a: "It adds a second rumour, and this one is yours.", bundle: 'pro' },
+        { q: "What is true about \"I should show I care more\"?", a: "Showing care is good. What gets added is \"so I should compete for them\".", bundle: 'pro' },
+        { q: "What is the difference between showing care and competing?", a: "Showing care is a gift. Competing is an audition, and it teaches them to set another one.", bundle: 'pro' },
+        { q: "What does being left out actually tell you?", a: "That something is going on. Not what, and not whose doing it is.", bundle: 'pro' },
+        { q: "What do these four mindsets have in common?", a: "Each one pulls you into the game instead of out of it.", bundle: 'pro' },
+      ]
+    },
+  ],
+  manipulation4: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for when feelings put pressure on a decision:\n\n1. Comfort Without Conceding\n2. Pause, Don't Drop\n3. Ask for the Words\n4. Invite, Don't Chase\n5. Show, Don't Take Over\n6. Stay Warm, Stay Put\n\nEach one is kind to the feeling and firm on the question.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Comfort Without Conceding; Pause, Don't Drop; Ask for the Words; Invite, Don't Chase; Show, Don't Take Over; and Stay Warm, Stay Put.", bundle: 'free' },
+        { q: "What is the stance of the whole pack?", a: "I can comfort and still not give in. The feeling gets room, but it doesn't decide the question.", bundle: 'free' },
+        { q: "Do you need to know whether the feeling is real or a tactic?", a: "No. The strategies are kind to the feeling and firm on the issue, so they work either way.", bundle: 'free' },
+        { q: "What should you not say, even if you suspect a tactic?", a: "\"You're manipulating me.\" It starts a new fight. Not rewarding the pressure is enough.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Two for tears and big feelings in the moment, two for hints and silence, one for helplessness, and one for the cold mood afterwards.", bundle: 'free' },
+        { q: "How is this pack different from Responding to Passive Aggression?", a: "That series answers digs and hidden hostility in words. Here the pressure is the feeling itself: tears, sulks, silence, helplessness and charm.", bundle: 'pro' },
+        { q: "Which tactic families from Buss's study turn up in this pack?", a: "Charm, the silent treatment, and sulking and whining, which Buss calls regression.", bundle: 'pro' },
+        { q: "What does \"not rewarding the pressure\" mean in practice?", a: "The feeling gets kindness, but the answer only changes if you change your mind — not because the mood got heavier.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Comfort Without Conceding",
+      description: "",
+      cards: [
+        { q: "What is Comfort Without Conceding?", a: "Comforting someone fully while keeping the question you were discussing open.", bundle: 'free' },
+        { q: "How does Comfort Without Conceding sound?", a: "\"I can see this is hard, and I'm here. The question is still open.\"", bundle: 'free' },
+        { q: "When is Comfort Without Conceding the right one?", a: "When tears or hurt arrive in the middle of a conversation about something that still needs deciding.", bundle: 'free' },
+        { q: "Why does Comfort Without Conceding work?", a: "It keeps comfort and the decision apart, so the feeling gets room without deciding the issue.", bundle: 'free' },
+        { q: "What are the three ways to say it?", a: "Comfort first and question second, name both out loud, and offer comfort rather than a verdict.", bundle: 'free' },
+        { q: "When does Comfort Without Conceding go wrong?", a: "When the comfort is rushed, as a quick step on the way to winning. Then it isn't comfort at all.", bundle: 'pro' },
+        { q: "What is Comfort Without Conceding better than, and why?", a: "Giving in to stop the tears, which teaches you both that tears end the subject — and pushing on, which feels cruel.", bundle: 'pro' },
+        { q: "Does it matter if the tears are a tactic?", a: "No. The comfort is the same either way, and so is the open question.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Pause, Don't Drop",
+      description: "",
+      cards: [
+        { q: "What is Pause, Don't Drop?", a: "Stopping a conversation that can't go on right now, and saying when you'll come back to it.", bundle: 'free' },
+        { q: "How does Pause, Don't Drop sound?", a: "\"Let's stop for now. We'll pick it up tomorrow evening.\"", bundle: 'free' },
+        { q: "When is Pause, Don't Drop the right one?", a: "When tears, heat or shutting down make it impossible to carry on today.", bundle: 'free' },
+        { q: "Why does Pause, Don't Drop work?", a: "The feeling gets space, and the time you name shows that the question hasn't gone away.", bundle: 'free' },
+        { q: "What are the three ways to pause?", a: "Pause with a time, pause with a reason, and come back as promised.", bundle: 'free' },
+        { q: "When does Pause, Don't Drop go wrong?", a: "When you never come back. A pause without a return is just a drop with better manners.", bundle: 'pro' },
+        { q: "What is Pause, Don't Drop better than, and why?", a: "Pushing on while they're upset, which gets nowhere — and dropping it for good, which teaches that a subject can be ended that way.", bundle: 'pro' },
+        { q: "How do Pause, Don't Drop and Comfort Without Conceding differ?", a: "Comfort keeps the conversation going gently. Pause stops it for now, with a time to return.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for the Words",
+      description: "",
+      cards: [
+        { q: "What is Ask for the Words?", a: "Asking someone to say plainly what they want, instead of guessing from hints, sighs or moods.", bundle: 'free' },
+        { q: "How does Ask for the Words sound?", a: "\"I can't read minds. Tell me what you'd like, and I'll answer honestly.\"", bundle: 'free' },
+        { q: "When is Ask for the Words the right one?", a: "After a hint, a heavy sigh, \"you should have known\", or a compliment with something behind it.", bundle: 'free' },
+        { q: "Why does Ask for the Words work?", a: "It turns a test into a request, so they get a real answer and you can say yes, no or something in between.", bundle: 'free' },
+        { q: "What are the three ways to ask?", a: "After a hint, after \"you should have known\", and after a compliment with something behind it.", bundle: 'free' },
+        { q: "When does Ask for the Words go wrong?", a: "When it's said coldly. Then it sounds like \"I don't care what you want\".", bundle: 'pro' },
+        { q: "What is Ask for the Words better than, and why?", a: "Guessing harder. Every good guess only sets up the next test.", bundle: 'pro' },
+        { q: "What does a hint protect the other person from?", a: "Hearing no — because they never actually asked.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Invite, Don't Chase",
+      description: "",
+      cards: [
+        { q: "What is Invite, Don't Chase?", a: "One clear, warm invitation to talk, and then no chasing.", bundle: 'free' },
+        { q: "How does Invite, Don't Chase sound?", a: "\"I'm ready to talk whenever you are.\"", bundle: 'free' },
+        { q: "When is Invite, Don't Chase the right one?", a: "When someone goes silent or pulls away after you said no.", bundle: 'free' },
+        { q: "Why does Invite, Don't Chase work?", a: "It shows you care and leaves the next step with them, without rewarding the silence with a chase.", bundle: 'free' },
+        { q: "What are the three ways to invite?", a: "Face to face, in one message, and once more after days — one reminder, not ten.", bundle: 'free' },
+        { q: "When does Invite, Don't Chase go wrong?", a: "When one invitation becomes ten messages, or when it comes with an apology for your no.", bundle: 'pro' },
+        { q: "What is Invite, Don't Chase better than, and why?", a: "Chasing, which feeds the push-and-pull cycle — and going silent back, which leaves two people not talking.", bundle: 'pro' },
+        { q: "What did Schrodt and colleagues find about the demand–withdraw pattern?", a: "That one person pushing while the other pulls away harms couples, whichever partner does which part.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Show, Don't Take Over",
+      description: "",
+      cards: [
+        { q: "What is Show, Don't Take Over?", a: "Meeting \"I'm hopeless at that\" with an offer to teach, and then handing the task back.", bundle: 'free' },
+        { q: "How does Show, Don't Take Over sound?", a: "\"I'll show you once, then it's yours.\"", bundle: 'free' },
+        { q: "When is Show, Don't Take Over the right one?", a: "When a job keeps landing on you because the other person says they can't do it.", bundle: 'free' },
+        { q: "Why does Show, Don't Take Over work?", a: "If they really can't, now they can. If they hoped you'd do it, they learn that your help comes as teaching.", bundle: 'free' },
+        { q: "What are the three ways to show?", a: "Show once, sit beside them, and hand it back after a mistake.", bundle: 'free' },
+        { q: "When does Show, Don't Take Over go wrong?", a: "When you take over the first time it goes wrong. Then you're back where you started.", bundle: 'pro' },
+        { q: "What is Show, Don't Take Over better than, and why?", a: "Doing it yourself because it's quicker — ten minutes saved today, and the job yours for years.", bundle: 'pro' },
+        { q: "Is every \"I'm hopeless at that\" a tactic?", a: "No. Many people really do feel unsure. Showing works either way.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stay Warm, Stay Put",
+      description: "",
+      cards: [
+        { q: "What is Stay Warm, Stay Put?", a: "Staying your normal, friendly self when the mood turns cold — and keeping your answer.", bundle: 'free' },
+        { q: "How does Stay Warm, Stay Put sound?", a: "\"Morning! Coffee's ready.\" The same kindness as always, and the same answer as yesterday.", bundle: 'free' },
+        { q: "When is Stay Warm, Stay Put the right one?", a: "During a sulk, a cold shoulder, withdrawn affection or a heavy mood after your no.", bundle: 'free' },
+        { q: "Why does Stay Warm, Stay Put work?", a: "It shows that the mood hasn't changed your answer — and hasn't changed how you treat them either.", bundle: 'free' },
+        { q: "What are the three ways to stay put?", a: "Carry on as normal, use kind words with the same answer, and be friendly without asking \"what's wrong?\" again.", bundle: 'free' },
+        { q: "When does Stay Warm, Stay Put go wrong?", a: "When warmth turns into forced cheerfulness aimed at them, or into giving in \"just to clear the air\".", bundle: 'pro' },
+        { q: "What is Stay Warm, Stay Put better than, and why?", a: "Giving in, which shows the mood worked — and going cold back, which starts a contest of who can sulk longest.", bundle: 'pro' },
+        { q: "How do Stay Warm, Stay Put and Invite, Don't Chase differ?", a: "Invite offers to talk, once. Stay Warm is everything else — ordinary life, carried on, while you wait.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Keep the Question Open** — a big feeling is here: comfort, pause, or carry on warmly?\n• **Out of Guessing** — something is unsaid or undone: ask, invite, or teach?\n• **All Six Strategies** — everything mixed, with no warning\n\nOne question decides most of it: what is the feeling doing to the conversation right now?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Keep the Question Open, Out of Guessing, and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Keep the Question Open?", a: "Where is the feeling right now — in the conversation, too big for it, or in the mood afterwards?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Keep the Question Open?", a: "Dropping the subject to make the feeling stop. It teaches you both how to end the next conversation.", bundle: 'pro' },
+        { q: "The talk can't go on tonight. Which strategy?", a: "Pause, Don't Drop — stop, and name a time.", bundle: 'pro' },
+        { q: "What is the question that decides Out of Guessing?", a: "What are they not doing — saying it, talking at all, or doing it themselves?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Out of Guessing?", a: "Doing their part for them: guessing, chasing or taking over.", bundle: 'pro' },
+        { q: "They say they can't do it and hand it to you. Which strategy?", a: "Show, Don't Take Over.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in All Six Strategies?", a: "The quick fix — giving in so the feeling stops.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Comfort, Then Come Back** — Comfort Without Conceding → Pause, Don't Drop → Stay Warm, Stay Put\n2. **Out of the Silence** — Invite, Don't Chase → Stay Warm, Stay Put → Ask for the Words\n3. **The Fair Share** — Show, Don't Take Over → Comfort Without Conceding → Pause, Don't Drop\n\nIn each one, the kindness comes first and the question is still there at the end.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Comfort, Then Come Back; Out of the Silence; and The Fair Share.", bundle: 'pro' },
+        { q: "What is the order in Comfort, Then Come Back?", a: "Comfort Without Conceding, Pause, Don't Drop, then Stay Warm, Stay Put.", bundle: 'pro' },
+        { q: "Why does comfort come before the pause?", a: "A pause offered before any comfort sounds like walking away.", bundle: 'pro' },
+        { q: "What is the order in Out of the Silence?", a: "Invite, Don't Chase, Stay Warm, Stay Put, then Ask for the Words.", bundle: 'pro' },
+        { q: "Why does Out of the Silence end with Ask for the Words?", a: "When a silence breaks, it often breaks into a hint.", bundle: 'pro' },
+        { q: "What is the order in The Fair Share?", a: "Show, Don't Take Over, Comfort Without Conceding, then Pause, Don't Drop.", bundle: 'pro' },
+        { q: "Why does The Fair Share end with a pause instead of taking over?", a: "Taking the job back at the hard moment teaches that the hard moment works.", bundle: 'pro' },
+        { q: "What is the usual mistake across all three?", a: "Giving in at the point where the feeling is strongest.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The eight challenges in this pack — eight ways feelings get used as leverage:\n\n• **Tears That End It** — the talk stops whenever the tears come\n• **The Sulk** — a \"fine\" and a heavy evening\n• **The Silent Treatment** — no answer for days\n• **Love on a Leash** — warmth taken away until you give in\n• **You Should Have Known** — a hint, then guilt\n• **I'm Hopeless at That** — the job lands on you\n• **The Mood Forecast** — everyone on tiptoe\n• **The Charm Before the Ask** — compliments, then the request\n\nEach one asks you to pay with your answer.",
+      cards: [
+        { q: "What are the eight challenges in this pack?", a: "Tears That End It, The Sulk, The Silent Treatment, Love on a Leash, You Should Have Known, I'm Hopeless at That, The Mood Forecast, and The Charm Before the Ask.", bundle: 'pro' },
+        { q: "What should you avoid with Tears That End It?", a: "Saying the tears aren't real. You don't need to know, and you could be wrong.", bundle: 'pro' },
+        { q: "What should you avoid with The Sulk?", a: "Asking \"what's wrong?\" ten times. Each question tells them the sulk is working.", bundle: 'pro' },
+        { q: "What should you avoid with The Silent Treatment?", a: "Matching the silence. Two people not talking is not a way out.", bundle: 'pro' },
+        { q: "What is Love on a Leash, and what should you avoid?", a: "Warmth taken away until you give in. Avoid taking your own warmth away in return.", bundle: 'pro' },
+        { q: "What should you avoid with You Should Have Known?", a: "Promising to guess better next time.", bundle: 'pro' },
+        { q: "What should you avoid with I'm Hopeless at That?", a: "Doing it \"just this once\", every time.", bundle: 'pro' },
+        { q: "What do The Mood Forecast and The Charm Before the Ask have in common?", a: "Both make a no feel costly before you've said it — one through a bad mood, one through a good one.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Tears** — if they're crying, I must give in\n• **Moods** — keeping the peace is my job\n• **Waiting** — if I wait, they'll come round\n• **Compliments** — accepting kindness means I owe them\n\nEach one turns a feeling into a reason to change your answer.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Tears, Moods, Waiting, and Compliments.", bundle: 'pro' },
+        { q: "What is true instead of \"if they're crying, I must give in\"?", a: "You can comfort someone fully and still keep the question open.", bundle: 'pro' },
+        { q: "What does keeping the peace quietly cost?", a: "Your plans and questions — and a home where everyone tiptoes around one person.", bundle: 'pro' },
+        { q: "What part of \"if I wait, they'll come round\" is true?", a: "Most sulks and silences do end. Waiting calmly, without chasing, is often right.", bundle: 'pro' },
+        { q: "What gets added to \"if I wait, they'll come round\"?", a: "\"So it doesn't need talking about\" — even when the same silence follows every no.", bundle: 'pro' },
+        { q: "What does a compliment ask for in return?", a: "A thank-you. Nothing more.", bundle: 'pro' },
+        { q: "What can you do if flattery makes it hard to think?", a: "Say thank you now, and give your answer tomorrow.", bundle: 'pro' },
+        { q: "What do the four mindsets have in common?", a: "Each one turns a feeling — theirs or yours — into a reason to change your answer.", bundle: 'pro' },
+      ]
+    },
+  ],
+  manipulation5: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for when the question itself is the trap:\n\n1. Refuse the False Choice\n2. Ask What Would Count\n3. Answer the Real Question\n4. Slow the Clock\n5. Step Out of the Loop\n6. Watch the Ladder\n\nThe first three change the question. The last three take back the pace.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Refuse the False Choice, Ask What Would Count, Answer the Real Question, Slow the Clock, Step Out of the Loop, and Watch the Ladder.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Three change the question: Refuse the False Choice, Ask What Would Count, Answer the Real Question. Three take back the pace: Slow the Clock, Step Out of the Loop, Watch the Ladder.", bundle: 'free' },
+        { q: "What is the stance of this pack?", a: "When the question is rigged, don't answer inside it. Change the frame.", bundle: 'free' },
+        { q: "Do you need to know whether the trap is deliberate?", a: "No. The strategies are kind to the person and firm about the frame, so they work either way.", bundle: 'free' },
+        { q: "Why not just say \"you're manipulating me\"?", a: "It starts a fight about motives nobody can prove, and gives them something to deny.", bundle: 'free' },
+        { q: "What is the first question to ask yourself?", a: "What is wrong here: the options, the target, the charge, the clock, the circle, or the size?", bundle: 'pro' },
+        { q: "What does a trap need from you to work?", a: "An answer inside it.", bundle: 'pro' },
+        { q: "How is Step Out of the Loop different from repeating your answer calmly?", a: "Repeating keeps the round going, politely. Stepping out ends the round.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Refuse the False Choice",
+      description: "",
+      cards: [
+        { q: "What is Refuse the False Choice?", a: "Saying no to both rigged options and giving your own answer.", bundle: 'free' },
+        { q: "How does Refuse the False Choice sound?", a: "\"Neither. I'm going, and I care.\"", bundle: 'free' },
+        { q: "When is Refuse the False Choice the right one?", a: "When you are given two options and both are traps, or when every answer you could give is wrong.", bundle: 'free' },
+        { q: "Why does Refuse the False Choice work?", a: "An either-or only has power while you stay inside it. A third answer shows there was always more than two.", bundle: 'free' },
+        { q: "What are the three ways to refuse it?", a: "Neither, then yours; both; and say what you'll do.", bundle: 'free' },
+        { q: "When does Refuse the False Choice go wrong?", a: "When \"neither\" comes without your own answer. Then it sounds like dodging.", bundle: 'pro' },
+        { q: "What is Refuse the False Choice better than, and why?", a: "Picking the less bad option. Every pick accepts the frame, and the charge on that side is waiting.", bundle: 'pro' },
+        { q: "What is a double bind?", a: "A choice where every option is wrong: \"If you go, you don't care. If you stay, you're faking.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What Would Count",
+      description: "",
+      cards: [
+        { q: "What is Ask What Would Count?", a: "Asking what done looks like before you try again.", bundle: 'free' },
+        { q: "How does Ask What Would Count sound?", a: "\"What would 'properly' look like? Tell me now, so we agree.\"", bundle: 'free' },
+        { q: "When is Ask What Would Count the right one?", a: "When the target moves after each try: \"You did it, but not properly.\"", bundle: 'free' },
+        { q: "Why does Ask What Would Count work?", a: "Moving goalposts need a goal nobody says out loud. Once it is said, you can both see it, and both notice if it moves.", bundle: 'free' },
+        { q: "What are the three ways to ask?", a: "Ask for the picture, say it back and get a yes, and point to the last change.", bundle: 'free' },
+        { q: "When does Ask What Would Count go wrong?", a: "When you start the next try before they have answered.", bundle: 'pro' },
+        { q: "What is Ask What Would Count better than, and why?", a: "Trying again harder. Each try gets measured against a target you only learn about afterwards.", bundle: 'pro' },
+        { q: "Does Ask What Would Count help when nobody is playing games?", a: "Yes. Many people only find out what they wanted when they see what they got.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Answer the Real Question",
+      description: "",
+      cards: [
+        { q: "What is Answer the Real Question?", a: "Leaving the built-in charge aside and answering what they actually need to know.", bundle: 'free' },
+        { q: "How does Answer the Real Question sound?", a: "\"I don't always ruin things. What's bothering you about tonight?\"", bundle: 'free' },
+        { q: "When is Answer the Real Question the right one?", a: "When a question has an accusation built into it, such as \"Why do you always…?\"", bundle: 'free' },
+        { q: "Why does Answer the Real Question work?", a: "The charge puts you on trial. The real question is about the actual problem, the only part that can be fixed.", bundle: 'free' },
+        { q: "What are the three ways to answer it?", a: "Correct it short then ask, skip the charge, or answer the practical part.", bundle: 'free' },
+        { q: "When does Answer the Real Question go wrong?", a: "When the short correction turns into a long defence with examples.", bundle: 'pro' },
+        { q: "What is Answer the Real Question better than, and why?", a: "Defending yourself. Every reason you give accepts the \"always\".", bundle: 'pro' },
+        { q: "What are the two parts of a loaded question?", a: "The charge, and the real question under it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Slow the Clock",
+      description: "",
+      cards: [
+        { q: "What is Slow the Clock?", a: "Treating a hurry as a reason to slow down, not speed up.", bundle: 'free' },
+        { q: "How does Slow the Clock sound?", a: "\"If it has to be now, then it's a no.\"", bundle: 'free' },
+        { q: "When is Slow the Clock the right one?", a: "When you are told to decide right now, or lose the chance.", bundle: 'free' },
+        { q: "Why does Slow the Clock work?", a: "Urgency skips the part where you think, check and ask someone. A real deadline survives a question about it.", bundle: 'free' },
+        { q: "What are the three ways to slow it?", a: "Name your own time, ask what the deadline is, and let the offer go.", bundle: 'free' },
+        { q: "When does Slow the Clock go wrong?", a: "When the deadline is real and you never asked about it. Asking first tells you which kind it is.", bundle: 'pro' },
+        { q: "What is Slow the Clock better than, and why?", a: "A quick yes to make the pressure stop. Decisions made in a hurry are the ones a night's sleep would change.", bundle: 'pro' },
+        { q: "What does Susan Forward advise about pressure in Emotional Blackmail?", a: "Don't decide while the pressure is on.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Step Out of the Loop",
+      description: "",
+      cards: [
+        { q: "What is Step Out of the Loop?", a: "Ending an argument that keeps coming round, without adding a new reason.", bundle: 'free' },
+        { q: "How does Step Out of the Loop sound?", a: "\"We've been round this three times. I'm stopping here.\"", bundle: 'free' },
+        { q: "When is Step Out of the Loop the right one?", a: "When the same argument comes back for the third or fourth time, in new words.", bundle: 'free' },
+        { q: "Why does Step Out of the Loop work?", a: "Every new reason is new material to argue with. Stopping takes away the fuel.", bundle: 'free' },
+        { q: "What are the three ways to step out?", a: "Count and stop, stop and set a time, and stop and change the subject.", bundle: 'free' },
+        { q: "When does Step Out of the Loop go wrong?", a: "When it is said as a slammed door. It is a calm end to the round, not a punishment.", bundle: 'pro' },
+        { q: "What is Step Out of the Loop better than, and why?", a: "Giving in from tiredness. That teaches both of you that tiredness wins.", bundle: 'pro' },
+        { q: "What does the loop usually end with, if nobody steps out?", a: "Someone giving in because they are tired, not because they are convinced.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Watch the Ladder",
+      description: "",
+      cards: [
+        { q: "What is Watch the Ladder?", a: "Noticing when a small yes keeps growing, and staying at the level you agreed to.", bundle: 'free' },
+        { q: "How does Watch the Ladder sound?", a: "\"I said one evening a week. That's still what I can do.\"", bundle: 'free' },
+        { q: "When is Watch the Ladder the right one?", a: "When a yes is turning into a bigger and bigger promise: \"you said you would\".", bundle: 'free' },
+        { q: "Why does Watch the Ladder work?", a: "Saying the original deal out loud makes the climb visible to both of you, without accusing anyone.", bundle: 'free' },
+        { q: "What are the three ways to hold your level?", a: "Say the original, name the step, and make a new deal on purpose.", bundle: 'free' },
+        { q: "When does Watch the Ladder go wrong?", a: "When you only notice at the top. The earlier you name the step, the smaller the conversation.", bundle: 'pro' },
+        { q: "What is Watch the Ladder better than, and why?", a: "Saying yes again because you said yes before. One yes covers one step.", bundle: 'pro' },
+        { q: "What is the everyday name for the ladder?", a: "A foot in the door.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Answer on Your Terms** — the question is rigged: the options, the target, or the charge?\n• **Set Your Own Pace** — the timing is rigged: speed, repetition, or size?\n• **All Six Strategies** — everything mixed, with no warning about which trap is coming\n\nOne question decides nearly all of it: what is the pressure made of?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Answer on Your Terms, Set Your Own Pace, and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Answer on Your Terms?", a: "Which part of the question is broken: the options, the target, or the charge inside it?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Answer on Your Terms?", a: "Answering inside the frame: the less bad option, a harder try, or a defence.", bundle: 'pro' },
+        { q: "The target moved after you tried. Which strategy?", a: "Ask What Would Count.", bundle: 'pro' },
+        { q: "What is the question that decides Set Your Own Pace?", a: "What is the pressure made of: speed, repetition, or size?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Set Your Own Pace?", a: "Giving in to end it, which trades a decision for some peace.", bundle: 'pro' },
+        { q: "The same argument is back for round four. Which strategy?", a: "Step Out of the Loop.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in All Six Strategies?", a: "A quick, clever answer inside the trap.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Way Out** — Answer the Real Question → Refuse the False Choice → Step Out of the Loop\n2. **A Clear Deal** — Ask What Would Count → Watch the Ladder → Slow the Clock\n3. **Time to Think** — Slow the Clock → Refuse the False Choice → Answer the Real Question\n\nEach step answers the trap they just set, not the one before.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Way Out, A Clear Deal, and Time to Think.", bundle: 'pro' },
+        { q: "What is the order in The Way Out?", a: "Answer the Real Question, Refuse the False Choice, Step Out of the Loop.", bundle: 'pro' },
+        { q: "Why does The Way Out start with the loaded question?", a: "It carries the feeling, so meeting it first lowers the heat. Stopping first looks like refusing to talk.", bundle: 'pro' },
+        { q: "What is the order in A Clear Deal?", a: "Ask What Would Count, Watch the Ladder, Slow the Clock.", bundle: 'pro' },
+        { q: "Why does A Clear Deal name the target first?", a: "You cannot hold a level that was never named.", bundle: 'pro' },
+        { q: "What is the order in Time to Think?", a: "Slow the Clock, Refuse the False Choice, Answer the Real Question.", bundle: 'pro' },
+        { q: "Why does Time to Think slow down before answering the charge?", a: "The hurry is the first pressure. Defending yourself while the clock runs is how a rushed yes happens.", bundle: 'pro' },
+        { q: "What is the usual mistake in all three?", a: "Answering inside each trap, and giving in at the end to make it stop.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The seven challenges to master in this pack:\n\n• **The Double Bind** — every answer is wrong\n• **The False Choice** — only two options allowed\n• **Moving Goalposts** — the target changes after you try\n• **The Loaded Question** — a charge built into a question\n• **Now or Never** — a decision squeezed into minutes\n• **The Ladder** — a small yes that keeps growing\n• **The Loop** — the same argument, round again\n\nEach one only works if you answer inside it.",
+      cards: [
+        { q: "What are the seven challenges in this pack?", a: "The Double Bind, The False Choice, Moving Goalposts, The Loaded Question, Now or Never, The Ladder, and The Loop.", bundle: 'pro' },
+        { q: "What goes wrong in The Double Bind?", a: "You pick one option and defend it, while the charge on the other side waits.", bundle: 'pro' },
+        { q: "What should you avoid with The False Choice?", a: "Picking the less bad option just to end it.", bundle: 'pro' },
+        { q: "What is the main strategy for Moving Goalposts?", a: "Ask What Would Count — get the target said out loud first.", bundle: 'pro' },
+        { q: "What should you avoid with The Loaded Question?", a: "Listing evidence that you don't \"always\" do it.", bundle: 'pro' },
+        { q: "What is the main strategy for Now or Never, and what should you avoid?", a: "Slow the Clock — and avoid answering inside the deadline you were given.", bundle: 'pro' },
+        { q: "What goes wrong on The Ladder?", a: "Each step is only a little bigger, so you never find the one to say no to.", bundle: 'pro' },
+        { q: "What should you never add in The Loop?", a: "A new reason.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Right Answers** — there must be a right answer, if I'm careful enough\n• **Explanations** — if I can't explain it perfectly, I lose\n• **Urgency** — they're pushing hard, so it must be urgent\n• **Consistency** — I said yes once, so I have to again\n\nEach one keeps you answering inside the trap.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Right Answers, Explanations, Urgency, and Consistency.", bundle: 'pro' },
+        { q: "What is true instead of \"there must be a right answer\"?", a: "When a question is rigged, there is no right answer inside it. The way out is a different answer.", bundle: 'pro' },
+        { q: "What is true instead of \"if I can't explain it perfectly, I lose\"?", a: "You don't need to win the argument to keep your answer.", bundle: 'pro' },
+        { q: "What does every new explanation give the other person?", a: "New material to argue with.", bundle: 'pro' },
+        { q: "What part of \"it must be urgent\" is true, and what gets added?", a: "Some deadlines are real. What gets added is \"so I have to decide this minute\".", bundle: 'pro' },
+        { q: "What does a rushed yes teach the other person?", a: "That hurry works on you.", bundle: 'pro' },
+        { q: "What does \"I keep my word\" quietly cost on a ladder?", a: "You end up keeping promises you never made, and resentment grows.", bundle: 'pro' },
+        { q: "What does your word actually cover?", a: "What you said yes to, not every step after it.", bundle: 'pro' },
+      ]
+    },
+  ],
+  manipulationadv: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for when one tactic follows another — guilt, then a turnaround, then silence:\n\n1. Point Out the Pattern\n2. Same Line, Any Tactic\n3. State the Consequence\n4. End the Conversation\n5. Check Your Reality\n6. Check Yourself\n\nThree for the moment itself, and three for stepping back to look.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Point Out the Pattern, Same Line, Any Tactic, State the Consequence, End the Conversation, Check Your Reality, and Check Yourself.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Same Line, Any Tactic, State the Consequence and End the Conversation are for the moment itself. Point Out the Pattern, Check Your Reality and Check Yourself are for stepping back to look.", bundle: 'free' },
+        { q: "What is the idea behind this pack?", a: "One tactic can be chance. A pattern is information.", bundle: 'free' },
+        { q: "What does a card front in this pack usually show?", a: "Several tactics in a row — for example guilt, then a turnaround, then silence — so that your answer has to hold across all of them.", bundle: 'free' },
+        { q: "Do you need to know whether it is really manipulation?", a: "No. The strategies are kind to the feeling and firm on the answer, so they work whether the feeling is real or a tactic.", bundle: 'free' },
+        { q: "What is never the right answer in this pack?", a: "A diagnosis — \"you're manipulating me\", \"that's gaslighting\". Describe what happens instead.", bundle: 'pro' },
+        { q: "When is it no longer a conversation problem?", a: "When there is control, fear, threats or isolation. If you feel afraid, controlled or unsafe, talk to someone you trust or contact a local support line.", bundle: 'pro' },
+        { q: "How does this pack relate to Pt. 1–5?", a: "Each of Pt. 1–5 trains answers to one kind of tactic. This pack is for when several come one after another.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Point Out the Pattern",
+      description: "",
+      cards: [
+        { q: "What is Point Out the Pattern?", a: "Describing what keeps happening — once, calmly, as behaviour — and asking to talk about it.", bundle: 'free' },
+        { q: "How does Point Out the Pattern sound?", a: "\"I've noticed that when I say no, there are a few days of silence. I'd like us to talk about that.\"", bundle: 'free' },
+        { q: "When is Point Out the Pattern the right one?", a: "Afterwards, in a calm moment, when you are sure the same thing keeps happening.", bundle: 'free' },
+        { q: "Why does Point Out the Pattern work?", a: "A pattern only changes once it is out in the open, and an observation is hard to deny and easy to answer.", bundle: 'free' },
+        { q: "What are the three ways to point it out?", a: "When, then; the count; and the invitation.", bundle: 'free' },
+        { q: "When does Point Out the Pattern go wrong?", a: "When it becomes a label — \"you're manipulating me\" — or is said in the middle of a row. Then it is an attack.", bundle: 'pro' },
+        { q: "What is Point Out the Pattern better than, and why?", a: "Saying nothing and quietly keeping count. Unspoken, the pattern has nowhere to go.", bundle: 'pro' },
+        { q: "How many times do you point out the pattern?", a: "Once. If nothing changes, the other strategies do the work.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Same Line, Any Tactic",
+      description: "",
+      cards: [
+        { q: "What is Same Line, Any Tactic?", a: "Giving the same short answer whatever tactic comes next.", bundle: 'free' },
+        { q: "How does Same Line, Any Tactic sound?", a: "\"I hear you. It's still no.\"", bundle: 'free' },
+        { q: "When is Same Line, Any Tactic the right one?", a: "In the moment, when guilt, tears and accusations come one after another.", bundle: 'free' },
+        { q: "Why does Same Line, Any Tactic work?", a: "A run of tactics is looking for the one that gets to you. One steady line shows that none of them decides it.", bundle: 'free' },
+        { q: "What are the three ways to keep the line?", a: "Feeling, then line; grant the charge, keep the line; and just the line.", bundle: 'free' },
+        { q: "When does Same Line, Any Tactic go wrong?", a: "When a new reason comes with every answer. Each reason is something new to argue with.", bundle: 'pro' },
+        { q: "Which half of the line changes, and which stays?", a: "The warm half changes to fit the feeling. The answer half stays word for word.", bundle: 'pro' },
+        { q: "Whose advice is Same Line, Any Tactic close to?", a: "Susan Forward's, in Emotional Blackmail: a short, steady sentence, and no paying off the guilt.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "State the Consequence",
+      description: "",
+      cards: [
+        { q: "What is State the Consequence?", a: "Saying what you will do if the tactic comes again — not what they must do.", bundle: 'free' },
+        { q: "How does State the Consequence sound?", a: "\"If it gets loud again, I'll leave and come back tomorrow.\"", bundle: 'free' },
+        { q: "When is State the Consequence the right one?", a: "When the same thing has happened before, and you know what you will do if it does again.", bundle: 'free' },
+        { q: "Why does State the Consequence work?", a: "A demand starts a fight about what they will do. Your own action is in your hands and needs no agreement.", bundle: 'free' },
+        { q: "What are the three kinds of consequence?", a: "Leave and return, change the channel, and step out of a role.", bundle: 'free' },
+        { q: "When does State the Consequence go wrong?", a: "When you don't carry it out. Then your words become just words.", bundle: 'pro' },
+        { q: "How is a consequence different from a threat?", a: "A consequence is what you will do to look after yourself. A threat is meant to punish or scare.", bundle: 'pro' },
+        { q: "When should you not announce a consequence?", a: "When you feel afraid. Then getting help comes first, and it does not need announcing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "End the Conversation",
+      description: "",
+      cards: [
+        { q: "What is End the Conversation?", a: "Closing a talk kindly and clearly when it is not going anywhere.", bundle: 'free' },
+        { q: "How does End the Conversation sound?", a: "\"I'm going to stop here. We can try again when it's calmer.\"", bundle: 'free' },
+        { q: "When is End the Conversation the right one?", a: "When your answer has been heard and the tactics keep coming.", bundle: 'free' },
+        { q: "Why does End the Conversation work?", a: "A chain of tactics needs you to stay. Ending it shows that a talk with you cannot be won by wearing you down.", bundle: 'free' },
+        { q: "What are the three ways to end it?", a: "Stop and come back, stop and go, and stop the subject but not the visit.", bundle: 'free' },
+        { q: "When does End the Conversation go wrong?", a: "When you just walk off without saying you are stopping.", bundle: 'pro' },
+        { q: "What is End the Conversation better than, and why?", a: "Staying until you give in, or until it turns into a row.", bundle: 'pro' },
+        { q: "Is ending the conversation the same as giving up?", a: "No. You are closing this round, and the question is still open.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Check Your Reality",
+      description: "",
+      cards: [
+        { q: "What is Check Your Reality?", a: "Telling someone you trust what happened, and asking how it sounds to them.", bundle: 'free' },
+        { q: "How does Check Your Reality sound?", a: "\"Can I tell you what happened, and you tell me if I'm being unreasonable?\"", bundle: 'free' },
+        { q: "When is Check Your Reality the right one?", a: "When you have started to doubt your own judgement, or no longer know what is normal.", bundle: 'free' },
+        { q: "Why does Check Your Reality work?", a: "A run of tactics can leave you blaming yourself. An outside view shows whether your sense of things was off or fine all along.", bundle: 'free' },
+        { q: "What are the three ways to check?", a: "The plain account, the honest question, and the bigger worry.", bundle: 'free' },
+        { q: "When does Check Your Reality go wrong?", a: "When you tell it one-sidedly, to get someone on your side instead of an honest view.", bundle: 'pro' },
+        { q: "What did work on DARVO find about people who were turned on?", a: "They often ended up blaming themselves.", bundle: 'pro' },
+        { q: "When is Check Your Reality the first strategy, not one of several?", a: "When there is fear, control, threats or isolation. Then telling someone is the most important step.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Check Yourself",
+      description: "",
+      cards: [
+        { q: "What is Check Yourself?", a: "Checking whether you are the one pushing, and whether their feeling could be real — and saying what you find.", bundle: 'free' },
+        { q: "How does Check Yourself sound?", a: "\"Hang on — I've asked three times. That's me pushing.\"", bundle: 'free' },
+        { q: "When is Check Yourself the right one?", a: "Before you treat something as a tactic, and whenever you are very sure you are right.", bundle: 'free' },
+        { q: "Why does Check Yourself matter?", a: "Anyone can use these tactics, you included, and not every tear or silence is a tactic.", bundle: 'free' },
+        { q: "What are the three ways to check yourself?", a: "Your pushing, your own tactics, and their feeling.", bundle: 'free' },
+        { q: "Is Check Yourself the same as giving in?", a: "No. You can find your own part, own it, and still keep your answer.", bundle: 'pro' },
+        { q: "What is Check Yourself better than, and why?", a: "Deciding the tears are a tactic. You could be wrong, and a real feeling deserves a real answer.", bundle: 'pro' },
+        { q: "Which strategy often follows Check Yourself?", a: "Check Your Reality, and then, if it still stands, Point Out the Pattern.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Hold, Limit or Leave** — in the middle of it: keep the line, say what you will do, or end it?\n• **Look at the Pattern** — afterwards: point it out, check with someone, or check yourself?\n• **All Six Strategies** — everything mixed, with no warning about which moment you are in\n\nOne question comes first: am I in it, or looking back at it?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Hold, Limit or Leave; Look at the Pattern; and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Hold, Limit or Leave?", a: "Is there anything left to say?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Hold, Limit or Leave?", a: "A new explanation after every tactic.", bundle: 'pro' },
+        { q: "Everything has been said, and the tactics keep coming. Which strategy?", a: "End the Conversation.", bundle: 'pro' },
+        { q: "What is the question that decides Look at the Pattern?", a: "How sure am I, and of what?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Look at the Pattern?", a: "Pointing out the pattern before checking yourself.", bundle: 'pro' },
+        { q: "You no longer know what is normal. Which strategy?", a: "Check Your Reality.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in All Six Strategies?", a: "Naming the pattern in the middle of a row, where it sounds like an attack.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Hold, Stop, Name** — Same Line, Any Tactic → End the Conversation → Point Out the Pattern\n2. **Look Before You Name** — Check Yourself → Check Your Reality → Point Out the Pattern\n3. **Line, Limit, Leave** — Same Line, Any Tactic → State the Consequence → End the Conversation\n\nNaming the pattern comes last in two of them, and holding comes first in two.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Hold, Stop, Name; Look Before You Name; and Line, Limit, Leave.", bundle: 'pro' },
+        { q: "What is the order in Hold, Stop, Name?", a: "Same Line, Any Tactic, End the Conversation, Point Out the Pattern.", bundle: 'pro' },
+        { q: "Why does the pattern get named last in Hold, Stop, Name?", a: "Named in the middle of a row, it sounds like an attack.", bundle: 'pro' },
+        { q: "What is the order in Look Before You Name?", a: "Check Yourself, Check Your Reality, Point Out the Pattern.", bundle: 'pro' },
+        { q: "Why check before you name it?", a: "A pattern named first can turn out to be wrong or one-sided.", bundle: 'pro' },
+        { q: "What is the order in Line, Limit, Leave?", a: "Same Line, Any Tactic, State the Consequence, End the Conversation.", bundle: 'pro' },
+        { q: "Why does ending come last in Line, Limit, Leave?", a: "It is the consequence carried out. Said first, it sounds like a threat.", bundle: 'pro' },
+        { q: "What is the usual mistake these sequences prevent?", a: "Naming it in the heat, or walking out with no warning.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack — five patterns, and what goes wrong in each:\n\n1. **Guilt, Then the Turnaround** — \"after all I've done\", then \"so I'm the villain?\": you end up defending your character\n2. **The Charm–Chill Cycle** — warm after a yes, cold after a no: you learn to say yes to keep the warmth\n3. **The Whole Family Weighs In** — guilt, messengers and \"everyone thinks\": you explain yourself to a crowd\n4. **Tears, Then the Silence** — tears now, silence for days: you feel you must be cruel or give in\n5. **Not Just Hard — Harmful** — control, fear, threats, isolation: you look for a clever line instead of help\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Guilt, Then the Turnaround; The Charm–Chill Cycle; The Whole Family Weighs In; Tears, Then the Silence; and Not Just Hard — Harmful.", bundle: 'pro' },
+        { q: "What does Jennifer Freyd call the turnaround in Guilt, Then the Turnaround?", a: "DARVO — deny, attack, and reverse victim and offender.", bundle: 'pro' },
+        { q: "What should you avoid in Guilt, Then the Turnaround?", a: "Defending your character.", bundle: 'pro' },
+        { q: "What should you avoid in The Charm–Chill Cycle?", a: "Calling it a tactic. You may be wrong, and it shuts the talk down.", bundle: 'pro' },
+        { q: "What is the one thing to avoid in The Whole Family Weighs In?", a: "Arguing your case to everyone.", bundle: 'pro' },
+        { q: "What should you avoid in Tears, Then the Silence?", a: "Saying the tears are not real.", bundle: 'pro' },
+        { q: "Which strategy comes first in Not Just Hard — Harmful?", a: "Check Your Reality — tell someone outside what is happening.", bundle: 'pro' },
+        { q: "What is Not Just Hard — Harmful a reason for?", a: "Getting help, not practising lines.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Naming** — if I name it, they'll stop\n• **Explaining** — one more explanation will fix it\n• **Walking Away** — leaving is giving up\n• **Coping** — it's not that bad\n\nEach one keeps you in the pattern a little longer than you need to be.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Naming, Explaining, Walking Away, and Coping.", bundle: 'pro' },
+        { q: "What part of \"if I name it, they'll stop\" is true, and what gets added?", a: "Naming it can help, and knowing the pattern helps you. What gets added is \"so they'll stop\".", bundle: 'pro' },
+        { q: "What is true instead of \"one more explanation will fix it\"?", a: "They understood. A new explanation is just a new thing to argue with.", bundle: 'pro' },
+        { q: "What does explaining again and again cost?", a: "Each explanation meets a new tactic, until you are defending yourself.", bundle: 'pro' },
+        { q: "What is true instead of \"leaving is giving up\"?", a: "Ending a round that is going nowhere keeps your answer whole.", bundle: 'pro' },
+        { q: "What does staying until it is sorted often cost?", a: "Giving in, or a row you both regret.", bundle: 'pro' },
+        { q: "Why does \"it's not that bad\" feel like a strength?", a: "It feels like loyalty, patience and not making a fuss.", bundle: 'pro' },
+        { q: "What does \"it's not that bad\" quietly cost?", a: "Friends, confidence, and your sense of what normal is.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

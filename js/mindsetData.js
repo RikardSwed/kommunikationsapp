@@ -13946,4 +13946,400 @@ const mindsetCollections = {
       ]
     },
   ],
+  manipulation1: [
+    {
+      name: "Hurt Feelings",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"If they're hurt, I've done something wrong.\" A belief that is partly true, which is what makes it so hard to argue with.\n\nWhat is true: they may really be hurt, and their hurt matters. A kind person notices it.\n\nWhat gets added is the next step: \"so I did something wrong, and I have to fix it with a yes.\" Someone can be hurt by a fair answer. Disappointment is not proof of a wrong.\n\nWhat it costs is every answer you ever give, because someone can always be hurt by it.\n\nMindset: keep the care for their hurt. Drop the idea that hurt means you were wrong.",
+      inputs: [
+        { q: "If they're hurt, I've done something wrong.", a: "\"True, they're hurt — but 'so I did something wrong' is the part I added.\"", bundle: 'pro' },
+        { q: "Mum's crying. That's on me.", a: "\"True, she's sad — but 'so it's my fault' is the part I added.\"", bundle: 'pro' },
+        { q: "He sounded so disappointed.", a: "\"True — but 'so I have to change my answer' is the part I added.\"", bundle: 'pro' },
+        { q: "My no upset her.", a: "\"True, it did — but 'so the no was wrong' is the part I added.\"", bundle: 'pro' },
+        { q: "Kind people don't make others sad.", a: "\"True, kindness matters — but 'so I can never disappoint anyone' is the part I added.\"", bundle: 'pro' },
+        { q: "They wouldn't be this upset over nothing.", a: "\"True — but 'so I have to fix it by giving in' is the part I added.\"", bundle: 'pro' },
+        { q: "I can't stand seeing her like this.", a: "\"True, it's hard to watch — but 'so I have to make it stop' is the part I added.\"", bundle: 'pro' },
+        { q: "My no hurt him.", a: "\"True, it might have — but 'so I'm a bad person' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Family Duty",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"A good person always says yes to family.\" A belief that feels like loyalty, and often comes from real love.\n\nWhat is true instead: you can love your family and still say no. A yes you do not mean is not loyalty; it is a debt that grows.\n\nIt feels reasonable because family really does matter, and many of us were taught that putting ourselves first is selfish.\n\nWhat it costs is slow: the people closest to you learn that guilt works on you, the yeses turn into resentment, and they never meet the real you.\n\nMindset: I can say no to the request and yes to the person.",
+      inputs: [
+        { q: "A good person always says yes to family.", a: "\"And every yes I don't mean teaches them my no doesn't count.\"", bundle: 'pro' },
+        { q: "Family comes first, always.", a: "\"Always first means I come nowhere.\"", bundle: 'pro' },
+        { q: "I'm the reliable one.", a: "\"So I'm the one they ask first, and the one nobody asks how I am.\"", bundle: 'pro' },
+        { q: "You don't say no to your mother.", a: "\"So every no I swallow comes out later as distance.\"", bundle: 'pro' },
+        { q: "I'd do anything for my friends.", a: "\"And they've learned that 'anything' includes this.\"", bundle: 'pro' },
+        { q: "Helping is just who I am.", a: "\"And the help I give out of guilt is the help I end up resenting.\"", bundle: 'pro' },
+        { q: "It's easier to just do it.", a: "\"Easier today, and a little harder every time after.\"", bundle: 'pro' },
+        { q: "My parents gave up so much for me.", a: "\"And if I pay it back in yeses, I'll be paying forever.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Explaining",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I explain better, they'll understand.\" The belief that the right reason will make the pressure stop.\n\nWhat is true instead: they usually understood the first time. They do not agree, and they do not have to. Your no counts without their agreement.\n\nIt feels reasonable because explaining is polite, and a good reason feels like protection. But justifying, arguing, defending and explaining, often called JADE, hand them something new to push against each time.\n\nWhat it costs is the answer itself: every new reason is a new door, and sooner or later one is left open.\n\nMindset: a clear answer and a kind voice are enough.",
+      inputs: [
+        { q: "If I explain better, they'll understand.", a: "\"They understood the first time. They just don't agree, and that's allowed.\"", bundle: 'pro' },
+        { q: "I need a good enough reason to say no.", a: "\"No is a whole answer. A reason is a gift, not a fee.\"", bundle: 'pro' },
+        { q: "They'll accept it once they see my side.", a: "\"They may never see my side, and my no still counts.\"", bundle: 'pro' },
+        { q: "I should explain it one more time.", a: "\"Every new reason is a new thing for them to argue with.\"", bundle: 'pro' },
+        { q: "If I defend myself properly, the guilt will stop.", a: "\"The guilt eases when I stop arguing for my right to say no.\"", bundle: 'pro' },
+        { q: "I owe them a full explanation.", a: "\"I owe them a clear answer and a kind voice. That's all.\"", bundle: 'pro' },
+        { q: "They think I'm selfish, so I have to prove I'm not.", a: "\"I don't have to win the argument to keep the answer.\"", bundle: 'pro' },
+        { q: "If I can't put it into words, maybe I'm wrong.", a: "\"Not being able to put it perfectly doesn't make it wrong.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Losing Them",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Saying no once more will cost me the relationship.\" The fear that one more refusal is the one that breaks it.\n\nWhat is true instead: most relationships survive a no, and many get better when the yeses mean something. Years of hidden resentment do far more damage than one honest answer.\n\nIt feels reasonable because the other person may say it outright — \"then don't come\", \"don't call me\" — and the fear of losing someone you love is real.\n\nWhat it costs is a relationship that only works while you give in, which is not much of a relationship to keep safe.\n\nMindset: I can keep the door open without changing my answer.",
+      inputs: [
+        { q: "One more no and I'll lose her.", a: "\"One no is rarely what ends a relationship. Years of swallowed ones can.\"", bundle: 'pro' },
+        { q: "They'll never forgive me for this.", a: "\"Most people are upset for a while, and then they adjust.\"", bundle: 'pro' },
+        { q: "She said she won't speak to me. I have to fix it now.", a: "\"I can leave the door open without changing my answer.\"", bundle: 'pro' },
+        { q: "I can't risk Christmas without them.", a: "\"I can be sad about Christmas and still not pay for it with this.\"", bundle: 'pro' },
+        { q: "Keeping the peace is worth one more yes.", a: "\"Peace bought with a yes only lasts until the next ask.\"", bundle: 'pro' },
+        { q: "If I hold firm, I'm choosing the plan over them.", a: "\"I'm choosing both: them, and an honest answer.\"", bundle: 'pro' },
+        { q: "This time they really mean it.", a: "\"If they mean it, that's their choice. My job is to stay kind and stay put.\"", bundle: 'pro' },
+        { q: "If they leave over this, it's my fault.", a: "\"If they leave over one no, the no didn't decide it. They did.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  manipulation2: [
+    {
+      name: "Certainty",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"If they're this sure, maybe I'm wrong.\" A thought that is partly true, which is what makes it so hard to argue with.\n\nWhat is true: memory is not perfect, and you might have some of the details wrong.\n\nWhat gets added is the next step: \"so their version must be right.\" How sure someone sounds says nothing about who remembers better, and a sure voice is easy to put on.\n\nWhat it costs is your own knowledge. You give up what you saw because they said it more firmly.\n\nMindset: keep the doubt about details. Drop the idea that their certainty settles it.",
+      inputs: [
+        { q: "If they're this sure, maybe I'm wrong.", a: "\"True, maybe — but 'so they must be right' is the part I added.\"", bundle: 'pro' },
+        { q: "Memory isn't perfect.", a: "\"True — but 'so mine is the one that's wrong' is the part I added.\"", bundle: 'pro' },
+        { q: "They said it so calmly.", a: "\"True — but 'so it must be true' is the part I added.\"", bundle: 'pro' },
+        { q: "I can't prove it.", a: "\"True — but 'so it didn't happen' is the part I added.\"", bundle: 'pro' },
+        { q: "I was upset at the time.", a: "\"True, I was — but 'so I can't trust what I heard' is the part I added.\"", bundle: 'pro' },
+        { q: "I've been wrong before.", a: "\"True — but 'so I'm wrong this time' is the part I added.\"", bundle: 'pro' },
+        { q: "They remember lots of details.", a: "\"True — but 'so their version is the real one' is the part I added.\"", bundle: 'pro' },
+        { q: "Nobody else was there.", a: "\"True — but 'so my word counts for nothing' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Admissions",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I need them to admit it.\" The belief that the talk has failed unless they say you were right.\n\nWhat is true instead: you can end the conversation without a confession, and still know what happened and decide what you will do.\n\nIt feels reasonable because an admission would settle it, and a denial feels like losing. You said the hard thing, and they said it never happened.\n\nWhat it costs is the strategy itself. You keep arguing for the confession, and every round gives them a new chance to twist it.\n\nMindset: they do not have to admit it. I only have to know it, and act on it.",
+      inputs: [
+        { q: "I need them to admit it.", a: "\"I need to say it clearly. Their admission isn't up to me.\"", bundle: 'pro' },
+        { q: "Until they say sorry, nothing's settled.", a: "\"What's settled is what I'll do next. Their sorry would be extra.\"", bundle: 'pro' },
+        { q: "If they won't agree, I'll keep going until they do.", a: "\"Going round in circles only gives them more chances to twist it.\"", bundle: 'pro' },
+        { q: "They have to see what they did.", a: "\"They might never see it. I can still act on what I know.\"", bundle: 'pro' },
+        { q: "If I stop now, they win.", a: "\"Stopping once I've said it isn't losing. Arguing for hours is.\"", bundle: 'pro' },
+        { q: "I'll bring more proof next time.", a: "\"More proof is more to argue about. One plain fact is enough.\"", bundle: 'pro' },
+        { q: "A denial means it didn't count.", a: "\"It counted when I said it out loud.\"", bundle: 'pro' },
+        { q: "I can't move on until they own it.", a: "\"I can move on once I've decided what I'll do about it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Good Intentions",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"They meant well, so it was okay.\" A belief that feels like kindness: giving people the benefit of the doubt.\n\nWhat is true instead: a good reason and an okay act are two different things. You can believe the first and still say no to the second.\n\nIt feels reasonable because assuming the best of people really is a good habit, and most people do mean well most of the time.\n\nWhat it costs is quiet: every act that comes with a good reason gets through, and the reasons keep pace as the acts get bigger.\n\nMindset: I can believe their reason and still say no to what they did.",
+      inputs: [
+        { q: "They meant well, so it was okay.", a: "\"And so anything that comes with a good reason gets a yes from me.\"", bundle: 'pro' },
+        { q: "I always give people the benefit of the doubt.", a: "\"So the doubt always lands on me, and never on what they did.\"", bundle: 'pro' },
+        { q: "She was only worried about me.", a: "\"And my phone, my post and my plans are open to anyone who worries.\"", bundle: 'pro' },
+        { q: "I don't want to be someone who sees bad motives everywhere.", a: "\"So I end up not seeing the act either.\"", bundle: 'pro' },
+        { q: "He did it for my own good.", a: "\"And I've stopped being the one who decides what my good is.\"", bundle: 'pro' },
+        { q: "It's ungrateful to complain about help.", a: "\"So help I didn't ask for can go wherever it likes.\"", bundle: 'pro' },
+        { q: "Love excuses a lot.", a: "\"And the things it excuses keep getting bigger.\"", bundle: 'pro' },
+        { q: "I'd rather assume the best.", a: "\"And the best I assume becomes the cover for next time.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Staying Calm",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I stay calm, it looks like I'm letting it go.\" The belief that only anger shows you mean it.\n\nWhat is true instead: calm is how you hold the line. Anger gives them a new topic — your tone — and an easy \"you're overreacting\".\n\nIt feels reasonable because being lied to, or having your words twisted, makes you angry, and hiding that can feel like giving in.\n\nWhat it costs is the subject. Once you raise your voice, the talk is about how you said it, not what they did.\n\nMindset: calm is not letting it go. Calm is how I keep it.",
+      inputs: [
+        { q: "If I stay calm, it looks like I'm letting it go.", a: "\"Calm is how I keep saying the same thing without giving them a new topic.\"", bundle: 'pro' },
+        { q: "They need to see how angry I am.", a: "\"If I show them, my anger becomes the subject. The facts don't.\"", bundle: 'pro' },
+        { q: "If I don't shout, they won't take it seriously.", a: "\"A calm sentence I keep repeating is harder to ignore than one loud one.\"", bundle: 'pro' },
+        { q: "Staying calm means I'm not hurt.", a: "\"I can be hurt and calm at the same time.\"", bundle: 'pro' },
+        { q: "Getting upset proves I'm telling the truth.", a: "\"Getting upset hands them 'you're overreacting'. Facts hand them nothing.\"", bundle: 'pro' },
+        { q: "If I'm quiet now, I've lost my chance.", a: "\"I can say it calmly now and write it down afterwards.\"", bundle: 'pro' },
+        { q: "Only a pushover stays calm when someone twists the truth.", a: "\"A pushover drops it. I'm staying calm so I can keep it.\"", bundle: 'pro' },
+        { q: "If I don't react, they'll think it's fine.", a: "\"They'll know it's not fine when my answer doesn't change.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  manipulation3: [
+    {
+      name: "Damage Control",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I don't defend myself to everyone, they'll believe it.\" The urge to reach every person before the story does.\n\nWhat is true instead: most people need to hear the facts once, calmly, from you. The rest either know you or were not listening.\n\nIt feels reasonable because a rumour about you feels enormous from the inside, and doing something feels safer than waiting.\n\nWhat it costs is the very thing you are protecting. A defence tour makes the story bigger, and makes you look worried.\n\nMindset: say it once to the people who heard it, and stop.",
+      inputs: [
+        { q: "If I don't defend myself to everyone, they'll believe it.", a: "\"Most people only need to hear it once, from me, calmly.\"", bundle: 'pro' },
+        { q: "I have to get my side out before they do.", a: "\"A race to tell my side turns me into the story.\"", bundle: 'pro' },
+        { q: "If I stay calm, it'll look as if I don't care.", a: "\"Calm looks like someone with nothing to hide.\"", bundle: 'pro' },
+        { q: "I should message everyone who might have heard.", a: "\"I'll tell the people who heard it, once, and leave the rest.\"", bundle: 'pro' },
+        { q: "They'll think the worst of me if I don't explain everything.", a: "\"The people who know me don't need a full defence.\"", bundle: 'pro' },
+        { q: "I can't relax until everyone knows the truth.", a: "\"Not everyone will hear it, and I can live with that.\"", bundle: 'pro' },
+        { q: "If I don't answer every comment, it'll keep spreading.", a: "\"Stories grow on reactions. One calm answer gives them nothing to grow on.\"", bundle: 'pro' },
+        { q: "A long explanation will show I'm right.", a: "\"A long explanation mostly shows I'm worried.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Getting Even",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"She's talking about me, so it's only fair if I talk about her.\" It feels like justice, and like standing up for yourself.\n\nWhat is true instead: gossiping back does not cancel the first rumour. It adds a second one, and this one is yours.\n\nIt feels reasonable because you were wronged, and telling your side to friends feels like balance.\n\nWhat it quietly costs is your place as the person who did not join in, which is the strongest place you had.\n\nMindset: you can stand up for yourself without talking about her.",
+      inputs: [
+        { q: "She's talking about me, so I'll talk about her.", a: "\"Then there are two rumours, and one of them is mine.\"", bundle: 'pro' },
+        { q: "They deserve to know what he's really like.", a: "\"If it matters that much, I can say it to him.\"", bundle: 'pro' },
+        { q: "I'm only telling my side.", a: "\"Telling my side to everyone is still talking about her, not to her.\"", bundle: 'pro' },
+        { q: "It's fair to warn people about her.", a: "\"A warning I couldn't say to her face is gossip with a good excuse.\"", bundle: 'pro' },
+        { q: "Everyone else is doing it anyway.", a: "\"Then I'm the one person who can quietly stop.\"", bundle: 'pro' },
+        { q: "It would feel so good to put people straight about her.", a: "\"For one evening. After that I'm part of the thing I hated.\"", bundle: 'pro' },
+        { q: "I'm just venting.", a: "\"Venting to one friend is fine. Venting to the whole group is a campaign.\"", bundle: 'pro' },
+        { q: "If I stay out of it, she wins.", a: "\"There's nothing to win, and I'd rather be the one who stayed out.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Proving You Care",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"If they're trying to make me jealous, I should show I care more.\" Partly true, which is why it is so easy to follow.\n\nWhat is true: showing that you care is good, and sometimes a jealousy game is a clumsy way of asking for it.\n\nWhat gets added is the next step: \"so I should compete for them.\" Showing care is a gift. Competing for someone is an audition, and it teaches them to set another one.\n\nWhat it costs is a relationship run as a contest.\n\nMindset: keep the caring. Drop the contest.",
+      inputs: [
+        { q: "I should show I care more.", a: "\"True, I can show I care — but 'by competing for it' is the part I added.\"", bundle: 'pro' },
+        { q: "If I don't react, she'll think I don't care.", a: "\"True, she might wonder — but 'so I have to put on a show' is the part I added.\"", bundle: 'pro' },
+        { q: "A bit of jealousy is normal in love.", a: "\"True, it is — but 'so I should play along with it' is the part I added.\"", bundle: 'pro' },
+        { q: "Mum just wants to feel loved.", a: "\"True — but 'so I have to beat my brother at loving her' is the part I added.\"", bundle: 'pro' },
+        { q: "My boss compares us because he wants better work.", a: "\"True, maybe — but 'so I have to outdo Priya' is the part I added.\"", bundle: 'pro' },
+        { q: "I really do mind when he talks about her.", a: "\"True, I do — but 'so I'll make him jealous back' is the part I added.\"", bundle: 'pro' },
+        { q: "If I tried harder, he'd stop talking about his ex.", a: "\"True, he might — but 'so I should become more like her' is the part I added.\"", bundle: 'pro' },
+        { q: "They're testing me, so I'd better pass.", a: "\"True, it might be a test — but 'so I have to pass it' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being Left Out",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If they've stopped inviting me, I must have done something wrong.\" The silence is read as a verdict on you.\n\nWhat is true instead: being left out tells you that something is going on. It does not tell you what, or whose doing it is.\n\nIt feels reasonable because exclusion hurts, and blaming yourself at least feels like an explanation.\n\nWhat it costs is months of guessing, trying harder for people who have gone cold, and never asking the one question that would tell you.\n\nMindset: ask one person before you decide what the silence means.",
+      inputs: [
+        { q: "They stopped inviting me, so I must have done something.", a: "\"Maybe, maybe not. I can ask instead of guessing.\"", bundle: 'pro' },
+        { q: "If I ask, I'll look needy.", a: "\"One plain question isn't needy. Guessing for months is harder.\"", bundle: 'pro' },
+        { q: "They all agree I'm the problem.", a: "\"I don't know what they all think. I know what I've noticed.\"", bundle: 'pro' },
+        { q: "I'll just wait until they come round.", a: "\"Waiting in silence lets the silence decide.\"", bundle: 'pro' },
+        { q: "I should try harder to be liked.", a: "\"Trying harder won't tell me why they went cold.\"", bundle: 'pro' },
+        { q: "It's my fault the chat went quiet.", a: "\"A quiet chat is a fact. Whose doing it is, I don't know yet.\"", bundle: 'pro' },
+        { q: "If they leave me out, I'll leave them first.", a: "\"I can ask one of them before I decide anything.\"", bundle: 'pro' },
+        { q: "Being left out means I'm not worth including.", a: "\"Being left out means something's going on. It says nothing about my worth.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  manipulation4: [
+    {
+      name: "Tears",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If they're crying, I must give in.\" The belief that tears mean you've done something wrong, and that the kind thing is to change your answer.\n\nWhat is true instead: you can comfort someone fully and still keep the question open. Comfort and the answer are two different things.\n\nIt feels reasonable because tears pull at something deep. Wanting to stop someone's pain is a good instinct, and giving in looks like the fastest way.\n\nWhat it costs is a subject that can never be discussed, and a relationship where tears decide things — whether anyone means them to or not.\n\nMindset: comfort the person. The question can wait, but it doesn't disappear.",
+      inputs: [
+        { q: "If they're crying, I must give in.", a: "\"If they're crying, I should comfort them — the answer is a separate thing.\"", bundle: 'pro' },
+        { q: "Making someone cry means I've done something wrong.", a: "\"Hard conversations bring tears sometimes, even when nobody did anything wrong.\"", bundle: 'pro' },
+        { q: "I can't hold my position and be kind at the same time.", a: "\"I can hold their hand and my answer at the same time.\"", bundle: 'pro' },
+        { q: "If I keep talking about it, I'm being cruel.", a: "\"Pausing with a time is kind, and dropping it forever isn't any kinder.\"", bundle: 'pro' },
+        { q: "Maybe the tears aren't even real.", a: "\"I don't need to know — I'll be kind either way, and the question stays open either way.\"", bundle: 'pro' },
+        { q: "They're too upset to ever talk about this.", a: "\"Too upset tonight, maybe, so we'll find another time.\"", bundle: 'pro' },
+        { q: "Giving in is the only way to make them feel better.", a: "\"A hug and some time can make them feel better too.\"", bundle: 'pro' },
+        { q: "If I bring it up again, they'll cry again.", a: "\"Maybe, and I can comfort them again and still bring it up.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Moods",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'm good at keeping the peace. I can always tell when to stay quiet.\" A belief that feels like care and good sense — and underneath it, the idea that their mood is your job to fix.\n\nWhat is true instead: keeping the peace by managing someone's mood often means the real questions never get asked.\n\nIt feels reasonable because you're often right about the mood, and avoiding a row feels like the grown-up thing to do.\n\nWhat it costs is quiet and real: your plans, your questions, and in the end a home where everyone walks on tiptoe around one person.\n\nMindset: their mood is theirs to carry. You can be kind without running your life around it.",
+      inputs: [
+        { q: "I'm good at keeping the peace.", a: "\"And the peace I keep is the reason nothing ever changes.\"", bundle: 'pro' },
+        { q: "I always know when to keep quiet.", a: "\"Knowing when to keep quiet has turned into never saying it at all.\"", bundle: 'pro' },
+        { q: "It's my job to cheer them up.", a: "\"Every time I fix their mood, they learn that someone else will.\"", bundle: 'pro' },
+        { q: "I just want everyone to be happy.", a: "\"Everyone except me, it seems — my plans wait for their good days.\"", bundle: 'pro' },
+        { q: "I'm sensitive to how people feel.", a: "\"I notice their mood so well that I've stopped noticing mine.\"", bundle: 'pro' },
+        { q: "I don't like making a fuss.", a: "\"Not making a fuss means their mood gets to decide instead.\"", bundle: 'pro' },
+        { q: "I'll wait for a better moment.", a: "\"The better moment has been 'next week' for three months.\"", bundle: 'pro' },
+        { q: "I protect the kids from the bad moods.", a: "\"And they're learning from me that the moods run the house.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Waiting",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"If I wait, they'll come round.\" A belief with real truth in it — most sulks and silences do end on their own.\n\nWhat is true: waiting calmly, without chasing, is often exactly right.\n\nWhat gets added is \"so it doesn't need talking about\". When the same silence follows every no, it's a pattern, and a pattern doesn't end by waiting.\n\nWhat it costs is the next no, which comes with the same silence — and the one after that.\n\nMindset: keep the calm waiting. Drop the idea that the pattern can never be mentioned on a good day.",
+      inputs: [
+        { q: "If I wait, they'll come round.", a: "\"They usually do — but 'so we never need to talk about it' is the part I added.\"", bundle: 'pro' },
+        { q: "Silence always blows over.", a: "\"It does blow over — but 'so it won't come back next time' is the part I added.\"", bundle: 'pro' },
+        { q: "Giving them space is the respectful thing.", a: "\"Space is respectful — but 'so I shouldn't even say I'm here' is the part I added.\"", bundle: 'pro' },
+        { q: "They always come back eventually.", a: "\"They do — but 'so the days of silence don't matter' is the part I added.\"", bundle: 'pro' },
+        { q: "It's better not to make a big deal of it.", a: "\"True, not a big deal — but 'so not a word about it, ever' is the part I added.\"", bundle: 'pro' },
+        { q: "Chasing them only makes it worse.", a: "\"True — but 'so I can't even invite them once' is the part I added.\"", bundle: 'pro' },
+        { q: "Once they're talking again, why rock the boat?", a: "\"Fair — but 'so I can't mention the pattern on a calm day' is the part I added.\"", bundle: 'pro' },
+        { q: "They just need time to cool off.", a: "\"They might — but 'so I wait however long it takes' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Compliments",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"They've been so kind to me. I can't say no now.\" The belief that warmth and compliments create a debt.\n\nWhat is true instead: a compliment is a gift. You can enjoy it and still give an honest answer to whatever comes next.\n\nIt feels reasonable because kindness should be returned, and a no straight after a compliment feels ungrateful.\n\nWhat it costs is your ease around kindness. You start to feel nervous when people are nice, because you never know what it will cost.\n\nMindset: say thank you for the compliment. Answer the request on its own terms.",
+      inputs: [
+        { q: "Accepting a compliment means I owe them.", a: "\"A thank-you is all a compliment asks for.\"", bundle: 'pro' },
+        { q: "They've been so nice to me — I can't say no now.", a: "\"Their kindness was a gift, and my answer is still mine.\"", bundle: 'pro' },
+        { q: "Saying no after a compliment is rude.", a: "\"'Thank you' and then 'no' is perfectly polite.\"", bundle: 'pro' },
+        { q: "If I refuse, they'll think I'm ungrateful.", a: "\"I can be grateful for the kind words and still not want the job.\"", bundle: 'pro' },
+        { q: "They probably only said it to get something.", a: "\"Maybe, maybe not — I can enjoy it either way and still decide freely.\"", bundle: 'pro' },
+        { q: "They cooked my favourite meal, so I should agree.", a: "\"The dinner was lovely, and it wasn't a contract.\"", bundle: 'pro' },
+        { q: "Being flattered makes it hard to think straight.", a: "\"So I'll say thank you now and give my answer tomorrow.\"", bundle: 'pro' },
+        { q: "If I say no, the warmth will stop.", a: "\"If it does, I'll stay kind myself — and my answer still stands.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  manipulation5: [
+    {
+      name: "Right Answers",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"There must be a right answer. I just have to find it.\" The belief that every question can be answered well, if you are careful enough.\n\nWhat is true instead: when a question is rigged, there is no right answer inside it. The way out is a different answer, not a better one.\n\nIt feels reasonable because most questions do have good answers, and careful people try hard to find them.\n\nWhat it costs is time inside the trap. You search for the perfect reply, and every attempt accepts the frame.\n\nMindset: when every answer is wrong, answer outside the question.",
+      inputs: [
+        { q: "There must be a right answer to this.", a: "\"Not inside this question. I can give my own answer instead.\"", bundle: 'pro' },
+        { q: "If I choose carefully, they won't be upset.", a: "\"In a bind, both choices upset them. I can stop choosing between them.\"", bundle: 'pro' },
+        { q: "I have to pick one of the two.", a: "\"Two options were offered. That doesn't mean only two exist.\"", bundle: 'pro' },
+        { q: "If I say neither, I'm dodging.", a: "\"Saying neither and then what I'll do is a clear answer.\"", bundle: 'pro' },
+        { q: "I have to answer the question they asked.", a: "\"I have to answer what they need. Sometimes that's a different question.\"", bundle: 'pro' },
+        { q: "If I explain my choice well, it'll be okay.", a: "\"If every choice is wrong, no explanation will fix it.\"", bundle: 'pro' },
+        { q: "I must have done something wrong to get a question like that.", a: "\"A question like that tells me how they feel, not what I did.\"", bundle: 'pro' },
+        { q: "Maybe I'm just not clever enough to find the answer.", a: "\"There's no clever answer to a trap, only a way out of it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Explanations",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I can't explain it perfectly, I lose.\" The belief that your answer only stands if you win the argument for it.\n\nWhat is true instead: you do not need to win the argument to keep your answer.\n\nIt feels reasonable because we learn that good reasons settle things, and a fair person should be convinced by a good case.\n\nWhat it costs is the loop. Every new explanation is new material to argue with, and in the end you give in because you ran out of words, not because you were wrong.\n\nMindset: my answer can stand without a winning argument.",
+      inputs: [
+        { q: "If I can't explain it perfectly, I lose.", a: "\"My answer doesn't need a perfect explanation to stand.\"", bundle: 'pro' },
+        { q: "One more reason might convince them.", a: "\"Each new reason is one more thing for them to argue with.\"", bundle: 'pro' },
+        { q: "They have an answer for everything, so they must be right.", a: "\"Being quick with words isn't the same as being right.\"", bundle: 'pro' },
+        { q: "I can't stop until they understand.", a: "\"They may never agree, and I can stop anyway.\"", bundle: 'pro' },
+        { q: "If I end the conversation, it means I lost.", a: "\"Ending a circle isn't losing. It's choosing not to go round again.\"", bundle: 'pro' },
+        { q: "I owe them a reason for every no.", a: "\"I can give one reason, once. I don't owe them a debate.\"", bundle: 'pro' },
+        { q: "If I go quiet, they'll think they've won.", a: "\"Let them think it. My answer is the same either way.\"", bundle: 'pro' },
+        { q: "I need to prove I'm being reasonable.", a: "\"I can be reasonable without proving it for a fifth time.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Urgency",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"They're pushing this hard, so it must really be urgent.\" A belief with real truth in it.\n\nWhat is true: some deadlines are real, and some offers really do end.\n\nWhat gets added is the step from \"it's urgent for them\" to \"so I have to decide this minute, without thinking\".\n\nWhat it costs is decisions you would never make after a night's sleep, and a lesson for the other person that hurry works on you.\n\nMindset: keep the respect for real deadlines. Drop the idea that their hurry is your deadline.",
+      inputs: [
+        { q: "They're pushing this hard, so it must be urgent.", a: "\"It may be urgent for them — but 'so I have to decide this minute' is the part I added.\"", bundle: 'pro' },
+        { q: "The offer really might be gone tomorrow.", a: "\"True, it might — but 'so it's worth taking without thinking' is the part I added.\"", bundle: 'pro' },
+        { q: "They sound stressed, so I should hurry.", a: "\"They are stressed — but 'so their stress sets my pace' is the part I added.\"", bundle: 'pro' },
+        { q: "Everyone else would just say yes.", a: "\"Some would — but 'so I have to' is the part I added.\"", bundle: 'pro' },
+        { q: "If I wait, I'll look like I can't make decisions.", a: "\"Maybe a little — but 'so a rushed yes looks better' is the part I added.\"", bundle: 'pro' },
+        { q: "There really isn't much time.", a: "\"There isn't much — but 'so there's no time for one question' is the part I added.\"", bundle: 'pro' },
+        { q: "They've been waiting a long time for my answer.", a: "\"They have waited — but 'so they get it right now' is the part I added.\"", bundle: 'pro' },
+        { q: "Some decisions do have to be made quickly.", a: "\"True, some do — but 'so this one must be' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Consistency",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I said yes once, so I have to say yes again. I keep my word.\" A belief that feels like a virtue: reliable, loyal, someone people can count on.\n\nWhat is true instead: your word covers what you said yes to, not every step after it.\n\nIt feels reasonable because keeping promises matters, and changing your mind can feel like letting people down.\n\nWhat it costs is quiet. Each yes gets a little bigger, until you are doing far more than you ever agreed to, and resentment grows where the generosity used to be.\n\nMindset: keep your word, at the size you gave it.",
+      inputs: [
+        { q: "I said yes once, so I have to again.", a: "\"And so one yes turns into a promise I never made.\"", bundle: 'pro' },
+        { q: "I keep my word.", a: "\"I keep it so well that I keep words I never said.\"", bundle: 'pro' },
+        { q: "I don't go back on things.", a: "\"So every step up becomes something I can't step back from.\"", bundle: 'pro' },
+        { q: "I'm the reliable one.", a: "\"And so I'm the one everything gets added to.\"", bundle: 'pro' },
+        { q: "I'm not someone who lets people down.", a: "\"So I let myself down instead, a little more each week.\"", bundle: 'pro' },
+        { q: "Saying no now would make my first yes look fake.", a: "\"Holding on makes my next yes worth less, because it can never be a no.\"", bundle: 'pro' },
+        { q: "I'm generous with my time.", a: "\"Generous at first, and resentful by the third step, which helps nobody.\"", bundle: 'pro' },
+        { q: "If I agreed before, I can't complain now.", a: "\"So I stay quiet, and they never learn where my limit was.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  manipulationadv: [
+    {
+      name: "Naming",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"If I name it, they'll stop.\" A belief with something true in it.\n\nWhat is true: naming a pattern once can help — and knowing the pattern helps you most of all. Work on DARVO found that people who knew the pattern were less thrown by it.\n\nWhat gets added is the step from \"it's been said\" to \"so it will stop\". Few people change after one conversation, and some push harder.\n\nWhat it costs is naming it again and again, louder each time, until the talk is about labels and not about what happens.\n\nMindset: name it once to be clear. Don't count on it to change them.",
+      inputs: [
+        { q: "If I name it, they'll stop.", a: "\"Naming it can help — but 'so they'll stop' is the part I added.\"", bundle: 'pro' },
+        { q: "Once they see the pattern, they'll change.", a: "\"They might see it — but 'so they'll change' is the part I added.\"", bundle: 'pro' },
+        { q: "I've explained the pattern clearly, so it should be over.", a: "\"I did explain it clearly — but 'so it's over' is the part I added.\"", bundle: 'pro' },
+        { q: "If I find the right word for it, it will all make sense to them.", a: "\"A good word helps me — but 'so it'll make sense to them' is the part I added.\"", bundle: 'pro' },
+        { q: "They agreed it happens, so it won't happen again.", a: "\"They did agree — but 'so it won't happen again' is the part I added.\"", bundle: 'pro' },
+        { q: "It happened again after I named it, so naming it was pointless.", a: "\"It did happen again — but 'so it was pointless' is the part I added.\"", bundle: 'pro' },
+        { q: "Knowing what it is protects me.", a: "\"It does help me — but 'so I don't need anyone else' is the part I added.\"", bundle: 'pro' },
+        { q: "If I say it plainly enough, they'll have to admit it.", a: "\"Saying it plainly is right — but 'so they'll have to admit it' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Explaining",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"One more explanation will fix it.\" The belief that the right words will finally make them understand.\n\nWhat is true instead: the tactics are not a sign that they misunderstood. A new explanation is a new thing to argue with.\n\nIt feels reasonable because you are a reasonable person, and reasons usually work. If they are upset, it seems they must have missed something.\n\nWhat it costs is hours of explaining, each one met by a new tactic, until you are defending yourself and the answer has gone soft.\n\nMindset: I've been understood. Now I only need to hold.",
+      inputs: [
+        { q: "If I explain it better, they'll understand.", a: "\"They understood the first time; they just don't like the answer.\"", bundle: 'pro' },
+        { q: "They're only upset because they don't get my reasons.", a: "\"They know my reasons. It's the no they're upset about.\"", bundle: 'pro' },
+        { q: "I owe them a full explanation.", a: "\"I owe them a clear answer, not a defence.\"", bundle: 'pro' },
+        { q: "If I stop explaining, they'll think I'm being unfair.", a: "\"They may think that either way. A short answer is not an unfair one.\"", bundle: 'pro' },
+        { q: "Just one more try, and they'll see it.", a: "\"Every new try gives them one more thing to argue with.\"", bundle: 'pro' },
+        { q: "A good enough reason will end the guilt.", a: "\"Guilt doesn't need a reason to keep going, so my reasons won't end it.\"", bundle: 'pro' },
+        { q: "If I don't answer every point, I've lost.", a: "\"I don't have to answer every point to keep my answer.\"", bundle: 'pro' },
+        { q: "They've got a new argument, so I need a new reply.", a: "\"A new argument can still get the same answer.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Walking Away",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Leaving is giving up.\" The belief that ending a conversation, or stepping back from someone, means you have lost or failed.\n\nWhat is true instead: ending a round that is going nowhere keeps your answer whole. Staying is often how it gets worn down.\n\nIt feels reasonable because walking out can look rude, and most of us were taught to talk things through to the end.\n\nWhat it costs is staying until you give in, or until it turns into a row you both regret.\n\nMindset: leaving the conversation is not leaving the question.",
+      inputs: [
+        { q: "If I end the conversation, they win.", a: "\"If I stay until I give in, they win; ending it keeps my answer.\"", bundle: 'pro' },
+        { q: "Walking away is rude.", a: "\"Saying 'I'm going to stop here' and leaving calmly is polite.\"", bundle: 'pro' },
+        { q: "Good relationships talk everything through.", a: "\"Good relationships also know when to stop for today.\"", bundle: 'pro' },
+        { q: "If I leave now, I'm running away.", a: "\"I'm stepping out of a round that's going nowhere, and I'll come back to it.\"", bundle: 'pro' },
+        { q: "I should stay until we sort it out.", a: "\"Some things sort out better tomorrow than at midnight.\"", bundle: 'pro' },
+        { q: "Leaving means I've failed at this relationship.", a: "\"Ending one talk is not ending the relationship.\"", bundle: 'pro' },
+        { q: "If I go, they'll think I don't care.", a: "\"I can say that I care, and still go.\"", bundle: 'pro' },
+        { q: "Stepping back from someone is giving up on them.", a: "\"Stepping back can be what lets me keep them in my life.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Coping",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"It's not that bad. Others have it worse. I can cope.\" A belief that feels like strength: loyalty, patience, not making a fuss.\n\nWhat is true instead: if you feel afraid, controlled or unsafe, this is not a conversation problem — talk to someone you trust or contact a local support line.\n\nIt feels reasonable because some days are good, you care about them, and nobody else seems to see it.\n\nWhat it costs is quiet and slow: friends, confidence, and your sense of what normal is.\n\nMindset: being able to cope is not a reason to have to.",
+      inputs: [
+        { q: "It's not that bad.", a: "\"Every time I say that, the line for 'bad' shifts a little further.\"", bundle: 'pro' },
+        { q: "Other people have it much worse.", a: "\"Comparing keeps me quiet, and staying quiet keeps it going.\"", bundle: 'pro' },
+        { q: "I'm a patient person.", a: "\"My patience is what lets this go on for years.\"", bundle: 'pro' },
+        { q: "I don't want to make a fuss.", a: "\"Not making a fuss means nobody outside knows how it really is.\"", bundle: 'pro' },
+        { q: "I can handle it on my own.", a: "\"Handling it alone means I only ever hear their version of it.\"", bundle: 'pro' },
+        { q: "Things are good most of the time.", a: "\"The good days are real, and they're also what makes the bad ones easy to excuse.\"", bundle: 'pro' },
+        { q: "I'm loyal. I don't talk about home with other people.", a: "\"That loyalty has cost me the people who could tell me what's normal.\"", bundle: 'pro' },
+        { q: "I'm strong enough to take it.", a: "\"Being strong enough to take it was never the same as having to.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
