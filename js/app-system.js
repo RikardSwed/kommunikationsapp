@@ -76,6 +76,7 @@ const GRID_PACKS = new Set([
   'emotionalcalibration1', 'emotionalcalibration2',
   'whensomeoneishurting1', 'gettingtoknowsomeone',
   'manipulation1', 'manipulation2',
+  'fromupsettoask1',
 ]);
 window.dsIsGridPack = key => GRID_PACKS.has(key);
 
@@ -818,6 +819,8 @@ applyInputCounterVisibility();
     manipulation4: { label: 'Handling Manipulation — Pt. 4: Feelings as Leverage', minLevel: 'complete' },
     manipulation5: { label: 'Handling Manipulation — Pt. 5: Traps and Binds', minLevel: 'complete' },
     manipulationadv: { label: 'Handling Manipulation — Advanced: Seeing the Pattern', minLevel: 'complete' },
+    fromupsettoask1: { label: 'From Upset to Ask — Pt. 1: Turning It Around', minLevel: 'complete' },
+    fromupsettoask2: { label: 'From Upset to Ask — Pt. 2: When They Push Back', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -4223,6 +4226,34 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
+  fromupsettoask1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  fromupsettoask2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
 };
 window.BUNDLE_DEFS = BUNDLE_DEFS;
 
@@ -5160,6 +5191,7 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.69', date: 'October 2026', title: 'From Upset to Ask \u2014 two new packs', audience: 'dev', items: ['New Deckstack Originals, built after <em>_Plan \u2014 Undermining och Fr\u00e5n k\u00e4nsla till behov.md</em> (Serie C): <strong>From Upset to Ask \u2014 Pt. 1: Turning It Around</strong> (<code>fromupsettoask1</code>, grid process pack: one irritation per row, from finding the need to a doable ask) and <strong>Pt. 2: When They Push Back</strong> (<code>fromupsettoask2</code>, follow-up pack).', 'Under Emotions &amp; Regulation and Communication in Relationships, at <strong>complete</strong> until tested. Builds on Conflict Emotions without repeating it. Sources: Rosenberg (NVC), Gottman (softened start-up), Linehan (DEAR MAN).', 'check-pack: 0 errors, 0 warnings. GRID_PACKS: fromupsettoask1. Kartan: all new decks tagged.'] },
   { version: 'v1.29.68', date: 'October 2026', title: 'Handling Manipulation \u2014 a new series of six packs', audience: 'dev', items: ['New Deckstack Originals, built after <em>_Plan \u2014 Manipulation (serie).md</em>: <strong>Handling Manipulation</strong> Pt. 1: Guilt and Obligation (<code>manipulation1</code>, grid), Pt. 2: Twisted Truth (<code>manipulation2</code>, grid), Pt. 3: Through Other People (<code>manipulation3</code>), Pt. 4: Feelings as Leverage (<code>manipulation4</code>), Pt. 5: Traps and Binds (<code>manipulation5</code>) and Advanced: Seeing the Pattern (<code>manipulationadv</code>).', 'Under Assertiveness &amp; Pressure; Pt. 1 also under Asking &amp; Saying No, Pt. 4 also under Emotions &amp; Regulation. All at <strong>complete</strong> until tested; a programme comes later.', 'Sources: Forward (Emotional Blackmail), Simon (In Sheep\u2019s Clothing), Freyd (DARVO), Buss (tactics of manipulation), Schrodt (demand\u2013withdraw). Who manipulates is mixed on the cards; no right answer is a diagnosis.', 'check-pack: 0 errors, 0 warnings on all six. GRID_PACKS: manipulation1 and manipulation2. Kartan: family 36 Manipulation, all new decks tagged.'] },
   { version: 'v1.29.67', date: 'October 2026', title: 'Career Conversations \u2014 a new programme', audience: 'dev', items: ['New programme <code>career-conversations</code>, at <strong>complete</strong> until tested. Five Stages: Meet people (Networking Pt. 1\u20132), The interview (Job Interview Pt. 1), The hard questions (Job Interview Pt. 2), The first weeks (New at Work), Talking to your manager.', 'Networking Pt. 1 stays <strong>pro</strong> on its own as the open way in, and is also part of Stage 1.', 'Five new checkpoints, <code>cc-cp1</code>\u2013<code>cc-cp5</code>, 40 questions each, 20 drawn, 30 s. Correct answers spread 10/10/10/10 and the right answer is the longest option in only 10\u201314 of 40.', 'When it is released: set its level in PROGRAM_CONFIG, move networking2, jobinterview1\u20132, newatwork and talkingtoyourmanager to <strong>program</strong> (or a pack level), and add it to the store if it is sold.'] },
   { version: 'v1.29.66', date: 'October 2026', title: 'Making Friends \u2014 a new programme', audience: 'dev', items: ['New programme <code>making-friends</code>, at <strong>complete</strong> until tested. Two Stages: Stage 1 \u2014 Keep it going (Making Friends Pt. 2) and Stage 2 \u2014 When it gets hard (Pt. 3). Pt. 1 stays outside the programme as the open way in (Rikard 2026-10-14).', 'Two new checkpoints, <code>mf-cp1</code> and <code>mf-cp2</code>, 40 questions each, 20 drawn, 30 s. Written from each pack\u2019s descriptions, Challenges, Mindset, Sequences and Memorize. The right answer is the longest option in only 11 of 40, so length gives nothing away.', 'When it is released: set <code>making-friends</code> to its level in PROGRAM_CONFIG, move makingfriends2/3 to <strong>program</strong>, and add it to the store if it is sold.'] },

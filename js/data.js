@@ -15812,6 +15812,202 @@ const collections = {
       ]
     },
   ],
+  fromupsettoask1: [
+    {
+      name: "Find the Need First",
+      guideFront: "Open with what you want when...",
+      guideBack: "Your want, as an opening line",
+      description: "Before the sharp line comes out, ask yourself one question: what do I actually want instead? Then make the answer your first sentence. \"What I really want tonight is to come home and rest. Can we talk about the kitchen?\"\n\nThe question happens inside you, in a breath. The card trains the line you say once you have the answer.\n\nIt works because irritation is loud about what is wrong and quiet about what you want. In Marshall Rosenberg's Nonviolent Communication, a strong feeling is a signal that a need is not being met. Find the need, and you have something to talk about. Stay with the irritation, and you only have something to fight about.\n\nKeep it short: the want, and an invitation to talk. The rest of the conversation can come after.\n\nTypical phrases: \"What I really want is…\", \"What I'm actually after is…\", \"Can we talk about…?\"\n\nThree things the want can be about:\n\n1. How you want to feel — \"What I really want is to come home and rest.\"\n\n2. What you want to be able to do — \"What I really want is to get my point out in one go.\"\n\n3. What you want between you — \"What I really want is to see you, Jess.\"\n\nMindset: the irritation is pointing at something you want. Find it before you speak.",
+      inputs: [
+        { q: "You get home at seven, tired, and the sink is full again. Mark is on the sofa, and \"Seriously? Again?\" is on the tip of your tongue.", a: "\"Mark, what I really want tonight is to come home and rest. Can we talk about the kitchen?\"", bundle: 'free' },
+        { q: "Priya cuts in halfway through your sentence, for the third time in this meeting. You catch her at the coffee machine afterwards, still fuming.", a: "\"Priya, what I really want in these meetings is to get my point out in one go. Have you got a minute?\"", bundle: 'free' },
+        { q: "Sofia walks in thirty minutes late. Your parents have been waiting, and the food is going cold. You feel a sharp remark coming.", a: "\"What I really want is for us to turn up together. Can we talk about tonight on the way home?\"", bundle: 'free' },
+        { q: "It is eleven, and Sam has not read any of your ten texts. When he walks in at midnight, you are ready to shout.", a: "\"Sam, what I really want is to know you're safe. Can we talk about texting tomorrow?\"", bundle: 'free' },
+        { q: "It is one in the morning on a Tuesday, and Mr Novak's bass is coming up through your floor again. The next evening, you knock on his door.", a: "\"Hi, Mr Novak. What I really want is to sleep on work nights. Can we talk about the music?\"", bundle: 'free' },
+        { q: "An hour before the concert, Jess texts: \"So sorry, can't make it!\" It is the third time this month.", a: "\"Jess, what I really want is to see you. Can we talk about how we make plans?\"", bundle: 'pro' },
+        { q: "You come home to Hanna's laundry on the sofa, her shoes in the doorway and two plates on the floor.", a: "\"Hanna, what I really want is to be able to sit in here at night. Can we talk about the living room?\"", bundle: 'pro' },
+        { q: "Your dad is staying for the weekend. At the baby's first cry he says, \"You're doing it all wrong. Just let him cry.\"", a: "\"Dad, what I really want is to do bedtime my own way. Can we talk about it once he's asleep?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Own the Feeling",
+      guideFront: "Say how it felt for you when...",
+      guideBack: "A plain statement of how you felt",
+      description: "Say how you felt, as your own feeling: \"I felt really worn out when I came home to a full sink again.\" Not \"you made me feel\", and not \"you're so…\".\n\nIt works because \"you made me angry\" is a charge, and a charge gets a defence. \"I felt angry\" is a report about you. Nobody can argue with how you felt, so they can listen instead. John Gottman calls this part of a softened start-up: start with \"I\", describe instead of judging, and leave the blame out.\n\nKeep it short and plain: one feeling word, and when it happened. A feeling with no \"when\" sounds like a mood. A \"when\" with \"you always\" in it sounds like a charge again.\n\nTypical phrases: \"I felt…\", \"I was really…\", \"I feel … when …\"\n\nThree ways to own it:\n\n1. Then, and specific — the feeling and the moment it came. \"I felt let down when the text came.\"\n\n2. Now — how it is for you at the moment. \"I feel on edge when the living room is full.\"\n\n3. The feeling under the anger — often it was worry, hurt or tiredness first. \"I wasn't really angry. I was scared.\"\n\nMindset: your feeling is yours to say. Saying it as yours is what lets them hear it.",
+      inputs: [
+        { q: "You have decided to talk to Mark about the dishes. The first words that come to mind are \"You make me so angry.\"", a: "\"I felt really worn out when I came home to a full sink again tonight.\"", bundle: 'free' },
+        { q: "After the meeting, you find Priya. What you want to say is \"You made me look stupid in there.\"", a: "\"When I got cut off in there, I felt pushed aside.\"", bundle: 'free' },
+        { q: "On the drive home from your parents', you hear yourself start: \"You embarrassed me tonight.\"", a: "\"I felt embarrassed and on edge, sitting there with my parents, waiting.\"", bundle: 'free' },
+        { q: "Sam is finally home. \"You had me worried sick\" is ready to go.", a: "\"I wasn't really angry, Sam. I was scared when I couldn't reach you.\"", bundle: 'free' },
+        { q: "Mr Novak opens his door. \"You're keeping the whole building awake\" is on your lips.", a: "\"I've been feeling exhausted this week. I lie awake until the music stops.\"", bundle: 'free' },
+        { q: "Jess rings to say sorry about the concert. \"You always let me down\" is right there.", a: "\"Honestly, I felt let down when the text came. I'd been looking forward to it all week.\"", bundle: 'pro' },
+        { q: "Hanna comes in and says hi. You can feel \"You're such a slob\" coming.", a: "\"I feel on edge when I come home and the living room is full. I can't settle.\"", bundle: 'pro' },
+        { q: "Your dad says again that the baby goes to bed too late. You nearly say, \"You make me feel useless.\"", a: "\"When the advice keeps coming, Dad, I feel like I'm not doing it right.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Turn the Complaint Into a Wish",
+      guideFront: "Say what you'd love when...",
+      guideBack: "A wish, said out loud",
+      description: "Take the complaint you were about to make, and say the wish behind it instead. \"You never lift a finger in the kitchen\" becomes \"I'd love to come home to a clear kitchen.\" Same subject, opposite direction.\n\nIt works because a complaint points backwards, at what they did wrong, and the natural answer to it is a defence. A wish points forwards, at something you could have, and the natural answer is \"okay, how?\". John Gottman's softened start-up ends with a positive need for exactly this reason: tell them what you want, not what they keep getting wrong.\n\nA wish is not yet a request. It shows the direction, and the asking can come after.\n\nTypical phrases: \"I'd love…\", \"It would mean a lot if…\", \"What I'm hoping for is…\"\n\nThree ways to turn it:\n\n1. Flip the \"never\" — the word in the complaint becomes the wish. \"You never call\" becomes \"I'd love to hear from you more.\"\n\n2. Paint the picture — describe how it would look. \"I'd love the living room to feel like a place we can both relax in.\"\n\n3. Make it about both of you — \"I'd love it if we could get places on time, together.\"\n\nMindset: every complaint has a wish inside it. Say the wish.",
+      inputs: [
+        { q: "The complaint ready in your head is \"You never lift a finger in the kitchen, Mark.\"", a: "\"I'd love to come home to a clear kitchen.\"", bundle: 'free' },
+        { q: "You want to tell Priya, \"You never let anyone finish a sentence.\"", a: "\"I'd love to get to the end of my point in meetings.\"", bundle: 'free' },
+        { q: "You want to tell Sofia, \"You're late for absolutely everything.\"", a: "\"I'd love it if we could get places on time, together.\"", bundle: 'free' },
+        { q: "You want to tell Sam, \"You're impossible to get hold of.\"", a: "\"I'd love to hear from you when you're out, even just a word.\"", bundle: 'free' },
+        { q: "You want to tell Mr Novak, \"This building isn't a nightclub.\"", a: "\"I'd love to have quiet nights during the week.\"", bundle: 'free' },
+        { q: "You want to tell Jess, \"You're so unreliable.\"", a: "\"I'd love our plans to be something we both look forward to, and keep.\"", bundle: 'pro' },
+        { q: "\"This place is a pigsty because of you\" is on the tip of your tongue.", a: "\"I'd love the living room to feel like a place we can both relax in, Hanna.\"", bundle: 'pro' },
+        { q: "You want to tell your dad, \"You criticise everything I do.\"", a: "\"I'd love to hear what you think I'm doing well with him, Dad.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Need, Not Solution",
+      guideFront: "Say what matters, then ask when...",
+      guideBack: "A need and an open question",
+      description: "Say the need, and leave the solution open: \"I need some rest when I get home from work. Any ideas?\" A need is what matters to you. A solution is one way to get it, and usually the one you picked while you were annoyed.\n\nIt works because a fixed solution gives the other person two choices, yes or no, and a no feels like a fight. A need gives them a problem to help with. Marshall Rosenberg separates needs from strategies for this reason: there is almost always more than one way to meet a need, and theirs may be better than yours.\n\nTwo parts, said together:\n\n1. The need — \"I need to be able to count on the time we agree.\"\n\n2. The open question — \"What would help you with that?\"\n\nTypical phrases: \"I need…\", \"What could work for you?\", \"How could we sort that?\", \"Any ideas?\"\n\nThree ways to leave it open:\n\n1. The plain question — \"I need rest after work. Any ideas?\"\n\n2. Your fix as one idea among others — \"I need to sleep by eleven. Headphones are one idea, but what would work for you?\"\n\n3. With their side in it — \"I need to know you're safe. How could we do that without it feeling like checking up?\"\n\nMindset: you know what you need. You don't have to find the solution alone.",
+      inputs: [
+        { q: "You were going to tell Mark, \"From now on, you do all the dishes.\"", a: "\"I need some rest when I get home from work. Any ideas?\"", bundle: 'free' },
+        { q: "You were going to tell Priya, \"We need a rule: nobody speaks until I've finished.\"", a: "\"I need to be able to finish my thoughts in meetings. How could we make that work?\"", bundle: 'free' },
+        { q: "You were about to tell Sofia she has to set an alarm an hour before every plan.", a: "\"I need to be able to count on the time we agree. What would help you with that?\"", bundle: 'free' },
+        { q: "You were about to tell Sam that from now on he shares his location at all times.", a: "\"I need to know you're safe when you're out. How could we do that without it feeling like checking up?\"", bundle: 'free' },
+        { q: "You were going to tell Mr Novak to buy himself some headphones.", a: "\"I need to sleep by eleven on work nights. Headphones are one idea, but what would work for you?\"", bundle: 'free' },
+        { q: "You were going to tell Jess that next time she cancels, she pays for both tickets.", a: "\"I need plans I can count on, Jess. What would make that easier for you?\"", bundle: 'pro' },
+        { q: "You were going to tell Hanna, \"Your stuff stays in your room. Full stop.\"", a: "\"I need the living room clear enough to sit in at night. How should we sort it?\"", bundle: 'pro' },
+        { q: "You were going to tell your dad he can't come at bedtime any more.", a: "\"I need to feel trusted with him, Dad. How could we do that and still have you close?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say the Do, Not the Don't",
+      guideFront: "Ask for the action you want when...",
+      guideBack: "A positive request",
+      description: "Ask for what you want them to do, not for what you want them to stop. \"Don't leave the dishes in the sink\" becomes \"Could you put the dishes in the dishwasher after dinner?\"\n\nIt works because a \"don't\" only says what is wrong. It sounds like criticism, and it leaves them guessing what would be right. A \"do\" gives them something to say yes to. Marshall Rosenberg puts it simply: ask for what you want, not for what you don't want.\n\nThe test: could a camera film them doing it? \"Stop being rude\" fails. \"Let me finish, and then come in\" passes.\n\nTypical phrases: \"Could you…?\", \"Would you be up for…?\", \"Can I ask you to…?\"\n\nThree ways to turn a don't into a do:\n\n1. Name the opposite action — \"Stop interrupting\" becomes \"Could you let me finish first?\"\n\n2. Name the place or the time — \"Could you take your things back to your room in the evenings?\"\n\n3. Name what to do instead — \"If you're not sure you can make it, could you tell me the day before?\"\n\nMindset: a \"don't\" tells them what's wrong. A \"do\" tells them how to get it right.",
+      inputs: [
+        { q: "You hear yourself start: \"Mark, don't leave the dishes in the sink again.\"", a: "\"Could you put the dishes in the dishwasher after dinner?\"", bundle: 'free' },
+        { q: "\"Stop interrupting me, Priya\" is ready to go.", a: "\"Could you let me finish, and then come in with your point?\"", bundle: 'free' },
+        { q: "\"Don't be late on Sunday\" is what you were going to say to Sofia.", a: "\"Could you be ready to leave at half six on Sunday?\"", bundle: 'free' },
+        { q: "\"Don't ignore my texts\" is on your phone screen, unsent.", a: "\"Sam, could you answer my texts when you're out, even with one word?\"", bundle: 'free' },
+        { q: "\"Don't play it so loud\" is what you were going to say to Mr Novak.", a: "\"Could you keep the music down after eleven during the week?\"", bundle: 'free' },
+        { q: "\"Don't cancel on me again\" is the text you nearly sent Jess.", a: "\"If you're not sure you can make it, could you tell me the day before?\"", bundle: 'pro' },
+        { q: "\"Stop dumping your stuff in here\" is ready for Hanna.", a: "\"Could you take your things back to your room in the evenings?\"", bundle: 'pro' },
+        { q: "\"Stop telling me what to do\" is what you nearly said to your dad.", a: "\"Could you wait until I ask before you give advice about him?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Make It Doable",
+      guideFront: "Ask for one small step when...",
+      guideBack: "A small, specific request",
+      description: "Make the request small, concrete and close in time, so it can actually happen. \"Help more around the house\" becomes \"Could you load the dishwasher before I get home at seven?\"\n\nIt works because a big, vague request — be more respectful, be tidier, take it seriously — cannot be done, only promised. Then it gets forgotten, and you are back where you started. A small, specific request can happen tonight, and you will both know whether it did. Marsha Linehan's DEAR MAN skill, from DBT, asks you to say clearly what you want; a doable request is that, made small enough to say yes to.\n\nTypical phrases: \"Tonight, could you…?\", \"This weekend, could you…?\", \"Could we start with…?\"\n\nThree ways to make it doable:\n\n1. Smaller — one part of the problem, not all of it. \"Could you clear the sofa before nine tonight?\"\n\n2. A time on it — \"For Saturday, could you tell me by Friday lunchtime?\"\n\n3. Something you can both see — \"Could you send me a thumbs-up when you get there?\"\n\nMindset: a small yes that happens beats a big promise that doesn't.",
+      inputs: [
+        { q: "You were going to ask Mark to \"help more around the house\".", a: "\"Could you load the dishwasher before I get home at seven?\"", bundle: 'free' },
+        { q: "You were going to ask Priya to \"be more respectful in meetings\".", a: "\"In Thursday's meeting, could you wait until I say 'that's it' before you come in?\"", bundle: 'free' },
+        { q: "You were going to ask Sofia to \"be better with time\".", a: "\"If you're running late on Sunday, could you text me before six?\"", bundle: 'free' },
+        { q: "You were going to ask Sam to \"keep in touch more\".", a: "\"Could you send me a thumbs-up when you get there, and one when you leave?\"", bundle: 'free' },
+        { q: "You were going to ask Mr Novak to \"be a bit more considerate\".", a: "\"Could you turn the bass down at eleven tonight? That's the part that comes through the floor.\"", bundle: 'free' },
+        { q: "You were going to ask Jess to \"take our plans more seriously\".", a: "\"For Saturday, could you tell me by Friday lunchtime if it's still on?\"", bundle: 'pro' },
+        { q: "You were going to ask Hanna to \"be tidier\".", a: "\"Could you clear the sofa before nine tonight? I've got friends coming over.\"", bundle: 'pro' },
+        { q: "You were going to ask your dad to \"back off a bit\".", a: "\"This weekend, could you ask me 'do you want my advice?' before you give it?\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  fromupsettoask2: [
+    {
+      name: "Hear Them, Keep Yours",
+      guideFront: "Grant their point, hold your need when...",
+      guideBack: "Their point granted, your need restated",
+      description: "When they push back on your request — \"Well, you never…\", \"It's not a big deal\" — take in what is fair in what they say, and then say your need again, calmly. \"That's fair about the weekends. I still need the evenings quiet.\" You do not drop your need, and you do not argue theirs away.\n\nIt works because pushback is usually a defence. Argue with it, and the talk turns into a trial about who is worse. Granting the fair part lowers their guard, and coming back to your need keeps the conversation on what you asked for. Marsha Linehan's DEAR MAN calls this staying mindful: keep your focus on your request and do not follow every side road. John Gottman's softened start-up applies to the second line too — no blame, just the need.\n\nTypical phrases: \"That's fair.\", \"You've got a point about…\", \"And I still need…\", \"Both can be true.\"\n\nThree ways to hear them and keep yours:\n\n1. Grant the fair part — \"You're right, I've been late too. I'd still love help with the kitchen.\"\n\n2. Park their point for later — \"That's worth talking about too. Can we finish this one first?\"\n\n3. Give it its real size — when they say it is nothing. \"It might be small to you. It matters to me, so I'm asking.\"\n\nMindset: their point can be true, and your need can still stand.",
+      inputs: [
+        { q: "You ask your partner, \"Could you put the dishes in the dishwasher after dinner?\" He snaps, \"Well, you never take the bins out.\"", a: "\"That's fair, the bins have been all you. I'd still love help with the dishes after dinner.\"", bundle: 'free' },
+        { q: "You ask a colleague, \"Could you send me the figures by Wednesday, so I can finish the report?\" She says, \"You sent yours late last month, too.\"", a: "\"True, I did. I still need them by Wednesday this time.\"", bundle: 'free' },
+        { q: "You ask your flatmate, \"Could you keep the music down after eleven on weeknights?\" He laughs: \"It's not a big deal. It's only music.\"", a: "\"It might be small to you. I need to sleep by eleven, so it matters to me.\"", bundle: 'free' },
+        { q: "You ask your teenage daughter, \"Could you text me when you get to Mia's?\" She says, \"You never text me when you're late!\"", a: "\"Fair point, I'll get better at that. And I still need a text when you get there.\"", bundle: 'free' },
+        { q: "You ask your friend, \"Could we meet somewhere closer to me next time? The drive is long.\" He says, \"I came to yours twice last year.\"", a: "\"You did, and I was glad you did. I'd still love it if we met halfway this time.\"", bundle: 'free' },
+        { q: "You ask your mum, \"Could you call before you come round?\" She says, \"Oh, so I need an appointment to see my own grandchildren now?\"", a: "\"You don't need an appointment, and we love seeing you. I'd just like a call first.\"", bundle: 'pro' },
+        { q: "You ask your neighbour, \"Could you park so our drive stays clear in the mornings?\" She says, \"Your kids' bikes are on the pavement half the time.\"", a: "\"That's fair, I'll put the bikes away. And I still need the drive clear by eight.\"", bundle: 'pro' },
+        { q: "You ask your manager, \"Could we keep Friday afternoons free of new tasks?\" He says, \"Everyone's busy. It's not a big deal.\"", a: "\"I know it's busy for everyone. It still matters to me, so I'd like to try it for a month.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What They Need",
+      guideFront: "Get curious about their side when...",
+      guideBack: "A question about their need",
+      description: "When they push back or say no, ask what they need. \"What would make this work for you?\" Their no is rarely the end of your request. Usually it means that something matters to them too.\n\nIt works because a no protects something. In Marshall Rosenberg's Nonviolent Communication, every no is a yes to a need of their own — rest, freedom, fairness, being trusted. As long as you only hear the no, you are stuck with two options: push harder or give up. Once you know the need behind it, you have something to work with, and they feel heard instead of pushed.\n\nAsk with real curiosity. \"What's your problem with it?\" asks the same thing and sounds like an attack.\n\nTypical phrases: \"What do you need around this?\", \"What would make it work for you?\", \"What's hard about it?\", \"What matters to you here?\"\n\nThree ways to ask:\n\n1. The open question — \"What do you need around this?\"\n\n2. The hard part — ask what makes it difficult. \"What's hard about doing it after dinner?\"\n\n3. The guess — offer a guess and let them correct it. \"Is it that you need a break first?\"\n\nMindset: a no usually guards a need. Ask which one.",
+      inputs: [
+        { q: "You ask your partner, \"Could we have one evening a week without phones?\" She says, \"No. That's when I catch up with my sister.\"", a: "\"Okay. What do you need from those evenings?\"", bundle: 'free' },
+        { q: "You ask a colleague, \"Could you copy me in on the client emails?\" He says, \"I'm not copying you on everything.\"", a: "\"Fair. What would feel like too much for you?\"", bundle: 'free' },
+        { q: "You ask your teenage son, \"Could you be home by ten on school nights?\" He says, \"No way. Everyone stays out later than that.\"", a: "\"What do you need on those nights?\"", bundle: 'free' },
+        { q: "You ask your flatmate, \"Could we make a cleaning rota?\" She says, \"I'm not doing a rota. I hate rotas.\"", a: "\"What is it about rotas that doesn't work for you?\"", bundle: 'free' },
+        { q: "You ask your dad, \"Could you ask us before you give the kids sweets?\" He says, \"I'm their grandad. I'm not asking permission.\"", a: "\"What does treating them mean to you, Dad?\"", bundle: 'free' },
+        { q: "You ask your friend, \"Could you tell me a day ahead if you need to cancel?\" He says, \"I can't always know a day ahead.\"", a: "\"That makes sense. What would work for you?\"", bundle: 'pro' },
+        { q: "You ask your neighbour, \"Could the hedge be cut below our window?\" He says, \"No. I like my privacy.\"", a: "\"Privacy, I get that. What height would still give you that?\"", bundle: 'pro' },
+        { q: "You ask your sister, \"Could we take turns hosting Christmas?\" She says, \"No. Christmas has always been at mine.\"", a: "\"What would you need to feel okay about taking turns?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Both Needs on the Table",
+      guideFront: "Sum up the two sides when...",
+      guideBack: "A summary of two needs",
+      description: "Say both needs out loud, side by side, in one sentence. \"So you need to unwind after work, and I need help with dinner.\" Use \"and\", not \"but\". Nobody's need is crossed out.\n\nIt works because, during pushback, each person hears only their own need and the other one as an attack. Putting both on the table shows that you heard theirs, and that yours is still there. It turns two people against each other into two needs facing one problem. Marshall Rosenberg's Nonviolent Communication makes the same point: needs themselves are never wrong; it is the ways of meeting them that clash.\n\nSay their need first. It is the proof that you listened, and it makes yours easier to hear.\n\nTypical phrases: \"So you need…, and I need…\", \"Both of those matter.\", \"Have I got that right?\", \"Then we've got two needs and one evening.\"\n\nThree ways to put both on the table:\n\n1. The plain summary — \"So you need quiet in the mornings, and I need to make calls before nine.\"\n\n2. The check — end with a question. \"Have I got yours right?\"\n\n3. The shared problem — make it one problem for both of you. \"So how do we get you a lie-in and me a quiet hour?\"\n\nMindset: \"and\", not \"but\". Both needs get to stay.",
+      inputs: [
+        { q: "You ask your partner, \"Could we cook together when you get home?\" He says, \"I need half an hour to myself after work. I'm wiped.\"", a: "\"So you need some time to land, and I need help with dinner. Both make sense.\"", bundle: 'free' },
+        { q: "You ask your flatmate, \"Could we keep the living room clear on weekdays?\" He says, \"It's the only room where I can spread my work out.\"", a: "\"So you need room to work, and I need somewhere to relax in the evening. Have I got that right?\"", bundle: 'free' },
+        { q: "You ask your manager, \"Could I keep Monday mornings for focused work?\" She says, \"That's when I need everyone in the team meeting.\"", a: "\"So you need the team together on Mondays, and I need one quiet block a week.\"", bundle: 'free' },
+        { q: "You ask your friend, \"Could we meet a bit earlier in the evening?\" She says, \"I can't get away from work before seven.\"", a: "\"So you can't leave before seven, and I need to be home by nine for the kids. Let's work with both.\"", bundle: 'free' },
+        { q: "You ask your teenage daughter, \"Could you do your homework before screens?\" She says, \"I need a break when I get home. My head's full.\"", a: "\"So you need a break first, and I need homework done before nine. Both are fair.\"", bundle: 'free' },
+        { q: "You ask your neighbour, \"Could you keep the drilling to weekends?\" He says, \"I work weekends. Weekdays are all I've got.\"", a: "\"So weekdays are your only time, and I work from home and need quiet for calls.\"", bundle: 'pro' },
+        { q: "You ask your brother, \"Could you visit Dad on Sundays this month?\" He says, \"Sunday is my only day with the kids.\"", a: "\"So you need Sundays with the kids, and I need someone to share Dad's visits with.\"", bundle: 'pro' },
+        { q: "You ask a colleague, \"Could we keep the window shut? I'm freezing.\" He says, \"I get headaches without fresh air.\"", a: "\"So you need fresh air, and I need to stay warm. One window, two needs.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Look for a Third Way",
+      guideFront: "Offer a plan that fits both when...",
+      guideBack: "A proposal that holds both needs",
+      description: "Once both needs are known, suggest something that meets both — not your way, not their way, but a third one. \"What if you take twenty minutes first, and then we cook together?\" Offer it as a question, so they can change it.\n\nIt works because, in the middle of pushback, it looks as if there are only two options: you give in, or they do. A third way breaks that. Marsha Linehan's DEAR MAN calls this Negotiate: be willing to give to get, and look for other ways to solve the problem. Asking it as a question invites their own idea, and theirs is often better.\n\nA third way only works after the needs are clear. Offered too early, it is just your solution in a nicer voice.\n\nTypical phrases: \"What if…?\", \"How about…?\", \"Could we try it for a week?\", \"What would you change about that?\"\n\nThree ways to find a third way:\n\n1. Split it — time, days or turns. \"What if I take Mondays and you take Thursdays?\"\n\n2. Change the how — the same goal in a different form. \"What if you text instead of calling?\"\n\n3. Try it out — a short test instead of a forever rule. \"Shall we try it for two weeks and see?\"\n\nMindset: if it's only my way or their way, we haven't looked hard enough yet.",
+      inputs: [
+        { q: "You ask your partner, \"Could we cook together when you get home?\" She says, \"I need some time to myself first. I've been with people all day.\"", a: "\"What if you take twenty minutes first, and then we cook together?\"", bundle: 'free' },
+        { q: "You ask your flatmate, \"Could you keep the music down after ten?\" She says, \"Evenings are when I practise. I've got a concert soon.\"", a: "\"What if you practise until ten, and use headphones after that?\"", bundle: 'free' },
+        { q: "You ask a colleague, \"Could you send me your questions by email instead of stopping by?\" He says, \"Email is too slow. I need answers fast.\"", a: "\"How about a quick ten-minute chat at two every day, and email for the rest?\"", bundle: 'free' },
+        { q: "You ask your teenage son, \"Could you be home for dinner at six?\" He says, \"Football training doesn't finish till half six.\"", a: "\"What if dinner is at seven on training days?\"", bundle: 'free' },
+        { q: "You ask your friend, \"Could we stop splitting the bill evenly? I only had a salad.\" She says, \"Working out who had what is so awkward.\"", a: "\"How about we each pay for our own food and split the wine?\"", bundle: 'free' },
+        { q: "You ask your mum, \"Could you check with me before sending baby advice?\" She says, \"I just want to help. I worry about you.\"", a: "\"What if we have a call on Sundays, and you ask me then what I could use help with?\"", bundle: 'pro' },
+        { q: "You ask your neighbour, \"Could your dog stay inside in the early mornings?\" She says, \"He needs to go out at six, or he cries.\"", a: "\"Could he go out by your garage instead, away from our bedroom?\"", bundle: 'pro' },
+        { q: "You ask your manager, \"Could I work from home on Fridays?\" He says, \"I need someone here for the client calls.\"", a: "\"What if I take the client calls from home, and come in whenever there's a visit?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Thank the Change",
+      guideFront: "Name what they did when...",
+      guideBack: "A specific thanks, with the difference it made",
+      description: "When they do what you asked — even once, even partly — say thank you, and say what it changed. \"Thanks for texting last night. It really helped.\" Specific, short, and soon.\n\nIt works because a request that is only mentioned when it fails becomes a nag. Marsha Linehan's DEAR MAN ends with Reinforce: let the other person know it was worth it when they give you what you asked for. A thank-you that names the thing tells them it was noticed and that it mattered, and it makes the next time easier for both of you.\n\nKeep it clean. No \"finally\", no \"see, that wasn't so hard\". Those turn a thank-you into a score.\n\nTypical phrases: \"Thanks for…\", \"That really helped.\", \"I noticed you…\", \"It made my evening so much easier.\"\n\nThree ways to thank the change:\n\n1. Name the thing — \"Thanks for putting the dishes away last night.\"\n\n2. Name the difference — say what it changed for you. \"Because you texted, I could relax and eat.\"\n\n3. Thank the start — when it is a step, not the whole thing. \"Thanks for being home by half ten. That's a big step.\"\n\nMindset: what gets noticed gets repeated. Say it out loud.",
+      inputs: [
+        { q: "Last week you asked your partner, \"Could you text me if you'll be later than seven?\" Tonight at six he texts: \"Running late, home by eight.\"", a: "\"Thanks for the text. I could relax and eat with the kids instead of waiting.\"", bundle: 'free' },
+        { q: "On Monday you asked your flatmate, \"Could you keep your bike in the hall cupboard?\" Today you come home and the hallway is clear.", a: "\"Thanks for putting the bike away. Coming in is so much easier now.\"", bundle: 'free' },
+        { q: "Last week you asked a colleague, \"Could you send the figures by Wednesday?\" On Tuesday afternoon they are in your inbox.", a: "\"Thanks for the figures, and a day early too. It gave me time to check the report properly.\"", bundle: 'free' },
+        { q: "You asked your teenage son, \"Could you text me when you get to Leo's?\" Tonight your phone buzzes: \"Here.\"", a: "\"Thanks for the text. One word, and I could stop worrying.\"", bundle: 'free' },
+        { q: "You asked your dad, \"Could you ask us before you give the kids sweets?\" Today he asks, \"Is one biscuit okay before dinner?\"", a: "\"Thanks for asking, Dad. It makes it easy for me to say yes.\"", bundle: 'free' },
+        { q: "You asked your friend, \"Could we meet halfway next time?\" Today he suggests a café right in the middle.", a: "\"Thanks for picking somewhere halfway. That made getting here so much easier.\"", bundle: 'pro' },
+        { q: "You asked your manager, \"Could new tasks come on Monday instead of Friday afternoon?\" This Friday at four she says, \"I've got something for you, but it can wait till Monday.\"", a: "\"Thanks for holding it. I'll start on Monday with a clear head.\"", bundle: 'pro' },
+        { q: "You asked your partner, \"Could we put our phones away during dinner?\" Tonight, halfway through the meal, she puts hers in the drawer.", a: "\"Thanks for putting the phone away. I really liked talking to you just now.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Try Again Later",
+      guideFront: "Pause it and pick a time when...",
+      guideBack: "A pause with a time to come back",
+      description: "When it is not working today — too tired, too heated, or a flat no — stop for now and agree when to come back to it. \"Okay, let's leave it. Can we come back to it on Sunday?\" A no today is not a no for ever.\n\nIt works because pushing on a tired or heated no makes it harder. A pause gives you both time to calm down and think. Naming a time shows that you are not dropping your need, and not punishing them either. Often the second conversation goes better, because they have had time to think about your need, and you about theirs.\n\nThe time is the strategy. \"Let's leave it\" on its own sounds like giving up, or like a cold shoulder.\n\nTypical phrases: \"Let's leave it for now.\", \"Can we come back to it on…?\", \"I'd like to think about what you said.\", \"Not tonight, but soon.\"\n\nThree ways to try again later:\n\n1. Pause and name a time — \"Let's stop here. Sunday morning?\"\n\n2. Pause with something to think about — \"Could we both think about what might work, and talk tomorrow?\"\n\n3. Pause and keep it warm — when they are hurt. \"I'm not angry with you. Let's talk tomorrow, when we're both rested.\"\n\nMindset: a pause is not giving up. It gives the ask a better day.",
+      inputs: [
+        { q: "You ask your partner, \"Could we plan the budget together this week?\" He says, \"Not now. I've had the worst day.\"", a: "\"Okay, let's leave it tonight. Could we sit down on Sunday morning?\"", bundle: 'free' },
+        { q: "You ask your sister, \"Could you help with Mum's appointments this month?\" She says, flatly, \"No. I can't take that on.\"", a: "\"Okay. Can we talk again next week, when we've both had time to think?\"", bundle: 'free' },
+        { q: "You ask a colleague, \"Could we share the Friday cover?\" He snaps, \"I'm not discussing this right now.\"", a: "\"Fine. Can we pick it up at Thursday's check-in?\"", bundle: 'free' },
+        { q: "You ask your teenage daughter, \"Could you put your clothes in the basket?\" She shouts, \"Why are you always on at me?\" and shuts her door.", a: "\"Let's leave it for now. Can we talk after dinner?\"", bundle: 'free' },
+        { q: "You ask your friend, \"Could we talk about splitting the holiday costs?\" She goes quiet, then says, \"I really don't want to do this now.\"", a: "\"That's okay. Can we talk about it at the weekend?\"", bundle: 'free' },
+        { q: "You ask your flatmate, \"Could we get a cleaner and split the cost?\" He says, \"No. I can't afford it.\"", a: "\"Okay, fair. Let's both think of other ideas and talk on Friday.\"", bundle: 'pro' },
+        { q: "You ask your neighbour, \"Could we agree on a time for the garden parties to end?\" She says, \"I'm not having this conversation over the fence.\"", a: "\"Fair enough. Could I knock on Saturday, and we'll talk over coffee?\"", bundle: 'pro' },
+        { q: "You ask your partner, \"Could you help me with the kids' bedtime on weeknights?\" She goes quiet and looks hurt.", a: "\"I'm not angry with you. Let's talk tomorrow, when we're both rested.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -24734,6 +24930,122 @@ const collectionsModeData = {
         { q: "You asked your friend three times to come to your party. She said no, and you've been sulky with her for a day.", a: "\"I've been sulky since you said no. That's on me. Your no is fine.\" [Check Yourself]", bundle: 'pro', guideBack: "An honest self-check, said aloud" },
         { q: "Your mother-in-law is warm when you agree with her and cool when you don't. Today she's sweet, and asking again.", a: "\"Thank you. It's still no.\" [Same Line, Any Tactic]", bundle: 'pro', guideBack: "The same short line, again" },
         { q: "Your husband has controlled the money for years and gets angry if you ask about it. You realise you're afraid to raise it. You're with your sister.", a: "\"Can I tell you how money works in our house? I need someone outside it.\" [Check Your Reality]", bundle: 'pro', guideBack: "A question to someone outside it" },
+      ]
+    },
+  ],
+  fromupsettoask1: [
+    {
+      name: "Open It Softly",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Find the Need First**, **Own the Feeling** and **Turn the Complaint Into a Wish** — three ways to open while you are still upset, and the choice is which first sentence fits.\n\n• **Find the Need First** — you can name what you want, and the sharp line is close\n• **Own the Feeling** — the feeling is what most needs saying, and you can say it as yours\n• **Turn the Complaint Into a Wish** — a complaint is ready, and it can be flipped\n\nThe question that decides it: what is loudest in me right now — a want, a feeling, or a complaint?\n\nThe usual wrong choice is Own the Feeling while you are still furious. \"I felt furious\" can land as a charge. Start with the want, and the feeling can come once you are calmer.\n\nMindset: the first sentence decides most of the conversation.",
+      inputs: [
+        { q: "Your colleague has finished the milk again, and the word in your head is \"Typical.\"", a: "\"What I really want is milk in my coffee in the morning. Can we sort the milk between us?\" [Find the Need First]", bundle: 'pro', guideBack: "Your want, as an opening line" },
+        { q: "Your partner made weekend plans with his friends without asking, and \"You never think about me\" is ready.", a: "\"I'd love it if we planned our weekends together.\" [Turn the Complaint Into a Wish]", bundle: 'pro', guideBack: "A wish, said out loud" },
+        { q: "Your mum hung up on you mid-sentence last night. You call her back, with \"You were so rude\" ready.", a: "\"I felt really hurt when the call ended like that, Mum.\" [Own the Feeling]", bundle: 'pro', guideBack: "A plain statement of how you felt" },
+        { q: "A teammate sends the draft back to you with no comments, two hours before the deadline.", a: "\"I felt panicked when the draft came back so late.\" [Own the Feeling]", bundle: 'pro', guideBack: "A plain statement of how you felt" },
+        { q: "Your brother brings your car back with the tank on empty, again.", a: "\"What I really want is to get in the car and just go. Can we talk about the petrol?\" [Find the Need First]", bundle: 'pro', guideBack: "Your want, as an opening line" },
+        { q: "Your daughter's wet towels are on her floor again, and \"You live like an animal\" is on your lips.", a: "\"I'd love to walk past your room and see the towels on the rail.\" [Turn the Complaint Into a Wish]", bundle: 'pro', guideBack: "A wish, said out loud" },
+        { q: "Your friend spent the whole dinner on her phone. You are walking to the bus together.", a: "\"I felt a bit lonely at dinner tonight, with the phone out.\" [Own the Feeling]", bundle: 'pro', guideBack: "A plain statement of how you felt" },
+        { q: "Your manager has sent you emails at ten at night all week, and you want to say \"Do you never stop?\"", a: "\"I'd love to have my evenings free from work.\" [Turn the Complaint Into a Wish]", bundle: 'pro', guideBack: "A wish, said out loud" },
+      ]
+    },
+    {
+      name: "Shape the Ask",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Need, Not Solution**, **Say the Do, Not the Don't** and **Make It Doable** — three ways to fix the request you are about to make, and the choice is what is wrong with it.\n\n• **Need, Not Solution** — it is a fixed solution, and you have not said what you need\n• **Say the Do, Not the Don't** — it is a \"don't\", and it only says what to stop\n• **Make It Doable** — it is too big or too vague to actually happen\n\nThe question that decides it: is my ask a fixed fix, a \"don't\", or a fog?\n\nThe usual wrong choice is Make It Doable on a fixed solution. You only make your own fix smaller, and they still get a yes-or-no. Open the need first.\n\nMindset: listen to the ask before you make it.",
+      inputs: [
+        { q: "You are about to tell your partner, \"You have to cut down on the gym.\"", a: "\"I need some time with you in the evenings. What could work for you?\" [Need, Not Solution]", bundle: 'pro', guideBack: "A need and an open question" },
+        { q: "You were going to tell your son, \"Don't leave your bike in the hall.\"", a: "\"Could you put your bike in the shed when you get home?\" [Say the Do, Not the Don't]", bundle: 'pro', guideBack: "A positive request" },
+        { q: "You were going to ask a colleague to \"communicate better\".", a: "\"Could you copy me in on the client emails this week?\" [Make It Doable]", bundle: 'pro', guideBack: "A small, specific request" },
+        { q: "You were going to tell your flatmate, \"We're getting a cleaner, and you're paying half.\"", a: "\"I need the flat to feel clean. How should we do that?\" [Need, Not Solution]", bundle: 'pro', guideBack: "A need and an open question" },
+        { q: "\"Stop being so negative in meetings\" is ready for your colleague Ben.", a: "\"Could you start with what works, and then what doesn't?\" [Say the Do, Not the Don't]", bundle: 'pro', guideBack: "A positive request" },
+        { q: "You were going to ask your partner to \"be more present\".", a: "\"Could we have dinner without phones tonight?\" [Make It Doable]", bundle: 'pro', guideBack: "A small, specific request" },
+        { q: "You were going to tell your mother she has to ring before every visit.", a: "\"I need to know when you're coming, Mum, so I can be ready. What would be easy for you?\" [Need, Not Solution]", bundle: 'pro', guideBack: "A need and an open question" },
+        { q: "\"Don't slam the door!\" is what you nearly shout up the stairs at your teenager.", a: "\"Could you close the door gently, even when you're angry?\" [Say the Do, Not the Don't]", bundle: 'pro', guideBack: "A positive request" },
+      ]
+    },
+    {
+      name: "All Six Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, with no warning about where in the process you are.\n\nThe six run in the order of the process. **Find the Need First** finds the want. **Own the Feeling** says how it felt. **Turn the Complaint Into a Wish** says where you want to go. **Need, Not Solution** opens the problem to both of you. **Say the Do, Not the Don't** asks for an action. **Make It Doable** makes it small enough to happen.\n\nIf you are unsure, ask: what is about to come out of my mouth — a sharp line, a charge, a complaint, a fix, a \"don't\", or a fog? Then use the strategy that turns that one around.\n\nThe usual wrong choice is jumping straight to a request while you are still hot. It comes out as an order.\n\nMindset: name what is about to come out, and turn that around.",
+      inputs: [
+        { q: "Your housemate has used up your shampoo again, and you feel \"Unbelievable\" coming.", a: "\"What I really want is my own things there when I need them. Can we talk about it?\" [Find the Need First]", bundle: 'pro', guideBack: "Your want, as an opening line" },
+        { q: "Your partner forgot to book the table for your birthday dinner, and \"You ruined it\" is close.", a: "\"I felt really disappointed when we lost the table.\" [Own the Feeling]", bundle: 'pro', guideBack: "A plain statement of how you felt" },
+        { q: "A colleague leaves the printer jammed again, and you want to say \"Nobody here ever fixes anything.\"", a: "\"I'd love it if the printer worked when I needed it.\" [Turn the Complaint Into a Wish]", bundle: 'pro', guideBack: "A wish, said out loud" },
+        { q: "You are about to tell your father, \"You have to sell the car. You're not safe driving.\"", a: "\"I need to know you're safe on the road, Dad. What do you think would help?\" [Need, Not Solution]", bundle: 'pro', guideBack: "A need and an open question" },
+        { q: "\"Don't shout at me\" is what you were going to say to your sister.", a: "\"Could you say it more quietly, so I can hear what you mean?\" [Say the Do, Not the Don't]", bundle: 'pro', guideBack: "A positive request" },
+        { q: "You were going to ask your friend to \"be more supportive\" before your job interview.", a: "\"Could you call me on Thursday night, before the interview?\" [Make It Doable]", bundle: 'pro', guideBack: "A small, specific request" },
+        { q: "The children next door kick their ball against your car every afternoon. You are about to tell their dad, \"Your kids are wild.\"", a: "\"I get really tense every time I hear the ball hit the car.\" [Own the Feeling]", bundle: 'pro', guideBack: "A plain statement of how you felt" },
+        { q: "Your teenager uses all the hot water every morning. You were going to say, \"From now on, you shower at night.\"", a: "\"I need a hot shower before work too. How could we share the mornings?\" [Need, Not Solution]", bundle: 'pro', guideBack: "A need and an open question" },
+      ]
+    },
+  ],
+  fromupsettoask2: [
+    {
+      name: "Meet the Pushback",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Hear Them, Keep Yours**, **Ask What They Need** and **Try Again Later** — three follow-up strategies for the first push back: a counter-accusation, a shrug, or a no.\n\n• **Hear Them, Keep Yours** — they hit back or play it down, and you can grant their point and keep your need\n• **Ask What They Need** — they say no, and you do not yet know why\n• **Try Again Later** — it is too heated or too tired to get anywhere today\n\nThe question that decides it: can they hear me right now? If yes, either grant and keep, or ask. If not, pause and name a time.\n\nThe usual wrong choice is defending yourself against the counter-point — \"I do take the bins out!\" — and your request is lost.\n\nMindset: their pushback is not the end of my need. It is the next part of the talk.",
+      inputs: [
+        { q: "You ask your partner, \"Could you help me fold the washing on Sundays?\" She says, \"You never help with the garden.\"", a: "\"That's fair, I haven't. And I'd still love help with the washing.\" [Hear Them, Keep Yours]", bundle: 'pro', guideBack: "Their point granted, your need restated" },
+        { q: "You ask a colleague, \"Could you check the shared calendar before booking the meeting room?\" He says, \"No. That takes ages.\"", a: "\"What would make it quicker for you?\" [Ask What They Need]", bundle: 'pro', guideBack: "A question about their need" },
+        { q: "You ask your teenage son, \"Could you load the dishwasher after dinner?\" He shouts, \"I've got exams! Leave me alone!\"", a: "\"Okay. Let's talk about it on Saturday, after your exam.\" [Try Again Later]", bundle: 'pro', guideBack: "A pause with a time to come back" },
+        { q: "You ask your friend, \"Could you reply when I message about plans?\" He laughs: \"It's not a big deal. I always turn up.\"", a: "\"You do, and I'm glad. I'd still like a reply, so I know.\" [Hear Them, Keep Yours]", bundle: 'pro', guideBack: "Their point granted, your need restated" },
+        { q: "You ask your mother-in-law, \"Could you let us know before you stay over?\" She says, \"No. Family doesn't need to book.\"", a: "\"What matters to you about just coming?\" [Ask What They Need]", bundle: 'pro', guideBack: "A question about their need" },
+        { q: "You ask your partner, \"Could we talk about how much we're spending?\" He says, sharply, \"Not tonight. Seriously.\"", a: "\"Alright. Could we sit down on Thursday after the kids are in bed?\" [Try Again Later]", bundle: 'pro', guideBack: "A pause with a time to come back" },
+        { q: "You ask your neighbour, \"Could you bring your bins in after collection day?\" She says, \"Your leaves are all over my path.\"", a: "\"That's fair, I'll sweep them up. I'd still like the bins in by evening.\" [Hear Them, Keep Yours]", bundle: 'pro', guideBack: "Their point granted, your need restated" },
+        { q: "You ask your flatmate, \"Could you ask before having friends stay over?\" She says, \"No. It's my home too.\"", a: "\"It is. What do you need around having people over?\" [Ask What They Need]", bundle: 'pro', guideBack: "A question about their need" },
+      ]
+    },
+    {
+      name: "Make Room for Both",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Ask What They Need**, **Both Needs on the Table** and **Look for a Third Way** — three follow-up strategies for when your need and theirs seem to pull in different directions.\n\n• **Ask What They Need** — you know their no, but not the need behind it\n• **Both Needs on the Table** — both needs are out, but nobody has said them side by side\n• **Look for a Third Way** — both needs are clear, and it is time for an idea that fits both\n\nThe question that decides it: how much do I know about their need? Nothing yet, ask. Heard it, sum up both. Both on the table, suggest a plan.\n\nThe usual wrong choice is jumping to a third way before you know their need. Then it is a solution to the wrong problem.\n\nMindset: their need is not in the way of mine. It is half of the answer.",
+      inputs: [
+        { q: "You ask your partner, \"Could we go to bed at the same time on weeknights?\" He says, \"No, that's too early for me.\"", a: "\"What do you need from your late evenings?\" [Ask What They Need]", bundle: 'pro', guideBack: "A question about their need" },
+        { q: "You ask your flatmate, \"Could we keep the heating at twenty?\" She says, \"I can't pay for that. Bills are killing me.\"", a: "\"So you need the bills down, and I need to be warm enough to work. Both are real.\" [Both Needs on the Table]", bundle: 'pro', guideBack: "A summary of two needs" },
+        { q: "You ask your manager, \"Could I leave at four on Wednesdays for my son's swimming?\" She says, \"I need cover on the phones until five.\"", a: "\"What if I start at eight on Wednesdays and cover the early calls?\" [Look for a Third Way]", bundle: 'pro', guideBack: "A proposal that holds both needs" },
+        { q: "You ask your brother, \"Could you share the driving to Gran's?\" He says, \"No. I hate driving on the motorway.\"", a: "\"Okay. Is it the motorway, or the whole drive?\" [Ask What They Need]", bundle: 'pro', guideBack: "A question about their need" },
+        { q: "You ask your friend, \"Could we go for a walk instead of the pub this time?\" He says, \"I need a drink after this week. I want to switch off.\"", a: "\"So you need to switch off, and I need to get some air. Have I got that right?\" [Both Needs on the Table]", bundle: 'pro', guideBack: "A summary of two needs" },
+        { q: "You ask your teenage daughter, \"Could you be off your phone by ten?\" She says, \"That's when my friends are online. I'll miss everything.\"", a: "\"How about phone off at half ten, and it charges in the kitchen?\" [Look for a Third Way]", bundle: 'pro', guideBack: "A proposal that holds both needs" },
+        { q: "You ask a colleague, \"Could we turn the radio off in the office?\" She says, \"I can't work in silence. It feels dead.\"", a: "\"So you need some sound, and I need to hear myself think. Same room, two needs.\" [Both Needs on the Table]", bundle: 'pro', guideBack: "A summary of two needs" },
+        { q: "You ask your partner, \"Could we spend one weekend a month at home?\" She says, \"My parents need us there. Dad's not well.\"", a: "\"What if we visit three weekends, and keep one for us, and call your dad on that one?\" [Look for a Third Way]", bundle: 'pro', guideBack: "A proposal that holds both needs" },
+      ]
+    },
+    {
+      name: "See It Through",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Thank the Change**, **Look for a Third Way** and **Try Again Later** — three follow-up strategies for the days after the ask, when it works, slips or stings.\n\n• **Thank the Change** — they did it, or part of it\n• **Look for a Third Way** — it slipped, and the plan needs to be easier to keep\n• **Try Again Later** — they are hurt or tired, and today is not the day\n\nThe question that decides it: what has happened since I asked? If they did it, thank them. If it slipped, change the plan. If it stung, pause and set a time.\n\nThe usual wrong choice is speaking up only when it goes wrong. Then every mention of the request is a complaint.\n\nMindset: the ask is not finished when I have said it. It is finished when it works for both of us.",
+      inputs: [
+        { q: "You asked your partner, \"Could you put your shoes on the rack?\" Today you come home and every pair is on it.", a: "\"Thanks for the shoes. The hall feels so much calmer.\" [Thank the Change]", bundle: 'pro', guideBack: "A specific thanks, with the difference it made" },
+        { q: "You asked your flatmate, \"Could you take the recycling out on Tuesdays?\" She did it once, then forgot. She says, \"Sorry, I just never remember which day.\"", a: "\"What if we put a reminder on both our phones for Monday night?\" [Look for a Third Way]", bundle: 'pro', guideBack: "A proposal that holds both needs" },
+        { q: "Yesterday you asked your partner, \"Could you help with the shopping on Saturdays?\" Today he is quiet and short with you.", a: "\"I think yesterday stung. Can we talk about it tonight, after dinner?\" [Try Again Later]", bundle: 'pro', guideBack: "A pause with a time to come back" },
+        { q: "You asked a colleague, \"Could you warn me before you change the slides?\" This morning she messages: \"Changing slide four, okay?\"", a: "\"Thanks for checking first. It means I'm not caught out in the meeting.\" [Thank the Change]", bundle: 'pro', guideBack: "A specific thanks, with the difference it made" },
+        { q: "You asked your son, \"Could you feed the cat before school?\" Two days in a row the bowl is empty. He says, \"I'm always late in the mornings!\"", a: "\"How about you feed her in the evening, and I do mornings?\" [Look for a Third Way]", bundle: 'pro', guideBack: "A proposal that holds both needs" },
+        { q: "You asked your mum, \"Could you call before you come round?\" Since then she has not phoned at all, and your sister says she is upset.", a: "\"Mum, I don't want you to feel shut out. Can I come round on Sunday and we'll talk?\" [Try Again Later]", bundle: 'pro', guideBack: "A pause with a time to come back" },
+        { q: "You asked your neighbour, \"Could you finish the drilling by six?\" This evening it stops at quarter to six.", a: "\"Thanks for stopping early. The kids got to sleep easily tonight.\" [Thank the Change]", bundle: 'pro', guideBack: "A specific thanks, with the difference it made" },
+        { q: "You asked your friend, \"Could we split the driving to football?\" He drove once, then said, \"I can't do Tuesdays after all. Work changed.\"", a: "\"What if you take Thursdays instead, and I keep Tuesdays?\" [Look for a Third Way]", bundle: 'pro', guideBack: "A proposal that holds both needs" },
+      ]
+    },
+    {
+      name: "All Six Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every follow-up strategy in the pack, mixed, in the order pushback really comes — with no warning about what kind of reaction you will meet.\n\nThe six fall into three groups. To meet the first push back: **Hear Them, Keep Yours** and **Try Again Later**. To make room for both needs: **Ask What They Need**, **Both Needs on the Table** and **Look for a Third Way**. To keep a change going: **Thank the Change**.\n\nIf you are unsure, ask what they just did: hit back, played it down, said no, named a need of their own, forgot, sulked, or did it?\n\nThe usual wrong choice is repeating your first ask, louder.\n\nMindset: their reaction tells me which follow-up fits. Listen to it first.",
+      inputs: [
+        { q: "You ask your partner, \"Could you text me when you leave work?\" He says, \"You don't text me either!\"", a: "\"Fair, I'll start. I'd still really like a text from you.\" [Hear Them, Keep Yours]", bundle: 'pro', guideBack: "Their point granted, your need restated" },
+        { q: "You ask your colleague, \"Could we swap desks so I'm away from the door?\" She says, \"No. I like being by the window.\"", a: "\"What do you like about the window spot?\" [Ask What They Need]", bundle: 'pro', guideBack: "A question about their need" },
+        { q: "You ask your flatmate, \"Could you do the washing-up the same evening?\" He says, \"I'm too tired after my shifts. I need to crash.\"", a: "\"So you need to crash after shifts, and I need a clear kitchen to cook in the morning.\" [Both Needs on the Table]", bundle: 'pro', guideBack: "A summary of two needs" },
+        { q: "You ask your teenage daughter, \"Could you help with dinner twice a week?\" She says, \"I've got netball on Tuesdays and Thursdays.\"", a: "\"What if you take Mondays and Wednesdays?\" [Look for a Third Way]", bundle: 'pro', guideBack: "A proposal that holds both needs" },
+        { q: "You asked your partner, \"Could we plan the weekend on Thursday nights?\" Tonight, on Thursday, she opens the calendar and says, \"Right. Weekend?\"", a: "\"Thanks for remembering. I love knowing what's coming.\" [Thank the Change]", bundle: 'pro', guideBack: "A specific thanks, with the difference it made" },
+        { q: "You ask your brother, \"Could you pay back the loan by the summer?\" He says, angrily, \"I can't believe you're bringing this up today.\"", a: "\"Okay. Not today. Can we talk on the phone next week?\" [Try Again Later]", bundle: 'pro', guideBack: "A pause with a time to come back" },
+        { q: "You ask your friend, \"Could we meet before nine so I'm home for the babysitter?\" She says, \"It's not a big deal if you're a bit late.\"", a: "\"It might not be to you. It matters to me, so I'd love to start earlier.\" [Hear Them, Keep Yours]", bundle: 'pro', guideBack: "Their point granted, your need restated" },
+        { q: "You ask your neighbour, \"Could we share the cost of a new fence?\" He says, \"No. The old one's fine.\"", a: "\"Okay. What would make a new fence worth it for you?\" [Ask What They Need]", bundle: 'pro', guideBack: "A question about their need" },
       ]
     },
   ],

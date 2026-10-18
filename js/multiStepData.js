@@ -20456,4 +20456,218 @@ const multiStepCollections = {
       ]
     },
   ],
+  fromupsettoask1: [
+    {
+      name: "The Full Ask",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "One talk about one thing that has been building up. You say how it felt, what you wish for, and then what you are asking.\n\n1. **Own the Feeling** — they hear why it matters, with no charge in it.\n2. **Turn the Complaint Into a Wish** — they hear where you want to go.\n3. **Say the Do, Not the Don't** — they get one action to say yes to.\n\nThe feeling explains the wish, and the wish makes the request make sense. Ask first, and the request sounds like an order out of nowhere.\n\nThe usual order is the complaint first, then a list of don'ts, and the feeling only at the end, as shouting.\n\nMindset: why, then where, then what.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your partner Alex has been scrolling on his phone at dinner every night this week.",
+          steps: [
+            { front: "Own the Feeling — at dinner, Alex is scrolling again. You put your fork down.", back: "\"I've been feeling a bit alone at dinner lately.\"", guideFront: "Say how it felt for you when...", guideBack: "A plain statement of how you felt" },
+            { front: "Turn the Complaint Into a Wish — Alex looks up: \"What, because of my phone?\"", back: "\"I'd love dinner to be our time to talk.\"", guideFront: "Say what you'd love when...", guideBack: "A wish, said out loud" },
+            { front: "Say the Do, Not the Don't — he says, \"Fair enough. So what, no phones ever?\"", back: "\"Could we put the phones on the shelf while we eat?\"", guideFront: "Ask for the action you want when...", guideBack: "A positive request" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your colleague Jo keeps booking meetings over your lunch break.",
+          steps: [
+            { front: "Own the Feeling — a fourth half-twelve meeting this week lands in your calendar. You go over to Jo's desk.", back: "\"Jo, I've been feeling really drained this week, with no break in the middle of the day.\"", guideFront: "Say how it felt for you when...", guideBack: "A plain statement of how you felt" },
+            { front: "Turn the Complaint Into a Wish — Jo says, \"Oh no. Is it the meetings?\"", back: "\"It is. I'd love to have my lunch hour back.\"", guideFront: "Say what you'd love when...", guideBack: "A wish, said out loud" },
+            { front: "Say the Do, Not the Don't — Jo says, \"Half twelve is just the only time everyone's free.\"", back: "\"Could you try half eleven or half one for the next few?\"", guideFront: "Ask for the action you want when...", guideBack: "A positive request" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your sister keeps arriving at family parties without the food she promised to bring.",
+          steps: [
+            { front: "Own the Feeling — she turns up at Mum's party with no salad, again. Later, in the kitchen:", back: "\"I felt really stressed today when the salad didn't come.\"", guideFront: "Say how it felt for you when...", guideBack: "A plain statement of how you felt" },
+            { front: "Turn the Complaint Into a Wish — she says, \"It's only a salad.\"", back: "\"I know. I'd love to feel I can count on you when we plan these.\"", guideFront: "Say what you'd love when...", guideBack: "A wish, said out loud" },
+            { front: "Say the Do, Not the Don't — she says, \"Okay. So what do you want me to do?\"", back: "\"Could you text me the day before if you can't bring it?\"", guideFront: "Ask for the action you want when...", guideBack: "A positive request" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Turnaround",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For the moment the irritation hits, when you want to turn it around before it becomes a row.\n\n1. **Find the Need First** — catch the sharp line, and open with what you want.\n2. **Own the Feeling** — when they ask what is wrong, say how it felt, as yours.\n3. **Make It Doable** — end with one small thing that can happen soon.\n\nOpening with the want stops the fight before it starts, and then the feeling has room to land. Say the feeling first, while you are still hot, and it comes out as blame. The small ask at the end gives the talk somewhere to finish.\n\nThe usual order is the sharp line, the row, and no ask at all.\n\nMindset: turn it before it turns into a fight.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your partner Chris keeps leaving the front door unlocked when he goes out.",
+          steps: [
+            { front: "Find the Need First — you come home to the door unlocked again. When Chris gets back an hour later, \"Are you serious?\" is ready.", back: "\"Chris, what I really want is to feel safe at home. Can we talk about the door?\"", guideFront: "Open with what you want when...", guideBack: "Your want, as an opening line" },
+            { front: "Own the Feeling — Chris says, \"Oh no. Did I leave it open again?\"", back: "\"You did. I felt scared when I walked in and it wasn't locked.\"", guideFront: "Say how it felt for you when...", guideBack: "A plain statement of how you felt" },
+            { front: "Make It Doable — Chris says, \"Sorry. I'll try to be better about it.\"", back: "\"Could we put a note on the inside of the door this week, just to start?\"", guideFront: "Ask for one small step when...", guideBack: "A small, specific request" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your manager Karen hands you another urgent job at a quarter to five on a Friday.",
+          steps: [
+            { front: "Find the Need First — it is 4:45 on Friday, and \"Every single Friday!\" is on your lips.", back: "\"Karen, what I really want is to finish the week properly. Can we talk about Friday jobs?\"", guideFront: "Open with what you want when...", guideBack: "Your want, as an opening line" },
+            { front: "Own the Feeling — Karen says, \"Is something wrong?\"", back: "\"I've been feeling really stretched on Fridays, when big jobs come in at the end of the day.\"", guideFront: "Say how it felt for you when...", guideBack: "A plain statement of how you felt" },
+            { front: "Make It Doable — Karen says, \"I hadn't noticed. What would help?\"", back: "\"Could you send me Friday's jobs by Thursday lunchtime, starting next week?\"", guideFront: "Ask for one small step when...", guideBack: "A small, specific request" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your daughter Maya keeps borrowing your phone charger and not giving it back.",
+          steps: [
+            { front: "Find the Need First — your phone is on two per cent, the charger is gone again, and Maya is in her room.", back: "\"Maya, what I really want is to have my charger by my bed. Can we talk about it?\"", guideFront: "Open with what you want when...", guideBack: "Your want, as an opening line" },
+            { front: "Own the Feeling — Maya says, \"Why are you being weird about a charger?\"", back: "\"I felt really stuck this morning, when my phone was dead and I needed it.\"", guideFront: "Say how it felt for you when...", guideBack: "A plain statement of how you felt" },
+            { front: "Make It Doable — Maya says, \"Fine. I'll give it back.\"", back: "\"Could you put it back on my bedside table every morning before school?\"", guideFront: "Ask for one small step when...", guideBack: "A small, specific request" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "From Need to Next Step",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For when you know what is wrong and want to end with something that will actually change.\n\n1. **Need, Not Solution** — say what matters, and ask for their ideas.\n2. **Say the Do, Not the Don't** — when the talk drifts to what they must stop, turn it into a do.\n3. **Make It Doable** — when it ends in a vague promise, make it small.\n\nThe need opens the problem to both of you. Their answer often slides into a \"don't\" or a \"I'll try\", and the next two steps fix each one. Start with a small request, and you are only asking for your own fix.\n\nThe usual order is to demand a fix, get a no, and argue about the fix instead of the need.\n\nMindset: start wide with the need, and end narrow with the step.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your flatmate Tom keeps having friends over late on weeknights.",
+          steps: [
+            { front: "Need, Not Solution — over breakfast, you bring it up.", back: "\"Tom, I need to sleep by eleven on work nights. How could we make that work with your friends coming round?\"", guideFront: "Say what matters, then ask when...", guideBack: "A need and an open question" },
+            { front: "Say the Do, Not the Don't — Tom says, \"So what, I'm not allowed to have people over?\"", back: "\"Of course you are. Could you take it to your room after eleven?\"", guideFront: "Ask for the action you want when...", guideBack: "A positive request" },
+            { front: "Make It Doable — Tom says, \"Yeah, I'll try to keep it down.\"", back: "\"Could we try it on Wednesday, when Sam and Kofi come?\"", guideFront: "Ask for one small step when...", guideBack: "A small, specific request" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your partner Nina handles all the money, and you feel left out of it.",
+          steps: [
+            { front: "Need, Not Solution — on a quiet evening, you bring it up.", back: "\"Nina, I need to know where we are with money. What would be an easy way to do that for you?\"", guideFront: "Say what matters, then ask when...", guideBack: "A need and an open question" },
+            { front: "Say the Do, Not the Don't — Nina says, \"I don't want you checking every coffee I buy.\"", back: "\"I don't want that either. Could you show me the big numbers once a month?\"", guideFront: "Ask for the action you want when...", guideBack: "A positive request" },
+            { front: "Make It Doable — Nina says, \"Sure, at some point.\"", back: "\"Could we do the first one on Sunday, after breakfast?\"", guideFront: "Ask for one small step when...", guideBack: "A small, specific request" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your dad keeps ringing you during your working day.",
+          steps: [
+            { front: "Need, Not Solution — on Saturday, when he rings, you bring it up.", back: "\"Dad, I need to focus during the work day, and I still want to hear from you. What would work for you?\"", guideFront: "Say what matters, then ask when...", guideBack: "A need and an open question" },
+            { front: "Say the Do, Not the Don't — he says, \"So I'm not supposed to call you at all now?\"", back: "\"You are. Could you ring me in the evenings, after six?\"", guideFront: "Ask for the action you want when...", guideBack: "A positive request" },
+            { front: "Make It Doable — he says, \"I'll try, if I remember.\"", back: "\"How about Tuesday at seven? I'll have a cup of tea ready.\"", guideFront: "Ask for one small step when...", guideBack: "A small, specific request" },
+          ]
+        },
+      ]
+    },
+  ],
+  fromupsettoask2: [
+    {
+      name: "The Shared Plan",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For a no that hides a need of their own — from \"no\" to a plan that works for both of you.\n\n1. **Ask What They Need** — they say no; ask what matters to them.\n2. **Both Needs on the Table** — they tell you; say both needs side by side.\n3. **Look for a Third Way** — they agree that is the problem; suggest a plan that fits both.\n\nWhy this order: you cannot sum up a need you have not heard, and a plan offered before both needs are clear only fits yours. Each step gives the next one what it needs.\n\nThe usual order is to jump straight to your own solution, or to give up after the first no.\n\nMindset: a no is the start of two needs, not the end of mine.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You ask your partner, \"Could we cook together when you get home?\"",
+          steps: [
+            { front: "Ask What They Need — he says, \"No. I can't face it straight after work.\"", back: "\"Okay. What do you need when you first get in?\"", guideFront: "Get curious about their side when...", guideBack: "A question about their need" },
+            { front: "Both Needs on the Table — he says, \"Just half an hour of quiet. Then I'm human again.\"", back: "\"So you need half an hour of quiet, and I need help with dinner.\"", guideFront: "Sum up the two sides when...", guideBack: "A summary of two needs" },
+            { front: "Look for a Third Way — he says, \"Yes, that's it exactly.\"", back: "\"What if you have your half hour, and we cook from half six?\"", guideFront: "Offer a plan that fits both when...", guideBack: "A proposal that holds both needs" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You ask your flatmate, \"Could we keep the kitchen clear by bedtime?\"",
+          steps: [
+            { front: "Ask What They Need — she says, \"No. I can't promise that.\"", back: "\"What makes bedtime hard for you?\"", guideFront: "Get curious about their side when...", guideBack: "A question about their need" },
+            { front: "Both Needs on the Table — she says, \"I work late. I just want to eat and sleep.\"", back: "\"So you need to eat and sleep after late shifts, and I need a clear kitchen for breakfast.\"", guideFront: "Sum up the two sides when...", guideBack: "A summary of two needs" },
+            { front: "Look for a Third Way — she says, \"Right. Both true.\"", back: "\"How about you leave it in the sink to soak, and wash it up before lunch?\"", guideFront: "Offer a plan that fits both when...", guideBack: "A proposal that holds both needs" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You ask a colleague, \"Could you send me the meeting notes the same day?\"",
+          steps: [
+            { front: "Ask What They Need — he says, \"No. I haven't got time for that.\"", back: "\"What would make it quicker for you?\"", guideFront: "Get curious about their side when...", guideBack: "A question about their need" },
+            { front: "Both Needs on the Table — he says, \"Writing them up properly takes an hour.\"", back: "\"So you need to save time, and I need the main points before the next morning.\"", guideFront: "Sum up the two sides when...", guideBack: "A summary of two needs" },
+            { front: "Look for a Third Way — he says, \"Yeah. That's the problem.\"", back: "\"What if you just send three bullet points, and the full notes later in the week?\"", guideFront: "Offer a plan that fits both when...", guideBack: "A proposal that holds both needs" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Hear, Ask, Pause",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For pushback that gets hotter with each round: first a counter-point, then a no, then real irritation.\n\n1. **Hear Them, Keep Yours** — they hit back; grant the fair part and keep your need.\n2. **Ask What They Need** — they say no anyway; ask what matters to them.\n3. **Try Again Later** — they have had enough for today; pause and name a time.\n\nWhy this order: granting their point first lowers their guard, so the question after it sounds curious rather than pushy. And the pause works at the end because your need has already been said twice, calmly.\n\nThe usual order is arguing back, then pushing harder, then walking off with nothing agreed.\n\nMindset: I can stop for today without giving up on what I need.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You ask your teenage son, \"Could you be home by ten on school nights?\"",
+          steps: [
+            { front: "Hear Them, Keep Yours — he says, \"You let Ella stay out later!\"", back: "\"That's true, she's older. I still need you home by ten on school nights.\"", guideFront: "Grant their point, hold your need when...", guideBack: "Their point granted, your need restated" },
+            { front: "Ask What They Need — he says, \"No. That's just not happening.\"", back: "\"What do you need on those evenings?\"", guideFront: "Get curious about their side when...", guideBack: "A question about their need" },
+            { front: "Try Again Later — he says, \"I don't want to talk about it. You never listen.\"", back: "\"Okay. Let's both think about it and talk on Saturday.\"", guideFront: "Pause it and pick a time when...", guideBack: "A pause with a time to come back" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You ask your partner, \"Could you take the car in for its service this month?\"",
+          steps: [
+            { front: "Hear Them, Keep Yours — she says, \"I did the last three things on the list!\"", back: "\"You did, and that helped. I still need help with the car.\"", guideFront: "Grant their point, hold your need when...", guideBack: "Their point granted, your need restated" },
+            { front: "Ask What They Need — she says, \"No. I can't fit it in.\"", back: "\"What would make it fit for you?\"", guideFront: "Get curious about their side when...", guideBack: "A question about their need" },
+            { front: "Try Again Later — she says, sharply, \"Can we just stop?\"", back: "\"Sure. Let's look at the calendar together on Sunday.\"", guideFront: "Pause it and pick a time when...", guideBack: "A pause with a time to come back" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You ask your neighbour, \"Could you keep the garden lights off after midnight?\"",
+          steps: [
+            { front: "Hear Them, Keep Yours — he says, \"Your dog barks at six every morning.\"", back: "\"That's fair, I'll work on it. I'd still love the lights off at midnight.\"", guideFront: "Grant their point, hold your need when...", guideBack: "Their point granted, your need restated" },
+            { front: "Ask What They Need — he says, \"No. We sit out there late.\"", back: "\"What do you need from the lights?\"", guideFront: "Get curious about their side when...", guideBack: "A question about their need" },
+            { front: "Try Again Later — he says, \"Look, I've got guests coming. Not now.\"", back: "\"Of course. Could I knock on Saturday morning?\"", guideFront: "Pause it and pick a time when...", guideBack: "A pause with a time to come back" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Change That Sticks",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "For a plan that you agree, that slips, and that then works — from a deal to a habit.\n\n1. **Look for a Third Way** — they push back; suggest a plan that fits both.\n2. **Hear Them, Keep Yours** — later it slips and they explain why; grant it and keep your need.\n3. **Thank the Change** — then they do it; thank them for that, specifically.\n\nWhy this order: the plan comes first, because a slip only means something once there is a plan. Holding your need after the slip keeps it alive, and the thanks at the end is what makes it last.\n\nThe usual order is to nag when it slips and say nothing when it works.\n\nMindset: the change is not done when they agree. It is done when it lasts.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You ask your partner, \"Could you take the bins out on Thursday nights?\"",
+          steps: [
+            { front: "Look for a Third Way — he says, \"I always forget. I'm wiped by Thursday.\"", back: "\"What if you do them with me after dinner, when we clear up?\"", guideFront: "Offer a plan that fits both when...", guideBack: "A proposal that holds both needs" },
+            { front: "Hear Them, Keep Yours — a week later he says, \"Sorry, I was on the phone with my mum.\"", back: "\"That's fair, it was a long call. I still need the bins out on Thursdays.\"", guideFront: "Grant their point, hold your need when...", guideBack: "Their point granted, your need restated" },
+            { front: "Thank the Change — the next Thursday, he takes them out before you even ask.", back: "\"Thanks for the bins. It's one less thing on my mind.\"", guideFront: "Name what they did when...", guideBack: "A specific thanks, with the difference it made" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You ask your teenage daughter, \"Could you put your plate in the dishwasher after meals?\"",
+          steps: [
+            { front: "Look for a Third Way — she says, \"The dishwasher's always full!\"", back: "\"What if you empty it in the morning, and then it's always got room?\"", guideFront: "Offer a plan that fits both when...", guideBack: "A proposal that holds both needs" },
+            { front: "Hear Them, Keep Yours — a few days later she says, \"I was late for the bus. I didn't have time.\"", back: "\"I know mornings are a rush. I still need it emptied before school.\"", guideFront: "Grant their point, hold your need when...", guideBack: "Their point granted, your need restated" },
+            { front: "Thank the Change — this morning the dishwasher is empty and her plate is in it.", back: "\"Thanks for doing the dishwasher. Breakfast was so much easier.\"", guideFront: "Name what they did when...", guideBack: "A specific thanks, with the difference it made" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You ask a colleague, \"Could you tell me by Monday if you can't make your Friday shift?\"",
+          steps: [
+            { front: "Look for a Third Way — she says, \"I don't know my plans that early.\"", back: "\"How about Wednesday, and you can swap with Lena if something comes up after that?\"", guideFront: "Offer a plan that fits both when...", guideBack: "A proposal that holds both needs" },
+            { front: "Hear Them, Keep Yours — two weeks later she cancels on Friday morning: \"My childcare fell through.\"", back: "\"That's hard, and it happens. I still need to know by Wednesday when it can.\"", guideFront: "Grant their point, hold your need when...", guideBack: "Their point granted, your need restated" },
+            { front: "Thank the Change — this Wednesday she messages: \"Can't do Friday. Lena's covering.\"", back: "\"Thanks for telling me early, and for sorting Lena. That made it so easy.\"", guideFront: "Name what they did when...", guideBack: "A specific thanks, with the difference it made" },
+          ]
+        },
+      ]
+    },
+  ],
 };

@@ -14342,4 +14342,152 @@ const mindsetCollections = {
       ]
     },
   ],
+  fromupsettoask1: [
+    {
+      name: "Anger",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"If I'm angry, I have a right to say it however it comes out.\" A belief that is partly true, which is what makes it hard to put down.\n\nWhat is true: your anger is real, and you have every right to it. It is telling you something matters.\n\nWhat gets added is \"however it comes out\". The right to the feeling is not a right to any words at all, and the words decide whether you get what the anger was about.\n\nWhat it costs is the need under the anger, lost in the way it was said.\n\nMindset: keep the anger. Choose the words.",
+      inputs: [
+        { q: "If I'm angry, I have a right to say it however it comes out.", a: "\"True, I have a right to be angry — but 'any words will do' is the part I added.\"", bundle: 'pro' },
+        { q: "My anger is justified.", a: "\"True, it may be — but 'so the way I say it doesn't matter' is the part I added.\"", bundle: 'pro' },
+        { q: "Holding it in isn't healthy.", a: "\"True — but 'so it has to come out sharp' is the part I added.\"", bundle: 'pro' },
+        { q: "They should hear how angry I am.", a: "\"True, they can know — but 'so I'll show them by shouting' is the part I added.\"", bundle: 'pro' },
+        { q: "Being careful with words is fake.", a: "\"True, it can be — but 'so honest means harsh' is the part I added.\"", bundle: 'pro' },
+        { q: "I've been patient for months.", a: "\"True — but 'so now I've earned the right to unload' is the part I added.\"", bundle: 'pro' },
+        { q: "They started it.", a: "\"True, maybe — but 'so I don't have to think about what I say' is the part I added.\"", bundle: 'pro' },
+        { q: "I can't help how it comes out when I'm upset.", a: "\"True, it's harder — but 'so I can't take one breath first' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Needs",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Asking for what I need is selfish.\" The belief that a good person puts up with things and asks for nothing.\n\nWhat is true instead: saying what you need is honest, and it gives the other person a fair chance to help.\n\nIt feels reasonable because many of us learned early that wanting things is greedy, and that the kind thing is to make do.\n\nWhat it costs is that the need does not go away. It comes out later, as hints, sighs and sharp remarks, which are much harder on everyone.\n\nMindset: a need said plainly is kinder than a need held back.",
+      inputs: [
+        { q: "Asking for what I need is selfish.", a: "\"Saying what I need is honest, and it lets them choose to help.\"", bundle: 'pro' },
+        { q: "Other people have it worse.", a: "\"That's true of nearly everything, and it doesn't make my need go away.\"", bundle: 'pro' },
+        { q: "I don't want to be a burden.", a: "\"A clear ask is lighter to carry than months of hints.\"", bundle: 'pro' },
+        { q: "Good partners don't make demands.", a: "\"A need with a question attached isn't a demand. It's an invitation.\"", bundle: 'pro' },
+        { q: "I should be able to cope on my own.", a: "\"Coping alone isn't a test I have to pass.\"", bundle: 'pro' },
+        { q: "If I ask, I'll seem needy.", a: "\"Needy is never saying it and always hinting. One clear ask is the opposite.\"", bundle: 'pro' },
+        { q: "They have enough on their plate already.", a: "\"Then a small, clear ask is the kindest kind I can make.\"", bundle: 'pro' },
+        { q: "Wanting things is greedy.", a: "\"Wanting a calm evening or a quiet night isn't greed. It's being a person.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Spelling It Out",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"If they really cared, they would know without me saying.\" A belief that feels like a high standard for love, and a fair one.\n\nWhat is true instead: even people who love you cannot read your mind. Saying what you need is how they get the chance to get it right.\n\nIt feels reasonable because being understood without words feels like proof of closeness, and sometimes it does happen.\n\nWhat it costs is quiet: you wait, they miss it, and every miss feels like proof that they do not care, when they simply did not know.\n\nMindset: telling them is not a lower standard. It is how the standard gets met.",
+      inputs: [
+        { q: "If they really cared, they would know without me saying.", a: "\"And every time they don't guess, I count it against them for something I never said.\"", bundle: 'pro' },
+        { q: "I shouldn't have to spell it out.", a: "\"Not spelling it out means they're guessing, and I'm keeping score.\"", bundle: 'pro' },
+        { q: "After all these years, they should know.", a: "\"After all these years, they're still not inside my head, and I'm the one who loses.\"", bundle: 'pro' },
+        { q: "If I have to ask, it doesn't count.", a: "\"So the things I really want never get to count, because I never ask for them.\"", bundle: 'pro' },
+        { q: "I want them to notice on their own.", a: "\"Waiting to be noticed has cost me a lot of evenings feeling unseen.\"", bundle: 'pro' },
+        { q: "Asking takes the romance out of it.", a: "\"Not asking takes the evening out of it, because nothing happens.\"", bundle: 'pro' },
+        { q: "I'll wait and see if they figure it out.", a: "\"That makes it a test, and they don't even know they're taking it.\"", bundle: 'pro' },
+        { q: "Real friends just know.", a: "\"Real friends can only know what I've told them, and I've told them nothing.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Refusals",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If they say no, I've failed.\" The belief that an ask only counts if it gets a yes.\n\nWhat is true instead: a clear ask that gets a no has still worked. It put your need on the table, and now you both know where you are.\n\nIt feels reasonable because a no stings, and it is easy to hear it as a no to you, not to the request.\n\nWhat it costs is that you stop asking, or you ask so softly that a no is impossible and a yes never comes.\n\nMindset: a no is the start of the next conversation, not the end of this one.",
+      inputs: [
+        { q: "If they say no, I've failed.", a: "\"If they say no, my need is still on the table, and that's where it needed to be.\"", bundle: 'pro' },
+        { q: "There's no point asking if they might refuse.", a: "\"Any real ask might get a no. That's what makes it an ask and not an order.\"", bundle: 'pro' },
+        { q: "A no means they don't care about me.", a: "\"A no is about the request, not about me.\"", bundle: 'pro' },
+        { q: "I'd rather not ask than hear no.", a: "\"Not asking is a no I've given myself.\"", bundle: 'pro' },
+        { q: "If they refuse, I'll look stupid.", a: "\"Asking clearly and hearing no is how grown-ups talk.\"", bundle: 'pro' },
+        { q: "I need to find the perfect way to ask, so they can't say no.", a: "\"There isn't one, and I don't need it. A clear ask is enough.\"", bundle: 'pro' },
+        { q: "Once they've said no, that's the end of it.", a: "\"Once they've said no, we can look for another way, together.\"", bundle: 'pro' },
+        { q: "Last time I asked, it went badly.", a: "\"Last time I asked as a complaint. This time I can ask as a request.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  fromupsettoask2: [
+    {
+      name: "Refusals",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If they say no, I've failed.\" The belief that a request only counts if the answer is yes.\n\nWhat is true instead: a no is the start of the conversation, not a verdict on it. It tells you that a need of theirs is in the way.\n\nIt feels reasonable because you worked hard to ask kindly, and a no feels like proof that it did not work.\n\nWhat it costs is either giving up after one try or pushing harder — and both skip the part where you find out what they need.\n\nMindset: a no is information. It shows me where to look next.",
+      inputs: [
+        { q: "If they say no, I've failed.", a: "\"A no means I've found their need. That's the next step, not the end.\"", bundle: 'pro' },
+        { q: "I asked nicely, so they should say yes.", a: "\"Asking nicely makes a yes easier, but it doesn't make a no wrong.\"", bundle: 'pro' },
+        { q: "A no means they don't care about me.", a: "\"A no is about their need, not about how much I matter.\"", bundle: 'pro' },
+        { q: "If I ask again later, I'm being pushy.", a: "\"Coming back at a better time is patience, not pressure.\"", bundle: 'pro' },
+        { q: "They said no, so the conversation is over.", a: "\"Their no opened the real conversation: what do they need?\"", bundle: 'pro' },
+        { q: "I must have asked it wrong.", a: "\"Maybe, maybe not. Either way, I can ask what's in the way.\"", bundle: 'pro' },
+        { q: "Next time I just won't bother asking.", a: "\"Not asking guarantees a no. Asking at least gives us a chance.\"", bundle: 'pro' },
+        { q: "If they refuse, I have to accept it for ever.", a: "\"I can accept it for today and still find another way with them.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Selfishness",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"They pushed back, so keeping my need is selfish.\" The belief that once someone objects, the kind thing is to drop what you asked for.\n\nWhat is true instead: holding your need while you listen to theirs is fair to both of you. Dropping it is not kindness, it is just quiet.\n\nIt feels reasonable because their objection makes your need look like a burden, and giving way feels generous.\n\nWhat it costs is the need itself. It comes back later as resentment, and by then it is much harder to ask kindly.\n\nMindset: my need and theirs both get a place. That is not selfish.",
+      inputs: [
+        { q: "They pushed back, so I should drop it.", a: "\"Their pushback tells me their side. It doesn't cancel mine.\"", bundle: 'pro' },
+        { q: "Asking for what I need is selfish.", a: "\"Saying my need clearly lets them choose freely. Hiding it doesn't.\"", bundle: 'pro' },
+        { q: "They've got enough on their plate already.", a: "\"Then I'll ask in a way that fits their plate, not skip asking.\"", bundle: 'pro' },
+        { q: "A good partner would just let it go.", a: "\"A good partner says what they need, so nothing builds up.\"", bundle: 'pro' },
+        { q: "If I hold on, I'm being difficult.", a: "\"Holding on calmly while I listen is the opposite of difficult.\"", bundle: 'pro' },
+        { q: "Their need is more important than mine.", a: "\"Both needs are real. We can look for a way to meet both.\"", bundle: 'pro' },
+        { q: "I don't want to make a fuss.", a: "\"One calm ask is not a fuss. The fuss comes when I swallow it.\"", bundle: 'pro' },
+        { q: "I should be grateful for what I've got.", a: "\"I can be grateful and still ask for what would help.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Anger",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"I'm angry, so I have a right to say it however it comes out.\" A belief with real truth in it — which is why it is so easy to follow when they push back.\n\nWhat is true: your anger is real, and it is pointing at a real need.\n\nWhat gets added is the step from \"I'm angry\" to \"so how I say it doesn't matter\" — as if the feeling gave permission for the sharp line.\n\nWhat it costs is the need. Said hard, it becomes something they must defend against, not something they can help with.\n\nMindset: keep the anger as a signal. Drop the idea that it decides the words.",
+      inputs: [
+        { q: "I'm angry, so I can say it however it comes out.", a: "\"I'm allowed to be angry, but 'so the words don't matter' is the part I added.\"", bundle: 'pro' },
+        { q: "They pushed back, so I can hit back.", a: "\"They did push back, but 'so now I can be harsh' is the part I added.\"", bundle: 'pro' },
+        { q: "I've asked nicely three times.", a: "\"True, I have, but 'so now I can shout' is the part I added.\"", bundle: 'pro' },
+        { q: "Being honest means saying it raw.", a: "\"Honest, yes, but 'so it has to be raw' is the part I added.\"", bundle: 'pro' },
+        { q: "My anger is fair.", a: "\"It is fair, but 'so they have to take it however it lands' is the part I added.\"", bundle: 'pro' },
+        { q: "If I calm down, they'll think it doesn't matter.", a: "\"It does matter, but 'so I have to stay loud' is the part I added.\"", bundle: 'pro' },
+        { q: "They started it with \"but you\".", a: "\"Maybe they did, but 'so I have to finish it' is the part I added.\"", bundle: 'pro' },
+        { q: "Holding it in is unhealthy.", a: "\"True, I shouldn't swallow it, but 'so it has to come out sharp' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mind-Reading",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If they cared, they'd know what I need without me saying it — and they'd remember.\" The belief that having to ask, or ask again, proves they don't care.\n\nWhat is true instead: nobody can read minds, and people forget things they care about all the time. Saying it, and saying it again, is how needs get met.\n\nIt feels reasonable because the people closest to us often do guess right, so the times they don't feel like a choice.\n\nWhat it costs is silent waiting, then a sudden blow-up that they never saw coming.\n\nMindset: saying it out loud is not a sign they don't care. It is how they find out.",
+      inputs: [
+        { q: "If they cared, they'd know.", a: "\"Caring doesn't come with mind-reading. Saying it does the job.\"", bundle: 'pro' },
+        { q: "I shouldn't have to ask twice.", a: "\"Asking twice is normal. People forget things they care about.\"", bundle: 'pro' },
+        { q: "They forgot, so it doesn't matter to them.", a: "\"Forgetting is about busy days, not about how much I matter.\"", bundle: 'pro' },
+        { q: "After all these years, they should just know.", a: "\"Years together help, but needs change, so I still have to say them.\"", bundle: 'pro' },
+        { q: "Reminding them makes me a nag.", a: "\"A short, friendly reminder is help, not nagging.\"", bundle: 'pro' },
+        { q: "If I have to spell it out, it doesn't count.", a: "\"It counts just as much when they do it because I asked.\"", bundle: 'pro' },
+        { q: "They'll notice if I go quiet.", a: "\"Going quiet tells them something's wrong, but not what I need.\"", bundle: 'pro' },
+        { q: "A real friend would remember.", a: "\"Real friends forget too. A real friend is glad to be reminded.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Thanks",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'm not going to thank an adult for doing what's fair.\" A belief that feels like a principle — fairness, high standards, not making a fuss over the basics.\n\nWhat is true instead: a change that nobody notices tends to fade. Thanks are not a reward for a child; they are how adults know something mattered.\n\nIt feels reasonable because you only asked for something ordinary, and thanking them for it can feel like making it a favour.\n\nWhat it costs is the change itself. It slips quietly, and the only time they hear about it is when it goes wrong.\n\nMindset: thanks cost me one sentence. Silence can cost me the change.",
+      inputs: [
+        { q: "I'm not going to thank an adult for doing what's fair.", a: "\"And when I say nothing, the only thing they hear from me is the complaint.\"", bundle: 'pro' },
+        { q: "They should do it anyway.", a: "\"They should, and without a word from me it's the first thing to slip.\"", bundle: 'pro' },
+        { q: "I don't want to make a big thing of it.", a: "\"One sentence of thanks isn't a big thing, but leaving it out tells them nobody noticed.\"", bundle: 'pro' },
+        { q: "If I thank them, they'll think it's a favour.", a: "\"Holding back thanks to make a point leaves the point and loses the change.\"", bundle: 'pro' },
+        { q: "I've done it for years without thanks.", a: "\"And I know how that felt, so I don't want to pass it on.\"", bundle: 'pro' },
+        { q: "Thanks is for when someone goes beyond.", a: "\"Keeping thanks for the big things means the small changes go unnoticed.\"", bundle: 'pro' },
+        { q: "Saying nothing is fine. They'll know.", a: "\"They won't know, and quiet feels a lot like nobody cares.\"", bundle: 'pro' },
+        { q: "I'll thank them when it's lasted a month.", a: "\"By waiting a month for proof, I risk it not lasting a week.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };

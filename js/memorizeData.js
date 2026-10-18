@@ -26298,4 +26298,316 @@ const memorizeCollections = {
       ]
     },
   ],
+  fromupsettoask1: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for turning an upset into an ask:\n\n1. Find the Need First\n2. Own the Feeling\n3. Turn the Complaint Into a Wish\n4. Need, Not Solution\n5. Say the Do, Not the Don't\n6. Make It Doable\n\nThey follow the process: find the want, own the feeling, say the wish, then shape the ask.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Find the Need First, Own the Feeling, Turn the Complaint Into a Wish, Need, Not Solution, Say the Do, Not the Don't, and Make It Doable.", bundle: 'free' },
+        { q: "What is the idea behind the whole pack?", a: "What made you angry tells you what you need. Say the need and ask for something, instead of listing what you don't want.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "The first three turn the upset into words: the want, the feeling, the wish. The last three shape the ask: a need, a do, and something small enough to happen.", bundle: 'free' },
+        { q: "Which strategy happens partly inside you?", a: "Find the Need First. You ask yourself what you want instead, and then say that as your first line.", bundle: 'free' },
+        { q: "What does every strategy in this pack turn around?", a: "Something about to come out: a sharp line, a charge, a complaint, a fixed fix, a \"don't\", or a vague request.", bundle: 'free' },
+        { q: "Which three sources does the pack draw on?", a: "Marshall Rosenberg's Nonviolent Communication, John Gottman's softened start-up, and Marsha Linehan's DEAR MAN skill from DBT.", bundle: 'pro' },
+        { q: "What does Pt. 2 of the series add?", a: "What to do when they push back: a counter-charge, a flat no, or a need that clashes with yours.", bundle: 'pro' },
+        { q: "Why ask instead of complain?", a: "A complaint points backwards and gets a defence. An ask points forwards and gives them something to say yes to.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Find the Need First",
+      description: "",
+      cards: [
+        { q: "What is Find the Need First?", a: "Asking yourself what you actually want instead, before the sharp line comes out, and making that your first sentence.", bundle: 'free' },
+        { q: "How does Find the Need First sound?", a: "\"What I really want tonight is to come home and rest. Can we talk about the kitchen?\"", bundle: 'free' },
+        { q: "When is Find the Need First the right one?", a: "In the moment the irritation hits, when a sharp line is on the tip of your tongue.", bundle: 'free' },
+        { q: "What does Find the Need First leave the other person with?", a: "Something to talk about instead of something to fight about: your want, and an invitation to talk.", bundle: 'free' },
+        { q: "What three things can the want be about?", a: "How you want to feel, what you want to be able to do, and what you want between you.", bundle: 'free' },
+        { q: "When does Find the Need First go wrong?", a: "When the \"want\" is a complaint in disguise: \"What I really want is for you to stop being so lazy.\"", bundle: 'pro' },
+        { q: "How is Find the Need First different from Need, Not Solution?", a: "Find the Need First is the opening line that turns you away from the complaint. Need, Not Solution states the need and asks for their ideas.", bundle: 'pro' },
+        { q: "Where does Find the Need First come in the process?", a: "First. It opens The Turnaround.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Own the Feeling",
+      description: "",
+      cards: [
+        { q: "What is Own the Feeling?", a: "Saying how you felt as your own feeling — \"I felt\" — instead of \"you made me feel\".", bundle: 'free' },
+        { q: "How does Own the Feeling sound?", a: "\"I felt really worn out when I came home to a full sink again.\"", bundle: 'free' },
+        { q: "When is Own the Feeling the right one?", a: "When the feeling is what most needs saying, and \"you made me\" is about to come out.", bundle: 'free' },
+        { q: "What does Own the Feeling leave the other person with?", a: "A report about you that they cannot argue with, so they can listen instead of defending.", bundle: 'free' },
+        { q: "What are the three ways to own it?", a: "Then and specific, now, and the feeling under the anger.", bundle: 'free' },
+        { q: "When does Own the Feeling go wrong?", a: "When it hides a charge — \"I feel that you're selfish\" — or when it comes out while you are still furious.", bundle: 'pro' },
+        { q: "How is Own the Feeling different from Turn the Complaint Into a Wish?", a: "Own the Feeling says how it was for you. Turn the Complaint Into a Wish says where you want to go.", bundle: 'pro' },
+        { q: "Where does Own the Feeling come in the process?", a: "Second. It opens The Full Ask and is the middle step of The Turnaround.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Turn the Complaint Into a Wish",
+      description: "",
+      cards: [
+        { q: "What is Turn the Complaint Into a Wish?", a: "Saying the wish behind the complaint you were about to make: same subject, opposite direction.", bundle: 'free' },
+        { q: "How does Turn the Complaint Into a Wish sound?", a: "\"I'd love to come home to a clear kitchen.\"", bundle: 'free' },
+        { q: "When is Turn the Complaint Into a Wish the right one?", a: "When a complaint is ready to come out, especially one with \"never\" or \"always\" in it.", bundle: 'free' },
+        { q: "What does Turn the Complaint Into a Wish leave the other person with?", a: "Something to aim for, and the natural answer \"okay, how?\" instead of a defence.", bundle: 'free' },
+        { q: "What are the three ways to turn it?", a: "Flip the \"never\", paint the picture, and make it about both of you.", bundle: 'free' },
+        { q: "When does Turn the Complaint Into a Wish go wrong?", a: "When the wish is sarcastic — \"I'd love it if you lifted a finger for once\" — or when it stops there and no ask ever follows.", bundle: 'pro' },
+        { q: "How is Turn the Complaint Into a Wish different from Say the Do, Not the Don't?", a: "A wish shows the direction. Say the Do, Not the Don't asks for a specific action.", bundle: 'pro' },
+        { q: "Where does Turn the Complaint Into a Wish come in the process?", a: "Third, after the feeling. It is the middle step of The Full Ask.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Need, Not Solution",
+      description: "",
+      cards: [
+        { q: "What is Need, Not Solution?", a: "Saying what you need and leaving the solution open, with a question for their ideas.", bundle: 'free' },
+        { q: "How does Need, Not Solution sound?", a: "\"I need some rest when I get home from work. Any ideas?\"", bundle: 'free' },
+        { q: "When is Need, Not Solution the right one?", a: "When you are about to demand one fixed solution you picked while you were annoyed.", bundle: 'free' },
+        { q: "What does Need, Not Solution leave the other person with?", a: "A problem to help with, instead of a yes-or-no about your fix.", bundle: 'free' },
+        { q: "What are the two parts of Need, Not Solution?", a: "The need, and the open question.", bundle: 'free' },
+        { q: "When does Need, Not Solution go wrong?", a: "When the question is only for show, and you reject every idea that is not yours.", bundle: 'pro' },
+        { q: "How is Need, Not Solution different from Make It Doable?", a: "Need, Not Solution opens the problem to both of you. Make It Doable narrows it to one small step.", bundle: 'pro' },
+        { q: "Where does Need, Not Solution come in the process?", a: "Fourth, where the ask begins. It opens From Need to Next Step.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say the Do, Not the Don't",
+      description: "",
+      cards: [
+        { q: "What is Say the Do, Not the Don't?", a: "Asking for what you want them to do, instead of what you want them to stop.", bundle: 'free' },
+        { q: "How does Say the Do, Not the Don't sound?", a: "\"Could you put the dishes in the dishwasher after dinner?\"", bundle: 'free' },
+        { q: "When is Say the Do, Not the Don't the right one?", a: "When a \"don't\" or a \"stop\" is about to come out.", bundle: 'free' },
+        { q: "What does Say the Do, Not the Don't leave the other person with?", a: "One clear action to say yes to, instead of criticism and a guess.", bundle: 'free' },
+        { q: "What are the three ways to turn a don't into a do?", a: "Name the opposite action, name the place or the time, and name what to do instead.", bundle: 'free' },
+        { q: "When does Say the Do, Not the Don't go wrong?", a: "When the do is still vague — \"Could you be nicer?\" — and no camera could film it.", bundle: 'pro' },
+        { q: "How is Say the Do, Not the Don't different from Make It Doable?", a: "Say the Do, Not the Don't makes the ask positive. Make It Doable makes it small, concrete and soon.", bundle: 'pro' },
+        { q: "Where does Say the Do, Not the Don't come in the process?", a: "Fifth. It ends The Full Ask and is the middle step of From Need to Next Step.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Make It Doable",
+      description: "",
+      cards: [
+        { q: "What is Make It Doable?", a: "Making the request small, concrete and close in time, so it can actually happen.", bundle: 'free' },
+        { q: "How does Make It Doable sound?", a: "\"Could you load the dishwasher before I get home at seven?\"", bundle: 'free' },
+        { q: "When is Make It Doable the right one?", a: "When the ask is big or vague — be tidier, be more respectful — or when a promise like \"I'll try\" is all you got.", bundle: 'free' },
+        { q: "What does Make It Doable leave the other person with?", a: "Something they can do tonight, and a clear way for both of you to see whether it happened.", bundle: 'free' },
+        { q: "What are the three ways to make it doable?", a: "Smaller, a time on it, and something you can both see.", bundle: 'free' },
+        { q: "When does Make It Doable go wrong?", a: "When it shrinks your own fixed solution instead of a shared one, or when it gets so small it no longer touches the need.", bundle: 'pro' },
+        { q: "How is Make It Doable different from Say the Do, Not the Don't?", a: "Say the Do, Not the Don't turns a \"don't\" into a \"do\". Make It Doable turns a big ask into a small one.", bundle: 'pro' },
+        { q: "Where does Make It Doable come in the process?", a: "Last. It ends both The Turnaround and From Need to Next Step.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Open It Softly** — a want, a feeling or a complaint: which first sentence fits\n• **Shape the Ask** — a fixed fix, a \"don't\" or a fog: what is wrong with the ask\n• **All Six Strategies** — everything mixed, with no warning about where you are\n\nOne question runs through all three: what is about to come out of my mouth, and how do I turn it around?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Open It Softly, Shape the Ask, and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Open It Softly?", a: "What is loudest in me right now — a want, a feeling, or a complaint?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Open It Softly?", a: "Own the Feeling while you are still furious. \"I felt furious\" can land as a charge.", bundle: 'pro' },
+        { q: "A complaint with \"never\" in it is ready to come out. Which strategy?", a: "Turn the Complaint Into a Wish.", bundle: 'pro' },
+        { q: "What is the question that decides Shape the Ask?", a: "Is my ask a fixed fix, a \"don't\", or a fog?", bundle: 'pro' },
+        { q: "Your ask is a \"stop\". Which strategy?", a: "Say the Do, Not the Don't.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Shape the Ask?", a: "Make It Doable on a fixed solution. You only make your own fix smaller.", bundle: 'pro' },
+        { q: "What is the usual wrong choice across all six?", a: "Jumping straight to a request while you are still hot. It comes out as an order.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Full Ask** — Own the Feeling → Turn the Complaint Into a Wish → Say the Do, Not the Don't\n2. **The Turnaround** — Find the Need First → Own the Feeling → Make It Doable\n3. **From Need to Next Step** — Need, Not Solution → Say the Do, Not the Don't → Make It Doable\n\nEach one is a short talk where the other person answers between your lines.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Full Ask, The Turnaround, and From Need to Next Step.", bundle: 'pro' },
+        { q: "What is the order in The Full Ask?", a: "Own the Feeling, Turn the Complaint Into a Wish, Say the Do, Not the Don't.", bundle: 'pro' },
+        { q: "Why does the request come last in The Full Ask?", a: "The feeling explains the wish, and the wish makes the request make sense. First, it sounds like an order.", bundle: 'pro' },
+        { q: "What is the order in The Turnaround?", a: "Find the Need First, Own the Feeling, Make It Doable.", bundle: 'pro' },
+        { q: "Why does the want come before the feeling in The Turnaround?", a: "Said while you are still hot, the feeling comes out as blame. The want stops the fight first.", bundle: 'pro' },
+        { q: "What is the order in From Need to Next Step?", a: "Need, Not Solution, Say the Do, Not the Don't, Make It Doable.", bundle: 'pro' },
+        { q: "Why does From Need to Next Step start with the need?", a: "It opens the problem to both of you. Start with a small request and you are only asking for your own fix.", bundle: 'pro' },
+        { q: "What is the usual mistake in all three?", a: "Complaint first, no clear ask, and the feeling only at the end, as shouting.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The six challenges to master in this pack:\n\n• **The Don't List** — a string of rules that only says what is wrong\n• **You Always** — one slip turned into a verdict on the person\n• **The Venting Dump** — everything that is wrong, and no request\n• **The Hint** — the complaint in disguise\n• **The Fixed Solution** — the answer without the need\n• **Mind-Reading Expected** — upset about something never asked for\n\nEach one turns the irritation outwards instead of into an ask.",
+      cards: [
+        { q: "What are the six challenges in this pack?", a: "The Don't List, You Always, The Venting Dump, The Hint, The Fixed Solution, and Mind-Reading Expected.", bundle: 'pro' },
+        { q: "What is the main strategy for The Don't List?", a: "Say the Do, Not the Don't — turn each \"don't\" into one action.", bundle: 'pro' },
+        { q: "Why does \"you always\" backfire?", a: "It is never quite true, so they argue with the word, and a verdict on who they are leaves them nothing to change.", bundle: 'pro' },
+        { q: "What is missing from The Venting Dump?", a: "A request. They cannot say yes to anything, so nothing changes.", bundle: 'pro' },
+        { q: "What does a hint hide?", a: "The want. It carries the irritation and leaves them to guess the rest.", bundle: 'pro' },
+        { q: "What goes wrong with The Fixed Solution?", a: "It leaves only yes or no, and a no becomes a fight about the fix instead of the need.", bundle: 'pro' },
+        { q: "What should you avoid with Mind-Reading Expected?", a: "Testing them to see if they notice.", bundle: 'pro' },
+        { q: "What do all six challenges have in common?", a: "The irritation goes out as a charge, a list or a hint, instead of as an ask.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Anger** — if I'm angry, I can say it however it comes out\n• **Needs** — asking for what I need is selfish\n• **Spelling It Out** — if they cared, they would know without me saying\n• **Refusals** — if they say no, I've failed\n\nEach one keeps the need from becoming an ask.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Anger, Needs, Spelling It Out, and Refusals.", bundle: 'pro' },
+        { q: "What is true about \"if I'm angry, I can say it however it comes out\"?", a: "The anger is real and yours. What gets added is \"any words will do\".", bundle: 'pro' },
+        { q: "What does saying it however it comes out cost?", a: "The need under the anger, lost in the way it was said.", bundle: 'pro' },
+        { q: "What is true instead of \"asking for what I need is selfish\"?", a: "Saying what you need is honest, and it gives them a fair chance to help.", bundle: 'pro' },
+        { q: "Where does an unsaid need go?", a: "It comes out later, as hints, sighs and sharp remarks.", bundle: 'pro' },
+        { q: "What does \"they should know without me saying\" quietly cost?", a: "Every miss feels like proof they do not care, when they simply did not know.", bundle: 'pro' },
+        { q: "What is true instead of \"if they say no, I've failed\"?", a: "A clear ask that gets a no has still worked. The need is on the table.", bundle: 'pro' },
+        { q: "What do the four mindsets have in common?", a: "Each one keeps the need from becoming an ask.", bundle: 'pro' },
+      ]
+    },
+  ],
+  fromupsettoask2: [
+    {
+      name: "Core Idea",
+      description: "Six follow-up strategies for when you ask for what you need and they push back:\n\n1. Hear Them, Keep Yours\n2. Ask What They Need\n3. Both Needs on the Table\n4. Look for a Third Way\n5. Thank the Change\n6. Try Again Later\n\nMeet the pushback, make room for both needs, and keep the change going.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Hear Them, Keep Yours, Ask What They Need, Both Needs on the Table, Look for a Third Way, Thank the Change, and Try Again Later.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Two to meet the first push back, three to make room for both needs, and one to keep a change going.", bundle: 'free' },
+        { q: "What does every card in this pack train?", a: "Your next line — what you say after you have already asked for something and they react.", bundle: 'free' },
+        { q: "What is the stance of this pack?", a: "A no or a defence is not the end. It is the start of two needs.", bundle: 'free' },
+        { q: "What should you ask yourself first?", a: "What did they just do: hit back, play it down, say no, name a need, forget, sulk, or do it?", bundle: 'free' },
+        { q: "What is the most common mistake after pushback?", a: "Repeating your first ask, louder, or dropping it altogether.", bundle: 'pro' },
+        { q: "How does this pack relate to Pt. 1?", a: "Pt. 1 turns being upset into a clear, doable ask. Pt. 2 is what you say when they push back on it.", bundle: 'pro' },
+        { q: "Which sources does this pack draw on?", a: "Marshall Rosenberg's Nonviolent Communication, John Gottman's softened start-up, and Marsha Linehan's DEAR MAN from DBT.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Hear Them, Keep Yours",
+      description: "",
+      cards: [
+        { q: "What is Hear Them, Keep Yours?", a: "Taking in what is fair in their pushback, and then saying your need again, calmly.", bundle: 'free' },
+        { q: "How does Hear Them, Keep Yours sound?", a: "\"That's fair about the weekends. I still need the evenings quiet.\"", bundle: 'free' },
+        { q: "When is Hear Them, Keep Yours the right one?", a: "When they hit back with a counter-point, or play your need down.", bundle: 'free' },
+        { q: "Why does Hear Them, Keep Yours work?", a: "Granting the fair part lowers their guard, and coming back to your need keeps the talk on your request.", bundle: 'free' },
+        { q: "What are the three ways to hear them and keep yours?", a: "Grant the fair part, park their point for later, and give it its real size.", bundle: 'free' },
+        { q: "When does Hear Them, Keep Yours go wrong?", a: "When the second half is missing. Granting their point on its own sounds like dropping your need.", bundle: 'pro' },
+        { q: "What is Hear Them, Keep Yours better than, and why?", a: "Defending yourself. Then the talk becomes a trial about who is worse, and your request is lost.", bundle: 'pro' },
+        { q: "Which part of DEAR MAN is behind Hear Them, Keep Yours?", a: "Stay mindful: keep your focus on your request and do not follow every side road.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What They Need",
+      description: "",
+      cards: [
+        { q: "What is Ask What They Need?", a: "Asking, with real curiosity, what matters to them when they push back or say no.", bundle: 'free' },
+        { q: "How does Ask What They Need sound?", a: "\"What would make this work for you?\"", bundle: 'free' },
+        { q: "When is Ask What They Need the right one?", a: "When they say no, and you do not yet know why.", bundle: 'free' },
+        { q: "Why does Ask What They Need work?", a: "A no protects a need of theirs. Once you know it, you have something to work with.", bundle: 'free' },
+        { q: "What are the three ways to ask?", a: "The open question, the hard part, and the guess.", bundle: 'free' },
+        { q: "When does Ask What They Need go wrong?", a: "When it is asked with an edge. \"What's your problem with it?\" sounds like an attack.", bundle: 'pro' },
+        { q: "What is Ask What They Need better than, and why?", a: "Pushing harder. Repeating the ask turns their no into a position they have to defend.", bundle: 'pro' },
+        { q: "What does Marshall Rosenberg say about a no?", a: "That every no is a yes to a need of their own.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Both Needs on the Table",
+      description: "",
+      cards: [
+        { q: "What is Both Needs on the Table?", a: "Saying both needs out loud, side by side, in one sentence.", bundle: 'free' },
+        { q: "How does Both Needs on the Table sound?", a: "\"So you need to unwind after work, and I need help with dinner.\"", bundle: 'free' },
+        { q: "When is Both Needs on the Table the right one?", a: "When their need pulls against yours, and nobody has said both together.", bundle: 'free' },
+        { q: "Why does Both Needs on the Table work?", a: "It shows you heard theirs, keeps yours, and turns two people against each other into one shared problem.", bundle: 'free' },
+        { q: "What are the three ways to put both on the table?", a: "The plain summary, the check, and the shared problem.", bundle: 'free' },
+        { q: "When does Both Needs on the Table go wrong?", a: "When \"and\" becomes \"but\". \"You need a rest, but I need help\" crosses their need out.", bundle: 'pro' },
+        { q: "Whose need should you say first, and why?", a: "Theirs. It is the proof that you listened, and it makes yours easier to hear.", bundle: 'pro' },
+        { q: "What does Rosenberg say clashes, if not needs?", a: "The ways of meeting them. Needs themselves are never wrong.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Look for a Third Way",
+      description: "",
+      cards: [
+        { q: "What is Look for a Third Way?", a: "Suggesting a plan that meets both needs — not your way, not theirs, but a third one.", bundle: 'free' },
+        { q: "How does Look for a Third Way sound?", a: "\"What if you take twenty minutes first, and then we cook together?\"", bundle: 'free' },
+        { q: "When is Look for a Third Way the right one?", a: "When both needs are clear, or when an agreed plan keeps slipping.", bundle: 'free' },
+        { q: "Why does Look for a Third Way work?", a: "It breaks the idea that only one of you can get what you need.", bundle: 'free' },
+        { q: "What are the three ways to find a third way?", a: "Split it, change the how, and try it out.", bundle: 'free' },
+        { q: "When does Look for a Third Way go wrong?", a: "When it comes too early. Before the needs are clear, it is just your solution in a nicer voice.", bundle: 'pro' },
+        { q: "Why offer it as a question?", a: "So they can change it. Their own idea is often better, and they are more likely to keep it.", bundle: 'pro' },
+        { q: "Which part of DEAR MAN is behind Look for a Third Way?", a: "Negotiate: be willing to give to get, and look for other ways to solve the problem.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Thank the Change",
+      description: "",
+      cards: [
+        { q: "What is Thank the Change?", a: "Saying thank you when they do what you asked, and saying what it changed.", bundle: 'free' },
+        { q: "How does Thank the Change sound?", a: "\"Thanks for texting last night. It really helped.\"", bundle: 'free' },
+        { q: "When is Thank the Change the right one?", a: "When they do it, even once, even partly.", bundle: 'free' },
+        { q: "Why does Thank the Change work?", a: "It tells them it was noticed and that it mattered, so the next time is easier.", bundle: 'free' },
+        { q: "What are the three ways to thank the change?", a: "Name the thing, name the difference, and thank the start.", bundle: 'free' },
+        { q: "When does Thank the Change go wrong?", a: "When it carries a sting: \"finally\", or \"see, that wasn't so hard\".", bundle: 'pro' },
+        { q: "What is Thank the Change better than, and why?", a: "Saying nothing. Then they only hear about the request when it goes wrong, and it becomes a nag.", bundle: 'pro' },
+        { q: "Which part of DEAR MAN is behind Thank the Change?", a: "Reinforce: let the other person know it was worth it when they give you what you asked for.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Try Again Later",
+      description: "",
+      cards: [
+        { q: "What is Try Again Later?", a: "Stopping for now when it is not working, and agreeing when to come back to it.", bundle: 'free' },
+        { q: "How does Try Again Later sound?", a: "\"Okay, let's leave it. Can we come back to it on Sunday?\"", bundle: 'free' },
+        { q: "When is Try Again Later the right one?", a: "When they are too tired, too heated, hurt, or have given a flat no.", bundle: 'free' },
+        { q: "Why does Try Again Later work?", a: "Pushing on a heated no makes it harder. A pause gives you both time to think.", bundle: 'free' },
+        { q: "What are the three ways to try again later?", a: "Pause and name a time, pause with something to think about, and pause and keep it warm.", bundle: 'free' },
+        { q: "When does Try Again Later go wrong?", a: "When there is no time in it. \"Let's leave it\" on its own sounds like giving up, or a cold shoulder.", bundle: 'pro' },
+        { q: "What is Try Again Later better than, and why?", a: "Pushing on, which hardens the no, or dropping it, which loses your need.", bundle: 'pro' },
+        { q: "Why does the second conversation often go better?", a: "Both of you have had time to think about the other's need.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The four collections in this pack, and what each one makes you choose between:\n\n• **Meet the Pushback** — they hit back, play it down or say no: grant and keep, ask, or pause?\n• **Make Room for Both** — two needs pull apart: ask, sum up, or suggest a plan?\n• **See It Through** — the days after: thank, change the plan, or pause?\n• **All Six Strategies** — everything mixed, with no warning about the reaction\n\nOne question decides nearly all of it: what did they just do?",
+      cards: [
+        { q: "What are the four collections in this pack?", a: "Meet the Pushback, Make Room for Both, See It Through, and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Meet the Pushback?", a: "Can they hear me right now?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Meet the Pushback?", a: "Defending yourself against their counter-point, so your request is lost.", bundle: 'pro' },
+        { q: "What is the question that decides Make Room for Both?", a: "How much do I know about their need?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Make Room for Both?", a: "Jumping to a third way before you know their need.", bundle: 'pro' },
+        { q: "What is the question that decides See It Through?", a: "What has happened since I asked?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in See It Through?", a: "Speaking up only when it goes wrong, so every mention is a complaint.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in All Six Strategies?", a: "Repeating your first ask, louder.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Shared Plan** — Ask What They Need → Both Needs on the Table → Look for a Third Way\n2. **Hear, Ask, Pause** — Hear Them, Keep Yours → Ask What They Need → Try Again Later\n3. **The Change That Sticks** — Look for a Third Way → Hear Them, Keep Yours → Thank the Change\n\nIn each one, every step answers what they just did, and keeps both needs in the room.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Shared Plan, Hear, Ask, Pause, and The Change That Sticks.", bundle: 'pro' },
+        { q: "What is the order in The Shared Plan?", a: "Ask What They Need, Both Needs on the Table, Look for a Third Way.", bundle: 'pro' },
+        { q: "Why ask before you sum up in The Shared Plan?", a: "You cannot sum up a need you have not heard.", bundle: 'pro' },
+        { q: "What is the order in Hear, Ask, Pause?", a: "Hear Them, Keep Yours, Ask What They Need, Try Again Later.", bundle: 'pro' },
+        { q: "Why grant their point before you ask in Hear, Ask, Pause?", a: "It lowers their guard, so the question sounds curious rather than pushy.", bundle: 'pro' },
+        { q: "What is the order in The Change That Sticks?", a: "Look for a Third Way, Hear Them, Keep Yours, Thank the Change.", bundle: 'pro' },
+        { q: "Why does the thanks come last in The Change That Sticks?", a: "It is what makes the change last once it has finally happened.", bundle: 'pro' },
+        { q: "What is the usual mistake in The Change That Sticks?", a: "Nagging when it slips and saying nothing when it works.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The six challenges to master in this pack — six kinds of pushback, and the follow-ups that fit:\n\n• **\"But You…\"** — they complain back: grant the fair part and keep your need\n• **\"It's Not a Big Deal\"** — your need is waved away: let it be small to them and still matter to you\n• **The Flat No** — no reason given: ask what they need, or pause\n• **Their Need Clashes** — two real needs: put both on the table, then look for a third way\n• **Forgotten Again** — the plan slips: make it easier to keep\n• **The Sulk After** — they go quiet and hurt: pause warmly, and thank them when they come round\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the six challenges in this pack?", a: "\"But You…\", \"It's Not a Big Deal\", The Flat No, Their Need Clashes, Forgotten Again, and The Sulk After.", bundle: 'pro' },
+        { q: "What goes wrong in \"But You…\"?", a: "Defending yourself against the counter-point, so your request leaves the room.", bundle: 'pro' },
+        { q: "What should you avoid in \"It's Not a Big Deal\"?", a: "Arguing about how big it is.", bundle: 'pro' },
+        { q: "What should you avoid with The Flat No?", a: "Repeating the same request, harder.", bundle: 'pro' },
+        { q: "What should you avoid in Their Need Clashes?", a: "Deciding whose need is more important.", bundle: 'pro' },
+        { q: "Which strategy makes a slipping plan easier to keep?", a: "Look for a Third Way.", bundle: 'pro' },
+        { q: "What should you avoid in Forgotten Again?", a: "\"I knew it wouldn't last.\"", bundle: 'pro' },
+        { q: "What should you avoid in The Sulk After?", a: "Apologising for having a need.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Refusals** — if they say no, I've failed\n• **Selfishness** — keeping my need after they push back is selfish\n• **Anger** — I'm angry, so I can say it however it comes out\n• **Mind-Reading** — if they cared, they'd know and remember\n• **Thanks** — I shouldn't have to thank an adult for doing what's fair\n\nMost of them make you drop your need, or say it too hard.",
+      cards: [
+        { q: "What are the five mindsets in this pack?", a: "Refusals, Selfishness, Anger, Mind-Reading, and Thanks.", bundle: 'pro' },
+        { q: "What is true instead of \"if they say no, I've failed\"?", a: "A no is the start of the conversation. It shows a need of theirs is in the way.", bundle: 'pro' },
+        { q: "What is true instead of \"keeping my need is selfish\"?", a: "Holding your need while you listen to theirs is fair to both of you.", bundle: 'pro' },
+        { q: "What part of \"I'm angry, so I can say it however it comes out\" is true?", a: "The anger is real and points at a real need. \"So the words don't matter\" is the part that gets added.", bundle: 'pro' },
+        { q: "What does saying a need too hard cost?", a: "It becomes something they must defend against, not something they can help with.", bundle: 'pro' },
+        { q: "What is true instead of \"if they cared, they'd know\"?", a: "Nobody can read minds, and people forget things they care about. Saying it is how they find out.", bundle: 'pro' },
+        { q: "What does holding back thanks quietly cost?", a: "The change itself. It slips, and they only hear about it when it goes wrong.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They make you drop your need, or say it too hard.", bundle: 'pro' },
+      ]
+    },
+  ],
 };
