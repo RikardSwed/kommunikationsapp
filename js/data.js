@@ -16008,6 +16008,136 @@ const collections = {
       ]
     },
   ],
+  alexandergrace9: [
+    {
+      name: "Validate Data, Not Conclusion",
+      guideFront: "Affirm the feeling and the facts when...",
+      guideBack: "A yes to the feeling, a no to the story",
+      description: "When she's upset, say clearly that her feeling makes sense and that the facts are real — and stop there. Don't sign up to the story built on top of them. \"I can see you're stressed about the budget, and that makes sense. I don't agree that I don't care about you.\"\n\nIt works because a feeling and a conclusion are two different things. \"I'm stressed about money\" is a feeling about a real problem. \"You don't spend money on me because you don't care\" is a story about you. Accepting the first lowers the heat fast. Agreeing to the second, just to calm things down, makes something untrue the official version — and the real problem still doesn't get solved.\n\nSo you comfort her, and you keep your eye on what still needs fixing.\n\nTypical phrases: \"That makes sense.\", \"I can see why you're upset.\", \"I hear you, and I see that part differently.\", \"Let's stay with the actual problem.\"\n\nThree parts:\n\n1. The feeling — \"I can see you're stressed.\"\n\n2. The facts — \"Money is tight this month.\"\n\n3. The line — \"I don't agree that I don't care. Let's look at the budget together.\"\n\nMindset: I can take her feeling seriously without agreeing to every story about me.",
+      inputs: [
+        { q: "She says, \"You never spend anything on me because you don't care about me.\"", a: "\"I can hear you're hurt, and money's been tight. I don't agree that I don't care. Can we look at where the money's going?\"", bundle: 'free' },
+        { q: "She's worried about the bills and says you're ruining your future together.", a: "\"It makes sense to be worried — the bills are high. We're not ruined. Let's sit down with them tonight.\"", bundle: 'free' },
+        { q: "You were late home, and she says you clearly don't want to be with her.", a: "\"You're right, I was late, and I get why that's annoying. It isn't that I don't want to be here. I'll message next time.\"", bundle: 'free' },
+        { q: "You booked a weekend away with friends, and she says, \"You only ever think about yourself.\"", a: "\"I can see the weekend upset you. I don't think I only think about myself. Can we talk about the dates?\"", bundle: 'free' },
+        { q: "She's crying about how stressful moving house has been, and says it's all your fault.", a: "\"Moving has been really hard, and of course you're exhausted. It isn't all on me, though. What's the worst part right now?\"", bundle: 'free' },
+        { q: "She says, \"So you think I'm overreacting?\"", a: "\"No. Your feeling makes sense. I just see the cause differently.\"", bundle: 'pro' },
+        { q: "She has made the same accusation three times in a row.", a: "\"I've heard you, and I understand you're upset. I'm not going to agree that I don't care, because it isn't true. Let's get back to the budget.\"", bundle: 'pro' },
+        { q: "She calms down and says, \"Okay. I'm just really stressed about money.\"", a: "\"Thank you. That I completely understand. Let's work on the money together.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "De-escalate the Emotional Flood",
+      guideFront: "Bring it back to one point when...",
+      guideBack: "One point again, or a loving pause",
+      description: "When an argument floods — too many details, old grievances piling in, the actual point lost — slow it down. First, name it kindly and bring it back to the one thing you're trying to sort out. If it keeps flooding, pause with love and a time to come back. \"I love you and I want to sort this. Right now it's not productive. I'll step away and we'll talk in twenty minutes.\"\n\nIt works because nobody can solve ten problems at once. When everything comes in together, the real disagreement gets buried and both of you feel swamped. Coming back to one point gives the conversation something to stand on. And when feelings run that high, a short break does more than another hour of talking.\n\nIt isn't just walking off. You say you love her, you say why, and you say when you'll be back.\n\nTypical phrases: \"Let's stay with one thing.\", \"We've drifted — can we come back to the bills?\", \"I want to sort this, and right now it's not working.\", \"Twenty minutes, then let's try again.\"\n\nThree steps, in order:\n\n1. Name it kindly — \"We're getting lost in a lot of things.\"\n\n2. Return to the point — \"Can we just sort out Saturday?\"\n\n3. If it keeps flooding, pause with love — \"I love you. I'm stepping away for twenty minutes, then we'll talk.\"\n\nMindset: one point at a time, and a loving break when that doesn't work.",
+      inputs: [
+        { q: "The argument about Saturday has turned into a list of everything from the last two years.", a: "\"We've got a lot on the table now. Can we just sort out Saturday first?\"", bundle: 'free' },
+        { q: "She's talking fast, jumping from your mother to the car to the holiday.", a: "\"I'm losing track, and I want to get this right. What's the main thing that's upsetting you?\"", bundle: 'free' },
+        { q: "You've tried twice to get back to the point, and it keeps spiralling.", a: "\"I love you, and I want to sort this. Right now it's not working. I'm stepping away, and we'll talk in twenty minutes.\"", bundle: 'free' },
+        { q: "She brings up something you said at a party three years ago.", a: "\"That's fair to talk about another time. Right now, let's finish the thing about the bills.\"", bundle: 'free' },
+        { q: "You notice you're getting swept up and raising your voice too.", a: "\"I'm getting too worked up to be useful. Can we slow down and take one thing at a time?\"", bundle: 'free' },
+        { q: "She says, \"Don't change the subject!\" when you try to get back to the point.", a: "\"I'm not changing it. I'm trying to find it. Is it the money, or the time?\"", bundle: 'pro' },
+        { q: "It's late, and the fight about the holiday budget keeps growing.", a: "\"I love you, and we're both too tired for this. Let's stop here and do the budget over breakfast.\"", bundle: 'pro' },
+        { q: "Twenty minutes have passed, and you go back in as promised.", a: "\"I'm back. Can we start with just the one thing — the budget?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Let the Awkward Silence Sit",
+      guideFront: "Leave it unresolved for now when...",
+      guideBack: "One short, calm line, then quiet",
+      description: "When things are tense and nothing more can be solved right now, let it stay unresolved for a while. Say one short, calm thing — and then stop talking. \"I don't think we'll sort this tonight. Let's leave it for now.\" No more explaining, no more trying to fix the mood.\n\nIt works because when someone is upset, every extra word gives the argument more to hold on to. Even sweet words can keep the heat going. Time and space do work that talking can't: feelings settle, both of you think, and the next conversation starts calmer. An awkward evening is not a broken relationship.\n\nIt is not the silent treatment. You aren't punishing her — you're friendly, you're around, and you say you'll come back to it. You just stop pushing.\n\nTypical phrases: \"Let's leave it there for tonight.\", \"We don't have to fix this right now.\", \"I'm here. I just don't think more talking helps right now.\", \"We'll come back to it tomorrow.\"\n\nTwo parts:\n\n1. One calm line — \"Let's leave it for now.\"\n\n2. Then quiet — and a normal, friendly evening.\n\nMindset: unresolved for an evening is not the same as broken.",
+      inputs: [
+        { q: "The argument has stopped, but the air is still heavy, and you feel the urge to keep explaining.", a: "\"Let's leave it there for tonight. I'm not going anywhere.\"", bundle: 'free' },
+        { q: "She says, \"So that's it? You've got nothing else to say?\"", a: "\"Not right now. I think we both need a bit of time.\"", bundle: 'free' },
+        { q: "You've already said sorry for your part, and she's still cold.", a: "\"I've said what I needed to. I'll give you some space.\"", bundle: 'free' },
+        { q: "You're tempted to crack jokes to lighten the mood after the fight.", a: "\"I know it's a bit awkward. That's okay. We'll talk tomorrow.\"", bundle: 'free' },
+        { q: "You're both in the kitchen, and nobody is speaking.", a: "(Keep cooking, calmly.) \"Dinner's in ten, if you want some.\"", bundle: 'free' },
+        { q: "She keeps asking, \"Are you still angry?\"", a: "\"A little. It'll pass. We don't have to sort it all tonight.\"", bundle: 'pro' },
+        { q: "A friend asks why you didn't just keep talking until it was fixed.", a: "\"Because more talking was making it worse. We sorted it the next day.\"", bundle: 'pro' },
+        { q: "The next morning, she's softer and brings it up herself.", a: "\"Thanks for coming back to it. I'm ready to talk when you are.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Anchor Logical Leadership at Home",
+      guideFront: "Fix what caused it when...",
+      guideBack: "A change, put as your own preference",
+      description: "After a fight has cooled, work out what caused it — and change the setup so it doesn't happen again. Often the cause is that nobody is clearly in charge of something. Make it clear: \"That's your task, this is mine, and we don't have opinions on how the other does theirs.\" And when you suggest a change, anchor it in yourself — \"I'd prefer…\", \"I want our evenings like this\" — never \"you need this, for your own good.\"\n\nIt works because many repeated fights are not about character but about a fuzzy setup. \"We both do the bills\" means nobody really does them, and both of you criticise. Clear ownership removes the argument before it starts. Speaking from your own preference keeps it honest: you're allowed to want things, and she can hear that you're not trying to manage her.\n\nBest of all, work it out together. At the very least, think it through yourself.\n\nTypical phrases: \"What actually set that off?\", \"Can we split this clearly?\", \"I'd prefer we…\", \"That one's yours, and I'll stay out of how you do it.\"\n\nThree parts:\n\n1. Find the cause — \"What set that off?\"\n\n2. Change the setup — \"You take the bills, I'll take the car.\"\n\n3. Say it as yours — \"I'd prefer we do it like this.\"\n\nMindset: the best fix for a fight is the change that stops the next one.",
+      inputs: [
+        { q: "You keep arguing about the bills because you both sort of do them.", a: "\"I think the bills keep causing fights because we both half-do them. Would you take them, and I'll take the car and the insurance?\"", bundle: 'free' },
+        { q: "She criticises how you load the dishwasher, again.", a: "\"Can the kitchen be mine in the evenings, done my way? Then the laundry's yours, and I'll stay out of it.\"", bundle: 'free' },
+        { q: "You want to suggest no phones at dinner.", a: "\"I'd like our dinners to be phone-free. That's what I want for us.\"", bundle: 'free' },
+        { q: "You're about to say, \"You need more structure — it's for your own good.\"", a: "\"I'd prefer we plan the week together on Sundays. It would make me calmer.\"", bundle: 'free' },
+        { q: "It's the morning after a fight about the kids' bedtime.", a: "\"What do you think set that off last night? I think it's that we each do bedtime differently.\"", bundle: 'free' },
+        { q: "She says, \"So now you're the boss of the house?\"", a: "\"No. I just want us each to own something clearly, so we stop fighting about it.\"", bundle: 'pro' },
+        { q: "She runs the holiday planning now, and you don't love the hotel she picked.", a: "\"Your call. You've got it.\"", bundle: 'pro' },
+        { q: "She suggests you take the school runs and she takes the shopping.", a: "\"Deal. And we don't comment on how the other one does theirs.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Enforce Boundaries with Real Consequences",
+      guideFront: "Say what you'll do, and the way back, when...",
+      guideBack: "An if-then, with a way back in",
+      description: "A boundary needs a consequence, or it's only a preference. Say what you will do if it's crossed — \"If you shout at me, I'll leave the room\" — do it every time, and always show the way back: \"Speak to me calmly and I'll come straight back in.\"\n\nIt works because a clear if-then removes the guessing. She knows what will happen, and she knows how to undo it. Doing it every time is what builds trust: the boundary is reliable, not a mood. And the way back matters as much as the consequence. It says the door is open, not that she's being punished.\n\nThe consequence is something you do — leave the room, end the call, put the talk off until later. It is never something you do to her.\n\nTypical phrases: \"If…, then I'll…\", \"I said I'd step out, so I'm stepping out.\", \"Talk to me calmly and I'll come right back.\", \"The moment we can talk properly, I'm here.\"\n\nThree parts:\n\n1. The if-then, said calmly in advance — \"If you swear at me, I'll end the conversation.\"\n\n2. Follow through, every time — \"I said I'd step out, so I'm stepping out.\"\n\n3. The way back — \"Speak to me calmly and I'll come straight back.\"\n\nMindset: a boundary I don't act on is only a wish.",
+      inputs: [
+        { q: "She has started swearing at you in arguments, and tonight is a calm evening.", a: "\"Can I say something while we're calm? If you swear at me in a fight, I'll leave the room. As soon as we can talk calmly, I'll come back.\"", bundle: 'free' },
+        { q: "She swears at you in the middle of the argument.", a: "\"I said I'd step out if that happened, so I'm stepping out. Talk to me calmly and I'll come straight back.\"", bundle: 'free' },
+        { q: "You're on the phone, and she's shouting.", a: "\"I'm going to end the call now, like I said I would. Call me back when we can talk, and I'll pick up.\"", bundle: 'free' },
+        { q: "You realise you've said \"Don't speak to me like that\" ten times and then stayed.", a: "\"I keep saying it and then staying. From now on, if it happens, I'll go for a walk, and we'll talk after.\"", bundle: 'free' },
+        { q: "She follows you out of the room, still shouting.", a: "\"I'll talk the moment we can do it calmly. Until then, I'm going out for a bit.\"", bundle: 'free' },
+        { q: "She lowers her voice and says, \"Okay. Can we talk properly?\"", a: "\"Yes. I'm back. Thank you.\"", bundle: 'pro' },
+        { q: "She says, \"So that's a threat?\"", a: "\"It's not a threat. I'm telling you what I'll do, so there are no surprises.\"", bundle: 'pro' },
+        { q: "She calls you names in front of your friends.", a: "\"I'm going to head home now. When you want to talk calmly, I'm there.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Master the Leverage of Indifference",
+      guideFront: "Accept a different view calmly when...",
+      guideBack: "A settled \"I don't need you to agree\"",
+      description: "Be content with your own view without needing her to share it. When you see something differently, say so calmly and let it stand. \"We see this differently, and I'm okay with that. I don't need you to agree.\" A difference only becomes a problem when a boundary is crossed — not when she simply thinks otherwise.\n\nIt works because many fights go on only because one person needs the other to agree. Two people with different values and different histories will see things differently, and trying to make the other think like you wears both of you out. When you're settled in your decision without needing her sign-off, the pressure drops — and she feels free to disagree too.\n\nThis is not coldness. It's calm. You still care what she thinks; you just don't need her agreement to feel sure.\n\nTypical phrases: \"We see it differently, and that's fine.\", \"I don't need you to agree.\", \"I've thought about it, and I'm comfortable with it.\", \"You're allowed to see it your way.\"\n\nThree parts:\n\n1. Name the difference — \"We see this differently.\"\n\n2. Stay settled — \"I'm comfortable with my choice.\"\n\n3. Give her the same freedom — \"And you're allowed to see it your way.\"\n\nMindset: I don't need her agreement to feel sure of myself.",
+      inputs: [
+        { q: "She thinks you're wrong to lend your brother money.", a: "\"We see this differently, and that's okay. I've thought about it, and I'm comfortable with it.\"", bundle: 'free' },
+        { q: "You've explained your view on the kids' screen time three times, hoping she'll come round.", a: "\"I don't need you to agree. I just wanted you to know where I stand.\"", bundle: 'free' },
+        { q: "She says, \"I can't believe you think that.\"", a: "\"I do think it. And you can think differently — that's fine with me.\"", bundle: 'free' },
+        { q: "She disagrees with your choice to change jobs.", a: "\"I hear your worries. I've made my decision, and I'm at peace with it.\"", bundle: 'free' },
+        { q: "She keeps pushing you to admit her view of a film is the right one.", a: "\"We just see it differently. I'm happy for us to.\"", bundle: 'free' },
+        { q: "She says, \"You just don't care what I think.\"", a: "\"I do care. I just don't need us to think the same.\"", bundle: 'pro' },
+        { q: "She makes a choice you wouldn't, in an area that's hers.", a: "\"Not how I'd do it, but it's your call, and that's fine.\"", bundle: 'pro' },
+        { q: "She asks why you've stopped arguing back.", a: "\"Because I'm okay with us seeing it differently.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Outsource Her Processing Outside",
+      guideFront: "Suggest a trusted friend to talk to when...",
+      guideBack: "A warm nudge to a friend, plus your part",
+      description: "When she needs to talk something through at length — a long vent, the same worry again and again — warmly suggest someone else she trusts as well: a sister, a good friend, a therapist. Then stay clearly in the part that's yours. \"That's a lot to carry. Have you talked to Sara about it? She'd really get it — and I'm here for us to sort out the bills part.\"\n\nIt works because no one person can be someone's only sounding board. When every worry lands at home, the person nearest can end up feeling blamed for things that aren't about them, and talks at home turn into one long vent. Spreading it out gives her more support, not less, and keeps home for the talks where you work things out together.\n\nIt must never sound like a brush-off. Listen first, say it warmly, and suggest someone with good judgement who wants good things for you both. And it goes both ways: you need people to talk to as well.\n\nTypical phrases: \"Have you talked to Sara about this?\", \"Your sister would really get this.\", \"Would it help to talk it through with someone?\", \"And I'm here for the part that's ours.\"\n\nThree parts:\n\n1. Hear it first — \"That's a lot to carry.\"\n\n2. Suggest someone — \"Have you talked to Sara?\"\n\n3. Stay in your part — \"And I'm here to sort out the bills with you.\"\n\nMindset: she deserves more than one person to lean on, and so do I.",
+      inputs: [
+        { q: "She's been talking about her difficult boss every evening for three weeks.", a: "\"That sounds exhausting. Have you talked to Anna about it? She's had a boss like that. And I'm always happy to help you plan what to say.\"", bundle: 'free' },
+        { q: "She's angry about her mother, and it's turning into another argument with you.", a: "\"That's a lot to carry. Your sister knows your mum too — have you talked to her? I'm here for the part about Christmas.\"", bundle: 'free' },
+        { q: "She's been anxious about the same thing for months.", a: "\"I can see how much this weighs on you. Would it help to talk to a counsellor? I'll help you find one.\"", bundle: 'free' },
+        { q: "She's venting about money, and it keeps turning into blame.", a: "\"I hear how stressful it is. Talk it through with Sara if you like — she's good with this. And let's you and me make a plan for the bills.\"", bundle: 'free' },
+        { q: "She asks, \"Why don't you want to listen to me?\"", a: "\"I do want to listen, and I'm listening now. I just think you deserve more than me to lean on.\"", bundle: 'free' },
+        { q: "She plans to talk it over with a friend who is bitter about her own marriage.", a: "\"I get why — she's been through a lot. Maybe Sara too? She always sees both sides.\"", bundle: 'pro' },
+        { q: "She comes back from coffee with her sister, much calmer.", a: "\"You seem lighter. I'm glad you talked to her. Want to look at the bills together now?\"", bundle: 'pro' },
+        { q: "You've been venting to her about work every night for weeks.", a: "\"I've been dumping a lot of work stuff on you. I'm going to talk to Mike about it this week.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Prioritize the Long-Term Enterprise",
+      guideFront: "Ask what fixes it and keeps you close when...",
+      guideBack: "A question about the fix, not the winner",
+      description: "When you feel the urge to prove you're right, ask different questions instead: can the problem be solved, can we actually do the solution, and do we still feel close? \"I don't need to be right about this. Can we fix the actual problem and still feel close?\"\n\nIt works because \"who's right?\" often has no clear answer. Two people can see the same evening in two honest ways, and both can be valid. Fighting to win turns a small problem into a battle — and you can win an argument on a Tuesday night and lose a little of something you're building over decades. The practical questions get both things that matter: the problem solved, and the two of you still close.\n\nYou don't have to give up your view. You just stop needing to win with it.\n\nTypical phrases: \"I don't need to win this.\", \"Can we fix it, whoever was right?\", \"What would actually solve this?\", \"Are we okay?\"\n\nThree questions:\n\n1. Can it be solved? — \"What's the actual problem?\"\n\n2. Can we do it? — \"Can we both live with that plan?\"\n\n3. Are we close? — \"Are we okay, you and me?\"\n\nMindset: we're building something for decades, and tonight's argument is a small part of it.",
+      inputs: [
+        { q: "You're both arguing about whose fault it was that you missed the train.", a: "\"I don't really mind whose fault it was. Shall we get the next one and grab a coffee?\"", bundle: 'free' },
+        { q: "You're sure you're right about what was said last week, and she's sure she is.", a: "\"We remember it differently. I don't need to win this. What do we want to do about it now?\"", bundle: 'free' },
+        { q: "The argument about the holiday has turned into who's more selfish.", a: "\"I don't need to be right about this. Can we just find a holiday we'll both enjoy?\"", bundle: 'free' },
+        { q: "You've just solved the practical problem, but she still seems distant.", a: "\"We've sorted the money. Are we okay, you and me?\"", bundle: 'free' },
+        { q: "You feel the urge to prove her wrong with a screenshot of the message.", a: "\"Let's leave who said what. What would actually fix this?\"", bundle: 'free' },
+        { q: "She says, \"Just admit I was right.\"", a: "\"You might be. Either way, I want us to sort it out and feel close again.\"", bundle: 'pro' },
+        { q: "You realise you've been arguing about one word, not the problem.", a: "\"Hang on — we're arguing about a word. What's the real problem here?\"", bundle: 'pro' },
+        { q: "Your plan is fair, but she's not sure she can stick to it.", a: "\"Then let's find one we can both actually do. A plan we don't follow helps no one.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -25046,6 +25176,72 @@ const collectionsModeData = {
         { q: "You ask your brother, \"Could you pay back the loan by the summer?\" He says, angrily, \"I can't believe you're bringing this up today.\"", a: "\"Okay. Not today. Can we talk on the phone next week?\" [Try Again Later]", bundle: 'pro', guideBack: "A pause with a time to come back" },
         { q: "You ask your friend, \"Could we meet before nine so I'm home for the babysitter?\" She says, \"It's not a big deal if you're a bit late.\"", a: "\"It might not be to you. It matters to me, so I'd love to start earlier.\" [Hear Them, Keep Yours]", bundle: 'pro', guideBack: "Their point granted, your need restated" },
         { q: "You ask your neighbour, \"Could we share the cost of a new fence?\" He says, \"No. The old one's fine.\"", a: "\"Okay. What would make a new fence worth it for you?\" [Ask What They Need]", bundle: 'pro', guideBack: "A question about their need" },
+      ]
+    },
+  ],
+  alexandergrace9: [
+    {
+      name: "Keep It on Track",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Validate Data, Not Conclusion**, **De-escalate the Emotional Flood** and **Enforce Boundaries with Real Consequences** — three ways to keep a fight about the real issue while it's happening.\n\n• **Validate Data, Not Conclusion** — a real feeling has turned into a story about you\n• **De-escalate the Emotional Flood** — too much at once, and the point is lost\n• **Enforce Boundaries with Real Consequences** — a line you've drawn is being crossed\n\nThe question that decides it: is the problem the story, the amount, or the way you're being spoken to?\n\nThe usual wrong choice is arguing with the story point by point, which feeds the flood.\n\nMindset: I can keep a fight on the real issue without losing my temper or my ground.",
+      inputs: [
+        { q: "She says, \"You don't care about this family at all.\"", a: "\"I can see how tired you are, and it's been a hard month. I do care. What's the main thing right now?\" [Validate Data, Not Conclusion]", bundle: 'pro', guideBack: "A yes to the feeling, a no to the story" },
+        { q: "She's moved from the dishes to your job to your brother in two minutes.", a: "\"Let's take one thing. Can we finish the dishes question first?\" [De-escalate the Emotional Flood]", bundle: 'pro', guideBack: "One point again, or a loving pause" },
+        { q: "She calls you an idiot, which you've said you'll step out over.", a: "\"I'm stepping out, like I said. Talk to me calmly and I'll come straight back.\" [Enforce Boundaries with Real Consequences]", bundle: 'pro', guideBack: "An if-then, with a way back in" },
+        { q: "She's anxious about her exam and says you never support her.", a: "\"Of course you're anxious — it's a big exam. I don't agree I never support you. What would help tonight?\" [Validate Data, Not Conclusion]", bundle: 'pro', guideBack: "A yes to the feeling, a no to the story" },
+        { q: "You've tried twice to get back to the point, and it keeps growing.", a: "\"I love you, and this isn't working right now. I'll step away, and we'll talk at nine.\" [De-escalate the Emotional Flood]", bundle: 'pro', guideBack: "One point again, or a loving pause" },
+        { q: "She's shouting, and you've already said you'll end the call if she does.", a: "\"I'm ending the call now, like I said. Ring me when we can talk, and I'll answer.\" [Enforce Boundaries with Real Consequences]", bundle: 'pro', guideBack: "An if-then, with a way back in" },
+        { q: "She says, \"If you loved me, you'd have remembered.\"", a: "\"I forgot, and I'm sorry you were hurt. It doesn't mean I don't love you.\" [Validate Data, Not Conclusion]", bundle: 'pro', guideBack: "A yes to the feeling, a no to the story" },
+        { q: "She brings up your ex in an argument about the weekend.", a: "\"That's a different conversation. Let's stay with the weekend for now.\" [De-escalate the Emotional Flood]", bundle: 'pro', guideBack: "One point again, or a loving pause" },
+      ]
+    },
+    {
+      name: "Stay Steady",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Let the Awkward Silence Sit**, **Master the Leverage of Indifference** and **Prioritize the Long-Term Enterprise** — three ways to stay calm when the fight can't be won tonight.\n\n• **Let the Awkward Silence Sit** — nothing more can be solved right now\n• **Master the Leverage of Indifference** — she sees it differently, and that's allowed\n• **Prioritize the Long-Term Enterprise** — you're fighting about who's right, not about the problem\n\nThe question that decides it: does this need time, permission to differ, or a practical fix?\n\nThe usual wrong choice is to keep talking until she agrees — which turns a small difference into a long night.\n\nMindset: I don't need to win tonight, or even finish tonight.",
+      inputs: [
+        { q: "You've both said your piece, and the room is quiet and tense.", a: "\"Let's leave it for tonight. We'll talk tomorrow.\" [Let the Awkward Silence Sit]", bundle: 'pro', guideBack: "One short, calm line, then quiet" },
+        { q: "She thinks your plan to buy a motorbike is silly.", a: "\"We see it differently, and that's fine. I've thought it through.\" [Master the Leverage of Indifference]", bundle: 'pro', guideBack: "A settled \"I don't need you to agree\"" },
+        { q: "You're arguing about who forgot to book the restaurant.", a: "\"Whoever forgot, let's find another place. Are we okay?\" [Prioritize the Long-Term Enterprise]", bundle: 'pro', guideBack: "A question about the fix, not the winner" },
+        { q: "She says, \"So you're just going to sit there?\"", a: "\"For now, yes. I'm not angry — I just think we need a break from it.\" [Let the Awkward Silence Sit]", bundle: 'pro', guideBack: "One short, calm line, then quiet" },
+        { q: "She still thinks your parents are too involved, and you don't.", a: "\"I don't see it that way, and I don't need you to. Let's just agree on Sunday.\" [Master the Leverage of Indifference]", bundle: 'pro', guideBack: "A settled \"I don't need you to agree\"" },
+        { q: "You have proof you were right about the date of the party.", a: "\"It doesn't matter who had the date right. How do we fix the clash?\" [Prioritize the Long-Term Enterprise]", bundle: 'pro', guideBack: "A question about the fix, not the winner" },
+        { q: "You feel the urge to text her one more explanation after the argument.", a: "\"I'll leave it there for tonight. Sleep well.\" [Let the Awkward Silence Sit]", bundle: 'pro', guideBack: "One short, calm line, then quiet" },
+        { q: "She says, \"I'll never agree with you on this.\"", a: "\"That's okay. You don't have to.\" [Master the Leverage of Indifference]", bundle: 'pro', guideBack: "A settled \"I don't need you to agree\"" },
+      ]
+    },
+    {
+      name: "Prevent the Next One",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Anchor Logical Leadership at Home**, **Outsource Her Processing Outside** and **Enforce Boundaries with Real Consequences** — three ways to change things after a fight, so the next one is smaller or never starts.\n\n• **Anchor Logical Leadership at Home** — the cause is a fuzzy setup\n• **Outsource Her Processing Outside** — every worry ends up as a long vent at home\n• **Enforce Boundaries with Real Consequences** — the same line keeps getting crossed\n\nThe question that decides it: is the cause who does what, where the worries go, or how you're being treated?\n\nThe usual wrong choice is to promise to \"try harder\" and change nothing.\n\nMindset: after a fight, I look for the change, not the culprit.",
+      inputs: [
+        { q: "You argue every month about who should have paid the electricity bill.", a: "\"I'd like one of us to own the bills. Would you take them, and I'll do the car?\" [Anchor Logical Leadership at Home]", bundle: 'pro', guideBack: "A change, put as your own preference" },
+        { q: "She's been venting about her friend group every night for weeks, and it keeps landing on you.", a: "\"That sounds really hard. Have you talked to your sister? I'm here for us, too.\" [Outsource Her Processing Outside]", bundle: 'pro', guideBack: "A warm nudge to a friend, plus your part" },
+        { q: "She keeps hanging up on you mid-argument and calling back angrier.", a: "\"If you hang up, I'll wait until the evening to talk. If you want to talk calmly sooner, I'm here.\" [Enforce Boundaries with Real Consequences]", bundle: 'pro', guideBack: "An if-then, with a way back in" },
+        { q: "You both keep correcting how the other parents at bedtime.", a: "\"I'd prefer we take turns, and whoever's on does it their way.\" [Anchor Logical Leadership at Home]", bundle: 'pro', guideBack: "A change, put as your own preference" },
+        { q: "She's been worrying about her health for months and only talks to you about it.", a: "\"I'm always here for it. Would it help to talk to your doctor or a friend as well?\" [Outsource Her Processing Outside]", bundle: 'pro', guideBack: "A warm nudge to a friend, plus your part" },
+        { q: "You've said you'll leave the room if she shouts, but you never do.", a: "\"I need to do what I said. Next time there's shouting, I'll step out, and come back when it's calm.\" [Enforce Boundaries with Real Consequences]", bundle: 'pro', guideBack: "An if-then, with a way back in" },
+        { q: "You keep arguing about the weekend plans because nobody owns them.", a: "\"What if you plan Saturdays and I plan Sundays? I'd like that.\" [Anchor Logical Leadership at Home]", bundle: 'pro', guideBack: "A change, put as your own preference" },
+        { q: "She's angry about her colleague again, and it's turning into a fight with you.", a: "\"That's a lot. Could you talk to Tom about it tomorrow? He works with her.\" [Outsource Her Processing Outside]", bundle: 'pro', guideBack: "A warm nudge to a friend, plus your part" },
+      ]
+    },
+    {
+      name: "All Eight Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, the way real fights come.\n\nThree are for the middle of it: **Validate Data, Not Conclusion**, **De-escalate the Emotional Flood** and **Enforce Boundaries with Real Consequences**. Three are about how you hold yourself: **Let the Awkward Silence Sit**, **Master the Leverage of Indifference** and **Prioritize the Long-Term Enterprise**. Two are for afterwards: **Anchor Logical Leadership at Home** and **Outsource Her Processing Outside**.\n\nIf you are unsure, ask: are we in it, stuck in it, or out of it?\n\nThe usual wrong choice is reaching for the fix while voices are still raised — or trying to win when you should be fixing.\n\nMindset: the aim isn't to win the fight. It's to solve the problem and stay close.",
+      inputs: [
+        { q: "She says, \"You obviously don't think my job matters.\"", a: "\"I can see the new job is stressful. I don't agree I think it doesn't matter. What's the hardest part?\" [Validate Data, Not Conclusion]", bundle: 'pro', guideBack: "A yes to the feeling, a no to the story" },
+        { q: "Ten different complaints have come out in five minutes.", a: "\"Let's take one. Which matters most to you right now?\" [De-escalate the Emotional Flood]", bundle: 'pro', guideBack: "One point again, or a loving pause" },
+        { q: "She slams the door and swears at you, which you've said you'll step out over.", a: "\"I'm going out for a bit, like I said. When we can talk calmly, I'll be right back.\" [Enforce Boundaries with Real Consequences]", bundle: 'pro', guideBack: "An if-then, with a way back in" },
+        { q: "It's quiet after the fight, and you feel the urge to keep explaining.", a: "\"Let's leave it for now. I'll make us some tea.\" [Let the Awkward Silence Sit]", bundle: 'pro', guideBack: "One short, calm line, then quiet" },
+        { q: "She doesn't agree with how you handled your son's school report.", a: "\"We see it differently, and that's okay. I'm comfortable with what I said to him.\" [Master the Leverage of Indifference]", bundle: 'pro', guideBack: "A settled \"I don't need you to agree\"" },
+        { q: "You're arguing about who left the back door open.", a: "\"It doesn't matter who. Can we just check it every night before bed?\" [Prioritize the Long-Term Enterprise]", bundle: 'pro', guideBack: "A question about the fix, not the winner" },
+        { q: "The day after the fight about the shopping, you're both calm.", a: "\"I think we fight about shopping because we both half-do it. Would you take it, and I'll take the cleaning?\" [Anchor Logical Leadership at Home]", bundle: 'pro', guideBack: "A change, put as your own preference" },
+        { q: "She's been upset about her father for weeks, and every evening ends in tears and blame.", a: "\"That's so much to carry. Have you talked to your brother about it? And I'm here for you, every evening.\" [Outsource Her Processing Outside]", bundle: 'pro', guideBack: "A warm nudge to a friend, plus your part" },
       ]
     },
   ],

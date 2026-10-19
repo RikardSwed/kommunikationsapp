@@ -14490,4 +14490,134 @@ const mindsetCollections = {
       ]
     },
   ],
+  alexandergrace9: [
+    {
+      name: "Taking Space",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I step away, I've lost.\" The belief that leaving a heated argument is a defeat.\n\nWhat is true instead: taking space with a return time is strength. You choose the terms you'll be spoken to on, and you stop the fight before it does damage.\n\nIt feels reasonable because stepping away can feel like backing down, or like handing her the last word.\n\nWhat it costs is staying in fights that only get worse, and saying things you can't take back.\n\nMindset: stepping away is a reset, not a defeat.",
+      inputs: [
+        { q: "If I step away, I've lost.", a: "\"If I say when I'm coming back, I've just pressed pause.\"", bundle: 'pro' },
+        { q: "She'll think she won.", a: "\"Nobody wins a fight like this; a break means we both lose less.\"", bundle: 'pro' },
+        { q: "Leaving the room is weak.", a: "\"Choosing how I'm spoken to takes more strength than shouting back.\"", bundle: 'pro' },
+        { q: "I have to finish it now.", a: "\"We'll finish it better in twenty minutes.\"", bundle: 'pro' },
+        { q: "If I go, she'll get angrier.", a: "\"She might for a moment; staying and shouting would be worse.\"", bundle: 'pro' },
+        { q: "A real man stays and argues it out.", a: "\"A grown man knows when talking has stopped helping.\"", bundle: 'pro' },
+        { q: "I can't leave while she's this upset.", a: "\"I can leave kindly, and come back when it'll help.\"", bundle: 'pro' },
+        { q: "Taking space means I don't care.", a: "\"Saying 'I love you, back in twenty' shows I do.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Agreement",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"We have to agree on everything.\" The belief that a good couple sees things the same way.\n\nWhat is true instead: two different people will see things differently, and that's healthy. Broad agreement on the big things matters; total agreement is a fantasy, and trying to force it is exhausting.\n\nIt feels reasonable because disagreement feels like distance, and agreeing feels like being close.\n\nWhat it costs is endless arguments that are really attempts to make the other think like you.\n\nMindset: we can see it differently and still be on the same side.",
+      inputs: [
+        { q: "We have to agree on everything.", a: "\"We have to agree on enough, and respect the rest.\"", bundle: 'pro' },
+        { q: "If she disagrees, something's wrong between us.", a: "\"If she disagrees, she's a different person — which I knew.\"", bundle: 'pro' },
+        { q: "I need her to see I'm right.", a: "\"I need to be comfortable with my choice; that's enough.\"", bundle: 'pro' },
+        { q: "Different views will pull us apart.", a: "\"Different views can cover more ground, if we're on the same team.\"", bundle: 'pro' },
+        { q: "I'll keep explaining until she gets it.", a: "\"She gets it; she just sees it differently.\"", bundle: 'pro' },
+        { q: "Couples who really work think alike.", a: "\"Couples who work can disagree without a war.\"", bundle: 'pro' },
+        { q: "If I let it go, she'll think she's right.", a: "\"She can think that, and I can think what I think.\"", bundle: 'pro' },
+        { q: "Her different opinion is a threat.", a: "\"Her opinion is only a problem if a boundary gets crossed.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Winning",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I stand up for what's true. I won't let something false go unchallenged.\" A belief that feels like honesty — and partly is.\n\nWhat is true instead: in a relationship, two people often have two valid versions of the same evening. The need to settle who's right is usually stress about not knowing, not a love of truth.\n\nIt feels reasonable because being correct feels like being fair, and letting it go feels like lying.\n\nWhat it costs is turning small problems into battles, and risking a long partnership over one Tuesday-night argument.\n\nMindset: I'd rather solve it and stay close than be proved right.",
+      inputs: [
+        { q: "I stand up for what's true.", a: "\"And I turn a small problem into a court case.\"", bundle: 'pro' },
+        { q: "I won't let something false go unchallenged.", a: "\"And I end up challenging her memory instead of fixing the problem.\"", bundle: 'pro' },
+        { q: "I just like things to be clear.", a: "\"And I push for certainty in places where there isn't any.\"", bundle: 'pro' },
+        { q: "I'm only correcting the facts.", a: "\"And she hears that her experience doesn't count.\"", bundle: 'pro' },
+        { q: "Someone has to be right.", a: "\"And we spend the evening finding out who, instead of what to do.\"", bundle: 'pro' },
+        { q: "I don't back down when I know I'm right.", a: "\"And I win the point and lose the closeness.\"", bundle: 'pro' },
+        { q: "I'm logical; I go by the evidence.", a: "\"And I bring screenshots to a conversation about feelings.\"", bundle: 'pro' },
+        { q: "I'm honest, even when it's hard.", a: "\"And I mistake winning for honesty.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Silence",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If it's quiet, it's falling apart.\" The belief that an unresolved, awkward evening means the relationship is in danger.\n\nWhat is true instead: time and space often do more than talking. Feelings settle on their own, and the next conversation starts calmer. An awkward evening is just an awkward evening.\n\nIt feels reasonable because silence after a fight is uncomfortable, and talking feels like doing something.\n\nWhat it costs is pushing for a fix too early, and talking a calm-ish evening back into a fight.\n\nMindset: quiet after a fight is time working, not love ending.",
+      inputs: [
+        { q: "If it's quiet, it's falling apart.", a: "\"If it's quiet, we're both cooling down.\"", bundle: 'pro' },
+        { q: "I have to fix the mood before bed.", a: "\"The mood will be better in the morning without my help.\"", bundle: 'pro' },
+        { q: "Silence means she's angry with me forever.", a: "\"Silence means she needs time, and so do I.\"", bundle: 'pro' },
+        { q: "I should keep talking until it's okay.", a: "\"More talking tonight is what's keeping it not okay.\"", bundle: 'pro' },
+        { q: "An unresolved fight is a failed relationship.", a: "\"An unresolved fight is one we'll finish tomorrow.\"", bundle: 'pro' },
+        { q: "I can't stand the awkwardness.", a: "\"I can stand it for one evening; it passes.\"", bundle: 'pro' },
+        { q: "If I'm sweet enough, she'll calm down.", a: "\"Sometimes even sweet words keep it going; space helps more.\"", bundle: 'pro' },
+        { q: "Leaving it means I don't care.", a: "\"Leaving it for tonight is caring about how tomorrow goes.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sounding Boards",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"A good partner listens to everything, every time.\" A belief that feels like devotion — and listening really is part of love.\n\nWhat is true instead: nobody can be someone's only sounding board, and it goes both ways. When every worry lands at home, the person nearest ends up blamed for things that aren't about them.\n\nIt feels reasonable because suggesting someone else can feel like rejecting her.\n\nWhat it costs is a home that turns into one long vent, and two people with fewer people to lean on.\n\nMindset: more people to lean on makes us stronger, not weaker.",
+      inputs: [
+        { q: "A good partner listens to everything, every time.", a: "\"And I end up as the target for worries that aren't about me.\"", bundle: 'pro' },
+        { q: "She should be able to tell me anything.", a: "\"She can, and she deserves more people than me to tell.\"", bundle: 'pro' },
+        { q: "I don't need anyone but her to talk to.", a: "\"And she carries all of my worries on her own.\"", bundle: 'pro' },
+        { q: "Suggesting a friend would be rejecting her.", a: "\"And so she ends up with just me, which isn't enough for anyone.\"", bundle: 'pro' },
+        { q: "What happens between us stays between us.", a: "\"And neither of us gets an outside view when we're stuck.\"", bundle: 'pro' },
+        { q: "I'm always there for her.", a: "\"And our home has become the only place her worries can go.\"", bundle: 'pro' },
+        { q: "I should be enough for her.", a: "\"And I take on a job no single person can do.\"", bundle: 'pro' },
+        { q: "I'd never send her elsewhere to talk.", a: "\"And the long vents turn into fights at home.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Consequences",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I say it clearly enough, that's a boundary.\" The belief that a boundary is something you state, not something you do.\n\nWhat is true instead: a boundary without a consequence is a preference, and preferences don't have to be followed. What makes it real is that you act on it, every time — and always show the way back.\n\nIt feels reasonable because acting on it feels harsh, and repeating the request feels kinder.\n\nWhat it costs is saying the same thing for years while nothing changes, and slowly resenting her for it.\n\nMindset: a boundary is what I do, not just what I say.",
+      inputs: [
+        { q: "If I say it clearly enough, that's a boundary.", a: "\"It's a boundary once I act on it.\"", bundle: 'pro' },
+        { q: "Following through is too harsh.", a: "\"Following through calmly, with a way back, is kinder than resenting her.\"", bundle: 'pro' },
+        { q: "Consequences are threats.", a: "\"A threat is meant to scare; a consequence just says what I'll do.\"", bundle: 'pro' },
+        { q: "I'll do it next time.", a: "\"I said that last time; this is next time.\"", bundle: 'pro' },
+        { q: "She knows how I feel; that should be enough.", a: "\"Knowing how I feel isn't the same as knowing what I'll do.\"", bundle: 'pro' },
+        { q: "If I leave the room, I'm punishing her.", a: "\"Not if I tell her how to bring me straight back.\"", bundle: 'pro' },
+        { q: "Being consistent is cold.", a: "\"Being consistent is what makes me easy to trust.\"", bundle: 'pro' },
+        { q: "I can't make a consequence stick.", a: "\"I can always choose to leave the room.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Validation",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"Her story about me isn't true, so I shouldn't validate anything.\" Half true — the story may well be wrong.\n\nWhat is true: you don't have to agree with a conclusion that isn't true about you.\n\nWhat gets added is that her feeling is wrong too. The feeling and the facts can be real even when the story isn't, and saying so lowers the heat.\n\nWhat it costs is arguing about the story while she feels completely unheard.\n\nMindset: keep my no to the story; drop the no to her feeling.",
+      inputs: [
+        { q: "Her story about me isn't true, so I shouldn't validate anything.", a: "\"True — but 'so her feeling isn't real either' is the part I added.\"", bundle: 'pro' },
+        { q: "If I say it makes sense, I'm admitting I'm the bad guy.", a: "\"True that I'm not the bad guy — but 'so it can't make sense' is the part I added.\"", bundle: 'pro' },
+        { q: "She's exaggerating.", a: "\"True, maybe — but 'so she isn't really stressed' is the part I added.\"", bundle: 'pro' },
+        { q: "I shouldn't encourage the drama.", a: "\"True that I won't feed the story — but 'so I can't comfort her' is the part I added.\"", bundle: 'pro' },
+        { q: "Agreeing just to calm her down is dishonest.", a: "\"True — but 'so I can't agree with anything' is the part I added.\"", bundle: 'pro' },
+        { q: "The facts are on my side.", a: "\"True, perhaps — but 'so her feeling doesn't count' is the part I added.\"", bundle: 'pro' },
+        { q: "Validating her means giving in.", a: "\"True that I won't give in on the story — but 'validating is giving in' is the part I added.\"", bundle: 'pro' },
+        { q: "Comforting her won't solve the problem.", a: "\"True — but 'so it's a waste of time' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Roles",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Splitting tasks clearly is cold. Good couples just pitch in.\" The belief that clear ownership at home is unromantic.\n\nWhat is true instead: shared, fuzzy jobs cause many repeat fights. When each of you owns something, and the other stays out of how it's done, there's simply less to argue about.\n\nIt feels reasonable because \"we do everything together\" sounds close and warm.\n\nWhat it costs is the same fight about the bills, the dishes or bedtime, over and over.\n\nMindset: clear jobs make room for a warmer home.",
+      inputs: [
+        { q: "Splitting tasks clearly is cold.", a: "\"Fighting about the same tasks every week is colder.\"", bundle: 'pro' },
+        { q: "Good couples just pitch in.", a: "\"When we both pitch in, we both end up criticising.\"", bundle: 'pro' },
+        { q: "We'll just hold each other accountable.", a: "\"That's how we got into this; one owner per job is easier.\"", bundle: 'pro' },
+        { q: "If it's her job, I'll still have opinions.", a: "\"If it's her job, my opinion can wait until she asks.\"", bundle: 'pro' },
+        { q: "Suggesting a change makes me controlling.", a: "\"Saying what I'd prefer isn't controlling; it's honest.\"", bundle: 'pro' },
+        { q: "She'll hear it as me bossing her around.", a: "\"Not if I say it as what I want, not what she needs.\"", bundle: 'pro' },
+        { q: "Structure kills romance.", a: "\"Less fighting about the bins leaves more room for romance.\"", bundle: 'pro' },
+        { q: "We should be able to figure it out as we go.", a: "\"We've been figuring it out for years; let's decide it once.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };

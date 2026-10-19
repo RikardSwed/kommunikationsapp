@@ -26610,4 +26610,188 @@ const memorizeCollections = {
       ]
     },
   ],
+  alexandergrace9: [
+    {
+      name: "Core Idea",
+      description: "Eight strategies for fights that get solved:\n\n1. Validate Data, Not Conclusion\n2. De-escalate the Emotional Flood\n3. Let the Awkward Silence Sit\n4. Anchor Logical Leadership at Home\n5. Enforce Boundaries with Real Consequences\n6. Master the Leverage of Indifference\n7. Outsource Her Processing Outside\n8. Prioritize the Long-Term Enterprise\n\nThree for the middle of a fight, two for after, three for how you hold yourself.",
+      cards: [
+        { q: "What are the eight strategies in this pack?", a: "Validate Data Not Conclusion, De-escalate the Emotional Flood, Let the Awkward Silence Sit, Anchor Logical Leadership at Home, Enforce Boundaries with Real Consequences, Master the Leverage of Indifference, Outsource Her Processing Outside, Prioritize the Long-Term Enterprise.", bundle: 'free' },
+        { q: "How do the eight fit together?", a: "Three for the middle of a fight, two for afterwards, and three for how you hold yourself.", bundle: 'free' },
+        { q: "What is the aim of a fight, in this pack?", a: "To solve the problem and still feel close — not to win.", bundle: 'free' },
+        { q: "What is the difference between a feeling and a conclusion?", a: "A feeling is about a real problem. A conclusion is a story about you.", bundle: 'free' },
+        { q: "What is a boundary without a consequence?", a: "A preference.", bundle: 'free' },
+        { q: "Which three strategies are more about how you hold yourself than what you say?", a: "Let the Awkward Silence Sit, Master the Leverage of Indifference, and Prioritize the Long-Term Enterprise.", bundle: 'pro' },
+        { q: "How is this pack different from Fights That End Closer?", a: "That one pauses and reconnects. This one keeps the fight on the real issue, holds boundaries, and changes the setup afterwards.", bundle: 'pro' },
+        { q: "What is the best fix for a fight?", a: "The change that stops the next one.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Validate Data, Not Conclusion",
+      description: "",
+      cards: [
+        { q: "What is Validate Data, Not Conclusion?", a: "Saying her feeling makes sense and the facts are real, without agreeing to the story built on them.", bundle: 'free' },
+        { q: "How does Validate Data, Not Conclusion sound?", a: "\"I can see you're stressed about the budget, and that makes sense. I don't agree that I don't care about you.\"", bundle: 'free' },
+        { q: "When is Validate Data, Not Conclusion the right one?", a: "When a real feeling comes with a story about you attached.", bundle: 'free' },
+        { q: "What are the three parts?", a: "The feeling, the facts, and the line.", bundle: 'free' },
+        { q: "Why does it work?", a: "Accepting the feeling lowers the heat; refusing the story keeps the real problem in view.", bundle: 'free' },
+        { q: "When does Validate Data, Not Conclusion go wrong?", a: "When you agree to the story just to calm things down.", bundle: 'pro' },
+        { q: "What is Validate Data, Not Conclusion better than, and why?", a: "Arguing with the story, which leaves her feeling unheard.", bundle: 'pro' },
+        { q: "Is validating the same as solving?", a: "No. You comfort her, and you still keep your eye on what needs fixing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "De-escalate the Emotional Flood",
+      description: "",
+      cards: [
+        { q: "What is De-escalate the Emotional Flood?", a: "Bringing a flooded argument back to one point — or pausing it with love and a time to return.", bundle: 'free' },
+        { q: "How does De-escalate the Emotional Flood sound?", a: "\"I love you and I want to sort this. Right now it's not productive. I'll step away and we'll talk in twenty minutes.\"", bundle: 'free' },
+        { q: "When is De-escalate the Emotional Flood the right one?", a: "When too much comes at once and the point gets lost.", bundle: 'free' },
+        { q: "What are the three steps?", a: "Name it kindly, return to the point, and pause with love if it keeps flooding.", bundle: 'free' },
+        { q: "Why does returning to one point help?", a: "Nobody can solve ten problems at once.", bundle: 'free' },
+        { q: "When does De-escalate the Emotional Flood go wrong?", a: "When the pause has no \"I love you\" and no return time.", bundle: 'pro' },
+        { q: "What is De-escalate the Emotional Flood better than, and why?", a: "Answering every point, which makes the flood bigger.", bundle: 'pro' },
+        { q: "How is it different from just walking off?", a: "You say you love her, why you're pausing, and when you'll be back.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Let the Awkward Silence Sit",
+      description: "",
+      cards: [
+        { q: "What is Let the Awkward Silence Sit?", a: "Leaving it unresolved for now, with one calm line, instead of talking to fix the mood.", bundle: 'free' },
+        { q: "How does Let the Awkward Silence Sit sound?", a: "\"I don't think we'll sort this tonight. Let's leave it for now.\"", bundle: 'free' },
+        { q: "When is Let the Awkward Silence Sit the right one?", a: "When nothing more can be solved right now.", bundle: 'free' },
+        { q: "What are the two parts?", a: "One calm line, then quiet — and a normal, friendly evening.", bundle: 'free' },
+        { q: "Why does it work?", a: "Every extra word gives the argument more to hold on to; time lets feelings settle.", bundle: 'free' },
+        { q: "When does Let the Awkward Silence Sit go wrong?", a: "When it turns into the silent treatment.", bundle: 'pro' },
+        { q: "What is Let the Awkward Silence Sit better than, and why?", a: "Talking until it's fixed, which can talk a calm evening back into a fight.", bundle: 'pro' },
+        { q: "Is an awkward evening a broken relationship?", a: "No. It's just an awkward evening.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Anchor Logical Leadership at Home",
+      description: "",
+      cards: [
+        { q: "What is Anchor Logical Leadership at Home?", a: "Finding what caused a fight and changing the setup, said as your own preference.", bundle: 'free' },
+        { q: "How does Anchor Logical Leadership at Home sound?", a: "\"That's your task, this is mine, and we don't have opinions on how the other does theirs.\"", bundle: 'free' },
+        { q: "When is Anchor Logical Leadership at Home the right one?", a: "After a fight has cooled — especially one that keeps coming back.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Find the cause, change the setup, and say it as yours.", bundle: 'free' },
+        { q: "What often causes repeat fights?", a: "A fuzzy setup where nobody clearly owns the task.", bundle: 'free' },
+        { q: "When does Anchor Logical Leadership at Home go wrong?", a: "When it's said as \"for your own good\".", bundle: 'pro' },
+        { q: "What is Anchor Logical Leadership at Home better than, and why?", a: "\"We'll both try harder\", which changes nothing.", bundle: 'pro' },
+        { q: "Why anchor the change in yourself?", a: "You're allowed to want things, and she can hear you're not trying to manage her.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Enforce Boundaries with Real Consequences",
+      description: "",
+      cards: [
+        { q: "What is Enforce Boundaries with Real Consequences?", a: "Saying what you'll do if a line is crossed, doing it every time, and showing the way back.", bundle: 'free' },
+        { q: "How does Enforce Boundaries with Real Consequences sound?", a: "\"If you shout at me, I'll leave the room. Speak to me calmly and I'll come straight back in.\"", bundle: 'free' },
+        { q: "When is Enforce Boundaries with Real Consequences the right one?", a: "When the way you're spoken to crosses a line you've drawn.", bundle: 'free' },
+        { q: "What are the three parts?", a: "The if-then, following through every time, and the way back.", bundle: 'free' },
+        { q: "Why does it build trust?", a: "She knows what will happen, and how to undo it.", bundle: 'free' },
+        { q: "When does Enforce Boundaries with Real Consequences go wrong?", a: "When there's no way back, or you don't follow through.", bundle: 'pro' },
+        { q: "What is Enforce Boundaries with Real Consequences better than, and why?", a: "Repeating the request, which turns the boundary into a preference.", bundle: 'pro' },
+        { q: "What kind of thing is the consequence?", a: "Something you do — never something you do to her.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Master the Leverage of Indifference",
+      description: "",
+      cards: [
+        { q: "What is Master the Leverage of Indifference?", a: "Being settled in your own view without needing her to agree.", bundle: 'free' },
+        { q: "How does Master the Leverage of Indifference sound?", a: "\"We see this differently, and I'm okay with that. I don't need you to agree.\"", bundle: 'free' },
+        { q: "When is Master the Leverage of Indifference the right one?", a: "When you simply see something differently, and no boundary is crossed.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Name the difference, stay settled, and give her the same freedom.", bundle: 'free' },
+        { q: "Why does it work?", a: "Many fights go on only because one person needs the other to agree.", bundle: 'free' },
+        { q: "When does Master the Leverage of Indifference go wrong?", a: "When it turns cold instead of calm.", bundle: 'pro' },
+        { q: "What is Master the Leverage of Indifference better than, and why?", a: "Explaining until she agrees, which wears you both out.", bundle: 'pro' },
+        { q: "When does a difference become a problem?", a: "Only when a boundary is crossed.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Outsource Her Processing Outside",
+      description: "",
+      cards: [
+        { q: "What is Outsource Her Processing Outside?", a: "Warmly suggesting someone she trusts to talk long worries through with, and staying in the part that's yours.", bundle: 'free' },
+        { q: "How does Outsource Her Processing Outside sound?", a: "\"That's a lot to carry. Have you talked to Sara about it? She'd really get it — and I'm here for us to sort out the bills part.\"", bundle: 'free' },
+        { q: "When is Outsource Her Processing Outside the right one?", a: "When the same worry or long vent keeps landing at home.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Hear it first, suggest someone, and stay in your part.", bundle: 'free' },
+        { q: "Why does it work?", a: "No one person can be someone's only sounding board.", bundle: 'free' },
+        { q: "When does Outsource Her Processing Outside go wrong?", a: "When it sounds like a brush-off.", bundle: 'pro' },
+        { q: "Who makes a good sounding board?", a: "Someone with good judgement who wants good things for you both.", bundle: 'pro' },
+        { q: "Does it apply to you too?", a: "Yes. You need people to talk to as well.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Prioritize the Long-Term Enterprise",
+      description: "",
+      cards: [
+        { q: "What is Prioritize the Long-Term Enterprise?", a: "Dropping who's right, and asking whether it can be solved, done, and still leave you close.", bundle: 'free' },
+        { q: "How does Prioritize the Long-Term Enterprise sound?", a: "\"I don't need to be right about this. Can we fix the actual problem and still feel close?\"", bundle: 'free' },
+        { q: "When is Prioritize the Long-Term Enterprise the right one?", a: "When the fight has turned into a contest about who's right.", bundle: 'free' },
+        { q: "What are the three questions?", a: "Can it be solved? Can we do it? Are we close?", bundle: 'free' },
+        { q: "Why does \"who's right?\" often fail?", a: "Two people can see the same evening in two honest, valid ways.", bundle: 'free' },
+        { q: "When does Prioritize the Long-Term Enterprise go wrong?", a: "When it becomes giving up your view altogether.", bundle: 'pro' },
+        { q: "What is Prioritize the Long-Term Enterprise better than, and why?", a: "Winning the argument, which can cost closeness you're building over decades.", bundle: 'pro' },
+        { q: "Do you have to give up your view?", a: "No. You just stop needing to win with it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The four collections in this pack, and what each one makes you choose between:\n\n• **Keep It on Track** — the story, the amount, or the way you're spoken to\n• **Stay Steady** — time, permission to differ, or a practical fix\n• **Prevent the Next One** — who does what, where worries go, or how you're treated\n• **All Eight Strategies** — no cue given, which is the real thing\n\nOne question sorts most of it: are we in it, stuck in it, or out of it?",
+      cards: [
+        { q: "What are the four collections in this pack?", a: "Keep It on Track, Stay Steady, Prevent the Next One, and All Eight Strategies.", bundle: 'pro' },
+        { q: "What question decides Keep It on Track?", a: "Is the problem the story, the amount, or the way I'm being spoken to?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Keep It on Track?", a: "Arguing with the story point by point.", bundle: 'pro' },
+        { q: "What question decides Stay Steady?", a: "Does this need time, permission to differ, or a practical fix?", bundle: 'pro' },
+        { q: "What question decides Prevent the Next One?", a: "Is the cause who does what, where the worries go, or how I'm being treated?", bundle: 'pro' },
+        { q: "What is the usual wrong choice after a fight?", a: "Promising to try harder and changing nothing.", bundle: 'pro' },
+        { q: "A real feeling comes with a story about you. Which strategy?", a: "Validate Data, Not Conclusion.", bundle: 'pro' },
+        { q: "The same fight keeps coming back about a shared task. Which strategy?", a: "Anchor Logical Leadership at Home.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The four sequences in this pack, and the order each one runs in:\n\n1. **The Full Resolution** — Validate → De-escalate → Prioritize the Long-Term\n2. **Pause, Hold, Return** — De-escalate → Let the Silence Sit → Enforce Boundaries\n3. **The Fix That Lasts** — Prioritize the Long-Term → Anchor → Indifference\n4. **The Calmer Home** — Validate → Outsource → Anchor\n\nTwo of the four end with a change to the setup.",
+      cards: [
+        { q: "What are the four sequences in this pack?", a: "The Full Resolution, Pause Hold Return, The Fix That Lasts, and The Calmer Home.", bundle: 'pro' },
+        { q: "What is the order in The Full Resolution?", a: "Validate Data Not Conclusion, De-escalate the Emotional Flood, Prioritize the Long-Term Enterprise.", bundle: 'pro' },
+        { q: "Why does the feeling come first in The Full Resolution?", a: "Nothing else lands until the feeling has been heard.", bundle: 'pro' },
+        { q: "What is the order in Pause, Hold, Return?", a: "De-escalate the Emotional Flood, Let the Awkward Silence Sit, Enforce Boundaries with Real Consequences.", bundle: 'pro' },
+        { q: "What turns the pause into an open door?", a: "The way back — speak calmly, and I'll return.", bundle: 'pro' },
+        { q: "What is the order in The Fix That Lasts?", a: "Prioritize the Long-Term Enterprise, Anchor Logical Leadership at Home, Master the Leverage of Indifference.", bundle: 'pro' },
+        { q: "Why drop who was right before suggesting a fix?", a: "Nobody discusses a fix while they're still defending their side.", bundle: 'pro' },
+        { q: "What is the order in The Calmer Home?", a: "Validate Data Not Conclusion, Outsource Her Processing Outside, Anchor Logical Leadership at Home.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The six challenges to master in this pack:\n\n• **The Victim Story** — a real feeling with a false story about you\n• **Flooding the Zone** — too much at once\n• **She Escalates When You Step Away** — the pause gets bigger, not smaller\n• **Who's Right?** — the fight becomes a contest\n• **The Same Fight Again** — a fuzzy setup keeps causing it\n• **No Consequence** — a boundary that was only a preference\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the six challenges in this pack?", a: "The Victim Story, Flooding the Zone, She Escalates When You Step Away, Who's Right, The Same Fight Again, and No Consequence.", bundle: 'pro' },
+        { q: "What should you avoid with the victim story?", a: "\"Fine, I don't care. Happy now?\"", bundle: 'pro' },
+        { q: "What should you avoid when the zone is flooded?", a: "Answering every point, one by one.", bundle: 'pro' },
+        { q: "What should you avoid when she escalates as you step away?", a: "Turning round to win the last word.", bundle: 'pro' },
+        { q: "What should you avoid when it's about who's right?", a: "Bringing out the evidence.", bundle: 'pro' },
+        { q: "What should you avoid with the same fight again?", a: "\"We'll both just try harder.\"", bundle: 'pro' },
+        { q: "What should you avoid with no consequence?", a: "A consequence you won't follow through on.", bundle: 'pro' },
+        { q: "What is the main strategy for the same fight again?", a: "Anchor Logical Leadership at Home.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Taking Space** — stepping away is a reset, not a defeat\n• **Agreement** — we can differ and still be on the same side\n• **Winning** — being right costs more than it gives\n• **Silence** — quiet after a fight is time working\n• **Sounding Boards** — more people to lean on, for both of us\n• **Consequences** — a boundary is what I do\n• **Validation** — no to the story, yes to the feeling\n• **Roles** — clear jobs make a warmer home\n\nMost of them mistake winning or agreeing for being close.",
+      cards: [
+        { q: "What are the eight mindsets in this pack?", a: "Taking Space, Agreement, Winning, Silence, Sounding Boards, Consequences, Validation, and Roles.", bundle: 'pro' },
+        { q: "What is true instead of \"if I step away, I've lost\"?", a: "Taking space with a return time is strength, not defeat.", bundle: 'pro' },
+        { q: "What is true instead of \"we have to agree on everything\"?", a: "Broad agreement matters; total agreement is a fantasy.", bundle: 'pro' },
+        { q: "What does the need to win quietly cost?", a: "Turning small problems into battles, and risking closeness over one argument.", bundle: 'pro' },
+        { q: "What does quiet after a fight usually mean?", a: "That feelings are settling — time is working.", bundle: 'pro' },
+        { q: "What does being her only sounding board cost?", a: "You become the target for worries that aren't about you.", bundle: 'pro' },
+        { q: "What makes a boundary real?", a: "Acting on it every time, with a way back.", bundle: 'pro' },
+        { q: "What is the half-truth in \"her story isn't true, so I shouldn't validate\"?", a: "The story may be wrong; the feeling can still be real.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

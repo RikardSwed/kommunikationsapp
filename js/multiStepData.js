@@ -20670,4 +20670,146 @@ const multiStepCollections = {
       ]
     },
   ],
+  alexandergrace9: [
+    {
+      name: "The Full Resolution",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Validate Data, Not Conclusion**, then **De-escalate the Emotional Flood**, then **Prioritize the Long-Term Enterprise**. How a fight can go from a story about you to a solved problem.\n\n1. **Validate Data, Not Conclusion** — accept the feeling and the facts, not the story.\n2. **De-escalate the Emotional Flood** — when more comes pouring in, return to the one point.\n3. **Prioritize the Long-Term Enterprise** — fix the problem, and check you're still close.\n\nWhy this order: the feeling has to be heard before anything else lands. Then the conversation needs one point to stand on. Only then can you ask the practical question.\n\nThe usual order is arguing the story, then the flood, then giving up.\n\nMindset: hear it, narrow it, fix it.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She's upset that you haven't booked a holiday this year, and it's turning into a fight.",
+          steps: [
+            { front: "Validate Data, Not Conclusion — she says, \"You'd rather save money than spend time with me.\"", back: "\"I get why you're disappointed — we haven't been away in ages. It's not that I don't want time with you.\"", guideFront: "Affirm the feeling and the facts when...", guideBack: "A yes to the feeling, a no to the story" },
+            { front: "De-escalate the Emotional Flood — she adds your work hours, your phone, and last Christmas.", back: "\"That's a lot of things. Can we just sort out the holiday first?\"", guideFront: "Bring it back to one point when...", guideBack: "One point again, or a loving pause" },
+            { front: "Prioritize the Long-Term Enterprise — she takes a breath and nods.", back: "\"What if we book four days in May? Would that feel good to you?\"", guideFront: "Ask what fixes it and keeps you close when...", guideBack: "A question about the fix, not the winner" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She found the credit card bill and is angry about how much you spent on your bike.",
+          steps: [
+            { front: "Validate Data, Not Conclusion — she says, \"You only ever spend money on yourself.\"", back: "\"That's a big bill, and I see why it worried you. I don't think I only spend on myself, though.\"", guideFront: "Affirm the feeling and the facts when...", guideBack: "A yes to the feeling, a no to the story" },
+            { front: "De-escalate the Emotional Flood — she starts listing purchases from last year.", back: "\"Let's stay with this month. What's the main worry?\"", guideFront: "Bring it back to one point when...", guideBack: "One point again, or a loving pause" },
+            { front: "Prioritize the Long-Term Enterprise — she says, \"That we won't have enough for the rent.\"", back: "\"Then let's fix that. Can we set a limit for each of us, so we both feel safe?\"", guideFront: "Ask what fixes it and keeps you close when...", guideBack: "A question about the fix, not the winner" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You forgot to pick up her dry cleaning, and she needed the dress tonight.",
+          steps: [
+            { front: "Validate Data, Not Conclusion — she says, \"You never listen to anything I ask.\"", back: "\"I forgot, and I'm sorry — you needed that dress. I do listen, though.\"", guideFront: "Affirm the feeling and the facts when...", guideBack: "A yes to the feeling, a no to the story" },
+            { front: "De-escalate the Emotional Flood — she keeps going, louder, about everything you've forgotten this year.", back: "\"I love you, and I want to sort this. Right now it's getting away from us. Let me fix tonight first.\"", guideFront: "Bring it back to one point when...", guideBack: "One point again, or a loving pause" },
+            { front: "Prioritize the Long-Term Enterprise — she says, \"Fine. What now?\"", back: "\"The shop's open till six. I'll go right now. Are we okay?\"", guideFront: "Ask what fixes it and keeps you close when...", guideBack: "A question about the fix, not the winner" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Pause, Hold, Return",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**De-escalate the Emotional Flood**, then **Let the Awkward Silence Sit**, then **Enforce Boundaries with Real Consequences**. How to step out of a fight without abandoning it — and how to come back in.\n\n1. **De-escalate the Emotional Flood** — pause with love, and a time to come back.\n2. **Let the Awkward Silence Sit** — if she pushes to keep going, stay calm and brief.\n3. **Enforce Boundaries with Real Consequences** — show the way back: speak calmly, and you'll return.\n\nWhy this order: the pause has to be kind before it can be firm. Holding it without more words keeps it from restarting. The way back turns the pause from a punishment into an open door.\n\nThe usual order is storming off, then giving in.\n\nMindset: step out with love, hold calmly, and keep the door open.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "The argument about her friends staying over has been going in circles for an hour.",
+          steps: [
+            { front: "De-escalate the Emotional Flood — it keeps getting louder.", back: "\"I love you, and I want to sort this. Right now it's not productive. I'll step away, and we'll talk in twenty minutes.\"", guideFront: "Bring it back to one point when...", guideBack: "One point again, or a loving pause" },
+            { front: "Let the Awkward Silence Sit — she says, \"Oh, so you're just walking away?\"", back: "\"Not walking away. Twenty minutes. We'll talk then.\"", guideFront: "Leave it unresolved for now when...", guideBack: "One short, calm line, then quiet" },
+            { front: "Enforce Boundaries with Real Consequences — she comes to the door and says, more quietly, \"Can we just talk now?\"", back: "\"Yes, if we can do it calmly. I'm coming back in.\"", guideFront: "Say what you'll do, and the way back, when...", guideBack: "An if-then, with a way back in" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She's shouting about your mother's visit, and you've agreed before that shouting means a break.",
+          steps: [
+            { front: "De-escalate the Emotional Flood — she shouts over you again.", back: "\"I love you. This isn't working right now. I'm going for a walk, back by eight.\"", guideFront: "Bring it back to one point when...", guideBack: "One point again, or a loving pause" },
+            { front: "Let the Awkward Silence Sit — she sends three angry messages while you're out.", back: "\"I'll be home at eight. Let's talk then.\"", guideFront: "Leave it unresolved for now when...", guideBack: "One short, calm line, then quiet" },
+            { front: "Enforce Boundaries with Real Consequences — she messages, \"I'm sorry. Can you come back now?\"", back: "\"Yes. If we can talk calmly, I'll come home now.\"", guideFront: "Say what you'll do, and the way back, when...", guideBack: "An if-then, with a way back in" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A row about the washing has become a row about whether you respect her.",
+          steps: [
+            { front: "De-escalate the Emotional Flood — she's crying and shouting at once.", back: "\"I can see how upset you are, and I love you. Let's stop for twenty minutes, then talk.\"", guideFront: "Bring it back to one point when...", guideBack: "One point again, or a loving pause" },
+            { front: "Let the Awkward Silence Sit — she follows you to the bedroom and keeps going.", back: "\"I'm not angry. I just need twenty minutes.\"", guideFront: "Leave it unresolved for now when...", guideBack: "One short, calm line, then quiet" },
+            { front: "Enforce Boundaries with Real Consequences — after ten minutes she knocks and says, \"I'm calmer now.\"", back: "\"Thank you. Let's talk now, then.\"", guideFront: "Say what you'll do, and the way back, when...", guideBack: "An if-then, with a way back in" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Fix That Lasts",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Prioritize the Long-Term Enterprise**, then **Anchor Logical Leadership at Home**, then **Master the Leverage of Indifference**. How to turn the day after a fight into a change that stops the next one.\n\n1. **Prioritize the Long-Term Enterprise** — drop who was right, and ask what would solve it.\n2. **Anchor Logical Leadership at Home** — suggest a clear change, as your own preference.\n3. **Master the Leverage of Indifference** — if she still sees the fight differently, let her.\n\nWhy this order: nobody will discuss a fix while they're still defending who was right. The change comes next, said as what you'd prefer. And the fix doesn't need her to agree about the past.\n\nThe usual order is replaying the fight to win it, and changing nothing.\n\nMindset: solve the cause, and let the old argument go.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "The morning after a fight about who should have walked the dog.",
+          steps: [
+            { front: "Prioritize the Long-Term Enterprise — she says, \"You still think you were right, don't you?\"", back: "\"Honestly, I don't need to be. I'd rather we never have that fight again.\"", guideFront: "Ask what fixes it and keeps you close when...", guideBack: "A question about the fix, not the winner" },
+            { front: "Anchor Logical Leadership at Home — she asks, \"So what do you suggest?\"", back: "\"I'd like the morning walk to be mine and the evening one yours. Then we always know.\"", guideFront: "Fix what caused it when...", guideBack: "A change, put as your own preference" },
+            { front: "Master the Leverage of Indifference — she says, \"Fine, but I still think you were being lazy yesterday.\"", back: "\"We see yesterday differently, and that's okay. I like the plan.\"", guideFront: "Accept a different view calmly when...", guideBack: "A settled \"I don't need you to agree\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You fought last night because neither of you had planned the food for the party.",
+          steps: [
+            { front: "Prioritize the Long-Term Enterprise — she's still annoyed this morning.", back: "\"I don't care who should have done it. What would make the next party easy?\"", guideFront: "Ask what fixes it and keeps you close when...", guideBack: "A question about the fix, not the winner" },
+            { front: "Anchor Logical Leadership at Home — she says, \"One of us should just own it.\"", back: "\"Agreed. I'd prefer you do the food and I do the drinks and the cleaning. And no opinions on each other's part.\"", guideFront: "Fix what caused it when...", guideBack: "A change, put as your own preference" },
+            { front: "Master the Leverage of Indifference — she says, \"You'd have done it badly anyway.\"", back: "\"Maybe we see that differently. I'm happy with the deal.\"", guideFront: "Accept a different view calmly when...", guideBack: "A settled \"I don't need you to agree\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Two days after a fight about your teenage daughter's curfew.",
+          steps: [
+            { front: "Prioritize the Long-Term Enterprise — you're tempted to go over who was too strict.", back: "\"I'd rather not go back over who was right. Can we agree on something we'll both stick to?\"", guideFront: "Ask what fixes it and keeps you close when...", guideBack: "A question about the fix, not the winner" },
+            { front: "Anchor Logical Leadership at Home — she says, \"We keep undermining each other in front of her.\"", back: "\"I'd prefer we decide together, and then whoever's home that night handles it their way.\"", guideFront: "Fix what caused it when...", guideBack: "A change, put as your own preference" },
+            { front: "Master the Leverage of Indifference — she says, \"I still think eleven is too late.\"", back: "\"I know we see it differently, and that's fine. Let's try ten-thirty and see.\"", guideFront: "Accept a different view calmly when...", guideBack: "A settled \"I don't need you to agree\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Calmer Home",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Validate Data, Not Conclusion**, then **Outsource Her Processing Outside**, then **Anchor Logical Leadership at Home**. How to help when the same worry keeps landing at home as a fight.\n\n1. **Validate Data, Not Conclusion** — accept the worry, not the blame.\n2. **Outsource Her Processing Outside** — warmly suggest someone else to talk it through with.\n3. **Anchor Logical Leadership at Home** — then fix your shared part, as your own preference.\n\nWhy this order: she won't hear a suggestion until her feeling has been heard. A second person to lean on lowers the pressure at home. Then the part that's yours can be solved calmly.\n\nThe usual order is defending yourself, then going silent, then hearing it all again next week.\n\nMindset: hear it, spread it, and fix our part.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "For the third night this week, her worry about money is turning into blame.",
+          steps: [
+            { front: "Validate Data, Not Conclusion — she says, \"We're broke because you never plan anything.\"", back: "\"Money's tight, and I get why you're scared. It isn't that I never plan, though.\"", guideFront: "Affirm the feeling and the facts when...", guideBack: "A yes to the feeling, a no to the story" },
+            { front: "Outsource Her Processing Outside — she keeps going about money, her sister's new house, and her job.", back: "\"That's a lot to carry. Have you talked to Sara about it? She's been through this.\"", guideFront: "Suggest a trusted friend to talk to when...", guideBack: "A warm nudge to a friend, plus your part" },
+            { front: "Anchor Logical Leadership at Home — she says, \"Maybe. But what about us?\"", back: "\"For us, I'd like a budget night every Sunday. Half an hour, just the two of us.\"", guideFront: "Fix what caused it when...", guideBack: "A change, put as your own preference" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She's angry about her mother's comments again, and it's spilling onto you.",
+          steps: [
+            { front: "Validate Data, Not Conclusion — she says, \"You always take her side.\"", back: "\"Her comments really hurt you, and that makes sense. I'm not on her side, though.\"", guideFront: "Affirm the feeling and the facts when...", guideBack: "A yes to the feeling, a no to the story" },
+            { front: "Outsource Her Processing Outside — she says she can't stop thinking about it.", back: "\"Would it help to talk to your sister? She knows your mum like you do. I'm here too.\"", guideFront: "Suggest a trusted friend to talk to when...", guideBack: "A warm nudge to a friend, plus your part" },
+            { front: "Anchor Logical Leadership at Home — she asks what to do about Sunday lunch.", back: "\"I'd prefer we visit for two hours, not the whole day. And I'll handle the goodbyes.\"", guideFront: "Fix what caused it when...", guideBack: "A change, put as your own preference" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She's stressed about her workload, and every evening ends with her angry at you.",
+          steps: [
+            { front: "Validate Data, Not Conclusion — she says, \"You don't help with anything.\"", back: "\"You're carrying a lot right now, I can see that. I do help, but maybe not with the right things.\"", guideFront: "Affirm the feeling and the facts when...", guideBack: "A yes to the feeling, a no to the story" },
+            { front: "Outsource Her Processing Outside — she starts on her manager again, for the fourth night.", back: "\"That sounds exhausting. Could you talk to Emma about him? She knows that office.\"", guideFront: "Suggest a trusted friend to talk to when...", guideBack: "A warm nudge to a friend, plus your part" },
+            { front: "Anchor Logical Leadership at Home — she says, \"Okay. And here?\"", back: "\"Here, I'd like to take over dinners on weekdays. That's mine, done my way.\"", guideFront: "Fix what caused it when...", guideBack: "A change, put as your own preference" },
+          ]
+        },
+      ]
+    },
+  ],
 };

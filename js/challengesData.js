@@ -14998,4 +14998,102 @@ const challengesCollections = {
       ]
     },
   ],
+  alexandergrace9: [
+    {
+      name: "The Victim Story",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "A real feeling arrives with a story attached: \"You don't spend money on me because you don't care.\" The feeling is true. The story is about you, and it isn't.\n\nWhat goes wrong is one of two things: you agree to the story to calm her down, or you fight the story and ignore the feeling.\n\n**Validate Data, Not Conclusion** is the main strategy: yes to the feeling, no to the story. **Prioritize the Long-Term Enterprise** to steer back to the actual problem.\n\nThe one thing to avoid: \"Fine, I don't care. Happy now?\"\n\nMindset: I can comfort her and still not sign up to the story.",
+      inputs: [
+        { q: "She says, \"You obviously don't love me, or you'd have called.\"", a: "\"I should have called, and I'm sorry you worried. I do love you.\" [Validate Data, Not Conclusion]", bundle: 'pro', guideBack: "A yes to the feeling, a no to the story" },
+        { q: "She says, \"You'd rather be anywhere but here.\"", a: "\"I can see you're feeling lonely. That's not how I feel about being here.\" [Validate Data, Not Conclusion]", bundle: 'pro', guideBack: "A yes to the feeling, a no to the story" },
+        { q: "You're about to say, \"Fine, I don't care. Happy now?\"", a: "\"You're upset, and that's real. But I do care. Let's talk about what happened.\" [Validate Data, Not Conclusion]", bundle: 'pro', guideBack: "A yes to the feeling, a no to the story" },
+        { q: "She says you bought the new car to get back at her.", a: "\"I see why the price shocked you. It wasn't to get at you. Can we look at what we can afford?\" [Validate Data, Not Conclusion]", bundle: 'pro', guideBack: "A yes to the feeling, a no to the story" },
+        { q: "The story has come up three times, and the actual problem is still the rent.", a: "\"I don't need to win the rest. Can we just sort out the rent?\" [Prioritize the Long-Term Enterprise]", bundle: 'pro', guideBack: "A question about the fix, not the winner" },
+        { q: "She says, \"You think I'm just being dramatic.\"", a: "\"No. I think you're really stressed. I just don't think I'm the reason.\" [Validate Data, Not Conclusion]", bundle: 'pro', guideBack: "A yes to the feeling, a no to the story" },
+        { q: "She says, \"You never take my side with your family.\"", a: "\"That dinner was hard for you, I could see it. I don't agree I never take your side.\" [Validate Data, Not Conclusion]", bundle: 'pro', guideBack: "A yes to the feeling, a no to the story" },
+        { q: "You've cleared up the story, but the original problem is still there.", a: "\"Okay. So what would actually help with the weekends?\" [Prioritize the Long-Term Enterprise]", bundle: 'pro', guideBack: "A question about the fix, not the winner" },
+      ]
+    },
+    {
+      name: "Flooding the Zone",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Too much comes at once — details, dates, old grievances, three topics in one sentence. The real disagreement disappears under it, and you start to feel swamped.\n\nWhat goes wrong is trying to answer everything, which makes the flood bigger.\n\n**De-escalate the Emotional Flood** is the main strategy: one point, and a loving pause if that fails. **Outsource Her Processing Outside** when the flood is a worry that comes back night after night.\n\nThe one thing to avoid: answering every point, one by one.\n\nMindset: I don't have to answer everything. I have to find the one thing.",
+      inputs: [
+        { q: "She brings up five old arguments in one breath.", a: "\"That's a lot of things. Which one matters most right now?\" [De-escalate the Emotional Flood]", bundle: 'pro', guideBack: "One point again, or a loving pause" },
+        { q: "You're about to answer every point, one by one.", a: "\"I'm not going to argue all of these. Can we just do the bills?\" [De-escalate the Emotional Flood]", bundle: 'pro', guideBack: "One point again, or a loving pause" },
+        { q: "She keeps adding details about who said what at the wedding.", a: "\"I'm lost in the details. What's the main thing that hurt you?\" [De-escalate the Emotional Flood]", bundle: 'pro', guideBack: "One point again, or a loving pause" },
+        { q: "You've brought it back to the point twice, and it keeps spilling over.", a: "\"I love you, and this isn't productive right now. Let's take twenty minutes, then try again.\" [De-escalate the Emotional Flood]", bundle: 'pro', guideBack: "One point again, or a loving pause" },
+        { q: "The same worry about her job has flooded every evening this week.", a: "\"I hear how much this is weighing on you. Have you talked to Emma about it? I'm here too.\" [Outsource Her Processing Outside]", bundle: 'pro', guideBack: "A warm nudge to a friend, plus your part" },
+        { q: "She says, \"And another thing…\" for the fourth time.", a: "\"Let's hold the other things for later. I want to get this one right.\" [De-escalate the Emotional Flood]", bundle: 'pro', guideBack: "One point again, or a loving pause" },
+        { q: "She's flooded with worry about her sick dad and it's turning into a fight about the car.", a: "\"I think this is really about your dad. Would it help to talk to your brother tonight? I'll sort the car.\" [Outsource Her Processing Outside]", bundle: 'pro', guideBack: "A warm nudge to a friend, plus your part" },
+        { q: "You notice you're getting flooded too, and your voice is rising.", a: "\"I'm getting overwhelmed too. Can we slow down and take it one thing at a time?\" [De-escalate the Emotional Flood]", bundle: 'pro', guideBack: "One point again, or a loving pause" },
+      ]
+    },
+    {
+      name: "She Escalates When You Step Away",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You've said you'll take twenty minutes, and the moment you head for the door it gets bigger: \"Don't you dare walk away!\" She follows you, calls, or sends message after message.\n\nWhat goes wrong is being pulled straight back in — or snapping and leaving without a word.\n\n**Let the Awkward Silence Sit** is the main strategy: one short, calm line, and you keep the pause. **Enforce Boundaries with Real Consequences** to show the way back in.\n\nThe one thing to avoid: turning round to win the last word.\n\nMindset: I can hold the pause and still keep the door open.",
+      inputs: [
+        { q: "She says, \"Don't you dare walk away from me!\"", a: "\"I'm not leaving you. I'm taking twenty minutes. Then we'll talk.\" [Let the Awkward Silence Sit]", bundle: 'pro', guideBack: "One short, calm line, then quiet" },
+        { q: "She follows you into the hall, still shouting.", a: "\"I love you. Not now. We'll talk soon.\" [Let the Awkward Silence Sit]", bundle: 'pro', guideBack: "One short, calm line, then quiet" },
+        { q: "She sends five messages while you're on your walk.", a: "\"I'm back at eight. Let's talk then.\" [Let the Awkward Silence Sit]", bundle: 'pro', guideBack: "One short, calm line, then quiet" },
+        { q: "She says, \"If you leave now, don't bother coming back.\"", a: "\"I'll be back in twenty minutes, and I want to talk then.\" [Let the Awkward Silence Sit]", bundle: 'pro', guideBack: "One short, calm line, then quiet" },
+        { q: "You're about to turn round to win the last word.", a: "\"I'll say the rest when we're both calm.\" [Let the Awkward Silence Sit]", bundle: 'pro', guideBack: "One short, calm line, then quiet" },
+        { q: "She knocks on the door after five minutes and says, quietly, \"Can we talk?\"", a: "\"Yes. If we can keep it calm, I'm coming back in now.\" [Enforce Boundaries with Real Consequences]", bundle: 'pro', guideBack: "An if-then, with a way back in" },
+        { q: "She says, \"You always run away.\"", a: "\"I'm stepping out because of the shouting. Talk to me calmly, and I'll stay.\" [Enforce Boundaries with Real Consequences]", bundle: 'pro', guideBack: "An if-then, with a way back in" },
+        { q: "She keeps calling while you're out.", a: "\"I'll talk the minute we can do it calmly. I'm home at nine.\" [Enforce Boundaries with Real Consequences]", bundle: 'pro', guideBack: "An if-then, with a way back in" },
+      ]
+    },
+    {
+      name: "Who's Right?",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The fight has stopped being about the problem and become a contest: who remembers it correctly, who said what, who started it.\n\nWhat goes wrong is treating each point as something to win. You can prove you're right and still lose the evening.\n\n**Prioritize the Long-Term Enterprise** is the main strategy: ask what would fix it, and whether you're still close. **Master the Leverage of Indifference** when you simply see it differently.\n\nThe one thing to avoid: bringing out the evidence.\n\nMindset: being right is worth much less than being close.",
+      inputs: [
+        { q: "You have the text message that proves she's wrong about the time.", a: "\"Let's leave who said what. How do we make sure it doesn't happen again?\" [Prioritize the Long-Term Enterprise]", bundle: 'pro', guideBack: "A question about the fix, not the winner" },
+        { q: "She says, \"Admit you were wrong.\"", a: "\"I don't need to win this. Can we just fix it?\" [Prioritize the Long-Term Enterprise]", bundle: 'pro', guideBack: "A question about the fix, not the winner" },
+        { q: "You both remember the conversation completely differently.", a: "\"We remember it differently, and that's okay. What do we want to do now?\" [Master the Leverage of Indifference]", bundle: 'pro', guideBack: "A settled \"I don't need you to agree\"" },
+        { q: "She says, \"You always need to have the last word.\"", a: "\"Fair. I don't need it now. Are we okay?\" [Prioritize the Long-Term Enterprise]", bundle: 'pro', guideBack: "A question about the fix, not the winner" },
+        { q: "She thinks your friend was rude at dinner, and you don't.", a: "\"I saw it differently. You don't have to agree with me.\" [Master the Leverage of Indifference]", bundle: 'pro', guideBack: "A settled \"I don't need you to agree\"" },
+        { q: "You're about to explain, again, why your way of packing is better.", a: "\"You know what, pack it your way. We'll get there either way.\" [Master the Leverage of Indifference]", bundle: 'pro', guideBack: "A settled \"I don't need you to agree\"" },
+        { q: "The argument about the map has gone on for twenty minutes, and you're now lost.", a: "\"Who cares who was right. Shall we ask someone and get a coffee?\" [Prioritize the Long-Term Enterprise]", bundle: 'pro', guideBack: "A question about the fix, not the winner" },
+        { q: "She finally says, \"Okay, maybe you were right.\"", a: "\"It doesn't matter. I'm just glad we sorted it.\" [Prioritize the Long-Term Enterprise]", bundle: 'pro', guideBack: "A question about the fix, not the winner" },
+      ]
+    },
+    {
+      name: "The Same Fight Again",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You've had this fight before — about the bills, the dishes, bedtime, the weekends — and it keeps coming back with the same lines.\n\nWhat goes wrong is fighting each round as if it were new. The cause is often a setup where nobody clearly owns the task, so both of you half-do it and both of you criticise.\n\n**Anchor Logical Leadership at Home** is the main strategy: find the cause and change the setup. **Outsource Her Processing Outside** when the repeat is a worry, not a task.\n\nThe one thing to avoid: \"We'll both just try harder.\"\n\nMindset: a fight that keeps coming back needs a new setup, not a new round.",
+      inputs: [
+        { q: "It's the fifth fight this year about who pays which bill.", a: "\"We keep fighting about this because nobody owns it. I'd like to take the bills. Would you take the car?\" [Anchor Logical Leadership at Home]", bundle: 'pro', guideBack: "A change, put as your own preference" },
+        { q: "You're about to say, \"We'll both just try harder.\"", a: "\"Trying harder hasn't worked. Can we split it clearly instead?\" [Anchor Logical Leadership at Home]", bundle: 'pro', guideBack: "A change, put as your own preference" },
+        { q: "You keep correcting how she does the laundry, and she keeps snapping.", a: "\"The laundry's yours. I'll stay out of how you do it.\" [Anchor Logical Leadership at Home]", bundle: 'pro', guideBack: "A change, put as your own preference" },
+        { q: "Every Sunday ends in an argument about the week ahead.", a: "\"I'd like us to plan the week on Saturday mornings, with coffee, instead of Sunday night.\" [Anchor Logical Leadership at Home]", bundle: 'pro', guideBack: "A change, put as your own preference" },
+        { q: "The same worry about her sister comes up in a fight every few days.", a: "\"This keeps hurting you. Would it help to talk to a counsellor about her? I'll help you find one.\" [Outsource Her Processing Outside]", bundle: 'pro', guideBack: "A warm nudge to a friend, plus your part" },
+        { q: "You want to say, \"You need to be more organised — it's for your own good.\"", a: "\"I'd prefer we keep one shared calendar. It would help me a lot.\" [Anchor Logical Leadership at Home]", bundle: 'pro', guideBack: "A change, put as your own preference" },
+        { q: "She says, \"Why do we always fight about the kids' homework?\"", a: "\"I think because we both do it. Could you take maths, and I'll take reading?\" [Anchor Logical Leadership at Home]", bundle: 'pro', guideBack: "A change, put as your own preference" },
+        { q: "Her old friendship drama has started another fight about whether you listen.", a: "\"I want to listen, and I do. Have you talked to Lena? She knows the whole history.\" [Outsource Her Processing Outside]", bundle: 'pro', guideBack: "A warm nudge to a friend, plus your part" },
+      ]
+    },
+    {
+      name: "No Consequence",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You've said it many times — \"Don't speak to me like that\" — and then stayed, and kept talking. Nothing ever happens, so nothing ever changes. It was a preference, not a boundary.\n\nWhat goes wrong is repeating the request louder, or giving up on it.\n\n**Enforce Boundaries with Real Consequences** is the main strategy: an if-then you actually carry out, with the way back. **Master the Leverage of Indifference** if she disagrees with the boundary itself.\n\nThe one thing to avoid: a consequence you won't follow through on.\n\nMindset: what I do counts more than what I say.",
+      inputs: [
+        { q: "You've said \"Don't shout at me\" a dozen times, and nothing changes.", a: "\"From now on, if there's shouting, I'll leave the room. When it's calm, I'll come back.\" [Enforce Boundaries with Real Consequences]", bundle: 'pro', guideBack: "An if-then, with a way back in" },
+        { q: "She shouts, and you're about to stay and say it again.", a: "\"I said I'd step out, so I'm stepping out. Talk to me calmly and I'll come right back.\" [Enforce Boundaries with Real Consequences]", bundle: 'pro', guideBack: "An if-then, with a way back in" },
+        { q: "You're about to threaten something you'd never do, like leaving for a week.", a: "\"If you call me names, I'll end the conversation for tonight. We'll pick it up tomorrow.\" [Enforce Boundaries with Real Consequences]", bundle: 'pro', guideBack: "An if-then, with a way back in" },
+        { q: "She says, \"That's a stupid rule.\"", a: "\"You don't have to like it. It's what I'll do.\" [Master the Leverage of Indifference]", bundle: 'pro', guideBack: "A settled \"I don't need you to agree\"" },
+        { q: "She keeps reading your messages over your shoulder, after you've asked her not to.", a: "\"If you read over my shoulder, I'll put the phone away until later. Ask me and I'll show you.\" [Enforce Boundaries with Real Consequences]", bundle: 'pro', guideBack: "An if-then, with a way back in" },
+        { q: "She says, \"You can't control how I speak.\"", a: "\"True. I can only choose whether I stay in the room. Calm, and I'm here.\" [Enforce Boundaries with Real Consequences]", bundle: 'pro', guideBack: "An if-then, with a way back in" },
+        { q: "She says, \"You never did anything before, so why now?\"", a: "\"Because I should have. I'd rather be clear than keep complaining.\" [Master the Leverage of Indifference]", bundle: 'pro', guideBack: "A settled \"I don't need you to agree\"" },
+        { q: "She notices you followed through, and speaks calmly the next time.", a: "\"Thank you. This is so much easier.\" [Enforce Boundaries with Real Consequences]", bundle: 'pro', guideBack: "An if-then, with a way back in" },
+      ]
+    },
+  ],
 };
