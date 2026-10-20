@@ -18318,14 +18318,14 @@ const multiStepCollections = {
       name: "The Open Door",
       guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
-      description: "For a shift they would rather not talk about. You say what you saw once, take their \"it's nothing\", and leave the door open.\n\n1. **Spot the Shift** — say only what you saw change.\n2. **Leave the Door Open** — they say it's nothing; you let it go, and make it clear they can come back.\n\nThe order matters. Without the first step, the open door has nothing to point at, and they cannot know you noticed. Without the second, the first turns into an interview.\n\nThe usual order is to notice, say nothing, and wonder about it all evening. Or to notice and then ask \"Are you sure?\" three times.\n\nMindset: say it once, then let them choose.",
+      description: "For a shift they would rather not talk about. You say what you saw once, take their \"it's nothing\", and leave the door open.\n\n1. **Spot the Shift** — say only what you saw change.\n2. **Keep the Door Open** — they say it's nothing; you let it go, and make it clear they can come back.\n\nThe order matters. Without the first step, the open door has nothing to point at, and they cannot know you noticed. Without the second, the first turns into an interview.\n\nThe usual order is to notice, say nothing, and wonder about it all evening. Or to notice and then ask \"Are you sure?\" three times.\n\nMindset: say it once, then let them choose.",
       inputs: [
         {
           bundle: 'pro',
           situation: "Over dinner, you tell your partner you have been asked to work in another city for a month.",
           steps: [
             { front: "Spot the Shift — she puts her fork down and stops talking.", back: "\"You went quiet when I said a month away.\"", guideFront: "Say what you saw when...", guideBack: "A plain observation, with no reading" },
-            { front: "Leave the Door Open — she says, \"It's nothing. Eat your dinner.\"", back: "\"Okay. If it turns into something, I'd want to hear it.\"", guideFront: "Give them space when...", guideBack: "An invitation with no pressure" },
+            { front: "Keep the Door Open — she says, \"It's nothing. Eat your dinner.\"", back: "\"Okay. If it turns into something, I'd want to hear it.\"", guideFront: "Give them space when...", guideBack: "An invitation with no pressure" },
           ]
         },
         {
@@ -18333,7 +18333,7 @@ const multiStepCollections = {
           situation: "In the corridor, you tell your colleague Ben that you are getting the desk by the window.",
           steps: [
             { front: "Spot the Shift — his smile drops for a second, then comes back.", back: "\"Your smile went for a second when I said the window desk.\"", guideFront: "Say what you saw when...", guideBack: "A plain observation, with no reading" },
-            { front: "Leave the Door Open — he says, \"No, no, it's nothing. Enjoy it.\"", back: "\"Thanks. If it's not nothing, you can tell me, honestly.\"", guideFront: "Give them space when...", guideBack: "An invitation with no pressure" },
+            { front: "Keep the Door Open — he says, \"No, no, it's nothing. Enjoy it.\"", back: "\"Thanks. If it's not nothing, you can tell me, honestly.\"", guideFront: "Give them space when...", guideBack: "An invitation with no pressure" },
           ]
         },
         {
@@ -18341,7 +18341,7 @@ const multiStepCollections = {
           situation: "On the phone, you tell your grandmother you won't make it home for Christmas this year.",
           steps: [
             { front: "Spot the Shift — there is a long pause on the line.", back: "\"That was a long pause, Gran.\"", guideFront: "Say what you saw when...", guideBack: "A plain observation, with no reading" },
-            { front: "Leave the Door Open — she says, \"Oh, don't mind me. It's nothing.\"", back: "\"I do mind you. If you want to talk about it, ring me any time, even late.\"", guideFront: "Give them space when...", guideBack: "An invitation with no pressure" },
+            { front: "Keep the Door Open — she says, \"Oh, don't mind me. It's nothing.\"", back: "\"I do mind you. If you want to talk about it, ring me any time, even late.\"", guideFront: "Give them space when...", guideBack: "An invitation with no pressure" },
           ]
         },
       ]

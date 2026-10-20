@@ -23265,10 +23265,10 @@ const memorizeCollections = {
   emotionalcalibration1: [
     {
       name: "Core Idea",
-      description: "Five strategies for the moment someone's feeling shifts in the middle of a conversation:\n\n1. Spot the Shift\n2. Name the Nuance\n3. Ask How It Landed\n4. Read What They Need\n5. Leave the Door Open\n\nNotice it, guess the feeling, check your part, ask what helps, or step back.",
+      description: "Five strategies for the moment someone's feeling shifts in the middle of a conversation:\n\n1. Spot the Shift\n2. Name the Nuance\n3. Ask How It Landed\n4. Read What They Need\n5. Keep the Door Open\n\nNotice it, guess the feeling, check your part, ask what helps, or step back.",
       cards: [
-        { q: "What are the five strategies in this pack?", a: "Spot the Shift, Name the Nuance, Ask How It Landed, Read What They Need, Leave the Door Open.", bundle: 'free' },
-        { q: "How do the five fit together?", a: "Spot the Shift notices, Name the Nuance guesses, Ask How It Landed checks your part, Read What They Need asks what helps, and Leave the Door Open steps back.", bundle: 'free' },
+        { q: "What are the five strategies in this pack?", a: "Spot the Shift, Name the Nuance, Ask How It Landed, Read What They Need, Keep the Door Open.", bundle: 'free' },
+        { q: "How do the five fit together?", a: "Spot the Shift notices, Name the Nuance guesses, Ask How It Landed checks your part, Read What They Need asks what helps, and Keep the Door Open steps back.", bundle: 'free' },
         { q: "What is a shift?", a: "A moment when the other person's feeling changes mid-conversation, often right after something you said: a short \"fine\", a quick topic change, a laugh that stops.", bundle: 'free' },
         { q: "What do all five have in common?", a: "They say gently that something changed, instead of pretending you did not see it.", bundle: 'free' },
         { q: "Why are the lines in this pack guesses, not verdicts?", a: "You cannot know what someone feels. \"Is that close?\" leaves them free to correct you.", bundle: 'free' },
@@ -23288,7 +23288,7 @@ const memorizeCollections = {
         { q: "What are the three things Spot the Shift can point at?", a: "The words, the body, and the timing.", bundle: 'free' },
         { q: "When does Spot the Shift go wrong?", a: "When a reading slips in — \"you're annoyed\" — instead of what a camera would have caught.", bundle: 'pro' },
         { q: "How is Spot the Shift different from Name the Nuance?", a: "Spot the Shift says what changed. Name the Nuance guesses what they feel.", bundle: 'pro' },
-        { q: "What often follows Spot the Shift?", a: "Leave the Door Open if they say it's nothing, or Name the Nuance if they say a little more.", bundle: 'pro' },
+        { q: "What often follows Spot the Shift?", a: "Keep the Door Open if they say it's nothing, or Name the Nuance if they say a little more.", bundle: 'pro' },
       ]
     },
     {
@@ -23329,22 +23329,22 @@ const memorizeCollections = {
         { q: "What does Read What They Need leave the other person to do?", a: "Choose the kind of help they want, instead of getting the kind you guessed.", bundle: 'free' },
         { q: "What are the three choices to offer?", a: "Fix or listen, now or later, and a practical offer.", bundle: 'free' },
         { q: "When does Read What They Need go wrong?", a: "When one of the options is not meant, or when you ignore their answer and give advice anyway.", bundle: 'pro' },
-        { q: "How is Read What They Need different from Leave the Door Open?", a: "Read What They Need asks which kind of talk they want. Leave the Door Open steps back when they want none.", bundle: 'pro' },
+        { q: "How is Read What They Need different from Keep the Door Open?", a: "Read What They Need asks which kind of talk they want. Keep the Door Open steps back when they want none.", bundle: 'pro' },
         { q: "Which three kinds of conversation does Supercommunicators describe?", a: "Practical, emotional and social. Trouble starts when two people are having different kinds.", bundle: 'pro' },
       ]
     },
     {
-      name: "Leave the Door Open",
+      name: "Keep the Door Open",
       description: "",
       cards: [
-        { q: "What is Leave the Door Open?", a: "Not pushing when they do not want to talk, and saying clearly that you are open whenever they are.", bundle: 'free' },
-        { q: "How does Leave the Door Open sound?", a: "\"No need to talk about it now. If I said something wrong, I'd want to know.\"", bundle: 'free' },
-        { q: "When is Leave the Door Open the right one?", a: "When they say \"it's nothing\", \"leave it\" or \"not now\".", bundle: 'free' },
-        { q: "What does Leave the Door Open leave the other person to do?", a: "Come back when they are ready, on their own terms.", bundle: 'free' },
+        { q: "What is Keep the Door Open?", a: "Not pushing when they do not want to talk, and saying clearly that you are open whenever they are.", bundle: 'free' },
+        { q: "How does Keep the Door Open sound?", a: "\"No need to talk about it now. If I said something wrong, I'd want to know.\"", bundle: 'free' },
+        { q: "When is Keep the Door Open the right one?", a: "When they say \"it's nothing\", \"leave it\" or \"not now\".", bundle: 'free' },
+        { q: "What does Keep the Door Open leave the other person to do?", a: "Come back when they are ready, on their own terms.", bundle: 'free' },
         { q: "What are the three ways to leave it open?", a: "The open offer, own your part, and a light next step.", bundle: 'free' },
-        { q: "When does Leave the Door Open go wrong?", a: "When you keep knocking — \"Are you sure?\" — or when the offer sounds hurt instead of warm.", bundle: 'pro' },
-        { q: "How is Leave the Door Open different from saying nothing?", a: "Saying nothing leaves them unsure you noticed. Leave the Door Open shows you saw it and are ready to hear it.", bundle: 'pro' },
-        { q: "What usually comes just before Leave the Door Open?", a: "Spot the Shift, and a \"no, it's nothing\".", bundle: 'pro' },
+        { q: "When does Keep the Door Open go wrong?", a: "When you keep knocking — \"Are you sure?\" — or when the offer sounds hurt instead of warm.", bundle: 'pro' },
+        { q: "How is Keep the Door Open different from saying nothing?", a: "Saying nothing leaves them unsure you noticed. Keep the Door Open shows you saw it and are ready to hear it.", bundle: 'pro' },
+        { q: "What usually comes just before Keep the Door Open?", a: "Spot the Shift, and a \"no, it's nothing\".", bundle: 'pro' },
       ]
     },
     {
@@ -23356,17 +23356,17 @@ const memorizeCollections = {
         { q: "What is the usual wrong choice in Read the Signal?", a: "Guessing a feeling on thin evidence. One short answer is not enough for \"you seem hurt\".", bundle: 'pro' },
         { q: "The signal is small and you have no idea what it means. Which strategy?", a: "Spot the Shift.", bundle: 'pro' },
         { q: "What is the question that decides Follow Their Lead?", a: "What did they just tell me — nothing yet, something, or \"not now\"?", bundle: 'pro' },
-        { q: "They have just said, \"Leave it.\" Which strategy?", a: "Leave the Door Open.", bundle: 'pro' },
+        { q: "They have just said, \"Leave it.\" Which strategy?", a: "Keep the Door Open.", bundle: 'pro' },
         { q: "What is the usual wrong choice in Follow Their Lead?", a: "Asking more after they have said \"leave it\".", bundle: 'pro' },
         { q: "If you are unsure in All Five Strategies, where do you start?", a: "With what you saw, going one step further only when they give you more.", bundle: 'pro' },
       ]
     },
     {
       name: "Sequences",
-      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Open Door** — Spot the Shift → Leave the Door Open\n2. **The Full Read** — Spot the Shift → Name the Nuance → Read What They Need\n3. **Ask, Then Name** — Ask How It Landed → Name the Nuance\n\nEach step waits for their answer before the next one.",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Open Door** — Spot the Shift → Keep the Door Open\n2. **The Full Read** — Spot the Shift → Name the Nuance → Read What They Need\n3. **Ask, Then Name** — Ask How It Landed → Name the Nuance\n\nEach step waits for their answer before the next one.",
       cards: [
         { q: "What are the three sequences in this pack?", a: "The Open Door, The Full Read, and Ask, Then Name.", bundle: 'pro' },
-        { q: "What is the order in The Open Door?", a: "Spot the Shift, then Leave the Door Open.", bundle: 'pro' },
+        { q: "What is the order in The Open Door?", a: "Spot the Shift, then Keep the Door Open.", bundle: 'pro' },
         { q: "What does the other person say between the two steps of The Open Door?", a: "That it's nothing.", bundle: 'pro' },
         { q: "What is the order in The Full Read?", a: "Spot the Shift, Name the Nuance, Read What They Need.", bundle: 'pro' },
         { q: "Why does the feeling come before the offer in The Full Read?", a: "Offer help before you know the feeling, and you may fix the wrong thing.", bundle: 'pro' },
