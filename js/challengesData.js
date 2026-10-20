@@ -15096,4 +15096,462 @@ const challengesCollections = {
       ]
     },
   ],
+  parentingtogether1: [
+    {
+      name: "Overruled",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "One parent makes a call, and the other cancels it out loud, in the middle of it, in front of the child: \"Oh, let them stay up, it's Friday.\" Sometimes you are the one overruled. Sometimes you hear yourself do it.\n\nWhat goes wrong is that the child learns a no is only a first answer, and the overruled parent loses ground they will have to win back. Arguing it out on the spot makes it worse: now it is a fight with an audience.\n\n**Back Them Now, Talk Later** stops it, whichever side you are on. **Show Them the Repair** gives the child one answer the next day. **Keep Them Out of the Middle** helps when the child starts keeping score.\n\nThe one thing to avoid: winning the argument in front of the child.\n\nMindset: one answer now, and the real talk later.",
+      inputs: [
+        { q: "You tell your son homework comes before football. Your partner calls from the sofa, \"Oh, let him go, it's sunny.\"", a: "\"Okay, Dad's said go, so go. Rich, can we talk about homework later, just us?\" [Back Them Now, Talk Later]", bundle: 'pro', guideBack: "Support for their call, and a talk for later" },
+        { q: "Your wife tells your daughter no ice cream, it's nearly dinner. You hear yourself start: \"Oh, one won't hurt…\"", a: "\"Actually, you heard Mum. After dinner. Hanna, let's talk about it later.\" [Back Them Now, Talk Later]", bundle: 'pro', guideBack: "Support for their call, and a talk for later" },
+        { q: "Last night your partner overruled your no to a late film, in front of both kids. Tonight you have talked it through, and everyone is at dinner.", a: "\"Mum and I talked about last night. Films finish by nine on school nights. We're agreed.\" [Show Them the Repair]", bundle: 'pro', guideBack: "The new answer, told as a team" },
+        { q: "Your partner says, \"Let them stay up,\" right in the middle of your bedtime call. Your daughter cheers: \"Dad wins!\"", a: "\"Nobody wins, love. That's for Dad and me to sort out, not you.\" [Keep Them Out of the Middle]", bundle: 'pro', guideBack: "A warm no to the go-between job" },
+        { q: "Your son asks you if he can go to the trampoline park. Your husband was talking to him about it ten minutes ago.", a: "\"Did you ask Dad already? What did he say?\" [Check With Each Other]", bundle: 'pro', guideBack: "A check on the first answer" },
+        { q: "Your wife overruled your bedtime call in front of the kids. Later, your son asks, \"Why does Mum always change your rules?\"", a: "\"Mum and I see bedtime a bit differently, and that's okay. She's a great mum.\" [Speak Kindly About the Other Parent]", bundle: 'pro', guideBack: "A fair word, with no dig" },
+        { q: "Your son asks you both at the door if he can skip piano today. You can feel a yes coming from you and a no from your partner.", a: "\"Hang on. Dad and I will decide together, and tell you in five minutes.\" [Decide Together, Tell Them Together]", bundle: 'pro', guideBack: "A promise of one shared answer" },
+        { q: "Your partner overruled your \"no phones at the table\" yesterday. Today your teenager smirks: \"Guess Mum's in charge now.\"", a: "\"Nobody's in charge of the other one. Mum and I will sort the phone rule out together.\" [Keep Them Out of the Middle]", bundle: 'pro', guideBack: "A warm no to the go-between job" },
+      ]
+    },
+    {
+      name: "The Fun Parent",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "One parent is the sweets, the screens and the late nights. The other is the rules. Over time, the children go to the fun one for every yes, and the other one becomes \"the strict one\".\n\nWhat goes wrong is that the fun parent's yes turns the other parent's no into the mean answer. The children are not wrong to go where the yes is. The adults have set it up that way.\n\n**Check With Each Other** stops the second asking. **Back Them Now, Talk Later** turns the fun parent into a backer. **Speak Kindly About the Other Parent** helps when the children start comparing.\n\nThe one thing to avoid: being the fun one at your partner's cost.\n\nMindset: you can be fun and still give the same answer.",
+      inputs: [
+        { q: "Every Saturday your partner takes the kids out for pancakes. Your son says, \"Dad's way more fun than you.\"", a: "\"Dad's brilliant at fun Saturdays, and I love that you have that with him.\" [Speak Kindly About the Other Parent]", bundle: 'pro', guideBack: "A fair word, with no dig" },
+        { q: "You are usually the fun one. Your daughter asks you for sweets, \"because Mum always says no.\"", a: "\"If Mum has said no, it's no from me too.\" [Check With Each Other]", bundle: 'pro', guideBack: "A check on the first answer" },
+        { q: "Your partner has just said no more screens. Your son leans on you: \"You'll let me, won't you? You're the fun one.\"", a: "\"Not tonight. Mum said no screens, so no screens. Ana, let's talk about screens later.\" [Back Them Now, Talk Later]", bundle: 'pro', guideBack: "Support for their call, and a talk for later" },
+        { q: "Your son asks if the family can get a games console. \"Dad already said maybe!\"", a: "\"Dad and I will decide that together, and tell you both on Sunday.\" [Decide Together, Tell Them Together]", bundle: 'pro', guideBack: "A promise of one shared answer" },
+        { q: "Your partner let the kids watch a late film with popcorn after you had said early night. The next day, you have talked, and you are both with the kids.", a: "\"Mum and I talked about last night. Early nights are Sunday to Thursday, and Fridays are for films.\" [Show Them the Repair]", bundle: 'pro', guideBack: "The new answer, told as a team" },
+        { q: "As you hand her a chocolate bar, your daughter whispers, \"Don't tell Mum.\"", a: "\"No secrets about Mum's rules, love. You don't have to keep things from her.\" [Keep Them Out of the Middle]", bundle: 'pro', guideBack: "A warm no to the go-between job" },
+        { q: "Your son sighs: \"Why can't you be fun like Papa?\"", a: "\"Papa is fun, and I'm glad he is. I do other things with you, and that's okay too.\" [Speak Kindly About the Other Parent]", bundle: 'pro', guideBack: "A fair word, with no dig" },
+        { q: "Your stepson tells you, \"My dad lets me stay up as late as I want.\" His dad is in the next room.", a: "\"Did your dad say that about tonight? Let's go and ask him together.\" [Check With Each Other]", bundle: 'pro', guideBack: "A check on the first answer" },
+      ]
+    },
+    {
+      name: "Criticised in Front of Them",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "One parent puts the other down in front of the children, often about everyday jobs: \"Dad never does the packed lunch right.\" \"Mum always gets you to school late.\"\n\nWhat goes wrong is that the child hears that one parent's way does not count, and starts to treat it that way. The criticised parent does less, or digs back.\n\n**Speak Kindly About the Other Parent** is the strategy when you feel the remark coming. **Keep Them Out of the Middle** helps when the child is asked to judge, or passes it on. **Show Them the Repair** helps when the remark is already out.\n\nThe one thing to avoid: correcting each other's way of doing it in front of the child.\n\nMindset: different is not wrong, and the children are listening.",
+      inputs: [
+        { q: "You open your son's lunchbox and are about to say, \"Dad never packs it right.\" Your son is watching.", a: "\"Dad packed you a good lunch today. It's different from mine, and that's fine.\" [Speak Kindly About the Other Parent]", bundle: 'pro', guideBack: "A fair word, with no dig" },
+        { q: "Your partner tells the kids, \"Mum always gets you to school late.\" Afterwards your daughter asks you, \"Do you?\"", a: "\"Dad and I will talk about mornings ourselves, love. That's not for you to work out.\" [Keep Them Out of the Middle]", bundle: 'pro', guideBack: "A warm no to the go-between job" },
+        { q: "Yesterday you told the kids, \"Your mum can't cook pasta.\" Today, at dinner, they say it again. You and your wife have talked.", a: "\"I said that yesterday, and it wasn't fair. Mum and I talked. She makes the best pasta bake in this house.\" [Show Them the Repair]", bundle: 'pro', guideBack: "The new answer, told as a team" },
+        { q: "Your wife says, \"Dad did your hair wrong again,\" and starts to redo your daughter's plaits. Your daughter looks at you.", a: "\"Mum's really good at plaits. Let her do it her way today.\" [Speak Kindly About the Other Parent]", bundle: 'pro', guideBack: "A fair word, with no dig" },
+        { q: "Your husband says in front of your son, \"Mum's too soft on you.\" Your son asks, \"Are you too soft, Mum?\"", a: "\"That's for Dad and me to talk about, sweetheart. Not something you need to decide.\" [Keep Them Out of the Middle]", bundle: 'pro', guideBack: "A warm no to the go-between job" },
+        { q: "Last week your partner told the kids, \"Don't listen to Dad, he knows nothing about homework.\" You have talked about it, and now you are both with them.", a: "\"Mum and I talked about homework. We'll both help, and we'll do it the same way.\" [Show Them the Repair]", bundle: 'pro', guideBack: "The new answer, told as a team" },
+        { q: "You are about to tell the kids, \"Mama always forgets your PE kit.\"", a: "\"Mama's got a lot on today. Let's put the PE kit by the door together.\" [Speak Kindly About the Other Parent]", bundle: 'pro', guideBack: "A fair word, with no dig" },
+        { q: "Your daughter says, \"Dad says your rules are silly.\"", a: "\"You don't have to carry that, love. Dad and I will talk about the rules ourselves.\" [Keep Them Out of the Middle]", bundle: 'pro', guideBack: "A warm no to the go-between job" },
+      ]
+    },
+    {
+      name: "Mum Said Yes",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The child gets a no from one parent and goes straight to the other, or comes with \"Mum said yes\" when Mum said no such thing.\n\nWhat goes wrong is that the second parent answers without knowing the first answer, and overrules their partner without meaning to. The child learns that the answer depends on which door you knock on.\n\n**Check With Each Other** is the main strategy: find out the first answer before you give yours. **Back Them Now, Talk Later** holds it when you already know. **Decide Together, Tell Them Together** fits when nobody has really answered.\n\nThe one thing to avoid: answering before you know what was already said.\n\nMindset: two doors, one answer.",
+      inputs: [
+        { q: "Your son says, \"Mum said I can have a friend over tonight.\" You are not sure she did.", a: "\"Okay. Let's check with Mum together, and then it's settled.\" [Check With Each Other]", bundle: 'pro', guideBack: "A check on the first answer" },
+        { q: "Your daughter asks you for the car keys. Her dad, in the doorway, said no ten minutes ago.", a: "\"Dad's already said no, so it's no. Pete, let's talk about the car later.\" [Back Them Now, Talk Later]", bundle: 'pro', guideBack: "Support for their call, and a talk for later" },
+        { q: "The twins ask you if they can stay up for the football. They add, a bit too quickly, \"We didn't ask Mama.\"", a: "\"Then let's ask Mama now, all together.\" [Check With Each Other]", bundle: 'pro', guideBack: "A check on the first answer" },
+        { q: "Your daughter says, \"Papa said maybe, so if you say yes, it's a yes.\"", a: "\"Maybe isn't a yes. Papa and I will decide together, and tell you after dinner.\" [Decide Together, Tell Them Together]", bundle: 'pro', guideBack: "A promise of one shared answer" },
+        { q: "Your teenager texts you at work: \"Can I go to Josh's? Dad's not answering.\"", a: "\"I'll ring Dad first, and then you'll get one answer from both of us.\" [Check With Each Other]", bundle: 'pro', guideBack: "A check on the first answer" },
+        { q: "Your partner's daughter says, \"Mum said I can have pizza for dinner.\" Her mum is out.", a: "\"Did Mum say that today? I'll text her, and then we'll know.\" [Check With Each Other]", bundle: 'pro', guideBack: "A check on the first answer" },
+        { q: "Your partner said no to a sleepover. Your son comes to you about it, and your partner is standing right there.", a: "\"You heard Dad. No sleepover tonight. Sam, let's talk about weekends later.\" [Back Them Now, Talk Later]", bundle: 'pro', guideBack: "Support for their call, and a talk for later" },
+        { q: "Your son says, \"Mum always says no, so I'm asking you instead.\"", a: "\"You don't have to choose which of us to ask. Mum and I give the same answers.\" [Keep Them Out of the Middle]", bundle: 'pro', guideBack: "A warm no to the go-between job" },
+      ]
+    },
+    {
+      name: "The Eye-Roll",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Nothing is said, or almost nothing: a sigh, a roll of the eyes, \"Oh, Mum and her rules\", when the other parent's rule comes up in front of the children.\n\nWhat goes wrong is that the children read it perfectly. The rule is still there, but now it only half counts, and the parent who made it is on their own.\n\n**Speak Kindly About the Other Parent** replaces the sigh with a fair word. **Show Them the Repair** helps when the eye-roll has already landed. **Keep Them Out of the Middle** fits when the children start asking about it.\n\nThe one thing to avoid: the small sigh you think nobody noticed.\n\nMindset: they notice the sigh. Give them something better to notice.",
+      inputs: [
+        { q: "Your son mentions Mum's \"no phones in bed\" rule, and you feel your eyes start to roll.", a: "\"Mum's rule is there because she wants you to sleep. Phone on the charger.\" [Speak Kindly About the Other Parent]", bundle: 'pro', guideBack: "A fair word, with no dig" },
+        { q: "Your partner sighs loudly when you say it's bath time. Your daughter giggles: \"Dad thinks your rules are silly.\"", a: "\"Dad and I sometimes see things differently, love. That's for us to talk about. Bath now.\" [Keep Them Out of the Middle]", bundle: 'pro', guideBack: "A warm no to the go-between job" },
+        { q: "Yesterday you rolled your eyes when your husband said \"homework first\", and your son saw. Today, you and your husband have talked.", a: "\"I rolled my eyes at Dad's rule yesterday, and that wasn't fair. We've talked. Homework first is our rule, both of us.\" [Show Them the Repair]", bundle: 'pro', guideBack: "The new answer, told as a team" },
+        { q: "Your wife rolls her eyes when you say no sweets. Your son jumps on it: \"See, Mum doesn't mind!\"", a: "\"Mum and I will decide about sweets together, and tell you tonight. Until then, it's no.\" [Decide Together, Tell Them Together]", bundle: 'pro', guideBack: "A promise of one shared answer" },
+        { q: "Your partner sighs every time the kids mention your bedtime rule. Your daughter asks, \"Why does Daddy do that?\"", a: "\"Daddy might want it a bit different. We'll talk about it. Your job is just pyjamas.\" [Keep Them Out of the Middle]", bundle: 'pro', guideBack: "A warm no to the go-between job" },
+        { q: "You hear yourself say, \"Oh, Mum and her rules,\" as you tell the kids to tidy up before the park.", a: "\"Actually, Mum's right. Tidy room, then the park. I'll talk to Mum about the rest later.\" [Back Them Now, Talk Later]", bundle: 'pro', guideBack: "Support for their call, and a talk for later" },
+        { q: "Your son puts on his stepdad's voice: \"Rules are rules!\" You almost laugh.", a: "\"Let's not make fun of Erik. He's fair with you, and he cares about you.\" [Speak Kindly About the Other Parent]", bundle: 'pro', guideBack: "A fair word, with no dig" },
+        { q: "After a week of sighing at each other's rules, you and your partner have talked. You are both with the kids.", a: "\"Mum and I have been sighing at each other's rules. We've talked, and we've agreed on three rules we both stand behind.\" [Show Them the Repair]", bundle: 'pro', guideBack: "The new answer, told as a team" },
+      ]
+    },
+    {
+      name: "Grandma Knows Best",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Grandparents give sweets, screens or late nights against your rules, or say in front of the children that the rules are wrong: \"A little cake won't hurt. Your dad's too strict.\"\n\nWhat goes wrong is that the children now have three answers, and a parent standing between their partner and their own mum or dad.\n\n**Back Them Now, Talk Later** keeps your partner's call standing, even with your own parent. **Decide Together, Tell Them Together** fits when a grandparent asks the children first. **Speak Kindly About the Other Parent** helps when a grandparent puts your partner down.\n\nThe one thing to avoid: siding with your parent against your partner in front of the children.\n\nMindset: grandparents get a say. The two of you get the answer.",
+      inputs: [
+        { q: "Your mum, in front of the kids: \"Oh, a little cake won't hurt. Your dad's too strict.\"", a: "\"Dad's said after lunch, and I'm with him. We can talk about it later, Mum.\" [Back Them Now, Talk Later]", bundle: 'pro', guideBack: "Support for their call, and a talk for later" },
+        { q: "Your son says, \"Grandpa says Mum's rules are old-fashioned.\"", a: "\"Mum knows you really well, and her rules come from that.\" [Speak Kindly About the Other Parent]", bundle: 'pro', guideBack: "A fair word, with no dig" },
+        { q: "Before asking either of you, Granny says to the kids, \"Who wants to stay up and watch the film with me?\"", a: "\"Can Sara and I have a minute? We'll decide together and tell you all.\" [Decide Together, Tell Them Together]", bundle: 'pro', guideBack: "A promise of one shared answer" },
+        { q: "Your daughter says, \"Nana says I can get my ears pierced if I stay with her.\"", a: "\"That's one for Dad and me to decide together. We'll tell you, and Nana, this weekend.\" [Decide Together, Tell Them Together]", bundle: 'pro', guideBack: "A promise of one shared answer" },
+        { q: "Your daughter says, \"Granny says to tell you she's taking us for burgers on Saturday.\"", a: "\"Thanks, love, but Granny can ask me herself. You don't have to pass it on.\" [Keep Them Out of the Middle]", bundle: 'pro', guideBack: "A warm no to the go-between job" },
+        { q: "At Grandpa's, your son asks if he can play on the tablet past the time his mum set.", a: "\"What did Mum say about tablet time? That's what we go with, even at Grandpa's.\" [Check With Each Other]", bundle: 'pro', guideBack: "A check on the first answer" },
+        { q: "Last weekend you and your partner disagreed in front of the kids about Granny's late bedtimes. Now you have talked.", a: "\"Dad and I talked about Granny's house. Bedtime there is nine, and Granny knows.\" [Show Them the Repair]", bundle: 'pro', guideBack: "The new answer, told as a team" },
+        { q: "Grandma says at the table, \"In my day, mothers stayed at home.\" Your son asks, \"Is Mum a bad mum?\"", a: "\"No. Mum is a brilliant mum, and she works hard for all of us.\" [Speak Kindly About the Other Parent]", bundle: 'pro', guideBack: "A fair word, with no dig" },
+      ]
+    },
+  ],
+  parentingtogether2: [
+    {
+      name: "The Silent Sabotage",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You talk it through, you agree — and then the other parent does what they wanted anyway. The rule holds when you are home and melts when you are out. Nobody says no out loud; it just doesn't happen.\n\nWhat goes wrong is policing it: checking, catching them out, keeping a list. Then you are the rule-keeper and they are the suspect, and the agreement is dead.\n\n**Raise It in Private, Soon** names the gap calmly, the same day. **Agree on the Few That Matter** checks whether it was a real agreement or a tired yes. **Keep a Weekly Check-In** gives the rule a set time to be looked at again.\n\nThe one thing to avoid: catching them out in front of the kids.\n\nMindset: a rule they don't keep often means they never really agreed to it. Find out which part.",
+      inputs: [
+        { q: "You agreed on no screens before school. Today your son let slip that Dad puts cartoons on when you leave early.", a: "\"Can we talk about mornings tonight? I hear the cartoons are still on.\" [Raise It in Private, Soon]", bundle: 'pro', guideBack: "A request to talk alone, with a time" },
+        { q: "Your wife agreed to no sweets on weekdays, and you keep finding wrappers in her car.", a: "\"I think the sweets rule was my rule, not ours. Can we find one we'd both keep?\" [Agree on the Few That Matter]", bundle: 'pro', guideBack: "A proposal for a short list of joint rules" },
+        { q: "Your partner Jonas said yes to half past seven, but every night he does bedtime, it is nine.", a: "\"I don't think half seven works for you. What time would you actually hold?\" [Agree on the Few That Matter]", bundle: 'pro', guideBack: "A proposal for a short list of joint rules" },
+        { q: "You realise you agreed to the homework rule and then let it slide on your nights.", a: "\"I've been letting homework slide on my nights. That's not fair to you. I'll hold it.\" [Back It Once It's Agreed]", bundle: 'pro', guideBack: "Your doubt said once, then your backing" },
+        { q: "The pocket money rule keeps getting broken without anyone saying so — by both of you.", a: "\"Shall we look at pocket money on Sunday? It isn't working for either of us.\" [Keep a Weekly Check-In]", bundle: 'pro', guideBack: "A standing talk, or its first question" },
+        { q: "Your husband sighs, \"Yes, we agreed, I know,\" whenever the phone rule comes up.", a: "\"It sounds like you're not really behind it. Can we talk about it tonight, just us?\" [Raise It in Private, Soon]", bundle: 'pro', guideBack: "A request to talk alone, with a time" },
+        { q: "Your mother-in-law agreed to keep the toddler's nap, and then let him skip it every day this week.", a: "\"Could we go through the week together every Sunday, so the naps don't keep slipping?\" [Keep a Weekly Check-In]", bundle: 'pro', guideBack: "A standing talk, or its first question" },
+        { q: "Your wife says, \"I said yes because I was tired, not because I agreed.\"", a: "\"Then let's do it again, properly. What's the version you'd actually keep?\" [Agree on the Few That Matter]", bundle: 'pro', guideBack: "A proposal for a short list of joint rules" },
+      ]
+    },
+    {
+      name: "Let Me Do It",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "One parent watches the other do something — a nappy, a bath, a tantrum — and steps in: \"You're doing it wrong, give him to me.\" Then they redo it their own way. It can come from either of you.\n\nWhat goes wrong is that the parent who is pushed aside does less and less, and feels less and less sure. The one who took over ends up holding everything, and then resents it.\n\n**Different Isn't Wrong** is the main strategy, both ways: step back, or ask for room. **Divide and Own** gives the job one owner, so the other stays out. **Raise It in Private, Soon** deals with it later, not over the child's head.\n\nThe one thing to avoid: taking the child out of their arms.\n\nMindset: if the child is safe, their way is good enough.",
+      inputs: [
+        { q: "This evening your wife took the baby off you in the middle of a feed: \"You're holding her wrong.\" Now the baby is asleep.", a: "\"When you took her off me earlier, I felt pushed out. I'd like to finish feeds my way.\" [Different Isn't Wrong]", bundle: 'pro', guideBack: "A step back, or a request for room" },
+        { q: "You realise that you have remade the bed your husband made for Theo, again.", a: "\"I keep redoing things you've already done. Theo's bed was fine. I'll stop.\" [Different Isn't Wrong]", bundle: 'pro', guideBack: "A step back, or a request for room" },
+        { q: "Your partner says, \"Every time I do bath time, you come in and take over.\"", a: "\"You're right. Let's make bath time yours, all of it, and I'll stay downstairs.\" [Divide and Own]", bundle: 'pro', guideBack: "A clear split of who owns what" },
+        { q: "This morning your husband redid Leo's hair in front of him, saying you'd done it wrong. Leo is at school now.", a: "\"Can we talk about the hair thing this morning? I'd like to sort it before he's home.\" [Raise It in Private, Soon]", bundle: 'pro', guideBack: "A request to talk alone, with a time" },
+        { q: "Your wife asks why you never read the bedtime stories any more. You stopped after she kept correcting how you read.", a: "\"Because I kept getting corrected. I'd love to read them again, my way.\" [Different Isn't Wrong]", bundle: 'pro', guideBack: "A step back, or a request for room" },
+        { q: "Your partner Lena tied Maja's shoes in a way you would never do, and you feel your hand reaching out to redo them.", a: "\"I was about to redo her laces. They're fine. Your way.\" [Different Isn't Wrong]", bundle: 'pro', guideBack: "A step back, or a request for room" },
+        { q: "At your mum's house, she keeps taking over whenever your husband changes the baby's nappy.", a: "\"Mum, nappies are his job when we're here. Could you leave them to him?\" [Divide and Own]", bundle: 'pro', guideBack: "A clear split of who owns what" },
+        { q: "Your wife Noor says, \"I'll just do the school forms. You always get them wrong.\"", a: "\"I'd like to own the forms. If I get one wrong, I'll fix it.\" [Divide and Own]", bundle: 'pro', guideBack: "A clear split of who owns what" },
+      ]
+    },
+    {
+      name: "The Same Fight Again",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Same subject, same words, same ending, every week: screens, sweets, bedtime. You both know your lines by heart, and nothing changes.\n\nWhat goes wrong is arguing the case again instead of changing how you handle it. Each round adds a little more hurt, and the kids hear it through the wall.\n\n**Agree on the Few That Matter** turns the fight into one clear shared rule. **Keep a Weekly Check-In** gives the subject a set place, so it doesn't flare up on any evening. **Different Isn't Wrong** settles the part that was only about style.\n\nThe one thing to avoid: starting it again at bedtime, when you are both tired.\n\nMindset: if it keeps coming back, it needs a rule or a time, not another round.",
+      inputs: [
+        { q: "It is Wednesday evening, and the screen-time argument is starting again, word for word.", a: "\"We've had this fight ten times. Can we settle it properly on Sunday, over coffee?\" [Keep a Weekly Check-In]", bundle: 'pro', guideBack: "A standing talk, or its first question" },
+        { q: "Your wife says, \"You always let them have more screen time than I do.\"", a: "\"Let's stop guessing. What exact limit would you hold on school nights?\" [Agree on the Few That Matter]", bundle: 'pro', guideBack: "A proposal for a short list of joint rules" },
+        { q: "You and your husband fight every week about whether the kids have to finish their plates.", a: "\"I think plates are style, not a rule. Can we each do it our own way?\" [Different Isn't Wrong]", bundle: 'pro', guideBack: "A step back, or a request for room" },
+        { q: "The sweets argument flares up again at nine at night, with both of you exhausted.", a: "\"Not tonight. Let's put sweets on Sunday's list and do it properly.\" [Keep a Weekly Check-In]", bundle: 'pro', guideBack: "A standing talk, or its first question" },
+        { q: "Your partner Dev says, \"Here we go again,\" as soon as you mention bedtime.", a: "\"I know. Let's agree one rule we both keep, so we never have this one again.\" [Agree on the Few That Matter]", bundle: 'pro', guideBack: "A proposal for a short list of joint rules" },
+        { q: "In your check-in, the old fight about tidying up comes back.", a: "\"What if tidying is one of our few rules — ten minutes before dinner — and we both hold it?\" [Agree on the Few That Matter]", bundle: 'pro', guideBack: "A proposal for a short list of joint rules" },
+        { q: "You and your partner Anna fight again about which of you is \"too soft\" with Leo.", a: "\"We're just different with him, and he's fine with both. Let's stop calling it soft.\" [Different Isn't Wrong]", bundle: 'pro', guideBack: "A step back, or a request for room" },
+        { q: "The bedtime fight stopped once you agreed a rule, but tonight you feel like opening it up again.", a: "\"I still think it's a bit early, but we agreed. I'll keep it.\" [Back It Once It's Agreed]", bundle: 'pro', guideBack: "Your doubt said once, then your backing" },
+      ]
+    },
+    {
+      name: "Uneven Load",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "One parent holds it all — the times, the kit, the forms, the presents, the dentist — and the other helps when asked. Even if both of you are busy, only one of you is carrying the list.\n\nWhat goes wrong is asking for \"more help\". It leaves the planner as the manager, and help without ownership still means reminding, checking and carrying the list.\n\n**Divide and Own** hands over whole jobs, planning included. **Keep a Weekly Check-In** keeps the split fair as the weeks change. **Raise It in Private, Soon** gets it said before it turns into a blow-up.\n\nThe one thing to avoid: keeping score out loud — \"I did forty things, you did three.\"\n\nMindset: fair is not half of every job. It is whole jobs, owned.",
+      inputs: [
+        { q: "You have booked every dentist visit, school photo and birthday present this year. Tonight you have had enough.", a: "\"Can we talk about the kids' jobs tonight? I'm carrying too much of the list.\" [Raise It in Private, Soon]", bundle: 'pro', guideBack: "A request to talk alone, with a time" },
+        { q: "Your husband says, \"But I always do the bath.\"", a: "\"You do, and it helps. I'd like you to own something with planning in it too, like the clubs.\" [Divide and Own]", bundle: 'pro', guideBack: "A clear split of who owns what" },
+        { q: "Your wife says, \"What do you want me to do? Just say.\"", a: "\"I don't want to manage it. Could you take the school trips, from the forms to the packing?\" [Divide and Own]", bundle: 'pro', guideBack: "A clear split of who owns what" },
+        { q: "You split the jobs last month, but now your work hours have changed.", a: "\"My hours have changed. Can we look at our split again at Sunday's check-in?\" [Keep a Weekly Check-In]", bundle: 'pro', guideBack: "A standing talk, or its first question" },
+        { q: "Your partner Marcus took over the packed lunches, but you still remind him every evening.", a: "\"The lunches are all yours. I'll stop reminding you, and if one's missed, it's yours to sort.\" [Divide and Own]", bundle: 'pro', guideBack: "A clear split of who owns what" },
+        { q: "You are about to say, \"I do everything around here.\"", a: "\"I'd like us to look at who owns what. Can we do it on Sunday, with a list?\" [Keep a Weekly Check-In]", bundle: 'pro', guideBack: "A standing talk, or its first question" },
+        { q: "Your wife has taken on all the school things, and you can see she is exhausted.", a: "\"You're doing all the school stuff. Let me own homework and the reading log.\" [Divide and Own]", bundle: 'pro', guideBack: "A clear split of who owns what" },
+        { q: "Your partner agreed to own swimming, but packs the bag differently from how you would.", a: "\"The bag's yours. Pack it however works for you.\" [Different Isn't Wrong]", bundle: 'pro', guideBack: "A step back, or a request for room" },
+      ]
+    },
+    {
+      name: "Different Values",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Not a small habit, but a real difference in what you believe: how strict to be, whether to punish, what children should eat, how much freedom a twelve-year-old gets. Often it comes from how each of you was raised.\n\nWhat goes wrong is trying to convert the other parent. Every talk turns into who is right, and the kids end up with two rulebooks.\n\n**Agree on the Few That Matter** finds the shared ground and makes it a rule. **Different Isn't Wrong** leaves room for two styles on the rest. **Back It Once It's Agreed** lets you live with a decision that was not your first choice.\n\nThe one thing to avoid: telling the kids what you really think of the other parent's rules.\n\nMindset: two parents with different values can still share one short list.",
+      inputs: [
+        { q: "Your husband grew up with strict punishments, and you didn't. Tonight you argue about whether to take away Theo's bike.", a: "\"We see punishment really differently. Can we agree on two or three things we'd both do?\" [Agree on the Few That Matter]", bundle: 'pro', guideBack: "A proposal for a short list of joint rules" },
+        { q: "Your wife thinks a nine-year-old can walk to school alone, and you don't.", a: "\"Let's each say what safe looks like for us, and see where we match.\" [Agree on the Few That Matter]", bundle: 'pro', guideBack: "A proposal for a short list of joint rules" },
+        { q: "You think sweets should be rare; your partner thinks treats are part of being a child.", a: "\"You'd like more treats, I'd like fewer. Shall we pick one rule we both hold, and leave the rest?\" [Agree on the Few That Matter]", bundle: 'pro', guideBack: "A proposal for a short list of joint rules" },
+        { q: "You lost the argument about letting your twelve-year-old have a phone. It is decided.", a: "\"I wouldn't have chosen it, but I'll back it, and I'll help set it up.\" [Back It Once It's Agreed]", bundle: 'pro', guideBack: "Your doubt said once, then your backing" },
+        { q: "Your wife Noor is gentler than you at bedtime, and you think she is too soft.", a: "\"You're gentler than me at bedtime. It's a different way, not a wrong one.\" [Different Isn't Wrong]", bundle: 'pro', guideBack: "A step back, or a request for room" },
+        { q: "Your wife's parents think you are too relaxed with the kids, and she half agrees with them.", a: "\"Can we talk about it tonight, just the two of us, before anyone else's views get in?\" [Raise It in Private, Soon]", bundle: 'pro', guideBack: "A request to talk alone, with a time" },
+        { q: "Your husband believes the kids should sort out their fights themselves; you always step in.", a: "\"Maybe we're both right sometimes. Let's agree one line: we step in if anyone gets hurt.\" [Agree on the Few That Matter]", bundle: 'pro', guideBack: "A proposal for a short list of joint rules" },
+        { q: "You and Lena decided that Maja can go to the sleepover, though you would have said no.", a: "\"I'd have said no, and I'm still nervous. But we decided, and I'll drop her off.\" [Back It Once It's Agreed]", bundle: 'pro', guideBack: "Your doubt said once, then your backing" },
+      ]
+    },
+  ],
+  parentingtogether3: [
+    {
+      name: "The Angry Message",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "A long, blaming text or email about something that happened in the other home: the wet coat, the late drop-off, the haircut, and everything else since the separation.\n\nWhat goes wrong is the urge to answer every point. Each defence opens a new argument, the messages get longer, and by midnight nobody remembers the actual question.\n\n**Brief, Friendly, Firm** is the main strategy: find the real question and answer only that. **Write It, Don't Fight It** helps when they want to take it to the phone. **Bring In Someone Neutral** fits when the angry messages never stop.\n\nThe one thing to avoid: replying the same night, point by point.\n\nMindset: answer the question, not the accusations.",
+      inputs: [
+        { q: "Your ex texts: \"You let her watch TV all weekend AGAIN. Can you at least bring her PE kit on Monday?\"", a: "\"Yes, I'll bring her PE kit on Monday. Thanks for the reminder.\" [Brief, Friendly, Firm]", bundle: 'pro', guideBack: "A short, calm message" },
+        { q: "A three-page email from your son's other mum lists everything you did wrong this term.", a: "\"Thanks for your email. I've read it. If there's something you'd like to change for next term, let me know and I'll answer by Friday.\" [Brief, Friendly, Firm]", bundle: 'pro', guideBack: "A short, calm message" },
+        { q: "Your ex sends a voice note, shouting about your new girlfriend meeting the kids.", a: "\"I'd rather sort this in writing. Could you send me what worries you? I'll answer properly.\" [Write It, Don't Fight It]", bundle: 'pro', guideBack: "An offer to sort it in writing" },
+        { q: "Your ex texts at 2 am: \"You're a useless mother and everyone knows it. Are you taking them to the dentist or not?\"", a: "\"Yes, I'll take them to the dentist on Thursday. I'll let you know how it goes.\" [Brief, Friendly, Firm]", bundle: 'pro', guideBack: "A short, calm message" },
+        { q: "For six months, every message from your ex has been an attack, and you dread your phone.", a: "\"These messages aren't working for either of us. Would you see a mediator with me, so we can agree how we talk?\" [Bring In Someone Neutral]", bundle: 'pro', guideBack: "A suggestion to get outside help" },
+        { q: "Your ex-husband emails, angry that your daughter came back with nits.", a: "\"Thanks for telling me. I've treated her, and I'll treat her again on Sunday.\" [Brief, Friendly, Firm]", bundle: 'pro', guideBack: "A short, calm message" },
+        { q: "After your short reply, your ex rings, ready for a fight.", a: "\"I've answered in my message. If there's more, please email it and I'll reply this week.\" [Write It, Don't Fight It]", bundle: 'pro', guideBack: "An offer to sort it in writing" },
+        { q: "Your ex's new wife sends you a long message about how badly you dress the kids.", a: "\"Thanks for your message. I'll talk about clothes with Paul directly.\" [Brief, Friendly, Firm]", bundle: 'pro', guideBack: "A short, calm message" },
+      ]
+    },
+    {
+      name: "The Messenger Child",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Your child arrives with a message from the other parent: \"Mum says you have to pay for the trip.\" \"Dad says you're not allowed to take me to Grandma's.\"\n\nWhat goes wrong is that the child now carries an adult problem. Whatever you say back, they have to carry the other way, and they feel every word of it.\n\n**Write It, Don't Fight It** is the main strategy: thank them, and take the topic to the other parent directly. **Their House, Their Rules** fits when the message is about rules. **Don't Interrogate the Kids** stops you asking for more details.\n\nThe one thing to avoid: sending an answer back with the child.\n\nMindset: thank the messenger, and take the message off them.",
+      inputs: [
+        { q: "Your son says, \"Dad says you have to pay for my new football boots.\"", a: "\"Thanks for telling me. I'll sort that with Dad by email. You don't need to carry it.\" [Write It, Don't Fight It]", bundle: 'pro', guideBack: "An offer to sort it in writing" },
+        { q: "Your daughter says, \"Mum says I'm not allowed to come to yours on her birthday.\"", a: "\"Thanks, love. Mum and I will work out the birthday. You'll have a lovely day either way.\" [Write It, Don't Fight It]", bundle: 'pro', guideBack: "An offer to sort it in writing" },
+        { q: "Your son says, \"Papa says you have to make me go to bed at eight, like he does.\"", a: "\"Papa decides bedtime at his house, and I decide here. If Papa and I need to talk about it, we will.\" [Their House, Their Rules]", bundle: 'pro', guideBack: "A statement of whose call it is" },
+        { q: "Your daughter whispers, \"Mum said to ask you about the money, but not to tell you she asked.\"", a: "\"Thanks for telling me. That's for Mum and me, and I'll message her myself.\" [Write It, Don't Fight It]", bundle: 'pro', guideBack: "An offer to sort it in writing" },
+        { q: "Your son brings a note from his dad about changing weekends, and you want to ask what else Dad said.", a: "\"Thanks for bringing it. Now, how was the school trip?\" [Don't Interrogate the Kids]", bundle: 'pro', guideBack: "A question about the child's own days" },
+        { q: "You're about to say, \"Tell your mother she can pay for it herself.\"", a: "\"I'll answer Mum about that myself, by email. What do you want for tea?\" [Write It, Don't Fight It]", bundle: 'pro', guideBack: "An offer to sort it in writing" },
+        { q: "Your stepson says, \"My mum says you're not allowed to tell me what to do.\"", a: "\"In this house, your dad and I make the rules together. At your mum's, she does.\" [Their House, Their Rules]", bundle: 'pro', guideBack: "A statement of whose call it is" },
+        { q: "Your ex asks your daughter to tell you the holiday is off, and she arrives in tears.", a: "\"Thank you for telling me, sweetheart. That's a grown-up thing, and Dad and I will sort it. You've done nothing wrong.\" [Write It, Don't Fight It]", bundle: 'pro', guideBack: "An offer to sort it in writing" },
+      ]
+    },
+    {
+      name: "Bad-Mouthing",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The other home runs you down, and your child repeats it: \"Mum says you never think about anyone but yourself.\" Or you hear the same words about to leave your own mouth.\n\nWhat goes wrong is that the child hears that half of where they come from is bad. And the natural answer, a dig back, only puts them deeper in the middle.\n\n**Their House, Their Rules** keeps you from judging the other home in front of them. **Don't Interrogate the Kids** asks how they feel, not what else was said. **Write It, Don't Fight It** takes the problem to the other parent. **Bring In Someone Neutral** fits when it does not stop.\n\nThe one thing to avoid: defending yourself to your child.\n\nMindset: your child is half of each of you. Speak about the other half with care.",
+      inputs: [
+        { q: "Your son says, \"Dad says you broke up our family.\"", a: "\"That must be hard to hear. How are you feeling about it?\" [Don't Interrogate the Kids]", bundle: 'pro', guideBack: "A question about the child's own days" },
+        { q: "Your daughter says, \"Mum says your rules are mean.\"", a: "\"Mum and I have different rules, and that's okay. Mine are for here.\" [Their House, Their Rules]", bundle: 'pro', guideBack: "A statement of whose call it is" },
+        { q: "\"Your father never thinks about anyone but himself\" is ready to come out while your son waits for a late pick-up.", a: "\"Dad's running late. Want to play a game while we wait?\" [Don't Interrogate the Kids]", bundle: 'pro', guideBack: "A question about the child's own days" },
+        { q: "Your daughter has come home three weekends in a row repeating things her dad said about you.", a: "\"I'll talk to Dad about it in writing. You don't have to choose what to believe.\" [Write It, Don't Fight It]", bundle: 'pro', guideBack: "An offer to sort it in writing" },
+        { q: "Your ex's mother tells your son in front of you, \"Your mum was always selfish.\"", a: "\"Grandma and I see things differently. Come on, love, let's get your coat.\" [Their House, Their Rules]", bundle: 'pro', guideBack: "A statement of whose call it is" },
+        { q: "Your stepdaughter says, \"Mum says you're the reason Dad doesn't love her any more.\"", a: "\"That sounds really confusing for you. Do you want to talk about how it feels?\" [Don't Interrogate the Kids]", bundle: 'pro', guideBack: "A question about the child's own days" },
+        { q: "You have written to your ex twice about what the kids are hearing, and it hasn't changed.", a: "\"The kids keep hearing things about both of us. Would you see a family counsellor with me about it?\" [Bring In Someone Neutral]", bundle: 'pro', guideBack: "A suggestion to get outside help" },
+        { q: "Your son says, \"Papa says you only care about money.\"", a: "\"Papa and I disagree about some grown-up things, and we both love you. That part isn't up for debate.\" [Their House, Their Rules]", bundle: 'pro', guideBack: "A statement of whose call it is" },
+      ]
+    },
+    {
+      name: "The Interrogation",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The child comes back from the other home, and the questions start: \"Who was there? Is Dad seeing someone? Did Mum say anything about me?\" Sometimes it is you asking. Sometimes it is the other home, asking about yours.\n\nWhat goes wrong is that the child becomes a spy. They learn to report, to protect, and to guess which answer you want, and they stop telling either of you much at all.\n\n**Don't Interrogate the Kids** is the main strategy: ask about them. **Their House, Their Rules** helps when your question is really a judgement. **Write It, Don't Fight It** takes a real question to the other parent.\n\nThe one thing to avoid: \"just one more\" question about the other parent.\n\nMindset: ask about your child, and the rest is not theirs to answer.",
+      inputs: [
+        { q: "Your daughter mentions a man called Rob who was at her mum's. \"And who's Rob?\" is already halfway out.", a: "\"And what did you all do on Saturday?\" [Don't Interrogate the Kids]", bundle: 'pro', guideBack: "A question about the child's own days" },
+        { q: "You want to know if your ex has a new job. Your son is eating his cereal.", a: "\"What are you looking forward to at school this week?\" [Don't Interrogate the Kids]", bundle: 'pro', guideBack: "A question about the child's own days" },
+        { q: "You really need to know if your ex is moving house, because it changes the school run.", a: "\"I'll ask Dad about it myself. How was your weekend, love?\" [Write It, Don't Fight It]", bundle: 'pro', guideBack: "An offer to sort it in writing" },
+        { q: "Your daughter says, \"Mum asked me loads of questions about your new house.\"", a: "\"You don't have to answer questions about my house. If Mum wants to know something, she can ask me.\" [Write It, Don't Fight It]", bundle: 'pro', guideBack: "An offer to sort it in writing" },
+        { q: "You're about to ask, \"Did Dad let you stay up late again?\"", a: "\"Did you have fun at Dad's? What was the best bit?\" [Don't Interrogate the Kids]", bundle: 'pro', guideBack: "A question about the child's own days" },
+        { q: "Your son says his mum feeds them takeaway most nights, and you want to ask how often.", a: "\"Food at Mum's is Mum's call. Do you want to help me make pasta tonight?\" [Their House, Their Rules]", bundle: 'pro', guideBack: "A statement of whose call it is" },
+        { q: "Your stepson comes back from his dad's, quiet. You want to ask what happened there.", a: "\"You seem a bit quiet. Do you want to talk, or just chill?\" [Don't Interrogate the Kids]", bundle: 'pro', guideBack: "A question about the child's own days" },
+        { q: "Your daughter looks worried and says, \"Are you going to ask me about Mama again?\"", a: "\"No questions about Mama's house. I just want to hear about you.\" [Don't Interrogate the Kids]", bundle: 'pro', guideBack: "A question about the child's own days" },
+      ]
+    },
+    {
+      name: "Different Rules, Two Homes",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Screen time, bedtime, sweets, homework: in one home it's one way, and in the other it's another. The children notice first, and they use it: \"But at Dad's…\"\n\nWhat goes wrong is that the rules turn into a contest. You tighten yours to make a point, or you tell the child the other home's rules are wrong, and the child is in the middle again.\n\n**Their House, Their Rules** is the main strategy: name whose call it is, and say your own rule. **Write It, Don't Fight It** helps you agree a few shared things with the other parent. **Bring In Someone Neutral** fits when you cannot agree even on the few that matter.\n\nThe one thing to avoid: telling the child the other home's rules are wrong.\n\nMindset: two homes, two sets of rules. One child who doesn't have to choose.",
+      inputs: [
+        { q: "Your son says, \"At Mum's I can have the iPad in bed.\"", a: "\"At Mum's, that's Mum's call. Here, the iPad sleeps in the kitchen.\" [Their House, Their Rules]", bundle: 'pro', guideBack: "A statement of whose call it is" },
+        { q: "Your daughter says, \"Dad doesn't check my homework. You're so strict.\"", a: "\"Dad does it his way. Here, I check it before screens.\" [Their House, Their Rules]", bundle: 'pro', guideBack: "A statement of whose call it is" },
+        { q: "Your child's bedtimes are two hours apart in the two homes, and Monday mornings are a mess.", a: "\"Could we agree on one school-night bedtime for both homes? Could you email me what time you think works?\" [Write It, Don't Fight It]", bundle: 'pro', guideBack: "An offer to sort it in writing" },
+        { q: "Your stepdaughter says, \"At Mum's we don't have to eat at the table.\"", a: "\"Mum's house, Mum's rules. In this house, we eat together.\" [Their House, Their Rules]", bundle: 'pro', guideBack: "A statement of whose call it is" },
+        { q: "You and your ex disagree about whether your daughter can have a phone at all, and every email ends in a row.", a: "\"We can't agree on this alone. Could we take it to a mediator, along with the other big ones?\" [Bring In Someone Neutral]", bundle: 'pro', guideBack: "A suggestion to get outside help" },
+        { q: "Your son says, \"At Papa's, we don't have to say sorry.\"", a: "\"Papa has his ways. In this house, we say sorry and make it right.\" [Their House, Their Rules]", bundle: 'pro', guideBack: "A statement of whose call it is" },
+        { q: "Your daughter's medicine is given at different times in each home, and it's affecting her.", a: "\"Could we write down one medicine plan for both homes? I'll email you a draft tonight.\" [Write It, Don't Fight It]", bundle: 'pro', guideBack: "An offer to sort it in writing" },
+        { q: "Your son tries it on: \"Dad says I don't have to do chores at all.\"", a: "\"Then that's how it is at Dad's. Here, you set the table.\" [Their House, Their Rules]", bundle: 'pro', guideBack: "A statement of whose call it is" },
+      ]
+    },
+    {
+      name: "The Handover",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Pick-up and drop-off turn into a fight in front of the child: a dig about being late, a demand about money, an old argument started on the doorstep.\n\nWhat goes wrong is that the child's moment of going between homes becomes the place where their parents fight. Every handover after that starts with a knot in the stomach.\n\n**Handover Without Drama** is the main strategy: facts, a warm goodbye, and the way out. **Write It, Don't Fight It** takes the topic off the doorstep. **Brief, Friendly, Firm** answers the angry message that comes after.\n\nThe one thing to avoid: answering the dig at the door.\n\nMindset: the doorway belongs to the child.",
+      inputs: [
+        { q: "You're three minutes late. Your ex opens the door and says, \"Of course you're late.\" Your daughter hears it.", a: "\"Sorry, I'm late. Hi, love! Here's your bag, let's go.\" [Handover Without Drama]", bundle: 'pro', guideBack: "A practical word and a warm goodbye" },
+        { q: "At the door, your ex says, \"And I want to change the Christmas plan.\"", a: "\"Okay. Email me what you'd like and I'll answer by Sunday. Bye, Lily!\" [Write It, Don't Fight It]", bundle: 'pro', guideBack: "An offer to sort it in writing" },
+        { q: "Your son won't let go of you at his dad's door, and his dad looks impatient.", a: "\"Dad's got a great weekend planned. I'll ring you tomorrow night. Off you go, love.\" [Handover Without Drama]", bundle: 'pro', guideBack: "A practical word and a warm goodbye" },
+        { q: "An hour after a tense handover, your ex texts: \"You made a scene in front of him.\"", a: "\"Thanks for your message. I'll collect him on Sunday at six, as planned.\" [Brief, Friendly, Firm]", bundle: 'pro', guideBack: "A short, calm message" },
+        { q: "Your ex's new partner answers the door and starts telling you how to pack your son's bag.", a: "\"Thanks. Here's his bag, and his inhaler's in the side pocket. Have fun, Kai!\" [Handover Without Drama]", bundle: 'pro', guideBack: "A practical word and a warm goodbye" },
+        { q: "Handovers at the house have gone badly for months. You suggest a change by text.", a: "\"Could we do handovers at school from now on? Less hard for all of us.\" [Write It, Don't Fight It]", bundle: 'pro', guideBack: "An offer to sort it in writing" },
+        { q: "Grandpa collects your daughter for her dad and starts asking, \"When are you going to stop being so difficult?\"", a: "\"Hi, Frank. Her bag and her coat are here. Have a lovely weekend, Isla!\" [Handover Without Drama]", bundle: 'pro', guideBack: "A practical word and a warm goodbye" },
+        { q: "In the car park, your ex says loudly, \"You still owe me for the dentist.\" The kids are getting into the car.", a: "\"Send me the bill and I'll pay it this week. Bye, kids, have fun!\" [Write It, Don't Fight It]", bundle: 'pro', guideBack: "An offer to sort it in writing" },
+      ]
+    },
+  ],
+  underminedatwork1: [
+    {
+      name: "Credit Taken",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Your plan, your idea or your numbers are presented as someone else's: \"So, I put together this plan…\" Sometimes it is a \"we\" that leaves you out, sometimes a plain \"I\".\n\nWhat goes wrong is the freeze. The moment passes, the room leaves believing it, and later anything you say sounds like sour grapes.\n\n**Claim Your Work** is the main strategy: put your name back on it, warmly, with an offer. **Add the Facts** helps when they blur it, with a date or a record. **Invite Them In** fits when you want to share the work, on your terms.\n\nThe one thing to avoid: waiting until afterwards and telling everyone except them.\n\nMindset: say \"that's mine\" in the same room it was taken.",
+      inputs: [
+        { q: "In the project meeting, your manager says, \"Thanks to Leo for the new budget sheet.\" You built it.", a: "\"Glad the sheet's useful. I built it last month, so I'm happy to show anyone how it works.\" [Claim Your Work]", bundle: 'pro', guideBack: "A friendly statement of ownership" },
+        { q: "At the parents' meeting, a colleague says, \"I set up this homework app for the school.\" You set it up.", a: "\"Just to add: I set it up in August, and Mia has been helping since.\" [Add the Facts]", bundle: 'pro', guideBack: "A short correction, with the source" },
+        { q: "At the restaurant staff meeting, a waiter presents your idea of a quiet corner for families as his own.", a: "\"That's the idea I raised last week. Glad it's coming in.\" [Claim Your Work]", bundle: 'pro', guideBack: "A friendly statement of ownership" },
+        { q: "The head reads out a newsletter article at the staff meeting. Your colleague's name is on it, but you wrote it.", a: "\"Thanks. I wrote that one, actually. Happy to send anyone the longer version.\" [Claim Your Work]", bundle: 'pro', guideBack: "A friendly statement of ownership" },
+        { q: "Your co-worker shows the client \"our design\", and the team slide only has his name on it.", a: "\"Just so you know, I did the drawings for this design, and Tom did the costing.\" [Add the Facts]", bundle: 'pro', guideBack: "A short correction, with the source" },
+        { q: "Mira presents your idea for a new ward rota to the manager as \"something I've been thinking about\". She is clearly keen on it.", a: "\"Mira, you clearly care about this. Want to run the first month of my rota with me?\" [Invite Them In]", bundle: 'pro', guideBack: "An offer to work together" },
+        { q: "A trainee teacher shows your lesson plan to her mentor as her own work.", a: "\"Glad the plan worked so well. I wrote it last year, so ask me if you want the follow-up lessons.\" [Claim Your Work]", bundle: 'pro', guideBack: "A friendly statement of ownership" },
+        { q: "In the team meeting, a colleague says, \"We all worked on this report.\" You wrote nearly all of it.", a: "\"Just to add: I wrote the report, and Jan and Sara did the charts.\" [Add the Facts]", bundle: 'pro', guideBack: "A short correction, with the source" },
+      ]
+    },
+    {
+      name: "Contradicted in Front of Them",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "A colleague goes against your decision in front of the team, the customer or the students. \"Oh, you can use your phones in here.\" \"We can do that by Monday, no problem.\"\n\nWhat goes wrong is that the audience now has two answers, and picks the nicer one. If you argue, they watch a fight. If you give in, your next decision counts for less.\n\n**Hold Your Point Calmly** keeps the decision, in one short line. **Park It for After** takes the disagreement out of the room. **Add the Facts** helps when the contradiction rests on a mistake.\n\nThe one thing to avoid: arguing your reasons in front of the audience.\n\nMindset: one calm line now, the full talk later.",
+      inputs: [
+        { q: "A colleague tells your customer, \"Of course we can deliver on Saturday.\" You don't deliver at weekends.", a: "\"Just to be clear: we deliver Monday to Friday. Friday is the soonest we can do.\" [Add the Facts]", bundle: 'pro', guideBack: "A short correction, with the source" },
+        { q: "The other PE teacher tells your class, \"You don't need to change for this lesson.\"", a: "\"In my lessons, we change. Two minutes, everyone.\" [Hold Your Point Calmly]", bundle: 'pro', guideBack: "A calm, firm statement" },
+        { q: "A senior nurse tells your patient, \"You can skip the breathing exercises today.\"", a: "\"Jenny, could we talk about the exercises at the desk?\" [Park It for After]", bundle: 'pro', guideBack: "A proposal to talk later" },
+        { q: "In the team meeting, a colleague tells your team, \"Forget the Friday deadline, Monday's fine.\"", a: "\"The deadline is still Friday. I'll check in with everyone on Thursday.\" [Hold Your Point Calmly]", bundle: 'pro', guideBack: "A calm, firm statement" },
+        { q: "A teaching assistant tells your students, \"You can work in pairs if you like.\" You said on your own.", a: "\"Today it's on your own, please. Pairs next week.\" [Hold Your Point Calmly]", bundle: 'pro', guideBack: "A calm, firm statement" },
+        { q: "At the hotel desk, your colleague Ben tells a guest, \"Late checkout's no problem,\" after you have said no.", a: "\"Let's sort this out between us, Ben. Mrs Roy, I'll be right with you.\" [Park It for After]", bundle: 'pro', guideBack: "A proposal to talk later" },
+        { q: "Your co-trainer tells the group, \"You don't really have to do the quiz at the end.\"", a: "\"Good thing to talk about at the break, Lena. Let's pick it up then.\" [Park It for After]", bundle: 'pro', guideBack: "A proposal to talk later" },
+        { q: "On a class trip, a parent helper tells the children, \"Sweets are fine on the bus.\" Your rule is no food on the bus.", a: "\"The bus rule stays: no food until we get there.\" [Hold Your Point Calmly]", bundle: 'pro', guideBack: "A calm, firm statement" },
+      ]
+    },
+    {
+      name: "Are You Sure?",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Your skill is questioned in public: \"Are you sure that's right?\" \"Maybe someone should double-check that.\" It sounds like a harmless question, and the room hears doubt.\n\nWhat goes wrong is the long answer. You over-explain, and the length sounds like proof that you weren't sure. Going quiet sounds the same.\n\n**Add the Facts** answers with one fact. **Hold Your Point Calmly** answers with \"yes, I'm sure\". **Invite Them In** fits when they really do know the area, and the doubt can become help.\n\nThe one thing to avoid: a long defence.\n\nMindset: \"yes, I'm sure\" is a full answer.",
+      inputs: [
+        { q: "In front of the client, a colleague asks you, \"Are you sure those figures are up to date?\"", a: "\"Yes. They're from this morning's report.\" [Add the Facts]", bundle: 'pro', guideBack: "A short correction, with the source" },
+        { q: "A colleague passing your classroom looks at the board and asks, in front of the class, \"Is that really how you spell it?\"", a: "\"Yes, I'm sure. 'Necessary': one c, two s's. Copy it down, everyone.\" [Hold Your Point Calmly]", bundle: 'pro', guideBack: "A calm, firm statement" },
+        { q: "At the team meeting, someone asks, \"Are you sure you can handle the launch on your own?\"", a: "\"Yes, I'm sure. I'll keep you all posted every Friday.\" [Hold Your Point Calmly]", bundle: 'pro', guideBack: "A calm, firm statement" },
+        { q: "In front of a patient, a doctor asks you, \"Did you actually check his blood pressure?\"", a: "\"Yes. At eight and at twelve. It's in the notes.\" [Add the Facts]", bundle: 'pro', guideBack: "A short correction, with the source" },
+        { q: "Kurt, who has used the old system for fifteen years, asks the team, \"Are we sure the new software is ready?\"", a: "\"Fair question, Kurt. You know the old system best. Want to test it with me on Tuesday?\" [Invite Them In]", bundle: 'pro', guideBack: "An offer to work together" },
+        { q: "At the shop meeting, the manager asks your colleague to \"double-check\" your stock count, in front of everyone.", a: "\"Just so you know, I counted twice, and it matches the system.\" [Add the Facts]", bundle: 'pro', guideBack: "A short correction, with the source" },
+        { q: "At the information evening, a colleague tells the parents, \"I'm not sure this trip has been properly planned.\"", a: "\"Let's go through any worries after the talk, Ola. For now, here are the dates.\" [Park It for After]", bundle: 'pro', guideBack: "A proposal to talk later" },
+        { q: "A senior colleague says, in front of your new team, \"Are you sure you're the right person to lead this?\"", a: "\"Yes, I'm sure. Let's get started.\" [Hold Your Point Calmly]", bundle: 'pro', guideBack: "A calm, firm statement" },
+      ]
+    },
+    {
+      name: "The Meeting Dig",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "A small, sharp remark about your work, where others can hear it: \"Let's hope this one's on time.\" \"Interesting choice of colours.\" Small enough to deny, sharp enough to sting.\n\nWhat goes wrong is that both easy answers lose. Laugh along, and the dig sticks. Hit back, and you look touchy, so the dig wins twice.\n\n**Park It for After** takes it out of the room. **Bring It to Me First** gives them a clear route for next time. **Claim Your Work** owns the work the dig was aimed at, warmly. **Invite Them In** fits when the dig hides real know-how.\n\nThe one thing to avoid: a dig back.\n\nMindset: the dig wants a reaction. Give it a calm line instead.",
+      inputs: [
+        { q: "As you start your slides, a colleague says, \"Let's hope this one's on time.\" People smile.", a: "\"Pete, if you're worried about my deadlines, come to me first. I'd want to know.\" [Bring It to Me First]", bundle: 'pro', guideBack: "A request for next time" },
+        { q: "At the staff meeting, a colleague says, \"Well, some people's lessons are always very… lively.\" Everyone knows who she means.", a: "\"Let's talk about it after the meeting, Eva, you and me.\" [Park It for After]", bundle: 'pro', guideBack: "A proposal to talk later" },
+        { q: "As your poster goes up in the corridor, a colleague says, \"Interesting choice of colours.\"", a: "\"Thanks. I made it with 9B, and they chose the colours. Ask them about it.\" [Claim Your Work]", bundle: 'pro', guideBack: "A friendly statement of ownership" },
+        { q: "At the till, a colleague says to a regular, \"She's still learning the system, bless her.\"", a: "\"Kim, let's catch up at the break. Now, Mr Lund, card or cash?\" [Park It for After]", bundle: 'pro', guideBack: "A proposal to talk later" },
+        { q: "In the meeting, a colleague says, \"We'll let the new girl's plan run for a bit and see.\"", a: "\"That plan's mine, and I'm happy to show anyone how it works.\" [Claim Your Work]", bundle: 'pro', guideBack: "A friendly statement of ownership" },
+        { q: "On the ward, a colleague tells the student nurses, \"Don't learn bandaging from her. She does it the slow way.\"", a: "\"Sanna, if you've got a quicker way, show me first. I'd like to see it.\" [Bring It to Me First]", bundle: 'pro', guideBack: "A request for next time" },
+        { q: "A colleague says to the team, \"Some of us actually read the whole brief.\"", a: "\"Let's take that after the meeting, Marcus.\" [Park It for After]", bundle: 'pro', guideBack: "A proposal to talk later" },
+        { q: "A fellow teacher says to your class, \"Your teacher's famous for her long tests!\" Everyone laughs.", a: "\"Rasmus, you write great short tests. Want to plan the next one with me?\" [Invite Them In]", bundle: 'pro', guideBack: "An offer to work together" },
+      ]
+    },
+    {
+      name: "Talked Over",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You make a suggestion, and it gets no answer. Ten minutes later, someone says the same thing, and the room loves it. Or you are cut off halfway, and the talk goes on without you.\n\nWhat goes wrong is timing. By the time you notice, the moment has gone, and \"that was my idea\" a minute later sounds petty. So you say nothing, and it happens again.\n\n**Claim Your Work** links it back, kindly. **Add the Facts** helps when there is a record. **Hold Your Point Calmly** keeps the floor when you are cut off. **Invite Them In** fits when you want to take it forward together.\n\nThe one thing to avoid: saying your idea again, louder, without linking it back.\n\nMindset: link it back once, calmly, and the room will remember.",
+      inputs: [
+        { q: "You suggest a shorter Monday meeting. Silence. Later, Lars says, \"What if we cut Mondays to thirty minutes?\" Everyone nods.", a: "\"Yes, that's what I suggested earlier. Glad we agree. I can draft the new agenda.\" [Claim Your Work]", bundle: 'pro', guideBack: "A friendly statement of ownership" },
+        { q: "You start explaining your proposal, and a colleague cuts in with his own.", a: "\"I'd like to finish my point, Ali. Then let's hear yours.\" [Hold Your Point Calmly]", bundle: 'pro', guideBack: "A calm, firm statement" },
+        { q: "Your idea for a reading corner got no reply. Now the head says, \"Anna's idea for a reading corner is lovely.\" Anna smiles.", a: "\"Just to add: I suggested it in the August meeting. It's in the notes.\" [Add the Facts]", bundle: 'pro', guideBack: "A short correction, with the source" },
+        { q: "At the shop meeting, your idea about a Sunday sale is ignored. Later, the manager praises Kevin for it.", a: "\"Glad the Sunday sale's coming in. That's the one I raised at the start.\" [Claim Your Work]", bundle: 'pro', guideBack: "A friendly statement of ownership" },
+        { q: "On the ward, you suggested a quiet hour after lunch. Now Dr Berg suggests the same, and it is agreed.", a: "\"Dr Berg, we're thinking the same way. Want to plan the quiet hour with me this week?\" [Invite Them In]", bundle: 'pro', guideBack: "An offer to work together" },
+        { q: "You are explaining your plan, and two colleagues start talking over you about something else.", a: "\"I'm not finished. One more minute, please.\" [Hold Your Point Calmly]", bundle: 'pro', guideBack: "A calm, firm statement" },
+        { q: "Your idea got lost on the video call. Now Emma says it and gets praised.", a: "\"Just to add: I put that in the chat at ten past. Glad it's going ahead.\" [Add the Facts]", bundle: 'pro', guideBack: "A short correction, with the source" },
+        { q: "Ola repeats your idea as his own, then asks who could help him run it.", a: "\"That's the one I raised earlier, Ola. I'd like to lead it.\" [Claim Your Work]", bundle: 'pro', guideBack: "A friendly statement of ownership" },
+      ]
+    },
+    {
+      name: "Over Your Head",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "A colleague has gone straight to the manager about your work, and you find out in front of everyone: \"Sam tells me your project is behind.\" \"I've already raised this with the head.\"\n\nWhat goes wrong is that you are suddenly defending yourself to the boss, with the colleague watching, about a problem nobody brought to you.\n\n**Add the Facts** puts the manager's picture right. **Bring It to Me First** asks the colleague for the direct route next time. **Park It for After** fits when it starts to turn into a hearing in front of the team.\n\nThe one thing to avoid: attacking the colleague in front of the manager.\n\nMindset: answer the boss with facts, and the colleague with a request.",
+      inputs: [
+        { q: "Your manager says in the meeting, \"Sam tells me your project is behind.\"", a: "\"Just to add: it's on schedule. The next part goes out on Monday.\" [Add the Facts]", bundle: 'pro', guideBack: "A short correction, with the source" },
+        { q: "A colleague says to the team, \"I've already told the head about your trip plans.\"", a: "\"Next time, Jo, come to me first. I'd want to hear it from you.\" [Bring It to Me First]", bundle: 'pro', guideBack: "A request for next time" },
+        { q: "The head opens the staff meeting with, \"I hear there's a problem with the Year 9 timetable,\" and looks at you.", a: "\"Could we take that after the meeting? I'm happy to go through it with you and Fredrik.\" [Park It for After]", bundle: 'pro', guideBack: "A proposal to talk later" },
+        { q: "Your manager says at the shop meeting, \"Nadia says your till is often short.\"", a: "\"Just so you know, my till was checked on Friday, and it was exact.\" [Add the Facts]", bundle: 'pro', guideBack: "A short correction, with the source" },
+        { q: "The ward manager says in front of the team, \"Someone's been worried about your handovers.\" Nobody looks at you.", a: "\"I'd be glad to hear it. Whoever it is, please come to me first. I'd want to know.\" [Bring It to Me First]", bundle: 'pro', guideBack: "A request for next time" },
+        { q: "On a call with the whole team, your director says, \"Tom flagged some issues with your figures.\"", a: "\"Let's go through them after the call, Tom and I, and I'll report back by Friday.\" [Park It for After]", bundle: 'pro', guideBack: "A proposal to talk later" },
+        { q: "In the team meeting, a colleague says to your manager, \"I emailed you about her report last week.\"", a: "\"Just to add: the report changed on Monday, and the new version answers those points.\" [Add the Facts]", bundle: 'pro', guideBack: "A short correction, with the source" },
+        { q: "In the staffroom, in front of others, a teacher tells you, \"I've mentioned your noisy classes to the head.\"", a: "\"Next time, Lisa, come to me first. I'd much rather sort it between us.\" [Bring It to Me First]", bundle: 'pro', guideBack: "A request for next time" },
+      ]
+    },
+  ],
+  underminedatwork2: [
+    {
+      name: "Left Out of the Loop",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You are not invited to the meeting, not copied on the email, not in the group chat. You find out about decisions on your own work afterwards, often from someone outside the team.\n\nWhat goes wrong is that it feels too small to raise, so you say nothing and look less informed each week. Or you finally snap: \"Why am I always the last to know?\"\n\n**Ask to Be Included** is the main strategy: ask plainly, about next time. **Them Before the Boss** helps when it looks deliberate. **Confirm in Writing** keeps a \"yes, of course\" from fading.\n\nThe one thing to avoid: asking why you were left out, instead of asking to be in.\n\nMindset: asking for my place in the loop is part of the job.",
+      inputs: [
+        { q: "The team moved the launch date in a meeting you were not invited to. You heard it from a customer.", a: "\"Could you add me to the launch meetings from now on? I'd rather not hear changes from customers.\" [Ask to Be Included]", bundle: 'pro', guideBack: "A plain request for access" },
+        { q: "The other English teachers chose next term's novel by email, and you were not copied.", a: "\"Hanna, could we have a quick word at lunch? It's about the novel choice.\" [Them Before the Boss]", bundle: 'pro', guideBack: "A request to talk in private" },
+        { q: "After your talk, Leo promised to copy you on the client emails.", a: "\"Hi Leo, thanks for today. Just confirming: you'll copy me on all emails to Hansen from now on.\" [Confirm in Writing]", bundle: 'pro', guideBack: "A brief recap of the agreement" },
+        { q: "The ward's planning meeting moved to half past seven, and nobody told the night staff.", a: "\"Could the notes from the planning meeting go to the night staff too? We need to know what's decided.\" [Ask to Be Included]", bundle: 'pro', guideBack: "A plain request for access" },
+        { q: "Dev set up a new group chat for the project without you. You have asked for a word, and he is listening.", a: "\"Last week, when the new chat started without me, I missed two decisions about my own part.\" [Situation, Behaviour, Impact]", bundle: 'pro', guideBack: "A factual account, with its effect" },
+        { q: "The organiser says, \"It's only a small meeting. You don't need to be there.\"", a: "\"My part depends on what's decided there, so I'd like to be in it.\" [Ask to Be Included]", bundle: 'pro', guideBack: "A plain request for access" },
+        { q: "You have been left off the invite a third time, after two friendly requests to Dev.", a: "\"I've asked Dev twice to add me. I've now missed three planning meetings on my own project. Could you make sure I'm on the list?\" [Take It Up the Line]", bundle: 'pro', guideBack: "A fact-based request for help" },
+        { q: "In the shop, you find out from a new hire that the opening hours have changed.", a: "\"Could you add me to the managers' email list? I'd like to hear about changes before the new staff do.\" [Ask to Be Included]", bundle: 'pro', guideBack: "A plain request for access" },
+      ]
+    },
+    {
+      name: "Slow-Walked",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "What you need from a colleague is always late: the figures, the files, the sign-off. Each delay has a reason, but your work keeps missing its date, and it looks like your fault.\n\nWhat goes wrong is chasing harder and harder — three reminders a day, sharper each time — or quietly doing their part yourself.\n\n**Agree Who Does What** puts a date on their part. **Confirm in Writing** turns \"soon\" into a day. **Situation, Behaviour, Impact** shows them what the delay costs, and **Take It Up the Line** is for when dates keep being missed.\n\nThe one thing to avoid: accepting \"soon\" as an answer.\n\nMindset: a date both of us agreed on is fairer than a reminder neither of us likes.",
+      inputs: [
+        { q: "Every month you wait two weeks for a colleague's figures, and your report goes out late.", a: "\"Let's agree a date: you send the figures by the 5th, and I finish the report by the 10th.\" [Agree Who Does What]", bundle: 'pro', guideBack: "A split of the work, by name" },
+        { q: "In Monday's meeting, Viktor said he would send the files \"soon.\"", a: "\"Hi Viktor, just confirming what we said: you'll send the files by Thursday at noon, so I can start on Friday.\" [Confirm in Writing]", bundle: 'pro', guideBack: "A brief recap of the agreement" },
+        { q: "The lab keeps sending your patients' results last, and your ward rounds keep running late.", a: "\"Could we have a quick talk this week, just us? It's about when the results come through.\" [Them Before the Boss]", bundle: 'pro', guideBack: "A request to talk in private" },
+        { q: "You are talking with your colleague in private about the delays.", a: "\"For the last three reports, when the data came on the 12th instead of the 5th, I had to send the client an apology.\" [Situation, Behaviour, Impact]", bundle: 'pro', guideBack: "A factual account, with its effect" },
+        { q: "The teacher you share a class with still has not marked her half of the exams, and grades are due on Friday.", a: "\"Let's split what's left: I'll mark the essays, you do the short answers, both done by Thursday.\" [Agree Who Does What]", bundle: 'pro', guideBack: "A split of the work, by name" },
+        { q: "You have talked to Viktor twice, and the files are late again.", a: "\"I've raised the files with Viktor twice. They've been late four times, and the launch slipped a week. I need a firm date from him, set by you.\" [Take It Up the Line]", bundle: 'pro', guideBack: "A fact-based request for help" },
+        { q: "The stock order you need signed off has sat on Pete's desk for days.", a: "\"Hi Pete, quick recap of what we said: you'll sign off the stock order by Tuesday, and I'll send it Wednesday morning.\" [Confirm in Writing]", bundle: 'pro', guideBack: "A brief recap of the agreement" },
+        { q: "When you ask about the delay, your colleague says, \"I'm just really busy.\"", a: "\"I believe you. Let's agree what you can do by when, so I can plan around it.\" [Agree Who Does What]", bundle: 'pro', guideBack: "A split of the work, by name" },
+      ]
+    },
+    {
+      name: "Wrong Information",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You get the wrong time, the old version, the wrong room. You walk in late, present last year's numbers, or keep parents waiting — and it is you who looks careless.\n\nWhat goes wrong is turning it into an accusation (\"You did that on purpose\") that you cannot prove, or checking everything twice in silence for months.\n\n**Confirm in Writing** gives you both one version. **Situation, Behaviour, Impact** names what happened without guessing why. **Them Before the Boss** is the first step when it keeps happening.\n\nThe one thing to avoid: claiming you know they meant it.\n\nMindset: I don't need to prove why. The facts and the effect are enough.",
+      inputs: [
+        { q: "Grace told you the meeting was at two. It was at one, and you walked in late.", a: "\"Hi Grace, just confirming for next time: the next meeting is Thursday at one, in room four?\" [Confirm in Writing]", bundle: 'pro', guideBack: "A brief recap of the agreement" },
+        { q: "You were given an old version of the slides and showed outdated numbers. Now you are talking in private.", a: "\"On Tuesday, when I got version two instead of version three, I showed the board last year's numbers.\" [Situation, Behaviour, Impact]", bundle: 'pro', guideBack: "A factual account, with its effect" },
+        { q: "A teacher told you parents' evening was cancelled. It wasn't, and parents waited for you.", a: "\"Lena, could we have ten minutes after school? I'd like to talk about parents' evening.\" [Them Before the Boss]", bundle: 'pro', guideBack: "A request to talk in private" },
+        { q: "At handover, a nurse gave you the wrong time for a patient's medicine.", a: "\"Could we write the times on the handover sheet? Then we both work from the same version.\" [Confirm in Writing]", bundle: 'pro', guideBack: "A brief recap of the agreement" },
+        { q: "For the second time, a colleague gave you the wrong deadline for a shared bid.", a: "\"Let's agree that I keep the deadlines for the bid, and I'll send them to everyone.\" [Agree Who Does What]", bundle: 'pro', guideBack: "A split of the work, by name" },
+        { q: "In a private talk about the wrong deadline, your colleague says, \"It was just a mix-up.\"", a: "\"Maybe. On the 3rd and again on the 17th, the date I got was a week late, and both times I missed the cut-off.\" [Situation, Behaviour, Impact]", bundle: 'pro', guideBack: "A factual account, with its effect" },
+        { q: "You have talked with Ulla, the exams officer, twice. You have still been sent to the wrong room twice and given a wrong time once.", a: "\"I've talked to Ulla about the exam details twice. Since then I've had the wrong room twice and a wrong time once. Could the details come straight from the office?\" [Take It Up the Line]", bundle: 'pro', guideBack: "A fact-based request for help" },
+        { q: "In the shop, Kofi told you the delivery would come on Tuesday. It came on Monday and sat outside all morning.", a: "\"Hi Kofi, quick note so we're on the same page: deliveries are Mondays at seven from now on. Thanks!\" [Confirm in Writing]", bundle: 'pro', guideBack: "A brief recap of the agreement" },
+      ]
+    },
+    {
+      name: "The Quiet Campaign",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "A colleague talks about your work behind your back — in the kitchen, to the manager, to parents or patients' families. You only hear it second-hand, and people start to treat you differently.\n\nWhat goes wrong is answering in kind: telling your own stories about them. Or saying nothing, because you cannot prove what was said.\n\n**Them Before the Boss** brings it into the open, privately. **Situation, Behaviour, Impact** sticks to what you know and what it caused. **Take It Up the Line** is for when it carries on after you have talked.\n\nThe one thing to avoid: starting a quiet campaign of your own.\n\nMindset: I bring it to them, to their face. That is the opposite of what they did.",
+      inputs: [
+        { q: "A colleague tells you Fatima has been saying in the kitchen that your project is \"a mess.\"", a: "\"Fatima, have you got ten minutes today? I'd like to talk about the project.\" [Them Before the Boss]", bundle: 'pro', guideBack: "A request to talk in private" },
+        { q: "You are now talking privately with Fatima.", a: "\"On Monday, in the kitchen, you called my project a mess. Since then two people on the team have stopped sending me their parts.\" [Situation, Behaviour, Impact]", bundle: 'pro', guideBack: "A factual account, with its effect" },
+        { q: "You hear that Felix has been telling other staff that your class is \"out of control.\"", a: "\"Felix, could we have a word after school? Something's come back to me, and I'd rather hear it from you.\" [Them Before the Boss]", bundle: 'pro', guideBack: "A request to talk in private" },
+        { q: "In your talk, Felix says, \"I was only joking. It's nothing.\"", a: "\"Maybe it was meant as a joke. After it was said in the staff room, the head of year came to watch my class.\" [Situation, Behaviour, Impact]", bundle: 'pro', guideBack: "A factual account, with its effect" },
+        { q: "A nurse is still telling the doctors that you are slow, a month after you talked with her.", a: "\"I talked to Aisha about this a month ago. Doctors are still repeating what she says, and one asked to swap my patients. I'd like your help with this.\" [Take It Up the Line]", bundle: 'pro', guideBack: "A fact-based request for help" },
+        { q: "You hear that Ines has hinted to your manager that you missed a deadline you actually met.", a: "\"Ines, could we grab a coffee? I've heard there's a question about the Hansen deadline, and I'd like to clear it up with you.\" [Them Before the Boss]", bundle: 'pro', guideBack: "A request to talk in private" },
+        { q: "In the shop, Kofi has been telling the area manager that you leave early. You have talked to him twice.", a: "\"I've raised this with Kofi twice, and he's still saying I leave early. Here are my clock-in times for the month. I'd like it to stop.\" [Take It Up the Line]", bundle: 'pro', guideBack: "A fact-based request for help" },
+        { q: "After your talk, you and Fatima agree that any problem with each other's work goes to each other first.", a: "\"Hi Fatima, thanks for the talk. Just confirming: if either of us has a problem with the other's work, we say it to each other first.\" [Confirm in Writing]", bundle: 'pro', guideBack: "A brief recap of the agreement" },
+      ]
+    },
+    {
+      name: "It Keeps Happening",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You talked about it. They said sorry, or \"of course.\" A few weeks later it happens again: the missing section, the changed rota, the client emails without you.\n\nWhat goes wrong is having the same talk again, a bit angrier each time, or giving up and deciding that this is just how it is.\n\n**Take It Up the Line** is the main strategy once you have talked and it is still happening. **Agree Who Does What** fixes lines that are still fuzzy, **Confirm in Writing** turns a promise into a record, and **Situation, Behaviour, Impact** names the pattern, not only the latest time.\n\nThe one thing to avoid: a third version of the same talk.\n\nMindset: if talking hasn't changed it, the next step is structure or help, not volume.",
+      inputs: [
+        { q: "You have talked to Omar twice, and the update went out without your section again.", a: "\"I've talked to Omar twice. It's happened again this week, and the director is asking where my work is. Could you make my section part of the update?\" [Take It Up the Line]", bundle: 'pro', guideBack: "A fact-based request for help" },
+        { q: "After your first talk in May, Marta has presented your work as hers again. You are in private with her.", a: "\"We talked about this in May. On Thursday, when the plan was called yours again, the team thanked you, not me.\" [Situation, Behaviour, Impact]", bundle: 'pro', guideBack: "A factual account, with its effect" },
+        { q: "You and a colleague keep clashing over who writes the parents' newsletter.", a: "\"Let's settle it: I write the newsletter, you check it, and it goes out on Fridays.\" [Agree Who Does What]", bundle: 'pro', guideBack: "A split of the work, by name" },
+        { q: "After your second talk with Ben about the rota, you want the agreement on record.", a: "\"Hi Ben, thanks for today. Recap: I do weekdays, you do weekends, and changes go through the other person first.\" [Confirm in Writing]", bundle: 'pro', guideBack: "A brief recap of the agreement" },
+        { q: "Your manager says, \"Can't you two just sort it out?\"", a: "\"We've tried twice. Three things have been missed this month. I need you to say who owns the client.\" [Take It Up the Line]", bundle: 'pro', guideBack: "A fact-based request for help" },
+        { q: "You have been left off the invite for the third time, and you feel like sending an angry email to everyone.", a: "\"Dev, could we talk tomorrow, just us? This is the third time, and I'd like to sort it properly.\" [Them Before the Boss]", bundle: 'pro', guideBack: "A request to talk in private" },
+        { q: "Your colleague says, \"You're making a big deal out of nothing.\"", a: "\"Three times this term, when the trip letters went out with only your name, parents called you about my plans.\" [Situation, Behaviour, Impact]", bundle: 'pro', guideBack: "A factual account, with its effect" },
+        { q: "Every agreement you make with a colleague fades after a couple of weeks.", a: "\"Let's agree who owns each part, and look at it together again in a month.\" [Agree Who Does What]", bundle: 'pro', guideBack: "A split of the work, by name" },
+      ]
+    },
+  ],
 };

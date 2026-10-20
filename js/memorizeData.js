@@ -26794,4 +26794,784 @@ const memorizeCollections = {
       ]
     },
   ],
+  parentingtogether1: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for being one team in front of the children:\n\n1. Back Them Now, Talk Later\n2. Check With Each Other\n3. Decide Together, Tell Them Together\n4. Show Them the Repair\n5. Keep Them Out of the Middle\n6. Speak Kindly About the Other Parent\n\nThe first three keep one answer. The last three protect the child.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Back Them Now, Talk Later, Check With Each Other, Decide Together, Tell Them Together, Show Them the Repair, Keep Them Out of the Middle, and Speak Kindly About the Other Parent.", bundle: 'free' },
+        { q: "What is the idea behind the whole pack?", a: "In front of the children, you are one team. You disagree with each other, not in front of them.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "The first three make sure the child gets one answer. The last three protect the child when your disagreement has reached them.", bundle: 'free' },
+        { q: "Which strategy is used before anyone has answered?", a: "Decide Together, Tell Them Together. Check With Each Other finds out whether someone already has.", bundle: 'free' },
+        { q: "Which strategy comes after the two of you have talked in private?", a: "Show Them the Repair. It gives the child the ending of the argument they saw.", bundle: 'free' },
+        { q: "Whose model of coparenting does the pack draw on?", a: "Mark Feinberg's. Support against undermining is one of its core parts.", bundle: 'pro' },
+        { q: "What do Pt. 2 and Pt. 3 of the series add?", a: "Pt. 2, Behind Closed Doors, is the talk between parents afterwards. Pt. 3, Two Homes, is for parents who live apart.", bundle: 'pro' },
+        { q: "When do the strategies in this pack not apply?", a: "When a call puts a child at risk. Then you step in.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Back Them Now, Talk Later",
+      description: "",
+      cards: [
+        { q: "What is Back Them Now, Talk Later?", a: "Backing the other parent's call in front of the child, even if you disagree, and saving your view for a private talk later.", bundle: 'free' },
+        { q: "How does Back Them Now, Talk Later sound?", a: "\"You heard Mum. Bed at eight. We'll talk about Fridays later, you and I.\"", bundle: 'free' },
+        { q: "When is Back Them Now, Talk Later the right one?", a: "When the other parent has just made a call in front of the child, and you would have decided differently.", bundle: 'free' },
+        { q: "What does Back Them Now, Talk Later give the child?", a: "One answer that holds, and parents who stand together.", bundle: 'free' },
+        { q: "What are the two parts of Back Them Now, Talk Later?", a: "Back the call, to the child. Book the talk, to your partner.", bundle: 'free' },
+        { q: "When does Back Them Now, Talk Later go wrong?", a: "When the talk never happens, or when the backing comes with a sigh that says the opposite.", bundle: 'pro' },
+        { q: "How is Back Them Now, Talk Later different from Check With Each Other?", a: "Back Them Now, Talk Later is for when you know the first answer. Check With Each Other is for finding it out.", bundle: 'pro' },
+        { q: "Where does Back Them Now, Talk Later come in the sequences?", a: "Last in Kind and Clear, after the kind word and the check.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Check With Each Other",
+      description: "",
+      cards: [
+        { q: "What is Check With Each Other?", a: "Finding out whether the other parent has already been asked, before you answer the child.", bundle: 'free' },
+        { q: "How does Check With Each Other sound?", a: "\"Did you already ask Dad? Then that's the answer.\"", bundle: 'free' },
+        { q: "When is Check With Each Other the right one?", a: "When the child asks you, and you do not know if they asked the other parent first.", bundle: 'free' },
+        { q: "What does Check With Each Other give the child?", a: "The knowledge that asking twice does not change the answer, and that their parents talk to each other.", bundle: 'free' },
+        { q: "What are the three ways to check?", a: "Ask the child, back the first answer, or check with the other parent yourself.", bundle: 'free' },
+        { q: "When does Check With Each Other go wrong?", a: "When it sounds suspicious, as if the child was plotting, instead of light and curious.", bundle: 'pro' },
+        { q: "How is Check With Each Other different from Decide Together, Tell Them Together?", a: "Check With Each Other finds out if there is already an answer. Decide Together, Tell Them Together is for when there is none.", bundle: 'pro' },
+        { q: "Where does Check With Each Other come in the sequences?", a: "First in One Answer, and in the middle of Kind and Clear.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Decide Together, Tell Them Together",
+      description: "",
+      cards: [
+        { q: "What is Decide Together, Tell Them Together?", a: "Holding a new or big request until the two of you have agreed, and then telling the child together.", bundle: 'free' },
+        { q: "How does Decide Together, Tell Them Together sound?", a: "\"Mum and I will talk about it and tell you after dinner.\"", bundle: 'free' },
+        { q: "When is Decide Together, Tell Them Together the right one?", a: "When nobody has answered yet, and the request is too big to answer alone.", bundle: 'free' },
+        { q: "What does Decide Together, Tell Them Together give the child?", a: "One answer from both parents, and a time when they will get it.", bundle: 'free' },
+        { q: "What are the three ways to hold it?", a: "With a time, naming it as big, and \"if you need it now, it's no\".", bundle: 'free' },
+        { q: "When does Decide Together, Tell Them Together go wrong?", a: "When there is no time on it. \"Later\" with no time sounds like a no, and the asking starts again.", bundle: 'pro' },
+        { q: "How is Decide Together, Tell Them Together different from Back Them Now, Talk Later?", a: "Decide Together holds the answer before anyone gives it. Back Them Now backs an answer already given.", bundle: 'pro' },
+        { q: "Where does Decide Together, Tell Them Together come in the sequences?", a: "In the middle of One Answer, after the check.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Show Them the Repair",
+      description: "",
+      cards: [
+        { q: "What is Show Them the Repair?", a: "After you have disagreed in front of the children, sorting it out in private and then showing them it is sorted.", bundle: 'free' },
+        { q: "How does Show Them the Repair sound?", a: "\"Dad and I talked about it. Here's what we decided.\"", bundle: 'free' },
+        { q: "When is Show Them the Repair the right one?", a: "After the slip, once the two of you have talked.", bundle: 'free' },
+        { q: "What does Show Them the Repair give the child?", a: "The ending of the argument they saw, and one answer that holds.", bundle: 'free' },
+        { q: "What are the three things the repair can carry?", a: "The new answer, owning the slip, and that disagreeing is okay.", bundle: 'free' },
+        { q: "When does Show Them the Repair go wrong?", a: "When it carries blame — \"Dad was wrong yesterday\" — or when it comes before you have really agreed.", bundle: 'pro' },
+        { q: "How is Show Them the Repair different from Decide Together, Tell Them Together?", a: "Both end with one answer told together. Show Them the Repair comes after a disagreement the child saw.", bundle: 'pro' },
+        { q: "Where does Show Them the Repair come in the sequences?", a: "Last in After the Slip.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Keep Them Out of the Middle",
+      description: "",
+      cards: [
+        { q: "What is Keep Them Out of the Middle?", a: "Taking the job off a child who is carrying a message, picking a side or judging which parent is right.", bundle: 'free' },
+        { q: "How does Keep Them Out of the Middle sound?", a: "\"That's for Mum and me to sort out. You don't have to.\"", bundle: 'free' },
+        { q: "When is Keep Them Out of the Middle the right one?", a: "When the child offers to carry a message, asks who is right, or tries to get you on their side.", bundle: 'free' },
+        { q: "What does Keep Them Out of the Middle give the child?", a: "Permission to just be the child. The disagreement stays with the adults.", bundle: 'free' },
+        { q: "What are the three jobs to take off them?", a: "The messenger, the judge, and the ally.", bundle: 'free' },
+        { q: "When does Keep Them Out of the Middle go wrong?", a: "When it sounds like a brush-off instead of a kindness, or when you then carry the message yourself, as a dig.", bundle: 'pro' },
+        { q: "How is Keep Them Out of the Middle different from Speak Kindly About the Other Parent?", a: "Keep Them Out of the Middle takes a job off the child. Speak Kindly gives them a good picture of the other parent.", bundle: 'pro' },
+        { q: "Where does Keep Them Out of the Middle come in the sequences?", a: "Last in One Answer, and first in After the Slip.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Speak Kindly About the Other Parent",
+      description: "",
+      cards: [
+        { q: "What is Speak Kindly About the Other Parent?", a: "Saying something fair and kind about the other parent in front of the child, with no dig in it.", bundle: 'free' },
+        { q: "How does Speak Kindly About the Other Parent sound?", a: "\"Dad does it differently, and that's okay.\"", bundle: 'free' },
+        { q: "When is Speak Kindly About the Other Parent the right one?", a: "After a no, a complaint or a comparison, when the other parent comes up.", bundle: 'free' },
+        { q: "What does Speak Kindly About the Other Parent give the child?", a: "Both parents, whole. A dig at one parent lands partly on the child.", bundle: 'free' },
+        { q: "What are the three kind things to say?", a: "Name the reason, name a strength, and say that different is okay.", bundle: 'free' },
+        { q: "When does Speak Kindly About the Other Parent go wrong?", a: "When it slides into \"Dad is wrong, but…\", or comes with a sigh.", bundle: 'pro' },
+        { q: "How is Speak Kindly About the Other Parent different from Back Them Now, Talk Later?", a: "Speak Kindly is about the person. Back Them Now is about the call.", bundle: 'pro' },
+        { q: "Where does Speak Kindly About the Other Parent come in the sequences?", a: "In the middle of After the Slip, and first in Kind and Clear.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Answer as One** — your partner has answered, you do not know, or nobody has\n\n• **Lift It Off Them** — the child is carrying a job, a bad picture, or a fight without an ending\n\n• **All Six Strategies** — everything mixed, with no warning about which moment you are in\n\nOne question runs through all three: is this about the answer, or about the child?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Answer as One, Lift It Off Them, and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Answer as One?", a: "Has an answer already been given, and do I know what it was?", bundle: 'pro' },
+        { q: "Your partner has just answered, and you disagree. Which strategy?", a: "Back Them Now, Talk Later.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Answer as One?", a: "A quick yes to get it over with, and then finding out your partner said no an hour ago.", bundle: 'pro' },
+        { q: "What is the question that decides Lift It Off Them?", a: "What is the child carrying right now — a job, a picture, or a fight without an ending?", bundle: 'pro' },
+        { q: "The child saw you argue and has not seen the ending. Which strategy?", a: "Show Them the Repair.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Lift It Off Them?", a: "Speak Kindly when the child is carrying a message. They are still the messenger.", bundle: 'pro' },
+        { q: "What is the usual wrong choice across all six?", a: "Answering on the spot, alone, to end the asking.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **One Answer** — Check With Each Other → Decide Together, Tell Them Together → Keep Them Out of the Middle\n\n2. **After the Slip** — Keep Them Out of the Middle → Speak Kindly About the Other Parent → Show Them the Repair\n\n3. **Kind and Clear** — Speak Kindly About the Other Parent → Check With Each Other → Back Them Now, Talk Later\n\nEach one is a short talk with a child, who answers between your lines.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "One Answer, After the Slip, and Kind and Clear.", bundle: 'pro' },
+        { q: "What is the order in One Answer?", a: "Check With Each Other, Decide Together, Tell Them Together, Keep Them Out of the Middle.", bundle: 'pro' },
+        { q: "Why does One Answer start with the check?", a: "So you do not hold or give an answer that has already been given.", bundle: 'pro' },
+        { q: "What is the order in After the Slip?", a: "Keep Them Out of the Middle, Speak Kindly About the Other Parent, Show Them the Repair.", bundle: 'pro' },
+        { q: "Why does the repair come last in After the Slip?", a: "It can only come after the two of you have talked.", bundle: 'pro' },
+        { q: "What is the order in Kind and Clear?", a: "Speak Kindly About the Other Parent, Check With Each Other, Back Them Now, Talk Later.", bundle: 'pro' },
+        { q: "Why check before you back in Kind and Clear?", a: "So you know what you are backing. Otherwise you may back a rule nobody made.", bundle: 'pro' },
+        { q: "What is the usual mistake in all three?", a: "Agreeing with the child about the other parent, and answering alone.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The six challenges to master in this pack:\n\n• **Overruled** — one parent cancels the other's call, out loud\n\n• **The Fun Parent** — one is the treats, the other is the rules\n\n• **Criticised in Front of Them** — one parent's way is put down\n\n• **Mum Said Yes** — the child knocks on the second door\n\n• **The Eye-Roll** — a sigh that says the rule doesn't count\n\n• **Grandma Knows Best** — grandparents with their own rules\n\nEach one leaves the child with two answers, or with a job that is not theirs.",
+      cards: [
+        { q: "What are the six challenges in this pack?", a: "Overruled, The Fun Parent, Criticised in Front of Them, Mum Said Yes, The Eye-Roll, and Grandma Knows Best.", bundle: 'pro' },
+        { q: "What should you avoid when you are Overruled?", a: "Winning the argument in front of the child.", bundle: 'pro' },
+        { q: "What does the fun parent's yes do to the other parent?", a: "It turns their no into the mean answer.", bundle: 'pro' },
+        { q: "What does the child hear when one parent is Criticised in Front of Them?", a: "That one parent's way does not count.", bundle: 'pro' },
+        { q: "What is the main strategy for Mum Said Yes?", a: "Check With Each Other — find out the first answer before you give yours.", bundle: 'pro' },
+        { q: "Why does The Eye-Roll matter, when nothing is said?", a: "Children read it perfectly. The rule stays, but it only half counts.", bundle: 'pro' },
+        { q: "What should you avoid with Grandma Knows Best?", a: "Siding with your own parent against your partner in front of the children.", bundle: 'pro' },
+        { q: "What do all six challenges have in common?", a: "The child ends up with two answers, or with a job that is not theirs.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Honesty** — pretending we agree is fake\n\n• **Wrong Calls** — if the call is wrong, I have to stop it now\n\n• **Being Liked** — the kids love it when I say yes\n\n• **Giving Way** — if I back their call, I've lost\n\nEach one makes it feel right to break the team in front of the children.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Honesty, Wrong Calls, Being Liked, and Giving Way.", bundle: 'pro' },
+        { q: "What is true about \"pretending we agree is fake\"?", a: "Children can see parents disagree. What gets added is \"so I should say it right now, over their heads\".", bundle: 'pro' },
+        { q: "What does arguing it out in front of them cost?", a: "The ending. They see the argument, and not the repair.", bundle: 'pro' },
+        { q: "What is true instead of \"if the call is wrong, I have to stop it now\"?", a: "Almost every call can wait a few hours. Only real danger cannot.", bundle: 'pro' },
+        { q: "What does being the easy-going parent quietly cost?", a: "Your partner becomes the bad guy, and the children learn which door to knock on.", bundle: 'pro' },
+        { q: "What is true instead of \"if I back their call, I've lost\"?", a: "Your view still counts. You say it later, to your partner, where it can change the next decision.", bundle: 'pro' },
+        { q: "Where does your view go when you back the call?", a: "Into the talk later, without an audience.", bundle: 'pro' },
+        { q: "What do the four mindsets have in common?", a: "Each one makes it feel right to break the team in front of the children.", bundle: 'pro' },
+      ]
+    },
+  ],
+  parentingtogether2: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for the talk between parents afterwards, behind a closed door:\n\n1. Raise It in Private, Soon\n2. Agree on the Few That Matter\n3. Different Isn't Wrong\n4. Divide and Own\n5. Back It Once It's Agreed\n6. Keep a Weekly Check-In\n\nTalk it through, agree the rules, and share the work.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Raise It in Private, Soon, Agree on the Few That Matter, Different Isn't Wrong, Divide and Own, Back It Once It's Agreed, and Keep a Weekly Check-In.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Two for the talk itself, two for the rules you share, and two for sharing the work over time.", bundle: 'free' },
+        { q: "What is the stance of the Parenting Together series?", a: "In front of the kids, we are a team. We disagree with each other, not in front of them.", bundle: 'free' },
+        { q: "What does every card in this pack train?", a: "A line to the other parent, said afterwards, without the kids in the room.", bundle: 'free' },
+        { q: "Who can undermine whom between parents?", a: "Either parent — by overruling, by quietly not keeping an agreed rule, or by taking over the other's way.", bundle: 'free' },
+        { q: "How does this pack relate to Pt. 1?", a: "Pt. 1 is the moment in front of the kids. Pt. 2 is the talk afterwards, just the two of you.", bundle: 'pro' },
+        { q: "What are the four parts of Mark Feinberg's coparenting model?", a: "Agreement on how to raise the kids, support instead of undermining, the division of labour, and managing the family together.", bundle: 'pro' },
+        { q: "What is gatekeeping?", a: "When one parent criticises, takes over or redoes the other's way, so the other does less and feels less sure. Described by Allen and Hawkins.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Raise It in Private, Soon",
+      description: "",
+      cards: [
+        { q: "What is Raise It in Private, Soon?", a: "Bringing up a clash with the other parent the same day, once you are alone and the kids can't hear.", bundle: 'free' },
+        { q: "How does Raise It in Private, Soon sound?", a: "\"Can we talk about bedtime once they're asleep?\"", bundle: 'free' },
+        { q: "When is Raise It in Private, Soon the right one?", a: "When something went wrong between you in front of the kids, and it hasn't been talked about yet.", bundle: 'free' },
+        { q: "Why does Raise It in Private, Soon work?", a: "In front of the kids the talk becomes a show. Left for weeks, it becomes a pile.", bundle: 'free' },
+        { q: "What are the three ways to raise it?", a: "Book the time, start with what happened rather than the verdict, and keep it to one thing.", bundle: 'free' },
+        { q: "When does Raise It in Private, Soon go wrong?", a: "When you bring the whole list. One thing tonight, the rest another day.", bundle: 'pro' },
+        { q: "What is Raise It in Private, Soon better than, and why?", a: "Arguing in front of the kids, which teaches them the rule is up for debate, or saying nothing, which builds a pile.", bundle: 'pro' },
+        { q: "What does Feinberg's coparenting research say about disagreeing?", a: "Disagree in private, and stand together in front of the children.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Agree on the Few That Matter",
+      description: "",
+      cards: [
+        { q: "What is Agree on the Few That Matter?", a: "Agreeing on a handful of rules — three to five — that you both hold every time, and letting the rest be flexible.", bundle: 'free' },
+        { q: "How does Agree on the Few That Matter sound?", a: "\"Let's each pick our top three rules and see where we match.\"", bundle: 'free' },
+        { q: "When is Agree on the Few That Matter the right one?", a: "When there is no shared rule yet, when there are far too many, or when the same fight keeps coming back.", bundle: 'free' },
+        { q: "Why does Agree on the Few That Matter work?", a: "Two parents never match on everything. A short list is something you can both remember and both keep.", bundle: 'free' },
+        { q: "What are the three ways to get there?", a: "Each pick your top three, sort it big or small, and make it exact.", bundle: 'free' },
+        { q: "When does Agree on the Few That Matter go wrong?", a: "When the rule is vague, like \"less screen time\", or the list is so long you both break it.", bundle: 'pro' },
+        { q: "What is Agree on the Few That Matter better than, and why?", a: "Trying to agree on everything, which turns every small difference into a fight.", bundle: 'pro' },
+        { q: "What does Feinberg call this part of coparenting?", a: "Agreement on child-rearing: a few shared rules that are never up for debate.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Different Isn't Wrong",
+      description: "",
+      cards: [
+        { q: "What is Different Isn't Wrong?", a: "Letting the other parent's way stand, as long as the child is safe and well.", bundle: 'free' },
+        { q: "How does Different Isn't Wrong sound?", a: "\"You put her to bed your way. I'll stay out of it.\"", bundle: 'free' },
+        { q: "When is Different Isn't Wrong the right one?", a: "When the other parent does a job their own way, or when you are the one being corrected.", bundle: 'free' },
+        { q: "Why does Different Isn't Wrong work?", a: "Taking over says \"you can't be trusted with this\". Stepping back is how the other parent gets better at it, and stays in it.", bundle: 'free' },
+        { q: "What are the three ways to use it?", a: "Step back, ask for room, and keep the one line about safety.", bundle: 'free' },
+        { q: "When should you speak up anyway?", a: "When the child's safety is at stake, like a car seat or a bike helmet. The rest is their call.", bundle: 'pro' },
+        { q: "What is Different Isn't Wrong better than, and why?", a: "Redoing their way. The other parent slowly does less and feels less sure.", bundle: 'pro' },
+        { q: "Who described gatekeeping, and does it only come from mothers?", a: "Allen and Hawkins. It has mostly been studied in mothers, but it can go either way between parents.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Divide and Own",
+      description: "",
+      cards: [
+        { q: "What is Divide and Own?", a: "Splitting the parenting jobs so that each one has a single owner, from start to finish.", bundle: 'free' },
+        { q: "How does Divide and Own sound?", a: "\"You own swimming lessons, I own the dentist.\"", bundle: 'free' },
+        { q: "When is Divide and Own the right one?", a: "When one of you holds the whole list, or when things are forgotten because each thought the other had it.", bundle: 'free' },
+        { q: "Why does Divide and Own work?", a: "Helping still leaves one parent as the manager. An owner remembers, plans and does it without a reminder.", bundle: 'free' },
+        { q: "What are the three ways to divide?", a: "By job, by day, and handing over the whole thing, planning included.", bundle: 'free' },
+        { q: "When does Divide and Own go wrong?", a: "When you keep checking or reminding. Then you are still carrying the job.", bundle: 'pro' },
+        { q: "What is Divide and Own better than, and why?", a: "Asking for \"more help\", which keeps one parent as the manager.", bundle: 'pro' },
+        { q: "Which part of Feinberg's model is behind Divide and Own?", a: "The division of labour: a fair split of the work keeps parents a team.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Back It Once It's Agreed",
+      description: "",
+      cards: [
+        { q: "What is Back It Once It's Agreed?", a: "Saying your doubt once, in private, and then standing behind the decision once it is made.", bundle: 'free' },
+        { q: "How does Back It Once It's Agreed sound?", a: "\"I'd have done it differently, but we agreed, so I'll back it.\"", bundle: 'free' },
+        { q: "When is Back It Once It's Agreed the right one?", a: "When a decision is made that wasn't your first choice, or when you notice you let it slide.", bundle: 'free' },
+        { q: "Why does Back It Once It's Agreed work?", a: "A rule only one parent keeps is a gap, and the kids will find it.", bundle: 'free' },
+        { q: "What are the three ways to back it?", a: "Say the doubt then commit, back it with a review date, and own your slip.", bundle: 'free' },
+        { q: "When does Back It Once It's Agreed go wrong?", a: "When the doubt comes back every day, as a sigh, a comment or a quiet exception.", bundle: 'pro' },
+        { q: "What is Back It Once It's Agreed better than, and why?", a: "Going along and then letting it slide. That is the quiet undermining that kills the agreement.", bundle: 'pro' },
+        { q: "In Feinberg's model, what is the opposite of support?", a: "Undermining: rolling your eyes, going easy when the other parent is out, letting the rule slide.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Keep a Weekly Check-In",
+      description: "",
+      cards: [
+        { q: "What is Keep a Weekly Check-In?", a: "A short, regular time each week to talk about the kids as a team, without the kids.", bundle: 'free' },
+        { q: "How does Keep a Weekly Check-In sound?", a: "\"Sunday coffee: what's working with the kids, and what isn't?\"", bundle: 'free' },
+        { q: "When is Keep a Weekly Check-In the right one?", a: "When you only talk about the kids in a crisis, or when the same things keep slipping.", bundle: 'free' },
+        { q: "Why does Keep a Weekly Check-In work?", a: "Small things get somewhere to go, so they don't pile up into a big fight.", bundle: 'free' },
+        { q: "What are the three parts of a good check-in?", a: "Start with what is working, pick one or two problems, and look ahead.", bundle: 'free' },
+        { q: "When does Keep a Weekly Check-In go wrong?", a: "When it turns into a list of complaints, or when it quietly stops happening.", bundle: 'pro' },
+        { q: "What is Keep a Weekly Check-In better than, and why?", a: "Talking only when something goes wrong, when both of you are tired and cross.", bundle: 'pro' },
+        { q: "Which part of Feinberg's model is behind Keep a Weekly Check-In?", a: "Managing the family together, as a team.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The four collections in this pack, and what each one makes you choose between:\n\n• **Talk It Through** — after a clash: raise it, let their way stand, or back what is decided?\n• **Split the Work** — the everyday jobs: give an owner, step back, or look at it on Sunday?\n• **Set the Rules** — the rules you share: agree them, back them, or look at them again?\n• **All Six Strategies** — everything mixed, with no warning about which one you need\n\nOne question decides nearly all of it: is this about when we talk, what we agree, or who does what?",
+      cards: [
+        { q: "What are the four collections in this pack?", a: "Talk It Through, Split the Work, Set the Rules, and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Talk It Through?", a: "Is this a rule we share, their style, or a decision already made?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Talk It Through?", a: "Raising their style as if it were a broken rule.", bundle: 'pro' },
+        { q: "What is the question that decides Split the Work?", a: "Is the problem who does it, how it's done, or that we never talk about it?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Split the Work?", a: "Taking a job back because it isn't done your way.", bundle: 'pro' },
+        { q: "What is the question that decides Set the Rules?", a: "Do we have a rule on this yet, and is it working?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Set the Rules?", a: "Reopening a rule every time it is tested.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in All Six Strategies?", a: "Fighting the same fight again, instead of setting a rule, an owner or a time.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Same-Night Talk** — Raise It in Private, Soon → Agree on the Few That Matter → Back It Once It's Agreed\n2. **The Fair Split** — Divide and Own → Different Isn't Wrong → Keep a Weekly Check-In\n3. **The Same Fight, Settled** — Keep a Weekly Check-In → Different Isn't Wrong → Agree on the Few That Matter\n\nIn each one, the talk happens behind the door, and ends with something you both keep.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Same-Night Talk, The Fair Split, and The Same Fight, Settled.", bundle: 'pro' },
+        { q: "What is the order in The Same-Night Talk?", a: "Raise It in Private, Soon, Agree on the Few That Matter, Back It Once It's Agreed.", bundle: 'pro' },
+        { q: "Why does backing it come last in The Same-Night Talk?", a: "Backing a rule only means something once it is agreed.", bundle: 'pro' },
+        { q: "What is the order in The Fair Split?", a: "Divide and Own, Different Isn't Wrong, Keep a Weekly Check-In.", bundle: 'pro' },
+        { q: "Why does stepping back come in the middle of The Fair Split?", a: "It is what keeps the split alive. Take the job back, and the load lands on you again.", bundle: 'pro' },
+        { q: "What is the order in The Same Fight, Settled?", a: "Keep a Weekly Check-In, Different Isn't Wrong, Agree on the Few That Matter.", bundle: 'pro' },
+        { q: "Why let go of the style part before agreeing the rule?", a: "It makes the real rule small enough to agree on.", bundle: 'pro' },
+        { q: "What is the usual mistake in The Same Fight, Settled?", a: "Starting the fight at bedtime, and trying to win all of it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack — five kinds of trouble between parents, and what goes wrong in each:\n\n• **The Silent Sabotage** — agreed, then not kept: policing it kills the agreement\n• **Let Me Do It** — one parent takes over the other's way: the pushed-aside parent does less\n• **The Same Fight Again** — the weekly row: arguing the case instead of changing how you handle it\n• **Uneven Load** — one parent holds the whole list: asking for \"more help\" keeps them the manager\n• **Different Values** — a real difference in beliefs: trying to convert the other parent\n\nEach one needs a rule, an owner, room or a time, not another round.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Silent Sabotage, Let Me Do It, The Same Fight Again, Uneven Load, and Different Values.", bundle: 'pro' },
+        { q: "What should you avoid in The Silent Sabotage?", a: "Catching them out in front of the kids.", bundle: 'pro' },
+        { q: "What does a rule that is never kept often mean?", a: "That the other parent never really agreed to it.", bundle: 'pro' },
+        { q: "What should you avoid in Let Me Do It?", a: "Taking the child out of their arms.", bundle: 'pro' },
+        { q: "What should you avoid in The Same Fight Again?", a: "Starting it again at bedtime, when you are both tired.", bundle: 'pro' },
+        { q: "What should you avoid in Uneven Load?", a: "Keeping score out loud.", bundle: 'pro' },
+        { q: "What should you avoid in Different Values?", a: "Telling the kids what you really think of the other parent's rules.", bundle: 'pro' },
+        { q: "Which strategy is the main one for Let Me Do It?", a: "Different Isn't Wrong — step back, or ask for room.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Speaking Up** — if I bring it up later, I'm starting a fight\n• **Control** — I know best how she likes it, so I should do it\n• **Peacekeeping** — I'm the easy one, and going along keeps the peace\n• **Doing It All** — it's quicker if I just do it myself\n• **Winning** — when we disagree, one of us has to be right\n\nMost of them make one parent go quiet, or take over.",
+      cards: [
+        { q: "What are the five mindsets in this pack?", a: "Speaking Up, Control, Peacekeeping, Doing It All, and Winning.", bundle: 'pro' },
+        { q: "What is true instead of \"if I bring it up later, I'm starting a fight\"?", a: "A calm talk the same evening is what stops the fight. The fight comes from what was never said.", bundle: 'pro' },
+        { q: "What part of \"I know best, so I should do it\" is true?", a: "You may know more. \"So only my way counts\" is the part that gets added.", bundle: 'pro' },
+        { q: "What does going along to keep the peace quietly cost?", a: "Quiet sabotage later, and a partner who never knew where you stood.", bundle: 'pro' },
+        { q: "What is true instead of \"it's quicker if I just do it myself\"?", a: "It is quicker today and heavy for years. Handing over a whole job is slow only once.", bundle: 'pro' },
+        { q: "What is true instead of \"one of us has to be right\"?", a: "Most parenting questions have more than one good answer. The kids need a decision you both back.", bundle: 'pro' },
+        { q: "What does a losing parent often do?", a: "Quietly stops backing the decision.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They make one parent go quiet, or take over.", bundle: 'pro' },
+      ]
+    },
+  ],
+  parentingtogether3: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for parenting from two homes:\n\n1. Brief, Friendly, Firm\n2. Write It, Don't Fight It\n3. Their House, Their Rules\n4. Don't Interrogate the Kids\n5. Handover Without Drama\n6. Bring In Someone Neutral\n\nThree are for the other parent, two for your child, and the handover is where they meet.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Brief, Friendly, Firm, Write It, Don't Fight It, Their House, Their Rules, Don't Interrogate the Kids, Handover Without Drama, and Bring In Someone Neutral.", bundle: 'free' },
+        { q: "What is the idea behind the whole pack?", a: "Your child has two homes and should be able to belong to both. The adult things are said short, in writing, and between the parents, never through the child.", bundle: 'free' },
+        { q: "Which strategies are for the other parent?", a: "Brief, Friendly, Firm, Write It, Don't Fight It, and Bring In Someone Neutral.", bundle: 'free' },
+        { q: "Which strategies are for your child?", a: "Their House, Their Rules, and Don't Interrogate the Kids. Handover Without Drama is for the doorway, where both meet.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Answer messages short, sort hard topics in writing, get help when you are stuck, and keep your child free of all of it.", bundle: 'free' },
+        { q: "Which two sources does the pack draw on?", a: "Bill Eddy's BIFF method from the High Conflict Institute, and Mark Feinberg's work on co-parenting.", bundle: 'pro' },
+        { q: "How is this pack different from Pt. 1 and Pt. 2 of the series?", a: "Pt. 1 is about parents in one home, in front of the kids. Pt. 2 is the talk between them afterwards. Pt. 3 is two homes: messages, handovers, and the child moving between them.", bundle: 'pro' },
+        { q: "What is the one thing a child in two homes should never have to do?", a: "Carry the adults' conflict: as a messenger, a spy, or someone who has to pick a side.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Brief, Friendly, Firm",
+      description: "",
+      cards: [
+        { q: "What is Brief, Friendly, Firm?", a: "Answering a hostile message in a few calm lines: the facts they need, one friendly phrase, and a clear end.", bundle: 'free' },
+        { q: "How does Brief, Friendly, Firm sound?", a: "\"Thanks for letting me know. I'll collect her at five on Friday. See you then.\"", bundle: 'free' },
+        { q: "When is Brief, Friendly, Firm the right one?", a: "When an angry text or email arrives with a real question somewhere in it.", bundle: 'free' },
+        { q: "What does Brief, Friendly, Firm leave the other person with?", a: "The information they need, and nothing to argue about.", bundle: 'free' },
+        { q: "What are the four parts, as Bill Eddy names them?", a: "Brief, Informative, Friendly, Firm.", bundle: 'free' },
+        { q: "When does Brief, Friendly, Firm go wrong?", a: "When \"brief\" becomes cold or sarcastic, or when it is used on a topic that needs a real decision.", bundle: 'pro' },
+        { q: "How is Brief, Friendly, Firm different from Write It, Don't Fight It?", a: "Brief, Friendly, Firm answers a message. Write It, Don't Fight It takes a topic out of the doorway or the phone call and into writing.", bundle: 'pro' },
+        { q: "Where does Brief, Friendly, Firm come in the sequences?", a: "Last in The Calm Handover, and first in The Way Through.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Write It, Don't Fight It",
+      description: "",
+      cards: [
+        { q: "What is Write It, Don't Fight It?", a: "Taking a hard topic out of the handover or the phone call, and sorting it in a short written message instead.", bundle: 'free' },
+        { q: "How does Write It, Don't Fight It sound?", a: "\"Let's sort the holiday dates by email this week.\"", bundle: 'free' },
+        { q: "When is Write It, Don't Fight It the right one?", a: "When a hard topic comes up at the wrong time or place, especially with the children close by.", bundle: 'free' },
+        { q: "What does Write It, Don't Fight It leave the other person with?", a: "A clear time when the topic will be dealt with, and a record of what you agree.", bundle: 'free' },
+        { q: "What are the three ways to do it?", a: "Take it out of the moment, give a time, and write down what you agreed.", bundle: 'free' },
+        { q: "When does Write It, Don't Fight It go wrong?", a: "When \"let's do it by email\" never comes with a time, and the topic is just avoided.", bundle: 'pro' },
+        { q: "How is Write It, Don't Fight It different from Handover Without Drama?", a: "Handover Without Drama keeps the doorway for the child. Write It, Don't Fight It takes the adults' topic somewhere else.", bundle: 'pro' },
+        { q: "Where does Write It, Don't Fight It come in the sequences?", a: "In all three: the middle of The Calm Handover and The Way Through, and the end of The Soft Landing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Their House, Their Rules",
+      description: "",
+      cards: [
+        { q: "What is Their House, Their Rules?", a: "Respecting the other home's rules in front of your child, and saying your own rule without comparing.", bundle: 'free' },
+        { q: "How does Their House, Their Rules sound?", a: "\"At Dad's, bedtime is Dad's call. Here it's half eight.\"", bundle: 'free' },
+        { q: "When is Their House, Their Rules the right one?", a: "When your child brings you a rule from the other home: \"But at Mum's I can…\"", bundle: 'free' },
+        { q: "What does Their House, Their Rules leave the child with?", a: "Clear rules in your home, and no need to choose between their parents.", bundle: 'free' },
+        { q: "What are the three ways to do it?", a: "Say whose call it is, say your own rule without comparing, and take a real worry to the other parent, not the child.", bundle: 'free' },
+        { q: "When does Their House, Their Rules go wrong?", a: "When it is used to stay quiet about a real worry. That worry goes to the other parent, or to someone who can help.", bundle: 'pro' },
+        { q: "How is Their House, Their Rules different from Don't Interrogate the Kids?", a: "Their House, Their Rules answers a rule the child brings. Don't Interrogate the Kids is about the questions you ask.", bundle: 'pro' },
+        { q: "Where does Their House, Their Rules come in the sequences?", a: "In the middle of The Soft Landing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Don't Interrogate the Kids",
+      description: "",
+      cards: [
+        { q: "What is Don't Interrogate the Kids?", a: "Asking your child about their own time in the other home, not about the other parent.", bundle: 'free' },
+        { q: "How does Don't Interrogate the Kids sound?", a: "\"Did you have a good weekend? What was the best bit?\"", bundle: 'free' },
+        { q: "When is Don't Interrogate the Kids the right one?", a: "When your child comes back from the other home, and you want to know more about the other parent's life.", bundle: 'free' },
+        { q: "What does Don't Interrogate the Kids leave the child with?", a: "The feeling that you are glad they had a good time, and no job as a spy.", bundle: 'free' },
+        { q: "What are the three ways to do it?", a: "Ask about them, let them lead, and stop yourself halfway.", bundle: 'free' },
+        { q: "When does Don't Interrogate the Kids go wrong?", a: "When \"what was the best bit?\" is followed by \"and who was there?\"", bundle: 'pro' },
+        { q: "How is Don't Interrogate the Kids different from Write It, Don't Fight It?", a: "Don't Interrogate the Kids keeps your questions on the child. Write It, Don't Fight It takes a real question to the other parent.", bundle: 'pro' },
+        { q: "Where does Don't Interrogate the Kids come in the sequences?", a: "First, in The Soft Landing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Handover Without Drama",
+      description: "",
+      cards: [
+        { q: "What is Handover Without Drama?", a: "Keeping pick-up and drop-off short, warm and about the child.", bundle: 'free' },
+        { q: "How does Handover Without Drama sound?", a: "\"Here's her bag, she's had lunch. Have a great time, love.\"", bundle: 'free' },
+        { q: "When is Handover Without Drama the right one?", a: "At every pick-up and drop-off, and most of all when the other adult is tense.", bundle: 'free' },
+        { q: "What does Handover Without Drama leave the child with?", a: "A change of home that feels safe, and parents who are both fine with it.", bundle: 'free' },
+        { q: "What are the three parts?", a: "The practical bit, the goodbye, and the way out.", bundle: 'free' },
+        { q: "When does Handover Without Drama go wrong?", a: "When you answer a dig at the door, and the child's moment becomes the parents' fight.", bundle: 'pro' },
+        { q: "How is Handover Without Drama different from Brief, Friendly, Firm?", a: "Handover Without Drama is face to face, at the door, for the child. Brief, Friendly, Firm is written, for the other parent.", bundle: 'pro' },
+        { q: "Where does Handover Without Drama come in the sequences?", a: "First, in The Calm Handover.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Bring In Someone Neutral",
+      description: "",
+      cards: [
+        { q: "What is Bring In Someone Neutral?", a: "Suggesting help from someone outside the fight, such as a family mediator or counsellor, when the same fight keeps coming back.", bundle: 'free' },
+        { q: "How does Bring In Someone Neutral sound?", a: "\"I think we need help with this. Would you see a family mediator with me?\"", bundle: 'free' },
+        { q: "When is Bring In Someone Neutral the right one?", a: "When short replies and writing have not settled it, and the same fight keeps coming back.", bundle: 'free' },
+        { q: "What does Bring In Someone Neutral leave the other person with?", a: "An invitation, not a threat: a way to sort it with someone who keeps the talk on the children.", bundle: 'free' },
+        { q: "When is it no longer a conversation problem?", a: "When there is fear, threats or control. If you feel afraid, controlled or unsafe, talk to someone you trust or contact a local support line.", bundle: 'free' },
+        { q: "What is parallel parenting?", a: "A way to parent when conflict stays high: less contact, everything in writing, and each home run its own way.", bundle: 'pro' },
+        { q: "How is Bring In Someone Neutral different from Write It, Don't Fight It?", a: "Write It, Don't Fight It sorts a topic between the two of you. Bring In Someone Neutral is for when the two of you cannot sort it alone.", bundle: 'pro' },
+        { q: "Where does Bring In Someone Neutral come in the sequences?", a: "Last, in The Way Through.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The four collections in this pack, and what each one makes you choose between:\n\n• **Answer the Other Parent** — one message, a topic, or a fight that won't end\n• **Let Them Belong to Both** — a rule, some news, or the doorway\n• **Get Through the Handover** — for the child, for later, or a message to answer\n• **All Six Strategies** — everything mixed, with no warning who you are talking to\n\nOne question runs through all four: is this for the adults, or for my child?",
+      cards: [
+        { q: "What are the four collections in this pack?", a: "Answer the Other Parent, Let Them Belong to Both, Get Through the Handover, and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Answer the Other Parent?", a: "Is this one message to answer, a topic to sort out, or a fight we can't get out of?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Answer the Other Parent?", a: "Brief, Friendly, Firm on a topic that needs a real decision. The peace is kept, but nothing gets planned.", bundle: 'pro' },
+        { q: "What is the question that decides Let Them Belong to Both?", a: "Is this about their rules, their news, or the doorway?", bundle: 'pro' },
+        { q: "Your child says, \"At Dad's I don't have to.\" Which strategy?", a: "Their House, Their Rules.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Get Through the Handover?", a: "Answering the topic right there, at the door, with the child listening.", bundle: 'pro' },
+        { q: "A hard topic comes up at the door. Which strategy?", a: "Write It, Don't Fight It.", bundle: 'pro' },
+        { q: "What is the usual wrong choice across all six?", a: "Talking to your child as if they were the other parent: questions, judgements and messages to pass on.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Calm Handover** — Handover Without Drama → Write It, Don't Fight It → Brief, Friendly, Firm\n2. **The Way Through** — Brief, Friendly, Firm → Write It, Don't Fight It → Bring In Someone Neutral\n3. **The Soft Landing** — Don't Interrogate the Kids → Their House, Their Rules → Write It, Don't Fight It\n\nEach one is a short exchange where someone answers between your lines.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Calm Handover, The Way Through, and The Soft Landing.", bundle: 'pro' },
+        { q: "What is the order in The Calm Handover?", a: "Handover Without Drama, Write It, Don't Fight It, then Brief, Friendly, Firm.", bundle: 'pro' },
+        { q: "Why does the child come first in The Calm Handover?", a: "The doorway is theirs. Answer the topic first, and the child is standing in the middle of it.", bundle: 'pro' },
+        { q: "What is the order in The Way Through?", a: "Brief, Friendly, Firm, then Write It, Don't Fight It, then Bring In Someone Neutral.", bundle: 'pro' },
+        { q: "Why does the mediator come last in The Way Through?", a: "Suggested after one angry text, it sounds like a threat. It is for when the smaller steps have not worked.", bundle: 'pro' },
+        { q: "What is the order in The Soft Landing?", a: "Don't Interrogate the Kids, Their House, Their Rules, then Write It, Don't Fight It.", bundle: 'pro' },
+        { q: "Why does The Soft Landing start with a question about the child?", a: "Start with \"Did Dad say anything?\" and everything after sounds like a debrief.", bundle: 'pro' },
+        { q: "What is the usual mistake in all three?", a: "Letting the adult topic in first: at the door, in the first question, or in the first long reply.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The six challenges to master in this pack:\n\n• **The Angry Message** — a long, blaming text, and the urge to answer every point\n• **The Messenger Child** — an adult message carried by the child\n• **Bad-Mouthing** — the other home runs you down, or you nearly do the same\n• **The Interrogation** — the child questioned about the other home\n• **Different Rules, Two Homes** — the rules become a contest\n• **The Handover** — the doorway becomes a fight\n\nEach one puts the child in the middle, or the fight in front of them.",
+      cards: [
+        { q: "What are the six challenges in this pack?", a: "The Angry Message, The Messenger Child, Bad-Mouthing, The Interrogation, Different Rules, Two Homes, and The Handover.", bundle: 'pro' },
+        { q: "What is the main strategy for The Angry Message?", a: "Brief, Friendly, Firm: find the real question, and answer only that.", bundle: 'pro' },
+        { q: "What should you never do with The Messenger Child?", a: "Send an answer back with the child.", bundle: 'pro' },
+        { q: "What goes wrong with Bad-Mouthing?", a: "The child hears that half of where they come from is bad, and a dig back puts them deeper in the middle.", bundle: 'pro' },
+        { q: "What does The Interrogation turn a child into?", a: "A spy, who reports, protects and guesses which answer you want.", bundle: 'pro' },
+        { q: "What is the one thing to avoid with Different Rules, Two Homes?", a: "Telling the child the other home's rules are wrong.", bundle: 'pro' },
+        { q: "What is the one thing to avoid at The Handover?", a: "Answering the dig at the door.", bundle: 'pro' },
+        { q: "What do all six challenges have in common?", a: "The adults' conflict reaches the child: through them, in front of them, or about them.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Replies** — if I don't answer every point, they'll think they're right\n• **Worry** — I'm only asking the kids because I care\n• **Rules** — their rules are wrong, and the kids should know it\n• **Friendliness** — being friendly lets them off the hook\n• **Help** — getting a mediator means we've failed\n\nEach one feels like protecting yourself or your child, and each one keeps the fight going.",
+      cards: [
+        { q: "What are the five mindsets in this pack?", a: "Replies, Worry, Rules, Friendliness, and Help.", bundle: 'pro' },
+        { q: "What is true instead of \"if I don't answer every point, they'll think they're right\"?", a: "A short answer to the real question is not an admission of anything.", bundle: 'pro' },
+        { q: "What does asking the kids about the other home quietly cost?", a: "They start guessing which answer you want, and then stop telling you much at all.", bundle: 'pro' },
+        { q: "What is true in \"their rules are wrong\"?", a: "You may have good reasons for your rules. What gets added is \"so the kids should know it\".", bundle: 'pro' },
+        { q: "Who is a friendly word at the handover for?", a: "The children, who are watching how their parents treat each other.", bundle: 'pro' },
+        { q: "Is friendly the same as forgiving?", a: "No. Friendly is how you act at the door. Forgiving is something else, and yours to decide.", bundle: 'pro' },
+        { q: "What is true instead of \"getting a mediator means we've failed\"?", a: "Asking for help is a way of not failing your children.", bundle: 'pro' },
+        { q: "What do the five mindsets have in common?", a: "Each one feels like protecting yourself or your child, and each one keeps the fight going.", bundle: 'pro' },
+      ]
+    },
+  ],
+  underminedatwork1: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for the moment a colleague undermines your work in front of others:\n\n1. Hold Your Point Calmly\n2. Claim Your Work\n3. Add the Facts\n4. Park It for After\n5. Bring It to Me First\n6. Invite Them In\n\nThe first three answer it in the room. The last three take it beyond the room and change what happens next.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Hold Your Point Calmly, Claim Your Work, Add the Facts, Park It for After, Bring It to Me First, and Invite Them In.", bundle: 'free' },
+        { q: "What is the idea behind the whole pack?", a: "Answer calmly in the moment, take it up with the person afterwards, and go further only if you need to. This pack is the moment.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Three answer it in the room: your decision, your name, the facts. Three take it beyond the room: a time to talk, a direct line, a real part for them.", bundle: 'free' },
+        { q: "Who is the audience in this pack?", a: "The team, a customer, a patient, or a class of students. Someone is always watching.", bundle: 'free' },
+        { q: "Which three strategies are about the person rather than the room?", a: "Park It for After, Bring It to Me First, and Invite Them In.", bundle: 'free' },
+        { q: "Which two sources does the pack draw on?", a: "Duffy, Ganster and Pagon's research on social undermining, and Patterson and co-authors' Crucial Accountability.", bundle: 'pro' },
+        { q: "What does Pt. 2 of the series add?", a: "After the Meeting: the talk with the person afterwards, and the structure that stops it happening again.", bundle: 'pro' },
+        { q: "Why not settle the whole thing in the moment?", a: "An audience turns it into a contest. One calm line now, and the real conversation in private.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Hold Your Point Calmly",
+      description: "",
+      cards: [
+        { q: "What is Hold Your Point Calmly?", a: "Staying with your decision, out loud and without heat, when a colleague goes against it in front of others.", bundle: 'free' },
+        { q: "How does Hold Your Point Calmly sound?", a: "\"In my class the rule stands. Phones go in the box.\"", bundle: 'free' },
+        { q: "When is Hold Your Point Calmly the right one?", a: "When someone contradicts your decision in front of the team, a customer or your students.", bundle: 'free' },
+        { q: "What does Hold Your Point Calmly leave the other person with?", a: "A clear answer to \"whose call is this?\", and no fight to join.", bundle: 'free' },
+        { q: "What are the three ways to hold it?", a: "Say the decision again, say whose call it is, and hold it and carry on.", bundle: 'free' },
+        { q: "When does Hold Your Point Calmly go wrong?", a: "When it turns into a list of reasons, said in front of everyone, and the decision starts to look open.", bundle: 'pro' },
+        { q: "How is Hold Your Point Calmly different from Add the Facts?", a: "Hold Your Point Calmly keeps the decision. Add the Facts corrects a wrong picture.", bundle: 'pro' },
+        { q: "Which sequence uses Hold Your Point Calmly?", a: "The Calm Correction, as the middle step.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Claim Your Work",
+      description: "",
+      cards: [
+        { q: "What is Claim Your Work?", a: "Saying, kindly and in front of the same people, that the work is yours.", bundle: 'free' },
+        { q: "How does Claim Your Work sound?", a: "\"Glad the plan landed. I put it together, so happy to walk you through it.\"", bundle: 'free' },
+        { q: "When is Claim Your Work the right one?", a: "When your work or idea is presented as someone else's, or a dig is aimed at \"someone's\" work that is yours.", bundle: 'free' },
+        { q: "What does Claim Your Work leave the other person with?", a: "The credit back where it belongs, and an offer that makes it hard to argue with.", bundle: 'free' },
+        { q: "What are the three ways to claim it?", a: "With thanks, with a link back, and with an offer.", bundle: 'free' },
+        { q: "When does Claim Your Work go wrong?", a: "When it sounds like an accusation, or when you wait until afterwards and the room has already made up its mind.", bundle: 'pro' },
+        { q: "How is Claim Your Work different from Add the Facts?", a: "Claim Your Work puts your name on it. Add the Facts gives the date or record that backs it up.", bundle: 'pro' },
+        { q: "Which sequence uses Claim Your Work?", a: "Credit Where It's Due, as the first step.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Add the Facts",
+      description: "",
+      cards: [
+        { q: "What is Add the Facts?", a: "Adding one short, true fact that corrects the picture, and then stopping.", bundle: 'free' },
+        { q: "How does Add the Facts sound?", a: "\"Just to add: the numbers were checked by finance on Monday.\"", bundle: 'free' },
+        { q: "When is Add the Facts the right one?", a: "When the undermining rests on a wrong picture: late, unchecked, or someone else's.", bundle: 'free' },
+        { q: "What does Add the Facts leave the other person with?", a: "A corrected picture, in front of everyone, without a fight.", bundle: 'free' },
+        { q: "What are the three kinds of fact?", a: "A date or a time, who checked it, and where things stand now.", bundle: 'free' },
+        { q: "When does Add the Facts go wrong?", a: "When one fact becomes a long defence, which sounds like you weren't sure.", bundle: 'pro' },
+        { q: "How is Add the Facts different from Claim Your Work?", a: "Add the Facts corrects the picture. Claim Your Work says whose work it is.", bundle: 'pro' },
+        { q: "Which sequences use Add the Facts?", a: "The Calm Correction, as the first step, and Credit Where It's Due, as the middle step.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Park It for After",
+      description: "",
+      cards: [
+        { q: "What is Park It for After?", a: "Taking the disagreement away from the audience, and naming a time to have it.", bundle: 'free' },
+        { q: "How does Park It for After sound?", a: "\"Let's take that after the meeting, you and I.\"", bundle: 'free' },
+        { q: "When is Park It for After the right one?", a: "When it is turning into a debate and people are watching who wins.", bundle: 'free' },
+        { q: "What does Park It for After leave the other person with?", a: "A real conversation to come, and no audience to play to.", bundle: 'free' },
+        { q: "What are the three ways to park it?", a: "With a time, with a place, and with a nod to their point.", bundle: 'free' },
+        { q: "When does Park It for After go wrong?", a: "When \"later\" never comes, and parking becomes a polite way of dropping it.", bundle: 'pro' },
+        { q: "How is Park It for After different from Bring It to Me First?", a: "Park It for After is about this disagreement. Bring It to Me First is about the next one.", bundle: 'pro' },
+        { q: "Which sequences use Park It for After?", a: "The Calm Correction, as the last step, and From Critic to Teammate, as the first.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Bring It to Me First",
+      description: "",
+      cards: [
+        { q: "What is Bring It to Me First?", a: "Asking a colleague, briefly and calmly, to come to you directly next time they see a problem with your work.", bundle: 'free' },
+        { q: "How does Bring It to Me First sound?", a: "\"If you see a problem with my plan, come to me first. I'd want to know.\"", bundle: 'free' },
+        { q: "When is Bring It to Me First the right one?", a: "When they keep going around you: to the team, the customer or the boss.", bundle: 'free' },
+        { q: "What does Bring It to Me First leave the other person with?", a: "A clear, direct route for next time, and the sense that you want their view.", bundle: 'free' },
+        { q: "What are the three ways to ask?", a: "As an open door, as a plain request, and with something in return.", bundle: 'free' },
+        { q: "When does Bring It to Me First go wrong?", a: "When it is said loudly in front of everyone, and sounds like a telling-off.", bundle: 'pro' },
+        { q: "How is Bring It to Me First different from Invite Them In?", a: "Bring It to Me First asks for a direct route. Invite Them In gives them a part in the work.", bundle: 'pro' },
+        { q: "Which sequence uses Bring It to Me First?", a: "From Critic to Teammate, as the middle step.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Invite Them In",
+      description: "",
+      cards: [
+        { q: "What is Invite Them In?", a: "Giving the person who is undermining you a real part in the work.", bundle: 'free' },
+        { q: "How does Invite Them In sound?", a: "\"You know this area well. Want to look at the draft before Friday?\"", bundle: 'free' },
+        { q: "When is Invite Them In the right one?", a: "When they know something useful, and feeling left out or rivalry may be behind it.", bundle: 'free' },
+        { q: "What does Invite Them In leave the other person with?", a: "A stake in the work going well, and less reason to knock it.", bundle: 'free' },
+        { q: "What are the three ways to invite?", a: "Ask for their eye, give them a part, and do the next step together.", bundle: 'free' },
+        { q: "When does Invite Them In go wrong?", a: "When it is vague and only polite, or when it rewards someone who keeps undermining you on purpose.", bundle: 'pro' },
+        { q: "How is Invite Them In different from Claim Your Work?", a: "Claim Your Work puts your name back on the work. Invite Them In shares it, on your terms.", bundle: 'pro' },
+        { q: "Which sequences use Invite Them In?", a: "Credit Where It's Due and From Critic to Teammate, both as the last step.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Answer in the Room** — your decision, your name or the facts: what needs putting right in front of everyone\n• **Take It Off the Stage** — a private talk, a direct line or their help: what you want from this person next\n• **All Six Strategies** — everything mixed, with no warning about which kind of undermining is coming\n\nOne question runs through all three: does the room need something from me now, or does this person need something from me next?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Answer in the Room, Take It Off the Stage, and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Answer in the Room?", a: "What is at risk in the room — my decision, my name, or the truth?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Answer in the Room?", a: "Add the Facts when they went against your decision. The decision starts to look open.", bundle: 'pro' },
+        { q: "Your idea has just been presented as someone else's. Which strategy?", a: "Claim Your Work.", bundle: 'pro' },
+        { q: "What is the question that decides Take It Off the Stage?", a: "What do I want from them next — a private talk, a direct line, or their help?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Take It Off the Stage?", a: "Invite Them In with someone who keeps doing it on purpose. It can look like a reward.", bundle: 'pro' },
+        { q: "A colleague keeps going to the boss before you. Which strategy?", a: "Bring It to Me First.", bundle: 'pro' },
+        { q: "What is the usual wrong choice across all six?", a: "A long defence, which tries to do all three in-the-room strategies at once.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Calm Correction** — Add the Facts → Hold Your Point Calmly → Park It for After\n2. **Credit Where It's Due** — Claim Your Work → Add the Facts → Invite Them In\n3. **From Critic to Teammate** — Park It for After → Bring It to Me First → Invite Them In\n\nEach one is a short exchange where the colleague answers between your lines.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Calm Correction, Credit Where It's Due, and From Critic to Teammate.", bundle: 'pro' },
+        { q: "What is the order in The Calm Correction?", a: "Add the Facts, Hold Your Point Calmly, Park It for After.", bundle: 'pro' },
+        { q: "Why does the fact come first in The Calm Correction?", a: "It shows the room the decision is sound. Holding without it looks stubborn.", bundle: 'pro' },
+        { q: "What is the order in Credit Where It's Due?", a: "Claim Your Work, Add the Facts, Invite Them In.", bundle: 'pro' },
+        { q: "Why does the invitation come last in Credit Where It's Due?", a: "Last, it sounds generous. First, the credit is gone for good.", bundle: 'pro' },
+        { q: "What is the order in From Critic to Teammate?", a: "Park It for After, Bring It to Me First, Invite Them In.", bundle: 'pro' },
+        { q: "Why does the request come before the invitation in From Critic to Teammate?", a: "Invite first, and they get a seat while the side doors stay open.", bundle: 'pro' },
+        { q: "What is the usual mistake in all three?", a: "Arguing in public at length, or saying nothing and complaining afterwards.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The six challenges to master in this pack:\n\n• **Credit Taken** — your work presented as someone else's\n• **Contradicted in Front of Them** — your decision overruled in front of the audience\n• **Are You Sure?** — your skill questioned in public\n• **The Meeting Dig** — a sharp little remark about your work\n• **Talked Over** — your idea ignored, then praised in someone else's mouth\n• **Over Your Head** — a colleague went to the boss first\n\nEach one works best when nobody says anything.",
+      cards: [
+        { q: "What are the six challenges in this pack?", a: "Credit Taken, Contradicted in Front of Them, Are You Sure?, The Meeting Dig, Talked Over, and Over Your Head.", bundle: 'pro' },
+        { q: "What is the main strategy for Credit Taken?", a: "Claim Your Work — put your name back on it, warmly, with an offer.", bundle: 'pro' },
+        { q: "What goes wrong when you are Contradicted in Front of Them?", a: "The audience has two answers and picks the nicer one.", bundle: 'pro' },
+        { q: "Why is a long answer a mistake with Are You Sure?", a: "The length sounds like proof you weren't sure.", bundle: 'pro' },
+        { q: "What should you avoid with The Meeting Dig?", a: "A dig back. You look touchy, and the dig wins twice.", bundle: 'pro' },
+        { q: "What goes wrong with Talked Over?", a: "By the time you notice, the moment has gone, and linking it back later sounds petty.", bundle: 'pro' },
+        { q: "How do you answer Over Your Head?", a: "The boss with facts, and the colleague with a request.", bundle: 'pro' },
+        { q: "What do all six challenges have in common?", a: "They work best when nobody says anything in the room.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Speaking Up** — if I say something, I'm the difficult one\n• **Credit** — good work speaks for itself\n• **Payback** — getting back at them is fair\n• **Showdowns** — if I don't settle it now, in front of everyone, I've lost\n• **Self-Doubt** — they sound so sure, so maybe they're right\n\nEach one either keeps you quiet or pulls you into a fight.",
+      cards: [
+        { q: "What are the five mindsets in this pack?", a: "Speaking Up, Credit, Payback, Showdowns, and Self-Doubt.", bundle: 'pro' },
+        { q: "What is true instead of \"if I say something, I'm the difficult one\"?", a: "One calm line is not making trouble. It stops a wrong picture before it sets.", bundle: 'pro' },
+        { q: "What does \"good work speaks for itself\" quietly cost?", a: "Your work goes into rooms you are not in, with someone else's name on it.", bundle: 'pro' },
+        { q: "Why does getting back at them feel fair?", a: "They did start it, and people who are undermined often begin to undermine back.", bundle: 'pro' },
+        { q: "What does payback cost?", a: "Your good name, and any chance of sorting it out with them.", bundle: 'pro' },
+        { q: "What is true instead of \"I have to settle it now\"?", a: "You only need to not give the point away now. The real talk can come later.", bundle: 'pro' },
+        { q: "In \"they sound so sure, maybe they're right\", which part gets added?", a: "\"So I should back down now, in front of everyone.\"", bundle: 'pro' },
+        { q: "What do the five mindsets have in common?", a: "Each one either keeps you quiet or pulls you into a fight.", bundle: 'pro' },
+      ]
+    },
+  ],
+  underminedatwork2: [
+    {
+      name: "Core Idea",
+      description: "Six strategies for the conversation after the meeting, and for the structure that stops it happening again:\n\n1. Them Before the Boss\n2. Situation, Behaviour, Impact\n3. Agree Who Does What\n4. Confirm in Writing\n5. Ask to Be Included\n6. Take It Up the Line\n\nTalk to them first, set up clear lines, and go up only when you need to.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Them Before the Boss, Situation, Behaviour, Impact, Agree Who Does What, Confirm in Writing, Ask to Be Included, and Take It Up the Line.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Two to raise it with the person, three to build a structure that stops it, and one for when it still keeps happening.", bundle: 'free' },
+        { q: "What is the stance of this pack?", a: "Stay calm in the moment, take it to the person afterwards, and go further only when you need to.", bundle: 'free' },
+        { q: "What is social undermining?", a: "Behaviour that, over time, gets in the way of someone's work, standing or relationships — like delaying their work, giving them wrong information or leaving them out.", bundle: 'free' },
+        { q: "What should you ask yourself first?", a: "Have I talked to them yet — and what is missing: the talk, the lines, the record, the invite, or help from above?", bundle: 'free' },
+        { q: "What is the most common mistake after being undermined?", a: "Going straight to the boss, or saying nothing and getting quietly angry.", bundle: 'pro' },
+        { q: "How does this pack relate to Pt. 1?", a: "Pt. 1 is what you say in the moment, in front of others. Pt. 2 is the talk afterwards, in private, and the structure that prevents the next time.", bundle: 'pro' },
+        { q: "Which sources does this pack draw on?", a: "Duffy, Ganster and Pagon's research on social undermining, the Center for Creative Leadership's SBI model, and Patterson and co-authors' Crucial Accountability.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Them Before the Boss",
+      description: "",
+      cards: [
+        { q: "What is Them Before the Boss?", a: "Going to the colleague first, in private, before you go to your manager.", bundle: 'free' },
+        { q: "How does Them Before the Boss sound?", a: "\"Have you got ten minutes? I'd like to talk about this morning.\"", bundle: 'free' },
+        { q: "When is Them Before the Boss the right one?", a: "When something has happened and you have not yet spoken to them about it.", bundle: 'free' },
+        { q: "Why does Them Before the Boss work?", a: "Many cases turn out to be careless rather than planned, and a private talk gives them the chance to explain or put it right.", bundle: 'free' },
+        { q: "What are the three ways to ask for the talk?", a: "Name the topic, name a time and a place, and keep it light at the door.", bundle: 'free' },
+        { q: "When does Them Before the Boss go wrong?", a: "When it happens in the open office, or turns into the whole argument at the door.", bundle: 'pro' },
+        { q: "What is Them Before the Boss better than, and why?", a: "Going straight to your manager. Then they hear it second-hand, and every talk after that starts from mistrust.", bundle: 'pro' },
+        { q: "What does Crucial Accountability say about who to talk to first?", a: "Take it to the person first.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Situation, Behaviour, Impact",
+      description: "",
+      cards: [
+        { q: "What is Situation, Behaviour, Impact?", a: "Describing what happened in three parts: when and where, what they did, and what followed.", bundle: 'free' },
+        { q: "How does Situation, Behaviour, Impact sound?", a: "\"In Monday's meeting, when you said the plan was yours, the team didn't know I'd built it.\"", bundle: 'free' },
+        { q: "When is Situation, Behaviour, Impact the right one?", a: "In the private talk, when you need to say what happened.", bundle: 'free' },
+        { q: "Why does Situation, Behaviour, Impact work?", a: "It sticks to facts they cannot argue with, and does not judge their character or guess their motive.", bundle: 'free' },
+        { q: "What are the three parts?", a: "Situation — one time and place. Behaviour — what they did, as a camera would see it. Impact — on the work, the team or you.", bundle: 'free' },
+        { q: "When does Situation, Behaviour, Impact go wrong?", a: "When the behaviour part becomes a judgement: \"when you tried to make me look bad.\"", bundle: 'pro' },
+        { q: "What is Situation, Behaviour, Impact better than, and why?", a: "Naming their motive. \"You're trying to make me look bad\" invites a denial; a fact and its effect invite an answer.", bundle: 'pro' },
+        { q: "Where does the model come from?", a: "The Center for Creative Leadership.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Agree Who Does What",
+      description: "",
+      cards: [
+        { q: "What is Agree Who Does What?", a: "Agreeing out loud who owns which part of the work.", bundle: 'free' },
+        { q: "How does Agree Who Does What sound?", a: "\"Let's agree: I own the timetable, you own the trip budget.\"", bundle: 'free' },
+        { q: "When is Agree Who Does What the right one?", a: "When two people both think they own something, or nobody knows who does.", bundle: 'free' },
+        { q: "Why does Agree Who Does What work?", a: "Fuzzy ownership lets credit-taking and going around each other look reasonable. A clear split removes the excuse and the misunderstanding.", bundle: 'free' },
+        { q: "What are the three ways to split it?", a: "Split by task, name one voice to the outside, and add a date.", bundle: 'free' },
+        { q: "When does Agree Who Does What go wrong?", a: "When there is no \"by when\", so the split exists but the delays stay.", bundle: 'pro' },
+        { q: "What is Agree Who Does What better than, and why?", a: "Another talk about the past. It sets up the next time instead of arguing about the last one.", bundle: 'pro' },
+        { q: "How does Crucial Accountability end a hard talk?", a: "With who does what, by when.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Confirm in Writing",
+      description: "",
+      cards: [
+        { q: "What is Confirm in Writing?", a: "Sending a short, friendly message after a spoken agreement, saying what you agreed.", bundle: 'free' },
+        { q: "How does Confirm in Writing sound?", a: "\"Just confirming what we agreed: you'll send the figures by Thursday.\"", bundle: 'free' },
+        { q: "When is Confirm in Writing the right one?", a: "Right after you agree something out loud — especially if things have drifted before.", bundle: 'free' },
+        { q: "Why does Confirm in Writing work?", a: "Spoken deals drift. A short note gives you both the same memory, and something calm to point to later.", bundle: 'free' },
+        { q: "What are the three ways to write it?", a: "The recap, the owner and the date, and the check.", bundle: 'free' },
+        { q: "When does Confirm in Writing go wrong?", a: "When it carries a dig: \"as discussed, since you seem to forget.\"", bundle: 'pro' },
+        { q: "What is Confirm in Writing better than, and why?", a: "Trusting two memories. Then \"I never said that\" is easy to say, and you cannot show otherwise without a fight.", bundle: 'pro' },
+        { q: "How long should the note be?", a: "Two or three lines: friendly, with no blame.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask to Be Included",
+      description: "",
+      cards: [
+        { q: "What is Ask to Be Included?", a: "Asking plainly to be on the meeting, the email or the chat from now on.", bundle: 'free' },
+        { q: "How does Ask to Be Included sound?", a: "\"I'd like to be on the invite for the planning meetings from now on.\"", bundle: 'free' },
+        { q: "When is Ask to Be Included the right one?", a: "When decisions about your work are made without you, and you find out afterwards.", bundle: 'free' },
+        { q: "Why does Ask to Be Included work?", a: "It ends \"we didn't know you wanted to come.\" After that, leaving you out is a choice, not an accident.", bundle: 'free' },
+        { q: "What are the three ways to ask?", a: "The forward request, the reason, and the standing rule.", bundle: 'free' },
+        { q: "When does Ask to Be Included go wrong?", a: "When it becomes \"why wasn't I invited?\" — a question about the past instead of a request about the future.", bundle: 'pro' },
+        { q: "Why is being left out a form of undermining?", a: "You look uninformed and miss decisions, and it is hard to point at, because nobody did anything.", bundle: 'pro' },
+        { q: "How do you make the request stronger?", a: "Tie it to the work: \"I run the timetable, so I need to hear changes first-hand.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Take It Up the Line",
+      description: "",
+      cards: [
+        { q: "What is Take It Up the Line?", a: "Going to your manager, after talking to the person, with what you tried, the facts and their effect, and what you need.", bundle: 'free' },
+        { q: "How does Take It Up the Line sound?", a: "\"I've raised it twice with Sam. Here's what happened, and here's what I need.\"", bundle: 'free' },
+        { q: "When is Take It Up the Line the right one?", a: "When you have talked to them, and it keeps happening.", bundle: 'free' },
+        { q: "Why does Take It Up the Line work?", a: "Managers act on specifics. Dates, effects and a clear request give them something they can do.", bundle: 'free' },
+        { q: "What are the three parts?", a: "What you have tried, the facts and their effect, and a concrete request.", bundle: 'free' },
+        { q: "When does Take It Up the Line go wrong?", a: "When it is a complaint about a person — \"she's impossible\" — instead of a request about the work.", bundle: 'pro' },
+        { q: "What is Take It Up the Line better than, and why?", a: "A third talk with the same person. If two talks did not change it, the lines need setting by someone who can.", bundle: 'pro' },
+        { q: "Why say that you have already talked to them?", a: "It shows you did your part first, and that this is not telling tales.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The four collections in this pack, and what each one makes you choose between:\n\n• **Raise It the Right Way** — not spoken yet, in the talk, or still happening: ask for a word, describe it, or go up?\n• **Close the Gaps** — no owner, no record, or no place in the room?\n• **Stop the Repeat** — fuzzy, forgotten or chosen?\n• **All Six Strategies** — everything mixed, with no warning about where you are\n\nOne question decides nearly all of it: have I talked to them yet, and what is missing?",
+      cards: [
+        { q: "What are the four collections in this pack?", a: "Raise It the Right Way, Close the Gaps, Stop the Repeat, and All Six Strategies.", bundle: 'pro' },
+        { q: "What is the question that decides Raise It the Right Way?", a: "Where am I with this person: not spoken yet, in the talk, or talked and still happening?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Raise It the Right Way?", a: "Going straight to the boss, so they hear it second-hand.", bundle: 'pro' },
+        { q: "What is the question that decides Close the Gaps?", a: "What is missing — a clear owner, a shared record, or my place in the room?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Close the Gaps?", a: "Another talk about last time, when what is missing is a setup for next time.", bundle: 'pro' },
+        { q: "What is the question that decides Stop the Repeat?", a: "Is this fuzzy, forgotten or chosen?", bundle: 'pro' },
+        { q: "What is the usual wrong choice in Stop the Repeat?", a: "Having the same talk a third time.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in All Six Strategies?", a: "Saying nothing and getting quietly angry.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Clean Talk** — Them Before the Boss → Situation, Behaviour, Impact → Agree Who Does What\n2. **Ask, Agree, Confirm** — Ask to Be Included → Agree Who Does What → Confirm in Writing\n3. **The Fair Escalation** — Them Before the Boss → Confirm in Writing → Take It Up the Line\n\nIn each one, the person hears it first, and every talk ends with something clear.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Clean Talk, Ask, Agree, Confirm, and The Fair Escalation.", bundle: 'pro' },
+        { q: "What is the order in The Clean Talk?", a: "Them Before the Boss, Situation, Behaviour, Impact, Agree Who Does What.", bundle: 'pro' },
+        { q: "Why do the facts come before the split in The Clean Talk?", a: "A new split only makes sense once both of you have heard what went wrong.", bundle: 'pro' },
+        { q: "What is the order in Ask, Agree, Confirm?", a: "Ask to Be Included, Agree Who Does What, Confirm in Writing.", bundle: 'pro' },
+        { q: "Why does the written note come last in Ask, Agree, Confirm?", a: "It makes sure nobody forgets the agreement a month later.", bundle: 'pro' },
+        { q: "What is the order in The Fair Escalation?", a: "Them Before the Boss, Confirm in Writing, Take It Up the Line.", bundle: 'pro' },
+        { q: "Why does the manager come last in The Fair Escalation?", a: "By then you can say you talked to them, and show what you agreed.", bundle: 'pro' },
+        { q: "What is the usual mistake The Fair Escalation avoids?", a: "Going straight to the boss, with nothing tried and nothing written down.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack — five kinds of undermining after the meeting, and what fits each one:\n\n• **Left Out of the Loop** — not invited or not copied: ask plainly to be in\n• **Slow-Walked** — what you need is always late: put a date on it\n• **Wrong Information** — wrong time, wrong version: one written version, and facts without blame\n• **The Quiet Campaign** — talk behind your back: bring it to them, to their face\n• **It Keeps Happening** — the pattern carries on after a talk: change the structure, or take it up the line\n\nEach one has its own way of going wrong.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "Left Out of the Loop, Slow-Walked, Wrong Information, The Quiet Campaign, and It Keeps Happening.", bundle: 'pro' },
+        { q: "What should you avoid in Left Out of the Loop?", a: "Asking why you were left out, instead of asking to be in.", bundle: 'pro' },
+        { q: "What should you avoid with Slow-Walked?", a: "Accepting \"soon\" as an answer.", bundle: 'pro' },
+        { q: "What should you avoid with Wrong Information?", a: "Claiming you know they meant it.", bundle: 'pro' },
+        { q: "Which strategy gives you both one version of the details?", a: "Confirm in Writing.", bundle: 'pro' },
+        { q: "What should you avoid in The Quiet Campaign?", a: "Starting a quiet campaign of your own.", bundle: 'pro' },
+        { q: "What should you avoid in It Keeps Happening?", a: "A third version of the same talk.", bundle: 'pro' },
+        { q: "Which strategy is the main one once a pattern carries on after you have talked?", a: "Take It Up the Line.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Speaking Up** — if I say something, I'm the difficult one\n• **Visibility** — good work speaks for itself\n• **Payback** — getting back at them is fair\n• **Escalation** — going to the boss is telling tales\n• **Doubt** — maybe I'm imagining it\n\nMost of them keep you quiet. One of them makes you just like the person you are upset with.",
+      cards: [
+        { q: "What are the five mindsets in this pack?", a: "Speaking Up, Visibility, Payback, Escalation, and Doubt.", bundle: 'pro' },
+        { q: "What is true instead of \"if I say something, I'm the difficult one\"?", a: "A calm, private talk with facts is what a good colleague does.", bundle: 'pro' },
+        { q: "What part of \"good work speaks for itself\" is true?", a: "Good work matters most. \"So I never need to say it's mine or ask to be in the room\" is the part that gets added.", bundle: 'pro' },
+        { q: "What does paying them back quietly cost?", a: "Your clean facts. Once you hit back, there are two stories, and nobody can tell which came first.", bundle: 'pro' },
+        { q: "What is the difference between telling tales and taking it up the line?", a: "Telling tales goes behind someone's back. Taking it up the line comes after talking to them first, with facts and a request.", bundle: 'pro' },
+        { q: "What is true instead of \"maybe I'm imagining it\"?", a: "You don't need to know why. You can describe what happened and what it caused, and ask.", bundle: 'pro' },
+        { q: "Why does doubt feel so reasonable here?", a: "Undermining is often easy to deny — a missed invite, a late file, a comment that was only a joke.", bundle: 'pro' },
+        { q: "What do most of these mindsets have in common?", a: "They keep you quiet, or they make you undermine back.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

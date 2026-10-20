@@ -77,6 +77,8 @@ const GRID_PACKS = new Set([
   'whensomeoneishurting1', 'gettingtoknowsomeone',
   'manipulation1', 'manipulation2',
   'fromupsettoask1',
+  'parentingtogether1',
+  'underminedatwork1',
 ]);
 window.dsIsGridPack = key => GRID_PACKS.has(key);
 
@@ -822,6 +824,11 @@ applyInputCounterVisibility();
     fromupsettoask1: { label: 'From Upset to Ask — Pt. 1: Turning It Around', minLevel: 'complete' },
     fromupsettoask2: { label: 'From Upset to Ask — Pt. 2: When They Push Back', minLevel: 'complete' },
     alexandergrace9: { label: 'Alexander Grace 9 — Conflict Resolution', minLevel: 'complete' },
+    parentingtogether1: { label: 'Parenting Together — Pt. 1: In Front of the Kids', minLevel: 'complete' },
+    parentingtogether2: { label: 'Parenting Together — Pt. 2: Behind Closed Doors', minLevel: 'complete' },
+    parentingtogether3: { label: 'Parenting Together — Pt. 3: Two Homes', minLevel: 'complete' },
+    underminedatwork1: { label: 'Undermined at Work — Pt. 1: In the Moment', minLevel: 'complete' },
+    underminedatwork2: { label: 'Undermined at Work — Pt. 2: After the Meeting', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -4269,6 +4276,76 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
+  parentingtogether1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  parentingtogether2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  parentingtogether3: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  underminedatwork1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  underminedatwork2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
 };
 window.BUNDLE_DEFS = BUNDLE_DEFS;
 
@@ -5206,6 +5283,7 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.71', date: 'October 2026', title: 'Parenting Together and Undermined at Work \u2014 five new packs', audience: 'dev', items: ['New Deckstack Originals, built after <em>_Plan \u2014 Undermining och Fr\u00e5n k\u00e4nsla till behov.md</em> (Serie A and B), all at <strong>complete</strong> until tested.', '<strong>Parenting Together</strong>: Pt. 1 In Front of the Kids (<code>parentingtogether1</code>, grid), Pt. 2 Behind Closed Doors (<code>parentingtogether2</code>), Pt. 3 Two Homes (<code>parentingtogether3</code>, separated parents). Communication in Relationships; Pt. 3 also under Messages &amp; Writing. Sources: Feinberg (coparenting), Allen &amp; Hawkins (gatekeeping), Bill Eddy (BIFF).', '<strong>Undermined at Work</strong>: Pt. 1 In the Moment (<code>underminedatwork1</code>, grid) and Pt. 2 After the Meeting (<code>underminedatwork2</code>). Networking &amp; Career and Assertiveness &amp; Pressure. Teacher situations included on purpose. Sources: Duffy et al. (social undermining), CCL SBI, Crucial Accountability.', 'check-pack: 0 errors, 0 warnings on all five. GRID_PACKS: parentingtogether1, underminedatwork1.'] },
   { version: 'v1.29.70', date: 'October 2026', title: 'Alexander Grace 9 \u2014 Conflict Resolution', audience: 'dev', items: ['New pack <strong>Alexander Grace 9 \u2014 Conflict Resolution</strong> (<code>alexandergrace9</code>), built from a video transcript Rikard supplied, at <strong>complete</strong> under Communication in Relationships. Eight strategies in Rikard\u2019s order: Validate Data, Not Conclusion \u00b7 De-escalate the Emotional Flood \u00b7 Let the Awkward Silence Sit \u00b7 Anchor Logical Leadership at Home \u00b7 Enforce Boundaries with Real Consequences \u00b7 Master the Leverage of Indifference \u00b7 Outsource Her Processing Outside \u00b7 Prioritize the Long-Term Enterprise.', 'Same policy as Alexander Grace 1\u20138: the method is kept, the contempt and the generalisations about women are not. Tone changes are listed separately in <em>ag9-tonandringar.md</em>. check-pack: 0 errors, 1 accepted warning (Core Idea text slightly long because of the eight names).'] },
   { version: 'v1.29.69', date: 'October 2026', title: 'From Upset to Ask \u2014 two new packs', audience: 'dev', items: ['New Deckstack Originals, built after <em>_Plan \u2014 Undermining och Fr\u00e5n k\u00e4nsla till behov.md</em> (Serie C): <strong>From Upset to Ask \u2014 Pt. 1: Turning It Around</strong> (<code>fromupsettoask1</code>, grid process pack: one irritation per row, from finding the need to a doable ask) and <strong>Pt. 2: When They Push Back</strong> (<code>fromupsettoask2</code>, follow-up pack).', 'Under Emotions &amp; Regulation and Communication in Relationships, at <strong>complete</strong> until tested. Builds on Conflict Emotions without repeating it. Sources: Rosenberg (NVC), Gottman (softened start-up), Linehan (DEAR MAN).', 'check-pack: 0 errors, 0 warnings. GRID_PACKS: fromupsettoask1. Kartan: all new decks tagged.'] },
   { version: 'v1.29.68', date: 'October 2026', title: 'Handling Manipulation \u2014 a new series of six packs', audience: 'dev', items: ['New Deckstack Originals, built after <em>_Plan \u2014 Manipulation (serie).md</em>: <strong>Handling Manipulation</strong> Pt. 1: Guilt and Obligation (<code>manipulation1</code>, grid), Pt. 2: Twisted Truth (<code>manipulation2</code>, grid), Pt. 3: Through Other People (<code>manipulation3</code>), Pt. 4: Feelings as Leverage (<code>manipulation4</code>), Pt. 5: Traps and Binds (<code>manipulation5</code>) and Advanced: Seeing the Pattern (<code>manipulationadv</code>).', 'Under Assertiveness &amp; Pressure; Pt. 1 also under Asking &amp; Saying No, Pt. 4 also under Emotions &amp; Regulation. All at <strong>complete</strong> until tested; a programme comes later.', 'Sources: Forward (Emotional Blackmail), Simon (In Sheep\u2019s Clothing), Freyd (DARVO), Buss (tactics of manipulation), Schrodt (demand\u2013withdraw). Who manipulates is mixed on the cards; no right answer is a diagnosis.', 'check-pack: 0 errors, 0 warnings on all six. GRID_PACKS: manipulation1 and manipulation2. Kartan: family 36 Manipulation, all new decks tagged.'] },

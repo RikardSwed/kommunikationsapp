@@ -601,6 +601,21 @@ const packTags = {
   alexandergrace9: [
     'arguments', 'conflict', 'validation', 'flooding', 'boundaries', 'consequences', 'roles', 'relationships'
   ],
+  parentingtogether1: [
+    'coparenting', 'parenting', 'united front', 'undermining', 'partners', 'step-parents', 'grandparents', 'family', 'relationships'
+  ],
+  parentingtogether2: [
+    'parenting', 'coparenting', 'partners', 'undermining', 'gatekeeping', 'shared rules', 'division of labour', 'family meetings', 'relationships'
+  ],
+  parentingtogether3: [
+    'co-parenting', 'separated parents', 'divorce', 'two homes', 'handovers', 'biff', 'parenting', 'mediation', 'children', 'relationships'
+  ],
+  underminedatwork1: [
+    'undermining', 'colleagues', 'workplace', 'credit', 'meetings', 'teachers', 'contradicted', 'social undermining', 'assertiveness', 'professional boundaries'
+  ],
+  underminedatwork2: [
+    'workplace', 'colleagues', 'undermining', 'credit', 'being left out', 'feedback', 'sbi', 'accountability', 'escalation', 'teachers'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -633,7 +648,7 @@ const TOPICS = [
   { id: 'questions',             title: 'Questions & Curiosity',         packs: ['deepquestions'] },
   { id: 'flowtransitions',       title: 'Flow & Transitions',            packs: ['conversational', 'transitions', 'reactingtounexpectedstatements', 'changingtopics', 'familygatherings'] },
   { id: 'endingconversations',   title: 'Ending Conversations',          packs: ['endingconversations'] },
-  { id: 'networking',            title: 'Networking & Career',           packs: ['networking1', 'networking2', 'jobinterview1', 'jobinterview2', 'talkingtoyourmanager', 'newatwork'] },   // v1.29.55
+  { id: 'networking',            title: 'Networking & Career',           packs: ['networking1', 'networking2', 'jobinterview1', 'jobinterview2', 'talkingtoyourmanager', 'newatwork', 'underminedatwork1', 'underminedatwork2'] },   // v1.29.55
 
   // ── Being with the other person ───────────────────────────────────
   { id: 'listening',             title: 'Listening & Understanding',     packs: ['listeningresponding', 'validation', 'listeningthroughquestions', 'showunderstanding2', 'jimmy3', 'showunderstanding', 'askingforclarity', 'emotionalcalibration1', 'whensomeoneishurting1', 'whensomeoneishurting2'] },
@@ -652,14 +667,14 @@ const TOPICS = [
   // ── Standing your ground ──────────────────────────────────────────
   { id: 'opinions',              title: 'Opinions & Argumentation',      packs: ['influenceframing', 'agreeing', 'disagreeing', 'givingcounterexamples', 'discussing', 'supercomm2'] },
   { id: 'persuasion',            title: 'Persuasion & Negotiation',      packs: ['influenceframing', 'persuasionandinfluence1', 'persuasionandinfluence2', 'negotiationandcompromise'] },
-  { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression', 'oconnor1', 'oconnor3', 'jfisher1', 'jfisher2', 'assertivecomm1', 'assertivecomm2', 'assertivecommadv', 'integratedmaster', 'jfisher3', 'jfisheradv', 'passiveaggression2', 'passiveaggression3', 'passiveaggression4', 'passiveaggression5', 'toneboundaries1', 'toneboundaries2', 'toneboundaries3', 'toneboundaries4', 'speakingupasacustomer', 'manipulation1', 'manipulation2', 'manipulation3', 'manipulation4', 'manipulation5', 'manipulationadv'] },
+  { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression', 'oconnor1', 'oconnor3', 'jfisher1', 'jfisher2', 'assertivecomm1', 'assertivecomm2', 'assertivecommadv', 'integratedmaster', 'jfisher3', 'jfisheradv', 'passiveaggression2', 'passiveaggression3', 'passiveaggression4', 'passiveaggression5', 'toneboundaries1', 'toneboundaries2', 'toneboundaries3', 'toneboundaries4', 'speakingupasacustomer', 'manipulation1', 'manipulation2', 'manipulation3', 'manipulation4', 'manipulation5', 'manipulationadv', 'underminedatwork1', 'underminedatwork2'] },
   { id: 'boundaries',            title: 'Asking & Saying No',            packs: ['playfulrefusals', 'thehappyno', 'theregretfulno', 'makingrequests', 'sayingno', 'oconnor2', 'jimmy6', 'askingpermission', 'toneboundaries1', 'toneboundaries2', 'familygatherings', 'manipulation1'] },
 
   // ── The hard end ──────────────────────────────────────────────────
   { id: 'emotions',              title: 'Emotions & Regulation',         packs: ['emotionlabellingandregulation', 'conflictemotions', 'praxdread4', 'reframing', 'oconnor6', 'emotionalcalibration1', 'emotionalcalibration2', 'emotionalcalibration3', 'manipulation4', 'fromupsettoask1', 'fromupsettoask2'] },
 
   // ── In writing (v1.29.12) ─────────────────────────────────────────
-  { id: 'written',               title: 'Messages & Writing',            packs: ['toneinmessages', 'replyingandnotreplying', 'whentostoptyping', 'supercomm3'] },
+  { id: 'written',               title: 'Messages & Writing',            packs: ['toneinmessages', 'replyingandnotreplying', 'whentostoptyping', 'supercomm3', 'parentingtogether3'] },
 
   // ── Lightness ─────────────────────────────────────────────────────
   { id: 'humour',                title: 'Humour & Banter',               packs: ['humour', 'teasing', 'selfhumour', 'humourpractise', 'playfulrefusals', 'rolebasedhumour', 'storybanter', 'responsivehumour', 'calibratinghumour'] },
@@ -670,7 +685,7 @@ const TOPICS = [
   { id: 'selfpresentation',      title: 'Self-Presentation',             packs: [] },
   { id: 'flirt',                 title: 'Flirting',                      packs: ['danbacon1', 'danbacon2', 'danbacon3', 'danbacon4', 'toddv1', 'toddv2', 'toddv3', 'toddv4', 'toddv5'] },
   { id: 'leadership',            title: 'Leadership',                    packs: ['praxframe5', 'praxdread5', 'oconnor4', 'oconnor5'] },
-  { id: 'relationshipcomm',      title: 'Communication in Relationships',packs: ['masculine1', 'masculine2', 'masculine3', 'masculine4', 'masculine5', 'masculine6', 'masculinesv', 'parenting1', 'parenting2', 'parenting3', 'parenting4', 'parenting5', 'praxframe1', 'praxframe2', 'praxframe3', 'praxframe4', 'praxdread1', 'praxdread2', 'praxdread3', 'jimmy1', 'jimmy2', 'jimmy5', 'seenandtrusted1thesafetyshereads', 'seenandtrusted2careshedidnotaskf', 'seenandtrusted3askingtobetrusted', 'alexandergrace1', 'alexandergrace2', 'alexandergrace3', 'alexandergrace4', 'alexandergrace5', 'alexandergrace6', 'alexandergrace7', 'alexandergrace8', 'praxfield1', 'praxfield2', 'praxfield3', 'praxfield4', 'praxbest1', 'praxbest2', 'praxbest3', 'praxbest4', 'parenting6', 'parentingadv', 'fromupsettoask1', 'fromupsettoask2', 'alexandergrace9'] },
+  { id: 'relationshipcomm',      title: 'Communication in Relationships',packs: ['masculine1', 'masculine2', 'masculine3', 'masculine4', 'masculine5', 'masculine6', 'masculinesv', 'parenting1', 'parenting2', 'parenting3', 'parenting4', 'parenting5', 'praxframe1', 'praxframe2', 'praxframe3', 'praxframe4', 'praxdread1', 'praxdread2', 'praxdread3', 'jimmy1', 'jimmy2', 'jimmy5', 'seenandtrusted1thesafetyshereads', 'seenandtrusted2careshedidnotaskf', 'seenandtrusted3askingtobetrusted', 'alexandergrace1', 'alexandergrace2', 'alexandergrace3', 'alexandergrace4', 'alexandergrace5', 'alexandergrace6', 'alexandergrace7', 'alexandergrace8', 'praxfield1', 'praxfield2', 'praxfield3', 'praxfield4', 'praxbest1', 'praxbest2', 'praxbest3', 'praxbest4', 'parenting6', 'parentingadv', 'fromupsettoask1', 'fromupsettoask2', 'alexandergrace9', 'parentingtogether1', 'parentingtogether2', 'parentingtogether3'] },
 
   // ── Mutual care in a congregation (v1.27.54) ──────────────────────
   // Added for the Jay Adams packs. Both sit at minLevel 'complete', so this

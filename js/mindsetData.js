@@ -14620,4 +14620,398 @@ const mindsetCollections = {
       ]
     },
   ],
+  parentingtogether1: [
+    {
+      name: "Honesty",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"Kids should see real life. Pretending we agree is fake.\" A belief that is partly true, which is what makes it hard to put down.\n\nWhat is true: children can see their parents disagree, and it does not harm them when they also see you sort it out.\n\nWhat gets added is \"so I should say it right now, over their heads\". The disagreement can be real and still wait until tonight.\n\nWhat it costs is the ending. They see the argument, and not the repair.\n\nMindset: keep the honesty. Choose the time and the place.",
+      inputs: [
+        { q: "Kids should see that parents disagree.", a: "\"True — but 'so I should argue it out in front of them' is the part I added.\"", bundle: 'pro' },
+        { q: "Pretending we agree is fake.", a: "\"True, it can be — but 'so I have to say it right now' is the part I added.\"", bundle: 'pro' },
+        { q: "I don't want to lie to my children.", a: "\"True — but 'so waiting until tonight is a lie' is the part I added.\"", bundle: 'pro' },
+        { q: "My child deserves to hear what I think.", a: "\"True, sometimes — but 'in the middle of Dad's no' is the part I added.\"", bundle: 'pro' },
+        { q: "Children notice everything anyway.", a: "\"True — but 'so there's no point in one answer' is the part I added.\"", bundle: 'pro' },
+        { q: "My parents never showed any disagreement, and it felt cold.", a: "\"True, it did — but 'so the opposite is arguing in front of mine' is the part I added.\"", bundle: 'pro' },
+        { q: "Being on the same side all the time isn't real.", a: "\"True — but 'so backing one call means always agreeing' is the part I added.\"", bundle: 'pro' },
+        { q: "Kids need to learn how people disagree.", a: "\"True — but 'so they learn it from the fight, not from the repair' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Wrong Calls",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If my partner's call is wrong, I have to stop it right now.\" The belief that a call you disagree with cannot wait.\n\nWhat is true instead: almost every call can wait a few hours. Half an hour of bedtime or one bag of sweets will not hurt anyone. Only real danger cannot wait.\n\nIt feels reasonable because in the moment the call looks unfair, and the child is looking at you for help.\n\nWhat it costs is one answer. The child sees the call fall apart, and learns to look to you next time.\n\nMindset: wrong for tonight can be fixed tomorrow, in private.",
+      inputs: [
+        { q: "If the call is wrong, I have to step in now.", a: "\"Most calls can wait until tonight. Very few can't.\"", bundle: 'pro' },
+        { q: "Letting it stand means I agree with it.", a: "\"Letting it stand means I'll say it to them, not to the kids.\"", bundle: 'pro' },
+        { q: "Half an hour more TV will ruin the evening.", a: "\"Half an hour of TV won't ruin anything. An argument over it might.\"", bundle: 'pro' },
+        { q: "The kids will think I'm weak if I don't speak up.", a: "\"The kids will see that their parents stick together. That isn't weak.\"", bundle: 'pro' },
+        { q: "I know better on this one.", a: "\"Maybe I do. Then I'll make my case tonight, not over their heads.\"", bundle: 'pro' },
+        { q: "I can't just stand there and say nothing.", a: "\"I don't have to say nothing. I can say, 'We'll talk later.'\"", bundle: 'pro' },
+        { q: "If I wait, it'll never get talked about.", a: "\"Then I'll put a time on it: tonight, after bedtime.\"", bundle: 'pro' },
+        { q: "My child is looking at me to save them.", a: "\"My child needs one answer more than they need saving from bedtime.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being Liked",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'm the easy-going one. The kids love it when I say yes.\" A belief that feels like warmth, and often comes from real love.\n\nWhat is true instead: you can be warm and still give the same answer as your partner.\n\nIt feels reasonable because the yes is easy, the smile is instant, and being the one they run to feels good.\n\nWhat it costs is quiet: your partner becomes the bad guy, the children learn which door to knock on, and the rules you both need stop holding.\n\nMindset: be the warm one, not the way around the other parent.",
+      inputs: [
+        { q: "I'm the fun parent, and the kids love it.", a: "\"And every yes from me turns my partner's no into the mean answer.\"", bundle: 'pro' },
+        { q: "I just want them to be happy.", a: "\"They're happy tonight, and my partner is the villain tomorrow.\"", bundle: 'pro' },
+        { q: "I'm the easy-going one.", a: "\"Easy-going for me means my partner does all the hard bits alone.\"", bundle: 'pro' },
+        { q: "Saying yes is the kind thing to do.", a: "\"Kind to the kids for five minutes, and unkind to the person I raise them with.\"", bundle: 'pro' },
+        { q: "They'll remember me as the nice one.", a: "\"They'll also remember that asking me was the way round Mum.\"", bundle: 'pro' },
+        { q: "I don't want to be the bad guy.", a: "\"So someone else always has to be.\"", bundle: 'pro' },
+        { q: "It's only a few sweets.", a: "\"It's only a few sweets, and it's also my partner's word counting for less.\"", bundle: 'pro' },
+        { q: "The kids come to me because they trust me.", a: "\"They come to me because I'm the one who says yes, and they know it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Giving Way",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I back their call, I've lost, and my view doesn't count.\" The belief that backing your partner means giving up your own side.\n\nWhat is true instead: your view still counts. You are only choosing to say it where it can change the next decision, to your partner, without an audience.\n\nIt feels reasonable because backing a call you disagree with feels like swallowing it, and it can feel like the same parent always gets their way.\n\nWhat it costs is the talk that would actually change things, swapped for a win in front of the kids that changes nothing.\n\nMindset: backing them now is how your view gets heard later.",
+      inputs: [
+        { q: "If I back their call, I've lost.", a: "\"There's nothing to lose. We're on the same side.\"", bundle: 'pro' },
+        { q: "My view won't count if I keep quiet now.", a: "\"My view counts tonight, when we can actually talk about it.\"", bundle: 'pro' },
+        { q: "They always get their way.", a: "\"If that's true, it's a talk for the two of us, not a fight for the kids to watch.\"", bundle: 'pro' },
+        { q: "Backing them means they'll think they were right.", a: "\"Backing them means the kids get one answer. Who was right can wait.\"", bundle: 'pro' },
+        { q: "I'll look like a pushover.", a: "\"Holding back in front of the kids takes more strength than jumping in.\"", bundle: 'pro' },
+        { q: "I backed them last time. It's my turn now.", a: "\"It isn't a game of turns. It's one answer for the kids, every time.\"", bundle: 'pro' },
+        { q: "If I don't say it now, I'll lose my nerve.", a: "\"Then I'll say it now, quietly, to them: 'Can we talk later?'\"", bundle: 'pro' },
+        { q: "Backing a call I don't agree with is dishonest.", a: "\"Saying 'we'll talk later' is honest. I'm only choosing where.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  parentingtogether2: [
+    {
+      name: "Speaking Up",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I bring it up later, I'm just starting a fight.\" The belief that the peaceful thing is to let it go once the moment has passed.\n\nWhat is true instead: raising it calmly, the same evening, is what stops the fight. The fight comes from the things that were never said.\n\nIt feels reasonable because the evening is finally quiet, and bringing it up seems to spoil that.\n\nWhat it costs is a slow pile of small things, and one day a big row about all of them at once.\n\nMindset: a calm talk tonight is the peaceful choice.",
+      inputs: [
+        { q: "If I bring it up, I'm starting a fight.", a: "\"A calm talk tonight is what stops the fight later.\"", bundle: 'pro' },
+        { q: "The kids are asleep, so it's over now.", a: "\"The moment is over. The rule we share isn't, so it's worth ten minutes.\"", bundle: 'pro' },
+        { q: "It's only small. It's not worth mentioning.", a: "\"Small is the best size to talk about. Big comes from small things left alone.\"", bundle: 'pro' },
+        { q: "I'll wait until I'm sure I'm right.", a: "\"I don't need to be right to ask for a talk. I just need us to talk.\"", bundle: 'pro' },
+        { q: "They'll think I'm criticising them.", a: "\"I can start with what happened, not with what they did wrong.\"", bundle: 'pro' },
+        { q: "We'll talk about it the next time it happens.", a: "\"Next time, the kids will be there. Tonight, they won't.\"", bundle: 'pro' },
+        { q: "It's too late to bring it up now.", a: "\"The same week isn't too late. Saying nothing is what makes it too late.\"", bundle: 'pro' },
+        { q: "If I say something, the whole evening is ruined.", a: "\"Ten calm minutes don't ruin an evening. A silent grudge does.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Control",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"I know best how she likes things, so I should be the one who does it.\" A belief with real truth in it — you may well know more — which is why it is so easy to act on.\n\nWhat is true: you may know her habits better, and you may be quicker.\n\nWhat gets added is \"so the other parent shouldn't do it, or should do it my way\".\n\nWhat it costs is a parent who slowly gives up, and a load that all lands on you.\n\nMindset: keep what I know. Drop the idea that only my way counts.",
+      inputs: [
+        { q: "I know how she likes her bath, so I should do it.", a: "\"I do know, but 'so only I can do it' is the part I added.\"", bundle: 'pro' },
+        { q: "He does the nappies wrong.", a: "\"He does them differently, but 'so they're wrong' is the part I added.\"", bundle: 'pro' },
+        { q: "It's quicker if I just take over.", a: "\"It's quicker today, but 'so I should always take over' is the part I added.\"", bundle: 'pro' },
+        { q: "I've done this far more times than she has.", a: "\"That's true, but 'so she can't learn it her way' is the part I added.\"", bundle: 'pro' },
+        { q: "The kids prefer it when I do it.", a: "\"Maybe they do now, but 'so it has to stay that way' is the part I added.\"", bundle: 'pro' },
+        { q: "If I don't check, something will be forgotten.", a: "\"Something might be, but 'so I have to check everything' is the part I added.\"", bundle: 'pro' },
+        { q: "I'm only trying to help.", a: "\"I am, but 'so taking over is helping' is the part I added.\"", bundle: 'pro' },
+        { q: "My way works.", a: "\"It does, but 'so theirs doesn't' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Peacekeeping",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'm the easy-going parent. I go along with things, and that keeps the peace.\" A belief that feels like a strength: flexible, calm, no drama.\n\nWhat is true instead: going along without saying what you think is not agreement. It just moves the disagreement out of sight.\n\nIt feels reasonable because the house stays quiet, and you are spared a hard talk.\n\nWhat it costs is quiet sabotage later — a rule you never believed in, slipping on your watch — and a partner who never knew where you stood.\n\nMindset: say my view once, then back the decision. That is real peace.",
+      inputs: [
+        { q: "I'm the easy one. I just go along.", a: "\"And then I let the rule slide when they're out, which isn't easy on anyone.\"", bundle: 'pro' },
+        { q: "I don't mind either way.", a: "\"When I do mind and say nothing, it comes out later as a sigh in front of the kids.\"", bundle: 'pro' },
+        { q: "Keeping the peace is what matters most.", a: "\"The peace I keep tonight can cost us a rule that nobody really holds.\"", bundle: 'pro' },
+        { q: "I'll say yes and see how it goes.", a: "\"A yes I don't mean is the one the kids will find the gap in.\"", bundle: 'pro' },
+        { q: "It's not worth a disagreement.", a: "\"Skipping the disagreement means my partner never knows where I stand.\"", bundle: 'pro' },
+        { q: "I'm flexible.", a: "\"Flexible with no view of my own leaves my partner holding every rule alone.\"", bundle: 'pro' },
+        { q: "I don't want to be the difficult one.", a: "\"Never being difficult can make me the parent who quietly undoes things.\"", bundle: 'pro' },
+        { q: "Fine, whatever you think.", a: "\"'Whatever you think' hands them the decision now, and the blame later.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Doing It All",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"It's quicker if I just do it myself.\" The belief that handing a job over costs more than it saves.\n\nWhat is true instead: doing it all yourself is quick today and heavy for years. Handing over a whole job is slow once, and then it is off your list.\n\nIt feels reasonable because explaining takes time, and they might do it differently.\n\nWhat it costs is a tired parent, a partner who stays a helper, and resentment that grows quietly.\n\nMindset: handing over a whole job is slow once, and lighter for ever after.",
+      inputs: [
+        { q: "It's quicker if I just do it.", a: "\"Quicker today. Handing it over is quicker every week after that.\"", bundle: 'pro' },
+        { q: "He wouldn't know where to start.", a: "\"He'll learn by owning it, not by watching me do it.\"", bundle: 'pro' },
+        { q: "If I hand it over, it'll go wrong.", a: "\"It might, once. Then it'll go their way, and that's fine.\"", bundle: 'pro' },
+        { q: "Asking makes me look like I can't cope.", a: "\"Sharing the jobs is how two parents cope. It's not a sign I can't.\"", bundle: 'pro' },
+        { q: "She's so busy with work.", a: "\"We're both busy. That's why each job needs one owner.\"", bundle: 'pro' },
+        { q: "I'll just remind him each time.", a: "\"If I'm reminding him, I'm still carrying it. Let him own it.\"", bundle: 'pro' },
+        { q: "I should be able to manage it all.", a: "\"Nobody should manage it all. That's why there are two of us.\"", bundle: 'pro' },
+        { q: "Handing it over isn't worth the argument.", a: "\"One talk now is cheaper than years of carrying it alone.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Winning",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"When we disagree about the kids, one of us has to be right.\" The belief that a disagreement ends with a winner.\n\nWhat is true instead: most parenting questions have more than one good answer. What children need is two parents who agree on a few things and stand behind them.\n\nIt feels reasonable because you care, and caring makes your way feel like the only way.\n\nWhat it costs is every talk turning into a contest, and a losing parent who quietly stops backing the decision.\n\nMindset: we don't need a winner. We need a decision we both back.",
+      inputs: [
+        { q: "One of us has to be right.", a: "\"Often we're both right. We just need one rule we both keep.\"", bundle: 'pro' },
+        { q: "If I give in, I've lost.", a: "\"If I back what we agreed, the kids win. That's the point.\"", bundle: 'pro' },
+        { q: "I need to convince them.", a: "\"I need to be heard once. Then we decide together.\"", bundle: 'pro' },
+        { q: "They'll see I was right when it goes wrong.", a: "\"Waiting for it to go wrong means hoping my kids have a bad week.\"", bundle: 'pro' },
+        { q: "If we do it their way, I'm not a real parent.", a: "\"Doing it their way sometimes is part of being a team.\"", bundle: 'pro' },
+        { q: "I'll back it when I agree with it.", a: "\"Backing it when I don't fully agree is what backing means.\"", bundle: 'pro' },
+        { q: "Their way is too soft.", a: "\"Different from mine isn't the same as too soft.\"", bundle: 'pro' },
+        { q: "We have to agree on everything.", a: "\"We have to agree on a few things, and trust each other on the rest.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  parentingtogether3: [
+    {
+      name: "Replies",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I don't answer every point in their message, they'll think they're right.\" The belief that silence on an accusation is the same as agreeing to it.\n\nWhat is true instead: you don't need their agreement to know what is true. A short answer to the real question is not an admission of anything.\n\nIt feels reasonable because unfair words sting, and setting the record straight feels like protecting yourself.\n\nWhat it costs is the evening, the next message, and the one after that. Every defence opens a new argument.\n\nMindset: answer the question. Let the rest go unanswered.",
+      inputs: [
+        { q: "If I don't answer every point, they'll think they're right.", a: "\"They may think it anyway. My answer only has to cover Friday.\"", bundle: 'pro' },
+        { q: "I can't let that lie go.", a: "\"Correcting it in writing has never once changed their mind.\"", bundle: 'pro' },
+        { q: "Silence is the same as agreeing.", a: "\"Not answering an accusation isn't agreeing with it. It's choosing not to fight.\"", bundle: 'pro' },
+        { q: "I need to explain myself properly this time.", a: "\"I've explained before. A short reply is clearer than another page.\"", bundle: 'pro' },
+        { q: "If I keep it short, it'll look like I don't care.", a: "\"Short and friendly looks like someone who cares about the kids more than the fight.\"", bundle: 'pro' },
+        { q: "They need to know how much that hurt.", a: "\"That's for someone I trust. The reply is just for the plans.\"", bundle: 'pro' },
+        { q: "Someone has to have the last word.", a: "\"The last word is usually the longest one, and it's never the useful one.\"", bundle: 'pro' },
+        { q: "The kids need me to defend myself.", a: "\"The kids need the plans to work. That's what my reply is for.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Worry",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"I'm only asking the kids about the other home because I care about them.\" A belief that feels like good parenting, which makes it hard to see.\n\nWhat is true instead: caring is real. But questions about the other parent turn your child into a reporter, and they feel it.\n\nIt feels reasonable because you can't see what happens there, and a worried parent wants to know.\n\nWhat it costs is quiet: your child starts guessing which answer you want, and then stops telling you much at all.\n\nMindset: care about their time, not about the other home's news.",
+      inputs: [
+        { q: "I'm only asking because I care.", a: "\"And every question about Dad teaches her to watch what she says to me.\"", bundle: 'pro' },
+        { q: "I need to know what goes on over there.", a: "\"Each time I find out through him, he carries a bit of the fight home.\"", bundle: 'pro' },
+        { q: "It's just one question.", a: "\"One question every Sunday adds up to a child who reports.\"", bundle: 'pro' },
+        { q: "Kids should be able to tell me everything.", a: "\"They tell me most when I ask about them, not about her.\"", bundle: 'pro' },
+        { q: "I have a right to know who's around my child.", a: "\"I do — and asking her dad is how to find out, not asking her.\"", bundle: 'pro' },
+        { q: "I can tell when something's wrong. Asking helps.", a: "\"Asking how he feels helps. Asking what she said makes him the messenger.\"", bundle: 'pro' },
+        { q: "I just want to make sure they're safe.", a: "\"Then I ask how they are, and a real worry goes to the other parent or to someone who can help.\"", bundle: 'pro' },
+        { q: "They don't mind me asking.", a: "\"They don't say they mind. They just start giving shorter answers.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Rules",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"Their rules are wrong, and the kids should know it.\" A belief that is partly true, which makes it easy to hold on to.\n\nWhat is true: you may have good reasons for your rules, and you are allowed to run your home your way.\n\nWhat gets added is \"the kids should know it\". Telling your child that the other home is wrong puts them in the middle, and makes them choose.\n\nWhat it costs is your child's ease in both homes, which matters more than who wins on bedtimes.\n\nMindset: keep your rules. Drop the verdict on theirs.",
+      inputs: [
+        { q: "Their rules are wrong, and the kids should know it.", a: "\"True, I'd do it differently — but 'so the kids should hear it' is the part I added.\"", bundle: 'pro' },
+        { q: "Ten o'clock is far too late for an eight-year-old.", a: "\"True, I think so — but 'so I'll tell her Dad is wrong' is the part I added.\"", bundle: 'pro' },
+        { q: "My rules are better for them.", a: "\"True, maybe here — but 'so theirs don't count' is the part I added.\"", bundle: 'pro' },
+        { q: "Somebody has to be the strict one.", a: "\"True, in my home that's me — but 'so they're the bad one' is the part I added.\"", bundle: 'pro' },
+        { q: "If I go along with it, I'm letting it slide.", a: "\"True, I can still raise it with their mum — but 'so I raise it with the kids' is the part I added.\"", bundle: 'pro' },
+        { q: "The kids need to hear that sweets every night is bad for them.", a: "\"True, they can hear it from me — but 'and that Mum is wrong' is the part I added.\"", bundle: 'pro' },
+        { q: "Different rules confuse children.", a: "\"True, a little — but 'so I have to fight them' is the part I added.\"", bundle: 'pro' },
+        { q: "I'm only being honest with them.", a: "\"True, honesty matters — but 'so they need my opinion of their dad' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Friendliness",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I'm friendly to them after what they did, I'm letting them off the hook.\" The belief that warmth is a reward, and should be earned.\n\nWhat is true instead: a friendly word at the door or in a message isn't for them. It's for the children, who are watching how their parents treat each other.\n\nIt feels reasonable because the hurt is real, and coldness feels like the only fair answer.\n\nWhat it costs is the handover, the message and the child's peace. Coldness gets answered with coldness, and the children live in it.\n\nMindset: friendly isn't forgiving. It's how you keep the kids out of it.",
+      inputs: [
+        { q: "If I'm nice to him, he gets away with it.", a: "\"Being friendly at the door isn't letting him off. It's keeping Emma out of it.\"", bundle: 'pro' },
+        { q: "She doesn't deserve a thank-you.", a: "\"The thank-you isn't for her. It keeps the message short and the next one calmer.\"", bundle: 'pro' },
+        { q: "Being friendly means I've forgiven him.", a: "\"Friendly is how I act at handovers. Forgiving is something else, and it's mine to decide.\"", bundle: 'pro' },
+        { q: "If I smile, she'll think everything's fine.", a: "\"She can think what she likes. My son sees his parents being kind.\"", bundle: 'pro' },
+        { q: "I can't fake it.", a: "\"I don't have to feel warm. I just have to say 'thanks' and 'see you Sunday'.\"", bundle: 'pro' },
+        { q: "Being polite to him is a lie.", a: "\"Polite isn't a lie. It's a choice about what my kids have to watch.\"", bundle: 'pro' },
+        { q: "They started it, so I don't have to be friendly.", a: "\"Who started it matters less than how the kids feel at the door.\"", bundle: 'pro' },
+        { q: "If I'm friendly, I'll look weak.", a: "\"Friendly and firm together is the strongest way I can sound.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Help",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Getting a mediator means we've failed.\" The belief that good parents should be able to sort everything out between them.\n\nWhat is true instead: asking for help is a way of not failing your children. Some fights don't get solved between two people who used to be a couple.\n\nIt feels reasonable because asking for help can feel like admitting defeat, or like dragging strangers into private things.\n\nWhat it costs is time, and the children's peace. The same fight runs on, for years.\n\nMindset: help from outside isn't the end of trying. It's a better way to try.",
+      inputs: [
+        { q: "Getting a mediator means we've failed.", a: "\"Getting help means we care more about the kids than about doing it alone.\"", bundle: 'pro' },
+        { q: "We should be able to sort this out ourselves.", a: "\"We've tried for a year. Help is the next step, not a failure.\"", bundle: 'pro' },
+        { q: "A stranger can't understand our family.", a: "\"They don't need to know our family. They need to keep us on the kids.\"", bundle: 'pro' },
+        { q: "If I suggest it, he'll think I'm threatening him.", a: "\"I can say it as an invitation: 'Would you come with me?'\"", bundle: 'pro' },
+        { q: "It's only arguments. It's not that bad.", a: "\"Years of the same argument is what the kids remember.\"", bundle: 'pro' },
+        { q: "Asking for help is admitting I can't cope.", a: "\"Asking for help is coping. It's what I'd tell a friend to do.\"", bundle: 'pro' },
+        { q: "She'll never agree, so there's no point asking.", a: "\"I can ask anyway, and get help for myself if she says no.\"", bundle: 'pro' },
+        { q: "Talking to someone about it feels disloyal.", a: "\"Talking to someone I trust isn't disloyal. It's looking after the kids, and me.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  underminedatwork1: [
+    {
+      name: "Speaking Up",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I say something, I'm the difficult one.\" The belief that a professional keeps quiet and lets it pass.\n\nWhat is true instead: one calm line in the moment is not making trouble. It stops a wrong picture before it sets.\n\nIt feels reasonable because nobody wants to be the person who makes the meeting awkward, and many workplaces reward people who go along.\n\nWhat it costs is that the undermining keeps working, because it works best when nobody says anything.\n\nMindset: calm is not difficult, and silence is not neutral.",
+      inputs: [
+        { q: "If I say something, I'm the difficult one.", a: "\"One calm line isn't difficult. It's just accurate.\"", bundle: 'pro' },
+        { q: "It's not worth making a fuss.", a: "\"One short sentence isn't a fuss.\"", bundle: 'pro' },
+        { q: "People will think I'm touchy.", a: "\"Calm and short doesn't look touchy. It looks sure.\"", bundle: 'pro' },
+        { q: "I'll just let it go this once.", a: "\"This once is how it turns into every time.\"", bundle: 'pro' },
+        { q: "Speaking up in front of the class looks unprofessional.", a: "\"Holding my rule calmly is exactly what professional looks like to them.\"", bundle: 'pro' },
+        { q: "Nobody else seems bothered.", a: "\"Nobody else's work was taken. Mine was.\"", bundle: 'pro' },
+        { q: "If I correct them, it'll look petty.", a: "\"A fact said kindly isn't petty. It's information.\"", bundle: 'pro' },
+        { q: "They're senior, so it's not my place.", a: "\"It's my work, so it is my place to speak for it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Credit",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"Good work speaks for itself.\" A belief that feels modest and fair.\n\nWhat is true instead: good work does speak, but someone else can speak over it. Saying \"that's mine\", warmly, is part of doing the work.\n\nIt feels reasonable because showing off is unattractive, and you want to be the kind of person who doesn't need the praise.\n\nWhat it costs is quiet: your work goes into rooms you are not in, with someone else's name on it, and the next project, the trust and the pay rise follow the name.\n\nMindset: modest is fine. Invisible has a price.",
+      inputs: [
+        { q: "Good work speaks for itself.", a: "\"And when someone else speaks over it, the work quietly changes owner.\"", bundle: 'pro' },
+        { q: "I don't need the credit.", a: "\"Maybe not, but my next project depends on who people think did this one.\"", bundle: 'pro' },
+        { q: "Showing off is ugly.", a: "\"And saying nothing teaches the room that my work belongs to anyone.\"", bundle: 'pro' },
+        { q: "The right people will notice.", a: "\"The right people were in the room, and they heard his name, not mine.\"", bundle: 'pro' },
+        { q: "We're a team, so it doesn't matter who did what.", a: "\"It matters when the same person keeps getting the praise, and it's never me.\"", bundle: 'pro' },
+        { q: "I'd rather be humble.", a: "\"Humble has left my name off the work people remember.\"", bundle: 'pro' },
+        { q: "I'm above fighting over credit.", a: "\"Then the person who isn't above it ends up with all of it.\"", bundle: 'pro' },
+        { q: "They'll work out it was me in the end.", a: "\"In the end comes after the praise, the next project and the pay rise.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Payback",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Getting back at them is fair.\" The urge to answer a public dig with a public dig, or to quietly make their work harder in return.\n\nWhat is true instead: hitting back feels fair, but it makes you part of the problem, and the room stops seeing who started it.\n\nIt feels reasonable because they did start it. Duffy, Ganster and Pagon found that people who are undermined often begin to undermine back; the pull is real and common.\n\nWhat it costs is your good name, and any chance of sorting it out with them.\n\nMindset: answer the dig, not the person. Calm is what wins the room.",
+      inputs: [
+        { q: "Getting back at them is fair.", a: "\"Fair to me, maybe. To the room, it just looks like two people fighting.\"", bundle: 'pro' },
+        { q: "They started it.", a: "\"They did. I don't have to keep it going.\"", bundle: 'pro' },
+        { q: "A sharp comeback would shut them up.", a: "\"A calm line shuts them up too, and I still look good tomorrow.\"", bundle: 'pro' },
+        { q: "They deserve to look bad.", a: "\"If they keep this up, they'll manage that without my help.\"", bundle: 'pro' },
+        { q: "I'll leave them off the next email and see how they like it.", a: "\"That just makes me the next person someone has to talk to.\"", bundle: 'pro' },
+        { q: "If I don't hit back, they'll think I'm weak.", a: "\"Calm isn't weak. It's the one thing they can't shake.\"", bundle: 'pro' },
+        { q: "Everyone saw what they did.", a: "\"Then everyone will also see what I do next.\"", bundle: 'pro' },
+        { q: "A bit of payback is just how work is.", a: "\"It's how work gets worse. I can be where it stops.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Showdowns",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I don't settle it right now, in front of everyone, I've lost.\" The belief that the audience has to see the whole thing decided.\n\nWhat is true instead: in the moment you only need to not give the point away. The real conversation can happen later, in private.\n\nIt feels reasonable because the audience is right there, and walking away with it unsettled feels like losing.\n\nWhat it costs is a debate in front of a team, a customer or a class that nobody wins, and a colleague who now has to save face.\n\nMindset: one calm line now. The rest after.",
+      inputs: [
+        { q: "If I don't settle it now, I've lost.", a: "\"I only need to not give it away now. Settling it can wait.\"", bundle: 'pro' },
+        { q: "Parking it looks like running away.", a: "\"Naming a time to talk is the opposite of running away.\"", bundle: 'pro' },
+        { q: "The students need to see me win.", a: "\"They need to see me calm. That's what they'll remember.\"", bundle: 'pro' },
+        { q: "I need to explain all my reasons, right here.", a: "\"One line now. The reasons can have a whole conversation later.\"", bundle: 'pro' },
+        { q: "If I wait, they'll think they were right.", a: "\"The room heard my line. The rest is between the two of us.\"", bundle: 'pro' },
+        { q: "I can't let the customer see us disagree.", a: "\"Then a short line and 'let's talk after' is exactly what keeps it from them.\"", bundle: 'pro' },
+        { q: "I'll lose my nerve if I don't do it now.", a: "\"I can book the talk now, while my nerve is here.\"", bundle: 'pro' },
+        { q: "If they're wrong, everyone should hear why.", a: "\"Everyone heard the fact. The why can wait.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Self-Doubt",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"They sound so sure. Maybe they're right and I've got it wrong.\" A belief that is partly true, which is what makes it hard to put down.\n\nWhat is true: they might have a point, and it is worth checking afterwards.\n\nWhat gets added is \"so I should back down now, in front of everyone\". How sure someone sounds says nothing about whether they are right.\n\nWhat it costs is your decision, given away in public because of a tone of voice.\n\nMindset: check it later. Hold it now.",
+      inputs: [
+        { q: "They sound so sure. Maybe they're right.", a: "\"True, they might be — but 'so I should back down in front of everyone' is the part I added.\"", bundle: 'pro' },
+        { q: "They've been here much longer than me.", a: "\"True — but 'so they're right about my work' is the part I added.\"", bundle: 'pro' },
+        { q: "I might have made a mistake.", a: "\"True, I might — but 'so I should give in before I've checked' is the part I added.\"", bundle: 'pro' },
+        { q: "Everyone nodded when they said it.", a: "\"True — but 'so they must be right' is the part I added.\"", bundle: 'pro' },
+        { q: "I did get something wrong last month.", a: "\"True — but 'so I'm probably wrong now too' is the part I added.\"", bundle: 'pro' },
+        { q: "They know more about this area than I do.", a: "\"True, maybe — but 'so my decision doesn't count' is the part I added.\"", bundle: 'pro' },
+        { q: "I'm not one hundred per cent sure.", a: "\"True — but 'so I can't hold my point' is the part I added.\"", bundle: 'pro' },
+        { q: "If I hold my point and I'm wrong, I'll look stupid.", a: "\"True, it could happen — but 'so it's safer to give in' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  underminedatwork2: [
+    {
+      name: "Speaking Up",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I say something, I'm the difficult one.\" The belief that raising it, even calmly, will cost you more than keeping quiet.\n\nWhat is true instead: a calm, private talk with facts is what a good colleague does. Difficult is the scene in the corridor, not the ten minutes in the small room.\n\nIt feels reasonable because workplaces reward getting along, and the person who complains can get a label.\n\nWhat it costs is the thing itself. It keeps happening, and the anger leaks out anyway, just later and worse.\n\nMindset: saying it calmly and in private is not difficult. It is how I stay easy to work with.",
+      inputs: [
+        { q: "If I say something, I'm the difficult one.", a: "\"Saying it calmly, in private, is the opposite of difficult.\"", bundle: 'pro' },
+        { q: "It's not worth the trouble.", a: "\"The trouble is already here. A ten-minute talk is smaller than this.\"", bundle: 'pro' },
+        { q: "Everyone else just lets it go.", a: "\"I don't know that, and I'm the one whose work is missing.\"", bundle: 'pro' },
+        { q: "They'll be awkward with me afterwards.", a: "\"Maybe for a day. Saying nothing is awkward for months.\"", bundle: 'pro' },
+        { q: "I'll look like I can't take a joke.", a: "\"I'm talking about what happened to the work, not about the joke.\"", bundle: 'pro' },
+        { q: "I should be above this.", a: "\"Being above it means sorting it out, not swallowing it.\"", bundle: 'pro' },
+        { q: "I'm new, so I can't say anything yet.", a: "\"New people need clear lines more than anyone.\"", bundle: 'pro' },
+        { q: "If I raise it, it'll become a big thing.", a: "\"It gets big when it's left. One quiet talk keeps it small.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Visibility",
+      guideFront: "Something true, taken too far",
+      guideBack: "The part to keep, and the part to drop",
+      description: "\"Good work speaks for itself.\" A belief with real truth in it, which is why it is so easy to hide behind.\n\nWhat is true: good work matters most, and showing off is a real turn-off.\n\nWhat gets added is the step from \"good work matters\" to \"so I never need to say it's mine, ask to be in the room, or write anything down.\"\n\nWhat it costs is the credit, the invites and the decisions. Work nobody knows is yours cannot speak for you.\n\nMindset: keep doing the good work. Drop the idea that it needs no help to be seen.",
+      inputs: [
+        { q: "Good work speaks for itself.", a: "\"Good work matters most, but 'so nobody needs to know it's mine' is the part I added.\"", bundle: 'pro' },
+        { q: "If I'm good enough, they'll invite me.", a: "\"Being good helps, but 'so I never need to ask for the invite' is the part I added.\"", bundle: 'pro' },
+        { q: "The boss will notice who really did it.", a: "\"Sometimes, but 'so I can stay quiet when it's credited to someone else' is the part I added.\"", bundle: 'pro' },
+        { q: "Asking to be copied in is needy.", a: "\"I don't need every email, but 'so I can't ask for the ones my work depends on' is the part I added.\"", bundle: 'pro' },
+        { q: "Writing things down is for people who don't trust each other.", a: "\"Trust matters, but 'so we should rely on two different memories' is the part I added.\"", bundle: 'pro' },
+        { q: "I don't want to show off.", a: "\"Showing off is a turn-off, but 'so I can't say I built it' is the part I added.\"", bundle: 'pro' },
+        { q: "My students' results will show what I do.", a: "\"They will, but 'so I don't need to be in the planning meetings' is the part I added.\"", bundle: 'pro' },
+        { q: "People who push themselves forward get disliked.", a: "\"Some do, but 'so asking plainly for my place will make me disliked' is the part I added.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Payback",
+      guideFront: "A belief that feels like a strength",
+      guideBack: "What it quietly costs",
+      description: "\"Getting back at them is fair.\" A belief that feels like justice — standing up for yourself, not being a pushover.\n\nWhat is true instead: paying them back in kind makes you part of the problem. Undermining tends to breed more undermining, and the team ends up watching two people fight.\n\nIt feels reasonable because they started it, and doing nothing feels like letting them win.\n\nWhat it costs is your strongest card: being the one with clean facts. Once you hit back, there are two stories, and nobody can tell which came first.\n\nMindset: I don't get even. I get it sorted.",
+      inputs: [
+        { q: "Getting back at them is fair.", a: "\"It feels fair, and it turns one problem into two people fighting.\"", bundle: 'pro' },
+        { q: "I'll leave them off my emails too.", a: "\"That feels like justice, and it means the work suffers twice.\"", bundle: 'pro' },
+        { q: "They deserve to feel what it's like.", a: "\"Maybe, and it costs me the clean facts I'll need to raise it.\"", bundle: 'pro' },
+        { q: "If I don't hit back, I'm a pushover.", a: "\"Hitting back feels strong, and it teaches the team that this is how we work.\"", bundle: 'pro' },
+        { q: "I'll just let a few of their deadlines slide.", a: "\"It feels deserved, and it makes me the one who's slow-walking.\"", bundle: 'pro' },
+        { q: "A little dig in the next meeting will put them in their place.", a: "\"It feels earned, and the room will remember my dig, not what they did.\"", bundle: 'pro' },
+        { q: "I'll tell people what they're really like.", a: "\"It feels like warning others, and it's the very thing I'm upset about.\"", bundle: 'pro' },
+        { q: "Getting even is standing up for myself.", a: "\"It feels like standing up, and it gives away the one thing I had: being in the right.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Escalation",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Going to the boss is telling tales.\" The belief that taking it to your manager is childish or disloyal, however long it has gone on.\n\nWhat is true instead: telling tales is going behind someone's back. Going to your manager after talking to them first, with facts and a request, is asking for help with the work.\n\nIt feels reasonable because school taught us not to tell, and nobody wants to be the one who runs to the boss.\n\nWhat it costs is staying stuck. Some patterns only stop when someone with the power to set the lines does it.\n\nMindset: I went to them first. Now asking my manager for help is fair.",
+      inputs: [
+        { q: "Going to the boss is telling tales.", a: "\"Telling tales is going behind their back. I've already gone to their face.\"", bundle: 'pro' },
+        { q: "Managers don't want to hear about this.", a: "\"Managers want to know when the work is suffering. That's part of their job.\"", bundle: 'pro' },
+        { q: "I should be able to sort it out myself.", a: "\"I tried, twice. Asking for help now is part of sorting it out.\"", bundle: 'pro' },
+        { q: "They'll know it came from me.", a: "\"They will, and that's fine. I talked to them first.\"", bundle: 'pro' },
+        { q: "It'll ruin our working relationship.", a: "\"It's already damaged. Clear lines from above might help fix it.\"", bundle: 'pro' },
+        { q: "It's petty to go to the boss over a few emails.", a: "\"Three missed decisions aren't petty. They're my work.\"", bundle: 'pro' },
+        { q: "My manager will think I can't handle people.", a: "\"Coming with facts and a clear request shows that I can.\"", bundle: 'pro' },
+        { q: "Once I go up, there's no way back.", a: "\"Going up with facts isn't a war. It's asking for a clear rule.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Doubt",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Maybe I'm imagining it.\" The belief that unless you can prove they meant it, you have no right to raise it.\n\nWhat is true instead: you don't need to know why it happened. You can describe what happened and what it caused, and ask.\n\nIt feels reasonable because undermining is often easy to deny — a missed invite, a late file, a comment that was \"only a joke.\"\n\nWhat it costs is time. You wait for proof that never comes, and the pattern carries on.\n\nMindset: I don't have to read their mind. I only have to describe what happened.",
+      inputs: [
+        { q: "Maybe I'm imagining it.", a: "\"I don't have to know why. I can describe what happened.\"", bundle: 'pro' },
+        { q: "It was probably an accident.", a: "\"Maybe. Talking to them is how I'll find out.\"", bundle: 'pro' },
+        { q: "I can't prove they meant it.", a: "\"I don't need to. The effect on the work is enough to raise.\"", bundle: 'pro' },
+        { q: "I'm being oversensitive.", a: "\"Three missed meetings aren't a feeling. They're dates.\"", bundle: 'pro' },
+        { q: "If I'm wrong, I'll look paranoid.", a: "\"If I bring facts and no blame, being wrong costs me nothing.\"", bundle: 'pro' },
+        { q: "Everyone gets left out sometimes.", a: "\"Sometimes, yes. This is the fourth time, so it's worth a question.\"", bundle: 'pro' },
+        { q: "I should wait until I'm sure.", a: "\"Waiting makes it bigger. A quiet talk is how I get sure.\"", bundle: 'pro' },
+        { q: "It's just how they are.", a: "\"Maybe. It still affects my work, and that I can talk about.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
