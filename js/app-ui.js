@@ -3006,6 +3006,23 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
           'Everything works in all your training modes, including handsfree.',
         ],
       },
+      // v1.29.76 — the third Extended program: Handling Manipulation. All six
+      // packs (Pt. 1–5 and Advanced) sit at minLevel 'program' and exist
+      // nowhere else; the program is the only way to reach them.
+      {
+        id: 'handling-manipulation',
+        title: 'Handling Manipulation',
+        icon: 'ti-user-shield',
+        description: 'Six steps through guilt trips, twisted facts, go-betweens, tears used as pressure and no-win traps \u2014 and how to see the pattern when it keeps happening.',
+        price: '59 kr',
+        details: [
+          'A guided program, not a pack. Six stages, each ending in a test you have to pass before the next one opens \u2014 and passing releases that stage\u2019s pack into your library for good.',
+          'Stage 1 is the most common pressure there is: guilt, obligation and \u201cafter all I\u2019ve done\u201d. Stage 2 is what to say when the facts get bent, denied or turned back on you. Stages 3 to 5 take it wider \u2014 messages through other people, feelings used as leverage, and the traps where every answer seems wrong. Stage 6 puts it together: seeing the pattern, and knowing when it is no longer a conversation problem.',
+          'All six packs exist nowhere else in the app. This program is the only way to reach them.',
+          'No diagnosing, no point-scoring: every strategy is something calm you can actually say, to a partner, a parent, a friend or a manager.',
+          'Everything works in all your training modes, including handsfree.',
+        ],
+      },
       // 'conversation-skills' was removed in v1.26.80 — see the note below.
       // EMPTY BEFORE THAT (v1.26.80): 'conversation-skills' (Conversation Skills
       // Foundations, 49 kr) was taken out of the store. Three reasons, in
@@ -3095,10 +3112,12 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         // det uppenbara valet för den som ändå står vid kassan.
         // v1.29.51: Handling Passive Aggression (59 kr) tillkom; priset ligger
         // kvar på 189 kr enligt Rikards beslut, så kitet är nu 189 av 311.
+        // v1.29.76: Handling Manipulation (59 kr) tillkom; priset ligger kvar
+        // på 189 kr (samma linje som v1.29.51 — Rikard kan ändra), 189 av 370.
         price: '189 kr',
         details: [
-          'Every single thing in Extended in one purchase: all six extra packs, the extra Broken Record situations, and both programs \u2014 Difficult Conversations and Handling Passive Aggression. Bought one by one it comes to {separately}.',
-          'The programs are what make this different from The Communicator Kit. Each is a path of stages with a test at the end of each, and between them they hold seven packs that exist nowhere else in the app: Conflict Emotions, Giving Criticism and Receiving Feedback and Criticism, and Responding to Passive Aggression Pt. 2 to Pt. 5.',
+          'Every single thing in Extended in one purchase: all six extra packs, the extra Broken Record situations, and all three programs \u2014 Difficult Conversations, Handling Passive Aggression and Handling Manipulation. Bought one by one it comes to {separately}.',
+          'The programs are what make this different from The Communicator Kit. Each is a path of stages with a test at the end of each, and between them they hold thirteen packs that exist nowhere else in the app: Conflict Emotions, Giving Criticism and Receiving Feedback and Criticism, Responding to Passive Aggression Pt. 2 to Pt. 5, and all six packs of Handling Manipulation.',
           'Around it sit the six extra packs: the last step of the Starting Conversations ladder, the deep half of Apologizing, the second half of Explain Things, the shape of a story from first sentence to last, and Reframing \u2014 the other reading of the same facts. Plus the family pressure that makes Broken Record hard in the first place.',
           'Everything unlocks immediately and works in all your training modes, including handsfree. After this there is nothing else in Extended to buy.',
         ],
@@ -3112,6 +3131,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
           { type: 'bundle',  id: 'brokenrecord::family' },
           { type: 'program', id: 'difficult-conversations' },
           { type: 'program', id: 'handling-passive-aggression' },
+          { type: 'program', id: 'handling-manipulation' },
         ],
       },
       {

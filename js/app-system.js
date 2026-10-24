@@ -815,12 +815,12 @@ applyInputCounterVisibility();
     speakingupasacustomer: { label: 'Speaking Up as a Customer', minLevel: 'complete' },
     gettingtoknowsomeone: { label: 'Getting to Know Someone', minLevel: 'complete' },
     whoyouare: { label: 'Who You Are', minLevel: 'complete' },
-    manipulation1: { label: 'Handling Manipulation — Pt. 1: Guilt and Obligation', minLevel: 'complete' },
-    manipulation2: { label: 'Handling Manipulation — Pt. 2: Twisted Truth', minLevel: 'complete' },
-    manipulation3: { label: 'Handling Manipulation — Pt. 3: Through Other People', minLevel: 'complete' },
-    manipulation4: { label: 'Handling Manipulation — Pt. 4: Feelings as Leverage', minLevel: 'complete' },
-    manipulation5: { label: 'Handling Manipulation — Pt. 5: Traps and Binds', minLevel: 'complete' },
-    manipulationadv: { label: 'Handling Manipulation — Advanced: Seeing the Pattern', minLevel: 'complete' },
+    manipulation1: { label: 'Handling Manipulation — Pt. 1: Guilt and Obligation', minLevel: 'program' }, // Handling Manipulation, Part 1 (v1.29.76)
+    manipulation2: { label: 'Handling Manipulation — Pt. 2: Twisted Truth', minLevel: 'program' }, // Handling Manipulation, Part 2 (v1.29.76)
+    manipulation3: { label: 'Handling Manipulation — Pt. 3: Through Other People', minLevel: 'program' }, // Handling Manipulation, Part 3 (v1.29.76)
+    manipulation4: { label: 'Handling Manipulation — Pt. 4: Feelings as Leverage', minLevel: 'program' }, // Handling Manipulation, Part 4 (v1.29.76)
+    manipulation5: { label: 'Handling Manipulation — Pt. 5: Traps and Binds', minLevel: 'program' }, // Handling Manipulation, Part 5 (v1.29.76)
+    manipulationadv: { label: 'Handling Manipulation — Advanced: Seeing the Pattern', minLevel: 'program' }, // Handling Manipulation, Part 6 (v1.29.76)
     fromupsettoask1: { label: 'From Upset to Ask — Pt. 1: Turning It Around', minLevel: 'complete' },
     fromupsettoask2: { label: 'From Upset to Ask — Pt. 2: When They Push Back', minLevel: 'complete' },
     alexandergrace9: { label: 'Alexander Grace 9 — Conflict Resolution', minLevel: 'complete' },
@@ -867,6 +867,7 @@ applyInputCounterVisibility();
     'difficult-conversations': { minLevel: 'extended' },
     // v1.29.51 — the second Extended programme (Rikard's call, 2026-10-09).
     'handling-passive-aggression': { minLevel: 'extended' },
+    'handling-manipulation': { minLevel: 'extended' }, // v1.29.76 — third Extended programme, 59 kr
     // v1.29.66 — Making Friends (Pt. 2–3). Hidden until Rikard has tested it.
     'making-friends':         { minLevel: 'complete' },
     // v1.29.67 — Career Conversations. Hidden until Rikard has tested it.
@@ -5283,6 +5284,7 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.76', date: 'October 2026', title: 'Handling Manipulation \u2014 a third Extended programme', audience: 'dev', items: ['New programme <code>handling-manipulation</code>, <strong>extended</strong>, 59 kr in the store. Six Stages, one pack each: Handling Manipulation Pt. 1\u20135 and Advanced (<code>manipulation1</code>\u2013<code>manipulation5</code>, <code>manipulationadv</code>), which move from <strong>complete</strong> to <strong>program</strong> and so reach the release build for the first time.', 'Six new checkpoints, <code>hm-cp1</code>\u2013<code>hm-cp6</code>, 40 questions each, 20 drawn, 30 s. Written to the balance rule from the sweep: the right answer is the longest in at most 12 of 40 and the shortest in 8\u201312; positions 10/10/10/10.', 'The Complete Kit now contains all three programmes; price unchanged at 189 kr (same line as v1.29.51), so it is 189 of 370 bought separately.'] },
   { version: 'v1.29.75', date: 'October 2026', title: 'Checkpoint sweep', audience: 'dev', items: ['All 31 checkpoints in the reachable programs (Conversation Foundations, Listening in Depth, Say It Well, Warmth &amp; Connection, Difficult Conversations, Handling Passive Aggression, Opening a Conversation, Persuasion &amp; Negotiation, Humour) rewritten so the right answer can no longer be found by picking the longest option. Before: the right answer was the longest in 27\u201351 of 40\u201360 questions. Now: the longest in 2\u201315 and the shortest about as often.', 'Questions and right answers unchanged in meaning; wrong options rewritten to be as long and as plausible, and some right answers tightened. A few wrong options that were arguably also right were replaced. Stored answer positions spread evenly A\u2013D (the app shuffles them anyway).'] },
   { version: 'v1.29.74', date: 'October 2026', title: 'Build check', audience: 'dev', items: ['Version bump only, so the first build from the new project folder on the Mac (<code>~/DeckstackApp</code>, moved out of iCloud Documents) can be told apart from the one already on the phone. No content changes.'] },
   { version: 'v1.29.73', date: 'October 2026', title: 'Keep the Door Open', audience: 'dev', items: ['The strategy <strong>Leave the Door Open</strong> in <em>Emotional Calibration \u2014 Pt. 1</em> (<code>emotionalcalibration1</code>) is now <strong>Keep the Door Open</strong>, so it no longer shares a name with the strategy in <em>Passive Aggression Pt. 5</em>, which keeps its name. Changed in all six modes, in Kartan and in the source file; Passive Aggression and the Handling Passive Aggression checkpoint are untouched.'] },
