@@ -7,11 +7,11 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Deckstack" />
-  <link rel="manifest" href="manifest.json?v=12977" />
+  <link rel="manifest" href="manifest.json?v=12978" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12977" />
-  <link rel="stylesheet" href="css/tabler/tabler-icons.min.css?v=12977" />
+  <link rel="stylesheet" href="css/style.css?v=12978" />
+  <link rel="stylesheet" href="css/tabler/tabler-icons.min.css?v=12978" />
 </head>
 <body>
 
@@ -2911,6 +2911,18 @@
       <button id="notesExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
     </div>
 
+    <!-- v1.29.78 — App Store purchases and codes, iPhone app only (hidden on
+         the web by initIapSettings in app-ui.js). Outside the access-code
+         block on purpose: build-release.js removes that block, these stay. -->
+    <div class="settings-row" id="iapRedeemRow" style="display:none;">
+      <label>Have an App Store code?</label>
+      <button id="iapRedeemBtn" style="font-size:13px; color:#2c7a4b; background:#edf7f1; border:1px solid #b2dfcc; border-radius:8px; padding:6px 12px; cursor:pointer;">Redeem</button>
+    </div>
+    <div class="settings-row" id="iapRestoreRow" style="display:none;">
+      <label>Bought something before?</label>
+      <button id="iapRestoreBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Restore purchases</button>
+    </div>
+
     <!-- v1.26.89 — beta access code. Grants Pro for a fixed number of days and
          then expires by itself, so a tester who keeps the link does not keep
          Pro forever. See BETA_CODES in app-system.js. -->
@@ -3274,21 +3286,21 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12977"></script>
-<script src="js/tagsData.js?v=12977"></script>
-<script src="js/programsData.js?v=12977"></script>
-<script src="js/challengesData.js?v=12977"></script>
-<script src="js/mindsetData.js?v=12977"></script>
-<script src="js/multiStepData.js?v=12977"></script>
-<script src="js/memorizeData.js?v=12977"></script>
-<script src="js/mode-engine.js?v=12977"></script>
-<script src="js/app-core.js?v=12977"></script>
-<script src="js/app-modes.js?v=12977"></script>
-<script src="js/app-handsfree.js?v=12977"></script>
-<script src="js/iap.js?v=12977"></script>
-<script src="js/app-system.js?v=12977"></script>
-<script src="js/app-ui.js?v=12977"></script>
-<script src="js/app-back.js?v=12977"></script>
+<script src="js/data.js?v=12978"></script>
+<script src="js/tagsData.js?v=12978"></script>
+<script src="js/programsData.js?v=12978"></script>
+<script src="js/challengesData.js?v=12978"></script>
+<script src="js/mindsetData.js?v=12978"></script>
+<script src="js/multiStepData.js?v=12978"></script>
+<script src="js/memorizeData.js?v=12978"></script>
+<script src="js/mode-engine.js?v=12978"></script>
+<script src="js/app-core.js?v=12978"></script>
+<script src="js/app-modes.js?v=12978"></script>
+<script src="js/app-handsfree.js?v=12978"></script>
+<script src="js/iap.js?v=12978"></script>
+<script src="js/app-system.js?v=12978"></script>
+<script src="js/app-ui.js?v=12978"></script>
+<script src="js/app-back.js?v=12978"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
