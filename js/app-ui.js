@@ -2886,6 +2886,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       // so these are load-bearing, not decoration.
       {
         id: 'assertivecomm2',
+        productId: 'se.deckstack.app.pack.assertivecomm2',
         title: 'Assertive Communication \u2014 Pt. 2',
         icon: 'ti-users-group',
         description: 'The other half of assertiveness: starting things, saying what you want, and bargaining with people you are equal to.',
@@ -2899,6 +2900,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       },
       {
         id: 'startingconversations4',
+        productId: 'se.deckstack.app.pack.startingconversations4',
         title: 'Starting Conversations — Pt. 4',
         icon: 'ti-flame',
         description: 'The openers that take nerve — approaching a group, saying the thing first, and starting something with no excuse to hide behind.',
@@ -2912,6 +2914,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       },
       {
         id: 'apologizing2',
+        productId: 'se.deckstack.app.pack.apologizing2',
         title: 'Apologizing — Pt. 2',
         icon: 'ti-heart-handshake',
         description: 'Beyond the correct apology — what to do when sorry is not enough, when it lands badly, and when the damage is older than the conversation.',
@@ -2929,6 +2932,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       // continue, or a buyer cannot tell what they are getting.
       {
         id: 'explainthings2',
+        productId: 'se.deckstack.app.pack.explainthings2',
         title: 'Explain Things — Pt. 2',
         icon: 'ti-bulb',
         description: 'For the explanations that do not go well the first time — the audience that already disagrees, the thing you know too well, and the moment you can see you have lost them.',
@@ -2942,6 +2946,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       },
       {
         id: 'buildingastory',
+        productId: 'se.deckstack.app.pack.buildingastory',
         title: 'Building a Story',
         icon: 'ti-book-2',
         description: 'The shape of a story — first sentence to last. Where it starts, where it turns, how it lands, and how to produce one in ten seconds.',
@@ -2955,6 +2960,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       },
       {
         id: 'reframing',
+        productId: 'se.deckstack.app.pack.reframing',
         title: 'Reframing',
         icon: 'ti-rotate',
         description: 'Same facts, a different reading of them. Four kinds of reframe, how to offer one so it helps, and how to know when not to.',
@@ -2979,6 +2985,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       // already has, on purpose: the way in should feel familiar.
       {
         id: 'difficult-conversations',
+        productId: 'se.deckstack.app.program.difficultconversations',
         title: 'Difficult Conversations',
         icon: 'ti-shield-bolt',
         description: 'Three steps through the conversations people avoid — asking and refusing, staying steady when they push back, and saying the hard thing.',
@@ -2995,6 +3002,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       // hold four packs at minLevel 'program' that exist nowhere else.
       {
         id: 'handling-passive-aggression',
+        productId: 'se.deckstack.app.program.handlingpassiveaggression',
         title: 'Handling Passive Aggression',
         icon: 'ti-message-circle-bolt',
         description: 'Five steps through the digs, hints and sighs \u2014 from the first reply to what you say when they deny it, turn it on you, or go quiet.',
@@ -3011,6 +3019,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       // nowhere else; the program is the only way to reach them.
       {
         id: 'handling-manipulation',
+        productId: 'se.deckstack.app.program.handlingmanipulation',
         title: 'Handling Manipulation',
         icon: 'ti-user-shield',
         description: 'Six steps through guilt trips, twisted facts, go-betweens, tears used as pressure and no-win traps \u2014 and how to see the pattern when it keeps happening.',
@@ -3042,6 +3051,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       // needed a tier and a shop entry to exist as something buyable.
       {
         id: 'brokenrecord::family',
+        productId: 'se.deckstack.app.bundle.brokenrecord.family',
         packKey: 'brokenrecord',
         bundleId: 'family',
         packTitle: 'Broken Record',
@@ -3076,6 +3086,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       // item names come from the Includes row rather than the prose.
       {
         id: 'kit-communicator',
+        productId: 'se.deckstack.app.kit.communicator',
         title: 'The Communicator Kit',
         icon: 'ti-packages',
         description: 'Every extra pack and every input bundle in one purchase, for less than the parts cost separately.',
@@ -3102,11 +3113,33 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
           { type: 'bundle', id: 'brokenrecord::family' },
         ],
       },
+      // v1.29.77 (Rikard 2026-10-25) — the programs on their own, between the
+      // Communicator Kit and the Complete Kit. 129 kr av 177 (~73 %).
+      {
+        id: 'kit-programs',
+        productId: 'se.deckstack.app.kit.programs',
+        title: 'The Programs Kit',
+        icon: 'ti-route',
+        description: 'All three guided programs in one purchase, for less than the three cost separately.',
+        price: '129 kr',
+        details: [
+          'All three programs in one purchase \u2014 Difficult Conversations, Handling Passive Aggression and Handling Manipulation. Bought one by one they come to {separately}.',
+          'Each program is a path of stages with a test at the end of each. Passing a test opens the next stage and releases its pack into your library for good.',
+          'Between them they hold thirteen packs that exist nowhere else in the app: Conflict Emotions, Giving Criticism and Receiving Feedback and Criticism, Responding to Passive Aggression Pt. 2 to Pt. 5, and all six packs of Handling Manipulation.',
+          'Everything unlocks immediately and works in all your training modes, including handsfree.',
+        ],
+        contents: [
+          { type: 'program', id: 'difficult-conversations' },
+          { type: 'program', id: 'handling-passive-aggression' },
+          { type: 'program', id: 'handling-manipulation' },
+        ],
+      },
       {
         id: 'kit-everything',
+        productId: 'se.deckstack.app.kit.complete',
         title: 'The Complete Kit',
         icon: 'ti-diamond',
-        description: 'Everything in Extended, including both programs — nothing left to buy.',
+        description: 'Everything in Extended today, including all three programs, in one purchase.',
         // 189 av 252 är 75 %. Steget upp från The Communicator Kit är 40 kr
         // för ett program som kostar 59 styckvis — uppgraderingen ska vara
         // det uppenbara valet för den som ändå står vid kassan.
@@ -3114,12 +3147,17 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         // kvar på 189 kr enligt Rikards beslut, så kitet är nu 189 av 311.
         // v1.29.76: Handling Manipulation (59 kr) tillkom; priset ligger kvar
         // på 189 kr (samma linje som v1.29.51 — Rikard kan ändra), 189 av 370.
-        price: '189 kr',
+        // v1.29.77 (Rikard 2026-10-25): 249 kr av 370 (~67 %). Trappan är
+        // Communicator 149 · Programs 129 · Complete 249, och Complete är
+        // billigare än de två andra kitten tillsammans (278 kr).
+        // Nytt material läggs tills vidare till i `contents` — alla som
+        // äger kitet får det. Ta ALDRIG bort något ur listan.
+        price: '249 kr',
         details: [
-          'Every single thing in Extended in one purchase: all six extra packs, the extra Broken Record situations, and all three programs \u2014 Difficult Conversations, Handling Passive Aggression and Handling Manipulation. Bought one by one it comes to {separately}.',
+          'Everything in Extended today, in one purchase: all six extra packs, the extra Broken Record situations, and all three programs \u2014 Difficult Conversations, Handling Passive Aggression and Handling Manipulation. Bought one by one it comes to {separately}.',
           'The programs are what make this different from The Communicator Kit. Each is a path of stages with a test at the end of each, and between them they hold thirteen packs that exist nowhere else in the app: Conflict Emotions, Giving Criticism and Receiving Feedback and Criticism, Responding to Passive Aggression Pt. 2 to Pt. 5, and all six packs of Handling Manipulation.',
           'Around it sit the six extra packs: the last step of the Starting Conversations ladder, the deep half of Apologizing, the second half of Explain Things, the shape of a story from first sentence to last, and Reframing \u2014 the other reading of the same facts. Plus the family pressure that makes Broken Record hard in the first place.',
-          'Everything unlocks immediately and works in all your training modes, including handsfree. After this there is nothing else in Extended to buy.',
+          'Everything unlocks immediately and works in all your training modes, including handsfree. New programs and packs are often added to the kit as well.',
         ],
         contents: [
           { type: 'pack',    id: 'assertivecomm2' },
@@ -3144,6 +3182,10 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         // sann utan att göra det billigare att låtsas vara ett klassrum.
         price: '99 kr',
         code: 'DEMO2026',
+        // v1.29.77 — inte i App Store: Apple tillåter inte egna koder som sänker
+        // priset. Döljs i iPhone-appen och tas bort i release-bygget. Kan senare
+        // bli ett Apple offer code-erbjudande.
+        webOnly: true,
         details: [
           'The same packs and bundles as The Communicator Kit, at a special rate for classroom and group use \u2014 unlocked with an access code from your teacher or course leader.',
           'Six extra packs and the extra Broken Record situations, {separately} bought separately, all available in every training mode. The programs are not included; they are in The Complete Kit.',
@@ -3163,6 +3205,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
 
   const LIFETIME = {
     id: 'lifetime-pro',
+    productId: 'se.deckstack.app.pro.lifetime',
     title: 'Lifetime Pro',
     icon: 'ti-infinity',
     price: '499 kr',
@@ -3226,7 +3269,9 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     return !item.code || getRedeemed().includes(item.code.toUpperCase());
   }
   function visibleItems(cat) {
-    return CATALOG[cat].filter(isRevealed);
+    // webOnly items (the Classroom Kit) are never offered in the iPhone app.
+    const native = !!(window.DSIAP && window.DSIAP.native());
+    return CATALOG[cat].filter(it => isRevealed(it) && !(native && it.webOnly));
   }
 
   // ── Kit contents and price maths (v1.26.80) ───────────────────────
@@ -3249,6 +3294,12 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   // contents. Any item without contents leaves the text untouched.
   function expandCopy(text, item) {
     if (!text || text.indexOf('{separately}') === -1) return text;
+    // In the app, the sum of the parts in the App Store's own currency.
+    if (nativeIAP()) {
+      const ids = (item.contents || []).map(ref => (itemFor(ref) || {}).productId).filter(Boolean);
+      const f = window.DSIAP.formatSum(ids);
+      if (f) return text.split('{separately}').join(f);
+    }
     return text.split('{separately}').join(separatelyTotal(item) + ' kr');
   }
 
@@ -3266,7 +3317,32 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   // The developer level `complete` is exempt: it is not a level any real user
   // can reach, and the store has to stay testable.
   const IAP_LIVE = false;
-  function iapOpen() { return IAP_LIVE || getAccessLevel() === 'complete'; }
+  // v1.29.77 — in the iPhone app the buttons buy for real through StoreKit
+  // (js/iap.js). IAP_LIVE stays false, so the web version is unchanged.
+  function nativeIAP() { return !!(window.DSIAP && window.DSIAP.available()); }
+  function iapOpen() { return IAP_LIVE || nativeIAP() || getAccessLevel() === 'complete'; }
+  // The App Store's own localized price when we have it ("149,00 kr",
+  // "$14.99"); Apple rejects apps that show a hardcoded price instead.
+  function priceFor(item) {
+    return (nativeIAP() && item && item.productId && window.DSIAP.priceString(item.productId)) || (item && item.price);
+  }
+
+  // Buys one App Store product. The entitlement check that follows a purchase
+  // (iap.js → refresh → onChange) is what unlocks the content, so nothing
+  // here writes ownership itself.
+  let purchasing = false;
+  async function purchaseNative(productId, title) {
+    if (purchasing) return;
+    purchasing = true;
+    try {
+      const r = await window.DSIAP.buy(productId);
+      if (r.ok) { if (window.showToast) showToast((title || 'Purchase') + ' added.'); }
+      else if (r.error && window.showToast) showToast(r.error);
+    } finally {
+      purchasing = false;
+      renderExtendedStore();
+    }
+  }
 
   function activateBundle(item) {
     const bKey = `bundles:${item.packKey}`;
@@ -3278,6 +3354,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
 
   function buy(type, item) {
     if (!iapOpen()) return;            // se IAP_LIVE ovan
+    if (nativeIAP() && item.productId) { purchaseNative(item.productId, item.title); return; }
     const o = getOwned();
     const add = id => { if (!o.includes(id)) o.push(id); };
     add(item.id);
@@ -3373,7 +3450,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       ? isOwned(item.id)
       : (isOwned(item.id) || getAccessLevel() === 'complete');
     ov.querySelector('#extInfoPrice').style.display = owned ? 'none' : '';
-    ov.querySelector('#extInfoPrice').textContent = item.price;
+    ov.querySelector('#extInfoPrice').textContent = priceFor(item);
     const buyBtn = ov.querySelector('#extInfoBuy');
     const ownedEl = ov.querySelector('#extInfoOwned');
     buyBtn.style.display = owned ? 'none' : '';
@@ -3384,7 +3461,9 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     buyBtn.classList.toggle('is-soon', !open);
     buyBtn.onclick = () => {
       if (!open) return;
-      if (type === 'lifetime') {
+      if (type === 'lifetime' && nativeIAP() && item.productId) {
+        purchaseNative(item.productId, 'Lifetime Pro');
+      } else if (type === 'lifetime') {
         const o = getOwned();
         if (!o.includes(item.id)) o.push(item.id);
         setOwned(o);
@@ -3427,7 +3506,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
                <button class="ext-info-btn" aria-label="More about ${item.title}"><i class="ti ti-info-circle" aria-hidden="true"></i> Info</button>
                <div class="ext-store-owned"><i class="ti ti-check" aria-hidden="true"></i> Added</div>
              </div>`
-          : `<div class="ext-store-price">${item.price}</div>
+          : `<div class="ext-store-price">${priceFor(item)}</div>
              <div class="ext-store-actions">
                <button class="ext-info-btn" aria-label="More about ${item.title}"><i class="ti ti-info-circle" aria-hidden="true"></i> Info</button>
                <button class="ext-store-btn${iapOpen() ? '' : ' is-soon'}"${iapOpen() ? '' : ' disabled'}>${iapOpen() ? 'Add' : 'Coming soon'}</button>
@@ -3461,7 +3540,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
                <button class="ext-info-btn ext-info-btn--light" id="extLifetimeInfo"><i class="ti ti-info-circle" aria-hidden="true"></i> Info</button>
                <div class="ext-lifetime-owned"><i class="ti ti-check" aria-hidden="true"></i> Lifetime Pro active</div>
              </div>`
-          : `<div class="ext-lifetime-price">${LIFETIME.price}</div>
+          : `<div class="ext-lifetime-price">${priceFor(LIFETIME)}</div>
              <div class="ext-store-actions">
                <button class="ext-info-btn ext-info-btn--light" id="extLifetimeInfo"><i class="ti ti-info-circle" aria-hidden="true"></i> Info</button>
                <button class="ext-lifetime-btn${iapOpen() ? '' : ' is-soon'}" id="extLifetimeBuy"${iapOpen() ? '' : ' disabled'}>${iapOpen() ? 'Get Lifetime Pro' : 'Coming soon'}</button>
@@ -3470,8 +3549,19 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       </div>`;
     const infoBtn = host.querySelector('#extLifetimeInfo');
     if (infoBtn) infoBtn.addEventListener('click', () => openExtInfo('lifetime', LIFETIME));
+    // Apple requires a visible way to restore earlier purchases.
+    if (window.DSIAP && window.DSIAP.native()) {
+      const r = document.createElement('button');
+      r.className = 'ext-restore-link';
+      r.textContent = 'Restore purchases';
+      r.style.cssText = 'display:block;margin:12px auto 0;background:none;border:none;color:inherit;opacity:.8;text-decoration:underline;font-size:13px;cursor:pointer;';
+      r.addEventListener('click', () => window.dsRestorePurchases && window.dsRestorePurchases());
+      host.appendChild(r);
+    }
     const btn = host.querySelector('#extLifetimeBuy');
-    if (btn && iapOpen()) btn.addEventListener('click', () => {
+    if (btn && iapOpen() && nativeIAP() && LIFETIME.productId) {
+      btn.addEventListener('click', () => purchaseNative(LIFETIME.productId, 'Lifetime Pro'));
+    } else if (btn && iapOpen()) btn.addEventListener('click', () => {
       const o = getOwned();
       if (!o.includes(LIFETIME.id)) o.push(LIFETIME.id);
       setOwned(o);
@@ -3569,6 +3659,62 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   // Expose so showTab can trigger re-render
   window.renderExtendedStore = renderExtendedStore;
 
+  // ── App Store entitlements (v1.29.77) ─────────────────────────────
+  // Turns the product ids StoreKit says this Apple ID owns into catalog ids.
+  // A kit expands to its CURRENT contents every time, so anything later
+  // added to a kit reaches everyone who bought it (Rikard 2026-10-25).
+  // Written to ds_iap_owned / ds_iap_pro, which app-system.js reads; the old
+  // ds_extended_owned is never touched, so a refund simply drops out here.
+  function allProductIds() {
+    const ids = [];
+    CAT_ORDER.forEach(cat => CATALOG[cat].forEach(it => { if (it.productId && !it.webOnly) ids.push(it.productId); }));
+    if (LIFETIME.productId) ids.push(LIFETIME.productId);
+    return ids;
+  }
+  function applyEntitlements(productIds) {
+    const set = new Set(productIds || []);
+    const owned = [];
+    const add = id => { if (!owned.includes(id)) owned.push(id); };
+    CAT_ORDER.forEach(cat => CATALOG[cat].forEach(it => {
+      if (!it.productId || !set.has(it.productId)) return;
+      add(it.id);
+      if (cat === 'bundles') activateBundle(it);
+      if (cat === 'kits') (it.contents || []).forEach(c => {
+        add(c.id);
+        if (c.type === 'bundle') { const b = CATALOG.bundles.find(x => x.id === c.id); if (b) activateBundle(b); }
+      });
+    }));
+    if (LIFETIME.productId && set.has(LIFETIME.productId)) add(LIFETIME.id);
+    const pro = !!(window.DSIAP && (set.has(window.DSIAP.PRO_YEARLY) || set.has(window.DSIAP.PRO_LIFETIME)));
+    try {
+      localStorage.setItem('ds_iap_owned', JSON.stringify(owned));
+      localStorage.setItem('ds_iap_pro', pro ? '1' : '0');
+    } catch (e) {}
+    if (window.accessLevel && window.accessLevel.applyAccessLevel) window.accessLevel.applyAccessLevel();
+    if (window.accessLevel && window.accessLevel.updateNavUpgradeBtn) window.accessLevel.updateNavUpgradeBtn();
+    if (window.renderProgramList) window.renderProgramList();
+    if (window.dsRenderUpgradePlans) window.dsRenderUpgradePlans();
+    renderExtendedStore();
+  }
+  window.dsRestorePurchases = async function () {
+    if (!nativeIAP()) { if (window.showToast) showToast('Purchases are not available right now.'); return; }
+    if (window.showToast) showToast('Checking your purchases\u2026');
+    const r = await window.DSIAP.restore();
+    if (window.showToast) showToast(r.error ? r.error : (r.count ? 'Your purchases are restored.' : 'No earlier purchases were found for this Apple ID.'));
+  };
+  if (window.DSIAP) {
+    window.DSIAP.onChange(applyEntitlements);
+    if (window.DSIAP.native()) {
+      // The cached list first, so the app opens unlocked even offline; then
+      // ask StoreKit, which re-applies through onChange when it answers.
+      applyEntitlements(window.DSIAP.entitled());
+      window.DSIAP.init(allProductIds()).then(() => {
+        renderExtendedStore();
+        if (window.dsRenderUpgradePlans) window.dsRenderUpgradePlans();
+      });
+    }
+  }
+
   const searchInput = document.getElementById('extSearchInput');
   if (searchInput) searchInput.addEventListener('input', runExtSearch);
 
@@ -3587,4 +3733,92 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     }).observe(extScreen, { attributes: true, attributeFilter: ['style'] });
   }
 
+})();
+
+// ─── PRO UPGRADE SCREEN — REAL PURCHASES (v1.29.77) ─────────────────────────
+// In the iPhone app the trial button and the two plan cards buy through
+// StoreKit (js/iap.js). Apple's subscription rules (guideline 3.1.2) want the
+// price, the period, the free trial and the automatic renewal stated before
+// the purchase, plus Restore and links to the terms and privacy policy —
+// the links are already added under this screen by initLegalLinks().
+// In the browser nothing here runs and the screen keeps its "coming soon".
+(function initUpgradePurchases() {
+  const screen = document.getElementById('upgradeScreen');
+  if (!screen || !window.DSIAP) return;
+  const cta      = document.getElementById('upgradeCtaBtn');
+  const ctaSub   = screen.querySelector('.upgrade-cta-sub');
+  const trialBox = screen.querySelector('.upgrade-trial');
+  const plans    = screen.querySelectorAll('.upgrade-plan');
+  const foot     = screen.querySelector('.upgrade-plan-foot');
+  if (!cta || plans.length < 2) return;
+  const yearlyCard = plans[0], lifeCard = plans[1];
+
+  let legal = null, extra = null, busy = false;
+
+  async function buyPro(productId, title) {
+    if (busy) return;
+    busy = true;
+    try {
+      const r = await window.DSIAP.buy(productId);
+      if (r.ok && window.showToast) showToast(title + ' is active. Welcome to Pro.');
+      else if (r.error && window.showToast) showToast(r.error);
+    } finally { busy = false; render(); }
+  }
+
+  function render() {
+    const D = window.DSIAP;
+    if (!D.available()) return;                 // web, or plugin not up yet
+    const Y = D.PRO_YEARLY, L = D.PRO_LIFETIME;
+    const yPrice = D.priceString(Y), lPrice = D.priceString(L);
+    const period = D.periodText(Y) || 'year';
+    const trial  = D.trialText(Y);
+    const ids    = D.entitled();
+    const hasYearly = ids.includes(Y), hasLife = ids.includes(L);
+
+    yearlyCard.querySelector('.upgrade-plan-price').textContent = yPrice || '';
+    lifeCard.querySelector('.upgrade-plan-price').textContent = lPrice || '';
+    yearlyCard.querySelector('.upgrade-plan-note').textContent = 'Renews every ' + period;
+    [yearlyCard, lifeCard].forEach(c => { c.style.cursor = 'pointer'; c.setAttribute('role', 'button'); });
+    yearlyCard.onclick = () => { if (!hasYearly && !hasLife) buyPro(Y, 'Deckstack Pro'); };
+    lifeCard.onclick   = () => { if (!hasLife) buyPro(L, 'Lifetime Pro'); };
+
+    if (hasLife || hasYearly) {
+      if (trialBox) trialBox.style.display = 'none';
+      cta.textContent = hasLife ? 'Lifetime Pro is active' : 'Manage subscription';
+      cta.disabled = !!hasLife;
+      cta.onclick = hasLife ? null : () => D.manage();
+      if (ctaSub) ctaSub.textContent = hasLife ? 'Thank you — Pro is yours for good.' : 'Pro is active. Change or cancel it in your App Store account.';
+      if (foot) foot.textContent = hasLife ? '' : 'Switching to Lifetime ends the need for a subscription — cancel the yearly plan in your App Store account afterwards.';
+    } else {
+      if (trialBox) {
+        trialBox.style.display = trial ? '' : 'none';
+        const t = trialBox.querySelector('.upgrade-trial-title');
+        const s = trialBox.querySelector('.upgrade-trial-sub');
+        if (t && trial) t.textContent = 'Start with a free ' + trial;
+        if (s && trial) s.textContent = 'Full Pro access for the first ' + trial + '. Cancel any time before it ends and you pay nothing.';
+      }
+      cta.disabled = false;
+      cta.textContent = trial ? 'Start your free ' + trial : 'Get Pro for ' + (yPrice || '') + ' / ' + period;
+      cta.onclick = () => buyPro(Y, 'Deckstack Pro');
+      if (ctaSub) ctaSub.textContent = trial
+        ? 'Then ' + (yPrice || '') + ' per ' + period + '. Renews automatically until you cancel.'
+        : 'Renews automatically every ' + period + ' until you cancel.';
+      if (foot) foot.textContent = 'Or tap a plan: one ' + period + ' at a time, or Lifetime for a single payment.';
+    }
+
+    if (!legal) {
+      legal = document.createElement('div');
+      legal.className = 'upgrade-legal';
+      legal.style.cssText = 'font-size:11px;line-height:1.45;opacity:.75;margin:14px 4px 0;text-align:center;';
+      legal.textContent = 'Payment is charged to your Apple ID at confirmation of purchase. The subscription renews automatically at the same price unless it is cancelled at least 24 hours before the end of the current period. You can manage or cancel it in your App Store account settings. Lifetime Pro is a one-time purchase.';
+      extra = document.createElement('button');
+      extra.textContent = 'Restore purchases';
+      extra.style.cssText = 'display:block;margin:10px auto 0;background:none;border:none;color:inherit;text-decoration:underline;font-size:13px;cursor:pointer;';
+      extra.addEventListener('click', () => window.dsRestorePurchases && window.dsRestorePurchases());
+      const card = screen.querySelector('.upgrade-price-card');
+      if (card) { card.appendChild(legal); card.appendChild(extra); }
+    }
+  }
+  window.dsRenderUpgradePlans = render;
+  render();
 })();

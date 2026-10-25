@@ -968,6 +968,13 @@ applyInputCounterVisibility();
         if (owned.includes('lifetime-pro')) return 'pro';
       } catch {}
     }
+    // v1.29.77 — an active App Store subscription or Lifetime Pro bought in
+    // the iPhone app. ds_iap_pro is written by the store from StoreKit's
+    // current entitlements (iap.js), so it turns off again when a
+    // subscription lapses or is refunded. Deliberately OUTSIDE the
+    // dev_level_forced test above: expireBetaGrant() also sets that flag, and
+    // a tester whose beta code ran out must still get the Pro they paid for.
+    if (stored === 'freemium' && localStorage.getItem('ds_iap_pro') === '1') return 'pro';
     return stored;
   }
 
@@ -1261,9 +1268,16 @@ applyInputCounterVisibility();
     return LEVEL_ORDER.indexOf(level);
   }
 
+  // v1.29.77 — two sources of ownership. ds_extended_owned is what the store
+  // has always written (the web version, the developer level, old test data).
+  // ds_iap_owned is written by the store from REAL App Store entitlements
+  // (iap.js → applyEntitlements in app-ui.js), already expanded from kits to
+  // their contents, and rewritten on every check so a refund takes it back.
   function getExtendedOwned() {
-    try { return JSON.parse(localStorage.getItem('ds_extended_owned')) || []; }
-    catch { return []; }
+    let a = [], b = [];
+    try { a = JSON.parse(localStorage.getItem('ds_extended_owned')) || []; } catch {}
+    try { b = JSON.parse(localStorage.getItem('ds_iap_owned')) || []; } catch {}
+    return b.length ? Array.from(new Set(a.concat(b))) : a;
   }
 
   // ── Program routes: is this pack delivered via a Program, and if so is
@@ -5284,6 +5298,7 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.77', date: 'October 2026', title: 'Real App Store purchases in the iPhone app', audience: 'dev', items: ['New <code>js/iap.js</code> on the Capacitor plugin <code>@capgo/native-purchases</code> (StoreKit 2, verified on the device, no server). Products, prices, buying, Restore and Manage subscription. Inert on the web: the store there keeps its \u201cComing soon\u201d.', 'Every store item has a permanent <code>productId</code> (se.deckstack.app.pack.*, .program.*, .bundle.*, .kit.*, .pro.lifetime, .pro.yearly). Entitlements are rewritten on every check into <code>ds_iap_owned</code> / <code>ds_iap_pro</code>, so a refund or a lapsed subscription takes access back; kits expand to their CURRENT contents, so anything added to a kit reaches everyone who owns it.', 'Pro screen: free-trial button, yearly and Lifetime plans buy for real, with the App Store\u2019s localized prices, the renewal disclosure Apple requires, Restore purchases and Manage subscription.', 'New <strong>The Programs Kit</strong> (129 kr, the three programmes). <strong>The Complete Kit</strong> 249 kr (was 189), copy now says \u201ceverything in Extended today\u201d. Classroom Kit is web-only (hidden in the app).', 'Release build (tools/build-release.js) now removes the access-code field and empties ACCESS_CODES (guideline 3.1.1), removes web-only store items, and drops the tag rows of removed packs.'] },
   { version: 'v1.29.76', date: 'October 2026', title: 'Handling Manipulation \u2014 a third Extended programme', audience: 'dev', items: ['New programme <code>handling-manipulation</code>, <strong>extended</strong>, 59 kr in the store. Six Stages, one pack each: Handling Manipulation Pt. 1\u20135 and Advanced (<code>manipulation1</code>\u2013<code>manipulation5</code>, <code>manipulationadv</code>), which move from <strong>complete</strong> to <strong>program</strong> and so reach the release build for the first time.', 'Six new checkpoints, <code>hm-cp1</code>\u2013<code>hm-cp6</code>, 40 questions each, 20 drawn, 30 s. Written to the balance rule from the sweep: the right answer is the longest in at most 12 of 40 and the shortest in 8\u201312; positions 10/10/10/10.', 'The Complete Kit now contains all three programmes; price unchanged at 189 kr (same line as v1.29.51), so it is 189 of 370 bought separately.'] },
   { version: 'v1.29.75', date: 'October 2026', title: 'Checkpoint sweep', audience: 'dev', items: ['All 31 checkpoints in the reachable programs (Conversation Foundations, Listening in Depth, Say It Well, Warmth &amp; Connection, Difficult Conversations, Handling Passive Aggression, Opening a Conversation, Persuasion &amp; Negotiation, Humour) rewritten so the right answer can no longer be found by picking the longest option. Before: the right answer was the longest in 27\u201351 of 40\u201360 questions. Now: the longest in 2\u201315 and the shortest about as often.', 'Questions and right answers unchanged in meaning; wrong options rewritten to be as long and as plausible, and some right answers tightened. A few wrong options that were arguably also right were replaced. Stored answer positions spread evenly A\u2013D (the app shuffles them anyway).'] },
   { version: 'v1.29.74', date: 'October 2026', title: 'Build check', audience: 'dev', items: ['Version bump only, so the first build from the new project folder on the Mac (<code>~/DeckstackApp</code>, moved out of iCloud Documents) can be told apart from the one already on the phone. No content changes.'] },
