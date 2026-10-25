@@ -3822,3 +3822,19 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   window.dsRenderUpgradePlans = render;
   render();
 })();
+
+// ─── SETTINGS: APP STORE CODE + RESTORE (v1.29.78) ───────────────────────────
+(function initIapSettings() {
+  if (!window.DSIAP || !window.DSIAP.native()) return;   // web: rows stay hidden
+  const redeemRow = document.getElementById('iapRedeemRow');
+  const restoreRow = document.getElementById('iapRestoreRow');
+  if (redeemRow) redeemRow.style.display = '';
+  if (restoreRow) restoreRow.style.display = '';
+  const rb = document.getElementById('iapRedeemBtn');
+  if (rb) rb.addEventListener('click', async () => {
+    const r = await window.DSIAP.redeemCode();
+    if (r.error && window.showToast) showToast(r.error);
+  });
+  const sb = document.getElementById('iapRestoreBtn');
+  if (sb) sb.addEventListener('click', () => window.dsRestorePurchases && window.dsRestorePurchases());
+})();

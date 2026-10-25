@@ -156,6 +156,20 @@
     return { ok: true, count: ids.length };
   }
 
+  // Apple's own sheet for offer codes (newsletter gifts, codes said out loud).
+  // A redeemed code arrives as a normal transaction, so the transactionUpdated
+  // listener unlocks it; the refreshes below catch it if the event is missed.
+  async function redeemCode() {
+    if (!ready) return { error: 'Codes can only be redeemed in the iPhone app.' };
+    try {
+      await plugin.presentOfferCodeRedeemSheet();
+      setTimeout(refresh, 3000); setTimeout(refresh, 15000);
+      return { ok: true };
+    } catch (e) {
+      return { error: 'The code sheet could not open. It needs iOS 16.3 or later.' };
+    }
+  }
+
   async function manage() {
     if (!ready) return false;
     try { await plugin.manageSubscriptions(); return true; } catch (e) { return false; }
@@ -215,7 +229,7 @@
     PRO_YEARLY, PRO_LIFETIME,
     available: () => ready,
     native: isNativePlatform,
-    init, refresh, buy, restore, manage,
+    init, refresh, buy, restore, manage, redeemCode,
     entitled, proActive, product, priceString, trialText, periodText, formatSum,
     onChange: fn => { if (typeof fn === 'function') listeners.push(fn); },
     diagnostics: () => ({ nativePlatform: isNativePlatform(), pluginFound: !!plugin, ready, note,
