@@ -2467,16 +2467,23 @@ body.pb-enabled .divider::after {
   color: var(--ds-txt2);
   margin-top: 6px;
 }
+/* v1.29.80 — side by side while both prices fit, otherwise stacked. A long
+   App Store price (another currency) used to push the cards out of the
+   white frame. flex-basis 0 keeps them equal width; min-width max-content
+   makes the second card wrap instead of overflowing. */
 .upgrade-plans {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin-top: 18px;
 }
 .upgrade-plan {
+  flex: 1 1 0;
+  min-width: max-content;
+  box-sizing: border-box;
   background: var(--ds-border-sub);
   border-radius: 12px;
-  padding: 12px 10px;
+  padding: 12px 14px;
 }
 .upgrade-plan-name {
   font-size: 12px;
@@ -2486,6 +2493,7 @@ body.pb-enabled .divider::after {
   letter-spacing: 0.4px;
 }
 .upgrade-plan-price {
+  white-space: nowrap;
   font-size: 22px;
   font-weight: 800;
   color: var(--ds-txt);
@@ -3548,7 +3556,12 @@ body.feedback-mode    .al-bar { display: none !important; }
    right-aligned regardless means the row looks the same before and after the
    purchase, and matches how a bought pack or program renders. (v1.26.62) */
 .ext-lifetime-bottom .ext-store-actions { margin-left: auto; }
-.ext-lifetime-price { font-size: 18px; font-weight: 800; color: #F2A25C; }
+.ext-lifetime-price { font-size: 18px; font-weight: 800; color: #F2A25C; white-space: nowrap; }
+/* v1.29.80 — price with Info under it on the left, the buy button on the
+   right, so the button has room for "Get Lifetime Pro" on one line. */
+.ext-lifetime-bottom { gap: 12px; }
+.ext-lifetime-left { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.ext-lifetime-bottom > .ext-lifetime-btn { margin-left: auto; padding: 12px 20px; }
 .ext-lifetime-btn {
   background: linear-gradient(135deg, var(--ds-hero-a), var(--ds-hero-b));
   color: #fff; border: none; border-radius: 10px;
