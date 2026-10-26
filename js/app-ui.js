@@ -3540,11 +3540,11 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
                <button class="ext-info-btn ext-info-btn--light" id="extLifetimeInfo"><i class="ti ti-info-circle" aria-hidden="true"></i> Info</button>
                <div class="ext-lifetime-owned"><i class="ti ti-check" aria-hidden="true"></i> Lifetime Pro active</div>
              </div>`
-          : `<div class="ext-lifetime-price">${priceFor(LIFETIME)}</div>
-             <div class="ext-store-actions">
+          : `<div class="ext-lifetime-left">
+               <div class="ext-lifetime-price">${priceFor(LIFETIME)}</div>
                <button class="ext-info-btn ext-info-btn--light" id="extLifetimeInfo"><i class="ti ti-info-circle" aria-hidden="true"></i> Info</button>
-               <button class="ext-lifetime-btn${iapOpen() ? '' : ' is-soon'}" id="extLifetimeBuy"${iapOpen() ? '' : ' disabled'}>${iapOpen() ? 'Get Lifetime Pro' : 'Coming soon'}</button>
-             </div>`
+             </div>
+             <button class="ext-lifetime-btn${iapOpen() ? '' : ' is-soon'}" id="extLifetimeBuy"${iapOpen() ? '' : ' disabled'}>${iapOpen() ? 'Get Lifetime Pro' : 'Coming soon'}</button>`
         }
       </div>`;
     const infoBtn = host.querySelector('#extLifetimeInfo');

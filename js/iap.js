@@ -177,7 +177,31 @@
 
   // ── Product info ──────────────────────────────────────────────────────────
   function product(id) { return products[id] || null; }
-  function priceString(id) { const p = products[id]; return p ? p.priceString : null; }
+
+  // v1.29.80 — StoreKit's own priceString follows the phone's language, so an
+  // English-language iPhone in Sweden shows "SEK 149.00", which was too wide
+  // for the plan cards. The price is formatted here instead: whole amounts
+  // without decimals, and the Nordic kronor as "149 kr" (as on the web).
+  // Falls back to StoreKit's string if anything is missing.
+  const KR = ['SEK', 'NOK', 'DKK'];
+  function formatPrice(amount, cur) {
+    if (typeof amount !== 'number' || !isFinite(amount) || !cur) return null;
+    const whole = Math.abs(amount - Math.round(amount)) < 0.005;
+    const digits = whole ? 0 : 2;
+    try {
+      if (KR.includes(cur)) {
+        const n = new Intl.NumberFormat('sv-SE', { minimumFractionDigits: digits, maximumFractionDigits: digits }).format(amount);
+        return n + '\u00a0kr';
+      }
+      return new Intl.NumberFormat(undefined, { style: 'currency', currency: cur,
+        minimumFractionDigits: digits, maximumFractionDigits: digits }).format(amount);
+    } catch (e) { return null; }
+  }
+  function priceString(id) {
+    const p = products[id];
+    if (!p) return null;
+    return formatPrice(p.price, p.currencyCode) || p.priceString || null;
+  }
 
   function periodWords(per) {
     if (!per) return null;
@@ -215,9 +239,7 @@
       sum += p.price; cur = cur || p.currencyCode;
     }
     if (!cur) return null;
-    try {
-      return new Intl.NumberFormat(undefined, { style: 'currency', currency: cur, maximumFractionDigits: 0 }).format(sum);
-    } catch (e) { return null; }
+    return formatPrice(Math.round(sum), cur);
   }
 
   function proActive() {
