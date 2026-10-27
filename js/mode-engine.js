@@ -997,7 +997,7 @@ const DS = (function () {
   // Cloudflare R2 bucket, ending in "/". index.json and the .dsvoice packages
   // made by tools/voice-gen.js live there. Empty = downloads not set up yet
   // (a developer can try another address with localStorage ds_studio_base).
-  const STUDIO_BASE = '';
+  const STUDIO_BASE = 'https://voices.deckstack.app/';   // Cloudflare R2 bucket deckstack-voices (2026-10-27)
   const DSStudio = (function () {
     const KEY = 'ds_studio_voices';
     const PREFIX = 'studio:';
@@ -1014,7 +1014,7 @@ const DS = (function () {
       if (m) return m[2] + ' (' + m[1] + ')';
       const w = String(voice).match(/^win-(.+)$/);
       if (w) return w[1] + ' (Windows test)';
-      const e = String(voice).match(/^el-([^@]+)(?:@(.+))?$/);   // ElevenLabs, optional @model
+      const e = String(voice).match(/^el-([^@~]+)(?:~[\d.]+)?(?:@(.+))?$/);   // ElevenLabs, optional ~speed and @model
       if (e) return e[1] + (e[2] ? ' (ElevenLabs, ' + e[2].replace(/^eleven_/, '') + ')' : ' (ElevenLabs)');
       return String(voice);
     }
