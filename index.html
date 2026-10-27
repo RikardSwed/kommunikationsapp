@@ -7,11 +7,11 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Deckstack" />
-  <link rel="manifest" href="manifest.json?v=12980" />
+  <link rel="manifest" href="manifest.json?v=12981" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12980" />
-  <link rel="stylesheet" href="css/tabler/tabler-icons.min.css?v=12980" />
+  <link rel="stylesheet" href="css/style.css?v=12981" />
+  <link rel="stylesheet" href="css/tabler/tabler-icons.min.css?v=12981" />
 </head>
 <body>
 
@@ -3071,6 +3071,15 @@
       <label style="font-size:13px; color:#888;">Prompt timers (Pro nudge &amp; rating)</label>
       <button id="devResetPrompts" style="font-size:13px; color:#c0392b; background:#fdf0ee; border:1px solid #f5c6c2; border-radius:8px; padding:6px 12px; cursor:pointer;">Reset</button>
     </div>
+    <!-- 2026-10-26 — STUDIO VOICES (BETA). Off by default. On: recorded
+         voices that are on the phone appear in the handsfree voice picker and
+         are played from files (iOS app only). Off: everything as before.
+         Removed with the rest of this section in the release build, where
+         mode-engine.js's STUDIO_ALLOWED is also set to false. -->
+    <div class="settings-row">
+      <label>Studio voices (beta)</label>
+      <label class="toggle"><input type="checkbox" id="devStudioVoicesToggle" /><span class="toggle-slider"></span></label>
+    </div>
     <div class="settings-row">
       <label>Hide developer settings</label>
       <button id="hideDevBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Hide</button>
@@ -3286,21 +3295,22 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12980"></script>
-<script src="js/tagsData.js?v=12980"></script>
-<script src="js/programsData.js?v=12980"></script>
-<script src="js/challengesData.js?v=12980"></script>
-<script src="js/mindsetData.js?v=12980"></script>
-<script src="js/multiStepData.js?v=12980"></script>
-<script src="js/memorizeData.js?v=12980"></script>
-<script src="js/mode-engine.js?v=12980"></script>
-<script src="js/app-core.js?v=12980"></script>
-<script src="js/app-modes.js?v=12980"></script>
-<script src="js/app-handsfree.js?v=12980"></script>
-<script src="js/iap.js?v=12980"></script>
-<script src="js/app-system.js?v=12980"></script>
-<script src="js/app-ui.js?v=12980"></script>
-<script src="js/app-back.js?v=12980"></script>
+<script src="js/data.js?v=12981"></script>
+<script src="js/tagsData.js?v=12981"></script>
+<script src="js/programsData.js?v=12981"></script>
+<script src="js/challengesData.js?v=12981"></script>
+<script src="js/mindsetData.js?v=12981"></script>
+<script src="js/multiStepData.js?v=12981"></script>
+<script src="js/memorizeData.js?v=12981"></script>
+<script src="js/speech-text.js?v=12981"></script>
+<script src="js/mode-engine.js?v=12981"></script>
+<script src="js/app-core.js?v=12981"></script>
+<script src="js/app-modes.js?v=12981"></script>
+<script src="js/app-handsfree.js?v=12981"></script>
+<script src="js/iap.js?v=12981"></script>
+<script src="js/app-system.js?v=12981"></script>
+<script src="js/app-ui.js?v=12981"></script>
+<script src="js/app-back.js?v=12981"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
