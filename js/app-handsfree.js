@@ -136,6 +136,7 @@ initHandsfreeVoicePickers();
     window.DSStudio.setEnabled(t.checked);
     initHandsfreeVoicePickers();
     renderStudioPanels();
+    if (window.dsVoicesSync) window.dsVoicesSync();
   });
 })();
 
@@ -167,12 +168,6 @@ async function renderStudioPanels() {
       panel.className = 'studio-panel';
       row.insertAdjacentElement('afterend', panel);
       panel.addEventListener('click', onStudioPanelClick);
-      panel.addEventListener('change', e => {
-        if (e.target && e.target.classList.contains('studio-cellular')) {
-          S.setCellular(e.target.checked);
-          document.querySelectorAll('.studio-cellular').forEach(c => { c.checked = e.target.checked; });
-        }
-      });
     }
     panel.innerHTML = '<div class="studio-panel-note">Looking for studio voices…</div>';
   });
@@ -197,8 +192,8 @@ async function renderStudioPanels() {
       return '<div class="studio-row"><span class="studio-name">' + esc(S.label(v.voice)) + '</span><span class="studio-actions">' + action + '</span></div>';
     }).join('') : '<div class="studio-panel-note">No studio voices for this pack yet.</div>';
   }
-  const foot = '<label class="studio-cell"><input type="checkbox" class="studio-cellular"' + (S.cellular() ? ' checked' : '') + '> Download over mobile data</label>' +
-               '<div class="studio-panel-note">Studio voices are AI-generated. A downloaded voice is chosen under Voice above.</div>';
+  // v1.29.85 — the mobile-data choice lives in Library → Voices → ⚙ now.
+  const foot = '<div class="studio-panel-note">A downloaded voice is chosen under Voice above. All studio voices and their settings: Library → Voices. Studio voices are AI-generated.</div>';
   document.querySelectorAll('.studio-panel').forEach(p => {
     p.innerHTML = '<div class="studio-panel-title">Studio voices for this pack</div>' + body + foot;
   });
@@ -216,7 +211,7 @@ async function onStudioPanelClick(e) {
     // Show the progress while it runs; the plugin reports per cent.
     const tick = setInterval(() => {
       const pct = S.progress[voice + '/' + pack];
-      document.querySelectorAll('.studio-panel [data-voice="' + CSS.escape(voice) + '"][data-act="download"]')
+      document.querySelectorAll('.studio-panel [data-voice="' + String(voice).replace(/["\\]/g, '\\$&') + '"][data-act="download"]')
         .forEach(b => { b.textContent = 'Downloading ' + (pct || 0) + ' %'; b.disabled = true; });
     }, 300);
     try {
@@ -226,7 +221,7 @@ async function onStudioPanelClick(e) {
       const msg = (err && err.message) || String(err);
       const offline = /offline|not connected|cellular|internet/i.test(msg);
       if (window.showToast) window.showToast(offline && !S.cellular()
-        ? 'No Wi-Fi. Connect to Wi-Fi, or allow mobile data below.'
+        ? 'No Wi-Fi. Connect to Wi-Fi, or allow mobile data in Library → Voices → ⚙.'
         : 'The download did not finish. Try again.');
     } finally { clearInterval(tick); }
   } else if (act === 'remove') {
