@@ -129,11 +129,14 @@
       .sort((a, b) => packOrder(a.pack) - packOrder(b.pack));
     const rows = packs.map(({ pack, acc }) => {
       const mine = inst.filter(r => r.pack === pack);
+      const stale = mine.some(r => S.outdated(idx, r));
       // v1.29.86 — one symbol instead of names and sizes (Rikard): a cloud
       // with an arrow = can be downloaded, a green tick = something is on
       // the phone. Which voices, and how big, is in the sheet behind a tap.
       let status;
       if (acc === 'pro') status = '<span class="pack-lock-badge pack-lock-badge--pro">Pro</span>';
+      // v1.29.89 — a newer recording on the server: orange round arrow.
+      else if (stale) status = '<i class="ti ti-refresh voices-icon voices-update" aria-label="Update available"></i>';
       else if (mine.length) status = '<i class="ti ti-circle-check voices-icon voices-ok" aria-label="Downloaded"></i>';
       else status = '<i class="ti ti-cloud-download voices-icon" aria-label="Not downloaded"></i>';
       return '<button class="voices-row" type="button" data-pack="' + esc(pack) + '" data-acc="' + acc + '">' +
@@ -165,12 +168,16 @@
   }
 
   async function openPackSheet(pack, voices) {
-    const inst = await S.installed();
-    const have = new Set(inst.filter(r => r.pack === pack).map(r => r.voice));
+    const [inst, idx] = await Promise.all([S.installed(), S.index()]);
+    const mineRecs = inst.filter(r => r.pack === pack);
+    const have = new Set(mineRecs.map(r => r.voice));
+    const stale = new Set(mineRecs.filter(r => S.outdated(idx, r)).map(r => r.voice));
     const rows = voices.map(v => {
       const pct = S.progress[v.voice + '/' + pack];
       const act = pct != null
         ? '<span class="studio-state">Downloading ' + pct + ' %</span>'
+        : stale.has(v.voice)
+          ? '<button class="studio-btn" data-act="download" data-voice="' + esc(v.voice) + '">Update · ' + mb(v.bytes) + '</button><button class="studio-btn studio-btn--quiet" data-act="remove" data-voice="' + esc(v.voice) + '">Remove</button>'
         : have.has(v.voice)
           ? '<span class="studio-state studio-ok">✓</span><button class="studio-btn studio-btn--quiet" data-act="remove" data-voice="' + esc(v.voice) + '">Remove</button>'
           : '<button class="studio-btn" data-act="download" data-voice="' + esc(v.voice) + '">Download · ' + mb(v.bytes) + '</button>';
@@ -212,10 +219,13 @@
   async function missingDownloads() {
     const [idx, inst] = await Promise.all([S.index(), S.installed()]);
     if (idx.error) return { error: idx.error, list: [] };
-    const have = new Set(inst.map(r => r.voice + '/' + r.pack));
+    // v1.29.89 — an out-of-date download counts as missing (Update).
+    const have = new Set(inst.filter(r => !S.outdated(idx, r)).map(r => r.voice + '/' + r.pack));
+    const any = new Set(inst.map(r => r.voice + '/' + r.pack));
     const list = [];
     (idx.voices || []).forEach(v => Object.keys(v.packs || {}).forEach(p => {
-      if (access(p) === 'ok' && !have.has(v.voice + '/' + p)) list.push({ voice: v.voice, pack: p, bytes: v.packs[p].bytes || 0 });
+      const k = v.voice + '/' + p;
+      if (access(p) === 'ok' && !have.has(k)) list.push({ voice: v.voice, pack: p, bytes: v.packs[p].bytes || 0, update: any.has(k) });
     }));
     list.sort((a, b) => packOrder(a.pack) - packOrder(b.pack));
     return { list };
@@ -253,8 +263,9 @@
     let allBtn;
     if (bulk) allBtn = '<button class="fol-sheet-btn voices-sheet-gap" data-act="download-all" disabled>' + bulkText() + '</button>';
     else if (miss.error) allBtn = '';
-    else if (miss.list.length) allBtn = '<button class="fol-sheet-btn voices-sheet-gap" data-act="download-all">Download all studio voices · ' + mb(need) + '</button>';
-    else allBtn = '<div class="voices-note">All studio voices you have access to are downloaded.</div>';
+    else if (miss.list.length) allBtn = '<button class="fol-sheet-btn voices-sheet-gap" data-act="download-all">' +
+      (miss.list.every(x => x.update) ? 'Update all studio voices · ' : 'Download all studio voices · ') + mb(need) + '</button>';
+    else allBtn = '<div class="voices-note">All studio voices you have access to are downloaded and up to date.</div>';
     const b = sheet(
       '<div class="voices-settings"></div><div class="fol-sheet-title">Voice settings</div>' +
       (S.web() ? '' :

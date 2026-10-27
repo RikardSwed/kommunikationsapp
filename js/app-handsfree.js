@@ -201,6 +201,7 @@ async function renderStudioPanels() {
   const esc = t => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
   const mb = b => (b / 1048576).toFixed(b < 10485760 ? 1 : 0) + ' MB';
   const have = new Set(inst.filter(r => r.pack === pack).map(r => r.voice));
+  const stale = new Set(idx.error ? [] : inst.filter(r => r.pack === pack && S.outdated(idx, r)).map(r => r.voice));   // v1.29.89
   let body;
   if (idx.error) {
     body = '<div class="studio-panel-note">' + esc(idx.error) + '</div>';
@@ -210,6 +211,8 @@ async function renderStudioPanels() {
       const item = v.packs[pack], key = v.voice + '/' + pack, pct = S.progress[key];
       const action = pct != null
         ? '<span class="studio-state">Downloading ' + pct + ' %</span>'
+        : stale.has(v.voice)
+          ? '<button class="studio-btn" data-act="download" data-voice="' + esc(v.voice) + '">Update · ' + mb(item.bytes) + '</button><button class="studio-btn studio-btn--quiet" data-act="remove" data-voice="' + esc(v.voice) + '">Remove</button>'
         : have.has(v.voice)
           ? '<span class="studio-state studio-ok">✓ Downloaded</span><button class="studio-btn studio-btn--quiet" data-act="remove" data-voice="' + esc(v.voice) + '">Remove</button>'
           : '<button class="studio-btn" data-act="download" data-voice="' + esc(v.voice) + '">Download · ' + mb(item.bytes) + '</button>';

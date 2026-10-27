@@ -1114,10 +1114,11 @@ const DS = (function () {
     function setEnabled(on) { try { localStorage.setItem(KEY, on ? '1' : '0'); } catch (e) {} }
     function isStudio(v) { return typeof v === 'string' && v.indexOf(PREFIX) === 0; }
     function voiceOf(v) { return isStudio(v) ? v.slice(PREFIX.length) : null; }
-    // "en-GB-Chirp3-HD-Kore" → "Kore (en-GB)"; anything else as it is.
+    // "en-GB-Chirp3-HD-Kore" → "Kore (Google)" (v1.29.89, was "Kore (en-GB)");
+    // anything else as it is. The maker in brackets, as "Matilda (ElevenLabs)".
     function label(voice) {
       const m = String(voice).match(/^([a-z]{2}-[A-Z]{2})-.*?-([A-Za-z]+)$/);
-      if (m) return m[2] + ' (' + m[1] + ')';
+      if (m) return m[2] + ' (Google)';
       const w = String(voice).match(/^win-(.+)$/);
       if (w) return w[1] + ' (Windows test)';
       const e = String(voice).match(/^el-([^@~]+)(?:~[\d.]+)?(?:@(.+))?$/);   // ElevenLabs, optional ~speed and @model
@@ -1198,6 +1199,16 @@ const DS = (function () {
       } finally { delete progress[key]; }
     }
     function remove(voice, pack) { return web() ? DSWebStudio.remove(voice, pack) : DSNative.studioRemove(voice, pack); }
+    // v1.29.89 — a downloaded package is out of date when the server has one
+    // made later (index.json and the package header carry the same "made").
+    // Update = download again: the new clips replace the old ones.
+    function outdated(idx, rec) {
+      const v = idx && idx.voices && idx.voices.find(x => x.voice === rec.voice);
+      const item = v && v.packs && v.packs[rec.pack];
+      if (!item || !item.made || !rec.made) return false;
+      const a = Date.parse(item.made), b = Date.parse(rec.made);
+      return isFinite(a) && isFinite(b) && a > b;
+    }
 
     // ── Playback in the web app (v1.29.88) ────────────────────────────────
     // One line = the same pieces the generator recorded. A piece with a clip
@@ -1254,7 +1265,7 @@ const DS = (function () {
 
     return { enabled, setEnabled, isStudio, voiceOf, label, voices, annotate, PREFIX,
              base, cellular, setCellular, index, installed, download, remove, progress,
-             web, available, webVoice, speakWeb, stopWeb, unlockWeb };
+             web, available, webVoice, speakWeb, stopWeb, unlockWeb, outdated };
   })();
   window.DSStudio = DSStudio;
 
