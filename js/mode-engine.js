@@ -937,9 +937,42 @@ const DS = (function () {
       catch (e) { return paths.map(() => false); }
     }
 
+    // Downloads (v1.29.83). Each returns null / [] on an older plugin.
+    async function studioIndex(url) {
+      const p = bridge();
+      if (!p || typeof p.studioIndex !== 'function') return null;
+      const r = await p.studioIndex({ url });     // throws on a network error
+      return r && r.text;
+    }
+    async function studioDownload(opts) {
+      const p = bridge();
+      if (!p || typeof p.studioDownload !== 'function') throw new Error('This version of the app cannot download voices.');
+      return p.studioDownload(opts);
+    }
+    async function studioRemove(voice, pack) {
+      const p = bridge();
+      if (!p || typeof p.studioRemove !== 'function') return null;
+      return p.studioRemove({ voice, pack });
+    }
+    async function studioInstalled() {
+      const p = bridge();
+      if (!p || typeof p.studioInstalled !== 'function') return [];
+      try { const r = await p.studioInstalled(); return (r && r.packs) || []; } catch (e) { return []; }
+    }
+    let progressBound = false;
+    const progressCbs = [];
+    function onStudioProgress(cb) {
+      progressCbs.push(cb);
+      const p = bridge();
+      if (!p || progressBound) return;
+      progressBound = true;
+      try { p.addListener('dsStudioProgress', d => progressCbs.forEach(f => { try { f(d); } catch (e) {} })); } catch (e) {}
+    }
+
     probe();   // resolve readiness at load, well before the user hits play
 
-    return { isReady, voiceIdForName, start, stop, togglePlay, next, prev, getState, probe, studioVoices, studioHas };
+    return { isReady, voiceIdForName, start, stop, togglePlay, next, prev, getState, probe, studioVoices, studioHas,
+             studioIndex, studioDownload, studioRemove, studioInstalled, onStudioProgress };
   })();
 
   // ── Studio voices (beta, 2026-10-26) ─────────────────────────────────────
@@ -960,6 +993,11 @@ const DS = (function () {
   // `pieces`: a file where there is one, the text where there is not — native
   // plays the file, or reads that one piece with the iPhone voice.
   const STUDIO_ALLOWED = true;
+  // Where the recorded voices are downloaded from: the public address of the
+  // Cloudflare R2 bucket, ending in "/". index.json and the .dsvoice packages
+  // made by tools/voice-gen.js live there. Empty = downloads not set up yet
+  // (a developer can try another address with localStorage ds_studio_base).
+  const STUDIO_BASE = '';
   const DSStudio = (function () {
     const KEY = 'ds_studio_voices';
     const PREFIX = 'studio:';
@@ -1009,7 +1047,47 @@ const DS = (function () {
       });
       return { files, pieces };
     }
-    return { enabled, setEnabled, isStudio, voiceOf, label, voices, annotate, PREFIX };
+    // ── Downloads (v1.29.83) ──────────────────────────────────────────────
+    function base() {
+      let b = '';
+      try { b = localStorage.getItem('ds_studio_base') || ''; } catch (e) {}
+      b = b || STUDIO_BASE;
+      return b && !/\/$/.test(b) ? b + '/' : b;
+    }
+    function cellular() { try { return localStorage.getItem('ds_studio_cellular') === '1'; } catch (e) { return false; } }
+    function setCellular(on) { try { localStorage.setItem('ds_studio_cellular', on ? '1' : '0'); } catch (e) {} }
+    let indexCache = null, indexAt = 0;
+    // { voices: [{ voice, packs: { <pack>: { file, bytes } } }] }, or { error }.
+    async function index(force) {
+      if (!base()) return { error: 'No download address is set up yet.' };
+      if (!force && indexCache && Date.now() - indexAt < 10 * 60 * 1000) return indexCache;
+      try {
+        const text = await DSNative.studioIndex(base() + 'index.json');
+        if (text == null) return { error: 'This version of the app cannot download voices.' };
+        indexCache = JSON.parse(text); indexAt = Date.now();
+        return indexCache;
+      } catch (e) {
+        return { error: 'Could not reach the voice list. Check the connection and try again.' };
+      }
+    }
+    function installed() { return DSNative.studioInstalled(); }
+    const progress = {};              // "voice/pack" → percent, while downloading
+    DSNative.onStudioProgress(d => { if (d && progress[d.voice + '/' + d.pack] != null) progress[d.voice + '/' + d.pack] = d.percent; });
+    async function download(voice, pack) {
+      const idx = await index();
+      const entry = idx && idx.voices && (idx.voices.find(v => v.voice === voice) || {}).packs;
+      const item = entry && entry[pack];
+      if (!item) throw new Error('This voice has no package for this pack.');
+      const key = voice + '/' + pack;
+      progress[key] = 0;
+      try {
+        return await DSNative.studioDownload({ url: base() + item.file, voice, pack, cellular: cellular() });
+      } finally { delete progress[key]; }
+    }
+    function remove(voice, pack) { return DSNative.studioRemove(voice, pack); }
+
+    return { enabled, setEnabled, isStudio, voiceOf, label, voices, annotate, PREFIX,
+             base, cellular, setCellular, index, installed, download, remove, progress };
   })();
   window.DSStudio = DSStudio;
 

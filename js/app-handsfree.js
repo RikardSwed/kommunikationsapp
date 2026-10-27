@@ -135,6 +135,7 @@ initHandsfreeVoicePickers();
   t.addEventListener('change', () => {
     window.DSStudio.setEnabled(t.checked);
     initHandsfreeVoicePickers();
+    renderStudioPanels();
   });
 })();
 
@@ -142,8 +143,97 @@ initHandsfreeVoicePickers();
 // downloaded in iOS Settings shows up without restarting the app.
 ['hf', 'hfMem', 'hfChall', 'hfFlow', 'hfMind', 'hfColl'].forEach(prefix => {
   const btn = document.getElementById(prefix + 'SettingsBtn');
-  if (btn) btn.addEventListener('click', () => { initHandsfreeVoicePickers(); });
+  if (btn) btn.addEventListener('click', () => { initHandsfreeVoicePickers(); renderStudioPanels(); });
 });
+
+// ── Studio voices: download panel (beta, v1.29.83) ───────────────────────────
+// Under the Voice row in each handsfree settings sheet, ONLY with the developer
+// switch on and in the iPhone app: the recorded voices available for the open
+// pack, each with Download (size) / progress / Downloaded · Remove. With the
+// switch off the panel is removed, so nothing of it shows. The Voices tab in
+// the Library comes later and will reuse DSStudio.
+async function renderStudioPanels() {
+  const S = window.DSStudio;
+  const on = !!(S && S.enabled() && DS.tts && DS.tts.isNative());
+  HF_VOICE_SELECTS.forEach(id => {
+    const sel = document.getElementById(id);
+    const row = sel && sel.closest('.settings-row');
+    if (!row) return;
+    let panel = row.nextElementSibling;
+    if (!(panel && panel.classList.contains('studio-panel'))) panel = null;
+    if (!on) { if (panel) panel.remove(); return; }
+    if (!panel) {
+      panel = document.createElement('div');
+      panel.className = 'studio-panel';
+      row.insertAdjacentElement('afterend', panel);
+      panel.addEventListener('click', onStudioPanelClick);
+      panel.addEventListener('change', e => {
+        if (e.target && e.target.classList.contains('studio-cellular')) {
+          S.setCellular(e.target.checked);
+          document.querySelectorAll('.studio-cellular').forEach(c => { c.checked = e.target.checked; });
+        }
+      });
+    }
+    panel.innerHTML = '<div class="studio-panel-note">Looking for studio voices…</div>';
+  });
+  if (!on) return;
+  const pack = typeof activeCollectionKey !== 'undefined' ? activeCollectionKey : '';
+  const [idx, inst] = await Promise.all([S.index(), S.installed()]);
+  const esc = t => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+  const mb = b => (b / 1048576).toFixed(b < 10485760 ? 1 : 0) + ' MB';
+  const have = new Set(inst.filter(r => r.pack === pack).map(r => r.voice));
+  let body;
+  if (idx.error) {
+    body = '<div class="studio-panel-note">' + esc(idx.error) + '</div>';
+  } else {
+    const list = (idx.voices || []).filter(v => v.packs && v.packs[pack]);
+    body = list.length ? list.map(v => {
+      const item = v.packs[pack], key = v.voice + '/' + pack, pct = S.progress[key];
+      const action = pct != null
+        ? '<span class="studio-state">Downloading ' + pct + ' %</span>'
+        : have.has(v.voice)
+          ? '<span class="studio-state studio-ok">✓ Downloaded</span><button class="studio-btn studio-btn--quiet" data-act="remove" data-voice="' + esc(v.voice) + '">Remove</button>'
+          : '<button class="studio-btn" data-act="download" data-voice="' + esc(v.voice) + '">Download · ' + mb(item.bytes) + '</button>';
+      return '<div class="studio-row"><span class="studio-name">' + esc(S.label(v.voice)) + '</span><span class="studio-actions">' + action + '</span></div>';
+    }).join('') : '<div class="studio-panel-note">No studio voices for this pack yet.</div>';
+  }
+  const foot = '<label class="studio-cell"><input type="checkbox" class="studio-cellular"' + (S.cellular() ? ' checked' : '') + '> Download over mobile data</label>' +
+               '<div class="studio-panel-note">Studio voices are AI-generated. A downloaded voice is chosen under Voice above.</div>';
+  document.querySelectorAll('.studio-panel').forEach(p => {
+    p.innerHTML = '<div class="studio-panel-title">Studio voices for this pack</div>' + body + foot;
+  });
+}
+window.renderStudioPanels = renderStudioPanels;
+
+async function onStudioPanelClick(e) {
+  const btn = e.target.closest('[data-act]');
+  if (!btn || btn.disabled) return;
+  const S = window.DSStudio, voice = btn.getAttribute('data-voice');
+  const pack = typeof activeCollectionKey !== 'undefined' ? activeCollectionKey : '';
+  const act = btn.getAttribute('data-act');
+  btn.disabled = true;
+  if (act === 'download') {
+    // Show the progress while it runs; the plugin reports per cent.
+    const tick = setInterval(() => {
+      const pct = S.progress[voice + '/' + pack];
+      document.querySelectorAll('.studio-panel [data-voice="' + CSS.escape(voice) + '"][data-act="download"]')
+        .forEach(b => { b.textContent = 'Downloading ' + (pct || 0) + ' %'; b.disabled = true; });
+    }, 300);
+    try {
+      await S.download(voice, pack);
+      await initHandsfreeVoicePickers();
+    } catch (err) {
+      const msg = (err && err.message) || String(err);
+      const offline = /offline|not connected|cellular|internet/i.test(msg);
+      if (window.showToast) window.showToast(offline && !S.cellular()
+        ? 'No Wi-Fi. Connect to Wi-Fi, or allow mobile data below.'
+        : 'The download did not finish. Try again.');
+    } finally { clearInterval(tick); }
+  } else if (act === 'remove') {
+    try { await S.remove(voice, pack); await initHandsfreeVoicePickers(); } catch (err) {}
+  }
+  renderStudioPanels();
+}
 
 // ─── HANDSFREE: SINGLE STRATEGY ───────────────────────────────────────────────
 DS.createHandsfreeMode({
