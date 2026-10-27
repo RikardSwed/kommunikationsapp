@@ -4331,3 +4331,22 @@ html.ds-vh-pinned .extended-screen {
 .studio-btn--quiet { background: transparent; color: var(--ds-txt2); border: 1px solid var(--ds-border); font-weight: 600; }
 .studio-cell { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--ds-txt2); margin-top: 8px; }
 .studio-panel-note { font-size: 12px; color: var(--ds-txt3); margin-top: 6px; line-height: 1.4; }
+
+/* ── Library → Voices (beta, v1.29.85) ── */
+.voices-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; text-align: left;
+  background: var(--ds-card); border: 1px solid var(--ds-border); border-radius: 14px; padding: 14px 16px; margin-bottom: 10px;
+  font-family: inherit; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.voices-row-main { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.voices-row-name { font-size: 16px; font-weight: 700; color: var(--ds-txt); }
+.voices-row-sub { font-size: 13px; color: var(--ds-txt3); }
+.voices-row-side { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.voices-status { font-size: 13px; color: var(--ds-txt2); }
+.voices-ok { color: #3c8a4a; }
+.voices-chev { font-size: 20px; color: var(--ds-txt3); }
+.voices-note { font-size: 13px; color: var(--ds-txt3); line-height: 1.5; margin: 10px 2px; }
+.voices-retry { font: inherit; font-weight: 700; padding: 8px 14px; border-radius: 10px; border: 1px solid var(--ds-border); background: var(--ds-card); color: var(--ds-txt); }
+.voices-sheet .studio-row { border-bottom: 1px solid var(--ds-border); padding: 10px 0; }
+.voices-sheet-gap { margin-top: 14px; }
+.voices-setting { padding: 10px 0; }
+#libBannerGearBtn i { font-size: 20px; }
+#voicesSheetBackdrop { z-index: 700; }   /* above the bottom nav (600) */
