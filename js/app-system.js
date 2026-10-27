@@ -942,6 +942,10 @@ applyInputCounterVisibility();
   };
 
   const LEVEL_ORDER = ['freemium', 'pro', 'complete'];
+  const DEV_VIEW_AS = true;   // v1.29.91 — false in the release build (tools/build-release.js)
+  function viewAsFreemium() {
+    try { return DEV_VIEW_AS && localStorage.getItem('dev_view_freemium') === 'true'; } catch (e) { return false; }
+  }
 
   function getLevel() {
     // v1.26.89 — a beta code can grant Pro for a fixed number of days. The
@@ -957,6 +961,11 @@ applyInputCounterVisibility();
     // nothing at all about the paid model. This is the primary of five sites;
     // the other four are fallbacks used before window.accessLevel is up, and
     // they were changed with it.
+    // v1.29.91 — developer "View as freemium": wins over everything below,
+    // purchases included, and can only ever lower the level. DEV_VIEW_AS is
+    // set to false by tools/build-release.js, so a flag left on a test device
+    // can never lock a customer's App Store build down to freemium.
+    if (DEV_VIEW_AS && localStorage.getItem('dev_view_freemium') === 'true') return 'freemium';
     const stored = localStorage.getItem(LEVEL_KEY) || 'freemium';
     // Lifetime Pro (one-time purchase): the level never drops below pro —
     // UNLESS the level was set explicitly via the developer radio (v1.26.44).
@@ -1274,6 +1283,7 @@ applyInputCounterVisibility();
   // (iap.js → applyEntitlements in app-ui.js), already expanded from kits to
   // their contents, and rewritten on every check so a refund takes it back.
   function getExtendedOwned() {
+    if (viewAsFreemium()) return [];   // v1.29.91 — a freemium user owns nothing
     let a = [], b = [];
     try { a = JSON.parse(localStorage.getItem('ds_extended_owned')) || []; } catch {}
     try { b = JSON.parse(localStorage.getItem('ds_iap_owned')) || []; } catch {}
@@ -1574,11 +1584,26 @@ applyInputCounterVisibility();
     });
   });
 
+  // v1.29.91 — View as freemium (see getLevel). The radio shows the level in
+  // force, so it reads Freemium while this is on and the bought level after.
+  (function bindViewAsFreemium() {
+    const el = document.getElementById('devViewFreemium');
+    if (!el) return;
+    el.checked = viewAsFreemium();
+    el.addEventListener('change', () => {
+      try { localStorage.setItem('dev_view_freemium', el.checked ? 'true' : 'false'); } catch (e) {}
+      applyAccessLevel();
+      loadDevLevelUI();
+    });
+  })();
+
   // Hook into navToSettings so radio is always current
   const _origNavToSettings = navToSettings;
   window.navToSettings = function() {
     _origNavToSettings();
     loadDevLevelUI();
+    const vf = document.getElementById('devViewFreemium');
+    if (vf) vf.checked = viewAsFreemium();
     renderGrantStatus();
   };
 
@@ -5302,6 +5327,7 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.91', date: 'October 2026', title: 'Developer settings: View as freemium', audience: 'dev', items: ['A purchase from the App Store (TestFlight and sandbox too) outranks the access-level radio, so a tester who had bought Pro could not see the free app. New switch under the radio: <em>View as freemium</em>. While it is on the level is freemium and nothing bought counts; turn it off and everything is back. The purchases themselves are never touched, and the radio works as before.', 'It can only lower the level, never raise it. The release build removes the switch with the rest of developer settings and sets <code>DEV_VIEW_AS = false</code>, so a flag left on a test device does nothing in the App Store version. New suite <code>tools/test-viewas.js</code>.'] },
   { version: 'v1.29.90', date: 'October 2026', title: 'Broken Record: Services and Family rebuilt as full input bundles', audience: 'dev', items: ['Both extra bundles in Broken Record now cover the pack like a Pro bundle does: 8 inputs per strategy in Single Strategy, 8 per Collections deck, 3 scenarios per Sequence (same length as Pro), 8 per Challenges category, and 8 per Mindset unit. Memorize keeps the standard cards, since the technique does not change. Before, each bundle was 3 cards per strategy in Single Strategy only.', 'Each bundle also has two Challenges categories of its own. Services: <em>It\u2019s the Policy</em> and <em>You Get Passed Along</em>. Family: <em>It\u2019s Dressed Up as Concern</em> and <em>It Comes Through Someone Else</em>. They show only when the bundle is on; DS.loadGroups already drops decks with no cards, in handsfree too.', 'Services stays included in Pro and serves as the example of what an extra bundle gives. Family & Close Relationships stays at 19 kr; its store text now says exactly what it contains.', 'This is the model for future extra input bundles (Datakrav per tr\u00e4ningsl\u00e4ge).'] },
   { version: 'v1.29.89', date: 'October 2026', title: 'Update for studio voices', audience: 'dev', items: ['When a pack\u2019s studio voice is recorded again on the server, Library \u2192 Voices shows an orange round arrow instead of the green tick, and the pack sheet and the handsfree panel offer <em>Update</em>. Download all includes updates. The old download keeps working until then.', 'The iPhone app now writes every clip of a package, so an updated line replaces the old one (DeckstackSpeechPlugin.swift).', 'Google voices are labelled like the ElevenLabs ones: "Kore (Google)".'] },
   { version: 'v1.29.88', date: 'October 2026', title: 'Download all studio voices; studio voices in the web app', audience: 'dev', items: ['Voice settings (⚙ in Library → Voices) has <em>Download all studio voices</em>: every voice for every pack you can use that is not downloaded yet, one after the other. What is already there is skipped.', 'Developer preview: Voices and the studio voices also work in the web app, with the screen on. The downloads are kept in the browser (Cache Storage). The release build switches this off (<code>STUDIO_WEB</code>).'] },
