@@ -3331,6 +3331,11 @@ body.feedback-mode    .al-bar { display: none !important; }
   min-height: 68px;
   box-sizing: border-box;
 }
+/* v1.29.86 — the iPhone app adds --ds-native-top to the banner's padding, so
+   68px was no longer enough for a banner WITH a button (Folders, Favorites,
+   Voices): those grew 10px taller than Packs, Topics and Programs and the
+   edge jumped between tabs. The minimum grows by the same amount. */
+.ds-native .lib-banner { min-height: calc(68px + var(--ds-native-top)); }
 
 
 /* ── FOLDERS v2 (v1.26.16) — banner-driven folder screen ─────────────── */
@@ -4348,5 +4353,7 @@ html.ds-vh-pinned .extended-screen {
 .voices-sheet .studio-row { border-bottom: 1px solid var(--ds-border); padding: 10px 0; }
 .voices-sheet-gap { margin-top: 14px; }
 .voices-setting { padding: 10px 0; }
-#libBannerGearBtn i { font-size: 20px; }
+#libBannerGearBtn { color: rgba(60, 25, 5, 0.85); }   /* as #homeSettingsBtn and #progressSettingsBtn */
+.voices-icon { font-size: 24px; color: var(--ds-txt3); }
 #voicesSheetBackdrop { z-index: 700; }   /* above the bottom nav (600) */
+.voices-icon.voices-ok { color: #3c8a4a; }
