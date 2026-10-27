@@ -77,7 +77,8 @@ async function initHandsfreeVoicePickers() {
   // Probe FIRST — isNative() only reports true once the plugin has answered,
   // so checking it before loading would always be false and skip the picker.
   const voices = await DS.tts.loadNativeVoices();
-  if (!DS.tts.isNative() || !voices.length) return;
+  if (!DS.tts.isNative()) { await initWebStudioPickers(); return; }
+  if (!voices.length) return;
 
   const saved = localStorage.getItem(HF_VOICE_KEY);
   // Studio voices (beta, 2026-10-26): only with the developer switch on, and
@@ -126,6 +127,43 @@ async function initHandsfreeVoicePickers() {
 }
 initHandsfreeVoicePickers();
 
+// Web app (developer preview, v1.29.88): Female / Male as before, plus the
+// studio voices downloaded in this browser. A piece a studio voice has no
+// clip for is read by the last Female/Male choice (ds_hf_voice_browser).
+async function initWebStudioPickers() {
+  const S = window.DSStudio;
+  const studio = (S && S.available()) ? await S.voices() : [];
+  const esc = t => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+  const basic = '<option value="female">Female</option><option value="male">Male</option>';
+  const optionsHtml = studio.length
+    ? '<optgroup label="Studio voices">' +
+        studio.map(v => `<option value="${esc(S.PREFIX + v)}">${esc(S.label(v))}</option>`).join('') +
+      '</optgroup><optgroup label="Browser voices">' + basic + '</optgroup>'
+    : basic;
+  let saved = null;
+  try { saved = localStorage.getItem(HF_VOICE_KEY); } catch (e) {}
+  HF_VOICE_SELECTS.forEach(id => {
+    const sel = document.getElementById(id);
+    if (!sel) return;
+    const was = sel.value;
+    sel.innerHTML = optionsHtml;
+    const has = v => [...sel.options].some(o => o.value === v);
+    sel.value = (saved && has(saved)) ? saved : (has(was) ? was : 'female');
+    if (sel._voiceBound) return;
+    sel._voiceBound = true;
+    sel.addEventListener('change', () => {
+      try {
+        localStorage.setItem(HF_VOICE_KEY, sel.value);
+        if (sel.value === 'female' || sel.value === 'male') localStorage.setItem('ds_hf_voice_browser', sel.value);
+      } catch (e) {}
+      HF_VOICE_SELECTS.forEach(other => {
+        const o = document.getElementById(other);
+        if (o && o !== sel) o.value = sel.value;
+      });
+    });
+  });
+}
+
 
 // Refresh the list every time a handsfree settings panel is opened, so a voice
 // downloaded in iOS Settings shows up without restarting the app.
@@ -141,7 +179,7 @@ initHandsfreeVoicePickers();
 // the Library comes later and will reuse DSStudio.
 async function renderStudioPanels() {
   const S = window.DSStudio;
-  const on = !!(S && S.enabled() && DS.tts && DS.tts.isNative());
+  const on = !!(S && S.available());                 // iPhone app, or the web preview (v1.29.88)
   HF_VOICE_SELECTS.forEach(id => {
     const sel = document.getElementById(id);
     const row = sel && sel.closest('.settings-row');

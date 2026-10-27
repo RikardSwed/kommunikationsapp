@@ -778,6 +778,8 @@ const DS = (function () {
 
     function stop() {
       if (ready && plugin) { try { plugin.stop(); } catch (e) {} return; }
+      // v1.29.88 — a studio clip playing in the web app stops too.
+      try { if (typeof DSStudio !== 'undefined') DSStudio.stopWeb(); } catch (e) {}
       try { speechSynthesis.cancel(); } catch (e) {}
     }
 
@@ -785,6 +787,7 @@ const DS = (function () {
     // The native path has no such restriction.
     function unlock() {
       if (ready) return;
+      try { if (typeof DSStudio !== 'undefined') DSStudio.unlockWeb(); } catch (e) {}
       try {
         const u = new SpeechSynthesisUtterance(' ');
         u.volume = 0;
@@ -975,6 +978,113 @@ const DS = (function () {
              studioIndex, studioDownload, studioRemove, studioInstalled, onStudioProgress };
   })();
 
+  // ── Studio voices in the web app (developer preview, v1.29.88) ──────────
+  // The web app is Rikard's development tool, not something customers use.
+  // So the downloads and the playback work there too, with the screen on:
+  // the same index.json and .dsvoice packages, fetched with fetch() (needs a
+  // CORS rule on the R2 bucket), unpacked here and kept in the browser's Cache
+  // Storage, one entry per clip. Which packs are downloaded is a small list
+  // in localStorage. tools/build-release.js sets STUDIO_WEB = false, so the
+  // App Store build never runs any of it (it uses the native player anyway).
+  const STUDIO_WEB = true;
+  const DSWebStudio = (function () {
+    const CACHE = 'ds-studio-v1';
+    const META  = 'ds_studio_web';
+    const KEYBASE = 'https://studio.deckstack.invalid/';   // cache keys only, never fetched
+    function ok() { return STUDIO_WEB && typeof caches !== 'undefined' && typeof fetch === 'function'; }
+    function recs() { try { return JSON.parse(localStorage.getItem(META) || '[]') || []; } catch (e) { return []; } }
+    function save(list) { try { localStorage.setItem(META, JSON.stringify(list)); } catch (e) {} }
+    const clipKey = rel => KEYBASE + 'c/' + rel;
+    const manKey  = (voice, pack) => KEYBASE + 'm/' + voice + '/' + pack + '.json';
+    let sets = null;                  // voice → Set of clip ids, built from the manifests
+    async function manifest(c, voice, pack) {
+      const r = await c.match(manKey(voice, pack));
+      try { return r ? await r.json() : []; } catch (e) { return []; }
+    }
+    async function loadSets() {
+      if (sets) return sets;
+      const c = await caches.open(CACHE), out = {};
+      for (const r of recs()) {
+        const ids = await manifest(c, r.voice, r.pack);
+        const set = out[r.voice] || (out[r.voice] = new Set());
+        ids.forEach(id => set.add(id));
+      }
+      return (sets = out);
+    }
+    async function voices() { return [...new Set(recs().map(r => r.voice))].sort(); }
+    async function has(paths) {
+      const s = await loadSets();
+      return paths.map(p => { const i = p.indexOf('/'); const v = s[p.slice(0, i)]; return !!(v && v.has(p.slice(i + 1))); });
+    }
+    async function index(url) {
+      const r = await fetch(url, { cache: 'no-cache' });
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.text();
+    }
+    let progressCbs = [];
+    function onProgress(cb) { progressCbs.push(cb); }
+    const emit = d => progressCbs.forEach(f => { try { f(d); } catch (e) {} });
+    async function download(opts) {
+      const { url, voice, pack } = opts;
+      const r = await fetch(url);
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      const total = Number(r.headers.get('Content-Length')) || 0;
+      let buf;
+      if (r.body && r.body.getReader && total) {
+        const reader = r.body.getReader(), parts = [];
+        let got = 0, last = -1;
+        for (;;) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          parts.push(value); got += value.length;
+          const pct = Math.min(95, Math.floor(got / total * 95));
+          if (pct !== last) { last = pct; emit({ voice, pack, percent: pct }); }
+        }
+        buf = new Uint8Array(got);
+        let at = 0; parts.forEach(p => { buf.set(p, at); at += p.length; });
+      } else {
+        buf = new Uint8Array(await r.arrayBuffer());
+      }
+      // "DSV1" · UInt32 LE header length · JSON header · the clips back to back
+      if (String.fromCharCode(buf[0], buf[1], buf[2], buf[3]) !== 'DSV1') throw new Error('not a voice package');
+      const hlen = new DataView(buf.buffer, buf.byteOffset + 4, 4).getUint32(0, true);
+      const head = JSON.parse(new TextDecoder().decode(buf.subarray(8, 8 + hlen)));
+      const data = 8 + hlen;
+      const c = await caches.open(CACHE);
+      const type = ext => ext === 'wav' ? 'audio/wav' : ext === 'ogg' ? 'audio/ogg' : 'audio/mpeg';
+      await Promise.all((head.clips || []).map(cl =>
+        c.put(clipKey(voice + '/' + cl.id), new Response(buf.slice(data + cl.offset, data + cl.offset + cl.length),
+          { headers: { 'Content-Type': type(cl.ext) } }))));
+      await c.put(manKey(voice, pack), new Response(JSON.stringify((head.clips || []).map(cl => cl.id)),
+        { headers: { 'Content-Type': 'application/json' } }));
+      const list = recs().filter(x => !(x.voice === voice && x.pack === pack));
+      list.push({ voice, pack, bytes: buf.length, made: head.made || '', installed: new Date().toISOString() });
+      save(list); sets = null;
+      emit({ voice, pack, percent: 100 });
+      return { voice, pack, clips: (head.clips || []).length };
+    }
+    // A clip another downloaded pack of the same voice still uses is kept.
+    async function remove(voice, pack) {
+      const c = await caches.open(CACHE);
+      const mine = await manifest(c, voice, pack);
+      const keep = new Set();
+      for (const r of recs()) if (r.voice === voice && r.pack !== pack) (await manifest(c, voice, r.pack)).forEach(id => keep.add(id));
+      await Promise.all(mine.filter(id => !keep.has(id)).map(id => c.delete(clipKey(voice + '/' + id))));
+      await c.delete(manKey(voice, pack));
+      save(recs().filter(x => !(x.voice === voice && x.pack === pack))); sets = null;
+      return { removed: true };
+    }
+    async function installed() { return recs(); }
+    // An object URL for one clip, or null. The caller revokes it.
+    async function clipUrl(rel) {
+      try {
+        const r = await (await caches.open(CACHE)).match(clipKey(rel));
+        return r ? URL.createObjectURL(await r.blob()) : null;
+      } catch (e) { return null; }
+    }
+    return { ok, voices, has, index, download, remove, installed, onProgress, clipUrl };
+  })();
+
   // ── Studio voices (beta, 2026-10-26) ─────────────────────────────────────
   // Recorded voices played from files instead of the iPhone voice. See "Plan —
   // ljudfiler per pack (förslag 2)" in the vault.
@@ -1014,9 +1124,13 @@ const DS = (function () {
       if (e) return e[1] + (e[2] ? ' (ElevenLabs, ' + e[2].replace(/^eleven_/, '') + ')' : ' (ElevenLabs)');
       return String(voice);
     }
+    // Native player in the iPhone app; the web preview in a browser (v1.29.88).
+    function web() { return !DSNative.isReady() && DSWebStudio.ok(); }
+    function available() { return enabled() && (DSNative.isReady() || DSWebStudio.ok()); }
     async function voices() {
-      if (!enabled() || !DSNative.isReady()) return [];
-      return DSNative.studioVoices();
+      if (!enabled()) return [];
+      if (DSNative.isReady()) return DSNative.studioVoices();
+      return web() ? DSWebStudio.voices() : [];
     }
     async function annotate(steps, voice) {
       const ST = window.DSSpeechText;
@@ -1030,7 +1144,7 @@ const DS = (function () {
       const texts = [...new Set(perStep.flat())];
       await Promise.all(texts.map(async t => { ids.set(t, voice + '/' + await ST.clipId(voice, t)); }));
       const paths = texts.map(t => ids.get(t));
-      const present = await DSNative.studioHas(paths);
+      const present = web() ? await DSWebStudio.has(paths) : await DSNative.studioHas(paths);
       const have = new Set(paths.filter((p, i) => present[i]));
       let files = 0, pieces = 0;
       steps.forEach((st, i) => {
@@ -1058,7 +1172,7 @@ const DS = (function () {
       if (!base()) return { error: 'No download address is set up yet.' };
       if (!force && indexCache && Date.now() - indexAt < 10 * 60 * 1000) return indexCache;
       try {
-        const text = await DSNative.studioIndex(base() + 'index.json');
+        const text = web() ? await DSWebStudio.index(base() + 'index.json') : await DSNative.studioIndex(base() + 'index.json');
         if (text == null) return { error: 'This version of the app cannot download voices.' };
         indexCache = JSON.parse(text); indexAt = Date.now();
         return indexCache;
@@ -1066,9 +1180,11 @@ const DS = (function () {
         return { error: 'Could not reach the voice list. Check the connection and try again.' };
       }
     }
-    function installed() { return DSNative.studioInstalled(); }
+    function installed() { return web() ? DSWebStudio.installed() : DSNative.studioInstalled(); }
     const progress = {};              // "voice/pack" → percent, while downloading
-    DSNative.onStudioProgress(d => { if (d && progress[d.voice + '/' + d.pack] != null) progress[d.voice + '/' + d.pack] = d.percent; });
+    const onProg = d => { if (d && progress[d.voice + '/' + d.pack] != null) progress[d.voice + '/' + d.pack] = d.percent; };
+    DSNative.onStudioProgress(onProg);
+    DSWebStudio.onProgress(onProg);
     async function download(voice, pack) {
       const idx = await index();
       const entry = idx && idx.voices && (idx.voices.find(v => v.voice === voice) || {}).packs;
@@ -1077,13 +1193,68 @@ const DS = (function () {
       const key = voice + '/' + pack;
       progress[key] = 0;
       try {
-        return await DSNative.studioDownload({ url: base() + item.file, voice, pack, cellular: cellular() });
+        const opts = { url: base() + item.file, voice, pack, cellular: cellular() };
+        return await (web() ? DSWebStudio.download(opts) : DSNative.studioDownload(opts));
       } finally { delete progress[key]; }
     }
-    function remove(voice, pack) { return DSNative.studioRemove(voice, pack); }
+    function remove(voice, pack) { return web() ? DSWebStudio.remove(voice, pack) : DSNative.studioRemove(voice, pack); }
+
+    // ── Playback in the web app (v1.29.88) ────────────────────────────────
+    // One line = the same pieces the generator recorded. A piece with a clip
+    // plays from the cache; a piece without one is read by the browser voice
+    // last chosen under Voice (Female/Male). TTS.stop() ends it at once.
+    let webAudio = null, webGen = 0, webEnd = null;
+    function audioEl() {
+      if (!webAudio) { webAudio = new Audio(); webAudio.preload = 'auto'; }
+      return webAudio;
+    }
+    // From the play button (a user gesture), so later plays are allowed.
+    function unlockWeb() {
+      if (!web()) return;
+      try {
+        const a = audioEl();
+        a.src = 'data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=';
+        const pr = a.play(); if (pr && pr.catch) pr.catch(() => {});
+      } catch (e) {}
+    }
+    function stopWeb() {
+      webGen++;
+      if (webAudio) { try { webAudio.pause(); } catch (e) {} }
+      if (webEnd) { const f = webEnd; webEnd = null; f(); }
+    }
+    function playUrl(url, rate) {
+      return new Promise(resolve => {
+        const a = audioEl();
+        const done = () => { a.onended = a.onerror = null; if (webEnd === done) webEnd = null; resolve(); };
+        webEnd = done;
+        a.onended = done; a.onerror = done;
+        a.src = url;
+        try { a.playbackRate = Math.max(0.5, Math.min(2, rate || 1)); } catch (e) {}
+        const pr = a.play(); if (pr && pr.catch) pr.catch(done);
+      });
+    }
+    function webBrowserVoice() {
+      try { const v = localStorage.getItem('ds_hf_voice_browser'); return v === 'male' ? 'male' : 'female'; } catch (e) { return 'female'; }
+    }
+    // true when this line should be played by speakWeb()
+    function webVoice(val) { return enabled() && web() && isStudio(val); }
+    async function speakWeb(text, guide, opts) {
+      const ST = window.DSSpeechText, voice = voiceOf(opts.voice);
+      const gen = ++webGen;
+      if (!ST || !voice) return;
+      const body = guide && text.indexOf(guide) === 0 ? text.slice(guide.length) : text;
+      for (const t of ST.pieces(guide || '', body)) {        // exactly as annotate() splits a native step
+        if (gen !== webGen) return;
+        const url = await DSWebStudio.clipUrl(voice + '/' + await ST.clipId(voice, t));
+        if (gen !== webGen) { if (url) URL.revokeObjectURL(url); return; }
+        if (url) { await playUrl(url, opts.rate); URL.revokeObjectURL(url); }
+        else await TTS.speak(t, { rate: opts.rate, voice: webBrowserVoice() });
+      }
+    }
 
     return { enabled, setEnabled, isStudio, voiceOf, label, voices, annotate, PREFIX,
-             base, cellular, setCellular, index, installed, download, remove, progress };
+             base, cellular, setCellular, index, installed, download, remove, progress,
+             web, available, webVoice, speakWeb, stopWeb, unlockWeb };
   })();
   window.DSStudio = DSStudio;
 
@@ -1266,9 +1437,12 @@ const DS = (function () {
     }
 
     // ── TTS primitives (per-instance state, shared implementation) ────────
-    function speak(text, cfg2) {
+    // `guide` = the spoken guide at the start of `text`, if any — a studio
+    // voice needs it to split the line exactly as the recording did.
+    function speak(text, cfg2, guide) {
       if (mode.abort || !text) return Promise.resolve();
       if (mode.skipStep) { mode.skipStep = false; return Promise.resolve(); }
+      if (DSStudio.webVoice(cfg2.voiceGender)) return DSStudio.speakWeb(text, guide || '', { rate: cfg2.rate, voice: cfg2.voiceGender });
       return TTS.speak(text, { rate: cfg2.rate, voice: cfg2.voiceGender });
     }
 
@@ -1721,14 +1895,14 @@ const DS = (function () {
           const gBack  = effGB ? dsSpokenGuide(effGB) : '';
 
           showCard(front, back, false, it);
-          await speak(gFront + front, s);
+          await speak(gFront + front, s, gFront);
           if (mode.abort) break outer;
           if (!mode.skipStep) await delay(s.thinkPause * 1000);
           mode.skipStep = false;
 
           if (s.cardBack && speakBack(it)) {
             showCard(front, back, true, it);
-            await speak(gBack + back, s);
+            await speak(gBack + back, s, gBack);
             if (mode.abort) break outer;
             if (!mode.skipStep) await delay(s.genPause * 1000);
             mode.skipStep = false;
@@ -1783,14 +1957,14 @@ const DS = (function () {
           const gBack = effGB ? dsSpokenGuide(effGB) : '';
 
           showCard(front, back, false, it);
-          await speak(lead + front, s);
+          await speak(lead + front, s, lead);
           if (mode.abort) break outer;
           if (!mode.skipStep) await delay(s.thinkPause * 1000);
           mode.skipStep = false;
 
           if (s.cardBack && speakBack(it)) {
             showCard(front, back, true, it);
-            await speak(gBack + back, s);
+            await speak(gBack + back, s, gBack);
             if (mode.abort) break outer;
             if (!mode.skipStep) await delay(s.genPause * 1000);
             mode.skipStep = false;

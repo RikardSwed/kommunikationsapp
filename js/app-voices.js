@@ -1,8 +1,9 @@
 // app-voices.js — Library → Voices: the studio voices on this phone (beta, v1.29.85)
 //
 // A tab after Favorites, in the iPhone app (v1.29.86: no longer behind a
-// developer switch). The web app has no native player, so the tab stays hidden
-// there and nothing here runs a request.
+// developer switch). v1.29.88: also in the web app, as a developer preview
+// (downloads kept in the browser, played with the screen on — DSWebStudio in
+// mode-engine.js). The release build turns the web part off.
 //
 //   • One row per pack that HAS studio voices (the list comes from index.json
 //     on voices.deckstack.app — see DSStudio in mode-engine.js). Packs the user
@@ -14,7 +15,7 @@
 //     "Not downloaded". A tap opens a sheet: every voice with Download (size)
 //     or Remove, and "Remove all voices for this pack".
 //   • The gear in the banner opens Voice settings: download over mobile data
-//     (off by default), space used, remove everything.
+//     (off by default), space used, download all (v1.29.88), remove everything.
 //
 // The same downloads are also offered in each handsfree settings sheet
 // (app-handsfree.js, renderStudioPanels). Both read and write through DSStudio.
@@ -64,7 +65,7 @@
     if (tab === 'voices') render();
   };
 
-  function on() { return !!(S.enabled() && window.DS && DS.tts && DS.tts.isNative()); }
+  function on() { return !!S.available(); }
   function sync() {
     const visible = on();
     tabBtn.style.display = visible ? '' : 'none';
@@ -177,7 +178,7 @@
     }).join('');
     const b = sheet('<div class="fol-sheet-title">' + esc(packName(pack)) + '</div>' + rows +
       (have.size ? '<button class="fol-sheet-btn fol-danger-btn voices-sheet-gap" data-act="remove-all">Remove all voices for this pack</button>' : '') +
-      '<div class="voices-note">Wi-Fi only unless mobile data is allowed in Voice settings (⚙).</div>');
+      (S.web() ? '' : '<div class="voices-note">Wi-Fi only unless mobile data is allowed in Voice settings (⚙).</div>'));
     b.addEventListener('click', async e => {
       const btn = e.target.closest('[data-act]');
       if (!btn || btn.disabled) return;
@@ -202,18 +203,84 @@
     });
   }
 
+  // ── Download all (v1.29.88) ───────────────────────────────────────────────
+  // Every voice of every pack the user can use ('ok') that is not on the
+  // phone yet, one after the other. What is already there is skipped, so
+  // nothing is downloaded twice. Runs on if the sheet is closed; reopening
+  // the sheet shows how far it has come.
+  let bulk = null;                    // { done, total, current: 'voice/pack' } while running
+  async function missingDownloads() {
+    const [idx, inst] = await Promise.all([S.index(), S.installed()]);
+    if (idx.error) return { error: idx.error, list: [] };
+    const have = new Set(inst.map(r => r.voice + '/' + r.pack));
+    const list = [];
+    (idx.voices || []).forEach(v => Object.keys(v.packs || {}).forEach(p => {
+      if (access(p) === 'ok' && !have.has(v.voice + '/' + p)) list.push({ voice: v.voice, pack: p, bytes: v.packs[p].bytes || 0 });
+    }));
+    list.sort((a, b) => packOrder(a.pack) - packOrder(b.pack));
+    return { list };
+  }
+  function bulkText() {
+    if (!bulk) return '';
+    const pct = bulk.current != null ? (S.progress[bulk.current] || 0) : 0;
+    return 'Downloading ' + Math.min(bulk.done + 1, bulk.total) + ' of ' + bulk.total + ' · ' + pct + ' %';
+  }
+  async function downloadAll(list) {
+    bulk = { done: 0, total: list.length, current: null };
+    let failed = null;
+    for (const it of list) {
+      bulk.current = it.voice + '/' + it.pack;
+      try { await S.download(it.voice, it.pack); }
+      catch (err) { failed = err; break; }
+      bulk.done++;
+      afterChange();
+    }
+    bulk = null;
+    if (failed && window.showToast) {
+      const msg = (failed && failed.message) || '';
+      window.showToast(/offline|not connected|cellular|internet/i.test(msg) && !S.cellular() && !S.web()
+        ? 'No Wi-Fi. Connect to Wi-Fi, or allow mobile data above.'
+        : 'The download did not finish. Try again — what is done is kept.');
+    }
+    afterChange();
+    if (document.querySelector('#voicesSheetBackdrop .voices-settings')) openSettingsSheet();
+  }
+
   async function openSettingsSheet() {
-    const inst = await S.installed();
+    const [inst, miss] = await Promise.all([S.installed(), missingDownloads()]);
     const used = inst.reduce((s, r) => s + (r.bytes || 0), 0);
+    const need = miss.list.reduce((s, r) => s + r.bytes, 0);
+    let allBtn;
+    if (bulk) allBtn = '<button class="fol-sheet-btn voices-sheet-gap" data-act="download-all" disabled>' + bulkText() + '</button>';
+    else if (miss.error) allBtn = '';
+    else if (miss.list.length) allBtn = '<button class="fol-sheet-btn voices-sheet-gap" data-act="download-all">Download all studio voices · ' + mb(need) + '</button>';
+    else allBtn = '<div class="voices-note">All studio voices you have access to are downloaded.</div>';
     const b = sheet(
-      '<div class="fol-sheet-title">Voice settings</div>' +
+      '<div class="voices-settings"></div><div class="fol-sheet-title">Voice settings</div>' +
+      (S.web() ? '' :
       '<div class="settings-row voices-setting"><label>Download over mobile data</label>' +
-        '<label class="toggle"><input type="checkbox" id="voicesCellular"' + (S.cellular() ? ' checked' : '') + '><span class="toggle-slider"></span></label></div>' +
+        '<label class="toggle"><input type="checkbox" id="voicesCellular"' + (S.cellular() ? ' checked' : '') + '><span class="toggle-slider"></span></label></div>') +
       '<div class="settings-row voices-setting"><label>Space used</label><span class="voices-status">' +
         (inst.length ? mb(used) + ' · ' + inst.length + (inst.length === 1 ? ' download' : ' downloads') : 'Nothing downloaded') + '</span></div>' +
-      (inst.length ? '<button class="fol-sheet-btn fol-danger-btn voices-sheet-gap" data-act="remove-everything">Remove all downloaded voices</button>' : '') +
-      '<div class="voices-note">Studio voices are AI-generated. Downloaded voices work offline and are not backed up to iCloud; you can download them again at any time.</div>');
-    b.querySelector('#voicesCellular').addEventListener('change', e => S.setCellular(e.target.checked));
+      allBtn +
+      (inst.length ? '<button class="fol-sheet-btn fol-danger-btn voices-sheet-gap" data-act="remove-everything"' + (bulk ? ' disabled' : '') + '>Remove all downloaded voices</button>' : '') +
+      '<div class="voices-note">' + (S.web()
+        ? 'Developer preview: the voices are kept in this browser and play while the screen is on.'
+        : 'Studio voices are AI-generated. Downloaded voices work offline and are not backed up to iCloud; you can download them again at any time.') + '</div>');
+    const cell = b.querySelector('#voicesCellular');
+    if (cell) cell.addEventListener('change', e => S.setCellular(e.target.checked));
+    const dl = b.querySelector('[data-act="download-all"]');
+    if (dl && bulk) {
+      const tick = setInterval(() => {
+        if (!document.body.contains(dl) || !bulk) { clearInterval(tick); return; }
+        dl.textContent = bulkText();
+      }, 300);
+    } else if (dl) dl.addEventListener('click', () => {
+      dl.disabled = true;
+      const run = downloadAll(miss.list);
+      openSettingsSheet();
+      return run;
+    });
     const all = b.querySelector('[data-act="remove-everything"]');
     if (all) all.addEventListener('click', async () => {
       all.disabled = true; all.textContent = 'Removing…';
