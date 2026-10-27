@@ -87,6 +87,11 @@
   }
   // 'hidden' | 'pro' | 'ok'
   function access(pack) {
+    // v1.29.87 — a pack that is not in THIS build is never listed. The release
+    // build strips the complete-level packs entirely, and accessLevel treats a
+    // pack it has no config for as 'available' — so a studio voice recorded
+    // for a complete pack would otherwise show up for every customer.
+    if (!packCard(pack)) return 'hidden';
     const a = window.accessLevel;
     if (!a) return 'ok';
     const vis = a.packVisibility ? a.packVisibility(pack) : 'available';
