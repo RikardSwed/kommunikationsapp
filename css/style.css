@@ -4357,3 +4357,4 @@ html.ds-vh-pinned .extended-screen {
 .voices-icon { font-size: 24px; color: var(--ds-txt3); }
 #voicesSheetBackdrop { z-index: 700; }   /* above the bottom nav (600) */
 .voices-icon.voices-ok { color: #3c8a4a; }
+.voices-icon.voices-update { color: #D45B03; }   /* v1.29.89 — a newer recording on the server */
