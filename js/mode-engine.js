@@ -975,7 +975,10 @@ const DS = (function () {
       const m = String(voice).match(/^([a-z]{2}-[A-Z]{2})-.*?-([A-Za-z]+)$/);
       if (m) return m[2] + ' (' + m[1] + ')';
       const w = String(voice).match(/^win-(.+)$/);
-      return w ? w[1] + ' (Windows test)' : String(voice);
+      if (w) return w[1] + ' (Windows test)';
+      const e = String(voice).match(/^el-([^@]+)(?:@(.+))?$/);   // ElevenLabs, optional @model
+      if (e) return e[1] + (e[2] ? ' (ElevenLabs, ' + e[2].replace(/^eleven_/, '') + ')' : ' (ElevenLabs)');
+      return String(voice);
     }
     async function voices() {
       if (!enabled() || !DSNative.isReady()) return [];
