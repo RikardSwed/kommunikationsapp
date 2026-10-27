@@ -4317,3 +4317,17 @@ html.ds-vh-pinned .extended-screen {
 .pg-totals { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; text-align: center; }
 .pg-total-num { font-size: 24px; font-weight: 800; color: var(--ds-txt); }
 .pg-total-lbl { font-size: 12px; color: var(--ds-txt2); }
+
+/* ── Studio voices: download panel in handsfree settings (beta, v1.29.83) ── */
+.studio-panel { margin: 2px 0 10px; padding: 10px 12px; border-radius: 12px; background: var(--ds-border-sub); }
+.studio-panel-title { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .4px; color: var(--ds-txt2); margin-bottom: 6px; }
+.studio-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 6px 0; }
+.studio-name { font-size: 14px; font-weight: 600; color: var(--ds-txt); }
+.studio-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.studio-state { font-size: 13px; color: var(--ds-txt2); }
+.studio-ok { color: #3c8a4a; }
+.studio-btn { font: inherit; font-size: 13px; font-weight: 700; padding: 6px 12px; border-radius: 8px; border: 0; background: var(--ds-hero-a); color: #fff; cursor: pointer; }
+.studio-btn[disabled] { opacity: .7; }
+.studio-btn--quiet { background: transparent; color: var(--ds-txt2); border: 1px solid var(--ds-border); font-weight: 600; }
+.studio-cell { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--ds-txt2); margin-top: 8px; }
+.studio-panel-note { font-size: 12px; color: var(--ds-txt3); margin-top: 6px; line-height: 1.4; }
