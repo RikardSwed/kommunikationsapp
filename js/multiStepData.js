@@ -4055,6 +4055,72 @@ const multiStepCollections = {
             { front: "Step 5 · Know When to Stop — they say, \"Not even for the children's ward?\"", back: "\"We're going round in circles. I'll look them up at home — have a good afternoon.\"", guideFront: "End it rather than repeat again when...", guideBack: "The last round" },
           ]
         },
+        {
+          bundle: 'services',
+          situation: "You are on the phone to cancel a streaming subscription. The agent is trained to keep you. Your line is \"I'd like to cancel, please.\"",
+          steps: [
+            { front: "Step 1 · Acknowledge, Then Repeat — they say, \"I can see you've been with us for three years!\"", back: "\"I have, and it's been fine. I'd like to cancel, please.\"", guideFront: "Show you heard them first when...", guideBack: "A nod, then the same line" },
+            { front: "Step 2 · Just the Position — they say, \"May I ask what made you decide?\"", back: "\"No particular reason. I'd like to cancel, please.\"", guideFront: "State it without explaining when...", guideBack: "The bare position" },
+            { front: "Step 3 · Stay on Your Line — they say, \"You'll lose all your saved shows.\"", back: "\"I understand. I'd like to cancel, please.\"", guideFront: "Meet the new argument the same way when...", guideBack: "The same line, to a different case" },
+            { front: "Step 4 · Keep the Tone Flat — they say, \"I can offer you three months at half price.\"", back: "\"I'd like to cancel, please.\"", guideFront: "Deliver it level every time when...", guideBack: "The same words, the same way" },
+            { front: "Step 5 · Know When to Stop — they say, \"Are you sure you don't want to think about it?\"", back: "\"I'm sure. Please cancel it now and send me the confirmation.\"", guideFront: "End it rather than repeat again when...", guideBack: "The last round" },
+          ]
+        },
+        {
+          bundle: 'services',
+          situation: "A man at your door is selling solar panels. You are not buying at the door. Your line is \"I don't buy at the door.\"",
+          steps: [
+            { front: "Step 1 · Acknowledge, Then Repeat — they say, \"It's completely free to get a quote.\"", back: "\"I'm sure it is. I don't buy at the door.\"", guideFront: "Show you heard them first when...", guideBack: "A nod, then the same line" },
+            { front: "Step 2 · Just the Position — they say, \"Is it the price you're worried about?\"", back: "\"It's not about the price. I don't buy at the door.\"", guideFront: "State it without explaining when...", guideBack: "The bare position" },
+            { front: "Step 3 · Stay on Your Line — they say, \"Your neighbour at number twelve signed up yesterday.\"", back: "\"Good for them. I don't buy at the door.\"", guideFront: "Meet the new argument the same way when...", guideBack: "The same line, to a different case" },
+            { front: "Step 4 · Keep the Tone Flat — they say, \"Honestly, you're throwing money away.\"", back: "\"I don't buy at the door.\"", guideFront: "Deliver it level every time when...", guideBack: "The same words, the same way" },
+            { front: "Step 5 · Know When to Stop — they say, \"Can I just leave you a leaflet and pop back Thursday?\"", back: "\"No need to come back. I'm going to close the door now — have a good day.\"", guideFront: "End it rather than repeat again when...", guideBack: "The last round" },
+          ]
+        },
+        {
+          bundle: 'services',
+          situation: "You are in a phone shop and the assistant keeps adding insurance to your new phone. Your line is \"Just the phone, thanks.\"",
+          steps: [
+            { front: "Step 1 · Acknowledge, Then Repeat — they say, \"Most people take the insurance, you know.\"", back: "\"I'm sure they do. Just the phone, thanks.\"", guideFront: "Show you heard them first when...", guideBack: "A nod, then the same line" },
+            { front: "Step 2 · Keep the Same Words — they say, \"It's only a few pounds a month.\"", back: "\"Just the phone, thanks.\"", guideFront: "Repeat it word for word when...", guideBack: "The same answer, again" },
+            { front: "Step 3 · Stay on Your Line — they say, \"A screen repair costs more than the phone did.\"", back: "\"It might. Just the phone, thanks.\"", guideFront: "Meet the new argument the same way when...", guideBack: "The same line, to a different case" },
+            { front: "Step 4 · Keep the Tone Flat — they say, \"Well, don't come back to me when it cracks.\"", back: "\"Just the phone, thanks.\"", guideFront: "Deliver it level every time when...", guideBack: "The same words, the same way" },
+            { front: "Step 5 · Know When to Stop — they say, \"Let me just print you the insurance details anyway.\"", back: "\"No need. I'd like to pay for the phone now, please.\"", guideFront: "End it rather than repeat again when...", guideBack: "The last round" },
+          ]
+        },
+        {
+          bundle: 'family',
+          situation: "Your mother wants you to host Christmas again, as you have for five years. You have decided not to. Your line is \"I'm not hosting this year.\"",
+          steps: [
+            { front: "Step 1 · Acknowledge, Then Repeat — they say, \"It's tradition. Everyone expects it at yours.\"", back: "\"I know it's become the tradition. I'm not hosting this year.\"", guideFront: "Show you heard them first when...", guideBack: "A nod, then the same line" },
+            { front: "Step 2 · Just the Position — they say, \"Why ever not? Has something happened?\"", back: "\"Nothing's happened. I'm just not hosting this year.\"", guideFront: "State it without explaining when...", guideBack: "The bare position" },
+            { front: "Step 3 · Stay on Your Line — they say, \"Your sister's kitchen is far too small.\"", back: "\"It might be. I'm not hosting this year.\"", guideFront: "Meet the new argument the same way when...", guideBack: "The same line, to a different case" },
+            { front: "Step 4 · Keep the Tone Flat — they say, \"Well, I suppose nobody will bother, then.\"", back: "\"I'm not hosting this year.\"", guideFront: "Deliver it level every time when...", guideBack: "The same words, the same way" },
+            { front: "Step 5 · Know When to Stop — they say, \"I just don't understand you sometimes.\"", back: "\"I know. The answer isn't going to change — I'll come early to whoever does it and help.\"", guideFront: "End it rather than repeat again when...", guideBack: "The last round" },
+          ]
+        },
+        {
+          bundle: 'family',
+          situation: "Your brother wants to borrow money for the third time this year. You have decided not to lend it. Your line is \"I'm not lending money at the moment.\"",
+          steps: [
+            { front: "Step 1 · Acknowledge, Then Repeat — they say, \"I'm really stuck this month.\"", back: "\"I can hear that. I'm not lending money at the moment.\"", guideFront: "Show you heard them first when...", guideBack: "A nod, then the same line" },
+            { front: "Step 2 · Just the Position — they say, \"Is this about what I still owe you?\"", back: "\"It's not about that. I'm not lending money at the moment.\"", guideFront: "State it without explaining when...", guideBack: "The bare position" },
+            { front: "Step 3 · Stay on Your Line — they say, \"Mum would want you to help me.\"", back: "\"Maybe she would. I'm not lending money at the moment.\"", guideFront: "Meet the new argument the same way when...", guideBack: "The same line, to a different case" },
+            { front: "Step 4 · Keep the Tone Flat — they say, \"Unbelievable. My own brother.\"", back: "\"I'm not lending money at the moment.\"", guideFront: "Deliver it level every time when...", guideBack: "The same words, the same way" },
+            { front: "Step 5 · Know When to Stop — they say, \"So what am I supposed to do?\"", back: "\"We're going round in circles. I won't lend it, but I'll go through the numbers with you on Saturday if you want.\"", guideFront: "End it rather than repeat again when...", guideBack: "The last round" },
+          ]
+        },
+        {
+          bundle: 'family',
+          situation: "Your father keeps pressing you to take over the family business. You have decided you will not. Your line is \"I'm not taking over the business.\"",
+          steps: [
+            { front: "Step 1 · Acknowledge, Then Repeat — they say, \"I built this for you, you know.\"", back: "\"I know you did, and I'm grateful. I'm not taking over the business.\"", guideFront: "Show you heard them first when...", guideBack: "A nod, then the same line" },
+            { front: "Step 2 · Keep the Same Words — they say, \"Just say you'll think about it.\"", back: "\"I'm not taking over the business.\"", guideFront: "Repeat it word for word when...", guideBack: "The same answer, again" },
+            { front: "Step 3 · Stay on Your Line — they say, \"Your grandfather would be ashamed.\"", back: "\"Maybe. I'm not taking over the business.\"", guideFront: "Meet the new argument the same way when...", guideBack: "The same line, to a different case" },
+            { front: "Step 4 · Keep the Tone Flat — they say, \"You're throwing it all away.\"", back: "\"I'm not taking over the business.\"", guideFront: "Deliver it level every time when...", guideBack: "The same words, the same way" },
+            { front: "Step 5 · Know When to Stop — they say, \"We'll talk about it again at Easter.\"", back: "\"We can talk about anything at Easter. This answer will be the same.\"", guideFront: "End it rather than repeat again when...", guideBack: "The last round" },
+          ]
+        }
       ]
     },
     {
@@ -4093,6 +4159,66 @@ const multiStepCollections = {
             { front: "Step 4 · Know When to Stop — they say, \"Could we see how it goes after that?\"", back: "\"The weekend is the offer. Say if you want it.\"", guideFront: "End it rather than repeat again when...", guideBack: "The last round" },
           ]
         },
+        {
+          bundle: 'services',
+          situation: "Your broadband bill went up by a third. You want it back down, but you are happy to stay if the price is fair. Your line is \"I'd like the old price back.\"",
+          steps: [
+            { front: "Step 1 · Acknowledge, Then Repeat — they say, \"All our prices rose this year.\"", back: "\"I understand. I'd like the old price back.\"", guideFront: "Show you heard them first when...", guideBack: "A nod, then the same line" },
+            { front: "Step 2 · Stay on Your Line — they say, \"You're getting faster speeds now.\"", back: "\"Maybe. I'd like the old price back.\"", guideFront: "Meet the new argument the same way when...", guideBack: "The same line, to a different case" },
+            { front: "Step 3 · Offer a Workable Compromise — they say, \"I can't do the old price at all.\"", back: "\"Then halfway back for twelve months, and I'll stay.\"", guideFront: "Give something that works for you when...", guideBack: "The limit of what you'll offer" },
+            { front: "Step 4 · Know When to Stop — they say, \"Could we say a quarter back?\"", back: "\"Halfway is the offer. If that's not possible, I'll cancel.\"", guideFront: "End it rather than repeat again when...", guideBack: "The last round" },
+          ]
+        },
+        {
+          bundle: 'services',
+          situation: "The shop will not refund a faulty jacket because you lost the receipt. Your line is \"I'd like this sorted today.\"",
+          steps: [
+            { front: "Step 1 · Acknowledge, Then Repeat — they say, \"Without a receipt my hands are tied.\"", back: "\"I understand. I'd like this sorted today.\"", guideFront: "Show you heard them first when...", guideBack: "A nod, then the same line" },
+            { front: "Step 2 · Just the Position — they say, \"Are you sure you bought it here?\"", back: "\"I am. I'd like this sorted today.\"", guideFront: "State it without explaining when...", guideBack: "The bare position" },
+            { front: "Step 3 · Offer a Workable Compromise — they say, \"I can't refund it, I'm afraid.\"", back: "\"Then an exchange for the same jacket in a size that fits works for me.\"", guideFront: "Give something that works for you when...", guideBack: "The limit of what you'll offer" },
+            { front: "Step 4 · Know When to Stop — they say, \"I'd have to check the stockroom, it could take a while.\"", back: "\"That's fine, I'll wait. An exchange is all I'm asking for.\"", guideFront: "End it rather than repeat again when...", guideBack: "The last round" },
+          ]
+        },
+        {
+          bundle: 'services',
+          situation: "A street fundraiser wants you to sign up for a monthly direct debit. You do not sign up in the street, but you like the cause. Your line is \"I don't sign up in the street.\"",
+          steps: [
+            { front: "Step 1 · Acknowledge, Then Repeat — they say, \"It's just the price of a coffee a month.\"", back: "\"I'm sure it is. I don't sign up in the street.\"", guideFront: "Show you heard them first when...", guideBack: "A nod, then the same line" },
+            { front: "Step 2 · Just the Position — they say, \"What's stopping you, then?\"", back: "\"Nothing in particular. I don't sign up in the street.\"", guideFront: "State it without explaining when...", guideBack: "The bare position" },
+            { front: "Step 3 · Offer a Workable Compromise — they say, \"So you don't want to help at all?\"", back: "\"I didn't say that. I'll make a one-off donation on your website tonight.\"", guideFront: "Give something that works for you when...", guideBack: "The limit of what you'll offer" },
+            { front: "Step 4 · Know When to Stop — they say, \"Could I just take your email so we can remind you?\"", back: "\"No, thanks. I'll do the website. Have a good afternoon.\"", guideFront: "End it rather than repeat again when...", guideBack: "The last round" },
+          ]
+        },
+        {
+          bundle: 'family',
+          situation: "Your parents want you to spend the whole summer week at their cottage. You do not want to give up the week. Your line is \"I can't do the whole week.\"",
+          steps: [
+            { front: "Step 1 · Acknowledge, Then Repeat — they say, \"We hardly ever get you all together.\"", back: "\"I know, and I like it too. I can't do the whole week.\"", guideFront: "Show you heard them first when...", guideBack: "A nod, then the same line" },
+            { front: "Step 2 · Just the Position — they say, \"What else could you possibly be doing?\"", back: "\"Nothing I want to move. I can't do the whole week.\"", guideFront: "State it without explaining when...", guideBack: "The bare position" },
+            { front: "Step 3 · Offer a Workable Compromise — they say, \"So you're not coming at all, then.\"", back: "\"I didn't say that. I can come Thursday to Sunday.\"", guideFront: "Give something that works for you when...", guideBack: "The limit of what you'll offer" },
+            { front: "Step 4 · Know When to Stop — they say, \"Couldn't you make it Tuesday?\"", back: "\"Thursday to Sunday is the offer. I'd love to come for that.\"", guideFront: "End it rather than repeat again when...", guideBack: "The last round" },
+          ]
+        },
+        {
+          bundle: 'family',
+          situation: "Your sister wants you to look after her dog for three weeks while she travels. Three weeks will not work for you. Your line is \"Three weeks doesn't work for me.\"",
+          steps: [
+            { front: "Step 1 · Acknowledge, Then Repeat — he loves you, and kennels are so expensive.", back: "\"I know they are. Three weeks doesn't work for me.\"", guideFront: "Show you heard them first when...", guideBack: "A nod, then the same line" },
+            { front: "Step 2 · Stay on Your Line — they say, \"I looked after your cat when you moved.\"", back: "\"You did, and I was grateful. Three weeks doesn't work for me.\"", guideFront: "Meet the new argument the same way when...", guideBack: "The same line, to a different case" },
+            { front: "Step 3 · Offer a Workable Compromise — they say, \"Then I'll just have to cancel the trip.\"", back: "\"I can take him the first week, and help you find someone for the other two.\"", guideFront: "Give something that works for you when...", guideBack: "The limit of what you'll offer" },
+            { front: "Step 4 · Know When to Stop — they say, \"One week barely helps.\"", back: "\"It's what I can do. Let me know if you want it.\"", guideFront: "End it rather than repeat again when...", guideBack: "The last round" },
+          ]
+        },
+        {
+          bundle: 'family',
+          situation: "Your mother-in-law wants to stay with you for a month after her operation. A month is too long for your household. Your line is \"A month isn't possible for us.\"",
+          steps: [
+            { front: "Step 1 · Acknowledge, Then Repeat — they say, \"I won't be any trouble, I promise.\"", back: "\"I know you won't. A month isn't possible for us.\"", guideFront: "Show you heard them first when...", guideBack: "A nod, then the same line" },
+            { front: "Step 2 · Just the Position — they say, \"Is it something I've done?\"", back: "\"Not at all. A month just isn't possible for us.\"", guideFront: "State it without explaining when...", guideBack: "The bare position" },
+            { front: "Step 3 · Offer a Workable Compromise — they say, \"So I'll be on my own, then.\"", back: "\"You won't. You can stay the first week, and we'll come by every other day after that.\"", guideFront: "Give something that works for you when...", guideBack: "The limit of what you'll offer" },
+            { front: "Step 4 · Know When to Stop — they say, \"Could we at least say two weeks?\"", back: "\"The first week is what we can do, and we'll be round a lot after. That's the plan.\"", guideFront: "End it rather than repeat again when...", guideBack: "The last round" },
+          ]
+        }
       ]
     },
     {
@@ -4131,6 +4257,66 @@ const multiStepCollections = {
             { front: "Step 4 · Know When to Stop — they say, \"Take it how you like.\"", back: "\"I'm going to leave it there. The answer's no.\"", guideFront: "End it rather than repeat again when...", guideBack: "The last round" },
           ]
         },
+        {
+          bundle: 'services',
+          situation: "A call-centre agent becomes rude when you keep asking to cancel.",
+          steps: [
+            { front: "Step 1 · Stay on Your Line — they say, \"Honestly, people like you are why prices go up.\"", back: "\"Perhaps. I'd like to cancel, please.\"", guideFront: "Meet the new argument the same way when...", guideBack: "The same line, to a different case" },
+            { front: "Step 2 · Keep the Tone Flat — they say, \"I don't know why you're being so difficult.\"", back: "\"I'd like to cancel, please.\"", guideFront: "Deliver it level every time when...", guideBack: "The same words, the same way" },
+            { front: "Step 3 · Name it once — they say, \"You're wasting my time and yours.\"", back: "\"I'm not going to be spoken to like that. I'd like the cancellation processed.\"", guideFront: "Name what is happening, once when...", guideBack: "One observation, then back to the line" },
+            { front: "Step 4 · Know When to Stop — they say, \"Fine, hold on.\"", back: "\"Thank you. Please email me the confirmation.\"", guideFront: "End it rather than repeat again when...", guideBack: "The last round" },
+          ]
+        },
+        {
+          bundle: 'services',
+          situation: "At a car dealership, the salesman gets angry when you refuse the finance deal.",
+          steps: [
+            { front: "Step 1 · Stay on Your Line — they say, \"You're making a really stupid decision.\"", back: "\"Maybe. I'm paying upfront.\"", guideFront: "Meet the new argument the same way when...", guideBack: "The same line, to a different case" },
+            { front: "Step 2 · Keep the Tone Flat — they say, \"I've wasted an hour on you.\"", back: "\"I'm paying upfront.\"", guideFront: "Deliver it level every time when...", guideBack: "The same words, the same way" },
+            { front: "Step 3 · Name it once — they say, \"Nobody pays cash these days, are you hiding something?\"", back: "\"I'm not going to answer that. If we can't do the sale as it is, I'll go elsewhere.\"", guideFront: "Name what is happening, once when...", guideBack: "One observation, then back to the line" },
+            { front: "Step 4 · Know When to Stop — they say, \"Do what you want.\"", back: "\"I will. Thanks for your time.\"", guideFront: "End it rather than repeat again when...", guideBack: "The last round" },
+          ]
+        },
+        {
+          bundle: 'services',
+          situation: "A doorstep seller starts raising his voice when you say no for the third time.",
+          steps: [
+            { front: "Step 1 · Keep the Tone Flat — he raises his voice: \"I'm just trying to help you!\"", back: "\"I don't buy at the door.\"", guideFront: "Deliver it level every time when...", guideBack: "The same words, the same way" },
+            { front: "Step 2 · Acknowledge, Then Repeat — they say, \"You haven't even listened to what I'm offering!\"", back: "\"I've heard enough to decide. I don't buy at the door.\"", guideFront: "Show you heard them first when...", guideBack: "A nod, then the same line" },
+            { front: "Step 3 · Name it once — he steps closer and keeps talking over you.", back: "\"Please step back. I'm not going to talk with you shouting.\"", guideFront: "Name what is happening, once when...", guideBack: "One observation, then back to the line" },
+            { front: "Step 4 · Know When to Stop — they say, \"So you're just going to shut the door on me?\"", back: "\"I am. Goodbye.\"", guideFront: "End it rather than repeat again when...", guideBack: "The last round" },
+          ]
+        },
+        {
+          bundle: 'family',
+          situation: "At a family dinner, your father moves from asking you to call more often to saying you have abandoned them.",
+          steps: [
+            { front: "Step 1 · Stay on Your Line — they say, \"You only think of yourself these days.\"", back: "\"Maybe. I'm calling on Sundays, like I said.\"", guideFront: "Meet the new argument the same way when...", guideBack: "The same line, to a different case" },
+            { front: "Step 2 · Keep the Tone Flat — they say, \"Your mother cries about it, you know.\"", back: "\"I'm calling on Sundays.\"", guideFront: "Deliver it level every time when...", guideBack: "The same words, the same way" },
+            { front: "Step 3 · Name it once — they say, \"After everything we gave up for you.\"", back: "\"I don't think guilt is going to change my answer, and I don't want us to fight about it.\"", guideFront: "Name what is happening, once when...", guideBack: "One observation, then back to the line" },
+            { front: "Step 4 · Know When to Stop — they say, \"Fine. Do what you like.\"", back: "\"I'm going to leave it there. I'll call on Sunday.\"", guideFront: "End it rather than repeat again when...", guideBack: "The last round" },
+          ]
+        },
+        {
+          bundle: 'family',
+          situation: "Your sister has started telling you that you are the reason the family is falling apart, because you will not host.",
+          steps: [
+            { front: "Step 1 · Stay on Your Line — they say, \"Everyone's saying it, not just me.\"", back: "\"Perhaps. I'm not hosting this year.\"", guideFront: "Meet the new argument the same way when...", guideBack: "The same line, to a different case" },
+            { front: "Step 2 · Keep the Tone Flat — they say, \"You've always been the selfish one.\"", back: "\"I'm not hosting this year.\"", guideFront: "Deliver it level every time when...", guideBack: "The same words, the same way" },
+            { front: "Step 3 · Name it once — they say, \"Mum will be heartbroken, and that's on you.\"", back: "\"Putting Mum's feelings on me isn't going to change it. I'd rather we didn't do this.\"", guideFront: "Name what is happening, once when...", guideBack: "One observation, then back to the line" },
+            { front: "Step 4 · Know When to Stop — they say, \"Don't bother coming at all, then.\"", back: "\"I'm going to hang up now. I'll ring you at the weekend when it's calmer.\"", guideFront: "End it rather than repeat again when...", guideBack: "The last round" },
+          ]
+        },
+        {
+          bundle: 'family',
+          situation: "Your partner's brother is shouting at you in the hallway because you will not lend him the deposit.",
+          steps: [
+            { front: "Step 1 · Keep the Tone Flat — he raises his voice: \"You can easily afford it!\"", back: "\"I'm not lending the deposit.\"", guideFront: "Deliver it level every time when...", guideBack: "The same words, the same way" },
+            { front: "Step 2 · Acknowledge, Then Repeat — they say, \"You don't even care that I'll lose the flat!\"", back: "\"I do care that it's stressful. I'm not lending the deposit.\"", guideFront: "Show you heard them first when...", guideBack: "A nod, then the same line" },
+            { front: "Step 3 · Name it once — he keeps shouting over you.", back: "\"I'm not going to talk about this while you're shouting at me.\"", guideFront: "Name what is happening, once when...", guideBack: "One observation, then back to the line" },
+            { front: "Step 4 · Know When to Stop — they say, \"So you're just walking away.\"", back: "\"I am. We can talk when it's calmer.\"", guideFront: "End it rather than repeat again when...", guideBack: "The last round" },
+          ]
+        }
       ]
     },
   ],

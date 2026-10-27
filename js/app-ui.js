@@ -3062,8 +3062,9 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         details: [
           'Repeating yourself calmly is easy with a salesman and very hard with your mother. The pressure is older, the pattern is practised, and giving in has thirty years of history behind it.',
           'This bundle adds a full set of family and close-relationship situations to your Broken Record pack \u2014 the requests that come back every Christmas, the ones dressed up as concern, and the ones that arrive through somebody else.',
-          'The cards plug straight into the strategies you already train, so the extra material turns up inside your normal sessions rather than in a separate place.',
-          'The smallest purchase in Extended, aimed at the situations people actually lose.',
+          'What you get: eight new situations for each of the eight strategies, eight for each Collections deck, three new scenarios in each Sequence, eight in each Challenges category plus two categories of its own (when the pressure comes as concern, and when it comes through somebody else), and eight new Mindset cards for each limiting thought. Memorize keeps its standard cards, since the technique itself does not change.',
+          'The cards plug straight into the strategies you already train, so the extra material turns up inside your normal sessions, handsfree included. Turn the bundle on or off in the pack\u2019s settings.',
+          'Pro already includes a bundle built the same way, Services (shops, call centres and sales calls), so you can see exactly what this one adds before you buy.',
         ],
       },
       // v1.27.48 — `assertive::domestic` ÄR BORTTAGEN HÄRIFRÅN. Den sålde

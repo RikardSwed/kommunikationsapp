@@ -2152,17 +2152,21 @@ const BUNDLE_DEFS = {
       name: 'Pro Bundle',
       description: '',
     },
+    // v1.29.90 — both rebuilt as full bundles (Rikard 2026-10-27), the model
+    // for future extra input bundles: 8 per strategy, 8 per Collections deck,
+    // 3 scenarios per Sequence, 8 per Challenges category plus categories of
+    // their own, 8 per Mindset unit. Memorize keeps the standard cards.
     {
       id: 'services',
       tier: 'pro-opt',
       name: 'Services',
-      description: '',
+      description: 'Included in Pro. Shops, call centres, sales calls, cancellations, refunds and doorstep sellers.',
     },
     {
       id: 'family',
       tier: 'extended',
-      name: 'Family',
-      description: '',
+      name: 'Family & Close Relationships',
+      description: 'Parents, partners, siblings and in-laws \u2014 the requests that come back every year.',
     },
   ],
   respondingtopassiveaggression: [
@@ -5298,6 +5302,7 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.90', date: 'October 2026', title: 'Broken Record: Services and Family rebuilt as full input bundles', audience: 'dev', items: ['Both extra bundles in Broken Record now cover the pack like a Pro bundle does: 8 inputs per strategy in Single Strategy, 8 per Collections deck, 3 scenarios per Sequence (same length as Pro), 8 per Challenges category, and 8 per Mindset unit. Memorize keeps the standard cards, since the technique does not change. Before, each bundle was 3 cards per strategy in Single Strategy only.', 'Each bundle also has two Challenges categories of its own. Services: <em>It\u2019s the Policy</em> and <em>You Get Passed Along</em>. Family: <em>It\u2019s Dressed Up as Concern</em> and <em>It Comes Through Someone Else</em>. They show only when the bundle is on; DS.loadGroups already drops decks with no cards, in handsfree too.', 'Services stays included in Pro and serves as the example of what an extra bundle gives. Family & Close Relationships stays at 19 kr; its store text now says exactly what it contains.', 'This is the model for future extra input bundles (Datakrav per tr\u00e4ningsl\u00e4ge).'] },
   { version: 'v1.29.89', date: 'October 2026', title: 'Update for studio voices', audience: 'dev', items: ['When a pack\u2019s studio voice is recorded again on the server, Library \u2192 Voices shows an orange round arrow instead of the green tick, and the pack sheet and the handsfree panel offer <em>Update</em>. Download all includes updates. The old download keeps working until then.', 'The iPhone app now writes every clip of a package, so an updated line replaces the old one (DeckstackSpeechPlugin.swift).', 'Google voices are labelled like the ElevenLabs ones: "Kore (Google)".'] },
   { version: 'v1.29.88', date: 'October 2026', title: 'Download all studio voices; studio voices in the web app', audience: 'dev', items: ['Voice settings (⚙ in Library → Voices) has <em>Download all studio voices</em>: every voice for every pack you can use that is not downloaded yet, one after the other. What is already there is skipped.', 'Developer preview: Voices and the studio voices also work in the web app, with the screen on. The downloads are kept in the browser (Cache Storage). The release build switches this off (<code>STUDIO_WEB</code>).'] },
   { version: 'v1.29.87', date: 'October 2026', title: 'Voices lists only packs in this build', audience: 'dev', items: ['Library → Voices skips a pack that does not exist in the running build. The release build strips the complete-level packs, and <code>packVisibility()</code> answers <em>available</em> for a pack it has no config for, so a studio voice recorded for a complete pack would have been offered to every customer. Found before any such voice existed.'] },
