@@ -7,11 +7,11 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Deckstack" />
-  <link rel="manifest" href="manifest.json?v=12990" />
+  <link rel="manifest" href="manifest.json?v=12991" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12990" />
-  <link rel="stylesheet" href="css/tabler/tabler-icons.min.css?v=12990" />
+  <link rel="stylesheet" href="css/style.css?v=12991" />
+  <link rel="stylesheet" href="css/tabler/tabler-icons.min.css?v=12991" />
 </head>
 <body>
 
@@ -3020,6 +3020,15 @@
         <label class="settings-radio-label"><input type="radio" name="devLevel" value="freemium" id="devLevelFreemium" /> Freemium <span style="font-size:12px;color:#aaa;margin-left:4px;">Assertive &amp; Conversational only</span></label>
       </div>
     </div>
+    <!-- v1.29.91 — "View as freemium": can only LOWER the level. A purchase
+         from the App Store (TestFlight/sandbox too) outranks the radio above,
+         so without this a tester who bought Pro cannot see the free app. The
+         purchases themselves are untouched and count again when it is off.
+         Gone in the release build, together with the rest of #devSection. -->
+    <div class="settings-row">
+      <label>View as freemium <span style="display:block;font-size:12px;color:#aaa;">Ignores all purchases while on</span></label>
+      <label class="toggle"><input type="checkbox" id="devViewFreemium" /><span class="toggle-slider"></span></label>
+    </div>
     <div class="settings-row" data-help="packEditor">
       <label>Pack Editor</label>
       <button onclick="window.open('admin.html','_blank')" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Open &#8599;</button>
@@ -3287,23 +3296,23 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12990"></script>
-<script src="js/tagsData.js?v=12990"></script>
-<script src="js/programsData.js?v=12990"></script>
-<script src="js/challengesData.js?v=12990"></script>
-<script src="js/mindsetData.js?v=12990"></script>
-<script src="js/multiStepData.js?v=12990"></script>
-<script src="js/memorizeData.js?v=12990"></script>
-<script src="js/speech-text.js?v=12990"></script>
-<script src="js/mode-engine.js?v=12990"></script>
-<script src="js/app-core.js?v=12990"></script>
-<script src="js/app-modes.js?v=12990"></script>
-<script src="js/app-handsfree.js?v=12990"></script>
-<script src="js/iap.js?v=12990"></script>
-<script src="js/app-system.js?v=12990"></script>
-<script src="js/app-ui.js?v=12990"></script>
-<script src="js/app-voices.js?v=12990"></script>
-<script src="js/app-back.js?v=12990"></script>
+<script src="js/data.js?v=12991"></script>
+<script src="js/tagsData.js?v=12991"></script>
+<script src="js/programsData.js?v=12991"></script>
+<script src="js/challengesData.js?v=12991"></script>
+<script src="js/mindsetData.js?v=12991"></script>
+<script src="js/multiStepData.js?v=12991"></script>
+<script src="js/memorizeData.js?v=12991"></script>
+<script src="js/speech-text.js?v=12991"></script>
+<script src="js/mode-engine.js?v=12991"></script>
+<script src="js/app-core.js?v=12991"></script>
+<script src="js/app-modes.js?v=12991"></script>
+<script src="js/app-handsfree.js?v=12991"></script>
+<script src="js/iap.js?v=12991"></script>
+<script src="js/app-system.js?v=12991"></script>
+<script src="js/app-ui.js?v=12991"></script>
+<script src="js/app-voices.js?v=12991"></script>
+<script src="js/app-back.js?v=12991"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
