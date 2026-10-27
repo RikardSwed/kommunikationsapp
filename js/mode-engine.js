@@ -922,10 +922,93 @@ const DS = (function () {
     async function prev()  { const p = bridge(); if (p && p.previous) { try { await p.previous(); } catch (e) {} } }
     async function getState() { const p = bridge(); if (!p) return null; try { return await p.getState(); } catch (e) { return null; } }
 
+    // Studio voices (beta, 2026-10-26): which recorded voices are on the phone,
+    // and which of a list of pieces exist. Both answer empty on an older native
+    // plugin, which simply means "no studio voices" — never an error.
+    async function studioVoices() {
+      const p = bridge();
+      if (!p || typeof p.studioVoices !== 'function') return [];
+      try { const r = await p.studioVoices(); return (r && r.voices) || []; } catch (e) { return []; }
+    }
+    async function studioHas(paths) {
+      const p = bridge();
+      if (!p || typeof p.studioHas !== 'function') return paths.map(() => false);
+      try { const r = await p.studioHas({ paths }); return (r && r.present) || paths.map(() => false); }
+      catch (e) { return paths.map(() => false); }
+    }
+
     probe();   // resolve readiness at load, well before the user hits play
 
-    return { isReady, voiceIdForName, start, stop, togglePlay, next, prev, getState, probe };
+    return { isReady, voiceIdForName, start, stop, togglePlay, next, prev, getState, probe, studioVoices, studioHas };
   })();
+
+  // ── Studio voices (beta, 2026-10-26) ─────────────────────────────────────
+  // Recorded voices played from files instead of the iPhone voice. See "Plan —
+  // ljudfiler per pack (förslag 2)" in the vault.
+  //
+  // BEHIND A SWITCH. Developer settings → "Studio voices (beta)", off by
+  // default (localStorage ds_studio_voices). Off means: no studio voices in the
+  // voice picker, nothing looked up, every session exactly as before.
+  // STUDIO_ALLOWED is set to false by tools/build-release.js, so the App Store
+  // build can never turn it on (guideline 2.3.1); it reaches customers only in
+  // a later, reviewed version.
+  //
+  // How a session uses it: the native step list is built as always; when the
+  // chosen voice is a studio voice, annotate() splits every line into the same
+  // pieces the generator recorded (js/speech-text.js), names each piece after
+  // its fingerprint and asks native which files exist. A step then carries
+  // `pieces`: a file where there is one, the text where there is not — native
+  // plays the file, or reads that one piece with the iPhone voice.
+  const STUDIO_ALLOWED = true;
+  const DSStudio = (function () {
+    const KEY = 'ds_studio_voices';
+    const PREFIX = 'studio:';
+    function enabled() {
+      if (!STUDIO_ALLOWED) return false;
+      try { return localStorage.getItem(KEY) === '1'; } catch (e) { return false; }
+    }
+    function setEnabled(on) { try { localStorage.setItem(KEY, on ? '1' : '0'); } catch (e) {} }
+    function isStudio(v) { return typeof v === 'string' && v.indexOf(PREFIX) === 0; }
+    function voiceOf(v) { return isStudio(v) ? v.slice(PREFIX.length) : null; }
+    // "en-GB-Chirp3-HD-Kore" → "Kore (en-GB)"; anything else as it is.
+    function label(voice) {
+      const m = String(voice).match(/^([a-z]{2}-[A-Z]{2})-.*?-([A-Za-z]+)$/);
+      if (m) return m[2] + ' (' + m[1] + ')';
+      const w = String(voice).match(/^win-(.+)$/);
+      return w ? w[1] + ' (Windows test)' : String(voice);
+    }
+    async function voices() {
+      if (!enabled() || !DSNative.isReady()) return [];
+      return DSNative.studioVoices();
+    }
+    async function annotate(steps, voice) {
+      const ST = window.DSSpeechText;
+      if (!ST || !voice) return { files: 0, pieces: 0 };
+      const ids = new Map();          // piece text → relative path
+      const perStep = steps.map(st => {
+        const guide = st._guide || '';
+        const body = guide && st.text.indexOf(guide) === 0 ? st.text.slice(guide.length) : st.text;
+        return ST.pieces(guide, body);
+      });
+      const texts = [...new Set(perStep.flat())];
+      await Promise.all(texts.map(async t => { ids.set(t, voice + '/' + await ST.clipId(voice, t)); }));
+      const paths = texts.map(t => ids.get(t));
+      const present = await DSNative.studioHas(paths);
+      const have = new Set(paths.filter((p, i) => present[i]));
+      let files = 0, pieces = 0;
+      steps.forEach((st, i) => {
+        st.pieces = perStep[i].map(t => {
+          pieces++;
+          const rel = ids.get(t);
+          if (have.has(rel)) { files++; return { file: rel, text: t }; }
+          return { text: t };
+        });
+      });
+      return { files, pieces };
+    }
+    return { enabled, setEnabled, isStudio, voiceOf, label, voices, annotate, PREFIX };
+  })();
+  window.DSStudio = DSStudio;
 
   function pickVoice(gender) {
     // getVoices() on a missing engine is a ReferenceError, not a null — see
@@ -1231,7 +1314,12 @@ const DS = (function () {
     // 'female'/'male' in the browser) to the voice NAME, so DSNative can map
     // it to a stable AVSpeech identifier. Gender values → null (native default).
     function currentVoiceName(s) {
-      const val = s.voiceGender;
+      let val = s.voiceGender;
+      // A studio voice still needs an iPhone voice for pieces with no file:
+      // the last iPhone voice the user chose (app-handsfree.js keeps it).
+      if (DSStudio.isStudio(val)) {
+        try { val = localStorage.getItem('ds_hf_voice_iphone'); } catch (e) { val = null; }
+      }
       if (!val || val === 'female' || val === 'male') return null;
       const list = TTS.voices() || [];
       const v = list.find(x => String(x.index) === String(val));
@@ -1250,11 +1338,11 @@ const DS = (function () {
       mode.pausedInGroup = null;
       const voiceId = DSNative.voiceIdForName(currentVoiceName(s));
       const steps = [];
-      const push = (text, side, postMs, gi, ii, groupStart, gTitle) => {
+      const push = (text, side, postMs, gi, ii, groupStart, gTitle, guide) => {
         if (!text) return;
         steps.push({ text: text, voiceId: voiceId, rate: s.rate,
                      postDelayMs: postMs, gi: gi, ii: ii, side: side,
-                     groupStart: groupStart, groupTitle: gTitle });
+                     groupStart: groupStart, groupTitle: gTitle, _guide: guide || '' });
       };
       const loop = !!s.loop;
       const lastRow = loop ? st.r : plan.rows - 1;
@@ -1272,10 +1360,10 @@ const DS = (function () {
           const [effGF, effGB] = guideTextsFor(g, it);
           const lead = effGF ? dsSpokenGuide(effGF) : (gTitle ? gTitle + '. ' : '');
           const gBack = effGB ? dsSpokenGuide(effGB) : '';
-          push(lead + cfg.itemFront(it, g), 'front', s.thinkPause * 1000, realGi, idx, firstOfRow, gTitle);
+          push(lead + cfg.itemFront(it, g), 'front', s.thinkPause * 1000, realGi, idx, firstOfRow, gTitle, lead);
           firstOfRow = false;
           if (s.cardBack && speakBack(it)) {
-            push(gBack + cfg.itemBack(it, g), 'back', s.genPause * 1000, realGi, idx, false, gTitle);
+            push(gBack + cfg.itemBack(it, g), 'back', s.genPause * 1000, realGi, idx, false, gTitle, gBack);
           }
         }
         pStart = 0;
@@ -1287,8 +1375,22 @@ const DS = (function () {
       updateButtons();
       applyNativeStep(steps[0]);
       bindNativeForeground();
-      DSNative.start({ steps: steps, loop: loop, loopStartIndex: 0, subtitle: packSubtitle() },
-                     onNativeStep, onNativeDone, onNativePlayState);
+      startNative({ steps: steps, loop: loop, loopStartIndex: 0, subtitle: packSubtitle() }, s);
+    }
+
+    // Hands the session to native. With a studio voice chosen (beta switch on)
+    // every step first gets its recorded pieces; otherwise this is exactly the
+    // old call. The helper-only `_guide` field never leaves JS.
+    async function startNative(payload, s) {
+      const voice = DSStudio.enabled() ? DSStudio.voiceOf(s.voiceGender) : null;
+      if (voice) {
+        const ses = mode._nativeSession = {};
+        try { await DSStudio.annotate(payload.steps, voice); } catch (e) {}
+        // Stopped, or a new session started, while the pieces were looked up.
+        if (mode._nativeSession !== ses || !mode.playing || !mode._nativeActive) return;
+      }
+      payload.steps.forEach(st => { delete st._guide; });
+      DSNative.start(payload, onNativeStep, onNativeDone, onNativePlayState);
     }
 
     // The second line on the lock screen: the pack's name.
@@ -1320,11 +1422,11 @@ const DS = (function () {
 
       const voiceId = DSNative.voiceIdForName(currentVoiceName(s));
       const steps = [];
-      const push = (text, side, postMs, gi, ii, groupStart, gTitle) => {
+      const push = (text, side, postMs, gi, ii, groupStart, gTitle, guide) => {
         if (!text) return;
         steps.push({ text: text, voiceId: voiceId, rate: s.rate,
                      postDelayMs: postMs, gi: gi, ii: ii, side: side,
-                     groupStart: groupStart, groupTitle: gTitle });
+                     groupStart: groupStart, groupTitle: gTitle, _guide: guide || '' });
       };
 
       const loop = !!s.loop;
@@ -1359,10 +1461,10 @@ const DS = (function () {
           const gFront = effGF ? dsSpokenGuide(effGF) : '';
           const gBack  = effGB ? dsSpokenGuide(effGB) : '';
 
-          push(gFront + front, 'front', s.thinkPause * 1000, realGi, ii2, firstOfGroup, gTitle);
+          push(gFront + front, 'front', s.thinkPause * 1000, realGi, ii2, firstOfGroup, gTitle, gFront);
           firstOfGroup = false;
           if (s.cardBack && speakBack(it)) {
-            push(gBack + back, 'back', s.genPause * 1000, realGi, ii2, false, gTitle);
+            push(gBack + back, 'back', s.genPause * 1000, realGi, ii2, false, gTitle, gBack);
           }
         }
       }
@@ -1384,8 +1486,7 @@ const DS = (function () {
 
       applyNativeStep(steps[0]);   // show the first card at once; events then drive it
       bindNativeForeground();
-      DSNative.start({ steps: steps, loop: loop, loopStartIndex: loopStartIndex, subtitle: packSubtitle() },
-                     onNativeStep, onNativeDone, onNativePlayState);
+      startNative({ steps: steps, loop: loop, loopStartIndex: loopStartIndex, subtitle: packSubtitle() }, s);
     }
 
     // v1.26.87 — native told us it paused or resumed, which happens when the

@@ -80,23 +80,42 @@ async function initHandsfreeVoicePickers() {
   if (!DS.tts.isNative() || !voices.length) return;
 
   const saved = localStorage.getItem(HF_VOICE_KEY);
+  // Studio voices (beta, 2026-10-26): only with the developer switch on, and
+  // only voices that are actually on the phone. Off = the list is exactly as
+  // before, and a saved studio choice falls back to an iPhone voice.
+  const studio = window.DSStudio ? await window.DSStudio.voices() : [];
+  const esc = t => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+  const iphoneOpts = voices
+    .map(v => `<option value="${v.index}">${esc(v.name)} (${esc(v.lang)})</option>`)
+    .join('');
+  const optionsHtml = studio.length
+    ? '<optgroup label="Studio voices">' +
+        studio.map(v => `<option value="${esc(window.DSStudio.PREFIX + v)}">${esc(window.DSStudio.label(v))}</option>`).join('') +
+      '</optgroup><optgroup label="iPhone voices">' + iphoneOpts + '</optgroup>'
+    : iphoneOpts;
+  const fallback = voices.find(v => /samantha|ava|allison|karen|serena|moira|tessa/i.test(v.name));
+  const fallbackVal = String((fallback || voices[0]).index);
+  // The iPhone voice used for pieces a studio voice has no file for.
+  if (!voices.some(v => String(v.index) === localStorage.getItem('ds_hf_voice_iphone'))) {
+    localStorage.setItem('ds_hf_voice_iphone',
+      (saved !== null && voices.some(v => String(v.index) === saved)) ? saved : fallbackVal);
+  }
   HF_VOICE_SELECTS.forEach(id => {
     const sel = document.getElementById(id);
     if (!sel) return;
-    sel.innerHTML = voices
-      .map(v => `<option value="${v.index}">${v.name} (${v.lang})</option>`)
-      .join('');
+    sel.innerHTML = optionsHtml;
     // Restore the saved voice, else prefer a female-sounding default so the
     // app still sounds the way it did before.
-    const fallback = voices.find(v => /samantha|ava|allison|karen|serena|moira|tessa/i.test(v.name));
-    const want = (saved !== null && voices.some(v => String(v.index) === saved))
-      ? saved
-      : String((fallback || voices[0]).index);
+    const has = v => [...sel.options].some(o => o.value === v);
+    const want = (saved !== null && has(saved)) ? saved : fallbackVal;
     sel.value = want;
     if (sel._voiceBound) return;   // re-running must not stack listeners
     sel._voiceBound = true;
     sel.addEventListener('change', () => {
       localStorage.setItem(HF_VOICE_KEY, sel.value);
+      if (!(window.DSStudio && window.DSStudio.isStudio(sel.value))) {
+        localStorage.setItem('ds_hf_voice_iphone', sel.value);
+      }
       // Keep every handsfree mode on the same voice.
       HF_VOICE_SELECTS.forEach(other => {
         const o = document.getElementById(other);
@@ -106,6 +125,18 @@ async function initHandsfreeVoicePickers() {
   });
 }
 initHandsfreeVoicePickers();
+
+// Studio voices (beta, 2026-10-26) — the developer switch. Turning it on or off
+// rebuilds the voice pickers at once, so the studio group appears or goes.
+(function initStudioSwitch() {
+  const t = document.getElementById('devStudioVoicesToggle');
+  if (!t || !window.DSStudio) return;
+  t.checked = window.DSStudio.enabled();
+  t.addEventListener('change', () => {
+    window.DSStudio.setEnabled(t.checked);
+    initHandsfreeVoicePickers();
+  });
+})();
 
 // Refresh the list every time a handsfree settings panel is opened, so a voice
 // downloaded in iOS Settings shows up without restarting the app.
