@@ -1,8 +1,8 @@
 // app-voices.js — Library → Voices: the studio voices on this phone (beta, v1.29.85)
 //
-// A tab after Favorites, shown ONLY with Developer settings → "Studio voices
-// (beta)" on and in the iPhone app. With the switch off the tab button is
-// hidden and nothing here runs a request, so the Library is exactly as before.
+// A tab after Favorites, in the iPhone app (v1.29.86: no longer behind a
+// developer switch). The web app has no native player, so the tab stays hidden
+// there and nothing here runs a request.
 //
 //   • One row per pack that HAS studio voices (the list comes from index.json
 //     on voices.deckstack.app — see DSStudio in mode-engine.js). Packs the user
@@ -48,7 +48,8 @@
   gear.id = 'libBannerGearBtn';
   gear.title = 'Voice settings';
   gear.setAttribute('aria-label', 'Voice settings');
-  gear.innerHTML = '<i class="ti ti-settings" aria-hidden="true"></i>';
+  // The same gear as on the home screen and in the training modes (v1.29.86).
+  gear.innerHTML = '<svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4.5h6l.7 3a7.5 7.5 0 0 1 2.3 1.35l2.9-.9 3 5.2-2.3 1.8a7.5 7.5 0 0 1 0 2.1l2.3 1.8-3 5.2-2.9-.9a7.5 7.5 0 0 1-2.3 1.35l-.7 3H13l-.7-3a7.5 7.5 0 0 1-2.3-1.35l-2.9.9-3-5.2 2.3-1.8a7.5 7.5 0 0 1 0-2.1L4.1 14.1l3-5.2 2.9.9A7.5 7.5 0 0 1 12.3 8Z"/><circle cx="16" cy="16" r="4.5"/></svg>';
   gear.style.display = 'none';
   banner.insertAdjacentElement('beforebegin', gear);
   gear.addEventListener('click', openSettingsSheet);
@@ -122,13 +123,15 @@
       .sort((a, b) => packOrder(a.pack) - packOrder(b.pack));
     const rows = packs.map(({ pack, acc }) => {
       const mine = inst.filter(r => r.pack === pack);
+      // v1.29.86 — one symbol instead of names and sizes (Rikard): a cloud
+      // with an arrow = can be downloaded, a green tick = something is on
+      // the phone. Which voices, and how big, is in the sheet behind a tap.
       let status;
       if (acc === 'pro') status = '<span class="pack-lock-badge pack-lock-badge--pro">Pro</span>';
-      else if (mine.length) status = '<span class="voices-status voices-ok">' + esc(mine.map(r => short(r.voice)).join(' · ')) + ' ✓ · ' + mb(mine.reduce((s, r) => s + (r.bytes || 0), 0)) + '</span>';
-      else status = '<span class="voices-status">Not downloaded</span>';
+      else if (mine.length) status = '<i class="ti ti-circle-check voices-icon voices-ok" aria-label="Downloaded"></i>';
+      else status = '<i class="ti ti-cloud-download voices-icon" aria-label="Not downloaded"></i>';
       return '<button class="voices-row" type="button" data-pack="' + esc(pack) + '" data-acc="' + acc + '">' +
-               '<span class="voices-row-main"><span class="voices-row-name">' + esc(packName(pack)) + '</span>' +
-               '<span class="voices-row-sub">' + esc(byPack[pack].map(x => short(x.voice)).join(' · ')) + '</span></span>' +
+               '<span class="voices-row-main"><span class="voices-row-name">' + esc(packName(pack)) + '</span></span>' +
                '<span class="voices-row-side">' + status + '<span class="voices-chev" aria-hidden="true">›</span></span>' +
              '</button>';
     }).join('');

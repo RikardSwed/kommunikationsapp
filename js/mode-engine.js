@@ -979,12 +979,9 @@ const DS = (function () {
   // Recorded voices played from files instead of the iPhone voice. See "Plan —
   // ljudfiler per pack (förslag 2)" in the vault.
   //
-  // BEHIND A SWITCH. Developer settings → "Studio voices (beta)", off by
-  // default (localStorage ds_studio_voices). Off means: no studio voices in the
-  // voice picker, nothing looked up, every session exactly as before.
-  // STUDIO_ALLOWED is set to false by tools/build-release.js, so the App Store
-  // build can never turn it on (guideline 2.3.1); it reaches customers only in
-  // a later, reviewed version.
+  // v1.29.81–85 this sat behind a developer switch; from v1.29.86 it is part
+  // of the app (iOS app only — the web app has no native player and shows
+  // none of it). STUDIO_ALLOWED = false turns the whole feature off again.
   //
   // How a session uses it: the native step list is built as always; when the
   // chosen voice is a studio voice, annotate() splits every line into the same
@@ -1001,10 +998,9 @@ const DS = (function () {
   const DSStudio = (function () {
     const KEY = 'ds_studio_voices';
     const PREFIX = 'studio:';
-    function enabled() {
-      if (!STUDIO_ALLOWED) return false;
-      try { return localStorage.getItem(KEY) === '1'; } catch (e) { return false; }
-    }
+    // v1.29.86 — part of the app now (Rikard 2026-10-27): no developer switch.
+    // STUDIO_ALLOWED stays as a one-line way to turn the whole feature off.
+    function enabled() { return STUDIO_ALLOWED; }
     function setEnabled(on) { try { localStorage.setItem(KEY, on ? '1' : '0'); } catch (e) {} }
     function isStudio(v) { return typeof v === 'string' && v.indexOf(PREFIX) === 0; }
     function voiceOf(v) { return isStudio(v) ? v.slice(PREFIX.length) : null; }

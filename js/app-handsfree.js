@@ -126,19 +126,6 @@ async function initHandsfreeVoicePickers() {
 }
 initHandsfreeVoicePickers();
 
-// Studio voices (beta, 2026-10-26) — the developer switch. Turning it on or off
-// rebuilds the voice pickers at once, so the studio group appears or goes.
-(function initStudioSwitch() {
-  const t = document.getElementById('devStudioVoicesToggle');
-  if (!t || !window.DSStudio) return;
-  t.checked = window.DSStudio.enabled();
-  t.addEventListener('change', () => {
-    window.DSStudio.setEnabled(t.checked);
-    initHandsfreeVoicePickers();
-    renderStudioPanels();
-    if (window.dsVoicesSync) window.dsVoicesSync();
-  });
-})();
 
 // Refresh the list every time a handsfree settings panel is opened, so a voice
 // downloaded in iOS Settings shows up without restarting the app.
@@ -148,8 +135,7 @@ initHandsfreeVoicePickers();
 });
 
 // ── Studio voices: download panel (beta, v1.29.83) ───────────────────────────
-// Under the Voice row in each handsfree settings sheet, ONLY with the developer
-// switch on and in the iPhone app: the recorded voices available for the open
+// Under the Voice row in each handsfree settings sheet, in the iPhone app: the recorded voices available for the open
 // pack, each with Download (size) / progress / Downloaded · Remove. With the
 // switch off the panel is removed, so nothing of it shows. The Voices tab in
 // the Library comes later and will reuse DSStudio.
@@ -193,7 +179,7 @@ async function renderStudioPanels() {
     }).join('') : '<div class="studio-panel-note">No studio voices for this pack yet.</div>';
   }
   // v1.29.85 — the mobile-data choice lives in Library → Voices → ⚙ now.
-  const foot = '<div class="studio-panel-note">A downloaded voice is chosen under Voice above. All studio voices and their settings: Library → Voices. Studio voices are AI-generated.</div>';
+  const foot = '<div class="studio-panel-note">A downloaded voice is chosen under Voice above.</div>';
   document.querySelectorAll('.studio-panel').forEach(p => {
     p.innerHTML = '<div class="studio-panel-title">Studio voices for this pack</div>' + body + foot;
   });
