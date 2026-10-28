@@ -253,7 +253,24 @@
         : 'The download did not finish. Try again — what is done is kept.');
     }
     afterChange();
-    if (document.querySelector('#voicesSheetBackdrop .voices-settings')) openSettingsSheet();
+    if (document.getElementById('voicesSettingsOverlay')) openSettingsSheet();
+  }
+
+  // v1.29.97 (Rikard) — Voice settings looks like the other settings panels:
+  // title, rows, buttons, the note, the guide, the version, and Done.
+  function settingsPanel(html) {
+    let o = document.getElementById('voicesSettingsOverlay');
+    if (o) o.remove();
+    o = document.createElement('div');
+    o.id = 'voicesSettingsOverlay';
+    o.className = 'settings-overlay open';
+    const ver = typeof VERSION !== 'undefined' ? VERSION : '';
+    o.innerHTML = '<div class="settings-panel voices-settings">' + html +
+      '<div class="settings-version">' + ver + '</div>' +
+      '<button class="settings-close" type="button" data-close>Done</button></div>';
+    document.body.appendChild(o);
+    o.addEventListener('click', e => { if (e.target === o || e.target.hasAttribute('data-close')) o.remove(); });
+    return o;
   }
 
   async function openSettingsSheet() {
@@ -261,13 +278,13 @@
     const used = inst.reduce((s, r) => s + (r.bytes || 0), 0);
     const need = miss.list.reduce((s, r) => s + r.bytes, 0);
     let allBtn;
-    if (bulk) allBtn = '<button class="fol-sheet-btn voices-sheet-gap" data-act="download-all" disabled>' + bulkText() + '</button>';
+    if (bulk) allBtn = '<button class="fol-sheet-btn voices-sheet-gap voices-all-btn" data-act="download-all" disabled>' + bulkText() + '</button>';
     else if (miss.error) allBtn = '';
-    else if (miss.list.length) allBtn = '<button class="fol-sheet-btn voices-sheet-gap" data-act="download-all">' +
+    else if (miss.list.length) allBtn = '<button class="fol-sheet-btn voices-sheet-gap voices-all-btn" data-act="download-all">' +
       (miss.list.every(x => x.update) ? 'Update all studio voices · ' : 'Download all studio voices · ') + mb(need) + '</button>';
     else allBtn = '<div class="voices-note">All studio voices you have access to are downloaded and up to date.</div>';
-    const b = sheet(
-      '<div class="voices-settings"></div><div class="fol-sheet-title">Voice settings</div>' +
+    const b = settingsPanel(
+      '<div class="settings-title">Voice settings</div>' +
       (S.web() ? '' :
       '<div class="settings-row voices-setting"><label>Download over mobile data</label>' +
         '<label class="toggle"><input type="checkbox" id="voicesCellular"' + (S.cellular() ? ' checked' : '') + '><span class="toggle-slider"></span></label></div>') +
@@ -277,17 +294,14 @@
       (inst.length ? '<button class="fol-sheet-btn fol-danger-btn voices-sheet-gap" data-act="remove-everything"' + (bulk ? ' disabled' : '') + '>Remove all downloaded voices</button>' : '') +
       '<div class="voices-note">' + (S.web()
         ? 'Developer preview: the voices are kept in this browser and play while the screen is on.'
-        : 'Studio voices are AI-generated. Downloaded voices work offline and are not backed up to iCloud; you can download them again at any time.') + '</div>');
-    // v1.29.96 — the guide to this tab
-    const gd = document.createElement('div');
-    gd.className = 'settings-row voices-setting';
-    gd.innerHTML = '<label>Guide: the Voices tab</label><button class="gd-btn" type="button">View</button>';
-    gd.querySelector('button').addEventListener('click', e => {
+        : 'Studio voices are AI-generated. Downloaded voices work offline and are not backed up to iCloud; you can download them again at any time.') + '</div>' +
+      // v1.29.96 — the guide to this tab, under the note
+      '<div class="gd-settings-head">Guides</div>' +
+      '<div class="settings-row voices-setting"><label>The Voices tab</label><button class="gd-btn" type="button" data-act="guide">View</button></div>');
+    b.querySelector('[data-act="guide"]').addEventListener('click', e => {
       e.stopPropagation(); b.remove();
       if (window.showGuide) window.showGuide('voices-tab');
     });
-    const note = b.querySelector('.voices-sheet > .voices-note:last-of-type');
-    b.querySelector('.voices-sheet').insertBefore(gd, note || b.querySelector('[data-close]'));
     const cell = b.querySelector('#voicesCellular');
     if (cell) cell.addEventListener('change', e => S.setCellular(e.target.checked));
     const dl = b.querySelector('[data-act="download-all"]');

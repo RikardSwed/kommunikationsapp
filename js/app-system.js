@@ -5350,6 +5350,7 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.97', date: 'October 2026', title: 'Pictures in the new guides, and Voice settings like the others', audience: 'dev', items: ['The guides <em>The Voices tab</em>, <em>Progress</em> and <em>Settings</em> get three pictures each: the symbols on Voices, a pack sheet and the gear sheet; the rings, the calendar and where your time went; the gear on the home screen, rows with switches and a backup file.', 'Voice settings is now a settings panel like the others: the rows, Download all, Remove all, the note about AI voices, the guide, the version number and <strong>Done</strong> in a box at the bottom.'] },
   { version: 'v1.29.96', date: 'October 2026', title: 'Guides for Voices, Progress, Settings and the Library', audience: 'dev', items: ['Four new guides that never open by themselves: <em>The Voices tab</em> (also behind the gear on Voices), <em>Progress</em> (also in Progress settings), <em>Settings</em> and <em>The Library</em>. Home Settings now has a <strong>Guides</strong> section with all six guides, then <strong>More</strong>.', 'How training works and the handsfree guide: the settings gear and the other guides get a page of their own, and <em>That is the whole thing</em> closes each guide on its own page.', 'What\u2019s new for users: studio voices, a better start (Saying No free, three recent packs, Intro for this pack) and Broken Record in full.'] },
   { version: 'v1.29.95', date: 'October 2026', title: 'Saying No is free; Passive Aggression Pt. 1 leaves Pro; View as Pro', audience: 'dev', items: ['<strong>Saying No</strong> moves from Pro to freemium, in place of Assertive Communication, with a new pack intro. Every free pack, and the Conversation Foundations packs a free user can reach, now has an intro.', '<strong>Responding to Passive Aggression Pt. 1</strong> leaves Pro; it is reached through the Extended programs Difficult Conversations and Handling Passive Aggression. The Pro screen now says 41 more packs.', 'Every training and handsfree settings screen has <em>Intro for this pack</em> under the guides, for packs that have an intro.', 'Developer settings: <em>View as Pro (no purchases)</em> under View as freemium. One at a time; both off is the normal app. Gone in the release build.'] },
   { version: 'v1.29.94', date: 'October 2026', title: 'Handsfree guides: studio voices, and where the settings are', audience: 'dev', items: ['<em>Handsfree</em>: after what handsfree is and how a round runs, a page on the two ways to a better voice (studio voices and iPhone voices), then one page for each: where studio voices are downloaded (Library › Voices, drawn) and how to get the iPhone voices.', '<em>Handsfree settings</em> starts by saying the settings are behind the settings gear and can be changed at any time, and a new last page covers Voice, studio voices for this pack, Grid navigation, input bundles and the input counter. Guide text now explains detailed and simple.'] },
@@ -8651,6 +8652,120 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
       '<rect class="gd-line" x="48" y="108" width="62" height="4.5" rx="2.2"/>' +
       label(125, 145, 'LIBRARY  ›  VOICES')),
 
+    // ── v1.29.97 — pictures for the Voices, Progress and Settings guides ──
+    // A toggle switch and a small cloud, used by several of them.
+    // the symbols on the Voices tab
+    voiceSymbols: () => svg(150,
+      [['cloud', 'READY TO DOWNLOAD'], ['tick', 'ON YOUR PHONE'], ['update', 'BETTER RECORDING'], ['pro', 'COMES WITH PRO']].map((r, i) => {
+        const y = 10 + i * 34, cx = 62, cy = y + 13;
+        let ic = '';
+        if (r[0] === 'cloud') ic = '<path class="gd-icon" d="M' + (cx + 5) + ' ' + (cy + 7) + ' h-11 a5 5 0 0 1 -1 -9.9 a7 7 0 0 1 13.6 -1.2 a4.5 4.5 0 0 1 0.9 8.9 Z" transform="translate(-1 -1)"/>' +
+                                  '<path class="gd-arrow" d="M' + cx + ' ' + (cy - 3) + ' v8 M' + (cx - 3) + ' ' + (cy + 2) + ' l3 3 l3 -3"/>';
+        if (r[0] === 'tick') ic = '<circle class="gd-ok" cx="' + cx + '" cy="' + cy + '" r="10"/><path class="gd-ok" d="M' + (cx - 5) + ' ' + cy + ' l3.5 3.5 l6.5 -7"/>';
+        if (r[0] === 'update') ic = '<path class="gd-arrow" d="M' + (cx + 8) + ' ' + (cy - 2) + ' a8.5 8.5 0 1 0 -1.5 6"/><path class="gd-arrow" d="M' + (cx + 9) + ' ' + (cy - 9) + ' v7 h-7"/>';
+        if (r[0] === 'pro') ic = '<rect class="gd-badge" x="' + (cx - 15) + '" y="' + (cy - 9) + '" width="30" height="18" rx="9"/><text class="gd-badge-tx" x="' + cx + '" y="' + (cy + 4) + '" text-anchor="middle">Pro</text>';
+        return '<rect class="gd-card" x="30" y="' + y + '" width="190" height="26" rx="8"/>' + ic +
+               '<text class="gd-label" x="92" y="' + (cy + 3) + '">' + r[1] + '</text>';
+      }).join('')),
+
+    // a pack's sheet: one voice to download, one already there
+    voiceSheet: () => svg(150,
+      '<rect class="gd-card" x="25" y="6" width="200" height="124" rx="12"/>' +
+      '<rect class="gd-line gd-line--strong" x="42" y="22" width="90" height="5" rx="2.5"/>' +
+      '<text class="gd-label" x="42" y="56">Matilda</text>' +
+      '<rect class="gd-panel" x="124" y="42" width="88" height="22" rx="7"/>' +
+      '<text class="gd-muted" x="168" y="57" text-anchor="middle">Download</text>' +
+      '<rect class="gd-ring" x="120" y="38" width="96" height="30" rx="10"/>' +
+      '<text class="gd-label" x="42" y="96">Chris</text>' +
+      '<circle class="gd-ok" cx="136" cy="92" r="8"/><path class="gd-ok" d="M132 92 l3 3 l5 -5.5"/>' +
+      '<text class="gd-muted" x="186" y="96" text-anchor="middle">Remove</text>' +
+      label(125, 146, 'TAP A PACK')),
+
+    // the gear on the Voices tab
+    voiceGear: () => svg(140,
+      '<rect class="gd-card" x="25" y="6" width="200" height="108" rx="12"/>' +
+      '<rect class="gd-line" x="40" y="26" width="96" height="4.5" rx="2.2"/>' +
+      '<rect class="gd-tog-on" x="178" y="20" width="30" height="17" rx="8.5"/><circle class="gd-knob" cx="199" cy="28.5" r="6.5"/>' +
+      '<rect class="gd-line" x="40" y="54" width="70" height="4.5" rx="2.2"/>' +
+      '<rect class="gd-line" x="160" y="54" width="48" height="4.5" rx="2.2"/>' +
+      '<rect class="gd-panel" x="40" y="76" width="170" height="26" rx="8"/>' +
+      '<text class="gd-label" x="125" y="93" text-anchor="middle">DOWNLOAD ALL</text>' +
+      label(125, 132, 'THE GEAR ON VOICES')),
+
+    // Progress: today's ring and the week under it
+    rings: () => {
+      const C = 2 * Math.PI * 34;
+      let g = '<circle class="gd-track" cx="125" cy="52" r="34" stroke-width="9"/>' +
+              '<circle class="gd-fill" cx="125" cy="52" r="34" stroke-width="9" stroke-dasharray="' + C.toFixed(1) + '" stroke-dashoffset="' + (C * 0.35).toFixed(1) + '" transform="rotate(-90 125 52)"/>' +
+              '<text class="gd-label" x="125" y="56" text-anchor="middle">12 min</text>';
+      [1, 1, 0.5, 1, 0.65, 0, 0].forEach((f, i) => {
+        const cx = 59 + i * 22, c = 2 * Math.PI * 7;
+        g += '<circle class="gd-track" cx="' + cx + '" cy="112" r="7" stroke-width="3"/>';
+        if (f) g += '<circle class="gd-fill" cx="' + cx + '" cy="112" r="7" stroke-width="3" stroke-dasharray="' + c.toFixed(1) + '" stroke-dashoffset="' + (c * (1 - f)).toFixed(1) + '" transform="rotate(-90 ' + cx + ' 112)"/>';
+      });
+      return svg(140, g + label(125, 136, 'TODAY, AND THIS WEEK'));
+    },
+
+    // Progress: the calendar, one ring a day
+    calendar: () => {
+      let g = '<text class="gd-label" x="125" y="16" text-anchor="middle">October</text>' +
+              '<path class="gd-arrow" d="M58 8 l-5 5 l5 5"/><path class="gd-arrow" d="M192 8 l5 5 l-5 5"/>';
+      const fill = [1,1,0,1,0.5,1,0, 1,0.4,1,1,0,1,1, 0,1,1,0.7,1,0,1, 1,1,0,1,1,0.3,0];
+      fill.forEach((f, i) => {
+        const cx = 59 + (i % 7) * 22, cy = 36 + Math.floor(i / 7) * 22, c = 2 * Math.PI * 7;
+        g += '<circle class="gd-track" cx="' + cx + '" cy="' + cy + '" r="7" stroke-width="3"/>';
+        if (f) g += '<circle class="gd-fill" cx="' + cx + '" cy="' + cy + '" r="7" stroke-width="3" stroke-dasharray="' + c.toFixed(1) + '" stroke-dashoffset="' + (c * (1 - f)).toFixed(1) + '" transform="rotate(-90 ' + cx + ' ' + cy + ')"/>';
+      });
+      g += '<circle class="gd-ring" cx="125" cy="58" r="12"/>';
+      return svg(140, g + label(125, 132, 'TAP A DAY'));
+    },
+
+    // Progress: where the time went
+    timeBars: () => svg(140,
+      '<rect class="gd-panel" x="75" y="6" width="100" height="22" rx="11"/>' +
+      '<rect class="gd-tog-on" x="77" y="8" width="48" height="18" rx="9"/>' +
+      '<text class="gd-badge-tx" x="101" y="21" text-anchor="middle">Week</text>' +
+      '<text class="gd-muted" x="150" y="21" text-anchor="middle">Month</text>' +
+      [[0.9, 'Listening'], [0.6, 'Small talk'], [0.35, 'Boundaries']].map((r, i) => {
+        const y = 44 + i * 24;
+        return '<text class="gd-muted" x="40" y="' + (y + 9) + '">' + r[1] + '</text>' +
+               '<rect class="gd-track-bar" x="110" y="' + (y + 2) + '" width="100" height="9" rx="4.5"/>' +
+               '<rect class="gd-fill-bar" x="110" y="' + (y + 2) + '" width="' + (100 * r[0]) + '" height="9" rx="4.5"/>';
+      }).join('') +
+      label(125, 132, 'WHERE YOUR TIME WENT')),
+
+    // Settings: the gear on the home screen
+    homeGear: () => svg(120,
+      '<rect class="gd-hero" x="20" y="6" width="210" height="84" rx="14"/>' +
+      '<rect class="gd-card" x="34" y="20" width="150" height="24" rx="12"/>' +
+      '<rect class="gd-line" x="50" y="30" width="54" height="4.5" rx="2.2"/>' +
+      '<g transform="translate(193 20) scale(0.75)"><path class="gd-icon gd-icon--light" d="M13 4.5h6l.7 3a7.5 7.5 0 0 1 2.3 1.35l2.9-.9 3 5.2-2.3 1.8a7.5 7.5 0 0 1 0 2.1l2.3 1.8-3 5.2-2.9-.9a7.5 7.5 0 0 1-2.3 1.35l-.7 3H13l-.7-3a7.5 7.5 0 0 1-2.3-1.35l-2.9.9-3-5.2 2.3-1.8a7.5 7.5 0 0 1 0-2.1L4.1 14.1l3-5.2 2.9.9A7.5 7.5 0 0 1 12.3 8Z"/><circle class="gd-icon gd-icon--light" cx="16" cy="16" r="4.5"/></g>' +
+      '<circle class="gd-ring" cx="205" cy="32" r="16"/>' +
+      '<rect class="gd-line gd-line--light" x="34" y="62" width="80" height="7" rx="3.5"/>' +
+      label(125, 110, 'THE GEAR ON THE HOME SCREEN')),
+
+    // Settings: rows with switches
+    switches: () => svg(110,
+      '<rect class="gd-card" x="30" y="6" width="190" height="78" rx="12"/>' +
+      '<text class="gd-muted" x="44" y="32">Dark mode</text>' +
+      '<rect class="gd-tog-on" x="176" y="20" width="30" height="17" rx="8.5"/><circle class="gd-knob" cx="197" cy="28.5" r="6.5"/>' +
+      '<rect class="gd-line" x="44" y="45" width="162" height="1" rx="0.5"/>' +
+      '<text class="gd-muted" x="44" y="66">Input counter</text>' +
+      '<rect class="gd-tog-off" x="176" y="54" width="30" height="17" rx="8.5"/><circle class="gd-knob" cx="185" cy="62.5" r="6.5"/>' +
+      label(125, 102, 'TAP A NAME FOR WHAT IT DOES')),
+
+    // Settings: a backup is a file only you keep
+    backup: () => svg(120,
+      '<rect class="gd-card" x="52" y="10" width="46" height="80" rx="10"/>' +
+      '<rect class="gd-line" x="64" y="24" width="22" height="4" rx="2"/>' +
+      '<rect class="gd-line" x="64" y="34" width="16" height="4" rx="2"/>' +
+      arrow(108, 50, 140, 50, 'M134 44 L141 50 L134 56') +
+      '<path class="gd-card" d="M152 22 h30 l12 12 v46 a4 4 0 0 1 -4 4 h-38 a4 4 0 0 1 -4 -4 v-54 a4 4 0 0 1 4 -4 Z"/>' +
+      '<path class="gd-icon" d="M182 22 v12 h12"/>' +
+      '<rect class="gd-line" x="160" y="50" width="26" height="4" rx="2"/>' +
+      '<rect class="gd-line" x="160" y="60" width="20" height="4" rx="2"/>' +
+      label(75, 106, 'YOUR PHONE', 'gd-muted') + label(173, 106, 'A FILE YOU KEEP', 'gd-muted')),
+
     // handsfree: the app talks, the screen can sleep
     handsfree: () => svg(150,
       card(30, 20, 100, 100, 3) +
@@ -8885,6 +9000,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
         {
           title: 'What the symbols mean',
           html:
+            ART.voiceSymbols() +
             rows([
               '<strong>A cloud with an arrow</strong> &mdash; ready to download.',
               '<strong>A green tick</strong> &mdash; on your phone.',
@@ -8896,6 +9012,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
         {
           title: 'Download and remove',
           html:
+            ART.voiceSheet() +
             rows([
               'Tap a pack to see its voices.',
               'Tap <strong>Download</strong> next to a voice. The size is on the button.',
@@ -8906,6 +9023,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
         {
           title: 'The gear on the Voices tab',
           html:
+            ART.voiceGear() +
             rows([
               '<strong>Download over mobile data</strong> &mdash; off to begin with.',
               '<strong>Space used</strong> &mdash; how much the voices take up.',
@@ -8935,6 +9053,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
         {
           title: 'Today and this week',
           html:
+            ART.rings() +
             rows([
               'The <strong>big ring</strong> fills toward your daily goal.',
               'The <strong>small rings</strong> under it are this week, one per day. A full circle is a goal day.',
@@ -8945,6 +9064,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
         {
           title: 'The calendar',
           html:
+            ART.calendar() +
             rows([
               'The arrows move back and forward in time.',
               'Tap a <strong>day</strong>, or a week number, to see what you trained.',
@@ -8955,6 +9075,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
         {
           title: 'Where your time went',
           html:
+            ART.timeBars() +
             rows([
               'Choose <strong>Week</strong> or <strong>Month</strong>.',
               'Split it by <strong>Topics</strong> or by <strong>Packs</strong>. Tap a topic to see its packs.',
@@ -8981,12 +9102,14 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
         {
           title: 'Settings',
           html:
+            ART.homeGear() +
             P('The gear on the home screen opens <strong>Settings</strong>: how the app looks, your data, the guides and your purchases.') +
             Pdim('Tap the name of a setting to see what it does.'),
         },
         {
           title: 'How it looks and works',
           html:
+            ART.switches() +
             rows([
               '<strong>Dark mode</strong> &mdash; a dark theme, easier on the eyes in the evening.',
               '<strong>Input counter on as default</strong> &mdash; shows where you are among a strategy&rsquo;s inputs on every training screen. You can still switch it per mode.',
@@ -8995,6 +9118,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
         {
           title: 'Your data',
           html:
+            ART.backup() +
             rows([
               '<strong>Backup</strong> &mdash; saves all your progress, favorites, folders and notes as a file that only you keep.',
               '<strong>Restore</strong> &mdash; puts a backup back, for example on a new phone.',
