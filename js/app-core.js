@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.29.91';
+const VERSION = 'v1.29.92';
 
 // Keep every version label in the UI in sync with VERSION (v1.26.44).
 // The hardcoded strings in index.html are only fallbacks — this runs at
@@ -629,15 +629,16 @@ function goNextPack() {
 // ─── RECENT PACKS (v1.29.38) ──────────────────────────────────────────────────
 // Every write of the Continue-card entry (dash_last_pack) goes through
 // dsSetLastPack, which also keeps a short history in dash_recent_packs —
-// newest first, one entry per pack, at most 5. The developer setting
-// "Show recent packs" (ds_recent_packs_count, 1–5, default 1) decides how many
-// of them the home screen shows under Continue. The setting only counts while
-// developer settings are unlocked AND present in the build (the release build
-// deletes #devSection), so an ordinary user always gets 1 — the Continue card
-// exactly as before.
+// newest first, one entry per pack, at most 5. The home screen shows
+// RECENT_PACKS_DEFAULT of them (v1.29.92, Rikard: 3, for everyone — it was 1
+// and developer-only). The developer setting "Show recent packs"
+// (ds_recent_packs_count, 1–5) can change it, but only while developer
+// settings are unlocked AND present in the build; everyone else, and the
+// release build, gets the default.
 const RECENT_PACKS_KEY   = 'dash_recent_packs';
 const RECENT_PACKS_COUNT = 'ds_recent_packs_count';
 const RECENT_PACKS_MAX   = 5;
+const RECENT_PACKS_DEFAULT = 3;
 function dsGetRecentPacks() {
   let list = [];
   try { list = JSON.parse(localStorage.getItem(RECENT_PACKS_KEY) || '[]') || []; } catch {}
@@ -673,10 +674,10 @@ function dsSetLastPack(json) {
   } catch {}
 }
 function dsRecentPacksCount() {
-  if (localStorage.getItem('ds_dev_unlocked') !== 'true') return 1;
-  if (!document.getElementById('devRecentPacksSelect')) return 1;
+  if (localStorage.getItem('ds_dev_unlocked') !== 'true') return RECENT_PACKS_DEFAULT;
+  if (!document.getElementById('devRecentPacksSelect')) return RECENT_PACKS_DEFAULT;
   const n = parseInt(localStorage.getItem(RECENT_PACKS_COUNT), 10);
-  return (n >= 1 && n <= RECENT_PACKS_MAX) ? n : 1;
+  return (n >= 1 && n <= RECENT_PACKS_MAX) ? n : RECENT_PACKS_DEFAULT;
 }
 window.dsSetLastPack      = dsSetLastPack;
 window.dsGetRecentPacks   = dsGetRecentPacks;
