@@ -589,7 +589,7 @@ body.pb-enabled .divider::after {
 .gd-art .gd-track-bar { fill: var(--ds-border); }
 .gd-art .gd-fill-bar  { fill: var(--ds-acc); }
 .gd-art .gd-tog-on    { fill: var(--ds-acc); }
-.gd-art .gd-tog-off   { fill: var(--ds-border); }
+.gd-art .gd-tog-off   { fill: var(--ds-txt3); opacity: .45; }   /* v1.29.98 — visible in dark mode too */
 .gd-art .gd-knob      { fill: #fff; }
 .gd-art .gd-hero      { fill: var(--ds-acc); opacity: .85; }
 .gd-art .gd-icon--light { stroke: rgba(60, 25, 5, 0.85); }
