@@ -5329,6 +5329,7 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.94', date: 'October 2026', title: 'Handsfree guides: studio voices, and where the settings are', audience: 'dev', items: ['<em>Handsfree</em>: after what handsfree is and how a round runs, a page on the two ways to a better voice (studio voices and iPhone voices), then one page for each: where studio voices are downloaded (Library › Voices, drawn) and how to get the iPhone voices.', '<em>Handsfree settings</em> starts by saying the settings are behind the settings gear and can be changed at any time, and a new last page covers Voice, studio voices for this pack, Grid navigation, input bundles and the input counter. Guide text now explains detailed and simple.'] },
   { version: 'v1.29.93', date: 'October 2026', title: 'Guides: the settings gear, drawn; more guides', audience: 'dev', items: ['The last page of <em>How training works</em> and of the handsfree guide shows the settings gear where it really is, top right of the training screen, drawn with the same gear icon. The text says <strong>settings gear</strong> and <strong>more guides</strong> (there are three now, not two), with a line on what they cover.', '<em>Six ways to train</em>: more space between the heading <em>The training modes</em> and the tiles.'] },
   { version: 'v1.29.92', date: 'October 2026', title: 'Assertive Communication is Pro; three recent packs on the home screen', audience: 'dev', items: ['Assertive Communication moves from freemium to Pro (Rikard\u2019s decision of 26 October, done as one of the last steps before release), so the free tier starts with less conflict material. Six free packs instead of seven; the Pro screen now says 43 more packs. A freemium user sees the pack with a Pro badge.', 'The home screen shows the last three packs you trained (Continue plus the two before it) for everyone. It was one, and more only through a developer setting. The developer setting still changes it while developer settings are unlocked.'] },
   { version: 'v1.29.91', date: 'October 2026', title: 'Developer settings: View as freemium', audience: 'dev', items: ['A purchase from the App Store (TestFlight and sandbox too) outranks the access-level radio, so a tester who had bought Pro could not see the free app. New switch under the radio: <em>View as freemium</em>. While it is on the level is freemium and nothing bought counts; turn it off and everything is back. The purchases themselves are never touched, and the radio works as before.', 'It can only lower the level, never raise it. The release build removes the switch with the rest of developer settings and sets <code>DEV_VIEW_AS = false</code>, so a flag left on a test device does nothing in the App Store version. New suite <code>tools/test-viewas.js</code>.'] },
@@ -8515,6 +8516,22 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
       card(70, 54, 110, 70, 3) +
       label(125, 143, 'THE SETTINGS GEAR')),
 
+    // v1.29.94 — studio voices: Library › Voices, a pack row with the
+    // download cloud, the same symbols as the Voices tab.
+    studio: () => svg(150,
+      '<rect class="gd-panel" x="25" y="8" width="200" height="28" rx="9"/>' +
+      '<text class="gd-muted" x="62" y="26" text-anchor="middle">Packs</text>' +
+      '<text class="gd-muted" x="112" y="26" text-anchor="middle">Topics</text>' +
+      '<text class="gd-label" x="182" y="26" text-anchor="middle">Voices</text>' +
+      '<rect class="gd-ring" x="155" y="11" width="54" height="22" rx="11"/>' +
+      '<rect class="gd-card" x="35" y="52" width="180" height="34" rx="8"/>' +
+      '<rect class="gd-line gd-line--strong" x="48" y="66" width="80" height="4.5" rx="2.2"/>' +
+      '<path class="gd-icon" d="M181 76 h-6 a5 5 0 0 1 -1 -9.9 a7 7 0 0 1 13.6 -1.2 a4.5 4.5 0 0 1 0.9 8.9 Z"/>' +
+      '<path class="gd-arrow" d="M182 66 v8 M179 71.5 l3 3 l3 -3"/>' +
+      '<rect class="gd-card" x="35" y="94" width="180" height="34" rx="8" opacity=".55"/>' +
+      '<rect class="gd-line" x="48" y="108" width="62" height="4.5" rx="2.2"/>' +
+      label(125, 145, 'LIBRARY  ›  VOICES')),
+
     // handsfree: the app talks, the screen can sleep
     handsfree: () => svg(150,
       card(30, 20, 100, 100, 3) +
@@ -8845,19 +8862,43 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             ]) +
             P('It keeps going by itself until you stop it. Say your answer properly &mdash; out loud, in a full sentence. Thinking it is not the same exercise.'),
         },
+        // v1.29.94 (Rikard) — the sound, after the point of handsfree: first
+        // that there are two ways to a better voice, then each of them.
         {
-          title: 'Better voices',
+          title: 'Two ways to a better voice',
+          html:
+            P('The voice the phone starts with is flat, and an hour of it is hard work. There are two better ones:') +
+            rows([
+              '<strong>Studio voices</strong> &mdash; recorded voices that sound like a real person. They are downloaded per pack, and some packs have them.',
+              '<strong>iPhone voices</strong> &mdash; the better voices built into iOS. Free, and they read every pack.',
+            ]) +
+            Pdim('Studio voices sound best where they exist. An iPhone voice covers the rest.'),
+        },
+        {
+          title: 'Studio voices',
+          html:
+            ART.studio() +
+            cap('Download once, then it works offline') +
+            rows([
+              'Go to <strong>Library &#8250; Voices</strong>. The packs that have studio voices are listed there.',
+              'Tap a pack and tap <strong>Download</strong> next to a voice.',
+              'Back in handsfree, choose it under <strong>Voice</strong> in the settings gear.',
+            ]) +
+            Pdim('First Strategies has studio voices for everyone, and more packs get them over time. The gear on the Voices tab has <strong>Download all</strong>.'),
+        },
+        {
+          title: 'iPhone voices',
           html:
             ART.voices() +
-            cap('iPhone') +
-            P('The default voice is flat and it makes an hour of this hard work. iOS has much better ones, free, but they have to be downloaded first:') +
+            cap('Once, on the phone') +
+            P('iOS has much better voices than the one it starts with, free, but they have to be downloaded first:') +
             rows([
               'iPhone <strong>Settings &#8250; Accessibility</strong>.',
               '<strong>Spoken Content &#8250; Voices &#8250; English</strong>.',
               'Download a <strong>Premium</strong> or <strong>Enhanced</strong> voice.',
-              'Come back here and pick it under <strong>Voice</strong> in the gear.',
+              'Come back here and pick it under <strong>Voice</strong> in the settings gear.',
             ]) +
-            Pdim('Worth the four minutes. It is the single biggest difference in handsfree.'),
+            Pdim('Worth the four minutes. A studio voice also uses it for any line it has no recording of.'),
         },
         {
           title: 'That is the whole thing',
@@ -8876,13 +8917,22 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
     'handsfree-more': {
       title: 'Handsfree settings',
       pages: [
+        // v1.29.94 (Rikard) — say first where these are and that they can be changed.
+        {
+          title: 'Handsfree settings',
+          html:
+            ART.gear() +
+            cap('Top right of every handsfree screen') +
+            P('Everything in this guide is a setting behind the <strong>settings gear</strong>. You decide what gets read, how long it waits for your answer, how fast it talks and in what order.') +
+            Pdim('Change them whenever you like. They apply the next time you press play, and the app remembers them.'),
+        },
         {
           title: 'What gets read',
           html:
             rows([
               '<strong>Strategy explanation</strong> &mdash; the full description at the start of each ' + D.one + '. Turn it off once you know them.',
               '<strong>Card back</strong> &mdash; the suggested answer. Off means you answer and never hear a model.',
-              '<strong>Guide text</strong> &mdash; the short framing line.',
+              '<strong>Guide text</strong> &mdash; the short line before a card. <em>Detailed</em> says how to use the strategy, <em>simple</em> only frames the card.',
             ]) +
             Pdim('Explanation off and card back on is the usual setting after the first few rounds.'),
         },
@@ -8902,10 +8952,21 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             rows([
               '<strong>Max inputs per ' + D.one + '</strong> &mdash; caps how many situations you get before it moves on.',
               '<strong>Loop current ' + D.one + '</strong> &mdash; stay on one until you stop it.',
-              '<strong>Shuffle</strong> &mdash; a different order each session.',
-              '<strong>Voice</strong> &mdash; see the first guide for how to add better ones.',
+              '<strong>Shuffle</strong> &mdash; a different order each session, for the ' + D.many + ', the inputs, or both.',
             ]) +
             Pdim('Looping one ' + D.one + ' with a long thinking pause is the closest thing to real rehearsal in the app.'),
+        },
+        {
+          title: 'Voice, and the rest',
+          html:
+            rows([
+              '<strong>Voice</strong> &mdash; the iPhone voices, and the studio voices you have downloaded. The first guide shows how to get better ones.',
+              '<strong>Studio voices for this pack</strong> &mdash; right under Voice: download this pack&rsquo;s studio voices without leaving handsfree.',
+              '<strong>Grid navigation</strong> &mdash; in packs built as a grid: read row by row, the same situation through every strategy. The <strong>Grid packs</strong> guide shows it.',
+              '<strong>Input bundles</strong> &mdash; extra sets of situations some packs have. Turn them on or off.',
+              '<strong>Show input counter</strong> &mdash; where you are among the inputs, on the screen.',
+            ]) +
+            Pdim('Not every setting is in every mode. A setting that does not apply is simply not there.'),
         },
       ],
     },
