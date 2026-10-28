@@ -5350,6 +5350,7 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.96', date: 'October 2026', title: 'Guides for Voices, Progress, Settings and the Library', audience: 'dev', items: ['Four new guides that never open by themselves: <em>The Voices tab</em> (also behind the gear on Voices), <em>Progress</em> (also in Progress settings), <em>Settings</em> and <em>The Library</em>. Home Settings now has a <strong>Guides</strong> section with all six guides, then <strong>More</strong>.', 'How training works and the handsfree guide: the settings gear and the other guides get a page of their own, and <em>That is the whole thing</em> closes each guide on its own page.', 'What\u2019s new for users: studio voices, a better start (Saying No free, three recent packs, Intro for this pack) and Broken Record in full.'] },
   { version: 'v1.29.95', date: 'October 2026', title: 'Saying No is free; Passive Aggression Pt. 1 leaves Pro; View as Pro', audience: 'dev', items: ['<strong>Saying No</strong> moves from Pro to freemium, in place of Assertive Communication, with a new pack intro. Every free pack, and the Conversation Foundations packs a free user can reach, now has an intro.', '<strong>Responding to Passive Aggression Pt. 1</strong> leaves Pro; it is reached through the Extended programs Difficult Conversations and Handling Passive Aggression. The Pro screen now says 41 more packs.', 'Every training and handsfree settings screen has <em>Intro for this pack</em> under the guides, for packs that have an intro.', 'Developer settings: <em>View as Pro (no purchases)</em> under View as freemium. One at a time; both off is the normal app. Gone in the release build.'] },
   { version: 'v1.29.94', date: 'October 2026', title: 'Handsfree guides: studio voices, and where the settings are', audience: 'dev', items: ['<em>Handsfree</em>: after what handsfree is and how a round runs, a page on the two ways to a better voice (studio voices and iPhone voices), then one page for each: where studio voices are downloaded (Library › Voices, drawn) and how to get the iPhone voices.', '<em>Handsfree settings</em> starts by saying the settings are behind the settings gear and can be changed at any time, and a new last page covers Voice, studio voices for this pack, Grid navigation, input bundles and the input counter. Guide text now explains detailed and simple.'] },
   { version: 'v1.29.93', date: 'October 2026', title: 'Guides: the settings gear, drawn; more guides', audience: 'dev', items: ['The last page of <em>How training works</em> and of the handsfree guide shows the settings gear where it really is, top right of the training screen, drawn with the same gear icon. The text says <strong>settings gear</strong> and <strong>more guides</strong> (there are three now, not two), with a line on what they cover.', '<em>Six ways to train</em>: more space between the heading <em>The training modes</em> and the tiles.'] },
@@ -6268,6 +6269,30 @@ const WHATS_NEW = [
 //   • Lägg bara till när något nytt är värt att öppna appen för. De flesta
 //     versioner ska ALDRIG stå här.
 const WHATS_NEW_USER = [
+  // v1.29.96 (Rikard 2026-10-28) — studio voices and the rest of late October.
+  {
+    date: 'October 2026', title: 'Studio voices for handsfree',
+    items: [
+      'Handsfree can now read with <strong>studio voices</strong>: recorded voices that sound like a real person. Find them in <strong>Library \u203a Voices</strong>. First Strategies has two, free for everyone, and more packs get them over time.',
+      'Download a pack once and it works offline. <strong>Download all</strong> fetches everything you have access to, and an orange arrow shows when a pack has a better recording waiting.',
+      'New guides for handsfree voices, the Voices tab, the Library, Progress and Settings. You find them all in <strong>Settings</strong> on the home screen.',
+    ],
+  },
+  {
+    date: 'October 2026', title: 'A better start',
+    items: [
+      '<strong>Saying No</strong> is now free: six ways to refuse that are clear and kind.',
+      'The home screen shows the last <strong>three</strong> packs you trained, so you can pick up any of them.',
+      'Packs with an introduction have <strong>Intro for this pack</strong> in their settings, so you can read it again.',
+    ],
+  },
+  {
+    date: 'October 2026', title: 'Broken Record, in full',
+    items: [
+      '<strong>Services</strong>, included in Pro, now runs through every training mode of Broken Record: shops, call centres, sales calls and cancellations, with two challenges of its own.',
+      '<strong>Family &amp; Close Relationships</strong> in Extended is built the same way: the requests that come back every year, the ones dressed up as concern, and the ones that arrive through somebody else.',
+    ],
+  },
   {
     date: 'October 2026', title: 'A new Progress screen',
     items: [
@@ -8817,18 +8842,24 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             P('Swiping left or right moves to the next <strong>' + D.one + '</strong> &mdash; a different strategy, with its own name, its own explanation and its own set of inputs.') +
             Pdim('A pack is a stack of ' + D.many + '. A ' + D.one + ' is a stack of input cards.'),
         },
+        // v1.29.96 (Rikard) — the settings gear gets a page of its own, and
+        // "That is the whole thing" closes the guide on its own page.
         {
-          title: 'That is the whole thing',
+          title: 'Settings and more guides',
           html:
-            P('Three gestures. Tap to reveal, swipe down for another input, swipe right for the next ' + D.one + '.') +
             ART.gear() +
             rows([
               // v1.29.93 (Rikard) — "settings gear" with a picture, and "more
               // guides": there are three now, not two.
               'You can open this guide again from the <strong>settings gear</strong> at the top right of any training screen.',
               'There are <strong>more guides</strong> in the same place: one for the counters, the arrows, notes and the settings, and one for packs built as a grid.',
-            ]) +
-            Pdim('Nothing else is required. Everything below is optional.'),
+            ]),
+        },
+        {
+          title: 'That is the whole thing',
+          html:
+            P('Three gestures. Tap to reveal, swipe down for another input, swipe right for the next ' + D.one + '.') +
+            Pdim('Nothing else is required. Everything else is optional.'),
         },
       ],
     },
@@ -8836,6 +8867,203 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
     // v1.29.61 — grid packs, explained with pictures. Reached from the
     // settings of Single Strategy and of the handsfree sheets that have
     // Grid navigation (Rikard 2026-10-14).
+    // ── v1.29.96 (Rikard 2026-10-28) — guides for the screens outside training.
+    // None opens by itself. Voices is behind the gear on the Voices tab,
+    // Progress behind the gear on Progress, and all four are listed under
+    // Guides in Settings on the home screen.
+    'voices-tab': {
+      title: 'The Voices tab',
+      pages: [
+        {
+          title: 'Studio voices',
+          html:
+            ART.studio() +
+            cap('Library  ›  Voices') +
+            P('The Voices tab lists the packs that have <strong>studio voices</strong>: recorded voices for handsfree that sound like a real person.') +
+            Pdim('More packs get them over time. The list is fetched from the internet, so it needs a connection to open.'),
+        },
+        {
+          title: 'What the symbols mean',
+          html:
+            rows([
+              '<strong>A cloud with an arrow</strong> &mdash; ready to download.',
+              '<strong>A green tick</strong> &mdash; on your phone.',
+              '<strong>An orange round arrow</strong> &mdash; a better recording is waiting. Open the pack and tap <strong>Update</strong>.',
+              '<strong>Pro</strong> &mdash; this pack&rsquo;s voices come with Pro.',
+            ]) +
+            Pdim('Packs you cannot open yet are not listed.'),
+        },
+        {
+          title: 'Download and remove',
+          html:
+            rows([
+              'Tap a pack to see its voices.',
+              'Tap <strong>Download</strong> next to a voice. The size is on the button.',
+              '<strong>Remove</strong> takes a voice off the phone again, and <strong>Remove all voices for this pack</strong> takes all of them.',
+            ]) +
+            Pdim('Downloads use Wi-Fi unless you allow mobile data. Once downloaded, a voice works offline.'),
+        },
+        {
+          title: 'The gear on the Voices tab',
+          html:
+            rows([
+              '<strong>Download over mobile data</strong> &mdash; off to begin with.',
+              '<strong>Space used</strong> &mdash; how much the voices take up.',
+              '<strong>Download all studio voices</strong> &mdash; everything you have access to that is not on the phone yet, updates included.',
+              '<strong>Remove all downloaded voices</strong> &mdash; frees the space.',
+            ]) +
+            Pdim('Downloaded voices are not backed up to iCloud. You can download them again at any time.'),
+        },
+        {
+          title: 'Using a voice',
+          html:
+            P('Open a pack in handsfree, tap the <strong>settings gear</strong> and choose the voice under <strong>Voice</strong>.') +
+            Pdim('The Handsfree guides cover the rest: what gets read, the pauses and the speed.'),
+        },
+      ],
+    },
+
+    'progress': {
+      title: 'Progress',
+      pages: [
+        {
+          title: 'Your training, counted',
+          html:
+            P('The Progress tab counts the minutes you actually train. The clock only runs while you are working through cards, and stops when you leave them for a while.') +
+            Pdim('Everything stays on your phone.'),
+        },
+        {
+          title: 'Today and this week',
+          html:
+            rows([
+              'The <strong>big ring</strong> fills toward your daily goal.',
+              'The <strong>small rings</strong> under it are this week, one per day. A full circle is a goal day.',
+              '<strong>This week</strong> shows your minutes toward the weekly goal, your goal days and your <strong>streak</strong>, with your best one.',
+            ]) +
+            Pdim('Tap a small ring to see what you trained that day.'),
+        },
+        {
+          title: 'The calendar',
+          html:
+            rows([
+              'The arrows move back and forward in time.',
+              'Tap a <strong>day</strong>, or a week number, to see what you trained.',
+              'Tap the <strong>title</strong> for the whole period at once.',
+            ]) +
+            Pdim('A full ring on a day means you reached your daily goal.'),
+        },
+        {
+          title: 'Where your time went',
+          html:
+            rows([
+              'Choose <strong>Week</strong> or <strong>Month</strong>.',
+              'Split it by <strong>Topics</strong> or by <strong>Packs</strong>. Tap a topic to see its packs.',
+              'At the bottom: all your minutes, goal days and sessions so far.',
+            ]),
+        },
+        {
+          title: 'Progress settings',
+          html:
+            rows([
+              '<strong>Enable tracking</strong> &mdash; turn the counting on or off.',
+              '<strong>Count streak when</strong> &mdash; you reach your daily goal, flip at least one card, or train a number of minutes.',
+              '<strong>Weekly goal</strong> and <strong>daily goal</strong> &mdash; what the rings and the bar fill toward.',
+              '<strong>Reset all progress data</strong> &mdash; starts again from zero.',
+            ]) +
+            Pdim('The settings are behind the gear on the Progress tab.'),
+        },
+      ],
+    },
+
+    'home-settings': {
+      title: 'Settings',
+      pages: [
+        {
+          title: 'Settings',
+          html:
+            P('The gear on the home screen opens <strong>Settings</strong>: how the app looks, your data, the guides and your purchases.') +
+            Pdim('Tap the name of a setting to see what it does.'),
+        },
+        {
+          title: 'How it looks and works',
+          html:
+            rows([
+              '<strong>Dark mode</strong> &mdash; a dark theme, easier on the eyes in the evening.',
+              '<strong>Input counter on as default</strong> &mdash; shows where you are among a strategy&rsquo;s inputs on every training screen. You can still switch it per mode.',
+            ]),
+        },
+        {
+          title: 'Your data',
+          html:
+            rows([
+              '<strong>Backup</strong> &mdash; saves all your progress, favorites, folders and notes as a file that only you keep.',
+              '<strong>Restore</strong> &mdash; puts a backup back, for example on a new phone.',
+              '<strong>Export notes</strong> &mdash; the notes you wrote on cards, as a readable file.',
+            ]) +
+            Pdim('Nothing is stored online, so a backup is the only copy outside your phone.'),
+        },
+        {
+          title: 'Guides and more',
+          html:
+            rows([
+              '<strong>Intro tour</strong> &mdash; the welcome, once more.',
+              '<strong>Guides</strong> &mdash; every guide in the app, including the ones that open by themselves the first time.',
+              '<strong>What&rsquo;s new</strong> and <strong>About &amp; privacy</strong>.',
+            ]),
+        },
+        {
+          title: 'Purchases',
+          html:
+            rows([
+              '<strong>Have an App Store code?</strong> &mdash; redeem an offer code.',
+              '<strong>Restore purchases</strong> &mdash; brings back what you have bought with your Apple ID, for example after reinstalling the app.',
+            ]) +
+            Pdim('A subscription is managed in the App Store, under your Apple ID.'),
+        },
+      ],
+    },
+
+    'library': {
+      title: 'The Library',
+      pages: [
+        {
+          title: 'The Library',
+          html:
+            P('Everything you can train is here, sorted in the tabs along the top.') +
+            Pdim('Tap a pack to choose how to train it.'),
+        },
+        {
+          title: 'Packs and Topics',
+          html:
+            rows([
+              '<strong>Packs</strong> &mdash; every pack. <strong>Pro</strong> marks one that opens with Pro, and <strong>Grid</strong> one built as a grid.',
+              '<strong>Topics</strong> &mdash; the same packs, grouped by what they help with.',
+            ]),
+        },
+        {
+          title: 'Programs',
+          html:
+            P('A <strong>program</strong> takes you through several packs in order, stage by stage, with a checkpoint at the end of each stage.') +
+            Pdim('The Programs guide explains them.'),
+        },
+        {
+          title: 'Folders and Favorites',
+          html:
+            rows([
+              '<strong>Folders</strong> &mdash; your own groups of packs. Tap <strong>+</strong> to make one.',
+              '<strong>Favorites</strong> &mdash; the packs you pin. Tap <strong>+</strong> to add more, and sort them the way you like.',
+            ]),
+        },
+        {
+          title: 'Voices',
+          html:
+            ART.studio() +
+            P('<strong>Voices</strong> lists the packs with studio voices for handsfree, and is where you download them.') +
+            Pdim('It has a guide of its own behind the gear on that tab.'),
+        },
+      ],
+    },
+
     'grid-packs': {
       title: 'Grid packs',
       pages: [
@@ -8994,15 +9222,20 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             ]) +
             Pdim('Worth the four minutes. A studio voice also uses it for any line it has no recording of.'),
         },
+        // v1.29.96 (Rikard) — settings first, then the closing page.
         {
-          title: 'That is the whole thing',
+          title: 'Settings and more guides',
           html:
-            P('Start it, put the phone away, and answer out loud.') +
             ART.gear() +
             rows([
               'This guide is behind the <strong>settings gear</strong> at the top right of any handsfree screen.',
               'There are <strong>more guides</strong> in the same place: one for the pace, the pauses and what gets read, and, where it applies, one for packs built as a grid.',
-            ]) +
+            ]),
+        },
+        {
+          title: 'That is the whole thing',
+          html:
+            P('Start it, put the phone away, and answer out loud.') +
             Pdim('The screen can sleep. It keeps talking.'),
         },
       ],
@@ -9181,7 +9414,10 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
   // ett traningslage; den har handlar om valet MELLAN lagena, sa den hor hemma
   // ett steg tidigare.
   // v1.27.77 - two rows now, same behaviour: close settings, then draw.
-  [['modeGuideBtn', 'modes-overview'], ['programGuideBtn', 'programs-overview']]
+  [['modeGuideBtn', 'modes-overview'], ['programGuideBtn', 'programs-overview'],
+   // v1.29.96 — the guides for the screens outside training
+   ['settingsGuideBtn', 'home-settings'], ['libraryGuideBtn', 'library'],
+   ['progressGuideBtn', 'progress'], ['voicesGuideBtn', 'voices-tab']]
     .forEach(([btnId, guideId]) => {
       const b = document.getElementById(btnId);
       if (!b) return;
@@ -9195,6 +9431,27 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
       });
     });
   window.DECK_TERM = D;
+
+  // v1.29.96 — the Progress guide, under the Progress settings.
+  (function progressGuideRow() {
+    const ov = document.getElementById('progressSettingsOverlay');
+    const panel = ov && ov.querySelector('.settings-panel');
+    if (!panel || panel.querySelector('.gd-settings-head')) return;
+    const head = document.createElement('div');
+    head.className = 'gd-settings-head';
+    head.textContent = 'Guides';
+    const row = document.createElement('div');
+    row.className = 'settings-row';
+    const lab = document.createElement('label');
+    lab.textContent = 'Progress';
+    const btn = document.createElement('button');
+    btn.className = 'gd-btn';
+    btn.textContent = 'View';
+    btn.addEventListener('click', e => { e.stopPropagation(); ov.classList.remove('open'); render('progress'); });
+    row.appendChild(lab); row.appendChild(btn);
+    const anchor = panel.querySelector('.settings-version') || panel.querySelector('.settings-close');
+    panel.insertBefore(head, anchor); panel.insertBefore(row, anchor);
+  })();
 
   // ── The rows inside every training settings panel ────────────────────────
   // Injected rather than written into index.html seven times: the standard

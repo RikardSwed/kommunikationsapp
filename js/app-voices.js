@@ -278,6 +278,16 @@
       '<div class="voices-note">' + (S.web()
         ? 'Developer preview: the voices are kept in this browser and play while the screen is on.'
         : 'Studio voices are AI-generated. Downloaded voices work offline and are not backed up to iCloud; you can download them again at any time.') + '</div>');
+    // v1.29.96 — the guide to this tab
+    const gd = document.createElement('div');
+    gd.className = 'settings-row voices-setting';
+    gd.innerHTML = '<label>Guide: the Voices tab</label><button class="gd-btn" type="button">View</button>';
+    gd.querySelector('button').addEventListener('click', e => {
+      e.stopPropagation(); b.remove();
+      if (window.showGuide) window.showGuide('voices-tab');
+    });
+    const note = b.querySelector('.voices-sheet > .voices-note:last-of-type');
+    b.querySelector('.voices-sheet').insertBefore(gd, note || b.querySelector('[data-close]'));
     const cell = b.querySelector('#voicesCellular');
     if (cell) cell.addEventListener('change', e => S.setCellular(e.target.checked));
     const dl = b.querySelector('[data-act="download-all"]');
