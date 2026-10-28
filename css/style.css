@@ -4341,6 +4341,10 @@ html.ds-vh-pinned .extended-screen {
 .voices-row-name { font-size: 16px; font-weight: 700; color: var(--ds-txt); }
 .voices-row-sub { font-size: 13px; color: var(--ds-txt3); }
 .voices-row-side { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+/* v1.30.00 — locked like a pack on the Packs tab: grey, no arrow */
+.voices-row--locked { opacity: 0.45; cursor: default; }
+.voices-row--locked:active { transform: none; opacity: 0.45; }
+.voices-foot { margin-top: 18px; }
 .voices-status { font-size: 13px; color: var(--ds-txt2); }
 .voices-ok { color: #3c8a4a; }
 .voices-chev { font-size: 20px; color: var(--ds-txt3); }
