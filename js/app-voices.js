@@ -109,6 +109,19 @@
   }
 
   // ── The list ──────────────────────────────────────────────────────────────
+  let openList = [];
+  // v1.30.01 (Rikard 2026-10-28) — "Open in Handsfree" in a pack's sheet: the
+  // mode screen for that pack, already turned to handsfree. Next goes through
+  // the packs on the Voices tab; Back returns to the Voices tab.
+  function openInHandsfree(pack) {
+    const label = packName(pack);
+    if (window.accessLevel && window.accessLevel.canAccess && !window.accessLevel.canAccess(pack)) { showModeScreen(pack, label); return; }
+    const list = openList.some(p => p.key === pack) ? openList : [{ key: pack, label }];
+    if (typeof setPackContext === 'function') setPackContext(list, pack, 'voices');
+    window._returningFromTraining = true;          // keep the mode screen from flipping back to Standard
+    showModeScreen(pack, label);
+    if (window._setHfToggle) window._setHfToggle(true);
+  }
   async function render() {
     if (!on()) { content.innerHTML = ''; return; }
     if (!content.innerHTML) content.innerHTML = '<div class="voices-note">Looking for studio voices…</div>';
@@ -158,8 +171,11 @@
       list = head(free ? 'Available free studio voices' : 'Available studio voices') + open.map(row).join('');
       if (locked.length) list += (free ? head('Pro studio voices') : '') + locked.map(row).join('');
     }
+    // v1.30.01 — the packs that can be opened from here, in this order: the
+    // mode screen's next arrow walks this list (Rikard 2026-10-28).
+    openList = open.map(x => ({ key: x.pack, label: packName(x.pack) }));
     content.innerHTML = list +
-      '<div class="voices-note voices-foot">Studio voices for handsfree. Download a voice, then choose it under Voice in the handsfree settings.</div>' +
+      '<div class="voices-note voices-foot">Download a voice, then choose it under Voice in the handsfree settings.</div>' +
       '<div class="voices-note">More packs get studio voices over time. Studio voices are AI-generated.</div>';
     content.querySelectorAll('.voices-row').forEach(r => r.addEventListener('click', () => {
       // v1.30.00 — like a locked pack: a short message, not the Upgrade screen
@@ -198,11 +214,13 @@
       return '<div class="studio-row"><span class="studio-name">' + esc(S.label(v.voice)) + '</span><span class="studio-actions">' + act + '</span></div>';
     }).join('');
     const b = sheet('<div class="fol-sheet-title">' + esc(packName(pack)) + '</div>' + rows +
+      '<button class="fol-sheet-btn fol-primary voices-sheet-gap" data-act="open">Open in Handsfree</button>' +
       (have.size ? '<button class="fol-sheet-btn fol-danger-btn voices-sheet-gap" data-act="remove-all">Remove all voices for this pack</button>' : '') +
       (S.web() ? '' : '<div class="voices-note">Wi-Fi only unless mobile data is allowed in Voice settings (⚙).</div>'));
     b.addEventListener('click', async e => {
       const btn = e.target.closest('[data-act]');
       if (!btn || btn.disabled) return;
+      if (btn.dataset.act === 'open') { b.remove(); openInHandsfree(pack); return; }
       btn.disabled = true;
       const act = btn.dataset.act, voice = btn.dataset.voice;
       if (act === 'download') {
