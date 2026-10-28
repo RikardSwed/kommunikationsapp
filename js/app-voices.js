@@ -214,7 +214,8 @@
       return '<div class="studio-row"><span class="studio-name">' + esc(S.label(v.voice)) + '</span><span class="studio-actions">' + act + '</span></div>';
     }).join('');
     const b = sheet('<div class="fol-sheet-title">' + esc(packName(pack)) + '</div>' + rows +
-      '<button class="fol-sheet-btn fol-primary voices-sheet-gap" data-act="open">Open in Handsfree</button>' +
+      // v1.30.02 — light like Download all, and always there: the iPhone voice works without a download
+      '<button class="fol-sheet-btn voices-sheet-gap voices-open-btn" data-act="open">Open in Handsfree</button>' +
       (have.size ? '<button class="fol-sheet-btn fol-danger-btn voices-sheet-gap" data-act="remove-all">Remove all voices for this pack</button>' : '') +
       (S.web() ? '' : '<div class="voices-note">Wi-Fi only unless mobile data is allowed in Voice settings (⚙).</div>'));
     b.addEventListener('click', async e => {
