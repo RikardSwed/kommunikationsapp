@@ -733,58 +733,10 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     }, { passive: false });
   });
 
-  // ─ Mode screen pin button ───────────────────────────────────────────
-  // Mode-screen pin button is gone (list 3 #6). Pinning is now a pull-down
-  // gesture on the mode screen: drag down from the top past the threshold to
-  // toggle the pin; a small confirmation fades in at the top and out after 1 s.
-  (function initPullPin() {
-    const screen = document.getElementById('modeScreen');
-    if (!screen) return;
-    const THRESHOLD = 70;
-    let startY = 0, tracking = false, fired = false;
-
-    // The scrolling element is #modeScreen itself (overflow-y:auto); .mode-list
-    // has no overflow, so its scrollTop was always 0 and the pull-pin gesture
-    // fired from any position. Read the real scroller so it only arms at the top.
-    const scroller = () => screen;
-
-    function showPinToast(pinned) {
-      let t = document.getElementById('modePinToast');
-      if (!t) {
-        t = document.createElement('div');
-        t.id = 'modePinToast';
-        t.className = 'mode-pin-toast';
-        screen.appendChild(t);
-      }
-      t.innerHTML = '<i class="ti ' + (pinned ? 'ti-pinned' : 'ti-pin') + '" aria-hidden="true"></i>'
-        + '<span>' + (pinned ? 'Pack pinned' : 'Pin removed') + '</span>';
-      t.classList.add('show');
-      clearTimeout(t._t);
-      t._t = setTimeout(() => t.classList.remove('show'), 1000);
-    }
-
-    screen.addEventListener('touchstart', e => {
-      tracking = scroller().scrollTop <= 0;
-      fired = false;
-      startY = e.touches[0].clientY;
-    }, { passive: true });
-
-    screen.addEventListener('touchmove', e => {
-      if (!tracking || fired) return;
-      const dy = e.touches[0].clientY - startY;
-      if (dy > THRESHOLD) {
-        fired = true;                       // one toggle per gesture
-        if (!activeCollectionKey) return;
-        const pack = ALL_PACKS.find(p => p.key === activeCollectionKey);
-        toggleFav(activeCollectionKey, pack ? pack.label : activeCollectionKey);
-        refreshPinBtns();
-        renderFavTab();
-        renderDashFavs();
-        if (navigator.vibrate) navigator.vibrate(10);
-        showPinToast(isFav(activeCollectionKey));
-      }
-    }, { passive: true });
-  })();
+  // ─ Mode screen pin gesture — removed in v1.29.99 (Rikard 2026-10-28) ─
+  // Pulling down on the mode screen used to pin the pack ("Pack pinned" /
+  // "Pin removed"). It fired by accident and distracted, so it is gone:
+  // favorites are chosen on the Favorites screen only.
 
   // Update mode pin button whenever a pack is opened
   const _origShowModeForPin = showModeScreen;
