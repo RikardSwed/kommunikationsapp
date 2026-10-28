@@ -127,7 +127,7 @@
       .map(p => ({ pack: p, acc: access(p) }))
       .filter(x => x.acc !== 'hidden')
       .sort((a, b) => packOrder(a.pack) - packOrder(b.pack));
-    const rows = packs.map(({ pack, acc }) => {
+    const row = ({ pack, acc }) => {
       const mine = inst.filter(r => r.pack === pack);
       const stale = mine.some(r => S.outdated(idx, r));
       // v1.29.86 — one symbol instead of names and sizes (Rikard): a cloud
@@ -139,17 +139,31 @@
       else if (stale) status = '<i class="ti ti-refresh voices-icon voices-update" aria-label="Update available"></i>';
       else if (mine.length) status = '<i class="ti ti-circle-check voices-icon voices-ok" aria-label="Downloaded"></i>';
       else status = '<i class="ti ti-cloud-download voices-icon" aria-label="Not downloaded"></i>';
-      return '<button class="voices-row" type="button" data-pack="' + esc(pack) + '" data-acc="' + acc + '">' +
+      // v1.30.00 — a locked row is grey like a locked pack on Packs, without the arrow
+      return '<button class="voices-row' + (acc === 'pro' ? ' voices-row--locked' : '') + '" type="button" data-pack="' + esc(pack) + '" data-acc="' + acc + '">' +
                '<span class="voices-row-main"><span class="voices-row-name">' + esc(packName(pack)) + '</span></span>' +
-               '<span class="voices-row-side">' + status + '<span class="voices-chev" aria-hidden="true">›</span></span>' +
+               '<span class="voices-row-side">' + status + (acc === 'pro' ? '' : '<span class="voices-chev" aria-hidden="true">›</span>') + '</span>' +
              '</button>';
-    }).join('');
-    content.innerHTML =
-      '<div class="tab-info">Studio voices for handsfree. Download a voice, then choose it under Voice in the handsfree settings.</div>' +
-      (rows || '<div class="voices-note">No studio voices yet.</div>') +
+    };
+    // v1.30.00 (Rikard 2026-10-28) — the same headings as the Packs tab:
+    // freemium gets "Available free studio voices", then "Pro studio voices";
+    // everyone else "Available studio voices". The explanation moves to the
+    // bottom, under the list.
+    const open = packs.filter(x => x.acc !== 'pro'), locked = packs.filter(x => x.acc === 'pro');
+    const free = !!(window.accessLevel && window.accessLevel.getLevel && window.accessLevel.getLevel() === 'freemium');
+    const head = t => '<div class="tab-info voices-head">' + t + '</div>';
+    let list = '';
+    if (!packs.length) list = '<div class="voices-note">No studio voices yet.</div>';
+    else {
+      list = head(free ? 'Available free studio voices' : 'Available studio voices') + open.map(row).join('');
+      if (locked.length) list += (free ? head('Pro studio voices') : '') + locked.map(row).join('');
+    }
+    content.innerHTML = list +
+      '<div class="voices-note voices-foot">Studio voices for handsfree. Download a voice, then choose it under Voice in the handsfree settings.</div>' +
       '<div class="voices-note">More packs get studio voices over time. Studio voices are AI-generated.</div>';
     content.querySelectorAll('.voices-row').forEach(r => r.addEventListener('click', () => {
-      if (r.dataset.acc === 'pro') { if (window.showTab) window.showTab('upgrade'); return; }
+      // v1.30.00 — like a locked pack: a short message, not the Upgrade screen
+      if (r.dataset.acc === 'pro') { if (window.showToast) window.showToast('This voice requires Pro. Upgrade to unlock it.'); return; }
       openPackSheet(r.dataset.pack, byPack[r.dataset.pack]);
     }));
   }
