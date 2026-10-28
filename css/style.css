@@ -4358,5 +4358,7 @@ html.ds-vh-pinned .extended-screen {
 #voicesSheetBackdrop { z-index: 700; }   /* above the bottom nav (600) */
 #voicesSettingsOverlay { z-index: 700; }  /* v1.29.97 — a settings panel, above the bottom nav */
 .voices-settings .voices-all-btn { background: var(--ds-card-alt); color: var(--ds-txt); }
+/* v1.30.02 — Open in Handsfree, the same light button as Download all */
+.voices-sheet .voices-open-btn { background: var(--ds-card-alt); color: var(--ds-txt); margin-bottom: 10px; }
 .voices-icon.voices-ok { color: #3c8a4a; }
 .voices-icon.voices-update { color: #D45B03; }   /* v1.29.89 — a newer recording on the server */
