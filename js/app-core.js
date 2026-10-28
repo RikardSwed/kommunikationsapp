@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.30.03';
+const VERSION = 'v1.30.04';
 
 // Keep every version label in the UI in sync with VERSION (v1.26.44).
 // The hardcoded strings in index.html are only fallbacks — this runs at
@@ -450,7 +450,7 @@ function showToast(msg, duration) {
   if (!el) {
     el = document.createElement('div');
     el.id = 'ds-toast';
-    el.style.cssText = 'position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#333;color:#fff;padding:10px 18px;border-radius:20px;font-size:14px;z-index:9999;pointer-events:none;transition:opacity .3s;white-space:nowrap;max-width:85vw;text-align:center;';
+    el.style.cssText = 'position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#333;color:#fff;padding:10px 18px;border-radius:20px;font-size:14px;z-index:9999;pointer-events:none;transition:opacity .3s;white-space:pre-line;box-sizing:border-box;max-width:calc(100vw - 24px);width:max-content;text-align:center;line-height:1.35;';   // v1.30.04 — a long message wraps (and \n breaks) inside the box
     document.body.appendChild(el);
   }
   el.textContent = msg;

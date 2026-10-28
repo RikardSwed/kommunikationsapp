@@ -229,7 +229,7 @@
       if (!btn || btn.disabled) return;
       if (btn.dataset.act === 'open') {
         // v1.30.03 — a program pack opens from its program until its test is passed
-        if (acc === 'program') { if (window.showToast) window.showToast('This pack opens from its program until you pass the test.'); return; }
+        if (acc === 'program') { if (window.showToast) window.showToast('This pack opens from its program until you\npass the test.'); return; }
         b.remove(); openInHandsfree(pack); return;
       }
       btn.disabled = true;
