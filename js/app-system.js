@@ -5350,6 +5350,7 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.98', date: 'October 2026', title: 'A guide to input bundles', audience: 'dev', items: ['New guide <strong>Input bundles</strong>, under Grid packs in the settings of every training mode (standard and handsfree), and nowhere else. Four pages, each with a picture: what an input bundle is; freemium and Pro (Free Bundle, Pro Bundle, one bundle always on); extra bundles (need Pro, off until turned on, also after a purchase, apply to the whole pack); Broken Record as the example, with Services and Family &amp; Close Relationships.', 'Bundles are still never turned on by a purchase (Rikard 2026-10-28).', 'Guide pictures: a switch that is off is now visible in dark mode.'] },
   { version: 'v1.29.97', date: 'October 2026', title: 'Pictures in the new guides, and Voice settings like the others', audience: 'dev', items: ['The guides <em>The Voices tab</em>, <em>Progress</em> and <em>Settings</em> get three pictures each: the symbols on Voices, a pack sheet and the gear sheet; the rings, the calendar and where your time went; the gear on the home screen, rows with switches and a backup file.', 'Voice settings is now a settings panel like the others: the rows, Download all, Remove all, the note about AI voices, the guide, the version number and <strong>Done</strong> in a box at the bottom.'] },
   { version: 'v1.29.96', date: 'October 2026', title: 'Guides for Voices, Progress, Settings and the Library', audience: 'dev', items: ['Four new guides that never open by themselves: <em>The Voices tab</em> (also behind the gear on Voices), <em>Progress</em> (also in Progress settings), <em>Settings</em> and <em>The Library</em>. Home Settings now has a <strong>Guides</strong> section with all six guides, then <strong>More</strong>.', 'How training works and the handsfree guide: the settings gear and the other guides get a page of their own, and <em>That is the whole thing</em> closes each guide on its own page.', 'What\u2019s new for users: studio voices, a better start (Saying No free, three recent packs, Intro for this pack) and Broken Record in full.'] },
   { version: 'v1.29.95', date: 'October 2026', title: 'Saying No is free; Passive Aggression Pt. 1 leaves Pro; View as Pro', audience: 'dev', items: ['<strong>Saying No</strong> moves from Pro to freemium, in place of Assertive Communication, with a new pack intro. Every free pack, and the Conversation Foundations packs a free user can reach, now has an intro.', '<strong>Responding to Passive Aggression Pt. 1</strong> leaves Pro; it is reached through the Extended programs Difficult Conversations and Handling Passive Aggression. The Pro screen now says 41 more packs.', 'Every training and handsfree settings screen has <em>Intro for this pack</em> under the guides, for packs that have an intro.', 'Developer settings: <em>View as Pro (no purchases)</em> under View as freemium. One at a time; both off is the normal app. Gone in the release build.'] },
@@ -8766,6 +8767,70 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
       '<rect class="gd-line" x="160" y="60" width="20" height="4" rx="2"/>' +
       label(75, 106, 'YOUR PHONE', 'gd-muted') + label(173, 106, 'A FILE YOU KEEP', 'gd-muted')),
 
+    // ── v1.29.98 — pictures for the Input bundles guide ──
+    // three kinds of situation, one strategy
+    bundleFan: () => {
+      let g = '';
+      [['AT WORK', 14], ['IN A SHOP', 52], ['AT HOME', 90]].forEach(([t, y]) => {
+        g += '<rect class="gd-card" x="22" y="' + y + '" width="86" height="30" rx="7"/>' +
+             label(65, y + 18, t, 'gd-muted');
+        g += '<path class="gd-arrow" d="M110 ' + (y + 15) + ' C 130 ' + (y + 15) + ', 135 59, 152 59"/>';
+      });
+      g += '<path class="gd-arrow" d="M146 54 L153 59 L146 64"/>' +
+           '<rect class="gd-card" x="156" y="34" width="74" height="50" rx="8"/>' +
+           '<rect class="gd-line gd-line--strong" x="166" y="48" width="54" height="5" rx="2.5"/>' +
+           '<rect class="gd-line" x="166" y="60" width="40" height="4" rx="2"/>' +
+           '<rect class="gd-line" x="166" y="69" width="46" height="4" rx="2"/>' +
+           label(193, 100, 'ONE STRATEGY', 'gd-muted');
+      return svg(140, g + label(65, 136, 'DIFFERENT SITUATIONS', 'gd-muted'));
+    },
+
+    // what freemium and Pro see under Input Bundles
+    bundleTiers: () => {
+      const tog = (x, y, on) => '<rect class="' + (on ? 'gd-tog-on' : 'gd-tog-off') + '" x="' + x + '" y="' + y + '" width="22" height="13" rx="6.5"/>' +
+                                '<circle class="gd-knob" cx="' + (on ? x + 15.5 : x + 6.5) + '" cy="' + (y + 6.5) + '" r="4.8"/>';
+      return svg(130,
+        label(66, 12, 'FREEMIUM') + label(184, 12, 'PRO') +
+        '<rect class="gd-card" x="10" y="20" width="112" height="78" rx="10"/>' +
+        '<text class="gd-muted" x="20" y="44">Free Bundle</text>' +
+        '<text class="gd-label" x="112" y="44" text-anchor="end">Active</text>' +
+        '<text class="gd-muted" x="20" y="78">Pro Bundle</text>' +
+        '<rect class="gd-badge" x="88" y="68" width="26" height="14" rx="7"/><text class="gd-badge-tx" x="101" y="78" text-anchor="middle">Pro</text>' +
+        '<rect class="gd-card" x="128" y="20" width="112" height="78" rx="10"/>' +
+        '<text class="gd-muted" x="138" y="44">Pro Bundle</text>' + tog(208, 34, true) +
+        '<text class="gd-muted" x="138" y="78">Services</text>' + tog(208, 68, false) +
+        label(125, 120, 'UNDER INPUT BUNDLES', 'gd-muted'));
+    },
+
+    // the switches in a training mode's settings
+    bundleSwitches: () => {
+      const tog = (x, y, on) => '<rect class="' + (on ? 'gd-tog-on' : 'gd-tog-off') + '" x="' + x + '" y="' + y + '" width="30" height="17" rx="8.5"/>' +
+                                '<circle class="gd-knob" cx="' + (on ? x + 21 : x + 9) + '" cy="' + (y + 8.5) + '" r="6.5"/>';
+      return svg(150,
+        '<rect class="gd-card" x="25" y="6" width="200" height="116" rx="12"/>' +
+        '<text class="gd-label" x="40" y="26">INPUT BUNDLES</text>' +
+        '<text class="gd-muted" x="40" y="52">Pro Bundle</text>' + tog(178, 40, true) +
+        '<text class="gd-muted" x="40" y="82">Services</text>' + tog(178, 70, true) +
+        '<rect class="gd-ring" x="172" y="64" width="42" height="29" rx="10"/>' +
+        '<text class="gd-muted" x="40" y="112">Family</text>' + tog(178, 100, false) +
+        label(125, 142, 'ONE SWITCH, THE WHOLE PACK', 'gd-muted'));
+    },
+
+    // Broken Record: the same strategy, a shop and a family
+    bundleExample: () => {
+      const card = (x, tag, l1, l2) =>
+        '<rect class="gd-card" x="' + x + '" y="22" width="104" height="84" rx="9"/>' +
+        '<rect class="gd-panel" x="' + (x + 10) + '" y="32" width="' + (tag.length * 6 + 14) + '" height="15" rx="7.5"/>' +
+        '<text class="gd-label" x="' + (x + 17) + '" y="43">' + tag + '</text>' +
+        '<text class="gd-muted" x="' + (x + 52) + '" y="74" text-anchor="middle">' + l1 + '</text>' +
+        '<text class="gd-muted" x="' + (x + 52) + '" y="87" text-anchor="middle">' + l2 + '</text>';
+      return svg(140,
+        label(125, 12, 'KEEP THE SAME WORDS') +
+        card(16, 'SERVICES', '“I’d like to', 'cancel, please.”') +
+        card(130, 'FAMILY', '“I’m not hosting', 'this year.”') +
+        label(125, 128, 'BROKEN RECORD', 'gd-muted'));
+    },
+
     // handsfree: the app talks, the screen can sleep
     handsfree: () => svg(150,
       card(30, 20, 100, 100, 3) +
@@ -9184,6 +9249,52 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             ART.studio() +
             P('<strong>Voices</strong> lists the packs with studio voices for handsfree, and is where you download them.') +
             Pdim('It has a guide of its own behind the gear on that tab.'),
+        },
+      ],
+    },
+
+    // ── v1.29.98 (Rikard 2026-10-28) — what input bundles are. Under Grid
+    // packs in the settings of every training mode, and nowhere else.
+    'input-bundles': {
+      title: 'Input bundles',
+      pages: [
+        {
+          title: 'Input bundles',
+          html:
+            ART.bundleFan() +
+            P('An <strong>input bundle</strong> is a set of situations for a pack. The strategies are the same, and so is the way the answer sounds &mdash; only the situations change.') +
+            Pdim('The same strategy, practised in more places.'),
+        },
+        {
+          title: 'Freemium and Pro',
+          html:
+            ART.bundleTiers() +
+            rows([
+              '<strong>Freemium</strong> &mdash; the pack’s free cards. That is the <strong>Free Bundle</strong>.',
+              '<strong>Pro</strong> &mdash; the <strong>Pro Bundle</strong> adds more situations to the same pack. It is on from the start.',
+              'You can turn the Pro Bundle off to train with an extra bundle only. One bundle is always on.',
+            ]),
+        },
+        {
+          title: 'Extra bundles',
+          html:
+            ART.bundleSwitches() +
+            rows([
+              'Some packs have <strong>extra bundles</strong>: situations from one part of life. They need Pro.',
+              'Turn them on under <strong>Input Bundles</strong> in the settings of a training mode. An extra bundle is off until you turn it on, also after you buy one.',
+              'The choice is for the whole pack: every mode, and handsfree too. With several on, the cards are mixed.',
+            ]) +
+            Pdim('Where a bundle has no cards for a mode, you get the pack’s usual cards. Some bundles bring Challenges categories of their own.'),
+        },
+        {
+          title: 'For example: Broken Record',
+          html:
+            ART.bundleExample() +
+            rows([
+              '<strong>Services</strong> &mdash; shops, call centres, cancellations and refunds. Included in Pro.',
+              '<strong>Family &amp; Close Relationships</strong> &mdash; parents, partners, siblings and in-laws. Bought in the Extended store.',
+            ]) +
+            Pdim('More packs will get extra bundles over time.'),
         },
       ],
     },
@@ -9625,6 +9736,8 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
     add(mk(GUIDES[cfg.basics].title, cfg.basics));
     add(mk(GUIDES[cfg.more].title, cfg.more));
     if (cfg.grid) add(mk(GUIDES[cfg.grid].title, cfg.grid));
+    // v1.29.98 (Rikard) — under Grid packs, in every training settings panel
+    add(mk(GUIDES['input-bundles'].title, 'input-bundles'));
 
     // v1.29.95 (Rikard) — the open pack's own intro, last, for packs that have
     // one. The panel is shared by every pack, so the row is shown or hidden
