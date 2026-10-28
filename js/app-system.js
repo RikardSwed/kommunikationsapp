@@ -5329,6 +5329,7 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.93', date: 'October 2026', title: 'Guides: the settings gear, drawn; more guides', audience: 'dev', items: ['The last page of <em>How training works</em> and of the handsfree guide shows the settings gear where it really is, top right of the training screen, drawn with the same gear icon. The text says <strong>settings gear</strong> and <strong>more guides</strong> (there are three now, not two), with a line on what they cover.', '<em>Six ways to train</em>: more space between the heading <em>The training modes</em> and the tiles.'] },
   { version: 'v1.29.92', date: 'October 2026', title: 'Assertive Communication is Pro; three recent packs on the home screen', audience: 'dev', items: ['Assertive Communication moves from freemium to Pro (Rikard\u2019s decision of 26 October, done as one of the last steps before release), so the free tier starts with less conflict material. Six free packs instead of seven; the Pro screen now says 43 more packs. A freemium user sees the pack with a Pro badge.', 'The home screen shows the last three packs you trained (Continue plus the two before it) for everyone. It was one, and more only through a developer setting. The developer setting still changes it while developer settings are unlocked.'] },
   { version: 'v1.29.91', date: 'October 2026', title: 'Developer settings: View as freemium', audience: 'dev', items: ['A purchase from the App Store (TestFlight and sandbox too) outranks the access-level radio, so a tester who had bought Pro could not see the free app. New switch under the radio: <em>View as freemium</em>. While it is on the level is freemium and nothing bought counts; turn it off and everything is back. The purchases themselves are never touched, and the radio works as before.', 'It can only lower the level, never raise it. The release build removes the switch with the rest of developer settings and sets <code>DEV_VIEW_AS = false</code>, so a flag left on a test device does nothing in the App Store version. New suite <code>tools/test-viewas.js</code>.'] },
   { version: 'v1.29.90', date: 'October 2026', title: 'Broken Record: Services and Family rebuilt as full input bundles', audience: 'dev', items: ['Both extra bundles in Broken Record now cover the pack like a Pro bundle does: 8 inputs per strategy in Single Strategy, 8 per Collections deck, 3 scenarios per Sequence (same length as Pro), 8 per Challenges category, and 8 per Mindset unit. Memorize keeps the standard cards, since the technique does not change. Before, each bundle was 3 cards per strategy in Single Strategy only.', 'Each bundle also has two Challenges categories of its own. Services: <em>It\u2019s the Policy</em> and <em>You Get Passed Along</em>. Family: <em>It\u2019s Dressed Up as Concern</em> and <em>It Comes Through Someone Else</em>. They show only when the bundle is on; DS.loadGroups already drops decks with no cards, in handsfree too.', 'Services stays included in Pro and serves as the example of what an extra bundle gives. Family & Close Relationships stays at 19 kr; its store text now says exactly what it contains.', 'This is the model for future extra input bundles (Datakrav per tr\u00e4ningsl\u00e4ge).'] },
@@ -8501,6 +8502,19 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
       label(125, 136, 'TAP THREE TIMES') +
       label(125, 148, 'BELOW THE CARD', 'gd-muted')),
 
+    // v1.29.93 — the settings gear, top right of every training and
+    // handsfree screen: the same gear as there (the same path, scaled), with
+    // the close cross on the left and the counter in the middle.
+    gear: () => svg(150,
+      '<rect class="gd-panel" x="25" y="8" width="200" height="32" rx="9"/>' +
+      '<text class="gd-muted" x="44" y="28" text-anchor="middle" font-size="12">&#10005;</text>' +
+      '<text class="gd-muted" x="125" y="28" text-anchor="middle">3 / 8</text>' +
+      '<g transform="translate(193 12) scale(0.75)"><path class="gd-icon" d="M13 4.5h6l.7 3a7.5 7.5 0 0 1 2.3 1.35l2.9-.9 3 5.2-2.3 1.8a7.5 7.5 0 0 1 0 2.1l2.3 1.8-3 5.2-2.9-.9a7.5 7.5 0 0 1-2.3 1.35l-.7 3H13l-.7-3a7.5 7.5 0 0 1-2.3-1.35l-2.9.9-3-5.2 2.3-1.8a7.5 7.5 0 0 1 0-2.1L4.1 14.1l3-5.2 2.9.9A7.5 7.5 0 0 1 12.3 8Z"/><circle class="gd-icon" cx="16" cy="16" r="4.5"/></g>' +
+      '<circle class="gd-ring" cx="205" cy="24" r="17"/>' +
+      '<circle class="gd-ring" cx="205" cy="24" r="25" opacity=".25"/>' +
+      card(70, 54, 110, 70, 3) +
+      label(125, 143, 'THE SETTINGS GEAR')),
+
     // handsfree: the app talks, the screen can sleep
     handsfree: () => svg(150,
       card(30, 20, 100, 100, 3) +
@@ -8696,9 +8710,12 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
           title: 'That is the whole thing',
           html:
             P('Three gestures. Tap to reveal, swipe down for another input, swipe right for the next ' + D.one + '.') +
+            ART.gear() +
             rows([
-              'You can open this guide again from the <strong>gear</strong> on any training screen.',
-              'There is a <strong>second guide</strong> in the same place, for the counters, the arrows, notes and the settings.',
+              // v1.29.93 (Rikard) — "settings gear" with a picture, and "more
+              // guides": there are three now, not two.
+              'You can open this guide again from the <strong>settings gear</strong> at the top right of any training screen.',
+              'There are <strong>more guides</strong> in the same place: one for the counters, the arrows, notes and the settings, and one for packs built as a grid.',
             ]) +
             Pdim('Nothing else is required. Everything below is optional.'),
         },
@@ -8846,9 +8863,10 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
           title: 'That is the whole thing',
           html:
             P('Start it, put the phone away, and answer out loud.') +
+            ART.gear() +
             rows([
-              'This guide is behind the <strong>gear</strong> on any handsfree screen.',
-              'A <strong>second guide</strong> in the same place covers the pace, the pauses and what gets read.',
+              'This guide is behind the <strong>settings gear</strong> at the top right of any handsfree screen.',
+              'There are <strong>more guides</strong> in the same place: one for the pace, the pauses and what gets read, and, where it applies, one for packs built as a grid.',
             ]) +
             Pdim('The screen can sleep. It keeps talking.'),
         },
