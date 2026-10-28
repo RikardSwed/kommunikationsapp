@@ -1125,6 +1125,25 @@ const DS = (function () {
       if (e) return e[1] + (e[2] ? ' (ElevenLabs, ' + e[2].replace(/^eleven_/, '') + ')' : ' (ElevenLabs)');
       return String(voice);
     }
+    // v1.30.03 — a studio voice's gender, so a pack without your voice gets one
+    // of the same gender. index.json says it (tools/voice-gen.js writes it);
+    // this table covers the voices recorded so far and the likely next ones.
+    const GENDER = {
+      female: ['Matilda', 'Alice', 'Sarah', 'Jessica', 'Lily', 'Laura', 'Charlotte',
+               'Sulafat', 'Kore', 'Aoede', 'Leda', 'Zephyr', 'Despina', 'Achernar', 'Autonoe', 'Callirrhoe',
+               'Erinome', 'Gacrux', 'Laomedeia', 'Pulcherrima', 'Vindemiatrix'],
+      male:   ['Chris', 'George', 'Daniel', 'Brian', 'Roger', 'Eric', 'Will', 'Liam', 'Callum', 'Bill',
+               'Orus', 'Charon', 'Puck', 'Achird', 'Algenib', 'Algieba', 'Alnilam', 'Enceladus', 'Fenrir',
+               'Iapetus', 'Rasalgethi', 'Sadachbia', 'Sadaltager', 'Schedar', 'Umbriel', 'Zubenelgenubi'],
+    };
+    function gender(voice) {
+      const v = indexCache && indexCache.voices && indexCache.voices.find(x => x.voice === voice);
+      if (v && (v.gender === 'female' || v.gender === 'male')) return v.gender;
+      const name = label(voice).replace(/\s*\(.*$/, '');
+      if (GENDER.female.includes(name)) return 'female';
+      if (GENDER.male.includes(name)) return 'male';
+      return null;
+    }
     // Native player in the iPhone app; the web preview in a browser (v1.29.88).
     function web() { return !DSNative.isReady() && DSWebStudio.ok(); }
     function available() { return enabled() && (DSNative.isReady() || DSWebStudio.ok()); }
@@ -1265,7 +1284,7 @@ const DS = (function () {
 
     return { enabled, setEnabled, isStudio, voiceOf, label, voices, annotate, PREFIX,
              base, cellular, setCellular, index, installed, download, remove, progress,
-             web, available, webVoice, speakWeb, stopWeb, unlockWeb, outdated };
+             web, available, webVoice, speakWeb, stopWeb, unlockWeb, outdated, gender };
   })();
   window.DSStudio = DSStudio;
 
@@ -1439,7 +1458,10 @@ const DS = (function () {
         genPause    : v(p + 'GenPause')   ? parseFloat(v(p + 'GenPause').value)   : 1,
         loop        : v(p + 'LoopStrategy') ? v(p + 'LoopStrategy').checked : false,
         rate        : v(p + 'Rate')  ? parseFloat(v(p + 'Rate').value) : 1,
-        voiceGender : v(p + 'Voice') ? v(p + 'Voice').value : 'female',
+        // v1.30.03 — the voice for THIS pack (app-handsfree.js), not just the list's value
+        voiceGender : (window.dsHfVoiceFor && typeof activeCollectionKey !== 'undefined' && activeCollectionKey)
+                        ? window.dsHfVoiceFor(activeCollectionKey)
+                        : (v(p + 'Voice') ? v(p + 'Voice').value : 'female'),
         // Uppgift 10 — shuffle toggles (same naming convention as regular modes)
         shuffleGroups : v(p + 'ShuffleStrategies') ? v(p + 'ShuffleStrategies').checked : false,
         shuffleItems  : v(p + 'ShuffleInputs')     ? v(p + 'ShuffleInputs').checked     : false,
@@ -1580,7 +1602,8 @@ const DS = (function () {
       // A studio voice still needs an iPhone voice for pieces with no file:
       // the last iPhone voice the user chose (app-handsfree.js keeps it).
       if (DSStudio.isStudio(val)) {
-        try { val = localStorage.getItem('ds_hf_voice_iphone'); } catch (e) { val = null; }
+        if (window.dsHfIphoneVoice) val = window.dsHfIphoneVoice();
+        else { try { val = localStorage.getItem('ds_hf_voice_iphone'); } catch (e) { val = null; } }
       }
       if (!val || val === 'female' || val === 'male') return null;
       const list = TTS.voices() || [];

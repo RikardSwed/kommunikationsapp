@@ -96,9 +96,15 @@
     const a = window.accessLevel;
     if (!a) return 'ok';
     const vis = a.packVisibility ? a.packVisibility(pack) : 'available';
+    const level = a.getLevel ? a.getLevel() : 'pro';
+    // v1.30.03 (Rikard 2026-10-28) — a pack open inside its program, before
+    // its test is passed: listed here so its voices can be downloaded and
+    // managed, but it opens from the program only ('program').
+    if (vis === 'hidden' && a.programRoutePending && a.programRoutePending(pack)) {
+      return level === 'freemium' ? 'pro' : 'program';
+    }
     if (vis === 'hidden') return 'hidden';
     if (vis !== 'available') return 'pro';
-    const level = a.getLevel ? a.getLevel() : 'pro';
     if (level === 'freemium' && pack !== 'firststrategies') return 'pro';
     return 'ok';
   }
@@ -173,14 +179,14 @@
     }
     // v1.30.01 — the packs that can be opened from here, in this order: the
     // mode screen's next arrow walks this list (Rikard 2026-10-28).
-    openList = open.map(x => ({ key: x.pack, label: packName(x.pack) }));
+    openList = open.filter(x => x.acc === 'ok').map(x => ({ key: x.pack, label: packName(x.pack) }));   // program packs open from their program
     content.innerHTML = list +
       '<div class="voices-note voices-foot">Download a voice, then choose it under Voice in the handsfree settings.</div>' +
       '<div class="voices-note">More packs get studio voices over time. Studio voices are AI-generated.</div>';
     content.querySelectorAll('.voices-row').forEach(r => r.addEventListener('click', () => {
       // v1.30.00 — like a locked pack: a short message, not the Upgrade screen
       if (r.dataset.acc === 'pro') { if (window.showToast) window.showToast('This voice requires Pro. Upgrade to unlock it.'); return; }
-      openPackSheet(r.dataset.pack, byPack[r.dataset.pack]);
+      openPackSheet(r.dataset.pack, byPack[r.dataset.pack], r.dataset.acc);
     }));
   }
 
@@ -197,7 +203,7 @@
     return b;
   }
 
-  async function openPackSheet(pack, voices) {
+  async function openPackSheet(pack, voices, acc) {
     const [inst, idx] = await Promise.all([S.installed(), S.index()]);
     const mineRecs = inst.filter(r => r.pack === pack);
     const have = new Set(mineRecs.map(r => r.voice));
@@ -215,13 +221,17 @@
     }).join('');
     const b = sheet('<div class="fol-sheet-title">' + esc(packName(pack)) + '</div>' + rows +
       // v1.30.02 — light like Download all, and always there: the iPhone voice works without a download
-      '<button class="fol-sheet-btn voices-sheet-gap voices-open-btn" data-act="open">Open in Handsfree</button>' +
+      '<button class="fol-sheet-btn voices-sheet-gap voices-open-btn' + (acc === 'program' ? ' voices-open-btn--locked' : '') + '" data-act="open">Open in Handsfree</button>' +
       (have.size ? '<button class="fol-sheet-btn fol-danger-btn voices-sheet-gap" data-act="remove-all">Remove all voices for this pack</button>' : '') +
       (S.web() ? '' : '<div class="voices-note">Wi-Fi only unless mobile data is allowed in Voice settings (⚙).</div>'));
     b.addEventListener('click', async e => {
       const btn = e.target.closest('[data-act]');
       if (!btn || btn.disabled) return;
-      if (btn.dataset.act === 'open') { b.remove(); openInHandsfree(pack); return; }
+      if (btn.dataset.act === 'open') {
+        // v1.30.03 — a program pack opens from its program until its test is passed
+        if (acc === 'program') { if (window.showToast) window.showToast('This pack opens from its program until you pass the test.'); return; }
+        b.remove(); openInHandsfree(pack); return;
+      }
       btn.disabled = true;
       const act = btn.dataset.act, voice = btn.dataset.voice;
       if (act === 'download') {
@@ -239,7 +249,7 @@
         for (const v of have) await S.remove(v, pack);
       }
       afterChange();
-      if (document.getElementById('voicesSheetBackdrop')) openPackSheet(pack, voices);
+      if (document.getElementById('voicesSheetBackdrop')) openPackSheet(pack, voices, acc);
     });
   }
 
@@ -258,7 +268,7 @@
     const list = [];
     (idx.voices || []).forEach(v => Object.keys(v.packs || {}).forEach(p => {
       const k = v.voice + '/' + p;
-      if (access(p) === 'ok' && !have.has(k)) list.push({ voice: v.voice, pack: p, bytes: v.packs[p].bytes || 0, update: any.has(k) });
+      if ((access(p) === 'ok' || access(p) === 'program') && !have.has(k)) list.push({ voice: v.voice, pack: p, bytes: v.packs[p].bytes || 0, update: any.has(k) });
     }));
     list.sort((a, b) => packOrder(a.pack) - packOrder(b.pack));
     return { list };

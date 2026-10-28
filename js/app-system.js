@@ -5350,6 +5350,7 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.30.03', date: 'October 2026', title: 'The voice follows the pack; program packs on Voices', audience: 'dev', items: ['<strong>Voice</strong> in the handsfree settings lists the studio voices downloaded for the open pack, then the iPhone voices, and shows the voice that will be used. Rule: your own choice if this pack has it; else another studio voice for the pack, same gender first (index.json now carries <code>gender</code>, with a table in the app as backup); else the iPhone voice you chose, or the best installed one (Premium, then Enhanced). What the app falls back to is never saved, so your choice comes back in the next pack that has it. Choosing an iPhone voice yourself is kept, also in packs with studio voices.', 'A program pack that is open in its program but whose test is not passed is listed on Voices, so its voices can be downloaded and removed. <strong>Open in Handsfree</strong> is grey there and says <em>This pack opens from its program until you pass the test.</em> After the test it works as usual. Download all includes these packs.', '<code>tools/voice-gen.js</code>: writes <code>gender</code> into index.json from a table of known voices; a new voice gets <code>--gender=female|male</code> once (kept in genders.json).'] },
   { version: 'v1.30.02', date: 'October 2026', title: 'Open in Handsfree: a light button', audience: 'dev', items: ['<strong>Open in Handsfree</strong> in a pack\u2019s sheet on Voices is now the light button used for Download all in Voice settings, so it no longer competes with the red Remove button. It is there whether or not a voice is downloaded, since handsfree also works with the iPhone voice.'] },
   { version: 'v1.30.01', date: 'October 2026', title: 'Open in Handsfree from Voices; a heading on Favorites', audience: 'dev', items: ['A pack\u2019s sheet on the Voices tab has <strong>Open in Handsfree</strong>: the mode screen for that pack, already turned to handsfree. The next arrow walks the packs you can open on the Voices tab, and Back returns to Voices.', 'Favorites starts with <em>Your favorite packs</em>, like the other Library tabs. The empty state now says to tap + (the pin on the mode screen is gone).', 'Voices: the line under the list starts at <em>Download a voice\u2026</em>; \u201cStudio voices for handsfree\u201d was said twice already.'] },
   { version: 'v1.30.00', date: 'October 2026', title: 'Voices tab: headings like the Packs tab', audience: 'dev', items: ['Freemium sees <strong>Available free studio voices</strong> (First Strategies), then <strong>Pro studio voices</strong>; Pro sees <strong>Available studio voices</strong>. The explanation (download a voice, choose it under Voice in the handsfree settings; more packs over time; AI-generated) is now under the list.', 'A voice that needs Pro is grey and has no arrow, like a locked pack on Packs, and a tap shows <em>This voice requires Pro. Upgrade to unlock it.</em> instead of opening the Upgrade screen.', 'Saying No now has studio voices: Sulafat and Orus (Google Chirp 3 HD, US English). They need Pro, like every pack except First Strategies (Rikard 2026-10-28).'] },
@@ -9105,6 +9106,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
           title: 'Using a voice',
           html:
             P('Open a pack in handsfree, tap the <strong>settings gear</strong> and choose the voice under <strong>Voice</strong>.') +
+            P('Your choice goes with you. In a pack that has other studio voices, one of them reads instead, female or male like yours. In a pack with none, the iPhone voice reads.') +
             Pdim('The Handsfree guides cover the rest: what gets read, the pauses and the speed.'),
         },
       ],
@@ -9526,7 +9528,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
           title: 'Voice, and the rest',
           html:
             rows([
-              '<strong>Voice</strong> &mdash; the iPhone voices, and the studio voices you have downloaded. The first guide shows how to get better ones.',
+              '<strong>Voice</strong> &mdash; the studio voices downloaded for this pack, and the iPhone voices. In a pack without your voice, a similar one reads. The first guide shows how to get better ones.',
               '<strong>Studio voices for this pack</strong> &mdash; right under Voice: download this pack&rsquo;s studio voices without leaving handsfree.',
               '<strong>Grid navigation</strong> &mdash; in packs built as a grid: read row by row, the same situation through every strategy. The <strong>Grid packs</strong> guide shows it.',
               '<strong>Input bundles</strong> &mdash; extra sets of situations some packs have. Turn them on or off.',

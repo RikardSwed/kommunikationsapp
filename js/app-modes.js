@@ -472,7 +472,7 @@ function settingHelp(key, overlayId) {
     case 'thinkPause': return 'The silence after the front: your time to answer in your head before the back is read.';
     case 'genPause': return 'The short pause between everything else: titles, explanations and backs.';
     case 'rate': return 'How fast the voice speaks.';
-    case 'voice': return 'The voice that reads. Better voices can be downloaded on iPhone in Settings, Accessibility, Spoken Content, Voices.';
+    case 'voice': return 'The voice that reads: the studio voices downloaded for this pack, and the iPhone voices. In a pack without your voice, another studio voice of the same kind reads, or the best iPhone voice.';
     case 'loopStrategy':
       return (gridHf && window.dsGridNav && window.dsGridNav.on())
         ? 'Repeats the current row until you stop it.'

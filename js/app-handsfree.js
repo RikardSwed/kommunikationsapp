@@ -70,52 +70,104 @@ if (_hfVoiceDebugBtn) _hfVoiceDebugBtn.addEventListener('click', async () => {
 // Accessibility → Spoken Content → Voices — so the same control becomes a real
 // picker. The choice is stored so it survives leaving the screen.
 const HF_VOICE_SELECTS = ['hfVoice', 'hfMemVoice', 'hfChallVoice', 'hfFlowVoice', 'hfMindVoice', 'hfCollVoice'];
-const HF_VOICE_KEY = 'ds_hf_voice';
+const HF_VOICE_KEY = 'ds_hf_voice';                    // the user's own choice — only a choice in the list writes it
+const HF_IPHONE_KEY = 'ds_hf_voice_iphone';            // the last iPhone voice the user chose
+const HF_IPHONE_MANUAL = 'ds_hf_voice_iphone_manual';  // '1' once the user has chosen one
 
-async function initHandsfreeVoicePickers() {
-  if (!DS.tts) return;
-  // Probe FIRST — isNative() only reports true once the plugin has answered,
-  // so checking it before loading would always be false and skip the picker.
-  const voices = await DS.tts.loadNativeVoices();
-  if (!DS.tts.isNative()) { await initWebStudioPickers(); return; }
-  if (!voices.length) return;
+// ── Which voice reads a pack (v1.30.03, Rikard 2026-10-28) ─────────────────
+// The packs have different studio voices (Matilda and Chris in First
+// Strategies, Sulafat and Orus in Saying No). One choice for every pack would
+// leave a pack with none of "its" voices to the iPhone voice, so:
+//   1. the voice you chose, if it is downloaded for this pack;
+//   2. else another studio voice downloaded for this pack, of the same gender
+//      if there is one;
+//   3. else the iPhone voice — the one you chose, or the best one installed
+//      (Premium before Enhanced before the rest).
+// What the app falls back to is never saved: your own choice stays, and comes
+// back in the next pack that has it. Choosing an iPhone voice yourself is a
+// choice too, and is kept even in packs that have studio voices.
+let hfPackStudio = {};                                // pack → [voice ids on the phone]
+async function refreshPackStudio() {
+  const S = window.DSStudio;
+  if (!(S && S.available())) { hfPackStudio = {}; return; }
+  try {
+    const inst = await S.installed();
+    const m = {};
+    (inst || []).forEach(r => { (m[r.pack] = m[r.pack] || []).push(r.voice); });
+    Object.keys(m).forEach(k => m[k].sort());
+    hfPackStudio = m;
+  } catch (e) {}
+}
+function hfGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+function hfSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+function hfNative() { return !!(DS.tts && DS.tts.isNative && DS.tts.isNative()); }
+// Premium and Enhanced say so in the name, e.g. "Karen (Premium)".
+function iphoneRank(name) {
+  if (/premium/i.test(name)) return 3;
+  if (/enhanced/i.test(name)) return 2;
+  if (/samantha|ava|allison|karen|serena|moira|tessa/i.test(name)) return 1;
+  return 0;
+}
+// The iPhone voice to use: native → a voice index, browser → 'female'/'male'.
+function hfIphoneVoice() {
+  if (!hfNative()) return hfGet('ds_hf_voice_browser') === 'male' ? 'male' : 'female';
+  const list = DS.tts.voices() || [];
+  const saved = hfGet(HF_IPHONE_KEY);
+  if (hfGet(HF_IPHONE_MANUAL) === '1' && list.some(v => String(v.index) === saved)) return saved;
+  let best = null, rank = -1;
+  list.forEach(v => { const r = iphoneRank(v.name); if (r > rank) { rank = r; best = v; } });
+  return best ? String(best.index) : saved;
+}
+function hfVoiceFor(pack) {
+  const S = window.DSStudio;
+  const pref = hfGet(HF_VOICE_KEY);
+  const studioPref = !!(S && S.isStudio(pref));
+  if (studioPref || pref === null) {
+    const here = (S && S.available() && hfPackStudio[pack]) || [];
+    if (here.length) {
+      const want = studioPref ? S.voiceOf(pref) : null;
+      if (want && here.includes(want)) return pref;
+      const g = want ? S.gender(want) : 'female';
+      const same = here.filter(v => S.gender(v) === g);
+      return S.PREFIX + (same[0] || here[0]);
+    }
+    return hfIphoneVoice();
+  }
+  // An iPhone (or browser) voice the user chose — if it is still installed.
+  if (hfNative() && !(DS.tts.voices() || []).some(v => String(v.index) === pref)) return hfIphoneVoice();
+  return pref;
+}
+window.dsHfVoiceFor = hfVoiceFor;
+window.dsHfIphoneVoice = hfIphoneVoice;
 
-  const saved = localStorage.getItem(HF_VOICE_KEY);
-  // Studio voices (beta, 2026-10-26): only with the developer switch on, and
-  // only voices that are actually on the phone. Off = the list is exactly as
-  // before, and a saved studio choice falls back to an iPhone voice.
-  const studio = window.DSStudio ? await window.DSStudio.voices() : [];
+function hfCurrentPack() { return typeof activeCollectionKey !== 'undefined' ? activeCollectionKey : ''; }
+
+// The list under Voice: the studio voices downloaded for THIS pack, then the
+// iPhone (or browser) voices. It shows the voice that will actually be used.
+function hfFillPickers(otherOpts, otherLabel) {
+  const S = window.DSStudio;
   const esc = t => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
-  const iphoneOpts = voices
-    .map(v => `<option value="${v.index}">${esc(v.name)} (${esc(v.lang)})</option>`)
-    .join('');
+  const pack = hfCurrentPack();
+  const studio = (S && S.available() && hfPackStudio[pack]) || [];
   const optionsHtml = studio.length
     ? '<optgroup label="Studio voices">' +
-        studio.map(v => `<option value="${esc(window.DSStudio.PREFIX + v)}">${esc(window.DSStudio.label(v))}</option>`).join('') +
-      '</optgroup><optgroup label="iPhone voices">' + iphoneOpts + '</optgroup>'
-    : iphoneOpts;
-  const fallback = voices.find(v => /samantha|ava|allison|karen|serena|moira|tessa/i.test(v.name));
-  const fallbackVal = String((fallback || voices[0]).index);
-  // The iPhone voice used for pieces a studio voice has no file for.
-  if (!voices.some(v => String(v.index) === localStorage.getItem('ds_hf_voice_iphone'))) {
-    localStorage.setItem('ds_hf_voice_iphone',
-      (saved !== null && voices.some(v => String(v.index) === saved)) ? saved : fallbackVal);
-  }
+        studio.map(v => `<option value="${esc(S.PREFIX + v)}">${esc(S.label(v))}</option>`).join('') +
+      '</optgroup><optgroup label="' + otherLabel + '">' + otherOpts + '</optgroup>'
+    : otherOpts;
+  const value = hfVoiceFor(pack);
   HF_VOICE_SELECTS.forEach(id => {
     const sel = document.getElementById(id);
     if (!sel) return;
     sel.innerHTML = optionsHtml;
-    // Restore the saved voice, else prefer a female-sounding default so the
-    // app still sounds the way it did before.
-    const has = v => [...sel.options].some(o => o.value === v);
-    const want = (saved !== null && has(saved)) ? saved : fallbackVal;
-    sel.value = want;
+    if ([...sel.options].some(o => o.value === value)) sel.value = value;
     if (sel._voiceBound) return;   // re-running must not stack listeners
     sel._voiceBound = true;
     sel.addEventListener('change', () => {
-      localStorage.setItem(HF_VOICE_KEY, sel.value);
+      // A choice in the list is the user's own: it is saved, and wins.
+      hfSet(HF_VOICE_KEY, sel.value);
       if (!(window.DSStudio && window.DSStudio.isStudio(sel.value))) {
-        localStorage.setItem('ds_hf_voice_iphone', sel.value);
+        if (sel.value === 'female' || sel.value === 'male') hfSet('ds_hf_voice_browser', sel.value);
+        else { hfSet(HF_IPHONE_KEY, sel.value); hfSet(HF_IPHONE_MANUAL, '1'); }
       }
       // Keep every handsfree mode on the same voice.
       HF_VOICE_SELECTS.forEach(other => {
@@ -125,44 +177,42 @@ async function initHandsfreeVoicePickers() {
     });
   });
 }
+
+async function initHandsfreeVoicePickers() {
+  if (!DS.tts) return;
+  // Probe FIRST — isNative() only reports true once the plugin has answered,
+  // so checking it before loading would always be false and skip the picker.
+  const voices = await DS.tts.loadNativeVoices();
+  await refreshPackStudio();
+  if (!DS.tts.isNative()) { await initWebStudioPickers(); return; }
+  if (!voices.length) return;
+  const esc = t => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+  const iphoneOpts = voices
+    .map(v => `<option value="${v.index}">${esc(v.name)} (${esc(v.lang)})</option>`)
+    .join('');
+  hfFillPickers(iphoneOpts, 'iPhone voices');
+}
 initHandsfreeVoicePickers();
 
 // Web app (developer preview, v1.29.88): Female / Male as before, plus the
-// studio voices downloaded in this browser. A piece a studio voice has no
-// clip for is read by the last Female/Male choice (ds_hf_voice_browser).
+// studio voices downloaded in this browser for the open pack. A piece a studio
+// voice has no clip for is read by the last Female/Male choice.
 async function initWebStudioPickers() {
-  const S = window.DSStudio;
-  const studio = (S && S.available()) ? await S.voices() : [];
-  const esc = t => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
-  const basic = '<option value="female">Female</option><option value="male">Male</option>';
-  const optionsHtml = studio.length
-    ? '<optgroup label="Studio voices">' +
-        studio.map(v => `<option value="${esc(S.PREFIX + v)}">${esc(S.label(v))}</option>`).join('') +
-      '</optgroup><optgroup label="Browser voices">' + basic + '</optgroup>'
-    : basic;
-  let saved = null;
-  try { saved = localStorage.getItem(HF_VOICE_KEY); } catch (e) {}
-  HF_VOICE_SELECTS.forEach(id => {
-    const sel = document.getElementById(id);
-    if (!sel) return;
-    const was = sel.value;
-    sel.innerHTML = optionsHtml;
-    const has = v => [...sel.options].some(o => o.value === v);
-    sel.value = (saved && has(saved)) ? saved : (has(was) ? was : 'female');
-    if (sel._voiceBound) return;
-    sel._voiceBound = true;
-    sel.addEventListener('change', () => {
-      try {
-        localStorage.setItem(HF_VOICE_KEY, sel.value);
-        if (sel.value === 'female' || sel.value === 'male') localStorage.setItem('ds_hf_voice_browser', sel.value);
-      } catch (e) {}
-      HF_VOICE_SELECTS.forEach(other => {
-        const o = document.getElementById(other);
-        if (o && o !== sel) o.value = sel.value;
-      });
-    });
-  });
+  hfFillPickers('<option value="female">Female</option><option value="male">Male</option>', 'Browser voices');
 }
+
+// v1.30.03 — the list follows the pack: refreshed whenever a pack is opened.
+(function hfFollowPack() {
+  const ms = document.getElementById('modeScreen');
+  if (!ms) return;
+  let last = '';
+  const check = () => { const k = hfCurrentPack(); if (k && k !== last) { last = k; initHandsfreeVoicePickers(); } };
+  try {
+    new MutationObserver(check).observe(ms, { attributes: true, attributeFilter: ['style', 'class'] });
+    const name = document.getElementById('modeCollectionName');
+    if (name) new MutationObserver(check).observe(name, { childList: true, characterData: true, subtree: true });
+  } catch (e) {}
+})();
 
 
 // Refresh the list every time a handsfree settings panel is opened, so a voice
