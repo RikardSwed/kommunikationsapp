@@ -670,9 +670,14 @@ applyInputCounterVisibility();
     disagreeing: { label: 'Disagreeing', minLevel: 'pro' },
     persuasionandinfluence1: { label: 'Persuasion and Influence — Pt. 1', minLevel: 'pro' },
     brokenrecord: { label: 'Broken Record', minLevel: 'pro' },
-    respondingtopassiveaggression: { label: 'Responding to Passive Aggression — Pt. 1', minLevel: 'pro' },
+    // v1.29.95 (Rikard 2026-10-28) — pro → program, so Pro starts with less
+    // conflict. Still reached two ways, both Extended: Difficult Conversations
+    // Stage 2 and Handling Passive Aggression Stage 1.
+    respondingtopassiveaggression: { label: 'Responding to Passive Aggression — Pt. 1', minLevel: 'program' },
     makingrequests: { label: 'Making Requests', minLevel: 'pro' },
-    sayingno: { label: 'Saying No', minLevel: 'pro' },
+    // v1.29.95 (Rikard 2026-10-28) — pro → freemium, in place of Assertive
+    // Communication: refusing kindly is everyday, not conflict.
+    sayingno: { label: 'Saying No', minLevel: 'freemium' },
     rolebasedhumour: { label: 'Role Based Humour', minLevel: 'program' },      // Humour, Part 2,
     // v1.27.00 — the two listening packs. import-pack.js writes no PACK_CONFIG
     // entry for a --program import, which works only as long as the programme
@@ -948,6 +953,10 @@ applyInputCounterVisibility();
   function viewAsFreemium() {
     try { return DEV_VIEW_AS && localStorage.getItem('dev_view_freemium') === 'true'; } catch (e) { return false; }
   }
+  // v1.29.95 — View as Pro (no purchases). Never both: the switches clear each other.
+  function viewAsPro() {
+    try { return DEV_VIEW_AS && !viewAsFreemium() && localStorage.getItem('dev_view_pro') === 'true'; } catch (e) { return false; }
+  }
 
   function getLevel() {
     // v1.26.89 — a beta code can grant Pro for a fixed number of days. The
@@ -968,6 +977,7 @@ applyInputCounterVisibility();
     // set to false by tools/build-release.js, so a flag left on a test device
     // can never lock a customer's App Store build down to freemium.
     if (DEV_VIEW_AS && localStorage.getItem('dev_view_freemium') === 'true') return 'freemium';
+    if (viewAsPro()) return 'pro';   // v1.29.95 — Pro, as just upgraded
     const stored = localStorage.getItem(LEVEL_KEY) || 'freemium';
     // Lifetime Pro (one-time purchase): the level never drops below pro —
     // UNLESS the level was set explicitly via the developer radio (v1.26.44).
@@ -1285,7 +1295,7 @@ applyInputCounterVisibility();
   // (iap.js → applyEntitlements in app-ui.js), already expanded from kits to
   // their contents, and rewritten on every check so a refund takes it back.
   function getExtendedOwned() {
-    if (viewAsFreemium()) return [];   // v1.29.91 — a freemium user owns nothing
+    if (viewAsFreemium() || viewAsPro()) return [];   // v1.29.91/95 — nothing from Extended
     let a = [], b = [];
     try { a = JSON.parse(localStorage.getItem('ds_extended_owned')) || []; } catch {}
     try { b = JSON.parse(localStorage.getItem('ds_iap_owned')) || []; } catch {}
@@ -1588,15 +1598,24 @@ applyInputCounterVisibility();
 
   // v1.29.91 — View as freemium (see getLevel). The radio shows the level in
   // force, so it reads Freemium while this is on and the bought level after.
-  (function bindViewAsFreemium() {
-    const el = document.getElementById('devViewFreemium');
-    if (!el) return;
-    el.checked = viewAsFreemium();
-    el.addEventListener('change', () => {
-      try { localStorage.setItem('dev_view_freemium', el.checked ? 'true' : 'false'); } catch (e) {}
-      applyAccessLevel();
-      loadDevLevelUI();
+  // v1.29.95 — and View as Pro (no purchases). One at a time: turning one on
+  // turns the other off; both off is the normal app.
+  (function bindViewAs() {
+    const fr = document.getElementById('devViewFreemium');
+    const pr = document.getElementById('devViewPro');
+    const sync = () => { if (fr) fr.checked = viewAsFreemium(); if (pr) pr.checked = viewAsPro(); };
+    const set = (k, on) => { try { localStorage.setItem(k, on ? 'true' : 'false'); } catch (e) {} };
+    if (fr) fr.addEventListener('change', () => {
+      set('dev_view_freemium', fr.checked);
+      if (fr.checked) set('dev_view_pro', false);
+      sync(); applyAccessLevel(); loadDevLevelUI();
     });
+    if (pr) pr.addEventListener('change', () => {
+      set('dev_view_pro', pr.checked);
+      if (pr.checked) set('dev_view_freemium', false);
+      sync(); applyAccessLevel(); loadDevLevelUI();
+    });
+    sync();
   })();
 
   // Hook into navToSettings so radio is always current
@@ -1606,6 +1625,8 @@ applyInputCounterVisibility();
     loadDevLevelUI();
     const vf = document.getElementById('devViewFreemium');
     if (vf) vf.checked = viewAsFreemium();
+    const vp = document.getElementById('devViewPro');
+    if (vp) vp.checked = viewAsPro();
     renderGrantStatus();
   };
 
@@ -5329,6 +5350,7 @@ const LEGAL_LINKS = {
 // Both lists are in the same array so a user entry never has to be written
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  { version: 'v1.29.95', date: 'October 2026', title: 'Saying No is free; Passive Aggression Pt. 1 leaves Pro; View as Pro', audience: 'dev', items: ['<strong>Saying No</strong> moves from Pro to freemium, in place of Assertive Communication, with a new pack intro. Every free pack, and the Conversation Foundations packs a free user can reach, now has an intro.', '<strong>Responding to Passive Aggression Pt. 1</strong> leaves Pro; it is reached through the Extended programs Difficult Conversations and Handling Passive Aggression. The Pro screen now says 41 more packs.', 'Every training and handsfree settings screen has <em>Intro for this pack</em> under the guides, for packs that have an intro.', 'Developer settings: <em>View as Pro (no purchases)</em> under View as freemium. One at a time; both off is the normal app. Gone in the release build.'] },
   { version: 'v1.29.94', date: 'October 2026', title: 'Handsfree guides: studio voices, and where the settings are', audience: 'dev', items: ['<em>Handsfree</em>: after what handsfree is and how a round runs, a page on the two ways to a better voice (studio voices and iPhone voices), then one page for each: where studio voices are downloaded (Library › Voices, drawn) and how to get the iPhone voices.', '<em>Handsfree settings</em> starts by saying the settings are behind the settings gear and can be changed at any time, and a new last page covers Voice, studio voices for this pack, Grid navigation, input bundles and the input counter. Guide text now explains detailed and simple.'] },
   { version: 'v1.29.93', date: 'October 2026', title: 'Guides: the settings gear, drawn; more guides', audience: 'dev', items: ['The last page of <em>How training works</em> and of the handsfree guide shows the settings gear where it really is, top right of the training screen, drawn with the same gear icon. The text says <strong>settings gear</strong> and <strong>more guides</strong> (there are three now, not two), with a line on what they cover.', '<em>Six ways to train</em>: more space between the heading <em>The training modes</em> and the tiles.'] },
   { version: 'v1.29.92', date: 'October 2026', title: 'Assertive Communication is Pro; three recent packs on the home screen', audience: 'dev', items: ['Assertive Communication moves from freemium to Pro (Rikard\u2019s decision of 26 October, done as one of the last steps before release), so the free tier starts with less conflict material. Six free packs instead of seven; the Pro screen now says 43 more packs. A freemium user sees the pack with a Pro badge.', 'The home screen shows the last three packs you trained (Continue plus the two before it) for everyone. It was one, and more only through a developer setting. The developer setting still changes it while developer settings are unlocked.'] },
@@ -8095,6 +8117,77 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
       ]
     },
 
+    // v1.29.95 — Saying No became a free pack (Rikard 2026-10-28), and every
+    // free pack has an intro. Six strategies: two keep the no clear, two keep
+    // it kind, then the half yes and asking for time, and one question that
+    // picks between them.
+    sayingno: {
+      pages: [
+        {
+          title: 'Saying No',
+          html:
+            '<p class="ob-text">Most people know <strong>how</strong> to say no. What goes wrong ' +
+            'is everything around it.</p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Too vague.</strong> &ldquo;Probably not&rdquo; sounds kind and means maybe, so they ask again.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Too much.</strong> A long explanation turns your answer into something to negotiate.</p></div>' +
+            '</div>' +
+            '<p class="ob-text">This pack is six ways to say no that are clear <strong>and</strong> kind.</p>' +
+            '<p class="ob-text ob-text--dim">A clear no, said warmly, is the considerate version.</p>'
+        },
+        {
+          title: 'Keep It Clear',
+          html:
+            '<p class="ob-text">Two strategies for the no itself.</p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Say No Simply</strong> &mdash; one short sentence, and then stop talking.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Soften the Delivery</strong> &mdash; a warmer way of saying it, with the answer exactly as firm.</p></div>' +
+            '</div>' +
+            '<p class="ob-text ob-text--dim">&ldquo;Can I copy your homework?&rdquo;<br>&rarr; &ldquo;Sorry, no.&rdquo;</p>'
+        },
+        {
+          title: 'Keep It Kind',
+          html:
+            '<p class="ob-text">Two strategies that make a no easier to hear, without making it ' +
+            'any less of a no.</p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Give a Short Reason</strong> &mdash; one sentence about your situation, not a case to argue.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Understand First</strong> &mdash; show you see why they are asking, then decline.</p></div>' +
+            '</div>' +
+            '<p class="ob-text ob-text--dim">&ldquo;Can you cover my shift?&rdquo;<br>&rarr; &ldquo;I know you&rsquo;re stuck. I can&rsquo;t do it, though.&rdquo;</p>'
+        },
+        {
+          title: 'The Half Yes',
+          html:
+            '<p class="ob-text">Say no to the request and offer what you <strong>can</strong> do instead.</p>' +
+            '<p class="ob-text">It keeps you helpful while your answer stays no. Offer it after ' +
+            'the no, never instead of it, and only offer what you will actually do.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;I can&rsquo;t take the whole thing. I could look at the first part on Thursday.&rdquo;</p>'
+        },
+        {
+          title: 'Ask for Time First',
+          html:
+            '<p class="ob-text">Do not answer yet. Most yeses people regret are said on the spot.</p>' +
+            '<p class="ob-text">Say when you will answer, and keep to it. Waiting without a ' +
+            'time is just a slower no.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;Let me check and come back to you this afternoon.&rdquo;</p>'
+        },
+        {
+          title: 'Choosing One',
+          html:
+            '<p class="ob-text">One question sorts most of it: <strong>what does this person ' +
+            'need from my answer?</strong></p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p>Just an answer &mdash; <strong>say no simply</strong>, softly if you like.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p>To know it is not about them &mdash; <strong>a short reason</strong>, or <strong>show you understand</strong>.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">3</span><p>Help of some kind &mdash; <strong>the half yes</strong>.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">4</span><p>Nothing yet, because you do not know &mdash; <strong>ask for time</strong>.</p></div>' +
+            '</div>' +
+            '<p class="ob-text ob-text--dim">Whichever you pick, the no stays a no.</p>'
+        }
+      ]
+    },
+
     // v1.27.45 — the two packs a freemium user reaches through the
     // Conversation Foundations programme rather than from the Packs tab. Both
     // are Pro standalone, so they had no intro: nobody thought of them as packs
@@ -8342,6 +8435,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
   // Called by showModeScreen / goNextPack (app-core.js)
   window.maybeShowPackIntro = key => show(key, false);
   window.replayPackIntro    = key => show(key, true);
+  window.hasPackIntro       = key => !!PACK_INTROS[key];   // v1.29.95 — the settings row
 
   // Replay: tap the pack name on the mode screen
   const nameEl = document.getElementById('modeCollectionName');
@@ -9150,5 +9244,34 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
     add(mk(GUIDES[cfg.basics].title, cfg.basics));
     add(mk(GUIDES[cfg.more].title, cfg.more));
     if (cfg.grid) add(mk(GUIDES[cfg.grid].title, cfg.grid));
+
+    // v1.29.95 (Rikard) — the open pack's own intro, last, for packs that have
+    // one. The panel is shared by every pack, so the row is shown or hidden
+    // each time the settings open.
+    const intro = document.createElement('div');
+    intro.className = 'settings-row gd-pack-intro-row';
+    const ilab = document.createElement('label');
+    ilab.textContent = 'Intro for this pack';
+    const ibtn = document.createElement('button');
+    ibtn.className = 'gd-btn';
+    ibtn.textContent = 'View';
+    ibtn.addEventListener('click', e => {
+      e.stopPropagation();
+      overlay.classList.remove('open');
+      const k = typeof activeCollectionKey !== 'undefined' ? activeCollectionKey : '';
+      if (k && window.replayPackIntro) window.replayPackIntro(k);
+    });
+    intro.appendChild(ilab);
+    intro.appendChild(ibtn);
+    add(intro);
+    const syncIntro = () => {
+      const k = typeof activeCollectionKey !== 'undefined' ? activeCollectionKey : '';
+      intro.style.display = (k && window.hasPackIntro && window.hasPackIntro(k)) ? '' : 'none';
+    };
+    syncIntro();
+    try {
+      new MutationObserver(() => { if (overlay.classList.contains('open')) syncIntro(); })
+        .observe(overlay, { attributes: true, attributeFilter: ['class'] });
+    } catch (e) {}
   });
 })();
