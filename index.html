@@ -7,11 +7,11 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Deckstack" />
-  <link rel="manifest" href="manifest.json?v=12994" />
+  <link rel="manifest" href="manifest.json?v=12995" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12994" />
-  <link rel="stylesheet" href="css/tabler/tabler-icons.min.css?v=12994" />
+  <link rel="stylesheet" href="css/style.css?v=12995" />
+  <link rel="stylesheet" href="css/tabler/tabler-icons.min.css?v=12995" />
 </head>
 <body>
 
@@ -414,8 +414,8 @@
       <div class="upgrade-feature-row">
         <div class="upgrade-feature-icon"><i class="ti ti-cards" aria-hidden="true"></i></div>
         <div class="upgrade-feature-text">
-          <div class="upgrade-feature-name">43 more packs</div>
-          <div class="upgrade-feature-desc">Ending Conversations, Compliments, Explain Things, Deep Questions, Making Requests, Saying No and thirty-seven more, across every topic in the library</div>
+          <div class="upgrade-feature-name">41 more packs</div>
+          <div class="upgrade-feature-desc">Ending Conversations, Compliments, Explain Things, Deep Questions, Making Requests, Asking for Permission and thirty-five more, across every topic in the library</div>
         </div>
       </div>
       <div class="upgrade-feature-row">
@@ -451,7 +451,7 @@
         <div class="upgrade-compare-col-label upgrade-compare-col-label--pro">Pro</div>
       </div>
       <div class="upgrade-compare-row">
-        <div class="upgrade-compare-item">First Strategies, Starting Conversations &mdash; Pt. 1, Names and Introductions, Talking About Yourself, Show Understanding, Describe Things</div>
+        <div class="upgrade-compare-item">First Strategies, Starting Conversations &mdash; Pt. 1, Names and Introductions, Talking About Yourself, Show Understanding, Describe Things, Saying No</div>
         <div class="upgrade-compare-check"><i class="ti ti-check" aria-hidden="true"></i></div>
         <div class="upgrade-compare-check upgrade-compare-check--pro"><i class="ti ti-check" aria-hidden="true"></i></div>
       </div>
@@ -461,7 +461,7 @@
         <div class="upgrade-compare-check upgrade-compare-check--pro"><i class="ti ti-check" aria-hidden="true"></i></div>
       </div>
       <div class="upgrade-compare-row">
-        <div class="upgrade-compare-item">The other 43 packs</div>
+        <div class="upgrade-compare-item">The other 41 packs</div>
         <div class="upgrade-compare-check upgrade-compare-check--no"><i class="ti ti-x" aria-hidden="true"></i></div>
         <div class="upgrade-compare-check upgrade-compare-check--pro"><i class="ti ti-check" aria-hidden="true"></i></div>
       </div>
@@ -3030,6 +3030,13 @@
       <label>View as freemium <span style="display:block;font-size:12px;color:#aaa;">Ignores all purchases while on</span></label>
       <label class="toggle"><input type="checkbox" id="devViewFreemium" /><span class="toggle-slider"></span></label>
     </div>
+    <!-- v1.29.95 — "View as Pro (no purchases)": Pro as someone who has just
+         upgraded sees it, with no Extended purchases. One of the two at a time;
+         both off = normal. Gone in the release build like the one above. -->
+    <div class="settings-row">
+      <label>View as Pro (no purchases) <span style="display:block;font-size:12px;color:#aaa;">Pro, with nothing from Extended</span></label>
+      <label class="toggle"><input type="checkbox" id="devViewPro" /><span class="toggle-slider"></span></label>
+    </div>
     <div class="settings-row" data-help="packEditor">
       <label>Pack Editor</label>
       <button onclick="window.open('admin.html','_blank')" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Open &#8599;</button>
@@ -3297,23 +3304,23 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12994"></script>
-<script src="js/tagsData.js?v=12994"></script>
-<script src="js/programsData.js?v=12994"></script>
-<script src="js/challengesData.js?v=12994"></script>
-<script src="js/mindsetData.js?v=12994"></script>
-<script src="js/multiStepData.js?v=12994"></script>
-<script src="js/memorizeData.js?v=12994"></script>
-<script src="js/speech-text.js?v=12994"></script>
-<script src="js/mode-engine.js?v=12994"></script>
-<script src="js/app-core.js?v=12994"></script>
-<script src="js/app-modes.js?v=12994"></script>
-<script src="js/app-handsfree.js?v=12994"></script>
-<script src="js/iap.js?v=12994"></script>
-<script src="js/app-system.js?v=12994"></script>
-<script src="js/app-ui.js?v=12994"></script>
-<script src="js/app-voices.js?v=12994"></script>
-<script src="js/app-back.js?v=12994"></script>
+<script src="js/data.js?v=12995"></script>
+<script src="js/tagsData.js?v=12995"></script>
+<script src="js/programsData.js?v=12995"></script>
+<script src="js/challengesData.js?v=12995"></script>
+<script src="js/mindsetData.js?v=12995"></script>
+<script src="js/multiStepData.js?v=12995"></script>
+<script src="js/memorizeData.js?v=12995"></script>
+<script src="js/speech-text.js?v=12995"></script>
+<script src="js/mode-engine.js?v=12995"></script>
+<script src="js/app-core.js?v=12995"></script>
+<script src="js/app-modes.js?v=12995"></script>
+<script src="js/app-handsfree.js?v=12995"></script>
+<script src="js/iap.js?v=12995"></script>
+<script src="js/app-system.js?v=12995"></script>
+<script src="js/app-ui.js?v=12995"></script>
+<script src="js/app-voices.js?v=12995"></script>
+<script src="js/app-back.js?v=12995"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
