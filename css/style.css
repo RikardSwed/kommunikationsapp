@@ -579,6 +579,7 @@ body.pb-enabled .divider::after {
                      stroke-linecap: round; stroke-linejoin: round; }
 .gd-art .gd-ring   { stroke: var(--ds-acc); stroke-width: 1.6; fill: none; opacity: .55; }
 .gd-art .gd-dot    { fill: var(--ds-acc); }
+.gd-art .gd-icon   { stroke: var(--ds-txt2); stroke-width: 1.8; fill: none; stroke-linecap: round; stroke-linejoin: round; }   /* v1.29.93 — the gear */
 .gd-art .gd-label  { fill: var(--ds-txt2); font-size: 9px; font-weight: 700;
                      font-family: inherit; letter-spacing: .02em; }
 .gd-art .gd-muted  { fill: var(--ds-txt3); font-size: 8.5px; font-family: inherit; }
@@ -4144,6 +4145,9 @@ html.ds-vh-pinned .extended-screen {
    are tappable and these are not, and one rule serving both would tie a
    decorative element to a live control. */
 .gd-modes { display: flex; flex-direction: column; gap: 10px; width: 100%; }
+/* v1.29.93 (Rikard) — more air between "The training modes" and the tiles,
+   so the title reads as a heading rather than a label stuck to the first tile. */
+.ob-step .gd-modes { margin-top: 12px; }
 
 .gd-mode {
   background: var(--ds-card);
