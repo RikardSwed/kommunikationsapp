@@ -4360,5 +4360,7 @@ html.ds-vh-pinned .extended-screen {
 .voices-settings .voices-all-btn { background: var(--ds-card-alt); color: var(--ds-txt); }
 /* v1.30.02 — Open in Handsfree, the same light button as Download all */
 .voices-sheet .voices-open-btn { background: var(--ds-card-alt); color: var(--ds-txt); margin-bottom: 10px; }
+/* v1.30.03 — a program pack before its test: the button is there, but greyed */
+.voices-sheet .voices-open-btn--locked { opacity: 0.45; }
 .voices-icon.voices-ok { color: #3c8a4a; }
 .voices-icon.voices-update { color: #D45B03; }   /* v1.29.89 — a newer recording on the server */
