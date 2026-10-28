@@ -580,6 +580,20 @@ body.pb-enabled .divider::after {
 .gd-art .gd-ring   { stroke: var(--ds-acc); stroke-width: 1.6; fill: none; opacity: .55; }
 .gd-art .gd-dot    { fill: var(--ds-acc); }
 .gd-art .gd-icon   { stroke: var(--ds-txt2); stroke-width: 1.8; fill: none; stroke-linecap: round; stroke-linejoin: round; }   /* v1.29.93 — the gear */
+/* v1.29.97 — pictures for the Voices, Progress and Settings guides */
+.gd-art .gd-ok        { stroke: #3c8a4a; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.gd-art .gd-badge     { fill: var(--ds-acc); opacity: .9; }
+.gd-art .gd-badge-tx  { fill: #fff; font-size: 9px; font-weight: 700; font-family: inherit; }
+.gd-art .gd-track     { stroke: var(--ds-border); fill: none; }
+.gd-art .gd-fill      { stroke: var(--ds-acc); fill: none; stroke-linecap: round; }
+.gd-art .gd-track-bar { fill: var(--ds-border); }
+.gd-art .gd-fill-bar  { fill: var(--ds-acc); }
+.gd-art .gd-tog-on    { fill: var(--ds-acc); }
+.gd-art .gd-tog-off   { fill: var(--ds-border); }
+.gd-art .gd-knob      { fill: #fff; }
+.gd-art .gd-hero      { fill: var(--ds-acc); opacity: .85; }
+.gd-art .gd-icon--light { stroke: rgba(60, 25, 5, 0.85); }
+.gd-art .gd-line--light { fill: #fff; opacity: .8; }
 .gd-art .gd-label  { fill: var(--ds-txt2); font-size: 9px; font-weight: 700;
                      font-family: inherit; letter-spacing: .02em; }
 .gd-art .gd-muted  { fill: var(--ds-txt3); font-size: 8.5px; font-family: inherit; }
@@ -4360,5 +4374,7 @@ html.ds-vh-pinned .extended-screen {
 #libBannerGearBtn { color: rgba(60, 25, 5, 0.85); }   /* as #homeSettingsBtn and #progressSettingsBtn */
 .voices-icon { font-size: 24px; color: var(--ds-txt3); }
 #voicesSheetBackdrop { z-index: 700; }   /* above the bottom nav (600) */
+#voicesSettingsOverlay { z-index: 700; }  /* v1.29.97 — a settings panel, above the bottom nav */
+.voices-settings .voices-all-btn { background: var(--ds-card-alt); color: var(--ds-txt); }
 .voices-icon.voices-ok { color: #3c8a4a; }
 .voices-icon.voices-update { color: #D45B03; }   /* v1.29.89 — a newer recording on the server */
