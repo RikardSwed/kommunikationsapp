@@ -550,8 +550,55 @@ body.pb-enabled .divider::after {
 
    If the status bar ever OVERLAPS the content rather than merely crowding it,
    this is the wrong fix and the real one is env(safe-area-inset-top) — the
-   bottom inset is already handled that way further down this file. */
-:root { --ds-native-top: 10px; }
+   bottom inset is already handled that way further down this file.
+
+   v1.30.06 — that is what happened, so the real fix is now in place (block
+   below). The extra room stays available but is set to 0: on top of the safe
+   area it pushed the training topbar too far down. */
+:root { --ds-native-top: 0px; }
+
+/* ── SAFE AREA IN THE NATIVE BUILD (v1.30.06) ──────────────────────────────
+   The iOS app used Capacitor's contentInset "automatic": iOS pushed the whole
+   web page down inside an invisible scroll view. That push was unreliable — the
+   app STARTED with the page under the status bar and only dropped into place
+   after something like the keyboard nudged it. On an iPhone with a Dynamic
+   Island that put the back arrows and Skip under the clock, untappable.
+
+   capacitor.config.json now says contentInset "never" (the web view is the
+   whole screen, nothing moves it), and the app keeps clear of the status bar
+   and the home indicator itself, here. env() gives the real numbers for each
+   phone: about 20 at the top on an iPhone SE, about 59 on an iPhone 16.
+
+   Moved: every full-screen CONTENT layer. Not moved: the splash, dim
+   backdrops behind sheets and dialogs, the bottom nav (which already pads
+   itself with env(safe-area-inset-bottom)), and bottom sheets.
+   Screens that sit above the bottom nav already add the bottom inset to
+   their padding, so only their top moves; screens without the nav also stop
+   above the home indicator. height:auto lets top/bottom decide the size
+   instead of 100dvh, which would otherwise run off the bottom.
+   Only under .ds-native — the browser is untouched. */
+.ds-native .home-screen,
+.ds-native .dashboard-screen,
+.ds-native .progress-screen,
+.ds-native .upgrade-screen,
+.ds-native .extended-screen {
+  top: env(safe-area-inset-top);
+  height: auto;
+}
+.ds-native .mode-screen,
+.ds-native .app,
+.ds-native .settings-screen,
+.ds-native #onboardingScreen,
+.ds-native #packIntroScreen {
+  top: env(safe-area-inset-top);
+  bottom: env(safe-area-inset-bottom);
+  height: auto;
+}
+/* the checkpoint screen sets inset:0 inline, hence !important */
+.ds-native #checkpointScreen {
+  top: env(safe-area-inset-top) !important;
+  bottom: env(safe-area-inset-bottom) !important;
+}
 
 .ds-native .topbar      { padding-top: calc(16px + var(--ds-native-top)); }
 .ds-native .lib-banner  { padding-top: calc(18px + var(--ds-native-top)); }
